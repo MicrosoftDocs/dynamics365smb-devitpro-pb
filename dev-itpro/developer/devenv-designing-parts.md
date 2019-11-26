@@ -19,7 +19,8 @@ Parts are a special category of page that are intended to be embedded within ano
 The following table illustrates how parts can be creatively arranged on a page to deliver unique experiences.
 
 
-|---|---|---|
+|Illustration of pattern|Typical usage|
+|---|---|
 |![Illustration of a Role Center page consisting of multiple parts.](media/parts-rolecenter-illustration.png)|Pages of type **Role Center** are typically composed of multiple page parts that display business headlines, KPIs and other cues to help users get an overview of their work.|
 |![Illustration of a page display multiple FactBoxes in the FactBox pane.](media/parts-factbox-illustration.png)|Most page types can display a number of FactBoxes in the FactBox pane, that display information related to the current record.|
 |![Illustration of a document page displaying an embedded list.](media/parts-document-illustration.png)|Pages of type **Document** are  used to model transactional data which typically consists of a header and detailed lines. Since these records come from different tables, a part is used to display lines that originate from a related table.|
