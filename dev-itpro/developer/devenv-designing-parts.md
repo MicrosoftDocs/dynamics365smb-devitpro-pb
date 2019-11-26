@@ -13,10 +13,10 @@ ms.author: mikebc
 ---
 # Page Parts Overview
 
-Parts are a special category of page that are intended to be embedded within another page. The hosting page can be composed of one or more page parts. This is useful when designing richer user experiences, displaying information from a table that is different from the source table of the hosting page, and is a great way to reuse your code across multiple pages.
+Parts are a special category of page that are designed to be embedded within another page. The hosting page can be composed of one or more page parts. This is useful when designing richer user experiences, displaying information from a table that is different from the source table of the hosting page, and is a great way to reuse your code across multiple pages.
 
 ## Hosting parts on a page
-The following table illustrates how parts can be creatively arranged on a page to deliver unique experiences.
+The following table illustrates how parts could be creatively arranged on a page to deliver unique experiences.
 
 |Illustration of page pattern|Explanation|
 |---|---|
@@ -27,7 +27,7 @@ The following table illustrates how parts can be creatively arranged on a page t
 |![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)|When records from two tables need to be compared together, parts can be displayed side by side.|
 
 ## Different types of parts
-Business Central offers different types of parts that each 
+Business Central offers different types of parts that display data in a specific way.
 
 |PageType|Purpose|Hosting page types|
 |----|---|---|
@@ -35,10 +35,12 @@ Business Central offers different types of parts that each
 |[CardParts](devenv-designing-cardparts.md)|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images or control addins.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Step in a Wizard|
 |[HeadlineParts](devenv-create-role-center-headline.md)|Display relevant insights from across the business|Role Centers only|
 
-## Adding a part to a page
-To add a part to a page in Visual Studio Code, you add a part control on the hosting page object that references the page part object. The part control also defines a small set of properties, such as the caption that will accompany the part. This allows separation of responsibility: the page part object defines self-contained functionality, whilst the hosting page defines how the part should behave without knowledge of its' functionality.
 
-For more information aboute the properties of a part control, see [Page Properties](properties/devenv-page-property-overview.md).
+## Adding a part to a page
+To add a part to a page in Visual Studio Code, you add a part control on the hosting page object that references the page part object. The part control also defines a small set of properties, such as the caption that will accompany the part. This allows separation of responsibility: the page part object defines self-contained functionality, whilst the hosting page defines how the container of the part should behave without knowledge of its' functionality.
+
+For more information about the properties of a part control, see [Page Properties](properties/devenv-page-property-overview.md).
+
 
 ## Design considerations
 
@@ -53,6 +55,7 @@ The size of a part is automatically determined by the client and will vary depen
 - Parts are not intended to be displayed on their own without a hosting page.
 - Business users can hide parts or show hidden parts on the hosting page.
 - When implementing pages to suit a variety of customers, departments or business users, it is common practice to make visible the parts that are generally applicable, and hide the parts that are only valuable to some categories of users.
+
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
