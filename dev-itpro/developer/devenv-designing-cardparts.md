@@ -3,7 +3,7 @@ title: Designing CardParts
 description: "Design and implementation tips for page part of type CardPart."
 author: mikebcMSFT
 ms.custom: na
-ms.date: 22/11/2019
+ms.date: 11/22/2019
 ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
