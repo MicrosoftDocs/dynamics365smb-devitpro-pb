@@ -43,13 +43,13 @@ ms.service: "dynamics365-business-central"
 
 ## Accept-Language
 
-By specifying `Accept-Language` in the request header, you can set a specific language for your app. It is strongly recommended to use this setting, if your app is dependent on a specific language. If `Accept-Language` is set, it will override default settings and messages and content will be displayed in that particular language. Apps can decide which error messages to show to users depending on the error message code. For more information, see [Error Codes](/dynamics-nav/api-reference/v1.0/dynamics_error_codes). Example:
+By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It is strongly recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings.
 
+One of the most common examples is showing error messages to the users in their language. To see which possible error messages to display, see [Error Codes](/dynamics-nav/api-reference/v1.0/dynamics_error_codes). <!-- Another common example is displaying reports in a specific language... example here -->
 
 |Header          |Value|
 |----------------|-----|
 |Accept-Language |nl-NL|
-
 
 ## See Also
 <!-- [Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
