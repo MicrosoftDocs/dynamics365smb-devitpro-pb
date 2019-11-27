@@ -67,7 +67,6 @@ Object-level security is the set of permissions on [!INCLUDE[prodshort](../devel
 |Report|The reports that are used to present the data.|  
 |Codeunit|The codeunits that are used in the database.|  
 |XMLport|The XMLports that are used to import and export data.|  
-|MenuSuite|The object that contains the menus that are displayed in the navigation pane.|  
 |Query|The object that you use to specify a dataset from the database.|  
 |System|The system tables in the database that allow the user to make backups, change license files, and so on.|  
   
