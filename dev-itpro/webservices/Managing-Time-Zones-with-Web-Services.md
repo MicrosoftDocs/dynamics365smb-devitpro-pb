@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 [!INCLUDE[server](../developer/includes/server.md)] provides a **Services Default Time Zone** setting for defining the time zone in which web service calls run. This setting affects both SOAP and OData web services, in addition to NAS Services.  
   
 ## Time Zone Configuration  
- You can configure the Services Default Time Zone using the [Server Administration Tool](../administration/administration-tool.md), [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview), or by directly editing CustomSettings.config, the configuration file for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The following table describes the possible values for the **Services Default Time Zone** setting.  
+ You can configure the Services Default Time Zone using the [Server Administration Tool](../administration/administration-tool.md), [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview), or by directly editing CustomSettings.config, the configuration file for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The following table describes the possible values for the **Services Default Time Zone** setting.  
   
 |Value|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-----------|---------------------------------------|  
@@ -34,4 +34,4 @@ ms.service: "dynamics365-business-central"
   
 ## See Also  
  [Server Administration Tool](../administration/administration-tool.md)   
- [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview)
+ [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)

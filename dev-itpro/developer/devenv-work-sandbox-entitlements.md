@@ -35,7 +35,7 @@ To mimic users with a specific subscription plan assigned, you can set them up w
 |DELEGATEDADMIN<br><br>Delegated Admin agent - Partner<br>Delegated Helpdesk agent - Partner|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|
 
 > [!TIP]  
-> For more information about how to choose a user experience, see [Changing Which Features are Displayed](https://docs.microsoft.com/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
+> For more information about how to choose a user experience, see [Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
 
 ## Assigning the Premium plan to test users
 Depending on how you are running your Docker sandbox, you assign the experience in different ways.
@@ -93,4 +93,4 @@ This will assign the Premium plan to the admin user in the database.
 [Programming in AL](devenv-programming-in-al.md)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
 [Container Sandbox](devenv-get-started-container-sandbox.md)  
-[Changing Which Features are Displayed](https://docs.microsoft.com/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)
+[Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)

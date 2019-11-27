@@ -219,4 +219,4 @@ GROUP BY Customer."No.", Customer.Name
  [Query Object](devenv-query-object.md)  
  [Filtering Queries](devenv-query-filters.md)  
  [Aggregating Data](devenv-query-totals-grouping.md)  
-[Aggregate Functions (Transact-SQL)](https://docs.microsoft.com/sql/t-sql/functions/aggregate-functions-transact-sql)  
+[Aggregate Functions (Transact-SQL)](/sql/t-sql/functions/aggregate-functions-transact-sql)  

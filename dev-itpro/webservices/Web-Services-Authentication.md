@@ -50,7 +50,7 @@ Typically, you would create a user account strictly for web services, and then u
   
 1.  Create a user specifically for web services.  
   
-    For more information, see [Manage Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions).  
+    For more information, see [Manage Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
   
 2.  Generate a web service access key in the user account.  
   

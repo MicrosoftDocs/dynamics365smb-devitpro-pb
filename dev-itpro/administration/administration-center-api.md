@@ -24,7 +24,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is
 ## Setting up Azure Active Directory (AAD) based authentication
 Sign in to the [Azure Portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
-1. Follow the instructions in the [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
+1. Follow the instructions in the [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
 2. Give the application a **Name**, such as **Business Central Web Service Client**.
 3. For **Application type**, choose either **Native** or **Web app/API** depending on your scenario. The code examples below assume **Native**.
 4. Choose a **Redirect URI**. In the case of a **Native** app, you can choose for example: **BusinessCentralWebServiceClient://auth**. In the case of a **Web app/API** app, set the value to the actual URL of the web application.

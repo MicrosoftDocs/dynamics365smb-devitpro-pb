@@ -28,7 +28,7 @@ For constructing the URL to the envionment, the path needs to contain the enviro
 
 In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
 
-APIs can also be explored through the [OpenAPI specification for Business Central](https://docs.microsoft.com/dynamics-nav/api-reference/v1.0/dynamics-open-api).
+APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
 ## Setting up basic authentication
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the AAD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use AAD/Oauth v2 authentication, see the section [Setting up Azure Active Directory (AAD) based authentication](#setting-up-azure-active-directory-(aad)-based-authentication).
@@ -42,7 +42,7 @@ Now that we have the username and password, we can connect and authenticate. You
 ## Setting up Azure Active Directory (AAD) based authentication
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
-1. Follow the instructions in the [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
+1. Follow the instructions in the [Integrating applications with Azure Active Directory](/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
 2. On the **API permissions** page for your app, click the **Add a permission** button. 
 3. Make sure the **Microsoft APIs** tab is selected. In the *Commonly used Microsoft APIs* section, click on the **Dynamics 365 Business Central** and select **Delegated permissions**.  
 1. Ensure that the right permission is checked: **user_impersonation**. Use the search box if necessary.

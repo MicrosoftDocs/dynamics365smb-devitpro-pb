@@ -40,7 +40,7 @@ As you navigate to other pages in the application, the **Page Inspection** pane 
 In short, the page inspection pane shows the information for the main page or sub-page in a part, the page's source table (if any) and fields, extensions that affect the page, and current filters applied to the page. The following sections describe details about what is shown.
 
 > [!NOTE]
-> If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](https://docs.microsoft.com/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
+> If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
 
 > [!TIP]
 > To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and press Ctrl+C.
@@ -79,7 +79,7 @@ If the page is associated with a source table, the **Table** field displays info
 If a page has a source table, the **View table** link is available. This  link will open the table in a separate browser window, allowing you to see all records and fields in the table.
 
 > [!NOTE]
-> To view a table, you must have read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by a permission set on your user account. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions).
+> To view a table, you must have read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by a permission set on your user account. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 ### [Table Fields](#tab/tablefields)
 
@@ -127,7 +127,7 @@ The following table describes the different filter types.
 
 |Type|Description|
 |----|-----------|
-|UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md).|
+|UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md).|
 |TableViewFilter|Filter that is defined on the page by the [SourceTableView property](properties/devenv-sourcetableview-property.md)|
 |SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the sub-page.|
 |FormViewFilters|Filter that is defined by the [RunPageView property](properties/devenv-runpageview-property.md) of the action that opens the page.|
@@ -137,5 +137,5 @@ The following table describes the different filter types.
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
-[Personalizing Your Workspace](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-user)  
+[Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
 [Using Designer](devenv-inclient-designer.md)  
