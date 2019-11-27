@@ -61,7 +61,7 @@ How to create a good offer name
 
 ![Storefront Detail - Offer Name](../../media/OfferName.png)
 
-# <a name="OfferSummary"></a>Offer Summary
+## <a name="OfferSummary"></a>Offer Summary
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|

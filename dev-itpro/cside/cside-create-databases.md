@@ -18,8 +18,6 @@ You can create new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] dat
 
 When you create a database you must specify the SQL Server instance for the database and the authentication type.  
 
-
-
 <!-- 
 ### To download symbols
 
@@ -165,7 +163,7 @@ Specifies database settings that determine how [!INCLUDE[navnow](../developer/in
 |---------------------------------|---------------------------------------|  
 |**Save license in database**|Specifies that the license file is uploaded and stored in the database instead of on the server. This is useful if you are hosting several databases with separate license files on the same server.| 
 
-# Advanced Tab
+## Advanced Tab
 Specifies how locking is handled in the database and specifies the start ID for elements on new objects.  
   
 ### Locking Options

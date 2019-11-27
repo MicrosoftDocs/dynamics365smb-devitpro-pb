@@ -1,7 +1,7 @@
 ---
 title: "Step 3 - How to Develop Your App"
 description: ""
-author: 
+author: solsen
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: solsen

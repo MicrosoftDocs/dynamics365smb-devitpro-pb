@@ -7,8 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5867a0fe-a7c2-4be6-a94d-7d2056d28189
-caps.latest.revision: 13
+author: jswymer
 ---
 # Multitenant Deployment Architecture in Business Central
 

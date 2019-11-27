@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Exporting and Importing Objects
 You can export and import application objects from and to the database from a file. The file must be one of the following formats:  
