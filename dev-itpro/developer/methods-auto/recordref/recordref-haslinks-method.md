@@ -48,7 +48,7 @@ var
     CustomerRecref: RecordRef;
     MyFieldRef: FieldRef;
     varHasLinks: Boolean;
-    Text000: TextConst ENU='Does this record have one or more links? %1.';
+    Text000: Label 'Does this record have one or more links? %1.';
 begin   
     CustomerRecref.OPEN(18);  
     MyFieldRef := CustomerRecref.FIELD(1);  

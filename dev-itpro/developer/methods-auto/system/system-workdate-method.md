@@ -50,7 +50,7 @@ If you do not set a value for the *NewDate* parameter, then the method returns t
 ```  
 var
     NewDate: Date;
-    Text000: TextConst ENU='The new work date is: %1';
+    Text000: Label 'The new work date is: %1';
 begin
     NewDate := WORKDATE(20180101D);  
     MESSAGE(Text000, NewDate);  

@@ -78,7 +78,7 @@ With these tasks in place, you can add and run the following AL code to import t
     inStreamObject: InStream;
     importFile: File;
     mediasetId: GUID;
-    Text000: TextConst ENU='The files have been imported. Item %1 has %2 pictures in MediaSet: %3';
+    Text000: Label 'The files have been imported. Item %1 has %2 pictures in MediaSet: %3';
 begin
     itemRec.Get('1000');
     

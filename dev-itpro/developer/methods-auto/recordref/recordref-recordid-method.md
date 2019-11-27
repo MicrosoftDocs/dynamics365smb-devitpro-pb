@@ -44,7 +44,7 @@ The ID of the table.
 var
     MyRecordRef: RecordRef;
     RecID: RecordId;
-    Text000: TextConst ENU='The record id for the last record is: %1'; 
+    Text000: Label 'The record id for the last record is: %1'; 
 begin   
     MyRecordRef.OPEN(18);  
     MyRecordRef.FINDLAST;  

@@ -59,10 +59,10 @@ var
     Ok2: Boolean;  
     Ok3: Boolean;  
     Ok4: Boolean; 
-    Text000: TexConst ENU='VarInteger = \#1\#\#\#\#\#\#. The return code is: %2.\\;
-    Text001: TexConst ENU='VarDate = \#3\#\#\#\#\#\#. The return code is: %4.\\'; 
-    Text002: TexConst ENU='VarYesNo = \#5\#\#\#\#\#\#. The return code is: %6.\\';  
-    Text003" TextConst ENU='VarDuration = %7. The return code is: %8.';
+    Text000: TextConst ENU='VarInteger = \#1\#\#\#\#\#\#. The return code is: %2.\\;
+    Text001: TextConst ENU='VarDate = \#3\#\#\#\#\#\#. The return code is: %4.\\'; 
+    Text002: TextConst ENU='VarYesNo = \#5\#\#\#\#\#\#. The return code is: %6.\\';  
+    Text003" Label 'VarDuration = %7. The return code is: %8.';
 begin
     Value := '19960101';  
     Ok1 := EVALUATE(VarInteger, Value);  

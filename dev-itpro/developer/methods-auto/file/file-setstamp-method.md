@@ -58,7 +58,7 @@ The time that you want stamped on the file.
     varFileName: Text;
     varDate: Date;
     varTime: Time;
-    Text000: TextConst ENU='The timestamp for this file is Date: %1 Time: %2.';
+    Text000: Label 'The timestamp for this file is Date: %1 Time: %2.';
 begin
     VarFileName := 'C:\MyFolder\MyText.txt';  
     varDate := TODAY;  

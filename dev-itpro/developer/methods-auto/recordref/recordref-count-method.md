@@ -55,7 +55,7 @@ var
     MyRecordRef: RecordRef;
     varTableNo: Integer;
     Count: Integer;
-    Text000: TextConst ENU='The number of records in the %1 table is: %2.';
+    Text000: Label 'The number of records in the %1 table is: %2.';
 begin
     varTableNo := 18;  
     MyRecordRef.OPEN(varTableNo);  

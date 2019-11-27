@@ -70,8 +70,8 @@ end;
 
 var
     ItemRec: Record Item;
-    Text000: TextConst ENU = 'Item No. %1.\Description: %2. Price: $%3.';
-    Text001: TextConst ENU = 'The item was not found.';
+    Text000: Label 'Item No. %1.\Description: %2. Price: $%3.';
+    Text001: Label 'The item was not found.';
 ```  
   
 ## Example  
@@ -87,8 +87,8 @@ end;
 
 var
     ItemRec: Record Item;
-    Text000: TextConst ENU = 'Item No. %1.\Description: %2. Price: $%3.';
-    Text001: TextConst ENU = 'The item was not found.';
+    Text000: Label 'Item No. %1.\Description: %2. Price: $%3.';
+    Text001: Label 'The item was not found.';
 ```  
 
 ## See Also

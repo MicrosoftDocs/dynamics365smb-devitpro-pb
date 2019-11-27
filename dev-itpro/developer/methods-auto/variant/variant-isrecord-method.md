@@ -45,8 +45,8 @@ var
     MyRecord: Record Customer;
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='Does the variant >%1< contain a record variable? %2.';
-    Text001: TextConst ENU='Does the variant >%1< contain a code variable? %2.';
+    Text000: Label 'Does the variant >%1< contain a record variable? %2.';
+    Text001: Label 'Does the variant >%1< contain a code variable? %2.';
 begin
     MyRecord.GET('10000');  
     MyVariant := MyRecord;  

@@ -90,9 +90,9 @@ var
     Str: Text[1024];
     AccountNo: Integer;
     Balance: Decimal;
-    Text000: TextConst ENU='The balance of account %1 is $ %2';  
-    Text001: TextConst ENU='The test string before STRSUBSTNO is called:\\%1';  
-    Text002: TextConst ENU='The string after STRSUBSTNO is called:\\%1';  
+    Text000: Label 'The balance of account %1 is $ %2';  
+    Text001: Label 'The test string before STRSUBSTNO is called:\\%1';  
+    Text002: Label 'The string after STRSUBSTNO is called:\\%1';  
 begin
     Str := Text000;  
     AccountNo := 3452;   

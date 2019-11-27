@@ -60,7 +60,7 @@ The rounded result.
  
 ```  
 var
-    Text000: TextConst ENU='ROUNDDATETIME(%1, %2) returns %3.';
+    Text000: Label 'ROUNDDATETIME(%1, %2) returns %3.';
 begin
     DateToRound := 20081127D;  
     TimeToRound := 093524.567T;  

@@ -47,7 +47,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 var
     varHasFilters: Text;
     RecRef: RecordRef;
-    Text000: TextConst ENU='Are there any filters? %1';
+    Text000: Label 'Are there any filters? %1';
 begin   
     RecRef.OPEN(DATABASE::Customer);  
     VarHasFilters := RecRef.HASFILTER;  

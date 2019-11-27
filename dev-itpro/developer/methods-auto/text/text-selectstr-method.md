@@ -60,9 +60,9 @@ var
     SubStr2: Text[60];  
     SubStr3: Text[60];  
     SubStr4: Text[60];  
-    Text000: TextConst ENU='This,is a comma,separated,string';
-    Text001: TextConst ENU='The calls to SELECTSTR return:\\';
-    Text002: TextConst ENU='11,22,33,,55,,,';
+    Text000: Label 'This,is a comma,separated,string';
+    Text001: Label 'The calls to SELECTSTR return:\\';
+    Text002: Label '11,22,33,,55,,,';
 begin
     CommaStr := Text000;  
     CommaStr2 := Text002;  
@@ -91,7 +91,7 @@ end;
 var
     CommaStr2: Text[60];  
     SubStr5: Text[60];  
-    Text002: TextConst ENU='11,22,33,,55,,,';
+    Text002: Label '11,22,33,,55,,,';
 begin
     CommaStr2 := Text002;  
     SubStr5 := SELECTSTR(6,CommaStr2);  

@@ -52,8 +52,8 @@ var
     MyRecordRef: RecordRef;
     varOrigGroup: Integer;
     varCurrGroup: Integer;
-    Text000: TextConst ENU='The original filtergroup is: %1';
-    Text001: TextConst ENU='The current filtergroup is: %1';
+    Text000: Label 'The original filtergroup is: %1';
+    Text001: Label 'The current filtergroup is: %1';
 begin
     MyRecordRef.OPEN(DATABASE::Customer);  
     MyRecordRef.SETRECFILTER;  
