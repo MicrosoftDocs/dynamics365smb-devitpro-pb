@@ -19,26 +19,23 @@ When you develop in a Docker sandbox, the Essential experience is automatically 
 <br>
 
 ## Setup for users with different plans
-To mimic users with a specific subscription plan assigned, you can set them up with the user groups as detailed in the table below. 
-
-> [!NOTE]  
-> When you assign user groups the permissions in that user group are automatically assigned. Some user groups are not assigned by default, but the plan includes them.
+To mimic users with a specific subscription plan assigned, you can set them up with the user groups as detailed in the table below. When you add user to the group, the permission sets defined for the group will apply to the user. For more information, see [To group users in user groups](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions?branch=master#to-manage-permissions-through-user-groups).
 
 > [!NOTE]  
 > In the table below *non-default* means not assigned by default, but the plan allows this to be assigned to the user.
 
-|User Name <br>The type of subscription plan <br> assigned to the given user|User Groups|Permission Sets|
-|---------|-----------|---------------|
-|EXTERNALACCOUNTANT|D365 EXT. ACCOUNTANT<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 READ<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|PREMIUM|D365 BUS PREMIUM<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS PREMIUM<br>D365 EXTENSION MGT (non-default)<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|ESSENTIAL|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|INTERNALADMIN|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|D365 READ<br>LOCAL<br>SECURITY<br>TROUBLESHOOT TOOLS<br>D365 BACKUP/RESTORE<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|TEAMMEMBER|D365 TEAM MEMBER<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 READ<br>D365 TEAM MEMBER<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|DEVICE	|D365 FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |D365 FULL ACCESS<br>LOCAL<br>D365 EXTENSION MGT(non-default)<br> D365 BUS PREMIUM (non-default)* <br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide|
-|DELEGATEDADMIN|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|D365 BASIC<br>D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>LOCAL<br>D365 BACKUP/RESTORE<br>TROUBLESHOOT TOOLS<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
+|User Name <br>The type of subscription plan <br> assigned to the given user|User Groups|
+|---------|-----------
+|EXTERNALACCOUNTANT<br><br>Dynamics 365 Business Central External Accountant|D365 EXT. ACCOUNTANT<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|PREMIUM<br><br>Dynamics 365 Business Central Premium<br>Dynamics 365 Business Central for IWs|D365 BUS PREMIUM<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|ESSENTIAL<br><br>Dynamics 365 Business Central Essential|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|INTERNALADMIN<br><br>Internal Administrator (Office 365 Global administrator role)|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|
+|TEAMMEMBER<br><br>Dynamics 365 for Team Members|D365 TEAM MEMBER<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|DEVICE	<br><br>Dynamics 365 Business Central Device|D365 FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br><br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |
+|DELEGATEDADMIN<br><br>Delegated Admin agent - Partner<br>Delegated Helpdesk agent - Partner|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|
 
 > [!TIP]  
-> For more information about how to choose a user experience, see [Changing Which Features are Displayed](https://docs.microsoft.com/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
+> For more information about how to choose a user experience, see [Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
 
 ## Assigning the Premium plan to test users
 Depending on how you are running your Docker sandbox, you assign the experience in different ways.
@@ -90,10 +87,10 @@ Get-NavServerUser -serverInstance NAV -tenant default |? LicenseType -eq "FullUs
 This will assign the Premium plan to the admin user in the database.
 
 > [!TIP]  
-> To set up test users, you can clone the [createtestusers](https://github.com/NAVDEMO/CreateTestUsers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
+> To set up test users, you can clone the [createtestusers](https://dev.azure.com/businesscentralapps/CreateTestUsers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
 
 ## See Also
 [Programming in AL](devenv-programming-in-al.md)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
 [Container Sandbox](devenv-get-started-container-sandbox.md)  
-[Changing Which Features are Displayed](https://docs.microsoft.com/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)
+[Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)

@@ -22,9 +22,9 @@ Install Docker and configure it for Windows Containers.
 
 1. Please choose the version of Docker that is appropriate for the host operating system.
     - Use [Docker Community Edition]( https://hub.docker.com/editions/community/docker-ce-desktop-windows) if the host operating system is Windows 10.  
-        For more information, see [Install instructions](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10).
+        For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-10).
     - Use [Docker Enterprise Edition](https://www.docker.com/enterprise-edition) if the host operating system is Windows Server.  
-        For more information, see [Install instructions](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+        For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
 2. Switch Docker to use Windows containers. By default Docker uses Linux containers.
 
@@ -33,7 +33,7 @@ Install Docker and configure it for Windows Containers.
 ## Run the container-based image
 Run the following command in a Command Prompt as Administrator to run a Docker image of Dynamics 365 Business Central:
 
-```docker run -e accept_eula=Y -m 4G microsoft/bcsandbox```
+```docker run -e accept_eula=Y -m 4G mcr.microsoft.com/businesscentral/sandbox```
 
 > [!NOTE]  
 > When you run the Docker run command, it will start downloading the image if it does not already exist. A container consists of multiple layers, only the needed layers are downloaded.
@@ -73,7 +73,7 @@ To see which functions are available in the NavContainerHelper module use the fo
 
 To get quickly get started, run the following command from the NavContainerHelper module:
 
-```new-navcontainer -accept_eula -containerName test -imageName microsoft/bcsandbox:<country> -usebestcontaineros```
+```new-navcontainer -accept_eula -containerName test -imageName mcr.microsoft.com/businesscentral/sandbox:<country> -usebestcontaineros```
 
 The `NavContainerHelper` will create a folder on the C:\ drive called DEMO and will place all files underneath that folder. The DEMO folder will be shared to the container for transfer of files etc. If you do not specify a username and a password, it will ask for your password and use the current Windows username. If you specify your windows password, the container setup will use Windows Authentication integrated with the host. The `NavContainerHelper` will also create shortcuts on the desktop for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, a container prompt, and a container PowerShell prompt.
 

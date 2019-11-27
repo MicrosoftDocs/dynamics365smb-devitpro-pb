@@ -55,11 +55,11 @@ The following are general articles about SQL Server security that can also help 
   
 [Data Encryption at Rest](transparent-data-encryption.md)
 
-[SQL Server Hardening](https://docs.microsoft.com/sql/relational-databases/security/securing-sql-server?view=sql-server-2017)
+[SQL Server Hardening](/sql/relational-databases/security/securing-sql-server?view=sql-server-2017)
   
-[SQL Server Auditing](https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-database-engine?view=sql-server-2017)
+[SQL Server Auditing](/sql/relational-databases/security/auditing/sql-server-audit-database-engine?view=sql-server-2017)
 
-[Backup Encryption](https://docs.microsoft.com/sql/relational-databases/backup-restore/backup-encryption?view=sql-server-2017)
+[Backup Encryption](/sql/relational-databases/backup-restore/backup-encryption?view=sql-server-2017)
 
 ## Network Security
 
@@ -69,7 +69,7 @@ The following articles explain to secure client, web service, and PowerBI connec
 
 [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 
-[Connect to Business Central with Power BI](https://docs.microsoft.com/power-bi/service-connect-to-microsoft-dynamics-nav)
+[Connect to Business Central with Power BI](/power-bi/service-connect-to-microsoft-dynamics-nav)
 
 ## See Also  
 

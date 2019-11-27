@@ -80,7 +80,7 @@ Designing control add-ins that provide the best possible experience can require 
 
 
 ## Control add-in syntax example
-The following control add-in example syntax defines a chart that can show how customers are represented per country on a map. The control add-in is implemented as a `usercontrol` on a page called **CustomersMapPage**.
+The following control add-in syntax exemplifies how to implement small customizations regarding the layout and functionality of a page.
 
 ```
 // The controladdin type declares the new add-in.
@@ -89,7 +89,6 @@ controladdin SampleAddIn
     // The Scripts property can reference both external and local scripts.
     Scripts = 'https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-debug.js',
                 'main.js';
-
     // The StartupScript is a special script that the web client calls once the page is loaded.
     StartupScript = 'startup.js';
 
@@ -100,14 +99,18 @@ controladdin SampleAddIn
     Images = 'image.png';
 
     // The procedure declarations specify what JavaScript methods could be called from AL.
-    // In main.js code, there should be a global function CallJavaScript(i,s,d,c) {}
+    // In main.js code, there should be a global function CallJavaScript(i,s,d,c) {Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('CallBack', [i, s, d, c]);}
     procedure CallJavaScript(i: integer; s: text; d: decimal; c: char);
 
     // The event declarations specify what callbacks could be raised from JavaScript by using the webclient API:
     // Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('CallBack', [42, 'some text', 5.8, 'c'])
     event Callback(i: integer; s: text; d: decimal; c: char);
 }
+```
 
+The `controladdin` object is then invoked as a `usercontrol` on a page called **PageWithAddIn**. 
+
+```
 page 50130 PageWithAddIn
 {
     layout
@@ -147,7 +150,6 @@ page 50130 PageWithAddIn
         }
     }
 }
-
 ```
 
 ## See Also  

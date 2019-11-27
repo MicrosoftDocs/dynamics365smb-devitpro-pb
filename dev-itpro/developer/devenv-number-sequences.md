@@ -24,9 +24,9 @@ The numbers in a number sequence are generated in ascending order at a defined i
 
 Unlike number sequences, number series are specially designed for scenarios where you have to use a continuous numbering system on transactional records. This typically includes documents such as purchase orders, sales orders, and invoices. The drawback of using continuous numbers is that when a number is requested by a transaction, the **No Series Line** table in the database is locked until the transaction completes. This can potentially block other users from being able to work.
 
-However, number series also include an option called **Allow Gaps in Nos.**. This option actually uses number sequences in the underlying code, and allows you to implement non-continuous, nun-blocking numbering. So, if there are no regulatory requirements for using continuous numbering, you can improve performance by allowing gaps and using a number sequence instead. Customer cards, sales quotes, and warehouse activities are examples of entities that typically do not require continuous numbering.
+However, number series also include an option called **Allow Gaps in Nos.**. This option actually uses number sequences in the underlying code, and allows you to implement non-continuous, non-blocking numbering. So, if there are no regulatory requirements for using continuous numbering, you can improve performance by allowing gaps and using a number sequence instead. Customer cards, sales quotes, and warehouse activities are examples of entities that typically do not require continuous numbering.
 
-For more information about number series, see [Create Number Series](https://docs.microsoft.com/dynamics365/business-central/ui-create-number-series?branch=fall-2019#gaps-in-number-series) in the [!INCLUDE[prodshort](includes/prodshort.md)] application help.  
+For more information about number series, see [Create Number Series](/dynamics365/business-central/ui-create-number-series?branch=fall-2019#gaps-in-number-series) in the [!INCLUDE[prodshort](includes/prodshort.md)] application help.  
 
 
 ## Creating and managing number sequences in AL
@@ -70,4 +70,4 @@ number := NumberSequence.Next('MySequence',true); ​
 
 ## See Also  
 [Number Sequence data type](methods-auto/numbersequence/numbersequence-data-type.md)  
-[SQL Server Sequence Numbers](https://docs.microsoft.com/sql/relational-databases/sequence-numbers/sequence-numbers?view=sql-server-2017)  
+[SQL Server Sequence Numbers](/sql/relational-databases/sequence-numbers/sequence-numbers?view=sql-server-2017)  

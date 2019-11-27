@@ -19,7 +19,7 @@ Microsoft Dynamics 365 Business Central is a business management solution that h
 AppSource is Microsoft’s marketplace for your Dynamics 365 Business Central offerings and there are several reasons why going to market with Microsoft AppSource is a great idea. For example, it allows you to promote your brand, expand your reach, accelerate the customer journey and upsell your solutions and it connects you with millions of Office 365 & Dynamics 365 business users. Find more information about which opportunities you have as a partner at: Apps on AppSource for Business Central [aka.ms/BusinessCentralApps](https://aka.ms/BusinessCentralApps).
 
 You can bring two types of offerings to Microsoft AppSource:
-- **Add-on Apps** (that brings your industry expertise to market), **Connect Apps** (that connect services) and **Embed Apps** (an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry). [What is an Embed App?](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/deployment/embed-app-overview)
+- **Add-on Apps** (that brings your industry expertise to market), **Connect Apps** (that connect services) and **Embed Apps** (an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry). [What is an Embed App?](/dynamics365/business-central/dev-itpro/deployment/embed-app-overview)
 - Or **Packaged Consulting Services** (that bring ready-made packaged engagements to market).
 
 ## Guidelines for Business Central Add-on apps
@@ -34,7 +34,7 @@ To ease your journey, from the initial listing to the final publication of your 
 - STEP 3: Initiate the validation and publication process
 
 > [!IMPORTANT]  
-> Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
+> Please review all of the steps and follow the [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## STEP 1: Create and set up your accounts
 
@@ -112,7 +112,7 @@ Partner Center is the single destination to manage your business relationship wi
 ### Create your sandbox environment
 
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
-- If your add-on is lightweight, it might be sufficient to use a [sandbox environment](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).
+- If your add-on is lightweight, it might be sufficient to use a [sandbox environment](/dynamics365/business-central/dev-itpro/developer/devenv-get-started).
 - If you want to setup a Docker-based development environment on Azure, you can use [Business Central Azure Sandbox](https://aka.ms/BCSandboxAzure).
 - If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](https://aka.ms/BCSandboxLocal).
 
@@ -120,8 +120,8 @@ You have 3 options to work develop against the current version of Microsoft Dyna
 
 There are several things to keep in mind in building an Add-on app. The **"Ready to Go" program** is designed to support you in bringing your Microsoft Dynamics 365 Business Central offers into Microsoft Appsource. The program encompasses the following three core support options that you can leverage:
 - Element 1: [“Ready to Go” Online learning](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-- Element 2: [“Ready to Go” Coaching](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=coaching)
-- Element 3: [“Ready to Go” Platform](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=learning)
+- Element 2: [“Ready to Go” Coaching](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=coaching)
+- Element 3: [“Ready to Go” Platform](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=learning)
 
 If you want to have more in depth learning resources to get up to speed, then you can get a sneak-peek of the extensive set of **"Ready to Go" resources available in the online learning catalog**. We highly recommend that you either consume the materials which are built for you in the “Ready to Go” online learning catalog or get coached by one of our ISV Development Centers.
 
@@ -195,7 +195,7 @@ When listing your app you need to specify the following:
 Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly. -->
 
 ## Next steps
-Now that you have completed step 1 (cf. setting up your accounts) you can now proceed to step 2 and 3 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
+Now that you have completed step 1 (cf. setting up your accounts) you can now proceed to step 2 and 3 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## Useful resources
 

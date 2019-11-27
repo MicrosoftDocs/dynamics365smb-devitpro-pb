@@ -7,9 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 95e988c1-f113-4c6d-8d97-14bf971dbc62
-caps.latest.revision: 6
-manager: edupont
+author: jswymer
 ---
 # Query Objects and Performance
 A *query* is an object in [!INCLUDE[prodlong](../developer/includes/prodlong.md)] that you use to specify a set of data that you want to read from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. You can query the database to retrieve one or more fields from a single table or multiple tables. You can specify how to join the tables in the query. You can specify totaling methods on fields, such as sums and averages. This topic describes how to design queries and table keys in the most efficient way.  
@@ -59,7 +57,7 @@ A *query* is an object in [!INCLUDE[prodlong](../developer/includes/prodlong.md)
 
 ## Enabling and Disabling Selected Query Hints
 
-SQL Server query optimizer will try to select the best execution plan for SELECT, INSERT, UPDATE, and DELETE statements. Most of the time, query optimizer makes the right choice. [Query hints](https://docs.microsoft.com/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017) are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the selected query hints on the database.
+SQL Server query optimizer will try to select the best execution plan for SELECT, INSERT, UPDATE, and DELETE statements. Most of the time, query optimizer makes the right choice. [Query hints](/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017) are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the selected query hints on the database.
 
 For more information, see [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](sql-server-query-hints.md).
   

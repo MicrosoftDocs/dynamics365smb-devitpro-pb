@@ -43,7 +43,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
 
     The event_file target writes event session output from a buffer to a disk file that you specify. There are two ways to do this:
     - From Object Explorer, open the session's **Properties**, and then on the **Data Storage** page, add an **event_file** type target.  
-    - Using a query, run the [ALTER EVENT SESSION](https://docs.microsoft.com/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017) transact-sql statement. For example:
+    - Using a query, run the [ALTER EVENT SESSION](/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017) transact-sql statement. For example:
       ```
       ALTER EVENT SESSION [Demo Database BC_deadlock_monitor]
           ON SERVER
@@ -54,7 +54,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
       ```
     Replace `C:\logging\mydeadlocks.xel` with the path and file name that you want to store the data.
    
-    For more information see [Alter an Extended Events Session](https://docs.microsoft.com/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017) and [Targets for Extended Events in SQL Server](https://docs.microsoft.com/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target).
+    For more information see [Alter an Extended Events Session](/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017) and [Targets for Extended Events in SQL Server](/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target).
     
 2. In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, create a view that has the name `deadlock_report_event_file_view` and uses the new event_file target.  
 
@@ -112,7 +112,7 @@ To log deadlocks, you must enable deadlock logging on the [!INCLUDE[server](../d
     ```
     Set-NAVServerConfiguration -ServerInstance MyServerInstance -KeyName EnableDeadlockMonitoring -KeyValue true
     ```
-    For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
+    For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 
 ## Viewing Deadlocks in the Windows Event Log
 Similar to other errors and events in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can monitor deadlocks by using Event Viewer on the computer running [!INCLUDE[server](../developer/includes/server.md)]. Deadlocks are recorded as warnings in the [!INCLUDE[server](../developer/includes/server.md)]  **Admin** channel log in the **Applications and Services Logs**. For general information about how to view the [!INCLUDE[server](../developer/includes/server.md)] logs, see [Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).

@@ -42,7 +42,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 - You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.
 
-- In the client, users can change the many of these settings for their workspace only by using personalization (see [Personalizing Your Workspace](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-user)).  
+- In the client, users can change the many of these settings for their workspace only by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)).  
 
 ## Start and stop designing
 
@@ -84,7 +84,7 @@ You can use Designer to set the [QuickEntry property](properties/devenv-quickent
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
-For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data?branch=master#QuickEntry) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data?branch=master#QuickEntry) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 ## Working with Actions
 

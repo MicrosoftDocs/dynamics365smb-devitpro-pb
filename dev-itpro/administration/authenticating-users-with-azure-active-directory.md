@@ -44,7 +44,7 @@ To get started, you have to have an Azure AD tenant where you can register and m
 
     2. Sign in to Azure portal and create a directory.
 
-        This will create an Azure AD tenant. For about how to do this, see [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+        This will create an Azure AD tenant. For about how to do this, see [How to get an Azure Active Directory tenant](/azure/active-directory/develop/active-directory-howto-tenant).
     
     
         When you create an Azure Active Directory in the Azure portal, you specify an initial domain name that identifies your Azure AD tenant, such as *solutions.onmicrosoft.com* or *cronusinternationltd.onmicrosoft.com*. You will use the domain name when you add users to your Azure AD and when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. In the steps that follow, this is referred to as the Azure AD Tenant ID. 
@@ -56,7 +56,7 @@ To get started, you have to have an Azure AD tenant where you can register and m
 
 ### To set the access token lifetime
 
-As a reference, see the prerequisites section in the following topic: [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites). Follow the steps outlined below.
+As a reference, see the prerequisites section in the following topic: [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites). Follow the steps outlined below.
 
 1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
 2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
@@ -69,7 +69,7 @@ As a reference, see the prerequisites section in the following topic: [Configura
 
 You must register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution as an application in Azure AD tenant. Then, you can choose to make it available to other Azure AD tenants.  
 
-1. You register an application by using the [Azure portal](https://portal.azure.com). To register the application, follow the guidelines at [Register your application with your Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration).
+1. You register an application by using the [Azure portal](https://portal.azure.com). To register the application, follow the guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
 
     When you add an application to an Azure AD tenant, you specify the following information.
 
@@ -113,7 +113,7 @@ In the overview page for the application, the **URL for Granting Access** field 
 
 ## Task 3: Configure [!INCLUDE[server](../developer/includes/server.md)] for Azure AD
 
-You can configure the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], modifying the CustomSettings.config file directly, or using the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For more information, see [Configuring Server](../administration/configure-server-instance.md).
+You can configure the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], modifying the CustomSettings.config file directly, or using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For more information, see [Configuring Server](../administration/configure-server-instance.md).
 
 1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instances that must support Azure AD to use `AccessControlService` as the credential type.
 
@@ -162,7 +162,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 4. Disable token-signing certificate validation.
 
-	If you are using the [!INCLUDE[admintool](../developer/includes/admintool.md)], select the **Disable Token-Signing Certificate Validation** check box. If you are using the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) or modifying the CustomSettings.config file directly, set `DisableTokenSigningCertificateValidation` to `true`.
+	If you are using the [!INCLUDE[admintool](../developer/includes/admintool.md)], select the **Disable Token-Signing Certificate Validation** check box. If you are using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) or modifying the CustomSettings.config file directly, set `DisableTokenSigningCertificateValidation` to `true`.
 
 5. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Azure AD.
 
