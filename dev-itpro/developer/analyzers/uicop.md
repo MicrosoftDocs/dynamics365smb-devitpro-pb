@@ -2,7 +2,7 @@
 title: "UICop Analyzer"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 11/27/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UICop Analyzer Rules
-UICop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants.
+UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web client.
 
 ## Rules
 

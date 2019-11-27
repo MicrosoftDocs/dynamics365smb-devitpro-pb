@@ -56,7 +56,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 - **CodeCop** is an analyzer that enforces the official AL Coding Guidelines. For more information about the CodeCop rules, see [CodeCop Analyzer Rules](analyzers/codecop.md).
 - **PerTenantExtensionCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the PerTenantExtensionCop rules, see [PerTenantExtensionCop Analyzer Rules](analyzers/pertenantextensioncop.md).
 - **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](analyzers/appsourcecop.md).
-- **UICop** is an analyzer that enforces rules that must be respected by extensions meant to customize a user interface. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
+- **UICop** is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
 
 ## Enabling code analysis on large projects
 In order to improve performance when running code analysis on large projects, you can switch off running code analysis in the background.
