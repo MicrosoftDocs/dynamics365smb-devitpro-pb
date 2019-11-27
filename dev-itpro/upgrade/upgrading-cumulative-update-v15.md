@@ -66,7 +66,9 @@ When this step is completed, you can proceed to update your Business Central sol
 
 1. Backup your databases.
 
-2. (Single-tenant only) Uninstall all extensions from the all tenants.
+2. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+
+3. (Single-tenant only) Uninstall all extensions from the all tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
 
@@ -77,30 +79,32 @@ When this step is completed, you can proceed to update your Business Central sol
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
         ```powershell 
-        Get-NAVAppInfo -ServerInstance <server instance name> -Tenant Default
+        Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>
         ``` 
+
+        For a multitenant deployment, replace `<tenant ID>` with the ID of the tenant. For a single-tenant deployment, set `<tenant ID>` to `default`. 
     2. Uninstall the extensions.
     
         To uninstall an extension, you use the [Uninstall-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
     
         ```powershell 
-        Uninstall-NAVApp -ServerInstance <server instance name> -Name <extensions name> -Version <extension version> -Force
+        Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extensions name> -Version <extension version> -Force
         ```
         
-        Replace  `<extension name>` and `<extension version>` with the exact name and version the published System Application.
+        Replace  `<extension name>` and `<extension version>` with the exact name and version the installed extension. For single-tenant deployment, set `<tenant ID>` to `default` or omit the `-Tenant` parameter.
 
         For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
 
         ```powershell 
-        Get-NAVAppInfo -ServerInstance <server instance name> -Tenant Default| % { Uninstall-NAVApp -ServerInstance <server instance name> -Name $_.Name -Version $_.Version -Force}
+        Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
         ``` 
 
-3. (Multitenant only) Dismount the tenants from the application database.
+4. (Multitenant only) Dismount the tenants from the application database.
 
     To dismount a tenant, use the [Dismount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
     ```powershell
-    Dismount-NAVTenant -ServerInstance <BC14 server instance> -Tenant <tenant ID>
+    Dismount-NAVTenant -ServerInstance <server instance> -Tenant <tenant ID>
     ```
 
 ## Install Business Central update
@@ -112,7 +116,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
     ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance>
     ```
-2. Run setup.exe to uninstall your current version of Business Central.
+2. Run setup.exe to uninstall your current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 3. Run setup.exe again to install components of the update.
 
     1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Setup** page.
@@ -122,16 +126,22 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
         - AL Development Environment (optional but recommended)
         - Server
         - SQL Server Components
+
+            <!--
             - Demo Database
             
             > [!IMPORTANT]
-            > You must select to install the Demo Database; otherwise the Server will not install. This is because in order the be installed, the server must connect to a  database that is compatible with the platform of the update. Because you have not converted your existing database, it is not compatible.
+            > You must select to install the Demo Database; otherwise the Server will not install. This is because in order the be installed, the server must connect to a database that is compatible with the platform of the update. Because you have not converted your existing database, it is not compatible.-->
         - Web Server Components.
     3. Select **Next**.
-    4. On the **Specify parameters** page, specify the parameter values.
-    
+    4. On the **Specify parameters** page, set the fields as needed.
+
         > [!IMPORTANT]
-        > Make sure that you set the **SQL Database** to something other than the name of your database, so that your database is not overwritten.
+        > Clear the **SQL Database** field so that it is blank. At this time, do not set this to the database that you want to update; otherwise, the installation of the [!INCLUDE[server](../developer/includes/server.md)] will fail. You will connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after it is converted to the new platform.
+
+        <!--
+        > [!IMPORTANT]
+        > Make sure that you set the **SQL Database** to something other than the name of your database, so that your database is not overwritten.-->
     5. Select **Apply** to complete the installation.
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).

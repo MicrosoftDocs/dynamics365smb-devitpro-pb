@@ -36,7 +36,7 @@ The following topic outlines the most important capabilities on the offered deve
 |Database access|No|Yes|
 |**Extensions**|Must be manually installed.| Must be manually installed.|
 |From AppSource|Available.|Not available.|
-|From File|Not available.|Available.|
+|From File|Available.|Available.|
 |From Visual Studio Code|Available.|Available.|
 
 ## Getting Started
