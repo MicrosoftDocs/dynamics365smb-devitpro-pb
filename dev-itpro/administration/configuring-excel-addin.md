@@ -51,7 +51,7 @@ Your deployment must meet the following prerequisites:
 
 When [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Azure AD authentication, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application is registered as an application in an Azure AD. Before the Excel Add-in can be configured, you must configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD to expose its Web API.
 
-For information about how to do this, see [Quickstart: Configure an application to expose web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
+For information about how to do this, see [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
 
 ## Register and configure an Azure AD Application for the Excel Add-in in Microsoft Azure
 
@@ -59,7 +59,7 @@ When Azure AD authentication was set up for your [!INCLUDE[prodshort](../develop
 
 1. Register an Azure AD application for the Excel add-in.
 
-    You add the Azure AD application by using the [Azure portal](https://go.microsoft.com/fwlink/?LinkID=317944). For guidelines, see [Register your application with your Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration).
+    You add the Azure AD application by using the [Azure portal](https://go.microsoft.com/fwlink/?LinkID=317944). For guidelines, see [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
     
     When you add an application to an Azure AD tenant, you must specify the following information:
 
@@ -95,7 +95,7 @@ When Azure AD authentication was set up for your [!INCLUDE[prodshort](../develop
     4. Select **Delegated permsission**.
     5. Select the permission from the list, and then select **Add Permission**.
 
-    For information, see [Quickstart: Configure a client application to access web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
+    For information, see [Quickstart: Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
 
 3. Configure OAuth2 authentication in the Excel add-in.
 
@@ -125,7 +125,7 @@ This completes the work you have to do in the Azure portal. The final configurat
 
 ## Configure the [!INCLUDE[server](../developer/includes/server.md)] Instances
 
-You must add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.md)] instances in your deployment. You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or  [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+You must add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.md)] instances in your deployment. You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or  [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 1.  In the [!INCLUDE[admintool](../developer/includes/admintool.md)], in the **Azure Active Directory** section, set the **Excel add-in AAD client ID** field to the application (client) ID for the Excel add-in application that you copied from the Azure portal.
 

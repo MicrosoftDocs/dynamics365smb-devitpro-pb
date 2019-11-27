@@ -21,7 +21,7 @@ author: jswymer
   
  For example, if you want to modify a report, you modify the report object in the application database. Then, when you deploy the updated application to your production environment, when a user accesses the report, they see the modified report.  
   
- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that help you export application tables to a dedicated database, and other cmdlets to help you maintain a multitenant deployment. For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview).  
+ [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that help you export application tables to a dedicated database, and other cmdlets to help you maintain a multitenant deployment. For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
   
 ### Distribution of the System Tables in Each Database
   
@@ -63,7 +63,7 @@ The following procedure illustrates how you can separate the application tables 
     > [!IMPORTANT]  
     >  You must run the program as administrator. Also, you must ensure that scripting is enabled on the computer.  
 
-     For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview).  
+     For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
 
 3. For an overview of the cmdlet, type the following command:  
 
@@ -92,7 +92,7 @@ The following procedure illustrates how you can separate the application tables 
     > [!TIP]  
     >  Optionally, you can combine the Export-NAVApplication and Remove-NAVApplication cmdlets. For an example of how you can combine the two cmdlets, see the **Example** section.  
 
-5. To remove the application tables from the original database, run the [Remove-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/remove-navapplication) cmdlet as follows:  
+5. To remove the application tables from the original database, run the [Remove-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/remove-navapplication) cmdlet as follows:  
 
     ```  
     Remove-NAVApplication –DatabaseServer <server name> -DatabaseInstance <instance name> –DatabaseName <name of the original database>  
@@ -120,29 +120,29 @@ The following procedure illustrates how you can separate the application tables 
     You must take additional steps to get the final business data database operational. For an example of how you can write a script that runs the cmdlet for creating an application database, see the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. For an example of how to write individual commands in Windows PowerShell, see the **Example** section.
     
     -->  
-6. Clear the `DatabaseName` setting in the [!INCLUDE[server](../developer/includes/server.md)] instance configuration file by using the [Set-NAVServerConfiguration](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
+6. Clear the `DatabaseName` setting in the [!INCLUDE[server](../developer/includes/server.md)] instance configuration file by using the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
     
     ```
     Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue ''
     
     ```
-7. Start the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
+7. Start the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Start-NAVServerInstance](/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
 
     ```
     Start-NAVServerInstance –ServerInstance <server instance name>
     ```
-8. Mount the application database on the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Mount-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/mount-navapplication) cmdlet:
+8. Mount the application database on the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Mount-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/mount-navapplication) cmdlet:
 
     ```
     Mount-NAVApplication –ServerInstance <server instance name> –DatabaseServer <server name\instance name> –DatabaseName <application database name>
     ```
-9.  Mount the business data database (tenant) on the server instance by using the [Mount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
+9.  Mount the business data database (tenant) on the server instance by using the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
 
     ```
     Mount-NAVTenant –ServerInstance <server instance name> -Id <tenant name> –DatabaseServer <server name\instance name> -DatabaseName <business data database> -OverwriteTenantIdInDatabase  
     ```
 
-For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview).  
+For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
 
 ## Example
   
@@ -167,4 +167,4 @@ In the example, the commands stop the [!INCLUDE[server](../developer/includes/se
 ## See Also
 
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)  
- [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview)
+ [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)

@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Monitoring Long Running SQL Queries
 
@@ -36,7 +37,7 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 
 ### Enable Sending Telemetry to Application Insights
 
-You enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. All you need is the instrumentation key of the Application Insights resource, which you can get from the [Azure Portal](https://docs.microsoft.com/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0). The Mount-NAVTenant cmdlet includes the `-ApplicationInsightsKey` parameter that you set to the instrumentation key, for example:
+You enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. All you need is the instrumentation key of the Application Insights resource, which you can get from the [Azure Portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0). The Mount-NAVTenant cmdlet includes the `-ApplicationInsightsKey` parameter that you set to the instrumentation key, for example:
 
 ```
 Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (15-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555

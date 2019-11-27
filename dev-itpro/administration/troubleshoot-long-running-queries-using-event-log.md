@@ -70,5 +70,5 @@ CounterInformation:
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 [Business Central Server Administration Tool](administration-tool.md)  
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)  
-[SQL Trace](https://docs.microsoft.com/sql/relational-databases/sql-trace/sql-trace)
+[SQL Trace](/sql/relational-databases/sql-trace/sql-trace)
 

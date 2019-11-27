@@ -24,7 +24,7 @@ This topic lists some of the tools that you can use to monitor [!INCLUDE[server]
  Windows Event Viewer is available on Windows operating systems. You can use Event Viewer to collect and view [!INCLUDE[server](../developer/includes/server.md)] events that are logged in the [!INCLUDE[server](../developer/includes/server.md)] channel logs in the Applications and Services Logs and Windows Application event log of the [!INCLUDE[server](../developer/includes/server.md)] computer. For more information, see [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).  
 
 ## Logman  
-Logman (logman.exe) is a tool that comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt. For more detailed information about logman, see [Logman](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
+Logman (logman.exe) is a tool that comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt. For more detailed information about logman, see [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
 
 ## Windows PowerShell  
  You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[server](../developer/includes/server.md)] instance events that are recorded in the Windows Event Logs. For more information, see [Monitoring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Events with PowerShell](monitor-server-events-with-powershell.md).  
