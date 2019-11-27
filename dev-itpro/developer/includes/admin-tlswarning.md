@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Starting January 6, 2020, only Transport Layer Security (TLS) version 1.2 and later are supported in Business Central. If your solution uses TLS 1.0 or 1.1, you must update to TLS 1.2 or later as soon as possible. For more information, see [Blog post: Update to TLS 1.2 or later in Dynamics 365 Business Central in 2019 release wave 2](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/29/update-tls-1-2-dynamics-365-business-central-2019-release-wave-2/).

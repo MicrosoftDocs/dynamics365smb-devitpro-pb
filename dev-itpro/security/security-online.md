@@ -1,13 +1,16 @@
 ---
-title: "User Security in Business Central"
+title: "Security in Business Central online"
+description: "Learn about the main aspects of security in your online deployment of Dynamics 365 Business Central."
+author: jswymer
+
 ms.custom: na
-ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
+ms.date: 11/27/2019
 ---
 
 # Business Central Online Security 
