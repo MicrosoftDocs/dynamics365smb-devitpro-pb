@@ -19,7 +19,7 @@ ms.date: 10/01/2019
 |To|See|  
 |--------|---------|  
 |Learn about the [!INCLUDE[server](../developer/includes/server.md)] Administration Tool, a Microsoft Management Console snap-in that you use to create and manage [!INCLUDE[server](../developer/includes/server.md)] instances.|[Business Central Server Administration Tool](administration-tool.md)|  
-|Perform administration tasks with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets.|[Business Central PowerShell Cmdlets](/powershell/business-central/overviewxxx)|  
+|Perform administration tasks with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets.|[Business Central PowerShell Cmdlets](/powershell/business-central/overview)|  
 |Optimize performance when accessing data from SQL Server.|[Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)|  
 
 ## See Also
