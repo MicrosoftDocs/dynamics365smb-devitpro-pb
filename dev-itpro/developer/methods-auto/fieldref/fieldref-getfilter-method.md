@@ -51,8 +51,8 @@ var
     CustomerRecref: RecordRef;
     Filters1: Text;
     Filters2: Text;
-    Text000: TextConst ENU='Filter before filters set: %1.';
-    Text001: TextConst ENU='Filter after filters set: %1.';
+    Text000: Label 'Filter before filters set: %1.';
+    Text001: Label 'Filter after filters set: %1.';
 begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  

@@ -45,8 +45,8 @@ var
     MyRecordRef: RecordRef;
     InputString: Text;
     MyFieldRef: FieldRef;
-    Text000: TextConst ENU='The record No. before the primary key was changed is %1.\\ The vendor name before the primary key was changed is %2.';
-    Text001: TextConst ENU='The record No. after the primary key was changed is %1. \\ The vendor name after the primary key was changed is %2';
+    Text000: Label 'The record No. before the primary key was changed is %1.\\ The vendor name before the primary key was changed is %2.';
+    Text001: Label 'The record No. after the primary key was changed is %1. \\ The vendor name after the primary key was changed is %2';
 begin   
     InputString := 'No.=CONST(20001)';  
     MyRecordRef.OPEN(23);  

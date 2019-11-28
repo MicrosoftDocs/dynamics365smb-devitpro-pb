@@ -58,7 +58,7 @@ The code iterates over records in the **My Items** table. If a media object is r
     myItemRec: Record "My Items";
     fileName: Text;
     count: Integer;
-    Text000: TextConst ENU='%1 media files were exported';
+    Text000: Label '%1 media files were exported';
 begin
     if myItemRec.FindFirst() then begin
         repeat begin 

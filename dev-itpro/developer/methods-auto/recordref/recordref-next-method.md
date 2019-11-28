@@ -52,7 +52,7 @@ var
     CustomerRecref: RecordRef;
     MyFieldRef: FieldRef;
     Count: Integer;
-    Text000: TextConst ENU='%1 records were retrieved.'; 
+    Text000: Label '%1 records were retrieved.'; 
 begin    
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  

@@ -50,7 +50,7 @@ var
     Day: Integer;
     Month: Integer;
     Year: Integer;
-    Text000: TextConst ENU='Today is day %1 of month %2 of the year %3.';
+    Text000: Label 'Today is day %1 of month %2 of the year %3.';
 begin
     InputDate := TODAY;  
     Day := DATE2DMY(InputDate,1);  

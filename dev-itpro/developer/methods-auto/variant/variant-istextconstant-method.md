@@ -44,8 +44,8 @@ An instance of the [Variant](variant-data-type.md) data type.
 var
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='This is some text.";
-    Text001: TextConst ENU='DOes the variant contain a text constant? %1.';
+    Text000: Label 'This is some text.";
+    Text001: Label 'DOes the variant contain a text constant? %1.';
 begin
     MyVariant := Text000;  
     varResult := MyVariant.ISTEXTCONSTANT;  

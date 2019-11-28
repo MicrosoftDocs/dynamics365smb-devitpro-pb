@@ -61,7 +61,7 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
 var
     varRecordToDelete: Code;
     MyRecordRef: RecordRef;
-    Text000: TextConst ENU='Customer %1 is deleted.;
+    Text000: Label 'Customer %1 is deleted.;
 begin
     varRecordToDelete := '10000';  
     MyRecordRef.OPEN(18);  

@@ -49,7 +49,7 @@ The name or number of the field that contains the primary key.
 var
     RecRef: RecordRef;
     varPrimaryKey: Text;
-    Text000: TexConst ENU='The primary key is: %1.';
+    Text000: Label 'The primary key is: %1.';
 begin    
     RecRef.OPEN(DATABASE::Customer);  
     varPrimaryKey := RecRef.GETPOSITION(TRUE);  

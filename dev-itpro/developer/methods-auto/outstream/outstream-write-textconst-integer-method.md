@@ -50,7 +50,7 @@ This example requires that you create the following variables.
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;
-    TxtConst: TextConst ENU='Hello World';
+    TxtConst: Label 'Hello World';
 begin
     recBinaries.FIND('-');  
     recBinaries.Picture.CREATEOUTSTREAM(OStream);   

@@ -31,7 +31,7 @@ When creating a name for your offer, you can use the following two naming struct
     *Example: Sales & Inventory Forecast*  
 
 > [!IMPORTANT]  
-> *If you are building a partner localized app (an app for a country where Microsoft has not provided a localization – see list of these [here](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations))*, you MUST provide an offer name with the structure “Feature” for “country / region” (for example “Sales and Inventory Forecast for Estonia”, “Tax Report for Serbia”) 
+> *If you are building a partner localized app (an app for a country where Microsoft has not provided a localization – see list of these [here](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations))*, you MUST provide an offer name with the structure “Feature” for “country / region” (for example “Sales and Inventory Forecast for Estonia”, “Tax Report for Serbia”) 
 
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
@@ -61,7 +61,7 @@ How to create a good offer name
 
 ![Storefront Detail - Offer Name](../../media/OfferName.png)
 
-# <a name="OfferSummary"></a>Offer Summary
+## <a name="OfferSummary"></a>Offer Summary
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|

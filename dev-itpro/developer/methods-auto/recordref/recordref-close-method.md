@@ -41,7 +41,7 @@ var
     varCaption: Text;
     MyRecordRef: RecordRef;
     i: Integer;
-    Text000: TextConst ENU='Table No: %1 Caption: %2';
+    Text000: Label 'Table No: %1 Caption: %2';
 begin
     for i := 3 TO 10 do begin  
         MyRecordRef.OPEN(i);  

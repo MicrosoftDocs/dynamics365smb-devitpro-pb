@@ -51,7 +51,7 @@ The OutStream object that is created by the object that will receive the media c
     count: Integer;
     exportFile: File;
     dataOutStream: OutStream;
-    Text000: TextConst ENU='%1 media files were exported';
+    Text000: Label '%1 media files were exported';
 begin
     if myItemRec.FindFirst() then begin  
         repeat begin

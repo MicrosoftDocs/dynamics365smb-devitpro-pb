@@ -86,7 +86,7 @@ In a complex report or XMLport that uses data from several tables, the functiona
 For data items and table elements whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
 
 > [!TIP]
-> For information about how to enter filter criteria on the request page, see [Filtering](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the Business Central application help.
+> For information about how to enter filter criteria on the request page, see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the Business Central application help.
 
 ## See Also
 [Report Object](devenv-report-object.md)  

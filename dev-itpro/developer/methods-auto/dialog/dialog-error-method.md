@@ -58,8 +58,8 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 ```
 var
     AccountNo: Integer;
-    Text000: TextConst ENU='Finance Account #1#### must not be blocked.';
-    Text001: TextConst ENU='Placeholder message.';   
+    Text000: Label 'Finance Account #1#### must not be blocked.';
+    Text001: Label 'Placeholder message.';   
 begin 
     AccountNo := 1230;  
     // The execution stops when the error statement is executed  

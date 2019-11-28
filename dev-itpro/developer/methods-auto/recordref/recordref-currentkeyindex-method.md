@@ -51,7 +51,7 @@ var
     i: Integer;
     varFromTable: Integer;
     varToTable: Integer;
-    Text000: TextConst ENU='Table: %1  Current key index: %2';
+    Text000: Label 'Table: %1  Current key index: %2';
 begin
     varFromTable := 36;  
     varToTable := 39;  

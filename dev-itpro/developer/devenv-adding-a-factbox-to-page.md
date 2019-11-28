@@ -77,8 +77,16 @@ page 50100 "Simple Customercard Page"
 > [!TIP]  
 > When used on Lists, FactBoxes can be used to show information about the entire list, or more contextually about the user’s current selection; the currently selected rows. You can control the filter which gets passed to the FactBox that determines its contextual contents. 
 
+### System Parts
+There are two system parts that you can define by using the `systempart()` keyword: `Links` and `Notes`:
+
+|  Value | Description |
+|--------|-------------|
+|  Links | Allows the user to add link to a URL or path on the record shown in the page. For example, on an Item card, a user can add a link to the supplier's item catalog. The links will appear with the record when it is viewed. When a user chooses a link, the target file opens.|
+|  Notes | Allows the user to write a note on the record shown in the page. For example, when creating a sales order, a user can add a note about the order. The note will appear with the item when it is viewed.|
+
 > [!NOTE] 
-> The `systempart` keyword also includes an `Outlook` value, for example, `systempart(Outlook; Outlook)`. This value is only supported by the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (which has been deprecated after [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019). This value is ignored in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
+> The `systempart` keyword also includes an `Outlook` and `MyNotes`value, for example, `systempart(Outlook; Outlook)`. These values are only supported by the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] (which has been deprecated after [!INCLUDE[prodshort](includes/prodshort.md)] Spring 2019). These values are ignored in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)].
 
 ## Filtering data that is displayed on a page in a FactBox
 

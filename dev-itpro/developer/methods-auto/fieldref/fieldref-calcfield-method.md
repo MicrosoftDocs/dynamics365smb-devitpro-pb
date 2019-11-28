@@ -50,7 +50,7 @@ var
     CustRecordref: RecordRef;
     MyFieldRef: FieldRef;
     Count: Integer;
-    Text000: TextConst ENU='%1: \\Balance Due: %2.';
+    Text000: Label '%1: \\Balance Due: %2.';
 begin
     Count := 0;  
     CustRecordref.OPEN(18);  

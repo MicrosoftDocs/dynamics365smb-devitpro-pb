@@ -51,7 +51,7 @@ var
     MyFieldRef: FieldRef;
     SaleRecref: RecordRef;
     varRelation: Integer;
-    Text000: TextConst ENU='Field 2 in the Sales Line (37) table has a relation with table %1.';
+    Text000: Label 'Field 2 in the Sales Line (37) table has a relation with table %1.';
 begin
     SaleRecref.OPEN(37);  
     MyFieldRef := SaleRecref.FIELD(2);  

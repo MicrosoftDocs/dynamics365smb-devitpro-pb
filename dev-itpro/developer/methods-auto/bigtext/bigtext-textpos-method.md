@@ -50,7 +50,7 @@ The position at which a specific string first occurs in this BigText instance.
 var
     MyBigText: BigText;
     VarPosition: Text;
-    Text000: TextConst ENU='VarPosition = %1';
+    Text000: Label 'VarPosition = %1';
 ```
   
  The following examples first initialize the content of the *BigText* variable with the text `ABCDEFG`.  
