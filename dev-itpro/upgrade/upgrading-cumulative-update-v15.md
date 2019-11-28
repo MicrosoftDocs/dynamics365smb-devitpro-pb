@@ -97,9 +97,18 @@ When this step is completed, you can proceed to update your Business Central sol
 
         ```powershell 
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
-        ``` 
+        ```
+4. Unpublish the existing system symbols.
 
-4. (Multitenant only) Dismount the tenants from the application database.
+    To unpublish the system symbols, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp) as f:
+    
+    ```
+    Unpublish-NAVApp -ServerInstance <server instance> -Name System -version <version>
+    ```
+
+    [What are symbols?](upgrade-overview-v15.md#Symbols).
+
+5. (Multitenant only) Dismount the tenants from the application database.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -188,7 +197,13 @@ In addition, to ensure that the existing published extensions work on the new pl
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
+## Publish the new system symbols
 
+Use the Publish-NAVApp cmdlet to publish the new symbols extension package, which is called **System.app**. If you have installed the **AL Development Environment**, you can find the file in the installation folder, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment. Or, it is also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\150\AL Development Environment folder.
+
+```
+Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
+```
 ## Recompile published extensions
 
 You must compile all published extensions against the new platform.
@@ -385,7 +400,7 @@ Complete the following on existing 3rd-party extensions for which you do not hav
     ```powershell
     Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Version <extension version>
     ```
--->
+
 ## ADDITIONAL TASKS
 
 ## Publish the new system symbols for the update
@@ -404,6 +419,7 @@ This step is not required for the application at runtime, but it will be needed 
     ```
     Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
     ```
+-->
 ## See Also
 
 [Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-15.md)  
