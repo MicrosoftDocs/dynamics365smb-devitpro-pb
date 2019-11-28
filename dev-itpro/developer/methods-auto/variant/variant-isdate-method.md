@@ -45,8 +45,8 @@ var
     MyDate: Date;
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='Does the variant >%1< contain a date variable? %2.';
-    Text001: TextConst ENU='Does the variant >%1< contain a code variable? %2.';
+    Text000: Label 'Does the variant >%1< contain a date variable? %2.';
+    Text001: Label 'Does the variant >%1< contain a code variable? %2.';
 begin
     MyDate := TODAY;  
     MyVariant :=  MyDate;  

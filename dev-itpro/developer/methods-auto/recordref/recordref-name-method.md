@@ -47,7 +47,7 @@ The name of the table.
 var
     MyRecordRef: RecordRef;
     varTableName: Text;
-    Text000: TextConst ENU='Table %1 is the %2 table.'; 
+    Text000: Label 'Table %1 is the %2 table.'; 
 begin  
     TableNo := 18;  
     MyRecordRef.OPEN(TableNo);  

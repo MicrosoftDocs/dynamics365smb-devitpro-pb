@@ -48,7 +48,7 @@ var
     MyRecordRef: RecordRef;
     varDatabaseName: Integer;
     varTableNumber: Integer;
-    Text000: TextConst ENU='%1 is table %2.'; 
+    Text000: Label '%1 is table %2.'; 
 begin   
     varDatabaseName := DATABASE::Customer;  
     MyRecordRef.OPEN(varDatabaseName);  

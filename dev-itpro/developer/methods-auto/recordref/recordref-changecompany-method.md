@@ -59,7 +59,7 @@ This example shows how to use the **CHANGECOMPANY** method. The following code t
 var
     RecID: RecordID;
     MyRecordRef: RecordRef;
-    Text000: TextConst ENU='Record to be deleted: %1';
+    Text000: Label 'Record to be deleted: %1';
 begin
     MyRecordRef.OPEN(18);  
     MyRecordRef.CHANGECOMPANY('Company B');  

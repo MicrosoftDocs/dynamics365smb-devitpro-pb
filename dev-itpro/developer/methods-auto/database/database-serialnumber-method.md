@@ -39,7 +39,7 @@ The serial number.
 ```
 var
     SN: Text[30];
-    Text000: TextConst ENU='The serial number for this software package is:%1.';
+    Text000: Label 'The serial number for this software package is:%1.';
 begin 
     SN := SERIALNUMBER;  
     MESSAGE(Text000, SN);  

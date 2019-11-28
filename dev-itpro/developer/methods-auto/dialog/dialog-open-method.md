@@ -64,7 +64,7 @@ Dialog windows that are opened by an object are closed when the object terminate
 var
     MyDialog: Dialog;
     MyNext: Integer;
-    Text000: TextConst ENU='Counting to 4 #1:';
+    Text000: Label 'Counting to 4 #1:';
 begin
     MyNext := 0;  
     MyDialog.OPEN(Text000,MyNext);  
@@ -92,7 +92,7 @@ end;
 var
     MyDialog: Dialog;
     MyNext: Integer;
-    Text000: TextConst ENU='Progress from 0 to 9999 #1#####';
+    Text000: Label 'Progress from 0 to 9999 #1#####';
 begin
     MyNext := 0;  
     MyDialog.OPEN(Text000,MyNext);  

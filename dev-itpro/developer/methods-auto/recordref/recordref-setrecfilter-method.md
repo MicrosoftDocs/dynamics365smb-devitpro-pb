@@ -40,7 +40,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 var
     MyRecordRef: RecordRef;
     varFilters: Text;
-    Text000: TextConst ENU='The filter is set on the %1 field.';
+    Text000: Label 'The filter is set on the %1 field.';
 begin 
     MyRecordRef.OPEN(DATABASE::Customer);  
     MyRecordRef.SETRECFILTER;  

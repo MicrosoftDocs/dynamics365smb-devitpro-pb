@@ -58,8 +58,8 @@ var
     Recref: RecordRef;
     MyFieldRef: FieldRef;
     i: Integer;
-    Text000: TextConst ENU='Field %1 is enabled.';
-    Text001: TextConst ENU='Field %1 is not enabled.';
+    Text000: Label 'Field %1 is enabled.';
+    Text001: Label 'Field %1 is not enabled.';
 begin
     Recref.OPEN(18);  
     MyFieldRef := Recref.FIELD(1);  

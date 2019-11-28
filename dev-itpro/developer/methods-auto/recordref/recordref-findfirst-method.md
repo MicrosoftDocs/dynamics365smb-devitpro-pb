@@ -46,8 +46,8 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ```  
 var
     ItemRecref: RecordRef;
-    Text000: TextConst ENU='The first item is %1 and the unit price is %2.';
-    Text001: TextConst ENU='The first item was not found.';
+    Text000: Label 'The first item is %1 and the unit price is %2.';
+    Text001: Label 'The first item was not found.';
 begin 
     ItemRecref.OPEN(27);  
     if ItemRecref.FINDFIRST then  

@@ -63,8 +63,8 @@ This example shows how to use the INSERT method with a return value.
 ```
 var
     CustomerRec: Record Customer;
-    Text000: TextConst ENU = 'Customer no: %1 inserted.';
-    Text001: TextConst ENU = 'Customer no: %1 already exists.';
+    Text000: Label 'Customer no: %1 inserted.';
+    Text001: Label 'Customer no: %1 already exists.';
 begin
     CustomerRec.Init();  
     CustomerRec."No." := '1120';  

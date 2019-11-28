@@ -43,7 +43,7 @@ An instance of the [Report](report-data-type.md) data type.
 ```  
 var
     MyVar: Integer;
-    Text000: TextConst ENU="The variable is now %1.";
+    Text000: Label "The variable is now %1.";
 begin
     MyVar := 0;  
     repeat  

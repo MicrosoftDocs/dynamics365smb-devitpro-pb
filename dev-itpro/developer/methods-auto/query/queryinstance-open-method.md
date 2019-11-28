@@ -88,7 +88,7 @@ An instance of the [Query](query-data-type.md) data type.
 ```  
 var
     MyQuery: Query "Customer SalesQuantity";
-    Text000: TextConst ENU='Customer name = %1, Quantity = %2';
+    Text000: Label 'Customer name = %1, Quantity = %2';
 begin
     // Sets a filter to display only sales quantities greater than 20.  
     MyQuery.SETFILTER(Quantity, '>20');   

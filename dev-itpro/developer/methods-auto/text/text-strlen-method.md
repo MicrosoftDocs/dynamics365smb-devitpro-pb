@@ -50,9 +50,9 @@ var
     City: Text[30];
     MaxLength: Integer;
     Length: Integer;
-    Text000: TextConst ENU='Atlanta';
-    Text001: TextConst ENU='The MAXSTRLEN method returns: %1,\\';
-    Text002: TextConst ENU='whereas the STRLEN method returns: %2';
+    Text000: Label 'Atlanta';
+    Text001: Label 'The MAXSTRLEN method returns: %1,\\';
+    Text002: Label 'whereas the STRLEN method returns: %2';
 begin
     City := Text000;  
     MaxLength := MAXSTRLEN(City);  

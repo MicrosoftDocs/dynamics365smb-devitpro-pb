@@ -100,7 +100,7 @@ Query.READ;
       ```
      var
         MyQuery: Query "Customer SalesQuantity";
-        Text000: TextConst ENU='Customer name = %1, Quantity = %2';
+        Text000: Label 'Customer name = %1, Quantity = %2';
     ``` 
   
  The following AL code uses the **SETRANGE** method to filter a query dataset over a range of values on the **Quantity** column. You can add the code to a codeunit, and then run the codeunit to see the results.  

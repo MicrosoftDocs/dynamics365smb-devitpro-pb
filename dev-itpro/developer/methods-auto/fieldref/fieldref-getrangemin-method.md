@@ -48,7 +48,7 @@ var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
     varMin: Text;
-    Text000: TextConst ENU='The minimum value in the filter is %1.';
+    Text000: Label 'The minimum value in the filter is %1.';
 begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  

@@ -38,8 +38,8 @@ var
     MyFieldRef: FieldRef;
     CustomerRecRef: RecordRef;
     CustomerNUm: Integer;
-    Text000: TextConst ENU='The link with id %1 is deleted.;
-    Text001: TextConst ENU='The customer cannot be found.';
+    Text000: Label 'The link with id %1 is deleted.;
+    Text001: Label 'The customer cannot be found.';
 begin     
     CustomerNum := '01121212';  
     CustomerRecref.OPEN(18);  

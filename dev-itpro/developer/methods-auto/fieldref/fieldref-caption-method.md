@@ -51,7 +51,7 @@ var
     CustomerRecref: RecordRef;
     varCaption: Text;
     i: Integer;
-    Text000: TextConst ENU='The caption for field %1 is "%2"';
+    Text000: Label 'The caption for field %1 is "%2"';
 begin
     CustomerRecref.OPEN(18);  
     for i := 1 to 9 do begin  

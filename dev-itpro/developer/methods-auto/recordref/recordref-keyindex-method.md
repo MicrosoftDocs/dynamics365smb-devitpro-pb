@@ -50,7 +50,7 @@ var
     CustomerRecref: RecordRef;
     i: Integer;
     varKeyRef: KeyRef;
-    Text000: TextConst ENU='KeyIndex: %1   KeyRef: %2'; 
+    Text000: Label 'KeyIndex: %1   KeyRef: %2'; 
 begin
     CustomerRecref.OPEN(18);  
       for i := 1 to CustomerRecref.KEYCOUNT do begin  

@@ -56,9 +56,9 @@ var
     Position: Integer;
     Length: Integer;
     NewStr: Text[30];
-    Text000: TextConst ENU='Using the COPYSTR method';
-    Text001: TextConst ENU='The original string is:>%1<';
-    Text002: TextConst ENU='The copied string is:>%1<';
+    Text000: Label 'Using the COPYSTR method';
+    Text001: Label 'The original string is:>%1<';
+    Text002: Label 'The copied string is:>%1<';
 begin
     Str := Text000;  
     Position := 7;  

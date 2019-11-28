@@ -79,7 +79,7 @@ Query.READ;
 var
     MyQuery: Query "Customer SalesQuantity";
     MyFilter: Text;
-    Text000: TextConst ENU='The filters are as follows: %1';
+    Text000: Label 'The filters are as follows: %1';
 begin
     // Sets a filter to display only sales quantities greater than 10. This overwrites the value of ColumnFilter property.  
     MyQuery.SETFILTER(Quantity, '>10');  
