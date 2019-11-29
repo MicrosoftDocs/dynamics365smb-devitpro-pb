@@ -13,8 +13,9 @@ ms.date: 10/22/2019
 ms.author: edupont
 
 ---
-
 # Exporting Databases
+
+[!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
 From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environments as .bacpac files to an Azure storage container.
 
@@ -26,7 +27,7 @@ Before you can export the file, you must first set up the Azure storage account 
 
 The first step of creating the storage account container is to create the Azure storage account. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure Portal](https://portal.azure.com). 
 
-For more information setting up an Azure storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
+For more information setting up an Azure storage account, see [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
 
 ### Generating a shared access signature (SAS)
 

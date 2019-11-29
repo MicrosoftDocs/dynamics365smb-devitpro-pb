@@ -2,12 +2,13 @@
 title: "Security and Protection"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+ms.date: 11/27/2019
+ms.author: jswymer
 ---
 # Security and Protection in Business Central
 
@@ -18,3 +19,5 @@ An enterprise business solution must have a built-in security system that helps 
 [Online Security](security-online.md)  
 
 [On-Premises Security](security-onpremises.md)  
+
+[!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]

@@ -73,7 +73,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
 
 2. <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, uninstall all V1 extensions.
 
-    You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
+    You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
 
     To get a list of the extensions that are installed, run this command:
 
@@ -129,7 +129,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
 
 10. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
 
-    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
     ```
     Dismount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID>
@@ -230,7 +230,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 12. Recompile V2 extensions that you uninstalled previously.
 
-    Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
+    Use the [Repair-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
 
     For example, you can run the following command to recompile all extensions:
 
@@ -240,7 +240,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 13. <a name="mounttenant"></a>(Multitenant only) Mount the tenant.
 
-    Use the [Mount-NAVTenant cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
+    Use the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
 
     ```
     Mount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID> -DatabaseName <tenantdatabasename>
@@ -268,7 +268,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 2. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
-    Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
+    Use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
 
     For each V2 extension, run the following command to install it:
 
@@ -321,13 +321,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
         For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
-    4. Publish the new V2 extension by running the [Publish-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet for each extension: 
+    4. Publish the new V2 extension by running the [Publish-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet for each extension: 
 
         ```
         Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
         ```
            
-    5. Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension:
+    5. Synchronize the schema with the database by running the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension:
 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>

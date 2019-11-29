@@ -47,7 +47,7 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can only open 
 
 ### Managing user access to companies
   
-Users' access to companies is controlled by permission sets. When you assign a permission set to a user, you can specify a company to restrict the user’s access for that permission set to that specific company. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application help .
+Users' access to companies is controlled by permission sets. When you assign a permission set to a user, you can specify a company to restrict the user’s access for that permission set to that specific company. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application help .
 
 ## [Object-level security](#tab/object-level)
 
@@ -67,7 +67,6 @@ Object-level security is the set of permissions on [!INCLUDE[prodshort](../devel
 |Report|The reports that are used to present the data.|  
 |Codeunit|The codeunits that are used in the database.|  
 |XMLport|The XMLports that are used to import and export data.|  
-|MenuSuite|The object that contains the menus that are displayed in the navigation pane.|  
 |Query|The object that you use to specify a dataset from the database.|  
 |System|The system tables in the database that allow the user to make backups, change license files, and so on.|  
   

@@ -37,7 +37,7 @@ If you installed the **AL Development Environment**, you can find the symbol fil
         ```
         Get-NAVAppinfo -ServerInstance <ServerInstanceName> -SymbolsOnly
         ```
-    2. Unpublish the symbols using the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+    2. Unpublish the symbols using the [Unpublish-NAVAPP cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
        
         ```
         Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
@@ -90,7 +90,7 @@ You must upgrade the Microsoft extensions that were published in the old deploym
 
 The new extension versions are found in the `\Extensions` folder of the installation media (DVD). Follow these steps for each extension by using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-To publish the new extension version, run the [Publish-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
+To publish the new extension version, run the [Publish-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
 ```
 Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
@@ -98,7 +98,7 @@ Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName>
            
 ## Synchronize the database with the schema changes of the extensions
 
-For each extension, run the [Sync-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
+For each extension, run the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
 ```
 Sync-NavApp -ServerInstance <ServerInstanceName> -Name  <ExtensionFileName>  -Version N.N.N.N -Tenant <TenantID>
@@ -110,7 +110,7 @@ Replace `<TenantID>` with the tenant ID of the database. If you do not have a mu
 
 This step is not required for the newly published local functionality extensions.
 
-To run the data upgrade, run the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+To run the data upgrade, run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
 ```
 Start-NAVAppDataUpgrade -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
@@ -120,7 +120,7 @@ Apart from upgrading the data, this command will install the new extension versi
 
 ## Install new extensions on the tenants
 
-Install the newly published local functionality extensions by running the [Install-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
+Install the newly published local functionality extensions by running the [Install-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
 ```    
 Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
@@ -131,7 +131,7 @@ For more information about publishing extensions, see [Publish and Install an Ex
 
 This ensures that the extensions work on the new platform and application versions. For each extension, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
-1. Compile the extension to make it work with the new platform by running the [Repair-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) cmdlet:
+1. Compile the extension to make it work with the new platform by running the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) cmdlet:
 
     ```
     Repair-NAVApp -ServerInstance <ServerInstanceName> -Name <Extension Name> -Version <N.N.N.N>
