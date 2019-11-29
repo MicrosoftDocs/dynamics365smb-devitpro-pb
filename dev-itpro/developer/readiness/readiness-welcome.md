@@ -50,3 +50,5 @@ In order to inform you in the best possible way, we have organized the following
 |[**Development of a localization solution**](readiness-develop-localization.md)</br>Comply with regulatory capabilities by developing for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].||
 |[**Dynamics 365 Reseller (VARs)**](readiness-reseller.md)</br>Resell and adjust [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to the individual needs of your customers.|
 
+## See Also
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
