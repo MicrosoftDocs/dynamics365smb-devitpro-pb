@@ -40,7 +40,7 @@ You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Win
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Removed| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is steadily moving toward being an online offering only, and a step in that direction is to use a browser-based user interface. |
+|Removed| Business Central continues to evolve the modern client experiences where users work with Business Central in the browser, Windows 10 desktop app, or mobile apps on Android and iOS. The legacy Dynamics NAV Windows client is no longer available for deployment. Instead, users can switch to the modern experience in the browser, the Android/iOS mobile apps, or the Windows 10 desktop app (available through the respective stores). |
 
 ### Reports 204-207
 You can generate external-facing documents, such as sales invoices and order confirmations, that you send to customers as PDF files.
