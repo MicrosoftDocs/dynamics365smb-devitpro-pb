@@ -33,7 +33,7 @@ You can use the bank data conversion service from AMC to convert bank data from 
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-amc-banking).|
+|Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](/business-central/ui-extensions-amc-banking.md).|
 
 ### The Windows Client
 You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Windows client that is installed on your computer. 
@@ -80,7 +80,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 
 ## Features that are available only in the online version 
 <!--Should we include a section about this?-->
-Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises). 
+Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](/business-central/dev-itpro/features-not-implemented-on-premises.md). 
 
 ## See Also
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)
