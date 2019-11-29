@@ -27,7 +27,7 @@ As the internal administrator, you can add users and grant permissions. For more
 As internal administrator you have **READ-ONLY** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if the organization decides not to continue with Business Central and cancel the subscription. This ensures you can export the data, while nobody else in organization has license to sign-in.
 
 > [!IMPORTANT]  
-> You must have [!INCLUDE[d365fin](includes/d365fin_md.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except mentioned above. For information about licensing, see [Microsoft Dynamics 365 Busincess Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
+> You must have [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except mentioned above. For information about licensing, see [Microsoft Dynamics 365 Busincess Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
 
 For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
