@@ -16,11 +16,11 @@ ms.service: "dynamics365-business-central"
 
 ## Get started with development and administration documentation
 
-The content in this section of the Docs.microsoft.com site is intended for people who are [!INCLUDE [prodshort](developer/includes/prodshort.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prodshort](developer/includes/prodshort.md)] development or administration. If you are a functional consultant or enduser of [!INCLUDE [prodshort](developer/includes/prodshort.md)], check out the [Business Functionality Help](/dynamics365/business-central/index)] instead.  
+The content in this section of the Docs.microsoft.com site is intended for people who are [!INCLUDE [prodshort](developer/includes/prodshort.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prodshort](developer/includes/prodshort.md)] development or administration. If you are a functional consultant or enduser of [!INCLUDE [prodshort](developer/includes/prodshort.md)], check out the [Business Functionality Help](/dynamics365/business-central/index) instead.  
 
-### Get started as a reseller
+## Get started as a reseller
 
-In order to be able to sell [!INCLUDE [prodshort](developer/includes/prodshort.md)] licenses and provide help and support to your customers, your company must have a Microsoft Partner ID (MPN ID), and you must enroll in the Cloud Solution Provider (CSP) program. In CSP, you can choose to enroll as an *indirect reseller* or a *direct bill partner*. In most cases, you will enroll as an indirect reseller and then work with an *indirect provider*, also referred to as a *distributor*, who then manages all interaction with Microsoft in terms of licensing and technology, so that you can focus on sales and support. For more information, see [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) in the Microsoft Partner Center content.  
+[!INCLUDE [csp-get-started](developer/includes/csp-get-started.md)]
 
 The following table outlines recommended content for you to get started:
 
@@ -32,9 +32,9 @@ The following table outlines recommended content for you to get started:
 |[Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)| Provides links to role-specific training.|
 |[Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) | Describes the different models for selling in the Cloud Solution Provider (CSP) program so you can determine which works best with your business.        |
 
-### Get started as an administrator
+## Get started as an administrator
 
-As a system administrator, IT professional, or superuser, you have tools available for you to configure, update, and maintain a [!INCLUDE [prodshort](developer/includes/prodshort.md)] solution.  
+As a system administrator, IT professional, or superuser, you have tools available for you to configure, update, and maintain a [!INCLUDE [prodshort](developer/includes/prodshort.md)] solution. The tools and processes are somewhat different depending on whether [!INCLUDE [prodshort](developer/includes/prodshort.md)] is deployed online or on-premises. It also depends on whether you are an internal administrator, or you work for a partner.  
 
 The following table outlines recommended content for you to get started:
 
@@ -49,7 +49,7 @@ The following table outlines recommended content for you to get started:
 |[Administration of Business Central On-Premises](administration/Administration.md)|Learn about resources that are available to you as the system administrator, IT professional, or superuser of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises.|
 |[Configuring the Help Experience](deployment/configure-help.md)|Learn about your options for deploying Help for [!INCLUDE [prodshort](developer/includes/prodshort.md)].|
 
-### Get started as a developer
+## Get started as a developer
 
 You can extend [!INCLUDE [prodshort](developer/includes/prodshort.md)] with add-on apps, vertical or horizontal solutions, and with integration to other products and services.  
 
