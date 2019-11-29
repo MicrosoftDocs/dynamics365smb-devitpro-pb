@@ -1,6 +1,7 @@
 ---
 title: "Development and Administration for Business Central"
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central
+author: edupont04
 
 ms.date: 11/29/2019
 ms.reviewer: na
@@ -39,7 +40,7 @@ The following table outlines recommended content for you to get started:
 
 |Link  |Description  |
 |------|-------------|
-|[Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](deployment/Deployment.md)| Describes the difference between making [!INCLUDE [prodshort](developer/includes/prodshort.md)] available online and on-premises. |
+|[Deployment of [!INCLUDE[prodlong](/developer/includes/prodlong.md)]](deployment/Deployment.md)| Describes the difference between making [!INCLUDE [prodshort](developer/includes/prodshort.md)] available online and on-premises. |
 |[Administration of Business Central Online as an internal administrator](administration/tenant-administration.md#administration-as-an-internal-administrator)|Learn about resources that are available to you as the system administrator, IT professional, or superuser of a [!INCLUDE [prodshort](developer/includes/prodshort.md)] customer.|
 |[Administration of Business Central Online as a partner](administration/tenant-administration.md#administration-as-a-partner)|Learn about resources that are available to you as a [!INCLUDE [prodshort](developer/includes/prodshort.md)] reselling partner.|
 |[The Business Central Administration Center](administration/tenant-admin-center.md)|Learn about the administration center and what you can do there.|
