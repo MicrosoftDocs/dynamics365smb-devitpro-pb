@@ -45,8 +45,8 @@ var
     MyAutomation: Automation "AFormAut 1.0 Type Library";
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='Does the variant contain an Automation variable? %1.';
-    Text001: TextConst ENU='Does the variant- contain a code variable? %1.';
+    Text000: Label 'Does the variant contain an Automation variable? %1.';
+    Text001: Label 'Does the variant- contain a code variable? %1.';
 begin
     MyVariant := MyAutomation;  
     varResult := MyVariant.ISAUTOMATION;  

@@ -97,7 +97,7 @@ The example code iterates over records in the **My Items** table. For each recor
     myItemRec: Record "My Items";
     fileName: Text;
     imageID: GUID;
-    Text000: TextConst ENU='An image with the following ID has been imported on item %1: %2';
+    Text000: Label 'An image with the following ID has been imported on item %1: %2';
 begin
     if myItemRec.FindFirst() then begin
         repeat begin

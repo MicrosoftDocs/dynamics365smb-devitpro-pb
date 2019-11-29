@@ -48,7 +48,7 @@ var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
     CustomerName: Text;
-    Text000: TextConst ENU='cannot be blank';
+    Text000: Label 'cannot be blank';
 begin
     CustomerRecref.OPEN(18);  
     CustomerName := '';  

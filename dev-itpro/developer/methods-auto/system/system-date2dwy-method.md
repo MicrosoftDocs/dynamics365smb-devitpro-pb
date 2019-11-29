@@ -56,10 +56,10 @@ var
     DayOfWeek: Integer;
     WeekNumber: Integer;
     Year: Integer;
-    Text000: TextConst ENU='The date %1 corresponds to:\\';
-    Text001: TextConst ENU='The day of the week: %2\\';
-    Text002: TextConst ENU='The week number: %3\\';
-    Text003: TextConst ENU='The year: %4';
+    Text000: Label 'The date %1 corresponds to:\\';
+    Text001: Label 'The day of the week: %2\\';
+    Text002: Label 'The week number: %3\\';
+    Text003: Label 'The year: %4';
 begin
     InputDate := 20140101D;  
     DayOfWeek := DATE2DWY(InputDate, 1);  

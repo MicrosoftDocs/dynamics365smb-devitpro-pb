@@ -52,7 +52,7 @@ Specifies the order in which a search will be performed.
 var
     IsAscending: Boolean;
     CustomerRecref: RecordRef;
-    Text000: TextConst ENU='Is the sort order ascending?  %1';
+    Text000: Label 'Is the sort order ascending?  %1';
 begin
     CustomerRecref.OPEN(18);  
     CustomerRecref.SETVIEW('SORTING(Name) ORDER(Ascending) WHERE(No.=CONST(10000..20000))');  

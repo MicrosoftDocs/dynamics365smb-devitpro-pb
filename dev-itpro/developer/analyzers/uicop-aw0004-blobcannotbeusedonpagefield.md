@@ -2,7 +2,7 @@
 title: "A Blob cannot be used as a source expression for a page field."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 11/27/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

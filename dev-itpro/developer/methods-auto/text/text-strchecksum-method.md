@@ -53,8 +53,8 @@ var
     StrNumber: Text[30];
     Weight: Text[30];
     Modulus: Integer;
-    Text000: TextConst ENU='The number: %1\\';
-    Text001: TextConst ENU='has the checksum: %2';
+    Text000: Label 'The number: %1\\';
+    Text001: Label 'has the checksum: %2';
 begin
     StrNumber := '4378';  
     Weight := '1234';  
@@ -97,8 +97,8 @@ var
     StrNumber: Text[30];
     Weight: Text[30];
     Modulus: Integer;
-    Text000: TextConst ENU='The EAN code: %1\\';
-    Text001: TextConst ENU='has the checksum: %2';
+    Text000: Label 'The EAN code: %1\\';
+    Text001: Label 'has the checksum: %2';
 begin
     StrNumber := '577622135746';  
     Weight := '131313131313';  

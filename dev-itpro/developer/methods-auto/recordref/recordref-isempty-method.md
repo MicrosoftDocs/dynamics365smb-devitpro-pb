@@ -52,7 +52,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ```  
 var
     CustomerRecref: RecordRef;
-    Text000: TextConst ENU='Is the table empty? %1.';
+    Text000: Label 'Is the table empty? %1.';
 begin 
     CustomerRecref.OPEN(18);  
     IsEmpty := CustomerRecref.ISEMPTY;  

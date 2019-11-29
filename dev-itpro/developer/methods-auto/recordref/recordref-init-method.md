@@ -69,8 +69,8 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 var
     CustomerRecref: RecordRef;
     MyFieldRef: FieldRef;
-    Text000: TextConst ENU='The value of the field before initialization is %1.';
-    Text001: TextConst ENU='The value of the field after you insert the record is %1.';
+    Text000: Label 'The value of the field before initialization is %1.';
+    Text001: Label 'The value of the field after you insert the record is %1.';
 begin 
     CustomerRecref.OPEN(18);  
     MyFieldRef := CustomerRecref.FIELD(1);  

@@ -44,7 +44,7 @@ The number of keys that have been identified in the table.
 var
     CustomerRecref: RecordRef;
     KeyCount: Integer;
-    Text000: TextConst ENU='The table has %1 keys.';
+    Text000: Label 'The table has %1 keys.';
 begin     
     CustomerRecref.OPEN(18);  
     KeyCount := CustomerRecref.KEYCOUNT;  

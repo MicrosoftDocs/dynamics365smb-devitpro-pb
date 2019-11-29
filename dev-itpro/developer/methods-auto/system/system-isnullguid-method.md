@@ -47,9 +47,9 @@ The GUID that you want to check whether it is null.
 var
     validGuid: GUID;
     nullGuid: GUID;
-    Text000: TextConst ENU='The GUID is null';
-    Text0001: TextConst ENU='The GUID is not null.\\';
-    Text0002: TextConst ENU='The value is %1.';
+    Text000: Label 'The GUID is null';
+    Text0001: Label 'The GUID is not null.\\';
+    Text0002: Label 'The value is %1.';
 begin
     validGuid := '{FC841BE6-0ADA-46C4-A6A9-142AEC211613}';  
     nullGuid  := '{00000000-0000-0000-0000-000000000000}';        

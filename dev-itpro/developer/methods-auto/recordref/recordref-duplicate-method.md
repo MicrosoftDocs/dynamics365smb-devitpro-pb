@@ -45,7 +45,7 @@ A RecordRef that refers to a new record with the same filters, current keys, and
 var
     RecordRef1: RecordRef;
     RecordRef2: RecordRef;
-    Text000: TextConst ENU='RecordRef1 refers to the %1 table.\\ RecordRef2 refers to the %2 table.';
+    Text000: Label 'RecordRef1 refers to the %1 table.\\ RecordRef2 refers to the %2 table.';
 begin   
     RecordRef1.OPEN(18);  
     RecordRef2 := RecordRef1.DUPLICATE;  

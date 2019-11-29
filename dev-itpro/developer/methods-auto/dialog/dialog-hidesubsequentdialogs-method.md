@@ -53,7 +53,7 @@ The following code illustrates how the HIDESUBSEQUENTDIALOGS method works with t
 var
   MyDialog1 : Dialog;
   MyDialog2 : Dialog;
-  Text000 : TextConst ENU='additional text';
+  Text000 : Label 'additional text';
   begin
 
     // The HIDESUBSEQUENTDIALOGS method is used on MyDialog1 dialog.

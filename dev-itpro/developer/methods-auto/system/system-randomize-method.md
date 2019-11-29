@@ -43,7 +43,7 @@ A number used to create a unique set of numbers.
 ```  
 var
     x: Integer;
-    Text000: TextConst ENU='X=%1';
+    Text000: Label 'X=%1';
 begin
     RANDOMIZE();  
     x := RANDOM(5);  

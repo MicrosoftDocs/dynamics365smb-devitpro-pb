@@ -47,7 +47,7 @@ var
     MyRecordRef: RecordRef;
     i: Integer;
     VarFieldName: FieldRef;
-    Text000: TextConst ENU='The %1 table contains %2 field\(s\).\\';
+    Text000: Label 'The %1 table contains %2 field\(s\).\\';
 begin  
     MyRecordRef.OPEN(18);  
     for i := 1 to 12 do begin  

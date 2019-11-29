@@ -67,7 +67,7 @@ For using media sets on records, the **Item** table includes a **MediaSet** data
  var
     itemRec: Record Item;
     count: Boolean;
-    Text000: TextConst ENU='%1 media files were exported.';
+    Text000: Label '%1 media files were exported.';
 begin
     // Import image files the C:\images folder.  
     itemRec.Get('1000');

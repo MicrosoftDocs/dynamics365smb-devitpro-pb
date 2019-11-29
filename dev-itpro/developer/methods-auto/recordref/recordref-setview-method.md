@@ -50,7 +50,7 @@ The string format is the same as the SourceTableView property on pages.
 var
     CustomerRecRef: RecordRef;
     ViewString: Text;
-    Text000: TextConst ENU='The following is the current sort order, key, and filters that are set: %1';
+    Text000: Label 'The following is the current sort order, key, and filters that are set: %1';
 begin   
     CustomerRecRef.OPEN(18);  
     CustomerRecRef.SETVIEW('SORTING(Name) ORDER(Ascending) WHERE(No.=CONST(10000..20000))');  
