@@ -38,7 +38,7 @@ The **Global admin** role makes you an administrator of your organization's Offi
 
 If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription.  
 
-In the Office portal, you can remove licenses from users. As administrator you can remove the trial subscription from your company's account. But to cancel the purchased subscription, you must contact your reselling partner, and they can cancel the relevant subscriptions in the Partner Center.  
+In the Office portal, you can remove licenses from users. As administrator you can remove the trial subscription from your company's account. But to cancel the paid subscription, you must contact your reselling partner, and they can cancel the relevant subscriptions in the Partner Center.  
 
 For more information, see [Unsubscribe or Remove Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
