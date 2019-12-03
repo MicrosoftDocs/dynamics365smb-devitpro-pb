@@ -45,8 +45,8 @@ var
     MyAction: Action;
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='Does the variant contain an Action variable? %1.';
-    Text001: TextConst ENU='Does the variant- contain a code variable? %1.';
+    Text000: Label 'Does the variant contain an Action variable? %1.';
+    Text001: Label 'Does the variant- contain a code variable? %1.';
 begin
     MyVariant := MyAction;  
     varResult := MyVariant.ISACTION;  

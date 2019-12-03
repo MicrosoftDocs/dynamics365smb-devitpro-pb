@@ -44,7 +44,7 @@ The number of fields in the table.
 var
     MyRecordRef: RecordRef;
     varFieldCount: Integer;
-    Text000: TextConst ENU='The %1 table contains %2 field\(s\).\\';
+    Text000: Label 'The %1 table contains %2 field\(s\).\\';
 begin    
     for i := 3 to 5 do begin  
       MyRecordRef.OPEN(i);  

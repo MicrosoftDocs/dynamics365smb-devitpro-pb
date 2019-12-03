@@ -58,7 +58,7 @@ The following table illustrates how the file naming should look.
 |------|---------------------------|
 |codeunit 1000 "Job Calculate WIP"|`JobCalculateWIP.Codeunit.al`|
 |page 21 "Customer Card"|`CustomerCard.Page.al`|
-|page 1234 "MyPage" extends "Customer Card"|`MyPage.PageExt.al`|
+|page 50100 "PRE Customer Card" extends "Customer Card"|`CustomerCard.PageExt.al`|
 
 
 ## Formatting

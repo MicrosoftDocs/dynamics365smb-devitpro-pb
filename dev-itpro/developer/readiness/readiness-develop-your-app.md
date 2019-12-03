@@ -45,3 +45,4 @@ The following is a checklist of all requirements that you **must meet before sub
 
 ## See Also
 [Developing Extensions](../devenv-dev-overview.md)  
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

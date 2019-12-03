@@ -44,7 +44,7 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
 var
     MyFieldRef: FieldRef;
     CustomerRecRef: RecordRef;
-    Text000: TextConst ENU='The number of records in the range is %1.;
+    Text000: Label 'The number of records in the range is %1.;
 begin 
     CustomerRecRef.OPEN(18);  
     MyFieldRef := CustomerRecRef.FIELD(1);  

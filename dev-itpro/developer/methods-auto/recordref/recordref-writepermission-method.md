@@ -56,7 +56,7 @@ var
     MyRecordRef: RecordRef;
     varTableNo: Integer;
     varHasWritePerm: Boolean;
-    Text000: TextConst ENU='Does the %1 table have write permission? %2';
+    Text000: Label 'Does the %1 table have write permission? %2';
 begin  
     varTableNo := 18;  
     MyRecordRef.OPEN(varTableNo);  

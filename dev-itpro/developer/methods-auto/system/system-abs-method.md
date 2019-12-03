@@ -49,7 +49,7 @@ This example shows how to remove the sign from a negative numeric value.
 var
     x: Decimal;
     y: Decimal;
-    Text000: TextConst ENU="x = %1, y = %2";
+    Text000: Label "x = %1, y = %2";
 begin
     x := -10.235; // x is assigned a negative value  
     y := ABS(x); // y is assigned the value of x without sign  

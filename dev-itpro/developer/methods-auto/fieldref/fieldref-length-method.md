@@ -49,7 +49,7 @@ var
     CustomerRecref: RecordRef;
     varLength: Integer;
     varFieldNo: Integer;
-    Text000: TextConst ENU='The maximum size of the field is %1.';
+    Text000: Label 'The maximum size of the field is %1.';
 begin  
     varFieldNo := 1;  
     CustomerRecref.OPEN(DATABASE::Customer);  

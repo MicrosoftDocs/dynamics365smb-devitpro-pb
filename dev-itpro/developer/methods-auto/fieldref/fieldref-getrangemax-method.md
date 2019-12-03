@@ -48,7 +48,7 @@ var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
     varMax: Text;
-    Text000: TextConst ENU='The maximum value in the filter is %1.';
+    Text000: Label 'The maximum value in the filter is %1.';
 begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  

@@ -46,8 +46,8 @@ var
     MyBoolean: Boolean;
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='Does the variant >%1< contain a Boolean variable? %2.';
-    Text001: TextConst ENU='Does the variant >%1< contain a code variable? %2.';
+    Text000: Label 'Does the variant >%1< contain a Boolean variable? %2.';
+    Text001: Label 'Does the variant >%1< contain a code variable? %2.';
 begin
     MyBoolean := ItemRec.Critical;  
     MyVariant := MyBoolean;  

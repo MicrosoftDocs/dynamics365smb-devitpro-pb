@@ -45,7 +45,7 @@ This example shows how to use the SYSTEMIDNO method to retrieve the field number
 var
     CustomerRec: Record Customer;
     SystemIdFieldNo: Integer;
-    Text000: TextConst ENU = 'The field number is: %1.';
+    Text000: Label 'The field number is: %1.';
 
 begin
     CustomerRec.OPEN(DATABASE::Customer);

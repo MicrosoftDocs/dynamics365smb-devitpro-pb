@@ -50,7 +50,7 @@ var
     ExpectedErrorCode: Text[1024];  
     FileObj1: File;
     FileObj2: File;
-    Text0001: TexConst ENU='The error code is not valid. Expected: %1. Actual: %2. Error message: %3';
+    Text0001: Label 'The error code is not valid. Expected: %1. Actual: %2. Error message: %3';
 begin
     ExpectedErrorCode := 'StreamIO';  
     FileObj1.CREATETEMPFILE;  

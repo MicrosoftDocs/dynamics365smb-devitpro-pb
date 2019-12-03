@@ -45,7 +45,7 @@ var
     MyByte: Byte;
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='Does the variant contain a byte variable? %1.';
+    Text000: Label 'Does the variant contain a byte variable? %1.';
 begin
     MyByte := 'A';  
     MyVariant := MyByte;  

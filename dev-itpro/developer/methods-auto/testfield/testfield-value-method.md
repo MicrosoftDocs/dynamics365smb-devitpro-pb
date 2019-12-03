@@ -55,7 +55,7 @@ var
     CustomerRecRef: RecordRef;
     MyFieldRef: FieldRef;
     CustomerNo: Code;
-    Text000: TextConst ENU='Customer name has changed to %1.';
+    Text000: Label 'Customer name has changed to %1.';
 begin
     CustomerNo := '50000';  
     CustomerRecref.OPEN(18);  

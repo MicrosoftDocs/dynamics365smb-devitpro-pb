@@ -45,7 +45,7 @@ The time that is returned is different for the [!INCLUDE[webclient](../../includ
 
 ``` 
 var
-    Text000: TextConst ENU='The current system time is %1.";
+    Text000: Label 'The current system time is %1.";
 begin
     MESSAGE(Text000, TIME);  
 end;

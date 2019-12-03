@@ -51,7 +51,7 @@ var
     CustomerRecref: RecordRef;
     varName: Text;
     i: Integer;
-    Text000: TextConst ENU='The name of field %1 is "%2".\\';
+    Text000: Label 'The name of field %1 is "%2".\\';
 begin
     for i := 1 to 5 do begin  
         CustomerRecref.OPEN(DATABASE::Customer);  

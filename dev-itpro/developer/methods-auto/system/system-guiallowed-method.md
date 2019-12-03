@@ -43,7 +43,7 @@ Ok :=   System.GuiAllowed()
 
 ```  
 var
-    Text000: TextConst ENU='Code is running on a client.';
+    Text000: Label 'Code is running on a client.';
 begin
     if GUIALLOWED then  
      MESSAGE(Text000);  

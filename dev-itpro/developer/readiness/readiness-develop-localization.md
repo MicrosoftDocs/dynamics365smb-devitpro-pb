@@ -103,8 +103,8 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for assistance on bringing you localization apps to AppSource.
 
 ## See Also
-
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  

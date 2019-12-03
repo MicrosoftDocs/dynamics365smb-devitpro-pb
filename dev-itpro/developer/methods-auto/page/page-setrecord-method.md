@@ -46,7 +46,7 @@ The record to set as the current record. You cannot use a temporary record for t
  var
     MyPage: Page "Customer Card";
     MyRecord: Record Customer;
-    Text000: TextConst ENU='The record was not found';
+    Text000: Label 'The record was not found';
 begin
     if MyRecord.GET('30000') then begin  
       MyPage.SETRECORD(MyRecord);  

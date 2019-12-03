@@ -46,7 +46,7 @@ var
     Number1: Decimal;
     Power1: Decimal;
     Result1: Decimal;
-    Text000: TextConst ENU='%1 raised to the power of %2 = %3';
+    Text000: Label '%1 raised to the power of %2 = %3';
 begin
     Number1 := 64;   
     Power1 := 0.5;  
@@ -101,12 +101,12 @@ var
     N: Decimal;
     A: Decimal;
     FormatString: Text;
-    Text000: TextConst ENU='Principal $%1 at a 5 percent interest rate is compounded quarterly.\\';
-    Text001: TextConst ENU='(Rate = %2)\\';
-    Text002: TextConst ENU='The amount after %3 years = $%4.';
-    Text003: TextConst ENU='Principal $%1 is deposited at the end of each year at a 4 percent interest rate, compounded annually.\\';
-    Text004: TextConst ENU='(Rate = %2)\\';
-    Text005: TextConst ENU='The amount after %3 years = $%4.';
+    Text000: Label 'Principal $%1 at a 5 percent interest rate is compounded quarterly.\\';
+    Text001: Label '(Rate = %2)\\';
+    Text002: Label 'The amount after %3 years = $%4.';
+    Text003: Label 'Principal $%1 is deposited at the end of each year at a 4 percent interest rate, compounded annually.\\';
+    Text004: Label '(Rate = %2)\\';
+    Text005: Label 'The amount after %3 years = $%4.';
 begin    
     FormatString := '<Precision,2><Standard Format,1>';  
     // Example 1  

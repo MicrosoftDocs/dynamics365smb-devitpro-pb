@@ -47,7 +47,7 @@ var
     CustomerRecref: RecordRef;
     VendorRecord: Record Vendor;
     Count: Integer;
-    Text000: TextConst ENU='The links have been copied to %1';
+    Text000: Label 'The links have been copied to %1';
 begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  

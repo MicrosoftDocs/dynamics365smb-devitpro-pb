@@ -13,8 +13,9 @@ ms.date: 10/22/2019
 ms.author: edupont
 
 ---
-
 # Exporting Databases
+
+[!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
 From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environments as .bacpac files to an Azure storage container.
 

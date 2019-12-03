@@ -53,11 +53,11 @@ The one-based index of the first occurrence of the substring inside the string.
   
 ```  
 var
-    Text000: TextConst ENU='ABC abc abc xy';  
-    Text001: TextConst ENU='abc'; 
-    Text002: TextConst ENU='The search for the substring: >%1<\\'; 
-    Text003: TextConst ENU='in the string: >%2<,\\'; 
-    Text004: TextConst ENU='returns the position: %3';  
+    Text000: Label 'ABC abc abc xy';  
+    Text001: Label 'abc'; 
+    Text002: Label 'The search for the substring: >%1<\\'; 
+    Text003: Label 'in the string: >%2<,\\'; 
+    Text004: Label 'returns the position: %3';  
 begin
     String := Text000;  
     SubStr := Text001  
