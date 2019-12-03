@@ -74,6 +74,10 @@ The following tasks are not available to the delegated administrator:
 
     You can still use the **Open in Excel** action to view data in Excel.
 
+- Use Invite External Accountant assisting setup guide.
+
+    You can add external user via Azure Portal and assign this user the External Accountant license.     
+
 ### Manage technical support
 
 As a reselling partner, you must be the first line of support for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] customers. You must set up your support contact information, and help the internal administrators troubleshoot any issues that users find. For more information, see [Managing Technical Support](manage-technical-support.md).  
