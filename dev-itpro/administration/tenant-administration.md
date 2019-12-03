@@ -24,7 +24,7 @@ Internal administrators are the system administrators, IT professionals, or supe
 
 As the internal administrator, you can add users and grant permissions. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
-As internal administrator you have **READ-ONLY** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if the organization decides not to continue with Business Central and cancel the subscription. This ensures you can export the data, while nobody else in organization has license to sign-in.
+As an internal administrator you have **READ-ONLY** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if the organization decides not to continue with Business Central and cancels the subscription. This ensures that you can export the data, while nobody else in organization has license to sign-in.
 
 > [!IMPORTANT]  
 > You must have [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except mentioned above. For information about licensing, see [Microsoft Dynamics 365 Busincess Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
