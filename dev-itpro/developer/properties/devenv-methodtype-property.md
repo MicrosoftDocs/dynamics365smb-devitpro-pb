@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # MethodType Property
+
+[!INCLUDE[cal_only](../includes/cal_only.md)]
+
 Sets a date or totals type method on the query column. The method is applied by the [Method Property](devenv-method-property.md).  
 
-<!-- This is deprecated in Business Central -->
   
 ## Applies to  
  Query columns  

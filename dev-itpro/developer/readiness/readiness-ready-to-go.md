@@ -76,5 +76,6 @@ Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prod
 + [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
 + [How to create an effective sales landing page](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
 + [How to make compelling videos](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
+
 ### Learning catalog
-+ ["Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
++ [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
