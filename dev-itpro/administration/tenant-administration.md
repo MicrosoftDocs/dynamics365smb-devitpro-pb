@@ -13,8 +13,7 @@ ms.author: edupont
 ---
 # Administration of Business Central Online
 
-As an administrator, you can manage [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenants both as an internal administrator, who is typically an employee of the company that bought the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscription, and as 
-an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
+As an administrator, you can manage [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenants both as an internal administrator, who is typically an employee of the company that bought the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscription, and as an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
 
 ## Administration as an internal administrator
 
@@ -38,7 +37,7 @@ The **Global admin** role makes you an administrator of your organization's Offi
 
 If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription.  
 
-In the Office portal, you can remove licenses from users. As administrator you can remove the trial subscription from your company's account. But to cancel the paid subscription, you must contact your reselling partner, and they can [cancel relevant subscription](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center.  
+In the Office portal, you can remove licenses from users. As the administrator you can remove the trial subscription from your company's account. But to cancel the paid subscription, you must contact your reselling partner, and they can [cancel relevant subscription](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center.  
 
 For more information, see [Unsubscribe or Remove Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
