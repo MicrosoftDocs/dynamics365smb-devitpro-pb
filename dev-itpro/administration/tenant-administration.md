@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 11/14/2019
+ms.date: 12/03/2019
 ms.author: edupont
 ---
+
 # Administration of Business Central Online
 
-As an administrator, you can manage [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenants both as an internal administrator, who is typically an employee of the company that bought the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscription, and as 
-an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
+As an administrator, you can manage [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenants both as an internal administrator, who is typically an employee of the company that bought the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscription, and as an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
 
 ## Administration as an internal administrator
 
@@ -22,7 +22,12 @@ Internal administrators are the system administrators, IT professionals, or supe
 
 ### Administration in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 
-As the internal administrator, you can add users, grant permissions, set up integration to other products, and many other tasks right there in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Administration](/dynamics365/business-central/admin-setup-and-administration) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+As the internal administrator, you can add users and grant permissions. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+
+As an internal administrator you have **READ-ONLY** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if the organization decides not to continue with Business Central and cancels the subscription. This ensures that you can export the data, while nobody else in organization has license to sign-in.
+
+> [!IMPORTANT]  
+> You must have [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except mentioned above. For information about licensing, see [Microsoft Dynamics 365 Busincess Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
 
 For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
@@ -38,9 +43,7 @@ The **Global admin** role makes you an administrator of your organization's Offi
 
 If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription.  
 
-In the Office portal, you can remove licenses from users, but to cancel the subscription, you must contact your reselling partner. You must decide if you want to just remove [!INCLUDE [prodshort](../developer/includes/prodshort.md)] from your Office 365 subscription, or if you want to cancel your Office 365 subscription, including [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
-Then, you can contact your reselling partner, and they can cancel the relevant subscriptions in the Partner Center.  
+In the Office portal, you can remove licenses from users. As the administrator you can remove the trial subscription from your company's account. But to cancel the paid subscription, you must contact your reselling partner, and they can [cancel relevant subscription](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center.  
 
 For more information, see [Unsubscribe or Remove Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 

@@ -208,20 +208,25 @@ Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app 
 
 You must compile all published extensions against the new platform.
 
-To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
-
-```powershell  
-Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
-```
-
-To compile all published extensions at once, you can use this command:
-
-```powershell  
-Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp  
-```
-
 > [!NOTE]
 > If you plan on updating the application you can skip this step for extensions for which you have new versions built on the new platform. For example, this includes Microsoft extensions that are on the DVD.  
+
+1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
+
+    ```powershell  
+    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
+    ```
+    
+    To compile all published extensions at once, you can use this command:
+    
+    ```powershell  
+    Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp  
+    ```
+2. Restart the server instance.
+
+    ```powershell
+    Restart-NAVServerInstance -ServerInstance <server instance>
+    ```
 
 ## Synchronize tenant
 
