@@ -54,7 +54,7 @@ As a reselling partner, you must enroll in the [Cloud Solution Provider program]
 
 ### Acting as a delegated administrator
 
-As [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups, Admin Agents and Helpdesk Agents, in the partner's Azure AD tenant that are used for *delegated administration*. When a customer grants delegated administration privilege to a partner:
+As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups; Admin Agents and Helpdesk Agents, in the partner's Azure AD tenant that are used for *delegated administration*. When a customer grants the delegated administration privilege to a partner:
 - The Admin Agent group is assigned to the Global Administrator role in the customer's Azure AD tenant.
 - The Helpdesk Agent group is assigned to the Helpdesk Administrator role in the customer's Azure AD tenant.
 Based on the roles assigned, members of both groups can sign in to the customer's Azure AD tenant, O365 services, [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants using their partner credentials and administrator on behalf of the customer. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).  
