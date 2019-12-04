@@ -612,7 +612,8 @@
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
 ## Deprecated Features
-### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
+### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
+### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
