@@ -66,6 +66,7 @@ To ease your journey, from the initial idea submission to the final publication,
 
 ## See Also
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
