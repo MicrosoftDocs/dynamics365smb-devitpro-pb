@@ -22,9 +22,9 @@ A report object is composed of a report dataset and a visual layout. You design 
 
 -   Defining the dataset for multiple tables.  
 
--   Defining properties for the data items.  
-
 -   Adding fields to a data item.  
+
+-   Defining properties for the data items.  
 
 -   Adding labels to a report.  
 
@@ -55,7 +55,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
 -   Each section of the data for each customer should begin on a new page.  
 
--   The `Amount` field from the `Cust. Ledger Entry `table should be totaled and displayed for each customer.  
+-   The `Amount` field from the `Cust. Ledger Entry` table should be totaled and displayed for each customer.  
 
 -   If there are no records to display, the report should not display that data sections. For example, if there are no sales documents for a customer, the sale header section should be skipped.  
 
@@ -68,21 +68,23 @@ A report object is composed of a report dataset and a visual layout. You design 
      ![Completed report](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
 
 ## Defining the Dataset
-Viktor starts by creating an empty report object. You can use the shortcut `treport` to create the basic layout for a Report object when using the AL Language extension in Visual Studio Code.
+Viktor starts by creating an empty report object using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
 
-He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to `RDLC` to specify that he will use a RDLC layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdlc'`, the name of the file he will use for the layout.
+He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he will use a RDLC layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdlc'`, the name of the rdlc file he will use for the layout.
 
-Viktor will now define the dataset, that will display customers and their transaction details. This is defined within the `dataset` part of the report. 
+Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report. 
 
 ### Adding Data Items and columns
  
- The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each for table with the `dataitem` control. Moreover, for each table, he will add the fields that he wants to display on the report. Each field is given by a `column` control, nested inside the corresponding data item.
+ The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each for table with the `dataitem` control. Moreover, for each table, he will add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
 
  The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for additional tables and fields.
 
 ### Defining Properties for the Data Items
 
-Once Viktor has specified the dataitem and column elements he will set the appropriate properties. He sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) to **sorting** to sort the table view of each data item on a specific field. He also sets the [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md) to include a specific field on the tab of the request page. For more information about request pages, see [Request Pages](devenv-request-pages.md).
+Once Viktor has specified the dataitem and column elements he will set the appropriate properties. He sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) to **sorting** to sort the table view of each data item on a specific field. 
+
+He also sets the [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md) to include a specific field on the tab of the request page. For more information about request pages, see [Request Pages](devenv-request-pages.md).
 
 <!-- >[!NOTE]
 > Request pages for XMLports are not supported by the Business Central Web client in versions prior to Dynamics 365 Business Central 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the Dynamics NAV Client connected to Business Central. -->
@@ -92,16 +94,19 @@ Moreover, Viktor uses the [DataItemLink (Reports) Property](properties/devenv-da
 
 For each of the `column` controls he adds the [IncludeCaption Property](properties/devenv-includecaption-property.md) and sets it to **True**. This property specifies to include the caption of the fields in the dataset of a report.
 
+Finally, he sets the [PrintOnlyIfDetail Property](devenv-printonlyifdetail-property.md) to **True** on a data item to print data only if at least one of its child data items generates output.
 
-### Adding Labels to the Report  
- Viktor will now add labels to the report. You define the labels as global variables. These labels will be used later as captions in the report.  
+
+## Adding Labels to the Report  
+ Viktor will now add labels to the report. You define the labels in the `label` part of the report. These labels will be used later as captions.  
 
 \
-The following code exemplifies the code that Viktor has written for the report so far.
+The following code exemplifies the code that Viktor has written for the report.
 
 ```
 report 50101 "Report for Multiple Tables"
 {
+    //Make the report searchable from Tell me under the Administration category.
     UsageCategory = Administration;
     ApplicationArea = All;
     // Specify the RDL file that the report will use for the layout.
@@ -118,7 +123,7 @@ report 50101 "Report for Multiple Tables"
             DataItemTableView = Sorting("No.");
             // Include the "No." field on the tab of the request page.
             RequestFilterFields = "No.";
-            // Print data only if at least one of its child data items, CustLedgerEntry and SalesHeader, generates output.
+            // Print data only if at least one of the CustLedgerEntry and SalesHeader data items generates output.
             PrintOnlyIfDetail = True;
 
             // For each field that you want to display you add a column control.
@@ -326,9 +331,11 @@ report 50101 "Report for Multiple Tables"
     }
 
     // These labels will be used later as captions in the report.  
-    var
-        Sales_Document_Caption: label 'Sales Documents';
-        Total_Caption: label 'Total';
+    labels
+    {
+        Sales_Document_Caption = 'Documents';
+        Total_Caption = 'Total';
+    }
 }
 ```  
 
@@ -655,9 +662,9 @@ Viktor will run the report to view how it looks like. For this, do the following
 
 1.  In the `launch.json` file set the `"startupObjectId"` to the **Id** of the report object and the `"startupObjectType"` to `Report`.
 
-2. Press the `F5` key to deploy the app and access the Web Client.
+2. Press the  `F5` key to compile and run the report in Dynamics 365 Business Central.
 
-3.  If you have not disabled the [UseRequestPage Property](properties/devenv-userequestpage-property) you will be shown a request page.
+3.  If you have not disabled the [UseRequestPage Property](properties/devenv-userequestpage-property) you will be shown a request page in the Web Client.
 
      The following illustration shows an example of the request page that is displayed when the report is run.  
 
@@ -668,4 +675,6 @@ Viktor will run the report to view how it looks like. For this, do the following
 Viktor can add advanced features to the report. He can add features such as displaying the company name and logo on every page on the report. He might also want to add features that enable users to apply filters on the request page.  
 
 ## See Also  
-[Report Overview](devenv-reports.md)
+[Report Overview](devenv-reports.md)  
+[Defining a Report Dataset](devenv-report-dataset.md)  
+[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)
