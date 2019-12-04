@@ -116,7 +116,7 @@ When this step is completed, you can proceed to update your Business Central sol
     Dismount-NAVTenant -ServerInstance <server instance> -Tenant <tenant ID>
     ```
 
-## Install Business Central update
+## Install Business Central components
 
 From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update. 
 
