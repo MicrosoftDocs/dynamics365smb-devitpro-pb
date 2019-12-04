@@ -88,5 +88,5 @@ codeunit 50113 CreateCustomer
   
 ## See Also  
 [Properties](devenv-properties.md)  
-[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)  
-[Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)
+[Create Users According to Licenses](dynamics365/business-central/ui-how-users-permissions)  
+[Assign Permissions to Users and Groups](dynamics365/business-central/ui-define-granular-permissions)
