@@ -134,13 +134,6 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
         - AL Development Environment (optional but recommended)
         - Server
-        - SQL Server Components
-
-            <!--
-            - Demo Database
-            
-            > [!IMPORTANT]
-            > You must select to install the Demo Database; otherwise the Server will not install. This is because in order the be installed, the server must connect to a database that is compatible with the platform of the update. Because you have not converted your existing database, it is not compatible.-->
         - Web Server Components.
     3. Select **Next**.
     4. On the **Specify parameters** page, set the fields as needed.
