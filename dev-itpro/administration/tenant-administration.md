@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/03/2019
+ms.date: 12/05/2019
 ms.author: edupont
 ---
 
@@ -74,9 +74,9 @@ The following tasks are not available to the delegated administrator:
 
     You can still use the **Open in Excel** action to view data in Excel.
 
-- Use Invite External Accountant assisting setup guide.
+- Use the **Invite External Accountant** assisted setup guide
 
-    You can add external user via Azure Portal and assign this user the External Accountant license.     
+    Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.     
 
 ### Manage technical support
 
