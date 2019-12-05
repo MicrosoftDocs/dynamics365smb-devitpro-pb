@@ -72,19 +72,19 @@ Viktor starts by creating an empty report object using the AL Language extension
 
 He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he will use a RDLC layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdlc'`, the name of the rdlc file he will use for the layout.
 
-Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report. 
+Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report object. 
 
 ### Adding Data Items and columns
  
- The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each for table with the `dataitem` control. Moreover, for each table, he will add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
+ The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, he will add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
 
  The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for additional tables and fields.
 
 ### Defining Properties for the Data Items
 
-Once Viktor has specified the dataitem and column elements he will set the appropriate properties. He sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) to **sorting** to sort the table view of each data item on a specific field. 
+Once Viktor has specified the dataitem and column elements he will define the appropriate properties. He sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) in each data item to sort the table view based on a specific field. 
 
-He also sets the [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md) to include a specific field on the tab of the request page. For more information about request pages, see [Request Pages](devenv-request-pages.md).
+He also sets the [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md) to automatically include a specific field on the filter tab of the request page. For more information about request pages, see [Request Pages](devenv-request-pages.md).
 
 <!-- >[!NOTE]
 > Request pages for XMLports are not supported by the Business Central Web client in versions prior to Dynamics 365 Business Central 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the Dynamics NAV Client connected to Business Central. -->
@@ -109,10 +109,10 @@ report 50101 "Report for Multiple Tables"
     //Make the report searchable from Tell me under the Administration category.
     UsageCategory = Administration;
     ApplicationArea = All;
-    // Specify the RDL file that the report will use for the layout.
-    RDLCLayout = 'MyRDLReport.rdlc';
     // Use a RDLC layout.
     DefaultLayout = RDLC;
+    // Specify the name of the file that the report will use for the layout.
+    RDLCLayout = 'MyRDLReport.rdlc';
 
     dataset
     {
@@ -121,7 +121,7 @@ report 50101 "Report for Multiple Tables"
         {
             // Sort the table view based on the "No." field.
             DataItemTableView = Sorting("No.");
-            // Include the "No." field on the tab of the request page.
+            // Include the "No." field on the filter tab of the request page.
             RequestFilterFields = "No.";
             // Print data only if at least one of the CustLedgerEntry and SalesHeader data items generates output.
             PrintOnlyIfDetail = True;
@@ -330,10 +330,10 @@ report 50101 "Report for Multiple Tables"
         }
     }
 
-    // These labels will be used later as captions in the report.  
+    // These labels will be used later as captions in the report layout.  
     labels
     {
-        Sales_Document_Caption = 'Documents';
+        Sales_Document_Caption = 'Sales Documents';
         Total_Caption = 'Total';
     }
 }
@@ -425,7 +425,7 @@ report 50101 "Report for Multiple Tables"
     |---------|------------|-------------|-----------|  
     |2|1|Name\_CustomerCaption|None|  
     |2|2|None|Name\_Customer|  
-    |1|3|Addreess\_CustomerCaption|None|  
+    |1|3|Address\_CustomerCaption|None|  
     |1|4|None|Address\_Customer|  
     |2|3|PhoneNo\_CustomerCaption|None|  
     |2|4|None|PhoneNo\_Customer|  
@@ -670,9 +670,9 @@ Viktor will run the report to view how it looks like. For this, do the following
 
      ![Request page](media/request_page_report.PNG?style=centerme "request\_page\_report" )  
 
-     If you choose the **Preview** button on the request page, the report will be displayed wth the RLDC layout just created.
+     If you choose the **Preview** button on the request page, the report will be displayed with the RLDC layout just created.
 
-Viktor can add advanced features to the report. He can add features such as displaying the company name and logo on every page on the report. He might also want to add features that enable users to apply filters on the request page.  
+Viktor can now add advanced features to the report. He can add features such as displaying the company name and logo on every page on the report. He might also want to add features that enable users to apply filters on the request page.  
 
 ## See Also  
 [Report Overview](devenv-reports.md)  
