@@ -94,7 +94,7 @@ Moreover, Viktor uses the [DataItemLink (Reports) Property](properties/devenv-da
 
 For each of the `column` controls he adds the [IncludeCaption Property](properties/devenv-includecaption-property.md) and sets it to **True**. This property specifies to include the caption of the fields in the dataset of a report.
 
-Finally, he sets the [PrintOnlyIfDetail Property](devenv-printonlyifdetail-property.md) to **True** on a data item to print data only if at least one of its child data items generates output.
+Finally, he sets the [PrintOnlyIfDetail Property](properties/devenv-printonlyifdetail-property.md) to **True** on a data item to print data only if at least one of its child data items generates output.
 
 
 ## Adding Labels to the Report  
@@ -664,7 +664,7 @@ Viktor will run the report to view how it looks like. For this, do the following
 
 2. Press the  `F5` key to compile and run the report in Dynamics 365 Business Central.
 
-3.  If you have not disabled the [UseRequestPage Property](properties/devenv-userequestpage-property) you will be shown a request page in the Web Client.
+3.  If you have not disabled the [UseRequestPage Property](properties/devenv-userequestpage-property.md) you will be shown a request page in the Web Client.
 
      The following illustration shows an example of the request page that is displayed when the report is run.  
 
