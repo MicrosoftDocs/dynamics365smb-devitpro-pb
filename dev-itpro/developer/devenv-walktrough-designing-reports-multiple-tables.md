@@ -447,11 +447,11 @@ report 50101 "Report for Multiple Tables"
 
      Viktor will run the report and preview what he has done to this point.  
 
-17. In [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)], in Report Dataset Designer, select a data item. In the dialog box that appears that indicates that the layout of the report is changed by another application, choose the **Yes** button.  
+17. Go back to your project in Visual Studio Code and Reload the Window.
 
-18. On the **File** menu, choose **Save**. In the **Save** window, verify that **Compile** is selected, and then choose the **OK** button.  
+18. In the `launch.json` file set the `"startupObjectId"` to the **Id** of the report object and the `"startupObjectType"` to `Report`.
 
-19. In Object Designer, select your report \(50001\) and then choose the **Run** button.  
+19. Press the `F5` key to run the report.
 
 20. In the request page that is displayed, choose the **Preview** button to view the report. The first customer is displayed on the first page. If you page through the report, each customer is displayed on a separate page.  
 
@@ -459,7 +459,7 @@ report 50101 "Report for Multiple Tables"
 
 #### To add the data for ledger entry and detailed ledger entry  
 
-1.  Select Report Dataset Designer. On the **View** menu, choose **Layout** to open the RDLC report in Microsoft Visual Studio.  
+1.  Open the `MyRDLReport.rdlc` report in Microsoft Visual Studio.  
 
 2.  From the **Toolbox**, drag a table control into the list control. Put the table under the table that contains the customer data.  
 
@@ -660,7 +660,7 @@ report 50101 "Report for Multiple Tables"
 
 Viktor will run the report to view how it looks like. For this, do the following:
 
-1.  In the `launch.json` file set the `"startupObjectId"` to the **Id** of the report object and the `"startupObjectType"` to `Report`.
+1.  Make sure that the `"startupObjectId"` is set to the **Id** of the report object and the `"startupObjectType"` to `Report` in the `launch.json` file.
 
 2. Press the  `F5` key to compile and run the report in Dynamics 365 Business Central.
 
