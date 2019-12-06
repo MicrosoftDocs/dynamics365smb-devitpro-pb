@@ -18,14 +18,12 @@ Would you like to know what has changed in update 15.2 for [!INCLUDE[d365fin_lon
 [Overall link to release plan]()
 
 ## Hotfixes
-
-Link to hotfixes
+<!-- Link to hotfixes -->
 
 ## Feature changes
-<list>
+<!-- list -->
 
 ## Non-feature changes
-
 Want to know how to install a !INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2019 Release Wave 2 update? Find more information here.
 
 How to turn on and off each feature as a per tenant admin (Mike – 15.3)
