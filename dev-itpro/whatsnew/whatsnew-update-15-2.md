@@ -12,7 +12,7 @@ author: ManuelaHochstrasser
 ---
 
 # Update 15.2 for Microsoft Dynamics 365 Business Central 2019 Release Wave 2
-Would you like to know what has changed in update 15.2 for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2019 Release Wave 2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update.
+Would you like to know what has changed in update 15.2 for [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] 2019 Release Wave 2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update.
 
 ## Release plan
 [Overall link to release plan]()
