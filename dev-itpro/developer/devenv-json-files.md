@@ -77,7 +77,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Microsoft cloud sandbox"|
-|type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
+|type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object.  The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
