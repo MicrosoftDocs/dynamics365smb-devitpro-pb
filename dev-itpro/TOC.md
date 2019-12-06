@@ -1,6 +1,7 @@
 ﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
 ## [Get started](index.md)
 ## [Frequently asked questions](faq.md)
+## [FAQ About Windows Client and Business Central](across-faq-win-cli.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical support](technical-support.md)
@@ -516,7 +517,7 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-<!-- 
+<!--
 ## Preview Features in AL
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
