@@ -43,4 +43,4 @@ Shows a list of aged remaining balances for each customer for a given period of 
 [Upgrading [!INCLUDE [prodshort](../developer/includes/prodshort.md)]](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Norway Local Functionality in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](/dynamics-nav-app/LocalFunctionality/Norway/norway-local-functionality)  
+
