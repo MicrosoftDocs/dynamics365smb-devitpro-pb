@@ -247,9 +247,7 @@
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
-### [Page Customization Object](developer/devenv-page-customization-object.md)
-### [API Page Type](developer/devenv-api-pagetype.md)
-### [Page Background Tasks](developer/devenv-page-background-tasks.md)
+### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Role Centers
 #### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Sample Role Center](developer/devenv-simple-role-center-example.md)
@@ -260,26 +258,33 @@
 #### List Pages
 ##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
+##### [Repeater Controls](developer/devenv-repeater-controls.md)
 ##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 #### Card Pages
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
-#### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-#### [Repeater Controls](developer/devenv-repeater-controls.md)
-#### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
+#### Page Parts
+##### [Parts Overview](developer/devenv-designing-parts.md)
+##### [Designing List Parts](developer/devenv-designing-listparts.md)
+##### [Designing Card Parts](developer/devenv-designing-cardparts.md)
+##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md)
+##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
 #### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 #### [Field Groups](developer/devenv-field-groups.md)
 #### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
-### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+#### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Actions
 #### [Actions in AL](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 #### [Promoted Actions](developer/devenv-promoted-actions.md)
+### [Page Background Tasks](developer/devenv-page-background-tasks.md)
+### [API Page Type](developer/devenv-api-pagetype.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 ### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## Reports
