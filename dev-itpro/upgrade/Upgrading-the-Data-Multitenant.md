@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
+author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: Multitenant Deployment
@@ -131,7 +132,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
     The new versions are found in the `\Extensions` folder of the installation media.
 
-    To publish the new extension version, run the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
+    To publish the new extension version, run the [Publish-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
     ```
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
@@ -151,7 +152,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
     Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-    For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).  
+    For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
 
 2. (Dynamics NAV upgrade only) Uninstall all V1 extensions.
 
@@ -164,7 +165,7 @@ You perform these tasks on each tenant that you want to upgrade.
     ```
     
     V1 extensions are indicated by `CSIDE` in the `Extension Type` column.
-    2. For each extension, run the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall it:
+    2. For each extension, run the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall it:
 
     ```
     Uninstall-NAVApp -ServerInstance <OldServerInstanceName> -Name <Name> -Version <N.N.N.N>
@@ -172,7 +173,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
 3. Dismount the tenant.
 
-    Before you upgrade the tenant, you must dismount it from the old server instance. To dismount the tenant, run the [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
+    Before you upgrade the tenant, you must dismount it from the old server instance. To dismount the tenant, run the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
     ```
     Dismount-NAVTenant -ServerInstance <OldServerInstanceName> -Tenant <TenantID>
@@ -184,7 +185,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
 1. Mount the tenant.
 
-    Mount the tenant on the new [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the newly application database. To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+    Mount the tenant on the new [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the newly application database. To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
     ```
     Mount-NAVTenant -ServerInstance <ServerInstanceName> -DatabaseName <Database name> -DatabaseServer <server\instance> -Tenant <TenantID> -AllowAppDatabaseWrite
@@ -198,7 +199,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
 2. Synchronize the tenant.
  
-    Synchronize the tenant database schema with validation by running the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
+    Synchronize the tenant database schema with validation by running the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
     ```
     Sync-NAVTenant -ServerInstance <ServerInstanceName> -Tenant <TenantID>
@@ -212,7 +213,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
 3. If there are published extensions with newer versions than on the tenant, synchronize all published extensions with the tenant database.
     
-    Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension version:
+    Synchronize the schema with the database by running the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension version:
 
     ```    
     Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> -Tenant <TenantID>
@@ -229,7 +230,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
     A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. It will also upgrade the published extensions. 
 
-    You can start the data upgrade by running the  run [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
+    You can start the data upgrade by running the  run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 
     ```  
     Start-NavDataUpgrade -ServerInstance <ServerInstanceName>
@@ -241,13 +242,13 @@ You perform these tasks on each tenant that you want to upgrade.
     Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <tenantID> -FunctionExecutionMode Serial
     ```  
 
-    To view the progress of the data upgrade, you can run [Get-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/get-navdataupgrade) cmdlet with the `–Progress` switch. 
+    To view the progress of the data upgrade, you can run [Get-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/get-navdataupgrade) cmdlet with the `–Progress` switch. 
 
     The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.  
 
 5. Install extensions on the tenant.
 
-    Install the desired extensions on the tenant by running the [Install-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
+    Install the desired extensions on the tenant by running the [Install-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
     ```    
     Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>

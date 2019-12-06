@@ -21,10 +21,10 @@ You can call .NET Framework type members, including methods, properties, and con
 
      By default, the path to the installation folder is [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\RoleTailored Client or [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\RoleTailored Client. You can place the assembly in a subfolder.  
 
-     For more information about the global assembly cache, see [Assembly Installation in the GAC](http://go.microsoft.com/fwlink/?LinkID=196848&clcid=0x409) in the MSDN Library.  
+     For more information about the global assembly cache, see [Assembly Installation in the GAC](https://go.microsoft.com/fwlink/?LinkID=196848&clcid=0x409) in the MSDN Library.  
 
     > [!TIP]  
-    >  You can install the assembly in the global assembly cache with the GAC utility. For more information, see [Global Assembly Cache Tool](http://go.microsoft.com/fwlink/?LinkID=204215&clcid=0x409) in the MSDN Library.  
+    >  You can install the assembly in the global assembly cache with the GAC utility. For more information, see [Global Assembly Cache Tool](https://go.microsoft.com/fwlink/?LinkID=204215&clcid=0x409) in the MSDN Library.  
 
 2.  In the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], open Object Designer, and then open the object that will use .NET Framework interoperability, such as the page or codeunit.  
 
@@ -88,17 +88,17 @@ You can call .NET Framework type members, including methods, properties, and con
      `MethodPropertyName` represents the name of the method or property that you want to call, and `arguments` represents any arguments of the method or property.  
 
     > [!IMPORTANT]  
-    >  Some types in the [System](http://go.microsoft.com/fwlink/?LinkID=216777&clcid=0x409) namespace of the .NET Framework class library are automatically converted to C/AL types. You cannot assign values to .NET Framework variables for these types. For more information, see [Mapping Between .NET Framework and C/AL Types](Mapping-Between-.NET-Framework-and-C-AL-Types.md).  
+    >  Some types in the [System](https://go.microsoft.com/fwlink/?LinkID=216777&clcid=0x409) namespace of the .NET Framework class library are automatically converted to C/AL types. You cannot assign values to .NET Framework variables for these types. For more information, see [Mapping Between .NET Framework and C/AL Types](Mapping-Between-.NET-Framework-and-C-AL-Types.md).  
 
     > [!TIP]  
     >  Methods can be overloaded. Therefore see the description at the bottom of the **C/AL Symbol Menu**, which shows the parameter and return types for each method. Also, method and property names that are longer than 128 characters will be truncated, and you cannot compile the [!INCLUDE[navnow](includes/navnow_md.md)] object. For more information, see [Calling .NET Framework Members from C/AL](Calling-.NET-Framework-Members-from-C-AL.md).  
 
 ## Example  
- The following code example uses .NET Framework interoperability to display headlines from the RSS feed http://blogs.msdn.com/inside\_office\_online/rss.xml. This example accesses classes in the **System.XML** assembly that is found in Global Assembly Cache. To implement this example, create a codeunit that has the following local variables:  
+ The following code example uses .NET Framework interoperability to display headlines from the RSS feed https://blogs.msdn.com/inside\_office\_online/rss.xml. This example accesses classes in the **System.XML** assembly that is found in Global Assembly Cache. To implement this example, create a codeunit that has the following local variables:  
 
  The following code example uses .NET Framework interoperability to display headlines from an RSS feed from the Microsoft Dynamics NAV team blog, which has the following URL:  
 
- http://feeds.feedburner.com/MicrosoftDynamicsNavTeamBlog?format=xml.  
+ https://feeds.feedburner.com/MicrosoftDynamicsNavTeamBlog?format=xml.  
 
  This example calls members of the **System.XML** assembly, which is part of the Microsoft .NET Framework class library and is installed in the global assembly cache.  
 
@@ -117,7 +117,7 @@ You can call .NET Framework type members, including methods, properties, and con
 
 xml := xml.XmlDocument();  
 
-xml.Load('http://feeds.feedburner.com/MicrosoftDynamicsNavTeamBlog?format=xml');  
+xml.Load('https://feeds.feedburner.com/MicrosoftDynamicsNavTeamBlog?format=xml');  
 
 items := xml.SelectNodes('/rss/channel/item');  
 

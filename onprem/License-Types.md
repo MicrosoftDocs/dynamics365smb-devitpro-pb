@@ -16,7 +16,7 @@ When you create a user in [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you
 > [!NOTE]  
 >  Licenses are specific to the [!INCLUDE[navnow](includes/navnow_md.md)] version and are not forward or backward compatible. This means that a license from an earlier [!INCLUDE[navnow](includes/navnow_md.md)] version will not work with [!INCLUDE[navnowlong](includes/navnowlong_md.md)], and vice versa.  
   
- For additional information about the types of user licenses and the license restrictions regarding user licenses, see the [!INCLUDE[navcrete](includes/navcrete_md.md)] Licensing Guide located at [http://go.microsoft.com/fwlink/?LinkId=518623](http://go.microsoft.com/fwlink/?LinkId=518623) \(requires PartnerSource login\).  
+ For additional information about the types of user licenses and the license restrictions regarding user licenses, see the [!INCLUDE[navcrete](includes/navcrete_md.md)] Licensing Guide located at [https://go.microsoft.com/fwlink/?LinkId=518623](https://go.microsoft.com/fwlink/?LinkId=518623) \(requires PartnerSource login\).  
   
 -   **Full User**  
   
@@ -53,4 +53,4 @@ When you create a user in [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you
  [How to: Specify When UI Elements Are Removed](How-to--Specify-When-UI-Elements-Are-Removed.md)   
  [Properties of the Demo License](Properties-of-the-Demo-License.md)   
  [How to: Upload the License File](How-to--Upload-the-License-File.md)   
- [Microsoft Dynamics NAV 2015 Licensing Guide](http://go.microsoft.com/fwlink/?LinkId=518623)
+ [Microsoft Dynamics NAV 2015 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=518623)

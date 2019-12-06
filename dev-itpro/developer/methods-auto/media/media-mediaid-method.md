@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,23 +45,16 @@ This example uses the MediaId method to get the GUID of the media object that is
 
 The example assumes that  the **My Items** table already exists and has a **Media** data type field named **Image**.
 
-This code requires you to create the following variables.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|myItemRec|Record|My Items|  
-|imageID|GUID||  
-
-This code requires you to create the following text constant.  
-
-|Text constant|ConstValue|  
-|-------------------|---------------|  
-|Text001|Item %1 has a media object with the following ID: %2|  
-
-```  
-myItemRec.Get('1');  
+```
+ var
+    myItemRec: Record "My Items";
+    imageID: GUID;
+    Text000: Label 'Item %1 has a media object with the following ID: %2';
+begin
+    myItemRec.Get('1');  
     mediaGuid := myItemRec.Image.MediaId;  
     Message(Text000, myItemRec."No.", imageID);  
+end;
 ```  
 
 ## See Also

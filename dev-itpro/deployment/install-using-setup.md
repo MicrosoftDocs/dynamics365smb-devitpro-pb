@@ -10,10 +10,11 @@ ms.service: "dynamics365-business-central"
 ms.assetid: e4bd0a48-9e21-44e3-8a5d-858f02af5206
 caps.latest.revision: 24
 ms.author: jswymer
+author: jswymer
 ---
 
 # Installing Business Central Using Setup
-You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md).   
+You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md).
 
 ## About Setup
  
@@ -110,7 +111,9 @@ The option to load a Setup configuration file is on the **Choose an installation
   
 3.  Modify the list of components to install or choose **Next** to proceed to the **Specify parameters** page, where settings from the Setup configuration file are shown.  
   
-4.  Configure these settings or choose **Apply** to accept these values and continue. 
+4.  Configure these settings or choose **Apply** to accept these values and continue.
+
+
 
 ## See Also  
  [Components](product-and-architecture-overview.md)   

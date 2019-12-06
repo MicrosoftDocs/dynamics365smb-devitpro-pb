@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -77,26 +77,22 @@ The end result String.
  The *Which* parameter contains an array of the characters that you want to delete. The order of the characters is of no significance. If *String* contains a character that is specified in *Which*, it is deleted from *String*.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|String|Text|  
-|Where|Text|  
-|Which|Text|  
-|NewString|Text|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|Windy West Solutions|  
-|Text001|>%1\< is transformed to >%2\<|  
-  
-```  
-String := Text000;  
-Where := '<>';  
-Which := 'Ws';  
-NewString := DELCHR(String, Where, Which);  
-MESSAGE(Text001, String,NewString);  
+
+```
+var
+    String: Text;
+    Where: Text;
+    Which: Text;
+    NewString: Text;
+    Text000: TexConst ENU='Windy West Solutions';
+    Text001: TexConst ENU='>%1< is transformed to >%2<';
+begin 
+    String := Text000;  
+    Where := '<>';  
+    Which := 'Ws';  
+    NewString := DELCHR(String, Where, Which);  
+    MESSAGE(Text001, String,NewString);  
+end;
 ```  
   
  The message window displays the following:  
@@ -106,26 +102,22 @@ MESSAGE(Text001, String,NewString);
  The method deletes every W and s that is either the first or last character in *String*.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|String|Text|  
-|Where|Text|  
-|Which|Text|  
-|NewString|Text|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|This is an example|  
-|Text001|>%1\< is transformed to >%2\<|  
-  
-```  
-String := Text000;  
-Where := '=';  
-Which := 'sx';  
-NewString := DELCHR(String, Where, Which);  
-MESSAGE(Text001, String,NewString);  
+
+```
+var
+    String: Text;
+    Where: Text;
+    Which: Text;
+    NewString: Text;
+    Text000: TexConst ENU='This is an example';
+    Text001: TexConst ENU='>%1< is transformed to >%2<';
+begin
+    String := Text000;  
+    Where := '=';  
+    Which := 'sx';  
+    NewString := DELCHR(String, Where, Which);  
+    MESSAGE(Text001, String,NewString);  
+end;
 ```  
   
  The message window displays the following:  
@@ -135,26 +127,22 @@ MESSAGE(Text001, String,NewString);
  The method deletes every s and x from *String*.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|String|Text|  
-|Where|Text|  
-|Which|Text|  
-|NewString|Text|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|This is an example|  
-|Text001|>%1\< is transformed to >%2\<|  
-  
-```  
-String := Text000;  
-Where := '>';  
-Which := 'Tely';  
-NewString := DELCHR(String, Where, Which);  
-MESSAGE(Text001, String,NewString);  
+ 
+```
+var
+    String: Text;
+    Where: Text;
+    Which: Text;
+    NewString: Text;
+    Text000: TexConst ENU='This is an example';
+    Text001: TexConst ENU='>%1< is transformed to >%2<';
+begin
+    String := Text000;  
+    Where := '>';  
+    Which := 'Tely';  
+    NewString := DELCHR(String, Where, Which);  
+    MESSAGE(Text001, String,NewString);  
+end;
 ```  
   
  The message window displays the following:  
@@ -164,26 +152,22 @@ MESSAGE(Text001, String,NewString);
  If T, e, l, or y is the last character in *String*, the method deletes them.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|String|Text|  
-|Where|Text|  
-|Which|Text|  
-|NewString|Text|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|This is an example|  
-|Text001|>%1\< is transformed to >%2\<|  
-  
-```  
-String := Text000;  
-Where := '<';  
-Which := 'This';  
-NewString := DELCHR(String, Where, Which);  
-MESSAGE(Text001, String,NewString);  
+
+```
+var
+    String: Text;
+    Where: Text;
+    Which: Text;
+    NewString: Text;
+    Text000: TexConst ENU='This is an example';
+    Text001: TexConst ENU='>%1< is transformed to >%2<';
+begin 
+    String := Text000;  
+    Where := '<';  
+    Which := 'This';  
+    NewString := DELCHR(String, Where, Which);  
+    MESSAGE(Text001, String,NewString);  
+end;
 ```  
   
  The message window displays the following:  
@@ -193,25 +177,21 @@ MESSAGE(Text001, String,NewString);
  If T, h, s, i, or space is the first character in *String*, the method deletes them.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|String|Text|  
-|Where|Text|  
-|Which|Text|  
-|NewString|Text|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|This is an example|  
-|Text001|>%1\< is transformed to >%2\<|  
-  
-```  
-String := Text000;  
-Where := '<';  
-NewString := DELCHR(String, Where);  
-MESSAGE(Text001, String,NewString);  
+
+```
+var
+    String: Text;
+    Where: Text;
+    Which: Text;
+    NewString: Text;
+    Text000: TexConst ENU='This is an example';
+    Text001: TexConst ENU='>%1< is transformed to >%2<';
+begin
+    String := Text000;  
+    Where := '<';  
+    NewString := DELCHR(String, Where);  
+    MESSAGE(Text001, String,NewString);  
+end;
 ```  
   
  The message window displays the following:  

@@ -2,7 +2,6 @@
 title: Connect to the Intelligent Cloud from on-premises | Microsoft Docs
 description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
 author: bmeier94
-
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
@@ -10,14 +9,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 10/01/2019
+ms.date: 11/20/2019
 ms.author: bmeier
 
 ---
 
 # Connect to the Intelligent Cloud from On-Premises with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-Customers running their workloads on-premises can get access to the same intelligent cloud scenarios that customers using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online have. Each on-premises solution that connects to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be able to replicate data from on-premises to the cloud tenant. In this way, users can access intelligent cloud scenarios of Machine Learning, Power BI, Flow, and others to drive suggested actions.  
+Customers running their workloads on-premises can get access to the same intelligent cloud scenarios that customers using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online have. Each on-premises solution that connects to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be able to replicate data from on-premises to the cloud tenant. In this way, users can access intelligent cloud scenarios of Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
 
 For the list of currently supported on-premises solutions, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.
 

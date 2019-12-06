@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,15 +41,15 @@ The output string that is encrypted.
  If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.   
 
 ## Example  
- The code example requires that you create the following text constant in the **C/AL Globals** window.  
-
- **Text** Text000  
-
 ```  
-Text000 := 'ABC123';  
-MESSAGE('Value: ' + Text000)  
-Text000 := ENCRYPT(Text000);  
-MESSAGE('Value: ' + Text000);  
+var
+    Text000: Text;
+begin
+    Text000 := 'ABC123';  
+    MESSAGE('Value: ' + Text000);  
+    Text000 := ENCRYPT(Text000);  
+    MESSAGE('Value: ' + Text000);  
+end;
 ```  
 
  This code example takes the string value **ABC123** and outputs the encrypted value of the string. The encrypted value will vary from system to system due to differences in the encryption key.  

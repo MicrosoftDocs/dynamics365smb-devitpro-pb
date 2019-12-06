@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -59,16 +59,16 @@ An optional comment about the session event. The comment is stored in Table 2000
  You cannot stop the current, active session in which you are executing the **STOPSESSION** call.  
 
 ## Example  
- This example requires that you create the following variables, and assumes that you have a table named CacheStressTest that you use for testing.  
+ This example assumes that you have a table named CacheStressTest that you use for testing.  
 
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|SessionId|Integer|Not applicable|  
-|CacheStressTestRec|Record|CacheStressTest|  
-
-```  
-STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
-STOPSESSION(SessionId, 'Logoff cache stress test session');  
+```
+var
+    CacheStressTestRec: Record Customer;
+    SessionID: Integer;
+begin
+    STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
+    STOPSESSION(SessionId, 'Logoff cache stress test session');  
+end;
 
 ```
 

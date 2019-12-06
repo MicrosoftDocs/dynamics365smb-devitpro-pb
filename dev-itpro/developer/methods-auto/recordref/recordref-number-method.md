@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,24 +41,20 @@ The table ID of the table that contains the record that was referred to by the R
  In versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] earlier than [!INCLUDE[nav7long](../../includes/nav7long_md.md)], if a RecordRef referred to a temporary table, then the table number value of the RecordRef was the run-time generated sequence ID, which is from the base value of 2000100000. You could use the table number to determine whether a RecordRef referred to a temporary table. In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], the table number value of a RecordRef always contains the ID of the originating physical table and not the run-time generated sequence ID. If you previously used the NUMBER Method \(RECORDREF\) to test for the sequence number and determine whether the RecordRef was temporary, then you must use the [ISTEMPORARY Method \(RecordRef\)](recordref-istemporary-method.md) in [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] instead.  
   
 ## Example  
- The following example opens the Customer table \(18\) as a RecordRef object. The [OPEN Method \(RecordRef\)](recordref-open-method.md) accepts `DATABASE::Customer` as an integer. The NUMBER method retrieves the table number and displays the name and number of the table in a message box. This example requires that you create the following variables global text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|varDatabaseName|Integer|  
-|MyRecordRef|RecordRef|  
-|varTableNumber|Integer|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|%1 is table %2.|  
+ The following example opens the Customer table \(18\) as a RecordRef object. The [OPEN Method \(RecordRef\)](recordref-open-method.md) accepts `DATABASE::Customer` as an integer. The NUMBER method retrieves the table number and displays the name and number of the table in a message box. 
   
 ```  
-  
-varDatabaseName := DATABASE::Customer;  
-MyRecordRef.OPEN(varDatabaseName);  
-varTableNumber := MyRecordRef.NUMBER;  
-MESSAGE(Text000, MyRecordRef.CAPTION, varTableNumber);  
+var
+    MyRecordRef: RecordRef;
+    varDatabaseName: Integer;
+    varTableNumber: Integer;
+    Text000: Label '%1 is table %2.'; 
+begin   
+    varDatabaseName := DATABASE::Customer;  
+    MyRecordRef.OPEN(varDatabaseName);  
+    varTableNumber := MyRecordRef.NUMBER;  
+    MESSAGE(Text000, MyRecordRef.CAPTION, varTableNumber);  
+end;
   
 ```  
   

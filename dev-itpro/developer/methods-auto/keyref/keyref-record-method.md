@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -35,19 +35,18 @@ The RecordRef of the record that is currently selected referenced by the key. If
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../../datatypes/devenv-keyref-data-type.md) for the record is retrieved by using the [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../../datatypes/devenv-recordref-data-type.md). This example requires that you create the following global variables.  
   
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|varKeyRef|KeyRef|  
-  
+ The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../../datatypes/devenv-keyref-data-type.md) for the record is retrieved by using the [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../../datatypes/devenv-recordref-data-type.md).
+
 ```  
-  
-RecRef.OPEN(18);  
-varKeyRef := RecRef.KEYINDEX(1);  
-RecRef := varKeyRef.RECORD;  
+var
+    RecRef: RecordRef;
+    varKeyRef: KeyRef;
+begin    
+    RecRef.OPEN(18);  
+    varKeyRef := RecRef.KEYINDEX(1);  
+    RecRef := varKeyRef.RECORD;  
+end;
 ```  
   
 

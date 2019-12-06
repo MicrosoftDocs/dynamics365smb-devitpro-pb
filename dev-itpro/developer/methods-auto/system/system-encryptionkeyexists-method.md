@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,8 +43,8 @@ if ENCRYPTIONENABLED then
           MESSAGE('Encryption has been enabled and the encryption key is present in this server instance')  
         else  
           MESSAGE('Encryption has been enabled but the encryption key is not present on this server instance')  
-      else  
-        MESSAGE('Encryption has not been enabled')  
+else  
+  MESSAGE('Encryption has not been enabled');  
 ``` 
 
 ## See Also

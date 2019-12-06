@@ -27,7 +27,7 @@ In this walkthrough, you set up an environment to test integrating certificates 
 
 -   The makecert.exe utility.  
 
-     The makecert.exe utility is installed with Microsoft Visual Studio and Microsoft Windows SDK. For more information, see [Certificate Creation Tool \(Makecert.exe\)](http://go.microsoft.com/fwlink/?LinkId=202833) in the MSDN Library.  
+     The makecert.exe utility is installed with Microsoft Visual Studio and Microsoft Windows SDK. For more information, see [Certificate Creation Tool \(Makecert.exe\)](https://go.microsoft.com/fwlink/?LinkId=202833) in the MSDN Library.  
 
 ## Configuring [!INCLUDE[nav_server](includes/nav_server_md.md)]  
  You create and install a root certification authority \(CA\) and a server certificate on the computer running [!INCLUDE[nav_server](includes/nav_server_md.md)].  

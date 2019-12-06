@@ -24,10 +24,10 @@ In Microsoft .NET Framework, *serialization* is the process of converting an obj
 >  For the [!INCLUDE[nav_web](includes/nav_web_md.md)], you cannot implement Microsoft .NET Framework interoperability objects that target the client.  
 
 ## Making a Type Serializable  
- There are two ways that you can make a .NET Framework type serializable. You can implement basic serialization by applying the [System.SerializableAttribute](http://go.microsoft.com/fwlink/?LinkID=262177) attribute to the type or you can implement custom serialization by using [System.Runtime.Serialization.ISerializable](http://go.microsoft.com/fwlink/?LinkID=262178) interface.  
+ There are two ways that you can make a .NET Framework type serializable. You can implement basic serialization by applying the [System.SerializableAttribute](https://go.microsoft.com/fwlink/?LinkID=262177) attribute to the type or you can implement custom serialization by using [System.Runtime.Serialization.ISerializable](https://go.microsoft.com/fwlink/?LinkID=262178) interface.  
 
 ### Basic Serialization Using SerializableAttribute  
- Basic serialization uses the .NET Framework to automatically serialize an object. To implement basic serialization on a type, you decorate the type with the [SerializableAttribute](http://go.microsoft.com/fwlink/?LinkID=262177) class as shown in the following example.  
+ Basic serialization uses the .NET Framework to automatically serialize an object. To implement basic serialization on a type, you decorate the type with the [SerializableAttribute](https://go.microsoft.com/fwlink/?LinkID=262177) class as shown in the following example.  
 
 ```  
 [Serializable]  
@@ -43,14 +43,14 @@ public class MyObject
 #### Basic Serialization of Date Fields  
  You can use basic serialization only if all data fields in the type are serializable. Fields that are calculated at runtime cannot be serialized. If a field cannot be serialized, then at runtime, the serialization process will throw an exception and the C/AL code execution will fail.  
 
- You can exclude fields from the serialization process by decorating the field with the [System.NonSerializedAttribute](http://go.microsoft.com/fwlink/?LinkID=262179) class.  
+ You can exclude fields from the serialization process by decorating the field with the [System.NonSerializedAttribute](https://go.microsoft.com/fwlink/?LinkID=262179) class.  
 
 ### Custom Serialization Using ISerializable Interface  
  With custom serialization, you can create an object that controls the serialization of types in another object. This method is useful when you do not have access to the source code of the assembly that contains the .NET Framework types that you are implementing with .NET Framework interoperability. The custom object specifies which types will be serialized and how serialization will be done.  
 
- To implement custom serialization, you create a class that implements the [ISerializable](http://go.microsoft.com/fwlink/?LinkID=262178) interface, and decorate the class with [SerializableAttribute](http://go.microsoft.com/fwlink/?LinkID=262177). In most cases, you must also implement the [System.Runtime.Serialization.ISerializable.GetObjectData](http://go.microsoft.com/fwlink/?LinkID=262180) method and a special constructor that is used when the source object is deserialized. You use the **GetObjectData** method to populate the [SerializationInfo](http://go.microsoft.com/fwlink/?LinkID=262181) the data that is required to serialize the source object at runtime.  
+ To implement custom serialization, you create a class that implements the [ISerializable](https://go.microsoft.com/fwlink/?LinkID=262178) interface, and decorate the class with [SerializableAttribute](https://go.microsoft.com/fwlink/?LinkID=262177). In most cases, you must also implement the [System.Runtime.Serialization.ISerializable.GetObjectData](https://go.microsoft.com/fwlink/?LinkID=262180) method and a special constructor that is used when the source object is deserialized. You use the **GetObjectData** method to populate the [SerializationInfo](https://go.microsoft.com/fwlink/?LinkID=262181) the data that is required to serialize the source object at runtime.  
 
- The common language runtime calls the constructor during deserialization to construct a replica of the source object. The constructor takes two parameters, a **SerializationInfo** type and a [System.Runtime.Serialization.StreamingContext](http://go.microsoft.com/fwlink/?LinkID=262182) type. The **StreamingContext** parameter describes the source and destination of a given serialized stream.  
+ The common language runtime calls the constructor during deserialization to construct a replica of the source object. The constructor takes two parameters, a **SerializationInfo** type and a [System.Runtime.Serialization.StreamingContext](https://go.microsoft.com/fwlink/?LinkID=262182) type. The **StreamingContext** parameter describes the source and destination of a given serialized stream.  
 
 ### Custom Serialization Example  
  The following code example demonstrates a custom serialization object that implements the basic functionality that is required for compliance with the **ISerializable** interface. In the first procedure of this example, you create a .NET Framework assembly that includes a serializable type. In the second procedure, in the [!INCLUDE[navnow](includes/navnow_md.md)] development environment, you create a codeunit that includes two DotNet variables for the serializable type. You set one variable to target the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the other to target the [!INCLUDE[nav_server](includes/nav_server_md.md)]. In C/AL code, you add code that transfers the value for the DotNet variable on the [!INCLUDE[nav_server](includes/nav_server_md.md)] to the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. You will also add code that verifies that the data transfer is successful.  

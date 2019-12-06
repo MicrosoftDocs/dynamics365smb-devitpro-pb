@@ -37,7 +37,7 @@ report 50103 "Customer List"
 {
   CaptionML=ENU='Customer List';
   DefaultLayout = RDLC; // if Word use WordLayout property
-  RDLCLayout = 'MyRDLCReport.rdl';
+  RDLCLayout = 'MyRDLReport.rdl';
 
   dataset
   {
@@ -216,7 +216,6 @@ report 50103 "Customer List"
     Customer_Currency_CodeCaptionLbl : TextConst ENU='Currency Code';
     Total_LCY_CaptionLbl : TextConst ENU='Total (LCY)';
 }
-
 
 ```
 

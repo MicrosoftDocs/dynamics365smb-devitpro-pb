@@ -33,7 +33,7 @@ The [!INCLUDE[navnow](includes/navnow_md.md)] product media includes a folder th
 ### Running the Sample Scripts  
  The sample scripts are designed to be run from the context of the Windows PowerShell module that is part of each collection of sample scripts. For example, to run the scripts for upgrading to [!INCLUDE[navnow](includes/navnow_md.md)], import the NAVUpgradeSamples.psm1 module into the [!INCLUDE[nav_shell](includes/nav_shell_md.md)]. Similarly, to run the sample scripts for merging application objects, open the HowTo-Start-Import-NAV-Module.ps1 script in the [!INCLUDE[wps_2](includes/wps_2_md.md)] IDE, navigate the command prompt to the folder where you placed the samples, and then run the script.  
   
- For more information, see [Getting Started with Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=252252) in the TechNet Library.  
+ For more information, see [Getting Started with Windows PowerShell](https://go.microsoft.com/fwlink/?LinkID=252252) in the TechNet Library.  
   
 ## See Also  
  [Administration](Administration.md)   

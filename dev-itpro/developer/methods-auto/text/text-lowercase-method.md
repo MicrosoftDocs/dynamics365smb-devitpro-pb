@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,24 +38,20 @@ The string converted to lowercase.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|Str|Text|60|  
-|Lower|Text|60|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The Entries are Sorted by Name.|  
-|Text001|The string before LOWERCASE is:>%1\<|  
-|Text002|The string after LOWERCASE is:>%1\<|  
-  
+
 ```  
-Str := Text000;  
-MESSAGE(Text001, Str);  
-Lower := LOWERCASE(Str);  
-MESSAGE(Text002, Lower);  
+var
+    Str: Text[60];
+    Lower: Text[60];
+    Text000: Label 'The Entries are Sorted by Name.';
+    Text001: Label 'The string before LOWERCASE is:>%1<';
+    Text002: Label 'The string after LOWERCASE is:>%1<';
+begin
+    Str := Text000;  
+    MESSAGE(Text001, Str);  
+    Lower := LOWERCASE(Str);  
+    MESSAGE(Text002, Lower);  
+end;
 ```  
   
  The first message window displays the following:  

@@ -1,1 +1,0 @@
-You cannot change the contents of this window.

@@ -58,12 +58,12 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
 2.  In the **Address** field, enter an address of the following type: 
 
     ```
-    http://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services
+    https://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services
     ```
     For example:
 
     ```     
-    http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd./services
+    https://localhost:7047/BC130/WS/CRONUS%20International%20Ltd./services
     ```  
 
     > [!NOTE] 
@@ -72,7 +72,7 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
      The browser should now show the web service that you have published:  
 
     ```  
-    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/BC130/WS/CRONUS International Ltd/Page/Customer"/>  
+    <contractRef xmlns="https://schemas.xmlsoap.org/disco/scl/" ref="https://localhost:7047/BC130/WS/CRONUS International Ltd/Page/Customer"/>  
     ```  
 
 ## Calling the Web Service  
@@ -91,7 +91,7 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
 
 4.  In Solution Explorer, right-click **References** in the project, and then choose **Add Service Reference**.  
 
-5.  Choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **http://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/Services**, and then choose **Go**.  
+5.  Choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **https://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/Services**, and then choose **Go**.  
 
 6.  When the **Customer** service is displayed, choose **View Service**, rename **localhost** to **WebService**, and then choose **Add Reference**.  
 

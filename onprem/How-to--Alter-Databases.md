@@ -59,7 +59,7 @@ You can change the database property settings that you selected when you created
     Export-NAVData -DatabaseServer DatabaseServerName -DatabaseName OldDatabaseName -IncludeApplication -IncludeApplicationData -IncludeGlobalData -AllCompanies -FilePath c:\Files\MyNavDB.navdata  
     ```  
 
-     For more information, see [Export-NAVData cmdlet](http://go.microsoft.com/fwlink/?LinkID=401400).  
+     For more information, see [Export-NAVData cmdlet](https://go.microsoft.com/fwlink/?LinkID=401400).  
 
 3.  To import the data from the old database to the new database, run the Import-NAVData cmdlet as shown in the following example.  
 
@@ -68,7 +68,7 @@ You can change the database property settings that you selected when you created
 
     ```  
 
-     For more information, see [Import-NAVData cmdlet](http://go.microsoft.com/fwlink/?LinkID=401402)  
+     For more information, see [Import-NAVData cmdlet](https://go.microsoft.com/fwlink/?LinkID=401402)  
 
 4.  Connect the new database to the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance.  
 
@@ -78,7 +78,7 @@ You can change the database property settings that you selected when you created
 
     -   From the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], on the **Tools** menu, choose **Sync. Schema For All Tables**, and then choose **With Validation** and follow the schema synchronization instructions.  
 
-    -   From the [!INCLUDE[nav_shell](includes/nav_shell_md.md)], open the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] as an administrator, and then run the [Sync-NavTenant cmdlet](http://go.microsoft.com/fwlink/?LinkID=401399).
+    -   From the [!INCLUDE[nav_shell](includes/nav_shell_md.md)], open the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] as an administrator, and then run the [Sync-NavTenant cmdlet](https://go.microsoft.com/fwlink/?LinkID=401399).
 
     For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
 

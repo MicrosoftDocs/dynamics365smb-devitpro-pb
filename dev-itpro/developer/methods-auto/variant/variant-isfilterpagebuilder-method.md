@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -39,21 +39,19 @@ An instance of the [Variant](variant-data-type.md) data type.
 
 ## Example  
  The following example uses the ISFILTERPAGEBUILDER method on a filter page object that includes a filter control for the **Date** system table.  
-  
- This example requires that you create the following global variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|-------------|  
-|varDateItem|Text||  
-|varFilterPageBuilder|FilterPageBuilder||  
-|myVariant|Variant||  
-  
+   
 ```  
-varDateItem := 'Date record';  
-varFilterPageBuilder.ADDTABLE(varDateItem + ‘ 1’,DATABASE::Date);  
-myVariant := varFilterPageBuilder;  
-IF not myVariant.ISFILTERPAGEBUILDER THEN   
-  ERROR(‘This variant should contain a FilterPageBuilder variable’);  
+var
+    varDateItem: Text;
+    varFilterPageBuilder: FilterPageBuilder;
+    myVariant: Variant;
+begin
+    varDateItem := 'Date record';  
+    varFilterPageBuilder.ADDTABLE(varDateItem + ‘ 1’,DATABASE::Date);  
+    myVariant := varFilterPageBuilder;  
+    if not myVariant.ISFILTERPAGEBUILDER then   
+      ERROR(‘This variant should contain a FilterPageBuilder variable’);  
+end;
   
 ```  
 

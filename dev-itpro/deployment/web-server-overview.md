@@ -17,7 +17,7 @@ Giving users access to data from the [!INCLUDE[nav_web](../developer/includes/na
 If you just want to get started installing the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).
 
 ## ASP .NET Core on IIS
-[!INCLUDE[webserver](../developer/includes/webserver.md)] instances run on ASP.NET Core on IIS, which in part dictates the directory structure of the instances. For more information about ASP .NET Core, see [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/).
+[!INCLUDE[webserver](../developer/includes/webserver.md)] instances run on ASP.NET Core on IIS, which in part dictates the directory structure of the instances. For more information about ASP .NET Core, see [Introduction to ASP.NET Core](/aspnet/core/).
 
 ## Network Topology
 The following illustration shows the component infrastructure that supports [!INCLUDE[webserver](../developer/includes/webserver.md)] instances on your network.  
@@ -47,7 +47,7 @@ Setup is the quickest way to get a web server instance up and running, and is ty
 For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).
 
 ### Using [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets
-There are several PowerShell cmdlets that enable you to create, configure, and remove [!INCLUDE[webserver](../developer/includes/webserver.md)] instances from a command line interface. To create a web server instance, you use the [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance) cmdlet, which has the following advantages over Setup:
+There are several PowerShell cmdlets that enable you to create, configure, and remove [!INCLUDE[webserver](../developer/includes/webserver.md)] instances from a command line interface. To create a web server instance, you use the [New-NAVWebServerInstance](/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance) cmdlet, which has the following advantages over Setup:
 
 -   You can create multiple web server instances.
 

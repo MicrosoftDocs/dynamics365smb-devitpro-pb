@@ -1,14 +1,14 @@
 ---
 title: "FilterGroup Method"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/14/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -88,48 +88,34 @@ Rec.SetFilter(<field>,’’);
 ## Example  
 The following example uses the [SetFilter Method (Record)](record-setfilter-method.md) to set a filter that selects records with No. field between 10000 and 20000. Then the **FilterGroup** method returns the number for the filter group. No filter group was selected explicitly so the filter is set in filter group 0. This value is stored in the `varOrigGroup` variable and displayed in a message box. Next, the **FilterGroup** method changes the filter group to 100. The new value is stored in the `varCurrGroup` variable and displayed in a message box.  
   
-This example requires that you create the following variables and text constants.  
-
 ```
 var
         Customer: Record Customer;
         varOrigGroup: Integer;
         varCurrGroup: Integer;
-```  
-<br>
-
-|Text constant name|ConstValue|  
-|------------------|----------|  
-|Text000           |The original filtergroup is: %1|  
-|Text001           |The current filtergroup is: %1|  
-
-<br>  
-
-```  
-Customer.SetFilter("No.", '10000..20000');  
-varOrigGroup := Customer.FilterGroup;  
-Message(Text000, varOrigGroup);  
-varCurrGroup := Customer.FilterGroup(1);  
-Message(Text001, varCurrGroup);  
+        Text000: Label 'The original filtergroup is: %1';
+        Text001: Label 'The current filtergroup is: %1';
+begin  
+    Customer.SetFilter("No.", '10000..20000');  
+    varOrigGroup := Customer.FilterGroup;  
+    Message(Text000, varOrigGroup);  
+    varCurrGroup := Customer.FilterGroup(1);  
+    Message(Text001, varCurrGroup);  
+end;
 ```  
   
 ## Example  
 The following example finds all customers where the Customer Name or Contact Name contains the string **John**.  
-  
-This example requires that you create the following variable.  
-  
+ 
 ```
 var
     SearchString: Text;
-```
- 
-<br>
-
-```  
-Customer.FilterGroup := -1;  
-SearchString := '@*John*';  
-Customer.SetFilter(Customer.Name, SearchString);  
-Customer.SetFilter(Customer.Contact, SearchString);  
+begin
+    Customer.FilterGroup := -1;  
+    SearchString := '@*John*';  
+    Customer.SetFilter(Customer.Name, SearchString);  
+    Customer.SetFilter(Customer.Contact, SearchString);  
+end;
 ```  
 
 ## See Also

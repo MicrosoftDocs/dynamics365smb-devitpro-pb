@@ -1,1 +1,1 @@
-> **APPLIES TO:** Business Central 2019 release wave 2
+<Token> **APPLIES TO:** Business Central 2019 release wave 2</Token>

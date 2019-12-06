@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,24 +49,20 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  This method works the same as the [READPERMISSION Method \(Record\)](../record/record-readpermission-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The READPERMISSION method determines whether the table has read permission and stores the return value in the varHasReadPerm variable. The Customer table has read permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|varHasReadPerm|Boolean|  
-|varTableNo|Integer|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|Does the %1 table have read permission? %2|  
+ The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The READPERMISSION method determines whether the table has read permission and stores the return value in the varHasReadPerm variable. The Customer table has read permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. 
   
 ```  
-  
-varTableNo := 18;  
-MyRecordRef.OPEN(varTableNo);  
-varHasReadPerm := MyRecordRef.READPERMISSION;  
-MESSAGE(Text000, MyRecordRef.NAME, varHasReadPerm);  
+var
+    MyRecordRef: RecordRef;
+    varHasReadPerm: Boolean;
+    varTableNo: Integer;
+    Text000: Label 'Does the %1 table have read permission? %2'; 
+begin      
+    varTableNo := 18;  
+    MyRecordRef.OPEN(varTableNo);  
+    varHasReadPerm := MyRecordRef.READPERMISSION;  
+    MESSAGE(Text000, MyRecordRef.NAME, varHasReadPerm);  
+end;
 ```  
   
 

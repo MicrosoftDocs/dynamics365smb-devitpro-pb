@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,36 +44,30 @@ The OutStream object that is created by the object that will receive the media c
 
  This example assumes that the **My Item** table contains a **Media** data type field that is named **Image**, and that you have already imported some media on records. For information about importing media, see [IMPORTFILE Function \(Media\)](../../methods-auto/media/media-importfile-method.md) or [IMPORTSTREAM Function \(Media\)](../../methods-auto/media/media-importstream-instream-text-text-method.md).  
 
- The example code requires that you create the following variables and text constant:  
-
-|  Variable name  |  DataType  |  Subtype  |  
-|-----------------|------------|-----------|  
-|myItemRec|Record|My Items|  
-|fileName|Text||  
-|exportFile|File||  
-|dataOutStream|OutStream||  
-|count|Integer| |
-
-
-|  Text constant name  |  ConstValue  |
-|----------------------|--------------|
-|Text000|%1 media files were exported.|
-
-```  
-if myItemRec.FindFirst() then begin  
-    repeat begin
-        if myItemRec.Image.HasValue then begin
-          fileName := 'C:\images\export\' + 'ItemPictureFromStream' + Format(myItemRec."No.") + '.jpg';  
-          exportFile.Create(fileName);  
-          exportFile.CreateOutstream(dataOutStream);
-          myItemRec.Image.ExportStream(dataOutStream);
-          count := count + 1;  
-          exportFile.Close;
-        end;
-    end until myItemRec.Next < 1;
-    Message(Text000, count);
-end;  
-
+```
+ var
+    myItemRec: Record "My Items";
+    fileName: Text;
+    count: Integer;
+    exportFile: File;
+    dataOutStream: OutStream;
+    Text000: Label '%1 media files were exported';
+begin
+    if myItemRec.FindFirst() then begin  
+        repeat begin
+            if myItemRec.Image.HasValue then begin
+              fileName := 'C:\images\export\' + 'ItemPictureFromStream' + Format(myItemRec."No.") + '.jpg';  
+              exportFile.Create(fileName);  
+              exportFile.CreateOutstream(dataOutStream);
+              myItemRec.Image.ExportStream(dataOutStream);
+              count := count + 1;  
+              exportFile.Close;
+            end;
+        end until myItemRec.Next < 1;
+        Message(Text000, count);
+    end;  
+end;
+    
 ```  
 
 ## See Also

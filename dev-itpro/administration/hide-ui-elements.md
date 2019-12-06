@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: SusanneWindfeldPedersen
 ---
 # Removing Elements from the User Interface According to Permissions
 You can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to show and hide user interface \(UI\) elements based on the license or the user's permissions to the underlying tables. All elements, fields, actions, and page parts, can be removed from the user’s view of [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_md.md)].

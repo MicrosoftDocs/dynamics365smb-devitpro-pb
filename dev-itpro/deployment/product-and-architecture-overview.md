@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 275aad2c-ea2c-4291-8381-82b0b92dc1a0
 caps.latest.revision: 29
-manager: edupont
+author: jswymer
 ---
 # [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Component and System Topology
 
@@ -34,7 +34,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |SQL Database|An SQL Server or Azure SQL Database database that contains application object definitions and business data. In a multitenant deployment, the application and business data can be separated into different databases: the application database and the tenant, which is the a database that contains the business data. In this case, there can be one or more tenant for a single application database.| [Creating Databases](../cside/cside-create-databases.md)<br /><br />[Deploy a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md)|
 |Server|[!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Windows Service application that uses Windows Communication Framework to handle communication between clients and databases. It controls authentication, event logging, scheduled tasks, reporting and more.|[Configuring Business Central Server](../administration/configure-server-instance.md)|
 |Web Server|An Internet Information Server (IIS) web site, provisioned with the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], that enables access from the [!INCLUDE[webclient](../developer/includes/webclient.md)] and mobile apps.| [Business Central Web Server](web-server-overview.md)|
-|Business Central App|A desktop, phone, and tablet app for Business Central.|[Windows Store](http://go.microsoft.com/fwlink/?LinkId=734848)<br /><br />[App Store](http://go.microsoft.com/fwlink/?LinkId=734847)<br /><br />[Google Play](http://go.microsoft.com/fwlink/?LinkId=734849)|
+|Business Central App|A desktop, phone, and tablet app for Business Central.|[Windows Store](https://go.microsoft.com/fwlink/?LinkId=734848)<br /><br />[App Store](https://go.microsoft.com/fwlink/?LinkId=734847)<br /><br />[Google Play](https://go.microsoft.com/fwlink/?LinkId=734849)|
 |Web services|SOAP and OData Web Services for exposing application functionality to external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit.|[Web Services](../webservices/web-services.md)|
 
 ### Development and administration components
@@ -43,7 +43,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |---------|-----------|---|
 |AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions. |[Getting Started with C/SIDE and AL for On-Premises](../developer/devenv-get-started-al-for-onprem.md).|
 |[!INCLUDE[admintool](../developer/includes/admintool.md)]|A Microsoft Management Console (MMC) for creating and configuring [!INCLUDE[server](../developer/includes/server.md)] instances.|[Business Central Server Administration Tool](../administration/administration-tool.md)|
-|[!INCLUDE[adminshell](../developer/includes/adminshell.md)]|Windows PowerShell modules for managing the deployment, including tasks such adding and configuring [!INCLUDE[server](../developer/includes/server.md)] and Web server instances, databases, and users, and administering extension packages.|[Windows PowerShell Cmdlets for Business Central](https://docs.microsoft.com/en-us/powershell/business-central/overview)|
+|[!INCLUDE[adminshell](../developer/includes/adminshell.md)]|Windows PowerShell modules for managing the deployment, including tasks such adding and configuring [!INCLUDE[server](../developer/includes/server.md)] and Web server instances, databases, and users, and administering extension packages.|[Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)|
 
 
 ### Additional components
@@ -52,7 +52,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |---------|-----------|---|
 |Demo Database|A database that contains application objects and sample business data for demonstration purposes.||
 |[!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]|The C/SIDE client that was available in [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] for developing applications using C/AL. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this is only required for performing upgrades but you can still use it to develop applications.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Development in C/AL](/dynamics-nav/development) in the Dynamics NAV Developer and IT Pro Help.|
-|[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows Powershell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Windows PowerShell Cmdlets for Business Central](https://docs.microsoft.com/en-us/powershell/business-central/overview)|
+|[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows Powershell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)|
 |[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
 |Microsoft Outlook Integration|A [!INCLUDE[server](../developer/includes/server.md)] component for integrating with Microsoft Outlook.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
 |Microsoft Outlook Add-in| A component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Outlook. The Outlook Add-In uses [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services.|[Setting Up the Office Add-Ins for Outlook Integration](../administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)|

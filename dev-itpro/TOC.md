@@ -11,9 +11,16 @@
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
 <!--Ready2Go-->
-## Ready to Go
-### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-### [Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+## Training and Readiness
+### Learning Catalog
+#### [Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Business Decision Maker Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-decision-makers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Business User Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-users?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Developer Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Functional Consultant Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
 ### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 <!--AppSourcevalidation-->
 ## AppSource Validation
@@ -55,6 +62,7 @@
 ### Dynamics 365 Business Central On-Premises Updates
 #### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
 #### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
+#### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -105,11 +113,11 @@
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
 ### Windows PowerShell Cmdlets
-#### [Windows PowerShell Cmdlets for Business Central](https://docs.microsoft.com/en-us/powershell/business-central/overview)
-#### [Administration Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management)
-#### [Administration Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management)
-#### [Development Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.model.tools)
-#### [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
+#### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
+#### [Administration Cmdlets](/powershell/module/microsoft.dynamics.nav.management)
+#### [Administration Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.management)
+#### [Development Cmdlets](/powershell/module/microsoft.dynamics.nav.model.tools)
+#### [Development Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
 ### Configuring Business Central Web Server
@@ -117,6 +125,7 @@
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
+### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
@@ -164,7 +173,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -258,6 +267,7 @@
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 #### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
+#### [Repeater Controls](developer/devenv-repeater-controls.md)
 #### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
@@ -321,8 +331,9 @@
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
-### [AL Programming Guide](developer/devenv-programming-in-al.md)
-### [AL Simple Statements](developer/devenv-al-simple-statements.md)
+### [Programming in AL](developer/devenv-programming-in-al.md)
+### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
+### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
@@ -336,6 +347,11 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### SumIndexField Technology (SIFT)
+#### [SIFT Overview](developer/devenv-sift-technology.md)
+#### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
+#### [SIFT Tuning and Tracing](developer/devenv-sift-tuning-and-tracing.md)
+#### [SIFT Performance](developer/devenv-sift-performance.md)
 ### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Protected Variables](developer/devenv-protected-variables.md)
@@ -589,13 +605,15 @@
 #### Upgrading the Data: Multitenant Mode
 ##### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
 ##### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
-#### [Installing a Cumulative Update](upgrade/upgrading-cumulative-update.md)
+#### [Installing an Update](upgrade/upgrading-cumulative-update.md)
 ### Business Central 2019 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v15.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
+#### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
 ## Deprecated Features
-### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
+### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
+### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)

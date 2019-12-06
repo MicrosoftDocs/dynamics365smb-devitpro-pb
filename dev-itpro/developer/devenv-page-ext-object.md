@@ -47,6 +47,8 @@ tableextension 50115 RetailWinterSportsStore extends Customer
     {
         field(50116;ShoeSize;Integer)
         {
+            Caption = 'ShoeSize';
+            
             trigger OnValidate();
             begin
                 if (rec.ShoeSize < 0) then
@@ -79,7 +81,6 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
             field("Shoe Size"; ShoeSize)
             {
                 ApplicationArea = All;
-                Caption = 'ShoeSize';
 
                 trigger OnValidate();
                 begin

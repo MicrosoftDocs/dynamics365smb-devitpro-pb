@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,26 +38,23 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a record variable. The GET method gets customer number 10000 from the **Customer** table. The record is stored in the MyRecord variable. The MyRecord variable is assigned to the variant variable that is named MyVariant. The **ISRECORD** method determines whether the variant contains a Record variable and stores the return value in the varResult variable. In this case, the variant contains a Record variable so **true** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md)determines whether the variant contains a code variable. The return value is **false** because the variant does not contain a code. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|MyRecord|Record|Customer|  
-|MyVariant|Variant|Not applicable|  
-|varResult|Boolean|Not applicable|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|Does the variant >%1\< contain a record variable? %2.|  
-|Text001|Does the variant >%1\< contain a code variable? %2.|  
-  
+ The following example determines whether an AL variant contains a record variable. The GET method gets customer number 10000 from the **Customer** table. The record is stored in the MyRecord variable. The MyRecord variable is assigned to the variant variable that is named MyVariant. The **ISRECORD** method determines whether the variant contains a Record variable and stores the return value in the varResult variable. In this case, the variant contains a Record variable so **true** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md)determines whether the variant contains a code variable. The return value is **false** because the variant does not contain a code. 
+ 
 ```  
-MyRecord.GET('10000');  
-MyVariant := MyRecord;  
-varResult := MyVariant.ISRECORD;  
-MESSAGE(Text000,MyVariant,varResult);  
-varResult := MyVariant.ISCODE;  
-MESSAGE(Text001,MyVariant,varResult);  
+var
+    MyRecord: Record Customer;
+    MyVariant: Variant;
+    varResult: Boolean;
+    Text000: Label 'Does the variant >%1< contain a record variable? %2.';
+    Text001: Label 'Does the variant >%1< contain a code variable? %2.';
+begin
+    MyRecord.GET('10000');  
+    MyVariant := MyRecord;  
+    varResult := MyVariant.ISRECORD;  
+    MESSAGE(Text000,MyVariant,varResult);  
+    varResult := MyVariant.ISCODE;  
+    MESSAGE(Text001,MyVariant,varResult);  
+end;
 ```  
 
 ## See Also

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,36 +47,31 @@ This optional value can be used when exporting data with an XmlPort. The only va
 
 ## Example  
  This example shows how to use the **EVALUATE** method when it is called with four different types of variables.  
-  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|VarInteger|Integer|  
-|VarDate|Date|  
-|VarYesNo|Boolean|  
-|VarDuration|Duration|  
-|Value|Text|  
-|Ok1|Boolean|  
-|Ok1|Boolean|  
-|Ok3|Boolean|  
-|Ok4|Boolean|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|VarInteger = \#1\#\#\#\#\#\#. The return code is: %2.\\|  
-|Text001|VarDate = \#3\#\#\#\#\#\#. The return code is: %4.\\|  
-|Text002|VarYesNo = \#5\#\#\#\#\#\#. The return code is: %6.\\|  
-|Text003|VarDuration = %7. The return code is: %8.|  
-  
+    
 ```  
-Value := '010196';  
-Ok1 := EVALUATE(VarInteger, Value);  
-Ok2 := EVALUATE(VarDate, Value);  
-Ok3 := EVALUATE(VarYesNo, Value);  
-Value := '2days 4hours 3.7 seconds 17 milliseconds';  
-Ok4 := EVALUATE(VarDuration, Value);  
-MESSAGE(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, VarYesNo, Ok3, VarDuration, Ok4);  
+var
+    VarInteger: Integer;  
+    VarDate: Date;
+    VarYesNo: Boolean;  
+    VarDuration: Duration;  
+    Value: Text;
+    Ok1: Boolean;  
+    Ok2: Boolean;  
+    Ok3: Boolean;  
+    Ok4: Boolean; 
+    Text000: Label 'VarInteger = \#1\#\#\#\#\#\#. The return code is: %2.\\';
+    Text001: Label 'VarDate = \#3\#\#\#\#\#\#. The return code is: %4.\\'; 
+    Text002: Label 'VarYesNo = \#5\#\#\#\#\#\#. The return code is: %6.\\';  
+    Text003: Label 'VarDuration = %7. The return code is: %8.';
+begin
+    Value := '19960101';  
+    Ok1 := EVALUATE(VarInteger, Value);  
+    Ok2 := EVALUATE(VarDate, Value);  
+    Ok3 := EVALUATE(VarYesNo, Value);  
+    Value := '2days 4hours 3.7 seconds 17 milliseconds';  
+    Ok4 := EVALUATE(VarDuration, Value);  
+    MESSAGE(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, VarYesNo, Ok3, VarDuration, Ok4); 
+end; 
 ```  
   
  The message window displays the following:  

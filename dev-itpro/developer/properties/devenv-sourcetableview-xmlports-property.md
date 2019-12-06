@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
  
 
 # SourceTableView Property (XMLports)
-Sets the key used to sort data in the source table for the XML item.  
+Sets the key, sort order, and filter of the source table presented to the user.
   
 ## Applies To  
  Table elements in XMLports  

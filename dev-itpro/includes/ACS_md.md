@@ -1,2 +1,0 @@
-> [!IMPORTANT]  
->ACS namespace creation has been restricted, and Access Control Service will be retired soon. For more information, see [https://aka.ms/accesscontrolservice](https://aka.ms/accesscontrolservice).

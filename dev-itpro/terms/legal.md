@@ -16,8 +16,8 @@ This page provides links to legal information for the Microsoft Dynamics NAV sof
 
 ## Microsoft Dynamics NAV 2017
 
--	[Software License Terms](https://www.microsoft.com/en-us/download/details.aspx?id=54115)  
--	[Third Party Notices](https://www.microsoft.com/en-us/download/details.aspx?id=54116)  
+-	[Software License Terms](https://www.microsoft.com/download/details.aspx?id=54115)  
+-	[Third Party Notices](https://www.microsoft.com/download/details.aspx?id=54116)  
 -	[Privacy Statement](https://go.microsoft.com/fwlink/?linkid=825751)  
 -   [Copyright and Trademarks](../Copyright-and-Trademarks.md)
 

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -60,44 +60,44 @@ The path and the name of the file that you want to save the report as. The path 
  **Either the caller does not have the required permission or the specified path is read-only.**  
 
 ## Example  
- This example shows how to use the SAVEASWORD method to save the Word document on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a different computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. It requires that you create the following variables.  
-
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|TempFile|File|Not applicable|  
-|Name|Text|250|  
-|NewStream|InStream|Not applicable|  
-|ToFile|Text|250|  
-|ReturnValue|Boolean|Not applicable|  
-
+ This example shows how to use the SAVEASWORD method to save the Word document on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a different computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. 
+ 
 ```  
-// Specify that TempFile is opened as a binary file.  
-TempFile.TEXTMODE(FALSE);  
-// Specify that you can write to TempFile.  
-TempFile.WRITEMODE(TRUE);  
-Name := 'C:\Temp\TempReport.doc';  
-// Create and open TempFile.  
-TempFile.CREATE(Name);  
-// Close TempFile so that the SAVEASWORD method can write to it.  
-TempFile.CLOSE;  
-
-REPORT.SAVEASWORD(406,Name);  
-
-TempFile.OPEN(Name);  
-TempFile.CREATEINSTREAM(NewStream);  
-ToFile := 'Report.doc';  
-
-// Transfer the content from the temporary file on the  
-// server to a file on the client.  
-ReturnValue := DOWNLOADFROMSTREAM(  
-  NewStream,  
-  'Save file to client',  
-  '',  
-  'Word File *.doc| *.doc',  
-  ToFile);  
-
-// Close the temporary file.  
-TempFile.CLOSE();  
+var
+    TempFile: File;
+    Name: Text[250];
+    NewStream: InStream;
+    ToFile: Text[250];
+    ReturnValue: Boolean;
+begin
+    // Specify that TempFile is opened as a binary file.  
+    TempFile.TEXTMODE(FALSE);  
+    // Specify that you can write to TempFile.  
+    TempFile.WRITEMODE(TRUE);  
+    Name := 'C:\Temp\TempReport.doc';  
+    // Create and open TempFile.  
+    TempFile.CREATE(Name);  
+    // Close TempFile so that the SAVEASWORD method can write to it.  
+    TempFile.CLOSE;  
+    
+    REPORT.SAVEASWORD(406,Name);  
+    
+    TempFile.OPEN(Name);  
+    TempFile.CREATEINSTREAM(NewStream);  
+    ToFile := 'Report.doc';  
+    
+    // Transfer the content from the temporary file on the  
+    // server to a file on the client.  
+    ReturnValue := DOWNLOADFROMSTREAM(  
+      NewStream,  
+      'Save file to client',  
+      '',  
+      'Word File *.doc| *.doc',  
+      ToFile);  
+    
+    // Close the temporary file.  
+    TempFile.CLOSE();  
+end;
 ```  
 
  You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.

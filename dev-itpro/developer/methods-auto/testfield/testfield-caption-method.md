@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,27 +45,24 @@ If it does not find one, it will use the [Name Property](../../properties/devenv
 This method is similar to the [FIELDCAPTION Method \(Record\)](../record/record-fieldcaption-method.md) method.  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|varCaption|Text|  
-|i|Integer|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The caption for field %1 is "%2".|  
-  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box.
+
 ```
-CustomerRecref.OPEN(18);  
-for i := 1 to 9 do begin  
-  MyFieldRef := CustomerRecref.FIELD(i);  
-  varCaption := MyFieldRef.CAPTION;  
-  MESSAGE(Text000, i, varCaption);  
-end;  
-CustomerRecref.CLOSE;  
+var
+    CustomerRecRef: RecordRef;
+    MyFieldRef: FieldRef;
+    varCaption: Text;
+    i: Integer;
+    Text000: Label 'The caption for field %1 is "%2".';
+begin
+    CustomerRecref.OPEN(18);  
+    for i := 1 to 9 do begin  
+      MyFieldRef := CustomerRecref.FIELD(i);  
+      varCaption := MyFieldRef.CAPTION;  
+      MESSAGE(Text000, i, varCaption);  
+    end;  
+    CustomerRecref.CLOSE;  
+end;
 ```  
   
 

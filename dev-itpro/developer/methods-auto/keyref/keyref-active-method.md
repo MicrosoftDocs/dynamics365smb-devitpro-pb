@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,20 +38,19 @@ An instance of the [KeyRef](keyref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example uses the `KeyRef.ACTIVE` method to determine whether a key in a record is enabled. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the first key in the record and the `varKeyRef.ACTIVE` method returns a Boolean value that indicates whether the retrieved key is enabled. The Boolean value is displayed in a message box. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|varKeyRef|KeyRef|  
-|IsActive|Boolean|  
-  
+ The following example uses the `KeyRef.ACTIVE` method to determine whether a key in a record is enabled. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the first key in the record and the `varKeyRef.ACTIVE` method returns a Boolean value that indicates whether the retrieved key is enabled. The Boolean value is displayed in a message box. 
+ 
 ```  
-  
-RecRef.OPEN(18);  
-varKeyRef := RecRef.KEYINDEX(1);  
-IsActive := varKeyRef.ACTIVE;  
-MESSAGE('Is the key active =  %1 ', IsActive);  
+var
+    RecRef: RecordRef;
+    varKeyRef: KeyRef;
+    IsActive: Boolean;
+begin
+    RecRef.OPEN(18);  
+    varKeyRef := RecRef.KEYINDEX(1);  
+    IsActive := varKeyRef.ACTIVE;  
+    MESSAGE('Is the key active =  %1 ', IsActive);  
+end;
 ```  
   
 

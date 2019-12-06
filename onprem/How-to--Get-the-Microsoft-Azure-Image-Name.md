@@ -18,7 +18,7 @@ This topic describes how to get the name of the Microsoft Azure Marketplace imag
   
 ### To get the Azure image name  
   
-1.  Sign in to the [Azure Management Portal](http://manage.windowsazure.com/).  
+1.  Sign in to the [Azure Management Portal](https://manage.windowsazure.com/).  
   
 2.  Choose **VIRTUAL MACHINES**, choose **NEW**, and then choose **FROM GALLERY**.  
   

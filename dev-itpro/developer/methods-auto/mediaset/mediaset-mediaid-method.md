@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,24 +43,18 @@ When you import media on a table record by using either the [ImportFile Method \
 ## Example  
 This example is gets the GUID of the MediaSet that is used on item No. 1000 in the **Item** table. The field in the **Item** table that is used for the MediaSet data type is **Picture**.  
 
- This code requires you to create the following variables.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|item|Record|Item|  
-|mediasetId|GUID||  
-
- This code requires you to create the following text constant.  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The GUID of the MediaSet is: %1|  
-
-```  
-item.Get('1000');  
+```
+ var
+    item: Record Item;
+    mediasetId: GUID;
+    Text000: Label 'The GUID of the MediaSet is: %1';
+begin
+    item.Get('1000');  
     mediasetId := item.Picture.MediaId;  
     Message(Text000, mediasetId);  
+end;
 ``` 
+
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

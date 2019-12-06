@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,18 +43,18 @@ The record that has a table view that you want to apply to the page or data item
 >  SETTABLEVIEW is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
   
 ## Example  
- This example is based on the Sales Header table and shows how SETTABLEVIEW is used for a page object. It requires that you create the following variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|SalesHeader|Record|Sales Header|  
-|SomePage|Page|Sales List|  
-  
+ This example is based on the Sales Header table and shows how SETTABLEVIEW is used for a page object. 
+ 
 ```  
-SalesHeader.SETCURRENTKEY("Document Type");  
-SalesHeader.SETRANGE("Document Type",SalesHeader."Document Type"::Order);  
-SomePage.SETTABLEVIEW(SalesHeader); // Only view sales orders.  
-SomePage.RUN  
+var
+    SalesHeader: Record "Sales Header";
+    SomePage: Page "Sales List";
+begin
+    SalesHeader.SETCURRENTKEY("Document Type");  
+    SalesHeader.SETRANGE("Document Type",SalesHeader."Document Type"::Order);  
+    SomePage.SETTABLEVIEW(SalesHeader); // Only view sales orders.  
+    SomePage.RUN; 
+end; 
 ```  
   
  The page that is reference by the SomePage variable can be any page object that has Sales Header as the value of the [SourceTable Property](../../properties/devenv-sourcetable-property.md).  

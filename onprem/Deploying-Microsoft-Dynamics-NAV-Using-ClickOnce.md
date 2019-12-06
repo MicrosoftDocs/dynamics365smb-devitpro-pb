@@ -68,9 +68,9 @@ The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] requires .NET Framework 
 
 2. An administrator installs install .NET 4.6.1 Framework on users computers. 
 
-    For more information about how to install .NET 4.6.1 Framework, see [Install the .NET Framework for developers](http://go.microsoft.com/fwlink/?LinkId=272382).   
+    For more information about how to install .NET 4.6.1 Framework, see [Install the .NET Framework for developers](https://go.microsoft.com/fwlink/?LinkId=272382).   
   
-<!-- -   The install experience can be improved for the end user by providing a solution that packages the Microsoft Report Viewer with the ClickOnce installation. Microsoft Report Viewer requires Microsoft System CLR Types for SQL Server 2014. Microsoft Certified Partners may download and redistribute the Microsoft Report Viewer 2015 Redistributable Package and Microsoft System CLR Types for SQL Server 2014 from the Microsoft Download Center. You can download Microsoft Report Viewer at [Microsoft Report Viewer 2015 RUNTIME](http://go.microsoft.com/fwlink/?LinkID=536665). Microsoft System CLR Types for SQL Server 2014 is available as part of the Microsoft SQL Server 2014 Feature Pack, which you can download at [Microsoft SQL Server 2016 Feature Pack](https://go.microsoft.com/fwlink/?linkid=857649).  
+<!-- -   The install experience can be improved for the end user by providing a solution that packages the Microsoft Report Viewer with the ClickOnce installation. Microsoft Report Viewer requires Microsoft System CLR Types for SQL Server 2014. Microsoft Certified Partners may download and redistribute the Microsoft Report Viewer 2015 Redistributable Package and Microsoft System CLR Types for SQL Server 2014 from the Microsoft Download Center. You can download Microsoft Report Viewer at [Microsoft Report Viewer 2015 RUNTIME](https://go.microsoft.com/fwlink/?LinkID=536665). Microsoft System CLR Types for SQL Server 2014 is available as part of the Microsoft SQL Server 2014 Feature Pack, which you can download at [Microsoft SQL Server 2016 Feature Pack](https://go.microsoft.com/fwlink/?linkid=857649).  
 
  Microsoft System CLR Types for SQL Server 2016 is available as part of the Microsoft SQL Server 2016 Feature Pack, which you can download at [Microsoft SQL Server 2016 Feature Pack](https://go.microsoft.com/fwlink/?linkid=857649).
 
@@ -81,7 +81,7 @@ The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] requires .NET Framework 
  Installing these prerequisites requires administrative rights on the computer. If the end users are not already administrators on their computers, then an administrator or a super user must first install the prerequisites on the computer. After that is complete, any user on the computer can install, uninstall, and upgrade the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. Administrative rights are not needed for the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
 
 
-Windows operating systems are subject to compliance with the Supplemental Redist License located at [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=262161&clcid=0x409). 
+Windows operating systems are subject to compliance with the Supplemental Redist License located at [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=262161&clcid=0x409). 
 --> 
   
 ### Deploying Using ClickOnce Hosted on a File Share  
@@ -99,9 +99,9 @@ Follow these steps to host on a file share:
   
 2.  (Optional) Obtain a code signing certificate. This is a certificate that is issued by a certification authority, and will enable you to sign the application in such a way that end users can see that the application is published by the expected provider and, for example, not by a phisher.  
   
-    1.  If you do not already have a code signing certificate, you will have to obtain one from one of the certification authorities. For a list of certification authorities, see [Microsoft Technet](http://go.microsoft.com/fwlink/?LinkId=262163).  
+    1.  If you do not already have a code signing certificate, you will have to obtain one from one of the certification authorities. For a list of certification authorities, see [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=262163).  
   
-    2.  You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](http://msdn.microsoft.com/en-us/library/ff699202.aspx) or [New-SelfSignedCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/new-selfsignedcertificate).  
+    2.  You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](https://msdn.microsoft.com/library/ff699202.aspx) or [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).  
   
     3.  For information about when it is acceptable to skip this step, see [Security Considerations](Deploying-Microsoft-Dynamics-NAV-Using-ClickOnce.md#Security).  
   
@@ -148,9 +148,9 @@ Follow these steps to host on a file share:
   
 <!-- 7.  The [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Windows client requires Microsoft Report Viewer 2015 for viewing and printing a report, along with and Microsoft System CLR Types for SQL Server 2014. Therefore, these are a prerequisite installation in the ClickOnce scenario.  
   
-     Both are available on the Microsoft Download Center. You can download Microsoft Report Viewer at [Microsoft Report Viewer 2015 RUNTIME](http://go.microsoft.com/fwlink/?LinkID=536665). Microsoft System CLR Types for SQL Server 2014 is available as part of the Microsoft SQL Server 2014 Feature Pack, which you can download at [Microsoft SQL Server 2014 Feature Pack](http://go.microsoft.com/fwlink/?LinkID=536666).  
+     Both are available on the Microsoft Download Center. You can download Microsoft Report Viewer at [Microsoft Report Viewer 2015 RUNTIME](https://go.microsoft.com/fwlink/?LinkID=536665). Microsoft System CLR Types for SQL Server 2014 is available as part of the Microsoft SQL Server 2014 Feature Pack, which you can download at [Microsoft SQL Server 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=536666).  
   
-     Microsoft Report Viewer 2015 is available on download at [http://go.microsoft.com/fwlink/?LinkID=536665](http://go.microsoft.com/fwlink/?LinkID=536665).  -->
+     Microsoft Report Viewer 2015 is available on download at [https://go.microsoft.com/fwlink/?LinkID=536665](https://go.microsoft.com/fwlink/?LinkID=536665).  -->
   
 7.  Update the application manifest. The application manifest lists the files that are part of the installation.  
   
@@ -163,7 +163,7 @@ Follow these steps to host on a file share:
         > [!IMPORTANT]  
         >  You must specify the fully qualified path to mage.exe, such as `"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\Bin\NETFX 4.6.1 Tools\mage.exe"`.  
         
-        The *FromDirectory* parameter will include all files in all subdirectories found within the specified directory. If no directory is specified, such as in the example, mage.exe uses the current directory and subdirectories. For more information, see [Mage.exe](http://msdn.microsoft.com/en-us/library/acz3y3te\(v=vs.110\).aspx) in the MSDN Library.  
+        The *FromDirectory* parameter will include all files in all subdirectories found within the specified directory. If no directory is specified, such as in the example, mage.exe uses the current directory and subdirectories. For more information, see [Mage.exe](https://msdn.microsoft.com/library/acz3y3te\(v=vs.110\).aspx) in the MSDN Library.  
   
         ClickOnce does not support having the same assembly duplicated in different folders. If you receive an error, then you will have to remove one of the copies, either in the manifest file or on disk, and then run the mage.exe again. The copy of OpenXML.dll in Add-Ins folder will not be needed in a ClickOnce deployment, therefore you can delete it.  
   
@@ -215,7 +215,7 @@ Follow these steps to host on a file share:
  In addition to creating the installer itself, you should require end users to read and accept Microsoft’s software license terms \(SLT\) as part of the installation experience.  
   
 ### Deploying Using ClickOnce Hosting on a Web Server  
-Hosting on a web server is similar to hosting on a file share. Using the steps outlined in the previous section, you should note that the two links in the deployment manifest should point to the *http://* address, instead of a *\\\\fileshare* address. This is the only change that you need to make to the files.  
+Hosting on a web server is similar to hosting on a file share. Using the steps outlined in the previous section, you should note that the two links in the deployment manifest should point to the *https://* address, instead of a *\\\\fileshare* address. This is the only change that you need to make to the files.  
   
 All the logic needed for requesting user permissions to install or check for upgrades happens on the client computer. The web server works like a file repository.  
   

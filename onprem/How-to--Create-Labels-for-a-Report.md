@@ -47,7 +47,7 @@ Whether you are using an RDLC report layout in Visual Studio or a Word report la
 
 4.  In Report Dataset Designer, on the **View** menu, choose **Labels**.  
 
-5.  In Report Label Designer, in the **Name** field, add a Common Language Specification \(CLS\)–compliant name for the label. This name is used in the Visual Studio dataset. For more information, see the "Naming" section in [Common Language Specification](http://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
+5.  In Report Label Designer, in the **Name** field, add a Common Language Specification \(CLS\)–compliant name for the label. This name is used in the Visual Studio dataset. For more information, see the "Naming" section in [Common Language Specification](https://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
 
 6.  In the **Caption** field, enter the caption.  
 

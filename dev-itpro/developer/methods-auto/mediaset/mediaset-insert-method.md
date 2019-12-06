@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,37 +51,29 @@ This example uses the Insert method and [Item Method \(MediaSet\)](../../methods
 -   Each table contains the record number '1000'.
 -   There is at least 1 media object in the MediaSet of record 1000 in TableA.
 
-This code example requires you to create the following variables:  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|recA|Record|TableA|
-|recB|Record|TableB|  
-|mediaId|GUID|(not applicable) |
-
-
-This code example requires you to create the following text constants:  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Media %1 was added to MediaSet %2.|
-|Text001|The media was not added to MediaSet %1.|
-
-Code:
-```  
-// Retrieves the GUID of the first media object (index number 1) in the MediaSet of record 1000 in TableA
-recA.Get('1000');  
-MediaId := recA.Images.Item(1);
-
-// Adds media object to the MediaSet of record 1000 in TableB based on the media object GUID
-recB.Get('1000');
-if recB.Images.Insert(mediaId) then begin
-    recB.Modify;    
-    Message(Text000, mediaId, recB.Images.MediaId);
-end else begin
-   Message(Text001);
+```
+ var
+    recA: Record TableA;
+    recB: Record TableB;
+    mediasetId: GUID;
+    Text000: Label 'Media %1 was added to MediaSet %2.';
+    Text000: Label 'The media was not added to MediaSet %1.';
+begin
+    // Retrieves the GUID of the first media object (index number 1) in the MediaSet of record 1000 in TableA
+    recA.Get('1000');  
+    MediaId := recA.Images.Item(1);
+    
+    // Adds media object to the MediaSet of record 1000 in TableB based on the media object GUID
+    recB.Get('1000');
+    if recB.Images.Insert(mediaId) then begin
+        recB.Modify;    
+        Message(Text000, mediaId, recB.Images.MediaId);
+    end else begin
+       Message(Text001);
+    end;
 end;
-```  
+``` 
+
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

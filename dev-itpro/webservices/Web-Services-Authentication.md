@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Web Services Authentication
 When users send a request for a web service, they are authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under, and they are not prompted for their credentials. For other credential types, users are prompted to enter a user name and password. 
@@ -50,7 +51,7 @@ Typically, you would create a user account strictly for web services, and then u
   
 1.  Create a user specifically for web services.  
   
-    For more information, see [Manage Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions).  
+    For more information, see [Manage Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
   
 2.  Generate a web service access key in the user account.  
   
@@ -58,7 +59,7 @@ Typically, you would create a user account strictly for web services, and then u
   
     |To|See|  
     |--------|---------|  
-    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](http://go.microsoft.com/fwlink/?LinkID=259554)|    
+    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](https://go.microsoft.com/fwlink/?LinkID=259554)|    
   
 ## See Also   
  [Web Services Overview](web-services.md)   

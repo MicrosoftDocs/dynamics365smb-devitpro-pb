@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -52,19 +52,18 @@ If the optional return value, *Written*, is not specified and it was not possibl
   
 ## Example  
   
-This example requires that you create the following variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|---|  
-|recBinaries|Record|Company Information|  
-|OStream|OutStream|| 
-|Txt|Text|| 
 
-```  
-recBinaries.FIND('-');  
-recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-OStream.WRITE(Txt);  
-recBinaries.MODIFY();  
+```
+ var
+    recBinaries: Record "Company Information";
+    OStream: OutStream;
+    Txt: Text;
+begin 
+    recBinaries.FIND('-');  
+    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+    OStream.WRITE(Txt);  
+    recBinaries.MODIFY();  
+end;
 ```   
   
 

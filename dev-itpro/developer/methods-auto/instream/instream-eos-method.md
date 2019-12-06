@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,24 +41,23 @@ An instance of the [InStream](instream-data-type.md) data type.
  If you are reading data from an external component, EOS can return **FALSE** even though no more data is available. This may occur if you have not called READ first.  
   
 ## Example  
- The following example opens the text file in a folder that is named MyFolder. The data in the text file is read into and input stream variable named StreamInTest. The [InStream.EOS Method](../../methods/devenv-instream.eos-method.md) is used to determine whether the input stream has reached the end. If the stream has not reached the end, the stream is read into a text buffer, which indicates that the stream has not reached the end until the stream reaches the end. This example requires that you create the following global variables. You must also create the following file 'c:\\MyFolder\\MyText.txt'.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|FileTest|File|  
-|StreamInTest|InStream|  
-|Buffer|Text|  
-  
-```  
-  
-FileTest.OPEN('c:\MyFolder\MyText.txt');  
-FileTest.CREATEINSTREAM(StreamInTest);  
-while not StreamInTest.EOS do begin 
-  StreamInTest.READTEXT(Buffer);  
-  //Do some processing  
-  MESSAGE('Stream is still processing')  
-end;  
-MESSAGE('End of Stream');  
+ The following example opens the text file in a folder that is named MyFolder. The data in the text file is read into and input stream variable named StreamInTest. The [InStream.EOS Method](../../methods/devenv-instream.eos-method.md) is used to determine whether the input stream has reached the end. If the stream has not reached the end, the stream is read into a text buffer, which indicates that the stream has not reached the end until the stream reaches the end. You must also create the following file 'c:\\MyFolder\\MyText.txt'.  
+
+```
+ var
+    StreamInTest: InStream;
+    FileTest: File;
+    Buffer: Text;
+begin
+    FileTest.OPEN('c:\MyFolder\MyText.txt');  
+    FileTest.CREATEINSTREAM(StreamInTest);  
+    while not StreamInTest.EOS do begin 
+      StreamInTest.READTEXT(Buffer);  
+      //Do some processing  
+      MESSAGE('Stream is still processing')  
+    end;  
+    MESSAGE('End of Stream');  
+end;
 ```  
   
 

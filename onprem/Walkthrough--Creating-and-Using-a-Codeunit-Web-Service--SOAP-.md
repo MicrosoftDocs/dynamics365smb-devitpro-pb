@@ -68,11 +68,11 @@ After the codeunit is created and saved, you publish it using the [!INCLUDE[nav_
   
 1.  Start Windows Internet Explorer.  
   
-2.  In the **Address** field, enter an address in the following format: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services**.  
+2.  In the **Address** field, enter an address in the following format: **https://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services**.  
   
      For example:  
   
-     **http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd./services**  
+     **https://localhost:7047/BC130/WS/CRONUS%20International%20Ltd./services**  
   
     > [!NOTE] 
     >  The company name is case-sensitive.  
@@ -80,7 +80,7 @@ After the codeunit is created and saved, you publish it using the [!INCLUDE[nav_
      The page should list the web service that you just published \(`Codeunit/Letters`\):
 
     ```
-    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/BC130/WS/CRONUS International Ltd./Codeunit/Letters"/>
+    <contractRef xmlns="https://schemas.xmlsoap.org/disco/scl/" ref="https://localhost:7047/BC130/WS/CRONUS International Ltd./Codeunit/Letters"/>
     ```
 
   
@@ -99,7 +99,7 @@ In this walkthrough we use Visual Studio to call and use the web service.
   
 5.  In the **Add Service Reference** window, choose the **Advanced** button.  
   
-6.  In the **Service Reference Settings** window, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **http://localhost:7047/BC130/WS/Services**, and then choose **Go** \(the green button with the arrow\).  
+6.  In the **Service Reference Settings** window, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **https://localhost:7047/BC130/WS/Services**, and then choose **Go** \(the green button with the arrow\).  
   
 7.  When the **Letters** service is displayed on the discovery Page, choose **View Service**, then in the **Web reference name** text box, rename **localhost** to **WebService**, and then choose **Add Reference**.  
   
@@ -125,7 +125,7 @@ In this walkthrough we use Visual Studio to call and use the web service.
                 // Uses default credentials for authenticating   
                 // with Business Central.  
                 ws.UseDefaultCredentials = true;  
-                ws.Url = "http://localhost:7047/<server instance>/WS/CRONUS%20International%20Ltd./Codeunit/Letters";      
+                ws.Url = "https://localhost:7047/<server instance>/WS/CRONUS%20International%20Ltd./Codeunit/Letters";      
   
                 // Declares variables to work with.  
                 string inputstring, outputstring;     

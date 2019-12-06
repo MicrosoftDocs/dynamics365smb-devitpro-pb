@@ -25,7 +25,8 @@ This article describes how to convert a database from one of the following versi
 -->
 This article can also be used to update your current [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to the latest cumulative update (CU) platform.
 
-## About technical upgrade and database conversion
+## Overview
+### About technical upgrade and database conversion
 
 Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
 
@@ -36,7 +37,7 @@ The process is slightly different when you have multitenant deployment compared 
 >
 > If you are upgrading a single-tenant database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update 02, 03, 04, or 05, read [Tenant synchronization issue with technical upgrade to Business Central Cumulative Updates 02–05](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2019/03/29/technical-upgrade-to-business-central-cumulative-updates-02-05-tenant-synchronization-issue) on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Partners blog before starting the upgrade.  
 
-## Tools
+### Tools
 To complete the steps in the article, you will use the following tools:
 
 - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] (the version that matches your old database and the new version) 
@@ -68,11 +69,11 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
 
 1. Make a copy of the old database or create full database backup. 
 
-    For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
+    For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).
 
 2. <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, uninstall all V1 extensions.
 
-    You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
+    You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
 
     To get a list of the extensions that are installed, run this command:
 
@@ -128,7 +129,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
 
 10. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
 
-    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
     ```
     Dismount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID>
@@ -160,8 +161,10 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
 Next, you will convert the old database so that it can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 > [!TIP]  
->  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
+>  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
+> [!IMPORTANT]  
+> Before you run the technical upgrade, delete any corrupt databases that are on the same SQL Server instance as the database that you intend to upgrade. Otherwise, when you run the database conversion, you will get the error "The Symbol Reference field on the Object Metadata table does not exist in the SQL Server table or view.".    
 
 1. If the database is on Azure SQL Database, add your user account to the **dbmanager** database role on the master database.
 
@@ -227,7 +230,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 12. Recompile V2 extensions that you uninstalled previously.
 
-    Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
+    Use the [Repair-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
 
     For example, you can run the following command to recompile all extensions:
 
@@ -237,7 +240,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 13. <a name="mounttenant"></a>(Multitenant only) Mount the tenant.
 
-    Use the [Mount-NAVTenant cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
+    Use the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
 
     ```
     Mount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID> -DatabaseName <tenantdatabasename>
@@ -265,7 +268,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 2. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
-    Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
+    Use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
 
     For each V2 extension, run the following command to install it:
 
@@ -318,13 +321,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
         For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
-    4. Publish the new V2 extension by running the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet for each extension: 
+    4. Publish the new V2 extension by running the [Publish-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet for each extension: 
 
         ```
         Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
         ```
            
-    5. Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension:
+    5. Synchronize the schema with the database by running the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension:
 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
@@ -360,7 +363,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 ## Database and Windows collations
 
-Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
+Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](https://go.microsoft.com/fwlink/?LinkID=247971).  
 
 ## See Also
   

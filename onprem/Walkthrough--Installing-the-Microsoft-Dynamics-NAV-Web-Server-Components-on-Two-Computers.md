@@ -64,7 +64,7 @@ In this walkthrough, you will install the tiers of the [!INCLUDE[nav_web](includ
 
          If the user account does not have this permission, then you must register SPNs for the account manually.  
 
-     For information about how to create a domain user account, see [Create a New User Account](http://go.microsoft.com/fwlink/?LinkId=213723) in the TechNet Library. For information about how to enable permission to log on as a service and register SPNs, see [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md)  
+     For information about how to create a domain user account, see [Create a New User Account](https://go.microsoft.com/fwlink/?LinkId=213723) in the TechNet Library. For information about how to enable permission to log on as a service and register SPNs, see [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md)  
 
     > [!NOTE]  
     >  By default, [!INCLUDE[navnow](includes/navnow_md.md)] Setup uses NETWORK SERVICE as the service account. You can use NETWORK SERVICE instead of a domain user account, but this is considered less secure. If you want to use NETWORK SERVICE, then you do not need this prerequisite.  
@@ -267,11 +267,11 @@ In this walkthrough, you will install the tiers of the [!INCLUDE[nav_web](includ
 
 2.  In the address box, type the following URL:  
 
-    `http://ComputerName:PortNumber/nav_server_instance`  
+    `https://ComputerName:PortNumber/nav_server_instance`  
 
     Or for [!INCLUDE[nav2017](includes/nav2017.md)] and earlier versions:
 
-    `http://ComputerName:PortNumber/nav_server_instance/WebClient/Default.aspx`  
+    `https://ComputerName:PortNumber/nav_server_instance/WebClient/Default.aspx`  
 
     -   Substitute **ComputerName** with the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)].  
 
@@ -282,11 +282,11 @@ In this walkthrough, you will install the tiers of the [!INCLUDE[nav_web](includ
      For this walkthrough, you would use the following URL:  
 
     ```  
-    http://navweb:8080/nav_server_instance  
+    https://navweb:8080/nav_server_instance  
     ```  
 
     ```  
-    http://navweb:8080/nav_server_instance/WebClient/Default.aspx  
+    https://navweb:8080/nav_server_instance/WebClient/Default.aspx  
     ```  
 
 ### Troubleshooting  

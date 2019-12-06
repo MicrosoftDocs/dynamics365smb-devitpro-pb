@@ -38,9 +38,9 @@ Please find the coaches in your region and explore which "Ready to Go" offerings
 |Company|Coaching services provided|More info|
 |-------|--------------------------|---------|
 |**1ClickFactory** <br>(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://www.1clickfactory.com/readytogo/)|
-|**Ciellos** <br>(Development Center)|Coaching and training services in person and online in Europe, North, and South America.|[ReadyToGo Contacts](http://www.ciellos.com/ready-to-go)|
-|**Cloud-Ready-Software**(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](http://cloud-ready-software.com/readytogo/)|
-|**Innova Consulting**<br>(Development Center)|Coaching and training services in person and online in Europe and South America.|[ReadyToGo Contacts](http://www.innovaconsulting.es/en/readytogo/)|
+|**Ciellos** <br>(Development Center)|Coaching and training services in person and online in Europe, North, and South America.|[ReadyToGo Contacts](https://www.ciellos.com/ready-to-go)|
+|**Cloud-Ready-Software**(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://cloud-ready-software.com/readytogo/)|
+|**Innova Consulting**<br>(Development Center)|Coaching and training services in person and online in Europe and South America.|[ReadyToGo Contacts](https://www.innovaconsulting.es/en/readytogo/)|
 |**QBS Group**<br>(MasterVAR)|Coaching and training services in person and online in Europe, Middle East, and Africa.|[ReadyToGo Contacts](https://www.qbsgroup.com/service/ready-to-go-for-dynamics-365-business-central/)|
 |**Velosio**<br>(MasterVar)|Coaching and training services in person and online in North America.|[ReadyToGo Contacts](https://www.velosio.com/landing/readytogo/)|
 |**Plataan**<br>(Training Center)|Training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://plataan.tv/en)|
@@ -58,7 +58,7 @@ The blog talks about opportunities, processes, programs, and tools for the Busin
 “Ready to Go” Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as a FAQ session, where a team of our different experts will be present to answer any questions that you may have in relation to bringing your offerings into AppSource. Sign up here: [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours).
 
 ### GitHub
-Use the GitHub forum to post questions about AL to the community and Microsoft experts here: [http://github.com/microsoft/al/issues](http://github.com/microsoft/al/issues).
+Use the GitHub forum to post questions about AL to the community and Microsoft experts here: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues).
 
 ### Follow “Ready to Go” activity on social media
 Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prodshort.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd) and [LinkedIn](https://www.linkedin.com/search/results/content/v2/?keywords=%23MSDYN365BC%20%23READYTOGO&origin=GLOBAL_SEARCH_HEADER).
@@ -72,9 +72,10 @@ Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prod
 
 ### Shortcuts to developing and publishing Business Central apps documentation
 
-+ [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
-+ [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
-+ [How to create an effective sales landing page](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
-+ [How to make compelling videos](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
++ [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
++ [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
++ [How to create an effective sales landing page](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
++ [How to make compelling videos](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
+
 ### Learning catalog
-+ ["Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
++ [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

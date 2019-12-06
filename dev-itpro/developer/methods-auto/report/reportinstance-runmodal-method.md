@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,20 +43,19 @@ Use the RUNMODAL method or the RUN method if you know at design time the exact r
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
 ## Example  
- This example requires that you create the following variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|CustomerRec|Record|Customer|  
-|SomeReport|Report|Chart of Accounts|  
-  
+
 ```  
-…  
-CLEAR(CustomerRec);  
-CustomerRec.SETRECFILTER;  
-SomeReport.XXX; // Any user-defined method.  
-SomeReport.SETTABLEVIEW(CustomerRec);  
-SomeReport.RUNMODAL()  
+var
+    CustomerRec: Record Customer;
+    SomeReport: Report "Chart of Accounts";
+begin
+    …  
+    CLEAR(CustomerRec);  
+    CustomerRec.SETRECFILTER;  
+    SomeReport.XXX; // Any user-defined method.  
+    SomeReport.SETTABLEVIEW(CustomerRec);  
+    SomeReport.RUNMODAL();
+end;  
 ```  
 
 ## See Also

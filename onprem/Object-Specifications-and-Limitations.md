@@ -69,4 +69,4 @@ The following characteristics are based on maximum capacity specifications for S
 ## See Also  
  [Objects](Objects.md)   
  [Field Data Types](Field-Data-Types.md)   
- [Maximum Capacity Specifications for SQL Server](http://go.microsoft.com/fwlink/?LinkId=302003)
+ [Maximum Capacity Specifications for SQL Server](https://go.microsoft.com/fwlink/?LinkId=302003)

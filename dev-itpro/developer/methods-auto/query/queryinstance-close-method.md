@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,35 +44,28 @@ An instance of the [Query](query-data-type.md) data type.
 ## Example  
  The following example demonstrates how to use the **CLOSE** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  
 
- This example requires that you do the following:  
+ This example requires that you create a query called **Customer\_SalesQuantity** that is links table **18 Customer** with table  **37 Sales Lines** from the [!INCLUDE[demolong](../../includes/demolong_md.md)]. Include columns for the **Name** and **No.** fields from the Customer table and the **Quantity** field from Sales Lines table.  
 
--   Create a query called **Customer\_SalesQuantity** that is links table **18 Customer** with table  **37 Sales Lines** from the [!INCLUDE[demolong](../../includes/demolong_md.md)]. Include columns for the **Name** and **No.** fields from the Customer table and the **Quantity** field from Sales Lines table.  
-
-
--   Create the following variable and text constant  
-
-    |Variable name|DataType|Subtype|  
-    |-------------------|--------------|-------------|  
-    |MyQuery|Query|Customer\_SalesQuantity|  
-
-    |Text constant name|ENU Value|  
-    |------------------------|---------------|  
-    |Text000|Customer name = %1, Quantity = %2|  
 
  The following AL code opens the query, reads each row of the dataset, and then closes the query. You can add the code to a codeunit, and then run the codeunit to see the results.  
 
 ```  
-// Sets a filter to display only sales quantities greater than 20.  
-MyQuery.SETFILTER(Quantity, '>20');   
-// Runs the query.  
-MyQuery.OPEN;  
-// Reads each row in the dataset and displays a message with column values.   
-// Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-while MyQuery.READ do  
-begin  
-  MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);   
-end;  
-MyQuery.CLOSE;  
+var
+  MyQuery: Query "Customer SalesQuantity";
+  Text000: Label 'Customer name = %1, Quantity = %2';
+begin
+    // Sets a filter to display only sales quantities greater than 20.  
+    MyQuery.SETFILTER(Quantity, '>20');   
+    // Runs the query.  
+    MyQuery.OPEN;  
+    // Reads each row in the dataset and displays a message with column values.   
+    // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
+    while MyQuery.READ do  
+    begin  
+      MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);   
+    end;  
+    MyQuery.CLOSE;  
+end;
 ```  
 
 ## See Also

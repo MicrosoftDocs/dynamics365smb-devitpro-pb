@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -72,33 +72,33 @@ The new values for the primary key.
  You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
   
 ## Example  
- This example shows how to change the value of the primary key of a Record variable, and how to change the value of the primary key of a RecordRef variable. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|CustomerRec|Record|Customer|  
-|NewNo1|Code|Not applicable|  
-|NewNo2|Code|Not applicable|  
-|result|Boolean|Not applicable|  
-|CustomerRecRef|RecordRef|Not applicable|  
-  
+ This example shows how to change the value of the primary key of a Record variable, and how to change the value of the primary key of a RecordRef variable. 
+ 
 ```  
-CustomerRec.GET('0112121');  
-NewNo1 := ‘9999999’;  
-NewNo2 := ‘8888888’;  
-MESSAGE('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
-result := CustomerRec.RENAME(NewNo1);  
-ifresult then  
-  MESSAGE('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
-else  
-  MESSAGE('No rename.');  
-CustRecRef.GETTABLE(CustomerRec);  
-result := CustRecRef.RENAME(NewNo2);  
-ifresult then begin  
-  CustomerRec.GET(NewNo2);  
-  MESSAGE('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
-END else  
-  MESSAGE('No rename.');  
+var
+    CustomerRecRef: RecordRef;
+    NewNo1: Code;
+    NewNo2: Code;
+    result: Boolean;
+    CustomerRec: Record Cutomer;
+begin 
+    CustomerRec.GET('0112121');  
+    NewNo1 := ‘9999999’;  
+    NewNo2 := ‘8888888’;  
+    MESSAGE('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
+    result := CustomerRec.RENAME(NewNo1);  
+    if result then  
+      MESSAGE('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
+    else  
+      MESSAGE('No rename.');  
+    CustRecRef.GETTABLE(CustomerRec);  
+    result := CustRecRef.RENAME(NewNo2);  
+    if result then begin  
+      CustomerRec.GET(NewNo2);  
+      MESSAGE('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
+    end else  
+      MESSAGE('No rename.');  
+end;
 ```  
   
  If a record with No. 0112121 is found, and if the renames are successful, then the following messages are displayed:  

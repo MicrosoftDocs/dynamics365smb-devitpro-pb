@@ -134,7 +134,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 5. Repeat steps 2 to 4 to add another rule, except this time, set the **Claim rule name** to `objectidentifier`, the **Incoming claim type** to `Primary SID`, and the **Outgoing claim type** to:
 
     ```
-    http://schemas.microsoft.com/identity/claims/objectidentifier
+    https://schemas.microsoft.com/identity/claims/objectidentifier
     ```
 
     Choose **OK** when done to close the **Edit Claim Rules** dialog box.
@@ -151,12 +151,12 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 4. Set the **Claim rule name** to `name`, and the  **Custom rule** to:
 
     ```
-    c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
+    c:[Type == "https://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 5. Repeat steps 2 and 3 to add another custom rule, except for this rule, set the **Claim rule name** to `objectidentifier`, and the **Custom rule** to:
 
     ```
-    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
+    c:[Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 6.  Close the **Edit Claim Rules** dialog box.
 
@@ -184,7 +184,7 @@ To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS auth
 
 ### [!INCLUDE[server](../developer/includes/server.md)] instance setup
 
-The [!INCLUDE[server](../developer/includes/server.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], or by modifying the server instance's CustomSettings.config file directly.
+The [!INCLUDE[server](../developer/includes/server.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], or by modifying the server instance's CustomSettings.config file directly.
 
 <!-- 1. Clear the **Disable Token-Signing Certificate Validation** check box (In the CustomSettings.config file, you set the `DisableTokenSigningCertificateValidation` value to `true`.) -->
 
@@ -250,7 +250,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 5.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
     >[!TIP]
-    >You can use the [Set-NAVServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance) to restart the service instance.
+    >You can use the [Set-NAVServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance) to restart the service instance.
 
 ### Set up the [!INCLUDE[webserver](../developer/includes/webserver.md)]
 You configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] by modifying it's [navsettings.json configuration file](configure-web-server.md#WebClientSettingsFile).
@@ -264,7 +264,7 @@ Change the **ClientServicesCredentialType** setting to `AccessControlService` as
 The configuration changes are automatically picked up by the Internet Information Service (IIS).
 
 >[!TIP]
->Instead of re-configuring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to add an additional web server instance, and leave the existing instance running NavUserPassword authentication.
+>Instead of re-configuring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to add an additional web server instance, and leave the existing instance running NavUserPassword authentication.
 
 ### Set up the Dynamic NAV Windows client (optional)
 >[!NOTE]

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,19 +42,19 @@ This example uses the HasValue method to iterate over the **My Items** table to 
 
 The example assumes that **My Items** table exists and contains a **Media** data type field that is named **Image**. For information about importing media, see [ImportFile Method \(Media\)](../../methods-auto/media/media-importfile-method.md).  
 
-The code returns a message if a record does not include a media object. To support the code, you must create the following variable:  
+The code returns a message if a record does not include a media object. 
 
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|myItemRec|Record|My Items|  
-
-```  
-if myItemRec.FindFirst() then begin 
-    repeat begin
-        if not myItemRec.Image.HasValue then
-            Error('Item %1 does not have a valid image', myItemRec."No.");          
-    end until myItemRec.Next < 1;  
-end; 
+```
+ var
+    myItemRec: Record "My Items";
+begin
+    if myItemRec.FindFirst() then begin 
+        repeat begin
+            if not myItemRec.Image.HasValue then
+                Error('Item %1 does not have a valid image', myItemRec."No.");          
+        end until myItemRec.Next < 1;  
+    end; 
+end;
 ```  
 
 ## See Also

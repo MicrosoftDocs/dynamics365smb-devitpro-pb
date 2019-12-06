@@ -18,11 +18,11 @@ Windows PowerShell is a Windows command-line shell that is designed especially f
   
  If this is your first time working with Windows PowerShell, there are various online resources for learning, which include the following:  
   
--   [Getting Started with Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=254637)  
+-   [Getting Started with Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=254637)  
   
--   [Scripting with Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=254638) \(with videos\)  
+-   [Scripting with Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=254638) \(with videos\)  
   
--   [The Windows PowerShell blog](http://go.microsoft.com/fwlink/?LinkId=254642)  
+-   [The Windows PowerShell blog](https://go.microsoft.com/fwlink/?LinkId=254642)  
   
  All Windows PowerShell cmdlets support the parameters in the following table.  
   
@@ -52,7 +52,7 @@ Get-Help Get-Help
 Set-ExecutionPolicy "RemoteSigned" -Scope Process  
 ```  
   
- For more information about PowerShell execution policy, see [About Execution Policies](http://go.microsoft.com/fwlink/?LinkID=254644).  
+ For more information about PowerShell execution policy, see [About Execution Policies](https://go.microsoft.com/fwlink/?LinkID=254644).  
   
 ## See Also  
  [Preparing for Deploying Microsoft Dynamics NAV on Microsoft Azure](Preparing-for-Deploying-Microsoft-Dynamics-NAV-on-Microsoft-Azure.md)   

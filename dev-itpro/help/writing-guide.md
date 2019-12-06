@@ -66,7 +66,7 @@ Use ```**bold**``` and ```*italics*```
 
 ### Tables
 
-For tables in the body, use the markdown syntax. The Docs Authoring Pack for Visual Studio Code has a shortcut for adding a table, and you can also use [Tables Generator](http://tablesgenerator.com/markdown_tables).
+For tables in the body, use the markdown syntax. The Docs Authoring Pack for Visual Studio Code has a shortcut for adding a table, and you can also use [Tables Generator](https://tablesgenerator.com/markdown_tables).
 
 ```
 | To   | See                       |

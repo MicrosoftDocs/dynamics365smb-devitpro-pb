@@ -22,7 +22,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
 -   The makecert.exe tool \(Certificate Creation Tool\) for creating SSL certificates.  
   
-     The makecert.exe generates certificates for testing purposes. It is available with Microsoft Visual Studio and Microsoft Windows SDK. For more information, see [Certificate Creation Tool \(Makecert.exe\)](http://go.microsoft.com/fwlink/?LinkId=202833) in the MSDN Library.  
+     The makecert.exe generates certificates for testing purposes. It is available with Microsoft Visual Studio and Microsoft Windows SDK. For more information, see [Certificate Creation Tool \(Makecert.exe\)](https://go.microsoft.com/fwlink/?LinkId=202833) in the MSDN Library.  
   
     > [!NOTE] 
     >  The makecert.exe tool is only required if you do not already have an SSL certificate and you want to create a certificate for test purposes.  
@@ -81,7 +81,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 6.  If you are not working on the computer running [!INCLUDE[server](../developer/includes/server.md)], then copy the .pfx to the [!INCLUDE[server](../developer/includes/server.md)] computer.  
   
 > [!IMPORTANT] 
->  To avoid validation errors, make sure that the certificate that you create and self-sign has the same name as the host name, which is accessed from all the remote machines. The machine name is specified in “**CN=\<machine name>**”. If you use the *http://hostname:Port/NAVserver/* link to access your Microsoft Dynamics NAV service, then you should specify the –n “CN=hostname” flag to the `makecert` command instead.  
+>  To avoid validation errors, make sure that the certificate that you create and self-sign has the same name as the host name, which is accessed from all the remote machines. The machine name is specified in “**CN=\<machine name>**”. If you use the *https://hostname:Port/NAVserver/* link to access your Microsoft Dynamics NAV service, then you should specify the –n “CN=hostname” flag to the `makecert` command instead.  
 -->
     
 
@@ -137,7 +137,7 @@ Once you obtain a certificate, you must import it into the **Personal** local co
   
 The first step is to prepare [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use SSL. This involves configuring the relevant [!INCLUDE[server](../developer/includes/server.md)] instance to specify SSL.
 
-You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
+You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
 
    
 1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)], select [!INCLUDE[server](../developer/includes/server.md)] that you want to modify.
@@ -152,7 +152,7 @@ You can configure [!INCLUDE[server](../developer/includes/server.md)] instances 
 
 ##  <a name="ACL"></a> Configure the Access Control List and the Web Services Ports for SSL  
 
-An access control list \(ACL\) is part of the Windows security infrastructure and features. The ACL controls who can access resources on a computer. For more information, see [Access Control Lists](http://go.microsoft.com/fwlink/?LinkId=177398).  
+An access control list \(ACL\) is part of the Windows security infrastructure and features. The ACL controls who can access resources on a computer. For more information, see [Access Control Lists](https://go.microsoft.com/fwlink/?LinkId=177398).  
   
 > [!NOTE] 
 >  These procedures use the netsh tool \(netsh.exe\) for configuring the HTTP server. The netsh tool is supplied with Windows. By default the netsh tool is located in the c:\\Windows\\System32 folder.  
@@ -177,16 +177,16 @@ An access control list \(ACL\) is part of the Windows security infrastructure an
     netsh http show urlacl  
     ```  
   
-     Each entry is listed by the `Reserved URL` field, which has the format `http://hostname:port`. `hostname` is the name of the computer running the service and `port` is the port number the service runs on. A '`+`' \(plus sign\) in the `Reserved URL` field represents localhost, which indicates the computer that you are working on.  
+     Each entry is listed by the `Reserved URL` field, which has the format `https://hostname:port`. `hostname` is the name of the computer running the service and `port` is the port number the service runs on. A '`+`' \(plus sign\) in the `Reserved URL` field represents localhost, which indicates the computer that you are working on.  
   
-     By default, SOAP and OData web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] use ports 7047 and 7048, respectively, and connect to a [!INCLUDE[server](../developer/includes/server.md)] instance named[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]. The default reserved URL entries for these services are: `http://+:7047/<server instance>/` and `http://+:7048/<server instance>/`.  
+     By default, SOAP and OData web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] use ports 7047 and 7048, respectively, and connect to a [!INCLUDE[server](../developer/includes/server.md)] instance named[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]. The default reserved URL entries for these services are: `https://+:7047/<server instance>/` and `https://+:7048/<server instance>/`.  
   
 4.  You must delete any entries that use the same port as the SOAP or OData web services.  
   
      To delete an entry, type the following command:  
   
     ```  
-    netsh http delete urlacl url=http://hostname:port/serverinstance/  
+    netsh http delete urlacl url=https://hostname:port/serverinstance/  
     ```  
   
      Substitute `port` with the port number of the SOAP or OData web service and `serverinstance` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance.  
@@ -194,11 +194,11 @@ An access control list \(ACL\) is part of the Windows security infrastructure an
      For example, to delete the default entries for SOAP and OData, use the following two commands:  
   
     ```  
-    netsh http delete urlacl url=http://+:7047/<server instance>/  
+    netsh http delete urlacl url=https://+:7047/<server instance>/  
     ```  
   
     ```  
-    netsh http delete urlacl url=http://+:7048/<server instance>/  
+    netsh http delete urlacl url=https://+:7048/<server instance>/  
     ```  
   
 5.  To register the ports for the SOAP and OData web service with https, type the following command for each service:  

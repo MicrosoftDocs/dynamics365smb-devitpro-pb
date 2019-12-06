@@ -1,17 +1,15 @@
 ---
 title: Managing Environments | Microsoft Docs
 description: Use the Business Central administration center to manage your tenant environments. 
-author: jaredha
-
+author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 10/01/2019
-ms.author: jaredha
+ms.date: 12/06/2019
+ms.author: edupont
 ---
 
 # Managing Environments
@@ -27,6 +25,39 @@ In the list of environments, you can open a page with more details for an enviro
 
 > [!div class="mx-imgBorder"]
 > ![View details about an environment](../developer/media/admin/business_central_admin_center_details.png)
+
+## Types of environments
+
+You can create environments of different types. Which type of environment to choose depends on what you need it for.  
+
+<!--The following table outlines some of the benefits of each environment type.
+
+|Column1  |Column2  |
+|---------|---------|
+|Row1     |         |
+|Row2     |         |
+|Row3     |         |
+|Row4     |         |
+|Row5     |         |-->
+
+### Production environments
+
+Production environments are meant to be precisely that: Environments that a business can run their daily business in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in, deployed on performance tiers in Azure with a guaranteed availability and support.  
+
+You can have a maximum of three production environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
+
+### Sandbox environments
+
+Sandbox environments are meant to be precisely that: Environments that you can play around with, use as  a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
+
+You can also safely use sandboxes for training, such as for following a learning path from [Microsoft Learn](/learn/browse/?products=dynamics-business-central), because it's a safe environment to experiment with. If anything goes wrong, you just delete the sandbox and start over.  
+
+> [!IMPORTANT]
+> The automatic backup that applies to production environments does not apply to sandbox environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart, but you cannot request a database export.
+
+You can create a sandbox environment that includes data from your production environment for debugging purposes, for example. But if you want to run performance tests, or similar benchmarking, the sandbox is not reliable enough for that purpose. This is because sandboxes run in a different performance tier on Azure than production environments. Instead, create a dedicated environment based on the Production environment type - this gives you the exact experience and performance that users will experience in the actual production environment.
+
+You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
 
 ## Create a new production environment
 

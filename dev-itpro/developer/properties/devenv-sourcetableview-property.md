@@ -43,7 +43,7 @@ page 50101 MyCustomers
 }
 ```
 
-For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters). 
+For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters). 
   
 ## See Also  
  [Properties](devenv-properties.md)

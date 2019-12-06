@@ -30,7 +30,7 @@ The following table describes the settings in the `app.json` file:
 |privacyStatement|No, but required for AppSource submission|URL to the privacy statement for the extension.|
 |EULA|No, but required for AppSource submission|URL to the license terms for the extension.|
 |help|No, but required for AppSource submission|URL to an online description of the extension. The link is used in AppSource and can be the same as the value of the `contextSensitiveHelpUrl` property or a different link, such as a link to your marketing page.|
-|url|No|URL of the extension package.|
+|url|No, but required for AppSource submission|URL of the extension package.|
 |logo|No, but required for AppSource submission|Relative path to the app package logo from the root of the package.|
 |dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {  "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"},{}]`. <br>For dependencies to the System Application and Base Application, you must have a reference such as: `"dependencies": [{"appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f", "publisher": Microsoft", "name": "System Application", "version": "1.0.0.0"},{"appId": "437dbf0e-84ff-417a-965d-ed2bb9650972", "publisher": "Microsoft", "name": "Base Application", "version": "15.0.0.0" }]`<br>For more information, see [Overview of the System Application](devenv-system-application-overview.md).|
 |screenshots|No|Relative paths to any screenshots that should be in the extension package.|
@@ -40,7 +40,7 @@ The following table describes the settings in the `app.json` file:
 |showMyCode|No|This is by default set to `false` and not visible in the manifest. To enable viewing the source code when debugging into an extension, add the following setting: `"showMyCode": true`|
 |target|No|By default this is `Cloud`. The setting currently has the following options: `Internal`, `Extension`, `OnPrem`, and `Cloud`. The `Internal` and `Extension` settings are being deprecated. For on-premises, you can set this to `OnPrem` to get access to otherwise restricted APIs and .NET Interop. The Business Central Server setting must then also be set to `OnPrem`.|
 |contextSensitiveHelpUrl|No, but required for AppSource submission|The URL for the website that displays context-sensitive Help for the objects in the app, such as `https://mysite.com/documentation`. If the app does not support all locales currently supported by [!INCLUDE [prodshort](includes/prodshort.md)], then include a parameter for the locale in this URL, `/{0}/`, and also specify the relevant locales in the `supportedLocales` setting.|
-|helpBaseUrl|No|The URL for the website that overtakes all Help for the specified locales. This property is intended for localization apps specifically since the setting overwrites the default URL of `https://docs.microsoft.com/{0}/dynamics365/business-central`. If you set this value, you must also specify one or more languages in the `supportedLocales` setting.|
+|helpBaseUrl|No|The URL for the website that overtakes all Help for the specified locales. This property is intended for localization apps specifically since the setting overwrites the default URL of `/{0}/dynamics365/business-central`. If you set this value, you must also specify one or more languages in the `supportedLocales` setting.|
 |supportedLocales|No|The list of locales that are supported in your Help if different from all locales. The value on the list is inserted into the URL defined in the `contextSensitiveHelpUrl` and `helpBaseUrl` properties. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]` for an app that supports only Danish and English (US).|
 |runtime|Yes|The version of the runtime that the project is targeting. The project can be published to the server with an earlier or the same runtime version. The available options are: `1.0` - Business Central April 2018 release, `2.2` - Business Central October 2018 release CU 2, `3.0` - Business Central April 2019 release, and `4.0` - Business Central 2019 release wave 2.|
 |features|No|Specifies a list of options for translations. The `TranslationFile` option generates a `\Translations` folder that is populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The `GenerateCaptions` option depends on the `TranslationFile` setting. It generates captions for objects that do not have a `Caption` or `CaptionML` specified, these are then written to the .xlf file. The syntax is `"features": [ "TranslationFile", "GenerateCaptions" ]`. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md)|
@@ -56,7 +56,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |name|Yes|"Your own server"|
 |type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
-|server|Yes|The HTTP URL of your server, for example: `"http://localhost|serverInstance"`|
+|server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
 |authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. Currently, AAD authentication is supported only for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandboxes. AAD authentication cannot be used for on-premise servers.|
@@ -71,12 +71,13 @@ The following table describes the settings in the `launch.json` file. The `launc
 |longRunningSqlStatementsThreshold|Yes|Sets the number of miliseconds spent before a SQL statement is considered as long running in the debugger.|
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
+|disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Microsoft cloud sandbox"|
-|type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
+|type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object.  The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
@@ -91,6 +92,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |longRunningSqlStatementsThreshold|Yes|Sets the number of miliseconds spent before a SQL statement is considered as long running in the debugger.|
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
+|disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 
 
 <!--

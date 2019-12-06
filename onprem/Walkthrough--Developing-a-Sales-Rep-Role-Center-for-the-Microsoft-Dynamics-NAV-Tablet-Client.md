@@ -123,7 +123,7 @@ In this walkthrough, you will learn how to create a new Role Center for the [!IN
 
 14. Close **Action Designer** and then save and compile the **Sales Rep Role Center** page.  
 
- Simon now wants to test the Sales Rep Role Center that he created, and for testing purposes he uses a browser window. He enters a URL that specifically opens the page 50006 from tablet.aspx. His URL now resembles this: *http://MyNAVWeb:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/tablet.aspx?page=50006*. For more information, see [How to: Open the Microsoft Dynamics NAV Tablet or Phone Client from a Browser](How-to--Open-the-Microsoft-Dynamics-NAV-Tablet-or-Phone-Client-from-a-Browser.md).  
+ Simon now wants to test the Sales Rep Role Center that he created, and for testing purposes he uses a browser window. He enters a URL that specifically opens the page 50006 from tablet.aspx. His URL now resembles this: *https://MyNAVWeb:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/tablet.aspx?page=50006*. For more information, see [How to: Open the Microsoft Dynamics NAV Tablet or Phone Client from a Browser](How-to--Open-the-Microsoft-Dynamics-NAV-Tablet-or-Phone-Client-from-a-Browser.md).  
 
 ## Next Steps  
  Nancy now has a Role Center that gives her access to most of the information that she needs when she is on the road. The next step for Simon is to refine the Sales Rep Role Center by adding more functionality, for example, the ability to retrieve more lists or making sure that Nancy can smoothly continue to work when she is back at the office on her desktop computer.  
