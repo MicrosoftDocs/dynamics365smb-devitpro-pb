@@ -1,14 +1,12 @@
 ---
 title: "Walkthrough: Designing a Report from Multiple Tables"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 12/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 18ac2683-a8b0-4dc4-8dcf-717e93b51865
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
@@ -16,21 +14,16 @@ author: SusanneWindfeldPedersen
 A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You define the dataset for reports directly in AL code. You design the layout in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder for a RDL layout and in Microsoft Word for a Word layout. After you design a report, you can make it available to applications that are running on the [!INCLUDE[webclient](includes/webclient.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  
 
 ## About This Walkthrough  
- This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] and using Visual Studio Report Designer for designing a RDLC layout.  
+This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] and using Visual Studio Report Designer for designing an RDL layout.  
 
  This walkthrough illustrates the following tasks:  
 
 -   Defining the dataset for multiple tables.  
-
 -   Adding fields to a data item.  
-
 -   Defining properties for the data items.  
-
 -   Adding labels to a report.  
-
--   Design a client report definition \(RDLC\) report layout in Visual Studio 2019.  
+-   Design a client report definition (RDL) report layout in Visual Studio 2019.  
 -   Setting filters to hide empty rows and fields in a report.  
-
 -   Building and running a report.  
 
 <!-- ### Prerequisites  
@@ -43,42 +36,42 @@ A report object is composed of a report dataset and a visual layout. You design 
 -   Report Builder for SQL Server 2016 or Visual Studio 2017 with [Microsoft RDLC Report Designer for Visual Studio installed](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001).   -->
 
 ## Story  
- Viktor is a developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been asked by his manager to create a report that shows data from the `Customer` \(18\), `Cust. Ledger Entry` \(21\), `Detailed Cust. Ledger Entry` \(379\), and the `Sales Header` \(36\) tables. The report should meet the following requirements:  
+Viktor is a developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been asked by his manager to create a report that shows data from the `Customer` (ID 18), `Cust. Ledger Entry` (ID 21), `Detailed Cust. Ledger Entry` (ID 379), and the `Sales Header` (ID 36) tables. The report should meet the following requirements:  
 
--   The report should display customer information at the top of the report.  
+-   The report must display customer information at the top of the report.  
 
--   For each customer, the report should show a list of ledger entries.  
+-   For each customer, the report must show a list of ledger entries.  
 
--   For each ledger entry, the report should show a list of detailed ledger entries under the ledger entries.  
+-   For each ledger entry, the report must show a list of detailed ledger entries under the ledger entries.  
 
--   The report should display basic sales document headers information for the selected customer.  
+-   The report must display basic sales document headers information for the selected customer.  
 
--   Each section of the data for each customer should begin on a new page.  
+-   Each section of the data for each customer must begin on a new page.  
 
 -   The `Amount` field from the `Cust. Ledger Entry` table should be totaled and displayed for each customer.  
 
--   If there are no records to display, the report should not display that data sections. For example, if there are no sales documents for a customer, the sale header section should be skipped.  
+-   If there are no records to display, the report must not display that data sections. For example, if there are no sales documents for a customer, the sale header section must be skipped.  
 
 -   Amount fields must not display zero values.  
 
 -   The orientation of the report should be landscape.  
 
-     The following illustration shows an example of the second page of the report.  
+The following illustration shows an example of the second page of the report.  
 
-     ![Completed report](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
+![Completed report](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
 
 ## Defining the Dataset
-Viktor starts by creating an empty report object using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
+Viktor starts by creating an empty report object by using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
 
-He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he will use a RDLC layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdlc'`, the name of the rdlc file he will use for the layout.
+He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he will use an RDL layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdl'`, the name of the rdl file he will use for the layout.
 
 Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report object. 
 
 ### Adding Data Items and columns
  
- The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, he will add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
+The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, he will add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
 
- The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for additional tables and fields.
+The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for additional tables and fields.
 
 ### Defining Properties for the Data Items
 
@@ -89,8 +82,7 @@ He also sets the [RequestFilterFields Property](properties/devenv-requestfilterf
 <!-- >[!NOTE]
 > Request pages for XMLports are not supported by the Business Central Web client in versions prior to Dynamics 365 Business Central 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the Dynamics NAV Client connected to Business Central. -->
 
-
-Moreover, Viktor uses the [DataItemLink (Reports) Property](properties/devenv-dataitemlink-reports-property.md) to set a link between one or more fields of the dataitem tables. Links determine which records to include in the dataset based on the values of a common field between dataitems. This property must be set on the lower dataitem of the report object.
+Now, Viktor uses the [DataItemLink (Reports) Property](properties/devenv-dataitemlink-reports-property.md) to set a link between one or more fields of the dataitem tables. Links determine which records to include in the dataset based on the values of a common field between dataitems. This property must be set on the lower dataitem of the report object.
 
 For each of the `column` controls he adds the [IncludeCaption Property](properties/devenv-includecaption-property.md) and sets it to **True**. This property specifies to include the caption of the fields in the dataset of a report.
 
@@ -98,9 +90,8 @@ Finally, he sets the [PrintOnlyIfDetail Property](properties/devenv-printonlyifd
 
 
 ## Adding Labels to the Report  
- Viktor will now add labels to the report. You define the labels in the `label` part of the report. These labels will be used later as captions.  
+Viktor will now add labels to the report. You define the labels in the `label` part of the report. These labels will be used later as captions.  
 
-\
 The following code exemplifies the code that Viktor has written for the report.
 
 ```
@@ -109,10 +100,10 @@ report 50101 "Report for Multiple Tables"
     //Make the report searchable from Tell me under the Administration category.
     UsageCategory = Administration;
     ApplicationArea = All;
-    // Use a RDLC layout.
+    // Use an RDL layout.
     DefaultLayout = RDLC;
     // Specify the name of the file that the report will use for the layout.
-    RDLCLayout = 'MyRDLReport.rdlc';
+    RDLCLayout = 'MyRDLReport.rdl';
 
     dataset
     {
@@ -339,20 +330,20 @@ report 50101 "Report for Multiple Tables"
 }
 ```  
 
-## Designing the Visual RDLC Layout for the Report  
- Next, Viktor will design a RDLC layout for the report by using Visual Studio Report Designer. He will set properties for the report and the report elements, format the report, and then add the data to the report.  
+## Designing the Visual RDL Layout for the Report  
+Next, Viktor will design an RDL layout for the report by using Visual Studio Report Designer. He will set properties for the report and the report elements, format the report, and then add the data to the report.  
 
-#### To design the RDLC layout for the report  
+#### To design the RDL layout for the report  
 
-1.  Build the extension (Ctrl+Shift+B) to generate the `MyRDLReport.rdlc` file. Open it with Visual Studio 2019.
+1.  Build the extension (Ctrl+Shift+B) to generate the `MyRDLReport.rdl` file, and then open the file with Visual Studio 2019.
 
-2.  Right-click anywhere outside the report \(in the shaded area\) and then choose **Add Page Header**.  
+2.  Right-click anywhere outside the report (in the shaded area) and then choose **Add Page Header**.  
 
-3.  Right-click anywhere outside the report \(in the shaded area\), and then choose **Report Properties**.  
+3.  Right-click anywhere outside the report (in the shaded area), and then choose **Report Properties**.  
 
-4.  In the **Report Properties** window, choose the **Page Setup** tab. Iin the **Paper size** section, under **Orientation**, choose the **Landscape**, and then choose the **OK** button.  
+4.  In the **Report Properties** window, choose the **Page Setup** tab. In the **Paper size** section, under **Orientation**, choose **Landscape**, and then choose the **OK** button.  
 
-5.  On the **View** menu, choose **Toolbox** to open the **Toolbox** pane. Select the **List** control, and then choose the body of the report to add the **List** control to the report. This control will contain and group all the data.  
+5.  On the **View** menu, choose **Toolbox**. Select the **List** control, and then choose the body of the report to add the **List** control to the report. This control will contain and group all the data.  
 
 6.  Move the **List control** to the top of the report body and resize it to cover the whole report body.  
 
@@ -377,7 +368,7 @@ report 50101 "Report for Multiple Tables"
 
 5.  On the **Page Breaks** tab, select **Between each instance of a group**, and then choose the **OK** button.  
 
-     Viktor is now ready to add the customer data. The table will display one customer at a time, therefore Viktor must put all the fields into table header rows. The table data and footer rows will be disabled.  
+Viktor is now ready to add the customer data. The table will display one customer at a time, therefore Viktor must put all the fields into table header rows. The table data and footer rows will be disabled.  
 
 #### To add customer data  
 
@@ -387,7 +378,7 @@ report 50101 "Report for Multiple Tables"
 
      ![The list control on the report](media/MicrosoftDynamicsNAV_ListControl.jpg "MicrosoftDynamicsNAV\_ListControl")  
 
-     Note that the table contains two table rows, a header row \(first row\), and a data row \(second row\). The three parallel lines in the left border of the second row identify the data row.  
+     Note that the table contains two table rows, a header row (first row), and a data row (second row). The three parallel lines in the left border of the second row identify the data row.  
 
 2.  Select any table row, right-click the shaded border, and then choose **Tablix Properties** to open the **Tablix Properties** window.  
 
@@ -397,13 +388,13 @@ report 50101 "Report for Multiple Tables"
 
 4.  Right-click the middle column header, choose **Insert Column**, and then select **Right** to insert the fourth column into the table.  
 
-5.  Select the second table row \(the data row\), right-click the row, choose **Delete Rows** to delete the data row, and then choose the **OK** button in the **Delete Rows** window to delete the row and its associated groups.  
+5.  Select the second table row (the data row), right-click the row, choose **Delete Rows** to delete the data row, and then choose the **OK** button in the **Delete Rows** window to delete the row and its associated groups.  
 
 6.  Select the remaining table row, right-click the shaded border on the left, choose **Insert Row**, and then choose **Below** to insert another table header row.  
 
 7.  Repeat step 6 to insert a third table header row. There should now be three header rows in the table.  
 
-8.  Right-click the first cell \(row 1, column 1\) in the table, and then choose **Expression** to open the **Expression** window.  
+8.  Right-click the first cell (row 1, column 1) in the table, and then choose **Expression** to open the **Expression** window.  
 
 9. In the **Category** column, select **Parameters**, in the **Item** column, verify that **All** is selected, and then in the **Values** column, double-click **No\_CustomerCaption**. Verify that the **Set expression for: Value** box contains the following value: `=Parameters!No_CustomerCaption.Value`. This cell will display the customer No. caption in the report.  
 
@@ -412,7 +403,7 @@ report 50101 "Report for Multiple Tables"
     > [!NOTE]  
     >  All caption fields must begin with `=First` so that the first value for the caption fields in the data set is retrieved and used as caption. If the First function is not used, the report will return the current value for a field. The current value however may be incorrect. For example, the current value could be empty.  
 
-11. Right-click the second cell \(row 1, column 2\) in the table, and then choose **Expression** to open the **Expression** window.  
+11. Right-click the second cell (row 1, column 2) in the table, and then choose **Expression** to open the **Expression** window.  
 
 12. In the **Category** column, select **Field\(DataSet\_Result\)**, in the **Item** column verify that **All** is selected, and then in the **Values** column double-click **No\_Customer**. Verify that the **Set expression for: Value** box contains the following value `=Fields!No_Customer.Value`. Choose the **OK** button. This cell will display the Customer No..  
 
@@ -432,7 +423,7 @@ report 50101 "Report for Multiple Tables"
     |3|3|Email\_CustomerCaption|None|  
     |3|4|None|Email\_Customer|  
 
-14. Select all table rows \(not the whole table\), and then on the **View** menu, choose **Properties Window** to open the **Properties** window in Visual Studio.  
+14. Select all table rows (not the whole table), and then on the **View** menu, choose **Properties Window** to open the **Properties** window in Visual Studio.  
 
 15. In the **Properties** window, under **Fill**, set the **BackgroundColor** property to **Plum**. You can choose any color.  
 
@@ -443,7 +434,7 @@ report 50101 "Report for Multiple Tables"
 16. On the **Build** menu, choose **Build Web site** to build the project. Inspect the **Output** pane and make sure that there are no build errors. Close Visual Studio.  
 
     > [!NOTE]  
-    >  It is a good practice to build the project periodically during the report design to make sure that there are no build errors.  
+    > It is a good practice to build the project periodically during the report design to make sure that there are no build errors.  
 
      Viktor will run the report and preview what he has done to this point.  
 
@@ -455,11 +446,11 @@ report 50101 "Report for Multiple Tables"
 
 20. In the request page that is displayed, choose the **Preview** button to view the report. The first customer is displayed on the first page. If you page through the report, each customer is displayed on a separate page.  
 
- Viktor will now add the data for the customer ledger entries and detailed ledger entries. The entries will be put in a different table.  
+Viktor will now add the data for the customer ledger entries and detailed ledger entries. The entries will be put in a different table.  
 
 #### To add the data for ledger entry and detailed ledger entry  
 
-1.  Open the `MyRDLReport.rdlc` report in Microsoft Visual Studio.  
+1.  Open the `MyRDLReport.rdl` report in Microsoft Visual Studio.  
 
 2.  From the **Toolbox**, drag a table control into the list control. Put the table under the table that contains the customer data.  
 
@@ -591,7 +582,7 @@ report 50101 "Report for Multiple Tables"
 
 14. Right-click the left-most cell in the last table row, select **Text Box Properties**, select the **Visibility** tab, under **Change display options**, select the **Hide** option, and then choose the **OK** button.  
 
-     The next step is to add the data from the **Sales Header** table.  
+The next step is to add the data from the **Sales Header** table.  
 
 #### To add the sales header data  
 
@@ -625,9 +616,9 @@ report 50101 "Report for Multiple Tables"
 
 15. Right-click the cell in row2, column 2, and then choose **Expression** to open the **Expression** window.  
 
-16. In the **Category** column, select **Parameters**, and then in the **Values** column double-click **DocumentType\_SalesHeader**. Verify that the **Set expression for: Value** box contains the following value: `Parameters!DocumentType_SalesHeaderCaption.Value`  
+16. In the **Category** column, select **Parameters**, and then in the **Values** column double-click **DocumentType\_SalesHeader**. Verify that the **Set expression for: Value** box contains the following value: `Parameters!DocumentType_SalesHeaderCaption.Value`.  
 
-17. Modify the expression to the following value: `=First(Parameters!DocumentType_SalesHeaderCaption.Value)`. Choose the **OK** button.  
+17. Modify the expression to the following value: `=First(Parameters!DocumentType_SalesHeaderCaption.Value)` and then choose the **OK** button. 
 
 18. Right-click the cell that is under the caption that you just created, choose **Expression**. In the **Category** column, select **Fields \(DataSet\_Result\)**, and then in the **Values** column double-click **DocumentType\_SalesHeader**. Choose the **OK** button. Verify that the **Set expression for: Value** box contains the following value: `=Fields!DocumentType_SalesHeader.Value`  
 
@@ -642,7 +633,7 @@ report 50101 "Report for Multiple Tables"
 
 20. Select the first two rows and in the **Properties** window, set the **BackgroundColor** property to **Lime**.  
 
-21. Select the data row \(last row\), in the **Properties** window, set the **BackgroundColor** property to **Turquoise**.  
+21. Select the data row (last row), in the **Properties** window, set the **BackgroundColor** property to **Turquoise**.  
 
      Viktor will now set a filter that hides empty rows.  
 
@@ -662,7 +653,7 @@ Viktor will run the report to view how it looks like. For this, do the following
 
 1.  Make sure that the `"startupObjectId"` is set to the **Id** of the report object and the `"startupObjectType"` to `Report` in the `launch.json` file.
 
-2. Press the  `F5` key to compile and run the report in Dynamics 365 Business Central.
+2. Press the `F5` key to compile and run the report in Dynamics 365 Business Central.
 
 3.  If you have not disabled the [UseRequestPage Property](properties/devenv-userequestpage-property.md) you will be shown a request page in the Web Client.
 
@@ -670,7 +661,7 @@ Viktor will run the report to view how it looks like. For this, do the following
 
      ![Request page](media/request_page_report.PNG?style=centerme "request\_page\_report" )  
 
-     If you choose the **Preview** button on the request page, the report will be displayed with the RLDC layout just created.
+     If you choose the **Preview** button on the request page, the report will be displayed with the RLD layout just created.
 
 Viktor can now add advanced features to the report. He can add features such as displaying the company name and logo on every page on the report. He might also want to add features that enable users to apply filters on the request page.  
 
