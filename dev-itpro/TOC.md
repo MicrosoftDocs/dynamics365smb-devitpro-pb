@@ -1,7 +1,7 @@
 ﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
 ## [Get started](index.md)
 ## [Frequently asked questions](faq.md)
-## [FAQ About Windows Client and Business Central](across-faq-win-cli.md)
+## [FAQ About Windows Client and Business Central](faq-win-cli.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical support](technical-support.md)
