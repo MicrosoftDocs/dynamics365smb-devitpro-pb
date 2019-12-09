@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/06/2019
+ms.date: 12/09/2019
 ---
 # FAQ About Windows Client and Business Central
 
@@ -57,7 +57,7 @@ For more information, see [Viewing and Editing in Excel From [!INCLUDE[prodshort
 Note that the legacy, COM-based Excel plugin that used to be included on the installation media is no longer supported.
 
 ## Can we still use the same Outlook add-in?
-Yes. This change does not impact the modern Outlook add-in. In fact, it enforces its position as one of the modern-client experiences as it is based on the same familiar web experience. It is the only Outlook add-in supported right now for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [Using [!INCLUDE[prodshort](includes/prodshort.md)] as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook).
+Yes. This change does not impact the Outlook add-in. In fact, the modern Outlook add-in is based on the same familiar web experience. For more information, see [Using [!INCLUDE[prodshort](includes/prodshort.md)] as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook).
 
 ## What happened to C/SIDE, the legacy development environment?
 In line with the retirement of the Windows client, [!INCLUDE[prodshort](includes/prodshort.md)] 2019 release wave 2 marks a milestone as the first release without the legacy development environment (also known as C/SIDE). The modern developer experience, which is based on Visual Studio Code and the new AL language, supports developing large apps, such as the base application from Microsoft.
