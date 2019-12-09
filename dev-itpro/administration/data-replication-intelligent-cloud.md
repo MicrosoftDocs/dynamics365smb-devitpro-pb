@@ -10,7 +10,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 10/01/2019
+ms.date: 12/09/2019
 ms.author: bmeier
 
 ---
@@ -52,7 +52,7 @@ During the data migration process, [!INCLUDE[prodshort](../developer/includes/pr
 
 ## Data migration from Dynamics GP
 
-When using the cloud migration for Dynamics GP 2018 R2, the following information is migrated from Dynamics GP to Business Central online:
+When using the cloud migration for Dynamics GP 2018 R2 or later, the following information is migrated from Dynamics GP to Business Central online:
 
 - Chart of Accounts master records as of the time of the migration
 
