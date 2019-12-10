@@ -25,11 +25,15 @@ Both internal administrators and the reselling partner can use the [!INCLUDE [pr
 
 As the internal administrator, you can work with users to identify solutions or workarounds, such as missing setup, missing permissions, and other issues in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. They can find technical information in the **Help and Support** page to help with this investigation. For more information, see the [Finding technical information](#finding-technical-information) section.  
 
-Internal administrators can also create sandbox environments for deeper troubleshooting, for example, before they decide to contact their partner for technical support.
+Internal administrators can also create sandbox environments for deeper troubleshooting, for example, before they decide to contact their partner for technical support. The partner must have specified their support contact details in the **Help and Support** page.  
 
 ## Delegated administrators
 
-Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. The partner must have specified their support contact details in the **Help and Support** page. For more information, see [Configuring the support experience](../technical-support.md#configuring-the-support-experience). The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to analyse telemetry, create a sandbox environment for debugging, or an extra production environment for step-by-step reproduction, for example.
+Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. As the partner, you must have specified support contact details in the **Help and Support** page. For more information, see [Configuring the support experience](../technical-support.md#configuring-the-support-experience).  
+
+The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to analyse telemetry, create a sandbox environment for debugging, or an extra production environment for step-by-step reproduction, for example.  
+
+If the partner cannot find a solution, they can request support from Microsoft. For more information, see the [Escalating support issues to Microsoft](#escalating-support-issues-to-microsoft) section.  
 
 ## Finding technical information
 
@@ -44,9 +48,9 @@ For [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, internal 
 
 ### Azure Active Directory tenant
 
-When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown in the **Troublshooting** section at the bottom of the **Help and Support** page.  
+When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown in the **Troubleshooting** section at the bottom of the **Help and Support** page.  
 
-The delegated administrator can use that to identify the tenant in the Partner Center and in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md) for troubleshooting.  
+The delegated administrator can use that to identify the tenant in the Partner Center and in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] for troubleshooting.  
 
 ### Version
 
@@ -131,5 +135,6 @@ A support request ticket is then created, and you will see a dialog box with the
 [Technical Support for Business Central](../technical-support.md)  
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Deployment Overview](../deployment/Deployment.md)  
+[Administration as a partner](tenant-administration.md#administration-as-a-partner)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Administration of Business Central On-Premises](Administration.md)  
