@@ -44,13 +44,15 @@ You can create environments of different types. Which type of environment to cho
 
 Production environments are meant to be precisely that: Environments that a business can run their daily business in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in, deployed on performance tiers in Azure with a guaranteed high level of availability and support.  
 
-You can create additional production environments for training or performance testing, for example.  
+Production environments are backed up automatically and frequently to help protect business data. For more information, see [How often are production databases backed up?](../faq.md#how-often-are-production-databases-backed-up).  
+
+You can create additional production environments for training or performance testing, for example. However, for training purposes, in many cases organizations will prefer to create a sandbox environment with production data. You can also create additional production environments to support offices in different countries.  
 
 You can have a maximum of three production environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
 
 ### Sandbox environments
 
-Sandbox environments are meant to be precisely that: Environments that you can play around with, use as  a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
+Sandbox environments are meant to be precisely that: Environments that you can play around with, use as a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
 
 You can also safely use sandboxes for training, such as for following a learning path from [Microsoft Learn](/learn/browse/?products=dynamics-business-central), because it's a safe environment to experiment with. If anything goes wrong, you just delete the sandbox and start over.  
 
