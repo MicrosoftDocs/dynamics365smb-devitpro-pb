@@ -18,12 +18,14 @@ You can write to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] d
 |OData call|Data impact|Triggers run on page and table in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] |  
 |----------------|-----------------|------------------------------------------------------------|  
 |`POST`|Creates a new entity.|`OnNewRecord` and `OnInsert`|  
-|`PUT` and `MERGE`|Modifies the specified existing entity.|`OnModify`|  
+|`PATCH`|Modifies the specified existing entity.|`OnModify`|  
 |`DELETE`|Deletes the specified existing entity.|`OnDelete`|  
   
  All calls fail if the user does not have the relevant permissions, and if the relevant property on the page, **InsertAllowed**, **ModifyAllowed**, or **DeleteAllowed**, is set to **No**.  
   
  You can use an OData web service in applications where you want users to be able to modify [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can show fields from the **Customer** table on a mobile device or in a browser so that a user can create, update, or delete customers in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+
+ PATCH operations requires the 'If-Match' header to be set, either with a retrieved ETag or with '*'.
   
 ### Company-Specific and Tenant-Specific OData Calls  
  In your implementation of the web service, you can specify which company in the database that a user can write to in the URIs that expose the web services. Similarly, you can specify the specific tenant that the change applies to if the database handles more than one tenant.  
