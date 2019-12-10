@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/23/2019
+ms.date: 12/10/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -33,7 +33,7 @@ For information about lifecycle support for [!INCLUDE [prodshort](includes/prods
 
 Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 14 days.
 
-For more information, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
+As an administrator, you you cannot access or manage these backups because they are managed automatically by Microsoft. For more information about the underlying technology, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
 
 ## Can I request a copy of the backup of my production database?
 
@@ -48,6 +48,8 @@ Yes, you can. You can find free eLearning content on the [Microsoft Learn site](
 You can find guidance for setting up [!INCLUDE [prodshort](developer/includes/prodshort.md)] in the application content. For more information, see [Setting Up Business Central](/dynamics365/business-central/setup).  
 
 You can also find relevant content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central).
+
+For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online)
 
 ## How can I troubleshoot my customers' online tenants?
 
