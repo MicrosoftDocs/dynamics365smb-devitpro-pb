@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 12/06/2019
+ms.date: 12/10/2019
 ms.author: edupont
 ---
 
@@ -63,7 +63,15 @@ You can create a sandbox environment that includes data from your production env
 
 Sandbox environments are handy for certain types of development scenarios because the debugging endpoint is open by default. This means that you can attach Visual Studio Code to a running system and debug through running code. It also allows you to publish directly to the environment from Code.
 
-You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
+You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.  
+
+### Pre-sales performance testing
+
+If you want to provide a prospect with an online environment where you can demonstrate performance, reliability, and functionality, you can sign up for a free trial, prepare any performance tests, switch to the 30 day free trial experience, immediately switch to the Premium user experience in the new My Company's Company Information page, wait 24 hours, and then run your performance tests.  
+
+That 30 day trial is as close to an actual production environment as you can get without an actual production environment. You only have those 30 days to run your tests and convince the prospect, of course, but provided that you have prepared everything in advance, it should give you time enough.  
+
+If the prospect is convinced and decides to buy [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then either let them keep the environment that they are currently using, or create a new production environment for them. If the tenant is yours rather than the prospects, then a new tenant will be provided to them.  
 
 ## Create a new production environment
 
