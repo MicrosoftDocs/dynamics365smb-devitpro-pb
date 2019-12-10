@@ -293,6 +293,7 @@
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## Queries
 ### [Overview](developer/devenv-query-overview.md)
