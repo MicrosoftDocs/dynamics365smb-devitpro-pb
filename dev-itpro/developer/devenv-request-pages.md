@@ -32,7 +32,7 @@ In addition to specifying options and filters, users can choose from the followi
 
 ## Filtering on request pages
 
-The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. 
+The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end-user can add more fields on which to filter to the request page. 
 
 Defining the `RequestFilterFields` property in the `dataitem()` part of the report code is done as illustrated in the following code example (which creates the request page shown in the above figure):  
 
