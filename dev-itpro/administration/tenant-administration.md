@@ -67,7 +67,7 @@ The Business Central Administration Center is a powerful tool for you to manage 
 
 When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated administrator from the administration center, you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
 
-The following tasks are not available to the delegated administrator:
+The following tasks are *not* available to the delegated administrator:
 
 - Set up jobs to run as scheduled tasks in the job queue
 - Use the **Edit in Excel** action or interact with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] data in Excel using the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] add-in for Excel.
