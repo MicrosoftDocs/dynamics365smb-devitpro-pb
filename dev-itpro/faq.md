@@ -53,7 +53,7 @@ For more information, see [Take prospects and customers online](deployment/deplo
 
 ## How can I troubleshoot my customers' online tenants?
 
-You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. You can also create a sandbox environment and use Visual Studio Code to debug that. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
 
 ## How does Microsoft handle database sizes?
 
