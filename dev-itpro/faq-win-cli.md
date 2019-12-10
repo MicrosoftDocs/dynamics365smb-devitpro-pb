@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/09/2019
+ms.date: 12/10/2019
 ---
 # FAQ About Windows Client and Business Central
 
-The first releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises included an installed client derived from Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will **no longer** be available for [!INCLUDE[prodshort](includes/prodshort.md)]. Find answers for some of the most common questions here.
+The first releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises included an installed client derived from Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. Find answers for some of the most common questions here.
 
 ## I have heard "modern clients only". What is this about?  
-Businesses and users want to be reassured that only the newest, most advanced, and up-to-date tools are being used to access their data. With [!INCLUDE[prodshort](includes/prodshort.md)] 2019 release wave 2, released October 2019, users switch to **modern experience** in the browser, the Android or iOS mobile apps or the Windows 10 desktop app, which are available through the respective stores.
+Businesses and users want to be reassured that only the newest, most advanced, and up-to-date tools are being used to access their data. With [!INCLUDE[prodshort](includes/prodshort.md)] 2019 release wave 2, released October 2019, users switch to the **modern experience** in the browser ("the web client"), the Android or iOS mobile apps, or the Windows 10 desktop app, which are available through the respective stores.
 
 Connecting the Windows client to [!INCLUDE[prodshort](includes/prodshort.md)] is not supported in [!INCLUDE[prodshort](includes/prodshort.md)] 2019 release wave 2 and onwards.
 
