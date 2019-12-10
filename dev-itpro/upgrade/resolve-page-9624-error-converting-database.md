@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-## Resolving Page 9624 Compilation Error 
+# Resolving Page 9624 Compilation Error 
 This article explains how to resolve the compilation error that you get for page **9624 Finish Design List Part** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prodshort.md)].
 
 ## Resolution

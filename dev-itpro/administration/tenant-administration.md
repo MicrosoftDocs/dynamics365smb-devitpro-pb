@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/03/2019
+ms.date: 12/05/2019
 ms.author: edupont
 ---
 
@@ -71,12 +71,16 @@ For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/i
 
 When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
 
-The following tasks are not available to the delegated administrator:
+The following tasks are *not* available to the delegated administrator:
 
 - Set up jobs to run as scheduled tasks in the job queue
 - Use the **Edit in Excel** action or interact with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] data in Excel using the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] add-in for Excel.
 
     You can still use the **Open in Excel** action to view data in Excel.
+
+- Use the **Invite External Accountant** assisted setup guide
+
+    Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.     
 
 ### Manage technical support
 
