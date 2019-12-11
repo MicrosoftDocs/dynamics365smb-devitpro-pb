@@ -3,7 +3,7 @@ title: Page Parts Overview
 description: "Provides and overview of the parts concept."
 author: mikebcMSFT
 ms.custom: na
-ms.date: 11/22/2019
+ms.date: 12/11/2019
 ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ The following table illustrates how parts could be creatively arranged on a page
 |![Illustration of a page displaying multiple parts above eachother.](media/parts-multipart-illustration.png)|Related lists can be displayed above eachother. This is a common pattern allowing one list to be filled by the selected record of another list.|
 |![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)|When records from two tables need to be compared together, parts can be displayed side by side.|
 
+<!-- reenable this table, when new topics have been written, and delete table below this section 
 ## Different types of parts
 Business Central offers different types of parts that display data in a specific way.
 
@@ -34,7 +35,16 @@ Business Central offers different types of parts that display data in a specific
 |[ListParts](devenv-designing-listparts.md)|Display a list of records|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Tabular step in a Wizard; Subpage on a Document page|
 |[CardParts](devenv-designing-cardparts.md)|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images or control addins.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Step in a Wizard|
 |[HeadlineParts](devenv-create-role-center-headline.md)|Display relevant insights from across the business|Role Centers only|
+-->
 
+## Different types of parts
+Business Central offers different types of parts that display data in a specific way.
+
+|PageType|Purpose|Hosting page types|
+|----|---|---|
+|**ListParts**|Display a list of records.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Tabular step in a Wizard; Subpage on a Document page.|
+|**CardParts**|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images or control addins.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Step in a Wizard.|
+|**HeadlineParts**|Display relevant insights from across the business.|Role Centers only.|
 
 ## Adding a part to a page
 To add a part to a page in Visual Studio Code, you add a part control on the hosting page object that references the page part object. The part control also defines a small set of properties, such as the caption that will accompany the part. This allows separation of responsibility: the page part object defines self-contained functionality, whilst the hosting page defines how the container of the part should behave without knowledge of its' functionality.
@@ -60,7 +70,7 @@ The size of a part is automatically determined by the client and will vary depen
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
 [FactBoxes](devenv-adding-a-factbox-to-page.md)  
-[Designing pages with multiple lists](devenv-designing-multilist-pages.md)
+<!-- [Designing pages with multiple lists](devenv-designing-multilist-pages.md) -->
 [Page Extension Object](devenv-page-ext-object.md)  
-[Personalizing Your Workspace](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-user)  
+[Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
 [Using Designer](devenv-inclient-designer.md)  
