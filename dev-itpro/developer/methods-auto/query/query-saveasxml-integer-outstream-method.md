@@ -69,7 +69,7 @@ Query.READ;
 var
     MyCustomerQuery: Query "My Customer Query";
     OK: Boolean;
-    Text000: TextConst ENU='Query was not saved.';
+    Text000: Label 'Query was not saved.';
 begin
     OK := MyCustomerQuery.SAVEASXML('c:\myquery.xml');  
     if not OK then

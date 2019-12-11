@@ -93,7 +93,7 @@ Query.READ;
 var
   MyCustomerQuery: Query "My Customer Query";
   OK: Boolean;
-  Text000: TextConst ENU='Query was not saved.';
+  Text000: Label 'Query was not saved.';
 begin
     OK := MyCustomerQuery.SAVEASCSV('c:\mycustomers.csv', 0, '1,10,40');  
     if not OK then  

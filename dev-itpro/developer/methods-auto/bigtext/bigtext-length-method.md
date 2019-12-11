@@ -49,7 +49,7 @@ In this example, the BigText variable is initialized with the text ‘ABCDEFG’
 var
     MyBigText: BigText;
     VarLength: Text;
-    Text000: TextConst ENU='VarLength = %1';
+    Text000: Label 'VarLength = %1';
 begin
     MyBigText.ADDTEXT('ABCDEFG');  
     VarLength := MyBigText.LENGTH;  

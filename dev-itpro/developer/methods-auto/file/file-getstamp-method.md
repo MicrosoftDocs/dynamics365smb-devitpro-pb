@@ -59,7 +59,7 @@ The time that the file was last written to. Optional.
     varDate: Date;
     varTime: Time;
     varFileName: Text;
-    Text000: TextConst ENU='This document was last written to on %1 at %2.';
+    Text000: Label 'This document was last written to on %1 at %2.';
 begin
     varFileName := 'C:\MyFolder\MyText.txt';  
     GETSTAMP(VarFileName, varDate, varTime);  

@@ -32,7 +32,7 @@ In addition to specifying options and filters, users can choose from the followi
 
 ## Filtering on request pages
 
-The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. 
+The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end-user can add more fields on which to filter to the request page. 
 
 Defining the `RequestFilterFields` property in the `dataitem()` part of the report code is done as illustrated in the following code example (which creates the request page shown in the above figure):  
 
@@ -86,7 +86,7 @@ In a complex report or XMLport that uses data from several tables, the functiona
 For data items and table elements whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
 
 > [!TIP]
-> For information about how to enter filter criteria on the request page, see [Filtering](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the Business Central application help.
+> For information about how to enter filter criteria on the request page, see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the Business Central application help.
 
 ## See Also
 [Report Object](devenv-report-object.md)  

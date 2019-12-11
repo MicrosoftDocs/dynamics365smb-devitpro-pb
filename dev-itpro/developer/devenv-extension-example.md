@@ -511,7 +511,7 @@ codeunit 50105 RewardsInstallCode
 For more information about install code, see [Writing Extension Install Code](devenv-extension-install-code.md).
 
 ## Upgrade code
-When you upgrade an extension to a newer version, if any modifications to the existing data are required to support the upgrade, you must write upgrade code in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to customer records to ALUMINUM. The upgrade codeunit will run when you run the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade?view=businesscentral-ps) cmdlet. 
+When you upgrade an extension to a newer version, if any modifications to the existing data are required to support the upgrade, you must write upgrade code in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to customer records to ALUMINUM. The upgrade codeunit will run when you run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade?view=businesscentral-ps) cmdlet. 
 
 
 > [!IMPORTANT]

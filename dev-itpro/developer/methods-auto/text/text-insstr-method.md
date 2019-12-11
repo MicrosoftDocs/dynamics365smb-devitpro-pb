@@ -58,10 +58,10 @@ var
     Str: Text[60];  
     SubString: Text[60];  
     NewString: Text[60]; 
-    Text000: TextConst ENU='Press ENTER to continue.';  
-    Text001: TextConst ENU='or ESC';
-    Text002: TextConst ENU=' The test string before INSSTR is called:>%1<';
-    Text003: TextConst ENU=' The resulting string after INSSTR is called:>%1<'; 
+    Text000: Label 'Press ENTER to continue.';  
+    Text001: Label 'or ESC';
+    Text002: Label ' The test string before INSSTR is called:>%1<';
+    Text003: Label ' The resulting string after INSSTR is called:>%1<'; 
 begin
     Str := Text000;  
     SubString := Text001;  

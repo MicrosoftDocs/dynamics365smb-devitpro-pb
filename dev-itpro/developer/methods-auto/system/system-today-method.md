@@ -46,7 +46,7 @@ You can only use the **TODAY** method to retrieve the current date from the oper
  
 ```  
 var
-    Text000: TextConst ENU='The current date is: %1';
+    Text000: Label 'The current date is: %1';
 begin
     MESSAGE(Text000, TODAY);  
 end;

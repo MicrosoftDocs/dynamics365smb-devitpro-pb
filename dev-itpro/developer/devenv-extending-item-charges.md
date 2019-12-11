@@ -15,7 +15,7 @@ ms.author: grobyns
 # Extending Item Charge Distribution Methods 
 To ensure correct valuation, your inventory items must carry any added costs, such as freight, physical handling, insurance, and transportation that you incur when purchasing or selling the items.
 
-Users can add these costs by adding a Charge (Item) line to the involved purchase or sales document. For more information, see [Use Item Charges to Account for Additional Trade Costs](https://docs.microsoft.com/dynamics-nav-app/payables-how-assign-item-charges) in application help. 
+Users can add these costs by adding a Charge (Item) line to the involved purchase or sales document. For more information, see [Use Item Charges to Account for Additional Trade Costs](/dynamics-nav-app/payables-how-assign-item-charges) in application help. 
 
 Item charges are distributed over other item lines in the document according to a distribution method. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers four distribution methods out of the box: **Equally**, **By Amount**, **By Weight**, and **By Volume**. This article explains how to remove or add item charge distribution methods. The article describes the method for purchases. The steps are similar for sales, except the events are located in codeunit 5807, **Item Charge Assgnt. (Sales)**.
 

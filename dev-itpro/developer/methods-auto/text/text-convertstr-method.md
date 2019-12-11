@@ -60,11 +60,11 @@ var
     FromChars: Text[30];
     ToChars: Text[30];
     NewString: Text[30];
-    Text000: TextConst ENU='Do you want to leave without saving?';
-    Text001: TextConst ENU='lws';
-    Text002: TextConst ENU='LWS';
-    Text003: TextConst ENU='The original sentence is \\: %1';
-    Text004: TexConst ENU='The sentence is converted to:\\ %1';
+    Text000: Label 'Do you want to leave without saving?';
+    Text001: Label 'lws';
+    Text002: Label 'LWS';
+    Text003: Label 'The original sentence is \\: %1';
+    Text004: Label 'The sentence is converted to:\\ %1';
 begin
     OriginalString := Text000;  
     FromChars := Text001;  

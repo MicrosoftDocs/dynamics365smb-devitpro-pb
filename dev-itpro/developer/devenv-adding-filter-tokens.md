@@ -71,4 +71,4 @@ This example extends the application with a new token word "%mysalesperson" repr
 -->
 
 ## See Also 
-[Sorting, Searching and Filtering Lists](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters)
+[Sorting, Searching and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters)

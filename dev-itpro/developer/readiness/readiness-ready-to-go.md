@@ -72,9 +72,10 @@ Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prod
 
 ### Shortcuts to developing and publishing Business Central apps documentation
 
-+ [Marketing Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
-+ [Technical Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
-+ [How to create an effective sales landing page](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
-+ [How to make compelling videos](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
++ [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
++ [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
++ [How to create an effective sales landing page](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
++ [How to make compelling videos](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
+
 ### Learning catalog
-+ ["Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
++ [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

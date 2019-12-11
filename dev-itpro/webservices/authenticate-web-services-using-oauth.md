@@ -149,7 +149,7 @@ To complete the following tasks in this article, make sure your system meets the
 
 When [!INCLUDE[prodshort](../developer/includes/prodshort.md)] was registered in the Azure AD tenant, it was assigned an APP ID URI. For example, in this article, the APP ID URI is `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`.
 
-If you have not already done so, set the **Azure AD App ID URI** setting in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+If you have not already done so, set the **Azure AD App ID URI** setting in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance configuration to the same value as the APP ID URI in Azure. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/admintool.md)], or by modifying the server instance CustomSettings.config file directly. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 
 <!-- 
@@ -194,7 +194,7 @@ Use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to publ
 
     In the OData URL, `myserver` is the computer that is running the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance, `7048` is the port number used for OData, and `BC`is the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance.
 
-    For more information about publishing, see [Publish a Web Service](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/webservices/publish-web-service).
+    For more information about publishing, see [Publish a Web Service](/dynamics365/business-central/dev-itpro/webservices/publish-web-service).
 5. After you publish the web service, you can now enter the OData URL in the address of an Internet browser.
 
     Your are prompted for your user name and password. The user name and password that you enter is the user name and password (or web service access key) of your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] account; not your Office 365 or Azure AD user name and password.
@@ -209,7 +209,7 @@ Although you have not yet created the console application, the next thing to do 
 
 1. Using the Azure Portal, register the console application as a native client application.
 
-    For information about how to do this, follow the instructions in [Quickstart: Register an app with the Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app).
+    For information about how to do this, follow the instructions in [Quickstart: Register an app with the Azure Active Directory](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app).
 
     Use the following table as guide to help you determine some of the registration settings.
 
@@ -225,7 +225,7 @@ Although you have not yet created the console application, the next thing to do 
     2. Search for and select the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application,
     3. Select **Delegated Permissions**, and then save the changes.
 
-    For more information, see [Permissions and consent in the Microsoft identity platform endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).
+    For more information, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
    <!--configure the custom application to have delegated permission to access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application.-->
 <!-- 
@@ -535,7 +535,7 @@ The `access token` is the one that is actually used when the client application 
 
 The `refresh token` is used to obtain new access/refresh token pairs when the current access token expires. It lives much longer (for exampl, 3 months by default).
 
-The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes).  
+The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).  
 
 <!--
 ```

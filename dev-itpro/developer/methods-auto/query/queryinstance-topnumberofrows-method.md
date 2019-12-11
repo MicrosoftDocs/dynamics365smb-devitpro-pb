@@ -112,7 +112,7 @@ codeunit 50100 MyQueryTop10
     var
         MyQuery: Query "Customer_Sales_Quantity";
         Counter: Integer;
-        Text000: TextConst ENU = 'count %1.';
+        Text000: Label 'count %1.';
 }
 ```
 

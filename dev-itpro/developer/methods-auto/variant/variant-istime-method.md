@@ -45,8 +45,8 @@ var
     MyTime: Time;
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: TextConst ENU='Does the variant >%1\< contain a time variable? %2.';
-    Text001: TextConst ENU='Does the variant >%1\< contain a code variable? %2.';
+    Text000: Label 'Does the variant >%1\< contain a time variable? %2.';
+    Text001: Label 'Does the variant >%1\< contain a code variable? %2.';
 begin
     MyTime := TIME;  
     MyVariant := MyTime;  

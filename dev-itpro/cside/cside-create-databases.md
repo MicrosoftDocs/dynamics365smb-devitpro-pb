@@ -18,8 +18,6 @@ You can create new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] dat
 
 When you create a database you must specify the SQL Server instance for the database and the authentication type.  
 
-
-
 <!-- 
 ### To download symbols
 
@@ -64,7 +62,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
  
     <!--From the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], on the **Tools** menu, choose **Sync. Schema For All Tables**, and then **With Validation**.  For more information, see [Synchronizing Table Schemas](Synchronizing-Table-Schemas.md).-->
 
-    You cannot use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] in this case. You must use the [Sync-NAVTenant cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], for example:
+    You cannot use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] in this case. You must use the [Sync-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], for example:
 
     ```
     Sync-NAVTenant -ServerInstance BC140 
@@ -165,7 +163,7 @@ Specifies database settings that determine how [!INCLUDE[navnow](../developer/in
 |---------------------------------|---------------------------------------|  
 |**Save license in database**|Specifies that the license file is uploaded and stored in the database instead of on the server. This is useful if you are hosting several databases with separate license files on the same server.| 
 
-# Advanced Tab
+## Advanced Tab
 Specifies how locking is handled in the database and specifies the start ID for elements on new objects.  
   
 ### Locking Options

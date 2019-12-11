@@ -48,7 +48,8 @@ If you are interested in listing consulting services on AppSource, you can find 
 To learn more about Microsoft AppSource consulting services offerings select the following links:  
 - [AppSource Consulting Offerings](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1) 
 - [Partner Eligibility](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf)  
-- [Partner Nomination Form](https://appsource.microsoft.com/partners/list-consulting-service) 
+- [Partner Nomination Form](https://appsource.microsoft.com/partners/list-consulting-service)  
+- [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)
 
 
 

@@ -66,7 +66,7 @@ This parameter only applies if ForUpdate is true. If you are going to modify any
 var
     MyRecordRef: RecordRef;
     MyFieldRef: FieldRef;
-    Text000: TextConst ENU='%1: "%2" is found in the set of records.';
+    Text000: Label '%1: "%2" is found in the set of records.';
 begin    
     MyRecordRef.OPEN(18);  
     MyFieldRef := MyRecordRef.FIELD(1);  

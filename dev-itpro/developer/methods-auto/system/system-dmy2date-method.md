@@ -53,7 +53,7 @@ var
     Month: Integer;
     Year: Integer;
     OutputDate: Date;
-    Text000: TextConst ENU="Day number %1, month number %2, and year number %3 corresponds to the date %4.";  
+    Text000: Label "Day number %1, month number %2, and year number %3 corresponds to the date %4.";  
 begin  
     Day := 17;  
     Month := 2;  

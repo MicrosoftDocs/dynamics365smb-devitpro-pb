@@ -58,7 +58,7 @@ var r : record 2000000006;
 ```  
 var
     MyRecordRef: RecordRef;
-    Text000: TextConst ENU='The %1 table contains %2 records.'; 
+    Text000: Label 'The %1 table contains %2 records.'; 
 begin    
     MyRecordRef.OPEN(DATABASE::Customer);  
     MESSAGE(Text000, MyRecordRef.CAPTION, MyRecordRef.COUNT);  

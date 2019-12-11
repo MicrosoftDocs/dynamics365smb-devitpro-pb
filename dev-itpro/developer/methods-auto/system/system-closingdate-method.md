@@ -53,7 +53,7 @@ The input date.
 var
     Date1: Date;
     CloDate: Date;
-    Text000: TextConst ENU='The closing date for %1 is %2.';
+    Text000: Label 'The closing date for %1 is %2.';
 begin
     Date1 := 20140404D;  
     CloDate := CLOSINGDATE(Date1);  
@@ -73,7 +73,7 @@ var
     Date1: Date;
     CloDate1: Date;
     CloDate2: Date;
-    Text000: TextConst ENU='The closing date for %1 is %2.';
+    Text000: Label 'The closing date for %1 is %2.';
 begin
     // Date1 := 20140404C;  
     // The previous statement does not compile because the compiler   

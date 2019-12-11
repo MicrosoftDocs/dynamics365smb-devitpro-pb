@@ -48,8 +48,8 @@ The value to insert in the field.
 var
     MyFieldRef: FieldRef;
     EntryRecref: RecordRef;
-    Text000: TextConst ENU='The G/L Account No. for record %1 is %2.';
-    Text001: TextConst ENU='The G/L Account No. for record %1 has changed to %2.';
+    Text000: Label 'The G/L Account No. for record %1 is %2.';
+    Text001: Label 'The G/L Account No. for record %1 has changed to %2.';
 begin
     EntryRecref.OPEN(17);  
     if EntryRecref.FINDFIRST then begin  

@@ -55,8 +55,8 @@ var
     CustomerRecref: RecordRef;
     MyFieldRef: FieldRef;
     LinkID: Integer;
-    Text000: TextConst ENU='The link with ID %1 has been added.';
-    Text001: TextConst ENU='The customer cannot be found.';
+    Text000: Label 'The link with ID %1 has been added.';
+    Text001: Label 'The customer cannot be found.';
 begin  
     CustomerNum := '01121212';  
     CustomerRecref.OPEN(18);  

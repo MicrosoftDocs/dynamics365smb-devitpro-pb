@@ -13,7 +13,7 @@ ms.author: solsen
 ---
 
 # Generating Delta files
-You can use the `Compare-NAVApplicationObject` PowerShell cmdlet to generate .delta files from two versions of a set of application objects. For more information about the PowerShell cmdlet, see [Compare-NAVApplicationObject](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools/compare-navapplicationobject?view=businesscentral-ps).
+You can use the `Compare-NAVApplicationObject` PowerShell cmdlet to generate .delta files from two versions of a set of application objects. For more information about the PowerShell cmdlet, see [Compare-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/compare-navapplicationobject?view=businesscentral-ps).
 
 The cmdlet has a `ExportToNewSyntax` switch that allows generating .delta files that can be used as a starting point for creating extensions. Setting the `ExportToNewSyntax` flag generates .delta files that contain additional information needed to generate the correct structure and layout of extension objects.  
 
@@ -42,5 +42,5 @@ Compare-NAVApplicationObject -OriginalPath "C:\PageWith2Controls.txt" -ModifiedP
 [The Txt2Al Conversion Tool](devenv-txt2al-tool.md)  
 [Developing Extensions](devenv-dev-overview.md)   
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Compare-NAVApplicationObject](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools/compare-navapplicationobject?view=businesscentral-ps)
+[Compare-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/compare-navapplicationobject?view=businesscentral-ps)
 

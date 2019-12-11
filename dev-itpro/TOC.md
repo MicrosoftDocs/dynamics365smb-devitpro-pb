@@ -113,11 +113,11 @@
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
 ### Windows PowerShell Cmdlets
-#### [Windows PowerShell Cmdlets for Business Central](https://docs.microsoft.com/powershell/business-central/overview)
-#### [Administration Cmdlets](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management)
-#### [Administration Cmdlets for Extensions](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management)
-#### [Development Cmdlets](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools)
-#### [Development Cmdlets for Extensions](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools)
+#### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
+#### [Administration Cmdlets](/powershell/module/microsoft.dynamics.nav.management)
+#### [Administration Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.management)
+#### [Development Cmdlets](/powershell/module/microsoft.dynamics.nav.model.tools)
+#### [Development Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
 ### Configuring Business Central Web Server
@@ -299,6 +299,7 @@
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## Queries
 ### [Overview](developer/devenv-query-overview.md)
@@ -618,7 +619,8 @@
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
 ## Deprecated Features
-### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
+### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
+### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)

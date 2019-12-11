@@ -39,7 +39,7 @@ The name of the company, or an empty string if no company has been selected.
 ```
 var
     CompName: Text[1024];
-    Text000: TextConst ENU='The name is %1.';
+    Text000: Label 'The name is %1.';
 begin
     CompName := COMPANYNAME;  
     MESSAGE(Text000, CompName);  

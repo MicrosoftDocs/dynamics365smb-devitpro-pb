@@ -43,7 +43,7 @@ var
     MyFieldRef: FieldRef;
     ItemRecref: RecordRef;
     MyRecRef: RecordRef;
-    Text000: TextConst ENU='The selected field is from table %1.';
+    Text000: Label 'The selected field is from table %1.';
 begin
     ItemRecref.OPEN(DATABASE::Item);  
     MyFieldRef := ItemRecref.FIELD(1);  

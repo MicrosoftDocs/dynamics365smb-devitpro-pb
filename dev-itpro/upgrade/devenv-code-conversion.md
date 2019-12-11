@@ -32,11 +32,11 @@ You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev
 
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
 - C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
-- [Compile-NAVApplicationObject](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
+- [Compile-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
 
 ## Task 3: Export the application objects to the new TXT syntax
 
-Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
+Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
 
 - Omit omit all system objects, which have IDs in the 2000000000 range. 
 - Use the `ExportToNewSyntax` switch to export the objects in a syntax that is compatible with the Txt2Al conversion tool.
@@ -446,11 +446,11 @@ When your converted solutions compile to an app, you can deploy and run it. You 
 
 ### Publishing the AL solution to an empty database 
 
-1. Use the [Create-NAVDatabase](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet to create a new database.
+1. Use the [Create-NAVDatabase](/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet to create a new database.
 
 2. Create a new service instance and connect it to the newly created database. 
 
-3. Use the [Publish-NAVApp](https://docs.microsoft.com/powershell/module/Microsoft.Dynamics.Nav.Apps.Management/Publish-NAVApp?view=businesscentral-ps) cmdlet to publish the System.app by specifying `-PackageType SymbolsOnly`.
+3. Use the [Publish-NAVApp](/powershell/module/Microsoft.Dynamics.Nav.Apps.Management/Publish-NAVApp?view=businesscentral-ps) cmdlet to publish the System.app by specifying `-PackageType SymbolsOnly`.
 
 4. Add any custom .NET assemblies to your service's Add-Ins folder or create symbolic links in the Add-Ins folder pointing to the folders in your project's `assemblyProbingPaths`. 
 

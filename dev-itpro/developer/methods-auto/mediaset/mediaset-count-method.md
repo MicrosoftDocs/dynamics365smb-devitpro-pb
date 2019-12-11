@@ -44,7 +44,7 @@ The number of media objects that are included in the MediaSet of a record.
  var
     itemRec: Record Item;
     count: Integer;
-    Text000: TextConst ENU='The number of media files: %1';
+    Text000: Label 'The number of media files: %1';
 begin
     itemRec.Get('1000');  
         count := (itemRec.Picture.Count);  

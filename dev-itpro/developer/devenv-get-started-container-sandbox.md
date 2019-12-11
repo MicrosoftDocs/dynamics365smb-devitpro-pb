@@ -11,7 +11,7 @@ ms.author: jswymer
 ---
 
 # Get started with the Container Sandbox Development Environment
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to the AL development environment. 
 
 You set up a container sandbox by running the **SANDBOX ENVIRONMENT (CONTAINER)** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whether you want an Azure-hosted or locally hosted container sandbox. See the next section for details.
 
@@ -85,8 +85,7 @@ You now have a container sandbox set up on your computer. The following shortcut
 
 - **\<Container name\> Windows Client** - opens the Windows client for your application in the container.
 - **\<Container name\> Web Client** - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
-- **\<Container name\> CSIDE** - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
-- **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/powershell/business-central/overview), which you can run against the container sandbox environment. 
+- **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (/powershell/business-central/overview), which you can run against the container sandbox environment. 
 - **\<Container name\>Command Prompt**  - opens a Windows command prompt in the container.
 
 
