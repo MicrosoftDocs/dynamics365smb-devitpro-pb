@@ -70,7 +70,7 @@ The size of a part is automatically determined by the client and will vary depen
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
 [FactBoxes](devenv-adding-a-factbox-to-page.md)  
-<!-- [Designing pages with multiple lists](devenv-designing-multilist-pages.md) -->
 [Page Extension Object](devenv-page-ext-object.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
 [Using Designer](devenv-inclient-designer.md)  
+<!-- [Designing pages with multiple lists](devenv-designing-multilist-pages.md) -->
