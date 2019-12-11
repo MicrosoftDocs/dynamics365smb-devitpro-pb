@@ -1,8 +1,8 @@
 ---
-title: "Table key property changes that cause destructive changes should not be removed"
+title: "Table key property changes that cause destructive changes must not be removed"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 12/10/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0042
-Table key property changes that cause destructive changes should not be removed  
+Table key property changes that cause destructive changes must not be removed  
 
 ## Description
-Table key property changes that cause destructive changes should not be removed.
+Table key property changes that cause destructive changes must not be removed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

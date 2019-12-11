@@ -2,7 +2,7 @@
 title: "A return type cannot be modified in events and external procedures"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 12/10/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
