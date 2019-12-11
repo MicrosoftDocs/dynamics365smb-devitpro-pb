@@ -65,19 +65,7 @@ Sandbox environments are handy for certain types of development scenarios becaus
 
 You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.  
 
-### Pre-sales performance evaluation
-
-If you want to provide a prospect with an online environment where you want to demonstrate service performance and reliability in addition to demonstrating service functionality, you need to perform an few extra steps. 
-
-To demonstrate the functionality of the service, without focusing on performance:
-You can sign up your prospect for a free trial, in their production environment create a new production company (thereby switching to the 30 day free trial experience), if your plan is to show Premium functionaity then switch to the Premium user experience in the new My Company's Company Information page, populate the new company with the data required for your evaluation scenarios and present the environment to the prospect. 
-
-To demonstrate the functionality of the service, with a focus on performance:
-In addition to the steps listed above you need to signup the prospect for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Premium Trial offer available via CSP, wait 24 hours, and then run your performance evaluation.   
-
-That 30 day trial is as close to an actual production environment perfromance as you can get. You only have those 30 days to run your tests and convince the prospect, of course, but provided that you have prepared everything in advance, it should give you time enough.  
-
-If the prospect is convinced and decides to buy [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then either let them keep the environment that they are currently using, or create a new production environment for them. If the tenant is yours rather than the prospects, then a new tenant will be provided to them.  
+[!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
 ## Create a new production environment
 

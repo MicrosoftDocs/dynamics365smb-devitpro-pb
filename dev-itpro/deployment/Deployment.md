@@ -9,11 +9,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2019
+ms.date: 12/11/2019
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-The topics in the Deployment section are intended to help an administrator configure a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution online or on-premises.  
+The topics in the Deployment section are intended to help a partner prepare a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution for a customer online or on-premises.  
 
 ## Take prospects and customers online
 
@@ -24,6 +24,8 @@ You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer
 You must enroll in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) in order to service [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Cloud Solution Provider program - selling in-demand cloud solutions](/partner-center/csp-overview). In the Microsoft Partner Center documentation, you can also learn how to [add a customer](/partner-center/add-a-new-customer), [assign licenses to users](/partner-center/assign-licenses-to-users), and [create new subscriptions](/partner-center/create-a-new-subscription). [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prodshort](../developer/includes/prodshort.md)]-specific license types that you can assign to users.  
 
 For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
+
+[!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
 ### Managing [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
 
