@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 12/11/2019
 ---
-# FAQ About Windows Client and Business Central
+# FAQ About the Windows Client and Business Central
 
 The first releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises included an installed client derived from Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. Find answers for some of the most common questions here.
 
@@ -72,7 +72,7 @@ Therefore, C/SIDE is discontinued for [!INCLUDE[prodshort](includes/prodshort.md
 ## See Also
 [FAQ for Developing in AL](developer/devenv-dev-faq.md)  
 [Features not implemented in on-premises deployments of [!INCLUDE[prodlong](includes/prodlong.md)]](features-not-implemented-on-premises.md)  
-[Business Central Component and System Topology, Additional Components](/business-central/dev-itpro/deployment/product-and-architecture-overview.md#additional-components)  
+[Business Central Component and System Topology, Additional Components](deployment/product-and-architecture-overview.md#additional-components)  
 [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)  
 [Dynamics 365 Business Central Compliance](/dynamics365/business-central/compliance/compliance-overview)  
 [FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)  
