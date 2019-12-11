@@ -1,6 +1,6 @@
 ---
 title: Migration On-Premises Data | Microsoft Docs
-description: Learn how to set up cloud data migrartion from on-premises to your Business Central tenant so you can migrate to the  cloud version of Business Central.
+description: Learn how to set up cloud data migration from on-premises to your Business Central tenant so you can migrate to the cloud version of Business Central.
 author: bmeier94
 
 ms.reviewer: edupont
@@ -10,25 +10,25 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 10/01/2019
+ms.date: 12/09/2019
 ms.author: bmeier
 
 ---
-# Replicating On-Premises Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+# Migrating On-Premises Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 Data migration is the process of securely migrating data from your on-premises SQL Server instance to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. The process uses the Azure Data Factory (ADF) to migrate the data between databases directly, meaning it does not look at any permissions within the applications you are transferring data between, only SQL permissions.  
 
 In order for the data migration to take place, you must successfully complete the **Cloud Migration Setup** assisted setup wizard in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. Once the wizard is complete and data migration is activated, an initial data migration will happen at the scheduled time. Alternatively, you can trigger the data migration process manually.  
 
-Data is replicated between the two systems on a per-table basis, and success and failures are tracked for each table. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed. Tables will fail to migrate if they cannot be found, or if the schema does not match between the cloud and the on-premises tables.  
+Data is migrated between the two systems on a per-table basis, and success and failures are tracked for each table. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed. Tables will fail to migrate if they cannot be found, or if the schema does not match between the cloud and the on-premises tables.  
 
-The initial data migration time can vary depending factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds. The initial replication will take the longest amount of time to complete because all data is migrating. After the initial migration, only changes in data will be migrated so they should run more quickly.  You do not need to run the migration process more than once if you don't want to but if you are running the migration while users are still using the on-premises system you will need to run at least one more migration in order to ensure all data was moved to the cloud before you start transacting in the cloud tenant.  
+The initial data migration time can vary depending factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds. The initial migration will take the longest amount of time to complete because all data is migrating. After the initial migration, only changes in data will be migrated so they should run more quickly.  You do not need to run the migration process more than once if you don't want to, but if you are running the migration while users are still using the on-premises system you will need to run at least one more migration in order to ensure all data was moved to the cloud before you start transacting in the cloud tenant.  
 
-## Data replication from Business Central on-premises
+## Data Migration from Business Central on-premises
 
 Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. The data migration can be started quite easily from the assisted setup wizard in your on-premises solution. For more information, see [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md).  
 
-### Replicating data from extensions
+### Migrating data from extensions
 
 When your on-premises solution is connected to the cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production tenant to help avoid any data failures or unintended consequences.  
 
@@ -38,21 +38,21 @@ In certain circumstances, you may want to not migrate all data. Here are a few e
 
 - The extension is installed in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant but not in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution
 
-    In this case, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will attempt to replicate the data but show a warning. Since the extension is not installed on-premises, any table related to that extension table will not migrate, and warning notifications will appear in the cloud migration status page.
+    In this case, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will attempt to migrate the data but show a warning. Since the extension is not installed on-premises, any table related to that extension table will not migrate, and warning notifications will appear in the cloud migration status page.
 
-    If you own the extension, we recommend that you set the **ReplicateData** property to *No* on the extension tables. If you do not, and if you want data to migrate, install the extension in both your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant and your on-premises solution. If you do not want data to replicate, uninstall the extension from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant.  
+    If you own the extension, we recommend that you set the **ReplicateData** property to *No* on the extension tables. If you do not, and if you want data to migrate, install the extension in both your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant and your on-premises solution. If you do not want data to migrate, uninstall the extension from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant.  
 
 - The extension references a base table
 
     This can cause your base table to appear empty when you view data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. If that happens, uninstall the extension from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, and then run the cloud migration process again.
 
-### Data that is not replicated
+### Data that is not migrated
 
-During the data replication process, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not replicate most system tables, users, and permissions.  
+During the data migration process, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not migrate most system tables, users, and permissions.  
 
-## Data replication from Dynamics GP
+## Data migration from Dynamics GP
 
-When using the cloud migration for Dynamics GP 2018 R2, the following information is migrated from Dynamics GP to Business Central online:
+When using the cloud migration for Dynamics GP 2018 R2 or later, the following information is migrated from Dynamics GP to Business Central online:
 
 - Chart of Accounts master records as of the time of the migration
 
@@ -86,9 +86,10 @@ When using the cloud migration for Dynamics GP 2018 R2, the following informatio
 - Vendor master records and outstanding transactions from the Payables module
 
     These transactions will be brought in as the amount remaining in Dynamics GP.
+
 - Inventory items
 
-    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Currently, the data replication brings in the quantity on hand for the items at the time of migration. This quantity is brought into the blank location.
+    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Currently, the data migration brings in the quantity on hand for the items at the time of migration. This quantity is brought into the blank location.
 
 - Historical data from Sales Order Processing, Purchase Order Processing, and Inventory
 
@@ -100,6 +101,7 @@ When using the cloud migration for Dynamics SL 2018 CU 1, the following informat
 
 - Chart of Accounts master records as of the time of the migration
 - Account Balance as of the time of the migration
+
 - Customer master records and outstanding transactions from the Receivables module
 
     These transactions will be brought in as the amount remaining in Dynamics SL.
@@ -118,7 +120,7 @@ When using the cloud migration for Dynamics SL 2018 CU 1, the following informat
 
 ## Upgrading to a new version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 
-If you upgrade to a new version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant contains different extensions for the intelligent insights. For more information, see [Business Central Intelligent Cloud Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
+If you upgrade to a new version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant contains different extensions for the cloud migration. For more information, see [Business Central Intelligent Cloud Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 
 > [!IMPORTANT]
 > You must always install, publish, or upgrade the **Intelligent Cloud Base Extension** extension first, and then the product-specific extension or extensions. Also, if your on-premises solution is [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then you must update the extensions both on-premises and online.

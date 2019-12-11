@@ -42,20 +42,26 @@ You can create environments of different types. Which type of environment to cho
 
 ### Production environments
 
-Production environments are meant to be precisely that: Environments that a business can run their daily business in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in, deployed on performance tiers in Azure with a guaranteed availability and support.  
+Production environments are meant to be precisely that: Environments that a business can run their daily business in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in, deployed on performance tiers in Azure with a guaranteed high level of availability and support.  
+
+Production environments are backed up automatically and frequently to help protect business data. For more information, see [How often are production databases backed up?](../faq.md#how-often-are-production-databases-backed-up).  
+
+You can create additional production environments for training or performance testing, for example. However, for training purposes, in many cases organizations will prefer to create a sandbox environment with production data. You can also create additional production environments to support offices in different countries.  
 
 You can have a maximum of three production environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
 
 ### Sandbox environments
 
-Sandbox environments are meant to be precisely that: Environments that you can play around with, use as  a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
+Sandbox environments are meant to be precisely that: Environments that you can play around with, use as a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
 
 You can also safely use sandboxes for training, such as for following a learning path from [Microsoft Learn](/learn/browse/?products=dynamics-business-central), because it's a safe environment to experiment with. If anything goes wrong, you just delete the sandbox and start over.  
 
 > [!IMPORTANT]
 > The automatic backup that applies to production environments does not apply to sandbox environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart, but you cannot request a database export.
 
-You can create a sandbox environment that includes data from your production environment for debugging purposes, for example. But if you want to run performance tests, or similar benchmarking, the sandbox is not reliable enough for that purpose. This is because sandboxes run in a different performance tier on Azure than production environments. Instead, create a dedicated environment based on the Production environment type - this gives you the exact experience and performance that users will experience in the actual production environment.
+You can create a sandbox environment that includes data from your production environment for debugging purposes, for example. But if you want to run performance tests, or similar benchmarking, the sandbox is not reliable enough for that purpose. This is because sandboxes run in a different performance tier on Azure than production environments. Instead, create a dedicated environment based on the Production environment type - this gives you the exact experience and performance that users will experience in the actual production environment.  
+
+Sandbox environments are handy for certain types of development scenarios because the debugging endpoint is open by default. This means that you can attach Visual Studio Code to a running system and debug through running code. It also allows you to publish directly to the environment from Code.
 
 You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
 
@@ -70,14 +76,17 @@ To create a production environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, in the **Environment Type** list, choose **Production**.
-3. In the **Country** list, select the country for the environment. The selected country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+3. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
 4. Select **Create**.
 
-When the new production environment is created, it will be on the latest production version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+When the new production environment is created, it will be based on the latest production version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ## <a name="create-a-sandbox-environment"></a>Create a new sandbox environment
 
 A sandbox environment is a non-production instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Isolated from production, a sandbox environment is the place to safely explore, learn, demo, develop, and test the service without the risk of affecting the data and settings of your production environment.
+
+> [!IMPORTANT]
+> Make sure that you understand the limitations of a sandbox before you create a new sandbox environment. For more information, see the [Sandbox environments](#sandbox-environments) section.
 
 > [!NOTE]
 > Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three sandbox environments.
@@ -87,18 +96,18 @@ To create a sandbox environment:
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, specify a name for the new environment.
 3. In the **Create Environment** pane, in the **Environment Type** list, choose **Sandbox**.
-4. Specify if you want the sandbox environment to contain a copy of another environment. Ifyou choose this option, you must specify the environment to copy.
+4. Specify if you want the sandbox environment to contain a copy of another environment. If you choose this option, you must specify which environment to copy.
     > [!NOTE]
-    > When you create a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will also contain all the per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
-5. In the **Country** list, select the country for the environment. The selected country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
-6. Select the relevant application version for the new sandbox environment from the **Version** list.
+    > When you create a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will also contain all per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
+5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+6. Choose the relevant application version for the new sandbox environment from the **Version** list if more than one version is available.
 7. Select **Create**.
     > [!NOTE]
     > The sandbox environment will not be accessible until the **State** shows *Active*.
 
-A single, default sandbox environment can also be created from within a page in the production environment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. For more information, see [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json).  
+A single, default sandbox environment can also be created in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. For more information, see [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 
-To delete a sandbox environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then Select **Delete** on the action ribbon.
+To delete a sandbox environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then choose **Delete** on the action ribbon.
 
 ### Precautions for sandbox environments with production data
 
