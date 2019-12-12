@@ -6,11 +6,11 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2019
+ms.date: 12/10/2019
 ---
 # Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 
-As a [!INCLUDE[prodshort](developer/includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
+Each customer of [!INCLUDE [prodshort](developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. As a [!INCLUDE[prodshort](developer/includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
 
 In this section, you can learn about the tools that are available to you to help you troubleshoot your customers' [!INCLUDE [prodshort](developer/includes/prodshort.md)].  
 
@@ -64,6 +64,7 @@ The [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] is your 
 
 [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)  
 [The Business Central Administration Center](administration/tenant-admin-center.md)  
+[Managing Technical Support](administration/manage-technical-support.md)  
 [Deployment Overview](deployment/Deployment.md)  
 [Administration of Business Central Online](administration/tenant-administration.md)  
 [Administration of Business Central On-Premises](administration/Administration.md)  

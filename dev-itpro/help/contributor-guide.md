@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/15/2019
+ms.date: 12/12/2019
 ms.author: edupont
 ---
 
@@ -16,22 +16,25 @@ The source files for the Help for the base application is available in public Gi
 
 You can also find guidance in the [Docs Contributor Guide](/contribute/).  
 
-## GitHub repos
+## Get content from the GitHub repos
 
 There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo contains the source content in English (US). If you want access to the content in other languages, navigate to the relevant repo - the names follow this pattern: ```dynamics365smb-docs-pr.\<language>-\<country>```, such as [dynamics365smb-docs-pr.da-DK](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-DK) for the Danish version.  
 
-When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated weekly, and the related language-specific repos are updated less frequently, based on when new translations are made available. YIf you fork one of our repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
+When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated weekly, and the related language-specific repos are updated less frequently, based on when new translations are made available. If you fork one of our repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
 
 > [!TIP]
-> You are not required to make your GitHub repos public. When you fork a public repo, you can specify in the settings for the new repo if the repo is public, private, or available only to specific GitHub accounts.
+> You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a Help Server website, for example. For more information, see the [Getting by without GitHub](#getting-by-without-github) section. However, if you want to extend or customize the Microsoft content, we recommend that you join us in GitHub.
 
-For guidance about the Microsoft-provided content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], see [User Assistance Model](../user-assistance.md).
+For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is all about, see [User Assistance Model](../user-assistance.md).
 
 ### Get started with GitHub
 
 1. Fork the right repo
 
     You cannot work directly in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo. For more information, see [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
+
+    > [!TIP]
+    > You are not required to make your GitHub repos public. When you fork a public repo, you can specify in the settings for the new repo if the repo is public, private, or available only to specific GitHub accounts.
 
 2. Install GitHub Desktop (optional) and clone your forked repo.
 
@@ -54,6 +57,28 @@ You can also find guidance for how to get started with MarkDown in the [Docs Con
 
 > [!IMPORTANT]
 > The [Writate](https://writage.com/) plugin for Word can be very helpful for converting existing content to MarkDown, but we recommend that you do not use it to edit MarkDown files in Word. When you save the MarkDown file, all metadata tags and some of the formatting is erased.
+
+### What the GitHub repos contain
+
+Microsoft's GitHub repos for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help contain the following folders:
+
+- accountant
+
+    Contains files that are relevant for Dynamics 365 — Accountant Hub
+- business-central
+
+    Contains files that are relevant for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+- invoicing
+
+    Contains files that are relevant for Microsoft Invoicing
+- media-source
+
+    Contains source files for some of the pictures that are used in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content
+
+The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the Docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
+
+> [!NOTE]
+> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media contain CAB files for Help Server. However, you can always get newer content from the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, you can get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Getting by without GitHub](#getting-by-without-github) sections, respectively.
 
 ### Get updates from Microsoft
 
@@ -107,6 +132,20 @@ For example, to create a pull request to the MicrosoftDocs/dynamics365smb-docs r
 
 2. Choose **Sync** to push the changes up to your repo on GitHub.
 3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose send **Pull Request**.
+
+## Getting by without GitHub
+
+If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them.
+
+### To get files without a GitHub account
+
+1. Go to the relevant GitHub repo, such as this one for German: [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/).  
+
+    You can see in the browser when the content was last updated.  
+2. Choose the green **Clone or download** button, and then choose **Download ZIP**.
+3. Open the downloaded *dynamics365smb-docs-pr.de-de-live.zip* file and extract to a relevant location.
+
+    Now you have a copy of Microsoft's content, and you can generate HTML files for use on Help Server or elsewhere as described in the [Building HTML files](#building-html-files) section.
 
 ## Building HTML files
 
