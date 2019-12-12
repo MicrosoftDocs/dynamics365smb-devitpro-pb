@@ -30,14 +30,14 @@ From **October 2019**, with [!INCLUDE[prodshort](includes/prodshort.md)] 2019 re
 It was first announced in 2018 at various conferences and then with a detailed timeline earlier in 2019. For more information, see [[!INCLUDE[prodshort](includes/prodshort.md)] April 2019 Update and the road ahead](https://community.dynamics.com/business/b/businesscentraldevitpro/posts/business-central-april-2019-release).
 
 ## Will the Windows client still be supported in older releases of Business Central and Dynamics NAV?
-Yes. You can safely continue to use the Windows client on premises and receive support as long as you follow the lifecycle policy for your on-premises versions of [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [Lifecycle FAQ - Dynamics](https://support.microsoft.com/en-us/help/17920/lifecycle-faq-dynamics).
+Yes. You can safely continue to use the Windows client on premises and receive support as long as you follow the lifecycle policy for your on-premises installations of [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [Lifecycle FAQ - Dynamics](https://support.microsoft.com/en-us/help/17920/lifecycle-faq-dynamics).
 
 The Windows client **remains supported** for the [!INCLUDE[prodshort](includes/prodshort.md)] April 2019 release and all earlier releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises and Dynamics NAV, in accordance with the support lifecycle process.
 
 ## Does this impact me if I use Business Central online?
 No. This change only impacts on-premises installations because the Windows client was only available on premises.
 
-## Does this impact me if I use Business Central on-premises?
+## Does this impact me if I use Business Central on premises?
 Yes. When you **choose to upgrade** to [!INCLUDE[prodshort](includes/prodshort.md)] 2019 release wave 2, you must switch to access [!INCLUDE[prodshort](includes/prodshort.md)] using one of the modern clients. The most popular choice on desktop computers is the web-browser client where your browser is pointing to an on-premises web server using a URL, such as this example (not active): https://myserver.mydomain.com/BC150   
 
 ## What if I really want to have an installable component or at least an icon on my desktop?
@@ -52,11 +52,11 @@ Yes. There are multiple ways to work with [!INCLUDE[prodshort](includes/prodshor
 - The Open in Excel feature that downloads any list as an Excel file for your processing or reporting  
 - The Edit in Excel feature that allows you to edit almost any list-based data in Excel and publish it back to [!INCLUDE[prodshort](includes/prodshort.md)]  
 
-For more information, see [Viewing and Editing in Excel From [!INCLUDE[prodshort](includes/prodshort.md)]](/dynamics365/business-central/across-work-with-excel.md). For instructions on how to configure it for on-premises, see [Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](includes/prodshort.md)] Data](/dynamics365/business-central/dev-itpro/administration/configuring-excel-addin).
+For more information, see [Viewing and Editing in Excel From [!INCLUDE[prodshort](includes/prodshort.md)]](/dynamics365/business-central/across-work-with-excel.md). For instructions on how to configure it for on premises, see [Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](includes/prodshort.md)] Data](/dynamics365/business-central/dev-itpro/administration/configuring-excel-addin).
 
 Note that the legacy, COM-based Excel plugin that used to be included on the installation media is no longer supported.
 
-## Can we still use the same Outlook add-in?
+## Can I still use the same Outlook add-in?
 Yes. This change does not impact the Outlook add-in. In fact, the modern Outlook add-in is based on the same familiar web experience. For more information, see [Using [!INCLUDE[prodshort](includes/prodshort.md)] as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook).
 
 ## What happened to C/SIDE, the legacy development environment?
