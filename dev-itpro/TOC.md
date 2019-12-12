@@ -1,7 +1,6 @@
 ﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
 ## [Get started](index.md)
 ## [Frequently asked questions](faq.md)
-## [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical support](technical-support.md)
@@ -60,6 +59,7 @@
 ### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements April '19](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
+### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
 #### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
 #### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
