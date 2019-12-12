@@ -9,11 +9,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 11/29/2019
+ms.date: 12/11/2019
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-The topics in the Deployment section are intended to help an administrator configure a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution online or on-premises.  
+The topics in the Deployment section are intended to help a partner prepare a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution for a customer online or on-premises.  
 
 ## Take prospects and customers online
 
@@ -26,6 +26,8 @@ You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
 For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
+
+[!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
 ### Managing [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
 

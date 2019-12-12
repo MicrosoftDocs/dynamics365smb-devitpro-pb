@@ -2,7 +2,7 @@
 title: "Removing properties that cause destructive changes is not allowed"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 12/10/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Removing properties that cause destructive changes is not allowed  
 
 ## Description
-Destructive table properties that have been published should not be removed.
+Destructive table properties that have been published must not be removed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -1,8 +1,8 @@
 ---
-title: "Actions that have been published should not be deleted, since dependent extensions may break"
+title: "Actions that have been published must not be deleted, since dependent extensions may break"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 12/10/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0031
-Actions that have been published should not be deleted, since dependent extensions may break  
+Actions that have been published must not be deleted, since dependent extensions may break  
 
 ## Description
-Actions that have been published should not be deleted.
+Actions that have been published must not be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
