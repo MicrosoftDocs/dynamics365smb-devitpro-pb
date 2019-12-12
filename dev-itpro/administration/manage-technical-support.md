@@ -88,7 +88,7 @@ If you are a delegated administrator, you are asked to file a support request in
 > [!NOTE]
 > The internal administrator cannot contact Microsoft directly. If you suspect that something is wrong with your [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must contact your partner for next steps.
 
-### Submitting support requests on behalf of your customer in Partner Center
+### <a name="submitsupportrequest"></a>Submitting support requests on behalf of your customer in Partner Center
 
 As the delegated administrator, if you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the Help menu to submit a support request on behalf of your customer. This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.  
 

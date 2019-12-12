@@ -101,7 +101,7 @@ If the prospect wants to extend the trial further than those 30 days, the partne
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [The Business Central Administration Center API](administration-center-api.md)  
-[Submitting support requests on behalf of your customer](manage-technical-support.md#submitting-support-requests-on-behalf-of-your-customer)  
+[Submitting support requests on behalf of your customer](manage-technical-support.md#submitsupportrequest)  
 [Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
 [How does Microsoft handle database sizes?](../faq.md#how-does-microsoft-handle-database-sizes)  
 [Version numbers in Business Central](version-numbers.md)  
