@@ -1,18 +1,18 @@
-﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
-## [Get started](index.md)
-## [Frequently asked questions](faq.md)
+﻿# Get Started
+## [Development and Administration](index.md)
+## [Frequently Asked Questions](faq.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
-### [Technical support](technical-support.md)
+### [Technical Support](technical-support.md)
 ### Help system
-#### [User assistance model](user-assistance.md)
+#### [User Assistance Model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
-<!--Ready2Go-->
+<!--Learn-->
 ## Training and Readiness
-### Learning Catalog
+### Learning Catalogs
 #### [Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Business Decision Maker Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-decision-makers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Business User Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-users?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -20,8 +20,15 @@
 #### [Functional Consultant Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
-
-### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+<!--Ready2Go-->
+### Readiness
+#### [Build Your Business on Dynamics 365 Business Central](developer/readiness/readiness-welcome.md)
+#### [Resell Different Solutions](developer/readiness/readiness-reseller.md)
+#### [Integrate a 3rd Party Solution](developer/readiness/readiness-thirdparty-solution.md)
+#### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
+#### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
+#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
+#### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 <!--AppSourcevalidation-->
 ## AppSource Validation
 ### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)

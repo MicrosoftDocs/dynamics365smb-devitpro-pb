@@ -8,7 +8,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/25/2019
+ms.date: 12/10/2019
 ms.author: edupont
 
 ---
@@ -17,24 +17,40 @@ ms.author: edupont
 
 If users report that they are having a problem with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], superusers and the internal administrator can often find a solution. The internal administrator can find technical information in the **Help and Support** page as described in the following sections, and they can then escalate relevant issues to the reselling partner.  
 
-The reselling partner can log in to their customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated admin for troubleshooting. Both internal administrators and the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
+The reselling partner can log in to their customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated admin for troubleshooting, such as by creating a sandbox environment based on production data, and then troubleshooting in that environment.  
+
+Both internal administrators and the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
+
+## Internal administrators
+
+As the internal administrator, you can work with users to identify solutions or workarounds, such as missing setup, missing permissions, and other issues in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. They can find technical information in the **Help and Support** page to help with this investigation. For more information, see the [Finding technical information](#finding-technical-information) section.  
+
+Internal administrators can also create sandbox environments for deeper troubleshooting, for example, before they decide to contact their partner for technical support. The partner must have specified their support contact details in the **Help and Support** page.  
+
+## Delegated administrators
+
+Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. As the partner, you must have specified support contact details in the **Help and Support** page. For more information, see [Configuring the support experience](../technical-support.md#configuring-the-support-experience).  
+
+The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to analyse telemetry, create a sandbox environment for debugging, or an extra production environment for step-by-step reproduction, for example.  
+
+If the partner cannot find a solution, they can request support from Microsoft. For more information, see the [Escalating support issues to Microsoft](#escalating-support-issues-to-microsoft) section.  
 
 ## Finding technical information
 
-The **Help and Support** page is a powerful tool for internal administrators to find technical information about your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting.  
+The **Help and Support** page is a powerful tool for administrators to find technical information about [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting.  
 
 > [!div class="mx-imgBorder"]
 > ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
 
-Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows which version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the tenant is on.  
+Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows which version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the specific environment is on.  
 
-As an administrator, you also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to your customers' tenants, and you can create sandbox environments that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+For [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, internal and delegated administrators also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to the different environments in a tenant, and you can create sandbox environments that can help troubleshoot any issues reported by users. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 ### Azure Active Directory tenant
 
-If you have configured the support email address, and your customer uses that to contact you, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown at the bottom of the **Help and Support** page. You can use that to identify the tenant in the administration center, and you can use it to log into their tenant for troubleshooting, for example.  
+When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown in the **Troubleshooting** section at the bottom of the **Help and Support** page.  
 
-You also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
+The delegated administrator can use that to identify the tenant in the Partner Center and in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] for troubleshooting.  
 
 ### Version
 
@@ -61,20 +77,25 @@ The information that you can get from this link includes the following:
 
 The link cannot open errors that were generated by the platform. So if you suspect that the issue is caused by the platform, you can try to reproduce the error in a sandbox environment before you contact Microsoft for support. For more information, see [Create a sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
 
-## Escalating your customer's support issues
+## Escalating support issues to Microsoft
 
-Sometimes the tenant has run into a problem that you cannot resolve. In those cases, the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily submit a support request to Microsoft.  
+Sometimes the tenant has run into a problem that the partner cannot resolve. In those cases, the administrator can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily submit a support request to Microsoft.  
 
-You can submit support requests from the Partner Center or from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+Both internal and delegated administrators can access [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and then, in the Help menu, choose the **New Support Request** button. This logs you in to the Power Platform Admin Center. Here, you can launch the **New Support Request** guide that will help you identify potential solutions or workarounds based on how you fill in the various fields.  
 
-### Submitting support requests on behalf of your customer
+If you are a delegated administrator, you are asked to file a support request in the [Partner Center](https://partnercenter.microsoft.com/partner/home). If you are an internal administrator, you can use different keywords to explore different solutions. If that does not help you, you must contact your partner.  
 
-If you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the Help menu to submit a support request on behalf of your customer. This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.  
+> [!NOTE]
+> The internal administrator cannot contact Microsoft directly. If you suspect that something is wrong with your [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must contact your partner for next steps.
+
+### <a name="submitsupportrequest"></a>Submitting support requests on behalf of your customer in Partner Center
+
+As the delegated administrator, if you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the Help menu to submit a support request on behalf of your customer. This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.  
+
+In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate. You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers. From there, you can access Partner Center. You can also go straight to the Partner Center, but you might need information from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is why we recommend this route. For more information, see [Report problems on behalf of a customer](/partner-center/report-problems-on-behalf-of-a-customer) in the Partner Center content.  
 
 > [!IMPORTANT]
-> Your company must be registered as a partner in order to submit a support request, and you must have the ASfP (Advanced Support for Partners) support plan. The support person can be a member of the Helpdesk Agent group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad). Your service account manager can get you more information about getting the ASfP, and if you already have a support plan, they can get the contract information and access ID that you must specify when you submit a new support request on behalf of your customer.  
-
-In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate. You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  
+> Your company must be registered as a partner in order to submit a support request to Microsoft, and you must have the ASfP (Advanced Support for Partners) support plan. The support person can be a member of the Helpdesk Agent group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad). Your service account manager can get you more information about getting the ASfP, and if you already have a support plan, they can get the contract information and access ID that you must specify when you submit a new support request on behalf of your customer.  
 
 For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).
 
@@ -114,5 +135,6 @@ A support request ticket is then created, and you will see a dialog box with the
 [Technical Support for Business Central](../technical-support.md)  
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Deployment Overview](../deployment/Deployment.md)  
+[Administration as a partner](tenant-administration.md#administration-as-a-partner)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Administration of Business Central On-Premises](Administration.md)  
