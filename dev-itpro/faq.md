@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/23/2019
+ms.date: 12/12/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -33,7 +33,7 @@ For information about lifecycle support for [!INCLUDE [prodshort](includes/prods
 
 Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 14 days.
 
-For more information, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
+As an administrator, you you cannot access or manage these backups because they are managed automatically by Microsoft. For more information about the underlying technology, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
 
 ## Can I request a copy of the backup of my production database?
 
@@ -49,15 +49,20 @@ You can find guidance for setting up [!INCLUDE [prodshort](developer/includes/pr
 
 You can also find relevant content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central).
 
+For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online)
+
 ## How can I troubleshoot my customers' online tenants?
 
-You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. You can also create a sandbox environment and use Visual Studio Code to debug that. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
 
 ## How does Microsoft handle database sizes?
 
 For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in the environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
 
-The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.  
+The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.
+
+## Is the Windows client supported?
+The first releases of Business Central on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
 
 ## See Also
 

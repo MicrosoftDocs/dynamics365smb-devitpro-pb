@@ -8,9 +8,10 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 11/14/2019
+ms.date: 12/05/2019
 ms.author: edupont
 ---
+
 # Administration of Business Central Online
 
 As an administrator, you can manage [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenants both as an internal administrator, who is typically an employee of the company that bought the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscription, and as an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
@@ -23,10 +24,10 @@ Internal administrators are the system administrators, IT professionals, or supe
 
 As the internal administrator, you can add users and grant permissions. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
-As an internal administrator you have **READ-ONLY** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if the organization decides not to continue with Business Central and cancels the subscription. This ensures that you can export the data, while nobody else in organization has license to sign-in.
+As an internal administrator you have **read-only** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if your organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and cancels the subscription. This ensures that you, as the internal administrator, can export relevant data, while no one else in your organization has a license to sign in and use [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
-> [!IMPORTANT]  
-> You must have [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except mentioned above. For information about licensing, see [Microsoft Dynamics 365 Busincess Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
+> [!IMPORTANT]
+> You must have a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except the two mentioned above. For information about licensing, see [Microsoft Dynamics 365 Business Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
 
 For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
@@ -42,36 +43,44 @@ The **Global admin** role makes you an administrator of your organization's Offi
 
 If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription.  
 
-In the Office portal, you can remove licenses from users. As the administrator you can remove the trial subscription from your company's account. But to cancel the paid subscription, you must contact your reselling partner, and they can [cancel relevant subscription](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center.  
+In the Office portal, you can remove licenses from users. As the administrator, you can remove a trial subscription from your company's account. But to cancel a paid subscription, you must contact your reselling partner, and they can [cancel the relevant subscription](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center.  
 
 For more information, see [Unsubscribe or Remove Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 ## Administration as a partner
 
-As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you are the administrator of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants of your customers. You have access to the administration tools of their Office 365 account and their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center where you can specify update windows, for example.  
+As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you are the administrator of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants of your customers. You have access to the administration tools of their Office 365 account and their [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] where you can specify update windows. You can also log into their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as a *delegated administrator* if you want to reproduce errors.  
 
-### Get started with the Cloud Solution Provider program as a partner
+### Get set up in the Partner Center
 
-As a reselling partner, you must enroll in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) in order to service Business Central online. In the Microsoft Partner Center documentation, you can learn how to [add a customer](/partner-center/add-a-new-customer?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), [assign licenses to users](/partner-center/assign-licenses-to-users?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), and [create new subscriptions](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml). [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prodshort](../developer/includes/prodshort.md)]-specific license types that you can assign to users.  
+[!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
+[!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
 ### Acting as a delegated administrator
 
-As a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] reselling partner, you have administrator access to your customers' Office 365 tenant and their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration Center. You can also log into their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as a *delegated administrator* if you want to reproduce errors, for example.  
+As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups, Admin Agents and Helpdesk Agents, in the partner's Azure AD tenant that are used for *delegated administration*. When a customer grants the delegated administration privilege to a partner:
 
-To act as the delegated administrator, you must have the **Global Administrator** role in the customer's Azure AD tenant, and the Admin Agent group must be assigned to that role. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).  
+- The **Admin Agent** group is assigned to the **Global Administrator** role in the customer's Azure AD tenant.  
+- The **Helpdesk Agent** group is assigned to the **Helpdesk Administrator** role in the customer's Azure AD tenant.  
 
-The Business Central Administration Center is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+Based on the roles assigned, members of both groups can sign in to the customer's Azure AD tenant, Office 365 services, [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants by using their partner credentials. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad) in the Partner Center documentation.  
+
+For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 #### Restricted access to Business Central as delegated administrator
 
-When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated administrator from the administration center, you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
+When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
 
-The following tasks are not available to the delegated administrator:
+The following tasks are *not* available to the delegated administrator:
 
 - Set up jobs to run as scheduled tasks in the job queue
 - Use the **Edit in Excel** action or interact with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] data in Excel using the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] add-in for Excel.
 
     You can still use the **Open in Excel** action to view data in Excel.
+
+- Use the **Invite External Accountant** assisted setup guide
+
+    Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.     
 
 ### Manage technical support
 
@@ -92,7 +101,7 @@ If the prospect wants to extend the trial further than those 30 days, the partne
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [The Business Central Administration Center API](administration-center-api.md)  
-[Submitting support requests on behalf of your customer](manage-technical-support.md#submitting-support-requests-on-behalf-of-your-customer)  
+[Submitting support requests on behalf of your customer](manage-technical-support.md#submitsupportrequest)  
 [Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
 [How does Microsoft handle database sizes?](../faq.md#how-does-microsoft-handle-database-sizes)  
 [Version numbers in Business Central](version-numbers.md)  

@@ -1,18 +1,18 @@
-﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
-## [Get started](index.md)
-## [Frequently asked questions](faq.md)
+﻿# Get Started
+## [Development and Administration](index.md)
+## [Frequently Asked Questions](faq.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
-### [Technical support](technical-support.md)
+### [Technical Support](technical-support.md)
 ### Help system
-#### [User assistance model](user-assistance.md)
+#### [User Assistance Model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
-<!--Ready2Go-->
+<!--Learn-->
 ## Training and Readiness
-### Learning Catalog
+### Learning Catalogs
 #### [Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Business Decision Maker Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-decision-makers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Business User Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-users?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -20,8 +20,15 @@
 #### [Functional Consultant Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
-
-### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+<!--Ready2Go-->
+### Readiness
+#### [Build Your Business on Dynamics 365 Business Central](developer/readiness/readiness-welcome.md)
+#### [Resell Different Solutions](developer/readiness/readiness-reseller.md)
+#### [Integrate a 3rd Party Solution](developer/readiness/readiness-thirdparty-solution.md)
+#### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
+#### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
+#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
+#### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 <!--AppSourcevalidation-->
 ## AppSource Validation
 ### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -59,6 +66,7 @@
 ### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements April '19](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
+### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
 #### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
 #### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
@@ -93,6 +101,7 @@
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+#### [Preparing Test Environments](administration/test-environment.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -247,9 +256,7 @@
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
-### [Page Customization Object](developer/devenv-page-customization-object.md)
-### [API Page Type](developer/devenv-api-pagetype.md)
-### [Page Background Tasks](developer/devenv-page-background-tasks.md)
+### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Role Centers
 #### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Sample Role Center](developer/devenv-simple-role-center-example.md)
@@ -260,26 +267,34 @@
 #### List Pages
 ##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
+##### [Repeater Controls](developer/devenv-repeater-controls.md)
 ##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 #### Card Pages
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
-#### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-#### [Repeater Controls](developer/devenv-repeater-controls.md)
-#### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
+#### Page Parts
+##### [Parts Overview](developer/devenv-designing-parts.md)
+<!-- reenable when topics have been written
+##### [Designing List Parts](developer/devenv-designing-listparts.md)
+##### [Designing Card Parts](developer/devenv-designing-cardparts.md)
+##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) -->
+##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
 #### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 #### [Field Groups](developer/devenv-field-groups.md)
 #### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
-### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+#### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Actions
 #### [Actions in AL](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 #### [Promoted Actions](developer/devenv-promoted-actions.md)
+### [Page Background Tasks](developer/devenv-page-background-tasks.md)
+### [API Page Type](developer/devenv-api-pagetype.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 ### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## Reports
@@ -293,6 +308,7 @@
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## Queries
 ### [Overview](developer/devenv-query-overview.md)
@@ -516,7 +532,7 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-<!-- 
+<!--
 ## Preview Features in AL
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
@@ -612,7 +628,8 @@
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
 ## Deprecated Features
-### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
+### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
+### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
