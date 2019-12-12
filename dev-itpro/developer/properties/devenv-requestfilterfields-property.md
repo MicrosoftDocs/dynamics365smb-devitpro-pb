@@ -1,7 +1,7 @@
 ---
 title: "RequestFilterFields Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 12/10/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
  
 # RequestFilterFields Property
 
-Specifies which fields are automatically included on the tab of the request page that is related  to to a report's data item or an XMLport's table element. The user can set filters on these fields.  
+Specifies which fields are automatically included on the tab of the request page that is related to a report's data item or an XMLport's table element. The user can set filters on these fields.  
 
 ## Applies to  
   

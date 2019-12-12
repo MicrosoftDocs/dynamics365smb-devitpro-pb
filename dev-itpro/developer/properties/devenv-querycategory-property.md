@@ -24,6 +24,6 @@ QueryCategory = 'Customer List', 'Vendor List';
 
 ## See Also  
  [Properties](devenv-properties.md)   
- [Query Object](../devenv-query-object.md)
+ [Query Object](../devenv-query-object.md)  
  [Page Object](../devenv-page-object.md)
 
