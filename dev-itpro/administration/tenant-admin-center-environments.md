@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 12/06/2019
+ms.date: 12/10/2019
 ms.author: edupont
 ---
 
@@ -63,7 +63,9 @@ You can create a sandbox environment that includes data from your production env
 
 Sandbox environments are handy for certain types of development scenarios because the debugging endpoint is open by default. This means that you can attach Visual Studio Code to a running system and debug through running code. It also allows you to publish directly to the environment from Code.
 
-You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
+You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.  
+
+[!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
 ## Create a new production environment
 

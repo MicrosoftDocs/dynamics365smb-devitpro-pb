@@ -94,6 +94,7 @@
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+#### [Preparing Test Environments](administration/test-environment.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
