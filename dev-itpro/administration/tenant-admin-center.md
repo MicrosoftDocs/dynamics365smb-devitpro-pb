@@ -2,16 +2,14 @@
 title: Business Central Admin Center| Microsoft Docs
 description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
 author: edupont04
-
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.author: edupont
-
 ---
 # The Business Central Administration Center
 
@@ -58,10 +56,9 @@ You can also get to the administration center by navigating directly to the URL 
 > [!NOTE]
 > As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
 
-
 ### Mobile apps
 
-Mobile apps cannot natively handle a setup where there is no environment called 'production' and that you need to use the protocol handler [link] to deal with such. In the future the mobile apps would be able to handle this edge case. We recommend not to remove 'production' environment if mobile apps are in use. 
+Mobile apps cannot natively handle a setup where there is no production environment called 'production' and that you need to use the protocol handler [Linking to the Dynamics 365 Business Central App](../developer/devenv-link-to-universal-app.md) to deal with such. In the future the mobile apps would be able to handle this edge case. We recommend not to remove 'production' environment if mobile apps are in use. 
 
 ## See also
 
