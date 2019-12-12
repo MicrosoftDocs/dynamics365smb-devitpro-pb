@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,14 +42,14 @@ The date that is returned is different for the [!INCLUDE[webclient](../../includ
 You can only use the **TODAY** method to retrieve the current date from the operating system. You cannot use it to set the date in the operating system.  
   
 ## Example  
- This example shows how to use the **TODAY** method. This example requires that you create the following global text constant.  
-  
-|Name|ConstValue|  
-|----------|----------------|  
-|Text000|The current date is: %1|  
-  
+ This example shows how to use the **TODAY** method. 
+ 
 ```  
-MESSAGE(Text000, TODAY);  
+var
+    Text000: Label 'The current date is: %1';
+begin
+    MESSAGE(Text000, TODAY);  
+end;
 ```  
   
  The message window could display the following:  

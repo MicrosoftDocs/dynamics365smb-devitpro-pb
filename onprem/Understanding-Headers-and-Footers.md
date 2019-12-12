@@ -29,4 +29,4 @@ Headers and footers in client report definition \(RDLC\) report layouts have the
   
 -   [How to: Print Report Header Information on Multiple Pages](How-to--Print-Report-Header-Information-on-Multiple-Pages.md)  
   
- For more information about Visual Studio report layouts, see [Defining a Report Layout](http://go.microsoft.com/fwlink/?linkid=126035).
+ For more information about Visual Studio report layouts, see [Defining a Report Layout](https://go.microsoft.com/fwlink/?linkid=126035).

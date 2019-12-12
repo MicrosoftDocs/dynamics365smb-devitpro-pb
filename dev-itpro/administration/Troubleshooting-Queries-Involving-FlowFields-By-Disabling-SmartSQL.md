@@ -91,6 +91,6 @@ As you can see, poor performance might not be caused by the SmartSQL optimizatio
 
 ## See Also
 [Business Central Server Administration Tool](administration-tool.md)  
-[SQL Server Profiler](https://docs.microsoft.com/en-us/sql/tools/sql-server-profiler/sql-server-profiler)  
+[SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server-profiler)  
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)  
-[SQL Trace](https://docs.microsoft.com/en-us/sql/relational-databases/sql-trace/sql-trace)
+[SQL Trace](/sql/relational-databases/sql-trace/sql-trace)

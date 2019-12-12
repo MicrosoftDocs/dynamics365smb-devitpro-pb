@@ -30,4 +30,4 @@ The following articles describe how to optimize performance in [!INCLUDE[navnowl
 
 ## See Also  
  [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
- [Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)
+ [Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)

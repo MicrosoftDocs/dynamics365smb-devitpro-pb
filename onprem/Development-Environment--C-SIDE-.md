@@ -22,7 +22,7 @@ You use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to develop [!I
 >   
 >  The program cannot start because MSVCP100.dll is missing.  
 >   
->  If you see this error message, download and install the [Microsoft Visual C++ 2010 Redistributable Package \(x86\)](http://go.microsoft.com/fwlink/?LinkId=253073). You can then run the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)].  
+>  If you see this error message, download and install the [Microsoft Visual C++ 2010 Redistributable Package \(x86\)](https://go.microsoft.com/fwlink/?LinkId=253073). You can then run the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)].  
 
 ## Object Designer  
  When you open the development environment, you can open Object Designer, which gives you access to [!INCLUDE[navnow](includes/navnow_md.md)] objects. You use Object Designer to modify the application or to create new application areas. For more information, see [Object Designer)](uiref/-$-S_2051-Object-Designer-$-.md).  

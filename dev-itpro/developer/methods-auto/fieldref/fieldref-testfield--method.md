@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,19 +34,18 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
  This method is like the [TESTFIELD Method \(Record\)](../../methods-auto/record/record-testfield-joker-method.md) method.  
   
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named CustomerRecref, created a reference to the first field \(No\) and stores the reference in the MyFieldRef variable. The [VALUE Method \(FieldRef, TestPage Field\)](../../methods/devenv-value-method-fieldref-testpage-field.md) sets the No. field to a blank text. The TESTFIELD method determines whether the contents of the field match 10000, the specified value. In this case, the content does not match so the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] throws an exception. If the there is a match, no exception is thrown. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-  
-```  
-  
-CustomerRecref.OPEN(DATABASE::Customer);  
-MyFieldRef := CustomerRecref.FIELD(1);  
-MyFieldRef.VALUE := '';  
-MyFieldRef.TESTFIELD('10000');  
+ The following example opens the Customer table as a RecordRef variable that is named CustomerRecref, created a reference to the first field \(No\) and stores the reference in the MyFieldRef variable. The [VALUE Method \(FieldRef, TestPage Field\)](../../methods/devenv-value-method-fieldref-testpage-field.md) sets the No. field to a blank text. The TESTFIELD method determines whether the contents of the field match 10000, the specified value. In this case, the content does not match so the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] throws an exception. If the there is a match, no exception is thrown.  
+
+ ```
+var
+    MyFieldRef: FieldRef;
+    CustomerRecref: RecordRef;
+begin
+    CustomerRecref.OPEN(DATABASE::Customer);  
+    MyFieldRef := CustomerRecref.FIELD(1);  
+    MyFieldRef.VALUE := '';  
+    MyFieldRef.TESTFIELD('10000');  
+end;
 ```  
   
  In this example, the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] displays following error message:  

@@ -47,13 +47,13 @@ The tooltips play an important role as part of the [!INCLUDE[prodshort](../devel
 
 ## Moving to MarkDown
 
-The Microsoft team converted a subset of the legacy Help for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to build the new Help library at [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/en-us/dynamics365/business-central/). If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. The readme.md file in the source repo provides tips and tricks for working with the Microsoft GitHub repos and MarkDown.  
+The Microsoft team converted a subset of the legacy Help for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to build the new Help library at [/dynamics365/business-central/](/dynamics365/business-central/). If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. The readme.md file in the source repo provides tips and tricks for working with the Microsoft GitHub repos and MarkDown.  
 
 Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
 
 When you have converted your content to MarkDown, you can use a Git repo in Azure DevOps as your source repository, create a private or public repo in GitHub, or set up a project in [MkDocs](https://www.mkdocs.org/), for example. Then you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
 
-If you do not yet have a website that you publish content to, then there are several ways in which you can create such a site. The [MkDocs](https://www.mkdocs.org/) project generates a website for you, but you can also work with a web designer to build a site that resembles the [Docs.microsoft.com](https://docs.microsoft.com/en-us/dynamics365/business-central/) site, if that is what your customers will prefer.  
+If you do not yet have a website that you publish content to, then there are several ways in which you can create such a site. The [MkDocs](https://www.mkdocs.org/) project generates a website for you, but you can also work with a web designer to build a site that resembles the [Docs.microsoft.com](/dynamics365/business-central/) site, if that is what your customers will prefer.  
 
 ## See Also
 

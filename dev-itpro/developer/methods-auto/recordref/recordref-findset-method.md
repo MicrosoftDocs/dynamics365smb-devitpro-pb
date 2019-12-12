@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -60,28 +60,24 @@ This parameter only applies if ForUpdate is true. If you are going to modify any
  This method works the same way as the [FINDSET Method \(Record\)](../record/record-findset-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef with the first field \(No.\). The [SETFILTER Method \(FieldRef\)](../fieldref/fieldref-setfilter-method.md) uses the MyFieldRef variable to set a filter that selects records from 30000 to 32000. `MyRecordRef.FIELD(2)` creates a FieldRef for the second field \(Name\). The FINDSET method finds the set of records based on the key and the filters that have been set. The *ForUpdate* parameters and *UpdateKeys* are both set to **FALSE**. This makes the records in the set read-only. The record ID and name of each customer in the record set is displayed in a message box until no records are left in the record set. The following example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|MyFieldRef|FieldRef|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|%1: "%2" is found in the set of records.|  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef with the first field \(No.\). The [SETFILTER Method \(FieldRef\)](../fieldref/fieldref-setfilter-method.md) uses the MyFieldRef variable to set a filter that selects records from 30000 to 32000. `MyRecordRef.FIELD(2)` creates a FieldRef for the second field \(Name\). The FINDSET method finds the set of records based on the key and the filters that have been set. The *ForUpdate* parameters and *UpdateKeys* are both set to **FALSE**. This makes the records in the set read-only. The record ID and name of each customer in the record set is displayed in a message box until no records are left in the record set. 
   
 ```  
-  
-MyRecordRef.OPEN(18);  
-MyFieldRef := MyRecordRef.FIELD(1);  
-MyFieldRef.SETFILTER('30000..32000');  
-MyFieldRef := MyRecordRef.FIELD(2);  
-if MyRecordRef.FINDSET(FALSE, FALSE) then begin  
-  repeat  
-    MESSAGE(Text000 , MyRecordRef.RECORDID, MyFieldRef.VALUE);  
-  until MyRecordRef.NEXT = 0;  
-end;  
+var
+    MyRecordRef: RecordRef;
+    MyFieldRef: FieldRef;
+    Text000: Label '%1: "%2" is found in the set of records.';
+begin    
+    MyRecordRef.OPEN(18);  
+    MyFieldRef := MyRecordRef.FIELD(1);  
+    MyFieldRef.SETFILTER('30000..32000');  
+    MyFieldRef := MyRecordRef.FIELD(2);  
+    if MyRecordRef.FINDSET(FALSE, FALSE) then begin  
+      repeat  
+        MESSAGE(Text000 , MyRecordRef.RECORDID, MyFieldRef.VALUE);  
+      until MyRecordRef.NEXT = 0;  
+    end;  
+end;
 ```  
 
 ## See Also

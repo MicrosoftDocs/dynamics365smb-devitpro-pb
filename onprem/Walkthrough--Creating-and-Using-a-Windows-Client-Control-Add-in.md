@@ -158,7 +158,7 @@ The following walkthrough demonstrates how to develop a [!INCLUDE[nav_windows](i
 
 4.  In the **Key file name** text box, enter **RtcAddins** and clear the **Protect my key file with a password** check box.  
 
-     In this walkthrough, you will not protect the key file with a password. However, you can choose whether to use a password. For more information, see [Strong-Name Signing for Managed Applications](http://go.microsoft.com/fwlink/?LinkID=150201&clcid=0x409).  
+     In this walkthrough, you will not protect the key file with a password. However, you can choose whether to use a password. For more information, see [Strong-Name Signing for Managed Applications](https://go.microsoft.com/fwlink/?LinkID=150201&clcid=0x409).  
 
 5.  Choose the **OK** button.  
 

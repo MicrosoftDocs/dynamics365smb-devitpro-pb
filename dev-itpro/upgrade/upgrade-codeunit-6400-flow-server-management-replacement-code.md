@@ -2,7 +2,7 @@
 title: Codeunit 6400 Flow Server Management Replacement Code for C/AL to AL conversion 
 description: The article includes replacement code for Page 6401 Flow Selector for fixing compilation errors when converting a Business Central version 14 application to version 15 AL. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/20/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ROBOTS: NOINDEX
 ---
-## Codeunit 6400 Flow Server Management Replacement Code
+# Codeunit 6400 Flow Server Management Replacement Code
  
 This article includes replacement code codeunit **6400 Flow Server Management** that you can use to fix compilation errors that occur when converting your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version 14 C/AL application to version 15 AL.
 
@@ -21,7 +21,7 @@ To fix the compilation errors, replace the code with the following:
 ```
 codeunit 6400 "Flow Service Management"
 {
-    // // Manages access to Microsoft Flow service API
+    // // Manages access to Power Automate service API
 
     Permissions = TableData "Flow Service Configuration" = r;
 
@@ -45,7 +45,7 @@ codeunit 6400 "Flow Service Management"
         FlowTemplateDestinationDetailsTxt: Label 'details', Locked = true;
         AzureAdMgt: Codeunit "Azure AD Mgt.";
         DotNetString: DotNet String;
-        FlowPPEErr: Label 'Microsoft Flow integration is not supported outside of a PROD environment.';
+        FlowPPEErr: Label 'Power Automate integration is not supported outside of a PROD environment.';
         FlowAccessDeniedErr: Label 'Windows Azure Service Management API permissions need to be enabled for Flow in the Azure Portal. Contact your system administrator.';
         FlowLinkUrlFormatTxt: Label '%1manage/environments/%2/flows/%3/details', Locked = true;
         FlowManageLinkUrlFormatTxt: Label '%1manage/environments/%2/flows/', Locked = true;
@@ -394,4 +394,3 @@ codeunit 6400 "Flow Service Management"
 ## See Also
 
 [Code Conversion from C/AL to AL](devenv-code-conversion.md)  
-

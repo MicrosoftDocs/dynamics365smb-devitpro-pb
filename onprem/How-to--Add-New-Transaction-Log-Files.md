@@ -16,7 +16,7 @@ manager: edupont
 You can expand a transaction log by creating a new transaction log file in the database. The transaction log contains the changes that are made to the database and is used for database recovery.  
   
 > [!NOTE]  
->  You must always make a backup of the database before you expand it. For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).  
+>  You must always make a backup of the database before you expand it. For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
   
 ### To add a new transaction log file  
   

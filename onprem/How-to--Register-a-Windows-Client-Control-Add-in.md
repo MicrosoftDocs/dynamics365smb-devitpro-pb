@@ -19,7 +19,7 @@ A [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-in is delivere
 |Information|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
 |-----------------|---------------------------------------|  
 |Control add-in name|The name is defined in the assembly's source code by the [Microsoft.Dynamics.Framework.UI.Extensibility.ControlAddInExportAttribute](assetId:///T:Microsoft.Dynamics.Framework.UI.Extensibility.ControlAddInExportAttribute) attribute value for control add-in class definition, as shown in the following example code snippet.<br /><br /> **C\#**<br /><br /> `[ControlAddInExport("MyCompany.MyProduct.FieldPopupAddin")] public class MyFieldPopupAddin : StringControlAddInBase, IStringControlAddInDefinition`<br /><br /> In this example, the control add-in name is `MyCompany.MyProduct.FieldPopupAddin`. For more information, see [How to: Create a Windows Client Control Add-in](How-to--Create-a-Windows-Client-Control-Add-in.md).|  
-|Public key token|The public key token is a 16-character key that is given to the assembly when it is built and signed in Microsoft Visual Studio. To determine the public token key, run the Microsoft .NET Strong Name Utility \(sn.exe\) on the assembly. For more information, see [How to: Determine the Public Key Token of the Windows Client Control Add-in and .NET Framework Assembly](How-to--Determine-the-Public-Key-Token-of-the-Windows-Client-Control-Add-in-and-.NET-Framework-Assembly.md) and [Strong-Named Signing](http://go.microsoft.com/fwlink/?LinkID=150201&clcid=0x409).|  
+|Public key token|The public key token is a 16-character key that is given to the assembly when it is built and signed in Microsoft Visual Studio. To determine the public token key, run the Microsoft .NET Strong Name Utility \(sn.exe\) on the assembly. For more information, see [How to: Determine the Public Key Token of the Windows Client Control Add-in and .NET Framework Assembly](How-to--Determine-the-Public-Key-Token-of-the-Windows-Client-Control-Add-in-and-.NET-Framework-Assembly.md) and [Strong-Named Signing](https://go.microsoft.com/fwlink/?LinkID=150201&clcid=0x409).|  
   
 ### To register a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-in  
   
@@ -31,7 +31,7 @@ A [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-in is delivere
   
 4.  Close the **Control Add-ins** page.  
   
- You can also register and manage the control add-in by using the [New-NAVAddin cmdlet](http://go.microsoft.com/fwlink/?LinkID=521781), [Set-NAVAddin cmdlet](http://go.microsoft.com/fwlink/?LinkID=521784), [Get-NAVAddin](http://go.microsoft.com/fwlink/?LinkID=521782), or [Remove-NAVAddin](http://go.microsoft.com/fwlink/?LinkID=521783) cmdlets from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  
+ You can also register and manage the control add-in by using the [New-NAVAddin cmdlet](https://go.microsoft.com/fwlink/?LinkID=521781), [Set-NAVAddin cmdlet](https://go.microsoft.com/fwlink/?LinkID=521784), [Get-NAVAddin](https://go.microsoft.com/fwlink/?LinkID=521782), or [Remove-NAVAddin](https://go.microsoft.com/fwlink/?LinkID=521783) cmdlets from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  
   
 ## See Also  
  [Installing and Configuring Windows Client Control Add-ins on Pages](Installing-and-Configuring-Windows-Client-Control-Add-ins-on-Pages.md)   

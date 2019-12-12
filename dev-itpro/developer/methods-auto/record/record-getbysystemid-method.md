@@ -1,14 +1,14 @@
 ---
 title: "GetBySystemId Method"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/14/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,8 +34,7 @@ The SystemId of the record to retrieve.
 ## Return Value
 *RecordExists*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-
-**true** if the record exists; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the record exists; otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -50,7 +49,7 @@ This example shows how to use the GETBYSYSTEMID method to retrieve a record.
 ```
 var
     CustomerRec: Record Customer;
-    Text000: TextConst ENU = 'Customer was found.';
+    Text000: Label 'Customer was found.';
 begin
     If CustomerRec.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
     Message(Text000);

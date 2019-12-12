@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,21 +38,18 @@ The input date. You can enter a closing date or a normal date. A run-time error 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The input date is a regular date. This code example requires that you create the following global variables and text constants.  
+ The input date is a regular date.
   
-|Variable name|DataType|  
-|-------------------|--------------|  
-|InputDate|Date|  
-|OutputDate|Date|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|The normal date for %1 is %2.|  
-  
-```  
-InputDate := 040414D;  
-OutputDate := NORMALDATE(InputDate);  
-MESSAGE(Text000, InputDate, OutputDate);  
+```
+var
+    InputDate: Date;
+    OutputDate: Date;
+    Text000: Label 'The normal date for %1 is %2.';
+begin
+    InputDate := 20140404D;  
+    OutputDate := NORMALDATE(InputDate);  
+    MESSAGE(Text000, InputDate, OutputDate);  
+end;
 ```  
   
  On a computer that has the regional format set to English \(United States\), the message window displays the following:  
@@ -60,21 +57,18 @@ MESSAGE(Text000, InputDate, OutputDate);
  **The normal date for 04/04/14 is 04/04/14.**  
   
 ## Example  
- The input date is a closing date. This code example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|InputDate|Date|  
-|OutputDate|Date|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text001|The normal date for %1 is %2.|  
+ The input date is a closing date.
   
 ```  
-InputDate := CLOSINGDATE(040414C);  
-OutputDate := NORMALDATE(InputDate);  
-MESSAGE(Text001, InputDate, OutputDate);  
+var
+    InputDate: Date;
+    OutputDate: Date;
+    Text000: Label 'The normal date for %1 is %2.';
+begin
+    InputDate := CLOSINGDATE(20140404C);  
+    OutputDate := NORMALDATE(InputDate);  
+    MESSAGE(Text001, InputDate, OutputDate);  
+end;
 ```  
   
  On a computer that has the regional format set to English \(United States\), the message window displays the following:  

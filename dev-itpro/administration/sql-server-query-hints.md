@@ -11,7 +11,7 @@ author: jswymer
 ---
 # Configuring Query Hints for Optimizing SQL Server Performance with Business Central
 
-On its own, SQL Server query optimizer will try to select the best execution plan for queries. Most of the time, query optimizer makes the right choice. [Query hints](https://docs.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017) are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the following hints on queries in the database:
+On its own, SQL Server query optimizer will try to select the best execution plan for queries. Most of the time, query optimizer makes the right choice. [Query hints](/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017) are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the following hints on queries in the database:
 
 |  Hint  |  Description  | Used by default |
 |--------|---------------|--|
@@ -28,4 +28,4 @@ For more information about configuring the [!INCLUDE[server](../developer/includ
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
-[Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)
+[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)

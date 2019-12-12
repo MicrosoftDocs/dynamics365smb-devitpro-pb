@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,20 +45,16 @@ If you do not set a value for the *NewDate* parameter, then the method returns t
  To set the work date to follow the calendar day so that the work date is always the current date, set *NewDate* to `TODAY` or `0D`. If you explicitly set *NewDate* to the current date, then the work date will also follow the calendar day.  
 
 ## Example  
- This example shows how to use the WORKDATE method. This example requires that you create the following global variable and text constant.  
-
-|Variable|DataType|  
-|----------|----------------|  
-|NewDate|Date|  
-
-|Name|ConstValue|  
-|----------|----------------|  
-|Text000|The new work date is: %1|  
-  
-
+ This example shows how to use the WORKDATE method. 
+ 
 ```  
-NewDate := WORKDATE(010118D);  
-MESSAGE(Text000, NewDate);  
+var
+    NewDate: Date;
+    Text000: Label 'The new work date is: %1';
+begin
+    NewDate := WORKDATE(20180101D);  
+    MESSAGE(Text000, NewDate);  
+end;
 ```  
 
 The code sets the work date to January 1, 2018, and returns the new date in a message. On a computer that has the regional format set to English \(United States\), the message window displays the following:  

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -97,13 +97,11 @@ Query.READ;
   
 2.  Create the following AL variables and text constant in the object that will run the query, such as a codeunit.  
   
-    |Variable name|DataType|Subtype|  
-    |-------------------|--------------|-------------|  
-    |MyQuery|Query|Customer\_SalesQuantity|  
-  
-    |Text constant name|ENU Value|  
-    |------------------------|---------------|  
-    |Text000|Customer name = %1, Quantity = %2|  
+      ```
+     var
+        MyQuery: Query "Customer SalesQuantity";
+        Text000: Label 'Customer name = %1, Quantity = %2';
+    ``` 
   
  The following AL code uses the **SETRANGE** method to filter a query dataset over a range of values on the **Quantity** column. You can add the code to a codeunit, and then run the codeunit to see the results.  
   

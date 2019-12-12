@@ -94,7 +94,7 @@ In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](include
 10. After the installation is complete, choose **Close** to exit Setup.  
 
 ## Configuring [!INCLUDE[nav_server](includes/nav_server_md.md)] to Run Using the Credentials of a Dedicated Domain User Account  
- The steps for creating a domain user account using the Active Directory Users and Computers utility \(dsa.msc\) are available as part of the online Windows Server documentation. See [Create a New User Account](http://go.microsoft.com/fwlink/?LinkId=213723). Only network administrators can perform this task.  
+ The steps for creating a domain user account using the Active Directory Users and Computers utility \(dsa.msc\) are available as part of the online Windows Server documentation. See [Create a New User Account](https://go.microsoft.com/fwlink/?LinkId=213723). Only network administrators can perform this task.  
 
  After you create the account, you must give it the necessary permissions and privileges to interact securely with [!INCLUDE[navnow](includes/navnow_md.md)] clients and SQL Server databases. To do this, complete the procedures in [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md).  
 

@@ -42,7 +42,7 @@ With Microsoft .NET Framework interoperability, a DotNet type variable of a [!IN
 -   Events published by a control add-in. For more information about events in control add-ins, see [Exposing Events and Calling Respective C/AL Triggers from a Windows Client Control Add-in](Exposing-Events-and-Calling-Respective-C-AL-Triggers-from-a-Windows-Client-Control-Add-in.md).  
 
 ##  <a name="Asynch"></a> Understanding Synchronous and Asynchronous Events  
- Events published by .NET Framework objects can be classified as *synchronous* or *asynchronous*. *Synchronous* events are raised immediately when something occurs in the running application code. Asynchronous events are raised after something occurs. An asynchronous event can be a timer event, which is implemented by the [System.Timers.Timer](http://go.microsoft.com/fwlink/?LinkID=262175) class, or an event that is raised by a network listener or other external source, which is handled by an event sink.  
+ Events published by .NET Framework objects can be classified as *synchronous* or *asynchronous*. *Synchronous* events are raised immediately when something occurs in the running application code. Asynchronous events are raised after something occurs. An asynchronous event can be a timer event, which is implemented by the [System.Timers.Timer](https://go.microsoft.com/fwlink/?LinkID=262175) class, or an event that is raised by a network listener or other external source, which is handled by an event sink.  
 
 ### Considerations for Asynchronous Events  
 
@@ -58,7 +58,7 @@ With Microsoft .NET Framework interoperability, a DotNet type variable of a [!IN
 
 -   Events are only supported on global variables.  
 
--   Events must adhere to the delegation event model of the .NET Framework. For more information about this model, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkID=262176).  
+-   Events must adhere to the delegation event model of the .NET Framework. For more information about this model, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkID=262176).  
 
 -   Reference parameters in client-side events are not supported.  
 

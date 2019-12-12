@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: d1c5bdd0-a254-4cd9-8784-3590918398a3
 caps.latest.revision: 11
+author: SusanneWindfeldPedersen
 ---
 # Creating a Data Collector Set From the Template
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides a Data Collector Set template that includes the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters and additional performance counters for monitoring components, such as memory, physical disks, and SQL Server. You use the template to create user-defined Data Collection Sets for monitoring all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
@@ -18,7 +19,7 @@ caps.latest.revision: 11
   
  Data that is collected by a data collector set is stored in a log file that you can view in Performance Monitor.  
   
- For more general information about Data Collector Sets, see [Creating Data Collector Sets](http://technet.microsoft.com/en-us/library/cc749337.aspx).  
+ For more general information about Data Collector Sets, see [Creating Data Collector Sets](https://technet.microsoft.com/library/cc749337.aspx).  
   
 ### To create a data collection set from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] template  
   

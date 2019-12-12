@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: fd5a62ed-50c7-49ad-9610-f299e1961725
-caps.latest.revision: 19
 author: jswymer
 ---
 # Data Access
@@ -88,7 +86,7 @@ When SQL Server performs data sorting for I/O operations, it sorts the data firs
 -   You can use partitioning to distribute parts of tables to different IO sub systems. For example, you could archive data for old transactions on slow and inexpensive disks and keep current data on solid-state drives (SSD).
 You can improve performance by enabling lock escalation at the partition level instead of a whole table. This can reduce lock contention on the table.
 
-For more general information about partitioned tables and indexes in SQL Server, see [Partitioned Tables and Indexes](https://docs.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes).
+For more general information about partitioned tables and indexes in SQL Server, see [Partitioned Tables and Indexes](/sql/relational-databases/partitions/partitioned-tables-and-indexes).
 
 ### How [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports partitioning
 
@@ -142,7 +140,7 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
     ```
 
 > [!TIP]
-> SQL Server Management Studio includes the **Create Partition Wizard** to help you create partitioning functions, partitioning schemes, as well as changing a table to be partitioned. For more information, see [Create Partitioned Tables and Indexes](https://docs.microsoft.com/en-us/sql/relational-databases/partitions/create-partitioned-tables-and-indexes).
+> SQL Server Management Studio includes the **Create Partition Wizard** to help you create partitioning functions, partitioning schemes, as well as changing a table to be partitioned. For more information, see [Create Partitioned Tables and Indexes](/sql/relational-databases/partitions/create-partitioned-tables-and-indexes).
 
 ## <a name="Compression"></a>Using SQL Server data compression
 
@@ -152,7 +150,7 @@ However, extra CPU resources are required on the database server to compress and
 
 With the **CompressionType** property, you can configure row or page type compression or configure the table not to use compression. With these compression settings, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table synchronization process will make changes to the SQL Server table, overwriting the current compression type, if any. You can choose to control data compression directly on SQL Server by setting the **CompressionType** property to **Unspecified**, in which case table synchronization process will not control the data compression.
 
-To evaluate whether a table is a good candidate to compress, you can use the stored procedure `sp_estimate_data_compression_savings` in SQL Server. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql).
+To evaluate whether a table is a good candidate to compress, you can use the stored procedure `sp_estimate_data_compression_savings` in SQL Server. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql).
 
 Because SQL Server supports data compression on the partition level, you can combine
 SQL Server data compression with table partitioning (see the previous section) to achieve flexible data archiving on historical parts of a large table, without having the CPU overhead on the active part of the table.
@@ -160,7 +158,7 @@ SQL Server data compression with table partitioning (see the previous section) t
 > [!NOTE]
 > Prior to SQL Server 2016 SP1, compression was not available in every edition of SQL Server.
 
-For more general information about table compression in SQL Server, see [Data Compression](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning and Best Practices](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)).
+For more general information about table compression in SQL Server, see [Data Compression](/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning and Best Practices](/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)).
 
 ## See Also
 

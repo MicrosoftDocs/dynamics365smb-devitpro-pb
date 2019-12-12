@@ -191,7 +191,7 @@ You can analyze the conflicts in any tool, make the relevant changes, and then r
 
 ## Task 5: Import and Compile Merged Objects in an Empty Database
 
-After you have completed the merge, you import the new merged application objects as text files into a new (empty) [!INCLUDE[prodshort](../developer/includes/prodshort.md) database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and resolve the conflicts there.
+After you have completed the merge, you import the new merged application objects as text files into a new (empty) [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and resolve the conflicts there.
 
 1. Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database for the new upgraded application. The database should be empty, except for the system tables.
 
@@ -208,16 +208,16 @@ After you have completed the merge, you import the new merged application object
 
     There are three ways to import the files:
 
-    - Use the [[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+    - Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
         For more information see [To import objects by using the development environment UI](../cside/cside-import-objects.md#ImportObjectsDevEnv).
-    - Use the finsql.exe to run the [ImportObjects](https://docs.microsoft.com/en-us/dynamics-nav/importobjects) command.
+    - Use the finsql.exe to run the [ImportObjects](/dynamics-nav/importobjects) command.
 
         For more information, see [To import objects by running finsql.exe with the ImportObjects command  ](../cside/cside-import-objects.md#ImportObjectsFinSQL).
 
     - Use the [!INCLUDE[devshell](../developer/includes/devshell.md)] (or Microsoft.Dynamics.NAV.Model.Tools.psd1 module).
 
-        The shell includes the **Join-NAVApplicationObjectFile** cmdlet and **Import-NAVApplicationObject** function. The **Join-NAVApplicationObjectFile** cmdlet combines multiple application object text files into one text file. The **Import-NAVApplicationObject** function runs the [ImportObjects](https://docs.microsoft.com/en-us/dynamics-nav/importobjects) command to import an object file.
+        The shell includes the **Join-NAVApplicationObjectFile** cmdlet and **Import-NAVApplicationObject** function. The **Join-NAVApplicationObjectFile** cmdlet combines multiple application object text files into one text file. The **Import-NAVApplicationObject** function runs the [ImportObjects](/dynamics-nav/importobjects) command to import an object file.
 
         This means that you can run a command similar to following to create a single text file from the merge application text files in the **Result** folder:
 
@@ -248,13 +248,13 @@ After you have completed the merge, you import the new merged application object
 
 The application and tenant databases are tagged with `Family` and `Version`. To perform the data upgrade, the `Family` on the application must match that tenant's `Family`. The `Version` of the application must be greater than or equal to the tenant's `Version`. The easiest way to ensure that `Family` and `Version` of the upgraded application are compatible for data upgrade is to set `Family` to the same value as the old application, and set the `Version` to a higher value than the old application. 
 
-To get the `Family` and `Version`, use the [Get-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet, for example:
+To get the `Family` and `Version`, use the [Get-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet, for example:
 
 ```  
 Get-NAVApplication -ServerInstance BC
 ```
 
-To set the `Family` and `Version`, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet. For example, to set the family, run the following command:
+To set the `Family` and `Version`, use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet. For example, to set the family, run the following command:
 
 ```
 Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationFamily <Family> 
@@ -318,7 +318,7 @@ For W1 versions, you can find the default upgrade toolkit objects in the  **Upgr
 | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade90014x.FOB| Upgrade900130.FOB|
 |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade100014x.FOB| Upgrade1000130.FOB|
 |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md) Fall 2018]| Upgrade13x14x.FOB|Not applicable|
+|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018| Upgrade13x14x.FOB|Not applicable|
 
 For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
 
@@ -326,7 +326,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
 
 ## <a name="AddExtensions"></a>Task 12: (Multitenant mode only) Publish extensions
 
-1. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+1. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
        
         ```
         Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
@@ -397,7 +397,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
 
     The new versions are found in the `\Extensions` folder of the installation media.
 
-    To publish the new extension version, run the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
+    To publish the new extension version, run the [Publish-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
     ```
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 

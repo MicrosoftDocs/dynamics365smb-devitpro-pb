@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -112,7 +112,7 @@ codeunit 50100 MyQueryTop10
     var
         MyQuery: Query "Customer_Sales_Quantity";
         Counter: Integer;
-        Text000: TextConst ENU = 'count %1.';
+        Text000: Label 'count %1.';
 }
 ```
 

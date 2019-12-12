@@ -19,7 +19,7 @@ An *array* is a data structure that contains several variables of the same type.
 |Your C/AL code uses .NET Framework interoperability extensively, and you must share the array among many methods.|.NET Framework array|  
 |Your C/AL code mostly uses basic C/AL types and does not interoperate with the .NET Framework.|C/AL array|  
   
- To use a .NET Framework array in C/AL, you must use the [System.Array](http://go.microsoft.com/fwlink/?LinkID=203944&clcid=0x409) class in the .NET Framework class library, which is the class from which all arrays inherit. When interfacing with an array in C/AL, you must use the following methods of the `System.Array` class to create and access elements in the array.  
+ To use a .NET Framework array in C/AL, you must use the [System.Array](https://go.microsoft.com/fwlink/?LinkID=203944&clcid=0x409) class in the .NET Framework class library, which is the class from which all arrays inherit. When interfacing with an array in C/AL, you must use the following methods of the `System.Array` class to create and access elements in the array.  
   
 |Method|Description|  
 |------------|-----------------|  

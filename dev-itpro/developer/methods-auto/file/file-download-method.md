@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -76,15 +76,15 @@ The business logic is run on the computer that is running [!INCLUDE[d365fin_serv
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]    
 
 ## Example  
- This example shows how to use the DOWNLOAD method. It requires that you create the following variable.  
+ This example shows how to use the DOWNLOAD method.
 
-|Variable name|DataType|  
-|-------------------|--------------|  
-|ToFile|Text|  
-
-```  
-ToFile := 'ToFile.txt';  
-DOWNLOAD('FromFile.txt','Download file','C:\','Text file(*.txt)|*.txt',ToFile);  
+ ```
+ var
+    ToFile: Text;
+begin
+    ToFile := 'ToFile.txt';  
+    DOWNLOAD('FromFile.txt','Download file','C:\','Text file(*.txt)|*.txt',ToFile);  
+end;
 ```  
 
 

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,26 +43,22 @@ The KeyRef of the field that has the specified index.
  The first key in the index must have index 1, the second index 2, and so on. The last key must have index = KEYCOUNT. If the specified index is out of the range or if no table is selected, the method returns an error.  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The loop starts from 1 and loops through the key indexes that are in the table. `CustomerRecref.KEYCOUNT` returns the maximum number of keys that are defined in the table. The loop continues until the last key is reached. For each index that is specified, the KEYINDEX method retrieves the KeyRef for the specified index. The key index and the KeyRef for the specified indexes are displayed in a message box. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|varKeyRef|KeyRef|  
-|i|Integer|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|KeyIndex: %1   KeyRef: %2|  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The loop starts from 1 and loops through the key indexes that are in the table. `CustomerRecref.KEYCOUNT` returns the maximum number of keys that are defined in the table. The loop continues until the last key is reached. For each index that is specified, the KEYINDEX method retrieves the KeyRef for the specified index. The key index and the KeyRef for the specified indexes are displayed in a message box. 
   
 ```  
-  
-CustomerRecref.OPEN(18);  
-  for i := 1 TO CustomerRecref.KEYCOUNT DO begin  
-    varKeyRef := CustomerRecref.KEYINDEX(i);  
-    MESSAGE(Text000, i, varKeyRef);  
-  end;  
-CustomerRecref.CLOSE;  
+var
+    CustomerRecref: RecordRef;
+    i: Integer;
+    varKeyRef: KeyRef;
+    Text000: Label 'KeyIndex: %1   KeyRef: %2'; 
+begin
+    CustomerRecref.OPEN(18);  
+      for i := 1 to CustomerRecref.KEYCOUNT do begin  
+        varKeyRef := CustomerRecref.KEYINDEX(i);  
+        MESSAGE(Text000, i, varKeyRef);  
+      end;  
+    CustomerRecref.CLOSE;  
+end;
 ```  
   
 

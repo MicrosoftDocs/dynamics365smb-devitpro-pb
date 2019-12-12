@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 98fd11e6-fac1-4ad6-8a3f-93e8b39e94b1
 caps.latest.revision: 3
+author: SusanneWindfeldPedersen
 ---
 # Disable Logging Events to the Windows Application Log
 Because the [!INCLUDE[server](../developer/includes/server.md)]vents are always logged to the Application and Services Logs, you can disable logging [!INCLUDE[s[!INCLUDE[server](../developer/includes/server.md)]e Windows Application log and not lose any data. The Windows Application log contains events from several applications and components. Disabling logging to the Windows Application log enables you to limit the amount of data that is stored.  

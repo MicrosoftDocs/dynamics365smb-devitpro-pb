@@ -65,7 +65,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
 
 7. (Multitenant only) Mount the new tenant database to the server instance.
 
-    To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet, for example:
+    To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet, for example:
 
     ```
     Mount-NAVTenant -ServerInstance <server instance> -DatabaseName <new tenant database name> -DatabaseServer <server\instance> -Tenant <tenant ID>
@@ -88,13 +88,13 @@ Follow these steps if one or more extensions are installed on the tenant. If the
     ```
 9. Synchronize the tenant database with the published extensions.
 
-    To synchronize the database with extensions, use the [Sync-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
+    To synchronize the database with extensions, use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
     Sync-NAVApp -ServerInstance <server instance>  -Tenant <tenant ID> -Name "<extension name>" -Version <version number>
     ```
 
-    If you want to synchronize all published extensions, then you can use the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), for example:
+    If you want to synchronize all published extensions, then you can use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), for example:
 
     ```
     Get-NAVAppInfo -ServerInstance BC140 | % { Sync-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }

@@ -237,14 +237,14 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
     The NAV Server virtual machine administrator password: [password]  
     The NAV Server Instance is: DynamicsNAV72_Ins1  
     The NAV Server account credentials: NSTService/[password]  
-    The Windows Client can be downloaded via ClickOnce at: http://MyNavVm.cloudapp.net:9004  
+    The Windows Client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
     The Web Client can be accessed at: https://MyNavVm.cloudapp.net/DynamicsNAV72_Ins1  
     A user has been added to the database with the following credentials:  
       user=navuser  
       password=[password]  
     ```  
 
-     A new virtual machine is added on Azure. To see the new virtual machine, sign in to the [Microsoft Azure Management Portal](http://manage.windowsazure.com/), and then choose **VIRTUAL MACHINES**.  
+     A new virtual machine is added on Azure. To see the new virtual machine, sign in to the [Microsoft Azure Management Portal](https://manage.windowsazure.com/), and then choose **VIRTUAL MACHINES**.  
 
 ##  <a name="OpenRTCs"></a> Opening the Microsoft Dynamics NAV Clients  
  When the script has completed without errors, you can then access the [!INCLUDE[rtc](includes/rtc_md.md)]s.  
@@ -255,7 +255,7 @@ The following walkthrough demonstrates how to use the Example-1VM.ps1 script of 
 
 2.  In the address, type the following address:  
 
-     **http://MyNavVm.cloudapp.net:9004**  
+     **https://MyNavVm.cloudapp.net:9004**  
 
 3.  Follow the instructions on the webpage to install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
 

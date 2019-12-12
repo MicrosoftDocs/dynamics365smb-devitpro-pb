@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: eb87ee8c-be21-4fed-a5f7-2229c4101c61
 caps.latest.revision: 6
+author: SusanneWindfeldPedersen
 ---
 # Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] to Accept Host Names for Tenants
 

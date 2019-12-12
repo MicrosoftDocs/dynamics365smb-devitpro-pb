@@ -16,30 +16,30 @@ Web service users can discover published web services by pointing a browser or a
  To display all published SOAP web services that are exposed by a [!INCLUDE[server](../developer/includes/server.md)] instance, use a URI of the following type:  
   
 ```  
-http://<Server>:<Port>/<ServerInstance>/WS/<CompanyName>/services  
+https://<Server>:<Port>/<ServerInstance>/WS/<CompanyName>/services  
 ```  
   
  The following example displays all published SOAP web services that are exposed for the [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
 ```  
-http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/services  
+https://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/services  
 ```  
   
  To view the schema for a particular service, use a URI of the following type:  
   
 ```  
-http://<Server>:<Port>/<ServerInstance>/WS/<CompanyName>/Page/<servicename>  
+https://<Server>:<Port>/<ServerInstance>/WS/<CompanyName>/Page/<servicename>  
 ```  
   
  The following example displays the schema for the Customer service for the [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
 ```  
-http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Page/Customer  
+https://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Page/Customer  
 ```  
   
 You can also use a URI for a codeunit web service, as shown in the following example:  
   
 ```  
-http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Codeunit/Letters  
+https://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Codeunit/Letters  
 ```  
   

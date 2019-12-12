@@ -36,7 +36,7 @@ An on-premises deployment of [!INCLUDE[prodshort](../developer/includes/prodshor
 |**ExchangeIdentity and TaskScheduler**| For internal use only. Do not use.|
 
 > [!IMPORTANT]  
->  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [Walkthrough: Configuring Web Services to Use SSL \(SOAP and OData\)](/dynamics-nav/Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData-.md) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
+>  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [How to: Implement Security Certificates in a Production Environment](/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment.md) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
 ### Configuring the Credential Type for Client and Server  
 For on-premises deployment, you must make sure that clients and [!INCLUDE[server](../developer/includes/server.md)] are configured to use the same credential type.  
@@ -65,5 +65,5 @@ With UserName, NavUserPassword, and AccessControlService credential types requir
 
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
 [Configuring Business Central Server](configure-server-instance.md)  
-<!--[Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview.md)-->  
+<!--[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md)-->  
 []

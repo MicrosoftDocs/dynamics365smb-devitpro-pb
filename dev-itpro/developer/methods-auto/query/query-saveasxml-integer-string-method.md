@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -66,21 +66,16 @@ Query.READ;
 ## Example  
  The following example shows how to save a query with the name **My Customer Query** as an .xml file. The file is given the name **myquery.xml** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
- This example requires that you create the following variables and text constant.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|OK|Boolean|Not applicable|  
-|MyCustomerQuery|Query|My Customer Query|  
-
-|Text constant name|ENU Value|  
-|------------------------|---------------|  
-|Text000|Query was not saved.|  
-
-```  
-OK := MyCustomerQuery.SAVEASXML('c:\myquery.xml');  
-IF NOT OK THEN  
-  ERROR(Text000);  
+```
+var
+    MyCustomerQuery: Query "My Customer Query";
+    OK: Boolean;
+    Text000: Label 'Query was not saved.';
+begin
+    OK := MyCustomerQuery.SAVEASXML('c:\myquery.xml');  
+    if not OK then  
+      ERROR(Text000);  
+end;
 ```  
 
  If the file cannot be saved, then the follow message appears:  

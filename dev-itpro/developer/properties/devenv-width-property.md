@@ -65,4 +65,4 @@ The following example sets the column width of a field to 50 characters.
 ## See Also
 [Properties](devenv-properties.md)  
 [Using Designer](../devenv-inclient-designer.md)  
-[Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user  ) 
+[Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user  ) 

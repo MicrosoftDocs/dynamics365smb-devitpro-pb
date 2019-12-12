@@ -34,7 +34,7 @@ A query describes a dataset of [!INCLUDE[navnow](includes/navnow_md.md)] data. Q
 
 5.  In the **Name** column, verify the default name or enter a Common Language Specification \(CLS\)–compliant name for the data item. The first character must be a letter. Subsequent characters can be any combination of letters, integers, and underscores.  
 
-     For more information, see the "Naming" section in [Common Language Specification](http://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
+     For more information, see the "Naming" section in [Common Language Specification](https://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
 
     > [!WARNING]  
     >  All DataItem and Column rows must have unique names.  

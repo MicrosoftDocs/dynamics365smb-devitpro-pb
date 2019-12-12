@@ -15,7 +15,7 @@ A key pillar of helping users help themselves is to give them access to Help for
 
 ## App-level configuration
 
-At an app level, you can specify where the Help for your functionality is published in the app.json file. For example, if you publish your content to `https://mysite.com/en-us/mysolution`, then you would specify that in the *contextSensitiveHelpUrl* property as shown in the following example:
+At an app level, you can specify where the Help for your functionality is published in the app.json file. For example, if you publish your content to `https://mysite.com/mysolution`, then you would specify that in the *contextSensitiveHelpUrl* property as shown in the following example:
 
 ```json
   "contextSensitiveHelpUrl": "https://mysite.com/documentation",
@@ -74,7 +74,7 @@ In contrast, the app.json file also contains a *help* property, but this specifi
 
 In the current version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the context-sensitive links to Help for the base application works in a different way that is based on a UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are listed, and have a target Help article associated with each of them. This means that multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
 
-The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [https://docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to that app provider's website. For more information, see [Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/configure-help.md).  
+The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [/dynamics365/business-central/](/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to that app provider's website. For more information, see [Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/configure-help.md).  
 
 ### Adding page-level UI-to-Help mapping to the system table
 

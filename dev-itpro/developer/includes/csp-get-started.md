@@ -1,0 +1,5 @@
+In order to be able to service [!INCLUDE [prodshort](prodshort.md)] licenses and provide help and support to your customers, your company must have a Microsoft Partner ID (MPN ID), and you must enroll in the [Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider) (CSP) program. In CSP, you can choose to enroll as an *indirect reseller* or a *direct bill partner*.  
+
+In most cases, you will enroll as an indirect reseller and then work with an *indirect provider*, also referred to as a *distributor*, who then manages all interaction with Microsoft in terms of licensing and technology, so that you can focus on sales and support. For more information, see [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) in the Microsoft Partner Center content.  
+
+To service customers in a specific country, your partner company's Azure Active Directory (Azure AD) tenant and CSP account must be registered in the regional CSP market that covers that country. For more information, see [Cloud Solution Provider program regional markets and currencies](/partner-center/regional-authorization-overview).  

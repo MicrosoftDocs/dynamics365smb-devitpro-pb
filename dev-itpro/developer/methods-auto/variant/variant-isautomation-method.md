@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,25 +38,22 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains an Automation variable. The MyAutomation variable is assigned to the variant variable that is named MyVariant. The **ISAUTOMATION** method determines whether the variant contains an Automation variable and stores the return value in the varResult variable. In this case, the variant contains an Automation variable so **Yes** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|MyAutomation|Automation|AFormAut 1.0 Type Library|  
-|MyVariant|Variant|Not applicable|  
-|varResult|Boolean|Not applicable|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|Does the variant contain an Automation variable? %1|  
-|Text001|Does the variant contain a code variable? %1|  
-  
+ The following example determines whether an AL variant contains an Automation variable. The MyAutomation variable is assigned to the variant variable that is named MyVariant. The **ISAUTOMATION** method determines whether the variant contains an Automation variable and stores the return value in the varResult variable. In this case, the variant contains an Automation variable so **Yes** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code.
+ 
 ```  
-MyVariant := MyAutomation;  
-varResult := MyVariant.ISAUTOMATION;  
-MESSAGE(Text000,varResult);  
-varResult := MyVariant.ISCODE;  
-MESSAGE(Text001, varResult);  
+var
+    MyAutomation: Automation "AFormAut 1.0 Type Library";
+    MyVariant: Variant;
+    varResult: Boolean;
+    Text000: Label 'Does the variant contain an Automation variable? %1.';
+    Text001: Label 'Does the variant- contain a code variable? %1.';
+begin
+    MyVariant := MyAutomation;  
+    varResult := MyVariant.ISAUTOMATION;  
+    MESSAGE(Text000,varResult);  
+    varResult := MyVariant.ISCODE;  
+    MESSAGE(Text001, varResult);  
+end;
 ```  
   
 

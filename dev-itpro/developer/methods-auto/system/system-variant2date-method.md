@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -39,16 +39,15 @@ The input variant.
 
 
 ## Example  
- This example requires that you create the following variables.  
-
-|Name|DataType|  
-|----------|--------------|  
-|TestDate|Date|  
-|variant1|Variant|  
 
 ```  
-variant1 := TODAY;  
-TestDate := VARIANT2DATE(variant1);  
+var
+    TextDate: Date;
+    variant1: Variant;
+begin
+    variant1 := TODAY;  
+    TestDate := VARIANT2DATE(variant1);  
+end;
 ```  
 
 

@@ -21,7 +21,7 @@ This procedure describes how to administer multiple [!INCLUDE[nav_server](includ
   
 2.  On each remote computer, open a Windows PowerShell command prompt with administrative credentials. Choose **Start**, choose **Accessories**, right-click **Windows PowerShell**, and then choose **Run as administrator**.  
   
-     Windows PowerShell is included in Windows 7, Windows 8, Windows Server 2008 R2, and Windows Server 2912 and can be installed on other Windows operating systems. For more information, see [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=211847) in the TechNet Library.  
+     Windows PowerShell is included in Windows 7, Windows 8, Windows Server 2008 R2, and Windows Server 2912 and can be installed on other Windows operating systems. For more information, see [Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=211847) in the TechNet Library.  
   
 3.  On each remote computer, at the Windows PowerShell command prompt, type `Enable-PSRemoting`, and then answer **Yes** to all prompts.  
   

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,20 +51,18 @@ WRITE adds a zero byte at the end of the stream. This is differs from WRITETEXT,
  If the return value is present, you must verify that all the data was streamed.  
   
 ## Example  
-  
-This example requires that you create the following variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|---|  
-|recBinaries|Record|Company Information|  
-|OStream|OutStream|| 
-|Guid|GUID|| 
-
-```  
-recBinaries.FIND('-');  
-recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-OStream.WRITE(Guid);  
-recBinaries.MODIFY();  
+    
+```
+ var
+    recBinaries: Record "Company Information";
+    OStream: OutStream;
+    Guid: GUID;
+begin 
+    recBinaries.FIND('-');  
+    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+    OStream.WRITE(Guid);  
+    recBinaries.MODIFY();  
+end;
 ```   
   
 

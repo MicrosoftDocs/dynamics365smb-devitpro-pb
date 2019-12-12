@@ -17,16 +17,16 @@ If you set up a SharePoint site using SharePoint Online or SharePoint on-premise
 This topic describes the overall configuration of an app for SharePoint that uses [!INCLUDE[navnow](includes/navnow_md.md)] data with examples of what you are likely to have to do.  
 
 ## Getting Started  
-If you already have a site available on SharePoint Online, you can deploy your first app to that. Alternatively, sign up for a free trial Office 365 plan. We recommend that you use a plan such as Office 365 Enterprise E1 as your test site, or that you sign up for a trial developer plan. A trial plan includes an administrative account which you will use to set up the app in the SharePoint site. For example, if your Office 365 site is *Solutions.onmicrosoft.com*, your administrative account can be *admin@solutions.onmicrosoft.com*. For more information, see [Select an Office 365 plan for business](http://go.microsoft.com/fwlink/?LinkId=309050).  
+If you already have a site available on SharePoint Online, you can deploy your first app to that. Alternatively, sign up for a free trial Office 365 plan. We recommend that you use a plan such as Office 365 Enterprise E1 as your test site, or that you sign up for a trial developer plan. A trial plan includes an administrative account which you will use to set up the app in the SharePoint site. For example, if your Office 365 site is *Solutions.onmicrosoft.com*, your administrative account can be *admin@solutions.onmicrosoft.com*. For more information, see [Select an Office 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
 
 If you want to use your app in a SharePoint on-premises deployment, you must choose a solution that meets your requirements. For example, the App Catalog is not available in all SharePoint 2013 on-premises solutions.  
 
-You will also need tools to create the actual app. We recommend that you use Visual Studio 2012 or later that also includes the Microsoft Office Developer Tools. Although you to write some code to create the app, Visual Studio includes project templates for creating apps for SharePoint, which makes it less complex. For more information, see [Microsoft Office Developer Tools for Visual Studio](http://go.microsoft.com/fwlink/?LinkId=309049) online.  
+You will also need tools to create the actual app. We recommend that you use Visual Studio 2012 or later that also includes the Microsoft Office Developer Tools. Although you to write some code to create the app, Visual Studio includes project templates for creating apps for SharePoint, which makes it less complex. For more information, see [Microsoft Office Developer Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309049) online.  
 
 ## Registering the App in SharePoint  
 Before you can install the app on a SharePoint site, the app must be registered in SharePoint. Registering an app generates an app identity, which includes the following information: client ID, display name of the app, app domain where the app is hosted, and in some cases, a redirect URI associated with the app. You will use some of the app identity information when you create the app.  
 
-There are five ways that you can register an app. The way that you choose to register your app depends on your scenario and environment. For more information, see [Guidelines for registering apps for SharePoint 2013](http://go.microsoft.com/fwlink/?LinkID=301252) in the MSDN Library.  
+There are five ways that you can register an app. The way that you choose to register your app depends on your scenario and environment. For more information, see [Guidelines for registering apps for SharePoint 2013](https://go.microsoft.com/fwlink/?LinkID=301252) in the MSDN Library.  
 
 For example, with the deployment scenario that is discussed in this guide, you will only install your apps on your own SharePoint sites. Therefore, you can manually register the app by using appregnew.aspx. To do this, you must access the appregnew.aspx page for your subscription, as described in the following procedure.  
 
@@ -47,7 +47,7 @@ For example, with the deployment scenario that is discussed in this guide, you w
 3.  Choose the **Create** button to register the app.  
 
 ## Developing the App in Visual Studio  
-With Visual Studio and the Microsoft Office Developer Tools, you can create an app for SharePoint. This topic provides the general instructions for creating a provider-hosted app. For more information, see [How to: Create a basic provider-hosted app](http://go.microsoft.com/fwlink/?LinkId=308938) and [Build apps for SharePoint](http://go.microsoft.com/fwlink/?LinkId=308937) in the MSDN Library.  
+With Visual Studio and the Microsoft Office Developer Tools, you can create an app for SharePoint. This topic provides the general instructions for creating a provider-hosted app. For more information, see [How to: Create a basic provider-hosted app](https://go.microsoft.com/fwlink/?LinkId=308938) and [Build apps for SharePoint](https://go.microsoft.com/fwlink/?LinkId=308937) in the MSDN Library.  
 
 ### Create the App in Visual Studio  
 You create an app for SharePoint using the **App for SharePoint** project template in Visual Studio. The app that you create must be a provider-hosted app for SharePoint.  
@@ -96,7 +96,7 @@ After you create the app, you modify settings in the app manifest for the app, w
 
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
-    <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"  
+    <App xmlns="https://schemas.microsoft.com/sharepoint/2012/app/manifest"  
          Name="NAVSharePointApp"  
          ProductID="{335df4e8-93b1-4205-8504-001aa934b01e}"  
          Version="1.0.0.0"  
@@ -124,7 +124,7 @@ You can choose to convert the query parameters of the URL into properties on the
 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+<Elements xmlns="https://schemas.microsoft.com/sharepoint/">  
   <ClientWebPart Name="ListPart" Title="Microsoft Dynamics NAV List Part" Description="List from Microsoft Dynamics NAV" DefaultWidth="800" DefaultHeight="300" >  
 
     <Content Type="html" Src="https://www.solutions.com/DynamicsNAV/?mode=View&isembedded=1&page=9301&shownavigation=0&showribbon=0&showuiparts=0&pagesize=7&SPHostUrl={HostUrl}" />  
@@ -139,7 +139,7 @@ The following code illustrates how to change the Elements.xml file to include pr
 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+<Elements xmlns="https://schemas.microsoft.com/sharepoint/">  
   <ClientWebPart Name="ListPart" Title="Microsoft Dynamics NAV List Part" Description="List from Microsoft Dynamics NAV" DefaultWidth="800" DefaultHeight="300" >  
 
     <Content Type="html" Src="https://www.solutions.com/DynamicsNAV/?mode=View&isembedded=1&page=_PageId_&shownavigation=0&&pagesize=_PageSize_&SPHostUrl={HostUrl}" />  
@@ -180,7 +180,7 @@ You can also choose to only publish the project in Visual Studio. Then, you must
 
 If the SharePoint site has subsites, you can deploy the app to the subsites, or you can let users add the app manually, provided they have permission to add apps to their site. If you upload the [!INCLUDE[navnow](includes/navnow_md.md)] app to the App Catalog, it is automatically available for users to install when they browse apps under **From Your Organization**. When the app has been installed, users can choose the app and be directed to the [!INCLUDE[nav_web](includes/nav_web_md.md)] where they are signed in automatically.  
 
-If you want to preconfigure your users’ sites, you can deploy the app to one or more site templates. For more information, see the **Deploy a custom app** section in [Use the App Catalog to make custom business apps available for the SharePoint Online environment](http://go.microsoft.com/fwlink/?LinkId=309795) in the SharePoint Online admin center.  
+If you want to preconfigure your users’ sites, you can deploy the app to one or more site templates. For more information, see the **Deploy a custom app** section in [Use the App Catalog to make custom business apps available for the SharePoint Online environment](https://go.microsoft.com/fwlink/?LinkId=309795) in the SharePoint Online admin center.  
 
 In both cases, you can provide the users with SharePoint sites that give them access to view and modify [!INCLUDE[navnow](includes/navnow_md.md)] data and any other information that you want them to have access to. You can choose to combine this with the document library functionality in SharePoint so that documents that are exported from [!INCLUDE[navnow](includes/navnow_md.md)] are stored on the SharePoint site. <!-- For more information about storing documents to SharePoint, see [Integrating with Office 365 and SharePoint Online](Integrating-with-Office-365-and-SharePoint-Online.md).-->  
 
@@ -190,6 +190,6 @@ In both cases, you can provide the users with SharePoint sites that give them ac
  [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md)   
  [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md)   
  [Troubleshooting: Microsoft Dynamics NAV and SharePoint](Troubleshooting--Microsoft-Dynamics-NAV-and-SharePoint.md)   
- [Select an Office 365 plan for business](http://go.microsoft.com/fwlink/?LinkId=309050)   
- [How to: Create a basic provider-hosted app](http://go.microsoft.com/fwlink/?LinkId=308938)   
- [Use the App Catalog to make custom business apps available for your SharePoint Online environment](http://go.microsoft.com/fwlink/?LinkId=309795)
+ [Select an Office 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050)   
+ [How to: Create a basic provider-hosted app](https://go.microsoft.com/fwlink/?LinkId=308938)   
+ [Use the App Catalog to make custom business apps available for your SharePoint Online environment](https://go.microsoft.com/fwlink/?LinkId=309795)

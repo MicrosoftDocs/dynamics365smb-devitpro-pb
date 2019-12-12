@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -54,23 +54,23 @@ The data that you want to write to the file.
  To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](https://go.microsoft.com/fwlink/?LinkId=262250).  
   
 ## Example  
- The following example determines whether the specified file exists. If it exists, the [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [WRITE Method \(FILE\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt. This example requires that you create the following global variables. 
+ The following example determines whether the specified file exists. If it exists, the [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [WRITE Method \(FILE\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt. 
   
-|Variable name|DataType|  
-|-------------------|--------------|  
-|FileName|Text|  
-|TestFile|File| 
-|RecId|RecordId|   
-  
-```  
-FileName := 'C:\TestFolder\TestFile.txt';  
-if EXISTS(FileName) then begin
-  TestFile.WRITEMODE(TRUE);  
-  TestFile.OPEN(FileName);  
-  TestFile.WRITE(RecId);  
-  TestFile.CLOSE;  
-end else 
-  MESSAGE('%1 does not exit.', FileName);
+```
+ var
+    FileName: Text;
+    TestFile: File;
+    RecId: RecordId;
+begin
+    FileName := 'C:\TestFolder\TestFile.txt';  
+    if EXISTS(FileName) then begin
+      TestFile.WRITEMODE(TRUE);  
+      TestFile.OPEN(FileName);  
+      TestFile.WRITE(RecId);  
+      TestFile.CLOSE;  
+    end else 
+      MESSAGE('%1 does not exit.', FileName);
+end;
 ```  
   
 

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,19 +36,14 @@ The serial number.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example requires that you create the following text constants and global variables.  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|The serial number for this software package is:\\%1|  
-  
-|Name|DataType|Length|  
-|----------|--------------|------------|  
-|SN|Text|30|  
-  
-```  
-SN := SERIALNUMBER;  
-MESSAGE(Text000, SN);  
+```
+var
+    SN: Text[30];
+    Text000: Label 'The serial number for this software package is:%1.';
+begin 
+    SN := SERIALNUMBER;  
+    MESSAGE(Text000, SN);  
+end;
 ```  
   
  The output of this example is as follows:  

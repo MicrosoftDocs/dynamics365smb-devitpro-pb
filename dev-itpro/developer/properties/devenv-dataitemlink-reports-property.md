@@ -30,8 +30,8 @@ Sets the corresponding fields from two data items that are linked by the [DataIt
   
 |Syntax|Description|  
 |------------|-----------------|  
-|<field>|A field from the child data item|  
-|<reference field>|A field from the less indented (parent) data item that is identified by the [DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|  
+|\<field>|A field from the child data item|  
+|\<reference field>|A field from the less indented (parent) data item that is identified by the [DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|  
   
  The DataItemLink property sets a filter on the child data item. This filter selects records that contain the same field value in both the parent and child data items. 
   

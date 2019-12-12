@@ -38,9 +38,9 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
--   Microsoft Excel 2013 with Microsoft PowerPivot enabled, or Microsoft Excel 2010 with the PowerPivot add-in for Excel 2010 installed. For more information, see [PowerPivot Download Page](http://go.microsoft.com/fwlink/?LinkId=200002).  
+-   Microsoft Excel 2013 with Microsoft PowerPivot enabled, or Microsoft Excel 2010 with the PowerPivot add-in for Excel 2010 installed. For more information, see [PowerPivot Download Page](https://go.microsoft.com/fwlink/?LinkId=200002).  
   
--   A Microsoft account for accessing data from Azure Marketplace. For more information about Microsoft account, see the [What is a Microsoft account?](http://go.microsoft.com/fwlink/?LinkId=271494). To obtain a Microsoft account, go to the [sign-up page](http://go.microsoft.com/fwlink/?LinkId=271493).  
+-   A Microsoft account for accessing data from Azure Marketplace. For more information about Microsoft account, see the [What is a Microsoft account?](https://go.microsoft.com/fwlink/?LinkId=271494). To obtain a Microsoft account, go to the [sign-up page](https://go.microsoft.com/fwlink/?LinkId=271493).  
   
 ## Story  
  Victor, the business system developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], has been asked by his manager Tim to create a data visualization that will show total sales to customers in different countries/regions, and how those countries/regions align with Key Development Indicators, which are a measure of national/regional affluence. Tim tells Victor that he can find information about Key Development Indicators on zure Marketplace. Victor assesses the assignment and decides that he can use OData web services to bring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data to Excel, where he can merge it with economic data from Azure Marketplace.  
@@ -126,9 +126,9 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 1.  Start Internet Explorer.  
   
-2.  In the **Address** field, enter a URI in this format: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/OData**.  
+2.  In the **Address** field, enter a URI in this format: **https://\<Server>:\<WebServicePort>/\<ServerInstance>/OData**.  
   
-     For example:**http://localhost:7048/DynamicsNAV72/OData**  
+     For example:**https://localhost:7048/DynamicsNAV72/OData**  
   
      The browser should now show the web services that you have published, in the format of an AtomPub document.  
   
@@ -146,7 +146,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
   
 2.  In PowerPivot, on the **Home** tab, choose **Get External Data**, choose **From Data Service**, and then choose **From OData Data Feed**.  
   
-3.  In the **Data Feed Url** field, enter the OData URI, such as **http://localhost:7048/DynamicsNAV72/OData**. Choose the **Next** button.  
+3.  In the **Data Feed Url** field, enter the OData URI, such as **https://localhost:7048/DynamicsNAV72/OData**. Choose the **Next** button.  
   
 4.  Verify that **Customer** and **SalesOrderInfo** appear in the **Source Table** column. Place a check mark in the left column next to these two rows, and then choose **Finish**.  
   

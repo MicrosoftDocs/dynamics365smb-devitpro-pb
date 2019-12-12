@@ -17,7 +17,7 @@ This topic describes how to set the language, regional settings, and time zone f
  The [!INCLUDE[navnow](includes/navnow_md.md)] clients support multiple language versions of [!INCLUDE[navnow](includes/navnow_md.md)]. To enable [!INCLUDE[navnowlong](includes/navnowlong_md.md)] in another language, you install the language module for that language. A language module contains translated text strings for the user interface, the [!INCLUDE[navnow](includes/navnow_md.md)] database, and [!INCLUDE[nav_server](includes/nav_server_md.md)], such as for logs and error reporting. After you install a language module, you configure the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] to use the language.  
   
 ### Installing a Language Module  
- You can obtain language modules from [Language Modules for Microsoft Dynamics NAV 2013](http://go.microsoft.com/fwlink/?LinkID=317425) \(requires PartnerSource account\). After you obtain a language module, you install its components on the computers that are running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and [!INCLUDE[navnow](includes/navnow_md.md)] database.  
+ You can obtain language modules from [Language Modules for Microsoft Dynamics NAV 2013](https://go.microsoft.com/fwlink/?LinkID=317425) \(requires PartnerSource account\). After you obtain a language module, you install its components on the computers that are running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and [!INCLUDE[navnow](includes/navnow_md.md)] database.  
   
  For information about how to install a language module, see [How to: Install Language Modules](How-to--Install-Language-Modules.md).  
   

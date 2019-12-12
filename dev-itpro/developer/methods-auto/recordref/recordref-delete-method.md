@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -55,29 +55,25 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
  You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
 
 ## Example  
- The following example deletes a record from the Customer table. The code starts by opening the **Customer** table \(18\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef that is named MyFieldRef for field 1, which is the primary key of the **Customer** table. The [VALUE Method \(FieldRef, TestPage Field\)](../fieldref/fieldref-value-method.md) assigns the value 10000 to the field that the MyFieldRef variable refers to. The [FIND Method \(RecordRef\)](recordref-find-method.md) searches the table for a record with field 1 = 10000. If the record is found, then it is deleted, the table is modified, and a message is displayed. This example requires that you create the following global variables and text constant.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|varRecordToDelete|Code|  
-|MyRecordRef|RecordRef|  
-|MyFieldRef|FieldRef|  
-
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|Customer %1 is deleted.|  
-
+ The following example deletes a record from the Customer table. The code starts by opening the **Customer** table \(18\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef that is named MyFieldRef for field 1, which is the primary key of the **Customer** table. The [VALUE Method \(FieldRef, TestPage Field\)](../fieldref/fieldref-value-method.md) assigns the value 10000 to the field that the MyFieldRef variable refers to. The [FIND Method \(RecordRef\)](recordref-find-method.md) searches the table for a record with field 1 = 10000. If the record is found, then it is deleted, the table is modified, and a message is displayed. 
+ 
 ```  
-varRecordToDelete := '10000';  
-MyRecordRef.OPEN(18);  
-MyFieldRef := MyRecordRef.FIELD(1);  
-MyFieldRef.VALUE := varRecordToDelete;  
-ifMyRecordRef.FIND('=') then begin  
-  ifMyRecordRef.DELETE then begin  
-    MyRecordRef.MODIFY;  
-    MESSAGE(Text000, MyFieldRef.VALUE);  
-  end;  
-end;  
+var
+    varRecordToDelete: Code;
+    MyRecordRef: RecordRef;
+    Text000: Label 'Customer %1 is deleted.;
+begin
+    varRecordToDelete := '10000';  
+    MyRecordRef.OPEN(18);  
+    MyFieldRef := MyRecordRef.FIELD(1);  
+    MyFieldRef.VALUE := varRecordToDelete;  
+    if MyRecordRef.FIND('=') then begin  
+      ifMyRecordRef.DELETE then begin  
+        MyRecordRef.MODIFY;  
+        MESSAGE(Text000, MyFieldRef.VALUE);  
+      end;  
+    end;  
+end;
 
 ```  
 

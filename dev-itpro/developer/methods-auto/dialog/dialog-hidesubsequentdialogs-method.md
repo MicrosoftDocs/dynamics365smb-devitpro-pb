@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -53,7 +53,7 @@ The following code illustrates how the HIDESUBSEQUENTDIALOGS method works with t
 var
   MyDialog1 : Dialog;
   MyDialog2 : Dialog;
-  Text000 : TextConst ENU='additional text';
+  Text000 : Label 'additional text';
   begin
 
     // The HIDESUBSEQUENTDIALOGS method is used on MyDialog1 dialog.

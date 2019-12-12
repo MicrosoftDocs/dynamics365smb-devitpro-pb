@@ -29,7 +29,7 @@ If the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance is on an Azure
   
 -   Open Server Manager, and then use the **Add Roles and Features Wizard** to install HTTP Activation, which is available under the .NET Framework 3.5 feature.  
   
-     For more information, see [Install or Uninstall Roles, Role Services, or Features](http://go.microsoft.com/fwlink/?LinkID=623826).  
+     For more information, see [Install or Uninstall Roles, Role Services, or Features](https://go.microsoft.com/fwlink/?LinkID=623826).  
   
 ## See Also  
  [Managing Encryption Keys for SQL Server Authentication](Managing-Encryption-Keys-for-SQL-Server-Authentication.md)   

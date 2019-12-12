@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 
 # Security Auditing in Business Central
@@ -37,9 +38,9 @@ Some of the most important tables tracked include:
 > The change log code is called from the `OnDatabaseInsert` method in the system codeunit **49 GlobalTriggerManagemnet**. 
 
 
-For more information, see [Auditing Changes in Business Central](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes).
+For more information, see [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).
 
 <!-- change title to auditing data changes -->
 ## See Also  
 
-[Security Development Lifecycle](https://www.microsoft.com/en-us/sdl)  
+[Security Development Lifecycle](https://www.microsoft.com/sdl)  

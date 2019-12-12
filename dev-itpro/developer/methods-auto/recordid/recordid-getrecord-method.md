@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,10 +41,11 @@ The RecordRef of the record.
 ## Example  
  The following example opens table number 18 \(Customer table\) and sets a reference to the table. The [FINDLAST Method \(RecordRef\)](../recordref/recordref-findlast-method.md) selects the last record in the table. The [RECORDID Method \(RecordRef\)](../recordref/recordref-recordid-method.md) retrieves the ID of the currently selected record. In this case, it is the last record in the table. The [GETRECORD Method \(RECORDID\)](../recordid/recordid-getrecord-method.md) uses the retrieved record ID to determine the RecordRef of the selected record \(the last record\). This example requires that you create the following global variables and text constant.  
 
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|RecID|RecordID|  
+```
+var
+    RecRef: RecordRef;
+    RecID: RecordID;
+```
 
 ```  
 

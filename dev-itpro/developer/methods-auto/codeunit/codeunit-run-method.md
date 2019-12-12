@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,20 +40,20 @@ This optional parameter identifies a record. This parameter is a record data typ
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example runs two codeunits. The first uses a record parameter. The second is defined without a source table. This example requires that you create the following variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|FiscalYearCloseInstance|Codeunit|Fiscal Year-Close|  
-|AppMgmtInstance|Codeunit|ApplicationManagement|  
-|AccountRecord|Record|Accounting Period|  
-  
-```  
-AccountRecord.INIT;  
-if not FiscalYearCloseInstance.RUN(AccountRecord) then  
-  ERROR('Codeunit run failed (with record).');  
-if not AppMgmtInstance.RUN then  
-  ERROR('Codeunit run failed.');  
+ This example runs two codeunits. The first uses a record parameter. The second is defined without a source table.
+
+ ```
+var
+    FiscalYearCloseInstance: Codeunit "Fiscal Year-Close";
+    AppMgmtInstance: Codeunit ApplicationManagement;
+    AccountRecord: Record "Accounting Period";
+begin  
+    AccountRecord.INIT;  
+    if not FiscalYearCloseInstance.RUN(AccountRecord) then  
+      ERROR('Codeunit run failed (with record).');  
+    if not AppMgmtInstance.RUN then  
+      ERROR('Codeunit run failed.');  
+end;
 ```  
 
 ## See Also

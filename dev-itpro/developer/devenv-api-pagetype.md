@@ -20,7 +20,7 @@ For the API page type, the following naming conventions exist:
 - Alphanumeric characters allowed (A-Z+a-z+0-9) in above elements. 
 - APIVersion follows the pattern vX.Y or beta.
 
-At design time, the compiler will show warnings on casing violations and errors on naming violations. Once an API page is deployed, the corresponding [$metadata](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) is exposed on the endpoint of the page. 
+At design time, the compiler will show warnings on casing violations and errors on naming violations. Once an API page is deployed, the corresponding [$metadata](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) is exposed on the endpoint of the page. 
 
 ## Example of the API page type
 The following page example publishes an API available at:

@@ -35,9 +35,9 @@ In a typical business scenario, developers create control add-ins using Microsof
 
 - Bing Maps account and key. For information, see the following:
 
-    [Creating a Bing Maps Account](https://msdn.microsoft.com/en-us/library/gg650598.aspx)
+    [Creating a Bing Maps Account](https://msdn.microsoft.com/library/gg650598.aspx)
     
-    [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx)
+    [Getting a Bing Maps Key](https://msdn.microsoft.com/library/ff428642.aspx)
 
 -   (Optional) Create three image files that can be used for pushpins that mark certain locations on the map. This walkthrough uses three pushpin images, which ar called PushpinBlue.png, PushpinGreen.png, and PushpinRed.png. You can create you own images from scratch or from the images in the following table.
 
@@ -146,7 +146,7 @@ After you create an interface in Visual Studio that exposes a number of properti
         </Resources>
 
         <ScriptUrls>
-            <ScriptUrl>http://www.bing.com/api/maps/mapcontrol</ScriptUrl>
+            <ScriptUrl>https://www.bing.com/api/maps/mapcontrol</ScriptUrl>
         </ScriptUrls>
     
         <Script>

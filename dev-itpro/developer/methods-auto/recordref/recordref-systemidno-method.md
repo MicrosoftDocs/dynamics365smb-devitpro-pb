@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,7 +45,7 @@ This example shows how to use the SYSTEMIDNO method to retrieve the field number
 var
     CustomerRec: Record Customer;
     SystemIdFieldNo: Integer;
-    Text000: TextConst ENU = 'The field number is: %1.';
+    Text000: Label 'The field number is: %1.';
 
 begin
     CustomerRec.OPEN(DATABASE::Customer);

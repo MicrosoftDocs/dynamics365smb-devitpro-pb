@@ -7,12 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c789cb47-8bd3-4764-8517-6f9390000313
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
-
- 
 
 # PrintOnlyIfDetail Property
 Specifies whether to print data in a report for the parent data item when the child data item does not generate any output.  

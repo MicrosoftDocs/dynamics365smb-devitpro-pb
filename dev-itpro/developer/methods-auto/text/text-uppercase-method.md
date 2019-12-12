@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,19 +40,17 @@ The string converted to uppercase.
 ## Example  
  The following example shows how to use the **UPPERCASE** method.  
   
- This example requires that you create the following text constants.  
-  
-|Text constant|ConstValue|  
-|-------------------|----------------|  
-|Text000|Outstanding Order Status|  
-|Text001|The test string before UPPERCASE is called:\\%1|  
-|Text002|The string after UPPERCASE is called:\\%1|  
-  
 ```  
-Lower := Text000;  
-MESSAGE(Text001, Lower);  
-Upper := UPPERCASE(Lower);  
-MESSAGE(Text002, Upper);  
+var
+    Text000: Label 'Outstanding Order Status';  
+    Text001: Label 'The test string before UPPERCASE is called:\\%1';  
+    Text002: Label 'The string after UPPERCASE is called:\\%1';  
+begin
+    Lower := Text000;  
+    MESSAGE(Text001, Lower);  
+    Upper := UPPERCASE(Lower);  
+    MESSAGE(Text002, Upper);  
+end;
 ```  
   
  The first message window displays the following:  

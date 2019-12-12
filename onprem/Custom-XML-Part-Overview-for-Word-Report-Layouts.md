@@ -54,7 +54,7 @@ Word report layouts are built on *custom XML parts*. A custom XML part is struct
 |`..</DataItem1>`<br /><br /> `</NavWordReportXmlPart>`|Closing element.|  
   
 ## Custom XML Part in Word  
- In Word, you open the custom XML part in the **XML Mapping** pane, and then use the pane to map elements to content controls in the Word document. The **XML Mapping** pane is accessible from the **Developer** tab \(for more information, see [How to: Show the Developer Tab on the Ribbon](http://go.microsoft.com/fwlink/?LinkID=389631)\).  
+ In Word, you open the custom XML part in the **XML Mapping** pane, and then use the pane to map elements to content controls in the Word document. The **XML Mapping** pane is accessible from the **Developer** tab \(for more information, see [How to: Show the Developer Tab on the Ribbon](https://go.microsoft.com/fwlink/?LinkID=389631)\).  
   
  The elements in the **XML Mapping** pane appear in a structure that is similar to the XML source. Label fields are grouped under a common **Labels** element and data item and columns are arranged in a hierarchal structure that corresponds to the XML source, with columns listed in alphabetical order. Elements are identified by their name as defined by the Name property in Report Dataset Designer in [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)].  
   

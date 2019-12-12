@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,24 +49,20 @@ Specifies if you have permission to write to the table
  This method works the same as the [WRITEPERMISSION Method \(Record\)](../record/record-writepermission-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The WRITEPERMISSION method determines whether the table has write permission and stores the return value in the varHasWritePerm variable. The Customer table has write permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|varHasWritePerm|Boolean|  
-|varTableNo|Integer|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|Does the %1 table have write permission? %2|  
+ The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The WRITEPERMISSION method determines whether the table has write permission and stores the return value in the varHasWritePerm variable. The Customer table has write permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. 
   
 ```  
-  
-varTableNo := 18;  
-MyRecordRef.OPEN(varTableNo);  
-varHasWritePerm := MyRecordRef.WRITEPERMISSION;  
-MESSAGE(Text000, MyRecordRef.NAME, varHasWritePerm);  
+var
+    MyRecordRef: RecordRef;
+    varTableNo: Integer;
+    varHasWritePerm: Boolean;
+    Text000: Label 'Does the %1 table have write permission? %2';
+begin  
+    varTableNo := 18;  
+    MyRecordRef.OPEN(varTableNo);  
+    varHasWritePerm := MyRecordRef.WRITEPERMISSION;  
+    MESSAGE(Text000, MyRecordRef.NAME, varHasWritePerm);  
+end;
 ```  
   
 

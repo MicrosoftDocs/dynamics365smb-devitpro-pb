@@ -114,11 +114,11 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
   
 1.  Start Windows Internet Explorer.  
   
-2.  In the **Address** field, enter the following address where the keys are replaced with the values that are specified in the CustomSettings.config file: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services**.  
+2.  In the **Address** field, enter the following address where the keys are replaced with the values that are specified in the CustomSettings.config file: **https://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services**.  
   
      For example:  
   
-     **http://localhost:7047/BC130/WS/CRONUS-International-Ltd./services**  
+     **https://localhost:7047/BC130/WS/CRONUS-International-Ltd./services**  
   
     > [!NOTE] 
     >  The company name is case-sensitive.  
@@ -145,7 +145,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
   
 5.  In Solution Explorer, right-click the **References** node in the project, and then choose **Add Service Reference**.  
   
-6.  In the **Add Service Reference** dialog box, choose the **Advanced** button, choose the **Add Web Reference** button, in the URL text box, type or paste the URL that you used when checking the WSDL, such as **http://localhost:7047/BC130/WS/Services**, and then choose **Go**.  
+6.  In the **Add Service Reference** dialog box, choose the **Advanced** button, choose the **Add Web Reference** button, in the URL text box, type or paste the URL that you used when checking the WSDL, such as **https://localhost:7047/BC130/WS/Services**, and then choose **Go**.  
   
 7.  When the services are displayed, select the Page service \(`Page/PageWithCapitalization`. Then choose **View Service**.  
   

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,14 +42,13 @@ The time that is returned is different for the [!INCLUDE[webclient](../../includ
  You can only use the TIME method to retrieve the time from the operating system. You cannot use it to set the time in the operating system.  
   
 ## Example  
- This example requires that you create the following global text constant.  
-  
-|Name|ConstValue|  
-|----------|----------------|  
-|Text000|The current system time is %1.|  
-  
-```  
-MESSAGE(Text000, TIME);  
+
+``` 
+var
+    Text000: Label 'The current system time is %1.";
+begin
+    MESSAGE(Text000, TIME);  
+end;
 ```  
   
  On a computer that has the regional format set to English \(United States\), the message window could display the following:  

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,16 +47,16 @@ An instance of the [File](file-data-type.md) data type.
  You can use this method together with [NAME Method \(File\)](../../methods-auto/file/file-name-method.md) and [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md).  
   
 ## Example  
- This example creates a temporary file that has the text Hello and then deletes the file by using the File.CLOSE method. This example requires that you create the following variable.  
-  
-|Variable|DataType|  
-|--------------|--------------|  
-|FileName|File|  
-  
-```  
-FileName.CREATETEMPFILE;  
-FileName.WRITE('Hello');  
-FileName.CLOSE;  
+ This example creates a temporary file that has the text Hello and then deletes the file by using the File.CLOSE method.
+
+ ```
+ var
+    FileName: File;
+begin
+    FileName.CREATETEMPFILE;  
+    FileName.WRITE('Hello');  
+    FileName.CLOSE; 
+end;
 ```  
   
 ## See Also

@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Exporting and Importing Objects
 You can export and import application objects from and to the database from a file. The file must be one of the following formats:  
@@ -46,7 +47,7 @@ You can export and import application objects from and to the database from a fi
 
      All other parameters are optional.  
 
-     For more information about the ExportObjects command, see [ExportObjects](https://docs.microsoft.com/en-us/dynamics-nav/ExportObjects).  
+     For more information about the ExportObjects command, see [ExportObjects](/dynamics-nav/ExportObjects).  
 
 
 ### <a name="ImportObjectsDevEnv"></a>To import objects by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)]  

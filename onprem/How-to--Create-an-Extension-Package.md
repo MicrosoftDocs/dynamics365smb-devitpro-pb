@@ -87,7 +87,7 @@ You have packaged your extension so it is ready to be published and installed on
  Finally, you can choose to get your extension package signed to help validate its authenticity.
 
 ## Signing a NAVx File
-Code signing is a common practice for many applications. For more information, see [Authenticode](https://msdn.microsoft.com/en-us/library/ms537359\(VS.85\).aspx) in the MSDN Library. The signing must be performed on a computer that has [!INCLUDE[navcorfu](includes/navcorfu_md.md)] or later installed. You must have a certificate on the computer (as a file or in the certificate store) that includes code signing for the intended purpose. It is recommended that you use a certificate from a third party certificate authority. For testing purposes, it is acceptable to create a self-signed certificate using the [New-SelfSignedCertificate](https://technet.microsoft.com/library/hh848633) cmdlet in PowerShell on Windows 10 or [MakeCert](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx).  
+Code signing is a common practice for many applications. For more information, see [Authenticode](https://msdn.microsoft.com/library/ms537359\(VS.85\).aspx) in the MSDN Library. The signing must be performed on a computer that has [!INCLUDE[navcorfu](includes/navcorfu_md.md)] or later installed. You must have a certificate on the computer (as a file or in the certificate store) that includes code signing for the intended purpose. It is recommended that you use a certificate from a third party certificate authority. For testing purposes, it is acceptable to create a self-signed certificate using the [New-SelfSignedCertificate](https://technet.microsoft.com/library/hh848633) cmdlet in PowerShell on Windows 10 or [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx).  
 
 The following example illustrates how to create a new self-signed certificate for code signing:
 
@@ -100,9 +100,9 @@ Example MakeCert command to create a new self-signed certificate for code signin
 ```
 Makecert –sk myNewKey –n “CN=Prosewaretest” –r –ss my
 ```
-Optionally, but recommended, use a time stamp when signing the NAVx file. A time stamp allows the NAVx signature to be verifiable even after the certificate used for the signature has expired. For more information, see [Time Stamping Authenticode Signatures](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931395\(v=vs.85\).aspx).  
+Optionally, but recommended, use a time stamp when signing the NAVx file. A time stamp allows the NAVx signature to be verifiable even after the certificate used for the signature has expired. For more information, see [Time Stamping Authenticode Signatures](https://msdn.microsoft.com/library/windows/desktop/bb931395\(v=vs.85\).aspx).  
 
-Use a signing tool such as [SignTool](https://msdn.microsoft.com/en-us/library/8s9b9yaz\(v=vs.110\).aspx) or [CodeSign](https://msdn.microsoft.com/en-us/library/ms537364\(v=vs.85\).aspx) to sign the NAVx file.  
+Use a signing tool such as [SignTool](https://msdn.microsoft.com/library/8s9b9yaz\(v=vs.110\).aspx) or [CodeSign](https://msdn.microsoft.com/library/ms537364\(v=vs.85\).aspx) to sign the NAVx file.  
 
 The following example signs the Proseware.navx file using the certificate in the password-protected MyCert.pfx file.
 
@@ -113,7 +113,7 @@ SignTool sign /f MyCert.pfx /p MyPassword “C:\NAV\Proseware.navx”
 The following example signs the Proseware.navx file with a time stamp using the certificate in the password-protected MyCert.pfx file.
 
 ```
-SignTool sign /f MyCert.pfx /p MyPassword /t http://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.navx”
+SignTool sign /f MyCert.pfx /p MyPassword /t https://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.navx”
 ```
 
 The following example signs the Proseware.navx file using the certificate in the My store with a subject name of “Prosewaretest”.
@@ -134,7 +134,7 @@ SignTool sign /n Prosewaretest “C:\NAV\Extension\Proseware.navx”
  [How to: Publish and Install an Extension](How-to--Publish-and-Install-an-Extension.md)  
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)  
  [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)  
- [Development Cmdlets for Microsoft Dynamics NAV Extensions](http://go.microsoft.com/fwlink/?LinkID=626875)  
- [Authenticode](https://msdn.microsoft.com/en-us/library/ms537359\(VS.85\).aspx)  
- [Introduction to Code Signing](https://msdn.microsoft.com/en-us/library/ms537361\(v=vs.85\).aspx)  
+ [Development Cmdlets for Microsoft Dynamics NAV Extensions](https://go.microsoft.com/fwlink/?LinkID=626875)  
+ [Authenticode](https://msdn.microsoft.com/library/ms537359\(VS.85\).aspx)  
+ [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361\(v=vs.85\).aspx)  
 -->

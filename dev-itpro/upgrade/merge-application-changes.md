@@ -112,4 +112,4 @@ ms.service: "dynamics365-business-central"
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   
  [Compare and Update Application Object Source Files](compare-update-application-object-source-files.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)   
- [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)
+ [Business Central PowerShell Cmdlets](/powershell/business-central/overview)

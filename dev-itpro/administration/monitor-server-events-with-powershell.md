@@ -15,9 +15,9 @@ Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] ins
 ##  <a name="ViewEventsWinPS"></a>PowerShell Get-WinEvent Cmdlet   
 You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[server](../developer/includes/server.md)] instance events and trace events in the event logs and event tracing log files on the [!INCLUDE[server](../developer/includes/server.md)] computer. The Get-WinEvent cmdlet retrieves the same events that can be viewed in Event Viewer under **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** (see [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)). 
   
-The Get-WinEvent cmdlet includes several parameters that enable you to filter the events that you view and specify how the events are displayed. Windows PowerShell enables you can create scripts that perform complex operations for extracting and displaying specific event data. For more information about the Get-WinEvent cmdlet, see [Get-WinEvent](http://go.microsoft.com/fwlink/?LinkID=513535).  
+The Get-WinEvent cmdlet includes several parameters that enable you to filter the events that you view and specify how the events are displayed. Windows PowerShell enables you can create scripts that perform complex operations for extracting and displaying specific event data. For more information about the Get-WinEvent cmdlet, see [Get-WinEvent](https://go.microsoft.com/fwlink/?LinkID=513535).  
   
-For more information about installing and getting started with Windows PowerShell, see [Getting Started with Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=254637).  
+For more information about installing and getting started with Windows PowerShell, see [Getting Started with Windows PowerShell](https://go.microsoft.com/fwlink/?LinkID=254637).  
   
 ## To use the Get-WinEvent Cmdlet to view events  
   
@@ -27,7 +27,7 @@ For more information about installing and getting started with Windows PowerShel
   
 2.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Window PowerShell.  
   
-     For more information, see [Starting Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=513794).  
+     For more information, see [Starting Windows PowerShell](https://go.microsoft.com/fwlink/?LinkID=513794).  
   
 3.  At the command prompt, enter the `Get-WinEvent` command. The following table provides some simple example commands.  
   
@@ -57,7 +57,7 @@ There are two debug logs for [!INCLUDE[prodshort](../developer/includes/prodshor
     ```  
   
 > [!TIP]  
->  You can also enable the Debug log from Event Viewer. For more information, see [Enable Analytic and Debug Logs](http://technet.microsoft.com/en-us/library/cc749492.aspx).  
+>  You can also enable the Debug log from Event Viewer. For more information, see [Enable Analytic and Debug Logs](https://technet.microsoft.com/library/cc749492.aspx).  
   
 ## Filtering [!INCLUDE[server](../developer/includes/server.md)] Events  
 You can filter the events that you view in a [!INCLUDE[server](../developer/includes/server.md)] log by setting the *FilterXpath* parameter of the Get-WinEvent cmdlet. The following examples illustrate how you can use the *FilterXpath* parameter to filter the [!INCLUDE[server](../developer/includes/server.md)] events.  
@@ -103,4 +103,4 @@ for($i = 0; $i -lt  $events.Length; $i+=2)
  [Business Central Server Trace Events](server-trace-events.md)   
  [Monitoring Business Central Server](monitor-server.md)   
  [Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  
- [Event Viewer](http://go.microsoft.com/fwlink/?LinkID=314067)
+ [Event Viewer](https://go.microsoft.com/fwlink/?LinkID=314067)

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,20 +40,18 @@ Specifies the Record that you want to refer to the table.
 ## Example  
  This example shows that if you have a RecordID data type, you can get a RecordRef for the table that the RecordID refers to. Then you can use the RecordRef to set the table to which a Record variable refers.  
 
- This example requires that you create the following global or local variables.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|InvtEventBuf|Record|Inventory Event Buffer|  
-|RecID|RecordID|Not applicable|  
-|RecRef|RecordRef|Not applicable|  
-|ProdOrderComp|Record|Prod. Order Component|  
-
 ```  
-InvtEventBuf.FIND('-');  
-RecID := InvtEventBuf."Source Line ID";  
-RecRef := RecID.GETRECORD;  
-RecRef.SETTABLE(ProdOrderComp);  
+var
+    RecRef: RecordRef;
+    InvtEventBuf: Record "Inventory Event Buffer";
+    RecID: RecordId;
+    ProdOrderComp: Record "Prod. Order Component";
+begin 
+    InvtEventBuf.FIND('-');  
+    RecID := InvtEventBuf."Source Line ID";  
+    RecRef := RecID.GETRECORD;  
+    RecRef.SETTABLE(ProdOrderComp);  
+end;
 ```  
 
 

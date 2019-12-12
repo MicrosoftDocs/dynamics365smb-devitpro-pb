@@ -33,7 +33,7 @@ Whether viewing the table directly from the client or from Visual Studio Code, y
 
 Any end-user that is assigned these permissions will be able to view that table in the browser.
 
-For information about assigning permissions, see [Manage Users and Permissions](https://docs.microsoft.com/en-US/dynamics365/financials/ui-how-users-permissions).
+For information about assigning permissions, see [Manage Users and Permissions](/dynamics365/financials/ui-how-users-permissions).
  
 ## View a table object directly from the client
 To view a table, you add the `table=<TableID>` parameter to the client's address (URL), replacing `<TableID>` with the ID of the table that you want to view.

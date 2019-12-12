@@ -1,4 +1,4 @@
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/authenticating-users-with-azure-active-directory---
+---
 title: "Installation Considerations for Microsoft SQL Server and Business Central"
 ms.custom: na
 ms.date: 10/01/2019
@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 
 # Installation Considerations for Microsoft SQL Server and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
@@ -125,7 +126,7 @@ You can deploy a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] datab
  For more information, see [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
 
 ## Data Encryption between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
- When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](http://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
+ When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](https://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
 
 ## See Also  
  [Data Access](../administration/optimize-sql-data-access.md)    

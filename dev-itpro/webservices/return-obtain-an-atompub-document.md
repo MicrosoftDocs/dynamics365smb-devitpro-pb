@@ -27,13 +27,13 @@ When you register an OData web service, you expose an OData service that can be 
 2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
   
     ```  
-    http://<Server>:<WebServicePort>/<ServerInstance>/OData  
+    https://<Server>:<WebServicePort>/<ServerInstance>/OData  
     ```  
   
      If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer with the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, then the address is:  
   
     ```  
-    http://localhost:7048/<server instance>/OData  
+    https://localhost:7048/<server instance>/OData  
     ```  
   
      The browser should now show the web service that you have published in the format of an AtomPub document:  
@@ -43,7 +43,7 @@ When you register an OData web service, you expose an OData service that can be 
 3.  If you have multiple companies, then you can modify your URI to return a feed that enumerates all available companies:  
   
     ```  
-    http://localhost:7048/<server instance>/OData/Company  
+    https://localhost:7048/<server instance>/OData/Company  
     ```  
   
     > [!IMPORTANT]  
@@ -56,19 +56,19 @@ When you register an OData web service, you expose an OData service that can be 
 1.  Start Windows Internet Explorer. In the **Address** field, enter a URI in the following format to get the entry for the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company:  
   
     ```  
-    http://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')  
+    https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')  
     ```  
   
 2.  To get the data feed for the Customer table in the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company database, enter a URI in the following format:  
   
     ```  
-    http://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer  
+    https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer  
     ```  
   
 3.  To additionally constrain data to a specific keyed customer in the Customer table, enter a URI in the following format, using the customer no. for the record you want. The example uses customer no. 01121212:  
   
     ```  
-    http://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer('01121212')  
+    https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer('01121212')  
     ```  
   
 ## Obtain a Filtered Data Feed  
@@ -79,7 +79,7 @@ When you register an OData web service, you expose an OData service that can be 
   
     ```  
   
-    http://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer?$filter=City-eq-'Birmingham'  
+    https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer?$filter=City-eq-'Birmingham'  
     ```  
   
 ## See Also  
