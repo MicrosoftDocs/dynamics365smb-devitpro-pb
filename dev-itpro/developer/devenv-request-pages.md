@@ -79,9 +79,9 @@ By default, for every data item in the report and table element in a XMLport, a 
 
 If a `DataItemTableView` or `SourceTableView` is not defined, then end-users can select a sort field and sort order at runtime.
 
-If you set the property [UseRequestPage](properties/devenv-userequestpage-property.md) to `false`, then the report or XMLport will start to print as soon as it is run. In this case, end users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
+If you set the property [UseRequestPage](properties/devenv-userequestpage-property.md) to `false`, then the report or XMLport will start to print as soon as it is run. In this case, end-users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
 
-In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end users cannot change the sort order in a way that affects their functionality.
+In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end-users cannot change the sort order in a way that affects their functionality.
 
 For data items and table elements whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
 

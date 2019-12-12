@@ -23,8 +23,8 @@ The following table illustrates how parts could be creatively arranged on a page
 |![Illustration of a Role Center page consisting of multiple parts.](media/parts-rolecenter-illustration.png)|Pages of type **Role Center** are typically composed of multiple page parts that display business headlines, KPIs, and other cues to help users get an overview of their work.|
 |![Illustration of a page displaying multiple FactBoxes in the FactBox pane.](media/parts-factbox-illustration.png)|Most page types can display a number of FactBoxes in the FactBox pane, that display information related to the current record.|
 |![Illustration of a document page displaying an embedded list.](media/parts-document-illustration.png)|Pages of type **Document** are  used to model transactional data which typically consists of a header and detailed lines. Since these records come from different tables, a part is used to display lines that originate from a related table.|
-|![Illustration of a page displaying multiple parts above eachother.](media/parts-multipart-illustration.png)|Related lists can be displayed above each other. This is a common pattern allowing one list to be filled by the selected record of another list.|
-|![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)|When records from two tables need to be compared together, parts can be displayed side by side.|
+|![Illustration of a page displaying multiple parts above each other.](media/parts-multipart-illustration.png)|Related lists can be displayed above each other. This is a common pattern allowing one list to be filled by the selected record of another list. **Note** that while this is supported, we're working on adding guidance for more optimal layouts.|
+|![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)|When records from two tables need to be compared together, parts can be displayed side by side. **Note:** that while this is supported, we're working on adding guidance for more optimal layouts.|
 
 <!-- reenable this table, when new topics have been written, and delete table below this section 
 ## Different types of parts
@@ -63,8 +63,9 @@ The size of a part is automatically determined by the client and will vary depen
 - Parts cannot be placed within repeater controls.
 - Parts can be made visible programmatically, for example, depending on whether the feature has been set up by administrators.
 - Parts are not intended to be displayed on their own without a hosting page.
+<!-- 
 - Business users can hide parts or show hidden parts on the hosting page.
-- When implementing pages to suit a variety of customers, departments or business users, it is common practice to make visible the parts that are generally applicable, and hide the parts that are only valuable to some categories of users.
+- When implementing pages to suit a variety of customers, departments or business users, it is common practice to make visible the parts that are generally applicable, and hide the parts that are only valuable to some categories of users. -->
 
 
 ## See Also
