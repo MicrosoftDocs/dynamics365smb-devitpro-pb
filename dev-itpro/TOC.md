@@ -93,11 +93,11 @@
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+#### [Preparing Test Environments](administration/test-environment.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Updating Environments](administration/tenant-admin-center-update-management.md)
-#### [Preparing Test Environments](administration/test-environment.md)
 #### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
