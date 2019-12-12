@@ -30,9 +30,7 @@ From **October 2019**, with [!INCLUDE[prodshort](includes/prodshort.md)] 2019 re
 It was first announced in 2018 at various conferences and then with a detailed timeline earlier in 2019. For more information, see [[!INCLUDE[prodshort](includes/prodshort.md)] April 2019 Update and the road ahead](https://community.dynamics.com/business/b/businesscentraldevitpro/posts/business-central-april-2019-release).
 
 ## Will the Windows client still be supported in older releases of Business Central and Dynamics NAV?
-Yes. You can safely continue to use the Windows client on premises and be supported as long as you follow the lifecycle policy for your on-premises versions of [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [Lifecycle FAQ - Dynamics](https://support.microsoft.com/en-us/help/17920/lifecycle-faq-dynamics).
-
-Please work with you partner to understand the timelines and define the roadmap to move to a newer release when the time is right for your organization.
+Yes. You can safely continue to use the Windows client on premises and receive support as long as you follow the lifecycle policy for your on-premises versions of [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [Lifecycle FAQ - Dynamics](https://support.microsoft.com/en-us/help/17920/lifecycle-faq-dynamics).
 
 The Windows client **remains supported** for the [!INCLUDE[prodshort](includes/prodshort.md)] April 2019 release and all earlier releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises and Dynamics NAV, in accordance with the support lifecycle process.
 
