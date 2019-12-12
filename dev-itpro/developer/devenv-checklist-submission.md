@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: article
@@ -31,7 +31,6 @@ The following is a checklist of all requirements that you **must meet before sub
 |Do not use `OnBeforeCompanyOpen` or `OnAfterCompanyOpen`|[Replacement Options](../compliance/apptest-onbeforecompanyopen.md)|
 |Include the proper upgrade code allowing your app to successfully upgrade from version to version.|[Upgrading Extensions](devenv-upgrading-extensions.md)|
 |Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
-|You must include all translations of countries your extension is supporting. The use of xliff is required.|[Translating Your Extension](devenv-work-with-translation-files.md), [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md).|
 |You are required to prefix or suffix the **Name** property of your fields. This eliminates collision between apps.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
 |You are required to include a Visual Studio Code test package with your extension. Ensure that you include as must code coverage as you can.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
 |DataClassification is required for fields of all tables/table extensions. Property must be set to other than `ToBeClassified`.|[Classifying Data](devenv-classifying-data.md)|
