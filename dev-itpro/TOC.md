@@ -59,6 +59,7 @@
 ### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements April '19](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
+### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
 #### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
 #### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
@@ -523,7 +524,7 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-<!-- 
+<!--
 ## Preview Features in AL
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
