@@ -21,6 +21,7 @@ In countries where Microsoft has not delivered a localization, partners can buil
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
 
 
+
 |Country/Region|Localized by|Availability|
 |-----------|---------|------------|
 |**Africa**|||
@@ -129,7 +130,7 @@ This table gives an overview of supported languages and how  application languag
 |Traditional Chinese (Taiwan)|zh-TW|Partner, AppSource|
 
 > [!NOTE]
-> Application translations provided by Microsoft cover festures in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
+> Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
 ## See Also
 
