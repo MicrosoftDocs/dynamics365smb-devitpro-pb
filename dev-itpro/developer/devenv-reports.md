@@ -40,4 +40,5 @@ The following table includes links to help you get started with designing the re
 ## See Also  
 [Report Object](devenv-report-object.md)  
 [Creating a Report](devenv-howto-report-layout.md)  
+[Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
