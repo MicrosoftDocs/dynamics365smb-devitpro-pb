@@ -12,7 +12,7 @@ ms.author: soalex
 
 # Country/regional availability and supported languages
 
-This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available.
+This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
 
 ## Partner supported countries/regions
 
