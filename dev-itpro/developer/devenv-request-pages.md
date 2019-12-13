@@ -23,7 +23,7 @@ A request page is a page that is run before the report or XMLport starts to exec
 > [!NOTE]  
 > Request pages for XMLports are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prodlong](includes/prodlong.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
 
-By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) to `false`; then the report or XMLport will start to print as soon as it is run. In this case, end-users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
+By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report or XMLport will start to print as soon as it is run. In this case, end-users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
 
 By default, without having set anything else, a request page will always display the following buttons:
 
@@ -95,26 +95,42 @@ For data items and table elements whose source table contains calculated fields,
 
 ## Defining a `requestpage` section
 
-On reports, in addition to defining the filter options by setting the `RequestFilterFields` property, you can add a `requestpage` section. In this section, you can set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end-user enters on the request page. When the report is run again, the end-user will have the option to use previously defined filters.
+On reports, in addition to defining the filter options by setting the `RequestFilterFields` property, you can add a `requestpage` section. In this section, you can set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end-user enters on the request page. When the report is run again, the end-user will have the option to use previously defined filters. You can also add a `layout` to the request page, specifying an **Options** section to perform checks.
 
 ```
+...
 requestpage
-{
-    SaveValues = true;
-                
-    layout
     {
-    }
+        SaveValues = true;
 
-    actions
-    {
+        layout
+        {
+            area(content)
+            {
+                group(Options)
+                {
+                    Caption = 'Options';
+                    field(PostingDate; PostingDateReq)
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Posting Date';
+                        ToolTip = 'Specifies the posting date for the invoice(s) that the batch job creates. This field must be filled in.';
+                    }
+                }
+            }
+        }
+
+        trigger OnOpenPage()
+        begin
+            if PostingDateReq = 0D then
+                PostingDateReq := WorkDate;
+        end;
+
+        var
+            PostingDateReq: Date;
     }
-}
+...
 ```
-
-This section also allows you to specify a layout, actions, and triggers 
-
-
 ## See Also
 [Report Object](devenv-report-object.md)  
 [XMLport Object](devenv-XMLport-object.md)  
