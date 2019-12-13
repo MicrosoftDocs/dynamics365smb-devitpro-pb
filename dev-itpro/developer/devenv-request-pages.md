@@ -34,11 +34,14 @@ By default, without having set anything else, a request page will always display
 
 Additionally, you can add more options on the request page to allow the end-user to filter the data displayed. 
 
-## Filtering on request pages
+## <a name="FilteringRequest"></a> Filtering on request pages
 
-The fields that you define as `RequestFilterFields` are shown on the request page. <!-- In addition, an end-user can add more fields on which to filter to the request page. -->
+The fields that you define as `RequestFilterFields` are shown on the request page and can be used for filtering the data before viewing or printing the report. 
 
-Defining the `RequestFilterFields` property in the `dataitem()` part of the report code is done as illustrated in the following code example (which creates the request page shown in the above figure):  
+> [!NOTE]  
+> Only on the Windows client, filtering is possible even if `RequestFilterFields` is not set.
+
+Defining the `RequestFilterFields` property in the `dataitem()` part of the report code is done as illustrated in the following code example:  
 
 ```
 report 50103 "Customer List"
@@ -52,6 +55,7 @@ report 50103 "Customer List"
             RequestFilterFields = "No.", "Search Name", "Customer Posting Group";
 ...
 ```
+
 > [!NOTE]  
 > We recommend that you add fields that the end-users of the report will frequently set filters on.
 
