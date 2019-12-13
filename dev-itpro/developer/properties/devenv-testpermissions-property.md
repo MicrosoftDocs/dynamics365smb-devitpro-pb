@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
+author: blrobl
 ---
 
  
@@ -21,7 +22,7 @@ Specifies a value that can be used to determine which permission sets are used o
     Test codeunits are codeunits that have the **SubType** property set to **Test**.
 *  Test methods
 
-    Test methods are methods that have the **MethodType** property set to **Test**.
+    Test methods are methods that have the [Test Attribute](../methods/devenv-test-attribute.md) set.
 
 ## Property values
 The property has the following values: 
@@ -45,6 +46,9 @@ TestPermissions = Disabled;
 
 ## Remarks
 The TestPermissions property works together with the **OnBeforeTestRun** and **OnAfterTestRun** triggers in test runner codeunits. The value of the TestPermissions property is passed as a parameter to the test runner codeunit triggers. The permission sets that are used during a test are determined by the code that you add to the triggers. Typically, you use the **OnBeforeTestRun** trigger to apply permissions sets and the **OnAfterTestRun** trigger to clear permissions sets.
+
+## See Also
+[Properties](devenv-properties.md)
 <!--
 ## See Also
 [Testing With Permission Sets](../devenv-testing-permissionsets.md)  

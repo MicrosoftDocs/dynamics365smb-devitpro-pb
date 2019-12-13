@@ -11,10 +11,12 @@ ms.author: solsen
 ---
 
 # Retaining table data after publishing
-When developing an extension, you debug several times using the F5 shortcut key, and you also test your app by adding some sample data every time. To simplify the extension development process in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can synchronize the sample data specified in the extension when you do subsequent publishing from Visual Studio Code.
+
+When developing an extension, you debug several times using the F5 shortcut key, and you also test your app by adding some sample data every time. To simplify the extension development process in [!INCLUDE[prodshort](includes/prodshort.md)], you can synchronize the sample data specified in the extension when you do subsequent publishing from Visual Studio Code.
 
 ## How data synchronization works
-The data synchronization between each publish is controlled by the `schemaUpdateMode` setting, which is specified in the `launch.json` file. This setting consists of three options; **Synchronize**, **Recreate**, and **ForceSync**. 
+
+The data synchronization between each publish is controlled by the `schemaUpdateMode` setting, which is specified in the `launch.json` file. This setting consists of three options; **Synchronize**, **Recreate**, and **ForceSync**.
 
 The default value for `schemaUpdateMode` is set to the **Synchronize** mode, which means that every time you publish an extension to the development server, the data you entered previously stays. If you do not want to synchronize the sample data with each publish, you can change the `schemaUpdateMode` setting from `Synchronize` to, for example, `Recreate` with the syntax shown in the example below.
 
@@ -54,6 +56,11 @@ If you, during development, for example, discover that you no longer want field 
 
 - Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate`.  
 
+- For extensions built on [!INCLUDE[prodshort](includes/prodshort.md)] Spring 2019 or earlier, if a table field has the `SqlDataType` set to a value other than `Varchar` (which is the default), you must delete the `SqlDataType` property on the field, otherwise, you will will not be able to successfully synchronize the extension.
+
+    If the `SqlDataType` property is still needed, you will have to create a new table in the extension that has the same definition as the original table, and write upgrade code that migrates the data from the original table to the new table. For more information, see [Writing upgrade code]([Upgrading Extensions](devenv-upgrading-extensions.md#writing-upgrade-code).
+
+    Alternatively, if this is a development scenario, you can synchronize the extension using the ForceSync or Recreate mode.
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
