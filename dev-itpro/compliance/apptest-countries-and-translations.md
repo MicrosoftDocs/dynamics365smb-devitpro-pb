@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: soalex
 ---
 
-# Country/Regional availability
+# Country/regional availability and supported languages
 
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available.
 
