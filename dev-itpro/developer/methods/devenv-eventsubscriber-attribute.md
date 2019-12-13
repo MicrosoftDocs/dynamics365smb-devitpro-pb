@@ -11,7 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # EventSubscriber Attribute
-Specifies the method to be integration type event subscriber.
+Specifies the method to be an integration type event subscriber.
 
 ## Syntax  
   

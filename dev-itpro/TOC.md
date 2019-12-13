@@ -522,6 +522,14 @@
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
+## Testing the Application
+### [Testing the Application Overview](developer/devenv-testing-application.md)
+### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
+### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
+### [Test Pages](developer/devenv-testing-pages.md)
+### [UI Handlers](developer/devenv-creating-handler-methods.md)
+### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)
+### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
