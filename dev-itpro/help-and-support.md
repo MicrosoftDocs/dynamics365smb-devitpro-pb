@@ -49,6 +49,10 @@ You and your customers can find free eLearning content on the Microsoft Learn si
 
 As a partner, you can keep on top of current and upcoming capabilities, and you can share Microsoft's roadmap with your prospects, for example. This section provides links to places to keep track of for people who are new to [!INCLUDE [prodshort](developer/includes/prodshort.md)] as well as for people who have been working with the product for years.  
 
+### Get set up as a partner
+
+For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
+
 ### Get started with the "Ready to Go" program
 
 The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md).  
@@ -94,10 +98,10 @@ As a partner, you have different support channels depending on what type of issu
 
 |Issue type             |Site               |
 |-----------------------|-------------------|
+|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|[Business Central administration center](administration/tenant-admin-center.md)|
 |Report bug in a preview or beta version|[MS Collaborate](/collaborate/) site|
 |Collaboration on the AL language and developer experience|[AL GitHub](https://github.com/microsoft/al) repo|
 |Report bug in supported in-market versions|[Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/) site|
-|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|[Business Central administration center](administration/tenant-admin-center.md)|
 
 #### Non-product related questions
 
