@@ -17,7 +17,7 @@ author: jswymer
 
 The Business Central App is a companion desktop app for Windows 10 or Xbox One that mimics that [!INCLUDE[webclient](../developer/includes/webclient.md)] but has the same look-and-feel as mobile apps. It can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online or on-premises.
 
-This article describes how to install the Business Central App when you have on-premises solution. If you have a Business Central Online subscription, simply go to [Windows Store](https://www.microsoft.com/en-us/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab) to get the app.
+This article describes how to install the Business Central App when you have on-premises solution. If you have a Business Central Online subscription, simply go to [Windows Store](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab) to get the app.
 
 Like the [!INCLUDE[webclient](../developer/includes/webclient.md)], the Business Central App relies on a Business Central web server instance that connects to Business Central Server and database. The Business Central App uses the same application code as the Web client, except it renders the application in a different format.
 
@@ -32,7 +32,7 @@ To install the Business Central App, the following requirments must be met:
 
     If you installed Business Central, then by default, your Windows account has been added as a user. 
 
-- Computer on which you install the app must meet the [minimum requirements](https://www.microsoft.com/en-us/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:regionofsystemrequirementstab) for installing the Business Central App.
+- Computer on which you install the app must meet the [minimum requirements](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:regionofsystemrequirementstab) for installing the Business Central App.
 
 ## Install the Business Central App 
 

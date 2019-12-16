@@ -25,7 +25,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1. Upgrade to latest Business Central Spring 2019 cumulative update (version 14.X).
 
-    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292).
+    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
     For information about how to perform the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
@@ -33,7 +33,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1. Download the latest update for Business Central 2019 release wave 2.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4528706)
+    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706)
   
     The guidelines in this article assume that you are running the latest available update.
 
