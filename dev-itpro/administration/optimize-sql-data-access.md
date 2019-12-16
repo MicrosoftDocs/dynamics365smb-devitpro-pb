@@ -76,7 +76,7 @@ In most cases, filtering on FlowFields issues a single SQL statement. In earlier
 
 In most cases, calling the FIND or NEXT functions after you have set the view to include only marked records issues a single SQL statement. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], calling FIND or NEXT functions that have marked records issued an SQL statement for each mark. There are some exceptions if many records are marked. For more information, see [MARKEDONLY method \(Record\)](../developer/methods-auto/record/record-MARKEDONLY-method.md).  
 
-## Using SQL Server table partitioning
+## <a name="TablePartitioning"></a>Using SQL Server table partitioning
 
 As of [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], the use of SQL Server table and index partitioning is a supported configuration. The data of partitioned tables and indexes is divided into units that can be spread across more than one filegroup in a SQL Server database. All partitions of a single index or table must reside in the same database. The table or index is treated as a single logical entity when queries or updates are performed on the data. Prior to SQL Server 2016 SP1, partitioned tables and indexes were not available in every edition of SQL Server.
 Partitioning large tables or indexes can have the following manageability and performance benefits:
