@@ -51,6 +51,7 @@ As a partner, you can keep on top of current and upcoming capabilities, and you 
 
 ### Get set up as a partner
 
+[!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
 For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
 
 ### Get started with the "Ready to Go" program
@@ -98,10 +99,10 @@ As a partner, you have different support channels depending on what type of issu
 
 |Issue type             |Site               |
 |-----------------------|-------------------|
-|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|[Business Central administration center](administration/tenant-admin-center.md)|
-|Report bug in a preview or beta version|[MS Collaborate](/collaborate/) site|
-|Collaboration on the AL language and developer experience|[AL GitHub](https://github.com/microsoft/al) repo|
-|Report bug in supported in-market versions|[Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/) site|
+|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md)|
+|Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
+|Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
+|Report bug in supported in-market versions|The [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/) site|
 
 #### Non-product related questions
 
@@ -109,22 +110,20 @@ On occasion, as a partner, you will run into questions that are not directly rel
 
 |For questions related to               |Contact               |
 |---------------------------------------|----------------------|
-|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com) |
-|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |[Partner Center Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) site|
+|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com), respectively |
+|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |The Partner Center [Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) site|
 |Payments, credit terms, checks, wire, or similar |Email [MBS Accounting](mailto:msgpar@microsoft.com) |
 |Technical issues with PSBC, PartnerSource, or Order Central|Email [IT MBS Support](mailto:itmbssup@microsoft.com)  |
-|Incentives |Email to [CSA Team](mailto:mbscsa@microsoft.com)|
+|Incentives |Email [CSA Team](mailto:mbscsa@microsoft.com)|
 |Cloud Solution Provider incentives|Email [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
 |CSA/Ocina escalations| Email [NAOC Channel Incentives Escalations](mailto:naoccies@microsoft.com) |
-|Volume licensing |[Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email to [Online Licensing](mailto:mvlohelp@microsoft.com)|
+|Volume licensing |The [Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email [Online Licensing](mailto:mvlohelp@microsoft.com)|
 
 ## Trials
 
 Giving prospects access to a pre-configured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
 For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online).  
-
-<!-- TODO: Describe how to customize a trial -->
 
 ## See also
 
