@@ -24,7 +24,7 @@ The following sections list the minimum hardware and software requirements to us
 
 |||  
 |-|-|  
-|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 72.0 for Windows.</li><li>Mozilla Firefox 65.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul>Cookies and JavaScript must be enabled in the browser.|  
+|Supported browsers|Recommended browsers:<ul><li>Microsoft Edge</li><li>Google Chrome 77.0 for Windows</li><li>Mozilla Firefox 69.0 for Windows</li><li>Safari 12.0 for macOS</li></ul>Other supported browsers:<ul><li>Internet Explorer 11</li></ul>Cookies and JavaScript must be enabled in the browser.| 
 |Business inbox in Outlook|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2019, Excel 2016, or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
