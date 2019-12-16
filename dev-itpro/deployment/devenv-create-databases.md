@@ -47,7 +47,7 @@ To create an application database, complete the following steps:
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
-    Make sure that the Window user that you run as has the appropriate privileges on the SQL Server as described in https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/provision-server-account?branch=github880-newdb#BCdb.
+    Make sure that the Window user that you run as has the appropriate privileges on the SQL Server as described in [Assign privileges on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database-level](provision-server-account#BCdb).
 
 2. Run the New-NAVApplicationDatabase cmdlet to create a new database or initialize an existing database.
 
