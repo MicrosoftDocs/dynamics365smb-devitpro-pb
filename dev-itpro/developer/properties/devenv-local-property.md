@@ -33,7 +33,7 @@ Local = true;
  If the property is set to **false**, then the method is considered to be global, which means that is can be called and accessed from other [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] objects.  
   
 > [!NOTE]  
->  This property is not set to **true** when the method is in a test codeunit. Instead, the [MethodType Property (Test Codeunits)](devenv-methodtype-property-test-codeunits.md) is set to **Test**. Methods in test codeunits are automatically global. <!-- //NAV For more information, see [How to: Create Test Codeunits and Test Methods](../methods/devenv-how-to-create-test-codeunits-and-test-methods.md).  -->
+>  This property is not set to **true** when the method is in a test codeunit. Instead, the [Test Attribute](../methods/devenv-test-attribute.md) is declared. Methods in test codeunits are automatically global. <!-- //NAV For more information, see [How to: Create Test Codeunits and Test Methods](../methods/devenv-how-to-create-test-codeunits-and-test-methods.md).  -->
   
 ## See Also  
  [Standard and User-Defined Methods](../methods/devenv-standard-and-user-defined-methods.md)

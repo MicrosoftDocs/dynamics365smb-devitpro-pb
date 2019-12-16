@@ -270,7 +270,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 ## Task 6: Synchronize the tenant
 
-In this task, you will synchronize the tenant's database schema any schema changes in the application database and extensions.
+In this task, you will synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
 If you have a multitenant deployment, perform these steps for each tenant.
 

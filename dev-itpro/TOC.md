@@ -83,8 +83,8 @@
 ### [Installing Using Setup](deployment/install-using-setup.md)
 ### [Provisioning a Service Account](deployment/provision-server-account.md)
 ### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-#### Business Central Web Server
-### [Business Central Web Server Overview](deployment/web-server-overview.md)
+### Business Central Web Server
+#### [Business Central Web Server Overview](deployment/web-server-overview.md)
 #### [Configuring Web Server Instances](administration/configure-web-server.md)
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
@@ -93,7 +93,7 @@
 ### Database
 #### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-#### [Creating and Altering Databases](cside/cside-create-databases.md)
+#### [Creating Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 <!-- end deployment -->
 <!-- administration-->
@@ -522,6 +522,14 @@
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
+## Testing the Application
+### [Testing the Application Overview](developer/devenv-testing-application.md)
+### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
+### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
+### [Test Pages](developer/devenv-testing-pages.md)
+### [UI Handlers](developer/devenv-creating-handler-methods.md)
+### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)
+### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)

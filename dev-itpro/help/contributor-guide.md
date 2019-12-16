@@ -29,6 +29,8 @@ For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort]
 
 ### Get started with GitHub
 
+To join Microsoft in the world of GitHub and MarkDown, there are new terminology and tools to get used to. The following list outlines the main steps, but since this is all about open source, you can find additional content, tools, and ideas in the [GitHub documentation](https://help.github.com/en/github) and other forums.
+
 1. Fork the right repo
 
     You cannot work directly in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo. For more information, see [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
@@ -42,9 +44,9 @@ For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort]
 
 3. Get hold of your favorite MarkDown editor, and start making changes.
 
-    The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called GitHub Flavored Markdown, which is widely popular in the MarkDown community. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
+    The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called [Markdig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
 
-    If you want to work locally, you can edit using any text editor. Just save the file as a .md type. Here are a couple good tools that provide you with some nice features, such as Preview:
+    If you want to work locally, you can edit using any text editor. Just save the file as a .md type. Here are a couple good tools that provide you with some nice features, including a preview of how the content will be rendered in HTML:
 
     - [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -53,7 +55,7 @@ For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort]
 
         Atom has spell check and is good for managing many files
 
-You can also find guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/), which is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
+Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/), which is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
 
 > [!IMPORTANT]
 > The [Writate](https://writage.com/) plugin for Word can be very helpful for converting existing content to MarkDown, but we recommend that you do not use it to edit MarkDown files in Word. When you save the MarkDown file, all metadata tags and some of the formatting is erased.

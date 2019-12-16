@@ -1,0 +1,35 @@
+---
+title: "MessageHandler Attribute"
+ms.custom: na
+ms.date: 08/26/2019
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: jswymer
+---
+
+# MessageHandler Attribute
+
+Specifies that the method is a MessageHandler method.
+
+## Applies To  
+AL test methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
+
+## Syntax  
+  
+```  
+[MessageHandler]
+procedure MessageHandler(Message : Text[1024]);
+```    
+
+## Remarks
+
+The **MessageHandler** method is called when a message method is invoked in the code. 
+
+The **MessageHandler** attribute requires that the method where it is applied has the signature `MessageHandler(Message: Text[1024])`. The parameter type, *Text*,  contains the text of the method.
+
+## See Also  
+[Method Attributes](devenv-method-attributes.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

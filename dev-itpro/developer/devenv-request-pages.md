@@ -20,21 +20,28 @@ A request page is a page that is run before the report or XMLport starts to exec
 |[RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)|Sets the text used as a RequestFilterHeading Property for a request page tab.|
 |[RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)|Specifies which fields are automatically included on the tab of the request page that is related  to to a report's data item or an XMLport's table element. The user can set filters on these fields. |
 
-In addition to specifying options and filters, users can choose from the following actions on a request page:
+> [!NOTE]  
+> Request pages for XMLports are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prodlong](includes/prodlong.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
+
+By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report or XMLport will start to print as soon as it is run. In this case, end-users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
+
+By default, without having set anything else, a request page will always display the following buttons:
 
 - Send to
 - Print
 - Preview
 - Cancel
 
+Additionally, you can add more options on the request page to allow the end-user to filter the data displayed. 
+
+## <a name="FilteringRequest"></a> Filtering on request pages
+
+The fields that you define as `RequestFilterFields` are shown on the request page and can be used for filtering the data before viewing or printing the report. 
+
 > [!NOTE]  
-> Request pages for XMLports are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prodlong](includes/prodlong.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
+> Only on the Windows client, filtering is possible even if `RequestFilterFields` is not set.
 
-## Filtering on request pages
-
-The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end-user can add more fields on which to filter to the request page. 
-
-Defining the `RequestFilterFields` property in the `dataitem()` part of the report code is done as illustrated in the following code example (which creates the request page shown in the above figure):  
+Defining the `RequestFilterFields` property in the `dataitem()` part of the report code is done as illustrated in the following code example:  
 
 ```
 report 50103 "Customer List"
@@ -48,6 +55,10 @@ report 50103 "Customer List"
             RequestFilterFields = "No.", "Search Name", "Customer Posting Group";
 ...
 ```
+
+> [!NOTE]  
+> We recommend that you add fields that the end-users of the report will frequently set filters on.
+
 For more information about the report object, see [Report Object](devenv-report-object.md).
 
 Defining the `RequestFilterFields` property in the `tableelement()` part of an XMLport is done in a similar way:  
@@ -70,16 +81,9 @@ XMLport 50104 "Export Customer List"
 
 For more information about the XMLport object, see [XMLport Object](devenv-XMLport-object.md).
 
-Set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page.
-
-> [!NOTE]  
-> We recommend that you add fields that the end-users of the report will frequently set filters on.
-
 By default, for every data item in the report and table element in a XMLport, a FastTab for defining filters and sorting is created on the request page. To remove a FastTab from a request page, do not define any `RequestFilterFields` for the data item or table element and set the [DataItemTableView](properties/devenv-dataitemtableview-property.md) property in a report or the [SourceTableView](properties/devenv-sourcetableview-XMLports-property.md) property in an XMLport to define sorting. The request page is displayed, but there is no tab for this data item or table element.
 
 If a `DataItemTableView` or `SourceTableView` is not defined, then end-users can select a sort field and sort order at runtime.
-
-If you set the property [UseRequestPage](properties/devenv-userequestpage-property.md) to `false`, then the report or XMLport will start to print as soon as it is run. In this case, end-users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
 
 In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end-users cannot change the sort order in a way that affects their functionality.
 
@@ -88,6 +92,45 @@ For data items and table elements whose source table contains calculated fields,
 > [!TIP]
 > For information about how to enter filter criteria on the request page, see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the Business Central application help.
 
+
+## Defining a `requestpage` section
+
+On reports, in addition to defining the filter options by setting the `RequestFilterFields` property, you can add a `requestpage` section. In this section, you can set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end-user enters on the request page. When the report is run again, the end-user will have the option to use previously defined filters. You can also add a `layout` to the request page, specifying an **Options** section to perform checks.
+
+```
+...
+requestpage
+    {
+        SaveValues = true;
+
+        layout
+        {
+            area(content)
+            {
+                group(Options)
+                {
+                    Caption = 'Options';
+                    field(PostingDate; PostingDateReq)
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Posting Date';
+                        ToolTip = 'Specifies the posting date for the invoice(s) that the batch job creates. This field must be filled in.';
+                    }
+                }
+            }
+        }
+
+        trigger OnOpenPage()
+        begin
+            if PostingDateReq = 0D then
+                PostingDateReq := WorkDate;
+        end;
+
+        var
+            PostingDateReq: Date;
+    }
+...
+```
 ## See Also
 [Report Object](devenv-report-object.md)  
 [XMLport Object](devenv-XMLport-object.md)  
