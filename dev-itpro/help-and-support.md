@@ -92,27 +92,27 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 
 As a partner, you have different support channels depending on what type of issue you want support for.  
 
-- For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
-- For Microsoft partners, for versions already in general availability and support, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
-- For Microsoft partners who have discovered a bug in a preview or beta version, use [MS Collaborate](/collaborate/)  
+|Issue type             |Site               |
+|-----------------------|-------------------|
+|Report bug in a preview or beta version|[MS Collaborate](/collaborate/) site|
+|Collaboration on the AL language and developer experience|[AL GitHub](https://github.com/microsoft/al) repo|
+|Report bug in supported in-market versions|[Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/) site|
+|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|[Business Central administration center](administration/tenant-admin-center.md)|
 
-For problems reported by your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers, use the [administration center](administration/tenant-admin-center.md) to troubleshoot and submit support requests. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
-
-#### Non-product related issues
+#### Non-product related questions
 
 On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
 
-
 |For questions related to               |Contact               |
 |---------------------------------------|----------------------|
-|Licensing or PSBC agreements |Email to [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com) |
-|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |[Partner Center Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) |
-|Payments, credit terms, checks, wire, or similar |Email to [MBS Accounting](mailto:msgpar@microsoft.com) |
-|Technical issues with PSBC, PartnerSource, or Order Central|Email to [IT MBS Support](mailto:itmbssup@microsoft.com)  |
+|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com) |
+|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |[Partner Center Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) site|
+|Payments, credit terms, checks, wire, or similar |Email [MBS Accounting](mailto:msgpar@microsoft.com) |
+|Technical issues with PSBC, PartnerSource, or Order Central|Email [IT MBS Support](mailto:itmbssup@microsoft.com)  |
 |Incentives |Email to [CSA Team](mailto:mbscsa@microsoft.com)|
-|Cloud Solution Provider incentives|Email to [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
-|CSA/Ocina escalations| Email to [NAOC Channel Incentives Escalations](naoccies@microsoft.com) |
-|Volume licensing |[Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) or email to [Online Licensing](mailto:mvlohelp@microsoft.com)|
+|Cloud Solution Provider incentives|Email [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
+|CSA/Ocina escalations| Email [NAOC Channel Incentives Escalations](mailto:naoccies@microsoft.com) |
+|Volume licensing |[Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email to [Online Licensing](mailto:mvlohelp@microsoft.com)|
 
 ## Trials
 
