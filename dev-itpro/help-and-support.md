@@ -51,8 +51,7 @@ As a partner, you can keep on top of current and upcoming capabilities, and you 
 
 ### Get set up as a partner
 
-[!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
-For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
 
 ### Get started with the "Ready to Go" program
 
