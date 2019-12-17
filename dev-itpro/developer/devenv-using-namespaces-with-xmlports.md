@@ -15,7 +15,7 @@ ms.author: t-blrobl
 # Using Namespaces with XMLports
 The external system that provides or consumes [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] data as XML might require that the XML documents include namespaces. Namespaces are used to avoid element name conflicts. In these cases, you must add namespaces on the XMLport to make it compatible with the XML schema that is used by the external system.
 
-> [!NOTE]
+> [!NOTE]  
 > Namespace-related properties are only available when the [Format Property](properties/devenv-format-xmlports-property.md) is set to **Xml**.
 
 For example, the following code is a portion of a simple XML document for transferring sales order information. The XML includes namespaces for mapping fields from the `Sales Header` table.
@@ -36,7 +36,7 @@ For example, the following code is a portion of a simple XML document for transf
 ```
 Each namespace has the syntax *xmlns:prefix="namespacename"*.
 
--  The *namespacename* is a string of characters, often referred to as a Uniform Resource Identifier (URI), which uniquely identifies an Internet resource. This is typically a Uniform Resource Locator (URL) or Universal Resource Name (URN).
+- The *namespacename* is a string of characters, often referred to as a Uniform Resource Identifier (URI), which uniquely identifies an Internet resource. This is typically a Uniform Resource Locator (URL) or Universal Resource Name (URN).
 
 - The *prefix* is a short string of characters that acts as an alias for the namespace name. The prefix is applied to specific elements in the XML document. The example includes the prefixes `bcField` and `bcTable`.
 
