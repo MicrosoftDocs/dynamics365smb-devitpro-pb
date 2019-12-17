@@ -14,12 +14,10 @@ ms.author: soalex
 
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
 
-## Partner supported countries/regions
-
-In countries where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
+> [!NOTE]
+> In countries where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
-
 
 
 |Country/Region|Localized by|Availability|
@@ -28,9 +26,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |South Africa|Partner|Available|
 |**Americas**|||
 |Canada|Microsoft|Available|
-|Colombia|Partner|Planned for 2020 Wave 1|
+|Colombia|Partner|2020 release wave 1|
 |Mexico|Microsoft|Available|
-|Peru|Partner|Planned for 2020 Wave 1|
+|Peru|Partner|2020 release wave 1|
 |United States|Microsoft|Available|
 |**Asia**|||
 |Hong Kong SAR|Partner|Available|
@@ -47,24 +45,24 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |**Europe**|||
 |Austria|Microsoft|Available|
 |Belgium|Microsoft|Available|
-|Croatia|Partner|Planned for 2020 Wave 1|
-|Czechia **(on-premises only)**|Microsoft|Available, planned for cloud February 2020|
+|Croatia|Partner|2020 release wave 1|
+|Czechia **(on-premises only)**|Microsoft|Available, planned for cloud 2019 release wave 2, Q1 2020|
 |Denmark|Microsoft|Available|
 |Estonia|Partner|Available|
 |Finland|Microsoft|Available|
 |France|Microsoft|Available|
 |Germany|Microsoft|Available|
-|Hungary|Partner|Planned for 2020 Wave 1|
+|Hungary|Partner|2020 release wave 1|
 |Iceland|Microsoft|Available|
 |Italy|Microsoft|Available|
-|Latvia|Partner|Planned for 2020 Wave 1|
+|Latvia|Partner|2020 release wave 1|
 |Netherlands|Microsoft|Available|
 |Norway|Microsoft|Available|
 |Poland|Partner|Available|
 |Portugal|Partner|Available|
 |Russia **(on-premises only)**|Microsoft|Available|
 |Serbia|Partner|Available|
-|Slovenia|Partner|Planned for 2020 Wave 1|
+|Slovenia|Partner|2020 release wave 1|
 |Spain|Microsoft|Available|
 |Sweden|Microsoft|Available|
 |Switzerland|Microsoft|Available|
