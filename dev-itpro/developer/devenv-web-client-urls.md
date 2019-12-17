@@ -10,8 +10,6 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
- 
-
 # Web Client URL
 There are several parameters that you can add to the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL to manipulate what is displayed in the client, such as opening a specific company, or targeting a specific page, report, or table. For example, the following URL displays page **9305 Sales Order List** for the [!INCLUDE[demoname](includes/demoname_md.md)] company:
 
@@ -26,7 +24,7 @@ https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&repo
 This article describe how you can constuct URLs, which can be useful for including in other sources, such as emails or Word documents, or sending as hyperlinks to other users.
 
 > [!IMPORTANT]  
->  Certain data in the URL, such as filters, could be considered sensitive information. Use discretion if you distribute URLs that contain filters, or if it is possible, exclude this information from the address.  
+> Certain data in the URL, such as filters, could be considered sensitive information. Use discretion if you distribute URLs that contain filters, or if it is possible, exclude this information from the address.  
 
 <!--This topic includes the following sections:  
 
@@ -54,7 +52,7 @@ https://<hostname>[/<aad>][/sandbox]/?[company=<companyname>]&[page|report|table
 ```
 -->
 
-The URL consists of two parts, the hostname part and the query string. The hostname part includes the protocol (https) and the hostname. The query string part includes everything after `<hostname>`. The query string determines what content to target.
+The URL consists of two parts; the hostname part and the query string. The hostname part includes the protocol (https) and the hostname. The query string part includes everything after `<hostname>`. The query string determines what content to target.
 
 
 ### Syntax Key
