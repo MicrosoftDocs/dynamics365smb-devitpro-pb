@@ -39,7 +39,8 @@ If a tenant wants to update the apps on their tenant during the minor releases, 
 - Navigate to the **Extension Management** page.
 - Find the app and uninstall it.
 - Reinstall the app.
-- That gives you the latest available version in our service.
+
+That gives you the latest available version in our service.
 
 ## How often should I submit updates of my app?
 Our recommendation is to pack more bug fixes and features into less frequent updates. Try to avoid frequent submissions containing very few changes. Being on a more frequent cadence than Business Central (monthly) is not advised. This leads to lower churn to production tenants.
