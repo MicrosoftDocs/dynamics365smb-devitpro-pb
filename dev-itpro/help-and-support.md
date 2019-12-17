@@ -49,6 +49,10 @@ You and your customers can find free eLearning content on the Microsoft Learn si
 
 As a partner, you can keep on top of current and upcoming capabilities, and you can share Microsoft's roadmap with your prospects, for example. This section provides links to places to keep track of for people who are new to [!INCLUDE [prodshort](developer/includes/prodshort.md)] as well as for people who have been working with the product for years.  
 
+### Get set up as a partner
+
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
+
 ### Get started with the "Ready to Go" program
 
 The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md).  
@@ -90,19 +94,35 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 
 ### Summary of where to file bugs and issues
 
-- For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
-- For Microsoft partners, for versions already in general availability and support, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
-- For Microsoft partners who have discovered a bug in a preview or beta version, use [MS Collaborate](/collaborate/)  
+As a partner, you have different support channels depending on what type of issue you want support for.  
 
-For problems reported by your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers, use the [administration center](administration/tenant-admin-center.md) to troubleshoot and submit support requests. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
+|Issue type             |Site               |
+|-----------------------|-------------------|
+|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md)|
+|Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
+|Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
+|Report bug in supported in-market versions|The [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/) site|
+
+#### Non-product related questions
+
+On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
+
+|For questions related to               |Contact               |
+|---------------------------------------|----------------------|
+|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com), respectively |
+|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |The Partner Center [Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) site|
+|Payments, credit terms, checks, wire, or similar |Email [MBS Accounting](mailto:msgpar@microsoft.com) |
+|Technical issues with PSBC, PartnerSource, or Order Central|Email [IT MBS Support](mailto:itmbssup@microsoft.com)  |
+|Incentives |Email [CSA Team](mailto:mbscsa@microsoft.com)|
+|Cloud Solution Provider incentives|Email [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
+|CSA/Ocina escalations| Email [NAOC Channel Incentives Escalations](mailto:naoccies@microsoft.com) |
+|Volume licensing |The [Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email [Online Licensing](mailto:mvlohelp@microsoft.com)|
 
 ## Trials
 
 Giving prospects access to a pre-configured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
 For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online).  
-
-<!-- TODO: Describe how to customize a trial -->
 
 ## See also
 

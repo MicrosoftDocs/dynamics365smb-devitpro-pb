@@ -19,7 +19,7 @@ When you develop in a Docker sandbox, the Essential experience is automatically 
 <br>
 
 ## Setup for users with different plans
-To mimic users with a specific subscription plan assigned, you can set them up with the user groups as detailed in the table below. When you add user to the group, the permission sets defined for the group will apply to the user. For more information, see [To group users in user groups](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions?branch=master#to-manage-permissions-through-user-groups).
+To mimic users with a specific subscription plan assigned, you can set them up with the user groups as detailed in the table below. When you add user to the group, the permission sets defined for the group will apply to the user. For more information, see [To group users in user groups](https://docs.microsoft.com/dynamics365/business-central/ui-define-granular-permissions?branch=master#to-manage-permissions-through-user-groups).
 
 > [!NOTE]  
 > In the table below *non-default* means not assigned by default, but the plan allows this to be assigned to the user.
