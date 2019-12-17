@@ -18,43 +18,34 @@ This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_lo
 
  This walkthrough illustrates the following tasks:  
 
--   Defining the dataset for multiple tables.  
--   Adding fields to a data item.  
--   Defining properties for the data items.  
--   Adding labels to a report.  
--   Design a client report definition (RDL) report layout in Visual Studio 2019.  
--   Setting filters to hide empty rows and fields in a report.  
--   Building and running a report.  
-
-<!-- ### Prerequisites  
- To complete this walkthrough, you will need:  
-
--   [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed with a developer license.  
-
--   The [!INCLUDE[demolong](includes/demolong_md.md)] installed.  
-
--   Report Builder for SQL Server 2016 or Visual Studio 2017 with [Microsoft RDLC Report Designer for Visual Studio installed](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001).   -->
+- Defining the dataset for multiple tables.  
+- Adding fields to a data item.  
+- Defining properties for the data items.  
+- Adding labels to a report.  
+- Design a client report definition (RDL) report layout in Visual Studio 2019.  
+- Setting filters to hide empty rows and fields in a report.  
+- Building and running a report.  
 
 ## Story  
 Viktor is a developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been asked by his manager to create a report that shows data from the `Customer` (ID 18), `Cust. Ledger Entry` (ID 21), `Detailed Cust. Ledger Entry` (ID 379), and the `Sales Header` (ID 36) tables. The report should meet the following requirements:  
 
--   The report must display customer information at the top of the report.  
+- The report must display customer information at the top of the report.  
 
--   For each customer, the report must show a list of ledger entries.  
+- For each customer, the report must show a list of ledger entries.  
 
--   For each ledger entry, the report must show a list of detailed ledger entries under the ledger entries.  
+- For each ledger entry, the report must show a list of detailed ledger entries under the ledger entries.  
 
--   The report must display basic sales document headers information for the selected customer.  
+- The report must display basic sales document headers information for the selected customer.  
 
--   Each section of the data for each customer must begin on a new page.  
+- Each section of the data for each customer must begin on a new page.  
 
--   The `Amount` field from the `Cust. Ledger Entry` table should be totaled and displayed for each customer.  
+- The `Amount` field from the `Cust. Ledger Entry` table should be totaled and displayed for each customer.  
 
--   If there are no records to display, the report must not display that data sections. For example, if there are no sales documents for a customer, the sale header section must be skipped.  
+- If there are no records to display, the report must not display that data sections. For example, if there are no sales documents for a customer, the sale header section must be skipped.  
 
--   Amount fields must not display zero values.  
+- Amount fields must not display zero values.  
 
--   The orientation of the report should be landscape.  
+- The orientation of the report should be landscape.  
 
 The following illustration shows an example of the second page of the report.  
 
