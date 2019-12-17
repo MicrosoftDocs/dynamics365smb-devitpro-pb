@@ -17,7 +17,7 @@ Before extensions, the output of a report was saved to a file, but extensions de
 ## Example
 The following example shows how to initialize the codeunit 131007 `Library - Report Dataset` by using the `RunReportAndLoad` method. This method is preferred as it will run the report and initialize the `Library - Report DataSet` codeunit. To verify the output, call either the `AssertElementWithValueExists` or the `AssertElementWithValueNotExist` method. The other methods in the library should work as well if they do not contain “Tag” in the name. `RUNREQUESTPAGE` and `[RequestPageHandler]` are optional and you can use them when you want to open the request page. 
 
-> [!TIP]     
+> [!TIP]  
 > If you want to run the report separately and load the data from the input stream manually, you can use the `LoadDataFromInstream` method.
 
 ```
