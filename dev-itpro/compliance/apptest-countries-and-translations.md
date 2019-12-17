@@ -46,7 +46,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Austria|Microsoft|Available|
 |Belgium|Microsoft|Available|
 |Croatia|Partner|2020 release wave 1|
-|Czechia **(on-premises only)**|Microsoft|Available, planned for cloud 2019 release wave 2, Q1 2020|
+|Czechia **(on-premises only)**|Microsoft|Available<br>Planned for cloud 2019 release wave 2, Q1 2020|
 |Denmark|Microsoft|Available|
 |Estonia|Partner|Available|
 |Finland|Microsoft|Available|
