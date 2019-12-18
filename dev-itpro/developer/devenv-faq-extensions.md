@@ -27,6 +27,7 @@ The author should increase the version of the extension he is publishing.
  
 
 ## Another problem is that...
+
 ### [**Problem**](#tab/Problem)
 The problem is that...
 
