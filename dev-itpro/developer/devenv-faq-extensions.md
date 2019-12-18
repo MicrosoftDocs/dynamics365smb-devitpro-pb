@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
+# FAQ
 
 ## An extension with same App ID and version has already been uploaded. Resolve and deploy again
 <br>
