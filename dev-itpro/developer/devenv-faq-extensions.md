@@ -15,7 +15,7 @@ ms.author: solsen
 # FAQ
 
 <br>
-<details><summary>**An extension with same App ID and version has already been uploaded - resolve and deploy again**</summary>
+<details><summary><b>An extension with same App ID and version has already been uploaded - resolve and deploy again</b></summary>
 <p>
 Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
 
@@ -25,7 +25,7 @@ Help...
 </p>
 </details>
 <br>
-<details><summary>**Another problem occurred and....**</summary>
+<details><summary><b>Another problem occurred and....</b></summary>
 <p>
 Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
 
