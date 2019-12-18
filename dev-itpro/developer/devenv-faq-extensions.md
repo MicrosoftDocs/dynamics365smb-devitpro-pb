@@ -27,12 +27,11 @@ Help...
 <br>
 <details><summary>Another problem occurred and....</summary>
 <p>
-<details><summary>Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
+Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
 
 The author should increase the version of the extension he is publishing.
 
-Help...</summary>
-</details>
+Help...
 </p>
 </details>
 <br>
