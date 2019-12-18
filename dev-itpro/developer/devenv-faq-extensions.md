@@ -24,7 +24,27 @@ The author should increase the version of the extension he is publishing.
 Help...
 </p>
 </details>
+<br>
+<details><summary>Another problem occurred and....</summary>
+<p>
+<details><summary>Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
 
+The author should increase the version of the extension he is publishing.
+
+Help...</summary>
+</details>
+</p>
+</details>
+<br>
+<details><summary>And then this happened....</summary>
+<p>
+Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
+
+The author should increase the version of the extension he is publishing.
+
+Help...
+</p>
+</details>
 
 
 ### An extension with same App ID and version has already been uploaded - resolve and deploy again
