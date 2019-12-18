@@ -14,6 +14,7 @@ ms.author: solsen
 
 # FAQ
 
+## VS Code
 <br>
 <details><summary><b>An extension with same App ID and version has already been uploaded - resolve and deploy again</b></summary>
 <p>
