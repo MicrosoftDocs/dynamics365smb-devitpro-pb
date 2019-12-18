@@ -1,48 +1,19 @@
 ---
-title: "Monitoring Long Running SQL Queries to the Event Log"
-description: This topic provides an overview on how to monitor long running SQL queries in the event log starting with NAV 2017. 
-ms.custom: na
-ms.date: 10/01/2019
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.service: "dynamics365-business-central"
+title: Telemetry | Microsoft Docs
+description: Learn how the Business Central provides telemetry for each environment.  
 author: jswymer
+ms.service: dynamics365-business-central
+ms.topic: article
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
+ms.date: 11/15/2019
+ms.author: jswymer
 ---
-# Monitoring Long Running SQL Queries
 
-<!-- This topic needs to be updated for the BC autumn release. -->
- 
-[!INCLUDE[nav2017](../developer/includes/nav2017.md)] is the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Long running queries can also be emitted to Microsoft Azure Application Insights. 
+# Long Running SQL Query Trace
 
-## Defining Long Running SQL Queries
-The time logged in long running SQL queries is the time spent on the called database as seen from the server. There are multiple reasons that can cause this delay, such as the database waiting for a lock to be released, or the database executing an operation that performs badly due to missing indexes.
-
-The threshold of when a query is logged is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting **SqlLongRunningThreshold**. The default value is 1000 milliseconds (ms). For more information about setting the **SqlLongRunningThreshold**, see [Configuring Business Central Server](configure-server-instance.md), database settings section. 
-
-## Changing Configuration Values
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], some of the configuration values for the server can be changed in the memory of the server, without doing a server restart. To change the threshold dynamically to 2000 ms, run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
-
-```
-Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
-```
-
-## <a name="ApplicationInsights"></a>Monitoring Long Running SQL Queries using the Application Insights
-
-If you have access to an Application Insights resource in Microsoft Azure, you can configure your tenants to send long running query telemetry there for analysis and presentation.
-
-### Enable Sending Telemetry to Application Insights
-
-To enable this feature, you will first need the instrumentation key of the Application Insights resource, which you can get from the [Azure Portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0). Once you have the key, the way to enable this feature depends on whether your [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance. 
-
-- For a single-tenant server instance, you enable this feature on the server instance itself by adding the key to the **Application Insights Instrumentation Key** setting of the server instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
-
-- For a multitenant server instance, you enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps) includes the `-ApplicationInsightsKey` parameter that you set to the instrumentation key, for example:
-
-    ```
-    Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (15-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
-    ```
 
 ### <a name="LRSQLQuery"></a>Dimensions for long running SQL queries emitted to Application Insights
 
@@ -103,14 +74,56 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 > Currently, this is only available in a multitenant deployment, where the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance.
 
 
+## Telemetry in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides telemetry for the tenant environments to enable troubleshooting and support for the tenant. The Telemetry tab provides telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack.
 
-## See Also
+To filter the telemetry for an environment:
 
-[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)  
-[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
-[Set-NAVServerConfiguration](https://go.microsoft.com/fwlink/?linkid=401394)  
-[Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
-[Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  
-[Monitoring Business Central Server Events](monitor-server-events.md)  
+1. Select a base point-in-time for the timestamp of the telemetry messages.
+2. Enter a number of minutes before or after the base point-in-time to set a range of time for the timestamp. A negative number indicates a number of minutes before the base point-in-time, and a positive number indicates a number of minutes following the base point-in-time. For example, a value of *-15* will filter the telemetry messages to a timestamp range of up to 15 minutes before the base point-in-time.
+3. Choose the message type.
+4. Choose the environment.
+5. Select **Filter**.
+
+## Sending telemetry to Microsoft Azure Application Insights (Preview)
+
+You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+
+Currently, the only telemetry that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits to Application Insights pertains to long running SQL queries. We expect to add more telemetry in future updates.
+
+Identifying long running SQL queries on a tenant database can be a good starting point when doing performance analysis, and Application Insights provides tools that can help you in this task.
+
+### Enable sending telemetry to Application Insights
+
+> [!IMPORTANT]  
+> This process requires a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
+
+1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
+2. Create an Application Insights resource in Azure.
+
+    The Application Insights resource will be assigned an instrumentation key. Copy this key because you will need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
+    
+    The Application Insights instrumentation key can be in any Azure tenant that your organization has access to. For example, a delegated administrator from the reselling partner is the one analyzing the telemetry, and they might not have access to the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
+
+    For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+
+3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], on the **Environments** tab, select **Application Insights Key**.
+4. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
+5. Select **Save**.
+
+### Analyze long running SQL queries
+
+Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. To get a quick overview, you can go the [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
+
+For details about the long running SQL query telemetry information and dimensions sent from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Dimensions for long running SQL queries](monitor-long-running-sql-queries-event-log.md#LRSQLQuery).
+
+There are multiple reasons that can affect the time it takes SQL queries to run. For example, the database could be waiting for a lock to be released or the database is executing an operation that performs badly because of missing indexes. In some cases, you can see what caused the delay by looking at the SQL statement that was generated by the code. This information can be found in the **CustomDimension** data, specifically the **AL Stack Trace** column.
 
 
+## See also
+
+[Working with Administration Tools](administration.md)  
+[The Business Central Administration Center](tenant-admin-center.md)  
+[Managing Environments](tenant-admin-center-environments.md)  
+[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
