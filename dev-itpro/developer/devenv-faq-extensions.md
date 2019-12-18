@@ -61,7 +61,6 @@ Another solution to the problem is to...
 For additional guidance....)</p>
 </details>
 
--->
 <!--
 ## Problem
 Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
