@@ -12,7 +12,7 @@ ms.date: 11/15/2019
 ms.author: jswymer
 ---
 
-# Long Running SQL Query Trace
+# Long Running Operation (SQL Query)
 
 
 ### <a name="LRSQLQuery"></a>Dimensions for long running SQL queries emitted to Application Insights
