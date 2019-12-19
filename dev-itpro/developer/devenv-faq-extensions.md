@@ -18,11 +18,16 @@ ms.author: solsen
 <br>
 <details><summary><b>An extension with same App ID and version has already been uploaded - resolve and deploy again</b></summary>
 <p>
+
+###### Problem
 Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
 
+###### Solution 
 The author should increase the version of the extension he is publishing.
 
-Help...
+###### Help
+Link to help ...
+
 </p>
 </details>
 <br>
@@ -46,7 +51,7 @@ Help...
 </p>
 </details>
 
-
+<!--
 ### An extension with same App ID and version has already been uploaded - resolve and deploy again
 <br>
 <details><summary>Problem</summary>
