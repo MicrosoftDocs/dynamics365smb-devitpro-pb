@@ -16,10 +16,10 @@ author: freddydk
 The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/business-central/overview/) on the Microsoft Dynamics 365 Marketing site. 
 
 When you develop in a Docker sandbox, the Essential experience is automatically assigned to you (you set the experience on the **Company Information** page), which makes it difficult to test how a user with the Premium plan assigned will experience what you have developed.
-<br>
 
 ## Setup for users with different plans
-To mimic users with a specific subscription plan assigned, you can set them up with the user groups as detailed in the table below. When you add user to the group, the permission sets defined for the group will apply to the user. For more information, see [To group users in user groups](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions?branch=master#to-manage-permissions-through-user-groups).
+
+To mimic users with a specific subscription plan assigned, you can set them up with the user groups as detailed in the table below. When you add user to the group, the permission sets defined for the group will apply to the user. For more information, see [To group users in user groups](https://docs.microsoft.com/dynamics365/business-central/ui-define-granular-permissions?branch=master#to-manage-permissions-through-user-groups).
 
 > [!NOTE]  
 > In the table below *non-default* means not assigned by default, but the plan allows this to be assigned to the user.

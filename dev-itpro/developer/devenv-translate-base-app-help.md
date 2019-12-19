@@ -1,5 +1,5 @@
 ---
-title: "Working with Translation Files"
+title: "Translating Base App Help using AL Extensions"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 6e0ff568-9cad-4b0f-bd97-b8ac5690a470
-caps.latest.revision: 26
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---

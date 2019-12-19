@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 10/22/2019
+ms.date: 12/06/2019
 ms.author: edupont
 
 ---
@@ -18,6 +18,9 @@ ms.author: edupont
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
 From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environments as .bacpac files to an Azure storage container.
+
+> [!IMPORTANT]
+> You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
 
 ## Setting up Azure storage
 
@@ -54,7 +57,7 @@ For more information on generating and using a SAS, see [Grant limited access to
 
 When you have created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-1. On the Environments list page, select the desired enviroment name to view the environment details.
+1. On the Environments list page, select the relevant production enviroment to view the environment details.
 2. On the action ribbon of the environment details, choose **Database**, and then choose **Create Database Export**.
 3. In the **File Name** field, specify a name for the export file, or leave the default value.
 4. In the **SAS URI** field, specify the **Blob service SAS URL** value that you copied in the previous section.

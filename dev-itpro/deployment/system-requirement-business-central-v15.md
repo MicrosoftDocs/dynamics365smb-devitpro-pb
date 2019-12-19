@@ -24,7 +24,7 @@ The following sections list the minimum hardware and software requirements to us
 
 |||  
 |-|-|  
-|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 77.0 for Windows.</li><li>Mozilla Firefox 69.0 for Windows.</li><li>Safari 12.0 for macOS.</li></ul>Cookies and JavaScript must be enabled in the browser.|  
+|Supported browsers|Recommended browsers:<ul><li>Microsoft Edge</li><li>Google Chrome 77.0 for Windows</li><li>Mozilla Firefox 69.0 for Windows</li><li>Safari 12.0 for macOS</li></ul>Other supported browsers:<ul><li>Internet Explorer 11</li></ul>Cookies and JavaScript must be enabled in the browser.|
 |Business inbox in Outlook|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2019, Excel 2016, or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
@@ -60,9 +60,9 @@ The following table shows the minimum system requirements for customizing or ext
 
 |||
 |-|-|
-|Supported operating systems|<ul><li>Window Server 2016.</li><li>Windows 10 - [supported versions](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet).</ul></li>|
+|Supported operating systems|<ul><li>Window Server 2016.</li><li>Windows 10 - [supported versions](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).</ul></li>|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
-|Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: 4 cores minimum</li><li>Memory: 16 GB for development only. </br> 32 GB for developing and deploying locally. </br>64 GB for developing large apps.</li></ul>|
+|Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: 4 cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects>).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
 |Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>One of the following versions of Visual Studio:<ul><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li><li>Visual Studio 2015 Professional or Enterprise edition with SQL Server Data Tools installed.</li></ul></li></ul></ul><ul><li>For upgrading reports:<ul><li>Report Builder for SQL Server 2016</li></ul><li>For creating Word report layouts:<ul><li>Word 2016 or later</li></ul></li></ul>|  
 
 For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
