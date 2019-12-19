@@ -12,9 +12,41 @@ ms.date: 11/15/2019
 ms.author: jswymer
 ---
 
-# Authorization Trace
+# Authorization Operation
 
-The authentication trace identifies issues that that occur customers face while authentication and maybe reduce the icms we get due to those issues.
+The authentication operation provides information about the authentication of users when they sign in to Business Central, such as:
+
+- Success or failure of the login attempt
+- Reason of failure
+- Type of user (such as normal, administrator, or delegated user) 
+- If the user belongs to the tenant of invited user. 
+- The opened company / If the user can't open the company (authorization issue etc..) 
+
+### <a name="LRSQLQuery"></a>Dimensions for long running SQL queries emitted to Application Insights
+
+The following tables explains the columns included in authentication events emitted to Application Insights. Bold text indicates that the value of the columns is a constant. Some columns are standard for Application Insights. These are indicated by *Application Insights*.
+
+### Message: Success Authorization
+
+|Column|Description or value||
+|---------|-----|-----------|
+|Authorization status|`Succeeded` indicates that the sign in was successful.|
+|Guest user|`true` indicates that the user is a guest user on the tenant.<br />`false`indicates the user is belongs to the tenant.||
+|Entitlement set Ids |Specifies the entitlements that the user has in Business Central.||
+|Telemetry schema version|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
+|User type|Specifies whether the user is an `Internal_Admin`, `Normal user`, or `Delegated_admin`||
+
+
+### Message: Failed Authorization
+
+|Column|Description or value||
+|---------|-----|-----------|
+|Authorization status|`Failed` indicates that the sign-in failed.|
+|Guest user|`true` indicates that the user is a guest user on the tenant.<br />`false`indicates the user is belongs to the tenant.||
+|Entitlement set Ids |Specifies the entitlements that the user has in Business Central.||
+|Telemetry schema version|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
+|User type|Specifies whether the user is an `Internal_Admin`, `Normal user`, or `Delegated_admin`||
+|Failure reason|Specifies why the sign-in failed. Possible values include:<br /> `User is disabled in Business Central.<br />`User does not have entitlements in Business Central. the user is an `Internal_Admin`, `Normal user`, or `Delegated_admin`||
 
 
 ## See also
