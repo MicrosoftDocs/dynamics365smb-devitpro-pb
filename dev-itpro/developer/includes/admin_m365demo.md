@@ -7,7 +7,10 @@
 5. As the location, choose the region that is closest to your location.
 6. Choose the **Microsoft 365 Business Demo Content** content pack, and then choose the **Create Tenant** button.
 
-    This gives you all you need for the next step.
+    This gives you all you need for the next step. But you can use the **Microsoft 365 Enterprise Demo Content** if you need more users for your demo, or you want to demo more complex Microsoft 365 integration scenarios, for example.
+
+    > [!TIP]
+    > There is also a [!INCLUDE [prodshort](prodshort.md)] content pack if all you need is [!INCLUDE [prodshort](prodshort.md)].
 7. In an in-private browser window, go to [https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) and sign up for a free trial. Use the administrator account that you just created, typically called something like admin@M365B265757.onmicrosoft.com.
 
 This gives you a [!INCLUDE [prodshort](prodshort.md)] environment with two companies:
