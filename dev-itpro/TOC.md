@@ -43,6 +43,7 @@
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
+### [Preparing Demonstration Environments](administration/demo-environment.md)
 ### [Business Central Administration Center](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Technical Support of Business Central](technical-support.md)
