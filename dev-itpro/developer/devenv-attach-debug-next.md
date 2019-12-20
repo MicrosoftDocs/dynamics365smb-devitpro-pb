@@ -1,7 +1,7 @@
 ---
 title: "Attach and Debug Next"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 12/20/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,9 @@ If you do not want to publish and invoke functionality to debug it, you can inst
 
 > [!NOTE]  
 > To use the attach functionality, you must make sure that your app is published with **Ctrl+F5** first, or with **Alt+Ctrl+F5** for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with **F5**. To debug using attach, you must make sure to debug on a *new* session. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing **F5** (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
+
+> [!IMPORTANT]  
+> Only the user who starts a Visual Studio Code attach session can issue the Web request on the server.
 
 ## Attach configuration
 
