@@ -90,6 +90,7 @@ page 50106 "Sales Rep Role Center"
                 Caption = 'Customers';
                 RunObject = Page "Customer List";
                 Promoted = true;
+                //  Sales Quote as an action item available from the action pane in the New group
                 PromotedCategory = New;
             }
 

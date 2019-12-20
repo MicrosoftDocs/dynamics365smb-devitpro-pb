@@ -1,21 +1,19 @@
 ---
 title: "Troubleshooting: The Server Is Not Compatible"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: 7d656074-1e17-4819-86e8-eee39fbafd10
-caps.latest.revision: 4
+ms.prod: "dynamics365-business-central"
 ---
 # Troubleshooting: The Server Is Not Compatible
-If the versions of the [!INCLUDE[nav_server](includes/nav_server_md.md)] and the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] are not compatible, you will get an error.  
+If the versions of the [!INCLUDE[server](includes/server_md.md)] and the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] are not compatible, you will get an error.  
   
  On the tablet when connecting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] version 1.1 to [!INCLUDE[navcorfu](includes/navcorfu_md.md)], you will get the following error:  
   
- **This version of the device app is not compatible with the [!INCLUDE[navnow](includes/navnow_md.md)] service. Please upgrade your app.**  
+ **This version of the device app is not compatible with the [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] service. Please upgrade your app.**  
   
  On the phone when connecting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] version 2.0 to [!INCLUDE[navcrete](includes/navcrete_md.md)], you will get the following error:  
   

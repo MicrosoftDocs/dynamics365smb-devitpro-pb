@@ -36,11 +36,11 @@ The following list provides an overview of developing for the [!INCLUDE[nav_uni_
   
 -   [Linking to the Dynamics 365 Business Central App](devenv-link-to-universal-app.md)  
   
--   [Walkthrough: Developing a Sales Rep Role Center for the Microsoft Dynamics NAV Tablet Client](devenv-Walkthrough-Developing-Sales-Rep-RoleCenter-business-central-Tablet-Client.md)  
+-   [Walkthrough: Developing a Sales Rep Role Center for the Business Central Tablet Client](devenv-Walkthrough-Developing-Sales-Rep-RoleCenter-business-central-Tablet-Client.md)  
   
 -   [Adding Help to the Business Central Universal App](devenv-Adding-Help-to-the-Universal-App.md)  
   
--   [Troubleshooting the Microsoft Dynamics NAV Universal App](Troubleshooting-the-Microsoft-Dynamics-NAV-Universal-App.md)
+-   [Troubleshooting the Business Central Universal App](devenv-troubleshooting-the-Universal-App.md)
 
 ## See Also
-[Development](Development.md)  
+[Development Overview](devenv-dev-overview.md)  
