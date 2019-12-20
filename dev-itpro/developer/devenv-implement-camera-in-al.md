@@ -1,0 +1,130 @@
+---
+title: "Implementing the Camera in AL"
+ms.custom: na
+ms.date: 10/01/2019
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.prod: "dynamics365-business-central"
+---
+# Implementing the Camera in AL
+This example illustrates how you can add access to camera to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. Adding a camera option to the `Item Card` page, for example, lets you take a picture of a specific item and store it with the item. The example implements three actions; **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality** on the `Customer Card `page, but does not include code that saves the picture to the database. For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] implementation of this, see **Incoming Documents**, for example on the Accounting Manager profile, when you use the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] on a phone.  
+  
+> [!IMPORTANT]  
+>  The camera access is only available on devices that run the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] and have a camera. This means that camera access is not available from the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or from a browser.  
+  
+The following code will create two variables; the `CameraAvailable` variable is a **Boolean** that checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add actions to the `Customer Card` page that lets the user start the camera and write the code that is run on these actions. And finally, it will add a new trigger `Camera::PictureAvailable` to handle the incoming picture.  
+
+The following example requires that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
+
+```
+pageextension 50101 CustomerCardExtension extends "Customer Card"
+{
+
+    actions
+    {
+        addafter("&Customer")
+        {
+            action(TakePicture)
+            {
+                Visible = CameraAvailable;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = Camera;
+
+                trigger OnAction()
+                begin
+                    Camera.RequestPictureAsync();
+                end;
+            }
+
+            action(TakePictureHigh)
+            {
+                Visible = CameraAvailable;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = Camera;
+
+                trigger OnAction()
+                begin
+                    CameraOptions := CameraOptions.CameraOptions();
+                    CameraOptions.Quality := 100;
+                    Camera.RequestPictureAsync(CameraOptions);
+                end;
+            }
+
+            action(TakePictureLow)
+            {
+                Visible = CameraAvailable;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = Camera;
+
+                trigger OnAction()
+                begin
+                    CameraOptions := CameraOptions.CameraOptions();
+                    CameraOptions.Quality := 10;
+                    Camera.RequestPictureAsync(CameraOptions);
+                end;
+            }
+        }
+
+    }
+
+    trigger OnOpenPage()
+    begin
+        if Camera.IsAvailable() then begin
+            Camera := Camera.Create();
+            CameraAvailable := True;
+        end;
+    end;
+
+    // The PictureName contains the name of the file including its extension on the device. The naming scheme depends on the device platform. The PictureFilePath contains the path to the picture in a temporary folder on the server for the current user.
+    trigger Camera::PictureAvailable(PictureName: Text; PictureFilePath: Text)
+    // Handles the picture for when the camera has captured it and it has been uploaded.
+    begin
+        IncomingFile.Open(PictureFilePath);
+        Message('Picture size: %1', IncomingFile.LEN);
+        IncomingFile.Close();
+        // It is important to clean up by using the File.Erase command to avoid accumulating image files.
+        File.Erase(PictureFilePath);
+    end;
+
+    var
+        [RunOnClient]
+        [WithEvents]
+        Camera: DotNet UT_CameraProvider;
+        CameraOptions: DotNet UT_CameraOptions;
+        // Checks whether the current device has a camera.
+        CameraAvailable: Boolean;
+        IncomingFile: File;
+}
+
+dotnet
+{
+    assembly("Microsoft.Dynamics.Nav.ClientExtensions")
+    {
+
+        type("Microsoft.Dynamics.Nav.Client.Capabilities.CameraProvider"; "UT_CameraProvider")
+        {
+
+        }
+
+        type("Microsoft.Dynamics.Nav.Client.Capabilities.CameraOptions"; "UT_CameraOptions")
+        {
+
+        }
+    }
+}
+
+```
+  
+ You can now test the modified `Customer Card` page in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] from either a tablet or a phone with a camera. To read more about different options that can be set for the camera, see [CameraOptions Overview](devenv-CameraOptions.md).  
+  
+## See Also  
+ [Developing for the Business Central Universal App](devenv-Developing-for-the-Universal-App.md)   
+ [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-Differences-and-Limitations-When-Developing-Pages-for-the-Universal-App.md)

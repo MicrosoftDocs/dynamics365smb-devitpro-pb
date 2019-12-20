@@ -1,17 +1,15 @@
 ---
 title: "LocationOptions Overview"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: 197f03a2-ac34-4f5f-af82-bc297bf58de8
-caps.latest.revision: 4
+ms.prod: "dynamics365-business-central"
 ---
 # LocationOptions Overview
-When implementing location from C/AL, there are some options that you can optionally pass to `LocationProvider.RequestLocationAsync(options)`. The options can be accessed by using `Microsoft.Dynamics.Nav.Client.Capabilities.LocationOptions` found in the `Microsoft.Dynamics.Nav.ClientExtensions` dll.  
+When implementing location from AL, there are some options that you can optionally pass to `LocationProvider.RequestLocationAsync(options)`. The options can be accessed by using `Microsoft.Dynamics.Nav.Client.Capabilities.LocationOptions` found in the `Microsoft.Dynamics.Nav.ClientExtensions` dll.  
 
  For most scenarios it is not necessary to specify options.  
 
@@ -24,4 +22,5 @@ When implementing location from C/AL, there are some options that you can option
 |`int MaximumAge`<br /><br /> The maximum length of time \(milliseconds\) of a cached location.|  
 
 ## See Also  
- [How to: Implement Location in C/AL](How-to--Implement-Location-in-C-AL.md)
+[Implementing Location in AL](How-to--Implement-Location-in-AL.md)  
+  
