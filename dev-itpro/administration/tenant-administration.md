@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/05/2019
+ms.date: 12/19/2019
 ms.author: edupont
 ---
 
@@ -80,7 +80,9 @@ The following tasks are *not* available to the delegated administrator:
 
 - Use the **Invite External Accountant** assisted setup guide
 
-    Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.     
+    Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.
+- Change the experience to Premium
+- Install apps from AppSource
 
 ### Manage technical support
 
