@@ -5,13 +5,11 @@
 
     As a partner, you can have 1 one year tenant at a time. So if you want more tenants, we suggest that you choose 90-Day tenants.
 5. As the location, choose the region that is closest to your location.
-6. Choose the **Microsoft 365 Business Demo Content** content pack, and then choose the **Create Tenant** button.
+6. Choose the **Dynamics 365 Business Central** content pack, and then choose the **Create Tenant** button.
 
-    This gives you all you need for the next step. But you can use the **Microsoft 365 Enterprise Demo Content** if you need more users for your demo, or you want to demo more complex Microsoft 365 integration scenarios, for example.
+    This gives you all you need for the next step. But you can use the **Microsoft 365 Business Demo Content** or **Microsoft 365 Enterprise Demo Content** content packs if you need more users for your demo, or you want to demo more complex Microsoft 365 integration scenarios, for example.
 
-    > [!TIP]
-    > There is also a [!INCLUDE [prodshort](prodshort.md)] content pack if all you need is [!INCLUDE [prodshort](prodshort.md)].
-7. In an in-private browser window, go to [https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) and sign up for a free trial. Use the administrator account that you just created, typically called something like admin@M365B265757.onmicrosoft.com.
+7. In an in-private browser window, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense]https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and log in with the administrator account that you just created, typically called something like admin@CRMbc123456.onmicrosoft.com.
 
 This gives you a [!INCLUDE [prodshort](prodshort.md)] environment with two companies:
 
@@ -19,6 +17,8 @@ This gives you a [!INCLUDE [prodshort](prodshort.md)] environment with two compa
 - An empty company with the name *My Company*, but it might have a different display name for demo purposes
 
 If you go to the **Companies** list in [!INCLUDE [prodshort](prodshort.md)], you will see that the demonstration company is marked as an evaluation company and does not have a subscription. This is why, if you want to demo something that requires a subscription, you have to switch to the empty My Company.  
+
+This tenant includes Office 365 for each of the users, so that you can run the **Set up your Business Inbox in Outlook** assisted setup guide on behalf of the organization and demo this feature. For more information, see [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook). You also have access to other apps, such as [Dynamics 365 Customer Service](/dynamics365/customer-service/index), [Dynamics 365 Sales](/dynamics365/sales-enterprise/overview), [Power Automate](/power-automate/), [Power Apps](/powerapps/), and many more.  
 
 You can use the demonstration company for as long as you like. Provided that you use it at least a couple of times per week, the company remains available for as long as your Office 365 account is still valid.  
 
