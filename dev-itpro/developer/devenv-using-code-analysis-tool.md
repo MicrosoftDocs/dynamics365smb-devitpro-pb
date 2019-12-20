@@ -59,10 +59,10 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 - **UICop** is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
 
 ## Enabling code analysis on large projects
-In order to improve performance when running code analysis on large projects, you can switch off running code analysis in the background.
-To do so, open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings**. Then, specify the setting `"al.backgroundCodeAnalysis": false`.
+In order to improve performance when running code analysis on large projects, you can switch off running code analysis in the background. To do so, open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings**. Then, specify the setting `"al.backgroundCodeAnalysis": false`.
   
-## See also
+## See Also
+
 [Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Development in AL](devenv-dev-overview.md)  

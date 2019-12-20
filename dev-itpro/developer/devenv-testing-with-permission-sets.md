@@ -22,11 +22,11 @@ Without applying any permission sets, a test will run with full permissions, sim
 ## Overview
 To run tests with permission sets requires that you work with test codeunits and/or test methods and test runner codeunits.
 
--   Test codeunits and test methods
+- Test codeunits and test methods
 
-    Test codeunits and test methods include the [TestPermissions Property](properties/devenv-testpermissions-property.md) . This  property has the following values: **Disabled**, **Restrictive**, **NonRestrictive**, **InheritFromCodeunit**. The values alone do not assign any permission sets to the test. At runtime, the property value is passed on to the **OnBeforeTestRun** and **OnAfterTestRun** triggers of test runner codeunits. You define which permission sets are applied to the test for each value by coding the **OnBeforeTestRun** and **OnAfterTestRun** triggers of a test runner codeunit.
+  Test codeunits and test methods include the [TestPermissions Property](properties/devenv-testpermissions-property.md) . This  property has the following values: **Disabled**, **Restrictive**, **NonRestrictive**, **InheritFromCodeunit**. The values alone do not assign any permission sets to the test. At runtime, the property value is passed on to the **OnBeforeTestRun** and **OnAfterTestRun** triggers of test runner codeunits. You define which permission sets are applied to the test for each value by coding the **OnBeforeTestRun** and **OnAfterTestRun** triggers of a test runner codeunit.
     
--   Test runner codeunits
+- Test runner codeunits
 
 You use test runner codeunits to apply the permission sets to use in the test based on the value of the [TestPermissions Property](properties/devenv-testpermissions-property.md) of the test. You do this by adding code to the **OnBeforeTestRun** and **OnAfterTestRun** triggers of the test runner codeunit. These triggers include the *TestPermissions* data type parameter.  The *TestPermissions* data type parameter takes the value of the [TestPermissions Property](properties/devenv-testpermissions-property.md)  that is passed on from the test codeunit or test method that is run. On the triggers, you add code to define what permission sets to use for the test according to the value of the *TestPermissions* data type parameter.
 
@@ -35,11 +35,11 @@ Typically, you code the **OnBeforeTestRun** trigger to assign the permission set
 To summarize, a test codeunit or test method defines a general permission set level to use in a test run, while the test runner codeunit determines the specific permission set to use in the test run.    
 
 ## General procedure for using Permission Sets in tests
-1.  Determine the application functionality that you want to test with permission sets.
-2.  Add or modify test codeunits or test methods that perform the tests.
+1. Determine the application functionality that you want to test with permission sets.
+2. Add or modify test codeunits or test methods that perform the tests.
 
     Set the TestPermissions property to the desired permission set level.
-3.  Add or modify test runner codeunits that run the test codeunits and test methods.
+3. Add or modify test runner codeunits that run the test codeunits and test methods.
 
     Add logic to the **OnBeforeTestRun** and **OnAfterTestRun** triggers to apply and clear the permission sets for the test. 
  

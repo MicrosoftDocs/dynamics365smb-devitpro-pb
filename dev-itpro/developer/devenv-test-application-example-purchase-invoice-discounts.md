@@ -19,11 +19,11 @@ You have modified codeunit 70, Purch-Calc.Discount, which is a codeunit in the [
 ## Prerequisites  
 To complete this example, you will need:  
   
--   [!INCLUDE[d365_bus_central](includes/d365_bus_central_md.md)] with a developer license.  
+- [!INCLUDE[d365_bus_central](includes/d365_bus_central_md.md)] with a developer license.  
   
--   The CRONUS International Ltd. demo data company.  
+- The CRONUS International Ltd. demo data company.  
 
--   To import the Test Toolkit.
+- To import the Test Toolkit.
  
 ## Task 1: Create the test codeunit and method
 

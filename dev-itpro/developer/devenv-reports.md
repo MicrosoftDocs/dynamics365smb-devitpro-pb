@@ -32,7 +32,7 @@ The following table includes links to help you get started with designing the re
 |--------|---------| 
 |Learn the overview of the report design process|[Report Design Overview](devenv-report-design-overview.md)| 
 |Understand the report structure and designing the layout for a report.|[Report Object](devenv-report-object.md)|
-|Understanding the data model and dataset of a report|[Defining a Report Dataset](devenv-report-dataset.md)|    
+|Understanding the data model and dataset of a report|[Defining a Report Dataset](devenv-report-dataset.md)|  
 |Learn how to create a report using a Word layout|[Creating a Word Layout Report](devenv-howto-report-layout.md)| 
 |Learn how to create a report using an RDL layout report.|[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)|
  

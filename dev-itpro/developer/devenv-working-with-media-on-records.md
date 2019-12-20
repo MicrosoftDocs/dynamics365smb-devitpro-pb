@@ -2,7 +2,7 @@
 title: "Working With Media on Records"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 12/20/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Using the [Media](methods-auto/media/media-data-type.md) or [MediaSet](methods-a
 
 ## Using Media and Media Sets on records  
 
-Table fields support two data types for adding media to records: **Media** and **MediaSet**. With these data types, you can import media directly from a file to a record, or media can be passed to the record in an InStream object. Imported media is stored as an object in the system table **2000000184 Tenant Media** of the application database. Each media object is assigned a unique identifier (ID).
+Table fields support two data types for adding media to records: **Media** and **MediaSet**. With these data types, you can import media directly from a file to a record, or media can be passed to the record in an InStream object. Imported media is stored as an object in the system table **2000000184 Tenant Media** of the tenant database. Each media object is assigned a unique identifier (ID).
 
 ## Media data type
 The **Media** data type associates a record with a single media object. For example, you can use this data type to display an image with each record in a list type page.
