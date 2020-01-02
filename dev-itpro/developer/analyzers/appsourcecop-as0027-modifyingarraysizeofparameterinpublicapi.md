@@ -1,5 +1,5 @@
 ---
-title: "Key fields must not be changed"
+title: "Modifying the array size of a parameter in events and external procedures is not allowed"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/02/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0009
-Key fields must not be changed  
+# AppSourceCop Rule AS0027
+Modifying the array size of a parameter in events and external procedures is not allowed  
 
 ## Description
-Key fields must not be changed.
+Modifying the array size of a parameter in events and external procedures is not allowed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

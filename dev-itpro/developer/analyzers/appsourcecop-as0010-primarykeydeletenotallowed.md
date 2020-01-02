@@ -2,7 +2,7 @@
 title: "Keys must not be deleted, since dependent extensions may break"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/10/2019
+ms.date: 01/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
