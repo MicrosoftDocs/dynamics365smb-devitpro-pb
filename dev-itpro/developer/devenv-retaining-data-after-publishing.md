@@ -58,7 +58,7 @@ If you, during development, for example, discover that you no longer want field 
 
 - For extensions built on [!INCLUDE[prodshort](includes/prodshort.md)] Spring 2019 or earlier, if a table field has the `SqlDataType` set to a value other than `Varchar` (which is the default), you must delete the `SqlDataType` property on the field, otherwise, you will will not be able to successfully synchronize the extension.
 
-    If the `SqlDataType` property is still needed, you will have to create a new table in the extension that has the same definition as the original table, and write upgrade code that migrates the data from the original table to the new table. For more information, see [Writing upgrade code]([Upgrading Extensions](devenv-upgrading-extensions.md#writing-upgrade-code).
+    If the `SqlDataType` property is still needed, you will have to create a new table in the extension that has the same definition as the original table, and write upgrade code that migrates the data from the original table to the new table. For more information, see [Writing upgrade code](devenv-upgrading-extensions.md#writing-upgrade-code).
 
     Alternatively, if this is a development scenario, you can synchronize the extension using the ForceSync or Recreate mode.
 
