@@ -1,5 +1,5 @@
 ---
-title: "Variable declarations should be ordered by type."
+title: "Placeholders should have a comment explaining their content."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/02/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0021
-Variable declarations should be ordered by type.  
+# CodeCop Rule AA0470
+Placeholders should have a comment explaining their content.  
 
 ## Description
-Variable declarations should be ordered by type. In general, object and complex variable types are listed first followed by simple variables.
+Provide an explanation that describes the content of each of the placeholders.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

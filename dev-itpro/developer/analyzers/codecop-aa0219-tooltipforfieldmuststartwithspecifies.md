@@ -2,7 +2,7 @@
 title: "The Tooltip property of Fields must start with 'Specifies' (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&amp;topicid=38066)."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 01/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
