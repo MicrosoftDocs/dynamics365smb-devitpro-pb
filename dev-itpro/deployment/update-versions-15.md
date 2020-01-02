@@ -27,6 +27,7 @@ The following table lists the updates that have been released for 2019 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4533389](https://support.microsoft.com/en-us/help/4533389/update-15-2-for-microsoft-dynamics-365-business-central-2019-release-w)|Update 15.2|December, 2019|Application Build 15.2</br>Platform Build 15.2|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4528699](https://support.microsoft.com/help/4528699) |Update 15.1 |November, 2019|Application Build 15.1</br>Platform Build 15.1|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 
 ## See Also
