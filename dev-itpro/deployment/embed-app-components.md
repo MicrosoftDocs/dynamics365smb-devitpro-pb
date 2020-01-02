@@ -66,9 +66,8 @@ At this stage, within the extensions and base application, the ISV partner can w
 
 ## Base Application 
 The base application is the [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] application which the partner obtained from Microsoft, customized and extended to fit the needs of the industry the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] supposed to cover.  
-Major releases and cumulative updates (CUs) of the base application are publicly available on Microsoft Download and as images on Docker. 
-Microsoft Download: https://support.microsoft.com/help/4072483 
-Docker Hub: https://hub.docker.com/r/microsoft/dynamics-nav/  
+Major releases and cumulative updates (CUs) of the base application are publicly available on [Microsoft Download](https://support.microsoft.com/help/4072483) and as images on [Docker Hub](https://hub.docker.com/r/microsoft/dynamics-nav/). 
+
 Pre-released versions of the base application are available for participants of the “Ready and Go” program via Microsoft Collaborate. 
 Although we recommend always using the latest version of the base application, the ISV partner can choose any version they need. The only requirement is that the ISV partner makes sure that the base application version they include with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] can run on a supported [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] platform version.  
 The base application is an optional part of an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] package. If the partner has implemented all required functionality in their library extensions, they don’t need to include the base application itself with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)]. Instead they should specify, in the metadata of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)], which version of the [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] base application they are targeting.  
