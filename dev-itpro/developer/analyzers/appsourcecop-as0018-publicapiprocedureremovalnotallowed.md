@@ -2,7 +2,7 @@
 title: "A procedure belonging to a public API cannot be modified"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/10/2019
+ms.date: 01/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

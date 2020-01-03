@@ -210,7 +210,19 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <BC15 server instance> -Path "<path to the test library extension package file>"
     ```
 
-## Task 7: Synchronize tenant and synchronize/install base application and test library extensions
+## Task 7: Increase the application version in the database (optional) 
+
+The application database includes the **$ndo$dbproperty** table which stores the application version. In the client, the application version is shown the Help and Support page. This information can be useful for support. The application version number is not automatically increased during upgrade. Although this step is not necessary for upgrading 
+
+he Get-NavApplication cmdlet comes from the $ndo$dbproperty table in the database.
+
+To increase the application version of the application database, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
+
+    ```
+    Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
+    ```
+    
+## Task 8: Synchronize tenant and synchronize/install base application and test library extensions
 
 In this task, you update the schema of tenant database schema with schema of changes in system objects and application objects. In this step, you will synchronize the tenant to the to your custom base application extension and test library extension (if any). With this operation, the extensions will take ownership of the tables in the SQL database.
 

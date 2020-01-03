@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 01/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,7 +59,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0211](codecop-aa0211-calcfieldsonlyonflowfields.md)|Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob.|CalcFields should only be used for FlowFields or Blob fields|The CalcFields method should only be used with FlowFields or fields of type Blob. The field {0} is not a FlowField or of type Blob.|Design|Warning|true|
 |[AA0213](codecop-aa0213-obsoletejustification.md)|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|The {0} {1} must have specified ObsoleteState and ObsoleteReason.|Design|Warning|true|
 |[AA0214](codecop-aa0214-blindwritelocalrecord.md)|The local record should be modified before saving to the database.|The local record should be modified before saving to the database.|The record {0} should be modified before saving to the database.|Design|Warning|true|
-|[AA0215](codecop-aa0215-followfilenameguide.md)|Follow the best practices for naming ('/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').|Follow the best practices for naming ('/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').|The file {0} has an incorrect name. The valid name is {1}.|Redability|Warning|true|
+|[AA0215](codecop-aa0215-followfilenameguide.md)|Follow the best practices for naming ('https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').|Follow the best practices for naming ('https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').|The file {0} has an incorrect name. The valid name is {1}.|Redability|Warning|true|
 |[AA0216](codecop-aa0216-passusermessageanderrorbytextconstant.md)|Use a text constant for passing user messages and errors without concatenations.|Use a text constant for passing user messages and errors without concatenations.|Use a text constant for passing user messages and errors without concatenations.|Localizability|Warning|true|
 |[AA0217](codecop-aa0217-strsubstnoformatstringshouldbetextconstantorlabel.md)|Use a text constant or label for format string in StrSubstNo.|Use a text constant or label for format string in StrSubstNo.|Use a text constant or label for format string in StrSubstNo.|Localizability|Warning|true|
 |[AA0218](codecop-aa0218-tooltipmustbefilledonpageforfieldsandactions.md)|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&amp;topicid=38066).|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&amp;topicid=38066).|The Tooltip property for {0} {1} must be filled.|Localizability|Warning|true|
@@ -73,6 +73,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0226](codecop-aa0226-captionlanguagevaluemustbefilled.md)|The value of the Caption property of Fields must be filled in.|The value of the Caption property of Fields must be filled in.|The value of the {0} Caption property for {1} {2} must be filled in.|Localizability|Warning|true|
 |[AA0227](codecop-aa0227-alwaysguardmethodswithunhandlederrorsinupgradecodeunits.md)|Optional return value should not be omitted in upgrade codeunits.|In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors.|Optional return value of the method should not be omitted in upgrade codeunits.|Design|Warning|true|
 |[AA0230](codecop-aa0230-noversionnumberonbcassembliesdotnetvars.md)|Version should not be specified for internal assemblies.|Version number should not be specified for internal assemblies to avoid errors during upgrade procedures.|Version should not be specified for internal assembly '{0}'.|Design|Warning|true|
+|[AA0470](codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md)|Placeholders should have a comment explaining their content.|Provide an explanation that describes the content of each of the placeholders.|Variable '{0}' with placeholders should have a comment explaining their content.|Localizability|Warning|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -138,7 +138,7 @@ This task runs a technical upgrade on the application database to convert it fro
     Collation           :
     ```
 
-## Task 4: Connect and configure the version 15 server instance
+## Task 4: Connect and configure the version 15 server for app migration
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade and can be reverted after you complete the upgrade.
 
@@ -172,6 +172,26 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
+
+## Task 5: Increase the application version
+
+This task is optional, but it is recommended. You can choose to skip it for now and do it later. In this task, you will increase the application_version that is stored in $ndo$dbproperty table of the application database, which is not done automatically. This serves two purposes:
+
+- Enables running the Start-NAVDataUpgrade cmdlet later in Task 8 of this article. The application version is compared with the tenant's version. If the application version is greater, then a data upgrade can be performed. If you skip this task then you will have to use the `-SkipAppVersionCheck` switch with  Start-NAVDataUpgrade cmdlet in Task 8. 
+- The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version. For example, you could set the value to application build no. which you can get from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+
+To change the application version, run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
+
+```
+Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
+```
+For example:
+
+```
+Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.1.38071 -Force
+```
+
+Later in this article, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database.
 <!--
 ## Task 4: Configure the version 15 server instance 
 
@@ -217,7 +237,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance BC150
     ```
 -->
-## Task 5: Publish the symbols and extensions
+## Task 6: Publish the symbols and extensions
 
 In this task, you will publish the platform symbols and extensions. As minimum, this includes the new base application and system application extensions that are on the installation media (DVD). In addition, you publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
@@ -268,7 +288,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "<path to extension>"
     ```
 
-## Task 6: Synchronize the tenant
+## Task 7: Synchronize the tenant
 
 In this task, you will synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -327,7 +347,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you will notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 7: Upgrade the data
+## Task 8: Upgrade the data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -338,8 +358,10 @@ If you have a multitenant deployment, perform these steps for each tenant.
     1. To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
         ```
-        Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck
+        Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial [-SkipAppVersionCheck]
         ```
+
+        You only need to use the -SkipAppVersionCheck if you did not increase the application version in Task 5. 
     2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
 
     This step will automatically install the base application and system application on the tenant.
@@ -356,7 +378,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     This step will also automatically install the new extension version on the tenant.
 4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 8: Install 3rd-party extensions
+## Task 9: Install 3rd-party extensions
 
 Complete this task to install 3rd party extensions for which a new version was not published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
