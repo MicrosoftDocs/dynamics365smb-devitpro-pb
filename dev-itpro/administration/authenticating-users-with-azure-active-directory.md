@@ -18,15 +18,17 @@ Azure Active Directory \(Azure AD\) is a cloud service that provides identity an
 
 ## Azure AD and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
  
- You can use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Office 365. Also, if you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[webserver](../developer/includes/webserver.md)] on-premises. You do not have to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure to use Azure AD for user authentication.
+You can use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Office 365. Also, if you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[webserver](../developer/includes/webserver.md)] on-premises. You do not have to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure to use Azure AD for user authentication.
 
  The following sections describe the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
 
 ## Preparation
 
-Azure AD authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you do not have a certificate, then you can create your own self-signed certificate. The implementation of certificates involves installation and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
+- Azure AD authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you do not have a certificate, then you can create your own self-signed certificate. The implementation of certificates involves installation and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
 
-For more information, see [Using Certificates to Secure Connections](../deployment/implement-security-certificates-production-environment.md).
+    For more information, see [Using Certificates to Secure Connections](../deployment/implement-security-certificates-production-environment.md).
+
+- Upcoming releases of some browsers, such as Google Chrome 80 and Microsoft Edge, will include changes to how cookies are handled. To ensure Azure AD authentication works with these browser versions, make sure that the Business Central platform has been upgraded to a recommended update as described in [Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy](../administration/prepare-for-cookie-samesite-policy.md).
 
 ## Task 1: Create an Azure AD Tenant
 

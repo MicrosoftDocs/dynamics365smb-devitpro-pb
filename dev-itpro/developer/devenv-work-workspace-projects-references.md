@@ -1,6 +1,6 @@
 ---
 title: "Working with Multiple Projects and Project References"
-description: "Handling solutions in the AL language that contains multiple projects in one VS Code folder and contains references between these projects."
+description: "Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects."
 author: SusanneWindfeldPedersen
 ms.date: 10/01/2019
 ms.reviewer: na

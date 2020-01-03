@@ -2,7 +2,7 @@
 title: "Only use a correct values of ApplicationArea."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 01/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

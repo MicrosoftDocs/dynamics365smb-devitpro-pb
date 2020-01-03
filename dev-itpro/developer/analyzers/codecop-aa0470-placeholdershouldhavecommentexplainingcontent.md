@@ -1,5 +1,5 @@
 ---
-title: "Key fields must not be changed"
+title: "Placeholders should have a comment explaining their content."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/02/2020
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0009
-Key fields must not be changed  
+# CodeCop Rule AA0470
+Placeholders should have a comment explaining their content.  
 
 ## Description
-Key fields must not be changed.
+Provide an explanation that describes the content of each of the placeholders.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[AppSourceCop Analyzer](appsourcecop.md)  
+[CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
