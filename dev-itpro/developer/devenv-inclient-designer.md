@@ -88,7 +88,7 @@ For more information about Quick Entry, from a user perspective, see [Accelerati
 
 ## Working with the Navigation Menu and Navigation Bar
 
-Designer lets you add actions that link to pages and reports in the navigation bar. Use the bookmark icon on the target page or report, or in the Tell Me window that allows you to efficiently create multiple links. You can also move actions in the Navigation Bar into groups or subgroups in the Navigation Menu.  
+Designer lets you add actions that link to pages and reports in the navigation bar using the bookmark icon on the target page or report. The bookmark icon is also available in the Tell Me window, allowing you to efficiently create multiple links and build up the set of important or commonly-used links in the Role Center navigation bar. You can also move actions to reorder them in the navigation bar, or move them into groups or subgroups to design the Navigation Menu.  
 For more information on bookmarking see [Bookmark a Link to a Page or Report on Your Role Center](https://docs.microsoft.com/dynamics365/business-central/ui-bookmarks).  
 
 ## Working with Actions
