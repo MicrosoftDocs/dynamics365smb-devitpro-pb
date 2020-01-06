@@ -3,7 +3,7 @@ title: "Using Designer"
 description: "Description of how Designer works."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 01/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 |Features      |Applies to    | 
 |--------------|--------------|
-|Add components    |fields and columns               |
+|Add components    |fields, columns, actions in navigation menu             | 
 |Move components   |fields, columns, cues, parts, actions and action groups |
 |Remove components |fields, columns, cues, parts, actions and action groups |
 |Change field importance, like showing in collapsed FastTab header or under **Show More** |fields|
@@ -54,7 +54,7 @@ After you are done with the adjustments, finish up your design by choosing **Sto
 
 ## Drag-and-drop components
 
-In Designer, you design and modify the current page; you can add existing table fields, move fields around, remove fields from the page, hide and move actions, and more. You can make changes to display the information by using drag-and-drop components. 
+In Designer, you design and modify the current page; you can display existing table fields, move fields around, remove fields from the page, hide and move actions, and more. You can make changes to display the information by using drag-and-drop components. 
 
 ## Working with fields
 
@@ -84,7 +84,12 @@ You can use Designer to set the [QuickEntry property](properties/devenv-quickent
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
-For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data?branch=master#QuickEntry) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+
+## Working with the Navigation Menu and Navigation Bar
+
+Designer lets you add actions that link to pages and reports in the navigation bar. Use the bookmark icon on the target page or report, or in the Tell Me window that allows you to efficiently create multiple links. You can also move actions in the Navigation Bar into groups or subgroups in the Navigation Menu.  
+For more information on bookmarking see [Bookmark a Link to a Page or Report on Your Role Center](https://docs.microsoft.com/dynamics365/business-central/ui-bookmarks).  
 
 ## Working with Actions
 
