@@ -46,11 +46,12 @@ Just like with V1 extensions, you have to write code to handle data in tables du
 
 - Instead of adding code to normal codeunit, you write code in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**.
 - Instead of adding code to the user-defined methods `OnNavAppUpgradePerDatabase()` or `OnNavAppUpgradePerCompany()`, you add code to one or more of the following system triggers for data upgrade. These triggers are invoked when a data upgrade is started. The following table lists the upgrade triggers in the order in which they run.  
-    |Trigger |Description |
-    |--------|------------|
-    |OnCheckPreconditionsPerCompany() or OnCheckPreconditionsPerDatabase()| Used to check that certain requirements are met in order to run.|
-    |OnUpgradePerCompany() or OnUpgradePerDatabase()|Used to run the actual upgrade work|
-    |OnValidateUpgradePerCompany() or OnValidateUpgradePerDatabase()|Used to check that the upgrade was successful|  
+
+|Trigger |Description |
+|--------|------------|
+|OnCheckPreconditionsPerCompany() or OnCheckPreconditionsPerDatabase()| Used to check that certain requirements are met in order to run.|
+|OnUpgradePerCompany() or OnUpgradePerDatabase()|Used to run the actual upgrade work|
+|OnValidateUpgradePerCompany() or OnValidateUpgradePerDatabase()|Used to check that the upgrade was successful|  
 
 However, for this one-time conversion, all of the same **NAVAPP** system methods you used in V1 extensions work with V2 extensions and can be called from any of the upgrade triggers. 
 
