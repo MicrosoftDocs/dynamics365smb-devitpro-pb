@@ -32,7 +32,7 @@ In order to define the underlying structure of the imported or exported document
 ## Request page
 Request pages are dialog boxes that enable the user to set a filter on the data, sort the data, or choose whether to export or import the data. For more information, see [Request Pages](devenv-request-pages.md).
 
-Unlike Report request pages, XMLport request pages cannot be bookmarked by business users.
+Unlike report request pages, XMLport request pages cannot be bookmarked by users from the user interface.
 
 ## XMLport properties, triggers, and code
 XMLport objects include triggers, methods, and properties that can be used to work with the object. For more information, see [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport Triggers](triggers/devenv-xmlport-triggers.md).
