@@ -49,8 +49,8 @@ Just like with V1 extensions, you have to write code to handle data in tables du
     |Trigger |Description |
     |--------|------------|
     |OnCheckPreconditionsPerCompany() or OnCheckPreconditionsPerDatabase()| Used to check that certain requirements are met in order to run.|
-    |OnUpgradePerCompany() or OnUpgradePerDatabase()|Used to run the actual upgrade work| 
-    |OnValidateUpgradePerCompany() or OnValidateUpgradePerDatabase()|Used to check that the upgrade was successful|
+    |OnUpgradePerCompany() or OnUpgradePerDatabase()|Used to run the actual upgrade work|
+    |OnValidateUpgradePerCompany() or OnValidateUpgradePerDatabase()|Used to check that the upgrade was successful|  
 
 However, for this one-time conversion, all of the same **NAVAPP** system methods you used in V1 extensions work with V2 extensions and can be called from any of the upgrade triggers. 
 
