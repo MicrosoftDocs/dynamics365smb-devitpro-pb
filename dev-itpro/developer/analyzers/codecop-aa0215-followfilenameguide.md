@@ -2,7 +2,7 @@
 title: "Follow the best practices for naming ('https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming')."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/02/2020
+ms.date: 01/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
