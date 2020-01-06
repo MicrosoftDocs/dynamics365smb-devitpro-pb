@@ -103,6 +103,8 @@
 # Administration
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
 #### [Preparing Test Environments](administration/test-environment.md)
 ### Administration Center
