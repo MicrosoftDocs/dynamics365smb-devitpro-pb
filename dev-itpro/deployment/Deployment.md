@@ -21,7 +21,7 @@ You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer
 
 ### Get set up for selling Business Central online
 
-If your organization has a background as resellers of [!INCLUDE [navnowlong_md](../developer/includes/navnowlong_md.md)] or other on-premises products, you have to get get set up in the Microsoft Partner Center. For more information, see [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md).
+If your organization has a background as resellers of [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] or other on-premises products, you have to get get set up in the Microsoft Partner Center. For more information, see [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md).
 
 For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
 

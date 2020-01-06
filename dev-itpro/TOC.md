@@ -45,9 +45,9 @@
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Administration of Business Central Online](administration/tenant-administration.md)
 ### [Preparing Demonstration Environments](administration/demo-environment.md)
-### [Business Central Administration Center](administration/tenant-admin-center.md)
-### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Technical Support of Business Central](technical-support.md)
 ### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
