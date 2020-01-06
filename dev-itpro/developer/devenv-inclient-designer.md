@@ -19,7 +19,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 |Features      |Applies to    | 
 |--------------|--------------|
-|Add components    |fields, columns, actions in navigation menu             | 
+|Add components    |fields, columns, actions in navigation bar              | 
 |Move components   |fields, columns, cues, parts, actions and action groups |
 |Remove components |fields, columns, cues, parts, actions and action groups |
 |Change field importance, like showing in collapsed FastTab header or under **Show More** |fields|
