@@ -29,7 +29,7 @@ The values for the **UsageCategory** property are listed below. The **UsageCateg
 ## Remarks
 If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**:
 - the page or report will not show up when you use the search functionality.  
-- users will not be able to bookmark a link to the page or report object.
+- users will not be able to bookmark a link to the page or report object from the user interface.
 
 
 ## Syntax
