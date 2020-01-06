@@ -3,7 +3,7 @@ title: "UsageCategory Property"
 description: "Description of how you use AL to add pages and reports to Tell me in the client using the UsageCategory property."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 01/06/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -27,7 +27,10 @@ The values for the **UsageCategory** property are listed below. The **UsageCateg
 |Administration  |The page or report is listed as **Administration** under the **Pages and Tasks** category.|
 
 ## Remarks
-If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you use the search functionality. 
+If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**:
+- the page or report will not show up when you use the search functionality.  
+- users will not be able to bookmark a link to the page or report object.
+
 
 ## Syntax
 
