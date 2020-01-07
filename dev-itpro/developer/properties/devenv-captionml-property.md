@@ -37,13 +37,13 @@ The CaptionML property has the following format.
 
  `<Language ID>='<caption>'`
 
- `<Language ID>` is the standard Windows three-letter language ID, and `<caption>` is the caption text for this language. Use semicolons to separate entries.  
+ `<Language ID>` is the standard Windows three-letter language ID, and `<caption>` is the caption text for this language. Use commas to separate entries.  
 
  The following example shows a CaptionML value.  
 
  `CaptionML = DAN='Navn',DEU='Name',ESP='Nombre',FRA='Nom';`
 
- In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP), and French Standard (FRA).  
+In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP), and French Standard (FRA).  
 
 > [!NOTE]  
 >  On Role Center type pages, the CaptionML property value is used as the display name for the associated Profile in the client.
@@ -61,8 +61,13 @@ You can enter values for the CaptionML property in two ways:
  When you export objects as XML, the CaptionML property values are included.  
 -->
 
-## Default Values  
-The following table shows how the default caption is determined for the various objects in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].  
+## Default Values
+
+When the CaptionML property does not include an entry for the current language used by the user in the client, then  
+1. Uses the value for the ENU entry in the CaptionML property.
+2. If there is no ENU entry, then the client will display the next language according to alphabetical order.
+3. If the CaptionML property is empty, the caption is determined by  
+The following table shows how the default caption is determined for the various objects in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
 
 |Object, control, or other element|Default caption|  
 |---------------------------------|---------------|  
