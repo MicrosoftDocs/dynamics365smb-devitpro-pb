@@ -60,7 +60,7 @@ On a high level, an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is a
     This includes additional [!INCLUDE[embedapp](../developer/includes/embedapp.md)] properties that are specific to this type of app and not otherwise available for other types of apps (see the list below).  
 - Base application and tenant template (optional)  
 
-The following capabilities are only available for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and not for other types of [!INCLUDE[prodshort](../developer/includesprodshort.md)] apps (Connect and Add-on).
+The following capabilities are only available for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and not for other types of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps (Connect and Add-on).
 
 ### Partner Branding
 
