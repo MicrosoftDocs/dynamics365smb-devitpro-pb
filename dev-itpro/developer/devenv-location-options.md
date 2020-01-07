@@ -22,5 +22,5 @@ When implementing location from AL, there are some options that you can optional
 |`int MaximumAge`<br /><br /> The maximum length of time \(milliseconds\) of a cached location.|  
 
 ## See Also  
-[Implementing Location in AL](How-to--Implement-Location-in-AL.md)  
+[Implementing Location in AL](devenv-implement-location-al.md)  
   
