@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.prod: "dynamics365-business-central"
 ---
 # Introducing the Dynamics 365 Business Central Universal App
 The app displaying the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is targeted at users in small and medium sized businesses that want to access data from a tablet or a phone. Some of the advantages of offering this solution are portability and flexibility, when the user is away from the desk, on the train, between meetings, passing time and so on.  
@@ -41,6 +41,6 @@ The app displaying the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!I
  [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] support the same credential types as [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_web](includes/nav_web_md.md)]. For more information, see [Users and Credential Types](Users-and-Credential-Types.md).  
   
 ## See Also  
- [Developing for the Microsoft Dynamics NAV Universal App](Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)   
- [Getting Started Developing for the Microsoft Dynamics NAV Universal App](Getting-Started-Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)   
- [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Universal App](devenv-differences-and-limitations-when-developing-pages-for-the-universal-app.md)
+ [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Getting Started Developing for the Dynamics 365 Business Central Universal App](devenv-Getting-Started-Developing-business-central-universal-App.md)   
+ [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Universal App](devenv-differences-and-limitations-developing-pages-business-central-universal-app.md)

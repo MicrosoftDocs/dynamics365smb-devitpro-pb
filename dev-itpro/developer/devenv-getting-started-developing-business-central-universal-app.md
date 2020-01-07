@@ -37,6 +37,6 @@ The [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](i
   
 ## See Also  
  [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-Universal-App.md)   
- [Deciding on Your Tablet and Phone Strategy](devenv-Deciding-on-Your-Tablet-and-Phone-Strategy.md)   
- [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Universal App](devenv-Differences-and-Limitations-When-Developing-Pages-for-the-Universal-App.md)   
+ [Deciding on Your Tablet and Phone Strategy](devenv-Deciding-on-Tablet-and-Phone-Strategy.md)   
+ [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Universal App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Universal-App.md)   
  <!-- [Walkthrough: Developing a Sales Rep Role Center for the Dynamics 365 Business Central Tablet Client](Walkthrough--Developing-a-Sales-Rep-Role-Center-for-the-Microsoft-Dynamics-NAV-Tablet-Client.md) -->

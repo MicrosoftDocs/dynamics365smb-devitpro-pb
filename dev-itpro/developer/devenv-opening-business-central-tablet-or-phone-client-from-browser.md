@@ -50,5 +50,5 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
     -   **ProfileID** with the ID that is assigned to the profile in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)].  
 
 ## See Also  
- [Developing for the Business Central Universal App](devenv-Developing-for-the-Universal-App.md)   
- [Introducing the Business Central Universal App](devenv-Introducing-the-Universal-App.md)
+ [Developing for the Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Introducing the Business Central Universal App](devenv-Introducing-business-central-Universal-App.md)

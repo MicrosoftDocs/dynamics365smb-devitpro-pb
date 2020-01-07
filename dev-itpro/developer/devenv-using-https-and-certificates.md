@@ -29,5 +29,5 @@ The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] can only run on an HTTPS
 >  It is recommended to only use self-signed certificates for testing purposes and never in a production environment.  
   
 ## See Also  
- [Developing for the Microsoft Dynamics NAV Universal App](devenv-Developing-for-the-Universal-App.md)   
- [Getting Started Developing for the Microsoft Dynamics NAV Universal App](devenv-Getting-Started-Developing-for-the-Universal-App.md)
+ [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Getting Started Developing for the Dynamics 365 Business Central Universal App](devenv-Getting-Started-Developing-business-central-Universal-App.md)

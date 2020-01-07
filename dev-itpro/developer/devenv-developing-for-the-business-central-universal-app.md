@@ -12,21 +12,21 @@ The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] is targeted at users in 
   
 The following list provides an overview of developing for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)].  
   
--   [Introducing the Dynamics 365 Business Central Universal App](devenv-Introducing-the-Universal-App.md)  
+-   [Introducing the Dynamics 365 Business Central Universal App](devenv-Introducing-business-central-Universal-App.md)  
   
--   [Deciding on Your Tablet and Phone Strategy](devenv-Deciding-on-Your-Tablet-and-Phone-Strategy.md)  
+-   [Deciding on Your Tablet and Phone Strategy](devenv-Deciding-on-Tablet-and-Phone-Strategy.md)  
   
--   [Getting Started Developing for the Dynamics 365 Business Central Universal App](devenv-Getting-Started-Developing-for-the-Universal-App.md)  
+-   [Getting Started Developing for the Dynamics 365 Business Central Universal App](devenv-Getting-Started-Developing-business-central-Universal-App.md)  
   
 -   [Designing for Different Screen Sizes on Tablet and Phone](devenv-Designing-for-Different-Screen-Sizes-on-Tablet-and-Phone.md)  
   
--   [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-differences-and-Limitations-When-Developing-Pages-for-the-Universal-App.md)  
+-   [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-differences-and-Limitations-Developing-Pages-business-central-Universal-App.md)  
   
 -   [Using HTTPS and Certificates](devenv-Using-HTTPS-and-Certificates.md)  
   
--   [Implementing the Camera in AL](devenv-implement-camera-in-al.md)  
+-   [Implementing the Camera in AL](devenv-implement-camera-al.md)  
   
--   [Implementing Location in AL](devenv-implementing-Location-in-AL.md)  
+-   [Implementing Location in AL](devenv-implement-Location-AL.md)  
   
 -   [Displaying Data as Tiles](devenv-lists-as-tiles.md)  
   

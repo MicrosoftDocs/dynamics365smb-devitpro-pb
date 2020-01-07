@@ -126,5 +126,5 @@ dotnet
  You can now test the modified `Customer Card` page in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] from either a tablet or a phone with a camera. To read more about different options that can be set for the camera, see [CameraOptions Overview](devenv-CameraOptions.md).  
   
 ## See Also  
- [Developing for the Business Central Universal App](devenv-Developing-for-the-Universal-App.md)   
- [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-Differences-and-Limitations-When-Developing-Pages-for-the-Universal-App.md)
+ [Developing for the Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Universal-App.md)

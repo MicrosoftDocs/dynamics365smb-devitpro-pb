@@ -35,5 +35,5 @@ When designing application pages for the [!INCLUDE[nav_tablet](includes/nav_tabl
  Using a browser you can test how your application pages will look on various device sizes. <!--For more information, see [How to: Open the Microsoft Dynamics NAV Tablet or Phone Client from a Browser](How-to-Open-the-Microsoft-Dynamics-NAV-Tablet-or-Phone-Client-from-a-Browser.md).--> When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. <!--For more information, see [Using the F12 developer tools](https://go.microsoft.com/fwlink/?LinkId=620949). Also, for more information see [Troubleshooting: Client Returns Wrong CLIENTTYPE](Troubleshooting--Client-Returns-Wrong-CLIENTTYPE.md).-->
 
 ## See Also  
- [Deciding on Your Tablet and Phone Strategy](devenv-Deciding-on-Tablet-and-Phone-Strategy.md)   
+ [Deciding on Your Tablet and Phone Strategy](devenv-Deciding-on-Your-Tablet-and-Phone-Strategy.md)   
  [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Universal App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Universal-App.md)

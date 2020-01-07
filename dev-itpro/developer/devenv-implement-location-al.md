@@ -90,6 +90,6 @@ You can now test the modified `Customer Card` page in the [!INCLUDE[nav_uni_app]
 
 ## See Also  
  [LocationOptions Overview](devenv-LocationOptions.md)   
- [Implementing the Camera in AL](devenv-implement-camera-in-al.md)    
- [Developing for the Business Central Universal App](devenv-Developing-for-the-Universal-App.md)   
- [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-Differences-and-Limitations-When-Developing-Pages-for-the-Universal-App.md)
+ [Implementing the Camera in AL](devenv-implement-camera-al.md)    
+ [Developing for the Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Universal-App.md)

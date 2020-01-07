@@ -24,5 +24,5 @@ To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] s
 >  The N\_50006.htm file must adhere to the classic.css style sheet, which you can find on the Help Server.  
   
 ## See Also  
- [Developing for the Business Central Universal App](devenv-Developing-for-the-Universal-App.md)   
- [Getting Started Developing for the Business Central Universal App](devenv-Getting-Started-Developing-for-the-Universal-App.md)
+ [Developing for the Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Getting Started Developing for the Business Central Universal App](devenv-Getting-Started-Developing-business-central-Universal-App.md)
