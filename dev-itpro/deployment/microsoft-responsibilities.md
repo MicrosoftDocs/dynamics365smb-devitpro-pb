@@ -31,4 +31,4 @@ Microsoft responsibilities in the [!INCLUDE[prodshort](../developer/includes/pro
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](Deployment.md)  
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
-[Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](../technical-support.md)  
+[Technical Support for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../technical-support.md)  

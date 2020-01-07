@@ -16,8 +16,6 @@ ms.date: 01/07/2020
 
 When you build an app for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], be it an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] or an AppSource app, you must be aware of which components and deployment steps are provided by Microsoft and which you must provide.
 
-should provide end-to-end experience for the customers, the partner designing this experience, must be able to affect and control more parts of the [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] service experience.
-
 ## Components
 
 ### Base Application
@@ -30,13 +28,13 @@ ISVs can choose to bring their own code-customized base application for several 
 
 - Shortening time-to-market (“lift and shift” approach).
 
-    The ISV's current solution is a significantly customized version of the Microsoft Dynamics NAV application and it will require substantial time and effort to migrate it into extensions. An ISV can lift their solution as-is (upgraded to a supported platform) to [!INCLUDE[[prodshort](prodshort.md)] service and start offering it to their new and prospective customers. Then, they can gradually start moving their functionality into extensions to achieve the benefits that come with the extension model.  
+    The ISV's current solution is a significantly customized version of the Microsoft Dynamics NAV application and it will require substantial time and effort to migrate it into extensions. An ISV can lift their solution as-is (upgraded to a supported platform) to [!INCLUDE[[prodshort](../developer/includes/prodshort.md)] service and start offering it to their new and prospective customers. Then, they can gradually start moving their functionality into extensions to achieve the benefits that come with the extension model.  
 - Overcoming the limitations of the current extensions framework.
 
-    Extensions today can support many scenarios and the Microsoft team is working on extending these capabilities even more. However, some customization needs of the partners are not yet possible using the current version of the extensions framework, so partners can choose to do these changes directly in the base application using C/SIDE Development Environment based on [!INCLUDE [prodshort](prodshort.md)] version 14.  
+    Extensions today can support many scenarios and the Microsoft team is working on extending these capabilities even more. However, some customization needs of the partners are not yet possible using the current version of the extensions framework, so partners can choose to do these changes directly in the base application using C/SIDE Development Environment based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version 14.  
 - Availability of 3rd party add-ins as extensions.
 
-    Some of the add-ins required by the [!INCLUDE[embedapp](embedapp.md)] might not yet be available as extensions, for the reasons mentioned above. The partner can choose to import these add-ins as FOB files into the base application that they submit with the [!INCLUDE[embedapp](embedapp.md)].  
+    Some of the add-ins required by the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] might not yet be available as extensions, for the reasons mentioned above. The partner can choose to import these add-ins as FOB files into the base application that they submit with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)].  
 - Usage of .NET interoperability and custom assemblies.
 
     ISV partners use .NET interoperability in their current application to address multiple business scenarios. Although extensions today allow a number of these scenarios to be implemented in AL, they don’t and cannot cover for all possible scenarios of .NET usage. Therefore, the partner can choose to import the required .NET add-ins into the Add-ins table of the base application, and these add-ins will automatically be deployed into the environment where they will be running.
@@ -101,7 +99,7 @@ The partner can control which third party apps can be installed for their [!INCL
 
 At this stage, within the extensions and base application, the ISV partner can work in their own Object ID range. 
 
-#### Platform version availibility
+#### Platform version availability
 
 Microsoft is going to make new versions of the [!include[prodshort](../developer/includes/prodshort.md)] platform available to [!INCLUDE [embedapp](../developer/includes/embedapp.md)] ISVs through the LCS portal. The partner will then have to pick the platform they want to use for deployment of their solution.
 
@@ -112,13 +110,5 @@ The existing deployments, running on the platform versions, which are older than
 
 ## See Also
 
-[[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md) 
-[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)   
-[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
-[Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md) 
-[[!include[prodshort](../developer/includes/prodshort.md)] Platform](embed-app-platform.md)  
-[[!include[prodshort](../developer/includes/prodshort.md)] Licensing](embed-app-licensing.md)  
-[Customer Signup](embed-app-customer-signup.md)  
-[Appsource](embed-app-appsource.md)  
-[Sandbox](embed-app-sandbox.md)  
-[Ecosystem Features](embed-app-ecosystem.md)  
+[Microsoft Responsibilities](microsoft-responsibilities.md)  
+[[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  
