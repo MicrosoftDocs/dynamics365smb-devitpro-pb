@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
+author: blrobl
 ---
 # How to: Open the Business Central Tablet or Phone Client from a Browser
 You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] by using a browser from a device that has a network connection. Opening the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser can, for example, make it easier to test your solution during the design phase. You must know the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and the HTTP port that it is running on to be able to open the client in a browser.  
@@ -29,7 +30,7 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
     |The Role Center for a specific company|*https://ComputerName:Port/WebServerInstance/tablet.aspx?company=CompanyName*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&company=CompanyName*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?company=CRONUS%20International%20Ltd.| 
     |A specific page|*https://ComputerName:Port/WebServerInstance/tablet.aspx?page=ID*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&page=ID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?page=22|  
     |A specific report|*https://ComputerName:Port/WebServerInstance/tablet.aspx?report=ID*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&report=ID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?report=8|  
-    |A specific profile|*https://ComputerName:Port/WebServerInstance/tablet.aspx?profile=ProfileID*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&profile=ProfileID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance_md.md)]/tablet.aspx?profile=Small-Business|  
+    |A specific profile|*https://ComputerName:Port/WebServerInstance/tablet.aspx?profile=ProfileID*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&profile=ProfileID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?profile=Small-Business|  
 
      Substitute the following parameters:  
 

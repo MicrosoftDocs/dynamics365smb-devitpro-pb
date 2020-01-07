@@ -7,6 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
+author: blrobl
 ---
 # Differences and Limitations When Developing Pages for the Business Central Universal App
 Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is not much different from developing for the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], or [!INCLUDE[webclient](includes/webclient.md)]. There are, however, some natural limitations on tablets and phones, such as not having a physical keyboard and mouse, as well as a smaller screen. In addition to this, there are some differences and limitations in developing pages for [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)]. The differences and limitations listed are additional to the differences and limitations that exist on the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[webclient](includes/webclient.md)].  

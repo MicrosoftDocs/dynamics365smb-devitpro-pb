@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
-
+author: blrobl
 ---
 # Troubleshooting: Client Returns Wrong CLIENTTYPE
 Running, for example, the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] simultaneously in the same browser session will return the same `CLIENTTYPE`.  

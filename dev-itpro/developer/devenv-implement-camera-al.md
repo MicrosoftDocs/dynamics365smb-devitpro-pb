@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
+author: blrobl
 ---
 # Implementing the Camera in AL
 This example illustrates how you can add access to camera to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. Adding a camera option to the `Item Card` page, for example, lets you take a picture of a specific item and store it with the item. The example implements three actions; **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality** on the `Customer Card `page, but does not include code that saves the picture to the database. For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] implementation of this, see **Incoming Documents**, for example on the Accounting Manager profile, when you use the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] on a phone.  

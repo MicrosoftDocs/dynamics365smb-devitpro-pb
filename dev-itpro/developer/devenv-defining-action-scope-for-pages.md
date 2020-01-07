@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
+author: blrobl
 ---
 # Defining Action Scope for Business Central Pages
 When developing pages for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] that include a repeater control, it is useful to be able to define whether the actions available on a page apply to the whole page or are related to the repeater control on the page.  

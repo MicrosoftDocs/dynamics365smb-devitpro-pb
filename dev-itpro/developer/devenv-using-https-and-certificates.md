@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
+author: blrobl
 ---
 # Using HTTPS and Certificates
 The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] can only run on an HTTPS protocol. To enable support for HTTPS on [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)], you must implement security certificates. Complete instructions are available from your certificate provider. We recommend that you secure the data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. For more information, see [Digital Certificates](https://go.microsoft.com/fwlink/?LinkId=509846).  
@@ -30,4 +31,4 @@ The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] can only run on an HTTPS
   
 ## See Also  
  [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
- [Getting Started Developing for the Dynamics 365 Business Central Universal App](devenv-Getting-Started-Developing-business-central-Universal-App.md)
+ [Getting Started Developing for the Dynamics 365 Business Central Universal App](devenv-getting-started-developing-business-central-universal-app.md)
