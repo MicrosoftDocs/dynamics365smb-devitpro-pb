@@ -15,12 +15,12 @@ This example illustrates how you can add access to camera to a specific page fro
 > [!IMPORTANT]  
 >  The camera access is only available on devices that run the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] and have a camera. This means that camera access is not available from the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or from a browser.  
   
-The following code will create two variables; the `CameraAvailable` variable is a **Boolean** that checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add actions to the `Customer Card` page that lets the user start the camera and write the code that is run on these actions. And finally, it will add a new trigger `Camera::PictureAvailable` to handle the incoming picture.  
+The following code will create two variables; the `CameraAvailable` variable is a **Boolean** that checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add actions to the `Customer Card` page that lets the user start the camera. Finally, the trigger `Camera::PictureAvailable` is defined to handle the incoming picture.  
 
 The following example requires that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
 ```
-pageextension 50101 CustomerCardExtension extends "Customer Card"
+pageextension 50101 ImplementCameraCustCard extends "Customer Card"
 {
 
     actions
@@ -84,12 +84,13 @@ pageextension 50101 CustomerCardExtension extends "Customer Card"
         end;
     end;
 
-    // The PictureName contains the name of the file including its extension on the device. The naming scheme depends on the device platform. The PictureFilePath contains the path to the picture in a temporary folder on the server for the current user.
-    trigger Camera::PictureAvailable(PictureName: Text; PictureFilePath: Text)
-    // Handles the picture for when the camera has captured it and it has been uploaded.
+    // The PictureName contains the name of the file including its extension on the device. 
+    // The naming scheme depends on the device platform. 
+    // The PictureFilePath contains the path to the picture in a temporary folder on the server for the current user.
+    trigger Camera::PictureAvailable(PictureName: Text; PictureFilePath: Text) handles the picture for when the camera has captured it and it has been uploaded.
     begin
         IncomingFile.Open(PictureFilePath);
-        Message('Picture size: %1', IncomingFile.LEN);
+        Message('Picture size: %1', IncomingFile.Len());
         IncomingFile.Close();
         // It is important to clean up by using the File.Erase command to avoid accumulating image files.
         File.Erase(PictureFilePath);

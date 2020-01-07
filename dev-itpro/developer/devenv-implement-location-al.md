@@ -18,7 +18,7 @@ This example illustrates how you can retrieve location information. The example 
 The following example requires that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
 ```
-pageextension 50101 CustomerCardExtension extends "Customer Card"
+pageextension 50101 ImplementLocationCustCard extends "Customer Card"
 {
     actions
     {
@@ -30,11 +30,11 @@ pageextension 50101 CustomerCardExtension extends "Customer Card"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
-                Image = Camera;
+                Image = Map;
 
                 trigger OnAction()
                 begin
-                    LocationProvider.RequestLocationAsync();
+                    Location.RequestLocationAsync();
                 end;
             }
         }
@@ -43,12 +43,13 @@ pageextension 50101 CustomerCardExtension extends "Customer Card"
 
     trigger OnOpenPage()
     begin
-        if LocationProvider.IsAvailable() then
-            LocationProvider := LocationProvider.Create();
-        LocationAvailable := true;
+        if Location.IsAvailable() then begin
+            Location := Location.Create();
+            LocationAvailable := true;
+        end;
     end;
 
-    trigger LocationProvider::LocationChanged(Location: DotNet Location)
+    trigger Location::LocationChanged(Location: DotNet Location)
     begin
         // Location.Status can be: 
         //      0 = Available 
@@ -64,7 +65,7 @@ pageextension 50101 CustomerCardExtension extends "Customer Card"
     var
         [RunOnClient]
         [WithEvents]
-        LocationProvider: DotNet LocationProvider;
+        Location: DotNet LocationProvider;
         LocationAvailable: Boolean;
 }
 

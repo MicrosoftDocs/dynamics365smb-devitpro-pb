@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics365-business-central"
 author: blrobl
 ---
-# How to: Open the Business Central Tablet or Phone Client from a Browser
+# Opening the Business Central Tablet or Phone Client from a Browser
 You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] by using a browser from a device that has a network connection. Opening the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser can, for example, make it easier to test your solution during the design phase. You must know the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and the HTTP port that it is running on to be able to open the client in a browser.  
 
 > [!IMPORTANT]  
@@ -34,7 +34,7 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
 
      Substitute the following parameters:  
 
-    -   **http** with **https** if SSL is configured for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] and the Microsoft Dynamics NAV Web Server is not configured to redirect HTTP requests to HTTPS.  
+    -   **http** with **https** if SSL is configured for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] and the [!INCLUDE[webserver](includes/webserver.md)] is not configured to redirect HTTP requests to HTTPS.  
 
     -   **ComputerName** with the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)].  
 
@@ -42,7 +42,7 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
 
     -   **WebServerInstance** with the virtual directory alias under which the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] exists on the web server. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).  
 
-    -   **TenantID** with the name of the tenant that you want to connect to. This parameter is only required when [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] is deployed in a multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance that the [!INCLUDE[nav_web](includes/nav_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](/../deployment/multitenant-deployment-architecture).  
+    -   **TenantID** with the name of the tenant that you want to connect to. This parameter is only required when [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] is deployed in a multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[server](includes/server.md)] instance that the [!INCLUDE[nav_web](includes/nav_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](/../deployment/multitenant-deployment-architecture).  
 
     -   **CompanyName** with the name of the company in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)]. This parameter is optional and is only needed if you want to open a different company than the one specified in **My Settings**.  
 
@@ -51,5 +51,5 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
     -   **ProfileID** with the ID that is assigned to the profile in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)].  
 
 ## See Also  
- [Developing for the Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
- [Introducing the Business Central Universal App](devenv-Introducing-business-central-Universal-App.md)
+ [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Introducing the Dynamics 365 Business Central Universal App](devenv-Introducing-business-central-Universal-App.md)   

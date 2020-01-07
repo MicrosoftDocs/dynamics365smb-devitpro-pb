@@ -18,7 +18,7 @@ The following list provides an overview of developing for the [!INCLUDE[nav_uni_
   
 -   [Getting Started Developing for the Dynamics 365 Business Central Universal App](devenv-getting-started-developing-business-central-universal-app.md)  
   
--   [Designing for Different Screen Sizes on Tablet and Phone](devenv-designing-different-screen-sizes-on-tablet-and-phone.md)  
+-   [Designing for Different Screen Sizes on Tablet and Phone](devenv-designing-different-screen-sizes-tablet-and-phone.md)  
   
 -   [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-differences-and-limitations-developing-pages-business-central-universal-app.md)  
   
@@ -36,7 +36,7 @@ The following list provides an overview of developing for the [!INCLUDE[nav_uni_
   
 -   [Linking to the Dynamics 365 Business Central App](devenv-link-to-universal-app.md)  
   
--   [Walkthrough: Developing a Sales Rep Role Center for the Business Central Tablet Client](devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)  
+-   [Example: Developing a Sales Rep Role Center for the Business Central Tablet Client](devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)  
   
 -   [Adding Help to the Business Central Universal App](devenv-adding-help-to-the-universal-app.md)  
   

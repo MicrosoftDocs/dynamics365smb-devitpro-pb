@@ -17,7 +17,7 @@ The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] can only run on an HTTPS
 |Mode|Credentials Type|Enforced SSL?|  
 |----------|----------------------|-------------------|  
 |[!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]|Windows authentication|**Enforced**|  
-||NavUserPassword|**Enforced**|  
+||BCUserPassword|**Enforced**|  
 |[!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser|Windows authentication|**Not enforced**<br /><br /> Only credentials are encrypted, all other communication over the network is sent in clear text. Use SSL to help secure this.|  
 ||BCUserPassword|**Not enforced**<br /><br /> Credentials in addition to all other communication over the network are sent in clear text. Use SSL to help secure this.|  
   

@@ -24,3 +24,6 @@ This section contains information to help you resolve problems using the [!INCLU
  [Troubleshooting: Client Returns Wrong CLIENTTYPE](devenv-troubleshooting-client-returns-wrong-clienttype.md)  
   
  <!-- [Troubleshooting: The Server Is Not Compatible](Troubleshooting--The-Server-Is-Not-Compatible.md) -->
+
+ ## See Also
+  [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   

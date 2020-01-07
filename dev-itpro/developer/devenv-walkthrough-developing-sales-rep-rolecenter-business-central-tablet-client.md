@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Developing a Sales Rep Role Center for the Business Central Tablet Client"
+title: "Example: Developing a Sales Rep Role Center for the Business Central Tablet Client"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -8,11 +8,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
 ---
-# Walkthrough: Developing a Sales Rep Role Center for the Business Central Tablet Client
-In this walkthrough, you will learn how to create a new Role Center for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)]. Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] occurs in the [!INCLUDE[d365_dev_long](includes/d365_dev_long_md.md)] and is not much different from developing for one of the other [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] clients. This walkthrough will concentrate on how to build a Role Center for a sales representative, which links to already existing page objects, but combined in a way so that it works well on the tablet.  
+# Example: Developing a Sales Rep Role Center for the Business Central Tablet Client
+In this example, you will learn how to create a new Role Center for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)]. Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] occurs in the [!INCLUDE[d365_dev_long](includes/d365_dev_long_md.md)] and is not much different from developing for one of the other [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] clients. This example will concentrate on how to build a Role Center for a sales representative, which links to already existing page objects, but combined in a way so that it works well on the tablet.  
 
-## About This Walkthrough  
- This walkthrough illustrates the following tasks:  
+## About This Example 
+ This example illustrates the following tasks:  
 
 -   Creating a Role Center page.  
 
@@ -23,7 +23,7 @@ In this walkthrough, you will learn how to create a new Role Center for the [!IN
 -   Testing the Role Center page.  
 
 ## Prerequisites  
- To complete this walkthrough, you will need:  
+ To complete this example, you will need:  
 
 -   [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] installed with a developer license.  
 
@@ -36,7 +36,7 @@ In this walkthrough, you will learn how to create a new Role Center for the [!IN
 ## Story  
  Simon is a partner developer working for CRONUS International Ltd. Nancy is a Sales Representative at Contoso Consulting. Simon has to build a new Role Center to support Nancy in her job. When at work, Nancy spends part of her time on the road with only her tablet available on customer visits. Nancy needs access to KPIs on the front page. She needs easy access to filter for the customers who she will visit. When at the customer site, she creates sales quotes. Simon wants to build a Role Center that can be used on a tablet and he wants to reuse as much code and as many page objects as possible.  
 
- The following example illustrates how he would do it:
+ The following code illustrates how he would do it:
 
 ```
 page 50106 "Sales Rep Role Center"
