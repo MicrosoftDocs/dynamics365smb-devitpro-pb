@@ -41,7 +41,7 @@ The CaptionML property has the following format.
 
  The following example shows a CaptionML value.  
 
- `CaptionML = DAN='Navn',DEU='Name',ESP='Nombre',FRA='Nom';`
+ `CaptionML = DEU='Name',DAN='Navn',ESP='Nombre',FRA='Nom';`
 
 In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP), and French Standard (FRA).  
 
@@ -63,22 +63,22 @@ You can enter values for the CaptionML property in two ways:
 
 ## Default Values
 
-When the CaptionML property does not include an entry for the current language used by the user in the client, then  
-1. Uses the value for the ENU entry in the CaptionML property.
-2. If there is no ENU entry, then the client will display the next language according to alphabetical order.
-3. If the CaptionML property is empty, the caption is determined by  
-The following table shows how the default caption is determined for the various objects in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
+When the CaptionML property does not include an entry for the language used in the client at runtime, then a default value for the caption string will be used according to the following: 
 
-|Object, control, or other element|Default caption|  
-|---------------------------------|---------------|  
-|Table object|Name property|  
-|Table Field|Name property|  
-|Report|Name property|  
-|XMLport|Name property|  
-|Codeunit|Name property|  
-|Menu button and menu item|Name property|  
-|Page objects and page controls (container, group, part, and field)|Name property| |Query objects|Name property|  
-|Query columns|CaptionML property of the underlying table field for the column|  
+1. If there is an `ENU` entry, then it's value.  
+2. If there is no `ENU` entry, then use the value of the language entry that is first alphabetically. For example, if the CaptionML property is set to `DEU='Name',DAN='Navn',ESP='Nombre',FRA='Nom';`, then `DAN='Navn'` would be used even though it is second in the list.  
+3. If the CaptionML property is not set, the string is determined according to the following table:
+
+    |Object, control, or other element|Default caption|  
+    |---------------------------------|---------------|  
+    |Table object|Name property|  
+    |Table Field|Name property|  
+    |Report|Name property|  
+    |XMLport|Name property|  
+    |Codeunit|Name property|  
+    |Menu button and menu item|Name property|  
+    |Page objects and page controls (container, group, part, and field)|Name property| |Query objects|Name property|  
+    |Query columns|CaptionML property of the underlying table field for the column|  
 
 ## See Also  
  [Caption Property](devenv-caption-property.md)   
