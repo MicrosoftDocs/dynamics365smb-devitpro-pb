@@ -1,8 +1,8 @@
 ---
-title: "The Tooltip property of Fields must start with 'Specifies' (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&amp;topicid=38066)."
+title: "The Tooltip property of Fields must start with 'Specifies' (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066)."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 01/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0219
-The Tooltip property of Fields must start with 'Specifies' (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&amp;topicid=38066).  
+The Tooltip property of Fields must start with 'Specifies' (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066).  
 
 ## Description
 The Tooltip property of Fields must start with 'Specifies' (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066).

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/11/2019
+ms.date: 12/20/2019
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -28,6 +28,14 @@ You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer
 For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
 
 [!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
+
+### Give powerful demos
+
+You can create a trial environment based on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content pack in [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/).  
+
+[!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
+
+For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md).  
 
 ### Managing [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
 
