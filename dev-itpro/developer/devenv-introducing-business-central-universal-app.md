@@ -22,8 +22,7 @@ The app displaying the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!I
   
  The following illustration shows the intended use of the various [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] clients.  
   
- ![Illustrates the different NAV clients available](../media/Client_DifferentDisplayTargetsIllustration.png "Client\_DifferentDisplayTargetsIllustration")  
-<!--This needs new image!!-->
+ ![Illustrates the different NAV clients available](../media/Client_DifferentDisplayTargetsIllustration.png "Client\_DifferentDisplayTargetsIllustration") 
   
  As illustrated, the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] do not replace the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or [!INCLUDE[nav_web](includes/nav_web_md.md)]. Instead, they offer a touch interface for a limited set of application scenarios compared to the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_web](includes/nav_web_md.md)]. The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_web](includes/nav_web_md.md)] support more complex business processes and heavier data entry than is possible on the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)].  
   

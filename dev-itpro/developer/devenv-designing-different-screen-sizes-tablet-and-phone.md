@@ -14,7 +14,6 @@ When designing application pages for the [!INCLUDE[nav_tablet](includes/nav_tabl
 
  In many cases, end-users will have access to a broad range of devices having different screen sizes and resolutions. End-users may have one device at work, and a different device at home, and expect the experience on both devices to be equally good. A good way to identify issues on how your application pages will look is to test on the smallest supported screen size. Currently tablet sizes start in the 7” range and phones range from 3” up to just below 7”. There are certain requirements for running the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on tablets and phones. For more information, see [System Requirements for Business Central](../deployment/system-requirement-business-central.md).  
 
-<!--we also need images here!-->
  ![Various sizes of screens](media/TabletPhone_DifferentScreenSizes.png "TabletPhone\_DifferentScreenSizes")  
 
 ## Form Factor Considerations  
@@ -33,7 +32,8 @@ When designing application pages for the [!INCLUDE[nav_tablet](includes/nav_tabl
 |Document Pages|-   CardPage Factbox with up to 15 fields<br />-   2 CardPage Factboxes with up to 6 fields each<br />-   Activities Factboxes with 4 tiles in 1 group, or 2 groups together with 2 tiles|  
 
 ### Testing Using a Browser  
- Using a browser you can test how your application pages will look on various device sizes. <!--For more information, see [How to: Open the Microsoft Dynamics NAV Tablet or Phone Client from a Browser](How-to-Open-the-Microsoft-Dynamics-NAV-Tablet-or-Phone-Client-from-a-Browser.md).--> When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. <!--For more information, see [Using the F12 developer tools](https://go.microsoft.com/fwlink/?LinkId=620949). -->
+ Using a browser you can test how your application pages will look on various device sizes. For more information, see [Opening the Business Central Tablet or Phone Client from a Browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md)  
+  . When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. <!--For more information, see [Using the F12 developer tools](https://go.microsoft.com/fwlink/?LinkId=620949). -->
  Also, for more information see [Troubleshooting: Client Returns Wrong CLIENTTYPE](devenv-troubleshooting-client-returns-wrong-clienttype.md).
 
 ## See Also  
