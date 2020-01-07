@@ -78,7 +78,7 @@ In this `Hello World` example, we are going over the basic steps required to ret
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with AAD authentication.
 
 1. First, in Postman, set up a `GET` call to the base API URL.
-    - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<environmnet name>/api/v1.0`
+    - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<environment name>/api/v1.0`
 2. On the **Authorization** tab in Postman select **OAuth 2.0** in the **Type** and then choose **Get New Access Token**. 
 3. In the **GET NEW ACCESS TOKEN** window, enter the following information as specified below:
     - In the **Token name** field, choose a descriptive name.
