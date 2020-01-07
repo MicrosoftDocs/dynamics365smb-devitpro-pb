@@ -17,7 +17,7 @@ ms.date: 01/07/2020
 If you as an ISV are interested in developing an app that meets the description of [!INCLUDE[embedapp](../developer/includes/embedapp.md)] in [Embed App Overview](embed-app-overview.md), your app must meet qualification requirements. The main criteria for [!INCLUDE[embedapp](../developer/includes/embedapp.md)] onboarding at this point are:
 
 - Partner must provide all day, every day support. Their customers do not get to call Microsoft support. They always call the partner.  
-- Partner must live up to the standards for user assistance and documentation that are outlined in [[!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model](../user-assistance.md). Good user assistance is part of [!INCLUDE[embedapp](../developer/includes/embedapp.md)] success and uptake, and it also lowers the work load on their support center.  
+- Partner must live up to the standards for user assistance and documentation that are outlined in [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] User Assistance Model](../user-assistance.md). Good user assistance is part of [!INCLUDE[embedapp](../developer/includes/embedapp.md)] success and uptake, and it also lowers the work load on their support center.  
 - Partner is committed to stay on the supported platform.  
 - Partner provides an SLA for requests from Microsoft towards the partner  
 - Partners must have a support agreement with Microsoft  

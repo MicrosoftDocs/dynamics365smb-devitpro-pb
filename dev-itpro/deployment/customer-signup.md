@@ -3,7 +3,6 @@ title: "Trials and Sign-ups for Business Central online"
 author: edupont04
 
 ms.custom: na
-ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
