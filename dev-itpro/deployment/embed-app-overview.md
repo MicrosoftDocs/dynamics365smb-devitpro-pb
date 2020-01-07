@@ -29,16 +29,10 @@ An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] refers to what is bei
 
 ## See Also
 
-[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)  
+[Microsoft Responsibilities](microsoft-responsibilities.md)  
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
-[[!include[prodshort](../developer/includes/prodshort.md)] Components](embed-app-components.md)  
-[[!include[prodshort](../developer/includes/prodshort.md)] Platform](embed-app-platform.md)  
-[[!include[prodshort](../developer/includes/prodshort.md)] Licensing](embed-app-licensing.md)  
-[Customer Signup](embed-app-customer-signup.md)  
-[Appsource](embed-app-appsource.md)  
-[Sandbox](embed-app-sandbox.md)  
-[Ecosystem Features](embed-app-ecosystem.md)  
+[Components and Capabilities](app-components.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](Deployment.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Administration of Business Central On-Premises](../administration/Administration.md)  

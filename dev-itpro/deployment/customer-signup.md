@@ -24,7 +24,7 @@ For more information, see [Preparing Demonstration Environments of [!INCLUDE[pro
 
 ## Sign up for Embed Apps
 
-There are two ways for a customer (tenant, organization) to subscribe to an [!INCLUDE[embedapp](../developer/includes/embedapp.md)]:
+[!INCLUDE[embedapp](../developer/includes/embedapp.md)] is a term that defines an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry. Partners who support an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on p[!INCLUDE [prodshort](../developer/includes/prodshort.md)] online can onboard customers in two ways:
 
 - Using the self-service IW signup – for acquiring a free evaluation version of the app.  
 - Through the Microsoft Partner Center Cloud Solution Provider (CSP) program by contacting the partner - for acquiring a paid production version of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)].
@@ -33,7 +33,7 @@ Tenant provisioning is happening automatically (just-in-time) on the first attem
 
 Navigating to `https://businesscentral.dynamics.com` will trigger provisioning of the Business Central tenant, while navigating to `https://[application name].bc.dynamics.com` will trigger provisioning of the tenant running on the *application name* application.  
 
-### Self Service (IW) sign-up - evaluation 
+### Self Service (IW) sign-up - evaluation
 
 The partner can allow customers to use the self-service sign-up (also known as IW signup and viral signup) for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)]. To give customers self-service signup capability, the partner should prepare a signup URL that will redirect the Office signup flow to their application URL. The signup URL should have the following format:
 

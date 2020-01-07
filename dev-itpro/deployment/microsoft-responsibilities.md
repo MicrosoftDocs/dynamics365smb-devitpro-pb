@@ -1,0 +1,34 @@
+---
+title: "Microsoft's Responsibilities for Apps on Business Central online"
+author: jswymer
+
+ms.custom: na
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+ms.author: jswymer
+ms.date: 01/07/2020
+---
+
+# Microsoft Responsibilities Apps on Business Central online
+
+[!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is a cloud service for small to medium-sized businesses that is built on and for Microsoft Azure. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] brings together the business management solution, business intelligence, infrastructure, computing, and database services in a single offering that enables organizations to run horizontal or industry-specific apps from Independent Software Vendors (ISVs), without the hassle of managing infrastructure.
+
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online model distinguishes specific roles and responsibilities for ISVs, Implementation Partners (VARs), and Microsoft throughout the life cycle of the service. Microsoft maintains the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service by deploying, actively monitoring, and servicing the customers’ production tenants that are running on the service. This includes allocating the required system infrastructure to run the service and proactively communicating to customers about the service’s health (which is done through the Service Health dashboard in the Office 365 Admin Portal).
+
+Microsoft responsibilities in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service include:
+
+|Area|Responsibilities|
+|----|----------------|
+|Infrastructure|<ul><li>Storage and database capacity management</li><li>High availability and disaster recovery</li><li>Platform security and compliance</li><li>Infrastructure capacity, scaling in response to demand </li><li>Infrastructure management and deployment</li><li>Data center networking, power, and cooling</li></ul>| 
+|Application Platform|<ul><li>Availability and security</li><li>Diagnostics, patches, updates, hotfixes, and updates</li><li>Monitoring and first line support for ISVs</li></ul>| 
+|Lifecyle Services portal|<ul><li>Development, deployment, and support of the portal functionality</li><li>High availability and disaster recovery</li><li>Monitoring, updating and patching</li><li>First line support for ISVs</li></ul>|  
+
+## See Also
+
+[Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](Deployment.md)  
+[Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
+[Administration of Business Central Online](../administration/tenant-administration.md)  
+[Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](../technical-support.md)  

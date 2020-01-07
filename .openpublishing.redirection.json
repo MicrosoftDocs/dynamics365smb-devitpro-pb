@@ -5104,6 +5104,21 @@
     "source_path": "dev-itpro/deployment/embed-app-customer-signup.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods/devenv-handlerfunctions-attribute",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-components.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/deployment/app-components",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-platform.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/deployment/app-components#platform",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-microsoft-responsibilities.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/deployment/microsoft-responsibilities",
+    "redirect_document_id": false
    }
   ]
 }
