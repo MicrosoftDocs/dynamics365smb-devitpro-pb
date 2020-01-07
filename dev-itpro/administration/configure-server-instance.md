@@ -162,9 +162,15 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |-------|--------|-------------------------------------------------------------------|  
 |Enable SOAP Services|SOAPServicesEnabled|Specifies whether SOAP web services are enabled for this [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
 |Enable SSL|SOAPServicesSSLEnabled|Specifies whether SSL \(https\) is enabled for the SOAP web service port. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
+|Max Connections|SOAPMaxConnections|Specifies the maximum number of simultaneous SOAP requests on the server instance (for all tenants). When the limit is exceeded, an error occurs. If you do not want a limit, set the value **0**.<br /><br /> Default: 0<br />Dynamically Updatable: Yes|  
+|Max Connections Per Tenant|SOAPMaxConnectionsPerTenant|Specifies the maximum number of simultaneous SOAP requests per tenant. When the limit is exceeded, an error occurs. If you do not want a limit, set the value **0**.<br /><br /> Default: 0<br />Dynamically Updatable: Yes|  
+|Port|SOAPServicesPort|The listening HTTP port for SOAP web services.<br /><br /> Valid range: 1 - 65535<br /> Default: 7047<br />Dynamically Updatable: No|  
+|SOAP Base URL|PublicSOAPBaseUrl|Specifies the maximum number of simultaneous SOAP requests on the server instance (for all tenants). When the limit is exceeded, an error occurs. If you do not want a limit, set the value 0.
 |Max Message Size|SOAPServicesMaxMsgSize|The maximum permitted size of a SOAP web services request, in kilobytes.<br /><br /> **Important:** This setting also pertains to OData web services.<br /><br /> Default: 1024<br />Dynamically Updatable: No|  
 |Port|SOAPServicesPort|The listening HTTP port for SOAP web services.<br /><br /> Valid range: 1 - 65535<br /> Default: 7047<br />Dynamically Updatable: No|  
 |SOAP Base URL|PublicSOAPBaseUrl|Specifies the root of the URLs that are used to access SOAP web services. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br /> http\[s\]://*hostname*:*port*/*instance*/WS/<br /><br /> This field maps to the `PublicSOAPBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The SOAP URL for the server instance<br />Dynamically Updatable: No|  
+|Timeout|SOAPServicesOperationTimeout|Specifies the maximum amount of time that the server can allocate to a single SOAP request. When the limit is exceeded, a timeout error occurs.<br /><br />Time span format: hh:mm:ss<br /><br />
+If you do not want a timeout, set the value to **MaxValue**.<br /><br />Default: 00:10:00<br />Dynamically Updatable: Yes|  
 
 ##  <a name="ODataServices"></a> OData Services Settings
   
