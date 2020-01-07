@@ -43,26 +43,30 @@
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
-<!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Administration of Business Central Online](administration/tenant-administration.md)
-### [Preparing Demonstration Environments](administration/demo-environment.md)
 ### [Technical Support of Business Central](technical-support.md)
+### Onboard your customers
+#### [Trials and Sign-ups](deployment/customer-signup.md)
+<!-- #### Do cool demos -->
+<!-- #### Partner Center stuff -->
+<!-- Performance tests-->
 ### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-### Embed App
-#### [Embed App Overview](deployment/embed-app-overview.md)
+### Build apps for Business Central
+<!--#### What the partner's responsibilities are -->
+<!--#### How Microsoft runs the service -->
 #### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)
-#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-#### [Components](deployment/embed-app-components.md)
-#### [Platform](deployment/embed-app-platform.md)
+#### [Microsoft's Platform](deployment/embed-app-platform.md)
+#### Embed Apps
+##### [Embed App Overview](deployment/embed-app-overview.md)
+##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+##### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+<!--#### [Components](deployment/embed-app-components.md)
 #### [Licensing](deployment/embed-app-licensing.md)
-#### [Customer Sign-up](deployment/embed-app-customer-signup.md)
 #### [AppSource](deployment/embed-app-appsource.md)
 #### [Sandbox](deployment/embed-app-sandbox.md)
-#### [Ecosystem Features](deployment/embed-app-ecosystem.md)
+#### [Ecosystem Features](deployment/embed-app-ecosystem.md)-->
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)

@@ -38,8 +38,6 @@ When you onboard customers to [!INCLUDE [prodshort](../developer/includes/prodsh
 
 You can create a trial environment based on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content pack in [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/).  
 
-[!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
-
 For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md).  
 
 [!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
@@ -48,3 +46,4 @@ For more information, see [Preparing Demonstration Environments of [!INCLUDE[pro
 
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
+[Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  

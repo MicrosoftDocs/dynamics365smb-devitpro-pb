@@ -5099,6 +5099,11 @@
     "source_path": "dev-itpro/developer/properties/devenv-methodtype-property-test-codeunits.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods/devenv-handlerfunctions-attribute",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-customer-signup.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods/devenv-handlerfunctions-attribute",
+    "redirect_document_id": false
    }
   ]
 }
