@@ -79,10 +79,9 @@ When this step is completed, you can proceed to update your Business Central sol
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
         ```powershell 
-        Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>
+        Get-NAVAppInfo -ServerInstance <server instance name>
         ``` 
 
-        For a multitenant deployment, replace `<tenant ID>` with the ID of the tenant. For a single-tenant deployment, set `<tenant ID>` to `default`. 
     2. Uninstall the extensions.
     
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
@@ -164,7 +163,13 @@ In addition, to ensure that the existing published extensions work on the new pl
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>"
     ```
-        
+
+    For example:
+
+    ```powershell
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (15-0)"
+    ```
+
     When completed, a message like the following displays in the console:
 
     ```
@@ -174,6 +179,13 @@ In addition, to ensure that the existing published extensions work on the new pl
     DatabaseLocation    :
     Collation           :
     ```
+
+    > [!NOTE]
+    > Depending on the update that you are installing, you might get a message similar to the following:
+    >
+    > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database’s application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
+    >
+    > This is not an error, and you can continue installing the update. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens update does not make any schema changes to the system tables.
 
 ## Connect server instance to database
 
