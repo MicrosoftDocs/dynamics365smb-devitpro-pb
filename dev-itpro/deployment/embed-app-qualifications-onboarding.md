@@ -38,5 +38,5 @@ The rest of the information will be included with the [!INCLUDE[embedapp](../dev
 ## See Also
 
 [Embed App Overview](embed-app-overview.md)  
-[Microsoft Responsibilities Concerning EmbedApp](embed-app-microsoft-responsibilities.md)  
+[Microsoft Responsibilities](microsoft-responsibilities.md)  
 

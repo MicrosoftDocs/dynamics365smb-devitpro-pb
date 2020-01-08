@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 01/07/2020
+ms.date: 01/08/2020
 ---
 
 # Components and Capabilities
@@ -44,6 +44,23 @@ Microsoft recommends all ISV’s to move towards a model where the code-customiz
 ### Platform
 
 [!INCLUDE [msft-platform](../developer/includes/msft-platform.md)]
+
+## Ecosystem
+
+[!include[prodshort](../developer/includes/prodshort.md)] online is part of a rich ecosystem of other Microsoft and 3rd party services, which partners and customers can decide to take advantage of.  
+
+The following integration capabilities of the [!include[prodshort](../developer/includes/prodshort.md)] can be considered:
+
+- Microsoft Graph – [evaluating]  
+- Dynamics 365 API endpoint (aka native API) – available if the base application objects are unchanged  
+- Microsoft Office Outlook Add-in - available  
+- Microsoft Power BI – available (using the customer's own Power BI license)  
+- Microsoft Power Automate – available (using the customer's own Power Automate license)  
+- Microsoft Power Apps – available  
+- Microsoft Apps included with [!include[prodshort](../developer/includes/prodshort.md)] (Yodlee, Quick Books, OCR, AMC...) - available, but the partner needs to setup his own agreement with these service providers (if needed)  
+- Azure ML – available via partner's own Azure ML subscription  
+- CDS/CRM integration (with Dynamics 365 Sales) – pending CDS/CRM decision (Microsoft)  
+- Accountant Hub - available (if available in your country or region)  
 
 ## Embed Apps
 

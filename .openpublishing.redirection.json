@@ -5119,6 +5119,26 @@
     "source_path": "dev-itpro/deployment/embed-app-microsoft-responsibilities.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/deployment/microsoft-responsibilities",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-licensing.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/deployment/licensing",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-appsource.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/appsource",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-sandbox.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-sandbox-overview",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/deployment/embed-app-ecosystem.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/deployment/app-components",
+    "redirect_document_id": false
    }
   ]
 }

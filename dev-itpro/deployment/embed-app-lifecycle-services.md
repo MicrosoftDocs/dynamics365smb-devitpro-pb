@@ -42,14 +42,3 @@ In the upcoming updates, we will keep introducing more features and services for
 ## See Also
 
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  
-[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)  
-[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
-[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
-[Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
-[[!include[prodshort](../developer/includes/prodshort.md)] Components](embed-app-components.md)  
-[[!include[prodshort](../developer/includes/prodshort.md)] Platform](embed-app-platform.md)  
-[[!include[prodshort](../developer/includes/prodshort.md)] Licensing](embed-app-licensing.md)  
-[Customer Signup](embed-app-customer-signup.md)  
-[Appsource](embed-app-appsource.md)  
-[Sandbox](embed-app-sandbox.md)  
-[Ecosystem Features](embed-app-ecosystem.md)  

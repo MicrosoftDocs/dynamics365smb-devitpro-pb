@@ -44,19 +44,21 @@
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Technical Support of Business Central](technical-support.md)
 ### Onboard your customers
 #### [Trials and Sign-ups](deployment/customer-signup.md)
 <!-- #### Do cool demos -->
 <!-- #### Partner Center stuff -->
 <!-- Performance tests-->
-### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+#### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+#### [Technical Support of Business Central](technical-support.md)
 ### Build apps for Business Central
 <!--#### What the partner's responsibilities are -->
 <!--#### How Microsoft runs the service -->
 #### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 #### [Components and Capabilities](deployment/app-components.md)
+#### [Licensing in Dynamics 365 Business Central](deployment/licensing.md)
+#### [Add your App to AppSource](administration/appsource.md)
 #### Embed Apps
 ##### [Embed App Overview](deployment/embed-app-overview.md)
 ##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
