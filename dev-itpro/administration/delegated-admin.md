@@ -46,7 +46,7 @@ Delegated administrators are not visible in the customer's Azure AD user list an
 
 If a customer removes delegated permissions to you, you are still be able to manage their subscription from the Partner Center, such as adding or removing licenses for their subscription, but you will no longer be able to log into and manage their Business Central environment, Azure AD, and other services. You will also not be able to manage their users (add/remove/assign licenses) from the **Customer** page in the Partner Center.  
 
-## Managing delegated permissions  as an internal administrator
+## Managing delegated permissions as an internal administrator
 
 As a Microsoft customer organization, you can have multiple partners registered as their resellers. It is not unusual for a single organization to use one partner as the delegated admin for their Office 365 subscription and another for Business Central. However, as soon as the delegated administration right is granted in the Microsoft 365 admin center, you cannot restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
 

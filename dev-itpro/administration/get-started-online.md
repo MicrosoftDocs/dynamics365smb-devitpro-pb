@@ -59,6 +59,7 @@ When you onboard customers to [!INCLUDE [prodshort](../developer/includes/prodsh
 ### Connect with customers
 
 [!INCLUDE [csp-connect-customer](../developer/includes/csp-connect-customer.md)]
+[!INCLUDE [csp-disconnect-customer](../developer/includes/csp-disconnect-customer.md)]
 
 ### Give powerful demos
 
