@@ -23,15 +23,17 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisite
 
-1. Upgrade to latest Business Central Spring 2019 cumulative update (version 14.X).
+1. Upgrade to Business Central Spring 2019 (version 14).
 
-    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
+   There are several updates for version 14. If you are upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend that you upgrade to the latest update for version 14 that has a compatible update for version 15. If your solution is already on version 14, then you do not have to upgrade to the latest version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-    For information about how to perform the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
+   To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
-## Task 1: Install Business Central version 15
+   For information about how to perform the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
-1. Download the latest update for Business Central 2019 release wave 2.
+## Task 1: Install Business Central (version 15)
+
+1. Download the latest available update for Business Central 2019 version 15 that is compatible with your version 14.
 
     To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706)
   
@@ -188,7 +190,7 @@ Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <n
 For example:
 
 ```
-Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.1.38071 -Force
+Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.1.38071.0 -Force
 ```
 
 Later in this article, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database.
