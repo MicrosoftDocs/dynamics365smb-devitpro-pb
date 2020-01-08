@@ -150,7 +150,8 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName DatabaseName -KeyValue "<database name>"
     ```
     In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
-2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
+
+2. Configure the server instance for migrating extensions by setting the `DestinationAppsForMigration` key.
 
     ```
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
