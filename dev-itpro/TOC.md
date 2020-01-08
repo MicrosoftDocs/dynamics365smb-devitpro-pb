@@ -63,10 +63,6 @@
 ##### [Embed App Overview](deployment/embed-app-overview.md)
 ##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 ##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-##### [Licensing](deployment/embed-app-licensing.md)
-##### [AppSource](deployment/embed-app-appsource.md)
-##### [Sandbox](deployment/embed-app-sandbox.md)
-##### [Ecosystem Features](deployment/embed-app-ecosystem.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
