@@ -22,6 +22,32 @@ If you want to build your business on [!INCLUDE [prodlong](../developer/includes
 
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
+### Add users from your own organization
+
+In most cases, your partner company includes employees with different responsibilities, and you can assign different roles depending on people's responsibility. This way, you can be very explicit about who from your staff can access your customers' data, for example.
+
+For each user you can assign permissions for 2 categories of tasks: 
+
+- Managing your organization's account
+
+  This controls access to the functionality of the Partner Center portal
+- Assisting your customers
+
+  This controls access to your customers' environments
+
+When you add a user from your organization, and you choose the **Assists your customers as** field, you must specify the relevant role for this user to be able to login in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environments, *Admin agent* or *Helpdesk agent*.  
+
+These users can manage implementation, support, and troubleshooting tasks for your customers. Once the reseller relationship with a customer is established, they will be able to login into the p[!INCLUDE [prodshort](../developer/includes/prodshort.md)] environments of the customer without a license. The number of partner users that can access customer environments is not restricted.  
+
+This way of accessing customer resources is called *delegated administration*, and the partner users are therefore called *delegated administrators* or *delegated admins* in daily shorthand.  
+
+Both roles will provide your users with exactly the same level of access to the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment. However, they have very different capabilities to manage the customer's Active Directory and other subscriptions that the customer might have. For more information, see [Admin roles](/office365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).  
+
+> [!NOTE]
+> These users cannot provide accounting services for the customers. For this purpose, the customers must use the **External Accountant** license which is also available via CSP.  
+
+In the Microsoft 365 admin center and Microsoft Azure Management portal, customers and partners can invite external users (guests) into the Active Directory. When a partner user is added as a guest to the customer's Azure AD, they no longer can log in as a delegated admin into the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. In order to log in, the local user (guests or native) must have a valid [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license assigned to them.  
+
 ## Join the Ready to Go program
 
 The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [Ready to Go](../developer/readiness/readiness-ready-to-go.md).  
@@ -47,3 +73,4 @@ For more information, see [Preparing Demonstration Environments of [!INCLUDE[pro
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
+[Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
