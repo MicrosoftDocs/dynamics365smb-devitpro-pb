@@ -43,7 +43,7 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
 4. In the **Service Management** section, choose the **Dynamics 365 Business Central** link.
 
-    This opens The [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: *[https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin](https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin)*
+    This opens the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: *[https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin](https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin)*
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create new production and sandbox environments for the test customer.
 
