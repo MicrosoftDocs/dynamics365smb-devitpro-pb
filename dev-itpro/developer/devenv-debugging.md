@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 01/08/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -24,6 +24,7 @@ There are a number of limitations to be aware of:
 
 - "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
 - The debugger launches a new client instance each time you press F5. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
+- Pausing the debugging session is not supported.
 
 > [!TIP]  
 > To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
