@@ -45,4 +45,4 @@ Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLU
  [Implementing the Camera in AL](devenv-implement-camera-al.md)     
  [Implementing the Location in AL](devenv-implement-location-al.md)  
   <!-- [Developing for the Dynamics 365 Business Central Web Client](Developing-for-the-Microsoft-Dynamics-NAV-Web-Client.md)    -->
- <!-- [Role Center Behaviors](Role-Center-Behaviors.md)    -->
+[Role Center Behaviors](devenv-Role-Center-Behaviors.md)
