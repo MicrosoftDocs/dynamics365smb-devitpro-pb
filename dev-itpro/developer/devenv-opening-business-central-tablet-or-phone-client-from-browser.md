@@ -42,7 +42,7 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
 
     -   **WebServerInstance** with the virtual directory alias under which the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] exists on the web server. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).  
 
-    -   **TenantID** with the name of the tenant that you want to connect to. This parameter is only required when [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] is deployed in a multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[server](includes/server.md)] instance that the [!INCLUDE[nav_web](includes/nav_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](/../deployment/multitenant-deployment-architecture).  
+    -   **TenantID** with the name of the tenant that you want to connect to. This parameter is only required when [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] is deployed in a multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[server](includes/server.md)] instance that the [!INCLUDE[nav_web](includes/nav_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](../deployment/multitenant-deployment-architecture.md).  
 
     -   **CompanyName** with the name of the company in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)]. This parameter is optional and is only needed if you want to open a different company than the one specified in **My Settings**.  
 
