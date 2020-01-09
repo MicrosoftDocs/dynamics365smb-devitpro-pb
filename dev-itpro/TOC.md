@@ -106,8 +106,8 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
+### [Preparing Test Environments](administration/test-environment.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
-#### [Preparing Test Environments](administration/test-environment.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)

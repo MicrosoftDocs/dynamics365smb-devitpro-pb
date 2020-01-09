@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 01/08/2020
+ms.date: 01/09/2020
 ms.author: edupont
 ---
 
 # Delegated Administrator Access to Business Central Online
 
-As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups, Admin Agents and Helpdesk Agents, in the partner's Azure AD tenant that are used for *delegated administration*. When a customer grants the delegated administration privilege to a partner:
+As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups, Admin Agents and Helpdesk Agents, in the partner's Azure Active Directory (Azure AD) tenant that are used for *delegated administration*. When a customer grants the delegated administration privilege to a partner:
 
 - The **Admin Agent** group is assigned to the **Global Administrator** role in the customer's Azure AD tenant.  
 - The **Helpdesk Agent** group is assigned to the **Helpdesk Administrator** role in the customer's Azure AD tenant.  
@@ -24,7 +24,7 @@ Based on the roles assigned, members of both groups can sign in to the customer'
 For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 > [!TIP]
-> Always include the domain or the Azure Active Directory ID of the customer in the URL when you login as a *delegated admin*. This way, you always know exactly which customer you are trying to access.
+> Always include the domain or the Azure Active Directory ID of the customer in the URL when you login as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso/admin`. This way, you always know exactly which customer you are trying to access.
 
 ## Restricted access to Business Central as delegated administrator
 
@@ -51,11 +51,11 @@ If a customer removes delegated permissions to you, you are still be able to man
 
 ## Managing delegated permissions as an internal administrator
 
-As a Microsoft customer organization, you can have multiple partners registered as their resellers. It is not unusual for a single organization to use one partner as the delegated admin for their Office 365 subscription and another for Business Central. However, as soon as the delegated administration right is granted in the Microsoft 365 admin center, you cannot restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
+As a Microsoft customer organization, you can have multiple partners registered as your resellers. It is not unusual for a single organization to use one partner as the delegated admin for their Office 365 subscription and another for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], for example. However, as soon as the delegated administration right is granted in the [Microsoft 365 admin center](/office365/admin/admin-overview/about-the-admin-center), you cannot restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
 
 If you do not need delegated admin help continuously, you can restrict access for the partner users into your environment. There are two approaches that you can use to restrict delegated admin access to a Business Center environment:  
 
-- Disable a specific delegated admin user within the Business Central environment. For more information see [How to remove a user's access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system).  
+- Disable a specific delegated admin user within the p[!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment. For more information see [How to remove a user's access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system).  
 - Revoke delegated administration rights from all partner users at once in the Microsoft 365 admin center, without breaking the reseller relationship with the partner.  
 
 In the Microsoft 365 admin center, internal administrators can find information about their partner relationships in the Settings/Partner Relationship menu. On the same page, you can remove delegated permissions from the partner, to restrict their access to Business Central and other services, while still keeping the reseller relationship with them.  

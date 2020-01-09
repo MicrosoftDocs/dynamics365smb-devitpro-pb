@@ -4,4 +4,4 @@ When the customer's internal administrator receives the invitation link and navi
 
 When a customer accept this reseller relationship, delegated administration privileges are granted to the partner. For more information, see [Delegated Administrator Access to Business Central Online](../../administration/delegated-admin.md).
 
-If you are working as an indirect reseller, your distributor or direct bill partner must [associate your customers with you in their Partner Center](/partner-center/indirect-provider-tasks-in-partner-center#add-new-customers-and-associate-them-with-indirect-resellers).  
+If you are working as an indirect reseller, your distributor (direct bill partner) must [associate your customers with you in their Partner Center](/partner-center/indirect-provider-tasks-in-partner-center#add-new-customers-and-associate-them-with-indirect-resellers).  

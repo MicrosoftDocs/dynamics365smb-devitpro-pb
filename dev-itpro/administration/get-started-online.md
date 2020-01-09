@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 01/06/2020
+ms.date: 01/08/2020
 ms.author: edupont
 ---
 
 # Get Started as a Reseller of Business Central Online
 
-If you want to build your business on [!INCLUDE [prodlong](../developer/includes/prodlong.md)] online, you must get set up as a reseller in the Microsoft Partner Center. We also recommend that you [The “Ready to Go” Program](../developer/readiness/readiness-ready-to-go.md).  
+If you want to build your business on [!INCLUDE [prodlong](../developer/includes/prodlong.md)] online, you must get set up as a reseller in the Microsoft Partner Center. We also recommend that you join [The “Ready to Go” Program](../developer/readiness/readiness-ready-to-go.md).  
 
 ## Get set up in the Partner Center
 

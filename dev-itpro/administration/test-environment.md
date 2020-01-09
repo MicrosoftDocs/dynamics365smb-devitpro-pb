@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/11/2019
+ms.date: 01/09/2019
 ---
 # Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -64,4 +64,5 @@ The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment is cr
 [Managing Environments](tenant-admin-center-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
+[Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  
