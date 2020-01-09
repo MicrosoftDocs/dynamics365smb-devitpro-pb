@@ -14,7 +14,7 @@ When designing application pages for the [!INCLUDE[nav_tablet](includes/nav_tabl
 
  In many cases, end-users will have access to a broad range of devices having different screen sizes and resolutions. End-users may have one device at work, and a different device at home, and expect the experience on both devices to be equally good. A good way to identify issues on how your application pages will look is to test on the smallest supported screen size. Currently tablet sizes start in the 7” range and phones range from 3” up to just below 7”. There are certain requirements for running the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on tablets and phones. For more information, see [System Requirements for Business Central](../deployment/system-requirement-business-central.md).  
 
- ![Various sizes of screens](media/TabletPhone_DifferentScreenSizes.png "TabletPhone\_DifferentScreenSizes")  
+ ![Various sizes of screens](media/screen_sizes.PNG)  
 
 ## Form Factor Considerations  
  Users can scroll the content area of the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a tablet to access all data for a given page. However, some elements of the screen, for example, the app bar cannot be scrolled. The app bar is the blue area of [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] and it is designed to provide easy access to important information and tasks that the user should not lose sight of when scrolling. The static elements will display only as much data as they can reasonably fit on the screen. Developers should design to make sure that the important static elements are displayed first so that these will be shown even on the smallest, available devices.  
