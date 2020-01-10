@@ -21,7 +21,8 @@ Business Central artifacts (Reports, Pages, SOAP, and OData) now can get access 
 
     The [Editable property](devenv-editable-property.md) must be set to **false**.
 
-- Reports  
+- Query
+- Reports 
 
 ## Property Value
 
