@@ -13,7 +13,7 @@ author: jswymer
 
 # DataAccessIntent Property
 
-Business Central artifacts (Reports, Pages, SOAP, and OData) now can get access to a read-only replica of the database. Sets whether the page is ReadWrite or ReadOnly.
+Sets whether the objects database access intent for the objects  now can get access to a read-only replica of the database. Sets whether the page is ReadWrite or ReadOnly.
 
 ## Applies To  
 
@@ -42,7 +42,9 @@ DataAccessIntent = ReadOnly|ReadWrite;
 
 ## Remarks  
 
-This property works as a hint for the server, which will connect to the secondary replica if possible. When a workload is executed against the replica, insert/delete/modify operations are not possible, so a new validation is introduced for ReadOnly objects – any of these operations will throw an exception at runtime (new compile-time validation will be added in the future). 
+This property works as a hint for the server, which will connect to the secondary replica if possible. When a workload is executed against the replica, insert/delete/modify operations are not possible, so a new validation is introduced for ReadOnly objects – any of these operations will throw an exception at runtime (new compile-time validation will be added in the future). Objects that are only read from the database can utilize replicas.S
+
+From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
 ## See Also  
 
