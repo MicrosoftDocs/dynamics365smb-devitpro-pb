@@ -13,7 +13,7 @@ author: jswymer
 
 # DataAccessIntent Property
 
-Sets whether the data that is accessed from a read-only replica of the database.
+Sets whether to access data for the object from a read-only replica of the database or the primary database.
 
 ## Applies To  
 
@@ -30,11 +30,9 @@ The following table describes the property values.
 
 |  Value  |  Description  |
 |---------|---------------|  
-|**ReadOnly**||  
-|**ReadWrite**||  
+|**ReadOnly**|Specifies to access data from a read-only replica.|  
+|**ReadWrite**|Specifies to access data from the primary database.|  
   
-
-
 ## Syntax
 ```
 DataAccessIntent = ReadOnly|ReadWrite;
@@ -42,7 +40,7 @@ DataAccessIntent = ReadOnly|ReadWrite;
 
 ## Remarks  
 
-This property applies to works as a hint for the server, which will connect to the secondary replica if possible. When a workload is executed against the replica, insert/delete/modify operations are not possible, so a new validation is introduced for ReadOnly objects – any of these operations will throw an exception at runtime (new compile-time validation will be added in the future). Objects that are only read from the database can utilize replicas.S
+For reports, API pages, and queries, the Business Central server can use read-only replicas on Azure SQL database and SQL Server. This property can be used to improve performance when displaying objects when modifications to data is not required. This property to ReadOnly works as a hint for the server to connect to a secondary (read-only) replica if one is available. When a workload is executed against the replica, insert/delete/modify operations are not possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
