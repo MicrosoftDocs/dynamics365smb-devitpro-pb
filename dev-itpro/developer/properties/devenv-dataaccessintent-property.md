@@ -13,7 +13,10 @@ author: jswymer
 
 # DataAccessIntent Property
 
-Sets whether to access data for the object from a read-only replica of the database or the primary database.
+Sets whether data comes from a read-only replica of the database or the primary database.
+
+<!-- 
+When you enable Read Scale-Out for a database, the ApplicationIntent option in the connection string provided by the client dictates whether the connection is routed to the write replica or to a read-only replica. Specifically, if the ApplicationIntent value is ReadWrite (the default value), the connection will be directed to the database’s read-write replica. This is identical to existing behavior. If the ApplicationIntent value is ReadOnly, the connection is routed to a read-only replica.-->
 
 ## Applies To  
 
