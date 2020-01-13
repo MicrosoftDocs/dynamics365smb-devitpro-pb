@@ -26,7 +26,7 @@ Sets whether to access data for the object from a read-only replica of the datab
 
 ## Property Value
 
-The following table describes the property values.  
+The property has the following values.  
 
 |  Value  |  Description  |
 |---------|---------------|  
