@@ -13,7 +13,7 @@ author: jswymer
 
 # DataAccessIntent Property
 
-Sets whether the objects database access intent for the objects  now can get access to a read-only replica of the database. Sets whether the page is ReadWrite or ReadOnly.
+Sets whether the data that is accessed from a read-only replica of the database.
 
 ## Applies To  
 
@@ -22,7 +22,7 @@ Sets whether the objects database access intent for the objects  now can get acc
     The [Editable property](devenv-editable-property.md) must be set to **false**.
 
 - Query
-- Reports 
+- Reports
 
 ## Property Value
 
@@ -31,7 +31,7 @@ The following table describes the property values.
 |  Value  |  Description  |
 |---------|---------------|  
 |**ReadOnly**||  
-|**ReadWrite**| |  
+|**ReadWrite**||  
   
 
 
@@ -42,7 +42,7 @@ DataAccessIntent = ReadOnly|ReadWrite;
 
 ## Remarks  
 
-This property works as a hint for the server, which will connect to the secondary replica if possible. When a workload is executed against the replica, insert/delete/modify operations are not possible, so a new validation is introduced for ReadOnly objects – any of these operations will throw an exception at runtime (new compile-time validation will be added in the future). Objects that are only read from the database can utilize replicas.S
+This property applies to works as a hint for the server, which will connect to the secondary replica if possible. When a workload is executed against the replica, insert/delete/modify operations are not possible, so a new validation is introduced for ReadOnly objects – any of these operations will throw an exception at runtime (new compile-time validation will be added in the future). Objects that are only read from the database can utilize replicas.S
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
