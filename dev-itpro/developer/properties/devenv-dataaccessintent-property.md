@@ -13,7 +13,7 @@ author: jswymer
 
 # DataAccessIntent Property
 
-Sets whether data comes from a read-only replica of the database or the primary database.
+Sets whether to access data for the object from a read-only replica of the database or the primary database.
 
 <!-- 
 When you enable Read Scale-Out for a database, the ApplicationIntent option in the connection string provided by the client dictates whether the connection is routed to the write replica or to a read-only replica. Specifically, if the ApplicationIntent value is ReadWrite (the default value), the connection will be directed to the database’s read-write replica. This is identical to existing behavior. If the ApplicationIntent value is ReadOnly, the connection is routed to a read-only replica.-->
@@ -33,8 +33,8 @@ The property has the following values.
 
 |  Value  |  Description  |
 |---------|---------------|  
-|**ReadOnly**|Specifies to access data from a read-only replica.|  
-|**ReadWrite**|Specifies to access data from the primary database.|  
+|**ReadOnly**|Specifies to get the data from a read-only replica.|  
+|**ReadWrite**|Specifies to get the data from the primary database. This is the default value.|  
   
 ## Syntax
 ```
@@ -43,7 +43,7 @@ DataAccessIntent = ReadOnly|ReadWrite;
 
 ## Remarks  
 
-For reports, API pages, and queries, the Business Central server can use read-only replicas on Azure SQL database and SQL Server. This property can be used to improve performance when viewing these objects if modifications to data is not required. Setting the property to **ReadOnly** works as a hint for the server to connect to a secondary (read-only) replica, if a replica is available. When a workload is executed against the replica, insert/delete/modify operations are not possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
+For reports, API pages, and queries, the Business Central server can use read-only replicas on Azure SQL database and SQL Server. This property can be used to improve performance for viewing objects when modifications to data is not required. Setting the property to **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if available. When a workload is executed against the replica, insert/delete/modify operations are not possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
