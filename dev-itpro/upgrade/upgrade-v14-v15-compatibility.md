@@ -22,10 +22,10 @@ The following table lists the Business Central 14 versions and the minimum Busin
 |[14.0 (GA and cumulative update 01)](https://support.microsoft.com/help/4501146)|15.0|
 |[14.3 (cumulative update 02)](https://support.microsoft.com/help/4514872)|15.0|
 |[14.4 (cumulative update 03)](https://support.microsoft.com/help/4515445)|15.0|
-|[14.5 (cumulative update 04](https://support.microsoft.com/help/4518535)|15.0|
+|[14.5 (cumulative update 04)](https://support.microsoft.com/help/4518535)|15.0|
 |[14.6 (cumulative update 05)](https://support.microsoft.com/help/4522949)|15.1|
 |[14.7 (cumulative update 06)](https://support.microsoft.com/help/4528705)|15.2|
-|[14.8 (cumulative update 07)](https://support.microsoft.com/en-us/help/4533396)|15.3|
+|[14.8 (cumulative update 07)](https://support.microsoft.com/help/4533396)|15.3|
 
 For example, looking at the matrix, you can upgrade Business Central 14.0 (cumulative update 01) to any Business Central 15 version. However, you can only upgrade Business Central 14.5 (cumulative update 04) to Business Central 15.1 or later.
 
