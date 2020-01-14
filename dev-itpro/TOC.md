@@ -606,6 +606,14 @@
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
+<!-- begin performance -->
+# Performance
+## [Performance Overview](performance/performance-overview.md)
+## [Performance Application](performance/performance-application.md)
+## [Performance Developer](performance/performance-developer.md)
+## [Performance Online](performance/performance-online.md)
+## [Performance On-Premises](performance/performance-onprem.md)
+<!-- end performance -->
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
