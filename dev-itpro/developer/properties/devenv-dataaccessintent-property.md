@@ -43,7 +43,7 @@ DataAccessIntent = ReadOnly|ReadWrite;
 
 ## Remarks  
 
-For reports, API pages, and queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, you can use this property to improve performance when viewing objects if modifications to data is not required. Setting the property to **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if available. When a workload is executed against the replica, insert/delete/modify operations are not possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
+For reports, API pages, and queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, you can use this property to reduce the load on the primary database, which in turn might also improve performance when viewing objects. Setting the property to **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if available. When a workload is executed against the replica, insert/delete/modify operations are not possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
