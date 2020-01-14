@@ -32,11 +32,13 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisites
 
-1. Upgrade to Business Central Spring 2019 [Cumulative Update 5](https://support.microsoft.com/help/4522949) (version 14.6).
+1. Upgrade to Business Central Spring 2019 (version 14).
 
-   If your current deployment is already running cumulative update 6 (version 14.7), we recommend to wait until the Update 2 for version 15 is released.
+   There are several updates for version 14. If you are upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend that you upgrade to the latest update for version 14 that has a compatible update for version 15. If your solution is already on version 14, then you do not have to upgrade to the latest version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
+   To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
+
+   For information about how to perform the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
 <!-- Replace step 1 with this for CU1
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.X) that is compatible with the version 15 .
@@ -216,7 +218,7 @@ The application database includes the **$ndo$dbproperty** table which stores the
 
 he Get-NavApplication cmdlet comes from the $ndo$dbproperty table in the database.
 
-To increase the application version of the application database, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
+To increase the application version of the application database, use the [Set-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
@@ -345,9 +347,36 @@ Now, your application is fully upgraded to the version 15 platform.
 
 ## Task 10: Post-upgrade
 
-1. Enable task scheduler on the server instance.
-2. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+1. <a name="JSaddins"></a>Upgrade Javascript-based control add-ins to new versions.
 
-## See Also  
-[Upgrading the Data](Upgrading-the-Data.md)   
+    The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the following Microsoft-provided Javascript-based control add-ins that must be upgraded.
+    
+    - Microsoft.Dynamics.Nav.Client.BusinessChart
+    - Microsoft.Dynamics.Nav.Client.FlowIntegration
+    - Microsoft.Dynamics.Nav.Client.OAuthIntegration
+    - Microsoft.Dynamics.Nav.Client.PageReady
+    - Microsoft.Dynamics.Nav.Client.PowerBIManagement
+    - Microsoft.Dynamics.Nav.Client.RoleCenterSelector
+    - Microsoft.Dynamics.Nav.Client.SocialListening
+    - Microsoft.Dynamics.Nav.Client.SatisficationSurvey
+    - Microsoft.Dynamics.Nav.Client.TimelineVisualization
+    - Microsoft.Dynamics.Nav.Client.VideoPlayer
+    - Microsoft.Dynamics.Nav.Client.WebPageViewer
+    - Microsoft.Dynamics.Nav.Client.WelcomeWizard
+
+    To upgrade the control add-ons, do the following:
+
+    1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+    2. Search for and open the **Control Add-ins** page.
+    3. Choose **Actions** > **Control Add-in Resource** > **Import**.
+    4. Locate and select the .zip file for the control add-in and choose **Open**.
+
+        The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There is a sub-folder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+    5. After you have imported all the new control add-in versions, restart Business Central Server instance.
+2. Enable task scheduler on the server instance.
+3. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+
+## See Also
+
+[Upgrading the Data](Upgrading-the-Data.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
