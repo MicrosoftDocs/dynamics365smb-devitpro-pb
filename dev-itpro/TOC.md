@@ -609,10 +609,10 @@
 <!-- begin performance -->
 # Performance
 ## [Performance Overview](performance/performance-overview.md)
-## [Performance Application](performance/performance-application.md)
-## [Performance Developer](performance/performance-developer.md)
-## [Performance Online](performance/performance-online.md)
-## [Performance On-Premises](performance/performance-onprem.md)
+## [Application](performance/performance-application.md)
+## [Developer](performance/performance-developer.md)
+## [Online](performance/performance-online.md)
+## [On-Premises](performance/performance-onprem.md)
 <!-- end performance -->
 <!-- upgrade -->
 # Upgrade
