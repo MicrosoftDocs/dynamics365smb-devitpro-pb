@@ -11,5 +11,12 @@ author:
 ---
 
 # Performance Overview
+<!-- intro -->
 
-## See Also
+The following sections help you understand and improve the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+[Application](performance-application.md)
+[Developer](performance-developer.md)
+[Online](performance-online.md)
+[On Premises](performance-onprem.md)
+
