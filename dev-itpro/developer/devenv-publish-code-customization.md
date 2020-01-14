@@ -3,7 +3,7 @@ title: "Publishing a Code-Customized Base Application"
 description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 01/14/20120
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,9 @@ This topic describes the steps and development environment configuration setting
 
 > [!IMPORTANT]  
 > Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
+
+> [!NOTE]  
+> The steps in this topic are not validated against a Docker environment. If you are running the on-prem installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
 
 ## Prerequisites
 Make sure to have the following prerequisites installed to be able to follow the steps in this topic.
