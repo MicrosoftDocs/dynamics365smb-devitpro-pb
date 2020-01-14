@@ -10,6 +10,6 @@ ms.service: "dynamics365-business-central"
 author: 
 ---
 
-# Performance On Premises
+# Performance On-Premises
 
 ## See Also

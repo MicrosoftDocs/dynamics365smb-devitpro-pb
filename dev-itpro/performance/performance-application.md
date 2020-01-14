@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: 
 ---
 
-# Performance for the Application
+# Performance Application
 
 
 ## See Also
