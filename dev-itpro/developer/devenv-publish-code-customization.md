@@ -36,7 +36,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 1. Get the Base Application source from the `/Applications/BaseApp/Source` folder on the DVD.
 2. Unzip the *BaseApplication.source.zip* file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
 3. Next, download symbols for the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**. 
-3. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
+4. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
     ```
     ...
     field(Name; Name)
@@ -56,11 +56,11 @@ Make sure to have the following prerequisites installed to be able to follow the
     }
     ...
     ```
-4. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
+5. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
     - **Allowed Extension Target Level** is set to **OnPrem**.
     - **Enable Developer Service Endpoint** checkbox is selected.
-5. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
-6. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:
+6. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
+7. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:
     ```
     "dependencies": [
         {
@@ -127,7 +127,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     
     }
     ```
-12. Run the script you created in step 11 to handle the uninstall and unpublishing of the Base Application and dependencies.
+12. Run the script that you created in **step 11** to handle the uninstall and unpublishing of the Base Application and its dependencies.
 13. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
 14. Import a license with rights to publish the extension. For example:  
@@ -137,7 +137,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
 
-The Base Application is now published with the small customization of bolding the text in the name field on the Customer Card.
+The Base Application is now published with the small customization of bolding the text in the name field on the Customer Card page.
 
 ## See Also
 
