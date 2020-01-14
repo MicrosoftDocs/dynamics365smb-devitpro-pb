@@ -290,7 +290,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "<path to extension>"
     ```
 
-## Task 8: Restart the server instance
+## Task 7: Restart the server instance
 
 Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for performing the remainder of the upgrade.
 
@@ -300,7 +300,7 @@ Restart-NAVServerInstance -ServerInstance <server instance name>
 
 This step is important, otherwise you might experience issues when you run the data upgrade.
 
-## Task 7: Synchronize the tenant
+## Task 8: Synchronize the tenant
 
 In this task, you will synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -359,7 +359,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you will notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 8: Upgrade the data
+## Task 9: Upgrade the data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -390,7 +390,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     This step will also automatically install the new extension version on the tenant.
 4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 9: Install 3rd-party extensions
+## Task 10: Install 3rd-party extensions
 
 Complete this task to install 3rd party extensions for which a new version was not published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
