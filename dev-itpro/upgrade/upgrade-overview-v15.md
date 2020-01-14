@@ -26,7 +26,7 @@ When upgrading your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Sp
 
 ![Upgrade path on Business Central application](../developer/media/bc15-upgrade-paths.png "Upgrade paths")
 
-As mentioned, the recommended upgrade path for a customized solution is to uptake the version 15 Microsoft Base Application and System Application, and move all code customizations to extensions. However, we realize that the complexity of some solutions will make this path very difficult. If this path is not currently realistic for your solution, then we recommend as a minimum to upgrade to a version 15 customized base application. 
+As mentioned, the recommended upgrade path for a customized solution is to uptake the version 15 Microsoft Base Application and System Application, and move all code customizations to extensions. However, we realize that the complexity of some solutions will make this path very difficult. If this path is not currently realistic for your solution, then we recommend as a minimum to upgrade to a version 15 customized base application.
 
 > [!IMPORTANT]
 > Be aware that for each path, once the database has been synchronized and data upgraded, it becomes more difficult to bring your solution to the next path. This will require significant manual work until tooling is available in a future release.
