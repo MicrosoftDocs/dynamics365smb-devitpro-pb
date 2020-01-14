@@ -611,6 +611,7 @@
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## Online
 ### [Overview](upgrade/upgrading-to-business-central-online.md)
+### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 ### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)

@@ -290,6 +290,16 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "<path to extension>"
     ```
 
+## Task 8: Restart the server instance
+
+Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for performing the remainder of the upgrade.
+
+```
+Restart-NAVServerInstance -ServerInstance <server instance name>
+```
+
+This step is important, otherwise you might experience issues when you run the data upgrade.
+
 ## Task 7: Synchronize the tenant
 
 In this task, you will synchronize the tenant's database schema with any schema changes in the application database and extensions.

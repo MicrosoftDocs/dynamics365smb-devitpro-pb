@@ -667,3 +667,4 @@ Customization extensions are AL extensions that add functionality to the base ap
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+[[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  
