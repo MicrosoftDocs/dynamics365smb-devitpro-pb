@@ -180,9 +180,9 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/develope
 
 ### Set-based logic
 
-[Query object](../developer/devenv-query-object.md) 
-[Query overview](../developer/devenv-query-overview.md)
-[TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)
+[Query object](../developer/devenv-query-object.md)  
+[Query overview](../developer/devenv-query-overview.md)  
+[TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
  
 
 Use built-in data structures 
