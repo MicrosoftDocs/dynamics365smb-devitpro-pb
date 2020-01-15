@@ -22,7 +22,7 @@ The following properties apply to a **Page** object.
 - [CaptionML Property](devenv-captionml-property.md)  
 - [CardPageID Property](devenv-cardpageid-property.md)  
 - [ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)
-- [DataAccessIntent Property](devenv-dataaccess-intent-property.md)
+- [DataAccessIntent Property](devenv-dataaccessintent-property.md)
 - [DataCaptionExpr Property](devenv-datacaptionexpr-property.md)  
 - [DataCaptionFields Property](devenv-datacaptionfields-property.md)  
 - [DelayedInsert Property](devenv-delayedinsert-property.md)  
