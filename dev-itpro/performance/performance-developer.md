@@ -400,50 +400,24 @@ Page Inspection: https://docs.microsoft.com/en-us/dynamics365/business-central/d
 Validating performance 
 Instrumenting Telemetry 
 
-Technical checklist before submitting to AppSource: 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-onbeforecompanyopen 
-
- 
-
-The Dynamics NAV performance testing Framework  
-
-https://github.com/NAVPERF 
-
+- [Technical checklist](../compliance/apptest-onbeforecompanyopen.md)
+- [The Dynamics NAV performance testing Framework](https://github.com/NAVPERF)
   
 
-Demo how do I videos:  
+Videos:
 
-How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 1 
-
-https://www.youtube.com/watch?v=GULQmkhGiHo 
-
-  
-
-How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 2 
-
-https://www.youtube.com/watch?v=KsJIWEYYp1s 
-
-  
-
-How Do I: Run NAV Load Tests Using Visual Studio in Microsoft Dynamics NAV 
-
-https://www.youtube.com/watch?v=IG-y8DsXqaQ 
-
-  
-
-Setting Up Test Controllers and Test Agents to Manage Tests with Visual Studio  
-
-https://msdn.microsoft.com/en-us/library/hh546459.aspx 
+- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 1](https://www.youtube.com/watch?v=GULQmkhGiHo)  
+- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 2](https://www.youtube.com/watch?v=KsJIWEYYp1s)    
+- [How Do I: Run NAV Load Tests Using Visual Studio in Microsoft Dynamics NAV](https://www.youtube.com/watch?v=IG-y8DsXqaQ)  
+- [Setting Up Test Controllers and Test Agents to Manage Tests with Visual Studio](https://msdn.microsoft.com/en-us/library/hh546459.aspx)  
 
 
 ### Tuning the Development Environment 
 
-The following articles explain what you can do as a developer to tune your development environment to go faster: 
+The following articles explain what you can do as a developer to tune your development environment for better performance.
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-optimize-visual-studio-code 
-
-Code Analysis: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-using-code-analysis-tool#enabling-code-analysis-on-large-projects 
+- [Optimizing Visual Studio Code for AL Development](../developer/devenv-optimize-visual-studio-code.md) 
+- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool#enabling-code-analysis-on-large-projects.md)
 
 
 ## See Also
