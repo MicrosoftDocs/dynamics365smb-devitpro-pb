@@ -14,13 +14,13 @@ author:
 
 In this topic you can read about ...
 
-[Writing efficient pages]() 
-[Writing efficient Web Services]()
-[Writing efficient reports]()
-[AL performance patterns]() 
-[Efficient Data access]()
-[Testing and validating performance]() 
-[Tuning the Development Environment]() 
+[Writing efficient pages](performance-developer.md#)  
+[Writing efficient Web Services](performance-developer.md#)  
+[Writing efficient reports](performance-developer.md#)  
+[AL performance patterns](performance-developer.md#)  
+[Efficient Data access](performance-developer.md#)  
+[Testing and validating performance](performance-developer.md#)  
+[Tuning the Development Environment](performance-developer.md#)  
 
 
 ## Writing efficient pages
@@ -411,7 +411,7 @@ Page Inspection: https://docs.microsoft.com/en-us/dynamics365/business-central/d
 
  
 
-Performance Testing (We have a gap here) 
+## Performance Testing (We have a gap here) 
 
 ALL THE NAV TESTING LINKS MUST BE VALIDATED TO SEE IF THIS IS STILL USEFULL 
 
@@ -461,13 +461,8 @@ https://msdn.microsoft.com/en-us/library/hh546459.aspx
 
  
 
- 
 
- 
-
- 
-
-Tuning the Development Environment 
+### Tuning the Development Environment 
 
 The following articles explain what you can do as a developer to tune your development environment to go faster: 
 
