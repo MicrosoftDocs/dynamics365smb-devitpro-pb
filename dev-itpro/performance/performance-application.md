@@ -10,7 +10,9 @@ ms.service: "dynamics365-business-central"
 author: 
 ---
 
-# Performance Application
+# How Application Configurations Affect Performance
+The topics in this session describes how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
 
 
 ## See Also
