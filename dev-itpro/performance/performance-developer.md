@@ -66,7 +66,7 @@ For more information, see [Page Background Tasks](https://docs.microsoft.com/en-
 Business Central has support for Web services to make it easier to integrating with external systems. As a developer, you need to think about performance of web services both seen from the BC server (the endpoint) and as seen from the consumer (the client). 
 
 
-End point performance  
+### End point performance  
 
 Avoid using standard UI pages for OData calls 
 
@@ -87,7 +87,7 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/develope
 
 Client 
 
-The online version of business central server has setup throttling limits on webservices endpoints to ensure that excessive traffic cannot cause stability and performance issues.   
+The online version of business central server has setup throttling limits on web services endpoints to ensure that excessive traffic cannot cause stability and performance issues.   
 
 TODO: Link to online limits (this exists in docs) 
 
@@ -107,13 +107,10 @@ TODO: readonly intent (when we get to 16.0)
 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance 
 
-Use built-in data structures 
-
-Run async (and parallelize) 
-
-Use set based methods instead of looping 
-
-Other AL performance tips and tricks 
+[Use built-in data structures]()  
+[Run async (and parallelize)]()  
+[Use set based methods instead of looping]()  
+[Other AL performance tips and tricks]()  
 
  
 
@@ -261,7 +258,7 @@ Background session options (pros and cons). See slide 41 in [Directions EMEA 201
 
  
 
-Other AL performance tips and tricks 
+### Other AL performance tips and tricks 
 
 IsDirty method: 
 
@@ -332,32 +329,25 @@ GAP: Limit your Event Subscriptions
 See slides 29-32 in [Directions EMEA 2019] 
 
  
-
- 
-
 Add links to patterns that are related to perf when they are in docs 
 
- 
 
-Efficient Data access 
+## Efficient Data access 
 
 Many performance issues is related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
 
   
 
-Tables and keys 
+### Tables and keys 
 
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-table-keys-and-performance 
 
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-key-property 
 
  
-
-SIFT: 
+### SIFT
 
 Overview: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-sift-technology 
-
- 
 
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-sift-performance 
 
@@ -365,11 +355,8 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/develope
 
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-sift-and-sql-server 
 
- 
 
- 
-
-How AL relates to SQL 
+### How AL relates to SQL 
 
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-al-database-methods-and-performance-on-server 
 
@@ -393,8 +380,6 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administ
 
  
 
- 
-
 Testing and validating performance 
 
 It is imperative to test and validate a business central project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
@@ -411,21 +396,17 @@ Page Inspection: https://docs.microsoft.com/en-us/dynamics365/business-central/d
 
  
 
-## Performance Testing (We have a gap here) 
+## Performance Testing 
+<!-- (We have a gap here) -->
 
-ALL THE NAV TESTING LINKS MUST BE VALIDATED TO SEE IF THIS IS STILL USEFULL 
+<!-- ALL THE NAV TESTING LINKS MUST BE VALIDATED TO SEE IF THIS IS STILL USEFUL -->
 
 Validating performance 
-
 Instrumenting Telemetry 
-
- 
 
 Technical checklist before submitting to AppSource: 
 
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-onbeforecompanyopen 
-
- 
 
  
 
@@ -459,8 +440,6 @@ Setting Up Test Controllers and Test Agents to Manage Tests with Visual Studio
 
 https://msdn.microsoft.com/en-us/library/hh546459.aspx 
 
- 
-
 
 ### Tuning the Development Environment 
 
@@ -469,10 +448,6 @@ The following articles explain what you can do as a developer to tune your devel
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-optimize-visual-studio-code 
 
 Code Analysis: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-using-code-analysis-tool#enabling-code-analysis-on-large-projects 
-
-
-
-
 
 
 ## See Also
