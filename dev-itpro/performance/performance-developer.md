@@ -105,7 +105,7 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 [Use built-in data structures]()  
 [Run async (and parallelize)]()  
-[Use set based methods instead of looping]()  
+[Use set-based methods instead of looping]()  
 [Other AL performance tips and tricks]()  
 
  
@@ -178,18 +178,11 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/develope
 
  
 
-Set-based logic: 
+### Set-based logic
 
-Query object: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-query-object 
-
-Query overview: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-query-overview 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-topnumberofrows-property 
-
- 
-
- 
-
+[Query object](../developer/devenv-query-object.md) 
+[Query overview](../developer/devenv-query-overview.md)
+[TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)
  
 
 Use built-in data structures 
@@ -246,13 +239,6 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/develope
 
 Background session options (pros and cons). See slide 41 in [Directions EMEA 2019] 
 
- 
-
- 
-
- 
-
- 
 
 ### Other AL performance tips and tricks 
 
@@ -265,20 +251,13 @@ Fast, non-blocking number sequences that be used from AL
 Use if you: 
 
 - Do not want to use a number series 
+- Accept holes in the number range. For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md) 
 
-- Accept holes in the number range  
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/numbersequence/numbersequence-data-type 
-
- 
 
 Security filtering (maybe both here and in data access) 
-
  
 
- 
-
-Know your data stack (what every AL developer needs to know about databases) 
+### Know your data stack (what every AL developer needs to know about databases) 
 
 Many issues stem from missing indexes. 
 
@@ -288,21 +267,12 @@ Consider indexes matching integration scenarios
 
 Use SystemID instead of RECORDID 
 
- 
 
 And yes, indexes have a cost to update, so don’t overdo it. 
 
  
 
- 
-
- 
-
- 
-
- 
-
-GAP: Table extension impact on performance 
+<!-- GAP: Table extension impact on performance -->
 
 Extensions are eager joined in the data stack 
 
@@ -314,57 +284,43 @@ Be careful about extending central tables
 
 Table extension vs. related table 
 
-See pros and cons on slide 19 in [Directions EMEA 2019] 
-
+See pros and cons on slide 19 in [Directions EMEA 2019]
  
 
- 
-
-GAP: Limit your Event Subscriptions 
+<!-- GAP: Limit your Event Subscriptions -->
 
 See slides 29-32 in [Directions EMEA 2019] 
 
  
-Add links to patterns that are related to perf when they are in docs 
+<!-- Add links to patterns that are related to perf when they are in docs -->
 
 
 ## Efficient Data access 
 
 Many performance issues is related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
-
   
 
 ### Tables and keys 
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-table-keys-and-performance 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-key-property 
+- [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance)  
+- [Key Property](../developer/properties/devenv-key-property.md) 
 
  
-### SIFT
+### SumIndexField Technology (SIFT)
 
-Overview: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-sift-technology 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-sift-performance 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-sift-tuning-and-tracing 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-sift-and-sql-server 
-
+- [SumIndexField Technology (SIFT)](../developer/devenv-sift-technology.md)  
+- [SIFT and Performance](../developer/devenv-sift-performance.md)  
+- [Tuning and Tracing](../developer/devenv-sift-tuning-and-tracing.md)  
+- [SIFT and SQL Server](../developer/devenv-sift-and-sql-server.md)  
 
 ### How AL relates to SQL 
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-al-database-methods-and-performance-on-server 
+- [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
+- [Data Access](../administration/optimize-sql-data-access#-server-data-caching.md)  
+- [Data read/write performance](../administration/optimize-sql-data-access#data-readwrite-performance.md)
+- [Bulk Inserts](../administration/optimize-sql-bulk-inserts.md)
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-data-access#-server-data-caching 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-data-access#data-readwrite-performance 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-bulk-inserts 
-
-GAP: Security filtering 
-
- 
+<!-- GAP: Security filtering -->
 
 How to get insights into how AL translates to SQL 
 
@@ -388,22 +344,19 @@ Long Running SQL Queries Involving FlowFields by Disabling SmartSQL
 
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql  
 
-Page Inspection: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inspecting-pages 
-
- 
+Page Inspection: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inspecting-pages  
 
 ## Performance Testing 
-<!-- (We have a gap here) -->
 
-<!-- ALL THE NAV TESTING LINKS MUST BE VALIDATED TO SEE IF THIS IS STILL USEFUL -->
-
-Validating performance 
-Instrumenting Telemetry 
-
+- Validating performance  
+- Instrumenting Telemetry 
 - [Technical checklist](../compliance/apptest-onbeforecompanyopen.md)
 - [The Dynamics NAV performance testing Framework](https://github.com/NAVPERF)
-  
 
+<!-- (We have a gap here) -->
+
+
+<!-- ALL THE NAV TESTING LINKS MUST BE VALIDATED TO SEE IF THIS IS STILL USEFUL -->
 Videos:
 
 - [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 1](https://www.youtube.com/watch?v=GULQmkhGiHo)  
