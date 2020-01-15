@@ -12,7 +12,7 @@ author:
 
 # Performance Developer
 
-In this topic you can read about ...
+In this topic you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
 [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
@@ -31,10 +31,8 @@ To get a page to load fast, there are a number of patterns that a developer can 
 - Do less 
 - Offloading the UI thread 
 
-
 ### Avoid Unnecessary Recalculation 
-
-cache data yourself 
+To avoid unnecessary recalculation of ... you should cache data yourself. 
 
 Gotcha! Query results are not cached in the primary key cache 
 
@@ -61,10 +59,8 @@ For more information, see [Page Background Tasks](https://docs.microsoft.com/en-
 
 ## Writing efficient Web Services 
 
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] has support for Web services to make it easier to integrating with external systems. As a developer, you need to think about performance of web services both seen from the BC server (the endpoint) and as seen from the consumer (the client). 
 <!-- GAP: most content in this section has not been written yet  -->
-
-Business Central has support for Web services to make it easier to integrating with external systems. As a developer, you need to think about performance of web services both seen from the BC server (the endpoint) and as seen from the consumer (the client). 
-
 
 ### End point performance  
 
@@ -87,7 +83,7 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/develope
 
 Client 
 
-The online version of business central server has setup throttling limits on web services endpoints to ensure that excessive traffic cannot cause stability and performance issues.   
+The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has setup throttling limits on web services endpoints to ensure that excessive traffic cannot cause stability and performance issues.   
 
 TODO: Link to online limits (this exists in docs) 
 
@@ -165,7 +161,7 @@ Can join multiple tables
 
 Cons 
 
-Query object result sets are not cached in the Business Central server data cache 
+Query object result sets are not cached in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server data cache 
 
 No writes 
 
@@ -382,7 +378,7 @@ https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administ
 
 Testing and validating performance 
 
-It is imperative to test and validate a business central project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
+It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
 
  
 
