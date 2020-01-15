@@ -14,13 +14,13 @@ author:
 
 In this topic you can read about ...
 
-[Writing efficient pages](performance-developer.md#)  
-[Writing efficient Web Services](performance-developer.md#)  
-[Writing efficient reports](performance-developer.md#)  
-[AL performance patterns](performance-developer.md#)  
-[Efficient Data access](performance-developer.md#)  
-[Testing and validating performance](performance-developer.md#)  
-[Tuning the Development Environment](performance-developer.md#)  
+[Writing efficient pages](performance-developer.md#writing-efficient-pages)  
+[Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
+[Writing efficient reports](performance-developer.md#writing-efficient-reports)  
+[AL performance patterns](performance-developer.md#al-performance-patterns)  
+[Efficient Data access](performance-developer.md#efficient-data-access)  
+[Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
+[Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
 
 
 ## Writing efficient pages
