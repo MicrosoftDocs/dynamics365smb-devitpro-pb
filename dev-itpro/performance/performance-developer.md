@@ -223,19 +223,14 @@ Splitting tasks into smaller tasks
 
 Many different ways to spin up a new task 
 
-Job Queue 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/admin-job-queues-schedule-tasks 
+[Job Queue](/business-central/admin-job-queues-schedule-tasks)
 
 TaskScheduler.CreateTask 
 
 StartSession 
 
-Page Background Task 
+[Page Background Task](../developer/devenv-task-scheduler.md) 
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-task-scheduler 
-
- 
 
 Background session options (pros and cons). See slide 41 in [Directions EMEA 2019] 
 
