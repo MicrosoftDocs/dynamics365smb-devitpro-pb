@@ -22,6 +22,7 @@ This topic lists properties that apply to the query object.
 |[Caption Property](devenv-caption-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
 |[ColumnFilter Property](devenv-columnfilter-property.md)|<ul><li>Column control</li><li>Filter control</li></ul>|
+|[DataAccessIntent Property](devenv-dataaccess-intent-property.md)|<ul><li>Query Object</li></ul>|
 |[DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)|<ul><li>DataItem control</li></ul>|
 |[DataItemLinkType Property](devenv-dataitemlink-type-property.md)|<ul><li>DataItem control</li></ul>|
 |[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem control</li></ul>|
