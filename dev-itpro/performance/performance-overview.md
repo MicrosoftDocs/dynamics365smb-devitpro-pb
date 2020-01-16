@@ -11,8 +11,6 @@ author:
 ---
 
 # Performance Overview
-<!-- intro -->
-
 The following sections help you understand and improve the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The  content is centered around the different ways a functional consultant, a developer, or an administrator can make changes with a performance impact. 
 
 Visit [Application](performance-application.md) to learn about how in-product configurations affect performance.
