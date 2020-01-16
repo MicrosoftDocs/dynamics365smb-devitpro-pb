@@ -50,48 +50,45 @@ Task Scheduler
 
 ### Database (SQL Server or Azure SQL database)
 
-First of all, make sure that you avoid common pitfalls in your SQL Server setup: 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/installation-considerations-for-microsoft-sql-server
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-set-compatibility-level
+First of all, make sure that you avoid common pitfalls in your SQL Server setup  
+[Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)  
+[Setting SQL Compatibility Level to Optimize Database Performance](../administration/optimize-sql-set-compatibility-level.md)
 
-Tune data access
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-data-access#TablePartitioning
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-data-access#Compression
+Tune data access  
+[Using SQL Server table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning)  
+[Using SQL Server data compression](../administration/optimize-sql-data-access.md#Compression)  
 
-SQL Server vs. Azure SQL database
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/deploy-database-azure-sql-database#differences-between-azure-sql-database-and-sql-server
+SQL Server vs. Azure SQL database  
+[Differences between Azure SQL database and SQL Server](../deployment/deploy-database-azure-sql-database.md#differences-between-azure-sql-database-and-sql-server)  
+[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
+[Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md)  
+[Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
 
+#### Performance of bacpac generation
+In the February 2019 update of sqlpackage (the command line tool that is used to generate bacpac/dacpac files), a significant schema compare performance issue when generating a script was solved. Make sure that you use version 18.1 or later if you experience issues in bacpac generation performance.
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshoot-query-performance-using-query-store
-
-**Performance of bacpac generation**
-In the February 2019 update of sqlpackage (the commandline tool that is used to generate bacpac/dacpac files), a significant schema compare performance issue when generating a script was solved. Make sure that you use version 18.1 or later if you experience issues in bacpac generation performance.
-
-**Performance Impact on setting up CDC on SQL Server**
+#### Performance impact on setting up CDC on SQL Server
 Customer can set up CDC on their database. Impact can be that SQL Server will be slower (depends on the retention period) and that they need storage for the extra data.
 
-**Performance impact of enabling Transparent Data Enryption (TDE)**
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters#PerformanceImpact
+#### Performance impact of enabling Transparent Data Enryption (TDE)
+
+[Performance impact of security filtering Mode](../security/security-filters.md#PerformanceImpact)
 
 
 ### Network
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/installation-considerations-for-microsoft-sql-server
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/configure-delegation-web-server#Kernel
+[Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)  
+[Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
 
 ## Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
-On compute (NSTs and web servers), it is possible to scale horizontally by separating NSTs and web servers on different nodes (see https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance )
 
-It is also common on bigger installations to separate traffic based on client type (direct UI and Odata traffic to different NSTs). Possibly co-hosting NSTs and web servers on the same nodes
+On compute (NSTs and Web servers), it is possible to scale horizontally by separating NSTs and Web servers on different nodes. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md)
 
-The BC server (NST) has a built-in thread dispatcher for AL execution. This means that more cores means more parallel execution (but have in mind that AL execution as such is single-threaded (until 2020 Wave 2 release, where we start introducing async processing)). For long running operations such as heavy reports, using faster CPUs will give better performance
+It is also common on larger installations to separate traffic based on client type (direct UI and Odata traffic to different NSTs). Possibly co-hosting NSTs and Web servers on the same nodes.
 
-On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to BC (see https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/installation-considerations-for-microsoft-sql-server )
+The Business Central server (NST) has a built-in thread dispatcher for AL execution. This means that more cores means more parallel execution (but have in mind that AL execution as such is single-threaded (until 2020 Wave 2 release, where we start introducing async processing)). For long running operations such as heavy reports, using faster CPUs will give better performance.
+
+On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to BC. For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)
 
 ## Measure and Monitor performance
 https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/monitor-server-events 
