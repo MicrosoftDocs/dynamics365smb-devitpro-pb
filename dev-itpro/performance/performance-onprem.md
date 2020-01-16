@@ -91,14 +91,10 @@ The Business Central server (NST) has a built-in thread dispatcher for AL execut
 On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to BC. For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)
 
 ## Measure and Monitor performance
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/monitor-server-events 
- 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tools-monitor-performance-counters-and-events 
 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshoot-long-running-queries-using-event-log 
-
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshoot-query-performance-using-query-store
-
-
+[Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
+[Tools for Monitoring Performance Counters and Events](../administration/tools-monitor-performance-counters-and-events.md)  
+[Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central](../administration/troubleshoot-long-running-queries-using-event-log.md)  
+[Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
 
 ## See Also
