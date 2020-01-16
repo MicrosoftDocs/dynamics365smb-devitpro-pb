@@ -1,25 +1,28 @@
 ---
-title: ""
+title: "Performance of On-Premises Installations"
 ms.custom: na
 ms.date: 01/14/2020
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: 
+author: KennieNP
 ---
 
-# Performance of On-Premises installations
-In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises mean deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service (so if you run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises).
+# Performance of On-Premises Installations
+In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises mean deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, which means that if you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises.
 
-Content is ordered in three groups 
-- Tuning the technology stack:
+Content is ordered in three groups
+
+- Tuning the technology stack
 - Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
-- Measure and Monitor performance
+- Measure and monitor performance
 
-## Performance Tuning the technology stack
-A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installations typically consists of the following components, off of which can be tuned to improve performance:
+## Performance tuning the technology stack
+
+A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typically consists of the following components, where the following components can be tuned to improve performance:
+
 - Web Server
 - Server (NST)
 - Database
@@ -31,16 +34,18 @@ TODO
 ### Server (NST)
 
 NST Database settings 
-- Hints, Enabling Smart SQL https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#Database
-- Buffered insert https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-bulk-inserts
+- Hints, [Enabling Smart SQL](../administration/configure-server-instance#Database.md)
+- [Buffered insert](../administration/optimize-sql-bulk-inserts.md)
 - SQL Bulk Import Batch Size
 - Enable SQL Parameters by Ordinal
 
-How to setup web service limits: 
-- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#SOAPServices
-- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#ODataServices
+Web service limits 
+- [SOAP Services Settings](../administration/configure-server-instance.md#SOAPServices)
+- [OData Services Settings](../administration/configure-server-instance.md#ODataServices)
 
-Task Scheduler: Maximum Concurrent Running Tasks https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#Task
+Task Scheduler
+
+[Maximum Concurrent Running Tasks](../administration/configure-server-instance.md#Task)
 
 
 ### Database (SQL Server or Azure SQL database)
