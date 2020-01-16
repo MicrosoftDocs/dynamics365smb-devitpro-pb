@@ -29,37 +29,44 @@ A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typical
 - Network
 
 ### Web Server 
-TODO
+[Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
 
 ### Server (NST)
+You can adjust the following NST settings related to database performance
 
-NST Database settings 
-- Hints, [Enabling Smart SQL](../administration/configure-server-instance#Database.md)
-- [Buffered insert](../administration/optimize-sql-bulk-inserts.md)
-- SQL Bulk Import Batch Size
-- Enable SQL Parameters by Ordinal
+| Server setting | Description    | Read more      |
+| -------------- | -------------- | -------------- |
+| BufferedInsertEnabled | Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. | [Disabling Bulk Inserts](../administration/optimize-sql-bulk-inserts.md) | 
+| DisableQueryHintForceOrder | Please check if this setting is set to true  | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
+| DisableQueryHintLoopJoin | Please check if this setting is set to true | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
+| DisableSmartSql | If the performance of loading a page that contains FlowFields in BC is bad, you might want to try isolating and testing FlowField queries separately. | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql?branch=performance |
+| SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes.  |  https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance?branch=performance#Database |
 
-Web service limits 
+
+#### Web service limits 
+You can adjust NST settings related to web service calls to implement resource governance (and avoid resource starvation on the NSTs) here: 
 - [SOAP Services Settings](../administration/configure-server-instance.md#SOAPServices)
 - [OData Services Settings](../administration/configure-server-instance.md#ODataServices)
 
-Task Scheduler
-
-[Maximum Concurrent Running Tasks](../administration/configure-server-instance.md#Task)
+#### Task Scheduler
+You can adjust NST settings related to the task scheduler to implement resource governance (and avoid resource starvation on the NSTs) here: 
+- [Maximum Concurrent Running Tasks](../administration/configure-server-instance.md#Task)
 
 
 ### Database (SQL Server or Azure SQL database)
-
 First of all, make sure that you avoid common pitfalls in your SQL Server setup  
 [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)  
 [Setting SQL Compatibility Level to Optimize Database Performance](../administration/optimize-sql-set-compatibility-level.md)
 
-Tune data access  
+
+#### Tune data access  
 [Using SQL Server table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning)  
 [Using SQL Server data compression](../administration/optimize-sql-data-access.md#Compression)  
 
-SQL Server vs. Azure SQL database  
+#### SQL Server vs. Azure SQL database  
 [Differences between Azure SQL database and SQL Server](../deployment/deploy-database-azure-sql-database.md#differences-between-azure-sql-database-and-sql-server)  
+
+#### Troubleshooting database performance issues
 [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md)  
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
@@ -68,16 +75,14 @@ SQL Server vs. Azure SQL database
 In the February 2019 update of sqlpackage (the command line tool that is used to generate bacpac/dacpac files), a significant schema compare performance issue when generating a script was solved. Make sure that you use version 18.1 or later if you experience issues in bacpac generation performance.
 
 #### Performance impact on setting up CDC on SQL Server
-Customer can set up CDC on their database. Impact can be that SQL Server will be slower (depends on the retention period) and that they need storage for the extra data.
+There is a performance impact if you set up CDC on the database. SQL Server will be slower (depends on the retention period used) and you also need storage for the extra data.
 
 #### Performance impact of enabling Transparent Data Enryption (TDE)
-
-[Performance impact of security filtering Mode](../security/security-filters.md#PerformanceImpact)
+Enabling Transparent Data Enryption (TDE) has a slight performance degradation on SQL Server as it need CPU resources for encryption/decryption of data.
 
 ### Network
+TODO
 
-[Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)  
-[Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
 
 ## Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
@@ -90,10 +95,10 @@ The Business Central server (NST) has a built-in thread dispatcher for AL execut
 On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to BC. For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)
 
 ## Measure and Monitor performance
-
-[Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
-[Tools for Monitoring Performance Counters and Events](../administration/tools-monitor-performance-counters-and-events.md)  
-[Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central](../administration/troubleshoot-long-running-queries-using-event-log.md)  
-[Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
+The following resources describes ways that you measure and monitor performance in your BC installation:
+- [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
+- [Tools for Monitoring Performance Counters and Events](../administration/tools-monitor-performance-counters-and-events.md)  
+- [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central](../administration/troubleshoot-long-running-queries-using-event-log.md)  
+- [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
 
 ## See Also
