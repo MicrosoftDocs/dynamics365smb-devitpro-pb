@@ -74,7 +74,6 @@ Customer can set up CDC on their database. Impact can be that SQL Server will be
 
 [Performance impact of security filtering Mode](../security/security-filters.md#PerformanceImpact)
 
-
 ### Network
 
 [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)  

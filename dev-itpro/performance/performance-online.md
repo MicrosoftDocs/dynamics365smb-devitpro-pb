@@ -23,18 +23,17 @@ How to measure this
 
 
 ## Client-side performance
-Browsers
 
-Hardware
+- Browsers
+- Hardware
 
 ## Sandboxes vs. prod
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments ??
+[Managing Environments](../administration/tenant-admin-center-environments.md) ??
 
 ## Telemetry
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-telemetry#analyze-long-running-sql-queries
+[Analyze long running SQL queries](../administration/tenant-admin-center-telemetry#analyze-long-running-sql-queries.md)
 
 ## Throttling and limits
-https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/dynamics-rate-limits
-
+[Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)
 
 ## See Also
