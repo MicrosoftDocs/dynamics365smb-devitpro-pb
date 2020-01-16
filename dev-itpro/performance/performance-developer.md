@@ -165,7 +165,7 @@ TODO: Security filtering (maybe both here and in data access)
 
 TODO: Use SystemID instead of RECORDID 
 
-**Table extension impact on performance**
+### Table extension impact on performance
 Table extensions are eager joined in the data stack when accessing the base table, and it is currently not possible to define indexes that span base and extension fields. Therefore, you should avoid splitting your code into too many table extensions. Also, be careful about extending central tables such as GL Entry, as this can severely hurt performance. 
 
 An alternative when doing data modelling for extending a table with new fields is to use a related table and define a flowfield on the base table. 
@@ -174,10 +174,10 @@ These are the pros and cons of the two ways to data model this:
 
 | Data model for extending a table | Properties |
 | ----------- | ----------- |
-| Table extension <br> Fields can be added to lists and are searchable <br> Always loaded with the base table <br> Expensive at runtime but easy to use <br> Use only for critical fields |
-| Related tables  <br> Need to set up table relations <br> Dedicated page for editing <br> Requires flow field to be shown in lists <br> Does not affect performance of base table <br> Excellent for factboxes | 
+| Table extension | Fields can be added to lists and are searchable <br> Always loaded with the base table <br> Expensive at runtime but easy to use <br> Use only for critical fields |
+| Related tables | Need to set up table relations <br> Dedicated page for editing <br> Requires flow field to be shown in lists <br> Does not affect performance of base table <br> Excellent for factboxes | 
 
-**Limit your Event Subscriptions**
+### Limit your Event Subscriptions
 The following are best practices for getting performant events:
 - There is no significant cost of having a publisher defined
 - Static automatic has a cost over manually binding (there is an overhead of creating and disposing objects)
