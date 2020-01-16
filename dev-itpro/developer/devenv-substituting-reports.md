@@ -1,6 +1,6 @@
 ---
 title: "Substituting Reports"
-description: "How to substitute built-in reports with custom reports."
+description: "How to substitute reports for other reports."
 author: t-blrobl
 ms.custom: na
 ms.date: 10/01/2019
@@ -13,9 +13,10 @@ ms.service: "dynamics365-business-central"
 
 # Substituting Reports
 
-Even though report extensibility is not yet supported, it is possible to substitute reports from the base application with custom reports. This can be done by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**.
+<!--Even though report extensibility is not yet supported, it--> 
+It is possible to substitute reports from the base application with custom reports. This can be done by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**.
 
-## How to substitute a report for another report <!--Another title?-->
+<!-- ## How to substitute a report for another report -->
 
 The following code illustrates how to subscribe a method to the **OnAfterSubstituteReport** event. This method replaces the report specified by the `ReportId` with the one given by the `NewReportId` parameter. In this example the `"Customer - List"` report will be substituted for `"My New Customer - List"`.
 
@@ -31,10 +32,12 @@ codeunit 50100 "Substitute Report"
 }
 ```
 
+For more information on how to subscribe to events, see [Subscribing to Events](devenv-subscribing-to-events.md). 
+
 When the **OnAfterSubstituteReport** event is raised, the event subscriber method is called and  the replacement takes place. 
 
 > [!NOTE]
-The event is called **OnAfterSubstituteReport** to match the pattern followed by other events in the **ReportManagement** codeunit, but the subscriber will be invoked before the substitution takes place.
+> The event is called **OnAfterSubstituteReport** to match the pattern followed by other events in the **ReportManagement** codeunit, but the subscriber will be invoked before the substitution takes place.
 
 The **OnAfterSubstituteReport** event is raised when:
 
@@ -54,20 +57,22 @@ The **OnAfterSubstituteReport** event is raised when:
     - [Print Method](methods-auto\report\reportinstance-print-method.md)
     - [SaveAs Method](methods-auto\report\reportinstance-saveas-method.md)
 
+For more information about raising events, see [Raising Events](devenv-raising-events.md).
+
 ## Good practices
 
 - Consider using the same caption for both reports, given by the [Caption Property](properties/devenv-caption-property.md). Consequently, any links and action captions that lead to the report will match the report itself. This is also relevant for bookmarks linked to a report, since they maintain the caption of the original report, even if it has been substituted for one with another caption.
 
-<!-- Double check this. How can you do this for in-built reports if there is no extensibility?-->
 - Consider hiding the original report from the TellMe window if it is no longer valuable to all users. You can do this by setting the original report to [UsageCategory Property](properties/devenv-usagecategory-property.md) to **None**.
 
 - Consider enhancing the code of the subscriber method to check if the report has already been replaced with another extension. This is done by comparing the `ReportId` and `NewReportId` parameters before making the change, such that if the value of the `NewReportId` parameter is different from the value of the `ReportId` parameter and different from -1, it means that the report has already been substituted for another subscriber of the **OnAfterSubstituteReport** event.
 
 > [!IMPORTANT]
-Make sure that if a report is called on code, you use a compatible report to replace it to avoid run time errors.
+> Make sure that if a report is called on code, you use a compatible report to replace it to avoid run time errors.
 
 ## See Also
 [Report Data Type](methods-auto/report/report-data-type.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
-[GetSubstituteReport Method](methods-auto/report/report-getsubstitutereportid-method.md)  
+[Events in AL](devenv-events-in-al.md)  
+[GetSubstituteReport Method](methods-auto/report/report-getsubstitutereportid-method.md)   
 [Getting Started with AL](devenv-get-started.md)  
