@@ -13,17 +13,16 @@ author:
 # Performance Topics For Developers
 
 In this topic you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
-[Writing efficient pages](performance-developer.md#writing-efficient-pages)  
-[Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
-[Writing efficient reports](performance-developer.md#writing-efficient-reports)  
-[AL performance patterns](performance-developer.md#al-performance-patterns)  
-[Efficient Data access](performance-developer.md#efficient-data-access)  
-[Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
-[Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
+- [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
+- [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
+- [Writing efficient reports](performance-developer.md#writing-efficient-reports)  
+- [AL performance patterns](performance-developer.md#al-performance-patterns)  
+- [Efficient Data access](performance-developer.md#efficient-data-access)  
+- [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
+- [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
 
 
 ## Writing efficient pages
-<!-- (GAP: most content in this section has not been written yet) -->
 There are a number of patterns that a developer can use to get a page to load faster
 - Avoid Unnecessary Recalculation 
 - Do less 
@@ -50,16 +49,18 @@ For more information about Page Background Tasks, see [Page Background Tasks](ht
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has support for Web services to make it easier to integrating with external systems. As a developer, you need to think about performance of web services both seen from the BC server (the endpoint) and as seen from the consumer (the client). 
 
 ### End point performance  
-You should avoid using standard UI pages to expose as OData endpoints. A lot of things such as factboxes are not exposed in Odata, but will use resources to compute. 
-- Also, avoid heavy logic in OnAfterGetCurrRecord 
-- Many SIFT fields 
-- Interaction with factboxes 
+You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as factboxes are not exposed in Odata, but will use resources to compute. 
+
+Things that historically have caused performance on tables that are exposed as endpoints 
+- avoid heavy logic in OnAfterGetCurrRecord 
+- Avoid many SIFT fields 
+- Avoid factboxes 
  
-Instead, use dedicated the API pages as they have been optimized for this scenario. And do select the highest API version available 
+Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. And do select the highest API version available 
 
 Read more about API pages here: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype 
 
-### Client performance 
+### Web Service Client Performance 
 The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has setup throttling limits on web services endpoints to ensure that excessive traffic cannot cause stability and performance issues.
 
 Make sure that your client respects the two HTTP status codes 429 (Too Many Requests) and 504 (Gateway Timeout).
@@ -82,50 +83,46 @@ TODO: readonly intent (when we get to 16.0)
 ## AL performance patterns 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance 
 
-[Use built-in data structures]()  
-[Run async (and parallelize)]()  
-[Use set-based methods instead of looping]()  
-[Other AL performance tips and tricks]()  
+- [Use built-in data structures]()  
+- [Run async (and parallelize)]()  
+- [Use set-based methods instead of looping]()  
+- [Other AL performance tips and tricks]()  
 
-
-<!-- Kennie: todo 
-Pattern: Avoid Unnecessary Recalculation 
-Pattern: Do less 
-Pattern: Use optimistic locking 
-Pattern: Limit your Event Subscriptions 
-Pattern: Know your data stack 
--->
 
 ### Pattern: Use built-in data structures 
-Use TextBuilder when concatenating strings:  
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/textbuilder/textbuilder-data-type 
-See slide 26-27 in [Directions EMEA 2019] 
+AL comes with built-in datastructures that have been optimized for performance and server resource consumption. Make sure that you are familiar with them to make your AL code as efficient as possible.  
 
-When to use a dictionary  
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/dictionary/dictionary-data-type 
-See slide 24 in [Directions EMEA 2019] 
+When concatenating strings, make sure to use the TextBuilder datatype and not repeated use of the += operator on a Text variable.
+- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/textbuilder/textbuilder-data-type 
 
-When to use a list 
-See slide 25 in [Directions EMEA 2019] 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/list/list-data-type 
- 
+If you need a key-value data structure that is optimized for fast lookups, use a Dictionary data type
+- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/dictionary/dictionary-data-type 
+
+Use a List data type if you need an unbounded “array” (where you would previously create a temporary table object)
+- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/list/list-data-type 
+
 
 ### Pattern: Run async (and parallelize) 
-Async execution (offload execution from the UI thread to a background session) 
+It is often desirable to offload AL execution from the UI thread to a background session. 
 
-Don’t let the user wait for batches 
+Here are some examples of this pattern:
+- Don’t let the user wait for batches 
+- Split a big tasks into smaller tasks and run them in parallel
 
-Use the CPU cores on your box (mainly for on-prem) 
-
-Splitting tasks into smaller tasks 
-
-Many different ways to spin up a new task 
+There exists many different ways to spin up a new task 
 - [Job Queue](/business-central/admin-job-queues-schedule-tasks)
-- TaskScheduler.CreateTask 
-- StartSession 
+- TaskScheduler.CreateTask, see https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/taskscheduler/taskscheduler-data-type 
+- StartSession, see https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/session/session-startsession-method
 - [Page Background Task](../developer/devenv-task-scheduler.md) 
 
-Background session options (pros and cons). See slide 41 in [Directions EMEA 2019] 
+They come with different characteristics as described in this table
+
+| Method to start a new task | Properties |
+| ----------- | ----------- |
+| Page Background Task      | Can (will) be cancelled <br> Read-only <br> Callback to parent session <br> Lightweight |
+| StartSession              | Created immediately <br> Runs on same server <br> Not as controlled as a Page Background Task |
+| Task                      | Queued up <br> Any server in a cluster can start it <br> Survives server restarts <br> No logging | 
+| Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
 
 
 ### Pattern: Use set based methods instead of looping 
@@ -133,26 +130,20 @@ The AL methods such as FINDSET, CALCFIELDS, CALCSUMS, and SETAUTOCALCFIELDS are 
 - https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-al-database-methods-and-performance-on-server#calcfields-calcsums-and-count 
 - https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/recordref/recordref-findset-method  
 
-Use CALCSUMS function to calculate totals (see example on slide 14 in [Directions EMEA 2019]) 
+One common use of the CALCSUMS function is to efficiently calculate totals. 
 
-Try to minimize work done in the OnAfterGetRecord trigger code. Common performance coding patterns are
-- Avoiding CALCFIELDS calls 
-- Avoiding repeated calculation (move this outside the loop) 
-- Avoid changing filters (Requires us to throw away the resultset)
 
-Consider using a query object if you want to use a set-based coding paradigm
-These are some pros and cons for query objects:
-ADD TABLE HERE
-Pros 
--Will bypass the AL record data stack, where server reads all fields: 
-- Record.GET ~ SELECT field1, …, field100 FROM <table> WHERE … 
-- With covering index, you can get fast read perf for wide tables 
-- Can join multiple tables 
+Try to minimize work done in the OnAfterGetRecord trigger code. Common performance coding patterns in this trigger are
+- Avoiding CALCFIELDS calls (defer this till the end)
+- Avoiding repeated calculation (move these outside the loop, if possible) 
+- Avoid changing filters (this requires the server to throw away the resultset)
 
-Cons 
-- Query object result sets are not cached in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server data cache 
-- No writes 
-- Cannot add a page on a query object  
+
+Consider using a query object if you want to use a set-based coding paradigm. These pros and cons for using query objects:
+
+| Pros        | Cons        | 
+| ----------- | ----------- |
+| Will bypass the AL record API where server reads all fields. <br> With a covering index, you can get fast read performance for tables with many fields. <br> Can join multiple tables. | Query object result sets are not cached in the servers primary key (data) cache. <br> No writes are allowed. <br> You cannot add a page on a query object. |
 
 Read more about query objects here:
 - https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-query-using-instead-record-variables 
@@ -162,33 +153,29 @@ Read more about query objects here:
 - https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/optimize-sql-query-objects-and-performance 
 
 ### Other AL performance tips and tricks 
-
-IsDirty method: TODO
-
 If you need a fast, non-blocking number sequences that can be used from AL, take a look at the number sequence object type in AL 
 Use a number sequence object if you: 
 - Do not want to use a number series 
 - Can accept holes in the number range. 
 For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md) 
 
+IsDirty method: TODO
 
 TODO: Security filtering (maybe both here and in data access) 
 
 TODO: Use SystemID instead of RECORDID 
 
-**GAP: Table extension impact on performance**
-Extensions are eager joined in the data stack 
+**Table extension impact on performance**
+Table extensions are eager joined in the data stack when accessing the base table, and it is currently not possible to define indexes that span base and extension fields. Therefore, you should avoid splitting your code into too many table extensions. Also, be careful about extending central tables such as GL Entry, as this can severely hurt performance. 
 
-No indexes spanning base and extension fields 
+An alternative when doing data modelling for extending a table with new fields is to use a related table and define a flowfield on the base table. 
 
-Avoid splitting into too many extension 
+These are the pros and cons of the two ways to data model this:
 
-Be careful about extending central tables 
-
-Table extension vs. related table 
-
-See pros and cons on slide 19 in [Directions EMEA 2019]
- 
+| Data model for extending a table | Properties |
+| ----------- | ----------- |
+| Table extension <br> Fields can be added to lists and are searchable <br> Always loaded with the base table <br> Expensive at runtime but easy to use <br> Use only for critical fields |
+| Related tables  <br> Need to set up table relations <br> Dedicated page for editing <br> Requires flow field to be shown in lists <br> Does not affect performance of base table <br> Excellent for factboxes | 
 
 **GAP: Limit your Event Subscriptions**
 See slides 29-32 in [Directions EMEA 2019] 
@@ -199,14 +186,14 @@ See slides 29-32 in [Directions EMEA 2019]
 Many performance issues is related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
   
 ### Tables and keys 
-Many issues stem from missing indexes. 
+Many performance issues can be traced back to missing indexes (also called keys in BC), but index design is often not a key skill for AL developers. In order to have good performance even when (a lot of) data is added to the system, it is empirative to design appropriate indexes according to the way your code will access data. 
 
-Consider indexes matching integration scenarios 
-
-Indexes have a cost to update, so don’t overdo it. 
-
+These topics on indexing are very relevant to know as an AL developer:
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance)  
 - [Key Property](../developer/properties/devenv-key-property.md) 
+- [About SQL Server indexes] https://docs.microsoft.com/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15
+
+Indexes have a cost to update, so do not overdo it. 
 
  
 ### SumIndexField Technology (SIFT)
@@ -236,27 +223,34 @@ These topics cover how AL relates to SQL
 ### How to get insights into how AL translates to SQL 
 If you want to track how the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server translates AL statements to SQL statements, you can either use database statistics in the AL debugger, or use telemetry on long running queries.
 
-Read more here
-- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-debugging#DebugSQL  
-- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/monitor-long-running-sql-queries-event-log#ApplicationInsights
+Read more here:
+- [About database statistics in the AL debugger](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-debugging#DebugSQL)
+- [Telemetry on Long Running SQL Queries](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/monitor-long-running-sql-queries-event-log#ApplicationInsights)
 
 ## Testing and validating performance 
 It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
 
-Troubleshooting 
-- Long Running SQL Queries Involving FlowFields by Disabling SmartSQL https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql  
-- Page Inspection: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inspecting-pages  
+**Performance Unit Testing**
+Use the SessionInformation data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and asserts normal behavior:
+- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/sessioninformation/sessioninformation-data-type
 
-- Validating performance  
-- Instrumenting Telemetry 
+**Performance telemetry**
+The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment). 
+- Long Running SQL Queries: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-telemetry#sending-telemetry-to-microsoft-azure-application-insights-preview
+
+**Troubleshooting**
+The following topics can be of help in troubleshooting performance issues
+- Find missing SIFT indexes for FlowFields by Disabling SmartSQL: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql  
+- Use Page Inspection to find extensions participating on a page: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inspecting-pages  
+
+**Validating performance**
+EVERYTHING IN THIS PARAGRAPH MUST BE VALIDATED TO SEE IF IT IS STILL RELEVANT
 - [Technical checklist](../compliance/apptest-onbeforecompanyopen.md)
 - [The Dynamics NAV performance testing Framework](https://github.com/NAVPERF)
 
-<!-- ALL THE NAV TESTING LINKS MUST BE VALIDATED TO SEE IF THIS IS STILL USEFUL -->
 Videos:
-
-- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 1](https://www.youtube.com/watch?v=GULQmkhGiHo)  
-- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 2](https://www.youtube.com/watch?v=KsJIWEYYp1s)    
+- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 1](https://www.youtube.com/watch?v=GULQmkhGiHo) 
+- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 2](https://www.youtube.com/watch?v=KsJIWEYYp1s) 
 - [How Do I: Run NAV Load Tests Using Visual Studio in Microsoft Dynamics NAV](https://www.youtube.com/watch?v=IG-y8DsXqaQ)  
 - [Setting Up Test Controllers and Test Agents to Manage Tests with Visual Studio](https://msdn.microsoft.com/en-us/library/hh546459.aspx)  
 
