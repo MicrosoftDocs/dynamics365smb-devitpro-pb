@@ -59,17 +59,20 @@ First of all, make sure that you avoid common pitfalls in your SQL Server setup
 [Setting SQL Compatibility Level to Optimize Database Performance](../administration/optimize-sql-set-compatibility-level.md)
 
 
-#### Tune data access  
-[Using SQL Server table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning)  
-[Using SQL Server data compression](../administration/optimize-sql-data-access.md#Compression)  
+#### Tune data access
+These topics describe how you can utilize SQL Server table partitioning and data compression to get faster data retrieval:
+- [Using SQL Server table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning)  
+- [Using SQL Server data compression](../administration/optimize-sql-data-access.md#Compression)  
 
 #### SQL Server vs. Azure SQL database  
-[Differences between Azure SQL database and SQL Server](../deployment/deploy-database-azure-sql-database.md#differences-between-azure-sql-database-and-sql-server)  
+Read more about the difference between SQL Server and Azure SQL database with respect to performance
+- [Differences between Azure SQL database and SQL Server](../deployment/deploy-database-azure-sql-database.md#differences-between-azure-sql-database-and-sql-server)  
 
 #### Troubleshooting database performance issues
-[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
-[Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md)  
-[Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
+These topics can be useful when troubleshooting database performance issues 
+- [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
+- [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md)  
+- [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
 
 #### Performance of bacpac generation
 In the February 2019 update of sqlpackage (the command line tool that is used to generate bacpac/dacpac files), a significant schema compare performance issue when generating a script was solved. Make sure that you use version 18.1 or later if you experience issues in bacpac generation performance.
