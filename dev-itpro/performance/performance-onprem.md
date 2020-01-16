@@ -29,7 +29,8 @@ A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typical
 - Network
 
 ### Web Server 
-[Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
+TODO (DO WE HAVE MORE CONTENT ON WEB SERVER PERF ON-PREM???)
+- [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
 
 ### Server (NST)
 You can adjust the following NST settings related to database performance
@@ -55,9 +56,8 @@ You can adjust NST settings related to the task scheduler to implement resource 
 
 ### Database (SQL Server or Azure SQL database)
 First of all, make sure that you avoid common pitfalls in your SQL Server setup  
-[Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)  
-[Setting SQL Compatibility Level to Optimize Database Performance](../administration/optimize-sql-set-compatibility-level.md)
-
+- [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)  
+- [Setting SQL Compatibility Level to Optimize Database Performance](../administration/optimize-sql-set-compatibility-level.md)
 
 #### Tune data access
 These topics describe how you can utilize SQL Server table partitioning and data compression to get faster data retrieval:
@@ -84,7 +84,7 @@ There is a performance impact if you set up CDC on the database. SQL Server will
 Enabling Transparent Data Enryption (TDE) has a slight performance degradation on SQL Server as it need CPU resources for encryption/decryption of data.
 
 ### Network
-TODO
+TODO 
 
 
 ## Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
