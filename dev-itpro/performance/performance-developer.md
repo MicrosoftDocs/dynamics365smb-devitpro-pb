@@ -177,10 +177,17 @@ These are the pros and cons of the two ways to data model this:
 | Table extension <br> Fields can be added to lists and are searchable <br> Always loaded with the base table <br> Expensive at runtime but easy to use <br> Use only for critical fields |
 | Related tables  <br> Need to set up table relations <br> Dedicated page for editing <br> Requires flow field to be shown in lists <br> Does not affect performance of base table <br> Excellent for factboxes | 
 
-**GAP: Limit your Event Subscriptions**
-See slides 29-32 in [Directions EMEA 2019] 
+**Limit your Event Subscriptions**
+The following are best practices for getting performant events:
+- There is no significant cost of having a publisher defined
+- Static automatic has a cost over manually binding (there is an overhead of creating and disposing objects)
+- Codeunit size of the subscriber matters. Try to have smaller codeunits
+- Use single instance codeunits for subscribers, if possible. 
 
-
+Be aware that table events changes the behavior of SQL optimizations in the BC server:
+- TODO: MODIFYALL/DELETEALL/GlobalTriggers Database Triggers
+- The BC server will issue SQL update/delete statements row in a for loop rather than one SQL statement
+- Impacts MODIFYALL/DELETEALL functions to be able to perform bulk SQL operations to be forced to do single row operations
 
 ## Efficient Data access 
 Many performance issues is related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
@@ -230,20 +237,20 @@ Read more here:
 ## Testing and validating performance 
 It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
 
-**Performance Unit Testing**
+### Performance Unit Testing
 Use the SessionInformation data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and asserts normal behavior:
 - https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/sessioninformation/sessioninformation-data-type
 
-**Performance telemetry**
+### Performance telemetry
 The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment). 
 - Long Running SQL Queries: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-telemetry#sending-telemetry-to-microsoft-azure-application-insights-preview
 
-**Troubleshooting**
+### Troubleshooting
 The following topics can be of help in troubleshooting performance issues
 - Find missing SIFT indexes for FlowFields by Disabling SmartSQL: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql  
 - Use Page Inspection to find extensions participating on a page: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inspecting-pages  
 
-**Validating performance**
+### Validating performance
 EVERYTHING IN THIS PARAGRAPH MUST BE VALIDATED TO SEE IF IT IS STILL RELEVANT
 - [Technical checklist](../compliance/apptest-onbeforecompanyopen.md)
 - [The Dynamics NAV performance testing Framework](https://github.com/NAVPERF)
