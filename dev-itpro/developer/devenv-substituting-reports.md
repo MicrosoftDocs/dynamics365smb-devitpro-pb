@@ -1,7 +1,7 @@
 ---
 title: "Substituting Reports"
 description: "How to substitute reports for other reports."
-author: t-blrobl
+author: blrobl
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
