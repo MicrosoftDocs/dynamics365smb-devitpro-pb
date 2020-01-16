@@ -141,7 +141,7 @@ Try to minimize work done in the OnAfterGetRecord trigger code. Common performan
 
 Consider using a query object if you want to use a set-based coding paradigm. These pros and cons for using query objects:
 
-| Pros        | Cons        | 
+| Pros for using a query object       | Cons for using a query object       | 
 | ----------- | ----------- |
 | Will bypass the AL record API where server reads all fields. <br> With a covering index, you can get fast read performance for tables with many fields. <br> Can join multiple tables. | Query object result sets are not cached in the servers primary key (data) cache. <br> No writes are allowed. <br> You cannot add a page on a query object. |
 
