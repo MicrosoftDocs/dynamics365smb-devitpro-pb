@@ -23,7 +23,7 @@ Almost every object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 
 - Tables and table extensions
 - Table fields  
 - Pages and page extensions
-- Reports and report extensions
+- Reports
 - Data items
 - XMLports  
 - Queries  

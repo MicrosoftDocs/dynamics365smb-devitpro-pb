@@ -635,6 +635,7 @@
 #### [Installing an Update](upgrade/upgrading-cumulative-update.md)
 ### Business Central 2019 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v15.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)

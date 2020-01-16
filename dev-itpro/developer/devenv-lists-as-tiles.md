@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Displaying Data as Tiles
 
-In the client, on list type pages (such as `List`, `ListPart`, and `ListPlus`), users have the option to view the page in the tile view. The tile view shows records as tiles (or bricks) instead of as rows. Tiles optimize space and readability of data, and is especially useful for images, like on a page that show items, customers, and contacts. The tile view compresses up to six columns of data. By default, the tile view will display the first six fields of the page's source table. This article describes how you can customize the tile view for list type pages.  
+In the client, on `List` type pages, users have the option to view the page in the tile view. The tile view shows records as tiles (or bricks) instead of as rows. Tiles optimize space and readability of data, and is especially useful for images, like on a page that show items, customers, and contacts. The tile view compresses up to six columns of data. By default, the tile view will display the first six fields of the page's source table. This article describes how you can customize the tile view for list type pages.  
 
 ## Tile view in the client
 
