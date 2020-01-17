@@ -613,6 +613,7 @@
 ## [Developer](performance/performance-developer.md)
 ## [Online](performance/performance-online.md)
 ## [On-Premises](performance/performance-onprem.md)
+## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
 <!-- upgrade -->
 # Upgrade
