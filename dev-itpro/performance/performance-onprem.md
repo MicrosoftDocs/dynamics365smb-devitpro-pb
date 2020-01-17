@@ -14,7 +14,6 @@ author: KennieNP
 In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises mean deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, which means that if you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises.
 
 Content is ordered in four groups
-
 - Tuning the technology stack
 - Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 - Measure and monitor performance
@@ -104,16 +103,5 @@ The following resources describes ways that you measure and monitor performance 
 - [Tools for Monitoring Performance Counters and Events](../administration/tools-monitor-performance-counters-and-events.md)  
 - [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central](../administration/troubleshoot-long-running-queries-using-event-log.md)  
 - [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
-
-## How to work with a performance problem
-What do you do if users complain that "it is slow"? In this section, we describe a troubleshooting process that can help to guide you to find the root cause of the problem.
-
-Before getting started on solving a performance tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of "slow" operations with users. This is sometimes called "establishing a baseline." 
-
-To solve a performance problem, a common pattern is to do iterations of
-1. Measure system performance and collecting performance data
-2. Locate a bottleneck
-3. Eliminate the bottleneck
-until the "slow" operations are comparable to the established baseline.
 
 ## See Also
