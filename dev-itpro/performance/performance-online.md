@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
-# Performance Online
+# Performance in the Online version of BC
 These sections describe how settings in the online version of BC affects impact the performance experience of users. 
 
 ## Networking (Browser-Datacenter)
