@@ -1,5 +1,5 @@
 ---
-title: Exporting Databases | Microsoft Docs
+title: Exporting Databases
 description: Use the Business Central administration center to export environment databases.  
 author: edupont04
 
@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 12/06/2019
+ms.date: 01/16/2020
 ms.author: edupont
 
 ---
@@ -21,6 +21,8 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 
 > [!IMPORTANT]
 > You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
+>
+> Also, you must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
 
 ## Setting up Azure storage
 
@@ -63,12 +65,28 @@ When you have created the Azure storage account and generated the SAS URI, you c
 4. In the **SAS URI** field, specify the **Blob service SAS URL** value that you copied in the previous section.
 5. In the **Container Name** field, enter the name of the container in the Azure storage account to which you want the .bacpac file exported. If you have already created a container in your Azure storage account, you can enter the name of that container here. Otherwise, if the name that is specified in the **Container Name** field does not already exist in the Azure storage account, it will be created for you.
 
-Once the export operation begins, the .bacpac file is generated and exported to the indicated Azure storage account. The operation may take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account. 
+Once the export operation begins, the .bacpac file is generated and exported to the indicated Azure storage account. The operation may take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account.  
 
 ## Viewing the export history
 
 All database export activity is logged for auditing purposes. To view the history, choose **Database**, and then choose **View Export History** on the action ribbon of the environment details page of the environment.
 
+## Users who can export databases
+
+Permission to export databases is limited to specific types of users, typically internal and delegated administrators. This is not a task that a typical [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user should be able to do, but an administrator can grant permission to a user to export databases, should this be necessary.
+
+- Users from reselling partners
+
+  - Employees who have the **Admin agent** role for this customer in the Partner Center
+
+    In contrast, employees who have the **Helpdesk agent** role *cannot* export databases.
+
+- Users from the organization that subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
+
+  - Users who are internal administrators and have the **Global admin** role in the Office 365 tenant
+  - Users who are members of the *D365 BACKUP/RESTORE* user group
+
+    To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  
 
 ## See also
 
@@ -77,4 +95,4 @@ All database export activity is logged for auditing purposes. To view the histor
 [Managing Environments](tenant-admin-center-environments.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  

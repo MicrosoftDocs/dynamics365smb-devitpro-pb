@@ -78,19 +78,26 @@ You can use the following reports for VAT reporting:
 |----|----|
 |Moved| These VAT-related reports are no longer specific to the UK, so we have made them generally available in the standard product.  |
 
-## Specify the supply type on documents
+## Specify the Supply Type on documents
 You can specify supply types such as sales, loan, exchange, hire, lease, rental, sales on commission, on tax invoices. To do this, you must update the codes and names of the supply types in the **Types of Supply** window.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Removed| Lack of use. The business need that this functionality was introduced to cover is no longer relevant.  |
 
-## Multiple Interest Rates
+## Multiple interest rates
 When you create finance charge terms and reminder terms, for delayed payment penalty, you can specify multiple interest rates so that the penalty fee is calculated from different interest rates in different periods.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Moved| The Multiple Interest Rates feature is no longer specific to the UK, so we have made it generally available in the standard product. |
+
+## Direct Sales Details and Direct Purchase Details reports
+You can view headers with order numbers and descriptions from sales and purchase documents, and filter or select data for these reports based on the general ledger account number, document number, and posting date.
+
+|Moved, Removed, or Replaced?|Why?|
+|----|----|
+|Removed| Lack of use.
 
 ## Objects and Fields that are deleted in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
 Table 10505 has been deleted. The following list shows additional fields that are deleted as a result of the features that have been removed.  
