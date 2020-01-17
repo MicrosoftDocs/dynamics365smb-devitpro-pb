@@ -12,15 +12,15 @@ ms.date: 11/15/2019
 ms.author: jswymer
 ---
 
-# Authorization Operation
+# Authorization Trace
 
-The authentication operation provides information about the authentication of users when they sign in to Business Central, such as:
+The authorization trace provides information about the authorization of users try to sign in to Business Central, including:
 
-- Success or failure of the login attempt
-- Reason of failure
+- Success or failure of the sign-in attempt
+- Reason for failure
 - Type of user (such as normal, administrator, or delegated user) 
-- If the user belongs to the tenant of invited user. 
-- The opened company / If the user can't open the company (authorization issue etc..) 
+- Whether the user belongs to the tenant or is an invited user. 
+- The opened company / If the user can't open the company (authorization issue etc..)
 
 ### <a name="LRSQLQuery"></a>Dimensions for long running SQL queries emitted to Application Insights
 
