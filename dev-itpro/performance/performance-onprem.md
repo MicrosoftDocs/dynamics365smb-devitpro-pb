@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
-# Performance of On-Premises Installations
+# Performance of On-Premises Installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises mean deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, which means that if you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises.
 
 Content is ordered in four groups
@@ -22,11 +22,19 @@ Content is ordered in four groups
 ## Performance tuning the technology stack
 
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typically consists of the following components, where the following components can be tuned to improve performance:
-
+- Client
 - Web Server
 - Server (NST)
 - Database
 - Network
+
+### Client 
+There are three things of importance when dealing with client performance
+- hardware of the computer running the client,
+- choice of browser,
+- network bandwith and latency between the client and the datacenter running [!INCLUDE[prodshort](../developer/includes/prodshort.md).
+
+These topics are described in the [performance documention of the BC service](performance-online.md).
 
 ### Web Server 
 TODO (DO WE HAVE MORE CONTENT ON WEB SERVER PERF ON-PREM???)
@@ -40,7 +48,7 @@ You can adjust the following NST settings related to database performance
 | BufferedInsertEnabled | Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. | [Disabling Bulk Inserts](../administration/optimize-sql-bulk-inserts.md) | 
 | DisableQueryHintForceOrder | Please check if this setting is set to true  | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
 | DisableQueryHintLoopJoin | Please check if this setting is set to true | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
-| DisableSmartSql | If the performance of loading a page that contains FlowFields in BC is bad, you might want to try isolating and testing FlowField queries separately. | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql?branch=performance |
+| DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prodshort](../developer/includes/prodshort.md) is bad, you might want to try isolating and testing FlowField queries separately. | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql?branch=performance |
 | SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes.  |  https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance?branch=performance#Database |
 
 
@@ -95,10 +103,10 @@ It is also common on larger installations to separate traffic based on client ty
 
 The Business Central server (NST) has a built-in thread dispatcher for AL execution. This means that more cores means more parallel execution (but have in mind that AL execution as such is single-threaded (until 2020 Wave 2 release, where we start introducing async processing)). For long running operations such as heavy reports, using faster CPUs will give better performance.
 
-On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to BC. For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)
+On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md). For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)
 
 ## Measure and Monitor performance
-The following resources describes ways that you measure and monitor performance in your BC installation on-prem:
+The following resources describes ways that you measure and monitor performance in your [!INCLUDE[prodshort](../developer/includes/prodshort.md) installation on-prem:
 - [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
 - [Tools for Monitoring Performance Counters and Events](../administration/tools-monitor-performance-counters-and-events.md)  
 - [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central](../administration/troubleshoot-long-running-queries-using-event-log.md)  
