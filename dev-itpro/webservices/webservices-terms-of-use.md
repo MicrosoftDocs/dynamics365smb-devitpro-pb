@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 # Terms of Use
 
-By accessing or using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] APIs, you are agreeing to the Microsoft APIs Terms of Use. 
+By accessing or using any API or Web service exposed in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you are agreeing to the Microsoft APIs Terms of Use. 
 
 For more information, see [Microsoft APIs Terms of Use](https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use).
 
