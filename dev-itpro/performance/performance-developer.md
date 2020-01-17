@@ -76,7 +76,10 @@ Reports in BC are typically either very specific to a single instance of an enti
 
 How to use queries to implement fast reports: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-query-overview 
 
-RDL vs. Word layout performance: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-howto-rdl-report-layout
+
+Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (e.g.  sending emails).
+- https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-howto-rdl-report-layout
+
 
 TODO: readonly intent (when we get to 16.0) 
 
