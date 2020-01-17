@@ -35,48 +35,52 @@ The Copy company operation is not intended to run while business transactions is
 
 Should you need to perform Copy company operation, it is highly recommended to do it outside working hours. Do turn off scheduled jobs while performing Copy company to avoid locking issues.
 
-## Things that affect UI
+## Things that affect UI performance
+Consider personalizing your UI for performance (hide non-essential parts on rolecenter, list and card pages)
+- https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user
 
-Personalize your UI for performance (hide non-essential parts on rolecenter, list and card pages)
-
-Use links over document attachment to improve performance?
+Use links instead of document attachments to improve performance
+- https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-add-link-to-record
 
 ## Faster Data Entry
 Use keyboard shortcuts for faster data entry
+- https://docs.microsoft.com/en-us/dynamics365/business-central/keyboard-shortcuts
 
-Block inactive customer, vendors or items to improve filtering and searching on document data entry
-
-## Don't do this
-- Adjust cost item entries should be set to run as infrequently as possible. (already in Application section)
-- Setup change log on everything https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes 
-- Do not run job queues too frequently
-- If you have a lot of item entries, then do not Adjust item costs automatically (run in the background instead)  
-- Do not postpone setting up global dimensions, as this can be a heavy operation when you have a lot of data: Setup correct global dimensions to avoid changing them later on
+Block inactive customers, vendors or items to improve filtering and searching on document data entry
+- https://docs.microsoft.com/en-us/dynamics365/business-central/receivables-how-block-customers
+- https://docs.microsoft.com/en-us/dynamics365/business-central/payables-how-block-vendors
+- https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-block-items
 
 ## Data search
-Data search (See slide 57 in [Directions EMEA 2019])
+Search in lists searches all columns in the database. 
+
+To avoid resource starvation on broad data searches, a seach might be subject to a timeout in which case the user will see a "Searching for rows is taking too long. Try to search or filter using different criteria." message. 
+
+If users are experiencing slowness in data search, suggest them to set a column filter instead.
+
+## Performance effect of enabling integration on a table
+There is a performance overhead involved in enabling integration on an entity such as Customer or Contact that will impact performance. Only enable integration if you intend to integrate with Dynamics 365 Sales, and only do so on the entities that is needed.
+
+Read more 
+- https://docs.microsoft.com/en-us/dynamics365/business-central/admin-synchronizing-business-central-and-sales
 
 ## Functionality with known performance impact
-These areas require extra testing with realistic data setup 
-- [Performance impact of security filtering Mode](../security/security-filters.md#PerformanceImpact)
-- Item tracking 
-- Configure inventory posting to fit your business needs
-- Dimensions <-should we put design detail docs under dev part? 
-- Dynamics Order tracking 
-- Automatic reservation 
-- Lot/SN Expiration dates 
-- change log https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes 
+These areas of the BC application are known to cause a performance impact and require extra testing with realistic data setup before they are rolled out. 
+- [Security filtering Mode](../security/security-filters.md#PerformanceImpact) 
+- Inventory Posting: https://docs.microsoft.com/en-us/dynamics365/business-central/design-details-inventory-posting
+- Dimensions: https://docs.microsoft.com/en-us/dynamics365/business-central/finance-dimensions
+- Dynamic Order tracking: https://docs.microsoft.com/en-us/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging
+- Automatic reservation: https://docs.microsoft.com/en-us/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging
+- Item tracking and Lot/SN Expiration dates: https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-work-item-tracking
+- Change log: https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes 
 
-## Performance effect of integration records 
-(See slide 33 in [Directions EMEA 2019])
-Enabling integration on a table can hurt performance
-	
-Integration Record table
-Mapping of RecordID to GUID
-Tracks ModifiedOn
-	
-Event listener on modify
-Inefficient to lookup by RecordID
-
+## Please do not do this
+Finally, make sure that you do not repeat these performance mistakes that we have seen cause massive performance issues for customers:
+- Do not adjust cost item entries with a high frequency
+- Do not setup change log on everything https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes 
+- Do not run job queues too frequently
+- Do not adjust item costs automatically if you have a lot of item entries (run in the background instead)  
+- Do not postpone setting up global dimensions, as this can be a heavy operation when you have a lot of data: Setup correct global dimensions to avoid changing them later on
+- Do not run the copy company operation during business hours
 
 ## See Also
