@@ -554,6 +554,7 @@
 <!-- end AL -->
 <!-- web service -->
 # [Web Services](webservices/web-services.md)
+# [Terms of Use](webservices/webservices-terms-of-use.md)
 ## General
 ### [Publishing a Web Service](webservices/publish-web-service.md)
 ### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
