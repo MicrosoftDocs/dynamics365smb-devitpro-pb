@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
-## How to work with a performance problem
+# How to work with a performance problem
 What do you do if users complain that "it is slow"? In this section, we describe a troubleshooting process that can help to guide you to find the root cause of the problem.
 
 Before getting started on solving a performance tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of "slow" operations with users. This is sometimes called "establishing a baseline." 
