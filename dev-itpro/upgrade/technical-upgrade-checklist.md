@@ -21,7 +21,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Step|More info| Done |
 |----|-----------|--|
 |Convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
-|Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
+|Transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 
 ## Prepare the old application database
 
