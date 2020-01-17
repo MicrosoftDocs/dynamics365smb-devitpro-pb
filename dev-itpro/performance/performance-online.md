@@ -13,18 +13,22 @@ author: KennieNP
 # Performance in the Online version of BC
 These sections describe how settings in the online version of BC affects impact the performance experience of users. 
 
-## Networking (Browser-Datacenter)
+## Client-side performance
+There are three things of importance when dealing with client performance in BC
+- hardware of the computer running the client
+- choice of browser
+- network bandwith and latency between the client and the datacenter running BC
+
+MIKE BORG WILL WRITE CONTENT HERE
+- Hardware
+- Browser
+
 MIKE BORG WILL WRITE CONTENT HERE
 - Latency
 - Bandwidth 
+- How to measure this
 
-How to measure this
 
-
-## Client-side performance
-MIKE BORG WILL WRITE CONTENT HERE
-- Browsers
-- Hardware
 
 ## Performance os sandbox environments
 The BC service offers the ability to test code in a sandbox enviroment prior to deploying to a production environment. 
