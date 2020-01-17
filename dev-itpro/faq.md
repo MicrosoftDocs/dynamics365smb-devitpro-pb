@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/12/2019
+ms.date: 01/17/2020
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -31,9 +31,7 @@ For information about lifecycle support for [!INCLUDE [prodshort](includes/prods
 
 ## How often are production databases backed up?
 
-Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 14 days.
-
-As an administrator, you you cannot access or manage these backups because they are managed automatically by Microsoft. For more information about the underlying technology, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
+Databases are protected by automatic backups that are retained for 30 days. As an administrator, you cannot access or manage these backups because they are managed automatically by Microsoft. For more information about the underlying technology, see [Automatic backups](/azure/sql-database/sql-database-automated-backups).
 
 ## Can I request a copy of the backup of my production database?
 
