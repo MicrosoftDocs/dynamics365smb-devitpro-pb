@@ -12,9 +12,10 @@ ms.date: 11/15/2019
 ms.author: jswymer
 ---
 
-# Telemetry in 
+# Telemetry 
 
-|Telemetry tarce | Description |See more|
+
+|Trace | Description |See more|
 |----------|-------------|--------|
 |Authentication|Provides information about user sign-in.|[Authentication Operation](telemetry-authentication-trace.md). |
 |Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|[Long Running Operation (SQL Query) Operation](telemetry-long-running-sql-query-trace.md)|

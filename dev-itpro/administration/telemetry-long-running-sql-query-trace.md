@@ -12,7 +12,7 @@ ms.date: 11/15/2019
 ms.author: jswymer
 ---
 
-# Long Running Operation (SQL Query)
+# Long Running Operation (SQL Query) Trace
 
 Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. To get a quick overview, you can go the [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 
