@@ -27,7 +27,7 @@ Overload resolution is performed by using procedure signatures to find the best 
 
 ## Example
 The following example shows how a **ToString** method can be implemented with and without using procedure overloads.  
-In the first code snippet, a **ToString** procedure is implemented. This takes a Variant value and inspects the type of the value to delegate to different implementations. If the caller passes a value of a different type than Integer, Date and Text, an empty string will be returned. This can lead to bugs that will only show up at runtime. 
+In the first code snippet, a **ToString** procedure is implemented. This takes a Variant value and inspects the type of the value to delegate to different implementations. If the caller passes a value of a different type than Integer, Date, and Text, an empty string will be returned. This can lead to bugs that will only show up at runtime. 
 
 
 ```
@@ -87,5 +87,3 @@ codeunit 10 StringifierWithOverloads
 
 ## See Also
 [AL Development Environment](../devenv-reference-overview.md)  
-
-

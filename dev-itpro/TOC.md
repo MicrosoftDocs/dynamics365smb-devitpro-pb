@@ -38,11 +38,14 @@
 <!-- deployment-->
 # Deployment
 ## [Overview](deployment/deployment.md)
+## What's New or Changed
+### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
+### [Preparing Demonstration Environments](administration/demo-environment.md)
 ### [Business Central Administration Center](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Technical Support of Business Central](technical-support.md)
@@ -632,6 +635,7 @@
 #### [Installing an Update](upgrade/upgrading-cumulative-update.md)
 ### Business Central 2019 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v15.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)

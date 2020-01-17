@@ -26,6 +26,7 @@ var
 ```
 
 ## Example
+```
 page 500100 MyPage
 {
     SourceTable = Customer;
@@ -93,7 +94,7 @@ pageextension 500101 MyPageExt extends MyPage
         }
     }
 }
-
+```
 
 ## See Also  
 [AL Method Reference](methods/devenv-al-method-reference.md)   

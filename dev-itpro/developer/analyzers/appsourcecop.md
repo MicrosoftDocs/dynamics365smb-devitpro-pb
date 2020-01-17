@@ -2,7 +2,7 @@
 title: "AppSourceCop Analyzer"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/10/2019
+ms.date: 01/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,7 +43,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0024](appsourcecop-as0024-parameterscannotberemovedoraddedinexternalprocedures.md)|Parameters cannot be removed or added in external procedures|Parameters cannot be removed or added in external procedures.|Parameters have been removed or added in '{0}', this should be avoided in external procedures.|Upgrade|Error|true|
 |[AS0025](appsourcecop-as0025-parameterscannotberemovedfromevents.md)|Parameters cannot be removed from events|Parameters cannot be removed from events.|Parameters have been removed from '{0}', this should be avoided in events.|Upgrade|Error|true|
 |[AS0026](appsourcecop-as0026-parametertypesubtypecannotbemodifiedinpublicapi.md)|The type and subtype of parameters cannot be modified in events and external procedures|The type and subtype of parameters cannot be modified in events and external procedures.|The type or subtype of '{0}' has been modified, this should be avoided in events and external procedures.|Upgrade|Error|true|
-|[AS0027](appsourcecop-as0027-modifyingarraysizeofvarparameterinpublicapi.md)|Modifying the array size of a var parameter in events and external procedures is not allowed|Modifying the array size of a var parameter in events and external procedures is not allowed.|The array size of a var parameter in '{0}' has been modified, this should be avoided in events and external procedures.|Upgrade|Error|true|
+|[AS0027](appsourcecop-as0027-modifyingarraysizeofparameterinpublicapi.md)|Modifying the array size of a parameter in events and external procedures is not allowed|Modifying the array size of a parameter in events and external procedures is not allowed.|The array size of a parameter in '{0}' has been modified, this should be avoided in events and external procedures.|Upgrade|Error|true|
 |[AS0028](appsourcecop-as0028-reducingarraysizeofparameterinpublicapi.md)|Reducing the array size of a parameter in events and external procedures is not allowed|Reducing the array size of a parameter in events and external procedures is not allowed.|The array size of a parameter in '{0}' has been reduced, this should be avoided in events and external procedures.|Upgrade|Error|true|
 |[AS0029](appsourcecop-as0029-pagedeletionnotallowed.md)|Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break|Pages and PageExtensions that have been published must not be deleted.|{0} '{1}' has been deleted.|Upgrade|Error|true|
 |[AS0030](appsourcecop-as0030-pagerenamenotallowed.md)|Pages and PageExtensions that have been published must not be renamed, since dependent extensions may break|Pages and PageExtensions that have been published must not be renamed.|{0} '{1}' has been renamed to '{3}'.|Upgrade|Error|true|
@@ -74,6 +74,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0060](appsourcecop-as0060-unsafemethodinvocationisnotallowed.md)|Unsafe methods cannot be invoked in an AppSource application|The method cannot be invoked in an AppSource application because it can lead to runtime errors or undefined behavior.|The method '{0}' cannot be invoked in an AppSource application.|Extensibility|Error|true|
 |[AS0061](appsourcecop-as0061-donotsubscribetooncompanyopenevents.md)|Procedures must not subscribe to CompanyOpen events|Procedures must not subscribe to CompanyOpen events.|Procedure '{0}' subscribes to '{1}'.|Extensibility|Error|true|
 |[AS0062](appsourcecop-as0062-useapplicationareaproperty.md)|Page controls must use the ApplicationArea property|Page controls must use the ApplicationArea property.|Control '{0}' must have a value for the ApplicationArea property.|Extensibility|Error|true|
+|[AS0063](appsourcecop-as0063-changingvarparamatermodifier.md)|Adding or removing a var modifier in events and external procedures is not allowed|Adding or removing a var modifier in events and external procedures is not allowed.|A var modifier in '{0}' has been modified, this should be avoided in events and external procedures.|Upgrade|Error|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

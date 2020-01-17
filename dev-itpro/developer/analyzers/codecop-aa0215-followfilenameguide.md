@@ -1,8 +1,8 @@
 ---
-title: "Follow the best practices for naming ('/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming')."
+title: "Follow the best practices for naming ('https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming')."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 01/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0215
-Follow the best practices for naming ('/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').  
+Follow the best practices for naming ('https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').  
 
 ## Description
-Follow the best practices for naming ('/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').
+Follow the best practices for naming ('https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming').
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

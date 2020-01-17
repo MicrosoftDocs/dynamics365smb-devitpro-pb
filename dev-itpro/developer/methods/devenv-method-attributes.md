@@ -30,63 +30,34 @@ For example, the Integration attribute has two arguments, and the syntax is:
 
 The following method attributes are available:
 
-
 - [Business Attribute](devenv-business-attribute.md)  
-
 - [ConfirmHandler Attribute](devenv-confirmhandler-attribute.md)  
-
 - [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)  
-
 - [FilterPageHandler Attribute](devenv-filterpagehandler-attribute.md)  
-
 - [HandlerFunctions Attribute](devenv-handlerfunctions-attribute.md)
-
 - [HyperlinkHandler Attribute](devenv-hyperlinkhandler-attribute.md)
-
-- [IntegrationEvent Attribute](devenv-integration-attribute.md)
-
-- [MessageHandler Attribute](devenv-messagehandler-attribute.md)  
-
-- [ModalPageHandler Attribute](devenv-modalpagehandler-attribute.md)
-
-- [NonDebuggable Attribute](devenv-nondebuggable-attribute.md)  
-- [Scope Attribute](devenv-scope-attribute.md)
-- [InternalEvent Attribute](devenv-internal-attribute.md)  
-- [Obsolete Attribute](devenv-obsolete-attribute.md)
 - [InDataSet Attribute](devenv-indataset-attribute.md)
-
+- [IntegrationEvent Attribute](devenv-integration-attribute.md)
+- [InternalEvent Attribute](devenv-internal-attribute.md)  
+- [MessageHandler Attribute](devenv-messagehandler-attribute.md)  
+- [ModalPageHandler Attribute](devenv-modalpagehandler-attribute.md)
+- [NonDebuggable Attribute](devenv-nondebuggable-attribute.md)  
 - [Normal Attribute](devenv-normal-attribute.md)  
-
+- [Obsolete Attribute](devenv-obsolete-attribute.md)
 - [PageHandler Attribute](devenv-pagehandler-attribute.md)
-
 - [RecallNotificationHandler Attribute](devenv-recallnotificationhandler-attribute.md)
-
 - [ReportHandler Attribute](devenv-reporthandler-attribute.md)
-
 - [RequestPageHandler Attribute](devenv-requestpagehandler-attribute.md)  
-
+- [Scope Attribute](devenv-scope-attribute.md)
 - [SendNotificationHandler Attribute](devenv-sendnotificationhandler-attribute.md)
-
 - [SessionSettingsHandler Attribute](devenv-sessionsettingshandler-attribute.md)
-
 - [StrMenuHandler Attribute](devenv-strmenuhandler-attribute.md)
-
 - [Test Attribute](devenv-test-attribute.md)
-
 - [TestPermissions Attribute](devenv-testpermissions-attribute.md)
 
-<!--Links
-[FilterPageHandler Attribute](devenv-filterpagehandler-attribute.md)
-
-
-[InDataSet Attribute](devenv-filterpagehandler-attribute.md)
-
+<!--
 [None Attribute](devenv-filterpagehandler-attribute.md)
-
-[Normal Attribute](devenv-filterpagehandler-attribute.md)
-
 [RunOnClient Attribute](devenv-reporthandler-attribute.md)
-
 [Scope Attribute](devenv-reporthandler-attribute.md)
 
 [SecurityFiltering Attribute](devenv-reporthandler-attribute.md)

@@ -1,8 +1,8 @@
 ---
-title: "You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&amp;topicid=38066)."
+title: "You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066)."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 01/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0218
-You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&amp;topicid=38066).  
+You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066).  
 
 ## Description
 You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects (https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066).
