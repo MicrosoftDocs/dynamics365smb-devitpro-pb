@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/06/2020
+ms.date: 01/17/2020
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -17,11 +17,11 @@ The topics in the Deployment section are intended to help a partner prepare a [!
 
 ## Take prospects and customers online
 
-You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by asking them to get a [free trial](https://go.microsoft.com/fwlink/?linkid=847861), and by showing them the apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. You can also create [online sandboxes](/dynamics365/business-central/across-how-create-sandbox-environment) and tailor these tenants with demonstration experiences that will attract prospects in your market space. With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example. So for you as a reseller, deployments of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are taken care of for you so that you can focus on your prospects and customers.  
+You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by asking them to get a [free trial](https://go.microsoft.com/fwlink/?linkid=847861), and by showing them the apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. You can also create give powerful demos that will attract prospects in your market space. With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example. So for you as a reseller, deployments of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are taken care of for you so that you can focus on your prospects and customers.  
 
 ### Get set up for selling Business Central online
 
-If your organization has a background as resellers of [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] or other on-premises products, you have to get get set up in the Microsoft Partner Center. For more information, see [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md).
+If your organization has a background as resellers of [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] or other on-premises products, you have to get set up in the Microsoft Partner Center. For more information, see [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md).
 
 For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
 

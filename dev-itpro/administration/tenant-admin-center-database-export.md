@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 01/16/2020
+ms.date: 01/17/2020
 ms.author: edupont
 
 ---
@@ -90,6 +90,7 @@ Permission to export databases is limited to specific types of users, typically 
 
 ## See also
 
+[Delegated Administrator Access to Business Central Online](delegated-admin.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

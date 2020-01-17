@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 01/08/2020
+ms.date: 01/17/2020
 ms.author: edupont
 ---
 
@@ -37,7 +37,7 @@ For each user you can assign permissions for 2 categories of tasks:
 
 When you add a user from your organization, and you choose the **Assists your customers as** field, you must specify the relevant role for this user to be able to login in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environments, *Admin agent* or *Helpdesk agent*.  
 
-These users can manage implementation, support, and troubleshooting tasks for your customers. Once the reseller relationship with a customer is established, they will be able to login into the p[!INCLUDE [prodshort](../developer/includes/prodshort.md)] environments of the customer without a license. The number of partner users that can access customer environments is not restricted.  
+These users can manage implementation, support, and troubleshooting tasks for your customers. Once the reseller relationship with a customer is established, they will be able to login into the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environments of the customer without a license. The number of partner users that can access customer environments is not restricted.  
 
 This way of accessing customer resources is called *delegated administration*, and the partner users are therefore called *delegated administrators* or *delegated admins* in daily shorthand.  
 
@@ -46,7 +46,7 @@ Both roles will provide your users with exactly the same level of access to the 
 > [!NOTE]
 > These users cannot provide accounting services for the customers. For this purpose, the customers must use the **External Accountant** license which is also available via CSP.  
 
-In the Microsoft 365 admin center and Microsoft Azure Management portal, customers and partners can invite external users (guests) into the Active Directory. When a partner user is added as a guest to the customer's Azure AD, they no longer can log in as a delegated admin into the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. In order to log in, the local user (guests or native) must have a valid [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license assigned to them.  
+[!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 ## Join the Ready to Go program
 
