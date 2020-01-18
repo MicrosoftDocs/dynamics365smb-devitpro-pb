@@ -35,7 +35,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1. Download the latest available update for Business Central 2019 version 15 that is compatible with your version 14.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706)
+    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
   
     The guidelines in this article assume that you are running the latest available update.
 
@@ -180,7 +180,9 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
 This task is optional, but it is recommended. You can choose to skip it for now and do it later. In this task, you will increase the application_version that is stored in $ndo$dbproperty table of the application database, which is not done automatically. This serves two purposes:
 
 - Enables running the Start-NAVDataUpgrade cmdlet later in Task 8 of this article. The application version is compared with the tenant's version. If the application version is greater, then a data upgrade can be performed. If you skip this task then you will have to use the `-SkipAppVersionCheck` switch with  Start-NAVDataUpgrade cmdlet in Task 8. 
-- The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version. For example, you could set the value to application build no. which you can get from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+- The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version.
+
+As a guideline, we recommend that you set the value to application build number for the version 15 update you are working with. You can get this number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706) page.
 
 To change the application version, run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
