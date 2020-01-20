@@ -15,24 +15,59 @@ This article explains how to resolve the compilation error that you get for page
 
 ## Resolution
 
-In the `ControlAddinReady` function for page 6400 and 6401, replace the following code:
+1. In codeunit **6400 Flow Service Management**, make the following changes:
 
-``` 
-CurrPage.FlowAddin.Initialize(
-  FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-  AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
-  AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowGraphResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE));
-```
+   
+   1. Add the following text constants to replace the existing text constant **FlowGraphResourceUrlTxt**:
+    
+      |Name|ConstValue|
+      |----|----------|
+      |AzureADGraphResourceUrlTxt|https://graph.windows.net|
+      |MicrosoftGraphResourceUrlTxt|https://graph.microsoft.com| 	
 
-With the following code:
+   2. Change the value of the **TemplateFilterTxt** text constant to **Microsoft Dynamics 365 Business Central**. 
 
-```
-CurrPage.FlowAddin.Initialize(
-        FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
-        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
-        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE));
-```
+   3. Add two global functions, one called **GetAzureADGraphhResourceUrl** and the other called **GetMicrosoftGraphhResourceUrl**. 
+   
+      These will replace the existing function **GetFlowGraphResourceUrl**.
+    
+      For each function, set the **FunctionVisibility** property to **External** and specify a **Text** type return value. 
+          
+      Add the code `EXIT(AzureADGraphResourceUrlTxt)` and `EXIT(MicrosoftGraphResourceUrlTxt);` to the functions as shown:
+
+      ```
+      [External] GetAzureADGraphhResourceUrl() : Text
+        EXIT(AzureADGraphResourceUrlTxt);
+  
+      [External] GetMicrosoftGraphhResourceUrl() : Text
+        EXIT(MicrosoftGraphResourceUrlTxt);
+      ```
+    4. Add a global function called **GetTemplateFilter** that has a **Text** type return value, and add the code `EXIT(TemplateFilterTxt)` to the function:
+
+      ```
+      GetTemplateFilter() : Text
+          // Gets the default text value that filters Flow templates when opening page 6400.
+          EXIT(TemplateFilterTxt);
+      ```
+2. In page 6400 and 6401, in the `ControlAddinReady` function, replace the following code:
+
+    ``` 
+    CurrPage.FlowAddin.Initialize(
+      FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
+      AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
+      AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowGraphResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE));
+    ```
+    
+    With the following code:
+    
+    ```
+    CurrPage.FlowAddin.Initialize(
+            FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE),
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,FALSE));
+    ```
+    
 
 
 ## See Also  
