@@ -31,21 +31,23 @@ When the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database need
 
 Number series in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are a shared resource that sometimes cause locking issues. Not all records that you create in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are financial transactions that must use sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that are assigned a number from a number series, but are not subject to financial auditing and/or can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. For more information, see [Gaps in Number Series](/dynamics365/business-central/ui-create-number-series#gaps-in-number-series).
 
-### Be cautious about the Copy company operation
-The Copy company operation is not intended to run while business transactions is being applied to BC. First, the operation is very likely to induce locks on the tables that data is copied from and these locks will block users from transaction in the company. Second, the operation is using a lot of resources on the BC database, which can in turn cause resource starvation for users working in other companies.  
+### Be cautious with the **Copy company** operation
 
-Should you need to perform Copy company operation, it is highly recommended to do it outside working hours. Do turn off scheduled jobs while performing Copy company to avoid locking issues.
+The **Copy company** operation is not intended to run while business transactions is being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operation is very likely to induce locks on the tables that data is copied from and these locks will block users from transaction in the company. Second, the operation is using a lot of resources on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, which can in turn cause resource starvation for users working in other companies.  
+
+Should you need to perform a **Copy company** operation, it is highly recommended to do it outside working hours. Do turn off scheduled jobs while performing **Copy company** to avoid locking issues.
 
 ## Things that affect UI performance
-Consider personalizing your UI for performance (hide non-essential parts on rolecenter, list and card pages)
-- https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user
+
+Consider personalizing your UI for performance (hide non-essential parts on role center, list, and card pages)
+- [Personalize Your Workspace](/dynamics365/business-central/ui-personalization-user)
 
 Use links instead of document attachments to improve performance
-- https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-add-link-to-record
+- [Manage Attachments, Links, and Notes on Cards and Documents](/dynamics365/business-central/ui-how-add-link-to-record)
 
-## Faster Data Entry
+## Faster data entry
 Use keyboard shortcuts for faster data entry
-- https://docs.microsoft.com/en-us/dynamics365/business-central/keyboard-shortcuts
+- [Keyboard Shortcuts](/dynamics365/business-central/keyboard-shortcuts)
 
 Block inactive customers, vendors or items to improve filtering and searching on document data entry
 - https://docs.microsoft.com/en-us/dynamics365/business-central/receivables-how-block-customers
