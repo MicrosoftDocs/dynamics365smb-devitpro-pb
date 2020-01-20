@@ -67,18 +67,19 @@ If users are experiencing slowness in data search, suggest them to set a column 
 ## Performance effect of enabling integration on a table
 There is a performance overhead involved in enabling integration on an entity such as Customer or Contact that will impact performance. Only enable integration if you intend to integrate with Dynamics 365 Sales, and only do so on the entities that is needed.
 
-Read more 
-- https://docs.microsoft.com/en-us/dynamics365/business-central/admin-synchronizing-business-central-and-sales
+For more information, see [Synchronizing Data in Business Central and Dynamics 365 Sales](/dynamics365/business-central/admin-synchronizing-business-central-and-sales).
 
 ## Functionality with known performance impact
-These areas of the BC application are known to cause a performance impact and require extra testing with realistic data setup before they are rolled out. 
-- [Security filtering Mode](../security/security-filters.md#PerformanceImpact) 
-- Inventory Posting: https://docs.microsoft.com/en-us/dynamics365/business-central/design-details-inventory-posting
-- Dimensions: https://docs.microsoft.com/en-us/dynamics365/business-central/finance-dimensions
-- Dynamic Order tracking: https://docs.microsoft.com/en-us/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging
-- Automatic reservation: https://docs.microsoft.com/en-us/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging
-- Item tracking and Lot/SN Expiration dates: https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-work-item-tracking
-- Change log: https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes 
+
+These areas of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application are known to cause a performance impact and require extra testing with realistic data setup before they are rolled out. 
+
+- [Security filtering Mode](../security/security-filters.md#PerformanceImpact)  
+- [Inventory Posting](/dynamics365/business-central/design-details-inventory-posting)  
+- [Dimensions](/dynamics365/business-central/finance-dimensions)  
+- [Dynamic Order tracking](/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging)  
+- [Automatic reservation](/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging)  
+- [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
+- [Change log](/dynamics365/business-central/across-log-changes)  
 
 ## Please do not do this
 Finally, make sure that you do not repeat these performance mistakes that we have seen cause massive performance issues for customers:
