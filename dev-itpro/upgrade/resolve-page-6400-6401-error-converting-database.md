@@ -15,6 +15,8 @@ This article explains how to resolve the compilation error that you get for page
 
 ## Resolution
 
+The resolution requires that you make changes to codeunit 6400, as well as pages 6400 and 6401.
+
 1. In codeunit **6400 Flow Service Management**, make the following changes:
 
    
