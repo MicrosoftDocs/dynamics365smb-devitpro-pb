@@ -13,6 +13,7 @@ author:
 # Performance Topics For Developers
 
 In this topic you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
+
 - [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
 - [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
 - [Writing efficient reports](performance-developer.md#writing-efficient-reports)  
