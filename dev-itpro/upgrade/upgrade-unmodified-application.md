@@ -182,7 +182,7 @@ This task is optional, but it is recommended. You can choose to skip it for now 
 - Enables running the Start-NAVDataUpgrade cmdlet later in Task 8 of this article. The application version is compared with the tenant's version. If the application version is greater, then a data upgrade can be performed. If you skip this task then you will have to use the `-SkipAppVersionCheck` switch with  Start-NAVDataUpgrade cmdlet in Task 8. 
 - The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version.
 
-As a guideline, we recommend that you set the value to application build number for the version 15 update you are working with. You can get this number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706) page.
+The version has the format `major.minor.build.revision`, such as, '14.3.14824.1'. As a minimum, you increase the revision by 1. However, as a guideline, we recommend that you set the value to application build number for the version 15 update you are working with. You can get this number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706) page.
 
 To change the application version, run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -195,7 +195,7 @@ For example:
 Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.1.38071.0 -Force
 ```
 
-Later in this article, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database.
+Later in this article, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database ($ndo$tenantproperty table).
 <!--
 ## Task 4: Configure the version 15 server instance 
 
