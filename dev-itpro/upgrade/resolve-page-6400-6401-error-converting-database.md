@@ -15,7 +15,7 @@ This article explains how to resolve the compilation error that you get for page
 
 ## Resolution
 
-1. In codeunit 6400 Flow Service Management, make the following changes:
+1. In codeunit **6400 Flow Service Management**, make the following changes:
 
    
    1. Add the following text constants to replace the existing text constant **FlowGraphResourceUrlTxt**:
@@ -42,7 +42,7 @@ This article explains how to resolve the compilation error that you get for page
       [External] GetMicrosoftGraphhResourceUrl() : Text
         EXIT(MicrosoftGraphResourceUrlTxt);
       ```
-    4. Add a global function called GetTemplateFilter that has a **Text** type return value, and add the code `EXIT(TemplateFilterTxt)`:
+    4. Add a global function called **GetTemplateFilter** that has a **Text** type return value, and add the code `EXIT(TemplateFilterTxt)` to the function:
 
       ```
       GetTemplateFilter() : Text
