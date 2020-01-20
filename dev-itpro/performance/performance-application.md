@@ -15,20 +15,21 @@ The topics in this session are tips and tricks on how to setup BC for performanc
 
 ## Run things in the background
 It is often desirable to offload work from the user session to happen in the background. Examples are
-- Schedule long running reports to run in background: https://docs.microsoft.com/en-us/dynamics365/business-central/ui-work-report#ScheduleReport
-- Schedule jobs (e.g. posting) to run in background
+- [Schedule long running reports to run in background](/dynamics365/business-central/ui-work-report#ScheduleReport)
+- Schedule jobs (for example posting) to run in background
 - Enable background posting in areas where your business is using reservations and item tracking using serial and lot numbers
-- Adjust item costs as a periodic background job (i.e. don't adjust automatically) 
+- Adjust item costs as a periodic background job (i.e. do not adjust automatically) 
 
-Tip! Don't run job queues too frequently
+> [!TIP]  
+> Do not run job queues too frequently.
 
 ## Avoid locking
-When the BC database needs to have exclusive access to a table or a data row, it will issue a lock. When a another session needs to access a locked resource, it needs to wait until the session holding the lock is finished with its work. There are a few places in the BC application where you can reduce the chance of locking. 
 
-### Use Number series that allow gaps
-Number series in BC are a shared resource that sometimes cause locking issues
-Not all records that you create in Business Central are financial transactions that must use sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that are assigned a number from a number series, but are not subject to financial auditing and/or can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. 
-- https://docs.microsoft.com/en-us/dynamics365/business-central/ui-create-number-series#gaps-in-number-series
+When the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database needs to have exclusive access to a table or a data row, it will issue a lock. When another session needs to access a locked resource, it needs to wait until the session holding the lock is finished with its work. There are a few places in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application where you can reduce the risk of locking. 
+
+### Use number series that allow gaps
+
+Number series in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are a shared resource that sometimes cause locking issues. Not all records that you create in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are financial transactions that must use sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that are assigned a number from a number series, but are not subject to financial auditing and/or can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. For more information, see [Gaps in Number Series](/dynamics365/business-central/ui-create-number-series#gaps-in-number-series).
 
 ### Be cautious about the Copy company operation
 The Copy company operation is not intended to run while business transactions is being applied to BC. First, the operation is very likely to induce locks on the tables that data is copied from and these locks will block users from transaction in the company. Second, the operation is using a lot of resources on the BC database, which can in turn cause resource starvation for users working in other companies.  
