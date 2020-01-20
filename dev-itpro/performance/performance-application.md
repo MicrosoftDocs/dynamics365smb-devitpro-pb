@@ -82,12 +82,14 @@ These areas of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] app
 - [Change log](/dynamics365/business-central/across-log-changes)  
 
 ## Please do not do this
+
 Finally, make sure that you do not repeat these performance mistakes that we have seen cause massive performance issues for customers:
-- Do not adjust cost item entries with a high frequency
-- Do not setup change log on everything https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes 
-- Do not run job queues too frequently
-- Do not adjust item costs automatically if you have a lot of item entries (run in the background instead)  
-- Do not postpone setting up global dimensions, as this can be a heavy operation when you have a lot of data: Setup correct global dimensions to avoid changing them later on
-- Do not run the copy company operation during business hours
+
+- Do not adjust cost item entries with a high frequency.
+- Do not set up a change log on everything. For more information, see [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).  
+- Do not run job queues too frequently.
+- Do not adjust item costs automatically if you have a lot of item entries (run in the background instead).  
+- Do not postpone setting up global dimensions, as this can be a heavy operation when you have a lot of data: set up correct global dimensions to avoid changing them later on.
+- Do not run the **Copy company** operation during business hours.
 
 ## See Also
