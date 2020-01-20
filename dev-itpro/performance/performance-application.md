@@ -46,18 +46,21 @@ Use links instead of document attachments to improve performance
 - [Manage Attachments, Links, and Notes on Cards and Documents](/dynamics365/business-central/ui-how-add-link-to-record)
 
 ## Faster data entry
+
 Use keyboard shortcuts for faster data entry
+
 - [Keyboard Shortcuts](/dynamics365/business-central/keyboard-shortcuts)
 
 Block inactive customers, vendors or items to improve filtering and searching on document data entry
-- https://docs.microsoft.com/en-us/dynamics365/business-central/receivables-how-block-customers
-- https://docs.microsoft.com/en-us/dynamics365/business-central/payables-how-block-vendors
-- https://docs.microsoft.com/en-us/dynamics365/business-central/inventory-how-block-items
+
+- [Block Customers](/dynamics365/business-central/receivables-how-block-customers)
+- [Block Vendors](/dynamics365/business-central/payables-how-block-vendors)
+- [Block Items from Sales or Purchasing](/dynamics365/business-central/inventory-how-block-items)
 
 ## Data search
 Search in lists searches all columns in the database. 
 
-To avoid resource starvation on broad data searches, a seach might be subject to a timeout in which case the user will see a "Searching for rows is taking too long. Try to search or filter using different criteria." message. 
+To avoid resource starvation on broad data searches, a search might be subject to a timeout in which case the user will see a *"Searching for rows is taking too long. Try to search or filter using different criteria."* message. 
 
 If users are experiencing slowness in data search, suggest them to set a column filter instead.
 
