@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 12/12/2019
+ms.date: 01/20/2020
 ms.author: edupont
 ---
 
@@ -201,6 +201,15 @@ Alternatively, you can create explicit anchors by tagging your subheading to giv
 You would then be able to use the same link across all locales: ```[My translated subheading](article2.md#subheading)```, which would render in HTML as ```myurl.com/docs/article2#subheading``` across all languages.  
 
 For more information, see [Using hashtag in cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-hashtag-in-cross-reference) in the GitHub documentation.  
+
+## Translate the content
+
+You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) (DTS) to translate your own our the Microsoft-provided content into other languages. The service is hosted in Lifecycle Services and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
+
+To translate content for either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], choose [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] as the product as shown in the following illustration:
+
+> [!div class="mx-imgBorder"]
+> ![Shows translation project for NAV or Business Central](../developer/media/admin/lcs_translation_navhelp.png)
 
 ## See also
 
