@@ -1,5 +1,5 @@
 ---
-title: "Do not have identifiers with quotes in the name."
+title: "StrSubstNo or string concatenation must not be used as a parameter in the Error method."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/21/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0100
-Do not have identifiers with quotes in the name.  
+# CodeCop Rule AA0231
+StrSubstNo or string concatenation must not be used as a parameter in the Error method.  
 
 ## Description
-Do not have identifiers with quotes in the name.
+The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method. Instead use the ability of the Error method to insert values into the string with placeholders.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
