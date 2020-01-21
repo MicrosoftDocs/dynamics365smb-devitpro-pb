@@ -83,19 +83,26 @@ Sometimes the tenant has run into a problem that the partner cannot resolve. In 
 
 Both internal and delegated administrators can access [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and then, in the Help menu, choose the **New Support Request** button. This logs you in to the Power Platform Admin Center. Here, you can launch the **New Support Request** guide that will help you identify potential solutions or workarounds based on how you fill in the various fields.  
 
-<!--If you are a delegated administrator, you are asked to file a support request in the [Partner Center](https://partnercenter.microsoft.com/partner/home). If you are an internal administrator, you can use different keywords to explore different solutions. If that does not help you, you must contact your partner.  -->
+In the Power Platform Admin Center, both internal and delegated administrators can explore different solutions based on the keywords that they specify.  
 
 > [!NOTE]
 > The internal administrator cannot contact Microsoft directly. If you suspect that something is wrong with your [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must contact your partner for next steps.
 
-### <a name="submitsupportrequest"></a>Submitting support requests on behalf of your customer in Partner Center
+### <a name="submitsupportrequest"></a>Submitting support requests on behalf of your customer
 
-As the delegated administrator, if you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the **Support** menu to submit a support request on behalf of your customer. This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.  
+As the delegated administrator, if you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the Help <!--**Support**--> menu to submit a support request on behalf of your customer.  
 
 > [!TIP]
 > Alternatively, you can use customer-specific URLs such as `https://admin.powerplatform.microsoft.com/account/login/[customer tenant ID]`.
 
-In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate. You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers. For more information, see [View solutions or enter a support request through the new support center](/power-platform/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the Power Platform administration content.  
+#### To start the process of submitting a new support request
+
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
+2. In the **?** menu, choose **New Support Request**.
+
+    This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.
+
+In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate, but remember to use the **See solutions** button to find potential guidance or workarounds. You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers. For more information, see [View solutions or enter a support request through the new support center](/power-platform/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the Power Platform administration content.  
 
 > [!IMPORTANT]
 > Your company must be registered as a partner in order to submit a support request to Microsoft, and you must have the ASfP (Advanced Support for Partners) support plan. The support person can be a member of the **Helpdesk agent** group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad). Your service account manager can get you more information about getting the ASfP, and if you already have a support plan, they can get the contract information and access ID that you must specify when you submit a new support request on behalf of your customer.  
@@ -115,10 +122,10 @@ Internal and delegated administrators can report this outage to Microsoft by usi
 > [!NOTE]
 > This option is not available in sandbox environments.  
 
-To report an outage:
+### To report an outage
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
-2. In the action ribbon, choose **Report Production Outage**.
+2. In the action ribbon, choose **Support**, and then choose **Report Production Outage**.
 3. In the **Report Production Outage** pane, choose the outage type:
 
     - Unable to log on (all users)
