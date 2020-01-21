@@ -57,7 +57,7 @@
 <!--#### How Microsoft runs the service -->
 #### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 #### [Components and Capabilities](deployment/app-components.md)
-#### [Licensing in Dynamics 365 Business Central](deployment/licensing.md)
+#### [Licensing](deployment/licensing.md)
 #### [Add your App to AppSource](administration/appsource.md)
 #### Embed Apps
 ##### [Embed App Overview](deployment/embed-app-overview.md)

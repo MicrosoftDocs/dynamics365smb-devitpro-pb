@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/09/2019
+ms.date: 01/09/2020
 ---
 # Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
