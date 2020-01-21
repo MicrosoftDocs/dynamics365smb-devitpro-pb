@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 12/12/2019
+ms.date: 01/20/2020
 ms.author: edupont
 ---
 
@@ -135,7 +135,7 @@ For example, to create a pull request to the MicrosoftDocs/dynamics365smb-docs r
 2. Choose **Sync** to push the changes up to your repo on GitHub.
 3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose send **Pull Request**.
 
-## Getting by without GitHub
+## Get the content without a GitHub account
 
 If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them.
 
@@ -147,9 +147,9 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 2. Choose the green **Clone or download** button, and then choose **Download ZIP**.
 3. Open the downloaded *dynamics365smb-docs-pr.de-de-live.zip* file and extract to a relevant location.
 
-    Now you have a copy of Microsoft's content, and you can generate HTML files for use on Help Server or elsewhere as described in the [Building HTML files](#building-html-files) section.
+    Now you have a copy of Microsoft's content, and you can generate HTML files for use on Help Server or elsewhere as described in the [Build HTML files](#build-html-files) section.
 
-## Building HTML files
+## Build HTML files
 
 For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). DocFX is an open source tool for converting markdown files, such as if you want to preview your content locally, generate content for your website, or if you want to publish to the legacy Microsoft Dynamics NAV Help Server. This section provides some guidance on how you can use DocFX to publish HTML files for the Dynamics NAV Hep Server.  
 
@@ -201,6 +201,15 @@ Alternatively, you can create explicit anchors by tagging your subheading to giv
 You would then be able to use the same link across all locales: ```[My translated subheading](article2.md#subheading)```, which would render in HTML as ```myurl.com/docs/article2#subheading``` across all languages.  
 
 For more information, see [Using hashtag in cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-hashtag-in-cross-reference) in the GitHub documentation.  
+
+## Translate the content
+
+You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) (DTS) to translate your own our the Microsoft-provided content into other languages. The service is hosted in Lifecycle Services and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
+
+To translate content for either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], choose [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] as the product as shown in the following illustration:
+
+> [!div class="mx-imgBorder"]
+> ![Shows translation project for NAV or Business Central](../developer/media/admin/lcs_translation_navhelp.png)
 
 ## See also
 

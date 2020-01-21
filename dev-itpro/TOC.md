@@ -308,6 +308,7 @@
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
+### [Substituting Reports](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
@@ -611,7 +612,6 @@
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## Online
 ### [Overview](upgrade/upgrading-to-business-central-online.md)
-### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 ### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -636,6 +636,7 @@
 #### [Installing an Update](upgrade/upgrading-cumulative-update.md)
 ### Business Central 2019 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v15.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
