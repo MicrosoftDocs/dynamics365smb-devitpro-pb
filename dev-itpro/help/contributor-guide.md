@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 12/12/2019
+ms.date: 01/20/2020
 ms.author: edupont
 ---
 
@@ -23,7 +23,7 @@ There are different repos in GitHub for the source content and each of the langu
 When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated weekly, and the related language-specific repos are updated less frequently, based on when new translations are made available. If you fork one of our repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
 
 > [!TIP]
-> You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a Help Server website, for example. For more information, see the [Getting by without GitHub](#getting-by-without-github) section. However, if you want to extend or customize the Microsoft content, we recommend that you join us in GitHub.
+> You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a Help Server website, for example. For more information, see the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, if you want to extend or customize the Microsoft content, we recommend that you join us in GitHub.
 
 For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is all about, see [User Assistance Model](../user-assistance.md).
 
@@ -80,7 +80,7 @@ Microsoft's GitHub repos for [!INCLUDE [prodshort](../developer/includes/prodsho
 The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the Docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
 
 > [!NOTE]
-> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media contain CAB files for Help Server. However, you can always get newer content from the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, you can get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Getting by without GitHub](#getting-by-without-github) sections, respectively.
+> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media contain CAB files for Help Server. However, you can always get newer content from the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, you can get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
 
 ### Get updates from Microsoft
 
@@ -135,7 +135,7 @@ For example, to create a pull request to the MicrosoftDocs/dynamics365smb-docs r
 2. Choose **Sync** to push the changes up to your repo on GitHub.
 3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose send **Pull Request**.
 
-## Getting by without GitHub
+## Get the content without a GitHub account
 
 If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them.
 
@@ -147,9 +147,9 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 2. Choose the green **Clone or download** button, and then choose **Download ZIP**.
 3. Open the downloaded *dynamics365smb-docs-pr.de-de-live.zip* file and extract to a relevant location.
 
-    Now you have a copy of Microsoft's content, and you can generate HTML files for use on Help Server or elsewhere as described in the [Building HTML files](#building-html-files) section.
+    Now you have a copy of Microsoft's content, and you can generate HTML files for use on Help Server or elsewhere as described in the [Build HTML files](#build-html-files) section.
 
-## Building HTML files
+## Build HTML files
 
 For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). DocFX is an open source tool for converting markdown files, such as if you want to preview your content locally, generate content for your website, or if you want to publish to the legacy Microsoft Dynamics NAV Help Server. This section provides some guidance on how you can use DocFX to publish HTML files for the Dynamics NAV Hep Server.  
 
@@ -201,6 +201,15 @@ Alternatively, you can create explicit anchors by tagging your subheading to giv
 You would then be able to use the same link across all locales: ```[My translated subheading](article2.md#subheading)```, which would render in HTML as ```myurl.com/docs/article2#subheading``` across all languages.  
 
 For more information, see [Using hashtag in cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-hashtag-in-cross-reference) in the GitHub documentation.  
+
+## Translate the content
+
+You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) (DTS) to translate your own our the Microsoft-provided content into other languages. The service is hosted in Lifecycle Services and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
+
+To translate content for either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], choose [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] as the product as shown in the following illustration:
+
+> [!div class="mx-imgBorder"]
+> ![Shows translation project for NAV or Business Central](../developer/media/admin/lcs_translation_navhelp.png)
 
 ## See also
 

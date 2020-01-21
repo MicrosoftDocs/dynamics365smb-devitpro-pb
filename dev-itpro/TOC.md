@@ -311,6 +311,7 @@
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
+### [Substituting Reports](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
