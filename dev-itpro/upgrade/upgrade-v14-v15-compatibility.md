@@ -1,6 +1,6 @@
 ---
 title: Business Central 14.X to 15.X compatibility matrix
-description: See which Business Central 15 updates are compatible with each Business Central 14 update.
+description: See which Business Central 15 updates are compatible with each Business Central 14 update as a compatibility matrix.
 ms.custom: na
 ms.date: 01/15/2019
 ms.reviewer: na
@@ -11,6 +11,7 @@ ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
+
 # [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix
 
 When upgrading from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15), it is important that your Business Central 14 version is compatible with the Business Central 15 version that you want to upgrade to.
