@@ -29,4 +29,4 @@ and continue until the "slow" operations are comparable to the established basel
 [Performance Topics For Developers](performance-developer.md)  
 [How Application Configurations Affect Performance](performance-application.md)  
 [Performance Online](performance-online.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md) 
+[Performance of On-Premises Installations](performance-onprem.md)  

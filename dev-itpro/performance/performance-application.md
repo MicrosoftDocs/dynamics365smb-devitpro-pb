@@ -97,5 +97,5 @@ Finally, make sure that you do not repeat these performance mistakes that we hav
 [Performance Overview](performance-overview.md)  
 [Performance Topics For Developers](performance-developer.md)  
 [Performance Online](performance-online.md)  
-[Performance On-Premises](performance-onprem.md)  
+[Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  

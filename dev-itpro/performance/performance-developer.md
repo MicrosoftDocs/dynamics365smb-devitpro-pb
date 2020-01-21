@@ -277,5 +277,5 @@ The following articles explain what you can do as a developer to tune your devel
 [Performance Overview](performance-overview.md)  
 [How Application Configurations Affect Performance](performance-application.md)  
 [Performance Online](performance-online.md)  
-[Performance On-Premises](performance-onprem.md)  
+[Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
