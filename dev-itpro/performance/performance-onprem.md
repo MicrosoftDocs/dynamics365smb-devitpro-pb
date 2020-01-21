@@ -46,10 +46,10 @@ You can adjust the following NST settings related to database performance
 | Server setting | Description    | Read more      |
 | -------------- | -------------- | -------------- |
 | BufferedInsertEnabled | Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. | [Disabling Bulk Inserts](../administration/optimize-sql-bulk-inserts.md) | 
-| DisableQueryHintForceOrder | Please check if this setting is set to true  | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
-| DisableQueryHintLoopJoin | Please check if this setting is set to true | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
-| DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prodshort](../developer/includes/prodshort.md) is bad, you might want to try isolating and testing FlowField queries separately. | https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql?branch=performance |
-| SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes.  |  https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance?branch=performance#Database |
+| DisableQueryHintForceOrder | Please check if this setting is set to true  | https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
+| DisableQueryHintLoopJoin | Please check if this setting is set to true | https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
+| DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prodshort](../developer/includes/prodshort.md) is bad, you might want to try isolating and testing FlowField queries separately. | https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql?branch=performance |
+| SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes.  |  https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/configure-server-instance?branch=performance#Database |
 
 
 #### Web service limits 
