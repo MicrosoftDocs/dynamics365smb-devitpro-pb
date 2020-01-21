@@ -15,11 +15,13 @@ What do you do if users complain that "it is slow"? In this section, we describe
 
 Before getting started on solving a performance tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of "slow" operations with users. This is sometimes called "establishing a baseline." 
 
-To solve a performance problem, a common pattern is to do iterations of
+To solve a performance problem, a common pattern is to do iterations of the following:
+
 1. Measure system performance and collecting performance data
 2. Locate a bottleneck
 3. Eliminate the bottleneck
-until the "slow" operations are comparable to the established baseline.
+
+and continue until the "slow" operations are comparable to the established baseline.
 
 ## See Also
 
