@@ -13,18 +13,17 @@ ms.service: "dynamics365-business-central"
 
 # Substituting Reports
 
-<!--Even though report extensibility is not yet supported, it--> 
-It is possible to substitute reports from the base application with custom reports. This can be done by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**.
+Contrary to pages and tables, extensibility is not yet supported for report objects in [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)]. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**, which will perform the substitution when raised.
 
-<!-- ## How to substitute a report for another report -->
+## How to substitute a report for another report
 
-The following code illustrates how to subscribe a method to the **OnAfterSubstituteReport** event. This method replaces the report specified by the `ReportId` with the one given by the `NewReportId` parameter. In this example the `"Customer - List"` report will be substituted for `"My New Customer - List"`.
+To substitute a report, you create a method and subscribe it to the **OnAfterSubstituteReport** event, as shown in the code below. The `OnSubstituteReport` method replaces the report specified by the `ReportId` with the one given by the `NewReportId` parameter. In this example the `"Customer - List"` report will be substituted for `"My New Customer - List"`.
 
 ```
 codeunit 50100 "Substitute Report"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterSubstituteReport', '', false, false)]
-    local procedure OnAfterSubstituteReport(ReportId: Integer; var NewReportId: Integer)
+    local procedure OnSubstituteReport(ReportId: Integer; var NewReportId: Integer)
     begin
         if ReportId = Report::"Customer - List" then
             NewReportId := Report::"My New Customer - List";
@@ -34,12 +33,12 @@ codeunit 50100 "Substitute Report"
 
 For more information on how to subscribe to events, see [Subscribing to Events](devenv-subscribing-to-events.md). 
 
-When the **OnAfterSubstituteReport** event is raised, the event subscriber method is called and  the replacement takes place. 
+When the **OnAfterSubstituteReport** event is raised, the event subscriber method is called and   the report is replaced.
 
 > [!NOTE]
 > The event is called **OnAfterSubstituteReport** to match the pattern followed by other events in the **ReportManagement** codeunit, but the subscriber will be invoked before the substitution takes place.
 
-The **OnAfterSubstituteReport** event is raised when:
+The **OnAfterSubstituteReport** event is raised when one of the following actions takes place:
 
 1. The user activates a page action that runs the report to be substituted, that is, an action that has the [RunObject Property](properties/devenv-runobject-property.md) set to the report. 
 2. The report is invoked from the Tell Me window.
