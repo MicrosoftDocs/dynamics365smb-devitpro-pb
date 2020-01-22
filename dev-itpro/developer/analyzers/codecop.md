@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/20/2020
+ms.date: 01/21/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,6 +73,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0226](codecop-aa0226-captionlanguagevaluemustbefilled.md)|The value of the Caption property of Fields must be filled in.|The value of the Caption property of Fields must be filled in.|The value of the {0} Caption property for {1} {2} must be filled in.|Localizability|Warning|true|
 |[AA0227](codecop-aa0227-alwaysguardmethodswithunhandlederrorsinupgradecodeunits.md)|Optional return value should not be omitted in upgrade codeunits.|In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors.|Optional return value of the method should not be omitted in upgrade codeunits.|Design|Warning|true|
 |[AA0230](codecop-aa0230-noversionnumberonbcassembliesdotnetvars.md)|Version should not be specified for internal assemblies.|Version number should not be specified for internal assemblies to avoid errors during upgrade procedures.|Version should not be specified for internal assembly '{0}'.|Design|Warning|true|
+|[AA0231](codecop-aa0231-donotusestrsubstnoinerrormessage.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method. Instead use the ability of the Error method to insert values into the string with placeholders.|Do not use the StrSubstNo or string concatenation as a parameter in the Error method.|Design|Warning|true|
 |[AA0470](codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md)|Placeholders should have a comment explaining their content.|Provide an explanation that describes the content of each of the placeholders.|Variable '{0}' with placeholders should have a comment explaining their content.|Localizability|Warning|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
