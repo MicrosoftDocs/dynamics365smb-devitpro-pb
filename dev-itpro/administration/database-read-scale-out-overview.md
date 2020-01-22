@@ -26,7 +26,7 @@ You need to do three things to start using read scale-out:
 
 1. Enable read scale-out on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
 2. As a developer, define the default database access intent (read-only or read-write) on selected reports or query objects.
-3. At runtime, overwrite the default database access intent on reports, pages of the type API, and queries.
+3. If needed, overwrite the default database access intent on reports, pages of the type API, and queries at runtime.
 
 ### Enable read scale-out on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database
 
