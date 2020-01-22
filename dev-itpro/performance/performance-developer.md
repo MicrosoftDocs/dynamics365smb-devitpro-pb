@@ -58,7 +58,7 @@ Things that have historically caused performance on tables that are exposed as e
 - Avoid many SIFT fields 
 - Avoid factboxes 
  
-Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. And do select the highest API version available 
+Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. Do select the highest API version available. And please do not use the beta version of the API pages.
 
 Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md) 
 
