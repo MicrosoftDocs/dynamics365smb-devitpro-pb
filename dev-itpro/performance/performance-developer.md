@@ -75,17 +75,15 @@ Read more about web service limits here: https://docs.microsoft.com/dynamics-nav
 ## Writing efficient reports
 Reports in BC are typically either very specific to a single instance of an entity (e.g. an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities (e.g. XXX). Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
 
-How to use queries to implement fast reports: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-query-overview 
+How to use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md)
 
-
-Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (e.g.  sending emails).
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-howto-rdl-report-layout
+Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
 
 TODO: readonly intent (when we get to 16.0) 
 
 ## AL performance patterns 
-Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance 
+Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance.
 
 - [Use built-in data structures]()  
 - [Run async (and parallelize)]()  
@@ -94,7 +92,7 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 
 ### Pattern: Use built-in data structures 
-AL comes with built-in datastructures that have been optimized for performance and server resource consumption. Make sure that you are familiar with them to make your AL code as efficient as possible.  
+AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you are familiar with them to make your AL code as efficient as possible.  
 
 When concatenating strings, make sure to use the TextBuilder datatype and not repeated use of the += operator on a Text variable.
 - https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/textbuilder/textbuilder-data-type 
