@@ -70,7 +70,7 @@ Handling Status Code 429 requires the client to adopt a retry logic while provid
 
 Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit, but splitting the request into multiple requests - and then dealing with potential 429, by applying a backoff strategy.
 
-Read more about web service limits here: https://docs.microsoft.com/dynamics-nav/api-reference/v1.0/dynamics-rate-limits
+Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
 ## Writing efficient reports
 Reports in BC are typically either very specific to a single instance of an entity (e.g. an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities (e.g. XXX). Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
