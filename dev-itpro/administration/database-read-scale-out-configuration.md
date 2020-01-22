@@ -10,11 +10,11 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-## Configuring a [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] Database for Read Scale-Out
+# Configuring a [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] Database for Read Scale-Out
 
 In the [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] Online service, read scale-out is readily available and automatically enabled on the databases.
 
-For [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] on-premises, you must: 
+For [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] on-premises, you must do the following: 
 
 1. Check whether your database supports read scale-out.
 2. Enable read scale-out.
@@ -25,6 +25,6 @@ If the [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] database on 
 
 ## See also
 
-[Changing Collation of Existing Database](../cside/cside-change-database-collation.md)  
-[Multitenant Deployment Architecture in Business Central](Multitenant-Deployment-Architecture.md)  
-[Creating and Altering [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases (Spring 2019 and earlier)](../cside/cside-create-databases.md)  
+[Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  
+[Optimizing SQL Server Performance](../administration/optimize-sql-server-performance.md)  
+[DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md)  
