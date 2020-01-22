@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0231
-StrSubstNo or string concatenation must not be used as a parameter in the Error method.  
+StrSubstNo or string concatenation must not be used as a parameter in the [Error](../developer/methods-auto/dialog/dialog-error-method.md) method.  
 
 ## Description
 The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method. Instead use the ability of the Error method to insert values into the string with placeholders.
@@ -68,7 +68,7 @@ end;
 ```
 
 ## Good and bad practices for fixing the rule
-Use the ability of the `Error` method to insert values (expressions) into the string that has a placeholder.
+Use the ability of the [Error](../developer/methods-auto/dialog/dialog-error-method.md) method to insert values (expressions) into the string that has a placeholder.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
