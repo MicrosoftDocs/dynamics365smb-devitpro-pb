@@ -164,7 +164,7 @@
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
 #### Utilizing Read Scale-Out
 ##### [Overview](administration/database-read-scale-out-overview.md)
-##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-overview.md)
+##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
