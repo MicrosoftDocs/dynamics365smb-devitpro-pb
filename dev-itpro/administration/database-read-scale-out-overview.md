@@ -32,7 +32,7 @@ You need to do three things to start using read scale-out:
 
 In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online service, read scale-out is readily available and automatically enabled on the databases.
 
-For on-premises installations, see [Configuring your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database for read scale-out](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-configuration?branch=tfs337368-readscaleout) to learn how to enable read scale-out on the databases.
+For on-premises installations, see [Configuring your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database for read scale-out](database-read-scale-out-configuration.md) to learn how to enable read scale-out on the databases.
 
 ### Define the default database access intent in AL code
 
@@ -59,3 +59,4 @@ When data is committed to the primary database, the transaction log entries are 
 ## See also
 
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
+[Performance Overview](../performance/performance-overview.md)
