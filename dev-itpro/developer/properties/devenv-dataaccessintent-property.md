@@ -49,6 +49,8 @@ From the client, the property value can be overwritten by using page **9880 Data
 
 ## See Also  
 
+[Utilizing Read Scale-Out for Better Performance](../../administration/database-read-scale-out-overview.md)  
+[Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  
 [Properties](devenv-properties.md)   
 [Page Properties](devenv-page-properties.md)  
 [InDataSet Property](devenv-indataset-property.md)
