@@ -60,7 +60,7 @@ Things that have historically caused performance on tables that are exposed as e
  
 Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. And do select the highest API version available 
 
-Read more about API pages here: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype 
+Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md) 
 
 ### Web Service Client Performance 
 The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has setup throttling limits on web services endpoints to ensure that excessive traffic cannot cause stability and performance issues.
