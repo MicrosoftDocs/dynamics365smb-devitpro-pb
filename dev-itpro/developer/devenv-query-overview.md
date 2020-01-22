@@ -69,3 +69,4 @@ end;
 [Query Properties](properties/devenv-query-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  
