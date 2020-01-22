@@ -49,11 +49,12 @@ For more information about Page Background Tasks, see [Page Background Tasks](ht
 ## Writing efficient Web Services 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has support for Web services to make it easier to integrating with external systems. As a developer, you need to think about performance of web services both seen from the BC server (the endpoint) and as seen from the consumer (the client). 
 
-### End point performance  
-You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as factboxes are not exposed in Odata, but will use resources to compute. 
+### Endpoint performance  
+You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as factboxes are not exposed in OData, but will use resources to compute.
 
-Things that historically have caused performance on tables that are exposed as endpoints 
-- avoid heavy logic in OnAfterGetCurrRecord 
+Things that have historically caused performance on tables that are exposed as endpoints:
+
+- Avoid heavy logic in `OnAfterGetCurrRecord`
 - Avoid many SIFT fields 
 - Avoid factboxes 
  
