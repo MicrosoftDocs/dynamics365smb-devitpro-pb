@@ -15,5 +15,8 @@ ms.author: solsen
 # Interfaces Overview
 An interface in AL is similar to an interface in any other programming language. An interface is a syntactical contract that can be implemented by a non-abstract method. The interface defines commonalities....
 
+## Syntax
+
+## Code example
 
 ## See Also
