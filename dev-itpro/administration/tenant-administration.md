@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/19/2019
+ms.date: 01/23/2020
 ms.author: edupont
 ---
 
@@ -56,33 +56,13 @@ As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner
 [!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
+### Connect with customers
+
+[!INCLUDE [csp-connect-customer](../developer/includes/csp-connect-customer.md)]
+
 ### Acting as a delegated administrator
 
-As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups, Admin Agents and Helpdesk Agents, in the partner's Azure AD tenant that are used for *delegated administration*. When a customer grants the delegated administration privilege to a partner:
-
-- The **Admin Agent** group is assigned to the **Global Administrator** role in the customer's Azure AD tenant.  
-- The **Helpdesk Agent** group is assigned to the **Helpdesk Administrator** role in the customer's Azure AD tenant.  
-
-Based on the roles assigned, members of both groups can sign in to the customer's Azure AD tenant, Office 365 services, [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants by using their partner credentials. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad) in the Partner Center documentation.  
-
-For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
-
-#### Restricted access to Business Central as delegated administrator
-
-When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
-
-The following tasks are *not* available to the delegated administrator:
-
-- Set up jobs to run as scheduled tasks in the job queue
-- Use the **Edit in Excel** action or interact with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] data in Excel using the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] add-in for Excel.
-
-    You can still use the **Open in Excel** action to view data in Excel.
-
-- Use the **Invite External Accountant** assisted setup guide
-
-    Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.
-- Change the experience to Premium
-- Install apps from AppSource
+As a reselling partner, you have delegated administration access to their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and other services. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
 
 ### Manage technical support
 
@@ -97,7 +77,7 @@ However, sometimes 30 days is not quite enough to decide if they want to buy [!I
 If the prospect wants to extend the trial further than those 30 days, the partner can extend it another 30 days if the administrator, acting as the delegated administrator, log into the prospect's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and extend the trial using the same **Extend Trial Period** guide. However, after those additional 30 days, the prospect must either purchase [!INCLUDE[prodshort](../developer/includes/prodshort.md)], or the partner can ask Microsoft for an additional extension of the trial by contacting Support.  
 
 > [!TIP]
-> As a reselling partner, you can suggest your prospects sign up for a trial, but you can also help them set up a customized demonstration environment based on a sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Creating a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml).  
+> As a reselling partner, you can suggest your prospects sign up for a trial, but you can also help set up a customized demonstration environment based on a sandbox environment or a trial environment. In both cases, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](demo-environment.md).  
 
 ## See Also
 
