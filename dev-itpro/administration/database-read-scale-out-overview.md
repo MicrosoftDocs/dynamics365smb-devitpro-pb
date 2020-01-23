@@ -40,7 +40,9 @@ When you develop solutions for [!INCLUDE[prodshort](../developer/includes/prodsh
 
 ### Overwrite the database access intent on reports, API pages, and queries
 
-Because of the way High Availability databases replicate data changes from the primary database to its secondary replicas, there can be a delay of up to a few seconds when reading data from a secondary replica of the database. If this data delay is not acceptable for a given report, query, or API page used in a business process, you can overwrite the default database access intent. For more information, see [Managing Database Access Intent](https://review.docs.microsoft.com/en-us/dynamics365/business-central/admin-data-access-intent?branch=tfs337368-readscaleout).
+Because of the way High Availability databases replicate data changes from the primary database to its secondary replicas, there can be a delay of up to a few seconds when reading data from a secondary replica of the database. If this data delay is not acceptable for a given report, query, or API page used in a business process, you can overwrite the default database access intent from the UI. 
+
+For more information, see [Managing Database Access Intent](https://review.docs.microsoft.com/en-us/dynamics365/business-central/admin-data-access-intent?branch=tfs337368-readscaleout).
 
 ## Frequently asked questions about read scale-out
 
