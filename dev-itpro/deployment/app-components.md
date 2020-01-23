@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 01/22/2020
+ms.date: 01/23/2020
 ---
 
 # Components and Capabilities
@@ -36,16 +36,16 @@ The following integration capabilities of the [!include[prodshort](../developer/
 
 |Integration capability  |Status  |
 |------------------------|--------|
-|Dynamics 365 API endpoint |Available if the base application objects are unchanged |
-|Microsoft Office Outlook Add-in | Available  |
-|Microsoft Power BI | Available if the customer has a Power BI license|
-|Microsoft Power Automate| Available if the customer has a Power Automate license|
-|Microsoft Power Apps| Available|
-|Microsoft 1st party integration apps included with [!include[prodshort](../developer/includes/prodshort.md)] (Yodlee, Quick Books, OCR, AMC, and others)| Available, but in many cases the partner must set up a separate agreement with these service providers|
-|Azure machine learning| Available i the partner has an Azure ML subscription|
-|Integration with Dynamics 365 Sales| Available|
-|Microsoft Graph     | Currently under evaluation        |
-|Accountant Hub| Available in specific countries |
+|[Dynamics 365 API endpoint](../developer/devenv-develop-connect-apps.md) |Available if the base application objects are unchanged |
+|[Outlook Add-in](/dynamics365/business-central/admin-outlook) | Available  |
+|[Power BI](/dynamics365/business-central/admin-powerbi) | Available if the customer has a Power BI license|
+|[Power Automate](/dynamics365/business-central/across-how-use-financials-data-source-flow)| Available if the customer has a Power Automate license|
+|[Power Apps](/dynamics365/business-central/across-how-use-financials-data-source-powerapps)| Available|
+|Microsoft 1st party integration apps included with [!include[prodshort](../developer/includes/prodshort.md)] ([Yodlee](/dynamics365/business-central/ui-extensions-yodlee-bank-feeds), [Quick Books](/dynamics365/business-central/ui-extensions-quickbooks-payroll), [OCR](/dynamics365/business-central/across-how-use-ocr-pdf-images-files), [AMC](/dynamics365/business-central/ui-extensions-amc-banking), and [others](/dynamics365/business-central/ui-extensions))| Available, but in many cases the partner must set up a separate agreement with these service providers|
+|[Azure machine learning](/azure/machine-learning/studio/)| Available if the partner has an Azure ML subscription|
+|[Integration with Dynamics 365 Sales](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)| Available|
+|[Microsoft Graph](/graph/overview)  | Currently under evaluation        |
+|[Accountant Hub](/dynamics365/accountants/)| Available in specific countries |
 
 ## See Also
 
