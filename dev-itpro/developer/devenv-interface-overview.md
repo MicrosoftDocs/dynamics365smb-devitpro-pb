@@ -28,7 +28,8 @@ You can declare variables as a given interface to allow passing objects that imp
 
 ## Interface example
 
-The following example ...
+The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature, the other interface is `IShipping` which has a method `GetShippingMethod`, also with a certain signature. The codeunits `CompanyAddressProvider` and `PrivatAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method.
+...
 
 ```
 interface IAddressProvider 
