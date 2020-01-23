@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 
 # Substituting Reports
 
-Contrary to pages and tables, extensibility is not yet supported for report objects in [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)]. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**, which will perform the substitution when raised.
+Contrary to pages and tables, extensibility is not yet supported for report objects in [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)]. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**.
 
 ## How to substitute a report for another report
 
@@ -33,12 +33,12 @@ codeunit 50100 "Substitute Report"
 
 For more information on how to subscribe to events, see [Subscribing to Events](devenv-subscribing-to-events.md). 
 
-When the **OnAfterSubstituteReport** event is raised, the event subscriber method is called and   the report is replaced.
+When the **OnAfterSubstituteReport** event is raised, the event subscriber method is called and the substitution takes place.
 
 > [!NOTE]
 > The event is called **OnAfterSubstituteReport** to match the pattern followed by other events in the **ReportManagement** codeunit, but the subscriber will be invoked before the substitution takes place.
 
-The **OnAfterSubstituteReport** event is raised when one of the following actions takes place:
+The **OnAfterSubstituteReport** event is raised when:
 
 1. The user activates a page action that runs the report to be substituted, that is, an action that has the [RunObject Property](properties/devenv-runobject-property.md) set to the report. 
 2. The report is invoked from the Tell Me window.
