@@ -1,8 +1,8 @@
 ---
 title: "Dictionary Data Type"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 01/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dictionary Data Type
-Represents a collection of keys and values.
+Represents an unordered collection of keys and values. The Dictionary data type is optimized for fast lookup of values.
 
 
 

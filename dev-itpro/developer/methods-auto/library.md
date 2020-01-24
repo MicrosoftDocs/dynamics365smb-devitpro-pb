@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/14/2019
+ms.date: 01/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[Debugger](debugger/debugger-data-type.md)|Enables communication with a debugger.|
 |[Decimal](decimal/decimal-data-type.md)|Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.|
 |[Dialog](dialog/dialog-data-type.md)|Represents a dialog window.|
-|[Dictionary](dictionary/dictionary-data-type.md)|Represents a collection of keys and values.|
+|[Dictionary](dictionary/dictionary-data-type.md)|Represents an unordered collection of keys and values. The Dictionary data type is optimized for fast lookup of values.|
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
 |[Enum](enum/enum-data-type.md)|Represents the text content of an element or attribute.|
