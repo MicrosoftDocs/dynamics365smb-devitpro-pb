@@ -1,5 +1,5 @@
 ---
-title: "Interfaces Overview"
+title: "Interface Object"
 description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Interfaces Overview
+# Interface Object
 
 An interface in AL is similar to an interface in any other programming language; an interface is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
 
@@ -29,7 +29,8 @@ You can declare variables as a given interface to allow passing objects that imp
 ## Interface example
 
 The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature, the other interface is `IShipping` which has a method `GetShippingMethod`, also with a certain signature. The codeunits `CompanyAddressProvider` and `PrivatAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method.
-...
+
+The `MyPage` is a simple page with an action 
 
 ```
 interface IAddressProvider 
@@ -76,8 +77,20 @@ codeunit 50201 PrivateAddressProvider implements IAddressProvider
     end; 
 } 
 
+enum 50200 SendTo
+{
+    Extensible = true;
 
-page 50200 MyPage
+    value(0; Company)
+    {
+    }
+
+    value(1; Private)
+    {
+    }
+}
+
+page 50200 MyAddressPage
 {
 
     PageType = Card;
@@ -157,19 +170,8 @@ page 50200 MyPage
 
     end;
 
-}
-
-enum 50200 SendTo
-{
-    Extensible = true;
-
-    value(0; Company)
-    {
-    }
-
-    value(1; Private)
-    {
-    }
+    var
+        sendTo: enum SendTo;
 }
 ```
 
