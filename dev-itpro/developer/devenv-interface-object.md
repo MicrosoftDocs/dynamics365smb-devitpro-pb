@@ -30,17 +30,12 @@ You can declare variables as a given interface to allow passing objects that imp
 
 The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature, the other interface is `IShipping` which has a method `GetShippingMethod`, also with a certain signature. The codeunits `CompanyAddressProvider` and `PrivatAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method.
 
-The `MyPage` is a simple page with an action 
+The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the IAddressProvider interface.
 
 ```
 interface IAddressProvider 
 { 
     procedure getAddress(): Text; 
-} 
-
-interface IShipping 
-{ 
-    procedure GetShippingMethod(); 
 } 
 
 codeunit 50200 CompanyAddressProvider implements IAddressProvider 
