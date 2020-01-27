@@ -380,3 +380,4 @@ Now, your application is fully upgraded to the version 15 platform.
 
 [Upgrading the Data](Upgrading-the-Data.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+[Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)

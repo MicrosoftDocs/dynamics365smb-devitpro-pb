@@ -32,7 +32,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks  
 
-This method assigns default values to each field in the record. The values that are assigned in the record correspond to those defined when the table was created. If no value was assigned when the table was created, the values are assigned based on the data type, as shown in the following table.  
+This method assigns default values to each field in the record, including the SystemId field. The values that are assigned in the record correspond to those defined when the table was created. If no value was assigned when the table was created, the values are assigned based on the data type, as shown in the following table.  
   
 |Data type|Default value|  
 |---------|-------------------|  
@@ -59,7 +59,7 @@ This method assigns default values to each field in the record. The values that 
   
 After the method runs, you can change the values in any or all of the fields before you call the [INSERT Method (RecordRef)](recordref-insert-method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
   
-The method works the same as the [INIT Method (RecordRef)](../recordref/recordref-init-method.md).  
+The method works in the same way as the [INIT Method (RecordRef)](../recordref/recordref-init-method.md).  
 
 ## See Also
 [Record Data Type](record-data-type.md)  
