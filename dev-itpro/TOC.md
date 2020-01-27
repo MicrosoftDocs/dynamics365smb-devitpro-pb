@@ -324,6 +324,7 @@
 ### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
 ### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
 ### [API Query Type](developer/devenv-api-querytype.md)
+## [Interfaces](developer/devenv-interface-object.md)
 ## XMLports
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
