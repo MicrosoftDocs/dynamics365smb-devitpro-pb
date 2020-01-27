@@ -13,9 +13,10 @@ ms.date: 11/15/2019
 ms.author: edupont
 ---
 
-# Environment Telemetry
+# Environment Telemetry in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
 
-## Telemetry in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
+## AL Event Telemetry
+
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides telemetry for the tenant environments to enable troubleshooting and support for the tenant. The Telemetry tab provides telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack.
 
 To filter the telemetry for an environment:
@@ -26,13 +27,16 @@ To filter the telemetry for an environment:
 4. Choose the environment.
 5. Select **Filter**.
 
-## Sending telemetry to Microsoft Azure Application Insights (Preview)
+## Operational Event Telemetry with Microsoft Azure Application Insights
 
 You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
-Currently, the only telemetry that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits to Application Insights pertains to long running SQL queries. We expect to add more telemetry in future updates.
+Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits the following telemetry events to Application Insights:
 
-Identifying long running SQL queries on a tenant database can be a good starting point when doing performance analysis, and Application Insights provides tools that can help you in this task.
+|Telemetry |Description|Read more...|
+|----------|-----------|------------|
+|Authorization|Provides information about sign-in attempts by users. This enables you to pro-actively help your customers with sign-in issues without the need to contact Microsoft support.|[Authorization Telemetry](telemetry-authorization-trace.md)|
+|Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute. Identifying long running SQL queries on a tenant database can be a good starting point when doing performance analysis.|[Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
 
 ### Enable sending telemetry to Application Insights
 
