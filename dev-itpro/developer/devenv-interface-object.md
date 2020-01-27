@@ -20,7 +20,7 @@ This allows for writing code that reduces the dependency on implementation detai
 
 The interface object declares an interface name along with its methods, and objects that implement the interface methods, must use the `implements` keyword along with the interface name(s). The interface object itself does not contain any code, only signatures, and cannot itself be called from code, but must be implemented by other objects.
  
-The compiler checks to ensure that implementations adhere to assigned interfaces.
+The AL compiler checks to ensure that implementations adhere to assigned interfaces.
 
 You can declare variables as a given interface to allow passing objects that implement the interface, and then call interface implementations on the passed object in a polymorphic manner.
 
@@ -30,7 +30,7 @@ Typing the shortcut `tinterface` will create the basic layout for an interface o
 
 ## Interface example
 
-The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature, the other interface is `IShipping` which has a method `GetShippingMethod`, also with a certain signature. The codeunits `CompanyAddressProvider` and `PrivatAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method.
+The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature. The codeunits `CompanyAddressProvider` and `PrivatAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method; in this case a simple variation of address value.
 
 The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the IAddressProvider interface.
 
