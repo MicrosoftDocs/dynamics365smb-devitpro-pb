@@ -25,6 +25,8 @@ The compiler checks to ensure that implementations adhere to assigned interfaces
 You can declare variables as a given interface to allow passing objects that implement the interface, and then call interface implementations on the passed object in a polymorphic manner.
 
 ## Snippet support
+Typing the shortcut `tinterface` will create the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
 
 ## Interface example
 
