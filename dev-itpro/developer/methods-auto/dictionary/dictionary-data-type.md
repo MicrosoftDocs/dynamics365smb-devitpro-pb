@@ -64,3 +64,4 @@ end;
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[List Data Type](../list/list-data-type.md)
