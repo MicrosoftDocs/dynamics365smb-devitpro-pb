@@ -14,15 +14,14 @@ ms.author: jswymer
 
 # Authorization Telemetry 
 
-Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central, including:  
+Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central including:  
 
 - Success or failure of the sign-in attempt
 - Reason for failure
 - Type of user (such as normal, administrator, or delegated user)
 - Whether the user belongs to the tenant or is an invited user
 
-After a successful authorization attempt, additional telemetry is provided about the opening the company, indicating hether the company was successfuly opened or failed for a specific reason. 
-
+After a successful authorization attempt, additional telemetry is provided about the opening the company, indicating whether the company was opened successfully  or failed for a specific reason.
 
 ## Operation: Success Authorization
 
