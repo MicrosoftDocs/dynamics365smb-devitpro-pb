@@ -14,13 +14,15 @@ ms.author: jswymer
 
 # Authorization Telemetry 
 
-Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central, including: 
+Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central, including:  
 
 - Success or failure of the sign-in attempt
 - Reason for failure
 - Type of user (such as normal, administrator, or delegated user)
 - Whether the user belongs to the tenant or is an invited user
-- The opened company / If the user can't open the company (authorization issue etc..)
+
+After a successful authorization attempt, additional telemetry is provided about the opening the company, indicating hether the company was successfuly opened or failed for a specific reason. 
+
 
 ## Operation: Success Authorization
 
@@ -70,6 +72,8 @@ The following tables explains the columns included in a Success Authorization tr
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
 |userType|Specifies whether the user is an **Internal_Admin**, **Normal user**, or **Delegated_admin**||
 |Failure reason|Specifies why the sign-in failed. Possible values include:<br /> `User is disabled in Business Central.<br />`User does not have entitlements in Business Central. ||
+
+
 
 
 ## See also
