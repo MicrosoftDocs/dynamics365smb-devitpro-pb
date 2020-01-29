@@ -23,7 +23,7 @@ Content is ordered into four groups:
 
 ## <a name="tuningstack"></a>Performance tuning the technology stack
 
-A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typically consists of the following components, where the following components can be tuned to improve performance:
+A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typically consists of the following components, which can be tuned to improve performance:
 
 - Client
 - Web Server
@@ -32,11 +32,11 @@ A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typical
 
 ### Client 
 
-There are three things of importance when dealing with client performance
+There are three things of importance when dealing with client performance:
 
 - Hardware of the computer running the client
 - Choice of browser
-- Network bandwidth and latency between the client and the data center running [!INCLUDE[prodshort](../developer/includes/prodshort.md)
+- Network bandwidth and latency between the client and the data center running [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 These topics are described in [Performance in Business Central Online](performance-online.md).
 
