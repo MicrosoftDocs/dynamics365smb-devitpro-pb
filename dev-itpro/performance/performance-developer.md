@@ -52,11 +52,11 @@ For more information about Page Background Tasks, see [Page Background Tasks](ht
 ### Endpoint performance  
 You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as factboxes are not exposed in OData, but will use resources to compute.
 
-Things that have historically caused performance on tables that are exposed as endpoints:
+Things that have historically caused performance on pages that are exposed as endpoints are:
 
-- Avoid heavy logic in `OnAfterGetCurrRecord`
-- Avoid many SIFT fields 
-- Avoid factboxes 
+- heavy logic in `OnAfterGetCurrRecord`
+- many SIFT fields 
+- factboxes 
  
 Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. Do select the highest API version available. And please do not use the beta version of the API pages.
 
@@ -74,14 +74,12 @@ Handling 504 - Gateway Timeout requires the client to refactor long running requ
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
 ## Writing efficient reports
-Reports in BC are typically either very specific to a single instance of an entity (e.g. an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities (e.g. XXX). Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
+Reports in BC are typically either very specific to a single instance of an entity (e.g. an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
 
 How to use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md)
 
 Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
-
-TODO: readonly intent (when we get to 16.0) 
 
 ## AL performance patterns 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance.
@@ -162,12 +160,6 @@ Use a number sequence object if you:
 - Can accept holes in the number range. 
 For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md) 
 
-IsDirty method: TODO
-
-TODO: Security filtering (maybe both here and in data access) 
-
-TODO: Use SystemID instead of RECORDID 
-
 ### Table extension impact on performance
 Table extensions are eager joined in the data stack when accessing the base table, and it is currently not possible to define indexes that span base and extension fields. Therefore, you should avoid splitting your code into too many table extensions. Also, be careful about extending central tables such as GL Entry, as this can severely hurt performance. 
 
@@ -188,12 +180,11 @@ The following are best practices for getting performant events:
 - Use single instance codeunits for subscribers, if possible. 
 
 Be aware that table events changes the behavior of SQL optimizations in the BC server:
-- TODO: MODIFYALL/DELETEALL/GlobalTriggers Database Triggers
 - The BC server will issue SQL update/delete statements row in a for loop rather than one SQL statement
 - Impacts MODIFYALL/DELETEALL functions to be able to perform bulk SQL operations to be forced to do single row operations
 
 ## Efficient Data access 
-Many performance issues is related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
+Many performance issues are related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
   
 ### Tables and keys 
 Many performance issues can be traced back to missing indexes (also called keys in BC), but index design is often not a key skill for AL developers. In order to have good performance even when (a lot of) data is added to the system, it is empirative to design appropriate indexes according to the way your code will access data. 
@@ -201,7 +192,7 @@ Many performance issues can be traced back to missing indexes (also called keys 
 These topics on indexing are very relevant to know as an AL developer:
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance)  
 - [Key Property](../developer/properties/devenv-key-property.md) 
-- [About SQL Server indexes] https://docs.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15
+- [About SQL Server indexes](https://docs.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
 Indexes have a cost to update, so do not overdo it. 
 
@@ -252,18 +243,6 @@ The following performance telemetry is available in Azure Application Insights (
 The following topics can be of help in troubleshooting performance issues
 - Find missing SIFT indexes for FlowFields by Disabling SmartSQL: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql  
 - Use Page Inspection to find extensions participating on a page: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-inspecting-pages  
-
-### Validating performance
-EVERYTHING IN THIS PARAGRAPH MUST BE VALIDATED TO SEE IF IT IS STILL RELEVANT
-- [Technical checklist](../compliance/apptest-onbeforecompanyopen.md)
-- [The Dynamics NAV performance testing Framework](https://github.com/NAVPERF)
-
-Videos:
-- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 1](https://www.youtube.com/watch?v=GULQmkhGiHo) 
-- [How Do I: Write Microsoft Dynamics NAV Load Tests Scenarios Using Visual Studio: Part 2](https://www.youtube.com/watch?v=KsJIWEYYp1s) 
-- [How Do I: Run NAV Load Tests Using Visual Studio in Microsoft Dynamics NAV](https://www.youtube.com/watch?v=IG-y8DsXqaQ)  
-- [Setting Up Test Controllers and Test Agents to Manage Tests with Visual Studio](https://msdn.microsoft.com/library/hh546459.aspx)  
-
 
 ## Tuning the Development Environment 
 The following articles explain what you can do as a developer to tune your development environment for better performance.
