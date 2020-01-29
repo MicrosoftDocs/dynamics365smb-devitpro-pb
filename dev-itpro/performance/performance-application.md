@@ -68,7 +68,7 @@ If users are experiencing slowness in data search, suggest them to set a column 
 
 ## Performance effect of enabling integration on a table
 
-There is a performance overhead involved in enabling integration on an entity such as **Customer** or **Contact** that will impact performance. Only enable integration if you intend to integrate with Dynamics 365 Sales, and only do so on the entities that is needed.
+There is a performance overhead involved in enabling integration on an entity such as **Customer** or **Contact** that will impact performance. Only enable integration if you intend to integrate with Dynamics 365 Sales, and only do so on the entities that are needed.
 
 For more information, see [Synchronizing Data in Business Central and Dynamics 365 Sales](/dynamics365/business-central/admin-synchronizing-business-central-and-sales). <!-- change with CDS integration in spring 2020 -->
 
