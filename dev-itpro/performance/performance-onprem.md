@@ -125,7 +125,7 @@ On the database side, make sure that SQL Server has enough resources for session
 
 ## <a name="measure"></a>Measure and Monitor performance
 
-The following resources describes ways that you measure and monitor performance in your [!INCLUDE[prodshort](../developer/includes/prodshort.md) installation on-premises:
+The following resources describe ways that you measure and monitor performance in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises installation:
 
 - [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
 - [Tools for Monitoring Performance Counters and Events](../administration/tools-monitor-performance-counters-and-events.md)  
