@@ -135,32 +135,33 @@ They come with different characteristics as described in this table:
 | Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
 
 
-### Pattern: Use set based methods instead of looping 
-The AL methods such as FINDSET, CALCFIELDS, CALCSUMS, and SETAUTOCALCFIELDS are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/optimize-sql-al-database-methods-and-performance-on-server#calcfields-calcsums-and-count 
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/recordref/recordref-findset-method  
+### Pattern - Use set-based methods instead of looping 
 
-One common use of the CALCSUMS function is to efficiently calculate totals. 
+The AL methods such as `FINDSET`, `CALCFIELDS`, `CALCSUMS`, and `SETAUTOCALCFIELDS` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
+- [CALCFIELDS, CALCSUMS, and COUNT](../administration/optimize-sql-al-database-methods-and-performance-on-server#calcfields-calcsums-and-count.md) 
+- [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
 
+One common use of the `CALCSUMS` method is to efficiently calculate totals. 
 
-Try to minimize work done in the OnAfterGetRecord trigger code. Common performance coding patterns in this trigger are
-- Avoiding CALCFIELDS calls (defer this till the end)
+Try to minimize work done in the `OnAfterGetRecord` trigger code. Common performance coding patterns in this trigger are:
+
+- Avoiding `CALCFIELDS` calls (defer this till the end)
 - Avoiding repeated calculation (move these outside the loop, if possible) 
 - Avoid changing filters (this requires the server to throw away the resultset)
 
-
 Consider using a query object if you want to use a set-based coding paradigm. These pros and cons for using query objects:
 
-| Pros for using a query object       | Cons for using a query object       | 
-| ----------- | ----------- |
+|Pros for using a query object|Cons for using a query object | 
+|-----------------------------|------------------------------|
 | Will bypass the AL record API where server reads all fields. <br> With a covering index, you can get fast read performance for tables with many fields. <br> Can join multiple tables. | Query object result sets are not cached in the servers primary key (data) cache. <br> No writes are allowed. <br> You cannot add a page on a query object. |
 
 Read more about query objects here:
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-query-using-instead-record-variables 
+
+- [Using Queries Instead of Record Variables](../developer/devenv-query-using-instead-record-variables.md)  
 - [Query object](../developer/devenv-query-object.md)  
 - [Query overview](../developer/devenv-query-overview.md)  
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/optimize-sql-query-objects-and-performance 
+- [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
 
 ### Other AL performance tips and tricks 
 If you need a fast, non-blocking number sequences that can be used from AL, take a look at the number sequence object type in AL 
