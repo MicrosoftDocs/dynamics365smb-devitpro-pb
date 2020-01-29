@@ -13,23 +13,6 @@ author: KennieNP
 # Performance in the Online Version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 These sections describe how settings in the online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] affects impact the performance experience of users. 
 
-## Client-side performance
-There are three things of importance when dealing with client performance in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
-
-- Hardware of the computer running the client
-- Choice of browser
-- Network bandwidth and latency between the client and the data center running [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
-
-MIKE BORG WILL WRITE CONTENT HERE
-- Hardware
-- Browser
-
-MIKE BORG WILL WRITE CONTENT HERE
-- Latency
-- Bandwidth 
-- How to measure this
-
-
 ## Performance on sandbox environments
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service offers the ability to test code in a sandbox environment prior to deploying to a production environment. 
 
@@ -45,8 +28,6 @@ For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../d
 
 This page shows an overview of currently available signal:
 - [Analyze long running SQL queries](../administration/tenant-admin-center-telemetry#analyze-long-running-sql-queries.md)
-
-TODO: Need to change this link once 15.3 docs is available
 
 ## See Also
 
