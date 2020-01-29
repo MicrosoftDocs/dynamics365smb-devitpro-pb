@@ -43,7 +43,7 @@ One way to speed up things is to reduce the work that the system must do. For ex
 
 Remove calculated fields from lists if they are not needed. Especially on larger tables or if inadequate indexing is present, calculated fields can significantly slow down a list page.
 
-Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and factboxes even if they are not shown in the lookup. As an example, in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 1, dedicated lookup pages for Customer, Vendor, and Item were added to the Base Application.
+Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and FactBoxes even if they are not shown in the lookup. As an example, in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 1, dedicated lookup pages for Customer, Vendor, and Item were added to the Base Application.
  
 ### Pattern - Offloading the UI thread 
 
@@ -57,13 +57,13 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 
 ### Endpoint performance  
 
-You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as factboxes are not exposed in OData, but will use resources to compute.
+You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as FactBoxes are not exposed in OData, but will use resources to compute.
 
 Things that have historically caused performance on pages that are exposed as endpoints are:
 
 - Heavy logic in `OnAfterGetCurrRecord`
 - Many SIFT fields 
-- Factboxes 
+- FactBoxes 
  
 Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. Do select the highest API version available. And please do not use the beta version of the API pages.
 
@@ -184,7 +184,7 @@ These are the pros and cons of the two ways to data model this:
 |Data model for extending a table | Properties |
 |---------------------------------|-------------|
 |Table extension | Fields can be added to lists and are searchable. <br> Always loaded with the base table. <br> Expensive at runtime but easy to use. <br> Use only for critical fields. |
-| Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Does not affect performance of base table. <br> Excellent for factboxes. | 
+| Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Does not affect performance of base table. <br> Excellent for FactBoxes. | 
 
 ### Limit your event subscriptions
 
@@ -195,7 +195,7 @@ The following are best practices for getting performant events:
 - Codeunit size of the subscriber matters. Try to have smaller codeunits.
 - Use single instance codeunits for subscribers, if possible.
 
-Be aware that table events changes the behavior of SQL optimizations in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server:
+Be aware that table events change the behavior of SQL optimizations in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server:
 
 - The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server will issue SQL update/delete statements row in a for loop rather than one SQL statement.
 - Impacts `MODIFYALL`/`DELETEALL` methods to be able to perform bulk SQL operations to be forced to do single row operations.
@@ -241,7 +241,7 @@ The following topics cover how AL relates to SQL:
 
 - [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
 - [Data Access](../administration/optimize-sql-data-access#-server-data-caching.md)  
-- [Data read/write performance](../administration/optimize-sql-data-access#data-readwrite-performance.md)  
+- [Data read/write performance](../administration/optimize-sql-data-access.md#readwrite)  
 - [Bulk Inserts](../administration/optimize-sql-bulk-inserts.md)  
 
 ### How to get insights into how AL translates to SQL 
