@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
-# Performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md) On-Premises Installations
+# Performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-Premises Installations
 
 In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises means deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, which means that if you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises.
 
