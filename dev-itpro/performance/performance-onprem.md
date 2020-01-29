@@ -16,12 +16,12 @@ In this section, we have highlighted a number of resources that might be useful 
 
 Content is ordered into four groups:
 
-- [Tuning the technology stack](performance-onprem.md#performance-tuning-the-technology-stack)
-- [Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](performance-onprem.md#scaling-business-central)
-- [Measure and monitor performance](performance-onprem.md#measure-and-monitor-performance)
-- [How to troubleshoot a performance problem]() <!-- this is not yet a section, comment out?>
+- [Tuning the technology stack](#tuningstack)
+- [Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](#scaling)
+- [Measure and monitor performance](#measure)
+- [How to troubleshoot a performance problem]() <!-- this is not yet a section, comment out?
 
-## Performance tuning the technology stack
+## <a name="tuningstack"></a>Performance tuning the technology stack
 
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typically consists of the following components, where the following components can be tuned to improve performance:
 
@@ -111,7 +111,7 @@ There is a performance impact if you set up CDC on the database. SQL Server will
 Enabling Transparent Data Enryption (TDE) has a slight performance degradation on SQL Server as it need CPU resources for encryption/decryption of data.
 
 
-## Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)
+## <a name="scaling"></a>Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 On compute (NSTs and Web servers), it is possible to scale horizontally by separating NSTs and Web servers on different nodes. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
@@ -121,7 +121,7 @@ The [!INCLUDE[prodshort](../developer/includes/prodshort.md) server (NST) has a 
 
 On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md). For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
 
-## Measure and Monitor performance
+## <a name="measure"></a>Measure and Monitor performance
 
 The following resources describes ways that you measure and monitor performance in your [!INCLUDE[prodshort](../developer/includes/prodshort.md) installation on-premises:
 
