@@ -1,7 +1,7 @@
 ---
-title: "Performance of On-Premises Installations"
+title: "Performance of Business Central On-Premises Installations"
 ms.custom: na
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,28 +10,33 @@ ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
-# Performance of On-Premises Installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)
-In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises mean deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, which means that if you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises.
+# Performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md) On-Premises Installations
 
-Content is ordered into four groups
-- Tuning the technology stack
-- Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
-- Measure and monitor performance
-- How to troubleshoot a performance problem
+In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises means deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, which means that if you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises.
+
+Content is ordered into four groups:
+
+- [Tuning the technology stack](performance-onprem.md#performance-tuning-the-technology-stack)
+- [Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](performance-onprem.md#scaling-business-central)
+- [Measure and monitor performance](performance-onprem.md#measure-and-monitor-performance)
+- [How to troubleshoot a performance problem]() <!-- this is not yet a section, comment out?>
 
 ## Performance tuning the technology stack
 
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typically consists of the following components, where the following components can be tuned to improve performance:
+
 - Client
 - Web Server
 - Server (NST)
 - Database
 
 ### Client 
+
 There are three things of importance when dealing with client performance
-- hardware of the computer running the client,
-- choice of browser,
-- network bandwith and latency between the client and the datacenter running [!INCLUDE[prodshort](../developer/includes/prodshort.md).
+
+- Hardware of the computer running the client
+- Choice of browser
+- Network bandwith and latency between the client and the datacenter running [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 
 These topics are described in the [performance documention of the BC service](performance-online.md).
 
@@ -91,7 +96,7 @@ There is a performance impact if you set up CDC on the database. SQL Server will
 Enabling Transparent Data Enryption (TDE) has a slight performance degradation on SQL Server as it need CPU resources for encryption/decryption of data.
 
 
-## Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Scaling Business Central
 
 On compute (NSTs and Web servers), it is possible to scale horizontally by separating NSTs and Web servers on different nodes. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md)
 
