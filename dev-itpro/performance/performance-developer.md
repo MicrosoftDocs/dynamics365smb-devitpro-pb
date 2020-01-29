@@ -12,7 +12,7 @@ author:
 
 # Performance Topics For Developers
 
-In this topic you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
+In this topic you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 - [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
 - [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
@@ -23,103 +23,112 @@ In this topic you can read about ways to tune performance when developing for [!
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
 
 
-## Writing efficient pages
-There are a number of patterns that a developer can use to get a page to load faster
-- Avoid Unnecessary Recalculation 
+## Writing efficient pages 
+
+There are a number of patterns that a developer can use to get a page to load faster, consider the following:
+
+- Avoid unnecessary recalculation 
 - Do less 
 - Offloading the UI thread 
 
-### Pattern: Avoid Unnecessary Recalculation 
-To avoid unnecessary recalculation of expensive results, consider caching that data yourself and refresh the cache on a regular basis. Maybe you want to show the top-5 sales open orders, or a list of VIP customers on the role center. The content of such a list probably do not change significantly every hour, so there is no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
+### Pattern - Avoid unnecessary recalculation 
+
+To avoid unnecessary recalculation of expensive results, consider caching that data yourself and refresh the cache on a regular basis. Maybe you want to show the top 5 open sales orders, or a list of VIP customers on the role center. The content of such a list probably does not change significantly every hour, so there is no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
 
 Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results are not cached in the primary key cache in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server. Any use of a query object will always go to the database. So, sometimes it is faster to not use a query object. 
 
-### Pattern: Do less 
-One way to speed up things is to reduce the work that the system must do. E.g. to reduce slowness of role centers, consider how many page parts are needed for the user. An additional benefit of a simple page with few UI elements can also be ease of use and navigation.
+### Pattern - Do less 
+
+One way to speed up things is to reduce the work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. An additional benefit of a simple page with few UI elements can also be ease of use and navigation.
 
 Remove calculated fields from lists if they are not needed. Especially on larger tables or if inadequate indexing is present, calculated fields can significantly slow down a list page.
 
-Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and factboxes even if they are not shown in the lookup. As an example, in the 2019 release wave 1, dedicated lookup pages for Customer, Vendor and Item was added to the base application.
+Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and factboxes even if they are not shown in the lookup. As an example, in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 1, dedicated lookup pages for Customer, Vendor, and Item were added to the Base Application.
  
-### Pattern: Offloading the UI thread 
-To get to a responsive UI fast, consider using Page Background Tasks for calculated values, e.g. the values shown in cues.
+### Pattern - Offloading the UI thread 
 
-For more information about Page Background Tasks, see [Page Background Tasks](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-page-background-tasks) <!-- change link -->
+To get to a responsive UI fast, consider using Page Background Tasks for calculated values, for example, the values shown in cues.
+
+For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md)
 
 ## Writing efficient Web Services 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] has support for Web services to make it easier to integrating with external systems. As a developer, you need to think about performance of web services both seen from the BC server (the endpoint) and as seen from the consumer (the client). 
+
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] has support for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server (the endpoint) and as seen from the consumer (the client). 
 
 ### Endpoint performance  
+
 You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as factboxes are not exposed in OData, but will use resources to compute.
 
 Things that have historically caused performance on pages that are exposed as endpoints are:
 
-- heavy logic in `OnAfterGetCurrRecord`
-- many SIFT fields 
-- factboxes 
+- Heavy logic in `OnAfterGetCurrRecord`
+- Many SIFT fields 
+- Factboxes 
  
 Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. Do select the highest API version available. And please do not use the beta version of the API pages.
 
 Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md) 
 
-### Web Service Client Performance 
-The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has setup throttling limits on web services endpoints to ensure that excessive traffic cannot cause stability and performance issues.
+### Web service client performance 
 
-Make sure that your client respects the two HTTP status codes 429 (Too Many Requests) and 504 (Gateway Timeout).
+The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic cannot cause stability and performance issues.
+
+Make sure that your client respects the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
 Handling Status Code 429 requires the client to adopt a retry logic while providing a cool off period. Different strategies such as regular interval retry, incremental intervals retry, exponential back-off, or even randomization can be applied.
 
-Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit, but splitting the request into multiple requests - and then dealing with potential 429, by applying a backoff strategy.
+Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit, but splitting the request into multiple requests - and then dealing with potential 429, by applying a back off strategy.
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
 ## Writing efficient reports
-Reports in BC are typically either very specific to a single instance of an entity (e.g. an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
 
-How to use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md)
+Reports in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are typically either very specific to a single instance of an entity (for example, an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
 
-Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
+- How to use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md)
+
+- Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
 
 ## AL performance patterns 
+
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance.
 
-- [Use built-in data structures]()  
-- [Run async (and parallelize)]()  
-- [Use set-based methods instead of looping]()  
-- [Other AL performance tips and tricks]()  
+- [Use built-in data structures](performance-developer.md#pattern-use-built-in-data-structures)  
+- [Run async (and parallelize)](performance-developer.md#pattern-run-async-(and-parallelize))  
+- [Use set-based methods instead of looping](performance-developer.md#pattern-use-set-based-methods-instead-of-looping)  
+- [Other AL performance tips and tricks](performance-developer.md#other-AL-performance-tips-and-tricks)  
 
 
-### Pattern: Use built-in data structures 
+### Pattern - Use built-in data structures 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you are familiar with them to make your AL code as efficient as possible.  
 
-When concatenating strings, make sure to use the TextBuilder datatype and not repeated use of the += operator on a Text variable.
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/textbuilder/textbuilder-data-type 
+When concatenating strings, make sure to use the `TextBuilder` datatype and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
 
-If you need a key-value data structure that is optimized for fast lookups, use a Dictionary data type
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/dictionary/dictionary-data-type 
+If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
-Use a List data type if you need an unbounded “array” (where you would previously create a temporary table object)
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/list/list-data-type 
+Use a `List` data type if you need an unbound “array” (where you would previously create a temporary table object). For more information, see [](../developer/methods-auto/list/list-data-type.md).
 
 
-### Pattern: Run async (and parallelize) 
+### Pattern - Run async (and parallelize) 
 It is often desirable to offload AL execution from the UI thread to a background session. 
 
 Here are some examples of this pattern:
-- Don’t let the user wait for batches 
+
+- Do not let the user wait for batches 
 - Split a big tasks into smaller tasks and run them in parallel
 
-There exists many different ways to spin up a new task 
-- [Job Queue](/business-central/admin-job-queues-schedule-tasks)
-- TaskScheduler.CreateTask, see https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/taskscheduler/taskscheduler-data-type 
-- StartSession, see https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/session/session-startsession-method
-- [Page Background Task](../developer/devenv-task-scheduler.md) 
+There are many different ways to spin up a new task:
 
-They come with different characteristics as described in this table
+- [Job Queue](/business-central/admin-job-queues-schedule-tasks)  
+- [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
+- [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
+- [Page Background Task](../developer/devenv-task-scheduler.md)  
 
-| Method to start a new task | Properties |
-| ----------- | ----------- |
+They come with different characteristics as described in this table:
+
+|Method to start a new task | Properties |
+|---------------------------|------------|
 | Page Background Task      | Can (will) be cancelled <br> Read-only <br> Callback to parent session <br> Lightweight |
 | StartSession              | Created immediately <br> Runs on same server <br> Not as controlled as a Page Background Task |
 | Task                      | Queued up <br> Any server in a cluster can start it <br> Survives server restarts <br> No logging | 
