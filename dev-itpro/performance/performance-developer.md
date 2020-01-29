@@ -139,7 +139,7 @@ They come with different characteristics as described in this table:
 
 The AL methods such as `FINDSET`, `CALCFIELDS`, `CALCSUMS`, and `SETAUTOCALCFIELDS` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
 
-- [CALCFIELDS, CALCSUMS, and COUNT](../administration/optimize-sql-al-database-methods-and-performance-on-server#calcfields-calcsums-and-count.md) 
+- [CALCFIELDS, CALCSUMS, and COUNT](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
 - [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
 
 One common use of the `CALCSUMS` method is to efficiently calculate totals. 
