@@ -13,7 +13,7 @@ author: KennieNP
 # Performance of On-Premises Installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 In this section, we have highlighted a number of resources that might be useful when doing performance investigations and tuning of on-premises installations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In this context, on-premises mean deployment to any environment that is not the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, which means that if you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure resources, this is also considered on-premises.
 
-Content is ordered in four groups
+Content is ordered into four groups
 - Tuning the technology stack
 - Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 - Measure and monitor performance
@@ -26,7 +26,6 @@ A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typical
 - Web Server
 - Server (NST)
 - Database
-- Network
 
 ### Client 
 There are three things of importance when dealing with client performance
@@ -37,7 +36,7 @@ There are three things of importance when dealing with client performance
 These topics are described in the [performance documention of the BC service](performance-online.md).
 
 ### Web Server 
-TODO (DO WE HAVE MORE CONTENT ON WEB SERVER PERF ON-PREM???)
+You can adjust the following settings related to web server performance
 - [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
 
 ### Server (NST)
@@ -91,9 +90,6 @@ There is a performance impact if you set up CDC on the database. SQL Server will
 #### Performance impact of enabling Transparent Data Enryption (TDE)
 Enabling Transparent Data Enryption (TDE) has a slight performance degradation on SQL Server as it need CPU resources for encryption/decryption of data.
 
-### Network
-TODO 
-
 
 ## Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
@@ -101,7 +97,7 @@ On compute (NSTs and Web servers), it is possible to scale horizontally by separ
 
 It is also common on larger installations to separate traffic based on client type (direct UI and Odata traffic to different NSTs). Possibly co-hosting NSTs and Web servers on the same nodes.
 
-The Business Central server (NST) has a built-in thread dispatcher for AL execution. This means that more cores means more parallel execution (but have in mind that AL execution as such is single-threaded (until 2020 Wave 2 release, where we start introducing async processing)). For long running operations such as heavy reports, using faster CPUs will give better performance.
+The Business Central server (NST) has a built-in thread dispatcher for AL execution. This means that more cores means more parallel execution (but have in mind that AL execution as such is single-threaded (until the 2019 release Wave 2, where we started introducing async processing)). For long running operations such as heavy reports, using faster CPUs will give better performance.
 
 On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md). For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md)
 
