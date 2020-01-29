@@ -36,23 +36,24 @@ There are three things of importance when dealing with client performance
 
 - Hardware of the computer running the client
 - Choice of browser
-- Network bandwith and latency between the client and the datacenter running [!INCLUDE[prodshort](../developer/includes/prodshort.md)
+- Network bandwidth and latency between the client and the data center running [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 
-These topics are described in the [performance documention of the BC service](performance-online.md).
+These topics are described in [Performance in Business Central Online](performance-online.md).
 
 ### Web Server 
-You can adjust the following settings related to web server performance
-- [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
+
+You can adjust the following settings related to web server performance. For more information, see [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel).
 
 ### Server (NST)
-You can adjust the following NST settings related to database performance
 
-| Server setting | Description    | Read more      |
-| -------------- | -------------- | -------------- |
+You can adjust the following NST settings related to database performance.
+
+| Server setting | Description  | Read more    |
+|----------------|--------------|--------------|
 | BufferedInsertEnabled | Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. | [Disabling Bulk Inserts](../administration/optimize-sql-bulk-inserts.md) | 
-| DisableQueryHintForceOrder | Please check if this setting is set to true  | https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
-| DisableQueryHintLoopJoin | Please check if this setting is set to true | https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/sql-server-query-hints?branch=performance |
-| DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prodshort](../developer/includes/prodshort.md) is bad, you might want to try isolating and testing FlowField queries separately. | https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql?branch=performance |
+| DisableQueryHintForceOrder | Check if this setting is set to **true**. | [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md) |
+| DisableQueryHintLoopJoin | Check if this setting is set to **true**. | [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md) |
+| DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prodshort](../developer/includes/prodshort.md) is bad, you might want to try isolating and testing FlowField queries separately. | [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md) |
 | SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes.  |  https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/configure-server-instance?branch=performance#Database |
 
 
