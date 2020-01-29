@@ -138,6 +138,7 @@ They come with different characteristics as described in this table:
 ### Pattern - Use set-based methods instead of looping 
 
 The AL methods such as `FINDSET`, `CALCFIELDS`, `CALCSUMS`, and `SETAUTOCALCFIELDS` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
+
 - [CALCFIELDS, CALCSUMS, and COUNT](../administration/optimize-sql-al-database-methods-and-performance-on-server#calcfields-calcsums-and-count.md) 
 - [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
 
@@ -164,55 +165,66 @@ Read more about query objects here:
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
 
 ### Other AL performance tips and tricks 
-If you need a fast, non-blocking number sequences that can be used from AL, take a look at the number sequence object type in AL 
-Use a number sequence object if you: 
+
+If you need a fast, non-blocking number sequence that can be used from AL, take a look at the number sequence object type in AL. Use a number sequence object if you: 
+
 - Do not want to use a number series 
 - Can accept holes in the number range. 
-For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md) 
+
+For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
 
 ### Table extension impact on performance
-Table extensions are eager joined in the data stack when accessing the base table, and it is currently not possible to define indexes that span base and extension fields. Therefore, you should avoid splitting your code into too many table extensions. Also, be careful about extending central tables such as GL Entry, as this can severely hurt performance. 
 
-An alternative when doing data modelling for extending a table with new fields is to use a related table and define a flowfield on the base table. 
+Table extensions are eager joined in the data stack when accessing the base table, and it is currently not possible to define indexes that span base and extension fields. Therefore, you should avoid splitting your code into too many table extensions. Also, be careful about extending central tables such as General Ledger entry, as this can severely hurt performance. 
+
+An alternative when doing data modelling for extending a table with new fields is to use a related table and define a FlowField on the base table. 
 
 These are the pros and cons of the two ways to data model this:
 
-| Data model for extending a table | Properties |
-| ----------- | ----------- |
-| Table extension | Fields can be added to lists and are searchable <br> Always loaded with the base table <br> Expensive at runtime but easy to use <br> Use only for critical fields |
+|Data model for extending a table | Properties |
+|---------------------------------|-------------|
+|Table extension | Fields can be added to lists and are searchable <br> Always loaded with the base table <br> Expensive at runtime but easy to use <br> Use only for critical fields |
 | Related tables | Need to set up table relations <br> Dedicated page for editing <br> Requires flow field to be shown in lists <br> Does not affect performance of base table <br> Excellent for factboxes | 
 
-### Limit your Event Subscriptions
+### Limit your event subscriptions
+
 The following are best practices for getting performant events:
-- There is no significant cost of having a publisher defined
-- Static automatic has a cost over manually binding (there is an overhead of creating and disposing objects)
-- Codeunit size of the subscriber matters. Try to have smaller codeunits
-- Use single instance codeunits for subscribers, if possible. 
+
+- There is no significant cost of having a publisher defined.
+- Static automatic has a cost over manually binding (there is an overhead of creating and disposing objects).
+- Codeunit size of the subscriber matters. Try to have smaller codeunits.
+- Use single instance codeunits for subscribers, if possible.
 
 Be aware that table events changes the behavior of SQL optimizations in the BC server:
-- The BC server will issue SQL update/delete statements row in a for loop rather than one SQL statement
-- Impacts MODIFYALL/DELETEALL functions to be able to perform bulk SQL operations to be forced to do single row operations
 
-## Efficient Data access 
+- The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server will issue SQL update/delete statements row in a for loop rather than one SQL statement.
+- Impacts `MODIFYALL`/`DELETEALL` methods to be able to perform bulk SQL operations to be forced to do single row operations.
+
+## Efficient data access 
+
 Many performance issues are related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
   
 ### Tables and keys 
-Many performance issues can be traced back to missing indexes (also called keys in BC), but index design is often not a key skill for AL developers. In order to have good performance even when (a lot of) data is added to the system, it is empirative to design appropriate indexes according to the way your code will access data. 
+
+Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]), but index design is often not a key skill for AL developers. In order to have good performance even when (a lot of) data is added to the system, it is imperative to design appropriate indexes according to the way your code will access data. 
 
 These topics on indexing are very relevant to know as an AL developer:
+
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance)  
 - [Key Property](../developer/properties/devenv-key-property.md) 
 - [About SQL Server indexes](https://docs.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
-Indexes have a cost to update, so do not overdo it. 
+Indexes have a cost to update, so it is recommended to not use them too frequently. 
 
  
 ### SumIndexField Technology (SIFT)
-SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type (Decimal, Integer, BigInteger, and Duration) columns in tables, even in tables with thousands of records. SIFT is used to optimize the performance of FlowFields and query results in a Business Central application. 
+
+SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type (Decimal, Integer, BigInteger, and Duration) columns in tables, even in tables with thousands of records. SIFT is used to optimize the performance of FlowFields and query results in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. 
 
 Ensure appropriate SIFT indices for all FlowFields of type sum or count. 
 
 Read more about SIFT here:
+
 - [SumIndexField Technology (SIFT)](../developer/devenv-sift-technology.md)  
 - [SIFT and Performance](../developer/devenv-sift-performance.md)  
 - [Tuning and Tracing](../developer/devenv-sift-tuning-and-tracing.md)  
