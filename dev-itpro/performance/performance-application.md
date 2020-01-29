@@ -76,7 +76,7 @@ For more information, see [Synchronizing Data in Business Central and Dynamics 3
 
 These areas of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application are known to cause a performance impact and require extra testing with realistic data setup before they are rolled out. 
 
-- [Security filtering Mode](../security/security-filters.md#PerformanceImpact)  
+- [Security filtering mode](../security/security-filters.md#PerformanceImpact)  
 - [Inventory Posting](/dynamics365/business-central/design-details-inventory-posting)  
 - [Dimensions](/dynamics365/business-central/finance-dimensions)  
 - [Dynamic Order tracking](/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging)  
