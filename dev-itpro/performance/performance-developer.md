@@ -116,7 +116,7 @@ It is often desirable to offload AL execution from the UI thread to a background
 Here are some examples of this pattern:
 
 - Do not let the user wait for batches 
-- Split a big tasks into smaller tasks and run them in parallel
+- Split big tasks into smaller tasks and run them in parallel
 
 There are many different ways to spin up a new task:
 
