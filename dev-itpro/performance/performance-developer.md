@@ -230,47 +230,55 @@ Read more about SIFT here:
 - [Tuning and Tracing](../developer/devenv-sift-tuning-and-tracing.md)  
 - [SIFT and SQL Server](../developer/devenv-sift-and-sql-server.md)  
 
-This topic can sometimes help to find missing SIFT indexes on flowfields:
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql  
+This topic can sometimes help to find missing SIFT indexes on flowfields. For more information, see [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md). 
 
 
 ### How AL relates to SQL 
+
 Even though the AL programming language hides away how data is read and written to the database, to effectively code for performance you need to know how AL statements translate to the equivalent SQL statements. 
 
-These topics cover how AL relates to SQL 
+The following topics cover how AL relates to SQL:
+
 - [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
 - [Data Access](../administration/optimize-sql-data-access#-server-data-caching.md)  
-- [Data read/write performance](../administration/optimize-sql-data-access#data-readwrite-performance.md)
-- [Bulk Inserts](../administration/optimize-sql-bulk-inserts.md)
+- [Data read/write performance](../administration/optimize-sql-data-access#data-readwrite-performance.md)  
+- [Bulk Inserts](../administration/optimize-sql-bulk-inserts.md)  
 
 ### How to get insights into how AL translates to SQL 
+
 If you want to track how the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server translates AL statements to SQL statements, you can either use database statistics in the AL debugger, or use telemetry on long running queries.
 
 Read more here:
+
 - [About database statistics in the AL debugger](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-debugging#DebugSQL)
 - [Telemetry on Long Running SQL Queries](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/monitor-long-running-sql-queries-event-log#ApplicationInsights)
 
 ## Testing and validating performance 
+
 It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
 
 ### Performance Unit Testing
-Use the SessionInformation data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and asserts normal behavior:
-- https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/sessioninformation/sessioninformation-data-type
+
+Use the `SessionInformation` data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and asserts normal behavior. For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
 ### Performance telemetry
+
 The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment). 
-- Long Running SQL Queries: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-telemetry#sending-telemetry-to-microsoft-azure-application-insights-preview
+- [Long Running SQL Queries](../administration/tenant-admin-center-telemetry#sending-telemetry-to-microsoft-azure-application-insights-preview.md).
 
 ### Troubleshooting
-The following topics can be of help in troubleshooting performance issues
-- Find missing SIFT indexes for FlowFields by Disabling SmartSQL: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql  
-- Use Page Inspection to find extensions participating on a page: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-inspecting-pages  
+
+The following topics can be of help in troubleshooting performance issues:
+
+- [Find missing SIFT indexes for FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
+- [Use Page Inspection to find extensions participating on a page](../developer/devenv-inspecting-pages.md)
 
 ## Tuning the Development Environment 
-The following articles explain what you can do as a developer to tune your development environment for better performance.
-- [Optimizing Visual Studio Code for AL Development](../developer/devenv-optimize-visual-studio-code.md) 
-- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool#enabling-code-analysis-on-large-projects.md)
 
+The following articles explain what you can do as a developer to tune your development environment for better performance:
+
+- [Optimizing Visual Studio Code for AL Development](../developer/devenv-optimize-visual-studio-code.md)  
+- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool#enabling-code-analysis-on-large-projects.md)
 
 ## See Also
 
