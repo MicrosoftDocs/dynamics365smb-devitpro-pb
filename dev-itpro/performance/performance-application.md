@@ -12,7 +12,7 @@ author: KennieNP
 
 # How Application Configurations Affect Performance
 
-The topics in this session are tips and tricks on how to setup[!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+The topics in this session are tips and tricks on how to setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ## Run things in the background
 

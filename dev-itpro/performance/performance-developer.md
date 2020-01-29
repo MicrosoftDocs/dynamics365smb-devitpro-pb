@@ -25,7 +25,7 @@ In this topic you can read about ways to tune performance when developing for [!
 
 ## Writing efficient pages 
 
-There are a number of patterns that a developer can use to get a page to load faster, consider the following:
+There are a number of patterns that a developer can use to get a page to load faster. Consider the following:
 
 - Avoid unnecessary recalculation 
 - Do less 
@@ -49,7 +49,7 @@ Consider creating dedicated lookup pages instead of the normal pages when adding
 
 To get to a responsive UI fast, consider using Page Background Tasks for calculated values, for example, the values shown in cues.
 
-For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md)
+For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
 ## Writing efficient Web Services 
 
@@ -67,7 +67,7 @@ Things that have historically caused performance on pages that are exposed as en
  
 Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. Do select the highest API version available. And please do not use the beta version of the API pages.
 
-Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md) 
+Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
 ### Web service client performance 
 
@@ -85,7 +85,7 @@ Read more about web service limits, see [Working with API limits in Dynamics 365
 
 Reports in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are typically either very specific to a single instance of an entity (for example, an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
 
-- How to use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md)
+- How to use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md).
 
 - Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
@@ -129,7 +129,7 @@ They come with different characteristics as described in this table:
 
 |Method to start a new task | Properties |
 |---------------------------|------------|
-| Page Background Task      | Can (will) be cancelled <br> Read-only <br> Callback to parent session <br> Lightweight |
+| Page Background Task      | Can (will) be canceled <br> Read-only <br> Callback to parent session <br> Lightweight |
 | StartSession              | Created immediately <br> Runs on same server <br> Not as controlled as a Page Background Task |
 | Task                      | Queued up <br> Any server in a cluster can start it <br> Survives server restarts <br> No logging | 
 | Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
@@ -154,7 +154,7 @@ Consider using a query object if you want to use a set-based coding paradigm. Th
 
 |Pros for using a query object|Cons for using a query object | 
 |-----------------------------|------------------------------|
-| Will bypass the AL record API where server reads all fields. <br> With a covering index, you can get fast read performance for tables with many fields. <br> Can join multiple tables. | Query object result sets are not cached in the servers primary key (data) cache. <br> No writes are allowed. <br> You cannot add a page on a query object. |
+| - Will bypass the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets are not cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You cannot add a page on a query object. |
 
 Read more about query objects here:
 
@@ -168,7 +168,7 @@ Read more about query objects here:
 
 If you need a fast, non-blocking number sequence that can be used from AL, take a look at the number sequence object type in AL. Use a number sequence object if you: 
 
-- Do not want to use a number series 
+- Do not want to use a number series. 
 - Can accept holes in the number range. 
 
 For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
@@ -183,8 +183,8 @@ These are the pros and cons of the two ways to data model this:
 
 |Data model for extending a table | Properties |
 |---------------------------------|-------------|
-|Table extension | Fields can be added to lists and are searchable <br> Always loaded with the base table <br> Expensive at runtime but easy to use <br> Use only for critical fields |
-| Related tables | Need to set up table relations <br> Dedicated page for editing <br> Requires flow field to be shown in lists <br> Does not affect performance of base table <br> Excellent for factboxes | 
+|Table extension | Fields can be added to lists and are searchable. <br> Always loaded with the base table. <br> Expensive at runtime but easy to use. <br> Use only for critical fields. |
+| Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Does not affect performance of base table. <br> Excellent for factboxes. | 
 
 ### Limit your event subscriptions
 
@@ -195,7 +195,7 @@ The following are best practices for getting performant events:
 - Codeunit size of the subscriber matters. Try to have smaller codeunits.
 - Use single instance codeunits for subscribers, if possible.
 
-Be aware that table events changes the behavior of SQL optimizations in the BC server:
+Be aware that table events changes the behavior of SQL optimizations in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server:
 
 - The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server will issue SQL update/delete statements row in a for loop rather than one SQL statement.
 - Impacts `MODIFYALL`/`DELETEALL` methods to be able to perform bulk SQL operations to be forced to do single row operations.
