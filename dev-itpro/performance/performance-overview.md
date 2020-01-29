@@ -20,7 +20,6 @@ The following sections help you understand and improve the performance of [!INCL
 - Visit [Performance of Business Central On-Premises Installations](performance-onprem.md) to learn more about the various ways the different components in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be configured to achieve better performance for an on-premises installation.
 - Visit [How to Work with a Performance Problem](performance-work-perf-problem.md) to learn more on how to tackle a performance problem.
 
-<br>
 
 The video series *Performance Considerations when Building an App* is also a good starting point to learn more about performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
 
