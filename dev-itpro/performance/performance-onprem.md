@@ -44,7 +44,7 @@ These topics are described in [Performance in Business Central Online](performan
 
 You can improve web server performance by configuring Kernel-mode authentication:
 
-- [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel).
+- [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
 
 ### Server (NST)
 
@@ -119,7 +119,7 @@ On compute (NSTs and Web servers), it is possible to scale horizontally by separ
 
 It is also common on larger installations to separate traffic based on client type (direct UI and OData traffic to different NSTs); possibly co-hosting NSTs and Web servers on the same nodes.
 
-The [!INCLUDE[server](../developer/includes/server.md)] (NST) has a built-in thread dispatcher for AL execution. This means that more cores mean more parallel execution (but have in mind that AL execution as such is single-threaded (until the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, where we started introducing async processing). For long running operations such as heavy reports, using faster CPUs will give better performance.
+The [!INCLUDE[server](../developer/includes/server.md)] (NST) has a built-in thread dispatcher for AL execution. This means that more cores mean more parallel execution (but have in mind that AL execution as such is single-threaded (until the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, where we started introducing async processing). For long running operations, such as heavy reports, using faster CPUs will give better performance.
 
 On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md). For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
 
