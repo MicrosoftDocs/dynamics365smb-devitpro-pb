@@ -42,7 +42,7 @@ These topics are described in [Performance in Business Central Online](performan
 
 ### Web Server 
 
-You can adjust the following settings related to web server performance.
+You can improve web server performance by configuring Kernel-mode authentication:
 
 - [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel).
 
@@ -106,7 +106,7 @@ In the February 2019 update of sqlpackage (the command line tool that is used to
 
 #### Performance impact on setting up CDC on SQL Server
 
-There is a performance impact if you set up CDC on the database. SQL Server will be slower (depends on the retention period used) and you also need storage for the extra data.
+There is a performance impact if you set up CDC on the database. SQL Server will be slower (depending on the retention period used) and you also need storage for the extra data.
 
 #### Performance impact of enabling Transparent Data Enryption (TDE)
 
@@ -117,9 +117,9 @@ Enabling Transparent Data Enryption (TDE) has a slight performance degradation o
 
 On compute (NSTs and Web servers), it is possible to scale horizontally by separating NSTs and Web servers on different nodes. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
-It is also common on larger installations to separate traffic based on client type (direct UI and OData traffic to different NSTs). Possibly co-hosting NSTs and Web servers on the same nodes.
+It is also common on larger installations to separate traffic based on client type (direct UI and OData traffic to different NSTs); possibly co-hosting NSTs and Web servers on the same nodes.
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md) server (NST) has a built-in thread dispatcher for AL execution. This means that more cores mean more parallel execution (but have in mind that AL execution as such is single-threaded (until the [!INCLUDE[prodshort](../developer/includes/prodshort.md) 2019 release wave 2, where we started introducing async processing)). For long running operations such as heavy reports, using faster CPUs will give better performance.
+The [!INCLUDE[server](../developer/includes/server.md)] (NST) has a built-in thread dispatcher for AL execution. This means that more cores mean more parallel execution (but have in mind that AL execution as such is single-threaded (until the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, where we started introducing async processing). For long running operations such as heavy reports, using faster CPUs will give better performance.
 
 On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md). For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
 
