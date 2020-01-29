@@ -1,6 +1,6 @@
 ---
 title: Exporting Databases
-description: Use the Business Central administration center to export environment databases.  
+description: Use the Business Central administration center to export tenant databases per environment.  
 author: edupont04
 
 ms.service: dynamics365-business-central
@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 01/21/2020
+ms.date: 01/29/2020
 ms.author: edupont
 
 ---
