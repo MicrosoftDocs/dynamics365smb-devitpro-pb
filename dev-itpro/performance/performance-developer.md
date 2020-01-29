@@ -94,13 +94,13 @@ Reports in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are typical
 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance.
 
-- [Use built-in data structures](performance-developer.md#pattern-use-built-in-data-structures)  
-- [Run async (and parallelize)](performance-developer.md#pattern-run-async-(and-parallelize))  
-- [Use set-based methods instead of looping](performance-developer.md#pattern-use-set-based-methods-instead-of-looping)  
-- [Other AL performance tips and tricks](performance-developer.md#other-AL-performance-tips-and-tricks)  
+- [Use built-in data structures](#builtindatastructure)  
+- [Run async (and parallelize)](#runasync)  
+- [Use set-based methods instead of looping](#setbasedmethods)  
+- [Other AL performance tips and tricks](#tips)  
 
 
-### Pattern - Use built-in data structures 
+### <a name="builtindatastructure"></a>Pattern - Use built-in data structures 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you are familiar with them to make your AL code as efficient as possible.  
 
 When concatenating strings, make sure to use the `TextBuilder` datatype and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
@@ -110,7 +110,7 @@ If you need a key-value data structure that is optimized for fast lookups, use a
 Use a `List` data type if you need an unbound “array” (where you would previously create a temporary table object). For more information, see [](../developer/methods-auto/list/list-data-type.md).
 
 
-### Pattern - Run async (and parallelize) 
+### <a name="runasync"></a>Pattern - Run async (and parallelize) 
 It is often desirable to offload AL execution from the UI thread to a background session. 
 
 Here are some examples of this pattern:
@@ -135,7 +135,7 @@ They come with different characteristics as described in this table:
 | Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
 
 
-### Pattern - Use set-based methods instead of looping 
+### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping 
 
 The AL methods such as `FINDSET`, `CALCFIELDS`, `CALCSUMS`, and `SETAUTOCALCFIELDS` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
 
@@ -164,7 +164,7 @@ Read more about query objects here:
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
 
-### Other AL performance tips and tricks 
+### <a name="tips"></a>Other AL performance tips and tricks 
 
 If you need a fast, non-blocking number sequence that can be used from AL, take a look at the number sequence object type in AL. Use a number sequence object if you: 
 
