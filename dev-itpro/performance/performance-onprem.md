@@ -121,7 +121,7 @@ It is also common on larger installations to separate traffic based on client ty
 
 The [!INCLUDE[server](../developer/includes/server.md)] has a built-in thread dispatcher for AL execution. If you have more cores available, then this allows for more parallel execution (but have in mind that AL execution as such is single-threaded (until the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, where we started introducing async processing). For long running operations, such as heavy reports, using faster CPUs will give better performance.
 
-On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md). For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
+On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
 
 ## <a name="measure"></a>Measure and Monitor performance
 
