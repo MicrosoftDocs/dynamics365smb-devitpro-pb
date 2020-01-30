@@ -195,10 +195,10 @@ The following are best practices for getting performant events:
 - Codeunit size of the subscriber matters. Try to have smaller codeunits.
 - Use single instance codeunits for subscribers, if possible.
 
-Be aware that table events change the behavior of SQL optimizations in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server:
+Be aware that table events change the behavior of SQL optimizations on the [!INCLUDE[server](../developer/includes/server.md)]:
 
-- The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server will issue SQL update/delete statements row in a for loop rather than one SQL statement.
-- Impacts `MODIFYALL`/`DELETEALL` methods to be able to perform bulk SQL operations to be forced to do single row operations.
+- The [!INCLUDE[server](../developer/includes/server.md)] will issue SQL update/delete statements row in a for loop rather than one SQL statement.
+- Impacts `MODIFYALL`/`DELETEALL` methods that normally do bulk SQL operations to be forced to do single row operations.
 
 ## Efficient data access 
 

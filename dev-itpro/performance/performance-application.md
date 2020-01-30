@@ -36,7 +36,7 @@ Number series in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are a
 
 ### Be cautious with the **Copy company** operation
 
-The **Copy company** operation is not intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operation is very likely to induce locks on the tables that data is copied from and these locks will block users from transaction in the company. Second, the operation is using a lot of resources on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, which can in turn cause resource starvation for users working in other companies.  
+The **Copy company** operation is not intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operation is very likely to induce locks on the tables that data is copied from and these locks will block users from transacting in the company. Second, the operation is using a lot of resources on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, which can in turn cause resource starvation for users working in other companies.  
 
 Should you need to perform a **Copy company** operation, it is highly recommended to do it outside working hours. Do turn off scheduled jobs while performing **Copy company** to avoid locking issues.
 
