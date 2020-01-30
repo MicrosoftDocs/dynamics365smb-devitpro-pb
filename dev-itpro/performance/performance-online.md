@@ -19,7 +19,13 @@ These sections describe how settings in [!INCLUDE[prodshort](../developer/includ
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service offers the ability to test code in a sandbox environment prior to deploying to a production environment. 
 
 <!-- section partly rephrased -->
-Users often cannot get the same performance and reliability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, as they get in their production environments. This is due to a number of factors. Firstly, it is due to the nature of the operations that our users perform in the sandbox environments, for example, frequent publishing and installation of per-tenant extensions (PTEs), which are not yet of production quality, or that multiple companies are created for different users to try their scenarios, initializing test environments with data via RapidStart, and so on. Secondly, it is due to the sandbox services configuration with more density, and very different thresholds. Read more about sandboxes in [Managing Environments](../administration/tenant-admin-center-environments.md).
+Users often cannot get the same performance and reliability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, as they get in their production environments. This is due to a number of factors. Firstly, it is due to the nature of the operations that our users perform in the sandbox environments. Some typical examples of this are:
+
+- Frequent publishing and installation of per-tenant extensions (PTEs), which are not yet of production quality
+- Creating multiple companies for different users to try their scenarios
+- Initializing test environments with data via RapidStart
+
+Secondly, it is due to the sandbox services configuration with more density, and very different thresholds. Read more about sandboxes in [Managing Environments](../administration/tenant-admin-center-environments.md).
 
 <!--
 Due to the nature of the operations our users perform in the sandbox environments, such as (for instance frequent publishing and installation of per-tenant extensions (PTEs), which are not yet of production quality, creating multiple companies for different users to try their scenarios, initializing test environments with data via RapidStart, and so on etc.), and due to the Sandbox services configuration (with more density, and very different thresholds), the users will often cannot get the same performance and reliability as they get in their production environments.  -->
