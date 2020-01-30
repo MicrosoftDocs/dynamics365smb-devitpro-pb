@@ -63,6 +63,7 @@
 ##### [Embed App Overview](deployment/embed-app-overview.md)
 ##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 ##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
