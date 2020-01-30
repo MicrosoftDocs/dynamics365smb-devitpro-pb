@@ -123,7 +123,7 @@ There are many different ways to spin up a new task:
 - [Job Queue](/business-central/admin-job-queues-schedule-tasks)  
 - [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
 - [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
-- [Page Background Task](../developer/devenv-task-scheduler.md)  
+- [Page Background Task](../developer/devenv-page-background-tasks.md)  
 
 They come with different characteristics as described in this table:
 
@@ -259,7 +259,7 @@ It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includ
 
 ### Performance Unit Testing
 
-You can use the `SessionInformation` data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and then have assert statements that check for normal behavior. 
+You can use the `SessionInformation` data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and then have assert statements that check for normal behavior.
 
 For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
