@@ -16,14 +16,15 @@ ms.author: jswymer
 
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides telemetry data for diagnosing and analyzing problems and performance on tenants. Whether [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your environments to send telemetry to Application Insights, which is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
-Currently, the telemetry is available for the following operations:
+Currently, the following signals are available: 
 
-|Operation | Description |See more|
+|Signal | Description |See more|
 |----------|-------------|--------|
-|Authorization|Provides information about user sign-in.|[Authentication Operation](telemetry-authentication-trace.md). |
+|Authorization|Provides information about user sign-in attempts, including as success or failure indication, failure reason, user type, and more.|[Authentication Operation](telemetry-authentication-trace.md). |
 |Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|[Long Running Operation (SQL Query) Operation](telemetry-long-running-sql-query-trace.md)|
 
-## Enabling
+## Enabling Application Insights
+or monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals 
 
 
 ## See also
