@@ -27,7 +27,7 @@ A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation typical
 
 - Client
 - Web Server
-- Server (NST)
+- Server (service-tier)
 - Database
 
 ### Client 
@@ -46,9 +46,9 @@ You can improve web server performance by configuring Kernel-mode authentication
 
 - [Configuring Kernel Mode Authentication on the Business Central Web Server](../deployment/configure-delegation-web-server.md#Kernel)
 
-### Server (NST)
+### Business Central Server (service-tier)
 
-You can adjust the following NST settings related to database performance.
+You can adjust the following [!INCLUDE[server](../developer/includes/server.md)] settings related to database performance.
 
 | Server setting | Description  | Read more    |
 |----------------|--------------|--------------|
@@ -61,14 +61,14 @@ You can adjust the following NST settings related to database performance.
 
 #### Web service limits 
 
-You can adjust NST settings related to web service calls to implement resource governance (and avoid resource starvation on the NSTs) here: 
+You can adjust server instance settings related to web service calls to implement resource governance (and avoid resource starvation on the server instances) here: 
 
 - [SOAP Services Settings](../administration/configure-server-instance.md#SOAPServices)  
 - [OData Services Settings](../administration/configure-server-instance.md#ODataServices)  
 
 #### Task Scheduler
 
-You can adjust NST settings related to the task scheduler to implement resource governance (and avoid resource starvation on the NSTs) here: 
+You can adjust server instance settings related to the task scheduler to implement resource governance (and avoid resource starvation on the server instances) here: 
 
 - [Maximum Concurrent Running Tasks](../administration/configure-server-instance.md#Task)
 
@@ -115,11 +115,11 @@ Enabling Transparent Data Enryption (TDE) has a slight performance degradation o
 
 ## <a name="scaling"></a>Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-On compute (NSTs and Web servers), it is possible to scale horizontally by separating NSTs and Web servers on different nodes. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+On compute ([!INCLUDE[server](../developer/includes/server.md)] and Web servers), it is possible to scale horizontally by separating [!INCLUDE[server](../developer/includes/server.md)] instances and Web servers on different nodes. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
-It is also common on larger installations to separate traffic based on client type (direct UI and OData traffic to different NSTs); possibly co-hosting NSTs and Web servers on the same nodes.
+It is also common on larger installations to separate traffic based on client type (direct UI and OData traffic to different [!INCLUDE[server](../developer/includes/server.md)] instances); possibly co-hosting [!INCLUDE[server](../developer/includes/server.md)] instances and Web servers on the same nodes.
 
-The [!INCLUDE[server](../developer/includes/server.md)] (NST) has a built-in thread dispatcher for AL execution. This means that more cores mean more parallel execution (but have in mind that AL execution as such is single-threaded (until the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, where we started introducing async processing). For long running operations, such as heavy reports, using faster CPUs will give better performance.
+The [!INCLUDE[server](../developer/includes/server.md)] has a built-in thread dispatcher for AL execution. If you have more cores available, then this allows for more parallel execution (but have in mind that AL execution as such is single-threaded (until the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, where we started introducing async processing). For long running operations, such as heavy reports, using faster CPUs will give better performance.
 
 On the database side, make sure that SQL Server has enough resources for sessions (both CPU and memory) and try to optimize the setup of SQL Server to [!INCLUDE[prodshort](../developer/includes/prodshort.md). For more information, see [Installation Considerations for Microsoft SQL Server and Business Central](../deployment/installation-considerations-for-microsoft-sql-server.md).
 
