@@ -19,7 +19,7 @@ Content is ordered into four groups:
 - [Tuning the technology stack](#tuningstack)
 - [Scaling [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](#scaling)
 - [Measure and monitor performance](#measure)
-- [How to troubleshoot a performance problem]() <!-- this is not yet a section, comment out?
+<!-- [How to troubleshoot a performance problem]()  this is not yet a section, comment out? -->
 
 ## <a name="tuningstack"></a>Performance tuning the technology stack
 
