@@ -1,6 +1,6 @@
 ---
 title: Exporting Databases
-description: Use the Business Central administration center to export environment databases.  
+description: Use the Business Central administration center to export tenant databases per environment.  
 author: edupont04
 
 ms.service: dynamics365-business-central
@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 01/21/2020
+ms.date: 01/29/2020
 ms.author: edupont
 
 ---
@@ -44,10 +44,10 @@ The next step is to generate a shared access signature (SAS) that provides secur
 2. In the **Allowed services** section of the shared access signature pane, select **Blob**, and clear the other options.
 3. In the **Allowed resource types** section, select **Container** and **Object**, and clear the other options.
 4. In the **Allowed permissions** section, mark **Read**, **Write**, **Delete**, and **Create**, and clear the other options.
-5. Select a start and end date and time for the SAS. A minimum expiration window of six hours from the initiation of the export is required.
+5. Select a start and end date and time for the SAS. A minimum expiration window of 24 hours from the initiation of the export is required.
 
     > [!TIP]
-    > It is a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation.
+    > It is a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 24 hours.
 
 6. In the **Allowed protocols** section, select **HTTPS only**.
 7. Select **Generate SAS and connection string**.
