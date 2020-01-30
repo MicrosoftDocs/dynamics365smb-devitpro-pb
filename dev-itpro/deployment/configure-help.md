@@ -68,7 +68,7 @@ You can also still download the files that were made available for [!INCLUDE [na
 
 ## Fork the Microsoft repos, and customize or extend the content
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. For guidance about how to generate HTML files for your website, see [Building HTML files](../help/contributor-guide.md#building-html-files). For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).  
+If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. For guidance about how to generate HTML files for your website, see [Build HTML files](../help/contributor-guide.md#build-html-files). For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).  
 
 ## See Also
 
