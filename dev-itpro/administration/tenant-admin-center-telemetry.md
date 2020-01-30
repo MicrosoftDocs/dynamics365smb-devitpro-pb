@@ -26,7 +26,7 @@ To filter the telemetry for an environment:
 4. Choose the environment.
 5. Select **Filter**.
 
-## Sending telemetry to Microsoft Azure Application Insights (Preview)
+## Sending telemetry to Microsoft Azure Application Insights
 
 You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
@@ -34,7 +34,7 @@ Currently, the only telemetry that [!INCLUDE[prodshort](../developer/includes/pr
 
 Identifying long running SQL queries on a tenant database can be a good starting point when doing performance analysis, and Application Insights provides tools that can help you in this task.
 
-### <a name="appinsights"></aEnable sending telemetry to Application Insights
+### <a name="appinsights"></a>Enable sending telemetry to Application Insights
 
 > [!IMPORTANT]  
 > This process requires a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
