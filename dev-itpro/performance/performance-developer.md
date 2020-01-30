@@ -259,7 +259,9 @@ It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includ
 
 ### Performance Unit Testing
 
-Use the `SessionInformation` data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and asserts normal behavior. For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
+You can use the `SessionInformation` data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and then have assert statements that check for normal behavior. 
+
+For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
 ### Performance telemetry
 
