@@ -34,7 +34,7 @@ Currently, the only telemetry that [!INCLUDE[prodshort](../developer/includes/pr
 
 Identifying long running SQL queries on a tenant database can be a good starting point when doing performance analysis, and Application Insights provides tools that can help you in this task.
 
-### Enable sending telemetry to Application Insights
+### <a name="appinsights"></aEnable sending telemetry to Application Insights
 
 > [!IMPORTANT]  
 > This process requires a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
@@ -52,7 +52,7 @@ Identifying long running SQL queries on a tenant database can be a good starting
 4. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
 5. Select **Save**.
 
-### Analyze long running SQL queries
+### <a name="lrsql"></a>Analyze long running SQL queries
 
 Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. To get a quick overview, you can go the [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 

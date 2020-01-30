@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: 
+author: KennieNP
 ---
 
 # Performance Topics For Developers
@@ -210,7 +210,7 @@ Many performance issues can be traced back to missing indexes (also called keys 
 
 These topics on indexing are very relevant to know as an AL developer:
 
-- [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance)  
+- [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [Key Property](../developer/properties/devenv-key-property.md) 
 - [About SQL Server indexes](https://docs.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
@@ -240,7 +240,7 @@ Even though the AL programming language hides away how data is read and written 
 The following topics cover how AL relates to SQL:
 
 - [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
-- [Data Access](../administration/optimize-sql-data-access#-server-data-caching.md)  
+- [Data Access](../administration/optimize-sql-data-access.md)  
 - [Data read/write performance](../administration/optimize-sql-data-access.md#readwrite)  
 - [Bulk Inserts](../administration/optimize-sql-bulk-inserts.md)  
 
@@ -266,7 +266,7 @@ For more information, see [SessionInformation Data Type](../developer/methods-au
 ### Performance telemetry
 
 The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment). 
-- [Long Running SQL Queries](../administration/tenant-admin-center-telemetry#sending-telemetry-to-microsoft-azure-application-insights-preview.md).
+- [Long Running SQL Queries](../administration/tenant-admin-center-telemetry.md#appinsights).
 
 ### Troubleshooting
 
@@ -280,7 +280,7 @@ The following topics can be of help in troubleshooting performance issues:
 The following articles explain what you can do as a developer to tune your development environment for better performance:
 
 - [Optimizing Visual Studio Code for AL Development](../developer/devenv-optimize-visual-studio-code.md)  
-- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool#enabling-code-analysis-on-large-projects.md)
+- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool.md#largeprojects)
 
 ## See Also
 
