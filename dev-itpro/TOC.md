@@ -143,7 +143,9 @@
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### Monitoring Business Central Server
-#### [Monitoring and Analyzing Telemetry](administration/telemetry-overview.md)
+#### Monitoring and Analyzing Telemetry
+##### [Overview](administration/telemetry-overview.md)
+##### [Enabling Application Insights]()
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
 ##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
