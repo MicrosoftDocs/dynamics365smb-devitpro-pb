@@ -26,7 +26,7 @@ You can also change the setting by [Set-NAVServerConfiguration cmdlet](/powershe
 ```
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
 ```
-
+<!-- 
 ## <a name="ApplicationInsights"></a>Enable Sending Telemetry to Application Insights
 
 If you have access to an Application Insights resource in Microsoft Azure, you can configure your tenants to send long running query telemetry there for analysis and presentation.
@@ -53,7 +53,7 @@ If you are using the event log, refer to the following articles:
 
 If you are using application Insights, see:
 
-[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md).
+[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md).-->
 
 <!--
 ### <a name="LRSQLQuery"></a>Dimensions for long running SQL queries emitted to Application Insights

@@ -33,7 +33,7 @@ Sending telemetry data to Application Insights requires that you create an Appli
 
 - For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online, Application Insights is enabled by using the Administration Center. For more information, see [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights).
 
-- For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises, see [Enable Sending Telemetry to Application Insights](monitor-long-running-sql-queries-event-log#ApplicationInsights).
+- For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md#ApplicationInsights).
 
 ## See also
 
