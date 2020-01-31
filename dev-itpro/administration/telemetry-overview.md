@@ -14,9 +14,9 @@ ms.author: jswymer
 
 # Monitoring and Analyzing Telemetry  
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data. Whether [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your environments to send telemetry to Application Insights, which is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities ans operations that happens in tenants. Whether [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
-Monitoring telemetry gives you an overview of the activity and general health on your tenants, enabling you to diagnose problems and analyze operations that affect performance.
+Monitoring telemetry gives you an overview of the activity and general health on your tenants, and helps you to diagnose problems and analyze operations that affect performance.
 
 ## Available Telemetry
 
@@ -29,7 +29,7 @@ Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry o
 
 ## Enabling Application Insights
 
-Application Insights is enabled on a per-tenant basis.
+Sending telemetry data to Application Insights requires that you create an Application Insights resource in Azure. After this, you can start to configure your tenants to send telemetry data to your Application Insights resource. The configuration is different for online and on-premises: 
 
 - For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online, Application Insights is enabled by using the Administration Center. For more information, see [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights).
 
