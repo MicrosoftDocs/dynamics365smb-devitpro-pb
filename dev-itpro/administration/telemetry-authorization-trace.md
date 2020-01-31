@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Authorization Telemetry
 
-Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. Authorization signals are emitted for two stages of sign-in. The first stage is the initial authorization, where the user account is checked whether it is enabled in the tenant and has the correct entitlements. The telemetry data includes: 
+Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. Authorization signals are emitted in two stages of sign-in. The first stage is the initial authorization, where the user account is verified that it is enabled in the tenant and has the correct entitlements. The telemetry data includes:
 
 - Success or failure of the sign-in attempt
 - Reason for failure
@@ -25,7 +25,7 @@ The next stage occurs after a successful authorization attempt, when trying to o
 
 ## Success Authorization (Pre Open Company)
 
-Occurs when a user is successfully authorized.
+Occurs when a user has been successfully authorized.
 
 ### General dimensions
 
@@ -51,7 +51,7 @@ The following tables explains the custom dimensions included in a **Success Auth
 
 ## Operation: Failed Authorization (Pre Open Company)
 
-Occurs when a user sign-in in fails authorization.
+Occurs when a user sign-in in has failed authorization.
 
 ### General dimensions
 
@@ -76,6 +76,8 @@ The following tables explains the columns included in a Success Authorization tr
 
 ## Operation: Authorization Succeeded (Open Company)
 
+Occurs when the company has opened successfully.
+
 ### General dimensions
 
 The following tables explains the columns included in a Success Authorization trace.
@@ -98,6 +100,8 @@ The following tables explains the columns included in a Success Authorization tr
 |Failure reason|Specifies why the sign-in failed. Possible values include:<br /> `User is disabled in Business Central.<br />`User does not have entitlements in Business Central. ||
 
 ## Operation: Authorization Failed (Open Company)
+
+Occurs when a company has failed to open.  
 
 ### General dimensions
 

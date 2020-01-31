@@ -14,17 +14,17 @@ ms.author: jswymer
 
 # Monitoring and Analyzing Telemetry  
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities ans operations that happens in tenants. Whether [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities and operations on tenants. Whether [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
-Monitoring telemetry gives you an overview of the activity and general health on your tenants, and helps you to diagnose problems and analyze operations that affect performance.
+Monitoring telemetry gives you an overview of the activities on and general health on your tenants, and helps you to diagnose problems and analyze operations that affect performance.
 
 ## Available Telemetry
 
-Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry on the following operations.  
+Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
 |Operation | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
-|Authorization|Provides information about user sign-in attempts, including success or failure indication, reason for failure, user type, and more.|Online|[Authentication Operation](telemetry-authentication-trace.md). |
+|Authorization|Provides information about user sign-in attempts, including success or failure indication, reason for failure, user type, and more.|Online|[Authentication Operation](telemetry-authorization-trace.md) |
 |Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Long Running Operation (SQL Query) Operation](telemetry-long-running-sql-query-trace.md)|
 
 ## Enabling Application Insights
