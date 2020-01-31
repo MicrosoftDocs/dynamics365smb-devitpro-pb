@@ -108,6 +108,7 @@
 ### [Preparing Demo Environments](administration/demo-environment.md)
 ### [Preparing Test Environments](administration/test-environment.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+### [Monitoring and Analyzing Telemetry](administration/telemetry-overview.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -142,6 +143,7 @@
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### Monitoring Business Central Server
+#### [Monitoring and Analyzing Telemetry](administration/telemetry-overview.md)
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
 ##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
