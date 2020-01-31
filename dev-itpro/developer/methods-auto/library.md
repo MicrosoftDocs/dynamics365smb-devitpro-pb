@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/24/2020
+ms.date: 01/31/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,7 +59,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[JsonValue](jsonvalue/jsonvalue-data-type.md)|Is a container for any well-formed fundamental JSON value. A default JsonValue is set to the JSON value of NULL.|
 |[KeyRef](keyref/keyref-data-type.md)|Identifies a key in a table and the fields in this key.|
 |[Label](label/label-data-type.md)|Denotes a string constant that can be optionally translated into multiple languages.|
-|[List](list/list-data-type.md)|Represents a strongly typed list of objects that can be accessed by index.|
+|[List](list/list-data-type.md)|Represents a strongly typed list of ordered objects that can be accessed by index. Contrary to the Array data type, a List is unbounded, such that its dimension does not need to be specified upon declaration.|
 |[Media](media/media-data-type.md)|Encapsulates media files, such as image .jpg and .png files, in application database tables. The Media data type can be used as a table field data type, but cannot be used as a variable or parameter. The Media data type enables you to import a media file to the application database and reference the file from records, making it possible to display the media file in the client user interface. You can also export media from the database to files and streams.|
 |[MediaSet](mediaset/mediaset-data-type.md)|Encapsulates media, such as images, in application database tables.|
 |[ModuleDependencyInfo](moduledependencyinfo/moduledependencyinfo-data-type.md)|Provides information about a dependent module.|
