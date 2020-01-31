@@ -107,7 +107,7 @@ When concatenating strings, make sure to use the `TextBuilder` datatype and not 
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
-Use a `List` data type if you need an unbound “array” (where you would previously create a temporary table object). For more information, see [](../developer/methods-auto/list/list-data-type.md).
+Use a `List` data type if you need an unbound “array” (where you would previously create a temporary table object). For more information, see [List Data Type](../developer/methods-auto/list/list-data-type.md).
 
 
 ### <a name="runasync"></a>Pattern - Run async (and parallelize) 
@@ -120,7 +120,7 @@ Here are some examples of this pattern:
 
 There are many different ways to spin up a new task:
 
-- [Job Queue](/business-central/admin-job-queues-schedule-tasks)  
+- [Job Queue](/business-central/admin-job-queues-schedule-tasks.md)  
 - [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
 - [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
 - [Page Background Task](../developer/devenv-page-background-tasks.md)  

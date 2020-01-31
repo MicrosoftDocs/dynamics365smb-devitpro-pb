@@ -38,7 +38,7 @@ The following methods are available on instances of the Dictionary data type.
 ## Remarks  
 Each addition to the dictionary consists of a value, and its associated key. Every key in a Dictionary must be unique. A key cannot be null, but a value can be, only when the value type is a reference type.
 
-The Dictionary data type cannot hold instantiated records. For this purpose, use temporary tables instead.
+The Dictionary data type does not support holding instantiated records. For this purpose, use temporary tables instead.
 
 ## Example  
 In the following example, the variable `counter` represents the Dictionary data type to store a value representing the number of occurrences for each character in the `customerName`. Using the `Get` method, you get the number of occurrences for the character at position `i`. If `i` returns **false**, it means there is no value associated with that character, so you add the value 1. If `i` returns **true**, it means the value already exists, so you add `c + 1` to the value. The `Add` method adds the {key:value} pair to the Dictionary.
