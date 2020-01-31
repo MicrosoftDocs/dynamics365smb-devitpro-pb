@@ -12,9 +12,9 @@ ms.author: solsen
 
 # Step 3 - How to Develop Your App
 
-# Technical Checklist for Submitting Your App
+The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation.  
 
-The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. 
+## Technical Checklist for Submitting Your App
 
 |Requirement|Example/Guidance|
 |-----------|----------------|
@@ -44,5 +44,6 @@ The following is a checklist of all requirements that you **must meet before sub
 -->
 
 ## See Also
+
 [Developing Extensions](../devenv-dev-overview.md)  
 [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

@@ -63,6 +63,7 @@
 ##### [Embed App Overview](deployment/embed-app-overview.md)
 ##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 ##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
@@ -610,6 +611,15 @@
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
+<!-- begin performance -->
+# Performance
+## [Performance Overview](performance/performance-overview.md)
+## [Application](performance/performance-application.md)
+## [Developer](performance/performance-developer.md)
+## [Online](performance/performance-online.md)
+## [On-Premises](performance/performance-onprem.md)
+## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
+<!-- end performance -->
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
