@@ -14,22 +14,24 @@ ms.author: jswymer
 
 # Telemetry and Application Insights 
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides telemetry data for diagnosing and analyzing problems and performance on tenants. Whether [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your environments to send telemetry to Application Insights, which is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data that is useful for diagnosing and analyzing problems and performance on tenants. Whether [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your environments to send telemetry to Application Insights, which is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
-## Telemetry Signals
+to help you monitor, diagnose, and analyze the health of the Finance and Operations environments that you manage.
+
+## Available Telemetry Signals
 
 Currently, the following signals are available: 
 
-|Signal | Description |See more|
-|----------|-------------|--------|
-|Authorization|Provides information about user sign-in attempts, including as success or failure indication, failure reason, user type, and more.|[Authentication Operation](telemetry-authentication-trace.md). |
-|Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|[Long Running Operation (SQL Query) Operation](telemetry-long-running-sql-query-trace.md)|
+|Telemtery | Description |Online/On-premises|See more|
+|----------|-------------|-----------------|--------|
+|Authorization|Provides information about user sign-in attempts, including as success or failure indication, failure reason, user type, and more.|Online|[Authentication Operation](telemetry-authentication-trace.md). |
+|Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Long Running Operation (SQL Query) Operation](telemetry-long-running-sql-query-trace.md)|
 
 ## Enabling Application Insights
 
-For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online, see [](tenant-admin-center-telemetry.md#appinsights)
+For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online, see [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights).
 
-For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises, see  monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals 
+For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises, see [Enable Sending Telemetry to Application Insights](monitor-long-running-sql-queries-event-log#ApplicationInsights).
 
 
 ## See also
