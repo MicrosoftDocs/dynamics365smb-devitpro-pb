@@ -38,5 +38,4 @@ The way to do this depends on whether your [!INCLUDE[server](../developer/includ
 
 ## See Also
 
-[Monitoring abd Analyzing Telemetry](telemetry-overview.md)  
-
+[Monitoring and Analyzing With Telemetry](telemetry-overview.md)  
