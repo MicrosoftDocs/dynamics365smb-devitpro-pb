@@ -108,7 +108,8 @@
 ### [Preparing Demo Environments](administration/demo-environment.md)
 ### [Preparing Test Environments](administration/test-environment.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
-### [Monitoring and Analyzing Telemetry](administration/telemetry-overview.md)
+#### Monitoring and Analyzing Telemetry
+#### [Overview](administration/telemetry-overview.md)
 #### [Analyzing Authentication Telemetry](administration/telemetry-authorization-trace.md)
 #### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### Administration Center
@@ -170,6 +171,7 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
