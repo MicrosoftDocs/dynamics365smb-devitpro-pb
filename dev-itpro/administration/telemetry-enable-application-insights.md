@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Enabling Application Insights
+# Enabling Application Insights for Tenant Telemetry
 
 This article describes how to set up a tenants to send telemetry data to Application Insights.
 

@@ -10,22 +10,29 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Monitoring Long Running SQL Queries
+# Monitoring and Analyzing Long Running SQL Queries
 
 <!-- This topic needs to be updated for the BC autumn release. -->
  
-[!INCLUDE[nav2017](../developer/includes/nav2017.md)] is the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Starting in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, long running queries can also be emitted to Microsoft Azure Application Insights. Using Application Insights requires that you fists enable it on your tenant.
+[!INCLUDE[nav2017](../developer/includes/nav2017.md)] was the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Starting in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, long running queries can also be emitted as telemetry to Microsoft Azure Application Insights. Using Application Insights requires that you first enable it on your tenant.
 
-## <a name="threshold"></a>Defining Long Running SQL Queries Threshold
-The time logged in long running SQL queries is the time spent on the called database as seen from the server. There are multiple reasons that can cause this delay, such as the database waiting for a lock to be released, or the database executing an operation that performs badly due to missing indexes.
+## <a name="threshold"></a>Defining the long running SQL queries threshold
 
-The threshold of when a query is logged is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting **SqlLongRunningThreshold**. The default value is 1000 milliseconds (ms). For more information about setting the **SqlLongRunningThreshold** by using [!INCLUDE[admintool](../developer/includes/admintool.md), see [Configuring Business Central Server](configure-server-instance.md#Database). 
+The time logged when a SQL query runs is the time spent on the called database as seen from the server. There are multiple reasons that can cause a delay, such as the database waiting for a lock to be released, or the database executing an operation that performs badly due to missing indexes.
+
+The threshold of when a SQL query is considered to be long running is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting **SqlLongRunningThreshold**. The default value is 1000 milliseconds (ms). By default, this is set to 1000 milliseconds. This means, for example, any SQL query that runs longer 1000 ms will result in a event log entry or telemetry signal that indicates that the action took longer than expected or longer than the given threshold. For more information about setting the **SqlLongRunningThreshold** by using [!INCLUDE[admintool](../developer/includes/admintool.md), see [Configuring Business Central Server](configure-server-instance.md#Database).
 
 You can also change the setting by [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. The cmdlet includes the `-ApplyTo Memory`parameter that enables you to change the setting without doing a server restart. For example, to change the threshold dynamically to 2000 ms, run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
 ```
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
 ```
+
+## Monitor and analyze data
+
+To use the Windows Event Log, see [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md).
+
+To set up and use Application Insights, see [Enabling Application Insights for Tenant Telemetry](telemetry-enable-application-insights.md).
 <!-- 
 ## <a name="ApplicationInsights"></a>Enable Sending Telemetry to Application Insights
 

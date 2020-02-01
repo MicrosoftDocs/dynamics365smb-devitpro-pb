@@ -12,13 +12,12 @@ ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 author: SusanneWindfeldPedersen
 ---
 
-
 # Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central
 
 This topic shows how you can use the Event Viewer to monitor long running SQL queries and decide which ones can be candidates for optimization. 
 
-
 ## Resolution
+
 Identifying long running SQL queries can be a good starting point when doing a performance analysis. To find which SQL queries performed slower than expected, open the Event Viewer and go to the Windows Logs Application. 
 
 > [!NOTE]  

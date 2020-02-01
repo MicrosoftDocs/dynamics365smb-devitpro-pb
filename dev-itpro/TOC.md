@@ -155,9 +155,6 @@
 ##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
 ##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
 #### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-#### Monitoring and Analyzing Telemetry
-##### [Overview](administration/telemetry-overview.md)
-##### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### SQL Server Performance
 #### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
@@ -168,6 +165,9 @@
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
+### Monitoring and Analyzing Using Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
