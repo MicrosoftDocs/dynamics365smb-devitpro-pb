@@ -108,7 +108,7 @@
 ### [Preparing Demo Environments](administration/demo-environment.md)
 ### [Preparing Test Environments](administration/test-environment.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
-#### Monitoring and Analyzing Telemetry
+### Monitoring and Analyzing Telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Analyzing Authentication Telemetry](administration/telemetry-authorization-trace.md)
 #### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
