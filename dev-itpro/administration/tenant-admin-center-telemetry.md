@@ -61,6 +61,7 @@ There are multiple reasons that can affect the time it takes SQL queries to run.
 -->
 ## See also
 
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
