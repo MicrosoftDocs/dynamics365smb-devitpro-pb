@@ -143,9 +143,6 @@
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### Monitoring Business Central Server
-#### Monitoring and Analyzing Telemetry
-##### [Overview](administration/telemetry-overview.md)
-##### [Enabling Application Insights]()
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
 ##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
@@ -158,6 +155,9 @@
 ##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
 ##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
 #### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
+#### Monitoring and Analyzing Telemetry
+##### [Overview](administration/telemetry-overview.md)
+##### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### SQL Server Performance
 #### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
