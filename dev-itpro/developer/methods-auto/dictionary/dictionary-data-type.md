@@ -1,6 +1,6 @@
 ---
 title: "Dictionary Data Type"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/24/2020
 ms.reviewer: na
