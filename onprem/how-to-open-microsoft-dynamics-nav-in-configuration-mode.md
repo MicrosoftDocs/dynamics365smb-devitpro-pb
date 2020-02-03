@@ -1,6 +1,6 @@
 ---
 title: "How to: Open Microsoft Dynamics NAV in Configuration Mode"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na

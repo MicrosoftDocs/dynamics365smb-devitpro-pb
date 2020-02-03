@@ -2,7 +2,7 @@
 title: "TextBuilder Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ The following methods are available on instances of the TextBuilder data type.
 |[ToText()](textbuilder-totext--method.md)|Converts the value of this TextBuilder instance to a Text.|
 |[ToText(Integer, Integer)](textbuilder-totext-integer-integer-method.md)|Converts the value of a substring of this TextBuilder instance to a Text.|
 
-[//]: # (IMPORTANT: END>DO_NOT_EDIT) 
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 

@@ -1,6 +1,6 @@
 ---
 title: "Encryption key functions must not be invoked."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 11/15/2019
 ms.reviewer: na

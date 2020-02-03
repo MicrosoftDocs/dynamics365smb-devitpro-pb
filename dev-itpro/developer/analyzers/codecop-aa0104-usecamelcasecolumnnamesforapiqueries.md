@@ -1,6 +1,6 @@
 ---
 title: "Use camel case name for column controls in queries of type API."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/21/2020
 ms.reviewer: na
