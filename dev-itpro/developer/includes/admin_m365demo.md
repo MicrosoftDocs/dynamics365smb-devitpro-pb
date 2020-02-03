@@ -5,11 +5,16 @@
 
     As a partner, you can have 1 one year tenant at a time. So if you want more tenants, we suggest that you choose 90-Day tenants.
 5. As the location, choose the region that is closest to your location.
+
+    The list of locations includes specific countries, but the [!INCLUDE [prodshort](prodshort.md)] content pack is only available for the regions North America, Asia/Pacific, and Europe, Middle East, Africa.
+
 6. Choose the **Dynamics 365 Business Central** content pack, and then choose the **Create Tenant** button.
 
-    This gives you all you need for the next step. But you can use the **Microsoft 365 Business Demo Content** or **Microsoft 365 Enterprise Demo Content** content packs if you need more users for your demo, or you want to demo more complex Microsoft 365 integration scenarios, for example.
+    This gives you all you need for the next step. Alternatively, you can use the **Microsoft 365 Business Demo Content** or **Microsoft 365 Enterprise Demo Content** content packs if you need more users for your demo, you want to demo more complex Microsoft 365 integration scenarios, or if you want to make sure that you get a [!INCLUDE [prodshort](prodshort.md)] tenant for a specific country, for example.
 
 7. In an in-private browser window, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and log in with the administrator account that you just created, typically called something like admin@CRMbc123456.onmicrosoft.com.
+
+    If you chose another content pack, you must use the administrator account to sign up for a standard trial at [https://businesscentral.dynamics.com/?redirectedFromSignup=1](https://businesscentral.dynamics.com/?redirectedFromSignup=1). The **Dynamics 365 Business Central** content pack gives you a more integrated experience with Office 365, but otherwise the trial experience is the same.
 
 This gives you a [!INCLUDE [prodshort](prodshort.md)] environment with two companies:
 
