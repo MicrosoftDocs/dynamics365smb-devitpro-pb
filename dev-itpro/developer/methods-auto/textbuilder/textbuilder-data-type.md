@@ -1,8 +1,8 @@
 ---
 title: "TextBuilder Data Type"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ The following methods are available on instances of the TextBuilder data type.
 |[ToText()](textbuilder-totext--method.md)|Converts the value of this TextBuilder instance to a Text.|
 |[ToText(Integer, Integer)](textbuilder-totext-integer-integer-method.md)|Converts the value of a substring of this TextBuilder instance to a Text.|
 
-[//]: # (IMPORTANT: END>DO_NOT_EDIT) 
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!TIP]
 > The [Text Data Type](..\text\text-data-type.md) is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a [Text Data Type](..\text\text-data-type.md) can be costly.  

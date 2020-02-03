@@ -1,8 +1,8 @@
 ---
 title: "NumberSequence Data Type"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NumberSequence Data Type
 Is a complex data type for creating and managing number sequences in the database.
+
 
 The following methods are available on the NumberSequence data type.
 

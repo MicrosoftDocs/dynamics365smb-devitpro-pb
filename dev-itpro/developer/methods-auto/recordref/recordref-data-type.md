@@ -1,8 +1,8 @@
 ---
 title: "RecordRef Data Type"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,7 @@ The following methods are available on instances of the RecordRef data type.
 |[IsTemporary()](recordref-istemporary-method.md)|Determines whether a RecordRef refers to a temporary table.|
 |[CurrentCompany()](recordref-currentcompany-method.md)|Gets the current company of a database table referred to by a RecordRef.|
 |[Get(RecordId)](recordref-get-method.md)|Gets a record based on the ID of the record.|
+|[GetBySystemId(Guid)](recordref-getbysystemid-method.md)|Gets a record based on the ID of the record. The RecordRef must already be opened.|
 |[Find([String])](recordref-find-method.md)|Finds a record in a table based on the values stored in the key fields.|
 |[Next([Integer])](recordref-next-method.md)|Steps through a specified number of records and retrieves a record.|
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
@@ -40,6 +41,7 @@ The following methods are available on instances of the RecordRef data type.
 |[LockTable([Boolean] [, Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[Count()](recordref-count-method.md)|Counts the number of records that are in the filters that are currently applied to the table referred to by the RecordRef.|
 |[IsEmpty()](recordref-isempty-method.md)|Determines whether any records exist in a filtered set of records in a table.|
+|[IsDirty()](recordref-isdirty-method.md)|Gets a boolean value that indicates whether the current in-memory instance of a record or filtered set of records has changed since being retrieved from the database.|
 |[CountApprox()](recordref-countapprox-method.md)|Gets an approximate count of the number of records in the table|
 |[CurrentKey()](recordref-currentkey-method.md)|Gets the current key of the table referred to by the RecordRef. The current key is returned as a string.|
 |[CurrentKeyIndex([Integer])](recordref-currentkeyindex-method.md)|Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CURRENTKEYINDEX will return -1. If this value is then passed to KEYINDEX, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.|
