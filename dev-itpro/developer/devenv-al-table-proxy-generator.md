@@ -13,17 +13,12 @@ author: SusanneWindfeldPedersen
 
 # AL Table Proxy Generator Overview
 
-The **AL Table Proxy Generator** tool is available with the **AL Language** extension. 
+The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Common Data Service. The tool is available with the **AL Language** extension and the **altpgen.exe** tool is found in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`.
 
 
-
-Locate the **altpgen.exe** tool in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`.
-
-
-1. On the computer that is running Business Central..., start Windows PowerShell as an administrator.
+1. Start Windows PowerShell as an administrator.
 2. At the command prompt...
 
-Locate the **altpgen.exe** tool in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`.
 
 The syntax for the generator is the following:
 
