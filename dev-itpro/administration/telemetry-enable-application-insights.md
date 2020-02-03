@@ -10,9 +10,9 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Enabling Application Insights for Tenant Telemetry
+# Enabling Application Insights for Tenant Telemetry On-Premises
 
-This article describes how to set up a tenants to send telemetry data to Application Insights.
+This article describes how to set up a tenants to send telemetry data to Application Insights for on-premises environments.
 
 ## <a name="ApplicationInsights"></a>Get started
 
@@ -38,4 +38,6 @@ The way to do this depends on whether your [!INCLUDE[server](../developer/includ
 
 ## See Also
 
+[Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
+[Enable Application Insights for Online](tenant-admin-center-telemetry.md#appinsights)  
 [Monitoring and Analyzing With Telemetry](telemetry-overview.md)  

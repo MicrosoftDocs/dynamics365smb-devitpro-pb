@@ -67,3 +67,4 @@ There are multiple reasons that can affect the time it takes SQL queries to run.
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Enabling Application Insights for On-Premises](telemetry-enable-application-insights.md)  
