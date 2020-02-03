@@ -111,7 +111,7 @@
 ### [Managing Technical Support](administration/manage-technical-support.md)
 ### Monitoring and Analyzing Telemetry
 #### [Overview](administration/telemetry-overview.md)
-#### [Analyzing Authentication Telemetry](administration/telemetry-authorization-trace.md)
+#### [Analyzing Authorization Telemetry](administration/telemetry-authorization-trace.md)
 #### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
