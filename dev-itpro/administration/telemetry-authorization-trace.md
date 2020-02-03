@@ -25,7 +25,7 @@ The first stage is the initial authorization, where the user account is verified
 
 The next stage occurs after a successful authorization attempt, when trying to open the company (that is, when the CompanyOpen trigger run). The telemetry data will indicating whether the company was opened successfully or failed (with a reason).
 
-## Success Authorization (Pre Open Company)
+## Operation: Success Authorization (Pre Open Company)
 
 Occurs when a user has been successfully authorized.
 
@@ -37,7 +37,9 @@ The following tables explains the dimensions included in a **Success Authorizati
 |---------|-----|-----------|
 |message|**Authorization steps prior to the open company trigger succeeded.**||
 |severityLevel|**1**||
-|operation_Name|**Success Authorization (Pre Open Company)**||
+
+<!--
+|operation_Name|**Success Authorization (Pre Open Company)**||-->
 
 ### Custom dimensions
 
@@ -59,28 +61,47 @@ Occurs when a user sign-in in has failed authorization.
 
 The following tables explains the columns included in a Success Authorization trace.
 
-|Column|Description or value||
+|Dimension|Description or value||
 |---------|-----|-----------|
 |message|**Authorization steps prior to the open company trigger failed, see failureReason column for details.**||
 |severityLevel|**1**||
-|operation_Name|**Authorization Failed (Pre Open Company)**||
+
+<!--
+|operation_Name|**Authorization Failed (Pre Open Company)**||-->
 
 ### Custom dimensions
 
-|Column|Description or value||
+|Dimension|Description or value||
 |---------|-----|-----------|
 |authorizationStatus|**Failed**|
 |guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
 |entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
 |userType|Specifies whether the user is an **Internal_Admin**, **Normal user**, or **Delegated_admin**||
-|Failure reason|Specifies why the sign-in failed. Possible values include:<br /> `User is disabled in Business Central.<br />`User does not have entitlements in Business Central. ||
+|Failure reason|Specifies why the sign-in failed. See next section for details. ||
 
-## Troubleshooting failures
+### Troubleshooting failures
 
-#### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
+**The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.**
 
-#### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
+This occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you will probably see that the **State** field is set to **Disabled**.
+
+*Resolution*
+
+Enable the user account by setting the **State** field to **Enabled**. For more information, see [To remove a user's access to the system](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system)
+
+**A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.**
+
+This occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
+
+Entitlements, which part of licensing, are permissions that describe which objects in Business Central a user is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft. 
+
+*Resolution*
+
+Entitlements are assigned when the user account is created in the Microsoft 365 Admin Center or Microsoft Partner Center - they are not assigned in Business Central. 
+
+To assign entitlements to a user and add as needed, go to either the [Microsoft 365 Admin Center](https://admin.microsoft.com) (see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users) or the Microsoft Partner Center ([User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users)).
+
 
 ## Operation: Authorization Succeeded (Open Company)
 
@@ -90,22 +111,20 @@ Occurs when the company has opened successfully.
 
 The following tables explains the columns included in a Success Authorization trace.
 
-|Column|Description or value||
+|Dimension|Description or value||
 |---------|-----|-----------|
 |message|**Authorization steps in the open company trigger succeeded.**||
-|severityLevel|**1**||
-|operation_Name|**Authorization Failed (Pre Open Company)**||
+|severityLevel|**2**||
+
+<!--
+|operation_Name|**Authorization Succeeded (Open Company)**||-->
 
 ### Custom dimensions
 
-|Column|Description or value||
+|Dimension|Description or value||
 |---------|-----|-----------|
-|authorizationStatus|**Failed**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
-|entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
-|userType|Specifies whether the user is an **Internal_Admin**, **Normal user**, or **Delegated_admin**||
-|Failure reason|Specifies why the sign-in failed. Possible values include:<br /> `User is disabled in Business Central.<br />`User does not have entitlements in Business Central. ||
+|companyName|||
+|status|**Succeeded**|
 
 ## Operation: Authorization Failed (Open Company)
 
@@ -115,37 +134,50 @@ Occurs when a company has failed to open.
 
 The following tables explains the columns included in a Success Authorization trace.
 
-|Column|Description or value||
+|Dimension|Description or value||
 |---------|-----|-----------|
 |message|**Authorization steps in the open company trigger failed, see failureReason column for details.**||
-|severityLevel|**1**||
-|operation_Name|**Authorization Failed (Pre Open Company)**||
+|severityLevel|**2**||
+
+<!--
+|operation_Name|**Authorization Failed (Pre Open Company)**||-->
 
 ### Custom dimensions
 
-|Column|Description or value||
+|Dimension|Description or value||
 |---------|-----|-----------|
-|authorizationStatus|**Failed**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
-|entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
-|userType|Specifies whether the user is an **Internal_Admin**, **Normal user**, or **Delegated_admin**||
-|Failure reason|Specifies why the sign-in failed. Possible values include:<br /> `User is disabled in Business Central.<br />`User does not have entitlements in Business Central. ||
+|companyName|||
+|status|**Failed**|
+|failureReason|Specifies why the sign-in failed. See next section for details.||
 
-## Troubleshooting failures
+### Troubleshooting failures
 
-#### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
+##### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
 
-#### The product license permits working with companies that have names that start with ‘{0}’ only.
 
-#### The user does not have permission to access the company.
+*Resolution*
 
-#### The company doesn't exist.
 
-#### The product license permits a maximum of {0} non-demonstration companies.
+###### The product license permits working with companies that have names that start with ‘{0}’ only.
 
-#### The user opened a company that does not have any applicable entitlement sets. This will result in permission errors.
+*Resolution*
 
+###### The user does not have permission to access the company.
+
+*Resolution*
+
+###### The company doesn't exist.
+
+*Resolution*
+
+###### The product license permits a maximum of {0} non-demonstration companies.
+
+*Resolution*
+
+###### The user opened a company that does not have any applicable entitlement sets. This will result in permission errors.
+
+
+*Resolution*
 
 
 ## See also
