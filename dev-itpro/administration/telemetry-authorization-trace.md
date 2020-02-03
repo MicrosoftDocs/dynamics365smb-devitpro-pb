@@ -14,16 +14,16 @@ ms.author: jswymer
 
 # Analyzing Authorization Telemetry
 
-Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. Authorization signals are emitted in two stages of sign-in.
+Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. 
 
-The first stage is the initial authorization, where the user account is verified that it is enabled in the tenant and that it has the correct entitlements. The telemetry data includes:
+Authorization signals are emitted in two stages of sign-in. The first stage is the initial authorization, where the user account is verified that it is enabled in the tenant and that it has the correct entitlements. The telemetry data includes:
 
 - Success or failure of the sign-in attempt
 - Reason for failure
 - Type of user (such as normal, administrator, or delegated user)
 - Whether the user belongs to the tenant or is an invited user
 
-The next stage occurs after a successful authorization attempt, when trying to open the company (that is, when the CompanyOpen trigger run). The telemetry data will indicating whether the company was opened successfully or failed (with a reason).
+The next stage occurs after a successful authorization attempt, when trying to open the company (that is, when the CompanyOpen trigger run). The telemetry data indicates whether the company opened successfully or failed (for some reason).
 
 ## Operation: Success Authorization (Pre Open Company)
 
