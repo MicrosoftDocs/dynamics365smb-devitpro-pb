@@ -38,7 +38,7 @@ The following methods are available on instances of the Dictionary data type.
 ## Remarks  
 Each addition to the dictionary consists of a value, and its associated key. Every key in a Dictionary must be unique. A key cannot be null, but a value can be, only when the value type is a reference type.
 
-The Dictionary data type does not support holding instantiated records. For this purpose, use temporary tables instead.
+The Dictionary data type does not support holding instantiated records. For this purpose, use temporary tables.
 
 > [!WARNING]
 > Previously in C/AL, one would have typically used an in-memory temporary table to create a key-value data structure, as shown in the code below. In AL you use the Dictionary Data Type instead.
