@@ -40,6 +40,14 @@ Each addition to the dictionary consists of a value, and its associated key. Eve
 
 The Dictionary data type does not support holding instantiated records. For this purpose, use temporary tables instead.
 
+> [!WARNING]
+> Previously in C/AL, one would have typically used an in-memory temporary table to create a key-value data structure, as shown in the code below. In AL you use the Dictionary Data Type instead.
+>
+> ```
+> IF KeyCacheRec.GET(‘Some Value’)​ THEN​ 
+>     Complete data stack execution;
+> ```
+
 ## Example  
 In the following example, the variable `counter` represents the Dictionary data type to store a value representing the number of occurrences for each character in the `customerName`. Using the `Get` method, you get the number of occurrences for the character at position `i`. If `i` returns **false**, it means there is no value associated with that character, so you add the value 1. If `i` returns **true**, it means the value already exists, so you add `c + 1` to the value. The `Add` method adds the {key:value} pair to the Dictionary.
 
