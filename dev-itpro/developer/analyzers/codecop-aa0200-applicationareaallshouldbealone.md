@@ -1,6 +1,6 @@
 ---
 title: "When ApplicationArea is set to 'All', no other values for ApplicationArea should be specified."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/21/2020
 ms.reviewer: na

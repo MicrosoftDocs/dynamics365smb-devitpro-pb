@@ -1,6 +1,6 @@
 ---
 title: "IsXmlNamespaceManager Method"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/03/2020
 ms.reviewer: na
