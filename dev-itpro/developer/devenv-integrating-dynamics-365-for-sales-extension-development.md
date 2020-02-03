@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 Develop extensions and streamline the workflow by synchronizing Common Data Service data with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
-For developing extensions to integrate with sales data, you simply enable the tables used in Common Data Service. The extension development process includes the following set of properties to enable field mapping. You can enable the field mapping by using the following properties. The tables are extensible, so you can update Common Data Service with data as well.
+For developing extensions to integrate with sales data, you simply enable the tables used in Common Data Service. The extension development process includes the following set of properties to enable field mapping. You can enable the field mapping by using the following properties. The tables are extensible, so that you can update Common Data Service with data as well.
 
 ## Associated table and field properties
 
