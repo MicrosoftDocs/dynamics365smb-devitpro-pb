@@ -50,6 +50,9 @@ The following table shows the limits for variables of type `Decimal`.
 |Maximum calculating value.<br /><br /> This is the maximum value that can be calculated by code statements while not assigning to a field variable, storing to the database, or formatting to a text variable.|+/- 79,228,162,514,264,337,593,543,950,335|
 |Scaling factor (digits after decimal point) for calculating values|28<br /><br />For example, 7.9228162514264337593543950335|  
 
+
+The maximum safe value that will work on all Business Central versions of is +/- 999,999,999,999,999.99.
+
 It is possible to assign to a variable the maximum value that can be formatted and then multiply that variable by a large positive number, thereby generating a greater value. However, we do not recommend doing this. If you do, you will get errors if you attempt to format this variable to a text variable or assign the variable to a field variable in a record.
  
 ## See Also

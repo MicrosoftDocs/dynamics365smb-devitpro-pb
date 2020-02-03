@@ -1,7 +1,7 @@
 ---
 title: "How Application Configurations Affect Performance"
 ms.custom: na
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,10 +11,13 @@ author: KennieNP
 ---
 
 # How Application Configurations Affect Performance
-The topics in this session are tips and tricks on how to setup BC for performance and also describes how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+The topics in this session are tips and tricks on how to setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ## Run things in the background
-It is often desirable to offload work from the user session to happen in the background. Examples are
+
+It is often desirable to offload work from the user session to happen in the background. Examples are:
+
 - [Schedule long running reports to run in background](/dynamics365/business-central/ui-work-report#ScheduleReport)
 - Schedule jobs (for example posting) to run in background
 - Enable background posting in areas where your business is using reservations and item tracking using serial and lot numbers
@@ -33,7 +36,7 @@ Number series in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are a
 
 ### Be cautious with the **Copy company** operation
 
-The **Copy company** operation is not intended to run while business transactions is being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operation is very likely to induce locks on the tables that data is copied from and these locks will block users from transaction in the company. Second, the operation is using a lot of resources on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, which can in turn cause resource starvation for users working in other companies.  
+The **Copy company** operation is not intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operation is very likely to induce locks on the tables that data is copied from and these locks will block users from transacting in the company. Second, the operation is using a lot of resources on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, which can in turn cause resource starvation for users working in other companies.  
 
 Should you need to perform a **Copy company** operation, it is highly recommended to do it outside working hours. Do turn off scheduled jobs while performing **Copy company** to avoid locking issues.
 
@@ -51,29 +54,29 @@ Use keyboard shortcuts for faster data entry
 
 - [Keyboard Shortcuts](/dynamics365/business-central/keyboard-shortcuts)
 
-Block inactive customers, vendors or items to improve filtering and searching on document data entry
+Block inactive customers, vendors, or items to improve filtering and searching on document data entry
 
-- [Block Customers](/dynamics365/business-central/receivables-how-block-customers)
-- [Block Vendors](/dynamics365/business-central/payables-how-block-vendors)
-- [Block Items from Sales or Purchasing](/dynamics365/business-central/inventory-how-block-items)
+- [Block Customers](/dynamics365/business-central/receivables-how-block-customers)  
+- [Block Vendors](/dynamics365/business-central/payables-how-block-vendors)  
+- [Block Items from Sales or Purchasing](/dynamics365/business-central/inventory-how-block-items)  
 
 ## Data search
-Search in lists searches all columns in the database. 
 
-To avoid resource starvation on broad data searches, a search might be subject to a timeout in which case the user will see a *"Searching for rows is taking too long. Try to search or filter using different criteria."* message. 
+Search in lists searches all columns in the database. To avoid resource starvation on broad data searches, a search might be subject to a timeout in which case the user will see a *"Searching for rows is taking too long. Try to search or filter using different criteria."* message. 
 
 If users are experiencing slowness in data search, suggest them to set a column filter instead.
 
 ## Performance effect of enabling integration on a table
-There is a performance overhead involved in enabling integration on an entity such as Customer or Contact that will impact performance. Only enable integration if you intend to integrate with Dynamics 365 Sales, and only do so on the entities that is needed.
 
-For more information, see [Synchronizing Data in Business Central and Dynamics 365 Sales](/dynamics365/business-central/admin-synchronizing-business-central-and-sales).
+There is a performance overhead involved in enabling integration on an entity such as **Customer** or **Contact** that will impact performance. Only enable integration if you intend to integrate with Dynamics 365 Sales, and only do so on the entities that are needed.
+
+For more information, see [Synchronizing Data in Business Central and Dynamics 365 Sales](/dynamics365/business-central/admin-synchronizing-business-central-and-sales). <!-- change with CDS integration in spring 2020 -->
 
 ## Functionality with known performance impact
 
 These areas of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application are known to cause a performance impact and require extra testing with realistic data setup before they are rolled out. 
 
-- [Security filtering Mode](../security/security-filters.md#PerformanceImpact)  
+- [Security filtering mode](../security/security-filters.md#PerformanceImpact)  
 - [Inventory Posting](/dynamics365/business-central/design-details-inventory-posting)  
 - [Dimensions](/dynamics365/business-central/finance-dimensions)  
 - [Dynamic Order tracking](/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging)  
