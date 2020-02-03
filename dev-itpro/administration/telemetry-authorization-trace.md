@@ -78,13 +78,13 @@ The following tables explains the columns included in a Success Authorization tr
 |entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
 |userType|Specifies whether the user is an **Internal_Admin**, **Normal user**, or **Delegated_admin**||
-|Failure reason|Specifies why the sign-in failed. See next section for details. ||
+|Failure reason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.||
 
-### Troubleshooting failures
+### <a name="authorizationfailures"></a> Troubleshooting failures
 
 **The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.**
 
-This occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you will probably see that the **State** field is set to **Disabled**.
+This occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you will see that the **State** field is set to **Disabled**.
 
 *Resolution*
 
@@ -94,14 +94,13 @@ Enable the user account by setting the **State** field to **Enabled**. For more 
 
 This occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
 
-Entitlements, which part of licensing, are permissions that describe which objects in Business Central a user is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft. 
+Entitlements, which are part of the license, are permissions that describe which objects in Business Central a user is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft. 
 
 *Resolution*
 
-Entitlements are assigned when the user account is created in the Microsoft 365 Admin Center or Microsoft Partner Center - they are not assigned in Business Central. 
+Entitlements are assigned when the user account is created in the Microsoft 365 Admin Center or Microsoft Partner Center; they are not assigned in Business Central. 
 
 To assign entitlements to a user and add as needed, go to either the [Microsoft 365 Admin Center](https://admin.microsoft.com) (see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users) or the Microsoft Partner Center ([User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users)).
-
 
 ## Operation: Authorization Succeeded (Open Company)
 
@@ -148,17 +147,20 @@ The following tables explains the columns included in a Success Authorization tr
 |---------|-----|-----------|
 |companyName|||
 |status|**Failed**|
-|failureReason|Specifies why the sign-in failed. See next section for details.||
+|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.||
 
-### Troubleshooting failures
+### <a name="opencompanyfailures"></a>Troubleshooting failures
 
 ##### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
 
+This occurs when a user tries to sign-in to a company whose name exceeds the maximum allowed length.
 
 *Resolution*
 
 
-###### The product license permits working with companies that have names that start with ‘{0}’ only.
+###### The product license permits working with companies that have names that start with ‘<text>’ only.
+
+This occurs when a user tries to open a company whose name does not start with the text that is required by the license.
 
 *Resolution*
 
@@ -168,6 +170,8 @@ The following tables explains the columns included in a Success Authorization tr
 
 ###### The company doesn't exist.
 
+
+
 *Resolution*
 
 ###### The product license permits a maximum of {0} non-demonstration companies.
@@ -176,10 +180,39 @@ The following tables explains the columns included in a Success Authorization tr
 
 ###### The user opened a company that does not have any applicable entitlement sets. This will result in permission errors.
 
-
 *Resolution*
 
+<!--
 
+Which environment can the user(s) not sign into? e.g. sandbox/prod/all? 
+When was the last successful login for the user(s)? Can the user(s) login now or is this an on-going issue? 
+Has the user done a successful login before the issue? 
+Can the user(s) sign into other services like Office or CRM? 
+What role(s)/type(s) do these users have? e.g. Internal Admin, Delegated Admin, Normal, Device user? 
+Which company does the user try to access, has the user access it before? 
+Was "Refresh All User Groups" run recently by a SUPER user in BC? 
+Are valid licenses assigned to the user(s), if applicable? What type of license was assigned (e.g. premium, essential, paid, trial etc.)? 
+
+For delegated admins: 
+Is the admin added to the tenant? (delegate admins are no listed as a user in the tenant user page in Azure) 
+Verify the partnership is valid (in the customer tenant) 
+Open portal.office.com and go to the admin page.  
+Click “Partner relationships”, then click the partner name.  
+In the properties of the partner the property “Partner Relationship” should include “Admin” 
+Verify the user (delegated admin) is an Admin or Helpdesk agent in the partner tenant.  
+Open the Partner center  
+Go to users and verify the type of the user to be an Admin or Helpdesk agent under the property “Assist your customers as”. 
+For device users, were they setup correctly? See Analyze device user login issues. 
+Are the users "enabled" in the BC users page? (information available in the Cloud Manager)  
+Are the users marked expired? Were users recently exported/imported via Excel?  
+Was the user assigned the correct permissions from the users page? 
+Were there any changes to the user recently? Like, permissions/licenses/roles change? Or maybe user was disabled/enabled? 
+Permissions are assigned via the Users page in Business Central. 
+Licenses are either assigned via the Office or Azure portal by the tenant admin. 
+Roles are assigned via the Partner Center. 
+The user can be enabled/disabled from the Users page in Business Central. 
+
+>
 ## See also
 
 [Working with Administration Tools](administration.md)  
