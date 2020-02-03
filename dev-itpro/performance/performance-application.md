@@ -84,6 +84,16 @@ These areas of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] app
 - [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
 - [Change log](/dynamics365/business-central/across-log-changes)  
 
+
+### Overwrite the database access intent on reports, API pages, and queries
+
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server to load-balance analytical workloads in the database that only read data, such as queries, reports, or API pages. **Read Scale-Out** is built-in with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, but it can also be enabled for on-premises.
+
+With **Read Scale-Out**, instead of sharing the primary (read-write) database, reports, queries, and API pages can be set up to run against a read-only replica (if available). This essentially isolates them from the main read-write workload (codeunits) so that they will not affect the performance of business processes. However, reading data from a replica can introduce a delay of a few seconds compared to reading data from the primary database.
+
+Report, API page, and query objects are developed with a predefined database access intent setting, which determines whether to use a replica if one is available. If this data delay is not acceptable for a given report, query, or API page, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](https://review.docs.microsoft.com/en-us/dynamics365/business-central/admin-data-access-intent?branch=tfs337368-readscaleout).
+
+
 ## Please do not do this
 
 Finally, make sure that you do not repeat these performance mistakes that we have seen cause massive performance issues for customers:
