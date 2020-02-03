@@ -88,19 +88,21 @@ This occurs when the user has a valid account in Business Central, but the accou
 
 *Resolution*
 
-Enable the user account by setting the **State** field to **Enabled**. For more information, see [To remove a user's access to the system](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system)
+Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)
 
 **A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.**
 
 This occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
 
-Entitlements, which are part of the license, are permissions that describe which objects in Business Central a user is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft. 
+Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user is entitled to use, according to their Azure Active Directory role or the license they purchased from Microsoft.
 
 *Resolution*
 
-Entitlements are assigned when the user account is created in the Microsoft 365 Admin Center or Microsoft Partner Center; they are not assigned in Business Central. 
+Entitlements are assigned to the user account in the Microsoft 365 Admin Center or Microsoft Partner Center; they are not assigned in Business Central. To assign entitlements to a user, see one of the following:
 
-To assign entitlements to a user and add as needed, go to either the [Microsoft 365 Admin Center](https://admin.microsoft.com) (see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users) or the Microsoft Partner Center ([User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users)).
+- From [Microsoft 365 Admin Center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users).
+
+- From the Microsoft Partner Center ([User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users)).
 
 ## Operation: Authorization Succeeded (Open Company)
 
@@ -157,31 +159,45 @@ This occurs when a user tries to sign-in to a company whose name exceeds the max
 
 *Resolution*
 
+This typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. If the name exceeds 30 characters, then this message occurs. Make sure that the user has the proper name of the company.
 
+<!--
 ###### The product license permits working with companies that have names that start with ‘<text>’ only.
 
 This occurs when a user tries to open a company whose name does not start with the text that is required by the license.
 
 *Resolution*
-
+-->
 ###### The user does not have permission to access the company.
 
+This occurs when a user account in Business Central does not have the proper permissions to the company.
+
 *Resolution*
+
+In Business Central, open the user account and modify the permissions the user to give them access to the company. For more information, see [Assign Permissions to Users and Groups](dynamics365/business-central/ui-define-granular-permissions).
+
+> [!TIP]
+> A good starting point is to look at the **Effective Permissions** that the user has on the company. You can do this from the user card by selecting **Effective Permissions** and setting the **Company** to the company in question.
 
 ###### The company doesn't exist.
 
-
+This occurs when a user tries to sign in to a company, but the company is not found in Business Central.
 
 *Resolution*
 
+This typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. Make sure that the user has the proper name of the company.
+
+
+<!--
 ###### The product license permits a maximum of {0} non-demonstration companies.
 
 *Resolution*
-
+-->
+<!--
 ###### The user opened a company that does not have any applicable entitlement sets. This will result in permission errors.
 
 *Resolution*
-
+-->
 <!--
 
 Which environment can the user(s) not sign into? e.g. sandbox/prod/all? 
