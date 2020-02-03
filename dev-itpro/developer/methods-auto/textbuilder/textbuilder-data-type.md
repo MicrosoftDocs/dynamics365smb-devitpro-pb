@@ -38,10 +38,11 @@ The following methods are available on instances of the TextBuilder data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-> [!TIP]
-> The [Text Data Type](..\text\text-data-type.md) is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a [Text Data Type](..\text\text-data-type.md) can be costly.  
->
-> The **TextBuilder** data type is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using **TextBuilder** data type can boost performance when concatenating many strings together in a loop.
+## Remarks
+
+The [Text Data Type](..\text\text-data-type.md) is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a [Text Data Type](..\text\text-data-type.md) can be costly.  
+
+The **TextBuilder** data type is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using **TextBuilder** data type can boost performance when concatenating many strings together in a loop.
 
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  

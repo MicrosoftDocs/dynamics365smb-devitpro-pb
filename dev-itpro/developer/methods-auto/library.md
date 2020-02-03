@@ -35,7 +35,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[Debugger](debugger/debugger-data-type.md)|Enables communication with a debugger.|
 |[Decimal](decimal/decimal-data-type.md)|Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.|
 |[Dialog](dialog/dialog-data-type.md)|Represents a dialog window.|
-|[Dictionary](dictionary/dictionary-data-type.md)|Represents a collection of keys and values.|
+|[Dictionary](dictionary/dictionary-data-type.md)|Represents an unordered collection of keys and values. The Dictionary data type is optimized for fast lookup of values.|
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
 |[Enum](enum/enum-data-type.md)|Represents the text content of an element or attribute.|
@@ -59,7 +59,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[JsonValue](jsonvalue/jsonvalue-data-type.md)|Is a container for any well-formed fundamental JSON value. A default JsonValue is set to the JSON value of NULL.|
 |[KeyRef](keyref/keyref-data-type.md)|Identifies a key in a table and the fields in this key.|
 |[Label](label/label-data-type.md)|Denotes a string constant that can be optionally translated into multiple languages.|
-|[List](list/list-data-type.md)|Represents a strongly typed list of objects that can be accessed by index.|
+|[List](list/list-data-type.md)|Represents a strongly typed list of ordered objects that can be accessed by index. Contrary to the Array data type, a List is unbounded, such that its dimension does not need to be specified upon declaration.|
 |[Media](media/media-data-type.md)|Encapsulates media files, such as image .jpg and .png files, in application database tables. The Media data type can be used as a table field data type, but cannot be used as a variable or parameter. The Media data type enables you to import a media file to the application database and reference the file from records, making it possible to display the media file in the client user interface. You can also export media from the database to files and streams.|
 |[MediaSet](mediaset/mediaset-data-type.md)|Encapsulates media, such as images, in application database tables.|
 |[ModuleDependencyInfo](moduledependencyinfo/moduledependencyinfo-data-type.md)|Provides information about a dependent module.|

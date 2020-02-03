@@ -1,6 +1,6 @@
 ---
 title: "Remove Method"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/03/2020
 ms.reviewer: na
