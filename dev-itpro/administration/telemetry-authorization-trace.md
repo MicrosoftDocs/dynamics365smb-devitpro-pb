@@ -90,7 +90,7 @@ The following tables explains the columns included in a Success Authorization tr
 
 ### <a name="authorizationfailures"></a> Troubleshooting failures
 
-**The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.**
+#### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
 
 This occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you will see that the **State** field is set to **Disabled**.
 
@@ -98,7 +98,7 @@ This occurs when the user has a valid account in Business Central, but the accou
 
 Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
-**A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.**
+#### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
 
 This occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
 
@@ -187,7 +187,7 @@ In Business Central, open the user account and modify the permissions the user t
 > [!TIP]
 > A good starting point is to look at the **Effective Permissions** that the user has on the company. You can do this from the user card by selecting **Effective Permissions** and setting the **Company** to the company in question.
 
-###### The company doesn't exist.
+#### The company doesn't exist.
 
 This occurs when a user tries to sign in to a company, but the company is not found in Business Central.
 
@@ -236,11 +236,9 @@ Licenses are either assigned via the Office or Azure portal by the tenant admin.
 Roles are assigned via the Partner Center. 
 The user can be enabled/disabled from the Users page in Business Central. 
 
->
+-->
 ## See also
 
-[Working with Administration Tools](administration.md)  
-[The Business Central Administration Center](tenant-admin-center.md)  
-[Managing Environments](tenant-admin-center-environments.md)  
-[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Monitoring and Analyzing Telemetry](telemtry-overview.md)  
+[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
+[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  

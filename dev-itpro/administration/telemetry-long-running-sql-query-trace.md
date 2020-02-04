@@ -79,8 +79,8 @@ This table describes the different dimensions.
 
 ## See also
 
-[Working with Administration Tools](administration.md)  
+[Monitoring and Analyzing Telemetry](telemtry-overview.md)  
+[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
+[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Monitoring and Analyzing Long Running SQL Queries On-Premises](monitor-long-running-sql-queries-event-log.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
-[Managing Environments](tenant-admin-center-environments.md)  
-[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
