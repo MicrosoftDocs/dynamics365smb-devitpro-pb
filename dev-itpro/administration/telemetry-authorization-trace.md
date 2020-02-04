@@ -53,7 +53,7 @@ The following tables explains the custom dimensions included in a **Success Auth
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. Currently, the version is **0.2** ||
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
 
-##### <a name="usertype"></a> UserType
+## <a name="usertype"></a> UserType
 
 |Value|Description|See more|
 |-----|-----------|--------|
@@ -85,7 +85,7 @@ The following tables explains the columns included in a Success Authorization tr
 |guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
 |entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
-|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype)||
+|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
 |Failure reason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.||
 
 ### <a name="authorizationfailures"></a> Troubleshooting failures
@@ -161,7 +161,7 @@ The following tables explains the columns included in a Success Authorization tr
 
 ### <a name="opencompanyfailures"></a>Troubleshooting failures
 
-##### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
+#### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
 
 This occurs when a user tries to sign-in to a company whose name exceeds the maximum allowed length.
 
@@ -176,7 +176,7 @@ This occurs when a user tries to open a company whose name does not start with t
 
 *Resolution*
 -->
-###### The user does not have permission to access the company.
+#### The user does not have permission to access the company.
 
 This occurs when a user account in Business Central does not have the proper permissions to the company.
 
