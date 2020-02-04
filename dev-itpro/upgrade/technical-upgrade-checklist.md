@@ -21,7 +21,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Step|More info| Done |
 |----|-----------|--|
 |Convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
-|Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
+|Transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 
 ## Prepare the old application database
 
@@ -30,7 +30,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Backup the database(s).|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
 |(Single-tenant mode only) Uninstall all extensions. (Multitenant mode) Unintsall all V1 extensions.|[See...](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |(Optional) Unpublish unwanted extension versions .|[See...](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp)||
-|Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](../cside/cside-compiling-objects.md)||
+|Ensure all objects are compiled, unlocked, and tables are synchronized.|[See...](../cside/cside-compiling-objects.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |(Multitenant mode only) Dismount the tenant|[See...](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant?view=dynamicsnav-ps-2018)||
 |Stop the Dynamics NAV or old Business Central Server Instance|||
@@ -71,7 +71,7 @@ This article provides an overview of the technical upgrade process for Business 
 |----|-----------|--|
 |Upgrade Javascript-based control add-ins to new versions available on [!INCLUDE[server](../developer/includes/server.md)]. |[See...](converting-a-database.md#extensions)|
 |(Single-tenant mode only) Install the V2 extensions that were previously uninstalled.|[See...](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
-|If the old database used first-party V1 extensions, publish and install the V2 extensions that replace them.|[See...](converting-a-database.md#extensions)||
+|If the old database used first-party V1 extensions, publish and install the V2 extensions that replace them.<br /><br />**Important** As part of this step, make sure to publish the system and test symbols and generate application symbols.|[See...](converting-a-database.md#extensions)||
 |Transition custom code from old codeunit 1 to management codeunits. (Dynamics NAV 2018 and earlier)|[See...](transition-from-codeunit1.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client  (Dynamics NAV 2018 and earlier)|[See...](upgrade-pages-report-for-search.md) ||
 |Build object search index. |||

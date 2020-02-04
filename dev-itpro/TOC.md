@@ -43,26 +43,27 @@
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
-<!-- ### Onboarding your customer -->
-<!-- ### Free trial -->
-### [Preparing Demonstration Environments](administration/demo-environment.md)
-### [Business Central Administration Center](administration/tenant-admin-center.md)
-### [Managing Environments](administration/tenant-admin-center-environments.md)
-### [Technical Support of Business Central](technical-support.md)
-### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-### Embed App
-#### [Embed App Overview](deployment/embed-app-overview.md)
-#### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)
-#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-#### [Components](deployment/embed-app-components.md)
-#### [Platform](deployment/embed-app-platform.md)
-#### [Licensing](deployment/embed-app-licensing.md)
-#### [Customer Sign-up](deployment/embed-app-customer-signup.md)
-#### [AppSource](deployment/embed-app-appsource.md)
-#### [Sandbox](deployment/embed-app-sandbox.md)
-#### [Ecosystem Features](deployment/embed-app-ecosystem.md)
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### Onboard your customers
+#### [Trials and Sign-ups](deployment/customer-signup.md)
+<!-- #### Do cool demos -->
+<!-- #### Partner Center stuff -->
+<!-- Performance tests-->
+#### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+#### [Technical Support of Business Central](technical-support.md)
+### Build apps for Business Central
+<!--#### What the partner's responsibilities are -->
+<!--#### How Microsoft runs the service -->
+#### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
+#### [Components and Capabilities](deployment/app-components.md)
+#### [Licensing](deployment/licensing.md)
+#### [Add your App to AppSource](administration/appsource.md)
+#### Embed Apps
+##### [Embed App Overview](deployment/embed-app-overview.md)
+##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
@@ -103,8 +104,11 @@
 # Administration
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+### [Preparing Demo Environments](administration/demo-environment.md)
+### [Preparing Test Environments](administration/test-environment.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
-#### [Preparing Test Environments](administration/test-environment.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -308,6 +312,7 @@
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
+### [Substituting a Report](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
@@ -606,6 +611,15 @@
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
+<!-- begin performance -->
+# Performance
+## [Performance Overview](performance/performance-overview.md)
+## [Application](performance/performance-application.md)
+## [Developer](performance/performance-developer.md)
+## [Online](performance/performance-online.md)
+## [On-Premises](performance/performance-onprem.md)
+## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
+<!-- end performance -->
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
@@ -635,6 +649,7 @@
 #### [Installing an Update](upgrade/upgrading-cumulative-update.md)
 ### Business Central 2019 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v15.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)

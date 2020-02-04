@@ -351,6 +351,7 @@ Follow these steps if your existing solution uses the Microsoft Base Application
 
     Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables of the Base Application.
 
+
 ### Upgrade custom Base Application
 
 If you have a custom Base Application instead of the Microsoft Base Application, and you want the new application features and hotfixes that are included in the Microsoft Base Application, then you will have to merge the modifications made in the Microsoft Base Application into your custom Base Application and create a new version of your custom Base Application.
@@ -388,6 +389,38 @@ If the old solution used third-party extensions, and you still want to use them,
 
 Alternatively, if you have the source for these extensions, you can build and compile a new version of the extension by using the AL development environment, and then you upgrade to the new version as described in the previous task.
 
+## Post Upgrade - Change application version
+
+(Optional) This task is not required for installing the update. However, it might be useful for support purposes, as well as answer a common question about the application version.  
+
+In the client, on the **Help and Support** page, you will see an application version, such as 15.1.2345.6 (for an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md)). This version number is not updated automatically when you install an update. If you want the application version to reflect the application version of the update, or your own version number, you will have to change it manually as described here.
+
+As a guideline, we recommend that you set the value to application build number for the version 15 update you are installing. You can get this number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706) page.
+
+1. Run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
+
+    ```
+    Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
+    ```
+    For example:
+    
+    ```
+    Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.3.38071.0 -Force
+    ```
+2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
+
+    ```  
+    Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
+    ```
+    
+    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+
+
+3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
+
+    ```
+    Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
+    ```
 <!--
 ### Recompile and install published third-party extensions
 

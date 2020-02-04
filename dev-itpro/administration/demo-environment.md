@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/20/2019
+ms.date: 01/30/2020
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -26,7 +26,7 @@ This type of environment can be useful if you want to demonstrate the general us
 
 ### Your own trial
 
-If you want to use a trial experience that gives you more control over the experience and allows you to demonstrate the native integration with Outlook and other services, services, such as Power Automate or Dynamics 365 Sales, then you can sign up for a free trial yourself. This gives you an environment without the risk of introducing changes into an existing customer environment and before you have set up a customer-partner relationship in the Partner Center, for example.  
+If you want to use a trial experience that gives you more control over the experience and allows you to demonstrate the native integration with Outlook and other services, services, such as Power Automate or Dynamics 365 Sales, then you can sign up for a free trial yourself. This gives you an environment without the risk of introducing changes to an existing customer environment and before you have set up a customer-partner relationship in the Partner Center, for example.  
 
 You can do that with your company email, but it's far better to get yourself an Office 365 demo account that you create on [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/), which has replaced *demos.microsoft.com*. You have access to the site if you are enrolled with the Microsoft Partner Center. For more information, see [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products) in the Partner Center documentation.  
 
@@ -34,7 +34,7 @@ For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics36
 
 This type of environment can be useful for repeatable demos that rely on Office 365 integration, for example.  
 
-#### To get a trial environment based on Office 365 content packs
+#### To get a trial environment based on Microsoft 365 content packs
 
 [!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
@@ -44,7 +44,7 @@ Sometimes, the out-of-the-box demo environment is not what you want to show your
 
 Instead, you might want to [deploy [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises](../deployment/deployment-scenarios.md) with your customizations or other solutions. Or you could set up a dedicated environment based on the [[!INCLUDE [prodshort](../developer/includes/prodshort.md)] container-based image on Docker](../developer/devenv-running-container-development.md).  
 
-Alternatively, you can create a free trial with an Office 365 demo account, and then create a dedicated environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that you then apply your solution to, such as by deploying your app straight from Visual Studio Code, or any other configuration changes that you want to make.
+Alternatively, you can create a free trial with an Office 365 demo account from [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com), and then create a dedicated environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that you then apply your solution to, such as by deploying your app straight from Visual Studio Code, or any other configuration changes that you want to make. For inspiration for how to get started, see [Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](test-environment.md).  
 
 ## See also
 

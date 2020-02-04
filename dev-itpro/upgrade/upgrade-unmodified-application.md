@@ -23,17 +23,19 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisite
 
-1. Upgrade to latest Business Central Spring 2019 cumulative update (version 14.X).
+1. Upgrade to Business Central Spring 2019 (version 14).
 
-    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
+   There are several updates for version 14. If you are upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend that you upgrade to the latest update for version 14 that has a compatible update for version 15. If your solution is already on version 14, then you do not have to upgrade to the latest version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-    For information about how to perform the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
+   To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
-## Task 1: Install Business Central version 15
+   For information about how to perform the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
-1. Download the latest update for Business Central 2019 release wave 2.
+## Task 1: Install Business Central (version 15)
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706)
+1. Download the latest available update for Business Central 2019 version 15 that is compatible with your version 14.
+
+    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
   
     The guidelines in this article assume that you are running the latest available update.
 
@@ -178,7 +180,9 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
 This task is optional, but it is recommended. You can choose to skip it for now and do it later. In this task, you will increase the application_version that is stored in $ndo$dbproperty table of the application database, which is not done automatically. This serves two purposes:
 
 - Enables running the Start-NAVDataUpgrade cmdlet later in Task 8 of this article. The application version is compared with the tenant's version. If the application version is greater, then a data upgrade can be performed. If you skip this task then you will have to use the `-SkipAppVersionCheck` switch with  Start-NAVDataUpgrade cmdlet in Task 8. 
-- The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version. For example, you could set the value to application build no. which you can get from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+- The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version.
+
+The version has the format `major.minor.build.revision`, such as, '14.3.14824.1'. As a minimum, you increase the revision by 1. However, as a guideline, we recommend that you set the value to application build number for the version 15 update you are working with. You can get this number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706) page.
 
 To change the application version, run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -188,10 +192,10 @@ Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <n
 For example:
 
 ```
-Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.1.38071 -Force
+Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.1.38071.0 -Force
 ```
 
-Later in this article, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database.
+Later in this article, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database ($ndo$tenantproperty table).
 <!--
 ## Task 4: Configure the version 15 server instance 
 
@@ -288,7 +292,17 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "<path to extension>"
     ```
 
-## Task 7: Synchronize the tenant
+## Task 7: Restart the server instance
+
+Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for performing the remainder of the upgrade.
+
+```
+Restart-NAVServerInstance -ServerInstance <server instance name>
+```
+
+This step is important, otherwise you might experience issues when you run the data upgrade.
+
+## Task 8: Synchronize the tenant
 
 In this task, you will synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -347,7 +361,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you will notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 8: Upgrade the data
+## Task 9: Upgrade the data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -378,7 +392,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     This step will also automatically install the new extension version on the tenant.
 4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 9: Install 3rd-party extensions
+## Task 10: Install 3rd-party extensions
 
 Complete this task to install 3rd party extensions for which a new version was not published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 

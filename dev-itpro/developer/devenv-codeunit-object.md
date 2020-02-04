@@ -28,8 +28,8 @@ The codeunit can be used both as a direct call to `codeunit.run(customer)` or as
 ```
 codeunit 50113 CreateCustomer
 {
-    trigger OnRun();
     TableNo = Customer;
+    trigger OnRun();
     begin
         CheckSize(Rec);
     end;

@@ -48,9 +48,13 @@ Here is a quick overview of capabilities in **Designer**:
 
 In the [!INCLUDE[prodshort](includes/prodshort.md)] client, you start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prodshort](includes/prodshort.md)] client in Designer.
 
-After you are done with the adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the code using the **F7** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
+After you are done with the adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save it for the tenant. Once you finish, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You can extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
-![Designer](media/usingDesigner.gif)
+If you choose not to download the code at the end, you can still pull the code using the **F7** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
+
+
+
+![Designer](media/designer.gif)
 
 ## Drag-and-drop components
 
