@@ -99,12 +99,12 @@ In Chrome 80 Beta or older Chrome versions where **Cookies without SameSite must
 
 ### Frequently Asked Questions
 
-** Is access from mobile apps affected?**  
+**Is access from mobile apps affected?**  
 In the short-term, the Dynamics NAV or Business Central store apps for tablet and phone should not be affected. However, there is evidence from each of the major browsers that their new security policies will eventually also roll out to the technology which our mobile apps rely on. We recommend you minimize risk and take action as outlined in this article.
 
-** Are Control AddIns affected?**  
-Custom Control AddIns sometimes rely on Business Central's authentication with Azure AD. Whether this is impacted by the cookie policy changes is highly dependent on your implementation to handle Azure AD. We recommend you minimize risk and take action as outlined in this article.
+**Are Control Add-Ins affected?**  
+Custom control add-ins sometimes rely on Business Central's authentication with Azure AD. Whether this is impacted by the cookie policy changes is highly dependent on your implementation to handle Azure AD. We recommend you minimize risk and take action as outlined in this article.
 
-** Is the Dynamics NAV Windows Client affected?**  
+**Is the Dynamics NAV Windows Client affected?**  
 The Dynamics NAV Windows client may be configured to authenticate using Azure AD. In this case, the change in cookie policy has no effect on access to the Windows client.
 
