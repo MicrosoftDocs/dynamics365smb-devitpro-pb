@@ -3,7 +3,7 @@ title: "Getting Started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/11/2019
+ms.date: 02/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 + Always use the `.al` extension on new files.
 + Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list.
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
-+ Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
++ Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use **Ctrl+Shift+P** and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
 + In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System and Base Applications found in the project under `.alpackages`. For example:
     ```

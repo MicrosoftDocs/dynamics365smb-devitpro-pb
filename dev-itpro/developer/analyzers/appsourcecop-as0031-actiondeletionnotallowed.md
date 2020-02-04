@@ -1,6 +1,6 @@
 ---
 title: "Actions that have been published must not be deleted, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/20/2020
 ms.reviewer: na

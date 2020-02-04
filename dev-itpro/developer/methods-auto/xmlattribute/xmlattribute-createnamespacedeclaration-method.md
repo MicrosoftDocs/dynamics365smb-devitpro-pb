@@ -2,7 +2,7 @@
 title: "CreateNamespaceDeclaration Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ The prefix of the attribute (if any).
         
 *NamespaceUri*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The URI of the attribute. If the prefix is xmlns, then this parameter must be https://www.w3.org/2000/xmlns/; otherwise an exception is thrown.  
+The URI of the attribute. If the prefix is xmlns, then this parameter must be http://www.w3.org/2000/xmlns/; otherwise an exception is thrown.  
 
 
 ## Return Value
