@@ -51,7 +51,15 @@ The following tables explains the custom dimensions included in a **Success Auth
 |guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
 |entitlementSetIds |Specifies the entitlements that the user has in Business Central.||
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. Currently, the version is **0.2** ||
-|userType|Specifies whether the user is an **Internal_Admin**, **Normal user**, or **Delegated_admin**||
+|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
+
+##### <a name="usertype"></a> UserType
+
+|Value|Description|See more|
+|-----|-----------|--------|
+|Delegated_admin|This indicates that the user is as a delegated administrator on the tenant. This is typically reserved for partners. Delegated administrator privileges are granted to users by the customer. This is done by setting up a Partner Relationship in the Microsoft Partner Center.|[Delegated Administrator Access to Business Central Online](delgated-admin.md)<br /><br />[Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)|
+|Internal_Admin|This indicates that the user is an internal administrator on the tenant, which means that the user is assigned the **Global admin** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 Admin Center](/office365/admin/add-users/assign-admin-roles)|
+|Normal user|This indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
 
 ## Operation: Failed Authorization (Pre Open Company)
 
@@ -77,7 +85,7 @@ The following tables explains the columns included in a Success Authorization tr
 |guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
 |entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
-|userType|Specifies whether the user is an **Internal_Admin**, **Normal user**, or **Delegated_admin**||
+|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype)||
 |Failure reason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.||
 
 ### <a name="authorizationfailures"></a> Troubleshooting failures
@@ -88,21 +96,21 @@ This occurs when the user has a valid account in Business Central, but the accou
 
 *Resolution*
 
-Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)
+Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
 **A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.**
 
 This occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
 
-Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user is entitled to use, according to their Azure Active Directory role or the license they purchased from Microsoft.
+Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user is entitled to use, according to their Azure Active Directory role or the license they purchased from Microsoft. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/))
 
 *Resolution*
 
 Entitlements are assigned to the user account in the Microsoft 365 Admin Center or Microsoft Partner Center; they are not assigned in Business Central. To assign entitlements to a user, see one of the following:
 
-- From [Microsoft 365 Admin Center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users).
+- From [Microsoft Office 365 Admin Center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users).
 
-- From the Microsoft Partner Center ([User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users)).
+- From the Microsoft Partner Center, see [User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users).
 
 ## Operation: Authorization Succeeded (Open Company)
 
