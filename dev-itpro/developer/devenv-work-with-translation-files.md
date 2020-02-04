@@ -42,7 +42,7 @@ The label syntax is shown in the example below for the **Caption** property:
 Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999; 
 ```
 
-> [!NOTE]
+> [!NOTE]  
 > The `comment`, `locked`, and `maxLength` attributes are optional and the order is not enforced. For more information, see [Label Data Type](methods-auto/label/label-data-type.md).
 
 Use the same syntax for report labels:  
@@ -76,7 +76,7 @@ var
 
 
 ## The XLIFF file
-In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. This is illustrated in the example below.
+In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `<trans-unit id>` attribute is the object ID. This is illustrated in the example below.
 
 ```
 <ding="utf-8"?>
@@ -84,7 +84,7 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
   <file datatype="xml" source-language="en-US" target-language=”da-DK” original="ALProject16">
     <body>
       <group id="body">
-        <trans-unit id="PageExtension 1255613137 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="PageExtension 50110" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Developer translation for %1</source>
           <target>Udvikleroversættelse for %1</target>
           <note from="Developer" annotates="general" priority="2">%1 is extension name</note>
