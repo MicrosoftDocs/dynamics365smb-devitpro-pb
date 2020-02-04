@@ -53,7 +53,7 @@ The following tables explains the custom dimensions included in a **Success Auth
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. Currently, the version is **0.2** ||
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
 
-## <a name="usertype"></a> UserType
+### <a name="usertype"></a> UserType
 
 |Value|Description|See more|
 |-----|-----------|--------|
