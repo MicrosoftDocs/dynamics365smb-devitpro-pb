@@ -10,9 +10,11 @@ author: SusanneWindfeldPedersen
 ---
 
 # Working with Translation Files
+
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multilanguage enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations. 
 
 ## Generating the XLIFF file
+
 To add a new language to the extension that you have built, you must first enable the generation of XLIFF files. The XLIFF file extension is .xlf. The generated XLIFF file contains the strings that are specified in properties such as **Caption**, **CaptionML**, and **Tooltip**.
 
 > [!NOTE]  
@@ -76,7 +78,8 @@ var
 
 
 ## The XLIFF file
-In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `<trans-unit id>` attribute is the object ID. This is illustrated in the example below.
+
+In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `<trans-unit id>` attribute corresponds to the object ID in the extension. This is illustrated in the example below.
 
 ```
 <ding="utf-8"?>
