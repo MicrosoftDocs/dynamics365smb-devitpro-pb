@@ -1,6 +1,6 @@
 ---
 title: "The Web client does not support displaying Repeater controls that contain FlowFilter fields."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/02/2020
 ms.reviewer: na
