@@ -36,7 +36,7 @@ For an overview of the telemetry types that are currently emitted, see [Monitori
 ### <a name="appinsights"></a>Enable Application Insights
 
 > [!IMPORTANT]  
-> This process requires a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
+> This process requires a restart to the environment, which is triggered automatically after step 6. Plan to do this during non-working hours to avoid disruptions.
 
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
 2. Create an Application Insights resource in Azure.
@@ -47,9 +47,11 @@ For an overview of the telemetry types that are currently emitted, see [Monitori
 
     For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], on the **Environments** tab, select **Application Insights Key**.
-4. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
-5. Select **Save**.
+3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment that you want to change.
+4. On the **Environment** page, select **Application Insights Key**.
+5. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
+6. Select **Save**.
+
 <!--
 ### <a name="lrsql"></a>Analyze long running SQL queries
 
