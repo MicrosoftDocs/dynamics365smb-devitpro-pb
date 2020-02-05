@@ -12,7 +12,7 @@ ms.date: 11/15/2019
 ms.author: jswymer
 ---
 
-# Analyzing Authorization Telemetry
+# Analyzing Authorization Trace Telemetry
 
 Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. 
 
@@ -75,7 +75,10 @@ The following tables explains the columns included in a Success Authorization tr
 |severityLevel|**1**||
 
 <!--
-|operation_Name|**Authorization Failed (Pre Open Company)**||-->
+|operation_Name|**Authorization Failed (Pre Open Company)**||
+
+{"aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","Component version":"15.0.40494.0","guestUser":"False","Telemetry schema version":"0.2","failureReason":"The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.","authorizationStatus":"Failed","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","Environment type":"Production","Component":"Dynamics 365 Business Central Server","Environment name":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","componentVersion":"15.0.40494.0"}
+-->
 
 ### Custom dimensions
 
@@ -126,7 +129,9 @@ The following tables explains the columns included in a Success Authorization tr
 |severityLevel|**2**||
 
 <!--
-|operation_Name|**Authorization Succeeded (Open Company)**||-->
+|operation_Name|**Authorization Succeeded (Open Company)**||
+
+{"Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:00.1210560","authorizationStatus":"Success","Component version":"15.0.40494.0","componentVersion":"15.0.40494.0","Environment type":"Production","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, AadTenantId, Environment name, Environment type, Component, Telemetry schema version","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","companyName":"CRONUS USA, Inc.","sqlRowsRead":"52","sqlExecutes":"23","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","clientType":"WebClient","component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.1210560","Component":"Dynamics 365 Business Central Server","result":"Success"}-->
 
 ### Custom dimensions
 
@@ -146,16 +151,19 @@ The following tables explains the columns included in a Success Authorization tr
 |Dimension|Description or value||
 |---------|-----|-----------|
 |message|**Authorization steps in the open company trigger failed, see failureReason column for details.**||
-|severityLevel|**2**||
+|severityLevel|**3**||
 
 <!--
-|operation_Name|**Authorization Failed (Pre Open Company)**||-->
+|operation_Name|**Authorization Failed (Pre Open Company)**||
+
+
+{"Telemetry schema version":"0.2","environmentName":"Production","Component version":"15.0.40494.0","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","status":"Failed","clientType":"WebClient","telemetrySchemaVersion":"0.2","companyName":"jsco","componentVersion":"15.0.40494.0","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","Environment name":"Production","failureReason":"The user does not have permission to access the company.","component":"Dynamics 365 Business Central Server","environmentType":"Production","Environment type":"Production","Component":"Dynamics 365 Business Central Server"}-->
 
 ### Custom dimensions
 
 |Dimension|Description or value||
 |---------|-----|-----------|
-|companyName|||
+|companyName|Specifies the name of the company that the user tried to open.||
 |status|**Failed**|
 |failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.||
 
