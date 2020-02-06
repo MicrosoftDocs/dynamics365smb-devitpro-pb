@@ -1,5 +1,5 @@
 ---
-title: "A page of type API can only refer to the same subpage once."
+title: "Variables must be initialized before usage."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/06/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0106
-A page of type API can only refer to the same subpage once.  
+# CodeCop Rule AA0205
+Variables must be initialized before usage.  
 
 ## Description
-A page of type API can only refer to the same subpage once.
+Always initialize a variable before usage. This can improve readability and make debugging easier.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
