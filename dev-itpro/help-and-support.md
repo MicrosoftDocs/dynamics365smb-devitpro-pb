@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/13/2019
+ms.date: 02/05/2020
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -94,14 +94,14 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 
 ### Summary of where to file bugs and issues
 
-As a partner, you have different support channels depending on what type of issue you want support for.  
+As a partner, you have different support channels depending on what type of issue you want support for. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
 
 |Issue type             |Site               |
 |-----------------------|-------------------|
-|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md)|
+|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
 |Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
 |Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
-|Report bug in supported in-market versions|The [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/) site|
+|Report bug in supported in-market versions of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises|The [Support for business](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=93d37907-ad94-d591-22e9-593cfa09dd3f) site|
 
 #### Non-product related questions
 

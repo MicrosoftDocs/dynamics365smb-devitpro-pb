@@ -27,6 +27,10 @@ LookupPageId = 50100;
 -   Page Fields  
   
 -   Tables  
-   
+
+## Remarks
+
+By default, a lookup provides a list of records in the table. Using this list, users can select a record and retrieve information from it into this control.
+
 ## See Also  
  [Lookup Property](devenv-lookup-property.md)
