@@ -15,18 +15,19 @@ ms.author: edupont
 
 # Major Update Rollout Timeline - What You Need Know
 
-This article provides an overview of what you need to know about the rollout of a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. It includes important dates, actions you need take, and answers some common questions. 
+This article provides an overview of what you need to know about the rollout of a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. It includes key dates, actions you need take, and answers some common questions. 
 
 ## What is the Timeline 
 
-The following figure illustrates the important dates in the rollout of the latest major update. 
+The following figure illustrates the key milestones and dates in the rollout of the latest major update.
 
 ![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
 
-
-- **UpdateIsAvailable** is the date when the new major version of Business Central becomes available.  
-- **UpdateStartsOn** is the default date when Microsoft starts upgrading Business Central environments.
-- **LastSelectableUpdateDate** is the last date you can choose to extend your upgrade date to.
+|Milestone|Date|Description|
+|---------|----|-----------|
+|**UpdateIsAvailable**|April 1, 2020|The date when the new major version of Business Central becomes available|
+|**UpdateStartsOn**|April 8, 2020|The default date when Microsoft starts upgrading Business Central environments.|
+|**LastSelectableUpdateDate**|May 1, 2020|The last date you can choose to extend your upgrade date to.|
 
 ## What happens on the UpdateIsAvailable date?
 
