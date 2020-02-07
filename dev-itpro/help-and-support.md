@@ -102,7 +102,6 @@ As a partner, you have different support channels depending on what type of issu
 |Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
 |Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
 |Report bug in supported in-market versions of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises|The [Support for business](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=93d37907-ad94-d591-22e9-593cfa09dd3f) site|
-|Report bug in supported in-market versions of [!INCLUDE [navnowlong_md](developer/includes/navnowlong_md.md)]|The [Support for business](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=dea12e4a-4dd3-35e1-2577-45df252a2b9c) site|
 
 #### Non-product related questions
 
