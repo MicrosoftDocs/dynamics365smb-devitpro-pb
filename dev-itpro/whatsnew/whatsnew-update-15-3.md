@@ -31,6 +31,6 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 Please note that new customers will automatically get the latest builds of Business Central (15.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
 
 ## Good to know
-Visit our new [Performance Overview](https://aka.ms/bcperformance) page and start your learning about Business Central performance
+Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about Business Central performance. 
 
 Curious about Business Central training courses, visit [MS Learn](/learn/browse/?products=dynamics-business-central) 
