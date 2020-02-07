@@ -13,7 +13,7 @@ ms.date: 10/01/2019
 ms.author: edupont
 ---
 
-# Major Update Rollout - What You Need Know
+# Major Update Rollout - What You Need to Know
 
 This article provides an overview of what you need to know about the rollout of a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. It includes key dates, actions you need take, and answers some common questions. 
 
