@@ -30,9 +30,9 @@ Typing the shortcut `tinterface` will create the basic layout for an interface o
 
 ## Interface example
 
-The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature. The codeunits `CompanyAddressProvider` and `PrivatAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method; in this case a simple variation of address value.
+The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature. The codeunits `CompanyAddressProvider` and `PrivateAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method; in this case a simple variation of address value.
 
-The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the IAddressProvider interface.
+The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the `IAddressProvider` interface.
 
 ```
 interface IAddressProvider
