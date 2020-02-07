@@ -1,5 +1,5 @@
 ---
-title: "Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break"
+title: "Interfaces that have been published must not be deleted"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/06/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0029
-Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break  
+# AppSourceCop Rule AS0065
+Interfaces that have been published must not be deleted  
 
 ## Description
-Pages and PageExtensions that have been published must not be deleted.
+An interface that has been published must not be deleted, since dependent extensions may break.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
