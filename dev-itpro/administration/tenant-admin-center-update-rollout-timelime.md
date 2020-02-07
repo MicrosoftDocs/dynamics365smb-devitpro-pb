@@ -13,23 +13,24 @@ ms.date: 10/01/2019
 ms.author: edupont
 ---
 
-# Major Update Rollout Timeline
+# Major Update Rollout Timeline - What You Need Know
 
-This article explains the timeline for the rollout of a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. It provides information about actions that you must take by specific dates, and tries to answer some common questions.
+This article provides an overview of what you need to know about the rollout of a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. It includes important dates, actions you need take, and answers some common questions. 
 
-## When and what are the important dates
+## What is the Timeline 
 
 The following figure illustrates the important dates in the rollout of the latest major update. 
 
 ![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
 
-#UpdateIsAvailable - is the date when the new major version of Business Central becomes available.  
-- #UpdateStartsOn - the default date when Microsoft starts upgrading Business Central environments 
-- #LastSelectableUpdateDate - the last date you can choose to extend your upgrade date to
- 
-## What happens on the #UpdateIsAvailable date?
 
-On that date, e-mail notifications are sent out to all notification recipients registered in the #TAC, also a notification about update availability is displayed in the #TAC itself. All new signups are directed to the new version. Starting that day you can set the date for when your environment should be updated via the #TAC (schedule update). You can choose any date between #UpdateIsAlvailable and #LastSelectableUpdateDate to start your update, including the current date.  
+- **UpdateIsAvailable** is the date when the new major version of Business Central becomes available.  
+- **UpdateStartsOn** is the default date when Microsoft starts upgrading Business Central environments.
+- **LastSelectableUpdateDate** is the last date you can choose to extend your upgrade date to.
+
+## What happens on the UpdateIsAvailable date?
+
+On that date, e-mail notifications are sent out to all notification recipients that are registered in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], also a notification about update availability is displayed in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] itself. All new signups are directed to the new version. Starting this day, you can set the date for when your environment should be updated via the #[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (schedule update). You can choose any date between #UpdateIsAlvailable and #LastSelectableUpdateDate to start your update, including the current date.  See [Update Environments](tenant-admin-center-update-management.md).
  
 ## What happens on the #UpdateStartsOn date?   
  
