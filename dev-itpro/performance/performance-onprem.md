@@ -94,9 +94,9 @@ Read more about the difference between SQL Server and Azure SQL database with re
 
 #### Utilizing Read-Scale Out
 
-If you run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in a High Availability architecture, you can utilize the built-in **Read Scale-Out** feature in Azure SQL Database or SQL Server to load-balance read-only workloads by using the capacity of one of the read-only replicas instead of sharing the read-write replica (also known as the primary database). This way read-only workloads (reports, queries, and API pages) will be isolated from the main read-write workload (codeunits) and will not affect the performance of business processes. As an added bonus, read-only workloads will run on a dedicated database and their performance will likely be better.
+If you run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in a High Availability architecture, you can utilize the built-in **Read Scale-Out** feature in Azure SQL Database or SQL Server to load-balance read-only workloads by using the capacity of one of the read-only replicas instead of sharing the read-write replica (also known as the primary database). This way read-only workloads (reports, queries, and API pages) will be isolated from the main read-write workload (codeunits) and will not affect the performance of business processes.
 
-For emore information, see [Utilizing Read Scale-Out for Better Performance](database-read-scale-out-overview.md)
+For more information, see [Utilizing Read Scale-Out for Better Performance](database-read-scale-out-overview.md).
 
 #### Troubleshooting database performance issues
 

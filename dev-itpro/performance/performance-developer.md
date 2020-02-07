@@ -252,13 +252,14 @@ Read more here:
 - [About database statistics in the AL debugger](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-debugging#DebugSQL)
 - [Telemetry on Long Running SQL Queries](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/monitor-long-running-sql-queries-event-log#ApplicationInsights)
 
-## Utilizing Read-Scale Out 
+## Utilizing Read-Scale Out
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server to load-balance analytical workloads in the database that only read data, such as queries, reports, or API pages. **Read Scale-Out** is built-in with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, but it can also be enabled for on-premises.
 
-With **Read Scale-Out**, instead of sharing the primary (read-write) database, reports, queries, and API pages can be set up to run against a read-only replica (if available). This essentially isolates them from the main read-write workload (codeunits) so that they will not affect the performance of business processes. However, reading data from a replica can introduce a delay of a few seconds compared to reading data from the primary database.
+With **Read Scale-Out**, instead of sharing the primary (read-write) database, reports, queries, and API pages can be set up to run against a read-only replica (if available). This essentially isolates them from the main read-write workload (codeunits) so that they will not affect the performance of business processes.
 
-From a development perspective, **Read Scale-Out** is controlled on report, API page, and query objects by using the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md), which determines whether to use a replica if one is available. If this data delay is not acceptable for a given report, query, or API page, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](https://review.docs.microsoft.com/en-us/dynamics365/business-central/admin-data-access-intent?branch=tfs337368-readscaleout).
+As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md). For more information, see [Utilizing Read Scale-Out for Better Performance](database-read-scale-out-overview.md).
+
 ## Testing and validating performance 
 
 It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
