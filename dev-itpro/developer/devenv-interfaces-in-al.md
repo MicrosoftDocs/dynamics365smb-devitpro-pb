@@ -35,44 +35,28 @@ The following example defines an interface `IAddressProvider`, which has one met
 The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the IAddressProvider interface.
 
 ```
-interface IAddressProvider 
-{ 
-    procedure getAddress(): Text; 
-} 
+interface IAddressProvider
+{
+    procedure GetAddress(): Text;
+}
 
-codeunit 50200 CompanyAddressProvider implements IAddressProvider 
-{ 
+codeunit 50200 CompanyAddressProvider implements IAddressProvider
+{
+    procedure GetAddress(): Text;
 
-    trigger OnRun() 
-    begin 
-    end; 
+    begin
+        exit('Company address \ Denmark 2800')
+    end;
+}
 
-    var 
-        myInt: Integer; 
+codeunit 50201 PrivateAddressProvider implements IAddressProvider
+{
+    procedure GetAddress(): Text;
 
-    procedure getAddress(): Text; 
-
-    begin 
-        exit('Microsoft address \ Denmark 2800') 
-    end; 
-} 
-
-
-codeunit 50201 PrivateAddressProvider implements IAddressProvider 
-{ 
-    trigger OnRun() 
-    begin 
-    end; 
-
-    var 
-        myInt: Integer; 
-
-    procedure getAddress(): Text; 
-
-    begin 
-        exit('My Home address \ Denmark 2800') 
-    end; 
-} 
+    begin
+        exit('My Home address \ Denmark 2800')
+    end;
+}
 
 enum 50200 SendTo
 {
@@ -119,13 +103,13 @@ page 50200 MyAddressPage
 
                 begin
                     AddressproviderFactory(iAddressProvider);
-                    Message(iAddressProvider.getAddress());
+                    Message(iAddressProvider.GetAddress());
 
                 end;
 
             }
 
-            action(sendHome)
+            action(SendToHome)
             {
                 ApplicationArea = All;
 
@@ -136,7 +120,7 @@ page 50200 MyAddressPage
                 end;
             }
 
-            action(sendWork)
+            action(SendToWork)
             {
                 ApplicationArea = All;
 
@@ -144,19 +128,15 @@ page 50200 MyAddressPage
 
                 begin
                     sendTo := sendTo::Company
-
                 end;
             }
         }
     }
 
-
     local procedure AddressproviderFactory(var iAddressProvider: Interface IAddressProvider)
-
     var
         CompanyImplementer: Codeunit CompanyAddressProvider;
         PrivateImplementer: Codeunit PrivateAddressProvider;
-
     begin
 
         if sendTo = sendTo::Company then
@@ -169,7 +149,7 @@ page 50200 MyAddressPage
 
     var
         sendTo: enum SendTo;
-}
+
 ```
 
 ## See Also
