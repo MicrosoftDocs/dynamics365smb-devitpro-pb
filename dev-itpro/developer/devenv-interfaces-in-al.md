@@ -3,7 +3,7 @@ title: "Interfaces in AL"
 description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/23/2020
+ms.date: 02/07/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
