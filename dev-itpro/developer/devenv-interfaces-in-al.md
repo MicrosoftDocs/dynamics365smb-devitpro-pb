@@ -16,9 +16,9 @@ ms.author: solsen
 
 An interface in AL is similar to an interface in any other programming language; an interface is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
 
-This allows for writing code that reduces the dependency on implementation details, makes it easier to reuse code, and supports a poly-morphing way of calling object methods, which again can be used for substituting business logic.
+This allows for writing code that reduces the dependency on implementation details, makes it easier to reuse code, and supports a polymorphic way of calling object methods, which again can be used for substituting business logic.
 
-The interface object declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with the interface name(s). The interface object itself does not contain any code, only signatures, and cannot itself be called from code, but must be implemented by other objects.
+The interface declares an interface name along with its methods, and codeunits that implement the interface methods, must use the `implements` keyword along with the interface name(s). The interface itself does not contain any code, only signatures, and cannot itself be called from code, but must be implemented by other objects.
  
 The AL compiler checks to ensure that implementations adhere to assigned interfaces.
 
