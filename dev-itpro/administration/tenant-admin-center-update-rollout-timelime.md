@@ -19,7 +19,7 @@ This article provides an overview of what you need to know about the rollout of 
 
 ## What is the Timeline 
 
-The following figure illustrates the key milestones and dates in the rollout of the latest major update.
+The following figure illustrates the key milestones and dates in the rollout of the next major update.
 
 ![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
 
