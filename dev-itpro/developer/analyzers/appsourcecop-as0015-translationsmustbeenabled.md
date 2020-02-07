@@ -28,4 +28,4 @@ To submit an app to AppSource, you must use XLIFF translation files. In the app.
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[Working with Translation Files](../developer/devenv-work-with-translation-files.md)  
+[Working with Translation Files](../devenv-work-with-translation-files.md)  
