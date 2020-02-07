@@ -25,9 +25,9 @@ The following figure illustrates the key milestones and dates in the rollout of 
 
 |Milestone|Date|Description|
 |---------|----|-----------|
-|**UpdateIsAvailable**|April 1, 2020|The date when the new major version of Business Central becomes available|
-|**UpdateStartsOn**|April 8, 2020|The default date when Microsoft starts upgrading Business Central environments.|
-|**LastSelectableUpdateDate**|May 1, 2020|The last date you can choose to extend your upgrade date to.|
+|UpdateIsAvailable|April 1, 2020|The date when the new major version of Business Central becomes available|
+|UpdateStartsOn|April 8, 2020|The default date when Microsoft starts upgrading Business Central environments.|
+|LastSelectableUpdateDate|May 1, 2020|The last date you can choose to extend your upgrade date to.|
 
 ## What happens on the UpdateIsAvailable date?
 
