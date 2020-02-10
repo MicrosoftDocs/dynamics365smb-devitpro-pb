@@ -17,7 +17,7 @@ ms.date: 10/01/2019
 
 # Extending Application Areas
 
-Application areas represents a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.
+Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.
 
 Application areas are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios.
 
