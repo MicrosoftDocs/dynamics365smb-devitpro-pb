@@ -20,7 +20,7 @@ Monitoring telemetry gives you a look at the activities and general health of yo
 
 ## Available Telemetry
 
-Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
+In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
 |Operation | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
@@ -29,11 +29,27 @@ Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers tele
 
 ## Enabling Application Insights
 
-Sending telemetry data to Application Insights requires that you have an Application Insights resource in Azure. After this, you can start to configure your tenants to send telemetry data to your Application Insights resource. The configuration is different for Online and On-premises: 
+Sending telemetry data to Application Insights requires that you have an Application Insights resource in Azure. After this, you can start to configure your tenants to send telemetry data to your Application Insights resource. The configuration is different for Online and On-premises:
 
 - For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online, Application Insights is enabled by using the Administration Center. For more information, see [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights).
 
 - For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).
+
+## Viewing Collected Telemetry Data in You Application Insights Resource
+
+Telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is stored in Azure Monitor Logs in the *traces* table. You can view collected data by writing log queries. Log queries are written in the Kusto query language (KQL). For more information, see [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
+
+As a simple example, do the following: 
+
+1. In the Azure portal, open your Application Insights resource.
+2. In the **Monitoring** menu, select **Logs**.
+3. On the **New Query** tab, type the following to get the last 100 traces:
+
+    ```
+    traces
+    | take 100
+    | sort by timestamp desc 
+    ```
 
 ## See also
 
