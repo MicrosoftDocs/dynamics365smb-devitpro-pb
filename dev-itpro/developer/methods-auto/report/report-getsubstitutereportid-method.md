@@ -2,7 +2,7 @@
 title: "GetSubstituteReportId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,7 @@ The ID of the report that will be run by the platform after considering any subs
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
+[Substituting Reports](../../devenv-substituting-reports.md)  
 [Report Data Type](report-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

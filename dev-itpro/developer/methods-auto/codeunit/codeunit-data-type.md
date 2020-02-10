@@ -2,7 +2,7 @@
 title: "Codeunit Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ The following methods are available on instances of the Codeunit data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Run(var Record)](codeunitinstance-run-method.md)|Loads and executes the unit of AL code that you specify.|
+|[Run(var Record)](codeunitinstance-run-method.md)|Loads and executes the unit of C/AL code that you specify.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
