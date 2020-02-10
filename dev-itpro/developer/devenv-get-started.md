@@ -27,7 +27,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 4) Press **Ctrl+Shift+P,** to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose the version to run, and then choose **Microsoft cloud sandbox**.  
     > [!NOTE]  
-    > If you want to change your configuration at a later point in time, choose **Add Configuration** button on the right side, and then choose one of the available options.  
+    > If you want to change your configuration at a later point in time, choose **Add Configuration** button on the bottom right side, and then choose one of the available options.  
 6) Enter the credentials that you provided for the sign-up.
 7) Press **Ctrl+F5** to deploy and run the extension on your online sandbox tenant.  
 
