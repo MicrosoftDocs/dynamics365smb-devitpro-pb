@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: e800bc78-feb2-4f19-b79a-3fd70e06320f
 caps.latest.revision: 7
-
+author: SusanneWindfeldPedersen
 ---
 
  
