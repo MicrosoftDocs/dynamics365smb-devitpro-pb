@@ -9,9 +9,16 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# TreeInitialState Property
+# Displaying Lists in an Indented Hierarchy (Tree View)
 
-Sets whether the tree view on list page is collapsed or expanded when the page opens.
+This article explains how to a list of records in an indented hierarchy that cab be expanded and collapsed with tht click of a button.
+
+## Overview
+
+If you have seen the **Chart of Account** page in the base application, you might have noticed that records are displayed 
+
+
+
 
 ## Syntax
 
@@ -30,25 +37,6 @@ TreeInitialState = CollapseAll;
 ## Remarks
 
 In the client, users can change whether a list opens collapsed or expanded by selecting the **Toggle Expand/Collapse All** on the first column heading of the page. If they want to revert back to the default setting for the page, they clear personalization of the page.
-
-## Example
-
-```
-repeater(Control1)
-{
-    IndentationColumn = NameIndent;
-    ShowAsTree = true;
-    TreeInitialState = CollapseAll;
-    
-    field("No."; "No.")
-    {
-       
-    }
-    
-    ...
-
-```
-
 
 ## See Also
 

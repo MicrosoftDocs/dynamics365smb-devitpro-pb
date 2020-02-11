@@ -35,6 +35,24 @@ Optionally, you can set the **TreeInitialState** property to specifies whether t
 
 When you set this property to **true**, the **IndentationControl** property is ignored and the first column on the page is indented, regardless of the **IndentationControl** property.
 
+## Example
+
+```
+repeater(Control1)
+{
+    IndentationColumn = NameIndent;
+    ShowAsTree = true;
+    TreeInitialState = CollapseAll;
+    
+    field("No."; "No.")
+    {
+       
+    }
+    
+    ...
+
+```
+
 ## See Also
 
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  

@@ -11,23 +11,44 @@ ms.assetid: 8af95802-5ad7-4dce-96be-9e462f8436d5
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
- 
-
 # IndentationColumn Property
-Sets the name of the hidden column that controls row indentation in a List page.  
-  
-## Applies To  
-  
--   Pages (Type = Group, Subtype = Repeater)  
+
+Sets the name of the hidden column that controls row indentation in a ist page. 
 
 ## Syntax
 ```
 IndentationColumn = IntegerFieldName;
 ```
   
-## Remarks  
- This property can be set to a field or variable of [Integer Data Type](../datatypes/devenv-integer-data-type.md).
+## Applies To  
   
-## See Also  
- [IndentationControls Property](devenv-indentationcontrols-property.md)
+- Repeater controls on list page types
+  
+## Remarks
+
+This property can be set to a field or variable of [Integer Data Type](../datatypes/devenv-integer-data-type.md). 
+
+This property is used by the **IndentationControls** property and **ShowAsTree** property. It has no affect on the list, unless these properties are properly set.
+
+
+## Example
+
+```
+repeater(Control1)
+{
+    IndentationColumn = NameIndent;
+    IndentationControls = Name;
+    
+    field("No."; "No.")
+    {
+       
+    }
+
+```
+  
+## See Also
+
+[IndentationControl Property](devenv-indentationcontrol-property.md)  
+[ShowAsTree](devenv-showastree-property.md)  
+[TreeInitialState Property](devenv-treeinitialstate-property.md)  
+[Properties](devenv-properties.md)  
