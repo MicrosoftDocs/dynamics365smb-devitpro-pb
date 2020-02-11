@@ -18,17 +18,19 @@ Sets the indentation of rows on a List Page to Tree View. If you enable this pro
   
 ## Applies To  
   
--  Group controls on pages  
+- Repeater controls on list page type  
   
 ## Property Value
 
- **True** if a tree view is required; otherwise, **false**. The default is **false**.  
+ **true** if a tree view is required; otherwise, **false**. The default is **false**.  
 
 ## Syntax
 
 ```
 ShowAsTree = true;
 ```
-  
+## Remarks
+
+Te
 ## See Also  
  [Properties](devenv-properties.md)
