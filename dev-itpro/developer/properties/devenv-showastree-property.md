@@ -29,18 +29,19 @@ ShowAsTree = true;
 
 ## Remarks
 
-To enable the tree view, in addition to setting **ShowAsTree** property, you must also set the **IndentationColumn** property. This property specifies an integer data type field in the source table that is used to control the indentation of records in the list.
+To enable the tree view, in addition to setting **ShowAsTree** property, you must also set the **IndentationColumn** property. This property specifies an integer data type field in the source table. This field is used to control the indentation of records in the list.
 
-Optionally, you can set the **TreeInitialState** property to specifies whether the list displays collapsed or expanded when the list page opens in the client.
+Optionally, you can set the **TreeInitialState** property to specify whether the list displays as collapsed or expanded when the list page opens in the client.
 
-When you set this property to **true**, the **IndentationControl** property is ignored and the first column on the page is indented, regardless of the **IndentationControl** property.
+> [!NOTE]
+> When you set this property to **true**, if the **IndentationControl** property is set, it is ignored and the first column on the page is indented.
 
 ## Example
 
 ```
 repeater(Control1)
 {
-    IndentationColumn = NameIndent;
+    IndentationColumn = Indent;
     ShowAsTree = true;
     TreeInitialState = CollapseAll;
     

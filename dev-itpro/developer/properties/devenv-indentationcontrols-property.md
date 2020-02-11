@@ -41,7 +41,7 @@ When using this property, consider the following behavior:
 ```
 repeater(Control1)
 {
-    IndentationColumn = NameIndent;
+    IndentationColumn = Indent;
     IndentationControls = Name;
     
     field("No."; "No.")

@@ -36,7 +36,7 @@ This property is used by the **IndentationControls** property and **ShowAsTree**
 ```
 repeater(Control1)
 {
-    IndentationColumn = NameIndent;
+    IndentationColumn = Indent;
     IndentationControls = Name;
     
     field("No."; "No.")

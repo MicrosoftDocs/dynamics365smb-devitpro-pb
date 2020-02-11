@@ -11,32 +11,167 @@ author: jswymer
 ---
 # Displaying Lists in an Indented Hierarchy (Tree View)
 
-This article explains how to a list of records in an indented hierarchy that cab be expanded and collapsed with tht click of a button.
+This article explains how to display lists in an indented hierarchy, where related records are arranged in a parent-child type structure.
+
+There are two display options that you can set up for indented hierarchy lists. You can display a static hierarchy, where all records are shown like any other list, or you can setup an interactive hierarchy, where the user can be expand and collapse parent records as they like.
 
 ## Overview
+To explain indented hierarchy lists, this article uses a simple example. If you want to see a mor detailed implementation, take a look at the source code for **Chart of Accounts** page in the base application.
 
-If you have seen the **Chart of Account** page in the base application, you might have noticed that records are displayed 
+1. Create an editable table that has the following fields:
+
+    |Field|Data type|
+    |-----|---------|
+    |Number|integer|
+    |Name|text|
+    |Indent|integer|
+    
+    For example:
+
+    ```
+    table 50100 MyTable
+    {
+    
+        fields
+        {
+            DataClassification = ToBeClassified;
+        
+            field(1; Number; Integer)
+            {
+                DataClassification = ToBeClassified;
+        
+            }
+            field(2; Name; Text[50])
+            {
+                DataClassification = ToBeClassified;
+        
+            }
+            Field(3; Indent; Integer)
+            {
+                DataClassification = ToBeClassified;
+        
+            }
+        }
+        
+        keys
+        {
+            key(PK; Number)
+            {
+                Clustered = true;
+            }
+        }
+    }
+    ```
+
+2. Create a page that displays the fields of the table.
+
+    Typically, you would not display the **Indent** field because this is strictly used for layout purposes.
+
+    ```
+    page 50100 MyPage
+    {
+        PageType = List;
+        ApplicationArea = All;
+        UsageCategory = Lists;
+        SourceTable = MyTable;
+        Editable = true;
+    
+        layout
+        {
+            area(Content)
+            {
+                repeater(Test)
+                {
+    
+                    field(Number; Number)
+                    {
+                        ApplicationArea = All;
+                    }
+    
+                    field(Name; Name)
+                    {
+                        ApplicationArea = All;
+                    }
+                    field(Indent; Indent)
+                    {
+                        ApplicationArea = All;
+                    }
+                }
+            }
+        }
+    }
+    
+    ```
+3. In the client, run the page and add records to the table.
+
+    Be sure to set the **Indent** field.
 
 
+## Setting up static hierarchy
 
+Setting up the static
 
-## Syntax
+- Set the IndentColumn property
+- Set the IndentationControls property
+
+For example: 
 
 ```
-TreeInitialState = CollapseAll;
+repeater(Test)
+{
+    IndentationColumn = Indent;
+    IndentationControls = Name;
+
+    field(Number; Number)
+    {
+        ApplicationArea = All;
+    }
+
+    field(Name; Name)
+    {
+        ApplicationArea = All;
+    }
+    field(Indent; Indent)
+    {
+        ApplicationArea = All;
+    }
+}
+
 ```
   
-## Applies To  
-  
-- Repeater controls on list page types on which the **ShowAsTree** property is set to **true**. 
-  
-## Property Value
+## Setting up dynamics hierarchy
 
- **CollapseAll** sets the list to display as collapsed; **ExpandAll** sets the list to display as expanded. The default is **false**.  
+Setting up the static
 
-## Remarks
+- Set the IndentColumn property
+- Set the ShowsAsTree property
+- TreeInitialState property (optinal).
 
-In the client, users can change whether a list opens collapsed or expanded by selecting the **Toggle Expand/Collapse All** on the first column heading of the page. If they want to revert back to the default setting for the page, they clear personalization of the page.
+For example: 
+
+```
+repeater(Test)
+{
+    IndentationColumn = Indent;
+    ShowAsTree = true;
+    TreeInitialState = CollapseAll;
+
+    field(Number; Number)
+    {
+        ApplicationArea = All;
+    }
+
+    field(Name; Name)
+    {
+        ApplicationArea = All;
+    }
+    field(Indent; Indent)
+    {
+        ApplicationArea = All;
+    }
+}
+
+```
 
 ## See Also
 
