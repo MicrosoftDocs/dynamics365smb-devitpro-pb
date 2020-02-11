@@ -12,19 +12,20 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ShowAsTree Property
-Sets the indentation of rows on a List Page to Tree View. If you enable this property, you can expand or collapse indented rows on a List Page.  
+
+Sets the indentation of rows on a List Page to Tree View. If you enable this property, you can expand or collapse indented rows on a List type page.  
   
 ## Applies To  
   
--   Group controls on pages  
+-  Group controls on pages  
   
-## Property Value  
+## Property Value
+
  **True** if a tree view is required; otherwise, **false**. The default is **false**.  
 
 ## Syntax
+
 ```
 ShowAsTree = true;
 ```

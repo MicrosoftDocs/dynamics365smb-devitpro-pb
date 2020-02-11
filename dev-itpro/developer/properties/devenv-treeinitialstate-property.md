@@ -1,5 +1,5 @@
 ---
-title: "ShowAsTree Property"
+title: "TreeInitialState Property"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -11,20 +11,22 @@ author: jswymer
 ---
 # TreeInitialState Property
 
-Sets whether a list page that shown as a tree opens collapsed or expanded. 
+Sets whether the tree view on list page is collapsed or expanded when the page opens. 
   
 ## Applies To  
   
--   Group controls on pages  
+-   Repeater Group controls on pages  
   
-## Property Value  
+## Property Value
+
  **CollapseAll** if a tree view is required; otherwise, **ExpandAll**. The default is **false**.  
 
 ## Syntax
 ```
-TreeInitialState = CollapseAll|ExpandAll;
+TreeInitialState = CollapseAll;
 ```
 
+## Example
 ## See Also
 
 [ShowAsTree Property](devenv-showastree-property.md)  
