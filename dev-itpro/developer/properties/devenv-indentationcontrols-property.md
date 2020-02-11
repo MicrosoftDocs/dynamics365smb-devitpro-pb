@@ -11,8 +11,8 @@ ms.assetid: e2e75702-bc56-4c5b-a3b9-ac7d223808c4
 caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
 # IndentationControls Property
+
 Sets which columns (controls) are indented in a list.  
  
 ## Syntax
@@ -22,22 +22,17 @@ IndentationControls = Field1, Field2;
 
 ## Applies To  
   
-- Repeater subtype controls on list page type 
-
-This property is ignored if the **ShowAsTree** property is set to **true**.
-  
+- Repeater controls on list page types
+ 
 ## Remarks  
- The **IndentationControls** property lets you choose which columns are indented under a group control on a List page.
 
+The **IndentationControls** property lets you choose which columns are indented under a repeater control on a List page. When using this property, consider the Be aware of the following behavior:
 
-  
-> [!IMPORTANT]  
->  When indentation is specified, it is no longer possible to use sorting on the columns in the repeater control.  
-  
-> [!NOTE]  
->  [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. If you specify more than one column in the IndentationControls property, only the first column is used when the page is displayed in [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)].  
-  
+- When indentation is specified, it is no longer possible to use sorting on the columns in the repeater control.
+- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. If you specify more than one column in the **IndentationControls** property, only the first column is used when the page is displayed in [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)].  
+- This property is ignored if the **ShowAsTree** property on the repeater is set to **true**.
+
 ## See Also
 
-[IndentationColumn Property](devenv-indentationcolumn-property.md)  
 [ShowAsTree](devenv-showastree-property.md)  
+[IndentationColumn Property](devenv-indentationcolumn-property.md)  
