@@ -182,5 +182,5 @@ repeater(Test)
 ## See Also
 
 [IndentationColumn Property](properties/devenv-indentationcolumn-property.md)  
-[IndentationControl Property](properties/devenv-indentationcontrol-property.md)  
+[IndentationControl Property](properties/devenv-indentationcontrols-property.md)  
 [Properties](properties/devenv-properties.md)  

@@ -53,5 +53,5 @@ repeater(Control1)
 ## See Also
 
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
-[IndentationControl Property](devenv-indentationcontrol-property.md)  
+[IndentationControl Property](devenv-indentationcontrols-property.md)  
 [Properties](devenv-properties.md)  

@@ -58,5 +58,5 @@ repeater(Control1)
 
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
 [TreeInitialState Property](devenv-treeinitialstate-property.md)  
-[IndentationControl Property](devenv-indentationcontrol-property.md)  
+[IndentationControl Property](devenv-indentationcontrols-property.md)  
 [Properties](devenv-properties.md)  

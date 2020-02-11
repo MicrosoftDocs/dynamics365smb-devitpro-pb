@@ -48,7 +48,7 @@ repeater(Control1)
   
 ## See Also
 
-[IndentationControl Property](devenv-indentationcontrol-property.md)  
+[IndentationControl Property](devenv-indentationcontrols-property.md)  
 [ShowAsTree](devenv-showastree-property.md)  
 [TreeInitialState Property](devenv-treeinitialstate-property.md)  
 [Properties](devenv-properties.md)  
