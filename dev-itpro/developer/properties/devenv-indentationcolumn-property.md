@@ -28,7 +28,7 @@ IndentationColumn = IntegerFieldName;
 
 This property can be set to a field or variable of [Integer Data Type](../datatypes/devenv-integer-data-type.md). 
 
-This property is used by the **IndentationControls** property and **ShowAsTree** property. It has no affect on the list, unless these properties are properly set.
+This property is used by the **IndentationControls** property and **ShowAsTree** property. It has no affect if these properties are not properly set.
 
 
 ## Example

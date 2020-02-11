@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Displaying Lists in an Indented Hierarchy (Tree View)
+# Displaying Lists in an Indented Hierarchy
 
 This article explains how to display lists in an indented hierarchy, where related records are arranged in a parent-child type structure.
 
