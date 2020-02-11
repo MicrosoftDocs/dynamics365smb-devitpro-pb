@@ -16,6 +16,12 @@ This article explains how to display lists in an indented hierarchy, where relat
 There are two display options that you can set up for indented hierarchy lists. You can display a static hierarchy, where all records are shown like any other list, or you can setup an interactive hierarchy, where the user can be expand and collapse parent records as they like.
 
 ## Overview
+
+How does the Name column got indented, simple based on Integer table field "Indentation"  which gets updated when you run Indent Chart of Accounts.
+
+Indentation field Value is set to a Variable NameIndent on OnAfterGetRecord trigger.
+
+NameIndent Variable is mapped to  IndentationColumnName Property.
 To explain indented hierarchy lists, this article uses a simple example. If you want to see a mor detailed implementation, take a look at the source code for **Chart of Accounts** page in the base application.
 
 1. Create an editable table that has the following fields:
@@ -175,6 +181,6 @@ repeater(Test)
 
 ## See Also
 
-[IndentationColumn Property](devenv-indentationcolumn-property.md)  
-[IndentationControl Property](devenv-indentationcontrol-property.md)  
-[Properties](devenv-properties.md)  
+[IndentationColumn Property](properties/devenv-indentationcolumn-property.md)  
+[IndentationControl Property](properties/devenv-indentationcontrol-property.md)  
+[Properties](properties/devenv-properties.md)  
