@@ -45,7 +45,7 @@ You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Win
 ### Reports 204-207
 You can generate external-facing documents, such as sales invoices and order confirmations, that you send to customers as PDF files.
 
-The reports in the 204-207 range are replaced by the following simplified reports in the 1304 to 1307 range:
+The reports in the 204-207 range are replaced by the following updated reports in the 1304 to 1307 range:
 
 - 204, Sales-Quote -> 1304, Standard Sales-Quote
 - 205, Order-Confirmation -> 1305, Standard Sales-Order Conf.
