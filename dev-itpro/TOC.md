@@ -124,7 +124,6 @@
 ### [Administration of Business Central On-Premises](administration/administration.md)
 ### Intelligent Insights
 #### [Connect to the Intelligent Cloud from On-Premises](administration/about-intelligent-edge.md)
-#### [Replicating On-Premises Data](administration/data-replication-intelligent-cloud.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
@@ -620,6 +619,14 @@
 ## [On-Premises](performance/performance-onprem.md)
 ## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
+<!--migrate to BC online-->
+# Migrate to Business Central Online
+## Overview (to be written)
+#### [Migrating from Business Central On-Premises](administration/data-replication-intelligent-cloud.md)
+#### [Migrating from Dynamics GP](administration/data-replication-intelligent-cloud.md)
+#### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
+#### [Migrating from Dynamics SL](administration/data-replication-intelligent-cloud.md)
+<!-- end migration -->
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
