@@ -622,10 +622,10 @@
 <!--migrate to BC online-->
 # Migrate to Business Central Online
 ## Overview (to be written)
-#### [Migrating from Business Central On-Premises](administration/data-replication-intelligent-cloud.md)
-#### [Migrating from Dynamics GP](administration/data-replication-intelligent-cloud.md)
-#### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
-#### [Migrating from Dynamics SL](administration/data-replication-intelligent-cloud.md)
+## [Migrating from Business Central On-Premises](administration/data-replication-intelligent-cloud.md)
+## [Migrating from Dynamics GP](administration/data-replication-intelligent-cloud.md)
+## [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
+## [Migrating from Dynamics SL](administration/data-replication-intelligent-cloud.md)
 <!-- end migration -->
 <!-- upgrade -->
 # Upgrade
