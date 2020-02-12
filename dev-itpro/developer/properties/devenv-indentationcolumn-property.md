@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 # IndentationColumn Property
 
-Sets the name of the hidden column that controls row indentation in a ist page. 
+Sets the name of the table field or variable that controls row indentation in a list page. 
 
 ## Syntax
 ```
@@ -26,10 +26,9 @@ IndentationColumn = IntegerFieldName;
   
 ## Remarks
 
-This property can be set to a field or variable of [Integer Data Type](../datatypes/devenv-integer-data-type.md). 
+This property must be set to a field or variable of [Integer Data Type](../datatypes/devenv-integer-data-type.md). 
 
 This property is used by the **IndentationControls** property and **ShowAsTree** property. It has no affect if these properties are not properly set.
-
 
 ## Example
 
@@ -49,6 +48,6 @@ repeater(Control1)
 ## See Also
 
 [IndentationControl Property](devenv-indentationcontrols-property.md)  
-[ShowAsTree](devenv-showastree-property.md)  
+[ShowAsTree Property](devenv-showastree-property.md)  
 [TreeInitialState Property](devenv-treeinitialstate-property.md)  
 [Properties](devenv-properties.md)  

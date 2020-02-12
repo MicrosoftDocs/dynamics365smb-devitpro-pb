@@ -13,16 +13,10 @@ author: jswymer
 
 This article explains how to display lists in an indented hierarchy, where related records are arranged in a parent-child type structure.
 
-There are two display options that you can set up for indented hierarchy lists. You can display a static hierarchy, where all records are shown like any other list, or you can setup an interactive hierarchy, where the user can be expand and collapse parent records as they like.
+There are two display options that you can set up for indented hierarchy lists. You can display a static hierarchy or an interactive hierarchy, where users can be expand and collapse parent records to show or hide children.
 
 ## Overview
-
-How does the Name column got indented, simple based on Integer table field "Indentation"  which gets updated when you run Indent Chart of Accounts.
-
-Indentation field Value is set to a Variable NameIndent on OnAfterGetRecord trigger.
-
-NameIndent Variable is mapped to  IndentationColumnName Property.
-To explain indented hierarchy lists, this article uses a simple example. If you want to see a mor detailed implementation, take a look at the source code for **Chart of Accounts** page in the base application.
+To explain indented hierarchy lists, this article uses a simple example. If you want to see a more detailed implementation, take a look at the source code for **Chart of Accounts** page in the base application.
 
 1. Create an editable table that has the following fields:
 
@@ -112,18 +106,18 @@ To explain indented hierarchy lists, this article uses a simple example. If you 
 
     Be sure to set the **Indent** field.
 
+## Set up static indented hierarchy list
 
-## Setting up static hierarchy
+Setting up the static indented hierarchy list involves two main properties:
 
-Setting up the static
+- The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
 
-- Set the IndentColumn property
-- Set the IndentationControls property
+- The IndentationControls property specifies which column in the list gets indented. This cannot be an integer data type.
 
 For example: 
 
 ```
-repeater(Test)
+repeater(Control1)
 {
     IndentationColumn = Indent;
     IndentationControls = Name;
@@ -147,11 +141,11 @@ repeater(Test)
   
 ## Setting up dynamics hierarchy
 
-Setting up the static
+Setting up the static indented hierarchy list involves three main properties:
 
-- Set the IndentColumn property
-- Set the ShowsAsTree property
-- TreeInitialState property (optinal).
+- The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
+- The ShowsAsTree property enables the tree view.
+- The TreeInitialState property, which is optional, specifies whether the list is collapsed or expanded when the page
 
 For example: 
 

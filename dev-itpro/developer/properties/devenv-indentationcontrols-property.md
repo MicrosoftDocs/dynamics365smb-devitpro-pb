@@ -32,8 +32,9 @@ To enable an indented hieracrhy, in addition to setting **IndentationControls** 
 
 When using this property, consider the following behavior:
 
-- When indentation is specified, it is no longer possible to use sorting on the columns in the repeater control.
-- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. If you specify more than one column in the **IndentationControls** property, only the first column is used when the page is displayed in [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)].  
+- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. If you specify more than one column in the **IndentationControls** property, only the first column is used when the page is displayed in [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)].
+- You can only indent columns of the datatype text.
+- When indentation is specified, it is no longer possible to use sorting on the columns in the repeater control.  
 - This property is ignored if the **ShowAsTree** property on the repeater is set to **true**.
 
 ## Example
@@ -52,5 +53,5 @@ repeater(Control1)
 ```
 ## See Also
 
-[ShowAsTree](devenv-showastree-property.md)  
+[ShowAsTree Property](devenv-showastree-property.md)  
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
