@@ -2,7 +2,7 @@
 title: "Deprecated Features in W1"
 author: bholtorf
 ms.custom: na
-ms.date: 02/11/2020
+ms.date: 02/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,7 +53,7 @@ The reports in the 204-207 range are replaced by the following simplified report
 - 207, Credit-Memo -> 1307, Standard Sales-Credit Memo
 
 > [!NOTE]
-> The **No. of Copies** field is removed from the new reports for performance reasons. To print more than one report, users must repeat the print action.
+> The **No. of Copies** field is removed from the new reports because of performance reasons and because selection of the quantity to print works differently on modern printers. To print a report more than once, users can list the same report multiple times on the **Report Selection** page for the document type in question.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
