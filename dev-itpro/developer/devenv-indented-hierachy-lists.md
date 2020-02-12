@@ -20,14 +20,6 @@ To explain indented hierarchy lists, this article uses a simple example. If you 
 
 1. Create an editable table that has the following fields:
 
-    |Field|Data type|
-    |-----|---------|
-    |Number|integer|
-    |Name|text|
-    |Indent|integer|
-    
-    For example:
-
     ```
     table 50100 MyTable
     {
@@ -57,7 +49,6 @@ To explain indented hierarchy lists, this article uses a simple example. If you 
         {
             key(PK; Number)
             {
-                Clustered = true;
             }
         }
     }
@@ -108,44 +99,34 @@ To explain indented hierarchy lists, this article uses a simple example. If you 
 
 ## Set up static indented hierarchy list
 
-Setting up the static indented hierarchy list involves two main properties:
+Setting up the static indented hierarchy list involves two main properties: IndentColumn property and IndentationControls property.
 
 - The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
 
 - The IndentationControls property specifies which column in the list gets indented.
 
-For example: 
+Working with the sample page, add the IndentationColumn and IndentationControls to the repeater of the page.  
 
 ```
 repeater(Control1)
 {
     IndentationColumn = Indent;
     IndentationControls = Name;
-
-    field(Number; Number)
-    {
-        ApplicationArea = All;
-    }
-
-    field(Name; Name)
-    {
-        ApplicationArea = All;
-    }
-    field(Indent; Indent)
-    {
-        ApplicationArea = All;
-    }
-}
+    ...
 
 ```
-  
+This will display a list that is indents each subsequent record one level compared to the record above.
+
+
 ## Setting up dynamics hierarchy
 
-Setting up the static indented hierarchy list involves three main properties:
+Setting up the static indented hierarchy list involves three main properties: IndentColumn, ShowsAsTree , and TreeInitialState.
 
-- The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
+- The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable. 
 - The ShowsAsTree property enables the tree view.
-- The TreeInitialState property, which is optional, specifies whether the list is collapsed or expanded when the page
+- The TreeInitialState property, which is optional, specifies whether the list is collapsed or expanded when the page opens.
+
+Starting from the top of the page, records that has a indent value that the record above, then it appears as a child to that record. 
 
 For example: 
 
@@ -177,4 +158,5 @@ repeater(Test)
 
 [IndentationColumn Property](properties/devenv-indentationcolumn-property.md)  
 [IndentationControl Property](properties/devenv-indentationcontrols-property.md)  
-[Properties](properties/devenv-properties.md)  
+[ShowAsTree Property](properties/devenv-showastree-property.md)  
+[TreeInitialState Property](properties/devenv-treeinitialstate-property.md)  
