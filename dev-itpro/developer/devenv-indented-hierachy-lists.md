@@ -112,7 +112,7 @@ Setting up the static indented hierarchy list involves two main properties:
 
 - The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
 
-- The IndentationControls property specifies which column in the list gets indented. This cannot be an integer data type.
+- The IndentationControls property specifies which column in the list gets indented.
 
 For example: 
 

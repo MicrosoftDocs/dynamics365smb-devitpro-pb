@@ -17,7 +17,7 @@ Sets which columns (controls) are indented in a list.
  
 ## Syntax
 ```
-IndentationControls = Field1, Field2;
+IndentationControls = Field1[, Field2];
 ```
 
 ## Applies To  
@@ -32,10 +32,11 @@ To enable an indented hieracrhy, in addition to setting **IndentationControls** 
 
 When using this property, consider the following behavior:
 
-- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. If you specify more than one column in the **IndentationControls** property, only the first column is used when the page is displayed in [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)].
+- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. You can specify more then one column, however, in the UI, the columns may not appear as expected.
 - You can only indent columns of the datatype text.
 - When indentation is specified, it is no longer possible to use sorting on the columns in the repeater control.  
 - This property is ignored if the **ShowAsTree** property on the repeater is set to **true**.
+- Right-aligned data in columns, such as integers will not appear as indented.
 
 ## Example
 
