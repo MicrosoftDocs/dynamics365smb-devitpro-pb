@@ -13,10 +13,11 @@ author: jswymer
 
 This article explains how to display lists in an indented hierarchy, where related records are arranged in a parent-child type structure.
 
-There are two display options that you can set up for indented hierarchy lists. You can display a static hierarchy or an interactive hierarchy, where users can be expand and collapse parent records to show or hide children.
+There are two display options that you can set up for indented hierarchy lists. You can display a static hierarchy or a tree view hierarchy. A tree view hierarchy displays records in a parent-child structure, where users can be expand and collapse parent records to show and hide child records.
 
-## Overview
-To explain indented hierarchy lists, this article uses a simple example. If you want to see a more detailed implementation, take a look at the source code for **Chart of Accounts** page in the base application.
+## Sample table and page
+
+To explain indented hierarchy lists, this article uses a simple table and page as an example. If you want to see a more detailed implementation, take a look at the source code for **Chart of Accounts** page in the base application.
 
 1. Create an editable table that has the following fields:
 
@@ -90,9 +91,9 @@ To explain indented hierarchy lists, this article uses a simple example. If you 
                 }
             }
         }
-    }
-    
+    }  
     ```
+
 3. In the client, run the page and add records to the table.
 
     Be sure to set the **Indent** field.
@@ -101,11 +102,11 @@ To explain indented hierarchy lists, this article uses a simple example. If you 
 
 Setting up the static indented hierarchy list involves two main properties: IndentColumn property and IndentationControls property.
 
-- The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
+- The IndentColumn property controls the indentation, determining which records get indented and by how much.  This property can be must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
 
 - The IndentationControls property specifies which column in the list gets indented.
 
-Working with the sample page, add the IndentationColumn and IndentationControls to the repeater of the page.  
+Working with the sample page, add the IndentationColumn and IndentationControls to the repeater of the page as shown:  
 
 ```
 repeater(Control1)
@@ -115,23 +116,26 @@ repeater(Control1)
     ...
 
 ```
-This will display a list that is indents each subsequent record one level compared to the record above.
+
+This will display a list that is indents each subsequent record according to the value of the **Indent** field.
 
 
-## Setting up dynamics hierarchy
+## Setting up a tree-view hierarchy
 
-Setting up the static indented hierarchy list involves three main properties: IndentColumn, ShowsAsTree , and TreeInitialState.
+A tree-view hierarchy is similar to the static indented hierarchy, except that records that are indented   
 
-- The IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable. 
+Setting up the tree-view hierarchy involves three main properties: IndentColumn, ShowsAsTree , and TreeInitialState.
+
+- Like the static indented hierarchy, the IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable. 
 - The ShowsAsTree property enables the tree view.
 - The TreeInitialState property, which is optional, specifies whether the list is collapsed or expanded when the page opens.
 
-Starting from the top of the page, records that has a indent value that the record above, then it appears as a child to that record. 
+With the tree-view, starting from the top of the page, subsequent records that have a indent value that that is greater that the row above it, will appear d above, then it appears as a child to that record. 
 
 For example: 
 
 ```
-repeater(Test)
+repeater(Control1)
 {
     IndentationColumn = Indent;
     ShowAsTree = true;
