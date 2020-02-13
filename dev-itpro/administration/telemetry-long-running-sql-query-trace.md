@@ -68,11 +68,11 @@ This table describes the different dimensions.
 |sqlStatement|Specifies the SQL statement that was executed for the long running query. The value is limited to 8192 characters. If the value exceeds 8192 characters, it will be truncated in manner that still provides the most pertinent information.||
 |clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |alStackTrace|The stack trace in AL.||
-|alObjectName|The name of the aL object that executed the SQL statement||
+|alObjectName|The name of the AL object that executed the SQL statement||
 |alObjectType|The type of the AL object that executed the SQL statement||
 |companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at tome of execution. ||
 |alObjectId|The type of the AL object that executed the SQL statement.||
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported, but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |extensionName|Specifies the name of the extension.||
 |extensionAppId|Specifies the AppID of the extension.||
 |extensionVersion|Specifies the version of the extension.||
