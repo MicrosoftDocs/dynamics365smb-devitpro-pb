@@ -1,8 +1,8 @@
 ---
 title: "You must specify a caption in the Caption property for Fields that exist on page objects."
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/21/2020
+ms.date: 02/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
