@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Enabling Application Insights for Tenant Telemetry On-Premises
 
-This article describes how to set up a tenants to send telemetry data to Application Insights for on-premises environments.
+This article describes how to set up tenants to send telemetry data to Application Insights for on-premises environments.
 
 ## <a name="ApplicationInsights"></a>Get started
 
