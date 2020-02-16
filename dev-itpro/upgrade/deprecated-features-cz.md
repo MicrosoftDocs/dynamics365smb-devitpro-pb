@@ -1,7 +1,7 @@
 ---
 title: Czech Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Czech that we have moved, removed, or replaced.
-author: zbicek
+author: ZdenekBicek
 
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -10,6 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Czech, local functionality
 ms.date: 12/01/2019
+ms.reviewer: v-zdbice
 ms.author: SorenGP
 
 ---
