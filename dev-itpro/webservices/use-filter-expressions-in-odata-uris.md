@@ -1,16 +1,13 @@
 ---
 title: "Using Filter Expressions in OData URIs"
-author: edupont04
-ms.author: edupont
+author: jswymer
+ms.author: jswymer
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
-ms.assetid: e594076a-21e3-4f4d-8760-581cb2b89b1f
-manager: edupont
 ---
 # Using Filter Expressions in OData URIs
 You can use filter expressions in OData URIs to limit the results that are returned in an AtomPub document. This topic identifies the filter expressions that you can use, describes the equivalent field or table filter that you can use in AL, and presents examples to show the syntax for using filter expressions in OData web service URIs and applications.  
