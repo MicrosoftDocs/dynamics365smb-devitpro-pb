@@ -7,11 +7,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a3b09603-96ac-409e-aafa-d676e19bab6e
-caps.latest.revision: 4
-manager: edupont
+author: jswymer
 ---
 # Set Up a Local Language for the ADCS Web Service
+
+[!INCLUDE[2020_releasewave1_deprecated](../includes/2020_releasewave1_deprecated.md)]
+
 To have messages, including errors, display in the language of the user, you have to modify the ADCS web service codeunit to account for the language setting.  
   
 ### To specify the local language of ADCS messages  
