@@ -160,7 +160,7 @@ codeunit 50100 "Enable Example Extension"
 
 If you are familiar with [!INCLUDE[navnow_md](includes/navnow_md.md)] you will have noticed that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not exposing all the controls/actions that you find in [!INCLUDE[navnow_md](includes/navnow_md.md)]. These controls have been hidden so far by using the application area **Advanced**, which is not assigned to any experiences. For more information, see [Frequently Asked Questions](/dynamics365/business-central/across-faq).
 
-Most of these fields will become available/visible soon, but until then you will have to create an extension to get (almost) the same experience as you have in [!INCLUDE[navnow_md](includes/navnow_md.md)]. See the [example](#to-enable-advanced-in-a-v2-extension) below.
+Most of these fields will become available/visible soon, but until then you will have to create an extension to get (almost) the same experience as you have in [!INCLUDE[navnow_md](includes/navnow_md.md)]. See the [example](#to-enable-advanced-in-an-extension) below.
 
 > [!IMPORTANT]  
 > Adding the application area **Advanced** to the experience will mean that you lose some of the simplification made to pages. For example, you will see more actions duplicated on many pages, compared to [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] where the experience is intended to be simpler than in [!INCLUDE[navnow_md](includes/navnow_md.md)]. You must also consider that we plan to re-tag the **Advanced** actions/controls and add them to the **Essentials** and/or **Premium** experiences in a future release.
