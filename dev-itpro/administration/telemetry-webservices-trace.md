@@ -12,16 +12,16 @@ ms.date: 11/15/2019
 ms.author: jswymer
 ---
 
-# Analyzing Authorization Trace Telemetry
+# Analyzing Web Services Telemetry
 
-Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. 
+Web Services telemetry provides information about the SOAP, OData, and API web service calls from . This telemetry data can help you identify problems a user might experience when signing in. 
 
-Authorization tracw are emitted in two stages of sign-in. The first stage is the initial authorization, where the user account is verified that it is enabled in the tenant and that it has the correct entitlements. The telemetry data includes:
-
-- Success or failure of the sign-in attempt
-- Reason for failure
-- Type of user (such as normal, administrator, or delegated user)
-- Whether the user belongs to the tenant or is an invited user
+There are several  can a partner infer from web service signal
+- Many messages where endpoint contains “powerbi” => excessive powerBI integration usage​
+- I  web service call + long running  sql query => maybe need to adjust/tune codeunit​
+- If calls to a specific endpoint are siginficantly longer then to the other endpoints – consider adding filtering​
+- If web service calls to a specific endpoint read more SQL rows then to the other endpoints – consider adding filtering​
+- If many requests <> API type => uptake API pages to get better perf​
 
 The next stage occurs after a successful authorization attempt, when trying to open the company (that is, when the CompanyOpen trigger run). The telemetry data indicates whether the company opened successfully or failed (for some reason).
 
