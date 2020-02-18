@@ -20,9 +20,6 @@ Using the client can be a useful alternative to writing AL code directly in Visu
 
 However, you can export user-defined profiles and page customizations from the client to files (.al type) that contain the changes as AL code. Once you have the files, you can include them in a Visual Studio Code project and compile them into an extension package that can be published and available to all tenants. To export user-defined profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A .zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file.
 
-> [!NOTE]
-> Currently, you can only export profiles. Importing profiles will be supported in a future release.
-
 ## Exported profiles
 
 Profiles that are created in the client are indicated as **\(user-created\)**. Each user-created profile is exported to a separate .al file that contains the `profile` object that defines the profile ID, name, and Role Center, and includes references the page customizations it uses. For example, you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**, and you customized the Business Manager Role Center itself, plus the **Customer** list page. The exported zip file would contain file called **PROFILE.MyProfile.al** that includes the following code:
@@ -39,7 +36,7 @@ profile MyProfile
 }
 ```
 
-The 'Customizations` property identifies the page customization objects used by the profile.
+The `Customizations` property identifies the page customization objects used by the profile.
 
 ## Exported page customizations for user-created profiles
 
@@ -110,6 +107,17 @@ pagecustomization Configuration3 customizes "Customer List"
 
 > [!IMPORTANT]
 > Currently, the `profileextension` object, app.json, and profiles.json are only used internally for managing profiles from the client. You cannot develop and compile these in AL with Visual Studio Code. This will be be supported in a future release.  
+
+## Import profiles
+
+You can update your list of profiles (roles) by uploading a package file that you exported earlier.
+
+Importing a package can add new profiles or replace existing profiles and their page modifications. Before you import a package, we recommend that you create a copy of your existing profiles by using the Export Profiles action on the Profiles (Roles) page.
+
+When you replace a profile, signed-in users who are assigned to the profile may be interrupted briefly.
+
+
+After choosing a package, you can select which profiles you want to add or replace before committing the change.
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
