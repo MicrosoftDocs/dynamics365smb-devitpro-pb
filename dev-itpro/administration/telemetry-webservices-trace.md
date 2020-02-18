@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/15/2019
+ms.date: 02/18/2020
 ms.author: jswymer
 ---
 
@@ -77,7 +77,7 @@ The following tables explains the custom dimensions included in a **Success Auth
 
 |Value|Description|See more|
 |-----|-----------|--------|
-|Delegated_admin|This indicates that the user is as a delegated administrator on the tenant. This is typically reserved for partners. Delegated administrator privileges are granted to users by the customer. This is done by setting up a Partner Relationship in the Microsoft Partner Center.|[Delegated Administrator Access to Business Central Online](delgated-admin.md)<br /><br />[Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)|
+|Delegated_admin|This indicates that the user is as a delegated administrator on the tenant. This is typically reserved for partners. Delegated administrator privileges are granted to users by the customer. This is done by setting up a Partner Relationship in the Microsoft Partner Center.|[Delegated Administrator Access to Business Central Online](delegated-admin.md)<br /><br />[Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)|
 |Internal_Admin|This indicates that the user is an internal administrator on the tenant, which means that the user is assigned the **Global admin** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 Admin Center](/office365/admin/add-users/assign-admin-roles)|
 |Normal user|This indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
 
@@ -210,7 +210,7 @@ This occurs when a user account in Business Central does not have the proper per
 
 *Resolution*
 
-In Business Central, open the user account and modify the permissions the user to give them access to the company. For more information, see [Assign Permissions to Users and Groups](dynamics365/business-central/ui-define-granular-permissions).
+In Business Central, open the user account and modify the permissions the user to give them access to the company. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 > [!TIP]
 > A good starting point is to look at the **Effective Permissions** that the user has on the company. You can do this from the user card by selecting **Effective Permissions** and setting the **Company** to the company in question.
@@ -267,6 +267,6 @@ The user can be enabled/disabled from the Users page in Business Central.
 -->
 ## See also
 
-[Monitoring and Analyzing Telemetry](telemtry-overview.md)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
 [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
