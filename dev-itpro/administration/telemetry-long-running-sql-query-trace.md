@@ -70,7 +70,7 @@ This table describes the different dimensions.
 |alStackTrace|The stack trace in AL.||
 |alObjectName|The name of the AL object that executed the SQL statement||
 |alObjectType|The type of the AL object that executed the SQL statement||
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at tome of execution. ||
+|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |alObjectId|The type of the AL object that executed the SQL statement.||
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |extensionName|Specifies the name of the extension.||
