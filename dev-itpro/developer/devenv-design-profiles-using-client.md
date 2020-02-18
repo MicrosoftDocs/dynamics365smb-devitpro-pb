@@ -16,13 +16,38 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-Using the client can be a useful alternative to writing AL code directly in Visual Studio Code because you are working with the user interface just as the users would. This is especially advantageous for consultants, application administrators, and less technical users. But a consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. In contrast, profiles and page customizations that are extension-based are published to the application server instance and available for installation on all tenants.
+Using the client to create and modify profiles can be a useful alternative to writing AL code directly in Visual Studio Code, because you are working with the user interface just as the users would. This is especially advantageous for consultants, application administrators, and less technical users. Profiles that are created in the client are referred to as **\(user-created\)** profiles and are indicated as such in **Profiles** page in the client. A consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. In contrast, profiles and page customizations that are extension-based are published to the application server instance and available for installation on all tenants.
 
-However, you can export user-defined profiles and page customizations from the client to files (.al type) that contain the changes as AL code. Once you have the files, you can include them in a Visual Studio Code project and compile them into an extension package that can be published and available to all tenants. To export user-defined profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A .zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file.
+However, you can export user-created profiles and page customizations from the client to a profile package, which is a .zip file that includes profiles and page customizations as AL code. The profile package is essentially includes all profile customizations that are not introduced by extensions. Once you have the profile package, you can:
+
+- Import the profile package as-is to another tenant
+
+- Extract the files in the package and make additional modifications. Then, include the modified files in a zip and import to a tenant.
+
+- Extract the files and include them in a Visual Studio Code project. Then, compile them into an extension package that can be published and available to all tenants.
+
+## Exporting profiles
+
+To export user-created profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A profile.zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file
+
+<!--
+However, you can export user-created profiles and page customizations from the client to files (.al type) that contain the changes as AL code. Once you have the files, you can include them in a Visual Studio Code project and compile them into an extension package that can be published and available to all tenants. To export user-cret profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A .zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file.
+-->
+
+## Profile Package
+
+A profile package contains the following files:
+
+- app.json file
+- profile.json file.
+- Profile._<profile ID>_.al file for each user-created profile
+- ProfileExtension.
+- PageCustomization._[page name]_.Configuration\<number\>.al file for each page customization
+
 
 ## Exported profiles
 
-Profiles that are created in the client are indicated as **\(user-created\)**. Each user-created profile is exported to a separate .al file that contains the `profile` object that defines the profile ID, name, and Role Center, and includes references the page customizations it uses. For example, you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**, and you customized the Business Manager Role Center itself, plus the **Customer** list page. The exported zip file would contain file called **PROFILE.MyProfile.al** that includes the following code:
+Each user-created profile is exported to a separate .al file that contains the `profile` object that defines the profile ID, name, and Role Center, and includes references the page customizations it uses. For example, you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**, and you customized the Business Manager Role Center itself, plus the **Customer** list page. The exported zip file would contain file called **PROFILE.MyProfile.al** that includes the following code:
 
 ```
 profile MyProfile
@@ -118,6 +143,17 @@ When you replace a profile, signed-in users who are assigned to the profile may 
 
 
 After choosing a package, you can select which profiles you want to add or replace before committing the change.
+
+
+Describe a "Profile Package": file format and structure, AL format, beware tampering, export/import, different from legacy profiles, not an extension but can copy code
+Clarify what is exported, what is imported:
+All changes initiated by users that are not introduced by extensions.
+New profiles created by users, including their page customizations
+Changes to the basic properties of a profile
+Changes to page customizations for a profile that originated from an extension
+Use words "import" "export" "add" (profile) "replace" (profile)
+Explain that this cannot be used to import or migrate legacy profiles from earlier versions of Dynamics NAV and Dynamics 365 Business Central.
+Note that if the user does not have the special permission set "D365 Profile Mgmt" but have read access to the Profiles list, they can still export profiles as a means to hand off to Support for troubleshooting purposes. Export is by nature a readonly operation.
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
