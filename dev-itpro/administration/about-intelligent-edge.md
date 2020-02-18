@@ -1,5 +1,5 @@
 ---
-title: Migrate to Business Central Cloud from on-premises | Microsoft Docs
+title: Migrate to Business Central online from on-premises | Microsoft Docs
 description: Get a cloud tenant so you can migrate to the cloud when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL.
 
 author: bmeier94
@@ -10,12 +10,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 11/20/2019
+ms.date: 02/18/2020
 ms.author: bmeier
 
 ---
 
-# Connect to Business Central Cloud from On-Premises with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Connect to Business Central Online from On-Premises
 
 Customers running their workloads on-premises  that are looking to move to the cloud can migrate using the cloud migration tool. Each on-premises solution that connects using the cloud migration tool through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be able to replicate data from on-premises to the cloud tenant. Moving to the cloud gives users the added benefits of not only running their business from the cloud but they also get the benefits of cloud scenarios like Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
 
@@ -30,7 +30,7 @@ There are a few key points that need to be understood before proceeding with the
 - It is always a best practice to test this configuration in your Sandbox environment before making changes to a production tenant. For more information see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
 - Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data migration process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to be overwritten, do not configure the connection.
 - All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
-- If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL server you define. These stored procedures are required to migrate data from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
+- If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 - In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the amount of data that can be migrated for any tenant is limited to 150GB. If your database is larger than 150GB, try reducing the number of companies you are migrating data for. This can done using the company selection within the assisted setup guide. Additional options for databases exceeding 150GB will be available in future updates.  
 - Before setting up the connection to the cloud migration, ensure that at least one user in the system that has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
@@ -56,7 +56,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
     |Field  |Description  |
     |---------|---------|
     |*SQL Connection* |**SQL Server**, which is your locally installed SQL Server instance, or **Azure SQL**.|
-    |*SQL Connection string*|You must specify the connection string to your SQL Server. For more information, see [the SQL Server blog](https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/). The following snippets illustrate a couple connection strings with different formats: </br>`Server={SQL Server Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`</br></br>`Server={SQL Server Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`</br></br>The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.|
+    |*SQL Connection string*|You must specify the connection string to your SQL Server. For more information, see [the SQL Server blog](https://docs.microsoft.com/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string). The following snippets illustrate a couple connection strings with different formats: </br>`Server={SQL Server Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`</br></br>`Server={SQL Server Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`</br></br>The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.|
     |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your Business Central online tenant. </br></br>If you are a hosting partner, you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new pipeline will be created in the Azure service. This should take less than a minute to complete.|
 
 4. Self-Hosted Integration Runtime (SHIR)
@@ -78,7 +78,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 
 There are some scenarios where it will be necessary for you to run the cloud migration setup wizard more than once.  
 
-One example is if you want to change the companies you replicate data for. If the companies in your on-premises solution have changed, either added or deleted, or you want to change the companies to replicate, simply run the assisted setup wizard again.  You can also do this by going into the actions in the cloud migration management page.  We added the ability to choose additional companies without having to walk through the wizard.
+One example is if you want to change the companies you replicate data for. If the companies in your on-premises solution have changed, either added or deleted, or you want to change the companies to replicate, simply run the assisted setup wizard again. Alternatively, choose additional companies in the **Cloud Migration Management** page.  
 
 Another example of why you would want to run the wizard again is you may be a hosting partner and want to add tenants to your existing runtime service.  
 
