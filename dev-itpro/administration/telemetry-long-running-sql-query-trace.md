@@ -79,7 +79,7 @@ This table describes the different dimensions.
 
 ## See also
 
-[Monitoring and Analyzing Telemetry](telemtry-overview.md)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
 [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
 [Monitoring and Analyzing Long Running SQL Queries On-Premises](monitor-long-running-sql-queries-event-log.md)  
