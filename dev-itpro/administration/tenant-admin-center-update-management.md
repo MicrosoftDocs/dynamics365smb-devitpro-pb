@@ -9,17 +9,17 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 10/01/2019
+ms.date: 02/19/2020
 ms.author: edupont
 ---
 
-# Updating Environments
+# Managing Major and Minor Updates of Business Central Online
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with major updates every 6 months in April and October, and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with major updates every 6 months in April and October, and monthly service updates. For more information, see [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of updates for each environment.
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of updates for each environment. You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product.  
 
-## Set the update window
+## Set the update window for each environment
 
 The update window for an environment defines a window of time during the day in which the environment can be updated. When an update is rolling out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the update window defines. This helps to ensure that updates are applied outside of the customer's normal business hours, for example.
 
@@ -53,11 +53,15 @@ To schedule an update date:
 
 If an administrator has chosen the **Schedule Update** action but not set a date, then the update is applied automatically to each tenant environment with a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date does not prevent the environment from being updated.
 
-## Update Notifications
+## Get notified of updates
 
 For updates for which the option is available for tenant administrators to schedule the update date, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](tenant-admin-center-notifications.md).
 
 Scheduling environment updates is *not* available for monthly service updates. For these, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.
+
+## Prepare for major updates with preview environments
+
+[!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
 
 ## See also
 

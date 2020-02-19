@@ -38,6 +38,10 @@ This type of environment can be useful for repeatable demos that rely on Office 
 
 [!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
+## Preview environments
+
+[!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
+
 ## Richer experiences
 
 Sometimes, the out-of-the-box demo environment is not what you want to show your prospects. For example, if you want to demonstrate integration with machinery, or your solution is an ISV solution that fully or partially replaces the default experience. In those types of scenarios, the free trial is probably not the best starting point.  

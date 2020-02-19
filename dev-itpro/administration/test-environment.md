@@ -58,6 +58,10 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment is created automatically when you use the environment URL to login the first time.  
 
+## Preview environments
+
+[!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
+
 ## See also
 
 [The Business Central Administration Center](tenant-admin-center.md)  

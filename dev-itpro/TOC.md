@@ -108,11 +108,11 @@
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
 ### [Preparing Test Environments](administration/test-environment.md)
+### [Managing Major and Minor Updates](administration/tenant-admin-center-update-management.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
-#### [Updating Environments](administration/tenant-admin-center-update-management.md)
 #### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
