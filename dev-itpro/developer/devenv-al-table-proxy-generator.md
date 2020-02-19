@@ -50,8 +50,9 @@ The syntax for the generator is the following:
 |*TableType*| The table type for the table(s) in AL. |
 
 ## Example
+The following example starts the process for creating a new integration table in the specified AL project. When complete, the output path contains the **Worker.al** file that contains the description of the **50000 CDS Worker** integration table. This table is set to the table type **CDS**.
 
-
+```powershell
 -project <Your AL project folder>  
 -packagecachepath <Your AL project cache folder>  
 -serviceuri <CDS server URL>  
@@ -59,10 +60,8 @@ The syntax for the generator is the following:
 -password <Password>  
 -entities cdm_worker  
 -baseid 50000  
--tabletype CDS   
-
-
-This starts the process for creating the table. When completed, the output path contains the **Worker.al** file that contains the description of the **50001 CDS Worker** integration table. This table is set to the table type **CDS**.
+-tabletype CDS 
+```
 
 ## See Also
 [](cross link to the )
