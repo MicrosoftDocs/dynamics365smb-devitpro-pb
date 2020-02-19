@@ -40,14 +40,14 @@ The syntax for the generator is the following:
 
 |Parameter|Description|
 |---------|-----------|
-|*Project*| |
-|*PackageCachePath* |
-|*ServiceURI*| |
-|*UserName*| |
-|*Password*| |
-|*Entities*| |
-|*BaseId*| |
-|*TableType*| |
+|*Project*| The AL project folder to create the table(s) in.|
+|*PackageCachePath*| The AL project cache folder. |
+|*ServiceURI*| The server URL for Common Data Service. |
+|*UserName*| The admin user name for Common Data Service. |
+|*Password*| The admin password for Common Data Service. |
+|*Entities*| The table(s) to create in AL. |
+|*BaseId*| The assigned ID for the table(s) in AL. |
+|*TableType*| The table type for the table(s) in AL. |
 
 ## Example
 
