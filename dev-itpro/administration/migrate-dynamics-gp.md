@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms. search.keywords: cloud, edge, gp
+ms. search.keywords: cloud, edge, gp, migration
 ms.date: 02/19/2020
 ms.author: jenolson
 
@@ -37,7 +37,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     |     |  |Period 1| 250.00 |
     |     |  |Period 2 | 117.00 |
     |     |  |Period 3 |340.00 |
-    |000-1100-10  Cash |Year 2019 |  |  |
+    |000-1100-01  Cash |Year 2019 |  |  |
     |     |  |Period 1| 240.00 |
     |     |  |Period 2 | 102.00 |
     |     |  |Period 3 |501.00 |
@@ -46,18 +46,18 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     |     |  |Period 2 | 219.00 |
     |     |  |Period 3 |841.00 |
 
-    The migration creates two accounts in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], number 1100 and number 4000. New dimensions are also added with the names 000, 00, and 10. General journal transactions are created as follows:
+    The migration creates two accounts in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], number 1100 and number 4000. New dimensions are also added with the names 000, 00, and 01. General journal transactions are created as follows:
 
     |Transaction date |Account No.|Amount  |Dimensions|
     |-----------------|-----------|--------|----------|
     |1/31/2019        |1100   |250.00 |Dimension 000, 00|
-    |1/31/2019        |1100   |240.00 |Dimension 000, 10|
+    |1/31/2019        |1100   |240.00 |Dimension 000, 01|
     |1/31/2019        |4000   |490.00 |Dimension 000, 00|
     |2/28/2019        |1100   |117.00 |Dimension 000, 00|
-    |2/28/2019        |1100   |102.00 |Dimension 000, 10|
+    |2/28/2019        |1100   |102.00 |Dimension 000, 01|
     |2/28/2019        |4000   |219.00 |Dimension 000, 00|
     |3/31/2019        |1100   |340.00 |Dimension 000, 00|
-    |3/31/2019        |1100   |501.00 |Dimension 000, 10|
+    |3/31/2019        |1100   |501.00 |Dimension 000, 01|
     |3/31/2019        |4000   |841.00 |Dimension 000, 00|
 
     The data migration generates dimensions on that account based on the different segments. User will see a *Department* dimension with the values *000*, *100*, and *200*, respectively. A second dimension, *Division*, will show the values *00*, *01*, and *02*, respectively.
@@ -72,13 +72,13 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
     In the setup wizard, you can choose to migrate all vendors from Dynamics GP or only active vendors. This allows you to not migrate over vendors that have been marked as inactive. We also have added bringing all addresses from the vendor over into Business Central. All of the addresses on the vendor will be setup as order addresses in Business Central. That will allow the end user to choose the address needed when entering transactions after the migration.  
 
-    We also bring over outstanding Payables transactions. These transactions will be brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created ii Business Central will be for $600 as that is the amount remaining to be paid. We bring over all transaction types from Payables Management.
+    We also bring over outstanding Payables transactions. These transactions will be brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created in Business Central will be for $600 as that is the amount remaining to be paid. We bring over all transaction types from Payables Management.
 
 4. Inventory items
 
     Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Currently, the data migration brings in the quantity on hand for the items at the time of migration. This quantity is brought into the blank location.
 
-5. Historical data from Sales Order Processing, Purchase Order Processing, and Inventory
+5. Historical data from Receivables, Payables, Sales Order Processing, Purchase Order Processing, and Inventory
 
     This data can be used in Power BI reports and Power Apps. In Business Central online, the data is included in the SmartList views in the Customers, Vendors, and Items lists. Technically, the data is stored in table extensions.
 
