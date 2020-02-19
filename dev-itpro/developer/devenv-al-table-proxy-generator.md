@@ -13,10 +13,11 @@ author: SusanneWindfeldPedersen
 
 # AL Table Proxy Generator
 
-The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Common Data Service. When one more more entities are present in Common Data Service, but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified entity or entities.
+The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Common Data Service. When one or more entities are present in Common Data Service, but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified entity or entities.
 
 The tool is available with the **AL Language** extension and the **altpgen.exe** tool is found in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`. 
 
+## Generating proxy tables
 
 1. Start Windows PowerShell as an administrator.
 2. At the command prompt...
