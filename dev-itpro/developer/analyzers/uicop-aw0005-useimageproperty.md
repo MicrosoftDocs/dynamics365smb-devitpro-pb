@@ -1,6 +1,6 @@
 ---
 title: "Actions should use the Image property."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/02/2020
 ms.reviewer: na

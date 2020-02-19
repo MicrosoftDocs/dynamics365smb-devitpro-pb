@@ -2,7 +2,7 @@
 title: "Removing properties that cause destructive changes is not allowed"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/20/2020
+ms.date: 02/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -2,7 +2,7 @@
 title: "AppSourceCop Analyzer"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/20/2020
+ms.date: 02/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -75,6 +75,10 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0061](appsourcecop-as0061-donotsubscribetooncompanyopenevents.md)|Procedures must not subscribe to CompanyOpen events|Procedures must not subscribe to CompanyOpen events.|Procedure '{0}' subscribes to '{1}'.|Extensibility|Error|true|
 |[AS0062](appsourcecop-as0062-useapplicationareaproperty.md)|Page controls must use the ApplicationArea property|Page controls must use the ApplicationArea property.|Control '{0}' must have a value for the ApplicationArea property.|Extensibility|Error|true|
 |[AS0063](appsourcecop-as0063-changingvarparamatermodifier.md)|Adding or removing a var modifier in events and external procedures is not allowed|Adding or removing a var modifier in events and external procedures is not allowed.|A var modifier in '{0}' has been modified, this should be avoided in events and external procedures.|Upgrade|Error|true|
+|[AS0064](appsourcecop-as0064-interfaceimplementationdeletionnotallowed.md)|Interface implementations that have been published must not be deleted|An interface implementation that has been published must not be deleted, since dependent extensions may break.|Implementation of interface '{0}' has been deleted.|Upgrade|Error|true|
+|[AS0065](appsourcecop-as0065-interfacedeletionnotallowed.md)|Interfaces that have been published must not be deleted|An interface that has been published must not be deleted, since dependent extensions may break.|Interface '{0}' has been deleted.|Upgrade|Error|true|
+|[AS0066](appsourcecop-as0066-addingpublicapiprocedurenotallowed.md)|A new method to an interface that has been published must not be added|A new method to an interface that has been published must not be added, since dependent extensions may break|Procedure '{0}' has been added in '{1} {2}'. A procedure must not be added to a public API.|Upgrade|Error|true|
+|[AS0067](appsourcecop-as0067-addinginterfacetoenumwithoutdefaultimplementationnotallowed.md)|Adding an interface to an enum that has been published must have a default implementation|Adding an interface to an enum that has been published must have a default implementation, since dependent enum extensions don't implement the new interface and may break.|Interface '{0}' has been added to the implemented interfaces by enum '{1}' without adding a default implemention.|Upgrade|Error|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -92,10 +96,13 @@ The following table describes the settings in the `AppSourceCop.json` file:
 |publisher|No|The publisher of a previous version of this package with which you want to compare the current package for breaking changes.|
 |version|Yes|The version of a previous version of this package with which you want to compare the current package for breaking changes.|
 |mandatoryAffixes|No|Affixes that must be prepended or appended to the name of all new application objects, extension objects, and fields.|
+|supportedCountries|No|The set of country codes, in the alpha-2 ISO 3166 format, in which the application will be available.|
 
 The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. AppSourceCop will use this information to download the specified package from the server and compare the current package with it. AppSourceCop will report any breaking changes introduced by the current package.
 
 The `mandatoryAffixes` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
+
+The `supportedCountries` property specifies the codes that correspond to the countries for which the product allows AppSource submissions. For more information, see [Availability and supported Countries/Regions and Translations](../../compliance/apptest-countries-and-translations.md)
 
 ## Example
 In the following example, we will configure AppSourceCop to validate that all new elements have a name that contains one of the specified affixes.

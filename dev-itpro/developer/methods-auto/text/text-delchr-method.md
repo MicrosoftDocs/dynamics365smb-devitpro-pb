@@ -2,7 +2,7 @@
 title: "DelChr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -164,7 +164,7 @@ var
 begin 
     String := Text000;  
     Where := '<';  
-    Which := 'This';  
+    Which := 'This ';  
     NewString := DELCHR(String, Where, Which);  
     MESSAGE(Text001, String,NewString);  
 end;

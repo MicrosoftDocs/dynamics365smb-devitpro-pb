@@ -38,7 +38,7 @@ tableextension 50111 "CustomerExt" extends Customer
     {
         field(50112; Acronym; Text[15])
         {
-            trigger OnValidate();
+            trigger OnValidate()
             begin
                 rec.Acronym := rec.Acronym.ToUpper();
             end;
