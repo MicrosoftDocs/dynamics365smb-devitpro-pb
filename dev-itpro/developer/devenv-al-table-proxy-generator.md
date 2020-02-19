@@ -33,6 +33,8 @@ The syntax for the generator is the following:
 -BaseId
 -TableType
 ```
+## Example
+
 
 -project <Your AL project folder>  
 -packagecachepath <Your AL project cache folder>  
@@ -44,6 +46,7 @@ The syntax for the generator is the following:
 -tabletype CDS   
 
 
-This starts the process for creating the table. When completed, the output path contains the **Worker.al** file that contains the description of the **50001 CDS Worker** integration table. This table is set to the table type **CRM**.
+This starts the process for creating the table. When completed, the output path contains the **Worker.al** file that contains the description of the **50001 CDS Worker** integration table. This table is set to the table type **CDS**.
 
 ## See Also
+[](cross link to the )
