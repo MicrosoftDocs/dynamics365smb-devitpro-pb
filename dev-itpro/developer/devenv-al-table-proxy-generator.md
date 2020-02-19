@@ -1,6 +1,6 @@
 ---
 title: "AL Table Proxy Generator Overview"
-description: ""
+description: "Tool for creating integration or proxy tables for integration with Common Data Service from Business Central"
 ms.custom: na
 ms.date: 02/03/2020
 ms.reviewer: na
