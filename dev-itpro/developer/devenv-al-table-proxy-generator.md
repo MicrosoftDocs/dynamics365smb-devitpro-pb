@@ -18,8 +18,6 @@ The **AL Table Proxy Generator** tool can be used to generate one or more tables
 The tool is available with the **AL Language** extension and the **altpgen.exe** tool is found in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`. 
 
 
-
-
 1. Start Windows PowerShell as an administrator.
 2. At the command prompt...
 
@@ -37,6 +35,19 @@ The syntax for the generator is the following:
 -BaseId
 -TableType
 ```
+
+## Parameters
+
+|Parameter|Description|
+|---------|-----------|
+|*Project*| |
+|*PackageCachePath* |
+|*ServiceURI*| |
+|*UserName*| |
+|*Password*| |
+|*Entities*| |
+|*BaseId*| |
+|*TableType*| |
 
 ## Example
 
