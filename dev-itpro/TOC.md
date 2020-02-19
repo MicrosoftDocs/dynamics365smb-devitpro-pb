@@ -109,8 +109,8 @@
 ### [Preparing Demo Environments](administration/demo-environment.md)
 ### [Preparing Test Environments](administration/test-environment.md)
 ### [Managing Major and Minor Updates](administration/tenant-admin-center-update-management.md)
+### [Preparing for Major Updates of Business Central Online](administration/tenant-admin-center-update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
-### [Major Update Rollout - What You Need to Know](administration/tenant-admin-center-update-rollout-timelime.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
