@@ -621,11 +621,11 @@
 <!-- end performance -->
 <!--migrate to BC online-->
 # Migrate to Business Central Online
-## Overview (to be written)
-## [Migrating from Business Central On-Premises](administration/data-replication-intelligent-cloud.md)
-## [Migrating from Dynamics GP](administration/data-replication-intelligent-cloud.md)
+## [Overview](administration/migrate-data.md)
+## [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
+## [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ## [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
-## [Migrating from Dynamics SL](administration/data-replication-intelligent-cloud.md)
+<!--## [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migration -->
 <!-- upgrade -->
 # Upgrade
@@ -633,9 +633,7 @@
 ## Online
 ### [Overview](upgrade/upgrading-to-business-central-online.md)
 ### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
-### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Migrating On-Premises Data to Business Central Online](administration/migrate-data.md)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ## On-Premises
 ### Business Central Spring 2019
