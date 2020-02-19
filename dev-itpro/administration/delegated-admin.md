@@ -46,7 +46,7 @@ The following tasks are *not* available to the delegated administrator:
 - Install apps from AppSource
 - Use the **Cloud Migration Setup** assisted setup guide to migrate data from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
 
-    Instead, the internal administrator can run the assisted setup guide.
+    Instead, a user who is assigned the SUPER permission set in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] can run the assisted setup guide.
 
 ## Managing delegated permissions as a partner
 
