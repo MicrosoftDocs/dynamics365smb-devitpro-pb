@@ -110,6 +110,7 @@
 ### [Preparing Test Environments](administration/test-environment.md)
 ### [Managing Major and Minor Updates](administration/tenant-admin-center-update-management.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+### [Major Update Rollout - What You Need to Know](administration/tenant-admin-center-update-rollout-timelime.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -635,6 +636,7 @@
 ### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 ### [Migrating On-Premises Data to Business Central Online](administration/migrate-data.md)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+### [Major Update Rollout - What You Need to Know](administration/tenant-admin-center-update-rollout-timelime.md)
 ## On-Premises
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)
