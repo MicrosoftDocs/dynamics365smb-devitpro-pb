@@ -47,6 +47,6 @@ The following table describes the actions that you can run from the page:
 ## See also
 
 [Frequently Asked Questions about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
-[Replicating on-premises data](data-replication-intelligent-cloud.md)  
+[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Connect to the Intelligent Cloud with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](about-intelligent-edge.md)  
 [Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)
