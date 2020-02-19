@@ -1,5 +1,5 @@
 ---
-title: "AL Table Proxy Generator Overview"
+title: "AL Table Proxy Generator"
 description: "Tool for creating integration or proxy tables for integration with Common Data Service from Business Central"
 ms.custom: na
 ms.date: 02/03/2020
@@ -11,9 +11,13 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# AL Table Proxy Generator Overview
+# AL Table Proxy Generator
 
-The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Common Data Service. The tool is available with the **AL Language** extension and the **altpgen.exe** tool is found in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`.
+The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Common Data Service. It is used when a certain entity is present in Common Data Service, but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+
+The tool is available with the **AL Language** extension and the **altpgen.exe** tool is found in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`. 
+
+
 
 
 1. Start Windows PowerShell as an administrator.
@@ -33,6 +37,7 @@ The syntax for the generator is the following:
 -BaseId
 -TableType
 ```
+
 ## Example
 
 
