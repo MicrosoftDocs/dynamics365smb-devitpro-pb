@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 02/19/2020
+ms.date: 02/20/2020
 ms.author: edupont
 ---
 
@@ -17,30 +17,37 @@ ms.author: edupont
 
 This article provides an overview of what you need to know about the rollout of a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. It includes key dates, actions you need take, and answers some common questions.  
 
-## What is the Timeline?
+## Timelines for major updates
 
-The following figure illustrates the key milestones and dates in the rollout of the next major update based on [2020 release wave 1](/dynamics365-release-plan/2020wave1/dynamics365-business-central/).
+The following figure illustrates the key milestones and dates in the rollout of the next major update based on [2020 release wave 1](/dynamics365-release-plan/2020wave1/dynamics365-business-central/). The same timeline applies to all other major updates for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, though dates are of course different.
 
 ![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
 
-|Milestone|Date|Description|
+|Milestone|Example|Description|
 |---------|----|-----------|
-|UpdateIsAvailable|April 1, 2020|The date when the new major version of Business Central becomes available|
-|UpdateStartsOn|April 8, 2020|The default date when Microsoft starts upgrading Business Central environments.|
-|LastSelectableUpdateDate|May 1, 2020|The last date you can choose to extend your upgrade date to.|
+|Update Is Available|April 1, 2020|The date when the new major version of Business Central becomes available|
+|Update Starts On|April 8, 2020|The default date when Microsoft starts upgrading Business Central environments.|
+|Last Selectable Update Date|May 1, 2020|The last date you can choose to extend your upgrade date to.|
 
-## What happens on the #UpdateIsAvailable date?
+### Update is available
 
-On that date, e-mail notifications are sent out to all notification recipients that are registered in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], also a notification about update availability is displayed in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] itself. All new signups are directed to the new version. Starting this day, you can set the date for when your environment should be updated via the #[!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (schedule update). You can choose any date between #UpdateIsAlvailable and #LastSelectableUpdateDate to start your update, including the current date.  See [Update Environments](tenant-admin-center-update-management.md).
+On that date, e-mail notifications are sent out to all notification recipients that are registered in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], also a notification about update availability is displayed in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] itself. Starting this day, you can set the date for when your environment should be updated via the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (schedule update). You can choose any date between Update Is Available and Last Selectable Update Date to start your update, including the current date. For more information, see [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md).
 
-## What happens on the #UpdateStartsOn date?
+> [!IMPORTANT]
+> Existing environments are scheduled to be updated to the new version gradually across the world. Microsoft will schedule all environments to be updates as soon as possible following the release date, but in some cases, an environment might have to wait for up to a month before being updated.
 
-On that date, Microsoft starts updating Business Central environments to the latest version. If you did not set any specific update date for your environment, it may be updated on any day between #UpdateStartsOn date and #LastSelectableUpdateDate date. At any point of time during this period, unless your environment is being updated or is already updated, you can set a specific update date, including current date, and that date will be honored.
+On the same day, new users signing up for a trial are directed to the new version.
 
-## What happens on the date which I set for my environment to be updated?
+### Update starts
 
-When the update date you specified for  your environment comes, the update is triggered within the first available update time window you have specified for that environment.  
-Note, that if your update time window is set to start after midnight, the update will start within that time window, but on the following day to the one you defined for your environment. 
+On that date, Microsoft starts updating Business Central environments to the new version. If you did not set any specific update date for your environment, it may be updated on any day between Update Starts On date and Last Selectable Update Date date. At any point of time during this period, unless your environment is being updated or is already updated, you can set a specific update date, including current date, and that date will be honored.
+
+## Update date for an environment
+
+When the update date you specified for your environment comes, the update is triggered within the first available update time window you have specified for that environment.  
+
+> [!NOTE]
+> If your update time window is set to start after midnight, the update will start within that time window, but on the following day to the one you defined for your environment.
 
 ## How can I test the update before updating my production environment?
 
@@ -59,12 +66,12 @@ Note that we do not recommend setting the update time window within the working 
 
 If your sandbox environment update fails, such as due to per-tenant extension compatibility or other issues, your environment is automatically rescheduled for another update attempt in 7 days. If you address the issues earlier, you can change the date to an earlier date, including the current date, and run the test upgrade again.  
 
-## It is already #UpdateIsAvailable date, but I neither received the update notification nor can I schedule update in #TAC. Why is that?
+## It is already Update Is Available date, but I neither received the update notification nor can I schedule update in the admin center. Why is that?
 
 This can happen for one of the following reasons:
 
 - Your environment is not yet updated to the last minor update of the previous version of Business Central. All environments must be updated to the last available minor update of the previous version before they can schedule update to the next major version of Business Central. You can check which version you are currently running on by looking at ###. Microsoft is actively working on updating all environments to the latest minor update as soon as possible, so likely your environment will be updated soon and you will get a chance to schedule the major update. In an unlikely situation, when your environment is updated to the last minor update around or even after the #LastSelectableUpdateDate you will always get a least 7 days to schedule the update to the next major update.  
-- Your per-tenant extensions are not compatible with the next major update. Prior to the rollout of the next major update as well as during update, Business Central team routinely checks per-tenant extensions in all environments for compatibility with the next major update. When compatibility issues  are detected, e-mail notification, listing the detected issues, is sent to the notification recipients. ###### 
+- Your per-tenant extensions are not compatible with the next major update. Prior to the rollout of the next major update as well as during update, Business Central team routinely checks per-tenant extensions in all environments for compatibility with the next major update. When compatibility issues  are detected, e-mail notification, listing the detected issues, is sent to the notification recipients. 
 - AppSource issues  
 
 ## See also
