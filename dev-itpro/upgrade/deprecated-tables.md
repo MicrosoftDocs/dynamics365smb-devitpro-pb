@@ -13,7 +13,9 @@ ms.author: solsen
 
 # Deprecated Tables
 
-In the latest version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], a number of tables have been deprecated in the current release. The following tables have been marked with an `ObsoleteState:Removed`.
+In the latest version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], a number of tables have been deprecated in the current release. The following tables have been marked with an `ObsoleteState:Removed`. Code that uses the deprecated table or tables, must be rewritten to use the new table or tables. The deprecated tables are the following:
+
+<br>
 
 |Deprecated Table Name|New Table Name|
 |---------------------|--------------|
