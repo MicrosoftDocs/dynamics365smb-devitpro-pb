@@ -86,47 +86,47 @@ This table gives an overview of supported languages and how  application languag
 
 |Language|Locale|Translation app provided by|
 |-----------|---------|------|
-|Czech (Czech Republic)|cz-CZ|Microsoft, pre-published|
-|Danish (Denmark)|da-DK|Microsoft, pre-published|
-|German (Austria)|de-AT|Microsoft, pre-published|
-|German (Switzerland)|de-CH|Microsoft, pre-published|
-|German (Germany)|de-DE|Microsoft, pre-published|
-|English (Australian)|en-AU|Microsoft, pre-published|
-|Enligsh (Canada)|en-CA|Microsoft, pre-published|
-|English (Great Britain)|en-GB|Microsoft, pre-published|
-|Enligsh (New Zealand)|en-NZ|Microsoft, pre-published|
-|English (United States)|en-US|Microsoft, pre-published|
-|English (South Africa)|en-ZA|Microsoft, pre-published|
-|Spanish (Spain)|es-ES|Microsoft, pre-published|
-|Spanish (Mexico)|es-MX|Microsoft, pre-published|
-|Estonian (Estonia)|et-EE|Partner, AppSource|
-|Finnish (Finland)|fi-FI|Microsoft, pre-published|
-|French (Belgium)|fr-BE|Microsoft, pre-published|
-|French (Canada)|fr-CA|Microsoft, pre-published|
-|French (Switzerland)|fr-CH|Microsoft, pre-published|
-|French (France)|fr-FR|Microsoft, pre-published|
-|Croatioan (Croatia)|hr-HR|Partner, AppSource|
-|Hungarian (Hungary)|hu-HU|Partner, AppSource|
-|Icelandish (Iceland)|is-IS|Microsoft, pre-published|
-|Italian (Switzerland)|it-CH|Microsoft, pre-published|
-|Italian (Italy)|it-IT|Microsoft, pre-published|
-|Japanese (Japan)|jp-JP|Partner, AppSource|
-|Korean (Korea)|ko-KR|Partner, AppSource|
-|Latvian (Latvia)|lv-LV|Partner, AppSource|
-|Norwegian (Norway)|no-NO|Microsoft, pre-published|
-|Dutch (Belgium)|nl-BE|Microsoft, pre-published|
-|Dutch (Netherlands)|nl-NL|Microsoft, pre-published|
-|Polish (Poland)|pl-PL|Partner, AppSource|
-|Portuguese (Brazil)|pt-BR|Partner, AppSource|
-|Portuguese (Portugal)|pt-PT|Partner, AppSource|
-|Russian (Russia)|ru-RU|Microsoft, pre-published|
-|Slovak (Slovakian)|sk-SK|Partner, AppSource|
-|Slovenian (Slovenia)|sl-SI|Partner, AppSource|
-|Serbian (Serbia)|sr-latn-RS|Partner, AppSource|
-|Swedish (Sweden)|sv-SE|Microsoft, pre-published|
-|Turkish (Turkey)|tr-TR|Partner, AppSource|
-|Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, AppSource|
-|Traditional Chinese (Taiwan)|zh-TW|Partner, AppSource|
+|Czech (Czech Republic)|cz-CZ|Microsoft, Available on AppSource|
+|Danish (Denmark)|da-DK|Microsoft, Available on AppSource|
+|German (Austria)|de-AT|Microsoft, Available on AppSource|
+|German (Switzerland)|de-CH|Microsoft, Available on AppSource|
+|German (Germany)|de-DE|Microsoft, Available on AppSource|
+|English (Australian)|en-AU|Microsoft, Available on AppSource|
+|Enligsh (Canada)|en-CA|Microsoft, Available on AppSource|
+|English (Great Britain)|en-GB|Microsoft, Available on AppSource|
+|Enligsh (New Zealand)|en-NZ|Microsoft, Available on AppSource|
+|English (United States)|en-US|Microsoft, Available on AppSource|
+|English (South Africa)|en-ZA|Microsoft, Available on AppSource|
+|Spanish (Spain)|es-ES|Microsoft, Available on AppSource|
+|Spanish (Mexico)|es-MX|Microsoft, Available on AppSource|
+|Estonian (Estonia)|et-EE|Partner, Available on AppSource|
+|Finnish (Finland)|fi-FI|Microsoft, Available on AppSource|
+|French (Belgium)|fr-BE|Microsoft, Available on AppSource|
+|French (Canada)|fr-CA|Microsoft, Available on AppSource|
+|French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
+|French (France)|fr-FR|Microsoft, Available on AppSource|
+|Croatioan (Croatia)|hr-HR|Partner, Available on AppSource|
+|Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
+|Icelandish (Iceland)|is-IS|Microsoft, Available on AppSource|
+|Italian (Switzerland)|it-CH|Microsoft, Available on AppSource|
+|Italian (Italy)|it-IT|Microsoft, Available on AppSource|
+|Japanese (Japan)|jp-JP|Partner, Available on AppSource|
+|Korean (Korea)|ko-KR|Partner, Available on AppSource|
+|Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
+|Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
+|Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
+|Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
+|Polish (Poland)|pl-PL|Partner, Available on AppSource|
+|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource|
+|Portuguese (Portugal)|pt-PT|Partner, Available on AppSource|
+|Russian (Russia)|ru-RU|Microsoft, Available on AppSource|
+|Slovak (Slovakian)|sk-SK|Partner, Available on AppSource|
+|Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
+|Serbian (Serbia)|sr-latn-RS|Partner, Available on AppSource|
+|Swedish (Sweden)|sv-SE|Microsoft, Available on AppSource|
+|Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
+|Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
+|Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
 
 > [!NOTE]
 > Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
