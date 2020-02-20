@@ -80,7 +80,7 @@ To maximize productivity [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.
 It is important to know that language support requires translation of *platform* captions and *application* captions (UI). 
 Translated platform captions are provided by Microsoft for all supported languages. Application languages are provided by both Microsoft and partners, depending on the language.
 
-Application languages delivered by Microsoft are provided as language apps, included with the product as pre-published apps in the cloud version, that must be installed if needed. Partners can also provide application translation for any language, in which case, this application language app must be downloaded and installed from AppSource.
+Application languages delivered by Microsoft are provided as language apps, available on AppSource, that can be installed if needed. Partners can also provide application translation for any platform supported language. To use one of these languages the app publisher must be contacted through AppSource.
 
 This table gives an overview of supported languages and how  application languages are provided.
 
