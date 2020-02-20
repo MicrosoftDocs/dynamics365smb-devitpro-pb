@@ -108,14 +108,15 @@
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
 ### [Preparing Test Environments](administration/test-environment.md)
-### [Managing Major and Minor Updates](administration/tenant-admin-center-update-management.md)
-### [Preparing for Major Updates of Business Central Online](administration/tenant-admin-center-update-rollout-timelime.md)
+### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
+### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
+#### [Managing Updates](administration/tenant-admin-center-update-management.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 #### [Administration Center API](administration/administration-center-api.md)
 ### Automation
@@ -636,7 +637,7 @@
 ### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 ### [Migrating On-Premises Data to Business Central Online](administration/migrate-data.md)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-### [Major Update Rollout - What You Need to Know](administration/tenant-admin-center-update-rollout-timelime.md)
+### [Major Updates](administration/update-rollout-timelime.md)
 ## On-Premises
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)

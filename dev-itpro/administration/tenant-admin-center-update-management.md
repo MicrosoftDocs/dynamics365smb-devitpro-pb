@@ -13,11 +13,11 @@ ms.date: 02/20/2020
 ms.author: edupont
 ---
 
-# Managing Major and Minor Updates of Business Central Online
+# Managing Updates in the Business Central Admin Center
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly service updates. For more information, see [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
-Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify certain parameters of the timing of updates for each environment. You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product.  
+Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify certain parameters of the timing of updates for each environment. You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates of Business Central Online](update-rollout-timelime.md).  
 
 ## Set the update window for each environment
 
@@ -62,41 +62,10 @@ For updates for which the option is available for tenant administrators to sched
 
 Scheduling environment updates is *not* available for monthly service updates. For these, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.
 
-## Prepare for major updates with preview environments
-
-[!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
-
-### Practice and test
-
-Once you have the preview, start using it:
-
-1. Review the new functionality. Try it out, and begin training employees on the new features that are coming.
-
-2. Validate your extensions. Upload and Install your extensions into the sandbox environments created on the preview version and run through the functionality. Verify that the customization continues to work and is compatible with the new version. In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. then, if tests complete successfully, upload the app into your production environment, setting **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when you schedule upgrade of your production environment to Wave 1 2020 release once it becomes available.
-
-3.Test the quality. If you run into issues related to the preview, please provide the feedback following the steps outlined above.
-
-Finally, as always, if you have ideas for features you would like to see in future releases of Business Central, let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
-
-### Provide feedback on the preview
-
-We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
-
-1. Browse to [aka.ms/collaborate](https://aka.ms/collaborate)
-
-2. If you have not registered before, please complete the registration form to access Collaborate
-
-3. Choose Engagements, and then choose Join
-
-4. Under the **Ready! for Dynamics 365 Business Central program**, find **2020 Release Wave 1 Preview** in the list of available engagements, and choose **Join**
-
-Once you have joined the 2020 Release Wave 1 engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate.
-
-> [!TIP]
-> If you get stuck trying to join Collaborate, please submit a support request, and please be explicit about the error you’re getting.
-
 ## See also
 
+[Major Updates of Business Central Online](update-rollout-timelime.md)  
+[Prepare for major updates with preview environments](preview-environments.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

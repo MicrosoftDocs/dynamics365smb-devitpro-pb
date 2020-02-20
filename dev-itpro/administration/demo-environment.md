@@ -38,9 +38,9 @@ This type of environment can be useful for repeatable demos that rely on Office 
 
 [!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
-## Preview environments
+## Prepare for major updates with preview environments
 
-[!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
+About two months before a major update, you can try out new functionality in preview environments. For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
 
 ## Richer experiences
 
