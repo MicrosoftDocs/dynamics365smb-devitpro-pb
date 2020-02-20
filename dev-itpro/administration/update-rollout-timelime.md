@@ -119,6 +119,18 @@ Check the update window you defined for this environment. It is likely that the 
 
 For example, if you are changing the Scheduled update date to the current date at 6pm, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but around 1 AM on the next day.  
 
+### What is a realistic timeline for how I can prepare for the next major update?
+
+The following table describes the suggested milestones with example dates.
+
+|Milestone|Example date|Description|
+|---------|------------|-----------|
+|Previews are available|February 25, 2020|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
+|A few days before you know that the update is announced|March 30, 2020|You create a new sandbox environment based on your existing production environment and wait for it to be automatically updated to the new version.|
+|Interim sandbox is updated to the new version|April 2. 2020|The new sandbox is updated, and you can test your existing extensions and your production data against the new version.|
+|Update available in your region|April 8, 2020|you are notified that the update is available and hurry to set the relevant update dates in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].|
+|Preview sandboxes are deleted|May 1, 2020|30 days after the new major update is announced, the preview sandboxes are deleted.|
+
 ## See also
 
 [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md)  
