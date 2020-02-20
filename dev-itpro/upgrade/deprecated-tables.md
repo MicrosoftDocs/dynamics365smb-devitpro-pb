@@ -13,6 +13,8 @@ ms.author: solsen
 
 # Deprecated Tables
 
+In the latest version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], a number of tables have been deprecated in the current release. The following tables have been marked with an `ObsoleteState:Removed`.
+
 |Deprecated Table Name|New Table Name|
 |---------------------|--------------|
 |NAV App| Published Application|
@@ -22,3 +24,5 @@ ms.author: solsen
 |NAV App Tenant App| Installed Application|
 
 ## See Also
+
+[]()
