@@ -653,6 +653,8 @@
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
+## Deprecated Tables
+### [Deprecated Tables](upgrade/deprecated-tables.md)
 ## Deprecated Features
 ### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
