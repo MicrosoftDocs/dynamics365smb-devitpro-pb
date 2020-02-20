@@ -34,17 +34,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Package Cache Path|Sets the directory path where reference symbol packages are located.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
 |Incremental Build| Specifies whether a project, when it is built using Ctrl+Shift+B, Ctrl+F5, or F5, will reuse the last known tracked compilation which will enhance the compilation time significantly. For more information about project to project references, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md). <br> **Note:** Setting this to `true` will not do an end-to-end build, as it is depending on an already-compiled state. To get a clean, full build, this flag must be set to `false`. Default is `false`.|
-|defaultConfigurationName|The default setting for resolving a server name. If this is set then all scenarios that need resolving a server name will use this configuration setting. For example, using the **Go to definition** option ... Another example is for **Download symbols**; if there are multiple debug configurations, the ...|
-
-<!--
-Example:
-a. Go to defiintion
-A user has multiple debug configurations and in his code issues a gotodefinition request on a symbol.
-If nothing has been set for the  al.defaultConfigurationName a picker will be shown to select a configuration and from that moment forward that configuration will be used to resolve the server name and possible provide symbolic information in a DAL file.
-If the user wishes to change the default configuration it can do so by editing the configuration settings for the al extension and modifying the al.defaultConfigurationName with the name of the configuration it wishes to use.
-b. Download symbols
-If a symbol download is requested and there are multiple debug configurations, the same al.defaultConfigurationName configuration will be used to resolve the server name and download symbols. If that is not set a a picker wilo be shown to select the desider configuration.|
--->
+|DefaultConfigurationName|Specifies the setting for resolving a server name. If this is set then for all scenarios that need resolving a server name will use this configuration setting.<br><br> For example, using the **Go to definition** option, if this server name is not specified, a dropdown will be displayed to select a configuration from, which will be used going forward to resolve the server name and possibly provide symbolic information in the DAL file. To change that, specify the `DefaultConfigurationName`setting.<br> Another example is **Download symbols**; if there are multiple debug configurations, the specified `DefaultConfigurationName` will be used to resolve the server name and download symbols. If the server name is not specified, a dropdown will be displayed to select a configuration from.|
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
