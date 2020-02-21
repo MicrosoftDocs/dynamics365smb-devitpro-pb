@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 02/20/2020
+ms.date: 02/21/2020
 ms.author: edupont
 ---
 
@@ -27,7 +27,7 @@ Once you have the preview, start using it:
 
     Upload and install your extensions into the sandbox environments created on the preview version and run through the functionality. Verify that the customization continues to work and is compatible with the new version.  
 
-    In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. then, if tests complete successfully, upload the app into your production environment, setting **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when you schedule upgrade of your production environment to Wave 1 2020 release once it becomes available.
+    In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when you schedule upgrade of your production environment to Wave 1 2020 release once it becomes available.
 
 3. Test the quality. If you run into issues related to the preview, please provide the feedback following the steps outlined above.
 
@@ -58,4 +58,4 @@ Once you have joined the 2020 Release Wave 1 engagement, you can submit your fee
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Register on Collaborate](../readiness/readiness-add-on-apps-getting-you-started.md#register-on-collaborate)  
