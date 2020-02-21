@@ -11,25 +11,22 @@ author: jswymer
 ---
 # Displaying Lists in an Indented Hierarchy
 
-This article explains how to display lists in an indented hierarchy, where related records are arranged in a parent-child type structure.
+This article explains displays lists so that some records are indented comped to other records. Indenting records can help organize the list and make it more readable for the user.
 
-There are two display options that you can set up for indented hierarchy lists. You can display a static hierarchy or a tree view hierarchy. A tree view hierarchy displays records in a parent-child structure, where users can be expand and collapse parent records to show and hide child records.
+There are two kinds of indented hierarchy lists: fixed and tree-view. In a fixed hierarchy, indented records are always shown. In a tree view hierarchy, records appear in a parent-child structure, like the fixed hierarchy. The difference is that users can expand and collapse parent records to show and hide child records.
 
 ## Sample table and page
 
-To explain indented hierarchy lists, this article uses a simple table and page as an example. If you want to see a more detailed implementation, take a look at the source code for **Chart of Accounts** page in the base application.
+To demonstrate how indented hierarchy works, we'll use a basic table and page. For a more detailed implementation, look at the code for **Chart of Accounts** page in the base application.
 
-1. Create an editable table that has the following fields:
+1. Create the following table object:
 
     ```
     table 50100 MyTable
     {
-    
         fields
-        {
-            DataClassification = ToBeClassified;
-        
-            field(1; Number; Integer)
+        {      
+            field(1; Number; Code[10])
             {
                 DataClassification = ToBeClassified;
         
@@ -39,7 +36,7 @@ To explain indented hierarchy lists, this article uses a simple table and page a
                 DataClassification = ToBeClassified;
         
             }
-            Field(3; Indent; Integer)
+            field(3; Indent; Integer)
             {
                 DataClassification = ToBeClassified;
         
@@ -57,7 +54,7 @@ To explain indented hierarchy lists, this article uses a simple table and page a
 
 2. Create a page that displays the fields of the table.
 
-    Typically, you would not display the **Indent** field because this is strictly used for layout purposes.
+    Typically, you wouldn't display the **Indent** field because it's mainly for layout purposes.
 
     ```
     page 50100 MyPage
@@ -72,7 +69,7 @@ To explain indented hierarchy lists, this article uses a simple table and page a
         {
             area(Content)
             {
-                repeater(Test)
+                repeater(Control1)
                 {
     
                     field(Number; Number)
@@ -98,13 +95,13 @@ To explain indented hierarchy lists, this article uses a simple table and page a
 
     Be sure to set the **Indent** field.
 
-## Set up static indented hierarchy list
+## Set up fixed indented hierarchy list
 
-Setting up the static indented hierarchy list involves two main properties: IndentColumn property and IndentationControls property.
+Setting up the fixed indented hierarchy involves configuring two main properties on the page object: IndentColumn and IndentationControls.
 
-- The IndentColumn property controls the indentation, determining which records get indented and by how much.  This property can be must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
+- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls the indentation, determining which records get indented and by how much. The property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
 
-- The IndentationControls property specifies which column in the list gets indented.
+- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
 
 Working with the sample page, add the IndentationColumn and IndentationControls to the repeater of the page as shown:  
 
@@ -117,22 +114,71 @@ repeater(Control1)
 
 ```
 
-This will display a list that is indents each subsequent record according to the value of the **Indent** field.
+Now, the code will indent each record based on the value of the **Indent** field.
 
+```
+repeater(Control1)
+{
+    IndentationColumn = Indent;
+    IndentationControls = Name;
+    ...
+
+```
+
+```
+page 50100 MyPage
+{
+    PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Lists;
+    SourceTable = MyTable;
+    Editable = true;
+
+    layout
+    {
+        area(Content)
+        {
+            repeater(Control1)
+            {
+                IndentationColumn = Indent; // IndentationColumn = IndentVariable;
+                IndentationControls = Name;
+
+                field(Number; Number)
+                {
+                }
+                field(Name; Name)
+                {
+                }
+                field(Indent; Indent)
+                {
+                }
+            }
+        }
+    }
+
+    //trigger OnAfterGetRecord()
+        //begin
+          //IndentVariable := Indent;
+        //end;
+    
+        //var
+           //IndentVariable: Integer;
+}  
+```
 
 ## Setting up a tree-view hierarchy
 
-A tree-view hierarchy is similar to the static indented hierarchy, except that records that are indented   
+A tree-view hierarchy is similar to the fixed indented hierarchy, except that records that are indented.
 
-Setting up the tree-view hierarchy involves three main properties: IndentColumn, ShowsAsTree , and TreeInitialState.
+Setting up the tree-view hierarchy involves three main properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
-- Like the static indented hierarchy, the IndentColumn property controls the indentation, determining which records get indented and how they are structured. This property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable. 
-- The ShowsAsTree property enables the tree view.
-- The TreeInitialState property, which is optional, specifies whether the list is collapsed or expanded when the page opens.
+- Like in fixed indented hierarchy, the [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) is an integer data type field or variable that determines which records get indented and by how much.
+- The [ShowAsTree Property](properties/devenv-showastree-property.md) enables the tree view.
+- The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.
 
-With the tree-view, starting from the top of the page, subsequent records that have a indent value that that is greater that the row above it, will appear d above, then it appears as a child to that record. 
+With the tree-view, records that have an indent value that is greater than the row above it, appear as a child to the above record.
 
-For example: 
+Working with the sample page, add the ndentationColumn, ShowAsTree, and TreeInitialState to the repeater of the page as shown: 
 
 ```
 repeater(Control1)
@@ -141,19 +187,7 @@ repeater(Control1)
     ShowAsTree = true;
     TreeInitialState = CollapseAll;
 
-    field(Number; Number)
-    {
-        ApplicationArea = All;
-    }
-
-    field(Name; Name)
-    {
-        ApplicationArea = All;
-    }
-    field(Indent; Indent)
-    {
-        ApplicationArea = All;
-    }
+   ...
 }
 
 ```
@@ -163,4 +197,4 @@ repeater(Control1)
 [IndentationColumn Property](properties/devenv-indentationcolumn-property.md)  
 [IndentationControl Property](properties/devenv-indentationcontrols-property.md)  
 [ShowAsTree Property](properties/devenv-showastree-property.md)  
-[TreeInitialState Property](properties/devenv-treeinitialstate-property.md)  
+[TreeInitialState Property](properties/devenv-treeinitialstate-property.md)

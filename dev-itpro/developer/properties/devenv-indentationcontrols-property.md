@@ -7,9 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e2e75702-bc56-4c5b-a3b9-ac7d223808c4
-caps.latest.revision: 15
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 # IndentationControls Property
 
@@ -28,15 +26,14 @@ IndentationControls = Field1[, Field2];
 
 The **IndentationControls** property lets you choose which columns are indented under a repeater control on a list page.
 
-To enable an indented hieracrhy, in addition to setting **IndentationControls** property, you must also set the **IndentationColumn** property. This property specifies an integer data type field in the source table that is used to control the indentation of records in the list. 
+To enable an indented hierarchy, you must also set the **IndentationColumn** property. This property specifies field in the source table that controls which records are indented and by how much. 
 
 When using this property, consider the following behavior:
 
-- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. You can specify more then one column, however, in the UI, the columns may not appear as expected.
-- You can only indent columns of the datatype text.
-- When indentation is specified, it is no longer possible to use sorting on the columns in the repeater control.  
+- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. You can specify more than one column, however, in the UI, the columns may not appear as expected.
+- When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - This property is ignored if the **ShowAsTree** property on the repeater is set to **true**.
-- Right-aligned data in columns, such as integers will not appear as indented.
+- Right-aligned data in columns, such as the integer data type, won't appear as indented.
 
 ## Example
 

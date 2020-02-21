@@ -21,7 +21,7 @@ TreeInitialState = CollapseAll;
   
 ## Applies To  
   
-- Repeater controls on list page types on which the **ShowAsTree** property is set to **true**. 
+- Repeater controls on list page types on which the **ShowAsTree** property is set to **true**.
   
 ## Property Value
 
@@ -29,7 +29,7 @@ TreeInitialState = CollapseAll;
 
 ## Remarks
 
-In the client, users can change whether a list opens collapsed or expanded by selecting the **Toggle Expand/Collapse All** on the first column heading of the page. If they want to revert back to the default setting for the page, they clear personalization of the page.
+Users can change whether a list opens collapsed or expanded. To change behavior, they select the **Toggle Expand/Collapse All** on the first column heading in the list. If they want to revert back to the default setting, they clear personalization of the page.
 
 ## Example
 
@@ -48,7 +48,6 @@ repeater(Control1)
     ...
 
 ```
-
 
 ## See Also
 

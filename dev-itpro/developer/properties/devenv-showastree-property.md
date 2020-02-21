@@ -11,7 +11,7 @@ author: jswymer
 ---
 # ShowAsTree Property
 
-Sets a list page to display records (rows) in an indented hierarchy that can be collapsed and expanded. This is commonly referred to as the *tree view*.
+Sets a list page to display records (rows) in an indented hierarchy that can be collapsed and expanded. This structure is commonly referred to as the *tree view*.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ ShowAsTree = true;
 
 ## Remarks
 
-To enable the tree view, in addition to setting **ShowAsTree** property, you must also set the **IndentationColumn** property. This property specifies an integer data type field in the source table. This field is used to control the indentation of records in the list.
+To enable the tree view, you must also set the **IndentationColumn** property. This property specifies an integer data type field in the source table or variable. This field controls which records are indented and by how much. 
 
 Optionally, you can set the **TreeInitialState** property to specify whether the list displays as collapsed or expanded when the list page opens in the client.
 
