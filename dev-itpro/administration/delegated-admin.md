@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 01/17/2020
+ms.date: 02/12/2020
 ms.author: edupont
 ---
 
@@ -44,6 +44,9 @@ The following tasks are *not* available to the delegated administrator:
     Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.
 - Change the experience to Premium
 - Install apps from AppSource
+- Use the **Cloud Migration Setup** assisted setup guide to migrate data from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
+
+    Instead, a user who is assigned the SUPER permission set in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] can run the assisted setup guide.
 
 ## Managing delegated permissions as a partner
 
