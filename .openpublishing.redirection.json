@@ -5139,6 +5139,11 @@
     "source_path": "dev-itpro/deployment/embed-app-ecosystem.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/deployment/app-components",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/administration/data-replication-intelligent-cloud.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migrate-data",
+    "redirect_document_id": false
    }
   ]
 }
