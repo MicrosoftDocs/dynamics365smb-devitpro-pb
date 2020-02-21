@@ -164,7 +164,7 @@ var
 begin 
     String := Text000;  
     Where := '<';  
-    Which := 'This';  
+    Which := 'This ';  
     NewString := DELCHR(String, Where, Which);  
     MESSAGE(Text001, String,NewString);  
 end;
