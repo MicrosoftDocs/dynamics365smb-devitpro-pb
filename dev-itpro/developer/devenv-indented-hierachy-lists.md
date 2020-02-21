@@ -11,13 +11,11 @@ author: jswymer
 ---
 # Displaying Lists in an Indented Hierarchy
 
-T# Displaying Lists in an Indented Hierarchy
-
 This article explains how to indent records in a list. By indenting specific records, you display records in a parent-child structure. This structure can help organize the list and make it more readable for the user.
 
 There are two kinds of indented hierarchy lists: fixed and tree. In a fixed hierarchy, all indented (child) records are appear. In a tree hierarchy, users can collapse and expand parent records to show and hide child records.
 
-## Sample table and page
+#### Sample table and page
 
 To demonstrate how indented hierarchy works, we'll use a basic table and page. For a more detailed implementation, look at the code for **Chart of Accounts** page in the base application.
 
