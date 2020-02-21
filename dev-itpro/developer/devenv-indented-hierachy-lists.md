@@ -150,7 +150,7 @@ page 50100 MyPage
         //begin
           //IndentVariable := Indent;
         //end;
-    
+
         //var
            //IndentVariable: Integer;
 }  
