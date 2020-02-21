@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 02/20/2020
+ms.date: 02/21/2020
 ms.author: edupont
 ---
 
@@ -45,18 +45,18 @@ When the update becomes available for an environment, email notifications are se
 
 Starting from the official release date, Microsoft begins scheduling updates. Scheduling does not occur for all environments around the world simultaneously. During scheduling, Microsoft sets a default update date for each environment. You can see this date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] in the **Scheduled update date** field in the **Version Management** section of the environment details page.  
 
-If you do not change the default scheduled update date, your environment will be updated on any day between the scheduled update date and the date shown as the last possible update date. At any point of time during this period you can change the update date, including changing it to the current date, and that date will be honored. In some cases, Microsoft can suspend or postpone all updates beyond this last possible date. Refer to the ## Postponed updates section to find out what happens in such cases. 
+If you do not change the default scheduled update date, your environment will be updated on any day between the scheduled update date and the date shown as the last possible update date. At any point of time during this period you can change the update date, including changing it to the current date, and that date will be honored. In some cases, Microsoft can suspend or postpone all updates beyond this last possible date. For more information about what happens in such cases, see [Postponed updates](#postponed-updates). 
 
-When the scheduled update date for your environment comes, the update is triggered automatically within the update time window that you have specified for it. All users will be disconnected from this environment, and all login attempts during the update will be blocked with the message `Service is under maintenance`. We strongly encourage that you set the update window for all production environments to make sure that updates does not start during your business hours. [ADD LINK FOR HOW TO SET THE UPDATE WINDOW] 
+When the scheduled update date for your environment comes, the update is triggered automatically within the update time window that you have specified for it. All users will be disconnected from this environment, and all login attempts during the update will be blocked with the message `Service is under maintenance`. We strongly encourage that you set the update window for all production environments to make sure that updates does not start during your business hours. For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment). 
 
 When the update date you specified for your environment comes, the update is triggered within the first available update time window you have specified for that environment.  
 
 > [!NOTE]
 > When you select a current date for your update, but the update window defined for this environment has already passed, the update will start within that time window, but on the following day to the one you defined for your environment. For example, if you are changing the Scheduled update date to the current date at 6pm, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but around 1 AM on the next day.  
 
-The environments which failed to update due to any issue (for example, per-tenant extension compatibility issues, AppSource app compatibility issues or internal update issues) will be automatically restored to the original application version and within one hour automatically rescheduled for another update attempt in 7 days. You can change the date to an earlier date, including the current date if you consider the issue resolved and want to attempt the environment update again.  
+The environments which failed to update due to any issue, such as per-tenant extension compatibility issues, AppSource app compatibility issues, or internal update issues, will be automatically restored to the original application version, and within one hour the environments are automatically rescheduled for new update attempts for seven days. You can change the date to an earlier date, including the current date if you consider the issue resolved and want to attempt the environment update again.  
 
-In some circumstances, Microsoft may not be able to perform the update on the selected date. In such cases, you will receive an email notification, and your environment will be automatically rescheduled to be updated 7 days later. You can change that date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to any other allowed date, including the current date.
+In some circumstances, Microsoft may not be able to perform the update on the selected date. In such cases, you will receive an email notification, and your environment will be automatically rescheduled to be updated seven days later. You can change that date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to any other allowed date, including the current date.
 
 ## Delayed scheduling of updates
 
@@ -74,7 +74,7 @@ In some cases, even after the update is available in your area, you may still no
 
     Before rolling out the next major update, as well as during the update, Microsoft routinely checks per-tenant extensions in all existing environments for compatibility with the next major update. When compatibility issues with the upcoming version are detected, email notifications that describe the detected issues are sent to the notification recipients.  
 
-    If you discover any such issues, apply the changes to your solution as usual using Visual Studio Code, and test the new app in a sandbox environment that runs on the new major version (either in preview or officially available). If tests complete successfully, upload the new app version into your production environment in the ***Extension Management** page, setting the **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when your environment is updated. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).  
+    If you discover any such issues, apply the changes to your solution as usual using Visual Studio Code, and test the new app in a sandbox environment that runs on the new major version (either in preview or officially available). If tests complete successfully, upload the new app version into your production environment in the **Extension Management** page, setting the **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when your environment is updated. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).  
 
 - The AppSource apps that are installed in your environment are not yet available for the next major version of Business Central[!INCLUDE [prodshort](../developer/includes/prodshort.md)]. While the AppSource apps are normally kept up-to-date by the partners who own them, it can happen that a particular app needs more time to prepare for the next major update and is not yet available for it. In this situation, please contact the app owner to understand their availability plans.  
 
@@ -86,7 +86,7 @@ Not knowing the nature of the issue and the solution in advance, we cannot predi
 
 If it happens that you schedule the update of your environment on a date when the updates are postponed, your update will not be performed. Microsoft will not send separate notification about this. You can reschedule the update to a later date, or you can wait until you have received the email notification that the updates have been resumed and schedule the update at that time. All environments that missed their scheduled update date will be rescheduled automatically to run the update in 7 days from the date the updates were resumed, but you can change that date to any other allowed date, including the current date.   
 
-If you did not explicitly set a date for your environment update in #TAC, this environment will be picked up for updating automatically, shortly after the updates have been resumed. The update will of course still be executed within the specified update time window.   
+If you did not explicitly set a date for your environment update in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], this environment will be picked up for updating automatically, shortly after the updates have been resumed. The update will of course still be executed within the specified update time window.   
 
 <!--### Prepare for major updates with preview environments
 
@@ -100,7 +100,7 @@ If you change the update date to the current date, the update will start within 
 
 If any errors are detected during the update, you will receive email notification that describes the detected issues.  
 
-Any environments that fail to update due to per-tenant extension compatibility issues or any other issues will be automatically restored to the original application version. Within one hour, they are automatically rescheduled for another update attempt. Scheduled update date is again set to 7 days in the future. If you address the compatibility issues earlier, you can change the date to an earlier date, including the current date. This pattern repeats until your environment is updated successfully.   
+Any environments that fail to update due to per-tenant extension compatibility issues or any other issues will be automatically restored to the original application version. Within one hour, they are automatically rescheduled for another update attempt. Scheduled update date is again set to seven days in the future. If you address the compatibility issues earlier, you can change the date to an earlier date, including the current date. This pattern repeats until your environment is updated successfully.   
 
 ### Overview of the timeline for preparing for the next major update
 
