@@ -29,10 +29,10 @@ Once you have the preview, start using it:
 
     In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when you schedule upgrade of your production environment to Wave 1 2020 release once it becomes available.
 
-3. Test the quality. If you run into issues related to the preview, please provide feedback on Collaborate.
+3. Test the quality. If you run into issues related to the preview, please provide [feedback on Collaborate](#provide-feedback-on-the-preview).
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
-<!--
+
 ## Provide feedback on the preview
 
 We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
@@ -41,15 +41,15 @@ We need your feedback on the preview! Let us know about your experiences with th
 
 2. If you have not registered before, please complete the registration form to access Collaborate
 
-3. Choose Engagements, and then choose Join
+3. Choose **Engagements**, and then choose **Join**
 
-4. Under the **Ready! for Dynamics 365 Business Central program**, find **2020 Release Wave 1 Preview** in the list of available engagements, and choose **Join**
+4. Under the **Ready! for Dynamics 365 Business Central program**, find **2020 release wave 1 Preview** in the list of available engagements, and choose **Join**
 
-Once you have joined the 2020 Release Wave 1 engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate.
+Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate.
 
 > [!TIP]
 > If you get stuck trying to join Collaborate, please submit a support request, and please be explicit about the error you’re getting.
--->
+
 ## See also
 
 [Major Updates of Business Central Online](update-rollout-timelime.md)  

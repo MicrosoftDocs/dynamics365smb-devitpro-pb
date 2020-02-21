@@ -80,27 +80,33 @@ In some cases, even after the update is available in your area, you may still no
 
 ## Postponed updates
 
-In critical circumstances, Microsoft can decide to postpone the rollout of the updates, such as if a critical issue is discovered in the new major version that is being rolled out. While Microsoft is working on addressing the issue, the updates will be postponed. You will receive email notification about this, and you will see the notification displayed in the #[!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. The **Version Management** section for each environment will show an update rollout state as Postponed.  
+In critical circumstances, Microsoft can decide to postpone the rollout of the updates, such as if a critical issue is discovered in the new major version that is being rolled out. While Microsoft is working on addressing the issue, the updates will be postponed. You will receive email notification about this, and you will see the notification displayed in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. The **Version Management** section for each environment will show the update rollout state as *Postponed*.  
 
 Not knowing the nature of the issue and the solution in advance, we cannot predict when the updates will resume again. This means that neither the email nor the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] will contain the information about the expected resume date. Microsoft will be actively working on resuming updates as a matter of highest priority once the issue is addressed. You will receive another email notification when updates have been resumed. The last available date will be prolonged by the number of days the update was postponed.  
 
-If it happens that you schedule the update of your environment on a date when the updates are postponed, your update will not be performed. Microsoft will not send separate notification about this. You can reschedule the update to a later date, or you can wait until you have received the email notification that the updates have been resumed and schedule the update at that time. All environments that missed their scheduled update date will be rescheduled automatically to run the update in 7 days from the date the updates were resumed, but you can change that date to any other allowed date, including the current date.   
+If it happens that you schedule the update of your environment on a date when the updates are postponed, your update will not be performed. Microsoft will not send separate notification about this. You can reschedule the update to a later date, or you can wait until you have received the email notification that the updates have been resumed and schedule the update at that time. All environments that missed their scheduled update date will be rescheduled automatically to run the update within seven days from the date the updates were resumed, but you can change that date to any other allowed date, including the current date.  
 
-If you did not explicitly set a date for your environment update in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], this environment will be picked up for updating automatically, shortly after the updates have been resumed. The update will of course still be executed within the specified update time window.   
+If you did not explicitly set a date for your environment update in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], this environment will be picked up for updating automatically, shortly after the updates have been resumed. The update will of course still be executed within the specified update time window.  
 
-<!--### Prepare for major updates with preview environments
+## Prepare, test, and learn before the major update
 
-[!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]-->
+You can prepare yourself, users, and any customizations by trying out the new version before your production environment is updated.  You can do this in two different ways as explained in the following sections.  
 
-## Prepare for major updates just before the production environment is updated
+### Prepare for major updates with preview environments
 
-Starting on the date when you are notified that the new major update is available, you can test the new version by using a sandbox environment that you then schedule to be updated. Start by copying your production environment into a sandbox on the same version as your production environment. All newly created environments are automatically included in the update process within one hour, so you will receive email notification that the update is available, and you will be able to schedule the newly created sandbox for update within 1 hour after it was created. By default, the newly created environments are scheduled to run the update in 7 days from the date they were created, but you can change that date to any other allowed date, including the current date.  
+[!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
+
+For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
+
+### Prepare for major updates just before the production environment is updated
+
+Starting on the date when you are notified that the new major update is available, you can test the new version by using a sandbox environment that you then schedule to be updated. Start by copying your production environment into a sandbox on the same version as your production environment. All newly created environments are automatically included in the update process within one hour, so you will receive email notification that the update is available, and you will be able to schedule the newly created sandbox for update within one hour after it was created. By default, the newly created environments are scheduled to run the update within seven days from the date they were created, but you can change that date to any other allowed date, including the current date.  
 
 If you change the update date to the current date, the update will start within the closest available update time window you specified for the environment. If you want to start the update of your sandbox environment immediately, you can set the update time window for this sandbox environment to be 24 hours.  
 
 If any errors are detected during the update, you will receive email notification that describes the detected issues.  
 
-Any environments that fail to update due to per-tenant extension compatibility issues or any other issues will be automatically restored to the original application version. Within one hour, they are automatically rescheduled for another update attempt. Scheduled update date is again set to seven days in the future. If you address the compatibility issues earlier, you can change the date to an earlier date, including the current date. This pattern repeats until your environment is updated successfully.   
+Any environments that fail to update due to per-tenant extension compatibility issues or any other issues will be automatically restored to the original application version. Within one hour, they are automatically rescheduled for another update attempt. Scheduled update date is again set to seven days in the future. If you address the compatibility issues earlier, you can change the date to an earlier date, including the current date. This pattern repeats until your environment is updated successfully.  
 
 ### Overview of the timeline for preparing for the next major update
 
