@@ -1,6 +1,6 @@
 ---
 title: "Version should not be specified for internal assemblies."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/21/2020
 ms.reviewer: na

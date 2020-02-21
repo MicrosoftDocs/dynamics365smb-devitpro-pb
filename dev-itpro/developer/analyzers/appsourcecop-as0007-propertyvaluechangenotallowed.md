@@ -1,6 +1,6 @@
 ---
 title: "Properties must not change value, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/21/2020
 ms.reviewer: na

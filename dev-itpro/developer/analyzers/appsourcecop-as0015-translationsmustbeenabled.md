@@ -1,6 +1,6 @@
 ---
 title: "Please enable the TranslationFile feature in the app.json file for your project"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/21/2020
 ms.reviewer: na

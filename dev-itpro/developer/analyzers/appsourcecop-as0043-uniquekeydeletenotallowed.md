@@ -1,6 +1,6 @@
 ---
 title: "Unique keys must not be deleted"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/21/2020
 ms.reviewer: na

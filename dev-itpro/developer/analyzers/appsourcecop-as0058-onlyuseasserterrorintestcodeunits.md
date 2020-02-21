@@ -1,6 +1,6 @@
 ---
 title: "Only use AssertError in Test Codeunits"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/21/2020
 ms.reviewer: na
