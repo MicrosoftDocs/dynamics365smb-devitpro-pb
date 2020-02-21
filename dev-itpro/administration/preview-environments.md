@@ -58,4 +58,4 @@ Once you have joined the 2020 Release Wave 1 engagement, you can submit your fee
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Register on Collaborate](../readiness/readiness-add-on-apps-getting-you-started.md#register-on-collaborate)  
+[Register on Collaborate](../developer/readiness/readiness-add-on-apps-getting-you-started.md#register-on-collaborate)  
