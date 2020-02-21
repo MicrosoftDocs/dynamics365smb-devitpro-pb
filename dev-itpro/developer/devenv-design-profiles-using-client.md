@@ -16,15 +16,21 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-Using the client to create and modify profiles can be a useful alternative to writing AL code directly in Visual Studio Code, because you are working with the user interface just as the users would. This is especially advantageous for consultants, application administrators, and less technical users. Profiles that are created in the client are referred to as **\(user-created\)** profiles and are indicated as such in **Profiles** page in the client. A consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. In contrast, profiles and page customizations that are extension-based are published to the application server instance and available for installation on all tenants.
+Besides creating profiles and page customizations in AL from Visual Studio, you can use the client. The client is a useful alternative, because you work with the user interface just as the users would. This method is especially advantageous for consultants, application administrators, and less technical users.
 
-However, you can export user-created profiles and page customizations from the client to a profile package, which is a .zip file that includes profiles and page customizations as AL code. The profile package is essentially includes all profile customizations that are not introduced by extensions. Once you have the profile package, you can:
+## Overview
 
-- Import the profile package as-is to another tenant
+Profiles that are created in the client are marked as **\(user-created\)** profiles. **\(User-created\)** profiles and page customizations essentially include all modifications that are not introduced by extensions.
 
-- Extract the files in the package and make additional modifications. Then, include the modified files in a zip and import to a tenant.
+A consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. Extension-based profiles and page customizations, by contrast, are available for installation on all tenants. Luckily, you can export user-created profiles and page customizations from the client. Then, you can import them to another tenant.
 
-- Extract the files and include them in a Visual Studio Code project. Then, compile them into an extension package that can be published and available to all tenants.
+User-created profiles and page customizations are exported to a *profile package*. A profile package is a .zip file that includes the user-created profiles and page customizations as AL code.
+
+- Make additional modifications before importing to a tenant.
+
+- Use the files as the starting point for extension-based profiles. 
+
+    Create an AL project in a Visual Studio Code project. Then, compile them into an extension package that can be published and available to all tenants.
 
 ## Exporting profiles
 
