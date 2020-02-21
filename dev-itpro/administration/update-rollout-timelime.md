@@ -15,7 +15,7 @@ ms.author: edupont
 
 # Major Updates of Business Central Online
 
-This article provides an overview of what you need to know about the rollout of a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. It includes key dates, actions you need take, and answers some common questions.  
+This article provides an overview of what you need to know about how a major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update rolls out. It includes key dates, actions you need take, and answers some common questions.  
 
 ## Timelines for major updates
 
