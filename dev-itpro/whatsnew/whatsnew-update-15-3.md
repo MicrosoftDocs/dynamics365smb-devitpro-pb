@@ -22,7 +22,7 @@ Would you like to know what has changed in update 15.3? Below you'll find an ove
 -	[Skip empty lines in the Account Schedule report](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/skip-empty-lines-account-schedule-report)  
 -	[MICR fonts available in Business Central online](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/micr-fonts-business-central-online)  
 -	[New events to unblock printer extensions in Business Central online](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/new-events-unblock-printer-extensions-business-central-online)   
-- [Bookmarking a report](https://docs.microsoft.com/da-dk/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-links-navigation-menu)
+- [Bookmarking a report](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-links-navigation-menu)
 - [Sign-in attempt telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/sign-in-attempt-telemetry-azure-application-insights-partners)
 
 
