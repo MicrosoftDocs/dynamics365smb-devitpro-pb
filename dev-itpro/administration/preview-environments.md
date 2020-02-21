@@ -32,7 +32,7 @@ Once you have the preview, start using it:
 3. Test the quality. If you run into issues related to the preview, please provide feedback on Collaborate.
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
-<!-->
+<!--
 ## Provide feedback on the preview
 
 We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
