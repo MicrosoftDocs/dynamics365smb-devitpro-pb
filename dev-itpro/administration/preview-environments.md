@@ -29,11 +29,11 @@ Once you have the preview, start using it:
 
     In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when you schedule upgrade of your production environment to Wave 1 2020 release once it becomes available.
 
-3. Test the quality. If you run into issues related to the preview, please provide the feedback following the steps outlined above.
+3. Test the quality. If you run into issues related to the preview, please provide feedback on Collaborate.
 
-Finally, as always, if you have ideas for features you would like to see in future releases of Business Central, let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
-
-### Provide feedback on the preview
+Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
+<!-->
+## Provide feedback on the preview
 
 We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
 
@@ -49,7 +49,7 @@ Once you have joined the 2020 Release Wave 1 engagement, you can submit your fee
 
 > [!TIP]
 > If you get stuck trying to join Collaborate, please submit a support request, and please be explicit about the error you’re getting.
-
+-->
 ## See also
 
 [Major Updates of Business Central Online](update-rollout-timelime.md)  
