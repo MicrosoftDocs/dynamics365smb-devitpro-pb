@@ -18,11 +18,15 @@ ms.author: jswymer
 
 Besides creating profiles and page customizations in AL from Visual Studio, you can use the client. The client is a useful alternative, because you work with the user interface just as the users would. This method is especially advantageous for consultants, application administrators, and less technical users.
 
-## Overview
+Profiles that are created in the client are marked as **\(user-created\)** profiles. **\(User-created\)** profiles and page customizations essentially include all modifications that are not made directly by extensions.
 
-Profiles that are created in the client are marked as **\(user-created\)** profiles. **\(User-created\)** profiles and page customizations essentially include all modifications that are not introduced by extensions.
+For information about using the client to create and modify profiles and page customizations, see [Create Profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile) and [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
 
-A consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. Extension-based profiles and page customizations, by contrast, are available for installation on all tenants. Luckily, you can export user-created profiles and page customizations from the client. Then, you can import them to another tenant.
+## Export and import user-created profiles and page customization
+
+A consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. Extension-based profiles and page customizations, by contrast, are available for installation on all tenants. However, you can export user-created profiles and page customizations from the client. Then, you can import them to another tenant.
+
+
 
 User-created profiles and page customizations are exported to a *profile package*. A profile package is a .zip file that includes the user-created profiles and page customizations as AL code.
 
@@ -47,7 +51,7 @@ A profile package contains the following files:
 - app.json file
 - profile.json file.
 - Profile._<profile ID>_.al file for each user-created profile
-- ProfileExtension.
+- ProfileExtension._<profile ID>_.al 
 - PageCustomization._[page name]_.Configuration\<number\>.al file for each page customization
 
 
