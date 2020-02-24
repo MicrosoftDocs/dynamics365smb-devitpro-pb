@@ -30,7 +30,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Canada|Microsoft|Available|
 |Colombia|Partner|2020 release wave 1|
 |Croatia|Partner|2020 release wave 1|
-|Czechia **(on-premises only)**|Microsoft|Available<br>Planned for cloud 2019 release wave 2, Q1 2020|
+|Czechia|Microsoft|Available|
 |Denmark|Microsoft|Available|
 |Estonia|Partner|Available|
 |Finland|Microsoft|Available|
