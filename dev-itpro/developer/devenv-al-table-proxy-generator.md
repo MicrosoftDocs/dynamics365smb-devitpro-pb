@@ -25,7 +25,7 @@ The tool is available with the **AL Language** extension and the **altpgen.exe**
 
 The syntax for the generator is the following:
 
-```powershell
+```cmd
 .\altpgen
 -Project
 -PackageCachePath
