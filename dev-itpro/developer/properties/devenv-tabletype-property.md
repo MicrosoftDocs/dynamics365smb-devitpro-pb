@@ -40,6 +40,7 @@ TableType = CDS;
 <!-- For more information, see [Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV](Introduction-to-Dynamics-CRM-Integration-Customization-in-Dynamics-NAV.md).  
  -->
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)
 <!--  [External Tables](External-Tables.md)   
  [Table Designer](uiref/-$-S_2102-Table-Designer-$-.md)  -->
