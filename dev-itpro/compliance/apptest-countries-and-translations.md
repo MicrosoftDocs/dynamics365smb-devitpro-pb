@@ -23,29 +23,12 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 |Country/Region|Localized by|Availability|
 |-----------|---------|------------|
-|**Africa**|||
-|South Africa|Partner|Available|
-|**Americas**|||
-|Canada|Microsoft|Available|
-|Colombia|Partner|2020 release wave 1|
-|Mexico|Microsoft|Available|
-|Peru|Partner|2020 release wave 1|
-|United States|Microsoft|Available|
-|**Asia**|||
-|Hong Kong SAR|Partner|Available|
-|Indonesia|Partner|Available|
-|Japan|Partner|Available|
-|Malaysia|Partner|Available|
-|Philippines|Partner|Available|
-|Singapore|Partner|Available|
-|South Korea|Partner|Available|
-|Taiwan|Partner|Available|
-|Thailand|Partner|Available|
-|United Arab Emirates|Partner|Available|
-|Vietnam|Partner|Available|
-|**Europe**|||
+|Australia|Microsoft|Available|
 |Austria|Microsoft|Available|
 |Belgium|Microsoft|Available|
+|Brazil|Partner|2020 release wave 2|
+|Canada|Microsoft|Available|
+|Colombia|Partner|2020 release wave 1|
 |Croatia|Partner|2020 release wave 1|
 |Czechia **(on-premises only)**|Microsoft|Available<br>Planned for cloud 2019 release wave 2, Q1 2020|
 |Denmark|Microsoft|Available|
@@ -53,24 +36,40 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Finland|Microsoft|Available|
 |France|Microsoft|Available|
 |Germany|Microsoft|Available|
+|Hong Kong SAR|Partner|Available|
 |Hungary|Partner|2020 release wave 1|
 |Iceland|Microsoft|Available|
+|India|Partner|2020 release wave 2|
+|Indonesia|Partner|Available|
+|Ireland|Partner|2020 release wave 2|
 |Italy|Microsoft|Available|
+|Japan|Partner|Available|
 |Latvia|Partner|2020 release wave 1|
+|Lithuania|Partner|2020 release wave 2|
+|Malaysia|Partner|Available|
+|Mexico|Microsoft|Available|
 |Netherlands|Microsoft|Available|
+|New Zealand|Microsoft|Available|
 |Norway|Microsoft|Available|
+|Peru|Partner|2020 release wave 1|
+|Philippines|Partner|Available|
 |Poland|Partner|Available|
 |Portugal|Partner|Available|
 |Russia **(on-premises only)**|Microsoft|Available|
 |Serbia|Partner|Available|
+|Singapore|Partner|Available|
 |Slovenia|Partner|2020 release wave 1|
+|South Africa|Partner|Available|
+|South Korea|Partner|Available|
 |Spain|Microsoft|Available|
 |Sweden|Microsoft|Available|
 |Switzerland|Microsoft|Available|
+|Taiwan|Partner|Available|
+|Thailand|Partner|Available|
+|United Arab Emirates|Partner|Available|
 |United Kingdom|Microsoft|Available|
-|**Oceania**|||
-|Australia|Microsoft|Available|
-|New Zealand|Microsoft|Available|
+|United States|Microsoft|Available|
+|Vietnam|Partner|Available|
 
 ## Important information regarding planned availability
 Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners have not successfully published their app(s) to AppSource by this time.
@@ -113,18 +112,19 @@ This table gives an overview of supported languages and how  application languag
 |Japanese (Japan)|jp-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
+|Lithuanian (Lithuania)|lv-LV|Partner, Available on AppSource (pending)|
 |Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
-|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource|
+|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource (pending)|
 |Portuguese (Portugal)|pt-PT|Partner, Available on AppSource|
 |Russian (Russia)|ru-RU|Microsoft, Available on AppSource|
-|Slovak (Slovakian)|sk-SK|Partner, Available on AppSource|
+|Slovak (Slovakian)|sk-SK|Partner, Available on AppSource (pending)|
 |Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
 |Serbian (Serbia)|sr-latn-RS|Partner, Available on AppSource|
-|Swedish (Sweden)|sv-SE|Microsoft, Available on AppSource|
-|Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
+|Swedish (Sweden)|sv-SE|Microsoft, Available on on AppSource|
+|Turkish (Turkey)|tr-TR|Partner, Available on AppSource (pending)|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
 
