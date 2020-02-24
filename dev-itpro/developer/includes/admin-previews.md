@@ -15,4 +15,4 @@ We expect to update the preview version only if we discover critical issues befo
 > You will be able to test the update on a copy of your production data in a sandbox environment when we release the new update in production in April or October, respectively. When the official release becomes available, you can continue your tests on that version. You will no longer be able to create new preview sandboxes.  
 
 > [!IMPORTANT]
-> The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. If you want to keep the sandbox environments running on the preview version, you must update them to the officially released version before the 30 days deadline.
+> The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. 
