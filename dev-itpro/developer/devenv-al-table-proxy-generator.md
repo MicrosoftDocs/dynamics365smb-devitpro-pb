@@ -60,4 +60,4 @@ The following example starts the process for creating a new integration table in
 ```
 
 ## See Also
-[](cross link to the )
+[](cross link to the walkthrough of integrating CDS and BC)
