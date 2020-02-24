@@ -24,7 +24,7 @@ Specifies the data type of the corresponding field data type in the external dat
 - Picklist
 
 > [!NOTE]  
-> The field values are dependent on the providers for the TableType to interpret the process. The different providers use it differently. For example, MicrosoftGraph vs CRM. 
+> The field values are dependent on the providers for the TableType to interpret the process. The different providers use it differently. For example, MicrosoftGraph vs CDS. 
 
 ## Syntax
 ```
@@ -32,7 +32,7 @@ ExternalType = 'String';
 ```
 
 ## Remarks  
-This property is used when you specify **CRM**, **MicrosoftGraph** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
+This property is used when you specify **CDS**, **MicrosoftGraph** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
 
 ## See Also  
 [TableType Property](devenv-tabletype-property.md)  
