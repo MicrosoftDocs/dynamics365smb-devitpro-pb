@@ -25,7 +25,7 @@ The tool is available with the **AL Language** extension and the **altpgen.exe**
 
 The syntax for the generator is the following:
 
-```console
+```
 .\altpgen
 -Project
 -PackageCachePath
@@ -53,15 +53,8 @@ The syntax for the generator is the following:
 ## Example
 The following example starts the process for creating a new integration table in the specified AL project. When complete, the output path contains the **Worker.al** file that contains the description of the **50000 CDS Worker** integration table. This table is set to the table type **CDS**.
 
-```powershell
--project <Your AL project folder>  
--packagecachepath <Your AL project cache folder>  
--serviceuri <CDS server URL>  
--username <Admin username for CDS>  
--password <Password>  
--entities cdm_worker  
--baseid 50000  
--tabletype CDS 
+```
+.\altpgen -project <Your AL project folder> -packagecachepath <Your AL project cache folder> -serviceuri <CDS server URL> -username <Admin username for CDS> -password <Password> -entities cdm_worker -baseid 50000 -tabletype CDS 
 ```
 
 ## See Also
