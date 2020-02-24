@@ -1,8 +1,8 @@
 ---
 title: "CodeCop Analyzer"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 02/21/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,6 +45,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0139](codecop-aa0139-donotassigntostringwithsmallercapacity.md)|Do not assign a text  to a target with smaller size.|Do not assign a text  to a target with smaller size.|Possible overflow assigning '{0}' to '{1}'.|Design|Warning|true|
 |[AA0161](codecop-aa0161-onlyuseasserterrorintestcodeunits.md)|Only use AssertError in Test Codeunits.|Only use AssertError in Test Codeunits.|Only use AssertError in Test Codeunits.|Design|Warning|true|
 |[AA0175](codecop-aa0175-donotfindrecordandnotuse.md)|Only find record if you need to use it.|Only find or get records if you are not using values.|Variable '{0}' queries the database in '{1}' but does not use the queried record. Only find or get record if you need to access the values. Consider using ISEMPTY.|Design|Warning|true|
+|[AA0181](codecop-aa0181-findsetfindshouldbeusedwithnext.md)|The FindSet() or Find() methods must be used only in connection with the Next() method.|Avoid getting the dataset when an enumeration is not used, which will decrease performance.|The FindSet() or Find() method on the record '{0}' must be used only in connection with the Next() method.|Design|Warning|true|
 |[AA0189](codecop-aa0189-applicationareahasinvalidvalue.md)|Only use a correct values of ApplicationArea.|ApplicationArea has invalid value.|Value '{0}' found on control {1} {2}. Valid values are {3}.|Design|Warning|true|
 |[AA0194](codecop-aa0194-donotwriteactionswithnoeffect.md)|Only write actions that have an effect.|Remember to specify either the 'OnAction' trigger or 'RunObject' property on an action.|Remember to specify either the 'OnAction' trigger or 'RunObject' property on an action.|Design|Warning|true|
 |[AA0198](codecop-aa0198-globallocalvariablesshouldnothavesamename.md)|Do not use identical names for local and global variables.|Do not use identical names for local and global variables.|The name of the local variable '{0}' is identical to a global variable.|Design|Warning|true|
@@ -75,6 +76,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0227](codecop-aa0227-alwaysguardmethodswithunhandlederrorsinupgradecodeunits.md)|Optional return value should not be omitted in upgrade codeunits.|In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors.|Optional return value of the method should not be omitted in upgrade codeunits.|Design|Warning|true|
 |[AA0230](codecop-aa0230-noversionnumberonbcassembliesdotnetvars.md)|Version should not be specified for internal assemblies.|Version number should not be specified for internal assemblies to avoid errors during upgrade procedures.|Version should not be specified for internal assembly '{0}'.|Design|Warning|true|
 |[AA0231](codecop-aa0231-donotusestrsubstnoinerrormessage.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method. Instead use the ability of the Error method to insert values into the string with placeholders.|Do not use the StrSubstNo or string concatenation as a parameter in the Error method.|Design|Warning|true|
+|[AA0233](codecop-aa0233-usegetfindfirstandfindlastwithoutnext.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Avoid enumeration of a dataset when the dataset is not filtered.|The '{0}' method on the record '{1}' must be used without the Next() method.|Design|Warning|true|
 |[AA0470](codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md)|Placeholders should have a comment explaining their content.|Provide an explanation that describes the content of each of the placeholders.|Variable '{0}' with placeholders should have a comment explaining their content.|Localizability|Warning|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

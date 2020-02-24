@@ -40,6 +40,7 @@
 ## [Overview](deployment/deployment.md)
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
@@ -108,13 +109,15 @@
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
 ### [Preparing Test Environments](administration/test-environment.md)
+### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
+### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
-#### [Updating Environments](administration/tenant-admin-center-update-management.md)
 #### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
+#### [Managing Updates](administration/tenant-admin-center-update-management.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 #### [Administration Center API](administration/administration-center-api.md)
 ### Automation
@@ -124,7 +127,6 @@
 ### [Administration of Business Central On-Premises](administration/administration.md)
 ### Intelligent Insights
 #### [Connect to the Intelligent Cloud from On-Premises](administration/about-intelligent-edge.md)
-#### [Replicating On-Premises Data](administration/data-replication-intelligent-cloud.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
@@ -620,16 +622,23 @@
 ## [On-Premises](performance/performance-onprem.md)
 ## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
+<!--migrate to BC online-->
+# Migrate to Business Central Online
+## [Overview](administration/migrate-data.md)
+## [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
+## [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
+## [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
+<!--## [Migrating from Dynamics SL](administration/migrate-data.md)-->
+<!-- end migration -->
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## Online
 ### [Overview](upgrade/upgrading-to-business-central-online.md)
 ### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
-### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Migrating On-Premises Data to Business Central Online](administration/migrate-data.md)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+### [Major Updates](administration/update-rollout-timelime.md)
 ## On-Premises
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)

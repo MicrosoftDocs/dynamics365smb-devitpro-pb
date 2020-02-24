@@ -112,5 +112,5 @@ For more information, see [Using the same Office 365 Account in Dynamics 365 Bus
 
 [Connect to the intelligent cloud with Business Central](about-intelligent-edge.md)  
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  
-[Replicating on-premises data](data-replication-intelligent-cloud.md)  
+[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  
