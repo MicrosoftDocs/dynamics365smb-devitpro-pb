@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: ManuelaHochstrasser
+ROBOTS: NOINDEX
 ---
 
 # Update 15.3 for Microsoft Dynamics 365 Business Central 2019 online release wave 2
