@@ -328,6 +328,13 @@
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### Developing Printer Extensions
+#### [Overview](developer/devenv-reports-printing.md)
+#### [Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
+<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
+<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
+<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
+<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
 ## Queries
 ### [Overview](developer/devenv-query-overview.md)
 ### [Query Object](developer/devenv-query-object.md)
@@ -540,6 +547,9 @@
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
+<!--### Events
+#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
+#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)-->
 ## Testing the Application
 ### [Testing the Application Overview](developer/devenv-testing-application.md)
 ### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
