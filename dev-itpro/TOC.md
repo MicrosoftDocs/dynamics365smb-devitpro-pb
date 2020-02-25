@@ -40,6 +40,7 @@
 ## [Overview](deployment/deployment.md)
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+<!--### [Update 15.3](whatsnew/whatsnew-update-15-3.md)-->
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
@@ -111,6 +112,10 @@
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+### Monitoring and Analyzing Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Analyzing Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -166,6 +171,10 @@
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
+### Monitoring and Analyzing Using Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
@@ -319,6 +328,13 @@
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### Developing Printer Extensions
+#### [Overview](developer/devenv-reports-printing.md)
+#### [Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
+<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
+<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
+<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
+<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
 ## Queries
 ### [Overview](developer/devenv-query-overview.md)
 ### [Query Object](developer/devenv-query-object.md)
@@ -531,6 +547,9 @@
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
+<!--### Events
+#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
+#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)-->
 ## Testing the Application
 ### [Testing the Application Overview](developer/devenv-testing-application.md)
 ### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)

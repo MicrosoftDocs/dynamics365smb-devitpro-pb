@@ -1,8 +1,8 @@
 ---
 title: "AppSourceCop Analyzer"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/21/2020
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -139,6 +139,10 @@ We continue by adding the configuration file `AppSourceCop.json` in the project'
     "mandatoryAffixes": [ "Foo", "Bar" ]
 }
 ```
+
+> [!IMPORTANT]  
+> If you are running a multi-root workspace environment, you must have one `AppSourceCop.json` file in the root folder of each of the projects. For more information, see [Working with multiple AL project folders within one workspace](../devenv-multiroot-workspaces.md).
+
 
 You are immediately greeted by the following error message:
 ```
