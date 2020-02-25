@@ -20,6 +20,45 @@ Use Get(), FindFirst() and FindLast() without Next() method.
 Avoid enumeration of a dataset when the dataset is not filtered.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Reason for the rule
+If you use `FindFirst()`, `FindLast()`, or `Get()`, then the database query will only fetch a single record and must fetch again when you call `Next()`, which will lower performance.
+
+## Bad code example
+```
+codeunit 1 MyCodeunit
+{
+   var
+      customer: Record Customer;
+                
+   procedure Foo()
+   begin
+      ...
+      customer.FindFirst();
+      ...
+      customer.Next();
+      ...
+   end;
+}
+```
+
+## Good code example
+
+```
+codeunit 1 MyCodeunit
+{
+   var
+      customer : Record Customer;
+                
+   procedure Foo()
+   begin
+      ...
+      customer.FindFirst();
+      ...
+      end;
+}
+```
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
