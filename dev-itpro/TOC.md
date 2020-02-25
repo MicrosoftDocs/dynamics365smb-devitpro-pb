@@ -112,6 +112,10 @@
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+### Monitoring and Analyzing Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Analyzing Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -167,6 +171,10 @@
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
+### Monitoring and Analyzing Using Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->

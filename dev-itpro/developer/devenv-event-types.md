@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
  
  A business event is a custom event that is raised by AL code. It defines a formal contract that carries an implicit promise not to change in future releases. It is the expectation that business events are published by solution ISVs, including Microsoft.  
   
- Business events can be compared with publicly released APIs on which 3rd party solution provider develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum. 
+ Business events can be compared with publicly released APIs on which 3rd party solution providers develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum. 
   
  **Development considerations**  
   
