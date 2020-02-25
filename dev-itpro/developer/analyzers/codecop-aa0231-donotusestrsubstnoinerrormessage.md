@@ -1,8 +1,8 @@
 ---
 title: "StrSubstNo or string concatenation must not be used as a parameter in the Error method."
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/21/2020
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

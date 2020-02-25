@@ -1,8 +1,8 @@
 ---
 title: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set."
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/21/2020
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
