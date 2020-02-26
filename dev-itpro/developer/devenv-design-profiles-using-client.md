@@ -16,19 +16,27 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-Besides creating profiles and page customizations in AL from Visual Studio, you can use the client. The client is a useful alternative, because you work with the user interface just as the users would. This method is especially advantageous for consultants, application administrators, and less technical users.
+Besides creating profiles and page customizations in directly in AL from Visual Studio, you can use the client. The client is a useful alternative, because you work with the user interface just as the users would. This method is especially advantageous for consultants, application administrators, and less technical users.
 
-Profiles that are created in the client are marked as **\(user-created\)** profiles. **\(User-created\)** profiles and page customizations essentially include all modifications that are not made directly by extensions.
+Profiles created in the client are marked as **\(user-created\)** profiles.
 
-For information about using the client to create and modify profiles and page customizations, see [Create Profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile) and [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
+For information about using the client, see [Create Profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile) and [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
+
+## What to know about when using the client
+
+A consequence of using the client is that the profile-related changes pertain only to the tenant in which they were made. Extension-based profiles and page customizations, by contrast, are available for installation on all tenants. 
+
+The good thing is that the client provides export and import actions for user-created profiles and page customizations. These actions give you the ability to:
+
+- Backup profile and page customizations locally
+- Make further changes to profiles and page customizations away from the production environment
+- Replicate profiles and page customizations on other environments and tenants
+- Preview changes in sandbox environments before going into production.
 
 ## Export and import user-created profiles and page customization
 
-A consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. Extension-based profiles and page customizations, by contrast, are available for installation on all tenants. However, you can export user-created profiles and page customizations from the client. Then, you can import them to another tenant.
 
-
-
-User-created profiles and page customizations are exported to a *profile package*. A profile package is a .zip file that includes the user-created profiles and page customizations as AL code.
+User-created profiles and page customizations are exported to a *profile package*.  User-created* profiles and page customizations essentially include all modifications that are not made directly by extensions. A profile package is a .zip file that includes the user-created profiles and page customizations as AL code.
 
 - Make additional modifications before importing to a tenant.
 
@@ -38,7 +46,7 @@ User-created profiles and page customizations are exported to a *profile package
 
 ## Exporting profiles
 
-To export user-created profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A profile.zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file
+To export user-created profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A profile.zip file is downloaded to your computer. The zip file contains AL source files for the profile and page customizations, plus a couple .json configuration files. 
 
 <!--
 However, you can export user-created profiles and page customizations from the client to files (.al type) that contain the changes as AL code. Once you have the files, you can include them in a Visual Studio Code project and compile them into an extension package that can be published and available to all tenants. To export user-cret profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A .zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file.
@@ -48,10 +56,11 @@ However, you can export user-created profiles and page customizations from the c
 
 A profile package contains the following files:
 
-- app.json file
-- profile.json file.
-- Profile._<profile ID>_.al file for each user-created profile
-- ProfileExtension._<profile ID>_.al 
+- An app.json file
+- A profile.json file.
+- An .al file for each user-created profile.
+    The files have the format Profile._<profile ID>_.al. 
+- A .al file for each profile ProfileExtension._<profile ID>_.al 
 - PageCustomization._[page name]_.Configuration\<number\>.al file for each page customization
 
 
