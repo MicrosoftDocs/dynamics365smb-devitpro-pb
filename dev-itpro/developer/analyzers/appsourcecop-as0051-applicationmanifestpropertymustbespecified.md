@@ -2,7 +2,7 @@
 title: "Property is required for AppSource submission"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

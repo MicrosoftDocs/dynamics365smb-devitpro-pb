@@ -16,7 +16,7 @@ ms.author: jswymer
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities and operations on tenants. Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
-Monitoring telemetry gives you a look at the activities and general health of your tenants, helping you diagnose problems and analyze operations that affect performance.
+Monitoring telemetry gives you a look at the activities and general health of your tenants. It helps you diagnose problems and analyze operations that affect performance.
 
 ## Available Telemetry
 
@@ -24,12 +24,12 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 
 |Operation | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
-|Authorization|Provides information about user sign-in attempts, including success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
+|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
 
 ## Enabling Application Insights
 
-Sending telemetry data to Application Insights requires that you have an Application Insights resource in Azure. After this, you can start to configure your tenants to send telemetry data to your Application Insights resource. The configuration is different for Online and On-premises:
+Sending telemetry data to Application Insights requires you have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants to send telemetry data to your Application Insights resource. The configuration is different for Online and On-premises:
 
 - For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online, Application Insights is enabled by using the Administration Center. For more information, see [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights).
 
@@ -39,7 +39,7 @@ Sending telemetry data to Application Insights requires that you have an Applica
 
 Telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is stored in Azure Monitor Logs in the *traces* table. You can view collected data by writing log queries. Log queries are written in the Kusto query language (KQL). For more information, see [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
 
-As a simple example, do the following: 
+As a simple example, do the following steps: 
 
 1. In the Azure portal, open your Application Insights resource.
 2. In the **Monitoring** menu, select **Logs**.

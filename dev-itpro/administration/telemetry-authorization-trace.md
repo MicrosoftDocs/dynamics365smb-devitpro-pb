@@ -16,7 +16,7 @@ ms.author: jswymer
 
 Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. 
 
-Authorization traces are emitted in two stages of sign-in. The first stage is the initial authorization, where the user account is verified that it is enabled in the tenant and that it has the correct entitlements. The telemetry data includes:
+Authorization signals are emitted in two stages of sign-in. The first stage is the initial authorization. In this stage, the system verifies that the user account is enabled in the tenant and has the correct entitlements. The telemetry data includes:
 
 - Success or failure of the sign-in attempt
 - Reason for failure
@@ -31,7 +31,7 @@ Occurs when a user has been successfully authorized.
 
 ### General dimensions
 
-The following tables explains the dimensions included in a **Success Authorization** signal.
+The following table explains the dimensions included in a **Success Authorization** signal.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
@@ -43,12 +43,12 @@ The following tables explains the dimensions included in a **Success Authorizati
 
 ### Custom dimensions
 
-The following tables explains the custom dimensions included in a **Success Authorization** signal.
+The following table explains the custom dimensions included in a **Success Authorization** signal.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
 |authorizationStatus|**Succeeded**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
+|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.||
 |entitlementSetIds |Specifies the entitlements that the user has in Business Central.||
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. Currently, the version is **0.2** ||
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
@@ -57,9 +57,9 @@ The following tables explains the custom dimensions included in a **Success Auth
 
 |Value|Description|See more|
 |-----|-----------|--------|
-|Delegated_admin|This indicates that the user is as a delegated administrator on the tenant. This is typically reserved for partners. Delegated administrator privileges are granted to users by the customer. This is done by setting up a Partner Relationship in the Microsoft Partner Center.|[Delegated Administrator Access to Business Central Online](delegated-admin.md)<br /><br />[Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)|
-|Internal_Admin|This indicates that the user is an internal administrator on the tenant, which means that the user is assigned the **Global admin** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 Admin Center](/office365/admin/add-users/assign-admin-roles)|
-|Normal user|This indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
+|Delegated_admin|Indicates that the user is a delegated administrator on the tenant. Delegated administrators are typically reserved for partners. Delegated administrator privileges are granted to users by the customer. You grant these privileges by setting up a Partner Relationship in the Microsoft Partner Center.|[Delegated Administrator Access to Business Central Online](delegated-admin.md)<br /><br />[Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)|
+|Internal_Admin|Indicates that the user is an internal administrator on the tenant. As an internal administrator, the user is assigned the **Global admin** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 admin center](/office365/admin/add-users/assign-admin-roles)|
+|Normal user|Indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
 
 ## Operation: Failed Authorization (Pre Open Company)
 
@@ -67,7 +67,7 @@ Occurs when a user sign-in in has failed authorization.
 
 ### General dimensions
 
-The following tables explains the columns included in a Success Authorization trace.
+The following table explains the columns included in a Success Authorization trace.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
@@ -85,9 +85,9 @@ The following tables explains the columns included in a Success Authorization tr
 |Dimension|Description or value||
 |---------|-----|-----------|
 |authorizationStatus|**Failed**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
+|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.||
 |entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prodshort.md)] telemetry schema. ||
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
 |Failure reason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.||
 
@@ -95,7 +95,7 @@ The following tables explains the columns included in a Success Authorization tr
 
 #### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
 
-This occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you will see that the **State** field is set to **Disabled**.
+This message occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you'll see that the **State** field is set to **Disabled**.
 
 *Resolution*
 
@@ -103,15 +103,15 @@ Enable the user account by setting the **State** field to **Enabled**. For more 
 
 #### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
 
-This occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
+This message occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
 
-Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user is entitled to use, according to their Azure Active Directory role or the license they purchased from Microsoft. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/))
+Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Azure Active Directory role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/))
 
 *Resolution*
 
-Entitlements are assigned to the user account in the Microsoft 365 Admin Center or Microsoft Partner Center; they are not assigned in Business Central. To assign entitlements to a user, see one of the following:
+Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They are not assigned in Business Central. To assign entitlements to a user, see one of the following articles:
 
-- From [Microsoft Office 365 Admin Center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users).
+- From [Microsoft Office 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users).
 
 - From the Microsoft Partner Center, see [User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users).
 
@@ -121,7 +121,7 @@ Occurs when the company has opened successfully.
 
 ### General dimensions
 
-The following tables explains the columns included in a Success Authorization trace.
+The following table explains the columns included in a Success Authorization trace.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
@@ -146,7 +146,7 @@ Occurs when a company has failed to open.
 
 ### General dimensions
 
-The following tables explains the columns included in a Success Authorization trace.
+The following table explains the columns included in a Success Authorization trace.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
@@ -171,22 +171,22 @@ The following tables explains the columns included in a Success Authorization tr
 
 #### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
 
-This occurs when a user tries to sign-in to a company whose name exceeds the maximum allowed length.
+This message occurs when a user tries to sign in to a company whose name exceeds the maximum allowed length.
 
 *Resolution*
 
-This typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. If the name exceeds 30 characters, then this message occurs. Make sure that the user has the proper name of the company.
+This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. If the name exceeds 30 characters, then this message occurs. Make sure that the user has the proper name of the company.
 
 <!--
 ###### The product license permits working with companies that have names that start with ‘<text>’ only.
 
-This occurs when a user tries to open a company whose name does not start with the text that is required by the license.
+This message occurs when a user tries to open a company whose name does not start with the text that is required by the license.
 
 *Resolution*
 -->
 #### The user does not have permission to access the company.
 
-This occurs when a user account in Business Central does not have the proper permissions to the company.
+This message occurs when a user account in Business Central doesn't have the proper permissions to the company.
 
 *Resolution*
 
@@ -197,11 +197,11 @@ In Business Central, open the user account and modify the permissions the user t
 
 #### The company doesn't exist.
 
-This occurs when a user tries to sign in to a company, but the company is not found in Business Central.
+This message occurs when a user tries to sign in to a company, but the company isn't found in Business Central.
 
 *Resolution*
 
-This typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. Make sure that the user has the proper name of the company.
+This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. Make sure that the user has the proper name of the company.
 
 
 <!--
@@ -210,7 +210,7 @@ This typically occurs when a user tries to access a specific company in Business
 *Resolution*
 -->
 <!--
-###### The user opened a company that does not have any applicable entitlement sets. This will result in permission errors.
+###### The user opened a company that does not have any applicable entitlement sets. This message will result in permission errors.
 
 *Resolution*
 -->

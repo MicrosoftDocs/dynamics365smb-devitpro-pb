@@ -22,7 +22,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 To filter the telemetry for an environment:
 
 1. Select a base point-in-time for the timestamp of the telemetry messages.
-2. Enter a number of minutes before or after the base point-in-time to set a range of time for the timestamp. A negative number indicates a number of minutes before the base point-in-time, and a positive number indicates a number of minutes following the base point-in-time. For example, a value of *-15* will filter the telemetry messages to a timestamp range of up to 15 minutes before the base point-in-time.
+2. Enter a number of minutes before or after the base point-in-time to set a range of time for the timestamp. A negative number indicates a number of minutes before the base point-in-time, and a positive number indicates a number of minutes following the base point-in-time. For example, a value of *-15* filters messages to a timestamp range of up to 15 minutes before the base point-in-time.
 3. Choose the message type.
 4. Choose the environment.
 5. Select **Filter**.
@@ -41,9 +41,9 @@ For an overview of the telemetry types that are currently emitted, see [Monitori
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
 2. Create an Application Insights resource in Azure.
 
-    The Application Insights resource will be assigned an instrumentation key. Copy this key because you will need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
+    The Application Insights resource will be assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
     
-    The Application Insights instrumentation key can be in any Azure tenant that your organization has access to. For example, a delegated administrator from the reselling partner is the one analyzing the telemetry, and they might not have access to the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
+    The Application Insights instrumentation key can be in any Azure tenant that is accessible to your organization. For example, a delegated administrator from the reselling partner is the person analyzing the telemetry. But this person might not have access rights the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
 
     For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
