@@ -39,7 +39,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Hong Kong SAR|Partner|Available|
 |Hungary|Partner|2020 release wave 1|
 |Iceland|Microsoft|Available|
-|India|Partner|2020 release wave 2|
+|India|Partner|2021 release wave 1|
 |Indonesia|Partner|Available|
 |Ireland|Partner|2020 release wave 2|
 |Italy|Microsoft|Available|
