@@ -1,6 +1,6 @@
 ---
 title: "The ObsoleteTag property and the Tag in the Obsolete attribute must b set to the next release version."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/25/2020
 ms.reviewer: na
