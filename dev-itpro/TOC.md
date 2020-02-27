@@ -641,6 +641,7 @@
 ## [Overview](administration/migrate-data.md)
 ## [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ## [Running the Cloud Migration Tool](administration/migration-tool.md)
+## [Managing the Migration to the Cloud](administration/migration-management.md)
 ## [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ## [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ## [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
