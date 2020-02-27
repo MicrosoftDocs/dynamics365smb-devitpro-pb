@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: e800bc78-feb2-4f19-b79a-3fd70e06320f
 caps.latest.revision: 7
-author: SusanneWindfeldPedersen
+
 ---
 
  
@@ -37,9 +37,6 @@ The following table describes all the different event types:
 |[Trigger](devenv-event-types.md#trigger-events) |Trigger events are published by the runtime.  | 
 
 The process for implementing these events is slightly different. To learn about the different types, see [Event Types](devenv-event-types.md).
-
-> [!TIP]
-> Use the `Shift+Alt+E` shortcut to see the list of all the events that have been published. You can use type ahead to dynamically search and filter the event list. 
 
 ## How events work  
 The basic principle is that you program events in the application to run customized behavior when they occur. Events in AL are modeled after Microsoft .NET Framework. There are three major participants involved in events: the *event*, a *publisher*, and a *subscriber*.  

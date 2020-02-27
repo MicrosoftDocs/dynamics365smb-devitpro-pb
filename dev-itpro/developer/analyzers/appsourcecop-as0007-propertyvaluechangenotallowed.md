@@ -2,7 +2,7 @@
 title: "Properties must not change value, since dependent extensions may break"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/20/2020
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

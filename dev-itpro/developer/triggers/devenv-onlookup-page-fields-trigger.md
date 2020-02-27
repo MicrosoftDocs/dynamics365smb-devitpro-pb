@@ -16,7 +16,7 @@ Runs in place of the normal lookup features for the current page.
 ## Syntax  
 
 ```  
-trigger OnLookup(TextString) 
+trigger OnLookup(var Text: Text): Boolean
 begin
     ...
 end;

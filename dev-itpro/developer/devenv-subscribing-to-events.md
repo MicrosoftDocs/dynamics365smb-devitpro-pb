@@ -24,38 +24,36 @@ You create an event subscriber method just like other methods except that you sp
 For an explanation about the different types, see [Event Types](devenv-event-types.md).  
 
 ### To create an event subscriber method
-
 1.  Decide which codeunit to use for the event subscriber method.  
 
      You can create a new codeunit or use an existing one.  
 
-2. Use the `Shift+Alt+E` shortcut to invoke a list of all the events. You can use type ahead to dynamically search and filter the event list. 
+2.  Add an AL method to the codeunit.  
 
-3. Press return on the event entry that you want to subscribe to. An event subscriber for the event will be inserted at the cursor position in the active AL code editor window.
+     We recommend that you give the method a name that indicates what the subscriber does, and has the format *[Action][Event]*. *[Action]* is text that describes what the method does and *[Event]* is the name of the event publisher method to which it subscribes. <!-- For more information about naming, see [Best Practices with Events](devenv-events-best-practices.md).  -->
 
-     By default, the subscriber method will have the same name as the event it subscribes to, but you can change it. We recommend that you give the method a name that indicates what the subscriber does, and has the format *[Action][Event]*. *[Action]* is text that describes what the method does and *[Event]* is the name of the event publisher method to which it subscribes. <!-- For more information about naming, see [Best Practices with Events](devenv-events-best-practices.md).  -->
 
-    The event subscriber method will be decorated with the [EventSubscriber attribute](methods/devenv-eventsubscriber-attribute.md), where the arguments are automatically set. You can also change the value of the arguments according to the following table. For optional arguments, if you do not want to set a value, use an empty value (`''`). In this, the default value, if any, is used.
+5. Add code to the method for handling the event. 
+
+3.  Decorate the event subscriber method with the [EventSubscriber attribute](methods/devenv-eventsubscriber-attribute.md), and change accordingly.
 
     ```  
     [EventSubscriber(ObjectType::<Event Publisher Object Type>, <Event Publisher Object>, '<Published Event Name>', '<Published Event Element Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
     ```
 
+    Set the arguments according to the following table. For optional arguments, if you do not want to set a value, use an empty value (`''`). In this, the default value, if any, is used. 
+
     |Argument|Description|Optional|
     |--------|------------|-------|
-    |`<Event Publisher Object Type>`|Specifies the type of object that publishes the event. This can be `Codeunit`, `Page`, `Report`, `Table`, or `XMLPort`. |no|
-    |`<Event Publisher Object>`|Specifies the object that publishes the event. You can set this to the ID, such as `50100`, or the recommended way is to use the object name by using the syntax `<Object Type>::"<Object Name>"`, such as `Codeunit::"MyPublishers"`, or for database triggers `Database::"Customer"`.|no|
-    |`<Published Event Name>`|Specifies the name of method that publishes the event in the object that is specified by the `<Event Publisher Object>` parameter. |no|
+    |`<Event Publisher Object Type>`|Specify the type of object that publishes the event. This can be `Codeunit`, `Page`, `Report`, `Table`, or `XMLPort`. |no|
+    |`<Event Publisher Object>`|Specify the object that publishes the event. You can set this to the ID, such as `50100`, or the recommended way is to use the object name by using the syntax `<Object Type>::"<Object Name>"`, such as `Codeunit::"MyPublishers"`, or for database triggers `Database::"Customer"`.|no|
+    |`<Published Event Name>`|Specify the name of method that publishes the event in the object that is specified by the `<Event Publisher Object>` parameter. |no|
     |`<Published Event Element Name>`|Specifies the table field that the trigger event pertains to. This argument only requires a value for database trigger events, that is, when the `<Event Publisher Object Type>` is set to `Table` and the `<Published Event Name>` argument is a validate trigger event, such as `OnAfterValidateEvent`.|no|
     |`<SkipOnMissingLicense>`|Set to `true` to skip the event subscriber method call if the user's license does not cover the event subscriber codeunit. If `false`, an error is thrown and the code execution stops. `false` is the default.|yes|
     |`<SkipOnMissingPermission>`|Set to `true` to skip the event subscriber method call if the user does not have the correct permissions the event subscriber codeunit. If `false`, an error is thrown and the code execution stops. `false` is the default.  |yes|
-
+   
     > [!TIP]  
-    > Typing the keyboard shortcut `Ctrl + space` displays IntelliSense to help you fill the attribute arguments.
-
-
-4. Add code to the method for handling the event. 
-
+    > Use the `teventsub` snippet to get started and typing the keyboard shortcut `Ctrl + space` displays IntelliSense to help you fill the attribute arguments and to discover which events are available to use.
 5. Optionally, set the codeunit's **EventSubscriberInstance** property to specify how the event subscriber method will be bound to the instance of this codeunit.
 
     For more information, see [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md).
