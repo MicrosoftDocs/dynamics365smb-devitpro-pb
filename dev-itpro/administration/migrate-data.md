@@ -10,12 +10,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 02/19/2020
+ms.date: 02/27/2020
 ms.author: bmeier
 
 ---
 
 # Migrating On-Premises Data to Business Central Online
+
+Customers that run their workloads on-premises but are looking to move to the cloud can migrate using the cloud migration tool. Moving to the cloud gives users the benefits of cloud scenarios such as Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
+
+## Data migration
 
 Data migration is the process of securely migrating data from your on-premises SQL Server instance to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. The process uses the Azure Data Factory (ADF) to migrate the data between databases directly, meaning it does not look at any permissions within the applications you are transferring data between, only SQL permissions.  
 
@@ -27,6 +31,9 @@ The initial data migration time can vary depending factors such as the amount of
 
 ## See also
 
+[Running the Cloud Migration Tool](migration-tool.md)  
+[Managing the Migration to the Cloud](migration-management.md)  
+[Frequently Asked Questions about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  

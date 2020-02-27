@@ -1,6 +1,6 @@
 ---
 title: "Function calls should have parenthesis even if they do not have any parameters."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/25/2020
 ms.reviewer: na

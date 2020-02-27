@@ -1,6 +1,6 @@
 ---
 title: "The type and subtype of parameters cannot be modified in events and external procedures"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/25/2020
 ms.reviewer: na
