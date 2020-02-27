@@ -1,6 +1,6 @@
 ---
-title: Authorization Trace | Microsoft Docs
-description: Learn about the Authorization telemetry in Business Central  
+title: Web Service Request Trace | Microsoft Docs
+description: Learn about the web service request telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -14,12 +14,12 @@ ms.author: jswymer
 
 # Analyzing Web Services Telemetry
 
-Web Services telemetry provides information about the SOAP, OData, and API web service calls from . This telemetry data can help you identify problems a user might experience when signing in. 
+Web Services telemetry provides information about the SOAP, OData, and API web service requests from the tenant. In particular the telemetry shows how long it took to complete a request. 
 
 There are several  can a partner infer from web service signal
 - Many messages where endpoint contains “powerbi” => excessive powerBI integration usage​
 - I  web service call + long running  sql query => maybe need to adjust/tune codeunit​
-- If calls to a specific endpoint are siginficantly longer then to the other endpoints – consider adding filtering​
+- If calls to a specific endpoint are significantly longer then to the other endpoints – consider adding filtering​
 - If web service calls to a specific endpoint read more SQL rows then to the other endpoints – consider adding filtering​
 - If many requests <> API type => uptake API pages to get better perf​
 
@@ -45,6 +45,9 @@ The following tables explains the dimensions included in a **Success Authorizati
 ### Custom dimensions
 
 The following tables explains the custom dimensions included in a **Success Authorization** signal.
+
+
+{"Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:00.3886441","Component version":"16.0.11329.0","componentVersion":"16.0.11329.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","sqlExecutes":"21","aadTenantId":"common","sqlRowsRead":"117","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.3886441","alObjectName":"Sales Document Line Entity","alObjectType":"Page","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines","alObjectId":"6403"}
 
 |Dimension|Description or value||
 |---------|-----|-----------|
