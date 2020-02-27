@@ -5144,6 +5144,16 @@
     "source_path": "dev-itpro/administration/data-replication-intelligent-cloud.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migrate-data",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/administration/manage-intelligent-edge.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migration-management",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/administration/about-intelligent-edge.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migration-tool",
+    "redirect_document_id": false
    }
   ]
 }
