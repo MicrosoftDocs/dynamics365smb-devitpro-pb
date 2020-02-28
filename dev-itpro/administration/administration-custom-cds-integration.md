@@ -71,10 +71,11 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
     -tabletype:CDS
     ```
     
-    This starts the process for creating the table. When completed, the output path contains the **Worker.al** file that contains the description of the **50001 CDS Worker** integration table. This table is set to the table type **CRM**.
+    This starts the process for creating the table. When completed, the output path contains the .al file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
 
 ## Create a Page for Displaying [!INCLUDE[d365fin](includes/cds_long_md.md)] Data  
-For scenarios where we want to view [!INCLUDE[d365fin](includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[d365fin](includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[d365fin](includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses table 50001 CDS Worker as its data source.  
+
+For scenarios where we want to view [!INCLUDE[d365fin](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[d365fin](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[d365fin](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses table 50001 CDS Worker as its data source.  
 
 ### To create a list page to display [!INCLUDE[d365fin](includes/cds_long_md.md)] workers  
 1. Create a new page. For more information, see [Pages Overview](devenv-pages-overview.md). 
