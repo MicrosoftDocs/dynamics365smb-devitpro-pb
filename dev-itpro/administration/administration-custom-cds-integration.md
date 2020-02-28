@@ -11,11 +11,11 @@ ms.author: bholtorf
 ms.date: 02/28/2020
 ---
 
-# Walkthrough: Customizing an Integration with Common Data Service
+# Customizing an Integration with Common Data Service
 
 This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[d365fin](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and worker in [!INCLUDE[d365fin](../includes/cds_long_md.md)]. 
 
-## About This Walkthrough
+## About this walkthrough
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[d365fin](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
 
 1. Develop an AL extension to integrate entities in [!INCLUDE[d365fin](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview).
@@ -48,7 +48,7 @@ This walkthrough requires the following:
     > [!NOTE]  
     > Make sure that your integration user has permission to access the Worker entity.
 
-## Create an Integration Table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[d365fin](includes/cds_long_md.md)] Entity  
+## Create an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[d365fin](includes/cds_long_md.md)] entity  
 
 To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[d365fin](includes/cds_long_md.md)] entity, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** entity in [!INCLUDE[d365fin](includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
 
@@ -73,14 +73,16 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
     
     This starts the process for creating the table. When completed, the output path contains the .al file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
 
-## Create a Page for Displaying [!INCLUDE[d365fin](includes/cds_long_md.md)] Data  
+## Create a page for displaying [!INCLUDE[d365fin](includes/cds_long_md.md)] data  
 
-For scenarios where we want to view [!INCLUDE[d365fin](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[d365fin](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[d365fin](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses table 50001 CDS Worker as its data source.  
+For scenarios where we want to view [!INCLUDE[d365fin](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[d365fin](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[d365fin](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses table **CDS Worker** with ID 50000 as its data source.  
 
 ### To create a list page to display [!INCLUDE[d365fin](includes/cds_long_md.md)] workers  
-1. Create a new page. For more information, see [Pages Overview](devenv-pages-overview.md). 
+
+1. Create a new page. For more information, see [Pages Overview](../developer/devenv-pages-overview.md). 
 2. Name the page **CDS Worker List**, and specify **50001** as the page ID.  
-3. Specify the **50001 CDS Worker** integration table as the source table. For example:
+3. Specify the **CDS Worker** integration table as the source table. For example:
+
 ```
 page 50001 "CDS Worker List"
 {
@@ -121,7 +123,7 @@ page 50001 "CDS Worker List"
 
     trigger OnInit()
     begin
-        CODEUNIT.Run(CODEUNIT::"CRM Integration Management");
+        Codeunit.Run(Codeunit::"CRM Integration Management");
     end;
 
     procedure SetCurrentlyCoupledCDSWorker(CDSWorker: Record "CDS Worker")
@@ -134,13 +136,14 @@ page 50001 "CDS Worker List"
 4. Add the fields from the integration table to display on the page. 
 
 
-## Enable Coupling and Synchronization between Worker in [!INCLUDE[d365fin](includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]
-To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[d365fin](includes/cds_long_md.md)] entity record, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[d365fin](includes/cds_long_md.md)] record and the Integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
+## Enable coupling and synchronization between Worker in [!INCLUDE[d365fin](includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]
+
+To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[d365fin](../includes/cds_long_md.md)] entity record, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[d365fin](includes/cds_long_md.md)] record and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
 
 <!-- Shouldn't step 0 be: Create a codeunit to manage this?-->
 
-1. Create a codeunit.
-2. In codeunit **5334 "CRM Setup Defaults"**, subscribe to the **OnGetCDSTableNo** event, as follows:
+1. Create a new codeunit.
+2. In codeunit **"CRM Setup Defaults"** (ID 5334), subscribe to the **OnGetCDSTableNo** event, as follows:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnGetCDSTableNo', '', false, false)]
@@ -153,7 +156,7 @@ begin
 end;
 ```
 
-3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[d365fin](includes/cds_long_md.md)]. In this case, that's **table 5200 Employee**. The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in **codeunit 5150 "Integration Management"** that we can use to enable integration records for **table 5200 Employee**.
+3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[d365fin](includes/cds_long_md.md)]. In this case, that's table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **"Integration Management"** (ID 5150) that we can use to enable integration records for the **Employee** table.
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
