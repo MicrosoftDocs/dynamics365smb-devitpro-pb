@@ -326,16 +326,18 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 }
 ```
 
-## Create Default Integration Table Mappings and Field Mappings
-For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **table 50001 CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **5200 Employee**). There are two types of mapping:  
+## Create default integration table mappings and field mappings
+
+For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **Employee**). There are two types of mapping:  
 
 - **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[d365fin](includes/cds_long_md.md)] entity.  
-- **integration field mapping** - Field mapping links a field in an entity record in [!INCLUDE[d365fin](includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort]../(includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[d365fin](includes/cds_long_md.md)]. Typically, there are multiple field mappings for an entity.  
+- **integration field mapping** - Field mapping links a field in an entity record in [!INCLUDE[d365fin](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort](../(includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[d365fin](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for an entity.  
 
-In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[d365fin](includes/cds_long_md.md)] with an employee in [!INCLUDE[prodshort](../includes/prodshort.md)]. 
+In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[d365fin](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prodshort](../includes/prodshort.md)]. 
 
 ### To create an integration table mapping  
-We can create the integration table mapping by subscribing to the **OnAfterResetConfiguration** event in codeunit **7204 "CDS Setup Defaults"**.
+
+We can create the integration table mapping by subscribing to the **OnAfterResetConfiguration** event in codeunit **CDS Setup Defaults** (ID 7204).
 
 1. Create a codeunit.  
 2. Add a local procedure called **InsertIntegrationTableMapping**, as follows:
@@ -347,7 +349,7 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ```
 
-3. In codeunit **7204 "CDS Setup Defaults"**, subscribe to the **OnAfterResetConfiguration** event, as follows:
+3. In codeunit **CDS Setup Defaults**, subscribe to the **OnAfterResetConfiguration** event, as follows:
 
     ```
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Setup Defaults", 'OnAfterResetConfiguration', '', true, true)]
@@ -368,13 +370,14 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ``` 
 
-   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the Employee table in [!INCLUDE[prodshort](../
+   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../
 includes/prodshort.md)] that we want to map to the Worker entity in [!INCLUDE[d365fin](includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
+
 To create an integration field mapping, follow these steps:  
 
-1. Add a local procedure called **InsertIntegrationFieldMapping** to the codeunit you creted in step 1 of the previous process, as follows:
+1. Add a local procedure called **InsertIntegrationFieldMapping** to the codeunit you created in step 1 of the previous process, as follows:
 
     ```
     procedure InsertIntegrationFieldMapping(IntegrationTableMappingName: Code[20]; TableFieldNo: Integer; IntegrationTableFieldNo: Integer; SynchDirection: Option; ConstValue: Text; ValidateField: Boolean; ValidateIntegrationTableField: Boolean)
@@ -386,37 +389,38 @@ To create an integration field mapping, follow these steps:
     end;
     ```
 
-2.  In the event subscriber we created for our integration table mapping (Step 3 in the previous process), after we insert the integration table mapping we'll add field mappings, as follows:
+2. In the event subscriber that we created for our integration table mapping (in step 3 in the previous process), after we insert the integration table mapping we will add field mappings, as follows:
 
     ```
     InsertIntegrationFieldMapping('EMPLOYEE-WORKER', Employee.FieldNo("First Name"), CDSWorker.FieldNo(cdm_FirstName), IntegrationFieldMapping.Direction::Bidirectional, '', true, false);
     ```      
 
-3.  We'll repeat these steps for each field that we want to map.  
+3. Now repeat these steps for each field that we want to map.  
 
     > [!TIP]  
-    >  If a field in one of the tables does not have a corresponding field in the other table, we can use a constant value.
+    > If a field in one of the tables does not have a corresponding field in the other table, we can use a constant value.
 
-3. After we publish the extension, we can update the default mappings to include our new integration table mapping by opening the **CDS Connection Setup** page in [!INCLUDE[prodshort](../includes/prodshort.md)] and choosing **Use Default Synchronization Setup**.  
+3. After publishing the extension, we can update the default mappings to include our new integration table mapping by opening the **CDS Connection Setup** page in [!INCLUDE[prodshort](../includes/prodshort.md)] and choosing **Use Default Synchronization Setup**.  
 
-Users can now manually synchronize employee records in [!INCLUDE[prodshort](../includes/prodshort.md)] with Worker entity records in [!INCLUDE[d365fin](includes/cds_long_md.md)] from the [!INCLUDE[prodshort](../includes/prodshort.md)] client.  
+Users can now manually synchronize employee records in [!INCLUDE[prodshort](../includes/prodshort.md)] with Worker entity records in [!INCLUDE[d365fin](../includes/cds_long_md.md)] from the [!INCLUDE[prodshort](../includes/prodshort.md)] client.  
 
 > [!TIP]  
->  To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **5330 CRM Integration Management** and see how it is called by the integration code for other [!INCLUDE[d365fin](includes/cds_long_md.md)] entities in the codeunit. For more information, see [Scheduling a Synchronization](admin-scheduled-synchronization-using-the-synchronization-job-queue-entries.md).
+> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[d365fin](../includes/cds_long_md.md)] entities in the codeunit. For more information, see [Scheduling a Synchronization](admin-scheduled-synchronization-using-the-synchronization-job-queue-entries.md).
 
 ## Customizing Synchronization  
- When synchronizing data, some entities may require custom code to successfully synchronize data. Other entities might require the initialization of fields, the validation of relationships, or the transformation of data.  
 
- You can either use the standard transformation rules on **page 5361 "Integration Field Mapping List"** or you can transform data programmatically. For more information, see [Transformation Rules](across-how-to-set-up-data-exchange-definitions#transformation-rules).
+When synchronizing data, some entities may require custom code to successfully synchronize data. Other entities might require the initialization of fields, the validation of relationships, or the transformation of data.  
 
- During the synchronization process, certain events are published and raised by **codeunit 5335 Integration Table Synch.**. We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes the events that are published by **codeunit 5335 Integration Table Synch.**.  
+You can either use the standard transformation rules on page **Integration Field Mapping List** (ID 5361) or you can transform data programmatically. For more information, see [Transformation Rules](across-how-to-set-up-data-exchange-definitions#transformation-rules).
+
+During the synchronization process, certain events are published and raised by codeunit **Integration Table Synch.** (ID 5335). We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes the events that are published by codeunit **Integration Table Synch.**.  
 
 |Event|Description|  
 |-----------|-----------------|  
-|OnFindUnCoupledDestinationRecord|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **5341 CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prodshort]../(includes/prodshort.md)] currency codes with ISO currency codes in [!INCLUDE[d365fin](includes/cds_long_md.md)].|  
+|OnFindUnCoupledDestinationRecord|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prodshort]../(includes/prodshort.md)] currency codes with ISO currency codes in [!INCLUDE[d365fin](includes/cds_long_md.md)].|  
 |OnBeforeApplyRecordTemplate|Occurs before applying configuration templates to new records, and can be used to implement algorithms for determining which configuration template to use.<!--point to section about templates.-->|  
 |OnAfterApplyRecordTemplate|Occurs after configuration templates are applied to new records, and can be used to change data after configuration templates have been applied.|  
-|OnBeforeTransferRecordFields|Occurs before transferring data in modified fields (which are defined in the Integration Field Mapping table) from the source table to the destination table. It can be used to validate the source or destination before the data is moved.|  
+|OnBeforeTransferRecordFields|Occurs before transferring data in modified fields (which are defined in the **Integration Field Mapping** table) from the source table to the destination table. It can be used to validate the source or destination before the data is moved.|  
 |OnAfterTransferRecordFields|Occurs after transferring modified field data (which are defined in the Integration Field Mapping table) from the source table to the destination table. It can be used to transfer additional data, validate lookups, and so on. Setting the **AdditionalFieldsWereModified** parameter will cause a destination record modification even though no fields were modified.|  
 |OnBeforeInsertRecord|Occurs before inserting a new destination record, and can be used to initialize fields, such as primary keys.|  
 |OnAfterInsertRecord|Occurs after a new destination record is inserted, and can be used to perform post-insert operations such as updating related data.|  
@@ -426,14 +430,15 @@ Users can now manually synchronize employee records in [!INCLUDE[prodshort](../i
 
 For more information about how to subscribe to events, see [Subscribing to Events](Subscribing-to-Events.md).
 
-## Create a Table Extension for an Integration Table in [!INCLUDE[prodshort](../includes/prodshort.md)]
-Let's explore another scenario. Let's say that we have added an **Industry** field to the **Contact** entity in [!INCLUDE[d365fin](includes/cds_long_md.md)], and now we want to include the field in our integration with [!INCLUDE[d365fin](includes/cds_long_md.md)].
+## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
-### To create the integration table extension for table 5342 "CRM Contact"
-1.  Create a new AL extension.
-2.  Export AL Table Proxy Generator **altpgen.exe** from the VS Code AL extension.  <!-- these steps are already described, maybe just shorten down by pointing to that section? >
+Let us explore another scenario. If we added an **Industry** field to the **Contact** entity in [!INCLUDE[d365fin](includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[d365fin](includes/cds_long_md.md)].
 
-3.  In PowerShell, run the tool with the following arguments:
+### To create the integration table extension for table "CRM Contact" (ID 5342)
+
+1. Create a new AL extension.
+2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#To-create-the-integration-table-for-the-worker-entity-in-[!INCLUDE[d365fin](includes/cds_long_md.md)].
+3. In PowerShell, run the tool with the following arguments:
 
     ```  
     -project:<Your AL project folder>
@@ -443,13 +448,14 @@ Let's explore another scenario. Let's say that we have added an **Industry** fie
     -password:<Password>
     -entities:contact
     -baseid:60000
-    -tabletype:CRM  
+    -tabletype:CDS  
     ```
 
     The process for creating the table starts. The AL Table Proxy Generator tool finds that an integration table for the **Contact** entity already exists, so it creates a table extension with only new fields, in this case **Industry**. When the process is completed, the output path contains the WorkerExt.al file.
 
-## Extend the Contact Table and Page with the Industry Field
-To synchronize the **Industry** field we need to add the field in [!INCLUDE[prodshort](../includes/prodshort.md)]. The following code example extends **table 5050 "Contact"** and **page 5050 "Contact Card"** with new the field. For example:
+## Extend the contact table and page with the Industry field
+
+To synchronize the **Industry** field we need to add the field in [!INCLUDE[prodshort](../includes/prodshort.md)]. The following code example extends table **Contact** and page **Contact Card** with new the field. For example:
 
 ```
 tableextension 60001 ContactExtension extends Contact
@@ -478,8 +484,9 @@ pageextension 60001 ContactCardExtension extends "Contact Card"
 }
 ```
 
-## Add New Integration Field Mapping for Industry
-Now that we have the field in both [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[d365fin](includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that we will subscribe to the **OnAfterResetContactContactMapping** event in codeunit **7204 "CDS Setup Defaults"**, as follows:
+## Add new integration field mapping for Industry
+
+Now that we have the field in both [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[d365fin](includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that we will subscribe to the **OnAfterResetContactContactMapping** event in codeunit **CDS Setup Defaults** (ID 7204), as follows:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Setup Defaults", 'OnAfterResetContactContactMapping', '', true, true)]
@@ -501,6 +508,7 @@ end;
 After we publish the extension we can update the mappings by running the **CDS Connection Setup** page and choosing **Use Default Synchronization Setup**.  
 
 ## See Also
+
 [Overview](admin-common-data-service.md)  
 [Setting Up User Accounts for Integrating with Common Data Service](admin-setting-up-integration-with-dynamics-sales.md)  
 [Set Up a Connection to Common Data Service](admin-how-to-set-up-a-dynamics-crm-connection.md) 
