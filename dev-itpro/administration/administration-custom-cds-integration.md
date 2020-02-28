@@ -509,10 +509,10 @@ After we publish the extension we can update the mappings by running the **CDS C
 
 ## See Also
 
-[Overview](admin-common-data-service.md)  
-[Setting Up User Accounts for Integrating with Common Data Service](admin-setting-up-integration-with-dynamics-sales.md)  
-[Set Up a Connection to Common Data Service](admin-how-to-set-up-a-dynamics-crm-connection.md) 
-[Synchronizing Business Central and Common Data Service](admin-synchronizing-business-central-and-sales.md)  
-[Mapping the Tables and Fields to Synchronize](admin-how-to-modify-table-mappings-for-synchronization.md)  
-[Manually Synchronize Table Mappings](admin-manual-synchronization-of-table-mappings.md)  
-[Schedule a Synchronization](admin-scheduled-synchronization-using-the-synchronization-job-queue-entries.md)  
+[Overview](/dynamics365/business-central/admin-common-data-service)  
+[Setting Up User Accounts for Integrating with Common Data Service](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
+[Set Up a Connection to Common Data Service](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection) 
+[Synchronizing Business Central and Common Data Service](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  
+[Mapping the Tables and Fields to Synchronize](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)  
+[Manually Synchronize Table Mappings](/dynamics365/business-central/admin-manual-synchronization-of-table-mappings)  
+[Schedule a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries)  
