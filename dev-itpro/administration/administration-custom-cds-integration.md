@@ -143,7 +143,7 @@ To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a
 <!-- Shouldn't step 0 be: Create a codeunit to manage this?-->
 
 1. Create a new codeunit.
-2. In codeunit **"CRM Setup Defaults"** (ID 5334), subscribe to the **OnGetCDSTableNo** event, as follows:
+2. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnGetCDSTableNo** event, as follows:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnGetCDSTableNo', '', false, false)]
@@ -156,7 +156,7 @@ begin
 end;
 ```
 
-3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[d365fin](includes/cds_long_md.md)]. In this case, that's table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **"Integration Management"** (ID 5150) that we can use to enable integration records for the **Employee** table.
+3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[d365fin](includes/cds_long_md.md)]. In this case, that's table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
@@ -179,9 +179,10 @@ begin
 end;
 ```
 
-When changes occur in the **table 5200 Employee**, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling Business Central records with Common Data Service records.
+When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling Business Central records with Common Data Service records.
 
-4. In codeunit **5332 "Lookup CRM Tables"**, subscribe to the **OnLookupCRMTables** event, as follows:
+4. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
+
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Lookup CRM Tables", 'OnLookupCRMTables', '', true, true)]
 local procedure HandleOnLookupCRMTables(CRMTableID: Integer; NAVTableId: Integer; SavedCRMId: Guid; var CRMId: Guid; IntTableFilter: Text; var Handled: Boolean)
@@ -217,7 +218,8 @@ end;
 ```
 
 ### To create actions on the employee page for managing coupling and synchronization
-To enable users to create couplings between records in the two systems, we'll extend **page 5200 "Employee Card"** with actions for creating and deleting couplings, and for synchronizing. The following code example adds those actions to **page 5200 "Employee Card"**.
+
+To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, and for synchronizing. The following code example adds those actions to **Employee Card**.
 
 ```
 pageextension 50101 "Employee Synch Extension" extends "Employee Card"
