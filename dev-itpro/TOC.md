@@ -676,6 +676,6 @@
 # Integrating
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
-### [AL Proxy Table Generator](developer/devenv-al-proxy-table-generator.md)
+### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 # [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
 <!-- preview of Graph API ends -->
