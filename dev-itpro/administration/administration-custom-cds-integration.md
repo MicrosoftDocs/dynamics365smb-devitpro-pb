@@ -19,7 +19,7 @@ This walkthrough describes how to customize an integration between [!INCLUDE[pro
 
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
 
-1. Develop an AL extension to integrate entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview).
+1. Develop an AL extension to integrate entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Create an integration table object in [!INCLUDE[prodshort](../includes/prodshort.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity to a [!INCLUDE[prodshort]../(includes/prodshort.md)] record type.  
 3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as a data source for a page in [!INCLUDE[prodshort](../includes/prodshort.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity records.  
 4. Extend a page in [!INCLUDE[prodshort](../includes/prodshort.md)] for coupling and synchronizing entity records in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prodshort](../includes/prodshort.md)].  
@@ -38,13 +38,13 @@ This walkthrough requires the following:
     - Worker entity.
 
     > [!NOTE]  
-    > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [here](https://docs.microsoft.com/en-us/dynamics365/talent/corehrentities#worker-entities).
+    > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [here](https://docs.microsoft.com/dynamics365/talent/corehrentities#worker-entities).
     - The URL of your CDS environment.
     - The user name and password of a user account that has full permissions to add and modify entities.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
     - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
     - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. <!--For more information, see []()....  -->
-    - Visual Studio Code with the AL Language extension installed. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it [here](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+    - Visual Studio Code with the AL Language extension installed. For more information, see [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it [here](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
     > Make sure that your integration user has permission to access the Worker entity.
@@ -58,7 +58,7 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
 
 ### To create the integration table for the worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] 
 
-1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview).
+1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Export the **AL Table Proxy Generator** called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed .vsix file, go to the equivalent of this folder: `C:\Users\solsen\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
 3. In PowerShell, run the tool with the following arguments:
     ```
@@ -405,13 +405,13 @@ To create an integration field mapping, follow these steps:
 Users can now manually synchronize employee records in [!INCLUDE[prodshort](../includes/prodshort.md)] with Worker entity records in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prodshort](../includes/prodshort.md)] client.  
 
 > [!TIP]  
-> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities in the codeunit. For more information, see [Scheduling a Synchronization](admin-scheduled-synchronization-using-the-synchronization-job-queue-entries.md).
+> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
 ## Customizing Synchronization  
 
 When synchronizing data, some entities may require custom code to successfully synchronize data. Other entities might require the initialization of fields, the validation of relationships, or the transformation of data.  
 
-You can either use the standard transformation rules on page **Integration Field Mapping List** (ID 5361) or you can transform data programmatically. For more information, see [Transformation Rules](across-how-to-set-up-data-exchange-definitions#transformation-rules).
+You can either use the standard transformation rules on page **Integration Field Mapping List** (ID 5361) or you can transform data programmatically. For more information, see [Transformation Rules](/dynamics365/business-central/across-how-to-set-up-data-exchange-definitions#transformation-rules).
 
 During the synchronization process, certain events are published and raised by codeunit **Integration Table Synch.** (ID 5335). We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes the events that are published by codeunit **Integration Table Synch.**.  
 
@@ -428,7 +428,7 @@ During the synchronization process, certain events are published and raised by c
 |OnAfterModifyRecord|Occurs after an existing destination record is modified, and can be used to perform post-modify operations such as updating related data.|  
 |OnTransferFieldData|Occurs before an existing destination field value is transferred to a source field, and can be used to perform specific transformations of data when the data types of the source and the destination field are different but can be mapped.|  
 
-For more information about how to subscribe to events, see [Subscribing to Events](Subscribing-to-Events.md).
+For more information about how to subscribe to events, see [Subscribing to Events](Subscribing-to-Events.md). <!-- check this -->
 
 ## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
