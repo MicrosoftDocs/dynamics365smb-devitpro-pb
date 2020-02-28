@@ -16,6 +16,7 @@ ms.date: 02/28/2020
 This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[d365fin](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and worker in [!INCLUDE[d365fin](../includes/cds_long_md.md)]. 
 
 ## About this walkthrough
+
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[d365fin](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
 
 1. Develop an AL extension to integrate entities in [!INCLUDE[d365fin](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview).
