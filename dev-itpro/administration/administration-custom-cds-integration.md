@@ -49,14 +49,14 @@ This walkthrough requires the following:
     > [!NOTE]  
     > Make sure that your integration user has permission to access the Worker entity.
 
-## Create an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[cds_long_md](includes/cds_long_md.md)] entity  
+## Create an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity  
 
-To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[cds_long_md](includes/cds_long_md.md)] entity, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** entity in [!INCLUDE[cds_long_md](includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
+To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
 
 > [!NOTE]  
 > The table can contain some or all of the fields from the Common Data Service entity. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
 
-### To create the integration table for the worker entity in [!INCLUDE[cds_long_md](includes/cds_long_md.md)] 
+### To create the integration table for the worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] 
 
 1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview).
 2. Export the **AL Table Proxy Generator** called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed .vsix file, go to the equivalent of this folder: `C:\Users\solsen\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
@@ -74,11 +74,11 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
     
     This starts the process for creating the table. When completed, the output path contains the .al file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
 
-## Create a page for displaying [!INCLUDE[cds_long_md](includes/cds_long_md.md)] data  
+## Create a page for displaying [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data  
 
 For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses table **CDS Worker** with ID 50000 as its data source.  
 
-### To create a list page to display [!INCLUDE[cds_long_md](includes/cds_long_md.md)] workers  
+### To create a list page to display [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] workers  
 
 1. Create a new page. For more information, see [Pages Overview](../developer/devenv-pages-overview.md). 
 2. Name the page **CDS Worker List**, and specify **50001** as the page ID.  
@@ -137,9 +137,9 @@ page 50001 "CDS Worker List"
 4. Add the fields from the integration table to display on the page. 
 
 
-## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]
+## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]
 
-To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity record, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](includes/cds_long_md.md)] record and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
+To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity record, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] record and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
 
 <!-- Shouldn't step 0 be: Create a codeunit to manage this?-->
 
@@ -157,7 +157,7 @@ begin
 end;
 ```
 
-3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](includes/cds_long_md.md)]. In this case, that's table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
+3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that's table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
@@ -331,7 +331,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 
 For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **Employee**). There are two types of mapping:  
 
-- **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](includes/cds_long_md.md)] entity.  
+- **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity.  
 - **integration field mapping** - Field mapping links a field in an entity record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort](../(includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for an entity.  
 
 In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prodshort](../includes/prodshort.md)]. 
@@ -372,7 +372,7 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     ``` 
 
    For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../
-includes/prodshort.md)] that we want to map to the Worker entity in [!INCLUDE[cds_long_md](includes/cds_long_md.md)].  
+includes/prodshort.md)] that we want to map to the Worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
 
@@ -418,7 +418,7 @@ During the synchronization process, certain events are published and raised by c
 
 |Event|Description|  
 |-----------|-----------------|  
-|OnFindUnCoupledDestinationRecord|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prodshort]../(includes/prodshort.md)] currency codes with ISO currency codes in [!INCLUDE[cds_long_md](includes/cds_long_md.md)].|  
+|OnFindUnCoupledDestinationRecord|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prodshort](../includes/prodshort.md)] currency codes with ISO currency codes in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].|  
 |OnBeforeApplyRecordTemplate|Occurs before applying configuration templates to new records, and can be used to implement algorithms for determining which configuration template to use.<!--point to section about templates.-->|  
 |OnAfterApplyRecordTemplate|Occurs after configuration templates are applied to new records, and can be used to change data after configuration templates have been applied.|  
 |OnBeforeTransferRecordFields|Occurs before transferring data in modified fields (which are defined in the **Integration Field Mapping** table) from the source table to the destination table. It can be used to validate the source or destination before the data is moved.|  
@@ -433,12 +433,12 @@ For more information about how to subscribe to events, see [Subscribing to Event
 
 ## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
-Let us explore another scenario. If we added an **Industry** field to the **Contact** entity in [!INCLUDE[cds_long_md](includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](includes/cds_long_md.md)].
+Let us explore another scenario. If we added an **Industry** field to the **Contact** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ### To create the integration table extension for table "CRM Contact" (ID 5342)
 
 1. Create a new AL extension.
-2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#To-create-the-integration-table-for-the-worker-entity-in-[!INCLUDE[cds_long_md](includes/cds_long_md.md)].
+2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#To-create-the-integration-table-for-the-worker-entity-in-[!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 3. In PowerShell, run the tool with the following arguments:
 
     ```  
@@ -487,7 +487,7 @@ pageextension 60001 ContactCardExtension extends "Contact Card"
 
 ## Add new integration field mapping for Industry
 
-Now that we have the field in both [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that we will subscribe to the **OnAfterResetContactContactMapping** event in codeunit **CDS Setup Defaults** (ID 7204), as follows:
+Now that we have the field in both [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that we will subscribe to the **OnAfterResetContactContactMapping** event in codeunit **CDS Setup Defaults** (ID 7204), as follows:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Setup Defaults", 'OnAfterResetContactContactMapping', '', true, true)]
