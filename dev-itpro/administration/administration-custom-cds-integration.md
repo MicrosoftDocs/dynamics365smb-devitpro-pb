@@ -332,7 +332,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **Employee**). There are two types of mapping:  
 
 - **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity.  
-- **integration field mapping** - Field mapping links a field in an entity record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort](../(includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for an entity.  
+- **integration field mapping** - Field mapping links a field in an entity record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort](../includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for an entity.  
 
 In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prodshort](../includes/prodshort.md)]. 
 
@@ -371,8 +371,7 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ``` 
 
-   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../
-includes/prodshort.md)] that we want to map to the Worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../includes/prodshort.md)] that we want to map to the Worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
 
