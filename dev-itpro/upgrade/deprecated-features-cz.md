@@ -42,7 +42,7 @@ A new setup was added for this feature – **FA Extended Posting Group** table. 
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
-|Moved|The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation. |2020 release wave 2|
+|Moved|The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/LocalFunctionality/Czech/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation. |2020 release wave 2|
 
 ## Posting Description
 
