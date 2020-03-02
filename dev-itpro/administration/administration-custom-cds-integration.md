@@ -56,7 +56,7 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
 > [!NOTE]  
 > The table can contain some or all of the fields from the Common Data Service entity. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
 
-### To create the integration table for the worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] 
+### To create the integration table for the worker entity in Business Central 
 
 1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Export the **AL Table Proxy Generator** called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed .vsix file, go to the equivalent of this folder: `C:\Users\solsen\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
@@ -245,7 +245,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                     Visible = true;
                     Image = Refresh;
                     Enabled = CDSIsCoupledToRecord;
-                    ToolTip = 'Send or get updated data to or from CDS.';
+                    ToolTip = 'Send or get updated data to or from Common Data Service.';
 
                     trigger OnAction()
                     var
@@ -273,7 +273,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                 {
                     Caption = 'Coupling';
                     Image = LinkAccount;
-                    ToolTip = 'Create, change, or delete a coupling between the Business Central record and a CDS record.';
+                    ToolTip = 'Create, change, or delete a coupling between the Business Central record and a Common Data Service record.';
 
                     action(ManageCDSCoupling)
                     {
@@ -281,7 +281,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                         ApplicationArea = All;
                         Visible = true;
                         Image = LinkAccount;
-                        ToolTip = 'Create or modify the coupling to a CDS Worker.';
+                        ToolTip = 'Create or modify the coupling to a Common Data Service Worker.';
 
                         trigger OnAction()
                         var
@@ -297,7 +297,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                         Visible = true;
                         Image = UnLinkAccount;
                         Enabled = CDSIsCoupledToRecord;
-                        ToolTip = 'Delete the coupling to a CDS Worker.';
+                        ToolTip = 'Delete the coupling to a Common Data Service Worker.';
 
                         trigger OnAction()
                         var
@@ -441,7 +441,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
 ### To create the integration table extension for table "CRM Contact" (ID 5342)
 
 1. Create a new AL extension.
-2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#To-create-the-integration-table-for-the-worker-entity-in-[!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#To-create-the-integration-table-for-the-worker-entity-in-business-central).
 3. In PowerShell, run the tool with the following arguments:
 
     ```  
