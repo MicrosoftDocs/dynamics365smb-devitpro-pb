@@ -56,4 +56,5 @@ The following example starts the process for creating a new integration table in
 ```
 
 ## See Also
-[](cross link to the walkthrough of integrating CDS and BC)
+
+[Custom Integration with Common Data Service](../administration/administration-custom-cds-integration.md)  
