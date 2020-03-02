@@ -128,6 +128,9 @@ The following table describes the settings that are available in the navsettings
 |UseAdditionalSearchTerms|Specifies whether **Tell me** uses the additional search terms that are defined on pages and reports.<br /><br />The additional search terms are specified by the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties.<br /><br /> If you set this to `false` the additional search terms are ignored.<br /><br /> Default value: true |
 |DefaultRelativeHelpPath|Specifies the default Help article to open if no other context-sensitive link is specified.<br /><br /> Default value: none|
 |PersonalizationEnabled|Specifies whether personalization is enabled in the [!INCLUDE[webclient](../developer/includes/webclient.md)]. Set to `true` to enable personalization.<br /><br />For more information, see [Managing Personalization](/dynamics365/business-central/ui-personalization-manage).|
+|ProductName|Specifies the full name of the application.|
+|ProductNameShort|Specifies the short name of the application.|
+|ProductNameMarketing|Specifies the marketing name of the application.|
 
 ### `ApplicationIdSettings` element settings
 
