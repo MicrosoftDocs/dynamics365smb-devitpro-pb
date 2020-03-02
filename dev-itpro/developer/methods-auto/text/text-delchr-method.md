@@ -2,7 +2,7 @@
 title: "DelChr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,37 +46,29 @@ The end result String.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The DELCHR method is case-sensitive.  
+
+The DELCHR method is case-sensitive.  
   
- If you omit the *Which* parameter, then the method deletes spaces from *String* based on the contents of the *Where* parameter as follows:  
+If you omit the *Which* parameter, then the method deletes spaces from *String* based on the contents of the *Where* parameter as follows:  
   
--   If *Where* contains =, then all the spaces are deleted from *String*.  
+- If *Where* contains =, then all the spaces are deleted from *String*.  
+- If *Where* contains \<, then all the spaces at the start of *String* are deleted.  
+- If *Where* contains >, then all the spaces at the end of *String* are deleted.  
+- If *Where* contains any other character, then an error is returned.  
+- If *Where* is empty, then *String* is returned unchanged.  
   
--   If *Where* contains \<, then all the spaces at the start of *String* are deleted.  
+If you use the *Where* and the *Which* parameters, then the method deletes from *String* the characters that are contained in the *Which* parameter based on the contents of the *Where* parameter as follows:  
   
--   If *Where* contains >, then all the spaces at the end of *String* are deleted.  
+- If *Where* contains =, then every occurrence of the characters in *Which* are deleted from *String*.  
+- If *Where* contains \<, then the characters in *Which* are only deleted if they occur at the start of *String*.  
+- If *Where* contains >, then the characters in *Which* are deleted only if they occur at the end of *String*.  
+- If *Where* contains any other character, then an error is returned.  
+- If *Where* is empty, then *String* is returned unchanged.  
+- If *Which* is empty, then *String* is returned unchanged.  
   
--   If *Where* contains any other character, then an error is returned.  
+The *Which* parameter contains an array of the characters that you want to delete. The order of the characters is of no significance. If *String* contains a character that is specified in *Which*, it is deleted from *String*.  
   
--   If *Where* is empty, then *String* is returned unchanged.  
-  
- If you use the *Where* and the *Which* parameters, then the method deletes from *String* the characters that are contained in the *Which* parameter based on the contents of the *Where* parameter as follows:  
-  
--   If *Where* contains =, then every occurrence of the characters in *Which* are deleted from *String*.  
-  
--   If *Where* contains \<, then the characters in *Which* are only deleted if they occur at the start of *String*.  
-  
--   If *Where* contains >, then the characters in *Which* are deleted only if they occur at the end of *String*.  
-  
--   If *Where* contains any other character, then an error is returned.  
-  
--   If *Where* is empty, then *String* is returned unchanged.  
-  
--   If *Which* is empty, then *String* is returned unchanged.  
-  
- The *Which* parameter contains an array of the characters that you want to delete. The order of the characters is of no significance. If *String* contains a character that is specified in *Which*, it is deleted from *String*.  
-  
-## Example  
+## Example 1
 
 ```
 var
@@ -101,7 +93,7 @@ end;
   
  The method deletes every W and s that is either the first or last character in *String*.  
   
-## Example  
+## Example 2
 
 ```
 var
@@ -126,7 +118,7 @@ end;
   
  The method deletes every s and x from *String*.  
   
-## Example  
+## Example 3
  
 ```
 var
@@ -151,7 +143,7 @@ end;
   
  If T, e, l, or y is the last character in *String*, the method deletes them.  
   
-## Example  
+## Example 4
 
 ```
 var
@@ -176,7 +168,7 @@ end;
   
  If T, h, s, i, or space is the first character in *String*, the method deletes them.  
   
-## Example  
+## Example 5
 
 ```
 var
@@ -200,6 +192,24 @@ end;
   
  The method removes any spaces from the start of *String*.  
   
+## Example 6
+
+```
+var
+    String: Text;
+    NewString: Text;
+    Text000: Label ' Windy West Solutions '; // note that there can be multiple leading and trailing spaces
+    Text001: Label '>%1< is transformed to >%2<';
+begin
+    String := Text000;
+    NewString := DELCHR(String);
+    MESSAGE(Text001, String, NewString);
+end;
+```
+The message window displays the following:
+
+**> Windy West Solutions < is transformed to >WindyWestSolutions<**
+
 
 ## See Also
 [Text Data Type](text-data-type.md)  

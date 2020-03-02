@@ -27,9 +27,9 @@ This topic describes the steps and development environment configuration setting
 ## Prerequisites
 Make sure to have the following prerequisites installed to be able to follow the steps in this topic.
 
-- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed.
-- Visual Studio Code.
-- The AL Language extension.
+- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed
+- Visual Studio Code
+- The AL Language extension
 
 ## To publish a code customization for Business Central on-prem
 
@@ -105,7 +105,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     This can give an error regarding dependencies on the Base Application. To solve this, you must unpublish all the applications with dependencies on the Base Application.
 
-    A script like the following is useful for unpublishing the app and all of its dependencies. For example, use Windows PowerShell ISE to create a new script with the following lines of code:
+    A script like the following is useful for unpublishing the app and all of its dependencies. For example, use Windows PowerShell ISE to create a new script with the following lines of code. Save the script as **unpublish.ps1**. 
 
     ```
     function UnpublishAppAndDependencies($ServerInstance, $ApplicationName)
@@ -127,7 +127,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     
     }
     ```
-12. Run the script that you created in **step 11** to handle the uninstall and unpublishing of the Base Application and its dependencies.
+12. Run the script that you created in **step 11** to handle the uninstall and unpublishing of the Base Application and its dependencies. From the PowerShell commandline run `.\unpublish.ps1`.
 13. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
 14. Import a license with rights to publish the extension. For example:  
