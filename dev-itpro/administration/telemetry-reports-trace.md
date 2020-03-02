@@ -14,35 +14,40 @@ ms.author: jswymer
 
 # Analyzing Report Generation Telemetry
 
-Report generation telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
+Report generation telemetry gathers data about reports that succeeded or failed to generate. 
 
-As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
 
-|Condition|Analysis|
-|---------|--------|
-|A web service request results in a long running SQL query|Adjust or fine-tune code.|
-|Web service requests to a specific endpoint read more rows than requests to the other endpoints|Consider adding filtering to limit the rows that are read.|
-|Fewer API type requests compared with other types|With SOAP and OData requests, computation resources are used on UI elements that aren't relevant. Instead of exposing normal pages as web service endpoints, use the built-in API pages. API pages are optimized for this scenario.|
-|High number of requests to endpoints that contain `powerbi`|PowerBI This condition may indicate excessive PowerBI integration.|
 
 For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
 
 > [!NOTE]
 > [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online and on-premises are configured with various limits on web service requests. For example, there is a request timeout and a maximum connections limit. For online, you can't change these limits, but it is helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md).
 
+
+## Operation: Success report generation
+
 ## General dimensions
 
-The following table explains the general dimensions included in a **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
+The following table explains the general dimensions included in a **Success report generation** operation. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
 |operation_Name|**Success report generation**||
-|message|**The report <ID> '<Name' rendered succesfully**||
+|message|**The report <ID> '<Name>' rendered succesfully** The report <ID> '<Name>' couldn't be rendered||
 |severityLevel|**1**||
+
+
+## Operation: Failed report generation
+
+|Dimension|Description or value||
+|---------|-----|-----------|
+|operation_Name|**Failed report generation**||
+|message|**The report <ID> '<Name>' couldn't be rendered**||
+|severityLevel|**2**||
 
 ## Custom dimensions
 
-The following table explains the custom dimensions included in a **Success report generation** trace.
+The following table explains the custom dimensions included in a **Success report generation** and **Failed report generation** trace.
 
 <!--
 ```
@@ -64,7 +69,7 @@ The following table explains the custom dimensions included in a **Success repor
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.||
 |component|**Dynamics 365 Business Central Server**|
-|result|**Success**|
+|result|**Success** or **Failed**|
 |alObjectName|Specifies the name of the AL object that was run by the request.||
 |alObjectType|Specifies the type of the AL object that was run by the request.||
 |extensionId|Specifies the AppID of the extension.||
