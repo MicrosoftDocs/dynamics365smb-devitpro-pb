@@ -12,262 +12,70 @@ ms.date: 02/18/2020
 ms.author: jswymer
 ---
 
-# Analyzing Web Services Telemetry
+# Analyzing Web Services Call Telemetry
 
-Web Services telemetry provides information about the SOAP, OData, and API web service requests from the tenant. In particular the telemetry shows how long it took to complete a request. 
+Web services call telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
 
-There are several  can a partner infer from web service signal
-- Many messages where endpoint contains “powerbi” => excessive powerBI integration usage​
-- I  web service call + long running  sql query => maybe need to adjust/tune codeunit​
-- If calls to a specific endpoint are significantly longer then to the other endpoints – consider adding filtering​
-- If web service calls to a specific endpoint read more SQL rows then to the other endpoints – consider adding filtering​
-- If many requests <> API type => uptake API pages to get better perf​
+As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
 
-The next stage occurs after a successful authorization attempt, when trying to open the company (that is, when the CompanyOpen trigger run). The telemetry data indicates whether the company opened successfully or failed (for some reason).
+|Condition|Analysis|
+|---------|--------|
+|A web service request results in a long running SQL query|Adjust or fine-tune code.|
+|Web service requests to a specific endpoint read more rows than requests to the other endpoints|Consider adding filtering to limit the rows that are read.|
+|Fewer API type requests compared with other types|With SOAP and OData requests, computation resources are used on UI elements that aren't relevant. Instead of exposing normal pages as web service endpoints, use the built-in API pages. API pages are optimized for this scenario.|
+|High number of requests to endpoints that contain `powerbi`|PowerBI This condition may indicate excessive PowerBI integration.|
 
-## Operation: Success Authorization (Pre Open Company)
+For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
 
-Occurs when a user has been successfully authorized.
+> [!NOTE]
+> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online and on-premises are configured with various limits on web service requests. For example, there is a request timeout and a maximum connections limit. For online, you can't change these limits, but it is helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md).
 
 ### General dimensions
 
-The following tables explains the dimensions included in a **Success Authorization** signal.
+The following table explains the general dimensions included in a **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
-|operation_Name|**Web Service Call**||
-|message|**Authorization steps prior to the open company trigger succeeded.**||
+|operation_Name|**Web Services Call**||
+|message|**Received a web service request of type API**<br />**Received a web service request of type ODataV4**<br />**Received a web service request of type ODataV3**<br />**Received a web service request of type SOAP**||
 |severityLevel|**1**||
-
-<!--
-|operation_Name|**Success Authorization (Pre Open Company)**||-->
 
 ### Custom dimensions
 
-The following tables explains the custom dimensions included in a **Success Authorization** signal.
+The following table explains the custom dimensions included in a **Web Services Call** trace.
 
-
-{"Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:00.3886441","Component version":"16.0.11329.0","componentVersion":"16.0.11329.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","sqlExecutes":"21","aadTenantId":"common","sqlRowsRead":"117","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.3886441","alObjectName":"Sales Document Line Entity","alObjectType":"Page","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines","alObjectId":"6403"}
+<!--
+```
+{"Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","Component version":"16.0.11329.0","componentVersion":"16.0.11329.0","Environment type":"Production","environmentType":"Production","serverExecutionTime":"00:00:00.3886441","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","component":"Dynamics 365 Business Central Server","AadTenantId":"common","aadTenantId":"common","Component":"Dynamics 365 Business Central Server","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines"}
+```
+-->
 
 |Dimension|Description or value||
 |---------|-----|-----------|
-|authorizationStatus|**Succeeded**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
-|entitlementSetIds |Specifies the entitlements that the user has in Business Central.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. Currently, the version is **0.2** ||
-|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
-
-|Column (key)|Description or value||
-|---------|-----|-----------|
-|longRunningThresholdInMs|Specifies the amount of time (in milliseconds) that an SQL query can run before a warning event is recorded. This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting called SqlLongRunningThreshold. |
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
-|executionTimeInMs|Specifies the time in milliseconds that it took to execute the SQL statement.||
-|component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.||
-|environmentType|Specifies thee environment type of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
-|sqlStatement|Specifies the SQL statement that was executed for the long running query. The value is limited to 8192 characters. If the value exceeds 8192 characters, it will be truncated in manner that still provides the most pertinent information.||
-|clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
-|alStackTrace|The stack trace in AL.||
-|alObjectName|The name of the AL object that executed the SQL statement||
-|alObjectType|The type of the AL object that executed the SQL statement||
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at tome of execution. ||
-|alObjectId|The type of the AL object that executed the SQL statement.||
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
+|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
+|component|**Dynamics 365 Business Central Server**|
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
+|sqlExecutes|Specifies the number of SQL statements that the request executed. ||
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.||
+|totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.||
+|alObjectType|Specifies the type of the AL object that was run by the request.||
+|alObjectName|Specifies the name of the AL object that was run by the request.||
+|alObjectId|Specifies the ID of the AL object that was run by request.||
+|category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.||
+|endpoint|Specifies the endpoint for the request.||
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|extensionName|Specifies the name of the extension.||
-|extensionAppId|Specifies the AppID of the extension.||
-|extensionVersion|Specifies the version of the extension.||
 
-### <a name="usertype"></a> UserType
 
-|Value|Description|See more|
-|-----|-----------|--------|
-|Delegated_admin|This indicates that the user is as a delegated administrator on the tenant. This is typically reserved for partners. Delegated administrator privileges are granted to users by the customer. This is done by setting up a Partner Relationship in the Microsoft Partner Center.|[Delegated Administrator Access to Business Central Online](delegated-admin.md)<br /><br />[Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)|
-|Internal_Admin|This indicates that the user is an internal administrator on the tenant, which means that the user is assigned the **Global admin** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 Admin Center](/office365/admin/add-users/assign-admin-roles)|
-|Normal user|This indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
+### Example trace
 
-## Operation: Failed Authorization (Pre Open Company)
+The following code snippet is a CustomDimensions example: 
 
-Occurs when a user sign-in in has failed authorization.
-
-### General dimensions
-
-The following tables explains the columns included in a Success Authorization trace.
-
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|**Authorization steps prior to the open company trigger failed, see failureReason column for details.**||
-|severityLevel|**1**||
-
-<!--
-|operation_Name|**Authorization Failed (Pre Open Company)**||
-
-{"aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","Component version":"15.0.40494.0","guestUser":"False","Telemetry schema version":"0.2","failureReason":"The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.","authorizationStatus":"Failed","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","Environment type":"Production","Component":"Dynamics 365 Business Central Server","Environment name":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","componentVersion":"15.0.40494.0"}
--->
-
-### Custom dimensions
-
-|Dimension|Description or value||
-|---------|-----|-----------|
-|authorizationStatus|**Failed**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user is belongs to the tenant.||
-|entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
-|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
-|Failure reason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.||
-
-### <a name="authorizationfailures"></a> Troubleshooting failures
-
-#### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
-
-This occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you will see that the **State** field is set to **Disabled**.
-
-*Resolution*
-
-Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
-
-#### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
-
-This occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
-
-Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user is entitled to use, according to their Azure Active Directory role or the license they purchased from Microsoft. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/))
-
-*Resolution*
-
-Entitlements are assigned to the user account in the Microsoft 365 Admin Center or Microsoft Partner Center; they are not assigned in Business Central. To assign entitlements to a user, see one of the following:
-
-- From [Microsoft Office 365 Admin Center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users).
-
-- From the Microsoft Partner Center, see [User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users).
-
-## Operation: Authorization Succeeded (Open Company)
-
-Occurs when the company has opened successfully.
-
-### General dimensions
-
-The following tables explains the columns included in a Success Authorization trace.
-
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|**Authorization steps in the open company trigger succeeded.**||
-|severityLevel|**2**||
-
-<!--
-|operation_Name|**Authorization Succeeded (Open Company)**||
-
-{"Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:00.1210560","authorizationStatus":"Success","Component version":"15.0.40494.0","componentVersion":"15.0.40494.0","Environment type":"Production","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, AadTenantId, Environment name, Environment type, Component, Telemetry schema version","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","companyName":"CRONUS USA, Inc.","sqlRowsRead":"52","sqlExecutes":"23","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","clientType":"WebClient","component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.1210560","Component":"Dynamics 365 Business Central Server","result":"Success"}-->
-
-### Custom dimensions
-
-|Dimension|Description or value||
-|---------|-----|-----------|
-|companyName|||
-|status|**Succeeded**|
-
-## Operation: Authorization Failed (Open Company)
-
-Occurs when a company has failed to open.  
-
-### General dimensions
-
-The following tables explains the columns included in a Success Authorization trace.
-
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|**Authorization steps in the open company trigger failed, see failureReason column for details.**||
-|severityLevel|**3**||
-
-<!--
-|operation_Name|**Authorization Failed (Pre Open Company)**||
-
-
-{"Telemetry schema version":"0.2","environmentName":"Production","Component version":"15.0.40494.0","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","status":"Failed","clientType":"WebClient","telemetrySchemaVersion":"0.2","companyName":"jsco","componentVersion":"15.0.40494.0","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","Environment name":"Production","failureReason":"The user does not have permission to access the company.","component":"Dynamics 365 Business Central Server","environmentType":"Production","Environment type":"Production","Component":"Dynamics 365 Business Central Server"}-->
-
-### Custom dimensions
-
-|Dimension|Description or value||
-|---------|-----|-----------|
-|companyName|Specifies the name of the company that the user tried to open.||
-|status|**Failed**|
-|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.||
-
-### <a name="opencompanyfailures"></a>Troubleshooting failures
-
-#### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
-
-This occurs when a user tries to sign-in to a company whose name exceeds the maximum allowed length.
-
-*Resolution*
-
-This typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. If the name exceeds 30 characters, then this message occurs. Make sure that the user has the proper name of the company.
-
-<!--
-###### The product license permits working with companies that have names that start with ‘<text>’ only.
-
-This occurs when a user tries to open a company whose name does not start with the text that is required by the license.
-
-*Resolution*
--->
-#### The user does not have permission to access the company.
-
-This occurs when a user account in Business Central does not have the proper permissions to the company.
-
-*Resolution*
-
-In Business Central, open the user account and modify the permissions the user to give them access to the company. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
-
-> [!TIP]
-> A good starting point is to look at the **Effective Permissions** that the user has on the company. You can do this from the user card by selecting **Effective Permissions** and setting the **Company** to the company in question.
-
-#### The company doesn't exist.
-
-This occurs when a user tries to sign in to a company, but the company is not found in Business Central.
-
-*Resolution*
-
-This typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. Make sure that the user has the proper name of the company.
-
-
-<!--
-###### The product license permits a maximum of {0} non-demonstration companies.
-
-*Resolution*
--->
-<!--
-###### The user opened a company that does not have any applicable entitlement sets. This will result in permission errors.
-
-*Resolution*
--->
-<!--
-
-Which environment can the user(s) not sign into? e.g. sandbox/prod/all? 
-When was the last successful login for the user(s)? Can the user(s) login now or is this an on-going issue? 
-Has the user done a successful login before the issue? 
-Can the user(s) sign into other services like Office or CRM? 
-What role(s)/type(s) do these users have? e.g. Internal Admin, Delegated Admin, Normal, Device user? 
-Which company does the user try to access, has the user access it before? 
-Was "Refresh All User Groups" run recently by a SUPER user in BC? 
-Are valid licenses assigned to the user(s), if applicable? What type of license was assigned (e.g. premium, essential, paid, trial etc.)? 
-
-For delegated admins: 
-Is the admin added to the tenant? (delegate admins are no listed as a user in the tenant user page in Azure) 
-Verify the partnership is valid (in the customer tenant) 
-Open portal.office.com and go to the admin page.  
-Click “Partner relationships”, then click the partner name.  
-In the properties of the partner the property “Partner Relationship” should include “Admin” 
-Verify the user (delegated admin) is an Admin or Helpdesk agent in the partner tenant.  
-Open the Partner center  
-Go to users and verify the type of the user to be an Admin or Helpdesk agent under the property “Assist your customers as”. 
-For device users, were they setup correctly? See Analyze device user login issues. 
-Are the users "enabled" in the BC users page? (information available in the Cloud Manager)  
-Are the users marked expired? Were users recently exported/imported via Excel?  
-Was the user assigned the correct permissions from the users page? 
-Were there any changes to the user recently? Like, permissions/licenses/roles change? Or maybe user was disabled/enabled? 
-Permissions are assigned via the Users page in Business Central. 
-Licenses are either assigned via the Office or Azure portal by the tenant admin. 
-Roles are assigned via the Partner Center. 
-The user can be enabled/disabled from the Users page in Business Central. 
-
--->
+`
+{"telemetrySchemaVersion":"0.3","componentVersion":"16.0.11329.0","environmentType":"Production","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines"}
+`
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
