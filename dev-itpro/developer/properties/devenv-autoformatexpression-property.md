@@ -2,7 +2,7 @@
 title: "AutoFormatExpression Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,11 +19,9 @@ Sets an AL expression that specifies how to format data.
 ## Applies To  
  Fields (or columns) of the decimal data type in the following objects:  
   
--   Tables  
-  
--   Pages  
-  
--   Reports  
+- Tables  
+- Pages   
+- Reports  
   
 ## Syntax
 ```
@@ -75,7 +73,7 @@ This example prefixes the decimal value with a $, includes a thousand separator,
 
 ```
 AutoFormatType = 1;
-AutoFormatExpression = '$<precision, 2:2><standard format, 0>
+AutoFormatExpression = '$<precision, 2:2><standard format, 0>':
 ```
 ## See Also
 

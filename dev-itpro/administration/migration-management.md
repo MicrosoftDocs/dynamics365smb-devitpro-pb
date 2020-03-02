@@ -1,5 +1,5 @@
 ---
-title: Administration of the Intelligent Edge for on-premises | Microsoft Docs
+title: Manage the cloud migration
 description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
 author: bmeier94
 
@@ -15,7 +15,7 @@ ms.author: bmeier
 
 ---
 
-# Managing your intelligent cloud environment
+# Managing the Migration to the Cloud
 
 You can connect your on-premises solution to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant for the purpose of migrating your data to the cloud. Once you have set up this configuration, you have access to the **Cloud Migration Management** page in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, from there you can manage your  Cloud environment and data migration.  
 
@@ -47,6 +47,5 @@ The following table describes the actions that you can run from the page:
 ## See also
 
 [Frequently Asked Questions about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
-[Replicating on-premises data](data-replication-intelligent-cloud.md)  
-[Connect to the Intelligent Cloud with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](about-intelligent-edge.md)  
-[Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)
+[Running the Cloud Migration Tool](migration-tool.md)  
+[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
