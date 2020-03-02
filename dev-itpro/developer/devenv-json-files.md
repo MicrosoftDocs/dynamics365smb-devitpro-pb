@@ -95,11 +95,6 @@ The following table describes the settings in the `launch.json` file. The `launc
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 
-
-<!--
-## The platform symbol file
-The platform symbol file contains all of the base app objects that your extension builds on. If the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code detects that the referenced symbols are not present on local disk, you will get a visual prompt in Visual Studio Code to download the symbols from one of the servers specified in the launch.json file. For more information about the platform symbol file, see [Symbols](devenv-symbols.md). -->
-
 ## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  
