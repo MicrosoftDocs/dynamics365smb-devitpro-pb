@@ -26,24 +26,29 @@ For more performance guidelines, see [Writing efficient Web Services](../perform
 
 ## Operation: Success report generation
 
-## General dimensions
+Occurs when a report data set generates without any errors.
+ 
+### General dimensions
 
 The following table explains the general dimensions included in a **Success report generation** operation. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
 |operation_Name|**Success report generation**||
-|message|**The report <ID> '<Name>' rendered succesfully** The report <ID> '<Name>' couldn't be rendered||
+|message|**The report <ID> '<Name>' rendered successfully**||
 |severityLevel|**1**||
 
 
-## Operation: Failed report generation
+### Operation: Failed report generation
+
+Occurs when the report data set couldn't be generated because of an error.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
 |operation_Name|**Failed report generation**||
 |message|**The report <ID> '<Name>' couldn't be rendered**||
-|severityLevel|**2**||
+|severityLevel|**3**||
+
 
 ## Custom dimensions
 
@@ -53,6 +58,8 @@ The following table explains the custom dimensions included in a **Success repor
 ```
 {"extensionVersion":"16.0.11335.0","Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:07.0126616","Component version":"16.0.11329.0","Environment type":"Production","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","sqlExecutes":"213","aadTenantId":"common","companyName":"CRONUS International Ltd.","sqlRowsRead":"320","AadTenantId":"common","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:07.0753414","component":"Dynamics 365 Business Central Server","result":"Success","alObjectName":"Inventory - Sales Back Orders","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 718","Company name":"CRONUS International Ltd.","Extension version":"16.0.11335.0","alObjectType":"Report","AL Stack trace":"AppObjectType: Report\r\n AppObjectId: 718","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","Client type":"WebClient","AL Object name":"Inventory - Sales Back Orders","alObjectId":"718","AL Object type":"Report","extensionName":"Base Application","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","Extension name":"Base Application","numberOfRows":"50","AL Object Id":"718"}
 ```
+
+{"extensionVersion":"16.0.11335.0","Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:00.1047582","Component version":"16.0.11329.0","Extension version":"16.0.11335.0","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","Environment type":"Production","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","AL Object type":"Report","Extension name":"Base Application","AL Stack trace":"AppObjectType: Report\r\n AppObjectId: 38","AL Object name":"Trial Balance by Period","extensionName":"Base Application","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 38","Company name":"CRONUS International Ltd.","numberOfRows":"0","alObjectName":"Trial Balance by Period","alObjectType":"Report","AL Object Id":"38","Client type":"WebClient","companyName":"CRONUS International Ltd.","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","aadTenantId":"common","sqlRowsRead":"1","sqlExecutes":"1","AadTenantId":"common","alObjectId":"38","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.1047582","result":"NavNCLDialogException"}
 -->
 
 |Dimension|Description or value||
@@ -63,13 +70,13 @@ The following table explains the custom dimensions included in a **Success repor
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |sqlExecutes|Specifies the number of SQL statements that the request executed. ||
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you are not using Azure AD authentication, this value is **common**. ||
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
 |companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.||
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.||
 |component|**Dynamics 365 Business Central Server**|
-|result|**Success** or **NavNCLDialogException**|
+|result|**Success** if the report generated successfully. Otherwise, if the report failed to generate, this column specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
 |alObjectName|Specifies the name of the AL object that was run by the request.||
 |alObjectType|Specifies the type of the AL object that was run by the request.||
 |extensionId|Specifies the AppID of the extension.||
@@ -79,6 +86,8 @@ The following table explains the custom dimensions included in a **Success repor
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 
 ## Example trace
+
+The following code snippet is a CustomDimensions example for a successful report generation. 
 
 `
 {"extensionVersion":"16.0.11335.0","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:07.0126616","componentVersion":"16.0.11329.0","environmentType":"Production","sqlRowsRead":"320","sqlExecutes":"213","aadTenantId":"common","companyName":"CRONUS International Ltd.","clientType":"WebClient","totalTime":"00:00:07.0753414","component":"Dynamics 365 Business Central Server","result":"Success","alObjectType":"Report","alObjectId":"718","extensionName":"Base Application","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","AL Stack trace":"AppObjectType: Report\r\n AppObjectId: 718","AL Object Id":"718","alObjectName":"Inventory - Sales Back Orders","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 718","AL Object name":"Inventory - Sales Back Orders","numberOfRows":"50"}
