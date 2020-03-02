@@ -26,4 +26,4 @@ The Icon font is missing on the [!INCLUDE[nav_web](includes/nav_web_md.md)], [!I
 5.  In the **Internet Options** window, choose the **OK** button.  
   
 ## See Also  
- [Troubleshooting the Business Central Universal App](devenv-Troubleshooting-the-Universal-App.md)  
+ [Troubleshooting the Business Central Mobile App](devenv-Troubleshooting-the-Mobile-App.md)  

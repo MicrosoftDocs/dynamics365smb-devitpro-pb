@@ -12,7 +12,7 @@ author: blrobl
 ---
 
 # Role Center Behaviors
-This section describes in which areas the Role Center pages have a different behavior in the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] than in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)]. This behavior has influence on how you will build your Role Center pages. For information about pages on tablets and phones in general, see [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-differences-and-limitations-developing-pages-business-central-universal-app.md).  
+This section describes in which areas the Role Center pages have a different behavior in the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] than in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)]. This behavior has influence on how you will build your Role Center pages. For information about pages on tablets and phones in general, see [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md).  
   
 ## Behavioral Differences  
   
@@ -25,5 +25,5 @@ This section describes in which areas the Role Center pages have a different beh
 |Parts|Available on the tablet.<br /><br /> On the phone, there is a limit to a total number of 5 parts that can be displayed. If you have multiple parts that contain cues, these are currently displayed as one part.<br /><br /> When building Role Centers it is recommended to avoid using the **Group** type to group the parts that make up the Role Center, and instead create all parts directly underneath the **Container** type. This will optimize the layout to dynamically switch from a 1 to 2 to 3 column layout and thereby fit more display targets.|  
   
 ## See Also  
- [Developing for the Dynamics 365 Business Central Universal App](devenv-developing-for-the-business-central-universal-app.md)   
-[Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-differences-and-limitations-developing-pages-business-central-universal-app.md)  
+ [Developing for the Dynamics 365 Business Central Mobile App](devenv-developing-for-the-business-central-mobile-app.md)   
+[Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  

@@ -114,6 +114,6 @@ page 50106 "Sales Rep Role Center"
  Nancy now has a Role Center that gives her access to most of the information that she needs when she is on the road. The next step for Simon is to refine the Sales Rep Role Center by adding more functionality, for example, the ability to retrieve more lists or making sure that Nancy can smoothly continue to work when she is back at the office on her desktop computer.  
 
 ## See Also  
- [Developing for the Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Developing for the Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   
  [Designing for Different Screen Sizes on Tablet and Phone](devenv-Designing-Different-Screen-Sizes-Tablet-and-Phone.md)   
- [Differences and Limitations When Developing Pages for the Business Central Universal App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Universal-App.md)
+ [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Mobile-App.md)

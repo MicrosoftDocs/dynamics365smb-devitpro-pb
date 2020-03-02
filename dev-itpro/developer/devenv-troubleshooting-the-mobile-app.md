@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting the Business Central Universal App"
+title: "Troubleshooting the Business Central Mobile App"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics365-business-central"
 author: blrobl
 ---
-# Troubleshooting the Business Central Universal App
+# Troubleshooting the Business Central Mobile App
 This section contains information to help you resolve problems using the [!INCLUDE[nav_web](includes/nav_web_md.md)], the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)].  
   
 ## Troubleshooting Topics  
@@ -26,4 +26,4 @@ This section contains information to help you resolve problems using the [!INCLU
  <!-- [Troubleshooting: The Server Is Not Compatible](Troubleshooting--The-Server-Is-Not-Compatible.md) -->
 
  ## See Also
-  [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+  [Developing for the Dynamics 365 Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   

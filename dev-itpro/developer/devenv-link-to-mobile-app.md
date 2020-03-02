@@ -1,5 +1,5 @@
 ---
-title: "Linking to the Dynamics 365 Business Central Universal App"
+title: "Linking to the Dynamics 365 Business Central Mobile App"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -117,4 +117,4 @@ The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure s
   
 ## See Also  
  [Web Client URL](devenv-web-client-urls.md)    
- [Developing for the Dynamics 365 Business Central Universal App](devenv-Developing-for-the-business-central-Universal-App.md)   
+ [Developing for the Dynamics 365 Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   

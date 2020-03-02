@@ -1,5 +1,5 @@
 ---
-title: "Adding Help to the Business Central Universal App"
+title: "Adding Help to the Business Central Mobile App"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics365-business-central"
 author: blrobl
 ---
-# Adding Help to the Business Central Universal App
+# Adding Help to the Business Central Mobile App
 To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution, you have to offer users Help. Although tablets and phones have a simpler interface than both the [!INCLUDE[nav_web](includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], there can be times where the user needs help understanding the purpose of a page or a workflow.  
   
  Adding Help to a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution is not different from adding Help to [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] in general.  
@@ -25,5 +25,5 @@ To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] s
 >  The N\_50006.htm file must adhere to the classic.css style sheet, which you can find on the Help Server.  
   
 ## See Also  
- [Developing for the Business Central Universal App](devenv-developing-for-the-business-central-universal-app.md)   
- [Getting Started Developing for the Business Central Universal App](devenv-getting-started-developing-business-central-universal-app.md)
+ [Developing for the Business Central Mobile App](devenv-developing-for-the-business-central-mobile-app.md)   
+ [Getting Started Developing for the Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)

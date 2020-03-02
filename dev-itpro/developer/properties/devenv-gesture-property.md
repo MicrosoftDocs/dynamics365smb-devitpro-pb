@@ -40,7 +40,5 @@ In Action Designer, you can use the **Gesture** column to view the Gesture prope
 
 ## See Also
 [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md)  
-<!--
-[Developing for the Microsoft Dynamics NAV Universal App](../devenv-Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)  
-[Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md)
--->
+[Developing for the Dynamics 365 Business Central Mobile App](../devenv-Developing-for-the-business-central-Mobile-App.md)   
+<!-- [Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md) -->

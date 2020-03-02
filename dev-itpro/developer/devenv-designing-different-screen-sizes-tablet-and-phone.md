@@ -38,4 +38,4 @@ When designing application pages for the [!INCLUDE[nav_tablet](includes/nav_tabl
 
 ## See Also  
  [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
- [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Universal App](devenv-differences-and-limitations-developing-pages-business-central-universal-app.md)
+ [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)
