@@ -1,6 +1,6 @@
 ---
 title: "Only use BEGIN..END to enclose compound statements."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2020
 ms.reviewer: na

@@ -1,6 +1,6 @@
 ---
 title: "Use a text constant for passing user messages and errors without concatenations."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/02/2020
 ms.reviewer: na
