@@ -47,9 +47,10 @@ When you change the credential type for a [!INCLUDE[server](../developer/include
 
 To edit the configuration for the [!INCLUDE[server](../developer/includes/server.md)] instance, you can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you configure the credential type in the **Credential Type** field on the **General** tab. Alternatively, you can edit the CustomSettings.config file. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
 
+<!--
 > [!IMPORTANT]  
 >  When [!INCLUDE[server](../developer/includes/server.md)] services are deployed on Azure but not as part of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you must configure them on Azure. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](/dynamics-nav/How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
-
+-->
 #### Client Configuration
 
 In the relevant configuration file, find the **ClientServicesCredentialType** parameter and change the value to one of the options listed earlier.  
@@ -66,4 +67,3 @@ With UserName, NavUserPassword, and AccessControlService credential types requir
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
 [Configuring Business Central Server](configure-server-instance.md)  
 <!--[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md)-->  
-[]

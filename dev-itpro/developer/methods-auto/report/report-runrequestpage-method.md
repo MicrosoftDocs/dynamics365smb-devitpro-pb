@@ -52,6 +52,8 @@ XML string that contains the request page parameters that are entered on the req
 > [!NOTE]  
 >  You can use these methods to schedule reports in the job queue.  
 
+Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
+
 ## Example  
  This example illustrates how to use the RUNREQUESTPAGE method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the EXECUTE, SAVEAS, and PRINT methods to preview the report, save it as a PDF file, and print it.  
 
