@@ -69,7 +69,7 @@ The following table explains the custom dimensions included in a **Success repor
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.||
 |component|**Dynamics 365 Business Central Server**|
-|result|**Success** or **Failed**|
+|result|**Success** or **NavNCLDialogException**|
 |alObjectName|Specifies the name of the AL object that was run by the request.||
 |alObjectType|Specifies the type of the AL object that was run by the request.||
 |extensionId|Specifies the AppID of the extension.||
