@@ -28,9 +28,9 @@ As a developer, you use the data to learn about conditions that you can change t
 For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
 
 > [!NOTE]
-> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online and on-premises are configured with various limits on web service requests. For example, there is a request timeout and a maximum connections limit. For online, you can't change these limits, but it is helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md).
+> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online and on-premises are configured with various limits on web service requests. For example, there is a request timeout and a maximum connections limit. For online, you can't change these limits, but it is helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md). Web service calls that exceed the timeout limit result in a **408 - Request Timeout**. These calls are recorded in Application Insights with a totalTime that is equal to the timeout threshold.
 
-### General dimensions
+## General dimensions
 
 The following table explains the general dimensions included in a **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
 
@@ -40,7 +40,7 @@ The following table explains the general dimensions included in a **Web Services
 |message|**Received a web service request of type API**<br />**Received a web service request of type ODataV4**<br />**Received a web service request of type ODataV3**<br />**Received a web service request of type SOAP**||
 |severityLevel|**1**||
 
-### Custom dimensions
+## Custom dimensions
 
 The following table explains the custom dimensions included in a **Web Services Call** trace.
 
@@ -67,7 +67,6 @@ The following table explains the custom dimensions included in a **Web Services 
 |category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.||
 |endpoint|Specifies the endpoint for the request.||
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-
 
 ### Example trace
 

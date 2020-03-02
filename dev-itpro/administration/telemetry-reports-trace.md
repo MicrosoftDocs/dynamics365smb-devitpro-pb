@@ -14,19 +14,11 @@ ms.author: jswymer
 
 # Analyzing Report Generation Telemetry
 
-Report generation telemetry gathers data about reports that succeeded or failed to generate. 
-
-
-
-For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
-
-> [!NOTE]
-> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online and on-premises are configured with various limits on web service requests. For example, there is a request timeout and a maximum connections limit. For online, you can't change these limits, but it is helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md).
-
+Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled for some reason.
 
 ## Operation: Success report generation
 
-Occurs when a report data set generates without any errors.
+This operation occurs when a report dataset generates without any errors.
  
 ### General dimensions
 
@@ -38,21 +30,59 @@ The following table explains the general dimensions included in a **Success repo
 |message|**The report <ID> '<Name>' rendered successfully**||
 |severityLevel|**1**||
 
+## Operation: Failed report generation
 
-### Operation: Failed report generation
+This operation occurs when the report dataset couldn't be generated because of an error.
 
-Occurs when the report data set couldn't be generated because of an error.
+### General dimensions
 
+The following table explains the general dimensions included in a **Failed report generation** operation.
 |Dimension|Description or value||
 |---------|-----|-----------|
 |operation_Name|**Failed report generation**||
 |message|**The report <ID> '<Name>' couldn't be rendered**||
 |severityLevel|**3**||
 
+## Operation: Cancellation report generation
+
+Occurs when the report dataset generation was canceled. The cancellation cab be a result of a limit that was exceeded or the user canceled the operation.
+
+### General dimensions
+
+The following table explains the general dimensions included in a **Cancellation report generation** operation.
+
+|Dimension|Description or value|
+|---------|-----|-----------|
+|operation_Name|**Cancellation report generation**|
+|message|Specifies the reason the reason why the report was canceled. See [Analyzing cancellation messages](#reportcancellation) section for details.
+|
+|severityLevel|**2**|
+
+### <a name="reportcancellation"></a>Analyzing cancellation messages
+
+#### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
+
+This message indicated the
+
+#### Cancellation event received. Requesting cancellation of the action.
+
+This message 
+
+#### Received a cancellation request from the user. Requesting cancellation of the action.
+
+This message
+
+#### The action took longer to complete ({0}) than the specified threshold ({1}). Requesting cancellation of the action.
+
+The message
+
+#### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
+
+This message
 
 ## Custom dimensions
 
-The following table explains the custom dimensions included in a **Success report generation** and **Failed report generation** trace.
+The following table explains the CustomDimensions included in report generation traces.
 
 <!--
 ```
@@ -60,7 +90,7 @@ The following table explains the custom dimensions included in a **Success repor
 ```
 
 {"extensionVersion":"16.0.11335.0","Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:00.1047582","Component version":"16.0.11329.0","Extension version":"16.0.11335.0","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","Environment type":"Production","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","AL Object type":"Report","Extension name":"Base Application","AL Stack trace":"AppObjectType: Report\r\n AppObjectId: 38","AL Object name":"Trial Balance by Period","extensionName":"Base Application","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 38","Company name":"CRONUS International Ltd.","numberOfRows":"0","alObjectName":"Trial Balance by Period","alObjectType":"Report","AL Object Id":"38","Client type":"WebClient","companyName":"CRONUS International Ltd.","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","aadTenantId":"common","sqlRowsRead":"1","sqlExecutes":"1","AadTenantId":"common","alObjectId":"38","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.1047582","result":"NavNCLDialogException"}
--->
+
 
 |Dimension|Description or value||
 |---------|-----|-----------|
@@ -84,6 +114,30 @@ The following table explains the custom dimensions included in a **Success repor
 |extensionName|Specifies the name of the extension.||
 |numberOfRows|Specifies the number of rows generated for the report.||
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+-->
+
+|Dimension|Description or value|
+|---------|-----|-----------|
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|alObjectId|Specifies the ID of the report object that was run.|
+|alObjectName|Specifies the name of the report object that was run.|
+|alObjectType|**Report**.|
+|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|component|**Dynamics 365 Business Central Server**.|
+|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|extensionId|Specifies the appID of the extension that the report object belongs to.|
+|extensionName|Specifies the name of the extension that the report object belongs to.|
+|extensionVersion|Specifies the version of the extension that the report object belongs to.|
+|numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|result|**Success** if the report generated successfully. Otherwise, if the report failed to generate, this column specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
+|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
+|sqlExecutes|Specifies the number of SQL statements that the report executed. |
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
 
 ## Example trace
 
