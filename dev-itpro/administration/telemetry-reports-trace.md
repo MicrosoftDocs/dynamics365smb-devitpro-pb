@@ -37,7 +37,8 @@ This operation occurs when the report dataset couldn't be generated because of a
 ### General dimensions
 
 The following table explains the general dimensions included in a **Failed report generation** operation.
-|Dimension|Description or value||
+
+|Dimension|Description or value|
 |---------|-----|-----------|
 |operation_Name|**Failed report generation**||
 |message|**The report <ID> '<Name>' couldn't be rendered**||
