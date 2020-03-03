@@ -14,7 +14,9 @@ ms.author: jswymer
 
 # Analyzing Report Generation Telemetry
 
-Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled for some reason.
+Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled for some reason. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
+
+You use this data to gather statistics to help identify slow-running reports
 
 ## Operation: Success report generation
 
@@ -67,15 +69,15 @@ The cancellation messages indicate events that caused the report to be canceled.
 
 #### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
 
-This message...
+This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be cancelled. This condition isn't recommended. Reconsider the report design.
 
 #### Cancellation event received. Requesting cancellation of the action.
 
-This message...
+This message occurs when the session canceled a report as it was being generated.
 
 #### Received a cancellation request from the user. Requesting cancellation of the action.
 
-This message occurs when a user canceled a report as it was being generated.
+This message occurs when a user canceled a report in the client as it was being generated.
 
 #### The action took longer to complete ({0}) than the specified threshold ({1}). Requesting cancellation of the action.
 
