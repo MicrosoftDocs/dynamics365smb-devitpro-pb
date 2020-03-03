@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Report Generation Telemetry
 
-Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled for some reason. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
+Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 
 You use this data to gather statistics to help identify slow-running reports
 
@@ -24,7 +24,7 @@ This operation occurs when a report dataset generates without any errors.
  
 ### General dimensions
 
-The following table explains the general dimensions of the **Success report generation** operation. The table lists the dimensions that are specific to Business Central.
+The following table explains the general dimensions of the **Success report generation** operation. 
 
 |Dimension|Description or value|
 |---------|-----|
@@ -34,6 +34,9 @@ The following table explains the general dimensions of the **Success report gene
 
 ### Custom dimensions
 
+The custom dimensions that are of particular interest for this operation include: numberOfRows, result, serverExecutionTime, sqlExecutes, sqlRowsRead, totalTime. For a description of these dimensions and other custom dimensions, see [Custom dimensions](#customdimensions).
+
+<!--
 |Dimension|Description or value|
 |---------|-----|
 |numberOfRows|Specifies the number of rows generated for the report dataset.|
@@ -41,7 +44,7 @@ The following table explains the general dimensions of the **Success report gene
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed. |
 |totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
-
+-->
 ## Operation: Failed report generation
 
 This operation occurs when the report dataset couldn't be generated because of an error.
@@ -58,7 +61,11 @@ The following table explains the general dimensions of the **Failed report gener
 
 ### Custom dimensions
 
-The custom dimensions that are of particular interest for this operation include: numberOfRows, result, serverExecutionTime, sqlExecutes, sqlRowsRead, totalTime. For a description of these dimensions and other custom dimensions, see .
+The custom dimensions that are of particular interest for this operation include: numberOfRows, result, serverExecutionTime, sqlExecutes, sqlRowsRead, totalTime. For a description of these dimensions and other custom dimensions, see [Custom dimensions](#customdimensions).
+
+### Analyzing report generation failures
+
+When a report fails to generate, the `result` column in the CustomDimensions will include the title of the exception that was thrown by the service or the AL code.  
 
 ## Operation: Cancellation report generation
 
@@ -74,7 +81,11 @@ The following table explains the general dimensions of the **Cancellation report
 |message|Specifies the reason why the report was canceled. See [Analyzing cancellation messages](#reportcancellation) section for details.|
 |severityLevel|**2**|
 
-### <a name="reportcancellation"></a>Analyzing cancellation messages
+### Custom dimensions
+
+See [Custom dimensions](#customdimensions).
+
+### <a name="reportcancellation"></a>Analyzing report cancellations
 
 The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that take longer than expected to run and generate a large number of rows.
 
@@ -101,7 +112,7 @@ The service is configured to cancel reports if they take longer to generate than
 
 The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no limit on rows for on-premises.
 
-## Custom dimensions
+## <a name="customdimensions"></a>Custom dimensions
 
 The following table explains the CustomDimensions included in report generation traces.
 
@@ -153,13 +164,13 @@ The following table explains the CustomDimensions included in report generation 
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|numberOfRows|Specifies the number of rows/records generated for the report dataset.|
-|result|**Success** if the report generated successfully. Otherwise, if the report failed to generate, this column specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
-|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that the report executed. |
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+|numberOfRows|Specifies the number of rows/records generated for the report dataset. <br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|result|**Success** if the report generated successfully. Otherwise, if the report failed to generate, this column specifies the title of the exception that was thrown, such as **NavNCLDialogException**.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|sqlExecutes|Specifies the number of SQL statements that the report executed. <br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
-|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
+|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
 
 <!--
 Report cancellation
