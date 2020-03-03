@@ -23,7 +23,7 @@ For general information about database locks in SQL Server, see [Transaction Loc
 
 To view database locks, open page **9511 Database Locks** in the client.
 
-The **Database Locks** page gives snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock. Or, the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition. For an explanation about the fields shown, use the tooltips on the page or refer to [sp_lock (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-lock-transact-sql)
+The **Database Locks** page gives a snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock. Or, the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition. For an explanation about the fields shown, use the tooltips on the page or refer to [sp_lock (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-lock-transact-sql)
 
 > [!TIP]
 > If you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018 or earlier, you'll have to use the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]. On the **Tools** menu, choose **Debugger**, and then choose **Database Locks**.
