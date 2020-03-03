@@ -106,11 +106,11 @@ This message occurs when a user canceled a report in the client as it was being 
 
 #### The action took longer to complete ({0}) than the specified threshold ({1}). Requesting cancellation of the action.
 
-The service is configured to cancel reports if they take longer to generate than a set amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **Max Execution Timeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no timeout for on-premises.
+The service is configured to cancel reports if they take longer to generate than a set amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **Max Execution Timeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no timeout for on-premises by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Reports).
 
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
-The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no limit on rows for on-premises.
+The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no limit on rows for on-premises by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Reports).
 
 ## <a name="customdimensions"></a>Custom dimensions
 
