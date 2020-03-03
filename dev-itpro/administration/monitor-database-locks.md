@@ -1,13 +1,13 @@
 ---
 title: "Monitoring SQL Database Locks"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 03/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 # Monitoring SQL Database Locks
 ## About Locks
@@ -18,8 +18,15 @@ When a database lock occurs, concurrent transactions are limited in their access
 For general information about database locks in SQL Server, see [Locking in the Database Engine](https://aka.ms/sqlserverdatabaselocking).
 
 ## View Database Locks
-You can use the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] to view the current locks in the database. On the **Tools** menu, choose **Debugger**, and then choose **Database Locks**.
 
+To view database locks, open page **9511 Database Locks** in the client. This page gives snapshot of all current database locks. It provides information like table and database resource affected by the lock, the AL object or method that ran the transaction causing the lock, and more. 
+
+For more information, see [Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks).
+
+> [!TIP]
+> If you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018 or earlier, you'll have to use the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]. On the **Tools** menu, choose **Debugger**, and then choose **Database Locks**.
+
+<!--
 The **Database Locks** page displays all the active locks on tables in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server, providing details that can help you better understand the locking condition.
 
 |  Field |  Description  |
@@ -31,6 +38,6 @@ The **Database Locks** page displays all the active locks on tables in the [!INC
 |Executing AL Object Type|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] object in AL that is running the transaction, such as a page or report.|
 |Executing AL Object Id|Specifies the ID of the object that is running.|
 |Executing AL Method|Specifies the AL function that is running the transaction that caused the lock.|
-
+-->
 ##  See Also
 [Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)  
