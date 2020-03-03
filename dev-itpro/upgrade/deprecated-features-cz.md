@@ -9,9 +9,9 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Czech, local functionality
-ms.date: 12/01/2019
-ms.reviewer: v-zdbice
-ms.author: SorenGP
+ms.date: 03/02/2020
+ms.reviewer: edupont
+ms.author: v-zdbice
 
 ---
 
@@ -21,11 +21,11 @@ This topic lists and describes the local functionality for Czech that has been r
 
 ## Statutory Company Information
 
-This feature allows users:
+With this feature, users can:
 
-- define company officials and designate them as General Manager, Accounting and Finance Managers for usage in internal and external documents.
+- define company officials and designate them as General Manager, Accounting Managers, and Finance Managers for usage in internal and external documents.
 - define document footers in different languages. Such footers can be used in different reports and documents.
-- additional company registration numbers and other registration information can be stored in Company Information, for Customers and Vendors and used in documents.
+- additional company registration numbers and other registration information can be stored in Company Information, for customers and vendors, and used in documents.
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
@@ -42,7 +42,7 @@ A new setup was added for this feature – **FA Extended Posting Group** table. 
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
-|Moved|The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/LocalFunctionality/Czech/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation. |2020 release wave 2|
+|Moved|The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/LocalFunctionality/Czech/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] documentation. |2020 release wave 2|
 
 ## Posting Description
 
@@ -62,7 +62,7 @@ This feature transfers Sales and Purchase document line descriptions to G/L Entr
 
 ## General Journal Reconciliation
 
-This functionality has been extended. Net Change in Jnl. and Balance after Posting are not designated for G/L Accounts marked as Reconciliation Account only, but for all G/L Accounts used in General Journal, and also for other account types - Bank Account, Customer, Vendor, Fixed Asset and IC Partner. The functionality works with amounts in General Journal line and does not calculate VAT amounts for VAT Accounts.
+This functionality has been extended. Net Change in Jnl. and Balance after Posting are not designated for G/L Accounts marked as Reconciliation Account only, but for all G/L Accounts used in the general journal, and also for other account types - Bank Account, Customer, Vendor, Fixed Asset and IC Partner. The functionality works with amounts in general journal lines and does not calculate VAT amounts for VAT Accounts.
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
@@ -106,7 +106,7 @@ The functionality includes:
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
-|Removed|This feature will be not supported in extension based Czech SaaS environment and will be deleted. |CU for 01.2021 release 2020 wave 2|
+|Removed|This feature will be not supported in extension-based Czech online tenants and will be deleted. |CU for 01.2021 release 2020 wave 2|
 
 ## VAT Registration in Other Countries
 
@@ -121,7 +121,7 @@ This functionality extends the possibility to work with VAT and allows the user 
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
-|Removed|This feature will be not supported in extension based Czech SaaS environment and will be deleted. |CU for 01.2021 release 2020 wave 2|
+|Removed|This feature will be not supported in extension-based Czech online tenants and will be deleted. |CU for 01.2021 release 2020 wave 2|
 
 ## VAT Identifier
 
