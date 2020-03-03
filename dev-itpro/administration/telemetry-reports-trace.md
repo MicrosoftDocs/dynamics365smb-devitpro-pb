@@ -36,7 +36,7 @@ The following table explains the general dimensions of the **Success report gene
 
 |Dimension|Description or value|
 |---------|-----|
-|numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|numberOfRows|Specifies the number of rows generated for the report dataset.|
 |result|**Success**.|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed. |
@@ -58,13 +58,7 @@ The following table explains the general dimensions of the **Failed report gener
 
 ### Custom dimensions
 
-|Dimension|Description or value|
-|---------|-----|
-|numberOfRows|Specifies the number of rows/records generated for the report dataset.|
-|result|Specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
-|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that the report executed. |
-|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
+The custom dimensions that are of particular interest for this operation include: numberOfRows, result, serverExecutionTime, sqlExecutes, sqlRowsRead, totalTime. For a description of these dimensions and other custom dimensions, see .
 
 ## Operation: Cancellation report generation
 
@@ -82,7 +76,7 @@ The following table explains the general dimensions of the **Cancellation report
 
 ### <a name="reportcancellation"></a>Analyzing cancellation messages
 
-The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that taking longer than expected and generating large number of rows.
+The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that take longer than expected to run and generate a large number of rows.
 
 > [!NOTE]
 > The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds.
@@ -101,11 +95,11 @@ This message occurs when a user canceled a report in the client as it was being 
 
 #### The action took longer to complete ({0}) than the specified threshold ({1}). Requesting cancellation of the action.
 
-The service is configured to cancel reports if they take longer to generate than a specific amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **Max Excecution Timeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no timeout for on-premises. 
+The service is configured to cancel reports if they take longer to generate than a set amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **Max Execution Timeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no timeout for on-premises.
 
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
-The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no timeout for on-premises.
+The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no limit on rows for on-premises.
 
 ## Custom dimensions
 
@@ -142,8 +136,6 @@ The following table explains the CustomDimensions included in report generation 
 |numberOfRows|Specifies the number of rows generated for the report.||
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 -->
-
-Generate
 
 |Dimension|Description or value|
 |---------|-----|-----------|
