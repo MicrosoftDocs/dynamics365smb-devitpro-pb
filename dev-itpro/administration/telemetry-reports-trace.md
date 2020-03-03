@@ -46,7 +46,8 @@ The following table explains the general dimensions of the **Failed report gener
 
 ## Operation: Cancellation report generation
 
-Occurs when the report dataset generation was canceled. There are various conditions that can cancel a report. The trace message provides a reason.
+This operation occurs when the report dataset generation was canceled. There are various conditions that can cancel a report. The **Cancellation report generation** operation emits different trace messages for each condition.
+
 ### General dimensions
 
 The following table explains the general dimensions of the **Cancellation report generation** operation.
@@ -59,6 +60,11 @@ The following table explains the general dimensions of the **Cancellation report
 
 ### <a name="reportcancellation"></a>Analyzing cancellation messages
 
+The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify reports that put a heavy load on the service - taking longer than expected and generating large number of rows.
+
+> [!NOTE]
+> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds.
+
 #### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
 
 This message...
@@ -69,15 +75,15 @@ This message...
 
 #### Received a cancellation request from the user. Requesting cancellation of the action.
 
-This message...
+This message occurs when a user canceled a report as it was being generated.
 
 #### The action took longer to complete ({0}) than the specified threshold ({1}). Requesting cancellation of the action.
 
-The message...
+The service is configured to cancel reports if they take longer to generate than a specific amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **Max Excecution Timeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no timeout for on-premises. 
 
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
-This message...
+The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. By default, there's no timeout for on-premises.
 
 ## Custom dimensions
 
@@ -170,13 +176,14 @@ The following code snippet is a CustomDimensions example for a successful report
 {"extensionVersion":"16.0.11335.0","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:07.0126616","componentVersion":"16.0.11329.0","environmentType":"Production","sqlRowsRead":"320","sqlExecutes":"213","aadTenantId":"common","companyName":"CRONUS International Ltd.","clientType":"WebClient","totalTime":"00:00:07.0753414","component":"Dynamics 365 Business Central Server","result":"Success","alObjectType":"Report","alObjectId":"718","extensionName":"Base Application","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","AL Stack trace":"AppObjectType: Report\r\n AppObjectId: 718","AL Object Id":"718","alObjectName":"Inventory - Sales Back Orders","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 718","AL Object name":"Inventory - Sales Back Orders","numberOfRows":"50"}
 `
 
+<!--
 
 {"telemetrySchemaVersion":"0.2","extensionVersion":"1.0.0.0","componentVersion":"16.0.11208.0","environmentType":"Production","companyName":"CRONUS International Ltd.","aadTenantId":"common","clientType":"WebClient","component":"Dynamics 365 Business Central Server","extensionName":"ALReportSample","Company name":"CRONUS International Ltd.","alObjectType":"Report","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 50101\r\n AL CallStack: \"Report Layout Selection\"(Page 9652).\"RunReport - OnAction\"(Trigger) line 2 - Base Application by Microsoft","alObjectName":"TestReportMultipleIndentNoDlg","extensionId":"9a5a538b-d041-4042-99c2-3268a8cb827a","alObjectId":"50101"}
 
 
 
 {"telemetrySchemaVersion":"0.2","componentVersion":"16.0.11059.0","environmentType":"Production","aadTenantId":"common","companyName":"CRONUS International Ltd.","clientType":"WebClient","component":"Dynamics 365 Business Central Server","extensionVersion":"1.0.0.0","extensionName":"ALReportSample","Company name":"CRONUS International Ltd.","alObjectType":"Report","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 50102\r\n AL CallStack: \"Report Layout Selection\"(Page 9652).\"RunReport - OnAction\"(Trigger) line 2 - Base Application by Microsoft","alObjectName":"TestReportMultipleIndentOnOff","extensionId":"9a5a538b-d041-4042-99c2-3268a8cb827a","alObjectId":"50102"}
-
+-->
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
