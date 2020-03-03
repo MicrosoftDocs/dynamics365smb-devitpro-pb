@@ -23,7 +23,7 @@ As a developer, you use the data to learn about conditions that you can change t
 |A web service request results in a long running SQL query|Adjust or fine-tune code.|
 |Web service requests to a specific endpoint read more rows than requests to the other endpoints|Consider adding filtering to limit the rows that are read.|
 |Fewer API type requests compared with other types|With SOAP and OData requests, computation resources are used on UI elements that aren't relevant. Instead of exposing normal pages as web service endpoints, use the built-in API pages. API pages are optimized for this scenario.|
-|High number of requests to endpoints that contain `powerbi`|PowerBI This condition may indicate excessive PowerBI integration.|
+|High number of requests to endpoints that contain `powerbi`|This condition may indicate excessive PowerBI integration.|
 
 For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
 
@@ -50,30 +50,30 @@ The following table explains the custom dimensions included in a **Web Services 
 ```
 -->
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|alObjectId|Specifies the ID of the AL object that was run by request.|
+|alObjectName|Specifies the name of the AL object that was run by the request.|
+|alObjectType|Specifies the type of the AL object that was run by the request.|
+|category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
+|component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|endpoint|Specifies the endpoint for the request.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
-|component|**Dynamics 365 Business Central Server**|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
-|sqlExecutes|Specifies the number of SQL statements that the request executed. ||
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.||
-|totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.||
-|alObjectType|Specifies the type of the AL object that was run by the request.||
-|alObjectName|Specifies the name of the AL object that was run by the request.||
-|alObjectId|Specifies the ID of the AL object that was run by request.||
-|category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.||
-|endpoint|Specifies the endpoint for the request.||
-|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|sqlExecutes|Specifies the number of SQL statements that the request executed. |
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+|totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
 ### Example trace
 
 The following code snippet is a CustomDimensions example: 
 
 `
-{"telemetrySchemaVersion":"0.3","componentVersion":"16.0.11329.0","environmentType":"Production","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines"}
+{"telemetrySchemaVersion":"0.3","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines"}
 `
 ## See also
 
