@@ -26,11 +26,21 @@ This operation occurs when a report dataset generates without any errors.
 
 The following table explains the general dimensions of the **Success report generation** operation. The table lists the dimensions that are specific to Business Central.
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|operation_Name|**Success report generation**||
-|message|**The report <ID> '<Name>' rendered successfully**||
-|severityLevel|**1**||
+|Dimension|Description or value|
+|---------|-----|
+|operation_Name|**Success report generation**|
+|message|**The report <ID> '<Name>' rendered successfully**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|result|**Success**.|
+|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
+|sqlExecutes|Specifies the number of SQL statements that the report executed. |
+|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
 
 ## Operation: Failed report generation
 
@@ -41,10 +51,20 @@ This operation occurs when the report dataset couldn't be generated because of a
 The following table explains the general dimensions of the **Failed report generation** operation.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|-----|
 |operation_Name|**Failed report generation**|
 |message|**The report <ID> '<Name>' couldn't be rendered**|
-|severityLevel|**3**||
+|severityLevel|**3**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|result|Specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
+|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
+|sqlExecutes|Specifies the number of SQL statements that the report executed. |
+|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
 
 ## Operation: Cancellation report generation
 
@@ -55,21 +75,21 @@ This operation occurs when the report dataset generation was canceled. There are
 The following table explains the general dimensions of the **Cancellation report generation** operation.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|-----|
 |operation_Name|**Cancellation report generation**|
 |message|Specifies the reason why the report was canceled. See [Analyzing cancellation messages](#reportcancellation) section for details.|
 |severityLevel|**2**|
 
 ### <a name="reportcancellation"></a>Analyzing cancellation messages
 
-The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify reports that put a heavy load on the service - taking longer than expected and generating large number of rows.
+The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that taking longer than expected and generating large number of rows.
 
 > [!NOTE]
 > The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds.
 
 #### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
 
-This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be cancelled. This condition isn't recommended. Reconsider the report design.
+This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be canceled. This condition isn't recommended. Reconsider the report design.
 
 #### Cancellation event received. Requesting cancellation of the action.
 
@@ -149,7 +169,7 @@ Generate
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
 
-
+<!--
 Report cancellation
 
 Dimension|Description or value|
@@ -169,7 +189,7 @@ Dimension|Description or value|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
-
+-->
 ## Example trace
 
 The following code snippet is a CustomDimensions example for a successful report generation. 
