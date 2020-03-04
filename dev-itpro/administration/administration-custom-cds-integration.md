@@ -39,7 +39,7 @@ This walkthrough requires the following:
 
     > [!NOTE]  
     > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [here](https://docs.microsoft.com/dynamics365/talent/corehrentities#worker-entities).
-    - The URL of your CDS environment.
+    - The URL of your Common Data Service environment.
     - The user name and password of a user account that has full permissions to add and modify entities.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
     - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
