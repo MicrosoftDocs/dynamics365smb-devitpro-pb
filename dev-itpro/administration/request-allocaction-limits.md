@@ -12,11 +12,12 @@ ms.prod: "dynamics-nav-2018"
 ms.author: jswymer
 ---
 
-# Operational Limits and Strategy
+# Operational Limits and Strategy for Business Central Online
 
-To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes these limits and, in some cases, the strategy behind them.
+To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
-For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].
+<!--
+For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
 
 ##  <a name="General"></a> General limits
 
