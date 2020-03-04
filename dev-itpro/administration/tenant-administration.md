@@ -89,3 +89,4 @@ If the prospect wants to extend the trial further than those 30 days, the partne
 [Version numbers in Business Central](version-numbers.md)  
 [Resell Different Solutions](../developer/readiness/readiness-reseller.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)  

@@ -250,8 +250,8 @@ If you want to track how the [!INCLUDE[prodshort](../developer/includes/prodshor
 
 Read more here:
 
-- [About database statistics in the AL debugger](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-debugging#DebugSQL)
-- [Telemetry on Long Running SQL Queries](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/monitor-long-running-sql-queries-event-log#ApplicationInsights)
+- [About database statistics in the AL debugger](../developer/devenv-debugging.md#DebugSQL)
+- [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
 ## Testing and validating performance 
 
