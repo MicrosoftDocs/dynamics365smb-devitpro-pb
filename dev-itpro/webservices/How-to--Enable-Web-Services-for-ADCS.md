@@ -8,7 +8,10 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
+redirect_url: /business-central/warehouse-use-automated-data-capture-systems-adcs
 ---
+<!-- This topic is redirected -->
+
 # Enabling Web Services for ADCS
 
 [!INCLUDE[2020_releasewave1_deprecated](../includes/2020_releasewave1_deprecated.md)]
