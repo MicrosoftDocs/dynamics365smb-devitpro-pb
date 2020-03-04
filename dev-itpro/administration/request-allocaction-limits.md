@@ -32,7 +32,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
 |---------|--------------------------------------------------------------------------------|------|
 |Search timeout|Specifies the time (in seconds) that a search operation on lists in the client will continue until it's terminated. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**|10 seconds|
-|SQL bulk import batch size|Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes.| 448|   
+|SQL bulk import batch size|Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes.| 448|
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
 |SQL connection idle timeout|Specifies the time that a SQL connection can remain idle before being closed.|00:05:00|
 |SQL connection timeout|Specifies the time to wait while trying to connect to the database before terminating the attempt and generating an error. This setting also applies to begin, rollback and commit of transactions.|1.5 hours|
@@ -42,13 +42,9 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
   
 |Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Chunk size|The default size for a chunk of data that is transferred between the service and clients| 28 KB| 
-|compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|  
 |Max concurrent connections|Specifies the maximum number of concurrent client connections that the service accepts. |500|
-|Max items in object graph|The maximum number of objects to serialize or deserialize.|  512|
-|Max number of orphaned connections|Specifies the maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20| 
-|Max upload size|The maximum size of files that can be uploaded to or downloaded from the service. Use this setting to avoid out-of-memory errors.|150 MB|  
-|Operation timeout|The maximum time for the service e to return a call from the client.||  
+|Max number of orphaned connections|Specifies the maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
+|Operation timeout|The maximum time for the service to return a call from the client.||  
 |Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
 
 ##  <a name="ClientServices"></a> Data file limits
@@ -58,7 +54,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Chunk size|The default size for a chunk of data that is transferred between the service and clients| 28 KB| 
 |Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|  
 |Max items in object graph|The maximum number of objects to serialize or deserialize.|  512|
-|Max file size|The maximum size of files that can be uploaded to or downloaded from the service. Use this setting to avoid out-of-memory errors.|150 MB|  
+|Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|150 MB|  
 
 ## <a name="Task"></a>Asynchronous task limits
 
@@ -83,7 +79,6 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 | Max execution timeout | Specifies the maximum execution time that is can take to generate a query. If exceeded, the query will be canceled.|1,000,000|
 | Max rows | Specifies the maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|30 minutes|
 
-
 ##  <a name="ODataServices"></a> OData request limits
   
 |Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
@@ -105,7 +100,5 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Request time out|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 
 ## See Also
-[Working with API Rate Limits](dynamics-rate-limits.md)  
-[Best practices on transient errors](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)  
-[Using OData Batch request](https://docs.microsoft.com/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
+[Working with API Rate Limits](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)   
 [Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
