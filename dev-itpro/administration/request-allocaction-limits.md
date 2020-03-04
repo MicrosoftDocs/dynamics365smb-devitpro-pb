@@ -17,7 +17,7 @@ ms.author: jswymer
 To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
 > [!TIP]
-> Telemetry is gathered on some of operations that have a limit. The telemetry can provide insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
+> Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
 
 <!--
 For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
@@ -87,7 +87,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
   
 |Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Max connections|ODataMaxConnections|Specifies the maximum number of simultaneous OData requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
+|Max connections|Specifies the maximum number of simultaneous OData requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|Specifies the maximum number of entities returned per page of OData results.|  20,000 entities per page|
 |Rate|Specifies how many OData requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox - 300 requests/minute<br />Production- 600 requests/minute| 
 |Operation timeout|Specifies the maximum amount of time that the service gives a single SOAP request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|10 minutes|
