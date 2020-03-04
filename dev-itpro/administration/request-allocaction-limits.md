@@ -12,7 +12,7 @@ ms.prod: "dynamics-nav-2018"
 ms.author: jswymer
 ---
 
-# Operational Limits and Strategy for Business Central Online
+# Operational Limits for Business Central Online
 
 To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
