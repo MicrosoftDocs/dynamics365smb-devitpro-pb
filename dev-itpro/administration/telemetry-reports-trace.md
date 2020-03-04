@@ -108,6 +108,10 @@ This message occurs when a user canceled a report in the client as it was being 
 
 The service is configured to cancel reports if they take longer to generate than a set amount of time. With Business Central online, you can't change the threshold. With Business Central on-premises, you change the threshold by setting the **Max Execution Timeout** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no timeout for on-premises by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Reports).
 
+#### The rendering of the word report has been cancelled because it took longer than the specified threshold ({0})"
+
+This message occurs when a report that based on a Word layout takes longer to generate than the specified threshold. The event is only relevant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. There's no threshold for on-premises.
+
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
 The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no limit on rows for on-premises by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Reports).
