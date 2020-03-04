@@ -40,12 +40,12 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |Parameter|Description|
 |---------|-----------|
 |*Project*| The AL project folder to create the table(s) in.|
-|*PackageCachePath*| The AL project cache folder. |
-|*ServiceURI*| The server URL for Common Data Service. |
+|*PackageCachePath*| The AL project cache folder for symbols. |
+|*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
 |*UserName*| The admin user name for Common Data Service. |
 |*Password*| The admin password for Common Data Service. |
-|*Entities*| The table(s) to create in AL. |
-|*BaseId*| The assigned ID for the table(s) in AL. |
+|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list. |
+|*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
 |*TableType*| The table type for the table(s) in AL. |
 
 ## Example
