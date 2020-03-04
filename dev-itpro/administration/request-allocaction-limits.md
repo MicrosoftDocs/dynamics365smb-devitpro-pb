@@ -44,7 +44,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|150 MB|
 |Maximum stream read size|Specifies the maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
-##  <a name="Database"></a> Database limits
+##  <a name="Database"></a> Database connection limits
   
 |Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
 |---------|--------------------------------------------------------------------------------|------|
