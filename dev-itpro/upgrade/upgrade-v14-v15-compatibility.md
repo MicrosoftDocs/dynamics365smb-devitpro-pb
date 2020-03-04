@@ -12,9 +12,9 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 
-# [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix
+# [!INCLUDE[prod long](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix
 
-When upgrading from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15), it is important that your Business Central 14 version is compatible with the Business Central 15 version that you want to upgrade to.
+When upgrading from [!INCLUDE[prod short](../developer/includes/prodshort.md)] Spring 2019 (version 14) to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15), it's important that your 14 version is compatible with the version 15 that you want to upgrade to.
 
 The following table lists the Business Central 14 versions and the minimum Business Central 15 version that is compatible for upgrade.
 
@@ -28,8 +28,9 @@ The following table lists the Business Central 14 versions and the minimum Busin
 |[14.7 (cumulative update 06)](https://support.microsoft.com/help/4528705)|15.2|
 |[14.8 (cumulative update 07)](https://support.microsoft.com/help/4533396)|15.3|
 |[14.9 (cumulative update 08)](https://support.microsoft.com/help/4536555)|15.3|
+|[14.10 (cumulative update 09)](https://support.microsoft.com/help/4539529)|15.4|
 
-For example, looking at the matrix, you can upgrade Business Central 14.0 (cumulative update 01) to any Business Central 15 version. However, you can only upgrade Business Central 14.6 (cumulative update 05) to Business Central 15.1 or later.
+For example, you can upgrade version 14.0 to any 15 version. You can only upgrade version 14.6 to version 15.1 or later.
 
 To see the available updates for Business Central 2019 Release Wave 2, see [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
   

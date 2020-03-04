@@ -102,15 +102,10 @@ A connection string to your SQL database can be found in SQL Management Studio o
 
 The Integration Runtime name can be found in the Microsoft Integration Runtime Manager. You can find this application in your Windows system tray or by searching for the program. You will not be able to copy and paste the name. You must manually type the name.  
 
-## Can I connect my Microsoft Invoicing data to the intelligent cloud?
-
-No. Microsoft Invoicing currently does not support connecting to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If your organization has an existing Invoicing tenant and want to create a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant, you must contact Support to have them delete your existing Invoicing tenant.  
-
-For more information, see [Using the same Office 365 Account in Dynamics 365 Business Central and Microsoft Invoicing](/dynamics365/business-central/about-reuse-company-invoicing).  
 
 ## See also
 
 [Connect to the intelligent cloud with Business Central](about-intelligent-edge.md)  
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  
-[Replicating on-premises data](data-replication-intelligent-cloud.md)  
+[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  
