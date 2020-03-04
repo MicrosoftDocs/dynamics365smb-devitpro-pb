@@ -106,15 +106,18 @@ The following table describes fields on the **Query** tab in the [!INCLUDE[admin
 | Max Execution Timeout | QueryTimeout | Specifies the maximum execution time that is can take to generate a query. If exceeded, the query will be canceled by the server. If you don't want a limit, set the value to **MaxValue**.<br /><br />Timeout format: [dd.]hh:mm:ss[.ff]<br /><br />Default: MaxValue<br />Dynamically Updatable: Yes|
 | Max Rows | QueryMaxRows | Specifies the maximum number of rows that can be processed in a query. If exceeded, the query will be canceled by the server. You can also use MaxValue to indicate no limit. If you don't want a limit, set the value to **MaxValue**.<br /><br />Default: MaxValue<br />Dynamically Updatable: Yes|
 
-## Report limits
+## API Rate limits
 
+HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.
 
 |              |OData|SOAP|
 |--------------|-----|----| 
 |**Sandbox**   |300 req/min|300 req/min|
 |**Production**|600 req/min|600 req/min|
 
-### 
+## Request time out
+
+HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time
 
 
 
