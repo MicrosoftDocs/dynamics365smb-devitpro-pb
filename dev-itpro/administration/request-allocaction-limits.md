@@ -20,6 +20,12 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 ## Report limits
 
+
+|              |OData|SOAP|
+|--------------|-----|----| 
+|**Sandbox**   |300 req/min|300 req/min|
+|**Production**|600 req/min|600 req/min|
+
 ### 
 
 
