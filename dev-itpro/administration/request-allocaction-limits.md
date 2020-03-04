@@ -51,7 +51,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Search timeout|Specifies the time (in seconds) that a search operation on lists in the client continues before it's stopped. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**|10 seconds|
 |SQL bulk import batch size|Specifies how many SQL memory chunks that a data import must be distributed across.| 448|
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
-|SQL connection idle timeout|Specifies the time that a SQL connection can remain idle before being closed.|00:05:00|
+|SQL connection idle timeout|Specifies the time that a SQL connection can remain idle before being closed.|5 minutes|
 |SQL connection timeout|Specifies the time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 hours|
 |SQL query logging threshold|Specifies the amount of time (in milliseconds) that an SQL query can run before a warning event is recorded in the application log for the server instance. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000|
 
@@ -94,7 +94,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |---------|--------------------------------------------------------------------------------|------|
 |Maximum connections|Specifies the maximum number of simultaneous SOAP requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Maximum message size|The maximum permitted size of a SOAP web service requests|  1024 KB|
-|Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|**Sandbox** - 300 requests/minute<br />**Production**- 600 requests/minute|
+|Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox - 300 requests/minute<br />Production- 600 requests/minute|
 |Operation timeout|Specifies the maximum amount of time that the service  gives to a single OData request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 
