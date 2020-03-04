@@ -22,13 +22,26 @@ To ensure the availability and quality of Business Central services, there are l
 <!--
 For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
 
-##  <a name="General"></a> General limits
-
-|Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
+##  <a name="ClientServices"></a> Client connection limits
+  
+|Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Data cache size|The contextual size of the data cache. The value must be in the range 1-20.<br /><br /> Default: 9<br />Dynamically Updatable: Yes| 9| 
-|Max concurrent calls|The maximum number of concurrent client calls that can be active.|40|  
-|Max data rows allowed to send to excel|Specifies the maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, the limit on rows is configured in the client.| |
+|Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
+|Max concurrent connections|Specifies the maximum number of concurrent client connections that the service accepts. |500|
+|Max number of orphaned connections|Specifies the maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
+|Operation timeout|The maximum time for the service to return a call from the client.||  
+|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
+
+##  <a name="ClientServices"></a> Data handling limits
+  
+|Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|---------|--------------------------------------------------------------------------------|------|
+|Data cache size|The contextual size of the data cache.| 9| 
+|Chunk size|The default size for a chunk of data that is transferred between the service and clients| 28 KB| 
+|Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|
+|Max data rows allowed to send to excel|Specifies the maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, the limit on rows is configured in the client.| |    
+|Max items in object graph|The maximum number of objects to serialize or deserialize.|  512|
+|Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|150 MB|
 |Maximum stream read size|Specifies the maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
 ##  <a name="Database"></a> Database limits
@@ -41,24 +54,6 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |SQL connection idle timeout|Specifies the time that a SQL connection can remain idle before being closed.|00:05:00|
 |SQL connection timeout|Specifies the time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 hours|
 |SQL query logging threshold|Specifies the amount of time (in milliseconds) that an SQL query can run before a warning event is recorded in the application log for the server instance. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000|
-
-##  <a name="ClientServices"></a> Client connection limits
-  
-|Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
-|---------|--------------------------------------------------------------------------------|------|
-|Max concurrent connections|Specifies the maximum number of concurrent client connections that the service accepts. |500|
-|Max number of orphaned connections|Specifies the maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
-|Operation timeout|The maximum time for the service to return a call from the client.||  
-|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
-
-##  <a name="ClientServices"></a> Data file limits
-  
-|Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
-|---------|--------------------------------------------------------------------------------|------|
-|Chunk size|The default size for a chunk of data that is transferred between the service and clients| 28 KB| 
-|Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|  
-|Max items in object graph|The maximum number of objects to serialize or deserialize.|  512|
-|Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|150 MB|  
 
 ## <a name="Task"></a>Asynchronous task limits
 
@@ -97,7 +92,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 |Limit|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Maximum connections|ODataMaxConnections|Specifies the maximum number of simultaneous SOAP requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
+|Maximum connections|Specifies the maximum number of simultaneous SOAP requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Maximum message size|The maximum permitted size of a SOAP web service requests|  1024 KB|
 |Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|**Sandbox** - 300 requests/minute<br />**Production**- 600 requests/minute|
 |Operation timeout|Specifies the maximum amount of time that the service  gives to a single OData request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
