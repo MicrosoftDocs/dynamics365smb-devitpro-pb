@@ -104,5 +104,6 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 
 ## See Also
-[Working with API Rate Limits](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)   
-[Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
+
+[Working with API Rate Limits](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)  
+[Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)  
