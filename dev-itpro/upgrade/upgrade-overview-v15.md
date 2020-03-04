@@ -2,7 +2,7 @@
 title: Upgrade to Business Central 2019 Wave 2
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/26/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -660,7 +660,7 @@ Symbols are the application programming interface between AL code and C/AL code.
 
 In version 14.0, with the base application being C/AL, there are three types of symbols: system, application, and test. System symbols contained references to the platform system objects. The application symbols contained references to the business application objects. The test symbols contained references to the test libraries used by Microsoft extensions.
 
-In version 15, with the move to AL, the only symbols required are the system systems, which are still provided on the version 15.0 installation media (DVD).
+In version 15, with the move to AL, the only symbols required are the system symbols, which are still provided on the version 15.0 installation media (DVD).
 
 ### Customization extensions
 Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
