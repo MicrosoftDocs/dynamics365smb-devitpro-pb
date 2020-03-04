@@ -1,6 +1,6 @@
 ---
 title: "Changing a table extension's target is not allowed."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/25/2020
 ms.reviewer: na

@@ -40,7 +40,7 @@
 ## [Overview](deployment/deployment.md)
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-<!--### [Update 15.3](whatsnew/whatsnew-update-15-3.md)-->
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
@@ -129,10 +129,6 @@
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
 ### [Administration of Business Central On-Premises](administration/administration.md)
-### Intelligent Insights
-#### [Connect to the Intelligent Cloud from On-Premises](administration/about-intelligent-edge.md)
-#### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
-#### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
 ### Windows PowerShell Cmdlets
 #### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
@@ -643,11 +639,14 @@
 <!--migrate to BC online-->
 # Migrate to Business Central Online
 ## [Overview](administration/migrate-data.md)
+## [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
+## [Running the Cloud Migration Tool](administration/migration-tool.md)
+## [Managing the Migration to the Cloud](administration/migration-management.md)
 ## [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ## [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ## [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 <!--## [Migrating from Dynamics SL](administration/migrate-data.md)-->
-<!-- end migration -->
+<!-- end migrate -->
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)

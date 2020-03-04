@@ -1,8 +1,8 @@
 ---
 title: "Variables must be initialized before usage."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 02/25/2020
+ms.date: 03/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

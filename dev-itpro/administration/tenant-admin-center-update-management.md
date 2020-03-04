@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 02/20/2020
+ms.date: 03/02/2020
 ms.author: edupont
 ---
 
@@ -58,7 +58,7 @@ If an administrator has chosen the **Schedule Update** action but not set a date
 For updates for which the option is available for tenant administrators to schedule the update date, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](tenant-admin-center-notifications.md).
 
 > [!IMPORTANT]
-> In order to not miss update notifications from Microsoft, you must add [notification recipients](tenant-admin-center-notifications.md) and verify that the e-mails are not redirected to a spam folder by your e-mail software. The notifications are sent from the Microsoft Partner Center address, `msftpc@microsoft.com`.  
+> To not miss update notifications from Microsoft, you must add [notification recipients](tenant-admin-center-notifications.md) and verify that the e-mails are not redirected to a spam folder by your e-mail software. The notifications are sent from the Microsoft Partner Center address, `msftpc@microsoft.com` and contain `Dynamics 365 Business Central` in the subject line.  
 
 Scheduling environment updates is *not* available for monthly service updates. For these, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.
 

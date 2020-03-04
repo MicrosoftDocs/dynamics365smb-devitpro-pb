@@ -1,6 +1,6 @@
 ---
 title: "The previous version was not found"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 02/25/2020
 ms.reviewer: na
