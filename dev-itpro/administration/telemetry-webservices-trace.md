@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Web Services Call Telemetry
 
-Web services call telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
+Web services telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
 
 As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
 
@@ -23,7 +23,7 @@ As a developer, you use the data to learn about conditions that you can change t
 |A web service request results in a long running SQL query|Adjust or fine-tune code.|
 |Web service requests to a specific endpoint read more rows than requests to the other endpoints|Consider adding filtering to limit the rows that are read.|
 |Fewer API type requests compared with other types|With SOAP and OData requests, computation resources are used on UI elements that aren't relevant. Instead of exposing normal pages as web service endpoints, use the built-in API pages. API pages are optimized for this scenario.|
-|High number of requests to endpoints that contain `powerbi`|This condition may indicate excessive PowerBI integration.|
+|High number of requests to endpoints that include Power BI `powerbi`|This condition may indicate excessive PowerBI integration.|
 
 For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
 

@@ -16,7 +16,7 @@ ms.author: jswymer
 
 Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 
-You use this data to gather statistics to help identify slow-running reports
+You use this data to gather statistics to help identify slow-running reports.
 
 ## Operation: Success report generation
 
@@ -94,7 +94,7 @@ The cancellation messages indicate events that caused the report to be canceled.
 
 #### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
 
-This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be canceled. This condition isn't recommended. Reconsider the report design.
+This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be canceled. This pattern isn't recommended. Reconsider the report design.
 
 #### Cancellation event received. Requesting cancellation of the action.
 
@@ -110,7 +110,7 @@ The service is configured to cancel reports if they take longer to generate than
 
 #### The rendering of the word report has been cancelled because it took longer than the specified threshold ({0})"
 
-This message occurs when a report that based on a Word layout takes longer to generate than the specified threshold. The event is only relevant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. There's no threshold for on-premises.
+This message occurs when a report that based on a Word layout takes longer to generate than the specified threshold. The event is only relevant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. There's no timeout for on-premises.
 
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
