@@ -84,8 +84,8 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-| Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|1,000,000|
-| Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|30 minutes|
+| Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|30 minutes|
+| Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|1,000,000|
 
 ##  <a name="ODataServices"></a> OData request limits
   
