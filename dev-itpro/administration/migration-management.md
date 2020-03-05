@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 11/25/2019
+ms.date: 03/05/2020
 ms.author: bmeier
 
 ---
@@ -33,9 +33,9 @@ The following table describes the actions that you can run from the page:
 |Action   |Description|
 |---------|---------|
 |Manage Schedule     |Opens a page where you can set the migration schedule without having to run the assisted setup wizard again.|
-|Run Migration Now    |You can manually run the data migration using this action.  This could be used when you received errors in the scheduled data migration, you corrected any errors, and want to push updated data to the cloud outside of a normally scheduled run.  This migration can also be used for subsequent runs after the initial migration.  On subsequent runs, the migration tool will only migrate changes that have happened since the previous migration was run.  Change tracking is used to identify what data should be moved in those subsequent runs.|
+|Run Migration Now    |choose this to start the data migration manually. This can be helpful if you received errors in the scheduled data migration, you corrected the errors, and you now want to push updated data to the cloud outside of a normally scheduled run. The migration can also be used for subsequent runs after the initial migration. On subsequent runs, the migration tool will only migrate changes that have happened since the previous migration was run. Change tracking is used to identify what data should be moved in those subsequent runs.|
 |Refresh Status      |If a migration run is in progress you can chooose to refresh status to update the page. If the run is complete the status will update using the refesh status action without having to close the window and reopen it.|
-|Reset Cloud Data   |You may run into instances where you need to reset your cloud data. This option will clear all data in your cloud tenant and enable you to start over with data migration. This process should only be done if you want to start the migration process all over from the beginning. If you need to clear data in your cloud tenant and are have connectivity issues that persist for more than 7 days, you will need to contact customer support. They will create a ticket to have your tenant data cleared.  This process should ONLY be done if you want to start the data migration all over and bring all data from on-premises to your cloud tenant.|
+|Reset Cloud Data   |You may run into instances where you need to reset your cloud data. This option will clear all data in your cloud tenant and enable you to start over with data migration. This process should only be done if you want to start the migration process all over from the beginning. If you need to clear data in your cloud tenant, and you have connectivity issues that persist for more than 7 days, you must contact customer support. They will create a ticket to have your tenant data cleared. This process should *only* be done if you want to start the data migration all over and bring all data from on-premises to your cloud tenant.|
 |Reset Runtime Service Key    |If at any time you suspect that your Self Hosted Integration Runtime key is no longer secure, you can choose this option to regenerate a new key. A new key will be generated for you and automatically be updated in the Self Host Integration Runtime service.|
 |Get Runtime Service Key    |Returns the existing runtime key.|
 |Disable Cloud Migration    |Opens a guide that helps you through a checklist of instructions to disable the cloud migration configuration. Once the steps in this process are complete, data migration will be discontinued, and you can choose to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant as your primary solution.|
