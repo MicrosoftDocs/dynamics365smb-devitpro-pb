@@ -29,16 +29,18 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
 |Max concurrent connections|The maximum number of concurrent client connections that the service accepts. |500|
 |Max number of orphaned connections|Th maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
-|Operation timeout|The maximum time for the service to return a call from the client.||  
 |Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
 
+<!-- no limit
+|Operation timeout|The maximum time for the service to return a call from the client.||  
+-->
 ##  <a name="ClientServices"></a> Data handling limits
   
 |Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max data rows allowed to send to excel|The maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, the limit on rows is configured in the client.| |    
-|Max items in object graph|The maximum number of objects to serialize or deserialize.|  512|
-|Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|150 MB|
+|Max items in object graph|The maximum number of objects to serialize or deserialize.|  10,000|
+|Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|350 MB|
 |Maximum stream read size|The maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
 <!--
@@ -67,6 +69,8 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously on the server instance.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|10|
 |  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
 |  Page background task max timeout | The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
+|ChildSessionsMaxConcurrency|The maximum number of child sessions that can run concurrently per parent session. When the value is exceeded, additional child sessions will be queued and run when a slot becomes available as other child sessions are finished.|5|
+|ChildSessionsMaxQueueLength|The maximum number of child sessions that can be queued per parent session. If the value is exceeded, an error occurs.|100|
 
 ## Reports limits
 
@@ -98,9 +102,9 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Maximum connections|The maximum number of simultaneous SOAP requests on the server instance. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
-|Maximum message size|The maximum permitted size of a SOAP web service requests|  1024 KB|
+|Maximum message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
 |Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br /> 300 requests/minute<br /><br />Production:<br />600 requests/minute|
-|Operation timeout|The maximum amount of time that the service gives to a single OData request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
+|Operation timeout|The maximum amount of time that the service gives to a single SOAP request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 
 ## See Also
