@@ -24,7 +24,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 ##  <a name="ClientServices"></a> Client connection limits
   
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
 |Max concurrent connections|The maximum number of concurrent client connections that the service accepts. |500|
@@ -36,7 +36,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 -->
 ##  <a name="ClientServices"></a> Data handling limits
   
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max data rows allowed to send to excel|The maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, the limit on rows is configured in the client.| |    
 |Max items in object graph|The maximum number of objects to serialize or deserialize.|  10,000|
@@ -51,7 +51,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 ##  <a name="Database"></a> Database connection limits
   
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
 |---------|--------------------------------------------------------------------------------|------|
 |Search timeout|The time (in seconds) that a search operation on lists in the client continues before it's stopped. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**|10 seconds|
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
@@ -64,7 +64,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 -->
 ## <a name="Task"></a>Asynchronous task limits
 
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously on the server instance.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|10|
 |  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
@@ -74,7 +74,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 ## Reports limits
 
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 | Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
 | Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
@@ -82,14 +82,14 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 ## Query limits
 
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 | Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|1,000,000|
 | Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|30 minutes|
 
 ##  <a name="ODataServices"></a> OData request limits
   
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max connections|The maximum number of simultaneous OData requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
@@ -99,7 +99,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 ##  <a name="SOAPServices"></a> SOAP request limits
 
-|Measurement|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Maximum connections|The maximum number of simultaneous SOAP requests on the server instance. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
 |Maximum message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
