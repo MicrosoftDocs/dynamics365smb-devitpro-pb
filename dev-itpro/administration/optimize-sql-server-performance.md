@@ -29,7 +29,7 @@ The following articles describe how to optimize performance in [!INCLUDE[prodlon
 
 [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](sql-server-query-hints.md)  
 
-[Utilizing Read Scale-Out for Better Performance](database-read-scale-out-overview.md)  
+[Using Read Scale-Out for Better Performance](database-read-scale-out-overview.md)  
 
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 
