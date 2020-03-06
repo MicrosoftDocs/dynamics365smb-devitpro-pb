@@ -11,9 +11,9 @@ author: jswymer
 ---
 # Displaying Lists in an Indented Hierarchy
 
-This article explains how to indent records in a list.  display records in a parent-child structure This structure can help organize the list and make it more readable for the user.
+This article explains how to indent rows in a list, displaying records in a parent-child structure. This structure can help organize the list and make it more readable for the user.
 
-There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, indented rows are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
+There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
 #### Sample table and page
 
@@ -91,7 +91,11 @@ To demonstrate how indented hierarchy works, we'll use a basic table and page. F
 
 ## Setting up fixed hierarchy
 
-In a fixed hierarchy, child rows are always shown. Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
+In a fixed hierarchy, child rows are always shown.
+
+![Fixed indented list](media/static-tree.png "Fixed indented list")
+
+Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
 - The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. The property can set to a field in the page's source table or a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
@@ -168,6 +172,9 @@ When using the fixed hierarchy, consider the following behavior:
 ## Setting up a collapsible hierarchy
 
 A collapsible hierarchy is similar to the fixed indented, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
+
+![Fixed indented list](media/collapsible-tree.png "Fixed indented list")
+
 
 - Like in fixed indented hierarchy, the [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) is an integer data type field or variable that determines which records get indented and by how much.
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) enables the tree.
