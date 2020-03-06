@@ -13,7 +13,7 @@ author: jswymer
 
 This article explains how to indent records in a list.  display records in a parent-child structure This structure can help organize the list and make it more readable for the user.
 
-There are two kinds of indented hierarchy lists: fixed and tree. In a fixed hierarchy, all indented (child) records are appear. In a tree hierarchy, users can collapse and expand parent records to show and hide child records.
+There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, indented rows are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
 #### Sample table and page
 
@@ -89,16 +89,13 @@ To demonstrate how indented hierarchy works, we'll use a basic table and page. F
 
     Be sure to set the **Indent** field.
 
-## Set up fixed indented hierarchy
+## Setting up fixed hierarchy
 
-In a fixed hierarchy, child rows are always shown. 
+In a fixed hierarchy, child rows are always shown. Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
+- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. The property can set to a field in the page's source table or a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
-Setting up the fixed indented hierarchy involves configuring two main properties on the page object: IndentColumn and IndentationControls.
-
-- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. The property must resolve to an integer, which determines the indentation level. The property can set either a field in the source table or a variable. 
-
-- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
+- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented. 
 
 Working with the sample page, add the IndentationColumn and IndentationControls to the repeater of the page as shown:  
 
@@ -168,11 +165,9 @@ When using the fixed hierarchy, consider the following behavior:
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
 
 
-## Setting up a tree hierarchy
+## Setting up a collapsible hierarchy
 
-A tree hierarchy is similar to the fixed indented hierarchy, except that records that are indented.
-
-Setting up the tree-view hierarchy involves three main properties: IndentColumn, ShowsAsTree, and TreeInitialState.
+A collapsible hierarchy is similar to the fixed indented, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
 - Like in fixed indented hierarchy, the [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) is an integer data type field or variable that determines which records get indented and by how much.
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) enables the tree.
