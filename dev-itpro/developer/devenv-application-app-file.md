@@ -59,7 +59,7 @@ The `app.json` file of the `Microsoft_Application.app` file looks like the follo
 }
 
 ```
-If you have a code-customized base application, the file can be edited to reflect the dependency to this instead. Update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the appId of your code-customized base application, and you can update the "name" and "publisher" information to match too.
+If you have a code-customized base application, the file can be edited to reflect the dependency to this instead. Update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the `appId` of your code-customized base application, and you can update the `"name"` and `"publisher"` information to match too.
 
 ```
 ...
