@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 02/27/2020
+ms.date: 03/05/2020
 ms.author: bmeier
 
 ---
@@ -25,15 +25,17 @@ The same tool can also be used to set up a connection to the intelligent cloud b
 
 This section provides the steps required to get the cloud migration setup through a connection to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. This can simply be done by following the instructions in the **Cloud Migration Setup** assisted setup wizard in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant.  
 
-There are a few key points that need to be understood before proceeding with the setup:
+There are a few key points that need to be understood before you start the process:
 
-- It is always a best practice to test this configuration in your Sandbox environment before making changes to a production tenant. For more information, see [Managing Environments](tenant-admin-center-environments.md).
+- It is always a best practice to test this configuration in your sandbox environment before making changes to a production tenant. For more information, see [Managing Environments](tenant-admin-center-environments.md).
 - Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data migration process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to be overwritten, do not configure the connection.
 - All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
-- If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
-- In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the migration tool has been optimized to migrate databases up to 30 GB.  If your database is larger than 30 GB, try reducing the number of companies you are migrating data for. This can be done using the company selection within the assisted setup wizard.  If you want to add more companies after the first selection of companies you can add additional companies in the cloud migration management page under the actions.
+- If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
+- In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the migration tool has been optimized to migrate databases up to 30 GB. If your database is larger than 30 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.  
 
-If you are looking at migrating a larger size database we recommend reaching out to the support team and working with them to make sure the migration is successful for a larger database size.  Options for databases exceeding 30 GB will be available in future updates as we are continually working on improving and optimizing the migration tool for larger database sizes.
+    If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in the [!INCLUDE[prodshort](../developer/includes/prodshort.md) online tenant. For more information, see [Adding a tenant to an existing runtime service, or updating companies](#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).  
+
+    If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Options for databases larger 30 GB will be available in a future update, as we are continually working on improving and optimizing the migration tool for larger database sizes.
 
 - Before setting up the connection to the cloud migration, ensure that at least one user in the system that has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
