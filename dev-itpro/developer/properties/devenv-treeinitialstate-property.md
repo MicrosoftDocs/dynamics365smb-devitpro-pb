@@ -50,7 +50,6 @@ repeater(Control1)
 ```
 
 ## See Also
-
 [ShowAsTree Property](devenv-showastree-property.md)  
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
 [IndentationControl Property](devenv-indentationcontrols-property.md)  
