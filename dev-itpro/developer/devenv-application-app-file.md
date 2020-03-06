@@ -1,5 +1,5 @@
 ---
-title: "The Application.app File"
+title: "The Microsoft_Application.app File"
 ms.author: solsen
 ms.custom: na
 ms.date: 03/05/2020
@@ -11,10 +11,9 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# The Application.app File
+# The Microsoft_Application.app File
 
 The Microsoft_Application.app file is included with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
-<!-- located -->
 
 The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
 
