@@ -242,6 +242,7 @@
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
+### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ## Events
