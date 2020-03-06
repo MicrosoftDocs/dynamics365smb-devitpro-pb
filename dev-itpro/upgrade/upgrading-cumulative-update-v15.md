@@ -367,7 +367,7 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 
 ### Publish and install Microsoft_Application extension (update to 15.3 only)
 
-The Microsoft_Application extension is a new extension introduced in 15.3. It handles dependencies that extensions have on the base application and system application. Before 15.3, these dependencies were configured in the app.json of each Microsoft extension. Now, the dependencies are configured in the app.json of the Microsoft_Application extension.
+The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 1. Download the Microsoft_Application extension package and source code from the [Microsoft Download Center](https://download.microsoft.com/download/9/9/1/991764bc-5f99-4be7-957a-f132ac0633ef/Application.zip).
 
