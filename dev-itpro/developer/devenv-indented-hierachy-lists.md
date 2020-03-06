@@ -171,7 +171,7 @@ When using the fixed hierarchy, consider the following behavior:
 
 ## Setting up a collapsible hierarchy
 
-A collapsible hierarchy is similar to the fixed indented, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
+In a collapsible, users can collapse and expand parent rows to show and hide child records. Setting up a collapsible hierarchy is similar to the fixed indented, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
 ![Fixed indented list](media/collapsible-tree.png "Fixed indented list")
 
