@@ -14,7 +14,7 @@ When developing pages for [!INCLUDE[d365_bus_central_md](includes/d365_bus_centr
   
  The purpose of the [Scope Property](properties/devenv-scope-property.md) is to enable developers to add row-specific actions to the shortcut menu which is available to the user on each line. This gives users a more direct way to invoke actions that relate to the selected row or line.  
   
- This is the case when you have, for example, **Line Comments** which are related to a line, but appear in the ribbon. You can specify the scope of the action by setting the [Scope Property](properties/devenv-scope-property.md) on the page action to be either **Page** or **Repeater**.  
+ This is the case when you have, for example, **Line Comments** which are related to a line, but appear in the action bar. You can specify the scope of the action by setting the [Scope Property](properties/devenv-scope-property.md) on the page action to be either **Page** or **Repeater**.  
   
 > [!NOTE]  
 >  It is strongly recommended that the [Scope Property](properties/devenv-scope-property.md) is always appropriately set when developing pages for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)].  
