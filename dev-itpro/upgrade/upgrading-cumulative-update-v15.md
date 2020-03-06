@@ -182,7 +182,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     > [!NOTE]
     > Depending on the update that you are installing, you might get a message similar to the following:
     >
-    > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database’s application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
+    > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database's application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
     >
     > This is not an error, and you can continue installing the update. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update does not make any schema changes to the system tables.
 
