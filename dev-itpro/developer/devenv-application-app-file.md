@@ -22,7 +22,7 @@ The file name of the reference is `Microsoft_Application.app` and in the app.jso
 
 ## Changing the app.json file for a code-customized base application
 
-The `app.json` file of the `Microsoft_Application.app` file looks like the following example for Business Central version 15.3:
+The `app.json` file of the `Microsoft_Application.app` file looks like the following example for Business Central version 15.3.
 
 ```
 {
@@ -65,9 +65,9 @@ If you have a code-customized base application, the file can be edited to reflec
 ...
 "dependencies":  [
                          {
-                             "appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972",
-                             "name":  "Base Application",
-                             "publisher":  "Microsoft",
+                             "appId":  "<appId of the code-customized base app>",
+                             "name":  "Customized Base Application",
+                             "publisher":  "PartnerSolutions",
                              "version":  "15.3.0.0"
                          },
                          ...
