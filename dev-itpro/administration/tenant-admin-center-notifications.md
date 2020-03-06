@@ -25,10 +25,13 @@ Notifications are sent to all email addresses that are listed in the **Notificat
 > [!NOTE]
 > It is important that *at least* one administrator's email address has been entered as a notification recipient to ensure proper awareness of events requiring administrative attention.
 
+> [!IMPORTANT]
+> To not miss update notifications from Microsoft, you must verify that the e-mails are not redirected to a spam folder by your e-mail software. The notifications are sent from the Microsoft Partner Center address, `msftpc@microsoft.com` and contain `Dynamics 365 Business Central` in the subject line.  
+
 ## See also
 
-[Working with Administration Tools](administration.md)  
+[Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
-[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Working with Administration Tools](administration.md)  

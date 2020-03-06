@@ -27,6 +27,7 @@ The following table lists the cumulative updates that have been released for the
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4539525](https://support.microsoft.com/help/4539525) |Cumulative Update 16 |February, 2020| Application Build 40469</br>Platform Build 40427   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4536556](https://support.microsoft.com/help/4536556) |Cumulative Update 15 |January, 2020| Application Build 39340</br>Platform Build 39276   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4536556](https://support.microsoft.com/help/4533395) |Cumulative Update 14 |December, 2019| Application Build 38692</br>Platform Build 38637   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4536556](https://support.microsoft.com/help/4528704) |Cumulative Update 13 |November, 2019| Application Build 37622</br>Platform Build 37612   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

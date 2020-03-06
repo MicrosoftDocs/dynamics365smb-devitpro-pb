@@ -2,7 +2,7 @@
 title: "Init Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/17/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Remarks  
 
-This method assigns default values to each field in the record. The values that are assigned in the record correspond to those defined when the table was created. If no value was assigned when the table was created, the values are assigned based on the data type, as shown in the following table.  
+This method assigns default values to each field in the record, including the SystemId field. The values that are assigned in the record correspond to those defined when the table was created. If no value was assigned when the table was created, the values are assigned based on the data type, as shown in the following table.  
   
 |Data type|Default value|  
 |---------|-------------------|  
@@ -59,7 +59,7 @@ This method assigns default values to each field in the record. The values that 
   
 After the method runs, you can change the values in any or all of the fields before you call the [INSERT Method (RecordRef)](recordref-insert-method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
   
-The method works the same as the [INIT Method (Record)](../record/record-init-method.md).  
+The method works in the same way as the [INIT Method (Record)](../record/record-init-method.md).  
   
 ## Example  
 The following example opens a table 18 (Customer) with a RecordRef variable that is named CustomerRecref. The [FIELD Method (RecordRef)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the field. The INIT method initializes the values in the fields by using default values and then uses the [INSERT Method (RecordRef)](recordref-insert-method.md) to insert a new record. The new record is 1120. This is the primary key for the new record.  

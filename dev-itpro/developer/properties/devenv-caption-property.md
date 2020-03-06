@@ -11,13 +11,13 @@ author: SusanneWindfeldPedersen
 ---
 
 # Caption Property
-Sets the text string that displays with the object, control, or other element in user interface for the current language.  
+Sets the text string that displays with the object, control, or other element in user interface for the current language. The property has three optional parameters; `Locked`, `Comment`, and `MaxLength`.
 
 ## Applies To  
 
 - Codeunit objects  
 - XMLport objects  
-- Pages, including general page properties, Container, Group, Part, and Field controls.  
+- Pages; including general page properties, Container, Group, Part, and Field controls.  
 - Profile objects
 - Query objects and query columns  
 - Reports  
@@ -28,6 +28,10 @@ Sets the text string that displays with the object, control, or other element in
 
 ```
 Caption = 'Name';
+```
+
+```
+Caption = 'Name', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
 ```
 
 ## Remarks  

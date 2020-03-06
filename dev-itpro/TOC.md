@@ -40,29 +40,31 @@
 ## [Overview](deployment/deployment.md)
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
-<!-- ### Onboarding your customer -->
-<!-- ### Free trial -->
-### [Preparing Demonstration Environments](administration/demo-environment.md)
-### [Business Central Administration Center](administration/tenant-admin-center.md)
-### [Managing Environments](administration/tenant-admin-center-environments.md)
-### [Technical Support of Business Central](technical-support.md)
-### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-### Embed App
-#### [Embed App Overview](deployment/embed-app-overview.md)
-#### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)
-#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-#### [Components](deployment/embed-app-components.md)
-#### [Platform](deployment/embed-app-platform.md)
-#### [Licensing](deployment/embed-app-licensing.md)
-#### [Customer Sign-up](deployment/embed-app-customer-signup.md)
-#### [AppSource](deployment/embed-app-appsource.md)
-#### [Sandbox](deployment/embed-app-sandbox.md)
-#### [Ecosystem Features](deployment/embed-app-ecosystem.md)
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### Onboard your customers
+#### [Trials and Sign-ups](deployment/customer-signup.md)
+<!-- #### Do cool demos -->
+<!-- #### Partner Center stuff -->
+<!-- Performance tests-->
+#### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+#### [Technical Support of Business Central](technical-support.md)
+### Build apps for Business Central
+<!--#### What the partner's responsibilities are -->
+<!--#### How Microsoft runs the service -->
+#### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
+#### [Components and Capabilities](deployment/app-components.md)
+#### [Licensing](deployment/licensing.md)
+#### [Add your App to AppSource](administration/appsource.md)
+#### Embed Apps
+##### [Embed App Overview](deployment/embed-app-overview.md)
+##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
@@ -103,14 +105,23 @@
 # Administration
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+### [Preparing Demo Environments](administration/demo-environment.md)
+### [Preparing Test Environments](administration/test-environment.md)
+### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
+### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
-#### [Preparing Test Environments](administration/test-environment.md)
+### Monitoring and Analyzing Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Analyzing Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
-#### [Updating Environments](administration/tenant-admin-center-update-management.md)
 #### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
+#### [Managing Updates](administration/tenant-admin-center-update-management.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 #### [Administration Center API](administration/administration-center-api.md)
 ### Automation
@@ -118,11 +129,6 @@
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
 ### [Administration of Business Central On-Premises](administration/administration.md)
-### Intelligent Insights
-#### [Connect to the Intelligent Cloud from On-Premises](administration/about-intelligent-edge.md)
-#### [Replicating On-Premises Data](administration/data-replication-intelligent-cloud.md)
-#### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
-#### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
 ### Windows PowerShell Cmdlets
 #### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
@@ -161,6 +167,10 @@
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
+### Monitoring and Analyzing Using Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
@@ -308,12 +318,19 @@
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-### [Substituting Reports](developer/devenv-substituting-reports.md)
+### [Substituting a Report](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### Developing Printer Extensions
+#### [Overview](developer/devenv-reports-printing.md)
+#### [Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
+<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
+<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
+<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
+<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
 ## Queries
 ### [Overview](developer/devenv-query-overview.md)
 ### [Query Object](developer/devenv-query-object.md)
@@ -527,6 +544,9 @@
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
+<!--### Events
+#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
+#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)-->
 ## Testing the Application
 ### [Testing the Application Overview](developer/devenv-testing-application.md)
 ### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
@@ -608,16 +628,35 @@
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
+<!-- begin performance -->
+# Performance
+## [Performance Overview](performance/performance-overview.md)
+## [Application](performance/performance-application.md)
+## [Developer](performance/performance-developer.md)
+## [Online](performance/performance-online.md)
+## [On-Premises](performance/performance-onprem.md)
+## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
+<!-- end performance -->
+<!--migrate to BC online-->
+# Migrate to Business Central Online
+## [Overview](administration/migrate-data.md)
+## [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
+## [Running the Cloud Migration Tool](administration/migration-tool.md)
+## [Managing the Migration to the Cloud](administration/migration-management.md)
+## [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
+## [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
+## [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
+<!--## [Migrating from Dynamics SL](administration/migrate-data.md)-->
+<!-- end migrate -->
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## Online
 ### [Overview](upgrade/upgrading-to-business-central-online.md)
 ### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
-### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Migrating On-Premises Data to Business Central Online](administration/migrate-data.md)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+### [Major Updates](administration/update-rollout-timelime.md)
 ## On-Premises
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)
