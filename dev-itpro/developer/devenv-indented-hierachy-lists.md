@@ -11,7 +11,7 @@ author: jswymer
 ---
 # Displaying Lists in an Indented Hierarchy
 
-This article explains how to indent records in a list. By indenting specific records, you display records in a parent-child structure. This structure can help organize the list and make it more readable for the user.
+This article explains how to indent records in a list.  display records in a parent-child structure This structure can help organize the list and make it more readable for the user.
 
 There are two kinds of indented hierarchy lists: fixed and tree. In a fixed hierarchy, all indented (child) records are appear. In a tree hierarchy, users can collapse and expand parent records to show and hide child records.
 
@@ -89,11 +89,14 @@ To demonstrate how indented hierarchy works, we'll use a basic table and page. F
 
     Be sure to set the **Indent** field.
 
-## Set up fixed indented hierarchy list
+## Set up fixed indented hierarchy
+
+In a fixed hierarchy, child rows are always shown. 
+
 
 Setting up the fixed indented hierarchy involves configuring two main properties on the page object: IndentColumn and IndentationControls.
 
-- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls the indentation, determining which records get indented and by how much. The property must resolve to an integer, which determines the indentation level. It can be to either a field in the source table or a variable.
+- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. The property must resolve to an integer, which determines the indentation level. The property can set either a field in the source table or a variable. 
 
 - The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
 
@@ -160,7 +163,7 @@ You can achieve the same results using a variable instead of the table field for
 
 When using the fixed hierarchy, consider the following behavior:
 
-- Indentation works best on single column. You can specify more than one column [IndentationControl property](properties/devenv-indentationcontrols-property.md), however, in the UI, the columns may not appear as expected.
+- Indentation works best on a single column. You can specify more than one column with th [IndentationControl property](properties/devenv-indentationcontrols-property.md). However, in the UI, the columns may not appear as expected.
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
 
