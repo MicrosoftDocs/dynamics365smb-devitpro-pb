@@ -13,9 +13,7 @@ author: SusanneWindfeldPedersen
 
 # The Microsoft_Application.app File
 
-The Microsoft_Application.app file is included with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
-
-The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
+The Microsoft_Application.app file is included with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and is located in the `\Applications\Application\Source` folder. The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
 
 > [!NOTE]  
 > In previous versions the references to base and system application were stated explicitly under `dependencies` in the `app.json` file of the extension.
@@ -61,7 +59,7 @@ The `app.json` file of the `Microsoft_Application.app` file looks like the follo
 }
 
 ```
-If you have a code-customized base application, the file can be edited to reflect the dependency to this instead. Update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the appId of your code-customized base application. You can change the 
+If you have a code-customized base application, the file can be edited to reflect the dependency to this instead. Update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the appId of your code-customized base application, and you can update the "name" and "publisher" information to match too.
 
 ```
 ...
