@@ -40,7 +40,7 @@ The following list provides an overview of developing for the [!INCLUDE[nav_uni_
   
 -   [Troubleshooting the Business Central Mobile App](devenv-troubleshooting-the-mobile-app.md)
 
--   [Using HTTPS and Certificates in Business Central OnPrem](devenv-using-https-and-certificates.md)  
+-   [Using HTTPS and Certificates in Business Central Mobile App](devenv-using-https-and-certificates-mobile-app.md)  
 
 ## See Also
 [Development Overview](devenv-dev-overview.md)  

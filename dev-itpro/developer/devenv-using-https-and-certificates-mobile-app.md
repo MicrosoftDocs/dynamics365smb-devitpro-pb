@@ -1,5 +1,5 @@
 ---
-title: "Using HTTPS and Certificates"
+title: "Using HTTPS and Certificates in Business Central Mobile App"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics365-business-central"
 author: blrobl
 ---
-# Using HTTPS and Certificates
+# Using HTTPS and Certificates in Business Central Mobile App
 The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] can only run on an HTTPS protocol. To enable support for HTTPS on [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)], you must implement security certificates. Complete instructions are available from your certificate provider. We recommend that you secure the data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. For more information, see [Digital Certificates](https://go.microsoft.com/fwlink/?LinkId=509846).  
   
  The following table illustrates how SSL is enforced.  
