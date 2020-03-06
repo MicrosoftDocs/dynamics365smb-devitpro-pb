@@ -195,7 +195,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [The "Ready to Go" Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -341,7 +341,7 @@
 ### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
 ### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
 ### [API Query Type](developer/devenv-api-querytype.md)
-## [Interfaces](developer/devenv-interface-object.md)
+## [Interfaces](developer/devenv-interfaces-in-al.md)
 ## XMLports
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
