@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/25/2020
+ms.date: 03/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,6 +43,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0136](codecop-aa0136-donotwritecodethatwillneverbehit.md)|Do not write code that will never be hit.|Do not write code that will never be hit.|Unreachable code detected.|Design|Warning|true|
 |[AA0137](codecop-aa0137-donotdeclarevariablesthatareunused.md)|Do not declare variables that are unused.|Do not declare variables that are unused.|Variable '{0}' is unused in '{1}'.|Design|Warning|true|
 |[AA0139](codecop-aa0139-donotassigntostringwithsmallercapacity.md)|Do not assign a text  to a target with smaller size.|Do not assign a text  to a target with smaller size.|Possible overflow assigning '{0}' to '{1}'.|Design|Warning|true|
+|[AA0150](codecop-aa0150-donotdeclareparametersbyreferenceifneverchanged.md)|Do not declare parameters by reference if their values are never changed.|Do not declare parameters by reference if their values are never changed.|Parameter '{0}' is declared by reference but never changed in method '{1}'.|Design|Warning|true|
 |[AA0161](codecop-aa0161-onlyuseasserterrorintestcodeunits.md)|Only use AssertError in Test Codeunits.|Only use AssertError in Test Codeunits.|Only use AssertError in Test Codeunits.|Design|Warning|true|
 |[AA0175](codecop-aa0175-donotfindrecordandnotuse.md)|Only find record if you need to use it.|Only find or get records if you are not using values.|Variable '{0}' queries the database in '{1}' but does not use the queried record. Only find or get record if you need to access the values. Consider using ISEMPTY.|Design|Warning|true|
 |[AA0181](codecop-aa0181-findsetfindshouldbeusedwithnext.md)|The FindSet() or Find() methods must be used only in connection with the Next() method.|Avoid getting the dataset when an enumeration is not used, which will decrease performance.|The FindSet() or Find() method on the record '{0}' must be used only in connection with the Next() method.|Design|Warning|true|

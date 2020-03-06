@@ -182,7 +182,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     > [!NOTE]
     > Depending on the update that you are installing, you might get a message similar to the following:
     >
-    > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database’s application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
+    > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database's application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
     >
     > This is not an error, and you can continue installing the update. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update does not make any schema changes to the system tables.
 
@@ -352,7 +352,6 @@ Follow these steps if your existing solution uses the Microsoft Base Application
 
     Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the Base Application.
 
-
 ### Upgrade custom Base Application
 With a custom Base Application, you may want the new application features and hotfixes included in the Microsoft Base Application. If so, you'll have to merge the modifications made in the Microsoft Base Application into your custom Base Application. Then, create a new version of your custom Base Application.
 
@@ -366,30 +365,50 @@ If your old solution used Microsoft extensions, then you upgrade these extension
 
 The general steps for this task are listed below. For detailed steps, see [Publishing, Upgrading, and Installing Extensions During Upgrade](upgrade-publish-extensions.md).
 
-### Publish and install Microsoft_Application extension (Update 3 and later only)
+### Publish and install Microsoft_Application extension (update to 15.3 only)
 
-This step is only required when you're updating from Update 2 (15.2) and earlier to Update 3 (15.3) or later.
+The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
-1. Publish the Microsoft_Application.app from the installation media (DVD) 
+1. Download the Microsoft_Application extension package and source code from the [Microsoft Download Center](https://download.microsoft.com/download/9/9/1/991764bc-5f99-4be7-957a-f132ac0633ef/Application.zip).
 
-    You find this file in the **\Applications\Application\Source** folder. For example:
+    <!--If you're using the Microsoft Base Application or a custom base application that has the Microsoft ID, go to step 3.--
 
+   <!--
+    This step is only required when you are installing Update 15.3. With later updates, the Microsoft_Application extension package and code are on the DVD in the **\Applications\Application\Source** folder.
+    -->
+2. If your base application has an ID other the Microsoft ID (437dbf0e-84ff-417a-965d-ed2bb9650972), you have to modify the Microsoft_Application extension. Skip this step if you are using the Microsoft Base Application or a custom base application that has the Microsoft ID.
+
+    The Microsoft_Application extension must include a dependency reference to your custom base application instead of Microsoft's. To make this change, use the extension's source code that you downloaded. For example: <br /><br />
+    
+    1. Extract the source code from the Application.source.zip file. 
+    2. Create a Visual Studio Code project that includes the extracted files. You can give the project any valid name. 
+    3. In the extension's app.json file, change the base application dependency to match your base application.
+
+        > [!IMPORTANT]
+        > Do not change the name of the extension. It must have the name **Application**; otherwise you won't be able to publish the other Microsoft extensions.
+        
+    3. Build the extension package.
+    
+3. Publish the Microsoft_Application.app package.
+
+    <!--
+    
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "DVD\Applications\Application\Source\Microsoft_Application.app"
     ```
-
-2. Synchronize the tenant database with the schema changes of the Microsoft_Application extension.
-
+    -->
     ```powershell
-    Sync-NavApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Version <extension version> -Tenant <tenant ID>
+    Publish-NAVApp -ServerInstance <server instance name> -Path "<folder path>\Microsoft_Application.app"
     ```
-
-4. Install the Microsoft_Application extension on the tenant.
-
-    The Microsoft_Application extension is named **Application**.
+3. Synchronize the tenant database with the schema changes of the Microsoft_Application extension.
 
     ```powershell
-    Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name Application -Version <extension version>
+    Sync-NavApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Tenant <tenant ID>
+    ```
+4. Install the Microsoft_Application extension on your tenants.
+    
+    ```powershell
+    Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name Application 
     ```
 
 ### Publish and install Microsoft extensions
@@ -501,3 +520,4 @@ This step is not required for the application at runtime, but it will be needed 
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
+[Getting Started in AL](../developer/devenv-get-started.md)  
