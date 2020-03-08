@@ -21,7 +21,7 @@ There are two kinds of indented hierarchy lists: fixed and collapsible. In a fix
 
 ### Sample table and page
 
-To demonstrate how indented hierarchy works, we'll use a basic table and page. For more detailed uses, see the **Item Categories** and **Chart of Accounts** pages. You find these pages in the base application.
+To demonstrate how indented hierarchy works, we'll use a basic table and page. For more detailed implementations, see the **Item Categories** and **Chart of Accounts** pages. You find these pages in the base application.
 
 #### Table
 
@@ -166,7 +166,7 @@ You can achieve the same results using a variable instead of the table field for
 
 When using the fixed hierarchy, consider the following behavior:
 
-- Indentation works best on a single column. You can specify more than one column with th [IndentationControl property](properties/devenv-indentationcontrols-property.md). However, in the UI, the columns may not appear as expected.
+- Indentation works best on a single column. You can specify more than one column with the [IndentationControl property](properties/devenv-indentationcontrols-property.md). However, in the UI, the columns may not appear as expected.
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
 
