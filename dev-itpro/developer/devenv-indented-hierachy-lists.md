@@ -242,13 +242,14 @@ page 50100 MyPage
 }  
 ```
 
+You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
+
 ### Behavior considerations
 
 When using the tree hierarchy, consider the following behavior:
 
-- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) is ignored. 
+- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) is ignored. Records are indented on the first column.
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
-- Records are indented on the first column.
 - If data in the first column is right-aligned, such as with integers, the records won't appear as indented.
 
 ## See Also
