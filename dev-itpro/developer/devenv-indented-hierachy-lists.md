@@ -9,89 +9,87 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Displaying Lists in an Indented Hierarchy
+# Designing Indented Lists
 
-This article explains how to indent rows in a list, displaying records in a parent-child structure. This structure can help organize the list and make it more readable for the user.
+This article explains how to indent rows in a list, displaying them in a parent-child structure. Indenting rows can help organize the list and make it more readable for the user.
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
-#### Sample table and page
+### Sample table and page
 
-To demonstrate how indented hierarchy works, we'll use a basic table and page. For a more detailed implementation, look at the code for **Chart of Accounts** page in the base application.
+To demonstrate how indented hierarchy works, we'll use a basic table and page. For detailed implementations, look at the **Item Categories** and **Chart of Accounts** pages in the base application.
 
-1. Create the following table object:
+#### Table
 
-    ```
-    table 50100 MyTable
-    {
-        fields
-        {      
-            field(1; Number; Code[10])
-            {
-            }
-            field(2; Name; Text[50])
-            {
-            }
-            field(3; Indent; Integer)
-            {
-            }
-        }
-        
-        keys
+```
+table 50100 MyTable
+{
+    fields
+    {      
+        field(1; Number; Code[10])
         {
-            key(PK; Number)
-            {
-            }
+        }
+        field(2; Name; Text[50])
+        {
+        }
+        field(3; Indent; Integer)
+        {
         }
     }
-    ```
-
-2. Create a page that displays the fields of the table.
-
-    Typically, you wouldn't display the **Indent** field because it's mainly for layout purposes.
-
-    ```
-    page 50100 MyPage
+    
+    keys
     {
-        PageType = List;
-        ApplicationArea = All;
-        UsageCategory = Lists;
-        SourceTable = MyTable;
-        Editable = true;
-    
-        layout
+        key(PK; Number)
         {
-            area(Content)
+        }
+    }
+}
+```
+
+#### Page
+
+```
+page 50100 MyPage
+{
+    PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Lists;
+    SourceTable = MyTable;
+    Editable = true;
+
+    layout
+    {
+        area(Content)
+        {
+            repeater(Control1)
             {
-                repeater(Control1)
+
+                field(Number; Number)
                 {
-    
-                    field(Number; Number)
-                    {
-                        ApplicationArea = All;
-                    }
-    
-                    field(Name; Name)
-                    {
-                        ApplicationArea = All;
-                    }
-                    field(Indent; Indent)
-                    {
-                        ApplicationArea = All;
-                    }
+                    ApplicationArea = All;
+                }
+
+                field(Name; Name)
+                {
+                    ApplicationArea = All;
+                }
+                field(Indent; Indent)
+                {
+                    ApplicationArea = All;
                 }
             }
         }
-    }  
-    ```
+    }
+}  
+```
 
-3. In the client, run the page and add records to the table.
+Typically, you wouldn't display the **Indent** field because it's typically used for layout purposes.
 
-    Be sure to set the **Indent** field.
+In the client, run the page and add records to the table. Be sure to set the **Indent** field.
 
-## Setting up fixed hierarchy
+## Setting up fixed indented hierarchy
 
-In a fixed hierarchy, child rows are always shown.
+In a fixed hierarchy, child rows are always shown, as illustrated in the following figure.
 
 ![Fixed indented list](media/static-tree.png "Fixed indented list")
 
@@ -169,12 +167,13 @@ When using the fixed hierarchy, consider the following behavior:
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
 
 
-## Setting up a collapsible hierarchy
+## Setting up a collapsible indented hierarchy
 
-In a collapsible, users can collapse and expand parent rows to show and hide child records. Setting up a collapsible hierarchy is similar to the fixed indented, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
+In a collapsible hierarchy, users can collapse and expand parent rows to show and hide child records.
 
 ![Fixed indented list](media/collapsible-tree.png "Fixed indented list")
 
+Setting up a collapsible hierarchy is similar to the fixed indented list, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
 - Like in fixed indented hierarchy, the [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) is an integer data type field or variable that determines which records get indented and by how much.
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) enables the tree.
