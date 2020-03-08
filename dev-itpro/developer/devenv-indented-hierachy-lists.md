@@ -11,13 +11,17 @@ author: jswymer
 ---
 # Designing Indented Lists
 
-This article explains how to indent rows in a list, displaying them in a parent-child structure. Indenting rows can help organize the list and make it more readable for the user.
+This article explains how to indent rows in a list. Using the indentation properties in AL, you can display rows in a nested, or parent-child, structure.
+
+![Fixed indented list](media/static-tree.png "Fixed indented list")
+
+A row that's indented from a row above is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
 ### Sample table and page
 
-To demonstrate how indented hierarchy works, we'll use a basic table and page. For detailed implementations, look at the **Item Categories** and **Chart of Accounts** pages in the base application.
+To demonstrate how indented hierarchy works, we'll use a basic table and page. For more detailed uses, see the **Item Categories** and **Chart of Accounts** pages. You find these pages in the base application.
 
 #### Table
 
@@ -156,7 +160,7 @@ page 50100 MyPage
 }  
 ```
 
-You can achieve the same results using a variable instead of the table field for the IndentationColumn property.  
+You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
 
 ### Behavior considerations
 
@@ -165,7 +169,6 @@ When using the fixed hierarchy, consider the following behavior:
 - Indentation works best on a single column. You can specify more than one column with th [IndentationControl property](properties/devenv-indentationcontrols-property.md). However, in the UI, the columns may not appear as expected.
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
-
 
 ## Setting up a collapsible indented hierarchy
 
