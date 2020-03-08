@@ -11,7 +11,11 @@ author: jswymer
 ---
 # Designing Indented Lists
 
-This article explains how to indent rows in a list. Using the indentation properties in AL, you can display rows in a nested, or parent-child, structure.
+This article explains how to indent rows in a list.
+
+## Overview
+
+Using the indentation properties in AL, you can display rows in a nested, or parent-child, structure.
 
 ![Fixed indented list](media/static-tree.png "Fixed indented list")
 

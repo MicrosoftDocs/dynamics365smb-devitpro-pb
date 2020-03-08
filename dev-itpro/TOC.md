@@ -195,7 +195,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [The "Ready to Go" Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -284,7 +284,7 @@
 ##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
-##### [Displaying Lists in an Indented Hierarchy](developer/devenv-indented-hierachy-lists.md)
+##### [Designing Indented Lists](developer/devenv-indented-hierachy-lists.md)
 #### Card Pages
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
