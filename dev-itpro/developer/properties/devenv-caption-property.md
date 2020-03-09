@@ -27,15 +27,15 @@ Sets the text string that displays with the object, control, or other element in
 
 ## Parameters
 *Locked*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 If `true` the Caption is locked and should not be translated.  
 
 *Comment*  
-&emsp;Type: [Text](text-data-type.md)  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 Descriptive text for the Caption, for example, with regards to translation.
 
 *MaxLength*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
 Sets the maximum length of the specific Caption.
 
 ## Syntax
