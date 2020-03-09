@@ -25,7 +25,7 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 - Dynamics NAV 2018 CU 16
 
     Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. However, the 2019 release wave 2 removes support for migrating from Dynamics NAV 2018 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. Instead, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan.<!--
-        **NAV2018 will only be supported up to the Wave2 Release of Business Central.  This update will release approximately the beginning of Octover 2019. With the Wave2 release a customer will need to update their on premise if they want to migrate to the cloud.  **See the Wave 2 release notes for more information.-->
+        **NAV2018 will only be supported up to the 2019 Wave2 Release of Business Central.  This update will release approximately the beginning of Octover 2019. With the Wave2 release a customer will need to update their on premise if they want to migrate to the cloud.  **See the Wave 2 release notes for more information.-->
 <!-- - Dynamics SL 2018 CU 1-->
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
@@ -34,7 +34,7 @@ Data is replicated using an Azure service called Azure Data Factory (ADF). The A
 
 ## Are there any limits on the amount or type of data will replicate?
 
-Data replication for the initial release will have a limit of 150GB.  There are no restrictions on the type of data that can be replicated.  
+Data replication for the initial release will have a limit of 30GB.  There are no restrictions on the type of data that can be replicated.  
 
 ## Is my SQL connection string required to set up the connection?
 
