@@ -29,6 +29,7 @@ This property must be set to a field or variable of the [Integer Data Type](../d
 
 This property is used by the **IndentationControls** property and **ShowAsTree** property. It has no effect if these properties aren't properly set.
 
+For more information about how to use this property, see [](../devenv-designing)
 ## Example
 
 ```

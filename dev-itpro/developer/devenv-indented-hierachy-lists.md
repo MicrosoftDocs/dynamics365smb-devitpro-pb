@@ -95,7 +95,7 @@ Typically, you wouldn't display the **Indent** field because it's typically used
 
 In the client, run the page and add records to the table. Be sure to set the **Indent** field.
 
-## Setting up fixed indented hierarchy
+## Setting up a fixed indented hierarchy
 
 In a fixed hierarchy, child rows are always shown, as illustrated in the following figure.
 
