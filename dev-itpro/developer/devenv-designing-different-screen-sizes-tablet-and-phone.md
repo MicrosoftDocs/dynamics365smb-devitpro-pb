@@ -17,12 +17,12 @@ When designing application pages for the [!INCLUDE[nav_tablet](includes/nav_tabl
  ![Various sizes of screens](media/screen_sizes.PNG)  
 
 ## Form Factor Considerations  
- Users can scroll both the navigation and the content area of the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a tablet to access all data for a given page. However, it is recommended that the scrolling in the navigation bar is minimal. The navigation bar is the lef-hand side area of [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] and it is designed to provide easy access to important information and tasks that the user should not lose sight of when scrolling on the content area. <!-- The static elements will display only as much data as they can reasonably fit on the screen. Developers should design to make sure that the important static elements are displayed first so that these will be shown even on the smallest, available devices.  -->
+ Users can scroll both the navigation and the content area of the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a tablet to access all data for a given page. However, it is recommended that the scrolling in the navigation bar is minimal. The navigation bar is the area on the the left-hand side of [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] and it is designed to provide easy access to important information and tasks that the user should not lose sight of when scrolling on the content area. <!-- The static elements will display only as much data as they can reasonably fit on the screen. Developers should design to make sure that the important static elements are displayed first so that these will be shown even on the smallest, available devices.  -->
 
  On phones the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] displays only one part at a time on the Role Center. On the Home page, the Activity tiles are always displayed first, and you navigate through the bottom menu to explore the content area.  
 
 ### Guidance for Page Element Types on Smallest Tablet Devices  
- The following table provides a list of elements that fit in the page content or the app bar without the need of scrolling.  
+ The following table provides a list of elements that fit in the page content or the app bar without scrolling.  
 
 |Page Type|Displays on smallest tablet device|  
 |---------------|----------------------------------------|  

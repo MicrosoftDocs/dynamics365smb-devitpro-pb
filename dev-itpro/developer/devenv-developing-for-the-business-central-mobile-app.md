@@ -32,7 +32,7 @@ The following list provides an overview of developing for the [!INCLUDE[nav_uni_
   
 -   [Opening the Business Central Tablet or Phone Client from a Browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md)  
   
--   [Linking to the Business Central App](devenv-link-to-mobile-app.md)  
+-   [Linking to the Business Central Mobile App](devenv-link-to-mobile-app.md)  
   
 -   [Example: Developing a Sales Rep Role Center for the Business Central Tablet Client](devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)  
   
