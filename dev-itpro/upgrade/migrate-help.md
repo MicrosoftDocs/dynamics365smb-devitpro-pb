@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 03/06/2020
+ms.date: 03/09/2020
 ms.author: edupont
 ---
 
@@ -55,11 +55,11 @@ For example, in [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016,
 <p>Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.</p>
 ```
 
-The field had the ID 3 on table 363, giving it a unique ID of T_363_13, which was used as the file name. A tool would extract this information into a text file in the following format:
+The field has the ID 3 on table 363, giving it a unique ID of T_363_13, which was used as the file name. A tool would extract this information into a text file in the following format:
 
 `T363-C13-P8631-A1033-L999:Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.`
 
-A second tool would then map that table field ID with the corresponding control on the Analysis View page object.  
+A second step then mapped that table field ID to the corresponding control on the Analysis View page object. This step was required because tooltips are not supported on table fields, only on controls on page objects. But the mapping is not always straightforward because the same table is often used two or more pages, and as a result, the page ID could be many numbers away from the table ID. So we did a lot of cleaning up and shuffling around in Excel
 
 ## Moving to MarkDown
 
@@ -69,7 +69,7 @@ Converting your existing content to MarkDown can be done using third-party tools
 
 When you have converted your content to MarkDown, you can use a Git repo in Azure DevOps as your source repository, create a private or public repo in GitHub, or set up a project in [MkDocs](https://www.mkdocs.org/), for example. Then you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
 
-If you do not yet have a website that you publish content to, then there are several ways in which you can create such a site. The [MkDocs](https://www.mkdocs.org/) project generates a website for you, but you can also work with a web designer to build a site that resembles the [Docs.microsoft.com](/dynamics365/business-central/) site, if that is what your customers will prefer.  
+If you do not yet have a website that you publish content to, then there are several ways in which you can create such a site. The [MkDocs](https://www.mkdocs.org/) project generates a website for you, but you can also work with a web designer to build a site that resembles the [Docs.microsoft.com](/dynamics365/business-central/) site, if that is what your customers will prefer. We recommend deploying to [an Azure web app](/azure/app-service/overview).
 
 ## See Also
 
