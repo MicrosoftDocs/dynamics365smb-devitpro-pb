@@ -26,8 +26,8 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |----------|-------------|-----------------|--------|
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
-|Web Service Requests|Provide information about execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 |Report Generation|Provide information about execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
+|Web Service Requests|Provide information about execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
 ## Enabling Application Insights
 
