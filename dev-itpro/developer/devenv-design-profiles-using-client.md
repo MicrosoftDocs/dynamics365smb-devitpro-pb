@@ -91,17 +91,17 @@ A profile package is a zip file that contains profile and page customizations in
 
 |File type|Description|
 |----|-----------|
-|app.json|A required configuration file that includes dependencies to the base application and system application. In most cases, you shouldn't modify this file after exporting. The app.json must be included in the profile package that you import.|
-|profile.json|A required configuration file that specifies information about the profiles in the package. In most cases, you shouldn't have to modify this file after exporting. The profile.json must be included in the profile package that you import.|
+|app.json|A required configuration file that includes dependencies to the base application and system application. In most cases, you shouldn't modify this file after exporting it. The app.json must be included in the profile package that you import.|
+|profile.json|A required configuration file that specifies information about the profiles in the package. In most cases, you shouldn't modify this file after exporting it. The profile.json must be included in the profile package that you import.|
 |profile file|An AL file for a user-created profile. There's a separate file for each profile. A profile file has the format `Profile._<profile ID>_.al`.|
-|profile extension file|An AL file for customizations made to extension-based profile. These file types have the format `ProfileExtension._<profile ID>_.al`. |
+|profile extension file|An AL file for customizations made to an extension-based profile. These file types have the format `ProfileExtension._<profile ID>_.al`. |
 |page customization file|An AL file that specifies all customizations made to a page for a specific profile. A page customization file has the format `PageCustomization._[page name]_.Configuration\<number\>.al`.|
 
 The sections that follow explain a bit more about the file types and creating the profile package.
 
 ### Profile files
 
-Each user-created profile is exported to a separate AL file. This file contains the `profile` object that defines the profile's ID, name, and Role Center. It also includes references the page customizations it uses. For example, let's say you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**.  You then customized the Business Manager Role Center itself and the **Customer** list page. The exported zip file would contain a file called **PROFILE.MyProfile.al** that includes the following code:
+Each user-created profile is exported to a separate AL file. This file contains the `profile` object that defines the profile's ID, name, and Role Center. It also includes references to the page customizations it uses. For example, let's say you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**.  You then customized the Business Manager Role Center itself and the **Customer** list page. The exported profile package would contain a file called **PROFILE.MyProfile.al**. This file would include the following code:
 
 ```
 profile MyProfile
@@ -138,7 +138,7 @@ profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 }
 ```
 
-`Configuration3` is a reference to a page customization file for the **Customer** page. For more information, see the next section for
+`Configuration3` is a reference to a page customization file for the **Customer** page. For more information, see the next section.
 
 <!--And:
 
@@ -167,7 +167,7 @@ Page customizations made to user-created profiles and extension-based profiles a
 - **PageCustomization._Customer List_.Configuration2.al**
 - **PageCustomization._Customer List_.Configuration3.al**
 
-The files would include code similar to the following code
+The files would include code similar to the following code:
 
 ##### PageCustomization._Business Manager Role Center_.Configuration1.al
 
@@ -187,7 +187,7 @@ pagecustomization Configuration1 customizes "Business Manager Role Center"
 }
 ```
 
-**PageCustomization._Customer List_.Configuration2.al**
+##### PageCustomization._Customer List_.Configuration2.al
 
 ```
 pagecustomization Configuration2 customizes "Customer List"
@@ -204,7 +204,9 @@ pagecustomization Configuration2 customizes "Customer List"
   }
 }
 ```
-**PageCustomization._Customer List_.Configuration3.al**
+
+##### PageCustomization._Customer List_.Configuration3.al
+
 ```
 pagecustomization Configuration3 customizes "Customer List"
 {
@@ -250,14 +252,15 @@ pagecustomization Configuration3 customizes "Customer List"
 }
 ```
 -->
+
 ### Creating a profile package for import
 
 After you make modifications to exported profiles and page customizations, you'll have to create the profile package before you can import the changes.
 
 The profile package doesn't have to contain the same files that were originally exported. But it must contain the app.json and profile.json files. Otherwise, you can't import the package. To create the profile package, just compress the files into a zip folder.  
 
-
 ## See Also
+
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Object](devenv-page-object.md)  
