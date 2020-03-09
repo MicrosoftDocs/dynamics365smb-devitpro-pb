@@ -43,9 +43,9 @@ If you are migrating from an earlier version of [!INCLUDE[navnow_md](../develope
 
 The tooltips play an important role as part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] [user assistance model](../user-assistance.md), and we encourage you to apply tooltips to your controls and actions as well.  
 
-For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. You can build a similar tool if you want to reuse your existing content in the same way. For Microsoft, it was a three-step process. 
+For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. You can build a similar tool if you want to reuse your existing content in the same way. For Microsoft, it was a three-step process.  
 
-1. The starting point for us was two .TXT files, one file with all application objects, and one file with the first paragraph from HTML files with the field Help plus the ID of the table field. A tool then mapped the content from the HTML files to the page and control IDs in the application objects based on regular expressions to help with the mapping.
+1. The starting point for us was two .TXT files, one file with all application objects, and one file with the first paragraph from HTML files with the field Help plus the ID of the table field. A tool then mapped the content from the HTML files to the page and control IDs in the application objects based on regular expressions to help with the mapping (step 2).
 
     For example, in [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016, the field topic for the [Dimension 1 Code](/previous-versions/dynamicsnav-2016/hh170682(v=nav.90)) field on the Analysis View table had this as the first paragraph:
 
@@ -57,7 +57,7 @@ For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.
 
     `T363-C13-P8631-A1033-L999:Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.`
 
-    The ID of the tooltip, `T363-C13-P8631-A1033-L999`, is based on the **Translate Export** format for [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] and specifies the table, the field, the property, the language, and the field length. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files](/previous-versions/dynamicsnav-2016/dd301161(v=nav.90)) in the docs for [!INCLUDE [navcrete_md](../developer/includes/navcrete_md.md)].  
+    The ID of the tooltip, `T363-C13-P8631-A1033-L999`, is based on the **Translate Export** format for [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] and specifies the table, the field, the property, the language, and the field length. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files](/previous-versions/dynamicsnav-2016/dd301161(v=nav.90)) in the docs for [!INCLUDE [navcorfu_md](../developer/includes/navcorfu_md.md)].  
 
 2. The second step mapped that table field ID to the corresponding control on the Analysis View page object. This step was required because tooltips are not supported on table fields, only on controls on page objects.  
 
@@ -65,13 +65,15 @@ For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.
 
 3. The last step was to get the edited tooltips into the metadata for the relevant page objects.  
 
-    During our conversion, the application objects were still based on C/AL and C/SIDE, so we used the tools for working with C/AL objects in .TXT format. But the same can work for AL-based objects.  
+    During our conversion, the application objects were still based on C/AL and C/SIDE, so we used the tools for working with C/AL objects in .TXT format. But the same can work for AL-based objects where the tooltips are stored in the [ToolTip](../developer/properties/devenv-tooltip-property.md) property.  
 
-    For more information, see [Working with Application Objects as Text Files](/previous-versions/dynamicsnav-2016/dn789521%28v%3dnav.90%29) in the docs for [!INCLUDE [navcrete_md](../developer/includes/navcrete_md.md)] and [How to Add Translated Strings By Importing and Exporting Multilanguage Files](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files) in the docs for [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)].
+    For more information, see [Working with Application Objects as Text Files](/previous-versions/dynamicsnav-2016/dn789521%28v%3dnav.90%29) in the docs for [!INCLUDE [navcorfu_md](../developer/includes/navcorfu_md.md)], [How to Add Translated Strings By Importing and Exporting Multilanguage Files](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files) in the docs for [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)], and [Working with Translation Files](../developer/devenv-work-with-translation-files.md) for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
-Now that the tooltips are in the page objects, we modify them using Excel. Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter the data. Due to the requirement of getting the text into TooltipML properties on page objects, we had to make it easy to do this work in a large Git enlistment in Azure DevOps, so the tooling is surrounded by a bunch of PowerShell scripts. We cannot share the tooltip tool itself, but it uses an open source tool, [https://closedxml.codeplex.com/](https://closedxml.codeplex.com/), to handle the Excel integration - creating, opening, and saving an Excel workbook. The tool is then surrounded by PowerShell scripts to populate the new Excel file with the existing page objects and their existing tooltips, and import the changed tooltips into the page objects.  
+### After the conversion
 
+Now that the tooltips are in the page objects, we work with them using Excel. Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter the data. Due to the requirement of getting the text into Tooltip properties on page objects, we had to make it easy to do this work in a large Git enlistment in Azure DevOps, so the tooling is surrounded by a bunch of PowerShell scripts. We cannot share our current tooltip tool either, but it uses an open source tool, [https://closedxml.codeplex.com/](https://closedxml.codeplex.com/), to handle the Excel integration - creating, opening, and saving an Excel workbook. The tool is then surrounded by PowerShell cmdlets scripts to populate the new Excel file with the existing page objects and their existing tooltips, and import the changed tooltips into the page objects.  
 
+You can also choose to work with tooltips in the translation files or straight in the .AL files. Different solutions require different processes, so pick the process that is more efficient for you.  
 
 ## Moving to MarkDown
 
