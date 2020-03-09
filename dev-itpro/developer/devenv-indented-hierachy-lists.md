@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Designing Indented Lists
+# Designing Indented Hierarchy Lists
 
 This article explains how to indent rows in a list.
 
