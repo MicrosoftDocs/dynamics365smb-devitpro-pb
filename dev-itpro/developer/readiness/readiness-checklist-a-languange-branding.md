@@ -45,8 +45,6 @@ Make sure to make the right reference throughout your content:
 - Based on the ”new” branding guidelines, the full name, "**Microsoft Dynamics 365 Business Central**" must be used in its entirety at first mention on the page, and at all prominent locations such as titles, headings etc. (unless the Microsoft brand is already clearly established)
 - **Dynamics 365 Business Central** on second mention (or first mention if the Microsoft brand is already clearly established)
 - **Business Central** on subsequent mention as long as Microsoft Dynamics 365 has been clearly established on that given page or content. 
-
-Please reference [Microsoft Dynamics 365 branding rules documentation](https://worldready.cloudapp.net/Styleguide/Read?id=2858&topicid=44517 ).
 - Don’t include Microsoft names, logos or trademarks in your offer unless it is the [AppSource badge](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide) 
 - Don’t use Dynamics 365 names, logos or trademarks in your offering’s: name, URL, your company name, your social media account names or any other names you might use.
 - Don’t make references to acronyms, old brand names or demo old UIs
