@@ -12,15 +12,18 @@ author: jswymer
 
 # Testing the Application Overview
 
-Before you release your [!INCLUDE[prodshort](includes/prodshort.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It is important to create repeatable tests, and it is helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prodshort](includes/prodshort.md)] that help you test the business logic in your application, and it provides some best practices for testing. 
+Before you release your [!INCLUDE[prodshort](includes/prodshort.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prodshort](includes/prodshort.md)] that help you test the business logic in your application, and it provides some best practices for testing. 
 
 For a walkthrough concerning advanced extension testing, see [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md).
 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes the below features to help you test your application.
 
+> [!IMPORTANT]
+> With a customer license, you can't run Business Central test toolkit objects. These objects have IDs the range 130000-139999. If you only have a customer license, talk to your partner about the Application Builder and Solution Developer modules. As a partner, you should write your tests to use codeunit **132217 Library - Lower Permissions** to simulate licenses.
+
 ## Test Codeunits and Test Methods 
 
-You write tests as AL code in methods of codeunits that are designated as test codeunits, that is, codeunits that have the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **Test**. There are three types of methods that you can add in a test codeunit: test, handler, and normal. Each method type is used for a specific  purpose and behaves differently. When a test codeunit runs, it executes the **OnRun** trigger, and then executes each test method in the codeunit. The outcome of a test method is either SUCCESS or FAILURE.
+You write tests as AL code in methods of codeunits that are configured to be test codeunits. Test condunits hae the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **Test**. There are three types of methods that you can add in a test codeunit: test, handler, and normal. Each method type is used for a specific  purpose and behaves differently. When a test codeunit runs, it executes the **OnRun** trigger, and then executes each test method in the codeunit. The outcome of a test method is either SUCCESS or FAILURE.
 
 For more information about test codeunits and test methods, see [Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md).
 
@@ -28,7 +31,7 @@ For more information about test codeunits and test methods, see [Test Codeunits 
   
 You use test runner codeunits to manage the execution of test codeunits and to integrate with other test management, execution, and reporting frameworks. By integrating with a test management framework, you can automate your tests and enable them to run unattended.  
 
-Test runner codeunits are codeunits which have the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **TestRunner**.
+Test runner codeunits are codeunits that have the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **TestRunner**.
 
 Test runner codeunits include the following triggers:  
 
