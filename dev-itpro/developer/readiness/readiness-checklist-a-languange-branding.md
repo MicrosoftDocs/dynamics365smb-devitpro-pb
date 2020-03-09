@@ -34,7 +34,7 @@ See in the list below what to consider for each storefront detail when it comes 
 |Supported editions:| Must be in English and using the provided standard html code.|
 
 > [!NOTE]  
-> If you are targeting an international audience, we still recommend you use English on AppSource and create different landing pages incorporating the needed languages (i.e. two language buttons – cf. one in English and one in the given local language)
+> If you are targeting an international audience, we still recommend you use English on AppSource and create different landing pages incorporating the needed languages (i.e. two language buttons – cf. one in English and one in the given local language).
 
 | General requirements | Description  | Requirements |
 |----------------------|--------------|--------------|
