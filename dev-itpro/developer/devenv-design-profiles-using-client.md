@@ -18,17 +18,20 @@ ms.author: jswymer
 
 Besides creating profiles and page customizations by writing AL code, you can use the client. The client is a useful alternative, because you work with the user interface just as the users would. This method is especially advantageous for consultants, application administrators, and less technical users.
 
-For information about using the client, see [Create Profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile) and [Design customization Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
-
 ## Overview
+
+For detailed instructions on how to use the client to create and modify profiles, see the following articles in the Business Central application help:
+
+- [Create Profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile)
+- [Design customization Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
 
 A consequence of using the client is that profile changes apply only to the tenant. Extension-based profiles and customizations, by contrast, are available for all tenants. However, the client lets you export user-created profiles and page customizations from a tenant, then import them on another tenant.
 
 Profiles created in the client are marked as **\(user-created\)** profiles. The export and import functionality lets you:
 
-- Backup profile and page customizations locally
-- Make further changes to profiles and page customizations away from the production environment
-- Replicate profiles and page customizations on other environments and tenants
+- Backup profile and page customizations locally.
+- Make further changes to profiles and page customizations away from the production environment.
+- Replicate profiles and page customizations on other environments and tenants.
 - Preview changes in sandbox environments before going into production.
 
 > [!IMPORTANT]
@@ -52,11 +55,12 @@ To export user-created profiles and page customizations,  are exported to a *pro
 
     Create an AL project in a Visual Studio Code project. Then, compile them into an extension package that can be published and available to all tenants.
 -->
+
 ## Exporting profiles
 
 When you export profiles, the system exports all user-defined profiles and page customizations that have been made in the tenant. It doesn't export profiles and page customizations introduced by extensions.
 
-To export profiles from the client, open the **Profiles (Roles)** page, and select the **Export Profiles** action. A .zip file is downloaded to your computer. The file is referred to as a profile package.
+To export profiles from the client, open the **Profiles (Roles)** page, and select the **Export Profiles** action. A zip file is downloaded to your computer. The file is referred to as a *profile package*.
 
 Once you have the profile package, you can import it as-is to another tenant. Or, you can extract the files and make more changes to profiles and page customizations.
 
@@ -83,19 +87,21 @@ However, you can export user-created profiles and page customizations from the c
 
 ## Working with the profile package and files
 
-A profile package is a zip file that contains profile and page customizations in separate files. These files basically contain the AL source. The following table provides an overview of the file types in a profile package.
+A profile package is a zip file that contains profile and page customizations in separate files. These files basically contain the AL source code. The following table provides an overview of the file types in a profile package.
 
 |File type|Description|
 |----|-----------|
-|app.json|A required configuration file that includes dependencies to the base application and system application. In most cases, you shouldn't modify this file after exporting. The app.json must be including in the profile package that you import.|
-|profile.json|A required configuration file that specifies information about the profiles in the package. In most cases, you shouldn't have to modify this file after exporting. The profile.json must be including in the profile package that you import.|
+|app.json|A required configuration file that includes dependencies to the base application and system application. In most cases, you shouldn't modify this file after exporting. The app.json must be included in the profile package that you import.|
+|profile.json|A required configuration file that specifies information about the profiles in the package. In most cases, you shouldn't have to modify this file after exporting. The profile.json must be included in the profile package that you import.|
 |profile file|An AL file for a user-created profile. There's a separate file for each profile. A profile file has the format `Profile._<profile ID>_.al`.|
 |profile extension file|An AL file for customizations made to extension-based profile. These file types have the format `ProfileExtension._<profile ID>_.al`. |
 |page customization file|An AL file that specifies all customizations made to a page for a specific profile. A page customization file has the format `PageCustomization._[page name]_.Configuration\<number\>.al`.|
 
+The sections that follow explain a bit more about the file types and creating the profile package.
+
 ### Profile files
 
-Each user-created profile is exported to a separate AL file. This file contains the `profile` object that defines the profile ID, name, and Role Center. It also includes references the page customizations it uses. For example, let's say you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**.  You then customized the Business Manager Role Center itself and the **Customer** list page. The exported zip file would contain a file called **PROFILE.MyProfile.al** that includes the following code:
+Each user-created profile is exported to a separate AL file. This file contains the `profile` object that defines the profile's ID, name, and Role Center. It also includes references the page customizations it uses. For example, let's say you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**.  You then customized the Business Manager Role Center itself and the **Customer** list page. The exported zip file would contain a file called **PROFILE.MyProfile.al** that includes the following code:
 
 ```
 profile MyProfile
@@ -113,14 +119,27 @@ The `Customizations` property identifies the page customization objects used by 
 
 ### Profile extension files
 
-Page customizations that are made to extension-based profiles are exported to two types of AL files. The first file includes a `profileextension` object that specifies which profile has been modified and includes references to the page customization object files. The second file type includes a `pagecustomization` object that defines the modification to the page. A separate file is created for each customized page. For example, if you customized the **Customer** page for the **Business Manager** profile that is provided by the Base Application extension, the zip file would contain two files: **ProfileExtension._BUSINESS MANAGER.al** and **PageCustomization._Customer List_.Configuration2.al**. The files will contain code similar to the following code:
+Customizations made to extension-based profiles are exported to a profile extension file. This file includes a `profileextension` object that specifies two types of information, depending on the changes:
+
+- Properties that specify metadata like, the CaptionML, ProfileDescriptionML, and RoleCenter. 
+- References to configuration files that define page customizations. 
+
+For example, let's say you changed the description and customized the **Customer** page for the **Business Manager** profile that is provided by the Base Application extension. The profile package would then contain the file **ProfileExtension._BUSINESS MANAGER.al**. This file will contain code similar to the following code:
 
 ```
 profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 {
+  CaptionML = ENU='Business Manager';
+  Enabled = true;
+  ProfileDescriptionML = ENU='My changed functionality for managers in charge of keeping the business viable by determining product and company direction.';
+  Promoted = false;
+  RoleCenter = 9022;
   Customizations = Configuration3;
 }
 ```
+
+`Configuration3` is a reference to a page customization file for the **Customer** page. For more information, see the next section for
+
 <!--And:
 
 ```
@@ -142,7 +161,15 @@ pagecustomization Configuration3 customizes "Customer List"
 
 ### Page customization files
 
-Page customizations made to user-created profiles and extension-based profiles are exported to AL files that include a `pagecustomization` object. This object defines each modification to the page. Referring to the example above, the zip file would include two files: **PageCustomization._Business Manager Role Center_.Configuration1.al** and **PageCustomization._Customer List_.Configuration2.al**. The files would include code similar to the following code:
+Page customizations made to user-created profiles and extension-based profiles are exported to AL files that include a `pagecustomization` object. This object defines each modification to the page. Referring to the examples above, the zip file would include three files:
+
+- **PageCustomization._Business Manager Role Center_.Configuration1.al**
+- **PageCustomization._Customer List_.Configuration2.al**
+- **PageCustomization._Customer List_.Configuration3.al**
+
+The files would include code similar to the following code
+
+##### PageCustomization._Business Manager Role Center_.Configuration1.al
 
 ```
 pagecustomization Configuration1 customizes "Business Manager Role Center"
@@ -160,7 +187,7 @@ pagecustomization Configuration1 customizes "Business Manager Role Center"
 }
 ```
 
-And:
+**PageCustomization._Customer List_.Configuration2.al**
 
 ```
 pagecustomization Configuration2 customizes "Customer List"
@@ -177,7 +204,22 @@ pagecustomization Configuration2 customizes "Customer List"
   }
 }
 ```
-
+**PageCustomization._Customer List_.Configuration3.al**
+```
+pagecustomization Configuration3 customizes "Customer List"
+{
+  layout
+  {
+    modify("Balance Due (LCY)")
+    {
+    Visible = false;
+    }
+  }
+  actions
+  {
+  }
+}
+```
 <!--
 ## Exported page customizations for extension-based profiles
 
