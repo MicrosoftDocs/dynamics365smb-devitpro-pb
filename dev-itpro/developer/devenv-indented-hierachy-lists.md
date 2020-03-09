@@ -86,7 +86,7 @@ page 50100 MyPage
 }  
 ```
 
-Typically, you wouldn't display the **Indent** field because it's typically used for layout purposes.
+Typically, you wouldn't display the **Indent** field because it's only used for layout purposes.
 
 In the client, run the page and add records to the table. Be sure to set the **Indent** field.
 
@@ -96,7 +96,7 @@ In a fixed hierarchy, child rows are always shown, as illustrated in the followi
 
 ![Fixed indented list](media/static-tree-2.png "Fixed indented list")
 
-Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
+In the figure, indentation is applied to the second column. Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
 - The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. You set the property to either a field in the page's source table or to a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
@@ -246,7 +246,7 @@ When using an indented hierarchy, consider the following behavior:
 
     - The IndentationControl property is ignored. Records are always indented on the first column only.
 
-    - Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** in the header of the first column. It stays this way, until they delete personalization on the page.
+    - Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** button in the header of the first column. It stays this way, until they delete personalization on the page.
 
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
