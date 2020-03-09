@@ -98,7 +98,7 @@ In a fixed hierarchy, child rows are always shown, as illustrated in the followi
 
 Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
-- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. The property can set to a field in the page's source table or a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
+- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. You set the property to either a field in the page's source table or to a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
 - The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
 
@@ -168,10 +168,10 @@ In a collapsible hierarchy, users can collapse and expand parent rows to show an
 
 ![Fixed indented list](media/collapsible-tree.png "Fixed indented list")
 
-Setting up a collapsible hierarchy is similar to the fixed indented list, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
+Setting up a collapsible hierarchy is similar to the fixed indented list, except for the properties that you set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
 - Like in fixed indented hierarchy, the [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) is an integer data type field or variable that determines which records get indented and by how much.
-- The [ShowAsTree Property](properties/devenv-showastree-property.md) enables the tree.
+- The [ShowAsTree Property](properties/devenv-showastree-property.md) makes the hierarchy collapsible.
 - The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.
 
 ### Example
@@ -235,7 +235,6 @@ page 50100 MyPage
 
 You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
 
-
 ## Design and behavior considerations
 
 When using an indented hierarchy, consider the following behavior:
@@ -243,9 +242,15 @@ When using an indented hierarchy, consider the following behavior:
 - In a fixed hierarchy indentation works best on a single column.
 
     You can specify more than one column with the IndentationControl property. However, in the UI, the columns may not appear as expected.
-- In a collapsible hierarchy, the IndentationControl property. Records are always indented on the first column only.
+- In a collapsible hierarchy:
+
+    - The IndentationControl property is ignored. Records are always indented on the first column only.
+
+    - Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** in the header of the first column. It stays this way, until they delete personalization on the page.
+
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
+
 
 ## See Also
 
