@@ -11,11 +11,11 @@ author: jswymer
 ---
 # Designing Indented Hierarchy Lists
 
-This article explains how to indent rows in a list.
+This article explains how to indent specific rows in a list.
 
 ## Overview
 
-Using the indentation properties in AL, you can display rows in a nested, or parent-child, structure.
+Using the indentation properties in AL, you can display rows in a parent-child structure.
 
 ![Fixed indented list](media/static-tree.png "Fixed indented list")
 
@@ -71,19 +71,14 @@ page 50100 MyPage
         {
             repeater(Control1)
             {
-
                 field(Number; Number)
                 {
-                    ApplicationArea = All;
                 }
-
                 field(Name; Name)
                 {
-                    ApplicationArea = All;
                 }
                 field(Indent; Indent)
                 {
-                    ApplicationArea = All;
                 }
             }
         }
@@ -105,9 +100,11 @@ Setting up the fixed indented hierarchy involves configuring two properties on t
 
 - The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. The property can set to a field in the page's source table or a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
-- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented. 
+- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
 
-Working with the sample page, add the IndentationColumn and IndentationControls to the repeater of the page as shown:  
+### Example
+
+Working with the sample page, let's indent records based on the value of the **Indent** column. You'll apply the indentation to **Name** column. For this hierarchy, you set the IndentationColumn and IndentationControls to the repeater of the page as shown in the following code:
 
 <!-- 
 ```
@@ -137,8 +134,7 @@ page 50100 MyPage
         {
             repeater(Control1)
             {
-                IndentationColumn = Indent;
-                // IndentationColumn = IndentVariable;
+                IndentationColumn = Indent;// IndentationColumn = IndentVariable;
                 IndentationControls = Name;
 
                 field(Number; Number)
@@ -166,19 +162,11 @@ page 50100 MyPage
 
 You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
 
-### Behavior considerations
-
-When using the fixed hierarchy, consider the following behavior:
-
-- Indentation works best on a single column. You can specify more than one column with the [IndentationControl property](properties/devenv-indentationcontrols-property.md). However, in the UI, the columns may not appear as expected.
-- When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
-- Right-aligned data in columns, such as the integer data type, won't appear as indented.
-
 ## Setting up a collapsible indented hierarchy
 
 In a collapsible hierarchy, users can collapse and expand parent rows to show and hide child records.
 
-![Fixed indented list](media/collapsible-tree.png "Fixed indented list")
+![Fixed indented list](media/collapsible-tree-2.png "Fixed indented list")
 
 Setting up a collapsible hierarchy is similar to the fixed indented list, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
@@ -186,9 +174,9 @@ Setting up a collapsible hierarchy is similar to the fixed indented list, except
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) enables the tree.
 - The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.
 
-With the tree-view, records that have an indent value that is greater than the row above it, appear as a child to the above record.
+### Example
 
-Working with the sample page, add the IndentationColumn, ShowAsTree, and TreeInitialState to the repeater of the page as shown: 
+Working with the sample page, let's indent records based on the value of the **Indent** column. Records will indent on the **Number** column and parent records will be collapsible. For this hierarchy, you add the IndentationColumn, ShowAsTree, and TreeInitialState properties to the pages' repeater: 
 
 <!--
 ```
@@ -218,8 +206,7 @@ page 50100 MyPage
         {
             repeater(Control1)
             {
-                IndentationColumn = Indent;
-                // IndentationColumn = IndentVariable;
+                IndentationColumn = Indent; // IndentationColumn = IndentVariable;
                 ShowAsTree = true;
                 TreeInitialState = CollapseAll;
 
@@ -248,13 +235,17 @@ page 50100 MyPage
 
 You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
 
-### Behavior considerations
 
-When using the tree hierarchy, consider the following behavior:
+## Design and behavior considerations
 
-- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) is ignored. Records are indented on the first column.
+When using an indented hierarchy, consider the following behavior:
+
+- In a fixed hierarchy indentation works best on a single column.
+
+    You can specify more than one column with the IndentationControl property. However, in the UI, the columns may not appear as expected.
+- In a collapsible hierarchy, the IndentationControl property. Records are always indented on the first column only.
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
-- If data in the first column is right-aligned, such as with integers, the records won't appear as indented.
+- Right-aligned data in columns, such as the integer data type, won't appear as indented.
 
 ## See Also
 
