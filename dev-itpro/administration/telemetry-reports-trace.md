@@ -90,7 +90,7 @@ See [Custom dimensions](#customdimensions).
 The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that take longer than expected to run and generate a large number of rows.
 
 > [!NOTE]
-> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds.
+> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds. For more information, see [Report Cancellation](report-cancellation.md).
 
 #### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
 
@@ -195,7 +195,7 @@ Dimension|Description or value|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
+|telemetry"chemaVersio"|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
 -->
 ## Example trace
 
