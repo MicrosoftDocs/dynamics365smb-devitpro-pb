@@ -51,8 +51,7 @@ As a simple example, do the following steps:
     traces
     | take 100
     | sort by timestamp desc 
-    ```
-
+    ``` 
 ## See also
 
 [Working with Administration Tools](administration.md)  

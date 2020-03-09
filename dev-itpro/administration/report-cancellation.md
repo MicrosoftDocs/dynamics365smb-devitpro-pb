@@ -18,8 +18,6 @@ There are several operations and events that can initiate a request on the serve
 
 This flow means a report isn't necessarily canceled when a limit is exceeded. For example, if the maximum number of rows is exceeded, the report won't be canceled as long as it completes within the five-second interval.
 
-The update failed due to exception raised in the extension.
-
 ## See Also
 
 [Configuring Business Central Server](configure-server-instance.md)  
