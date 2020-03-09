@@ -57,6 +57,10 @@ The [!INCLUDE[server](../developer/includes/server.md)] specifies database acces
 
 When data is committed to the primary database, the transaction log entries are log-shipped to the transaction log for the secondary replicas. Then, an asynchronous transaction log "redo" operation makes the data available in the secondary databases.
 
+#### What about Sandboxes?
+
+Sandbox environments can't be enabled with read scale-out. Objects that use the **DataAccessIntent** property will compile and run. But they'll just access the primary database.
+
 ## See also
 
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
