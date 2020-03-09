@@ -94,7 +94,7 @@ In the client, run the page and add records to the table. Be sure to set the **I
 
 In a fixed hierarchy, child rows are always shown, as illustrated in the following figure.
 
-![Fixed indented list](media/static-tree.png "Fixed indented list")
+![Fixed indented list](media/static-tree-2.png "Fixed indented list")
 
 Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
@@ -166,7 +166,7 @@ You can achieve the same results using a variable instead of the table field for
 
 In a collapsible hierarchy, users can collapse and expand parent rows to show and hide child records.
 
-![Fixed indented list](media/collapsible-tree-2.png "Fixed indented list")
+![Fixed indented list](media/collapsible-tree.png "Fixed indented list")
 
 Setting up a collapsible hierarchy is similar to the fixed indented list, except for the properties that you must set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 
