@@ -21,5 +21,5 @@ This flow means a report isn't necessarily canceled when a limit is exceeded. Fo
 
 ## See Also
 
-[Configuring Business Central Server](configure-server-instances.md)  
+[Configuring Business Central Server](configure-server-instance.md)  
 [Analyzing Report Telemetry](telemetry-reports-trace.md)  
