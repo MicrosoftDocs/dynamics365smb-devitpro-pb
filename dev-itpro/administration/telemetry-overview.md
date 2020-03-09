@@ -51,6 +51,13 @@ As a simple example, do the following steps:
     | sort by timestamp desc 
     ```
 
+## Application Insights sample code
+On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started utilizing Application Insights. 
+
+See [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights) for more information.
+
+
+
 ## See also
 
 [Working with Administration Tools](administration.md)  
