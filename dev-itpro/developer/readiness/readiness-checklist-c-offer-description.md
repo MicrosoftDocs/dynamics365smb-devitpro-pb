@@ -32,7 +32,7 @@ To do so, your description should consist of 6 paragraphs (in the following orde
 
 By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
 
-How to format your description in the Cloud Partner Portal? The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. 
+How to format your description in Partner Center? The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. 
 
 When formatting the description of your offer please consider the following:
 - The description can max. be 3000 characters incl. spaces
@@ -198,7 +198,7 @@ Format the paragraph
 
 > [!TIP]  
 > Example of a completed offer summary and offer description in the “Offer
-details” section of the Cloud Partner Portal.
+details” section of Partner Center.
 
 Below is an enlarged picture of the entire offer description (cf. point 2.A-G)
 and the html tags used:
