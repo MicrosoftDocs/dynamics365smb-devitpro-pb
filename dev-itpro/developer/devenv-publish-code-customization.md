@@ -122,19 +122,18 @@ Make sure to have the following prerequisites installed to be able to follow the
         Uninstall-NavApp -ServerInstance $ServerInstance -Name $ApplicationName -Force
         UnpublishAppAndDependencies $ServerInstance  $ApplicationName
     
-    }
-    
+    }  
     ```
 12. Save the script as **unpublish.ps1**. 
-12. Run the script that you created in **step 11** to handle the uninstall and unpublishing of the Base Application and its dependencies. From the PowerShell commandline run `.\unpublish.ps1`.
-13. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
+13. Run the script that you created in **step 11** to handle the uninstall and unpublishing of the Base Application and its dependencies. From the PowerShell commandline run `.\unpublish.ps1`.
+14. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
-14. Import a license with rights to publish the extension. For example:  
+15. Import a license with rights to publish the extension. For example:  
     ```
     Import-NAVServerLicense -ServerInstance BC150 -LicenseFile "C:\Users\mylicense.flf"
     ```
 
-15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
+16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
 
 The Base Application is now published with the small customization of bolding the text in the name field on the Customer Card page.
 
