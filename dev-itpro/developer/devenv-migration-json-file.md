@@ -15,4 +15,24 @@ ms.author: solsen
 # The Migration.json File
 
 
+
+```
+{ 
+
+    "apprules": [ 
+
+        { 
+
+            "id": "12345678-abcd-abcd-abcd-1234567890ab" 
+
+        } 
+
+    ] 
+
+} 
+ 
+```
+
 ## See Also
+
+[JSON Files](devenv-json-files.md)  
