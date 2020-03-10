@@ -62,7 +62,7 @@ When you export profiles, the system exports all user-defined profiles and page 
 
 To export profiles from the client, open the **Profiles (Roles)** page, and select the **Export Profiles** action. A zip file is downloaded to your computer. The file is referred to as a *profile package*.
 
-Once you have the profile package, you can import it as-is to another tenant. Or, you can extract the files and make more changes to profiles and page customizations.
+Once you have the profile package, you can import it as-is to another tenant. Or, you extract the files and make more changes to profiles and page customizations. When you're done, you compress the files into a profile package again and import it on tenants.
 
 > [!NOTE]
 > To export profiles, a user requires read permission to the **Profiles** page and table as a minimum. This capability allows normal users to hand over profiles to others for troubleshooting.
