@@ -12,16 +12,14 @@ author: jswymer
 
 # Testing the Application Overview
 
-Before you release your [!INCLUDE[prodshort](includes/prodshort.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prodshort](includes/prodshort.md)] that help you test the business logic in your application, and it provides some best practices for testing. 
-
-For a walkthrough concerning advanced extension testing, see [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md).
-
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes the below features to help you test your application.
+Before you release your [!INCLUDE[prodshort](includes/prodshort.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prodshort](includes/prodshort.md)] that help you test the business logic in your application, and it provides some best practices for testing.
 
 > [!IMPORTANT]
 > Running automated tests is only possible with a Partner or Application Builder license.
 
-With a customer license, you can't run Business Central test toolkit objects. These objects have IDs the range 130000-139999. If you only have a customer license, talk to your partner about the Application Builder and Solution Developer modules. As a partner, you should write your tests to use codeunit **132217 Library - Lower Permissions** to simulate licenses.
+For a walkthrough concerning advanced extension testing, see [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md).
+
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes the below features to help you test your application.
 
 ## Test Codeunits and Test Methods 
 
