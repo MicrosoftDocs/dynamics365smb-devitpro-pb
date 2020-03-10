@@ -84,28 +84,25 @@ Make sure to have the following prerequisites installed to be able to follow the
     ```
 9. For improved performance when working with a large project like the Base Application, see the [Optimize Visual Studio Code Editing and Building Performance](devenv-optimize-visual-studio-code.md) topic.
 
-10. If you now try to publish the extension from Visual Studio Code you will get the following error:
+10. Next, you must uninstall all extensions from the command line. If you at this point try to just publish the extension from Visual Studio Code you will get the following error:
 
     `The request for path /BC150/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
 
-    The extensions are installed in the global scope. If you want to publish an extension from Visual Studio Code, within the developer scope, you will have to first uninstall and then unpublish the extensions from the command line.
+    You get the error because the extensions are installed in the `global` scope. If you want to publish an extension from Visual Studio Code, within the `developer` scope, you will have to first uninstall and then unpublish the extensions from the command line.
 
     Ideally, you should uninstall the application that you want to update and all its dependencies. To uninstall the Base Application use the following cmdlet:<br>
     `Uninstall-NavApp -Name "Base Application" -ServerInstance BC150 -Force`
 
     Use the `-Force` parameter to uninstall all dependencies.
 
-    Alternatively, uninstall everything using the following cmdlet.
+    > [!NOTE]  
+    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC150 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC150 -Force}`
 
-    `Get-NAVAppInfo -ServerInstance BC150 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC150 -Force}`
-
-11. The next step is to first unpublish the application that we want to publish and all of its dependencies.
+11. Having uninstalled, the next step is to unpublish the application and all of its dependencies. This needs to happen before we can publish it. The following command can be used if there are no dependencies to the Base Application:
 
     `Unpublish-NavApp -Name "Base Application" -ServerInstance BC150`
 
-    This can give an error regarding dependencies on the Base Application. To solve this, you must unpublish all the applications with dependencies on the Base Application.
-
-    A script like the following is useful for unpublishing the app and all of its dependencies. For example, use Windows PowerShell ISE to create a new script with the following lines of code. Save the script as **unpublish.ps1**. 
+    But if there are dependencies on the Base Application this will give an error. To solve this, you must unpublish all the applications with dependencies on the Base Application. This is easier to do using a script that recursively removes the dependencies. Use Windows PowerShell ISE to create a new script with the following lines of code:
 
     ```
     function UnpublishAppAndDependencies($ServerInstance, $ApplicationName)
@@ -125,19 +122,22 @@ Make sure to have the following prerequisites installed to be able to follow the
         Uninstall-NavApp -ServerInstance $ServerInstance -Name $ApplicationName -Force
         UnpublishAppAndDependencies $ServerInstance  $ApplicationName
     
-    }
+    }  
     ```
-12. Run the script that you created in **step 11** to handle the uninstall and unpublishing of the Base Application and its dependencies. From the PowerShell commandline run `.\unpublish.ps1`.
-13. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
+12. Save the script as **unpublish.ps1**. 
+13. Run the script from the PowerShell commandline to handle the uninstall and unpublishing of the Base Application and its dependencies:
+    `.\unpublish.ps1`
+    > [!NOTE]  
+    > Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
-14. Import a license with rights to publish the extension. For example:  
+15. Import a license with rights to publish the extension. For example:  
     ```
     Import-NAVServerLicense -ServerInstance BC150 -LicenseFile "C:\Users\mylicense.flf"
     ```
 
-15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
+16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
 
-The Base Application is now published with the small customization of bolding the text in the name field on the Customer Card page.
+The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 
 ## See Also
 
