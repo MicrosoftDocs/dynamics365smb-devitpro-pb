@@ -69,11 +69,11 @@ Once you have the profile package, you can import it as-is to another tenant. Or
 
 ## Importing profiles
 
-Importing profiles lets you add new profiles and page customizations or replace existing ones on a tenant. To import profiles, do the following steps:
+Importing profiles lets you add new profiles and page customizations on a tenant or replace existing ones. To import profiles, do the following steps:
 
 1. Get the profile package that contains the new or modified profiles.
 2. Before you import a package, we recommend that you export the current profiles so you have a copy.
-3. Open the **Profiles (Roles)** page, select the **Import Profiles** action, and follow the instructions to import it.
+3. Open the **Profiles (Roles)** page, select the **Import Profiles** action, and follow the instructions to import the profile package.
 
     You don't have to import all profiles contained in the package. You can select specific profiles. 
 
@@ -87,7 +87,7 @@ However, you can export user-created profiles and page customizations from the c
 
 ## Working with the profile package and files
 
-A profile package is a zip file that contains profile and page customizations in separate files. These files basically contain the AL source code. The following table provides an overview of the file types in a profile package.
+A profile package is a zip file that contains profile and page customizations in separate files. These files basically contain AL source code. The following table provides an overview of the file types in a profile package.
 
 |File type|Description|
 |----|-----------|
