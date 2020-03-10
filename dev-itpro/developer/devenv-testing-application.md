@@ -19,7 +19,9 @@ For a walkthrough concerning advanced extension testing, see [Testing the Advanc
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes the below features to help you test your application.
 
 > [!IMPORTANT]
-> With a customer license, you can't run Business Central test toolkit objects. These objects have IDs the range 130000-139999. If you only have a customer license, talk to your partner about the Application Builder and Solution Developer modules. As a partner, you should write your tests to use codeunit **132217 Library - Lower Permissions** to simulate licenses.
+> Running automated tests is only possible with a Partner or Application Builder license.
+
+With a customer license, you can't run Business Central test toolkit objects. These objects have IDs the range 130000-139999. If you only have a customer license, talk to your partner about the Application Builder and Solution Developer modules. As a partner, you should write your tests to use codeunit **132217 Library - Lower Permissions** to simulate licenses.
 
 ## Test Codeunits and Test Methods 
 
