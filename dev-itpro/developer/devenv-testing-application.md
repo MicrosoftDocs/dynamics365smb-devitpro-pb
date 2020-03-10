@@ -23,7 +23,7 @@ For a walkthrough concerning advanced extension testing, see [Testing the Advanc
 
 ## Test Codeunits and Test Methods 
 
-You write tests as AL code in methods of codeunits that are configured to be test codeunits. Test condunits hae the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **Test**. There are three types of methods that you can add in a test codeunit: test, handler, and normal. Each method type is used for a specific  purpose and behaves differently. When a test codeunit runs, it executes the **OnRun** trigger, and then executes each test method in the codeunit. The outcome of a test method is either SUCCESS or FAILURE.
+You write tests as AL code in methods of codeunits that are configured to be test codeunits. Test codeunits have the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **Test**. There are three types of methods that you can add in a test codeunit: test, handler, and normal. Each method type is used for a specific  purpose and behaves differently. When a test codeunit runs, it executes the **OnRun** trigger, and then executes each test method in the codeunit. The outcome of a test method is either SUCCESS or FAILURE.
 
 For more information about test codeunits and test methods, see [Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md).
 
@@ -41,20 +41,21 @@ Test runner codeunits include the following triggers:
 
 -   [OnAfterTestRun Trigger](triggers/devenv-OnAfterTestRun-Trigger.md)  
 
- In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to perform preprocessing and postprocessing, such as initialization or logging test results.  
+ In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to do preprocessing and postprocessing, such as initialization or logging test results.  
 
 For more information about test runner codeunits, see [Test Runner Codeunits](devenv-testrunner-codeunits.md).
 
-## Test Pages  
-Test pages mimic actual pages but do not present any UI on a client computer. Test pages let you test the code on a page by using AL to simulate user interaction with the page.  
+## Test Pages
+
+Test pages mimic actual pages but don't present any UI on a client computer. Test pages let you test the code on a page by using AL to simulate user interaction with the page.  
 
 There are two types of test pages:  
 
-- TestPage, which is a regular page and can be any kind of page. This includes page parts or subpages.  
+- TestPage, which is a regular page and can be any kind of page. It includes page parts and subpages as well.  
 
 - TestRequestPage, which represents the request page on a report.  
 
-You can access the fields on a page and the properties of a page or a field by using the dot notation. You can open and close test pages, perform actions on the test page, and navigate around the test page by using AL methods. For more information, see [Testing Pages](devenv-testing-pages.md).
+You access the page's fields and properties or a field by using the dot notation. You can open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Testing Pages](devenv-testing-pages.md).
 
 ## UI Handlers
 To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a method that has the [ConfirmHandler Attribute](methods/devenv-confirmhandler-attribute.md) set handles [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md) calls. If code that is being tested calls the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md), then the **ConfirmHandler** method is called instead of the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md). You write code in the **ConfirmHandler** method to verify that the expected question is displayed by the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md) and you write AL code to return the relevant reply. 
