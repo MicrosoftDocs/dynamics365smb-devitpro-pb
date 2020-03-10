@@ -137,7 +137,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
 
-The Base Application is now published with the small customization of bolding the text in the name field on the Customer Card page.
+The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 
 ## See Also
 
