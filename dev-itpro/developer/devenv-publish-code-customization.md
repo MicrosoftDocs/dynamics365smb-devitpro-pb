@@ -127,7 +127,8 @@ Make sure to have the following prerequisites installed to be able to follow the
 12. Save the script as **unpublish.ps1**. 
 13. Run the script from the PowerShell commandline to handle the uninstall and unpublishing of the Base Application and its dependencies:
     `.\unpublish.ps1`
-14. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
+    > [!NOTE]  
+    > Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
 15. Import a license with rights to publish the extension. For example:  
     ```
