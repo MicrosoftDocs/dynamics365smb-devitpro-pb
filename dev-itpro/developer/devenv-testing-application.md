@@ -55,10 +55,10 @@ There are two types of test pages:
 
 - TestRequestPage, which represents the request page on a report.  
 
-You access the page's fields and properties or a field by using the dot notation. You can open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Testing Pages](devenv-testing-pages.md).
+You access the page's fields and properties or a field by using the dot notation. You open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Testing Pages](devenv-testing-pages.md).
 
 ## UI Handlers
-To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a method that has the [ConfirmHandler Attribute](methods/devenv-confirmhandler-attribute.md) set handles [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md) calls. If code that is being tested calls the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md), then the **ConfirmHandler** method is called instead of the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md). You write code in the **ConfirmHandler** method to verify that the expected question is displayed by the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md) and you write AL code to return the relevant reply. 
+To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a method that has the [ConfirmHandler Attribute](methods/devenv-confirmhandler-attribute.md) set handles [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md) calls. If code that is being tested calls the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md), then the **ConfirmHandler** method is called instead of the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md). You write code in the **ConfirmHandler** method to verify that the expected question is displayed by the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md). You write AL code to return the relevant reply. 
 
 You create a specific handler for each page that you want to handle and a specific report handler for each report that you want to handle.  
 
@@ -67,14 +67,14 @@ If you run a test codeunit from a test runner codeunit, then any unhandled UI in
 For more information, see [Creating Handler Methods](devenv-creating-handler-methods.md). 
 
 ## ASSERTERROR Keyword
-You use `AssertError` statements in test methods to test how your application behaves under failing conditions. These are called positive and negative tests. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.
+You use `AssertError` statements in test methods to test how your application behaves under failing conditions. These statements are called positive and negative tests. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.
 
 If a simple or compound statement that follows the `AssertError` keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GETLASTERRORTEXT Method](methods-auto/system/system-getlasterrortext-method.md).
 
-If a statement that follows the `AssertError` keyword does not cause an error, then the `AssertError` statement causes the following error and the test method that is running produces a FAILURE result.
+If a statement that follows the `AssertError` keyword doesn't cause an error, then the `AssertError` statement causes the following error and the test method that is running produces a FAILURE result.
 
 ### Example  
-To create a test method to test the result of a failure of a CheckDate method that you have defined, you can use the following code. This example requires that you create a method called CheckDate to check whether the date is valid for the customized application and that you create the following text constant and the *Date* variable InvalidDate and the *Text* variable InvalidDateErrorMessage.  
+To create a test method to test the result of a failure of a CheckDate method that you've defined, you can use the following code. This example requires that you create a method called CheckDate. This method checks whether the date is valid for the customized application. You also create the following text constant, *Date* variable InvalidDate, and *Text* variable InvalidDateErrorMessage.  
 
 ```  
 InvalidDate := 010184D;  
@@ -85,24 +85,25 @@ if GETLASTERRORTEXT <> InvalidDateErrorMessage then
 ```
 
 ## Test with Permission Sets
-In most cases, users will be running with a permission set that limits their access to the functionality they need to do their work. To ensure that it works as intended, you can write application tests in AL that use specific permission sets when the test is run. For more information, see [Testing with Permission Sets](devenv-testing-with-permission-sets.md).
+
+Users typically run with a permission set that limits access to the functionality they need to do their work. To ensure that it works as intended, write application tests in AL that use specific permission sets. For more information, see [Testing with Permission Sets](devenv-testing-with-permission-sets.md).
 
 ## Testing Best Practices
 We recommend the following best practices for designing your application tests:  
 
 - Test code should be kept separate from the code that is being tested. That way, you can release the tested code to a production environment without releasing the test code.  
 
-- Test code should test that the code being tested works as intended both under successful and failing conditions. These are called positive and negative tests. The positive tests validate that the code being tested works as intended under successful conditions. The negative tests validate that the code being tested work as intended under failing conditions.  
+- Test code should test that the code works as intended both under successful and failing conditions. These tests are called positive and negative tests. The positive tests validate that the code being tested works as intended under successful conditions. The negative tests validate that the code being tested work as intended under failing conditions.  
 
   1. In positive tests, the test method should validate the results of application calls, such as return values, state changes, or database transactions.
 
-  2. In negative tests, the test method should validate that the intended errors occur, error messages are presented, and the data has the expected values.  
+  2. In negative tests, the test method should validate that the intended errors occur, error messages are presented, and data has the expected values.  
 
-- Automated tests should not require user intervention.  
+- Automated tests shouldn't require user intervention.  
 
-- Tests should leave the system in the same well-known state as when the test started so that you can re-run the test or run other tests in any order and always start from the same state.  
+- Tests should leave the system in the same well-known state as when the test started. This way, you can rerun the test or run other tests in any order and always start from the same state.  
 
-- Test execution and reporting should be fast and able to integrate with the test management system so that the tests can be used as check-in tests or other build verification tests, which typically run on unattended servers.  
+- Test execution and reporting should be fast and able to integrate with the test management system. This way, the tests can be used as check-in tests or other build verification tests. These other tests typically run on unattended servers.  
 
 - Create test methods that follow the same pattern:  
 
@@ -110,10 +111,10 @@ We recommend the following best practices for designing your application tests:
 
   2. Invoke the business logic that you want to test.  
 
-  3. Validate that the business logic performed as expected.  
+  3. Validate that the business logic worked as expected.  
 
 <!-- TO DO: Check this-->
-- Only use hardcoded values in tests when you really need it. For all other data, consider using random data. For example, you want to test the `Ext. Doc. No. Mandatory` field in the `Purchases & Payables Setup` table. To do this you need to create and post typical purchase invoice. The typical purchase invoice line specifies an amount. For most tests, it does not matter exactly what amount. For inspiration, see the use of the **GenerateRandomCode** method in the tests that are included in the **TestToolkit** folder on the [!INCLUDE[prodshort](includes/prodshort.md)] product media. For more information, see [Random Test Data](devenv-random-test-data.md).  
+- Only use hardcoded values in tests when you really need it. For all other data, consider using random data. For example, you want to test the `Ext. Doc. No. Mandatory` field in the `Purchases & Payables Setup` table. To do this, you need to create and post typical purchase invoice. The typical purchase invoice line specifies an amount. For most tests, it doesn't matter exactly what amount. For inspiration, see the use of the **GenerateRandomCode** method in the tests that are included in the **TestToolkit** folder on the [!INCLUDE[prodshort](includes/prodshort.md)] product media. For more information, see [Random Test Data](devenv-random-test-data.md).  
 
 <!--- Monitor code coverage. For more information, see [Code Coverage](uiref/-$-N_9990-Code-Coverage-$-.md). -->
 
