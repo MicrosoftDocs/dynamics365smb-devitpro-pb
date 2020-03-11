@@ -15,7 +15,7 @@ author: jswymer
 Before you release your [!INCLUDE[prodshort](includes/prodshort.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prodshort](includes/prodshort.md)] that help you test the business logic in your application, and it provides some best practices for testing.
 
 > [!IMPORTANT]
-> Running automated tests is only possible with a Partner or Application Builder license.
+> For Business Central on-premises, running automated tests is only possible with a Partner or Application Builder license.
 
 For a walkthrough concerning advanced extension testing, see [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md).
 
