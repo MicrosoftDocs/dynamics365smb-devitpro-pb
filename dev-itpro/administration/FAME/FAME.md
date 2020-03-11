@@ -1,12 +1,17 @@
-# FAME Documentation
+---
+title: "FAME API"
+author: jswymer
+ms.custom: na
+ms.date: 10/03/2020
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+ms.author: jswymer
+---
 
-## Table of Contents
-- [App](#app)
-- [Country](#country)
-- [Principal](#principal)
-- [Version](#version)
-- [Environment](#environment)
-- [Environment Hotfix](#environment-hotfix)
+# FAME API
 
 ## Entities
 ## App
