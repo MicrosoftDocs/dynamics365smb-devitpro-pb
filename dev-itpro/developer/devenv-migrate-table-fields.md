@@ -15,10 +15,11 @@ ms.author: solsen
 
 Data migration allows you to move table and field data between extensions. The `migration.json` file provides a pointer to the ID of an app that one or more tables will be moved to. The `migration.json` file can be added into the app project of an extension that a table is moved from to specify the ID of the app that the table will be moved to.
 
-![Data migration](../media/data-migration-tables-fields.png "data migration")  
+![Data migration](media/data-migration-tables-fields.png "data migration")  
 
-1. Created a target extension for containing the base table object.
-2. Copied the table object code from the original extension. Deleted the field that I wanted in the table extension.
+1. Create a target extension for containing the base table object.
+2. Copy the table object code from the original extension to the target.
+3. In the original table object, delete he fields that I wanted in the table extension.
 3. Noted the appId of the new extensions
 4. Compiled the first version of this extension.
 5. In the original extension, added a migration.json file that included the appId of the target extension:
@@ -45,47 +46,45 @@ Data migration allows you to move table and field data between extensions. The `
 16. Upgraded the original extension. Not really necessary in my case.
 
 
+## Create a target extension
 
-1.    Crated a target extension.
-2.    Added a table that exactly matched the definition in the original extension.
-3.    Compiled the first version of this extension.
-4.    In the original extension, added a migration.json file that included the appId of the target extension:
-{ 
+1. Create an AL project for target extension.
+2. In the target extension project, add a table object that exactly matches the table object in the original extension.
+3. Compile the first version of this extension.
+
+    Make a note ot the appID of the target extension.
+
+## Create a new version of the original extension
+
+1. In the original extension project, add a migration.json file that includes ID of the target extension:
+
+    ```
+    { 
     "apprules": [ 
         { 
             "id": "2f3b6c0a-fb6a-4289-ae8a-ded32a991059" 
         } 
     ] 
-} 
+    } 
+    ```
 
-5.    Deleted the table object,
-6.    Compiled a new version of the extension
-7.    Published the target extension and new version of original extension.
-8.    Uninstalled the old version of the original extension.
-9.    Synced the target extension. This created an empty table, owned by the target extension.
-10.    Synced the new version of the original extension. The migrated the data in the table to the target extension tables. The columns in the original table were deleted.
-11.    Installed the new target extension
-12.    Upgraded the original extension. Not really necessary in my case.
+5. Delete the table object,
+6. Compile a new version of the extension.
 
+## Deploying
 
-## Syntax for the migration.json file
+1. Uninstall the old version of the original extension.
 
-```
-{ 
+2. Publish the target extension and new version of original extension.
 
-    "apprules": [ 
+3. Synchronize the target extension.
 
-        { 
+    This creates an empty table that is owned by the target extension.
+4. Synchronize the new version of the original extension.
 
-            "id": "12345678-abcd-abcd-abcd-1234567890ab" 
-
-        } 
-
-    ] 
-
-} 
- 
-```
+    This migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
+5. Install the new target extension.
+6. Upgrade the original extension.
 
 ## See Also
 
