@@ -178,7 +178,7 @@ This message occurs when a user tries to sign in to a company whose name exceeds
 This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. If the name exceeds 30 characters, then this message occurs. Make sure that the user has the proper name of the company.
 
 <!--
-###### The product license permits working with companies that have names that start with ‘<text>’ only.
+###### The product license permits working with companies that have names that start with '<text>' only.
 
 This message occurs when a user tries to open a company whose name does not start with the text that is required by the license.
 
@@ -229,11 +229,11 @@ For delegated admins:
 Is the admin added to the tenant? (delegate admins are no listed as a user in the tenant user page in Azure) 
 Verify the partnership is valid (in the customer tenant) 
 Open portal.office.com and go to the admin page.  
-Click “Partner relationships”, then click the partner name.  
-In the properties of the partner the property “Partner Relationship” should include “Admin” 
+Click "Partner relationships", then click the partner name.  
+In the properties of the partner the property "Partner Relationship" should include "Admin" 
 Verify the user (delegated admin) is an Admin or Helpdesk agent in the partner tenant.  
 Open the Partner center  
-Go to users and verify the type of the user to be an Admin or Helpdesk agent under the property “Assist your customers as”. 
+Go to users and verify the type of the user to be an Admin or Helpdesk agent under the property "Assist your customers as". 
 For device users, were they setup correctly? See Analyze device user login issues. 
 Are the users "enabled" in the BC users page? (information available in the Cloud Manager)  
 Are the users marked expired? Were users recently exported/imported via Excel?  
