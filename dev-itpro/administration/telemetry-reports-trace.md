@@ -90,7 +90,7 @@ See [Custom dimensions](#customdimensions).
 The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that take longer than expected to run and generate a large number of rows.
 
 > [!NOTE]
-> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds. For more information, see [Report Cancellation](report-cancellation.md).
+> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds. For more information, see [Report Generation and Cancellation Flow](report-cancellation.md).
 
 #### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
 
