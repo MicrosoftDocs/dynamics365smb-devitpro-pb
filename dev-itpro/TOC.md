@@ -172,7 +172,12 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
-#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+### Administration Center
+#### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
