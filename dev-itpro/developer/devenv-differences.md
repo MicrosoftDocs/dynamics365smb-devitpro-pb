@@ -15,6 +15,11 @@ ms.author: solsen
 # Differences in the Development Environments
 Coming from the Dynamics NAV Development Environment and C/SIDE, there are some differences and optimizations that you should familiarize yourself with. The following sections go through these changes.  
 
+## General development approach
+While you could change the existing Dynamics NAV source code using C/SIDE, the best approach to developing with the AL Language development environment is to work with [Extensions](devenv-dev-overview.md) only. That means that you can extend the existing code by adding new functionality or integrating your code using [Events](devenv-events-in-al.md), but it is not possible to change existing code, for example in codeunits. 
+
+With Business Central 2019 release wave 2, the possibility to change or ["code-customize" the base application](devenv-publish-code-customization.md) was introduced for on-premises installations, but at the same time it was announced that at some point in the future, the extension model will be the only option and code-customization will no longer be possible.
+
 ## Data types
 |C/SIDE|AL Language Development Environment|
 |------|---------------------------|
