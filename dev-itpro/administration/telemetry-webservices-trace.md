@@ -62,10 +62,10 @@ The following table explains the custom dimensions included in a **Web Services 
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |endpoint|Specifies the endpoint for the request.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
+|serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the request executed. |
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|totalTime|Specifies the amount of time it took for the service to process the request. The time has the format hh:mm:ss.sssssss.|
+|totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
 ### Example trace
