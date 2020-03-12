@@ -16,6 +16,8 @@ This following figure illustrates the process that occurs when a report is gener
 
 ![Report generation](../developer/media/report-generation.png "Report generation")  
 
+> [!NOTE]
+> The rendering process cannot be canceled.
 
 ## Evaluate Cancellation
 There are several operations and events that can initiate a request on the server to cancel a report. Some of these operations and events are invoked by the user, while others by the server itself. The server doesn't cancel a report immediately. Instead, every five seconds it evaluates the status of cancellation requests. The following diagram illustrates the flow for this subprocess:
