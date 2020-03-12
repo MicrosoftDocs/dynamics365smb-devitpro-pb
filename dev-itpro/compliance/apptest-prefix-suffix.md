@@ -13,21 +13,23 @@ ms.author: rweigel
 ---
 
 # Benefits and Guidelines for using a Prefix or Suffix
-In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects. You can use the [Caption](../developer/properties/devenv-caption-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix/suffix must be defined at the control/field/action/group level.
+In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects. You can use the [Caption](../developer/properties/devenv-caption-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a table extension or a page extension, the prefix/suffix must be defined at the control/field/action/group level.
+
+## Examples
 
 Declare your objects with a prefix as shown in the following examples.
 
-**Table**  
+### Table  
 ```
 table 70000000 MyPrefix Salesperson
 ```
 
-**Page**  
+### Page
 ```
 page 70000000 MyPrefix Salesperson
 ```
 
-**Page Extension**  
+### Page extension  
 ```
 actions
 {
@@ -36,7 +38,7 @@ actions
         action(MyPrefix Vacation)
 ```
 
-**Codeunit**  
+### Codeunit
 ```
 codeunit 70000000 MyPrefix Salesperson
 ```
