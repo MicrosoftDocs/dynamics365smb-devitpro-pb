@@ -20,6 +20,20 @@ The name of non-temporary variables must not be prefixed with Temp.
 Only temporary variable names must be prefixed with Temp.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Reason for the rule
+Temporary variables must be named with identifiers that abbreviate the word temporary, such as temp. This improves readability of the code.
+
+## Bad code example
+```
+TempJobWIPBuffer : Record "Job WIP Buffer";
+```
+
+## Good code example
+```
+CopyOfJobWIPBuffer : Record "Job WIP Buffer";
+```
+ 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
