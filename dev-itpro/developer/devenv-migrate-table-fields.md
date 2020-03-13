@@ -11,13 +11,47 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
-# Migrating Tables and Fields
+# Migrating Tables and Fields Between Extensions
 
-Data migration allows you to move table and field data between extensions. The `migration.json` file provides a pointer to the ID of an app that one or more tables will be moved to. The `migration.json` file can be added into the app project of an extension that a table is moved from to specify the ID of the app that the table will be moved to.
+Data migration allows you to move table and field data between extensions. The move is divided into to phases: development and deployment.
 
 ![Data migration](media/data-migration-tables-fields.png "data migration")  
 
+#### Development
 
+Development involves making application code changes required for the move. In short, the work involves:
+
+- Creating a completely new extension that contains a replica of the tables or fields you want to move. This extension is referred to as the *base extension*.  
+- Creating a new version of the existing extension in which the table and fields to be moved have been deleted. Other fields are reworked into table extension objects. This extension is referred to as the *original extension*.
+
+The key to the move is the *migration.json* file. This file provides a pointer to the ID of new base extension where tables and fields are to be moved. It is added to project for the new version of the original extension.
+
+#### Deployment
+
+The deployment phase is when the actual data is migrated to new tables in the database.
+
+<!--
+## Move a table to another extension
+
+
+![Move table](media/migrate-table.png "move table")  
+
+
+### Create a new base extension
+
+The base extension will contain the table and fields that you want to move.
+
+1. Create an AL project for base objects.
+
+2. Add a table object that exactly matches the table object in the original extension.
+
+3. If you are moving selected fields only, delete all other fields from the table. 
+
+4. Compile the first version of this extension.
+
+    Make a note ot the appID of the target extension.
+
+<!--
 1. Create an extension for the base table object.
 2. Copy the table object code from the original extension to the new extension.
 3. In the original table object, delete he fields that I wanted in the table extension.
@@ -46,7 +80,7 @@ Data migration allows you to move table and field data between extensions. The `
 15. Installed the new target extension
 16. Upgraded the original extension. Not really necessary in my case.
 
-
+-->
 ## Create a new base extension
 
 The base extension will contain the table and fields that you want to move.
@@ -75,15 +109,15 @@ The base extension will contain the table and fields that you want to move.
     } 
     ```
 
-5. If are are moving an entire table object, delete the table object.
+2. If are are moving an entire table object, delete the table object.
 
-6. If you are moving fields.
+3. If you are moving fields.
 
     1. Set up a dependency on the new base extension
     2. Add a table extension object that extends the table in the base extension.
     3. Add the fields definitions from the orginal table object.
     4. Delete the original table object.,
-6. Compile a new version of the extension.
+4. Compile a new version of the extension.
 
 ## Deploy the extensions
 
