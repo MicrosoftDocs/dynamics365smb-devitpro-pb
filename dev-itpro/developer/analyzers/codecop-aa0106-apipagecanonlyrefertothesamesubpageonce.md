@@ -1,6 +1,6 @@
 ---
 title: "A page of type API can only refer to the same subpage once."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/13/2020
 ms.reviewer: na
