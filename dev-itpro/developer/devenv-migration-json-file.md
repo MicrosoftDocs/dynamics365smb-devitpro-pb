@@ -19,7 +19,7 @@ Data migration allows you to move table and field data between extensions. The `
 
 1) In the root folder of the app project that will migrate data to a different app project, choose **New File**.
 2) Name the file `migration.json`.
-3) Edit the file by adding 
+3) Edit the file by adding one or more IDs inside the `"apprules":[]` section, such as the following:
 
 ```
 { 
@@ -37,6 +37,7 @@ Data migration allows you to move table and field data between extensions. The `
 } 
  
 ```
+4) Save the `migration.json` file.
 
 ## See Also
 
