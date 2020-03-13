@@ -1,5 +1,5 @@
 ---
-title: "Follow [the style guide](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming."
+title: "The name of temporary variables must be prefixed with Temp."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/13/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0215
-Follow [the style guide](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.  
+# CodeCop Rule AA0073
+The name of temporary variables must be prefixed with Temp.  
 
 ## Description
-Follow [the style guide](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.
+Only temporary variable names must be prefixed with Temp.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
