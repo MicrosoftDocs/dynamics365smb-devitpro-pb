@@ -17,8 +17,9 @@ Data migration allows you to move table and field data between extensions. The `
 
 ![Data migration](media/data-migration-tables-fields.png "data migration")  
 
-1. Create a target extension for containing the base table object.
-2. Copy the table object code from the original extension to the target.
+
+1. Create an extension for the base table object.
+2. Copy the table object code from the original extension to the new extension.
 3. In the original table object, delete he fields that I wanted in the table extension.
 3. Noted the appId of the new extensions
 4. Compiled the first version of this extension.
@@ -46,11 +47,17 @@ Data migration allows you to move table and field data between extensions. The `
 16. Upgraded the original extension. Not really necessary in my case.
 
 
-## Create a target extension
+## Create a new base extension
 
-1. Create an AL project for target extension.
-2. In the target extension project, add a table object that exactly matches the table object in the original extension.
-3. Compile the first version of this extension.
+The base extension will contain the table and fields that you want to move.
+
+1. Create an AL project for base objects.
+
+2. Add a table object that exactly matches the table object in the original extension.
+
+3. If you are moving selected fields only, delete all other fields from the table. 
+
+4. Compile the first version of this extension.
 
     Make a note ot the appID of the target extension.
 
@@ -68,10 +75,17 @@ Data migration allows you to move table and field data between extensions. The `
     } 
     ```
 
-5. Delete the table object,
+5. If are are moving an entire table object, delete the table object.
+
+6. If you are moving fields.
+
+    1. Set up a dependency on the new base extension
+    2. Add a table extension object that extends the table in the base extension.
+    3. Add the fields definitions from the orginal table object.
+    4. Delete the original table object.,
 6. Compile a new version of the extension.
 
-## Deploying
+## Deploy the extensions
 
 1. Uninstall the old version of the original extension.
 
