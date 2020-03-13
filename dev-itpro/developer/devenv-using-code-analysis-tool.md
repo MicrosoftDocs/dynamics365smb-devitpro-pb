@@ -58,7 +58,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 - **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](analyzers/appsourcecop.md).
 - **UICop** is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
 
-## Enabling code analysis on large projects
+## <a name="largeprojects"></a>Enabling code analysis on large projects
 In order to improve performance when running code analysis on large projects, you can switch off running code analysis in the background. To do so, open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings**. Then, specify the setting `"al.backgroundCodeAnalysis": false`.
   
 ## See Also

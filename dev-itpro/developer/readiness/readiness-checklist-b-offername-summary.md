@@ -17,7 +17,7 @@ ms.author: v-liober
 | 0.C **Offer Name**   | Your offers name on AppSource | Required      |
 
 > [!NOTE]  
-> The offer name must be the same as the name you specified in the app manifest. The offer name must always be in English, no matter what other language you are choosing for your description or documentation. 
+> The offer name must be the same as the name you specified in the app manifest. The offer name can be in any language.
 
 **What your offer name will look like on AppSource** (Applicable naming structure) 
 When creating a name for your offer, you can use the following two naming structures:
@@ -30,8 +30,7 @@ When creating a name for your offer, you can use the following two naming struct
 
     *Example: Sales & Inventory Forecast*  
 
-> [!IMPORTANT]  
-> *If you are building a partner localized app (an app for a country where Microsoft has not provided a localization – see list of these [here](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations))*, you MUST provide an offer name with the structure “Feature” for “country / region” (for example “Sales and Inventory Forecast for Estonia”, “Tax Report for Serbia”) 
+
 
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
