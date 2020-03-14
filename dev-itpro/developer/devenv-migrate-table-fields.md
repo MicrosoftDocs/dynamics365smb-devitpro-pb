@@ -134,6 +134,23 @@ The base extension will contain the table and fields that you want to move.
 5. Install the new target extension.
 6. Upgrade the original extension.
 
+## Dependency chain
+
+The process for moving tables and fields from one extension to another depends on the direction in the dependency graph the move. 
+
+- Extension Y
+- Extension A, Extension B
+- Base Application extension
+- System Application
+
+
+<!--Move Up
+
+1.Created a new extension with table definitions only, no code or pages. Called ExtZ.
+
+
+
+>
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
