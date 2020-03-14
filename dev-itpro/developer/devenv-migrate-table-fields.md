@@ -1,7 +1,7 @@
 ---
 title: "The Migration.json File"
 description: "Description of the json file for data migration for AL in Business Central."
-author: SusanneWindfeldPedersen
+author: jswymer
 ms.custom: na
 ms.date: 03/10/2020
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: jswymer
 ---
 # Migrating Tables and Fields Between Extensions
 
@@ -21,11 +21,11 @@ The move is divided into two phases: development and deployment. However, before
 
 ### Determining the migration direction in the dependency Graph
 
-The process to migrate tables and fields to another extension depends on the migration's direction in the dependency graph. The following figure illustrates a simplified extension dependency graph, where each upper extension is dependent on the lower extension.
+The process to migrate tables and fields to another extension depends on the migration's direction in the dependency graph. The following figure illustrates a simplified extension dependency graph. From top to bottom, an extension is dependent on any extension the below it in the graph.
 
 ![Dependency graph](media/extension-dependency-graph.png "Dependency graph")  
 
-Moving tables or fields from Extension Y to Extension X, is considered a *move down*. Moving tables or fields from the Base Application extension to Extension X is a *move up*.
+Moving objects from Extension Y to Extension X, is considered a *move down*. Moving objects from the Base Application extension to Extension X is a *move up*.
 
 #### Development
 
@@ -38,7 +38,7 @@ The key to the move is the *migration.json* file. This file provides a pointer t
 
 #### Deployment
 
-The deployment phase is when the actual data is migrated to new tables in the database. Deployment involves publishing, syncing, upgrading, and installing extensions.
+The deployment phase is when the data is migrated to new tables in the database. Deployment involves publishing, syncing, upgrading, and installing extensions.
 
 
 
@@ -94,63 +94,65 @@ The base extension will contain the table and fields that you want to move.
 
 -->
 
-
-## Move a table or field Down to another extension
+## Move tables and fields down the dependency graph
 
 This section explains how to migrate tables and fields down the dependency graph. The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
 ![Data migration](media/data-migration-tables-fields.png "data migration") 
 
-In the example, **TableB** and **Field C-1** in **TableC** are customizations that you want to move out into a separate extension. 
+In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version. You'll move **TableA** and **TableC** into a new, separate extension down the dependency chain.
 
-### Create a new base extension
+### Create the destination extension
 
-The base extension will contain the table and fields that you want to move.
+The destination extension will contain the table and fields that you want to move. In this example, these objects include **TableA** and **TableC**.
 
-1. Create an AL project for base objects.
+1. Create an AL project for the destination extension.
 
-2. Add a table object that exactly matches the table object in the original extension.
+2. Add a table object that exactly matches the table object definition for **TableA** in the source extension.
 
-3. If you're moving selected fields only, delete all other fields from the table. 
+3. Add a table object that exactly matches the table object definition for **TableC** in the source extension, except don't include field **C-1**.
 
-4. Compile the first version of this extension.
+4. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    Make a note ot the appID of the target extension.
+    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`.
 
-### Create a new version of the original extension
+5. Compile the extension package.
 
-1. In the original extension project, add a migration.json file that includes ID of the target extension:
+### Create a new version of the source extension
+
+1. In the source extension AL project, add a migration.json file that points to the ID of the target extension.
 
     ```
     { 
     "apprules": [ 
         { 
-            "id": "2f3b6c0a-fb6a-4289-ae8a-ded32a991059" 
+            "id": "11111111-aaaa-2222-bbbb-333333333333"
         } 
     ] 
     } 
     ```
 
-2. If you're moving an entire table object, delete the table object.
+    For more information, see [The Migration.json File](devenv-migration-json-file.md).
+2. Delete the entire table object for **TableA**.
+3. Complete the following steps to migrate**TableC** to the destination extension, but keep field **C-2** in the source extension:  
 
-3. If you're moving fields, do the following steps:
-
-    1. Set up a dependency on the new base extension
-    2. Add a table extension object that extends the table in the base extension.
-    3. Add the fields definitions from the original table object.
-    4. Delete the original table object.
-4. Compile a new version of the extension.
+    1. In the app.json file, set up a dependency on the new destination extension.
+    2. Add a table extension object called **TableExtC**.
+    3. Add a field definition for field **C-1** that matches its definition in the original **TableC** object.
+    4. Delete the original **TableC** object.
+4. In the app.json file, increase the `version` value.
+5. Compile a new version of the extension package.
 
 ### Deploy the extensions
 
-1. Uninstall the old version of the original extension.
+1. Uninstall the old version of the source extension.
 
-2. Publish the target extension and new version of original extension.
+2. Publish the new destination extension and new version of source extension.
 
-3. Synchronize the target extension.
+3. Synchronize the destination extension.
 
     This step creates an empty table that is owned by the target extension.
-4. Synchronize the new version of the original extension.
+4. Synchronize the new version of the source extension.
 
     This step migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
 5. Install the new target extension.
