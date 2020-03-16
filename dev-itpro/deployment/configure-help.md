@@ -36,11 +36,16 @@ If you want to use a website that is *not* based on Help Server, then you must s
 The navsettings.json file must contain the following setting in the `ApplicationIdSettings` element:
 
 ```json
-"ApplicationIdSettings": {
-    //BaseHelpUrl:  "The location of Help for this application.",
+{
+  "NAVWebSettings": {
+    // [...more keys]
+  },
+  "ApplicationIdSettings": {
+    //BaseHelpUrl:  The location of Help for this application.,
     "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
-      [...more keys]
+     // [...more keys]
   }
+}
 ```
 
 > [!NOTE]
@@ -55,14 +60,18 @@ If you want to use Help Server, then you must specify the server and port in the
 The navsettings.json file must contain the following settings in the `NAVWebSettings` element:
 
 ```json
-"NAVWebSettings": {
-    //HelpServer: "Name of the Dynamics NAV Help Server to connect to.",
+{
+  "NAVWebSettings": {
+    //HelpServer: Name of the Dynamics NAV Help Server to connect to.,
     "HelpServer": "https://myserver.com",
-    "//HelpServerPort":  "The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535",
+    //HelpServerPort:  The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535,
     "HelpServerPort": "49000",
-      [...more keys]
- }
-
+    // [...more keys]
+  },
+  "ApplicationIdSettings": {
+    // [...more keys]
+  }
+}
 ```
 
 In the example, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and adminstration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
