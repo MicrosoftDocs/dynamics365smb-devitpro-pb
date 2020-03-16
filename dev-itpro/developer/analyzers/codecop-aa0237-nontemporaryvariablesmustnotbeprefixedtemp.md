@@ -22,7 +22,7 @@ Only temporary variable names must be prefixed with Temp.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Reason for the rule
-Temporary variables must be named with identifiers that abbreviate the word temporary, such as temp. This improves readability of the code.
+Temporary variables must be named with identifiers that abbreviate the word temporary, such as `temp`. This improves readability of the code. Therefore you should avoid using `temp` for other purposes.
 
 ## Bad code example
 ```
