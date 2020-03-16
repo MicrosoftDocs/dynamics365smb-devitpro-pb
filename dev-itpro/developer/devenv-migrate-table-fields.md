@@ -175,27 +175,27 @@ This section explains how to migrate tables and fields up the dependency graph. 
 
 In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original extension to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
-To achieve migration, you'll have to create an extension that 
+To achieve migration, you'll have to create an extension for migration purposes only. After migration is done, you can delete it. This extension, shown as **Ext Z**, temporarily takes ownership of tables and fields from **Ext X**.  
 
-### Create the destination extension
+### Create the transition extension (Ext Z v1)
 
-The destination extension will contain the table and fields that you want to move. In this example, these objects include **TableA** and **TableC**.
+The transition extension will contain replicas of all object definitions in the source extension, except code. In this example, these objects include **TableA**, **TableB** and **TableC** and current field definitions. In this illustration, this extension is **Ext Z**.
 
-1. Create an AL project for the destination extension.
+1. Create an AL project for the transition extension.
 
-2. Add a table object that exactly matches the table object definition for **TableA** in the source extension.
+2. Add a table object that exactly matches the table object definitions for **TableA**, **TableB** and **TableC** in the source extension.
 
-3. Add a table object that exactly matches the table object definition for **TableC** in the source extension, except don't include field **C-1**.
+3. Compile the extension package.
 
-4. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
+3. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
     For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`.
 
-5. Compile the extension package.
+### Create an empty version the source extension (Ext X v2)
 
-### Create a new version of the source extension
+In this step, you create an new version of the source extension that doesn't contain any objects. It only contains a `migration.json` file that points to **Ext Z**.
 
-1. In the source extension AL project, add a migration.json file that points to the ID of the target extension.
+1. In the source extension AL project, add a migration.json file that points to the ID of the transition extension **Ext Z**.
 
     ```
     { 
@@ -208,15 +208,58 @@ The destination extension will contain the table and fields that you want to mov
     ```
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
-2. Delete the entire table object for **TableA**.
-3. Complete the following steps to migrate**TableC** to the destination extension, but keep field **C-2** in the source extension:  
+2. Delete all objects from the extension. This includes **TableA**, **TableB**, and **TableC**.
 
-    1. In the app.json file, set up a dependency on the new destination extension.
-    2. Add a table extension object called **TableExtC**.
-    3. Add a field definition for field **C-1** that matches its definition in the original **TableC** object.
-    4. Delete the original **TableC** object.
-4. In the app.json file, increase the `version` value.
-5. Compile a new version of the extension package.
+3. In the app.json file, increase the `version` value.
+4. Compile a new version of the extension package.
+
+### Create a destination extension (Ext Y v1)
+
+In this step, you create an new extension that contains the customization you want to move from the source. In this example, the customizations include **TableB** and a **TableExtC**.
+
+1. Create an AL project for **Ext Y**.
+2. In the app.json file, set up a dependency on the source extension **Ext X**.
+3. Add a table definition and code for **TableB** that exactly matches the definition in the original source extension.
+4. Add a table extension object called **TableExtC**. Then, add a field definition for field **C-1** that matches its definition in the original **TableC** object of the source extension.
+5. Compile the extension package.
+6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
+
+    For purposes of the example, the ID is `44444444-aaaa-5555-bbbb-666666666666`.
+
+### Create a final version of source extension (Ext X v3)
+
+In this step, you create another version of the source extension **Ext X**. This version will contain the objects and code that you want to finally publish.
+
+1. Create an AL project for **Ext Y**.
+2. In the app.json file, set up a dependency on the source extension **Ext X**.
+3. Add a table definition and code for **TableA** that exactly matches the definition in the original source extension.
+4. Add a table object **TableC**. Then, add a field definition for field **C-1** that matches its definition in the original **TableC** object of the source extension.
+5. Compile the extension package.
+
+### Create new empty version of transition extension (Ext Z v2)
+
+In this step, you create a vew version of **Ext Z** that only contains a `migration.json` file. This `migration.json` file points the the IDS of **Ext X** and **Ext Y**. The file is used to release ownership.
+
+1. In the extension AL project, add a migration.json file that points to the IDs of the source extension **Ext X** and destination extension **Ext Y**.
+
+    ```
+    { 
+    "apprules": [ 
+        { 
+            "id": "11111111-aaaa-2222-bbbb-333333333333"
+        }
+        { 
+            "id": "44444444-aaaa-5555-bbbb-666666666666"
+        }
+    ] 
+    } 
+    ```
+
+    For more information, see [The Migration.json File](devenv-migration-json-file.md).
+
+2. Add a table object that exactly matches the table object definitions for **TableA**, **TableB** and **TableC** in the source extension.
+
+3. Compile the extension package.
 
 ### Deploy the extensions
 
