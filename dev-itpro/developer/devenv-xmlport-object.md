@@ -33,7 +33,7 @@ pageextension 50111 PermissionSetExporter extends "Permission Sets"
             {
                 Promoted = true;
                 PromotedCategory = New;
-                trigger OnAction();
+                trigger OnAction(); 
                 begin
                     Xmlport.Run(50112, false, false);
                 end;
