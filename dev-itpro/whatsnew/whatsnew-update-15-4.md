@@ -18,7 +18,8 @@ Would you like to know what has changed in update 15.4? Below you'll find an ove
 [Link to Hotfixes](https://support.microsoft.com/en-us/help/4538888)
 
 ## Feature changes
-No new feature changes with this upgrade. 
+- [Bookmarking a report](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fdynamics365-release-plan%2F2019wave2%2Fdynamics365-business-central%2Fadd-links-navigation-menu&data=02%7C01%7Ca-kawilu%40microsoft.com%7C6f17df59e0a448dbbb4c08d7c97ece88%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637199418785445972&sdata=Y0Et6DHrMShtaHJDbsT%2BEU7cgcPfMhXdnrPnTjgjLc4%3D&reserved=0) - rollout is complete. With Update 15.4, all environments now include this feature
+
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
