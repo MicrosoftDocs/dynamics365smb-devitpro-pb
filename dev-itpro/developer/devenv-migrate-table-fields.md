@@ -28,13 +28,13 @@ The process to migrate tables and fields to another extension depends on the mig
 Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-down scenarios include:
 
 - Moving objects from an isolated extension to a shared extension.
-- Moving objects from a customized base application with its own ID to an extension on top of the base application. 
--  Ext Y might not be owned, i.e., not possible to make modifications in it (e.g., Microsoft standard base app.
+- Moving objects from a customized base application with its own ID to an extension on top. 
+-  Ext Y might not be owned. So, it might not be possible to make modifications to it. An example is the Microsoft Base Application. 
 
 Moving objects from the Base Application extension to Extension X is a *move up*. Typical move-down scenarios include:
 
-- Splitting an extension in two, with one dependent on the other.
-- Moving from code customized base application with the Microsoft ID to a new extension on top of Microsoft Base
+- Split an extension in two, with one dependent on the other.
+- Move from a code-customized base application with the Microsoft ID to a new extension on top.
 
 #### Development
 
@@ -47,7 +47,7 @@ The key to the move is the *migration.json* file. This file provides a pointer t
 
 #### Deployment
 
-The deployment phase is when the data is migrated to new tables in the database. In the phase, ownership of tables and fields is switched from one extension to the another. Deployment involves publishing, syncing, upgrading, and installing extensions.
+The deployment phase is when the data is migrated to new tables in the database. In the phase, ownership of tables and fields is switched from one extension to another. Deployment involves publishing, syncing, upgrading, and installing extensions.
 
 
 
@@ -179,11 +179,11 @@ To achieve migration, you'll have to create an extension for migration purposes 
 
 ### Create the transition extension (Ext Z v1)
 
-The transition extension will contain replicas of all object definitions in the source extension, except code. In this example, these objects include **TableA**, **TableB** and **TableC** and current field definitions. In this illustration, this extension is **Ext Z**.
+The transition extension will contain replicas of all object definitions in the source extension, except code. In the illustration, these objects include **TableA**, **TableB**, and **TableC** and current field definitions. The transition  extension is **Ext Z**.
 
 1. Create an AL project for the transition extension.
 
-2. Add a table object that exactly matches the table object definitions for **TableA**, **TableB** and **TableC** in the source extension.
+2. Add a table object that exactly matches the table object definitions for **TableA**, **TableB**, and **TableC** in the source extension.
 
 3. Compile the extension package.
 
@@ -193,7 +193,7 @@ The transition extension will contain replicas of all object definitions in the 
 
 ### Create an empty version the source extension (Ext X v2)
 
-In this step, you create an new version of the source extension that doesn't contain any objects. It only contains a `migration.json` file that points to **Ext Z**.
+In this step, you create a new version of the source extension that doesn't contain any objects. It only contains a `migration.json` file that points to **Ext Z**.
 
 1. In the source extension AL project, add a migration.json file that points to the ID of the transition extension **Ext Z**.
 
@@ -208,14 +208,14 @@ In this step, you create an new version of the source extension that doesn't con
     ```
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
-2. Delete all objects from the extension. This includes **TableA**, **TableB**, and **TableC**.
+2. Delete all objects from the extension. The objects include **TableA**, **TableB**, and **TableC**.
 
 3. In the app.json file, increase the `version` value.
 4. Compile a new version of the extension package.
 
 ### Create a destination extension (Ext Y v1)
 
-In this step, you create an new extension that contains the customization you want to move from the source. In this example, the customizations include **TableB** and a **TableExtC**.
+You now create a new extension that contains the customization you want to move from the source. In this example, the customizations include **TableB** and a **TableExtC**.
 
 1. Create an AL project for **Ext Y**.
 2. In the app.json file, set up a dependency on the source extension **Ext X**.
@@ -238,7 +238,7 @@ In this step, you create another version of the source extension **Ext X**. This
 
 ### Create new empty version of transition extension (Ext Z v2)
 
-In this step, you create a vew version of **Ext Z** that only contains a `migration.json` file. This `migration.json` file points the the IDS of **Ext X** and **Ext Y**. The file is used to release ownership.
+In this step, you create a new version of **Ext Z** that only contains a `migration.json` file. This `migration.json` file points the IDS of **Ext X** and **Ext Y**. The file is used to release ownership.
 
 1. In the extension AL project, add a migration.json file that points to the IDs of the source extension **Ext X** and destination extension **Ext Y**.
 
@@ -257,7 +257,7 @@ In this step, you create a vew version of **Ext Z** that only contains a `migrat
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 
-2. Add a table object that exactly matches the table object definitions for **TableA**, **TableB** and **TableC** in the source extension.
+2. Add a table object that exactly matches the table object definitions for **TableA**, **TableB**, and **TableC** in the source extension.
 
 3. Compile the extension package.
 
