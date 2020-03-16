@@ -171,7 +171,7 @@ You now create a new extension that contains the customization you want to move 
 1. Create an AL project for **Ext Y**.
 2. In the app.json file, set up a dependency on the source extension **Ext X**.
 3. Add a table definition and code for **TableB** that exactly matches the definition in the original source extension.
-4. Add a table extension object called **TableExtC**. Then, add a field definition for field **C-1** that matches its definition in the original **TableC** object of the source extension.
+4. Add a table extension object called **TableExtC**. Then, add a field definition for field **C-2** that matches its definition in the original **TableC** object of the source extension.
 5. Compile the extension package.
 6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
@@ -181,11 +181,11 @@ You now create a new extension that contains the customization you want to move 
 
 In this step, you create another version of the source extension **Ext X**. This version will contain the objects and code that you want to finally publish.
 
-1. Create an AL project for **Ext Y**.
-2. In the app.json file, set up a dependency on the source extension **Ext X**.
-3. Add a table definition and code for **TableA** that exactly matches the definition in the original source extension.
-4. Add a table object **TableC**. Then, add a field definition for field **C-1** that matches its definition in the original **TableC** object of the source extension.
-5. Compile the extension package.
+1. Create an AL project for **Ext X**.
+2. Add a table definition and code for **TableA** that exactly matches the definition in the original source extension.
+3. Add a table object for **TableC** and field definition for **C-1** that matches the definitions in the original **TableC** object of the source extension.
+3. In the app.json file, increase the `version` value.
+4. Compile the extension package.
 
 ### Create new empty version of transition extension (Ext Z v2)
 
@@ -208,24 +208,58 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 
-2. Add a table object that exactly matches the table object definitions for **TableA**, **TableB**, and **TableC** in the source extension.
-
-3. Compile the extension package.
+2. Delete the object definitions for **TableA**, **TableB**, and **TableC**.
+3. In the app.json file, increase the `version` value.
+4. Compile the extension package.
 
 ### Deploy the extensions
 
-1. Uninstall the old version of the source extension.
+1. Uninstall the current version of the source extension **Ext X**.
+2. Complete the following steps for the first stage of deployment:
 
-2. Publish the new destination extension and new version of source extension.
+    1. Publish the transition extension **Ext Z** and empty version of **Ext X v2**
+    2. Synchronize the transition extension **Ext Z**.
+    
+        This step creates empty tables **TableA**, **TableB**, and **TableC** in the database. The tables are owned by **Ext Z**.
+    3. Synchronize the source extension **Ext X v1**.
 
-3. Synchronize the destination extension.
+        This step migrates data from the original tables **TableA**, **TableB**, and **TableC** owned by **Ext X** to the matching tables owned by **Ext Z**.
+2. Complete the following steps for the second stage of deployment:
 
-    This step creates an empty table that is owned by the target extension.
-4. Synchronize the new version of the source extension.
+    1. Publish the next version for **Ext Z v2** and **Ext X v3**, and the first version of **Ext Y**.
+    2. Synchronize the extensions in the following order: **Ext X**, **Ext Y**, and **Ext Z**.
+    
+        This step creates empty tables **TableA**, **TableB**, and **TableC** in the database. The tables are owned by **Ext Z**.
+    3. Synchronize the source extension **Ext X v1**.
 
-    This step migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
+        This step migrates data from the original tables **TableA**, **TableB**, and **TableC** owned by **Ext X** to the matching tables owned by **Ext Z**.
+    
+        This step migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
 5. Install the new target extension.
 6. Upgrade the original extension.
+
+> [!IMPORTANT]
+> Extensions receiving table objects must be synced first. Extension releasing/giving away table objects must be synced last.
+
+<!--
+PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtX\Default publisher_ExtX_1.0.0.0.app" -SkipVerification
+PS C:\Windows\system32> Sync-NAVApp bc160 -Name extx
+PS C:\Windows\system32> install-NAVApp bc160 -Name extx
+PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtZ\Default publisher_ExtZ_1.0.0.0.app" -SkipVerification
+PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtX-1\Default publisher_ExtX_1.0.0.1.app" -SkipVerification
+PS C:\Windows\system32> Sync-NAVApp bc160 -Name extZ
+PS C:\Windows\system32> Sync-NAVApp bc160 -Name extX -Version 1.0.0.1
+PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtZ-1\Default publisher_ExtZ_1.0.0.2.app" -SkipVerification
+PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtX - 2\Default publisher_ExtX_1.0.0.2.app" -SkipVerification
+PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtY\Default publisher_ExtY_1.0.0.0.app" -SkipVerification
+PS C:\Windows\system32> Sync-NAVApp bc160 -Name extX -Version 1.0.0.2
+PS C:\Windows\system32> Sync-NAVApp bc160 -Name extY -Version 1.0.0.0
+PS C:\Windows\system32> Sync-NAVApp bc160 -Name extZ -Version 1.0.0.2
+PS C:\Windows\system32> uninstall-NAVApp bc160 -Name extX -Version 1.0.0.0
+PS C:\Windows\system32> Start-NAVAppDataUpgrade bc160 -Name extX -Version 1.0.0.2
+PS C:\Windows\system32> install-NAVApp bc160 -Name extY -Version 1.0.0.0
+PS C:\Windows\system32> Start-NAVAppDataUpgrade bc160 -Name extX -Version 1.0.0.2
+-->
 
 ## See Also
 
