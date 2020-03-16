@@ -33,11 +33,5 @@ Get an overview of what you need to know about how a major Business Central upda
 
 - Preview environments of next major update  
 Partners should start to prepare for the next major update of Business Central in April. Partners can try out new functionality in preview environments, give Microsoft feedback and validate your extensions. See more details in [Prepare for major updates with preview environments](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/preview-environments) 
-
-- Changes to Browser Cookie Policy  
-Avoid disruption by following these steps to prepare for tighter security policies starting February 2020 in Google Chrome and Microsoft Edge. For more information, see [Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/prepare-for-cookie-samesite-policy).
-	
-- Using Internet Explorer  
-From Update 15.3 onwards, users who access Business Central from Internet Explorer will receive a notification suggesting they consider a different browser. Users who switch to a modern browser, such as Microsoft Edge, typically observe improved performance and a generally smoother experience. Learn more about our supported and recommended browsers for Business Central on premises and online.
     
 - Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about Business Central performance. 
