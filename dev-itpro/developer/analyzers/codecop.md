@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2020
+ms.date: 03/13/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0021](codecop-aa0021-variabledeclarationsshouldbeorderedbytype.md)|Variable declarations should be ordered by type.|Variable declarations should be ordered by type. In general, object and complex variable types are listed first followed by simple variables.|Variable declarations should be ordered by type. Variables should be sorted like this: Record, Report, Codeunit, XmlPort, Page, Query, Notification, BigText, DateFormula, RecordId, RecordRef, FieldRef, and FilterPageBuilder. The rest of the variables are not sorted.|Readability|Warning|true|
 |[AA0022](codecop-aa0022-substituteifelsewithcasestatementifmorethantwoalternatives.md)|Substitute the IF THEN ELSE structure with a CASE.|An IF followed by two or more ELSE IF should be replaced with a CASE.|Substitute the IF THEN ELSE structure with a CASE.|Readability|Warning|true|
 |[AA0040](codecop-aa0040-donotnestwiths.md)|Avoid using nested WITH statements.|It can be difficult to see what variable that a member variable or function refers to, when nesting WITH statements of variables with different types.|This WITH statement is nested inside another WITH statement at '{0}'.|Readability|Warning|true|
+|[AA0073](codecop-aa0073-temporaryvariablesmustbeprefixedtemp.md)|The name of temporary variables must be prefixed with Temp.|Only temporary variable names must be prefixed with Temp.|The name of temporary variables '{0}' must be prefixed with Temp.|Readability|Warning|true|
 |[AA0074](codecop-aa0074-textconstlabelvariablenamesshouldhaveapprovedsuffix.md)|TextConst and Label variable names should have an approved suffix.|TextConst and Label variable names should have a suffix (an approved three-letter suffix: Msg, Tok, Err, Qst, Lbl, Txt) describing usage.|Variable '{0}' must have a suffix from this list: Msg, Tok, Err, Qst, Lbl, Txt.|Readability|Warning|true|
 |[AA0087](codecop-aa0087-doonlylowerpermissionsinsidetestprocedures.md)|Lowering permissions should only be used in tests|Do only lower permissions inside procedures of type test.|Do only lower permissions inside procedures of type test.|Design|Warning|true|
 |[AA0100](codecop-aa0100-donothaveidentifierswithquotesinthename.md)|Do not have identifiers with quotes in the name.|Do not have identifiers with quotes in the name.|Do not have identifiers with quotes in the name.|Design|Warning|true|
@@ -79,6 +80,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0231](codecop-aa0231-donotusestrsubstnoinerrormessage.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method. Instead use the ability of the Error method to insert values into the string with placeholders.|Do not use the StrSubstNo or string concatenation as a parameter in the Error method.|Design|Warning|true|
 |[AA0232](codecop-aa0232-flowfieldoftableshouldbeindexed.md)|The FlowField of a table should be indexed.|You can potentially increase performance if fields that are used in FlowFields are added to SumIndexedFields of the corresponding key.|The FlowField {0} of {1} should be added to the SIFT key.|Design|Info|true|
 |[AA0233](codecop-aa0233-usegetfindfirstandfindlastwithoutnext.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Avoid enumeration of a dataset when the dataset is not filtered.|The '{0}' method on the record '{1}' must be used without the Next() method.|Design|Warning|true|
+|[AA0237](codecop-aa0237-nontemporaryvariablesmustnotbeprefixedtemp.md)|The name of non-temporary variables must not be prefixed with Temp.|Only temporary variable names must be prefixed with Temp.|The name of non temporary variables '{0}' must not be prefixed with Temp.|Readability|Warning|true|
 |[AA0470](codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md)|Placeholders should have a comment explaining their content.|Provide an explanation that describes the content of each of the placeholders.|Variable '{0}' with placeholders should have a comment explaining their content.|Localizability|Warning|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

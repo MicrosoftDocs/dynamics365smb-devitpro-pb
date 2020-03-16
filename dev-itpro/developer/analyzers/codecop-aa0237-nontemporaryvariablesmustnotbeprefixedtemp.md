@@ -1,5 +1,5 @@
 ---
-title: "You must specify a OptionCaption property for all fields which source expressions is not a table field."
+title: "The name of non-temporary variables must not be prefixed with Temp."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/13/2020
@@ -13,13 +13,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0221
-You must specify a OptionCaption property for all fields which source expressions is not a table field.  
+# CodeCop Rule AA0237
+The name of non-temporary variables must not be prefixed with Temp.  
 
 ## Description
-You must specify a OptionCaption property for all fields which source expressions is not a table field.
+Only temporary variable names must be prefixed with Temp.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Reason for the rule
+Temporary variables must be named with identifiers that abbreviate the word temporary, such as temp. This improves readability of the code.
+
+## Bad code example
+```
+TempJobWIPBuffer : Record "Job WIP Buffer";
+```
+
+## Good code example
+```
+CopyOfJobWIPBuffer : Record "Job WIP Buffer";
+```
+ 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
