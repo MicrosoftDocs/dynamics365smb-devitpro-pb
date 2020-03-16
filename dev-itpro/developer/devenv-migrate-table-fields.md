@@ -220,10 +220,10 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
     1. Publish the transition extension **Ext Z** and empty version of **Ext X v2**
     2. Synchronize the transition extension **Ext Z**.
     
-        This step creates empty tables **TableA**, **TableB**, and **TableC** in the database. The tables are owned by **Ext Z**.
+        This step creates empty database tables **TableA**, **TableB**, and **TableC** that are owned by **Ext Z**.
     3. Synchronize the source extension **Ext X v1**.
 
-        This step migrates data from the original tables **TableA**, **TableB**, and **TableC** owned by **Ext X** to the matching tables owned by **Ext Z**.
+        This step migrates data from **TableA**, **TableB**, and **TableC** owned by **Ext X** to the tables owned by **Ext Z**.
 2. Complete the following steps for the second stage of deployment:
 
     1. Publish the next version for **Ext Z v2** and **Ext X v3**, and the first version of **Ext Y**.
