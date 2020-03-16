@@ -27,7 +27,7 @@ The process to migrate tables and fields to another extension depends on the mig
 
 Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-down scenarios include:
 
-- Moving objects from an isolated extension to a shared extension.
+- Moving common objects from an isolated extension to a lower extension that other extensions can depend on.
 - Moving objects from a customized base application with its own ID to an extension on top. 
 - Ext Y might not be owned. So, it might not be possible to make modifications to it. An example is the Microsoft Base Application. 
 
@@ -49,67 +49,13 @@ The key to the move is the *migration.json* file. You add the file to project fo
 
 The deployment phase is when the data is migrated to new tables in the database. In the phase, ownership of tables and fields is switched from one extension to another. Deployment involves publishing, syncing, upgrading, and installing extensions.
 
-
-
-<!--
-## Move a table to another extension
-
-
-![Move table](media/migrate-table.png "move table")  
-
-
-### Create a new base extension
-
-The base extension will contain the table and fields that you want to move.
-
-1. Create an AL project for base objects.
-
-2. Add a table object that exactly matches the table object in the original extension.
-
-3. If you are moving selected fields only, delete all other fields from the table. 
-
-4. Compile the first version of this extension.
-
-    Make a note ot the appID of the target extension.
-
-<!--
-1. Create an extension for the base table object.
-2. Copy the table object code from the original extension to the new extension.
-3. In the original table object, delete he fields that I wanted in the table extension.
-3. Noted the appId of the new extensions
-4. Compiled the first version of this extension.
-5. In the original extension, added a migration.json file that included the appId of the target extension:
-
-    ```
-    { 
-    "apprules": [ 
-        { 
-            "id": "2f3b6c0a-fb6a-4289-ae8a-ded32a991059" 
-        } 
-    ] 
-    } 
-    ```
-6. Set up a dependency on the new extension I made for the table object
-7. Add a table extension object that extended the table in the new extension
-8. Added a field to the table extension object that is identical to the field in the original table.
-9. Deleted the original table object.
-10. Compiled a new version of the extension
-11. Published the target extension first, then the new version of original extension.
-12. Uninstalled the old version of the original extension.
-13. Synced the target extension. This created an empty table, owned by the target extension.
-14. Synced the new version of the original extension. The migrated the data in the table to the target extension tables. The columns in the original table were deleted.
-15. Installed the new target extension
-16. Upgraded the original extension. Not really necessary in my case.
-
--->
-
 ## Move tables and fields down the dependency graph
 
 This section explains how to migrate tables and fields down the dependency graph. The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
 ![Data migration](media/data-migration-tables-fields.png "data migration") 
 
-In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version. You'll move **TableA** and **TableC** into a new, separate extension down the dependency chain.
+In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version. You'll move **TableA** and **TableC** down the dependency chain to a new, separate extension.
 
 ### Create the destination extension
 
@@ -171,7 +117,7 @@ The destination extension will contain the table and fields that you want to mov
 
 This section explains how to migrate tables and fields up the dependency graph. The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
-![Data migration](media/migrate-tables-fields-up.png "data migration") 
+![Data migration](media/migrate-tables-fields-up.png "data migration")
 
 In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original source extension up to new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
@@ -281,9 +227,6 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 
 1.Created a new extension with table definitions only, no code or pages. Called ExtZ.
 
-
-
->
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
