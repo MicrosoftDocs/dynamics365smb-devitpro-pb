@@ -29,7 +29,7 @@ Moving objects from Extension Y to Extension X, is considered a *move down*. Typ
 
 - Moving objects from an isolated extension to a shared extension.
 - Moving objects from a customized base application with its own ID to an extension on top. 
--  Ext Y might not be owned. So, it might not be possible to make modifications to it. An example is the Microsoft Base Application. 
+- Ext Y might not be owned. So, it might not be possible to make modifications to it. An example is the Microsoft Base Application. 
 
 Moving objects from the Base Application extension to Extension X is a *move up*. Typical move-down scenarios include:
 
@@ -40,10 +40,10 @@ Moving objects from the Base Application extension to Extension X is a *move up*
 
 Development involves making application code changes required for the move. In short, the work involves:
 
-- Creating a new extension that contains a replica of the tables or fields you want to move. This extension is referred to as the *base extension*.  
-- Creating a new version of the existing extension in which the table and fields to be moved have been deleted. Other fields are reworked into table extension objects. This extension is referred to as the *original extension*.
+- Creating a new extension that contains replicas of the tables or fields you want to move. This extension is referred to as the *destination extension*.  
+- Creating a new version of the existing extension in which the table and fields to be moved have been deleted. This extension is referred to as the *source extension*.
 
-The key to the move is the *migration.json* file. This file provides a pointer to the ID of new base extension where tables and fields are to be moved. You add it to project for the new version of the original extension.
+The key to the move is the *migration.json* file. You add the file to project for the source extension. This file provides a pointer to the ID of new base extension where tables and fields are to be moved. The *migration.json* is used in the deployment phase. Its purpose is to transfer ownership of tables and fields in the database from one extension to another. 
 
 #### Deployment
 
