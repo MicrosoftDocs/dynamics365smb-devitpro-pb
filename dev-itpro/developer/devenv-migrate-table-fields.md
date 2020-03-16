@@ -25,7 +25,16 @@ The process to migrate tables and fields to another extension depends on the mig
 
 ![Dependency graph](media/extension-dependency-graph.png "Dependency graph")  
 
-Moving objects from Extension Y to Extension X, is considered a *move down*. Moving objects from the Base Application extension to Extension X is a *move up*.
+Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-dwon scenarions include:
+
+- Moving objects from an isolated extension to a shared extension.
+- Moving objects from a customized base application with its own appId to extension on top of base app, i.e., some on-prem solutions and all embed ISVs (note, System app would also apply then)
+Ext Y might not be owned, i.e., not possible to make modifications in it (e.g., Microsoft standard base app)
+Works in SaaS as well
+
+
+
+ Moving objects from the Base Application extension to Extension X is a *move up*.
 
 #### Development
 
@@ -38,7 +47,7 @@ The key to the move is the *migration.json* file. This file provides a pointer t
 
 #### Deployment
 
-The deployment phase is when the data is migrated to new tables in the database. Deployment involves publishing, syncing, upgrading, and installing extensions.
+The deployment phase is when the data is migrated to new tables in the database. In the phase, ownership of tables and fields is switched from one extension to the another. Deployment involves publishing, syncing, upgrading, and installing extensions.
 
 
 
@@ -158,9 +167,69 @@ The destination extension will contain the table and fields that you want to mov
 5. Install the new target extension.
 6. Upgrade the original extension.
 
-## Move Tables and Fields Up
+## Move tables and fields up the dependency graph
 
-<!--Move Up
+This section explains how to migrate tables and fields up the dependency graph. The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
+
+![Data migration](media/data-migration-tables-fields.png "data migration") 
+
+In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version. You'll move **TableA** and **TableC** into a new, separate extension down the dependency chain.
+
+### Create the destination extension
+
+The destination extension will contain the table and fields that you want to move. In this example, these objects include **TableA** and **TableC**.
+
+1. Create an AL project for the destination extension.
+
+2. Add a table object that exactly matches the table object definition for **TableA** in the source extension.
+
+3. Add a table object that exactly matches the table object definition for **TableC** in the source extension, except don't include field **C-1**.
+
+4. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
+
+    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`.
+
+5. Compile the extension package.
+
+### Create a new version of the source extension
+
+1. In the source extension AL project, add a migration.json file that points to the ID of the target extension.
+
+    ```
+    { 
+    "apprules": [ 
+        { 
+            "id": "11111111-aaaa-2222-bbbb-333333333333"
+        } 
+    ] 
+    } 
+    ```
+
+    For more information, see [The Migration.json File](devenv-migration-json-file.md).
+2. Delete the entire table object for **TableA**.
+3. Complete the following steps to migrate**TableC** to the destination extension, but keep field **C-2** in the source extension:  
+
+    1. In the app.json file, set up a dependency on the new destination extension.
+    2. Add a table extension object called **TableExtC**.
+    3. Add a field definition for field **C-1** that matches its definition in the original **TableC** object.
+    4. Delete the original **TableC** object.
+4. In the app.json file, increase the `version` value.
+5. Compile a new version of the extension package.
+
+### Deploy the extensions
+
+1. Uninstall the old version of the source extension.
+
+2. Publish the new destination extension and new version of source extension.
+
+3. Synchronize the destination extension.
+
+    This step creates an empty table that is owned by the target extension.
+4. Synchronize the new version of the source extension.
+
+    This step migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
+5. Install the new target extension.
+6. Upgrade the original extension.
 
 1.Created a new extension with table definitions only, no code or pages. Called ExtZ.
 
