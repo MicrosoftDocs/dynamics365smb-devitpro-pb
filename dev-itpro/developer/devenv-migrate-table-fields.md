@@ -171,9 +171,11 @@ The destination extension will contain the table and fields that you want to mov
 
 This section explains how to migrate tables and fields up the dependency graph. The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
-![Data migration](media/data-migration-tables-fields.png "data migration") 
+![Data migration](media/migrate-tables-fields-up.png "data migration") 
 
-In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version. You'll move **TableA** and **TableC** into a new, separate extension down the dependency chain.
+In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original extension to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
+
+To achieve migration, you'll have to create an extension that 
 
 ### Create the destination extension
 
