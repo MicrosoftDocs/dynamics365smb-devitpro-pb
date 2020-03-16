@@ -39,9 +39,9 @@ Data migration allows you to move table and field data between extensions. The `
 ```
 4) Save the `migration.json` file in the project.
 
-You now have the migration file in place for the data migration from one app project to another. This will be used for performing the data migration steps. For more information, see []().
+You now have the migration file in place for the data migration from one app project to another. This will be used for performing the data migration steps. For more information, see [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md).
 
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
-
+[Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md) 
