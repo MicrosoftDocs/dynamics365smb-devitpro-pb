@@ -173,7 +173,7 @@ You now create a new extension that contains the customization you want to move 
 5. Compile the extension package.
 6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `44444444-aaaa-5555-bbbb-666666666666`.
+    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`.
 
 ### Create a final version of source extension (Ext X v3)
 
@@ -198,7 +198,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
             "id": "11111111-aaaa-2222-bbbb-333333333333"
         }
         { 
-            "id": "44444444-aaaa-5555-bbbb-666666666666"
+            "id": "44444444-cccc-5555-dddd-666666666666"
         }
     ] 
     } 
@@ -230,4 +230,3 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
-
