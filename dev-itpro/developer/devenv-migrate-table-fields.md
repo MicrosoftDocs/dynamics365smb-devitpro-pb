@@ -117,18 +117,20 @@ The destination extension will contain the table and fields that you want to mov
 
 This section explains how to migrate tables and fields up the dependency graph. The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
-![Data migration](media/migrate-tables-fields-up.png "data migration")
+![Data migration](media/migrate-tables-fields-up-overview.png "data migration")
 
-In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original source extension up to new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
+In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original source extension up to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
 To accommodate data migration, you'll have to create an extension that is only used for deployment. This extension is **Ext Z** in the figure. There are two stages of deployment:
+
+![Data migration](media/migrate-tables-fields-up.png "data migration")
 
 - In the first stage, **Ext Z** temporarily takes ownership of tables and fields from **Ext X**.
 - In the second stage, **Ext Z** releases ownership to extensions **Ext X** and **Ext Y**. You delete transition extension when you finish deployment.
 
 ### Create the transition extension (Ext Z v1)
 
-The transition extension will contain replicas of all object definitions in the source extension, except code. In the illustration, these objects include **TableA**, **TableB**, and **TableC** and current field definitions. The transition  extension is **Ext Z**.
+The transition extension will contain replicas of all object definitions in the source extension, except logic code. In the illustration, these objects include **TableA**, **TableB**, and **TableC** and current their field definitions. The transition extension is **Ext Z**.
 
 1. Create an AL project for the transition extension.
 
@@ -224,8 +226,6 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
     This step migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
 5. Install the new target extension.
 6. Upgrade the original extension.
-
-1.Created a new extension with table definitions only, no code or pages. Called ExtZ.
 
 ## See Also
 
