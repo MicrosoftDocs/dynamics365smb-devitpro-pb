@@ -25,16 +25,16 @@ The process to migrate tables and fields to another extension depends on the mig
 
 ![Dependency graph](media/extension-dependency-graph.png "Dependency graph")  
 
-Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-dwon scenarions include:
+Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-down scenarios include:
 
 - Moving objects from an isolated extension to a shared extension.
-- Moving objects from a customized base application with its own appId to extension on top of base app, i.e., some on-prem solutions and all embed ISVs (note, System app would also apply then)
-Ext Y might not be owned, i.e., not possible to make modifications in it (e.g., Microsoft standard base app)
-Works in SaaS as well
+- Moving objects from a customized base application with its own ID to an extension on top of the base application. 
+-  Ext Y might not be owned, i.e., not possible to make modifications in it (e.g., Microsoft standard base app.
 
+Moving objects from the Base Application extension to Extension X is a *move up*. Typical move-down scenarios include:
 
-
- Moving objects from the Base Application extension to Extension X is a *move up*.
+- Splitting an extension in two, with one dependent on the other.
+- Moving from code customized base application with the Microsoft ID to a new extension on top of Microsoft Base
 
 #### Development
 
