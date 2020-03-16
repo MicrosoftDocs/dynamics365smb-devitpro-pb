@@ -39,6 +39,7 @@ The following methods are available on instances of the TextBuilder data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+The **TextBuilder** data type is one-based indexed, that is, the indexing begins with 1.
 
 The [Text Data Type](..\text\text-data-type.md) is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a [Text Data Type](..\text\text-data-type.md) can be costly.  
 

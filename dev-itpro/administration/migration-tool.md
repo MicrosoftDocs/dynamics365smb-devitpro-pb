@@ -1,5 +1,5 @@
 ---
-title: Migrate to Business Central online from on-premises | Microsoft Docs
+title: Running the Cloud Migration Tool
 description: Get a cloud tenant so you can migrate to the cloud when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL.
 
 author: bmeier94
@@ -9,29 +9,34 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms. search.keywords: cloud, edge
-ms.date: 02/18/2020
+ms. search.keywords: cloud, migration
+ms.date: 03/05/2020
 ms.author: bmeier
 
 ---
 
-# Connect to Business Central Online from On-Premises
+# Running the Cloud Migration Tool
 
-Customers running their workloads on-premises  that are looking to move to the cloud can migrate using the cloud migration tool. Each on-premises solution that connects using the cloud migration tool through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be able to replicate data from on-premises to the cloud tenant. Moving to the cloud gives users the added benefits of running their business from the cloud. They also get the benefits of cloud scenarios like Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
+Customers running their workloads on-premises can migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online by running the cloud migration tool.  
 
-For the list of currently supported on-premises solutions, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.
+The same tool can also be used to set up a connection to the intelligent cloud but still remain on-premises. For the list of currently supported on-premises solutions, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.
 
 ## Setting up your connection using the cloud migration tool
 
 This section provides the steps required to get the cloud migration setup through a connection to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. This can simply be done by following the instructions in the **Cloud Migration Setup** assisted setup wizard in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant.  
 
-There are a few key points that need to be understood before proceeding with the setup:
+There are a few key points that need to be understood before you start the process:
 
-- It is always a best practice to test this configuration in your Sandbox environment before making changes to a production tenant. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
+- It is always a best practice to test this configuration in your sandbox environment before making changes to a production tenant. For more information, see [Managing Environments](tenant-admin-center-environments.md).
 - Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data migration process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to be overwritten, do not configure the connection.
 - All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
-- If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
-- In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the amount of data that can be migrated for any tenant is limited to 150 GB. If your database is larger than 150 GB, try reducing the number of companies you are migrating data for. This can done using the company selection within the assisted setup guide. Additional options for databases exceeding 150 GB will be available in future updates.  
+- If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
+- In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the migration tool has been optimized to migrate databases up to 30 GB. If your database is larger than 30 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.  
+
+    If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. For more information, see [Adding a tenant to an existing runtime service, or updating companies](#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).  
+
+    If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Options for databases larger than 30 GB will be available in a future update, as we are continually working on improving and optimizing the migration tool for larger database sizes.
+
 - Before setting up the connection to the cloud migration, ensure that at least one user in the system that has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
 
@@ -72,7 +77,7 @@ The assisted setup guide consists of up to six pages that take you through the p
     The final page in the wizard allows you to enable the migration process and create a schedule for when the data migration should occur. These settings are also available within your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant on the **Cloud Migration Management** page. You have the option to schedule migrations daily or weekly. We recommend that you schedule your data migration for off-peak business hours.
 
 > [!NOTE]  
-> Depending on the amount of data, your SQL configuration and your connection speed, a full migration could take several hours to complete. Subsequent migrations will complete more quickly as only changed data is migrating.  
+>The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
 
 ## Adding a tenant to an existing runtime service, or updating companies
 
@@ -88,7 +93,7 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 
 ## User groups and permission sets
 
-When running as connected with an on-premises solution, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will be read-only with few exceptions. Because the on-premises solution is your primary application for running your business activities such as data entry, tax reporting, and sending invoices, these tasks will need to be completed in the on-premises solution. We limit the amount of data you can enter into your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not migrated, otherwise any data that was written to the tenant database would be continuously overwritten during the migration run process.  
+When running as connected with an on-premises solution, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will be read-only with few exceptions. Because the on-premises solution is your primary application for running your business, including activities such as data entry, tax reporting, and sending invoices, these tasks must be completed in the on-premises solution. We limit the amount of data that you can enter in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not migrated. Otherwise any data that was written to the tenant database would be continuously overwritten during the migration process.  
 
 To make setting up this read-only tenant more efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the cloud migration environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
 
@@ -102,7 +107,7 @@ Users that are reassigned to the Intelligent Cloud user group will have access t
 
 ### Extensions
 
-When a cloud environment is configured, it is highly recommended that you test the impact of any extension in a sandbox environment before having it installed in your production [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to help avoid any data failures or untended consequences.  
+It is highly recommended that you test the impact of any extension in a sandbox environment before having it installed in your production [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to help avoid any data failures or untended consequences.  
 
 ## System requirements
 
@@ -111,6 +116,6 @@ To connect to the cloud through [!INCLUDE[prodshort](../developer/includes/prods
 ## See Also
 
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  
-[Replicating on-premises data](data-replication-intelligent-cloud.md)  
+[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Frequently Asked Questions about connecting to the intelligent cloud](faq-intelligent-cloud.md)  
 [Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)  

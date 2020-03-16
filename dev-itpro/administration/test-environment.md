@@ -58,10 +58,15 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment is created automatically when you use the environment URL to login the first time.  
 
+## Prepare for major updates with preview environments
+
+About two months before a major update, you can try out new functionality in preview environments. For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
+
 ## See also
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
+[Prepare for major updates with preview environments](preview-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
