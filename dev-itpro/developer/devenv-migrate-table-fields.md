@@ -173,9 +173,12 @@ This section explains how to migrate tables and fields up the dependency graph. 
 
 ![Data migration](media/migrate-tables-fields-up.png "data migration") 
 
-In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original extension to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
+In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original source extension up to new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
-To achieve migration, you'll have to create an extension for migration purposes only. After migration is done, you can delete it. This extension, shown as **Ext Z**, temporarily takes ownership of tables and fields from **Ext X**.  
+To accommodate data migration, you'll have to create an extension that is only used for deployment. This extension is **Ext Z** in the figure. There are two stages of deployment:
+
+- In the first stage, **Ext Z** temporarily takes ownership of tables and fields from **Ext X**.
+- In the second stage, **Ext Z** releases ownership to extensions **Ext X** and **Ext Y**. You delete transition extension when you finish deployment.
 
 ### Create the transition extension (Ext Z v1)
 
