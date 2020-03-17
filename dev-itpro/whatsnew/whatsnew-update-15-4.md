@@ -2,7 +2,7 @@
 title: "Update 15.4 for Microsoft Dynamics 365 Business Central 2019 Release Wave 2"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 03/17/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Would you like to know what has changed in update 15.4? Below you'll find an ove
 - [Bookmarking a report](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-links-navigation-menu) - rollout is complete. With Update 15.4, all environments now include this feature
 
 ## Release Plan
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features). 
 
 ## Upgrade to 15.4
 Please note that new customers will automatically get the latest builds of Business Central (15.4). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
