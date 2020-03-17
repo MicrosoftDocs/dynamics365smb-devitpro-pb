@@ -25,6 +25,15 @@ The next sections in this topic give a brief description of the deprecated featu
 |Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
 
+## Deprecated Features in 2020 release wave 1
+
+### Best Price Calculations
+When you have recorded special prices and line discounts for sales and purchases, Business Central ensures that your profit on item trade is always optimal by automatically calculating the best price on sales and purchase documents and on job and item journal lines.
+
+|Moved, Removed, or Replaced?|Why?|
+|----|----|
+|Replaced|The functionality is replaced with new calculations that you can extend to include additional sources or calculation methods.|
+
 ## Deprecated Features in 2019 release wave 2
 The following sections describe the features that were deprecated in 2019 release wave 2.
 
