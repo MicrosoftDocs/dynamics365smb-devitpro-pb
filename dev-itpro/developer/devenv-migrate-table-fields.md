@@ -13,13 +13,13 @@ ms.author: jswymer
 ---
 # Migrating Tables and Fields Between Extensions
 
-Data migration allows you to move table and field data between extensions.
+Data migration allows you to move table and field data between extensions. The concepts and processes in this article apply to large-scale and small-scale data migrations. A large-scale migration is typically upgrade scenario, like upgrading from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version 14 to version 16. Small-scale migrations are scenarios where you want to move a limited number of objects from one extension to another.
 
 ## Overview
 
 The move is divided into two phases: development and deployment. However, before you begin, you have to determine the direction of the migration within the dependency graph.
 
-### Determining the migration direction in the dependency Graph
+### Determining the migration direction in the dependency graph
 
 The process to migrate tables and fields to another extension depends on the migration's direction in the dependency graph. The following figure illustrates a simplified extension dependency graph. From top to bottom, an extension is dependent on any extension the below it in the graph.
 
@@ -27,14 +27,16 @@ The process to migrate tables and fields to another extension depends on the mig
 
 Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-down scenarios include:
 
-- Move common objects from an extension to a lower extension so that other extensions have a direct dependency on.
-- Moving objects from a customized base application with its own ID to an extension on top.
-- Moving objects to an extension that depends on an extension that you don't own, like the Microsoft Base Application or System Application.
+- You want to split an extension. You want to move common base tables to a separate extension that other extensions can have a dependency on.
+- You have a customized base application with its own ID. You want transition to use Microsoft Base Application. In this case, customizations remain in the current extension. Base objects are removed and ownership transferred to Microsoft Base Application.
+
+<!--
+- Moving objects to an extension that depends on an extension that you don't own, like the Microsoft Base Application or System Application.-->
 
 Moving objects from the Base Application extension to Extension X is a *move up*. Typical move-down scenarios include:
 
 - Split an extension in two, with one dependent on the other.
-- Move from a code-customized base application with the Microsoft ID to a new extension on top.
+- You have customized base application with the Microsoft ID. You want to transition to use the Microsoft Base Application. You'll move customizations up to a new extension on top of the Microsoft Base Application.
 
 #### Development
 
@@ -55,17 +57,17 @@ This section explains how to migrate tables and fields down the dependency graph
 
 ![Data migration](media/data-migration-tables-fields.png "data migration") 
 
-In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version. You'll move **TableA** and **TableC** down the dependency chain to a new, separate extension.
+In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version without **TableA** and **TableC**. You'll move **TableA** and **TableC** down the dependency chain to a new, separate extension.
 
-### Create the destination extension
+### Create the destination extension (Ext Y)
 
 The destination extension will contain the table and fields that you want to move. In this example, these objects include **TableA** and **TableC**.
 
 1. Create an AL project for the destination extension.
 
-2. Add a table object that exactly matches the table object definition for **TableA** in the source extension.
+2. Add a table object definition for **TableA** that exactly matches its definition in the source extension **Ext X**.
 
-3. Add a table object that exactly matches the table object definition for **TableC** in the source extension, except don't include field **C-1**.
+3. Add a table object definition for **TableC** that exactly matches it is the source extension **Ext X**, except don't include field **C-1**.
 
 4. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
@@ -73,7 +75,7 @@ The destination extension will contain the table and fields that you want to mov
 
 5. Compile the extension package.
 
-### Create a new version of the source extension
+### Create a new version of the source extension (Ext X v2)
 
 1. In the source extension AL project, add a migration.json file that points to the ID of the target extension.
 
@@ -89,9 +91,9 @@ The destination extension will contain the table and fields that you want to mov
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 2. Delete the entire table object for **TableA**.
-3. Complete the following steps to migrate**TableC** to the destination extension, but keep field **C-2** in the source extension:  
+3. Complete the following steps for handling **TableC**.
 
-    1. In the app.json file, set up a dependency on the new destination extension.
+    1. In the app.json file, set up a dependency on the new destination extension **Ext Y**.
     2. Add a table extension object called **TableExtC**.
     3. Add a field definition for field **C-1** that matches its definition in the original **TableC** object.
     4. Delete the original **TableC** object.
@@ -100,7 +102,7 @@ The destination extension will contain the table and fields that you want to mov
 
 ### Deploy the extensions
 
-1. Uninstall the old version of the source extension.
+1. Uninstall the old version of the source extension **Ext X**.
 
 2. Publish the new destination extension and new version of source extension.
 
