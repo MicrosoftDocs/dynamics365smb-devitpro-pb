@@ -1,6 +1,6 @@
 ---
 title: "Use only a correct order for ApplicationArea."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/16/2020
 ms.reviewer: na

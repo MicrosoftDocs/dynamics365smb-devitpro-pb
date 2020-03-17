@@ -1,6 +1,6 @@
 ---
 title: "There must be exactly one space character on each side of a binary operator such as := + - AND OR =."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/16/2020
 ms.reviewer: na
