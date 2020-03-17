@@ -27,9 +27,9 @@ The process to migrate tables and fields to another extension depends on the mig
 
 Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-down scenarios include:
 
-- Moving common objects from an extension to a lower extension that other extensions can have  direct dependency on.
-- Moving objects from a customized base application with its own ID to an extension on top. 
-- Ext Y might not be owned. So, it might not be possible to make modifications to it. An example is the Microsoft Base Application. 
+- Move common objects from an extension to a lower extension so that other extensions have a direct dependency on.
+- Moving objects from a customized base application with its own ID to an extension on top.
+- Moving objects to an extension that depends on an extension that you don't own, like the Microsoft Base Application or System Application.
 
 Moving objects from the Base Application extension to Extension X is a *move up*. Typical move-down scenarios include:
 
