@@ -228,7 +228,11 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
     1. Publish the transition extension **Ext Z** and empty version of **Ext X v2**
     2. Synchronize the transition extension **Ext Z**.
     
-        This step creates empty database tables **TableA**, **TableB**, and **TableC** that are owned by **Ext Z**.
+       This step creates empty database tables **TableA**, **TableB**, and **TableC** that are owned by **Ext Z**.
+
+       > [!IMPORTANT]
+        > Extensions receiving table objects must be synced first. Extension releasing/giving away table objects must be synced last.
+
     3. Synchronize the source extension **Ext X v1**.
 
         This step migrates data from **TableA**, **TableB**, and **TableC** owned by **Ext X** to the tables owned by **Ext Z**.
@@ -237,7 +241,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
     1. Publish the next version for **Ext Z v2** and **Ext X v3**, and the first version of **Ext Y**.
     2. Synchronize the extensions in the following order: **Ext X**, **Ext Y**, and **Ext Z**.
     
-        This step creates empty tables **TableA**, **TableB**, and **TableC** in the database. The tables are owned by **Ext Z**.
+    This step creates empty tables **TableA**, **TableB**, and **TableC** in the database. The tables are owned by **Ext Z**.
     3. Synchronize the source extension **Ext X v1**.
 
         This step migrates data from the original tables **TableA**, **TableB**, and **TableC** owned by **Ext X** to the matching tables owned by **Ext Z**.
@@ -246,8 +250,6 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 5. Install the new target extension.
 6. Upgrade the original extension.
 
-> [!IMPORTANT]
-> Extensions receiving table objects must be synced first. Extension releasing/giving away table objects must be synced last.
 
 <!--
 PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtX\Default publisher_ExtX_1.0.0.0.app" -SkipVerification
