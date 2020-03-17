@@ -38,12 +38,15 @@ Visible = false;
 > [!NOTE]  
 >  You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Visible** property, it must be set as a global page variable and the [InDataSet Property](devenv-indataset-property.md) must be defined on the variable.   
 
- On pages, you use the **Visible** property to show or hide group, part, field, and action controls. You can show or hide the control either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
+ On pages, you use the **Visible** property to show or hide group, part, field, and action controls. You can show or hide the control either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as "Credit Limit > Sales YTD".  
 
 > [!NOTE]  
 >  The dynamic options are only possible for group and part controls.  
 
  Using a variable for field and action controls requires that the variable be resolved by the [OnInit Trigger](../triggers/devenv-oninit-trigger.md) or [OnOpenPage Trigger](../triggers/devenv-onopenpage-trigger.md).  
+ 
+> [!IMPORTANT]
+> For part controls, users can override the **Visible** property from the [!INCLUDE[prodshort](includes/prodshort.md)] client using the Personalization Tool. Therefore, we do not recommend you using this property to restrict users from viewing certain elements. For more information, see [What You Can Personalize](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user?branch=master#What).
 
 ## See Also  
  [Properties](devenv-properties.md)   
