@@ -22,6 +22,7 @@ Here is a quick overview of capabilities in **Designer**:
 |Add components    |fields, columns, actions in navigation bar              | 
 |Move components   |fields, columns, cues, parts, actions, and action groups |
 |Remove components |fields, columns, cues, parts, actions, and action groups |
+|Hide and unhide components|parts|
 |Change field importance, like showing in collapsed FastTab header or under **Show More** |fields|
 |Exclude field from Quick Entry|fields, columns| 
 |Set freeze pane and clear freeze pane |columns|
@@ -95,6 +96,10 @@ For more information about Quick Entry, from a user perspective, see [Accelerati
 Designer lets you add actions that link to pages and reports in the navigation bar using the bookmark icon ![bookmark icon](media/ui_bookmark_icon.png "bookmark icon action bar") on the target page or report. The bookmark icon is also available in the Tell Me window. From here, you can efficiently create multiple links and build up the set of important or commonly used links in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 You can also move actions to reorder them in the navigation bar, or move them into groups or subgroups to design the Navigation Menu.
+
+## Hiding and Showing Parts
+
+Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it will appear grayed and will disappear from the page when you quit Designer mode. The extension generated will override the [Visible Property](properties/devenv-visible-property.md) on that part to **False**. Similarly, you can select **Show** on a grayed part control to make it visible to the user. In code, the [Visible Property](properties/devenv-visible-property.md) is set to **True**. For more information about parts, see [Page Parts Overview](devenv-designing-parts.md).
 
 ## Working with Actions
 
