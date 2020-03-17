@@ -175,8 +175,8 @@ Format the paragraph
 > [!TIP]  
 > *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
 ## Supported Countries
-| Offer Details                                         | Description                                                                                                               | Requirements |
-|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details|Description | Requirements |
+|-----------|--------------|---------------|
 | 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
 
 Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here /dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
