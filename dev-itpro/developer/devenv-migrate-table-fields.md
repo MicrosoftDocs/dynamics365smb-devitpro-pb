@@ -91,11 +91,11 @@ The destination extension will contain the table and fields that you want to mov
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 2. Delete the entire table object for **TableA**.
-3. Complete the following steps for handling **TableC**.
+3. Complete the following steps for **TableC**.
 
     1. In the app.json file, set up a dependency on the new destination extension **Ext Y**.
-    2. Add a table extension object called **TableExtC**.
-    3. Add a field definition for field **C-1** that matches its definition in the original **TableC** object.
+    2. Add a table extension object **TableExtC**.
+    3. In table extension object **TableExtC**, add a field definition for field **C-1** that matches its definition in the original **TableC** object.
     4. Delete the original **TableC** object.
 4. In the app.json file, increase the `version` value.
 5. Compile a new version of the extension package.
@@ -104,16 +104,23 @@ The destination extension will contain the table and fields that you want to mov
 
 1. Uninstall the old version of the source extension **Ext X**.
 
-2. Publish the new destination extension and new version of source extension.
+2. Publish the new destination extension **Ext Y** and source extension version **Ext X v2**.
 
-3. Synchronize the destination extension.
+3. Synchronize the destination extension **Ext Y**.
 
-    This step creates an empty table that is owned by the target extension.
-4. Synchronize the new version of the source extension.
+    This step creates empty database tables for **TableA** and **TableC** that are owned by the destination extension **Ext Y**.
 
-    This step migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
-5. Install the new target extension.
-6. Upgrade the original extension.
+    > [!IMPORTANT]
+    > The destination extension must always be synchronized first.
+
+4. Synchronize the new version of the source extension **Ext Y**.
+
+    This step does the following:
+    - Migrates the data from the original tables **TableA** and **TableC** to the destination extension tables.
+    - Deletes the original tables  **TableA** and **TableC** owned by the source extension **Ext X**.
+    - Deletes column **C-1** from the source table **Ext X**.
+5. Install the destination extension **Ext Y**.
+6. Run a data upgrade the new source extension version **EXT X v2**.
 
 ## Move tables and fields up the dependency graph
 
@@ -162,7 +169,6 @@ In this step, you create a new version of the source extension that doesn't cont
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 2. Delete all objects from the extension. The objects include **TableA**, **TableB**, and **TableC**.
-
 3. In the app.json file, increase the `version` value.
 4. Compile a new version of the extension package.
 
