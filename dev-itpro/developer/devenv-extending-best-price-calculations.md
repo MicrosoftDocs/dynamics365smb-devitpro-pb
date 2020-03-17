@@ -24,7 +24,7 @@ Insert diagram
 
 The combination of a price type (sales or purchase) and asset type (item, resource, G/L account, and so on) determines the method (all three are extendable enums) and the handler. There can be multiple handlers for the same method that will implement a certain calculation. 
 
-The codeunits that implement specific calculations subscribe to the event OnFindImplementation() of codeunit 7001 "Price Calculation Mgt." and return the combinations of setup records that can be handled by the current codeunit. The **Price Calculation Setup** page collects these combinations and you can choose one of the existing concurrent handlers.
+The codeunits that implement specific calculations subscribe to the OnFindImplementation() event of codeunit 7001 "Price Calculation Mgt." and return the combinations of setup records that can be handled by the current codeunit. The **Price Calculation Setup** page collects these combinations and you can choose one of the existing concurrent handlers.
 
 For example, the calculation of sale prices for all asset types can be handled by the "Business Central (Version 16.0)" codeunit, but calculation of purchase prices – by "Business Central (Version 15.0)" codeunit.
 
@@ -55,9 +55,9 @@ The "Business Central (Version 16.0)" calculation uses the following tables:
 * table 7000 "Price List" 
 * table 7001 "Price List Line" 
 
-The table 7001 "Price List Line" is compatible with all tables used by the "Business Central (Version 15.0)" calculation. It contains the set of CopyFrom() methods that convert them in the price list line. 
+The table 7001 "Price List Line" is compatible with all tables used by the Business Central (Version 15.0)" calculation. It contains the set of CopyFrom() methods that convert them in the price list line. 
 
-"Price Calculation Method" field is added to all tables that need calculation of prices/discounts: 
+The Price Calculation Method field is added to all tables that need calculation of prices/discounts: 
 
 * table 37 "Sales Line" 
 * table 5902 "Service Line" 
@@ -80,14 +80,14 @@ Best price calculation uses the following AL interface objects:
 * Price Source
 
 ### Price Calculation
-the Price Calculation interface defines methods that calculate amounts and discount percentages in journal and document lines. The Price Calculation - Native codeunit implements the interface, as shown in the following image.
+The Price Calculation interface defines methods that calculate amounts and discount percentages in journal and document lines. The Price Calculation - Native codeunit implements the interface, as shown in the following image.
 
 Insert image
 
 To add another implementation codeunit you must also extend the Price Calculation Handler enum that implements the Price Calculation and is used in the Price Calculation Setup table.
 
 ### Line With Price
-The Line With Price interface defines methods for a generic line that requires the calculation of a price, cost, and line discount. There are eight codeunits that implement this interfacem, as shown in the following image.
+The Line With Price interface defines methods for a generic line that requires the calculation of a price, cost, and line discount. There are eight codeunits that implement this interface, as shown in the following image.
 
 Insert image
 
@@ -96,7 +96,7 @@ The following example shows a typical use of these codeunits in the Sales Line t
 Insert example
 
 ### Price Source
-The Price Source interface defines methods for a generic price source. The list of supported sources is defined by the Price Source Type enum. The interface is used in the Price Source table to validate the primary key fields and look-up respective tables.
+The Price Source interface defines methods for a generic price source. The list of supported sources is defined by the Price Source Type enum. The interface is used in the Price Source table to validate the primary key fields and look up respective tables.
 
 Insert image
 
