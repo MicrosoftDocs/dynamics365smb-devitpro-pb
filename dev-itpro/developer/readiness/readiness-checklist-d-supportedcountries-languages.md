@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# Supported Countries, Languages, App Version, App Release Date
+# Supported Countries, Languages, App Version, and App Release Date
 
 | Listing details | Description| Requirements |
 |-----------------|-------------|-------------|

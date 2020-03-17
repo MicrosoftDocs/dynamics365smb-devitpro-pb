@@ -1,6 +1,6 @@
 ---
 title: "SIFT index should not be used on primary or unique key."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/16/2020
 ms.reviewer: na
