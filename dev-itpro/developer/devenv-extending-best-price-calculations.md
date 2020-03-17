@@ -1,7 +1,7 @@
 ---
 title: "Extend Best Price Calculations"
 ms.custom: na
-ms.date: 07/17/2020
+ms.date: 03/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,12 +11,14 @@ author: bholtorf
 ---
 
 # Extending Best Price Calculations
-If you record special prices and line discounts for sales and purchases, Business Central can optimize your profit by automatically calculating the best price on sales and purchase documents, and on job and item journal lines.
+This topic describes how best price calculations are implemented, and provides some examples of how you can extend them. 
 
-The best price is the lowest permissible price with the highest permissible line discount on a given date. Business Central automatically calculates this when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Best Price Calculation](dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements#best-price-calculation).
+If you record special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can optimize your profit by automatically calculating the best price on sales and purchase documents, and on job and item journal lines.
+
+The best price is the lowest permissible price with the highest permissible line discount on a given date. Business Central automatically calculates this when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Best Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
 
 ## Price Calculation Extensibility
-Price calculation is based on an extendable data structure. The **Price Calculation Page** lets you choose one of the existing implementations of price calculation, as shown in the following image.
+Price calculation is based on an extensible data structure. The **Price Calculation Page** lets you choose one of the existing implementations of price calculation, as shown in the following image.
 
 Insert diagram
 
