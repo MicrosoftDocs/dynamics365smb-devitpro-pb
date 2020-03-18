@@ -13,6 +13,8 @@ author: jswymer
 
 # DataAccessIntent Property
 
+[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+
 Sets whether to get data for the object from a read-only replica of the database or the primary database.
 
 <!-- 

@@ -11,6 +11,8 @@ author: jswymer
 ---
 # Configuring a [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] Database for Read Scale-Out
 
+[!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
+
 In the [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] Online service, read scale-out is readily available and automatically enabled on the databases.
 
 For [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] on-premises, you must do the following steps: 

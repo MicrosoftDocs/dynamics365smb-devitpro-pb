@@ -11,6 +11,8 @@ author: jswymer
 ---
 # Using Read Scale-Out for Better Performance
 
+[!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
+
 The way [!INCLUDE[server](../developer/includes/server.md)] interacts with the database can broadly be categorized in two patterns:
 - Business processes that read and write data, such as codeunits that run from UI pages or web services.
 - Analytical workloads that only read data, such as queries, reports, or API pages.
@@ -39,7 +41,7 @@ When you develop solutions for [!INCLUDE[prodshort](../developer/includes/prodsh
 
 ### Overwrite the database access intent on reports, API pages, and queries
 
-Read scale-out can introduce a slight delay when reading data from a database's secondary replica. The delay is caused by the way High Availability databases replicate data changes from the primary database to secondary replicas. If a data delay isn't acceptable for a report, query, or API page, you can overwrite the default database access intent.
+Read scale-out may introduce a slight delay when reading data from a database's secondary replica. The delay is caused by the way High Availability databases replicate data changes from the primary database to secondary replicas. If a delay isn't acceptable for an object, you can overwrite the default database access intent.
 
 For more information, see [Managing Database Access Intent](https://review.docs.microsoft.com/en-us/dynamics365/business-central/admin-data-access-intent?branch=tfs337368-readscaleout).
 
