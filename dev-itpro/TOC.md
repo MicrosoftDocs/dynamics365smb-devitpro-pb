@@ -702,7 +702,7 @@
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
-## APIs
-### [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
-### [Fixed App Managment Endpoint API](administration/fame/fame-api.md)
+# APIs
+## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
+## [Fixed App Managment Endpoint API](administration/fame/fame-api.md)
 <!-- preview of Graph API ends -->
