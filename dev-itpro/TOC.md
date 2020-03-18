@@ -41,6 +41,7 @@
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
@@ -575,7 +576,9 @@
 ### [JSON files](developer/devenv-json-files.md) -->
 <!-- end AL -->
 <!-- web service -->
-# [Web Services](webservices/web-services.md)
+# Web Services
+## [Web Services](webservices/web-services.md)
+## [Terms of Use](webservices/webservices-terms-of-use.md)
 ## General
 ### [Publishing a Web Service](webservices/publish-web-service.md)
 ### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
