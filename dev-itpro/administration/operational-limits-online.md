@@ -38,12 +38,12 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Max data rows allowed to send to excel|The maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, the limit on rows is configured in the client.| |    
 |Max items in object graph|The maximum number of objects to serialize or deserialize.|  10,000|
 |Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|350 MB|
 |Maximum stream read size|The maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
 <!--
+|Max data rows allowed to send to excel|The maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, the limit on rows is configured in the client.| |    
 |Data cache size|The contextual size of the data cache.| 9| 
 |Chunk size|The default size for a chunk of data that is transferred between the service and clients| 28 KB| 
 |Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|
@@ -95,8 +95,10 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
 |Operation timeout|The maximum amount of time that the service gives a single SOAP request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|10 minutes|
-|Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 
+<!--
+|Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
+-->
 ##  <a name="SOAPServices"></a> SOAP request limits
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
@@ -105,8 +107,10 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Maximum message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
 |Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br /> 300 requests/minute<br /><br />Production:<br />600 requests/minute|
 |Operation timeout|The maximum amount of time that the service gives to a single SOAP request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
-|Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 
+<!--
+|Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
+-->
 ## See Also
 
 [Working with API Rate Limits](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)  
