@@ -41,5 +41,5 @@ The **Database Locks** page gives a snapshot of all current database locks in SQ
 -->
 ##  See Also
 
-[Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks).
+[Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks)  
 [Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)  
