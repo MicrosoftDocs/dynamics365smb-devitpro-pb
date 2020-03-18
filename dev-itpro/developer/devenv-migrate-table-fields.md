@@ -33,7 +33,7 @@ Moving objects from Extension Y to Extension X, is considered a *move down*. Typ
 - Splitting an extension.
 
     You want to move common tables to a separate extension that other extensions can have a dependency on.
-- Transitioning from a customized customized base application extension to the Microsoft Base Application.
+- Transitioning from a customized customized base application extension with own ID to the Microsoft Base Application.
 
     You have a customized base application extension with its own ID. You want to transition to the Microsoft Base Application. In this case, customizations remain in the current extension. Base objects are removed and ownership transferred to Microsoft Base Application.
 
@@ -45,7 +45,14 @@ Moving objects from Extension Y to Extension X, is considered a *move down*. Typ
 Moving objects from the Base Application extension to Extension X is a *move up*. Typical move-up scenarios include:
 
 - Splitting an extension in two, with one dependent on the other.
-- You have customized base application with the Microsoft ID. You want to transition to use the Microsoft Base Application. You'll move customizations up to a new extension on top of the Microsoft Base Application.
+
+- Upgrading from C/AL to AL
+
+    [add more]
+- Transitioning from a customized customized base application extension with Microsoft ID to the Microsoft Base Application.
+
+    You have a customized base application extension with the Microsoft ID. You want to transition to the Microsoft Base Application. In this case, customizations are moved out of the base application up to extensions. The customization objects are removed from the custom base application and ownership transferred to the new extensions.
+
 - [add more]
 
 #### Development
@@ -64,8 +71,7 @@ The deployment phase is when the data is migrated to new tables in the database.
 The order that you synchronize extensions is important:
 
 - The receiving extensions must be synchronized first.
-- The releasing extensions, those extensions that include the migration.json file, must be synchronized last.   
-
+- The releasing extensions, those extensions that include the migration.json file, must be synchronized last.
 
 ## Move tables and fields down the dependency graph
 
