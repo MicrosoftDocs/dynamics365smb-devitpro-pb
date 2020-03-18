@@ -1,8 +1,8 @@
 ---
 title: "The count of captions property is wrong."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2020
+ms.date: 03/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
