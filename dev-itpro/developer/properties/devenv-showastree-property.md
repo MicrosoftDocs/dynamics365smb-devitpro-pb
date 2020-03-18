@@ -36,7 +36,7 @@ Optionally, you can set the **TreeInitialState** property to specify whether the
 > [!NOTE]
 > When you set this property to **true**, if the **IndentationControl** property is set, it is ignored and the first column on the page is indented.
 
-For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.ms).
+For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
 
 ## Example
 

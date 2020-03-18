@@ -35,7 +35,7 @@ When using this property, consider the following behavior:
 - This property is ignored if the **ShowAsTree** property on the repeater is set to **true**.
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
 
-For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.ms).
+For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
 
 ## Example
 
