@@ -287,7 +287,7 @@
 ##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
-##### [Designing Indented Lists](developer/devenv-indented-hierachy-lists.md)
+##### [Designing Indented Lists](developer/devenv-indented-hierarchy-lists.md)
 #### Card Pages
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
