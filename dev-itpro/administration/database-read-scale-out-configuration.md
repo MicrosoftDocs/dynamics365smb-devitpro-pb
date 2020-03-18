@@ -20,9 +20,9 @@ For [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] on-premises, yo
 1. Check whether your database supports read scale-out.
 2. Enable read scale-out.
 
-If the [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] database runs on Azure SQL Database, determine whether the performance tier of the database supports read scale-out and how to enable the feature. For more information, see [Use read-only replicas to load-balance read-only query workloads](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-read-scale-out) in the Azure SQL Database documentation.
+If the [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] database runs on Azure SQL Database, determine whether the performance tier of the database supports read scale-out and how to enable the feature. For more information, see [Use read-only replicas to load-balance read-only query workloads](/azure/sql-database/sql-database-read-scale-out) in the Azure SQL Database documentation.
 
-If the [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] database runs on SQL Server, determine whether your installation supports read scale-out and how to enable the feature. For more information, see [Configure read-only routing for an Always On availability group](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server) in the SQL Server documentation.
+If the [!INCLUDE[prodshort.md](../developer/includes/prodshort.md)] database runs on SQL Server, determine whether your installation supports read scale-out and how to enable the feature. For more information, see [Configure read-only routing for an Always On availability group](/sql/database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server) in the SQL Server documentation.
 
 ## See also
 
