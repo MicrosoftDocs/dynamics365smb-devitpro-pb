@@ -195,7 +195,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [The "Ready to Go" Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -564,6 +564,9 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+### [Migrating Tables and Fields Between Extensions]
+#### [Moving Tables and Fields to Another Extension](developer/devenv-migrate-table-fields.md)
+#### [Migration.json File](developer/devenv-migration-json-file.md)
 <!--
 ## Preview Features in AL
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
