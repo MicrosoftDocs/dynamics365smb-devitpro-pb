@@ -157,6 +157,8 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 - An enum can be assigned/compared to an enum of the same type. 
 - To be backwards compatible we support conversion to/from any `Option` for now.
 
+For information about assigment compatibility, see [AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md).
+
 ## See Also
 [AL Data Types](datatypes/devenv-al-data-types.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  

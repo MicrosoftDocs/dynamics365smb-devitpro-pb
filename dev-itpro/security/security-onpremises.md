@@ -65,6 +65,8 @@ The following are general articles about SQL Server security that can also help 
 
 [Backup Encryption](/sql/relational-databases/backup-restore/backup-encryption?view=sql-server-2017)
 
+[Azure Database Security Best Practices](/azure/security/fundamentals/database-best-practices)
+
 ## Network Security
 
 The following articles explain to secure client, web service, and PowerBI connections over a wide area network using HTTPS and security certificates. 
