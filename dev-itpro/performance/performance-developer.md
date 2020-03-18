@@ -1,5 +1,5 @@
 ---
-title: "Performance Topics For Developers"
+title: "Performance Article For Developers"
 ms.custom: na
 ms.date: 01/14/2020
 ms.reviewer: na
@@ -10,9 +10,9 @@ ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
-# Performance Topics For Developers
+# Performance Articles For Developers
 
-In this topic you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+In this article, you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 - [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
 - [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
@@ -22,28 +22,27 @@ In this topic you can read about ways to tune performance when developing for [!
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
 
-
 ## Writing efficient pages 
 
-There are a number of patterns that a developer can use to get a page to load faster. Consider the following:
+There are a number of patterns that a developer can use to get a page to load faster. Consider the following patterns:
 
-- Avoid unnecessary recalculation 
-- Do less 
-- Offloading the UI thread 
+- Avoid unnecessary recalculation
+- Do less
+- Offloading the UI thread
 
 ### Pattern - Avoid unnecessary recalculation 
 
-To avoid unnecessary recalculation of expensive results, consider caching that data yourself and refresh the cache on a regular basis. Maybe you want to show the top 5 open sales orders, or a list of VIP customers on the role center. The content of such a list probably does not change significantly every hour, so there is no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
+To avoid unnecessary recalculation of expensive results, consider caching the data and refresh the cache on a regular basis. Let's say you want to show the top five open sales orders or a VIP customers list on the role center. The content of such a list probably doesn't change significantly every hour. There's no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
 
-Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results are not cached in the primary key cache in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server. Any use of a query object will always go to the database. So, sometimes it is faster to not use a query object. 
+Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
 
 ### Pattern - Do less 
 
 One way to speed up things is to reduce the work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. An additional benefit of a simple page with few UI elements can also be ease of use and navigation.
 
-Remove calculated fields from lists if they are not needed. Especially on larger tables or if inadequate indexing is present, calculated fields can significantly slow down a list page.
+Remove calculated fields from lists if they aren't needed, especially on larger tables. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
-Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and FactBoxes even if they are not shown in the lookup. As an example, in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 1, dedicated lookup pages for Customer, Vendor, and Item were added to the Base Application.
+Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and FactBoxes even if they aren't shown in the lookup. For example, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
 ### Pattern - Offloading the UI thread 
 
@@ -53,11 +52,11 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 
 ## Writing efficient Web Services 
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] has support for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server (the endpoint) and as seen from the consumer (the client). 
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server (the endpoint) and as seen from the consumer (the client). 
 
 ### Endpoint performance  
 
-You should avoid using standard UI pages to expose as web service endpoints. A lot of things such as FactBoxes are not exposed in OData, but will use resources to compute.
+Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
 
 Things that have historically caused performance on pages that are exposed as endpoints are:
 
@@ -65,17 +64,22 @@ Things that have historically caused performance on pages that are exposed as en
 - Many SIFT fields 
 - FactBoxes 
  
-Instead of exposing UI pages as web service endpoints, use the built-in API pages as they have been optimized for this scenario. Do select the highest API version available. And please do not use the beta version of the API pages.
+Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages.
 
 Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
 ### Web service client performance 
 
-The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic cannot cause stability and performance issues.
+The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic can't cause stability and performance issues.
 
 Make sure that your client respects the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
-Handling Status Code 429 requires the client to adopt a retry logic while providing a cool off period. Different strategies such as regular interval retry, incremental intervals retry, exponential back-off, or even randomization can be applied.
+Handling Status Code 429 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
+
+- regular interval retry
+- incremental intervals retry
+- exponential back-off
+- randomization.
 
 Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit, but splitting the request into multiple requests - and then dealing with potential 429, by applying a back off strategy.
 
@@ -83,16 +87,16 @@ Read more about web service limits, see [Working with API limits in Dynamics 365
 
 ## Writing efficient reports
 
-Reports in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are typically either very specific to a single instance of an entity (for example, an invoice), or of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports is in the latter category. These topics contain advice to implement faster reports: 
+Reports generally fall into two categories. They can be specific to a single instance of an entity, like an invoice. Or, they can be of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports lie in the latter category. The following articles contain advice about implementing faster reports: 
 
-- How to use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md).
+- To use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md).
 
-- Compared to Word layouts, RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
+- Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
 
 ## AL performance patterns 
 
-Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we will describe the following patterns and their impact on performance.
+Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we'll describe the following patterns and their impact on performance.
 
 - [Use built-in data structures](#builtindatastructure)  
 - [Run async (and parallelize)](#runasync)  
@@ -100,23 +104,25 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 - [Other AL performance tips and tricks](#tips)  
 
 
-### <a name="builtindatastructure"></a>Pattern - Use built-in data structures 
-AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you are familiar with them to make your AL code as efficient as possible.  
+### <a name="builtindatastructure"></a>Pattern - Use built-in data structures
+
+AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
 When concatenating strings, make sure to use the `TextBuilder` datatype and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
-Use a `List` data type if you need an unbound “array” (where you would previously create a temporary table object). For more information, see [List Data Type](../developer/methods-auto/list/list-data-type.md).
+Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). For more information, see [List Data Type](../developer/methods-auto/list/list-data-type.md).
 
 
-### <a name="runasync"></a>Pattern - Run async (and parallelize) 
-It is often desirable to offload AL execution from the UI thread to a background session. 
+### <a name="runasync"></a>Pattern - Run async (and parallelize)
+
+It's often desirable to offload AL execution from the UI thread to a background session. 
 
 Here are some examples of this pattern:
 
-- Do not let the user wait for batches 
-- Split big tasks into smaller tasks and run them in parallel
+- Don't let the user wait for batches 
+- Split large tasks into smaller tasks and run them in parallel
 
 There are many different ways to spin up a new task:
 
@@ -129,7 +135,7 @@ They come with different characteristics as described in this table:
 
 |Method to start a new task | Properties |
 |---------------------------|------------|
-| Page Background Task      | Can (will) be canceled <br> Read-only <br> Callback to parent session <br> Lightweight |
+| Page Background Task      | Can (will) be canceled <br> Read-only <br> Call back to parent session <br> Lightweight |
 | StartSession              | Created immediately <br> Runs on same server <br> Not as controlled as a Page Background Task |
 | Task                      | Queued up <br> Any server in a cluster can start it <br> Survives server restarts <br> No logging | 
 | Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
@@ -146,15 +152,15 @@ One common use of the `CALCSUMS` method is to efficiently calculate totals.
 
 Try to minimize work done in the `OnAfterGetRecord` trigger code. Common performance coding patterns in this trigger are:
 
-- Avoiding `CALCFIELDS` calls (defer this till the end)
-- Avoiding repeated calculation (move these outside the loop, if possible) 
-- Avoid changing filters (this requires the server to throw away the resultset)
+- Avoiding `CALCFIELDS` calls. Defer them until the end.
+- Avoiding repeated calculations. Move them outside the loop, if possible. 
+- Avoid changing filters. This pattern requires the server to throw away the result set.
 
 Consider using a query object if you want to use a set-based coding paradigm. These pros and cons for using query objects:
 
 |Pros for using a query object|Cons for using a query object | 
 |-----------------------------|------------------------------|
-| - Will bypass the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets are not cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You cannot add a page on a query object. |
+| - Will bypass the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets aren't cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You can't add a page on a query object. |
 
 Read more about query objects here:
 
@@ -166,60 +172,60 @@ Read more about query objects here:
 
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
-If you need a fast, non-blocking number sequence that can be used from AL, take a look at the number sequence object type in AL. Use a number sequence object if you: 
+If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
 
-- Do not want to use a number series. 
-- Can accept holes in the number range. 
+- Don't want to use a number series. 
+- Can accept holes in the number range.
 
 For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
 
 ### Table extension impact on performance
 
-Table extensions are eager joined in the data stack when accessing the base table, and it is currently not possible to define indexes that span base and extension fields. Therefore, you should avoid splitting your code into too many table extensions. Also, be careful about extending central tables such as General Ledger entry, as this can severely hurt performance. 
+Table extensions are eager-joined in the data stack when accessing the base table. It's currently not possible to define indexes that span base and extension fields. So avoid splitting your code into too many table extensions. Also, be careful about extending central tables, such as General Ledger entry, because it can severely hurt performance. 
 
-An alternative when doing data modelling for extending a table with new fields is to use a related table and define a FlowField on the base table. 
+An alternative when doing data modeling for extending a table with new fields is to use a related table and define a FlowField on the base table. 
 
-These are the pros and cons of the two ways to data model this:
+Here are the pros and cons of the two data models:
 
 |Data model for extending a table | Properties |
 |---------------------------------|-------------|
 |Table extension | Fields can be added to lists and are searchable. <br> Always loaded with the base table. <br> Expensive at runtime but easy to use. <br> Use only for critical fields. |
-| Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Does not affect performance of base table. <br> Excellent for FactBoxes. | 
+| Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Doesn't affect performance of base table. <br> Excellent for FactBoxes. | 
 
 ### Limit your event subscriptions
 
 The following are best practices for getting performant events:
 
-- There is no significant cost of having a publisher defined.
-- Static automatic has a cost over manually binding (there is an overhead of creating and disposing objects).
+- There's no significant cost of having a publisher defined.
+- Static automatic has a cost over manually binding (there's an overhead of creating and disposing objects).
 - Codeunit size of the subscriber matters. Try to have smaller codeunits.
 - Use single instance codeunits for subscribers, if possible.
 
-Be aware that table events change the behavior of SQL optimizations on the [!INCLUDE[server](../developer/includes/server.md)]:
+Table events change the behavior of SQL optimizations on the [!INCLUDE[server](../developer/includes/server.md)] in the following ways:
 
 - The [!INCLUDE[server](../developer/includes/server.md)] will issue SQL update/delete statements row in a for loop rather than one SQL statement.
-- Impacts `MODIFYALL`/`DELETEALL` methods that normally do bulk SQL operations to be forced to do single row operations.
+- They impact `MODIFYALL` and `DELETEALL` methods that normally do bulk SQL operations to be forced to do single row operations.
 
 ## Efficient data access 
 
-Many performance issues are related to how data is defined, accessed, and modified. As an AL developer, it is important to know about how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
+Many performance issues are related to how data is defined, accessed, and modified. It's important to know how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
   
 ### Tables and keys 
 
-Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]), but index design is often not a key skill for AL developers. In order to have good performance even when (a lot of) data is added to the system, it is imperative to design appropriate indexes according to the way your code will access data. 
+Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
 
-These topics on indexing are very relevant to know as an AL developer:
+These articles on indexing are worth knowing as an AL developer:
 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [Key Property](../developer/properties/devenv-key-property.md) 
 - [About SQL Server indexes](https://docs.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
-Indexes have a cost to update, so it is recommended to not use them too frequently. 
+Indexes have a cost to update, so it's recommended to not use them too frequently. 
 
  
 ### SumIndexField Technology (SIFT)
 
-SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type (Decimal, Integer, BigInteger, and Duration) columns in tables, even in tables with thousands of records. SIFT is used to optimize the performance of FlowFields and query results in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. 
+SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type columns in tables, even in tables with thousands of records. The data type includes Decimal, Integer, BigInteger, and Duration. SIFT optimizes the performance of FlowFields and query results in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. 
 
 Ensure appropriate SIFT indices for all FlowFields of type sum or count. 
 
@@ -230,13 +236,15 @@ Read more about SIFT here:
 - [Tuning and Tracing](../developer/devenv-sift-tuning-and-tracing.md)  
 - [SIFT and SQL Server](../developer/devenv-sift-and-sql-server.md)  
 
-This topic can sometimes help to find missing SIFT indexes on flowfields. For more information, see [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md). 
+The following article can help you find missing SIFT indexes on FlowFields:
+
+[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md). 
 
 ### How AL relates to SQL 
 
-Even though the AL programming language hides away how data is read and written to the database, to effectively code for performance you need to know how AL statements translate to the equivalent SQL statements. 
+The AL programming language, to some degree, hides how data is read and written to the database. To effectively code for performance, you need to know how AL statements translate to the equivalent SQL statements.
 
-The following topics cover how AL relates to SQL:
+The following articles cover how AL relates to SQL:
 
 - [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
 - [Data Access](../administration/optimize-sql-data-access.md)  
@@ -245,28 +253,28 @@ The following topics cover how AL relates to SQL:
 
 ### How to get insights into how AL translates to SQL 
 
-If you want to track how the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server translates AL statements to SQL statements, you can either use database statistics in the AL debugger, or use telemetry on long running queries.
+If you want to track how [!INCLUDE[server](../developer/includes/server.md)] translates AL statements to SQL statements, use either database statistics in the AL debugger or telemetry on long running queries.
 
 Read more here:
 
 - [About database statistics in the AL debugger](../developer/devenv-debugging.md#DebugSQL)
 - [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
-## Utilizing Read-Scale Out
+## Using Read-Scale Out
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server to load-balance analytical workloads in the database that only read data, such as queries, reports, or API pages. **Read Scale-Out** is built-in with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, but it can also be enabled for on-premises.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server. **Read Scale-Out** is used to load-balance analytical workloads in the database that only read data.  **Read Scale-Out** is built in as part of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, but it can also be enabled for on-premises.
 
-With **Read Scale-Out**, instead of sharing the primary (read-write) database, reports, queries, and API pages can be set up to run against a read-only replica (if available). This essentially isolates them from the main read-write workload (codeunits) so that they will not affect the performance of business processes.
+**Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload so that they won't affect the performance of business processes.
 
 As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md). For more information, see [Utilizing Read Scale-Out for Better Performance](database-read-scale-out-overview.md).
 
 ## Testing and validating performance 
 
-It is imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section you find resources on how to analyze and troubleshoot performance issues as well as guidance on how to validate performance of a system. 
+It's imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section, you find resources on how to analyze and troubleshoot performance issues and guidance on how to validate performance of a system. 
 
 ### Performance Unit Testing
 
-You can use the `SessionInformation` data type in unit tests that track the number of SQL statements and/or rows read before and after the code to be tested and then have assert statements that check for normal behavior.
+You can use the `SessionInformation` data type in unit tests that track the number of SQL statements or rows read. Use it  before and after the code to be tested. Then, have assert statements that check for normal behavior.
 
 For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
@@ -277,7 +285,7 @@ The following performance telemetry is available in Azure Application Insights (
 
 ### Troubleshooting
 
-The following topics can be of help in troubleshooting performance issues:
+The following articles can be of help in troubleshooting performance issues:
 
 - [Find missing SIFT indexes for FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 - [Use Page Inspection to find extensions participating on a page](../developer/devenv-inspecting-pages.md)
