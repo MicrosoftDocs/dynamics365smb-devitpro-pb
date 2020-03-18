@@ -11,6 +11,8 @@ author: jswymer
 ---
 # TreeInitialState Property
 
+[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+
 Sets whether the tree view on list page is collapsed or expanded when the page opens.
 
 ## Syntax
@@ -31,7 +33,7 @@ TreeInitialState = CollapseAll;
 
 Users can change whether a list opens collapsed or expanded. To change behavior, they select the **Toggle Expand/Collapse All** on the first column heading in the list. If they want to revert back to the default setting, they clear personalization of the page.
 
-For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.ms).
+For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierachy-lists.md).
 
 ## Example
 
