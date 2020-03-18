@@ -28,15 +28,15 @@ The codeunits that implement specific calculations subscribe to the OnFindImplem
 
 For example, the calculation of sale prices for all asset types can be handled by the "Business Central (Version 16.0)" codeunit, but calculation of purchase prices – by "Business Central (Version 15.0)" codeunit.
 
-Insert image? Is this UI available?
+<!--Insert image? Is this UI available?-->
 
 If you want to add concurrent handlers and new methods you can add detailed setup lines that define combinations of assets and sources that use a method that you specify.
 
-Insert image
+:::image type="content" source="../media/best-pricing-diagram2-detailed-setup.png" alt-text="Diagram showing an example of a default setup.":::
 
 The detailed setup lines shown in the following image mean that all sales prices for Customer 10000 and job GUILFORD, 10 CR are calculated by the Business Central (version 16.0) handler.
 
-Insert image
+:::image type="content" source="../media/best-pricing-diagram3-data-sources.png" alt-text="Diagram showing a default setup.":::
 
 ## Data Structure
 The Business Central (Version 15.0) calculation uses the following tables that store information about prices, costs, and discounts: 
@@ -70,7 +70,7 @@ The Price Calculation Method field is added to all tables that need calculation 
 
 The following image shows the schema of how the methods called in sales line get price/discount amounts from either the Sales Price or Price List Line tables.
 
-Insert image
+:::image type="content" source="../media/best-pricing-diagram4-price-calculation.png" alt-text="Diagram showing price calculation for a sales line.":::
 
 ## Interface Objects
 Best price calculation uses the following AL interface objects:
@@ -82,23 +82,23 @@ Best price calculation uses the following AL interface objects:
 ### Price Calculation
 The Price Calculation interface defines methods that calculate amounts and discount percentages in journal and document lines. The Price Calculation - Native codeunit implements the interface, as shown in the following image.
 
-Insert image
+:::image type="content" source="../media/best-pricing-diagram4-price-calculation.png" alt-text="Diagram showing an implementation of the Price Calculation interface.":::
 
 To add another implementation codeunit you must also extend the Price Calculation Handler enum that implements the Price Calculation and is used in the Price Calculation Setup table.
 
 ### Line With Price
 The Line With Price interface defines methods for a generic line that requires the calculation of a price, cost, and line discount. There are eight codeunits that implement this interface, as shown in the following image.
 
-Insert image
+:::image type="content" source="../media/best-pricing-diagram5-line-with-price.png" alt-text="Diagram showing an impementation of the LIne WIth Price interface.":::
 
 The following example shows a typical use of these codeunits in the Sales Line table.
 
-Insert example
+:::image type="content" source="../media/best-pricing-GetPriceCalculationHandler.png" alt-text="Code example showing a typical use of codeunits in the Sales Line table.":::
 
 ### Price Source
 The Price Source interface defines methods for a generic price source. The list of supported sources is defined by the Price Source Type enum. The interface is used in the Price Source table to validate the primary key fields and look up respective tables.
 
-Insert image
+b:::image type="content" source="../media/best-pricing-diagram6-price-source-type.png" alt-text="Diagram showing methods for a generic price source.":::
 
 ## Examples of Extended Best Price Calculations
 You can extend best price calculations if you want them to include other sources or use different calculations. The following sections provide some examples.
