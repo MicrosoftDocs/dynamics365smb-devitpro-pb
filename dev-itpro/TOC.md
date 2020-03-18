@@ -128,6 +128,8 @@
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
+###  Fixed App Management Endpoint
+#### [Fixed App Management Endpoint API](administration/fame/fame-api.md)
 ## On-Premises
 ### [Administration of Business Central On-Premises](administration/administration.md)
 ### [Server Administration Tool](administration/administration-tool.md)
@@ -702,7 +704,6 @@
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
-# APIs
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
-## [Fixed App Managment Endpoint API](administration/fame/fame-api.md)
+# [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
+
 <!-- preview of Graph API ends -->
