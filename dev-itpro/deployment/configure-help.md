@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 01/10/2020
+ms.date: 03/16/2020
 ms.author: edupont
 ---
 
@@ -31,32 +31,50 @@ For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premi
 
 ### Online library
 
-If you want to use a website that is *not* based on Help Server, then you must specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it support.  
+If you want to use a website that is *not* based on Help Server, then you must specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
 
-For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following setting:
+The navsettings.json file must contain the following setting in the `ApplicationIdSettings` element:
 
 ```json
-    "//BaseHelpUrl":  "The location of Help for this application.",
+{
+  "NAVWebSettings": {
+    // [...more keys]
+  },
+  "ApplicationIdSettings": {
+    //BaseHelpUrl:  The location of Help for this application.,
     "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
+     // [...more keys]
+  }
+}
 ```
 
 > [!NOTE]
 > Replace the value of the BaseHelpUrl key with the URL for your own website. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
 
+For more information, see [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](../administration/configure-web-server.md).  
+
 ### Help Server
 
 If you want to use Help Server, then you must specify the server and port in the installation options. The Help Server website can also serve as a starting point for adding a library to your existing website, for example.  
 
-For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
+The navsettings.json file must contain the following settings in the `NAVWebSettings` element:
 
 ```json
-    "//HelpServer": "Name of the Dynamics NAV Help Server to connect to.",
+{
+  "NAVWebSettings": {
+    //HelpServer: Name of the Dynamics NAV Help Server to connect to.,
     "HelpServer": "https://myserver.com",
-    "//HelpServerPort":  "The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535",
+    //HelpServerPort:  The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535,
     "HelpServerPort": "49000",
+    // [...more keys]
+  },
+  "ApplicationIdSettings": {
+    // [...more keys]
+  }
+}
 ```
 
-In the example, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+In the example, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and adminstration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
 > If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Neither does the original Help lookup mechanism that was based on filenames that reflected the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server?target=_blank).
