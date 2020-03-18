@@ -41,6 +41,7 @@
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
@@ -68,8 +69,9 @@
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
-### [System requirements April '19](deployment/system-requirement-business-central.md)
+### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
+### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+### [System Requirements April '19](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
@@ -248,6 +250,7 @@
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
+### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ## Events
@@ -291,6 +294,7 @@
 ##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
+##### [Designing Indented Lists](developer/devenv-indented-hierarchy-lists.md)
 #### Card Pages
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
@@ -348,6 +352,7 @@
 ### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
 ### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
 ### [API Query Type](developer/devenv-api-querytype.md)
+## [Interfaces](developer/devenv-interfaces-in-al.md)
 ## XMLports
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
@@ -581,7 +586,9 @@
 ### [JSON files](developer/devenv-json-files.md) -->
 <!-- end AL -->
 <!-- web service -->
-# [Web Services](webservices/web-services.md)
+# Web Services
+## [Web Services](webservices/web-services.md)
+## [Terms of Use](webservices/webservices-terms-of-use.md)
 ## General
 ### [Publishing a Web Service](webservices/publish-web-service.md)
 ### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
