@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Interfaces in AL
 
-An interface in AL is similar to an interface in any other programming language; an interface is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
+An interface in AL is similar to an interface in any other programming language; it is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
 
 This allows for writing code that reduces the dependency on implementation details, makes it easier to reuse code, and supports a polymorphic way of calling object methods, which again can be used for substituting business logic.
 
