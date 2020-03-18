@@ -169,6 +169,9 @@
 #### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
 #### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
+#### Utilizing Read Scale-Out
+##### [Overview](administration/database-read-scale-out-overview.md)
+##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using Telemetry
