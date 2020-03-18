@@ -13,6 +13,7 @@ ms.author: jswymer
 
 # Fixed App Managament Endpoint API
 
+The API is to be used by AppSource ISVs and Embed App ISVs. It is not for resellers, it is not for developers.
 
 ## Entities
 
