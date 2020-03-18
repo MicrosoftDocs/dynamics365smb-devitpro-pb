@@ -20,7 +20,7 @@ The best price is the lowest permissible price with the highest permissible line
 ## Price Calculation Extensibility
 Price calculation is based on an extensible data structure. The **Price Calculation Page** lets you choose one of the existing implementations of price calculation, as shown in the following image.
 
-Insert diagram
+![Diagram showing a price calculation implementation](media/best-pricing-diagram1-setup.png)
 
 The combination of a price type (sales or purchase) and asset type (item, resource, G/L account, and so on) determines the method (all three are extendable enums) and the handler. There can be multiple handlers for the same method that will implement a certain calculation. 
 
