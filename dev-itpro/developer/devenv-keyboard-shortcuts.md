@@ -13,7 +13,7 @@ ms.author: solsen
 ---
 
 # Keyboard Shortcuts
-The following table provides an overview of some of the shortcut key combinations that you can use when you are working  in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
+The following table provides an overview of some of the shortcut key combinations that you can use when you are working in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
 
 ## General in Visual Studio Code
 |Keyboard Shortcut| Action|
@@ -24,7 +24,7 @@ The following table provides an overview of some of the shortcut key combination
 |Ctrl+Shift+B|Package|
 |F5|Publish|  
 |Ctrl+F5|Publish without debugging|  
-|F6|Publish and open the designer|
+|F6|Publish and open Designer|
 |Ctrl+F2|Update the compiler used by the service tier(s)|
 
 ## Editing in Visual Studio Code
@@ -37,11 +37,13 @@ The following table provides an overview of some of the shortcut key combination
 |Ctrl+F2|Select all occurrences|
 |F12|Go to definition|
 |Alt+F12|Peek definition|
-|Shift+F12|Show References|
+|Shift+F12|Show references|
 |Ctrl+Shift+Space|Look up parameter hints|
 |Ctrl+K Ctrl+C|Add line comment|
 |Ctrl+K Ctrl+U|Remove line comment|
-|Ctrl+Shift+P|Show All Commands|
+|Ctrl+Shift+P|Show all commands|
+|F2|Rename (use Enter to rename, use Shift+Enter to preview)|
+
 
 ## Errors in Visual Studio Code
 |Keyboard Shortcut| Action|

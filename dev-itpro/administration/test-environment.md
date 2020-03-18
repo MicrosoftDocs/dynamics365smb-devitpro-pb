@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/11/2019
+ms.date: 01/09/2020
 ---
 # Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -43,7 +43,7 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
 4. In the **Service Management** section, choose the **Dynamics 365 Business Central** link.
 
-    This opens The [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: *[https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin](https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin)*
+    This opens the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: *[https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin](https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin)*
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create new production and sandbox environments for the test customer.
 
@@ -58,10 +58,16 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment is created automatically when you use the environment URL to login the first time.  
 
+## Prepare for major updates with preview environments
+
+About two months before a major update, you can try out new functionality in preview environments. For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
+
 ## See also
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
+[Prepare for major updates with preview environments](preview-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
+[Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  

@@ -3,7 +3,7 @@ title: "Getting Started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/11/2019
+ms.date: 02/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,9 +25,9 @@ Go through the following steps to set up a sandbox environment. With this you ge
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al). 
 4) Press **Ctrl+Shift+P,** to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
-5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose the version to run, and then choose **Microsoft cloud sandbox**.  
+5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose a path to a new empty folder and the version to run. Then choose **Microsoft cloud sandbox** as the server.  
     > [!NOTE]  
-    > If you want to change your configuration at a later point in time, choose **Add Configuration** button on the right side, and then choose one of the available options.  
+    > If you want to change your configuration at a later point in time, choose **Add Configuration** button on the bottom right side, and then choose one of the available options.  
 6) Enter the credentials that you provided for the sign-up.
 7) Press **Ctrl+F5** to deploy and run the extension on your online sandbox tenant.  
 
@@ -38,25 +38,9 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 + Always use the `.al` extension on new files.
 + Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list.
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
-+ Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
++ Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use **Ctrl+Shift+P** and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
-+ In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System and Base Applications found in the project under `.alpackages`. For example:
-    ```
-    "dependencies": [
-        {
-        "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-        "publisher": "Microsoft",
-        "name": "System Application",
-        "version": "16.0.10037.0"
-        },
-                {
-        "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-        "publisher": "Microsoft",
-        "name": "Base Application",
-        "version": "16.0.10037.0"
-        }
-    ],
-    ```
++ Use **F2** to rename objects, types etc. For more information, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md#Editing-in-Visual-Studio-Code).
 
 
 ## JSON file settings

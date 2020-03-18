@@ -1,6 +1,6 @@
 ---
 title: "A Repeater control used on a List page must be defined at the beginning of the area(Content) section."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/02/2020
 ms.reviewer: na
