@@ -113,6 +113,7 @@
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+### []()
 ### Monitoring and Analyzing Telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Analyzing Authorization Telemetry](administration/telemetry-authorization-trace.md)
