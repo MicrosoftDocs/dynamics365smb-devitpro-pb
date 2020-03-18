@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/20/2019
+ms.date: 01/17/2020
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -17,23 +17,17 @@ The topics in the Deployment section are intended to help a partner prepare a [!
 
 ## Take prospects and customers online
 
-You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by asking them to get a [free trial](https://go.microsoft.com/fwlink/?linkid=847861), and by showing them the apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. You can also create [online sandboxes](/dynamics365/business-central/across-how-create-sandbox-environment) and tailor these tenants with demonstration experiences that will attract prospects in your market space. With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example. So for you as a reseller, deployments of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are taken care of for you so that you can focus on your prospects and customers.  
+You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by asking them to get a [free trial](https://go.microsoft.com/fwlink/?linkid=847861), and by showing them the apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. You can also create give powerful demos that will attract prospects in your market space. With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example. So for you as a reseller, deployments of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are taken care of for you so that you can focus on your prospects and customers.  
 
-### Get set up in the Partner Center
+### Get set up for selling Business Central online
 
-[!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
-
-[!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
+If your organization has a background as resellers of [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] or other on-premises products, you have to get set up in the Microsoft Partner Center. For more information, see [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md).
 
 For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
-
-[!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
 ### Give powerful demos
 
 You can create a trial environment based on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content pack in [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/).  
-
-[!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
 For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md).  
 
@@ -77,7 +71,9 @@ Part of your configuration is to specify where to look up the Help for the solut
 
 ## See Also  
 
-[Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)
+[Administration of Business Central Online](../administration/tenant-administration.md)  
+[Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
+[Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
 [System Requirements 2019 release wave 2](system-requirement-business-central-v15.md)  
 [System Requirements April '19](system-requirement-business-central.md)  

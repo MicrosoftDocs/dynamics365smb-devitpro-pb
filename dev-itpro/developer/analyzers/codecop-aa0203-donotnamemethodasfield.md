@@ -1,8 +1,8 @@
 ---
 title: "To avoid confusion, do not give methods the same name as fields or actions in the same scope."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 01/06/2020
+ms.date: 03/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
