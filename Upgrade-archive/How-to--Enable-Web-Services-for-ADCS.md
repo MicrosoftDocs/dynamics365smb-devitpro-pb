@@ -7,11 +7,14 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5f81cec5-34bc-4530-b1b3-6ae99b9d31ae
-caps.latest.revision: 14
-manager: edupont
+author: jswymer
 ---
+<!-- This topic is redirected -->
+
 # Enabling Web Services for ADCS
+
+[!INCLUDE[2020_releasewave1_deprecated](../includes/2020_releasewave1_deprecated.md)]
+
 To use Automated Data Capture System, you must enable the ADCS web service.  
 
 ### To enable and publish the ADCS web service  
