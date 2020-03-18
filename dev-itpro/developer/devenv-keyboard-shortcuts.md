@@ -42,6 +42,8 @@ The following table provides an overview of some of the shortcut key combination
 |Ctrl+K Ctrl+C|Add line comment|
 |Ctrl+K Ctrl+U|Remove line comment|
 |Ctrl+Shift+P|Show all commands|
+|F2|Rename (use Enter to rename, use Shift+Enter to preview)|
+
 
 ## Errors in Visual Studio Code
 |Keyboard Shortcut| Action|
