@@ -11,16 +11,21 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# FAME API
+# Fixed App Managament Endpoint API
+
 
 ## Entities
+
 ## App
+
 ### Description
+
 The `app` entity represents a Business Central App that has been registered with the service and can therefore be managed via the API.  
 It contains some basic metadata about the app, such as its ID, the Azure Active Directory Tenant ID of the publisher's organization, and which Azure location the respective .app files and other metadata should be stored in.  
 Note that an app does not refer to any specific .app file or version of the app.
 
 ### Properties
+
 |Name|Description|Schema|
 |---|---|---|
 |**id**|The ID of the app. This must remain the same across all app versions.|string (uuid)|
@@ -31,23 +36,28 @@ Note that an app does not refer to any specific .app file or version of the app.
 |**_etag**|The entity tag that contains a value unique to the entity's current state.|string|
 
 ### Available Endpoints
+
 ### List apps
+
 Lists all apps the current `principal` has access to that match the provided (optional) filter.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=<odata_filter>
 ```
 
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |query|$filter|Restricts the set of items returned.|OData filter|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=storageLocation eq 'West Europe'
 ```
 
 #### Example Response
+
 ```json
 {
     "value": [
@@ -64,35 +74,43 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=storageLocation 
 ```
 
 ## Country
+
 ### Description
+
 The `country` entity represents a country that an `app` is available in.  
 A country is represented by its ISO 3166-1 alpha-2 (2-letter) country code.  
 Specific versions of Business Central Apps can be made available for specific countries.
 
 ### Properties
+
 |Name|Description|Schema|
 |---|---|---|
 |**countryCode**|The ISO 3166-1 alpha-2 (2-letter) code for the country.|string|
 |**_etag**|The entity tag that contains a value unique to the entity's current state.|string|
 
 ### Available Endpoints
+
 ### List countries
+
 Lists all countries the specified `app` has been made available in.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries
 ```
 
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app to list the countries for.|string (uuid)|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries
 ```
 
 #### Example Response
+
 ```json
 {
     "value": [
@@ -109,22 +127,26 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ### Get country
+
 Gets the `country` with the specified country code in the specified `app`.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}
 ```
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app that the country belongs to.|string (uuid)|
 |path|countryCode|The ISO 3166-1 alpha-2 (2-letter) code of the country.|string|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US
 ```
 
 #### Example Response
+
 ```json
 {
     "countryCode": "US",
@@ -133,11 +155,14 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ### Add or update country
+
 Adds a new `country` to the specified `app` or updates an existing one.
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app that the country belongs to.|string (uuid)|
@@ -145,11 +170,13 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 |body|country|The country properties that should be added or updated.|[Country](#country)|
 
 #### Example Request
+
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/AT
 ```
 
 #### Example Response
+
 ```json
 {
     "countryCode": "AT",
@@ -158,7 +185,9 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```
 
 ## Principal
+
 ### Description
+
 The `principal` entity represents an Azure Active Directory `user` or `application` that has some level of access to an `app`.  
 Principal can have different roles that determine which actions they are allowed to perform.
 The currently supported roles are:
