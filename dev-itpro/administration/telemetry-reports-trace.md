@@ -14,6 +14,8 @@ ms.author: jswymer
 
 # Analyzing Report Generation Telemetry
 
+[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+
 Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 
 You use this data to gather statistics to help identify slow-running reports.
