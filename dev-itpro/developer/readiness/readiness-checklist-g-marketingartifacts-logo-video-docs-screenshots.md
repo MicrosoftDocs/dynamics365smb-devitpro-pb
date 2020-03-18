@@ -15,12 +15,12 @@ ms.author: v-liober
 | Marketing artifacts | Description| Requirements |
 |---------------------|------------|--------------|
 | 14. **Offer logo**  | Formatting | Required     |
-| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image | Required     |
-| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image | Required     |
+| 14.A Offer logo for your app's search page (.png, 48x48 pixels)    | 1 offer logo for your app's search page: 48x48 pixels resolution .png image | Required     |
+| 14.B Offer logo for your app's details page (.png, 216x216 pixels) | 1 offer logo for your app's details page: 216x216 pixels resolution .png image | Required     |
 
 You are required to provide two offer logos on AppSource:
-- one in 48x48 pixels resolution for your app’s search page:
-- one in 216x216 pixels resolution for your app’s details page:
+- one in 48x48 pixels resolution for your app's search page:
+- one in 216x216 pixels resolution for your app's details page:
 - Both logos needs to be uploaded as .png images
 
 ![Storefront Detail - Offer Logo](../../media/OfferLogo.png)
@@ -28,7 +28,7 @@ You are required to provide two offer logos on AppSource:
 Structure
 - Your logo should be designed and optimized for a digital medium, not a traditional print based logo.
 - Monitors emit light and paper absorbs light.
-- Make sure you change the format, as you don’t want to end up with weird, inaccurate color representation.
+- Make sure you change the format, as you don't want to end up with weird, inaccurate color representation.
 - Color calibration across devices can affect the look and feel of your app:
 - All colors can be achieved by merging RGB (red, green, and blue) light, but monitors display only a limited range of the visible spectrum at a lowmedium resolution, usually 72-75 dots per inch. 
 - Print production usually requires a four-color process CMYK (cyan, magenta, yellow, black) in high resolution of at least 300 dpi.
@@ -48,27 +48,27 @@ Formatting and General requirements (cf. section 0.A-D) to keep in mind when cre
 - Note, videos made in local language can have subtitles in English (no requirement).
 Make the right references from the get go: 
 - Only include screenshots & demo of the newest UI.
-- Reference Microsoft’s brand names correctly:
+- Reference Microsoft's brand names correctly:
 - Only refer to Microsoft Dynamics 365 Business Central, Dynamics 365 Business Central or Business Central after first mentioning of full product name.
-- Don’t make references to acronyms, old Dynamics 365 NAV brand names/logos or demo old UIs.
-- Don’t include Microsoft Dynamics 365 logos or trademarks in your video.
+- Don't make references to acronyms, old Dynamics 365 NAV brand names/logos or demo old UIs.
+- Don't include Microsoft Dynamics 365 logos or trademarks in your video.
 
-> [!NOTE]
+> [!NOTE]  
 > Videos can be in any language, must be captioned if not spoken in English.
 
 Structure - Choose the type of videos that you want to include 
 
 You can create 4 different types of marketing videos:
-- “Why” videos
-- “How & What” videos
-- “Getting Started” videos
-- "Customer Testimony” videos 
+- "Why" videos
+- "How & What" videos
+- "Getting Started" videos
+- "Customer Testimony" videos 
 
 See guidelines on how to best structure the 4 above mentioned videos (and why it is crucial to incorporate them) in [How to create compelling video](readiness-how-to-make-compelling-videos.md)
 
-> [!TIP]
+> [!TIP]  
 > *Example of a video that is set up according to our best practices:*
-> [A “How and What product video” from Open Door Technology](https://vimeo.com/260138342)
+> [A "How and What product video" from Open Door Technology](https://vimeo.com/260138342)
 
 How to upload video(s) to the Cloud Partner Portal? 
 When uploading a video in the in the Cloud Partner Portal you need to provide the following:
@@ -80,7 +80,7 @@ When uploading a video in the in the Cloud Partner Portal you need to provide th
 
 Note: On AppSource videos will play when customers select the associated video thumbnail on your app's details page.
 
-> [!TIP]
+> [!TIP]  
 > *Example:* *URL to YouTube video Thumbnail image*
 > [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s) [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
 
@@ -89,22 +89,22 @@ Note: On AppSource videos will play when customers select the associated video t
 ## <a name="Documents"></a>Marketing Artifacts - Documents
 | Marketing artifacts  | Description | Requirements |
 |----------------------|------------|--------------|
-| 16. **Documents** (Learn more documents) | Enable prospects to learn more about your offer by adding supporting sales and marketing assets in the “learn more” section of the storefront details. | Required |
+| 16. **Documents** (Learn more documents) | Enable prospects to learn more about your offer by adding supporting sales and marketing assets in the "learn more" section of the storefront details. | Required |
 
 Formatting
 - A minimum of one document is required (up to a maximum of 3 are permitted).
 - It is a requirement that all docs are written in English and are formatted as PDF-files.
 - We recommend you to add the link to your app landing page to all your documents.
 
-> [!NOTE]  
+> [!NOTE]    
 > If your description does not include English, it is a requirement that you are providing an English translation as a document. This document must include the description text in English as well as the support information in English (if the support page is not in English). 
 
 Structure:
-- Think wisely about what content you include in the learn more section. Don’t sell, educate the prospect:
-- Don’t just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don’t discourage this interest by repeating something that they already know. 
+- Think wisely about what content you include in the learn more section. Don't sell, educate the prospect:
+- Don't just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don't discourage this interest by repeating something that they already know. 
 - Instead, use this opportunity to show them something new that entices their interest to start using your offer even more.
 
-Examples of Sales and marketing docs you can include as your “Learn more” assets are:
+Examples of Sales and marketing docs you can include as your "Learn more" assets are:
 - Set up instructions, customer reviews, marketing materials, white papers, brochures, check lists, PowerPoints etc.
 - A unique offer landing page
 
@@ -138,13 +138,13 @@ Example of different types of images that you can include to visually demonstrat
 
 - Use screenshots that includes realistic demo data and tell a compelling story 
 - Use visual images that highlights and demonstrates the key competitive differential between your product and others.
-- Our brains love contrast, so use comparisons if you can (i.e. screenshots of “before” and “after” using your offer).
+- Our brains love contrast, so use comparisons if you can (i.e. screenshots of "before" and "after" using your offer).
 
 Choose key visual elements to highlight rather than including a full screen of distracting, irrelevant content.
 - Graphic dashboards are optimal.
 - Zoom in on differentiation aspects.
-- *Don’t use small fonts*, as small fonts that require squinting.
-- *Don’t include screenshots from the Winclient* – only use screenshots from the Webclient and the Dynamics 365 Business Central UI.
+- *Don't use small fonts*, as small fonts that require squinting.
+- *Don't include screenshots from the Winclient* – only use screenshots from the Webclient and the Dynamics 365 Business Central UI.
 
 When uploading a screenshot in the in the Cloud Partner Portal you need to provide the following: 
 |- A name for your screenshot (Customers will see this name on your app's details page)
@@ -155,6 +155,6 @@ When uploading a screenshot in the in the Cloud Partner Portal you need to provi
 > *Example:* *Dashboard* *Set up instructions*
 
 > [!TIP]  
-> *Example:* of the completed screenshot fields (cf. point 17) in the “Marketing artifacts” section of the Cloud partner portal:
+> *Example:* of the completed screenshot fields (cf. point 17) in the "Marketing artifacts" section of the Cloud partner portal:
 
 ![Storefront Detail - Screenshots](../../media/Screenshots.png)
