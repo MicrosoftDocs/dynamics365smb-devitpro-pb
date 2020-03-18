@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Web Services Request Telemetry
 
-[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+[!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
 Web services telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
 

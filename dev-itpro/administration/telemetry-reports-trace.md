@@ -1,6 +1,6 @@
 ---
-title: Web Service Request Trace | Microsoft Docs
-description: Learn about the web service request telemetry in Business Central  
+title: Report Generation Telemetry Trace | Microsoft Docs
+description: Learn about the report telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Report Generation Telemetry
 
-[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+[!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
 Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 

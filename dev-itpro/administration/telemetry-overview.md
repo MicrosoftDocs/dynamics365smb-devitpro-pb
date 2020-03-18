@@ -54,11 +54,9 @@ As a simple example, do the following steps:
     ```
 
 ## Application Insights sample code
-On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started utilizing Application Insights. 
+On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started using Application Insights. 
 
-See [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights) for more information.
-
-
+For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
 
 ## See also
 
