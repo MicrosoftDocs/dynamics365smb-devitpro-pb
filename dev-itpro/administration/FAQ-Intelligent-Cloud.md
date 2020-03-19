@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 10/01/2019
+ms.date: 03/10/2020
 ms.author: bmeier
 
 ---
@@ -24,21 +24,21 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 - [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
 - Dynamics NAV 2018 CU 16
 
-    Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. However, the 2019 release wave 2 removes support for migrating from Dynamics NAV 2018 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. Instead, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan.<!--
-        **NAV2018 will only be supported up to the Wave2 Release of Business Central.  This update will release approximately the beginning of Octover 2019. With the Wave2 release a customer will need to update their on premise if they want to migrate to the cloud.  **See the Wave 2 release notes for more information.-->
+    Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. However, the 2019 release wave 2 removes support for migrating directly from Dynamics NAV 2018 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. You must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan and [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online) in the Migrate to Business Central Online section here.
+    
 <!-- - Dynamics SL 2018 CU 1-->
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
 
-Data is replicated using an Azure service called Azure Data Factory (ADF). The Azure Data Factory is a service that is always running within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online service manager. When the intelligent cloud is configured for your on-premises solution, a data pipeline is created within the ADF service that enables data to flow from your on-premises solution to your Business Central cloud tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and enables the communication between the cloud services and your on-premise data to communicate without opening any ports or firewalls.  
+Data is replicated using an Azure service called Azure Data Factory (ADF). ADF is a service that is always running within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online service manager. When you have connected to the intelligent cloud, a data pipeline is created in the ADF service so that data can flow from your on-premises solution to your Business Central online tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and manages the communication between the cloud services and your on-premises data without opening any ports or firewalls.  
 
 ## Are there any limits on the amount or type of data will replicate?
 
-Data replication for the initial release will have a limit of 150GB.  There are no restrictions on the type of data that can be replicated.  
+Data replication for the initial release will have a limit of 30 GB.  There are no restrictions on the type of data that can be replicated.  
 
 ## Is my SQL connection string required to set up the connection?
 
-Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime, and used to communication with your SQL Server instance during the data replication process. For more information, see [How do I find my SQL connection string?](#how-do-i-find-my-sql-connection-string).  
+Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime. The connection string is used to communicate with your SQL Server instance during the data replication process. For more information, see [How do I find my SQL connection string?](#how-do-i-find-my-sql-connection-string).  
 
 ## I am a hosting partner - do I need to configure the Self-Hosted Runtime Service for each tenant?
 
@@ -46,7 +46,7 @@ No, there is no limit on the number of tenants that can be added to your Self-Ho
 
 ## Will data from tables with code customizations replicate?
 
-No, only tables that are available in both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will replicate. Any customization would need to be made into an extension and installed on both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to replicate.  
+No, only tables that are available in both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will replicate. Any customization must be made into an extension and installed on both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to replicate.  
 
 ## Why are my permissions restricted in the Business Central online tenant?
 
@@ -54,7 +54,7 @@ When you connect your on-premises solution to [!INCLUDE [prodshort](../developer
 
 ## Can I ‘turn off’ my intelligent cloud?
 
-You can switch off your connection to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online environment at any point. Once you disable your intelligent cloud configuration, your on-premises solution and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will become completely independent of one another. If you switch off the connection, and you want to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment as your primary solution to run and manage your business, you must reassign permissions to provide read/write access to the relevant users.  
+You can switch off your connection to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online environment at any point. Once you disable your intelligent cloud configuration, your on-premises solution and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will become independent of one another. If you switch off the connection, and you want to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment as your primary solution to run and manage your business, you must reassign permissions to provide read/write access to the relevant users.  
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
 
@@ -72,7 +72,7 @@ Yes, the **Intelligent Cloud Insights** page can be hosted within your on-premis
 
 You can export the list to Excel from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant, but since the data is read-only you cannot make changes and import it again.  
 
-## Is the data replication only one-way?
+## Is the data replication only one way?
 
 Yes, data is only replicated from the on-premises solution to your Business Central online tenant.  
 
@@ -100,8 +100,7 @@ A connection string to your SQL database can be found in SQL Management Studio o
 
 ## How do I find the Integration Runtime name?
 
-The Integration Runtime name can be found in the Microsoft Integration Runtime Manager. You can find this application in your Windows system tray or by searching for the program. You will not be able to copy and paste the name. You must manually type the name.  
-
+Find the Integration Runtime name in the Microsoft Integration Runtime Manager, which you can find in your Windows system tray or by searching for the program. You must type the name. You will not be able to copy and paste the name.  
 
 ## See also
 
