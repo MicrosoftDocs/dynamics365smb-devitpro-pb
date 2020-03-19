@@ -99,7 +99,7 @@ You can also move actions to reorder them in the navigation bar, or move them in
 
 ## Hiding and Showing Parts
 
-Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it will appear grayed and will disappear from the page when you quit Designer mode. The extension generated will override the [Visible Property](properties/devenv-visible-property.md) on that part to **False**. Similarly, you can select **Show** on a grayed part control to make it visible to the user. In code, the [Visible Property](properties/devenv-visible-property.md) is set to **True**. For more information about parts, see [Page Parts Overview](devenv-designing-parts.md).
+Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it will appear grayed out and will disappear from the page when you quit Designer mode. The extension generated will override the [Visible Property](properties/devenv-visible-property.md) on that part to **False**. Similarly, you can select **Show** on a grayed part control to make it visible to the user. In code, the [Visible Property](properties/devenv-visible-property.md) is set to **True**.
 
 ## Working with Actions
 

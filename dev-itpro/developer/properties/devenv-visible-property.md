@@ -46,7 +46,7 @@ Visible = false;
  Using a variable for field and action controls requires that the variable be resolved by the [OnInit Trigger](../triggers/devenv-oninit-trigger.md) or [OnOpenPage Trigger](../triggers/devenv-onopenpage-trigger.md).  
  
 > [!IMPORTANT]
-> For part controls, users can override the **Visible** property from the [!INCLUDE[prodshort](includes/prodshort.md)] client using the Personalization Tool. Therefore, we do not recommend you using this property to restrict users from viewing certain elements. For more information, see [What You Can Personalize](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user?branch=master#What).
+> For part controls, users can override the **Visible** property from the [!INCLUDE[prodshort](includes/prodshort.md)] client using the Personalization Tool. Therefore, we do not recommend using this property to restrict users from viewing certain elements. For more information, see [What You Can Personalize](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user?branch=master#What).
 
 ## See Also  
  [Properties](devenv-properties.md)   
