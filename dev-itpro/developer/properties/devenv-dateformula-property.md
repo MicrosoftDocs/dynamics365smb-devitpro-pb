@@ -8,23 +8,23 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d6bda43c-b5b4-4243-ac85-4b55cd2fe202
-caps.latest.revision: 9
 ---
-
- 
 
 # DateFormula Property
 Sets a date formula used to verify that the date the user enters is correct.  
 
+> [!NOTE]  
+>  We recommend that you do not use this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
+
 ## Applies To  
 
--   Table Fields  
+- Table Fields  
 
--   Page Fields  
+- Page Fields  
 
 ## Remarks  
- The following table shows the syntax that is used to create the date formula.  
+
+The following table shows the syntax that is used to create the date formula.  
 
 |Syntax|Description|  
 |------------|---------------------------------------|  
@@ -36,12 +36,9 @@ Sets a date formula used to verify that the date the user enters is correct.
 |**CW+1W**|Current week plus one week|  
 |**D15**|On the 15th of each month|  
 
- In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], weeks begin on Monday and end on Sunday.  
+In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], weeks begin on Monday and end on Sunday.  
 
- For fields, this property only applies to text fields. In earlier versions of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the property also applied to code fields, but this has been deprecated.
-
-> [!NOTE]  
->  We recommend that you do not use this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
+For fields, this property only applies to text fields. In earlier versions of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the property also applied to code fields, but this has been deprecated.
 
 ## See Also  
  [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md)  
