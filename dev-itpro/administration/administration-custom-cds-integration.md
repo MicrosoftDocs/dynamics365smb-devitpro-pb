@@ -20,7 +20,7 @@ This walkthrough describes how to customize an integration between [!INCLUDE[pro
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
 
 1. Develop an AL extension to integrate entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
-2. Create an integration table object in [!INCLUDE[prodshort](../includes/prodshort.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity to a [!INCLUDE[prodshort](../(includes/prodshort.md)] record type.  
+2. Create an integration table object in [!INCLUDE[prodshort](../includes/prodshort.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity to a [!INCLUDE[prodshort](../includes/prodshort.md)] record type.  
 3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as a data source for a page in [!INCLUDE[prodshort](../includes/prodshort.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity records.  
 4. Extend a page in [!INCLUDE[prodshort](../includes/prodshort.md)] for coupling and synchronizing entity records in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prodshort](../includes/prodshort.md)].  
 5. Use events to create an integration table and a field mapping between a table in [!INCLUDE[prodshort](../includes/prodshort.md)] table and an integration table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
