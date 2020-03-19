@@ -1,6 +1,6 @@
 ---
-title: Web Service Request Trace | Microsoft Docs
-description: Learn about the web service request telemetry in Business Central  
+title: Report Generation Telemetry Trace | Microsoft Docs
+description: Learn about the report telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -14,9 +14,11 @@ ms.author: jswymer
 
 # Analyzing Report Generation Telemetry
 
+[!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
+
 Report generation telemetry gathers data about reports that are run on the service. It provides information about whether the report dataset generation succeeded, failed, or was canceled. For each report, it tells you how long it ran, how many SQL statements it executed, and how many rows it consumed.
 
-You use this data to gather statistics to help identify slow-running reports
+You use this data to gather statistics to help identify slow-running reports.
 
 ## Operation: Success report generation
 
@@ -90,11 +92,11 @@ See [Custom dimensions](#customdimensions).
 The cancellation messages indicate events that caused the report to be canceled. The telemetry can help identify slow-running reports - reports that take longer than expected to run and generate a large number of rows.
 
 > [!NOTE]
-> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds.
+> The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds. For more information, see [Report Generation and Cancellation Flow](report-cancellation.md).
 
 #### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
 
-This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be canceled. This condition isn't recommended. Reconsider the report design.
+This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be canceled. This pattern isn't recommended. Reconsider the report design.
 
 #### Cancellation event received. Requesting cancellation of the action.
 
@@ -110,7 +112,7 @@ The service is configured to cancel reports if they take longer to generate than
 
 #### The rendering of the word report has been cancelled because it took longer than the specified threshold ({0})"
 
-This message occurs when a report that based on a Word layout takes longer to generate than the specified threshold. The event is only relevant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. There's no threshold for on-premises.
+This message occurs when a report that based on a Word layout takes longer to generate than the specified threshold. The event is only relevant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. There's no timeout for on-premises.
 
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
@@ -164,6 +166,7 @@ The following table explains the CustomDimensions included in report generation 
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
@@ -195,7 +198,7 @@ Dimension|Description or value|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
+|telemetry"chemaVersio"|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.||
 -->
 ## Example trace
 

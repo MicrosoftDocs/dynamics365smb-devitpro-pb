@@ -15,10 +15,10 @@ author: ManuelaHochstrasser
 Would you like to know what has changed in update 15.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update.
 
 ## Hotfixes
-[Link to Hotfixes](https://support.microsoft.com/en-us/help/4538888)
+[Link to Hotfixes](https://support.microsoft.com/help/4538888)
 
 ## Feature changes
-- [Bookmarking a report](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-links-navigation-menu) - rollout is complete. With Update 15.4, all environments now include this feature
+- [Bookmarking a report](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-links-navigation-menu) - rollout is complete. With Update 15.4, all environments now include this feature.
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features). 
