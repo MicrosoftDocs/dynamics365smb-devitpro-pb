@@ -101,7 +101,7 @@ You must register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 -->
 
-Your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is now registered in your Azure AD tenant. To complete the steps that follow, you will need the value of domain (Azure AD Tenant ID), **Redirect URI** and **Application ID URI** when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. So, make a note of or copy the values for these settings for later use. You can view the settings in the Azure portal by selecting **Overview** for the registered application.
+Your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is now registered in your Azure AD tenant. To complete the steps that follow, you will need the value of domain (or **Directory (tenant) ID**), **Redirect URI** and **Application ID URI** when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. So, make a note of or copy the values for these settings for later use. You can view the settings in the Azure portal by selecting **Overview** for the registered application.
 
 > [!NOTE]
 > The guidelines for the Azure Portal in this article might not reflect the current user interface of the Azure Portal. Please refer to the Azure Portal documentation for the latest instructions.

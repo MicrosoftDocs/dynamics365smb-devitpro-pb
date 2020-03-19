@@ -1,7 +1,7 @@
 ---
 title: "TableType Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/27/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Specifies the table type.
 |**Normal**|Specifies the table as a normal table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This is the default value.|  
 |**CDS**|Specifies the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with [!INCLUDE[crm](../includes/crm_md.md)]. The table is typically based on an entity in [!INCLUDE[crm](../includes/crm_md.md)], such as the Accounts entity.|  
 |**ExternalSQL**|Specifies the table as a table or view in SQL Server that is not in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.|  
+|**Temporary**|Specifies the table as a temporary table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This table type is not synchronized.|
 |**Exchange**|This is for internal use only.|
 |**MicrosoftGraph**|This is for internal use only.|
 

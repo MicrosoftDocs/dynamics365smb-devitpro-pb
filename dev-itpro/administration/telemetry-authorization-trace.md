@@ -14,6 +14,9 @@ ms.author: jswymer
 
 # Analyzing Authorization Trace Telemetry
 
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
+
 Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. 
 
 Authorization signals are emitted in two stages of sign-in. The first stage is the initial authorization. In this stage, the system verifies that the user account is enabled in the tenant and has the correct entitlements. The telemetry data includes:
@@ -45,13 +48,18 @@ The following table explains the dimensions included in a **Success Authorizatio
 
 The following table explains the custom dimensions included in a **Success Authorization** signal.
 
-|Dimension|Description or value||
-|---------|-----|-----------|
+|Dimension|Description or value|
+|---------|-----|
 |authorizationStatus|**Succeeded**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.||
-|entitlementSetIds |Specifies the entitlements that the user has in Business Central.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. Currently, the version is **0.2** ||
-|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|component|**Dynamics 365 Business Central Server**.|
+|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|entitlementSetIds |Specifies the entitlements that the user has in Business Central.|
+|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
 
 ### <a name="usertype"></a> UserType
 
@@ -61,6 +69,11 @@ The following table explains the custom dimensions included in a **Success Autho
 |Internal_Admin|Indicates that the user is an internal administrator on the tenant. As an internal administrator, the user is assigned the **Global admin** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 admin center](/office365/admin/add-users/assign-admin-roles)|
 |Normal user|Indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
 
+<!--
+{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","authorizationStatus":"Succeeded","Component version":"15.0.40073.41395","Environment type":"Production","componentVersion":"15.0.40073.41395","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":", AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","aadTenantId":"36093cb7-8b61-47a2-8f12-078ce1cbbf8b","AadTenantId":"36093cb7-8b61-47a2-8f12-078ce1cbbf8b","component":"Dynamics 365 Business Central Server","entitlementSetIds":"INTERNAL_ADMIN,DYN365_FINANCIALS_BUSINESS","guestUser":"False","userType":"INTERNAL_ADMIN"}
+
+-->
+
 ## Operation: Failed Authorization (Pre Open Company)
 
 Occurs when a user sign-in in has failed authorization.
@@ -69,27 +82,37 @@ Occurs when a user sign-in in has failed authorization.
 
 The following table explains the columns included in a Success Authorization trace.
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|**Authorization steps prior to the open company trigger failed, see failureReason column for details.**||
-|severityLevel|**1**||
+|Dimension|Description or value|
+|---------|-----|
+|message|**Authorization steps prior to the open company trigger failed, see failureReason column for details.**|
+|severityLevel|**1**|
 
 <!--
 |operation_Name|**Authorization Failed (Pre Open Company)**||
 
 {"aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","Component version":"15.0.40494.0","guestUser":"False","Telemetry schema version":"0.2","failureReason":"The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.","authorizationStatus":"Failed","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","Environment type":"Production","Component":"Dynamics 365 Business Central Server","Environment name":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","componentVersion":"15.0.40494.0"}
+
+{"Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","authorizationStatus":"Failed","Component version":"15.0.40494.0","Environment name":"Production","componentVersion":"15.0.40494.0","Environment type":"Production","environmentName":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","guestUser":"False","failureReason":"The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central."}
 -->
 
 ### Custom dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
+|Dimension|Description or value|
+|---------|-----|
 |authorizationStatus|**Failed**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.||
-|entitlementSetIds|Specifies the entitlements that the user has in Business Central.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prodshort.md)] telemetry schema. ||
-|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).||
-|Failure reason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.||
+|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.|
+|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.|
+|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
+
+<!--
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|component|**Dynamics 365 Business Central Server**.|
+|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prodshort.md)] telemetry schema. |
+-->
 
 ### <a name="authorizationfailures"></a> Troubleshooting failures
 
@@ -135,10 +158,26 @@ The following table explains the columns included in a Success Authorization tra
 
 ### Custom dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|companyName|||
-|status|**Succeeded**|
+|Dimension|Description or value|
+|---------|-----|
+|authorizationStatus|**Success**|
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|component|**Dynamics 365 Business Central Server**.|
+|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|result|**Success**|
+|serverExecutionTime|Specifies the amount of time it took the server to open the company. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|sqlExecutes|Specifies the number of SQL statements that the report executed. <br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|totalTime|Specifies the amount of time it took to open the company. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+
+<!--
+{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.3","telemetrySchemaVersion":"0.3","serverExecutionTime":"00:00:07.6884757","Component version":"16.0.11208.0","Environment type":"Production","componentVersion":"16.0.11208.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","AadTenantId":"common","aadTenantId":"common","companyName":"CRONUS International Ltd.","clientType":"Background","authorizationStatus":"Success","totalTime":"00:00:07.6884757","component":"Dynamics 365 Business Central Server","result":"Success","sqlExecutes":"6","sqlRowsRead":"5"}
+-->
 
 ## Operation: Authorization Failed (Open Company)
 
@@ -148,24 +187,29 @@ Occurs when a company has failed to open.
 
 The following table explains the columns included in a Success Authorization trace.
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|**Authorization steps in the open company trigger failed, see failureReason column for details.**||
-|severityLevel|**3**||
+|Dimension|Description or value|
+|---------|-----|
+|message|**Authorization steps in the open company trigger failed, see failureReason column for details.**|
+|severityLevel|**3**|
 
 <!--
 |operation_Name|**Authorization Failed (Pre Open Company)**||
 
 
-{"Telemetry schema version":"0.2","environmentName":"Production","Component version":"15.0.40494.0","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","status":"Failed","clientType":"WebClient","telemetrySchemaVersion":"0.2","companyName":"jsco","componentVersion":"15.0.40494.0","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","Environment name":"Production","failureReason":"The user does not have permission to access the company.","component":"Dynamics 365 Business Central Server","environmentType":"Production","Environment type":"Production","Component":"Dynamics 365 Business Central Server"}-->
+{"Telemetry schema version":"0.2","environmentName":"Production","Component version":"15.0.40494.0","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","status":"Failed","clientType":"WebClient","telemetrySchemaVersion":"0.2","companyName":"jsco","componentVersion":"15.0.40494.0","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","Environment name":"Production","failureReason":"The user does not have permission to access the company.","component":"Dynamics 365 Business Central Server","environmentType":"Production","Environment type":"Production","Component":"Dynamics 365 Business Central Server"}
+
+{"telemetrySchemaVersion":"0.2","componentVersion":"15.0.40494.0","environmentName":"Production","environmentType":"Production","Telemetry schema version":"0.2","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","Component version":"15.0.40494.0","component":"Dynamics 365 Business Central Server","Environment name":"Production","Environment type":"Production","companyName":"jsco","deprecatedKeys":"AadTenantId, Environment name, Environment type, Component, Telemetry schema version","AadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","failureReason":"The user does not have permission to access the company.","status":"Failed"}
+
+-->
 
 ### Custom dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|companyName|Specifies the name of the company that the user tried to open.||
-|status|**Failed**|
-|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.||
+|Dimension|Description or value|
+|---------|-----|
+|authorizationStatus|**Failed**|
+|companyName|Specifies the name of the company that the user tried to open.|
+|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.|
+
 
 ### <a name="opencompanyfailures"></a>Troubleshooting failures
 
@@ -178,7 +222,7 @@ This message occurs when a user tries to sign in to a company whose name exceeds
 This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. If the name exceeds 30 characters, then this message occurs. Make sure that the user has the proper name of the company.
 
 <!--
-###### The product license permits working with companies that have names that start with ‘<text>’ only.
+###### The product license permits working with companies that have names that start with '<text>' only.
 
 This message occurs when a user tries to open a company whose name does not start with the text that is required by the license.
 
@@ -229,11 +273,11 @@ For delegated admins:
 Is the admin added to the tenant? (delegate admins are no listed as a user in the tenant user page in Azure) 
 Verify the partnership is valid (in the customer tenant) 
 Open portal.office.com and go to the admin page.  
-Click “Partner relationships”, then click the partner name.  
-In the properties of the partner the property “Partner Relationship” should include “Admin” 
+Click "Partner relationships", then click the partner name.  
+In the properties of the partner the property "Partner Relationship" should include "Admin" 
 Verify the user (delegated admin) is an Admin or Helpdesk agent in the partner tenant.  
 Open the Partner center  
-Go to users and verify the type of the user to be an Admin or Helpdesk agent under the property “Assist your customers as”. 
+Go to users and verify the type of the user to be an Admin or Helpdesk agent under the property "Assist your customers as". 
 For device users, were they setup correctly? See Analyze device user login issues. 
 Are the users "enabled" in the BC users page? (information available in the Cloud Manager)  
 Are the users marked expired? Were users recently exported/imported via Excel?  
