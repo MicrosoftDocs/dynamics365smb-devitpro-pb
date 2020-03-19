@@ -36,5 +36,5 @@ author: SusanneWindfeldPedersen
 - If the order has shipped, compare the customer number fields in the Rec and xRec records. If they differ, reject the change.  
 
 ## See Also  
- [AL Method Reference](methods/devenv-al-method-reference.md)   
+ [AL Method Reference](methods-auto/library.md)   
  [Properties](properties/devenv-properties.md)

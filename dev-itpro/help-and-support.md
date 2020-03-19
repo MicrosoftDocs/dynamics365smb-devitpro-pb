@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/16/2019
+ms.date: 02/05/2020
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -22,12 +22,18 @@ The functionality in the default version of [!INCLUDE[prodshort](includes/prodsh
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central docs|[/dynamics365/business-central](/dynamics365/business-central/) |Use this library to learn about business functionality. |
-> |Business Central developer and ITpro docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
+> |Business functionality docs|[/dynamics365/business-central](/dynamics365/business-central/) |Use this library to learn about business functionality. |
+> |Development and administration docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
 
 ### Customize and extend the user assistance
 
 When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)] online, or before they buy [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, they have access to tooltips that can help them get unblocked, and context-sensitive links to learn more according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize or extend [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
+
+### Product versions and Help versions
+
+In general, the [!INCLUDE [prodshort](developer/includes/prodshort.md)] content on the Docs.microsoft.com site reflects the latest version of [!INCLUDE [prodshort](developer/includes/prodshort.md)] online with limited support for earlier versions.  
+
+If you support [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality docs](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website. For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
 
 ## Support
 
@@ -42,6 +48,10 @@ You and your customers can find free eLearning content on the Microsoft Learn si
 ## Resources
 
 As a partner, you can keep on top of current and upcoming capabilities, and you can share Microsoft's roadmap with your prospects, for example. This section provides links to places to keep track of for people who are new to [!INCLUDE [prodshort](developer/includes/prodshort.md)] as well as for people who have been working with the product for years.  
+
+### Get set up as a partner
+
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
 
 ### Get started with the "Ready to Go" program
 
@@ -58,7 +68,7 @@ You can learn about current and coming capabilities through a number of differen
 > |---------|---------|---------|
 > |Release plans |[/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
 > |Business Central docs|[/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
-> |Business Central developer and ITpro docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
+> |Business Central development and administration docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
 > |The "Ready to Go" learning catalog|[/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
 
 ### Share an idea about a new feature you'd like to have
@@ -84,19 +94,35 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 
 ### Summary of where to file bugs and issues
 
-- For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
-- For Microsoft partners, for versions already in general availability and supported, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
-- For Microsoft partners who have discovered a bug in a preview or beta version, use [MS Collaborate](/collaborate/)  
+As a partner, you have different support channels depending on what type of issue you want support for. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
 
-For problems reported by your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers, use the [administration center](administration/tenant-admin-center.md) to troubleshoot and submit support requests. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
+|Issue type             |Site               |
+|-----------------------|-------------------|
+|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
+|Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
+|Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
+|Report bug in supported in-market versions of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises|The [Support for business](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=93d37907-ad94-d591-22e9-593cfa09dd3f) site|
+
+#### Non-product related questions
+
+On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
+
+|For questions related to               |Contact               |
+|---------------------------------------|----------------------|
+|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com), respectively |
+|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |The Partner Center [Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) site|
+|Payments, credit terms, checks, wire, or similar |Email [MBS Accounting](mailto:msgpar@microsoft.com) |
+|Technical issues with PSBC, PartnerSource, or Order Central|Email [IT MBS Support](mailto:itmbssup@microsoft.com)  |
+|Incentives |Email [CSA Team](mailto:mbscsa@microsoft.com)|
+|Cloud Solution Provider incentives|Email [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
+|CSA/Ocina escalations| Email [NAOC Channel Incentives Escalations](mailto:naoccies@microsoft.com) |
+|Volume licensing |The [Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email [Online Licensing](mailto:mvlohelp@microsoft.com)|
 
 ## Trials
 
 Giving prospects access to a pre-configured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
 For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online).  
-
-<!-- TODO: Describe how to customize a trial -->
 
 ## See also
 

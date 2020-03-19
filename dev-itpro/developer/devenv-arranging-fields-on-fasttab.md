@@ -8,10 +8,9 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: cb249654-c9be-482b-9a25-c26d7f229fc2
-caps.latest.revision: 44
 author: SusanneWindfeldPedersen
 ---
+
 # Field Arrangement on FastTabs
 FastTabs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allow users to find key information on a page by displaying the data in separate groups. This topic describes how individual fields are arranged on a FastTab and ways that you can change the layout. 
 

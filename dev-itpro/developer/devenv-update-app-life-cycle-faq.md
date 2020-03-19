@@ -39,7 +39,8 @@ If a tenant wants to update the apps on their tenant during the minor releases, 
 - Navigate to the **Extension Management** page.
 - Find the app and uninstall it.
 - Reinstall the app.
-- That gives you the latest available version in our service.
+
+That gives you the latest available version in our service.
 
 ## How often should I submit updates of my app?
 Our recommendation is to pack more bug fixes and features into less frequent updates. Try to avoid frequent submissions containing very few changes. Being on a more frequent cadence than Business Central (monthly) is not advised. This leads to lower churn to production tenants.
@@ -60,11 +61,11 @@ We do have a fast track validation process for situations like this. These types
 > Please ensure that you are only using this process for critical situations. Do not try to use it for minor bug fixes.
 
 ## Do you have any tips for us when submitting updates of our app?
-Yes, we have some valuable tips we would like to share. These are tips that can save you time in the validation process. They will help lead to less (and possibly zero) failures during validation. Most importantly, they will lead to less issues being found in production by customers.
+Yes, we have some valuable tips we would like to share. These are tips that can save you time in the validation process. They will help lead to fewer (and possibly zero) failures during validation. Most importantly; they will lead to fewer issues being found in production by customers.
 
 - Follow the checklist, for more information see [Technical Validation Checklist](devenv-checklist-submission.md). The checklist is ever evolving and requirements might change or be added. You might miss something from the checklist, leading to validation failure and delaying the passing of your updated app.
 - Use AppSourceCop, for more information see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md). This helps to catch any missing prefix/suffix and DataClassification. Too often we see these fail the updated versions of apps.
-- Sign your app. This fails many app validations. We try to publish the app during validation and it is not properly code signed leading to failure to publish.
+- Sign your app. This fails many app validations. We try to publish the app during validation and it is not properly code-signed leading to failure to publish.
 - Publish and install your app. This is another big validation failure we see too often.
 - Test your app’s functionality with 100% coverage. You are the expert on the app and know it best. If you are only testing a small percentage of your app, customers will most likely find issues resulting in you having to update your app more often. And if customers are the ones finding your app issues, they may decide to uninstall it. You should have a vested interest in providing a quality app.
 - Test the upgrade of your app. upgrade from the previous version to this latest. Your updated app will not pass validation until the upgrade works. If it fails in our validation, we will return it to you, leading to a delay in it going to our service.

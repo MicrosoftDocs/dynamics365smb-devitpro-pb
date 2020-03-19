@@ -2,7 +2,7 @@
 title: "Replace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/04/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

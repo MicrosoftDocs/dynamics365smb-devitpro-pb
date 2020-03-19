@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # Aggregating Data in Query Objects
 
 In a query object, you use aggregate methods to perform a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The following table outlines the available aggregate methods.  

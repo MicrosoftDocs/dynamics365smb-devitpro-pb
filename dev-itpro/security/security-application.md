@@ -30,6 +30,8 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 [Authentication and Credential Types](../administration/users-credential-types.md)
 
 [Multi-factor Authentication](multifactor-authentication.md)
+
+[Analyzing Authentication Telemetry](../administration/telemetry-authorization-trace.md)
  
 ## Authorization
 

@@ -26,21 +26,20 @@ Reports can also be used to process data without printing or displaying content.
 Creating a report involves two primary tasks. First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. After the dataset has been designed, you design the visual layout of the report. There are two types of report layouts that you can create: layouts using report definition language (RDL) and Word report layouts. 
 
 ## Getting started
- The following table includes links to help you get started with designing the reports.
+The following table includes links to help you get started with designing the reports.
 
 |To      |See      | 
 |--------|---------| 
 |Learn the overview of the report design process|[Report Design Overview](devenv-report-design-overview.md)| 
 |Understand the report structure and designing the layout for a report.|[Report Object](devenv-report-object.md)|
-|Understanding the data model and dataset of a report|[Defining a Report Dataset](devenv-report-dataset.md)|    
-|Learn how to create a report using a word layout|[Creating a Word Layout Report](devenv-howto-report-layout.md)| 
+|Understanding the data model and dataset of a report|[Defining a Report Dataset](devenv-report-dataset.md)|  
+|Learn how to create a report using a Word layout|[Creating a Word Layout Report](devenv-howto-report-layout.md)| 
 |Learn how to create a report using an RDL layout report.|[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)|
  
 
 ## See Also  
 [Report Object](devenv-report-object.md)  
 [Creating a Report](devenv-howto-report-layout.md)  
+[Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-
-
-
+[Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  

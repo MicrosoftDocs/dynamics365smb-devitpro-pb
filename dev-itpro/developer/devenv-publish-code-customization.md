@@ -3,7 +3,7 @@ title: "Publishing a Code-Customized Base Application"
 description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 01/14/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,19 +21,22 @@ This topic describes the steps and development environment configuration setting
 > [!IMPORTANT]  
 > Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
 
+> [!NOTE]  
+> The steps in this topic are not validated against a Docker environment. If you are running the on-prem installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
+
 ## Prerequisites
 Make sure to have the following prerequisites installed to be able to follow the steps in this topic.
 
-- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed.
-- Visual Studio Code.
-- The AL Language extension.
+- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed
+- Visual Studio Code
+- The AL Language extension
 
 ## To publish a code customization for Business Central on-prem
 
 1. Get the Base Application source from the `/Applications/BaseApp/Source` folder on the DVD.
 2. Unzip the *BaseApplication.source.zip* file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
 3. Next, download symbols for the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**. 
-3. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
+4. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
     ```
     ...
     field(Name; Name)
@@ -53,11 +56,11 @@ Make sure to have the following prerequisites installed to be able to follow the
     }
     ...
     ```
-4. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
+5. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
     - **Allowed Extension Target Level** is set to **OnPrem**.
     - **Enable Developer Service Endpoint** checkbox is selected.
-5. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
-6. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:
+6. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
+7. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:
     ```
     "dependencies": [
         {
@@ -73,36 +76,33 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     ```
     "al.assemblyProbingPaths": [
-        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
-        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\160",
+        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\160",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"
     ],        
     ```
 9. For improved performance when working with a large project like the Base Application, see the [Optimize Visual Studio Code Editing and Building Performance](devenv-optimize-visual-studio-code.md) topic.
 
-10. If you now try to publish the extension from Visual Studio Code you will get the following error:
+10. Next, you must uninstall all extensions from the command line. If you at this point try to just publish the extension from Visual Studio Code you will get the following error:
 
-    `The request for path /BC150/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
+    `The request for path /BC160/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
 
-    The extensions are installed in the global scope. If you want to publish an extension from Visual Studio Code, within the developer scope, you will have to first uninstall and then unpublish the extensions from the command line.
+    You get the error because the extensions are installed in the `global` scope. If you want to publish an extension from Visual Studio Code, within the `developer` scope, you will have to first uninstall and then unpublish the extensions from the command line.
 
     Ideally, you should uninstall the application that you want to update and all its dependencies. To uninstall the Base Application use the following cmdlet:<br>
-    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC150 -Force`
+    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC160 -Force`
 
     Use the `-Force` parameter to uninstall all dependencies.
 
-    Alternatively, uninstall everything using the following cmdlet.
+    > [!NOTE]  
+    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC160 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC160 -Force}`
 
-    `Get-NAVAppInfo -ServerInstance BC150 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC150 -Force}`
+11. Having uninstalled, the next step is to unpublish the application and all of its dependencies. This needs to happen before we can publish it. The following command can be used if there are no dependencies to the Base Application:
 
-11. The next step is to first unpublish the application that we want to publish and all of its dependencies.
+    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC160`
 
-    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC150`
-
-    This can give an error regarding dependencies on the Base Application. To solve this, you must unpublish all the applications with dependencies on the Base Application.
-
-    A script like the following is useful for unpublishing the app and all of its dependencies. For example, use Windows PowerShell ISE to create a new script with the following lines of code:
+    But if there are dependencies on the Base Application this will give an error. To solve this, you must unpublish all the applications with dependencies on the Base Application. This is easier to do using a script that recursively removes the dependencies. Use Windows PowerShell ISE to create a new script with the following lines of code:
 
     ```
     function UnpublishAppAndDependencies($ServerInstance, $ApplicationName)
@@ -122,19 +122,22 @@ Make sure to have the following prerequisites installed to be able to follow the
         Uninstall-NavApp -ServerInstance $ServerInstance -Name $ApplicationName -Force
         UnpublishAppAndDependencies $ServerInstance  $ApplicationName
     
-    }
+    }  
     ```
-12. Run the script you created in step 11 to handle the uninstall and unpublishing of the Base Application and dependencies.
-13. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
+12. Save the script as **unpublish.ps1**. 
+13. Run the script from the PowerShell commandline to handle the uninstall and unpublishing of the Base Application and its dependencies:
+    `.\unpublish.ps1`
+    > [!NOTE]  
+    > Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
-14. Import a license with rights to publish the extension. For example:  
+15. Import a license with rights to publish the extension. For example:  
     ```
-    Import-NAVServerLicense -ServerInstance BC150 -LicenseFile "C:\Users\mylicense.flf"
+    Import-NAVServerLicense -ServerInstance BC160 -LicenseFile "C:\Users\mylicense.flf"
     ```
 
-15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
+16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
 
-The Base Application is now published with the small customization of bolding the text in the name field on the Customer Card.
+The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 
 ## See Also
 

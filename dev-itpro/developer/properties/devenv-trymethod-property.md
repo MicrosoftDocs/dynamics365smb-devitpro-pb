@@ -21,7 +21,7 @@ Specifies the method to be try method, which can be used to catch and handle err
  AL Methods.  
   
 > [!NOTE]  
->  In test and upgrade codeunits, this property only applies to normal methods as specified by the [MethodType Property \(Test Codeunits\)](devenv-methodtype-property-test-codeunits.md) or [MethodType Property \(Upgrade Codeunits\)](devenv-methodtype-property-upgrade-codeunits.md).  
+>  In test and upgrade codeunits, this property only applies to normal methods as specified by the [Normal Attribute \(Test Codeunits\)](../methods/devenv-normal-attribute.md) or [MethodType Property \(Upgrade Codeunits\)](devenv-methodtype-property-upgrade-codeunits.md).  
   
 ## Remarks  
  Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than those thrown by the system. You can use try methods to catch errors/exceptions that thrown by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] or exceptions that are thrown during .NET Framework interoperability operations.  

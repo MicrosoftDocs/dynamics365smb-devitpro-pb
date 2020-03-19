@@ -1,8 +1,8 @@
 ---
 title: "The property 'url' must be set to a valid URL"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 12/10/2019
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

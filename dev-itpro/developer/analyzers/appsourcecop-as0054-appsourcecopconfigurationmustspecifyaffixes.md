@@ -1,8 +1,8 @@
 ---
 title: "The AppSourceCop configuration must specify the set of affixes used by the application"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 12/10/2019
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

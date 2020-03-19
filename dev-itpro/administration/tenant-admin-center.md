@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 12/06/2019
+ms.date: 12/16/2019
 ms.author: edupont
 
 ---
@@ -30,7 +30,7 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 
 Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** role in the Office 365 admin center. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Office 365 admin content.  
 
-The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles have access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*.
+The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles have access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
 
 ### Internal administrators
 
@@ -55,8 +55,12 @@ As a partner, you can access the administration center from the Partner Dashboar
 
 You can also get to the administration center by navigating directly to the URL of a tenant as described in the previous section.
 
+In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and [submit support request](manage-technical-support.md#escalating-support-issues-to-microsoft) on behalf of your customer.  
+
+From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can access your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for troubleshooting, for example.  
+
 > [!NOTE]
-> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).  
+> As a partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).  
 
 ## See also
 

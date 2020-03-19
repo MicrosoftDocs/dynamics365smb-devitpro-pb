@@ -11,8 +11,6 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Publishing Events
 The first phase of implementing an event is publishing the event. Publishing an event exposes it in the application. This provides hook up points for subscribers to register to the event, and eventually handle the event if it is raised. An event is published by adding an AL method that is specifically set up as an event publisher.  
 
@@ -83,6 +81,6 @@ codeunit 70000001 MyPublishers
 The next step would be to raise this event in the application. To see an example for how this event is raised, go to [Raising Event Example](devenv-raising-events.md#example).
 
 ## See Also  
- [Raising Events](devenv-raising-events.md)   
- [Subscribing to Events](devenv-subscribing-to-events.md)   
- [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   
+[Raising Events](devenv-raising-events.md)   
+[Subscribing to Events](devenv-subscribing-to-events.md)   
+[Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   

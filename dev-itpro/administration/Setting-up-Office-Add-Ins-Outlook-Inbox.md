@@ -47,6 +47,9 @@ If your organization uses Exchange Server or Exchange Online (alone or part of O
 	
 	If you are using Exchange Server, configure it to allow access to Exchange Web Services (EWS). For more information, see [How to: Control access to EWS in Exchange](https://msdn.microsoft.com/library/office/dn467892(v=exchg.150).aspx). 
 
+3. Upcoming releases of some browsers, such as Google Chrome 80 and Microsoft Edge, will include changes to how cookies are handled. To ensure that the Outlook add-in works with these browser versions, make sure that the Business Central platform has been upgraded to a recommended update version as described in [Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy](../administration/prepare-for-cookie-samesite-policy.md).
+
+
 ## Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
 
 You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the **Set-NAVServerConfiguration** cmdlet in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
