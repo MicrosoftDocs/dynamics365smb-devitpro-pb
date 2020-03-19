@@ -40,23 +40,7 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use **Ctrl+Shift+P** and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
-+ In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System and Base Applications found in the project under `.alpackages`. For example:
-    ```
-    "dependencies": [
-        {
-        "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-        "publisher": "Microsoft",
-        "name": "System Application",
-        "version": "16.0.10037.0"
-        },
-                {
-        "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-        "publisher": "Microsoft",
-        "name": "Base Application",
-        "version": "16.0.10037.0"
-        }
-    ],
-    ```
++ Use **F2** to rename objects, types etc. For more information, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md#Editing-in-Visual-Studio-Code).
 
 
 ## JSON file settings

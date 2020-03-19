@@ -15,14 +15,14 @@ author: ManuelaHochstrasser
 Would you like to know what has changed in update 15.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update.
 
 ## Hotfixes
-[Link to Hotfixes](https://support.microsoft.com/en-us/help/4533389)
+[Link to Hotfixes](https://support.microsoft.com/help/4533389)
 
 ## Feature changes
--	[Add the Name 2 field to customer and vendor cards](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-name-2-field-customer-vendor-cards)  
--	[Include job information in archived sales and purchase documents](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/include-job-information-archived-sales-purchase-documents)  
--	[Use VAT clauses on different document types](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/use-vat-clauses-different-document-types)  
--	[View item availability by unit of measure](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-item-availability-unit-measure)  
--	[View the number of general journal lines](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-number-general-journal-lines)  
+-    [Add the Name 2 field to customer and vendor cards](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-name-2-field-customer-vendor-cards)  
+-    [Include job information in archived sales and purchase documents](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/include-job-information-archived-sales-purchase-documents)  
+-    [Use VAT clauses on different document types](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/use-vat-clauses-different-document-types)  
+-    [View item availability by unit of measure](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-item-availability-unit-measure)  
+-    [View the number of general journal lines](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-number-general-journal-lines)  
 
 
 ## Release Plan
@@ -32,7 +32,7 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 Please note that new customers will automatically get the latest builds of Business Central (15.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
 
 ## Good to know
-Please find an overview of new “How to videos” recently published on Dynamics 365 YouTube channel for the Business users and the Functional Consultants. These videos complement the extensive [MS Learn](/learn/browse/?products=dynamics-business-central) and [Documentation](/dynamics365/business-central/index) content already available for Business Central.  
+Please find an overview of new "How to videos" recently published on Dynamics 365 YouTube channel for the Business users and the Functional Consultants. These videos complement the extensive [MS Learn](/learn/browse/?products=dynamics-business-central) and [Documentation](/dynamics365/business-central/index) content already available for Business Central.  
 
 - [How to set up a customer](https://youtu.be/2ZKLMwzcUFI)  
 - [How to adjust exchange rates](https://youtu.be/TucRBwvBJGY)  

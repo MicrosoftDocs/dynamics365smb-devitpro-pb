@@ -42,3 +42,4 @@ The following table includes links to help you get started with designing the re
 [Creating a Report](devenv-howto-report-layout.md)  
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  
