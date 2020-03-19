@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 01/23/2020
+ms.date: 03/12/2020
 ms.author: edupont
 ---
 
@@ -24,7 +24,7 @@ Internal administrators are the system administrators, IT professionals, or supe
 
 As the internal administrator, you can add users and grant permissions. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
-As an internal administrator you have **read-only** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if your organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and cancels the subscription. This ensures that you, as the internal administrator, can export relevant data, while no one else in your organization has a license to sign in and use [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+As an internal administrator you have **read-only** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if your organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and cancels the subscription. That way, you, as the internal administrator, can export relevant data, while no one else in your organization has a license to sign in and use [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
 > [!IMPORTANT]
 > You must have a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except the two mentioned above. For information about licensing, see [Microsoft Dynamics 365 Business Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
@@ -70,11 +70,14 @@ As a reselling partner, you must be the first line of support for your [!INCLUDE
 
 ## Extending trials
 
-A business can sign up for a free trial of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  
+An organization can sign up for a free trial of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  
 
-However, sometimes 30 days is not quite enough to decide if they want to buy [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In that case, they can extend their trial with an additional 30 days. For more information, see [Need More Time to Decide Whether to Subscribe?](/dynamics365/business-central/admin-extend-trial) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+However, sometimes a 30 day trial is not enough to decide if they want to buy [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In that case, they can extend their trial with an additional 30 days. For more information, see [Need More Time to Decide Whether to Subscribe?](/dynamics365/business-central/admin-extend-trial) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
-If the prospect wants to extend the trial further than those 30 days, the partner can extend it another 30 days if the administrator, acting as the delegated administrator, log into the prospect's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and extend the trial using the same **Extend Trial Period** guide. However, after those additional 30 days, the prospect must either purchase [!INCLUDE[prodshort](../developer/includes/prodshort.md)], or the partner can ask Microsoft for an additional extension of the trial by contacting Support.  
+> [!NOTE]
+> If you are a reselling partner, we recommend that you set up demo environments for prospects that need longer time to decide if they want to buy [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You can also use demo environments to help customers train their employees, for example. Using the 30 days trials for training should be limited to just that short period. For more information, see [Preparing Demonstration Environments](demo-environment.md).
+
+If the prospect wants to extend the trial further than those 30 days, they must contact a [partner](/dynamics365/business-central/across-faq#findpartner). The partner can extend it another 30 days if the delegated administrator sign into the prospect's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and run the **Extend Trial Period** guide. However, after those additional 30 days, the prospect must either purchase [!INCLUDE[prodshort](../developer/includes/prodshort.md)], or the partner can ask Microsoft for an additional extension of the trial by [contacting Microsoft Support](manage-technical-support.md#escalating-support-issues-to-microsoft).  
 
 > [!TIP]
 > As a reselling partner, you can suggest your prospects sign up for a trial, but you can also help set up a customized demonstration environment based on a sandbox environment or a trial environment. In both cases, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](demo-environment.md).  

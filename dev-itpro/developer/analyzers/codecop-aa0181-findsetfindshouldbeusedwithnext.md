@@ -2,7 +2,7 @@
 title: "The FindSet() or Find() methods must be used only in connection with the Next() method."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/21/2020
+ms.date: 03/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,44 @@ The FindSet() or Find() methods must be used only in connection with the Next() 
 Avoid getting the dataset when an enumeration is not used, which will decrease performance.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Reason for the rule
+If you use `FindSet()` or `Find()` you must have a `Next()` method. Otherwise, you are wasting CPU and bandwidth since multiple records are loaded but you only use one.
+
+## Bad code example
+```
+codeunit 1 MyCodeunit
+{
+   var
+      customer: Record Customer;
+                
+   procedure Foo()
+   begin
+      if customer.FindFirst() then
+         repeat
+         ...
+         until customer.Next() = 0;
+      end;
+}
+```
+
+## Good code example
+```
+codeunit 1 MyCodeunit
+{
+   var
+      customer : Record Customer;
+                
+   procedure Foo()
+   begin
+      if customer.FindSet() then
+         repeat
+         ...
+         until customer.Next() = 0;
+      end;
+}
+```
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

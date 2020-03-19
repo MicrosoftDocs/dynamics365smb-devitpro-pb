@@ -2,7 +2,7 @@
 title: "An enum field replacing an option field should have preserve the member ordinal values."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/21/2020
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

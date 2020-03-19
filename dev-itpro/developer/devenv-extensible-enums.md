@@ -19,15 +19,15 @@ To declare an `enum` in AL you must specify an ID and a name. The enumeration li
 ```
 enum 50121 Loyalty
 {
-	Extensible = true;
-	
-	value(0; None) { }
-	value(1; Bronze) { }
-	value(2; Silver) { }
-	value(3; Gold)
-	{
-		Caption = 'Gold Customer';
-	}
+    Extensible = true;
+    
+    value(0; None) { }
+    value(1; Bronze) { }
+    value(2; Silver) { }
+    value(3; Gold)
+    {
+        Caption = 'Gold Customer';
+    }
 }
 ```
 
@@ -44,10 +44,10 @@ Enums can be extended in order to add more values to the enumeration list in whi
 ```
 enumextension 50130 LoyaltyWithDiamonds extends Loyalty
 {
-	value(50130; Diamond)
-	{
-		Caption = 'Diamond Level';
-	}
+    value(50130; Diamond)
+    {
+        Caption = 'Diamond Level';
+    }
 }
 ```
 
@@ -66,7 +66,7 @@ Or, as a variable:
 
 ```
 var
-	LoyaltyLevel: enum Loyalty;
+    LoyaltyLevel: enum Loyalty;
 ```
 
 In code, you address a specific enum value like in the following example:
@@ -153,11 +153,15 @@ Some table fields share options that are semantically identical. In those cases 
 
 ### Conversions
 Conversion to and from `enum` is more strict than for `Options` in C/SIDE. 
+
 - An enum can be assigned/compared to an enum of the same type. 
 - To be backwards compatible we support conversion to/from any `Option` for now.
+
+For information about assigment compatibility, see [AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md).
 
 ## See Also
 [AL Data Types](datatypes/devenv-al-data-types.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)  
-[Enum Data Type](methods-auto/enum/enum-data-type.md)
+[Enum Data Type](methods-auto/enum/enum-data-type.md)  
+[AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md)  

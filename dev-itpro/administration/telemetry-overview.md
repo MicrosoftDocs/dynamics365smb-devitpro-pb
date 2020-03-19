@@ -22,10 +22,12 @@ Monitoring telemetry gives you a look at the activities and general health of yo
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
-|Operation | Description |Online/On-premises|See more|
+|Telemetry | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
+|Report Generation|Provide information about execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
+|Web Service Requests|Provide information about execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
 ## Enabling Application Insights
 
@@ -50,6 +52,11 @@ As a simple example, do the following steps:
     | take 100
     | sort by timestamp desc 
     ```
+
+## Application Insights sample code
+On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started using Application Insights. 
+
+For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
 
 ## See also
 
