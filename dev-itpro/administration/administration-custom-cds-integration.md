@@ -432,7 +432,7 @@ During the synchronization process, certain events are published and raised by c
 |OnAfterModifyRecord|Occurs after an existing destination record is modified, and can be used to perform post-modify operations such as updating related data.|  
 |OnTransferFieldData|Occurs before an existing destination field value is transferred to a source field, and can be used to perform specific transformations of data when the data types of the source and the destination field are different but can be mapped.|  
 
-For more information about how to subscribe to events, see [Subscribing to Events](Subscribing-to-Events.md). <!-- check this -->
+For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 ## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
