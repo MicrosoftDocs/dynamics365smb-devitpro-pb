@@ -45,7 +45,7 @@ Large-scale cloud services use shared resources to achieve the best possible use
 - Client connections
 - Background task execution
 
-Without limits, one tenant might be using most resources. Other tenants running on the same resources might experience slower performance. Although you can't change these limits, it's useful to be aware of them. For more information about the limits, see [Operational Limits for Business Central Online](../administration/operational-limits-online.md).
+Without limits, one tenant could use many more resources than other tenants. Other tenants running on the same resources might experience slower performance. Although you can't change these limits, it's useful to be aware of them. For more information about the limits, see [Operational Limits for Business Central Online](../administration/operational-limits-online.md).
 
 ## See Also
 
