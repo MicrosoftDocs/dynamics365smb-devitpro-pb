@@ -28,6 +28,7 @@ Specifies the table type.
 |**Exchange**|This is for internal use only.|
 |**MicrosoftGraph**|This is for internal use only.|
 
+
 ## Syntax
 ```
 TableType = CDS;
