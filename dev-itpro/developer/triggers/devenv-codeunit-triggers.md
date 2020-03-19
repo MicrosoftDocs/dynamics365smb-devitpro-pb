@@ -16,6 +16,7 @@ The following triggers apply to codeunits.
 
 |Codeunit trigger name|Runs|  
 |---------------------------|--------------|  
+|[OnRun Trigger](devenv-onrun-trigger.md)|When the codeunit is executed.|
 |[OnBeforeTestRun Trigger](devenv-onbeforetestrun-trigger.md)|Before a test method of a test codeunit is run.|  
 |[OnAfterTestRun Trigger](devenv-onaftertestrun-trigger.md)|After a test method of a test codeunit is run.|  
 |[OnCheckPreconditionsPerCompany Trigger](devenv-oncheckpreconditionspercompany-trigger.md)|Before an extension upgrade of an upgrade codeunit is run.|  

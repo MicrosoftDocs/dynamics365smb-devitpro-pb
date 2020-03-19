@@ -24,7 +24,7 @@ The structure of a page is hierarchical and breaks down in to three sections. Th
 
 Furthermore, the page has properties. Properties work in the same way for pages as they do for other [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] objects. For more information, see [Page Properties](properties/devenv-page-property-overview.md).  
 
-## Page Metadata
+## Page metadata
 For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
 
 ```
@@ -38,7 +38,7 @@ page 50102 PageName
 }
 ```
 
-### Types of Pages  
+### Types of pages  
 Which page type you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. The Role Center page is the main or home page and it helps the user focus on the most important daily tasks and activities. Other types of pages, such as list pages or card pages are typically linked from the home page for easy access. The following page types are available:  
 
 |Page type   |Description|
@@ -60,7 +60,7 @@ Which page type you choose depends on the application task that you want to supp
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
-## Page Layout
+## Page layout
 The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. 
 
 You can choose between the following `area` categories:
@@ -71,7 +71,7 @@ You can choose between the following `area` categories:
 |`FactBoxes`|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
   
-### Page Actions
+### Page actions
 
 All pages contain menu items and navigation controls called actions. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. The `actions` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. 
 
@@ -84,7 +84,7 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
 
-## Using Keywords to place Actions and Controls
+## Using keywords to place actions and controls
 You can use the following keywords in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these keywords to place actions in the ribbon. 
 
 |Keywords        |Syntax | Applies to |

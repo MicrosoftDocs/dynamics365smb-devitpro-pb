@@ -18,7 +18,7 @@ This topic shows how you can use a custom ruleset to customize the severity of d
 ## Using rulesets with code analysis
 First, create a simple project in AL. 
 1. Press **Alt + A, Alt + L** to create a new project.
-2. Open the Command Palette by using the **Ctrl+Shift+P** shortcut and choose either User Settings or Workspace Settings.
+2. Open the Command Palette by using the **Ctrl+Shift+P** shortcut and choose either **User Settings** or **Workspace Settings**.
 3. Copy the setting `al.enableCodeAnalysis` to the settings.json file and set it to `true`: `"al.enableCodeAnalysis": true`.
 4. Copy the setting `al.codeanalyzers` to the settings file and then use **Ctrl+Space** to pick from the available code analyzers. Separate the list of code analyzers with commas. For more information about the available analyzers, see [AppSourceCop](analyzers/appsourcecop.md), [CodeCop](analyzers/codecop.md), [PerTenantExtensionCop](analyzers/pertenantextensioncop.md), and [UICop](analyzers/uicop.md).
 
@@ -63,7 +63,7 @@ To create and customize a ruleset of your own, follow the next steps:
         ]
     }
     ```
-4. In your project settings set **al.ruleSetPath** to the path to the `<name>.ruleset.json` file, relative to the project root. For more information about custom rules, see [ruleset for the Code Analysis tool](devenv-rule-set-syntax-for-code-analysis-tools.md).
+4. In your project settings set **al.ruleSetPath** to the path to the `<name>.ruleset.json` file, relative to the project root. For more information about custom rules, see [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md).
 
 > [!NOTE]
 > Use the `truleset` and `trule` snippets provided by the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] to create your ruleset. The ruleset will be applied to all the analyzers enabled for the current project. For more information about selectively enabling analyzers, see [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md).
@@ -75,12 +75,13 @@ To trigger a new compilation manually, use the **Ctrl+Shift+B** shortcut to buil
 
 ## Limitations
 Changing the contents of the ruleset file will not be detected by the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To see the effects of changing the ruleset file, you can try any of the following:
+
 - Reload the window.
 - In the project settings, change the **al.ruleSetPath** setting to an invalid path. Save the settings file, change back the setting, and save it.
 <!-- - In the project settings file, make changes to one of the settings, such as **al.ruleSetPath**, and save it. You can then undo the changes. -->
 
 ## See also
-[Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)    
+[Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Development in AL](devenv-dev-overview.md)  
 [Debugging in AL](devenv-debugging.md)  

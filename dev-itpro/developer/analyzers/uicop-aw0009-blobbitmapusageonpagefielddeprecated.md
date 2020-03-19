@@ -1,8 +1,8 @@
 ---
 title: "Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 11/27/2019
+ms.date: 01/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

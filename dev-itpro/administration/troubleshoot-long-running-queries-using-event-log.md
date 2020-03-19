@@ -12,7 +12,6 @@ ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 author: SusanneWindfeldPedersen
 ---
 
-
 # Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central
 
 This article shows how you can monitor long running SQL queries in Event Viewer. You use the information determine SQL queries that are good candidates for optimization. 
@@ -22,7 +21,11 @@ This article shows how you can monitor long running SQL queries in Event Viewer.
 Identifying long running SQL queries can be a good starting point when doing a performance analysis. Open the Event Viewer and go to the Windows Logs Application.
 
 > [!NOTE]  
-> The SQL queries that exceed the set threshold will be displayed in the Application window of the Event Viewer as *Warning*. 
+> The SQL queries which exceed the set threshold will be displayed in the Application window of the Event Viewer as *Warning*. 
+
+If the value of the [SqlLongRunningThreshold](configure-server-instance.md) key was set to the default value of 1000 milliseconds, you'll see the message: "*Action completed successfully, but it took longer than the given threshold.*" for actions that took longer.
+
+To meet performance expectations in production, you can set the threshold to a different value. You can set the threshold without restarting the server instance. For more information on how to set the threshold, see [Monitoring Long Running SQL Queries using the Event Log](monitor-long-running-sql-queries-event-log.md). 
 
 If the value of the [SqlLongRunningThreshold](configure-server-instance.md) key was set to the default value of 1000 milliseconds, you'll see the message: "*Action completed successfully, but it took longer than the given threshold.*" for actions that took longer. To meet your performance expectations in production, you can set the threshold to a different value without doing a server restart. For more information, see [Monitoring Long Running SQL Queries using the Event Log](monitor-long-running-sql-queries-event-log.md). 
 
@@ -71,10 +74,11 @@ CounterInformation:
 ```
 
 ## See Also
+
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)   
 [Monitoring Long Running SQL Queries using the Event Log](monitor-long-running-sql-queries-event-log.md)  
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 [Business Central Server Administration Tool](administration-tool.md)  
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)  
-[SQL Trace](/sql/relational-databases/sql-trace/sql-trace)
+[SQL Trace](/sql/relational-databases/sql-trace/sql-trace)  
 

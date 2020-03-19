@@ -11,6 +11,9 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Creating and Altering [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases
+
+[!INCLUDE[2019_Spring](../includes/2019_Spring.md)]
+
 You can create new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases in the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] and by using the [New-NAVDatabase](https://go.microsoft.com/fwlink/?LinkID=401374) cmdlet in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
 
 >[!NOTE]

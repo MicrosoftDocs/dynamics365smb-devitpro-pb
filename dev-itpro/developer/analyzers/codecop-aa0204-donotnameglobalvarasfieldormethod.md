@@ -1,8 +1,8 @@
 ---
 title: "To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 03/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

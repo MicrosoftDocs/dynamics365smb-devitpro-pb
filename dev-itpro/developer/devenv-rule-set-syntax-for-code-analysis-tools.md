@@ -12,7 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-
 # Ruleset for the Code Analysis Tool 
 In an AL project, you can use a custom ruleset file to specify how code analysis will report the issues it encounters. Different settings can affect how rules are applied and each ruleset file name must follow the pattern `<name>.ruleset.json` to benefit from IntelliSense in Visual Studio Code.
 
