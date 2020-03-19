@@ -25,7 +25,7 @@ The following properties are used for integrating with Common Data Service:
 |-----------|------------|-------------|
 |[TableType Property](properties/devenv-tabletype-property.md)|Tables |Specifies the table type. This enables the table to integrate with the external database. For example, `CDS`. |
 |[ExternalName Property](properties/devenv-externalname-property.md)|Tables, Fields|Specifies the name of the original table in the external database when used as a table property.</br> <br>Specifies the field name of the corresponding field specified in the external table when used as a field property.</br> | 
-|[ExternalAccess Property](properties/devenv-externalaccess-property.md)|Fields|Specifies the access to the underlying Common Data Service entity when Common Data Service tables are generated using the **AL Table Proxy Generator** tool, see [AL Proxy Table Generator](devenv-al-proxy-table-generator.md)|
+|[ExternalAccess Property](properties/devenv-externalaccess-property.md)|Fields|Specifies the access to the underlying Common Data Service entity when Common Data Service tables are generated using the **AL Table Proxy Generator** tool, see [AL Proxy Table Generator](devenv-al-table-proxy-generator.md)|
 |[ExternalType Property](properties/devenv-externaltype-property.md)|Fields|Specifies the data type of the corresponding field in the Common Data Service table. |
 |[OptionMembers Property](properties/devenv-optionstring-property.md)|Fields|Sets the option values for a field, text box, or variable. | 
 |[OptionOrdinalValues Property](properties/devenv-optionordinalvalues-property.md)|Fields|Specifies the list of option values. You can set this property, if the **ExternalType** is set to **Picklist**.| 
@@ -69,4 +69,4 @@ table 50100 SalesIntegration
 ## See Also
 [Table Properties](properties/devenv-table-properties.md)  
 [TableType Property](properties/devenv-tabletype-property.md)  
-[AL Proxy Table Generator](devenv-al-proxy-table-generator.md)  
+[AL Proxy Table Generator](devenv-al-table-proxy-generator.md)  
