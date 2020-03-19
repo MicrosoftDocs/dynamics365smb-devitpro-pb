@@ -38,7 +38,7 @@ For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../d
 
 ## Operational Limits
 
-Large-scale cloud services use shared resources to achieve the best possible use of resources – like IO, CPU, and memory. To ensure that tenants run smoothly, limits are applied to various operations. These limits control things like size, rates, and time. Some of the operations include:
+Large-scale cloud services use shared resources to achieve the best possible use of resources – like IO, CPU, and memory. To ensure that tenants run smoothly, limits are applied to various operations. These limits control things like: how long an operation can run before being canceled, or how many operations can run at the same time. Some of the operations include:
 
 - Web service requests
 - Report and query generation
