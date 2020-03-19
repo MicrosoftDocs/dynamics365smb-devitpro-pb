@@ -2,7 +2,7 @@
 title: "Count Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,7 +55,7 @@ var
     MyRecordRef: RecordRef;
     varTableNo: Integer;
     Count: Integer;
-    Text000: TextConst ENU='The number of records in the %1 table is: %2.';
+    Text000: Label 'The number of records in the %1 table is: %2.';
 begin
     varTableNo := 18;  
     MyRecordRef.OPEN(varTableNo);  

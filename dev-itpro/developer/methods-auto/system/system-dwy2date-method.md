@@ -2,7 +2,7 @@
 title: "DWY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,7 +57,7 @@ var
     Week: Integer;
     Year: Integer;
     OutputDate: Date;
-    Text000: TextConst ENU ="Day %1 of week %2 in the year %3 is the date %4.";  
+    Text000: Label"Day %1 of week %2 in the year %3 is the date %4.";  
 begin
     DayOfWeek := 1;  
     Week := 1;  
@@ -82,7 +82,7 @@ var
     Week: Integer;
     Year: Integer;
     OutputDate: Date;
-    Text000: TextConst ENU ="Day %1 of week %2 in the year %3 is the date %4.";  
+    Text000: Label"Day %1 of week %2 in the year %3 is the date %4.";  
 begin
     DayOfWeek := 1;  
     Week := 1;  
@@ -106,7 +106,7 @@ var
     DayOfWeek: Integer;
     Week: Integer;
     OutputDate: Date;
-    Text000: TextConst ENU ="Day %1 of week %2 is the date %3."; 
+    Text000: Label"Day %1 of week %2 is the date %3."; 
 begin
     DayOfWeek := 1;  
     Week := 1;  

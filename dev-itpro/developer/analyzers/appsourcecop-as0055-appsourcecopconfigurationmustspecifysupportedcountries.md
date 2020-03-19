@@ -1,8 +1,8 @@
 ---
 title: "The AppSourceCop configuration must specify the list of countries targeted by the application"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 02/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,13 @@ The AppSourceCop configuration must specify the list of countries targeted by th
 The AppSourceCop configuration must specify the list of countries targeted by the application.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+In the AppSourceCop.json file specify the setting as shown in the example below:
+```
+"supportedCountries": ["DE", "AT"];
+```
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -113,5 +113,6 @@ This topic lists properties that apply to the query object.
 
 ## See Also  
 [Properties](devenv-properties.md)  
+[Query Object](../devenv-query-object.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  
 [Page and Page Extension Properties Overview](devenv-page-property-overview.md)

@@ -25,19 +25,19 @@ Choose which contact options that you want to include
 - SalesForce
 
 > [!TIP]  
-> *Example:* of the completed screenshot fields (cf. point 21) in the “Customer Support” section of the Cloud partner portal:
+> *Example:* of the completed screenshot fields (cf. point 21) in the "Customer Support" section of the Cloud partner portal:
 
 ## <a name="Localization"></a>Localization Apps
 
-> [!TIP]
-Learn how [Development of a Localization Solution.](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization)
+> [!TIP]  
+Learn how [Development of a Localization Solution.](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization)
 
 ## <a name="Connect"></a>Connect Apps
 
-> [!TIP]
-Learn how [Developing Connect Apps for Dynamics 365 Business Central.](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) 
+> [!TIP]  
+Learn how [Developing Connect Apps for Dynamics 365 Business Central.](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) 
 
 ## <a name="ConsultingServices"></a>Consulting Services App
 
-> [!TIP]
-Learn how [AppSource Consulting Services.](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-consulting) 
+> [!TIP]  
+Learn how [AppSource Consulting Services.](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-consulting) 

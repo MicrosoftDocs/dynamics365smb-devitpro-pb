@@ -2,7 +2,7 @@
 title: "ChangeCompany Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,7 +59,7 @@ This example shows how to use the **CHANGECOMPANY** method. The following code t
 var
     RecID: RecordID;
     MyRecordRef: RecordRef;
-    Text000: TextConst ENU='Record to be deleted: %1';
+    Text000: Label 'Record to be deleted: %1';
 begin
     MyRecordRef.OPEN(18);  
     MyRecordRef.CHANGECOMPANY('Company B');  

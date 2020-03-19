@@ -2,7 +2,7 @@
 title: "Value Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,7 +55,7 @@ var
     CustomerRecRef: RecordRef;
     MyFieldRef: FieldRef;
     CustomerNo: Code;
-    Text000: TextConst ENU='Customer name has changed to %1.';
+    Text000: Label 'Customer name has changed to %1.';
 begin
     CustomerNo := '50000';  
     CustomerRecref.OPEN(18);  

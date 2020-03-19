@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # Aggregating Data in Query Objects
 
 In a query object, you use aggregate methods to perform a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The following table outlines the available aggregate methods.  
@@ -24,7 +25,7 @@ In a query object, you use aggregate methods to perform a calculation on the fie
   
 ## Setting up an aggregate method for a query column
 
-Except for the `Count` method, you can only use an aggregate method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of `Decimal`, `Integer`, `BigInteger`, or `Duration`. To set up an aggregate on a column, you set the column's `Method` property.
+Except for the `Count` method, you can only use an aggregate method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of [Decimal](methods-auto/decimal/decimal-data-type.md), [Integer](methods-auto/integer/integer-data-type.md), [BigInteger](methods-auto/biginteger/biginteger-data-type.md), or [Duration](methods-auto/duration/duration-data-type.md). To set up an aggregate on a column, you set the column's [Method Property](properties/devenv-method-property.md).
 
 ```
 column(Name; Field)
@@ -33,7 +34,7 @@ column(Name; Field)
 }
 ```
 
-Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROPED BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL).
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROUPED BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
 
 The aggregate methods and grouping are further explained in the following sections.  
   
@@ -68,7 +69,7 @@ query 50101 "Customer_Sales_Quantity"
                 column(Qty; Quantity)
                 {
                     // Change the value of the property to perform a different aggregate method on grouped columns: Sum, Average, Max, Min, or Count
-                    //Method = Sum;
+                    Method = Sum;
                 }
             }
         }
@@ -87,7 +88,7 @@ The following table represents a simplified version of the resulting dataset for
 |20000|Selangorian Ltd.|400|  
 |30000|Blanemark Hifi|350|  
   
-The following sections explain how you can modify the query to implement the different aggregate methods by simple changing the value of the `Method` property. 
+The following sections explain how you can modify the query to implement the different aggregate methods by simple changing the value of the [Method property](properties/devenv-method-property.md). 
   
 ##  <a name="Sum"></a> Sum
 
@@ -212,11 +213,11 @@ FROM Customer INNER JOIN "Sales Line"
   ON Customer."No." = "Sales Line"."Sell-to Customer No."  
 GROUP BY Customer."No.", Customer.Name  
 ```  
-  
+
 ## See Also
 
 [Method Property](properties/devenv-Method-Property.md)  
  [Query Object](devenv-query-object.md)  
  [Filtering Queries](devenv-query-filters.md)  
  [Aggregating Data](devenv-query-totals-grouping.md)  
-[Aggregate Functions (Transact-SQL)](https://docs.microsoft.com/sql/t-sql/functions/aggregate-functions-transact-sql)  
+[Aggregate Functions (Transact-SQL)](/sql/t-sql/functions/aggregate-functions-transact-sql)  

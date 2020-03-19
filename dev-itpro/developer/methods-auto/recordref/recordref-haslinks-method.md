@@ -2,7 +2,7 @@
 title: "HasLinks Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,7 @@ var
     CustomerRecref: RecordRef;
     MyFieldRef: FieldRef;
     varHasLinks: Boolean;
-    Text000: TextConst ENU='Does this record have one or more links? %1.';
+    Text000: Label 'Does this record have one or more links? %1.';
 begin   
     CustomerRecref.OPEN(18);  
     MyFieldRef := CustomerRecref.FIELD(1);  

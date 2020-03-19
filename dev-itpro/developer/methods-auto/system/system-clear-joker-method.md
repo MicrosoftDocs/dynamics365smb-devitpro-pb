@@ -2,7 +2,7 @@
 title: "Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,9 +61,9 @@ For an Automation object, **CLEAR** releases the Automation object and decreases
 
 ```  
 var
-    Text000: TextConst ENU='Joe Raybon';
-    Text001: TextConst ENU='Initially the variable "Name" contains: >;%1\>';
-    Text002: TextConst ENU='After using CLEAR, the variable "Name" contains: >;%1\>';
+    Text000: Label 'Joe Raybon';
+    Text001: Label 'Initially the variable "Name" contains: >;%1\>';
+    Text002: Label 'After using CLEAR, the variable "Name" contains: >;%1\>';
 begin
     Name := Text000;  
     MESSAGE(Text001, Name);  
@@ -93,12 +93,12 @@ var
 
 ```  
 var 
-    Text000: TextConst ENU='My Text';
-    Text001: TextConst ENU='Initially the variable "MyTextVar" contains >;%1> and "GuidVar" is defined as >;%2>';
-    Text002: TextConst ENU='After using CLEAR(MyTextVar), the variable "MyTextVar" contains >;%1> and "GuidVar" is still defined as >;%2>';
-    Text003: TextConst ENU='After using CLEAR(GuidVar) the variable "GuidVar" becomes undefined';
-    Text004: TextConst ENU='Giving the "MyTextVar" variable the initial value again and creating a new "GuidVar" results in >;%1> and >;%2>';
-    Text005: TextConst ENU='Using CLEARALL results in an empty "MyTextVar" >;%1> and an undefined "GuidVar"';
+    Text000: Label 'My Text';
+    Text001: Label 'Initially the variable "MyTextVar" contains >;%1> and "GuidVar" is defined as >;%2>';
+    Text002: Label 'After using CLEAR(MyTextVar), the variable "MyTextVar" contains >;%1> and "GuidVar" is still defined as >;%2>';
+    Text003: Label 'After using CLEAR(GuidVar) the variable "GuidVar" becomes undefined';
+    Text004: Label 'Giving the "MyTextVar" variable the initial value again and creating a new "GuidVar" results in >;%1> and >;%2>';
+    Text005: Label 'Using CLEARALL results in an empty "MyTextVar" >;%1> and an undefined "GuidVar"';
 begin
     MyTextVar : Text000;  
     GuidVar := CREATEGUID();  

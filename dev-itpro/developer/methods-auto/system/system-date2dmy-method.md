@@ -2,7 +2,7 @@
 title: "Date2DMY Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,7 @@ var
     Day: Integer;
     Month: Integer;
     Year: Integer;
-    Text000: TextConst ENU='Today is day %1 of month %2 of the year %3.';
+    Text000: Label 'Today is day %1 of month %2 of the year %3.';
 begin
     InputDate := TODAY;  
     Day := DATE2DMY(InputDate,1);  

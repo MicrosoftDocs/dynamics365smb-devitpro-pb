@@ -2,7 +2,7 @@
 title: "PadStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,12 +58,12 @@ var
     Str2: Text[30];
     Len1: Integer;
     Len2: Integer;
-    Text000: TextConst ENU='13 characters';
-    Text001: TextConst ENU='Four';
-    Text002: TextConst ENU='Before PADSTR is called:\\';
-    Text003: TextConst ENU='>%1< has the length %2\\';
-    Text004: TextConst ENU='>%3< has the length %4\\';  
-    Text005: TextConst ENU='After PADSTR is called:\\';    
+    Text000: Label '13 characters';
+    Text001: Label 'Four';
+    Text002: Label 'Before PADSTR is called:\\';
+    Text003: Label '>%1< has the length %2\\';
+    Text004: Label '>%3< has the length %4\\';  
+    Text005: Label 'After PADSTR is called:\\';    
 begin
     Str1 := Text000;  
     Str2 := Text001;  

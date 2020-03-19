@@ -2,7 +2,7 @@
 title: "WritePermission Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +56,7 @@ var
     MyRecordRef: RecordRef;
     varTableNo: Integer;
     varHasWritePerm: Boolean;
-    Text000: TextConst ENU='Does the %1 table have write permission? %2';
+    Text000: Label 'Does the %1 table have write permission? %2';
 begin  
     varTableNo := 18;  
     MyRecordRef.OPEN(varTableNo);  

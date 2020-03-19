@@ -2,7 +2,7 @@
 title: "FieldExist Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ var
     MyRecordRef: RecordRef;
     i: Integer;
     VarFieldName: FieldRef;
-    Text000: TextConst ENU='The %1 table contains %2 field\(s\).\\';
+    Text000: Label 'The %1 table contains %2 field\(s\).\\';
 begin  
     MyRecordRef.OPEN(18);  
     for i := 1 to 12 do begin  

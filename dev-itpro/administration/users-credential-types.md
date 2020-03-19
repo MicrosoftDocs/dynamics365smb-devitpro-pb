@@ -36,7 +36,7 @@ An on-premises deployment of [!INCLUDE[prodshort](../developer/includes/prodshor
 |**ExchangeIdentity and TaskScheduler**| For internal use only. Do not use.|
 
 > [!IMPORTANT]  
->  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [Walkthrough: Configuring Web Services to Use SSL \(SOAP and OData\)](/dynamics-nav/Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData-.md) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
+>  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [How to: Implement Security Certificates in a Production Environment](/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment.md) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
 ### Configuring the Credential Type for Client and Server  
 For on-premises deployment, you must make sure that clients and [!INCLUDE[server](../developer/includes/server.md)] are configured to use the same credential type.  
@@ -47,9 +47,10 @@ When you change the credential type for a [!INCLUDE[server](../developer/include
 
 To edit the configuration for the [!INCLUDE[server](../developer/includes/server.md)] instance, you can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you configure the credential type in the **Credential Type** field on the **General** tab. Alternatively, you can edit the CustomSettings.config file. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
 
+<!--
 > [!IMPORTANT]  
 >  When [!INCLUDE[server](../developer/includes/server.md)] services are deployed on Azure but not as part of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you must configure them on Azure. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](/dynamics-nav/How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
-
+-->
 #### Client Configuration
 
 In the relevant configuration file, find the **ClientServicesCredentialType** parameter and change the value to one of the options listed earlier.  
@@ -65,5 +66,4 @@ With UserName, NavUserPassword, and AccessControlService credential types requir
 
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
 [Configuring Business Central Server](configure-server-instance.md)  
-<!--[Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview.md)-->  
-[]
+<!--[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md)-->  

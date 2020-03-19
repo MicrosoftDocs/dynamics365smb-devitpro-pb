@@ -36,24 +36,24 @@ A *profile* is the mechanism that makes a Role Center and its associated pages a
 
 On top of the profile are *page customizations*. Page customizations modify the layout of elements on specific pages. For example, you can move or hide actions, fields, columns on list, or entire parts; exactly the same modifications that can be done using personalization. The page customizations will be seen by all users of the profile. Like profiles, page customizations can be made in AL as part of an extension or from the client by modifying the profile. Customizations that are made from the client will take precedence over the customizations in AL. <!--Page customizations are substractive between layers. This means, for example, if an element such as an action or part is removed at by an extension, it cannot be added by customizing the profile in the client or by personalization.-->
 
-For more information about profiles and page customization in AL, see [Designing Profiles](devenv-design-profiles.md). For information about using the client, [Customizing the Workspace for Profiles (Roles)](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-manage?) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+For more information about profiles and page customization in AL, see [Designing Profiles](devenv-design-profiles.md). For information about using the client, [Customizing the Workspace for Profiles (Roles)](/dynamics365/business-central/ui-personalization-manage?) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 <!--
 
 - In AL code, profiles are created by using the [profile object](devenv-profile-object.md).
-- In the client, profiles are managed from the **Profiles** page. For more information, see [Understanding Users, Roles, and Profiles](https://docs.microsoft.com/dynamics365/business-central/admin-users-profiles-roles) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+- In the client, profiles are managed from the **Profiles** page. For more information, see [Understanding Users, Roles, and Profiles](/dynamics365/business-central/admin-users-profiles-roles) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 <!--
 ## Page customizations
 
 
 - In AL code, you create extension-based page customizations by using the [page customization object](devenv-page-customization-object.md).
-- In the client, you create page customizations for profiles from the **Profiles** page. For more information, see [Customizing the Workspace for Profiles (Roles)](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-manage) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+- In the client, you create page customizations for profiles from the **Profiles** page. For more information, see [Customizing the Workspace for Profiles (Roles)](/dynamics365/business-central/ui-personalization-manage) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 -->
 ## Personalization
 
-The last layer of customization is personalization. This is done strictly in the client by end-users for customizing their own workspaces. The changes that users make take precedent over page customizations made on the profile. The changes will only be seen by the user; not other users.  For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-user) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+The last layer of customization is personalization. This is done strictly in the client by end-users for customizing their own workspaces. The changes that users make take precedent over page customizations made on the profile. The changes will only be seen by the user; not other users.  For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 <!--
 ## Using the client to create AL profiles and page customizations

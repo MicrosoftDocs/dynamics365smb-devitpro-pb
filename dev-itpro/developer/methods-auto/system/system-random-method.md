@@ -2,7 +2,7 @@
 title: "Random Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +56,7 @@ var
     Number1: Integer;
     Number2: Integer;
     Number3: Integer;
-    Text000: TextConst ENU='Number1 = %1, Number2 = %2, Number3 = %3';
+    Text000: Label 'Number1 = %1, Number2 = %2, Number3 = %3';
 begin
     x := 100; // x is assigned a positive value.  
     y := -100; // y is assigned a negative value.  

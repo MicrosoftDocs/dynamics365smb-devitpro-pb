@@ -49,6 +49,7 @@ In countries where Microsoft has not delivered a localization, partners can buil
 |Indonesia|en-US|
 |Japan|ja-JP|
 |Malaysia|en-US|
+|Philippines|en-US|
 |Poland|pl-PL|
 |Portugal|pt-PT|
 |Serbia|sr-latn-RS|
@@ -58,6 +59,7 @@ In countries where Microsoft has not delivered a localization, partners can buil
 |Taiwan|zh-TW|
 |Thailand|en-US|
 |United Arab Emirates|en-US|
+|Vietnam|en-US|
 
 ## Planned Future Availability
 
@@ -74,8 +76,6 @@ Due to the nature of the joint effort where Microsoft is providing the internati
 |Latvia|lv-LV|2020 Wave 1|
 |Slovenia|sl-SI|2020 Wave 1|
 |Peru|es-ES|2020 Wave 1|
-|Philippines|en-US|November 2019|
-|Vietnam|en-US|November 2019|
 
 ## See Also
 

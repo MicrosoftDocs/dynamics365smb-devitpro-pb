@@ -2,7 +2,7 @@
 title: "SetPosition Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,8 +45,8 @@ var
     MyRecordRef: RecordRef;
     InputString: Text;
     MyFieldRef: FieldRef;
-    Text000: TextConst ENU='The record No. before the primary key was changed is %1.\\ The vendor name before the primary key was changed is %2.';
-    Text001: TextConst ENU='The record No. after the primary key was changed is %1. \\ The vendor name after the primary key was changed is %2';
+    Text000: Label 'The record No. before the primary key was changed is %1.\\ The vendor name before the primary key was changed is %2.';
+    Text001: Label 'The record No. after the primary key was changed is %1. \\ The vendor name after the primary key was changed is %2';
 begin   
     InputString := 'No.=CONST(20001)';  
     MyRecordRef.OPEN(23);  

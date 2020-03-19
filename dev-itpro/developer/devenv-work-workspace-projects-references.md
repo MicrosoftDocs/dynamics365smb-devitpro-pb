@@ -1,6 +1,6 @@
 ---
 title: "Working with Multiple Projects and Project References"
-description: "Handling solutions in the AL language that contains multiple projects in one VS Code folder and contains references between these projects."
+description: "Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects."
 author: SusanneWindfeldPedersen
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -24,7 +24,7 @@ In the example below, the project called **Leaf** defines two dependencies to th
 The advantage of working with project references is that there is no need to download the symbols for a project reference. They are there as the symbols for the reference project and will be resolved as they are modified. For example, if you add a new method to a codeunit in the **Root** project and reference the codeunit in the **Leaf** project, the method will automatically resolve as you touch the **Leaf** project.
 
 When a project is built with **Ctrl+Shift+B** the following will happen:
-1. The .app file is copied to the .alpackages folder of all projects that depend on it.
+1. The .app file is copied to the `.alpackages` folder of all projects that depend on it.
 2. All project references that might be "dirty" are also built.
 
 > [!NOTE]  

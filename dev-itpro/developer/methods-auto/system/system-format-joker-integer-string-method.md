@@ -2,7 +2,7 @@
 title: "Format Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -83,7 +83,7 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 
 ```  
 var
-    Text000: TextConst ENU='The formatted value >%1<';
+    Text000: Label 'The formatted value >%1<';
 begin
     MESSAGE(Text000, FORMAT(-123456.78, 12, 3));  
     MESSAGE(Text000, FORMAT(-123456.78, 12, '<Standard Format,3>'));  
@@ -112,7 +112,7 @@ On a computer that has the regional format set to Danish \(Denmark\), the messag
 This example shows how to use a string to build a format.
 ```  
 var
-    Text000: TextConst ENU='Today is %1';
+    Text000: Label 'Today is %1';
 begin 
     MESSAGE(Text000, FORMAT(TODAY,0,'<Month Text> <Day>'));  
 end;

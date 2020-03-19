@@ -2,7 +2,7 @@
 title: "GetPosition Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ The name or number of the field that contains the primary key.
 var
     RecRef: RecordRef;
     varPrimaryKey: Text;
-    Text000: TexConst ENU='The primary key is: %1.';
+    Text000: Label 'The primary key is: %1.';
 begin    
     RecRef.OPEN(DATABASE::Customer);  
     varPrimaryKey := RecRef.GETPOSITION(TRUE);  

@@ -2,7 +2,7 @@
 title: "TopNumberOfRows Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -112,7 +112,7 @@ codeunit 50100 MyQueryTop10
     var
         MyQuery: Query "Customer_Sales_Quantity";
         Counter: Integer;
-        Text000: TextConst ENU = 'count %1.';
+        Text000: Label 'count %1.';
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "ImportFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -77,7 +77,7 @@ With these tasks in place, you can add the following AL code for importing the i
     itemRec: Record Item;
     count: Integer;
     mediasetId: GUID;
-    Text000: TextConst ENU='The files have been imported. Item %1 has %2 pictures in MediaSet: %3';
+    Text000: Label 'The files have been imported. Item %1 has %2 pictures in MediaSet: %3';
 begin
     itemRec.Get('1000');
     itemRec.Picture.ImportFile('C:\images\1000-v1.jpg', 'Demo image for item ' + Format(itemRec."No."));

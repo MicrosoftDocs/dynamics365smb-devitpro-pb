@@ -2,7 +2,7 @@
 title: "TextBuilder Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,9 +38,14 @@ The following methods are available on instances of the TextBuilder data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-> [!NOTE]  
-> For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data.
+## Remarks
+The **TextBuilder** data type is one-based indexed, that is, the indexing begins with 1.
+
+The [Text Data Type](..\text\text-data-type.md) is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a [Text Data Type](..\text\text-data-type.md) can be costly.  
+
+The **TextBuilder** data type is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using **TextBuilder** data type can boost performance when concatenating many strings together in a loop.
 
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[Text Data Type](..\text\text-data-type.md) 

@@ -2,7 +2,7 @@
 title: "Confirm Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,8 +57,8 @@ var
     Question: Text;
     Answer: Boolean;
     CustomerNo: Integer;
-    Text000: TextConst ENU='Exit without saving changes to customer %1?';
-    Text001: TextConst ENU='You selected %1.';
+    Text000: Label 'Exit without saving changes to customer %1?';
+    Text001: Label 'You selected %1.';
 begin
     CustomerNo := 01121212;  
     Question := Text000;  

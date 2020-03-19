@@ -2,7 +2,7 @@
 title: "SetView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,7 @@ The string format is the same as the SourceTableView property on pages.
 var
     CustomerRecRef: RecordRef;
     ViewString: Text;
-    Text000: TextConst ENU='The following is the current sort order, key, and filters that are set: %1';
+    Text000: Label 'The following is the current sort order, key, and filters that are set: %1';
 begin   
     CustomerRecRef.OPEN(18);  
     CustomerRecRef.SETVIEW('SORTING(Name) ORDER(Ascending) WHERE(No.=CONST(10000..20000))');  

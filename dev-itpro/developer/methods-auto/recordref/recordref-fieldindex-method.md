@@ -2,7 +2,7 @@
 title: "FieldIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,9 +50,9 @@ var
     SalesInvHdr: RecordRef;
     FldRef: FieldRef;
     Str: Text[1024];
-    Text001: TextConst ENU='Index 1: %1\\';
-    Text002: TextConst ENU='Index 2: %2\\';
-    Text003: TextConst ENU='Index 3: %3';
+    Text001: Label 'Index 1: %1\\';
+    Text002: Label 'Index 2: %2\\';
+    Text003: Label 'Index 3: %3';
 begin
     SalesInvHdr.OPEN(112);  
     FldRef1 := SalesInvHdr.FIELDINDEX(1);  

@@ -2,7 +2,7 @@
 title: "Today Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ You can only use the **TODAY** method to retrieve the current date from the oper
  
 ```  
 var
-    Text000: TextConst ENU='The current date is: %1';
+    Text000: Label 'The current date is: %1';
 begin
     MESSAGE(Text000, TODAY);  
 end;

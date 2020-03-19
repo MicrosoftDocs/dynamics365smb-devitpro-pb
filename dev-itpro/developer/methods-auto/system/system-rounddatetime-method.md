@@ -2,7 +2,7 @@
 title: "RoundDateTime Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,7 +60,7 @@ The rounded result.
  
 ```  
 var
-    Text000: TextConst ENU='ROUNDDATETIME(%1, %2) returns %3.';
+    Text000: Label 'ROUNDDATETIME(%1, %2) returns %3.';
 begin
     DateToRound := 20081127D;  
     TimeToRound := 093524.567T;  

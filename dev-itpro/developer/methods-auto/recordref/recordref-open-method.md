@@ -2,7 +2,7 @@
 title: "Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,7 +58,7 @@ var r : record 2000000006;
 ```  
 var
     MyRecordRef: RecordRef;
-    Text000: TextConst ENU='The %1 table contains %2 records.'; 
+    Text000: Label 'The %1 table contains %2 records.'; 
 begin    
     MyRecordRef.OPEN(DATABASE::Customer);  
     MESSAGE(Text000, MyRecordRef.CAPTION, MyRecordRef.COUNT);  

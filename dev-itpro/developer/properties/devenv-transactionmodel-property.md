@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method.  
 
 ## Applies To  
- AL test methods on test codeunits. A test codeunit is a codeunit that has the [SubType Property \(Codeunit\)](devenv-subtype-property-codeunit.md) set to **Test**.  
+ AL test methods on test codeunits. A test codeunit is a codeunit that has the [SubType Property \(Codeunit\)](devenv-subtype-codeunit-property.md) set to **Test**.  
 
  The TransactionModel property applies to both test methods that use TestPages and test methods that do not use TestPages.  
 
@@ -26,11 +26,11 @@ Specifies whether data is committed to the database during execution of a test m
 
 |Value|Description|  
 |-----------|-----------------|  
-|AutoCommit|A commit is issued at the end of the test method. If an error occurs during the test method, then the transaction is rolled back. If an error occurs and you catch it with an **ASSERTERROR** statement, then the transaction is rolled back. If the code that is being tested calls the COMMIT Method (\Database\) before an error occurs, then the transaction is rolled back only to the point at which the **COMMIT** was called.<br /><br /> **AutoCommit** is the default value.|  
-|AutoRollback|The transaction is rolled back after test execution. Calls to the **COMMIT** method during a test that is set to **AutoRollback** fail with an error.|  
+|AutoCommit|A commit is issued at the end of the test method. If an error occurs during the test method, then the transaction is rolled back. If an error occurs and you catch it with an **ASSERTERROR** statement, then the transaction is rolled back. If the code that is being tested calls the [COMMIT Method](../methods-auto/database/database-commit-method.md) before an error occurs, then the transaction is rolled back only to the point at which the [COMMIT Method](../methods-auto/database/database-commit-method.md) was called.<br /><br /> **AutoCommit** is the default value.|  
+|AutoRollback|The transaction is rolled back after test execution. Calls to the [COMMIT Method](../methods-auto/database/database-commit-method.md) during a test that is set to **AutoRollback** fail with an error.|  
 |None|Used primarily with TestPages. The test method does not have an open write transaction; therefore, it cannot write to the database. Each interaction with the database occurs through TestPage triggers, which open their own write transactions. At the end of each trigger, if no errors occurred, then any changes are committed to the database. If an error occurred, then changes are rolled back at the end of the transaction.|  
 
-##Syntax
+## Syntax
 ```
 [TransactionModel(TransactionModel::AutoRollback)]
 ```
@@ -40,7 +40,7 @@ Specifies whether data is committed to the database during execution of a test m
 
  When you create test methods that exercise pages that interact with the database, you have the following options for simulating user scenarios and then returning the database to its initial, well-known state:  
 
--   Set the **TransactionModel** property on the test method to **AutoRollback**. This assumes that the code that you test does not include calls to the **COMMIT** method. Any calls to the **COMMIT** method give you an error. Most business logic does not call the **COMMIT** method, but relies on implicit commits at the end of the outermost AL trigger. The test proceeds as follows:  
+-   Set the **TransactionModel** property on the test method to **AutoRollback**. This assumes that the code that you test does not include calls to the [COMMIT Method](../methods-auto/database/database-commit-method.md). Any calls to the [COMMIT Method](../methods-auto/database/database-commit-method.md) give you an error. Most business logic does not call the [COMMIT Method](../methods-auto/database/database-commit-method.md), but relies on implicit commits at the end of the outermost AL trigger. The test proceeds as follows:  
 
     1.  The test method starts a transaction.  
 
@@ -52,7 +52,7 @@ Specifies whether data is committed to the database during execution of a test m
 
     5.  After the test method is completed, the transaction is rolled back and the database is returned to its initial state.  
 
--   If the code that you test includes calls to the **COMMIT** method, then set the **TransactionModel** property on the test method to **AutoCommit**. The test proceeds as follows:  
+-   If the code that you test includes calls to the [COMMIT Method](../methods-auto/database/database-commit-method.md), then set the **TransactionModel** property on the test method to **AutoCommit**. The test proceeds as follows:  
 
     1.  The test method starts a transaction.  
 

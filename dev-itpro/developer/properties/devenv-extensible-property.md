@@ -19,14 +19,16 @@ Sets a value that indicates whether a table, page, or enum can be extended. If t
 
 ## Applies To  
 
--   Tables
--   Pages
--   Enums
+- Tables
+- Pages
+- Enums
 
 ## Property Value  
+
 **True** if the table, page, or enum can be extended; otherwise, **false**. The default is **true** on tables and pages, and **false** on enums.  
 
 ## Syntax
+
 ```
 table 50111 MyTable
 {

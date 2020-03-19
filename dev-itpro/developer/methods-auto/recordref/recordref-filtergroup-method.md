@@ -2,7 +2,7 @@
 title: "FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,8 +52,8 @@ var
     MyRecordRef: RecordRef;
     varOrigGroup: Integer;
     varCurrGroup: Integer;
-    Text000: TextConst ENU='The original filtergroup is: %1';
-    Text001: TextConst ENU='The current filtergroup is: %1';
+    Text000: Label 'The original filtergroup is: %1';
+    Text001: Label 'The current filtergroup is: %1';
 begin
     MyRecordRef.OPEN(DATABASE::Customer);  
     MyRecordRef.SETRECFILTER;  

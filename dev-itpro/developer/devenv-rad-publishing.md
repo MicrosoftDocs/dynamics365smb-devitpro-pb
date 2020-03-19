@@ -26,7 +26,7 @@ A RAD published file will not contain the following files that are normally pack
 
 - Translation files
 - Permission files
-- Custom word and report rdlc layout files  
+- Custom word and report rdl layout files  
 - Table data
 - Web service definitions  
 

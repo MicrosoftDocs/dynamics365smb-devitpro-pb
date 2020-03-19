@@ -2,7 +2,7 @@
 title: "GetRangeMin Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,7 @@ var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
     varMin: Text;
-    Text000: TextConst ENU='The minimum value in the filter is %1.';
+    Text000: Label 'The minimum value in the filter is %1.';
 begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  

@@ -2,7 +2,7 @@
 title: "CanLoadType Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +45,7 @@ A variable of the DotNet data type to represent the .NET Framework type.
 ```
 var
     OObjLibrary: DotNet "Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier.OutlookObjectLibrary.'Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'";
-    MyError: TextConst ENU='Cannot access the specified type.';
+    MyError: Label 'Cannot access the specified type.';
 if not CANLOADTYPE(OObjLibrary) then  
    ERROR(MyError);  
 ```  

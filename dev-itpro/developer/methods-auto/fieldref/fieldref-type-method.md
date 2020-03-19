@@ -2,7 +2,7 @@
 title: "Type Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
     varType: Variant;
-    Text000: TextConst ENU='Field %1 is a %2 data type.';
+    Text000: Label 'Field %1 is a %2 data type.';
 begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     for i := 1 to 5 do begin  

@@ -15,10 +15,10 @@ Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md
 
 |Cmdlet|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|
 |------------|---------------------------------------|
-|[New-NAVWebServerInstance](https://docs.microsoft.com/powershell/module/navwebclientmanagement/New-NAVWebServerInstance)|Creates a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance and binds this instance to a [!INCLUDE[server](../developer/includes/server.md)] instance. |
-|[Set-NAVWebServerInstanceConfiguration](https://docs.microsoft.com/powershell/module/navwebclientmanagement/Set-NAVWebServerInstanceConfiguration)|Specifies configuration values for a named [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|
-|[Get-NAVWebServerInstance](https://docs.microsoft.com/powershell/module/navwebclientmanagement/Get-NAVWebServerInstance)|Gets the information about the [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that are registered on a computer.|
-|[Remove-NAVWebServerInstance](https://docs.microsoft.com/powershell/module/navwebclientmanagement/Remove-NAVWebServerInstance)| Removes an existing [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|  
+|[New-NAVWebServerInstance](/powershell/module/navwebclientmanagement/New-NAVWebServerInstance)|Creates a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance and binds this instance to a [!INCLUDE[server](../developer/includes/server.md)] instance. |
+|[Set-NAVWebServerInstanceConfiguration](/powershell/module/navwebclientmanagement/Set-NAVWebServerInstanceConfiguration)|Specifies configuration values for a named [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|
+|[Get-NAVWebServerInstance](/powershell/module/navwebclientmanagement/Get-NAVWebServerInstance)|Gets the information about the [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that are registered on a computer.|
+|[Remove-NAVWebServerInstance](/powershell/module/navwebclientmanagement/Remove-NAVWebServerInstance)| Removes an existing [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|  
 
 ## <a name="GetStartedWebServerCmdlets"></a>Get started with the [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets 
 
@@ -30,11 +30,11 @@ There are different ways to launch this module and start using the cmdlets:
 
 - If you are working on the computer where the [!INCLUDE[server](../developer/includes/server.md)] was installed, run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
-  For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview).
+  For more information, see [Business Central PowerShell Cmdlets](/powershell/business-central/overview).
 
 - If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], just start Windows PowerShell as an administrator.
 
-- Otherwise, start Windows PowerShell as an administrator, and use the [Import-Module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module) cmdlet to import the **NAVWebClientManagement.psm1** file:
+- Otherwise, start Windows PowerShell as an administrator, and use the [Import-Module](/powershell/module/microsoft.powershell.core/import-module) cmdlet to import the **NAVWebClientManagement.psm1** file:
 
   ```
   Import-Module -Name [filepath]
@@ -44,7 +44,7 @@ There are different ways to launch this module and start using the cmdlets:
   Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\NAVWebClientManagement.psm1"
   ```
 
-    For more information about starting Windows PowerShell, see [Starting Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/starting-windows-powershell).
+    For more information about starting Windows PowerShell, see [Starting Windows PowerShell](/powershell/scripting/setup/starting-windows-powershell).
 
 ## Creating [!INCLUDE[webserver](../developer/includes/webserver.md)] instances
 
@@ -133,7 +133,7 @@ SubSite example:
 -  Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
 
 > [!NOTE]  
->  This command only sets the required parameters of the NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](https://docs.microsoft.com/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
+>  This command only sets the required parameters of the NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
 
 ## Modifying a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance
  

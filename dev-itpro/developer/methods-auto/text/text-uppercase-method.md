@@ -2,7 +2,7 @@
 title: "UpperCase Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,9 +42,9 @@ The string converted to uppercase.
   
 ```  
 var
-    Text000: TextConst ENU='Outstanding Order Status';  
-    Text001: TextConst ENU='The test string before UPPERCASE is called:\\%1';  
-    Text002: TextConst ENU='The string after UPPERCASE is called:\\%1';  
+    Text000: Label 'Outstanding Order Status';  
+    Text001: Label 'The test string before UPPERCASE is called:\\%1';  
+    Text002: Label 'The string after UPPERCASE is called:\\%1';  
 begin
     Lower := Text000;  
     MESSAGE(Text001, Lower);  

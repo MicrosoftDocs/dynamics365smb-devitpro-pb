@@ -2,7 +2,7 @@
 title: "MediaId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ The example assumes that  the **My Items** table already exists and has a **Medi
  var
     myItemRec: Record "My Items";
     imageID: GUID;
-    Text000: TextConst ENU='Item %1 has a media object with the following ID: %2';
+    Text000: Label 'Item %1 has a media object with the following ID: %2';
 begin
     myItemRec.Get('1');  
     mediaGuid := myItemRec.Image.MediaId;  

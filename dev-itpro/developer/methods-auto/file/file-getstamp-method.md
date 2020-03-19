@@ -2,7 +2,7 @@
 title: "GetStamp Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,7 +59,7 @@ The time that the file was last written to. Optional.
     varDate: Date;
     varTime: Time;
     varFileName: Text;
-    Text000: TextConst ENU='This document was last written to on %1 at %2.';
+    Text000: Label 'This document was last written to on %1 at %2.';
 begin
     varFileName := 'C:\MyFolder\MyText.txt';  
     GETSTAMP(VarFileName, varDate, varTime);  

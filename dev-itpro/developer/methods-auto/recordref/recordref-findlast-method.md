@@ -2,7 +2,7 @@
 title: "FindLast Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,8 +46,8 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ```  
 var
     ItemRecref: RecordRef;
-    Text000: TextConst ENU='The last item is %1 and the unit price is %2.';
-    Text001: TextConst ENU='The last item was not found.';
+    Text000: Label 'The last item is %1 and the unit price is %2.';
+    Text001: Label 'The last item was not found.';
 begin    
     ItemRecref.OPEN(27);  
     if ItemRecref.FINDLAST then  

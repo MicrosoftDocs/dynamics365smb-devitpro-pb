@@ -2,7 +2,7 @@
 title: "MediaId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ This example is gets the GUID of the MediaSet that is used on item No. 1000 in t
  var
     item: Record Item;
     mediasetId: GUID;
-    Text000: TextConst ENU='The GUID of the MediaSet is: %1';
+    Text000: Label 'The GUID of the MediaSet is: %1';
 begin
     item.Get('1000');  
     mediasetId := item.Picture.MediaId;  

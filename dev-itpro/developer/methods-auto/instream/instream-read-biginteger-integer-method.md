@@ -2,7 +2,7 @@
 title: "Read Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,7 +58,7 @@ READ reads until the specified length or a zero byte. For more information about
     varInstream: Instream;
     varChars: Text[50];
     numChars: Integer;
-    Text000: TextConst ENU='Number of characters read: %1. Characters read: %2.';
+    Text000: Label 'Number of characters read: %1. Characters read: %2.';
 begin 
     recBinaries.FIND('-');  
     recBinaries.CALCFIELDS(recBinaries.Picture);  

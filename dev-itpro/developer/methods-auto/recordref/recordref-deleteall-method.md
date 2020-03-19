@@ -2,7 +2,7 @@
 title: "DeleteAll Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
 var
     MyFieldRef: FieldRef;
     CustomerRecRef: RecordRef;
-    Text000: TextConst ENU='The number of records in the range is %1.;
+    Text000: Label 'The number of records in the range is %1.;
 begin 
     CustomerRecRef.OPEN(18);  
     MyFieldRef := CustomerRecRef.FIELD(1);  

@@ -2,7 +2,7 @@
 title: "Name Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ The name of the table.
 var
     MyRecordRef: RecordRef;
     varTableName: Text;
-    Text000: TextConst ENU='Table %1 is the %2 table.'; 
+    Text000: Label 'Table %1 is the %2 table.'; 
 begin  
     TableNo := 18;  
     MyRecordRef.OPEN(TableNo);  

@@ -2,7 +2,7 @@
 title: "Remove Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,8 +54,8 @@ This example uses the REMOVE method and [Item Method \(MediaSet\)](../../methods
  var
     recA: Record TableA;
     mediasetId: GUID;
-    Text000: TextConst ENU='Media %1 was removed from MediaSet %2.';
-    Text001: TextConst ENU='The media was not removed from MediaSet %1.';
+    Text000: Label 'Media %1 was removed from MediaSet %2.';
+    Text001: Label 'The media was not removed from MediaSet %1.';
 begin 
     // Retrieves the GUID of the first media object (index number 1) in the MediaSet of record 1000 in TableA
     recA.Get('1000');  

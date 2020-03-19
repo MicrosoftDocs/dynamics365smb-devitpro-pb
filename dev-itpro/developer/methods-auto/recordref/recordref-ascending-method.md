@@ -2,7 +2,7 @@
 title: "Ascending Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ Specifies the order in which a search will be performed.
 var
     IsAscending: Boolean;
     CustomerRecref: RecordRef;
-    Text000: TextConst ENU='Is the sort order ascending?  %1';
+    Text000: Label 'Is the sort order ascending?  %1';
 begin
     CustomerRecref.OPEN(18);  
     CustomerRecref.SETVIEW('SORTING(Name) ORDER(Ascending) WHERE(No.=CONST(10000..20000))');  

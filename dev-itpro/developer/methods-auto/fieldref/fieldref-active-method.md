@@ -2,7 +2,7 @@
 title: "Active Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,8 +58,8 @@ var
     Recref: RecordRef;
     MyFieldRef: FieldRef;
     i: Integer;
-    Text000: TextConst ENU='Field %1 is enabled.';
-    Text001: TextConst ENU='Field %1 is not enabled.';
+    Text000: Label 'Field %1 is enabled.';
+    Text001: Label 'Field %1 is not enabled.';
 begin
     Recref.OPEN(18);  
     MyFieldRef := Recref.FIELD(1);  

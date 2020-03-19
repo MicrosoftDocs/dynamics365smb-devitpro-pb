@@ -2,7 +2,7 @@
 title: "NormalDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The input date. You can enter a closing date or a normal date. A run-time error 
 var
     InputDate: Date;
     OutputDate: Date;
-    Text000: TextConst ENU='The normal date for %1 is %2.';
+    Text000: Label 'The normal date for %1 is %2.';
 begin
     InputDate := 20140404D;  
     OutputDate := NORMALDATE(InputDate);  
@@ -63,7 +63,7 @@ end;
 var
     InputDate: Date;
     OutputDate: Date;
-    Text000: TextConst ENU='The normal date for %1 is %2.';
+    Text000: Label 'The normal date for %1 is %2.';
 begin
     InputDate := CLOSINGDATE(20140404C);  
     OutputDate := NORMALDATE(InputDate);  

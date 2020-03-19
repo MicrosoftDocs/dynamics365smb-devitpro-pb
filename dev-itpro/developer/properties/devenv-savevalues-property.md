@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a48ab300-5cef-4df9-a2bf-13d9ba64ec3f
 author: SusanneWindfeldPedersen
 ---
 
@@ -26,8 +25,12 @@ Sets whether user-specific control values are saved for this page.
   
 ## Remarks  
 
-This information is saved in the **Page Data Personalization** table.  
+This information is saved in the `Page Data Personalization` table.  
+
+The **SaveValues** property enables the *Saved Settings* feature, that is, to save a predefined group of options and filters for a page or request page. You can later use the saved settings to consistently generate the same reports, XMLports, or batch jobs. For more information, see [Manage Saved Settings for Reports and Batch jobs](https://docs.microsoft.com/en-us/dynamics365/business-central/reports-saving-reusing-settings).
   
 ## See Also
 
-[Properties](devenv-properties.md)
+[Properties](devenv-properties.md)  
+[Manage Saved Settings for Reports and Batch jobs](https://docs.microsoft.com/en-us/dynamics365/business-central/reports-saving-reusing-settings)  
+[Using Saved Settings](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-work-report#SavedSettings)

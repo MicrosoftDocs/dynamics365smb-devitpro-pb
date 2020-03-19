@@ -17,7 +17,7 @@ XMLports are used to export and import data between an external source and [!INC
 
 To use an XMLport to import or export data, you first create an XMLport object. Once created, you can run the XMLport from a page or codeunit object.
 
-You can design XMLPorts to include a request page, which is a dialog box that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. For for information about request pages, see [Request Pages](devenv-request-pages.md).
+You can design XMLports to include a request page, which is a dialog box that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. For more information about request pages, see [Request Pages](devenv-request-pages.md).
 
 ## XMLport example
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 
@@ -33,7 +33,7 @@ pageextension 50111 PermissionSetExporter extends "Permission Sets"
             {
                 Promoted = true;
                 PromotedCategory = New;
-                trigger OnAction();
+                trigger OnAction(); 
                 begin
                     Xmlport.Run(50112, false, false);
                 end;

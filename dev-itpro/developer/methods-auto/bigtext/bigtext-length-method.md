@@ -2,7 +2,7 @@
 title: "Length Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ In this example, the BigText variable is initialized with the text ‘ABCDEFG’
 var
     MyBigText: BigText;
     VarLength: Text;
-    Text000: TextConst ENU='VarLength = %1';
+    Text000: Label 'VarLength = %1';
 begin
     MyBigText.ADDTEXT('ABCDEFG');  
     VarLength := MyBigText.LENGTH;  

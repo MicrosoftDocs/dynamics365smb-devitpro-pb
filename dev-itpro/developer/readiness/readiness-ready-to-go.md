@@ -24,7 +24,7 @@ The “Ready to Go” program is designed to support you in the journey of bring
 > Keep on top of news, tips, tools, programs, and new capabilities by following us on the [Business Central for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) blog.
 
 # [**Learning**](#tab/learning)
-**The "Ready to Go" learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
+**The "Ready to Go" online learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
 
 # [**Coaching**](#tab/coaching)
 Several Development Centers, Master VARs, and Training Centers provide **“Ready to Go” coaching**.
@@ -72,9 +72,10 @@ Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prod
 
 ### Shortcuts to developing and publishing Business Central apps documentation
 
-+ [Marketing Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
-+ [Technical Validation Checklist](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
-+ [How to create an effective sales landing page](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
-+ [How to make compelling videos](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
++ [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
++ [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
++ [How to create an effective sales landing page](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
++ [How to make compelling videos](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
+
 ### Learning catalog
-+ ["Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
++ [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

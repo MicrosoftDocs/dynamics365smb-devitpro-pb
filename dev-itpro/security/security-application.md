@@ -23,13 +23,15 @@ This section helps you understand and improve the security of your Business Cent
 
 Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central On-Premises supports several authentication methods, such as Windows and Azure Active Directory. Business Central Online uses strictly Azure Active Directory (Azure AD).  For more information, see the following articles:
 
-[Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions)
+[Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 
 <!-- [User Authentication](user-security.md#user-authentication)  -->
 
 [Authentication and Credential Types](../administration/users-credential-types.md)
 
 [Multi-factor Authentication](multifactor-authentication.md)
+
+[Analyzing Authentication Telemetry](../administration/telemetry-authorization-trace.md)
  
 ## Authorization
 
@@ -39,7 +41,7 @@ Once authenticated, authorization determines which areas a user can access, such
 
 [Data Security](data-security.md?tabs=database-level)
 
-<!--[Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions) redundant -->
+<!--[Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) redundant -->
 
 [Removing Elements from the User Interface According to Permissions](../administration/hide-ui-elements.md)  
 
@@ -47,19 +49,19 @@ Once authenticated, authorization determines which areas a user can access, such
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information about who is signing-in, what their permissions are, what data have they changed, and more.  For more information, see the following articles:
 
-[Authorization Assessment](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
+[Authorization Assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
   
-[Data Auditing](https://docs.microsoft.com/dynamics365/business-central/across-log-changes)
+[Data Auditing](/dynamics365/business-central/across-log-changes)
   
 [Security Auditing](security-auditing.md)
 
-[Data Classification](https://docs.microsoft.com/dynamics365/business-central/admin-classifying-data-sensitivity)
+[Data Classification](/dynamics365/business-central/admin-classifying-data-sensitivity)
   
 ## Data Encryption
 
 You can encrypt data on the Business Central server by generating new or importing existing encryption keys that you enable on the Business Central server instance that connects to the database. For more information, see [Encrypting Data in Dynamics 365 Business Central](../developer/devenv-encrypting-data.md).
 
-<!-- [Data encryption](https://docs.microsoft.com/dynamics365/business-central/admin-manage-data-encryption)-->  
+<!-- [Data encryption](/dynamics365/business-central/admin-manage-data-encryption)-->  
 
 ## Security Development Lifecycle
 

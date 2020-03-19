@@ -2,7 +2,7 @@
 title: "Insert Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,8 +56,8 @@ This example uses the Insert method and [Item Method \(MediaSet\)](../../methods
     recA: Record TableA;
     recB: Record TableB;
     mediasetId: GUID;
-    Text000: TextConst ENU='Media %1 was added to MediaSet %2.';
-    Text000: TextConst ENU='The media was not added to MediaSet %1.';
+    Text000: Label 'Media %1 was added to MediaSet %2.';
+    Text000: Label 'The media was not added to MediaSet %1.';
 begin
     // Retrieves the GUID of the first media object (index number 1) in the MediaSet of record 1000 in TableA
     recA.Get('1000');  

@@ -2,7 +2,7 @@
 title: "MaxStrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,9 +46,9 @@ var
     City: Text[30];
     MaxLength: Integer;
     Length: Integer;
-    Text000: TextConst ENU='Vedbaek';
-    Text001: TextConst ENU='The MAXSTRLEN method returns %1,\\';
-    Text002: TextConst ENU='whereas the STRLEN method returns %2';
+    Text000: Label 'Vedbaek';
+    Text001: Label 'The MAXSTRLEN method returns %1,\\';
+    Text002: Label 'whereas the STRLEN method returns %2';
 begin
     City := Text000;  
     MaxLength := MAXSTRLEN(City);  

@@ -2,7 +2,7 @@
 title: "ExportStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ The OutStream object that is created by the object that will receive the media c
     count: Integer;
     exportFile: File;
     dataOutStream: OutStream;
-    Text000: TextConst ENU='%1 media files were exported';
+    Text000: Label '%1 media files were exported';
 begin
     if myItemRec.FindFirst() then begin  
         repeat begin

@@ -2,7 +2,7 @@
 title: "SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,8 +64,8 @@ var
     CustomerRecref: RecordRef;
     Filter1: Text;
     Filter3: Text;
-    Text000: TextConst ENU='Filter before filters set: %1.';
-    Text001: TextConst ENU='Filter after filters set: %1.';
+    Text000: Label 'Filter before filters set: %1.';
+    Text001: Label 'Filter after filters set: %1.';
 begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  

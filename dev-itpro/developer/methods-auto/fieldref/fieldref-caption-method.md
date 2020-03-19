@@ -2,7 +2,7 @@
 title: "Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ var
     CustomerRecref: RecordRef;
     varCaption: Text;
     i: Integer;
-    Text000: TextConst ENU='The caption for field %1 is "%2"';
+    Text000: Label 'The caption for field %1 is "%2"';
 begin
     CustomerRecref.OPEN(18);  
     for i := 1 to 9 do begin  

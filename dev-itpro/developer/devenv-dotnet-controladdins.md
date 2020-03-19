@@ -21,7 +21,7 @@ The name of the assembly can be retrieved from the AssemblyName element in the `
 
 
 > [!NOTE]   
-> If you do not have access to the `.csproj file`, you can determine the name of the assembly by following the instructions in [How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name).
+> If you do not have access to the `.csproj file`, you can determine the name of the assembly by following the instructions in [How to: Determine an Assembly's Fully Qualified Name](/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name).
 
 
 The following code sample contains the stub definition of the `Microsoft.Dynamics.Nav.Client.PingPong` .NET add-in.
@@ -121,7 +121,7 @@ If within the same project you have a native AL control add-in and a .NET add-in
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)            
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)   
-[How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)  
+[How to: Determine an Assembly's Fully Qualified Name](/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 
 

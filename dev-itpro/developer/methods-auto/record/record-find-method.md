@@ -1,8 +1,8 @@
 ---
 title: "Find Method"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 11/14/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -70,8 +70,8 @@ end;
 
 var
     ItemRec: Record Item;
-    Text000: TextConst ENU = 'Item No. %1.\Description: %2. Price: $%3.';
-    Text001: TextConst ENU = 'The item was not found.';
+    Text000: Label 'Item No. %1.\Description: %2. Price: $%3.';
+    Text001: Label 'The item was not found.';
 ```  
   
 ## Example  
@@ -87,8 +87,8 @@ end;
 
 var
     ItemRec: Record Item;
-    Text000: TextConst ENU = 'Item No. %1.\Description: %2. Price: $%3.';
-    Text001: TextConst ENU = 'The item was not found.';
+    Text000: Label 'Item No. %1.\Description: %2. Price: $%3.';
+    Text001: Label 'The item was not found.';
 ```  
 
 ## See Also

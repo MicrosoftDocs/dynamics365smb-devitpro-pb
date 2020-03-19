@@ -1,8 +1,8 @@
 ---
 title: "GetBySystemId Method"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 11/14/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ This example shows how to use the GETBYSYSTEMID method to retrieve a record.
 ```
 var
     CustomerRec: Record Customer;
-    Text000: TextConst ENU = 'Customer was found.';
+    Text000: Label 'Customer was found.';
 begin
     If CustomerRec.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
     Message(Text000);

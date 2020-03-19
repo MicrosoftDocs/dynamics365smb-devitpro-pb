@@ -2,7 +2,7 @@
 title: "GetLastErrorCode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,7 @@ var
     ExpectedErrorCode: Text[1024];  
     FileObj1: File;
     FileObj2: File;
-    Text0001: TexConst ENU='The error code is not valid. Expected: %1. Actual: %2. Error message: %3';
+    Text0001: Label 'The error code is not valid. Expected: %1. Actual: %2. Error message: %3';
 begin
     ExpectedErrorCode := 'StreamIO';  
     FileObj1.CREATETEMPFILE;  

@@ -21,7 +21,7 @@ There are two parts to implementing security filters.
 
 ## Creating security filters
 
-You create security filter by using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. You set security filters on permission sets, which you assign to users. For more information about permission sets, see [Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions).  
+You create security filter by using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. You set security filters on permission sets, which you assign to users. For more information about permission sets, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
   
   
 1.  Open the **Permission Sets** page.  
@@ -121,7 +121,7 @@ Query objects and record objects, including both explicit record variables and i
 |Ignored|If you set the **SecurityFiltering** property on the record variable to **Ignored**, then the code behaves as if all security filters that are set do not exist for that instance of the record. Any of the **FIND** functions find all 100 records. The **DELETEALL** function deletes all 100 records. You can insert and modify records in any range, regardless of security filters.|  
 |Disallowed|If you set the **SecurityFiltering** property on the record variable to **Disallowed**, then as long as a security filter is set on the record, any code that uses the record variable causes an error.|  
 
-##  <a name="PerformanceImpact"></a> Performance impact of security filtering Mode
+##  <a name="PerformanceImpact"></a> Performance impact of security filtering mode
   
 Security filters are handled by SQL Server just like other filters that are applied by the user. They do not adversely affect performance unless the security filtering mode is **Validated**.
 

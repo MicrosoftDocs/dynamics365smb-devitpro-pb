@@ -2,7 +2,7 @@
 title: "ClosingDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,7 +53,7 @@ The input date.
 var
     Date1: Date;
     CloDate: Date;
-    Text000: TextConst ENU='The closing date for %1 is %2.';
+    Text000: Label 'The closing date for %1 is %2.';
 begin
     Date1 := 20140404D;  
     CloDate := CLOSINGDATE(Date1);  
@@ -73,7 +73,7 @@ var
     Date1: Date;
     CloDate1: Date;
     CloDate2: Date;
-    Text000: TextConst ENU='The closing date for %1 is %2.';
+    Text000: Label 'The closing date for %1 is %2.';
 begin
     // Date1 := 20140404C;  
     // The previous statement does not compile because the compiler   

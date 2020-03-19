@@ -1,5 +1,5 @@
 ---
-title: "UseTemporary Property (XMLPort)"
+title: "UseTemporary Property (XMLport)"
 author: solsen
 ms.custom: na
 ms.date: 10/01/2019
@@ -12,7 +12,7 @@ ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
 ms.author: jswymer
 ---
  
-# UseTemporary Property (XMLPort)
+# UseTemporary Property (XMLport)
 Sets whether a temporary table is created to store the records imported using the XmlPort.
 
 ## Applies To  

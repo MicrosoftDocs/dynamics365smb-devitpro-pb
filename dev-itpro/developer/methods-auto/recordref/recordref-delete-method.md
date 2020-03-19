@@ -2,7 +2,7 @@
 title: "Delete Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,7 +61,7 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
 var
     varRecordToDelete: Code;
     MyRecordRef: RecordRef;
-    Text000: TextConst ENU='Customer %1 is deleted.;
+    Text000: Label 'Customer %1 is deleted.;
 begin
     varRecordToDelete := '10000';  
     MyRecordRef.OPEN(18);  

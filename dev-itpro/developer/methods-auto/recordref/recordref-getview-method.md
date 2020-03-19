@@ -2,7 +2,7 @@
 title: "GetView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ The string format is the same as the SourceTableView property on pages.
 var
     RecRef: RecordRef;
     varView: Text;
-    Text000: TextConst ENU='The current view of the table is: %1';
+    Text000: Label 'The current view of the table is: %1';
 begin    
     RecRef.OPEN(DATABASE::Customer);  
     varView := RecRef.GETVIEW(TRUE);  

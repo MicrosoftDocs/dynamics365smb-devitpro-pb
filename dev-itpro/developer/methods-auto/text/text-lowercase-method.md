@@ -2,7 +2,7 @@
 title: "LowerCase Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,9 +43,9 @@ The string converted to lowercase.
 var
     Str: Text[60];
     Lower: Text[60];
-    Text000: TextConst ENU='The Entries are Sorted by Name.';
-    Text001: TextConst ENU='The string before LOWERCASE is:>%1<';
-    Text002: TextConst ENU='The string after LOWERCASE is:>%1<';
+    Text000: Label 'The Entries are Sorted by Name.';
+    Text001: Label 'The string before LOWERCASE is:>%1<';
+    Text002: Label 'The string after LOWERCASE is:>%1<';
 begin
     Str := Text000;  
     MESSAGE(Text001, Str);  

@@ -2,7 +2,7 @@
 title: "FieldCount Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The number of fields in the table.
 var
     MyRecordRef: RecordRef;
     varFieldCount: Integer;
-    Text000: TextConst ENU='The %1 table contains %2 field\(s\).\\';
+    Text000: Label 'The %1 table contains %2 field\(s\).\\';
 begin    
     for i := 3 to 5 do begin  
       MyRecordRef.OPEN(i);  

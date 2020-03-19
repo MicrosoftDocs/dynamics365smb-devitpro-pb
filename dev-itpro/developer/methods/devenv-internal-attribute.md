@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 Specifies that the method is published as an internal event. It can only be subscribed to from within the same module.
 
 ## Snippet support
-Typing the shortcut `teventinternal` will create the basic Internal attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `teventinternal` will create the basic internal attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Syntax  
 ```  

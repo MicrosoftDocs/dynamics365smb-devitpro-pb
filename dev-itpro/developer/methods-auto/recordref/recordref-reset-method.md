@@ -2,7 +2,7 @@
 title: "Reset Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,9 +44,9 @@ var
     Filters1: Text;
     Filters2: Text;
     Filters3: Text;
-    Text000: TextConst ENU='Filter before filter is set is: %1.';
-    Text001: TextConst ENU='Filter after filter is set is: %1.';
-    Text002: TextConst ENU='Filter before filter is reset is: %1.';
+    Text000: Label 'Filter before filter is set is: %1.';
+    Text001: Label 'Filter after filter is set is: %1.';
+    Text002: Label 'Filter before filter is reset is: %1.';
 begin   
     RecRef.OPEN(DATABASE::Customer);  
     Filters1 := RecRef.GETFILTERS;  

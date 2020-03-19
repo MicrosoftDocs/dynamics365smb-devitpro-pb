@@ -2,7 +2,7 @@
 title: "StrMenu Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,9 +52,9 @@ The number of the menu option that the user selected. If the user presses the Es
 var
     Options: Text[30];
     Selected: Integer;
-    Text000: TextConst ENU='Save,Delete,Exit,Find';
-    Text001: TextConst ENU='You selected option %1.';
-    Text002: TextConst ENU='Choose one of the following options:';
+    Text000: Label 'Save,Delete,Exit,Find';
+    Text001: Label 'You selected option %1.';
+    Text002: Label 'Choose one of the following options:';
 begin
     Options := Text000  
     // Sets the default to option 3  

@@ -1,5 +1,5 @@
 ---
-title: "Working with Translation Files"
+title: "Translating Base App Help using AL Extensions"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 6e0ff568-9cad-4b0f-bd97-b8ac5690a470
-caps.latest.revision: 26
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
@@ -22,7 +20,7 @@ With an AL extension you can override the default help link for [!INCLUDE[d365fi
 ## Help properties
 In the `app.json` file, two properties control the help URL and the supported locale of the help. For help on manifest files, see [JSON Files](devenv-json-files.md).
 
-The `helpBaseUrl` property represents the URL that will be used to overwrite the default Microsoft help link, which is `(https://docs.microsoft.com/{0}/dynamics365/business-central)`. This URL must contain a placeholder `{0}` for the user's locale culture. 
+The `helpBaseUrl` property represents the URL that will be used to overwrite the default Microsoft help link, which is `(/{0}/dynamics365/business-central)`. This URL must contain a placeholder `{0}` for the user's locale culture. 
 The `supportedLocales` property is used to specify the list of locales that are supported by the URL specified in the `helpBaseUrl` property and used in the translation app. If the user's current locale is among the `supportedLocales` of the extension, the user will be re-directed to the help base URL that you specified. The settings in the `app.json` file look like this:
 
 ```

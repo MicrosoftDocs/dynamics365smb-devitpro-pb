@@ -2,7 +2,7 @@
 title: "SaveAsXml Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,7 +69,7 @@ Query.READ;
 var
     MyCustomerQuery: Query "My Customer Query";
     OK: Boolean;
-    Text000: TextConst ENU='Query was not saved.';
+    Text000: Label 'Query was not saved.';
 begin
     OK := MyCustomerQuery.SAVEASXML('c:\myquery.xml');  
     if not OK then

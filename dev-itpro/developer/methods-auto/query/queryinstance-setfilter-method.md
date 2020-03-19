@@ -2,7 +2,7 @@
 title: "SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -96,7 +96,7 @@ Query.READ;
 ```  
 var
   MyQuery: Query "Customer SalesQuantity";
-  Text000: TextConst ENU='Customer name = %1, Quantity = %2';
+  Text000: Label 'Customer name = %1, Quantity = %2';
 begin
     // Sets a filter to display only sales quantities greater than 10.  
     MyQuery.SETFILTER(Quantity, '>10');  

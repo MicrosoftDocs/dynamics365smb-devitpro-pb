@@ -28,14 +28,14 @@ As a reseller, your paths forward can be:
 4. Validate and apply compatible Add-on apps from AppSource onto a customer's [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] tenant. Read more [here](readiness-add-on-apps.md).
 5. Learn more about who can help you build a [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offering in the materials of the **Ready to Go** program. Read more [here](readiness-ready-to-go.md).
 
-### Example services provided by other resellers
+## Example services provided by other resellers
 
 - Power BI for Dynamics 365: 1-Hr Assessment by Bond Consulting Services.  
     An engagement to evaluate how Power BI can help you manage your finances, increase sales, and streamline your operations.
 
 ## See Also
-
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  

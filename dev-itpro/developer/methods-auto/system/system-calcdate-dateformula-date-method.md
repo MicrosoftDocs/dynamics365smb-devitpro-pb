@@ -2,7 +2,7 @@
 title: "CalcDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -93,10 +93,10 @@ var
     Date1: Date;
     Date2: Date;
     Date3: Date;
-    Text000: TextConst ENU='The reference date is: %1 \\';  
-    Text001: TextConst ENU='The expression: %2 returns %3\\';  
-    Text002: TextConst ENU='The expression: %4 returns %5\\';  
-    Text003: TextConst ENU='The expression: %6 returns %7';
+    Text000: Label 'The reference date is: %1 \\';  
+    Text001: Label 'The expression: %2 returns %3\\';  
+    Text002: Label 'The expression: %4 returns %5\\';  
+    Text003: Label 'The expression: %6 returns %7';
 begin
     Expr1 := '<CQ+1M-10D>'; // Current quarter + 1 month - 10 days  
     Expr2 := '<-WD2>'; // The last weekday no.2, (last Tuesday)  

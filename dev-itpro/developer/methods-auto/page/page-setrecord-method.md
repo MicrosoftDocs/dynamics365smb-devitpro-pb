@@ -2,7 +2,7 @@
 title: "SetRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ The record to set as the current record. You cannot use a temporary record for t
  var
     MyPage: Page "Customer Card";
     MyRecord: Record Customer;
-    Text000: TextConst ENU='The record was not found';
+    Text000: Label 'The record was not found';
 begin
     if MyRecord.GET('30000') then begin  
       MyPage.SETRECORD(MyRecord);  

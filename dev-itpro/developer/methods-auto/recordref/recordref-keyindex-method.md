@@ -2,7 +2,7 @@
 title: "KeyIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/09/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,7 @@ var
     CustomerRecref: RecordRef;
     i: Integer;
     varKeyRef: KeyRef;
-    Text000: TextConst ENU='KeyIndex: %1   KeyRef: %2'; 
+    Text000: Label 'KeyIndex: %1   KeyRef: %2'; 
 begin
     CustomerRecref.OPEN(18);  
       for i := 1 to CustomerRecref.KEYCOUNT do begin  

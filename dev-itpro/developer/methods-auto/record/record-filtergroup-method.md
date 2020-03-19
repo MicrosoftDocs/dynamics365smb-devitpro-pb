@@ -1,8 +1,8 @@
 ---
 title: "FilterGroup Method"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 11/14/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -93,8 +93,8 @@ var
         Customer: Record Customer;
         varOrigGroup: Integer;
         varCurrGroup: Integer;
-        Text000: TextConst ENU='The original filtergroup is: %1';
-        Text001: TextConst ENU='The current filtergroup is: %1';
+        Text000: Label 'The original filtergroup is: %1';
+        Text001: Label 'The current filtergroup is: %1';
 begin  
     Customer.SetFilter("No.", '10000..20000');  
     varOrigGroup := Customer.FilterGroup;  

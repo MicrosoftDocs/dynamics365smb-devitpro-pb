@@ -1,8 +1,8 @@
 ---
-title: "Unique keys should not be deleted"
-ms.author: SusanneWindfeldPedersen
+title: "Unique keys must not be deleted"
+ms.author: solsen
 ms.custom: na
-ms.date: 11/15/2019
+ms.date: 02/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0043
-Unique keys should not be deleted  
+Unique keys must not be deleted  
 
 ## Description
-Unique keys should not be deleted.
+Unique keys must not be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
