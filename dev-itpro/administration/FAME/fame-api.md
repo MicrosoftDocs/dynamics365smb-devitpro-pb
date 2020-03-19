@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# Fixed App Managament Endpoint API
+# Fixed App Management Endpoint API
 
 ## Entities
 
