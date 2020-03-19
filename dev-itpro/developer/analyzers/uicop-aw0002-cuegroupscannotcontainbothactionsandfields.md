@@ -1,6 +1,6 @@
 ---
 title: "The Web client does not support displaying both Actions and Fields in Cue Groups. Only Fields will be displayed."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/02/2020
 ms.reviewer: na

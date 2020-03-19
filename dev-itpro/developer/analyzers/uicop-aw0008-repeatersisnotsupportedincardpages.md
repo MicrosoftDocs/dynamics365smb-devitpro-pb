@@ -1,6 +1,6 @@
 ---
 title: "The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 01/02/2020
 ms.reviewer: na

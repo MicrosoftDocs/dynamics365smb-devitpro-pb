@@ -2,7 +2,7 @@
 title: "Language Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,6 +40,17 @@ The current language setting for the report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+If you have documents that you want to print in the language of the recipient rather than in your own working language, you can add a single line of code in the document to handle this. This functionality is already enabled for most reports in the standard Business Central database. The document is printed in the language that is specified in the **Language Code** field on the **Customer Card** page.
+
+In reports that need the multiple document languages functionality, you must insert the following AL code as the first line in the `OnAfterGet Record()` trigger:
+
+`Report.LANGUAGE := Language.GetLanguageID("Language Code")`
+
+For each of these reports, you must create a new variable, `Language`, with the data type `Record` pointing to the `Language` table. When you have compiled the object, it will no longer print in the user's working application language if another language has been specified on the **Customer Card** page.
+
 ## See Also
 [Report Data Type](report-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
