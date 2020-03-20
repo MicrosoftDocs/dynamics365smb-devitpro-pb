@@ -456,7 +456,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
     -tabletype:CDS  
     ```
 
-    The process for creating the table starts. The AL Table Proxy Generator tool finds that an integration table for the **Contact** entity already exists, so it creates a table extension with only new fields, in this case **Industry**. When the process is completed, the output path contains the WorkerExt.al file.
+    The process for creating the table starts. The AL Table Proxy Generator tool finds that an integration table for the **Contact** entity already exists, so it creates a table extension with only new fields; in this case **Industry**. When the process is completed, the output path contains the `WorkerExt.al` file.
 
 ## Extend the contact table and page with the Industry field
 
