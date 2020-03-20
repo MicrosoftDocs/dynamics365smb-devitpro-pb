@@ -11,9 +11,10 @@ author: SusanneWindfeldPedersen
 ---
 
 # Description Property
-Sets the description of the table, field, page, report, or control. This description is for internal use and does not appear to end-users.  
+Sets the description of the table, field, page, report, control and many more. This description is for internal use and does not appear to end-users.  
 
 ## Applies To  
+
 - Codeunits
 - Fields
 - Keys
@@ -25,9 +26,11 @@ Sets the description of the table, field, page, report, or control. This descrip
 - XMLports, including XMLport text elements, XMLport field elements, XMLport table elements, XMLport field attributes, and XMLport text attributes
 
 ## Syntax
+
 ```
 Description = 'Name of the organization.';
 ```
 
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)  

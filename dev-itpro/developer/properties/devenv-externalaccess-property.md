@@ -11,7 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # ExternalAccess Property
-This property is specific to Dynamics 365 Sales. The ExternalAccess property specifies the access to the underlying CRM entity when Dynamics 365 Sales tables are generated using the cmdlet. 
+This property is specific to Dynamics 365 Sales. The ExternalAccess property specifies the access to the underlying CDS entity when Dynamics 365 Sales tables are generated using the cmdlet. 
 
 ## Applies To  
 
@@ -33,7 +33,7 @@ ExternalAccess = Full;
 ```
 
 ## Remarks  
-This property appears when you specify **CRM** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
+This property appears when you specify **CDS** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
 
 ## See Also  
 [TableType Property](devenv-tabletype-property.md)   

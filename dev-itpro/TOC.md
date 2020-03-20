@@ -10,6 +10,7 @@
 #### [Authoring Guide](help/writing-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
+#### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!--Learn-->
 ## Training and Readiness
 ### Learning Catalogs
@@ -41,6 +42,7 @@
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 <!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
@@ -68,8 +70,9 @@
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
-### [System requirements April '19](deployment/system-requirement-business-central.md)
+### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
+### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+### [System Requirements April '19](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
@@ -112,10 +115,13 @@
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ### [Managing Technical Support](administration/manage-technical-support.md)
+### [Operational Limits](administration/operational-limits-online.md)
 ### Monitoring and Analyzing Telemetry
 #### [Overview](administration/telemetry-overview.md)
-#### [Analyzing Authorization Telemetry](administration/telemetry-authorization-trace.md)
-#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -165,12 +171,20 @@
 #### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
 #### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
+#### Utilizing Read Scale-Out
+##### [Overview](administration/database-read-scale-out-overview.md)
+##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using Telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
-#### [Analyzing Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+### Administration Center
+#### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
@@ -241,6 +255,7 @@
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
+### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ## Events
@@ -284,6 +299,7 @@
 ##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
+##### [Designing Indented Lists](developer/devenv-indented-hierarchy-lists.md)
 #### Card Pages
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
@@ -341,6 +357,7 @@
 ### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
 ### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
 ### [API Query Type](developer/devenv-api-querytype.md)
+## [Interfaces](developer/devenv-interfaces-in-al.md)
 ## XMLports
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
@@ -704,5 +721,9 @@
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
+# Integrating
+## Integrating with Common Data Service
+### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
+### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 # [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
 <!-- preview of Graph API ends -->
