@@ -60,7 +60,7 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
 ### To create the integration table for the worker entity in Business Central 
 
 1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
-2. Export the **AL Table Proxy Generator** called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed .vsix file, go to the equivalent of this folder: `C:\Users\solsen\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
+2. Export the **AL Table Proxy Generator** tool called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed the AL Language extension, go to the equivalent of this folder: `C:\Users\<myname>\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
 3. In PowerShell, run the tool with the following arguments:
     ```
     -project:<Your AL project folder>
@@ -73,7 +73,7 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
     -tabletype:CDS
     ```
     
-    This starts the process for creating the table. When completed, the output path contains the .al file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
+    This starts the process for creating the table. When completed, the output path contains the `.al` file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
 
 ## Create a page for displaying [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data  
 
