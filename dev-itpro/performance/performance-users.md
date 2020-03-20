@@ -2,7 +2,7 @@
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
 ms.custom: na
-ms.date: 02/24/2020
+ms.date: 03/20/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +40,8 @@ In order to provide an optimal experience, Business Central saves some preferenc
  - The overall structure of a page (but not business data) is cached on the client device after a page is accessed the first time.
 
 The time taken to load any page is also affected by the number of controls on the page. Users can improve performance on complex pages using these methods: 
-- By collapsing secondary content that may be needed only occasionally. For example, when a FastTab on a card page is collapsed, Business Central saves time from attempting to display all the content within that FastTab.
-- By hiding secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department or organization will also improve the time needed to load the page. Learm more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)
+- By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, Business Central saves time from attempting to display all the related facts.
+- By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)
 
 > [!NOTE]
 > These suggestions only affect the time taken to display the content. All data and operations related to this content are still processed.
@@ -60,9 +60,10 @@ Raw speed is not the only factor that determines whether users have a pleasant a
 
 ## Attaching pictures and other files
 
-High quality images or large documents can take time to process or download from [!INCLUDE[prodshort].
-To avoid having to download files repeatedly simply to preview them, consider storing files on external storage that allows previewing of pictures and documents, such as SharePoint Online. You can then create a link from a record in [!INCLUDE[prodshort] to that file.
-Learn how to [Manage Attachments, Links, and Notes on Cards and Documents](/dynamics365/business-central/ui-how-add-link-to-record)
+High quality images or large documents can take time to process or download from [!INCLUDE[prodshort]. Consider the following that may improve performance when working with files:
+- Reduce the size or quality of any images or photos that you upload. Some addon apps for [!INCLUDE[prodshort] that capture images from your device may also include settings for image quality.
+- To avoid having to download files repeatedly simply to preview them, consider storing files on external storage that allows previewing of pictures and documents, such as SharePoint Online. You can then create a link from a record in [!INCLUDE[prodshort] to that file. Generally reducing the number of images and documents stored in Business Central also lightens the load of routine database maintenance tasks.  
+Learn how to [Manage Attachments, Links, and Notes on Cards and Documents](/dynamics365/business-central/ui-how-add-link-to-record)  
 
 ## Searching and filtering records
 Search in lists searches all columns in a table. To avoid resource starvation on broad data searches, a search might be subject to a timeout in which case the user will see a *"Searching for rows is taking too long. Try to search or filter using different criteria."* message. 
