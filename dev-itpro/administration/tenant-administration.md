@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 03/12/2020
+ms.date: 03/20/2020
 ms.author: edupont
 ---
 
@@ -38,6 +38,22 @@ If your organization has signed up for a [!INCLUDE [prodshort](../developer/incl
 ### Administration in the Office portal
 
 The **Global admin** role makes you an administrator of your organization's Office 365 tenant. This means that you can manage the subscription, add or remove users, and assign or remove licenses in the Office portal. For more information, see [Office 365 Admin help center](/office365/admin/admin-home).  
+
+### Collaboration with reselling partners
+
+When your organization subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment.  
+
+The partner will have access to your tenant as a *delegated administrator*. You can configure their access to your data. For more information, see [Managing delegated permissions as an internal administrator](delegated-admin.md#managing-delegated-permissions-as-an-internal-administrator).
+
+If your organization decides to end the collaboration with a partner, you must take the following steps:
+
+1. Ask your current partner to [end the relationship with you](/microsoft-365/admin/misc/add-partner&view=o365-worldwide#remove-a-reseller-relationship) in the partner center
+2. [Remove their partner ID](/microsoft-365/admin/misc/add-partner#delete-a-partner-from-a-subscription) from your Office 365 subscription and [remove their users](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) from your [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+3. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner did not already clear their settings.  
+
+    For more information, see [Internal administrators](tenant-admin-center.md#internal-administrators).
+
+4. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription)  
 
 ### Unsubscribing from [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 
