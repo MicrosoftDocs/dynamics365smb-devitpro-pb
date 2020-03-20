@@ -110,7 +110,7 @@ page 50001 "CDS Worker List"
                 Caption = 'Create in Business Central';
                 Promoted = true;
                 PromotedCategory = Process;
-                ToolTip = 'Generate the entity from the coupled CDS worker.';
+                ToolTip = 'Generate the entity from the coupled Common Data Service worker.';
 
                 trigger OnAction()
                 var
@@ -139,7 +139,7 @@ page 50001 "CDS Worker List"
 }
 ``` 
 
-4. Add the fields from the integration table to display on the page the `layout` section. 
+4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 
 ## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]
