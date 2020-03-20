@@ -142,7 +142,7 @@ page 50001 "CDS Worker List"
 4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 
-## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]
+## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
 To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity record, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] record and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
 
@@ -162,7 +162,7 @@ begin
 end;
 ```
 
-3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that's table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
+3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that is table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
