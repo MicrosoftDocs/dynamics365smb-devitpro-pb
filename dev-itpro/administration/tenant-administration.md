@@ -35,9 +35,9 @@ For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/inc
 
 If your organization has signed up for a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] trial, you can extend the free trial, and you can start the process of finding a reselling partner to help you get a subscription. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview).  
 
-### Administration in the Office portal
+### Administration in the Microsoft 365 admin center
 
-The **Global admin** role makes you an administrator of your organization's Office 365 tenant. This means that you can manage the subscription, add or remove users, and assign or remove licenses in the Office portal. For more information, see [Office 365 Admin help center](/office365/admin/admin-home).  
+The **Global admin** role makes you an administrator of your organization's Office 365 tenant. This means that you can manage the subscription, add or remove users, and assign or remove licenses in the Microsoft 365 admin center. For more information, see [Microsoft 365 Admin help center](/office365/admin/admin-home).  
 
 ### Collaboration with reselling partners
 
@@ -45,15 +45,21 @@ When your organization subscribes to [!INCLUDE [prodshort](../developer/includes
 
 The partner will have access to your tenant as a *delegated administrator*. You can configure their access to your data. For more information, see [Managing delegated permissions as an internal administrator](delegated-admin.md#managing-delegated-permissions-as-an-internal-administrator).
 
-If your organization decides to end the collaboration with a partner, you must take the following steps:
+If your organization decides to switch to another partner, you must take the following steps:
 
-1. Ask your current partner to [end the relationship with you](/microsoft-365/admin/misc/add-partner&view=o365-worldwide#remove-a-reseller-relationship) in the partner center
-2. [Remove their partner ID](/microsoft-365/admin/misc/add-partner#delete-a-partner-from-a-subscription) from your Office 365 subscription and [remove their users](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) from your [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+1. Ask your current partner to [remove the reseller relationship with you](/microsoft-365/admin/misc/add-partner#remove-a-reseller-relationship) in the Partner Center
+2. Remove their delegated administration privileges
+
+    1. In the Microsoft 365 admin center, under **Settings**, choose **Partner relationships**, and then select the partner of interest
+    2. In the details pane, choose **Remove delegated admin**
+    3. In the confirmation pane, choose **Remove**
+
+    You must also [remove their users](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) from your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 3. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner did not already clear their settings.  
 
     For more information, see [Internal administrators](tenant-admin-center.md#internal-administrators).
 
-4. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription)  
+4. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription), and work with them to get them set up  
 
 ### Unsubscribing from [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 

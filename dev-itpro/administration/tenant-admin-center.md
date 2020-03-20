@@ -53,7 +53,7 @@ In the administration center, you can [create and monitor environments](tenant-a
 
 Your partner can help you set up telemetry for production environments, including [integration with Application Insights in Azure](tenant-admin-center-telemetry.md).  
 
-If your organization decides to end the collaboration with a partner, you must make sure that any settings they have made in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. This includes the following settings:
+If your organization decides to switch to another partner, you must make sure that some settings that your current partner made in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. This includes the following settings:
 
 - Support contact details
 
