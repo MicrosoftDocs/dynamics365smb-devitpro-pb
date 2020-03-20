@@ -77,13 +77,13 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
 
 ## Create a page for displaying [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data  
 
-For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses table **CDS Worker** with ID 50000 as its data source.  
+For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses the generated integration table **CDS Worker** with ID 50000 as its data source.  
 
 ### To create a list page to display [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] workers  
 
 1. Create a new page. For more information, see [Pages Overview](../developer/devenv-pages-overview.md). 
 2. Name the page **CDS Worker List**, and specify **50001** as the page ID.  
-3. Specify the **CDS Worker** integration table as the source table. For example:
+3. Specify the **CDS Worker** integration table as the source table as shown below:
 
 ```
 page 50001 "CDS Worker List"
