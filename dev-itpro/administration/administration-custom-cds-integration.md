@@ -31,20 +31,21 @@ This walkthrough describes how to integrate new and existing extensions with [!I
 > [!NOTE]  
 > The customization in this walkthrough is done entirely in [!INCLUDE[prodshort](../includes/prodshort.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, such as adding or modify entities and forms.  
 
-## Requirements  
+## Prerequisites
+
 This walkthrough requires the following:  
 
 - [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], including the following:  
     - Worker entity.
 
     > [!NOTE]  
-    > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [here](https://docs.microsoft.com/dynamics365/talent/corehrentities#worker-entities).
+    > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [Common Data Service entities](https://docs.microsoft.com/dynamics365/talent/corehrentities#worker-entities).
     - The URL of your Common Data Service environment.
     - The user name and password of a user account that has full permissions to add and modify entities.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
     - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
     - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. <!--For more information, see []()....  -->
-    - Visual Studio Code with the AL Language extension installed. For more information, see [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it [here](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+    - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
     > Make sure that your integration user has permission to access the Worker entity.
