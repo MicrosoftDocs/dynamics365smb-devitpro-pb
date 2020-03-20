@@ -57,17 +57,17 @@ If your organization decides to end the collaboration with a partner, you must m
 
 - Support contact details
 
-    1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the **Support** menu, choose **Manage Support Contact**.
+    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the **Support** menu, choose **Manage Support Contact**.
     2. Verify that the values in the **Name**, **Email address**, and the **Website** fields are still relevant; if not, then delete or modify the values.
 
 - Notification recipients
 
-    1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], on the left side, choose **Notification recipients**
+    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], on the left side, choose **Notification recipients**
     2. Verify that the list of email addresses are still relevant; if not, then delete or modify the values.
 
 - Application Insights key (if this was set up by the partner)
 
-    1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the top menu, choose **Application Insights Key**.
+    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the top menu, choose **Application Insights Key**.
 
     2. Remove the value of the **Instrumentation Key**
 
