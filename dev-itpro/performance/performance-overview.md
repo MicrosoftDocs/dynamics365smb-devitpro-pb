@@ -14,12 +14,12 @@ author: KennieNP
 
 The following sections help you understand and improve the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The content is centered around the different ways a functional consultant, a developer, or an administrator can make changes with a performance impact.
 
+- Visit [Performance Tips for Business Users](performance-users.md) to learn more about tips on how you can work with end-users to improve the performance.
 - Visit [How Application Configurations Affect Performance](performance-application.md) to learn about how in-product configurations affect performance.
 - Visit [Performance Topics For Developers](performance-developer.md) to learn about how to code for performance in AL.
 - Visit [Performance in Business Central Online](performance-online.md) to learn more about performance in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service.
 - Visit [Performance of Business Central On-Premises Installations](performance-onprem.md) to learn more about the various ways the different components in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be configured to achieve better performance for an on-premises installation.
 - Visit [How to Work with a Performance Problem](performance-work-perf-problem.md) to learn more on how to tackle a performance problem.
-- Visit [Performance Tips for Business Users](performance-users.md) to learn more about tips on how you can work with end-users to improve the performance.
 
 
 The video series *Performance Considerations when Building an App* is also a good starting point to learn more about performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
