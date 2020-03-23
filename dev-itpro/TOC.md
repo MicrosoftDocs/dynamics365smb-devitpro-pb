@@ -130,7 +130,7 @@
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ###  App Management for ISVs
-#### [Introdution](administration/fame/app-management-overview.md)
+#### [Introduction](administration/fame/app-management-overview.md)
 #### [Fixed App Management Endpoint API](administration/fame/fame-api.md)
 ## On-Premises
 ### [Administration of Business Central On-Premises](administration/administration.md)
