@@ -911,3 +911,28 @@ GET /v1.0/apps/{appId}/roles
 - `text/plain`
 - `application/json`
 - `text/json`
+-->
+
+## Getting detailed error messages
+
+To get detailed error messages from FAME API calls, wrap the calls in a try-catch block, as shown in the following PpwerShell : 
+
+```powershell
+try {
+    Invoke-WebRequest ....
+} 
+catch [System.Net.WebException]
+{
+    $Exception = $_.Exception
+    $respStream = $Exception.Response.GetResponseStream()
+    $reader = New-Object System.IO.StreamReader($respStream)
+    $respBody = $reader.ReadToEnd() | ConvertFrom-Json | ConvertTo-Json -Depth 100
+    $reader.Close();
+    Write-Error $Exception.Message
+    Write-Error $respBody -ErrorAction Stop
+}
+```
+
+## See Also
+
+[App Management for ISVs](app-management-overview.md)  
