@@ -13,21 +13,27 @@ ms.author: jswymer
 
 # Fixed App Management Endpoint API
 
+## Entities
+
 ## App
 
 ### Description
 
-The `app` entity represents a Business Central App that has been registered with the service and can therefore be managed via the API.  
-It contains some basic metadata about the app, such as its ID, the Azure Active Directory Tenant ID of the publisher's organization, and which Azure location the respective .app files and other metadata should be stored in.  
-Note that an app does not refer to any specific .app file or version of the app.
+The `app` entity represents a Business Central App that has been registered with the service and so it can be managed via the API. The `app` entity contains some basic metadata about the app, such as:
+- its ID
+- the Azure Active Directory Tenant ID of the publisher's organization
+- which Azure location the respective .app files and other metadata should be stored in.
+
+> [!NOTE]
+> An app doesn't refer to any specific .app file or version of the app.
 
 ### Properties
 
 |Name|Description|Schema|
 |---|---|---|
-|**id**|The ID of the app. This must remain the same across all app versions.|string (uuid)|
+|**ID**|The ID of the app. The ID must remain the same across all app versions.|string (uuid)|
 |**publisher**|The publisher's name.|string|
-|**publisherAadTenantId**|The Id of the Azure Active Directory tenant that represents the publisher's organization.|string (uuid)|
+|**publisherAadTenantId**|The ID of the Azure Active Directory tenant that represents the publisher's organization.|string (uuid)|
 |**publisherContactEmail**|The publisher's contact e-mail address.|string|
 |**storageLocation**|The Azure location in which data related to this app should be stored.|string|
 |**_etag**|The entity tag that contains a value unique to the entity's current state.|string|
@@ -36,7 +42,8 @@ Note that an app does not refer to any specific .app file or version of the app.
 
 ### List apps
 
-Lists all apps the current `principal` has access to that match the provided (optional) filter.
+Lists all apps that match the provided (optional) filter that the current `principal` can access.
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=<odata_filter>
 ```
@@ -152,6 +159,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ### Add or update country
 
 Adds a new `country` to the specified `app` or updates an existing one.
+
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}
 ```
@@ -184,11 +192,11 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ### Description
 
 The `principal` entity represents an Azure Active Directory `user` or `application` that has some level of access to an `app`.  
-Principal can have different roles that determine which actions they are allowed to perform.
+Principal can have different roles that determine which actions they're allowed to do.
 The currently supported roles are:
-- `Owner` - Owners are allowed to perform all available actions on all entities.
+- `Owner` - Owners are allowed to do all available actions on all entities.
 - `Contributor` - Contributors have similar permissions to owners, except that they aren't allowed to add/update principals.
-- `Reader` - Readers can read information about the various entities, but cannot add/update anything.
+- `Reader` - Readers can read information about the various entities, but can't add/update anything.
 
 ### Properties
 |Name|Description|Schema|
@@ -234,22 +242,26 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ### Get principal by ID
+
 Gets the `principal` with the specified ID in the specified `app`.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
 ```
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app that the principal belongs to.|string (uuid)|
 |path|id|The ID of the principal.|string (uuid)|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
 ```
 
 #### Example Response
+
 ```json
 {
     "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
@@ -276,18 +288,22 @@ DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{i
 |path|id|The ID of the principal.|string (uuid)|
 
 #### Example Request
+
 ```
 DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
 ```
 
-
 ### Add or update principal
+
 Adds or updates the specified `principal` that belongs to the specified `app`.
 **Note:** Only principals with the `Owner` role are allowed to add or update principals.
+
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app that the principal belongs to.|string (uuid)|
@@ -295,6 +311,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id
 |body|principal|The properties that should be added or updated.|[Principal](#principal)|
 
 #### Example Request
+
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
 
@@ -306,6 +323,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```
 
 #### Example Response
+
 ```json
 {
     "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
@@ -319,11 +337,14 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```
 
 ## Version
+
 ### Description
-A `version` represents a .app file that has been uploaded for a specific `country` in an `app`.  
+
+A `version` represents an .app file that has been uploaded for a specific `country` in an `app`.  
 If a version of an app should be available in multiple countries, then the .app file needs to be uploaded to each country separately.
 
 ### Properties
+
 #### Version
 |Name|Description|Schema|
 |---|---|---|
@@ -344,6 +365,7 @@ If a version of an app should be available in multiple countries, then the .app 
 |**_etag**|The entity tag that contains a value unique to the entity's current state.|string|
 
 #### Dependency
+
 |Name|Description|Schema|
 |---|---|---|
 |**appId**|The dependency app ID.|string (uuid)|
@@ -353,11 +375,13 @@ If a version of an app should be available in multiple countries, then the .app 
 
 
 ### List versions
+
 Lists all `versions` that match the provided filter.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/v1.0/apps/{appId}/countries/{countryCode}/versions?$filter=<odata_filter>
 ```
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app to list the versions for.|string (uuid)|
@@ -365,11 +389,13 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 |query|$filter|Restricts the set of items returned.|OData filter|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions?$filter=MajorVersion eq 16 and MinorVersion eq 0
 ```
 
 #### Example Response
+
 ```json
 {
     "value": [
@@ -402,11 +428,15 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ### Upload version
-Uploads a .app file into the specified `app` and `country` based on the provided package contents.
+
+Uploads an .app file into the specified `app` and `country` based on the provided package contents.
+
 ```
 POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app.|string (uuid)|
@@ -414,12 +444,14 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 |body|requestData|The request data.|[Upload Version Request](#upload-version-request)|
 
 #### Upload version request
+
 |Name|Description|Schema|
 |---|---|---|
 |**initialAvailability**|The initial availability that the uploaded app version should have.|enum (Preview, Available, Deprecated)|
 |**packageContents**|The base64-encoded contents of the package (.app file) to upload.|string (byte)|
 
 #### Example Request
+
 ```
 POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions
 
@@ -431,6 +463,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 ```
 
 #### Example Response
+
 ```json
 {
     "version": "16.0.1.2",
@@ -459,11 +492,14 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 ```
 
 ### Get version
+
 Gets the `version` in the specified `app` and `country`.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions/{versionNumber}
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app.|string (uuid)|
@@ -471,11 +507,13 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 |path|versionNumber|The version number.|string|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2
 ```
 
 #### Example Response
+
 ```json
 {
     "version": "16.0.1.2",
@@ -504,6 +542,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ### Update version
+
 Updates the `version` in the specified `app` and `country` with the provided updated data.  
 **Note:** only some properties can be updated.
 ```
@@ -511,6 +550,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 ```
 
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app that the version belongs to.|string (uuid)|
@@ -519,6 +559,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 |body|version|The properties that should be updated.|[Version](#version)|
 
 #### Example Request
+
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2
 
@@ -528,6 +569,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```
 
 #### Example Response
+
 ```json
 {
     "version": "16.0.1.2",
@@ -556,10 +598,13 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```
 
 ## Environment
+
 ### Description
+
 Represents a customer's `environment` that has a specific `version` of an `app` installed.
 
 ### Properties
+
 |Name|Description|Schema|
 |---|---|---|
 |**aadTenantId**|The ID of the customer's Azure Active Directory tenant.|string (uuid)|
@@ -572,6 +617,7 @@ Represents a customer's `environment` that has a specific `version` of an `app` 
 |**version**|The version of the installed app.|string|
 
 ### List environments
+
 Lists the `environment`s in the specified `app` and `country` that have the app installed.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environments
@@ -584,11 +630,13 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 |query|$filter|Restricts the set of items returned.|OData filter|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environments?$filter=version eq '16.0.1.2'
 ```
 
 #### Example Response
+
 ```json
 {
     "value": [
@@ -607,11 +655,14 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ## Environment Hotfix
+
 ### Description
+
 An `environment hotfix` represents the action of pushing out an update (new `version`) of an `app` to a customer's `environment` as part of fixing a critical issue.  
-Only `version`s where the major and minor components have not changed are able to be pushed as hotfixes.
+Only `version`s where the major and minor components haven't changed can be pushed as hotfixes.
 
 ### Properties
+
 |Name|Description|Schema|
 |---|---|---|
 |**appId**|The ID of the app.|string (uuid)|
@@ -626,16 +677,20 @@ Only `version`s where the major and minor components have not changed are able t
 |**ignoreUpgradeWindow**|Determines whether the environment's upgrade window should be ignored when applying the hotfix.|boolean|
 |**runAfter**|Date and time (UTC) after which hotfix should start to be applied.|string (date-time)|
 |**sourceAppVersion**|The version of the app that was installed before the hotfix was applied.|string|
-|**startedOn**|Date and time (UTC) when the hotfix was started to be applied.|string (date-time)|
+|**startedOn**|Date and time (UTC) when the hotfix started to be applied.|string (date-time)|
 |**status**|Status.|enum (Scheduled, Running, Succeeded, Failed, Canceled, Skipped)|
-|**targetAppVersion**|The version of the app containing the fixes that should be applied. This is the version the app will be updated to.|string|
+|**targetAppVersion**|The version of the app containing the fixes that should be applied. The value is the version that the app will be updated to.|string|
 
 ### List environment hotfixes
+
 Lists all the hotfix operations that were requested for a specific `app` and `country`.
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes?$filter=<odata_filter>
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app.|string (uuid)|
@@ -643,11 +698,13 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 |query|$filter|Restricts the set of items returned.|OData filter|
 
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes?$filter=targetAppVersion eq '16.0.1.2'
 ```
 
 #### Example Response
+
 ```json
 {
     "value": [
@@ -670,25 +727,29 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ### Get environment hotfix
+
 Gets an `environment hotfix` operation by its ID.  
 This endpoint can be used to track the status/outcome of a hotfix request.
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes/{id}
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app.|string (uuid)|
 |path|countryCode|The country code.|string|
 |path|id|The ID of the hotfix request.|string (uuid)|
 
-
 #### Example Request
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes/db311b6a-062e-4756-b17e-73aeb89c45cc
 ```
 
 #### Example Response
+
 ```json
 {
     "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
@@ -707,13 +768,16 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```
 
 ### Schedule environment hotfix
+
 Schedules a hotfix for a specific `environment` to the specified `version`.  
 The hotfix operation ID that is returned can be used to track the status/outcome of the operation (see: [Get environment hotfix](#get-environment-hotfix)).
 
 ```
 POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app.|string (uuid)|
@@ -721,6 +785,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 |body|environmentHotfix|Environment hotfix to schedule.|[Environment Hotfix](#environment-hotfix)|
 
 #### Example Request
+
 ```
 POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes
 
@@ -732,10 +797,10 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
     "environmentName": "MyCustomer",
     "environmentType": "Production"
 }
-
 ```
 
 #### Example Response
+
 ```json
 {
     "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
@@ -754,13 +819,16 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 ```
 
 ### Update environment hotfix
+
 Updates an existing `environment hotfix` operation.  
-This can currently only be used to cancel a requested hotfix that has not yet started running.
+It can currently only be used to cancel a requested hotfix that hasn't yet started running.
 
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes/{id}
 ```
+
 #### Parameters
+
 |Type|Name|Description|Schema|
 |---|---|---|---|
 |path|appId|The ID of the app.|string (uuid)|
@@ -769,6 +837,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 |body|environmentHotfix|Environment hotfix properties to update.|[Environment Hotfix](#environment-hotfix)|
 
 #### Example Request
+
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes/db311b6a-062e-4756-b17e-73aeb89c45cc
 
@@ -779,6 +848,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```
 
 #### Example Response
+
 ```json
 {
     "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
