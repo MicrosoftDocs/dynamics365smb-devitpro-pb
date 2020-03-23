@@ -50,7 +50,7 @@ Visible = false;
  Using a variable for field and action controls requires that the variable be resolved by the [OnInit Trigger](../triggers/devenv-oninit-trigger.md) or [OnOpenPage Trigger](../triggers/devenv-onopenpage-trigger.md).  
 
 ### UI Customization and Visibility of Controls
-When a part, field, action or view is hidden by setting the **Visible** property, users are able to access and display that control again using personalization and role customization features in the user interface. The **Visible** property is not a replacement for user permissions or the application of proper security practices.  
+When a part, field, action, or view is hidden by setting the **Visible** property, users are able to access and display that control again using personalization and role customization features in the user interface. The **Visible** property is not a replacement for user permissions or the application of proper security practices.  
 
 When the **Visible** property is specified by a Boolean variable, users can choose to hide the control while the Boolean evaluates to true, but cannot forcibly show the control while the control Boolean evaluates to false.
 
