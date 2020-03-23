@@ -41,7 +41,7 @@ This type of environment can be useful for repeatable demos that rely on Office 
 [!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
 > [!IMPORTANT]
-> Environments that are based on Office 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the Office 365 demo account expires. If a prospect wants to use [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to hel run their business, they should sign up for a trial using their own email account. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+> Environments that are based on Office 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the Office 365 demo account expires. If a prospect wants to use [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to help run their business, they should sign up for a trial using their own email account. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
 ## Prepare for major updates with preview environments
 
