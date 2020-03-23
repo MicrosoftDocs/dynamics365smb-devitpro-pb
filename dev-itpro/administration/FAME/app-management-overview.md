@@ -37,11 +37,8 @@ FAME API lets you apply modern continuous integration (CI), continuous deploymen
 
 For more information about the API, see [Fixed App Management Endpoint API](fame-api.md).
 
-Note: Direct access to the FAME API is only available for the ISVs working with the Embed apps at this point.
-
-### Add on and Connect Apps 
-
-At this point, Add-on and Connect apps don't have direct access to the FAME API. To manage versions of these apps, you use Partner Center. You upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that have these apps installed.
+> [!NOTE]
+> At this point, Direct access to the FAME API is only available for the ISVs working with the Embed apps; not Add-on and Connect apps. To manage versions of Add-on and Connect apps, you use Partner Center to upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that have these apps installed.
  
 ## Legal
 
