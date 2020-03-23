@@ -16,29 +16,29 @@ ms.author: jswymer
 
 An [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment is built as a collection of apps. These apps include Microsoft apps and third-party apps, for example, apps from AppSource. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
-To keep your tenant up-to-date and running smoothly, you'll occasionally have to do some maintenance work. The work falls into a couple categories:
-
-- Installing updates to existing apps
-
-    Occasionally, updates are made available for the apps. App updates can add new features and fix known problems. 
-- Installing new apps
-
-    Sometimes completely new apps are made available for fist-time installation.
-
+Updates are frequently made available for these apps. App updates can add new features and fix known problems. So to keep your tenant up to date and running smoothly, you occasionally check for and install the latest updates for your apps.
 
 To help you manage app updates, the administration center includes the **Manage Apps** page.
 
 ## Get an overview of apps and available updates
 
-A partner or ISV might notify that there is an updated for an app. Otherwise, you can always go to the **Manage Apps** page to get an overview the apps that are running on the environment. To get to this page, select **Environments** > **Sandbox** > **Manage Apps**.
+Sometimes, you'll hear about an update directly from a partner or ISV. Otherwise, you can always go to the **Manage Apps** page to get an overview the apps that are running on the environment.
 
-The **Manage Apps** lists not only all the apps, but indicates whether updates are available.
+To get to this page, select **Environments** > **Sandbox** or **Production** > **Manage Apps**.
+
+The **Manage Apps** lists all the apps installed on the environment, and indicates whether updates are available.
+
+If there is an update available for an app, then there are two indications:
+- The **Latest version available** column contains the version number of the app update.
+- The **Available update action** column conatins a link. 
+
+
 
 ## Recommended update an app
 
 1. Create a sandbox environment.
 
-    You shouldn't install a new app or an app update directly on a production environment. You want to make sure that the any changes introduced by the version do not disrupt the operational flow or cause problems. So first, try it on a Sandbox environment.
+    Don't install a new app or an app update directly on a production environment. You want to make sure that changes introduced by the version don't disrupt the operational flow or cause problems. So first, try it on a Sandbox environment.
 2. 
 
 ## See also
