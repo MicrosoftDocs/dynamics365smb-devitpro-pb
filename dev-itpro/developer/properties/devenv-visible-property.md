@@ -45,7 +45,7 @@ Visible = false;
  On pages, you use the **Visible** property to show or hide group, part, field, and action controls. You can show or hide the control either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
 
 > [!NOTE]  
->  The dynamic options are only possible for group, part and action controls.  
+>  The dynamic options are only possible for group, part, and action controls.  
 
  Using a variable for field and action controls requires that the variable be resolved by the [OnInit Trigger](../triggers/devenv-oninit-trigger.md) or [OnOpenPage Trigger](../triggers/devenv-onopenpage-trigger.md).  
 
@@ -56,5 +56,5 @@ When the **Visible** property is specified by a Boolean variable, users can choo
 
 
 ## See Also  
- [Properties](devenv-properties.md)   
+[Properties](devenv-properties.md)   
 [InDataSet Property](devenv-indataset-property.md)
