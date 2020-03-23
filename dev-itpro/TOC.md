@@ -120,6 +120,7 @@
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
+#### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
 #### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Managing Updates](administration/tenant-admin-center-update-management.md)
@@ -128,7 +129,7 @@
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
-###  App Management
+###  App Management for ISVs
 #### [Introdution](administration/fame/fame-overview.md)
 #### [Fixed App Management Endpoint API](administration/fame/fame-api.md)
 ## On-Premises

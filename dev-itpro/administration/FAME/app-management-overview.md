@@ -27,7 +27,7 @@ The FAME API is a REST-based that is accessible directly from Embed apps. It req
 - Retrieve the list of the customers' environments that have your app installed.
 - Schedule the automatic deployment of the app hotfixes for their customers' environments.  
 
-With FAME API, you can apply modern continuous integration (CI), continuous deployment (CD), and DevOps practices to your work. For example, FAME lets you:
+FAME API lets you apply modern continuous integration (CI), continuous deployment (CD), and DevOps practices to your work, for example:
 
 - Automate operations by using Microsoft Azure DevOps Services or other available process automation tools.
 - Organize role-based access control.
