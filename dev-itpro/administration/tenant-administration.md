@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 03/20/2020
+ms.date: 03/23/2020
 ms.author: edupont
 ---
 
@@ -54,7 +54,7 @@ If your organization decides to switch to another partner, you must take the fol
     2. In the details pane, choose **Remove delegated admin**
     3. In the confirmation pane, choose **Remove**
 
-    You must also [remove their users](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) from your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+    You must also [disable their user accounts](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) from your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 3. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner did not already clear their settings.  
 
     For more information, see [Internal administrators](tenant-admin-center.md#internal-administrators).
