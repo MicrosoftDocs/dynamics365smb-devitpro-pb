@@ -10,6 +10,7 @@
 #### [Authoring Guide](help/writing-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
+#### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!--Learn-->
 ## Training and Readiness
 ### Learning Catalogs
@@ -634,6 +635,7 @@
 # Performance
 ## [Performance Overview](performance/performance-overview.md)
 ## [Application](performance/performance-application.md)
+## [Tips for Business Users](performance/performance-users.md)
 ## [Developer](performance/performance-developer.md)
 ## [Online](performance/performance-online.md)
 ## [On-Premises](performance/performance-onprem.md)

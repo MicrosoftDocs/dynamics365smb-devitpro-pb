@@ -1,7 +1,7 @@
 ---
 title: "Performance Overview"
 ms.custom: na
-ms.date: 01/29/2020
+ms.date: 03/23/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ The following sections help you understand and improve the performance of [!INCL
 - Visit [Performance in Business Central Online](performance-online.md) to learn more about performance in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service.
 - Visit [Performance of Business Central On-Premises Installations](performance-onprem.md) to learn more about the various ways the different components in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be configured to achieve better performance for an on-premises installation.
 - Visit [How to Work with a Performance Problem](performance-work-perf-problem.md) to learn more on how to tackle a performance problem.
+- Visit [Performance Tips for Business Users](performance-users.md) to learn more about tips on how you can work with end-users to improve the performance.
 
 
 The video series *Performance Considerations when Building an App* is also a good starting point to learn more about performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
