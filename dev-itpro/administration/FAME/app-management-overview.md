@@ -19,7 +19,7 @@ As an authorized ISV, there are three types of apps that you can make available 
 
 ## About FAME API
 
-The FAME API is a REST-based that is accessible directly from Embed apps. It requires that you're an authorized ISV and your apps have been registered by Microsoft. Once registered, you access the FAME API by using this global endpoint: [https://apps.businesscentral.dynamics.com](https://apps.businesscentral.dynamics.com).
+The FAME API is a REST-based API. It requires that you're an authorized ISV and your apps have been registered by Microsoft. Once registered, you access the FAME API by using this global endpoint: [https://apps.businesscentral.dynamics.com](https://apps.businesscentral.dynamics.com).
 
 In short, you can use the API for the following operations:
 
@@ -37,9 +37,11 @@ FAME API lets you apply modern continuous integration (CI), continuous deploymen
 
 For more information about the API, see [Fixed App Management Endpoint API](fame-api.md).
 
+Note: Direct access to the FAME API is only available for the ISVs working with the Embed apps at this point.
+
 ### Add on and Connect Apps 
 
-At this point, Add-on and Connect apps don't have direct access to the FAME API. To manage versions of these apps, you use Partner Center. You upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that use.
+At this point, Add-on and Connect apps don't have direct access to the FAME API. To manage versions of these apps, you use Partner Center. You upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that have these apps installed.
  
 ## Legal
 
