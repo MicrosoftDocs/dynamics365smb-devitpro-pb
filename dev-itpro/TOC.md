@@ -128,7 +128,8 @@
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
-###  Fixed App Management Endpoint
+###  App Management
+#### [Introdution](administration/fame/fame-overview.md)
 #### [Fixed App Management Endpoint API](administration/fame/fame-api.md)
 ## On-Premises
 ### [Administration of Business Central On-Premises](administration/administration.md)
