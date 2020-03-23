@@ -13,8 +13,6 @@ ms.author: jswymer
 
 # Fixed App Management Endpoint API
 
-## Entities
-
 ## App
 
 ### Description
@@ -73,8 +71,6 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=storageLocation 
 ```
 
 ## Country
-
-### Description
 
 The `country` entity represents a country that an `app` is available in.  
 A country is represented by its ISO 3166-1 alpha-2 (2-letter) country code.  
