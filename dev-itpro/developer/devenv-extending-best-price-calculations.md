@@ -21,7 +21,7 @@ Price calculation for 2019 release wave 2 will continue to work as it always has
 > The new price calculation capabilities in 2020 release wave 2 exist in code only, and do not include any user experience. We will provide that in an upcoming release. For now, to use the new capability you must create your own page.
 
 ## Price Calculation Extensibility
-Price calculation are based on the **Price Calculation Setup** table, where you choose one of the existing implementations of price calculation, as shown in the following image.
+Price calculation are based on the **Price Calculation Setup** table, where you can choose an existing implementations of price calculation, as shown in the following image.
 
 :::image type="content" source="../media/best-pricing-diagram1-setup.png" alt-text="Diagram showing a price calculation implementation.":::
 
@@ -29,13 +29,11 @@ The combination of a price type (sales or purchase) and asset type (item, resour
 
 The codeunits that implement specific calculations subscribe to the OnFindSupportedSetup() event of codeunit 7001 "Price Calculation Mgt." and return the combinations of setup records that can be implemented by the current codeunit. The **Price Calculation Setup** table collects these combinations and you can choose one of the existing concurrent implementations. For example, the calculation of sale prices for all asset types can be implemented by the "Business Central (Version 16.0)" codeunit, but calculation of purchase prices – by "Business Central (Version 15.0)" codeunit.
 
-<!--Insert image? Is this UI available?-->
-
 If you want to add concurrent implementations and new methods you can add detailed setup lines that define combinations of assets and sources that use a method that you specify. For example, the following image shows detailed lines for the combination of asset number, source group, and source number. 
 
 :::image type="content" source="../media/best-pricing-diagram2-detailed-setup.png" alt-text="Diagram showing an example of a default setup.":::
 
-The detailed setup lines shown in the following image mean that all sales prices for Customer 10000 and job GUILFORD, 10 CR are calculated by the Business Central (version 16.0) implementation codeunit.
+<!--The detailed setup lines shown in the following image mean that all sales prices for Customer 10000 and job GUILFORD, 10 CR are calculated by the Business Central (version 16.0) implementation codeunit.-->
 
 ## Data Structure
 The Business Central (Version 15.0) calculation uses the following tables that store information about prices, costs, and discounts: 
@@ -127,13 +125,13 @@ The Price Source interface defines methods for a generic price source. The list 
 :::image type="content" source="../media/best-pricing-diagram6-price-source-type.png" alt-text="Diagram showing methods for a generic price source.":::
 
 ## Examples of Extended Price Calculations
-You can extend price calculations if you want them to include other sources or use different calculations. The following sections provide some examples.
+You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide some examples.
 
 ### Example: Change an Item Price When Combined with Another Item 
-Scenario: Let's say want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. In this example we'll use licenses for Business Central.
+Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example, but the same principles would apply in any upsell scenario.
 
 > [!NOTE]
-> The prices, names, and combinations are fictional and intended only for use in this example. They do not reflect anything in the real-world.
+> The prices, names, and combinations in this example are completely fictional and intended only to support the scenario described here. They do not reflect anything in the real-world.
 
 We have the following licenses in our price list.
 
@@ -157,7 +155,7 @@ If you buy 70061 or 70062 alone their prices do not change. However, let's say t
 
 Let's look at some sample extensions that will implement this for us. 
 
-The first extension adds a new field named Attach to Line No. to the Sales Line table and recalculates pricing when we make a change. This field will let us create the combinations that determine our discounts. It also copies the GetPriceCalculationHandler() function from the Sales Line table.
+The first table extension adds a new field named Attach to Line No. to the Sales Line table and recalculates pricing when we make a change. This field will let us create the combinations that determine our discounts. It also copies the GetPriceCalculationHandler() function from the Sales Line table.
 
 ```
 tableextension 50001 "Attach Price" extends "Sales Line"
@@ -191,7 +189,7 @@ tableextension 50001 "Attach Price" extends "Sales Line"
 
 ```
 
-The next extension adds the Attach Line No field to the Sales order page (subform).
+The following page extension adds the Attach Line No. field to the Sales order page (subform).
 
 ```
 pageextension 50001 "Attach Price" extends "Sales Order Subform"
@@ -237,7 +235,7 @@ tableextension 50003 "Attach To Price - Buffer" extends "Price Calculation Buffe
 ```
 The calculation that links these three new fields is based on the following events: 
 
-- OnAfterSetFilters() – Sets the filter on the price list line when the best price is being searched; 
+- OnAfterSetFilters() – Sets the filter on the price list line when the best price is being searched. 
 - OnAfterFillBuffer() – Copies the value from the sales line to the buffer. 
 - FindItemToAttachToInLine() - Defines the value of the item number stored in the sales line that we attach to.
 
@@ -265,7 +263,7 @@ codeunit 50004 "Attached Price Mgt."
     end;
 }
 ```
-As stated earlier, the new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following code to extend the page with the new control.
+The new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following code to extend the page with the new control.
 
 ```
    field("Attach To Item No."; "Attach To Item No.")
