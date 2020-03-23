@@ -30,7 +30,7 @@ The **Manage Apps** lists all the apps installed on the environment, and indicat
 
 If there is an update available for an app, then there are two indications:
 - The **Latest version available** column contains the version number of the app update.
-- The **Available update action** column conatins a link. 
+- The **Available update action** column contains a link. 
 
 
 
