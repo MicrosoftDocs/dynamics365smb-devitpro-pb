@@ -23,7 +23,7 @@ The FAME API is a REST-based that is accessible directly from Embed apps. It req
 
 - Make major, minor, and hotfix app updates available to customers for installation from the Business Central administration center.
 
-    You make the updates available by uploading them to the FAME App Repository. The new app versions will then be available on **Manage Apps** page of the customer's Business Central administration.
+    You make the updates available by uploading them to the FAME App Repository. The new app versions will then be available on **Manage Apps** page of the Business Central administration.
 - Retrieve the list of the customers' environments that have your app installed.
 - Schedule the automatic deployment of the app hotfixes for their customers' environments.  
 
@@ -37,7 +37,7 @@ For more information about the API, see [Fixed App Management Endpoint API](fame
 
 ### Add on and Connect Apps 
 
-At this point, Add-on and Connect apps don't have direct access to the FAME API. To manage versions of these apps, you use in Partner Center, where you upload them to the Business Central offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. The uploaded apps are then made available for the customers in Business Central administration center on the **Manage Apps** page.  
+At this point, Add-on and Connect apps don't have direct access to the FAME API. To manage versions of these apps, you use Partner Center. You upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that use.
  
 ## Legal
 
@@ -46,3 +46,7 @@ https://partner.microsoft.com/en-us/solutions/business-applications/isv-publish
  
 FAME API is governed by Microsoft APIs Terms of Use: 
 https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use  
+
+## See Also
+
+[Manage Apps in the Business Central Administration Center](../tenant-admin-center-manage-apps.md)
