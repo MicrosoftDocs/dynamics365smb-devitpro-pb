@@ -37,7 +37,7 @@ For more information about the API, see [Fixed App Management Endpoint API](fame
 
 ### Add-on and Connect Apps 
 
-At this point, Add-on and Connect apps don't have direct access to the FAME API. Initial, major, minor and hotfix versions of these apps are uploaded using the Business Central offers, which you create and manage in Partner Center. These apps then undergo technical and marketing validation and become available via AppSource.
+At this point, Add-on and Connect apps don't have direct access to the FAME API. Initial, major, minor, and hotfix versions of these apps are uploaded using the Business Central offers, which you create and manage in Partner Center. These apps then undergo technical and marketing validation and become available via AppSource.
 
 The uploaded apps, which passed the validation, also become available for the customers in the Business Central Admin Center on the **Manage Apps** page.  
  
