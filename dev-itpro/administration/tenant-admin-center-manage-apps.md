@@ -38,21 +38,25 @@ The **Manage Apps** lists all the apps installed on the environment, and indicat
 
 ## Install an app update
 
-We don't recommend installing app updates directly on a production environment. You want to make sure that changes introduced by the version don't disrupt the operational flow or cause problems. So first, try it on a Sandbox environment.
+We don't recommend installing an app update directly on a production environment. You want to make sure that changes introduced by the version don't disrupt the operational flow or cause problems. So first, try it on a Sandbox environment.
 
-1. Create a sandbox environment.
-2. Select Environment > Sandbox > Go the 
-2. Find the app in the list that you want to update.
-3. In the **Available update action** column for the app, select one of the following actions:
+1. If you don't have a sandbox environment, create one.
+
+    For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment)
+2. Open the Sandbox environment, and select **Manage Apps**.
+3. On the **Manage Apps**, find the app in the list that you want to update.
+4. Do In the **Available update action** column for the app, select one of the following actions:
 
     - Select **Install update** to install the update.
     - Select **Action required** to see what needs to be done before you can install the update. Look at the **Requirements for App Updates** pane, and install the requirements.
 
-4. Wait for the app to be installed.
+5. Wait for the app to be installed.
 
-    The new app version is scheduled installation. When a time slot opens up, the app will be published, synchronized, and installed automatically in background. This process usually takes a few seconds. Users won't be interrupted.
+    The new app version is automatically scheduled installation. When a time slot opens up, the app will be published, synchronized, and installed in the background. This process usually takes a few seconds, and users won't be interrupted.
 
-    Select **Refresh** occasionally to check the status. If the app installs successfully, the new version displays in the **Installed version** column and the **Available update action** column is **Up to date**.
+    Select **Refresh** occasionally to check the status.
+    - If the app installs successfully, the new version displays in the **Installed version** column and the **Available update action** column is **Up to date**.
+    - If the installation failed the 
 
 4. If the app update installs successfully, test it on the Sandbox environment.
 5. If the app update works as expected, switch to the production environment, and repeat step 3.  
