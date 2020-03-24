@@ -1272,10 +1272,11 @@ GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
 -->
 **BODY:**
 
+```
 { 
 "targetVersion": "1.3.0.1" 
 }
-
+```
 **Response (app operation):**
 
 Returns information about the scheduled app update request.
@@ -1294,8 +1295,6 @@ Returns information about the scheduled app update request.
 ### Get Operation
 
 Gets information about app update installations.
-
-Method & Path: GET /apps/<app_id>/operations/[<id>] 
 
 ```
 GET /{applicationType}/environments/{environmentName}/apps/{app_id}/operations/[{id}]
