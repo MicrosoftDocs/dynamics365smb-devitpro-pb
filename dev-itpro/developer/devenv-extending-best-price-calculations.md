@@ -13,15 +13,17 @@ author: bholtorf
 # Extending Price Calculations
 If you record special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
 
-This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1. 
+2020 release wave 1 introduces a second implementation of price calculations that will be available as an alternative to the calculations that were available in 2019 release wave 2 and earlier versions. This new implementation has the advantage that it is much easier to extend, for example, with new calculations.
 
-Price calculation for 2019 release wave 2 will continue to work as it always has. The changes for 2020 release wave 1 are an alternative implementation that you can extend. The calculations work the same, but are restructured so that they are extensible. 
+Price calculations that were available in 2019 release wave 2 are unchanged. The new calculations in 2020 release wave 1 are an alternative implementation that you can extend. 
 
 > [!NOTE]
-> The new price calculation capabilities in 2020 release wave 2 exist in code only, and do not include any user experience. We will provide that in an upcoming release. For now, to use the new capability you must create your own page.
+> The new price calculation capabilities in 2020 release wave 1 exist in code only, and do not include any user experience. We will provide that in an upcoming release. For now, to use the new capability you must create your own page.
+
+This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1. 
 
 ## Price Calculation Extensibility
-Price calculation are based on the **Price Calculation Setup** table, where you can choose an existing implementations of price calculation, as shown in the following image.
+Price calculation are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
 
 :::image type="content" source="../media/best-pricing-diagram1-setup.png" alt-text="Diagram showing a price calculation implementation.":::
 
@@ -29,13 +31,13 @@ The combination of a price type (sales or purchase) and asset type (item, resour
 
 The codeunits that implement specific calculations subscribe to the OnFindSupportedSetup() event of codeunit 7001 "Price Calculation Mgt." and return the combinations of setup records that can be implemented by the current codeunit. The **Price Calculation Setup** table collects these combinations and you can choose one of the existing concurrent implementations. For example, the calculation of sale prices for all asset types can be implemented by the "Business Central (Version 16.0)" codeunit, but calculation of purchase prices – by "Business Central (Version 15.0)" codeunit.
 
-If you want to add concurrent implementations and new methods you can add detailed setup lines that define combinations of assets and sources that use a method that you specify. For example, the following image shows detailed lines for the combination of asset number, source group, and source number. 
+If you want to add implementations and new methods you can add detailed setup lines that define combinations of the assets and sources that use a method that you specify. For example, the following image shows detailed lines for the combination of asset number, source group, and source number. 
 
 :::image type="content" source="../media/best-pricing-diagram2-detailed-setup.png" alt-text="Diagram showing an example of a default setup.":::
 
 <!--The detailed setup lines shown in the following image mean that all sales prices for Customer 10000 and job GUILFORD, 10 CR are calculated by the Business Central (version 16.0) implementation codeunit.-->
 
-## Data Structure
+## Data Structure Comparison
 The Business Central (Version 15.0) calculation uses the following tables that store information about prices, costs, and discounts: 
 
 * table 7002 "Sales Price" 
@@ -47,14 +49,14 @@ The Business Central (Version 15.0) calculation uses the following tables that s
 * table 1013 "Job Item Price" 
 * table 1012 "Job Resource Price" 
 
-The "Business Central (Version 16.0)" calculation uses the following tables: 
+The Business Central (Version 16.0) calculation uses the following table: 
 
 <!--* table 7000 "Price List" -->
 * table 7001 "Price List Line" 
 
-Table 7001 "Price List Line" is compatible with all tables used by the Business Central (Version 15.0)" calculation. It contains the set of CopyFrom() methods that convert the data from the tables to the Price List Line table. 
+Table 7001 "Price List Line" is compatible with all tables used by the Business Central (Version 15.0) calculation. It contains the set of CopyFrom() methods that convert the data from the tables to the Price List Line table. 
 
-If you extended the version 15 tables you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. Here's are examples that extend the Sales Price table with a Document No. field.
+If you extended the Business Central (Version 15.0) tables you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. Here's are examples that extend the Sales Price table with a Document No. field.
 
 ```
 tableextension 50010 "Document No in Sales Price" extends "Sales Price"
@@ -90,7 +92,7 @@ codeunit 50012 "Copy DocumentNo to Price List"
     end;
 }
 ```
-The Price Calculation Method field is added to all tables that need calculation of prices/discounts: 
+The Price Calculation Method field is added to all tables that need calculated prices and discounts: 
 
 * table 37 "Sales Line" 
 * table 5902 "Service Line" 
@@ -101,12 +103,14 @@ The Price Calculation Method field is added to all tables that need calculation 
 * table 210 "Job Journal Line" 
 * table 1003 "Job Planning Line" 
 
-The following image shows the schema of how the methods called in the Sales Line table get price/discount amounts from either the Sales Price or Price List Line tables.
+The following image shows the schema of how the methods called in the Sales Line table get the price and discount amounts from either the Sales Price or Price List Line tables.
 
 :::image type="content" source="../media/best-pricing-diagram3-data-sources.png" alt-text="Diagram showing an price calculation for a sales line.":::
 
 ## Interface Objects
-Best price calculation uses the following AL interface objects:
+AL interface objects are important for extensibility. They define the capabilities that are available to an object, and allow implementations to differ as long as they comply with the interface requirements. For more information, see [Interfaces in AL](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-interfaces-in-al?branch=April-2020).
+
+Price calculation uses the following AL interface objects:
 
 * Price Calculation
 * Line With Price
@@ -261,7 +265,7 @@ tableextension 50003 "Attach To Price - Buffer" extends "Price Calculation Buffe
 ```
 The calculation that links these three new fields is based on the following events: 
 
-- OnAfterSetFilters() – Sets the filter on the price list line when the best price is being searched. 
+- OnAfterSetFilters() – Sets the filter on the price list line when searching for the price. 
 - OnAfterFillBuffer() – Copies the value from the sales line to the buffer. 
 - FindItemToAttachToInLine() - Defines the value of the item number stored in the sales line that we attach to.
 
@@ -289,7 +293,8 @@ codeunit 50004 "Attached Price Mgt."
     end;
 }
 ```
-The new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following code to extend the page with the new control.
+## Adding User Experience
+The new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following sample code to extend the page with a new control.
 
 ```
    field("Attach To Item No."; "Attach To Item No.")
