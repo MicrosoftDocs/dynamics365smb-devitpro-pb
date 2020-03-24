@@ -20,23 +20,28 @@ Updates are frequently made available for these apps by Microsoft, partners, and
 
 To help you manage app updates, the administration center includes the **Manage Apps** page.
 
-## View installed apps and available updates
+## Check installed apps and available updates
 
-You may hear about an update directly from a partner or ISV. Otherwise, you can always go to the **Manage Apps** page. To get to this page, select **Environments** > Your S**Sandbox** or **Production** > **Manage Apps**.
+You might hear about an update directly from a partner or ISV. Otherwise, you can always go to the **Manage Apps** page. You open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
 
-The **Manage Apps** lists all the apps installed on the environment, and indicates whether updates are available. If an update is available for an app, there are two indications:
+> [!div class="mx-imgBorder"]
+> ![Business Central Admin Center apps](../developer/media/admin/business_central_admin_center_manage_apps.png)
 
-- The **Latest version available** column contains the version number of the updated app.
+The **Manage Apps** lists all the apps installed on the environment, and indicates whether updates are available. When first opened, the system will start checking for updates. Wait for this operation to complete.
+
+When completed, if an update is available for an app, there are two indications:
+
+- The **Latest version available** column contains the new version number of app.
 - The **Available update action** column contains one of the following actions:
 
     |Actions|Descriptions|
     |-------|------------|
-    |**Action required**|This action means that you have to do something before you install the update for the app. For example, you may have to first update another app or install a new app. Select the link and read the **Requirements for App Updates** pane to see what is required.|
+    |**Action required**|This action means that you have to do something before you install the update for the app. This action typically involves another app that this app depends on. For example, you may have to first update another app or install a new app. Select the link and read the **Requirements for App Updates** pane to see what is required.|
     |**Install update**|This action means that the app is ready to install. Select the link to start the installation.|
 
-## Install an app update
+## Install an app update flow
 
-It's not good practice to install an app update directly on a production environment. First make sure the update won't disrupt the operational flow or cause problems. So before installing an app update on the production environment, install and test it on a Sandbox environment.
+It's not good practice to install an app update directly on a production environment. First, you should make sure the update won't disrupt the operational flow or cause problems. So we recommend you install and test it on a Sandbox environment first.
 
 The following steps provide the general flow for upgrading an app.
 
@@ -45,12 +50,11 @@ The following steps provide the general flow for upgrading an app.
     For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment)
 2. Open the Sandbox environment, and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
-4. If **Available update action** column for the app shows the **Install updated** link to install the new version of the app. Go to step 5.
 5. If **Available update action** column for the app shows the **Action required** link, select the link.
 
-    - Read the **Requirements for App Updates** pane to see what the requirements are.
-    - Return to the **Manage Apps** list and
-
+    1. Read the **Requirements for App Updates** pane to see what the requirements are.
+    2. Return to the **Manage Apps** list 
+4. When **Available update action** column for the app shows **Install update**, select this action to install the new version of the app.
 5. Wait for the app to be installed.
 
     The new app version is automatically scheduled installation. When a time slot opens up, the app will be published, synchronized, and installed in the background. This process usually takes a few seconds, and users won't be interrupted.

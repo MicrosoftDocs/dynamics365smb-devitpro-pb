@@ -24,7 +24,7 @@ The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes
 In the list of environments, you can open a page with more details for an environment by choosing the link in the **Name** column of the list for the environment.
 
 > [!div class="mx-imgBorder"]
-> ![View details about an environment](../developer/media/admin/business_central_admin_center_details.v2.png)
+> ![View details about an environment](../developer/media/admin/business_central_admin_center_details-v2.png)
 
 ## Types of environments
 
