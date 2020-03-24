@@ -18,13 +18,15 @@ ms.author: jswymer
  
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment is built as a collection of apps. These apps include Microsoft apps and third-party apps, for example, apps from AppSource. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
-Updates are frequently made available for these apps by Microsoft, partners, and ISVs. App updates add new features and fix known problems. To keep your tenant up to date and running smoothly, you should check for and install the latest updates regularly.
+Updates are frequently made available for these apps by Microsoft, partners, and ISVs. App updates add new features and fix known problems. To keep your environment up to date and running smoothly, you should check for and install the latest updates regularly.
 
-To help you manage app updates, the administration center includes the **Manage Apps** page.
+To help you manage app updates, the administration center includes the **Manage Apps** page. 
+
+Similar to all other features available in the administration center, this functionlaity can be used by the partner (delegated administrator) or a local customer admin. 
 
 ## Get an overview and check for updates
 
-You might hear about an update directly from a partner or ISV. Otherwise, you can always go to the **Manage Apps** page. You open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
+Go to the **Manage Apps** page. Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
 
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center apps](../developer/media/admin/business_central_admin_center_manage_apps.png)
@@ -43,19 +45,22 @@ When completed, if an update is available for an app, there are two indications:
 
 ## Install an app update - the flow
 
-It's not good practice to install an app update directly on a production environment. First, you should make sure the update won't disrupt the operational flow or cause problems. We recommend you install and test it on a Sandbox environment first.
+It's not good practice to install an app update directly on a production environment without trying it on a sandbox environment first. You should make sure the app update won't disrupt the operational flow or cause problems for the users. We recommend you always install and test it on a Sandbox environment first.
 
-The following steps provide the general flow for upgrading an app.
+The following steps provide the general flow for updating an app.
 
 1. If you don't have a sandbox environment, create one.
-
     For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
 2. Open the Sandbox environment and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
-5. If the **Available update action** column for the app shows the **Action required** link, resolve the requirements.
+5. If the **Available update action** column for the app shows the **Action required** link, resolve the update requirements.
 
     See [Resolving requirements for app updates](#requirements).
 4. When the **Available update action** column for the app shows **Install update**, select this action to install the new version of the app.
+
+    > [!Important]
+    > The update will be applied immediately after you accept the confirmation dialogue. The users can continue working during update installation, but depending on the app changes, coming with the update, they may receive a message asking them to log out and login again. It is therefore recommended that you apply the updates outside of normal working hours.
+    
 5. Wait for the app to be installed.
 
     Select **Refresh** occasionally to check the status.
@@ -63,7 +68,7 @@ The following steps provide the general flow for upgrading an app.
     - If the app installs successfully, the new version displays in the **Installed version** column and the **Available update action** column is **Up to date**.
     - If the installation fails the **Available update action** column changes to **Update failed**. See [What to do when an update fails](#failure).
 
-4. If the app update succeeded, test it on the Sandbox environment.
+4. If the app update succeeded, login into the Sandbox environment and test the new app version.
 5. If the app update works as expected on the Sandbox, switch to the production environment, and repeat the installation steps for the app update.
 
     > [!TIP]
@@ -91,13 +96,17 @@ You can't, however, install a new app from the **Manage App** page. Use the **Ex
 
 ## What happens when an app update is installed?
 
-The new app version is automatically scheduled installation. When a time slot opens up, the app will be published, synchronized, and installed in the background. This process usually doesn't take long, and users won't be interrupted.
+The new app version is starting to install immediately, following the confirmation dialogue. The new app version will be published, synchronized, and updated in the background. This process usually doesn't take long, and users won't be interrupted, however we still recommend you to install the updates outside of working hours. 
 
 ## <a name="failure"></a>What do I do when an update fails?
 
 When the installation of an app update fails, the **Available update action** column will display the **Update failed** action. Select this action to get more information. The **App Update Details** pane provides some details about update and what might have caused the failure.
 
-Sometimes the update failed because of a transient problem. Select **Retry** to try to install the update again. If the installation continues to fail, contact your ISV or support.  
+Sometimes the update could fail because of a transient problem. Select **Retry** to try to install the update again. If the installation continues to fail, contact your ISV. You can find the support details of each ISV on their app page on AppSource. Contact Microsoft support if the app publisher is **Microsoft**.
+
+   > [!TIP]
+   > When reporting issues to Microsoft Support, always provide the **Operation ID** displayed in the error message. This will help expedite the investigations. 
+
 
 ## See also
 
