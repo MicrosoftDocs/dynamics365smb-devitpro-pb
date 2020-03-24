@@ -1,6 +1,6 @@
 ---
 title: "Do not assign a text  to a target with smaller size."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/24/2020
 ms.reviewer: na

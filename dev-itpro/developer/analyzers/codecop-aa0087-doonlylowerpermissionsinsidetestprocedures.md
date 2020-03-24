@@ -1,6 +1,6 @@
 ---
 title: "Lowering permissions should only be used in tests"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/24/2020
 ms.reviewer: na
