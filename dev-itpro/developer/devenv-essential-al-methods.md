@@ -21,8 +21,8 @@ The topics in this section describe the most common AL methods. For more details
 [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)   
 [LockTable Method](methods/devenv-locktable-method.md)   
 [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)   
-[Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](devenv-progress-windows-message-error-and-confirm-methods.md)   
-[STRMENU Method](methods/devenv-strmenu-method.md)
+[Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)   
+[StrMenu Method](methods/devenv-strmenu-method.md)
 
 ## See Also
 
