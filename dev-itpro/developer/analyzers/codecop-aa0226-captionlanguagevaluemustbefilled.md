@@ -1,8 +1,8 @@
 ---
 title: "The value of the Caption property of Fields must be filled in."
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/16/2020
+ms.date: 03/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
