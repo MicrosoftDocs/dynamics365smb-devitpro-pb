@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 03/19/2020
+ms.date: 03/24/2020
 ms.author: edupont
 ---
 
@@ -117,6 +117,8 @@ foreach ($language in $languages)
 
 Because the Microsoft repos are public, you do not need a valid GitHub account in order to get the content. However, we recommend that your organization has a system account with access to GitHub at a minimum.  
 
+See also the [Build HTML files](#build-html-files) section.  
+
 ### Contributing
 
 A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the dynamics365smb-docs repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/dynamics365smb-docs repo, you create what is called a *pull request* from your repo to the MicrosoftDocs/dynamics365smb-docs repo. The Microsoft team will then review the request and include the changes as appropriate.
@@ -163,16 +165,20 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
 
     For more information, see [DocFx](https://dotnet.github.io/docfx/).
 
-2. In the NAVDocfx.json or docfx.json file, specify the output folder in which to store the generated HTML files.
+2. In the NAVDocfx.json, specify the output folder in which to store the generated HTML files.
 
     The default setting in the NAVdofx.json file is that the files will be saved in the folder *c:/output*. To change this folder:
 
     a. In the folder where your local clone is, such as *C:\GitHu b\MSFT\dynamics365smb-docs\business-central*, open the NAVdocfx.json file in your preferred editor.  
     b.  Set the **"dest:"** parameter to your output folder, such as c:\Working\output\, and save the changes.  
 
-    The docfx.json file in the Microsoft repos has a different default value for the destination because the repos are configured for the Docs.microsoft.com site. If you build the HTML files based on docfx.json, make sure that you have configured it for your needs.
+    The docfx.json file in the Microsoft repos has a different default value for the destination because the repos are configured for the Docs.microsoft.com site. If you build the HTML files based on docfx.json, make sure that you have configured it for your needs.  
 
-3. If you have cloned a localization repo such as [dynamics365smb-docs-pr.da-dk](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk), you must also clone the [dynamics365smb-docs]((https://github.com/MicrosoftDocs/dynamics365smb-docs) repo and then copy the content of the \business-central\media\ folder.
+    > [!NOTE]
+    > We suggest that you use the NAVdocfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. However, it is configured for use with the legacy Dynamics NAV Help Server. To configure it for use with a different website, remove or replace the value of the `template` property.  
+    > Also, the `globalMetadata` property is set to make sure that search engines will find Microsoft's original content on the Docs.microsoft.com site rather than any customizations that you and hundreds of other may have made. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `globalMetadata` property. Alternatively, create your own docfx.json file based on the setup of your website. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
+
+3. If you have cloned a localization repo such as [dynamics365smb-docs-pr.da-dk](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk), you must also clone the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo and then copy the content of the \business-central\media\ folder.
 
     The localization repos only contain the files that are translated into the relevant languages. Microsoft does not translate all illustrations, and the localization repos do not contain the many untranslated images, screenshots, and other illustrations. If you build a localization repo as-is, then the HTML files will have broken links to the missing illustrations.
 
@@ -193,6 +199,9 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
     ```
 
 The files are generated as .html files and stored in the specified output.
+
+> [!IMPORTANT]
+> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com](https://docs.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
 > [!NOTE]
 > The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available.  
