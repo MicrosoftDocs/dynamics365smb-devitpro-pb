@@ -58,7 +58,7 @@ codeunit 10 MyCodeunit
 ```
 
 ## Good and bad practices for fixing the rule
-Remove unused local method.
+Remove the unused local method from the code.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
