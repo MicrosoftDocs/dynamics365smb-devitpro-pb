@@ -14,24 +14,28 @@ ms.date: 03/24/2020
 
 # The Business Central Administration Center API
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Using the API, administrators can query and work with production and sandbox environments for the tenant, set up administrative notifications, and view telemetry for events on the tenant. 
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically do administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. With the API, administrators can, for example:
 
-See [The Business Central Administration Center](tenant-admin-center.md) for more details on administrative capabilities. This article describes the API contracts for these administrative capabilities.
+-Query and work with production and sandbox environments for the tenant
+- Set up administrative notifications
+- View telemetry for events on the tenant
+
+For more information about administrative capabilities, see [The Business Central Administration Center](tenant-admin-center.md). This article describes the API contracts for these administrative capabilities.
 
 ## Location
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
 
 ## Setting up Azure Active Directory (AAD) based authentication
-Sign in to the [Azure Portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
+Sign in to the [Azure portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
 1. Follow the instructions in the [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
 2. Give the application a **Name**, such as **Business Central Web Service Client**.
 3. For **Application type**, choose either **Native** or **Web app/API** depending on your scenario. The code examples below assume **Native**.
-4. Choose a **Redirect URI**. In the case of a **Native** app, you can choose for example: **BusinessCentralWebServiceClient://auth**. In the case of a **Web app/API** app, set the value to the actual URL of the web application.
+4. Choose a **Redirect URI**. If it's a **Native** app, you can choose for example: **BusinessCentralWebServiceClient://auth**. If it's a **Web app/API** app, set the value to the actual URL of the web application.
 5. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365** option. Choose **Dynamics 365**, select **Delegated permissions**, and then choose the **Done** button.  
     > [!NOTE]  
-    > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for Dynamics 365 Business Central with a user from the directory.
-6. Make a note of both the **Application ID** and the **Redirect URI**. They will be needed later.
+    > If **Dynamics 365** doesn't show up in search, it's because the tenant doesn't have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for Dynamics 365 Business Central with a user from the directory.
+6. Make a note of both the **Application ID** and the **Redirect URI**. They'll be needed later.
 
 
 ## Getting an access token
@@ -39,14 +43,15 @@ HTTP requests sent to the [!INCLUDE[prodadmincenter](../developer/includes/proda
 
 The following examples show how to obtain such a token using PowerShell. Using C# is straightforward.
 
-Powershell example without prompt:
+PowerShell example without prompt:
  ```powershell
     $cred = [Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential]::new($UserName, $Password)
     $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$TenantName")
     $token = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContextIntegratedAuthExtensions]::AcquireTokenAsync($ctx, "https://api.businesscentral.dynamics.com", <Application ID>, $cred).GetAwaiter().GetResult().AccessToken
  ```
  
- Powershell example with prompt:
+ PowerShell example with prompt:
+
  ```powershell
     $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$tenantName")
     $redirectUri = New-Object -TypeName System.Uri -ArgumentList <Redirect URL>
@@ -55,13 +60,14 @@ Powershell example without prompt:
  ```
 
 ## Error Format
-If an error is encountered during the execution of an API method, it will respond back with an error object. While the specifics of any error encountered will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error is encountered that does not fit this structure, it typically indicates that an error has occurred in the sending of the request or in the authentication of the request (i.e. The API has not yet recieved the request). 
+
+If an error occurs during the execution of an API method, it will respond back with an error object. While the specifics of any error will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error occurs that doesn't fit this structure, it typically indicates that an error occurred in sending the request or during authentication of the request. For example, it could be that the API hasn't yet received the request. 
 
 **Error Response Object:**  
 ```
 {
 "code": string, // A stable error code describing the type an nature of the error. Ex: EnvironmentNotFound
-"message": string, // A message with a readable description of the error and cause. Intended to assist with debuging or troubleshooting the API, it is not intended to be displayed.
+"message": string, // A message with a readable description of the error and cause. Intended to assist with debugging or troubleshooting the API, it's not intended to be displayed.
 ("target": string), // Optional - Provides information about what part of a request caused the error. Ex: The name of a property on the request body.
 ("extensionData": {...}), // Optional - A key/value dictionary object containing additional information about the error.
 ("clientError": [ // Optional - A nested list of error objects containing more details about the error encountered. For instance, this may be used if multiple errors are encountered to list them all out.
@@ -78,11 +84,17 @@ If an error is encountered during the execution of an API method, it will respon
 
 **General unhandled errors**
 
-All unknown and unhandled errors that are not covered by the lists above will use the error code: **Unknown** 
+All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown** 
 
 
 ## Environments
-Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. Currently, only three production environments and three sandbox environments can be created per tenant. The environment APIs can be used to get information about the environments currently set up for the tenant, create a new environment using sample data or as a sandbox copy of the production environment, and delete an environment.
+
+Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. Currently, it's only possible to create three production environments and three sandbox environments per tenant. The environment APIs can be used to:
+
+- Get information about the environments currently set up for the tenant
+- Create a new environment using sample data or as a sandbox copy of the production environment
+- Delete an environment.
+
 > [!NOTE]  
 > Special care should be taken when deleting a production environment as the data will not be recoverable
 
@@ -122,7 +134,7 @@ Returns a wrapped array of environments.
           "value": double, // The size of the database quantified by the provided 'unit' property
           "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
       },
-      "ringName": string, // Name of the environment's logical ring group (i.e. Prod, Preview) 
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
       "appInsightsKey": string // The environment's key for Azure Application Insights
     }
   ]
@@ -141,7 +153,7 @@ Returns the properties for the provided environment name if it exists.
 
 **Route Parameters:**
 
-**- applicationFamily:** Family of the environment's application as is. (e.g. "BusinessCentral")
+**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
 
 **- environmentName:** Name of the targeted environment
 
@@ -165,7 +177,7 @@ Returns a single environment if exists.
       "value": double, // The size of the database quantified by the provided 'unit' property
       "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
   },
-  "ringName": string, // Name of the environment's logical ring group (i.e. Prod, Preview) 
+  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
 ```
@@ -184,7 +196,7 @@ Creates a new environment with sample data.
 
 **Route Parameters:**
 
-**- applicationFamily:** Family to create the new environment within. (e.g. "BusinessCentral")
+**- applicationFamily:** Family to create the new environment within. (for example, "BusinessCentral")
 
 **- environmentName:** The name of the new environment. See the section below about valid environment names to see what values are allowed.
 
@@ -221,7 +233,7 @@ Returns newly created environment.
       "value": double, // The size of the database quantified by the provided 'unit' property
       "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
   },
-  "ringName": string, // Name of the environment's logical ring group (i.e. Prod, Preview) 
+  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
 ```
@@ -230,15 +242,15 @@ Returns newly created environment.
 
 **- applicationTypeDoesNotExist:** - the provided value for the application family was not found
 
-**- destinationApplicationServiceNotFound:** - a suitable destination service could not be found to put the environment. Occurs if missing or if tenant does not have access to the target application.
+**- destinationApplicationServiceNotFound:** - a suitable destination service could not be found to put the environment. Occurs if missing or if the tenant doesn't have access to the target application.
 
 **- invalidInput:** - the targeted property in invalid in some way
 
-   - target: {countryCode} - the country code property cannot be null or whitespace
+   - target: {countryCode} - the country code property can't be null or whitespace
     
-   - target: {environmentName} - the environment name property cannot be null or whitespace
+   - target: {environmentName} - the environment name property can't be null or whitespace
     
-   - target: {environmentType} - the environment type property cannot be null or whitespace, and must be a valid value (Production or Sandbox)        
+   - target: {environmentType} - the environment type property can't be null or whitespace, and must be a valid value (Production or Sandbox)        
     
    - target: {ringName} - attempt to create a production environment on a non-production ring
     
@@ -246,19 +258,19 @@ Returns newly created environment.
 
 **- requestBodyRequired:** - the request body must be provided
 
-**- resourceDoesNotExist:** - the targeted property does not exist
+**- resourceDoesNotExist:** - the targeted property doesn't exist
 
    - target: {ringName} - a ring with the provided name was not found
 
 **- resourceExists:** - an environment with the same name already exists
 
-**- environmentNameNotValid:** - the environment name cannot be a reserved value, must be less than 30 characters, must start with an alpha character and consist only of alpha, numberical, underscore (_), or dash (-) characters
+**- environmentNameNotValid:** - the environment name can't be a reserved value, must be less than 30 characters, must start with an alpha character and consist only of alpha, numberical, underscore (_), or dash (-) characters
 
-**- cannotCreateNamedEnvironment:** - environments with names other than 'Production' or 'Sandbox' are not supported on the targeted version.
+**- cannotCreateNamedEnvironment:** - environments with names other than 'Production' or 'Sandbox' aren't supported on the targeted version.
 
-**- tenantAlreadyProvisioning:** - cannot create a new environment because another environment is currently in the process of being created.
+**- tenantAlreadyProvisioning:** - can't create a new environment because another environment is currently in the process of being created.
 
-**- applicationFamilyNotAccessible:** - the calling tenant does not have access to the targeted application family and country code
+**- applicationFamilyNotAccessible:** - the calling tenant doesn't have access to the targeted application family and country code
 
 **- environmentReservationFailed:** - another environment within the same application family already has this name
 
@@ -305,7 +317,7 @@ Returns newly copied environment.
       "value": double, // The size of the database quantified by the provided 'unit' property
       "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
   },
-  "ringName": string, // Name of the environment's logical ring group (i.e. Prod, Preview) 
+  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
 ```
@@ -314,7 +326,7 @@ Returns newly copied environment.
 
 **- applicationTypeDoesNotExist:** - the provided value for the application family was not found
 
-**- destinationApplicationServiceNotFound:** - a suitable destination service could not be found to put the environment. Occurs if missing or if tenant does not have access to the target application.
+**- destinationApplicationServiceNotFound:** - a suitable destination service could not be found to put the environment. Occurs if missing or if tenant doesn't have access rights to the target application.
 
 **- environmentNotFound:** - the targeted environment could not be found
 
@@ -322,21 +334,21 @@ Returns newly copied environment.
 
 **- invalidInput:** - the targeted property in invalid in some way
 
-   - target: {environmentName} - the environment name property cannot be null or whitespace```
+   - target: {environmentName} - the environment name property can't be null or whitespace```
 
-   - target: {type} - the type property cannot be null or whitespace, and must be a valid value (Currently only Sandbox)```
+   - target: {type} - the type property can't be null or whitespace, and must be a valid value (Currently only Sandbox)```
 
 **- requestBodyRequired:** - the request body must be provided
 
 **- resourceExists:** - an environment with the same name already exists
 
-**- environmentNameNotValid:** - the environment name cannot be a reserved value, must be less than 30 characters, must start with an alpha character and consist only of alpha, numberical, underscore (_), or dash (-) characters
+**- environmentNameNotValid:** - the environment name can't be a reserved value, must be fewer than 30 characters, must start with an alpha character and consist only of alpha, numerical, underscore (_), or dash (-) characters
 
-**- cannotCreateNamedEnvironment:** - environments with names other than 'Production' or 'Sandbox' are not supported on the targeted version.
+**- cannotCreateNamedEnvironment:** - environments with names other than 'Production' or 'Sandbox' aren't supported on the targeted version.
 
-**- tenantAlreadyProvisioning:** - cannot create a copy of an environment because another environment is currently in the process of being created.
+**- tenantAlreadyProvisioning:** - can't create a copy of an environment because another environment is currently in the process of being created.
 
-**- conflictingDeveloperExtensions:** - The source environment contains 'uploaded' extensions that are already published to the destination service as 'developer' extensions and will therefore conflict. 
+**- conflictingDeveloperExtensions:** - The source environment contains 'uploaded' extensions that are already published to the destination service as 'developer' extensions. This condition will cause conflicts. 
 
   ```
   extensionData: 
@@ -352,19 +364,19 @@ Returns newly copied environment.
   } 
   ```
   
-**- environmentReservationFailed:** - another environment within the same application family already has this name
+**- environmentReservationFailed:** - another environment within the same application family already has the same name
 
 **- maximumNumberOfEnvironmentsAllowedReached:** - the limit on the number of allowed environments of the provided type has been reached 
 
 
 ### Delete environment
-Deletes the specified environment. Warning: A production environment should not be deleted.
+Deletes the specified environment. Warning: A production environment shouldn't be deleted.
 
 ```[202] DELETE /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}```
 
 **Route Parameters:**
 
-**- applicationFamily:** Family of the environment's application. (e.g. "BusinessCentral")
+**- applicationFamily:** Family of the environment's application. (for example "BusinessCentral")
 
 **- environmentName:** Name of the environment to delete.
 
@@ -376,7 +388,7 @@ Deletes the specified environment. Warning: A production environment should not 
 
 **Expected Error Codes:**
 
-**- invalidStatusCannotDeleteTenant:** - cannot delete the environment in its current state
+**- invalidStatusCannotDeleteTenant:** - can't delete the environment in its current state
 
 **- tenantDeletionInProgress:** - environment is already in the process of being deleted
 
@@ -388,11 +400,11 @@ Deletes the specified environment. Warning: A production environment should not 
 
 
 ## Available Applications
-Get information about the currently available application familes, countries, rings, and versions that environments can be created on.
+Get information about the currently available application families, countries, rings, and versions that environments can be created on.
 The API endpoints here should be utilized to determine what values can be used for environment creation or copying 
 
 ### Applications and corresponding Countries with Rings
-Get a list of the currently available application familes, the available countries within those families, and the available rings within those contries.
+Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
 
 ```[200] GET /admin/v2.0/applications/```
 
@@ -422,7 +434,7 @@ Gets a list of the currently available Versions that an environment can be creat
 
 **Route Parameters:**
 
-**- applicationFamily:** Family of the ring's application . (e.g. "BusinessCentral")
+**- applicationFamily:** Family of the ring's application. (for example, "BusinessCentral")
 
 **- countryCode:** Code for the ring's country.
 
@@ -450,7 +462,7 @@ Returns the update settings for the environment.
 
 **Route Parameters:**
 
-**- applicationFamily:** Family of the environment's application as is. (e.g. "BusinessCentral")
+**- applicationFamily:** Family of the environment's application as is. (for example "BusinessCentral")
 
 **- environmentName:** Name of the targeted environment
 
@@ -480,7 +492,7 @@ Sets the update window start and end times.
 
 **Route Parameters:**
 
-**- applicationFamily:** Family of the environment's application as is. (e.g. "BusinessCentral")
+**- applicationFamily:** Family of the environment's application as is. (for example "BusinessCentral")
 
 **- environmentName:** Name of the targeted environment
 
@@ -545,14 +557,14 @@ Sets the key an environment uses for Azure AppInsights.
 
 **- requestBodyRequired:** - the request body must be provided
 
-**- cannotSetAppInsightsKey:** - the targeted environment's status is not 'Active'
+**- cannotSetAppInsightsKey:** - the targeted environment's status isn't 'Active'
     
 
 ## Telemetry
 Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment. 
 
 ### Get Environment Telemetry
-Returns the telemetry information for the provided environment and filters. It is recommended that you provide start and end time parameters in order to return a managable data set.
+Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters in order to return a managable data set.
 
 ```[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}```
 
@@ -594,7 +606,7 @@ Returns the telemetry logs and with data column headers.
 
 **- invalidInput:** - the targeted property in invalid in some way
 
-   - target: {logCategory} - the provided log category is not a valid value
+   - target: {logCategory} - the provided log category isn't a valid value
 
 
 ## Notifications
@@ -654,9 +666,9 @@ Returns the newly created recipient.
 
 **- invalidInput:** - the targeted property in invalid in some way
 
-   - target: {name} - the name property cannot be null or whitespace
+   - target: {name} - the name property can't be null or whitespace
         
-   - target: {email} - the email property cannot be null or whitespace
+   - target: {email} - the email property can't be null or whitespace
 
 **- requestBodyRequired:** - the request body must be provided
 
@@ -676,7 +688,7 @@ Deletes an existing notification recipient.
 
 **- invalidInput:** - the targeted property in invalid in some way
 
-   - target: {id} - provided id cannot be the empty guid
+   - target: {id} - provided id can't be the empty guid
 
 **- tenantNotFound:** - the calling tenant information could not be found
 
@@ -706,7 +718,7 @@ Returns the notification settings.
 **- tenantNotFound:** - the calling tenant information could not be found
 
 ## Application Access Management
-It is possible for a **Delegated Tenant Admin** to manage access to application families available in the service. The application family is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or other independent software vendor (ISV) applications that may be provisioned through the service. 
+It's possible for a **Delegated Tenant Admin** to manage access to application families available in the service. The application family is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or other independent software vendor (ISV) applications that may be provisioned through the service. 
 
 You can get the list of applications that are available to the tenant. From this list you can determine, by setting the access property, for which applications an environment may be provisioned on the tenant.
 
@@ -751,7 +763,7 @@ Pass the application family name in the URL and a boolean in the body.
 ```
 
 > [!NOTE]  
-> It is only possible to disable the access to applications for the AAD tenant if it has first created an environment somewhere.
+> It's only possible to disable the access to applications for the AAD tenant if it has first created an environment somewhere.
 
 **Expected Error Codes:**
 
@@ -924,7 +936,7 @@ Returns the newly updated support contact information.
 
 
 ## Environment Outage Reporting
-Enables the ability to report that an environment is not accessible and may require attention
+Enables the ability to report that an environment isn't accessible and may require attention
 
 ### Get Outage Types
 Gets the list of supported categories of outages
@@ -963,7 +975,7 @@ Returns the list of question metadata for the provided outage type
   "value": [
     {
       "sequence": int, // The order in which the question should be answered
-      "parentId": int, // The identifier of a toggle question whose value indicates if this question should be shown. I.e. if the parent value is 'true' then this question should also be answered
+      "parentId": int, // The identifier of a toggle question whose value indicates if this question should be shown. that is if the parent value is 'true' then this question should also be answered
       "id": string, // The unique identifier of the question 
       "defaultValue": string, // The default value of the question if it has no value
       "questionType": string, // (enum | "None", "Toggle", "TextField", "DateTime")
@@ -1009,13 +1021,13 @@ Returns the list of outages reported across all environments for the calling ten
 
 **Expected Error Codes:**
 
-**- cannotGetReportedOutages:** - an unhandled error occrred when trying to acquire the reported outages
+**- cannotGetReportedOutages:** - an unhandled error occurred when trying to acquire the reported outages
 
 **- tenantNotFound:** - the calling tenant information could not be found
 
 
 ### Report Outage
-Initiates an outage report indicating that an environment is not accessible
+Initiates an outage report indicating that an environment isn't accessible
 
 ```[200] GET /admin/v2.0/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage```
 
@@ -1120,7 +1132,7 @@ Initiates the export of an environment's database to a provided Azure storage ac
 
 **- requestBodyRequired:** - the request body must be provided
 
-**- exportFailed:** - the export failed because the target environment's version was too old, it was not a production environment, the requesting tenant is a trial, the calling user does not have permissions to export, or the quota of allowed exports has been exhausted 
+**- exportFailed:** - the export failed because the target environment's version was too old, it was not a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been exhausted 
 
 
 ### Get Export History
