@@ -52,12 +52,44 @@ The "Business Central (Version 16.0)" calculation uses the following tables:
 <!--* table 7000 "Price List" -->
 * table 7001 "Price List Line" 
 
-The table 7001 "Price List Line" is compatible with all tables used by the Business Central (Version 15.0)" calculation. It contains the set of CopyFrom() methods that convert the data from the tables to the Price List Line table. 
+Table 7001 "Price List Line" is compatible with all tables used by the Business Central (Version 15.0)" calculation. It contains the set of CopyFrom() methods that convert the data from the tables to the Price List Line table. 
 
-If you extended the version 15 tables you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events.
+If you extended the version 15 tables you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. Here's are examples that extend the Sales Price table with a Document No. field.
 
-**Add Code Example**
+```
+tableextension 50010 "Document No in Sales Price" extends "Sales Price"
+{
+    fields
+    {
+        field(50000; "Document No."; Code[20])
+        { }
+    }
+}
+```
+Now we'll extend the Price List Line table with the same field.
 
+```
+tableextension 50011 "Doc. No in Price List Line" extends "Price List Line"
+{
+    fields
+    {
+        field(50000; "Document No."; Code[20])
+        { }
+    }
+}
+```
+Now we'll subscribe to the 'OnCopyFromSalesPrice' event to copy data from "Sales Price" to "Price List Line" table.
+
+```
+codeunit 50012 "Copy DocumentNo to Price List"
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::CopyFromToPriceListLine, 'OnCopyFromSalesPrice', '', false, false)]
+    procedure CopyFromSalesPriceHandler(var SalesPrice: Record "Sales Price"; var PriceListLine: Record "Price List Line");
+    begin
+        PriceListLine."Document No." := SalesPrice."Document No.";
+    end;
+}
+```
 The Price Calculation Method field is added to all tables that need calculation of prices/discounts: 
 
 * table 37 "Sales Line" 
