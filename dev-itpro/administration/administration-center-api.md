@@ -751,7 +751,7 @@ Pass the application family name in the URL and a boolean in the body.
 
 **Route Parameters:**
 
-**- applicationFamily:** The name of the family for a given Business Central offered application. (Typically this will just be "BusinessCentral")
+**- applicationFamily:** The name of the family for a given Business Central offered application. (Typically this value will just be "BusinessCentral")
 
 **- countryCode:** Country code for the targeted application.
 
@@ -1070,7 +1070,7 @@ Returns information about the created outage report
 
    - target: {applicationFamily}/{environmentName}
 
-**- failedToReportOutage:** - an unhandled error occrred when trying to report the outage
+**- failedToReportOutage:** - an unhandled error occurred when trying to report the outage
 
 
 ## Environment Database Export
@@ -1088,7 +1088,7 @@ Gets information about the number of exports allowed per month and the amount re
 **- environmentName:** Name of the targeted environment
 
 **Response:**  
-Returns the metrics around the currently month's database exports.
+Returns the metrics around the current month's database exports.
 
 ```
 {
@@ -1105,7 +1105,7 @@ Returns the metrics around the currently month's database exports.
 
 
 ### Start Environment Database Export
-Initiates the export of an environment's database to a provided Azure storage account
+Starts the export of an environment's database to a provided Azure storage account
 
 ```[200] POST /admin/v2.0/exports/applications/{applicationFamily}/environments/{environmentName}```
 
@@ -1132,11 +1132,11 @@ Initiates the export of an environment's database to a provided Azure storage ac
 
 **- requestBodyRequired:** - the request body must be provided
 
-**- exportFailed:** - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been exhausted 
+**- exportFailed:** - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been used up 
 
 
 ### Get Export History
-Gets information about the exports that have been performed within a provided timeframe, for which environment, and by whom.
+Gets information about the exports that have been done within a provided time frame, for which environment, and by whom.
 
 ```[200] POST /admin/v2.0/exports/history?start={startTime}&end={endTime}```
 
@@ -1185,7 +1185,7 @@ Returns a detailed list of the database exports that occurred within the provide
    - notsupported
    - officeaddin
    - remotesignin
-   - shellservice
+   - shell service
    - admin
         
 **Production Environment Types**
