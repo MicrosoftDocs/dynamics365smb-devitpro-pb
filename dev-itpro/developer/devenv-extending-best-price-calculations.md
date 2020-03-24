@@ -143,6 +143,10 @@ We have the following licenses in our price list. If you buy 70061 or 70062 alon
 |70064|Sales Professional|$65|$20 when bundled with 70061 or 70062.|
 |70065|Customer Service Pro|$50|$21 when bundled with 70061 or 70062.|
 
+The following image shows an example of a Price List page that is extended with the Attached to Line No. field. Notice that the prices are changed based on the combinations of licenses.
+
+:::image type="content" source="../media/best-pricing-sales-lines.png" alt-text="Image that shows an example of an extended Price List page.":::
+
 Let's look at some sample extensions that will implement this for us. 
 
 The first table extension adds a new field named Attach to Line No. to the Sales Line table and recalculates pricing when we make a change. This field will let us create the combinations that determine our discounts. It also copies the GetPriceCalculationHandler() function from the Sales Line table.
@@ -178,10 +182,6 @@ tableextension 50001 "Attach Price" extends "Sales Line"
 }
 
 ```
-
-The following image shows an example of a Price List page that is extended with the Attached to Line No. field. Notice that the prices are changed based on the combinations of licenses.
-
-:::image type="content" source="../media/best-pricing-sales-lines.png" alt-text="Image that shows an example of an extended Price List page.":::
 
 The following page extension adds the Attach Line No. field to the Sales order page (subform).
 
