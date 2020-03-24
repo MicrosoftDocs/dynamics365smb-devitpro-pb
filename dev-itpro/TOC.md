@@ -226,6 +226,7 @@
 ### [Working with Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 ## Configuring the Development Environment
 ### [JSON Files](developer/devenv-json-files.md)
+### [The Migration.json File](developer/devenv-migration-json-file.md)
 ### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
