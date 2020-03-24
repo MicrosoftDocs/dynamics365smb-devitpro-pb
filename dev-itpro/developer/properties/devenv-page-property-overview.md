@@ -3,7 +3,7 @@ title: "Page and Page Extension Properties Overview"
 description: "Description of the available properties on page extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -117,7 +117,7 @@ The following properties all apply to the page object, only some of these proper
 |[UpdatePropagation Property](devenv-updatepropagation-property.md)||<ul><li>Part control</li></ul>|
 |[UsageCategory Property](devenv-usagecategory-property.md)||<ul><li>Page object</li></ul>|
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)||<ul><li>Field control</li></ul>|
-|[Visible Property](devenv-visible-property.md)|X|<ul><li>Group control</li><li>Field control</li><li>Part control</li><li>ActionGroup</li><li>Action</li></ul>|
+|[Visible Property](devenv-visible-property.md)|X|<ul><li>Group control</li><li>Field control</li><li>Part control</li><li>ActionGroup</li><li>Action</li><li>View</li></ul>|
 |[Width Property](devenv-width-property.md)|X|<ul><li>Field control</li></ul>|
 
 

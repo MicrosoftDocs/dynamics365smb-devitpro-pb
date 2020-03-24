@@ -1,7 +1,7 @@
 ---
 title: "Performance Overview"
 ms.custom: na
-ms.date: 01/29/2020
+ms.date: 03/23/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,7 @@ author: KennieNP
 
 The following sections help you understand and improve the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The content is centered around the different ways a functional consultant, a developer, or an administrator can make changes with a performance impact.
 
+- Visit [Performance Tips for Business Users](performance-users.md) to learn more about tips on how you can work with end-users to improve the performance.
 - Visit [How Application Configurations Affect Performance](performance-application.md) to learn about how in-product configurations affect performance.
 - Visit [Performance Topics For Developers](performance-developer.md) to learn about how to code for performance in AL.
 - Visit [Performance in Business Central Online](performance-online.md) to learn more about performance in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service.
