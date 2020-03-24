@@ -59,14 +59,17 @@ The following steps provide the general flow for upgrading an app.
     Select **Refresh** occasionally to check the status.
 
     - If the app installs successfully, the new version displays in the **Installed version** column and the **Available update action** column is **Up to date**.
-    - If the installation fails the **Available update action** column changes to **Update failed**.
+    - If the installation fails the **Available update action** column changes to **Update failed**. See 
 
 4. If the app update succeeded, test it on the Sandbox environment.
-5. If the app update works as expected on the Sandbox, switch to the production environment, and repeat installation steps.
+5. If the app update works as expected on the Sandbox, switch to the production environment, and repeat the installation steps for the app update.
+
+    > [!TIP]
+    > Use the environment switch box at the top of the page to quickly change to your production environment.
 
 ## <a name="requirements"></a>Resolve requirements for app updates
 
-For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates pane list provide this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
+For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates** pane list provide this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
 
 When you clear all requirements, the app that you want to update will be ready to install.
 
