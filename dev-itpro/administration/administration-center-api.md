@@ -1195,7 +1195,7 @@ GET /{applicationType}/environments/{environmentName}/apps
 ```
 <!--
 ```
-[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps
+[200] GET /admin/v2.0/applications/environments/{environmentName}/apps
 ```
 -->
 
@@ -1228,7 +1228,7 @@ GET /{applicationType}/environments/{environmentName}/apps/availableUpdates
 
 <!--
 ```
-[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps/availableUpdates
+[200] GET /admin/v2.0/applications/environments/{environmentName}/apps/availableUpdates
 ```
 -->
 **Response:**
