@@ -2,7 +2,6 @@
 title: Business Central Administration Center API | Microsoft Docs
 description: Learn about the Business Central administration center API.
 author: edupont04
-
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
@@ -10,10 +9,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/04/2019
+ms.date: 03/24/2020
 ---
 
 # The Business Central Administration Center API
+
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Using the API, administrators can query and work with production and sandbox environments for the tenant, set up administrative notifications, and view telemetry for events on the tenant. 
 
 See [The Business Central Administration Center](tenant-admin-center.md) for more details on administrative capabilities. This article describes the API contracts for these administrative capabilities.
@@ -1182,5 +1182,112 @@ Returns a detailed list of the database exports that occurred within the provide
 **Sandbox Environment Types**
    - production
 
+## App Management
+
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+
+### Get Apps 
+ 
+Method & Path: GET /apps 
+Request body: N/A 
+
+**Response:**
+
+```
+[ 
+{ 
+"id": "bcd4ce37-a0f1-482c-9a43-b06a45fef968", 
+"name": "Some App", 
+"publisher": "Fabrikam", 
+"version": "1.2.3.4", 
+"state": "installed|updatePending|updating", 
+"lastOperationId": "<guid>", 
+"lastUpdateAttemptResult": "failed|succeeded|canceled|skipped" 
+}, 
+… 
+] 
+
+```
+
+### Get Available Updates 
+ 
+Method & Path:  
+GET /apps/availableUpdates  
+Request body: N/A
+
+**Response:**
+
+```
+[ 
+{ 
+"appId": "<guid>", 
+"name": "Some App", 
+"publisher": "Fabrikam", 
+"version": "1.3.0.1", 
+"requirements": [{ 
+"appId": "bcd4ce37-a0f1-482c-9a43-b06a45fef968", 
+"name": "New Dependency", 
+"publisher": "Other partner", 
+"type": "install", 
+"version": "1.0.0.0" 
+}, { 
+"appId": "2bf23bf0-5590-4f17-a78e-e13e486518e7", 
+"name": "Some Library", 
+"publisher": "Fabrikam", 
+"type": "update", 
+"version": "2.0.3.1" 
+}] 
+}] 
+
+```
+
+ 
+### Schedule an app update 
+ 
+Method & Path: POST /apps/<app_id>/update 
+Request body:  
+{ 
+"targetVersion": "1.3.0.1" 
+} 
+ 
+**Response (app operation):**
+
+```
+[ 
+{ 
+"id": "e9f4975f-f075-4804-9859-b044aa9a2311", 
+"createdOn": "2020-01-20T15:54:06.1172006Z", 
+"status": "scheduled", 
+"targetVersion": "1.3.0.1", 
+"type": "update" 
+} 
+] 
+```
+
+#### Get Operation 
+ 
+Method & Path: GET /apps/<app_id>/operations/[<id>] 
+Request body: N/A 
+
+**Response (single operation):**
+
+```
+[ 
+{ 
+"id": "e9f4975f-f075-4804-9859-b044aa9a2311", 
+"createdOn": "2020-01-20T15:54:06.1172006Z", 
+"startedOn": "2020-01-20T15:54:36.1234567Z", 
+"completedOn": "..", 
+"status": "scheduled|running|succeeded|failed|canceled|skipped", 
+"sourceVersion": "1.2.3.4", 
+"targetVersion": "1.3.0.1", 
+"type": "update", 
+"errorMessage": "<string>" 
+} 
+] 
+```
+
 ## See Also
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)
+
+[Manage Apps](tenant-admin-center-manage-apps.md)  
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
