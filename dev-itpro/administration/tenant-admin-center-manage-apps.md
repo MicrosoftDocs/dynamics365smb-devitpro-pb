@@ -36,8 +36,9 @@ When completed, if an update is available for an app, there are two indications:
 
     |Actions|Descriptions|
     |-------|------------|
-    |**Action required**|This action means that you have to do something before you install the update for the app. This action typically involves another app that this app depends on. For example, you may have to first update another app or install a new app. Select the link and read the **Requirements for App Updates** pane to see what is required.|
+    |**Action required**|This action means that you have to do something before you install the update for the app. For example, you may have to first update another app or install a new app. Select the link and read the **Requirements for App Updates** pane to see what is required. For more information, see [Resolving requirements for app updates](#requirements)|
     |**Install update**|This action means that the app is ready to install. Select the link to start the installation.|
+
 
 ## Install an app update flow
 
@@ -65,6 +66,29 @@ The following steps provide the general flow for upgrading an app.
 
 4. If the app update installs successfully, test it on the Sandbox environment.
 5. If the app update works as expected, switch to the production environment, and repeat step 
+
+## <a name="requirements"></a>Resolving requirements for app updates
+
+For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates pane list these apps.
+
+The requirements are divided into two categories: **Update requirements** and **Install requirements**. When you clear all requirements, the app that you want to update will be ready to install.
+
+### Update requirements
+
+The **Update requirements** category lists existing dependency apps the have updates to be installed. To clear these requirements, do the following steps for each app:
+
+1. Return to the **Manage Apps** page.
+2. Find the apps in the list, and select **Install update**.
+3. Wait for **Available update action** column to change to **Up to date**.
+
+### Install requirements
+
+The **Install requirements** category lists dependency apps that haven't been installed yet. For example, a new dependency app was introduced.
+
+You can't, however, install a new app from the **Manage App** page. Use the **Extension Management** page in the client instead. Completing this step will clear the requirement. For more information, see [Installing an Extension](/dynamics365/business-central/ui-extensions#installing-an-extension).
+
+## When an update fails
+
 
 ## See also
 
