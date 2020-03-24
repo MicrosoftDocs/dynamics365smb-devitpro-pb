@@ -653,6 +653,7 @@
 # Performance
 ## [Performance Overview](performance/performance-overview.md)
 ## [Application](performance/performance-application.md)
+## [Tips for Business Users](performance/performance-users.md)
 ## [Developer](performance/performance-developer.md)
 ## [Online](performance/performance-online.md)
 ## [On-Premises](performance/performance-onprem.md)

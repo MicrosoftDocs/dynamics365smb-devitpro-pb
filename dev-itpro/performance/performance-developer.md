@@ -114,7 +114,6 @@ If you need a key-value data structure that is optimized for fast lookups, use a
 
 Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). For more information, see [List Data Type](../developer/methods-auto/list/list-data-type.md).
 
-
 ### <a name="runasync"></a>Pattern - Run async (and parallelize)
 
 It's often desirable to offload AL execution from the UI thread to a background session. 
@@ -304,3 +303,4 @@ The following articles explain what you can do as a developer to tune your devel
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[Performance tips for business users](performance-users.md)  

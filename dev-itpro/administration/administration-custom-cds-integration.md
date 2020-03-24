@@ -13,7 +13,7 @@ ms.date: 02/28/2020
 
 # Customizing an Integration with Common Data Service
 
-This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
+This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
 ## About this walkthrough
 
@@ -21,7 +21,7 @@ This walkthrough describes how to integrate new and existing extensions with [!I
 
 1. Develop an AL extension to integrate entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Create an integration table object in [!INCLUDE[prodshort](../includes/prodshort.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity to a [!INCLUDE[prodshort](../includes/prodshort.md)] record type.  
-3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as a data source for a page in [!INCLUDE[prodshort](../includes/prodshort.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity records.  
+3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as the data source for a page in [!INCLUDE[prodshort](../includes/prodshort.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity records.  
 4. Extend a page in [!INCLUDE[prodshort](../includes/prodshort.md)] for coupling and synchronizing entity records in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prodshort](../includes/prodshort.md)].  
 5. Use events to create an integration table and a field mapping between a table in [!INCLUDE[prodshort](../includes/prodshort.md)] table and an integration table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 6. Develop another AL extension to extend an existing integration between entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. 
@@ -31,20 +31,21 @@ This walkthrough describes how to integrate new and existing extensions with [!I
 > [!NOTE]  
 > The customization in this walkthrough is done entirely in [!INCLUDE[prodshort](../includes/prodshort.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, such as adding or modify entities and forms.  
 
-## Requirements  
+## Prerequisites
+
 This walkthrough requires the following:  
 
 - [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], including the following:  
     - Worker entity.
 
     > [!NOTE]  
-    > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [here](https://docs.microsoft.com/dynamics365/talent/corehrentities#worker-entities).
+    > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [Common Data Service entities](https://docs.microsoft.com/dynamics365/talent/corehrentities#worker-entities).
     - The URL of your Common Data Service environment.
     - The user name and password of a user account that has full permissions to add and modify entities.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
     - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
     - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. <!--For more information, see []()....  -->
-    - Visual Studio Code with the AL Language extension installed. For more information, see [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it [here](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+    - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
     > Make sure that your integration user has permission to access the Worker entity.
@@ -59,7 +60,7 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
 ### To create the integration table for the worker entity in Business Central 
 
 1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
-2. Export the **AL Table Proxy Generator** called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed .vsix file, go to the equivalent of this folder: `C:\Users\solsen\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
+2. Export the **AL Table Proxy Generator** tool called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed the AL Language extension, go to the equivalent of this folder: `C:\Users\<myname>\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
 3. In PowerShell, run the tool with the following arguments:
     ```
     -project:<Your AL project folder>
@@ -72,17 +73,17 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
     -tabletype:CDS
     ```
     
-    This starts the process for creating the table. When completed, the output path contains the .al file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
+    This starts the process for creating the table. When completed, the output path contains the `.al` file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
 
 ## Create a page for displaying [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data  
 
-For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses table **CDS Worker** with ID 50000 as its data source.  
+For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses the generated integration table **CDS Worker** with ID 50000 as its data source.  
 
 ### To create a list page to display [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] workers  
 
 1. Create a new page. For more information, see [Pages Overview](../developer/devenv-pages-overview.md). 
 2. Name the page **CDS Worker List**, and specify **50001** as the page ID.  
-3. Specify the **CDS Worker** integration table as the source table. For example:
+3. Specify the **CDS Worker** integration table as the source table as shown below:
 
 ```
 page 50001 "CDS Worker List"
@@ -109,7 +110,7 @@ page 50001 "CDS Worker List"
                 Caption = 'Create in Business Central';
                 Promoted = true;
                 PromotedCategory = Process;
-                ToolTip = 'Generate the entity from the coupled CDS worker.';
+                ToolTip = 'Generate the entity from the coupled Common Data Service worker.';
 
                 trigger OnAction()
                 var
@@ -138,10 +139,10 @@ page 50001 "CDS Worker List"
 }
 ``` 
 
-4. Add the fields from the integration table to display on the page the `layout` section. 
+4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 
-## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]
+## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
 To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity record, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] record and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
 
@@ -161,7 +162,7 @@ begin
 end;
 ```
 
-3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that's table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
+3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that is table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
@@ -375,13 +376,13 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ``` 
 
-   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../includes/prodshort.md)] that we want to map to the Worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../includes/prodshort.md)] that we want to map to the **Worker** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
 
 To create an integration field mapping, follow these steps:  
 
-1. Add a local procedure called **InsertIntegrationFieldMapping** to the codeunit you created in step 1 of the previous process, as follows:
+1. Add a local procedure called **InsertIntegrationFieldMapping** to the codeunit that you created in step 1 of the previous process, as follows:
 
     ```
     procedure InsertIntegrationFieldMapping(IntegrationTableMappingName: Code[20]; TableFieldNo: Integer; IntegrationTableFieldNo: Integer; SynchDirection: Option; ConstValue: Text; ValidateField: Boolean; ValidateIntegrationTableField: Boolean)
@@ -420,17 +421,17 @@ You can either use the standard transformation rules on page **Integration Field
 During the synchronization process, certain events are published and raised by codeunit **Integration Table Synch.** (ID 5335). We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes the events that are published by codeunit **Integration Table Synch.**.  
 
 |Event|Description|  
-|-----------|-----------------|  
-|OnFindUnCoupledDestinationRecord|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prodshort](../includes/prodshort.md)] currency codes with ISO currency codes in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].|  
-|OnBeforeApplyRecordTemplate|Occurs before applying configuration templates to new records, and can be used to implement algorithms for determining which configuration template to use.<!--point to section about templates.-->|  
-|OnAfterApplyRecordTemplate|Occurs after configuration templates are applied to new records, and can be used to change data after configuration templates have been applied.|  
-|OnBeforeTransferRecordFields|Occurs before transferring data in modified fields (which are defined in the **Integration Field Mapping** table) from the source table to the destination table. It can be used to validate the source or destination before the data is moved.|  
-|OnAfterTransferRecordFields|Occurs after transferring modified field data (which are defined in the Integration Field Mapping table) from the source table to the destination table. It can be used to transfer additional data, validate lookups, and so on. Setting the **AdditionalFieldsWereModified** parameter will cause a destination record modification even though no fields were modified.|  
-|OnBeforeInsertRecord|Occurs before inserting a new destination record, and can be used to initialize fields, such as primary keys.|  
-|OnAfterInsertRecord|Occurs after a new destination record is inserted, and can be used to perform post-insert operations such as updating related data.|  
-|OnBeforeModifyRecord|Occurs before modifying an existing destination record, and can be used to validate or change data before modification.|  
-|OnAfterModifyRecord|Occurs after an existing destination record is modified, and can be used to perform post-modify operations such as updating related data.|  
-|OnTransferFieldData|Occurs before an existing destination field value is transferred to a source field, and can be used to perform specific transformations of data when the data types of the source and the destination field are different but can be mapped.|  
+|-----|-----------|  
+|**OnFindUnCoupledDestinationRecord**|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prodshort](../includes/prodshort.md)] currency codes with ISO currency codes in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].|  
+|**OnBeforeApplyRecordTemplate**|Occurs before applying configuration templates to new records, and can be used to implement algorithms for determining which configuration template to use.<!--point to section about templates.-->|  
+|**OnAfterApplyRecordTemplate**|Occurs after configuration templates are applied to new records, and can be used to change data after configuration templates have been applied.|  
+|**OnBeforeTransferRecordFields**|Occurs before transferring data in modified fields (which are defined in the **Integration Field Mapping** table) from the source table to the destination table. It can be used to validate the source or destination before the data is moved.|  
+|**OnAfterTransferRecordFields**|Occurs after transferring modified field data (which are defined in the Integration Field Mapping table) from the source table to the destination table. It can be used to transfer additional data, validate lookups, and so on. Setting the **AdditionalFieldsWereModified** parameter will cause a destination record modification even though no fields were modified.|  
+|**OnBeforeInsertRecord**|Occurs before inserting a new destination record, and can be used to initialize fields, such as primary keys.|  
+|**OnAfterInsertRecord**|Occurs after a new destination record is inserted, and can be used to perform post-insert operations such as updating related data.|  
+|**OnBeforeModifyRecord**|Occurs before modifying an existing destination record, and can be used to validate or change data before modification.|  
+|**OnAfterModifyRecord**|Occurs after an existing destination record is modified, and can be used to perform post-modify operations such as updating related data.|  
+|**OnTransferFieldData**|Occurs before an existing destination field value is transferred to a source field, and can be used to perform specific transformations of data when the data types of the source and the destination field are different but can be mapped.|  
 
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
@@ -455,7 +456,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
     -tabletype:CDS  
     ```
 
-    The process for creating the table starts. The AL Table Proxy Generator tool finds that an integration table for the **Contact** entity already exists, so it creates a table extension with only new fields, in this case **Industry**. When the process is completed, the output path contains the WorkerExt.al file.
+    The process for creating the table starts. The AL Table Proxy Generator tool finds that an integration table for the **Contact** entity already exists, so it creates a table extension with only new fields; in this case **Industry**. When the process is completed, the output path contains the `WorkerExt.al` file.
 
 ## Extend the contact table and page with the Industry field
 

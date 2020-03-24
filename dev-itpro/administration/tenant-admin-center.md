@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 12/16/2019
+ms.date: 03/20/2020
 ms.author: edupont
 ---
 # The Business Central Administration Center
@@ -22,7 +22,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
 
-## Accessing the administration center
+## Access to the administration center
 
 The following users are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
 
@@ -34,18 +34,46 @@ Internal administrators are users who are assigned the **Global admin** role in 
 
 The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
 
-### Internal administrators
+### Mobile apps
 
-As the internal administrator, you can get to the administration center by navigating directly to the URL. Or, choose the link in the **Settings** menu when you're signed in to [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+Mobile apps can't natively handle a setup where there's no production environment called 'production'. In this case, you must use the protocol handler. For more information about the protocol handler, see [Linking to the Dynamics 365 Business Central App](../developer/devenv-link-to-universal-app.md). We recommend you don't remove the 'production' environment if mobile apps are in use.  
 
-To access the administration center from the URL, use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)]:
+## Internal administrators
+
+As the internal administrator, you can choose the link in the **Settings** menu when you're signed in to [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+Alternatively, you can access the administration center from the URL, use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)]:
 
 `https://businesscentral.dynamics.com/[TENANT_ID]/admin`
 
 > [!TIP]
 > The tenant ID is shown in the **Help and Support** page in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+  
+In the administration center, you can [create and monitor environments](tenant-admin-center-environments.md). This is also where you manage the people who must be [notified of administrative events](tenant-admin-center-notifications.md) for your tenant.  
 
-### Partner access to the administration center
+Your partner can help you set up telemetry for production environments, including [integration with Application Insights in Azure](tenant-admin-center-telemetry.md).  
+
+If your organization decides to switch to another partner, you must make sure that some settings that your current partner made in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. This includes the following settings:
+
+- Support contact details
+
+    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the **Support** menu, choose **Manage Support Contact**.
+    2. Verify that the values in the **Name**, **Email address**, and the **Website** fields are still relevant; if not, then delete or modify the values.
+
+- Notification recipients
+
+    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], on the left side, choose **Notification recipients**
+    2. Verify that the list of email addresses are still relevant; if not, then delete or modify the values.
+
+- Application Insights key (if this was set up by the partner)
+
+    1. In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment, and then, in the top menu, choose **Application Insights Key**.
+
+    2. Remove the value of the **Instrumentation Key**
+
+When you establish a relationship with a new partner, they will fill in these fields again.
+
+## Partner access to the administration center
 
 As a partner, you can access the administration center from the Partner Dashboard in the Microsoft Partner Center:
 
@@ -63,10 +91,6 @@ From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)],
 
 > [!NOTE]
 > As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
-
-### Mobile apps
-
-Mobile apps can't natively handle a setup where there's no production environment called 'production'. In this case, you must use the protocol handler. For more information about the protocol handler, see [Linking to the Dynamics 365 Business Central App](../developer/devenv-link-to-universal-app.md). We recommend you don't remove the 'production' environment if mobile apps are in use.
 
 ## See also
 

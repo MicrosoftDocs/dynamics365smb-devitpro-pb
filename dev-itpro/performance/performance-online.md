@@ -53,3 +53,4 @@ Without limits, one tenant could use many more resources than other tenants. Oth
 [Performance Articles For Developers](performance-developer.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[Performance tips for business users](performance-users.md)  
