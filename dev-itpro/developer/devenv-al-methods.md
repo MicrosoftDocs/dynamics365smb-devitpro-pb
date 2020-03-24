@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # AL Methods
+
 Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be executed, or *called*, from the same object in which they are declared or from other parts of the application. 
 
 There are two types of methods: system methods and user-defined (custom) methods.
@@ -20,6 +21,7 @@ There are two types of methods: system methods and user-defined (custom) methods
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
 
 ## Declaring methods
+
 The method declaration defines the method and has the following syntax:
 
 ```
