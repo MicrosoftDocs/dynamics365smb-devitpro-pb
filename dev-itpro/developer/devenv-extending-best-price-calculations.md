@@ -140,8 +140,8 @@ We have the following licenses in our price list. If you buy 70061 or 70062 alon
 |70061|BC Premium|$100|N/A|
 |70062|BC Essentials|$75|N/A|
 |70063|BC Team Member|$8|N/A|
-|70064|Sales Professional|$65|$20 when bundled with 70061 or 70062.|
-|70065|Customer Service Pro|$50|$21 when bundled with 70061 or 70062.|
+|70064|Sales Professional|$65|$15 and $16 when bundled with 70061 or 70062.|
+|70065|Customer Service Pro|$50|$20 and $21 when bundled with 70061 or 70062.|
 
 The following image shows an example of a Price List page that is extended with the Attached to Line No. field. Notice that the prices are changed based on the combinations of licenses.
 
