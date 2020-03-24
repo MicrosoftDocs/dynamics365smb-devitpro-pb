@@ -8,7 +8,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/05/2020
+ms.date: 03/23/2020
 ms.author: edupont
 
 ---
@@ -32,6 +32,8 @@ Internal administrators can also create sandbox environments for deeper troubles
 Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. As the partner, you must have specified support contact details in the **Help and Support** page. For more information, see [Configuring the support experience](../technical-support.md#configuring-the-support-experience).  
 
 The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to analyse telemetry, create a sandbox environment for debugging, or an extra production environment for step-by-step reproduction, for example.  
+
+If a prospect wants to extend their free trial a second time, the delegated administrator can sign in to the prospect's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and run the same **Extend Trial Period** guide. For more information, see [Extending trials](tenant-administration.md#extending-trials).  
 
 If the partner cannot find a solution, they can request support from Microsoft. For more information, see the [Escalating support issues to Microsoft](#escalating-support-issues-to-microsoft) section.  
 

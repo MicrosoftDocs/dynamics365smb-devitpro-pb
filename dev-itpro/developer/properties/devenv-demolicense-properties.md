@@ -11,10 +11,10 @@ author: SusanneWindfeldPedersen
 ---
 
 # Properties of the Demo License
-The demo license is automatically installed when you install the Demo Option. The demo license works with the [!INCLUDE[demolong](../includes/demolong_md.md)], has serial number 000, and includes granule 540. The license allows access to the entire base application and limited access to the development system.  
+The demo license is automatically installed when you install the **Demo Option**. The demo license works with the [!INCLUDE[demolong](../includes/demolong_md.md)], has serial number 000, and includes granule 540. The license allows access to the entire base application and limited access to the development system.  
   
 ## Properties of the Demo License  
- When the demo license is installed, you can:   
+When the demo license is installed, you can:   
   
 - Start up to two simultaneous client sessions on any platform.  
 - Create up to two companies.    
@@ -33,7 +33,7 @@ The demo license is automatically installed when you install the Demo Option. Th
 > [!IMPORTANT]  
 > The demo license can only be used with demonstration companies such as [!INCLUDE[demoname](../includes/demoname_md.md)].  
   
-## Country/Region Versions  
+## Country/Region versions  
 When you run a country/region version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the license must correspond with the country/region version that you have installed.  
   
 Any license can be available in different country/region versions.  
