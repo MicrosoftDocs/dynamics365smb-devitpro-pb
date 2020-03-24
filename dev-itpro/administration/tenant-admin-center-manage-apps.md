@@ -15,14 +15,14 @@ ms.author: jswymer
 # Managing Apps
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
- 
+
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment is built as a collection of apps. These apps include Microsoft apps and third-party apps, for example, apps from AppSource. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
 Updates are frequently made available for these apps by Microsoft, partners, and ISVs. App updates add new features and fix known problems. To keep your environment up to date and running smoothly, you should check for and install the latest updates regularly.
 
 To help you manage app updates, the administration center includes the **Manage Apps** page. 
 
-Similar to all other features available in the administration center, this functionlaity can be used by the partner (delegated administrator) or a local customer admin. 
+Like other features in the administration center, this functionality can be used by the partner (delegated administrator) or a local customer admin. 
 
 ## Get an overview and check for updates
 
@@ -45,7 +45,7 @@ When completed, if an update is available for an app, there are two indications:
 
 ## Install an app update - the flow
 
-It's not good practice to install an app update directly on a production environment without trying it on a sandbox environment first. You should make sure the app update won't disrupt the operational flow or cause problems for the users. We recommend you always install and test it on a Sandbox environment first.
+It's not good practice to install an app update directly on a production environment without trying it on a sandbox environment first. You want to make sure the app update won't disrupt the operational flow or cause problems for the users. We recommend you always install and test it on a Sandbox environment first.
 
 The following steps provide the general flow for updating an app.
 
@@ -68,7 +68,7 @@ The following steps provide the general flow for updating an app.
     - If the app installs successfully, the new version displays in the **Installed version** column and the **Available update action** column is **Up to date**.
     - If the installation fails the **Available update action** column changes to **Update failed**. See [What to do when an update fails](#failure).
 
-4. If the app update succeeded, login into the Sandbox environment and test the new app version.
+4. If the app update succeeded, sign in the Sandbox environment and test the new app version.
 5. If the app update works as expected on the Sandbox, switch to the production environment, and repeat the installation steps for the app update.
 
     > [!TIP]
