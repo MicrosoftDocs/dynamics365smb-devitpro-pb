@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/16/2020
+ms.date: 03/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,6 +76,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0225](codecop-aa0225-captionmustbefilledonpageforfields.md)|You must specify a caption in the Caption property for Fields that exist on page objects.|You must specify a caption in the Caption property for Fields that exist on page objects.|The Caption property for {0} {1} must be filled in.|Localizability|Warning|true|
 |[AA0226](codecop-aa0226-captionlanguagevaluemustbefilled.md)|The value of the Caption property of Fields must be filled in.|The value of the Caption property of Fields must be filled in.|The value of the {0} Caption property for {1} {2} must be filled in.|Localizability|Warning|true|
 |[AA0227](codecop-aa0227-alwaysguardmethodswithunhandlederrorsinupgradecodeunits.md)|Optional return value should not be omitted in upgrade codeunits.|In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors.|Optional return value of the method should not be omitted in upgrade codeunits.|Design|Warning|true|
+|[AA0228](codecop-aa0228-thelocalmethodisdeclaredbutneverused.md)|The local method must be used; otherwise removed.|The local method must be used, otherwise the variable is not necessary.|The local method '{0}' is declared but never used.|Design|Warning|true|
 |[AA0230](codecop-aa0230-noversionnumberonbcassembliesdotnetvars.md)|Version should not be specified for internal assemblies.|Version number should not be specified for internal assemblies to avoid errors during upgrade procedures.|Version should not be specified for internal assembly '{0}'.|Design|Warning|true|
 |[AA0231](codecop-aa0231-donotusestrsubstnoinerrormessage.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method. Instead use the ability of the Error method to insert values into the string with placeholders.|Do not use the StrSubstNo or string concatenation as a parameter in the Error method.|Design|Warning|true|
 |[AA0232](codecop-aa0232-flowfieldoftableshouldbeindexed.md)|The FlowField of a table should be indexed.|You can potentially increase performance if fields that are used in FlowFields are added to SumIndexedFields of the corresponding key.|The FlowField {0} of {1} should be added to the SIFT key.|Design|Info|true|
