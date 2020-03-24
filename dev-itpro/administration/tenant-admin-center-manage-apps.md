@@ -87,7 +87,7 @@ The **Install requirements** category lists dependency apps that haven't been in
 
 You can't, however, install a new app from the **Manage App** page. Use the **Extension Management** page in the client instead. Completing this step will resolve the requirement. For more information, see [Installing an Extension](/dynamics365/business-central/ui-extensions#installing-an-extension).
 
-## What happens when an app update installs?
+## What happens when an app update is installed?
 
 The new app version is automatically scheduled installation. When a time slot opens up, the app will be published, synchronized, and installed in the background. This process usually doesn't take long, and users won't be interrupted.
 
