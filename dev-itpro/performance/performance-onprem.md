@@ -136,6 +136,8 @@ The following resources describe ways that you measure and monitor performance i
 
 [Performance Overview](performance-overview.md)  
 [Performance Topics For Developers](performance-developer.md)  
+[Performance tips for business users](performance-users.md)  
 [How Application Configurations Affect Performance](performance-application.md)  
 [Performance Online](performance-online.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md) 
+[How to Work with a Performance Problem](performance-work-perf-problem.md)  
+
