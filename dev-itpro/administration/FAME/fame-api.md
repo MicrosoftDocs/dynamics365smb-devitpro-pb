@@ -915,7 +915,7 @@ GET /v1.0/apps/{appId}/roles
 
 ## Getting detailed error messages
 
-To get detailed error messages from FAME API calls, wrap the calls in a try-catch block, as shown in the following PpwerShell : 
+To get detailed error messages from FAME API calls, wrap the calls in a try-catch block, as shown in the following PowerShell example: 
 
 ```powershell
 try {
