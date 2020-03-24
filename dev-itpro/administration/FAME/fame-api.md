@@ -13,6 +13,8 @@ ms.author: jswymer
 
 # Fixed App Management Endpoint API
 
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+
 ## Entities
 
 ## App
