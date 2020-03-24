@@ -16,7 +16,8 @@ ms.author: solsen
 
 In an AL project there are two JSON files; the `app.json` file and the `launch.json` file that are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on. 
 
-For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
+> [!NOTE]  
+> For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
 
 ## <a name="Appjson"></a>App.json file
 The following table describes the settings in the `app.json` file:
