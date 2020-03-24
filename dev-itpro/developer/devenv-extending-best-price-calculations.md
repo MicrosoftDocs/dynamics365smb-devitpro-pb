@@ -133,17 +133,7 @@ Let's say we want to make the price of one item depend on whether it's sold indi
 > [!NOTE]
 > The prices, names, and combinations in this example are completely fictional and intended only to support the scenario described here. They do not reflect anything in the real-world.
 
-We have the following licenses in our price list.
-
-|Asset Number|Name  |Monthly Base Price Per User|
-|---------|---------|---------|
-|70061|BC Premium|$100|
-|70062|BC Essentials|$75|
-|70063|BC Team Member|$8|
-|70064|Sales Professional|$65|
-|70065|Customer Service Pro|$50|
-
-If you buy 70061 or 70062 alone their prices do not change. However, let's say that we want to offer discounts when one license is purchased along with another. For example, we want to sell 70064 at a reduced monthly rate when it's purchased in combination with 70061 or 70062. Our list could then look like this.
+We have the following licenses in our price list. If you buy 70061 or 70062 alone their prices do not change. However, let's say that we want to offer discounts when one license is purchased along with another. For example, we want to sell 70064 at a reduced monthly rate when it's purchased in combination with 70061 or 70062. Our list would then look like this.
 
 |Asset Number  |Name  |Monthly Base Price Per User|Bundle Price|
 |---------|---------|---------|---------|
@@ -188,6 +178,10 @@ tableextension 50001 "Attach Price" extends "Sales Line"
 }
 
 ```
+
+The following image shows an example of a Price List page that is extended with the Attached to Line No. field. Notice that the prices are changed based on the combinations of licenses.
+
+:::image type="content" source="../media/best-pricing-sales-lines.png" alt-text="Image that shows an example of an extended Price List page.":::
 
 The following page extension adds the Attach Line No. field to the Sales order page (subform).
 
