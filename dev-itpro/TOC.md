@@ -388,6 +388,7 @@
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
+### [Working with AL Methods](developer/devenv-al-methods.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
