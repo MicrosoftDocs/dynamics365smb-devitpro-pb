@@ -31,7 +31,7 @@ The **Manage Apps** lists all the apps installed on the environment and indicate
 
 When completed, if an update is available for an app, there are two indications:
 
-- The **Latest version available** column contains the new version number of app.
+- The **Latest version available** column contains the new version number of the app.
 - The **Available update action** column contains one of the following actions:
 
     |Actions|Descriptions|
@@ -50,10 +50,10 @@ The following steps provide the general flow for upgrading an app.
     For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment)
 2. Open the Sandbox environment and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
-5. If **Available update action** column for the app shows the **Action required** link, clear the requirements.
+5. If the **Available update action** column for the app shows the **Action required** link, resolve the requirements.
 
     See [Resolving requirements for app updates](#requirements).
-4. When **Available update action** column for the app shows **Install update**, select this action to install the new version of the app.
+4. When the **Available update action** column for the app shows **Install update**, select this action to install the new version of the app.
 5. Wait for the app to be installed.
 
     Select **Refresh** occasionally to check the status.
@@ -69,12 +69,13 @@ The following steps provide the general flow for upgrading an app.
 
 ## <a name="requirements"></a>Resolve requirements for app updates
 
-For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates** pane list provide this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
-When you clear all requirements, the app that you want to update will be ready to install.
+For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates** page provides this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
+
+After you resolve all requirements, the app that you want to update will be ready to install.
 
 ### Update requirements
 
-The **Update requirements** category lists existing dependency apps the have updates to be installed. To clear these requirements, do the following steps for each app:
+The **Update requirements** category lists existing dependency apps the have updates to be installed. To resolve these requirements, do the following steps for each app:
 
 1. Return to the **Manage Apps** page.
 2. Find the app in the list and select **Install update**.
@@ -84,19 +85,17 @@ The **Update requirements** category lists existing dependency apps the have upd
 
 The **Install requirements** category lists dependency apps that haven't been installed yet. For example, a new app was introduced that app update depends on.
 
-You can't, however, install a new app from the **Manage App** page. Use the **Extension Management** page in the client instead. Completing this step will clear the requirement. For more information, see [Installing an Extension](/dynamics365/business-central/ui-extensions#installing-an-extension).
+You can't, however, install a new app from the **Manage App** page. Use the **Extension Management** page in the client instead. Completing this step will resolve the requirement. For more information, see [Installing an Extension](/dynamics365/business-central/ui-extensions#installing-an-extension).
 
 ## What happens when an app update installs?
 
-The new app version is automatically scheduled installation. When a time slot opens up, the app will be published, synchronized, and installed in the background. This process usually takes a few seconds, and users won't be interrupted.
+The new app version is automatically scheduled installation. When a time slot opens up, the app will be published, synchronized, and installed in the background. This process usually doesn't take long, and users won't be interrupted.
 
 ## <a name="failure"></a>What do I do when an update fails?
 
-When the installation of an app update fails, the **Available update action** column will display the **Update failed**. Select the **Update failed** action to get more information. The **App Update Details** pane provides some details about update and what might have caused the failure.
+When the installation of an app update fails, the **Available update action** column will display the **Update failed** action. Select this action to get more information. The **App Update Details** pane provides some details about update and what might have caused the failure.
 
-Sometimes the update failed because of a transient problem. Select **Retry** to try to install the update again. If this installation continues to fail, contact your ISV or support.  
-
-
+Sometimes the update failed because of a transient problem. Select **Retry** to try to install the update again. If the installation continues to fail, contact your ISV or support.  
 
 ## See also
 
