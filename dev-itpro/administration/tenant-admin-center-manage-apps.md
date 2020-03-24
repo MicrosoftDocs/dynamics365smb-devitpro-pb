@@ -47,7 +47,7 @@ The following steps provide the general flow for upgrading an app.
 
 1. If you don't have a sandbox environment, create one.
 
-    For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment)
+    For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
 2. Open the Sandbox environment and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
 5. If the **Available update action** column for the app shows the **Action required** link, resolve the requirements.
