@@ -14,6 +14,8 @@ ms.author: jswymer
 
 # Managing Apps
 
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+ 
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment is built as a collection of apps. These apps include Microsoft apps and third-party apps, for example, apps from AppSource. The apps work together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
 Updates are frequently made available for these apps by Microsoft, partners, and ISVs. App updates add new features and fix known problems. To keep your tenant up to date and running smoothly, you should check for and install the latest updates regularly.
