@@ -1187,11 +1187,20 @@ Returns a detailed list of the database exports that occurred within the provide
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
 ### Get Apps 
- 
-Method & Path: GET /apps 
-Request body: N/A 
+
+Get information about apps that installed in the environment.
+
+```
+GET /{applicationType}/environments/{environmentName}/apps
+```
+<!--
+```
+[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps
+```
+-->
 
 **Response:**
+Returns information about the apps installed on the environment.
 
 ```
 [ 
@@ -1210,11 +1219,18 @@ Request body: N/A
 ```
 
 ### Get Available Updates 
- 
-Method & Path:  
-GET /apps/availableUpdates  
-Request body: N/A
 
+Get information about new app versions that are available for apps currently installed on the environment.
+
+```
+GET /{applicationType}/environments/{environmentName}/apps/availableUpdates
+```
+
+<!--
+```
+[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps/availableUpdates
+```
+-->
 **Response:**
 
 ```
@@ -1241,17 +1257,28 @@ Request body: N/A
 
 ```
 
- 
-### Schedule an app update 
- 
-Method & Path: POST /apps/<app_id>/update 
-Request body:  
+### Schedule an App Update 
+
+Schedules the installation of an app update version. The update will be installed as soon as a time slot is available.
+
+```
+GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
+```
+
+<!--
+```
+[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps/{app_id}/update
+```
+-->
+**BODY:**
+
 { 
 "targetVersion": "1.3.0.1" 
-} 
- 
+}
+
 **Response (app operation):**
 
+Returns information about the scheduled app update request.
 ```
 [ 
 { 
@@ -1264,12 +1291,25 @@ Request body:
 ] 
 ```
 
-#### Get Operation 
- 
+### Get Operation
+
+Gets information about app update installations.
+
 Method & Path: GET /apps/<app_id>/operations/[<id>] 
-Request body: N/A 
+
+```
+GET /{applicationType}/environments/{environmentName}/apps/{app_id}/operations/[{id}]
+```
+
+<!--
+```
+[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps/{app_id}/operations/[{id}]
+```
+-->
 
 **Response (single operation):**
+
+Returns information about the installation of the app update.
 
 ```
 [ 
