@@ -96,11 +96,11 @@ The method <!--values?--> is part of the composite key in the "Price Calculation
 
 The Sales & Receivable Setup table defines the default method, Lowest Price, for all sales prices <!--and purchases?-->. You can redefine <!--will this override the setting on the S&R Setup?--> it for a certain customer price group or a customer. You cannot edit the method on sales document headers or lines.
 
-**INSERT IMAGE HERE**
+:::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing the price sources group.":::
 
 The Purchase & Payables Setup table also defines the default method for all purchase prices. You can redefine it for a certain vendor. You cannot edit the method on purchase document headers or lines. 
 
-**INSERT IMAGE HERE**
+:::image type="content" source="../media/best-pricing-method.png" alt-text="Diagram showing details about the best pricing method.":::
 
 ## Data Structure Comparison
 The Business Central (Version 15.0) calculation uses the following tables that store information about prices, costs, and discounts: 
