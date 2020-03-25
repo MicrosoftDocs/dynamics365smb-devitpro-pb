@@ -1203,11 +1203,11 @@ Returns a detailed list of the database exports that occurred within the provide
 Get information about apps that installed in the environment.
 
 ```
-GET /{applicationType}/environments/{environmentName}/apps
+[200] GET /admin/v2.1/applications/environments/{environmentName}/apps
 ```
 <!--
 ```
-[200] GET /admin/v2.0/applications/environments/{environmentName}/apps
+[200] GET /admin/v2.1/applications/environments/{environmentName}/apps
 ```
 -->
 
@@ -1215,18 +1215,20 @@ GET /{applicationType}/environments/{environmentName}/apps
 Returns information about the apps installed on the environment.
 
 ```
-[ 
-{ 
-"id": "bcd4ce37-a0f1-482c-9a43-b06a45fef968", 
-"name": "Some App", 
-"publisher": "Fabrikam", 
-"version": "1.2.3.4", 
-"state": "installed|updatePending|updating", 
-"lastOperationId": "<guid>", 
-"lastUpdateAttemptResult": "failed|succeeded|canceled|skipped" 
-}, 
-… 
-] 
+{
+    "value":
+    [
+        { 
+            "id": Guid, // Id of the installed app 
+            "name": string, // Name of the installed app 
+            "publisher": string, // Publisher of the installed app 
+            "version": string, // Version of the installed app
+            "state": string, // (enum | "Installed", "UpdatePending", "Updating")
+            "lastOperationId": Guid, // Id of the last update operation that was performed for this app
+            "lastUpdateAttemptResult": string // (enum | "Failed", "Succeeded", "Canceled", "Skipped")
+        }
+    ] 
+}
 
 ```
 
@@ -1235,37 +1237,38 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /{applicationType}/environments/{environmentName}/apps/availableUpdates
+[200] GET /admin/v2.1/applications/environments/{environmentName}/apps/availableUpdates
 ```
 
 <!--
 ```
-[200] GET /admin/v2.0/applications/environments/{environmentName}/apps/availableUpdates
+[200] GET /admin/v2.1/applications/environments/{environmentName}/apps/availableUpdates
 ```
 -->
 **Response:**
 
 ```
-[ 
-{ 
-"appId": "<guid>", 
-"name": "Some App", 
-"publisher": "Fabrikam", 
-"version": "1.3.0.1", 
-"requirements": [{ 
-"appId": "bcd4ce37-a0f1-482c-9a43-b06a45fef968", 
-"name": "New Dependency", 
-"publisher": "Other partner", 
-"type": "install", 
-"version": "1.0.0.0" 
-}, { 
-"appId": "2bf23bf0-5590-4f17-a78e-e13e486518e7", 
-"name": "Some Library", 
-"publisher": "Fabrikam", 
-"type": "update", 
-"version": "2.0.3.1" 
-}] 
-}] 
+{
+    "value":
+    [ 
+        { 
+            "id": Guid, // Id of the app 
+            "name": string, // Name of the app 
+            "publisher": string, // Publisher of the app 
+            "version": string, // New version available of the app
+            "requirements": // List of other apps that need to be installed or updated before this app can be updated
+            [
+                { 
+                    "id": Guid, // Id of the app
+                    "name": string, // Name of the app 
+                    "publisher": string, // Publisher of the app 
+                    "version": string, // Version the required app needs to be updated to or installed
+                    "type": string // (enum | "Install", "Update") 
+                }
+            ] 
+        }
+    ] 
+}
 
 ```
 
