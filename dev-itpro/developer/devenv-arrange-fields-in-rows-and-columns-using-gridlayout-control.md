@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # Arranging Fields in Rows and Columns Using the Grid Control
 
-By default, fields in a FastTab are arranged automatically in two columns that are based on the number of fields. For more information, see [Field Arrangement on a Fasttab](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format or a matrix-like format. To understand the differences between the two controls to help you determine which control to use, see [Comparing Grid and Fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md). 
+By default, fields in a FastTab are arranged automatically in two columns that are based on the number of fields. For more information, see [Field Arrangement on a FastTab](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format or a matrix-like format. To understand the differences between the two controls to help you determine which control to use, see [Comparing Grid and Fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md). 
 
 > [!NOTE]  
 > Grid control for arranging page fields is partially supported. 
@@ -86,7 +86,7 @@ page 50113 "Customers Page"
 ```
 The following screenshot shows how the resulting page looks like from the [!INCLUDE[d365fin_web_md_md](includes/d365fin_web_md.md)].  
 
- ![Screenhot of a page with Grid layout](media/screenshot_page_grid_format.png "screenshot_page_grid_format")  
+ ![Screenshot of a page with Grid layout](media/screenshot_page_grid_format.png "screenshot_page_grid_format")  
 
 
 ## Setting fields to span multiple rows and columns  
