@@ -38,7 +38,7 @@ By default, fields in a FastTab on a page are arranged automatically in two colu
 This property is only supported on grids.
 
 > [!IMPORTANT]
-> Arranging in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](../includes/webclient.md)], fields can only be arranged in columns.
+> Arranging in rows only works in the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](includes/webclient.md)], fields can only be arranged in columns.
 
 ## See Also
 

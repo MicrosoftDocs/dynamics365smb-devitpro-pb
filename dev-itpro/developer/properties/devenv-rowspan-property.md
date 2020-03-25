@@ -7,18 +7,15 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 45bd8abe-360f-4cb1-98f7-c91c086a7723
-caps.latest.revision: 9
-manager: 
 ---
 
  
 
 # RowSpan Property
-Sets the number of rows that a field spans in a GridLayout control.  
+Sets the number of rows that a field spans in a Grid control.  
   
 ## Applies to  
- Field controls that are in a GridLayout control on a page.  
+ Field controls that are in a Grid control on a page.  
   
 ## Property Values  
  An integer that specifies the number of rows to span the field.  
@@ -36,8 +33,10 @@ If you set Field 1 to span two rows, then the following layout is displayed:
 -->
 
 > [!IMPORTANT]  
->  The RowSpan property is not supported by the [!INCLUDE[nav_web](../includes/nav_web_md.md)]. If the page displays in the [!INCLUDE[nav_web](../includes/nav_web_md.md)], then the property is ignored and the field will not span any rows.
+>  The RowSpan property is not supported by the [!INCLUDE[nav_web](includes/nav_web_md.md)]. If the page displays in the [!INCLUDE[nav_web](includes/nav_web_md.md)], then the property is ignored and the field will not span any rows.
 
 ## See Also  
 [Properties](devenv-properties.md)  
-[Layout Property](devenv-layout-property.md)  
+[ColumnSpan Property](devenv-columnspan-property.md)   
+[GridLayout Property](devenv-gridlayout-property.md)
+<!--[Layout Property](devenv-layout-property.md)  -->
