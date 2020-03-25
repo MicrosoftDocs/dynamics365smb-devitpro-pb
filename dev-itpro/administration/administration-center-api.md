@@ -16,9 +16,9 @@ ms.date: 03/24/2020
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically do administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. With the API, administrators can, for example:
 
--Query and work with production and sandbox environments for the tenant
-- Set up administrative notifications
-- View telemetry for events on the tenant
+- Query and work with production and sandbox environments for the tenant.
+- Set up administrative notifications.
+- View telemetry for events on the tenant.
 
 For more information about administrative capabilities, see [The Business Central Administration Center](tenant-admin-center.md). This article describes the API contracts for these administrative capabilities.
 
