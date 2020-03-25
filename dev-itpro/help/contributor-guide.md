@@ -159,24 +159,30 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). DocFx is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files for the Dynamics NAV Help Server.  
 
 > [!TIP]
-> You can also use DocFx to generate content for other websites. In that case, either modify NAV docfx.json or replace NAVdocfx.json with docfx.json and configure that to meet your website's requirements.
+> You can also use DocFx to generate content for other websites. In that case, either modify NAV docfx.json or replace NAVdocfx.json with your own configuration file to meet your website's requirements.
 
-1. Install DocFX on your computer.
+1. Install [DocFx](https://dotnet.github.io/docfx/) on your computer.
 
-    For more information, see [DocFx](https://dotnet.github.io/docfx/).
+    DocFx is a command line tool, but you can also run it from a PowerShell script.  
 
-2. In the NAVDocfx.json, specify the output folder in which to store the generated HTML files.
+    You must provide a .JSON file that defines certain build settings, including the output folder in which to store the generated HTML files. We suggest that you use the NAVdocfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. However, it is configured for use with the legacy Dynamics NAV Help Server. To configure it for use with a different website, remove or replace the value of the `template` property.  
 
-    The default setting in the NAVdofx.json file is that the files will be saved in the folder *c:/output*. To change this folder:
+    Alternatively, create your own docfx.json file based on the setup of your website. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
 
-    a. In the folder where your local clone is, such as *C:\GitHu b\MSFT\dynamics365smb-docs\business-central*, open the NAVdocfx.json file in your preferred editor.  
-    b.  Set the **"dest:"** parameter to your output folder, such as c:\Working\output\, and save the changes.  
+2. To change settings in the NAVdocfx.json file, in the folder where your local clone is, such as *C:\GitHu b\MSFT\dynamics365smb-docs\business-central*, open the NAVdocfx.json file in your preferred editor.  
 
-    The docfx.json file in the Microsoft repos has a different default value for the destination because the repos are configured for the Docs.microsoft.com site. If you build the HTML files based on docfx.json, make sure that you have configured it for your needs.  
+    The following table describes key parameters.
 
-    > [!NOTE]
-    > We suggest that you use the NAVdocfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. However, it is configured for use with the legacy Dynamics NAV Help Server. To configure it for use with a different website, remove or replace the value of the `template` property.  
-    > Also, the `globalMetadata` property is set to make sure that search engines will find Microsoft's original content on the Docs.microsoft.com site rather than any customizations that you and hundreds of other may have made. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `globalMetadata` property. Alternatively, create your own docfx.json file based on the setup of your website. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
+    |Property  |Description  |
+    |----------|-------------|
+    |**dest**  | Specifies the output folder of the generated HTML files, such as `c:\Working\output\`. |
+    |**template**     | Specifies the templates that the HTML files will be generated after. The value can be a string or an array. |
+    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format. In the NAVdocfx.json file, this property applies the `ROBOTS: NOINDEX, NOFOLLOW` metadata to each HTML file.  The intent is that search engines will find Microsoft's original content on the Docs.microsoft.com site rather than any customizations that you and hundreds of other may have published. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `ROBOTS` property. You can also add other global metadata, or metadata that applies to specific subfolders.  |
+    |**markdownEngineName**||
+
+    For more information, see the [Properties for build](https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#32-properties-for-build) section in the DocFx user manual.
+
+    The Microsoft repos also contain a docfx.json file that has a different settings because the repos are configured for the Docs.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
 
 3. If you have cloned a localization repo such as [dynamics365smb-docs-pr.da-dk](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk), you must also clone the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo and then copy the content of the \business-central\media\ folder.
 
@@ -203,30 +209,17 @@ The files are generated as .html files and stored in the specified output.
 > [!IMPORTANT]
 > Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com](https://docs.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
-> [!NOTE]
-> The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available.  
+The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the Docs.microsoft.com site but have been deprecated later. As part of standard website practices, the Docs.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the  `.openpublishing.redirection.json` file provides the mapping for redirection.  
+
+For inspiration for how to build your own help website, see [How-to: Customize DFM Engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html) in the DocFx user manual and the [Azure App Service](/azure/app-service/) documentation.
 
 For tips and tricks about writing in MarkDown, see the [Authoring Guide](writing-guide.md).  
 
-### Links to anchors across languages
+### <a name="anchorlink"></a>Links to anchors across languages
 
-If your website supports two or more locales, you can use DocFx to generate HTML files for the relevant languages. However, you may experience problems with links to anchors, also known as bookmarks.  
+[!INCLUDE [docslinkanchor](../developer/includes/docslinkanchor.md)]
 
-For example, if your content has a link from article1.md to a specific section in article2.md, that link would be formatted like this: ```[My translated subheading](article2.md#my-translated-subheading)```. Then, when you run DocFx to generate HTML files in Danish, DocFx will convert that link to ```[Min oversatte overskrift](article2.md#min-oversatte-overskrift)```. That is not a problem because the link will work in both English and Danish.  
-
-But if you then want to use that link elsewhere, the link only works for one of the languages because the anchor changed its name in the Danish translation. If you link to that subheading in article2 from your marketing site or support site, or if you use it as the value of the [ContextSensitiveHelpPage](../developer/properties/devenv-contextsensitivehelppage-property.md) property, then it only works in English.  
-
-To work around this problem, you can add a post-processing step to the script that you use to run DocFx to change the equivalent of ```<h3 id=da-DK-anchor-name>``` with ```<h3 id=en-US-anchor-name>```. In this example, the step would change ```<h3 id=min-oversatte-overskrift'>``` to ```<h3 id=my-translated-subheading'>```.  
-
-Alternatively, you can create explicit anchors by tagging your subheading to give it a *fixed anchor*. The following example illustrates how that would look in MarkDown:
-
-```
-### <a name="subheading"></a>My translated subheading
-```
-
-You would then be able to use the same link across all locales: ```[My translated subheading](article2.md#subheading)```, which would render in HTML as ```myurl.com/docs/article2#subheading``` across all languages.  
-
-For more information, see [Using hashtag in cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-hashtag-in-cross-reference) in the GitHub documentation.  
+Alternatively, you can add a post-processing step to the script that you use to run DocFx to change the equivalent of ```<h3 id=da-DK-anchor-name>``` with ```<h3 id=en-US-anchor-name>```. In this example, the step would change ```<h3 id=min-oversatte-overskrift'>``` to ```<h3 id=my-translated-subheading'>```.  
 
 ## Translate the content
 
