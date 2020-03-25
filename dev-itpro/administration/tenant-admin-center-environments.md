@@ -130,6 +130,18 @@ The version list may also have one or more *preview* versions. Preview versions 
 
 When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment will not be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it is deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
 
+## Managing Sessions
+
+The **Manage Sessions** page displays information about active sessions on an environment and lets you cancel selected sessions.
+
+To open the page, select **Manage Sessions**. Use the **Show session details** check box to show more or fewer details.
+
+### Cancel sessions
+
+Canceling a session is sometimes the only way to unblock a customer. For example, a long-running report is locking data in a table, preventing warehouse employees from working.
+
+To cancel a session, select it from the list and then select **Cancel selected sessions**.
+
 ## See also
 
 [Working with Administration Tools](administration.md)  
