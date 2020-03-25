@@ -32,6 +32,6 @@ For example, the following figure illustrates a GridLayout control that consists
 ## See Also    
 [Properties](devenv-properties.md)  
 [RowSpan Property](devenv-rowspan-property.md)  
-[GridLayout Property](properties/devenv-gridlayout-property.md)
+[GridLayout Property](devenv-gridlayout-property.md)
 <!--[Layout Property](devenv-layout-property.md)-->
   

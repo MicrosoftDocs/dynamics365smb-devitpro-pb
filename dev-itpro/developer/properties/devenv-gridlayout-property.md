@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 096dd046-161f-4d06-8212-0804f4271590
-caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
@@ -38,7 +36,7 @@ By default, fields in a FastTab on a page are arranged automatically in two colu
 This property is only supported on grids.
 
 > [!IMPORTANT]
-> Arranging in rows only works in the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](includes/webclient.md)], fields can only be arranged in columns.
+> Arranging in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](../includes/webclient.md)], fields can only be arranged in columns.
 
 ## See Also
 
