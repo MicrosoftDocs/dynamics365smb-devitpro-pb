@@ -20,6 +20,32 @@ The EventSubscriber method must be local.
 The EventSubscriber method must be local.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Reason for the rule
+
+The method which is marked as an event subscriber must be local, because it must not to used for external calls. Not marking the method as local might cause confusion.
+
+## Bad code example
+```
+[EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
+procedure CheckAddressLine(var Rec : Record Customer)
+begin
+   ...
+end;
+```
+ 
+## Good code example
+```
+[EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
+local procedure CheckAddressLine(var Rec : Record Customer)
+begin
+   ...
+end;
+```
+
+## Good and bad practices for fixing the rule
+Make the method local.
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
