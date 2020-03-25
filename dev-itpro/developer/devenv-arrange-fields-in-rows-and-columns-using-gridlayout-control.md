@@ -84,6 +84,10 @@ page 50113 "Customers Page"
     }
 }
 ```
+The following screenshot shows how the resulting page looks like from the [!INCLUDE[d365fin_web_md_md](includes/d365fin_web_md.md)].  
+
+ ![Screenhot of a page with Grid layout](media/screenshot_page_grid_format.png "screenshot_page_grid_format")  
+
 
 ## Setting fields to span multiple rows and columns  
 You can set a field to span multiple rows or columns. When you set a field to span multiple rows, the field occupies the cells in the rows below it, and existing fields in the occupied cells are moved to the right. When you set a field to span multiple columns, the field occupies the cells in the columns to the right, and existing fields in the occupied cells are moved to the right. You can also set a field to span multiple rows and columns. 
