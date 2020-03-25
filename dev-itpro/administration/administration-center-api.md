@@ -1205,11 +1205,6 @@ Get information about apps that installed in the environment.
 ```
 [200] GET /admin/v2.1/applications/environments/{environmentName}/apps
 ```
-<!--
-```
-[200] GET /admin/v2.1/applications/environments/{environmentName}/apps
-```
--->
 
 **Response:**
 Returns information about the apps installed on the environment.
@@ -1240,11 +1235,6 @@ Get information about new app versions that are available for apps currently ins
 [200] GET /admin/v2.1/applications/environments/{environmentName}/apps/availableUpdates
 ```
 
-<!--
-```
-[200] GET /admin/v2.1/applications/environments/{environmentName}/apps/availableUpdates
-```
--->
 **Response:**
 
 ```
@@ -1280,11 +1270,6 @@ Schedules the installation of an app update version. The update will be installe
 GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
 ```
 
-<!--
-```
-[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps/{app_id}/update
-```
--->
 **BODY:**
 
 ```
@@ -1314,12 +1299,6 @@ Gets information about app update installations.
 ```
 GET /{applicationType}/environments/{environmentName}/apps/{app_id}/operations/[{id}]
 ```
-
-<!--
-```
-[200] GET /admin/v2.0/applications/{applicationTtype}/environments/{environmentName}/apps/{app_id}/operations/[{id}]
-```
--->
 
 **Response (single operation):**
 
