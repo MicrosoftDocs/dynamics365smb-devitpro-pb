@@ -44,7 +44,7 @@ end;
 ```
 
 ## Good and bad practices for fixing the rule
-Make the method local.
+Make the method local by adding the keyword `local`.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
