@@ -1,5 +1,5 @@
 ---
-title: "Extend Price Calculations"
+title: "Price Calculations"
 ms.custom: na
 ms.date: 03/17/2020
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 
-# Extending Price Calculations
+# Price Calculations
 If you record special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
 
 2020 release wave 1 introduces a second implementation of price calculations that will be available as an alternative to the calculations that were available in 2019 release wave 2 and earlier versions. This new implementation has the advantage that it is much easier to extend, for example, with new calculations.
@@ -22,20 +22,85 @@ Price calculations that were available in 2019 release wave 2 are unchanged. The
 
 This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1. 
 
-## Price Calculation Extensibility
+## Price Calculation Setup
 Price calculation are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
 
 :::image type="content" source="../media/best-pricing-diagram1-setup.png" alt-text="Diagram showing a price calculation implementation.":::
 
-The combination of a price type (sales or purchase) and asset type (item, resource, G/L account, and so on) determines the method (all three are extendable enums) and the implementation codeunit. There can be multiple implementations for the same method that will perform a certain calculation. 
+The Price Calculation Setup table has the Code field as its primary key. Its value is calculated by using a combination of the Method, Type, Asset Type, and Implementation fields. For example, it is '[1-1-0]-7003' for the setup line where the following is true:
 
-The codeunits that implement specific calculations subscribe to the OnFindSupportedSetup() event of codeunit 7001 "Price Calculation Mgt." and return the combinations of setup records that can be implemented by the current codeunit. The **Price Calculation Setup** table collects these combinations and you can choose one of the existing concurrent implementations. For example, the calculation of sale prices for all asset types can be implemented by the "Business Central (Version 16.0)" codeunit, but calculation of purchase prices – by "Business Central (Version 15.0)" codeunit.
+- Method contains Lowest Price
+- Type contains Sale
+- Asset Type contains All
+- Implementation is Business Central (Version 15.0)"
 
-If you want to add implementations and new methods you can add detailed setup lines that define combinations of the assets and sources that use a method that you specify. For example, the following image shows detailed lines for the combination of asset number, source group, and source number. 
+You can have multiple setup records with the same combination of method, type, and asset type. The implementation value should always be different because each implementation provides different calculations. The default implementation is defined by the Default field. For example, in 2020 release wave 1 the following setups are available:
+
+|Method  |Type  |Asset Type  |Implementation  |Default  |
+|---------|---------|---------|---------|---------|
+|Lowest Price|Sale|All|Business Central (Version 15.0)|X|
+|Lowest Price|Sale|All|Business Central (Version 16.0| |
+
+By default, all sales lines will use the "Business Central (Version 15.0)" implementation to calculate prices, unless the second line has detailed setup lines that define exceptions. 
+
+<!--don't really understand this. Are detailed setup lines used to add exceptions to the default?-->Having the method in the document line we search for a setup line that matches the method, the price type, and the asset type. First, we search for exceptions that could be set for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) defined in the document line. If we find a matching setup we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
+
+For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is "Business Central (Version 15.0)," but "Business Central (Version 16.0)" implementation contains a detailed setup line for Item 1000. That means that the "Business Central (Version 16.0)" implementation will calculate the price. 
+Detailed setup records are to be entered by users and only make sense for the non-default setup records. The following image shows the relation between the setup line and the detailed setup.
 
 :::image type="content" source="../media/best-pricing-diagram2-detailed-setup.png" alt-text="Diagram showing an example of a default setup.":::
 
-<!--The detailed setup lines shown in the following image mean that all sales prices for Customer 10000 and job GUILFORD, 10 CR are calculated by the Business Central (version 16.0) implementation codeunit.-->
+For the Business Central (Version 15.0) implementation, you can only edit the Default field. The records are inserted by the codeunits that subscribe to the OnFindSupportedSetup() event in the "Price Calculation Mgt." codeunit. The two existing price calculation implementation codeunits add pairs of such records, one for the sale of assets and another for purchases. 
+Because the table <!--which table? Price Calculation Setup, I guess?--> is extensible you can also add new fields to the key by subscribing to the OnAfterDefineCode() event of "Price Calculation Setup" table.
+
+### Price Type
+The Type field is an extensible "Price Type" enum that contains the following values:
+
+* Any (0)
+* Sale (1)
+* Purchase (2)
+
+The values are part of the composite key in the Price Calculation Setup table. Sales and service lines use the Sale type, purchase lines use the Purchase type, and job or item journal lines use both for calculating price and cost. <!--when you say both, do you mean any-->
+
+### Asset Type
+The "Asset Type" field is an extensible "Price Asset Type" enum that contains the following values:
+
+* All (0)
+* Item (10)
+* Item Discount Group (20)
+* Resource (30)
+* Resource Group (40)
+* Service Cost (50)
+* G/L Account (60)
+
+<!--Don't understand this-->The "Asset Type" is part of the composite key in the "Price Calculation Setup" table. If the only setup record contains "Asset Type" - All it means that there is no need in special price calculation implementations per asset type. The default implementation will be used regardless of an asset type in the document line. If you need different implementations for resources you must add a <!--detailed--> setup line with asset type Resource with different implementation, "Resource Pricing" below. 
+
+|Method  |Type  |Asset Type  |Implementation  |Default  |
+|---------|---------|---------|---------|---------|
+|Lowest Price |Sale |All|Business Central (Version 15.0)|X|
+|Lowest Price |Sale |Resource|Resource Pricing |X|
+
+Because only one record has the combination of Lowest Price, Sale, and Resource it will be the default. If a sales line sells a resource, its price will be calculated by Resource Pricing implementation. All other assets will use the "Business Central (Version 15.0)" implementation.
+
+### Price Calculation Method
+The Method field is an extensible "Price Calculation Method" enum that contains the following values: 
+
+* Not defined (0)
+* Lowest Price (1)
+
+The method <!--values?--> is part of the composite key in the "Price Calculation Setup" table. A sales document line inherits the method value from the sales header, which in turn inherits it from one of the following, depending on where it's defined:
+
+* Customer
+* Customer price group
+* Sales & Receivable Setup table 
+
+The Sales & Receivable Setup table defines the default method, Lowest Price, for all sales prices <!--and purchases?-->. You can redefine <!--will this override the setting on the S&R Setup?--> it for a certain customer price group or a customer. You cannot edit the method on sales document headers or lines.
+
+**INSERT IMAGE HERE**
+
+The Purchase & Payables Setup table also defines the default method for all purchase prices. You can redefine it for a certain vendor. You cannot edit the method on purchase document headers or lines. 
+
+**INSERT IMAGE HERE**
 
 ## Data Structure Comparison
 The Business Central (Version 15.0) calculation uses the following tables that store information about prices, costs, and discounts: 
@@ -219,7 +284,7 @@ tableextension 50001 "Attach Price" extends "Sales Line"
 
 ```
 
-The following page extension adds the Attach Line No. field to the Sales order page (subform).
+The following page extension adds the Attach Line No. field to the Sales order page (subform). 
 
 ```
 pageextension 50001 "Attach Price" extends "Sales Order Subform"
