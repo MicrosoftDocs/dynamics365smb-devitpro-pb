@@ -1,8 +1,8 @@
 ---
 title: "Substitute the IF THEN ELSE structure with a CASE."
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/24/2020
+ms.date: 03/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

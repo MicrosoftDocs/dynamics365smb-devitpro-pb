@@ -1,5 +1,5 @@
 ---
-title: "The value of the Caption property of Fields must be filled in."
+title: "The EventSubscriber method must be local."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/25/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0226
-The value of the Caption property of Fields must be filled in.  
+# CodeCop Rule AA0207
+The EventSubscriber method must be local.  
 
 ## Description
-The value of the Caption property of Fields must be filled in.
+The EventSubscriber method must be local.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
