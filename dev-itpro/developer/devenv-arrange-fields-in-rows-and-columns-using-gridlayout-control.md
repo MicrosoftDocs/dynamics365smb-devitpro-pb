@@ -1,6 +1,6 @@
 ---
-title: Arrange Fields Using GridLayout Control
-description: Fields in a FastTab are arranged automatically. Use GridLayout control to manually set up rows, columns, span fields across, and show or hide captions.
+title: Arrange Fields Using Grid Control
+description: Fields in a FastTab are arranged automatically. Use Grid control to manually set up rows, columns, span fields across, and show or hide captions.
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -90,6 +90,22 @@ You can set a field to span multiple rows or columns. When you set a field to sp
 
 > [!IMPORTANT]  
 > The [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client does not support row and column spanning for fields. If the page displays in the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client, the fields appear without spanning.  
+
+ For example, the following figure illustrates a **Grid** control that consists of six fields arranged in three rows.  
+
+ ![GridLayout control with 3 rows and 3 columns](media/NAVGridLayout3rX3c.png "NAVGridLayout3rX3c")  
+
+ If you set **Field 2** to span two rows, then the following layout is displayed:  
+
+ ![GridLayout control with field that spans 2 rows](media/NAVGridLayoutRowSpan3x3.png "NAVGridLayoutRowSpan3x3")  
+
+ When you set a field to span multiple columns, the field occupies the cells in the columns to the right, and existing fields in the occupied cells are moved to the right. Using the previous **Grid** example, if you set **Field 2** to span two columns instead of two rows, the following layout is displayed:  
+
+ ![GridLayout control with field that spans 2 columns](media/NAVGridLayoutColSpan3x3.png "NAVGridLayoutColSpan3x3")  
+
+ You can also set a field to span multiple rows and columns. For example, if you set **Field 2** to span two rows and two columns, the following layout is displayed:  
+
+ ![GridLayout with field that spans 2 row and column](media/NAV_GridLayout_RoxColSpan_3x3.png "NAV\_GridLayout\_RoxColSpan\_3x3")+
   
 #### To set a field to span rows and columns  
   
@@ -104,7 +120,7 @@ When you set the **Grid** control, the fields of that group can be set to span r
   
 ##  <a name="position"></a> Hiding field captions  
   
-You can hide the caption of a group or a field. To hide the caption of a field, set the value of the **ShowCaption** property to **false**. For more information, see [ShowCaption Property](properties/devenv-showcaption-property.md).
+You can hide the caption of a group or a field. To hide the caption of a field, set the value of the **ShowCaption** property to **False**. For more information, see [ShowCaption Property](properties/devenv-showcaption-property.md).
 
   
 ## See Also  
