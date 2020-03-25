@@ -135,6 +135,7 @@ When you create a sandbox environment on a preview version, the environment will
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
+[Managing Apps](tenant-admin-center-manage-apps.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
