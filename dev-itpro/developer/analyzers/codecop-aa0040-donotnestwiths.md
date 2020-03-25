@@ -1,6 +1,6 @@
 ---
 title: "Avoid using nested WITH statements."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/25/2020
 ms.reviewer: na

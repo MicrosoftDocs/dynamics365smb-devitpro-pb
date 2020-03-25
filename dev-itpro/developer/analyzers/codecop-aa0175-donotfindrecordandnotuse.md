@@ -1,6 +1,6 @@
 ---
 title: "Only find record if you need to use it."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/25/2020
 ms.reviewer: na

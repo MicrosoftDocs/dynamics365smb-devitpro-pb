@@ -1,6 +1,6 @@
 ---
 title: "Optional return value should not be omitted in upgrade codeunits."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 03/25/2020
 ms.reviewer: na
