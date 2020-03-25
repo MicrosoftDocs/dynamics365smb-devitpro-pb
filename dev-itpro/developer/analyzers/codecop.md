@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2020
+ms.date: 03/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,6 +59,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0203](codecop-aa0203-donotnamemethodasfield.md)|To avoid confusion, do not give methods the same name as fields or actions in the same scope.|To avoid confusion, do not give methods the same name as fields or actions in the same scope.|The name of the method '{0}' is identical to a field or action in the same scope.|Design|Warning|true|
 |[AA0204](codecop-aa0204-donotnameglobalvarasfieldormethod.md)|To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope.|To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope.|The name of the global variable '{0}' is identical to a field, method or action in the same scope.|Design|Warning|true|
 |[AA0205](codecop-aa0205-variablesmustalwaysbeinitialized.md)|Variables must be initialized before usage.|Always initialize a variable before usage. This can improve readability and make debugging easier.|Use of unassigned variable '{0}'.|Design|Warning|true|
+|[AA0207](codecop-aa0207-eventsubscriberfunctionsmustbelocal.md)|The EventSubscriber method must be local.|The EventSubscriber method must be local.|The EventSubscriber method {0} must be local.|Design|Warning|true|
 |[AA0210](codecop-aa0210-suboptimalindex.md)|Avoid non-indexed fields into filtering.|Suboptimal index.|The table {0} does not contain the key with the field {1}.|Design|Info|true|
 |[AA0211](codecop-aa0211-calcfieldsonlyonflowfields.md)|Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob.|CalcFields should only be used for FlowFields or Blob fields|The CalcFields method should only be used with FlowFields or fields of type Blob. The field {0} is not a FlowField or of type Blob.|Design|Warning|true|
 |[AA0213](codecop-aa0213-obsoletejustification.md)|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|The {0} {1} must have specified ObsoleteState and ObsoleteReason.|Design|Warning|true|
