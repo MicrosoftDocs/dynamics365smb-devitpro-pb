@@ -37,6 +37,7 @@ Moving objects from Extension Y to Extension X, is considered a *move down*. Typ
 
     You have a customized base application extension with its own ID. You want to transition to the Microsoft Base Application. In this case, customizations remain in the current extension. Base objects are removed and ownership transferred to Microsoft Base Application.
 
+<!--
 - [add more]
 <!--
 - Moving objects to an extension that depends on an extension that you don't own, like the Microsoft Base Application or System Application.-->
@@ -53,7 +54,9 @@ Moving objects from the Base Application extension to Extension X is a *move up*
 
     You have a customized base application extension with the Microsoft ID. You want to transition to the Microsoft Base Application. In this case, customizations are moved out of the base application up to extensions. The customization objects are removed from the custom base application and ownership transferred to the new extensions.
 
+<!--
 - [add more]
+-->
 
 #### Development
 
