@@ -11,7 +11,8 @@ ms.author: solsen
 ---
 
 # AL Code Actions
-The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to help fix issues in code. Code Actions is a Visual Studio Code feature providing the user with possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. When the user clicks the light bulb (or presses Ctrl+.), a list of available Code Actions is presented. 
+
+The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to help fix issues in code. **Code Actions** is a Visual Studio Code feature providing the user with possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. When the user clicks the light bulb (or presses **Ctrl+.**), a list of available code actions is presented. 
 
 In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] two code actions are available in the current version:
 
@@ -19,8 +20,9 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] two code actions are 
 - Spell check code action.
 
 ## To enable AL Code Actions
-1. Open the Command Palette **Ctrl+P** and open the `settings.json` file.
-2. Enter the setting `al.enableCodeActions` and set it to `true`: `"al.enableCodeActions": true`
+
+1. Open the Command Palette by pressing **Ctrl+P** and then open the `settings.json` file.
+2. Enter the setting `al.enableCodeActions` and set it to `true` like this `"al.enableCodeActions": true`
 3. Save the settings file. You have now enabled code actions on your project.
 
 Alternatively:
