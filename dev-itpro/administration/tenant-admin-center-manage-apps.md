@@ -76,7 +76,7 @@ The following steps provide the general flow for updating an app.
 
 ## <a name="requirements"></a>Resolve requirements for app updates
 
-For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates** page provides this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
+For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates page provide this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
 
 After you resolve all requirements, the app that you want to update will be ready to install.
 
@@ -96,7 +96,7 @@ You can't, however, install a new app from the **Manage App** page. Use the **Ex
 
 ## What happens when an app update is installed?
 
-The new app version is starting to install immediately, following the confirmation dialogue. The new app version will be published, synchronized, and updated in the background. This process usually doesn't take long, and users won't be interrupted, however we still recommend you to install the updates outside of working hours. 
+The new app version is starting to install immediately, following the confirmation dialogue. The new app version will be published, synchronized, and updated in the background. This process usually doesn't take long, and users won't be interrupted. However, we still recommend you to install the updates outside of working hours.
 
 ## <a name="failure"></a>What do I do when an update fails?
 
