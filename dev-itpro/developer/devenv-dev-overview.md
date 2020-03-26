@@ -55,7 +55,7 @@ For more information, see [Visual Studio Code Docs](https://code.visualstudio.co
 The Designer works in the client itself allowing design of pages using a drag-and-drop interface. The Designer allows building extensions in the client itself by rearranging fields, adding fields, and previewing the page design. For more information, see [Using Designer](devenv-inclient-designer.md).
 
 ## Compiling and deploying
-Extensions are compiled as .app package files. The .app package file can be deployed to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server. An .app package contains the various artifacts that deliver the new functionality to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] deployment as well as a manifest that specifies the name, publisher, version, and other attributes of the extension. For information about the manifest, see [JSON Files](devenv-json-files.md).
+Extensions are compiled as .app package files. The .app package file can be deployed to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server. An .app package contains the various artifacts that deliver the new functionality to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] deployment as well as a manifest that specifies the name, publisher, version, and other attributes of the extension. For information about the manifest files, see [JSON Files](devenv-json-files.md).
 
 ## Submitting your app
 When all development and testing is done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to help facilitating the validation. For more information, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
