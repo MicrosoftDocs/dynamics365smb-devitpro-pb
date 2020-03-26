@@ -85,7 +85,7 @@ As a partner, you can access the administration center from the Partner Dashboar
 
 You can also get to the administration center by using the URL of a tenant, as described in the previous section.
 
-In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and [submit support request](manage-technical-support.md#escalating-support-issues-to-microsoft) fo your customer.  
+In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and [submit support request](manage-technical-support.md#escalating-support-issues-to-microsoft) for your customer.  
 
 From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can access your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for troubleshooting, for example.  
 

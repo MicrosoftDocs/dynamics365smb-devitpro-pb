@@ -110,14 +110,14 @@
 ### [Administration of Business Central Online](administration/tenant-administration.md)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
+### [Managing Technical Support](administration/manage-technical-support.md)
+### [Operational Limits](administration/operational-limits-online.md)
 ### Environment Types
 #### [Production and Sandbox Environments](administration/environment-types.md)
 #### [Preparing Demo Environments](administration/demo-environment.md)
 #### [Preparing Test Environments](administration/test-environment.md)
 #### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
-### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
-### [Managing Technical Support](administration/manage-technical-support.md)
-### [Operational Limits](administration/operational-limits-online.md)
 ### Monitoring and Analyzing Telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
@@ -189,8 +189,8 @@
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
-### Administration Center
-#### [Administration Center Overview](administration/tenant-admin-center.md)
+<!--### Administration Center
+#### [Administration Center Overview](administration/tenant-admin-center.md)-->
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
@@ -229,7 +229,7 @@
 ## Working in Sandboxes
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 ### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
-### [Working with Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
+### [Working with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 ## Configuring the Development Environment
 ### [JSON Files](developer/devenv-json-files.md)
 ### [The Migration.json File](developer/devenv-migration-json-file.md)
