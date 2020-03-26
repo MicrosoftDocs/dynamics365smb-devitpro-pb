@@ -40,3 +40,4 @@ For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../d
 [Performance Topics For Developers](performance-developer.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[Performance tips for business users](performance-users.md)  

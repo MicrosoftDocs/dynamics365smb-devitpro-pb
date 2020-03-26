@@ -1,7 +1,7 @@
 ---
 title: "How Application Configurations Affect Performance"
 ms.custom: na
-ms.date: 01/29/2020
+ms.date: 02/23/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: KennieNP
 
 # How Application Configurations Affect Performance
 
-The topics in this session are tips and tricks on how to setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+The topics in this section are tips and tricks on how to setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ## Run things in the background
 
@@ -40,31 +40,13 @@ The **Copy company** operation is not intended to run while business transaction
 
 Should you need to perform a **Copy company** operation, it is highly recommended to do it outside working hours. Do turn off scheduled jobs while performing **Copy company** to avoid locking issues.
 
-## Things that affect UI performance
-
-Consider personalizing your UI for performance (hide non-essential parts on role center, list, and card pages)
-- [Personalize Your Workspace](/dynamics365/business-central/ui-personalization-user)
-
-Use links instead of document attachments to improve performance
-- [Manage Attachments, Links, and Notes on Cards and Documents](/dynamics365/business-central/ui-how-add-link-to-record)
-
-## Faster data entry
-
-Use keyboard shortcuts for faster data entry
-
-- [Keyboard Shortcuts](/dynamics365/business-central/keyboard-shortcuts)
+## Periodic activities that maintain performance
 
 Block inactive customers, vendors, or items to improve filtering and searching on document data entry
 
 - [Block Customers](/dynamics365/business-central/receivables-how-block-customers)  
 - [Block Vendors](/dynamics365/business-central/payables-how-block-vendors)  
 - [Block Items from Sales or Purchasing](/dynamics365/business-central/inventory-how-block-items)  
-
-## Data search
-
-Search in lists searches all columns in the database. To avoid resource starvation on broad data searches, a search might be subject to a timeout in which case the user will see a *"Searching for rows is taking too long. Try to search or filter using different criteria."* message. 
-
-If users are experiencing slowness in data search, suggest them to set a column filter instead.
 
 ## Performance effect of enabling integration on a table
 
@@ -99,6 +81,7 @@ Finally, make sure that you do not repeat these performance mistakes that we hav
 
 [Performance Overview](performance-overview.md)  
 [Performance Topics For Developers](performance-developer.md)  
+[Performance tips for business users](performance-users.md)  
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  

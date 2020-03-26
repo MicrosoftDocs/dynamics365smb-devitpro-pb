@@ -28,6 +28,7 @@ and continue until the "slow" operations are comparable to the established basel
 
 [Performance Overview](performance-overview.md)  
 [Performance Topics For Developers](performance-developer.md)  
+[Performance tips for business users](performance-users.md)  
 [How Application Configurations Affect Performance](performance-application.md)  
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
