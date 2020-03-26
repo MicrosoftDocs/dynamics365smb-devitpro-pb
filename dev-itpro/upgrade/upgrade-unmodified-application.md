@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (referred to as version 14) application that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 base application extension. The result will be a fully upgraded Business Central 2019 release wave 2 (referred to as version 15) application and platform.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app-v4.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 
@@ -25,7 +25,9 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 1. Upgrade to Business Central Spring 2019 (version 14).
 
-   There are several updates for version 14. If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 15. If your solution is already on version 14, then you don't have to upgrade to the latest version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   There are several updates for version 14.
+   - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 15.
+   - If your solution is already on version 14, then you don't have to upgrade to the latest version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
@@ -281,7 +283,28 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Base Application.app>"
     ```
-4. Publish the new versions of Microsoft extensions.
+4. Publish the Microsoft_Application extension (update to 15.3 and later only)
+
+    The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+
+    1. Get the Microsoft_Application extension package and source code.
+
+        With update 15.4 or later, the extension package and source code are on the installation media. Complete this step only if you're installing update 15.3. The Microsoft_Application extension isn't on the 15.3 installation media. 
+    
+        With update 15.3, you must download extension package and source code from the Microsoft Download Center. To download, go to [https://download.microsoft.com/download/9/9/1/991764bc-5f99-4be7-957a-f132ac0633ef/Application.zip](https://download.microsoft.com/download/9/9/1/991764bc-5f99-4be7-957a-f132ac0633ef/Application.zip).
+            
+    2. Publish the Microsoft_Application.app package.
+
+        <!--
+        
+        ```powershell
+        Publish-NAVApp -ServerInstance <server instance name> -Path "DVD\Applications\Application\Source\Microsoft_Application.app"
+        ```
+        -->
+        ```powershell
+        Publish-NAVApp -ServerInstance <server instance name> -Path "<folder path>\Microsoft_Application.app"
+        ```
+5. Publish the new versions of Microsoft extensions.
 
     In this step, you publish new versions of Microsoft extensions that were used on your version 14 deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
@@ -293,7 +316,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
-5. Publish 3rd-party extensions.
+6. Publish 3rd-party extensions.
 
     Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on the Business Central version 15, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
 
@@ -357,7 +380,13 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Base Application" -Version <extension version>
     ```
-   Replace `<extension version>` with the exact version of the published Base Application. 
+   Replace `<extension version>` with the exact version of the published Base Application.
+
+4. Synchronize the tenant with the Application extension.
+
+    ```
+    Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
+    ```
 
 5. Synchronize the tenant with Microsoft and 3rd-party extensions.
 
