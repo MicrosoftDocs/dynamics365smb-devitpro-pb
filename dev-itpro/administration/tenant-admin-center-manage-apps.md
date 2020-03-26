@@ -26,7 +26,7 @@ Like other features in the administration center, this functionality can be used
 
 ## Get an overview and check for updates
 
-Go to the **Manage Apps** page. Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
+Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
 
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center apps](../developer/media/admin/business_central_admin_center_manage_apps.png)
@@ -35,8 +35,8 @@ The **Manage Apps** lists all the apps installed on the environment and indicate
 
 When completed, if an update is available for an app, there are two indications:
 
-- The **Latest version available** column contains the new version number of the app.
-- The **Available update action** column contains one of the following actions:
+- The **Latest Available Version** column contains the new version number of the app.
+- The **Available Update Action** column contains one of the following actions:
 
     |Actions|Descriptions|
     |-------|------------|
@@ -45,7 +45,7 @@ When completed, if an update is available for an app, there are two indications:
 
 ## Install an app update - the flow
 
-It's not good practice to install an app update directly on a production environment without trying it on a sandbox environment first. You want to make sure the app update won't disrupt the operational flow or cause problems for the users. We recommend you always install and test it on a Sandbox environment first.
+We recommend you always install and test an app update on a Sandbox environment first. You want to make sure the app update won't disrupt the operational flow or cause problems for the users.
 
 The following steps provide the general flow for updating an app.
 
@@ -53,20 +53,20 @@ The following steps provide the general flow for updating an app.
     For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
 2. Open the Sandbox environment and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
-5. If the **Available update action** column for the app shows the **Action required** link, resolve the update requirements.
+5. If the **Available Update Action** column for the app shows the **Action required** link, resolve the update requirements.
 
     See [Resolving requirements for app updates](#requirements).
-4. When the **Available update action** column for the app shows **Install update**, select this action to install the new version of the app.
+4. When the **Available Update Action** column for the app shows **Install update**, select this action to install the new version of the app.
 
     > [!Important]
-    > The update will be applied immediately after you accept the confirmation dialogue. The users can continue working during update installation, but depending on the app changes, coming with the update, they may receive a message asking them to log out and login again. It is therefore recommended that you apply the updates outside of normal working hours.
+    > The update will be applied immediately after you accept the confirmation dialogue. The users can continue working during update installation, but depending on the app changes coming with the update, they may receive a message asking them to log out and login again. It is therefore recommended that you apply the updates outside of working hours.
     
 5. Wait for the app to be installed.
 
     Select **Refresh** occasionally to check the status.
 
-    - If the app installs successfully, the new version displays in the **Installed version** column and the **Available update action** column is **Up to date**.
-    - If the installation fails the **Available update action** column changes to **Update failed**. See [What to do when an update fails](#failure).
+    - If the app installs successfully, the new version displays in the **Installed version** column and the **Available Update Action** column is **Up to date**.
+    - If the installation fails the **Available Update Action** column changes to **Update failed**. See [What to do when an update fails](#failure).
 
 4. If the app update succeeded, sign in the Sandbox environment and test the new app version.
 5. If the app update works as expected on the Sandbox, switch to the production environment, and repeat the installation steps for the app update.
@@ -100,7 +100,7 @@ The new app version is starting to install immediately, following the confirmati
 
 ## <a name="failure"></a>What do I do when an update fails?
 
-When the installation of an app update fails, the **Available update action** column will display the **Update failed** action. Select this action to get more information. The **App Update Details** pane provides some details about update and what might have caused the failure.
+When the installation of an app update fails, the **Available Update Action** column will display the **Update failed** action. Select this action to get more information. The **App Update Details** pane provides some details about update and what might have caused the failure.
 
 Sometimes the update could fail because of a transient problem. Select **Retry** to try to install the update again. If the installation continues to fail, contact your ISV. You can find the support details of each ISV on their app page on AppSource. Contact Microsoft support if the app publisher is **Microsoft**.
 
