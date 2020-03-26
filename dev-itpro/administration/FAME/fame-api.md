@@ -193,7 +193,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 
 ### Description
 
-The `principal` entity represents an Azure Active Directory `user` or `application` that has some level of access to an `app`.  
+The `principal` entity represents an Azure Active Directory user or application that has some level of access to an `app`.  
 Principal can have different roles that determine which actions they're allowed to do.
 The currently supported roles are:
 - `Owner` - Owners are allowed to do all available actions on all entities.
@@ -203,7 +203,7 @@ The currently supported roles are:
 ### Properties
 |Name|Description|Schema|
 |---|---|---|
-|**aadTenantId**|The ID of the Azure Active Directory Tenant the user/application belongs to.|string (uuid)|
+|**aadTenantId**|The ID of the Azure Active Directory Tenant the principal belongs to.|string (uuid)|
 |**id**|The ID of Azure Active Directory user/application.|string (uuid)|
 |**roles**|The list of roles the principal has assigned.|string[]|
 |**type**|The principal type.|enum (User, Application)|
@@ -299,6 +299,7 @@ DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-92
 
 Adds or updates the specified `principal` that belongs to the specified `app`.
 **Note:** Only principals with the `Owner` role are allowed to add or update principals.
+**Note:** The `aadTenantId` field should only be specified in the request body when the principal being added is of type `User`.
 
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
@@ -362,7 +363,7 @@ If a version of an app should be available in multiple countries, then the .app 
 |**publisher**|The publisher of the app.|string|
 |**revisionVersion**|The revision number of the version.|integer (int32)|
 |**status**|The version's status.|enum (Uploading, Uploaded, UploadFailed)|
-|**uploadedOn**|The UTC date and time the package was uploaded on.|string (date-time)|
+|**uploadedOn**|The UTC date and time the version was uploaded on.|string (date-time)|
 |**version**|The version of the app.|string|
 |**_etag**|The entity tag that contains a value unique to the entity's current state.|string|
 
@@ -374,6 +375,7 @@ If a version of an app should be available in multiple countries, then the .app 
 |**name**|The dependency app name.|string|
 |**publisher**|The dependency app publisher.|string|
 |**version**|The minimum version of the dependency.|string|
+|**incompatibleFromVersion**|The initial app version of the dependency that is no longer compatible with the dependent app. If this value is set then it means that versions greater or equal to it are considered incompatible.|string|
 
 
 ### List versions
