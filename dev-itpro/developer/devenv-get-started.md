@@ -24,7 +24,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 1) Sign up for a [Dynamics 365 Business Central sandbox](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1). 
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al). 
-4) Press **Ctrl+Shift+P,** to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
+4) Press **Ctrl+Shift+P** to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose a path to a new empty folder and the version to run. Then choose **Microsoft cloud sandbox** as the server.  
     > [!NOTE]  
     > If you want to change your configuration at a later point in time, choose **Add Configuration** button on the bottom right side, and then choose one of the available options.  
