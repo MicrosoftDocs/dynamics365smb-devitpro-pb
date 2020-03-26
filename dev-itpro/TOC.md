@@ -230,6 +230,7 @@
 ### [Working with Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 ## Configuring the Development Environment
 ### [JSON Files](developer/devenv-json-files.md)
+### [The Migration.json File](developer/devenv-migration-json-file.md)
 ### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
@@ -252,7 +253,7 @@
 ### [Exporting Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [Writing Extension Install Code](developer/devenv-extension-install-code.md)
 ### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
-### [Publish and Install an Extension V2](developer/devenv-how-publish-and-install-an-extension-v2.md)
+### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## [Signing an App Package File](developer/devenv-sign-extension.md)
 ## Extending the Base Application
@@ -586,6 +587,9 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+### [Migrating Tables and Fields Between Extensions]
+#### [Moving Tables and Fields to Another Extension](developer/devenv-migrate-table-fields.md)
+#### [Migration.json File](developer/devenv-migration-json-file.md)
 <!--
 ## Preview Features in AL
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
