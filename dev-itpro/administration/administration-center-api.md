@@ -103,13 +103,13 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-[200] GET /admin/v2.0/applications/environments[?doNotFetchDbSize={bool}]
+[200] GET /admin/v2.1/applications/environments[?doNotFetchDbSize={bool}]
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-[200] GET /admin/v2.0/applications/{applicationFamily}/environments[?doNotFetchDbSize={bool}]
+[200] GET /admin/v2.1/applications/{applicationFamily}/environments[?doNotFetchDbSize={bool}]
 ```
 
 **Route Parameters:**
@@ -157,7 +157,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}[?doNotFetchDbSize={bool}]
+[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[?doNotFetchDbSize={bool}]
 ```
 
 **Route Parameters:**
@@ -203,7 +203,9 @@ Returns a single environment if exists.
 ### Create new environment
 Creates a new environment with sample data.
 
-```[201] PUT /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}```
+```
+[201] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
+```
 
 **Route Parameters:**
 
@@ -306,7 +308,9 @@ Gets size of a database for a specific environment.
 ### Copy environment
 Creates a new environment with a copy of another environment's data.
 
-```[201] POST /admin/v2.0/applications/{applicationFamily}/environments/{sourceEnvironmentName}```
+```
+[201] POST /admin/v2.1/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+```
 
 **Route Parameters:**
 
@@ -398,7 +402,9 @@ Returns newly copied environment.
 ### Delete environment
 Deletes the specified environment. Warning: A production environment shouldn't be deleted.
 
-```[202] DELETE /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}```
+```
+[202] DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
+```
 
 **Route Parameters:**
 
@@ -432,7 +438,9 @@ The API endpoints here should be utilized to determine what values can be used f
 ### Applications and corresponding Countries with Rings
 Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
 
-```[200] GET /admin/v2.0/applications/```
+```
+[200] GET /admin/v2.1/applications/
+```
 
 **Response:**
 ```
@@ -456,7 +464,9 @@ Get a list of the currently available application families, the available countr
 ### Ring details with Versions
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
-```[200] GET /admin/v2.0/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}```
+```
+[200] GET /admin/v2.1/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+```
 
 **Route Parameters:**
 
@@ -484,7 +494,9 @@ Allows you to manage environment specific settings such as the environment's App
 ### Get Update Settings
 Returns the update settings for the environment.
 
-```[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
+```
+[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+```
 
 **Route Parameters:**
 
@@ -514,7 +526,9 @@ Returns the environment's update settings, or "null" if none exist
 ### Put Update Settings
 Sets the update window start and end times.
 
-```[200] PUT /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
+```
+[200] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+```
 
 **Route Parameters:**
 
@@ -559,7 +573,9 @@ Returns the updated settings
 ### Put AppInsights key
 Sets the key an environment uses for Azure AppInsights.
 
-```[202] POST /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey```
+```
+[202] POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+```
 
 **Route Parameters:**
 
@@ -592,7 +608,9 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 ### Get Environment Telemetry
 Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
 
-```[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}```
+```
+[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+```
 
 **Route Parameters:**
 
@@ -641,7 +659,9 @@ Notifications are sent to the recipient email addresses set up for the tenant. F
 ### Get Notification Recipients
 Returns a list of notification recipients.
 
-```[200] GET /admin/v2.0/settings/notification/recipients```
+```
+[200] GET /admin/v2.1/settings/notification/recipients
+```
 
 **Response:**  
 Returns a wrapped array of recipients.
@@ -667,7 +687,9 @@ Returns a wrapped array of recipients.
 ### Create Notification Recipient
 Create a new notification recipient.
 
-```[200] PUT /admin/v2.0/settings/notification/recipients```
+```
+[200] PUT /admin/v2.1/settings/notification/recipients
+```
 
 **Body**
 ```
@@ -704,7 +726,9 @@ Returns the newly created recipient.
 ### Delete Notification Recipient
 Deletes an existing notification recipient.
 
-```[200] DELETE /admin/v2.0/settings/notification/recipients/{id}```
+```
+[200] DELETE /admin/v2.1/settings/notification/recipients/{id}
+```
 
 **Route Parameters:**
 
@@ -722,7 +746,9 @@ Deletes an existing notification recipient.
 ### Get Notification Settings
 Returns the full set of notification settings including the list of recipients.
 
-```[200] GET /admin/v2.0/settings/notification```
+```
+[200] GET /admin/v2.1/settings/notification
+```
 
 **Response:**  
 Returns the notification settings.
@@ -751,7 +777,9 @@ You can get the list of applications that are available to the tenant. From this
 ### Get List Of Manageable Applications
 Returns a list of manageable applications by family and country code.
 
-```[200] GET /admin/v2.0/manageableapplications```
+```
+[200] GET /admin/v2.1/manageableapplications
+```
 
 **Response:**  
 Returns a wrapped array of applications.
@@ -773,7 +801,9 @@ Pass the application family name in the URL and a boolean in the body.
 - True - enables the access.
 - False - disables the access.
 
-```[200] PUT /admin/v2.0/manageableapplications/{applicationFamily}/countries/{countryCode}```
+```
+[200] PUT /admin/v2.1/manageableapplications/{applicationFamily}/countries/{countryCode}
+```
 
 **Route Parameters:**
 
@@ -806,7 +836,9 @@ Allows for the management of scheduled updates such as rescheduling the update t
 ### Get Scheduled Update
 Get information about updates that have already been scheduled for a specific environment.
 
-```[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/upgrade```
+```
+[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
+```
 
 **Route Parameters:**
 
@@ -846,7 +878,9 @@ Returns information about the scheduled update for that environment.
 ### Reschedule Update
 Reschedule an update, if able.
 
-```[200] PUT /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/upgrade```
+```
+[200] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
+```
 
 **Route Parameters:**
 
@@ -884,7 +918,9 @@ Allows for the management of support settings, such as changing the contact, for
 ### Get Support Contact
 Get information about the support contact for a specified environment.
 
-```[200] GET /admin/v2.0/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact```
+```
+[200] GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+```
 
 **Route Parameters:**
 
@@ -919,7 +955,9 @@ Returns information about the support contact for that environment.
 ### Set Support Contact
 Sets the support contact information for a specified environment
 
-```[200] PUT /admin/v2.0/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact```
+```
+[200] PUT /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+```
 
 **Route Parameters:**
 
@@ -967,7 +1005,9 @@ Enables the ability to report that an environment isn't accessible and may requi
 ### Get Outage Types
 Gets the list of supported categories of outages
 
-```[200] GET /admin/v2.0/support/outageTypes```
+```
+[200] GET /admin/v2.1/support/outageTypes
+```
 
 **Response:**  
 Returns a list with information about the supported outage types for reporting 
@@ -992,7 +1032,9 @@ Returns a list with information about the supported outage types for reporting
 ### Get Outage Questions
 Gets the list of metadata about questions that need to be answered when reporting an environment outage
 
-```[200] GET /admin/v2.0/support/outageTypes/{outageType}/outageQuestions```
+```
+[200] GET /admin/v2.1/support/outageTypes/{outageType}/outageQuestions
+```
 
 **Response:**  
 Returns the list of question metadata for the provided outage type
@@ -1024,7 +1066,9 @@ Returns the list of question metadata for the provided outage type
 ### Get Reported Outages
 Gets the list of outages that have been previously reported 
 
-```[200] GET /admin/v2.0/support/reportedoutages```
+```
+[200] GET /admin/v2.1/support/reportedoutages
+```
 
 **Response:**  
 Returns the list of outages reported across all environments for the calling tenant
@@ -1055,7 +1099,9 @@ Returns the list of outages reported across all environments for the calling ten
 ### Report Outage
 Initiates an outage report indicating that an environment isn't accessible
 
-```[200] GET /admin/v2.0/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage```
+```
+[200] GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+```
 
 **Route Parameters:**
 
@@ -1105,7 +1151,9 @@ Allows for the export of an environment's Azure database. Databases are exported
 ### Get Export Metrics
 Gets information about the number of exports allowed per month and the amount remaining.
 
-```[200] GET /admin/v2.0/exports/applications/{applicationFamily}/environments/{environmentName}/metrics```
+```
+[200] GET /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+```
 
 **Route Parameters:**
 
@@ -1133,7 +1181,9 @@ Returns the metrics around the current month's database exports.
 ### Start Environment Database Export
 Starts the export of an environment's database to a provided Azure storage account
 
-```[200] POST /admin/v2.0/exports/applications/{applicationFamily}/environments/{environmentName}```
+```
+[200] POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
+```
 
 **Route Parameters:**
 
@@ -1164,7 +1214,9 @@ Starts the export of an environment's database to a provided Azure storage accou
 ### Get Export History
 Gets information about the exports that have been done within a provided time frame, for which environment, and by whom.
 
-```[200] POST /admin/v2.0/exports/history?start={startTime}&end={endTime}```
+```
+[200] POST /admin/v2.1/exports/history?start={startTime}&end={endTime}
+```
 
 **Query parameters:**
 
