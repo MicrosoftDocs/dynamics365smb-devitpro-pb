@@ -112,6 +112,7 @@ Sometimes the update could fail because of a transient problem. Select **Retry**
 
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
+[Production and Sandbox Environments](environment-types.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  

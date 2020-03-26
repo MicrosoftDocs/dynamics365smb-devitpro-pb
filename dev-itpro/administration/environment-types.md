@@ -53,7 +53,7 @@ A single, default sandbox environment can also be created in the [!INCLUDE[prods
 
 ## See also
 
-[Managing Environments in the administration center](tenant-admin-center-environments.md)  
+[Managing Environments in the Administration Center](tenant-admin-center-environments.md)  
 [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](demo-environment.md)  
 [Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](test-environment.md)  
 [Steps to set up a sandbox environment and Visual Studio Code](../developer/devenv-get-started.md#steps-to-set-up-a-sandbox-environment-and-visual-studio-code)  

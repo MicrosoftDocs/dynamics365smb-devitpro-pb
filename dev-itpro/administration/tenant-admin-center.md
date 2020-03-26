@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 03/20/2020
+ms.date: 03/25/2020
 ms.author: edupont
 ---
 # The Business Central Administration Center
@@ -94,13 +94,14 @@ From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)],
 
 ## See also
 
+[Production and Sandbox Environments](environment-types.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Tenant Notifications](tenant-admin-center-notifications.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Administration Center API](administration-center-api.md)  
 [Managing Technical Support](manage-technical-support.md)  
 [Business Central Data Security](../security/data-security.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  '''
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
 [Microsoft Partner Dashboard](https://partnercenter.microsoft.com/dashboard)  
 [Add a new customer in the Partner Center](/partner-center/add-a-new-customer)  
 [Assign licenses to users in the Partner Center](/partner-center/assign-licenses-to-users)  
