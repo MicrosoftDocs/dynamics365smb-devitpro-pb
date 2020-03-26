@@ -7,15 +7,15 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 096dd046-161f-4d06-8212-0804f4271590
-caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
  
 
 # GridLayout Property
-The controls inside this definition should be layed out as a grid using the caption of the first group as row caption. 
+Specifies if the layout is rows or columns.
+
+The controls inside this definition should be laid out as a grid using the caption of the first group as row caption. 
 
 ## Applies To  
   
