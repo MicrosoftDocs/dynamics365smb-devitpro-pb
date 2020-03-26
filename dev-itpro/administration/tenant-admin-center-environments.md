@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 12/10/2019
+ms.date: 03/25/2020
 ms.author: edupont
 ---
 
@@ -28,42 +28,15 @@ In the list of environments, you can open a page with more details for an enviro
 
 ## Types of environments
 
-You can create environments of different types. Which type of environment to choose depends on what you need it for.  
-
-<!--The following table outlines some of the benefits of each environment type.
-
-|Column1  |Column2  |
-|---------|---------|
-|Row1     |         |
-|Row2     |         |
-|Row3     |         |
-|Row4     |         |
-|Row5     |         |-->
+You can create environments of different types. Which type of environment to choose depends on what you need it for. For more information, see [Production and Sandbox Environments](environment-types.md).  
 
 ### Production environments
 
-Production environments are meant to be precisely that: Environments that a business can run their daily business in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in, deployed on performance tiers in Azure with a guaranteed high level of availability and support.  
-
-Production environments are backed up automatically and frequently to help protect business data. For more information, see [How often are production databases backed up?](../faq.md#how-often-are-production-databases-backed-up).  
-
-You can create additional production environments for training or performance testing, for example. However, for training purposes, in many cases organizations will prefer to create a sandbox environment with production data. You can also create additional production environments to support offices in different countries.  
-
-You can have a maximum of three production environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.
+[!INCLUDE [admin-env-prod](../developer/includes/admin-env-prod.md)]
 
 ### Sandbox environments
 
-Sandbox environments are meant to be precisely that: Environments that you can play around with, use as a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
-
-You can also safely use sandboxes for training, such as for following a learning path from [Microsoft Learn](/learn/browse/?products=dynamics-business-central), because it's a safe environment to experiment with. If anything goes wrong, you just delete the sandbox and start over.  
-
-> [!IMPORTANT]
-> The automatic backup that applies to production environments does not apply to sandbox environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart, but you cannot request a database export.
-
-You can create a sandbox environment that includes data from your production environment for debugging purposes, for example. But if you want to run performance tests, or similar benchmarking, the sandbox is not reliable enough for that purpose. This is because sandboxes run in a different performance tier on Azure than production environments. Instead, create a dedicated environment based on the Production environment type - this gives you the exact experience and performance that users will experience in the actual production environment.  
-
-Sandbox environments are handy for certain types of development scenarios because the debugging endpoint is open by default. This means that you can attach Visual Studio Code to a running system and debug through running code. It also allows you to publish directly to the environment from Code.
-
-You can have a maximum of three sandbox environments for each [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant.  
+[!INCLUDE [admin-env-sandbox](../developer/includes/admin-env-sandbox.md)]
 
 [!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
@@ -88,7 +61,7 @@ When the new production environment is created, it will be based on the latest p
 A sandbox environment is a non-production instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Isolated from production, a sandbox environment is the place to safely explore, learn, demo, develop, and test the service without the risk of affecting the data and settings of your production environment.
 
 > [!IMPORTANT]
-> Make sure that you understand the limitations of a sandbox before you create a new sandbox environment. For more information, see the [Sandbox environments](#sandbox-environments) section.
+> Make sure that you understand the limitations of a sandbox before you create a new sandbox environment. For more information, see [Sandbox environments](environment-types.md#sandbox-environments) section.
 
 > [!NOTE]
 > Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three sandbox environments.
@@ -107,20 +80,7 @@ To create a sandbox environment:
     > [!NOTE]
     > The sandbox environment will not be accessible until the **State** shows *Active*.
 
-A single, default sandbox environment can also be created in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. For more information, see [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json).  
-
 To delete a sandbox environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then choose **Delete** on the action ribbon.
-
-### Precautions for sandbox environments with production data
-
-If a sandbox is created with a copy of a production environment, a number of precautions are taken for that sandbox:
-
-- The job queue is automatically stopped
-- Any base application integration settings are cleared
-- Outbound HTTP calls from extensions are blocked by default and must be approved for each extension
-- Any General Data Protection Regulation (GDPR) action must be handled separately and repeated for the sandbox. There is no synchronization with the production environment after the sandbox has been created
-
-To enable outbound HTTP calls, go to the **Extension Management** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], and choose **Configure**. Then, on the **Extension Settings** page, make sure that **Allow HttpClient Requests** is selected. This setting must be enabled for each extension.
 
 ### Selecting a version for a new sandbox environment
 
