@@ -473,9 +473,9 @@ Gets a list of the currently available Versions that an environment can be creat
 
 `applicationFamily` - Family of the ring's application. (for example, "BusinessCentral")
 
-**- countryCode:** Code for the ring's country.
+`countryCode` - Code for the ring's country.
 
-**- ringName:** Name of the ring to inspect.
+`ringName` - Name of the ring to inspect.
 
 
 #### Response
@@ -600,7 +600,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 `requestBodyRequired` - the request body must be provided
 
-**- cannotSetAppInsightsKey:** - the targeted environment's status isn't 'Active'
+`cannotSetAppInsightsKey` - the targeted environment's status isn't 'Active'
     
 
 ## Telemetry
@@ -810,7 +810,7 @@ Pass the application family name in the URL and a boolean in the body.
 
 `applicationFamily` - The name of the family for a given Business Central offered application. (Typically this value will just be "BusinessCentral")
 
-**- countryCode:** Country code for the targeted application.
+`countryCode` - Country code for the targeted application.
 
 #### Body
 ```
@@ -1060,7 +1060,7 @@ Returns the list of question metadata for the provided outage type
 
 #### Expected Error Codes
 
-**- cannotGetOutageQuestions:** - an unhandled error occurred when trying to acquire the outage types
+`cannotGetOutageQuestions` - an unhandled error occurred when trying to acquire the outage types
 
 `tenantNotFound` - the calling tenant information couldn't be found
 
@@ -1249,7 +1249,8 @@ Returns a detailed list of the database exports that occurred within the provide
 
 ### Case-Invariant blocked environment names
 
-**All environment types:**
+##### All environment types
+
    - invoicing
    - api
    - error
@@ -1270,10 +1271,10 @@ Returns a detailed list of the database exports that occurred within the provide
    - shell service
    - admin
         
-**Production Environment Types**
+##### Production Environment Types
    - sandbox
             
-**Sandbox Environment Types**
+##### Sandbox Environment Types
    - production
 
 ## App Management
@@ -1421,27 +1422,27 @@ Gets active sessions for an environment.
 
 #### Response
 ```
-    {
-        value: [
-            {
-                environmentName: string,
-                applicationFamily: string,
-                sessionId: int,
-                userId: string,
-                clientType: string,
-                logOnDate: string,
-                entryPointOperation: string,
-                entryPointObjectName: string,
-                entryPointObjectId: string,
-                entryPointObjectType: string,
-                currentObjectName: string,
-                currentObjectId: int,
-                currentObjectType: string,
-                currentOperationDuration: long
-            }
-            ,...
-        ]
-    }
+{
+    value: [
+        {
+            environmentName: string,
+            applicationFamily: string,
+            sessionId: int,
+            userId: string,
+            clientType: string,
+            logOnDate: string,
+            entryPointOperation: string,
+            entryPointObjectName: string,
+            entryPointObjectId: string,
+            entryPointObjectType: string,
+            currentObjectName: string,
+            currentObjectId: int,
+            currentObjectType: string,
+            currentOperationDuration: long
+        }
+        ,...
+    ]
+}
 ```
 
 ### Get session details
@@ -1455,22 +1456,22 @@ Gets session information for a specific session id.
 #### Response
 
 ```
-    {
-        environmentName: string,
-        applicationFamily: string,
-        sessionId: int,
-        userId: string,
-        clientType: string,
-        logOnDate: string,
-        entryPointOperation: string,
-        entryPointObjectName: string,
-        entryPointObjectId: string,
-        entryPointObjectType: string,
-        currentObjectName: string,
-        currentObjectId: int,
-        currentObjectType: string,
-        currentOperationDuration: long
-    }
+{
+    environmentName: string,
+    applicationFamily: string,
+    sessionId: int,
+    userId: string,
+    clientType: string,
+    logOnDate: string,
+    entryPointOperation: string,
+    entryPointObjectName: string,
+    entryPointObjectId: string,
+    entryPointObjectType: string,
+    currentObjectName: string,
+    currentObjectId: int,
+    currentObjectType: string,
+    currentOperationDuration: long
+}
 ```
 
 ### Stop and delete a session
