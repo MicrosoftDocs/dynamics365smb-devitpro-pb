@@ -15,6 +15,8 @@ ms.author: solsen
 # Syntax
 The syntax of the AL language is designed to assist in building business applications.
 
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
 From code, you have access to various snippets that will give you a template for a specific object type. 
 
 > [!NOTE]  

@@ -48,7 +48,9 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 
 For more information, see [Visual Studio Code Docs](https://code.visualstudio.com/docs).
 
-> [!TIP]
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+> [!NOTE]
 > If you have previous experience working with the C/SIDE development environment and need an overview of some of the changes between the two development environments, see [Differences in the Development Environments](devenv-differences.md).
 
 ## Designer

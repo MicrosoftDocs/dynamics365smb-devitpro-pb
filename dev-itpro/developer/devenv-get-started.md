@@ -51,6 +51,7 @@ There are three JSON files in the project; the `app.json` file, the `launch.json
 Use the AL configuration settings to specify general preferences for working with AL projects. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 ## Telemetry settings
+
 By default, Visual Studio Code is set up with a telemetry system to enable that data and errors are sent to Microsoft. If you do not want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`. 
 
 To modify the telemetry setting, press **Ctrl+Shift+P** in Visual Studio Code and choose **User Settings**, which opens the `settings.json` file, and then add `telemetry.enableTelemetry` and set it to `false`. 
@@ -66,17 +67,19 @@ To modify the telemetry setting, press **Ctrl+Shift+P** in Visual Studio Code an
 The symbol file contains metadata of the application. This is what your extension is being built on, and therefore the symbol file must be present. If it is not present, you will be prompted to download it. For more information about the platform symbol file, see [Symbols](devenv-symbols.md). -->
 
 ## Installing and publishing an extension
+
 To make your extension available to users, the package must be published to a specific Microsoft Dynamics 365 Business Central Server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
 
 ## Controlling user access to publishing extensions
 The access to publishing extensions is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. 
 
 > [!NOTE]  
-> If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the NavApp table (read – for downloading symbols, write – for publishing the app) in the permission set.
+> If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
 
 To prohibit a user from publishing, just remove the user from the **D365 EXTENSION MGT** permission set.
 
 ## Next steps
+
 Now that you have the tools and the HelloWorld example up and running, you might want to try to create a small sample app in AL. This walkthrough guides you through how to create a simple app adding objects, code, and publishing the app to your tenant. For more information, see [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md).
 
 ## See Also 
