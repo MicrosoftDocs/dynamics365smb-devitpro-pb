@@ -1,5 +1,5 @@
 ---
-title: "TreeInitialState Property"
+title: "Designing Indented Hierarchy Lists"
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
