@@ -13,7 +13,11 @@ ms.author: solsen
 ---
 
 # Differences in the Development Environments
-Coming from the Dynamics NAV Development Environment and C/SIDE, there are some differences and optimizations that you should familiarize yourself with. The following sections go through these changes.  
+
+Coming from the Dynamics NAV Development Environment and C/SIDE, there are some differences and optimizations that you should familiarize yourself with. The following sections go through some of these changes, but is in no way an exhaustive list.
+
+> [!TIP]  
+> A very useful tool working in Visual Studio Code, is IntelliSense. To activate IntelliSense from anywhere in the code, press **Ctrl+Shift**.
 
 ## General development approach
 While you could change the existing Dynamics NAV source code using C/SIDE, the best approach to developing with the AL Language development environment is to work with [Extensions](devenv-dev-overview.md) only. That means that you can extend the existing code by adding new functionality or integrating your code using [Events](devenv-events-in-al.md), but it is not possible to change existing code, for example in codeunits. 
