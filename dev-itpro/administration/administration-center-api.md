@@ -1277,6 +1277,7 @@ GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
 "targetVersion": "1.3.0.1" 
 }
 ```
+
 **Response (app operation):**
 
 Returns information about the scheduled app update request.
@@ -1318,6 +1319,78 @@ Returns information about the installation of the app update.
 "errorMessage": "<string>" 
 } 
 ] 
+```
+
+## Session management
+
+### Get active sessions
+
+Gets active sessions for an environment.
+
+```
+[GET] applications/{applicationType}/environments/{environmentName}/sessions
+```
+
+**Response:**
+```
+    {
+        value: [
+            {
+                environmentName: string,
+                applicationFamily: string,
+                sessionId: int,
+                userId: string,
+                clientType: string,
+                logOnDate: string,
+                entryPointOperation: string,
+                entryPointObjectName: string,
+                entryPointObjectId: string,
+                entryPointObjectType: string,
+                currentObjectName: string,
+                currentObjectId: int,
+                currentObjectType: string,
+                currentOperationDuration: long
+            }
+            ,...
+        ]
+    }
+```
+
+### Get session details
+
+Gets session information for a specific session id.
+
+```
+[GET] applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
+```
+
+**Response:**
+
+```
+    {
+        environmentName: string,
+        applicationFamily: string,
+        sessionId: int,
+        userId: string,
+        clientType: string,
+        logOnDate: string,
+        entryPointOperation: string,
+        entryPointObjectName: string,
+        entryPointObjectId: string,
+        entryPointObjectType: string,
+        currentObjectName: string,
+        currentObjectId: int,
+        currentObjectType: string,
+        currentOperationDuration: long
+    }
+```
+
+### Stop and delete a session
+
+Terminates and deletes an active session.
+
+```
+[DELETE] applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also
