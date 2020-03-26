@@ -112,13 +112,14 @@ Returns a list of the environments for the specified application family.
 [200] GET /admin/v2.1/applications/{applicationFamily}/environments[?doNotFetchDbSize={bool}]
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral)
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral)
 
-**- doNotFetchDbSize:** `true` does not return database size in response; `false` does.
+`doNotFetchDbSize` - `true` does not return database size in response; `false` does.
 
-**Response:**  
+#### Response
+
 Returns a wrapped array of environments.
 ```
 {
@@ -148,9 +149,9 @@ Returns a wrapped array of environments.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
 
 ### Get environment by application family and name
@@ -160,15 +161,15 @@ Returns the properties for the provided environment name if it exists.
 [200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[?doNotFetchDbSize={bool}]
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**- doNotFetchDbSize:** `true` does not return database size in response; `false` does.
+`doNotFetchDbSize` - `true` does not return database size in response; `false` does.
 
-**Response:**  
+#### Response
 Returns a single environment if exists.
 ```
 {
@@ -193,11 +194,11 @@ Returns a single environment if exists.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
    
-   - target: {applicationFamily}/{environmentName}
+   - `target: {applicationFamily}/{environmentName}`
 
 
 ### Create new environment
@@ -207,13 +208,13 @@ Creates a new environment with sample data.
 [201] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family to create the new environment within. (for example, "BusinessCentral")
+`applicationFamily` - Family to create the new environment within. (for example, "BusinessCentral")
 
-**- environmentName:** The name of the new environment. See the section below about valid environment names to see what values are allowed.
+`environmentName` - The name of the new environment. See the section below about valid environment names to see what values are allowed.
 
-**Body**
+#### Body
 ```
 {
   "environmentType": string, // The type of environment to create (enum | "Production", "Sandbox")
@@ -226,7 +227,7 @@ Creates a new environment with sample data.
 > [!NOTE]  
 > The values for the `countryCode`, `ringName`, and `applicationVersion` properties should be derived from the API endpoints described in the Available Applications section below.
 
-**Response:**  
+#### Response
 Returns newly created environment.
 ```
 {
@@ -251,13 +252,13 @@ Returns newly created environment.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
-**- destinationApplicationServiceNotFound:** - a suitable destination service couldn't be found to put the environment. Occurs if missing or if the tenant doesn't have access to the target application.
+`destinationApplicationServiceNotFound` -- a suitable destination service couldn't be found to put the environment. Occurs if missing or if the tenant doesn't have access to the target application.
 
-**- invalidInput:** - the targeted property in invalid in some way
+`invalidInput` - the targeted property in invalid in some way
 
    - target: {countryCode} - the country code property can't be null or whitespace
     
@@ -269,25 +270,25 @@ Returns newly created environment.
     
    - target: {applicationVersion} - the version property must be a valid version string (major.minor.build.revision)
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
-**- resourceDoesNotExist:** - the targeted property doesn't exist
+`resourceDoesNotExist` - the targeted property doesn't exist
 
    - target: {ringName} - a ring with the provided name wasn't found
 
-**- resourceExists:** - an environment with the same name already exists
+`resourceExists` an environment with the same name already exists
 
-**- environmentNameNotValid:** - the environment name can't be a reserved value, must be less than 30 characters, must start with an alpha character and consist only of alpha, numberical, underscore (_), or dash (-) characters
+`environmentNameNotValid` - the environment name can't be a reserved value, must be less than 30 characters, must start with an alpha character and consist only of alpha, numberical, underscore (_), or dash (-) characters
 
-**- cannotCreateNamedEnvironment:** - environments with names other than 'Production' or 'Sandbox' aren't supported on the targeted version.
+`cannotCreateNamedEnvironment` - environments with names other than 'Production' or 'Sandbox' aren't supported on the targeted version.
 
-**- tenantAlreadyProvisioning:** - can't create a new environment because another environment is currently in the process of being created.
+`tenantAlreadyProvisioning` - can't create a new environment because another environment is currently in the process of being created.
 
-**- applicationFamilyNotAccessible:** - the calling tenant doesn't have access to the targeted application family and country code
+`applicationFamilyNotAccessible` - the calling tenant doesn't have access to the targeted application family and country code
 
-**- environmentReservationFailed:** - another environment within the same application family already has this name
+`environmentReservationFailed` -- another environment within the same application family already has this name
 
-**- maximumNumberOfEnvironmentsAllowedReached:** - the limit on the number of allowed environments of the provided type has been reached 
+`maximumNumberOfEnvironmentsAllowedReached` - the limit on the number of allowed environments of the provided type has been reached 
 
 ### Get Database Size
 
@@ -297,7 +298,7 @@ Gets size of a database for a specific environment.
 [GET] applications/{applicationType}/environments/{environmentName}/dbsize
 ```
 
-**Response:**
+#### Response
 ```
 {
     value: double,
@@ -312,13 +313,13 @@ Creates a new environment with a copy of another environment's data.
 [201] POST /admin/v2.1/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the source environment's application. (for example, "BusinessCentral")
+`applicationFamily` - Family of the source environment's application. (for example, "BusinessCentral")
 
-**- sourceEnvironmentName:** Name of the environment to copy from.
+`sourceEnvironmentName` - Name of the environment to copy from.
 
-**Body**
+#### Body
 
 ```
 {
@@ -327,7 +328,7 @@ Creates a new environment with a copy of another environment's data.
 }
 ```
 
-**Response:**  
+#### Response
 Returns newly copied environment.
 ```
 {
@@ -352,33 +353,33 @@ Returns newly copied environment.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
-**- destinationApplicationServiceNotFound:** - a suitable destination service couldn't be found to put the environment. Occurs if missing or if tenant doesn't have access rights to the target application.
+`destinationApplicationServiceNotFound` -- a suitable destination service couldn't be found to put the environment. Occurs if missing or if tenant doesn't have access rights to the target application.
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{sourceEnvironmentName}```
 
-**- invalidInput:** - the targeted property in invalid in some way
+`invalidInput` - the targeted property in invalid in some way
 
    - target: {environmentName} - the environment name property can't be null or whitespace```
 
    - target: {type} - the type property can't be null or whitespace, and must be a valid value (Currently only Sandbox)```
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
-**- resourceExists:** - an environment with the same name already exists
+`resourceExists` an environment with the same name already exists
 
-**- environmentNameNotValid:** - the environment name can't be a reserved value, must be fewer than 30 characters, must start with an alpha character and consist only of alpha, numerical, underscore (_), or dash (-) characters
+`environmentNameNotValid` - the environment name can't be a reserved value, must be fewer than 30 characters, must start with an alpha character and consist only of alpha, numerical, underscore (_), or dash (-) characters
 
-**- cannotCreateNamedEnvironment:** - environments with names other than 'Production' or 'Sandbox' aren't supported on the targeted version.
+`cannotCreateNamedEnvironment` - environments with names other than 'Production' or 'Sandbox' aren't supported on the targeted version.
 
-**- tenantAlreadyProvisioning:** - can't create a copy of an environment because another environment is currently in the process of being created.
+`tenantAlreadyProvisioning` - can't create a copy of an environment because another environment is currently in the process of being created.
 
-**- conflictingDeveloperExtensions:** - The source environment contains 'uploaded' extensions that are already published to the destination service as 'developer' extensions. This condition will cause conflicts. 
+`conflictingDeveloperExtensions` - The source environment contains 'uploaded' extensions that are already published to the destination service as 'developer' extensions. This condition will cause conflicts. 
 
   ```
   extensionData: 
@@ -394,9 +395,9 @@ Returns newly copied environment.
   } 
   ```
   
-**- environmentReservationFailed:** - another environment within the same application family already has the same name
+`environmentReservationFailed` -- another environment within the same application family already has the same name
 
-**- maximumNumberOfEnvironmentsAllowedReached:** - the limit on the number of allowed environments of the provided type has been reached 
+`maximumNumberOfEnvironmentsAllowedReached` - the limit on the number of allowed environments of the provided type has been reached 
 
 
 ### Delete environment
@@ -406,11 +407,11 @@ Deletes the specified environment. Warning: A production environment shouldn't b
 [202] DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application. (for example "BusinessCentral")
+`applicationFamily` - Family of the environment's application. (for example "BusinessCentral")
 
-**- environmentName:** Name of the environment to delete.
+`environmentName` - Name of the environment to delete.
 
 
 > [!NOTE]  
@@ -418,15 +419,15 @@ Deletes the specified environment. Warning: A production environment shouldn't b
 > The final results of the operation are reflected in the 'status' field of the environment that the operations affect.
 > In practice this means that polling of the 'Get Environments' endpoints must be done to determine if the given operation was successful.
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- invalidStatusCannotDeleteTenant:** - can't delete the environment in its current state
+`invalidStatusCannotDeleteTenant` - can't delete the environment in its current state
 
-**- tenantDeletionInProgress:** - environment is already in the process of being deleted
+`tenantDeletionInProgress` - environment is already in the process of being deleted
 
-**- ambiguousRequest:** - multiple environments with the same name were found
+`ambiguousRequest` - multiple environments with the same name were found
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
@@ -442,7 +443,7 @@ Get a list of the currently available application families, the available countr
 [200] GET /admin/v2.1/applications/
 ```
 
-**Response:**
+#### Response
 ```
 {
   "value": [
@@ -468,16 +469,16 @@ Gets a list of the currently available Versions that an environment can be creat
 [200] GET /admin/v2.1/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the ring's application. (for example, "BusinessCentral")
+`applicationFamily` - Family of the ring's application. (for example, "BusinessCentral")
 
 **- countryCode:** Code for the ring's country.
 
 **- ringName:** Name of the ring to inspect.
 
 
-**Response:**
+#### Response
 ```
 {
   "value": [ // A list of the available application versions within the ring that environments can be created on 
@@ -498,13 +499,13 @@ Returns the update settings for the environment.
 [200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Response:**  
+#### Response
 Returns the environment's update settings, or "null" if none exist
 ```
 {
@@ -516,9 +517,9 @@ Returns the environment's update settings, or "null" if none exist
 > [!NOTE]  
 > The `date` components of the values are ignored, only the time components are used.
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
@@ -530,13 +531,13 @@ Sets the update window start and end times.
 [200] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Body**
+#### Body
 
 ```
 {
@@ -545,7 +546,7 @@ Sets the update window start and end times.
 }
 ```
 
-**Response:**  
+#### Response
 Returns the updated settings
 ```
 {
@@ -557,9 +558,9 @@ Returns the updated settings
 > [!NOTE]  
 > The `date` components of the values are ignored, only the time components are used.
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
@@ -567,7 +568,7 @@ Returns the updated settings
 
    - target: "Preferred Upgrade Window" - the specified window is too small
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
 
 ### Put AppInsights key
@@ -577,13 +578,13 @@ Sets the key an environment uses for Azure AppInsights.
 [202] POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Body**
+#### Body
 
 ```
 {
@@ -591,13 +592,13 @@ Sets the key an environment uses for Azure AppInsights.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
 **- cannotSetAppInsightsKey:** - the targeted environment's status isn't 'Active'
     
@@ -612,19 +613,19 @@ Returns the telemetry information for the provided environment and filters. it's
 [200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Query parameters:**
+#### Query parameters
 
-**start**: datetime // The start of the telemetry entry time window to query  
-**end**: datetime // The end of the telemetry entry time window to query  
-**cat**:  (All or 0) // Category of telemetry to query  
+`start`: datetime // The start of the telemetry entry time window to query  
+`end`: datetime // The end of the telemetry entry time window to query  
+`cat`:  (All or 0) // Category of telemetry to query  
 
-**Response:**  
+#### Response
 Returns the telemetry logs and with data column headers.
 ```
 {
@@ -640,15 +641,15 @@ Returns the telemetry logs and with data column headers.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
-**- invalidInput:** - the targeted property in invalid in some way
+`invalidInput` - the targeted property in invalid in some way
 
    - target: {logCategory} - the provided log category isn't a valid value
 
@@ -663,7 +664,7 @@ Returns a list of notification recipients.
 [200] GET /admin/v2.1/settings/notification/recipients
 ```
 
-**Response:**  
+#### Response
 Returns a wrapped array of recipients.
 
 ```
@@ -679,9 +680,9 @@ Returns a wrapped array of recipients.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- tenantNotFound:** - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found
 
 
 ### Create Notification Recipient
@@ -691,7 +692,7 @@ Create a new notification recipient.
 [200] PUT /admin/v2.1/settings/notification/recipients
 ```
 
-**Body**
+#### Body
 ```
 {
   "email": string, // Email address of the recipient
@@ -699,7 +700,7 @@ Create a new notification recipient.
 }
 ```
 
-**Response:**  
+#### Response
 Returns the newly created recipient.
 
 ```
@@ -710,17 +711,17 @@ Returns the newly created recipient.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- invalidInput:** - the targeted property in invalid in some way
+`invalidInput` - the targeted property in invalid in some way
 
    - target: {name} - the name property can't be null or whitespace
         
    - target: {email} - the email property can't be null or whitespace
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
-**- tenantNotFound:** - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found
 
 
 ### Delete Notification Recipient
@@ -730,17 +731,17 @@ Deletes an existing notification recipient.
 [200] DELETE /admin/v2.1/settings/notification/recipients/{id}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- id:** The unique identifier of the notification recipient to delete.
+`id` - The unique identifier of the notification recipient to delete.
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- invalidInput:** - the targeted property in invalid in some way
+`invalidInput` - the targeted property in invalid in some way
 
    - target: {id} - provided id can't be the empty guid
 
-**- tenantNotFound:** - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found
 
 
 ### Get Notification Settings
@@ -750,7 +751,7 @@ Returns the full set of notification settings including the list of recipients.
 [200] GET /admin/v2.1/settings/notification
 ```
 
-**Response:**  
+#### Response
 Returns the notification settings.
 ```
 {
@@ -765,9 +766,9 @@ Returns the notification settings.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- tenantNotFound:** - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found
 
 ## Application Access Management
 It's possible for a **Delegated Tenant Admin** to manage access to application families available in the service. The application family is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or other independent software vendor (ISV) applications that may be provisioned through the service. 
@@ -781,7 +782,7 @@ Returns a list of manageable applications by family and country code.
 [200] GET /admin/v2.1/manageableapplications
 ```
 
-**Response:**  
+#### Response
 Returns a wrapped array of applications.
 
 ```
@@ -805,13 +806,13 @@ Pass the application family name in the URL and a boolean in the body.
 [200] PUT /admin/v2.1/manageableapplications/{applicationFamily}/countries/{countryCode}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** The name of the family for a given Business Central offered application. (Typically this value will just be "BusinessCentral")
+`applicationFamily` - The name of the family for a given Business Central offered application. (Typically this value will just be "BusinessCentral")
 
 **- countryCode:** Country code for the targeted application.
 
-**Body**
+#### Body
 ```
 {
   <boolean> // Desired access state
@@ -821,13 +822,13 @@ Pass the application family name in the URL and a boolean in the body.
 > [!NOTE]  
 > It's only possible to disable the access to applications for the AAD tenant if it has first created an environment somewhere.
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- invalidInput:** - the targeted property in invalid in some way
+`invalidInput` - the targeted property in invalid in some way
 
    - target: {targeted tenant's AAD Id} - attempt to remove access to an application but the targeted tenant already has an environment in that application
 
-**- resourceDoesNotExist:** - couldn't find the targeted application
+`resourceDoesNotExist` - couldn't find the targeted application
 
 
 ## Reschedule Updates
@@ -840,13 +841,13 @@ Get information about updates that have already been scheduled for a specific en
 [200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Response:**  
+#### Response
 Returns information about the scheduled update for that environment.
 
 ```
@@ -866,11 +867,11 @@ Returns information about the scheduled update for that environment.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
@@ -882,13 +883,13 @@ Reschedule an update, if able.
 [200] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Body**
+#### Body
 
 ```
 {
@@ -897,22 +898,23 @@ Reschedule an update, if able.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
-**- resourceDoesNotExist:** - no upgrade is currently scheduled for the targeted environment
+`resourceDoesNotExist` - no upgrade is currently scheduled for the targeted environment
 
-**- entityValidationFailed:** - some unhandled error occurred in the validation of the request
+` entityValidationFailed` - some unhandled error occurred in the validation of the request
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
 
 ## Support Settings
+
 Allows for the management of support settings, such as changing the contact, for a specific environment
 
 ### Get Support Contact
@@ -922,13 +924,13 @@ Get information about the support contact for a specified environment.
 [200] GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Response:**  
+#### Response
 Returns information about the support contact for that environment.
 
 ```
@@ -939,17 +941,17 @@ Returns information about the support contact for that environment.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
-**- resourceDoesNotExist:** - couldn't find the necessary information to communicate with the targeted environment's API
+`resourceDoesNotExist` - couldn't find the necessary information to communicate with the targeted environment's API
 
-**- businessCentralCommunicationException:** - an unhandled error occurred when communicating with the targeted environment's API
+` businessCentralCommunicationException` - an unhandled error occurred when communicating with the targeted environment's API
 
 
 ### Set Support Contact
@@ -959,13 +961,13 @@ Sets the support contact information for a specified environment
 [200] PUT /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Body:**  
+#### Body 
 ```
 {
   "name": string, // The name of the support contact.
@@ -974,7 +976,7 @@ Sets the support contact information for a specified environment
 }
 ```
 
-**Response:**  
+#### Response
 Returns the newly updated support contact information.
 ```
 {
@@ -984,19 +986,19 @@ Returns the newly updated support contact information.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- applicationTypeDoesNotExist:** - the provided value for the application family wasn't found
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
-**- resourceDoesNotExist:** - couldn't find the necessary information to communicate with the targeted environment's API
+`resourceDoesNotExist` - couldn't find the necessary information to communicate with the targeted environment's API
 
-**- businessCentralCommunicationException:** - an unhandled error occurred when communicating with the targeted environment's API
+` businessCentralCommunicationException` - an unhandled error occurred when communicating with the targeted environment's API
 
 
 ## Environment Outage Reporting
@@ -1009,7 +1011,7 @@ Gets the list of supported categories of outages
 [200] GET /admin/v2.1/support/outageTypes
 ```
 
-**Response:**  
+#### Response
 Returns a list with information about the supported outage types for reporting 
 ```
 {
@@ -1022,11 +1024,11 @@ Returns a list with information about the supported outage types for reporting
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- cannotGetOutages:** - an unhandled error occurred when trying to acquire the outage types
+`cannotGetOutages` - an unhandled error occurred when trying to acquire the outage types
 
-**- tenantNotFound:** - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found
 
 
 ### Get Outage Questions
@@ -1036,7 +1038,7 @@ Gets the list of metadata about questions that need to be answered when reportin
 [200] GET /admin/v2.1/support/outageTypes/{outageType}/outageQuestions
 ```
 
-**Response:**  
+#### Response
 Returns the list of question metadata for the provided outage type
 ```
 {
@@ -1056,11 +1058,11 @@ Returns the list of question metadata for the provided outage type
 }   
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
 **- cannotGetOutageQuestions:** - an unhandled error occurred when trying to acquire the outage types
 
-**- tenantNotFound:** - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found
 
 
 ### Get Reported Outages
@@ -1070,7 +1072,7 @@ Gets the list of outages that have been previously reported
 [200] GET /admin/v2.1/support/reportedoutages
 ```
 
-**Response:**  
+#### Response
 Returns the list of outages reported across all environments for the calling tenant
 ```
 {
@@ -1089,11 +1091,11 @@ Returns the list of outages reported across all environments for the calling ten
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- cannotGetReportedOutages:** - an unhandled error occurred when trying to acquire the reported outages
+`cannotGetReportedOutages` - an unhandled error occurred when trying to acquire the reported outages
 
-**- tenantNotFound:** - the calling tenant information couldn't be found
+`tenantNotFound` - the calling tenant information couldn't be found
 
 
 ### Report Outage
@@ -1103,11 +1105,11 @@ Initiates an outage report indicating that an environment isn't accessible
 [200] GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
 **Body:**
 ```
@@ -1125,7 +1127,7 @@ Initiates an outage report indicating that an environment isn't accessible
 }
 ```
 
-**Response:**  
+#### Response
 Returns information about the created outage report
 ```
 {
@@ -1134,15 +1136,15 @@ Returns information about the created outage report
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
-**- failedToReportOutage:** - an unhandled error occurred when trying to report the outage
+`failedToReportOutage` - an unhandled error occurred when trying to report the outage
 
 
 ## Environment Database Export
@@ -1155,13 +1157,13 @@ Gets information about the number of exports allowed per month and the amount re
 [200] GET /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Response:**  
+#### Response
 Returns the metrics around the current month's database exports.
 
 ```
@@ -1171,9 +1173,9 @@ Returns the metrics around the current month's database exports.
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
@@ -1185,13 +1187,13 @@ Starts the export of an environment's database to a provided Azure storage accou
 [200] POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
-**Route Parameters:**
+#### Route Parameters
 
-**- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
-**- environmentName:** Name of the targeted environment
+`environmentName` - Name of the targeted environment
 
-**Body:**  
+#### Body 
 ```
 {
   "storageAccountSasUri": string, // An Azure SAS uri pointing at the Azure storage account where the database will be exported to. The uri must have (Read | Write | Create | Delete) permissions
@@ -1200,15 +1202,15 @@ Starts the export of an environment's database to a provided Azure storage accou
 }
 ```
 
-**Expected Error Codes:**
+#### Expected Error Codes
 
-**- environmentNotFound:** - the targeted environment couldn't be found
+`environmentNotFound` - the targeted environment couldn't be found
 
    - target: {applicationFamily}/{environmentName}
 
-**- requestBodyRequired:** - the request body must be provided
+`requestBodyRequired` - the request body must be provided
 
-**- exportFailed:** - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been used up 
+`exportFailed` - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been used up 
 
 
 ### Get Export History
@@ -1218,12 +1220,13 @@ Gets information about the exports that have been done within a provided time fr
 [200] POST /admin/v2.1/exports/history?start={startTime}&end={endTime}
 ```
 
-**Query parameters:**
+#### Query parameters
 
-**startTime**: datetime // The start of the export history entry time window to query  
-**endTime**: datetime // The end of the  export history entry time window to query  
+`startTime` - datetime // The start of the export history entry time window to query  
+`endTime` - datetime // The end of the  export history entry time window to query  
 
-**Response:**  
+#### Response
+
 Returns a detailed list of the database exports that occurred within the provided timeframe of the `start` and `end` query parameters
 
 ```
@@ -1245,6 +1248,7 @@ Returns a detailed list of the database exports that occurred within the provide
 
 
 ### Case-Invariant blocked environment names
+
 **All environment types:**
    - invoicing
    - api
@@ -1286,7 +1290,7 @@ Get information about apps that installed in the environment.
 [200] GET /admin/v2.1/applications/environments/{environmentName}/apps
 ```
 
-**Response:**
+#### Response
 Returns information about the apps installed on the environment.
 
 ```
@@ -1315,7 +1319,7 @@ Get information about new app versions that are available for apps currently ins
 [200] GET /admin/v2.1/applications/environments/{environmentName}/apps/availableUpdates
 ```
 
-**Response:**
+#### Response
 
 ```
 {
@@ -1350,7 +1354,7 @@ Schedules the installation of an app update version. The update will be installe
 GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
 ```
 
-**BODY:**
+#### Body
 
 ```
 { 
@@ -1358,7 +1362,7 @@ GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
 }
 ```
 
-**Response (app operation):**
+#### Response (app operation)
 
 Returns information about the scheduled app update request.
 ```
@@ -1381,7 +1385,7 @@ Gets information about app update installations.
 GET /{applicationType}/environments/{environmentName}/apps/{app_id}/operations/[{id}]
 ```
 
-**Response (single operation):**
+#### Response (single operation)
 
 Returns information about the installation of the app update.
 
@@ -1415,7 +1419,7 @@ Gets active sessions for an environment.
 [GET] applications/{applicationType}/environments/{environmentName}/sessions
 ```
 
-**Response:**
+#### Response
 ```
     {
         value: [
@@ -1448,7 +1452,7 @@ Gets session information for a specific session id.
 [GET] applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
 ```
 
-**Response:**
+#### Response
 
 ```
     {
