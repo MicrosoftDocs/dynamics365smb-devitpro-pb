@@ -1198,6 +1198,8 @@ Returns a detailed list of the database exports that occurred within the provide
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
+Manage the apps that are installed on the environment.
+
 ### Get Apps 
 
 Get information about apps that installed in the environment.
@@ -1321,7 +1323,9 @@ Returns information about the installation of the app update.
 ] 
 ```
 
-## Session management
+## Session Management
+
+Manage the active sessions on an environment.
 
 ### Get active sessions
 
