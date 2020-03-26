@@ -98,18 +98,34 @@ Environments are the instances of the application that have been set up for the 
 > [!NOTE]  
 > Special care should be taken when deleting a production environment as the data will not be recoverable
 
+
+### 
+
+Existing environment endpoints now have option to pass query parameter "doNotFetchDbSize".
+If provided as "true" then DatabaseSize field is omitted in the returned object(s).
+[GET] applications/environments?doNotFetchDbSize={bool}
+[GET] applications/{applicationType}/environments?doNotFetchDbSize={bool}
+[GET] applications/{applicationType}/environments/{environmentName}?doNotFetchDbSize={bool}
+
+
 ### Get environments and Get environments by application family
 Returns a list of all the environments for the tenant. 
 
-```[200] GET /admin/v2.0/applications/environments```
+```
+[200] GET /admin/v2.0/applications/environments[?doNotFetchDbSize={bool}]
+```
 
 Returns a list of the environments for the specified application family.
 
-```[200] GET /admin/v2.0/applications/{applicationFamily}/environments```
+```
+[200] GET /admin/v2.0/applications/{applicationFamily}/environments[?doNotFetchDbSize={bool}]
+```
 
 **Route Parameters:**
 
 **- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral)
+
+**- doNotFetchDbSize:** `true` does not return database size in response; `false` does.
 
 **Response:**  
 Returns a wrapped array of environments.
@@ -149,13 +165,17 @@ Returns a wrapped array of environments.
 ### Get environment by application family and name
 Returns the properties for the provided environment name if it exists.
 
-```[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}```
+```
+[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}[?doNotFetchDbSize={bool}]
+```
 
 **Route Parameters:**
 
 **- applicationFamily:** Family of the environment's application as is. (for example, "BusinessCentral")
 
 **- environmentName:** Name of the targeted environment
+
+**- doNotFetchDbSize:** `true` does not return database size in response; `false` does.
 
 **Response:**  
 Returns a single environment if exists.
@@ -276,6 +296,21 @@ Returns newly created environment.
 
 **- maximumNumberOfEnvironmentsAllowedReached:** - the limit on the number of allowed environments of the provided type has been reached 
 
+### Get Database Size
+
+Gets size of a database for a specific environment.
+
+```
+[GET] applications/{applicationType}/environments/{environmentName}/dbsize
+```
+
+**Response:**
+```
+{
+    value: double,
+    unit: string
+}
+```
 
 ### Copy environment
 Creates a new environment with a copy of another environment's data.
@@ -1324,6 +1359,8 @@ Returns information about the installation of the app update.
 ```
 
 ## Session Management
+
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
 Manage the active sessions on an environment.
 
