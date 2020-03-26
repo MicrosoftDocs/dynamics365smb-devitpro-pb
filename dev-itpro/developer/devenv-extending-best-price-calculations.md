@@ -27,40 +27,40 @@ Price calculation are based on the **Price Calculation Setup** table, where you 
 
 :::image type="content" source="../media/best-pricing-diagram1-setup.png" alt-text="Diagram showing a price calculation implementation.":::
 
-The Price Calculation Setup table has the Code field as its primary key. Its value is calculated by using a combination of the Method, Type, Asset Type, and Implementation fields. For example, it is '[1-1-0]-7003' for the setup line where the following is true:
+The Price Calculation Setup table has the Code field as its primary key. The value of the field is calculated by combining the values in the Method, Type, Asset Type, and Implementation fields. For example, it is '[1-1-0]-7003' for the setup line when the following fields contain the following values: 
 
 - Method contains Lowest Price
 - Type contains Sale
 - Asset Type contains All
 - Implementation is Business Central (Version 15.0)"
 
-You can have multiple setup records with the same combination of method, type, and asset type. The implementation value should always be different because each implementation provides different calculations. The default implementation is defined by the Default field. For example, in 2020 release wave 1 the following setups are available:
+You can have multiple setups with the same combination of method, type, and asset type. The implementation value should always be different though, because each implementation provides different calculations. The default implementation is defined by the Default field. For example, in 2020 release wave 1 the following setups are available:
 
 |Method  |Type  |Asset Type  |Implementation  |Default  |
 |---------|---------|---------|---------|---------|
 |Lowest Price|Sale|All|Business Central (Version 15.0)|X|
 |Lowest Price|Sale|All|Business Central (Version 16.0| |
 
-By default, all sales lines will use the "Business Central (Version 15.0)" implementation to calculate prices, unless the second line has detailed setup lines that define exceptions. 
+By default, all sales lines use the "Business Central (Version 15.0)" implementation to calculate prices, unless the second line has detailed setup lines that define exceptions. 
 
-<!--don't really understand this. Are detailed setup lines used to add exceptions to the default?-->Having the method in the document line we search for a setup line that matches the method, the price type, and the asset type. First, we search for exceptions that could be set for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) defined in the document line. If we find a matching setup we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
+The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and asset type on the document line. The method then searchs for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) on the document line. If we find a matching setup we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
 
 For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is "Business Central (Version 15.0)," but "Business Central (Version 16.0)" implementation contains a detailed setup line for Item 1000. That means that the "Business Central (Version 16.0)" implementation will calculate the price. 
 Detailed setup records are to be entered by users and only make sense for the non-default setup records. The following image shows the relation between the setup line and the detailed setup.
 
 :::image type="content" source="../media/best-pricing-diagram2-detailed-setup.png" alt-text="Diagram showing an example of a default setup.":::
 
-For the Business Central (Version 15.0) implementation, you can only edit the Default field. The records are inserted by the codeunits that subscribe to the OnFindSupportedSetup() event in the "Price Calculation Mgt." codeunit. The two existing price calculation implementation codeunits add pairs of such records, one for the sale of assets and another for purchases. 
-Because the table <!--which table? Price Calculation Setup, I guess?--> is extensible you can also add new fields to the key by subscribing to the OnAfterDefineCode() event of "Price Calculation Setup" table.
+For the Business Central (Version 15.0) implementation, you can only edit the Default field. The records are inserted by the codeunits that subscribe to the OnFindSupportedSetup() event in the Price Calculation Mgt. codeunit. The two price calculation implementation codeunits add pairs of such records, one for the sale of assets and another for purchases. 
+Because the Price Calculation Setup table is extensible, you can add new fields to the key by subscribing to the OnAfterDefineCode() event.
 
 ### Price Type
-The Type field is an extensible "Price Type" enum that contains the following values:
+The Type field is an extensible Price Type enum that contains the following values:
 
 * Any (0)
 * Sale (1)
 * Purchase (2)
 
-The values are part of the composite key in the Price Calculation Setup table. Sales and service lines use the Sale type, purchase lines use the Purchase type, and job or item journal lines use both for calculating price and cost. <!--when you say both, do you mean any-->
+The values are part of the composite key in the Price Calculation Setup table. Sales and service lines use the Sale type, purchase lines use the Purchase type, and job or item journal lines use both for calculating price and cost. The Any value is the default value, and is used when a line contains both a price and a cost.
 
 ### Asset Type
 The "Asset Type" field is an extensible "Price Asset Type" enum that contains the following values:
@@ -73,7 +73,7 @@ The "Asset Type" field is an extensible "Price Asset Type" enum that contains th
 * Service Cost (50)
 * G/L Account (60)
 
-<!--Don't understand this-->The "Asset Type" is part of the composite key in the "Price Calculation Setup" table. If the only setup record contains "Asset Type" - All it means that there is no need in special price calculation implementations per asset type. The default implementation will be used regardless of an asset type in the document line. If you need different implementations for resources you must add a <!--detailed--> setup line with asset type Resource with different implementation, "Resource Pricing" below. 
+The Asset Type is part of the composite key in the Price Calculation Setup table. If the only setup record contains "Asset Type" - All it means that there is no need in special price calculation implementations per asset type. The default implementation will be used regardless of an asset type in the document line. If you need different implementations you must add a setup lines with another asset type. For example, the following table shows a Resource Pricing implementation with a Resource asset type. 
 
 |Method  |Type  |Asset Type  |Implementation  |Default  |
 |---------|---------|---------|---------|---------|
@@ -83,18 +83,18 @@ The "Asset Type" field is an extensible "Price Asset Type" enum that contains th
 Because only one record has the combination of Lowest Price, Sale, and Resource it will be the default. If a sales line sells a resource, its price will be calculated by Resource Pricing implementation. All other assets will use the "Business Central (Version 15.0)" implementation.
 
 ### Price Calculation Method
-The Method field is an extensible "Price Calculation Method" enum that contains the following values: 
+The Method field is an extensible Price Calculation Method enum that contains the following values: 
 
 * Not defined (0)
 * Lowest Price (1)
 
-The method <!--values?--> is part of the composite key in the "Price Calculation Setup" table. A sales document line inherits the method value from the sales header, which in turn inherits it from one of the following, depending on where it's defined:
+The method value is part of the composite key in the Price Calculation Setup table. A sales document line inherits the method value from the sales header, which in turn inherits it from one of the following, depending on where it's defined:
 
 * Customer
 * Customer price group
 * Sales & Receivable Setup table 
 
-The Sales & Receivable Setup table defines the default method, Lowest Price, for all sales prices <!--and purchases?-->. You can redefine <!--will this override the setting on the S&R Setup?--> it for a certain customer price group or a customer. You cannot edit the method on sales document headers or lines.
+The Sales & Receivable Setup table defines the default method, Lowest Price, for all sales prices. If you want to use a different method, you can specify it on a customer price group or a customer. You cannot edit the method on sales document headers or lines.
 
 :::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing the price sources group.":::
 
@@ -180,56 +180,131 @@ Price calculation uses the following AL interface objects:
 * Price Calculation
 * Line With Price
 * Price Source
+* Price Source Group
 
 ### Price Calculation
-The Price Calculation interface defines methods that calculate amounts and discount percentages in journal and document lines. The Price Calculation - V15 codeunit implements the interface, as shown in the following image.
+The Price Calculation interface defines methods that calculate amounts and discount percentages on journal and document lines.
 
-:::image type="content" source="../media/best-pricing-diagram4-price-calculation.png" alt-text="Diagram showing an implementation of the Price Calculation interface.":::
+In Business Central (Version 15.0) and earlier, the Price Calculation – V15 interface implementation calls the Sales Price Calc. Mgt. and Purch. Price Calc. Mgt. codeunits to calculate prices. In Business Central (Version 15.0), the implementation codeunit is Price Calculation – V16. This codeunit works the same as "Price Calculation – V15" but is based on a different price line table and makes it easier to extend price calculations. 
 
-To add another implementation codeunit you must also extend the Price Calculation Handler enum that implements the Price Calculation interface and is used in the Price Calculation Setup table. If you do not update the enum the price calculation will not be available to users.
+The Price Calculation - Undefined implementation is used when the setup line does not contain a match for the document line. This implementation will display a message that states the combination that is missing. 
+
+:::image type="content" source="../media/best-pricing-diagram4-price-calculation.png" alt-text="Best price setup":::
+
+You can add a new implementation codeunit or reuse one as a starting point and rewrite it as needed. For the new codeunit, you must extend the Price Calculation Handler enum that implements Price Calculation interface and is used in the Price Calculation Setup table.
+
+```
+enumextension 50000 "SpecialPriceHandler" extends "Price Calculation Handler"
+{
+    value(50000; "Special Price")
+    {
+        Implementation = "Price Calculation" = "Price Calc. - Special Price";
+    }
+}
+```
+Afterword you can insert a record in the Price Calculation Setup table and set the new implementation as the default.
+
+The following code in codeunit 7001 "Price Calculation Mgt." returns a Price Calculation interface that initialized with the instance of the Line With Price interface that depends on the setup record:
+
+```
+procedure GetHandler(
+    LineWithPrice: Interface "Line With Price"; 
+    var PriceCalculation: Interface "Price Calculation") Result: Boolean;
+    var
+        PriceCalculationSetup: Record "Price Calculation Setup";
+    begin
+        Result := FindSetup(LineWithPrice, PriceCalculationSetup);
+        PriceCalculation := PriceCalculationSetup.Implementation;
+        PriceCalculation.Init(LineWithPrice, PriceCalculationSetup);
+    end;
+
+```
+After the price calculation implementation is defined the document line typically calls the methods in the interfrace that calculate the price and discount. The following code is used in the Sales Line table:
+
+```
+    var
+        Line: Variant;
+    begin
+        PriceCalculation.ApplyDiscount();
+        PriceCalculation.ApplyPrice(CalledByFieldNo);
+        PriceCalculation.GetLine(Line);
+        Rec := Line;
+    end;
+```
 
 ### Line With Price
-The Line With Price interface defines methods for a generic line that requires the calculation of a price, cost, and line discount. The following image shows the codeunits that implement this interface.
+The Line With Price interface defines methods for lines that require the calculation of a price, cost, and line discount. The following image shows the codeunits that implement this interface.
 
 :::image type="content" source="../media/best-pricing-diagram5-line-with-price.png" alt-text="Diagram showing an implementation of the Line With Price interface.":::
 
 The following example shows a typical use of the codeunits in the Sales Line table.
 
 ```
- local procedure GetPriceCalculationHandler(SalesHeader: Record "Sales Header"; var PriceCalculation: Interface "Price Calculation")
-    var
+     var
         PriceCalculationMgt: codeunit "Price Calculation Mgt.";
+        PriceCalculation: Interface "Price Calculation";                 
         SalesLinePrice: Codeunit "Sales Line - Price";
         PriceType: Enum "Price Type";
     begin
-        if (SalesHeader."No." = '') and ("Document No." <> '') then
-            SalesHeader.Get("Document Type", "Document No.");
         SalesLinePrice.SetLine(PriceType::Sale, SalesHeader, Rec);
         PriceCalculationMgt.GetHandler(SalesLinePrice, PriceCalculation);
     end;
- 
-    procedure ApplyDiscount(var PriceCalculation: Interface "Price Calculation")
-    begin
-        PriceCalculation.ApplyDiscount();
-        GetLineWithPrice(PriceCalculation);
-    end;
- 
-    procedure ApplyPrice(CalledByFieldNo: Integer; var PriceCalculation: Interface "Price Calculation")
-    begin
-        PriceCalculation.ApplyPrice(CalledByFieldNo);
-        GetLineWithPrice(PriceCalculation);
-    end;
+```
+The SalesLinePrice codeunit is declared directly because this is the sales line context. The instance is initialized by the interface's SetLine() method, and then passed to the GetHandler() method for PriceCalculation initialization because all Price Calculation implementaiton codeunits include an instance of the Line With Price interface, which stores data about document and journal lines. The following example shows how to declare the interface variable.
+
+```
+    var
+        CurrLineWithPrice: Interface "Line With Price";
 ```
 ### Price Source
-The Price Source interface defines methods for a generic price source. The list of supported sources is defined by the Price Source Type enum. The interface is used in the Price Source table to validate the primary key fields and look up respective tables, as shown in the following table.
+The Price Source interface defines methods for price sources, such as vendors or customers. The list of supported sources is defined by the Price Source Type enum. The interface is used in the Price Source table to validate the primary key fields and look up respective tables, as shown in the following table.
 
 :::image type="content" source="../media/best-pricing-diagram6-price-source-type.png" alt-text="Diagram showing methods for a generic price source.":::
 
-## Examples of Extended Price Calculations
-You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide some examples.
+#### Example
+The Price Source enum implements the Price Source interface and defines Price Source -  Customer as the implementation for the value Customer.
+
+```
+enum 7003 "Price Source Type" implements "Price Source", "Price Source Group"
+    value(11; Customer)
+    {
+        Implementation = "Price Source" = "Price Source - Customer",
+                   "Price Source Group" = "Price Source Group - Customer";
+    }
+```
+The Price Source table has a public method LookupNo() that opens a different page depending on the Source Type value. The PriceSourceInterface variable gets the implementation value from the Source Type enum value and then calls the interface's IsLookupOK(Rec) method.
+
+```
+table 7005 "Price Source"
+    var
+        PriceSourceInterface: Interface "Price Source";
+
+    procedure LookupNo() Result: Boolean;
+    begin
+        PriceSourceInterface := "Source Type";
+        Result := PriceSourceInterface.IsLookupOK(Rec);
+    end;
+```
+
+Because the source type Customer implementation is the "Price Source - Customer" codeunit, the interface calls its IsLookupOK() method and then opens the Customer List page.
+
+```
+codeunit 7032 "Price Source - Customer" implements "Price Source"
+
+    procedure IsLookupOK(var PriceSource: Record "Price Source"): Boolean
+    begin
+        if Customer.Get(PriceSource."Source No.") then;
+        if Page.RunModal(Page::"Customer List", Customer) = ACTION::LookupOK then begin
+            PriceSource.Validate("Source No.", Customer."No.");
+            exit(true);
+        end;
+    end;
+```
+## Example of Extended Price Calculations
+You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide an example.
 
 ### Example: Change an Item Price When Combined with Another Item 
-Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example, but the same principles would apply in any upsell scenario.
+Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example, but the same principles apply in other scenarios.
 
 > [!NOTE]
 > The prices, names, and combinations in this example are completely fictional and intended only to support the scenario described here. They do not reflect anything in the real-world.
@@ -358,6 +433,18 @@ codeunit 50004 "Attached Price Mgt."
     end;
 }
 ```
+### Price Source Group
+The Price Source Group interface defines methods for a generic price source group. The Price Source Group enum defines the list of supported source groups, as follows:
+
+* All (0)
+* Customer (11)
+* Vendor (21)
+* Job (31)
+
+This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps to link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
+
+:::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Example of a price sources group.":::
+
 ## Adding User Experience
 The new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following sample code to extend the page with a new control.
 
@@ -365,9 +452,6 @@ The new price calculation capabilities are not available in the user interface. 
    field("Attach To Item No."; "Attach To Item No.")
    { }
 ```
-<!--### Calculate Prices Based on a Price Hierarchy
-
-Add example-->
 
 ## See Also
 [Extending Application Areas](devenv-extending-application-areas.md)
