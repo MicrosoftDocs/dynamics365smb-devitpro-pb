@@ -285,6 +285,9 @@
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### Migrating Tables and Fields Between Extensions
+#### [Moving Tables and Fields to Another Extension](developer/devenv-migrate-table-fields.md)
+#### [Migration.json File](developer/devenv-migration-json-file.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
@@ -587,9 +590,7 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-### [Migrating Tables and Fields Between Extensions]
-#### [Moving Tables and Fields to Another Extension](developer/devenv-migrate-table-fields.md)
-#### [Migration.json File](developer/devenv-migration-json-file.md)
+
 <!--
 ## Preview Features in AL
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
