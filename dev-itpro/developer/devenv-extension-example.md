@@ -400,7 +400,7 @@ At an app level, you can specify where the Help for your functionality is publis
 Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish Help for your app at *https://mysite.com/documentation*.  
 
 ```json
-"contextSensitiveHelpUrl": "https://mysite.com/documentation",
+"contextSensitiveHelpUrl": "https://mysite.com/documentation/",
 ```
 
 Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) for the **Reward Card** and **Reward List** pages:
