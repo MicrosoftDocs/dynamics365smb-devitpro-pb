@@ -98,17 +98,8 @@ Environments are the instances of the application that have been set up for the 
 > [!NOTE]  
 > Special care should be taken when deleting a production environment as the data will not be recoverable
 
-
-### 
-
-Existing environment endpoints now have option to pass query parameter "doNotFetchDbSize".
-If provided as "true" then DatabaseSize field is omitted in the returned object(s).
-[GET] applications/environments?doNotFetchDbSize={bool}
-[GET] applications/{applicationType}/environments?doNotFetchDbSize={bool}
-[GET] applications/{applicationType}/environments/{environmentName}?doNotFetchDbSize={bool}
-
-
 ### Get environments and Get environments by application family
+
 Returns a list of all the environments for the tenant. 
 
 ```
