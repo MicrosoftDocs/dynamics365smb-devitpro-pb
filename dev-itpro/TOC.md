@@ -125,6 +125,7 @@
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
+#### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
 #### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Managing Updates](administration/tenant-admin-center-update-management.md)
@@ -133,6 +134,9 @@
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
+###  App Management for ISVs
+#### [Introduction](administration/fame/app-management-overview.md)
+#### [Fixed App Management Endpoint API](administration/fame/fame-api.md)
 ## On-Premises
 ### [Administration of Business Central On-Premises](administration/administration.md)
 ### [Server Administration Tool](administration/administration-tool.md)
@@ -725,4 +729,5 @@
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 # [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
+
 <!-- preview of Graph API ends -->
