@@ -242,7 +242,7 @@
 ## Extending the Base Application
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-### [Extending Best Price Calculations](developer/devenv-extending-best-price-calculations.md)
+### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
