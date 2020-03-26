@@ -58,9 +58,10 @@ The Designer works in the client itself allowing design of pages using a drag-an
 Extensions are compiled as .app package files. The .app package file can be deployed to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server. An .app package contains the various artifacts that deliver the new functionality to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] deployment as well as a manifest that specifies the name, publisher, version, and other attributes of the extension. For information about the manifest files, see [JSON Files](devenv-json-files.md).
 
 ## Submitting your app
-When all development and testing is done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to help facilitating the validation. For more information, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
+When all development and testing is done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to help facilitating the validation. For more information, see [Checklist for Submitting Your App](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to AppSource, you can enable the AppSourceCop code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
 
 ## See Also
+
 [Getting Started with AL](devenv-get-started.md)  
 [Getting Started Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
