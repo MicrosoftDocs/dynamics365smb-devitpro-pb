@@ -27,7 +27,7 @@ Here is a quick overview of capabilities in **Designer**:
 |Exclude field from Quick Entry|fields, columns| 
 |Set freeze pane and clear freeze pane |columns|
 |Adjust column width |columns |
-|Edit caption        |FastTab, cards, FactBox    |
+|Edit caption        |FastTabs, cards, FactBoxes   |
 |Save extension/download code |general           |
 |Preview design               |general           |
 
@@ -37,19 +37,19 @@ Here is a quick overview of capabilities in **Designer**:
 
 - The changes you make in Designer will apply to **all** users.
 
-- You can't remove specific fields that are bound to a page and a field must belong to an underlying table.
+- You cannot remove specific fields that are bound to a page and a field must belong to an underlying table.
 
 - You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components can't be moved using drag-and-drop and are restricted to the view that they are in.
 
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
 
-- In the client, users can change the many of these settings for their workspace only by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)).  
+- In the client, users can change the many of these settings for their workspace only by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
 
 ## Start and stop designing
 
 In the [!INCLUDE[prodshort](includes/prodshort.md)] client, you start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top-right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prodshort](includes/prodshort.md)] client in Designer.
 
-After you're done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
+After you are done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
 If you choose not to download the code at the end, you can still pull the code using the **F7** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
 
@@ -73,7 +73,7 @@ You can edit the caption of a FastTab for a group of fields by selecting the cap
 
 **Set freeze pane** locks one or more columns to the left, even when you scroll horizontally. You can set the freeze pane, by selecting the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) of the column that you want as the last column of the freeze pane, and then choose **Set Freeze Pane**. If you want to set the freeze pane back to its original designed location, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) for the current freeze pane column, and then choose **Clear Freeze Pane**.
 
-## Setting the Importance on Field
+## Setting the Importance on a field
 
 Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the [Importance property](properties/devenv-importance-property.md) in the page code.
 
@@ -83,7 +83,7 @@ Fields on non-list type pages, such as card and document type pages, include Des
 |**Show always**|Sets the field to always display on the page. The field displays regardless of whether the user selects **Show more** or **Show less**. The field won't show in the FastTab heading if the FastTab is collapsed.|Standard|
 |**Show when collapsed**|Sets the field to always display on the page. The field displays regardless of whether the user selects **Show more** or **Show less**. The fields will also display in the header of the FastTab if the FastTab is collapsed.|Promoted|
 
-## Setting the Quick Entry on Fields
+## Setting the Quick Entry on fields
 
 You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press ENTER key to navigate through fields on a page. You use Quick Entry to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill in.
 
@@ -102,7 +102,7 @@ This allows the user to efficiently create multiple links and build up the set o
 
 You can also move actions to reorder them in the navigation bar, or move them into groups or subgroups to design the Navigation Menu.
 
-## Hiding and Showing Parts
+## Hiding and showing Parts
 
 Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it will be grayed out and will disappear from the page when you quit Designer mode. Similarly, you can select **Show** on a grayed part control to make it visible again to the user. 
 
@@ -115,7 +115,7 @@ Designer lets you make changes to the actions that are defined in the action bar
 ![Designer action bar](media/designer-action-bar.png "Designer action bar")
 
 > [!NOTE]
-> You can't modify actions that are defined on pages that are shown in parts, such as in FactBoxes or embedded lists. 
+> You cannot modify actions that are defined on pages that are shown in parts, such as in FactBoxes or embedded lists. 
 
 > [!TIP]
 > In Designer, to run an action as normal, select the action and press Ctrl+Click.
