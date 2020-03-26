@@ -33,7 +33,7 @@ When you have recorded special prices and line discounts for sales and purchases
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced|The functionality is replaced with new calculations that you can extend to include additional sources or calculation methods. The current capabilities will be available, and can be used in parallel with the new, until 2021 release wave 1. For more information, see [Extending Best Price Calculations](../dev-itpro/developer/devenv-extending-best-price-calculations.md).|
+|Replaced|The functionality is replaced with new calculations that you can extend to include additional sources or calculation methods. The current capabilities will be available, and can be used in parallel with the new, until 2021 release wave 1. For more information, see [Extending Best Price Calculations](/dynamics365/business-central/dev-itpro/devenv-extending-best-price-calculations.md).|
 
 ## Deprecated Features in 2019 release wave 2
 The following sections describe the features that were deprecated in 2019 release wave 2.
