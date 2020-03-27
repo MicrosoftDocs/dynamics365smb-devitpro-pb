@@ -49,7 +49,7 @@ Moving objects from the Base Application extension to Extension X is a *move up*
 
 - Upgrading from C/AL to AL
 
-    [add more]
+    <!-- [add more]-->
 - Transitioning from a customized customized base application extension with Microsoft ID to the Microsoft Base Application.
 
     You have a customized base application extension with the Microsoft ID. You want to transition to the Microsoft Base Application. In this case, customizations are moved out of the base application up to extensions. The customization objects are removed from the custom base application and ownership transferred to the new extensions.
