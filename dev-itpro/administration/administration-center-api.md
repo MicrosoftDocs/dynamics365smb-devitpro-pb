@@ -103,20 +103,20 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-[200] GET /admin/v2.1/applications/environments[?doNotFetchDbSize={bool}]
+[200] GET /admin/v2.1/applications/environments[?skipDbSize={bool}]
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/environments[?doNotFetchDbSize={bool}]
+[200] GET /admin/v2.1/applications/{applicationFamily}/environments[?skipDbSize={bool}]
 ```
 
 #### Route Parameters
 
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral)
 
-`doNotFetchDbSize` - `true` does not return database size in response; `false` does.
+`skipDbSize` - `true` does not return database size in response; `false` does.
 
 #### Response
 
@@ -158,7 +158,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[?doNotFetchDbSize={bool}]
+[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[?skipDbSize={bool}]
 ```
 
 #### Route Parameters
@@ -167,7 +167,7 @@ Returns the properties for the provided environment name if it exists.
 
 `environmentName` - Name of the targeted environment
 
-`doNotFetchDbSize` - `true` does not return database size in response; `false` does.
+`skipDbSize` - `true` does not return database size in response; `false` does.
 
 #### Response
 Returns a single environment if exists.
