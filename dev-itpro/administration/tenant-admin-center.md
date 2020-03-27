@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 03/25/2020
+ms.date: 03/27/2020
 ms.author: edupont
 ---
 # The Business Central Administration Center
@@ -52,6 +52,8 @@ Alternatively, you can access the administration center from the URL, use the fo
 In the administration center, you can [create and monitor environments](tenant-admin-center-environments.md). This is also where you manage the people who must be [notified of administrative events](tenant-admin-center-notifications.md) for your tenant.  
 
 Your partner can help you set up telemetry for production environments, including [integration with Application Insights in Azure](tenant-admin-center-telemetry.md).  
+
+### Cleaning up settings
 
 If your organization decides to switch to another partner, you must make sure that some settings that your current partner made in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. This includes the following settings:
 
