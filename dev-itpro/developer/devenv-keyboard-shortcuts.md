@@ -61,6 +61,9 @@ The following table provides an overview of some of the shortcut key combination
 |Keyboard Shortcut|Action|
 |-----------------|------|
 |F5|Start debugging session|
+|Ctrl+Alt+F5  |Start RAD publishing without debugging.|
+|Alt+F5       |Start RAD with debugging.|
+
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
