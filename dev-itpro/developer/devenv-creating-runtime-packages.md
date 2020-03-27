@@ -38,6 +38,7 @@ The limitation of runtime packages is that they only work for on-premise install
 > [!NOTE]  
 > If you set the `ShowMyCode` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and you thereby also allow viewing the source code.
 
-## See also
+## See Also
+
 [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)  
 [Install-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=618056)  
