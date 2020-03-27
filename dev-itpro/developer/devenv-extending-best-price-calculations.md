@@ -39,7 +39,7 @@ You can have multiple setups with the same combination of method, type, and asse
 |Method  |Type  |Asset Type  |Implementation  |Default  |
 |---------|---------|---------|---------|---------|
 |Lowest Price|Sale|All|Business Central (Version 15.0)|X|
-|Lowest Price|Sale|All|Business Central (Version 16.0| |
+|Lowest Price|Sale|All|Business Central (Version 16.0)| |
 
 By default, all sales lines use the "Business Central (Version 15.0)" implementation to calculate prices, unless the second line has detailed setup lines that define exceptions. 
 
@@ -96,11 +96,11 @@ The method value is part of the composite key in the Price Calculation Setup tab
 
 The Sales & Receivable Setup table defines the default method, Lowest Price, for all sales prices. If you want to use a different method, you can specify it on a customer price group or a customer. You cannot edit the method on sales document headers or lines.
 
-:::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing the price sources group.":::
+:::image type="content" source="../media/best-pricing-method-sales-setup.png" alt-text="Diagram showing the setup for sale.":::
 
 The Purchase & Payables Setup table also defines the default method for all purchase prices. You can redefine it for a certain vendor. You cannot edit the method on purchase document headers or lines. 
 
-:::image type="content" source="../media/best-pricing-method.png" alt-text="Diagram showing details about the best pricing method.":::
+:::image type="content" source="../media/best-pricing-method-purchase-setup.png" alt-text="Diagram showing the setup for purchase.":::
 
 ## Data Structure Comparison
 The Business Central (Version 15.0) calculation uses the following tables that store information about prices, costs, and discounts: 
@@ -443,9 +443,8 @@ The Price Source Group interface defines methods for a generic price source grou
 
 This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps to link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
 
-:::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Example of a price sources group.":::
+:::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing a price sources group.":::
 
-## Adding User Experience
 The new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following sample code to extend the page with a new control.
 
 ```
