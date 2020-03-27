@@ -1,5 +1,5 @@
 ---
-title: "Price Calculations"
+title: "Extending Price Calculations"
 ms.custom: na
 ms.date: 03/17/2020
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 
-# Price Calculations
+# Extending Price Calculations
 If you record special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements.md#best-price-calculation).
 
 2020 release wave 1 introduces a second implementation of price calculations that will be available as an alternative to the calculations that were available in 2019 release wave 2 and earlier versions. This new implementation has the advantage that it is much easier to extend, for example, with new calculations.
@@ -179,8 +179,8 @@ Price calculation uses the following AL interface objects:
 
 * Price Calculation
 * Line With Price
-* Price Source
 * Price Source Group
+* Price Source
 
 ### Price Calculation
 The Price Calculation interface defines methods that calculate amounts and discount percentages on journal and document lines.
@@ -256,6 +256,18 @@ The SalesLinePrice codeunit is declared directly because this is the sales line 
     var
         CurrLineWithPrice: Interface "Line With Price";
 ```
+### Price Source Group
+The Price Source Group interface defines methods for a generic price source group. The Price Source Group enum defines the list of supported source groups, as follows:
+
+* All (0)
+* Customer (11)
+* Vendor (21)
+* Job (31)
+
+This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps to link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
+
+:::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing a price sources group.":::
+
 ### Price Source
 The Price Source interface defines methods for price sources, such as vendors or customers. The list of supported sources is defined by the Price Source Type enum. The interface is used in the Price Source table to validate the primary key fields and look up respective tables, as shown in the following table.
 
@@ -433,18 +445,6 @@ codeunit 50004 "Attached Price Mgt."
     end;
 }
 ```
-### Price Source Group
-The Price Source Group interface defines methods for a generic price source group. The Price Source Group enum defines the list of supported source groups, as follows:
-
-* All (0)
-* Customer (11)
-* Vendor (21)
-* Job (31)
-
-This enum is the subset of the Price Source Type enum. Both enums implement the Price Source Group interface. The interface helps to link the Price Source Type enum with the Sale Price Source Type, Purchase Price Source Type, and Job Price Source Type enums.
-
-:::image type="content" source="../media/best-pricing-price-sources-group.png" alt-text="Diagram showing a price sources group.":::
-
 The new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following sample code to extend the page with a new control.
 
 ```
