@@ -37,7 +37,7 @@ The App Management API lets you apply modern continuous integration (CI), contin
 - Organize role-based access control.
 - Manage your apps at scale, in multiple geo locations, supported by advanced and well-controlled build, test, and release flows.
 
-For more information about the API, see [App Management API](app-managment-api.md).
+For more information about the API, see [App Management API](app-management-api.md).
 
 > [!NOTE]
 > Currently, direct access to the API is only available for the ISVs working with the Embed apps; not Add-on and Connect apps. To manage versions of Add-on and Connect apps, you use Partner Center to upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that have these apps installed.
