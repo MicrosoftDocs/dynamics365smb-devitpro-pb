@@ -79,7 +79,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     Creating Desktop Shortcuts for MyBizCentralApp
     ```
 
-10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need this information later to [set up Visual Studio Code for for extension development](#VSCode).
+10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need this information later to [set up Visual Studio Code for extension development](#VSCode).
 
 You now have a container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 
