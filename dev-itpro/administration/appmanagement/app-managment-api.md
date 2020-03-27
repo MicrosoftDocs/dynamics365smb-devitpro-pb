@@ -1,5 +1,5 @@
 ---
-title: "FAME API"
+title: "App Management API"
 author: jswymer
 ms.custom: na
 ms.date: 03/23/2020
@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# Fixed App Management Endpoint API
+# App Management API
 
 [!INCLUDE[2020_releasewave1](../../includes/2020_releasewave1.md)]
 
@@ -919,7 +919,7 @@ GET /v1.0/apps/{appId}/roles
 
 ## Getting detailed error messages
 
-To get detailed error messages from FAME API calls, wrap the calls in a try-catch block, as shown in the following PowerShell example: 
+To get detailed error messages from t API calls, wrap the calls in a try-catch block, as shown in the following PowerShell example: 
 
 ```powershell
 try {
