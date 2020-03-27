@@ -23,19 +23,12 @@ Data migration allows you to move table and field data between extensions. The `
 
 ```
 { 
-
     "apprules": [ 
-
         { 
-
             "id": "12345678-abcd-abcd-abcd-1234567890ab" 
-
         } 
-
     ] 
-
 } 
- 
 ```
 4) Save the `migration.json` file in the project.
 
