@@ -16,7 +16,7 @@ ms.author: jswymer
 
 Visual Studio Code is built to handle many smaller, dependent projects, and not one large project, however, as the base application is not yet split into modules or components that allows managing the code in smaller projects, we recommend the following performance optimizations.
 
-Open your `settings.json` file in the project (or global settings if you prefer that). Set:
+Open your `settings.json` file in the project (or global settings if you prefer that) pressing **Ctrl+P**. Set:
 
 - `"al.enableCodeAnalysis": false` to remove code analysis, read more here [Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md).
 
