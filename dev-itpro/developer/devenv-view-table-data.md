@@ -111,12 +111,12 @@ You cannot view virtual tables or the following system tables:
 | 2000000195 |Membership Entitlement|
 | 2000000162 |Nav App Capabilities|
 | 2000000152 |Nav App Data Archive|
-| 2000000161 |Application Dependency (*Nav App Dependencies)|
-| 2000000150 |Application Object Metadata (*Nav App Object Metadata)|
+| 2000000161 |Application Dependency ( *Nav App Dependencies)|
+| 2000000150 |Application Object Metadata ( *Nav App Object Metadata)|
 | 2000000163 |Nav App Object Prerequisites|
-| 2000000142 |Application Resource (*Nav App Resource)|
-| 2000000151 |Installed Application (*Nav App TenantApp)|
-| 2000000160 |Published Application (*Nav App)|
+| 2000000142 |Application Resource ( *Nav App Resource)|
+| 2000000151 |Installed Application ( *Nav App TenantApp)|
+| 2000000160 |Published Application ( *Nav App)|
 | 2000000071 |Object Metadata|
 | 2000000079 |Object Tracking|
 | 2000000001 |Object|
