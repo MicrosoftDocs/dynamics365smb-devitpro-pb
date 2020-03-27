@@ -54,7 +54,7 @@
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
 ## [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
@@ -94,10 +94,6 @@
 ##  App Management for ISVs
 ### [Introduction](administration/appmanagement/app-management-overview.md)
 ### [App Management API](administration/appmanagement/app-management-api.md)
-## What's New or Changed
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Overview](administration/migrate-data.md)
@@ -109,6 +105,10 @@
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
+## What's New or Changed
+### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -516,46 +516,6 @@
 ### [Extensible Property](developer/properties/devenv-extensible-property.md)
 ### [JSON files](developer/devenv-json-files.md) -->
 <!-- end AL -->
-<!-- web service -->
-# Web Services
-## [Web Services](webservices/web-services.md)
-## [Terms of Use](webservices/webservices-terms-of-use.md)
-## General
-### [Publishing a Web Service](webservices/publish-web-service.md)
-### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
-### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
-### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
-### [Authentication](webservices/web-services-authentication.md)
-### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-### [Best Practices](webservices/web-services-best-practices.md)
-## [SOAP](webservices/soap-web-services.md)
-### [SOAP Service URIs](webservices/soap-web-service-uris.md)
-### [Basic Operations](webservices/basic-page-operations.md)
-#### [Create](webservices/create-operation.md)
-#### [CreateMultiple](webservices/CreateMultiple-operation.md)
-#### [Delete](webservices/Delete-operation.md)
-#### [Delete_<part>](webservices/Delete_-part--operation.md)
-#### [GetRecIdFromKey](webservices/GetRecIdFromKey-operation.md)
-#### [IsUpdated](webservices/IsUpdated-operation.md)
-#### [Read](webservices/Read-operation.md)
-#### [ReadByRecId](webservices/ReadByRecId-operation.md)
-#### [ReadMultiple](webservices/ReadMultiple-operation.md)
-#### [Update](webservices/update-operation.md)
-#### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
-### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
-### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
-## [OData](webservices/odata-web-services.md)
-### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
-### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
-### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
-### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
-### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
-### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
-### [Containments and Associations](webservices/use-containments-associations.md)
-### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
-### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
-### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
-<!-- end web services -->
 <!-- begin security -->
 # Security
 ## [Security and Protection Overview](security/security-and-protection.md)
@@ -582,13 +542,54 @@
 ## [On-Premises](performance/performance-onprem.md)
 ## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
-<!-- preview of Graph API starts-->
-# Integrating
+<!-- integration-->
+# Integration
+<!-- web service -->
+## Web Services
+### [Web Services](webservices/web-services.md)
+### [Terms of Use](webservices/webservices-terms-of-use.md)
+### General
+#### [Publishing a Web Service](webservices/publish-web-service.md)
+#### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
+#### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
+#### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
+#### [Authentication](webservices/web-services-authentication.md)
+#### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
+#### [Best Practices](webservices/web-services-best-practices.md)
+### [SOAP](webservices/soap-web-services.md)
+#### [SOAP Service URIs](webservices/soap-web-service-uris.md)
+#### [Basic Operations](webservices/basic-page-operations.md)
+##### [Create](webservices/create-operation.md)
+##### [CreateMultiple](webservices/CreateMultiple-operation.md)
+##### [Delete](webservices/Delete-operation.md)
+##### [Delete_<part>](webservices/Delete_-part--operation.md)
+##### [GetRecIdFromKey](webservices/GetRecIdFromKey-operation.md)
+##### [IsUpdated](webservices/IsUpdated-operation.md)
+##### [Read](webservices/Read-operation.md)
+##### [ReadByRecId](webservices/ReadByRecId-operation.md)
+##### [ReadMultiple](webservices/ReadMultiple-operation.md)
+##### [Update](webservices/update-operation.md)
+##### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
+#### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
+#### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
+### [OData](webservices/odata-web-services.md)
+#### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
+#### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
+#### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
+#### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
+#### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
+#### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
+#### [Containments and Associations](webservices/use-containments-associations.md)
+#### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
+#### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
+<!-- end web services -->
+<!-- end CDS -->
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 # [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
-<!-- preview of Graph API ends -->
+<!-- end CDS -->
 <!--on-prem-->
 # Business Central on-premises
 <!-- deployment -->
