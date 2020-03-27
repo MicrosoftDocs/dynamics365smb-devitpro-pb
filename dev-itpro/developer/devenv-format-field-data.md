@@ -13,27 +13,24 @@ author: jswymer
 
 This article describes how you can format the decimal values that appear in fields on table, pages and reports. For example, you can change how the data appears in a Cue on the Role Center page. To format data, you use a combination of the [AutoFormatType Property](properties/devenv-AutoFormatType-Property.md), [AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md), and [DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md) of the field. These properties work together to enable you to specify the following:  
   
--   Display amounts and unit amounts in another currency.  
+- Display amounts and unit amounts in another currency.  
+- Specify the number of decimal places.   
+- Specify whether to display a thousand separator.  
+- Specify characters before and after the value, such as currency signs or %.  
   
--   Specify the number of decimal places.  
-  
--   Specify whether to display a thousand separator.  
-  
--   Specify characters before and after the value, such as currency signs or %.  
-  
-## Implementation Overview
+## Implementation overview
 
 When a field is used on a page or report, you can set the **AutoFormatType** and **AutoFormatExpr** properties directly on the page field or report field \(column\), or you can set them on the underlying table field. If you specify the properties on the table field, then the format applies wherever the field is used. Specifying the properties on the page or report field will only apply the format to the specific page or report. If you specify the properties on the table field and the page or report field, then the settings on the page or report field take precedence.  
 
 When you use the **AutoFormatType** and **AutoFormatExpression** properties to format a field, two events are raised by the system codeunit **45 Auto Format**: OnResolveAutoFormat and OnAfterResolveAutoFormat.
 
-## Setting up Data Formatting
+## Setting up data formatting
 
 The settings for the **AutoFormatType**, **AutoFormatExpression**, and **DecimalPlaces** properties will depend on the type of data that is displayed, for example, this could be currency amounts, unit amounts, simple decimals, or ratios. For the most part, the **AutoFormatType** property is the primary setting, which in turn determines the options for setting the **DecimalPlaces** and **AutoFormatExpr** properties.  
   
 The following tables describes how to set each of the properties to achieve the format that you want.
 
-## Setting the DecimalPlaces Property
+## Setting the DecimalPlaces property
 
 With the following set up, the **AutoFormatExpression** property is ignored.
   
@@ -41,9 +38,9 @@ With the following set up, the **AutoFormatExpression** property is ignored.
 |---------------------------|--------------------------|---------------------------|
 |0|Set to the number of decimal places that you want to display for the value.|Use this configuration when you want to format the decimal value according the Standard Format 0 (which is the default format) with a specific number of decimal places.<br /><br /> For example, if the value is a US decimal `-76543.21` and you set the **DecimalPlaces** property to `0`, then the value appears as **76,543**. The properties will look like this:<br /><br />`AutoFormatType = 0;`<br />`DecimalPlaces = '0';`|
 
-## Setting the AutoFormatExpression Property
+## Setting the AutoFormatExpression property
 
-With the following set up, the **DecimalPlaces** property is ignored. 
+With the following setup, the **DecimalPlaces** property is ignored. 
 
 |AutoFormatType Property|AutoFormatExpression Property|Usage Description|  
 |---------------------------|---------------------------|----------------------|  
@@ -67,7 +64,7 @@ The following table describes how to set each of the properties to achieve the f
 
 The precision determines the minimum and maximum number of decimal points for values. The precision takes the format `<precision,minimum:maximum>`. For example, `<precision,minimum:maximum>` sets the data with a minimum of 2 and a maximum of 3 decimal places.
 
-##  <a name="StandardFormats"></a> Standard Formats
+##  <a name="StandardFormats"></a> Standard formats
 
 The following table describes the standard formats that are available for the **AutoFormatExpr** property when the **AutoFormatType** property is set to 10.  
   
@@ -81,6 +78,7 @@ The following table describes the standard formats that are available for the **
 |9|XML format|-76543.21|-76543.21|  
   
 ## See Also  
- [AutoFormatType Property](properties/devenv-AutoFormatType-Property.md)   
- [AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md)   
- [DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md)   
+
+[AutoFormatType Property](properties/devenv-AutoFormatType-Property.md)   
+[AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md)   
+[DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md)   
