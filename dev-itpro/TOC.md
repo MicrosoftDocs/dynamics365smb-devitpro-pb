@@ -30,171 +30,85 @@
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
 #### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+## Sell Business Central
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## Build apps for Business Central
+<!--#### What the partner's responsibilities are -->
+<!--#### How Microsoft runs the service -->
+### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
+### [Components and Capabilities](deployment/app-components.md)
+### [Licensing](deployment/licensing.md)
+### [Add your App to AppSource](administration/appsource.md)
+### Embed Apps
+#### [Embed App Overview](deployment/embed-app-overview.md)
+#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+#### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 <!--AppSourcevalidation-->
-## AppSource Validation
-### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
-### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
-### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
-<!-- deployment-->
-# Deployment
-## [Overview](deployment/deployment.md)
+### AppSource Validation
+#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
+#### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+<!-- administration-->
+# Administration
+## [Administration of Business Central Online](administration/tenant-administration.md)
+## [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+## [Operational Limits](administration/operational-limits-online.md)
+## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
+## [Version numbers in Business Central](administration/version-numbers.md)
+## [Managing Technical Support](administration/manage-technical-support.md)
+## Environment Types
+### [Production and Sandbox Environments](administration/environment-types.md)
+### [Preparing Demo Environments](administration/demo-environment.md)
+### [Preparing Test Environments](administration/test-environment.md)
+### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
+## Monitoring and Analyzing Telemetry
+### [Overview](administration/telemetry-overview.md)
+### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+## Administration Center
+### [Administration Center Overview](administration/tenant-admin-center.md)
+### [Managing Environments](administration/tenant-admin-center-environments.md)
+### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
+### [Exporting Databases](administration/tenant-admin-center-database-export.md)
+### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
+### [Managing Updates](administration/tenant-admin-center-update-management.md)
+### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
+### [Administration Center API](administration/administration-center-api.md)
+## Automation
+### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
+### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
+## Onboard your customers
+### [Trials and Sign-ups](deployment/customer-signup.md)
+<!-- ### Do cool demos -->
+<!-- ### Partner Center stuff -->
+<!-- Performance tests-->
+### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
+### [Technical Support of Business Central](technical-support.md)
+##  App Management for ISVs
+### [Introduction](administration/fame/app-management-overview.md)
+### [Fixed App Management Endpoint API](administration/fame/fame-api.md)
 ## What's New or Changed
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 ### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-<!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
-## Online
-### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### Onboard your customers
-#### [Trials and Sign-ups](deployment/customer-signup.md)
-<!-- #### Do cool demos -->
-<!-- #### Partner Center stuff -->
-<!-- Performance tests-->
-#### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-#### [Technical Support of Business Central](technical-support.md)
-### Build apps for Business Central
-<!--#### What the partner's responsibilities are -->
-<!--#### How Microsoft runs the service -->
-#### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
-#### [Components and Capabilities](deployment/app-components.md)
-#### [Licensing](deployment/licensing.md)
-#### [Add your App to AppSource](administration/appsource.md)
-#### Embed Apps
-##### [Embed App Overview](deployment/embed-app-overview.md)
-##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-## On-Premises
-### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
-### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System Requirements April '19](deployment/system-requirement-business-central.md)
-### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
-### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
-### Dynamics 365 Business Central On-Premises Updates
-#### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
-#### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
-#### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
-### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
-### [Components](deployment/product-and-architecture-overview.md)
-### [Planning](deployment/plan-for-deployment.md)
-### Deployment Topologies
-#### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
-#### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
-#### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
-#### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
-#### [Deploying on Three Computers](deployment/deploy-three-computer-environment.md)
-### [Installing Using Setup](deployment/install-using-setup.md)
-### [Provisioning a Service Account](deployment/provision-server-account.md)
-### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-### Business Central Web Server
-#### [Business Central Web Server Overview](deployment/web-server-overview.md)
-#### [Configuring Web Server Instances](administration/configure-web-server.md)
-#### [Configure IIS](deployment/configure-iis.md)
-#### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
-#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-### [Migrating to Multitenancy](deployment/migrating-to-multitenancy.md)
-### Database
-#### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
-#### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-#### [Creating Databases](deployment/devenv-create-databases.md)
-#### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
-<!-- end deployment -->
-<!-- administration-->
-# Administration
-## Online
-### [Administration of Business Central Online](administration/tenant-administration.md)
-### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
-### [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
-### [Managing Technical Support](administration/manage-technical-support.md)
-### [Operational Limits](administration/operational-limits-online.md)
-### Environment Types
-#### [Production and Sandbox Environments](administration/environment-types.md)
-#### [Preparing Demo Environments](administration/demo-environment.md)
-#### [Preparing Test Environments](administration/test-environment.md)
-#### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
-### Monitoring and Analyzing Telemetry
-#### [Overview](administration/telemetry-overview.md)
-#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
-#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
-#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
-#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
-### Administration Center
-#### [Administration Center Overview](administration/tenant-admin-center.md)
-#### [Managing Environments](administration/tenant-admin-center-environments.md)
-#### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
-#### [Exporting Databases](administration/tenant-admin-center-database-export.md)
-#### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
-#### [Managing Updates](administration/tenant-admin-center-update-management.md)
-#### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
-#### [Administration Center API](administration/administration-center-api.md)
-### Automation
-#### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
-#### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
-###  App Management for ISVs
-#### [Introduction](administration/fame/app-management-overview.md)
-#### [Fixed App Management Endpoint API](administration/fame/fame-api.md)
-## On-Premises
-### [Administration of Business Central On-Premises](administration/administration.md)
-### [Server Administration Tool](administration/administration-tool.md)
-### Windows PowerShell Cmdlets
-#### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
-#### [Administration Cmdlets](/powershell/module/microsoft.dynamics.nav.management)
-#### [Administration Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.management)
-#### [Development Cmdlets](/powershell/module/microsoft.dynamics.nav.model.tools)
-#### [Development Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
-### [Authentication and Credential Types](administration/users-credential-types.md)
-### [Configuring Business Central Server](administration/configure-server-instance.md)
-### Configuring Business Central Web Server
-#### [Configuring Business Central Web Server Instances](administration/configure-web-server.md)
-#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-### [Encrypting Data](developer/devenv-encrypting-data.md)
-### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
-### Monitoring Business Central Server
-#### [Monitoring Performance Counters](administration/performance-counters.md)
-#### Monitoring Server Events
-##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
-##### [Trace Events List](administration/server-trace-events.md)
-##### [Admin and Operational Events List](administration/server-events.md)
-##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
-##### [Using Performance Monitor](administration/monitor-use-performance-monitor-collect-event-trace-data.md)
-##### [Using PerView](administration/monitor-use-perfview-collect-event-trace-data.md)
-##### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
-##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
-##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
-#### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-### SQL Server Performance
-#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
-#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
-#### [Data Access](administration/optimize-sql-data-access.md)
-#### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
-#### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
-#### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
-#### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
-#### Utilizing Read Scale-Out
-##### [Overview](administration/database-read-scale-out-overview.md)
-##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
-#### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
-#### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
-### Monitoring and Analyzing Using Telemetry
-#### [Overview](administration/telemetry-overview.md)
-#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
-#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
-#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
-#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
-#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
-<!--### Administration Center
-#### [Administration Center Overview](administration/tenant-admin-center.md)-->
-### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
-### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
-<!--## [Configuring User Authentication](Configuring-Authentication.md)-->
-## [Version numbers in Business Central](administration/version-numbers.md)
+<!--migrate to BC online-->
+## Migrate to Business Central Online
+### [Overview](administration/migrate-data.md)
+### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
+### [Running the Cloud Migration Tool](administration/migration-tool.md)
+### [Managing the Migration to the Cloud](administration/migration-management.md)
+### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
+### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
+### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
+<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
+<!-- end migrate -->
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -668,19 +582,120 @@
 ## [On-Premises](performance/performance-onprem.md)
 ## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
-<!--migrate to BC online-->
-# Migrate to Business Central Online
-## [Overview](administration/migrate-data.md)
-## [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
-## [Running the Cloud Migration Tool](administration/migration-tool.md)
-## [Managing the Migration to the Cloud](administration/migration-management.md)
-## [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
-## [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
-## [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
-<!--## [Migrating from Dynamics SL](administration/migrate-data.md)-->
-<!-- end migrate -->
+<!-- preview of Graph API starts-->
+# Integrating
+## Integrating with Common Data Service
+### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
+### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
+# [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
+<!-- preview of Graph API ends -->
+<!--on-prem-->
+# Business Central on-premises
+<!-- deployment -->
+## Deployment
+### [Overview](deployment/deployment.md)
+### What's New or Changed
+#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+<!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
+<!-- deployment-->
+# Deployment
+## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+## [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
+## [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+## [System Requirements April '19](deployment/system-requirement-business-central.md)
+## [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
+## [FAQ About the Windows Client and Business Central](faq-win-cli.md)
+## Dynamics 365 Business Central On-Premises Updates
+### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
+### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
+### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
+## [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
+## [Components](deployment/product-and-architecture-overview.md)
+## [Planning](deployment/plan-for-deployment.md)
+## Deployment Topologies
+### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
+### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
+### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
+### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
+### [Deploying on Three Computers](deployment/deploy-three-computer-environment.md)
+## [Installing Using Setup](deployment/install-using-setup.md)
+## [Provisioning a Service Account](deployment/provision-server-account.md)
+## [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
+## Business Central Web Server
+### [Business Central Web Server Overview](deployment/web-server-overview.md)
+### [Configuring Web Server Instances](administration/configure-web-server.md)
+### [Configure IIS](deployment/configure-iis.md)
+### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
+### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+## [Migrating to Multitenancy](deployment/migrating-to-multitenancy.md)
+## Database
+### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
+### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
+### [Creating Databases](deployment/devenv-create-databases.md)
+### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
+<!-- end deployment -->
+<!-- administration -->
+## Administration
+### [Administration of Business Central On-Premises](administration/administration.md)
+### [Server Administration Tool](administration/administration-tool.md)
+### Windows PowerShell Cmdlets
+#### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
+#### [Administration Cmdlets](/powershell/module/microsoft.dynamics.nav.management)
+#### [Administration Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.management)
+#### [Development Cmdlets](/powershell/module/microsoft.dynamics.nav.model.tools)
+#### [Development Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
+### [Authentication and Credential Types](administration/users-credential-types.md)
+### [Configuring Business Central Server](administration/configure-server-instance.md)
+### Configuring Business Central Web Server
+#### [Configuring Business Central Web Server Instances](administration/configure-web-server.md)
+#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
+### [Encrypting Data](developer/devenv-encrypting-data.md)
+### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
+### Monitoring Business Central Server
+#### [Monitoring Performance Counters](administration/performance-counters.md)
+#### Monitoring Server Events
+##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
+##### [Trace Events List](administration/server-trace-events.md)
+##### [Admin and Operational Events List](administration/server-events.md)
+##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
+##### [Using Performance Monitor](administration/monitor-use-performance-monitor-collect-event-trace-data.md)
+##### [Using PerView](administration/monitor-use-perfview-collect-event-trace-data.md)
+##### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
+##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
+##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
+#### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
+### SQL Server Performance
+#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
+#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
+#### [Data Access](administration/optimize-sql-data-access.md)
+#### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
+#### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
+#### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
+#### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
+#### Utilizing Read Scale-Out
+##### [Overview](administration/database-read-scale-out-overview.md)
+##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
+#### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
+#### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
+### Monitoring and Analyzing Using Telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+<!--### Administration Center
+#### [Administration Center Overview](administration/tenant-admin-center.md)-->
+### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
+### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
+<!--## [Configuring User Authentication](Configuring-Authentication.md)-->
+<!-- end administration -->
 <!-- upgrade -->
-# Upgrade
+## Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## Online
 ### [Overview](upgrade/upgrading-to-business-central-online.md)
@@ -732,11 +747,4 @@
 ### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
-<!-- preview of Graph API starts-->
-# Integrating
-## Integrating with Common Data Service
-### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
-### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
-# [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
-
-<!-- preview of Graph API ends -->
+<!--on-prem ends-->
