@@ -598,44 +598,40 @@
 #### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 #### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 #### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-<!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
-<!-- deployment-->
-# Deployment
-## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-## [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
-## [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-## [System Requirements April '19](deployment/system-requirement-business-central.md)
-## [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
-## [FAQ About the Windows Client and Business Central](faq-win-cli.md)
-## Dynamics 365 Business Central On-Premises Updates
-### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
-### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
-### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
-## [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
-## [Components](deployment/product-and-architecture-overview.md)
-## [Planning](deployment/plan-for-deployment.md)
-## Deployment Topologies
-### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
-### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
-### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
-### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
-### [Deploying on Three Computers](deployment/deploy-three-computer-environment.md)
-## [Installing Using Setup](deployment/install-using-setup.md)
-## [Provisioning a Service Account](deployment/provision-server-account.md)
-## [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-## Business Central Web Server
-### [Business Central Web Server Overview](deployment/web-server-overview.md)
-### [Configuring Web Server Instances](administration/configure-web-server.md)
-### [Configure IIS](deployment/configure-iis.md)
-### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
-### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-## [Migrating to Multitenancy](deployment/migrating-to-multitenancy.md)
-## Database
-### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
-### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-### [Creating Databases](deployment/devenv-create-databases.md)
-### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
+### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
+### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+### [System Requirements April '19](deployment/system-requirement-business-central.md)
+### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
+### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
+### Dynamics 365 Business Central On-Premises Updates
+#### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
+#### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
+#### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
+### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
+### [Components](deployment/product-and-architecture-overview.md)
+### [Planning](deployment/plan-for-deployment.md)
+### Deployment Topologies
+#### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
+#### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
+#### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
+#### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
+#### [Deploying on Three Computers](deployment/deploy-three-computer-environment.md)
+### [Installing Using Setup](deployment/install-using-setup.md)
+### [Provisioning a Service Account](deployment/provision-server-account.md)
+### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
+### Business Central Web Server
+#### [Business Central Web Server Overview](deployment/web-server-overview.md)
+#### [Configuring Web Server Instances](administration/configure-web-server.md)
+#### [Configure IIS](deployment/configure-iis.md)
+#### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
+#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+### [Migrating to Multitenancy](deployment/migrating-to-multitenancy.md)
+### Database
+#### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
+#### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
+#### [Creating Databases](deployment/devenv-create-databases.md)
+#### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 <!-- end deployment -->
 <!-- administration -->
 ## Administration
@@ -688,22 +684,13 @@
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
-<!--### Administration Center
-#### [Administration Center Overview](administration/tenant-admin-center.md)-->
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end administration -->
 <!-- upgrade -->
 ## Upgrade
-## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
-## Online
-### [Overview](upgrade/upgrading-to-business-central-online.md)
-### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
-### [Migrating On-Premises Data to Business Central Online](administration/migrate-data.md)
-### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-### [Major Updates](administration/update-rollout-timelime.md)
-## On-Premises
+### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)
 #### [Before You Upgrade](upgrade/Upgrade-Considerations.md)
