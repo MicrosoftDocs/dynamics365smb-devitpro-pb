@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/16/2020
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: article
@@ -13,7 +13,7 @@ ms.author: rweigel
 
 # Technical Validation Checklist
 
-The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. 
+The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. To get code validation helping you to bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
 
 |Requirement|Example/Guidance|
 |-----------|----------------|

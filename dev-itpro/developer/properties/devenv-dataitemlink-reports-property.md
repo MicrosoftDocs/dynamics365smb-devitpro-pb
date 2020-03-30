@@ -1,19 +1,17 @@
 ---
 title: "DataItemLink Property (Reports)"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 18ac2683-a8b0-4dc4-8dcf-717e93b51865
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
 # DataItemLink Property (Reports)
-Sets the corresponding fields from two data items that are linked by the [DataItemLinkReference Property](devenv-dataitemlink-reference-property.md). The link is defined as a property of the indented (child) data item.  
+Sets the corresponding fields from two data items that are linked by the [DataItemLinkReference Property](devenv-dataitemlink-reference-property.md). The link is defined as a property of the child data item.  
   
 ## Applies To  
   

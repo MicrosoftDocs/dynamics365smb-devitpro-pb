@@ -2,7 +2,7 @@
 title: "Actions that have been published must not be deleted, since dependent extensions may break"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/25/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

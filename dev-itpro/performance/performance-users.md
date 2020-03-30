@@ -2,7 +2,7 @@
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
 ms.custom: na
-ms.date: 03/20/2020
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +13,13 @@ ms.author: mikebc
 ---
 
 # Performance Tips for Business Users
+
 This section describes how you can work with end-users to improve the performance that each individual experiences with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-
 ## Choosing a desktop browser
+
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports multiple browsers that each offer a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
+
 - Where possible, avoid older browsers such as Internet Explorer, and switch to one of our recommended modern browsers, such as the new Microsoft Edge. See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
 - Keep your browser always updated to the latest version.
 

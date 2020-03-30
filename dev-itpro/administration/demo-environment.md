@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 03/23/2020
+ms.date: 04/01/2020
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -35,6 +35,9 @@ You can do that with your company email, but it's far better to get yourself an 
 For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) with an Office 365 demo account, you can keep that environment for up to a year. However, if you switch to the actual trial experience in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], that experience will expire after 30 days. At that point, you can [extend the trial](/dynamics365/business-central/admin-extend-trial), or you can return to the CRONUS demonstration experience, which will still be available until your Office 365 demo account expires.  
 
 This type of environment can be useful for repeatable demos that rely on Office 365 integration, for example.  
+
+> [!TIP]
+> If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you do not have to use private mode for browsing, and you can let Edge save passwords and sites to any of your browser profiles. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] also performs well in the new Edge for even better demos.  
 
 #### To get a trial environment based on Microsoft 365 content packs
 

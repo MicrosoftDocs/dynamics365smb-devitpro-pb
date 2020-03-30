@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 03/23/2020
+ms.date: 04/01/2020
 ms.author: edupont
 ---
 
@@ -105,6 +105,15 @@ After those additional 30 days, the prospect must either purchase [!INCLUDE[prod
 
 > [!TIP]
 > As a reselling partner, you can suggest your prospects sign up for a trial, but you can also help set up a customized demonstration environment based on a sandbox environment or a trial environment. In both cases, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](demo-environment.md).  
+
+### <a name="premiumtrial"></a>The Dynamics 365 Business Central Premium Trial
+
+In the Partner Center, you can find a special license type called the **Dynamics 365 Business Central Premium Trial** license, which is a very different way to give a prospect or an existing customer a trial experience. If you assigned the **Dynamics 365 Business Central Premium Trial** license to a customer's account in the Partner Center, then that also expires after 30 days. You cannot extend the Premium trial, but you can add one more Premium trial license to give the customer an extra 30 days of trial. But when the second Premium trial expires, then the customer must either convert their trial to a paid subscription, or they must sign up for the viral trial as described above.  
+
+For more information, see [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products) in the Partner Center documentation. If you have technical difficulties assigning this license, contact Partner Center support. For more information, see [Report problems with Partner Center](/partner-center/report-problems-with-partner-center).  
+
+> [!CAUTION]
+> Make sure you understand the limitations of this type of trial, before you offer it to a prospect or customer. It is easy to convert this type of trial to a paid subscription, but if the prospect needs more than 30 days to decide, or if they want to add more than 25 users, then the viral trial is probably a better fit for them.  
 
 ## See Also
 

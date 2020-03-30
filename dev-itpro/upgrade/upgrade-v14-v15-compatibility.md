@@ -2,7 +2,7 @@
 title: Business Central 14.X to 15.X compatibility matrix
 description: See which Business Central 15 updates are compatible with each Business Central 14 update as a compatibility matrix.
 ms.custom: na
-ms.date: 01/15/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
