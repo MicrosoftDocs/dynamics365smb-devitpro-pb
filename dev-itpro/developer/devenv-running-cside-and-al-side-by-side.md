@@ -33,6 +33,7 @@ For example:
 ```
 finsql.exe Command=generatesymbolreference, Database="Demo Database NAV (11-0)", ServerName=.\NAVDEMO
 ```
+<br>
 
 > [TIP]  
 > The finsql.exe includes several parameters that you can set to suit you environment. For more information, see [Using the Development Environment from the Command Prompt](../cside/cside-command-prompt.md). 

@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 10/01/2019
+ms.date: 03/25/2020
 ms.author: edupont
 
 ---
@@ -27,6 +27,10 @@ Notifications are sent to all email addresses that are listed in the **Notificat
 
 > [!IMPORTANT]
 > To not miss update notifications from Microsoft, you must verify that the e-mails are not redirected to a spam folder by your e-mail software. The notifications are sent from the Microsoft Partner Center address, `msftpc@microsoft.com` and contain `Dynamics 365 Business Central` in the subject line.  
+
+## Cleaning up settings
+
+If you end the relationship with a customer where you have set up your email address as a notification recipient, you must remove the email address while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
 ## See also
 

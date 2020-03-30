@@ -21,7 +21,7 @@ The extension development package provides a pre-configured setting for IP prote
 When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you are building on. The `app.json` file contains a setting called `showMyCode`, which controls whether it is possible to debug into the extension, when that extension is taken as a dependency. The default value of this property is set to **false**. This means that debugging into an extension to view the code is not allowed. For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
 > [!NOTE]  
-> The `showMyCode` setting is not visible in the `app.json` file when it is generated.
+> The `showMyCode` setting is not visible in the `app.json` file when it is generated. If you want to change the value, you must add the setting as shown in the code snippet below.
 
 > [!NOTE]  
 > Even though `showMyCode` is set to **false**, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deploying using a cmdlet or via AppSource.

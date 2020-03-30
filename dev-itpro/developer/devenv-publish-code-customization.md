@@ -16,22 +16,23 @@ ms.author: solsen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This topic describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server. 
+This topic describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises and publish the code-customized Base Application to the local server. 
 
 > [!IMPORTANT]  
 > Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
 
 > [!NOTE]  
-> The steps in this topic are not validated against a Docker environment. If you are running the on-prem installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
+> The steps in this topic are not validated against a Docker environment. If you are running the on-premises installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
 
 ## Prerequisites
+
 Make sure to have the following prerequisites installed to be able to follow the steps in this topic.
 
-- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed
+- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises with the AL Language Development Environment option installed
 - Visual Studio Code
 - The AL Language extension
 
-## To publish a code customization for Business Central on-prem
+## To publish a code customization for Business Central on-premises
 
 1. Get the Base Application source from the `/Applications/BaseApp/Source` folder on the DVD.
 2. Unzip the *BaseApplication.source.zip* file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
@@ -76,8 +77,8 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     ```
     "al.assemblyProbingPaths": [
-        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
-        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\160",
+        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\160",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"
     ],        
@@ -86,21 +87,21 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 10. Next, you must uninstall all extensions from the command line. If you at this point try to just publish the extension from Visual Studio Code you will get the following error:
 
-    `The request for path /BC150/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
+    `The request for path /BC160/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
 
     You get the error because the extensions are installed in the `global` scope. If you want to publish an extension from Visual Studio Code, within the `developer` scope, you will have to first uninstall and then unpublish the extensions from the command line.
 
     Ideally, you should uninstall the application that you want to update and all its dependencies. To uninstall the Base Application use the following cmdlet:<br>
-    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC150 -Force`
+    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC160 -Force`
 
     Use the `-Force` parameter to uninstall all dependencies.
 
     > [!NOTE]  
-    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC150 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC150 -Force}`
+    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC160 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC160 -Force}`
 
 11. Having uninstalled, the next step is to unpublish the application and all of its dependencies. This needs to happen before we can publish it. The following command can be used if there are no dependencies to the Base Application:
 
-    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC150`
+    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC160`
 
     But if there are dependencies on the Base Application this will give an error. To solve this, you must unpublish all the applications with dependencies on the Base Application. This is easier to do using a script that recursively removes the dependencies. Use Windows PowerShell ISE to create a new script with the following lines of code:
 
@@ -132,7 +133,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 15. Import a license with rights to publish the extension. For example:  
     ```
-    Import-NAVServerLicense -ServerInstance BC150 -LicenseFile "C:\Users\mylicense.flf"
+    Import-NAVServerLicense -ServerInstance BC160 -LicenseFile "C:\Users\mylicense.flf"
     ```
 
 16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.

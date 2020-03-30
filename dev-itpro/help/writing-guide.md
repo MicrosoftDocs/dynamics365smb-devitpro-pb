@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2019
+ms.date: 03/25/2020
 ms.author: edupont
 ---
 
@@ -153,6 +153,10 @@ target-heading is the text of the heading that you want to link to, except it is
 
 For example, to link to the heading "How Autoscaling Works" in the article Autoscaling.md", add the following code:
 ```[link text](Autoscaling.md#how-autoscaling-works)```
+
+### <a name="anchorlink"></a>Links to anchors across languages
+
+[!INCLUDE [docslinkanchor](../developer/includes/docslinkanchor.md)]
 
 ### Line breaks (soft return)
 
