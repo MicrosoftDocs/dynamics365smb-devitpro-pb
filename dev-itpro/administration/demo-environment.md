@@ -37,7 +37,9 @@ For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics36
 This type of environment can be useful for repeatable demos that rely on Office 365 integration, for example.  
 
 > [!TIP]
-> If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you do not have to use private mode for browsing, and you can let Edge save passwords and sites to any of your browser profiles. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] also performs well in the new Edge for even better demos.  
+> If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you do not have to use private mode for browsing, and you can let Edge save passwords and sites to any of your browser profiles. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] also performs well in the new Edge for even better demos. You can also switch the page layout to *Focused* to minimize demo distraction. For more information, see [Microsoft Edge documentation](/deployedge/).  
+
+We also recommend that you connect to a low-latency network for a faster response time during demos, and that you always plug in your laptop if you are about to demo anything. Performance impact may vary depending on your device and choice of browser, but being plugged in generally helps overall snappiness.  
 
 #### To get a trial environment based on Microsoft 365 content packs
 
