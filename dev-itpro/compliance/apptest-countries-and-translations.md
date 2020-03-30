@@ -26,10 +26,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Australia|Microsoft|Available|
 |Austria|Microsoft|Available|
 |Belgium|Microsoft|Available|
-|Brazil|Partner|2020 release wave 2|
 |Canada|Microsoft|Available|
-|Colombia|Partner|2020 release wave 1|
-|Croatia|Partner|2020 release wave 1|
+|Colombia|Partner|Available|
+|Croatia|Partner|Available|
 |Czechia|Microsoft|Available|
 |Denmark|Microsoft|Available|
 |Estonia|Partner|Available|
@@ -37,28 +36,26 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |France|Microsoft|Available|
 |Germany|Microsoft|Available|
 |Hong Kong SAR|Partner|Available|
-|Hungary|Partner|2020 release wave 1|
+|Hungary|Partner|Available|
 |Iceland|Microsoft|Available|
-|India|Partner|2021 release wave 1|
+|India|Partner|Available|
 |Indonesia|Partner|Available|
-|Ireland|Partner|2020 release wave 2|
 |Italy|Microsoft|Available|
 |Japan|Partner|Available|
-|Latvia|Partner|2020 release wave 1|
-|Lithuania|Partner|2020 release wave 2|
+|Latvia|Partner|Available|
 |Malaysia|Partner|Available|
 |Mexico|Microsoft|Available|
 |Netherlands|Microsoft|Available|
 |New Zealand|Microsoft|Available|
 |Norway|Microsoft|Available|
-|Peru|Partner|2020 release wave 1|
+|Peru|Partner|Available|
 |Philippines|Partner|Available|
 |Poland|Partner|Available|
 |Portugal|Partner|Available|
 |Russia **(on-premises only)**|Microsoft|Available|
 |Serbia|Partner|Available|
 |Singapore|Partner|Available|
-|Slovenia|Partner|2020 release wave 1|
+|Slovenia|Partner|Available|
 |South Africa|Partner|Available|
 |South Korea|Partner|Available|
 |Spain|Microsoft|Available|
