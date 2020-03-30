@@ -103,7 +103,7 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-[200] GET /admin/v2.1/applications/environments[?skipDbSize={bool}]
+GET /admin/v2.1/applications/environments[?skipDbSize={bool}]
 ```
 
 Returns a list of the environments for the specified application family.
@@ -661,7 +661,7 @@ Notifications are sent to the recipient email addresses set up for the tenant. F
 Returns a list of notification recipients.
 
 ```
-[200] GET /admin/v2.1/settings/notification/recipients
+GET /admin/v2.1/settings/notification/recipients
 ```
 
 #### Response
@@ -689,7 +689,7 @@ Returns a wrapped array of recipients.
 Create a new notification recipient.
 
 ```
-[200] PUT /admin/v2.1/settings/notification/recipients
+PUT /admin/v2.1/settings/notification/recipients
 ```
 
 #### Body
@@ -728,7 +728,7 @@ Returns the newly created recipient.
 Deletes an existing notification recipient.
 
 ```
-[200] DELETE /admin/v2.1/settings/notification/recipients/{id}
+DELETE /admin/v2.1/settings/notification/recipients/{id}
 ```
 
 #### Route Parameters
@@ -748,7 +748,7 @@ Deletes an existing notification recipient.
 Returns the full set of notification settings including the list of recipients.
 
 ```
-[200] GET /admin/v2.1/settings/notification
+GET /admin/v2.1/settings/notification
 ```
 
 #### Response
@@ -779,7 +779,7 @@ You can get the list of applications that are available to the tenant. From this
 Returns a list of manageable applications by family and country code.
 
 ```
-[200] GET /admin/v2.1/manageableapplications
+GET /admin/v2.1/manageableapplications
 ```
 
 #### Response
@@ -803,7 +803,7 @@ Pass the application family name in the URL and a boolean in the body.
 - False - disables the access.
 
 ```
-[200] PUT /admin/v2.1/manageableapplications/{applicationFamily}/countries/{countryCode}
+PUT /admin/v2.1/manageableapplications/{applicationFamily}/countries/{countryCode}
 ```
 
 #### Route Parameters
@@ -838,7 +838,7 @@ Allows for the management of scheduled updates such as rescheduling the update t
 Get information about updates that have already been scheduled for a specific environment.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 #### Route Parameters
@@ -880,7 +880,7 @@ Returns information about the scheduled update for that environment.
 Reschedule an update, if able.
 
 ```
-[200] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
+PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 #### Route Parameters
@@ -921,7 +921,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-[200] GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 #### Route Parameters
@@ -958,7 +958,7 @@ Returns information about the support contact for that environment.
 Sets the support contact information for a specified environment
 
 ```
-[200] PUT /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 #### Route Parameters
@@ -1008,7 +1008,7 @@ Enables the ability to report that an environment isn't accessible and may requi
 Gets the list of supported categories of outages
 
 ```
-[200] GET /admin/v2.1/support/outageTypes
+GET /admin/v2.1/support/outageTypes
 ```
 
 #### Response
@@ -1035,7 +1035,7 @@ Returns a list with information about the supported outage types for reporting
 Gets the list of metadata about questions that need to be answered when reporting an environment outage
 
 ```
-[200] GET /admin/v2.1/support/outageTypes/{outageType}/outageQuestions
+GET /admin/v2.1/support/outageTypes/{outageType}/outageQuestions
 ```
 
 #### Response
@@ -1069,7 +1069,7 @@ Returns the list of question metadata for the provided outage type
 Gets the list of outages that have been previously reported 
 
 ```
-[200] GET /admin/v2.1/support/reportedoutages
+GET /admin/v2.1/support/reportedoutages
 ```
 
 #### Response
@@ -1102,7 +1102,7 @@ Returns the list of outages reported across all environments for the calling ten
 Initiates an outage report indicating that an environment isn't accessible
 
 ```
-[200] GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
 #### Route Parameters
@@ -1154,7 +1154,7 @@ Allows for the export of an environment's Azure database. Databases are exported
 Gets information about the number of exports allowed per month and the amount remaining.
 
 ```
-[200] GET /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+GET /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
 #### Route Parameters
@@ -1184,7 +1184,7 @@ Returns the metrics around the current month's database exports.
 Starts the export of an environment's database to a provided Azure storage account
 
 ```
-[200] POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -1217,7 +1217,7 @@ Starts the export of an environment's database to a provided Azure storage accou
 Gets information about the exports that have been done within a provided time frame, for which environment, and by whom.
 
 ```
-[200] POST /admin/v2.1/exports/history?start={startTime}&end={endTime}
+POST /admin/v2.1/exports/history?start={startTime}&end={endTime}
 ```
 
 #### Query parameters
@@ -1283,13 +1283,19 @@ Returns a detailed list of the database exports that occurred within the provide
 
 Manage the apps that are installed on the environment.
 
-### Get Apps 
+### Get Installed Apps 
 
-Get information about apps that installed in the environment.
+Get information about apps that are installed on the environment.
 
 ```
-[200] GET /admin/v2.1/applications/environments/{environmentName}/apps
+GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps
 ```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment.
 
 #### Response
 Returns information about the apps installed on the environment.
@@ -1312,13 +1318,19 @@ Returns information about the apps installed on the environment.
 
 ```
 
-### Get Available Updates 
+### Get Available App Updates 
 
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-[200] GET /admin/v2.1/applications/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps/availableUpdates
 ```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment.
 
 #### Response
 
@@ -1352,14 +1364,22 @@ Get information about new app versions that are available for apps currently ins
 Schedules the installation of an app update version. The update will be installed as soon as a time slot is available.
 
 ```
-GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
+POST /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps/{appId}/update
 ```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment.
+
+`appId` - Id of the targeted app.
 
 #### Body
 
 ```
 { 
-"targetVersion": "1.3.0.1" 
+    "targetVersion": string // Version the installed app should be updated to
 }
 ```
 
@@ -1367,43 +1387,55 @@ GET /{applicationType}/environments/{environmentName}/apps/{app_id}/update
 
 Returns information about the scheduled app update request.
 ```
-[ 
 { 
-"id": "e9f4975f-f075-4804-9859-b044aa9a2311", 
-"createdOn": "2020-01-20T15:54:06.1172006Z", 
-"status": "scheduled", 
-"targetVersion": "1.3.0.1", 
-"type": "update" 
+    "id": Guid, // Id of the operation used for tracking the update request
+    "createdOn": string, // Date and time the request was created
+    "status": string, // (enum | "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped")
+    "targetVersion": string, // Version the installed app will be updated to
+    "type": string // The type of app operation
 } 
-] 
 ```
 
-### Get Operation
+### Get App Operations
 
-Gets information about app update installations.
-
-```
-GET /{applicationType}/environments/{environmentName}/apps/{app_id}/operations/[{id}]
-```
-
-#### Response (single operation)
-
-Returns information about the installation of the app update.
+Gets information about app update operations for the specified app.
 
 ```
-[ 
-{ 
-"id": "e9f4975f-f075-4804-9859-b044aa9a2311", 
-"createdOn": "2020-01-20T15:54:06.1172006Z", 
-"startedOn": "2020-01-20T15:54:36.1234567Z", 
-"completedOn": "..", 
-"status": "scheduled|running|succeeded|failed|canceled|skipped", 
-"sourceVersion": "1.2.3.4", 
-"targetVersion": "1.3.0.1", 
-"type": "update", 
-"errorMessage": "<string>" 
-} 
-] 
+GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment.
+
+`appId` - Id of the targeted app.
+
+`operationId` - Id of the app update operation. Used for getting information about a specific operation.
+
+#### Response
+
+Returns the list of app update operations for the specified app.
+*Note*: `operationId` is provided, the single operation is returned instead.
+
+```
+{
+    "value":
+    [ 
+        { 
+            "id": Guid,  // Id of the operation
+            "createdOn": string, // Date and time the request was created
+            "startedOn": string, // Date and time the installation process started
+            "completedOn": string, // Date and time the installation process completed
+            "status": string, // (enum | "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped")
+            "sourceVersion": string, // Version of the app that was installed before the installation process started
+            "targetVersion": string, // Version the installed app will be updated to
+            "type": string, // The type of app operation
+            "errorMessage": string // The error message provided when update installation fails
+        } 
+    ] 
+}
 ```
 
 ## Session Management
@@ -1417,7 +1449,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-[GET] applications/{applicationType}/environments/{environmentName}/sessions
+GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/sessions
 ```
 
 #### Response
@@ -1450,7 +1482,7 @@ Gets active sessions for an environment.
 Gets session information for a specific session id.
 
 ```
-[GET] applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 #### Response
@@ -1479,7 +1511,7 @@ Gets session information for a specific session id.
 Terminates and deletes an active session.
 
 ```
-[DELETE] applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.1/applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also
