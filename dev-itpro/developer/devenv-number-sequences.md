@@ -58,7 +58,7 @@ NumberSequence.Insert('MyCompanySequence', 0, 1, true); ​
 ​
 // Verifies whether a specific NumberSequence object exists, and if so, deletes it
 
-if NumberSequence.Exists.('MySequence', true) then
+if NumberSequence.Exists('MySequence', true) then
     NumberSequence.Delete('MySequence',true);​
 ​
 // Gets and returns the current value in a NumberSequence object
