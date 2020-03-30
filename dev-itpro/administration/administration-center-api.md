@@ -109,7 +109,7 @@ GET /admin/v2.1/applications/environments[?skipDbSize={bool}]
 Returns a list of the environments for the specified application family.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/environments[?skipDbSize={bool}]
+GET /admin/v2.1/applications/{applicationFamily}/environments[?skipDbSize={bool}]
 ```
 
 #### Route Parameters
@@ -158,7 +158,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[?skipDbSize={bool}]
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[?skipDbSize={bool}]
 ```
 
 #### Route Parameters
@@ -205,7 +205,7 @@ Returns a single environment if exists.
 Creates a new environment with sample data.
 
 ```
-[201] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -254,7 +254,8 @@ Returns newly created environment.
 
 #### Expected Error Codes
 
-`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
+`
+DoesNotExist` - the provided value for the application family wasn't found
 
 `destinationApplicationServiceNotFound` -- a suitable destination service couldn't be found to put the environment. Occurs if missing or if the tenant doesn't have access to the target application.
 
@@ -295,7 +296,7 @@ Returns newly created environment.
 Gets size of a database for a specific environment.
 
 ```
-[GET] applications/{applicationType}/environments/{environmentName}/dbsize
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/dbsize
 ```
 
 #### Response
@@ -310,7 +311,7 @@ Gets size of a database for a specific environment.
 Creates a new environment with a copy of another environment's data.
 
 ```
-[201] POST /admin/v2.1/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.1/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 #### Route Parameters
@@ -404,7 +405,7 @@ Returns newly copied environment.
 Deletes the specified environment. Warning: A production environment shouldn't be deleted.
 
 ```
-[202] DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -440,7 +441,7 @@ The API endpoints here should be utilized to determine what values can be used f
 Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
 
 ```
-[200] GET /admin/v2.1/applications/
+GET /admin/v2.1/applications/
 ```
 
 #### Response
@@ -466,7 +467,7 @@ Get a list of the currently available application families, the available countr
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+GET /admin/v2.1/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
 #### Route Parameters
@@ -496,7 +497,7 @@ Allows you to manage environment specific settings such as the environment's App
 Returns the update settings for the environment.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 #### Route Parameters
@@ -528,7 +529,7 @@ Returns the environment's update settings, or "null" if none exist
 Sets the update window start and end times.
 
 ```
-[200] PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 #### Route Parameters
@@ -575,7 +576,7 @@ Returns the updated settings
 Sets the key an environment uses for Azure AppInsights.
 
 ```
-[202] POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 #### Route Parameters
@@ -610,7 +611,7 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
 
 ```
-[200] GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
 #### Route Parameters
@@ -1288,7 +1289,7 @@ Manage the apps that are installed on the environment.
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 #### Route Parameters
@@ -1323,7 +1324,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 #### Route Parameters
@@ -1364,7 +1365,7 @@ GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/ap
 Schedules the installation of an app update version. The update will be installed as soon as a time slot is available.
 
 ```
-POST /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 #### Route Parameters
@@ -1401,7 +1402,7 @@ Returns information about the scheduled app update request.
 Gets information about app update operations for the specified app.
 
 ```
-GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 #### Route Parameters
@@ -1449,7 +1450,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/sessions
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
 #### Response
@@ -1482,7 +1483,7 @@ GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/se
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 #### Response
@@ -1511,7 +1512,7 @@ GET /admin/v2.1/applications/{applicationType}/environments/{environmentName}/se
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.1/applications/{applicationType}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also
