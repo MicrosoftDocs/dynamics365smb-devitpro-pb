@@ -26,8 +26,10 @@ There are a number of limitations to be aware of:
 - The debugger launches a new client instance each time you press **F5**. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 - Pausing the debugging session is not supported.
 
+To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
+
 > [!TIP]  
-> To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
+> To be able to debug an online environment with an Embed app published in it, make sure to specify the "applicationFamily" parameter in your launch.json file. You define the application family for your Embed app during onboarding. 
 
 ## Breakpoints
   
