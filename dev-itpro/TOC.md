@@ -67,7 +67,7 @@
 ##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 ##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 ### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Cloud Solution Provider program](/partner-center/csp-overview)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
