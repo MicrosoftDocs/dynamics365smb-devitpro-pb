@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/11/2019
+ms.date: 04/01/2020
 ---
 # FAQ About the Windows Client and Business Central
 

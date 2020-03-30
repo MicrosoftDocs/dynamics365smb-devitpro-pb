@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 03/19/2020
+ms.date: 04/01/2020
 ---
 
 # Configure Context-Sensitive Help
