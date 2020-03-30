@@ -932,10 +932,12 @@ catch [System.Net.WebException]
     $reader = New-Object System.IO.StreamReader($respStream)
     $respBody = $reader.ReadToEnd() | ConvertFrom-Json | ConvertTo-Json -Depth 100
     $reader.Close();
+    Write-Error $Exception.Response.Headers["ms-correlation-x"]
     Write-Error $Exception.Message
     Write-Error $respBody -ErrorAction Stop
 }
 ```
+Please make sure you provide full output in textual format when reporting the issues to Microsoft. 
 
 ## See Also
 
