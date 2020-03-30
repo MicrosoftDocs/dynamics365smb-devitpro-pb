@@ -442,7 +442,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
 ### To create the integration table extension for table "CRM Contact" (ID 5342)
 
 1. Create a new AL extension.
-2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#To-create-the-integration-table-for-the-worker-entity-in-business-central).
+2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#to-create-the-integration-table-for-the-worker-entity-in-business-central).
 3. In PowerShell, run the tool with the following arguments:
 
     ```  

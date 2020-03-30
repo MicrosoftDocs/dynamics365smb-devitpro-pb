@@ -41,7 +41,7 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use **Ctrl+Shift+P** and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
-+ Use **F2** to rename objects, types etc. For more information, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md#Editing-in-Visual-Studio-Code).
++ Use **F2** to rename objects, types etc. For more information, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
 
 
 ## JSON file settings

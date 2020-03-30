@@ -32,4 +32,4 @@ This property is used when you specify **CDS** in the **TableType** property. Th
 ## See Also  
 [Properties](devenv-properties.md)  
 [Table Properties](devenv-table-properties.md)  
-[AL Proxy Table Generator](devenv-al-table-proxy-generator.md)  
+[AL Proxy Table Generator](../devenv-al-table-proxy-generator.md)  
