@@ -35,7 +35,7 @@ finsql.exe Command=generatesymbolreference, Database="Demo Database NAV (11-0)",
 ```
 <br>
 
-> [TIP]  
+> [!TIP]  
 > The finsql.exe includes several parameters that you can set to suit you environment. For more information, see [Using the Development Environment from the Command Prompt](../cside/cside-command-prompt.md). 
 
 This is a lengthy operation. When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.
