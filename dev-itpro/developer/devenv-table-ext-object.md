@@ -85,10 +85,8 @@ tableextension 50115 RetailWinterSportsStore extends Customer
 }
 ```
 
-## Applies to
-Tables
-
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  

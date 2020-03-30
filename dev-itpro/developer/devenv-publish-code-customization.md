@@ -16,22 +16,23 @@ ms.author: solsen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This topic describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server. 
+This topic describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises and publish the code-customized Base Application to the local server. 
 
 > [!IMPORTANT]  
 > Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
 
 > [!NOTE]  
-> The steps in this topic are not validated against a Docker environment. If you are running the on-prem installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
+> The steps in this topic are not validated against a Docker environment. If you are running the on-premises installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
 
 ## Prerequisites
+
 Make sure to have the following prerequisites installed to be able to follow the steps in this topic.
 
-- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed
+- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises with the AL Language Development Environment option installed
 - Visual Studio Code
 - The AL Language extension
 
-## To publish a code customization for Business Central on-prem
+## To publish a code customization for Business Central on-premises
 
 1. Get the Base Application source from the `/Applications/BaseApp/Source` folder on the DVD.
 2. Unzip the *BaseApplication.source.zip* file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
