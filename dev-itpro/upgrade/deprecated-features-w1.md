@@ -112,10 +112,10 @@ Web Services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has se
 
 However, basing integrations on UI page-based web services has some significant shortcomings: 
 
-- *No versioning.* The contract can be changed at runtime, during upgrade, or if an extension adds fields to the page. Consumers depend on a stable contract.  
-- *Performance.* UI page-based services carry the overhead as it was never designed or optimized for responding to API requests  
-- *No separation.* Tightly coupled to the 'no versioning' there is no name space support, enabling separation of APIs. Another aspect is the tight coupling to the UI. 
-- *No webhooks.* Eventing or Async programming styles are not supported, as webhooks are not supported on the UI pages. 
+- *No versioning* The contract can be changed at runtime, during upgrade, or if an extension adds fields to the page. Consumers depend on a stable contract.  
+- *Performance* UI page-based services carry the overhead as it was never designed or optimized for responding to API requests  
+- *No separation* Tightly coupled to the 'no versioning' there is no name space support, enabling separation of APIs. Another aspect is the tight coupling to the UI. 
+- *No webhooks* Eventing or Async programming styles are not supported, as webhooks are not supported on the UI pages. 
 
 APIs (Page Type = API and Query) provide a more efficient way of exposing APIs, with no given dependency on UI elements. It provides OData v4, API namespace, versioning, and webhooks support. 
 
