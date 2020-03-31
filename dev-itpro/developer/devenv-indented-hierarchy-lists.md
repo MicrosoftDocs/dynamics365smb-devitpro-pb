@@ -19,9 +19,10 @@ Using the indentation properties in AL, you can display rows in a parent-child s
 
 ![Fixed indented list](media/static-tree.png "Fixed indented list")
 
-A row that's indented from a row above is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
+A row that's indented from a row above it is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
+
 
 ### Sample table and page
 
@@ -100,7 +101,7 @@ In the figure, indentation is applied to the second column. Setting up the fixed
 
 - The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. You set the property to either a field in the page's source table or to a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
-- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
+- The [IndentationControls property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
 
 ### Example
 
@@ -172,7 +173,10 @@ Setting up a collapsible hierarchy is similar to the fixed indented list, except
 
 - Like in fixed indented hierarchy, the [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) is an integer data type field or variable that determines which records get indented and by how much.
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) makes the hierarchy collapsible.
-- The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.
+- The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.  
+
+Unlike fixed indented lists, a collapsible hierarchy always indents the left-most visible column in the repeater. If users customize the user interface and move another column to display first, that column will be indented instead.  
+
 
 ### Example
 
@@ -250,6 +254,8 @@ When using an indented hierarchy, consider the following behavior:
 
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
+
+- Indentation is used to visually communicate structure, without modifying the table of records itself. There is no tightly-defined *parent-child* relationship between records, so you must implement additional logic if records need to relate together. For example, if a user deletes a parent record, Business Central will not delete all of its child records.  
 
 
 ## See Also
