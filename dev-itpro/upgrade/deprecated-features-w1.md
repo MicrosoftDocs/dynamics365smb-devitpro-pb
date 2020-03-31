@@ -105,31 +105,6 @@ OAuth2 will be the only authentication option for SaaS. OAuth flows currently su
 |Removed (for SaaS)| Basic auth|
 |Removed | ODatav3|
 
-## Deprecated Features in 2022 release wave 1
-
-### Deprecating UI Page-Based Web Services  
-Web Services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has served as a key integration vehicle for many years. Users could expose any UI page as a web service. Fields could be added and removed at runtime, thereby exposing a different payload fitting the specific scenario.  
-
-However, basing integrations on UI page-based web services has some significant shortcomings: 
-
-- *No versioning* The contract can be changed at runtime, during upgrade, or if an extension adds fields to the page. Consumers depend on a stable contract.  
-- *Performance* UI page-based services carry the overhead as it was never designed or optimized for responding to API requests  
-- *No separation* Tightly coupled to the 'no versioning' there is no name space support, enabling separation of APIs. Another aspect is the tight coupling to the UI. 
-- *No webhooks* Eventing or Async programming styles are not supported, as webhooks are not supported on the UI pages. 
-
-APIs (Page Type = API and Query) provide a more efficient way of exposing APIs, with no given dependency on UI elements. It provides OData v4, API namespace, versioning, and webhooks support. 
-
-### Deprecating SOAP 
-New integrations to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are all using REST, with OData as the protocol. This is mainly due to simplicity, flexibility, and performance. 
-
-A migration path is being worked on where OData unbound actions be can be exposed. The same API principles will apply for unbound actions as for APIs, with support for versioning and namespace support.
-<br>
-
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed | Web services|
-|Removed | SOAP |
-
 ## Objects that have been marked as obsolete
 Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 <!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
