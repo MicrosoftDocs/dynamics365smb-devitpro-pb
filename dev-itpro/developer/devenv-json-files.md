@@ -88,7 +88,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy. This parameter must contain a tenant AAD domain name, for example `mycustomer.onmicrosoft.com`.|
 |sandboxName|No|Specifies which sandbox to use in cases where multiple sandboxes are owned by the same tenant.|
-|applicationFamily|No|The application family in the cloud server, for example Fabrikam. This property is reserved for Embed apps.|
+|applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example Fabrikam. This property is reserved for Embed apps.|
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
 |breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
 |launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value is not specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session is not started unless you launch your extension in debugging mode.|
