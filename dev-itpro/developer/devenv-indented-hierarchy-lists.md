@@ -173,7 +173,10 @@ Setting up a collapsible hierarchy is similar to the fixed indented list, except
 
 - Like in fixed indented hierarchy, the [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) is an integer data type field or variable that determines which records get indented and by how much.
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) makes the hierarchy collapsible.
-- The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.
+- The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.  
+
+Unlike fixed indented lists, a collapsible hierarchy always indents the first column in the repeater. If users customize the user interface and move another column to be first, that column will be indented.  
+
 
 ### Example
 
