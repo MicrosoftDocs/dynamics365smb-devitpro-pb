@@ -153,6 +153,9 @@ The display type icons let you preview the changes you made on desktop, tablet, 
 
 Accessing Designer is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. If a user is assigned this permission set, then Designer is available for the user in the client. To prohibit a user from using Designer, just remove the user from the **D365 EXTENSION MGT** permission set.
 
+> [!NOTE]  
+> It is important that the **D365 EXTENSION MGT** permission set does not have a company specified; otherwise the user will not be able to access Designer.
+
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
