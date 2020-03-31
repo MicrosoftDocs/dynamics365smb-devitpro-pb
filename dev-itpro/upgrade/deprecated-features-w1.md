@@ -94,14 +94,10 @@ You can print documents such as invoices automatically, without prompting the us
 ## Deprecated Features in 2021 release wave 1
 
 ### Deprecating OData v3 
-OData v3 has been superseded by OData v4. OData v3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.  
-
-It is recommended that integrations are migrated to OData v4 as soon as possible.  
+OData v3 has been superseded by OData v4. OData v3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It is recommended that integrations are migrated to OData v4 as soon as possible.  
 
 ### Deprecating Basic Auth / Web Service Access Keys for SaaS 
-OAuth2 will be the only authentication option for SaaS. OAuth flows currently supported are Implicit and Auth Token. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. 
-
-For on-premises Basic Auth will remain an option for the time being. 
+OAuth2 will be the only authentication option for SaaS. OAuth flows currently supported are Implicit and Auth Token. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises Basic Auth will remain an option for the time being. 
 <br>
 
 |Moved, Removed, or Replaced? |Why?|
