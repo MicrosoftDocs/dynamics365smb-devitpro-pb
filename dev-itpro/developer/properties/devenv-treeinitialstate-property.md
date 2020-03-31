@@ -27,13 +27,20 @@ TreeInitialState = CollapseAll;
   
 ## Property Value
 
- **CollapseAll** sets the list to display as collapsed; **ExpandAll** sets the list to display as expanded. The default is **false**.  
+ **CollapseAll** sets the list to display as collapsed; **ExpandAll** sets the list to display as expanded. The default is **ExpandAll**.  
 
 ## Remarks
 
-Users can change whether a list opens collapsed or expanded. To change behavior, they select the **Toggle Expand/Collapse All** on the first column heading in the list. If they want to revert back to the default setting, they clear personalization of the page.
+The property specifies the starting state of a list. Users can change whether a list opens collapsed or expanded. To change behavior, they select **Toggle Expand/Collapse All** on the first column heading in the list or using the action in the left corner of the repeater. If they want to revert back to the default setting, they clear personalization of the page.
 
-For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
+### Choosing when to start collapsed
+
+Selecting the best value for the TreeInitialState property on a repeater is a balance between user experience and performance. Do consider the following when specifying a value:
+- Some business tasks naturally require users to start with a high-level overview of their data and then drill down to find deeply-nested records. Other tasks are more efficient when they start by displaying the full list which users just need to scroll through.
+- In general, lists that start fully expanded are loaded faster than lists that start collapsed. The performance difference is negligable on lists with few records, but indented lists with thousands of records will need to load significantly more records when the page opens or the data is refreshed.  
+
+For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).  
+
 
 ## Example
 
