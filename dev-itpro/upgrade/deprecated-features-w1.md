@@ -28,14 +28,14 @@ The next sections in this topic give a brief description of the deprecated featu
 ## Deprecated Features in 2021 release wave 1
 
 ### OData v3 
-The following feature will be Removed with Business Central 2021 release wave 1.
+The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Removed | OData v3 has been superseded by OData v4. OData v3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It is recommended that integrations are migrated to OData v4 as soon as possible.  |
 
 ### Basic Auth / Web Service Access Keys for SaaS 
-The following feature will be Removed with Business Central 2021 release wave 1.
+The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
