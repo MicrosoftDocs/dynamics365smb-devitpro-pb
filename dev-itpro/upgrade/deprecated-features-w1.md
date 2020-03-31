@@ -105,20 +105,6 @@ You can print documents such as invoices automatically, without prompting the us
 |---------|---------|
 |Removed| This feature was tied to the Windows Client, which is no longer available. |
 
-## Deprecated Features in 2021 release wave 1
-
-### Deprecating OData v3 
-OData v3 has been superseded by OData v4. OData v3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It is recommended that integrations are migrated to OData v4 as soon as possible.  
-
-### Deprecating Basic Auth / Web Service Access Keys for SaaS 
-OAuth2 will be the only authentication option for SaaS. OAuth flows currently supported are Implicit and Auth Token. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises Basic Auth will remain an option for the time being. 
-<br>
-
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed (for SaaS)| Basic auth|
-|Removed | ODatav3|
-
 ## Objects that have been marked as obsolete
 Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 <!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
