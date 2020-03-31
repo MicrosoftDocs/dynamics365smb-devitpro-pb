@@ -68,7 +68,7 @@ If a FastTab is expanded you see all the fields. If it is collapsed you just see
 ## Organizing compound content in a FastTab
 By using a Group control within a FastTab, you can group fields by similarity. This also gives you control over how fields are distributed between the left and right columns. When you group fields on a FastTab, the groups and not the individual fields are distributed evenly between the left and right columns.  
 
-Similarly, page parts placed within a FastTab are distributed evenly between the columns. For example, a FastTab containing two ListParts may be used to display two lists side-by-side for easier comparison. Learn more about [Page parts](devenv-importance-property.md)  
+Similarly, page parts placed within a FastTab are distributed evenly between the columns. For example, a FastTab containing two ListParts may be used to display two lists side-by-side for easier comparison. Learn more about [Page parts](devenv-importance-property.md).  
 
   
 ## Manually arranging fields in multiple rows and columns  
