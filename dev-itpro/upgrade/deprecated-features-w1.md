@@ -25,6 +25,20 @@ The next sections in this topic give a brief description of the deprecated featu
 |Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
 
+## Deprecated Features in 2021 release wave 1
+
+### Deprecating OData v3 
+OData v3 has been superseded by OData v4. OData v3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It is recommended that integrations are migrated to OData v4 as soon as possible.  
+
+### Deprecating Basic Auth / Web Service Access Keys for SaaS 
+OAuth2 will be the only authentication option for SaaS. OAuth flows currently supported are Implicit and Auth Token. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises Basic Auth will remain an option for the time being. 
+<br>
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed (for SaaS)| Basic auth|
+|Removed | ODatav3|
+
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as obsolete:pending in 2020 release wave 1.
 
