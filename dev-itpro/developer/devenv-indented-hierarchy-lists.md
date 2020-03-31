@@ -19,9 +19,10 @@ Using the indentation properties in AL, you can display rows in a parent-child s
 
 ![Fixed indented list](media/static-tree.png "Fixed indented list")
 
-A row that's indented from a row above is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
+A row that's indented from a row above it is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
+
 
 ### Sample table and page
 
@@ -250,6 +251,8 @@ When using an indented hierarchy, consider the following behavior:
 
 - When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
+
+- Indentation is used to visually communicate structure, without modifying the table of records itself. There is no tightly-defined *parent-child* relationship between records, so you must implement additional logic if records need to relate together. For example, if a user deletes a parent record, Business Central will not delete all of its child records.  
 
 
 ## See Also
