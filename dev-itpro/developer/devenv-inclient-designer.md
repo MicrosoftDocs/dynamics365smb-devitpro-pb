@@ -15,6 +15,10 @@ ms.author: solsen
 # Using Designer
 
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
+
+> [!IMPORTANT]  
+> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.
+
 Here is a quick overview of capabilities in **Designer**: 
 
 |Features      |Applies to    | 
