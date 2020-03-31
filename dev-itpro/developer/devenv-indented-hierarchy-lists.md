@@ -101,7 +101,7 @@ In the figure, indentation is applied to the second column. Setting up the fixed
 
 - The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. You set the property to either a field in the page's source table or to a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
-- The [IndentationControl property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
+- The [IndentationControls property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
 
 ### Example
 
@@ -175,7 +175,7 @@ Setting up a collapsible hierarchy is similar to the fixed indented list, except
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) makes the hierarchy collapsible.
 - The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.  
 
-Unlike fixed indented lists, a collapsible hierarchy always indents the first column in the repeater. If users customize the user interface and move another column to be first, that column will be indented.  
+Unlike fixed indented lists, a collapsible hierarchy always indents the left-most visible column in the repeater. If users customize the user interface and move another column to display first, that column will be indented instead.  
 
 
 ### Example
