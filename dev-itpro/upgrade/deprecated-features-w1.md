@@ -27,12 +27,12 @@ The next sections in this topic give a brief description of the deprecated featu
 
 ## Deprecated Features in 2021 release wave 1
 
-### Deprecating OData v3 
+### OData v3 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Removed | OData v3 has been superseded by OData v4. OData v3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It is recommended that integrations are migrated to OData v4 as soon as possible.  |
 
-### Deprecating Basic Auth / Web Service Access Keys for SaaS 
+### Basic Auth / Web Service Access Keys for SaaS 
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
