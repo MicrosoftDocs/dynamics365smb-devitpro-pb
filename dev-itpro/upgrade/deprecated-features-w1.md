@@ -105,7 +105,7 @@ OAuth2 will be the only authentication option for SaaS. OAuth flows currently su
 |Removed (for SaaS)| Basic auth|
 |Removed | ODatav3|
 
-## Deprecated Features in 2021 release wave 2
+## Deprecated Features in 2022 release wave 1
 
 ### Deprecating UI Page-Based Web Services  
 Web Services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has served as a key integration vehicle for many years. Users could expose any UI page as a web service. Fields could be added and removed at runtime, thereby exposing a different payload fitting the specific scenario.  
