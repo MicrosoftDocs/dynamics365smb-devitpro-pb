@@ -91,6 +91,21 @@ You can print documents such as invoices automatically, without prompting the us
 |---------|---------|
 |Removed| This feature was tied to the Windows Client, which is no longer available. |
 
+
+## Deprecated Features in 2021 release wave 1
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed (for SaaS)| Basic auth|
+|Removed | ODatav3|
+
+## Deprecated Features in 2021 release wave 2
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed | Web services|
+|Removed | SOAP |
+
 ## Objects that have been marked as obsolete
 Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 <!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
