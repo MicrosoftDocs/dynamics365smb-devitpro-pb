@@ -12,13 +12,14 @@ ms.prod: "dynamics365-business-central"
 # Implementing Location in AL
 You can access the location information of a device in the [!INCLUDE[webclient](includes/webclient.md)] in the browser and in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This functionality could be useful in scenarios such as calculating routes from the current location or planning the next round of customer visits based on their addresses.
 
+You can also add access to location information to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)].
 For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Show On Map` link on the `Customer Card`, which displays a map that shows where your customer is located based on the GPS coordinates and gives directions to reach its location. 
 
 > [!IMPORTANT]  
 >  The location information is only available on devices that have GPS capabilities. 
 
 ## Example
-This example illustrates add location information retrieval to a page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. The example implements a **GetLocation** action on a page that returns the GPS coordinates of the current customers address, but does not save this information to the database. 
+This example illustrates how to implement the location capability on a page in AL. The example implements a **GetLocation** action on a page that returns the GPS coordinates of the current customers address, but does not save this information to the database. 
 
 The example also shows how to specify options for the location functionality such as setting a timeout or enabling high accuracy. For more information about the different options that can be set for location, see [LocationOptions Overview](devenv-location-options.md). 
 
