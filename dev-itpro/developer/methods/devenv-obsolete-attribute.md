@@ -20,23 +20,23 @@ Specifies that a method or a variable is or will be deprecated in a future versi
 ```
   
 ## Example
-Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('(<Reason>,<tag>')]`.
-
-```
-codeunit 50143 SoonObsolete
-{
-    [Obsolete('Pending, Pending removal use X instead')]
-    local procedure MyProcedure()
-    var
-        myInt: Integer;
-    begin
-        //Make something happen
-    end;
-}
-
-```
-  
-## See Also  
-[Method Attributes](devenv-obsolete-attribute.md)  
-[ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
-[ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  
+S    tting the attribute on a method or a variable. Each method must be marked with `[Obsolete('(<Reason>,<tag>')]`.
+    
+`    `
+c    deunit 50143 SoonObsolete
+{    
+       [Obsolete('Pending, Pending removal use X instead')]
+       local procedure MyProcedure()
+       var
+           myInt: Integer;
+       begin
+           //Make something happen
+       end;
+}    
+    
+`    `
+     
+#     See Also  
+[    ethod Attributes](devenv-obsolete-attribute.md)  
+[    bsoleteState Property](../properties/devenv-obsoletestate-property.md)  
+[    bsoleteReason Property](../properties/devenv-obsoletereason-property.md)                  
