@@ -13,7 +13,7 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
 
-Sets whether the tree view on list page is collapsed or expanded when the page opens.
+Sets whether the indented hierarchy list is collapsed or expanded when the page opens.
 
 ## Syntax
 

@@ -23,6 +23,7 @@ A row that's indented from a row above is considered a *child* of that row. The 
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
+<!--
 ### Sample table and page
 
 To demonstrate how indented hierarchy works, we'll use a basic table and page. For more detailed implementations, see the **Item Categories** and **Chart of Accounts** pages. You find these pages in the base application.
@@ -89,7 +90,7 @@ page 50100 MyPage
 Typically, you wouldn't display the **Indent** field because it's only used for layout purposes.
 
 In the client, run the page and add records to the table. Be sure to set the **Indent** field.
-
+-->
 ## Setting up a fixed indented hierarchy
 
 In a fixed hierarchy, child rows are always shown, as illustrated in the following figure.
