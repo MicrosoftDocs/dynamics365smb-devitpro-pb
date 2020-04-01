@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 # RunOnClient Property
-Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] or [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].  
+Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE[webclient](../includes/webclient.md)] or [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].  
 
 ## Applies To  
  Variables of the **DotNet** data type.  
@@ -19,17 +19,13 @@ Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE
 ```
  [RunOnClient]
  Camera: DotNet UT_CameraProvider;
-```
-
-> [!NOTE]  
->  The [!INCLUDE[nav_web](../includes/nav_web_md.md)] does not support running the .NET object on the client if it contains functions that require a mobile client.
-This is only supported by Android, IOS and UWP clients.  
+``` 
 
 ## Remarks  
- The **RunOnClient** property is part of .NET interoperability in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] that you can use to expand your solution using .NET assemblies. With .NET interoperability, you can call methods and properties in a class of a .NET assembly from AL code by defining a variable for the class. When you set the **RunOnClient** property on a variable, then the class instance that is defined by the variable is instantiated on the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)].  
+ The **RunOnClient** property is used alongside whitelisted APIs that provide access to client-side device capabilities, such as camera or location.
 
-> [!NOTE]  
->  If you set the **RunOnClient** property on a DotNet variable, then the .NET assembly that is used by the variable must be installed on the machine that is running the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)].  
+ The **RunOnClient** property is part of .NET interoperability in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] that you can use to expand your solution using .NET assemblies. With .NET interoperability, you can call methods and properties in a class of a .NET assembly from AL code by defining a variable for the class. When you set the **RunOnClient** property on a variable, then the class instance that is defined by the variable is instantiated on the [!INCLUDE[webclient](../includes/webclient.md)].  
+
 <!--
 ## See Also  
  [Extending Microsoft Dynamics NAV Using Microsoft .NET Framework Interoperability](Extending-Microsoft-Dynamics-NAV-Using-Microsoft-.NET-Framework-Interoperability.md)   
@@ -37,4 +33,6 @@ This is only supported by Android, IOS and UWP clients.
 -->
 
 ## See Also
-[Properties](devenv-properties.md)
+[Properties](devenv-properties.md)  
+[Implementing Location in AL](../devenv-implement-location-al.md)  
+[Implementing Camera in AL](../devenv-implement-camera-al.md) 

@@ -117,6 +117,8 @@ dotnet
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
  [LocationOptions Overview](devenv-location-options.md)   
  [Implementing the Camera in AL](devenv-implement-camera-al.md)    
+ [RunOnClient property](properties/devenv-runonclient-property.md)  
+ [WithEvents property](properties/devenv-withevents-property.md)  
  <!--
  [Developing for the Business Central Mobile App](devenv-developing-for-the-business-central-mobile-app.md)   
  [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)-->
