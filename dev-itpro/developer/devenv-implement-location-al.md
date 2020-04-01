@@ -10,7 +10,7 @@ ms.prod: "dynamics365-business-central"
 ---
 
 # Implementing Location in AL
-You can access the location information of a device in the [!INCLUDE[webclient](includes/webclient.md)] in the browser and in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This functionality could be useful in scenarios such as calculating routes from the current location or planning the next round of customer visits based on their addresses.
+You can access the location information of a device from the [!INCLUDE[webclient](includes/webclient.md)] in the browser and from the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This functionality could be useful in scenarios such as calculating routes from the current location or planning the next round of customer visits based on their addresses.
 
 You can also add access to location information to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)].
 For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Show On Map` link on the `Customer Card`, which displays a map that shows where your customer is located based on the GPS coordinates and gives directions to reach its location. 
@@ -35,6 +35,7 @@ page 50101 "Card with Location Capability"
 
     Caption = 'Card Page';
     PageType = Card;
+    RefreshOnActivate = true;
     SourceTable = "Test Table";
 
     layout
