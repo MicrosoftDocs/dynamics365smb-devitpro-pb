@@ -8,15 +8,25 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
 ---
+
 # Implementing Location in AL
-This example illustrates how you can retrieve location information. The example implements a **GetLocation** action on the `Customer Card` page that returns the GPS coordinates of the current customers address. It does not save this information to the database. Scenarios in which this functionality could be useful would be displaying a map that shows where your customer is located based on the GPS coordinates. Or, functionality to plan the next round of customer visits based on the addresses of your customers.  
+You can access the location information of a device in the [!INCLUDE[webclient](includes/webclient.md)] in the browser and in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This functionality could be useful in scenarios such as calculating routes from the current location or planning the next round of customer visits based on their addresses.
+
+For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Show On Map` link on the `Customer Card`, which displays a map that shows where your customer is located based on the GPS coordinates and gives directions to reach its location. 
 
 > [!IMPORTANT]  
 >  The location information is only available on devices that have GPS capabilities. 
 
-The following code will create two variables; the `LocationAvailable` variable is a **Boolean** that checks whether the current device has GPS capabilities. The `Location` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add an action to the `Customer Card` page that lets the user retrieve the GPS coordinates. Finally, the trigger `Location::LocationChanged` is defined to handle the incoming location information.  
+## Example
+This example illustrates add location information retrieval to a page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. The example implements a **GetLocation** action on a page that returns the GPS coordinates of the current customers address, but does not save this information to the database. 
 
-This example requires that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
+The example also shows how to specify options for the location functionality such as setting a timeout or enabling high accuracy. For more information about the different options that can be set for location, see [LocationOptions Overview](devenv-location-options.md). 
+
+> [!NOTE]
+> To enable the location functionality, it is required that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
+
+The following code will create two variables; the `LocationAvailable` variable is a **Boolean** that checks whether the current device has GPS capabilities. The `Location` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add an action to the page that lets the user retrieve the GPS coordinates. Finally, the trigger `Location::LocationChanged` is defined to handle the incoming location information.  
+
 
 ```
 page 50101 "Card with Location Capability"
@@ -101,10 +111,10 @@ dotnet
 }
 ``` 
 
-You can now test the modified `Customer Card` page in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] from either a device with GPS capabilities.  
-
 ## See Also  
+[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
  [LocationOptions Overview](devenv-location-options.md)   
  [Implementing the Camera in AL](devenv-implement-camera-al.md)    
+ <!--
  [Developing for the Business Central Mobile App](devenv-developing-for-the-business-central-mobile-app.md)   
- [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)
+ [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)-->

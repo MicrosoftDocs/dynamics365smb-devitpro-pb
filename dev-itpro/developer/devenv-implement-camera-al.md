@@ -8,24 +8,25 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
 ---
-# Implementing the Camera in AL
-It is possible to access the camera of a device from a browser in the [!INCLUDE[webclient](includes/webclient.md)] and in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This allows the user to take pictures and handle them directly from the device.
 
-For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see `Item Picture` factbox on the the `Item Card`, which lets you take a picture of a specific item and store it with the item.  
+# Implementing the Camera in AL
+You can access the camera of a device in the [!INCLUDE[webclient](includes/webclient.md)] in the browser and in the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This allows the user to take pictures and handle them directly from the same device, and thereby improve accuracy and reduce end-to-end time.
+
+For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Picture` factbox on the `Item Card`, which lets you take a picture of a specific item and store it together with the item.  
   
 > [!IMPORTANT]  
 >  The camera access is only available on devices that have a camera. 
 
-You can specify options for the camera capability such as picture quality or source type. To read more about the different options that can be set for the camera, see [CameraOptions Overview](devenv-CameraOptions.md). 
-
 ## Example
 
-This example illustrates how you can add access to camera to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. It implements three actions; **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality** on the `Customer Card` page, but does not include code that saves the picture to the database.
+This example illustrates how you can add access to camera to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. It implements three actions on a page; **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality**, but does not include code that saves the picture to the database.
+
+The example also shows how to specify options for the camera capability such as picture quality or source type. For more information about the different options that can be set for the camera, see [CameraOptions Overview](devenv-Camera-options.md). 
 
 > [!NOTE]
-> To enable this functionality, it is required that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
+> To enable the camera functionality, it is required that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
-The following code will create two variables; the `CameraAvailable` variable is a **Boolean**  checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add actions to the `Customer Card` page that lets the user start the camera. Finally, the trigger `Camera::PictureAvailable` is defined to handle the incoming picture.  
+The following code will create two variables; the `CameraAvailable` variable is a **Boolean**  checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add actions to the  page that lets the user start the camera. Finally, the trigger `Camera::PictureAvailable` is defined to handle the incoming picture.  
 
 ```
 page 50101 "Card with Camera Capability"
@@ -149,8 +150,7 @@ dotnet
 
 ```
   
- You can now test the modified `Customer Card` page from a device with a camera.  
-  
 ## See Also  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
-[Implementing Location in AL](devenv-implement-location-al.md)
+[Implementing Location in AL](devenv-implement-location-al.md)  
+[CameraOptions Overview](devenv-Camera-options.md)
