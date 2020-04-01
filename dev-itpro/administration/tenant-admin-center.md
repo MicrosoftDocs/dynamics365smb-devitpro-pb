@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 03/20/2020
+ms.date: 04/01/2020
 ms.author: edupont
 ---
 # The Business Central Administration Center
@@ -53,6 +53,8 @@ In the administration center, you can [create and monitor environments](tenant-a
 
 Your partner can help you set up telemetry for production environments, including [integration with Application Insights in Azure](tenant-admin-center-telemetry.md).  
 
+### Cleaning up settings
+
 If your organization decides to switch to another partner, you must make sure that some settings that your current partner made in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. This includes the following settings:
 
 - Support contact details
@@ -85,7 +87,7 @@ As a partner, you can access the administration center from the Partner Dashboar
 
 You can also get to the administration center by using the URL of a tenant, as described in the previous section.
 
-In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and [submit support request](manage-technical-support.md#escalating-support-issues-to-microsoft) fo your customer.  
+In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and [submit support request](manage-technical-support.md#escalating-support-issues-to-microsoft) for your customer.  
 
 From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can access your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for troubleshooting, for example.  
 
@@ -94,13 +96,14 @@ From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)],
 
 ## See also
 
+[Production and Sandbox Environments](environment-types.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Tenant Notifications](tenant-admin-center-notifications.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Administration Center API](administration-center-api.md)  
 [Managing Technical Support](manage-technical-support.md)  
 [Business Central Data Security](../security/data-security.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  '''
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
 [Microsoft Partner Dashboard](https://partnercenter.microsoft.com/dashboard)  
 [Add a new customer in the Partner Center](/partner-center/add-a-new-customer)  
 [Assign licenses to users in the Partner Center](/partner-center/assign-licenses-to-users)  

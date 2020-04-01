@@ -3,7 +3,7 @@ title: "Creating a Word Layout Report"
 description: "Describes the steps involved in creating a report that uses a Word layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/31/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -32,7 +32,7 @@ To facilitate testing your report layout, the following simple example extends t
         WordLayout = 'MyWordReport.docx';
     }
     ```
-2. Build the extension (Ctrl+Shift+B) to generate the MyWordReport.docx file.
+2. Build the extension (**Ctrl+Shift+B**) to generate the MyWordReport.docx file.
 3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
     ```
     report 50124 MyWordReport
@@ -52,7 +52,7 @@ To facilitate testing your report layout, the following simple example extends t
         } 
     }
     ```
-4. Build the extension (Ctrl+Shift+B).
+4. Build the extension (**Ctrl+Shift+B**).
 5. Open the generated report layout file in Word.
 6. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
     > [!NOTE]  
@@ -61,7 +61,7 @@ To facilitate testing your report layout, the following simple example extends t
 8. Right-click on the **Customer** table, and in **Insert Content Control**, select **Repeating** to add the repeater data item.
 9. Right-click on the **Name** field and in **Insert Content Control**, select **Plain Text** to add the column as a text box.
 10. Save the report layout when you are done and then close it.
-11. Back in Visual Studio Code, press Ctrl+F5 to compile and run the report.  
+11. Back in Visual Studio Code, press **Ctrl+F5** to compile and run the report.  
 
 You will now see the generated report in preview mode.
 

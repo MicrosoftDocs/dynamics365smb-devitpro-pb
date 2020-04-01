@@ -3,7 +3,7 @@ title: "Number Sequences"
 description: "This topic describes how to create number sequences in AL code in Dynamics 365 Business Central." 
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,7 +58,7 @@ NumberSequence.Insert('MyCompanySequence', 0, 1, true); ​
 ​
 // Verifies whether a specific NumberSequence object exists, and if so, deletes it
 
-if NumberSequence.Exists.('MySequence', true) then
+if NumberSequence.Exists('MySequence', true) then
     NumberSequence.Delete('MySequence',true);​
 ​
 // Gets and returns the current value in a NumberSequence object

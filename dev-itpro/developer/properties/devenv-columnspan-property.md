@@ -1,22 +1,20 @@
 ---
 title: "ColumnSpan Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 0ea708dc-6fd4-499f-b24f-a981173cfdde
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
 # ColumnSpan Property
-Sets the number of columns that a field spans in a GridLayout control.  
+Sets the number of columns that a field spans in a Grid control.  
   
 ## Applies To  
-Field controls in a GridLayout control on a page.  
+Field controls in a Grid control on a page.  
   
 ## Property Values  
 An integer that specifies the number of columns to span the field.  
@@ -33,5 +31,7 @@ For example, the following figure illustrates a GridLayout control that consists
 
 ## See Also    
 [Properties](devenv-properties.md)  
-[Layout Property](devenv-layout-property.md)  
+[RowSpan Property](devenv-rowspan-property.md)  
+[GridLayout Property](devenv-gridlayout-property.md)
+<!--[Layout Property](devenv-layout-property.md)-->
   

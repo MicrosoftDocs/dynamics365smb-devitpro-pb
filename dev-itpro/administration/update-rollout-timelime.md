@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 02/21/2020
+ms.date: 04/01/2020
 ms.author: edupont
 ---
 
@@ -29,7 +29,10 @@ The following table describes the milestones with example dates.
 |---------|------------|-----------|
 |Update is available|April 1, 2020|The date when the new major version of Business Central becomes generally available|
 |Update starts rolling out|April 8, 2020|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within allowed date range, to a date, which fits you better.|
-|Last scheduled update date|May 1, 2020|The last date you can choose to extend your upgrade date to.|
+|Last scheduled update date|May 30, 2020|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 20202 release wave 1.|
+
+> [!IMPORTANT]
+> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule. Specifically for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], existing customers have 60 days to upgrade after the new version is generally available. For a general overview, see [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule). For more information about the steps that you must take, see [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md).
 
 Dates and times differ significantly across countries and regions. Make sure that you have set up notifications in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] so that you are notified when the next major update is available.  
 

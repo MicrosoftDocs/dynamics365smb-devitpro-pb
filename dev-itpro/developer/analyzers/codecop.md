@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/16/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,6 +59,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0203](codecop-aa0203-donotnamemethodasfield.md)|To avoid confusion, do not give methods the same name as fields or actions in the same scope.|To avoid confusion, do not give methods the same name as fields or actions in the same scope.|The name of the method '{0}' is identical to a field or action in the same scope.|Design|Warning|true|
 |[AA0204](codecop-aa0204-donotnameglobalvarasfieldormethod.md)|To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope.|To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope.|The name of the global variable '{0}' is identical to a field, method or action in the same scope.|Design|Warning|true|
 |[AA0205](codecop-aa0205-variablesmustalwaysbeinitialized.md)|Variables must be initialized before usage.|Always initialize a variable before usage. This can improve readability and make debugging easier.|Use of unassigned variable '{0}'.|Design|Warning|true|
+|[AA0207](codecop-aa0207-eventsubscriberfunctionsmustbelocal.md)|The EventSubscriber method must be local.|The EventSubscriber method must be local.|The EventSubscriber method {0} must be local.|Design|Warning|true|
 |[AA0210](codecop-aa0210-suboptimalindex.md)|Avoid non-indexed fields into filtering.|Suboptimal index.|The table {0} does not contain the key with the field {1}.|Design|Info|true|
 |[AA0211](codecop-aa0211-calcfieldsonlyonflowfields.md)|Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob.|CalcFields should only be used for FlowFields or Blob fields|The CalcFields method should only be used with FlowFields or fields of type Blob. The field {0} is not a FlowField or of type Blob.|Design|Warning|true|
 |[AA0213](codecop-aa0213-obsoletejustification.md)|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|The {0} {1} must have specified ObsoleteState and ObsoleteReason.|Design|Warning|true|
@@ -76,6 +77,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0225](codecop-aa0225-captionmustbefilledonpageforfields.md)|You must specify a caption in the Caption property for Fields that exist on page objects.|You must specify a caption in the Caption property for Fields that exist on page objects.|The Caption property for {0} {1} must be filled in.|Localizability|Warning|true|
 |[AA0226](codecop-aa0226-captionlanguagevaluemustbefilled.md)|The value of the Caption property of Fields must be filled in.|The value of the Caption property of Fields must be filled in.|The value of the {0} Caption property for {1} {2} must be filled in.|Localizability|Warning|true|
 |[AA0227](codecop-aa0227-alwaysguardmethodswithunhandlederrorsinupgradecodeunits.md)|Optional return value should not be omitted in upgrade codeunits.|In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors.|Optional return value of the method should not be omitted in upgrade codeunits.|Design|Warning|true|
+|[AA0228](codecop-aa0228-thelocalmethodisdeclaredbutneverused.md)|The local method must be used; otherwise removed.|The local method must be used, otherwise the variable is not necessary.|The local method '{0}' is declared but never used.|Design|Warning|true|
 |[AA0230](codecop-aa0230-noversionnumberonbcassembliesdotnetvars.md)|Version should not be specified for internal assemblies.|Version number should not be specified for internal assemblies to avoid errors during upgrade procedures.|Version should not be specified for internal assembly '{0}'.|Design|Warning|true|
 |[AA0231](codecop-aa0231-donotusestrsubstnoinerrormessage.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method. Instead use the ability of the Error method to insert values into the string with placeholders.|Do not use the StrSubstNo or string concatenation as a parameter in the Error method.|Design|Warning|true|
 |[AA0232](codecop-aa0232-flowfieldoftableshouldbeindexed.md)|The FlowField of a table should be indexed.|You can potentially increase performance if fields that are used in FlowFields are added to SumIndexedFields of the corresponding key.|The FlowField {0} of {1} should be added to the SIFT key.|Design|Info|true|
