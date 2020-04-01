@@ -12,6 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Obsolete Attribute
+
 Specifies that a method or a variable is or will be deprecated in a future version. To mark objects and other elements of code, use the [ObsoleteState Property](../properties/devenv-obsoletestate-property.md) and [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md).
 
 ## Syntax  
@@ -21,21 +22,21 @@ Specifies that a method or a variable is or will be deprecated in a future versi
   
 ## Example
 Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('(<Reason>,<tag>')]`.
-
+    
 ```
 codeunit 50143 SoonObsolete
-{
-    [Obsolete('Pending, Pending removal use X instead')]
-    local procedure MyProcedure()
-    var
-        myInt: Integer;
-    begin
-        //Make something happen
-    end;
-}
-
+{    
+       [Obsolete('Pending, Pending removal use X instead')]
+       local procedure MyProcedure()
+       var
+           myInt: Integer;
+       begin
+           //Make something happen
+       end;
+}    
+    
 ```
-  
+     
 ## See Also  
 [Method Attributes](devenv-obsolete-attribute.md)  
 [ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
