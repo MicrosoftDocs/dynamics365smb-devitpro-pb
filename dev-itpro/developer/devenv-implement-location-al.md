@@ -60,6 +60,8 @@ page 50101 "Card with Location Capability"
 
                 trigger OnAction()
                 begin
+                    LocationOptions := LocationOptions.LocationOptions;
+                    LocationOptions.EnableHighAccuracy();
                     Location.RequestLocationAsync();
                 end;
             }
@@ -93,6 +95,7 @@ page 50101 "Card with Location Capability"
         [WithEvents]
         Location: DotNet LocationProvider;
         LocationAvailable: Boolean;
+        LocationOptions: DotNet UT_LocationOptions;
 }
 
 dotnet
@@ -106,6 +109,11 @@ dotnet
         }
 
         type("Microsoft.Dynamics.Nav.Client.Capabilities.Location"; Location)
+        {
+
+        }
+
+        type("Microsoft.Dynamics.Nav.Client.Capabilities.LocationOptions"; UT_LocationOptions)
         {
 
         }
