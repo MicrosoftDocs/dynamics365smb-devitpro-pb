@@ -25,7 +25,7 @@ Setting the attribute on a method or a variable. Each method must be marked with
 ```
 codeunit 50143 SoonObsolete
 {
-    [Obsolete('Do not use, Pending')]
+    [Obsolete('Pending, Pending removal use X instead')]
     local procedure MyProcedure()
     var
         myInt: Integer;
