@@ -28,12 +28,26 @@ This example illustrates how you can add access to camera to a specific page fro
 The following code will create two variables; the `CameraAvailable` variable is a **Boolean**  checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add actions to the `Customer Card` page that lets the user start the camera. Finally, the trigger `Camera::PictureAvailable` is defined to handle the incoming picture.  
 
 ```
-pageextension 50101 ImplementCameraCustCard extends "Customer Card"
+page 50101 "Card with Camera Capability"
 {
+
+    Caption = 'Card Page';
+    PageType = Card;
+    RefreshOnActivate = true;
+    SourceTable = "Test Table";
+
+    layout
+    {
+        area(content)
+        {
+            //...
+        }
+    }
 
     actions
     {
-        addafter("&Customer")
+        
+        area(Processing)
         {
             action(TakePicture)
             {
@@ -96,7 +110,8 @@ pageextension 50101 ImplementCameraCustCard extends "Customer Card"
     // The PictureName contains the name of the file including its extension on the device. 
     // The naming scheme depends on the device platform. 
     // The PictureFilePath contains the path to the picture in a temporary folder on the server for the current user.
-    trigger Camera::PictureAvailable(PictureName: Text; PictureFilePath: Text) handles the picture for when the camera has captured it and it has been uploaded.
+    // The PictureAvailable trigger handles the picture for when the camera has captured it and it has been uploaded.
+    trigger Camera::PictureAvailable(PictureName: Text; PictureFilePath: Text) 
     begin
         IncomingFile.Open(PictureFilePath);
         Message('Picture size: %1', IncomingFile.Len());
