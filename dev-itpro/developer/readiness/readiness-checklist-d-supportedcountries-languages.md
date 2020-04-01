@@ -3,14 +3,14 @@ title: "Supported Countries and Supported Languages"
 description: "Guidelines on supported countries and supported languages"
 author: v-liober
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# Supported Countries, Languages, App Version, App Release Date
+# Supported Countries, Languages, App Version, and App Release Date
 
 | Listing details | Description| Requirements |
 |-----------------|-------------|-------------|

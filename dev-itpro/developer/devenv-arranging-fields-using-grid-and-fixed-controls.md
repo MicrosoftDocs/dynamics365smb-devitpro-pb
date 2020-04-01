@@ -2,7 +2,7 @@
 title: Arranging Fields in Multiple Rows and Columns
 description: Arrange fields in rows and columns in a gird-like format using the Grid and Fixed controls.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 By default, page fields are arranged automatically in two columns. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format. This topic outlines the differences between the two controls to help you determine which control to use. 
 
 > [!IMPORTANT]
-> Arranging fields in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the Web client, fields can only be arranged in columns.
+> Arranging fields in rows only works in the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)]. In the Web client, fields can only be arranged in columns.
   
 ## Comparing Grid and Fixed controls  
  The Grid control is a new control and is the preferred method because it gives you more layout options. The following table outlines the Grid and Fixed control characteristics and their differences.  

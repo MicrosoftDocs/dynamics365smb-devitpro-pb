@@ -3,7 +3,7 @@ title: "Codeunit Object"
 description: "Description of the codeunit object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,8 @@ The codeunit can be used both as a direct call to `codeunit.run(customer)` or as
 ```
 codeunit 50113 CreateCustomer
 {
-    trigger OnRun();
     TableNo = Customer;
+    trigger OnRun();
     begin
         CheckSize(Rec);
     end;

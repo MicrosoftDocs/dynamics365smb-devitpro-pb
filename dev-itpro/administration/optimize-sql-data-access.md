@@ -1,7 +1,7 @@
 ---
 title: "Data Access"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,7 +61,7 @@ There is no longer a one-to-one correlation between the number of client connect
 
  Records are retrieved using Multiple Active Result Sets \(MARS\). methods such as NEXT, FIND\('-'\), FIND\('+'\), FIND\('>'\), and FIND\('\<'\) are generally faster with MARS than the server cursors that earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] used.  
 
-## Data read/write performance  
+## <a name="readwrite"></a>Data read/write performance  
 AL functions COUNT and AVERAGE formulas can use SIFT indexes. For more information, see [CALCSUMS method \(Record\)](../developer/methods-auto/record/record-CALCSUMS-method.md) and [CALCFIELDS method \(Record\)](../developer/methods-auto/record/record-CALCFIELDS-method.md). MIN and MAX formulas use SQL Server MIN and MAX functions exclusively.  
 
  RecordIds and SQL Variant columns in a table do not prevent the use of BULK inserts. For more information, see [Bulk Inserts](optimize-sql-bulk-inserts.md).  

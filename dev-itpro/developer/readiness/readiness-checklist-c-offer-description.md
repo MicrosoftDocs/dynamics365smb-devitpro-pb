@@ -3,7 +3,7 @@ title: "Offer Description"
 description: "Guidelines on offer description"
 author: v-liober
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -14,9 +14,9 @@ ms.author: v-liober
 
 | Offer Details  | Description| Requirements |
 |----------------|------------|--------------|
-| 2. **Offer Description** (How to format and structure paragraphs in your offer description) | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. | 	Required | 
+| 2. **Offer Description** (How to format and structure paragraphs in your offer description) | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. |     Required | 
 
-> [!NOTE] 
+> [!NOTE]  
 > The description can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added to the document section. 
 
 How to structure the paragraphs in your description? Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. 
@@ -32,7 +32,7 @@ To do so, your description should consist of 6 paragraphs (in the following orde
 
 By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
 
-How to format your description in the Cloud Partner Portal? The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. 
+How to format your description in Partner Center? The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. 
 
 When formatting the description of your offer please consider the following:
 - The description can max. be 3000 characters incl. spaces
@@ -40,9 +40,9 @@ When formatting the description of your offer please consider the following:
 
 The following html tags are allowed:
 - p, em, ul, li, ol and header tags.
-- Structure your description as small “easily readable” sections with headlines
+- Structure your description as small "easily readable" sections with headlines
 - List vital benefits as bullet points
-- Engage prospects by speaking directly to them using second person “you” language.
+- Engage prospects by speaking directly to them using second person "you" language.
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|
@@ -65,7 +65,7 @@ Use these html tags:
 
 | Offer Details | Description | Requirements |
 |---------------|-------------|--------------|
-| 2.B Offer Description **(Pain paragraph)** | Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a “pain-based” paragraph that call out the fears that they are facing. | Recommended  |
+| 2.B Offer Description **(Pain paragraph)** | Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a "pain-based" paragraph that call out the fears that they are facing. | Recommended  |
 
 How to structure the content in this paragraph?
 - Use this paragraph to clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.
@@ -92,7 +92,7 @@ How to structure the content in this paragraph?
 - When describing the potential value in specific, measurable business terms, you will appeal to both their desire and greed.
 
 Quantify impacts and gains. 
-- The more specific and concrete your promise of value is, the better. Abstract concepts such as “more efficiency, more productivity, transform your business” are not emotionally impactful or convincing, and they do not compel a prospect to act. Paint a picture of a possible experience that the prospect will immediately desire.
+- The more specific and concrete your promise of value is, the better. Abstract concepts such as "more efficiency, more productivity, transform your business" are not emotionally impactful or convincing, and they do not compel a prospect to act. Paint a picture of a possible experience that the prospect will immediately desire.
 - Avoid the temptation of simply listing features and app functionality.
 - If you make strong claims in the benefit paragraph, make sure you support them with proof.
 
@@ -111,11 +111,11 @@ shipping costs, discover trends and boost your brand reputation by always
 delivering on orders.*
 *Stop relying on basic spreadsheets that take hours of valuable time to
 complete. Turn anxiety into proactive control and manage this critical
-business process in minutes by using Microsoft’s Sales and Inventory
+business process in minutes by using Microsoft's Sales and Inventory
 Forecast extension.*
 
-| Offer Details                                               | Description                                       | Requirements |
-|-------------------------------------------------------------|---------------------------------------------------|--------------|
+| Offer Details |Description   | Requirements |
+|---------------|--------------|--------------|
 | 2.D Offer Description **(Benefits as bullet points paragraph)** | *How to structure the content in this paragraph?* Highlight your offers benefits by listing them as bullet points. | Recommended  |
 
 How to format this paragraph?* Format headline in bold 
@@ -136,16 +136,16 @@ Use these html tags:
 
 | Offer Details  | Description | Requirements |
 |----------------|------------|--------------|
-| 2.E Offer Description **(Closing Call to action paragraph)** | Round off your description with a strong “Closing Call to action” paragraph that urges customers to take action in order to realize your offer’s benefits. | Recommended  |
+| 2.E Offer Description **(Closing Call to action paragraph)** | Round off your description with a strong "Closing Call to action" paragraph that urges customers to take action in order to realize your offer's benefits. | Recommended  |
 
 Choose the type of Call to action that you want to include:
-- Calls to actions are active directions to your offer’s: Landing page, a link to a button at the storefront details and/or a “learn more” document
-- We recommend that you link to both a button and your offer’s unique app landing page in the closing call to action.
+- Calls to actions are active directions to your offer's: Landing page, a link to a button at the storefront details and/or a "learn more" document
+- We recommend that you link to both a button and your offer's unique app landing page in the closing call to action.
 
 How to structure the content in this paragraph?
 - We recommend that this paragraph is less than 200 words or 1,200 characters.
 - Insert your chosen call to action(s).
-- Highlight the action that you want users to take by formatting the wanted action in bold as well as linking to your app’s unique landing page (either through hyperlinking the landing page or including a sentence on “Learn more" about us here ["How to Create a Sales Landing Page"](readiness-how-to-create-sales-landing-page.md).
+- Highlight the action that you want users to take by formatting the wanted action in bold as well as linking to your app's unique landing page (either through hyperlinking the landing page or including a sentence on "Learn more" about us here ["How to Create a Sales Landing Page"](readiness-how-to-create-sales-landing-page.md).
 
 How to format this paragraph? Format this section as a paragraph
 - Use these html tags:
@@ -155,13 +155,13 @@ How to format this paragraph? Format this section as a paragraph
 > *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
 ## <a name="SupportedEditions"></a>Supported Editions Supported Countries Premium SKU 
-| Offer Details                                        | Description                                                                                                                                           | Requirements |
-|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details | Description | Requirements|
+|---------------|--------------|-------------|
 | 2.F Offer Description **(Supported editions paragraph)** | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
 
 How to structure the content in this paragraph?
 - Create a header 3 in the html tags and make it bold.
-- Call the header “Supported Editions”.
+- Call the header "Supported Editions".
 - Include a sentence that lists the edition(s) that your app supports.
 
 How to format this paragraph? Format headline in bold 
@@ -175,15 +175,15 @@ Format the paragraph
 > [!TIP]  
 > *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
 ## Supported Countries
-| Offer Details                                         | Description                                                                                                               | Requirements |
-|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details|Description | Requirements |
+|-----------|--------------|---------------|
 | 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
 
 Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here /dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
 
 How to structure the content in this paragraph?
 - Create a header 3 in the html tags and make it bold.
-- Call the header “Supported countries”.
+- Call the header "Supported countries".
 - Include a sentence that lists the countries that your app is available in.
 
 How to format this paragraph?
@@ -197,8 +197,8 @@ Format the paragraph
 > *Example:* *Supported countries:* *This app is available in: Australia, Austria, Belgium, Canada,* *Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United States.*
 
 > [!TIP]  
-> Example of a completed offer summary and offer description in the “Offer
-details” section of the Cloud Partner Portal.
+> Example of a completed offer summary and offer description in the "Offer
+details" section of Partner Center.
 
 Below is an enlarged picture of the entire offer description (cf. point 2.A-G)
 and the html tags used:

@@ -1,7 +1,7 @@
 ---
 title: "Security Filter Modes"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -121,7 +121,7 @@ Query objects and record objects, including both explicit record variables and i
 |Ignored|If you set the **SecurityFiltering** property on the record variable to **Ignored**, then the code behaves as if all security filters that are set do not exist for that instance of the record. Any of the **FIND** functions find all 100 records. The **DELETEALL** function deletes all 100 records. You can insert and modify records in any range, regardless of security filters.|  
 |Disallowed|If you set the **SecurityFiltering** property on the record variable to **Disallowed**, then as long as a security filter is set on the record, any code that uses the record variable causes an error.|  
 
-##  <a name="PerformanceImpact"></a> Performance impact of security filtering Mode
+##  <a name="PerformanceImpact"></a> Performance impact of security filtering mode
   
 Security filters are handled by SQL Server just like other filters that are applied by the user. They do not adversely affect performance unless the security filtering mode is **Validated**.
 

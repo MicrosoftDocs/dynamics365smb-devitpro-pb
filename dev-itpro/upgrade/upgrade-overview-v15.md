@@ -2,7 +2,7 @@
 title: Upgrade to Business Central 2019 Wave 2
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ ms.service: "dynamics365-business-central"
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 -->
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been completely replaced by AL. The 2019 release wave 2 is the first version that does not include the classic development environment (also known as C/SIDE). From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is now delivered as an AL in an extensions instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been completely replaced by AL. The 2019 release wave 2 is the first version that does not include the classic development environment (also known as C/SIDE). From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is now delivered as an AL extension instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
 
 ## Upgrade paths
 
@@ -26,9 +26,10 @@ When upgrading your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Sp
 
 ![Upgrade path on Business Central application](../developer/media/bc15-upgrade-paths.png "Upgrade paths")
 
-As mentioned, the recommended upgrade path for a customized solution is to uptake the version 15 Microsoft Base Application and System Application, and move all code customizations to extensions. However, we realize that the complexity of some solutions will make this path very difficult. If this path is not currently realistic for your solution, then we recommend as a minimum to upgrade to a version 15 customized base application. 
+As mentioned, the recommended upgrade path for a customized solution is to uptake the version 15 Microsoft Base Application and System Application, and move all code customizations to extensions. However, we realize that the complexity of some solutions will make this path very difficult. If this path is not currently realistic for your solution, then we recommend as a minimum to upgrade to a version 15 customized base application.
 
-Be aware that for each path, once the database has been synchronized and data upgraded, it becomes more difficult to bring your solution to the next path. This will require significant manual work until tooling is available in a future release.
+> [!IMPORTANT]
+> Be aware that for each path, once the database has been synchronized and data upgraded, it becomes more difficult to bring your solution to the next path. This will require significant manual work until tooling is available in a future release.
 
 For details about each path, see the following articles:
 
@@ -659,7 +660,7 @@ Symbols are the application programming interface between AL code and C/AL code.
 
 In version 14.0, with the base application being C/AL, there are three types of symbols: system, application, and test. System symbols contained references to the platform system objects. The application symbols contained references to the business application objects. The test symbols contained references to the test libraries used by Microsoft extensions.
 
-In version 15, with the move to AL, the only symbols required are the system systems, which are still provided on the version 15.0 installation media (DVD).
+In version 15, with the move to AL, the only symbols required are the system symbols, which are still provided on the version 15.0 installation media (DVD).
 
 ### Customization extensions
 Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
@@ -667,3 +668,4 @@ Customization extensions are AL extensions that add functionality to the base ap
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+[[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  

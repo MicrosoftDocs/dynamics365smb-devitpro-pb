@@ -2,7 +2,7 @@
 title: "Query Overview"
 description: "Description of the query object."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,3 +69,4 @@ end;
 [Query Properties](properties/devenv-query-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  

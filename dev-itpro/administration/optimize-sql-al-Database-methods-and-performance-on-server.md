@@ -1,7 +1,7 @@
 ---
 title: "AL Database Methods and Performance on SQL Server"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ IF FINDSET THEN
   UNTIL NEXT = 0;  
 ```  
   
-## CALCFIELDS, CALCSUMS, and COUNT  
+## <a name="calc"></a>CALCFIELDS, CALCSUMS, and COUNT  
  Each call to **CALCFIELDS**, **CALCFIELD**, **CALCSUMS**, or **CALCSUM** functions that calculates a sum requires a separate SQL statement unless the client has calculated the same sum or another sum that uses the same SumIndexFields or filters in a recent operation, and therefore, the result is cached.  
   
  Each **CALCFIELDS** or **CALCSUMS** request should be confined to use only one SIFT index. The SIFT index can only be used if:  

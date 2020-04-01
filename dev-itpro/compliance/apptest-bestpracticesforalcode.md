@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -12,16 +12,17 @@ ms.author: solsen
 ---
 
 # Best Practices for AL  
+
 This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
 > [!NOTE]  
 > If a best practice is not mentioned here, the PreCal rules listed [here](https://community.dynamics.com/nav/w/designpatterns/156.3-cal-coding-guidelines) apply.
 
 ## Extension structure 
-An extension is fully contained in a single folder. This folder often contains multiple files, such as app.json and launch.json files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
+An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
 
 ## File naming 
-Each file name has object name with only characters [A-Za-z0-9], object type and dot al, for file type.
+Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type.
 
 ### File naming notation
 Follow the syntax for file naming as shown below:
@@ -52,6 +53,7 @@ Use the listed abbreviations for each type of object in the file naming:
 |Profile   |Profile|
 
 ### Examples of file naming
+
 The following table illustrates how the file naming should look.
 
 |Object name|File name|
@@ -62,6 +64,7 @@ The following table illustrates how the file naming should look.
 
 
 ## Formatting
+
 We recommend keeping your AL code properly formatted as follows:
 - Use all lowercase letters for reserved language keywords. Built-in methods and types are not included in this rule because they are written using Pascal case. 
 - Use four spaces for indentation. 
@@ -118,7 +121,7 @@ Object names are prefixed. They start with the feature/group name, followed by t
 Inside an .al code file, the structure for all objects must follow the sequence below:
 
 1. Properties
-2. Object-specific constructs such as:
+2. Object-specific constructs such as
     *  Table fields
     *  Page layout
     *  Actions
@@ -141,9 +144,9 @@ var
 
 ## Variable naming 
 For variables they must:
-- Be named using PascalCase.
-- Have the `Temp` prefix if they are temporary variables.
-- Include the object name in the name (for objects).
+- Be named using PascalCase
+- Have the `Temp` prefix if they are temporary variables
+- Include the object name in the name (for objects)
 
 ### Example
 ```
@@ -155,7 +158,7 @@ Vendor: Record Vendor;
 To declare a method, follow the guidelines below: 
 
 - Include a space after a semicolon when declaring multiple arguments. 
-- Semicolons can be used at the end of the signature/method header. If you use a snippet,   the semicolons are not automatically added.
+- Semicolons can be used at the end of the signature/method header. If you use a snippet, the semicolons are not automatically added.
 - Methods are named as variables using Pascal case. However, this is not a mandatory rule. 
 - There must be a blank line between method declarations. If you format your code using the [AL Formatter](../developer/devenv-al-formatter.md) tool, the auto-formatter sets the blank line between procedures. 
 
@@ -175,7 +178,7 @@ end;
 ```
 
 ## Calling methods
-When calling a method, include one space after each command if you are passing multiple parameters. Parentheses must be specified when you are making a method call or system call such as: Init(), Modify(), Insert() etc. 
+When calling a method, include one space after each command if you are passing multiple parameters. Parentheses must be specified when you are making a method call or system call such as: `Init()`, `Modify()`, `Insert()` etc. 
 
 ### Example
 ```

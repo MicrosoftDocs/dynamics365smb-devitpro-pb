@@ -3,7 +3,7 @@ title: Inspecting Pages
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

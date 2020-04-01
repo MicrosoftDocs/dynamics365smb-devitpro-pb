@@ -2,7 +2,7 @@
 title: "List Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # List Data Type
-Represents a strongly typed list of objects that can be accessed by index.
+Represents a strongly typed list of ordered objects that can be accessed by index. Contrary to the Array data type, a List is unbounded, such that its dimension does not need to be specified upon declaration.
 
 
 
@@ -44,9 +44,18 @@ The following methods are available on instances of the List data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. 
+The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. Similarly, the List data type does not support holding instantiated records. For this purpose, use temporary tables.
 
 Lists are 1-based indexed, that is, the indexing of a List begins with 1.
+
+
+> [!WARNING]
+> Previously in C/AL, one would have typically used an in-memory temporary table to create an unbounded "array" data structure, as shown in the code below. In AL you use the List Data Type instead.
+> 
+> ```
+> listRec.Value := ‘Some Value’;​
+> listRec.INSERT();​
+> ```
 
 ## Example  
  In the following example, the variable `CustomerNames` is a list of Text values which represent customer names. The procedure `WorkWithListOfCustomers` displays how one would work with the List data type. The `Add` method is used to add the string `'John'` to the `CustomerNames` list. The `Contains` method is used to check whether the list contains the specified value, in this case, the string `'John'`. We continue by using the Message procedure to display a relevant message. 
@@ -71,3 +80,4 @@ end;
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[Dictionary Data Type](../dictionary/dictionary-data-type.md)

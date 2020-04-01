@@ -2,7 +2,7 @@
 title: "Deprecated Features in W1"
 author: bholtorf
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,15 +15,25 @@ caps.latest.revision: 16
 # Deprecated Features in W1
 This topic describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will change with future releases, and might not include each deprecated feature.
 
-Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for a variety of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative. 
+Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for a variety of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative.
 
 The next sections in this topic give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
 
 |State  |Examples  |
 |---------|---------|
-|Moved     |The capability has been moved from local functionality to W1 because it was no longer specific to one or more country versions. The capability was combined with other, related functionality, to eliminate redundancy.|
+|Moved     |The capability has been moved from local functionality to W1 because it was no longer specific to one or more country versions. The capability was combined with other related functionality to eliminate redundancy.|
 |Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
+
+## Deprecated Features in 2020 release wave 1
+The following feature was marked as obsolete:pending in 2020 release wave 1.
+
+### Best Price Calculations
+When you have recorded special prices and line discounts for sales and purchases, Business Central ensures that your profit on item trade is always optimal by automatically calculating the best price on sales and purchase documents and on job and item journal lines.
+
+|Moved, Removed, or Replaced?|Why?|
+|----|----|
+|Replaced|The functionality is replaced with new calculations that you can extend to include additional sources or calculation methods. The current capabilities will be available, and can be used in parallel with the new, until 2021 release wave 1. For more information, see [Extending Best Price Calculations](../developer/devenv-extending-best-price-calculations.md).|
 
 ## Deprecated Features in 2019 release wave 2
 The following sections describe the features that were deprecated in 2019 release wave 2.
@@ -36,7 +46,7 @@ You can use the bank data conversion service from AMC to convert bank data from 
 |Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](/dynamics365/business-central/ui-extensions-amc-banking).|
 
 ### The Windows Client
-You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Windows client that is installed on your computer. 
+You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Windows client that is installed on your computer.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
@@ -45,13 +55,23 @@ You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Win
 ### Reports 204-207
 You can generate external-facing documents, such as sales invoices and order confirmations, that you send to customers as PDF files.
 
+The reports in the 204-207 range are replaced by the following updated reports in the 1304 to 1307 range:
+
+- 204, Sales-Quote -> 1304, Standard Sales-Quote
+- 205, Order-Confirmation -> 1305, Standard Sales-Order Conf.
+- 206, Sales-Invoice -> 1306, Standard Sales-Invoice
+- 207, Credit-Memo -> 1307, Standard Sales-Credit Memo
+
+> [!NOTE]
+> The **No. of Copies** field is removed from the new reports because of performance reasons and because selection of the quantity to print works differently on modern printers. To print a report more than once, users can list the same report multiple times on the **Report Selection** page for the document type in question.
+
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Replaced|The reports in the 204-207 range are replaced by the reports in the 1304 to 1307 range. To avoid duplicated features, the reports in the 204-207 range will be removed.|
 <!--This is just stubbed in. Need the actual names of the reports and a better description of the information they provided.-->
 
 ### User Personalizations and Profile Configurations
-You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will save your changes. 
+You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will save your changes.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
@@ -72,13 +92,13 @@ You can print documents such as invoices automatically, without prompting the us
 |Removed| This feature was tied to the Windows Client, which is no longer available. |
 
 ## Objects that have been marked as obsolete
-Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
+Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 <!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
 
 ## Breaking Changes
 When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
 
-## Features that are available only in the online version 
+## Features that are available only in the online version
 <!--Should we include a section about this?-->
 Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises).
 

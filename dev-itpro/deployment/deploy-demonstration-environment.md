@@ -1,7 +1,7 @@
 ---
 title: "Deploying Business Central a Demonstration Environment"
 ms.custom: na
-ms.date: 11/06/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

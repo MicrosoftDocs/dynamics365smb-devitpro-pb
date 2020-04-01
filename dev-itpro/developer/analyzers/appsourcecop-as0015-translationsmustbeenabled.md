@@ -1,8 +1,8 @@
 ---
 title: "Please enable the TranslationFile feature in the app.json file for your project"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 01/06/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,12 @@ Please enable the TranslationFile feature in the app.json file for your project
 Please enable the TranslationFile feature in the app.json file for your project.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+To submit an app to AppSource, you must use XLIFF translation files. In the app.json file, the setting `"features": [ "TranslationFile" ]` must be enabled. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Working with Translation Files](../devenv-work-with-translation-files.md)  
