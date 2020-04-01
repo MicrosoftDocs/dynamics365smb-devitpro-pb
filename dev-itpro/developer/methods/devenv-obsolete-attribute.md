@@ -16,16 +16,16 @@ Specifies that a method or a variable is or will be deprecated in a future versi
 
 ## Syntax  
 ```  
-[Obsolete('<optional message>')]
+[Obsolete('(<Reason>,<tag>')]
 ```
   
 ## Example
-Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('<optional message')]`.
+Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('(<Reason>,<tag>')]`.
 
 ```
 codeunit 50143 SoonObsolete
 {
-    [Obsolete('Do not use, plan to deprecate this.')]
+    [Obsolete('Pending, Pending removal use X instead')]
     local procedure MyProcedure()
     var
         myInt: Integer;

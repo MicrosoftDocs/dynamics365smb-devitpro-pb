@@ -27,7 +27,7 @@ You can choose from the following action menus to place the actions in the speci
 |Navigate menu|`area(navigation)` |List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
 |Report menu|`area(reporting)` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
   
-The following Actions are related to the Role Center page.
+The following actions are related to the Role Center page.
 
 |Area |Syntax |Used on |Description |Example |  
 |-----|----------------|-------|-----------|-------| 

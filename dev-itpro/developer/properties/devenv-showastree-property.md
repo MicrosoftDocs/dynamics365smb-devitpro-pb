@@ -11,7 +11,7 @@ author: jswymer
 ---
 # ShowAsTree Property
 
-Sets a list page to display records (rows) in an indented hierarchy that can be collapsed and expanded. This structure is commonly referred to as the *tree view*.
+Sets a list page to display records (rows) in an indented hierarchy that can be collapsed and expanded.
 
 ## Syntax
 
