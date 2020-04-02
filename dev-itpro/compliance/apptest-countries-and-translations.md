@@ -38,7 +38,6 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Hong Kong SAR|Partner|Available|
 |Hungary|Partner|Available|
 |Iceland|Microsoft|Available|
-|India|Partner|Available|
 |Indonesia|Partner|Available|
 |Italy|Microsoft|Available|
 |Japan|Partner|Available|
