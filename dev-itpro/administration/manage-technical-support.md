@@ -19,11 +19,11 @@ If users report that they are having a problem with [!INCLUDE [prodshort](../dev
 
 The reselling partner can log in to their customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated admin for troubleshooting, such as by creating a sandbox environment based on production data, and then troubleshooting in that environment.  
 
-Both internal administrators and the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
+Both internal administrators and the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and updates.  
 
 ## Internal administrators
 
-As the internal administrator, you can work with users to identify solutions or workarounds, such as missing setup, missing permissions, and other issues in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. They can find technical information in the **Help and Support** page to help with this investigation. For more information, see the [Finding technical information](#finding-technical-information) section.  
+As the internal administrator, you can work with users to identify solutions or workarounds, such as missing setup, missing permissions, and other issues in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. If users are not sure if their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is working as intended, they can check the [Help and Learn content](../user-assistance.md) for the intended behavior. For more technical problems, administrators can find technical information in the **Help and Support** page to help with this investigation. For more information, see the [Finding technical information](#finding-technical-information) section.  
 
 Internal administrators can also [create sandbox environments](environment-types.md#sandbox-environments) for deeper troubleshooting, for example, before they decide to contact their partner for technical support. The partner must have specified their support contact details in the **Help and Support** page.  
 
@@ -75,7 +75,7 @@ In this section, we provide an overview of the most useful tools for troubleshoo
 - Use the Event Recorder  
 
     Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For more information, see [Discoverability of Events](../developer/devenv-events-discoverability.md).  
-- [View table data](../developer/devenv-view-table-data.md)  
+- Check the data in the database  
 
     You can view table objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions. For more information, see [Viewing Table Data](../developer/devenv-view-table-data.md).  
 - Analyze long running operations in Application Insights  
