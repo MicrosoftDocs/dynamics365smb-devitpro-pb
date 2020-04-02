@@ -2,7 +2,7 @@
 title: "App Management API"
 author: jswymer
 ms.custom: na
-ms.date: 03/23/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -932,10 +932,12 @@ catch [System.Net.WebException]
     $reader = New-Object System.IO.StreamReader($respStream)
     $respBody = $reader.ReadToEnd() | ConvertFrom-Json | ConvertTo-Json -Depth 100
     $reader.Close();
+    Write-Error $Exception.Response.Headers["ms-correlation-x"]
     Write-Error $Exception.Message
     Write-Error $respBody -ErrorAction Stop
 }
 ```
+Please make sure you provide full output in textual format when reporting the issues to Microsoft. 
 
 ## See Also
 

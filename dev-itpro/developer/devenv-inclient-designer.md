@@ -3,7 +3,7 @@ title: "Using Designer"
 description: "Description of how Designer works."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/06/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,10 @@ ms.author: solsen
 # Using Designer
 
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
+
+> [!IMPORTANT]  
+> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.
+
 Here is a quick overview of capabilities in **Designer**: 
 
 |Features      |Applies to    | 
@@ -152,6 +156,9 @@ The display type icons let you preview the changes you made on desktop, tablet, 
 ## Controlling User Access to Designer
 
 Accessing Designer is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. If a user is assigned this permission set, then Designer is available for the user in the client. To prohibit a user from using Designer, just remove the user from the **D365 EXTENSION MGT** permission set.
+
+> [!NOTE]  
+> It is important that the **D365 EXTENSION MGT** permission set does not have a company specified; otherwise the user will not be able to access Designer.
 
 ## See Also
 

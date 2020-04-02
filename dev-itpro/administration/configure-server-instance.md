@@ -6,7 +6,7 @@ author: jswymer
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 11/27/2019
+ms.date: 04/01/2020
 ms.author: jswymer
 ---
 # Configuring Business Central Server

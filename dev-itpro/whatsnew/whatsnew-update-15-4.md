@@ -2,7 +2,7 @@
 title: "Update 15.4 for Microsoft Dynamics 365 Business Central 2019 Release Wave 2"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2020
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,6 @@ Please note that new customers will automatically get the latest builds of Busin
 Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime). 
 
 - Preview environments of next major update  
-Partners should start to prepare for the next major update of Business Central in April. Partners can try out new functionality in preview environments, give Microsoft feedback and validate your extensions. See more details in [Prepare for major updates with preview environments](https://docs.microsoft.com/redynamics365/business-central/dev-itpro/administration/preview-environments) 
+Partners should start to prepare for the next major update of Business Central in April. Partners can try out new functionality in preview environments, give Microsoft feedback and validate your extensions. See more details in [Prepare for major updates with preview environments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/preview-environments) 
     
 - Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about Business Central performance. 

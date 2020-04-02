@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 12/13/2019
+ms.date: 04/01/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -38,7 +38,6 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Hong Kong SAR|Partner|Available|
 |Hungary|Partner|Available|
 |Iceland|Microsoft|Available|
-|India|Partner|Available|
 |Indonesia|Partner|Available|
 |Italy|Microsoft|Available|
 |Japan|Partner|Available|
