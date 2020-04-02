@@ -60,34 +60,34 @@ can troubleshoot in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], 
 
 In this section, we provide an overview of the most useful tools for troubleshooting the problems that users are reporting. In many cases, administrators will want to create a sandbox environment based on the production environment where users are reporting problems. That way, the administrators can troubleshoot without disturbing normal work.  
 
-- [The Help and Support page](#helpsupport)  
+- The Help and Support page  
 
     Each company in any [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment has a **Help and Support** page that can be accessed from the the question mark in the top right corner. For more information, see [The Help and Support page](#helpsupport) section.  
-- [Page inspection](../developer/devenv-inspecting-pages.md)  
+- Page inspection  
 
     [!INCLUDE [prodshort](../developer/includes/prodshort.md)] includes a page inspection feature that lets you get details about a page, providing insight into the page design, the different elements that comprise the page, and the source behind the data it displays. For more information, see [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).  
-- [Environment telemetry](tenant-admin-center-telemetry.md)  
+- Environment telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]  
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can view telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack. For more information, see [Environment telemetry](tenant-admin-center-telemetry.md).  
-- [Sandbox environments](environment-types.md#sandbox-environments)  
+- Create sandbox environments  
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create sandbox environments for safe debugging and troubleshooting. For more information, see [Sandbox environments](environment-types.md#sandbox-environments).  
-- [Event Recorder](../developer/devenv-events-discoverability.md)  
+- Use the Event Recorder  
 
-    Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For more information, see [Discoverability of Events](..developer/devenv-events-discoverability.md).  
+    Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For more information, see [Discoverability of Events](../developer/devenv-events-discoverability.md).  
 - [View table data](../developer/devenv-view-table-data.md)  
 
     You can view table objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions. For more information, see [Viewing Table Data](../developer/devenv-view-table-data.md).  
-- [Analyzing long running operations in Application Insights](telemetry-long-running-sql-query-trace.md)  
+- Analyze long running operations in Application Insights  
 
     Set up Application Insights so that any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. For more information, see [Analyzing long running operations in Application Insights](telemetry-long-running-sql-query-trace.md).  
-- [Debugging in AL](../developer/devenv-debugging.md)  
+- Debug your app or pre-tenant extension  
 
     With Visual Studio Code and the AL Language extension you get an integrated debugger to help you inspect your code to verify that your application can run as expected. For more information, see [Debugging in AL](../developer/devenv-debugging.md).
 
 ### <a name="helpsupport"></a>The **Help and Support** page in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] company
 
-The **Help and Support** page is a powerful tool for administrators to find technical information about [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the [most recent error message](#last-know-error), and it has a link to [inspect pages](../developer/devenv-inspecting-pages.md) for further troubleshooting.  
+The **Help and Support** page is a powerful tool for administrators to find technical information about [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the [most recent error message](#last-known-error), and it has a link to [inspect pages](../developer/devenv-inspecting-pages.md) for further troubleshooting.  
 
 > [!div class="mx-imgBorder"]
 > ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
