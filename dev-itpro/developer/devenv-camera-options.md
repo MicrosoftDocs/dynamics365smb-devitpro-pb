@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
+author: blrobl
 ---
 # CameraOptions Overview
 When implementing camera access from AL, there are some options; `Microsoft.Dynamics.Nav.Client.Capabilities.CameraOptions` found in the `Microsoft.Dynamics.Nav.ClientExtensions` dll, that you can use to additionally specify picture quality, source type, and so on. These can optionally be passed to `CameraProvider.RequestPictureAsync(options)`. Some of the options described in this article have been implemented in the example in the [Implementing the Camera in AL](devenv-implement-camera-al.md) topic.  
