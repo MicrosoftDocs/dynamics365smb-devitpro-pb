@@ -303,11 +303,11 @@
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
-### Accessing device capabilities
-#### [Implementing Camera in AL](../devenv-implement-camera-al.md)
-#### [Implementing Location in AL](../devenv-implement-location-al.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
+### Accessing device capabilities
+#### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
+#### [Implementing Location in AL](developer/devenv-implement-location-al.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## AL Programming
