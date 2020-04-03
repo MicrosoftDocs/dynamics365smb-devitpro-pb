@@ -185,7 +185,7 @@ begin
 end;
 ```
 
-When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling Business Central records with Common Data Service records.
+When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling [!INCLUDE[prodshort](includes/prodshort.md)] records with Common Data Service records.
 
 4. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
 
