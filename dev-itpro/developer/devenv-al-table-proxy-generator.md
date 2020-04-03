@@ -24,7 +24,6 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 1. Start Windows PowerShell as an administrator.
 2. From the command prompt, write `.\altpgen.exe` followed by the parameters as described below.  
     ```
-    .\altpgen
     -Project
     -PackageCachePath
     -ServiceURI
@@ -34,6 +33,7 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
     -BaseId
     -TableType
     ```
+3. The table or tables are generated in the folder of the specified AL project.
 
 ## Parameters
 
