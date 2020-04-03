@@ -115,7 +115,7 @@ If the field is a numeric field and is empty, it is treated as if it contains th
 You can change the default text that is displayed in the error message. The following example shows how to use the FieldError method and change the default text. This example requires that you create the following variable.  
 
 |Variable|Data type|  
-|--------------|---------------|  
+|--------|---------|  
 |Class|Code|  
 
 ```  
@@ -167,7 +167,7 @@ If the test fails, that is, if the field does not contain the specified value, a
 The following example tests the Language Code field for customer number 10000 in the Customer table and tests whether the Language Code is ZX. This example requires that you create the following variable.  
 
 |Variable|Data type|Subtype|  
-|--------------|---------------|-------------|  
+|--------|---------|-------|  
 |customer|Record|Customer|  
 
 ```  
@@ -185,7 +185,7 @@ Record.Validate(Field [, NewValue]);
 When you enter an account number in a ledger, code in a table trigger is executed to transfer the name of the account from the chart of accounts. If you enter an account number in a batch job, the code which transfers the name of the account is not automatically executed. The following example executes the appropriate field-level trigger code. This example requires that you create the following variable.  
 
 |Variable|Data type|Subtype|  
-|--------------|---------------|-------------|  
+|--------|---------|-------------|  
 |GeneralLedgerEntry|Record|G/L Entry|  
 
 ```  
@@ -199,7 +199,7 @@ GeneralLedgerEntry."G/L AccountNo" := '100';
 GeneralLedgerEntry.Validate("G/L AccountNo");  
 ```  
 
-The Validate method is useful for centralizing processing, which makes your application easier to maintain.  
+The `Validate` method is useful for centralizing processing, which makes your application easier to maintain.  
 
 For example, if the OnValidate trigger of the Total Amount field performs a calculation that uses values from three other fields as operands, the calculation must be performed again if the contents of any one of these fields changes. You should avoid entering the calculation formula in the OnValidate triggers of each field because this can create errors if the calculation formula has to be changed later and you have to update the code in all the triggers. Instead, you should enter the calculation formula in the OnValidate trigger of only one of the fields and call this trigger code from the OnValidate triggers of the other fields.
 
