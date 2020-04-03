@@ -1,6 +1,6 @@
 ---
 title: "Reserved database tables are read-only in a multi-tenant environment"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/03/2020
 ms.reviewer: na

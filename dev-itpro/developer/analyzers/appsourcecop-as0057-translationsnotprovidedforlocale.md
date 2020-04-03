@@ -1,6 +1,6 @@
 ---
 title: "Translations must be provided for all the locales in which the application will be available"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/03/2020
 ms.reviewer: na

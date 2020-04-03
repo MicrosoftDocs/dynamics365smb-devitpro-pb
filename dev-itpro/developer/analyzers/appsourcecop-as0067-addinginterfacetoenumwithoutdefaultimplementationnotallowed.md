@@ -1,6 +1,6 @@
 ---
 title: "Adding an interface to an enum that has been published must have a default implementation."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/03/2020
 ms.reviewer: na

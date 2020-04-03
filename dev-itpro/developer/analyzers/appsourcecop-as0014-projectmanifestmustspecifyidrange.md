@@ -1,6 +1,6 @@
 ---
 title: "The project manifest must contain the allocated identifier range"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/03/2020
 ms.reviewer: na

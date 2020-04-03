@@ -1,6 +1,6 @@
 ---
 title: "Fields must not be deleted, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/03/2020
 ms.reviewer: na
