@@ -16,6 +16,8 @@ author: SusanneWindfeldPedersen
 # AppSourceCop Rule AS0016
 Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified  
 
+For more information about data classification, see [Classifying Data in Dynamics 365](../devenv-classifying-data).
+
 ## Description
 Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified. FlowFields and FlowFilter fields are automatically set to the SystemMetadata data classification.
 
