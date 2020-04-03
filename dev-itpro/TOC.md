@@ -59,7 +59,7 @@
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ## [Version numbers in Business Central](administration/version-numbers.md)
-## [Enabling new features ahead of time](/administration/feature-management.md)
+## [Enabling new features ahead of time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
