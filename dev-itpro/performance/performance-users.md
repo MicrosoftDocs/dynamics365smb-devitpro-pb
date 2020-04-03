@@ -2,7 +2,7 @@
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
 ms.custom: na
-ms.date: 03/20/2020
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,18 +13,24 @@ ms.author: mikebc
 ---
 
 # Performance Tips for Business Users
+
 This section describes how you can work with end-users to improve the performance that each individual experiences with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-
 ## Choosing a desktop browser
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports multiple browsers that each offer a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
-- Where possible, avoid older browsers such as Internet Explorer, and switch to one of our recommended modern browsers, such as the new Microsoft Edge. See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
+
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports multiple browsers that each offer a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface. See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
+
+- Where possible, avoid older browsers such as Internet Explorer, and switch to one of our recommended modern browsers, such as the [new Microsoft Edge](https://www.microsoft.com/edge/).  
+
+    Internet Explorer is still supported, but since the new Edge browser is available for Windows Server now, we see a declining rate of usage for Internet Explorer. You can also get [a pilot of Edge in IE mode](https://www.microsoft.com/edge/business). For more information, see [Microsoft Edge documentation](/deployedge/edge-ie-mode).
 - Keep your browser always updated to the latest version.
 
 ## Choosing a network connection
+
 If a choice of networks is available, consider connecting to a secure network that has lower latency. In general, the user interface performs better when latency is low.
 
 ## Keep powered up
+
 Newer browsers and operating systems are generally better at handling resources such as memory, network, and storage. Some devices will automatically limit resources available to the browser when running on battery power. Consider keeping laptops and similar devices plugged in to a power source for best performance.
 
 <!-- ## Freeing up device resources
@@ -46,6 +52,7 @@ The time taken to load any page is also affected by the number of controls on th
 ## Agility of navigating and entering data
 
 Raw speed is not the only factor that determines whether users have a pleasant and performant experience. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides numerous features that increase efficiency when exploring, navigating and entering data:
+
 - [Keyboard Shortcuts](/dynamics365/business-central/keyboard-shortcuts)  
 - [Focusing on lists](/dynamics365/business-central/ui-enter-data#Focus)  
 - [Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry)  
@@ -54,10 +61,10 @@ Raw speed is not the only factor that determines whether users have a pleasant a
 - [Optimize your workspace for data entry](/dynamics365/business-central/ui-personalization-user)  
 - [Entering or editing using Microsoft Excel](/dynamics365/business-central/across-work-with-excel)  
 
-
 ## Attaching pictures and other files
 
 High quality images or large documents can take time to process or download from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Consider the following that may improve performance when working with files:
+
 - Reduce the size or quality of any images or photos that you upload. Some addon apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that capture images from your device may also include settings for image quality.
 - To avoid having to download files repeatedly simply to preview them, consider storing files on external storage that allows previewing of pictures and documents, such as SharePoint Online. You can then create a link from a record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to that file. Generally reducing the number of images and documents stored in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] also lightens the load of routine database maintenance tasks.  
 Learn how to [Manage Attachments, Links, and Notes on Cards and Documents](/dynamics365/business-central/ui-how-add-link-to-record).  

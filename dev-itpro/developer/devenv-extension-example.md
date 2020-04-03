@@ -3,7 +3,7 @@ author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -400,7 +400,7 @@ At an app level, you can specify where the Help for your functionality is publis
 Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish Help for your app at *https://mysite.com/documentation*.  
 
 ```json
-"contextSensitiveHelpUrl": "https://mysite.com/documentation",
+"contextSensitiveHelpUrl": "https://mysite.com/documentation/",
 ```
 
 Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) for the **Reward Card** and **Reward List** pages:
