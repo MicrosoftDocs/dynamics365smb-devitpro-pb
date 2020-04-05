@@ -18,9 +18,9 @@ Microsoft provides essential functionality within [Microsoft Lifecycle Services]
 
 # Creating LCS project
 
-In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country you would like to deploy to Dynamics 365 Business Central service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country which is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
+In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country you would like to deploy to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country which is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
 
-Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you login to LCS, click on the Preview feature management action. THen on the Preview feature management page, select the "+" action to add a new preview feature using preview code. In the Preview code field, enter the code you received from Microsoft during onboarding. You should now see the Microsoft Dynamics 365 Business Central (SaaS) feature on the list of the Private preview features on this page.     
+Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you login to LCS, click on the Preview feature management action. THen on the Preview feature management page, select the "+" action to add a new preview feature using preview code. In the Preview code field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the Private preview features on this page.     
 
 Navigate back to the main page and start creating a new project by selecting the "+" action. Choose "Migrate, create solutions and learn" category as the purpose of the project. On the next page provide the project name. 
 
@@ -34,9 +34,9 @@ Once the project is created, you should submit its ID to the e-mail alias specif
 
 Inside of the LCS project, you then proceed to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. You can read more about the the content and structure of the deployment package here: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package. 
 
-and deploy the environment in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, based on the uploaded package. 
+Select the Asset library action to navigate to the Asset library page, then select the "+" action to open the Upload Software deployable package file wizard. Provide the Name and Description (optional) for your package. The asset name you provide here will be displayed on the Application Version list iside of your project. Select the Add the file action to select and upload the deployment package. Wait for the package to get uploaded and select the Confirm button to close the upload wizard.  
 
-
+# Deploying the Embed app
 
 After the Environment is successfully provisioned, it is ready to accept customer sign-ups, which can come from either CSP or from self-service (IW) signups.  
 
