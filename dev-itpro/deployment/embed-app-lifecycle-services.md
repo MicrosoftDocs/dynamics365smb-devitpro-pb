@@ -38,6 +38,10 @@ Select the Asset library action to navigate to the Asset library page, then sele
 
 # Deploying the Embed app
 
+To deploy the package you uploaded in the Asset library, in the Rings section of your project select Maintain and then select Deploy action to open the Deploy package wizard. Select the package you want to deploy in the Package name field, then select the Target platfrom. 
+
+[>!Important] The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You can find the latest released version of D365 Business Central through Microsoft PartnerSource or through the Azure Docker gallery (microsoft/bcsandbox), subject to any appropriate, applicable agreements (provided, however, that in the event of a conflict between those applicable agreements and this Agreement, this Agreement shall control).  ISV is responsible for updating the Embed App to operate with the updated version of D365 Business Central.  The Embed App must run on a supported build of D365 Business Central (i.e., the current version of D365 Business Central or one of the two immediately preceding versions). The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed for the ISV in the LCS portal during their deployments. The versions, which are not displayed on that list are out of support, and the ISV customers running on these versions cannot be serviced at the service levels set forth in the published Service Level Agreement, as set forth in the Microsoft Cloud Agreement. 
+
 After the Environment is successfully provisioned, it is ready to accept customer sign-ups, which can come from either CSP or from self-service (IW) signups.  
 
 Each business entity (tenant) that signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is automatically added and displayed on the Tenant list page. On this page, the partner can find more details about the tenant, including the name and the URL to login into each one.  
