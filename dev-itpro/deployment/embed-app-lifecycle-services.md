@@ -26,9 +26,19 @@ Navigate back to the main page and start creating a new project by selecting the
 
 > [!NOTE] You will have to create a separate project for each country, even if your Embed app is going to be exactly the same. Therefore we recommend that you use the name of your Embed app appended by the country code as the name of your project, for example "Fabrikam Rentals, DK", "Fabrikam Rentals, US" and so on.
 
-Next, provide a short description for your project (optional), select "Microsoft Dynamics NAV" as the product name and "Microsoft Dynamics 365 Business Central (SaaS)" as the product version. Select the Create button to complete creation of the project.  
+Next, provide a short description for your project (optional), select "Microsoft Dynamics NAV" as the product name and "Microsoft Dynamics 365 Business Central (SaaS)" as the product version. Select the Create button to complete creation of the project. 
 
-Inside of the LCS project, the partner then proceeds to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] package into the Asset library and deploy the environment in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, based on the uploaded package. After the Environment is successfully provisioned, it is ready to accept customer sign-ups, which can come from either CSP or from self-service (IW) signups.  
+Once the project is created, you should submit its ID to the e-mail alias specified on the main project page. You can find the project ID in the URL displayed in your browser, for example: https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]
+
+# Uploading deployment package
+
+Inside of the LCS project, you then proceed to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. You can read more about the the content and structure of the deployment package here: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package. 
+
+and deploy the environment in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, based on the uploaded package. 
+
+
+
+After the Environment is successfully provisioned, it is ready to accept customer sign-ups, which can come from either CSP or from self-service (IW) signups.  
 
 Each business entity (tenant) that signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is automatically added and displayed on the Tenant list page. On this page, the partner can find more details about the tenant, including the name and the URL to login into each one.  
 
