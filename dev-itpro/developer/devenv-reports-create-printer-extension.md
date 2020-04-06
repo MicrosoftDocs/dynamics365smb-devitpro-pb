@@ -29,7 +29,7 @@ This article uses a simplified printer extension example for sending reports to 
 
 This section describes how to use the OnAfterSetupPrinters event to set up a printer. When completed, users can select the printer from on the **Printer Selections** page.
 
-### Get started 
+### Getting started 
 
 1. Create an AL project for the printer extension.
 
