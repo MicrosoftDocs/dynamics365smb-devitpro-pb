@@ -3,7 +3,7 @@ title: "API Page Type"
 description: "Description of the API page type used for exposing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.author: solsen
 ---
@@ -22,7 +22,10 @@ For the API page type, the following naming conventions exist:
 
 At design time, the compiler will show warnings on casing violations and errors on naming violations. Once an API page is deployed, the corresponding [$metadata](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) is exposed on the endpoint of the page. 
 
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
 ## Example of the API page type
+
 The following page example publishes an API available at:
 `../contoso/app1/v2.0/companies({id})/customers`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
 

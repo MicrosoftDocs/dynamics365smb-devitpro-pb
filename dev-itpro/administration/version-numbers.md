@@ -6,7 +6,7 @@ author: edupont04
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.author: edupont
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ---
 # Version numbers in Business Central
 

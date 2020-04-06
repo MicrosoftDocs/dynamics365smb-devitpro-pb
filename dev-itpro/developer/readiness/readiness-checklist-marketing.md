@@ -3,7 +3,7 @@ title: "Marketing Validation Checklist"
 description: "The marketing checklist for Business Central apps"
 author: v-liober
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -30,7 +30,7 @@ This image below is an example of what an offering looks like on AppSource, when
 |2 - 2.G|Use simple HTML tags, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
 |2.F|Supported editions - Premium, Essential or both|  [Premium SKU Listing](readiness-checklist-c-offer-description.md#SupportedEditions)|
 |2.G - 7|Mark only the Dynamics 365 Business Central supported countries that apply.|  [Supported Countries](readiness-checklist-d-supportedcountries-languages.md)|
-|3-4|Choose the industries the your offer is best aligned to. (max 2) Categories that your offer caters to (max 3) |[Industries and Categories](readiness-checklist-e-industries-categories-apptype.md)|
+|3-4|Choose the industries your offer is best aligned to. (max 2) Categories that your offer caters to (max 3) |[Industries and Categories](readiness-checklist-e-industries-categories-apptype.md)|
 |5|Add-on App - free or trial, Connect App - Contact me|  [Package and App Type](readiness-checklist-e-industries-categories-apptype.md)|
 |6|Your Help Link cannot be the same as your Support Link. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.|  [Help Link](readiness-checklist-h-help-support.md)|
 |7 - 8| Listed under Description and Language & Branding|[Supported Countries and Languages](readiness-checklist-d-supportedcountries-languages.md)|

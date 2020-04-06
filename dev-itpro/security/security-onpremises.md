@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 11/27/2019
+ms.date: 04/01/2020
 ---
 # Business Central On-Premises Security
 
@@ -64,6 +64,8 @@ The following are general articles about SQL Server security that can also help 
 [SQL Server Auditing](/sql/relational-databases/security/auditing/sql-server-audit-database-engine?view=sql-server-2017)
 
 [Backup Encryption](/sql/relational-databases/backup-restore/backup-encryption?view=sql-server-2017)
+
+[Azure Database Security Best Practices](/azure/security/fundamentals/database-best-practices)
 
 ## Network Security
 

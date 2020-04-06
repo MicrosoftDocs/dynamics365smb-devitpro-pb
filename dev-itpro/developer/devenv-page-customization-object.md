@@ -3,7 +3,7 @@ title: "Page Customization Object"
 description: "Description of the page customization object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/24/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,11 @@ The page customization object has more restrictions than the [page extension obj
 > A single page customization can be used with multiple profiles within the same extension. Page customizations only apply to the RoleCenters they are specified for. In order to view or changes the RoleCenters in the client, go to **My Settings** > **Role Center**. 
 
 > [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters.     
+> Extension objects can have a name with a maximum length of 30 characters.   
+
+> [!NOTE]  
+> Modifying actions in Cue groups on page extensions is not supported.
+
 
 ## Snippet support
 Typing the shortcut `tpagecust` will create the basic layout for a page customization object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.

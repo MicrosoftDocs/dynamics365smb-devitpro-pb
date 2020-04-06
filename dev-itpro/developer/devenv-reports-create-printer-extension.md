@@ -2,7 +2,7 @@
 title: "Creating a Printer Extension"
 description: Describes how to create an extension that sets up cloud printers. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ This article uses a simplified printer extension example for sending reports to 
 
 This section describes how to use the OnAfterSetupPrinters event to set up a printer. When completed, users can select the printer from on the **Printer Selections** page.
 
-### Get started 
+### Getting started 
 
 1. Create an AL project for the printer extension.
 

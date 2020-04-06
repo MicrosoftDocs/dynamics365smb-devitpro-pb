@@ -2,7 +2,7 @@
 title: Business Central 14.X to 15.X compatibility matrix
 description: See which Business Central 15 updates are compatible with each Business Central 14 update as a compatibility matrix.
 ms.custom: na
-ms.date: 01/15/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,7 @@ The following table lists the Business Central 14 versions and the minimum Busin
 |[14.8 (cumulative update 07)](https://support.microsoft.com/help/4533396)|15.3|
 |[14.9 (cumulative update 08)](https://support.microsoft.com/help/4536555)|15.3|
 |[14.10 (cumulative update 09)](https://support.microsoft.com/help/4539529)|15.4|
+|[14.11 (cumulative update 10)](https://support.microsoft.com/help/4538887)|15.5|
 
 For example, you can upgrade version 14.0 to any 15 version. You can only upgrade version 14.6 to version 15.1 or later.
 

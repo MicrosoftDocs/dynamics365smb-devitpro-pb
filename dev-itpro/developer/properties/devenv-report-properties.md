@@ -2,7 +2,7 @@
 title: Report Properties
 description: This topic lists report properties that apply to controls of a report object.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,6 +27,7 @@ This topic lists properties of the report object.
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>Report Object</li><li>Report Labels</li><li>Column controls</li></ul>|
 |[CalcFields Property](devenv-calcfields-property.md)|<ul><li>DataItem control</li></ul>|
 |[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|<ul><li>Report Object</li></ul>|
+|[DataAccessIntent Property](devenv-dataaccessintent-property.md)|<ul><li>Report Object</li></ul>|
 |[DataItemLink Property \(Reports\)](devenv-dataitemlink-reports-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem controls</li></ul>|

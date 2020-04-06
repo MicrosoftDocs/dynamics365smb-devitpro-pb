@@ -8,7 +8,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/05/2020
+ms.date: 04/01/2020
 ms.author: edupont
 
 ---
@@ -33,7 +33,25 @@ Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has 
 
 The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to analyse telemetry, create a sandbox environment for debugging, or an extra production environment for step-by-step reproduction, for example.  
 
+If a prospect wants to extend their free trial a second time, the delegated administrator can sign in to the prospect's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and run the same **Extend Trial Period** guide. For more information, see [Extending trials](tenant-administration.md#extending-trials).  
+
 If the partner cannot find a solution, they can request support from Microsoft. For more information, see the [Escalating support issues to Microsoft](#escalating-support-issues-to-microsoft) section.  
+
+### Cleaning up settings
+
+If you end the relationship with a customer, you must remove certain settings while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. These settings include the following:
+
+- Support contact details
+
+  For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center).  
+
+- Notification recipients
+
+  For more information, see [Tenant Notifications](tenant-admin-center-notifications.md).  
+
+- Application Insights key (if this was set up by the partner)
+
+  For more information, see [Environment Telemetry in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](tenant-admin-center-telemetry.md).  
 
 ## Finding technical information
 
