@@ -21,7 +21,7 @@ The event attribute type cannot be changed because it might break dependent exte
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-As part of your extension, you can [publish events](../devenv-publishing-events) that will be available for other extensions [to subscribe too](../devenv-subscribing-to-events).
+As part of your extension, you can [publish events](../devenv-publishing-events) that will be available for other extensions [to subscribe to](../devenv-subscribing-to-events).
 In AL, you can define events of type:
 - [BusinessEvent](../methods/devenv-business-attribute)
 - [IntegrationEvent](../methods/devenv-integration-attribute)
@@ -29,7 +29,7 @@ In AL, you can define events of type:
 
 This rule verifies that the conversion of one event from version to another does not potentially break dependent extensions.
 
-## Converting Business Events
+### Converting Business Events
 
 It is not allowed to convert a business type event to an integration type event or to an internal type event.
 
@@ -38,9 +38,9 @@ Business type events defines a formal contract that carries an implicit promise 
 As a business type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. 
 This would break dependent extensions which are subscribing to this event.
 
-## Converting Integration Events
+### Converting Integration Events
 
-It is not allowed to convert an integration type event to an internal event and it is allowed in some cases to convert it to a business event.
+It is not allowed to convert an integration type event to an internal event and it is allowed in some cases to convert it to a business type event.
 
 It is allowed to convert an integration type event to a business type event when these two conditions are met:
 - the integration event did not expose any global variables,
@@ -49,7 +49,7 @@ It is allowed to convert an integration type event to a business type event when
 As an integration type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. 
 This would break dependent extensions which are subscribing to this event.
 
-## Converting Internal Events
+### Converting Internal Events
 
 Internal events can only be subscribed to from within the same module. It is then allowed to turn them into business or integration type events.
 
@@ -65,9 +65,6 @@ codeunit 50100 MyCodeunit
     procedure MyEvent()
     begin
     end;
-
-    var
-        myGlobalVariable: Integer;
 }
 ```
 
@@ -79,13 +76,10 @@ codeunit 50100 MyCodeunit
     procedure MyEvent()
     begin
     end;
-
-    var
-        myGlobalVariable: Integer;
 }
 ```
 
-In the newer version of the extension, the sender remains exposed through the business event. The conversion is valid.
+In the newer version of the extension, the sender remains exposed through the business type event. The conversion is valid.
 
 ### Example 2: Converting an internal event to an integration event
 
@@ -154,7 +148,7 @@ codeunit 50120 AnotherCodeunit()
 
 ```
 
-### Example 2: Conversion of an integration event that exposed variables to a business type event.
+### Example 2: Conversion of an integration type event that exposed variables to a business type event.
 
 Version 1.0 of the extension:
 ```
