@@ -38,30 +38,45 @@ Select the Asset library action to navigate to the Asset library page, then sele
 
 # Deploying the Embed app
 
-To deploy the package you uploaded in the Asset library, in the Rings section of your project select Maintain and then select Deploy action to open the Deploy package wizard. Select the package you want to deploy in the Package name field, then select the Target platfrom. 
+To deploy the package you uploaded in the Asset library, in the Rings section of your project select Maintain and then select Deploy action to open the Deploy package wizard. Select the package you want to deploy in the Package name field, then select the Target platfrom and select Deploy button to start the deployment. 
 
-[>!Important] The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You can find the latest released version of D365 Business Central through Microsoft PartnerSource or through the Azure Docker gallery (microsoft/bcsandbox), subject to any appropriate, applicable agreements (provided, however, that in the event of a conflict between those applicable agreements and this Agreement, this Agreement shall control).  ISV is responsible for updating the Embed App to operate with the updated version of D365 Business Central.  The Embed App must run on a supported build of D365 Business Central (i.e., the current version of D365 Business Central or one of the two immediately preceding versions). The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed for the ISV in the LCS portal during their deployments. The versions, which are not displayed on that list are out of support, and the ISV customers running on these versions cannot be serviced at the service levels set forth in the published Service Level Agreement, as set forth in the Microsoft Cloud Agreement. 
+> [!Important] The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of D365 Business Central. The Embed App must run on a supported build of D365 Business Central (i.e., the current version of D365 Business Central or one of the two immediately preceding versions). The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the Deploy package wizard in the Target platfrom field. The versions, which are not displayed on that list are therefore out of support, and your customers running on these versions cannot be serviced at the service levels set forth in the published [!INCLUDE[Service Level Agreement](https://www.microsoft.com/en-us/licensing/product-licensing/products)]. 
 
-After the Environment is successfully provisioned, it is ready to accept customer sign-ups, which can come from either CSP or from self-service (IW) signups.  
+After the Environment is successfully provisioned, its status on the list of application versions will be set to Deployed. In order to allow sign-ups to be directed to this application version, you need to set a checkmark in the Use for new tenants field. You can only have one application version marked this way at a time. 
 
-Each business entity (tenant) that signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is automatically added and displayed on the Tenant list page. On this page, the partner can find more details about the tenant, including the name and the URL to login into each one.  
+# Onboarding customers and creating environments
 
-To upgrade the environment to a new version of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)], the partner must first upload the updated [!INCLUDE[embedapp](../developer/includes/embedapp.md)] package to the Asset library and then deploy it to the environment that is already running. During upgrade, the partner will be able to see the progress on the Tenant list page (version change) and more detailed logs, including detected errors, in the Environment monitoring section. VARs and customers will get notified about the scheduled upgrades and will be able to re-schedule those for more convenient time.  
+It is not possible to create environments and add customers in LCS. The customers are onboarded the same way as they are onboarded to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service - via the Partner Center. Also no special licenses are used for the Embed apps customers, you need to use the same licenses and subscriptions which are available for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] itself. You can find more details [!INCLUDE[here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/get-started-online)]  
 
-The partner can define the date and time for the upgrade to start. The upgrade orchestration and execution is then performed Microsoft.  
+When you have established the reseller relationship with the customer and added [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscriptions with required number of licenses for them, you need to use your own branded Embed app URL to login into their environment and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center.
 
-Before deploying the new version of the application into their production environment, the partner will be able to deploy it into a sandbox environment, where tenants (customers, resellers) that opted in can test the new version safely and provide feedback to the Embed App partner before the partner deploys the new version into a production environment.  
+To create a new production environment for your customers, navigate to this URL: 
+https://[your product family].bc.dynamics.com/[Customer's AAD Tenant ID]/Production
 
-The partner gets access to comprehensive logs for the activities that they perform in the portal:
+To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL: 
+https://[your product family].bc.dynamics.com/[Customer's AAD Tenant ID]/admin 
 
-- Deployment  
-- Tenant provisioning  
-- Tenant upgrade  
-- Runtime (platform)  
-- Runtime (application)  
+Each environment that you signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is then displayed on the Tenant list part in your LCS project. On this part, you can find more details about the environment, including the name and the URL to login into each one. You can see which environments are running on which application version by selecting application version on the list.  
 
-They can also observe service health metrics, the load on the service (user activity, telemetry), and get insights into the performance of their application and tenants.  
-In the upcoming updates, we will keep introducing more features and services for the partner to manage their environment efficiently, as well as functionality for resellers (VAR) who help the partner manage their tenants.  
+# Monitoring the Embed app
+
+In the LCS portal you get access to various logs for the activities that you perform in the portal:
+
+- Deployment: logs of deployment of the application versions 
+- Tenant provisioning: logs of creation of the new customer environments   
+- Tenant upgrades: logs of customer environments upgrades  
+- Application errors : errors which are displayed to the customers, when they work with the Embed app functionality
+
+To get to these logs, in the Rings section of your project, select Maintain action and then select Monitor action.  
+
+On the Ring monitoring page, first select the Category, depending on the operation for which you want to retrieve the logs. Then set the Period (min) field to the number of minutes back in time, for which you want to see the logs. 
+
+> [!NOTE] The logs typically appear in LCS with a delay of 15 minutes. 
+
+For easier troubeshooting we recommend exporting the logs to a CSV file, using Export to CSV action, and then analysing them in Microsoft Excel instead.  
+
+It is important to always review the logs before submitting any issues to Microsoft. When reporting issues, please attach the relevant logs in TXT or CSV format, do not use screenshots. 
+ 
 
 ## See Also
 
