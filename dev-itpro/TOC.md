@@ -306,7 +306,7 @@
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
-### Accessing device capabilities
+### Accessing Device Capabilities
 #### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing Location in AL](developer/devenv-implement-location-al.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
