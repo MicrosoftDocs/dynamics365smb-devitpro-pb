@@ -1,7 +1,7 @@
 ---
 title: "Implementing Location in AL"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,17 +17,17 @@ You can also add access to location information to a specific page from the [!IN
 For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Show On Map` link on the `Customer Card`, which displays a map that shows where your customer is located based on the GPS coordinates and gives directions to reach its location. 
 
 > [!IMPORTANT]  
->  The location information is only available on devices that have GPS capabilities. 
+> Location information is only available on devices that are able to obtain location coordinates, such as using GPS capabilities. 
 
 ## Example
-This example illustrates how to implement the location capability on a page in AL. The example implements a **GetLocation** action on a page that returns the GPS coordinates of the current customers address, but does not save this information to the database. 
+This example illustrates how to implement the location capability on a page in AL. The example implements a **GetLocation** action on a page that returns the coordinates of the current customer's address, but does not save this information to the database. 
 
 The example also shows how to specify options for the location functionality such as setting a timeout or enabling high accuracy. For more information about the different options that can be set for location, see [LocationOptions Overview](devenv-location-options.md). 
 
 > [!NOTE]
 > To enable the location functionality, it is required that you add the path of the folder containing the `"Microsoft.Dynamics.Nav.ClientExtensions"` assembly on the **Al: Assembly Probing Paths** setting on the **User Settings** or **Workspace Settings** so the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
-The following code will create two variables; the `LocationAvailable` variable is a **Boolean** that checks whether the current device has GPS capabilities. The `Location` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add an action to the page that lets the user retrieve the GPS coordinates. Finally, the trigger `Location::LocationChanged` is defined to handle the incoming location information.  
+The following code will create two variables; the `LocationAvailable` variable is a **Boolean** that checks whether the current device has location capabilities. The `Location` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add an action to the page that lets the user retrieve the location information. Finally, the trigger `Location::LocationChanged` is defined to handle the incoming location information.  
 
 
 ```

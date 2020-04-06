@@ -1,17 +1,17 @@
 ---
 title: "Implementing the Camera in AL"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
-author> blrobl
+author: blrobl
 ---
 
 # Implementing the Camera in AL
-You can access the camera of a device from the [!INCLUDE[webclient](includes/webclient.md)] in the browser and from the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This allows the user to take pictures and handle them directly from the same device, and thereby improve accuracy and reduce end-to-end time. 
+You can access the camera of a device from the [!INCLUDE[webclient](includes/webclient.md)] in the browser and from the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This allows the user to take pictures and handle them directly from the same device, and in that way, improve accuracy of capturing data closest to the source, and reduce end-to-end time to perform tasks. 
 
 You can also add access to the camera to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Picture` factbox on the `Item Card`, which lets you take a picture of a specific item and store it together with the item.  
   
@@ -20,7 +20,7 @@ You can also add access to the camera to a specific page from the [!INCLUDE[d365
 
 ## Example
 
-This example illustrates how to implement the camera capability on a page in AL. The example implements three actions which take a picture;  **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality**, but it does not include code that saves the picture to the database.
+This example illustrates how to implement the camera capability on a page in AL. The example implements three actions to take a picture: **Take Picture**, **Take Picture High Quality**, and **Take Picture Low Quality**. However, it does not include code that saves the picture to the database.
 
 The example also shows how to specify options for the camera functionality such as picture quality or source type. For more information about the different options that can be set for the camera, see [CameraOptions Overview](devenv-Camera-options.md). 
 
