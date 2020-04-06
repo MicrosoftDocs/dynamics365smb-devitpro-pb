@@ -29,7 +29,7 @@ Navigate back to the main page and start creating a new project by selecting the
 
 Next, provide a short description for your project (optional), select **Microsoft Dynamics NAV** as the product name and **Microsoft Dynamics 365 Business Central (SaaS)** as the product version. Select the **Create** button to complete creation of the project. 
 
-Once the project is created, you should send its ID to the e-mail alias specified on the main project page for whitelisting. You can find the project ID in the URL displayed in your browser, for example: https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]
+Once the project is created, you should send its ID to the e-mail alias specified on the main project page for whitelisting. You can find the project ID in the URL displayed in your browser, such as `https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]`
 
 ## Uploading deployment package
 
@@ -42,7 +42,7 @@ Within  your LCS project, select the **Asset library** action to navigate to the
 To deploy the package you uploaded in the Asset library, in the **Rings** section of your project select **Maintain** menu and then select **Deploy** action to open the **Deploy package** wizard. Select the package you want to deploy in the **Package name** field, then select the **Target platfrom** and select **Deploy** button to start the deployment. 
 
 > [!IMPORTANT]
-> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of D365 Business Central. The Embed App must run on a supported build of D365 Business Central (i.e., the current version of D365 Business Central or one of the two immediately preceding versions). The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platfrom** field. The versions, which are not displayed on that list are therefore out of support, and your customers running on these versions cannot be serviced at the service levels set forth in the published [!INCLUDE[Service Level Agreement](https://www.microsoft.com/en-us/licensing/product-licensing/products)]. 
+> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of D365 Business Central. The Embed App must run on a supported build of D365 Business Central (i.e., the current version of D365 Business Central or one of the two immediately preceding versions). The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platfrom** field. The versions, which are not displayed on that list are therefore out of support, and your customers running on these versions cannot be serviced at the service levels set forth in the published [!INCLUDE[Service Level Agreement](https://www.microsoft.com/licensing/product-licensing/products). 
 
 After the Environment is successfully provisioned, its status on the list of application versions will be set to **Deployed**. In order to allow sign-ups to be directed to this application version, you need to set a checkmark in the **Use for new tenants** field. You can only have one application version marked this way at a time. 
 
