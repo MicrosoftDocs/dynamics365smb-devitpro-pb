@@ -21,7 +21,7 @@ An affix is required.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-In order to avoid name clashes for objects added by your extension and objects added by other extensions, an affix must be prepended or appended to the name of all new application objects, extension objects, and fields.
+In order to avoid name clashes for objects added by your extension and objects added by other extensions, an affix must be prepended or appended to the name of all new application objects, extension objects, and fields. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
 ### Using the property mandatoryAffixes
 
