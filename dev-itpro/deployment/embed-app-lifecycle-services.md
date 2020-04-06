@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 ---
 
 # Managing an [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [!INCLUDE[embedapp](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
@@ -24,7 +24,8 @@ Before you can create a project, you need to unlock a corresponding Private Prev
 
 Navigate back to the main page and start creating a new project by selecting the "+" action. Choose **Migrate, create solutions and learn** category as the purpose of the project. On the next page provide the project name. 
 
-> [!NOTE] You will have to create a separate project for each country, even if your Embed app is going to be exactly the same. Therefore we recommend that you use the name of your Embed app appended by the country code as the name of your project, for example "Fabrikam Rentals, DK", "Fabrikam Rentals, US" and so on.
+> [!NOTE]
+> You will have to create a separate project for each country, even if your Embed app is going to be exactly the same. Therefore we recommend that you use the name of your Embed app appended by the country code as the name of your project, for example "Fabrikam Rentals, DK", "Fabrikam Rentals, US" and so on.
 
 Next, provide a short description for your project (optional), select **Microsoft Dynamics NAV** as the product name and **Microsoft Dynamics 365 Business Central (SaaS)** as the product version. Select the **Create** button to complete creation of the project. 
 
@@ -32,7 +33,7 @@ Once the project is created, you should send its ID to the e-mail alias specifie
 
 ## Uploading deployment package
 
-Once your LCS project ID has been whitelisted by Microsoft, you can proceed to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. You can read more about the the content and structure of the deployment package here: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package. 
+Once your LCS project ID has been whitelisted by Microsoft, you can proceed to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. <!-- COMMENTED OUT UNTIL THE FILE IS FOUND You can read more about the the content and structure of the deployment package [here]: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package.--> 
 
 Within  your LCS project, select the **Asset library** action to navigate to the Asset library page, then select the "+" action to open the **Upload Software deployable package file** wizard. Provide the **Name** and **Description** (optional) for your package. The asset name you provide here will be displayed on the Application Version list iside of your project. Select the Add the file action to select and upload the deployment package. Wait for the package to get uploaded and select the Confirm button to close the upload wizard.  
 
@@ -40,21 +41,21 @@ Within  your LCS project, select the **Asset library** action to navigate to the
 
 To deploy the package you uploaded in the Asset library, in the **Rings** section of your project select **Maintain** menu and then select **Deploy** action to open the **Deploy package** wizard. Select the package you want to deploy in the **Package name** field, then select the **Target platfrom** and select **Deploy** button to start the deployment. 
 
-> [!Important] The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of D365 Business Central. The Embed App must run on a supported build of D365 Business Central (i.e., the current version of D365 Business Central or one of the two immediately preceding versions). The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platfrom** field. The versions, which are not displayed on that list are therefore out of support, and your customers running on these versions cannot be serviced at the service levels set forth in the published [!INCLUDE[Service Level Agreement](https://www.microsoft.com/en-us/licensing/product-licensing/products)]. 
+> [!IMPORTANT]
+> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of D365 Business Central. The Embed App must run on a supported build of D365 Business Central (i.e., the current version of D365 Business Central or one of the two immediately preceding versions). The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platfrom** field. The versions, which are not displayed on that list are therefore out of support, and your customers running on these versions cannot be serviced at the service levels set forth in the published [!INCLUDE[Service Level Agreement](https://www.microsoft.com/en-us/licensing/product-licensing/products)]. 
 
 After the Environment is successfully provisioned, its status on the list of application versions will be set to **Deployed**. In order to allow sign-ups to be directed to this application version, you need to set a checkmark in the **Use for new tenants** field. You can only have one application version marked this way at a time. 
 
 ## Onboarding customers and creating environments
 
-It is not possible to create environments and add customers in LCS. The customers are onboarded the same way as they are onboarded to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service - via the Partner Center. Also no special licenses are used for the Embed apps customers, you need to use the same licenses and subscriptions which are available for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] itself. You can find more details [!INCLUDE[here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/get-started-online)]  
+It is not possible to create environments and add customers in LCS. The customers are onboarded the same way as they are onboarded to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service - via the Partner Center. Also no special licenses are used for the Embed apps customers, you need to use the same licenses and subscriptions which are available for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] itself. You can find more details [here](../administration/get-started-online.MD)]  
 
 When you have established the reseller relationship with the customer and added [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscriptions with required number of licenses for them, you need to use your own branded Embed app URL to login into their environment and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center.
 
-To create a new production environment for your customers, navigate to this URL: 
-https://[your product family].bc.dynamics.com/[Customer's AAD Tenant ID]/Production
+To create a new production environment for your customers, navigate to this URL: `
+https://[your product family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production`  
 
-To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL: 
-https://[your product family].bc.dynamics.com/[Customer's AAD Tenant ID]/admin 
+To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL: `https://[your product family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/admin`  
 
 Each environment that you signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is then displayed on the Tenant list part in your LCS project. On this part, you can find more details about the environment, including the name and the URL to login into each one. You can see which environments are running on which application version by selecting application version on the list.  
 
@@ -71,7 +72,8 @@ To get to these logs, in the Rings section of your project, select **Maintain** 
 
 On the **Ring monitoring** page, first select the **Category**, depending on the operation for which you want to retrieve the logs. Then set the **Period (min)** field to the number of minutes back in time, for which you want to see the logs. Do not use "All" category.
 
-> [!NOTE] The logs typically appear in LCS with a delay of 15 minutes. 
+> [!NOTE]
+> The logs typically appear in LCS with a delay of 15 minutes. 
 
 For easier troubeshooting we recommend exporting the logs to a CSV file, using **Export to CSV** action, and then analysing them in Microsoft Excel instead.  
 
