@@ -1,7 +1,8 @@
 ---
 title: "Designing Indented Hierarchy Lists"
+description: This article explains how to indent rows in a repeater control to design hierarchical lists. You can nest records that users can navigate, expand, and collapse.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +20,7 @@ Using the indentation properties in AL, you can display rows in a parent-child s
 
 ![Fixed indented list](media/static-tree.png "Fixed indented list")
 
-A row that's indented from a row above it is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
+A row that's indented from a row above is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
@@ -99,13 +100,13 @@ In a fixed hierarchy, child rows are always shown, as illustrated in the followi
 
 In the figure, indentation is applied to the second column. Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
-- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) controls which records get indented and by how much. You set the property to either a field in the page's source table or to a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
+- The [IndentationColumn Property](properties/devenv-indentationcolumn-property.md) determines which records get indented and by how much. You set the property to either a field in the page's source table or to a variable. The important thing, is that property resolves to an integer. This integer determines the indentation level.
 
-- The [IndentationControls property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented.
+- The [IndentationControls property](properties/devenv-indentationcontrols-property.md) specifies which column in the list gets indented. You can only specify one column.
 
 ### Example
 
-Working with the sample page, let's indent records based on the value of the **Indent** column. You'll apply the indentation to **Name** column. For this hierarchy, you set the IndentationColumn and IndentationControls to the repeater of the page as shown in the following code:
+In this example, you indent records based on the value of the **Indent** column and apply the indentation to **Name** column. You set the IndentationColumn and IndentationControls on the repeater of the page, as shown in the following code:
 
 <!-- 
 ```
@@ -161,7 +162,10 @@ page 50100 MyPage
 }  
 ```
 
-You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
+You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above.  
+
+For a more detailed implementation example, see the **Chart of Accounts** page in the base application.  
+
 
 ## Setting up a collapsible indented hierarchy
 
@@ -175,11 +179,11 @@ Setting up a collapsible hierarchy is similar to the fixed indented list, except
 - The [ShowAsTree Property](properties/devenv-showastree-property.md) makes the hierarchy collapsible.
 - The [TreeInitialState Property](properties/devenv-treeinitialstate-property.md), which is optional, specifies whether the list is collapsed or expanded when the page opens.  
 
-Unlike fixed indented lists, a collapsible hierarchy always indents the left-most visible column in the repeater. If users customize the page and move another column to display first, the moved column will be indented instead.  
+Unlike fixed indented lists, a collapsible hierarchy always indents the left-most visible column in the repeater. The IndentationControls property is ignored. If users customize the page by moving another column first, the moved column will be indented instead.  
 
 ### Example
 
-Working with the sample page, let's indent records based on the value of the **Indent** column. Records will indent on the **Number** column and parent records will be collapsible. For this hierarchy, you add the IndentationColumn, ShowAsTree, and TreeInitialState properties to the pages' repeater: 
+In this example, you'll indent records based on the value of the **Indent** column. Records will indent on the **Number** column and parent records will be collapsible. You add the IndentationColumn, ShowAsTree, and TreeInitialState properties to the pages' repeater: 
 
 <!--
 ```
@@ -238,28 +242,27 @@ page 50100 MyPage
 
 You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
 
+For a more detailed implementation example, see the **Assisted Setup** page in the base application.  
+
+
+### Collapsed or Expanded lists
+Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** button in the header of the first column, or using the button in the top-left corner of the repeater. It stays this way, until they delete personalization on the page.  
+
+
 ## Design and behavior considerations
 
 When using an indented hierarchy, consider the following behavior:
 
-- In a fixed hierarchy indentation works best on a single column.
-
-    You can specify more than one column with the IndentationControl property. However, in the UI, the columns may not appear as expected.
-- In a collapsible hierarchy:
-
-    - The IndentationControl property is ignored. Records are always indented on the first column only.
-
-    - Users can change whether the page opens with rows collapsed or expanded, essentially overriding the TreeInitialState property. They change the behavior by selecting the **Toggle Expand All / Collapse All** button in the header of the first column. It stays this way, until they delete personalization on the page.
-
-- When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
+- When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control or display the list as tiles.
 - Right-aligned data in columns, such as the integer data type, won't appear as indented.
-
 - Indentation is used to visually communicate structure, without modifying the table of records itself. There's no tightly defined *parent-child* relationship between records, so you must implement additional logic if records need to relate together. For example, if a user deletes a parent record, Business Central won't delete all of its child records.  
+- Indenting records in a list doesn't automatically apply any additional styling to emphasize parent records and distinguish them from child records. You can implement styling using style expressions. For example, you could format all fields on parent records to display bold values. Learn more about [StyleExpr Property](properties/devenv-styleexpr-property.md).  
 
 
 ## See Also
 
 [IndentationColumn Property](properties/devenv-indentationcolumn-property.md)  
-[IndentationControl Property](properties/devenv-indentationcontrols-property.md)  
+[IndentationControls Property](properties/devenv-indentationcontrols-property.md)  
 [ShowAsTree Property](properties/devenv-showastree-property.md)  
-[TreeInitialState Property](properties/devenv-treeinitialstate-property.md)
+[TreeInitialState Property](properties/devenv-treeinitialstate-property.md)  
+[Page and Page Extension Properties](properties/devenv-page-property-overview.md)  
