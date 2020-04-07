@@ -25,7 +25,7 @@ This rule verifies that events that are available from other extensions such as 
 
 This does not apply to [Internal](../methods/devenv-internal-attribute) type events as they are not exposed to dependent extensions.
 
-## Example of invalid code:
+## Examples of invalid code:
 
 ### Example 1: A business type event stops exposing its sender
 

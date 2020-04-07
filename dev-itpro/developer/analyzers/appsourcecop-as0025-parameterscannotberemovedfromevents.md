@@ -21,100 +21,17 @@ Parameters cannot be removed from events.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-Depending on their declaration, events defined in an extension can be referenced from dependent extensions, which can raise these events and/or subscribe to them. 
-This rule validates that the changes made to the event parameters do not break dependent extensions.
+Events defined in an extension can be referenced from dependent extensions, which can raise them, subscribe subscribe to them, or both.
 
-## Modifying parameters on events that can be raised from other extensions.
+The rules [AS0023](appsourcecop-as0023-returntypecannotbemodifiedinpublicapi.md), [AS0024](appsourcecop-as0024-parameterscannotberemovedoraddedinexternalprocedures.md), and [AS0026](appsourcecop-as0026-parametertypesubtypecannotbemodifiedinpublicapi.md) validate against breaking changes in public methods, which includes public events. They are then validating the scenarios around events being raised from dependent extensions.
 
-Events which can be raised from other extensions must not change signature. It is not possible to add, modify or remove parameters, as it would break the caller.
+This rule validates that changes on the parameters of `Business` type and `Integration` type do not break dependent extensions which subscribe to these events. As an event subscriber can use the parameters passed by the event and references them bu name, removing parameters, modifying their type, and renaming them can break dependent extensions.
 
-Events which can be raised from other extensions are events which satisfies the following conditions:
-- they are declared in objects whose accessibility is set to `public` or left as default, 
-- they are not marked with an access modifier (like `local` or `internal`). 
+> [!NOTE]
+> Dependent extensions can subscribe to these events, even if the events are marked with the `local` or `internal` access modifiers. 
+> The access modifier only limits the ability to raise the event. 
 
-For more information, see [Access Property](..\properties/devenv-access-property). 
-
-### Examples of invalid conversion
-
-In the following examples, the version 1.0 of the extension defines an Internal type event whose accessibility is public. This means that this event can be raised from other extensions, but cannot be subscribed to from other extensions.
-
-Version 1.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{
-    [InternalEvent(false)]
-    procedure MyEvent(i: Integer)
-    begin
-    end;
-}
-```
-
-#### Example 1: Removing parameters
-
-Version 2.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{
-    [InternalEvent(false)]
-    procedure MyEvent()
-    begin
-    end;
-}
-```
-
-In the newer version, the parameter i of the event has been removed. If a dependent extension raises this event, this will lead to a compilation error similar to `No overload for method 'MyEvent' takes 1 argument. (AL0126)`.
-
-For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
-codeunit 50120 AnotherCodeunit()
-{
-    procedure RaiseEvent()
-    begin
-        MyEvent(5);
-    end;
-}
-```
-
-#### Example 2: Adding new parameters
-
-The dependent extension remain the same as in example 1.
-
-Version 2.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{
-    [BusinessEvent(false)]
-    procedure MyEvent(i: Integer; j: Integer)
-    begin
-    end;
-}
-```
-
-In the newer version, a new parameter j has been added to the event. If a dependent extension raises this event, this will lead to a compilation error similar to `There is no argument given that corresponds to the required formal parameter 'j' of 'MyEvent(Integer, Integer)' (AL0135)`.
-
-#### Example 3: Modifying parameters
-
-The dependent extension remain the same as in example 1.
-
-Version 2.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{
-    [BusinessEvent(false)]
-    procedure MyEvent(i: Text[50])
-    begin
-    end;
-}
-```
-
-In the newer version, the type of the parameter i has changed from Integer to Text[50]. If a dependent extension raises this event, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Integer' to 'Text[50]' (AL0133)`.
-
-
-## Modifying events that can be subscribed to from other extensions
-
-Business type events and Integration type events can be subscribed to from dependent extensions. As an event subscriber can use the parameters passed by the event, removing parameters, modifying their type, or renaming them can break dependent extensions which subscribe to this event.
-
-### Examples of invalid changes:
+## Examples of invalid changes:
 
 In the following examples, the version 1.0 of the extension defines a Business type event whose accessibility is not public. This means that this event can be subscribed to from other extensions, but cannot be raised from other extensions.
 
@@ -129,7 +46,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-#### Example 1: Removing parameters
+### Example 1: Removing parameters
 
 Version 2.0 of the extension:
 ```
@@ -142,7 +59,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the newer version, the parameter i of the event has been removed. If a dependent extension subscribes to this event, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'i' is not found. (AL0282)`.
+In the version 2.0, the parameter `i` of the event has been removed. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'i' is not found. (AL0282)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
@@ -156,43 +73,54 @@ codeunit 50120 AnotherCodeunit()
 }
 ```
 
-#### Example 2: Renaming parameters
+### Example 2: Modifying parameters
 
-The dependent extension remain the same as in example 1.
-
-Version 2.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{
-    [BusinessEvent(false)]
-    local procedure MyEvent(i: Text[50])
-    begin
-    end;
-}
-```
-
-In the newer version, the type of the parameter i has changed from Integer to Text[50]. If a dependent extension raises this event, this will lead to a compilation error similar to `The type of the parameter 'i' on the event subscriber 'MyProcedure' does not match the expected type 'Integer'. (AL0284)`.
-
-#### Example 3: Modifying parameters
-
-The dependent extension remain the same as in example 1.
+The dependent extension remains the same as in example 1.
 
 Version 2.0 of the extension:
 ```
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
-    local procedure MyEvent(i: Text[50])
+    local procedure MyEvent(i: Boolean)
     begin
     end;
 }
 ```
 
-In the newer version, the signature of the event has changed. If a dependent extension raises this event, this will lead to a compilation error similar to `The type of the parameter 'i' on the event subscriber 'MyProcedure' does not match the expected type 'Integer'. (AL0284)`.
+In the version 2.0, the type of the parameter `i` has changed from Integer to Boolean. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The type of the parameter 'i' on the event subscriber 'MyProcedure' does not match the expected type 'Integer'. (AL0284)`.
 
-### Examples of valid changes:
+### Example 3: Renaming parameters
 
-#### Example 1: Adding new parameters
+The dependent extension remains the same as in example 1.
+
+Version 2.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{
+    [BusinessEvent(false)]
+    local procedure MyEvent(j: Integer)
+    begin
+    end;
+}
+```
+
+In the version 2.0, the parameter `i` has been renamed to `j`. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'i' is not found. (AL0282)`.
+
+## Example of valid changes:
+
+For `local` or `internal` events, it is allowed to add parameters to the event.
+
+Version 1.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{
+    [BusinessEvent(false)]
+    local procedure MyEvent(i: Integer)
+    begin
+    end;
+}
+```
 
 Version 2.0 of the extension:
 ```
@@ -205,7 +133,53 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the newer version, the signature of the event has changed. However, it does not break dependent extensions because event subscriber do not have to use all the parameters defined in the event in order to compile.
+In the version 2.0, the signature of the event has changed. However, it does not break dependent extensions because event subscribers do not have to use all the parameters defined in the event.
+
+## How to fix this diagnostic?
+
+In order to fix this diagnostic, the changes on the event signature must be reverted. The event should be marked as obsolete, and a new event should be introduced.
+It is advised to keep on raising the obsoleted event in order to not break the runtime behavior of dependent extensions while they haven't uptaken yet the new event.
+
+Version 2.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{
+    [Obsolete('Use MyNewEvent() instead. This method will be removed in version 3.0.', '2.0')]
+    [BusinessEvent(false)]
+    local procedure MyEvent(i: Integer)
+    begin
+    end;
+    
+    [BusinessEvent(false)]
+    local procedure MyNewEvent()
+    begin
+    end;
+
+    local procedure RaiseEvents(i : Integer)
+    begin
+        MyEvent(i);
+        MyNewEvent();
+    end;
+}
+```
+
+Once dependent extensions have been updated to use the new event, the obsolete event can be removed.
+
+Version 3.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{  
+    [BusinessEvent(false)]
+    local procedure MyNewEvent()
+    begin
+    end;
+
+    local procedure RaiseEvents()
+    begin
+        MyNewEvent();
+    end;
+}
+```
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
