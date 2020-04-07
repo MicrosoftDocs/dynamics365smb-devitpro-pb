@@ -152,8 +152,9 @@ dotnet
 ```
   
 ## See Also  
-[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
-[Implementing Location in AL](devenv-implement-location-al.md)  
-[CameraOptions Overview](devenv-Camera-options.md)  
- [RunOnClient property](properties/devenv-runonclient-property.md)  
+[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)    
+[CameraOptions Overview](devenv-Camera-options.md)   
+[Troubleshooting: Camera and Location](devenv-troubleshooting-camera-location.md)  
+[Implementing Location in AL](devenv-implement-location-al.md)   
+[RunOnClient property](properties/devenv-runonclient-property.md)  
  [WithEvents property](properties/devenv-withevents-property.md) 
