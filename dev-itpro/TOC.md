@@ -43,6 +43,7 @@
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
 #### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 <!--AppSourcevalidation-->
 ### AppSource Validation
