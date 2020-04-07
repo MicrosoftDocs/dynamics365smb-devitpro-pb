@@ -309,6 +309,7 @@
 ### Accessing Device Capabilities
 #### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing Location in AL](developer/devenv-implement-location-al.md)
+#### [Troubleshooting: Camera and Location](devenv-troubleshooting-camera-location.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## AL Programming
