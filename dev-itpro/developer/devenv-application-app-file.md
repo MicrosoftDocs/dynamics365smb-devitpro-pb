@@ -84,4 +84,4 @@ If you have a code-customized base application, the file can be edited to reflec
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
-[Instal an Update](../upgrade/upgrading-cumulative-update-v15.md)  
+[Install an Update](../upgrade/upgrading-cumulative-update-v15.md)  

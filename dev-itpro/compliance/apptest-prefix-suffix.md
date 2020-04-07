@@ -21,12 +21,12 @@ Declare your objects with a prefix as shown in the following examples.
 
 ### Table  
 ```
-table 70000000 MyPrefix Salesperson
+table 70000000 MyPrefixSalesperson
 ```
 
 ### Page
 ```
-page 70000000 MyPrefix Salesperson
+page 70000000 MyPrefixSalesperson
 ```
 
 ### Page extension  
@@ -35,12 +35,12 @@ actions
 {
     addafter(ApprovalEntries)
     {
-        action(MyPrefix Vacation)
+        action(MyPrefixVacation)
 ```
 
 ### Codeunit
 ```
-codeunit 70000000 MyPrefix Salesperson
+codeunit 70000000 MyPrefixSalesperson
 ```
 
 ## Benefits

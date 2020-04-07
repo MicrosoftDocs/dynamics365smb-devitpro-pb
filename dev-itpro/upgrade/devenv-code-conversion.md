@@ -111,7 +111,7 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
     3. Run the txt2al command:
     
         ```      
-        txt2al --source=C:\export2al\baseapplication --target=C:\export2al\baseapplication\al --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix=BC
+        txt2al --source=C:\export2al\baseapplication --target=C:\export2al\baseapplication\al --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix=BC --rename
         ```      
     
         If your solution contains .NET interoperability code, the following Txt2Al command line parameters are used to achieve a conversion that requires less manual intervention:  
@@ -123,6 +123,7 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
             >If you are interested in migrating your localization resources, you should use the `--addLegacyTranslationInfo` switch to instruct Txt2Al to generate information about the legacy IDs of the translation code.
         - `--dotNetTypePrefix` specifies a prefix to be used for all .NET type aliases created during the conversion. This will ensure that no naming conflicts occur with existing types. In the example, `BC` is the prefix.
     
+        - `--rename` renames the output files to prevent clashes with the source .txt files.
         When completed, there will be an .al file for for each object.
 2. Convert the test library TXT files to AL.
 
@@ -131,7 +132,7 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
     2. Run the txt2al command:
     
         ```      
-        txt2al --source=C:\export2al\testlibrary --target=C:\export2al\testlibrary\al --injectDotNetAddIns --dotNetTypePrefix=BCTest
+        txt2al --source=C:\export2al\testlibrary --target=C:\export2al\testlibrary\al --injectDotNetAddIns --dotNetTypePrefix=BCTest --rename
         ``` 
         
         Use a different value for the `--dotNetTypePrefix` than you did for the base application.

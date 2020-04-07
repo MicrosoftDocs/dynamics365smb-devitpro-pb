@@ -43,6 +43,7 @@
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
 #### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 <!--AppSourcevalidation-->
 ### AppSource Validation
@@ -59,6 +60,7 @@
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ## [Version numbers in Business Central](administration/version-numbers.md)
+## [Enabling new features ahead of time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
@@ -306,6 +308,9 @@
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
+### Accessing Device Capabilities
+#### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
+#### [Implementing Location in AL](developer/devenv-implement-location-al.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## AL Programming
@@ -585,12 +590,34 @@
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 <!-- end web services -->
-<!-- end CDS -->
+<!-- CDS -->
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 ## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
 <!-- end CDS -->
+<!--deprecated features -->
+# Removed or deprecated features
+## Deprecated Tables
+### [Deprecated Tables](upgrade/deprecated-tables.md)
+## Deprecated Features
+### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
+### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
+### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
+### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
+### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
+### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
+### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
+### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
+### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
+### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
+### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
+### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
+### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
+### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
+### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
+### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
+<!--end deprecated features -->
 <!--on-prem-->
 # Business Central on-premises
 <!-- deployment -->
@@ -715,25 +742,6 @@
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
-## Deprecated Tables
-### [Deprecated Tables](upgrade/deprecated-tables.md)
-## Deprecated Features
-### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
-### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
-### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
-### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
-### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
-### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
-### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
-### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
-### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
-### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
-### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
-### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
-### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
-### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
-### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
-### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
