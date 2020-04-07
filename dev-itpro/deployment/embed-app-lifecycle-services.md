@@ -41,13 +41,13 @@ In your LCS project, select the **Asset library** action to navigate to the Asse
 
 To deploy the package you uploaded in the **Asset library**, do these steps:
 
-1. Go to the **Rings** section of your project
+1. Go to the **Rings** section of your project.
 2. Select **Maintain** menu, then select **Deploy** action to open the **Deploy package** wizard.
 3. Select the package you want to deploy in the **Package name** field.
 4. Select the **Target platform**, then select **Deploy** button to start the deployment. 
 
 > [!IMPORTANT]
-> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of Business Central. The Embed App must run on a supported build of Business Central, for example, the current version of Business Central or one of the two immediately preceding versions. The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platform** field. The versions, which aren't displayed on that list are out of support. You customers running on these versions can't be serviced at the service levels set forth in the published [!INCLUDE[Service Level Agreement](https://www.microsoft.com/licensing/product-licensing/products). 
+> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of Business Central. The Embed App must run on a supported build of Business Central, for example, the current version of Business Central or one of the two immediately preceding versions. The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platform** field. The versions, which aren't displayed on that list are out of support. You customers running on these versions can't be serviced at the service levels set forth in the published [!INCLUDE[Service Level Agreement](https://www.microsoft.com/licensing/product-licensing/products)]. 
 
 After the Environment is successfully provisioned, its status on the list of application versions will be set to **Deployed**. To allow sign-ups to be directed to this application version, you select the **Use for new tenants** check box. You can only have one application version marked this way at a time. 
 
