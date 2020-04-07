@@ -12,7 +12,7 @@ author: blrobl
 
 # Troubleshooting: Camera and Location
 
-You might encounter some issues when trying to access the camera and location information of a device from [!INCLUDE[prodshort](includes/prodshort.md)]. Below you can find several scenarios that might be causing the issues.
+You might encounter some issues when trying to access the camera and location information of a device from [!INCLUDE[prodshort](includes/prodshort.md)]. Below you can find several scenarios that might be causing them.
 
 ### Device must have camera and location capabilities
 
@@ -22,24 +22,26 @@ If your device has camera and location capabilities but you still encounter prob
 
 ### Enabling access permission
 
-You must enable access to camera and location from your device's **Privacy Settings** and explicitly give permission to the browser you normally use to open the [!INCLUDE[webclient](includes/webclient.md)] or the [!INCLUDE[nav_uni_app_md](includes/nav_uni_app_md.md)] to access such capabilities.
+You must enable access to camera and location from your device's **Privacy Settings** and explicitly give permission to  [!INCLUDE[prodshort](includes/prodshort.md)] to access them.
+
+If you are using mobile apps, you must give permission to the [!INCLUDE[nav_uni_app_md](includes/nav_uni_app_md.md)]. If you are using [!INCLUDE[prodshort](includes/prodshort.md)] in a browser, you must give permission to the browser to access camera and location. In addition, you must also grant the [!INCLUDE[prodshort](includes/prodshort.md)] site permission to access the camera or location in the browser. By default, the device or browser will pop up a request to access these capabilities the first time the user activates them.
+
+> [!NOTE]
+> Some old browsers do not grant access to camera and location. For example, camera is not available in Internet Explorer or the legacy Edge browser.
 
 <!--For example, you could list a few steps to check or grant access to the location for BC (eg. in edge browser this is Settings >> Site Permissions >> Location or Camera and wil llook something like this once you grant acces. Mention that this varies by device and browser.-->
 
 
 ### Accessing the [!INCLUDE[webclient](includes/webclient.md)] from a browser
 
-If you open [!INCLUDE[webclient](includes/webclient.md)] from a web browser, you must also grant the [!INCLUDE[prodshort](includes/prodshort.md)] site permission to access the camera or location. By default, the browser will pop up a request to access these capabilities the first time the user activates such functionalities. 
 
-> [!NOTE]
-> Some old browsers do not grant access to camera and location. For example, camera is not available in Internet Explorer or the legacy Edge browser.
 
 In addition, such capabilities are only available when accessing the [!INCLUDE[webclient](includes/webclient.md)] using the `https://` URI scheme. The only exception is when using `http://localhost` for development and test purposes.
 
 
 ### Working with virtual technologies
 
-Accessing the [!INCLUDE[prodshort](includes/prodshort.md)] through remote desktop or another virtualization, access to camera or location might not be available.
+When accessing [!INCLUDE[prodshort](includes/prodshort.md)] through remote desktop or another virtualization, the access to camera or location might not be available.
 
 ### Antivirus sofware
 Some antivirus softwares block access to camera and location by default. Remember to check your antivirus software settings.
