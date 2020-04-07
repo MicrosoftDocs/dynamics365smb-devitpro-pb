@@ -232,6 +232,71 @@ codeunit 50120 AnotherCodeunit()
 
 ```
 
+## How to fix this diagnostic?
+
+In order to fix this diagnostic, the changes on the event attribute must be reverted. The event should be marked as obsolete, and a new event should be introduced.
+It is advised to keep on raising the obsoleted event in order to not break the runtime behavior of dependent extensions while they haven't uptaken yet the new event.
+
+### Example: Converting an integration type event exposing global variables to a business type event
+
+Version 1.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{
+    [IntegrationEvent(true, true)]
+    local procedure MyEvent()
+    begin
+    end;
+
+    var
+        myGlobalVariable: Integer;
+}
+```
+
+Version 2.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{
+    [Obsolete('Use MyNewEvent() instead. This event will be removed in version 3.0.', '2.0')]
+    [IntegrationEvent(true, true)]
+    local procedure MyEvent()
+    begin
+    end;
+    
+    [BusinessEvent(true)]
+    local procedure MyNewEvent()
+    begin
+    end;
+
+    local procedure RaiseEvents()
+    begin
+        MyEvent();
+        MyNewEvent();
+    end;
+
+    var
+        myGlobalVariable: Integer;
+}
+```
+
+Once dependent extensions have been updated to use the new event, the obsolete event can be removed.
+
+Version 3.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{  
+    [BusinessEvent(true)]
+    local procedure MyNewEvent()
+    begin
+    end;
+
+    local procedure RaiseEvents()
+    begin
+        MyNewEvent();
+    end;
+}
+```
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

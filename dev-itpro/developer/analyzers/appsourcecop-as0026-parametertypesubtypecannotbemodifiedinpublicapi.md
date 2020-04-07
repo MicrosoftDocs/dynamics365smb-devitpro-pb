@@ -23,6 +23,9 @@ The type and subtype of parameters cannot be modified in events and external pro
 
 It is not allowed to change the type of subtype of parameters in public procedures as this will break dependent extensions which are calling them.
 
+> [!NOTE]
+> This rule allows to convert Option type parameters into Enum type parameters.
+
 ## Examples of invalid code:
 
 ### Example 1: Modifying parameters type
@@ -77,6 +80,18 @@ In version 2.0, the subtype of the parameter i has changed from a Customer recor
 
 In order to fix this diagnostic, the changes on the procedure signature must be reverted. The procedure should be marked as obsolete, and a new procedure should be introduced.
 The behavior of the obsoleted procedure should be preserved in order to not break the runtime behavior of dependent extensions while they haven't uptaken yet the new procedure.
+
+### Example: Modifying a parameter subtype in a procedure
+
+Version 1.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{
+    procedure MyProcedure(i: Record Customer)
+    begin
+    end;
+}
+```
 
 Version 2.0 of the extension:
 ```

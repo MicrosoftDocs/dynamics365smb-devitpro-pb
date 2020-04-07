@@ -28,8 +28,7 @@ The rules [AS0023](appsourcecop-as0023-returntypecannotbemodifiedinpublicapi.md)
 This rule validates that changes on the parameters of `Business` type and `Integration` type do not break dependent extensions which subscribe to these events. As an event subscriber can use the parameters passed by the event and references them bu name, removing parameters, modifying their type, and renaming them can break dependent extensions.
 
 > [!NOTE]
-> Dependent extensions can subscribe to these events, even if the events are marked with the `local` or `internal` access modifiers. 
-> The access modifier only limits the ability to raise the event. 
+> Dependent extensions can subscribe to these events, even if the events are marked with the `local` or `internal` access modifiers. The access modifier only limits the ability to raise the event. 
 
 ## Examples of invalid changes:
 
@@ -140,11 +139,29 @@ In the version 2.0, the signature of the event has changed. However, it does not
 In order to fix this diagnostic, the changes on the event signature must be reverted. The event should be marked as obsolete, and a new event should be introduced.
 It is advised to keep on raising the obsoleted event in order to not break the runtime behavior of dependent extensions while they haven't uptaken yet the new event.
 
+### Example: Removing a parameter to a Business type event.
+
+Version 1.0 of the extension:
+```
+codeunit 50100 MyCodeunit
+{
+    [BusinessEvent(false)]
+    local procedure MyEvent(i: Integer)
+    begin
+    end;
+    
+    local procedure RaiseEvents(i : Integer)
+    begin
+        MyEvent(i);
+    end;
+}
+```
+
 Version 2.0 of the extension:
 ```
 codeunit 50100 MyCodeunit
 {
-    [Obsolete('Use MyNewEvent() instead. This method will be removed in version 3.0.', '2.0')]
+    [Obsolete('Use MyNewEvent() instead. This event will be removed in version 3.0.', '2.0')]
     [BusinessEvent(false)]
     local procedure MyEvent(i: Integer)
     begin
