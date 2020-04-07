@@ -43,6 +43,7 @@
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
 #### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 <!--AppSourcevalidation-->
 ### AppSource Validation
@@ -307,6 +308,9 @@
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
+### Accessing Device Capabilities
+#### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
+#### [Implementing Location in AL](developer/devenv-implement-location-al.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## AL Programming
