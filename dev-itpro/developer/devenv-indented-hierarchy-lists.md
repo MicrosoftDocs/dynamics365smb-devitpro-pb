@@ -2,7 +2,7 @@
 title: "Designing Indented Hierarchy Lists"
 description: This article explains how to indent rows in a repeater control to design hierarchical lists. You can nest records that users can navigate, expand, and collapse.
 ms.custom: na
-ms.date: 04/03/2020
+ms.date: 04/07/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,6 +21,8 @@ Using the indentation properties in AL, you can display rows in a parent-child s
 ![Fixed indented list](media/static-tree.png "Fixed indented list")
 
 A row that's indented from a row above is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
+
+You can display indented hierarchy lists on any page type, including List pages, Worksheets and ListParts, that can also be editable.  
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
