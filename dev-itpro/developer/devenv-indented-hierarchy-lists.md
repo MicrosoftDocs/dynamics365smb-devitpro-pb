@@ -22,7 +22,7 @@ Using the indentation properties in AL, you can display rows in a parent-child s
 
 A row that's indented from a row above is considered a *child* of that row. The row above is considered the *parent*. Indenting rows can help organize related records in the list and make it more readable for the user.
 
-You can display indented hierarchy lists on any page type, including List pages, Worksheets and ListParts, that can also be editable.  
+You can display indented hierarchy lists on any page type, including List pages, Worksheets, and ListParts. Pages can also be editable.  
 
 There are two kinds of indented hierarchy lists: fixed and collapsible. In a fixed hierarchy, rows that are indented are always shown. In a collapsible, users can collapse and expand parent rows to show and hide child records.
 
