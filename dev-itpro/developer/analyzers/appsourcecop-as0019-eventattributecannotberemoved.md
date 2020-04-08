@@ -21,11 +21,10 @@ Removing Event attributes such as IntegrationEvent or BusinessEvent is not allow
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-Removing the event attribute on Business and Integration type events is not allowed, because it will break dependent extensions which are subscribing to them.
-It is allowed to remove the InternalEvent attribute, as InternalEvents can only be subscribed to from within the same module.
+## Remarks
+Removing the event attribute on Business and Integration type events is not allowed, because it will break dependent extensions which are subscribing to them. It is allowed to remove the InternalEvent attribute, as InternalEvents can only be subscribed to from within the same module.
 
-## Example of invalid code:
-
+## Bad code example
 In the following examples, the version 1.0 of the extension defines a Business type event whose accessibility is not public. This means that this event cannot be raised from other extensions, but it can still be subscribed to from other extensions.
 
 Version 1.0 of the extension:
@@ -49,7 +48,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the event attribute has been renamed. If a dependent extension subscribed to this event, this will lead to a compilation error similar to `Object member 'MyEvent' is not an event. (AL0281)`.
+In version 2.0, the event attribute has been renamed. If a dependent extension subscribed to this event, this will lead to a compilation error similar to `Object member 'MyEvent' is not an event. (AL0281)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
