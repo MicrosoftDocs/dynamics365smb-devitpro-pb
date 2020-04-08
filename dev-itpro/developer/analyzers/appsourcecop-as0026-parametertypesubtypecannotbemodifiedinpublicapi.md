@@ -76,50 +76,6 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the subtype of the parameter i has changed from a Customer record to a Vendor record. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Record Vendor' to 'Record Customer' (AL0133)`.
 
-## How to fix this diagnostic?
-
-In order to fix this diagnostic, the changes on the procedure signature must be reverted. The procedure should be marked as obsolete, and a new procedure should be introduced.
-The behavior of the obsoleted procedure should be preserved in order to not break the runtime behavior of dependent extensions while they haven't uptaken yet the new procedure.
-
-### Example: Modifying a parameter subtype in a procedure
-
-Version 1.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{
-    procedure MyProcedure(i: Record Customer)
-    begin
-    end;
-}
-```
-
-Version 2.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{
-    [Obsolete('Use MyProcedure(i: Record Vendor) instead. This method will be removed in version 3.0.', '2.0')]
-    procedure MyProcedure(i: Record Customer)
-    begin
-    end;
-    
-    procedure MyProcedure(i: Record Vendor)
-    begin
-    end;
-}
-```
-
-Once dependent extensions have been updated to use the new procedure, the obsolete procedure can be removed.
-
-Version 3.0 of the extension:
-```
-codeunit 50100 MyCodeunit
-{  
-    procedure MyProcedure(i: Record Vendor)
-    begin
-    end;
-}
-```
-
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
