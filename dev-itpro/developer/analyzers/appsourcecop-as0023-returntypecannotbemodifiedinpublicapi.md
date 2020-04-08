@@ -21,14 +21,16 @@ A return type cannot be modified in events and external procedures.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule validates that the return type of a public procedures has not been changed in a way that would break dependent extensions.
+## Remarks
+
+This rule validates that the return type of a public procedure has not been changed in a way that would break dependent extensions.
 It is not allowed to change the return type of a public procedure that was published with a return type in a previous version.
 It is only allowed to add a return type to a procedure which previously did not have one.
 
-> [!NOTE]
+> [!NOTE]  
 > This rule also covers the cases related to the [TryFunction](../properties/devenv-trymethod-property.md) attribute which implicitly defines a Boolean return type. 
 
-## Examples of invalid changes:
+## Bad code examples
 
 In the following examples, the version 1.0 of the extension defines a public procedure which returns an Integer.
 
@@ -43,7 +45,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-### Example 1: Changing the return type of a procedure from Integer to Boolean
+### Example 1 - Changing the return type of a procedure from Integer to Boolean
 
 Version 2.0 of the extension:
 ```
@@ -72,7 +74,7 @@ codeunit 50120 AnotherCodeunit()
 }
 ```
 
-### Example 2: Removing the return type of a procedure
+### Example 2 - Removing the return type of a procedure
 
 Version 2.0 of the extension:
 ```
@@ -100,7 +102,7 @@ codeunit 50120 AnotherCodeunit()
 }
 ```
 
-### Example 3: Removing the return type of a procedure and adding a TryFunction attribue.
+### Example 3 - Removing the return type of a procedure and adding a TryFunction attribute
 
 Version 2.0 of the extension:
 ```
@@ -116,7 +118,7 @@ codeunit 50100 MyCodeunit
 
 In the version 2.0, the procedure now returns a Boolean value because it is marked as a TryFunction. This scenario would lead to the same compilation errors than mentioned in Example 1 above.
 
-## Examples of valid changes:
+## Good code examples
 
 In the following examples, the version 1.0 of the extension defines a procedure which does not have a return type.
 
@@ -130,7 +132,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-### Example 1: Adding a return type to a procedure
+### Example 1 - Adding a return type to a procedure
 
 Version 2.0 of the extension:
 ```
@@ -145,7 +147,7 @@ codeunit 50100 MyCodeunit
 
 In the version 2.0, the procedure `MyProcedure` is now returning a boolean. However, it does not break dependent extensions because they were not consuming the return type of the procedure.
 
-### Example 2: Adding a TryFunction attribute to a procedure
+### Example 2 - Adding a TryFunction attribute to a procedure
 
 Version 2.0 of the extension:
 ```
@@ -159,8 +161,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the procedure is now marked as a TryFunction. This means that his return type has implicitly been changed to Boolean.
-Similarly, it is possible to add a TryFunction attribute on a function that already returned a Boolean.
+In the version 2.0, the procedure is now marked as a TryFunction. This means that this return type has implicitly been changed to Boolean. Similarly, it is possible to add a TryFunction attribute on a function that already returned a Boolean.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
