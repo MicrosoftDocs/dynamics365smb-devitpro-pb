@@ -17,11 +17,13 @@ Anything can be made conditional, also table fields. Symbols can be defined in t
 
 There will also be a server side check-in that create ParseOptions from manifest and it when parsing up syntax trees.
 
-The following AL preprocessor directives are supported:
+The following AL preprocessor directives are supported. For examples, see the [Examples](devenv-directives-in-al-md#Examples) section below.
 
 |Preprocessor directive |Description |
 |-----------------------|------------|
-|#elif                  |  |
+|#if                    |    |
+|#else                  |    |
+|#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
 |#endif                 |  |
 |#region                |  |
 |#endregion             |  |
