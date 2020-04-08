@@ -22,7 +22,7 @@ The event attribute type cannot be changed because it might break dependent exte
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-As part of your extension, you can [publish events](../devenv-publishing-events) that will be available for other extensions [to subscribe to](../devenv-subscribing-to-events).
+As part of your extension, you can [publish events](../devenv-publishing-events.md) that will be available for other extensions [to subscribe to](../devenv-subscribing-to-events.md).
 In AL, you can define events of the following types:
 - [BusinessEvent](../methods/devenv-business-attribute.md)
 - [IntegrationEvent](../methods/devenv-integration-attribute.md)
@@ -44,7 +44,7 @@ It is not allowed to convert an integration type event to an internal event and 
 
 It is allowed to convert an integration type event to a business type event when the following two conditions are met:
 - the integration event did not expose any global variables, and
-- the integration event does not stop exposing the sender to its subscribers (see [AS0021](appsourcecop-as0021-argumentineventattributecannotbechangedtofalse)).
+- the integration event does not stop exposing the sender to its subscribers (see [AS0021](appsourcecop-as0021-argumentineventattributecannotbechangedtofalse.md)).
 
 As an integration type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. This would break dependent extensions which are subscribing to this event.
 
