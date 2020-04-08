@@ -21,14 +21,16 @@ The type and subtype of parameters cannot be modified in events and external pro
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 It is not allowed to change the type of subtype of parameters in public procedures as this will break dependent extensions which are calling them.
 
-> [!NOTE]
-> This rule allows to convert Option type parameters into Enum type parameters.
+> [!NOTE]  
+> This rule allows to convert `Option` type parameters into `Enum` type parameters.
 
-## Examples of invalid code:
+## Bad code examples
 
-### Example 1: Modifying parameters type
+### Example 1 - Modifying parameters type
 
 Version 1.0 of the extension:
 ```
@@ -50,9 +52,9 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In version 2.0, the type of the parameter i has changed from Integer to Boolean. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Integer' to 'Boolean' (AL0133)`.
+In version 2.0, the type of the parameter i has changed from `Integer` to `Boolean`. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Integer' to 'Boolean' (AL0133)`.
 
-### Example 2: Modifying parameters subtype
+### Example 2 - Modifying parameters subtype
 
 Version 1.0 of the extension:
 ```
