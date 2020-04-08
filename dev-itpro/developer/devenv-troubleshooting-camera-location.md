@@ -33,9 +33,6 @@ By default, the device or browser will pop up a request to access these capabili
 > [!NOTE]
 > Some old browsers do not grant access to camera and location. For example, camera is not available in Internet Explorer or the legacy Edge browser.
 
-<!--For example, you could list a few steps to check or grant access to the location for BC (eg. in edge browser this is Settings >> Site Permissions >> Location or Camera and wil llook something like this once you grant acces. Mention that this varies by device and browser.-->
-
-
 ### [!INCLUDE[webclient](includes/webclient.md)] Connection not Secure
 
 The camera and location capabilities are only available when accessing the [!INCLUDE[webclient](includes/webclient.md)] through SSL secured HTTP connections, using the `https://` URI scheme. 

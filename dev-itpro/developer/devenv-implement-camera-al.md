@@ -150,7 +150,9 @@ dotnet
 }
 
 ```
-  
+
+For information about troubleshooting access to camera, see [Troubleshooting: Camera and Location](devenv-troubleshooting-camera-location.md).
+
 ## See Also  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)    
 [CameraOptions Overview](devenv-Camera-options.md)   
