@@ -21,16 +21,18 @@ Parameters cannot be removed from events.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-Events defined in an extension can be referenced from dependent extensions, which can raise them, subscribe subscribe to them, or both.
+## Remarks
+
+Events defined in an extension can be referenced from dependent extensions, which can raise them, subscribe to them, or both.
 
 The rules [AS0023](appsourcecop-as0023-returntypecannotbemodifiedinpublicapi.md), [AS0024](appsourcecop-as0024-parameterscannotberemovedoraddedinexternalprocedures.md), and [AS0026](appsourcecop-as0026-parametertypesubtypecannotbemodifiedinpublicapi.md) validate against breaking changes in public methods, which includes public events. They are then validating the scenarios around events being raised from dependent extensions.
 
-This rule validates that changes on the parameters of `Business` type and `Integration` type do not break dependent extensions which subscribe to these events. As an event subscriber can use the parameters passed by the event and references them bu name, removing parameters, modifying their type, and renaming them can break dependent extensions.
+This rule validates that changes on the parameters of `Business` type and `Integration` type do not break dependent extensions which subscribe to these events. As an event subscriber can use the parameters passed by the event and references them by name, removing parameters, modifying their type, and renaming them can break dependent extensions.
 
-> [!NOTE]
+> [!NOTE]  
 > Dependent extensions can subscribe to these events, even if the events are marked with the `local` or `internal` access modifiers. The access modifier only limits the ability to raise the event. 
 
-## Examples of invalid changes:
+## Bad code examples
 
 In the following examples, the version 1.0 of the extension defines a Business type event whose accessibility is not public. This means that this event can be subscribed to from other extensions, but cannot be raised from other extensions.
 
@@ -45,7 +47,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-### Example 1: Removing parameters
+### Example 1 - Removing parameters
 
 Version 2.0 of the extension:
 ```
@@ -72,7 +74,7 @@ codeunit 50120 AnotherCodeunit()
 }
 ```
 
-### Example 2: Modifying parameters
+### Example 2 - Modifying parameters
 
 The dependent extension remains the same as in example 1.
 
@@ -87,9 +89,9 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the type of the parameter `i` has changed from Integer to Boolean. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The type of the parameter 'i' on the event subscriber 'MyProcedure' does not match the expected type 'Integer'. (AL0284)`.
+In version 2.0, the type of the parameter `i` has changed from Integer to Boolean. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The type of the parameter 'i' on the event subscriber 'MyProcedure' does not match the expected type 'Integer'. (AL0284)`.
 
-### Example 3: Renaming parameters
+### Example 3 - Renaming parameters
 
 The dependent extension remains the same as in example 1.
 
@@ -104,9 +106,9 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the parameter `i` has been renamed to `j`. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'i' is not found. (AL0282)`.
+In version 2.0, the parameter `i` has been renamed to `j`. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'i' is not found. (AL0282)`.
 
-## Example of valid changes:
+## Good code examples
 
 For `local` or `internal` events, it is allowed to add parameters to the event.
 
@@ -132,7 +134,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the signature of the event has changed. However, it does not break dependent extensions because event subscribers do not have to use all the parameters defined in the event.
+In version 2.0, the signature of the event has changed. However, it does not break dependent extensions because event subscribers do not have to use all the parameters defined in the event.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
