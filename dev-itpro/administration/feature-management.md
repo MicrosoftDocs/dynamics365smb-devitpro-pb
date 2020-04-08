@@ -96,7 +96,7 @@ No. Business Central doesn't provide the ability to enable a feature for a singl
 
 #### I don't see a link to try out an optional feature. Is something wrong?  
 
-Some features do not provide a way to try out the feature for yourself and will not display a **Try it out** link.  For such features, it is recommended that you first enable and test this feature on a sandbox environment that has a copy of production data before doing this on a production environment.
+Some features don't provide a way to try out the feature for yourself and won't display a **Try it out** link. For these features, it's recommended you first enable and test this feature on a sandbox environment that has a copy of production data before doing this on a production environment.
 
 #### Are optional features also optional on new environments?
 
