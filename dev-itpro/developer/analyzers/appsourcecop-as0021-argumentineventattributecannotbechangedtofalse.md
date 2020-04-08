@@ -21,13 +21,14 @@ An argument in an event attribute cannot be changed to false.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule verifies that events that are available from other extensions such as [Business](../methods/devenv-business-attribute) type events or [Integration](../methods/devenv-integration-attribute) type events do not stop exposing their sender or their global variables.
+## Remarks
+This rule verifies that events that are available from other extensions such as [Business](../methods/devenv-business-attribute.md) type events or [Integration](../methods/devenv-integration-attribute.md) type events do not stop exposing their sender or their global variables.
 
-This does not apply to [Internal](../methods/devenv-internal-attribute) type events as they are not exposed to dependent extensions.
+This does not apply to [Internal](../methods/devenv-internal-attribute.md) type events as they are not exposed to dependent extensions.
 
-## Examples of invalid code:
+## Bad code examples
 
-### Example 1: A business type event stops exposing its sender
+### Example 1 - A business type event stops exposing its sender
 
 Version 1.0 of the extension:
 ```
@@ -66,7 +67,7 @@ codeunit 50120 AnotherCodeunit()
 
 ```
 
-### Example 2: An integration type event stops exposing global variables
+### Example 2 - An integration type event stops exposing global variables
 
 Version 1.0 of the extension:
 ```
@@ -111,9 +112,9 @@ codeunit 50120 AnotherCodeunit()
 
 ```
 
-## Example of valid code:
+## Good code examples
 
-### Example 1: An event does not change overtime
+### Example 1 - An event does not change over time
 
 Version 1.0 of the extension:
 ```
@@ -139,7 +140,7 @@ codeunit 50100 MyCodeunit
 
 The event remains the same from on version to the other.
 
-### Example 2: An event starts exposing it sender
+### Example 2 - An event starts exposing it sender
 
 Version 1.0 of the extension:
 ```
