@@ -16,7 +16,7 @@ You can access the camera of a device from the [!INCLUDE[webclient](includes/web
 You can also add access to the camera to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Picture` factbox on the `Item Card`, which lets you take a picture of a specific item and store it together with the item.  
   
 > [!IMPORTANT]  
->  The camera access is only available on devices that have a camera. 
+> The camera access is only available on devices that have a camera. 
 
 ## Example
 
@@ -155,7 +155,7 @@ For information about troubleshooting access to camera, see [Troubleshooting: Ca
 
 ## See Also  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)    
-[CameraOptions Overview](devenv-Camera-options.md)   
+[Camera Options Overview](devenv-camera-options.md)   
 [Troubleshooting: Camera and Location](devenv-troubleshooting-camera-location.md)  
 [Implementing Location in AL](devenv-implement-location-al.md)   
 [RunOnClient property](properties/devenv-runonclient-property.md)  
