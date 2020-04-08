@@ -21,35 +21,34 @@ The event attribute type cannot be changed because it might break dependent exte
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
 As part of your extension, you can [publish events](../devenv-publishing-events) that will be available for other extensions [to subscribe to](../devenv-subscribing-to-events).
-In AL, you can define events of type:
-- [BusinessEvent](../methods/devenv-business-attribute)
-- [IntegrationEvent](../methods/devenv-integration-attribute)
-- [InternalEvent](../methods/devenv-internal-attribute)
+In AL, you can define events of the following types:
+- [BusinessEvent](../methods/devenv-business-attribute.md)
+- [IntegrationEvent](../methods/devenv-integration-attribute.md)
+- [InternalEvent](../methods/devenv-internal-attribute.md)
 
-This rule verifies that the conversion of one event from version to another does not potentially break dependent extensions.
+This rule verifies that the conversion of an event from one version to another does not potentially break dependent extensions.
 
-### Converting Business Events
+### Converting business events
 
 It is not allowed to convert a business type event to an integration type event or to an internal type event.
 
 Business type events defines a formal contract that carries an implicit promise not to change in the future. Integration type events do not carry the same promise and can be changed over time. It is then not allowed to convert a business type event to an integration type event.
 
-As a business type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. 
-This would break dependent extensions which are subscribing to this event.
+As a business type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. This would break dependent extensions which are subscribing to this event.
 
-### Converting Integration Events
+### Converting integration events
 
 It is not allowed to convert an integration type event to an internal event and it is allowed in some cases to convert it to a business type event.
 
-It is allowed to convert an integration type event to a business type event when these two conditions are met:
-- the integration event did not expose any global variables,
+It is allowed to convert an integration type event to a business type event when the following two conditions are met:
+- the integration event did not expose any global variables, and
 - the integration event does not stop exposing the sender to its subscribers (see [AS0021](appsourcecop-as0021-argumentineventattributecannotbechangedtofalse)).
 
-As an integration type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. 
-This would break dependent extensions which are subscribing to this event.
+As an integration type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. This would break dependent extensions which are subscribing to this event.
 
-### Converting Internal Events
+### Converting internal events
 
 Internal events can only be subscribed to from within the same module. It is then allowed to turn them into business or integration type events.
 
@@ -109,7 +108,7 @@ The event `MyEvent` now becomes available for other extensions.
 
 ## Examples of invalid event type conversions
 
-### Example 1: Conversion of a business type event to an internal type event
+### Example 1 - Conversion of a business type event to an internal type event
 
 Version 1.0 of the extension:
 ```
@@ -148,7 +147,7 @@ codeunit 50120 AnotherCodeunit()
 
 ```
 
-### Example 2: Conversion of an integration type event that exposed variables to a business type event.
+### Example 2 - Conversion of an integration type event that exposed variables to a business type event
 
 Version 1.0 of the extension:
 ```
@@ -193,7 +192,7 @@ codeunit 50120 AnotherCodeunit()
 
 ```
 
-### Example 3: Conversion of an integration type event to a business type event that stops exposing its sender
+### Example 3 - Conversion of an integration type event to a business type event that stops exposing its sender
 
 Version 1.0 of the extension:
 ```
