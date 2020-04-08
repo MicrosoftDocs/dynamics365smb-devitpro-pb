@@ -21,12 +21,14 @@ Pages and PageExtensions that have been published must not be renamed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 It is not allowed to rename pages which have been published. This will break dependent extensions which:
 - are referencing this page from code by name,
 - are extending the page by name using a page extension,
 - are customizing the page by name using page customizations.
 
-## How to fix this diagnostic?
+## How to fix this diagnostic
 
 Revert the change made on the page in order to keep the name defined previously. 
 
@@ -34,7 +36,7 @@ If the rename was done in order to define the UI display of the page, consider u
 
 If the rename was done in order to comply with naming rules such as [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md), consider obsoleting the page and introducing a new one.
 
-## Examples of errors for dependent extensions:
+## Examples of errors for dependent extensions
 
 Renaming a page has the same consequences as removing it for dependent extensions which are referencing it by name. You can then find examples of errors reported in dependent extensions in rule [AS0029](appsourcecop-as0029-pagedeletionnotallowed.md).
 
