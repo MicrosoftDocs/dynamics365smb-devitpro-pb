@@ -21,22 +21,24 @@ Pages and PageExtensions that have been published must not be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 It is not allowed to remove pages which have been published. This will break dependent extensions which:
 - are referencing this page from code,
 - are extending the page using a page extension,
 - are customizing the page using page customizations.
 
-## How to fix this diagnostic?
+## How to fix this diagnostic
 
 Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 
-## Examples of errors for dependent extensions:
+## Examples of errors for dependent extensions
 
 The following examples show some of the compilation errors that will be reported on dependent extensions if a page is removed from one version to another.
 
 Version 1.0 of the extension defines a page named MyPage. Version 2.0 does not define this page anymore.
 
-### Example 1: Extensions referencing this page using a variable.
+### Example 1 - Extensions referencing this page using a variable
 
 If a dependent extension references this page from code, when compiling against version 2.0, this will lead to a compilation error similar to `Page 'MyPage' is missing (AL0185)`.
 
@@ -51,7 +53,7 @@ codeunit 50100 SomeCodeunit
 }
 ```
 
-### Example 2: Extensions running this page from code.
+### Example 2 - Extensions running this page from code
 
 If a dependent extension runs this page from code, when compiling against version 2.0, this will lead to a compilation error similar to `'Page' does not contain a definition for 'MyPage' (AL0132)`.
 
@@ -65,7 +67,7 @@ codeunit 50100 SomeCodeunit
 }
 ```
 
-### Example 3: Extensions running this page from an action.
+### Example 3 - Extensions running this page from an action
 
 If a dependent extension references this page from an action, when compiling against version 2.0, this will lead to a compilation error similar to `Page 'MyPage' is missing (AL0185)`.
 
@@ -76,7 +78,7 @@ If a dependent extension references this page from an action, when compiling aga
     }
 ```
 
-### Example 4: Extensions extending or customizing this page.
+### Example 4 - Extensions extending or customizing this page
 
 If a dependent extension extends or customizes this page, when compiling against version 2.0, this will lead to a compilation error similar to `The target Page MyPage for the extension object is not found (AL0247)`.
 
