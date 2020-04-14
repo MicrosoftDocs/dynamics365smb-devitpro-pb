@@ -23,8 +23,8 @@ The app displaying the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!I
   
  <!-- Having a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution that runs on a smaller device brings it in the hands of many more users and your app is easy to distribute. Other advantages are that using a tablet or phone, you can capture data closer to the source, for example, at the customer site, and thereby improve accuracy and reduce end-to-end time.   -->
   
-
-The [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] do not replace the [!INCLUDE[nav_web](includes/nav_web_md.md)]. Instead, they offer a touch interface for a limited set of application scenarios compared to the [!INCLUDE[nav_web](includes/nav_web_md.md)]. The [!INCLUDE[nav_web](includes/nav_web_md.md)] supports more complex business processes and heavier data entry than it is possible on the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)].  
+> [!IMPORTANT]
+> The [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] do not replace the [!INCLUDE[nav_web](includes/nav_web_md.md)]. Instead, they offer a touch interface for a limited set of application scenarios compared to the [!INCLUDE[nav_web](includes/nav_web_md.md)]. The [!INCLUDE[nav_web](includes/nav_web_md.md)] supports more complex business processes and heavier data entry than it is possible on the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)].  
   
  [!INCLUDE[prodshort](includes/prodshort.md)] is also designed for intensive use, and the user can have multiple windows open at the same time, for example, to compare sales orders, or do more things at a time. This is not possible in either [!INCLUDE[nav_web](includes/nav_web_md.md)] or [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)]. For more information, see [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md).
 
