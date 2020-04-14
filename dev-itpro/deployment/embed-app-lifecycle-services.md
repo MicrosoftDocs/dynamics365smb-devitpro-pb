@@ -22,7 +22,8 @@ In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/in
 
 Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you sign in to LCS, click on the **Preview feature management** action. Then on the Preview feature management page, select the "+" action to add a new preview feature using a preview code. In the **Preview code** field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the Private preview features on this page.     
 
-> [!IMPORTANT] Even though the project will be created by one user, every user you are planning to add to your LCS project will have to activate the "Microsoft Dynamics 365 Business Central (SaaS)" feature using the same preview code you received from Microsoft. Without this activation, the users you add to your LCS project will run into permissions issues when trying to open the LCS project that you created. 
+> [!IMPORTANT]  
+> Even though the project will be created by one user, every user you are planning to add to your LCS project will have to activate the "Microsoft Dynamics 365 Business Central (SaaS)" feature using the same preview code you received from Microsoft. Without this activation, the users you add to your LCS project will run into permissions issues when trying to open the LCS project that you created. 
 
 Navigate back to the main page and start creating a new project by selecting the "+" action. Choose **Migrate, create solutions, and learn** category as the purpose of the project. On the next page, provide the project name. 
 
