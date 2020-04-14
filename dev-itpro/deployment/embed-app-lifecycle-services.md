@@ -12,7 +12,7 @@ ms.author: jswymer
 ms.date: 04/06/2020
 ---
 
-# Managing an [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [!INCLUDE[embedapp](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
+# Managing an [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
 
 Microsoft provides essential functionality within [Microsoft Lifecycle Services](https://lcs.dynamics.com/v2) collaboration portal (LCS) to support qualified ISVs in managing the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.  
 
@@ -21,6 +21,9 @@ Microsoft provides essential functionality within [Microsoft Lifecycle Services]
 In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country you would like to deploy to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country that is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
 
 Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you sign in to LCS, click on the **Preview feature management** action. Then on the Preview feature management page, select the "+" action to add a new preview feature using a preview code. In the **Preview code** field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the Private preview features on this page.     
+
+> [!IMPORTANT]  
+> Even though the project will be created by one user, every user you are planning to add to your LCS project will have to activate the "Microsoft Dynamics 365 Business Central (SaaS)" feature using the same preview code you received from Microsoft. Without this activation, the users you add to your LCS project will run into permissions issues when trying to open the LCS project that you created. 
 
 Navigate back to the main page and start creating a new project by selecting the "+" action. Choose **Migrate, create solutions, and learn** category as the purpose of the project. On the next page, provide the project name. 
 
@@ -57,10 +60,17 @@ It isn't possible to create environments and add customers in LCS. The customers
 
 Once you've established the reseller relationship with the customer and added [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscriptions with required number of licenses for them, you must use your own branded Embed app URL to sign in their environment and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center.
 
-To create a new production environment for your customers, navigate to this URL: `
-https://[your product family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production`  
+To create a new production environment for your customers, go to this URL:
 
-To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL: `https://[your product family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/admin`  
+```http
+https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production 
+```
+
+To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL:
+
+```http
+https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/admin
+```
 
 Each environment that you signed up for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is then displayed on the Tenant list part in your LCS project. On this part, you can find more details about the environment, including the name and the URL to sign in to each one. You can see which environments are running on which application version by selecting application version on the list.  
 

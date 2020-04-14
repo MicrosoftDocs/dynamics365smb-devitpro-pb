@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview
-ms.date: 04/03/2020
+ms.date: 04/08/2020
 ms.author: mikebc
 ---
 
@@ -93,6 +93,10 @@ No. At this time, feature management is only for features released by Microsoft.
 #### Can I enable a feature for a single user?
 
 No. Business Central doesn't provide the ability to enable a feature for a single user or group of users. Enabled features apply to all users of an environment.  
+
+#### I don't see a link to try out an optional feature. Is something wrong?  
+
+Some features don't provide a way to try out the feature for yourself and won't display a **Try it out** link. For these features, it's recommended you first enable and test this feature on a sandbox environment that has a copy of production data before doing this on a production environment.
 
 #### Are optional features also optional on new environments?
 
