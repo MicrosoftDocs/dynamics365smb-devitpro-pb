@@ -22,20 +22,21 @@ This page defines some of the best practices to follow when writing AL code for 
 An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
 
 ## File naming 
-Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type.
+Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects.
 
 ### File naming notation
 Follow the syntax for file naming as shown below:
 
 |Full objects|Extensions|
 |------|---------------------------|
-|`<ObjectNameExcludingPrefix>.<FullTypeName>.al`|`<ObjectNameExcludingPrefix>.<FullTypeName>Ext.al`|
+|`<ObjectNameSuffix>.<FullTypeName>.al`|`<ObjectNameSuffix>.<FullTypeName>Ext.al`|
+|`<PrefixObjectName>.<FullTypeName>.al`|`<PrefixObjectName>.<FullTypeName>Ext.al`|
 
 ### Type map
 Use the listed abbreviations for each type of object in the file naming:
 
 |Object    |Abbreviation|
-|----------|---------------------------|
+|----------|------------|
 |Page      |Page|
 |Page Extension|PageExt|
 |Page Customization|PageCust|
@@ -52,15 +53,43 @@ Use the listed abbreviations for each type of object in the file naming:
 |Dotnet    |Dotnet|
 |Profile   |Profile|
 
-### Examples of file naming
+### Examples of object naming
 
-The following table illustrates how the file naming should look.
+The following examples illustrate how the file naming should look.
+
+#### Table  
+```
+table 70000000 MyPrefixSalesperson
+```
+
+#### Page
+```
+page 70000000 MyPrefixSalesperson
+```
+
+#### Page extension  
+```
+actions
+{
+    addafter(ApprovalEntries)
+    {
+        action(MyPrefixVacation)
+```
+
+#### Codeunit
+```
+codeunit 70000000 MyPrefixSalesperson
+```
+
+### File naming examples
+
+For the listed objects above, these are examples of the file naming.
 
 |Object name|File name|
 |------|---------------------------|
-|codeunit 1000 "Job Calculate WIP"|`JobCalculateWIP.Codeunit.al`|
-|page 21 "Customer Card"|`CustomerCard.Page.al`|
-|page 50100 "PRE Customer Card" extends "Customer Card"|`CustomerCard.PageExt.al`|
+|codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
+|page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
+|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
 
 
 ## Formatting
