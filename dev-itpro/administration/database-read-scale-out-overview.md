@@ -43,7 +43,7 @@ When you develop solutions for [!INCLUDE[prodshort](../developer/includes/prodsh
 
 Read scale-out may introduce a slight delay when reading data from a database's secondary replica. The delay is caused by the way High Availability databases replicate data changes from the primary database to secondary replicas. If a delay isn't acceptable for an object, you can overwrite the default database access intent.
 
-For more information, see [Managing Database Access Intent](https://review.docs.microsoft.com/en-us/dynamics365/business-central/admin-data-access-intent?branch=tfs337368-readscaleout).
+For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent).
 
 ## Frequently asked questions about read scale-out
 
