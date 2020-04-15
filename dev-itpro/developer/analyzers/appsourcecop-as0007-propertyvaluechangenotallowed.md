@@ -1,8 +1,8 @@
 ---
-title: "Properties must not change value, since dependent extensions may break"
-ms.author: solsen
+title: "Properties must not change value."
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0007
-Properties must not change value, since dependent extensions may break  
+Properties must not change value.  
 
 ## Description
-Properties must not change value.
+Properties must not change value. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

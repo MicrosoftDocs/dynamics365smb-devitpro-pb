@@ -1,5 +1,5 @@
 ---
-title: "The extension publisher length must not exceed the specified limit"
+title: "The type of events cannot be changed."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/15/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0048
-The extension publisher length must not exceed the specified limit  
+# AppSourceCop Rule AS0020
+The type of events cannot be changed.  
 
 ## Description
-The extension publisher length must not exceed the specified limit.
+The event attribute type cannot be changed because it might break dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
