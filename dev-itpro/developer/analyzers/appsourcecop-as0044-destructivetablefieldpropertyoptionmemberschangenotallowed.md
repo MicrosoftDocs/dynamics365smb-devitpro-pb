@@ -1,6 +1,6 @@
 ---
 title: "Property changes that cause destructive changes are not allowed"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020
 ms.reviewer: na

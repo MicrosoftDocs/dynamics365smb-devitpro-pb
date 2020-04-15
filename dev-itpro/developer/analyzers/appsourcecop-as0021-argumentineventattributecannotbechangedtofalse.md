@@ -1,6 +1,6 @@
 ---
 title: "An argument in an event attribute cannot be changed to false."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020
 ms.reviewer: na

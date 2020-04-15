@@ -1,6 +1,6 @@
 ---
 title: "Keys must not be deleted, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020
 ms.reviewer: na
