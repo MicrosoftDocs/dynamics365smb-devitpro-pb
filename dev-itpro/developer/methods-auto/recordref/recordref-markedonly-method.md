@@ -1,5 +1,5 @@
 ---
-title: "Insert Method"
+title: "MarkedOnly Method"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/15/2020
@@ -13,28 +13,34 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Insert Method
-Inserts a record into a table without executing the code in the OnInsert trigger.
+# MarkedOnly Method
+Activates a special filter. After you use this function, your view of the table includes only records marked by this function.
 
 
 ## Syntax
 ```
-[Ok := ]  RecordRef.Insert()
+[MarkedOnly := ]  RecordRef.MarkedOnly([MarkedOnly: Boolean])
 ```
-
+> [!NOTE]  
+> This method can be invoked using property access syntax.  
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-## Return Value
-*Ok*  
+*MarkedOnly*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+Activates a special filter.  
+
+
+## Return Value
+*MarkedOnly*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)
