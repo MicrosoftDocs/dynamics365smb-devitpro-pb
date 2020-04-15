@@ -55,8 +55,6 @@ Use the listed abbreviations for each type of object in the file naming:
 
 ### Examples of object naming
 
-The following examples illustrate how the file naming should look.
-
 #### Table  
 ```
 table 70000000 MyPrefixSalesperson
@@ -90,6 +88,7 @@ For the listed objects above, these are examples of the file naming.
 |codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
 |page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
 |page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
+
 
 
 ## Formatting
