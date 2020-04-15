@@ -21,12 +21,12 @@ Specifies the table type.
 
 |Value|Description|  
 |-----------|-----------------|  
-|**Normal**|Specifies the table as a normal table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This is the default value.|  
+|**Normal**|Specifies the table as a normal table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This value is the default.|  
 |**CDS**|Specifies the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with [!INCLUDE[crm](../includes/crm_md.md)]. The table is typically based on an entity in [!INCLUDE[crm](../includes/crm_md.md)], such as the Accounts entity.|  
-|**ExternalSQL**|Specifies the table as a table or view in SQL Server that is not in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.|  
-|**Temporary**|Specifies the table as a temporary table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This table type is not synchronized.|
-|**Exchange**|This is for internal use only.|
-|**MicrosoftGraph**|This is for internal use only.|
+|**ExternalSQL**|Specifies the table as a table or view in SQL Server that isn't in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.|  
+|**Temporary**|Specifies the table as a temporary table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This table type isn't synchronized.|
+|**Exchange**|For internal use only.|
+|**MicrosoftGraph**|For for internal use only.|
 
 
 ## Syntax
@@ -41,8 +41,20 @@ TableType = CDS;
 >  We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
 <!-- For more information, see [Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV](Introduction-to-Dynamics-CRM-Integration-Customization-in-Dynamics-NAV.md).  
  -->
+ 
+Marking a table as **Temporary** is the same as:
+
+-  Setting all records in the table as "Temporary". See [Temporary Property](devenv-temporary-property.md).
+-  Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
+
+Temporary tables aren't synchronized to the SQL database, so they don't follow the same rules about making destructive changes.
+
 ## See Also  
 
-[Properties](devenv-properties.md)
+[Properties](devenv-properties.md)  
+[SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)  
+[Temporary Property](devenv-temporary-property.md)  
 <!--  [External Tables](External-Tables.md)   
  [Table Designer](uiref/-$-S_2102-Table-Designer-$-.md)  -->
+
+
