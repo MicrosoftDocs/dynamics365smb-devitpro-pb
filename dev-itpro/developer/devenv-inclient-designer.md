@@ -47,7 +47,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
 
-- In the client, users can change the many of these settings for their workspace only by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
+- In the client, users can change many of these settings for their workspace only by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
 
 ## Start and stop designing
 
