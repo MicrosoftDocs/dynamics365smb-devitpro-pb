@@ -124,7 +124,7 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
         - `--dotNetTypePrefix` specifies a prefix to be used for all .NET type aliases created during the conversion. This will ensure that no naming conflicts occur with existing types. In the example, `BC` is the prefix.
     
         - `--rename` renames the output files to prevent clashes with the source .txt files.
-        When completed, there will be an .al file for for each object.
+        When completed, there will be an .al file for each object.
 2. Convert the test library TXT files to AL.
 
     This is similar to the previous step.
