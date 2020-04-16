@@ -10,10 +10,7 @@ ms.prod: "dynamics365-business-central"
 author: blrobl
 ---
 # Opening the Business Central Tablet or Phone Client from a Browser
-You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] by using a browser from a device that has a network connection. Opening the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser can, for example, make it easier to test your solution during the design phase. You must know the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and the HTTP port that it is running on to be able to open the client in a browser.  
-
-<!-- > [!IMPORTANT]  
->  In early versions of Internet Explorer 11, prior to and 11.0.9600.16476, an issue with hardware acceleration can occur when the browser zoom is not set to 100%. This can cause some elements of the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] UI being rendered incorrectly. For example, the action pane appears displaced horizontally.   -->
+You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] by using a browser from a device that has a network connection. This can make it easier to test your solution during the design phase. <!--To be able to open the client in a browser you must know the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and the HTTP port that it is running on.-->
 
 > [!IMPORTANT]  
 >  The procedure in this article illustrates how you can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a browser. The syntax and options for opening [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser are the same; just replace *tablet.aspx* with *phone.aspx* in the examples later in this section.  
@@ -33,8 +30,6 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
     |A specific profile|*https://ComputerName:Port/WebServerInstance/tablet.aspx?profile=ProfileID*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&profile=ProfileID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?profile=Small-Business|  
 
      Substitute the following parameters:  
-
-    -   **http** with **https** if SSL is configured for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] and the [!INCLUDE[webserver](includes/webserver.md)] is not configured to redirect HTTP requests to HTTPS.  
 
     -   **ComputerName** with the name of the computer that is running the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)].  
 
