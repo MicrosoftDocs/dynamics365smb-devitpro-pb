@@ -17,7 +17,7 @@ ms.author: v-liober
 | 2. **Offer Description** (How to format and structure paragraphs in your offer description) | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. |     Required | 
 
 > [!NOTE]  
-> The description can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document  must be added to the document section. 
+> The description can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added to the document section. 
 
 How to structure the paragraphs in your description? Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. 
 
