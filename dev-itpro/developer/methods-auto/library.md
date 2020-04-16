@@ -1,6 +1,6 @@
 ---
 title: "Data Types and Methods in AL"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/15/2020
 ms.reviewer: na
