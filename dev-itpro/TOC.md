@@ -299,6 +299,7 @@
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md)
+## Developing for the Business Central Mobile App
 ## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
