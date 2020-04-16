@@ -41,10 +41,12 @@ TableType = CDS;
 >  We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
 <!-- For more information, see [Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV](Introduction-to-Dynamics-CRM-Integration-Customization-in-Dynamics-NAV.md).  
  -->
- 
+
+### Temporary tables
+
 Marking a table as **Temporary** is the same as:
 
--  Set all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
+-  Setting all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
 -  Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
 
 Temporary tables aren't synchronized to the SQL database, so they don't follow the same rules about making destructive changes.
