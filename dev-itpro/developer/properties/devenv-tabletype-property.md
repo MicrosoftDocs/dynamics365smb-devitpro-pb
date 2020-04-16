@@ -44,7 +44,7 @@ TableType = CDS;
  
 Marking a table as **Temporary** is the same as:
 
--  Setting all records in the table as "Temporary". See [Temporary Property](devenv-temporary-property.md).
+-  Set all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
 -  Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
 
 Temporary tables aren't synchronized to the SQL database, so they don't follow the same rules about making destructive changes.
