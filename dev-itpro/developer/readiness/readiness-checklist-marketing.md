@@ -27,7 +27,7 @@ This image below is an example of what an offering looks like on AppSource, when
 |0.A - 0.C|Your app can be in any language – if not in English, a document with English translation is required. Branding - Remember to use the product branding guidelines properly| [General Best Practices including Language and Branding](readiness-checklist-a-languange-branding.md) |
 |0.D| Must be the same as the manifest. (Your offer name) for Microsoft Dynamics 365 Business Central | [Offer Name](readiness-checklist-b-offername-summary.md)|
 |1|Max. 25 words or 100 characters, value proposition| [Offer Summary](readiness-checklist-b-offername-summary.md)|
-|2 - 2.G|Use simple HTML tags, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
+|2 - 2.G|Use the Rich Text Editor, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
 |2.F|Supported editions - Premium, Essential or both|  [Premium SKU Listing](readiness-checklist-c-offer-description.md#SupportedEditions)|
 |2.G - 7|Mark only the Dynamics 365 Business Central supported countries that apply.|  [Supported Countries](readiness-checklist-d-supportedcountries-languages.md)|
 |3-4|Choose the industries your offer is best aligned to. (max 2) Categories that your offer caters to (max 3) |[Industries and Categories](readiness-checklist-e-industries-categories-apptype.md)|
