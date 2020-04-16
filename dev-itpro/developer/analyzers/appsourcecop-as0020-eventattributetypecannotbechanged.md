@@ -54,7 +54,7 @@ Internal events can only be subscribed to from within the same module. It is the
 
 ## Examples of valid event type conversion
 
-### Example 1: Converting an integration type event to a business type event
+### Example 1 - Converting an integration type event to a business type event
 
 Version 1.0 of the extension:
 ```
@@ -80,7 +80,7 @@ codeunit 50100 MyCodeunit
 
 In the newer version of the extension, the sender remains exposed through the business type event. The conversion is valid.
 
-### Example 2: Converting an internal event to an integration event
+### Example 2 - Converting an internal event to an integration event
 
 Version 1.0 of the extension:
 ```
@@ -106,7 +106,7 @@ codeunit 50100 MyCodeunit
 
 The event `MyEvent` now becomes available for other extensions.
 
-## Examples of invalid event type conversions
+## Examples of nonvalid event type conversions
 
 ### Example 1 - Conversion of a business type event to an internal type event
 
