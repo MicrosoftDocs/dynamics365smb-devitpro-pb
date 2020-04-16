@@ -51,7 +51,7 @@ Marking a table as **Temporary** is the same as:
 
 Temporary tables aren't synchronized to the SQL database, so they don't follow the same rules about making destructive changes.
 
-If you change an existing table from **Normal** to **Temporary**, the table is abandoned in SQL Server. If the table contains data, you'll have to use the ForceSync mode when synchronizing the extension with the database.
+If you change an existing table from **Normal** to **Temporary**, the table is dropped in SQL Server. If the table contains data, you'll have to use the ForceSync mode when synchronizing the extension with the database.
 
 
 ## See Also  
