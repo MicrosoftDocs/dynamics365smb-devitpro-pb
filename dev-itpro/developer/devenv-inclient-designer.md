@@ -3,7 +3,7 @@ title: "Using Designer"
 description: "Description of how Designer works."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -71,7 +71,7 @@ To add a field or column to a page, in the banner, choose **More**, and then cho
 
 If you want to remove a field or column, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) on the component, and then choose **Remove**.
 
-You can edit the caption of a FastTab for a group of fields by selecting the caption and start writing. Simple, clear, and plain.
+You can edit the caption of a FastTab for a group of fields by selecting the caption and start writing. A caption should provide a short and clear description.
 
 ## Setting the freeze pane
 
