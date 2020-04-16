@@ -38,7 +38,6 @@ Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLU
 |Automatic input focus on first editable field of a page|Not available. |Not available.|`Customer Card` page.<BR /><BR />In the Web client, focus will automatically be on the first editable field (such as the `Name` field), enabling you to change the value right away.<BR /><BR />In the Tablet or Phone client, this field will not be in focus; instead, you will have to manually select the field first in order to make changes.| The reason for this behavior is to prevent the in-app keyboard from initially displaying and occupying screen space.|   
 
 ## See Also  
- [Developing for the Dynamics 365 Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)  
  [Displaying Data as Tiles](devenv-lists-as-tiles.md)   
  [Implementing the Camera in AL](devenv-implement-camera-al.md)     
  [Implementing the Location in AL](devenv-implement-location-al.md)  

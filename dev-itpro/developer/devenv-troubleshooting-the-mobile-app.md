@@ -26,4 +26,4 @@ This section contains information to help you resolve problems using the [!INCLU
  <!-- [Troubleshooting: The Server Is Not Compatible](Troubleshooting--The-Server-Is-Not-Compatible.md) -->
 
  ## See Also
-  [Developing for the Dynamics 365 Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   
+ [Getting Started Developing for the Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)

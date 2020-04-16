@@ -19,5 +19,4 @@ ms.author: t-blrobl
 >  It is recommended to only use self-signed certificates for testing purposes and never in a production environment.  
   
 ## See Also  
- [Developing for the Dynamics 365 Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   
  [Getting Started Developing for the Dynamics 365 Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)

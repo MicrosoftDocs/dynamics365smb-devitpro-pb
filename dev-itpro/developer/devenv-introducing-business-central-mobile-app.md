@@ -45,6 +45,5 @@ On the other hand, the design for the [!INCLUDE[nav_phone](includes/nav_phone_md
  [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] support the same credential types as [!INCLUDE[nav_web](includes/nav_web_md.md)]. For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).  
   
 ## See Also  
- [Developing for the Dynamics 365 Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   
  [Getting Started Developing for the Dynamics 365 Business Central Mobile App](devenv-Getting-Started-Developing-business-central-mobile-App.md)   
  [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)

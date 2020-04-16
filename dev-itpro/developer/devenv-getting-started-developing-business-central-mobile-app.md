@@ -36,7 +36,6 @@ The [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](i
  The next steps are to consider how to deploy your solution and how to distribute it to your customers. After you have completed your solution, you can send an e-mail to the users to let them know that they can download [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]  from the relevant store and include the organization URL and sign-in information. For more information, see [Linking to the Dynamics 365 Business Central Mobile App](devenv-link-to-mobile-app.md).  
   
 ## See Also  
- [Developing for the Dynamics 365 Business Central Mobile App](devenv-developing-for-the-business-central-mobile-app.md)   
  [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
  [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)   
 <!--[Example: Developing a Sales Rep Role Center for the Dynamics 365 Business Central Tablet Client](devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)-->
