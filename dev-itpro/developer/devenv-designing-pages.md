@@ -30,7 +30,7 @@ A fundamental characteristic of the available page types lies in the way that a 
 
 The entity-oriented page types (Card, Document, and ListPlus) provide the user with actions to toggle edit/view mode, creating new, and deleting records, at the top of the page. The collection-oriented page types (List and Worksheet) provide all actions in the page action bar. 
 
-[illustration of header of entity page and header of collection page] 
+<!-- illustration of header of entity page and header of collection page -->
 
 ## Entity-oriented pages 
 
@@ -81,11 +81,11 @@ How space allocation takes place for a given page depends on the chosen page typ
 
 ### Field groups and page parts 
 
-[show legend for displaying groups and page parts.] 
+<!-- show legend for displaying groups and page parts. -->
 
 ### Card and Document page layouts 
 
-[Snippet about what Card and Doc pages are for.] 
+<!-- Snippet about what Card and Doc pages are for. -->
 
 Example 1. Field groups are placed vertically from top to bottom of the page 
 
@@ -97,7 +97,7 @@ Example 3. When a listpart is included as the last part on the page, it will exp
 
 ### ListPlus page layouts 
 
-[Snippet about what ListPlus pages are for.] 
+<!-- Snippet about what ListPlus pages are for. -->
 
 Example 1. Field sections are placed from top to bottom. The first ListPart fills vertical space. 
 
@@ -109,7 +109,7 @@ Example 3. When placing two ListParts in a group, they share horizontal and vert
 
 ### List page layouts 
 
-[Snippet about what List pages are for.] 
+<!-- Snippet about what List pages are for. -->
 
 Example 1. The repeater group assumes full vertical space. 
 
@@ -121,7 +121,7 @@ Example 3. When a listpart is included, space is shared equally between part and
 
 ### Worksheet page layouts 
 
-[Snippet about what worksheet pages are for.] 
+<!-- Snippet about what worksheet pages are for. -->
 
 Example 1. The repeater group assumes full vertical space, leaving space for groups above and below. 
 
@@ -132,7 +132,7 @@ Example 3. When a listpart is included, space is shared equally between part and
 
 ### Dialog page layouts 
 
-[Snippet about what dialog pages are for.] 
+<!-- Snippet about what dialog pages are for. -->
 
 Example 1. The repeater group assumes full vertical space, leaving space for groups above and below. 
 
