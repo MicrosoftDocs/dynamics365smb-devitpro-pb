@@ -23,7 +23,7 @@ The type and subtype of parameters cannot be modified in events and external pro
 
 ## Remarks
 
-It is not allowed to change the type of subtype of parameters in public procedures as this will break dependent extensions which are calling them.
+It is not allowed to change the type or subtype of parameters in public procedures as this will break dependent extensions which are calling them.
 
 > [!NOTE]  
 > This rule allows to convert `Option` type parameters into `Enum` type parameters.

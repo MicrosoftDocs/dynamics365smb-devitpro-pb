@@ -23,14 +23,14 @@ Actions that have been published must not be deleted, because it will break depe
 
 ## Remarks
 
-Removing an action which has been published is not allowed because it will break dependent extensions which are referencing it or modifying it.
+Removing an action which has been published is not allowed because it will break dependent extensions which are referencing or modifying it.
 
 > [!NOTE]  
 > Renaming an action will also trigger this error. The AppSourceCop will consider the renamed action as a new action, unrelated to the one defined in the previous version.
 
 ## How to fix this diagnostic
 
-If the action was removed, revert the change by adding back the action and mark it as obsolete as [Obsolete](../properties/devenv-obsoletestate-property.md).
+If the action was removed, revert the change by adding back the action and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 
 If the action was renamed in order to change its display string in the web client, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
 

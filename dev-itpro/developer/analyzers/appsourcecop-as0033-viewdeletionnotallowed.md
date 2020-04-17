@@ -22,14 +22,14 @@ Views that have been published must not be deleted, because it will break depend
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-Removing a view which has been published is not allowed because it will break dependent extensions which are referencing it or modifying it.
+Removing a view which has been published is not allowed because it will break dependent extensions which are referencing or modifying it.
 
 > [!NOTE]  
 > Renaming a view will also trigger this error. The AppSourceCop will consider the renamed view as a new view, unrelated to the one defined in the previous version.
 
 ## How to fix this diagnostic
 
-If the view was removed, revert the change by adding back the view and mark it as obsolete as [Obsolete](../properties/devenv-obsoletestate-property.md).
+If the view was removed, revert the change by adding back the view and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 
 If the view was renamed in order to change its display string in the web client, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
 

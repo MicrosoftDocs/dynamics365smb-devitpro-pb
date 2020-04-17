@@ -138,7 +138,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-The event remains the same from on version to the other.
+The event remains the same from one version to the other.
 
 ### Example 2 - An event starts exposing it sender
 
