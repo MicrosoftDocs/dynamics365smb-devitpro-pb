@@ -42,4 +42,4 @@ Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLU
  [Implementing the Camera in AL](devenv-implement-camera-al.md)     
  [Implementing the Location in AL](devenv-implement-location-al.md)  
  [Role Center Behaviors](devenv-Role-Center-Behaviors.md)   
-  <!-- [Developing for the Dynamics 365 Business Central Web Client](Developing-for-the-Microsoft-Dynamics-NAV-Web-Client.md)    -->
+ [Defining Action Scope for Business Central Pages](devenv-defining-action-scope-for-pages.md)

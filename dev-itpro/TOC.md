@@ -298,17 +298,7 @@
 ### [Using Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
-### [Business Central App URL](developer/devenv-link-to-mobile-app.md)
-## Developing for the Business Central Mobile App
-### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
-### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
-### [Getting Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
-### [Designing for Different Screen Sizes on Tablet and Phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
-### [Differences and Limitations When Developing Pages for the Business Central Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
-### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)  
-### [Adding Help to the Business Central Mobile App](developer/devenv-adding-help-to-the-mobile-app.md)  
-### [Troubleshooting the Business Central Mobile App](developer/devenv-troubleshooting-the-mobile-app.md)
-### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md)  
+### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
 ## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)

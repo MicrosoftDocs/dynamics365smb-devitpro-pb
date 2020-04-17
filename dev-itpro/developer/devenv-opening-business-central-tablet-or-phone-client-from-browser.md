@@ -23,7 +23,7 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
 
     |To open|URL|Example|  
     |-------------|---------|-------------|  
-    |The Role Center for the default company|*https://ComputerName:Port/WebServerInstance/tablet.aspx*<br /><br /> Or \(for multitenant deployments\)<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx|  
+    |The Role Center for the default company<img width=25/>|*https://ComputerName:Port/WebServerInstance/tablet.aspx*<br /><br /> Or \(for multitenant deployments\)<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx|  
     |The Role Center for a specific company|*https://ComputerName:Port/WebServerInstance/tablet.aspx?company=CompanyName*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&company=CompanyName*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?company=CRONUS%20International%20Ltd.| 
     |A specific page|*https://ComputerName:Port/WebServerInstance/tablet.aspx?page=ID*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&page=ID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?page=22|  
     |A specific report|*https://ComputerName:Port/WebServerInstance/tablet.aspx?report=ID*<br /><br /> Or<br /><br /> *https://ComputerName:Port/WebServerInstance/tablet.aspx?tenant=TenantID&report=ID*|https://MyBCWeb:8080/[!INCLUDE[serverinstance](includes/serverinstance.md)]/tablet.aspx?report=8|  
@@ -46,5 +46,4 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
     -   **ProfileID** with the ID that is assigned to the profile in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)].  
 
 ## See Also  
- [Developing for the Dynamics 365 Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   
  [Introducing the Dynamics 365 Business Central Mobile App](devenv-Introducing-business-central-Mobile-App.md)   

@@ -42,4 +42,5 @@ Designing for small screens can be more challenging, because pages will show few
 
 ## See Also  
  [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
- [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)
+ [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
+ [Displaying Data as Tiles](devenv-lists-as-tiles.md) 
