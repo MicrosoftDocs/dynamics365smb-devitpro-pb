@@ -1,7 +1,7 @@
 ---
 title: "OData Web Services"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,13 +41,19 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
 The [!INCLUDE[server](../developer/includes/server.md)] instance has several configurations settings that enable and control OData services. For more information, see [OData Services Settings](../administration/configure-server-instance.md#ODataServices).
 
 ## Known Limitations
- 
+
+### Filters
+
 You can specify filters in OData web services in general that are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
   
 ```  
 An error occurred while processing this request.   
  The 'OR' operator is not supported on distinct fields on an OData filter.  
 ```  
-  
+### Lambda operators
+
+Lambda operators are not supported by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData APIs. If lambda operators are used, the filter expression will be ignored.
+
+
 ## See Also  
  [SOAP Web Services](SOAP-Web-Services.md)
