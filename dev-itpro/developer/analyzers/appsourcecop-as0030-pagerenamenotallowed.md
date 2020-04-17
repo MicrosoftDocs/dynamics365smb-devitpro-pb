@@ -1,8 +1,8 @@
 ---
-title: "Pages and PageExtensions that have been published must not be renamed, since dependent extensions may break"
+title: "Pages that have been published must not be renamed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0030
-Pages and PageExtensions that have been published must not be renamed, since dependent extensions may break  
+Pages that have been published must not be renamed.  
 
 ## Description
-Pages and PageExtensions that have been published must not be renamed.
+Pages that have been published must not be renamed because it will break dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

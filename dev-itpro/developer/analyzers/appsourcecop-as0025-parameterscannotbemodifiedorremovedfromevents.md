@@ -1,5 +1,5 @@
 ---
-title: "Interface implementations that have been published must not be deleted."
+title: "Parameters cannot be modified, renamed, or removed from events."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0064
-Interface implementations that have been published must not be deleted.  
+# AppSourceCop Rule AS0025
+Parameters cannot be modified, renamed, or removed from events.  
 
 ## Description
-An interface implementation that has been published must not be deleted, because dependent extensions may break.
+Parameters cannot be modified, renamed, or removed from Business type and Integration type events, because it will break dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

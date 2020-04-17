@@ -1,5 +1,5 @@
 ---
-title: "Interface implementations that have been published must not be deleted."
+title: "ClearMarks Method"
 ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020
@@ -13,14 +13,23 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0064
-Interface implementations that have been published must not be deleted.  
+# ClearMarks Method
+Removes all the marks from a record.
 
-## Description
-An interface implementation that has been published must not be deleted, because dependent extensions may break.
+
+## Syntax
+```
+ RecordRef.ClearMarks()
+```
+
+## Parameters
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[AppSourceCop Analyzer](appsourcecop.md)  
+## See Also
+[RecordRef Data Type](recordref-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

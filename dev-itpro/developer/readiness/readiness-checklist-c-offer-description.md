@@ -36,10 +36,7 @@ How to format your description in Partner Center? The right formatting enables p
 
 When formatting the description of your offer please consider the following:
 - The description can max. be 3000 characters incl. spaces
-- Use simple html tags when formatting your description to create structured sections that are easy to get an overview of. 
-
-The following html tags are allowed:
-- p, em, ul, li, ol and header tags.
+- Use the Rich Text Editor when formatting your description to create structured sections that are easy to get an overview of. 
 - Structure your description as small "easily readable" sections with headlines
 - List vital benefits as bullet points
 - Engage prospects by speaking directly to them using second person "you" language.
@@ -56,9 +53,6 @@ How to structure the content in this paragraph?
 How to format this paragraph?
 - Format this section as a headline *in itallic.*
 
-Use these html tags:
-- \<h2\>\<em\> section with provocative questions
-- \</em\>\</h2\>
 
 > [!TIP]  
 > *Example:* *Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?*
@@ -74,7 +68,7 @@ How to structure the content in this paragraph?
 - Remind them of the cost (higher risk, lower margins, lost sales) they are experiencing by putting off a decision. In so doing you have a bigger likelihood of getting the messages through to them and enticing them to take action.
 
 How to format this paragraph? Format this section as a paragraph
-- Use these html tags: \<p\> pain paragraph\</p\> 
+
 
 *Example:*
 
@@ -99,9 +93,6 @@ Quantify impacts and gains.
 How to format this paragraph?*
 Format this section as a paragraph 
 
-Use these html tags:
-- \<p\> 1st benefit paragraph\</p\>
-- \<p\> 2nd benefit paragraph\</p\>
 
 > [!TIP]  
 > *Example:* *Our app uses Cortana Intelligence to analyze historical data to predict
@@ -120,16 +111,6 @@ Forecast extension.*
 
 How to format this paragraph?* Format headline in bold 
 
-Use these html tags:
-- \<h3\>\<strong\> Features and benefits
-- \</strong\>\<h3\>
-Format bullet points as: 
-Use these html tags:
-- \<ul\>
-- \<li\>1st Bullet point \</li\>
-- \<li\>2nd Bullet point \</li\>
-- \<li\>3rd Bullet point \</li\>
-- \</ul\>
 
 > [!TIP]  
 > *Example:* *Features and benefits of using this extension* *Free up cash* *Know exactly when to replenish stock* *Always have inventory on hand to satisfy every customer order*
@@ -148,8 +129,6 @@ How to structure the content in this paragraph?
 - Highlight the action that you want users to take by formatting the wanted action in bold as well as linking to your app's unique landing page (either through hyperlinking the landing page or including a sentence on "Learn more" about us here ["How to Create a Sales Landing Page"](readiness-how-to-create-sales-landing-page.md).
 
 How to format this paragraph? Format this section as a paragraph
-- Use these html tags:
-- \<p\>Click the \<strong\>Get it now\</strong\> button – then insert your closing call to action paragraph here\</p\>
 
 > [!TIP]  
 > *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
@@ -160,20 +139,20 @@ How to format this paragraph? Format this section as a paragraph
 | 2.F Offer Description **(Supported editions paragraph)** | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
 
 How to structure the content in this paragraph?
-- Create a header 3 in the html tags and make it bold.
+- Create a header 4 (it automatically becomes bold)
 - Call the header "Supported Editions".
 - Include a sentence that lists the edition(s) that your app supports.
 
-How to format this paragraph? Format headline in bold 
-- Use these html tags:
-- \<h3\>\<strong\>Supported Editions:\</strong\>\</h3\>
+How to format this paragraph? Format the headline as a header 4 and the rest of the paragraph as normal text.  
 
-Format the paragraph 
-- Use these html tags:
-- \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\>\<p\>
+*Example:*
 
 > [!TIP]  
-> *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
+> **Supported Editions:** 
+*This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.*
+
+
+
 ## Supported Countries
 | Offer Details|Description | Requirements |
 |-----------|--------------|---------------|
@@ -182,27 +161,14 @@ Format the paragraph
 Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here /dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
 
 How to structure the content in this paragraph?
-- Create a header 3 in the html tags and make it bold.
+- Create a header 4 (it will automatically become bold)
 - Call the header "Supported countries".
 - Include a sentence that lists the countries that your app is available in.
 
-How to format this paragraph?
-Format headline in bold 
-- Use these html tags: \<h3\>\<strong\>Supported countries:\</strong\>\<h3\>
+How to format this paragraph? Format the headline as a header 4 and the rest of the paragraph as normal text. 
 
-Format the paragraph
-- Use these html tags: \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\>
+*Example:*
 
 > [!TIP]  
-> *Example:* *Supported countries:* *This app is available in: Australia, Austria, Belgium, Canada,* *Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United States.*
-
-> [!TIP]  
-> Example of a completed offer summary and offer description in the "Offer
-details" section of Partner Center.
-
-Below is an enlarged picture of the entire offer description (cf. point 2.A-G)
-and the html tags used:
-
- \<h2\>\<em\>Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?\</em\>\</h2\> \<p\>Managing inventory is a delicate balancing act. Carry too little and you lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.\</p\> \<p\>Our app uses Cortana Intelligence to analyze historical data to predict future demand, so you can base procurement decisions on accurate and reliable forecasts, and help your company avoid lost revenue, optimize shipping costs, discover trends and boost your brand reputation by always delivering on orders.\</p\> \<p\>Stop relying on basic spreadsheets that take hours of valuable time to complete. Turn anxiety into proactive control and manage this critical business process in minutes by using Microsoft Sales and Inventory Forecast app.\</p\> \<h3\>\<strong\>Features and benefits of using this app\</strong\>\</h3\> \<ul\> \<li\>Free up cash\</li\> \<li\>Know exactly when to replenish stock\</li\> \<li\>Always have inventory on hand to satisfy every customer order\</li\> \</ul\> \<p\>\&nbsp;\</p\> \<p\>Click the \<strong\>Get it now\</strong\> button and start aligning your inventory replenishment with your customer demand. Your customers and sales team will love you for it.\</p\> \<h3\>\<strong\>Supported editions:\</strong\>\</h3\> \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\> \<p\> \<h3\>\<strong\>Supported countries:\</strong\>\</h3\> \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Italy, Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\>
-
-![Storefront Detail - Offer Description](../../media/Description.png)
+> **Supported Countries:** 
+*Australia, Austria, Belgium, Canada, Denmark, Finland, France,Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States *

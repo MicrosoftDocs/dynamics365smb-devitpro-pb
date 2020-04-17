@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview
-ms.date: 04/03/2020
+ms.date: 04/08/2020
 ms.author: mikebc
 ---
 
@@ -46,7 +46,7 @@ Learn about [new features available in the last minor update](https://aka.ms/bcl
 2. If the page isn't editable, choose **Edit List** from the action menu.
 3. For any row in the list, set the **Enabled for** field to *All users*.
 
-As soon as you enable the feature for all users, any user that signs in to that environment can experience the change. You won't experience the change yourself until you sign out and sign in again, or start a new session.
+As soon as you enable the feature, any user that signs in to that environment experiences the change. You won't experience the change yourself until you sign out and sign in again, or start a new session.
 
 > [!TIP]
 > You can try out the feature for yourself without enabling it for all users by choosing the **Try it out** link. This will open a new browser tab with the feature enabled for that session. Any new sessions in your browser will also have the feature temporarily turned on. To stop trying the feature, close your browser window or sign out.  
@@ -84,7 +84,7 @@ Preview environments are [!INCLUDE[prodshort](../includes/prodshort.md)] online 
 
 #### How is feature management different to Application Areas?
 
-Application areas are a concept where developers can specify differentiated user experiences in the business application by showing or hiding individual controls on a page. Like feature management, application areas concept also puts administrators in control of selecting the preferred experience tier. One difference is that there's no time period during which application areas can be optionally enabled. Another difference is that they only apply to business application controls.  
+Application areas are a concept where developers specify differentiated user experiences in the business application. By using application areas, developers can show or hide individual controls on a page. Like feature management, application areas concept also puts administrators in control of selecting the preferred experience tier. One difference is that there's no time period during which application areas can be optionally enabled. Another difference is that they only apply to business application controls.  
 
 #### Can resellers, ISVs, and developers contribute to the list of features?
 
@@ -93,6 +93,10 @@ No. At this time, feature management is only for features released by Microsoft.
 #### Can I enable a feature for a single user?
 
 No. Business Central doesn't provide the ability to enable a feature for a single user or group of users. Enabled features apply to all users of an environment.  
+
+#### I don't see a link to try out an optional feature. Is something wrong?  
+
+Some features don't provide a way to try out the feature for yourself and won't display a **Try it out** link. Before you enable these features, we recommend you first enable and test the features on a sandbox environment. The sandbox environment that has a copy of production data.
 
 #### Are optional features also optional on new environments?
 

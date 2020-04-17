@@ -2,7 +2,7 @@
 title: "Parameters cannot be removed or added in external procedures"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Parameters cannot be removed or added in external procedures  
 
 ## Description
-Parameters cannot be removed or added in external procedures.
+Parameters cannot be removed or added in external procedures, because it will break dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

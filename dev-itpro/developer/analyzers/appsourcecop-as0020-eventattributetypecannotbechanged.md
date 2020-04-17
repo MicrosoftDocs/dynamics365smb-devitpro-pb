@@ -1,20 +1,20 @@
 ---
 title: "The type of events cannot be changed."
-ms.author: qutreson
+ms.author: solsen
 ms.custom: na
-ms.date: 03/04/2020
+ms.date: 04/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: qutreson
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0020
-The type of events cannot be changed.
+The type of events cannot be changed.  
 
 ## Description
 The event attribute type cannot be changed because it might break dependent extensions.
