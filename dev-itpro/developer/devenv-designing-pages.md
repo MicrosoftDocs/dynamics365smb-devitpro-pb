@@ -38,19 +38,109 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 
 ListPlus is also an entity-oriented page type. Unlike Card and Document pages, the ListPlus page type is for pages that have a prominent listpart and either few or no header fields.  
 
-Entity-oriented page characteristics 
+### Entity-oriented page characteristics 
 
 The overall characteristics of an entity-oriented page are: 
 
-The page title identifies the specific entity represented in the page. For example, a customer card will have the customer number or name as the page title. 
+- The page title identifies the specific entity represented in the page. For example, a customer card will have the customer number or name as the page title. 
 
-Page commands act in relation to the entity shown in the page. For example, if you choose Delete on a customer card page, the system will delete that customer. 
+- Page commands act in relation to the entity shown in the page. For example, if you choose Delete on a customer card page, the system will delete that customer. 
 
-FactBoxes that show related details (statistics, links, notes) about the specific entity represented in the page, in textual or chart form. 
+- FactBoxes that show related details (statistics, links, notes) about the specific entity represented in the page, in textual or chart form. 
 
-Important: Since entity-oriented pages always represent a single domain entity, such as a customer or an item, we recommend that you do not use Repeater groups in the construction of entity-oriented pages. Use Repeater groups only when you construct collection-oriented pages. Note that Repeater groups may be used in pages that are in turn included as individual List parts in an entity-oriented task page. 
+> [!IMPORTANT]  
+> Since entity-oriented pages always represent a single domain entity, such as a customer or an item, we recommend that you do not use Repeater groups in the construction of entity-oriented pages. Use Repeater groups only when you construct collection-oriented pages. Note that Repeater groups may be used in pages that are in turn included as individual List parts in an entity-oriented task page. 
+
+## Collection-oriented pages 
+
+In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page is the list (showing customers, items, etc.) from which the user can seek out the entities to work with. 
+
+### Collection-oriented page characteristics 
+
+The overall characteristics of a collection-oriented page include: 
+
+- A prominent list or table of entities, records, or entries. 
+
+- A page title, or alternatively fields above the table/list, which describe or identify the collection of data shown in the page. For example, the Customer List provides an overview of the customer entities from which the user can then open individual customer card pages. 
+
+- Commands that act in relation to the selected row or rows in the list or table. For example, selecting a customer in the Customer list, and then choosing Delete, will delete only the selected customer, not all customers in the list. 
+
+- FactBoxes that show related details (statistics, links, notes) about the selected row in the table or list, in textual or chart form. 
+
+- A Details pane below the list or table can optionally show details (additional fields) about the selected row, in textual or chart form. 
+
+## Composing pages 
+
+Within a page, the developer can combine page fields into groups. This can help the user overview the page by placing related fields together. And within a group, subgroups can further increase the structure of the data displayed in a page. 
+
+Besides adding fields and groups to a page, it is possible to include another page of type CardPart or ListPart. (These two page types can in turn not include other pages.) 
+
+When pages are created to include CardParts and ListParts, Business Central will take care of sharing the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page, and collapse/expand specific sections of interest. 
+
+How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and—of course—on the size of the browser window. 
+
+### Field groups and page parts 
+
+[show legend for displaying groups and page parts.] 
+
+### Card and Document page layouts 
+
+[Snippet about what Card and Doc pages are for.] 
+
+Example 1. Field groups are placed vertically from top to bottom of the page 
+
+Example 2. A ListPart can be included. In this case, the listpart’s height is limited to show 5 rows.  
+
+Example 3. When a listpart is included as the last part on the page, it will expand to fill space. 
 
  
 
+### ListPlus page layouts 
 
+[Snippet about what ListPlus pages are for.] 
+
+Example 1. Field sections are placed from top to bottom. The first ListPart fills vertical space. 
+
+Example 2. When placing two (or more) ListParts, they will share available vertical space. 
+
+Example 3. When placing two ListParts in a group, they share horizontal and vertical space. 
+
+ 
+
+### List page layouts 
+
+[Snippet about what List pages are for.] 
+
+Example 1. The repeater group assumes full vertical space. 
+
+Example 2. When a field group or cardpart is included, space for repeater is reduced. 
+
+Example 3. When a listpart is included, space is shared equally between part and repeater. 
+
+
+
+### Worksheet page layouts 
+
+[Snippet about what worksheet pages are for.] 
+
+Example 1. The repeater group assumes full vertical space, leaving space for groups above and below. 
+
+Example 2. If a listpart is included, vertical space is shared with repeater group. 
+
+Example 3. When a listpart is included, space is shared equally between part and repeater. 
+
+
+### Dialog page layouts 
+
+[Snippet about what dialog pages are for.] 
+
+Example 1. The repeater group assumes full vertical space, leaving space for groups above and below. 
+
+Example 2. If a listpart is included, vertical space is shared with repeater group. 
+
+Example 3. When a listpart is included, space is shared equally between part and repeater. 
+
+[illustration of dialog and modal pages] 
+
+ 
 ## See Also
