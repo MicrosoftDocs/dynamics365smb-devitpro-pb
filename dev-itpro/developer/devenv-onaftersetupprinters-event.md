@@ -56,7 +56,7 @@ The payload consists of several attributes that are arranged in the following st
 ```
 {
     "version":1,
-    "description":[default is an empty string],
+    "description":[default=""],
     "duplex":[default=false],
     "color":[default=false],
     "defaultcopies":[default=1],

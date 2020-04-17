@@ -2,7 +2,7 @@
 title: "AL Table Proxy Generator"
 description: "Tool for creating integration or proxy tables for integration with Common Data Service from Business Central"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,13 +40,13 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |Parameter|Description|
 |---------|-----------|
 |*Project*| The AL project folder to create the table(s) in.|
-|*PackageCachePath*| The AL project cache folder for symbols. |
+|*PackageCachePath*| The AL project cache folder for symbols. <br> **Note:** It is important that the latest symbols have been downloaded because these are used for comparison when the tool runs. |
 |*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
 |*UserName*| The admin user name for Common Data Service. |
 |*Password*| The admin password for Common Data Service. |
-|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list. |
+|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br> |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
-|*TableType*| The table type for the table(s) in AL. |
+|*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`.|
 
 ## Example
 The following example starts the process for creating a new integration table in the specified AL project. When complete, the output path contains the **Worker.al** file that contains the description of the **50000 CDS Worker** integration table. This table is set to the table type **CDS**.
