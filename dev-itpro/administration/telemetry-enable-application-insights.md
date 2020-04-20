@@ -10,7 +10,11 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # Enabling Application Insights for Tenant Telemetry On-Premises
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 
 This article describes how to set up tenants to send telemetry data to Application Insights for on-premises environments.
 

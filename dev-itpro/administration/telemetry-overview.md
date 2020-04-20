@@ -12,7 +12,9 @@ ms.date: 04/01/2020
 ms.author: jswymer
 ---
 
-# Monitoring and Analyzing Telemetry  
+# Monitoring and Analyzing Telemetry
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities and operations on tenants. Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
