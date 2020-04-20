@@ -27,6 +27,8 @@ To filter the telemetry for an environment:
 
 ## Sending telemetry to Microsoft Azure Application Insights
 
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
 For an overview of the telemetry types that are currently emitted, see [Monitoring and Analyzing with Telemetry](telemetry-overview.md).
