@@ -82,7 +82,7 @@ This section explains how to migrate tables and fields down the dependency graph
 
 ![Data migration](media/data-migration-tables-fields.png "data migration") 
 
-In the example, **TableB** and **Field C-1** are customizations. You'll keep these elements in the original extension, but create a new version without **TableA** and **TableC**. You'll move **TableA** and **TableC** down the dependency chain to a new, separate extension.
+In the example, **TableB** and **Field C-2** are customizations. You'll keep these elements in the original extension, but create a new version without **TableA** and **TableC**. You'll move **TableA** and **TableC** down the dependency chain to a new, separate extension.
 
 ### Create the receiving extension (Ext Y)
 
@@ -92,7 +92,7 @@ The receiving extension will contain the table and fields that you want to move.
 
 2. Add a table object definition for **TableA** that exactly matches its definition in the releasing extension **Ext X**.
 
-3. Add a table object definition for **TableC** that exactly matches it is the releasing extension **Ext X**, except don't include field **C-1**.
+3. Add a table object definition for **TableC** that exactly matches it is the releasing extension **Ext X**, except don't include field **C-2**.
 
 4. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
@@ -120,7 +120,7 @@ The receiving extension will contain the table and fields that you want to move.
 
     1. In the app.json file, set up a dependency on the new receiving extension **Ext Y**.
     2. Add a table extension object **TableExtC**.
-    3. In table extension object **TableExtC**, add a field definition for field **C-1** that matches its definition in the original **TableC** object.
+    3. In table extension object **TableExtC**, add a field definition for field **C-2** that matches its definition in the original **TableC** object.
     4. Delete the original **TableC** object.
 4. In the app.json file, increase the `version` value.
 5. Compile a new version of the extension package.
