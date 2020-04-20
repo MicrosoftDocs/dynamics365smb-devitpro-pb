@@ -22,7 +22,7 @@ Typing the shortcut `teventinternal` will create the basic internal attribute sy
 
 ## Syntax  
 ```  
-[InternalEvent](IncludeSender : Boolean)
+[InternalEvent(IncludeSender : Boolean)]
 ```
   
 #### Arguments  

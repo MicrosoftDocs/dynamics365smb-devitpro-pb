@@ -3,7 +3,7 @@ title: "Using Designer"
 description: "Description of how Designer works."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ ms.author: solsen
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.
+> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br><br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.
 
 Here is a quick overview of capabilities in **Designer**: 
 
@@ -47,7 +47,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
 
-- In the client, users can change the many of these settings for their workspace only by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
+- In the client, users can change many of these settings for their workspace only by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
 
 ## Start and stop designing
 
@@ -71,7 +71,7 @@ To add a field or column to a page, in the banner, choose **More**, and then cho
 
 If you want to remove a field or column, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) on the component, and then choose **Remove**.
 
-You can edit the caption of a FastTab for a group of fields by selecting the caption and start writing. Simple, clear, and plain.
+You can edit the caption of a FastTab for a group of fields by selecting the caption and start writing. A caption should provide a short and clear description.
 
 ## Setting the freeze pane
 
@@ -122,7 +122,7 @@ Designer lets you make changes to the actions that are defined in the action bar
 > You cannot modify actions that are defined on pages that are shown in parts, such as in FactBoxes or embedded lists. 
 
 > [!TIP]
-> In Designer, to run an action as normal, select the action and press Ctrl+Click.
+> In Designer, to run an action as normal, select the action and press **Ctrl+Click**.
 
 ### Remove, hide, and show actions and groups
 

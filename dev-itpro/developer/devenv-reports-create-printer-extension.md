@@ -107,7 +107,7 @@ The event subscriber method has one parameter, which is a dictionary of printers
 ```
 {
     "version": 1,
-    "description":[default is an empty string],
+    "description":[default=""],
     "duplex":[default=false],
     "color":[default=false],
     "defaultcopies":[default=1],
@@ -150,7 +150,7 @@ codeunit 50101 SetupPrinter2
 
 ### Select the paper tray
 
-A printer can have several paper trays. If a report doesn't specify which paper tray to use or the specified paper tray isn't present in the printer’s setup, a default paper tray is used. The default paper tray is the first one defined in the `papertrays` list.
+A printer can have several paper trays. If a report doesn't specify which paper tray to use or the specified paper tray isn't present in the printer's setup, a default paper tray is used. The default paper tray is the first one defined in the `papertrays` list.
 
 You can change the paper tray for an existing report by subscribing to the `OnAfterGetPaperTrayForReport` event and setting a value for a `DefaultPage` parameter.
 

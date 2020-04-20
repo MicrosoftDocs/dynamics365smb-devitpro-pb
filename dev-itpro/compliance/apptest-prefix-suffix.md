@@ -21,12 +21,18 @@ Declare your objects with a prefix as shown in the following examples.
 
 ### Table  
 ```
-table 70000000 MyPrefix Salesperson
+table 70000000 MyPrefixSalesperson
+```
+```
+table 70000001 SalespersonMySuffix
 ```
 
 ### Page
 ```
-page 70000000 MyPrefix Salesperson
+page 70000000 MyPrefixSalesperson
+```
+```
+page 70000001 SalespersonMySuffix
 ```
 
 ### Page extension  
@@ -35,13 +41,24 @@ actions
 {
     addafter(ApprovalEntries)
     {
-        action(MyPrefix Vacation)
+        action(MyPrefixVacation)
+```
+```
+actions
+{
+    addafter(ApprovalEntries)
+    {
+        action(VacationMySuffix)
 ```
 
 ### Codeunit
 ```
-codeunit 70000000 MyPrefix Salesperson
+codeunit 70000000 MyPrefixSalesperson
 ```
+```
+codeunit 70000001 SalespersonMySuffix
+```
+
 
 ## Benefits
 There are two good reasons to why you may want to proactively use a prefix or suffix:

@@ -83,7 +83,7 @@ Finally, make sure that you don't repeat these performance mistakes that we have
 
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload. This way, they won't affect the performance of business processes.
 
-A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. **Read Scale-Out** is controlled by the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](https://review.docs.microsoft.com/en-us/dynamics365/business-central/admin-data-access-intent?branch=tfs337368-readscaleout).
+A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. **Read Scale-Out** is controlled by the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent).
 
 ## See Also
 
