@@ -12,9 +12,9 @@ author: blrobl
 # Adding Help to the Business Central Mobile App
 To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution, you have to offer users Help. Although tablets and phones have a simpler interface than both the [!INCLUDE[nav_web](includes/nav_web_md.md)], there can be times where the user needs help understanding the purpose of a page or a workflow.  
   
- Adding Help to a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution is not different from adding Help to [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] in general.  
-  
- Help is linked to the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] using the same technology as for the [!INCLUDE[nav_web](includes/nav_web_md.md)]. Help is invoked on the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] through an action on each page, which is always the last action on the list. Because the same underlying technology applies to all clients, Help can be reused on all clients. The only difference is that field Help cannot be called directly from the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. Instead, users will be lead to the page Help and this should therefore be designed to guide users to relevant field topics.  
+ Adding Help to a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution is not different from adding Help to [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] in general. Help is linked to the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] using the same technology as for the [!INCLUDE[nav_web](includes/nav_web_md.md)]: it is invoked on the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] through an action on each page, which is always the last action on the list. 
+ 
+ Because the same underlying technology applies to all clients, Help can be reused on all clients. The only difference is that field Help cannot be called directly from the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. Instead, users will be lead to the page Help and this should therefore be designed to guide users to relevant field topics.  
   
 ## Adding Help  
  Add Help to your solution by adding new HTML files, or modifying existing HTML files on your Help Server. Context-sensitivity is decided by topic names alone. Therefore naming is very important to get the Help call to work. Also, always make sure to work on an offline copy of a Help topic on the Help Server and then upload the topic\(s\) when you are finished.  
@@ -25,4 +25,5 @@ To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] s
 >  The N\_50006.htm file must adhere to the classic.css style sheet, which you can find on the Help Server.  
   
 ## See Also  
- [Getting Started Developing for the Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)
+ [Getting Started Developing for the Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)  
+  [Introducing the Dynamics 365 Business Central Mobile App](devenv-Introducing-business-central-Mobile-App.md)   
