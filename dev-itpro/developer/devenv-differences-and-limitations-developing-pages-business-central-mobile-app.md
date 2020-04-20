@@ -2,13 +2,13 @@
 title: "Differences and Limitations When Developing Pages for the Business Central Mobile App"
 description: Differences and limitations when developing pages for the Dynamics 365 Business Central Mobile App
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
 author: blrobl
-ms.author: t-blrobl
+ms.author: t-blrobls
 ---
 # Differences and Limitations When Developing Pages for the Business Central Mobile App
 Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is similar to developing for the [!INCLUDE[webclient](includes/webclient.md)]. However, there some natural limitations on tablets and phones, such as not having a physical keyboard and mouse, as well as a smaller screen.
@@ -41,5 +41,5 @@ Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLU
  [Displaying Data as Tiles](devenv-lists-as-tiles.md)   
  [Implementing the Camera in AL](devenv-implement-camera-al.md)     
  [Implementing the Location in AL](devenv-implement-location-al.md)  
- [Role Center Behaviors](devenv-Role-Center-Behaviors.md)   
+ [Role Center Behaviors](devenv-role-center-behaviors.md)   
  [Defining Action Scope for Business Central Pages](devenv-defining-action-scope-for-pages.md)

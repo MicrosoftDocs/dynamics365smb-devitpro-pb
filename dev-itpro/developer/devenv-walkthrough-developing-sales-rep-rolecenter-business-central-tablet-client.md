@@ -1,7 +1,7 @@
 ---
 title: "Example: Developing a Sales Rep Role Center for the Business Central Tablet Client"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -118,4 +118,5 @@ For more information about the specifics of Role Center structure and design, se
  [Developing for the Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   
  [Designing for Different Screen Sizes on Tablet and Phone](devenv-Designing-Different-Screen-Sizes-Tablet-and-Phone.md)   
  [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Mobile-App.md)   
- [Designing Role Centers](devenv-designing-role-centers.md)
+ [Designing Role Centers](devenv-designing-role-centers.md)  
+ [Role Center Behaviors](devenv-role-center-behaviors.md)   
