@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 04/21/2020
 ---
 
 # Trials and Sign-ups for Business Central Online
@@ -18,11 +18,13 @@ You can invite customers and prospects to sign up for any number of Dynamics 365
 
 This means that you can show prospects a preview of what you are offering based on trials of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and other Dynamics 365 apps.  
 
-## Invite prospects to a trial
+## Prospects and trials
 
-You can suggest prospects that they sign up for the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [free trial](/dynamics365/business-central/across-preview). Alternatively, you can create a more tailored trial environment based on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content pack on the [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) site.  
+Prospects can contact you if they have signed up for the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [free trial](/dynamics365/business-central/across-preview). This means that you can become their CSP partner. For more information, see [Connect with customers](../administration/get-started-online#connect-with-customers).  
 
-For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md).  
+Alternatively, you can create a more tailored trial environment based on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content pack on the [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) site. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md).  
+
+If you want an existing client to try [!INCLUDE [prodshort](../developer/includes/prodshort.md)] with their own data and in their own time, you can assign the *Business Central Premium Trial SKU* to their account in your Partner Center. This trial cannot be extended beyond the first 30 days, but you can assign the *Business Central Premium Trial SKU* to their account a second time. After that, the client must either subscribe to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] or abandon [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
 ## Embed Apps and signing customers up
 

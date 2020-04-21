@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 04/21/2020
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -25,6 +25,8 @@ This type of environment can be useful if you want to demonstrate the general us
 > If you want to show the prospect the full capabilities in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must ask them to change the user experience to Premium in the **Company Information** page. For more information, see [Change Which Features are Displayed](/dynamics365/business-central/ui-experiences).
 
 If a prospect has signed up for a free trial, and they use [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to help run their business, then they must decide whether to subscribe within the first 60 days. If they extend their trial once, and they are still not sure, they must contact a partner.
+
+However, in many cases, you will probably prefer to show prospects more tailored experiences with your own trial.
 
 ### Your own trial
 
