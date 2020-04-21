@@ -44,15 +44,14 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
 |*UserName*| The admin user name for Common Data Service. |
 |*Password*| The admin password for Common Data Service. |
-|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. |
+|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying entities](devenv-al-table-proxy-generator.md#specifyingentities). |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
 |*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`.|
 
 ## Specifying entities
-The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* entity relationships in CDS. For more information, see [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all entities that you want created, including the related entities, in the `Entities` parameter.
+The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* entity relationships in CDS. For more information, see [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all entities that you want created, including the related entities, in the `Entities` parameter separated by a comma.
 
 ### Example
-
 An example could be, that you want to generate an AL proxy table for the CDS Worker Address (cdm_workeraddress). 
 If you run the altpgen tool and only specify `cdm_workeraddress`, the tool will not generate the `Worker` lookup field, because no related table Worker is specified.
 
