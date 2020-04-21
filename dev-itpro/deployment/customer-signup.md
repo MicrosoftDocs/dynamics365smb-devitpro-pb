@@ -20,7 +20,7 @@ This means that you can show prospects a preview of what you are offering based 
 
 ## Prospects and trials
 
-Prospects can contact you if they have signed up for the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [free trial](/dynamics365/business-central/across-preview). This means that you can become their CSP partner. For more information, see [Connect with customers](../administration/get-started-online#connect-with-customers).  
+Prospects can contact you if they have signed up for the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [free trial](/dynamics365/business-central/across-preview). This means that you can become their CSP partner. For more information, see [Connect with customers](../administration/get-started-online.md#connect-with-customers).  
 
 Alternatively, you can create a more tailored trial environment based on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content pack on the [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) site. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md).  
 
