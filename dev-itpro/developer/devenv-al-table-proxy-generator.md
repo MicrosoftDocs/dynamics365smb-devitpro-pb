@@ -49,7 +49,7 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`.|
 
 ## Specifying entities
-The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* entity relationships in CDS. For more information, see [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all entities that you want created, including the related entities, in the `Entities` parameter separated by a comma.
+The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* entity relationships in CDS. For more information, see [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all entities that you want created, including the related entities, in the `Entities` parameter separated by commas.
 
 ### Example
 An example could be, that you want to generate an AL proxy table for the **CDS Worker Address** (cdm_workeraddress). 
