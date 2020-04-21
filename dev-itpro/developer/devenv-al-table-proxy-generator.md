@@ -2,7 +2,7 @@
 title: "AL Table Proxy Generator"
 description: "Tool for creating integration or proxy tables for integration with Common Data Service from Business Central"
 ms.custom: na
-ms.date: 04/16/2020
+ms.date: 04/21/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
 |*UserName*| The admin user name for Common Data Service. |
 |*Password*| The admin password for Common Data Service. |
-|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br> |
+|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
 |*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`.|
 
