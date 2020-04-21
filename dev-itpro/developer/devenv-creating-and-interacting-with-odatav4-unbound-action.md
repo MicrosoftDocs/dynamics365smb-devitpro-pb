@@ -97,5 +97,5 @@ HTTP/1.1 200 OK
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
 [Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  
 [Exporting Permission Sets](devenv-export-permission-sets.md)  
-[Discover Events Using the Event Recorder](devenv-events-discoverability.md)
+[Discover Events Using the Event Recorder](devenv-events-discoverability.md)  
 [Creating and Interacting with an OData V4 Bound Action](devenv-creating-and-interacting-with-odatav4-bound-action.md)
