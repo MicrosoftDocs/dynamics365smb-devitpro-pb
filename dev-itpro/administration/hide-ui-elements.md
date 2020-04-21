@@ -28,7 +28,7 @@ You can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to s
 >   
 >  If you only use the **LicenseFile** option in the **UI Elements Removal** field, then you do not have to edit any permission sets as they will not affect which UI elements are removed.  
 
-A couple of permission sets in the [!INCLUDE[demo](../developer/includes/demo_md.md)] demonstration database are adapted to support the FOUNDATION permission set for demonstration purposes. You can use those permission sets to try out how UI elements are removed for a user performing the task to create and edit a new customer.  
+A couple of permission sets in the [!INCLUDE[demo](../developer/includes/demo_md.md)] demonstration database are adapted to support the FOUNDATION permission set for demonstration purposes. You can use those permission sets to try out how UI elements are removed for a user performing the task to create and edit a new customer. For more information, see [Special Permission Sets](administration-special-permission-sets.md). 
 
  The following table describes a sequence of tasks, with links to the topics that describe them. These tasks are listed in the order in which they are generally performed.  
 

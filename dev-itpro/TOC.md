@@ -62,6 +62,7 @@
 ## [Version numbers in Business Central](administration/version-numbers.md)
 ## [Enabling new features ahead of time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
+## [Special Permission Sets](administration/administration-special-permission-sets.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
