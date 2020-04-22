@@ -217,7 +217,7 @@ These articles on indexing are worth knowing as an AL developer:
 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [Key Property](../developer/properties/devenv-key-property.md) 
-- [About SQL Server indexes](https://docs.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
+- [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
 Indexes have a cost to update, so it's recommended to not use them too frequently. 
 
@@ -288,6 +288,7 @@ The following articles can be of help in troubleshooting performance issues:
 
 - [Find missing SIFT indexes for FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 - [Use Page Inspection to find extensions participating on a page](../developer/devenv-inspecting-pages.md)
+- [Viewing Table Sizes](/dynamics365/business-central/admin-view-table-information)
 
 ## Tuning the Development Environment 
 
