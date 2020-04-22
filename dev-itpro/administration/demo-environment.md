@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/21/2020
+ms.date: 04/22/2020
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -32,11 +32,11 @@ However, in many cases, you will probably prefer to show prospects more tailored
 
 If you want to use a trial experience that gives you more control over the experience and allows you to demonstrate the native integration with Outlook and other services, services, such as Power Automate or Dynamics 365 Sales, then you can sign up for a free trial yourself. This gives you an environment without the risk of introducing changes to an existing customer environment and before you have set up a customer-partner relationship in the Partner Center, for example.  
 
-You can do that with your company email, but it's far better to get yourself an Office 365 demo account that you create on [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/), which has replaced *demos.microsoft.com*. You have access to the site if you are enrolled with the Microsoft Partner Center. For more information, see [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products) in the Partner Center documentation.  
+You can do that with your company email, but it's far better to get yourself a Microsoft 365 demo account that you create on [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/), which has replaced *demos.microsoft.com*. You have access to the site if you are enrolled with the Microsoft Partner Center. For more information, see [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products) in the Partner Center documentation.  
 
-For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) with an Office 365 demo account, you can keep that environment for up to a year. However, if you switch to the actual trial experience in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], that experience will expire after 30 days. At that point, you can [extend the trial](/dynamics365/business-central/admin-extend-trial), or you can return to the CRONUS demonstration experience, which will still be available until your Office 365 demo account expires.  
+For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) with a Microsoft 365 demo account, you can keep that environment for up to a year. However, if you switch to the actual trial experience in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], that experience will expire after 30 days. At that point, you can [extend the trial](/dynamics365/business-central/admin-extend-trial), or you can return to the CRONUS demonstration experience, which will still be available until your Microsoft 365 demo account expires.  
 
-This type of environment can be useful for repeatable demos that rely on Office 365 integration, for example.  
+This type of environment can be useful for repeatable demos that rely on Microsoft 365 integration, for example.  
 
 > [!TIP]
 > If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you do not have to use private mode for browsing, and you can let Edge save passwords and sites to any of your browser profiles. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] also performs well in the new Edge for even better demos. You can also switch the page layout to *Focused* to minimize demo distraction. For more information, see [Microsoft Edge documentation](/deployedge/).  
@@ -48,7 +48,7 @@ We also recommend that you connect to a low-latency network for a faster respons
 [!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
 > [!IMPORTANT]
-> Environments that are based on Office 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the Office 365 demo account expires. If a prospect wants to use [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to help run their business, they should sign up for a trial using their own email account. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+> Environments that are based on Microsoft 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the Microsoft 365 demo account expires. If a prospect wants to use [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to help run their business, they should sign up for a trial using their own email account. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
 ## Prepare for major updates with preview environments
 
@@ -60,7 +60,7 @@ Sometimes, the out-of-the-box demo environment is not what you want to show your
 
 Instead, you might want to [deploy [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises](../deployment/deployment-scenarios.md) with your customizations or other solutions. Or you could set up a dedicated environment based on the [[!INCLUDE [prodshort](../developer/includes/prodshort.md)] container-based image on Docker](../developer/devenv-running-container-development.md).  
 
-Alternatively, you can create a free trial with an Office 365 demo account from [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com), and then create a dedicated environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that you then apply your solution to, such as by deploying your app straight from Visual Studio Code, or any other configuration changes that you want to make. For inspiration for how to get started, see [Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](test-environment.md).  
+Alternatively, you can create a free trial with a Microsoft 365 demo account from [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com), and then create a dedicated environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that you then apply your solution to, such as by deploying your app straight from Visual Studio Code, or any other configuration changes that you want to make. For inspiration for how to get started, see [Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](test-environment.md).  
 
 ## See also
 

@@ -29,15 +29,17 @@ Some types of trials can be extended beyond 30 days, and not all types can be us
 |Scenario |Trial period  |Can be extended  | Can be used for production|
 |---------|--------------|-----------------|---------------------------|
 |Prospect signs up for free trial with their work or school email account, and then switches to My Company for a 30 day trial|30 days         | Yes </br>Once through the in-product notification + once by the partner |  Yes       |
-|Prospect signs up for free trial with an Office 365 Business trial, and then switches to My Company for a 30 day trial|29 days         | Yes </br>They must extend their Office 365 Business trial first, and then they can use the in-product notification to extend the trial one time |  No       |
+|Prospect signs up for free trial with an Microsoft 365 Business trial, and then switches to My Company for a 30 day trial|29 days         | Yes </br>They must extend their Microsoft 365 Business trial first, and then they can use the in-product notification to extend the trial one time |  No       |
 |Partner assigns the **Dynamics 365 Business Central Premium Trial** license to an existing client in Partner Center so that they can try out the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] full experience in My Company|30 days         | No </br>The partner can assign a new **Dynamics 365 Business Central Premium Trial** license for a second 30 days trial |  Yes       |
 |Partner creates a test customer and assigns the **Dynamics 365 Business Central Premium Trial** license to that in Partner Center. Then they invite a client or prospect to that trial. |30 days         | No </br>The partner can assign a new **Dynamics 365 Business Central Premium Trial** license for a second 30 days trial  |  Yes       |
+
+At any point during their trial experience, when they are ready, you can convert their trial to a paid subscription using the Partner Center dashboard. For more information, see [Converting trials to paid subscriptions](/partner-center/offer-your-customers-trials-of-microsoft-products#converting-trials-to-paid-subscriptions).  
 
 ### <a name="premiumtrial"></a>The Dynamics 365 Business Central Premium Trial
 
 [!INCLUDE [admin-premiumtrial](../developer/includes/admin-premiumtrial.md)]
 
-### <a name="extendtrial"></a>Extending trials
+## <a name="extendtrial"></a>Extending trials
 
 [!INCLUDE [admin-extendtrials](../developer/includes/admin-extendtrials.md)]
 
