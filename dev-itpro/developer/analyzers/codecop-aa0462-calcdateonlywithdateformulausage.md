@@ -1,6 +1,6 @@
 ---
 title: "The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the <> symbols."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/22/2020
 ms.reviewer: na

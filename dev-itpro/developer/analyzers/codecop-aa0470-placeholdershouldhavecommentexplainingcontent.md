@@ -1,6 +1,6 @@
 ---
 title: "Placeholders should have a comment explaining their content."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/22/2020
 ms.reviewer: na

@@ -1,6 +1,6 @@
 ---
 title: "You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/22/2020
 ms.reviewer: na

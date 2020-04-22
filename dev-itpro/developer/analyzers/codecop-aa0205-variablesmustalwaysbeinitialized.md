@@ -1,6 +1,6 @@
 ---
 title: "Variables must be initialized before usage."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/22/2020
 ms.reviewer: na

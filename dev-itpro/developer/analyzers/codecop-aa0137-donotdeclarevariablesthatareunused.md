@@ -1,6 +1,6 @@
 ---
 title: "Do not declare variables that are unused."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 04/22/2020
 ms.reviewer: na
