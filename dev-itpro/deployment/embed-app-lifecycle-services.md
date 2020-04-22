@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/06/2020
+ms.date: 04/22/2020
 ---
 
 # Managing an [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
@@ -56,14 +56,72 @@ After the Environment is successfully provisioned, its status on the list of app
 
 ## Onboarding customers and creating environments
 
-It isn't possible to create environments and add customers in LCS. The customers are onboarded the same way as they're onboarded to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service - via the Partner Center. Also no special licenses are used for the Embed apps customers. Use the same licenses and subscriptions that are available for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] itself. You can find more details [here](../administration/get-started-online.MD)].  
+Partners who support an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online can onboard customers in two ways:
+
+- Using the self-service IW sign-up – for acquiring a free evaluation version of the app.  
+- Through the Microsoft Partner Center Cloud Solution Provider (CSP) program by contacting the partner - for acquiring a paid production version of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)].
+
+Tenant provisioning is happening automatically (just-in-time) on the first attempt to login into the solution.
+
+Navigating to `https://businesscentral.dynamics.com` will trigger provisioning of the Business Central tenant, while navigating to `https://[application name].bc.dynamics.com` will trigger provisioning of the tenant running on the *application name* application.  
+
+### Self Service (IW) sign-up - evaluation
+
+The Embed App partner can choose to allow customers to use a self-service sign-up (also known as IW sign-up and viral sign-up) for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)]. In that case, the partner must prepare a sign-up URL that will redirect the Office 365 sign-up flow to their application URL. The sign-up URL must have the following format:
+
+`https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2F[application name].bc.dynamics.com%2F%3FredirectedFromSignup%3D1`
+
+The partner can then pass the URL to their customers, either from the partner’s own marketing page or in a welcome e-mail, for example.
+
+To work with an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], the customers would use a URL that looks something like this:
+
+- Client: `https://[application name].bc.dynamics.com`
+- Web Services: `https://[application name].api.bc.dynamics.com`
+
+In contrast, to work with [!include[prodshort](../developer/includes/prodshort.md)], they would use these URLs:
+
+- Client: `https://businesscentral.dynamics.com` 
+- Web Services: `https://api.businesscentral.dynamics.com`  
+
+### Partner initiated (CSP) sign-up – paid
+
+In CSP, it is the partner who defines the Partner-to-Customer price. Partners can use several options to charge their customers.
+
+#### Option 1: [!INCLUDE[embedapp](../developer/includes/embedapp.md)] price is added on top of Microsoft-to-Partner price:
+
+Example (not actual prices):
+
+|     |Partner-to-Customer price|Price|
+|-----|-----|-----|
+|CSP |Essential|25+50=75 USD|
+
+#### Option 2: [!INCLUDE[embedapp](../developer/includes/embedapp.md)] price is added as a 3rd party CSP offering
+
+<!--This functionality is still in development by the CSP team; tentative GA of this feature is December 2018-->
+Example (not actual prices):
+
+|     |Partner-to-Customer price|Price|
+|-----|-----|-----|
+|CSP |Essential|25|
+|CSP |Fabrikam Apples (Essential)|50|
+
+#### Option 3: [!include[prodshort](../developer/includes/prodshort.md)] license + [!INCLUDE[embedapp](../developer/includes/embedapp.md)] self-monetization
+
+Example (not actual prices):
+
+|     |Partner-to-Customer price|Price|
+|-----|-----|-----|
+|CSP |Essential|25|
+|External (such as www.stripe.com) |Fabrikam Apples (Essential) |50|  
+
+In all three options, the partner will be selling [!include[prodshort](../developer/includes/prodshort.md)] licenses in CSP.  
 
 Once you've established the reseller relationship with the customer and added [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscriptions with required number of licenses for them, you must use your own branded Embed app URL to sign in their environment and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center.
 
 To create a new production environment for your customers, go to this URL:
 
 ```http
-https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production 
+https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production
 ```
 
 To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL:
