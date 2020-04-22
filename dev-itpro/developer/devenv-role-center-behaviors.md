@@ -1,6 +1,6 @@
 ---
 title: Role Center Behaviors
-description: This article describes how the behavior has influence in the tablet client and phone client than the web client.
+description: This section describes in which areas the Role Center pages have a different behavior in the tablet client and the phone client from the web client.
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -12,7 +12,7 @@ author: blrobl
 ---
 
 # Role Center Behaviors
-This section describes in which areas the Role Center pages have a different behavior in the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] than in the [!INCLUDE[nav_web](includes/nav_web_md.md)]. This behavior has influence on how you will build your Role Center pages. For information about pages on tablets and phones in general, see [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md).  
+This section describes in which areas the Role Center pages have a different behavior in the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] compared to the [!INCLUDE[nav_web](includes/nav_web_md.md)]. This behavior has influence on how you will build your Role Center pages. For information about pages on tablets and phones in general, see [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md).  
   
 ## Behavioral Differences  
   

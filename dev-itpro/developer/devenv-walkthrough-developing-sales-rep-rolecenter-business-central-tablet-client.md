@@ -32,7 +32,7 @@ In this example, you will learn how to create a new Role Center for the [!INCLUD
 
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
 
--   A supported browser. For more information, see [System Requirements for Dynamics 365 Business Central 2020 Release Wave 1](../deployment/system-requirement-business-central-v16).  
+-   A supported browser. For more information, see [System Requirements for Dynamics 365 Business Central 2020 Release Wave 1](../deployment/system-requirement-business-central-v16.md).  
 
 ## Story  
  Simon is a partner developer working for CRONUS International Ltd. Nancy is a Sales Representative at Contoso Consulting. Simon has to build a new Role Center to support Nancy in her job. When at work, Nancy spends part of her time on the road with only her tablet available on customer visits. Nancy needs access to KPIs on the front page. She needs easy access to filter for the customers who she will visit. When at the customer site, she creates sales quotes. Simon wants to build a Role Center that can be used on a tablet and he wants to reuse as much code and as many page objects as possible.  
