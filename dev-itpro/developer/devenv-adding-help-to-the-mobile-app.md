@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
-author: blrobl
+author: SusanneWindfeldPedersen
 ---
 # Adding Help to the Business Central Mobile App
 To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] solution, you have to offer users Help. Although tablets and phones have a simpler interface than both the [!INCLUDE[nav_web](includes/nav_web_md.md)], there can be times where the user needs help understanding the purpose of a page or a workflow.  

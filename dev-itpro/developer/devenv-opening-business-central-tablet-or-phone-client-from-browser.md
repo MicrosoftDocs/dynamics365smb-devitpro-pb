@@ -47,4 +47,3 @@ You can open the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or the [!INCL
 
 ## See Also  
  [Introducing the Dynamics 365 Business Central Mobile App](devenv-Introducing-business-central-Mobile-App.md)   
-  [Developing for the Business Central Mobile App](devenv-Developing-for-the-business-central-Mobile-App.md)   

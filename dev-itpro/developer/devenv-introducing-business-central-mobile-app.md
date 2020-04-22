@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
-author: blrobl
+author: SusanneWindfeldPedersen
 ---
 # Introducing the Dynamics 365 Business Central Mobile App
 The app displaying the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is targeted at users in small and medium sized businesses that want to access data from a tablet or a phone. The main advantages of this offering are portability and flexibility, which allows end users to perform tasks when they are away from their desk. Having a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution that runs on a smaller device also brings it in the hands of many more users and your app is easy to distribute. 

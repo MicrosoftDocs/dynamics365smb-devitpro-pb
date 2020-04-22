@@ -37,10 +37,12 @@ Designing for small screens can be more challenging, because pages will show few
 ### Testing Using a Browser  
  Using a browser you can test how your application pages will look on various device sizes. For more information, see [Opening the Business Central Tablet or Phone Client from a Browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md). 
  
- When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. For more information, see [Microsoft Edge Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium).
+ When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. For more information, see [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium).
  <!--Also, for more information see [Troubleshooting: Client Returns Wrong CLIENTTYPE](devenv-troubleshooting-client-returns-wrong-clienttype.md).-->
 
 ## See Also  
  [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
  [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
- [Displaying Data as Tiles](devenv-lists-as-tiles.md) 
+ [Displaying Data as Tiles](devenv-lists-as-tiles.md)  
+ [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md)  
+ [Gesture Property](properties/devenv-gesture-property.md)
