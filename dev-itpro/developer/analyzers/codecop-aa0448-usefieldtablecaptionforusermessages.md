@@ -1,5 +1,5 @@
 ---
-title: "The name of temporary variable must be prefixed with Temp."
+title: "You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/22/2020
@@ -13,27 +13,13 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0073
-The name of temporary variable must be prefixed with Temp.  
+# CodeCop Rule AA0448
+You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.  
 
 ## Description
-Only temporary variable names must be prefixed with Temp.
+If you want to enable your application for multilanguage functionality, you must use the FieldCaption and TableCaption methods instead of the FieldName and TableName methods.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Reason for the rule
-Temporary variables must be named with identifiers that abbreviate the word temporary, such as temp. This improves readability of the code.
-
-## Bad code example
-```
-JobWIPBuffer : Record "Job WIP Buffer" temporary;
-```
-
-## Good code example
-```
-TempJobWIPBuffer : Record "Job WIP Buffer" temporary;
-```
-
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
