@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/21/2020
+ms.date: 04/22/2020
 ---
 
 # Trials and Sign-ups for Business Central Online
@@ -24,7 +24,22 @@ Prospects can contact you if they have signed up for the [!INCLUDE [prodshort](.
 
 Alternatively, you can create a more tailored trial environment based on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content pack on the [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) site. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md).  
 
-If you want an existing client to try [!INCLUDE [prodshort](../developer/includes/prodshort.md)] with their own data and in their own time, you can assign the *Business Central Premium Trial SKU* to their account in your Partner Center. This trial cannot be extended beyond the first 30 days, but you can assign the *Business Central Premium Trial SKU* to their account a second time. After that, the client must either subscribe to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] or abandon [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+Some types of trials can be extended beyond 30 days, and not all types can be used for production data. The following table outlines the types of trials that you can offer prospects:
+
+|Scenario |Trial period  |Can be extended  | Can be used for production|
+|---------|--------------|-----------------|---------------------------|
+|Prospect signs up for free trial with their work or school email account, and then switches to My Company for a 30 day trial|30 days         | Yes </br>Once through the in-product notification + once by the partner |  Yes       |
+|Prospect signs up for free trial with an Office 365 Business trial, and then switches to My Company for a 30 day trial|29 days         | Yes </br>They must extend their Office 365 Business trial first, and then they can use the in-product notification to extend the trial one time |  No       |
+|Partner assigns the **Dynamics 365 Business Central Premium Trial** license to an existing client in Partner Center so that they can try out the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] full experience in My Company|30 days         | No </br>The partner can assign a new **Dynamics 365 Business Central Premium Trial** license for a second 30 days trial |  Yes       |
+|Partner creates a test customer and assigns the **Dynamics 365 Business Central Premium Trial** license to that in Partner Center. Then they invite a client or prospect to that trial. |30 days         | No </br>The partner can assign a new **Dynamics 365 Business Central Premium Trial** license for a second 30 days trial  |  Yes       |
+
+### <a name="premiumtrial"></a>The Dynamics 365 Business Central Premium Trial
+
+[!INCLUDE [admin-premiumtrial](../developer/includes/admin-premiumtrial.md)]
+
+### <a name="extendtrial"></a>Extending trials
+
+[!INCLUDE [admin-extendtrials](../developer/includes/admin-extendtrials.md)]
 
 ## Embed Apps and signing customers up
 
