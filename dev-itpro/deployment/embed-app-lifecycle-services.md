@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/22/2020
+ms.date: 04/23/2020
 ---
 
 # Managing an [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
@@ -83,39 +83,6 @@ In contrast, to work with [!include[prodshort](../developer/includes/prodshort.m
 - Client: `https://businesscentral.dynamics.com` 
 - Web Services: `https://api.businesscentral.dynamics.com`  
 
-### Partner initiated (CSP) sign-up – paid
-
-In CSP, it is the partner who defines the Partner-to-Customer price. Partners can use several options to charge their customers.
-
-#### Option 1: [!INCLUDE[embedapp](../developer/includes/embedapp.md)] price is added on top of Microsoft-to-Partner price:
-
-Example (not actual prices):
-
-|     |Partner-to-Customer price|Price|
-|-----|-----|-----|
-|CSP |Essential|25+50=75 USD|
-
-#### Option 2: [!INCLUDE[embedapp](../developer/includes/embedapp.md)] price is added as a 3rd party CSP offering
-
-<!--This functionality is still in development by the CSP team; tentative GA of this feature is December 2018-->
-Example (not actual prices):
-
-|     |Partner-to-Customer price|Price|
-|-----|-----|-----|
-|CSP |Essential|25|
-|CSP |Fabrikam Apples (Essential)|50|
-
-#### Option 3: [!include[prodshort](../developer/includes/prodshort.md)] license + [!INCLUDE[embedapp](../developer/includes/embedapp.md)] self-monetization
-
-Example (not actual prices):
-
-|     |Partner-to-Customer price|Price|
-|-----|-----|-----|
-|CSP |Essential|25|
-|External (such as www.stripe.com) |Fabrikam Apples (Essential) |50|  
-
-In all three options, the partner will be selling [!include[prodshort](../developer/includes/prodshort.md)] licenses in CSP.  
-
 Once you've established the reseller relationship with the customer and added [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscriptions with required number of licenses for them, you must use your own branded Embed app URL to sign in their environment and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center.
 
 To create a new production environment for your customers, go to this URL:
@@ -136,8 +103,8 @@ Each environment that you signed up for the [!INCLUDE[embedapp](../developer/inc
 
 In the LCS portal, you get access to various logs for the activities that you do in the portal:
 
-- Deployment: logs of deployment of the application versions 
-- Tenant provisioning: logs of creation of the new customer environments   
+- Deployment: logs of deployment of the application versions  
+- Tenant provisioning: logs of creation of the new customer environments  
 - Tenant upgrades: logs of customer environments upgrades  
 - Application errors: errors that are displayed to the customers when they work with the Embed app functionality
 

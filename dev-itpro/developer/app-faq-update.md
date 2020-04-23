@@ -40,7 +40,7 @@ For major releases, we do auto-update every app on every tenant to the app’s l
 
 ## How do tenants that already have an existing version of my app get my latest updated version?
 
-By uninstalling and reinstalling the app. When doing the reinstall, it calls into our service and finds the latest active version of an app. There is a new **Manage Apps** page in the [!INCLUDE [prodadmincenter](../includes/prodadmincenter.md)] that will soon allow updating of AppSource apps without having to do uninstall and reinstall.
+By uninstalling and reinstalling the app. When doing the reinstall, it calls into our service and finds the latest active version of an app. There is a new **Manage Apps** page in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)] that will soon allow updating of AppSource apps without having to do uninstall and reinstall.
 
 ## Do I have to submit an updated version of my app for the major releases?
 
@@ -52,7 +52,7 @@ We recommend that you bundle more bug fixes and features so that your app doesn'
 
 ## What if I have a critical hotfix?
 
-We treat critical hotfixes with the utmost importance. We do have a process around this. Additional information on this hotfix process can be found [here](../devenv-update-app-life-cycle-faq.md#what-if-a-customer-reports-a-critical-bug-in-my-app-and-needs-an-immediate-hotfix-version-of-my-app).
+We treat critical hotfixes with the utmost importance. We do have a process around this. Additional information on this hotfix process can be found [here](devenv-update-app-life-cycle-faq.md#what-if-a-customer-reports-a-critical-bug-in-my-app-and-needs-an-immediate-hotfix-version-of-my-app).
 
 ## If I make changes to the library app, but I also submit an update for the AppSource app?
 
