@@ -2,7 +2,7 @@
 title: "Troubleshooting the Business Central Mobile App On-Premises"
 ms.custom: na
 ms.date: 04/01/2020
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -10,9 +10,9 @@ ms.prod: "dynamics365-business-central"
 author: blrobl
 ---
 # Troubleshooting the Business Central Mobile App On-Premises
-This section contains information to help you resolve problems using the [!INCLUDE[nav_web](includes/nav_web_md.md)], the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] when working On-Premises.
+This section contains information to help you resolve problems using the [!INCLUDE[nav_web](includes/nav_web_md.md)], the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] when working on-premises.
   
-## Troubleshooting Topics  
+## Troubleshooting topics  
  <!-- [Troubleshooting: Compression Option in IIS](Troubleshooting--Compression-Option-in-IIS.md)  
   
  [Troubleshooting: The File that You Are Trying to Use Is Too Large](Troubleshooting--The-File-that-You-Are-Trying-to-Use-Is-Too-Large.md) -->  
