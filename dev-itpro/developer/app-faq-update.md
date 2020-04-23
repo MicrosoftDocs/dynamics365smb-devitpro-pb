@@ -54,9 +54,9 @@ We recommend that you bundle more bug fixes and features so that your app doesn'
 
 We treat critical hotfixes with the utmost importance. We do have a process around this. Additional information on this hotfix process can be found [here](devenv-update-app-life-cycle-faq.md#what-if-a-customer-reports-a-critical-bug-in-my-app-and-needs-an-immediate-hotfix-version-of-my-app).
 
-## If I make changes to the library app, but I also submit an update for the AppSource app?
+## If I make changes to the library app, must I also submit an update for the AppSource app?
 
-You would upload the updated library app(s) to Partner Center, leave the main app as is, and submit for validation. We then see the main app has not changed and only validate the library app(s).
+You would upload the updated library app to Partner Center, leave the main app as is, and submit for validation. We then see that the main app has not changed and only validate the library app.
 
 ## But wouldn’t I need to change the dependency in my main app’s json to reference the updated library app file? 
 
@@ -64,7 +64,7 @@ No. The version number in the dependency listing in the json file to an app is a
 
 ## Why don't I see the updated version of my app in my sandbox tenant?
 
-Your tenant is on an older version of Business Central and has not yet been upgraded to the latest version of Business Central. The latest updated version of your app is only compatible with the latest Business Central later versions. If you upgrade your tenant to the latest version, you can then update your app.
+Your tenant is on an older version of Business Central and has not yet been upgraded to the latest version of Business Central. The latest updated version of your app is only compatible with the latest Business Central version and later. If you upgrade your tenant to the latest version, you can then update your app.
 
 ## See also
 
