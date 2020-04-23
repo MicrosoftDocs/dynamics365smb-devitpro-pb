@@ -1,6 +1,6 @@
 ---
 title: "FAQ about Updating your Business Central App"
-description: "Get answers to some of your questions about managing an offer in Partner Center when you build an app for Dynamics 365 Business Central"
+description: "Get answers to some of your questions about updating your app for Dynamics 365 Business Central"
 author: rweigel
 ms.custom: na
 ms.date: 04/23/2020
@@ -12,7 +12,7 @@ ms.author: rweigel
 
 # FAQ about Updating your Business Central App
 
-This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prodshort](../includes/prodshort.md)].
+This section contains answers to frequently asked questions about updating your app for [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 ## Is it the same process for an app update as the first version?
 

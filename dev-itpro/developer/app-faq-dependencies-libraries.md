@@ -1,6 +1,6 @@
 ---
 title: "FAQ about Library & Dependency Apps in Business Central"
-description: "Get answers to some of your questions about managing an offer in Partner Center when you build an app for Dynamics 365 Business Central"
+description: "Get answers to some of your questions about library apps and dependency apps in Dynamics 365 Business Central"
 author: rweigel
 ms.custom: na
 ms.date: 04/23/2020
@@ -10,9 +10,9 @@ ms.service: "dynamics365-business-central"
 ms.author: rweigel
 ---
 
-# FAQ about Library & Dependency Apps in Business Central
+# FAQ about Library and Dependency Apps in Business Central
 
-This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prodshort](includes/prodshort.md)].
+This section contains answers to frequently asked questions about library apps and dependency apps in [!INCLUDE[prodshort](includes/prodshort.md)].
 
 ## What is a library app?
 
