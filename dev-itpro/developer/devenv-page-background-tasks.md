@@ -445,7 +445,7 @@ trigger OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: T
 var
     PBTErrorNotification: Notification;
 begin
-    if (ErrorText = 'Could not parse parameter WaitParam') then begin
+    if (ErrorCode = 'ChildSessionTaskTimeout') then begin
         IsHandled := true;
     PBTErrorNotification.Message('Something went wrong. The start and finish times haven't been updated.');
     PBTErrorNotification.Send();
