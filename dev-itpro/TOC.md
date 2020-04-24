@@ -305,9 +305,19 @@
 ### [Using Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
-### [Business Central App URL](developer/devenv-link-to-universal-app.md)
+### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
 ## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## Developing for the Business Central Mobile App
+### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
+### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
+### [Getting Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
+### [Designing for Different Screen Sizes on Tablet and Phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
+### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
+### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
+### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
+### [Troubleshooting the Business Central Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
+### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md) 
 ## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)

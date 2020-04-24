@@ -154,9 +154,9 @@ dotnet
 For information about troubleshooting access to camera, see [Troubleshooting: Camera and Location](/dynamics365/business-central/ui-troubleshooting-camera-location).
 
 ## See Also  
-[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)    
-[Camera Options Overview](devenv-camera-options.md)   
-[Troubleshooting: Camera and Location](/dynamics365/business-central/ui-troubleshooting-camera-location)  
-[Implementing Location in AL](devenv-implement-location-al.md)   
+
+[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
+[Implementing Location in AL](devenv-implement-location-al.md)  
+[CameraOptions Overview](devenv-Camera-options.md)  
 [RunOnClient property](properties/devenv-runonclient-property.md)  
- [WithEvents property](properties/devenv-withevents-property.md) 
+[WithEvents property](properties/devenv-withevents-property.md) 
