@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/02/2020
+ms.date: 04/21/2020
 ms.author: edupont
 ---
 
@@ -87,7 +87,7 @@ For more information, see [Extend, Customize, and Collaborate on the Help](help/
 
 ### Working in MarkDown
 
-If you fork one of our repos, you will be authoring in something called MarkDown. We recommend that you learn the basics by referring to the Docs contributor guide. For more information, see [Docs Markdown reference](contribute/markdown-reference).  
+If you fork one of our repos, you will be authoring in something called MarkDown. We recommend that you learn the basics by referring to the Docs contributor guide. For more information, see [Docs Markdown reference](/contribute/markdown-reference).  
 
 The team that built the Docs.microsoft.com site have also developed an extension for Visual Studio Code that helps with MarkDown validation, for example. For more information, see [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack). However, you can also use other text editors.  
 

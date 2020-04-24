@@ -62,6 +62,7 @@
 ## [Version numbers in Business Central](administration/version-numbers.md)
 ## [Enabling new features ahead of time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
+## [Special Permission Sets](administration/administration-special-permission-sets.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -163,7 +164,12 @@
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
-### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
+### Frequently asked questions about apps
+#### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
+#### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
+#### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
+#### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
+#### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
@@ -323,6 +329,7 @@
 #### [Implementing Location in AL](developer/devenv-implement-location-al.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+## [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)

@@ -2,7 +2,7 @@
 title: "SIFT index should not be used on primary or unique key."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
