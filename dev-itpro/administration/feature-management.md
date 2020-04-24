@@ -7,8 +7,8 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
-ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview
-ms.date: 04/08/2020
+ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
+ms.date: 04/22/2020
 ms.author: mikebc
 ---
 
@@ -38,7 +38,7 @@ Learn about [What's new and planned](https://aka.ms/dynamics365releaseplan).
 Learn about [new features available in the last minor update](https://aka.ms/bclastminorupdate).  
 
 > [!TIP]
-> To prepare for an upcoming feature, consider enabling the feature on a sandbox environment that has a copy of production data. Inviting business users to test out the change using real-world tasks. Once you and your users are satisfied with the change, you can then enable it on production environments where they can immediately benefit from that feature.  
+> To prepare for an upcoming feature, consider enabling the feature on a sandbox environment that has a copy of production data. Invite business users to test out the change using real-world tasks. Once you and your users are satisfied with the change, you can then enable it on production environments where they can immediately benefit from that feature.  
 
 ## How to enable an optional feature
 
@@ -74,6 +74,10 @@ Yes. Features that are listed in the **Feature Management** page are considered 
 
 No. Users and administrators don't receive any in-app or email notifications about approaching dates for features becoming automatically enabled.  
 
+#### Do these features show in the Microsoft 365 admin center Message center?
+
+At this time, new [!INCLUDE[prodshort](../includes/prodshort.md)] features are not listed in Message center.  
+
 #### How is feature management different to the Early Access program?
 
 The Early Access program that is used by some Dynamics 365 apps makes a large set of new features available two months before a major update. It allows customers to enable those features in production. The most significant difference is that the Early Access program features are always two months before the major update.
@@ -101,6 +105,9 @@ Some features don't provide a way to try out the feature for yourself and won't 
 #### Are optional features also optional on new environments?
 
 Yes. All optional features are enabled by default on new environments for new customers to benefit from. Administrators can still turn any of these features off from the Feature Management page.
+
+#### Are optional features automatically enabled on sandbox environments?
+When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, all features are enabled by default.  
 
 #### Is feature management applicable to on-premises deployments of Business Central?
 
