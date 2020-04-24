@@ -69,7 +69,7 @@ The general steps are as follows:
 
 1. Create a background task codeunit that includes the logic that you want to run in the background.
 2. On the page, complete the following steps:
-    1. Add code that creates (or *enqueues*) the page background task at runtime. <!--enquea call to the [EnqueueBackgroundTask Method](methods-auto/page/page-enqueuebackgroundtask-method.md) to “enqueue” the page background task at runtime.-->
+    1. Add code that creates (or *enqueues*) the page background task at runtime. <!--enquea call to the [EnqueueBackgroundTask Method](methods-auto/page/page-enqueuebackgroundtask-method.md) to "enqueue" the page background task at runtime.-->
     2. Add code to the [OnPageBackgroundTaskCompleted trigger](triggers/devenv-onpagebackgroundtaskcompleted-trigger.md) to handle the results of the background task and update the UI.
     3. Add code to the [OnPageBackgroundTaskError trigger](triggers/devenv-onpagebackgroundtaskerror-trigger.md) to handle errors that occur in the background task.
 
@@ -429,7 +429,7 @@ begin​
       exit;​
     end else if (ErrorCode = 'DB:FatalCode') then begin​
       // Throws a new error message with the severity PageBackgroundTaskErrorLevel:Error​
-      Error('Fatal error while calculating data’);​
+      Error('Fatal error while calculating data');​
     end;​
 ​
    // IsHandled = false, so the original error will be displayed in the client​
