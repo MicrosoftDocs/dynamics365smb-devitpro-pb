@@ -36,7 +36,7 @@ The admin agent and helpdesk agent roles are assigned through the [Microsoft Par
 
 ### Mobile apps
 
-Mobile apps can't natively handle a setup where there's no production environment called 'production'. In this case, you must use the protocol handler. For more information about the protocol handler, see [Linking to the Dynamics 365 Business Central App](../developer/devenv-link-to-universal-app.md). We recommend you don't remove the 'production' environment if mobile apps are in use.  
+Mobile apps cannot natively handle a setup where there's no production environment called 'production'. In this case, you must use the protocol handler. For more information about the protocol handler, see [Linking to the Dynamics 365 Business Central App](../developer/devenv-link-to-mobile-app.md). We recommend you don't remove the 'production' environment if mobile apps are in use.  
 
 ## Internal administrators
 
