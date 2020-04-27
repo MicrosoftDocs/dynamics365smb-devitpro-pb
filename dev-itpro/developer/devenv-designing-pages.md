@@ -99,7 +99,19 @@ Example 3. When a listpart is included as the last part on the page, it will exp
 
 ### ListPlus page layouts 
 
-<!-- Snippet about what ListPlus pages are for. -->
+The ListPlus pages’ primary purpose is to support users in managing or browsing a collection of data, e.g. entries, related to a specific business entity or event. For example, the *Customer Sales* page is a ListPlus page that shows sales numbers for a customer and providing dedicated viewing options for sales analysis.
+
+The ListPlus page type is a versatile means to support analysis and management tasks in a specific entity context (named by the page title). ListPlus pages can show persistent data about the entity/event in addition to giving options for how data is viewed or filtered.
+
+From the user’s perspective, the following are qualities of a well-designed details page:
+-	Has a page title that clearly identifies the context for the information presented in the page.
+-	Is optimized for showing one set of details, and giving the user means to work with them.
+-	Presents information in the page in such a way that the hierarchy can be understood when read from top to bottom.
+-	If present, fields that control which data is presented in another FastTab come before that FastTab.
+-	If present, fields that show data dependent on the chosen row (in the repeater) come after the repeater.
+
+A ListPlus page must not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided.
+
 
 Example 1. Field sections are placed from top to bottom. The first ListPart fills vertical space. 
 
@@ -111,7 +123,18 @@ Example 3. When placing two ListParts in a group, they share horizontal and vert
 
 ### List page layouts 
 
-<!-- Snippet about what List pages are for. -->
+List pages support users viewing and finding specific entities or entries in a collection. Lists that are editable have cells available for data entry and update.
+
+From the user’s perspective, the following are qualities of a well-designed List page:
+
+-	Defines a set of columns that is optimized for viewing and filtering the given collection. Optimize the column order for data entry if the list is editable.
+-	Has a page title that clearly names or identifies the collection of entities/entries presented.
+-	If a summary or additional detail related to the selected row are shown, these appear below the list.
+-	If custom viewing options are available, these appear above the list.
+-	Includes one or two FactBoxes to give essential collection statistics, and relevant related details for the selected row.
+
+List pages must contain a single `Repeater` group. In addition, a list can include groups of fields, card parts, and list parts. Below are examples of list page compositions, showing how space is divided.
+
 
 Example 1. The repeater group assumes full vertical space. 
 
@@ -120,10 +143,21 @@ Example 2. When a field group or cardpart is included, space for repeater is red
 Example 3. When a listpart is included, space is shared equally between part and repeater. 
 
 
-
 ### Worksheet page layouts 
 
-<!-- Snippet about what worksheet pages are for. -->
+A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users’ work with the collection, such as with journals (which typically involves data entry) and inquiry pages (which is for querying data).
+
+From the user’s perspective, the following are qualities of a well-designed worksheet page:
+
+-	Defines a set of columns that is optimized for overviewing and managing the given collection. Columns are ordered relative to their importance.
+-	Has fields above the grid that specify filtering options or specify the default values effective during data entry and editing in the grid.
+-	If summary fields or additional details of the selected row are shown, these appear below the repeater.
+
+> [!NOTE]
+> The Worksheet page type does not support the same part and group compositions as the List page type.
+
+Worksheet pages must contain a single repeater group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided.
+
 
 Example 1. The repeater group assumes full vertical space, leaving space for groups above and below. 
 
@@ -134,15 +168,17 @@ Example 3. When a listpart is included, space is shared equally between part and
 
 ### Dialog page layouts 
 
-<!-- Snippet about what dialog pages are for. -->
+Some page types in [!INCLUDE[prodshort](includes/prodshort.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, as well as dialogs defined as report request pages.
 
-Example 1. The repeater group assumes full vertical space, leaving space for groups above and below. 
-
-Example 2. If a listpart is included, vertical space is shared with repeater group. 
-
-Example 3. When a listpart is included, space is shared equally between part and repeater. 
+It is also possible to use the common page types (`Card`, `Document`, `List`, etc.) to present a dialog to the user. In this case, pages are created, composed, and can include the same elements, as when displayed ordinarily. Presenting the page to the user as a dialog requires certain AL code that activates the dialog mode. When this happens, the page is shown with dismiss buttons in the page footer.
 
 [illustration of dialog and modal pages] 
+
+Generally, [!INCLUDE[prodshort](includes/prodshort.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
+
+Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page page can contain a lot of contents, it is possible for the user increase the dialog size with the maximize button.
+
+
 
  
 ## See Also
