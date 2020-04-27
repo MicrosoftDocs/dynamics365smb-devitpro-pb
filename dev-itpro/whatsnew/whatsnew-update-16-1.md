@@ -18,7 +18,7 @@ Would you like to know what has changed in update 16.1? Below you'll find an ove
 [Link to Hotfixes](https://support.microsoft.com/en-us/help/4538888)
 
 ## Feature changes
-- We haven't identified any changes reported in both[Successhub](https://Aka.ms/bagreleasenotes) and [the Release Plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). If not correct, please send titles and links to [Lotte](lci@microsoft.com) and [Katrine](a-kawilu@microsoft.com). Thanks
+- We haven't identified any new features or changes reported in either [Successhub](https://Aka.ms/bagreleasenotes) or [the Release Plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). If not correct, please send titles and links to [Lotte](lci@microsoft.com) and [Katrine](a-kawilu@microsoft.com). Thanks
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). 
@@ -28,15 +28,16 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-- Major updates  
+- **Major updates**  
 Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime). 
 
-- Update history   
+- **Update history**   
 In between the Microsoft Dynamics 365 Business Central minor updates we deploy new builds as they become available. Visit our new [Update History](https://support.microsoft.com/en-us/help/4553289/update-history-for-microsoft-dynamics-365-business-central) to check if you have the latest hotfixes. 
 
-- Message to Global Admins about the capabilities in Business Central   
+- **Message to Global Admins about the capabilities**   
 On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned.
 
 - Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about Business Central performance. 
 
-- ANY OTHER TIPS/INFO YOU THINK IS RELEVANT?? Please send to [Lotte](lci@microsoft.com) and [Katrine](a-kawilu@microsoft.com). Thanks
+- **Your input needed here...**   
+Any other 'enhancements'/tips/info/...you want to be communicated here? Please send to [Lotte](lci@microsoft.com) and [Katrine](a-kawilu@microsoft.com). Thanks
