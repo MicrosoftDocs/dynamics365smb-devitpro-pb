@@ -13,7 +13,7 @@ ms.author: solsen
 ---
 
 # Testing the Advanced Sample Extension
-It is required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you are new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample Customer Rewards extension.
+It is required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you are new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
@@ -51,7 +51,7 @@ In the sample test we will consider the following:
 - Each test will also verify that the extension works for a user that does not have SUPER permissions. 
 
 ## Writing the tests 
-We will first create a new project (CustomerRewardsTest) for the tests. You are required to separate the Customer Rewards extension and the tests into separate projects.  
+We will first create a new project (CustomerRewardsTest) for the tests. You are required to separate the CustomerRewards extension and the tests into separate projects.  
 
 Before we can start writing the tests for the extension, we need to do the following: 
 
