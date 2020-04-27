@@ -44,6 +44,7 @@ The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the 
 
 The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.
 
+![Designer action bar](media/designer-action-bar.png "Designer action bar")
 <!-- illustration of header of entity page and header of collection page -->
 
 ## Entity-oriented pages 
@@ -57,7 +58,9 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 
 ## Collection-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (e.g. showing customers, items, etc.) from which the user can seek out the entities to work with. The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (e.g. in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
+In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (e.g. showing customers, items, etc.) from which the user can seek out the entities to work with.
+
+The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (e.g. in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
 
 ## Composing pages 
 
@@ -94,7 +97,6 @@ Example 1. Field groups are placed vertically from top to bottom of the page
 Example 2. A ListPart can be included. In this case, the listpart’s height is limited to show 5 rows.  
 
 Example 3. When a listpart is included as the last part on the page, it will expand to fill space. 
-
  
 
 ### ListPlus page layouts 
