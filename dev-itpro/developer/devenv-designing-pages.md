@@ -53,7 +53,7 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
 > [!NOTE]  
-> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use `Repeater` group in the construction of entity-oriented pages. Use Repeater groups only when you construct collection-oriented pages. A `Repeater` group may be used in pages that are in turn included as individual list parts in an entity-oriented task page.
+> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. However, an entity-oriented task page *can* include a list part page that, in turn, contains a `Repeater` group.
 
 ## Collection-oriented pages 
 
