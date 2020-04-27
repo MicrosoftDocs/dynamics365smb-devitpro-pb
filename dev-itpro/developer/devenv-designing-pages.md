@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 
 # Designing Pages
 
-Understanding how [!INCLUDE[prodshort](includes/prodshort.md)] displays a page dependent on its page type is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
+Understanding how [!INCLUDE[prodshort](includes/prodshort.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
 ## Understanding page types 
 
@@ -21,7 +21,20 @@ Choosing the right page type is the first step when creating or modifying a page
 
 The following table provides an overview of the page types supported in [!INCLUDE[prodshort](includes/prodshort.md)], their typical uses, and basic characteristics. 
 
-<!-- page types table -->
+|Page type|Examples of use|Main data display|Characteristics|
+|---------|---------------|----------------|---------------|
+|`RoleCenter`|Overview of business performance and what to attend to for a specific user profile|Defined by included parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
+|`Card`|Master, reference, and set up data management.|Single entity|Titled entity with FastTabs. May include parts.|
+|`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
+|`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
+|`List`|Entity overviews and navigation, and inline editing of simple entities.|Collection of entities/entries|A single list with a caption. May have field groups and subpages below the list’s `Repeater`.|
+|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with caption. May include field groups and subpages above or below the worksheet’s `Repeater`.|
+|`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. May have FastTabs with fields or a single list.|
+|`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. May have FastTabs with fields or a single list.|
+|`CardPart`|A page that is included in another page, e.g. a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
+|`ListPart`|A page that is included in another page, e.g. a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
+|`NavigatePage`|Multi-page dialogs (also known as a "Wizard").|Single or collection|One or more groups of fields.|
+
 
 ## The two principal page types 
 
