@@ -61,21 +61,33 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are u
 
 ## Composing pages 
 
-Within a page, the developer can combine page fields into groups. This can help the user overview the page by placing related fields together. And within a group, subgroups can further increase the structure of the data displayed in a page. 
+Within a page, the developer can combine page fields into groups. This can help the user overview the page by placing related fields together. And within a group, *subgroups* can further increase the structure of the data displayed in a page. 
 
-Besides adding fields and groups to a page, it is possible to include another page of type CardPart or ListPart. (These two page types can in turn not include other pages.) 
+Besides adding fields and groups to a page, it is possible to include another page of type `CardPart` or `ListPart`. (These two page types can in turn not include other pages.) 
 
-When pages are created to include CardParts and ListParts, Business Central will take care of sharing the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page, and collapse/expand specific sections of interest. 
+When pages are created that include parts, Business Central will take care of sharing the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
-How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and—of course—on the size of the browser window. 
+How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window. 
 
 ### Field groups and page parts 
 
+In the following sections are description of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
 <!-- show legend for displaying groups and page parts. -->
 
 ### Card and Document page layouts 
 
-<!-- Snippet about what Card and Doc pages are for. -->
+The primary purpose of Card pages is to support users managing master and reference data, such as Customer, Vendor, and Item entities. (The name *Card* refers to how this kind of business data was kept on paper cards in filing cabinets before being computerized.) The Card page type is also often used for setup pages.
+
+The Document pages’ primary purpose is to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents (quotes, invoices, orders, etc.), and as such, document pages often have associated workflow or audit trail requirements.
+
+From the user’s perspective, the following are qualities of a well-designed card or document page:
+- Uses the page type `Card` if the page represents master or reference data, or is a setup page
+- Uses the page type `Document` if the page represents a transaction or other important event in the domain of business
+- Has a page title that clearly identifies the data represented in the page.
+- Is optimized for overview by organizing data in FastTabs and marking relevant fields as `Promoted` or `Additional`.
+- Favors header fields and other important fields by placing them in a FastTab titled General that come first on the page.
+- Includes one or two FactBoxes to give relevant statistics and quick access to related documents.
+- For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
 
 Example 1. Field groups are placed vertically from top to bottom of the page 
 
