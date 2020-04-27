@@ -23,7 +23,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 
 |Page type|Examples of use|Main data display|Characteristics|
 |---------|---------------|----------------|---------------|
-|`RoleCenter`|Overview of business performance and what to attend to for a specific user profile|Defined by included parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
+|`RoleCenter`|Overview of business performance and the start page for a specific user profile|Defined by the included parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
 |`Card`|Master, reference, and set up data management.|Single entity|Titled entity with FastTabs. May include parts.|
 |`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
@@ -38,48 +38,26 @@ The following table provides an overview of the page types supported in [!INCLUD
 
 ## The two principal page types 
 
-A fundamental characteristic of the available page types lies in the way that a page type relates to the data presented on the page. Two principal ways exists: entity-orientation (typical for the Card page type) and collection-orientation (typical for the List page type.) 
+A fundamental characteristic of the available page types lies in the way that a page type relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
 
-The entity-oriented page types (Card, Document, and ListPlus) provide the user with actions to toggle edit/view mode, creating new, and deleting records, at the top of the page. The collection-oriented page types (List and Worksheet) provide all actions in the page action bar. 
+The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the user with actions to toggle edit/view mode, creation, and deletion, at the top of the page. (On tablet and phone, these actions may be placed in another position.)
+
+The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.
 
 <!-- illustration of header of entity page and header of collection page -->
 
 ## Entity-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented task page is the card, which provides details about a single customer or other master data, and the document, which represents a single transaction or other important business event. 
+In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented task page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction or other important business event. 
 
-ListPlus is also an entity-oriented page type. Unlike Card and Document pages, the ListPlus page type is for pages that have a prominent listpart and either few or no header fields.  
+`ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
-### Entity-oriented page characteristics 
-
-The overall characteristics of an entity-oriented page are: 
-
-- The page title identifies the specific entity represented in the page. For example, a customer card will have the customer number or name as the page title. 
-
-- Page commands act in relation to the entity shown in the page. For example, if you choose Delete on a customer card page, the system will delete that customer. 
-
-- FactBoxes that show related details (statistics, links, notes) about the specific entity represented in the page, in textual or chart form. 
-
-> [!IMPORTANT]  
-> Since entity-oriented pages always represent a single domain entity, such as a customer or an item, we recommend that you do not use Repeater groups in the construction of entity-oriented pages. Use Repeater groups only when you construct collection-oriented pages. Note that Repeater groups may be used in pages that are in turn included as individual List parts in an entity-oriented task page. 
+> [!NOTE]  
+> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use `Repeater` group in the construction of entity-oriented pages. Use Repeater groups only when you construct collection-oriented pages. A `Repeater` group may be used in pages that are in turn included as individual list parts in an entity-oriented task page.
 
 ## Collection-oriented pages 
 
 In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page is the list (showing customers, items, etc.) from which the user can seek out the entities to work with. 
-
-### Collection-oriented page characteristics 
-
-The overall characteristics of a collection-oriented page include: 
-
-- A prominent list or table of entities, records, or entries. 
-
-- A page title, or alternatively fields above the table/list, which describe or identify the collection of data shown in the page. For example, the Customer List provides an overview of the customer entities from which the user can then open individual customer card pages. 
-
-- Commands that act in relation to the selected row or rows in the list or table. For example, selecting a customer in the Customer list, and then choosing Delete, will delete only the selected customer, not all customers in the list. 
-
-- FactBoxes that show related details (statistics, links, notes) about the selected row in the table or list, in textual or chart form. 
-
-- A Details pane below the list or table can optionally show details (additional fields) about the selected row, in textual or chart form. 
 
 ## Composing pages 
 
