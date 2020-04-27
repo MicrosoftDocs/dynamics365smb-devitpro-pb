@@ -51,7 +51,7 @@ In the sample test we will consider the following:
 - Each test will also verify that the extension works for a user that does not have SUPER permissions. 
 
 ## Writing the tests 
-We will first create a new project (CustomerRewardsTest) for the tests. You are required to separate the extension and the tests into separate projects.  
+We will first create a new project (CustomerRewardsTest) for the tests. You are required to separate the Customer Rewards extension and the tests into separate projects.  
 
 Before we can start writing the tests for the extension, we need to do the following: 
 
