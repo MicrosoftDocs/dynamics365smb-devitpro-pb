@@ -17,7 +17,7 @@ It is required to submit tests with your extension in order to pass validation. 
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
-This walkthrough will guide you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your tenants. After you have built your extension, you must write the test for it.
+This walkthrough will guide you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your sandbox. After you have built your extension, you must write the test for it.
 
 ## About this walkthrough
 This walkthrough illustrates the following tasks:
