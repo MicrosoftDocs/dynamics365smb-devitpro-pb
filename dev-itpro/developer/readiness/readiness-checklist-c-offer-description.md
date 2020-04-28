@@ -189,7 +189,7 @@ How to structure the content in this paragraph?
   All countries where Microsoft Dynamics 365 Business Central is available
 
 
-## Supported Languages:
+## Supported Languages
 | Offer Details|Description | Requirements |
 |-----------|--------------|---------------|
 | 2.H Offer Description **(Supported languages paragraph)** | Finally, insert a section in the bottom of your description that clearly states which languages your app is available in. | Required     |
