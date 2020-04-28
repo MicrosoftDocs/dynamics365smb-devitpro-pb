@@ -1,7 +1,13 @@
 name: Greetings
 
 
-on: [pull_request, issues]
+on: 
+  pull_request:
+    branches:
+      - live
+  issues:
+    branches:
+      - live
 
 jobs:
   greeting:
