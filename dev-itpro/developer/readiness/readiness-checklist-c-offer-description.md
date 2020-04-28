@@ -162,7 +162,7 @@ This app supports both the Essential and Premium editions of Microsoft Dynamics 
 - **If your offer supports specific countries**:
 
 
-Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here: ["Country/regional availability and supported languages"](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations). 
+Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here: ["Country/regional availability and supported languages"](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations). 
 
 - **If your offer supports all countries**: 
 
