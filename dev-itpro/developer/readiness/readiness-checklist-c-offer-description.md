@@ -147,9 +147,9 @@ How to format this paragraph? Format the headline as a header 4 and the rest of 
 
 *Example:*
 
-> [!TIP]  
-> **Supported Editions:** 
-*This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.*
+ **Supported Editions:** 
+
+This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.
 
 
 
@@ -158,7 +158,7 @@ How to format this paragraph? Format the headline as a header 4 and the rest of 
 |-----------|--------------|---------------|
 | 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
 
-Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here /dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
+Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here: ["Country/regional availability and supported languages"](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations). 
 
 How to structure the content in this paragraph?
 - Create a header 4 (it will automatically become bold)
@@ -169,6 +169,6 @@ How to format this paragraph? Format the headline as a header 4 and the rest of 
 
 *Example:*
 
-> [!TIP]  
-> **Supported Countries:** 
-*Australia, Austria, Belgium, Canada, Denmark, Finland, France,Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States *
+  **Supported Countries**: 
+  
+  Australia, Austria, Belgium, Canada, Denmark, Finland, France,Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States 
