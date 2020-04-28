@@ -30,7 +30,7 @@ This image below is an example of what an offering looks like on AppSource, when
 |2 - 2.G|Use the Rich Text Editor, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
 |2.F|Supported Editions: Premium, Essential or both|  [Premium SKU Listing](readiness-checklist-c-offer-description.md#SupportedEditions)|
 |2.G |State only the Dynamics 365 Business Central Supported Countries that apply.|  [Supported Countries](readiness-checklist-d-supportedcountries-languages.md)|
-|2.H |State the languages that your app is available in.|  [Supported Languages](readiness-checklist-c-offer-description.md#supportedlanguages)|
+|2.H |State the languages that your app is available in.|  [Supported Languages](readiness-checklist-c-offer-description.md#supported-languages)|
 |3-4|Choose the industries your offer is best aligned to. (max 2) Categories that your offer caters to (max 3) |[Industries and Categories](readiness-checklist-e-industries-categories-apptype.md)|
 |5|Add-on App - free or trial, Connect App - Contact me|  [Package and App Type](readiness-checklist-e-industries-categories-apptype.md)|
 |6|Your Help Link cannot be the same as your Support Link. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.|  [Help Link](readiness-checklist-h-help-support.md)|
