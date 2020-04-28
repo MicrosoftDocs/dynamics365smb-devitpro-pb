@@ -41,9 +41,13 @@ Because this property lets you enter an expression, [!INCLUDE[d365fin_long_md](.
 
 When you set the **CaptionClass property** on a field or control, users can configure the caption of a text box that is connected to a label or the caption of a check box without having to modify code. <!--If you set the **CaptionClass property** on other controls, such as groups or Menu Items, the caption will not be displayed.-->
 
-[!INCLUDE[prodshort](../includes/prodshort.md)] passes the value of the **CaptionClass property** to the **CaptionClassTranslate** method in codeunit 42. This method translates the **CaptionClass** to a caption that users can see. The following illustration shows this sequence.
+[!INCLUDE[prodshort](../includes/prodshort.md)] passes the value of the **CaptionClass property** to the **CaptionClassTranslate** method trigger in codeunit 42. This method translates the **CaptionClass** to a caption that users can see.
+ <!--The following illustration shows this sequence.
 
-The **CaptionClassTranslate** method is called when the **CaptionClassTranslate** event is raised. The event is raised by using a language and a CaptionClass. The method converts the CaptionClass into the specific caption for that language and returns it as a string. Language is specified as an integer. CaptionClass is a text.
+ ![Sequence to get value of CaptionClass property](media/CSIDE_CaptionClass.png "CSIDE\_CaptionClass")  -->
+  
+
+The **CaptionClassTranslate** method is triggered when using a language and a CaptionClass. The method converts the CaptionClass into the specific caption for that language and returns it as a string. Language is specified as an integer. CaptionClass is a text.
 
   
 ## See Also  
