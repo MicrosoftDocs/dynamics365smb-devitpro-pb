@@ -158,34 +158,40 @@ This app supports both the Essential and Premium editions of Microsoft Dynamics 
 | 2.G Offer Description **(Supported countries paragraph)** | Insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
 
 
-- **If your offer supports specific countries**:
+**Scenario 1: Your offer supports specific countries**:
 
 
-Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here: ["Country/regional availability and supported languages"](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations). 
+Please list the specific countries your offer supports. You can find the list of supported Countries for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations). 
 
-- **If your offer supports all countries**: 
-
-Make sure to state the following: “All countries and regions where Microsoft Dynamics 365 Business Central is available”. By doing this, you do not need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
-
-**How to structure the content in this paragraph?**
+How to structure the content in this paragraph?
 - Create a header 4 (it will automatically become bold)
 - Call the header "Supported countries".
 - Include a sentence that lists the countries that your app is available in.
 
+*Example*: 
 
-*Examples*:
-
-
-  **Supported Countries**: 
+ **Supported Countries**: 
   
   Australia, Austria, Belgium, Canada, Denmark, Finland, France,Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States 
 
-  or 
+ **Scenario 2: Your offer supports all countries**: 
 
-  **Supported countries:** 
+Please  state that you support all countries where Microsoft Dynamics 365 Business Central is available. By doing this, you do not need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
+
+How to structure the content in this paragraph?
+- Create a header 4 (it will automatically become bold)
+- Call the header "Supported countries".
+- Include a sentence that states your offer supports all countries where Business Central is available
+
+*Example*:
+
+
+ **Supported countries:** 
   
   
   All countries where Microsoft Dynamics 365 Business Central is available
+
+
 
 
 ## Supported Languages
