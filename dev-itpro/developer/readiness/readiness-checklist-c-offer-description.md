@@ -133,42 +133,83 @@ How to format this paragraph? Format this section as a paragraph
 > [!TIP]  
 > *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
-## <a name="SupportedEditions"></a>Supported Editions Supported Countries Premium SKU 
+## <a name="SupportedEditions"></a>Supported Editions 
 | Offer Details | Description | Requirements|
 |---------------|--------------|-------------|
-| 2.F Offer Description **(Supported editions paragraph)** | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
+| 2.F Offer Description **(Supported editions paragraph)** | Insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
 
-How to structure the content in this paragraph?
+**How to structure the content in this paragraph?**
 - Create a header 4 (it automatically becomes bold)
 - Call the header "Supported Editions".
 - Include a sentence that lists the edition(s) that your app supports.
 
-How to format this paragraph? Format the headline as a header 4 and the rest of the paragraph as normal text.  
+ 
+*Example*:
 
-*Example:*
+ **Supported Editions:** 
 
-> [!TIP]  
-> **Supported Editions:** 
-*This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.*
+This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.
 
 
 
 ## Supported Countries
 | Offer Details|Description | Requirements |
 |-----------|--------------|---------------|
-| 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
+| 2.G Offer Description **(Supported countries paragraph)** | Insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
 
-Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here /dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
+
+**Scenario 1: Your offer supports specific countries**:
+
+
+Please list the specific countries your offer supports. You can find the list of supported Countries for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations). 
 
 How to structure the content in this paragraph?
 - Create a header 4 (it will automatically become bold)
 - Call the header "Supported countries".
 - Include a sentence that lists the countries that your app is available in.
 
-How to format this paragraph? Format the headline as a header 4 and the rest of the paragraph as normal text. 
+*Example*: 
+
+ **Supported Countries**: 
+  
+  Australia, Austria, Belgium, Canada, Denmark, Finland, France,Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States 
+
+ **Scenario 2: Your offer supports all countries**: 
+
+Please  state that you support all countries where Microsoft Dynamics 365 Business Central is available. By doing this, you do not need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
+
+How to structure the content in this paragraph?
+- Create a header 4 (it will automatically become bold)
+- Call the header "Supported countries".
+- Include a sentence that states your offer supports all countries where Business Central is available
+
+*Example*:
+
+
+ **Supported countries:** 
+  
+  
+  All countries where Microsoft Dynamics 365 Business Central is available
+
+
+
+
+## Supported Languages
+| Offer Details|Description | Requirements |
+|-----------|--------------|---------------|
+| 2.H Offer Description **(Supported languages paragraph)** | Finally, insert a section in the bottom of your description that clearly states which languages your app is available in. | Required     |
+
+**How to structure the content in this paragraph?**
+- Create a header 4 (it automatically becomes bold)
+- Call the header "Supported Languages".
+- Include a sentence that lists the language(s) that your app is available in.
+
 
 *Example:*
 
-> [!TIP]  
-> **Supported Countries:** 
-*Australia, Austria, Belgium, Canada, Denmark, Finland, France,Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States *
+**Supported Languages**: 
+
+The app is available in Czech (Czech Republic), Danish (Denmark), German (Germany), Spanish (Spain), Dutch (Belgium) and English (United Kingdom)
+
+
+
