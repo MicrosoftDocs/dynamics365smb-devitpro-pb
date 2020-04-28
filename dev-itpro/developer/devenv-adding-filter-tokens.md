@@ -71,7 +71,7 @@ This example extends the application with a new token word "%mysalesperson" repr
 -->
 
 ## Design considerations
-Resolving tokens is intended to be fast, simple and reliable. When implementing event subscribers to resolve filter tokens, keep in mind that these events can be triggered from any user task in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and in some cases may be triggered repeatedly such as when searching across columns. To improve usability and reduce the impact on performance, do consider the following practices:
+Resolving tokens is intended to be fast, simple, and reliable. When implementing event subscribers to resolve filter tokens, keep in mind that these events can be triggered from any user task in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and in some cases may be triggered repeatedly such as when searching across columns. To improve usability and reduce the impact on performance, do consider the following practices:
 
  - Avoid implementing tokens that are only relevant to few business tasks, or assume they are used in the context of a specific page.
  - Avoid implementing tokens that are time-consuming to resolve. Examples of this include looking up records in large or poorly indexed tables, or fetching data from a remote service.  
