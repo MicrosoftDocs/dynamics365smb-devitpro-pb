@@ -138,14 +138,13 @@ How to format this paragraph? Format this section as a paragraph
 |---------------|--------------|-------------|
 | 2.F Offer Description **(Supported editions paragraph)** | Insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
 
-How to structure the content in this paragraph?
+**How to structure the content in this paragraph?**
 - Create a header 4 (it automatically becomes bold)
 - Call the header "Supported Editions".
 - Include a sentence that lists the edition(s) that your app supports.
 
  
-
-*Example:*
+*Example*:
 
  **Supported Editions:** 
 
@@ -168,7 +167,7 @@ Please refer to the list of supported Countries for Microsoft Dynamics 365 Busin
 
 Make sure to state the following: “All countries and regions where Microsoft Dynamics 365 Business Central is available”. By doing this, you do not need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
 
-How to structure the content in this paragraph?
+**How to structure the content in this paragraph?**
 - Create a header 4 (it will automatically become bold)
 - Call the header "Supported countries".
 - Include a sentence that lists the countries that your app is available in.
@@ -194,7 +193,7 @@ How to structure the content in this paragraph?
 |-----------|--------------|---------------|
 | 2.H Offer Description **(Supported languages paragraph)** | Finally, insert a section in the bottom of your description that clearly states which languages your app is available in. | Required     |
 
-How to structure the content in this paragraph?
+**How to structure the content in this paragraph?**
 - Create a header 4 (it automatically becomes bold)
 - Call the header "Supported Languages".
 - Include a sentence that lists the language(s) that your app is available in.
