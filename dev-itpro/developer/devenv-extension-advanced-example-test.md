@@ -58,11 +58,10 @@ Before we can start writing the tests for the extension, we need to do the follo
 + Specify the dependencies between the extension (CustomerRewards) and the test (CustomerRewardsTest) projects.  
 Our CustomerRewardsTest project will be referencing objects from the CustomerRewards project and so we will need to specify this in the `dependencies` setting in the CustomerRewardsTest project's app.json file. The `dependencies` setting takes a list of dependencies, where each dependency specifies the `appId`, `name`, `publisher`, and `version` of the base project/package that the current project/package will depend on.  
 
+> [!NOTE]  
+> Another prerequisite is to update the app.json with a dependency to the test toolkit.
 
-> [!NOTE]   
->  Another prerequisite is to update the app.json with a dependency to the test toolkit.
-
- ```
+```
  {
   ...  
   "dependencies": [ 
@@ -92,7 +91,7 @@ We will be using the Application Test Toolkit to automate and run the tests that
 - Application objects for running application tests such as the **Test Tool** page. 
 
 In order to install the Application Test Toolkit:
-1. Open the Nav Container Helper prompt found on the Desktop. You will see a list of functions that you can run on the container.
+1. Open the NavContainerHelper prompt found on the Desktop. You will see a list of functions that you can run on the container.
 2. Run the `Import-TestToolkitToNavContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
 ```
@@ -122,7 +121,7 @@ The following sections provide an overview of the tags that we recommend you to 
 
 `ScenarioID` links the test to a work item for the functionality. For example, if you use Visual Studio Online or Team Foundation Server, `[SCENARIO 12345]` represents a work item with the ID 12345. 
 
-TestDescription represents a short description of the purpose of the test, such as  *Annie can apply a deferral template to a purchase order*. 
+TestDescription represents a short description of the purpose of the test, such as *Annie can apply a deferral template to a purchase order*. 
 
 ### GIVEN-WHEN-THEN Tags 
 
@@ -137,6 +136,7 @@ The `GIVEN-WHEN-THEN` tags provide a framework for the specific test criteria.
 We can now begin writing the tests for the extension. 
 
 ### MockCustomerRewardsExtMgt codeunit object 
+
 The 50102 **MockCustomerRewardsExtMgt** codeunit contains all the code that mocks the process of validating the activation code for Customer Rewards. Because we cannot make requests to external services in the tests, we define a subscriber method **MockOnGetActivationCodeStatusFromServerSubscriber** for handling the **OnGetActivationCodeStatusFromServer** event when it is raised in the **Customer Rewards Ext. Mgt.** codeunit. The **EventSubscriberInstance** property for this codeunit is set to **Manual** so that we can control when the subscriber function is called. We want the subscriber method to be called only during our tests. We also define a Setup procedure that modifies the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table so that the actual **OnGetActivationCodeStatusFromServerSubscriber** will not handle **OnGetActivationCodeStatusFromServer** event when it is raised. 
 
 ```
