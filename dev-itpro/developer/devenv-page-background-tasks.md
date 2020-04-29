@@ -447,7 +447,7 @@ var
 begin
     if (ErrorCode = 'ChildSessionTaskTimeout') then begin
         IsHandled := true;
-    PBTErrorNotification.Message('Something went wrong. The start and finish times haven't been updated.');
+    PBTErrorNotification.Message('Something went wrong. The start and finish times haven''t been updated.');
     PBTErrorNotification.Send();
     end
     
