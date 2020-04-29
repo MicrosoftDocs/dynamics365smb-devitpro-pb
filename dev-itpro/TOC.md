@@ -211,7 +211,9 @@
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Migrating Tables and Fields Between Extensions
-#### [Moving Tables and Fields to Another Extension](developer/devenv-migrate-table-fields.md)
+#### [Overview](developer/devenv-migrate-table-fields.md)
+#### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+#### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 #### [Migration.json File](developer/devenv-migration-json-file.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
@@ -770,7 +772,10 @@
 ##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app.md)
 ##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v16.md)
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### [Migrate Tables and Fields](developer/devenv-migrate-table-fields.md)
+##### Migrating Tables and Fields Between Extensions
+###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+###### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 <!--#### Data Upgrade
 ##### [Data Upgrade](upgrade/upgrade-data.md)-->
 ##### [DestinationAppsForMigration](upgrade/upgrade-destinationappsformigration.md)
