@@ -11,7 +11,7 @@ ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prodshort.md)] 2019 Release Wave 2 Update
+# Installing a [!INCLUDE[prod short](../developer/includes/prodshort.md)] 2020 Release Wave 1 Update
 
 This article describes how to install an update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
@@ -29,14 +29,21 @@ The databases store the application metadata and business data. If you have a si
 
 The application includes AL extensions that define the objects and code that makes up the business logic. For example, objects include tables, report, pages, codeunits, and more. Each extension is compiled and delivered as an .app file, which is published to the Business Central Server instance.
 
-- Base application
+- System Application extension
+
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
+
+- Base application extension
 
     As a minimum, the solution always includes the Base Application. The Base Application contains the objects (such as table, pages, codeunits, and reports) that define the business logic and functionality of the solution. The Base Application can be either the Microsoft Base Application or a customized Base Application. The Microsoft Base Application is the standard application that is on the installation media (DVD). A customized Base Application is an application that includes customized code.
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
-- Extensions
+- Application extension
 
-    Extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or third-party extensions. Microsoft extensions are available on the DVD. Third-party extensions are extensions developed by your organization or by another organization, like an ISV.
+    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This exetnsion is required fro Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+
+- Customization extensions
+
+    Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or third-party extensions. Microsoft extensions are available on the DVD. Third-party extensions are extensions developed by your organization or by another organization, like an ISV.
 
 ### Single-tenant and multitenant deployments
 
@@ -60,7 +67,7 @@ The installation media (DVD) includes new versions of Microsoft's Base Applicati
 
 The first thing to do is to download the update package that matches your Business Central solution.
 
-1. Go to the [list of available updates](../deployment/update-versions-15.md) for your on-premises version of Business Central. Then, choose the update that you want.
+1. Go to the [list of available updates](../deployment/update-versions-16.md) for your on-premises version of Business Central. Then, choose the update that you want.
 2. From the update page, under the **Resolution** section, select the link for downloading the update, and follow the instructions.
 3. On the computer where you downloaded the update .zip file, extract the all the files to a selected location. 
 
@@ -173,14 +180,14 @@ Also, to ensure that the existing published extensions work on the new platform,
     For example:
 
     ```powershell
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (15-0)"
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (16-0)"
     ```
 
     When completed, a message like the following displays in the console:
 
     ```
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (15-0)
+    DatabaseName        : Demo Database BC (16-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
@@ -211,7 +218,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
 ## Publish the new system symbols
 
-Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\150\AL Development Environment folder.
+Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\160\AL Development Environment folder.
 
 ```
 Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
@@ -375,35 +382,13 @@ If your old solution used Microsoft extensions, then you upgrade these extension
 
 The general steps for this task are listed below. For detailed steps, see [Publishing, Upgrading, and Installing Extensions During Upgrade](upgrade-publish-extensions.md).
 
-### Publish and install Microsoft_Application extension (update to 15.3 and later only)
+### Publish and install Microsoft_Application extension
 
-The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
-
-1. Get the Microsoft_Application extension package and source code.
-
-    With update 15.4 or later, the extension package and source code are on the installation media. Complete this step only if you're installing update 15.3. The Microsoft_Application extension isn't on the 15.3 installation media. 
-
-    With update 15.3, you must download extension package and source code from the Microsoft Download Center. To download, go to [https://download.microsoft.com/download/9/9/1/991764bc-5f99-4be7-957a-f132ac0633ef/Application.zip](https://download.microsoft.com/download/9/9/1/991764bc-5f99-4be7-957a-f132ac0633ef/Application.zip).
-
-    <!--If you're using the Microsoft Base Application or a custom base application that has the Microsoft ID, go to step 3.--
-
-   <!--
-    This step is only required when you're installing Update 15.3. With later updates, the Microsoft_Application extension package and code are on the DVD in the **\Applications\Application\Source** folder.
-    -->
-2. If your base application has an ID other the Microsoft ID (437dbf0e-84ff-417a-965d-ed2bb9650972), you have to modify the Microsoft_Application extension. Skip this step if you're using the Microsoft Base Application or a custom base application that has the Microsoft ID.
-
-    The Microsoft_Application extension must include a dependency reference to your custom base application instead of Microsoft's. To make this change, use the extension's source code that you downloaded. For example: <br /><br />
+The Microsoft_Application extension was introduced in 15.3. In short, it is used to contain the dependency declarations on the system and base application extensions. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
     
-    1. Extract the source code from the Application.source.zip file. 
-    2. Create a Visual Studio Code project that includes the extracted files. You can give the project any valid name. 
-    3. In the extension's app.json file, change the base application dependency to match your base application.
+1. Publish the Microsoft_Application.app package.
 
-        > [!IMPORTANT]
-        > Do not change the name of the extension. It must have the name **Application**; otherwise you won't be able to publish the other Microsoft extensions.
-        
-    3. Build the extension package.
-    
-3. Publish the Microsoft_Application.app package.
+    The installation media path to the extension package (.app file) is **Applications\Application\Source\Microsoft_Application.app"**  
 
     <!--
     
@@ -457,9 +442,9 @@ As an alternative, if you have the source for these extensions, you can build an
 
 (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
 
-On the **Help and Support** page in the client, you'll see an application version, such as 15.1.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version number isn't updated automatically when you install an update. If you want the application version to reflect the version of the update or your own version, you change it manually as described here.
+On the **Help and Support** page in the client, you'll see an application version, such as 16.1.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version number isn't updated automatically when you install an update. If you want the application version to reflect the version of the update or your own version, you change it manually as described here.
 
-We recommend setting the value to application build number for the version 15 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+We recommend setting the value to application build number for the version 16 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
 
 1. Run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -469,7 +454,7 @@ We recommend setting the value to application build number for the version 15 up
     For example:
     
     ```
-    Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.3.38071.0 -Force
+    Set-NAVApplication -ServerInstance BC160 -ApplicationVersion 16.1.38071.0 -Force
     ```
 2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
 
@@ -485,51 +470,10 @@ We recommend setting the value to application build number for the version 15 up
     ```
     Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
     ```
-<!--
-### Recompile and install published third-party extensions
 
-Complete the following on existing 3rd-party extensions for which you do not have new versions built on the new platform.
-
-1. Compile the published extension by running the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
-
-    ```powershell
-    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <version>
-    ```
-
-3. Synchronize the tenant with the extension.
-
-    ```powershell
-    Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Version <extension version>
-    ```
-
-4. (Single-tenant only) Install the extension.
-
-    ```powershell
-    Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Version <extension version>
-    ```
-
-## ADDITIONAL TASKS
-
-## Publish the new system symbols for the update
-
-This step is not required for the application at runtime, but it will be needed for developing extension against the new platform.
-
-1. Unpublish the existing system symbols.
-
-    ```
-    Unpublish-NAVApp -ServerInstance <server instance> -Name System -version <version>
-    ```
-2. Publish the new system symbols extension for the update.
-
-    The symbols extension contains the required platform symbols that the Base Application depends on. The symbols extension package is called **System.app**. If you have installed the **AL Development Environment**, you can find the file in the installation folder, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment. Or, it is also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\150\AL Development Environment folder.
-
-    ```
-    Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
-    ```
--->
 ## See Also
 
-[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-15.md)  
+[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-16.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
