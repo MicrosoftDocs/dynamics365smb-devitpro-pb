@@ -1,6 +1,5 @@
 ---
-title: Upgrade to Business Central 2019 Wave 2
-description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
+title: Upgrade to Business Central 2020 Wave 1
 ms.custom: na
 ms.date: 02/26/2020
 ms.reviewer: na
