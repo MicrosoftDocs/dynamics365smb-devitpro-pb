@@ -47,7 +47,7 @@ When you set the **CaptionClass property** on a field, users can configure the c
  ![Sequence to get value of CaptionClass property](media/CSIDE_CaptionClass.png "CSIDE\_CaptionClass")  -->
   
 
-The **CaptionClassTranslate** method is triggered when using a language and a CaptionClass. The method converts the CaptionClass into the specific caption for that language and returns it as a string. Language is specified as an integer. CaptionClass is a text.
+The **CaptionClassTranslate** method is triggered when a field that uses the **CaptionClass** property is shown. The method takes as input the parameters Language, the current language ID, and CaptionClass, the **CaptionClass** property value. Then it converts the CaptionClass expression into the specific caption for that language and returns it as a string. The caption of the field is then replaced with the returned string.
 
   
 ## See Also  
