@@ -1,8 +1,7 @@
 ---
-title: Upgrade paths to Business Central
-description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
+title: "Upgrade paths to Business Central"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
