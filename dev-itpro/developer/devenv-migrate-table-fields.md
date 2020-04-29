@@ -1,6 +1,6 @@
 ---
-title: "The Migration.json File"
-description: "Description of the json file for data migration for AL in Business Central."
+title: "Migrating Tables and Fields Between Extensions"
+description: "Explains how to migrate tables and fields from one extension to another."
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2020
@@ -13,59 +13,80 @@ ms.author: jswymer
 ---
 # Migrating Tables and Fields Between Extensions
 
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+
 Data migration allows you to move table and field data between extensions. The concepts and processes in this article apply to large-scale and small-scale data migrations. A large-scale migration is typically upgrade scenario, like upgrading from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version 14 to version 16. Small-scale migrations are scenarios where you want to move a limited number of objects from one extension to another.
+
 
 ## Overview
 
 The move is divided into two phases: development and deployment. However, before you begin, you have to determine the direction of the migration within the dependency graph.
 
+### Limitations
+
+- The concepts discussed in this article pertain only to AL. They're not supported in C/AL.
+- You can only move fields from a table object to a table extension or move entire tables from one extension to another.
+- You can't:
+    - Move table extensions to other extensions.
+    - Merge multiple table extensions into one extension.
+    - Split table extensions into multiple extensions.
+
+    Although you can't use this feature for these scenarios, you can achieve the scenarios by other means, which require more manual work. Examples include obsoleting, copying/re-ID/renaming, moving data, and more. 
+
 ### Determining the migration direction in the dependency graph
 
-The process to migrate tables and fields to another extension depends on the migration's direction in the dependency graph. The following figure illustrates a simplified extension dependency graph. From top to bottom, an extension is dependent on any extension the below it in the graph.
+The process to migrate tables and fields to another extension depends on the migration's direction in the dependency graph. The following figure illustrates a simplified extension dependency graph. From top to bottom, an extension is dependent on any extension below it in the graph.
 
 ![Dependency graph](media/extension-dependency-graph.png "Dependency graph")  
 
-
 ##### When to move down
 
-Moving objects from Extension Y to Extension X, is considered a *move down*. Typical move-down scenarios include:
+Typical move-down scenarios include:
 
-- Splitting an extension.
+- Moving to a shared extension.
 
     You want to move common tables to a separate extension that other extensions can have a dependency on.
-- Transitioning from a customized customized base application extension with own ID to the Microsoft Base Application.
+
+- Transitioning from a customized base application extension with its own ID to an extension on top of the Microsoft Base Application.
 
     You have a customized base application extension with its own ID. You want to transition to the Microsoft Base Application. In this case, customizations remain in the current extension. Base objects are removed and ownership transferred to Microsoft Base Application.
+    
+    This scenario is typical for embed ISV apps and on premises solutions moving to the cloud. It's also relevant for solutions that will remain on-premises for the foreseeable future. Use it to refactor code customizations into cleaner, standard base with extensions as part of upgrading.
 
+
+<!--
+Moving from code customized base app with own appId to extension on top of base app, i.e., some on-prem solutions and all embed ISVs (note, System app would also apply then)
+Ext Y might not be owned, i.e., not possible to make modifications in it (e.g., Microsoft standard base app)
+
+-->
 <!--
 - [add more]
 <!--
 - Moving objects to an extension that depends on an extension that you don't own, like the Microsoft Base Application or System Application.-->
 ##### When to move up
 
-Moving objects from the Base Application extension to Extension X is a *move up*. Typical move-up scenarios include:
+Typical move-up scenarios include:
 
 - Splitting an extension in two, with one dependent on the other.
 
-- Upgrading from C/AL to AL
+- Extracting the system application from the base application.
 
-    <!-- [add more]-->
-- Transitioning from a customized customized base application extension with Microsoft ID to the Microsoft Base Application.
+- Transitioning from a customized base application extension with Microsoft ID to the Microsoft Base Application.
 
-    You have a customized base application extension with the Microsoft ID. You want to transition to the Microsoft Base Application. In this case, customizations are moved out of the base application up to extensions. The customization objects are removed from the custom base application and ownership transferred to the new extensions.
-
-<!--
-- [add more]
--->
+    You have a customized base application extension that reuses the Microsoft application ID. You want to transition to the standard Microsoft Base Application. In this case, customizations are moved out of the base application up into new extensions. The new extensions have new application IDs and dependencies to the standard Microsoft base application. The customization objects are removed from the custom base application and ownership transferred to the new extensions.
 
 #### Development
 
 Development involves making application code changes required for the move. In short, the work involves:
 
-- Creating a new extension that contains replicas of the tables or fields you want to move. This extension is referred to as the *releasing extension*.  
-- Creating a new version of the existing extension in which the table and fields to be moved have been deleted. This extension is referred to as the *receiving extension*.
+- Creating the *releasing extension* version
 
-The key to the move is the *migration.json* file. You add the file to project for the releasing extension. This file provides a pointer to the ID of new base extension where tables and fields are to be moved. The *migration.json* is used in the deployment phase. Its purpose is to transfer ownership of tables and fields in the database from one extension to another. For more information, see [Migration.json File](devenv-migration-json-file.md).
+    You create a new version of the original extension. This new version contains the tables or fields you want to keep in the extension. The tables and fields that you want to move are deleted from this extension. They're moved to the *receiving extension*.
+- Creating the *receiving extension*
+
+    You create new extension that includes the table and fields that you want moved. It essentially includes those tables and fields deleted from the releasing extension.
+
+The key to the move is the *migration.json* file. You add the file to the project for the releasing extension. This file provides a pointer to the ID of new receiving extension where tables and fields are to be moved to. The *migration.json* is used in the deployment phase. Its purpose is to transfer ownership of tables and fields in the database from one extension to another. For more information, see [Migration.json File](devenv-migration-json-file.md).
 
 #### Deployment
 
@@ -74,7 +95,9 @@ The deployment phase is when the data is migrated to new tables in the database.
 The order that you synchronize extensions is important:
 
 - The receiving extensions must be synchronized first.
-- The releasing extensions, those extensions that include the migration.json file, must be synchronized last.
+- The releasing extensions, which include those extensions that include the migration.json file, must be synchronized last.
+
+    These extensions are synchronized last because the tables are moved during the synchronization of the releasing extensions. At the end of the synchronization process, the system checks for breaking changes introduced by the extension. If the extension isn't synchronized last, breaking changes will be detected.
 
 ## Move tables and fields down the dependency graph
 
@@ -90,9 +113,13 @@ The receiving extension will contain the table and fields that you want to move.
 
 1. Create an AL project for the receiving extension.
 
-2. Add a table object definition for **TableA** that exactly matches its definition in the releasing extension **Ext X**.
+2. Add a table object definition for **TableA**.
 
-3. Add a table object definition for **TableC** that exactly matches it is the releasing extension **Ext X**, except don't include field **C-2**.
+    The table definition (schema) must include the full schema of the releasing extension **Ext X**, with the same field definitions. You can add new fields.
+
+3. Add a table object definition for **TableC**.
+
+    The table definition (schema) must include the full schema of the releasing extension **Ext X**, with the same field definitions, except don't include field **C-2**. You can add new fields.
 
 4. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
@@ -115,14 +142,20 @@ The receiving extension will contain the table and fields that you want to move.
     ```
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
-2. Delete the entire table object for **TableA**.
+
+2. Modify the app.json file as follows:
+
+    - Increase the `"version"` value.
+    - In the `""dependencies"` parameter, set up a dependency on the new receiving extension **Ext Y**.
+
+    For more information, see [App.json file](devenv-json-files.md#Appjson).
 3. Complete the following steps for **TableC**.
 
-    1. In the app.json file, set up a dependency on the new receiving extension **Ext Y**.
-    2. Add a table extension object **TableExtC**.
-    3. In table extension object **TableExtC**, add a field definition for field **C-2** that matches its definition in the original **TableC** object.
-    4. Delete the original **TableC** object.
-4. In the app.json file, increase the `version` value.
+    1. Add a table extension object **TableExtC**.
+    2. In table extension object **TableExtC**, add a field definition for field **C-2** that matches its definition in the original **TableC** object.
+    3. Delete the original **TableC** object.
+
+4. Delete the entire table object for **TableA**.
 5. Compile a new version of the extension package.
 
 ### Deploy the extensions
@@ -138,14 +171,27 @@ The receiving extension will contain the table and fields that you want to move.
     > [!IMPORTANT]
     > The receiving extension must always be synchronized first.
 
-4. Synchronize the new version of the releasing extension **Ext Y**.
+4. Synchronize the new version of the releasing extension **Ext X v2**.
 
-    This step does the following:
+    This step first reads rules in the migration.json file of the extension, then does the following operations in the database:
+
+    <!--
     - Migrates the data from the original tables **TableA** and **TableC** to the receiving extension tables.
     - Deletes the original tables  **TableA** and **TableC** owned by the releasing extension **Ext X**.
     - Deletes column **C-1** from the releasing table **Ext X**.
+    -->
+    
+    - Creates a companion table for field **C-2** of the table extension object **TableExtC**.
+    - Copies data from column **C-2** in the original **TableC** to new companion table **TableExtC**.
+    - Temporarily renames the new empty tables **TableA** and **TableC** made by receiving extension **Ext Y**. 
+    - Renames the original tables **TableA** and **TableC** that include the data. Instead of including the ID of the releasing extension **Ext X**, the names are changed to include the ID of the receiving extension **Ext Y**. This step essentially transfers ownership from **Ext X** to **Ext Y**.
+    - Deletes the unused column for **C-2** in the original table **TableC**.
+    - Deletes the empty, renamed tables of **Ext Y**.
+
 5. Install the receiving extension **Ext Y**.
-6. Run a data upgrade the new releasing extension version **EXT X v2**.
+6. Run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) on the new releasing extension version **Ext X v2**.  
+
+    This step basically installs the new extension version. You run a data upgrade because an earlier version has been installed and is still published.
 
 ## Move tables and fields up the dependency graph
 
@@ -153,7 +199,7 @@ This section explains how to migrate tables and fields up the dependency graph. 
 
 ![Data migration](media/migrate-tables-fields-up-overview.png "data migration")
 
-In the example, **TableB** and **Field C-1** are customizations. You'll move these elements from the original releasing extension up to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
+In the example, **TableB** and **Field C-2** are customizations. You'll move these elements from the original extension up to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
 To accommodate data migration, you'll have to create an extension that is only used for deployment. This extension is **Ext Z** in the figure. There are two stages of deployment:
 
@@ -162,9 +208,16 @@ To accommodate data migration, you'll have to create an extension that is only u
 - In the first stage, **Ext Z** temporarily takes ownership of tables and fields from **Ext X**.
 - In the second stage, **Ext Z** releases ownership to extensions **Ext X** and **Ext Y**. You delete transition extension when you finish deployment.
 
+This process is a two-step process because we only support moving down the dependency graph. So instead, the concept is to first move the tables' ownership  to an extension above the receiving extensions in the dependency graph. Then, the extensions are moved down. This concept essentially turns the process into a two-step, move-down process.
+
+**Ext Z** is used just as a temporary extension for moving ownership. So, it only includes schema objects. As a result, customers can't run on the tenant until both steps have been done.
+
+> [!NOTE]
+> You can only use this process for on-premise solutions. 
+
 ### Create the transition extension (Ext Z v1)
 
-The transition extension will contain replicas of all object definitions in the releasing extension, except logic code. In the illustration, these objects include **TableA**, **TableB**, and **TableC** and current their field definitions. The transition extension is **Ext Z**.
+The transition extension will contain replicas of all table object definitions in the releasing extension, except logic code. In the illustration, these objects include **TableA**, **TableB**, and **TableC** and current their field definitions. The transition extension is **Ext Z**.
 
 1. Create an AL project for the transition extension.
 
@@ -258,22 +311,23 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
        > [!IMPORTANT]
         > Extensions receiving table objects must be synced first. Extension releasing/giving away table objects must be synced last.
 
-    3. Synchronize the releasing extension **Ext X v1**.
+    3. Synchronize the releasing extension **Ext X v2**.
 
-        This step migrates data from **TableA**, **TableB**, and **TableC** owned by **Ext X** to the tables owned by **Ext Z**.
+        This step will read the migration.json of the extension. Then transfer ownership of the original tables **TableA**, **TableB**, and **TableC** to **Ext Z**.
+
 2. Complete the following steps for the second stage of deployment:
 
     1. Publish the next version for **Ext Z v2** and **Ext X v3**, and the first version of **Ext Y**.
-    2. Synchronize the extensions in the following order: **Ext X**, **Ext Y**, and **Ext Z**.
-    
-        This step creates empty tables **TableA**, **TableB**, and **TableC** in the database. The tables are owned by **Ext Z**.
-    3. Synchronize the releasing extension **Ext X v1**.
+    2. Synchronize the extensions in the following order: **Ext X v3**, **Ext Y v1**, and **Ext Z v2**.
 
-        This step migrates data from the original tables **TableA**, **TableB**, and **TableC** owned by **Ext X** to the matching tables owned by **Ext Z**.
-    
-        This step migrates the data in the original table to the target extension tables. It will also delete the columns in the original table.
-5. Install the new target extension.
-6. Upgrade the original extension.
+       Synchronize **Ext Z v2** last. When you synchronize **Ext Z v2**, ownership of the tables is transferred from **Ext Z** to **Ext X** and **Ext Y**.
+      
+5. Install the new receiving extension **Ext Y v1**.
+6. Run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) on the new releasing extension version**Ext X v3**.
+
+    This step basically installs the new extension version. You run a data upgrade because an earlier version has been installed and is still published.
+
+7. Unpublish both versions of **Ext Z**.
 
 <!--
 PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtX\Default publisher_ExtX_1.0.0.0.app" -SkipVerification
@@ -297,4 +351,6 @@ PS C:\Windows\system32> Start-NAVAppDataUpgrade bc160 -Name extX -Version 1.0.0.
 
 ## See Also
 
+[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [JSON Files](devenv-json-files.md)  
+
