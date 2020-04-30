@@ -297,6 +297,7 @@
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
 ### [Defining an XMLport Schema](developer/devenv-xmlport-schema.md)  
+### [Using Namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [XMLport Triggers](developer/triggers/devenv-xmlport-triggers.md)
 ## [Customizing for User Roles](developer/devenv-role-customization.md)
