@@ -4,7 +4,7 @@ description: "Retaining table data after publishing an extension"
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -40,7 +40,7 @@ When you set the schema update mode to **Recreate**, all the tables and table ex
 ## ForceSync mode
 ForceSync is similar to the existing Synchronize schema update mode, but contains more freedom to make schema changes while retaining data. To enable this mode, set `schemaUpdateMode` to `"ForceSync"`and then set the `"version"` parameter in the app.json file to a fixed number. Data will be preserved in almost all cases with the exception of changing the main table's primary key, in which case the data from the extension tables will be lost. Field renames are allowed and supported in this mode, but the data can only be preserved if you maintain the same ID for the field. If you change both the name and the ID of the field then the data will be lost.
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > This schema update mode is only meant for testing and development and should never be used in production.
 
 In addition to the `launch.json` file setting, the **ForceSync** switch is available through the PowerShell cmdlet `Sync-NavApp –Mode ForceSync`.
@@ -58,7 +58,7 @@ If you, during development, for example, discover that you no longer want field 
 
 - For extensions built on [!INCLUDE[prodshort](includes/prodshort.md)] Spring 2019 or earlier, if a table field has the `SqlDataType` set to a value other than `Varchar` (which is the default), you must delete the `SqlDataType` property on the field, otherwise, you will will not be able to successfully synchronize the extension.
 
-    If the `SqlDataType` property is still needed, you will have to create a new table in the extension that has the same definition as the original table, and write upgrade code that migrates the data from the original table to the new table. For more information, see [Writing upgrade code]([Upgrading Extensions](devenv-upgrading-extensions.md#writing-upgrade-code).
+    If the `SqlDataType` property is still needed, you will have to create a new table in the extension that has the same definition as the original table, and write upgrade code that migrates the data from the original table to the new table. For more information, see [Writing upgrade code](devenv-upgrading-extensions.md#writing-upgrade-code).
 
     Alternatively, if this is a development scenario, you can synchronize the extension using the ForceSync or Recreate mode.
 

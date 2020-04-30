@@ -1,17 +1,15 @@
 ---
 title: "Gesture Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.service: "dynamics365-business-central"
-
+author: SusanneWindfeldPedersen
 ---
-
- 
 
 # Gesture Property
 Specifies a gesture that runs the action on a device with a touch interface, such as the phone client.
@@ -40,7 +38,5 @@ In Action Designer, you can use the **Gesture** column to view the Gesture prope
 
 ## See Also
 [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md)  
-<!--
-[Developing for the Microsoft Dynamics NAV Universal App](../devenv-Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)  
-[Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md)
--->
+[Introducing the Dynamics 365 Business Central Mobile App](../devenv-introducing-business-central-mobile-app.md)   
+<!-- [Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md) -->

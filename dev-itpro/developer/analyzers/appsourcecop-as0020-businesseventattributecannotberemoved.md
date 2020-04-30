@@ -1,8 +1,8 @@
 ---
 title: "A BusinessEvent attribute cannot be removed"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 12/10/2019
+ms.date: 04/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

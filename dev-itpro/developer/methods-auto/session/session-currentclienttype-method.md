@@ -2,7 +2,7 @@
 title: "CurrentClientType Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,10 +36,10 @@ The client type that is running in current session.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use CURRENTCLIENTTYPE as a parameter in [GETURL Method](../../methods/devenv-geturl-method.md) to get the URL of the current client.  
+You can use CurrentClientType as a parameter in the [GetURL Method](../system/system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md) to get the URL of the current client.  
 
 ## Example  
- In the following example, CURRENTCLIENTTYPE is used to get the client type for the session and return a message if the session uses the [!INCLUDE[d365fin_tablet_md](../../includes/d365fin_tablet_md.md)].  
+In the following example, CurrentClientType is used to get the client type for the session and return a message if the session uses the [!INCLUDE[d365fin_tablet_md](../../includes/d365fin_tablet_md.md)].  
 
 ```  
 if CURRENTCLIENTTYPE = CLIENTTYPE::Tablet then  
@@ -47,7 +47,7 @@ if CURRENTCLIENTTYPE = CLIENTTYPE::Tablet then
 ```  
 
 ## Example  
- In the following example, CURRENTCLIENTTYPE is used as a parameter of the [GETURL Method](../../methods/devenv-geturl-method.md) to return the URL of the client that invokes the code.  
+ In the following example, CURRENTCLIENTTYPE is used as a parameter of the [GetURL Method](../system/system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md) to return the URL of the client that invokes the code.  
 
 ```  
 url := GETURL(CURRENTCLIENTTYPE);  

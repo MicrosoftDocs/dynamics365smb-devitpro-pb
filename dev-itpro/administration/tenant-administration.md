@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/05/2019
+ms.date: 04/22/2020
 ms.author: edupont
 ---
 
@@ -24,7 +24,7 @@ Internal administrators are the system administrators, IT professionals, or supe
 
 As the internal administrator, you can add users and grant permissions. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
-As an internal administrator you have **read-only** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if your organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and cancels the subscription. This ensures that you, as the internal administrator, can export relevant data, while no one else in your organization has a license to sign in and use [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+As an internal administrator you have **read-only** access to all areas of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You will have this access even if your organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and cancels the subscription. That way, you, as the internal administrator, can export relevant data, while no one else in your organization has a license to sign in and use [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
 > [!IMPORTANT]
 > You must have a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except the two mentioned above. For information about licensing, see [Microsoft Dynamics 365 Business Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
@@ -35,9 +35,31 @@ For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/inc
 
 If your organization has signed up for a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] trial, you can extend the free trial, and you can start the process of finding a reselling partner to help you get a subscription. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview).  
 
-### Administration in the Office portal
+### Administration in the Microsoft 365 admin center
 
-The **Global admin** role makes you an administrator of your organization's Office 365 tenant. This means that you can manage the subscription, add or remove users, and assign or remove licenses in the Office portal. For more information, see [Office 365 Admin help center](/office365/admin/admin-home).  
+The **Global admin** role makes you an administrator of your organization's Office 365 tenant. This means that you can manage the subscription, add or remove users, and assign or remove licenses in the Microsoft 365 admin center. For more information, see [Microsoft 365 Admin help center](/office365/admin/admin-home).  
+
+### Collaboration with reselling partners
+
+When your organization subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment.  
+
+The partner will have access to your tenant as a *delegated administrator*. You can configure their access to your data. For more information, see [Managing delegated permissions as an internal administrator](delegated-admin.md#managing-delegated-permissions-as-an-internal-administrator).
+
+If your organization decides to switch to another partner, you must take the following steps:
+
+1. Ask your current partner to [remove the reseller relationship with you](/microsoft-365/admin/misc/add-partner#remove-a-reseller-relationship) in the Partner Center
+2. Remove their delegated administration privileges
+
+    1. In the Microsoft 365 admin center, under **Settings**, choose **Partner relationships**, and then select the partner of interest
+    2. In the details pane, choose **Remove delegated admin**
+    3. In the confirmation pane, choose **Remove**
+
+    You must also [disable their user accounts](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) from your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+3. Remove any settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] if the partner did not already clear their settings.  
+
+    For more information, see [Internal administrators](tenant-admin-center.md#internal-administrators).
+
+4. [Add your new partner to your subscription](/microsoft-365/admin/misc/add-partner#add-a-partner-to-an-existing-subscription), and work with them to get them set up  
 
 ### Unsubscribing from [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 
@@ -56,31 +78,13 @@ As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner
 [!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
+### Connect with customers
+
+[!INCLUDE [csp-connect-customer](../developer/includes/csp-connect-customer.md)]
+
 ### Acting as a delegated administrator
 
-As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups, Admin Agents and Helpdesk Agents, in the partner's Azure AD tenant that are used for *delegated administration*. When a customer grants the delegated administration privilege to a partner:
-
-- The **Admin Agent** group is assigned to the **Global Administrator** role in the customer's Azure AD tenant.  
-- The **Helpdesk Agent** group is assigned to the **Helpdesk Administrator** role in the customer's Azure AD tenant.  
-
-Based on the roles assigned, members of both groups can sign in to the customer's Azure AD tenant, Office 365 services, [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants by using their partner credentials. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad) in the Partner Center documentation.  
-
-For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
-
-#### Restricted access to Business Central as delegated administrator
-
-When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
-
-The following tasks are *not* available to the delegated administrator:
-
-- Set up jobs to run as scheduled tasks in the job queue
-- Use the **Edit in Excel** action or interact with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] data in Excel using the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] add-in for Excel.
-
-    You can still use the **Open in Excel** action to view data in Excel.
-
-- Use the **Invite External Accountant** assisted setup guide
-
-    Instead, you can add the external user in the Azure Portal and assign this user the **External Accountant** license.     
+As a reselling partner, you have delegated administration access to their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and other services. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
 
 ### Manage technical support
 
@@ -88,14 +92,11 @@ As a reselling partner, you must be the first line of support for your [!INCLUDE
 
 ## Extending trials
 
-A business can sign up for a free trial of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  
+[!INCLUDE [admin-extendtrials](../developer/includes/admin-extendtrials.md)]
 
-However, sometimes 30 days is not quite enough to decide if they want to buy [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In that case, they can extend their trial with an additional 30 days. For more information, see [Need More Time to Decide Whether to Subscribe?](/dynamics365/business-central/admin-extend-trial) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+### <a name="premiumtrial"></a>The Dynamics 365 Business Central Premium Trial
 
-If the prospect wants to extend the trial further than those 30 days, the partner can extend it another 30 days if the administrator, acting as the delegated administrator, log into the prospect's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and extend the trial using the same **Extend Trial Period** guide. However, after those additional 30 days, the prospect must either purchase [!INCLUDE[prodshort](../developer/includes/prodshort.md)], or the partner can ask Microsoft for an additional extension of the trial by contacting Support.  
-
-> [!TIP]
-> As a reselling partner, you can suggest your prospects sign up for a trial, but you can also help them set up a customized demonstration environment based on a sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Creating a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml).  
+[!INCLUDE [admin-premiumtrial](../developer/includes/admin-premiumtrial.md)]
 
 ## See Also
 
@@ -107,3 +108,4 @@ If the prospect wants to extend the trial further than those 30 days, the partne
 [Version numbers in Business Central](version-numbers.md)  
 [Resell Different Solutions](../developer/readiness/readiness-reseller.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)  

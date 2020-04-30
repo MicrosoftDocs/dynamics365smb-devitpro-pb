@@ -1,7 +1,7 @@
 ---
 title: "Protected Variables"
 ms.custom: na
-ms.date: 11/20/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ var
 ```
 
 ## Example
+```
 page 500100 MyPage
 {
     SourceTable = Customer;
@@ -93,7 +94,7 @@ pageextension 500101 MyPageExt extends MyPage
         }
     }
 }
-
+```
 
 ## See Also  
 [AL Method Reference](methods/devenv-al-method-reference.md)   

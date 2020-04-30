@@ -1,7 +1,7 @@
 --- 
 title: "EventPublisherElement Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,6 @@ Specifies the table field that the trigger event pertains to.
  You use this property to set up an event subscriber method that will be called when the trigger event that is specified by the [Eventmethod Property](devenv-eventmethod-property.md) is raised on the specified table field. <!-- For more information, see [Subscribing to Events](Subscribing-to-Events.md).  -->
 
 ## See Also  
- [GlobalVarAccess Property](devenv-globalvaraccess-property.md)   
  [IncludeSender Property](devenv-includesender-property.md)   
  <!--  [Publishing Events](Publishing-Events.md)   
  [Raising Events](Raising-Events.md)   

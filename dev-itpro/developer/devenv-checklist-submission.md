@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/12/2019
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: article
@@ -13,7 +13,7 @@ ms.author: rweigel
 
 # Technical Validation Checklist
 
-The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. 
+The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. To get code validation helping you to bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
 
 |Requirement|Example/Guidance|
 |-----------|----------------|
@@ -31,10 +31,10 @@ The following is a checklist of all requirements that you **must meet before sub
 |Do not use `OnBeforeCompanyOpen` or `OnAfterCompanyOpen`|[Replacement Options](../compliance/apptest-onbeforecompanyopen.md)|
 |Include the proper upgrade code allowing your app to successfully upgrade from version to version.|[Upgrading Extensions](devenv-upgrading-extensions.md)|
 |Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
-|You are required to prefix or suffix the **Name** property of your fields. This eliminates collision between apps.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
-|You are required to include a Visual Studio Code test package with your extension. Ensure that you include as must code coverage as you can.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
+|You are required to prefix or suffix the **Name** of your fields and objects. This eliminates collision between apps.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
+|You are required to include a Visual Studio Code test package with your extension. Ensure that you include as much code coverage as you can.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
 |DataClassification is required for fields of all tables/table extensions. Property must be set to other than `ToBeClassified`.|[Classifying Data](devenv-classifying-data.md)|
-|You must use the Profile object to add profiles instead of inserting them into the Profiles table.|[Profile Object](devenv-profile-object.md)|
+|You must use the Profile object to add profiles instead of inserting them into the **Profiles** table.|[Profile Object](devenv-profile-object.md)|
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-pages-overview.md#using-keywords-to-place-actions-and-controls)|
 
 <!-- 

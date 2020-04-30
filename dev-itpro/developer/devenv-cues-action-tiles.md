@@ -1,7 +1,7 @@
 ---
 title: "Creating and Customizing Cues"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,14 +10,15 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
- 
-
 # Creating Cues and Action Tiles on Role Centers
 
 This article provides an overview of Cues and Action tiles, and the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
 
 ![Cues on the Role Center](media/Cue-overview-online-v2.png "Cues on the Role Center")  
-  
+
+> [!NOTE]  
+> Modifying actions in Cue groups on page extensions is not supported.
+
 ##  <a name="CueDesign"></a>Designing Cues 
 
 A Cue provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. Cues are interactive, meaning that you can select the Cue to drill down to data or open another page, run code, and more. Cues display data that is contained in a table field. This can be raw data or calculated data.

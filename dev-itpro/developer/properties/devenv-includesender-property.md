@@ -1,7 +1,7 @@
 ---
 title: "IncludeSender Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,6 @@ IncludeSender = true;
 <!--  For more information about events, see [Events in Microsoft Dynamics NAV](Events-in-Microsoft-Dynamics-NAV.md).  -->
   
 ## See Also  
- [GlobalVarAccess Property](devenv-globalvaraccess-property.md)   
  <!--[Publishing Events](Publishing-Events.md)   
  [Raising Events](Raising-Events.md)   
  [Subscribing to Events](Subscribing-to-Events.md)  

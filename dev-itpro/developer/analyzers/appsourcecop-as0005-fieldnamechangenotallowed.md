@@ -1,8 +1,8 @@
 ---
-title: "Fields must not change name, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+title: "Fields must not change name"
+ms.author: solsen
 ms.custom: na
-ms.date: 12/10/2019
+ms.date: 04/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0005
-Fields must not change name, since dependent extensions may break  
+Fields must not change name  
 
 ## Description
-Fields must not change name.
+Fields must not change name. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

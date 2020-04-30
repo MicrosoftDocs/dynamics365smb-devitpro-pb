@@ -1,7 +1,7 @@
 ---
 title: "OnValidate (Fields) Trigger"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ tableextension 50111 "CustomerExt" extends Customer
     {
         field(50112; Acronym; Text[15])
         {
-            trigger OnValidate();
+            trigger OnValidate()
             begin
                 rec.Acronym := rec.Acronym.ToUpper();
             end;

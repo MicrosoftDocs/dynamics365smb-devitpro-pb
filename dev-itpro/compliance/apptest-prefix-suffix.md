@@ -3,7 +3,7 @@ title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,33 +13,52 @@ ms.author: rweigel
 ---
 
 # Benefits and Guidelines for using a Prefix or Suffix
-In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects. You can use the [Caption](../developer/properties/devenv-caption-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix/suffix must be defined at the control/field/action/group level.
+In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects. You can use the [Caption](../developer/properties/devenv-caption-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a table extension or a page extension, the prefix/suffix must be defined at the control/field/action/group level.
+
+## Examples
 
 Declare your objects with a prefix as shown in the following examples.
 
-**Table**  
+### Table  
 ```
-table 70000000 MyPrefix Salesperson
+table 70000000 MyPrefixSalesperson
 ```
-
-**Page**  
 ```
-page 70000000 MyPrefix Salesperson
+table 70000001 SalespersonMySuffix
 ```
 
-**Page Extension**  
+### Page
+```
+page 70000000 MyPrefixSalesperson
+```
+```
+page 70000001 SalespersonMySuffix
+```
+
+### Page extension  
 ```
 actions
 {
     addafter(ApprovalEntries)
     {
-        action(MyPrefix Vacation)
+        action(MyPrefixVacation)
+```
+```
+actions
+{
+    addafter(ApprovalEntries)
+    {
+        action(VacationMySuffix)
 ```
 
-**Codeunit**  
+### Codeunit
 ```
-codeunit 70000000 MyPrefix Salesperson
+codeunit 70000000 MyPrefixSalesperson
 ```
+```
+codeunit 70000001 SalespersonMySuffix
+```
+
 
 ## Benefits
 There are two good reasons to why you may want to proactively use a prefix or suffix:
@@ -55,8 +74,8 @@ There are two good reasons to why you may want to proactively use a prefix or su
 - If a conflict arises, the one who registered the prefix/suffix always wins
 - For your own pages/tables/codeunits, you must set the prefix/suffix at the top object level
 - For pages/tables in the base application of BC that you extend, you must set the prefix/suffix at the top object level
-- For pages/tables of BC in the base application that you extend, you must also set at the control/field/action level
-- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks the cop will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your prefix in the AppSourceCop.json file.
+- For pages/tables of Business Central in the base application that you extend, you must also set at the control/field/action level
+- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your prefix in the AppSourceCop.json file.
 
 ## Examples of acceptable prefix/suffix
 

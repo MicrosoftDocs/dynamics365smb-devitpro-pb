@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/12/2019
+ms.date: 04/01/2020
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -31,9 +31,7 @@ For information about lifecycle support for [!INCLUDE [prodshort](includes/prods
 
 ## How often are production databases backed up?
 
-Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 14 days.
-
-As an administrator, you you cannot access or manage these backups because they are managed automatically by Microsoft. For more information about the underlying technology, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
+Databases are protected by automatic backups that are retained for 30 days. As an administrator, you cannot access or manage these backups because they are managed automatically by Microsoft. For more information about the underlying technology, see [Automatic backups](/azure/sql-database/sql-database-automated-backups).
 
 ## Can I request a copy of the backup of my production database?
 
@@ -57,7 +55,7 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 
 ## How does Microsoft handle database sizes?
 
-For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in the environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in an environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
 
 The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.
 

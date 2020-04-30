@@ -1,7 +1,7 @@
 ---
 title: "Scope (Action) Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,3 +31,4 @@ The **Scope** property is only used on pages that include a repeater control and
 ## See Also  
 [Properties](devenv-properties.md)  
 [Scope (Table) Property](devenv-scope-table-property.md)  
+[Defining Action Scope for Business Central Pages](../devenv-defining-action-scope-for-pages.md)

@@ -1,7 +1,7 @@
 ---
 title: "Web Client URL"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,14 +11,17 @@ author: jswymer
 ---
 
 # Web Client URL
+
 There are several parameters that you can add to the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL to manipulate what is displayed in the client, such as opening a specific company, or targeting a specific page, report, or table. For example, the following URL displays page **9305 Sales Order List** for the [!INCLUDE[demoname](includes/demoname_md.md)] company:
 
 ```
 https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305  
 ```
+
 The following URL opens report **5 Receivables – Payables** for the same company:
-```  
-https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&report=5   
+
+```
+https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&report=5
 ```  
 
 This article describe how you can constuct URLs, which can be useful for including in other sources, such as emails or Word documents, or sending as hyperlinks to other users.
@@ -39,7 +42,8 @@ This article describe how you can constuct URLs, which can be useful for includi
 - [Filtering Data on the Page](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Filtering)  -->
  
 
-##  <a name="Syntax"></a> URL Syntax  
+##  <a name="Syntax"></a> URL Syntax
+
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
 ```
@@ -54,8 +58,8 @@ https://<hostname>[/<aad>][/sandbox]/?[company=<companyname>]&[page|report|table
 
 The URL consists of two parts; the hostname part and the query string. The hostname part includes the protocol (https) and the hostname. The query string part includes everything after `<hostname>`. The query string determines what content to target.
 
-
 ### Syntax Key
+
 The following table describes the notation that is used to indicate the syntax.
 
 |Notation|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
@@ -87,7 +91,8 @@ Use the following guidelines to write URL syntax and create a URL:
 -   Enclose values in single quotation marks (`''`) if they are unescaped.
 
 ##  <a name="Paramters"></a> URL Parameters
- The following table describes the parameters of the URL for displaying a page.
+
+The following table describes the parameters of the URL for displaying a page.
 
 |Parameter|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
 |---------------|---------------------------------------|
@@ -119,9 +124,11 @@ Use the following guidelines to write URL syntax and create a URL:
 <!-- For more information about framing the Web client, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md).-->
 
 ## <a name="Filtering"></a> Filtering Data on the Page
+
 You can filter the data that is displayed in the page by using the filter parameter in the address. The filter parameter enables you to display only records from the underlying table of the page that have specific values for one or more fields.
 
 ### Example
+
  The following address displays data in page 9305 only for the customer who has the **Sell-to Customer No.**=10000 and the **Location Code**=Blue.
 
 ```
@@ -129,6 +136,7 @@ https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page
 ```
 
 ### Filter Syntax
+
 The filter has the following syntax.
 
 ```
@@ -143,6 +151,7 @@ You must include a space or `%20` before and after the `IS`and `AND` operators. 
 -->
 
 ### Filter Parameters
+
 The following table describes the filter parameters.
 
 |Parameter|Description|

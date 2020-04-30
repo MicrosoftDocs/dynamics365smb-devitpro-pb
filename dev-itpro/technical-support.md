@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/10/2019
+ms.date: 04/01/2020
 ---
 # Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 
@@ -20,19 +20,11 @@ Because you are the first line of support for your customers, you must make it e
 
 ### To supply your support contact information in the administration center
 
-1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], choose the environment that you want to specify your contact details for, such as *Production*, and then choose the **Manage Support Contact** button.
-2. Fill in the **Name**, **Support email address**, and the **Support website address** fields, so that your users know how to contact you for technical support.
-3. Optionally, choose the **Apply to all environments** checkbox if you want to add the same details to all related environments.
+1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], choose the environment that you want to specify your contact details for, such as *Production*, and then, in the **Support** menu, choose **Manage Support Contact**.
+2. Fill in the **Name**, **Email address**, and the **Website** fields, so that your users know how to contact you for technical support.
+3. Optionally, choose the **Apply to all environments** checkbox if you want to add the same details to all related environments for this tenant.
 
-<!--Temporary setup
-### To supply your support contact information for a tenant
-
-1. In your customer's tenant, choose the ![Lightbulb that opens the Tell Me feature](developer/media/search_small.png "Tell me what you want to do") icon, enter **Support Contact Information**, and then choose the related link.
-2. In the **Support website address**, specify the URL to where your customer can learn about your technical support.
-3. In the **Support email address**, specify the email address if this is how your customer can reach your technical support.
-
-    To use the email account that you are logged in with, choose the *Use my authentication email* link; otherwise, specify the relevant email address.  
--->
+Your customer can now contact you if they experience problems that they cannot resolve themselves. If you also cannot resolve a reported issue, you can escalate the issue to Microsoft. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
 
 ### On-premises deployments
 

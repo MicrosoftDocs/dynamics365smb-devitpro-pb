@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2019
+ms.date: 04/21/2020
 ms.author: edupont
 ---
 
@@ -30,7 +30,7 @@ In this article, we'll talk about the user assistance model itself and what it d
 
 ## Help users get started
 
-The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prodshort](developer/includes/prodshort.md)] on the first day. It’s also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks.  
+The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prodshort](developer/includes/prodshort.md)] on the first day. It's also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks.  
 
 Assistance in the shape of wizards is very helpful for setting things up, or filling in data for a complicated report, for example. Designing Home pages that are truly designed for that particular role or job is also very useful in helping users get started with their work every day – they can easily get to their most important tasks, and that means that [!INCLUDE[prodshort](developer/includes/prodshort.md)] helps them get their work done more efficiently.  
 
@@ -38,9 +38,9 @@ Assistance in the shape of wizards is very helpful for setting things up, or fil
 
 ## Help users get unblocked
 
-Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes tooltips for all controls and actions. In combination with descriptive captions and instructional text, the tooltips are our current implementation of *embedded user assistance*, which is an important principle in today’s world of software design.  
+Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes tooltips for all controls and actions. In combination with descriptive captions and instructional text, the tooltips are our current implementation of *embedded user assistance*, which is an important principle in today's world of software design.  
 
-The tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as “What data can I input here?” or “What is the data used for?”. Keep that in mind when you develop the user interface of your solution.  
+The tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as "What data can I input here?" or "What is the data used for?". Keep that in mind when you develop the user interface of your solution.  
 
 ### Guidelines for tooltip text
 
@@ -58,7 +58,7 @@ The Microsoft user assistance model requires a tooltip for all controls of type 
 
 |Control Name  |Tooltip  |
 |---------|---------|
-|**Password** field |Specifies your company’s password to the service that converts bank data. The password that you enter in this field must be the same as on the service provider’s sign-on page. </br>(175 characters including spaces) |
+|**Password** field |Specifies your company's password to the service that converts bank data. The password that you enter in this field must be the same as on the service provider's sign-on page. </br>(175 characters including spaces) |
 |**Entries** action |View the history of transactions that have been posted for the customer.</br> (72 characters including spaces)|
 |**Account Type** field|Specifies the purpose of the account. Total: Used to total a series of balances on accounts from many different account groupings. To use Total, leave this field blank. Begin-Total: A marker for the beginning of a series of accounts to be totaled that ends with an End-Total account. End-Total: A total of a series of accounts that starts with the preceding Begin-Total account. The total is defined in the Totaling field. </br>(522 characters including spaces)|
 
@@ -69,6 +69,8 @@ The content that Microsoft publishes under the user assistance concept of *Learn
 The base version of [!INCLUDE[prodshort](developer/includes/prodshort.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) so that you can extend and customize it for your customers.  
 
 There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
+
+For the base version of [!INCLUDE [prodshort](developer/includes/prodshort.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 ### Feedback and contributions
 
@@ -85,7 +87,7 @@ For more information, see [Extend, Customize, and Collaborate on the Help](help/
 
 ### Working in MarkDown
 
-If you fork one of our repos, you will be authoring in something called MarkDown. We recommend that you learn the basics by referring to the Docs contributor guide. For more information, see [How to use Markdown for writing Docs](/contribute/how-to-write-use-markdown).  
+If you fork one of our repos, you will be authoring in something called MarkDown. We recommend that you learn the basics by referring to the Docs contributor guide. For more information, see [Docs Markdown reference](/contribute/markdown-reference).  
 
 The team that built the Docs.microsoft.com site have also developed an extension for Visual Studio Code that helps with MarkDown validation, for example. For more information, see [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack). However, you can also use other text editors.  
 

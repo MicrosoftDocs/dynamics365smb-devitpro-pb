@@ -1,14 +1,12 @@
 ---
 title: "DecimalPlaces Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0cb9434-57f4-4f39-a8a2-66800a2a8822
-caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
@@ -17,17 +15,19 @@ Sets display and storage requirements for the [Decimal Data Type](../datatypes/d
   
 ## Applies To  
   
--   Page Fields  
+- Page Fields  
   
--   Report Columns  
+- Report Columns  
 
 ## Syntax
+
 ```
 DecimalPlaces = 0 : 5;
 ```
 
 ## Property Value  
- You can enter minimum, maximum, or both values for the number of decimal places, as shown in the following examples.  
+
+You can enter minimum, maximum, or both values for the number of decimal places, as shown in the following examples.  
   
 |Value|Description|  
 |-----------|---------------------------------------|  

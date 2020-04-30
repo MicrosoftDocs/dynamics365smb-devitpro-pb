@@ -7,17 +7,17 @@ ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: martinni
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 
 ---
 
 # Dynamics 365 Business Central On-Premises 2019 Release Wave 2 Updates
 
-This article lists updates that have been released for the Microsoft Dynamics 365 Business Central 2019 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2019 release wave 2 on-premises, we recommend that you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see if the tenants have been updated.  
+This article lists updates released for the Microsoft Dynamics 365 Business Central 2019 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2019 release wave 2 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see if the tenants have been updated.  
 
-Each update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you are advised to always keep your solution updated with the latest update. If you are in doubt about whether this update addresses your specific problem, or if you want to confirm whether any special compatibility, installation, or download issues are associated with a particular update, support professionals in Customer Support Services are ready to help you. For more information, see [https://support.microsoft.com/contactus/](https://support.microsoft.com/contactus/).
+Each update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you're advised to always keep your solution updated with the latest update. If you're in doubt about whether this update addresses your specific problem, or you want to confirm whether any special compatibility, installation, or download issues are associated with a particular update, then contact Customer Support Services. They are ready to help you. For more information, see [https://support.microsoft.com/contactus/](https://support.microsoft.com/contactus/).
 
-The latest update listed in this article includes hotfixes and regulatory features released for Business Central, including hotfixes and regulatory features released in previous updates.  
+The latest update listed in this article includes hotfixes and regulatory features released for Business Central. The latest update also includes hotfixes and regulatory features released in previous updates.  
 
 You should always install the latest update.
 
@@ -27,7 +27,10 @@ The following table lists the updates that have been released for 2019 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[4528699](https://support.microsoft.com/help/4528699) |Update 15.1 |November, 2019|Application Build 15.1</br>Platform Build 15.1|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4538888](https://support.microsoft.com/help/4538888)|Update 15.4|March 2020|Application Build 15.4</br>Platform Build 15.4|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4539530](https://support.microsoft.com/help/4539530)|Update 15.3|February 2020|Application Build 15.3</br>Platform Build 15.3|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4533389](https://support.microsoft.com/help/4533389)|Update 15.2|December 2019|Application Build 15.2</br>Platform Build 15.2|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4528699](https://support.microsoft.com/help/4528699) |Update 15.1 |November 2019|Application Build 15.1</br>Platform Build 15.1|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 
 ## See Also
 

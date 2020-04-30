@@ -1,7 +1,7 @@
 ---
 title: "Progress Windows, MESSAGE, ERROR, and CONFIRM Methods"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ You can also use the STRMENU method to create pages that present options to the 
 
 - Do not use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [OPEN Method \(Dialog\)](methods-auto/dialog/dialog-open-Method.md). You must use backslashes for the message to be aligned correctly.  
 
-- Use the [FIELDCAPTION Method \(Record\)](methods-auto/record/record-fieldcaption-Method.md) and [TABLECAPTION Method \(Record\)]methods-auto/record/record-tablecaption-Method.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [OPEN Method \(Dialog\)](methods-auto/dialog/dialog-open-Method.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FIELDCAPTION method, then type the field name without any single or double quotation marks.  
+- Use the [FIELDCAPTION Method \(Record\)](methods-auto/record/record-fieldcaption-Method.md) and [TABLECAPTION Method \(Record\)](methods-auto/record/record-tablecaption-Method.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [OPEN Method \(Dialog\)](methods-auto/dialog/dialog-open-Method.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FIELDCAPTION method, then type the field name without any single or double quotation marks.  
 
 - Try to write all messages on only one line. If you want to use more than one line, then start each new line after a period instead of in the middle of a sentence.  
 

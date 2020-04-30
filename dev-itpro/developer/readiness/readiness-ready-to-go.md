@@ -3,7 +3,7 @@ title: "Ready to Go"
 description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -24,7 +24,7 @@ The “Ready to Go” program is designed to support you in the journey of bring
 > Keep on top of news, tips, tools, programs, and new capabilities by following us on the [Business Central for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) blog.
 
 # [**Learning**](#tab/learning)
-**The "Ready to Go" learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
+**The "Ready to Go" online learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
 
 # [**Coaching**](#tab/coaching)
 Several Development Centers, Master VARs, and Training Centers provide **“Ready to Go” coaching**.

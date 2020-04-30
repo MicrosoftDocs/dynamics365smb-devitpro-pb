@@ -1,7 +1,7 @@
 ---
 title: "Table Keys"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -164,15 +164,24 @@ For a more information about the different key properties, see [Key Properties](
 
 ## Restrictions on key modifications
 
-When developing a new version of an extension, be aware of the following restrictions to avoid schema synchronization errors that prevent you from publishing the new version: 
+When developing a new version of an extension, be aware of the following restrictions to avoid schema synchronization errors that prevent you from publishing the new version:
 
-- Do not delete existing keys.
-- Do not add or remove fields, nor change their order.
-- Do not change properties of existing keys.
+- Do not delete primary keys.
+- Do not add or remove primary key fields, nor change their order.
+- Do not change properties of existing primary keys.
 - Do not add additional unique keys.
 - Do not add additional clustered keys.
 - Do not add keys that are fields of the base table.
 
+<!--
+[-]Do not delete existing keys. // You can delete non primarty keys
+[-] Do not add or remove fields, nor change their order. // Also ok to change non PK
+[-] Do not change properties of existing keys. // Non PK can be changed
+Do not add additional unique keys. // still true
+Do not add additional clustered keys. // still true
+Do not add keys that are fields of the base table. // still true
+
+-->
 ## See Also
 
 [Tables Overview](devenv-tables-overview.md)  

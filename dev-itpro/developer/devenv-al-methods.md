@@ -1,7 +1,7 @@
 ---
 title: "Working with AL Methods"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # AL Methods
+
 Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be executed, or *called*, from the same object in which they are declared or from other parts of the application. 
 
 There are two types of methods: system methods and user-defined (custom) methods.
@@ -20,6 +21,7 @@ There are two types of methods: system methods and user-defined (custom) methods
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
 
 ## Declaring methods
+
 The method declaration defines the method and has the following syntax:
 
 ```
@@ -28,14 +30,17 @@ local procedure <method_name>(parameter list) <return_value_name> : <data_type>[
 ```
 
 ### Snippet support
+
 Typing the shortcut `tprocedure` will create the basic structure for a method when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ### Attributes (optional)
+
 An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
 Attributes are placed before the method. For information about the available attributes, see [Method Attributes](methods/devenv-method-attributes.md).
 
 ### Local and global scope
+
 A method can be a *local* method or *global* method. A local method can only be accessed or called from inside the object in which it is declared. A global method can be called from inside the object in which it is declared and from other objects.
 
 To declare a local method, start the declaration with `local`: 

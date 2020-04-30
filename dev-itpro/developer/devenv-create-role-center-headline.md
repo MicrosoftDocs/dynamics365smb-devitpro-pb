@@ -1,7 +1,7 @@
 ---
 title: "Create a Role Center Headline"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,19 +74,19 @@ The Role Center will start by displaying the first visible headline that is defi
     {
         area(content)
         {
-            field(Headline1; text001)
+            field(Headline1; hdl1Txt)
             {
 
             }
-            field(Headline2; text002)
+            field(Headline2; hdl2Txt)
             {
 
             }
-            field(Headline3; text003)
+            field(Headline3; hdl3Txt)
             {
 
             }
-            field(Headline4; text004)
+            field(Headline4; hdl4Txt)
             {
                 
             }
@@ -94,10 +94,10 @@ The Role Center will start by displaying the first visible headline that is defi
     }
     
     var
-        text001: TextConst ENU='This is headline 1';
-        text002: TextConst ENU='This is headline 2';
-        text003: TextConst ENU='This is headline 3';
-        text004: TextConst ENU='This is headline 4';
+        hdl1Txt: Label 'This is headline 1';
+        hdl2Txt: Label 'This is headline 2';
+        hdl3Txt: Label 'This is headline 3';
+        hdl4Txt: Label 'This is headline 4';
     }
     ```
 
@@ -116,10 +116,10 @@ The `Expression` property supports the following syntax that enables you to spec
 |`<payload></payload>`|Specifies the actual headline text.|
 |`<emphasize></emphasize>`|Applies the style to the text.|
 
-The `Expression` property must evaluate to the correct syntax. For example, looking back at the previous example, the text constant `text001` could be:
+The `Expression` property must evaluate to the correct syntax. For example, looking back at the previous example, the label `hdl1Txt` could be:
 
 ```
-text001: TextConst ENU='<qualifier>The first headline</qualifier><payload>This is the <emphasize>Headline 1</emphasize>.</payload>';
+hdl1Txt: Label '<qualifier>The first headline</qualifier><payload>This is the <emphasize>Headline 1</emphasize>.</payload>';
 ```
 
 ## Making headlines interactive
@@ -129,13 +129,13 @@ The following code uses the OnDrillDown trigger to link `Headline1` to the [!INC
 
 
 ```
-field(Headline1; text001)
+field(Headline1; hdl1Txt)
 {
     trigger OnDrillDown()
     var
-        DrillDownURL: TextConst ENU='https://go.microsoft.com/fwlink/?linkid=867580';
+        DrillDownURLTxt: Label 'https://go.microsoft.com/fwlink/?linkid=867580', Locked = True;
     begin
-        Hyperlink(DrillDownURL)
+        Hyperlink(DrillDownURLTxt)
     end;
 }
 ```
@@ -148,19 +148,19 @@ With static visibility, you can simply set the `Visible` property on specific fi
 
 ```
 {
-    field(Headline1; text001)
+    field(Headline1; hdl1Txt)
     {
 
     }
-    field(Headline2; text002)
+    field(Headline2; hdl2Txt)
     {
 
     }
-    field(Headline3; text003)
+    field(Headline3; hdl3Txt)
     {
          Visible=false;
     }
-    field(Headline4; text004)
+    field(Headline4; hdl4Txt)
     {
                 
     }
@@ -172,11 +172,11 @@ By adding fields under `Group` controls, you can hide or show more than one head
 ```
 group(Group1)
 {
-    field(Headline1; text001)
+    field(Headline1; hdl1Txt)
     {
                 
     }
-    field(Headline2; text002)
+    field(Headline2; hdl2Txt)
     {
 
     }
@@ -184,11 +184,11 @@ group(Group1)
 group(Group2)
 {
     Visible=false;
-    field(Headline3; text003)
+    field(Headline3; hdl3Txt)
     {
          
     }
-    field(Headline4; text004)
+    field(Headline4; hdl4Txt)
     {
                 
     }
@@ -210,11 +210,11 @@ With dynamic visibility, you can show or hide a headline based on a condition th
 ```
 group(Group1)
 {
-    field(Headline1; text001)
+    field(Headline1; hdl1Txt)
     {
                 
     }
-    field(Headline2; text002)
+    field(Headline2; hdl2Txt)
     {
 
     }
@@ -223,12 +223,12 @@ group(Group2)
 {
     // Determines visibility when the page opens
     Visible=ShowHeadline3;
-    field(Headline3; text003)
+    field(Headline3; hdl3Txt)
     {
         // Determines visibility while the page is open
         Visible=ShowHeadline3;
     }
-    field(Headline4; text004)
+    field(Headline4; hdl4Txt)
     {
                 
     }
