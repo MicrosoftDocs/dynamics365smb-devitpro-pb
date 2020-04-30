@@ -50,9 +50,15 @@ You can specify filters in OData web services in general that are not supported 
 An error occurred while processing this request.   
  The 'OR' operator is not supported on distinct fields on an OData filter.  
 ```  
+
 ### Lambda operators
 
 Lambda operators are not supported by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData APIs. If lambda operators are used, the filter expression will be ignored.
 
+### UI pages
+
+If you use Web services that are based on UI pages, you must expect the same behavior from the Web service as from the UI page. If you want to have full control and separation of concern it is recommended to use the Business Central APIs instead.
+
 ## See Also  
- [SOAP Web Services](SOAP-Web-Services.md)
+
+[SOAP Web Services](SOAP-Web-Services.md)
