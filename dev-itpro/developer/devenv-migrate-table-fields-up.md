@@ -33,7 +33,7 @@ To accommodate data migration, you'll have to create an extension that is only u
 ![Data migration](media/migrate-tables-fields-up.png "data migration")
 
 - In the first stage, **Ext Z** temporarily takes ownership of tables and fields from **Ext X**.
-- In the second stage, **Ext Z** releases ownership to extensions **Ext X** and **Ext Y**. You delete transition extension when you finish deployment.
+- In the second stage, **Ext Z** releases ownership to extensions **Ext X** and **Ext Y**. You uninstall and unpublish transition extension **Ext Z**  when you finish deployment.
 
 This process is a two-step process because we only support moving down the dependency graph. So instead, the concept is to first move the tables' ownership  to an extension above the receiving extensions in the dependency graph. Then, the extensions are moved down. This concept essentially turns the process into a two-step, move-down process.
 
