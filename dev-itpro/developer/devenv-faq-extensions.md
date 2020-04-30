@@ -14,19 +14,12 @@ ms.author: solsen
 
 # FAQ
 
-## VS Code
+## Data Storage
 <br>
-<details><summary><b>An extension with same App ID and version has already been uploaded - resolve and deploy again</b></summary>
+<details><summary><b>Does pricing affect the replica databases?</b></summary>
 <p>
 
-###### Problem
-Within the region, potentially on a different tenant, an extension with the same <AppID, Version> has been uploaded, but different contents or different name.
-
-###### Solution 
-The author should increase the version of the extension he is publishing.
-
-###### Help
-Link to help ...
+The read replica is part of the efforts towards uptime and disaster recovery of Azure and is not counted towards the storage allocation of the BC database
 
 </p>
 </details>
