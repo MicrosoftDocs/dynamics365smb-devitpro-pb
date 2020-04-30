@@ -4,7 +4,7 @@ description: "Code Actions"
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -19,6 +19,8 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] these code actions ar
 - Multiple IF to CASE converting code action.
 - Spell check code action.  
 - Interface implementer.
+- Make method local.
+- Use parenthesis for method call.
 
 ## To enable AL Code Actions
 
