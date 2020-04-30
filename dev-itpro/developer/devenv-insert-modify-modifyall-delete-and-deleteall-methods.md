@@ -1,7 +1,7 @@
 ---
 title: "Insert, Modify, ModifyAll, Delete, and DeleteAll Methods"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -127,7 +127,7 @@ When you are developing your own applications, you should consider the following
 
 3. If step 2 indicated that you should delete the record, then delete it.  
 
-This can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record would have changed your decision to delete it. If it has been deleted by the other user, you can get a run-time error if you have just verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LockTable method. LockTable should be used sparingly because this method degrades performance. For more information about the LockTable method, see [LOCKTABLE Method](methods-auto/record/record-locktable-method.md).  
+This can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record would have changed your decision to delete it. If it has been deleted by the other user, you can get a run-time error if you have just verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LockTable method. LockTable should be used sparingly because this method degrades performance. For more information about the LockTable method, see [LockTable Method](methods-auto/record/record-locktable-method.md).  
 
 ## DeleteAll method  
 DeleteAll deletes all the records that are specified by the filter settings. If no filters are applied, it deletes all the records in the table. For more information, see [DeleteAll Method](methods-auto/record/record-deleteall-method.md) 

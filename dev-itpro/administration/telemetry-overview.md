@@ -8,11 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/15/2019
+ms.date: 04/01/2020
 ms.author: jswymer
 ---
 
-# Monitoring and Analyzing Telemetry  
+# Monitoring and Analyzing Telemetry
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities and operations on tenants. Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
@@ -22,10 +24,12 @@ Monitoring telemetry gives you a look at the activities and general health of yo
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
-|Operation | Description |Online/On-premises|See more|
+|Telemetry | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
+|Report Generation|Provide information about execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
+|Web Service Requests|Provide information about execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
 ## Enabling Application Insights
 
@@ -52,11 +56,9 @@ As a simple example, do the following steps:
     ```
 
 ## Application Insights sample code
-On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started utilizing Application Insights. 
+On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started using Application Insights. 
 
-See [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights) for more information.
-
-
+For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
 
 ## See also
 

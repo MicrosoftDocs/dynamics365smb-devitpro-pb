@@ -2,7 +2,7 @@
 title: "RecordRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 04/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -86,6 +86,11 @@ The following methods are available on instances of the RecordRef data type.
 |[Rename(Any [, Any,...])](recordref-rename-method.md)|Changes the value of a primary key in a table.|
 |[SecurityFiltering([SecurityFilter])](recordref-securityfiltering-method.md)|Gets or sets how security filters are applied to the RecordRef.|
 |[SystemIdNo()](recordref-systemidno-method.md)|Gets the field number that is used by the SystemId field. The SystemId field is a system field that the platform adds to all table objects.|
+|[Copy(var Record [, Boolean])](recordref-copy-table-boolean-method.md)|Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.|
+|[Copy(RecordRef [, Boolean])](recordref-copy-recordref-boolean-method.md)|Copies a specified record referece's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.|
+|[Mark([Boolean])](recordref-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
+|[ClearMarks()](recordref-clearmarks-method.md)|Removes all the marks from a record.|
+|[MarkedOnly([Boolean])](recordref-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by this function.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

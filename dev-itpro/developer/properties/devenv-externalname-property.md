@@ -1,7 +1,7 @@
 ---
 title: "ExternalName Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ ExternalName = 'organization';
 ```
 
 ## Remarks  
-This property appears when you specify **CRM** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
+This property appears when you specify **CDS** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
 
 ## See Also  
 [TableType Property](devenv-tabletype-property.md)   

@@ -2,7 +2,7 @@
 title: "OnAfterSetupPrinters Event"
 description: Describe the OnAfterSetupPrinters Event in Business Central. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +56,7 @@ The payload consists of several attributes that are arranged in the following st
 ```
 {
     "version":1,
-    "description":[default is an empty string],
+    "description":[default=""],
     "duplex":[default=false],
     "color":[default=false],
     "defaultcopies":[default=1],

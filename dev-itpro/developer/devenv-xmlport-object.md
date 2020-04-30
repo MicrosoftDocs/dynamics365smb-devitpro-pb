@@ -3,7 +3,7 @@ title: "XMLport Object"
 description: "Description of the XMLport object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ pageextension 50111 PermissionSetExporter extends "Permission Sets"
             {
                 Promoted = true;
                 PromotedCategory = New;
-                trigger OnAction();
+                trigger OnAction(); 
                 begin
                     Xmlport.Run(50112, false, false);
                 end;

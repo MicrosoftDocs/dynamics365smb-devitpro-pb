@@ -1,7 +1,7 @@
 ---
 title: "Actions Overview"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ You can choose from the following action menus to place the actions in the speci
 |Navigate menu|`area(navigation)` |List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
 |Report menu|`area(reporting)` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
   
-The following Actions are related to the Role Center page.
+The following actions are related to the Role Center page.
 
 |Area |Syntax |Used on |Description |Example |  
 |-----|----------------|-------|-----------|-------| 
@@ -77,7 +77,7 @@ Example: On the Customers page, if the order processor wants to create a new inv
 <!-- ### Home Items  
  Home Items are actions that appear under the Home button, on the Role Center navigation pane. This navigation has a tree structure, and each node in the tree links to a list page.  
   
- The user Role Center is like a home page, and home items in the navigation pane are links to the user’s most useful list pages. For more information, see [Setting Up the Home Button and Home Items](Setting-Up-the-Home-Button-and-Home-Items.md). -->
+ The user Role Center is like a home page, and home items in the navigation pane are links to the user's most useful list pages. For more information, see [Setting Up the Home Button and Home Items](Setting-Up-the-Home-Button-and-Home-Items.md). -->
 
 ## Navigate menu
 The Navigate menu is displayed after the Actions menu in the action bar. Rather than providing tasks for the user, this menu provides additional information by taking the user to a specific page in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To add a page link in the Navigate menu, you must use the `navigation` action area. These actions act like a bookmark to enable quick access to view a page. <!-- For examples on how to link pages in the Navigate menu, see [Adding Page Links to Navigate Menu](devenv-adding-page-links-to-navigate-menu.md). -->

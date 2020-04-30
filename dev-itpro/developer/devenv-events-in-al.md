@@ -3,7 +3,7 @@ title: "Events in Microsoft Dynamics 365 Business Central"
 description: Events is a programming concept that can ease application upgrade and limit the code modifications in customized applications during platform changes. 
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,6 +33,7 @@ The following table describes all the different event types:
 |------------|-------------|
 |[BusinessEvent](methods/devenv-business-attribute.md) |Specifies the method to be business type event publisher.  |
 |[IntegrationEvent](methods/devenv-integration-attribute.md) |Specifies the method to be integration type event publisher. |
+|[InternalEvent](methods/devenv-interrnal-attribute.md) |Specifies the method to be an internal event publisher.|
 |[Global](devenv-event-types.md#global-events) |Global events are predefined system events. |
 |[Trigger](devenv-event-types.md#trigger-events) |Trigger events are published by the runtime.  | 
 

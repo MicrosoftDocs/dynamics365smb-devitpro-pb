@@ -1,7 +1,7 @@
 ---
 title: "ToolTip Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ In the client, tooltips appear when you point to the caption of the control.
 - ActionContainers  
 
   > [!NOTE]  
-  >  ActionContainers tooltips are only shown in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] for the subtype **HomeItems**.  
+  >  ActionContainers tooltips are only shown in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] for the subtype **Embedding**.  
 
 ## Remarks  
 The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply tooltips to controls on pages.  
@@ -55,4 +55,4 @@ field("Reward ID";"Reward ID")
 [Configuring the Help Experience](../../deployment/configure-help.md)  
 [ToolTipML Property](devenv-tooltipml-property.md)  
 [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../devenv-extension-example.md)  
- <!-- [Multilanguage Development](Multilanguage-Development.md)-->
+[Multilanguage Development](../devenv-work-with-translation-files.md)

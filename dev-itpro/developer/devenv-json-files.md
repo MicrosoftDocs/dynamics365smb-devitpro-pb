@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,10 @@ ms.author: solsen
 
 # JSON Files
 
-In an AL project there are two JSON files; the `app.json` file and the `launch.json` file. These files are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on.
+In an AL project there are two JSON files; the `app.json` file and the `launch.json` file that are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on. 
+
+> [!NOTE]  
+> For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
 
 ## <a name="Appjson"></a>App.json file
 The following table describes the settings in the `app.json` file:
@@ -32,7 +35,7 @@ The following table describes the settings in the `app.json` file:
 |help|No, but required for AppSource submission|URL to an online description of the extension. The link is used in AppSource and can be the same as the value of the `contextSensitiveHelpUrl` property or a different link, such as a link to your marketing page.|
 |url|No, but required for AppSource submission|URL of the extension package.|
 |logo|No, but required for AppSource submission|Relative path to the app package logo from the root of the package.|
-|dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {  "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"},{}]`. <br>For dependencies to the System Application and Base Application these are no longer listed as explicit dependencies, but captured in the `application` setting as a reference to the application package. Must be filled in with the version number of the Application package. See `application` below.|
+|dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {  "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"},{}]`. <br>**Note:** For dependencies to the System Application and Base Application these are no longer listed as explicit dependencies, but captured in the `application` setting as a reference to the application package. Must be filled in with the version number of the Application package. See `application` below. <br>**Note:** The version specified defines the minimum version for the dependency. At runtime and when downloading symbols, the latest version of the dependency satisfying the specified name, publisher and, minimum version will be returned.|
 |screenshots|No|Relative paths to any screenshots that should be in the extension package.|
 |platform|Yes, if system tables are referenced in the extension|The minimum supported version of the platform symbol package file, for example: "16.0.0.0". See the [Symbols](devenv-symbols.md) for the list of object symbols contained in the platform symbol package file.|
 |application|Yes, if base application is referenced in the extension|The supported version of the system and base application package file, for example: "16.0.0.0". The file name of this reference is Microsoft_Application.app and the `name` is `Application`. For code-customized base applications, the Microsoft_Application.app file can be modified to reference the code-customized base application instead. It is important to keep `"name": "Application"` in the extension, but information about publisher can be changed and the .app file can be renamed. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md).|
@@ -40,7 +43,7 @@ The following table describes the settings in the `app.json` file:
 |idRanges|Yes|For example: `"idRanges": [{"from": 50100,"to": 50200},{"from": 50202,"to": 50300}]`. A list of ranges for application object IDs. For all objects outside the ranges, a compilation error will be raised. When you create new objects, an ID is automatically suggested. You must use *either* the `idRange` *or* the `idRanges` setting. Overlapping ranges are not allowed and will result in a compilation error. |
 |showMyCode|No|This is by default set to `false` and not visible in the manifest. To enable viewing the source code when debugging into an extension, add the following setting: `"showMyCode": true`|
 |target|No|By default this is `Cloud`. The setting currently has the following options: `Internal`, `Extension`, `OnPrem`, and `Cloud`. The `Internal` and `Extension` settings are being deprecated. For on-premises, you can set this to `OnPrem` to get access to otherwise restricted APIs and .NET Interop. The Business Central Server setting must then also be set to `OnPrem`.|
-|contextSensitiveHelpUrl|No, but required for AppSource submission|The URL for the website that displays context-sensitive Help for the objects in the app, such as `https://mysite.com/documentation`. If the app does not support all locales currently supported by [!INCLUDE [prodshort](includes/prodshort.md)], then include a parameter for the locale in this URL, `/{0}/`, and also specify the relevant locales in the `supportedLocales` setting.|
+|contextSensitiveHelpUrl|No, but required for AppSource submission|The URL for the website that displays context-sensitive Help for the objects in the app, such as `https://mysite.com/documentation/`. If the app does not support all locales currently supported by [!INCLUDE [prodshort](includes/prodshort.md)], then include a parameter for the locale in this URL, `/{0}/`, and also specify the relevant locales in the `supportedLocales` setting.|
 |helpBaseUrl|No|The URL for the website that overtakes all Help for the specified locales. This property is intended for localization apps specifically since the setting overwrites the default URL of `/{0}/dynamics365/business-central`. If you set this value, you must also specify one or more languages in the `supportedLocales` setting.|
 |supportedLocales|No|The list of locales that are supported in your Help if different from all locales. The value on the list is inserted into the URL defined in the `contextSensitiveHelpUrl` and `helpBaseUrl` properties. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]` for an app that supports only Danish and English (US).|
 |runtime|Yes|The version of the runtime that the project is targeting. The project can be published to the server with an earlier or the same runtime version. The available options are: `1.0` - Business Central April 2018 release, `2.2` - Business Central October 2018 release CU 2, `3.0` - Business Central April 2019 release, `4.0` - Business Central 2019 release wave 2, and `5.0` - Business Central 2020 release wave 1.|
@@ -74,6 +77,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
+|attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
@@ -85,7 +89,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy. This parameter must contain a tenant AAD domain name, for example `mycustomer.onmicrosoft.com`.|
 |sandboxName|No|Specifies which sandbox to use in cases where multiple sandboxes are owned by the same tenant.|
-|applicationFamily|No|The application family in the cloud server, for example Fabrikam. This property is reserved for Embed apps.|
+|applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example Fabrikam. This property is reserved for Embed apps.|
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
 |breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
 |launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value is not specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session is not started unless you launch your extension in debugging mode.|
@@ -95,6 +99,8 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
+|attach|No | Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
+
 
 ## See Also
 
