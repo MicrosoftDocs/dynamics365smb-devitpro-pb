@@ -44,7 +44,7 @@ The previous version of the extension must be added to the package cache where t
 
 If you do not want to detect breaking changes in your extension, remove the property `version` in the AppSourceCop.json.
 
-If you want to detect breaking changes, verify that the version specified in the `AppSourceCop.json` and that the extension can be found in the package cache.
+If you want to detect breaking changes, verify that the version specified in the `AppSourceCop.json` is correct and that the extension can be found in the package cache.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
