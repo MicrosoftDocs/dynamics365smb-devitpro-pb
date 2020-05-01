@@ -24,6 +24,9 @@ Removing Event attributes such as IntegrationEvent or BusinessEvent is not allow
 ## Remarks
 Removing the event attribute on Business and Integration type events is not allowed, because it will break dependent extensions which are subscribing to them. It is allowed to remove the InternalEvent attribute, as InternalEvents can only be subscribed to from within the same module.
 
+> [!NOTE]
+> Internal events are also available for the modules specified in the `internalsVisibleTo` property in your [app.json](../devenv-json-files.md).
+
 ## Bad code example
 In the following examples, the version 1.0 of the extension defines a Business type event whose accessibility is not public. This means that this event cannot be raised from other extensions, but it can still be subscribed to from other extensions.
 

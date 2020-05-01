@@ -34,9 +34,9 @@ This rule verifies that the conversion of an event from one version to another d
 
 It is not allowed to convert a business type event to an integration type event or to an internal type event.
 
-Business type events defines a formal contract that carries an implicit promise not to change in the future. Integration type events do not carry the same promise and can be changed over time. It is then not allowed to convert a business type event to an integration type event.
+Business type events define a formal contract that carries an implicit promise not to change in the future. Integration type events do not carry the same promise and can be changed over time. It is then not allowed to convert a business type event to an integration type event.
 
-As a business type event define an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal event. This would break dependent extensions which are subscribing to this event.
+As a business type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal event. This would break dependent extensions which are subscribing to this event.
 
 ### Converting integration events
 
