@@ -4,7 +4,7 @@ description:
 ms.author: freddyk
 ms.reviewer: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/21/2020
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 author: freddydk
 ---
 
-# Working with Developement Sandboxes and Entitlements
+# Working with Development Sandboxes and Entitlements
 
 The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more information, see [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). For detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/business-central/overview/) on the Microsoft Dynamics 365 site.  
 

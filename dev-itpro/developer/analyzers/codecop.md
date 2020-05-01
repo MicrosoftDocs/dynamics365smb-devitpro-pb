@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -84,6 +84,8 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0233](codecop-aa0233-usegetfindfirstandfindlastwithoutnext.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Avoid enumeration of a dataset when the dataset is not filtered.|The '{0}' method on the record '{1}' must be used without the Next() method.|Design|Warning|true|
 |[AA0235](codecop-aa0235-whenusingoninstallpercompanyaddcodetocompanyinitializesubscription.md)|When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription.|When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' you must also add a 'Company - Initialize'::'OnCompanyInitialize' subscription.|Codeunit '{0}' must contain the 'OnCompanyInitialize' subscription.|Design|Info|true|
 |[AA0237](codecop-aa0237-nontemporaryvariablesmustnotbeprefixedtemp.md)|The name of non-temporary variables must not be prefixed with Temp.|Only temporary variable names must be prefixed with Temp.|The name of non temporary variables '{0}' must not be prefixed with Temp.|Readability|Warning|true|
+|[AA0240](codecop-aa0240-emailandphonenomustnotbepresentinthesource.md)|Email and Phone No must not be present in any part of the source code.|Email and Phone No must not be present in any part of the source code that might be collected as telemetry data.|The {0} '{1}' must not be contain Email or Phone No.|Design|Warning|true|
+|[AA0448](codecop-aa0448-usefieldtablecaptionforusermessages.md)|You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.|If you want to enable your application for multilanguage functionality, you must use the FieldCaption and TableCaption methods instead of the FieldName and TableName methods.|Use FieldCaption instead of FieldName and TableCaption instead of TableName in methods that display messages.|Localizability|Warning|true|
 |[AA0470](codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md)|Placeholders should have a comment explaining their content.|Provide an explanation that describes the content of each of the placeholders.|Variable '{0}' with placeholders should have a comment explaining their content.|Localizability|Warning|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

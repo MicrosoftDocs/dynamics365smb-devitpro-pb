@@ -1,7 +1,7 @@
 ---
 author: SusanneWindfeldPedersen
 title: "Building an Advanced Sample Extension"
-description: "Includes code for an advanced example extension."
+description: "Includes code for an advanced example extension using Business Central and AL in Visual Studio Code."
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -17,12 +17,12 @@ It is required to submit tests with your extension in order to pass validation. 
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
-This walkthrough will guide you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your tenants. After you have built your extension, you must write the test for it.
+This walkthrough will guide you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your sandbox. After you have built your extension, you must write the test for it.
 
 ## About this walkthrough
 This walkthrough illustrates the following tasks:
 
-- Developing a sample extension that uses codeunits, tables, card pages, list pages, navigate page (Assisted Setup) actions and events, and includes tooltips and links to context-sentsitive Help.  
+- Developing a sample extension that uses codeunits, tables, card pages, list pages, navigate page (Assisted Setup) actions, and events and it includes tooltips and links to context-sensitive Help.  
 
 - Creating extension objects that can be used to modify page and table objects.  
 
@@ -35,13 +35,13 @@ This walkthrough illustrates the following tasks:
 ## Prerequisites
 To complete this walkthrough, you will need: 
 
-- The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant.
+- The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant
 
-- Visual Studio Code.
+- Visual Studio Code
 
-- The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
+- The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code
 
-For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md).
+For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md). It is recommended to try out simpler examples, before starting this walkthrough.
 
 ## Customer Rewards extension overview
 This sample extension enables the ability to set up any number of reward levels and the minimum number of rewards points required to attain that level. When the sample extension is installed, customers begin to accrue one reward point per sales order. When no reward levels are set up, the customer's reward level is set to 'NONE' even though the customer may have reward points. To begin using the sample extension, the user must accept the extension terms and activate the extension by entering a valid activation code using the **Customer Rewards Assisted Setup Wizard**. Following all the steps of this walkthrough allows you to publish the extension on your tenant and create a possible new feature for your customers. 
