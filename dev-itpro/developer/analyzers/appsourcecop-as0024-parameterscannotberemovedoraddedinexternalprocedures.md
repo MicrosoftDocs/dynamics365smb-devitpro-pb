@@ -53,7 +53,7 @@ In version 2.0, the parameter i of the procedure has been removed. If a dependen
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     procedure RaiseEvent()
     begin
@@ -88,7 +88,7 @@ In version 2.0, a new parameter j has been added to the procedure. If a dependen
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     procedure RaiseEvent()
     begin

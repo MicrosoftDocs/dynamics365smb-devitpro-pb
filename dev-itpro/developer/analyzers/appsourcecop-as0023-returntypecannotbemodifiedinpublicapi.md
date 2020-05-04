@@ -62,7 +62,7 @@ In the version 2.0, the return type of `MyProcedure` has changed from `Integer` 
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     procedure AnotherMethod()
     var
@@ -90,7 +90,7 @@ In the version 2.0, the procedure does not return anything anymore. If a depende
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     procedure AnotherMethod()
     var

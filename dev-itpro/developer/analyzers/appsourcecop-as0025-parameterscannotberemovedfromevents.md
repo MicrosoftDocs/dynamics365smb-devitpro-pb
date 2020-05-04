@@ -64,7 +64,7 @@ In the version 2.0, the parameter `i` of the event has been removed. If a depend
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', false, false)]
     local procedure MyProcedure(i: Integer)
