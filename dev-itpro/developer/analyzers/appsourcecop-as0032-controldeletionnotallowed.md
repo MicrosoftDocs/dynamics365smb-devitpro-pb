@@ -25,7 +25,7 @@ Controls that have been published must not be deleted, because it will break dep
 Removing a control which has been published is not allowed because it will break dependent extensions which are referencing or modifying it.
 
 > [!NOTE]  
-> Renaming a control will also trigger this error. The AppSourceCop will consider the renamed control as a new control, unrelated to the one defined in the previous version.
+> Renaming a control will also trigger this error. AppSourceCop will consider the renamed control as a new control, unrelated to the one defined in the previous version.
 
 ## How to fix this diagnostic
 
