@@ -23,7 +23,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 
 |Page type|Examples of use|Main data display|Characteristics|
 |---------|---------------|----------------|---------------|
-|`RoleCenter`|Overview of business performance and the start page for a specific user profile|Defined by the included parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
+|`RoleCenter`|Overview of business performance and the start page for a specific user profile.|Defined by the included parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
 |`Card`|Master, reference, and set up data management.|Single entity|Titled entity with FastTabs. May include parts.|
 |`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
@@ -44,7 +44,11 @@ The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the 
 
 The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.
 
-![Designer action bar](media/pagelayouts-lock-legend.png "Page layout modes")
+|Symbol|Layout behavior|
+|---------|---------------|
+|![Designer action bar](media/page-layouts-lock1.png "Page layout modes")|Size to content|
+|![Designer action bar](media/page-layouts-lock2.png "Page layout modes")|Size to content within certain limits|
+|![Designer action bar](media/page-layouts-lock3.png "Page layout modes")|Size to fill space|
 <!-- illustration of header of entity page and header of collection page -->
 
 ## Entity-oriented pages 
