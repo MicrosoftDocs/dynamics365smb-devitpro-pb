@@ -140,7 +140,7 @@ codeunit 50100 MyCodeunit
 
 The event remains the same from one version to the other.
 
-### Example 2 - An event starts exposing it sender
+### Example 2 - An event starts exposing its sender
 
 Version 1.0 of the extension:
 ```
