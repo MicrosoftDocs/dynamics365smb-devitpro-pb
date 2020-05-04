@@ -52,7 +52,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In version 2.0, the type of the parameter i has changed from `Integer` to `Boolean`. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Integer' to 'Boolean' (AL0133)`.
+In version 2.0, the type of the parameter `i` has changed from `Integer` to `Boolean`. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Integer' to 'Boolean' (AL0133)`.
 
 ### Example 2 - Modifying parameters subtype
 
@@ -76,7 +76,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In version 2.0, the subtype of the parameter i has changed from a Customer record to a Vendor record. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Record Vendor' to 'Record Customer' (AL0133)`.
+In version 2.0, the subtype of the parameter `i` has changed from a Customer record to a Vendor record. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Record Vendor' to 'Record Customer' (AL0133)`.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
