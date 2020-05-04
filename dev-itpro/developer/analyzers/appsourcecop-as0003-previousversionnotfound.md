@@ -25,9 +25,9 @@ The previous version of the extension, used as a baseline for detecting breaking
 
 This rule validates that the version of the extension specified as a baseline for detecting breaking changes can be found in the package cache folder.
 
-### Setting up the AppSourceCop to detect breaking changes
+### Setting up AppSourceCop to detect breaking changes
 
-In order to setup the AppSourceCop to detect breaking changes, the version of the extension used as a baseline must be specified in the `AppSourceCop.json` using the `version` property. The version specified is the exact version against which the breaking changes are validated. It is also possible to specify the `name` and the `publisher` of the extension in the AppSourceCop.json.
+In order to set up AppSourceCop to detect breaking changes, the version of the extension used as a baseline must be specified in the AppSourceCop.json file using the `version` property. The version specified is the exact version against which the breaking changes are validated. It is also possible to specify the `name` and the `publisher` of the extension in the AppSourceCop.json file.
 
 For example:
 ```
@@ -42,9 +42,9 @@ The previous version of the extension must be added to the package cache where t
 
 ## How to fix this diagnostic?
 
-If you do not want to detect breaking changes in your extension, remove the property `version` in the AppSourceCop.json.
+If you do not want to detect breaking changes in your extension, remove the property `version` in the AppSourceCop.json file.
 
-If you want to detect breaking changes, verify that the version specified in the `AppSourceCop.json` is correct and that the extension can be found in the package cache.
+If you want to detect breaking changes, verify that the version specified in the AppSourceCop.json file is correct and that the extension can be found in the package cache.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
