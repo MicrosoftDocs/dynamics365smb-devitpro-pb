@@ -44,7 +44,7 @@ The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the 
 
 The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.
 
-![Designer action bar](media/designer-action-bar.png "Designer action bar")
+![Designer action bar](media/pagelayouts-lock-legend.png "Page layout modes")
 <!-- illustration of header of entity page and header of collection page -->
 
 ## Entity-oriented pages 
