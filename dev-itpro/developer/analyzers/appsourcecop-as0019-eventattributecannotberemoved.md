@@ -55,7 +55,7 @@ In version 2.0, the event attribute has been renamed. If a dependent extension s
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', false, false)]
     local procedure MyProcedure(i: Integer)

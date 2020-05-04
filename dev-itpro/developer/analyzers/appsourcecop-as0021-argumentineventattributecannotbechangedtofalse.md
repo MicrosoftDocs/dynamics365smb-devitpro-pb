@@ -56,7 +56,7 @@ In the newer version, the sender exposed by `MyEvent` is not accessible to subsc
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', true, true)]
     local procedure MyProcedure(sender: Codeunit MyCodeunit)
@@ -101,7 +101,7 @@ In the newer version, the global variables exposed by `MyEvent` are not accessib
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
-codeunit 50120 AnotherCodeunit()
+codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', true, true)]
     local procedure MyProcedure(myGlobalVariable: Integer)
