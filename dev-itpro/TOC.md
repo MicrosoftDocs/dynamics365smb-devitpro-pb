@@ -318,8 +318,6 @@
 ### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
-### [Troubleshooting the Business Central Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
-### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md) 
 ## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
@@ -659,6 +657,8 @@
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
+### [Troubleshooting the Business Central Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
+### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md) 
 ### Deployment Topologies
 #### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
 #### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
