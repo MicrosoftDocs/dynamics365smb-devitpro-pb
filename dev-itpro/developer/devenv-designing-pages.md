@@ -44,11 +44,6 @@ The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the 
 
 The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.
 
-|Symbol|Layout behavior|Notes|
-|---------|---------------|----|
-|![Designer action bar](media/page-layouts-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
-|![Designer action bar](media/page-layouts-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
-|![Designer action bar](media/page-layouts-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
 <!-- illustration of header of entity page and header of collection page -->
 
 ## Entity-oriented pages 
@@ -79,6 +74,19 @@ How space allocation takes place for a given page depends on the chosen page typ
 ### Field groups and page parts 
 
 In the following sections are description of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
+
+|Symbol|Layout behavior|Notes|
+|---------|---------------|----|
+|![Designer action bar](media/page-layouts-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
+|![Designer action bar](media/page-layouts-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar](media/page-layouts-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+
+|Symbol|Layout behavior|Notes|
+|---------|---------------|----|
+|![Designer action bar](media/page-layouts-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
+|![Designer action bar](media/page-layouts-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar](media/page-layouts-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+
 <!-- show legend for displaying groups and page parts. -->
 
 ### Card and Document page layouts 
