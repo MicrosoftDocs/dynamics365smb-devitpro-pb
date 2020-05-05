@@ -3,7 +3,7 @@ author: SusanneWindfeldPedersen
 title: "FAQ"
 description: ""
 ms.custom: na
-ms.date: 12/18/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,9 +18,7 @@ ms.author: solsen
 <br>
 <details><summary><b>Does pricing affect the replica databases?</b></summary>
 <p>
-
 The read replica is part of the efforts towards uptime and disaster recovery of Azure and is not counted towards the storage allocation of the BC database
-
 </p>
 </details>
 <br>
@@ -30,7 +28,7 @@ Within the region, potentially on a different tenant, an extension with the same
 
 The author should increase the version of the extension he is publishing.
 
-Help...
+For more information, see [Help topic]()
 </p>
 </details>
 <br>
