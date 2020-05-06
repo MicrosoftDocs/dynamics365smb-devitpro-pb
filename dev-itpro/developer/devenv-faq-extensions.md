@@ -15,10 +15,11 @@ ms.author: solsen
 # FAQ
 
 ## Data Storage
+
 <br>
 <details><summary><b>Does pricing affect the replica databases?</b></summary>
 <p>
-The read replica is part of the efforts towards uptime and disaster recovery of Azure and is not counted towards the storage allocation of the BC database
+The read replica is part of the efforts towards uptime and disaster recovery of Azure and is not counted towards the storage allocation of the Business Central database.
 </p>
 </details>
 <br>
@@ -41,7 +42,9 @@ The author should increase the version of the extension he is publishing.
 Help...
 </p>
 </details>
+
 <!-- check this with Buckley... localization -->
+
 <!--
 ### An extension with same App ID and version has already been uploaded - resolve and deploy again
 <br>
