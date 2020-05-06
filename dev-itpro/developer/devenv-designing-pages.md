@@ -77,15 +77,15 @@ In the following sections are description of typical page layouts, recommendatio
 
 |Symbol|Layout behavior|Notes|
 |---------|---------------|----|
-|![Designer action bar](media/page-layouts-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
-|![Designer action bar](media/page-layouts-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
-|![Designer action bar](media/page-layouts-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
+|![Designer action bar](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
 
-|Symbol|Layout behavior|Notes|
+|Symbol|Section|Notes|
 |---------|---------------|----|
-|![Designer action bar](media/page-layouts-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
-|![Designer action bar](media/page-layouts-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
-|![Designer action bar](media/page-layouts-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar](media/page-layout-cardpartgroup.png "CardPart or group section")|CardPart or group of fields|TBD|
+|![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|TBD|
+|![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|TBD|
 
 <!-- show legend for displaying groups and page parts. -->
 
