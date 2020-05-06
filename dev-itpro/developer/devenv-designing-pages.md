@@ -73,13 +73,7 @@ How space allocation takes place for a given page depends on the chosen page typ
 
 ### Field groups and page parts 
 
-In the following sections are description of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
-
-|Symbol|Layout behavior|Notes|
-|---------|---------------|----|
-|![Designer action bar](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
-|![Designer action bar](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
-|![Designer action bar](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+In the following sections are descriptions of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
 
 |Symbol|Section|Notes|
 |---------|---------------|----|
@@ -87,7 +81,19 @@ In the following sections are description of typical page layouts, recommendatio
 |![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|Table or grid layout, with integrated action bar|
 |![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|Table or grid layout|
 
-### Card and Document page layouts 
+### Sizing of page sections
+
+The groups of fields and page parts making up a page are rendered when the user opens the page. Dependent on the size of the available screen real estate, e.g. in the browser window on a desktop computer, [!INCLUDE[prodshort](includes/prodshort.md)] sizes the sections automatically to make the most of the space. There are three ways the size are determined.
+
+|Symbol|Layout behavior|Notes|
+|---------|---------------|----|
+|![Designer action bar](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
+|![Designer action bar](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+
+For each of the page types described in the sections below, we present the typical layouts, and the way that the sections are sized.
+
+## Card and Document page layouts 
 
 The primary purpose of Card pages is to support users managing master and reference data, such as Customer, Vendor, and Item entities. (The name *Card* refers to how this kind of business data was kept on paper cards in filing cabinets before being computerized.) The Card page type is also often used for setup pages.
 
@@ -109,7 +115,7 @@ From the user’s perspective, the following are qualities of a well-designed ca
 |Field groups are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart’s height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
 
 
-### ListPlus page layouts 
+## ListPlus page layouts 
 
 The ListPlus pages’ primary purpose is to support users in managing or browsing a collection of data, e.g. entries, related to a specific business entity or event. For example, the *Customer Sales* page is a ListPlus page that shows sales numbers for a customer and providing dedicated viewing options for sales analysis.
 
@@ -133,7 +139,7 @@ Example 3. When placing two ListParts in a group, they share horizontal and vert
 
  
 
-### List page layouts 
+## List page layouts 
 
 List pages support users viewing and finding specific entities or entries in a collection. Lists that are editable have cells available for data entry and update.
 
@@ -155,7 +161,7 @@ Example 2. When a field group or cardpart is included, space for repeater is red
 Example 3. When a listpart is included, space is shared equally between part and repeater. 
 
 
-### Worksheet page layouts 
+## Worksheet page layouts 
 
 A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users’ work with the collection, such as with journals (which typically involves data entry) and inquiry pages (which is for querying data).
 
@@ -178,7 +184,7 @@ Example 2. If a listpart is included, vertical space is shared with repeater gro
 Example 3. When a listpart is included, space is shared equally between part and repeater. 
 
 
-### Dialog page layouts 
+## Dialog page layouts 
 
 Some page types in [!INCLUDE[prodshort](includes/prodshort.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, as well as dialogs defined as report request pages.
 
