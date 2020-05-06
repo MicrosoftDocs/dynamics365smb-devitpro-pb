@@ -83,11 +83,9 @@ In the following sections are description of typical page layouts, recommendatio
 
 |Symbol|Section|Notes|
 |---------|---------------|----|
-|![Designer action bar](media/page-layout-cardpartgroup.png "CardPart or group section")|CardPart or group of fields|TBD|
-|![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|TBD|
-|![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|TBD|
-
-<!-- show legend for displaying groups and page parts. -->
+|![Designer action bar](media/page-layout-cardpartgroup.png "CardPart or group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
+|![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|Table or grid layout, with integrated action bar|
+|![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|Table or grid layout|
 
 ### Card and Document page layouts 
 
