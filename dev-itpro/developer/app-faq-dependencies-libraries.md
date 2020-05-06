@@ -20,7 +20,7 @@ A library app contains common code that other apps depend on. If you are going t
 
 ## How does the library app get installed to a tenant?
 
-A library app does not appear on AppSource. It only lives in Business Central. Our service is built to install the library apps behind the scenes. Here is how it works. Customers finds an app they want to install on AppSource. That customer does not know the app even has library app(s). When they click to install the app, our service looks into that apps json/manifest to see if it first needs to install any library/dependency apps it may depend on. If so, it installs them first before installing the main AppSource app.
+A library app does not appear on AppSource. It only lives in [!INCLUDE[prodshort](includes/prodshort.md)]. Our service is built to install the library apps behind the scenes. Here is how it works. Customers finds an app they want to install on AppSource. That customer does not know the app even has library app(s). When they click to install the app, our service looks into that apps json/manifest to see if it first needs to install any library/dependency apps it may depend on. If so, it installs them first before installing the main AppSource app.
 
 ## What is a dependency app?
 
