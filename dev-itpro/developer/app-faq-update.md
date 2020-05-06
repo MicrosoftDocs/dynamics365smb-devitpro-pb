@@ -26,7 +26,7 @@ Never change the app's App ID in the json/manifest files. This is must stay the 
 
 ## When is my updated app available for tenants to install?
 
-As soon as your updated app passes validation and is checked into our service, it then becomes the active version (for whatever the current Business Central version is at that time). Even though your offer might still show as in progress in Partner Center, the updated app is active and ready to install. Also, even though your version number in App Source might show as older, tenants will still get this latest updated version. For example, your updated version might be version 1.0.0.5. And in App Source it might still show 1.0.0.1. Tenants will get the version 1.0.0.5.
+As soon as your updated app passes validation and is checked into our service, it then becomes the active version (for whatever the current Business Central version is at that time). Even though your offer might still show as in progress in Partner Center, the updated app is active and ready to install. Also, even though your version number in AppSource might show as older, tenants will still get this latest updated version. For example, your updated version might be version 1.0.0.5. And in AppSource it might still show 1.0.0.1. Tenants will get the version 1.0.0.5.
 
 ## What version of Business Central is my updated app compatible with?
 
