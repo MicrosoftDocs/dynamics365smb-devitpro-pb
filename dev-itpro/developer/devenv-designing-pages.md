@@ -83,7 +83,11 @@ In the following sections are descriptions of typical page layouts, recommendati
 
 ### Sizing of page sections
 
-The groups of fields and page parts making up a page are rendered when the user opens the page. Dependent on the size of the available screen real estate, e.g. in the browser window on a desktop computer, [!INCLUDE[prodshort](includes/prodshort.md)] sizes the sections automatically to make the most of the space. There are three ways the size are determined.
+The groups of fields and page parts making up a page are rendered when the user opens the page.
+
+Dependent on the size of the available screen real estate, e.g. in the browser window on a desktop computer, [!INCLUDE[prodshort](includes/prodshort.md)] sizes the sections automatically to make the most of the space.
+
+There are three different ways a section's size are determined. 
 
 |Symbol|Layout behavior|Notes|
 |---------|---------------|----|
@@ -91,7 +95,7 @@ The groups of fields and page parts making up a page are rendered when the user 
 |![Designer action bar](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
 |![Designer action bar](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
 
-For each of the page types described in the sections below, we present the typical layouts, and the way that the sections are sized.
+Which of the section sizing behavior is used is dependent on the chosen page type. For each of the page types described in the sections below, we present the typical layouts, and the way that the sections are sized.
 
 ## Card and Document page layouts 
 
@@ -130,14 +134,11 @@ From the user’s perspective, the following are qualities of a well-designed de
 
 A ListPlus page must not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided.
 
+![ListPlus page layouts](media/page-layout-listplus.png "ListPlus page layouts")
 
-Example 1. Field sections are placed from top to bottom. The first ListPart fills vertical space. 
-
-Example 2. When placing two (or more) ListParts, they will share available vertical space. 
-
-Example 3. When placing two ListParts in a group, they share horizontal and vertical space. 
-
- 
+|Example 1|Example 2|Example 3|
+|---------|---------------|----|
+|Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two (or more) ListParts, they will share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
 
 ## List page layouts 
 
@@ -153,12 +154,11 @@ From the user’s perspective, the following are qualities of a well-designed Li
 
 List pages must contain a single `Repeater` group. In addition, a list can include groups of fields, card parts, and list parts. Below are examples of list page compositions, showing how space is divided.
 
+![List page layouts](media/page-layout-list.png "List page layouts")
 
-Example 1. The repeater group assumes full vertical space. 
-
-Example 2. When a field group or cardpart is included, space for repeater is reduced. 
-
-Example 3. When a listpart is included, space is shared equally between part and repeater. 
+|Example 1|Example 2|Example 3|
+|---------|---------------|----|
+|The repeater group assumes full vertical space.|When a field group or cardpart is included, space for repeater is reduced.|When a listpart is included, space is shared equally between part and repeater.|
 
 
 ## Worksheet page layouts 
@@ -176,12 +176,11 @@ From the user’s perspective, the following are qualities of a well-designed wo
 
 Worksheet pages must contain a single repeater group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided.
 
+![Worksheet page layouts](media/page-layout-worksheet.png "Worksheet page layouts")
 
-Example 1. The repeater group assumes full vertical space, leaving space for groups above and below. 
-
-Example 2. If a listpart is included, vertical space is shared with repeater group. 
-
-Example 3. When a listpart is included, space is shared equally between part and repeater. 
+|Example 1|Example 2|Example 3|
+|---------|---------------|----|
+|The Repeater group takes full vertical space, leaving space for groups above and below.|If a ListPart is included, the vertical space is shared with Repeater.|When a ListPart is included, space is shared equally between part and Repeater.| 
 
 
 ## Dialog page layouts 
@@ -190,7 +189,7 @@ Some page types in [!INCLUDE[prodshort](includes/prodshort.md)] are available ex
 
 It is also possible to use the common page types (`Card`, `Document`, `List`, etc.) to present a dialog to the user. In this case, pages are created, composed, and can include the same elements, as when displayed ordinarily. Presenting the page to the user as a dialog requires certain AL code that activates the dialog mode. When this happens, the page is shown with dismiss buttons in the page footer.
 
-[illustration of dialog and modal pages] 
+![Dialog page layouts](media/page-layout-dialog.png "Dialog page layout")
 
 Generally, [!INCLUDE[prodshort](includes/prodshort.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
