@@ -36,7 +36,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`NavigatePage`|Multi-page dialogs (also known as a "Wizard").|Single or collection|One or more groups of fields.|
 
 
-## The two principal page types 
+### The two principal page types 
 
 A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
 
@@ -46,7 +46,7 @@ The collection-oriented page types (`List` and `Worksheet`) provide similar acti
 
 ![Designer action bar](media/page-layout-entity-vs-collection.png "Entity vs. collection pages and their actions")
 
-### Entity-oriented pages 
+#### Entity-oriented pages 
 
 In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented task page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction or other important business event. 
 
@@ -55,7 +55,7 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 > [!NOTE]  
 > Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. However, an entity-oriented task page *can* include a list part page that, in turn, contains a `Repeater` group.
 
-### Collection-oriented pages 
+#### Collection-oriented pages 
 
 In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (e.g. showing customers, items, etc.) from which the user can seek out the entities to work with.
 
@@ -132,7 +132,7 @@ From the user’s perspective, the following are qualities of a well-designed de
 -	If present, fields that control which data is presented in another FastTab come before that FastTab.
 -	If present, fields that show data dependent on the chosen row (in the repeater) come after the repeater.
 
-A ListPlus page must not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided.
+A ListPlus page should generally not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided.
 
 ![ListPlus page layouts](media/page-layout-listplus.png "ListPlus page layouts")
 
