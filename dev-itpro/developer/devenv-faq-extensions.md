@@ -41,7 +41,7 @@ The author should increase the version of the extension he is publishing.
 Help...
 </p>
 </details>
-
+<!-- check this with Buckley... localization -->
 <!--
 ### An extension with same App ID and version has already been uploaded - resolve and deploy again
 <br>
