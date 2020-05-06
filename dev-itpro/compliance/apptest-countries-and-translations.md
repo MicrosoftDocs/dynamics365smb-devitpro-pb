@@ -14,7 +14,7 @@ ms.author: soalex
 
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
 
-> [!NOTE]
+> [!NOTE]  
 > In countries where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
@@ -77,7 +77,7 @@ Translated platform captions are provided by Microsoft for all supported languag
 
 Application languages delivered by Microsoft are provided as language apps, available on AppSource, that can be installed if needed. Partners can also provide application translation for any platform supported language. To use one of these languages the app publisher must be contacted through AppSource.
 
-This table gives an overview of supported languages and how  application languages are provided.
+This table gives an overview of supported languages and how application languages are provided.
 
 |Language|Locale|Translation app provided by|
 |-----------|---------|------|
@@ -87,9 +87,9 @@ This table gives an overview of supported languages and how  application languag
 |German (Switzerland)|de-CH|Microsoft, Available on AppSource|
 |German (Germany)|de-DE|Microsoft, Available on AppSource|
 |English (Australian)|en-AU|Microsoft, Available on AppSource|
-|Enligsh (Canada)|en-CA|Microsoft, Available on AppSource|
+|English (Canada)|en-CA|Microsoft, Available on AppSource|
 |English (Great Britain)|en-GB|Microsoft, Available on AppSource|
-|Enligsh (New Zealand)|en-NZ|Microsoft, Available on AppSource|
+|English (New Zealand)|en-NZ|Microsoft, Available on AppSource|
 |English (United States)|en-US|Microsoft, Available on AppSource|
 |English (South Africa)|en-ZA|Microsoft, Available on AppSource|
 |Spanish (Spain)|es-ES|Microsoft, Available on AppSource|
@@ -100,7 +100,7 @@ This table gives an overview of supported languages and how  application languag
 |French (Canada)|fr-CA|Microsoft, Available on AppSource|
 |French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
 |French (France)|fr-FR|Microsoft, Available on AppSource|
-|Croatioan (Croatia)|hr-HR|Partner, Available on AppSource|
+|Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
 |Icelandish (Iceland)|is-IS|Microsoft, Available on AppSource|
 |Italian (Switzerland)|it-CH|Microsoft, Available on AppSource|
@@ -108,7 +108,7 @@ This table gives an overview of supported languages and how  application languag
 |Japanese (Japan)|jp-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
-|Lithuanian (Lithuania)|lv-LV|Partner, Available on AppSource (pending)|
+|Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource (pending)|
 |Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
