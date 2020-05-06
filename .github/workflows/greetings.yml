@@ -17,5 +17,5 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-        issue-message: 'Hello, thanks for your feedback. This issue will be triaged, but we cannot guarantee you that it will be fixed.'
+        issue-message: 'Hello, thanks for your feedback. We triage this feedback regularly and use it to plan for future documentation improvements.'
         pr-message: 'Hello, thanks for your contribution, much appreciated. We will triage and review your PR.'
