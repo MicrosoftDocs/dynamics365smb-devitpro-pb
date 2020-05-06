@@ -22,7 +22,7 @@ Typing the shortcut `teventint` will create the basic IntegrationEvent attribute
 [IntegrationEvent(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
 ```    
   
-#### Arguments  
+### Arguments  
 *IncludeSender*  
 Type: Boolean  
   
