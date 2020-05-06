@@ -38,7 +38,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 
 ## The two principal page types 
 
-A fundamental characteristic of the available page types is the way that a page type relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
+A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
 
 The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the user with actions to toggle edit/view mode, creation, and deletion, at the top of the page. (On tablet and phone, these actions may be placed in another position.)
 
