@@ -38,13 +38,13 @@ The following table provides an overview of the page types supported in [!INCLUD
 
 ## The two principal page types 
 
-A fundamental characteristic of the available page types lies in the way that a page type relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
+A fundamental characteristic of the available page types is the way that a page type relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
 
 The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the user with actions to toggle edit/view mode, creation, and deletion, at the top of the page. (On tablet and phone, these actions may be placed in another position.)
 
 The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.
 
-<!-- illustration of header of entity page and header of collection page -->
+![Designer action bar](media/page-layout-entity-vs-collection.png "Entity vs. collection pages and their actions")
 
 ## Entity-oriented pages 
 
@@ -102,12 +102,12 @@ From the user’s perspective, the following are qualities of a well-designed ca
 - Includes one or two FactBoxes to give relevant statistics and quick access to related documents.
 - For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
 
-Example 1. Field groups are placed vertically from top to bottom of the page 
+![Card and document page layouts](media/page-layout-card-doc.png "Card and document page layouts")
 
-Example 2. A ListPart can be included. In this case, the listpart’s height is limited to show 5 rows.  
+|Example 1|Example 2|Example 3|
+|---------|---------------|----|
+|Field groups are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart’s height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
 
-Example 3. When a listpart is included as the last part on the page, it will expand to fill space. 
- 
 
 ### ListPlus page layouts 
 
