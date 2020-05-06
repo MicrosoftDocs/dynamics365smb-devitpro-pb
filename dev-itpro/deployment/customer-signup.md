@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/23/2020
+ms.date: 05/06/2020
 ---
 
 # Trials and Sign-ups for Business Central Online
