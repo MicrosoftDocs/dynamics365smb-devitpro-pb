@@ -46,7 +46,7 @@ The collection-oriented page types (`List` and `Worksheet`) provide similar acti
 
 ![Designer action bar](media/page-layout-entity-vs-collection.png "Entity vs. collection pages and their actions")
 
-## Entity-oriented pages 
+### Entity-oriented pages 
 
 In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented task page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction or other important business event. 
 
@@ -55,7 +55,7 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 > [!NOTE]  
 > Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. However, an entity-oriented task page *can* include a list part page that, in turn, contains a `Repeater` group.
 
-## Collection-oriented pages 
+### Collection-oriented pages 
 
 In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (e.g. showing customers, items, etc.) from which the user can seek out the entities to work with.
 
