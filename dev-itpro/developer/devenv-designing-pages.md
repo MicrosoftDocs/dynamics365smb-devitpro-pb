@@ -28,12 +28,12 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
 |`List`|Entity overviews and navigation, and inline editing of simple entities.|Collection of entities/entries|A single list with a caption. May have field groups and subpages below the list’s `Repeater`.|
-|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with caption. May include field groups and subpages above and/or below the worksheet’s `Repeater`.|
+|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and/or below the worksheet’s `Repeater`.|
 |`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. May have FastTabs with fields or a single list.|
 |`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. May have FastTabs with fields or a single list.|
+|`NavigatePage`|Multi-page dialogs (also known as a "Wizard").|Single or collection|One or more groups of fields and/or parts.|
 |`CardPart`|A page that is included in another page, e.g. a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is included in another page, e.g. a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
-|`NavigatePage`|Multi-page dialogs (also known as a "Wizard").|Single or collection|One or more groups of fields.|
 
 
 ### The two principal page types 
@@ -112,6 +112,8 @@ From the user’s perspective, the following are qualities of a well-designed ca
 - Includes one or two FactBoxes to give relevant statistics and quick access to related documents.
 - For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
 
+Below are examples of Card and Document page compositions, showing how space is divided.
+
 ![Card and document page layouts](media/page-layout-card-doc.png "Card and document page layouts")
 
 |Example 1|Example 2|Example 3|
@@ -130,7 +132,7 @@ From the user’s perspective, the following are qualities of a well-designed de
 -	Is optimized for showing one set of details, and giving the user means to work with them.
 -	Presents information in the page in such a way that the hierarchy can be understood when read from top to bottom.
 -	If present, fields that control which data is presented in another FastTab come before that FastTab.
--	If present, fields that show data dependent on the chosen row (in the repeater) come after the repeater.
+-	If present, fields that show data dependent on the chosen row (in the ListPart) come after the ListPart.
 
 A ListPlus page should generally not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided.
 
