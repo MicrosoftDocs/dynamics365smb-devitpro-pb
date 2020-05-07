@@ -13,9 +13,9 @@ ms.service: "dynamics365-business-central"
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
- Pages that previously had the **Date** virtual table as their source table have been redesigned to be based on buffer tables instead. This way, base application pages such as **Item Availability Lines** and **Res. Availability Lines** can now be extended.
+ Pages that previously had the **Date** virtual table as their source table have been redesigned so that they are based on buffer tables instead. This way, base application pages such as **Item Availability Lines** and **Res. Availability Lines** can now be extended.
 
-To perform extensions on pages that were based on the **Date** table, one must first extend the underlying buffer table. Then you create a method and subscribe it to the **OnAfterCalcLine** event of the page to calculate and update the values of the extended fields.
+To perform extensions on such pages, one must first extend the underlying buffer table. Then you create a method and subscribe it to the **OnAfterCalcLine** event of the page to calculate and update the values of the extended fields.
 
 ## Example
 
