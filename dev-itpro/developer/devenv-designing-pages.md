@@ -81,9 +81,9 @@ In the following sections are descriptions of typical page layouts, recommendati
 
 |Symbol|Section|Notes|
 |---------|---------------|----|
-|![CardPart or Group](media/page-layout-cardpartgroup.png "CardPart or group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
-|![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|Table or grid layout, with integrated action bar|
-|![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|Table or grid layout|
+|![CardPart or Group](media/page-layout-cardpartgroup.png "CardPart or field group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
+|![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|List or table layout, with integrated action bar.|
+|![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|List or table layout.|
 
 ### Sizing of page sections
 
@@ -118,12 +118,11 @@ From the user’s perspective, the following are qualities of a well-designed ca
 
 Below are examples of Card and Document page compositions, showing how space is divided.
 
-![Card and document page layouts](media/page-layout-card-doc.png "Card and document page layouts")
-
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |Field groups are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart’s height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
 
+![Card and document page layouts](media/page-layout-card-doc.png "Card and document page layouts")
 
 ## ListPlus page layouts 
 
@@ -140,11 +139,11 @@ From the user’s perspective, the following are qualities of a well-designed de
 
 A ListPlus page should generally not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided.
 
-![ListPlus page layouts](media/page-layout-listplus.png "ListPlus page layouts")
-
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two (or more) ListParts, they will share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
+
+![ListPlus page layouts](media/page-layout-listplus.png "ListPlus page layouts")
 
 ## List page layouts 
 
@@ -160,12 +159,11 @@ From the user’s perspective, the following are qualities of a well-designed Li
 
 List pages must contain a single `Repeater` group. In addition, a list can include groups of fields, card parts, and list parts. Below are examples of list page compositions, showing how space is divided.
 
-![List page layouts](media/page-layout-list.png "List page layouts")
-
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The repeater group assumes full vertical space.|When a field group or cardpart is included, space for repeater is reduced.|When a listpart is included, space is shared equally between part and repeater.|
 
+![List page layouts](media/page-layout-list.png "List page layouts")
 
 ## Worksheet page layouts 
 
@@ -182,12 +180,11 @@ From the user’s perspective, the following are qualities of a well-designed wo
 
 Worksheet pages must contain a single repeater group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided.
 
-![Worksheet page layouts](media/page-layout-worksheet.png "Worksheet page layouts")
-
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The Repeater group takes full vertical space, leaving space for groups above and below.|If a ListPart is included, the vertical space is shared with Repeater.|When a ListPart is included, space is shared equally between part and Repeater.| 
 
+![Worksheet page layouts](media/page-layout-worksheet.png "Worksheet page layouts")
 
 ## Dialog page layouts 
 
