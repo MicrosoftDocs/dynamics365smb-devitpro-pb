@@ -3,7 +3,7 @@ title: "Extending pages previously based on the Date virtual table"
 description: "How to extend pages that previously had the Date virtual table as their source table."
 author: blrobl
 ms.custom: na
-ms.date: 07/05/2020
+ms.date: 05/07/2020
 ms.suite: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
