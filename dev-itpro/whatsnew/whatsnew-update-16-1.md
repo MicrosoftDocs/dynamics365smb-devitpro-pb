@@ -43,6 +43,12 @@ On login, Global Admins will get a message about the capabilities in Business Ce
 - **Update history**   
 In between the Microsoft Dynamics 365 Business Central minor updates we deploy new builds as they become available. Visit our new [Update History](https://support.microsoft.com/help/4553289/update-history-for-microsoft-dynamics-365-business-central) to check if you have the latest hotfixes. 
 
+- **Get ready to improve your business – virtual event coming up**   
+On June 3rd we launch a virtual event for partners where we share the latest innovations for Business Central. Learn more at 15+ deep dive sessions about what’s new in release 2020 wave 1 – available when you have time. 
+You don’t want to miss this virtual event! Registration opens soon at https://aka.ms/virtual/businesscentral/2020RW1   
+Pssst…did we mention it’s for free…
+
+
 - **Major updates**  
 Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime). 
 
