@@ -87,4 +87,4 @@ codeunit 50001 GLAccountBalanceLinesExt
 ## See Also
 [Page Extension object](devenv-page-ext-object.md)  
 [Page object](devenv-page-object.md)  
-[CalcFields Method](methods-auto/record/record-calcfields-method)
+[CalcFields Method](methods-auto/record/record-calcfields-method.md)
