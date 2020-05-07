@@ -12,13 +12,15 @@ author: ManuelaHochstrasser
 ---
 
 # Update 16.1 for Microsoft Dynamics 365 Business Central 2020 online release wave 1
-Would you like to know what has changed in update 16.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.  
+Would you like to know what has changed in update 16.1?   
+Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.  
 
 ## Hotfixes
-[Link to Hotfixes](https://support.microsoft.com/en-us/help/4538888)
+[Link to Hotfixes](https://support.microsoft.com/en-us/help/4549686)
 
 ## Feature changes
-- We haven't identified any new features or changes reported in either [Successhub](https://Aka.ms/bagreleasenotes) or [the Release Plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). If not correct, please send titles and links to [Lotte](lci@microsoft.com) and [Katrine](a-kawilu@microsoft.com). Thanks
+- [Company lifecycle telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/company-lifecycle-telemetry-application-insights-partners)   
+- [Update error telemetry in Application Insights for partners](Link to Release Plan missing)
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). 
@@ -28,16 +30,21 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-- **Major updates**  
-Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime). 
-
-- **Update history**   
-In between the Microsoft Dynamics 365 Business Central minor updates we deploy new builds as they become available. Visit our new [Update History](https://support.microsoft.com/en-us/help/4553289/update-history-for-microsoft-dynamics-365-business-central) to check if you have the latest hotfixes. 
+- **Minimum requirements for Business Central Administration Center**   
+We have updated system requirements with the list of browsers supported by the Administration Center. When signing in from an unsupported browser that delivers a significantly degraded experience, administrators will immediately see a message that prevents them from continuing to the Administration Center. For example, it is not possible to access the Business Central Administration Center from Internet Explorer.   
+[See minimum requirements](https://docs.microsoft.com/dynamics365/business-central/product-requirements#tac)   
+[Learn more about the Business Central Administration Center](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) 
+- **Sandbox environment picker**   
+When you navigate from the Business Central Sandbox tile in the Dynamics 365 Home portal or in the App Launcher, a dialog will be displayed for you to choose exactly which sandbox environment from your organization you would like to navigate to.
 
 - **Message to Global Admins about the capabilities**   
 On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned.
 
-- Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about Business Central performance. 
+- **Update history**   
+In between the Microsoft Dynamics 365 Business Central minor updates we deploy new builds as they become available. Visit our new [Update History](https://support.microsoft.com/help/4553289/update-history-for-microsoft-dynamics-365-business-central) to check if you have the latest hotfixes. 
 
-- **Your input needed here...**   
-Any other 'enhancements'/tips/info/...you want to be communicated here? Please send to [Lotte](lci@microsoft.com) and [Katrine](a-kawilu@microsoft.com). Thanks
+- **Major updates**  
+Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime). 
+
+- **The Performance Tuning Guide**   
+Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about Business Central performance. 
