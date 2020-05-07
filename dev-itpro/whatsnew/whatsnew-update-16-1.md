@@ -35,7 +35,8 @@ We have updated system requirements with the list of browsers supported by the A
 [See minimum requirements](https://docs.microsoft.com/dynamics365/business-central/product-requirements#tac)   
 [Learn more about the Business Central Administration Center](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) 
 - **Sandbox environment picker**   
-When you navigate from the Business Central Sandbox tile in the Dynamics 365 Home portal or in the App Launcher, a dialog will be displayed for you to choose exactly which sandbox environment from your organization you would like to navigate to.
+When you navigate from the Business Central Sandbox tile in the Dynamics 365 Home portal or in the App Launcher, a dialog will be displayed for you to choose exactly which sandbox environment from your organization you would like to navigate to.   
+[Read more about sandbox environments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/environment-types)
 
 - **Message to Global Admins about the capabilities**   
 On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned.
