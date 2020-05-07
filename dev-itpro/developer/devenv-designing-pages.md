@@ -35,7 +35,6 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`CardPart`|A page that is included in another page, e.g. a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is included in another page, e.g. a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
 
-
 ### The two principal page types 
 
 A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
@@ -44,7 +43,9 @@ The entity-oriented page types (`Card`, `Document`, and `ListPlus`) provide the 
 
 The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.
 
-![Designer action bar](media/page-layout-entity-vs-collection.png "Entity vs. collection pages and their actions")
+Actions in an entity-oriented page (left side) and in a collection-oriented page (right side):
+
+![Entity and collection page actions](media/page-layout-entity-vs-collection.png "Entity vs. collection pages and their actions")
 
 #### Entity-oriented pages 
 
@@ -73,7 +74,13 @@ How space allocation takes place for a given page depends on the chosen page typ
 
 ### A page is Content + Actions + Factboxes
 
+For all pages, there is a common structure to the areas of a page where content, factboxes, and actions can be displayed.
+
 ![Containers](media/page-layout-containers.png "Containers for Content and Factboxes, plus actions.")
+
+The 'content' area provide rich layout capabilities which are described in the coming sections. The 'factboxes' area is limited to show a list of parts, usually in a vertical arrangement.
+
+For more information about page areas, see [Pages Overview](properties/devenv-pages-overview.md). 
 
 ### Field groups and page parts 
 
@@ -206,3 +213,8 @@ Given the size of the screen where the dialog appears, more or less of the page 
 
  
 ## See Also
+[Page Properties Overview](properties/devenv-page-property-overview.md)  
+[Actions Overview](devenv-actions-overview.md)  
+[Using Designer](devenv-inclient-designer.md)  
+[Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Designing Role Centers](devenv-designing-role-centers.md) 
