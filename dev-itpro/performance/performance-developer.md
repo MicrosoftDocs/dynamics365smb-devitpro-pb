@@ -68,6 +68,11 @@ Instead of exposing UI pages as web service endpoints, use the built-in API page
 
 Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
+
+The choice of protocol for the endpoint can have a big impact on performance. Favor OData version 4 for the fastest performance. It is possible to expose procedures in a code unit as an OData end point using unbound actions. 
+
+To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+
 ### Web service client performance 
 
 The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic can't cause stability and performance issues.
