@@ -69,7 +69,11 @@ Besides adding fields and groups to a page, it is possible to include another pa
 
 When pages are created that include parts, Business Central will take care of sharing the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
-How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window. 
+How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window.
+
+### A page is Content + Actions + Factboxes
+
+![Containers](media/page-layout-containers.png "Containers for Content and Factboxes, plus actions.")
 
 ### Field groups and page parts 
 
@@ -77,7 +81,7 @@ In the following sections are descriptions of typical page layouts, recommendati
 
 |Symbol|Section|Notes|
 |---------|---------------|----|
-|![Designer action bar](media/page-layout-cardpartgroup.png "CardPart or group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
+|![CardPart or Group](media/page-layout-cardpartgroup.png "CardPart or group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
 |![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|Table or grid layout, with integrated action bar|
 |![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|Table or grid layout|
 
