@@ -42,7 +42,7 @@ A fundamental characteristic of a page type is how it relates to the data presen
 |`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
 |---------|---------------|
 |![Entity and collection page actions](media/page-layout-entity-actions.png "Entity pages and their actions")|![Entity and collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")|
-|The entity-oriented page types provide the user with actions to toggle edit/view mode, creation, and deletion, at the top of the page. (On tablet and phone, these actions may be placed in another position.)|The collection-oriented page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.|
+|The **entity-oriented** page types provide the user with actions to toggle edit/view mode, creation, and deletion, at the top of the page. (On tablet and phone, these actions may be placed in another position.)|The **collection-oriented** page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.|
 
 #### Entity-oriented pages 
 
