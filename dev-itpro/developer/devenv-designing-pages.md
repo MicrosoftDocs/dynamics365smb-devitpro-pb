@@ -50,6 +50,8 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
+The `CardPart` page type is an entity-oriented page type for inclusion in another page, e.g. as a Factbox.
+
 > [!NOTE]  
 > Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. However, an entity-oriented task page *can* include a list part page that, in turn, contains a `Repeater` group.
 
@@ -58,6 +60,12 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (e.g. showing customers, items, etc.) from which the user can seek out the entities to work with.
 
 The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (e.g. in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
+
+The `ListPart` page type is a collection-oriented page type for inclusion in another page, e.g. as a Factbox.
+
+#### Dialog pages
+
+The page types in [!INCLUDE[prodshort](includes/prodshort.md)] that are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types, can represent an entity *or* a collection. The title caption and actions are suited for both types.
 
 ## Composing pages 
 
@@ -71,11 +79,11 @@ How space allocation takes place for a given page depends on the chosen page typ
 
 ### A page is Content + Actions + Factboxes
 
-For all pages, there is a common structure to the areas of a page where content, factboxes, and actions can be displayed.
+For all task pages, i.e. excluding dialogs and part pages, there is a common structure to the areas of a page where content, factboxes, and actions can be displayed.
 
 ![Containers](media/page-layout-containers.png "Containers for Content and Factboxes, plus actions.")
 
-The 'content' area provide rich layout capabilities which are described in the coming sections. The 'factboxes' area is limited to show a list of parts, usually in a vertical arrangement.
+The 'content' area provide rich layout capabilities which are described in the coming sections. The 'factboxes' area is limited to show a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, etc.
 
 For more information about page areas, see [Pages Overview](properties/devenv-pages-overview.md). 
 
