@@ -27,11 +27,11 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`Card`|Master, reference, and set up data management.|Single entity|Titled entity with FastTabs. May include parts.|
 |`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
-|`List`|Entity overviews and navigation, and inline editing of simple entities.|Collection of entities/entries|A single list with a caption. May have field groups and subpages below the list’s `Repeater`.|
-|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and/or below the worksheet’s `Repeater`.|
-|`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. May have FastTabs with fields or a single list.|
-|`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. May have FastTabs with fields or a single list.|
-|`NavigatePage`|Multi-page dialogs (also known as a "Wizard").|Single or collection|One or more groups of fields and/or parts.|
+|`List`|Entity overviews and navigation, and inline editing of simple entities.|Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list’s `Repeater`.|
+|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet’s `Repeater`.|
+|`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. May have FastTabs with fields or a list.|
+|`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. May have FastTabs with fields or a list.|
+|`NavigatePage`|Multi-page dialog (also known as a "Wizard").|Single or collection|One or more groups of fields and/or parts.|
 |`CardPart`|A page that is included in another page, e.g. a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is included in another page, e.g. a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
 
@@ -42,7 +42,7 @@ A fundamental characteristic of a page type is how it relates to the data presen
 |`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
 |---------|---------------|
 |![Entity and collection page actions](media/page-layout-entity-actions.png "Entity pages and their actions")|![Entity and collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")|
-|The **entity-oriented** page types provide the user with actions to toggle edit/view mode, creation, and deletion, at the top of the page. (On tablet and phone, these actions may be placed in another position.)|The **collection-oriented** page types (`List` and `Worksheet`) provide similar actions in the page’s action bar, and on the row's action menu. Those actions take effect on the selected row(s) in the collection.|
+|The **entity-oriented** page types have actions (in top and in action bar) that affect the entity or context given by the title of the page.|The **collection-oriented** page types provide actions in action bar (and on the rows' action menu) that take effect on the selected row(s) in the collection.|
 
 #### Entity-oriented pages 
 
@@ -73,7 +73,7 @@ Within a page, the developer can combine page fields into groups. This can help 
 
 Besides adding fields and groups to a page, it is possible to include another page of type `CardPart` or `ListPart`. (These two page types can in turn not include other pages.) 
 
-When pages are created that include parts, Business Central will take care of sharing the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
+When pages are created that include parts, Business Central divides the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
 How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window.
 
