@@ -64,9 +64,12 @@ Things that have historically caused performance on pages that are exposed as en
 - Many SIFT fields 
 - FactBoxes 
  
-Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages.
+Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
+
+The choice of protocol for the endpoint can have a big impact on performance. Favor OData version 4 for the fastest performance. It is possible to expose procedures in a code unit as an OData end point using unbound actions. 
+
+To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 ### Web service client performance 
 
