@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 54/11/2020
+ms.date: 05/11/2020
 ms.author: edupont
 ---
 # The Business Central Administration Center
