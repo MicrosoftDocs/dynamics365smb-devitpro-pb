@@ -246,7 +246,7 @@ This step is important, otherwise you might experience issues when you run the d
 
 ## Task 7: Synchronize tenant
 
-In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
+You'll synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
 1. (Multitenant only) Mount the tenant to the version 15 server instance.
 
@@ -310,7 +310,7 @@ In this task, you run a data upgrade for extensions.
 
 #### Single tenant
 
-You must run the data upgrade on extensions in order of dependency.
+Run the data upgrade on extensions in order of dependency.
 
 1. Run the data upgrade for the system application, followed by the base application.
 
@@ -368,7 +368,7 @@ At this point, the upgrade is complete, and you can open the client.
 
     (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
     
-    On the **Help and Support** page in the client, you'll see an application version, such as 16.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version number isn't updated automatically when you install an update. If you want the application version to reflect the version of the update or your own version, you change it manually as described here.
+    On the **Help and Support** page in the client, you'll see an application version, such as 16.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
     
     We recommend setting the value to application build number for the version 15 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
     
@@ -397,6 +397,16 @@ At this point, the upgrade is complete, and you can open the client.
     Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
     ```
 
+5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+
+    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    
+    - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
+    
+    - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
+
+     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
+
 ## See Also  
-[Upgrading the Data](Upgrading-the-Data.md)   
+
 [Upgrading to Business Central](upgrading-to-business-central.md)  

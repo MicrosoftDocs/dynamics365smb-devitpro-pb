@@ -16,7 +16,6 @@ ms.author: solsen
  
 Procedure overload enables developers to create multiple procedures with the same name, but with different signatures, on the same application object. Conceptually, overloaded procedures are used to execute the same task on a different set of arguments. When an overloaded procedure is called, a specific implementation of that procedure, appropriate to the context of the call, will be run. 
 
-
 ## Reasons for using procedure overload
 
 Overloaded procedures give programmers the flexibility to call a procedure with similar semantics for different types of data. At the same time, overloaded procedures remove the need for abusing the Variant data type for the purpose of processing different types of data a similar manner and allows the developer to write strongly-typed code and rely on the compiler for validation. 
