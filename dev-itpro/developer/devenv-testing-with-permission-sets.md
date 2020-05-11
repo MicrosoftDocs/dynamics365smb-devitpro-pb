@@ -43,9 +43,6 @@ To summarize, a test codeunit or test method defines a general permission set le
 
     Add logic to the **OnBeforeTestRun** and **OnAfterTestRun** triggers to apply and clear the permission sets for the test. 
  
-
-<!--
--->
 ## Example
 This simple code example illustrates how to test with permission sets. It uses a test runner codeunit to apply permission sets to test methods. The applied permission sets are determined by the different values of the [TestPermissions Property](properties/devenv-testpermissions-property.md) of the test method. 
 
@@ -97,4 +94,5 @@ codeunit 50101 MyTestPermissionsTestRunner
 [OnBeforeTestRun](triggers/devenv-onbeforetestrun-trigger.md)  
 [OnAfterTestRun](triggers/devenv-onaftertestrun-trigger.md)  
 [Testing the Application](devenv-Testing-Application.md)  
-[Creating Handler Methods](devenv-creating-handler-methods.md) 
+[Creating Handler Methods](devenv-creating-handler-methods.md)  
+[Special Permission Sets](../administration/administration-special-permission-sets.md)  

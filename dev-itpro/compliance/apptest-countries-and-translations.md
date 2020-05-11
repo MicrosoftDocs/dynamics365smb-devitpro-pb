@@ -89,9 +89,9 @@ This table gives an overview of supported languages and how application language
 |English (Australian)|en-AU|Microsoft, Available on AppSource|
 |English (Canada)|en-CA|Microsoft, Available on AppSource|
 |English (Great Britain)|en-GB|Microsoft, Available on AppSource|
-|English (New Zealand)|en-NZ|Microsoft, Available on AppSource|
-|English (United States)|en-US|Microsoft, Available on AppSource|
-|English (South Africa)|en-ZA|Microsoft, Available on AppSource|
+|Enligsh (New Zealand)|en-NZ|Microsoft, Available on AppSource|
+|English (United States)|en-US|Built-in|
+|English (South Africa)|en-ZA|Supported by platform, no app available|
 |Spanish (Spain)|es-ES|Microsoft, Available on AppSource|
 |Spanish (Mexico)|es-MX|Microsoft, Available on AppSource|
 |Estonian (Estonia)|et-EE|Partner, Available on AppSource|
