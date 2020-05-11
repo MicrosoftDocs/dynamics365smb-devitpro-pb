@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2020
+ms.date: 05/11/2020
 ms.author: jswymer
 ---
 
@@ -128,15 +128,15 @@ Enable the user account by setting the **State** field to **Enabled**. For more 
 
 This message occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
 
-Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Azure Active Directory role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/))
+Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Azure Active Directory role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
 
 *Resolution*
 
 Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They are not assigned in Business Central. To assign entitlements to a user, see one of the following articles:
 
-- From [Microsoft Office 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](https://aka.ms/CreateOffice365Users).
+- From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](/microsoft-365/admin/add-users/add-users).
 
-- From the Microsoft Partner Center, see [User management tasks for customer accounts](https://docs.microsoft.com/partner-center/assign-licenses-to-users).
+- From the Microsoft Partner Center, see [User management tasks for customer accounts](/partner-center/assign-licenses-to-users).
 
 ## Operation: Authorization Succeeded (Open Company)
 
