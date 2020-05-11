@@ -3,19 +3,20 @@ title: "Extending pages previously based on the Date virtual table"
 description: "How to extend pages that previously had the Date virtual table as their source table."
 author: blrobl
 ms.custom: na
+ms.reviewer: solsen
 ms.date: 05/07/2020
 ms.suite: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 
-# Extending pages previously based on the Date virtual table
+# Extending Pages Previously Based on the Date Virtual Table
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
- Pages that previously had the **Date** virtual table as their source table have been redesigned so that they are based on buffer tables instead. This way, base application pages such as **Item Availability Lines** and **Res. Availability Lines** can now be extended.
+Pages that previously had the **Date** virtual table as their source table have been redesigned so that they are based on buffer tables instead. This way, base application pages such as **Item Availability Lines** and **Res. Availability Lines** can now be extended.
 
-To perform extensions on such pages, one must first extend the underlying buffer table. Then you create a method that calculates and updates the values of the extended fields and subscribe it to the **OnAfterCalcLine** event of the page.
+To perform extensions on such pages, you must first extend the underlying buffer table. Then you create a method that calculates and updates the values of the extended fields and subscribe it to the **OnAfterCalcLine** event of the page.
 
 ## Example
 
