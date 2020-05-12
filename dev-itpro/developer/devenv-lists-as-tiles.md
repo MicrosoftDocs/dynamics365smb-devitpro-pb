@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-caps.latest.revision: 29
 author: jswymer
 ---
 # Displaying Data as Tiles

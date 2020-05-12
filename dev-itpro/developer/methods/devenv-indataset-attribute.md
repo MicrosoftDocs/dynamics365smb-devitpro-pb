@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # InDataSet Attribute
 Sets whether the AL variable's value is included in the dataset.  
 
-## Applies To  
+## Applies to  
 AL variables of [Boolean Data Type](../datatypes/devenv-boolean-data-type.md) or [Integer Data Type](../datatypes/devenv-integer-data-type.md) on pages.  
 
 ## Value  

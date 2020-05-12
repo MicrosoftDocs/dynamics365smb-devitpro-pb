@@ -19,7 +19,7 @@ Specifies the method to be an integration type event subscriber.
 [EventSubscriber(ObjectType: ObjectType, ObjectId: Integer, EventName: Text, ElementName: Text, SkipOnMissingLicense: Boolean, SkipOnMissingPermission: Boolean)
 ```    
   
-#### Arguments  
+### Arguments  
 *ObjectType*  
 Type: Enumeration  
   

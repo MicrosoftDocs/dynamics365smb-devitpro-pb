@@ -2,7 +2,7 @@
 title: "You must specify a OptionCaption property for all fields which source expressions is not a table field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 05/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

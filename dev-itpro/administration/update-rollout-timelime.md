@@ -29,7 +29,7 @@ The following table describes the milestones with example dates.
 |---------|------------|-----------|
 |Update is available|April 1, 2020|The date when the new major version of Business Central becomes generally available|
 |Update starts rolling out|April 8, 2020|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within allowed date range, to a date, which fits you better.|
-|Last scheduled update date|May 30, 2020|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 20202 release wave 1.|
+|Last scheduled update date|May 30, 2020|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 2020 release wave 1.|
 
 > [!IMPORTANT]
 > As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule. Specifically for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], existing customers have 60 days to upgrade after the new version is generally available. For a general overview, see [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule). For more information about the steps that you must take, see [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md).
@@ -46,9 +46,12 @@ When the update becomes available for an environment, all [notification recipien
 
 ### Behind the scenes
 
-Starting from the official release date, Microsoft begins scheduling updates. Scheduling doesn't occur for all environments around the world simultaneously. During scheduling, Microsoft sets a default update date for each environment. You can see this date in the environment details page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
+Starting from the official release date, Microsoft begins scheduling updates. Scheduling doesn't occur for all environments around the world simultaneously. During scheduling, Microsoft sets a default update date for each environment, typically 14 days in the future from the date when you received the notification. You can see this date in the environment details page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-If you don't change the default date, Microsoft updates the environment any day between the scheduled update date and the date that is shown as the last possible update date. You can change this date at any point of time, including changing it to the current date. In some cases, Microsoft can suspend or postpone all updates beyond this last possible date. For more information about what happens in such cases, see [Postponed updates](#postponed-updates). 
+> [!IMPORTANT]
+> If you don't change the default date, **Microsoft updates the environment automatically** any day between the scheduled update date and the date that is shown as the last possible update date in your e-mail notification. If you don't want your environment to be updated automatically, change the update date to the one that fits you better. 
+
+You can change the default date set by Microsoft at any point of time, including changing it to the current date. In some cases, Microsoft can suspend or postpone all updates beyond this last possible date. For more information about what happens in such cases, see [Postponed updates](#postponed-updates). 
 
 When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all sign-in attempts during the update will be blocked with the message `Service is under maintenance`. We strongly encourage that you set an update window for all production environments so that updates don't start during business hours. For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
 

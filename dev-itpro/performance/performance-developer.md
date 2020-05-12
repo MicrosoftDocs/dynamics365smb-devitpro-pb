@@ -64,9 +64,9 @@ Things that have historically caused performance on pages that are exposed as en
 - Many SIFT fields 
 - FactBoxes 
  
-Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages.
+Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-Read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
+The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 ### Web service client performance 
 
@@ -217,7 +217,7 @@ These articles on indexing are worth knowing as an AL developer:
 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [Key Property](../developer/properties/devenv-key-property.md) 
-- [About SQL Server indexes](https://docs.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
+- [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
 Indexes have a cost to update, so it's recommended to not use them too frequently. 
 
@@ -288,6 +288,7 @@ The following articles can be of help in troubleshooting performance issues:
 
 - [Find missing SIFT indexes for FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 - [Use Page Inspection to find extensions participating on a page](../developer/devenv-inspecting-pages.md)
+- [Viewing Table Sizes](/dynamics365/business-central/admin-view-table-information)
 
 ## Tuning the Development Environment 
 

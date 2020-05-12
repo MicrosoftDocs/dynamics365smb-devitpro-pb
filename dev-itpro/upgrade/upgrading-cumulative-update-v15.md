@@ -216,6 +216,7 @@ Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This
 ```
 Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
 ```
+
 ## Recompile published extensions
 
 Compile all published extensions against the new platform.

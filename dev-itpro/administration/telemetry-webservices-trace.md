@@ -38,8 +38,8 @@ The following table explains the general dimensions included in a **Web Services
 
 |Dimension|Description or value||
 |---------|-----|-----------|
-|operation_Name|**Web Services Call**||
-|message|**Received a web service request of type API**<br />**Received a web service request of type ODataV4**<br />**Received a web service request of type ODataV3**<br />**Received a web service request of type SOAP**||
+|operation_Name|**Web Services Call**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.||
+|message|Version 16.1 and later (depending on the type):<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>Before version 16.1:<ul><li>**Received a web service request of type API**</li><li>**Received a web service request of type ODataV4**</li><li>**Received a web service request of type ODataV3**</li><li>**Received a web service request of type SOAP**||
 |severityLevel|**1**||
 
 ## Custom dimensions
@@ -64,6 +64,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |endpoint|Specifies the endpoint for the request.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|eventId|**RT0008**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the request executed. |
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
@@ -72,11 +73,12 @@ The following table explains the custom dimensions included in a **Web Services 
 
 ### Example trace
 
-The following code snippet is a CustomDimensions example: 
+The following code snippet is a CustomDimensions example:
 
 `
 {"telemetrySchemaVersion":"0.3","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines"}
 `
+ 
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

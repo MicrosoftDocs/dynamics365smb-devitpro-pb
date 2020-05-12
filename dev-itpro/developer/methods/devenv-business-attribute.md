@@ -22,7 +22,7 @@ Typing the shortcut `teventbus` will create the basic BusinessEvent attribute sy
 [BusinessEvent(IncludeSender : Boolean)] 
 ```    
   
-#### Arguments   
+### Arguments   
 *IncludeSender*  
 Type: Boolean  
   
