@@ -2,7 +2,7 @@
 title: "AppSourceCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2020
+ms.date: 05/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |--|-----|-----------|-------------|--------|----------------|------------------|
 |[AS0001](appsourcecop-as0001-tabledeletionnotallowed.md)|Tables and table extensions that have been published must not be deleted.|Tables and table extensions that have been published must not be deleted. This might break the upgrade of existing installations and dependent extensions.|The {0} with name '{1}' and ID '{2}' was found in the previous version, but is missing in the current extension. This might break the upgrade of existing installations.|Upgrade|Error|true|
 |[AS0002](appsourcecop-as0002-fielddeletionnotallowed.md)|Fields must not be deleted.|Fields must not be deleted. This might break the upgrade of existing installations and dependent extensions.|The field with name '{0}' and ID '{1}' was found in the previous version, but is missing in the current extension. This might break the upgrade of existing installations.|Upgrade|Error|true|
-|[AS0003](appsourcecop-as0003-previousversionnotfound.md)|The previous version of the extension could not be found.|The previous version of the extension, used as a baseline for detecting breaking changes, could not be found in the package cache folder.|The version '{0}' of the extension with publisher '{1}' and name '{2}' could not be found in the package cache folder.|Upgrade|Warning|true|
+|[AS0003](appsourcecop-as0003-previousversionnotfound.md)|The previous version of the extension could not be found.|The previous version of the extension, used as a baseline for detecting breaking changes, could not be found in the package cache folder.|The version '{0}' of the extension with publisher '{1}' and name '{2}' could not be found in the package cache folder. If you do not want to validate breaking changes, remove the property 'version' from the AppSourceCop.json.|Upgrade|Error|true|
 |[AS0004](appsourcecop-as0004-fieldtypechangenotallowed.md)|Fields must not change type, since dependent extensions may break|Fields must not change type.|Field '{0}' has changed type from '{1}' to '{2}'. Type changes are not allowed.|Upgrade|Error|true|
 |[AS0005](appsourcecop-as0005-fieldnamechangenotallowed.md)|Fields must not change name|Fields must not change name. This might break the upgrade of existing installations and dependent extensions.|The field with ID '{0}' was renamed from '{1}' to '{2}'. Name changes are not allowed because this might break upgrade of existing installations.|Upgrade|Error|true|
 |[AS0006](appsourcecop-as0006-tablenamechangenotallowed.md)|Tables that have been published must not change name.|Tables that have been published must not change name. This might break the upgrade of existing installations and dependent extensions.|The table with ID '{0}' was renamed from '{1}' to '{2}'. Name changes are not allowed because this might break upgrade of existing installations.|Upgrade|Error|true|
