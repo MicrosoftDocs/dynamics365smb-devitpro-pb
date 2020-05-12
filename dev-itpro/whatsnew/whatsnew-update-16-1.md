@@ -16,11 +16,10 @@ Would you like to know what has changed in update 16.1?
 Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.  
 
 ## Hotfixes
-[Link to Hotfixes](https://support.microsoft.com/en-us/help/4549686)
+[Link to Hotfixes](https://support.microsoft.com/help/4549686)
 
 ## Feature changes
-- [Company lifecycle telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/company-lifecycle-telemetry-application-insights-partners)   
-- [Update error telemetry in Application Insights for partners](Link to Release Plan missing)
+- [Company lifecycle telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/telemetry-company-lifecycle-trace)   
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). 
@@ -39,19 +38,14 @@ When you navigate from the Business Central Sandbox tile in the Dynamics 365 Hom
 [Read more about sandbox environments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/environment-types)
 
 - **Message to Global Admins about the capabilities**   
-On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned.
+On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned. 
 
-- **Update history**   
-In between the Microsoft Dynamics 365 Business Central minor updates we deploy new builds as they become available. Visit our new [Update History](https://support.microsoft.com/help/4553289/update-history-for-microsoft-dynamics-365-business-central) to check if you have the latest hotfixes. 
-
-- **Get ready to improve your business – virtual event coming up**   
-On June 3rd we launch a virtual event for partners where we share the latest innovations for Business Central. Learn more at 15+ deep dive sessions about what’s new in release 2020 wave 1 – available when you have time. 
-You don’t want to miss this virtual event! Registration opens soon at https://aka.ms/virtual/businesscentral/2020RW1   
+- **Coming up: Virtual partner readiness event**   
+We’re excited to share the latest innovations for Business Central. Join us at the upcoming Business Central virtual event June 3rd with more than 15 deep dive sessions on what’s new in release 2020 wave 1 (April release), also available on-demand. Check back here for the registration link being published soon!   
 Pssst…did we mention it’s for free…
 
-
 - **Major updates**  
-Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime). 
+Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need to take, and answers some common questions.   
+[See Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime) 
 
-- **The Performance Tuning Guide**   
-Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about Business Central performance. 
+
