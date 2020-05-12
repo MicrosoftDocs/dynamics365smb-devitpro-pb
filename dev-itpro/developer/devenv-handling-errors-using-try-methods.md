@@ -43,7 +43,7 @@ You can use the [GetLastErrorText method](../methods-auto/system/system-getlaste
 
 ## Creating a try method
 
-To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [Trymethod Property](../properties/devenv-trymethod-property.md) property to **true**. 
+To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) property to **true**. 
 
 <!-- A try method has the following restrictions:  
 
@@ -69,7 +69,7 @@ end;
 
 When you run this codeunit, the execution of the `OnRun` trigger, the calling method, stops and the error message `An error occurred during the operation` is thrown in the UI.
 
-Now, set the [Trymethod Property](../properties/devenv-trymethod-property.md) of the  `MyTrymethod` method to **true**. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
+Now, set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) of the  `MyTrymethod` method to **true**. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
 
 ```
 [TryFunction]
