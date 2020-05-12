@@ -1,7 +1,7 @@
 ---
 title: "Adding custom filter tokens"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/28/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,6 +69,15 @@ To try it out in the client, open the `Charts of Accounts` page, filter on No. f
 ## Filter token example
 This example extends the application with a new token word "%mysalesperson" representing my salesperson code as defined in the user table.
 -->
+
+## Design considerations
+Resolving tokens is intended to be fast, simple, and reliable. When implementing event subscribers to resolve filter tokens, keep in mind that these events can be triggered from any user task in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and in some cases may be triggered repeatedly such as when searching across columns. To improve usability and reduce the impact on performance, do consider the following practices:
+
+ - Avoid implementing tokens that are only relevant to few business tasks, or assume they are used in the context of a specific page.
+ - Avoid implementing tokens that are time-consuming to resolve. Examples of this include looking up records in large or poorly indexed tables, or fetching data from a remote service.  
+ - Avoid implementing tokens that are complex or unreliable and may result in error.  
+ - Avoid displaying pages, dialogs or any other form of interactive UI.  
+ 
 
 ## See Also 
 [Sorting, Searching and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters)
