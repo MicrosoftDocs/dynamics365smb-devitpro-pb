@@ -1,6 +1,6 @@
 ---
 title: "Email and Phone No must not be present in any part of the source code."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/12/2020
 ms.reviewer: na

@@ -1,6 +1,6 @@
 ---
 title: "CodeCop Analyzer"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/12/2020
 ms.reviewer: na
