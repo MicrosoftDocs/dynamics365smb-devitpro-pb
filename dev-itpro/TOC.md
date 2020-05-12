@@ -30,6 +30,23 @@
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
 #### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+<!--AppSourcevalidation-->
+## AppSource Validation
+### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
+### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+<!-- deployment-->
+# Deployment
+## [Overview](deployment/deployment.md)
+## What's New or Changed
+### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
+### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+<!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
+## Online
 ## Sell Business Central
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
