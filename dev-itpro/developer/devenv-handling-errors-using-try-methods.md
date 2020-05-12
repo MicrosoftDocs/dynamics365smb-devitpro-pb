@@ -69,7 +69,7 @@ end;
 
 When you run this codeunit, the execution of the `OnRun` trigger, the calling method, stops and the error message `An error occurred during the operation` is thrown in the UI.
 
-Now, set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) of the  `MyTrymethod` method to **true**. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
+Now, set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) of the  `MyTrymethod` method. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
 
 ```
 [TryFunction]
@@ -87,31 +87,26 @@ begin
 end;
 ```
 
+When you run the codeunit, instead of stopping the execution of the `OnRun` trigger when the error occurs, the error is caught and the message `Something went wrong` is returned.
 
-
-**LOCAL [Trymethod] MyTrymethod()**
-```
-ERROR('An error occurred during the operation.');
-```
-
-When you run the codeunit, instead of stopping the execution of the `OnRun`trigger when the error occurs, the error is caught and the message `Something went wrong.` is returned.
-
+<!--
 ## Example 2 
+
 The following example illustrates how to use a try method with .NET interoperabilty. The example uses the [System.Decimal.Divide method](https://msdn.microsoft.com/library/system.decimal.divide(v=vs.110).aspx) to divide two decimals. 
 
 First, create a codeunit that has a local method `MyTrymethod`, and add the following text constants and variables:
 
 |Text constant name|ConstValue|
 |----|----------|
-|Text000|	%1 divided by %2 equals %3.|
-|Text001|	You cannot divide by %1.|
+|Text000|%1 divided by %2 equals %3.|
+|Text001|You cannot divide by %1.|
 
 
 |Variable name|DataType|Subtype|
 |----|----------|----|----------|
 |divide|DotNet|System.Decimal.'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'|
-|d1|	Decimal||
-|d2|	Decimal| |
+|d1|Decimal||
+|d2|Decimal| |
 |result|Decimal||
 
 Then, add the following code on the `OnRun` trigger and `MyTrymethod` method.
@@ -132,9 +127,7 @@ result := divide.Divide(d1,d2);
 ```
 
 When you run this codeunit, an error occurs because you are not allowed to divide by `0`. The message `You cannot divide by 0.` is displayed in the client. 
-
-
-
+-->
 <!-- 
 The following example illustrates the use of a try method together with codeunit 1291 **DotNet Exception Handler** to handle .NET Framework Interoperability exceptions. The code is in text file format and has been simplified for illustration. The `CallTryPostingDotNet` method runs the try method `TryPostSomething` in a conditional statement to catch .NET Framework Interoperability exceptions. Errors other than `IndexOutOfRangeException` type are re-thrown.  
 
@@ -164,6 +157,6 @@ END;
 ```  
 -->
 
-
 ## See Also  
- [C/AL method Statements](C-AL-method-Statements.md)
+
+[AL Simple Statements](devenv-al-simple-statements.md)
