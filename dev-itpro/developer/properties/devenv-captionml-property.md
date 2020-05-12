@@ -1,7 +1,7 @@
 ---
 title: "CaptionML Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,13 +37,13 @@ The CaptionML property has the following format.
 
  `<Language ID>='<caption>'`
 
- `<Language ID>` is the standard Windows three-letter language ID, and `<caption>` is the caption text for this language. Use semicolons to separate entries.  
+ `<Language ID>` is the standard Windows three-letter language ID, and `<caption>` is the caption text for this language. Use commas to separate entries.  
 
  The following example shows a CaptionML value.  
 
- `CaptionML = DAN='Navn',DEU='Name',ESP='Nombre',FRA='Nom';`
+ `CaptionML = DEU='Name',DAN='Navn',ESP='Nombre',FRA='Nom';`
 
- In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP), and French Standard (FRA).  
+In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP), and French Standard (FRA).  
 
 > [!NOTE]  
 >  On Role Center type pages, the CaptionML property value is used as the display name for the associated Profile in the client.
@@ -61,19 +61,23 @@ You can enter values for the CaptionML property in two ways:
  When you export objects as XML, the CaptionML property values are included.  
 -->
 
-## Default Values  
-The following table shows how the default caption is determined for the various objects in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].  
+## Default Values
 
-|Object, control, or other element|Default caption|  
-|---------------------------------|---------------|  
-|Table object|Name property|  
-|Table Field|Name property|  
-|Report|Name property|  
-|XMLport|Name property|  
-|Codeunit|Name property|  
-|Menu button and menu item|Name property|  
-|Page objects and page controls (container, group, part, and field)|Name property| |Query objects|Name property|  
-|Query columns|CaptionML property of the underlying table field for the column|  
+When the CaptionML property does not include an entry for the language used in the client at runtime, then a default value for the caption string will be used according to the following: 
+
+1. If there is an `ENU` entry, then it's caption string is used. 
+2. If there are no language entries in CaptionML property, then the caption string is determined according to the following table:
+
+    |Object, control, or other element|Default caption|  
+    |---------------------------------|---------------|  
+    |Table object|Name property|  
+    |Table Field|Name property|  
+    |Report|Name property|  
+    |XMLport|Name property|  
+    |Codeunit|Name property|  
+    |Menu button and menu item|Name property|  
+    |Page objects and page controls (container, group, part, and field)|Name property| |Query objects|Name property|  
+    |Query columns|CaptionML property of the underlying table field for the column|  
 
 ## See Also  
  [Caption Property](devenv-caption-property.md)   

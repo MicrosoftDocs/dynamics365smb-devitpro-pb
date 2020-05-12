@@ -3,7 +3,7 @@ title: "AL Language Extension Configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 05/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,11 +30,11 @@ The following table describes the user and workspace settings for the AL Languag
 |Editor Services Path|Specifies the path to the Editor Services host executable.|
 |Enable Code Actions|Specifies whether code actions should be enabled for all source files in the current project. Default is `false`.|
 |Enable Code Analysis|Specifies whether code analysis should be performed for all source files in the current project. Default is `false`. If this is set to `true`, you must specify the **Code Analyzers** setting with the list of code analyzers to use.|
-|Incognito|Specifies whether to open the browser in Incognito/InPrivate mode when lauching the application from Visual Studio Code. This option will take effect only if the **Browser** option is set to a non-default value.|
+|Incognito|Specifies whether to open the browser in Incognito/InPrivate mode when launching the application from Visual Studio Code. This option will take effect only if the **Browser** option is set to a non-default value.|
 |Package Cache Path|Sets the directory path where reference symbol packages are located.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
-|Incremental Build| Specifies whether a project, when it is built using Ctrl+Shift+B, Ctrl+F5, or F5, will reuse the last known tracked compilation which will enhance the compilation time significantly. For more information about project to project references, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md). <br> **Note:** Setting this to `true` will not do an end-to-end build, as it is depending on an already-compiled state. To get a clean, full build, this flag must be set to `false`. Default is `false`.|
-
+|Incremental Build| Specifies whether a project, when it is built using **Ctrl+Shift+B**, **Ctrl+F5**, or **F5**, will reuse the last known tracked compilation which will enhance the compilation time significantly. For more information about project to project references, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md). <br> **Note:** Setting this to `true` will not do an end-to-end build, as it is depending on an already-compiled state. To get a clean, full build, this flag must be set to `false`. Default is `false`.|
+<!--|DefaultLaunchConfigurationName|Specifies the setting for resolving a server name. If this is set then all scenarios that need to resolve a server name will use this configuration setting.<br><br> For example, using the **Go to definition** option, if this server name is not specified, a list will be displayed to select a configuration from, which will be used going forward to resolve the server name and possibly provide symbolic information in the DAL file. To change that, specify the `DefaultLaunchConfigurationName`setting.<br> Another example is **Download symbols**; if there are multiple debug configurations, the specified `DefaultLaunchConfigurationName` will be used to resolve the server name and download symbols. If the server name is not specified, a list will be displayed to select a configuration from.|-->
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  

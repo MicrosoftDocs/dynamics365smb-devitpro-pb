@@ -3,7 +3,7 @@ title: "Page Extension Object"
 description: "Description of the page extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/24/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,6 +27,9 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 
 > [!IMPORTANT]  
 > The API page type should not be extended by creating a page extension object. Instead, create a new API by adding a [page object](devenv-page-object.md).
+
+> [!NOTE]  
+> Modifying actions in Cue groups on page extensions is not supported.
 
 ## Snippet support
 Typing the shortcut `tpageext` will create the basic layout for a page extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -135,7 +138,7 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
 }
 ```
 
-You can reference Report and XMLPort objects and use these objects in the **RunObject** property, as well as, declare variables of the types **Report** and **XMLPort** and call AL methods on them. This page extension object extends the Customer List page object by adding two actions; the first action calls the **Customer - List** report, the second action calls the **Export Contact** xmlport.
+You can reference Report and XMLPort objects and use these objects in the **RunObject** property, as well as, declare variables of the types **Report** and **XMLPort** and call AL methods on them. This page extension object extends the Customer List page object by adding two actions; the first action calls the **Customer - List** report, the second action calls the **Export Contact** XMLPort.
 
 ```
 pageextension 50114 AddCustomerReport extends "Customer List"
@@ -172,5 +175,6 @@ pageextension 50114 AddCustomerReport extends "Customer List"
 [Page Object](devenv-page-object.md)  
 [Views](devenv-views.md)  
 [Page and Page Extension Properties](properties/devenv-page-property-overview.md)    
+[Extending Pages Previously Based on the Date Virtual Table](devenv-extend-pages-based-on-date-virtual-table.md)
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

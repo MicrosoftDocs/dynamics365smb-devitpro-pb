@@ -2,7 +2,7 @@
 title: "Creating a Printer Extension"
 description: Describes how to create an extension that sets up cloud printers. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ This article uses a simplified printer extension example for sending reports to 
 
 This section describes how to use the OnAfterSetupPrinters event to set up a printer. When completed, users can select the printer from on the **Printer Selections** page.
 
-### Get started 
+### Getting started 
 
 1. Create an AL project for the printer extension.
 
@@ -107,7 +107,7 @@ The event subscriber method has one parameter, which is a dictionary of printers
 ```
 {
     "version": 1,
-    "description":[default is an empty string],
+    "description":[default=""],
     "duplex":[default=false],
     "color":[default=false],
     "defaultcopies":[default=1],
@@ -150,7 +150,7 @@ codeunit 50101 SetupPrinter2
 
 ### Select the paper tray
 
-A printer can have several paper trays. If a report doesn't specify which paper tray to use or the specified paper tray isn't present in the printer’s setup, a default paper tray is used. The default paper tray is the first one defined in the `papertrays` list.
+A printer can have several paper trays. If a report doesn't specify which paper tray to use or the specified paper tray isn't present in the printer's setup, a default paper tray is used. The default paper tray is the first one defined in the `papertrays` list.
 
 You can change the paper tray for an existing report by subscribing to the `OnAfterGetPaperTrayForReport` event and setting a value for a `DefaultPage` parameter.
 

@@ -2,7 +2,7 @@
 title: "Printing Reports"
 description: Dynamics 365 Business Central supports printing reports to cloud-based printers. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Developing Printer Extentions in Business Central
+# Developing Printer Extensions in Business Central
 
 This article provides an overview about how to add code that enables [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reports to be sent from the client directly to a web-connected printer, like an email printer or through a cloud printing service.
 

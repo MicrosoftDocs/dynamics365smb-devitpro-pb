@@ -2,7 +2,7 @@
 title: "Page controls must use the ApplicationArea property"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/25/2020
+ms.date: 05/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

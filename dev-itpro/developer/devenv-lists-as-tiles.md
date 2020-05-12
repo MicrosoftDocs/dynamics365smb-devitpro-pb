@@ -1,13 +1,12 @@
 ---
 title: "Display Data as Tiles"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-caps.latest.revision: 29
 author: jswymer
 ---
 # Displaying Data as Tiles

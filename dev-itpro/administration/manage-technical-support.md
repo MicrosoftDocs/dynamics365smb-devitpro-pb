@@ -8,7 +8,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/05/2020
+ms.date: 04/30/2020
 ms.author: edupont
 
 ---
@@ -19,44 +19,94 @@ If users report that they are having a problem with [!INCLUDE [prodshort](../dev
 
 The reselling partner can log in to their customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated admin for troubleshooting, such as by creating a sandbox environment based on production data, and then troubleshooting in that environment.  
 
-Both internal administrators and the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
+Both internal administrators and the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and updates.  
 
 ## Internal administrators
 
-As the internal administrator, you can work with users to identify solutions or workarounds, such as missing setup, missing permissions, and other issues in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. They can find technical information in the **Help and Support** page to help with this investigation. For more information, see the [Finding technical information](#finding-technical-information) section.  
+As the internal administrator, you can work with users to identify solutions or workarounds, such as missing setup, missing permissions, and other issues in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. If users are not sure if their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is working as intended, they can check the [Help and Learn content](../user-assistance.md) for the intended behavior. For more technical problems, administrators can find technical information in the **Help and Support** page to help with this investigation. For more information, see the [Finding technical information](#finding-technical-information) section.  
 
-Internal administrators can also create sandbox environments for deeper troubleshooting, for example, before they decide to contact their partner for technical support. The partner must have specified their support contact details in the **Help and Support** page.  
+Internal administrators can also [create sandbox environments](environment-types.md#sandbox-environments) for deeper troubleshooting, for example, before they decide to contact their partner for technical support. The partner must have specified their support contact details in the **Help and Support** page.  
 
 ## Delegated administrators
 
 Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. As the partner, you must have specified support contact details in the **Help and Support** page. For more information, see [Configuring the support experience](../technical-support.md#configuring-the-support-experience).  
 
-The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to analyse telemetry, create a sandbox environment for debugging, or an extra production environment for step-by-step reproduction, for example.  
+The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to [analyse telemetry](telemetry-overview.md), [create a sandbox environment](environment-types.md#sandbox-environments) for debugging, or an extra production environment for step-by-step reproduction, for example.  
+
+If a prospect wants to extend their free trial a second time, the delegated administrator can sign in to the prospect's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and run the same **Extend Trial Period** guide. For more information, see [Extending trials](tenant-administration.md#extending-trials).  
 
 If the partner cannot find a solution, they can request support from Microsoft. For more information, see the [Escalating support issues to Microsoft](#escalating-support-issues-to-microsoft) section.  
 
+### Cleaning up settings
+
+If you end the relationship with a customer, you must remove certain settings while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. These settings include the following:
+
+- Support contact details
+
+  For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center).  
+
+- Notification recipients
+
+  For more information, see [Tenant Notifications](tenant-admin-center-notifications.md).  
+
+- Application Insights key (if this was set up by the partner)
+
+  For more information, see [Environment Telemetry in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]](tenant-admin-center-telemetry.md).  
+
 ## Finding technical information
 
-The **Help and Support** page is a powerful tool for administrators to find technical information about [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting.  
+For [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, administrators have access to a range of tools for troubleshooting. Depending on the type of problem, administrators
+can troubleshoot in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to analyze telemetry, for example.
+
+In this section, we provide an overview of the most useful tools for troubleshooting the problems that users are reporting. In many cases, administrators will want to create a sandbox environment based on the production environment where users are reporting problems. That way, the administrators can troubleshoot without disturbing normal work.  
+
+- The Help and Support page  
+
+    Each company in any [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment has a **Help and Support** page that can be accessed from the the question mark in the top right corner. Here you can access the latest error message, which, for example, is useful if your users complain of a confusing error message such as *Sorry, we just updated this page. Please close and reopen.*. For more information, see [The Help and Support page](#helpsupport) section.  
+- Page inspection  
+
+    [!INCLUDE [prodshort](../developer/includes/prodshort.md)] includes a page inspection feature that lets you get details about a page, providing insight into the page design, the different elements that comprise the page, and the source behind the data it displays. For more information, see [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).  
+- Environment telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]  
+
+    In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can view telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack. For more information, see [Environment telemetry](tenant-admin-center-telemetry.md).  
+- Create sandbox environments  
+
+    In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create sandbox environments for safe debugging and troubleshooting. For more information, see [Sandbox environments](environment-types.md#sandbox-environments).  
+- Use the Event Recorder  
+
+    Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For more information, see [Discoverability of Events](../developer/devenv-events-discoverability.md).  
+- Check the data in the database  
+
+    You can view table objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions. For more information, see [Viewing Table Data](../developer/devenv-view-table-data.md).  
+- Analyze long running operations in Application Insights  
+
+    Set up Application Insights so that any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. For more information, see [Analyzing long running operations in Application Insights](telemetry-long-running-sql-query-trace.md).  
+- Debug your app or pre-tenant extension  
+
+    With Visual Studio Code and the AL Language extension you get an integrated debugger to help you inspect your code to verify that your application can run as expected. For more information, see [Debugging in AL](../developer/devenv-debugging.md).
+
+### <a name="helpsupport"></a>The **Help and Support** page in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] company
+
+The **Help and Support** page is a powerful tool for administrators to find technical information about [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the [most recent error message](#last-known-error), and it has a link to [inspect pages](../developer/devenv-inspecting-pages.md) for further troubleshooting.  
 
 > [!div class="mx-imgBorder"]
 > ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
 
-Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows which version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the specific environment is on.  
+Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows [which version](#version) of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the specific environment is on.  
 
 For [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, internal and delegated administrators also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to the different environments in a tenant, and you can create sandbox environments that can help troubleshoot any issues reported by users. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
-### Azure Active Directory tenant
+#### Azure Active Directory tenant
 
 When the internal administrator wants to contact the partner for support, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown in the **Troubleshooting** section at the bottom of the **Help and Support** page.  
 
 The delegated administrator can use that to identify the tenant in the Partner Center and in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] for troubleshooting.  
 
-### Version
+#### Version
 
 You can use the information about which version the tenant is on to help you troubleshoot the issue that the customer has reported, for example. This information is also listed in the **Troubleshooting** section of the **Help and Support** page. For more information, see [Version numbers in Business Central](version-numbers.md).  
 
-### Last known error
+#### Last known error
 
 The link behind the sentence *View the last known error* will find and show the most recent error message that was was generated by the application code. This includes errors from field validation, posting routines, and other code behind business functionality.  
 
@@ -76,6 +126,9 @@ The information that you can get from this link includes the following:
     This shows information about the runtime objects.
 
 The link cannot open errors that were generated by the platform. So if you suspect that the issue is caused by the platform, you can try to reproduce the error in a sandbox environment before you contact Microsoft for support. For more information, see [Create a sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
+
+> [!TIP]
+> If your users complain of a confusing error message such as *Sorry, we just updated this page. Please close and reopen.*, then you can often find the underlying problem either in this last known error, or by analyzing telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For example, in the case of the *Sorry, we just updated this page. Please close and reopen.* message, the underlying problem is often that two users are trying to modify the same data. So if both users open the same sales order, and both change a field, then one of them will see the *Sorry, we just updated this page. Please close and reopen.* message, because [!INCLUDE [prodshort](../developer/includes/prodshort.md)] saves changes as soon as you move to the next field or close the page.
 
 ## Escalating support issues to Microsoft
 

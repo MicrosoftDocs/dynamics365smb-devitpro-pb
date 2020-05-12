@@ -1,7 +1,7 @@
 ---
 title: "EventSubscriber Attribute"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Specifies the method to be an integration type event subscriber.
 [EventSubscriber(ObjectType: ObjectType, ObjectId: Integer, EventName: Text, ElementName: Text, SkipOnMissingLicense: Boolean, SkipOnMissingPermission: Boolean)
 ```    
   
-#### Arguments  
+### Arguments  
 *ObjectType*  
 Type: Enumeration  
   

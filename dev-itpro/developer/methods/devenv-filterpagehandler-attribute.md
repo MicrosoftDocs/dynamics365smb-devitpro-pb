@@ -1,7 +1,7 @@
 ---
 title: "FilterPageHandler Attribute"
 ms.custom: na
-ms.date: 08/26/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: jswymer
 
 Specifies that the method is a FilterPageHandler method.
 
-## Applies To  
+## Applies to  
  AL test methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
 
 ## Syntax  

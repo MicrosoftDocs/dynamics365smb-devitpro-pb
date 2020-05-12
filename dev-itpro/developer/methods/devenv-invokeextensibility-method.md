@@ -2,7 +2,7 @@
 title: "InvokeExtensibilityMethod Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/18/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # InvokeExtensibilityMethod Method
 Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in.  
   
-## Method Signature  
+## Method signature  
 `void Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(name, arguments, skipIfBusy, callback)`  
   
 ## Parameters  
@@ -32,8 +32,9 @@ Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_se
  **Callback Function Syntax**  
   
 The syntax of the callback function is the following:  
-  
-`function callback()`  
+```  
+function callback()
+```
   
 ## skipIfBusy Options  
 The following table illustrates the different settings of `skipIfBusy` combined with the client’s status.  

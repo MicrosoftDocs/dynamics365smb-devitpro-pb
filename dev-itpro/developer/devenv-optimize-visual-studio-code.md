@@ -3,7 +3,7 @@ title: "Optimize Visual Studio Code Editing and Building Performance"
 description: "Explains how yo configure Visual Studio Code to get better performance when editing and building AL projects"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ ms.author: jswymer
 
 Visual Studio Code is built to handle many smaller, dependent projects, and not one large project, however, as the base application is not yet split into modules or components that allows managing the code in smaller projects, we recommend the following performance optimizations.
 
-Open your `settings.json` file in the project (or global settings if you prefer that). Set:
+Open your `settings.json` file in the project (or global settings if you prefer that) pressing **Ctrl+P**. Set:
 
 - `"al.enableCodeAnalysis": false` to remove code analysis, read more here [Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md).
 

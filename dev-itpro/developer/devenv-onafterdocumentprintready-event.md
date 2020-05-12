@@ -2,7 +2,7 @@
 title: "OnAfterDocumentPrintReady Event"
 description: Describe the OnAfterDocumentPrintReady Event in Business Central.  
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ The ID of the report object to be run.
 
 Type: [JsonObject](methods-auto/jsonobject/jsonobject-data-type.md)
 
-Instance of the report payload. For more information, see [Report payload structure](#Report payload structure).
+Instance of the report payload. For more information, see [Report payload structure](#reportpayload).
 
 *DocumentStream*
 
@@ -71,32 +71,32 @@ The report payload is a combination of data from the printer payload and the rep
 
 ```
 {
-  "filterviews":
-  [
-    {"name":"Header","tableid":112,"view":"VERSION(1) SORTING(Field3) WHERE(Field3=1(103027))"},
-    {"name":"Line","tableid":113,"view":"VERSION(1) SORTING(Field3,Field4) WHERE(Field4=1(0..10000))"},
-    {"name":"ShipmentLine","tableid":7190,"view":"VERSION(1) SORTING(Field1,Field2,Field3) WHERE(Field2=1(10000))"}
-  ],
-  "version":1,
-  "objectname":"Standard Sales - Invoice",
-  "objectid":1306,
-  "documenttype":"application/pdf",
-  "invokedby":"00000000-0000-0000-0000-000000000001",
-  "invokeddatetime":"2020-01-17T15:33:52.48+01:00",
-  "companyname":"CRONUS International Ltd.",
-  "printername":"My Printer",
-  "duplex":false,
-  "color":false,
-  "defaultcopies":1,
-  "papertray":
-  {
-    "papersourcekind":257,
-    "paperkind":0,
-    "landscape":false,
-    "units":0,
-    "height":1268,
-    "width":929
-  }
+    "filterviews":
+    [
+        {"name":"Header","tableid":112,"view":"VERSION(1) SORTING(Field3) WHERE(Field3=1(103027))"},
+        {"name":"Line","tableid":113,"view":"VERSION(1) SORTING(Field3,Field4) WHERE(Field4=1(0..10000))"},
+        {"name":"ShipmentLine","tableid":7190,"view":"VERSION(1) SORTING(Field1,Field2,Field3) WHERE(Field2=1(10000))"}
+    ],
+    "version":1,
+    "objectname":"Standard Sales - Invoice",
+    "objectid":1306,
+    "documenttype":"application/pdf",
+    "invokedby":"00000000-0000-0000-0000-000000000001",
+    "invokeddatetime":"2020-01-17T15:33:52.48+01:00",
+    "companyname":"CRONUS International Ltd.",
+    "printername":"My Printer",
+    "duplex":false,
+    "color":false,
+    "defaultcopies":1,
+    "papertray":
+    {
+        "papersourcekind":257,
+        "paperkind":0,
+        "landscape":false,
+        "units":0,
+        "height":1268,
+        "width":929
+    }
 }
 
 ```
@@ -199,7 +199,7 @@ Specifies the name of data item that the filter view applies to.
 
 Specifies ID of the table for the view.
 
-*filterview*
+*view*
 
 Specifies the name of the view.
 

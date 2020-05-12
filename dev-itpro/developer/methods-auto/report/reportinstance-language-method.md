@@ -2,7 +2,7 @@
 title: "Language Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,8 +50,6 @@ In reports that need the multiple document languages functionality, you must ins
 `Report.LANGUAGE := Language.GetLanguageID("Language Code")`
 
 For each of these reports, you must create a new variable, `Language`, with the data type `Record` pointing to the `Language` table. When you have compiled the object, it will no longer print in the user's working application language if another language has been specified on the **Customer Card** page.
-
-## Example
 
 ## See Also
 [Report Data Type](report-data-type.md)  

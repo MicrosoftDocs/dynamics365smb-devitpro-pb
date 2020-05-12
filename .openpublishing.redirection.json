@@ -5154,6 +5154,22 @@
     "source_path": "dev-itpro/administration/about-intelligent-edge.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migration-tool",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/webservices/How-to--Enable-Web-Services-for-ADCS.md",
+    "redirect_url": "/dynamics365/business-central/warehouse-use-automated-data-capture-systems-adcs",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/webservices/how-to--set-up-a-local-language-for-the-adcs-web-service.md",
+    "redirect_url": "/dynamics365/business-central/warehouse-use-automated-data-capture-systems-adcs",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/methods-auto/string/string-data-type.md",
+    "redirect_url": "/dynamics365/business-central/developer/methods-auto/text/text-data-type.md",
+    "redirect_document_id": false
    }
+   
   ]
 }

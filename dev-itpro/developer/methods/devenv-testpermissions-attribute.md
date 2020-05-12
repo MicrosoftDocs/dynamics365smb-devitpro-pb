@@ -1,7 +1,7 @@
 ---
 title: "TestPermissions Attribute"
 ms.custom: na
-ms.date: 08/26/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,12 +13,15 @@ author: SusanneWindfeldPedersen
 # TestPermissions Attribute
 AL methods on test codeunits. A test codeunit is a codeunit that has the [SubType Property](../properties/devenv-subtype-property.md) set to **Test**. 
 
+## Applies to
+AL methods on test codeunits.
+
 ## Syntax  
 ```
 [TestPermissions(TestPermissions: Testpermissions)]
 ```
 
-#### Arguments  
+### Arguments  
 *TestPermissions*  
 Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-option.md)  
  

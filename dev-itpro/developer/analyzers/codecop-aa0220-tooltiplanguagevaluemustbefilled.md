@@ -2,7 +2,7 @@
 title: "The value of the Tooltip property of Fields must be filled. See [the style guide](https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066) for more information."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/16/2020
+ms.date: 05/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

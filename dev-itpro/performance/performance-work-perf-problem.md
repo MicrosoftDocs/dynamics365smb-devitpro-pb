@@ -1,7 +1,7 @@
 ---
 title: "How to Work with a Performance Problem"
 ms.custom: na
-ms.date: 01/29/2020
+ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,7 @@ and continue until the "slow" operations are comparable to the established basel
 
 [Performance Overview](performance-overview.md)  
 [Performance Topics For Developers](performance-developer.md)  
+[Performance tips for business users](performance-users.md)  
 [How Application Configurations Affect Performance](performance-application.md)  
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  

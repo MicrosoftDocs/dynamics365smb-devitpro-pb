@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/22/2019
+ms.date: 04/30/2020
 ms.author: edupont
 ---
 
@@ -29,7 +29,7 @@ However, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] does not sup
 
 ## Converting existing content
 
-If your existing content is in a different format, such as PDF files, Word documents, or printed manuals, you must decide if you want to keep the content as-is, or if you want to convert it to a format that can be accessed from inside [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are third party tools available that can help you migrate to other formats, depending on the the current format and the target format.  
+If your existing content is in a different format, such as PDF files, Word documents, or printed manuals, you must decide if you want to keep the content as-is, or if you want to convert it to a format that can be accessed from inside [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are third-party tools available that can help you migrate to other formats, depending on the current format and the target format.  
 
 If you are migrating your solution from Dynamics GP, you might have content in PDF files. In that case, you can choose to convert the content to MarkDown as described in the [Moving to MarkDown](#moving-to-markdown) section, and then publish to a new online library on your current website, for example.  
 
@@ -41,9 +41,41 @@ If you are migrating from an earlier version of [!INCLUDE[navnow_md](../develope
 
 ### Converting legacy Dynamics NAV field Help to tooltips
 
-For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. You can build a similar tool if you want to reuse your existing content in the same way.  
-
 The tooltips play an important role as part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] [user assistance model](../user-assistance.md), and we encourage you to apply tooltips to your controls and actions as well.  
+
+For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. You can build a similar tool if you want to reuse your existing content in the same way. For Microsoft, it was a three-step process.  
+
+1. The starting point for us was two .TXT files, one file with all application objects, and one file with the first paragraph from HTML files with the field Help plus the ID of the table field. A tool then mapped the content from the HTML files to the page and control IDs in the application objects based on regular expressions to help with the mapping (step 2).
+
+    For example, in [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016, the field topic for the [Dimension 1 Code](/previous-versions/dynamicsnav-2016/hh170682(v=nav.90)) field on the **Analysis View** table had this first paragraph:
+
+    ```html
+    <p>Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.</p>
+    ```
+
+    The field has the ID 3 on table 363, giving it a unique ID of T_363_13, which was used as the file name for the field help. A tool would extract this information into a text file in the following format:
+
+    `T363-C13-P8631-A1033-L999:Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.`
+
+    The ID of the tooltip, `T363-C13-P8631-A1033-L999`, is based on the **Translate Export** format for [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] and specifies the table, the field, the property, the language, and the field length. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files](/previous-versions/dynamicsnav-2016/dd301161(v=nav.90)) in the docs for [!INCLUDE [navcorfu_md](../developer/includes/navcorfu_md.md)].  
+
+2. The second step mapped that table field ID to the corresponding control on the Analysis View page object. This step was required because tooltips are not supported on table fields, only on controls on page objects.  
+
+    The mapping is not always straightforward because the same table is often used by two or more pages. As a result, the page ID could be many numbers away from the table ID. So we did much cleaning up and shuffling around in Excel after the conversion.
+
+3. The last step was to get the edited tooltips into the metadata for the relevant page objects.  
+
+    During our conversion, the application objects were still based on C/AL and C/SIDE, so we used the tools for working with C/AL objects in .TXT format. But the same can work for AL-based objects where the tooltips are stored in the [ToolTip](../developer/properties/devenv-tooltip-property.md) property.  
+
+    For more information, see [Working with Application Objects as Text Files](/previous-versions/dynamicsnav-2016/dn789521%28v%3dnav.90%29) in the docs for [!INCLUDE [navcorfu_md](../developer/includes/navcorfu_md.md)], [How to Add Translated Strings By Importing and Exporting Multilanguage Files](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files) in the docs for [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)], and [Working with Translation Files](../developer/devenv-work-with-translation-files.md) for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+
+### After the conversion
+
+Now that the tooltips are in the page objects, we work with them using Excel. Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter the data. Due to the requirement of getting the text into Tooltip properties on page objects, we had to make it easy to do this work in a large Git enlistment in Azure DevOps, so the tooling is surrounded by a bunch of PowerShell scripts. We cannot share our current tooltip tool either, but it uses an open-source tool, [https://closedxml.codeplex.com/](https://closedxml.codeplex.com/), to handle the Excel integration - creating, opening, and saving an Excel workbook. The tool is then surrounded by PowerShell cmdlets scripts to populate the new Excel file with the existing page objects and their existing tooltips, and import the changed tooltips into the page objects.  
+
+You can also choose to work with tooltips in the translation files or straight in the .AL files. Different solutions require different processes, so pick the process that is more efficient for you.  
+
+We chose to associate the "What is this field?"-content with the user interface, meaning the controls on page objects. In the original [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] help model, we chose a different approach, focusing on the database structure. Both approaches have their advantages and disadvantages, but the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user assistance model currently focuses on the user interface with tooltips on page objects. For more information, see [User Assistance Model](../user-assistance.md).  
 
 ## Moving to MarkDown
 
@@ -51,9 +83,9 @@ The Microsoft team converted a subset of the legacy Help for [!INCLUDE[navnow_md
 
 Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
 
-When you have converted your content to MarkDown, you can use a Git repo in Azure DevOps as your source repository, create a private or public repo in GitHub, or set up a project in [MkDocs](https://www.mkdocs.org/), for example. Then you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
+When you have converted your content to MarkDown, you can use a Git repo in Azure DevOps as your source repository, create a private or public repo in GitHub, or set up a project in [MkDocs](https://www.mkdocs.org/), for example. Then you can use open-source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open-source tools and do not have a hard dependency on Microsoft providing you with tools.  
 
-If you do not yet have a website that you publish content to, then there are several ways in which you can create such a site. The [MkDocs](https://www.mkdocs.org/) project generates a website for you, but you can also work with a web designer to build a site that resembles the [Docs.microsoft.com](/dynamics365/business-central/) site, if that is what your customers will prefer.  
+If you do not yet have a website that you publish content to, then there are several ways in which you can create such a site. The [MkDocs](https://www.mkdocs.org/) project generates a website for you, but you can also work with a web designer to build a site that resembles the [Docs.microsoft.com](/dynamics365/business-central/) site, if that is what your customers will prefer. We recommend deploying to [an Azure web app](/azure/app-service/overview).
 
 ## See Also
 

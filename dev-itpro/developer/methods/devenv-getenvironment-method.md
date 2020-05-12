@@ -1,7 +1,7 @@
 ---
 title: "GetEnvironment Method"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,10 +12,10 @@ ms.service: "dynamics365-business-central"
 # GetEnvironment Method
 Gets information about the environment that the control add-in is using.  
   
-## Method Signature  
+## Method signature  
  `object Microsoft.Dynamics.NAV.GetEnvironment()`  
   
-## Return Value  
+## Return value  
 Returns an object that contains the following members:  
   
 |Member|Description|  

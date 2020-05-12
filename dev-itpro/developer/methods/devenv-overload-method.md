@@ -3,7 +3,7 @@ title: "Procedure overload"
 description: "Using the procedure overload to create multiple procedures with the same name, but with different signatures, on the same application object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,6 @@ ms.author: solsen
 # Procedure overload
  
 Procedure overload enables developers to create multiple procedures with the same name, but with different signatures, on the same application object. Conceptually, overloaded procedures are used to execute the same task on a different set of arguments. When an overloaded procedure is called, a specific implementation of that procedure, appropriate to the context of the call, will be run. 
-
 
 ## Reasons for using procedure overload
 

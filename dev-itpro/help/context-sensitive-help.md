@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ---
 
 # Configure Context-Sensitive Help
@@ -15,10 +15,10 @@ A key pillar of helping users help themselves is to give them access to Help for
 
 ## App-level configuration
 
-At an app level, you can specify where the Help for your functionality is published in the app.json file. For example, if you publish your content to `https://mysite.com/mysolution`, then you would specify that in the *contextSensitiveHelpUrl* property as shown in the following example:
+At an app level, you can specify where the Help for your functionality is published in the app.json file. For example, if you publish your content to `https://mysite.com/documentation`, then you would specify that in the *contextSensitiveHelpUrl* property as shown in the following example:
 
 ```json
-  "contextSensitiveHelpUrl": "https://mysite.com/documentation",
+  "contextSensitiveHelpUrl": "https://mysite.com/documentation/",
 
 ```
 
@@ -27,7 +27,7 @@ In this example, the *contextSensitiveHelpUrl* property specifies that the links
 If your app only supports a limited number of locales, you can specify that as well as shown in the following example:
 
 ```json
-  "contextSensitiveHelpUrl": "https://mysite.com/{0}/documentation",
+  "contextSensitiveHelpUrl": "https://mysite.com/{0}/documentation/",
   "supportedLocales": [
     "en-GB", "en-IE
   ],
@@ -40,7 +40,7 @@ In this example, the *contextSensitiveHelpUrl* and *supportedLocales* properties
 Specifically for localization apps that bring [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to new markets, the properties in the app.json file can be set to take over the links to Help for specific languages as shown in the following example:
 
 ```json
-  "helpBaseUrl": "https://mysite.com/{0}/documentation",
+  "helpBaseUrl": "https://mysite.com/{0}/documentation/",
   "supportedLocales": [
     "ca-es"
   ],

@@ -1,7 +1,7 @@
 ---
 title: "Testing Pages"
 ms.custom: na
-ms.date: 08/26/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -103,4 +103,5 @@ These are instances of the [TestAction Data Type](methods-auto/testaction/testac
 -   [FINDPREVIOUSFIELD Method \(TestPage\)](methods-auto/testpage/testpage-findpreviousfield-method.md)   
   
 ## See Also  
- [Testing the Application](devenv-testing-pages.md)   
+[Testing the Application](devenv-testing-pages.md)  
+[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)  

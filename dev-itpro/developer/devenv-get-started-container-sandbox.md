@@ -4,7 +4,7 @@ description: "Overview of the getting started with the container-based developme
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
@@ -79,7 +79,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     Creating Desktop Shortcuts for MyBizCentralApp
     ```
 
-10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need this information later to [set up Visual Studio Code for for extension development](#VSCode).
+10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need this information later to [set up Visual Studio Code for extension development](#VSCode).
 
 You now have a container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 

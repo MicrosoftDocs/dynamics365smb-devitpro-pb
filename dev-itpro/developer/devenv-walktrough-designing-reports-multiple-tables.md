@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Designing a Report from Multiple Tables"
 ms.custom: na
-ms.date: 12/06/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

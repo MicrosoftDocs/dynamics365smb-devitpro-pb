@@ -2,7 +2,7 @@
 title: "InternalEvent Attribute"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,10 +22,10 @@ Typing the shortcut `teventinternal` will create the basic internal attribute sy
 
 ## Syntax  
 ```  
-[InternalEvent](IncludeSender : Boolean)
+[InternalEvent(IncludeSender : Boolean)]
 ```
   
-#### Arguments  
+### Arguments  
 *IncludeSender*  
 Type: Boolean  
 

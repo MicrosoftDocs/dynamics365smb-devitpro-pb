@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 03/16/2020
+ms.date: 04/20/2020
 ms.author: edupont
 ---
 
@@ -83,6 +83,28 @@ In the example, *https://myserver.com* represents the URL to the Help Server ins
 > If you are upgrading from [!INCLUDE [navnowlong_md](../developer/includes/navnowlong_md.md)], you can reuse your existing Help Server content by simply replacing the product name and make any other changes that apply to your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment.  
 
 You can also still download the files that were made available for [!INCLUDE [nav2017](../developer/includes/nav2017.md)]. The download consists of 45 CAB files with the content from the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016 DVD rebranded to [!INCLUDE [nav2017](../developer/includes/nav2017.md)]. There are CAB files with the W1 application Help translated into each of the supported languages plus the local functionality for the country/region where that language is spoken. There are also CAB files with local functionality in English. The files were published as a single download so each administrator could choose exactly the files that they needed at the time. For more information, see [Microsoft Dynamics NAV 2017 Classic Help Download](https://www.microsoft.com/download/details.aspx?id=54315).  
+
+### Known issues with Microsoft's content
+
+Microsoft's content in the various GitHub repos is optimized for the Docs.microsoft.com site and the tools that are used for this site. If you reuse Microsoft's content, you may experience a number of known issues, depending on your deployment method. This section describes recommended steps to work around these issues.  
+
+#### Docs are not available for a specific version
+
+Microsoft's public GitHub repos reflect the current version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then please check the following sections for suggested workarounds.  
+
+#### Broken links
+
+If you deploy Microsoft's content to a website, your tools or your users will report that some links do not work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the Docs.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, or if you install the legacy Dynamics NAV Help Server from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media, you don't have the same redirection.  
+
+We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, the trick is to check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the Docs.microsoft.com site to manage redirection when a file is deprecated. So if you get an error that "finance-how-to-set-up-sepa-direct-debit.md does not exist", then you can see in the `.openpublishing.redirection.json` file that that article has been deprecated and replaced by finance-collect-payments-with-sepa-direct-debit.md. So you can replace the link in the file that is looking for finance-how-to-set-up-sepa-direct-debit.md to link to finance-collect-payments-with-sepa-direct-debit.md instead.  
+
+#### ToC.xml for Help Server is different from the TOC.md file
+
+Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, it will be deprecated in the future. As a result, it contains links that are broken as described in the previous section.  
+
+#### Translated content is not available
+
+Microsoft creates content in English (US) that then gets translated into the Microsoft-provided target languages. The translations are available in the relevant localization repos after a few weeks.  
 
 ## Fork the Microsoft repos, and customize or extend the content
 
