@@ -31,11 +31,11 @@ Please note that new customers will automatically get the latest builds of Busin
 
 - **Minimum requirements for Business Central Administration Center**   
 We have updated system requirements with the list of browsers supported by the Administration Center. When signing in from an unsupported browser that delivers a significantly degraded experience, administrators will immediately see a message that prevents them from continuing to the Administration Center. For example, it is not possible to access the Business Central Administration Center from Internet Explorer.   
-[See minimum requirements](https://docs.microsoft.com/dynamics365/business-central/product-requirements#tac)   
-[Learn more about the Business Central Administration Center](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) 
+See [minimum requirements](https://docs.microsoft.com/dynamics365/business-central/product-requirements#tac)   
+Learn more about [the Business Central Administration Center](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) 
 - **Sandbox environment picker**   
 When you navigate from the Business Central Sandbox tile in the Dynamics 365 Home portal or in the App Launcher, a dialog will be displayed for you to choose exactly which sandbox environment from your organization you would like to navigate to.   
-[Read more about sandbox environments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/environment-types)
+Read more about [sandbox environments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/environment-types)
 
 - **Message to Global Admins about the capabilities**   
 On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned. 
@@ -46,6 +46,6 @@ Pssst…did we mention it’s for free…
 
 - **Major updates**  
 Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need to take, and answers some common questions.   
-[See Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime) 
+See [Major Updates of Business Central Online](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/update-rollout-timelime) 
 
 
