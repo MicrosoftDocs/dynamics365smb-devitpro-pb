@@ -55,15 +55,16 @@ The following simple example illustrates how the try method works. First, create
 
 ```
 trigger OnRun()
-    begin
-        MyTrymethod;
-        Message('Everything went well');
-    end;
+begin
+    MyTrymethod;
+    Message('Everything went well');
+end;
 ```
-
-**LOCAL MyTrymethod()**
 ```
-ERROR('An error occurred during the operation.');
+local procedure MyTryMethod()
+begin
+    Error('An error occurred during the operation.');
+end;
 ```
 
 When you run this codeunit, the execution of the `OnRun` trigger, the calling method, stops and the error message `An error occurred during the operation.` is thrown in the client.
