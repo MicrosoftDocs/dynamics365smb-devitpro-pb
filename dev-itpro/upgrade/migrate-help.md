@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2020
+ms.date: 04/30/2020
 ms.author: edupont
 ---
 
@@ -47,13 +47,13 @@ For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.
 
 1. The starting point for us was two .TXT files, one file with all application objects, and one file with the first paragraph from HTML files with the field Help plus the ID of the table field. A tool then mapped the content from the HTML files to the page and control IDs in the application objects based on regular expressions to help with the mapping (step 2).
 
-    For example, in [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016, the field topic for the [Dimension 1 Code](/previous-versions/dynamicsnav-2016/hh170682(v=nav.90)) field on the Analysis View table had this first paragraph:
+    For example, in [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016, the field topic for the [Dimension 1 Code](/previous-versions/dynamicsnav-2016/hh170682(v=nav.90)) field on the **Analysis View** table had this first paragraph:
 
     ```html
     <p>Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.</p>
     ```
 
-    The field has the ID 3 on table 363, giving it a unique ID of T_363_13, which was used as the file name. A tool would extract this information into a text file in the following format:
+    The field has the ID 3 on table 363, giving it a unique ID of T_363_13, which was used as the file name for the field help. A tool would extract this information into a text file in the following format:
 
     `T363-C13-P8631-A1033-L999:Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.`
 
@@ -74,6 +74,8 @@ For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.
 Now that the tooltips are in the page objects, we work with them using Excel. Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter the data. Due to the requirement of getting the text into Tooltip properties on page objects, we had to make it easy to do this work in a large Git enlistment in Azure DevOps, so the tooling is surrounded by a bunch of PowerShell scripts. We cannot share our current tooltip tool either, but it uses an open-source tool, [https://closedxml.codeplex.com/](https://closedxml.codeplex.com/), to handle the Excel integration - creating, opening, and saving an Excel workbook. The tool is then surrounded by PowerShell cmdlets scripts to populate the new Excel file with the existing page objects and their existing tooltips, and import the changed tooltips into the page objects.  
 
 You can also choose to work with tooltips in the translation files or straight in the .AL files. Different solutions require different processes, so pick the process that is more efficient for you.  
+
+We chose to associate the "What is this field?"-content with the user interface, meaning the controls on page objects. In the original [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] help model, we chose a different approach, focusing on the database structure. Both approaches have their advantages and disadvantages, but the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user assistance model currently focuses on the user interface with tooltips on page objects. For more information, see [User Assistance Model](../user-assistance.md).  
 
 ## Moving to MarkDown
 

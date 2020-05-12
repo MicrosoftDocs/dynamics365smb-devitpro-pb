@@ -4,7 +4,7 @@ description: "Code Actions"
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -14,10 +14,13 @@ ms.author: solsen
 
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to help fix issues in code. **Code Actions** is a Visual Studio Code feature providing the user with possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. When the user clicks the light bulb (or presses **Ctrl+.**), a list of available code actions is presented. 
 
-In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] two code actions are available in the current version:
+In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] these code actions are available in the current version:
 
 - Multiple IF to CASE converting code action.
-- Spell check code action.
+- Spell check code action.  
+- Interface implementer.
+- Make method local.
+- Use parenthesis for method call.
 
 ## To enable AL Code Actions
 

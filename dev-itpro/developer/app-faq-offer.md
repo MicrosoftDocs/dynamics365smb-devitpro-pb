@@ -14,7 +14,7 @@ ms.author: rweigel
 
 This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prodshort](../includes/prodshort.md)].
 
-## If I click the Go Live button, does that mean my app will go live to App Source?
+## If I click the Go Live button, does that mean my app will go live to AppSource?
 
 No. This button is deceiving, and I wish it were worded differently. When you click this button, it triggers our validation process and puts your app into our validation queue.
 
@@ -24,7 +24,7 @@ This is the button you should click when you want to submit your app for validat
 
 ## I only made marketing changes. Will my app have to go through technical validation?
 
-No. If you do not change your app in a submission, we skip technical validation
+No. If you do not change your app in a submission, we skip technical validation.
 
 ## See also
 

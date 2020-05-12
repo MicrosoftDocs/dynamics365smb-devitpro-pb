@@ -111,7 +111,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 4. Unpublish all system, test, and application symbols.
 
-    To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
+    To unpublish symbols, use the Unpublish-NAVAPP cmdlet. You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
     ``` 
     Get-NAVAppInfo -ServerInstance <BC14 server instance> -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
@@ -347,8 +347,17 @@ Now, your application is fully upgraded to the version 16 platform.
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
+5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+
+    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    
+    - If you have a version 16 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
+    
+    - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
+
+     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
+
 ## See Also
 
-[Upgrading the Data](Upgrading-the-Data.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)

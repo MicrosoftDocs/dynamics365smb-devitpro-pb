@@ -45,6 +45,9 @@
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
 #### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+####  App Management
+##### [Introduction](administration/appmanagement/app-management-overview.md)
+##### [App Management API](administration/appmanagement/app-management-api.md)
 <!--AppSourcevalidation-->
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -94,9 +97,6 @@
 ### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### [Technical Support of Business Central](technical-support.md)
-##  App Management for ISVs
-### [Introduction](administration/appmanagement/app-management-overview.md)
-### [App Management API](administration/appmanagement/app-management-api.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Overview](administration/migrate-data.md)
@@ -181,11 +181,12 @@
 ### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## [Signing an App Package File](developer/devenv-sign-extension.md)
 ## Extending the Base Application
+### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
+### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
 ### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
-### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
-### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
+### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ## Events
@@ -319,8 +320,6 @@
 ### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
-### [Troubleshooting the Business Central Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
-### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md) 
 ## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
@@ -660,6 +659,8 @@
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
+### [Troubleshooting the Business Central Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
+### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md) 
 ### Deployment Topologies
 #### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
 #### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
