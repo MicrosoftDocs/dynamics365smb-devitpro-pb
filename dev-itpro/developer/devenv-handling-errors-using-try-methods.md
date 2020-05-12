@@ -28,7 +28,7 @@ A method that is designated as a try method has a Boolean return value (**true**
 
 - If a try method call does not use the return value, the try method operates like an ordinary method and errors are exposed as usual.  
 
-- If a try method call uses the return value in an `OK:=` statement or a conditional statement such as `If-Then`, errors are caught. The try method returns `true` if no error occurs; `false` if an error occurs. 
+- If a try method call uses the return value in an `OK:=` statement or a conditional statement such as `if-then`, errors are caught. The try method returns `true` if no error occurs; `false` if an error occurs. 
 
 > [!NOTE]  
 > The return value is not accessible within the try method itself.  
@@ -41,19 +41,24 @@ You can use the [GetLastErrorText method](../methods-auto/system/system-getlaste
 > [!TIP]  
 > The [!INCLUDE[demolong](includes/demolong_md.md)] includes codeunit 1291 **DotNet Exception Handler** that includes several global methods for handling exceptions similar to a try-catch capability in C\#. You can use this codeunit together with try methods to handle exceptions and maximize the reuse of code.     -->
 
-## Creating a Try method
+## Creating a try method
 
-To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [Trymethod Property](../properties/devenv-trymethod-property.md) property to **true**. A try method has the following restrictions:  
+To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [Trymethod Property](../properties/devenv-trymethod-property.md) property to **true**. 
 
-In test and upgrade codeunits, you can only use a try method on a normal method type, as defined by the [methodType Property \(Test Codeunits\)](methodType-Property--Test-Codeunits-.md) or [methodType Property \(Upgrade Codeunits\)](methodType-Property--Upgrade-Codeunits-.md).  
+<!-- A try method has the following restrictions:  
+
+In test and upgrade codeunits, you can only use a try method on a normal method type.-->  
 
 ## Example 1 
+
 The following simple example illustrates how the try method works. First, create a codeunit that has a local method `MyTrymethod`. Add the following code on the `OnRun` trigger and `MyTrymethod` method.
 
-**OnRun()**
 ```
-MyTrymethod;
-MESSAGE('Everthing went well.');
+trigger OnRun()
+    begin
+        MyTrymethod;
+        Message('Everything went well');
+    end;
 ```
 
 **LOCAL MyTrymethod()**
