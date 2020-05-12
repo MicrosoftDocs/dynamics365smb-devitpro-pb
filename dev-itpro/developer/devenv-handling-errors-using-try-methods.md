@@ -19,26 +19,16 @@ Try methods in AL enable you to handle errors that occur in the application duri
 The main purpose of try methods is to catch errors/exceptions that are thrown by [!INCLUDE[prodshort](includes/prodshort.md)] or exceptions that are thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional Codeunit.Run method call, except try method calls do not require that write transactions are committed to the database, and changes to the database that are made with a try method are not rolled back.
 
 ### <a name="DbWriteTransactions"></a>Database write transactions in try methods
-Because changes made to the database by a try method are not rolled back, you should not include database write transactions within a try method. By default, the [!INCLUDE[nav_server](includes/nav_server_md.md)] configuration prevents you from doing this. If a try method contains a database write transaction, a runtime error occurs.
 
-> [!Note]
-> This behavior is different from the behavior in [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], which did not include this restriction by default. Therefore, you might encounter errors if you have application code that was written for [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)] and you run the code in [!INCLUDE[nav2017](includes/nav2017.md)].
-> 
-> In practice, this means that you should not include the following method calls inside a try method scope:  
-> 
-> |Data Type|method|  
-> |---------------|--------------|  
-> |Record and RecordRef|-   INSERT<br />-   MODIFY<br />-   MODIFYALL<br />-   RENAME<br />-   DELETE<br />-   DELETEALL<br />-   >ADDLINK<br />-   DELETELINK<br />-   DELETELINKS|  
-> |Database|-   COMMIT|
-> 
-> If you want to change this behavior, you can set the **DisableWriteInsideTrymethods** setting in the CustomSettings.config file of the server instance to **false**. However, we recommend that you design your code to suit the default behavior instead.
+Because changes made to the database by a try method are not rolled back, you should not include database write transactions within a try method. By default, the [!INCLUDE[server](includes/server.md)] configuration prevents you from doing this. If a try method contains a database write transaction, a runtime error occurs.
 
 ### Handling errors with a return value
-A method that is designated as a try method has a Boolean return value \(true or false\), and has the construction `OK:= MyTrymethod`. A try method cannot have a user-defined return value.
+
+A method that is designated as a try method has a Boolean return value (**true** or **false**), and has the construction `OK:= MyTrymethod`. A try method cannot have a user-defined return value.
 
 - If a try method call does not use the return value, the try method operates like an ordinary method and errors are exposed as usual.  
 
-- If a try method call uses the return value in an `OK:=` statement or a conditional statement such as `IF-THEN`, errors are caught. The try method returns `true` if no error occurs; `false` is an error occurs. 
+- If a try method call uses the return value in an `OK:=` statement or a conditional statement such as `If-Then`, errors are caught. The try method returns `true` if no error occurs; `false` if an error occurs. 
 
 > [!NOTE]  
 >  The return value is not accessible within the try method itself.  
