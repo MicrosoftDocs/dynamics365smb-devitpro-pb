@@ -20,16 +20,17 @@ ms.author: jswymer
 
 Monitoring telemetry gives you a look at the activities and general health of your tenants. It helps you diagnose problems and analyze operations that affect performance.
 
-## Available Telemetry
+## Available telemetry
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
 |Telemetry | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
-|Long Running Operation (SQL Query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
-|Report Generation|Provide information about execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
-|Web Service Requests|Provide information about execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
+|Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
+|Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
+|Report generation|Provides information about the execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
+|Web service requests|Provides information about the execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
 ## Enabling Application Insights
 
@@ -39,7 +40,7 @@ Sending telemetry data to Application Insights requires you have an Application 
 
 - For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).
 
-## Viewing Telemetry Data in Application Insights
+## Viewing telemetry data in Application Insights
 
 Telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is stored in Azure Monitor Logs in the *traces* table. You can view collected data by writing log queries. Log queries are written in the Kusto query language (KQL). For more information, see [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
 
@@ -56,6 +57,7 @@ As a simple example, do the following steps:
     ```
 
 ## Application Insights sample code
+
 On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started using Application Insights. 
 
 For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
