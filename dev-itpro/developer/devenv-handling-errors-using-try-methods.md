@@ -57,28 +57,37 @@ The following simple example illustrates how the try method works. First, create
 trigger OnRun()
 begin
     MyTrymethod;
-    Message('Everything went well');
+    message('Everything went well');
 end;
 ```
 ```
 local procedure MyTryMethod()
 begin
-    Error('An error occurred during the operation.');
+    error('An error occurred during the operation');
 end;
 ```
 
-When you run this codeunit, the execution of the `OnRun` trigger, the calling method, stops and the error message `An error occurred during the operation.` is thrown in the client.
+When you run this codeunit, the execution of the `OnRun` trigger, the calling method, stops and the error message `An error occurred during the operation` is thrown in the UI.
 
+Now, set the [Trymethod Property](../properties/devenv-trymethod-property.md) of the  `MyTrymethod` method to **true**. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
 
-Now, set the **Trymethod** property of the  `MyTrymethod` method to **Yes**. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
-
-**OnRun()**
 ```
-IF MyTrymethod THEN
-  MESSAGE('Everying went well.')
-ELSE
-  MESSAGE('Something went wrong.');
+[TryFunction]
+local procedure MyTryMethod()
+begin
+    error('An error occurred during the operation');
+end;
+
+trigger OnRun()
+begin
+    if MyTryMethod then
+        message('Everything went well')
+    else
+        message('Something went wrong')
+end;
 ```
+
+
 
 **LOCAL [Trymethod] MyTrymethod()**
 ```
