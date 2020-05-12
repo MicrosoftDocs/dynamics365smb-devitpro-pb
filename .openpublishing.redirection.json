@@ -5169,6 +5169,11 @@
     "source_path": "dev-itpro/developer/methods-auto/string/string-data-type.md",
     "redirect_url": "/dynamics365/business-central/developer/methods-auto/text/text-data-type.md",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-trymethod-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods/devenv-tryfunction-attribute",
+    "redirect_document_id": false
    }
    
   ]
