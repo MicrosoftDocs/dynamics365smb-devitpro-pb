@@ -377,6 +377,7 @@
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
+#### [Handling Errors Using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
 #### [Action Option Type](developer/methods-auto/action/action-option.md)
 #### [Any Data Type](developer/methods-auto/any/any-data-type.md)

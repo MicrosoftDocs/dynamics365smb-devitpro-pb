@@ -10,7 +10,7 @@ ms.prod: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Handling Errors by Using Try Methods
+# Handling Errors using Try Methods
 
 Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than those thrown by the system.  
 
