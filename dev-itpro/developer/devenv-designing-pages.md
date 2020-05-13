@@ -119,7 +119,7 @@ The primary purpose of Card pages is to support users managing master and refere
 
 The Document pages’ primary purpose is to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents (quotes, invoices, orders, etc.), and as such, document pages often have associated workflow or audit trail requirements.
 
-Below are examples of Card and Document page compositions, showing how space is divided.
+Below are examples of Card and Document page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
@@ -136,7 +136,7 @@ From the user’s perspective, the following are qualities of a well-designed ca
 - For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
 
 > [!NOTE]
-> The `Document` page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
+> The Document page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
 
 
 ## ListPlus page layouts 
@@ -145,7 +145,7 @@ The ListPlus pages’ primary purpose is to support users in managing or browsin
 
 The ListPlus page type is a versatile means to support analysis and management tasks in a specific entity context (named by the page title). ListPlus pages can show persistent data about the entity/event in addition to giving options for how data is viewed or filtered.
 
-A ListPlus page should generally not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided.
+A ListPlus page should generally not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
@@ -164,7 +164,7 @@ From the user’s perspective, the following are qualities of a well-designed Li
 
 List pages support users viewing and finding specific entities or entries in a collection. Lists that are editable have cells available for data entry and update.
 
-List pages must contain a single `Repeater` group. In addition, a list can include groups of fields, card parts, and list parts. Below are examples of list page compositions, showing how space is divided.
+List pages must contain a single `Repeater` group. In addition, a list can include groups of fields, card parts, and list parts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
@@ -187,7 +187,7 @@ A Worksheet page lets users view and manage a collection of entries in tabular o
 > [!NOTE]
 > The Worksheet page type does not support the same part and group compositions as the List page type.
 
-Worksheet pages must contain a single repeater group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided.
+Worksheet pages must contain a single repeater group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
