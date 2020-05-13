@@ -126,10 +126,6 @@
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
-## What's New or Changed
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
