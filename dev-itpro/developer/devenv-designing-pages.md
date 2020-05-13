@@ -124,8 +124,7 @@ Below are examples of Card and Document page compositions, showing how space is 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |Field groups are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart’s height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
-
-![Card and document page layouts](media/page-layout-card-doc.png "Card and document page layouts")
+|![Card and Document layout 1](media/page-layout-card-doc-1.png "Card/Document example 1")|![Card and Document layout 1](media/page-layout-card-doc-2.png "Card/Document example 2")|![Card and Document layout 1](media/page-layout-card-doc-3.png "Card/Document example 3")|
 
 From the user’s perspective, the following are qualities of a well-designed card or document page:
 - Uses the page type `Card` if the page represents master or reference data, or is a setup page
@@ -135,6 +134,9 @@ From the user’s perspective, the following are qualities of a well-designed ca
 - Favors header fields and other important fields by placing them in a FastTab titled General that come first on the page.
 - Includes one or two FactBoxes to give relevant statistics and quick access to related documents.
 - For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
+
+> [!NOTE]
+> The `Document` page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
 
 
 ## ListPlus page layouts 
@@ -148,8 +150,7 @@ A ListPlus page should generally not contain a repeater group but will typically
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two (or more) ListParts, they will share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
-
-![ListPlus page layouts](media/page-layout-listplus.png "ListPlus page layouts")
+|![ListPlus layout 1](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout 2](media/page-layout-listplus-3.png "ListPlus example 3")|
 
 From the user’s perspective, the following are qualities of a well-designed ListPlus page:
 -	Has a page title that clearly identifies the context for the information presented in the page.
@@ -168,8 +169,7 @@ List pages must contain a single `Repeater` group. In addition, a list can inclu
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The repeater group assumes full vertical space.|When a field group or cardpart is included, space for repeater is reduced.|When a listpart is included, space is shared equally between part and repeater.|
-
-![List page layouts](media/page-layout-list.png "List page layouts")
+|![List layout 1](media/page-layout-list-1.png "List example 1")|![List layout 2](media/page-layout-list-2.png "List example 2")|![List layout 2](media/page-layout-list-3.png "List example 3")|
 
 From the user’s perspective, the following are qualities of a well-designed List page:
 
@@ -192,8 +192,7 @@ Worksheet pages must contain a single repeater group. In addition, a worksheet c
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The Repeater group takes full vertical space, leaving space for groups above and below.|If a ListPart is included, the vertical space is shared with Repeater.|When a ListPart is included, space is shared equally between part and Repeater.| 
-
-![Worksheet page layouts](media/page-layout-worksheet.png "Worksheet page layouts")
+|![Worksheet layout 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout 2](media/page-layout-worksheet-3.png "Worksheet example 3")|
 
 From the user’s perspective, the following are qualities of a well-designed worksheet page:
 
