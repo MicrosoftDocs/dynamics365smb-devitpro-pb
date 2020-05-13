@@ -5167,17 +5167,17 @@
    },
    {
     "source_path": "dev-itpro/developer/methods-auto/string/string-data-type.md",
-    "redirect_url": "/dynamics365/business-central/developer/methods-auto/text/text-data-type",
+    "redirect_url": "/dynamics365/business-central//dev-itpro/developer/methods-auto/text/text-data-type",
     "redirect_document_id": false
    },
    {
     "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0045-permissionsmustbeassigned.md",
-    "redirect_url": "/dynamics365/business-central/developer/analyzers/appsourcecop",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
     "redirect_document_id": false
    },
    {
     "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0046-correctpermissionsmustbeassigned.md",
-    "redirect_url": "/dynamics365/business-central/developer/analyzers/appsourcecop",
+    "redirect_url": "/dynamics365/business-central//dev-itpro/developer/analyzers/appsourcecop",
     "redirect_document_id": false
    }
   ]
