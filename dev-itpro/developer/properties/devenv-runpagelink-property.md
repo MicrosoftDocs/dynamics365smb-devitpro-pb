@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 
 # RunPageLink Property
 
-Sets up a link to the page you are launching. Set the RunPageLink property to establish the link to the page that you want to launch. In the filter syntax, select a field from the table that the page you want to launch is based on. In the Type field select the field in the table that underlies the current page and be careful that this field must match the field that you selected from the other table.
+Sets up a link to the page you are launching. Set the RunPageLink property to establish the link to the page that you want to launch. In the filter syntax, select a field from the table corresponding to the page that you want to launch. And then select the field in the table that underlies the current page and be careful that this field must match the field that you selected from the first table.
 
 > [!NOTE]  
 > This property is supported only on actions for pages.
