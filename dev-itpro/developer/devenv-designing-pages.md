@@ -212,13 +212,11 @@ It is also possible to use the common page types (`Card`, `Document`, `List`, et
 Generally, [!INCLUDE[prodshort](includes/prodshort.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
 Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page page can contain a lot of contents, it is possible for the user increase the dialog size with the maximize button.
-
-
-
  
 ## See Also
+
 [Page Properties Overview](properties/devenv-page-property-overview.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
 [Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
-[Designing Role Centers](devenv-designing-role-centers.md) 
+[Designing Role Centers](devenv-designing-role-centers.md)  

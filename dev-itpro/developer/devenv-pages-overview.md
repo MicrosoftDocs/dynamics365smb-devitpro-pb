@@ -3,7 +3,7 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 05/14/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,7 @@ Which page type you choose depends on the application task that you want to supp
 |`CardPart`|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
 |`List`|A List page displays content from a table in a list format.|
 |`ListPart`|Similar to a List page, a List Part page displays content from a table in a list format. The difference is that you use the List part page as another page in a FactBox or as a part of the Role Center page.|
-|`ListPlus`|Similar to a List page, a List Plus page displays content from a table in a list format. The difference is that the List Plus page type can contain two lists in one page, and can be used as a two-dimensional matrix.|
+|`ListPlus`|A ListPlus page displays content from a table in a list format. The difference from a List page is that the main content is a ListPart, not a Repeater group as the List has it.|
 |`Document`|A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together.|
 |`WorkSheet`|You use a Worksheet page type for creating worksheet or journal task pages.|
 |`ConfirmationDialog`|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|

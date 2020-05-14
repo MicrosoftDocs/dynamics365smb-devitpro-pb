@@ -219,6 +219,7 @@
 #### [Migration.json File](developer/devenv-migration-json-file.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
+### [Designing Pages](developer/devenv-designing-pages.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
