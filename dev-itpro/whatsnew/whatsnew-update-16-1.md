@@ -40,8 +40,9 @@ Read more about [sandbox environments](https://docs.microsoft.com/dynamics365/bu
 - **Message to Global Admins about the capabilities**   
 On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned. 
 
-- **Coming up: Virtual partner readiness event**   
-We’re excited to share the latest innovations for Business Central. Join us at the upcoming Business Central virtual event June 3rd with more than 15 deep dive sessions on what’s new in 2020 release wave 1 (April release), also available on-demand. Check back here for the registration link being published soon!   
+- **Coming up: Virtual partner readiness event - register now!**   
+We’re excited to share the latest innovations for Business Central. Join us at the upcoming Business Central All Access Virtual Event June 3rd with more than 15 deep dive sessions on what’s new in 2020 release wave 1 (April release), also available on-demand.  
+Registration open now at [aka.ms/virtual/businesscentral/2020RW1](https://vshow.on24.com/vshow/BCVE/registration/17187)    
 Pssst…did we mention it’s for free…
 
 - **Major updates**  
