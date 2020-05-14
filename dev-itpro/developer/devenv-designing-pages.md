@@ -85,7 +85,7 @@ For all task pages, i.e. excluding dialogs and part pages, there is a common str
 
 The 'content' area provide rich layout capabilities which are described in the coming sections. The 'factboxes' area is limited to show a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, etc.
 
-For more information about page areas, see [Pages Overview](properties/devenv-pages-overview.md). 
+For more information about page areas, see [Pages Overview](devenv-pages-overview.md). 
 
 ### Field groups and page parts 
 
