@@ -27,13 +27,13 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`Card`|Master, reference, and set up data management. [Card page example](devenv-simple-card-page-example.md)|Single entity|Titled entity with FastTabs. May include parts.|
 |`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
-|`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list’s `Repeater` control.|
-|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet’s `Repeater` control.|
+|`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list’s `Repeater`.|
+|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet’s `Repeater`.|
 |`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
 |`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
 |`NavigatePage`|Multi-page dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields, a list, and parts.|
 |`CardPart`|A page that is included in another page, e.g. a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
-|`ListPart`|A page that is included in another page, e.g. a FactBox.|Collection of entities/entries|Single `Repeater` control representing columns in a list or table.|
+|`ListPart`|A page that is included in another page, e.g. a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
 
 ### The two principal page types 
 
@@ -46,7 +46,7 @@ A fundamental characteristic of a page type is how it relates to the data presen
 
 #### Entity-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented task page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction or other important business event. 
+In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks evolve around a single business entity. The most typical entity-oriented task page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction or other important business event. 
 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
@@ -73,7 +73,7 @@ Within a page, the developer can combine page fields into groups. This can help 
 
 Besides adding fields and groups to a page, it is possible to include another page of type `CardPart` or `ListPart`. (These two page types can in turn not include other pages.) 
 
-When pages are created that include parts, Business Central divides the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
+When pages are created that include parts, [!INCLUDE[prodshort](includes/prodshort.md)] divides the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
 How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window.
 
@@ -127,15 +127,16 @@ Below are examples of Card and Document page compositions, showing how space is 
 |![Card and Document layout 1](media/page-layout-card-doc-1.png "Card/Document example 1")|![Card and Document layout 1](media/page-layout-card-doc-2.png "Card/Document example 2")|![Card and Document layout 1](media/page-layout-card-doc-3.png "Card/Document example 3")|
 
 From the user’s perspective, the following are qualities of a well-designed card or document page:
-- Uses the page type `Card` if the page represents master or reference data, or is a setup page
-- Uses the page type `Document` if the page represents a transaction or other important event in the domain of business
+
+- Uses the page type `Card` if the page represents master or reference data, or is a setup page.
+- Uses the page type `Document` if the page represents a transaction or other important event in the domain of business.
 - Has a page title that clearly identifies the data represented in the page.
 - Is optimized for overview by organizing data in FastTabs and marking relevant fields as `Promoted` or `Additional`.
 - Favors header fields and other important fields by placing them in a FastTab titled General that come first on the page.
 - Includes one or two FactBoxes to give relevant statistics and quick access to related documents.
 - For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
 
-> [!NOTE]
+> [!NOTE]  
 > The Document page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
 
 
