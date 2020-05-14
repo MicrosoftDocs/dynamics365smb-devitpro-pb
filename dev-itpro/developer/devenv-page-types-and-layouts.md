@@ -1,5 +1,5 @@
 ---
-title: "Designing Pages"
+title: "Page Types and Layouts"
 description: Pages are the main way to display and organize data. 
 author: jacobwj
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 
-# Designing Pages
+# Page Types and Layouts
 
 Understanding how [!INCLUDE[prodshort](includes/prodshort.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
