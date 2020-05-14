@@ -29,7 +29,7 @@ You can launch the event recorder session from [!INCLUDE[d365_bus_central_md](in
 The following steps describe how to record events when you are on the **Event Recorder** page.
 
 1. On the **Event Recorder** page, in the upper right corner, choose **Open this page in a new window**.
-2. Then on the **Event Recorder** page, click the **Start** button located on the actions ribbon.
+2. Then on the **Event Recorder** page, choose **Record Events**, and then choose the **Start** button.
 3. In the original window, perform all the actions that you want to record while the event recorder session is on.
     For example, post a purchase order.
 4. After you have performed the actions of your scenario, navigate back to the window that has the **Event Recorder** page open and click the **Stop** button to finish recording.  
