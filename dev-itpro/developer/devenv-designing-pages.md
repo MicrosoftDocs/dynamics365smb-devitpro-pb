@@ -154,14 +154,14 @@ A ListPlus page should generally not contain a repeater group but will typically
 |![ListPlus layout 1](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout 2](media/page-layout-listplus-3.png "ListPlus example 3")|
 
 From the user’s perspective, the following are qualities of a well-designed ListPlus page:
--	Has a page title that clearly identifies the context for the information presented in the page.
--	Is optimized for showing one set of details, and giving the user means to work with them.
--	Presents information in the page in such a way that the hierarchy can be understood when read from top to bottom.
--	If present, fields that control which data is presented in another FastTab come before that FastTab.
--	If present, fields that show data dependent on the chosen row (in the ListPart) come after the ListPart.
 
+- Has a page title that clearly identifies the context for the information presented in the page.
+- Is optimized for showing one set of details, and giving the user means to work with them.
+- Presents information in the page in such a way that the hierarchy can be understood when read from top to bottom.
+- If present, fields that control which data is presented in another FastTab come before that FastTab.
+- If present, fields that show data dependent on the chosen row (in the ListPart) come after the ListPart.
 
-## List page layouts 
+## List page layouts
 
 List pages support users viewing and finding specific entities or entries in a collection. Lists that are editable have cells available for data entry and update.
 
@@ -174,21 +174,20 @@ List pages must contain a single `Repeater` group. In addition, a list can inclu
 
 From the user’s perspective, the following are qualities of a well-designed List page:
 
--	Defines a set of columns that is optimized for viewing and filtering the given collection. Optimize the column order for data entry if the list is editable.
--	Has a page title that clearly names or identifies the collection of entities/entries presented.
--	If a summary or additional detail related to the selected row are shown, these appear below the list.
--	If custom viewing options are available, these appear above the list.
--	Includes one or two FactBoxes to give essential collection statistics, and relevant related details for the selected row.
+- Defines a set of columns that is optimized for viewing and filtering the given collection. Optimize the column order for data entry if the list is editable.
+- Has a page title that clearly names or identifies the collection of entities/entries presented.
+- If a summary or additional detail related to the selected row are shown, these appear below the list.
+- If custom viewing options are available, these appear above the list.
+- Includes one or two FactBoxes to give essential collection statistics, and relevant related details for the selected row.
 
-
-## Worksheet page layouts 
+## Worksheet page layouts
 
 A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users’ work with the collection, such as with journals (which typically involves data entry) and inquiry pages (which is for querying data).
 
-> [!NOTE]
+> [!NOTE]  
 > The Worksheet page type does not support the same part and group compositions as the List page type.
 
-Worksheet pages must contain a single repeater group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
+Worksheet pages must contain a single `Repeater` group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
@@ -197,9 +196,9 @@ Worksheet pages must contain a single repeater group. In addition, a worksheet c
 
 From the user’s perspective, the following are qualities of a well-designed worksheet page:
 
--	Defines a set of columns that is optimized for overviewing and managing the given collection. Columns are ordered relative to their importance.
--	Has fields above the grid that specify filtering options or specify the default values effective during data entry and editing in the grid.
--	If summary fields or additional details of the selected row are shown, these appear below the repeater.
+- Defines a set of columns that is optimized for overviewing and managing the given collection. Columns are ordered relative to their importance.
+- Has fields above the grid that specify filtering options or specify the default values effective during data entry and editing in the grid.
+- If summary fields or additional details of the selected row are shown, these appear below the repeater.
 
 
 ## Dialog page layouts 
