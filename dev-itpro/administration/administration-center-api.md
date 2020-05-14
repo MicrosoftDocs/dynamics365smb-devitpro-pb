@@ -575,6 +575,9 @@ Returns the updated settings
 ### Put AppInsights key
 Sets the key an environment uses for Azure AppInsights.
 
+> [!IMPORTANT]
+> This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this during non-working hours to avoid disruptions.
+
 ```
 POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
