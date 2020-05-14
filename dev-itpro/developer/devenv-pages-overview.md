@@ -22,7 +22,10 @@ Whether you are creating a new page, or extending an existing page, you will add
 
 The structure of a page is hierarchical and breaks down in to three sections. The first block contains metadata for the overall page. The metadata describes the page type and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
-Furthermore, the page has properties. Properties work in the same way for pages as they do for other [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] objects. For more information, see [Page Properties](properties/devenv-page-property-overview.md).  
+Furthermore, the page has properties. Properties work in the same way for pages as they do for other [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] objects. For more information, see [Page Properties](properties/devenv-page-property-overview.md). 
+
+> [!TIP]  
+> For information about designing pages, see [Designing Pages](devenv-designing-pages.md).
 
 ## Page metadata
 For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
@@ -242,6 +245,7 @@ We recommend that you simplify the user experience by reducing what users see by
 [Page Properties Overview](properties/devenv-page-property-overview.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
+[Designing Pages](devenv-designing-pages.md)  
 [Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
