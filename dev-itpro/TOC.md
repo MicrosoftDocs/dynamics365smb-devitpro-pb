@@ -219,7 +219,6 @@
 #### [Migration.json File](developer/devenv-migration-json-file.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
-### [Designing Pages](developer/devenv-designing-pages.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
@@ -230,6 +229,7 @@
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 ### Designing Pages
+#### [Designing Pages](developer/devenv-designing-pages.md)
 #### List Pages
 ##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
