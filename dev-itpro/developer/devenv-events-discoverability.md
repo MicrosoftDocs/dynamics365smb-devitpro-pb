@@ -22,7 +22,7 @@ You can launch the event recorder session from [!INCLUDE[d365_bus_central_md](in
 - In Visual Studio Code, use the `Ctrl+Shift+P` keys and select the **Open Event Recorder** command to open the **Event Recorder** page in the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client.
 
 > [!NOTE]  
-> The event recorder captures all events that are raised in the same session. If the actions performed by the user are in another session, then the event record will not capture them. It is recommended to use the **Open this page in a new window** feature, see the steps below.
+> The event recorder captures all events that are raised in the same session. If the actions performed by the user are in another session, then the event recorder will not capture them.
 
 ### How to record events
 
