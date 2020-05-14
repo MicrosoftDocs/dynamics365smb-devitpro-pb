@@ -17,7 +17,7 @@ Sets up a link to the page you are launching. Set the RunPageLink property to es
 > This property is supported only on actions for pages.
 
 > [!IMPORTANT]  
-> For performance reasons, you should always set the RunFormView property if the RunFormLink property is also set. In fact, the sort order chosen in the RunPageView property must contain the fields listed in the RunPageLink property or else the performance is decreased.
+> For performance reasons, always set the RunPageView property if the RunPageLink property is also set. In fact, the sort order chosen in the RunPageView property must contain the fields listed in the RunPageLink property or else the performance is decreased.
 
 ## Applies To  
   
