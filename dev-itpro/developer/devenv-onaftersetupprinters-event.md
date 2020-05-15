@@ -53,22 +53,22 @@ The *Printers* parameter is a [Dictionary of [Text, Text]](methods-auto/dictiona
 
 The payload consists of several attributes that are arranged in the following structure.
 
-```
+```json
 {
-    "version":1,
-    "description":[default=""],
-    "duplex":[default=false],
-    "color":[default=false],
-    "defaultcopies":[default=1],
+    "version":,
+    "description":,
+    "duplex":,
+    "color":,
+    "defaultcopies":,
     "papertrays":  
     [
         {
-            "papersourcekind":"Upper" | 1, 
-            "paperkind":"A4" | 9,
-            "units":[default="HI"],
-            "height":[default=0],
-            "width":[default=0],
-            "landscape":[default=false]
+            "papersourcekind":,
+            "paperkind":,
+            "units":,
+            "height":,
+            "width":,
+            "landscape":
         }
     ]
 }
@@ -80,14 +80,14 @@ The payload consists of several attributes that are arranged in the following st
 
 Given this information, the minimum payload looks like this:
 
-```
+```json
 {
     "version":1,
     "papertrays": 
     [
         {
-            "papersourcekind":"Upper" | 1, 
-            "paperkind":"A4" | 9,
+            "papersourcekind":"Upper", 
+            "paperkind":"A4"
         }
     ]
 }
