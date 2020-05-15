@@ -27,17 +27,17 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`Card`|Master, reference, and set up data management. [Card page example](devenv-simple-card-page-example.md)|Single entity|Titled entity with FastTabs. May include parts.|
 |`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
-|`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list’s `Repeater`.|
-|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet’s `Repeater`.|
+|`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list's `Repeater`.|
+|`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet's `Repeater`.|
 |`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
 |`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
 |`NavigatePage`|Multi-page dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields, a list, and parts.|
-|`CardPart`|A page that is included in another page, e.g. a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
-|`ListPart`|A page that is included in another page, e.g. a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
+|`CardPart`|A page that is included in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
+|`ListPart`|A page that is included in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
 
 ### The two principal page types 
 
-A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exists: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
+A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exist: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
 
 |`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
 |---------|---------------|
@@ -50,18 +50,18 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
-The `CardPart` page type is an entity-oriented page type for inclusion in another page, e.g. as a Factbox.
+The `CardPart` page type is an entity-oriented page type for inclusion in another page, for example, in a FactBox.
 
 > [!NOTE]  
 > Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. However, an entity-oriented task page *can* include a list part page that, in turn, contains a `Repeater` group.
 
 #### Collection-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (e.g. showing customers, items, etc.) from which the user can seek out the entities to work with.
+In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (like showing customers, items, and so on.) from which the user can seek out the entities to work with.
 
-The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (e.g. in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
+The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (for example, in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
 
-The `ListPart` page type is a collection-oriented page type for inclusion in another page, e.g. as a Factbox.
+The `ListPart` page type is a collection-oriented page type for inclusion in another page, for example, in a FactBox.
 
 #### Dialog pages
 
@@ -73,17 +73,17 @@ Within a page, the developer can combine page fields into groups. This can help 
 
 Besides adding fields and groups to a page, it is possible to include another page of type `CardPart` or `ListPart`. (These two page types can in turn not include other pages.) 
 
-When pages are created that include parts, [!INCLUDE[prodshort](includes/prodshort.md)] divides the available screen real estate between the page’s groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
+When pages are created that include parts, [!INCLUDE[prodshort](includes/prodshort.md)] divides the available screen real estate between the page's groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
 How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window.
 
-### A page is Content + Actions + Factboxes
+### A page is Content + Actions + FactBoxes
 
-For all task pages, i.e. excluding dialogs and part pages, there is a common structure to the areas of a page where content, factboxes, and actions can be displayed.
+For all task pages, excluding dialogs and part pages, there is a common structure to the areas of a page where content, FactBoxes, and actions can be displayed.
 
-![Containers](media/page-layout-containers.png "Containers for Content and Factboxes, plus actions.")
+![Containers](media/page-layout-containers.png "Containers for Content and FactBoxes, plus actions.")
 
-The 'content' area provide rich layout capabilities which are described in the coming sections. The 'factboxes' area is limited to show a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, etc.
+The 'content' area provide rich layout capabilities, which are described in the coming sections. The 'FactBoxes' area is limited to show a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, and so on.
 
 For more information about page areas, see [Pages Overview](devenv-pages-overview.md). 
 
@@ -101,7 +101,7 @@ In the following sections are descriptions of typical page layouts, recommendati
 
 The groups of fields and page parts making up a page are rendered when the user opens the page.
 
-Dependent on the size of the available screen real estate, e.g. in the browser window on a desktop computer, [!INCLUDE[prodshort](includes/prodshort.md)] sizes the sections automatically to make the most of the space.
+Dependent on the size of the available screen real estate, for example, in the browser window on a desktop computer, [!INCLUDE[prodshort](includes/prodshort.md)] sizes the sections automatically to make the most of the space.
 
 There are three different ways a section's size are determined. 
 
@@ -117,16 +117,16 @@ Which of the section sizing behavior is used is dependent on the chosen page typ
 
 The primary purpose of Card pages is to support users managing master and reference data, such as Customer, Vendor, and Item entities. (The name *Card* refers to how this kind of business data was kept on paper cards in filing cabinets before being computerized.) The Card page type is also often used for setup pages.
 
-The Document pages’ primary purpose is to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents (quotes, invoices, orders, etc.), and as such, document pages often have associated workflow or audit trail requirements.
+The Document pages' primary purpose is to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents (quotes, invoices, orders, etc.), and as such, document pages often have associated workflow or audit trail requirements.
 
 Below are examples of Card and Document page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|Field groups are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart’s height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
+|Field groups are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart's height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
 |![Card and Document layout 1](media/page-layout-card-doc-1.png "Card/Document example 1")|![Card and Document layout 1](media/page-layout-card-doc-2.png "Card/Document example 2")|![Card and Document layout 1](media/page-layout-card-doc-3.png "Card/Document example 3")|
 
-From the user’s perspective, the following are qualities of a well-designed card or document page:
+From the user's perspective, the following are qualities of a well-designed card or document page:
 
 - Uses the page type `Card` if the page represents master or reference data, or is a setup page.
 - Uses the page type `Document` if the page represents a transaction or other important event in the domain of business.
@@ -142,7 +142,7 @@ From the user’s perspective, the following are qualities of a well-designed ca
 
 ## ListPlus page layouts 
 
-The ListPlus pages’ primary purpose is to support users in managing or browsing a collection of data, e.g. entries, related to a specific business entity or event. For example, the *Customer Sales* page is a ListPlus page that shows sales numbers for a customer and providing dedicated viewing options for sales analysis.
+The ListPlus pages' primary purpose is to support users in managing or browsing a collection of data, or entries, related to a specific business entity or event. For example, the *Customer Sales* page is a ListPlus page that shows sales numbers for a customer and providing dedicated viewing options for sales analysis.
 
 The ListPlus page type is a versatile means to support analysis and management tasks in a specific entity context (named by the page title). ListPlus pages can show persistent data about the entity/event in addition to giving options for how data is viewed or filtered.
 
@@ -150,10 +150,10 @@ A ListPlus page should generally not contain a repeater group but will typically
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two (or more) ListParts, they will share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
+|Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two or more ListParts, they'll share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
 |![ListPlus layout 1](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout 2](media/page-layout-listplus-3.png "ListPlus example 3")|
 
-From the user’s perspective, the following are qualities of a well-designed ListPlus page:
+From the user's perspective, the following are qualities of a well-designed ListPlus page:
 
 - Has a page title that clearly identifies the context for the information presented in the page.
 - Is optimized for showing one set of details, and giving the user means to work with them.
@@ -172,7 +172,7 @@ List pages must contain a single `Repeater` group. In addition, a list can inclu
 |The repeater group assumes full vertical space.|When a field group or cardpart is included, space for repeater is reduced.|When a listpart is included, space is shared equally between part and repeater.|
 |![List layout 1](media/page-layout-list-1.png "List example 1")|![List layout 2](media/page-layout-list-2.png "List example 2")|![List layout 2](media/page-layout-list-3.png "List example 3")|
 
-From the user’s perspective, the following are qualities of a well-designed List page:
+From the user's perspective, the following are qualities of a well-designed List page:
 
 - Defines a set of columns that is optimized for viewing and filtering the given collection. Optimize the column order for data entry if the list is editable.
 - Has a page title that clearly names or identifies the collection of entities/entries presented.
@@ -182,10 +182,10 @@ From the user’s perspective, the following are qualities of a well-designed Li
 
 ## Worksheet page layouts
 
-A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users’ work with the collection, such as with journals (which typically involves data entry) and inquiry pages (which is for querying data).
+A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users' work with the collection, such as with journals (which typically involves data entry) and inquiry pages (which is for querying data).
 
 > [!NOTE]  
-> The Worksheet page type does not support the same part and group compositions as the List page type.
+> The Worksheet page type doesn't support the same part and group compositions as the List page type.
 
 Worksheet pages must contain a single `Repeater` group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
@@ -194,7 +194,7 @@ Worksheet pages must contain a single `Repeater` group. In addition, a worksheet
 |The Repeater group takes full vertical space, leaving space for groups above and below.|If a ListPart is included, the vertical space is shared with Repeater.|When a ListPart is included, space is shared equally between part and Repeater.| 
 |![Worksheet layout 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout 2](media/page-layout-worksheet-3.png "Worksheet example 3")|
 
-From the user’s perspective, the following are qualities of a well-designed worksheet page:
+From the user's perspective, the following are qualities of a well-designed worksheet page:
 
 - Defines a set of columns that is optimized for overviewing and managing the given collection. Columns are ordered relative to their importance.
 - Has fields above the grid that specify filtering options or specify the default values effective during data entry and editing in the grid.
@@ -218,5 +218,5 @@ Given the size of the screen where the dialog appears, more or less of the page 
 [Page Properties Overview](properties/devenv-page-property-overview.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
-[Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
