@@ -33,7 +33,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
 |`NavigatePage`|Multi-page dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields, a list, and parts.|
 |`CardPart`|A page that is included in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
-|`ListPart`|A page that is included in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below.|
+|`ListPart`|A page that is included in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 
 ### The two principal categories of page types
 
@@ -53,7 +53,7 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 The `CardPart` page type is an entity-oriented page type for inclusion in another page, for example, in a FactBox.
 
 > [!NOTE]  
-> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. However, an entity-oriented task page *can* include a list part page that, in turn, contains a `Repeater` group.
+> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented task page *can* include a list part page that, in turn, contains a repeater group.
 
 #### Collection-oriented pages 
 
@@ -132,7 +132,7 @@ Below are examples of Card and Document page compositions, showing how space is 
 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
-|Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be included. In this case, the first ListPart gets most space.|When there no ListParts included, the Document layout follows the Card's exactly.|
+|Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be included. In this case, the first ListPart is allowed the most space.|When no ListPart is included, the Document layout follows the Card layout exactly.|
 |![Document layout 1](media/page-layout-doc-1.png "Document example 1")|![Document layout 2](media/page-layout-doc-2.png "Document example 2")|![Document layout 3](media/page-layout-doc-3.png "Document example 3")|
 
 From the user's perspective, the following are qualities of a well-designed card or document page:
