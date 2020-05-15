@@ -25,8 +25,8 @@ The following table provides an overview of the page types supported in [!INCLUD
 |---------|---------------|----------------|---------------|
 |`RoleCenter`|Overview of business performance and the start page for a specific user profile.|Defined by the included parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
 |`Card`|Master, reference, and set up data management. [Card page example](devenv-simple-card-page-example.md)|Single entity|Titled entity with FastTabs. May include parts.|
-|`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart as the second section.|
-|`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with FastTabs. Usually includes at least one `ListPart`.|
+|`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart immediately follow the header section(s).|
+|`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with at least one `ListPart`. Can have fields above or below the part(s).|
 |`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list's `Repeater`.|
 |`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet's `Repeater`.|
 |`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
@@ -126,7 +126,7 @@ Below are examples of Card and Document page compositions, showing how space is 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
 |Sections are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart's height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
-|![Card layout 1](media/page-layout-card-1.png "Card example 1")|![Card layout 2](media/page-layout-card-2.png "Card example 2")|![Card and Document layout 1](media/page-layout-card-doc-3.png "Card/Document example 3")|
+|![Card layout 1](media/page-layout-card-1.png "Card example 1")|![Card layout 2](media/page-layout-card-2.png "Card example 2")|![Card layout 3](media/page-layout-card-3.png "Card example 3")|
 
 ### Document layouts
 
