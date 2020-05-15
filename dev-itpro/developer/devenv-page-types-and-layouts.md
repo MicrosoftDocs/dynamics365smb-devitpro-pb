@@ -33,9 +33,9 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
 |`NavigatePage`|Multi-page dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields, a list, and parts.|
 |`CardPart`|A page that is included in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
-|`ListPart`|A page that is included in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table.|
+|`ListPart`|A page that is included in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below.|
 
-### The two principal page types 
+### The two principal categories of page types
 
 A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exist: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
 
@@ -121,10 +121,19 @@ The Document pages' primary purpose is to represent a transaction or other impor
 
 Below are examples of Card and Document page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
+### Card layouts
+
 |Example 1|Example 2|Example 3|
-|---------|---------------|----|
-|Field groups are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart's height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
-|![Card and Document layout 1](media/page-layout-card-doc-1.png "Card/Document example 1")|![Card and Document layout 1](media/page-layout-card-doc-2.png "Card/Document example 2")|![Card and Document layout 1](media/page-layout-card-doc-3.png "Card/Document example 3")|
+|---------|---------|---------|
+|Sections are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart's height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
+|![Card layout 1](media/page-layout-card-1.png "Card example 1")|![Card layout 2](media/page-layout-card-2.png "Card example 2")|![Card and Document layout 1](media/page-layout-card-doc-3.png "Card/Document example 3")|
+
+### Document layouts
+
+|Example 1|Example 2|Example 3|
+|---------|---------|---------|
+|Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be included. In this case, the first ListPart gets most space.|When there no ListParts included, the Document layout follows the Card's exactly.|
+|![Document layout 1](media/page-layout-doc-1.png "Document example 1")|![Document layout 2](media/page-layout-doc-2.png "Document example 2")|![Document layout 3](media/page-layout-doc-3.png "Document example 3")|
 
 From the user's perspective, the following are qualities of a well-designed card or document page:
 
