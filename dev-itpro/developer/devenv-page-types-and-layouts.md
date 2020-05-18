@@ -40,7 +40,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 
 ### The two principal categories of page types
 
-A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exist: *entity*-orientation (typical for the `Card` page type) and *collection*-orientation (typical for the `List` page type.) 
+A fundamental characteristic of a page type is how it relates to the data presented on the page. Two principal ways exist: *entity*-oriented (typical for the `Card` page type) and *collection*-oriented (typical for the `List` page type.) 
 
 |`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
 |---------|---------------|
@@ -49,18 +49,18 @@ A fundamental characteristic of a page type is how it relates to the data presen
 
 #### Entity-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented task page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction or other important business event. 
+In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction, or other important business event, e.g. a sales transaction.
 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
 The `CardPart` page type is an entity-oriented page type for inclusion in another page, for example, in a FactBox.
 
 > [!NOTE]  
-> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented task page *can* embed a list part page that, in turn, contains a repeater group.
+> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented page *can* embed a list part page that, in turn, contains a repeater control.
 
 #### Collection-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (like showing customers, items, and so on.) from which the user can seek out the entities to work with.
+In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (for example showing customers, items, and so on.) from which the user can seek out the entities to work with.
 
 The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (for example, in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
 
@@ -82,7 +82,7 @@ How space allocation takes place for a given page depends on the chosen page typ
 
 ### A page is Content + Actions + FactBoxes
 
-For all task pages, excluding dialogs and part pages, there is a common structure to the areas of a page where content, FactBoxes, and actions can be displayed.
+For all pages (excluding `RoleCenter`, dialogs, and part pages) there is a common structure to the areas of a page where content, FactBoxes, and actions can be displayed.
 
 ![Containers](media/page-layout-containers.png "Containers for Content and FactBoxes, plus actions.")
 
@@ -138,6 +138,12 @@ Below are examples of Card and Document page compositions, showing how space is 
 |Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be embedded. In this case, the first ListPart is allowed the most space.|When no ListPart is embedded, the Document layout follows the Card layout exactly.|
 |![Document layout 1](media/page-layout-doc-1.png "Document example 1")|![Document layout 2](media/page-layout-doc-2.png "Document example 2")|![Document layout 3](media/page-layout-doc-3.png "Document example 3")|
 
+> [!NOTE]  
+> The Document page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
+
+
+### The well-designed card or document page
+
 From the user's perspective, the following are qualities of a well-designed card or document page:
 
 - Uses the page type `Card` if the page represents master or reference data, or is a setup page.
@@ -148,9 +154,6 @@ From the user's perspective, the following are qualities of a well-designed card
 - Has one or two FactBoxes to give relevant statistics and quick access to related documents.
 - For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
 
-> [!NOTE]  
-> The Document page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
-
 
 ## ListPlus page layouts 
 
@@ -158,7 +161,7 @@ The ListPlus pages' primary purpose is to support users in managing or browsing 
 
 The ListPlus page type is a versatile means to support analysis and management tasks in a specific entity context (named by the page title). ListPlus pages can show persistent data about the entity/event in addition to giving options for how data is viewed or filtered.
 
-A ListPlus page should generally not contain a repeater group but will typically embed a `ListPart` page that in turn embeds a repeater group. In addition, a ListPlus page can embed groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
+A ListPlus page should generally not contain a repeater control but will typically embed a `ListPart` page that in turn embeds a repeater. In addition, a ListPlus page can embed groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
@@ -181,7 +184,7 @@ List pages must contain a single `Repeater` group. In addition, a list can embed
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|The repeater group assumes full vertical space.|When a field group or cardpart is embedded, space for repeater is reduced.|When a listpart is embedded, space is shared equally between part and repeater.|
+|The repeater control assumes full vertical space.|When a field group or cardpart is embedded, space for repeater is reduced.|When a listpart is embedded, space is shared equally between part and repeater.|
 |![List layout 1](media/page-layout-list-1.png "List example 1")|![List layout 2](media/page-layout-list-2.png "List example 2")|![List layout 2](media/page-layout-list-3.png "List example 3")|
 
 From the user's perspective, the following are qualities of a well-designed List page:
@@ -194,7 +197,9 @@ From the user's perspective, the following are qualities of a well-designed List
 
 ## Worksheet page layouts
 
-A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users' work with the collection, such as with journals (which typically involves data entry) and inquiry pages (which is for querying data).
+A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users' understanding of the collection, such as with journals (where the user selects a batch) and inquiry pages (where the user forms a query).
+
+Use a Worksheet page (instead of a List page) if there are header fields that determine or subdivide a collection, i.e. the user must make a choice in the header field before the repeater has data to show at all.
 
 > [!NOTE]  
 > The Worksheet page type doesn't support the same part and group compositions as the List page type.
@@ -203,7 +208,7 @@ Worksheet pages must contain a single `Repeater` group. In addition, a worksheet
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|The Repeater group takes full vertical space, leaving space for groups above and below.|If a ListPart is embedded, the vertical space is shared with Repeater.|When a ListPart is embedded, space is shared equally between part and Repeater.| 
+|The repeater control takes full vertical space, leaving space for groups above and below.|If a ListPart is embedded, the vertical space is shared with the repeater.|When a ListPart is embedded, space is shared equally between part and repeater.| 
 |![Worksheet layout 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout 2](media/page-layout-worksheet-3.png "Worksheet example 3")|
 
 From the user's perspective, the following are qualities of a well-designed worksheet page:
