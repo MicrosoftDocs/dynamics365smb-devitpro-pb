@@ -33,6 +33,7 @@
 <!--AppSourcevalidation-->
 ## AppSource Validation
 ### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 ### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 ### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 ### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
