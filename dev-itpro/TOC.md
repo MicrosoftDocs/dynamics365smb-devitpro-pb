@@ -352,8 +352,6 @@
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
-### [Working with AL Methods](developer/devenv-al-methods.md)
-### [Handling Errors by Using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
@@ -390,6 +388,7 @@
 #### [Control Add-In Object](developer/devenv-control-addin-object.md)
 ### Methods
 #### [Methods Overview](developer/methods-auto/library.md)
+#### [Working with AL Methods](developer/devenv-al-methods.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Handling Errors Using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
