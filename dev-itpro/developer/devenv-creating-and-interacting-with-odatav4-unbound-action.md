@@ -20,7 +20,7 @@ Unbound actions represent reusable operations that you can perform using an ODat
 
 To declare an OData unbound action define a codeunit with a procedure with the desired business logic.
 
-The following example illustrates a simple codeunit with two procedures that can be exposed as a web service and called as OData unbound actions.
+The following example illustrates a simple codeunit with three procedures that can be exposed as a web service and called as OData unbound actions.
 
 ```
 codeunit 50100 "MiscOperations"
