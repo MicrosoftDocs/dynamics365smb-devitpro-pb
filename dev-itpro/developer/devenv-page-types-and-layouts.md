@@ -15,6 +15,8 @@ ms.service: "dynamics365-business-central"
 
 Understanding how [!INCLUDE[prodshort](includes/prodshort.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
+In the following we are focusing on how the pages appear when a user accesses [!INCLUDE[prodshort](includes/prodshort.md)] from a desktop browser. But it is an important point that the same page types apply across the different form factors of apps, and that the page type layouts automatically adapt to work well on different devices, e.g. on a phone or a tablet. 
+
 ## Understanding page types 
 
 Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support. 
@@ -23,17 +25,18 @@ The following table provides an overview of the page types supported in [!INCLUD
 
 |Page type|Examples of use|Main data display|Characteristics|
 |---------|---------------|----------------|---------------|
-|`RoleCenter`|Overview of business performance and the start page for a specific user profile.|Defined by the included parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
-|`Card`|Master, reference, and set up data management. [Card page example](devenv-simple-card-page-example.md)|Single entity|Titled entity with FastTabs. May include parts.|
+|`RoleCenter`|Overview of business performance and the start page for a specific user profile.|Defined by the embedded parts.|A collection of parts (Cues, KPIs, etc.) and the contents of the navigation pane.|
+|`Card`|Master, reference, and set up data management. [Card page example](devenv-simple-card-page-example.md)|Single entity|Titled entity with FastTabs. May embed parts.|
 |`Document`|Transaction and other document management.|Single entity|Titled entity with FastTabs. Should have the document lines ListPart immediately follow the header section(s).|
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with at least one `ListPart`. Can have fields above or below the part(s).|
 |`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list's `Repeater`.|
 |`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet's `Repeater`.|
 |`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
 |`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
-|`NavigatePage`|Multi-page dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields, a list, and parts.|
-|`CardPart`|A page that is included in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
-|`ListPart`|A page that is included in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
+|`NavigatePage`|Multi-step dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields, a list, and parts.|
+|`CardPart`|A page that is embedded in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
+|`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
+|`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|
 
 ### The two principal categories of page types
 
@@ -53,7 +56,7 @@ In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used 
 The `CardPart` page type is an entity-oriented page type for inclusion in another page, for example, in a FactBox.
 
 > [!NOTE]  
-> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented task page *can* include a list part page that, in turn, contains a repeater group.
+> Since entity-oriented pages represent a *single* entity, such as a customer or an item, we recommend that you do not use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented task page *can* embed a list part page that, in turn, contains a repeater group.
 
 #### Collection-oriented pages 
 
@@ -71,9 +74,9 @@ The page types in [!INCLUDE[prodshort](includes/prodshort.md)] that are availabl
 
 Within a page, the developer can combine page fields into groups. This can help the user overview the page by placing related fields together. And within a group, *subgroups* can further increase the structure of the data displayed in a page. 
 
-Besides adding fields and groups to a page, it is possible to include another page of type `CardPart` or `ListPart`. (These two page types can in turn not include other pages.) 
+Besides adding fields and groups to a page, it is possible to embed another page of type `CardPart` or `ListPart`. (These two page types can in turn not embed other pages.) 
 
-When pages are created that include parts, [!INCLUDE[prodshort](includes/prodshort.md)] divides the available screen real estate between the page's groups of fields and any included pages. Screen space is divided between field groups and included pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
+When pages are created that embed parts, [!INCLUDE[prodshort](includes/prodshort.md)] divides the available screen real estate between the page's groups of fields and any embedded pages. Screen space is divided between field groups and embedded pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
 How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window.
 
@@ -125,14 +128,14 @@ Below are examples of Card and Document page compositions, showing how space is 
 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
-|Sections are placed vertically from top to bottom of the page.|A ListPart can be included. In this case, the ListPart's height is limited.|When a ListPart is included as the last part on the page, it will expand to fill space.|
+|Sections are placed vertically from top to bottom of the page.|A ListPart can be embedded. In this case, the ListPart's height is limited.|When a ListPart is embedded as the last part on the page, it will expand to fill space.|
 |![Card layout 1](media/page-layout-card-1.png "Card example 1")|![Card layout 2](media/page-layout-card-2.png "Card example 2")|![Card layout 3](media/page-layout-card-3.png "Card example 3")|
 
 ### Document layouts
 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
-|Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be included. In this case, the first ListPart is allowed the most space.|When no ListPart is included, the Document layout follows the Card layout exactly.|
+|Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be embedded. In this case, the first ListPart is allowed the most space.|When no ListPart is embedded, the Document layout follows the Card layout exactly.|
 |![Document layout 1](media/page-layout-doc-1.png "Document example 1")|![Document layout 2](media/page-layout-doc-2.png "Document example 2")|![Document layout 3](media/page-layout-doc-3.png "Document example 3")|
 
 From the user's perspective, the following are qualities of a well-designed card or document page:
@@ -142,7 +145,7 @@ From the user's perspective, the following are qualities of a well-designed card
 - Has a page title that clearly identifies the data represented in the page.
 - Is optimized for overview by organizing data in FastTabs and marking relevant fields as `Promoted` or `Additional`.
 - Favors header fields and other important fields by placing them in a FastTab titled General that come first on the page.
-- Includes one or two FactBoxes to give relevant statistics and quick access to related documents.
+- Has one or two FactBoxes to give relevant statistics and quick access to related documents.
 - For Document pages, a FastTab titled *Lines* comes second on the page with the document lines.
 
 > [!NOTE]  
@@ -155,7 +158,7 @@ The ListPlus pages' primary purpose is to support users in managing or browsing 
 
 The ListPlus page type is a versatile means to support analysis and management tasks in a specific entity context (named by the page title). ListPlus pages can show persistent data about the entity/event in addition to giving options for how data is viewed or filtered.
 
-A ListPlus page should generally not contain a repeater group but will typically include a `ListPart` page that in turn includes a repeater group. In addition, a ListPlus page can include groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
+A ListPlus page should generally not contain a repeater group but will typically embed a `ListPart` page that in turn embeds a repeater group. In addition, a ListPlus page can embed groups of fields and cardparts. Below are examples of ListPlus page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
@@ -174,11 +177,11 @@ From the user's perspective, the following are qualities of a well-designed List
 
 List pages support users viewing and finding specific entities or entries in a collection. Lists that are editable have cells available for data entry and update.
 
-List pages must contain a single `Repeater` group. In addition, a list can include groups of fields, card parts, and list parts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
+List pages must contain a single `Repeater` group. In addition, a list can embed groups of fields, card parts, and list parts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|The repeater group assumes full vertical space.|When a field group or cardpart is included, space for repeater is reduced.|When a listpart is included, space is shared equally between part and repeater.|
+|The repeater group assumes full vertical space.|When a field group or cardpart is embedded, space for repeater is reduced.|When a listpart is embedded, space is shared equally between part and repeater.|
 |![List layout 1](media/page-layout-list-1.png "List example 1")|![List layout 2](media/page-layout-list-2.png "List example 2")|![List layout 2](media/page-layout-list-3.png "List example 3")|
 
 From the user's perspective, the following are qualities of a well-designed List page:
@@ -187,7 +190,7 @@ From the user's perspective, the following are qualities of a well-designed List
 - Has a page title that clearly names or identifies the collection of entities/entries presented.
 - If a summary or additional detail related to the selected row are shown, these appear below the list.
 - If custom viewing options are available, these appear above the list.
-- Includes one or two FactBoxes to give essential collection statistics, and relevant related details for the selected row.
+- Has one or two FactBoxes to give essential collection statistics, and relevant related details for the selected row.
 
 ## Worksheet page layouts
 
@@ -196,11 +199,11 @@ A Worksheet page lets users view and manage a collection of entries in tabular o
 > [!NOTE]  
 > The Worksheet page type doesn't support the same part and group compositions as the List page type.
 
-Worksheet pages must contain a single `Repeater` group. In addition, a worksheet can include groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
+Worksheet pages must contain a single `Repeater` group. In addition, a worksheet can embed groups of fields, cardparts, and listparts. Below are examples of list page compositions, showing how space is divided. Parts can be combined in more ways than shown here to suit different scenarios.
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|The Repeater group takes full vertical space, leaving space for groups above and below.|If a ListPart is included, the vertical space is shared with Repeater.|When a ListPart is included, space is shared equally between part and Repeater.| 
+|The Repeater group takes full vertical space, leaving space for groups above and below.|If a ListPart is embedded, the vertical space is shared with Repeater.|When a ListPart is embedded, space is shared equally between part and Repeater.| 
 |![Worksheet layout 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout 2](media/page-layout-worksheet-3.png "Worksheet example 3")|
 
 From the user's perspective, the following are qualities of a well-designed worksheet page:
@@ -214,7 +217,7 @@ From the user's perspective, the following are qualities of a well-designed work
 
 Some page types in [!INCLUDE[prodshort](includes/prodshort.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, as well as dialogs defined as report request pages.
 
-It is also possible to use the common page types (`Card`, `Document`, `List`, etc.) to present a dialog to the user. In this case, pages are created, composed, and can include the same elements, as when displayed ordinarily. Presenting the page to the user as a dialog requires certain AL code that activates the dialog mode. When this happens, the page is shown with dismiss buttons in the page footer.
+It is also possible to use the common page types (`Card`, `Document`, `List`, etc.) to present a dialog to the user. In this case, pages are created, composed, and can embed the same elements, as when displayed ordinarily. Presenting the page to the user as a dialog requires certain AL code that activates the dialog mode. When this happens, the page is shown with dismiss buttons in the page footer.
 
 ![Dialog page layouts](media/page-layout-dialog.png "Dialog page layout")
 
