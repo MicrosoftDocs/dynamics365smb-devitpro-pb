@@ -49,22 +49,22 @@ The following code illustrates the basic syntax and structure of an upgrade code
 ```
 codeunit [ID] [NAME]
 {
-	Subtype=Upgrade;
+    Subtype=Upgrade;
 
-	trigger OnCheckPreconditionsPerCompany()
-	begin
-		// Code to make sure company is OK to upgrade.
-	end;
+    trigger OnCheckPreconditionsPerCompany()
+    begin
+        // Code to make sure company is OK to upgrade.
+    end;
 
-	trigger OnUpgradePerCompany()
-	begin
-		// Code to perform company related table upgrade tasks
-	end;
+    trigger OnUpgradePerCompany()
+    begin
+        // Code to perform company related table upgrade tasks
+    end;
 
-	trigger OnValidateUpgradePerCompany()
-	begin
-		// Code to make sure that upgrade was successful for each company
-	end;
+    trigger OnValidateUpgradePerCompany()
+    begin
+        // Code to make sure that upgrade was successful for each company
+    end;
 }
 ```
 > [!TIP]
@@ -77,14 +77,14 @@ The `AppVersion` is one of the available properties and it's value differs depen
 
 - Normal operation: `AppVersion` represents the value of the currently installed extension.
 - Installation code: `AppVersion` represents the version of the extension we are trying to install.
-- Upgrade code: `AppVersion` represents the version of the extension that we are upgrading to (e.g. ‘newer’ version).
+- Upgrade code: `AppVersion` represents the version of the extension that we are upgrading to (e.g. 'newer' version).
 
 Another one of the more important properties is the `DataVersion` property, that represents the value of most recently installed/uninstalled/upgraded version of the extension, meaning that it reflects the most recent version of the data on the system, be that from the currently installed, or a previously uninstalled extension. The `DataVersion` property value differs depending on the context of the code being run:
 
 - Normal operation: `DataVersion` represents the version of the currently installed extension, in which case it is identical to the `AppVersion` property.
 - Installation code: 
     - Reinstallation (applying the same version): `DataVersion` represents the version of the extension we are trying to install (identical to the `AppVersion` property).
-    - New installation: `DataVersion` represents the value of ‘0.0.0.0’ which is used to indicate that there is no data.
+    - New installation: `DataVersion` represents the value of '0.0.0.0' which is used to indicate that there is no data.
 - Upgrade code:
     - The version of the extension we are upgrading from. Either what was last uninstalled, or what is currently installed.
 
