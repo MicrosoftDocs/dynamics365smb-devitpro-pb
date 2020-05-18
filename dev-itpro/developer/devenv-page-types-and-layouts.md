@@ -199,7 +199,7 @@ From the user's perspective, the following are qualities of a well-designed List
 
 A Worksheet page lets users view and manage a collection of entries in tabular or matrix form. It is well suited for cases when a custom filter or a set of default field values is the basis for users' understanding of the collection, such as with journals (where the user selects a batch) and inquiry pages (where the user forms a query).
 
-Use a Worksheet page (instead of a List page) if there are header fields that determine or subdivide a collection, i.e. the user must make a choice in the header field before the repeater has data to show at all.
+Use a Worksheet page (instead of a List page) when there are header fields that determine or subdivide a collection, i.e. the user must make a choice in the header field before the repeater has data to show at all. Or when there are header fields that represent default values for data entry in the repeater.
 
 > [!NOTE]  
 > The Worksheet page type doesn't support the same part and group compositions as the List page type.
