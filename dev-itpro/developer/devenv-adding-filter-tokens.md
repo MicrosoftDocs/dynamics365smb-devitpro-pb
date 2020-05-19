@@ -15,12 +15,12 @@ In the client, when filtering lists using the filter pane, users can enter filte
 
 There are several useful filter tokens available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, entering **%mycustomers** in a **Customer No.** field will resolve to the set of customers in the user's **My Customers** list such as `1001|1002`, making it easy to find relevant sales orders for customers 1001 and 1002.
 
-You can add custom filter tokens and make these available in any language and across the application. To add your custom filter token, you need to define the token word that users will enter as filter criteria, and define a handler that resolves the token to a concrete value at runtime.
+You can add custom filter tokens and make these available in any language and across the application. To add your custom filter token, you need to define the token word that users will enter as filter criteria, and define a handler that resolves the token to a concrete value at runtime. For more information, see [Filter Tokens](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Filter%20Tokens) in our ALAppExtensions repository on GitHub.
 
 ## Defining the token word and the handler
 
 To create the desired token word, start by defining a multi-language text string for your word. Subscribe to the `OnResolveTextFilterToken` event associated with the `MakeTextFilter` method from the `Filter Token` codeunit.  
-In the event subscriber, if the value of the `TextFilterText` parameter contains the token string proceed to process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them together, by inserting the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilterText` parameter to the value of the final filter string.
+In the event subscriber, if the value of the `TextFilter` parameter contains the token string proceed to process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them together, by inserting the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilter` parameter to the value of the final filter string.
 
 > [!TIP]  
 > Filter criteria will often contain symbols along with filter tokens. It is recommended that you only modify the filter token you have introduced and preserve the rest of the filter string. 
