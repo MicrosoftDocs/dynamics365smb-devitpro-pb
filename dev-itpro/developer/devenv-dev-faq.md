@@ -18,15 +18,18 @@ This topic contains a number of frequently asked questions and answers to these 
 <br>
 <details><summary><b>How do I get started?</b></summary>
 <p>
-For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [aka.ms/GetStartedWithApps](https://aka.ms/GetStartedWithApps)
+
+For an overview of developing apps for Business Central, see [aka.ms/GetStartedWithApps](readiness/readiness-welcome.md).
 
 Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
 </p>
 </details>
 <br>
-<details><summary><b>Which version of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] should I use?</b></summary>
+<details><summary><b>Which version of the AL Language extension should I use?</b></summary>
 <p>
-1) For [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cloud sandboxes you must use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+
+1) For Business Central cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+
 2) For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] that is available on the Docker images.
 </p>
 </details>
