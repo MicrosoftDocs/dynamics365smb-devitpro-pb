@@ -10,7 +10,9 @@ ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 04/01/2020
 ---
+
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
+
 
 This section contains answers to frequently asked questions about developing for and administering [!INCLUDE[prodlong](includes/prodlong.md)].  
 
