@@ -27,42 +27,26 @@ To prevent exposing personal data, make sure that Email or Phone No information 
 ## Bad code example
 ```
 table 18 Customer
-
 {
-
    ...
-
    fields
-
    {
-
       field(1; Email; Text[50]){ CaptionML = ENU = 'john.smith@contoso.com'; }
-
    }
-
    ...
-
 }
 ```
 
 ## Good code example
 ```
 table 18 Customer
-
 {
-
    ...
-
    fields
-
    {
-
       field(1; Email; Text[50]){ CaptionML = ENU = 'Email'; }
-
    }
-
    ...
-
 }
 ```
 ## Remarks
