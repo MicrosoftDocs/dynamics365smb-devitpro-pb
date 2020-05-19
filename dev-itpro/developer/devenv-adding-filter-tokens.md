@@ -11,7 +11,6 @@ author: mikebcMSFT
 ---
 
 # Adding Filter Tokens
-
 In the client, when filtering lists using the filter pane, users can enter filter tokens, which are special words that resolve to one or more values. This powerful feature makes filtering easier by reducing the need to navigate to other pages to look up values to enter as filter criteria.
 
 There are several useful filter tokens available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, entering **%mycustomers** in a **Customer No.** field will resolve to the set of customers in the user's **My Customers** list such as `1001|1002`, making it easy to find relevant sales orders for customers 1001 and 1002.
@@ -20,7 +19,7 @@ You can add custom filter tokens and make these available in any language and ac
 
 ## Defining the token word and the handler
 
-To create the desired token word, start by defining a multi-language text string for your word. Subscribe to the `OnBeforeMakeTextFilter` or `OnAfterMakeTextFilter` events associated with the `MakeTextFilter` method from the `TextManagement` codeunit.  
+To create the desired token word, start by defining a multi-language text string for your word. Subscribe to the `OnResolveTextFilterToken` event associated with the `MakeTextFilter` method from the `Filter Token` codeunit.  
 In the event subscriber, if the value of the `TextFilterText` parameter contains the token string proceed to process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them together, by inserting the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilterText` parameter to the value of the final filter string.
 
 > [!TIP]  
@@ -36,30 +35,35 @@ This example shows how you can use the guidelines above to create the **%MYTOKEN
 ```
 codeunit 50101 MyAccountFilterTokenSimple
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::TextManagement, 'OnAfterMakeTextFilter', '', true, true)]
-    local procedure FilterMyAccountsOnAfterMakeTextFilter(var Position: Integer; var TextFilterText: Text)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Filter Tokens", 'OnResolveTextFilterToken', '', true, true)]
+    local procedure FilterMyAccounts(TextToken: Text; var TextFilter: Text; var Handled: Boolean)
     var
-        MyAccountTxt: Label 'MYTOKEN';
         MyAccount: Record "My Account";
         MaxCount: Integer;
     begin
-        if StrLen(TextFilterText) < 3 then
-            exit;
-        if StrPos(UpperCase(MyAccountTxt), UpperCase(TextFilterText)) = 0 then
+        if StrLen(TextToken) < 3 then
             exit;
 
-        MaxCount := 2000;
-        MyAccount.SetRange("User ID", UserId);
+        if StrPos(UpperCase('MYTOKEN'), UpperCase(TextToken)) = 0 then
+            exit;
+
+       Handled := true;
+
+        MaxCount := 20;
+        MyAccount.SetRange("User ID", UserId());
+
         if MyAccount.FindSet() then begin
             MaxCount -= 1;
-            TextFilterText := MyAccount."Account No.";
-            if MyAccount.next <> 0 then
+            TextFilter := MyAccount."Account No.";
+
+            if MyAccount.Next() <> 0 then
                 repeat
                     MaxCount -= 1;
-                    TextFilterText += '|' + MyAccount."Account No."
-                until (MyAccount.Next = 0) or (MaxCount <= 0);
+                    TextFilter += '|' + MyAccount."Account No.";
+                until (MyAccount.Next() = 0) or (MaxCount <= 0);
         end;
     end;
+
 }
 
 ```
