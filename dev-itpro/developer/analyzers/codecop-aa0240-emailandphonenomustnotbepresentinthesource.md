@@ -67,7 +67,20 @@ table 18 Customer
 ```
 ## Remarks
 
-The following elements are checked in code: object names, table captions, table field names, table field captions, page captions, page field names, page field captions, page field tooltips, the value of labels (in declaration), the value of text constants, translation files (tags <source>, <target>, <note>), and the app manifest file (Name, Brief, Description, Publisher).
+The following elements are checked in code: 
+
+- Object names
+- Table captions
+- Table field names
+- Table field captions
+- Page captions
+- Page field names
+- Page field captions
+- Page field tooltips
+- Value of labels (in declaration)
+- Value of text constants
+- Translation files (tags <source>, <target>, <note>)
+- App manifest file (Name, Brief, Description, Publisher)
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
