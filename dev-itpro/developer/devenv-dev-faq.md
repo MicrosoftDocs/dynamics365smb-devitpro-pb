@@ -25,7 +25,7 @@ Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the 
 </p>
 </details>
 <br>
-<details><summary><b>Which version of the AL Language extension should I use?</b></summary>
+<details><summary><b>Which version of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] should I use?</b></summary>
 <p>
 
 1) For Business Central cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
@@ -36,12 +36,15 @@ Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the 
 <br>
 <details><summary>How do I enable the debugger?</summary>
 <p>
+
 To read about enabling the Visual Studio Code Debugger, see here [Debugging](devenv-debugging.md).
+
 </p>
 </details>
 <br>
 <details><summary>Can I create something similar to Menusuites?</summary>
 <p>
+
 In the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the concept of Menusuites is not supported. The two primary purposes of Menusuites are:
 
 - Making pages searchable
@@ -50,12 +53,15 @@ In the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the concept of M
 The first purpose can be achieved in Extensions by using the new properties added to Pages and Reports. For more information, see [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md).
 
 The second purpose can be achieved by extending the Navigation Pane page and/or by adding Actions to other existing pages that can serve as a navigation starting point. For more information, see [Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md).
+
 </p>
 </details>
 <br>
 <details><summary>File APIs are not available in Extensions V2. What do I do?</summary>
 <p>
+
 Code that relies on temporary files must be rewritten to rely on `InStream` and `OutStream` types. Code that relies on permanent files must be rewritten to use another form of permanent storage.
+
 </p>
 </details>
 <br>
