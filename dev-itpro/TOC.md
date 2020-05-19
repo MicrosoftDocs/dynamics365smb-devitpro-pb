@@ -51,6 +51,7 @@
 <!--AppSourcevalidation-->
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
@@ -74,7 +75,6 @@
 ## Monitoring and Analyzing Telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
-### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
@@ -110,6 +110,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
 ### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 ### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
@@ -644,10 +645,6 @@
 <!-- deployment -->
 ## Deployment
 ### [Overview](deployment/deployment.md)
-### What's New or Changed
-#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
 ### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)

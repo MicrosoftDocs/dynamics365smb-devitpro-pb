@@ -20,7 +20,7 @@ Unbound actions represent reusable operations that you can perform using an ODat
 
 To declare an OData unbound action define a codeunit with a procedure with the desired business logic.
 
-The following example illustrates a simple codeunit with two procedures that can be exposed as a web service and called as OData unbound actions.
+The following example illustrates a simple codeunit with three procedures that can be exposed as a web service and called as OData unbound actions.
 
 ```
 codeunit 50100 "MiscOperations"
@@ -75,10 +75,7 @@ POST /ODataV4/{serviceName}_{procedureName}?company={companyName|companyId} HTTP
 ```
 POST {baseUrl}/ODataV4/MiscOperations_GetLengthOfStringWithConfirmation?company=CRONUS%20USA%20Inc. HTTP/1.1
 {
-    "inputJson": {
-        "str": "Hello world!",
-        "confirm": true
-    }
+    "inputJson": "{\"str\":\"Hello world!\",\"confirm\":true}"
 }
 ```
 
@@ -88,7 +85,7 @@ POST {baseUrl}/ODataV4/MiscOperations_GetLengthOfStringWithConfirmation?company=
 HTTP/1.1 200 OK
 {
   "@odata.context": "{baseUrl}/ODataV4/$metadata#Edm.Int32",
-  "value": -100
+  "value": 12
 }
 ```
 
