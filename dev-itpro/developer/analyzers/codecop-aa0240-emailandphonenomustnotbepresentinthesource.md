@@ -20,6 +20,55 @@ Email and Phone No must not be present in any part of the source code.
 Email and Phone No must not be present in any part of the source code that might be collected as telemetry data.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Reason for the rule
+To prevent exposing personal data, make sure that Email or Phone No information is not available in the source code because that might be collected as telemetry data.
+
+## Bad code example
+```
+table 18 Customer
+
+{
+
+   ...
+
+   fields
+
+   {
+
+      field(1; Email; Text[50]){ CaptionML = ENU = 'john.smith@contoso.com'; }
+
+   }
+
+   ...
+
+}
+```
+
+## Good code example
+```
+table 18 Customer
+
+{
+
+   ...
+
+   fields
+
+   {
+
+      field(1; Email; Text[50]){ CaptionML = ENU = 'Email'; }
+
+   }
+
+   ...
+
+}
+```
+## Remarks
+
+The following elements are checked in code: object names, table captions, table field names, table field captions, page captions, page field names, page field captions, page field tooltips, the value of labels (in declaration), the value of text constants, translation files (tags <source>, <target>, <note>), and the app manifest file (Name, Brief, Description, Publisher).
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
