@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 Understanding how [!INCLUDE[prodshort](includes/prodshort.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
-In the following we are focusing on how the pages appear when a user accesses [!INCLUDE[prodshort](includes/prodshort.md)] from a desktop browser. But it is an important point that the same page types apply across the different form factors of apps, and that the page type layouts automatically adapt to work well on different devices, e.g. on a phone or a tablet. 
+In the following we are focusing on how pages appear when a user accesses [!INCLUDE[prodshort](includes/prodshort.md)] from a desktop browser. But it is an important point that the same page types apply across the different form factors of apps, and that the [!INCLUDE[prodshort](includes/prodshort.md)] page type layouts automatically adapt to work well on different devices, e.g. on a phone or a tablet. 
 
 ## Understanding page types 
 
