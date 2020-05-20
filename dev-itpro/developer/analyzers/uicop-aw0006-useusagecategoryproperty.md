@@ -1,6 +1,6 @@
 ---
 title: "Pages and reports should use the UsageCategory and ApplicationArea properties to be searchable."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na

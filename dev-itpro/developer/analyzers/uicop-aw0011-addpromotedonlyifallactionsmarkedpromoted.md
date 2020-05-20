@@ -1,6 +1,6 @@
 ---
 title: "Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na
