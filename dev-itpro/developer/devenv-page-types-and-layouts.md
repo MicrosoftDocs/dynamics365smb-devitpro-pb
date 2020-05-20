@@ -208,7 +208,7 @@ Worksheet pages must contain a single `Repeater` group. In addition, a worksheet
 
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
-|The repeater control takes full vertical space, leaving space for groups above and below.|If a ListPart is embedded, the vertical space is shared with the repeater.|When a ListPart is embedded, space is shared equally between part and repeater.| 
+|The repeater control takes full vertical space, but leaving space for a group or CardPart above.|A group, CardPart, or ListPart can be embedded below the repeater that then assumes the remaining vertical space.|Groups and/or parts are embedded above and below, leaving the remaining vertical space for the repeater.| 
 |![Worksheet layout 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout 2](media/page-layout-worksheet-3.png "Worksheet example 3")|
 
 From the user's perspective, the following are qualities of a well-designed worksheet page:
