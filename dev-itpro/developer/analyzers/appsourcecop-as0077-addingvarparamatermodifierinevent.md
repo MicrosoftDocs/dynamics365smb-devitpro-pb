@@ -1,5 +1,5 @@
 ---
-title: "Key fields must not be changed"
+title: "Adding a var modifier in events is not allowed"
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 05/20/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0009
-Key fields must not be changed  
+# AppSourceCop Rule AS0077
+Adding a var modifier in events is not allowed  
 
 ## Description
-Key fields must not be changed.
+Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

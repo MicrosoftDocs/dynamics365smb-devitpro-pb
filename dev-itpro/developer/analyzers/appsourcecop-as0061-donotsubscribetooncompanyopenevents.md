@@ -1,8 +1,8 @@
 ---
 title: "Procedures must not subscribe to CompanyOpen events"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/12/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Procedures must not subscribe to CompanyOpen events  
 
 ## Description
-Procedures must not subscribe to CompanyOpen events.
+Procedures must not subscribe to CompanyOpen events because it can increase the login time for Dynamics 365 Business Central.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
