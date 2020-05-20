@@ -1,6 +1,6 @@
 ---
 title: "Modifying the array size of a parameter in events and external procedures is not allowed"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na

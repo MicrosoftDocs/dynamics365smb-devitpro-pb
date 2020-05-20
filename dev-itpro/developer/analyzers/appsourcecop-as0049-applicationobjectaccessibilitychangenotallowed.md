@@ -1,6 +1,6 @@
 ---
 title: "The access modifier of an application object cannot be changed to a value that provides less access"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na

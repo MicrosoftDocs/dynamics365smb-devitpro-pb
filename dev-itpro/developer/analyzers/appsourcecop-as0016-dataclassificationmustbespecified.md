@@ -1,6 +1,6 @@
 ---
 title: "Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na

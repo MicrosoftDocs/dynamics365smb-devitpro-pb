@@ -1,6 +1,6 @@
 ---
 title: "Parameters cannot be modified, renamed, or removed from events."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na
