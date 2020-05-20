@@ -1,8 +1,8 @@
 ---
 title: "A page of type API can only refer to the same subpage once."
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/12/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

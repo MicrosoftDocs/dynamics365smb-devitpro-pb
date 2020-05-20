@@ -1,5 +1,5 @@
 ---
-title: "Only use AssertError in Test Codeunits."
+title: "The value assigned to a variable must be used."
 ms.author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 05/20/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0161
-Only use AssertError in Test Codeunits.  
+# CodeCop Rule AA0206
+The value assigned to a variable must be used.  
 
 ## Description
-Only use AssertError in Test Codeunits.
+The value assigned to a variable must be used, otherwise the variable is not necessary.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
