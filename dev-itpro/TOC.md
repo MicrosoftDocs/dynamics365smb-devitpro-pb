@@ -75,6 +75,7 @@
 ## Monitoring and Analyzing Telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
@@ -756,13 +757,13 @@
 #### Upgrading the Data: Multitenant Mode
 ##### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
 ##### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
-#### [Installing an Update](upgrade/upgrading-cumulative-update.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update.md)
 ### Business Central 2019 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v15.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
-#### [Installing an Update](upgrade/upgrading-cumulative-update-v15.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v15.md)
 ### Business Central 2020 Release Wave 1
 #### [Overview](upgrade/upgrade-overview-v16.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
@@ -783,7 +784,7 @@
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v16.md)
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v16.md)
-#### [Installing an Update](upgrade/upgrading-cumulative-update-v16.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v16.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
