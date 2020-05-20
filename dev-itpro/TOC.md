@@ -230,6 +230,7 @@
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 ### Designing Pages
+#### [Page Types and Layouts](developer/devenv-page-types-and-layouts.md)
 #### List Pages
 ##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
