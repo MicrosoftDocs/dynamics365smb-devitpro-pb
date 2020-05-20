@@ -1,6 +1,6 @@
 ---
 title: "Only write actions that have an effect."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na

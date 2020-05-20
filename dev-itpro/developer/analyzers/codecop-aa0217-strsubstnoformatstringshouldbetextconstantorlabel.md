@@ -1,6 +1,6 @@
 ---
 title: "Use a text constant or label for format string in StrSubstNo."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
 ms.reviewer: na
