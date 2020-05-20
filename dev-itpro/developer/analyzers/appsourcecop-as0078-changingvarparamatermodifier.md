@@ -1,5 +1,5 @@
 ---
-title: "Tables and table extensions that have been published must not be deleted."
+title: "Adding or removing a var modifier in external procedures is not allowed"
 ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0001
-Tables and table extensions that have been published must not be deleted.  
+# AppSourceCop Rule AS0078
+Adding or removing a var modifier in external procedures is not allowed  
 
 ## Description
-Tables and table extensions that have been published must not be deleted. This might break the upgrade of existing installations and dependent extensions.
+Adding or removing a var modifier in public procedures is not allowed as it might break the runtime behavior of extensions calling it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
