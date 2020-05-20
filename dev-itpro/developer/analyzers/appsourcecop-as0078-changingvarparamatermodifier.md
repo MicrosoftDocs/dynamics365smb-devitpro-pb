@@ -1,5 +1,5 @@
 ---
-title: "Substitute the IF THEN ELSE structure with a CASE."
+title: "Adding or removing a var modifier in external procedures is not allowed"
 ms.author: solsen
 ms.custom: na
 ms.date: 05/20/2020
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0022
-Substitute the IF THEN ELSE structure with a CASE.  
+# AppSourceCop Rule AS0078
+Adding or removing a var modifier in external procedures is not allowed  
 
 ## Description
-An IF followed by two or more ELSE IF should be replaced with a CASE.
+Adding or removing a var modifier in public procedures is not allowed as it might break the runtime behavior of extensions calling it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[CodeCop Analyzer](codecop.md)  
+[AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
