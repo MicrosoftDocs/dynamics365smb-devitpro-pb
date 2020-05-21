@@ -27,6 +27,8 @@ When you use the **AutoFormatType** and **AutoFormatExpression** properties to f
 ## Setting up data formatting
 
 The settings for the **AutoFormatType**, **AutoFormatExpression**, and **DecimalPlaces** properties will depend on the type of data that is displayed, for example, this could be currency amounts, unit amounts, simple decimals, or ratios. For the most part, the **AutoFormatType** property is the primary setting, which in turn determines the options for setting the **DecimalPlaces** and **AutoFormatExpr** properties.  
+
+If the **AutoFormatType** is not set or is set to an incorrect property value, then the default setting is used, regardless of whether the **AutoFormatExpression** or **DecimalValues** properties are set. The default setting uses `AutoFormatType = 1` and `AutoFormatExpression = ''`.
   
 The following tables describes how to set each of the properties to achieve the format that you want.
 
@@ -82,3 +84,4 @@ The following table describes the standard formats that are available for the **
 [AutoFormatType Property](properties/devenv-AutoFormatType-Property.md)   
 [AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md)   
 [DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md)   
+
