@@ -25,7 +25,9 @@ AL methods on test codeunits.
 *TestPermissions*  
 Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-option.md)  
  
-Specifies the permission sets used on tests that are run by the test method. The possible values are the following:
+Specifies the permission sets used on tests that are run by the test method.
+
+*TestPermissions* can have one of following values:
 
 * **Disabled**
     
