@@ -25,7 +25,7 @@ Typing the shortcut `teventinternal` will create the basic internal attribute sy
 [InternalEvent(IncludeSender : Boolean)]
 ```
   
-#### Arguments  
+### Arguments  
 *IncludeSender*  
 Type: Boolean  
 

@@ -2,7 +2,7 @@
 title: "RunRequestPage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 05/13/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,16 +41,17 @@ XML string that contains the request page parameters that are entered on the req
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method opens the request page for the specified report, where the user can provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string will be returned. The returned parameter string can be picked up by calling one of the following methods:  
 
--   [EXECUTE Method](../../methods/devenv-execute-method.md)  
+This method opens the request page for the specified report, where the user can provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string will be returned. The returned parameter string can be picked up by calling one of the following methods:  
 
--   [PRINT Method](../../methods/devenv-print-method.md)  
+- [Execute Method](../report/report-execute-method.md)  
 
--   [SAVEAS Method](../../methods/devenv-saveas-method.md)  
+- [Print Method](../report/report-print-method.md)  
+
+- [SaveAs Method](../report/report-saveas-method.md)  
 
 > [!NOTE]  
->  You can use these methods to schedule reports in the job queue.  
+> You can use these methods to schedule reports in the job queue.  
 
 Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 

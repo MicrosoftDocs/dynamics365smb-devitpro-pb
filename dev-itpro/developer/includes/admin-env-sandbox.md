@@ -13,3 +13,5 @@ Sandbox environments are handy for certain types of development scenarios becaus
 
 > [!NOTE]
 > Each [!INCLUDE[prodshort](prodshort.md)] tenant is limited to three sandbox environments.
+
+If your organization has more than one sandbox environment, you can switch between environments by opening the App Launcher, choosing the Dynamics 365 tile, then choose the Business Central Sandbox tile. The sandbox environment picker shows the available sandboxes, so choose the one that you want to switch to.

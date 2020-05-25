@@ -69,7 +69,7 @@ Specifies whether the extension handled the print action successfully.
 
 The report payload is a combination of data from the printer payload and the report object. The payload consists of several attributes and has the following structure.
 
-```
+```json
 {
     "filterviews":
     [

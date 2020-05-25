@@ -12,10 +12,10 @@ ms.service: "dynamics365-business-central"
 # GetEnvironment Method
 Gets information about the environment that the control add-in is using.  
   
-## Method Signature  
+## Method signature  
  `object Microsoft.Dynamics.NAV.GetEnvironment()`  
   
-## Return Value  
+## Return value  
 Returns an object that contains the following members:  
   
 |Member|Description|  

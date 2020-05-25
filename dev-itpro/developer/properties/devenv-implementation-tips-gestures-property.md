@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
 ms.service: "dynamics365-business-central"
-
+author: SusanneWindfeldPedersen
 ---
 
  
@@ -37,5 +37,5 @@ In general, having a single action available on swipe-right that starts or progr
 ## See Also
 [Gesture Property](devenv-gesture-property.md) 
 <!-- 
-[Developing for the Microsoft [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Universal App](Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)  
+[Developing for the Microsoft [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Mobile App](Developing-for-the-Microsoft-Dynamics-NAV-Mobile-App.md)  
 [Adding Actions to Pages](Adding-Actions-to-Pages.md) -->

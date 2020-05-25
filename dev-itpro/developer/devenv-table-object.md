@@ -3,7 +3,7 @@ title: "Table Object"
 description: "Description of the table object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/28/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -109,7 +109,6 @@ The **SystemId** field is a GUID data type field that specifies a unique, immuta
 
 The **SystemId** field is exposed in the platform code and for AL code, allowing you to code against it. For example:
 
-
 - The [Insert(Boolean, Boolean)](methods-auto/record/record-insert-boolean-boolean-method.md) lets you specify the **SystemId** value for a record, instead of using one assigned by the platform:
 
     ```
@@ -117,7 +116,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
     myRec.Insert(true, true);
     ```
 
-- The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) gets the **SystemId** for a record:
+- The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) uses the **SystemId** to get a record:
 
     ```
     id := myRec.GetBySystemId('{B6666666-F5A2-E911-8180-001DD8B7338E}';  

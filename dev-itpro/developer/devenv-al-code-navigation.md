@@ -3,7 +3,7 @@ title: "AL Code Navigation"
 description: "This topic describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central." 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 04/30/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +25,6 @@ The **Go to Definition** feature navigates to the source of a type and opens the
 With **Go to Definition**, you can step into the referenced code and set breakpoints on the external code and base application code. For more information, see [Debugging in AL](devenv-debugging.md).
 
 You can always use **Go to Definition** on [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] code. However, if you want to use it on other extensions, the extension package which is now referenced, when originally published, must have the `showMyCode` property set to `true`. For example, if A is referencing B you can only use the Go To Definition on types of B, if B, when it was published, had the `showMyCode` flag set to `true`. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
-
-For more information about code navigation in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved).
 
 ## See Also  
 

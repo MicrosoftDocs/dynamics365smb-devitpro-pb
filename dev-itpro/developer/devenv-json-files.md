@@ -77,6 +77,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
+|attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
@@ -98,6 +99,8 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
+|attach|No | Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
+
 
 ## See Also
 
