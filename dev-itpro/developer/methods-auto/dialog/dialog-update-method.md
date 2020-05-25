@@ -40,7 +40,22 @@ This value or expression can be any simple AL data type such as Boolean, Option,
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+  
+Dialog windows that are opened by an object are closed when the object terminates.  
+  
+Dialog windows are automatically sized to hold the longest line of text and the total number of lines.  
+  
+We recommend the following guidelines:  
+  
+- Enter messages as text constants.  
+  
+- Write messages using active voice. For example, write “Processing items” instead of writing “Items are being processed.”  
+  
+- Align the \# field to the left with at least one space character between the text and the variable.
 
+> [!NOTE]  
+> With the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)], you can use @ characters instead of # characters for the *String* parameter to display the value as percentage and a progress indicator. The percentage value that is displayed is the percentage of the variable value from 0 to 9999. This is not supported in the [!INCLUDE[webclient](../../includes/webclient.md)].  
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
