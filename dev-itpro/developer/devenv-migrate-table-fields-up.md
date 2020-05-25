@@ -180,5 +180,6 @@ PS C:\Windows\system32> Start-NAVAppDataUpgrade bc160 -Name extX -Version 1.0.0.
 
 [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md)  
 [Moving Tables and Fields to Extension Down the Dependency Graph](devenv-migrate-table-fields-down.md)  
+[Upgrading Extensions](devenv-upgrading-extensions.md)  
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [JSON Files](devenv-json-files.md)  

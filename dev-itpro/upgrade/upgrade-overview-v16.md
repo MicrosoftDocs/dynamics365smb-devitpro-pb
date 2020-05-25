@@ -90,4 +90,5 @@ For information about migrating an on-premises solution to online, see [Migrate 
 ## See Also  
  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  

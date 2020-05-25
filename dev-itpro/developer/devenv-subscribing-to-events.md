@@ -75,7 +75,7 @@ codeunit 70000002 MySubscriber
     procedure CheckAddressLine(line : Text[100]);
     begin
         if (STRPOS(line, '+') > 0) then begin
-            MESSAGE('Can't use a plus sign (+) in the address [' + line + ']');
+            MESSAGE('Can''t use a plus sign (+) in the address [' + line + ']');
         end;
     end;
 }
@@ -93,7 +93,7 @@ codeunit 70000002 MySubscriber
     local procedure CheckAddressLine(var Rec : Record Customer)
     begin
         if (STRPOS('Rec.Address', '+') > 0) then begin
-            MESSAGE('Can't use a plus sign (+) in the address [' + 'Address' + ']');
+            MESSAGE('Can''t use a plus sign (+) in the address [' + 'Address' + ']');
         end;
     end;
 }

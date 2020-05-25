@@ -13,6 +13,7 @@ author: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prodshort.md)] 2020 Release Wave 1 Update
 
+
 This article describes how to install an update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
 You can choose to update only the platform or both the platform and application code. The installation guidelines are separated into PLATFORM tasks and APPLICATION tasks.
@@ -266,20 +267,7 @@ Compile all published extensions against the new platform.
 
 ## Upgrade control add-ins
 
-The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
-
-- Microsoft.Dynamics.Nav.Client.BusinessChart
-- Microsoft.Dynamics.Nav.Client.FlowIntegration
-- Microsoft.Dynamics.Nav.Client.OAuthIntegration
-- Microsoft.Dynamics.Nav.Client.PageReady
-- Microsoft.Dynamics.Nav.Client.PowerBIManagement
-- Microsoft.Dynamics.Nav.Client.RoleCenterSelector
-- Microsoft.Dynamics.Nav.Client.SocialListening
-- Microsoft.Dynamics.Nav.Client.SatisficationSurvey
-- Microsoft.Dynamics.Nav.Client.TimelineVisualization
-- Microsoft.Dynamics.Nav.Client.VideoPlayer
-- Microsoft.Dynamics.Nav.Client.WebPageViewer
-- Microsoft.Dynamics.Nav.Client.WelcomeWizard
+The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
 To upgrade the control add-ins, do the following steps:
 
