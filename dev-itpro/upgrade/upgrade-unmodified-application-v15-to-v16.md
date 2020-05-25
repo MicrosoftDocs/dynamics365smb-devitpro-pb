@@ -426,3 +426,5 @@ At this point, the upgrade is complete, and you can open the client.
 ## See Also  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
+

@@ -117,6 +117,7 @@ The receiving extension will contain the table and fields that you want to move.
 
 [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md)  
 [Moving Tables and Fields to Extension Up the Dependency Graph](devenv-migrate-table-fields-up.md)  
+[Upgrading Extensions](devenv-upgrading-extensions.md)  
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [JSON Files](devenv-json-files.md)  
 
