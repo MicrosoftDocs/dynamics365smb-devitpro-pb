@@ -20,7 +20,9 @@ Page controls must use the ApplicationArea property
 Page controls must use the ApplicationArea property.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[ApplicationArea Property](..//properties/devenv-applicationarea-property.md)  
