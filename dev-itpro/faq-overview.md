@@ -3,7 +3,7 @@ title: "Frequently Asked Questions for Dynamics 365 Business Central"
 description: 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/19/2020
+ms.date: 05/26/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,8 +22,9 @@ The following sections guide you to frequently asked questions about [!INCLUDE[p
 - Visit [FAQ about Updating your App](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
 - Visit [FAQ about Testing your App](developer/app-faq-test.md) to learn about testing before submitting an app.
 - Visit [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
-- Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md)
+- Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
 - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prodshort](includes/prodshort.md)] Windows client.
+
 
 Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] here you can find answers to some of the most frequently asked questions:
 
