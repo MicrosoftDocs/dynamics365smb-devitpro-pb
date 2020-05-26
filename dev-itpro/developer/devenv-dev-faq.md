@@ -59,7 +59,7 @@ If debugging is enabled in your environment, just press **F5** from Visual Studi
 </details>
 
 <br>
-<details><summary><b>File APIs are not available in Extensions V2. What do I do?</b></summary>
+<details><summary><b>File APIs are not available in Extensions V2 - what do I do?</b></summary>
 <p>
 
 Code that relies on temporary files must be rewritten to rely on `InStream` and `OutStream` types. Code that relies on permanent files must be rewritten to use another form of permanent storage.
@@ -67,7 +67,7 @@ Code that relies on temporary files must be rewritten to rely on `InStream` and 
 </p>
 </details>
 <br>
-<details><summary><b>DotNet types are not available in Extensions V2. What now?</b></summary>
+<details><summary><b>DotNet types are not available in Extensions V2 - what now?</b></summary>
 <p>
 For cloud solutions .NET interop is not available due to safety issues in running arbitrary .NET code on cloud servers. 
 
