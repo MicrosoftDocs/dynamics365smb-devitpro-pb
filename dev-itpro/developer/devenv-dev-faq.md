@@ -16,7 +16,7 @@ ms.author: solsen
 This topic contains a number of frequently asked questions and answers to these questions. 
 
 <br>
-<details><summary>How do I get started?</summary>
+<details><summary><b>How do I get started?</b></summary>
 <p>
 
 For an overview of developing apps for Business Central, see [aka.ms/GetStartedWithApps](readiness/readiness-welcome.md).
@@ -25,7 +25,7 @@ Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the 
 </p>
 </details>
 <br>
-<details><summary>Which version of the AL Language extension should I use?</summary>
+<details><summary><b>Which version of the AL Language extension should I use?</b></summary>
 <p>
 
 For Business Central cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
@@ -34,7 +34,7 @@ For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_
 </p>
 </details>
 <br>
-<details><summary>How do I enable the debugger?</summary>
+<details><summary><b>How do I enable the debugger?</b></summary>
 <p>
 
 To read about enabling the Visual Studio Code Debugger, see here [Debugging](devenv-debugging.md).
@@ -42,7 +42,7 @@ To read about enabling the Visual Studio Code Debugger, see here [Debugging](dev
 </p>
 </details>
 <br>
-<details><summary>Can I create something similar to Menusuites?</summary>
+<details><summary><b>Can I create something similar to Menusuites?</b></summary>
 <p>
 
 In the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the concept of Menusuites is not supported. The two primary purposes of Menusuites are:
@@ -57,7 +57,7 @@ The second purpose can be achieved by extending the Navigation Pane page and/or 
 </p>
 </details>
 <br>
-<details><summary>File APIs are not available in Extensions V2. What do I do?</summary>
+<details><summary><b>File APIs are not available in Extensions V2. What do I do?</b></summary>
 <p>
 
 Code that relies on temporary files must be rewritten to rely on `InStream` and `OutStream` types. Code that relies on permanent files must be rewritten to use another form of permanent storage.
@@ -65,7 +65,7 @@ Code that relies on temporary files must be rewritten to rely on `InStream` and 
 </p>
 </details>
 <br>
-<details><summary>DotNet types are not available in Extensions V2. What now?</summary>
+<details><summary><b>DotNet types are not available in Extensions V2. What now?</b></summary>
 <p>
 For cloud solutions .NET interop is not available due to safety issues in running arbitrary .NET code on cloud servers. 
 
