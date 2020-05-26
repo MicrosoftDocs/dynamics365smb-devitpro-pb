@@ -21,7 +21,7 @@ Properties must not change value. This might break the upgrade of existing insta
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule does not exist anymore and has been replacted by:
+This rule does not exist anymore and has been replaced by:
 - [AS0034 - For table property value changes](appsourcecop-as0034-destructivetablepropertychangenotallowed.md)
 - [AS0036 - For field property value changes](appsourcecop-as0036-destructivetablefieldpropertychangenotallowed.md)
 - [AS0038 - For key property value changes](appsourcecop-as0038-destructivekeypropertychangenotallowed.md)
