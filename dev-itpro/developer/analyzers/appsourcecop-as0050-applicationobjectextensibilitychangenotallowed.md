@@ -25,10 +25,10 @@ The extensibility of an application object cannot be removed.
 
 This rule verifies that an object that was extensible in the previous version of the extension, remains extensible in the current version of the extension.
 
-The extensibility of an object is defined by the [Extensible](../properties/devenv-extensible-property) property.
+The extensibility of an object is defined by the [Extensible](../properties/devenv-extensible-property.md) property.
 
 > [!NOTE]
-> The default property value for the `Extensible` property differs depending on the object type. See [Extensible](../properties/devenv-extensible-property) property for more information.
+> The default property value for the `Extensible` property differs depending on the object type. See [Extensible](../properties/devenv-extensible-property.md) property for more information.
 
 ## Bad code examples
 
