@@ -24,6 +24,7 @@ The following sections guide you to frequently asked questions about [!INCLUDE[p
 - Visit [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
 - Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
 - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prodshort](includes/prodshort.md)] Windows client.
+- Visit [Frequently Asked Questions](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)] in the business functionality content for.
 
 <!-- 
 Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] here you can find answers to some of the most frequently asked questions:
@@ -36,7 +37,7 @@ Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] he
 ## Top-most Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
 > [!TIP]
-> If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq) in the business functionality content for [!INCLUDE[prodshort](includes/prodshort.md)].
+> 
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
 
