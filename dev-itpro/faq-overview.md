@@ -33,9 +33,7 @@ Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] he
 - Visit [List Views FAQ](/dynamics365/business-central/ui-views-faq)
 - Visit [Searching and Filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) -->
 
-The following section answers some of the top-most frequently asked questions about developing for and administering [!INCLUDE[prodlong](includes/prodlong.md)].  
-
-## Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
+## Top-most Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
 > [!TIP]
 > If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq) in the business functionality content for [!INCLUDE[prodshort](includes/prodshort.md)].
