@@ -64,7 +64,7 @@ Renaming objects which are not part of the baseline is allowed.
 
 ### For existing objects
 
-For objects which already exist in the version of the extension used as baseline, it is not possible to rename them. It is then not possible to append one of the mandatory affixes. Instead, the offending object should be deprecated using the [ObsoleteState](../properties/devenv-obsoletestate-property.md) property and a new object whose name has one of the mandatory affixes should be introduced.
+For objects which already exist in the version of the extension used as baseline, it is not possible to rename them. It is therefore not possible to append one of the mandatory affixes. Instead, the offending object should be deprecated using the [ObsoleteState](../properties/devenv-obsoletestate-property.md) property and a new object whose name has one of the mandatory affixes should be introduced.
 
 #### Example - Adding an affix to an existing codeunit
 

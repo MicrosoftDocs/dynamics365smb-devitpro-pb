@@ -55,7 +55,7 @@ table 50100 MyTable
 }
 ```
 
-In version 2.0, the field is not enabled anymore. Disabled fields are not created in the database during schema synchronization. Disabling a field is then similar to remove the field and is then a destructive change.
+In version 2.0, the field is not enabled anymore. Disabled fields are not created in the database during schema synchronization. Disabling a field is then similar to removing the field and is then a destructive change.
 
 ### Example 2 - Changing FieldClass from Normal to FlowField
 

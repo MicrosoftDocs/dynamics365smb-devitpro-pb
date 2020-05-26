@@ -138,7 +138,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the procedure `MyLocalProcedure` is now public and becomes now available to dependent extensions.
+In the version 2.0, the procedure `MyLocalProcedure` is now public and becomes available to dependent extensions.
 
 ### Example 2 - Changing the Scope attribute from 'OnPrem' to 'Cloud'
 
@@ -157,7 +157,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the procedure `MyOnPremProcedure` becomes now available for both `OnPrem` and `Cloud` development. Any dependent extension can now call this procedure, regardless of the compilation target specified in their app.json. The default Scope of a procedure is `Cloud`. Removing the attribute is then also allowed.
+In the version 2.0, the procedure `MyOnPremProcedure` becomes available for both `OnPrem` and `Cloud` development. Any dependent extension can now call this procedure, regardless of the compilation target specified in their app.json. The default Scope of a procedure is `Cloud`. Removing the attribute is then also allowed.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
