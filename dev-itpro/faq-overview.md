@@ -17,13 +17,13 @@ ms.author: solsen
 The following sections guide you to frequently asked questions about [!INCLUDE[prodshort](includes/prodshort.md)].
 
 - Visit [FAQ about Developing in AL](developer/devenv-dev-faq.md) for questions and answers related to developing extensions in AL.
-- Visit [FAQ about the Windows Client](faq-win-cli.md)
-- Visit [FAQ on Managing and submitting your business central offer](developer/app-faq-offer.md)
-- Visit [FAQ about Library and Dependency Apps](developer/app-faq-dependencies-libraries.md)
-- Visit [FAQ about Updating your App](developer/app-faq-update.md)
-- Visit [FAQ about Testing your App](developer/app-faq-test.md)
+- Visit [FAQ on Managing and submitting your business central offer](developer/app-faq-offer.md) in Partner Center.
+- Visit [FAQ about Library and Dependency Apps](developer/app-faq-dependencies-libraries.md) to learn about differences between library and dependency apps.
+- Visit [FAQ about Updating your App](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
+- Visit [FAQ about Testing your App](developer/app-faq-test.md) 
 - Visit [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
 - Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md)
+- Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prodshort](includes/prodshort.md)] Windows client.
 
 Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] here you can find answers to some of the most frequently asked questions:
 
