@@ -441,3 +441,4 @@ At this point, the upgrade is complete, and you can open the client.
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

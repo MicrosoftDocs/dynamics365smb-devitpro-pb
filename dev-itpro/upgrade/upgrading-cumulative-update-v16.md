@@ -13,6 +13,7 @@ author: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prodshort.md)] 2020 Release Wave 1 Update
 
+
 This article describes how to install an update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
 You can choose to update only the platform or both the platform and application code. The installation guidelines are separated into PLATFORM tasks and APPLICATION tasks.
