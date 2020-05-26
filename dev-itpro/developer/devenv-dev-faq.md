@@ -13,7 +13,8 @@ ms.author: solsen
 ---
 
 # FAQ for Developing in AL
-This topic contains a number of frequently asked questions and answers to these questions. 
+
+This topic contains some of the frequently asked questions we get from developers about coding in AL and answers to these questions. 
 
 <br>
 <details><summary><b>How do I get started?</b></summary>
