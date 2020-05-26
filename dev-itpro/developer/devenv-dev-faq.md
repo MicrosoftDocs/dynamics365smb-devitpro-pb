@@ -74,3 +74,5 @@ With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find A
 For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL.
 </p>
 </details>
+<br>
+<br>
