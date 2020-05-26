@@ -6,7 +6,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2020
+ms.date: 05/06/2020
 author: jswymer
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2020 Release Wave 1
@@ -23,7 +23,7 @@ The following sections list the minimum hardware and software requirements to us
 
 |||  
 |------|-----|  
-|Supported browsers|Recommended browsers:<ul><li>Microsoft Edge</li><li>Google Chrome 77.0 for Windows</li><li>Mozilla Firefox 69.0 for Windows</li><li>Safari 12.0 for macOS</li></ul>Other supported browsers:<ul><li>Internet Explorer 11</li></ul>Cookies and JavaScript must be enabled in the browser.|
+|Supported browsers|Recommended browsers:<ul><li>New Microsoft Edge for Windows</li><li>Google Chrome 81.0 for Windows</li><li>Mozilla Firefox 75.0 for Windows</li><li>Safari 12.0 for macOS</li></ul>Other supported browsers:<ul><li>Internet Explorer 11</li><li>Microsoft Edge Legacy</li></ul>Cookies and JavaScript must be enabled in the browser.|
 |Business inbox in Outlook|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2019, Excel 2016, or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
@@ -32,12 +32,12 @@ The following sections list the minimum hardware and software requirements to us
 |Additional information|If you experience problems using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], you can try to turn off browser tools, such as translator tools that may run in the background.|  
 
 ###  <a name="NavApps"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Tablet Client and Phone Client \(in a Browser\) Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] running in a browser when used for development and testing purposes.  
+ The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] running in a desktop browser when used for development and testing purposes.  
 
 |||  
 |------|-----|  
-|Server component|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)]Web client.|  
-|Supported browsers|The following desktop browsers are supported:<ul><li> Microsoft Edge</li><li>Internet Explorer 11 \(build 11.0.9600.17239\) for Windows 10.</li><li>Google Chrome 72.0 for Windows.</li><li>Mozilla Firefox 65.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser. |  
+|Server component|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client.|  
+|Supported browsers|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client.|  
 
 ###  <a name="DynNAVApp"></a> [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)].  

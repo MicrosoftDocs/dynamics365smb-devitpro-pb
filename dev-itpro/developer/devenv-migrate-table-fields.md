@@ -96,4 +96,4 @@ The order that you synchronize extensions is important:
 
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [JSON Files](devenv-json-files.md)  
-
+[Upgrading Extensions](devenv-upgrading-extensions.md)  

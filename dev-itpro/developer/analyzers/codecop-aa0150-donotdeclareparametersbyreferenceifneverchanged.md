@@ -2,7 +2,7 @@
 title: "Do not declare parameters by reference if their values are never changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/22/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

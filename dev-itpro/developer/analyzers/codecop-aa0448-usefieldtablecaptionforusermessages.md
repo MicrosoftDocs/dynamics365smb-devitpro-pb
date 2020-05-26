@@ -2,7 +2,7 @@
 title: "You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/22/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,35 +23,42 @@ If you want to enable your application for multilanguage functionality, you must
 
 ## Reason for the rule
 
-To prevent exposing personal data, make sure that Email or Phone No information is not available in the source code because that might be collected as telemetry data.
+Use the FieldCaption(Record) method and the TableCaption(Record) method whenever possible to return names of fields and tables as strings so correct translation will be automatically used. As a result user can always recognize a term that indicates a field or table name. 
+
+> [!NOTE]  
+> The only exception to this rule is the Open(Dialog) method. In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. 
 
 ## Bad code example
 ```
-table 18 Customer
-{
-   ...
-   fields
-   {
-      field(1; Email; Text[50]){ CaptionML = ENU = 'john.smith@contoso.com'; }
-   }
-   ...
-}
+trigger OnValidate()
+begin
+    if "Order Date" > "Starting Date" then
+       Error(Text007, FieldName("Order Date"), FieldName("Starting Date"));
+end;
+
+var
+    Text007: Label '%1 cannot be greater than %2.';
 ```
 
 ## Good code example
 ```
-table 18 Customer
-{
-   ...
-   fields
-   {
-      field(1; Email; Text[50]){ CaptionML = ENU = 'Email'; }
-   }
-   ...
-}
+trigger OnValidate()
+begin
+    if "Order Date" > "Starting Date" then
+       Error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
+end;
+
+var
+    Text007: Label '%1 cannot be greater than %2.';
 ```
+
+## Good and bad practices for fixing the rule
+
+Change FieldName to FieldCaption or TableName to TableCaption.
+
 ## Remarks
-The following elements are checked in code: object names, table captions, table field names, table field captions, page captions, page field names, page field captions, page field tooltips, the value of labels (in declaration), the value of text constants, translation files (tags <source>, <target>, <note>), and the app manifest file (Name, Brief, Description, Publisher).
+
+The Open(Dialog) method is not checked and is an exception from this rule.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  

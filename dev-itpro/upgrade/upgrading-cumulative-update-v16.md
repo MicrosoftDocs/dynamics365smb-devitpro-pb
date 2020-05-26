@@ -13,6 +13,7 @@ author: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prodshort.md)] 2020 Release Wave 1 Update
 
+
 This article describes how to install an update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
 You can choose to update only the platform or both the platform and application code. The installation guidelines are separated into PLATFORM tasks and APPLICATION tasks.
@@ -264,9 +265,22 @@ Compile all published extensions against the new platform.
 
     For a single-tenant deployment, you can either set the `<tenant ID>` to `default` or omit the `-Tenant <tenant ID>` parameter. For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
+## Upgrade control add-ins
+
+The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
+
+To upgrade the control add-ins, do the following steps:
+
+1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+2. Search for and open the **Control Add-ins** page.
+3. Choose **Actions** > **Control Add-in Resource** > **Import**.
+4. Locate and select the .zip file for the control add-in and choose **Open**.
+
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
 > [!NOTE]
-> At this point, if you want to update the application, you can skip the next step and proceed [APPLICATION](#Application).   
+> At this point, if you want to update the application, you can skip the next step and proceed [APPLICATION](#Application).
 
 ## (Single-tenant only) Reinstall extensions
 
@@ -292,6 +306,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```powershell
     Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ```
+
 At this point, your solution has been updated to the latest platform.
 
 ## <a name="Application"></a> APPLICATION UPDATE

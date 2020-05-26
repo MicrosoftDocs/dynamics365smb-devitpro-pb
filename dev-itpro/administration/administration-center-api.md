@@ -86,7 +86,6 @@ If an error occurs during the execution of an API method, it will respond back w
 
 All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown** 
 
-
 ## Environments
 
 Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. Currently, it's only possible to create three production environments and three sandbox environments per tenant. The environment APIs can be used to:
@@ -205,6 +204,7 @@ Returns a single environment if exists.
 Creates a new environment with sample data.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 
@@ -311,6 +311,7 @@ GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/
 Creates a new environment with a copy of another environment's data.
 
 ```
+Content-Type: application/json
 POST /admin/v2.1/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
@@ -529,6 +530,7 @@ Returns the environment's update settings, or "null" if none exist
 Sets the update window start and end times.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
@@ -575,7 +577,11 @@ Returns the updated settings
 ### Put AppInsights key
 Sets the key an environment uses for Azure AppInsights.
 
+> [!IMPORTANT]
+> This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this during non-working hours to avoid disruptions.
+
 ```
+Content-Type: application/json
 POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
@@ -690,6 +696,7 @@ Returns a wrapped array of recipients.
 Create a new notification recipient.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/settings/notification/recipients
 ```
 
@@ -804,6 +811,7 @@ Pass the application family name in the URL and a boolean in the body.
 - False - disables the access.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/manageableapplications/{applicationFamily}/countries/{countryCode}
 ```
 
@@ -881,6 +889,7 @@ Returns information about the scheduled update for that environment.
 Reschedule an update, if able.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
@@ -959,6 +968,7 @@ Returns information about the support contact for that environment.
 Sets the support contact information for a specified environment
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
@@ -1103,7 +1113,8 @@ Returns the list of outages reported across all environments for the calling ten
 Initiates an outage report indicating that an environment isn't accessible
 
 ```
-GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+Content-Type: application/json
+POST /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
 #### Route Parameters
@@ -1112,7 +1123,7 @@ GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environme
 
 `environmentName` - Name of the targeted environment
 
-**Body:**
+#### Body
 ```
 {
   "outageType": string, // The category of the outage being reported.
@@ -1185,6 +1196,7 @@ Returns the metrics around the current month's database exports.
 Starts the export of an environment's database to a provided Azure storage account
 
 ```
+Content-Type: application/json
 POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
@@ -1365,6 +1377,7 @@ GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/
 Schedules the installation of an app update version. The update will be installed as soon as a time slot is available.
 
 ```
+Content-Type: application/json
 POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 

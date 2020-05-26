@@ -62,7 +62,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 3. Install Business Central version 16 components.
 
-    If you don't uninstall version 14, then you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) during installation, or you must stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 16, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -452,6 +452,36 @@ The final step is to upgrade to the new extension versions in the following orde
 2. Microsoft Base Application.
 3. Customization, Microsoft, and third-party extensions.
 
+## Task 15: Upgrade control add-ins
+
+The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
+
+- Microsoft.Dynamics.Nav.Client.BusinessChart
+- Microsoft.Dynamics.Nav.Client.FlowIntegration
+- Microsoft.Dynamics.Nav.Client.OAuthIntegration
+- Microsoft.Dynamics.Nav.Client.PageReady
+- Microsoft.Dynamics.Nav.Client.PowerBIManagement
+- Microsoft.Dynamics.Nav.Client.RoleCenterSelector
+- Microsoft.Dynamics.Nav.Client.SocialListening
+- Microsoft.Dynamics.Nav.Client.SatisficationSurvey
+- Microsoft.Dynamics.Nav.Client.TimelineVisualization
+- Microsoft.Dynamics.Nav.Client.VideoPlayer
+- Microsoft.Dynamics.Nav.Client.WebPageViewer
+- Microsoft.Dynamics.Nav.Client.WelcomeWizard
+
+To upgrade the control add-ins, do the following steps:
+
+1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+2. Search for and open the **Control Add-ins** page.
+3. Choose **Actions** > **Control Add-in Resource** > **Import**.
+4. Locate and select the .zip file for the control add-in and choose **Open**.
+
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+5. After you've imported all the new control add-in versions, restart Business Central Server instance.
+
+> [!NOTE]
+> At this point, if you want to update the application, you can skip the next step and proceed [APPLICATION](#Application).
+
 ## Post-upgrade tasks
 
 1. Uninstall the table migration extension.
@@ -463,6 +493,16 @@ The final step is to upgrade to the new extension versions in the following orde
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
+5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+
+    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    
+    - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
+    
+    - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
+
+     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
+    
 ## See Also  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  

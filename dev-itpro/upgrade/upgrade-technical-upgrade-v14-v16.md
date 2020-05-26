@@ -111,7 +111,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 4. Unpublish all system, test, and application symbols.
 
-    To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
+    To unpublish symbols, use the Unpublish-NAVAPP cmdlet. You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
     ``` 
     Get-NAVAppInfo -ServerInstance <BC14 server instance> -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
@@ -311,44 +311,41 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
 
 Now, your application is fully upgraded to the version 16 platform.
 
-## Task 12: Post-upgrade
+## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
-1. <a name="JSaddins"></a>Upgrade Javascript-based control add-ins to new versions.
+The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
-    The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the following Microsoft-provided Javascript-based control add-ins that must be upgraded.
-    
-    - Microsoft.Dynamics.Nav.Client.BusinessChart
-    - Microsoft.Dynamics.Nav.Client.FlowIntegration
-    - Microsoft.Dynamics.Nav.Client.OAuthIntegration
-    - Microsoft.Dynamics.Nav.Client.PageReady
-    - Microsoft.Dynamics.Nav.Client.PowerBIManagement
-    - Microsoft.Dynamics.Nav.Client.RoleCenterSelector
-    - Microsoft.Dynamics.Nav.Client.SocialListening
-    - Microsoft.Dynamics.Nav.Client.SatisficationSurvey
-    - Microsoft.Dynamics.Nav.Client.TimelineVisualization
-    - Microsoft.Dynamics.Nav.Client.VideoPlayer
-    - Microsoft.Dynamics.Nav.Client.WebPageViewer
-    - Microsoft.Dynamics.Nav.Client.WelcomeWizard
+To upgrade the control add-ins, do the following steps:
 
-    To upgrade the control add-ons, do the following steps:
+1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+2. Search for and open the **Control Add-ins** page.
+3. Choose **Actions** > **Control Add-in Resource** > **Import**.
+4. Locate and select the .zip file for the control add-in and choose **Open**.
 
-    1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
-    2. Search for and open the **Control Add-ins** page.
-    3. Choose **Actions** > **Control Add-in Resource** > **Import**.
-    4. Locate and select the .zip file for the control add-in and choose **Open**.
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
-        The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
-    5. After you've imported all the new control add-in versions, restart Business Central Server instance.
-2. Enable task scheduler on the server instance.
-3. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
-4. If you want to use data encryption as before, enable it.
+## Task 13: Post-upgrade
+
+1. Enable task scheduler on the server instance.
+2. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+3. If you want to use data encryption as before, enable it.
 
    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
+4. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+
+    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    
+    - If you have a version 16 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
+    
+    - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
+
+     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
+
 ## See Also
 
-[Upgrading the Data](Upgrading-the-Data.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)
