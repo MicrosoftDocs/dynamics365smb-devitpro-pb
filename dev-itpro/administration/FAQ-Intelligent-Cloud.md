@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 04/01/2020
+ms.date: 05/26/2020
 ms.author: bmeier
 
 ---
@@ -20,11 +20,10 @@ This section contains answers to frequently asked questions about connecting on-
 
 The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can connect the following products in order to provide intelligent insights:
 
-- Dynamics GP 2018 R2
+- Dynamics GP (supported major versions)
 - [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
-- Dynamics NAV 2018 CU 16
 
-    Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. However, the 2019 release wave 2 removes support for migrating directly from Dynamics NAV 2018 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. You must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan and [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online) in the Migrate to Business Central Online section here.
+If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan and [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online) in the Migrate to Business Central Online section here.
     
 <!-- - Dynamics SL 2018 CU 1-->
 
