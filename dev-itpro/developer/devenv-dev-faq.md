@@ -3,7 +3,7 @@ title: "FAQ for Developing in AL"
 description: "Overview of frequently asked questions for development using the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 05/26/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ ms.author: solsen
 This topic contains a number of frequently asked questions and answers to these questions. 
 
 <br>
-<details><summary><b>How do I get started?</b></summary>
+<details><summary>How do I get started?</summary>
 <p>
 
 For an overview of developing apps for Business Central, see [aka.ms/GetStartedWithApps](readiness/readiness-welcome.md).
@@ -25,7 +25,7 @@ Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the 
 </p>
 </details>
 <br>
-<details><summary><b>Which version of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] should I use?</b></summary>
+<details><summary>Which version of the AL Language extension should I use?</summary>
 <p>
 
 1) For Business Central cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
