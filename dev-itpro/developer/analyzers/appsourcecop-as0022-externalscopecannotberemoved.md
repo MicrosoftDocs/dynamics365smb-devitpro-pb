@@ -23,7 +23,7 @@ An external scope cannot be removed.
 
 ## Remarks
 
-This rule verifies that procedure which were exposed to dependent extensions in the previous version of the extension, remain exposed to other extensions.
+This rule verifies that procedures which were exposed to dependent extensions in the previous version of the extension, remain exposed to other extensions.
 
 The availability of a procedure is defined by:
 - the access modifier set on the procedure
