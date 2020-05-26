@@ -35,14 +35,6 @@ For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_
 </p>
 </details>
 <br>
-<details><summary><b>How do I enable the debugger?</b></summary>
-<p>
-
-To read about enabling the Visual Studio Code Debugger, see here [Debugging](devenv-debugging.md).
-
-</p>
-</details>
-<br>
 <details><summary><b>Can I create something similar to Menusuites?</b></summary>
 <p>
 
@@ -57,6 +49,15 @@ The second purpose can be achieved by extending the Navigation Pane page and/or 
 
 </p>
 </details>
+<br>
+<details><summary><b>How do I enable the debugger?</b></summary>
+<p>
+
+If debugging is enabled in your environment, just press **F5** from Visual Studio Code. To read more about enabling the Visual Studio Code Debugger, see here [Debugging](devenv-debugging.md).
+
+</p>
+</details>
+
 <br>
 <details><summary><b>File APIs are not available in Extensions V2. What do I do?</b></summary>
 <p>
