@@ -184,7 +184,7 @@ Occurs when a company has failed to open.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
+|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li><li>**Authorization Failed (Open Company): The tenant is locked.**</li><li>**Authorization Failed (Open Company): The license has expired or the trial period has ended.**</li><li>**Authorization Failed (Open Company): The user's license is not valid for use on production companies.**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
 |operation_Name|**Authorization Failed (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |severityLevel|**3**|
 
@@ -234,7 +234,14 @@ This message occurs when a user tries to sign in to a company, but the company i
 
 This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. Make sure that the user has the proper name of the company.
 
- 
+#### User cannot open the company because the tenant is locked.
+
+#### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
+
+#### You can't open the company, because it is a production company. Your license isn't valid for use on production companies.
+
+
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
