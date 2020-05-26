@@ -28,9 +28,9 @@ Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the 
 <details><summary>Which version of the AL Language extension should I use?</summary>
 <p>
 
-1) For Business Central cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+For Business Central cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
 
-2) For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] that is available on the Docker images.
+For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] that is available on the Docker images.
 </p>
 </details>
 <br>
