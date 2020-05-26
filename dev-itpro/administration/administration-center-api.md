@@ -1394,7 +1394,7 @@ POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 { 
     "targetVersion": string // Version the installed app should be updated to
-    "allowPreviewVersion": bool // Indicates whether to allow updating to an app version, which is marked as a Preview by the ISV (exact version must be specified in the targetVersion)
+    "allowPreviewVersion": bool // Indicates whether to allow updating to an app version that is marked as a Preview by the ISV (exact version must be specified in the targetVersion)
 }
 ```
 
