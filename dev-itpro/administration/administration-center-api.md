@@ -1394,6 +1394,7 @@ POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 { 
     "targetVersion": string // Version the installed app should be updated to
+    "allowPreviewVersion": bool // Indicates if to allow update to a Preview Version (specified in targetVersion)
 }
 ```
 
