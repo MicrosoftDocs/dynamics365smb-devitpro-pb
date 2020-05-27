@@ -34,7 +34,7 @@ Specifies whether data compression is used on the table, and if so, what type of
 
 ## Remarks
 
-With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server.  
+With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server or by specifying a database default compression level using `Set-NAVTenant -Compression <CompressionType>`.
 
 For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression).
 
@@ -59,3 +59,5 @@ table 50100 MyTable
 ## See Also  
 [Properties](devenv-properties.md)  
 [Page object](../devenv-page-object.md)
+[Set-NAVTenant cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/get-navtenant
+[Start-NAVDataCompression cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/start-navdatabasecompression
