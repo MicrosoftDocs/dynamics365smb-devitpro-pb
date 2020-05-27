@@ -68,7 +68,6 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
     -serviceuri:<Common Data Service server URL>
     -entities:cds_worker
     -baseid:50000
-    -tabletype:CDS
     ```
     
     This starts the process for creating the table. When completed, the output path contains the `.al` file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
@@ -433,6 +432,19 @@ During the synchronization process, certain events are published and raised by c
 
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
+> [!TIP]  
+> In order to have company id mapping for custom entities just like the base CDS entities (https://docs.microsoft.com/en-us/dynamics365/business-central/admin-cds-company-concept), users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke**, as follows:
+> ```
+>   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Rec. Synch. Invoke", 'OnBeforeInsertRecord', '', false, false)]
+>   local procedure HandleOnBeforeInsertRecord(SourceRecordRef: RecordRef; DestinationRecordRef: RecordRef)
+>   var
+>       CDSIntegrationMgt: Codeunit "CDS Integration Mgt.";
+>   begin
+>   if DestinationRecordRef.Number() = Database::"CDS Worker" then
+>       CDSIntegrationMgt.SetCompanyId(DestinationRecordRef);
+>   end;
+>``` 
+
 ## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
 Let us explore another scenario. If we added an **Industry** field to the **Contact** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
@@ -449,7 +461,6 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
     -serviceuri:<CDS server URL>
     -entities:contact
     -baseid:60000
-    -tabletype:CDS  
     ```
 
     The process for creating the table starts. The AL Table Proxy Generator tool finds that an integration table for the **Contact** entity already exists, so it creates a table extension with only new fields; in this case **Industry**. When the process is completed, the output path contains the `WorkerExt.al` file.
