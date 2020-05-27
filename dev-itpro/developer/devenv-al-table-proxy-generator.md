@@ -29,7 +29,7 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
     -ServiceURI
     -Entities
     -BaseId
-    -TableType
+    -[TableType]
     ```
 3. The table or tables are generated in the folder of the specified AL project.
 
@@ -42,7 +42,7 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
 |*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying entities](devenv-al-table-proxy-generator.md#specifying-entities). |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
-|*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`.|
+|*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`. <br><br>**Note:** If unspecified, the system looks for tables of both the types `CDS` and `CRM`.  |
 
 ## Specifying entities
 The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* entity relationships in CDS. For more information, see [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all entities that you want created, including the related entities, in the `Entities` parameter separated by commas.
