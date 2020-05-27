@@ -30,7 +30,7 @@ The availability of a procedure is defined by:
 - the access modifier set on the procedure
 - the [Scope attribute](../methods/devenv-scope-attribute.md) that is added on the procedure
 
-## Bad code examples
+## Code examples triggering the rule
 
 In the following examples, the version 1.0 of the extension defines a procedure which is public and available for `Cloud` development.
 
@@ -102,7 +102,7 @@ codeunit 50120 AnotherCodeunit
 }
 ```
 
-## Good code examples
+## Code examples not triggering the rule
 
 In the following examples, version 1.0 of the extension defines a procedure which does not have a return type.
 

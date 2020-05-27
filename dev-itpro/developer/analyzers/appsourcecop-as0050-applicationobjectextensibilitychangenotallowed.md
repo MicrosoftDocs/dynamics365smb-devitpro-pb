@@ -30,7 +30,7 @@ The extensibility of an object is defined by the [Extensible](../properties/deve
 > [!NOTE]
 > The default property value for the `Extensible` property differs depending on the object type. For more information, see [Extensible](../properties/devenv-extensible-property.md) property.
 
-## Bad code examples
+## Code examples triggering the rule
 
 ### Example 1 - Changing the Extensible property value from true to false.
 
@@ -89,7 +89,7 @@ enumextension 50120 SomeEnumExtension extends MyEnum
 }
 ```
 
-## Good code examples
+## Code examples not triggering the rule
 
 In the following examples, the version 1.0 of the extension defines an enum which is not extensible.
 

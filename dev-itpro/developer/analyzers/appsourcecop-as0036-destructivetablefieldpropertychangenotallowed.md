@@ -23,7 +23,7 @@ Destructive field properties that have been published must not be modified.
 
 It is not allowed to change property values in a way that would prevent the schema synchronization of the extension on existing installations, or that would break dependent extensions.
 
-## Bad code examples
+## Code examples triggering the rule
 
 ### Example 1 - Changing Enabled from true to false
 
@@ -134,7 +134,7 @@ codeunit 50120 AnotherCodeunit
 }
 ```
 
-## Good code examples
+## Code examples not triggering the rule
 
 ### Example 1 - Setting Enabled from false to true
 

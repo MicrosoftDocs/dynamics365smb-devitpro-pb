@@ -30,7 +30,7 @@ It is only allowed to add a return type to a procedure which previously did not 
 > [!NOTE]  
 > This rule also covers the cases related to the [TryFunction](../properties/devenv-trymethod-property.md) attribute which implicitly defines a Boolean return type. 
 
-## Bad code examples
+## Code examples triggering the rule
 
 In the following examples, version 1.0 of the extension defines a public procedure which returns an Integer.
 
@@ -118,7 +118,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the procedure now returns a Boolean value because it is marked as a TryFunction. This scenario would lead to the same compilation errors than mentioned in Example 1 above.
 
-## Good code examples
+## Code examples not triggering the rule
 
 In the following examples, the version 1.0 of the extension defines a procedure which does not have a return type.
 
