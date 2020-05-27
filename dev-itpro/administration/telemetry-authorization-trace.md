@@ -115,7 +115,7 @@ Occurs when a user sign-in has failed authorization.
 
 #### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
 
-This message occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you'll see that the **State** field is set to **Disabled**.
+This message occurs when the user's account is valid, but the account is disabled. If you open the user account in Business Central, you'll see the **State** field is set to **Disabled**.
 
 *Resolution*
 
@@ -123,13 +123,13 @@ Enable the user account by setting the **State** field to **Enabled**. For more 
 
 #### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
 
-This message occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
+This message occurs if the user has an account, but the account hasn't been assigned any entitlements. 
 
 Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Azure Active Directory role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
 
 *Resolution*
 
-Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They are not assigned in Business Central. To assign entitlements to a user, see one of the following articles:
+Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They aren't assigned in Business Central. To assign entitlements to a user, see one of the following articles:
 
 - From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](/microsoft-365/admin/add-users/add-users).
 
@@ -241,8 +241,7 @@ This message typically occurs when a user tries to access a specific company in 
 This message occurs for one the following reasons:
 
 - The license being used has expired.
-- It was trial license and the trial period has ended. Trial licenses are typically assigned when customers subscribe for an evaluation version by using self-service sign-up (also known as IW or viral sign-up). This license has a time limit.
-
+- The license was trial license and the trial period has ended. Trial licenses are typically assigned when customers subscribe for an evaluation version by using self-service sign-up (also known as IW or viral sign-up). This license has a time limit.
 
 *Resolution*
 
