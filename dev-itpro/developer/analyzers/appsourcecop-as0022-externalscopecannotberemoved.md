@@ -87,7 +87,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the procedure is only available for `OnPrem` development. If a dependent extension uses the `Cloud` compilation target in his app.json and calls this procedure, this will lead to a compilation error similar to `The type or method 'MyProcedure' cannot be used for 'Extension' development. (AL0296)`.
+In version 2.0, the procedure is only available for `OnPrem` development. If a dependent extension uses the `Cloud` compilation target in the app.json and calls this procedure, this will lead to a compilation error similar to `The type or method 'MyProcedure' cannot be used for 'Extension' development. (AL0296)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
@@ -104,7 +104,7 @@ codeunit 50120 AnotherCodeunit
 
 ## Good code examples
 
-In the following examples, the version 1.0 of the extension defines a procedure which does not have a return type.
+In the following examples, version 1.0 of the extension defines a procedure which does not have a return type.
 
 Version 1.0 of the extension:
 ```
@@ -138,7 +138,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the procedure `MyLocalProcedure` is now public and becomes available to dependent extensions.
+In version 2.0, the procedure `MyLocalProcedure` is now public and becomes available to dependent extensions.
 
 ### Example 2 - Changing the Scope attribute from 'OnPrem' to 'Cloud'
 
@@ -157,7 +157,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the procedure `MyOnPremProcedure` becomes available for both `OnPrem` and `Cloud` development. Any dependent extension can now call this procedure, regardless of the compilation target specified in their app.json. The default Scope of a procedure is `Cloud`. Removing the attribute is then also allowed.
+In version 2.0, the procedure `MyOnPremProcedure` becomes available for both `OnPrem` and `Cloud` development. Any dependent extension can now call this procedure, regardless of the compilation target specified in their app.json. The default Scope of a procedure is `Cloud`. Removing the attribute is then also allowed.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
