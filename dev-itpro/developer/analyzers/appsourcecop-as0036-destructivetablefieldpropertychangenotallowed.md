@@ -119,7 +119,7 @@ table 50100 MyTable
 }
 ```
 
-In the version 2.0, the field `MyField` is now only accessible within `MyTable` and cannot be used from other extension. If a dependent extension references this field, this will lead to a compilation error similar to `'MyField' is inaccessible due to its protection level (AL0161)`.
+In version 2.0, the field `MyField` is now only accessible within `MyTable` and cannot be used from other extension. If a dependent extension references this field, this will lead to a compilation error similar to `'MyField' is inaccessible due to its protection level (AL0161)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
