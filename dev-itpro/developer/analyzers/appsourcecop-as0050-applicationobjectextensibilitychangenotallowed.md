@@ -28,7 +28,7 @@ This rule verifies that an object that was extensible in the previous version of
 The extensibility of an object is defined by the [Extensible](../properties/devenv-extensible-property.md) property.
 
 > [!NOTE]
-> The default property value for the `Extensible` property differs depending on the object type. See [Extensible](../properties/devenv-extensible-property.md) property for more information.
+> The default property value for the `Extensible` property differs depending on the object type. For more information, see [Extensible](../properties/devenv-extensible-property.md) property.
 
 ## Bad code examples
 
@@ -50,7 +50,7 @@ page 50100 MyPage
 }
 ```
 
-In the version 2.0, the page is not extensible anymore. If a dependent extension extends this page, this will lead to a compilation error similar to `The object Page 'MyPage' is not extensible. AL(0564)`.
+In version 2.0, the page is not extensible anymore. If a dependent extension extends this page, this will lead to a compilation error similar to `The object Page 'MyPage' is not extensible. AL(0564)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
@@ -79,7 +79,7 @@ enum 50100 MyEnum
 }
 ```
 
-In the version 2.0, the enum is not extensible anymore, because the default extensibility for enums is false. If a dependent extension extends this enum, this will lead to a compilation error similar to `The object Enum 'MyEnum' is not extensible. AL(0564)`.
+In version 2.0, the enum is not extensible anymore, because the default extensibility for enums is false. If a dependent extension extends this enum, this will lead to a compilation error similar to `The object Enum 'MyEnum' is not extensible. AL(0564)`.
 
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
@@ -115,7 +115,7 @@ enum 50100 MyEnum
 }
 ```
 
-In the version 2.0, the enum `MyEnum` is now extensible by dependent extensions.
+In version 2.0, the enum `MyEnum` is now extensible by dependent extensions.
 
 ### Example 2 - Removing the Extensible property on a non extensible Enum.
 
@@ -127,7 +127,7 @@ enum 50100 MyEnum
 }
 ```
 
-In the version 2.0, the enum `MyEnum` remains not extensible, because the default property value is also false for enums.
+In version 2.0, the enum `MyEnum` remains not extensible, because the default property value is also false for enums.
 
 ### Example 3 - Removing the Extensible property on object types which are extensible by default.
 
