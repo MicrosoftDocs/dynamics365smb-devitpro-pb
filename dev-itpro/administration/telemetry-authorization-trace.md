@@ -238,9 +238,25 @@ This message typically occurs when a user tries to access a specific company in 
 
 #### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
 
+This message occurs for one the following reasons:
+
+- The license being used has expired.
+- It was trial license and the trial period has ended. Trial licenses are typically assigned when customers subscribe for an evaluation version by using self-service sign-up (also known as IW or viral sign-up). This license has a time limit.
+
+
+*Resolution*
+
+Renew the existing license or obtain a new license. Licenses are purchased through the Cloud Solution Provider (CSP)
+program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com//en-US/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
+
 #### You can't open the company, because it is a production company. Your license isn't valid for use on production companies.
 
+This message occurs because the license doesn't allow the user to open production companies. For example, the user may be using a trial license that is only valid on the evaluation version.
 
+*Resolution*
+
+Obtain a license that can be used on production companies. Licenses are purchased through the Cloud Solution Provider (CSP)
+program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com//en-US/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
 
 ## See also
 
