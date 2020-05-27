@@ -34,6 +34,9 @@ Yes. Just make sure you list all library apps as dependencies within the AppSour
 
 Currently, updating of apps does not handle the library/dependency chain. This work is planned for a future release. For now, you need to uninstall and reinstall the library/dependency apps as well.
 
+## What are the validation requirements for library apps
+Library apps only get validated technically, but don't go through any type of marketing validation. The technical requirements are described [here](app-faq-dependencies-libraries)
+
 ## See also
 
 [FAQ about Managing and Submitting your Business Central Offer](app-faq-offer.md)  
