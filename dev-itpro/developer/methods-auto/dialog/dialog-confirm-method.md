@@ -45,9 +45,10 @@ Specifies the default button. If you do not specify a default button, then No is
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The message window is automatically sized. The height of the window corresponds to the number of lines and the width corresponds to the length of the longest line.  
 
- We recommend that you always end CONFIRM messages with a question mark. For more information about best practices for end-user messages, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
+The message window is automatically sized. The height of the window corresponds to the number of lines and the width corresponds to the length of the longest line.  
+
+We recommend that you always end `Confirm` messages with a question mark. For more information about best practices for end-user messages, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
 
 ## Example  
  In the following example, the Dialog.CONFIRM method prompts the user for a **true** or **false** answer. 
@@ -67,13 +68,13 @@ begin
 end;
 ```  
 
- The first dialog box shows:  
+The first dialog box shows:  
 
- **Exit without saving changes to customer 1121212?**  
+**Exit without saving changes to customer 1121212?**  
 
- If you select the default **true** value, then the second dialog box is shown:  
+If you select the default **true** value, then the second dialog box is shown:  
 
- **You selected true.**  
+**You selected true.**  
 
 
 ## See Also

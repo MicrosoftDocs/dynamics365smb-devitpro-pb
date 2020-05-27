@@ -37,10 +37,10 @@ In the client, tooltips appear when you point to caption of the control.
 -   ActionContainers  
 
     > [!NOTE]  
-    >  ActionContainers tooltips are only shown on the [!INCLUDE[nav_web](../includes/nav_web_md.md)] for the subtype **HomeItems**.  
+    >  ActionContainers tooltips are only shown on the [!INCLUDE[nav_web](../includes/nav_web_md.md)] for the subtype **Embedding**.  
 
 ## Remarks  
- ToolTipML is multilanguage-enabled. This means that it can contain a list of strings for use by different languages. The text that is used is selected according to the user's current language setting. For more information, see [Multilanguage Development](../devenv-Multilanguage-Development.md).  
+ ToolTipML is multilanguage-enabled. This means that it can contain a list of strings for use by different languages. The text that is used is selected according to the user's current language setting. For more information, see [Multilanguage Development](../devenv-work-with-translation-files.md).  
 
  The ToolTipML property value has the following format.  
 

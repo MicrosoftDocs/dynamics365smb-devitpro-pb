@@ -35,7 +35,7 @@ Deployment routine will pull the apps that are uploaded via the App Management A
 
 ### Using Docker
 
-We strongly recommend you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Docker containers and the NAVContainerHelper PowerShell module [https://github.com/Microsoft/navcontainerhelper] to prepare the BACPAC files. 
+We strongly recommend you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Docker containers and the [NAVContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper) to prepare the BACPAC files. 
 
 > [!IMPORTANT]
 > You must only use the container images available in the  "mcr.microsoft.com/businesscentral/sandbox" container registry for your online deployments.
@@ -50,7 +50,7 @@ With the Docker container, you can: 
 For more information about these and other things you can do, see [NAVContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
 
 > [!IMPORTANT]
-> If your Embed app uses a customized Base Application, you must create your own unique App ID and use it in the app.json file of your customized Base App. You should also change the Publisher property and the Application name to your own in the app.json file . You cannot use the original values of the Microsoft Base Application unless you've extracted all your customizations from that app. The System Application must not be customized and should be used as a dependency for your customized Base Application.  
+> If your Embed app uses a customized Base Application, you must create your own unique App ID and use it in the app.json file of your customized Base App. You must also change the Publisher property and the Application name to your own in the app.json file. You cannot use the original values of the Microsoft Base Application unless you've extracted all your customizations from that app. The System Application must not be customized and must be used as a dependency for your customized Base Application. Use the `Microsoft_Application.app` file to logically incapsulate all of the extensions making up your solution instead of referencing each extension separately, to allow other apps to refer to this solution via the `Microsoft_Application.app`. For more information about the Microsoft_Application.app, see [The Microsoft_Application.app File](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file).
 
 ### .NET add-ins
 
@@ -149,9 +149,9 @@ This section of the manifest.json file must list all the apps used by your solut
 | name| String |Name of the app. Use the same Name as listed in the app.json file.|  
 | publisher| String|Name of the ISV organization that owns the app. Use the same Publisher as listed in the app.json file.| 
 | initialVersion| String |Minimum required (and compatible) version of the app. The exact version of the app you specify must be uploaded via the App Management API. Either you upload the apps or publishers that own the apps do.|
-| allowedUpdates| Enum |Allowed values: none, hotfix, minor, all. <br /><br />You can set up rules that determine which app version to use for the new sign-ups. You can also specify whether updating of the installed app is allowed. <ul><li>`"none"`: It won't be possible to apply any new versions to this app inline (only side by side).  Only the application version, which matches the specified initial version number exactly, will be used for the new signups.</li><li>`"hotfix"`: You allow hot fixing this app with newer hotfix versions (versions with higher build and revision versions). New signups will automatically get the latest available HF version of the app installed.</li><li>`"minor"`: Customers can't view and install newer applicable minor (or hotfix) versions of the app via the Business Central Admin Center. </li><li>`"all"`: Customers can view and install all newer applicable versions of the app via the Business Central Admin Center. </li> </ul> |
+| allowedUpdates| Enum |Allowed values: none, hotfix, minor, all. <br /><br />You can set up rules that determine which app version to use for the new sign-ups. You can also specify whether updating of the installed app is allowed. <ul><li>`"none"`: It won't be possible to apply any new versions to this app inline (only side by side).  Only the application version, which matches the specified initial version number exactly, will be used for the new signups.</li><li>`"hotfix"`: You allow hot fixing this app with newer hotfix versions (versions with higher build and revision versions). New signups will automatically get the latest available HF version of the app installed.</li><li>`"minor"`: Customers can view and install newer applicable minor (or hotfix) versions of the app via the Business Central Admin Center. New signups will automatically get the latest available hotfix version of the app installed, however the minor updates will not be automatically installed, they should be installed by the newly signed up customers using the Business Central Admin Center. </li><li>`"all"`: Customers can view and install all newer applicable versions of the app via the Business Central Admin Center. </li> </ul> |
 | blockUninstall| Boolean |Allow or disallow the app to be uninstalled using the Extension Management page.|  
-| publishOnly| Boolean |Specifies whether to only publish (`true`) that app to the service. Customers can then install it manually from the Extension Management page. If `false`, the app is automatically installed for all new tenants. | 
+| publishOnly| Boolean |Specifies whether to only publish (`true`) that app to the service. Customers can then install it manually from the Extension Management page. If `false`, the app is automatically installed for all new environments and environments updated to this deployment. | 
 
 ### Sample manifest
 

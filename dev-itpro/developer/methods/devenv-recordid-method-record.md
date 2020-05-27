@@ -20,13 +20,13 @@ Gets the RecordID of the record that is currently selected in the table. If no t
 RecordID := Record.RECORDID  
 ```  
   
-#### Parameters  
+### Parameters  
  *Record*  
  Type: Record  
   
  The record whose recordID you want to get.  
   
-## Property Value/Return Value  
+## Return value  
  Type: RecordID  
   
 ## Remarks  

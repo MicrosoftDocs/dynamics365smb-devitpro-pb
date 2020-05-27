@@ -66,8 +66,6 @@ To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](..
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<Common Data Service server URL>
-    -username:<Admin username for Common Data Service>
-    -password:<Password>
     -entities:cds_worker
     -baseid:50000
     -tabletype:CDS
@@ -449,8 +447,6 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<CDS server URL>
-    -username:<Admin username for CDS>
-    -password:<Password>
     -entities:contact
     -baseid:60000
     -tabletype:CDS  
