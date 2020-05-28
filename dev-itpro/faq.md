@@ -25,13 +25,13 @@ The following sections guide you to frequently asked questions about [!INCLUDE[p
 - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prodshort](includes/prodshort.md)] Windows client.
 - Visit [FAQ about Signing Up and Using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)] in the business functionality content for.
 
-<!-- 
+
 Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] here you can find answers to some of the most frequently asked questions:
 
-- Visit [Copy Paste FAQ](/dynamics365/business-central/ui-copy-paste)
-- Visit [Tell Me FAQ](/dynamics365/business-central/ui-search-faq)
-- Visit [List Views FAQ](/dynamics365/business-central/ui-views-faq)
-- Visit [Searching and Filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) -->
+- Visit [Copy Paste FAQ](/dynamics365/business-central/ui-copy-paste) for tips on copying and pasting.
+- Visit [Tell Me FAQ](/dynamics365/business-central/ui-search-faq) for guidance on using search.
+- Visit [List Views FAQ](/dynamics365/business-central/ui-views-faq) to find answers on list views.
+- Visit [Searching and Filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) to learn about setting filters on data.
 
 ## Top-most Frequently Asked Questions for Developer and ITPro Experiences
 
