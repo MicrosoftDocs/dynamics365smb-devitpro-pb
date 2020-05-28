@@ -2,7 +2,7 @@
 title: "An enum field replacing an option field should preserve the member ordinal values."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/03/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 An enum field replacing an option field should preserve the member ordinal values.  
 
 ## Description
-An enum field replacing an option field should preserve the member ordinal values.
+An enum field replacing an option field should preserve the member ordinal values. Modifying the member ordinal values might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

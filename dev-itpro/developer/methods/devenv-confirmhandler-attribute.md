@@ -14,7 +14,7 @@ author: jswymer
 
 Specifies that the method is a ConfirmHandler method.
 
-## Applies To  
+## Applies to  
 AL methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
 
 ## Syntax  

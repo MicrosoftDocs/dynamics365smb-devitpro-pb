@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/06/2020
+ms.date: 04/23/2020
 ---
 
 # Managing an [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
@@ -22,7 +22,8 @@ In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/in
 
 Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you sign in to LCS, click on the **Preview feature management** action. Then on the Preview feature management page, select the "+" action to add a new preview feature using a preview code. In the **Preview code** field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the Private preview features on this page.     
 
-> [!IMPORTANT] Even though the project will be created by one user, every user you are planning to add to your LCS project will have to activate the "Microsoft Dynamics 365 Business Central (SaaS)" feature using the same preview code you received from Microsoft. Without this activation, the users you add to your LCS project will run into permissions issues when trying to open the LCS project that you created. 
+> [!IMPORTANT]  
+> Even though the project will be created by one user, every user you are planning to add to your LCS project will have to activate the "Microsoft Dynamics 365 Business Central (SaaS)" feature using the same preview code you received from Microsoft. Without this activation, the users you add to your LCS project will run into permissions issues when trying to open the LCS project that you created. 
 
 Navigate back to the main page and start creating a new project by selecting the "+" action. Choose **Migrate, create solutions, and learn** category as the purpose of the project. On the next page, provide the project name. 
 
@@ -55,14 +56,39 @@ After the Environment is successfully provisioned, its status on the list of app
 
 ## Onboarding customers and creating environments
 
-It isn't possible to create environments and add customers in LCS. The customers are onboarded the same way as they're onboarded to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service - via the Partner Center. Also no special licenses are used for the Embed apps customers. Use the same licenses and subscriptions that are available for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] itself. You can find more details [here](../administration/get-started-online.MD)].  
+Partners who support an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online can onboard customers in two ways:
+
+- Using the self-service IW sign-up – for acquiring a free evaluation version of the app.  
+- Through the Microsoft Partner Center Cloud Solution Provider (CSP) program by contacting the partner - for acquiring a paid production version of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)].
+
+Tenant provisioning is happening automatically (just-in-time) on the first attempt to login into the solution.
+
+Navigating to `https://businesscentral.dynamics.com` will trigger provisioning of the Business Central tenant, while navigating to `https://[application name].bc.dynamics.com` will trigger provisioning of the tenant running on the *application name* application.  
+
+### Self Service (IW) sign-up - evaluation
+
+The Embed App partner can choose to allow customers to use a self-service sign-up (also known as IW sign-up and viral sign-up) for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)]. In that case, the partner must prepare a sign-up URL that will redirect the Office 365 sign-up flow to their application URL. The sign-up URL must have the following format:
+
+`https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2F[application name].bc.dynamics.com%2F%3FredirectedFromSignup%3D1`
+
+The partner can then pass the URL to their customers, either from the partner’s own marketing page or in a welcome e-mail, for example.
+
+To work with an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], the customers would use a URL that looks something like this:
+
+- Client: `https://[application name].bc.dynamics.com`
+- Web Services: `https://[application name].api.bc.dynamics.com`
+
+In contrast, to work with [!include[prodshort](../developer/includes/prodshort.md)], they would use these URLs:
+
+- Client: `https://businesscentral.dynamics.com` 
+- Web Services: `https://api.businesscentral.dynamics.com`  
 
 Once you've established the reseller relationship with the customer and added [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscriptions with required number of licenses for them, you must use your own branded Embed app URL to sign in their environment and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center.
 
 To create a new production environment for your customers, go to this URL:
 
 ```http
-https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production 
+https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production
 ```
 
 To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL:
@@ -77,8 +103,8 @@ Each environment that you signed up for the [!INCLUDE[embedapp](../developer/inc
 
 In the LCS portal, you get access to various logs for the activities that you do in the portal:
 
-- Deployment: logs of deployment of the application versions 
-- Tenant provisioning: logs of creation of the new customer environments   
+- Deployment: logs of deployment of the application versions  
+- Tenant provisioning: logs of creation of the new customer environments  
 - Tenant upgrades: logs of customer environments upgrades  
 - Application errors: errors that are displayed to the customers when they work with the Embed app functionality
 

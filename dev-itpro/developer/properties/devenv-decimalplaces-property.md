@@ -16,6 +16,8 @@ Sets display and storage requirements for the [Decimal Data Type](../datatypes/d
 ## Applies To  
   
 - Page Fields  
+
+- Table Fields
   
 - Report Columns  
 

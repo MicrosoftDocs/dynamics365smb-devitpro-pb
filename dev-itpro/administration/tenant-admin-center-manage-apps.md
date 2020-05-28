@@ -22,7 +22,11 @@ Updates are frequently made available for these apps by Microsoft, partners, and
 
 To help you manage app updates, the administration center includes the **Manage Apps** page. 
 
-Like other features in the administration center, this functionality can be used by the partner (delegated administrator) or a local customer admin. 
+Like other features in the administration center, this functionality can be used by the partner (delegated administrator) or a local customer admin.
+
+> [!NOTE]
+> The capability to update apps using the administration center is being made available gradually. Until the feature is generally available, some apps can't be updated using this feature. For information about the timeline, see [Installing AppSource apps updates in the Business Central administration center](/dynamics365-release-plan/2020wave1/dynamics365-business-central/installing-appsource-apps-updates-business-central-administration-center).
+
 
 ## Get an overview and check for updates
 

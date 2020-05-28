@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,6 +59,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0203](codecop-aa0203-donotnamemethodasfield.md)|To avoid confusion, do not give methods the same name as fields or actions in the same scope.|To avoid confusion, do not give methods the same name as fields or actions in the same scope.|The name of the method '{0}' is identical to a field or action in the same scope.|Design|Warning|true|
 |[AA0204](codecop-aa0204-donotnameglobalvarasfieldormethod.md)|To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope.|To avoid confusion, do not give global variables the same name as fields, methods or actions in the same scope.|The name of the global variable '{0}' is identical to a field, method or action in the same scope.|Design|Warning|true|
 |[AA0205](codecop-aa0205-variablesmustalwaysbeinitialized.md)|Variables must be initialized before usage.|Always initialize a variable before usage. This can improve readability and make debugging easier.|Use of unassigned variable '{0}'.|Design|Warning|true|
+|[AA0206](codecop-aa0206-initializedvariablesmustalwaysbeused.md)|The value assigned to a variable must be used.|The value assigned to a variable must be used, otherwise the variable is not necessary.|The variable '{0}' is initialized but not used.|Design|Warning|true|
 |[AA0207](codecop-aa0207-eventsubscriberfunctionsmustbelocal.md)|The EventSubscriber method must be local.|The EventSubscriber method must be local.|The EventSubscriber method {0} must be local.|Design|Warning|true|
 |[AA0210](codecop-aa0210-suboptimalindex.md)|Avoid non-indexed fields into filtering.|Suboptimal index.|The table {0} does not contain the key with the field {1}.|Design|Info|true|
 |[AA0211](codecop-aa0211-calcfieldsonlyonflowfields.md)|Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob.|CalcFields should only be used for FlowFields or Blob fields|The CalcFields method should only be used with FlowFields or fields of type Blob. The field {0} is not a FlowField or of type Blob.|Design|Warning|true|
@@ -84,6 +85,8 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0233](codecop-aa0233-usegetfindfirstandfindlastwithoutnext.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Avoid enumeration of a dataset when the dataset is not filtered.|The '{0}' method on the record '{1}' must be used without the Next() method.|Design|Warning|true|
 |[AA0235](codecop-aa0235-whenusingoninstallpercompanyaddcodetocompanyinitializesubscription.md)|When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription.|When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' you must also add a 'Company - Initialize'::'OnCompanyInitialize' subscription.|Codeunit '{0}' must contain the 'OnCompanyInitialize' subscription.|Design|Info|true|
 |[AA0237](codecop-aa0237-nontemporaryvariablesmustnotbeprefixedtemp.md)|The name of non-temporary variables must not be prefixed with Temp.|Only temporary variable names must be prefixed with Temp.|The name of non temporary variables '{0}' must not be prefixed with Temp.|Readability|Warning|true|
+|[AA0240](codecop-aa0240-emailandphonenomustnotbepresentinthesource.md)|Email and Phone No must not be present in any part of the source code.|Email and Phone No must not be present in any part of the source code that might be collected as telemetry data.|The {0} '{1}' must not be contain Email or Phone No.|Design|Warning|true|
+|[AA0448](codecop-aa0448-usefieldtablecaptionforusermessages.md)|You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.|If you want to enable your application for multilanguage functionality, you must use the FieldCaption and TableCaption methods instead of the FieldName and TableName methods.|Use FieldCaption instead of FieldName and TableCaption instead of TableName in methods that display messages.|Localizability|Warning|true|
 |[AA0470](codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md)|Placeholders should have a comment explaining their content.|Provide an explanation that describes the content of each of the placeholders.|Variable '{0}' with placeholders should have a comment explaining their content.|Localizability|Warning|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

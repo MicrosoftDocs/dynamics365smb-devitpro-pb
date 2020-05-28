@@ -29,7 +29,7 @@ There are a number of limitations to be aware of:
 To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
 
 > [!TIP]  
-> To be able to debug an online environment with an Embed app published in it, make sure to specify the "applicationFamily" parameter in your launch.json file. You define the application family for your Embed app during onboarding. 
+> To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You define the application family for your Embed app during onboarding. 
 
 ## Breakpoints
   

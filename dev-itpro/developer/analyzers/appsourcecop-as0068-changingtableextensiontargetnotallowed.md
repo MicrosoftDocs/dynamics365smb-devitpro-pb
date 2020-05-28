@@ -2,7 +2,7 @@
 title: "Changing a table extension's target is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/03/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Changing a table extension's target is not allowed.  
 
 ## Description
-Changing the target of a table extension that has been published is not allowed because dependent extensions may break.
+Changing the target of a table extension that has been published is not allowed, because this might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

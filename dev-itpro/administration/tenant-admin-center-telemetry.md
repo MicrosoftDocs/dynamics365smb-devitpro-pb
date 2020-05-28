@@ -25,7 +25,12 @@ To filter the telemetry for an environment:
 4. Choose the environment.
 5. Select **Filter**.
 
+> [!TIP]
+> If your users complain of a confusing error message such as *Sorry, we just updated this page. Please close and reopen.*, then you can often find the underlying problem by analyzing telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For example, in the case of the *Sorry, we just updated this page. Please close and reopen.* message, the underlying problem is often that two users are trying to modify the same data. So if both users open the same sales order, and both change a field, then one of them will see the *Sorry, we just updated this page. Please close and reopen.* message, because [!INCLUDE [prodshort](../developer/includes/prodshort.md)] saves changes as soon as you move to the next field or close the page.
+
 ## Sending telemetry to Microsoft Azure Application Insights
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
 You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
