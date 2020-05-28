@@ -32,7 +32,7 @@ The extensibility of an object is defined by the [Extensible](../properties/deve
 
 ## Code examples triggering the rule
 
-### Example 1 - Changing the Extensible property value from true to false.
+### Example 1 - Changing the Extensible property value from true to false
 
 The version 1.0 of the extension defines a page which is extensible:
 ```
@@ -59,7 +59,7 @@ pageextension 50120 SomePageExtension extends MyPage
 }
 ```
 
-### Example 2 - Removing the extensible property on an Enum.
+### Example 2 - Removing the extensible property on an Enum
 
 The version 1.0 of the extension defines an enum which is extensible:
 ```
@@ -103,7 +103,7 @@ enum 50100 MyEnum
 }
 ```
 
-### Example 1 - Changing the Extensible property value from false to true.
+### Example 1 - Changing the Extensible property value from false to true
 
 Version 2.0 of the extension:
 ```
@@ -117,7 +117,7 @@ enum 50100 MyEnum
 
 In version 2.0, the enum `MyEnum` is now extensible by dependent extensions.
 
-### Example 2 - Removing the Extensible property on a non extensible Enum.
+### Example 2 - Removing the Extensible property on a non extensible Enum
 
 Version 2.0 of the extension:
 ```
@@ -129,7 +129,7 @@ enum 50100 MyEnum
 
 In version 2.0, the enum `MyEnum` remains not extensible, because the default property value is also false for enums.
 
-### Example 3 - Removing the Extensible property on object types which are extensible by default.
+### Example 3 - Removing the Extensible property on object types which are extensible by default
 
 For object for which the default property value for the Extensible property is true, removing the property makes the object extensible.
 
