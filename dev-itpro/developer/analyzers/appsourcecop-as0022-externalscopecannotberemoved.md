@@ -32,7 +32,7 @@ The availability of a procedure is defined by:
 
 ## Code examples triggering the rule
 
-In the following examples, the version 1.0 of the extension defines a procedure which is public and available for `Cloud` development.
+In the following examples, version 1.0 of the extension defines a procedure which is public and available for `Cloud` development.
 
 Version 1.0 of the extension:
 ```
@@ -58,7 +58,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In the version 2.0, the procedure is only accessible within its declaring codeunit. If a dependent extension called this procedure, this will lead to a compilation error similar to `'MyProcedure()' is inaccessible due to its protection level. (AL0161)`.
+In version 2.0, the procedure is only accessible within its declaring codeunit. If a dependent extension called this procedure, this will lead to a compilation error similar to `'MyProcedure()' is inaccessible due to its protection level. (AL0161)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 ```
