@@ -32,7 +32,7 @@ This rule validates that changes on the parameters of `Business` type and `Integ
 > [!NOTE]  
 > Dependent extensions can subscribe to these events, even if the events are marked with the `local` or `internal` access modifiers. The access modifier only limits the ability to raise the event. 
 
-## Bad code examples
+## Code examples triggering the rule
 
 In the following examples, the version 1.0 of the extension defines a Business type event whose accessibility is not public. This means that this event can be subscribed to from other extensions, but cannot be raised from other extensions.
 
@@ -108,7 +108,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the parameter `i` has been renamed to `j`. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'i' is not found. (AL0282)`.
 
-## Good code examples
+## Code examples not triggering the rule
 
 For `local` or `internal` events, it is allowed to add parameters to the event.
 
