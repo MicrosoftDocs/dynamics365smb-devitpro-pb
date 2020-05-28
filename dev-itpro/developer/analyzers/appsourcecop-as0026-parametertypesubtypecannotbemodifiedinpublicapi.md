@@ -28,7 +28,7 @@ It is not allowed to change the type or subtype of parameters in public procedur
 > [!NOTE]  
 > This rule allows to convert `Option` type parameters into `Enum` type parameters.
 
-## Bad code examples
+## Code examples triggering the rule
 
 ### Example 1 - Modifying parameters type
 

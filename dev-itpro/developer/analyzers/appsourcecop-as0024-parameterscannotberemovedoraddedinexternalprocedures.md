@@ -25,7 +25,7 @@ Parameters cannot be removed or added in external procedures, because it will br
 
 It is not allowed to remove or add new parameters in public procedures as this will break dependent extensions which are calling them.
 
-## Bad code examples
+## Code examples triggering the rule
 
 ### Example 1 - Removing parameters
 

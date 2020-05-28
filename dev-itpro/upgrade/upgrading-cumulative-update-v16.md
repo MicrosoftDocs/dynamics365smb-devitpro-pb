@@ -463,7 +463,7 @@ We recommend setting the value to application build number for the version 16 up
 
 1. Run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
-    ```
+    ```powershell
     Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
     ```
     For example:
@@ -473,7 +473,7 @@ We recommend setting the value to application build number for the version 16 up
     ```
 2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
 
-    ```  
+    ```powershell  
     Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
     ```
     
@@ -482,8 +482,8 @@ We recommend setting the value to application build number for the version 16 up
 
 3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
 
-    ```
-    Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
+    ```powershell
+    Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial
     ```
 
 ## See Also
