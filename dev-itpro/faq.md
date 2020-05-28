@@ -33,7 +33,7 @@ Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] he
 - Visit [List Views FAQ](/dynamics365/business-central/ui-views-faq) to find answers on list views.
 - Visit [Searching and Filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) to learn about setting filters on data.
 
-## Top-most Frequently Asked Questions for Developer and ITPro Experiences
+Below find some of our top-most frequently asked questions for developer and ITPro experiences.
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
 
