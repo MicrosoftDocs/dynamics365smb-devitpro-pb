@@ -13,24 +13,26 @@ ms.author: solsen
 
 # Directives in AL
 
-Anything can be made conditional, also table fields. Symbols can be defined in the manifest or in the beginning of a source file. There is currently no built-in symbols.
+Anything can be made conditional, also table fields. Symbols can be defined in the manifest or in the beginning of a source file. There are currently no built-in symbols.
 
-There will also be a server side check-in that create ParseOptions from manifest and it when parsing up syntax trees.
+<!-- There is a server side check-in that create ParseOptions from manifest and it when parsing up syntax trees. -->
 
 The following AL preprocessor directives are supported. For examples, see the [Examples](devenv-directives-in-al-md#Examples) section below.
 
 |Preprocessor directive |Description |
 |-----------------------|------------|
-|#if                    |    |
+|#if                    | Specifies the start of an if clause. The #endif clause ends it. Compiles the code between the directives if the specified symbol is defined.   |
 |#else                  |    |
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
 |#endif                 |  |
-|#region                |  |
-|#endregion             |  |
 |#define                |  |
 |#undef                 |  |
-|#pragma                |  |
 |#warning               |  |
+|#error                 |  |
+|#line                  |  |
+|#region                |  |
+|#endregion             |  |
+|#pragma                |  |
 |#disable               |  |
 |#restore               |  |
 |#enable                |  |
