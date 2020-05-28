@@ -43,10 +43,14 @@ An instance of the [Record](record-data-type.md) data type.
 
 This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters are not changed after you call this function. <!-- For more information, see Security Filter Modes.-->
 
+> [!NOTE]  
+> `Get` does not require specifying all fields of the key in the call; any omitted field is treated as default value (for example, ‘’ for text/code, false for boolean). You can only omit from the end of the key, not a field in the middle of a key. If a record with a blank/default value exists that is the one being returned, otherwise it will fail with a record does not exist error.
+
 This method ignores any call to the [SetAutoCalcFields Method](../record/record-setautocalcfields-method.md). Therefore, a Get call on a record after a `SetAutoCalcFields` call does not automatically calculate FlowFields in the record.
 
 > [!NOTE]  
 > You cannot use the Get method to retrieve a record in a table by its primary key value if the primary key field in the table has the data type RecordID. In this case, you can retrieve the record by using the [SetRange Method](record-setrange-method.md).
+
 <!--
 ## Example
 This example requires that you create the following variable and text constants in the AL.
