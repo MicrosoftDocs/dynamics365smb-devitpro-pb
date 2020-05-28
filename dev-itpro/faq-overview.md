@@ -1,5 +1,5 @@
 ---
-title: "Frequently Asked Questions for Dynamics 365 Business Central"
+title: "FAQ for Dynamics 365 Business Central"
 description: 
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Frequently Asked Questions for Dynamics 365 Business Central
+# FAQ for Dynamics 365 Business Central
 
 The following sections guide you to frequently asked questions about [!INCLUDE[prodshort](includes/prodshort.md)].
 

@@ -117,5 +117,5 @@ To connect to the cloud through [!INCLUDE[prodshort](../developer/includes/prods
 
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
-[Frequently Asked Questions about connecting to the intelligent cloud](faq-intelligent-cloud.md)  
+[FAQ about connecting to the intelligent cloud](faq-intelligent-cloud.md)  
 [Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)  
