@@ -21,11 +21,11 @@ The following AL preprocessor directives are supported. For examples, see the [E
 
 |Preprocessor directive |Description |
 |-----------------------|------------|
-|#if                    | Specifies the start of a conditional clause. The #endif clause ends it. Compiles the code between the directives if the specified symbol is defined. |
+|#if                    | Specifies the start of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol is defined. |
 |#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluates to `true`, the compiler will evaluate code between #else and #endif. |
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
-|#endif                 |  |
-|#define                |  |
+|#endif                 | Specifies the end of a conditional clause that starts with `#if`. |
+|#define                | Used to define a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. |
 |#undef                 |  |
 |#warning               |  |
 |#error                 |  |
