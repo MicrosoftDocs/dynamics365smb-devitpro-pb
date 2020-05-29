@@ -236,11 +236,15 @@ This message typically occurs when a user tries to access a specific company in 
 
 #### User cannot open the company because the tenant is locked.
 
-This message indicates that the tenant has been locked by Microsoft, typically for security reasons. The tenant isn't accessible by any user.
+This message indicates that the tenant has been locked by Microsoft, typically for security reasons like preventing repeated malicious sign-in attempts. The tenant isn't accessible by any user.
 
 *Resolution*
 
-Contact Microsoft support.
+For help with resolving this issue, read the following articles or contact Microsoft Support: 
+
+- [Troubleshoot account lockout problems with an Azure AD Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
+
+- ["It looks like your account has been blocked" error when signing in to Office 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
 
 #### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
 
