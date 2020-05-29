@@ -26,11 +26,10 @@ The following AL preprocessor directives are supported. For examples, see the [E
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
 |#endif                 | Specifies the end of a conditional clause that starts with `#if`. |
 |#define                | Used to define a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. |
-|#undef                 |  |
-|#warning               |  |
-|#error                 |  |
-|#line                  |  |
-|#region                |  |
+|#undef                 | Used to undefine a symbol.  |
+|#warning               | Specifies a compiler warning from code.  |
+|#error                 | Specifies a compiler error from code. |
+|#region                | Specifies a block of code that you can expand or collapse |
 |#endregion             |  |
 |#pragma                |  |
 |#disable               |  |
