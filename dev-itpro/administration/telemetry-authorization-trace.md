@@ -236,6 +236,12 @@ This message typically occurs when a user tries to access a specific company in 
 
 #### User cannot open the company because the tenant is locked.
 
+This message indicates that the tenant has been locked by Microsoft, typically for security reasons. The tenant isn't by any user.
+
+*Resolution*
+
+Contact Microsoft support.
+
 #### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
 
 This message occurs for one the following reasons:
