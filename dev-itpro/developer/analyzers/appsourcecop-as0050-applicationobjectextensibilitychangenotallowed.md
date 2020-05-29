@@ -34,7 +34,7 @@ The extensibility of an object is defined by the [Extensible](../properties/deve
 
 ### Example 1 - Changing the Extensible property value from true to false
 
-The version 1.0 of the extension defines a page which is extensible:
+Version 1.0 of the extension defines a page which is extensible:
 ```
 page 50100 MyPage
 {
