@@ -36,7 +36,7 @@ DataItemTableFilter = "Document Type" = FILTER (Invoice | "Credit Memo");
 
 ## Example  
 
-The following example shows how to use the **DataItemTableField** property to filter the data of the `Item` table used in the `"Low on stock inventory items"` query.
+The following example shows how to use the **DataItemTableField** property to filter the data of the `Item` table, used in the `"Low on stock inventory items"` query.
 
 The **DataItemTableField** property filters on those records that are physical inventory items (`Type = CONST(Inventory)`), that have less than 20 units in stock (`Inventory = FILTER(<= 20)`) and for which no substitute item exists (`"Substitutes Exist" = CONST(False)`).
 
@@ -47,7 +47,8 @@ query 50001 "Low on stock inventory items"
     {
         dataitem(item; "Item")
         {
-            DataItemTableFilter = Type = CONST(Inventory), Inventory = FILTER(<= 20),"Substitutes Exist" = CONST(False);
+            DataItemTableFilter = Type = CONST(Inventory), Inventory = FILTER(<= 20),
+            "Substitutes Exist" = CONST(False);
 
             column(Item_No; "Item No.")
             {
