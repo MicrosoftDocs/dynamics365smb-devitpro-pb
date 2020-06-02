@@ -1,5 +1,5 @@
 ---
-title: "Working with AL Methods"
+title: "Working with AL methods"
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -10,13 +10,13 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# AL Methods
+# AL methods
 
 Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be executed, or *called*, from the same object in which they are declared or from other parts of the application. 
 
 There are two types of methods: system methods and user-defined (custom) methods.
 
-- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL Method Reference](methods-auto/library.md) and [Essential AL Methods](devenv-essential-al-methods.md).
+- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md).
 
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
 
@@ -37,7 +37,7 @@ Typing the shortcut `tprocedure` will create the basic structure for a method wh
 
 An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
-Attributes are placed before the method. For information about the available attributes, see [Method Attributes](methods/devenv-method-attributes.md).
+Attributes are placed before the method. For information about the available attributes, see [method Attributes](methods/devenv-method-attributes.md).
 
 ### Local and global scope
 
@@ -45,12 +45,12 @@ A method can be a *local* method or *global* method. A local method can only be 
 
 To declare a local method, start the declaration with `local`: 
 ```
-local procedure MyMethod();
+local procedure Mymethod();
 ```
-To declare a global method, **omit** `local`:
+To declare a global method, *omit* `local`:
 
 ```
- procedure MyMethod();
+ procedure Mymethod();
 ```
 
 ### Parameters (optional)
@@ -59,13 +59,13 @@ method can modify that information. In the method declaration, you place the par
 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 ```
- procedure  MyMethod(MyCustomer : Record Customer;VAR MyDimension : ARRAY [2] OF Boolean)
+ procedure  Mymethod(MyCustomer : Record Customer;var MyDimension : ARRAY [2] OF Boolean)
 ```
 
 ### Return values (optional)
 A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type (For example, if the return value is a Text DataType, the text might have a length of 50).
 
-## <a name="CallMethod"></a>Calling methods
+## <a name="Callmethod"></a>Calling methods
 You can execute, or call, a built-in or a custom method by using its name in a method call statement. When a method is called the current application sequence is suspended and the code on the method is run. When the method code is completed, the application code sequence returns to where the method was called from. How the method is called determines what happens when it returns.
 
 A method can be used as part of an expression. For example, the following code uses a
@@ -98,18 +98,18 @@ You can specify that a parameter is passed to a method by value or by reference.
 The following shows the syntax for a method. The first example shows a method with two mandatory parameters.
 
 ```
-METHOD(Parameter1, Parameter2)  
+method(Parameter1, Parameter2)  
 ```
  
 Some built-in methods have optional parameters, the syntax is shown below. The optional parameters may be omitted starting from the right.
 
 ```  
-METHOD([Optional1] [, Optional2] [, Optional3])  
+method([Optional1] [, Optional2] [, Optional3])  
 ```  
   
 The method that uses the syntax above can be called by using the following code.  
 ```  
-METHOD(Optional1, Optional2)  
+method(Optional1, Optional2)  
 ```
   
 ## Example 2  
@@ -130,14 +130,14 @@ NewDate := DMY2DATE(5, 11, 1992); //Returns the date November 5, 1992
  Depending on the use of the DMY2DATE method, 1, 2, or 3 parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default.  
   
 ## Example 4  
- You can assign the return value of a method to a variable.  
+You can assign the return value of a method to a variable.  
   
 ```  
 ReturnVal := MyMethod(Param1);  
 ```  
   
 ### Example 5  
- In this example, MyMethod returns a Boolean value. You can use the return value in a conditional statement.  
+In this example, `MyMethod` returns a Boolean value. You can use the return value in a conditional statement.  
   
 ```  
 if (MyMethod(Param1)) then  

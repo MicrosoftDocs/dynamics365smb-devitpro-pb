@@ -2,7 +2,7 @@
 title: "Do not have identifiers with quotes in the name."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/22/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

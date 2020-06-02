@@ -65,9 +65,8 @@ You can enter values for the CaptionML property in two ways:
 
 When the CaptionML property does not include an entry for the language used in the client at runtime, then a default value for the caption string will be used according to the following: 
 
-1. If there is an `ENU` entry, then it's caption string is used.  
-2. If there is no `ENU` entry, then any language entries defined for the property are sorted alphabetically, and then the caption string for the first entry is used. For example, if the CaptionML property is set to `DEU='Name',DAN='Navn',ESP='Nombre',FRA='Nom';`, then `DAN='Navn'` would be used, even though it is second in the list.  
-3. If there are no language entries in CaptionML property, then the caption string is determined according to the following table:
+1. If there is an `ENU` entry, then it's caption string is used. 
+2. If there are no language entries in CaptionML property, then the caption string is determined according to the following table:
 
     |Object, control, or other element|Default caption|  
     |---------------------------------|---------------|  

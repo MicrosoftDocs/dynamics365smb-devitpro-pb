@@ -14,7 +14,7 @@ author: jswymer
 
 Specifies that the method is a Normal method.
 
-## Applies To  
+## Applies to  
 AL methods on codeunits.
 
 ## Syntax  
