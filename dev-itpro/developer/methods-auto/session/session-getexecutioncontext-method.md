@@ -34,6 +34,10 @@ The current session's execution context.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+For an example of when and how to run the `GetExecutionContext` method, see [Protecting sensitive code from running during upgrade](../../devenv-upgrading-extensions.md#protecting-sensitive-code-from-running-during-upgrade).
+
 ## See Also
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
