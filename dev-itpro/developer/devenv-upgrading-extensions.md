@@ -235,53 +235,6 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed [ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
 
-<!--
-```
-codeunit 50100 ShoeSizeUpgCodeunitPerCompany
-{
-    Subtype = Upgrade;
-
-    trigger OnUpgradePerCompany()
-    var
-        UpgradeTagMgt: Codeunit "Upgrade Tag";
-    begin
-
-        // Check whether the tag has been used before, and if so, don't run upgrade code
-        if UpgradeTagMgt.HasUpgradeTag('ABC-1234-ShoeSizeUpgrade-20201125') then
-            exit;
-
-        // Run upgrade code
-        UpgradeShoeSize();
-
-        // Insert the upgrade tag in table 9999 "Upgrade Tags" for future reference
-        UpgradeTagMgt.SetUpgradeTag('ABC-1234-ShoeSizeUpgrade-20201125');
-    end;
-
-    local procedure UpgradeShoeSize()
-    var
-        Customer: Record Customer;
-    begin
-
-        if not Customer.FindSet() then
-            exit;
-
-        repeat
-            Customer."ABC - Customer Shoesize" := Customer.Shoesize;
-            Customer.Modify();
-        until Customer.Next() = 0;
-    end;
-
-    // Register the new upgrade tag for new companies when they are created.
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
-    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]]);
-    begin
-        PerCompanyUpgradeTags.Add('ABC-1234-ShoeSizeUpgrade-20201125');
-    end;
-
-}
-```
--->
-
 ```
 codeunit 50100 "ABC Upgrade Shoe Size"
 {
@@ -343,6 +296,34 @@ codeunit 50101 "ABC Upgrade Tag Definitions"
     end;
 
 }
+```
+
+## Protecting sensitive code from running during upgrade
+
+The extension might initiate code that you don't want to run during upgrade. The changes done to the data stored in the database will be rolled back. However, things like calls to external web services or physical printing can't be rolled back. Also, some code, like scheduling tasks, might throw an error and fail the upgrade.
+
+For example, let's say the extension runs code that prints a check after a purchase invoice is posted for buying shoes. If the upgrade fails, the purchase invoice is rolled back. But the check will still be printed, unless you have implemented a mechanism to prevent printing. 
+
+To avoid this situation, use the session `ExecutionContext`. Depending on the scenario, the system runs a session in a special context for a limited time, which can be either `Normal`, `Install`, `Uninstall`, or `Upgrade`. You get the `ExecutionContext` by calling [GETEXECUTIONCONTEXT method](/methods-auto/session/session-getexecutioncontext-method.md). For example, referring the example for printing checks, you could add something like the following code to verify the ExecutionContent before printing the check:
+
+```
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterPurchInvHeaderInsert', '', false, false)]
+local procedure PrintCheckWhenPurchasingShoes(var PurchHeader: Record "Purchase Header"; var PurchInvHeader: Record "Purch. Inv. Header")
+begin
+    // Check whether global context is upgrade or installation of extension
+    if Session.GetExecutionContext() <> ExecutionContext::Normal then
+        // Check whether code is triggered by the extension
+        if Session.GetCurrentModuleExecutionContext() <> ExecutionContext::Normal then
+            // Something is wrong, so you want to abort here because the code doesn't raise the EnqueuePrintingCheck trigger
+            Error('Check can't be printed')
+        else begin
+            // Other code is invoking the upgrade, so use Job queue or similar mechanism to roll back if upgrade fails
+            EnqueuePrintingCheck(PurchInvHeader);
+            exit;
+        end;
+
+    CallWebServiceToPrintCheck(PurchInvHeader);
+end;
 ```
 
 ## Running the upgrade for the new extension version
