@@ -24,7 +24,7 @@ The file name of the reference is `Microsoft_Application.app` and in the app.jso
 > Whether the extensions that are dependent on the `Application` compile and work is up to the partner redefining the application to ensure by not introducing breaking changes.
 
 > [!IMPORTANT]  
-> If you have modified the `Microsoft_Application.app` file, you can rename the file name, and change information about the `publisher`, but it is important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbols references. It is also important to keep the `propagateDependencies` set to `true`.
+> If you have modified the `Microsoft_Application.app` file, you can rename the file name, and change information about the `publisher`, but it is important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbols references. It is also important to keep the `propagateDependencies` set to `true`. The `version` must be set to the version of the Microsoft base application with which it is compatible.
 
 ## Changing the app.json file for a code-customized base application
 
