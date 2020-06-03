@@ -19,7 +19,7 @@ The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_lo
 When you develop in a Docker sandbox, the Essential experience is automatically assigned to you (you set the experience on the **Company Information** page), which makes it difficult to test how a user with the Premium plan assigned will experience what you have developed.
 
 > [!NOTE]  
-> There is no license check in a Docker Sandbox except for on Purchase and Sales documents. There is a different behavior in these documents as the **Team Member License** has partial access. In particular Invoices, Orders, Quotes and Credit Memos share the same table and the **Team Member License** has access only to Quotes.
+> There is no license check in a Docker Sandbox except for on Purchase and Sales documents. There is a different behavior in these documents as the **TEAMMEMBER** license has partial access. In particular Invoices, Orders, Quotes and Credit Memos share the same table and the **TEAMMEMBER** license has access only to Quotes.
 
 ## Setup for users with different plans
 
