@@ -19,4 +19,4 @@ ms.author: v-liober
 | 13. **Hide key**| Enter a secret key that you'll use to preview your offer in AppSource before going live. Note, this isn't a password and can only contain alphanumeric characters. *Example:* *SalesInventoryKey* | Required     |
 
 > [!TIP]  
-> *Example:* of the completed app release date-, products your app works with-, search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing details” section of the Cloud partner portal:
+> *Example:* of the completed app release date-, products your app works with-, search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing details” section of Partner Center:

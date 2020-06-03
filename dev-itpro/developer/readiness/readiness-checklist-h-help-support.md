@@ -29,14 +29,14 @@ The help page needs to include online documentation that can be used as help.
 - Links to existing videos and documentation 
 - Links to the most frequently asked questions
 
-*Example of a help site that is set up according to our best practices:* [Open Door Technology's help page](https://odtrentals365help.opendoorrentalsoftware.com/)
+*Example of a help site that is set up according to our best practices:* [Foodware's help page](https://docs.foodware365.com/bcportal/Foodware365QuickStart.htm?b=Expiration%20Management)
 
 - Use the dropdown box to choose which countries your offer supports.
 
 > [!TIP]  
-> *Example:* of the completed help link-, supported countries/regions-, supported
+> *Example:* of the help link-, supported countries/regions-, supported
 languages and app version fields (cf. point 6,7,8 and 9) in the "Listing
-details" section of the Cloud partner portal:
+details" section of Partner Center:
 
 ![Storefront Detail - Support & Help Links](../../media/SupportHelp.png)
 
@@ -55,14 +55,10 @@ The support page needs to include the following contact options and docs:
 - Phone number
 - Live-chat (if possible) 
 - Address 
-- Defined service level agreements (SLAs).
+- Include the time frame for your reply (such as within 1-2 business days).
 
-How to upload your support page to the Cloud Partner Portal?
+How to upload your support page to Partner Center?
 - Enter the URL to your app's support page.
 
 > [!TIP]  
-> *Example:* of a support site that is set up according to our best practices:* [Sana Commerce's support page](https://www.sana-commerce.com/contact/)
-
-> [!TIP]
-> *Example:* of the completed screenshot fields (cf. point 20) in the "Customer
-Support" section of the Cloud partner portal:
+> *Example:* of a support page that is set up according to our best practices: [EOS Solutions' support page.]( https://www.eos-solutions.it/en/contact-support.html)
