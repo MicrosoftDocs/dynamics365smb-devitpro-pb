@@ -2,7 +2,7 @@
 title: "Designing Indented Hierarchy Lists"
 description: This article explains how to indent rows in a repeater control to design hierarchical lists. You can nest records that users can navigate, expand, and collapse.
 ms.custom: na
-ms.date: 04/07/2020
+ms.date: 05/28/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -166,7 +166,7 @@ page 50100 MyPage
 
 You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above.  
 
-For a more detailed implementation example, see the **Chart of Accounts** page in the base application.  
+For a more detailed implementation example, see the [Chart of Accounts](https://businesscentral.dynamics.com/?page=16) page in the base application (link requires sign-in to Business Central online).  
 
 
 ## Setting up a collapsible indented hierarchy
@@ -244,7 +244,7 @@ page 50100 MyPage
 
 You can achieve the same results using a variable instead of the table field for the IndentationColumn property. Look at the commented lines of code in the example above. 
 
-For a more detailed implementation example, see the **Assisted Setup** page in the base application.  
+For a more detailed implementation example, see the [Assisted Setup](https://businesscentral.dynamics.com/?page=1801) page in the base application (link requires sign-in to Business Central online). 
 
 
 ### Collapsed or Expanded lists

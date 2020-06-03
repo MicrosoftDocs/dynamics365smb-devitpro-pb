@@ -33,7 +33,8 @@ An instance of the [Dialog](dialog-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If CLOSE is used on a dialog window that is not open, a run-time error will occur.  The dialog windows of an object are automatically closed when the object terminates. 
+
+If `Close` is used on a dialog window that is not open, a run-time error will occur. The dialog windows of an object are automatically closed when the object terminates. 
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  

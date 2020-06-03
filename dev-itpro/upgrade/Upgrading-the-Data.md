@@ -54,7 +54,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade90014x.FOB| Upgrade900130.FOB|
     |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade100014x.FOB| Upgrade1000130.FOB|
     |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
-    |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018]| Upgrade13x14x.FOB|Not applicable|
+    |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018| Upgrade13x14x.FOB|Not applicable|
 
    For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
 
@@ -379,11 +379,11 @@ In this task, you will publish and generate symbols that are required for using 
         If the application database contains test objects (ID 130000-139999), then make sure to exclude these objects when generating symbols. You can do this by using the `-Filter` parameter and running the command twice:
 
         ```
-        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=1..129999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>", filter="Object ID=1..129999"
         ```
 
         ```
-        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=140000..1999999999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>", filter="Object ID=140000..1999999999"
         ```
 
         > [!NOTE]  

@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 # OpenWindow Method
 Opens a new browser window which navigates to the specified URL. The benefit of using this function instead of using the native browser function, is that this function also works when using the control add-in in an app, for example on a phone. If you are using the native browser function in an app, the behavior varies between the different platforms (Windows, iOS, Android).
 
-## Method Signature  
+## Method signature  
  `void Microsoft.Dynamics.NAV.OpenWindow(url)`  
   
 ## Parameters  

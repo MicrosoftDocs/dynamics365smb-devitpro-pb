@@ -30,7 +30,7 @@ The `Dimension` is a comma-delimited list of integer literals greater than 0, wh
 
 The `Type` is the element type of the array.
 
-## Code Example 
+## Code example 
 The following code sample shows the declaration of an array with a simple element type.
 
 ```

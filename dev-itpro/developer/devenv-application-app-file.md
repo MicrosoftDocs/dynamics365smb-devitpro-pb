@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # The Microsoft_Application.app File
 
-The Microsoft_Application.app file is included with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and is located in the `\Applications\Application\Source` folder. The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
+The Microsoft_Application.app file is included with [!INCLUDE[prodshort](includes/prodshort.md)] and is located in the `\Applications\Application\Source` folder. The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
 
 > [!NOTE]  
 > In previous versions the references to base and system application were stated explicitly under `dependencies` in the `app.json` file of the extension. For more information, see [JSON Files](devenv-json-files.md).
@@ -28,7 +28,7 @@ The file name of the reference is `Microsoft_Application.app` and in the app.jso
 
 ## Changing the app.json file for a code-customized base application
 
-The `app.json` file of the `Microsoft_Application.app` file looks like the following example for Business Central version 15.3.
+The `app.json` file of the `Microsoft_Application.app` file looks like the following example for [!INCLUDE[prodshort](includes/prodshort.md)] version 15.3.
 
 ```
 {
