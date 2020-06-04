@@ -22,6 +22,8 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 
 For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
 
+The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
+
 ## Server Security
 
 [!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting and more. The following articles explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
