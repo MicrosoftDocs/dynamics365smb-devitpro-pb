@@ -1,6 +1,6 @@
 ﻿# Get Started
 ## [Development and Administration](index.md)
-## [Frequently Asked Questions](faq.md)
+## [FAQ](faq.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical Support](technical-support.md)
@@ -30,23 +30,6 @@
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
 #### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
-<!--AppSourcevalidation-->
-## AppSource Validation
-### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
-### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
-### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
-<!-- deployment-->
-# Deployment
-## [Overview](deployment/deployment.md)
-## What's New or Changed
-### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-<!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
-## Online
 ## Sell Business Central
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -68,6 +51,7 @@
 <!--AppSourcevalidation-->
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
@@ -118,7 +102,7 @@
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Overview](administration/migrate-data.md)
-### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
+### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Running the Cloud Migration Tool](administration/migration-tool.md)
 ### [Managing the Migration to the Cloud](administration/migration-management.md)
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
@@ -126,6 +110,11 @@
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
+## What's New or Changed
+### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
+### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -178,7 +167,7 @@
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
-### Frequently asked questions about apps
+### FAQ about apps
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
 #### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
@@ -242,6 +231,7 @@
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 ### Designing Pages
+#### [Page Types and Layouts](developer/devenv-page-types-and-layouts.md)
 #### List Pages
 ##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
@@ -656,10 +646,6 @@
 <!-- deployment -->
 ## Deployment
 ### [Overview](deployment/deployment.md)
-### What's New or Changed
-#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
 ### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
@@ -670,7 +656,6 @@
 #### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
 #### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
 #### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
-#### [Dynamics 365 Business Central 2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -745,7 +730,7 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
-#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)

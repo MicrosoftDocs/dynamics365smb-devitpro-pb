@@ -84,9 +84,9 @@ You must register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 2. After you register the application, set the Application ID URI for the application. 
 
     1. From the **Overview** page for your app registration, next to the **Application ID URI** label, select **Add an Application ID URI**.
-	2. On the **Expose API**, page, next to the **Application ID URI**, select **Set**
-	3. The **Application ID URI** box displays the default application ID URI, which has the format `api://<guid>`, such as `api://70b20a51-46b7-4290-8686-b79ec90379f6`. You can keep this value or change it. The application ID URI must be a valid URI starting with HTTPS, API, URN, MS-APPX. It must not end in a slash. For example, `https://cronusinternationltd.onmicrosoft.com/businesscentral`.
-	4. Select **Save** when done.
+    2. On the **Expose API**, page, next to the **Application ID URI**, select **Set**
+    3. The **Application ID URI** box displays the default application ID URI, which has the format `api://<guid>`, such as `api://70b20a51-46b7-4290-8686-b79ec90379f6`. You can keep this value or change it. The application ID URI must be a valid URI starting with HTTPS, API, URN, MS-APPX. It must not end in a slash. For example, `https://cronusinternationltd.onmicrosoft.com/businesscentral`.
+    4. Select **Save** when done.
 
 
 <!--
@@ -119,39 +119,39 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instances that must support Azure AD to use `AccessControlService` as the credential type.
 
-	The `AccessControlService` credential type for the [!INCLUDE[server](../developer/includes/server.md)] instance includes support for Azure AD so that you can achieve single sign-on between Office 365 and [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+    The `AccessControlService` credential type for the [!INCLUDE[server](../developer/includes/server.md)] instance includes support for Azure AD so that you can achieve single sign-on between Office 365 and [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
 2. Specify the location of the federation metadata. For example, in the [!INCLUDE[admintool](../developer/includes/admintool.md)], on the **Azure Active Directory** tab, set the **WS-Federation Metadata Location** field.
 
-	The federation metadata is used to establish a trust relationship between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Azure AD. 
-	
-	Azure AD publishes federation metadata at:
-	
-	```
-	https://login.microsoftonline.com/<Azure AD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml
-	```
+    The federation metadata is used to establish a trust relationship between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Azure AD. 
+    
+    Azure AD publishes federation metadata at:
+    
+    ```
+    https://login.microsoftonline.com/<Azure AD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml
+    ```
 
-	For example:
+    For example:
 
-	```
-	https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml
-	```  
+    ```
+    https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml
+    ```  
 
 3. Specify the WS-federation login endpoint.
 
-	The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to when users sign on from a client. You must specify a URL in the following format:
+    The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to when users sign on from a client. You must specify a URL in the following format:
 
-	```
+    ```
     https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<Application ID URI>%26wreply=<Redirect URL>
     ```
 
-	For example:
+    For example:
 
-	```
+    ```
     https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC150/SignIn
     ```
 
-	**Parameter descriptions**:
+    **Parameter descriptions**:
     
     |Parameter|Description|
     |-|-|-|
@@ -164,11 +164,11 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 4. Disable token-signing certificate validation.
 
-	If you are using the [!INCLUDE[admintool](../developer/includes/admintool.md)], select the **Disable Token-Signing Certificate Validation** check box. If you are using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) or modifying the CustomSettings.config file directly, set `DisableTokenSigningCertificateValidation` to `true`.
+    If you are using the [!INCLUDE[admintool](../developer/includes/admintool.md)], select the **Disable Token-Signing Certificate Validation** check box. If you are using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) or modifying the CustomSettings.config file directly, set `DisableTokenSigningCertificateValidation` to `true`.
 
 5. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Azure AD.
 
-	In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you do this by setting the **Azure AD App URI** field on the **Azure Active Directory** tab. The App ID URI is typically the same as the *wtrealm* parameter value of the **WS-Federation Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and the **ACSUri** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. 
+    In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you do this by setting the **Azure AD App URI** field on the **Azure Active Directory** tab. The App ID URI is typically the same as the *wtrealm* parameter value of the **WS-Federation Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and the **ACSUri** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. 
 
 6. Increase the `ExtendedSecurityTokenLifetime` parameter value. We recommend that you set it to a value greater than 8 hours.
 
@@ -226,7 +226,7 @@ For more information about how to set up users, see [Managing Users and Permissi
 > [!IMPORTANT]  
 >  The single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and SharePoint.  
 >   
->  We recommend that you provide guidance to your users for signing out of their account when they’re done, so that you can keep your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment more secure.  
+>  We recommend that you provide guidance to your users for signing out of their account when they're done, so that you can keep your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment more secure.  
 
 ### Web service accounts
 

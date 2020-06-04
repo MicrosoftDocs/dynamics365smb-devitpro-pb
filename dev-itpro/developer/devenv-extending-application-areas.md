@@ -158,7 +158,7 @@ codeunit 50100 "Enable Example Extension"
 
 ## Adding Advanced application area to the Essentials and Premium experiences using an extension
 
-If you are familiar with [!INCLUDE[navnow_md](includes/navnow_md.md)] you will have noticed that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not exposing all the controls/actions that you find in [!INCLUDE[navnow_md](includes/navnow_md.md)]. These controls have been hidden so far by using the application area **Advanced**, which is not assigned to any experiences. For more information, see [Frequently Asked Questions](/dynamics365/business-central/across-faq).
+If you are familiar with [!INCLUDE[navnow_md](includes/navnow_md.md)] you will have noticed that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not exposing all the controls/actions that you find in [!INCLUDE[navnow_md](includes/navnow_md.md)]. These controls have been hidden so far by using the application area **Advanced**, which is not assigned to any experiences. For more information, see [FAQ](/dynamics365/business-central/across-faq).
 
 Most of these fields will become available/visible soon, but until then you will have to create an extension to get (almost) the same experience as you have in [!INCLUDE[navnow_md](includes/navnow_md.md)]. See the [example](#to-enable-advanced-in-an-extension) below.
 

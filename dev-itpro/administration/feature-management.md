@@ -52,7 +52,7 @@ As soon as you enable the feature, any user that signs in to that environment ex
 > You can try out the feature for yourself without enabling it for all users by choosing the **Try it out** link. This will open a new browser tab with the feature enabled for that session. Any new sessions in your browser will also have the feature temporarily turned on. To stop trying the feature, close your browser window or sign out.  
 
 
-## Frequently Asked Questions about Feature Management
+## FAQ about Feature Management
 
 #### There are no features listed as optional. Did I do something wrong?
 

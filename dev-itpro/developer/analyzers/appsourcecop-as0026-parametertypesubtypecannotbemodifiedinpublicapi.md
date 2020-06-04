@@ -2,7 +2,7 @@
 title: "The type and subtype of parameters cannot be modified in events and external procedures"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/12/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ It is not allowed to change the type or subtype of parameters in public procedur
 > [!NOTE]  
 > This rule allows to convert `Option` type parameters into `Enum` type parameters.
 
-## Bad code examples
+## Code examples triggering the rule
 
 ### Example 1 - Modifying parameters type
 

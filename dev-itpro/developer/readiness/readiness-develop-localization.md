@@ -10,9 +10,6 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-> [!Note]
-> We are not planning to release [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] in more countries before October 2019. In order to provide a first class customer and partner experience we are focusing on optimizing parts of the Business Central service and management tools. This will allow for better scalability which is necessary for the success of further geo expansion. We will begin planning for more countries after the October 2019 release. Please reach out to your local Microsoft contact for more information on what this means for localization in your country.
-
 # Development of a Localization Solution
 
 If you want to bring the capabilities of the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Core to your local market, then there are several reasons why you would want to choose [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]:
@@ -36,18 +33,7 @@ Good and consistent tooltips and documentation will help users adopt your featur
 An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort.
 
 ## Service availability in additional countries
-In [countries](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations), where Microsoft has not delivered a localization, you can apply for access to build a localization on top of the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for the specific country, after submission of localization app(s) for validation, is planned with the core Microsoft team as it requires following:
- * A business case and an agreement with local/regional Microsoft contacts to align on business and marketing activities related to making [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country
- * Commercial availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers in CSP pricelist for the country
- * Azure data centre operations capacity/availability and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] platform translation to language(s) for the country
- * Partner localization app(s) availability in AppSource
- * Translated Help available from your own website, accessible from [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] in your country
-
-All of the points listed above must be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country.
-To apply for access to build [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] localization in countries, where Microsoft has not delivered a localization, fill in the  [[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Localization Request form](https://go.microsoft.com/fwlink/?linkid=2005218).
-
-> [!NOTE]
-> If your localization request is approved and the relevant localization app has passed all AppSource validation, you can expect a lead time of minimum 3 months for Business Central to become available in your country.
+Follow [this page](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations) for information about planned country and regional expansions of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
 
 ## Business Central companion/mobile apps availability
 Even though [Business Central companion/mobile apps](/dynamics365/business-central/install-mobile-app) are globally available in Microsoft Store, Apple App Store, or Google Play the respective store listing may appear in English. Once Business Central is made available in a given country, we will make sure to update the store listings using local language.
@@ -67,7 +53,6 @@ The following list describes the top things to be explicit about:
 - Country or group of countries that the app applies to  
 - Language or languages included in the app  
 - Describe and categorize each local regulatory feature included in your localization app  
-- (Optionally) Mark features to be considered part of the global version of [!INCLUDE[prodshort](../includes/prodshort.md)]  
 
 ## Product scope for localization apps
 Apart from [fulfilling the technical checklist for your app](../devenv-checklist-submission.md), the minimum viable product scope for localization app is:

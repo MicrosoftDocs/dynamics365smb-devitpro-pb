@@ -16,7 +16,7 @@ ms.author: v-liober
 > In these guidelines, you will find an outline of our requirements for marketing validation as well as examples of best practices, which you can use as inspiration, while developing the storefront
 details of your offer, your sales landing page and video materials. 
 
-To ease your experience with developing the storefront details of your listing, we have numerated the core elements, as they appear when you upload your content in the “Storefront Details” tab on the Cloud Partner Portal.  
+To ease your experience with developing the storefront details of your listing, we have numerated the core elements, as they appear when you upload your content in the “Storefront Details” tab in Partner Center. 
 
 This image below is an example of what an offering looks like on AppSource, when the storefront details are completed according to best practices. We highly recommend that you review these guidelines.  Click on any of the links under Guidance/Examples to gain more insight on that particular section or item within the marketing validation process. 
 

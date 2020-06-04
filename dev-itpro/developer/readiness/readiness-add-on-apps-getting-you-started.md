@@ -98,14 +98,14 @@ See example to the right, where the display name is highlighted in yellow.
 Consistency is key!
 
 It is key that you use the same display name and email throughout your app submission, as you will be asked to provide them in several different touch points. such as for example:
-- To sign into the Cloud Partner Portal (and creating your app offer)
+- To sign into Partner Center (and creating your app offer)
 - To enroll and sign in to the Collaborate tool and “Ready to Go” platform
 
 ## Access to Partner Center
 Partner Center is the single destination to manage your business relationship with Microsoft. [Get Started by clicking this link](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv)
 
 > [!NOTE]  
-> This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
+> This has replaced Partner Center. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
 
 ## Get onboarded to tools and programs
 

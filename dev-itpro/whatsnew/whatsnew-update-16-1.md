@@ -38,11 +38,12 @@ When you navigate from the Business Central Sandbox tile in the Dynamics 365 Hom
 Read more about [sandbox environments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/environment-types)
 
 - **Message to Global Admins about the capabilities**   
-On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don’t have any assigned. 
+On login, Global Admins will get a message about the capabilities in Business Central according to their license or suggesting one if they don't have any assigned. 
 
-- **Coming up: Virtual partner readiness event**   
-We’re excited to share the latest innovations for Business Central. Join us at the upcoming Business Central virtual event June 3rd with more than 15 deep dive sessions on what’s new in 2020 release wave 1 (April release), also available on-demand. Check back here for the registration link being published soon!   
-Pssst…did we mention it’s for free…
+- **Coming up: Virtual partner readiness event - register now!**   
+We're excited to share the latest innovations for Business Central. Join us at the upcoming Business Central All Access Virtual Event June 3rd with more than 15 deep dive sessions on what's new in 2020 release wave 1 (April release), also available on-demand.  
+Registration open now at [aka.ms/virtual/businesscentral/2020RW1](https://vshow.on24.com/vshow/BCVE/registration/17187)    
+Pssst…did we mention it's for free…
 
 - **Major updates**  
 Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need to take, and answers some common questions.   

@@ -43,6 +43,7 @@ The following table provides an overview of some of the shortcut key combination
 |Ctrl+K Ctrl+U|Remove line comment|
 |Ctrl+Shift+P|Show all commands|
 |F2|Rename (use Enter to rename, use Shift+Enter to preview)|
+|Shift+Alt+E|Look up events and insert event subscriber in code for a selected event.|
 
 
 ## Errors in Visual Studio Code

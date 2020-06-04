@@ -19,6 +19,9 @@ The navigation area appears at the top of the [!INCLUDE[d365fin_long_md](include
 
 The top-level navigation area is referred to as the navigation menu. The navigation menu contains one or more root menu items that expand to display a set of links to pages, and other objects like reports, XmlPorts, and codeunits. These links are defined by `action()` controls. You can also group `action()` controls in sub-menus. This enables you to create a logical hierarchy that matches the needs of the user role. The pages targeted by the links in the navigation menu will open in the content area of the Role Center.
 
+> [!NOTE]
+> The [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] doesn't support sub-menus in the navigation menu.
+
 You define the navigation menu by using an `area(Sections)` control in the page code.
 
 <!--
