@@ -1,6 +1,6 @@
 ---
 title: "A new method to an interface that has been published must not be added."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 06/04/2020
 ms.reviewer: na
