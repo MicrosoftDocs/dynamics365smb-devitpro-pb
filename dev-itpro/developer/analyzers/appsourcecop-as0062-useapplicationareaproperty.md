@@ -20,7 +20,9 @@ Page controls and actions must use the ApplicationArea property
 Page controls and actions must use the ApplicationArea property to be visible to users.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[ApplicationArea Property](..//properties/devenv-applicationarea-property.md)  

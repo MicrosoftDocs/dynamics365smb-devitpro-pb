@@ -63,7 +63,7 @@ Query.READ;
   
  You can have multiple calls to the **SETFILTER** method. If **SETFILTER** method calls set filters on different columns, then the filters are combined and applied to the dataset. If consecutive **SETFILTER** method calls set filters on the same column, then the last **SETFILTER** method call is applied to the column.  
   
- In addition to the **SETFILTER** method, you can apply filters to a query using the [SETRANGE Method \(Query\)](../../methods/devenv-setrange-method-query.md) method, the **FILTERGROUP** method, and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer.  
+ In addition to the **SETFILTER** method, you can apply filters to a query using the [SETRANGE Method \(Query\)](../../methods/devenv-setrange-method-query.md) method, the **FILTERGROUP** method, and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SETFILTER** method...|then...|  
 |--------------------------------------|-------------|  
@@ -72,13 +72,13 @@ Query.READ;
 |Sets a filter on the same field as the **SETRANGE** method|The method that is called last is applied to the dataset.|  
 |Sets a filter on a field that has global filters that are applied by the **FILTERGROUP\(1\)** method|The filters of the **SETFILTER** method are added to the global filters.|  
   
- For example, a query has the following filters set on the **Quantity** column in Query Designer:  
+ For example, a query has the following filters set on the **Quantity** column:  
   
 -   **DataItemTableFilter** property: Quantity=FILTER\(\<100\)  
   
 -   **ColumnFilter** property: Quantity=FILTER\(\<>50\)  
   
- `Query.SETFILTER ("Quantity", '>1’)` will result in a filter that is equivalent to: 1\<Quantity \<100.  
+ `Query.SETFILTER ("Quantity", '>1')` will result in a filter that is equivalent to: 1\<Quantity \<100.  
   
  <!--Links For more information about how to set filters in Query Designer, see [Understanding Query Filters](Understanding-Query-Filters.md).-->  
   

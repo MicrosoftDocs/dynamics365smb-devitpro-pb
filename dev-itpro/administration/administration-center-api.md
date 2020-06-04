@@ -1196,7 +1196,7 @@ Returns the metrics around the current month's database exports.
 Starts the export of an environment's database to a provided Azure storage account
 
 ```
-Content-Type: appliContentson
+Content-Type: application/json
 POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
@@ -1394,6 +1394,7 @@ POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 { 
     "targetVersion": string // Version the installed app should be updated to
+    "allowPreviewVersion": bool // Indicates whether to allow updating to an app version that is marked as a Preview by the ISV (exact version must be specified in the targetVersion)
 }
 ```
 

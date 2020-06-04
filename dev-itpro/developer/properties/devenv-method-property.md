@@ -49,7 +49,7 @@ Method = Day;
   
 ## Totals Methods and Groups  
 
-A totals method performs a calculation on fields in a column and returns a single value. When you set a totals method on a column, the retrieved records are automatically grouped by the other columns in the query, as indicated by a check mark in the **Group By** column in Query Designer. When grouped by a column, records that have similar values for the column are grouped together. The totals method is applied against the records in the group. A summary value is calculated for the group and returned in a single row for the group in the dataset. The **Method** property values correspond to the SQL aggregate functions SUM, AVG, MIN, MAX, and COUNT in SQL SELECT statements.  
+A totals method performs a calculation on fields in a column and returns a single value. When you set a totals method on a column, the retrieved records are automatically grouped by the other columns in the query. When grouped by a column, records that have similar values for the column are grouped together. The totals method is applied against the records in the group. A summary value is calculated for the group and returned in a single row for the group in the dataset. The **Method** property values correspond to the SQL aggregate functions SUM, AVG, MIN, MAX, and COUNT in SQL SELECT statements.  
   
 Except for the **Count** method, you can only use a totals method on a field that has a numeric data type of **Decimal**, **Integer**, **BigInteger**, or **Duration**. The totals method returns a decimal value that is calculated from values of all fields in a column.  
   

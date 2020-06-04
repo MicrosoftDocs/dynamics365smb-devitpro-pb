@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 04/22/2020
+ms.date: 05/28/2020
 ms.author: edupont
 ---
 
@@ -97,6 +97,12 @@ As a reselling partner, you must be the first line of support for your [!INCLUDE
 ### <a name="premiumtrial"></a>The Dynamics 365 Business Central Premium Trial
 
 [!INCLUDE [admin-premiumtrial](../developer/includes/admin-premiumtrial.md)]
+
+## Data and access when a trial or subscription ends
+
+Trials can expire, and so can a apid subscription, such as if the customer does not renew the subscription or stops payments, or if the customer cancels the subscription.  
+
+[!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
 
 ## See Also
 

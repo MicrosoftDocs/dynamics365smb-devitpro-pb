@@ -34,7 +34,7 @@ Due to the nature of the operations our users perform in the sandbox environment
 
 ## Telemetry
 
-For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). The following page shows an overview of currently available signal, see [Analyze long running SQL queries](../administration/telemetry-overview.md).
+For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). The following page shows an overview of currently available signals, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 ## Operational Limits
 

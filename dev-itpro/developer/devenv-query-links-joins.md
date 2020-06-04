@@ -45,7 +45,7 @@ The **Sales Header** table contains a list of sales orders. Each sales order has
   
 ### Sample Query
 
-The following query object links the **Sale Header** table with the** Salesperson/Purchaser** table on the **Salesperson\_Code** and **Code** fields, as specified by the [DataItemLink Property](properties/devenv-dataitemlink-query-property.md). In the example, the [SQLJoinType Property](properties/devenv-sqljointype-property.md) is set to **InnerJoin**.
+The following query object links the **Sale Header** table with the **Salesperson/Purchaser** table on the **Salesperson\_Code** and **Code** fields, as specified by the [DataItemLink Property](properties/devenv-dataitemlink-query-property.md). In the example, the [SQLJoinType Property](properties/devenv-sqljointype-property.md) is set to **InnerJoin**.
 
 ```
 query 50100 "Sample Query"

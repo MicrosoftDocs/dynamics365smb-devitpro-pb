@@ -20,6 +20,11 @@ The publisher name is too long.
 The extension publisher length must not exceed the limit of 50 characters.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This rule verifies that the extension publisher specified in the [app.json](../devenv-json-files.md) does not exceed 50 characters.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
