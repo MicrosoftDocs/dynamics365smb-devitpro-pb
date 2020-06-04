@@ -1,6 +1,6 @@
 ---
 title: "Do not declare parameters by reference if their values are never changed."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 06/04/2020
 ms.reviewer: na

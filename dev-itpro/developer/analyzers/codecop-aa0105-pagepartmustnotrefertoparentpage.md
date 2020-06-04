@@ -1,6 +1,6 @@
 ---
 title: "PagePart controls must not refer to parent pages."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 06/04/2020
 ms.reviewer: na
