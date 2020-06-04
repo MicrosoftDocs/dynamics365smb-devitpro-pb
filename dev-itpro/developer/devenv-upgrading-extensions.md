@@ -182,7 +182,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
     UpgradeTag.SetUpgradeTag(UpgradeTagValue); 
     ```
 
-    You can use any value for the upgrade tag, but we recommend that you use the convention [CompanyPrefix]-[ID]-[Description]-[YYYYMMDD], for example, ABC-1234-MyExtensionUpgrade-22020161206.
+    You can use any value for the upgrade tag, but we recommend that you use the convention [CompanyPrefix]-[ID]-[Description]-[YYYYMMDD], for example, ABC-1234-MyExtensionUpgrade-20201206.
     
 2. Add code to register the upgrade tag for new companies that might eventually be created.
 
