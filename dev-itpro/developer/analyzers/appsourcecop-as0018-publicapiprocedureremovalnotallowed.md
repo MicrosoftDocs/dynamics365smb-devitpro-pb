@@ -1,6 +1,6 @@
 ---
 title: "A procedure belonging to the public API cannot be removed"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 06/04/2020
 ms.reviewer: na

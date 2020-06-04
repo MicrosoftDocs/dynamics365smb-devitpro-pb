@@ -1,6 +1,6 @@
 ---
 title: "Table field property changes that cause destructive changes must not be removed"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
 ms.date: 06/04/2020
 ms.reviewer: na
