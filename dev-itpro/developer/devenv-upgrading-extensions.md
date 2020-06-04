@@ -167,7 +167,7 @@ The codeunit also publishes the following events:
 The following steps provide the general pattern for using an upgrade tag on upgrade code.
 
 > [!IMPORTANT]
-> Use upgrade tags only upgrade purposes only.
+> Use upgrade tags only for upgrade purposes only.
 
 1. Use the following construct around the upgrade code to check for and add an upgrade tag.
         
@@ -271,7 +271,7 @@ codeunit 50100 "ABC Upgrade Shoe Size"
             if Customer."ABC - Customer Shoesize" <> 0 then
                 Error('ShoeSize must be blank, the value is already assigned');
 
-            //This code avoids blank modifies because they're they down the upgrade
+            // Avoid blank modifies - it is a performance hit and slows down the upgrade
             if Customer."ABC - Customer Shoesize" <> Customer.Shoesize then begin
                 Customer."ABC - Customer Shoesize" := Customer.Shoesize;
                 Customer.Modify();
