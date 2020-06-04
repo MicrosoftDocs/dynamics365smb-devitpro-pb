@@ -202,7 +202,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 3. Add code to register the upgrade tag for first-time installations of the extension.
 
-    The step ensures that the upgrade code isn't on first upgrade because of missing tag.
+    The step ensures that the upgrade code isn't run on first upgrade because of missing tag.
 
     To register the tag, call the `SetUpgradeTag` method on the `OnInstallAppPerCompany` and `OnInstallAppPerDatabase` triggers in the extension's install codeunit.
 
