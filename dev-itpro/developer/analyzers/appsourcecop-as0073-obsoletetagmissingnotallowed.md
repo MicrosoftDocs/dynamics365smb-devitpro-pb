@@ -1,8 +1,8 @@
 ---
-title: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set."
+title: "Obsolete Tag must be set."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0073
-The ObsoleteTag property and the Tag in the Obsolete attribute must be set.  
+Obsolete Tag must be set.  
 
 ## Description
-The ObsoleteTag property and the Tag in the Obsolete attribute must be set.
+Obsolete Tag must be set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
