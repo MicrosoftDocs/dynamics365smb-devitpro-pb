@@ -1,8 +1,8 @@
 ---
 title: "Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted."
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
