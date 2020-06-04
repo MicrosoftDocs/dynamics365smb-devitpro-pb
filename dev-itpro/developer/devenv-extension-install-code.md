@@ -29,7 +29,7 @@ You write install logic in an *install* codeunit. This is a codeunit that has th
 |OnInstallAppPerCompany()|Includes code for company-related operations. Runs once for each company in the database.|
 |OnInstallAppPerDatabase()|Includes code for database-related operations. Runs once in the entire install process.|
 
-The install codeunit becomes an integral part of the extension version. You can have more than one install codeunit. However, be aware that there is no guarantee on the order of execution of the different codeunits. If you do use multiple install units, make sure that they can run independent of each other.
+The install codeunit becomes an integral part of the extension version. You can have more than one install codeunit. However, be aware that there is no guarantee on the order of execution of the different codeunits. If you do use multiple install units, make sure that they can run independently of each other.
 
 ### Install codeunit syntax
 The following code illustrates the basic syntax and structure of an install codeunit:
@@ -37,17 +37,17 @@ The following code illustrates the basic syntax and structure of an install code
 ```
 codeunit [ID] [NAME]
 {
-	Subtype=Install;
+    Subtype=Install;
 
-	trigger OnInstallAppPerCompany()
-	begin
-		// Code for company related operations
-	end;
+    trigger OnInstallAppPerCompany()
+    begin
+        // Code for company related operations
+    end;
 
-	trigger OnInstallAppPerDatabase()
-	begin
-		// Code for database related operations
-	end;
+    trigger OnInstallAppPerDatabase()
+    begin
+        // Code for database related operations
+    end;
 
 }
 ```
