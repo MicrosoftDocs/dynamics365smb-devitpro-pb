@@ -117,7 +117,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 7. Build the extension package for the first version.
 
-    To build the extension package, press Ctrl+Shift+B.
+    To build the extension package, press Ctrl+Shift+B. This step creates a .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
 
 ### Create the second version
 
