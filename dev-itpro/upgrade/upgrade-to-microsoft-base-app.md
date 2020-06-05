@@ -117,6 +117,8 @@ You'll create two versions of this extension. The first version contains the tab
 
 7. Build the extension package for the first version.
 
+    To build the extension package, press Ctrl+Shift+B.
+
 ### Create the second version
 
 1. Create a migration.json file and add it to the project's root folder.
@@ -153,6 +155,8 @@ You'll create two versions of this extension. The first version contains the tab
 4. Increase the `version` in the app.json file.
 5. Build the extension package for the second version.
 
+    To build the extension package, press Ctrl+Shift+B.
+
 ## Task 3: Create empty extensions System, Base, and customization extensions
 
 Create two empty extensions: one for the Microsoft base application and another for the System Application. The only file in the extension project that is required is an app.json. You can create the extension like any other extension by adding an AL project in Visual Studio Code. Also, create an empty extension for each new customization extension.
@@ -175,7 +179,7 @@ After you create the project, modify the app.json file. The important settings i
   "version": "14.0.0.0",
 ```
 
-Build and compile the extension package.
+Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
 
 
 > [!TIP]
@@ -446,13 +450,13 @@ Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migratio
 
 ## Task 15: Upgrade final extensions
 
-The final step is to upgrade to the new extension versions in the following order:
+The final step is to upgrade to the new extension versions in the following order. Use the Start-NAVAppDataUpgrade cmdlet like you did in the previous task:
 
 1. Microsoft System Application.
 2. Microsoft Base Application.
 3. Customization, Microsoft, and third-party extensions.
 
-## Task 15: Upgrade control add-ins
+## Task 16: Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
 
