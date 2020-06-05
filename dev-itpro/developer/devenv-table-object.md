@@ -75,7 +75,7 @@ table 50104 Address
     }
 
     var
-        Msg: TextConst = 'Hello from my method';
+        Msg: Label 'Hello from my method';
 
     trigger OnInsert();
     begin
