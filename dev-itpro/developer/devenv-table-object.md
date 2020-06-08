@@ -38,7 +38,7 @@ This table stores address information and it has four fields; Address, Locality,
 ```
 table 50104 Address
 {
-    caption = 'Sample table';
+    Caption = 'Sample table';
     DataPerCompany = true;
 
     fields
@@ -75,7 +75,7 @@ table 50104 Address
     }
 
     var
-        Msg: TextConst = 'Hello from my method';
+        Msg: TextConst ENU= 'Hello from my method';
 
     trigger OnInsert();
     begin

@@ -287,7 +287,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
     begin
          TaskParameters.Add('Wait', '1000');
 
-        CurrPage.EnqueueBackgroundTask(WaitTaskId, 50100, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);
+        CurrPage.EnqueueBackgroundTask(WaitTaskId, Codeunit::PBTWaitCodeunit, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);
     end;
 }
 
