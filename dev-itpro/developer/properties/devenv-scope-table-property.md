@@ -1,7 +1,7 @@
 ---
 title: "Scope (Table) Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/08/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Scope (Table) Property
+
 Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `OnPrem`, and `Personalization`. 
 
 > [!NOTE]  
@@ -20,6 +21,7 @@ Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `On
 - Tables
 
 ## Remarks
+
 When a table is marked with `Scope = OnPrem` it is not available to a cloud extension. 
 
 System tables that have the `Scope` property set to `Internal` (`OnPrem`) cannot be accessed from extensions that have the `target` property set to `Cloud` or `External` through direct reference or through RecordRef.
