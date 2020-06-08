@@ -56,7 +56,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Math|Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Math/README.md)|
 |Object Selection|Look up page for all of the application objects, including objects from installed extensions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Object%20Selection/README.md)|
 |Password Dialog|Sets and verifies passwords.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Password%20Dialog/README.md)|
-|Printer Management|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Printer%20Management)|
+|Printer Management|Contains functionality that enables a user to manage printers.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Printer%20Management)|
 |Record Link Management|Provides helper functions for RecordLinks.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Record%20Link%20Management/README.md)|
 |Recurrence Schedule|Calculates when the next event will occur.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Recurrence%20Schedule/README.md)|
 |Satisfaction Survey|Shows a satisfaction survey.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Satisfaction%20Survey/README.md)|
