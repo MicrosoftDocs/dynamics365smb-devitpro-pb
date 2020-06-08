@@ -22,10 +22,14 @@ Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `On
 ## Remarks
 When a table is marked with `Scope = OnPrem` it is not available to a cloud extension. 
 
+System tables that have the `Scope` property set to `Internal` (`OnPrem`) cannot be accessed from extensions that have the `target` property set to `Cloud` or `External` through direct reference or through RecordRef.
+
+
 ## Examples
 ```
 Scope = Cloud;
 ```
+x
 
 ## See Also  
 [Properties](devenv-properties.md)  
