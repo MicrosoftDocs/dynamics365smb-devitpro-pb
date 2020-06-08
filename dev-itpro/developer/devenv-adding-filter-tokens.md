@@ -19,11 +19,11 @@ You can add custom filter tokens and make these available in any language and ac
 
 ## Defining the token word and the handler
 
-To create the desired token word, start by defining a multi-language text string for your word. Subscribe to the `OnResolveTextFilterToken` event associated with the `MakeTextFilter` method from the `Filter Token` codeunit.  
-In the event subscriber, if the value of the `TextFilter` parameter contains the token string proceed to process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them together, by inserting the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilter` parameter to the value of the final filter string.
+To create the token word, start by defining a multi-language text string for your word. Subscribe to the `OnResolveTextFilterToken` event associated with the `MakeTextFilter` method from the `Filter Tokens` codeunit.  
+In the event subscriber, if the value of the `TextFilter` parameter contains the token string, process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them by adding the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilter` parameter to the value of the final filter string.
 
 > [!TIP]  
-> Filter criteria will often contain symbols along with filter tokens. It is recommended that you only modify the filter token you have introduced and preserve the rest of the filter string. 
+> Filter criteria will often contain symbols along with filter tokens. We recommend that you only modify the filter token you have introduced and preserve the rest of the filter string. 
 
 ## Example 
 
