@@ -43,7 +43,7 @@ EventSubscriberInstance = StaticAutomatic|Manual;
 
 The bindings are always considered static on the event publisher side. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. You can, however, achieve the same by using/storing some global state on the subscriber.  
 
-## Example
+## <a name="example"></a>Example
 
 This code example uses the EventSubscriberInstance property to manually bind an event subscriber to an event. The example uses events to display a message to the user if they use a '+' sign in the **Address** field on the **Customer Card** page.
 
@@ -73,7 +73,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
                 Publisher: Codeunit MyPublishers;
                 Subscriber: Codeunit MySubscribers;
             begin
-                // Bind the event to the MySubscibers codeunit
+                // Bind the event to the MySubscribers codeunit
                 BindSubscription(Subscriber);
 
                 // Raise the event
@@ -102,15 +102,12 @@ codeunit 50101 MySubscribers
 }
 ```
 
-## See Also  
-[BINDSUBSCRIPTION Method](../methods-auto/session/session-bindsubscription-method.md)   
-[UNBINDSUBSCRIPTION Method](../methods-auto/session/session-unbindsubscription-method.md)
-
-<!--
- For more information about events, see [Events in Microsoft Dynamics NAV](Events-in-Microsoft-Dynamics-NAV.md).  
+On the event publisher side, the bindings are always considered static. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. However, you can achieve the same by using/storing some global state on the subscriber.  
 
 ## See Also  
- [Publishing Events](Publishing-Events.md)   
- [Raising Events](Raising-Events.md)   
- [Subscribing to Events](Subscribing-to-Events.md)   
- [AL Method Statements](../devenv-al-method-statements.md) -->
+[BINDSUBSCRIPTION Method](../methods-auto/session/session-bindsubscription-method.md)  
+[UNBINDSUBSCRIPTION Method](../methods-auto/session/session-unbindsubscription-method.md)  
+[Publishing Events](../devenv-publishing-Events.md)  
+[Raising Events](../devenv-raising-Events.md)  
+[Subscribing to Events](../devenv-subscribing-to-Events.md)  
+
