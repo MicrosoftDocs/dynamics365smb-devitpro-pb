@@ -11,20 +11,21 @@ ms.service: "dynamics365-business-central"
 author: ManuelaHochstrasser
 ---
 
-# Update 16.2 for Microsoft Dynamics 365 Business Central 2020 online release wave 1
+# Update 16.2 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
 Would you like to know what has changed in update 16.2?   
 Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.  
 
 ## Hotfixes
-[Link to Hotfixes](https://support.microsoft.com/en-us/help/4564072)
+[Link to Hotfixes](https://support.microsoft.com/help/4564072)
 
 ## Feature changes
 - [Migrate data from Business Central 14.x on-premises to Business Central 15.x online](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/migrate-data-business-central-14.x-on-premises-business-central-15.x-online)
 - [Update error telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/update-error-telemetry-application-insights-partners) 
-- [New URL parameter hides web client header](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-business-central/new-url-parameter-hides-web-client-header)
+- [New URL parameter hides web client header](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/new-url-parameter-hides-web-client-header)
 - [Improved user experience to keep things from going wrong](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/improved-user-experience-to-keep-things-from-going-wrong)
 - [Use modern authentication to connect to Common Data Service and Dynamics 365 Sales](https://docs.microsoft.com/dynamics365/business-central/admin-common-data-service) 
-- [Installing AppSource apps updates in the Business Central administration center](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps) – please note gradual availability! Until the feature is generally available, some AppSource apps can't be updated using this feature. For information about the timeline, [see here](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-business-central/installing-appsource-apps-updates-business-central-administration-center)
+- [Use modern authentication to set up Email Logging]()
+- [Installing AppSource apps updates in the Business Central administration center](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps) – please note gradual availability! Until the feature is generally available, some AppSource apps can't be updated using this feature. For information about the timeline, [see here](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/installing-appsource-apps-updates-business-central-administration-center)
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). 
