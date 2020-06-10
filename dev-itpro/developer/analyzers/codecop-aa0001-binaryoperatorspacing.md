@@ -2,7 +2,7 @@
 title: "There must be exactly one space character on each side of a binary operator such as := + - AND OR =."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

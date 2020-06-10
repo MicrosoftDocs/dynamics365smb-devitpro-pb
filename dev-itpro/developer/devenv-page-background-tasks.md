@@ -27,14 +27,14 @@ A page background task is a *child session* that runs processes from a codeunit 
 
 ### Background task flow
 
-The following diagram illustrates the flow of a background task.
+A background task is a multithread operation between the parent and child sessions. The following diagram illustrates the flow of a background task. In the illustration, the threads start in the order: THREAD A, THREAD B, THREAD C.  
 
-![Page background task flow](media/page-background-task-flow.png "Page background task flow")
+[![](media/page-background-task-flow-v4.png "Select Page background task flow")](media/page-background-task-flow-v4.png#lightbox)
 
 ### Background task characteristics and behavior
 
 A page background task has the following characteristics:
-- Performs read-only operations; it can't write to or lock the database​.
+- Does read-only operations; it can't write to or lock the database​.
 - Runs on the same [!INCLUDE[server](includes/server.md)] instance as the parent session.
 - The parameters that are passed to and returned from page background task are in the form of a `dictionary<string, string>`.
 - Calls `OpenCompany` and executes in its own transaction.
@@ -49,7 +49,7 @@ A page background task has the following characteristics:
 
 ### Background tasks API
 
-The API for background tasks includes the following:
+The API for background tasks includes the following methods and triggers:
 
 |Type|Name|Description|
 |----|----|-----------|
@@ -71,11 +71,11 @@ The general steps are as follows:
 
 1. Create a background task codeunit that includes the logic that you want to run in the background.
 2. On the page, complete the following steps:
-    1. Add code that creates (or *enqueues*) the page background task at runtime. <!--enquea call to the [EnqueueBackgroundTask Method](methods-auto/page/page-enqueuebackgroundtask-method.md) to "enqueue" the page background task at runtime.-->
+    1. Add code that creates (or *enqueues*) the page background task at runtime.
     2. Add code to the [OnPageBackgroundTaskCompleted trigger](triggers/devenv-onpagebackgroundtaskcompleted-trigger.md) to handle the results of the background task and update the UI.
     3. Add code to the [OnPageBackgroundTaskError trigger](triggers/devenv-onpagebackgroundtaskerror-trigger.md) to handle errors that occur in the background task.
 
-These steps are described in more details in the following sections. To help explain page background tasks, the sections use a simple example. The example extends the **Customer** card page to include a page background task that gets the current system time, waits a specified number of milliseconds, and gets the system time again. The page is extended with three new fields: **Start Time**, **Duration**, and **End Time**. In the page UI, these fields are updated with results of the background task, along with a notification when the task completes.
+These steps are described in more details in the following sections. To help explain page background tasks, the sections use a simple example. The example extends the **Customer** card page to include a page background task. The task gets the current system time, waits a specified number of milliseconds, and gets the system time again. The page is extended with three new fields: **Start Time**, **Duration**, and **End Time**. In the page UI, these fields are updated with results of the background task, along with a notification when the task completes.
 
 ![Page background task flow](media/page-background-cutomer-card.png "Page background task flow")
 
@@ -94,9 +94,9 @@ For general information about creating a codeunit, see [Codeunit Object](devenv-
 
 ### Getting the input parameters from the page background task
 
-When a page background task is enqueued, it can include a set of parameters that can be used in the computations that are done in the background task codeunit. The parameters are a collection of key and value pairs. The parameters are passed as a dictionary of text to the codeunit's OnRun trigger when the page background task session is started.
+When a page background task is enqueued, it can include a set of parameters that can be used in the computations that are done in the background task codeunit. The parameters are a collection of key and value pairs. The parameters are passed as a dictionary of text to the codeunit's OnRun trigger when the page background task session starts.
 
-To get the parameters, call the GETBACKGROUNDPARAMETERS method.
+To get the parameters, call the [GETBACKGROUNDPARAMETERS method](methods-auto/page/page-getbackgroundparameters-method.md):
 
 ```
 Parameters :=  Page.GetBackgroundParameters()
@@ -120,7 +120,7 @@ The basic steps for defining the results are as follows:
     
 ### Example
 
-In the following example, the page background task codeunit is used to get the current system time, and then after waiting a short period of time, it gets the system time again. The waiting period is defined by an input parameter (called `Wait`) that was passed to the background task from the parent session.  
+In this example, the page background task codeunit is used to get the current system time. Then, after waiting a short period of time, it gets the system time again. The waiting period is defined by an input parameter (called `Wait`) that was passed to the background task from the parent session. 
 <!-- 
 ```
 codeunit 50100 PBTDataSumConcatRow​
@@ -174,9 +174,9 @@ codeunit 50100 PBTWaitCodeunit
 
 ```
 
-## Enqueueing a background task on the page
+## Enqueuing a background task on the page
 
-To create a page background task, you call the ENQUEUEBACKGROUNDTASK method from the page code to run the page background task codeunit. The basics steps are as follows:
+To create a page background task, you call the [ENQUEUEBACKGROUNDTASK method](methods-auto/page/page-enqueuebackgroundtask-method.md) from the page code to run the page background task codeunit. The basics steps are as follows:
 
 1. Define any input parameters for the background task.
 
@@ -194,7 +194,7 @@ To create a page background task, you call the ENQUEUEBACKGROUNDTASK method from
 
 2. Define a global variable of the data type `Integer` that will be used to assign the background task an identification number.
 
-    You don't have to assign a value to this variable, because an ID will be assigned automatically when the background task is enqueued.
+    You don't have to assign a value to this variable. The ID is assigned automatically when the background task is enqueued.
 
 3. Call the ENQUEUEBACKGROUNDTASK method.
 
@@ -203,7 +203,7 @@ To create a page background task, you call the ENQUEUEBACKGROUNDTASK method from
     > [!IMPORTANT]
     > It's important that the ID of the current record of the page remains static after the ENQUEUEBACKGROUNDTASK method call is made and while the background task is running; otherwise the task will be cancelled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` or `OnValidate` triggers. Instead, use the `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
 
-    Once you have determined the location, add the following code to enqueue the background task:
+    Once you've determined the location, add the following code to enqueue the background task:
     
     ```
     CurrPage.EnqueueBackgroundTask(TaskID, CodeunitId, Parameters, Timeout, ErrorLevel)
@@ -211,21 +211,34 @@ To create a page background task, you call the ENQUEUEBACKGROUNDTASK method from
 
     |Parameter|Description|Required|
     |---------|-----------|--------|
-    |`TaskId`|The variable that is defined for the task ID. This must be a global variable.​|Yes|
+    |`TaskId`|The variable that is defined for the task ID. This variable must be a global variable.​|Yes|
     |`CodeunitId`|The ID of the background task codeunit. |Yes|
     |`Parameters`|The dictionary variable that is defined for the input parameters to the background task|No|
-    |`Timeout`|The number of milliseconds that the page background task can run before it's automatically cancelled. When the task is cancelled, the `OnPageBackgroundTaskError` trigger is called. By default, the task timeout is controlled by the **Page Background Task Default Timeout** and **Page Background Task Max Timeout** settings on the server instance (see [Configuring Business Central Server](../administration/configure-server-instance.md#Task)). You can set it to run for a maximum of 600,000 ms (ten minutes). |No|
-    |`ErrorLevel`|The severity level for unhandled errors that occur in the background task. The severity level will determine how the errors are shown in the client UI. Values include: <ul><li>`PageBackgroundTaskErrorLevel::Ignore` specifies that errors are ignored and have no effect in the client.  </li><li>`PageBackgroundTaskErrorLevel::Warning` gives errors a severity level of warning. Warnings appear as a notification in the client.  </li><li>`PageBackgroundTaskErrorLevel::Error` gives errors a severity level of error.  Errors appear as a notification in the client. This is the default.|No|
+    |`Timeout`|The number of milliseconds that the page background task can run before it's automatically canceled. You can set it to run for a maximum of 600,000 ms (10 minutes). When the task is canceled, the `OnPageBackgroundTaskError` trigger is called. <br /><br />By default, the task timeout is controlled by the **Page Background Task Default Timeout** and **Page Background Task Max Timeout** settings on the server instance. For more information, see [Timeout](methods-auto/page/page-enqueuebackgroundtask-method.md#timeout).<br /><br />**Note:** You can add code to re-enqueue a task when an error occurs. For more information, see [Re-enqueuing background tasks](#reenqueue). |No|
+    |`ErrorLevel`|The severity level for unhandled errors that occur in the background task. The severity level will determine how the errors are shown in the client UI. Values include: <ul><li>`PageBackgroundTaskErrorLevel::Ignore` specifies that errors are ignored and have no effect in the client.  </li><li>`PageBackgroundTaskErrorLevel::Warning` gives errors a severity level of warning. Warnings appear as a notification in the client.  </li><li>`PageBackgroundTaskErrorLevel::Error` gives errors a severity level of error.  Errors appear as a notification in the client. This value is the default.|No|
+
+### <a name="reenqueue"></a>Re-enqueuing background tasks
+
+There are some scenarios where you want to enqueue a page background task again, after it's been initially enqueued. For example:
+
+- You want to refresh the data on the page, like a part in a FactBox.
+- You want to re-enqueue a task if it times out. When a page background task exceeds the specified timeout, the background task is canceled and an error with error code **ChildSessionTaskTimeout** occurs.
+
+To re-enqueue a page background task, call the ENQUEUEBACKGROUNDTASK method on either the `OnPageBackgroundTaskCompleted` or `OnPageBackgroundTaskError` triggers, depending on your scenario. For detailed examples, see the PageBackgroundTask.AutoRefresh project in the [BCTech GitHub repository](https://github.com/microsoft/BCTech/tree/master/samples/PageBackgroundTask.AutoRefresh).
+
+> [!NOTE]
+> Use this pattern cautiously to avoid endless looping and applying excessive load on the server. Also, consider the **Child Sessions Max Queue Length** limit of the server instance. If this limit is exceeded, enqueuing will fail.
 
 ### Design considerations and limitations
 
-- The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is cancelled.  
-- ​Only five page background tasks can be run simultaneously for a parent session. If there are more than five, then they will be queued and run when a slot becomes available as other tasks are finished.​
-- If a timeout occurs, you can re-schedule the task in the completion trigger. ​
-
+- The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled.  
+- ​By default, only five page background tasks can be run simultaneously for a parent session. If there are more than five, they're queued and run when a slot becomes available as other tasks finish.​ If you're using version 15.2 or later, you can increase or decrease this value by changing the **Child Sessions Max Concurrency** setting of the server instance. You can also change the **Child Sessions Max Queue Length** setting to specify the maximum number of child sessions that can be queued per parent session of a page background task. If this value is exceeded, an error occurs. For more information, see [Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT).
+<!--
+- If a timeout occurs, you can re-schedule the task in the completion trigger by using the automatic refresh capability. ​For more information and samples, see the [BCTech GitHub repository](https://github.com/microsoft/BCTech/tree/master/samples/PageBackgroundTask.AutoRefresh).
+-->
 ### Example
 
-The following example extends **Customer Card** page of the base application to include three fields for displaying a times that are calculated in a page background task.
+The following example extends **Customer Card** page of the base application to include three fields for displaying times that are calculated in a page background task.
 
 ```
 pageextension 50100 CustomerCardExt extends "Customer Card"
@@ -235,21 +248,21 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
         addlast(General)
         {
 
-            field(Start; start)
+            field(starttime;starttime)
             {
                 ApplicationArea = All;
                 Caption = 'Start Time';
                 Editable = false;
             }
 
-            field(Duration; duration)
+            field(durationtime;durationtime)
             {
                 ApplicationArea = All;
                 Caption = 'Duration';
                 Editable = false;
             }
 
-            field(End; end)
+            field(endtime;endtime)
             {
                 ApplicationArea = All;
                 Caption = 'End Time';
@@ -263,9 +276,9 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
         WaitTaskId: Integer;
         
         // Variables for the three fields on the page 
-        start: Text;
-        duration: Text;
-        end: Text;
+        starttime: Text;
+        durationtime: Text;
+        endtime: Text;
 
     trigger OnAfterGetRecord()
     var
@@ -274,7 +287,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
     begin
          TaskParameters.Add('Wait', '1000');
 
-        CurrPage.EnqueueBackgroundTask(WaitTaskId, 50100, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);
+        CurrPage.EnqueueBackgroundTask(WaitTaskId, Codeunit::PBTWaitCodeunit, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);
     end;
 }
 
@@ -299,7 +312,7 @@ end;
 -->
 ## Coding the background task completion trigger to handle the results
 
-When a page background task completes successfully, the `OnPageBackgroundTaskComplete` trigger of the page in the parent session is called, and the results of the task are passed to the trigger. The results are passed as a dictionary of text. You add code to the trigger to handle the results. This typically includes updating the record in the page UI with the calculated values and caching the results in the database. The `OnPageBackgroundTaskComplete` trigger has the following signature:
+When a page background task completes successfully, the `OnPageBackgroundTaskComplete` trigger of the page in the parent session is called, and the results of the task are passed to the trigger. The results are passed as a dictionary of text. You add code to the trigger to handle the results. This operation typically includes updating the record in the page UI with the calculated values and caching the results in the database. The `OnPageBackgroundTaskComplete` trigger has the following signature:
 
 ``` 
 trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [Text, Text])  
@@ -334,9 +347,9 @@ The following example modifies the `OnPageBackgroundTaskCompleted` trigger to up
             Evaluate(waited, Results.Get('waited'));
             Evaluate(finished, Results.Get('finished'));
 
-            before1 := started;
-            duration1 := waited;
-            after1 := finished;
+            starttime := started;
+            durationtime := waited;
+            endtime := finished;
             PBTNotification.Message('Start and finish times have been updated.');
             PBTNotification.Send();
         end;
@@ -366,7 +379,7 @@ Within the page background task flow, errors can occur in three different locati
 - The `OnPageBackgroundTaskError` trigger of the page.
 - The `OnPageBackgroundTaskCompleted` trigger of the page.
 
-With errors that occur in the page background codeunit, you can control how the errors affect the client UI and the resultant data. For example, some errors are more severe than others. In some cases, users should be notified when an error occurs; and other times, the error can be ignored. 
+With errors that occur in the page background codeunit, you can control how the errors affect the client UI and the resultant data. For example, some errors are more severe than others. Users should be notified when an error occurs in some cases. Other times, the error can be ignored. 
 
 Errors that occur while executing the `OnPageBackgroundTaskError` or `OnPageBackgroundTaskCompleted` always display in the client with the severity level of error (`PageBackgroundTaskErrorLevel:Error`).
 
@@ -411,7 +424,7 @@ For this implementation, you can either add the empty `OnPageBackgroundTaskError
 -->
 #### Customizing the OnPageBackgroundTaskError trigger
 
-When `OnPageBackgroundTaskError` is called, it includes information about the error, such as the error code, error text, and call stack. You can add code to the trigger that handles errors based on this information. You do this by using the `ÌsHandled` boolean variable in your the code:
+When `OnPageBackgroundTaskError` is called, it includes information about the error, such as the error code, error text, and call stack. You can add code to the trigger that handles errors based on this information. You do this by using the `ÌsHandled` boolean variable in your code:
 
 - If `IsHandled` is set to `true`, the error thrown in the background task is ignored and handled by code that you add in the trigger. Here, you can add code to update the UI and associated record, similar to what can be done by `OnPageBackgroundTaskCompleted` trigger.  
 - If `IsHandled` is set to `false`, which is the default, the error in the background task is displayed in the client with the severity level that was specified by `ErrorLevel` parameter when the background task when was enqueued.​
@@ -511,6 +524,8 @@ In the event log, events that occur in the child session are recorded in the **S
 Parts are a special category of page designed to be embedded within another page. Part type pages include ListPart, CardPart, and HeadlinePart. Like other page types, you can design a part page to use one or more page background tasks. However, unlike other page types, a part page won't display any data until all page background tasks have completed. This condition applies to synchronous data that's not reliant on the background tasks. In the user-interface, dashes (-) appear for field values while the page background tasks run. To work around this behavior, separate the synchronous data into a separate page part.
 
 ## See Also
+
+[Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT)  
 [Business Central Performance Counters](../administration/performance-counters.md)  
 [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
 [Page Parts Overview](devenv-designing-parts.md)  
