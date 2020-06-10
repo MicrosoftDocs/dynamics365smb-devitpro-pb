@@ -45,6 +45,8 @@ Once authenticated, authorization determines which areas a user can access, such
 
 [Analyzing Authorization Telemetry](../administration/telemetry-authorization-trace.md)
 
+[Using OAuth to Authorize Business Central Web Services ](../webservices/authenticate-web-services-using-oauth.md)
+
 ## Auditing
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information about who is signing-in, what their permissions are, what data have they changed, and more.  For more information, see the following articles:

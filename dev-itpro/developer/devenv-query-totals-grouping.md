@@ -34,7 +34,7 @@ column(Name; Field)
 }
 ```
 
-Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROUPED BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROUP BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
 
 The aggregate methods and grouping are further explained in the following sections.  
   
@@ -88,7 +88,7 @@ The following table represents a simplified version of the resulting dataset for
 |20000|Selangorian Ltd.|400|  
 |30000|Blanemark Hifi|350|  
   
-The following sections explain how you can modify the query to implement the different aggregate methods by simple changing the value of the [Method property](properties/devenv-method-property.md). 
+The following sections explain how you can modify the query to implement the different aggregate methods by changing the value of the [Method property](properties/devenv-method-property.md). 
   
 ##  <a name="Sum"></a> Sum
 

@@ -2,7 +2,7 @@
 title: "Parameters cannot be removed or added in external procedures"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Parameters cannot be removed or added in external procedures, because it will br
 
 It is not allowed to remove or add new parameters in public procedures as this will break dependent extensions which are calling them.
 
-## Bad code examples
+## Code examples triggering the rule
 
 ### Example 1 - Removing parameters
 

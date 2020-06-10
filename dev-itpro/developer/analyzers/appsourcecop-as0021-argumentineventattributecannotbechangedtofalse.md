@@ -2,7 +2,7 @@
 title: "An argument in an event attribute cannot be changed to false."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ This rule verifies that events that are available from other extensions such as 
 
 This does not apply to [Internal](../methods/devenv-internal-attribute.md) type events as they are not exposed to dependent extensions.
 
-## Bad code examples
+## Code examples triggering the rule
 
 ### Example 1 - A business type event stops exposing its sender
 
@@ -112,7 +112,7 @@ codeunit 50120 AnotherCodeunit
 
 ```
 
-## Good code examples
+## Code examples not triggering the rule
 
 ### Example 1 - An event does not change over time
 

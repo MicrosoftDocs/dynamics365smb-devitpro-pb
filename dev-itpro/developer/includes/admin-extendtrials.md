@@ -1,3 +1,10 @@
+---
+author: edupont04
+ms.service: dynamics365-business-central
+ms.topic: include
+ms.date: 05/28/2020
+ms.author: edupont
+---
 An organization can sign up for a free trial of [!INCLUDE[prodshort](prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](prodshort.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  
 
 However, sometimes a 30 day trial is not enough to decide if they want to buy [!INCLUDE[prodshort](prodshort.md)]. In that case, they can extend their trial with an additional 30 days. For more information, see [Need More Time to Decide Whether to Subscribe?](/dynamics365/business-central/admin-extend-trial) in the business functionality content for [!INCLUDE [prodshort](prodshort.md)].  

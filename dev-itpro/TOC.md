@@ -1,6 +1,6 @@
 ﻿# Get Started
 ## [Development and Administration](index.md)
-## [Frequently Asked Questions](faq.md)
+## [FAQ](faq.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical Support](technical-support.md)
@@ -63,10 +63,11 @@
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
-## [Version numbers in Business Central](administration/version-numbers.md)
-## [Enabling new features ahead of time](administration/feature-management.md)
+## [Version Numbers in Business Central](administration/version-numbers.md)
+## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
+## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -102,7 +103,7 @@
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Overview](administration/migrate-data.md)
-### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
+### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Running the Cloud Migration Tool](administration/migration-tool.md)
 ### [Managing the Migration to the Cloud](administration/migration-management.md)
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
@@ -112,9 +113,9 @@
 <!-- end migrate -->
 ## What's New or Changed
 ### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 ### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -167,7 +168,7 @@
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
-### Frequently asked questions about apps
+### FAQ about apps
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
 #### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)

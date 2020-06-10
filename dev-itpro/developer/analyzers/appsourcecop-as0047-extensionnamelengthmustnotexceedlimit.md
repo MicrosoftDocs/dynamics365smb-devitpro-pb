@@ -2,7 +2,7 @@
 title: "The extension name is too long."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,11 @@ The extension name is too long.
 The extension name length must not exceed the limit of 50 characters.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This rule verifies that the extension name specified in the [app.json](../devenv-json-files.md) does not exceed 50 characters.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

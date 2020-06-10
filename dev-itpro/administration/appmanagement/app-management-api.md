@@ -178,6 +178,11 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/AT
+
+{
+    "countryCode": "AT"
+}
+
 ```
 
 #### Example Response
@@ -382,7 +387,7 @@ If a version of an app should be available in multiple countries, then the .app 
 
 Lists all `versions` that match the provided filter.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/v1.0/apps/{appId}/countries/{countryCode}/versions?$filter=<odata_filter>
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions?$filter=<odata_filter>
 ```
 #### Parameters
 

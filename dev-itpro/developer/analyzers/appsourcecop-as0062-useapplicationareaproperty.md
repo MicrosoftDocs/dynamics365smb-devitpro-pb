@@ -2,7 +2,7 @@
 title: "Page controls and actions must use the ApplicationArea property"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,9 @@ Page controls and actions must use the ApplicationArea property
 Page controls and actions must use the ApplicationArea property to be visible to users.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[ApplicationArea Property](..//properties/devenv-applicationarea-property.md)  
