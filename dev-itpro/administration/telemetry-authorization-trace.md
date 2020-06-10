@@ -115,7 +115,7 @@ Occurs when a user sign-in has failed authorization.
 
 #### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
 
-This message occurs when the user has a valid account in Business Central, but the account is disabled. If you open the user account in Business Central, you'll see that the **State** field is set to **Disabled**.
+This message occurs when the user's account is valid, but the account is disabled. If you open the user account in Business Central, you'll see the **State** field is set to **Disabled**.
 
 *Resolution*
 
@@ -123,13 +123,13 @@ Enable the user account by setting the **State** field to **Enabled**. For more 
 
 #### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
 
-This message occurs when the user has an account in Business Central, but the account has not been assigned any entitlements. 
+This message occurs if the user has an account, but the account hasn't been assigned any entitlements. 
 
 Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Azure Active Directory role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
 
 *Resolution*
 
-Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They are not assigned in Business Central. To assign entitlements to a user, see one of the following articles:
+Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They aren't assigned in Business Central. To assign entitlements to a user, see one of the following articles:
 
 - From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](/microsoft-365/admin/add-users/add-users).
 
@@ -184,7 +184,7 @@ Occurs when a company has failed to open.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
+|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li><li>**Authorization Failed (Open Company): The tenant is locked.**</li><li>**Authorization Failed (Open Company): The license has expired or the trial period has ended.**</li><li>**Authorization Failed (Open Company): The user's license is not valid for use on production companies.**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
 |operation_Name|**Authorization Failed (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |severityLevel|**3**|
 
@@ -234,7 +234,39 @@ This message occurs when a user tries to sign in to a company, but the company i
 
 This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. Make sure that the user has the proper name of the company.
 
- 
+#### User cannot open the company because the tenant is locked.
+
+This message indicates that the tenant has been locked by Microsoft, typically for security reasons like preventing repeated malicious sign-in attempts. The tenant isn't accessible by any user.
+
+*Resolution*
+
+For help with resolving this issue, read the following articles or contact Microsoft Support: 
+
+- [Troubleshoot account lockout problems with an Azure AD Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
+
+- ["It looks like your account has been blocked" error when signing in to Office 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
+
+#### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
+
+This message occurs for one the following reasons:
+
+- The license being used has expired.
+- The license was trial license and the trial period has ended. Trial licenses are typically assigned when customers subscribe for an evaluation version by using self-service sign-up (also known as IW or viral sign-up). This license has a time limit.
+
+*Resolution*
+
+Renew the existing license or obtain a new license. Licenses are purchased through the Cloud Solution Provider (CSP)
+program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com//en-US/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
+
+#### You can't open the company, because it is a production company. Your license isn't valid for use on production companies.
+
+This message occurs because the license doesn't allow the user to open production companies. For example, the user may be using a trial license that is only valid on the evaluation version.
+
+*Resolution*
+
+Obtain a license that can be used on production companies. Licenses are purchased through the Cloud Solution Provider (CSP)
+program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com//en-US/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
