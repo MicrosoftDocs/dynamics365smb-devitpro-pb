@@ -131,7 +131,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 - The [TableRelation](properties/devenv-tablerelation-property.md) lets you use the **SystemId** field to set up table relationships:
 
     ```
-    field(1; MyField; Integer)
+    field(1; MyField; Guid)
     {
         DataClassification = ToBeClassified;
         TableRelation = Customer.SystemId;
