@@ -143,6 +143,9 @@ You must add the Excel add-in to the [!INCLUDE[server](../developer/includes/ser
 
     With the **Set-NAVServerConfiguration** cmdlet, set the `PublicODataBaseUrl`key.
 
+## Prepare devices and network for the Excel Add-In
+Network services such as proxies or firewalls must allow routing between each client device on which the Add-In is installed and a number of service endpoints. For a list of endpoints, see [Preparing your network for the Excel Add-In](configuring-network-for-addins.md).  
+
 ## Use the Excel Add-In
 Your users can now use the Excel add-in. When a list page shows the **Edit in Excel** action, then users can open lists, such as the **Customers** page, in Excel and work with the data there. They can use the add-in to update data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and they can get fresh data from the database.  
 
