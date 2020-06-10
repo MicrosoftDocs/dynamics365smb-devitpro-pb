@@ -83,6 +83,7 @@ if GETLASTERRORTEXT <> InvalidDateErrorMessage then
 ## Test with Permission Sets
 In most cases, users will be running with a permission set that limits their access to the functionality they need to do their work. To ensure that it works as intended, you can write application tests in AL that use specific permission sets when the test is run. For more information, see [Testing with Permission Sets](devenv-testing-with-permission-sets.md).
 
+
 ## Testing Best Practices
 We recommend the following best practices for designing your application tests:  
 
@@ -113,7 +114,13 @@ We recommend the following best practices for designing your application tests:
 
 <!--- Monitor code coverage. For more information, see [Code Coverage](uiref/-$-N_9990-Code-Coverage-$-.md). -->
 
+## Enviroments Testing 
+The documentation topic should state something like this:
+1.    Production SaaS – running tests is not allowed. Running tests in production environment can cause damage to the business, since you may incidentally invoke external systems (e.g. CDS, PayPal, Webhook Subscriptions), slow down other users of your system or cause data corruption.
+2.    Sandbox – sandboxes can be used to run limited tests manually to verify functionality on SaaS Environment. Running large number of tests or tests that take long time (more than 15 minutes per test method) is not supported.
+3.    Docker / OnPrem– Docker or dedicated OnPrem Box should be the default environment for running large number of tests or setting up CI/CD gates. [We can add links here if we did this already on other topics]
 
+For On-Prem installations you can disable the ability to run tests by setting TestAutomationEnabled to false in the server configuration.
 <!-- TO DO: Add articles for the links below-->
 ## See Also
  <!--[Application Test Automation](Application-Test-Automation.md)   -->
