@@ -81,7 +81,7 @@ This table gives an overview of supported languages and how application language
 
 |Language|Locale|Translation app provided by|
 |-----------|---------|------|
-|Czech (Czech Republic)|cz-CZ|Microsoft, Available on AppSource|
+|Czech (Czech Republic)|cs-CZ|Microsoft, Available on AppSource|
 |Danish (Denmark)|da-DK|Microsoft, Available on AppSource|
 |German (Austria)|de-AT|Microsoft, Available on AppSource|
 |German (Switzerland)|de-CH|Microsoft, Available on AppSource|
@@ -89,7 +89,7 @@ This table gives an overview of supported languages and how application language
 |English (Australian)|en-AU|Microsoft, Available on AppSource|
 |English (Canada)|en-CA|Microsoft, Available on AppSource|
 |English (Great Britain)|en-GB|Microsoft, Available on AppSource|
-|Enligsh (New Zealand)|en-NZ|Microsoft, Available on AppSource|
+|English (New Zealand)|en-NZ|Microsoft, Available on AppSource|
 |English (United States)|en-US|Built-in|
 |English (South Africa)|en-ZA|Supported by platform, no app available|
 |Spanish (Spain)|es-ES|Microsoft, Available on AppSource|
