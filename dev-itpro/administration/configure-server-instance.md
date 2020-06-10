@@ -318,6 +318,7 @@ The following table describes fields on the **Extensions** tab in the [!INCLUDE[
 |-----------|--------|---------------|
 |Overwrite Existing Translations|OverwriteExistingTranslations|Specifies whether to overwrite existing text translations in the base application with text translations included in extensions.<br /><br />Default: Enabled<br />Dynamically Updatable: No|
 |Required Extensions|RequiredExtensions|Specifies a list of required extensions that can't be uninstalled by using the **Extension Management** page in the client. The extensions can still be uninstalled by using the [Uninstall-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].<br /><br />You specify an extension by its AppID (which is a GUID). When you've more than one extension, separate each AppID with a semicolon. The AppID for the BaseApp extension is 437dbf0e-84ff-417a-965d-ed2bb9650972 and System Application extension is 63ca2fa4-4f03-4f2b-a480-172fef340d3f. <br /><br /> Default: Blank or "" (empty string)<br />Dynamically Updatable: Yes<br /><br />**APPLIES TO:** [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2|
+|Solution Version Extension|SolutionVersionExtension|Specifies the ID of the extension whose version number will show as the Application Version on the client's Help and Support page. Typically, you'd use the extension considered to be your solution's base application. If your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`. <br /><br /> Default: 00000000-0000-0000-0000-000000000000<br />Dynamically Updatable: Yes|
 
 ## <a name="Development"></a>Development Settings
 
@@ -390,6 +391,8 @@ Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize 
 ```
 
 For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](/powershell/business-central/overview).  
+
+
 
 ## See Also
 
