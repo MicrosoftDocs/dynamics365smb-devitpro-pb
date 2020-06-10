@@ -24,10 +24,10 @@ The Excel Add-In must have access to the [!INCLUDE[prodshort](../includes/prodsh
 - https://api.businesscentral.dynamics.com
 
 > [!NOTE]
-> Your API endpoint URL may be different. Environments having an installed Embed App may use an API URL with the format <ApplicationName>.api.bc.dynamics.com, such as https://fabrikam.api.bc.dynamics.com. You can check if an environment uses an Embed App URL in the [Business Central Administration Center](administration/tenant-admin-center.md).
+> Your API endpoint URL may be different. Environments having an installed Embed App may use an API URL with the format <ApplicationName>.api.bc.dynamics.com, such as https://fabrikam.api.bc.dynamics.com. You can check if an environment uses an Embed App URL in the [Business Central Administration Center](tenant-admin-center.md).
 
 ## See also
 
 [Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data](configuring-excel-addin.md)  
 [Administration of [!INCLUDE[prodshort](../includes/prodshort.md)] Online](tenant-administration.md)  
-[Managing an Business Central Embed App in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md#self-service-iw-sign-up---evaluation)  
+[Managing an Business Central Embed App in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md#self-service-iw-sign-up---evaluation)  
