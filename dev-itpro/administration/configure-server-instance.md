@@ -47,7 +47,6 @@ After you install [!INCLUDE[server](../developer/includes/server.md)], you can c
 
 ### Restarting [!INCLUDE[server](../developer/includes/server.md)] after modifications
 
-
 If you use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modify the CustomSettings.config file directly, you must restart the [!INCLUDE[server](../developer/includes/server.md)] instance before any changes can take effect.
 
 The [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) doesn't always require restarting the server instance. It depends on the configuration setting that you change. There are several settings that are *dynamically updatable*. *Dynamically updatable* means that a server instance restart isn't necessarily required after modification. For more information, see [Modifying dynamically updatable settings](configure-server-instance.md#DynamicSettings).
