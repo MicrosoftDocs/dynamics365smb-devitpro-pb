@@ -33,8 +33,9 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.9 (cumulative update 08)](https://support.microsoft.com/help/4536555)|15.3|16.0
 |[14.10 (cumulative update 09)](https://support.microsoft.com/help/4539529)|15.4|16.0
 |[14.11 (cumulative update 10)](https://support.microsoft.com/help/4538887)|15.5|16.0
-|[14.12 (cumulative update 11)](https://support.microsoft.com/help/4549677)|15.6|16.1
-|[14.13 (cumulative update 12)](https://support.microsoft.com/help/4549684)|15.7|16.2
+|[14.12 (cumulative update 11)](https://support.microsoft.com/help/4549677)|[15.6](https://support.microsoft.com/help/4549685)|[16.1](https://support.microsoft.com/help/4549686)
+|[14.13 (cumulative update 12)](https://support.microsoft.com/help/4549684)|[15.7](https://support.microsoft.com/help/4564071)|[16.2]()
+|[14.14 (cumulative update 13)](https://support.microsoft.com/help/4564070)|15.8|16.3
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.4 (or later) or version 16.0 (or later).
 
@@ -50,8 +51,9 @@ The following table lists the Business Central 15 versions and the minimum Busin
 |Version 15|Version 16|
 |----------|----------|
 |15.0 to 15.4|16.0|
-|[15.5](https://support.microsoft.com/help/4549678)|16.1|
-|[15.6](https://support.microsoft.com/help/4549685)|16.2|
+|[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|
+|[15.6](https://support.microsoft.com/help/4549685)|[16.2]()|
+|[15.7](https://support.microsoft.com/help/4564071)|16.3|
 
 
 To see the available updates for Business Central 2020 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 1 on-premises](https://support.microsoft.com/help/4549687).
