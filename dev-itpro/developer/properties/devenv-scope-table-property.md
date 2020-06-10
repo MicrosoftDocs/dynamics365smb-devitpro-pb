@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `OnPrem`, and `Personalization`. 
 
 > [!NOTE]  
-> The following options `Extension`, `Internal`, and `Personalization` are being deprecated.
+> The following options `Extension`, `Internal`, and `Personalization` are being deprecated with runtime 4.0.
 
 ## Applies to 
 - Tables
