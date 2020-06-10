@@ -1,7 +1,7 @@
 ---
 title: "Scope (Table) Property"
 ms.custom: na
-ms.date: 06/08/2020
+ms.date: 06/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,9 +15,10 @@ author: SusanneWindfeldPedersen
 Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `OnPrem`, and `Personalization`. 
 
 > [!NOTE]  
-> The following options `Extension`, `Internal`, and `Personalization` are being deprecated with runtime 4.0.
+> The following options `Extension`, `Internal`, and `Personalization` are being deprecated with runtime 4.0. `External` is replaced by `Cloud` and `Internal` is replaced by `OnPrem`.
 
 ## Applies to 
+
 - Tables
 
 ## Remarks
