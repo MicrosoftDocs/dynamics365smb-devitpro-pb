@@ -35,7 +35,7 @@ Yes. Just make sure you list all library apps as dependencies within the AppSour
 Currently, updating of apps does not handle the library/dependency chain. This work is planned for a future release. For now, you need to uninstall and reinstall the library/dependency apps as well.
 
 ## What are the validation requirements for library apps
-Library apps only get validated technically, but don't go through any type of marketing validation. The technical requirements are described [here](devenv-checklist-submission.md).
+Library apps only get validated technically, but don't go through any type of marketing validation. Also, the library apps are expected to be covered by the user scenarios and tests that you submit for the core app. The technical requirements are described [here](devenv-checklist-submission.md).  
 
 ## See also
 
