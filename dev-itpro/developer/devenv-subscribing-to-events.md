@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 ---
  
 # Subscribing to Events
-To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is an method that listens for a specific event that is raised by an event publisher method. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
+To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is a method that listens for a specific event that is raised by an event publisher. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
 
 Subscribing to an event tells the runtime that the subscriber method must be called whenever the publisher method is run, either by code (as with business and integration events) or by the system (as with trigger events). The runtime establishes the link between an event raised by the publisher and its subscribers, by looking for event subscriber methods.  
 
@@ -59,15 +59,15 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     For more information, see [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md).
 
 ## Example 1
-This example creates the codeunit **7000002 MySubscriber** to subscribe to an event that has been published by the event publisher method called `OnAddressLineChanged` in the codeunit **70000001 MyPublishers**. The event is raised by a change to the **Address** field on page **21 Customer Card**. This example assumes:
+This example creates the codeunit **50101 MySubscribers** to subscribe to an event that has been published by the event publisher method called `OnAddressLineChanged` in the codeunit **50100 MyPublishers**. The event is raised by a change to the **Address** field on page **21 Customer Card**. This example assumes:
 
-- The codeunit **70000001 MyPublishers** with the event publisher method `OnAddressLineChanged` already exists. For an example, see [Publishing Event Example](devenv-publishing-events.md#example).
+- The codeunit **50100 MyPublishers** with the event publisher method `OnAddressLineChanged` already exists. For an example, see [Publishing Event Example](devenv-publishing-events.md#example).
 - The code for raising the `OnAddressLineChanged` event has been added to the **Customer Card** page.  For an example, see [Raising Event Example](devenv-raising-events.md#example).
 
-The following code creates a codeunit called **70000002 MySubscriber** that includes an event subscriber method, called `CheckAddressLine`. The method includes code for handling the published event.
+The following code creates a codeunit called **50101 MySubscribers** that includes an event subscriber method, called `CheckAddressLine`. The method includes code for handling the published event.
 
 ```
-codeunit 70000002 MySubscriber
+codeunit 50101 MySubscribers
 {
     EventSubscriberInstance = StaticAutomatic;
 
@@ -81,11 +81,14 @@ codeunit 70000002 MySubscriber
 }
 ```
 
+> [!NOTE]  
+> This example is part of a larger, simple scenario where when users change the address of a customer on the page **21 Customer Card**, you want to check that the address does not include a plus sign (+). If it does, you want to return a message to the user. For a description of this scenario and all the code involved, see [Event Example](devenv-events-example.md).
+
 ## Example 2
 This example achieves the same as example 1, except it subscribes to the page trigger event `OnBeforeValidateEvent` on the `Address` field instead. By using the page trigger, you avoid creating an event publisher and adding code to raise the event. The event is raised automatically by the system.
 
 ```
-codeunit 70000002 MySubscriber
+codeunit 50101 MySubscribers
 {
     EventSubscriberInstance = StaticAutomatic;
 

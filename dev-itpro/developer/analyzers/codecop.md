@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,7 +61,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0205](codecop-aa0205-variablesmustalwaysbeinitialized.md)|Variables must be initialized before usage.|Always initialize a variable before usage. This can improve readability and make debugging easier.|Use of unassigned variable '{0}'.|Design|Warning|true|
 |[AA0206](codecop-aa0206-initializedvariablesmustalwaysbeused.md)|The value assigned to a variable must be used.|The value assigned to a variable must be used, otherwise the variable is not necessary.|The variable '{0}' is initialized but not used.|Design|Warning|true|
 |[AA0207](codecop-aa0207-eventsubscriberfunctionsmustbelocal.md)|The EventSubscriber method must be local.|The EventSubscriber method must be local.|The EventSubscriber method {0} must be local.|Design|Warning|true|
-|[AA0210](codecop-aa0210-suboptimalindex.md)|Avoid non-indexed fields into filtering.|Suboptimal index.|The table {0} does not contain the key with the field {1}.|Design|Info|true|
+|[AA0210](codecop-aa0210-suboptimalindex.md)|Avoid non-indexed fields into filtering.|Suboptimal index.|The table {0} does not contain a key with the field {1}.|Design|Info|true|
 |[AA0211](codecop-aa0211-calcfieldsonlyonflowfields.md)|Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob.|CalcFields should only be used for FlowFields or Blob fields|The CalcFields method should only be used with FlowFields or fields of type Blob. The field {0} is not a FlowField or of type Blob.|Design|Warning|true|
 |[AA0213](codecop-aa0213-obsoletejustification.md)|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|The {0} {1} must have specified ObsoleteState and ObsoleteReason.|Design|Warning|true|
 |[AA0214](codecop-aa0214-blindwritelocalrecord.md)|The local record should be modified before saving to the database.|The local record should be modified before saving to the database.|The record {0} should be modified before saving to the database.|Design|Warning|true|
