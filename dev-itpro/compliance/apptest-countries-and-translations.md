@@ -68,9 +68,11 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Vietnam|Partner|Available|
 
 ## Important information regarding planned availability
+
 Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners have not successfully published their app(s) to AppSource by this time.
 
 ## Supported languages
+
 To maximize productivity [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports many languages.
 It is important to know that language support requires translation of *platform* captions and *application* captions (UI). 
 Translated platform captions are provided by Microsoft for all supported languages. Application languages are provided by both Microsoft and partners, depending on the language.
@@ -124,11 +126,10 @@ This table gives an overview of supported languages and how application language
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
 
-> [!NOTE]
+> [!NOTE]  
 > Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
 ## See Also
 
 [Rules and Guidelines for AL Code](apptest-overview.md)  
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-
