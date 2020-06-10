@@ -20,7 +20,7 @@ See in the list below what to consider for each storefront detail when it comes 
 
 |Description | Requirements |
 |------------|---------------|
-|Offer name:| Must be English |
+|Offer name:| Can be in any language |
 |Summary:| Can be in any one language, not more because of length constraints.|
 |Description:| Can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added.|
 |Screenshots:| Can be in any language|
@@ -32,6 +32,7 @@ See in the list below what to consider for each storefront detail when it comes 
 |Licensing:| Must be in English if hosted on AppSource, can be in any language if hosted on partner website.|
 |Supported countries:| Must be in English.|
 |Supported editions:| Must be in English.|
+|Supported languages:| Must be in English.|
 
 > [!NOTE]  
 > If you are targeting an international audience, we still recommend you use English on AppSource and create different landing pages incorporating the needed languages (i.e. two language buttons – cf. one in English and one in the given local language).
