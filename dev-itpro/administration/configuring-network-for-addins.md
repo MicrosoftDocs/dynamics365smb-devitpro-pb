@@ -10,7 +10,7 @@ ms.date: 06/10/2020
 ms.author: mikebc
 ---
 
-# Preparing your network for the Excel Add-In
+# Preparing Your Network for the Excel Add-In
 
 This article includes information that helps administrators configure advanced device and network settings for the [!INCLUDE[prodshort](../includes/prodshort.md)] Excel Add-In.
 
