@@ -27,8 +27,8 @@ Below you'll find an overview and relevant links to what has been done on hotfix
 - [New URL parameter hides web client header](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/new-url-parameter-hides-web-client-header)
 - [Improved user experience to keep things from going wrong](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/improved-user-experience-to-keep-things-from-going-wrong)
 - [Use modern authentication to connect to Common Data Service and Dynamics 365 Sales](https://docs.microsoft.com/dynamics365/business-central/admin-common-data-service) 
-- [Use modern authentication to set up Email Logging]()
 - [Installing AppSource apps updates in the Business Central administration center](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps) – please note gradual availability! Until the feature is generally available, some AppSource apps can't be updated using this feature. For information about the timeline, [see here](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/installing-appsource-apps-updates-business-central-administration-center)
+<!-- - [Use modern authentication to set up Email Logging]() -->
 
 ## Release Plan
 
