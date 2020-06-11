@@ -79,7 +79,7 @@ if Customer.FindSet() then repeat
     Customer.Caution := true;  
     Customer.Modify();   
   end;   
-until Customer.Next := 0;  
+until Customer.Next = 0;  
 ```  
   
 In [!INCLUDE[prodlong](../developer/includes/prodlong.md)], you can do this much faster. First, we set a filter on the customer. This could also be done in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2009, but behind the scenes the same code as mentioned earlier would be executed. In [!INCLUDE[prodlong](../developer/includes/prodlong.md)], setting a filter on a record is translated into a single SQL statement.  
@@ -96,7 +96,7 @@ if Customer.FindSet() then repeat
     Customer.Caution := true;   
     Customer.Modify();   
   end;   
-until Customer.Next := 0;   
+until Customer.Next = 0;   
 ```  
   
 In the previous example, an extra call to CalcFields still must be issued for the code to be able to check the value of Customer.Balance. In [!INCLUDE[prodlong](../developer/includes/prodlong.md)], you can optimize this further by using the new **SetAutoCalcFields** method.  
@@ -113,17 +113,18 @@ if Customer.FindSet() then repeat
     Customer.Caution := true;   
     Customer.Modify();   
   end;   
-until Customer.Next := 0;  
+until Customer.Next = 0;  
 ```  
   
-## INSERT, MODifY, DELETE, and LOCKTABLE  
- Each call to **INSERT**, **MODifY**, or **DELETE** functions requires a separate SQL statement. if the table that you modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **INSERT**, **MODifY**, or **DELETE** operations to measure how long it takes to maintain the table and all its SumIndexes.  
+## Insert, Modify, Delete, and LockTable
+
+Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. if the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
   
- The **LOCKTABLE** function does not require any separate SQL statements. It only causes any subsequent reading from the table to lock the table or parts of it.  
+The **LockTable** method does not require any separate SQL statements. It only causes any subsequent reading from the table to lock the table or parts of it.  
 
-## MODifYALL and DELETEALL
+## ModifyAll and DeleteAll
 
-Using **MODifYALL** and **DELETEALL** can improve performance by limiting the amount of SQL calls needed. However, be aware that  **MODifYALL** and **DELETEALL** will revert to individual calls if any of the following conditions exist:
+Using **ModifyAll** and **DeleteAll** can improve performance by limiting the amount of SQL calls needed. However, be aware that  **ModifyAll** and **DeleteAll** will revert to individual calls if any of the following conditions exist:
 
 - There is trigger code on the table.
 - There are event subscribers to the following events: OnBeforeModify, OnAfterModify, OnGlobalModify, OnBeforeDelete, OnAfterDelete, OnGlobalDelete, and OnDatabaseModify.
@@ -132,24 +133,25 @@ Using **MODifYALL** and **DELETEALL** can improve performance by limiting the am
 - There are fields that are added through companion tables.
   
 ## See Also  
- [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
- [Bulk Inserts](optimize-sql-bulk-inserts.md)   
- [GET Method \(Record\)](../developer/methods-auto/record/record-get-method.md)   
- [Find Method \(Record\)](../developer/methods-auto/record/record-Find-method.md)  
- [Next Method \(Record\)](../developer/methods-auto/record/record-Next-method.md)  
- [FindSet Method \(Record\)](../developer/methods-auto/record/record-FindSet-method.md)   
- [FindFIRST Method \(Record\)](../developer/methods-auto/record/record-FindFIRST-method.md)   
- [FindLAST Method \(Record\)](../developer/methods-auto/record/record-FindLAST-method.md)   
- [CalcFields Method \(Record\)](../developer/methods-auto/record/record-CalcFields-method.md)   
- [CALCFIELD Method \(FieldRef\)](../developer/methods-auto/fieldref/fieldref-CALCFIELD-Method.md)   
- [CalcSums Method \(Record\)](../developer/methods-auto/record/record-CalcSums-method.md)   
- [CALCSUM Method \(FieldRef\)](../developer/methods-auto/fieldref/fieldref-CALCSUM-Method.md)   
- [SETAUTOCalcFields Method \(Record\)](../developer/methods-auto/record/record-SETAUTOCalcFields-method.md)   
- [INSERT Method \(Record\)](../developer/methods-auto/record/record-INSERT-method.md)   
- [MODifY Method \(Record\)](../developer/methods-auto/record/record-MODifY-method.md)  
- [MODifYALL Method \(Record\)](../developer/methods-auto/record/record-MODifYAll-method.md)     
- [DELETE Method \(Record\)](../developer/methods-auto/record/record-DELETE-method.md)  
- [DELETEALL Method \(Record\)](../developer/methods-auto/record/record-DELETEALL-method.md)   
- [LOCKTABLE Method \(Record\)](../developer/methods-auto/record/record-LOCKTABLE-method.md)  
- [Events in AL](../developer/devenv-events-in-al.md)  
+
+[Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
+[Bulk Inserts](optimize-sql-bulk-Inserts.md)   
+[Get Method \(Record\)](../developer/methods-auto/record/record-get-method.md)   
+[Find Method \(Record\)](../developer/methods-auto/record/record-Find-method.md)  
+[Next Method \(Record\)](../developer/methods-auto/record/record-Next-method.md)  
+[FindSet Method \(Record\)](../developer/methods-auto/record/record-FindSet-method.md)   
+[FindFirst Method \(Record\)](../developer/methods-auto/record/record-FindFIRST-method.md)   
+[FindLast Method \(Record\)](../developer/methods-auto/record/record-FindLAST-method.md)   
+[CalcFields Method \(Record\)](../developer/methods-auto/record/record-CalcFields-method.md)   
+[CalcField Method \(FieldRef\)](../developer/methods-auto/fieldref/fieldref-CALCFIELD-Method.md)   
+[CalcSums Method \(Record\)](../developer/methods-auto/record/record-CalcSums-method.md)   
+[CalcSum Method \(FieldRef\)](../developer/methods-auto/fieldref/fieldref-CALCSUM-Method.md)   
+[SetAutoCalcFields Method \(Record\)](../developer/methods-auto/record/record-SETAUTOCalcFields-method.md)  
+[Insert Method \(Record\)](../developer/methods-auto/record/record-Insert-method.md)   
+[Modify Method \(Record\)](../developer/methods-auto/record/record-Modify-method.md)  
+[ModifyAll Method \(Record\)](../developer/methods-auto/record/record-ModifyAll-method.md)     
+[Delete Method \(Record\)](../developer/methods-auto/record/record-Delete-method.md)  
+[DeleteAll Method \(Record\)](../developer/methods-auto/record/record-DeleteALL-method.md)   
+[LockTable Method \(Record\)](../developer/methods-auto/record/record-LOCKTABLE-method.md)  
+[Events in AL](../developer/devenv-events-in-al.md)  
 [Using Security Filters](../security/security-filters.md)
