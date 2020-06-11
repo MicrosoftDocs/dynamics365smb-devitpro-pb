@@ -19,12 +19,75 @@ A list part can be contained in Role Centers, FactBoxes on pages of several type
 
 To define a list part, you create a page object and set the [PageType Property](properties/devenv-pagetype-property.md) to `ListPart`. The structure is similar to that of a `List` page, except that is cannot display Factboxes. For more information about the structure of a list page, see [List Page Structure](devenv-designing-list-pages.md?tabs=structure#structure-1). 
 
-Once the list part object is created, you add it to a page from the[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+Once the list part object is created, you include it in a page from the[!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md)]. You add a `part`control to the hosting page that references the page part object. The container of the list part is functionally independent from the hosting page, such that the properties and actions defined inside the part control only apply to the container. 
 
-in Visual Studio Code, you add a part control on the hosting page object that references the page part object. The part control also defines a small set of properties, such as the caption that will accompany the part. This allows separation of responsibility: the page part object defines self-contained functionality, whilst the hosting page defines how the container of the part should behave without knowledge of its' functionality.
+## Example
 
+```
+page 50132 "Pending Shipments"
+{
+    PageType = ListPart;
+    SourceTable = "Sales Header";
+    // Filter on the sales orders that have not been entirely shipped.
+    SourceTableView = WHERE("Completely Shipped" = CONST(False));
 
+    layout
+    {
+        area(Content)
+        {
+            repeater(General)
+            {
+                field("No."; "No.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Order Date"; "Order Date")
+                {
+                    ApplicationArea = All;
+                }
+                field("Location Code"; "Location Code")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+    }
+}
+
+page 50131 "Customer Card with ListPart"
+{
+    PageType = Card;
+    SourceTable = Customer;
+
+    layout
+    {
+        area(Content)
+        {
+            group(General)
+            {
+                field("No."; "No.")
+                {
+                    ApplicationArea = All;
+                }
+                field(Name; Name)
+                {
+                    ApplicationArea = All;
+                }
+            }
+            group(Shipments)
+            {
+                part("Pending Shipments"; "Pending Shipments")
+                {
+                    // Filter on the sales orders that relate to the customer on the card page.
+                    SubPageLink = "Sell-to Customer No." = FIELD("No.");
+                }
+            }
+        }
+    }
+}
+```
 
 ## See Also
 
-[Page Parts Overview](developer/devenv-designing-parts.md)
+[Page Parts Overview](developer/devenv-designing-parts.md)   
+[Designing List Pages](devenv-designing-list-pages)   
