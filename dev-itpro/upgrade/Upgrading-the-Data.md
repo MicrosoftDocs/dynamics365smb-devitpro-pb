@@ -212,10 +212,11 @@ For more information, see [Connecting a Server Instance to a Database](../admini
     - Table 829 DO Payment Trans. Log Entry
     - Table 1510 Notification Template
 
-    When you delete a table object, in the **Delete** confirmation dialog box that appears, set the **Synchronize Schema** option to **Force**.
-
+    
     > [!IMPORTANT]
-    > In this step, it is very important that you do not use the **Sync. Schema For All Tables** option from the **Tools** menu.
+    > When you delete a table object, in the **Delete** confirmation dialog box that appears, set the **Synchronize Schema** option to **Force**.
+    >
+    > In this step, it's very important that you do not use the **Sync. Schema For All Tables** option from the **Tools** menu.
 
 4. (Upgrade from [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If the old database includes test runner codeunits, you will get errors on these codeunits that the OnBeforeTestRun and OnAfterTestRun trigger signatures are not valid. To fix these issues, you change the signature of the OnBeforeTestRun and OnAfterTestRun triggers to include the *TestPermission* parameter.
 
