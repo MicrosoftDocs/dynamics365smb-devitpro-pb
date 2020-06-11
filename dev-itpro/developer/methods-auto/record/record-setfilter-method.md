@@ -45,8 +45,7 @@ Replacement values to insert in replacement fields in the filter expression. The
 
 ## Remarks
 
-`SetFilter` does not filter for empty values. If you set `MyRecord.SetFilter(MyTextField, '');` 
-it does not set a filter. 
+`SetFilter` does not filter for empty values. For example, if you set `MyRecord.SetFilter(MyTextField, '');` no filter is applied.
 
 ## See Also
 
