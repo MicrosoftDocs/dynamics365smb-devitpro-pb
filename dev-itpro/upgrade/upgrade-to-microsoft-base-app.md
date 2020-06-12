@@ -395,6 +395,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```
     
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+    
 
 3. Synchronize the tenant with the table migration extension.
 
@@ -405,6 +406,11 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```
 
     This step creates empty tables in the database for the table objects defined in the table migration extension. When completed, the table migration extension takes ownership of the table. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. At this point, the tenant state is OperationalDataUpgradePending.
+
+    > [!TIP]
+    > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
+    >
+    > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
 4. Synchronize the empty system application, base application, and customization extensions.
 
 ## Task 11: Install DestinationAppsForMigration and move tables
