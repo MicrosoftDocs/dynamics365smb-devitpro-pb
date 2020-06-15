@@ -1,6 +1,6 @@
 ---
 title: "CardPart Pages"
-description: "A ListPart page is a type of page part used to display a list of records embedded within another page."
+description: "A CardPart page is a type of page part used to display almost any page controls, such as fields, cue tiles, charts, images, or control add-ins, embedded within another page."
 ms.custom: na
 ms.date: 04/01/2020
 ms.topic: article
@@ -11,19 +11,20 @@ author: blrobl
 
 # CardPart pages
 
-A *ListPart* page is a type of page part used to display almost any page controls, such as fields, cue tiles, charts, images, or control add-ins, embedded within another page. It consists of a repeater, which presents the records of the source table as rows and columns, and optionally, of an action menu. 
+A *CardPart* page is a type of page part used to display overviews of the data embedded within another page. It can consist of almost any page control, such as fields, cue tiles, charts, images, or control add-ins, and optionally, of an action menu.
 
-A list part can be contained in Role Centers, FactBoxes and a Tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different constraints, in addition to those inherent to page parts, like its reduced size. For more information about design considerations, see [Design Considerations](devenv-designing-parts#design-considerations.md).
+A card part can be contained in Role Centers, in the FactBox area of other pages or in a tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different constraints, like location and size limitations. For more information about design considerations, see [Design Considerations](devenv-designing-parts#design-considerations.md).
 
-## How to add a card part to a page
+## Adding card part to a page
 
-To define a list part, you create a page object and set the [PageType Property](properties/devenv-pagetype-property.md) to `CardPart`. The structure is similar to that of a `List` page, except that there is no Factbox section. For more information, see [List Page Structure](devenv-designing-list-pages.md?tabs=structure#structure-1). 
+The first step is to create a card part. To do so, you create a page object and set the [PageType Property](properties/devenv-pagetype-property.md) to `CardPart`. You can add several controls depending on how you want to display the data. For example, add a `cuegroup` control if you want to use cue tiles or a `chartpart` control to add charts.
 
-To include a list part on a page, you add a `part` control to the hosting page that references the list part. The container of the list part is functionally independent from the hosting page, such that the properties and actions defined inside the part control only apply to the container. 
+To include a card part on a page, you add a `part` control to the hosting page referencing the card part. Here you can also define properties and actions. These will only apply to the container of the card part, since its functionality is independent from the hosting page.
+
 
 ## Example
 
-The following code sample illustrates how to create a `ListPage` page, `"Pending Shipments"`, and how to integrate it in the `"Customer Card"`. 
+The following code sample illustrates how to create a `CardPart` page, `"Customer Sales History"`, and how to integrate it in the `"Customer Card"`. 
 
 ```
 page 50101 "Customer Sales History"
@@ -35,6 +36,7 @@ page 50101 "Customer Sales History"
     {
         area(Content)
         {
+            // Display data as cue tiles
             cuegroup(Overview)
             {
                 field("No. of Quotes"; "No. of Quotes")
@@ -57,7 +59,7 @@ page 50101 "Customer Sales History"
     }
 }
 
-page 50101 "Customer Card"
+page 50102 "Customer Card"
 {
     PageType = Card;
     SourceTable = Customer;
@@ -79,12 +81,13 @@ page 50101 "Customer Card"
 
             }
         }
-
+        
+        // Display the card part on the Factbox area
         area(FactBoxes)
         {
             part("Customer Sales History"; "Customer Sales History")
             {
-                // Filter on the sales orders that relate to the customer on the card page.
+                // Filter on the sales history that relate to the customer on the card page.
                 SubPageLink = "No." = FIELD("No.");
             }
         }
@@ -95,4 +98,4 @@ page 50101 "Customer Card"
 ## See Also
 
 [Page Parts Overview](developer/devenv-designing-parts.md)   
-[Designing Card Pages](devenv-designing-card-pages.md)   
+[ListPart Pages](devenv-listpart-pages.md)   
