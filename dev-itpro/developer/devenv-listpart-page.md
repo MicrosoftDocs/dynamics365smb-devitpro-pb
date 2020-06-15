@@ -93,6 +93,6 @@ page 50102 "Customer Card"
 
 ## See Also
 
-[Page Parts Overview](developer/devenv-designing-parts.md)   
+[Page Parts Overview](devenv-designing-parts.md)   
 [Designing List Pages](devenv-designing-list-pages.md)   
 [CardPart Pages](devenv-cardpart-pages.md)   

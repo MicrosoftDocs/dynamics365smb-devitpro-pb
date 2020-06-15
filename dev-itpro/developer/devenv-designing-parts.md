@@ -31,8 +31,8 @@ Business Central offers different types of parts that display data in a specific
 
 |PageType|Purpose|Hosting page types|
 |----|---|---|
-|**ListParts**|Display a list of records.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Tabular step in a Wizard; Subpage on a Document page.|
-|**CardParts**|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images, or control addins.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Step in a Wizard.|
+|[**ListParts**](devenv-listpart-pages.md)|Display a list of records.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Tabular step in a Wizard; Subpage on a Document page.|
+|[**CardParts**](devenv-cardpart-pages.md)|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images, or control addins.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Step in a Wizard.|
 |[**HeadlineParts**](devenv-create-role-center-headline.md)|Display relevant insights from across the business.|Role Centers only.|
 
 
