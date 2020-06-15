@@ -330,10 +330,9 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
                   "Reader"
               ]
 }
-
-When using Type:“Application” the aadTenantId must not be used.
-
 ```
+
+When using `Type:"Application"`, the `aadTenantId` must not be used.
 
 #### Example Response
 
