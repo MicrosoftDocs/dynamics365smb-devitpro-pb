@@ -34,7 +34,22 @@ Due to the nature of the operations our users perform in the sandbox environment
 
 ## Telemetry
 
-For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). The following page shows an overview of currently available signals, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
+For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). 
+
+| Area | Telemetry | Why |
+|---------------------------|------------|------------|
+| Page Background Task      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Each page background task will open a new session. Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions | 
+| Log-in      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Each page background task will open a new session. Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions | 
+| Something was slow during this period of time | [Company lifecycle signal](../administration/telemetry-company-lifecycle-trace.md) | check if a copy company operation was running while the performance issue occurred |
+| Something was slow during this period of time | [Database locks signal](../administration/telemetry-database-locks-trace.md) | Maybe the performance issue was due to locking in the database |
+| Suddenly the XYZ page is slow | [Extension lifecycle signal](../administration/telemetry-extension-update-trace.md) | maybe an extension was installed that interferes with the page in question|
+| Some pages or reports are slow to load | [Long running SQL queries](../administration/administration/telemetry-long-running-sql-query-trace.md) | Investigate if the data operations on the page or report is taking a long time to complete |
+| A report is slow | [Report signal](../administration/telemetry-reports-trace.md)  | Check if the report is reading more data than you expected |
+| System UI feels slow | [Web service requests signal](../administration/telemetry-webservices-trace.md) | Calling your environment too  agressively with web service requests can affect performance of the system |
+
+
+
+The following page shows an overview of all currently available signals, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 ## Operational Limits
 
