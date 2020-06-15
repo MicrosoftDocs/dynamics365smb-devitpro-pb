@@ -38,6 +38,11 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+See [AL Database Methods and Performance on SQL Server - SETAUTOCALCFIELDS](../../../administration/optimize-sql-al-database-methods-and-performance-on-server.md#setautocalcfields).
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
