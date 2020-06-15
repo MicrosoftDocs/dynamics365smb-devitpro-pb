@@ -196,7 +196,7 @@ You can create the empty extension like any other extension by adding an AL proj
 4.  Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
 
 > [!TIP]
-> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions later. You can skip this step, then manually run Install-NavApp instead.
+> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in Task 15. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
 
 ## DATA UPGRADE
 
@@ -363,7 +363,13 @@ In this task, you'll publish the platform symbols and the extensions configured 
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension .app file>"
     ```
 
-3. Publish other extensions, including the empty **System Application** extension, the empty **Base Application** extension, and new customization extensions.
+3. Publish the empty versions of the following extensions:
+
+    - **System Application** extension
+    - **Base Application** extension
+    - Customization extensions (if any).
+
+    This step publishes the extensions that you created in Task 3.
 
 ## Task 10: Synchronize tenant
 
@@ -395,6 +401,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```
     
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+    
 
 3. Synchronize the tenant with the table migration extension.
 
@@ -405,7 +412,12 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```
 
     This step creates empty tables in the database for the table objects defined in the table migration extension. When completed, the table migration extension takes ownership of the table. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. At this point, the tenant state is OperationalDataUpgradePending.
-4. Synchronize the empty system application, base application, and customization extensions.
+
+    > [!TIP]
+    > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
+    >
+    > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
+4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 9. 
 
 ## Task 11: Install DestinationAppsForMigration and move tables
 
@@ -421,7 +433,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
 
-3. Install the empty system, base, and custom extensions.
+3. Install the empty versions of the system, base, and custom extensions that you published in Task 9.
 
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
@@ -433,7 +445,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 ## Task 12: Publish final extensions
 
-This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The extensions include the new versions of Microsoft System Application and Base Application extension. The Microsoft extension packages are on the installation media (DVD).
+This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions.
 
 Publish extensions using the Publish-NAVApp cmdlet like you did in previous steps.
 
@@ -496,7 +508,19 @@ Run the data upgrade on the extensions in the following order:
 2. Microsoft Base Application.
 3. Customization, Microsoft, and third-party extensions.
 
-## Task 16: Upgrade control add-ins
+   For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see Task 11). If you have a customization extension for which you didn't create and publish an empty version, complete the next task for these extensions.
+
+## Task 16: Install remaining customization extensions
+
+Complete this task for cutomizations extension that you created in Task 1, but create and publish an empty version first.
+
+To install each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp): 
+
+```powershell
+Install-NAVApp -ServerInstance <BC16 server instance> -Name "<name>" -Version <extension version>
+```
+
+## Task 17: Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
 
@@ -515,7 +539,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[](../developer/includes/prodshort.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.
@@ -546,8 +570,9 @@ To upgrade the control add-ins, do the following steps:
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
-    
+
 ## See Also  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
+[Signing an APP Package File](../developer/devenv-sign-extension.md)  

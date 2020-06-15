@@ -52,7 +52,7 @@ Occurs when an extension upgrade fails because of an exception in an upgrade cod
 |extensionTargetedVersion|Specifies the new version of the extension being upgraded.|
 |extensionVersion|Specifies the old version of the extension being upgraded.|
 |failureReason|Specifies the exception that was thrown by the upgrade code. Some exception messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Exception messages that contain other data classifications, like customer data, are not shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."|
-|failureType|**DataUdate**|
+|failureType|**DataUpdate**|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
 ### Example
