@@ -10,6 +10,8 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
+<!-- Topic redirected to developer/devenv-checklist-submission with same information -->
+
 # Step 3 - How to Develop Your App
 
 The following table is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation.  
