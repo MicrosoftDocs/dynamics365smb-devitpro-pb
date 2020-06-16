@@ -178,8 +178,8 @@ To complete the example, follow these steps:
             Customer: Record Customer;
             CreditBalanceNotification: Notification;
             OpenCustomer: Text;
-            Text003: TextConst ENU = 'The current balance exceeds the credit limit.';
-            Text004: TextConst ENU = 'Change credit limit';
+            Text003: Label 'The current balance exceeds the credit limit.';
+            Text004: Label 'Change credit limit';
         begin
             Customer.GET("Sell-to Customer No.");
             if Customer."Balance (LCY)" > Customer."Credit Limit (LCY)" then begin

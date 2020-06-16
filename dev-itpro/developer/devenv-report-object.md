@@ -206,15 +206,15 @@ report 50103 "Customer List"
     FormatAddr : Codeunit 365;
      CustFilter : Text;
     CustAddr : ARRAY [8] OF Text[50];
-    Customer_ListCaptionLbl : TextConst ENU='Customer - List';
-    CurrReport_PAGENOCaptionLbl : TextConst ENU='Page';
-    Customer_Customer_Posting_GroupCaptionLbl : TextConst ENU='Customer Posting Group';
-    Customer_Customer_Disc_GroupCaptionLbl : TextConst ENU='Cust./Item Disc. Gr.';
-    Customer_Invoice_Disc_CodeCaptionLbl : TextConst ENU='Invoice Disc. Code';
-    Customer_Customer_Price_GroupCaptionLbl : TextConst ENU='Price Group Code';
-    Customer_Payment_Terms_CodeCaptionLbl : TextConst ENU='Payment Terms Code';
-    Customer_Currency_CodeCaptionLbl : TextConst ENU='Currency Code';
-    Total_LCY_CaptionLbl : TextConst ENU='Total (LCY)';
+    Customer_ListCaptionLbl : Label 'Customer - List';
+    CurrReport_PAGENOCaptionLbl : Label 'Page';
+    Customer_Customer_Posting_GroupCaptionLbl : Label 'Customer Posting Group';
+    Customer_Customer_Disc_GroupCaptionLbl : Label 'Cust./Item Disc. Gr.';
+    Customer_Invoice_Disc_CodeCaptionLbl : Label 'Invoice Disc. Code';
+    Customer_Customer_Price_GroupCaptionLbl : Label 'Price Group Code';
+    Customer_Payment_Terms_CodeCaptionLbl : Label 'Payment Terms Code';
+    Customer_Currency_CodeCaptionLbl : Label 'Currency Code';
+    Total_LCY_CaptionLbl : Label 'Total (LCY)';
 }
 
 ```

@@ -299,12 +299,12 @@ codeunit 50103 "Customer Rewards Test"
         LibraryLowerPermissions: Codeunit "Library - Lower Permissions"; 
         LibrarySales: Codeunit "Library - Sales"; 
         MockCustomerRewardsExtMgt: Codeunit MockCustomerRewardsExtMgt; 
-        ActivatedTxt: TextConst ENU = 'Customer Rewards should be activated'; 
-        NotActivatedTxt: TextConst ENU = 'Customer Rewards should not be activated'; 
-        BronzeLevelTxt: TextConst ENU = 'BRONZE'; 
-        SilverLevelTxt: TextConst ENU = 'SILVER'; 
-        GoldLevelTxt: TextConst ENU = 'GOLD'; 
-        NoLevelTxt: TextConst ENU = 'NONE'; 
+        ActivatedTxt: Label 'Customer Rewards should be activated'; 
+        NotActivatedTxt: Label 'Customer Rewards should not be activated'; 
+        BronzeLevelTxt: Label 'BRONZE'; 
+        SilverLevelTxt: Label 'SILVER'; 
+        GoldLevelTxt: Label 'GOLD'; 
+        NoLevelTxt: Label 'NONE'; 
 
     [Test] 
 
