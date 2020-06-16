@@ -146,24 +146,30 @@ Not all people from your company can initiate the onboarding into Collaborate �
 To start the registration process, your company Global Administrator must first go to the following link: [https://aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 Next, your company Global Administrator must click on the ‘Get Started’ option under the ‘Microsoft Collaborate’ header.
-- Note: If you are properly registered, and have setup your above Developer Account, the registration page should autofill with your Company details. If the page is not filled automatically, please complete the form manually.
 
-Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register.
+> [!NOTE]  
+> If you are properly registered, and have set up a Developer Account, the registration page should autofill with your Company details. If the page is not filled automatically, please complete the form manually.
 
-Click the **Next** button to complete your initial registration. When successful, you will see the image below.
+Once completed, make sure to click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page.
 
-As the final step, to complete registration, click ‘GO TO DASHBOARD’.
+> [!NOTE]  
+>You need to accept the TOU to successfully register.
+
+Choose the **Next** button to complete your initial registration. When successful, you will see the image below.
+
+As the final step, to complete registration, click **GO TO DASHBOARD**.
 
 *How to use the dashboard to add your coworkers to Microsoft Collaborate* If you DO NOT want to add any coworkers:
 - Please skip this part and move on to the next section called “Getting access to the available builds and engagements” to download packages through Microsoft Collaborate.
 
 If you DO want to add coworkers, please follow the 5 steps below:
+
 1. Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
-2. Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
+2. Click on the ‘Gear’ Icon on the top right corner of the page and then on **Account Settings** as shown on the image below.
 
-3. Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
+3. Click on **Users** under **Settings** in the grey panel on the left-hand side of the page. The following image will appear.
 
-4. Click the grey ‘ADD USERS’ button and leave the default choice to ‘Add existing users’ as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey ‘ADD SELECTED’ button (see image below).
+4. Click the grey **ADD USERS** button and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button (see image below).
 
 5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
