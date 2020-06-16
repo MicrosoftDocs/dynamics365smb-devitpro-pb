@@ -71,7 +71,7 @@ There are currently 2 available ranges which you can request.  Both have some ch
 -	The **RSP Object Range (1-69 million)**:  This object range is tied to [the RSP Program details](https://mbs.microsoft.com/partnersource/northamerica/partner-essentials/agreements-guides-and-handbooks/RegisterSolutionProgram).  The program details specify that you have to pay quarterly for used objects. However, if you comply with the [Certified for Microsoft Dynamics (CFMD)](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-programs/certified-for-microsoft-dynamics/process/CfMD_Process) program requirements, one of the benefits of the program is that the quarterly fees on object costs will be waived. This object range can both be implemented on-premises, partner hosted (in C/AL or AL format) or in the Business Central SAAS  Service (AL Only format).   The RSP Program page describes the process on how to request the RSP object range.
 -	The **App Object Range (70-75 million)**: 
 This object range was originally designed to run in the Business Central service only for Microsoft Appsource Apps.  
-Today you can implement apps developed in this range both on-premises, partner hosted and in the Business Central SAAS Service.
+Today you can implement apps developed in this range both on-premises, partner hosted and in the Business Central SaaS Service.
 This object range is free of charge, the only requirement on this range is that your objects can be AL only.   
 You can request both object ranges [here](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-strategy/365businesscentralrequestuniqueobjectrange).
 
@@ -86,7 +86,7 @@ Note, you only need one developer account per company (not one per app submissio
 
 *Choosing a primary contact email and publisher display name*
 
-When registering for a Microsoft Developer Account you will be asked to provide an “E-mail address” and a “Publisher display name”. When choosing your display name and primary email account, please take the following into account:
+When registering for a Microsoft Developer Account you will be asked to provide an **E-mail address** and a **Publisher display name**. When choosing your display name and primary email account, please take the following into account:
 - Email: To ease submission and avoid missing vital communications we recommend you provide a companywide email/dev center account that can be shared across multiple users so that several people can manage your portal submission.
 
 *Although, if you prefer a singular account, where you can add multiple users through the portal, then this is possible too.*
@@ -98,14 +98,16 @@ See example to the right, where the display name is highlighted in yellow.
 Consistency is key!
 
 It is key that you use the same display name and email throughout your app submission, as you will be asked to provide them in several different touch points. such as for example:
+
 - To sign into Partner Center (and creating your app offer)
 - To enroll and sign in to the Collaborate tool and “Ready to Go” platform
 
 ## Access to Partner Center
+
 Partner Center is the single destination to manage your business relationship with Microsoft. [Get Started by clicking this link](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv)
 
 > [!NOTE]  
-> This has replaced Partner Center. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
+> This has replaced Partner Source. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
 
 ## Get onboarded to tools and programs
 
@@ -144,24 +146,30 @@ Not all people from your company can initiate the onboarding into Collaborate �
 To start the registration process, your company Global Administrator must first go to the following link: [https://aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 Next, your company Global Administrator must click on the ‘Get Started’ option under the ‘Microsoft Collaborate’ header.
-- Note: If you are properly registered, and have setup your above Developer Account, the registration page should autofill with your Company details. If the page is not filled automatically, please complete the form manually.
 
-Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register.
+> [!NOTE]  
+> If you are properly registered, and have set up a Developer Account, the registration page should autofill with your Company details. If the page is not filled automatically, please complete the form manually.
 
-Click the **Next** button to complete your initial registration. When successful, you will see the image below.
+Once completed, make sure to click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page.
 
-As the final step, to complete registration, click ‘GO TO DASHBOARD’.
+> [!NOTE]  
+>You need to accept the TOU to successfully register.
+
+Choose the **Next** button to complete your initial registration. When successful, you will see the image below.
+
+As the final step, to complete registration, click **GO TO DASHBOARD**.
 
 *How to use the dashboard to add your coworkers to Microsoft Collaborate* If you DO NOT want to add any coworkers:
 - Please skip this part and move on to the next section called “Getting access to the available builds and engagements” to download packages through Microsoft Collaborate.
 
 If you DO want to add coworkers, please follow the 5 steps below:
+
 1. Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
-2. Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
+2. Click on the ‘Gear’ Icon on the top right corner of the page and then on **Account Settings** as shown on the image below.
 
-3. Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
+3. Click on **Users** under **Settings** in the grey panel on the left-hand side of the page. The following image will appear.
 
-4. Click the grey ‘ADD USERS’ button and leave the default choice to ‘Add existing users’ as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey ‘ADD SELECTED’ button (see image below).
+4. Click the grey **ADD USERS** button and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button (see image below).
 
 5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
@@ -195,6 +203,7 @@ When listing your app you need to specify the following:
 Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly. -->
 
 ## Next steps
+
 Now that you have completed step 1 (cf. setting up your accounts) you can now proceed to step 2 and 3 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## Useful resources
@@ -209,6 +218,7 @@ Find general information on Add-on apps for Business Central here: [aka.ms/AppSo
 [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours). 
 
 ### GitHub
+
 Use the GitHub forum to ask, or search, the community and Microsoft experts for questions respectively. Go to: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) now and start asking away.
 
 ### Follow “Ready to Go” engagements on social media
