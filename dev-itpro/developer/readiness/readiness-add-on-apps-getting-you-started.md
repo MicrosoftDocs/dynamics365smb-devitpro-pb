@@ -203,6 +203,7 @@ When listing your app you need to specify the following:
 Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly. -->
 
 ## Next steps
+
 Now that you have completed step 1 (cf. setting up your accounts) you can now proceed to step 2 and 3 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## Useful resources
@@ -217,6 +218,7 @@ Find general information on Add-on apps for Business Central here: [aka.ms/AppSo
 [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours). 
 
 ### GitHub
+
 Use the GitHub forum to ask, or search, the community and Microsoft experts for questions respectively. Go to: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) now and start asking away.
 
 ### Follow “Ready to Go” engagements on social media
