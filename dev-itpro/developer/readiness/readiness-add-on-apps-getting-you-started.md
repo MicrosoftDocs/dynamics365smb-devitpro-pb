@@ -71,7 +71,7 @@ There are currently 2 available ranges which you can request.  Both have some ch
 -	The **RSP Object Range (1-69 million)**:  This object range is tied to [the RSP Program details](https://mbs.microsoft.com/partnersource/northamerica/partner-essentials/agreements-guides-and-handbooks/RegisterSolutionProgram).  The program details specify that you have to pay quarterly for used objects. However, if you comply with the [Certified for Microsoft Dynamics (CFMD)](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-programs/certified-for-microsoft-dynamics/process/CfMD_Process) program requirements, one of the benefits of the program is that the quarterly fees on object costs will be waived. This object range can both be implemented on-premises, partner hosted (in C/AL or AL format) or in the Business Central SAAS  Service (AL Only format).   The RSP Program page describes the process on how to request the RSP object range.
 -	The **App Object Range (70-75 million)**: 
 This object range was originally designed to run in the Business Central service only for Microsoft Appsource Apps.  
-Today you can implement apps developed in this range both on-premises, partner hosted and in the Business Central SAAS Service.
+Today you can implement apps developed in this range both on-premises, partner hosted and in the Business Central SaaS Service.
 This object range is free of charge, the only requirement on this range is that your objects can be AL only.   
 You can request both object ranges [here](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-strategy/365businesscentralrequestuniqueobjectrange).
 
@@ -86,7 +86,7 @@ Note, you only need one developer account per company (not one per app submissio
 
 *Choosing a primary contact email and publisher display name*
 
-When registering for a Microsoft Developer Account you will be asked to provide an “E-mail address” and a “Publisher display name”. When choosing your display name and primary email account, please take the following into account:
+When registering for a Microsoft Developer Account you will be asked to provide an **E-mail address** and a **Publisher display name**. When choosing your display name and primary email account, please take the following into account:
 - Email: To ease submission and avoid missing vital communications we recommend you provide a companywide email/dev center account that can be shared across multiple users so that several people can manage your portal submission.
 
 *Although, if you prefer a singular account, where you can add multiple users through the portal, then this is possible too.*
@@ -98,14 +98,16 @@ See example to the right, where the display name is highlighted in yellow.
 Consistency is key!
 
 It is key that you use the same display name and email throughout your app submission, as you will be asked to provide them in several different touch points. such as for example:
+
 - To sign into Partner Center (and creating your app offer)
 - To enroll and sign in to the Collaborate tool and “Ready to Go” platform
 
 ## Access to Partner Center
+
 Partner Center is the single destination to manage your business relationship with Microsoft. [Get Started by clicking this link](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv)
 
 > [!NOTE]  
-> This has replaced Partner Center. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
+> This has replaced Partner Source. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
 
 ## Get onboarded to tools and programs
 
