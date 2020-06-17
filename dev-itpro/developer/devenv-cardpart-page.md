@@ -13,7 +13,7 @@ author: blrobl
 
 A *CardPart* page is a type of page part embedded within another page used to display additional data relevant to the page that hosts it. It can display the data in the form of almost any page control, such as fields, cue tiles, charts, images, or control add-ins. You can also define actions to operate on the card part page itself. 
 
-A card part can be placed on Role Centers, on the FactBox area of other pages or on a tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different design constraints, such as its position or size limitations. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
+A card part can be placed on Role Centers, on the FactBox area of other pages or on a tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different design constraints, which determine its position and dimensions. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
 
 ## Creating a card part
 
