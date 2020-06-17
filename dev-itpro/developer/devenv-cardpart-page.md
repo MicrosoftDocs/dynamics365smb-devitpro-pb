@@ -1,8 +1,8 @@
 ---
 title: "CardPart Pages"
-description: "A CardPart page is a type of page part used to display almost any page controls, such as fields, cue tiles, charts, images, or control add-ins, embedded within another page."
+description: "A CardPart page is a type of page part embedded within another page used to display additional data relevant to the page that hosts it."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/17/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: t-blrobl
@@ -13,11 +13,20 @@ author: blrobl
 
 A *CardPart* page is a type of page part embedded within another page used to display additional data relevant to the page that hosts it. It can display the data in the form of almost any page control, such as fields, cue tiles, charts, images, or control add-ins. You can also define actions to operate on the card part page itself. 
 
-A card part can be placed on Role Centers, on the FactBox area of other pages or on a tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different design constraints, like position and size limitations. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
+A card part can be placed on Role Centers, on the FactBox area of other pages or on a tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different design constraints, such as its position or size limitations. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
+
+## Creating a card part
+
+To create a card part, you create a page object, set the [PageType Property](properties/devenv-pagetype-property.md) to `CardPart` and specify the source table. You can nest different controls inside the `area(Content)` control depending on how you want to display the data. The controls you can specify are the following.
+
+|Control|Definition|
+|---|---|
+|`field`|Defines a field. It can also be used to display an image.|
+|`cuegroup`|Defines a group of cue tiles. For more information, see [Designing Cues](devenv-cues-action-tiles.md#CueDesign).|
+|`chartpart`|Defines a chart.|
+|`usercontrol`|Defines a control add-in. For more information, see [Control Add-In Object](devenv-control-addin-object.md).
 
 ## Adding card part to a page
-
-The first step is to create a card part. To do so, you create a page object, set the [PageType Property](properties/devenv-pagetype-property.md) to `CardPart` and specify the source table. You can add different controls depending on how you want to display the data. For example, add a `cuegroup` control if you want to use cue tiles or a `chartpart` control to include charts.
 
 To place a card part on a page, you add a `part` control to the hosting page and associate it with the card part page object. Here you can also define additional properties. These will only apply to the container of the card part, whose functionality is independent from the hosting page.
 
@@ -101,4 +110,4 @@ page 50102 "Customer Card"
 [Page Parts Overview](devenv-designing-parts.md)   
 [Page Object](devenv-page-object.md)   
 [Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)   
-[ListPart Pages](devenv-listpart-pages.md)   
+[ListPart Pages](devenv-listpart-page.md)   
