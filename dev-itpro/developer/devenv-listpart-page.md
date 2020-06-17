@@ -11,21 +11,20 @@ author: blrobl
 
 # ListPart pages
 
-A *ListPart* page is a type of page part used to display a list of records embedded within another page. It consists of fields and cue groups, and optionally, of an action menu. 
+A *ListPart* page is a type of page part used to display a list of records embedded within another page. It consists of a repeater, which presents the records of the source table as rows and columns. You can also define actions to operate on the list part page itself.
 
-A list part can be contained in Role Centers, in the FactBox area of other pages, in a tabular step in a Wizard and as a sub-page on a Document page. Depending on the type of the hosting page, a list part is subject to different constraints, like location and size limitations. For more information about design considerations, see [Design Considerations](devenv-designing-parts#design-considerations.md).
+A list part can be contained in Role Centers, in the FactBox area of other pages, in a tabular step in a Wizard and as a sub-page on a Document page. Depending on the type of the hosting page, a list part is subject to different design constraints, like position and size limitations. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
 
 ## Adding a list part to a page
 
-The first step is to create a list part. To do so, you create a page object and set the [PageType Property](properties/devenv-pagetype-property.md) to `ListPart`. The structure is similar to that of a `List` page, except that there is no FactBox section. For more information, see [List Page Structure](devenv-designing-list-pages.md?tabs=structure#structure-1). 
+The first step is to create a list part. To do so, you create a page object, set the [PageType Property](properties/devenv-pagetype-property.md) to `ListPart` and specify the source table. The structure is similar to that of a `List` page, except that there is no FactBox section, since part pages cannot host other parts. For more information, see [List Page Structure](devenv-designing-list-pages.md?tabs=structure#structure-1). 
 
-To include the list part on a page, you add a `part` control to the hosting page referencing the list part. Here you can also define properties and actions. These will only apply to the container of the list part, since its functionality is independent from the hosting page.
+To place the list part on a page, you add a `part` control to the hosting page and associate it with the list part page object. Here you can also define additional properties. These will only apply to the container of the list part, whose functionality is independent from the hosting page.
 
-<!--The container of the list part is functionally independent from the hosting page, such that the properties and actions defined inside the part control only apply to the container. -->
 
 ## Example
 
-The following code sample illustrates how to create a `ListPart` page, `"Pending Shipments"`, and how to integrate it in the `"Customer Card"`. 
+The following code sample illustrates how to create a `ListPart` page, `"Pending Shipments"`, and how to integrate it in the card page `"Customer Card"`. 
 
 ```
 page 50101 "Pending Shipments"
@@ -95,4 +94,6 @@ page 50102 "Customer Card"
 
 [Page Parts Overview](devenv-designing-parts.md)   
 [Designing List Pages](devenv-designing-list-pages.md)   
+[Page Object](devenv-page-object.md)   
+[Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)   
 [CardPart Pages](devenv-cardpart-pages.md)   
