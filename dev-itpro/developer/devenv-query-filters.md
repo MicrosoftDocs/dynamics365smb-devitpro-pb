@@ -89,7 +89,9 @@ ColumnFilter = String;
 
 where `String` is the filter expression.
 
-use a filter row when you want to filter the query on a field, but you don't want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you don't want to include the date in the dataset. To set up a filter row, first add a `filter` element that specifies the table field on which you want to filter, Then, add the **ColumnFilter** property to set the conditions of the filter.
+### Adding a filter row
+
+Use a filter row when you want to filter the query on a field, but you don't want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you don't want to include the date in the dataset. To set up a filter row, first add a `filter` element that specifies the table field on which you want to filter, Then, add the **ColumnFilter** property to set the conditions of the filter.
 
 ### Example
 
