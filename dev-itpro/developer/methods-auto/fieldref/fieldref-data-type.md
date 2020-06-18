@@ -2,7 +2,7 @@
 title: "FieldRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,6 +59,7 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(DateTime)](fieldref-testfield-datetime-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Time)](fieldref-testfield-time-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Variant)](fieldref-testfield-variant-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Enum)](fieldref-testfield-anyenum-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Any)](fieldref-testfield-joker-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[Relation()](fieldref-relation-method.md)|Finds the table relationship of a given field.|
 |[SetRange([Any] [, Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|
