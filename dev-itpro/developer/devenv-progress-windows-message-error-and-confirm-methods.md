@@ -1,7 +1,7 @@
 ---
 title: "Progress Windows, Message, Error, and Confirm Methods"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,8 @@ author: SusanneWindfeldPedersen
 ---
 
 # Progress Windows, Message, Error, and Confirm Methods
-You can use several specialized methods to display Messages and gather input. We recommend that you use pages to ensure that your application has a consistent user interface. However, there are situations where you may want to use the dialog methods instead of pages. The most important uses of the dialog methods are as follows:  
+
+You can use several specialized methods to display messages and gather input. We recommend that you use pages to ensure that your application has a consistent user interface. However, there are situations where you may want to use the dialog methods instead of pages. The most important uses of the dialog methods are as follows:  
 
 - To display a window that indicates the progress of some processing that may take a long time.  
 
@@ -21,20 +22,19 @@ You can use several specialized methods to display Messages and gather input. We
 
 You can also use the StrMenu method to create pages that present options to the user. It is much faster to use this method than to design a page which only presents a limited set of options to the user. For more information about the StrMenu method, see [StrMenu Method](methods-auto/dialog/dialog-StrMenu-Method.md).  
 
-## Best practices for user Messages  
- We recommend the following guidelines for writing Messages for end users:  
+## Best practices for user messages  
 
-- Write Messages correctly according to the grammatical rules for your language.  
+We recommend the following guidelines for writing messages for end users:  
 
-- When you write a Message that is similar to one in the .etx file, phrase it to be as similar to the .etx Message as possible. This will make Messages consistent throughout the system.  
+- Write messages correctly according to the grammatical rules for your language.  
 
-- Do not use backslashes to indicate line breaks in a Message. Line formatting is completed automatically. The only exception is in the [Open Method \(Dialog\)](methods-auto/dialog/dialog-Open-Method.md). You must use backslashes for the Message to be aligned correctly.  
+- Do not use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [Open Method \(Dialog\)](methods-auto/dialog/dialog-Open-Method.md). You must use backslashes for the message to be aligned correctly.  
 
 - Use the [FieldCaption Method \(Record\)](methods-auto/record/record-FieldCaption-Method.md) and [TableCaption Method \(Record\)](methods-auto/record/record-TableCaption-Method.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [Open Method \(Dialog\)](methods-auto/dialog/dialog-Open-Method.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FieldCaption method, then type the field name without any single or double quotation marks.  
 
-- Try to write all Messages on only one line. If you want to use more than one line, then start each new line after a period instead of in the middle of a sentence.  
+- Try to write all messages on only one line. If you want to use more than one line, then start each new line after a period instead of in the middle of a sentence.  
 
-- Do not enter the text directly in the AL code. Instead, enter it as a text constant so that the Message can be translated.  
+- Do not enter the text directly in the AL code. Instead, enter it as a label so that the message can be translated.  
 
 ## Creating a window to indicate progress  
 If you have an application that performs some processing that can take a long time to complete, then you should consider displaying a window that informs the user of the progress that is being made. It is always a good idea to inform the user that processes are still running.  
