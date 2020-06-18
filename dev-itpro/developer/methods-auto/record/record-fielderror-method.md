@@ -50,7 +50,7 @@ The following guidelines for error messages are recommended:
 - Describe what is wrong and how to solve the problem.  
 - Write a short descriptive message. Do not use more words than necessary.  
 - Note that a period is automatically inserted at the end of a FieldError.  
-- Use a text constant for the *Text* parameter.  
+- Use a label data type for the *Text* parameter.  
   
 <!-- For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Functions](Progress-Windows--MESSAGE--ERROR--and-CONFIRM-Functions.md).  -->
   
