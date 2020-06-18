@@ -56,11 +56,16 @@ The following guidelines for error messages are recommended:
   
 ## Example  
  
-In the first example, there is no *Text* parameter and the field does not have a value. This example requires that you create a `Record` variable for the **Customer** table named `CustomerRec`.  
+In the first example, there is no *Text* parameter and the field does not have a value.
   
 ```  
+var
+    CustomerRec: Record Customer;
+
+...
 CustomerRec."No." := '';  
 CustomerRec.FieldError("No.");  
+
 ```  
   
 The following message is displayed:  
@@ -69,9 +74,13 @@ The following message is displayed:
   
 ## Example
  
-In the next example, there is no *Text* parameter and the field has a value. This example requires that you create a `Record` variable for the **Customer** table named `CustomerRec`.  
+In the next example, there is no *Text* parameter and the field has a value.
   
-```  
+```
+var
+    CustomerRec: Record Customer;
+
+...  
 CustomerRec."No." := 'NEW 3500';  
 CustomerRec.FieldError("No.");  
 ```  
@@ -95,6 +104,11 @@ The third example uses a non-empty string as the *Text* parameter. This example 
 -->
   
 ```  
+var
+    CustomerRec: Record Customer;
+    Text001: Label 'is not valid';
+
+...
 CustomerRec."No." := 'NEW 3500';  
 CustomerRec.FIELDERROR("No.", Text001);  
 ```  
