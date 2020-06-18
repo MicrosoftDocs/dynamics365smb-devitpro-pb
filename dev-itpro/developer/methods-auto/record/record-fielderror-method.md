@@ -80,9 +80,11 @@ The following message is displayed:
   
 **No. must not be NEW 3500 in Customer No.='NEW 3500'.**  
   
-## Example  
- The third example uses a non-empty string as the *Text* parameter. This example requires that you create the following variables and text constant in the **C/AL Globals** window.  
-  
+## Example
+
+The third example uses a non-empty string as the *Text* parameter. This example requires that you create a `Record` variable named `CustomerRec` for the **Customer** table and a `Text001` text constant assigned to 
+
+<!--  
 |Variable name|DataType|Subtype|  
 |-------------------|--------------|-------------|  
 |CustomerRec|Record|Customer|  
@@ -90,16 +92,19 @@ The following message is displayed:
 |Text constant name|ConstValue|  
 |------------------------|----------------|  
 |Text001|is not valid|  
+-->
   
 ```  
 CustomerRec."No." := 'NEW 3500';  
 CustomerRec.FIELDERROR("No.", Text001);  
 ```  
   
- The following message is displayed:  
+The following message is displayed:  
   
- **No. is not valid in Customer No.='NEW 3500'.**  
+**No. is not valid in Customer No.='NEW 3500'.**  
+
 ## See Also
+
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
