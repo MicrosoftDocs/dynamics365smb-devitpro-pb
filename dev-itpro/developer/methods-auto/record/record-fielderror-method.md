@@ -91,17 +91,7 @@ The following message is displayed:
   
 ## Example
 
-The third example uses a non-empty string as the *Text* parameter. This example requires that you create a `Record` variable named `CustomerRec` for the **Customer** table and a `Text001` text constant assigned to 
-
-<!--  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|CustomerRec|Record|Customer|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text001|is not valid|  
--->
+The third example uses a non-empty string as the *Text* parameter.
   
 ```  
 var
@@ -110,7 +100,7 @@ var
 
 ...
 CustomerRec."No." := 'NEW 3500';  
-CustomerRec.FIELDERROR("No.", Text001);  
+CustomerRec.FieldError("No.", Text001);  
 ```  
   
 The following message is displayed:  
