@@ -33,9 +33,7 @@ Specifies what to do if the table is already locked. If this parameter is true a
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, the version of the Record will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
 
-## Remarks
 
-The default value for *Wait* is `true`. The default value for *VersionCheck* is `false`. For example, `Record.LockTable(true, false)`.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
