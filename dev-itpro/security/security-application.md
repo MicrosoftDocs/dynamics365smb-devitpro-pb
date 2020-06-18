@@ -29,7 +29,9 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 
 [Authentication and Credential Types](../administration/users-credential-types.md)
 
-[Multi-factor Authentication](multifactor-authentication.md)
+[Multi-factor Authentication](multifactor-authentication.md)  
+
+The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
  
 ## Authorization
 
