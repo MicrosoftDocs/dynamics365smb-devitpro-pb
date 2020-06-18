@@ -54,7 +54,7 @@ The following guidelines for error messages are recommended:
   
 <!-- For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Functions](Progress-Windows--MESSAGE--ERROR--and-CONFIRM-Functions.md).  -->
   
-## Example  
+### Example 1
  
 In the first example, there is no *Text* parameter and the field does not have a value.
   
@@ -72,7 +72,7 @@ The following message is displayed:
   
 **You must specify No. in Customer No.=''.**  
   
-## Example
+### Example 2
  
 In the next example, there is no *Text* parameter and the field has a value.
   
@@ -89,7 +89,7 @@ The following message is displayed:
   
 **No. must not be NEW 3500 in Customer No.='NEW 3500'.**  
   
-## Example
+### Example 3
 
 The third example uses a non-empty string as the *Text* parameter.
   
