@@ -23,6 +23,19 @@ Represents the emission scope of the telemetry signal.
 |All|Emit telemetry to extension publisher's and partner's telemetry account .|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Examples
+
+```
+if not FileManagement.ServerFileExists(ServerFile) then begin
+            LogInternalError(SomethingWentWrongErr, DataClassification::SystemMetadata, Verbosity::Error);
+```
+
+```
+if not XmlDocument.ReadFrom('<?xml version="1.0" encoding="UTF-8"?>' + '<Elster xmlns="' + XmlNameSpace + '"></Elster>', XmlSubDoc) then
+            LogInternalError(XMLDocHasNotBeenCreatedErr, DataClassification::SystemMetadata, Verbosity::Error);
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
