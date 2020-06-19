@@ -3,13 +3,14 @@ title: "API Query Type"
 description: "Description of the API query type used for exposing and viewing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/19/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # API Query Type
+
 Queries of the type `API` are used to generate web service endpoints and this type of page cannot be displayed in the user interface. A query of the API type can be used to join data from different data sources. The data can only be viewed. When creating this query type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tquery - Query of type API` to get the right template and the list of these properties automatically filled in.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
