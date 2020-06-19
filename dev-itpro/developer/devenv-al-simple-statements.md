@@ -91,7 +91,7 @@ This example requires the following variables.
 var
     InvalidDate : Date;
     InvalidDateErrorMessage : Text; 
-    Text001 : TextConst 'The date is outside the valid date range.';
+    Text001 : Label 'The date is outside the valid date range.';
 ```  
 
 ## With statements

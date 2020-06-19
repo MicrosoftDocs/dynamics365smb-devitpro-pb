@@ -65,7 +65,7 @@ The following example gets the record that has the SystemId `5286305A-08A3-E911-
 ```
 var
     Customer: Record Customer;
-    Text000: TextConst ENU = 'Customer was found.';
+    Text000: Label 'Customer was found.';
 begin
     If Customer.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
     Message(Text000);

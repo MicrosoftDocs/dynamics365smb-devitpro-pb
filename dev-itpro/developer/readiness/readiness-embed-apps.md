@@ -10,11 +10,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Embed Apps
 ## What is an Embed app?
+
 An Embed app defines a customer scenario. Specifically, the scenario of a customer wishing to acquire an end-to-end solution meeting the specific needs of an industry vertical or a micro-vertical.
 
 An Embed App is therefore the term for what is being provided to a given customer segment, unrelated to how the solution is being implemented or architected. 
@@ -29,6 +29,7 @@ INSERT VIDEO:
 New video that needs to be created -->
 
 ## How do I create an Embed app? 
+
 Technically and architecturally an Embed app can be constructed and composed by combining a few approaches such as: 
 - Creating your own extensions and customizations to [!INCLUDE[d365fin_long](../includes/d365_bus_central_md.md)].
 - Leveraging other services components from Microsoft; for example, PowerBI, Power Automate, Power Apps, Office 365, Azure services, and more.   
@@ -39,6 +40,7 @@ Being able to customize the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_
 
 
 ## What if I already have a vertical solution created for Dynamics NAV? 
+
 [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] represent the next exciting chapter of Dynamics NAV. To bring you existing Dynamics NAV vertical solution into the cloud and onto [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] you have two overall options:
 
 - *Refactor* your existing solution to use Extensions version 2.0 and the AL program language using the modern development tools and Visual Studio Code. 
