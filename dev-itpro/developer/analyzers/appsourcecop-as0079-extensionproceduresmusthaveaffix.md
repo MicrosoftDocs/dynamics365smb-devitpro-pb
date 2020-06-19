@@ -1,5 +1,5 @@
 ---
-title: "A procedure belonging to the public API cannot be removed"
+title: "An affix is required for procedures defined in extension objects."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/19/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0018
-A procedure belonging to the public API cannot be removed  
+# AppSourceCop Rule AS0079
+An affix is required for procedures defined in extension objects.  
 
 ## Description
-A procedure that belongs to the public API cannot be removed, because it will break dependent extensions calling this procedure.
+An affix is required for procedures defined in extension objects, because it prevents breaking dependent extensions that reference it in case a procedure with the same signature is introduced by the base object or by another extension.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
