@@ -383,6 +383,12 @@
 ### Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
+#### [Essential AL Methods](developer/devenv-essential-al-methods.md)
+#### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
+#### [Creating Handler Methods](developer/devenv-creating-handler-methods.md)
+#### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
+#### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
 #### [Action Option Type](developer/methods-auto/action/action-option.md)
