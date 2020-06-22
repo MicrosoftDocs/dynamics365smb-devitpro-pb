@@ -548,3 +548,4 @@ var
 
 [Programming in AL](devenv-programming-in-al.md)  
 [AL Simple Statements](devenv-al-simple-statemnents.md)  
+[AL Essential Methods](devenv-essential-al-methods.md)
