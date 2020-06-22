@@ -160,6 +160,6 @@ else
 ## See Also
 
 [Development Overview](devenv-dev-overview.md)  
-[AL Methods](methods-auto/library.md)
+[AL Methods](methods-auto/library.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)  
 [AL Control Statements](devenv-al-control-statements.md)
