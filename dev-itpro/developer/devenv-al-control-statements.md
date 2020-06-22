@@ -16,9 +16,10 @@ author: SusanneWindfeldPedersen
 AL code consists of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  
-- Compound Statements
-- Conditional Statements
-- Repetitive Statements
+
+- [AL Compound Statements](devenv-al-control-statements.md#al-compound-statements)
+- [AL Conditional Statements](devenv-al-control-statements.md#al-conditional-statements)
+- [AL Repetitive Statements](devenv-al-control-statements.md#al-repetitive-statements)
 
 > [!NOTE]  
 > In the following sections conventions for how to structure and align AL code are presented to introduce best practices. In many cases the structure is not necessary to get the code to compile, but rather to improve readability.
