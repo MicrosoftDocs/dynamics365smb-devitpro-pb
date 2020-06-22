@@ -12,9 +12,9 @@ author: SusanneWindfeldPedersen
 
 # AL methods
 
-Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be executed, or *called*, from the same object in which they are declared or from other parts of the application. 
+Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application. 
 
-There are two types of methods: system methods and user-defined (custom) methods.
+There are two types of methods: system methods (built-in) and user-defined (custom) methods.
 
 - Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md).
 
@@ -47,6 +47,7 @@ To declare a local method, start the declaration with `local`:
 ```
 local procedure Mymethod();
 ```
+
 To declare a global method, *omit* `local`:
 
 ```
@@ -54,19 +55,22 @@ To declare a global method, *omit* `local`:
 ```
 
 ### Parameters (optional)
-A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the
-method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by commas. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
+
+A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by commas. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
+
 ```
  procedure  Mymethod(MyCustomer : Record Customer;var MyDimension : ARRAY [2] OF Boolean)
 ```
 
 ### Return values (optional)
-A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type (For example, if the return value is a Text DataType, the text might have a length of 50).
+
+A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type. For example, if the return value is a Text DataType, the text might have a length of 50.
 
 ## <a name="Callmethod"></a>Calling methods
-You can execute, or call, a built-in or a custom method by using its name in a method call statement. When a method is called the current application sequence is suspended and the code on the method is run. When the method code is completed, the application code sequence returns to where the method was called from. How the method is called determines what happens when it returns.
+
+You can run, or call, a built-in or a custom method by using its name in a method call statement. When a method is called the current application sequence is suspended and the code on the method is run. When the method code is completed, the application code sequence returns to where the method was called from. How the method is called determines what happens when it returns.
 
 A method can be used as part of an expression. For example, the following code uses a
 method named `CalculatePrice` as an expression:
