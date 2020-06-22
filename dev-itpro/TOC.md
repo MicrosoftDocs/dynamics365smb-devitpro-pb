@@ -82,6 +82,7 @@
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+### [Event IDs](administration/telemetry-event-ids.md)
 ## Administration Center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
