@@ -93,11 +93,12 @@ Ok := Dialog.Confirm(String [, Default] [, Value1] ,...);
 The following example shows how to use the Confirm method.  
 
 ```  
-if Confirm('Do you want to post the journal lines and print report %1?',False, ReportID) then  
-   Message('Posting')  
-else  
-   Message('No Posting');  
-   exit;  
+if Confirm('Do you want to post the journal lines and print report %1?', False, ReportID) then
+    Message('Posting')
+else begin
+    Message('No Posting');
+    exit;
+end;
 ```  
 
 The False parameter in the Confirm statement means that No is the default.
