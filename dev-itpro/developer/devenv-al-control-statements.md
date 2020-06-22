@@ -545,4 +545,6 @@ var
 ```
 
 ## See Also
-[Programming in AL](devenv-programming-in-al.md)
+
+[Programming in AL](devenv-programming-in-al.md)  
+[AL Simple Statements](devenv-al-simple-statemnents.md)  
