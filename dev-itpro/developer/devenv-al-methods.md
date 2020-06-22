@@ -78,6 +78,7 @@ method named `CalculatePrice` as an expression:
 ```
 TotalCost := Quantity * CalculatePrice;
 ```
+
 In this case, the `CalculatePrice` method must return a value that is used in evaluating the expression. This return value is then multiplied by the Quantity variable and that result is assigned to the TotalCost variable.
 
 A method can also be run by using a method call statement. This statement only calls the method and does not return any value. The following is an example of calling a method named `MyRunMethod`:
@@ -90,6 +91,7 @@ MyRunMethod;
 The `MyRunMethod` returns no data back to the calling code.
 
 ### <a name="Parameters"></a> parameters  
+
 In a method call, the parameters are separated by commas, and the optional parameters may be omitted starting from the right. For example, this means that if a method has three optional parameters, then you cannot omit the second parameter without omitting the third parameter.  
   
 You can specify that a parameter is passed to a method by value or by reference.  
@@ -99,6 +101,7 @@ You can specify that a parameter is passed to a method by value or by reference.
 - If a parameter is passed by reference, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
 
 ## Example 1  
+
 The following shows the syntax for a method. The first example shows a method with two mandatory parameters.
 
 ```
@@ -117,6 +120,7 @@ method(Optional1, Optional2)
 ```
   
 ## Example 2  
+
 ABS is an example of an AL method that has a fixed number of parameters (1).  
   
 ```  
@@ -125,15 +129,17 @@ PositiveValue := ABS(Value); //Calculate the positive value 1033
 ```  
   
 ## Example 3  
- The method DMY2DATE is an example of a method that can be called by using a variable number of parameters.  
+
+The method `DMY2DATE` is an example of a method that can be called by using a variable number of parameters.  
   
 ```  
 NewDate := DMY2DATE(5, 11, 1992); //Returns the date November 5, 1992  
 ```  
   
- Depending on the use of the DMY2DATE method, 1, 2, or 3 parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default.  
+Depending on the use of the `DMY2DATE` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default.  
   
 ## Example 4  
+
 You can assign the return value of a method to a variable.  
   
 ```  
@@ -141,6 +147,7 @@ ReturnVal := MyMethod(Param1);
 ```  
   
 ### Example 5  
+
 In this example, `MyMethod` returns a Boolean value. You can use the return value in a conditional statement.  
   
 ```  
@@ -151,4 +158,8 @@ else
 ```
 
 ## See Also
+
 [Development Overview](devenv-dev-overview.md)  
+[AL Methods](methods-auto/library.md)
+[AL Simple Statements](devenv-al-simple-statements.md)  
+[AL Control Statements](devenv-al-control-statements.md)
