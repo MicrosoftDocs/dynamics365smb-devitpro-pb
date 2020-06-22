@@ -26,6 +26,7 @@ The following table lists the updates that have been released for 2020 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4549686](https://support.microsoft.com/help/4564072)|Update 16.2 |June 2020|Application Build 16.2</br>Platform Build 16.2|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4549686](https://support.microsoft.com/help/4549686)|Update 16.1 |May 2020|Application Build 16.1</br>Platform Build 16.1|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 
 

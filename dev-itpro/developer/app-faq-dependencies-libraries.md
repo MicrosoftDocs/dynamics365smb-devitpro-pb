@@ -3,7 +3,7 @@ title: "FAQ about Library & Dependency Apps in Business Central"
 description: "Get answers to some of your questions about library apps and dependency apps in Dynamics 365 Business Central"
 author: rweigel
 ms.custom: na
-ms.date: 04/23/2020
+ms.date: 06/10/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -33,6 +33,9 @@ Yes. Just make sure you list all library apps as dependencies within the AppSour
 ## When I get the latest updated version of my app, why don't I get the updated library/dependency apps that my AppSource app depends on?
 
 Currently, updating of apps does not handle the library/dependency chain. This work is planned for a future release. For now, you need to uninstall and reinstall the library/dependency apps as well.
+
+## What are the validation requirements for library apps
+Library apps only get validated technically, but don't go through any type of marketing validation. Also, the library apps are expected to be covered by the user scenarios and tests that you submit for the core app. The technical requirements are described [here](devenv-checklist-submission.md).  
 
 ## See also
 

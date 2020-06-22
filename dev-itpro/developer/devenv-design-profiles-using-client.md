@@ -23,7 +23,7 @@ Besides creating profiles and page customizations by writing AL code, you can us
 For detailed instructions on how to use the client to create and modify profiles, see the following articles in the Business Central application help:
 
 - [Create Profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile)
-- [Design customization Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
+- [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
 
 A consequence of using the client is that profile changes apply only to the tenant. Extension-based profiles and customizations, by contrast, are available for all tenants. However, the client lets you export user-created profiles and page customizations from a tenant, then import them on another tenant.
 

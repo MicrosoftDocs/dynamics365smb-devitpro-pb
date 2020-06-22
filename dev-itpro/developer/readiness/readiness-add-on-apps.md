@@ -10,21 +10,22 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Add-On Apps
 
 ## What is an Add-on app? 
+
 An Add-on app extends the experience and the existing functionality of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. Add-on apps can be used in multiple scenarios, whether it is to integrate to online services, making custom web services, adding business functionality, or extending the user interface. 
 
-Add-on apps are developed using Extensions version 2.0 and the modern development tools based on Visual Studio Code. Add-on apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
+Add-on apps are developed using extensions and the modern development tools based on Visual Studio Code. Add-on apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
 <!-- INSERT VIDEO: 
 Objective: Introducing add on apps (modern tools, integration points, rich base, “easy to publish”) 
 New video that needs to be created -->
 
 ### Examples of some of the current Add-on apps on AppSource are:  
+
 - [Shopify Connector from Scapta](https://appsource.microsoft.com/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview)  
     - This Add-on app adds [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to webshops, generally useful for companies selling items or services.
     - Shopify is a complete e-commerce solution that allows companies to set up an online store to sell their goods combined with the business process flows of the cutting edge ERP-system Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
@@ -61,6 +62,7 @@ HDI - V9: Connect to webservices in an extension DONE -->
 - [How do I upgrade logic to an extension?](https://youtu.be/hm7mCGp7qug)
 
 ## How do I get my Add-on app published in Microsoft AppSource? 
+
 To ease your journey, from the initial idea submission to the final publication, we have created a page that you can lean on throughout the process of bringing your app to AppSource. Please have a look at [Getting You Started with Building Apps](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-add-on-apps-getting-you-started)
 
 

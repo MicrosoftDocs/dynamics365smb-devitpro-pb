@@ -97,7 +97,7 @@ For more information about testing on older Chrome versions, see [https://docs.m
 
 In Chrome 80 Beta or older Chrome versions where **Cookies without SameSite must be secure** (`chrome://flags/#cookies-without-same-site-must-be-secure`) is **Enabled**, the web client will not load when using HTTP protocol. A fix for this issue will be included in the January 2020 updates. For now, the workaround is to either switch to HTTPS or set `chrome://flags/#cookies-without-same-site-must-be-secure` to **Disabled**.
 
-### Frequently Asked Questions
+### FAQ
 
 **Is access from mobile apps affected?**  
 In the short-term, the Dynamics NAV or [!INCLUDE[prodshort](../includes/prodshort.md)] store apps for tablet and phone should not be affected. However, there is evidence from each of the major browsers that their new security policies will eventually also roll out to the technology which our mobile apps rely on. We recommend you minimize risk and take action as outlined in this article.

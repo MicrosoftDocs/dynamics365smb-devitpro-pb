@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2020
+ms.date: 06/03/2020
 ms.author: edupont
 ---
 
@@ -34,6 +34,8 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 1. Fork the right repo
 
     You cannot work directly in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo. The first thing you need to do is create a fork of the repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
+
+    Alternatively, you can *clone* the Microsoft repo. This is useful if you don't intend to customize Microsoft's content, for example. But in many cases, *forking* the repo is more preferable.  
 
     For more information, see [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
 
@@ -64,7 +66,7 @@ Internally at Microsoft, some authors use Code, others use Atom, and for light-w
 
 ### What the GitHub repos contain
 
-Microsoft's GitHub repos for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help contain the following folders:
+Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help contain the following folders:
 
 - accountant
 
@@ -81,8 +83,10 @@ Microsoft's GitHub repos for [!INCLUDE [prodshort](../developer/includes/prodsho
 
 The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the Docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
 
-> [!NOTE]
-> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media contain CAB files for Help Server. However, you can always get newer content from the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, you can get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
+> [!TIP]
+> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media still contain CAB files for Help Server. However, you can always get newer content from the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, you can get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
+
+The article that you are reading right now is also based on a source file in a GitHub repo, but it's not the dynamics365smb-docs repo. If you want to contribute to the developer and administration content, this is the repo to fork (or clone): `https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb`
 
 ### Get updates from Microsoft
 
@@ -209,7 +213,9 @@ The files are generated as .html files and stored in the specified output.
 > [!IMPORTANT]
 > Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com](https://docs.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
-The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the Docs.microsoft.com site but have been deprecated later. As part of standard website practices, the Docs.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the  `.openpublishing.redirection.json` file provides the mapping for redirection.  
+Originally, the table of contents on the docs.microsoft.com site was based on a MarkDown file, TOC.md. But we are about to convert that into a YAML file in order to be more compliant with the docs.microsoft.com site. Once we convert the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format. Alternatively, do your customizations in HTML, and then it will not matter if the Microsoft source is in MarkDown or YAML format.  
+
+The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the Docs.microsoft.com site but have been deprecated later. As part of standard website practices, the Docs.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the `.openpublishing.redirection.json` file provides the mapping for redirection.  
 
 For inspiration for how to build your own help website, see [How-to: Customize DFM Engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html) in the DocFx user manual and the [Azure App Service](/azure/app-service/) documentation.
 

@@ -749,7 +749,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
 { 
     var 
         DummySuccessResponseTxt: Label '{"ActivationResponse": "Success"}', Locked = true; 
-        NoRewardlevelTxt: TextConst ENU = 'NONE'; 
+        NoRewardlevelTxt: Label 'NONE'; 
 
     // Determines if the extension is activated 
     procedure IsCustomerRewardsActivated(): Boolean; 

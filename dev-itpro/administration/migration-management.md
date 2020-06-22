@@ -46,6 +46,6 @@ The following table describes the actions that you can run from the page:
 
 ## See also
 
-[Frequently Asked Questions about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
+[FAQ about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
 [Running the Cloud Migration Tool](migration-tool.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  

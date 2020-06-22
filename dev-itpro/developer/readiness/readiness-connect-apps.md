@@ -10,12 +10,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Connect Apps
 
 ## What is a Connect app?
+
 A Connect app can be used in the scenario where there must be established a point-to-point connection between [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and a 3rd party solution or service.
 
 Online service offerings like payroll, expense management, web-shops, project planning etc. typically have many connection points. Connect apps allow you to make connections between these online service offerings and your business solution. This connection can be achieved on a data level without needing to do development. Therefore, by reusing these connection points Connect apps provides you with the opportunity to reuse your investments from REST integrations with other Cloud Services.  
@@ -36,6 +36,7 @@ Optionally, you can add a custom interface in [!INCLUDE[d365_bus_central_md](../
     - ADP Workforce Now helps eliminate tedious administrative tasks and inefficiencies by incorporating people data and leveraging real time information that can help you manage finance issues.  Simplify and streamline the way you do business. Features include: General Ledger Data Integration, Employee Data Integration and more!
 
 ## How do I develop a Connect app?
+
 Connect apps are typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. Therefore, you can use your favorite REST API client to start exploring the APIs.
 
 As of now [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers 44 standard APIs that you can call from within your preferred coding language and can start using immediately. More will be added over time. 
@@ -49,12 +50,14 @@ To ease the development phase of Connect apps we have created a video series to 
 - [How do I connect to web services in an extension](https://www.youtube.com/watch?v=hNuC8V9T1tU&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s&index=31)
 
 ## Publishing your Connect app to Microsoft AppSource
+
 To ease your journey, from the initial listing to the final publication of your Connect app on AppSource, we have created two white papers that outline a step-by-step guideline that you need to follow to bring your [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers to AppSource smoothly. We recommend that you check off each of the 4 consecutive steps in the two white papers as you progress. We highly recommend that you lean on the guidelines in these white papers to support you throughout the process of publishing your app to AppSource:
 
 - [Getting you started with Microsoft Dynamics 365 Business Central Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501)
 - [Developing and publishing your Microsoft Dynamics 365 Business Central Connect App to AppSource](https://go.microsoft.com/fwlink/?linkid=2005402)
 
 ## Where do I learn more about Connect apps? 
+
 To learn more about how to develop Connect apps, select the following links:  
 
 1. [Documentation on REST APIs](/dynamics-nav/api-reference/v1.0/)  

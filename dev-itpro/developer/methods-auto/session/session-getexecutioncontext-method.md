@@ -2,7 +2,7 @@
 title: "GetExecutionContext Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,6 +34,10 @@ The current session's execution context.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+For an example of when and how to run the `GetExecutionContext` method, see [Protecting sensitive code from running during upgrade](../../devenv-upgrading-extensions.md#protecting-sensitive-code-from-running-during-upgrade).
+
 ## See Also
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

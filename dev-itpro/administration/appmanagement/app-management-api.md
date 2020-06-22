@@ -178,6 +178,11 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/AT
+
+{
+    "countryCode": "AT"
+}
+
 ```
 
 #### Example Response
@@ -319,11 +324,15 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
 
 {
-    "roles": [
-        "Reader"
-    ]
+    "aadTenantId":  "20ba9ed9-d37b-4db0-ade4-f64322ad7c02",
+    "Type":  "User",
+    "roles":  [
+                  "Reader"
+              ]
 }
 ```
+
+When using `Type:"Application"`, the `aadTenantId` must not be used.
 
 #### Example Response
 

@@ -10,13 +10,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Development of a Horizontal Solution
+
 If you like to enhance the capabilities of the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Core capability and its experience, then there are several reasons why you would want to choose [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]: 
 
-- Enrich the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]  experience.
+- Enrich the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] experience.
 - Reach more customers by selling your app on Microsoft AppSource.
 - [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] provides a proven ERP platform and application for your Add-on apps. 
  
@@ -27,10 +27,11 @@ As an app builder, your paths forward can be:
 Learn more details on how you can build a Business Central offering in the **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
 
 ## See Also
+
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
 [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
-[Development of a Localization Solution](readiness-develop-localization.md)   
+[Development of a Localization Solution](readiness-develop-localization.md)  
 [Resell Different Solutions](readiness-reseller.md)  

@@ -14,7 +14,7 @@ ms.author: v-liober
 
 | Lead Management      | Description  | Requirements |
 |----------------------|--------------|--------------|
-| 21. **Lead destination** | Select the system (from the dropdown menu) where your leads will be stored. Learn how to [connect your CRM system here.](https://cloudpartner.azure.com/#documentation/get-customer-leads/how-to-connect-your-crm-system-with-the-cloud-partner-portal) | Recommended  |
+| 21. **Lead destination** | Select the system (from the dropdown menu) where your leads will be stored. | Recommended  |
 
 Choose which contact options that you want to include
 - None
@@ -25,7 +25,7 @@ Choose which contact options that you want to include
 - SalesForce
 
 > [!TIP]  
-> *Example:* of the completed screenshot fields (cf. point 21) in the "Customer Support" section of the Cloud partner portal:
+> *Example:* of the completed screenshot fields (cf. point 21) in the "Customer Support" section of Partner Center:
 
 ## <a name="Localization"></a>Localization Apps
 

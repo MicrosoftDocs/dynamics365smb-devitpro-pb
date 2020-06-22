@@ -3,7 +3,7 @@ title: "Table Object"
 description: "Description of the table object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/28/2020
+ms.date: 06/11/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,7 @@ ms.author: solsen
 --- 
 
 # Table Object
+
 Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Regardless of how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
 The structure of a table has four sections. The first block contains metadata for the overall table; the table type. The fields section describes the data elements that make up the table; their name and the type of data they can store. The keys section contains the definitions of the keys that the table needs to support. The final section details the triggers and code that can run on the table.
@@ -33,12 +34,13 @@ Typing the shortcut `ttable` will create the basic layout for a table object whe
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Table example
-This table stores address information and it has four fields; Address, Locality, Town/City, and County.
+
+This table stores address information and it has four fields; `Address`, `Locality`, `Town/City`, and `County`.
 
 ```
 table 50104 Address
 {
-    caption = 'Sample table';
+    Caption = 'Sample table';
     DataPerCompany = true;
 
     fields
@@ -75,7 +77,7 @@ table 50104 Address
     }
 
     var
-        Msg: TextConst = 'Hello from my method';
+        Msg: Label 'Hello from my method';
 
     trigger OnInsert();
     begin
@@ -131,7 +133,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 - The [TableRelation](properties/devenv-tablerelation-property.md) lets you use the **SystemId** field to set up table relationships:
 
     ```
-    field(1; MyField; Integer)
+    field(1; MyField; Guid)
     {
         DataClassification = ToBeClassified;
         TableRelation = Customer.SystemId;
