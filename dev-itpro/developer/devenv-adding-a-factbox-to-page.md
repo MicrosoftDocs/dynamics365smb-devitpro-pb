@@ -127,7 +127,8 @@ page 50101 "Simple Customerlist Page"
 }
 ```
 
-## See Also  
+## See Also 
+ 
 [Pages Overview](devenv-pages-overview.md)   
 [Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
