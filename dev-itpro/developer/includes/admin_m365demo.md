@@ -1,4 +1,13 @@
-1. Log in to [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) using your partner account.
+1. ---
+author: dmc-dk
+
+ms.service: dynamics365-business-central
+ms.topic: include
+ms.reviewer: edupont
+ms.date: 06/26/2020
+ms.author: dmitrych
+---
+Log in to [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) using your partner account.
 2. Choose the **My Environments** tab, and then, under **My tenants**, choose the **Create Tenant** button.
 3. As the type, choose **Quick Tenant**.
 4. As the period, choose either a quarter or a full year.
@@ -14,7 +23,7 @@
 
 7. In an in-private browser window, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and log in with the administrator account that you just created, typically called something like admin@CRMbc123456.onmicrosoft.com.
 
-    If you chose another content pack, you must use the administrator account to sign up for a standard trial by clicking on **Get started** on [https://dynamics.microsoft.com/en-us/business-central/](https://dynamics.microsoft.com/en-us/business-central/). The **Dynamics 365 Business Central** content pack gives you a more integrated experience with Office 365, but otherwise the trial experience is the same.
+    If you chose another content pack, you must use the administrator account to sign up for a standard trial by choosing the **Get started** button on the [https://dynamics.microsoft.com/en-us/business-central/](https://dynamics.microsoft.com/en-us/business-central/) page. The **Dynamics 365 Business Central** content pack gives you a more integrated experience with Office 365, but otherwise the trial experience is the same.
 
 This gives you a [!INCLUDE [prodshort](prodshort.md)] environment with two companies:
 
