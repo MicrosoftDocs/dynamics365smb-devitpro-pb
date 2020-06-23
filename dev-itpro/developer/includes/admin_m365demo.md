@@ -14,7 +14,7 @@
 
 7. In an in-private browser window, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and log in with the administrator account that you just created, typically called something like admin@CRMbc123456.onmicrosoft.com.
 
-    If you chose another content pack, you must use the administrator account to sign up for a standard trial at [https://businesscentral.dynamics.com/?redirectedFromSignup=1](https://businesscentral.dynamics.com/?redirectedFromSignup=1). The **Dynamics 365 Business Central** content pack gives you a more integrated experience with Office 365, but otherwise the trial experience is the same.
+    If you chose another content pack, you must use the administrator account to sign up for a standard trial by clicking on **Get started** on [https://dynamics.microsoft.com/en-us/business-central/](https://dynamics.microsoft.com/en-us/business-central/). The **Dynamics 365 Business Central** content pack gives you a more integrated experience with Office 365, but otherwise the trial experience is the same.
 
 This gives you a [!INCLUDE [prodshort](prodshort.md)] environment with two companies:
 
