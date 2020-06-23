@@ -99,6 +99,9 @@ In this step, you create another version of the releasing extension **Ext X**. T
 3. Add a table object for **TableC** and field definition for **C-1** that matches the definitions in the original **TableC** object of the releasing extension.
 3. In the app.json file, increase the `version` value.
 4. Compile the extension package.
+5. Make a note of the `ID` of the extension. You'll use this ID in the next task.
+
+    For purposes of the example, the ID is `77777777-eeee-8888-ffff-999999999999`. The value for your extension will be different.
 
 ## Create new empty version of transition extension (Ext Z v2)
 
@@ -110,7 +113,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
     { 
     "apprules": [ 
         { 
-            "id": "11111111-aaaa-2222-bbbb-333333333333"
+            "id": "77777777-eeee-8888-ffff-999999999999"
         }
         { 
             "id": "44444444-cccc-5555-dddd-666666666666"
