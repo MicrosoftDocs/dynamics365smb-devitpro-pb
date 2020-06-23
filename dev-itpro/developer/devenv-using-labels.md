@@ -48,10 +48,30 @@ Caption = 'Developer translation for %1',  Comment = '%1 is extension name', loc
 ```
 
 ### Report labels
+
+Report labels are used for RDLC and Word report layouts and can be set as a caption for a field, a title for a chart, or a title for the report, amongst others. Report labels are defined inside the `labels` control of a Report Object, as shown in the following example.
+
+```
+labels
+{
+  LabelName1 = 'Label Text1', Comment='Foo', MaxLength=999, Locked=true;
+  LabelName2 = 'Label Text2', Comment='Foo', MaxLength=999, Locked=true;
+} 
+```
+
 ### Label Data Type
 
-- CodeCop rule for sufix and prefix
+The [Label Data Type](methods-auto/label/label-data-type.md) also uses the label syntax. It is a variable used to define error messages, questions, captions, tokens or text constants displayed to the user. The following code sample illustrates how to use the **Label** data type.
 
+```
+var
+    a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
+```
+
+The Label variable names should have an approved suffix. For more information, see [CodeCop Rule AA0074](analyzers/codecop-aa0074-textconstlabelvariablenamesshouldhaveapprovedsuffix.md).
 
 
 ## See Also
+[Working with Translation Files](devenv-work-with-translation-files.md)  
+[Label Data Type](methods-auto/label/label-data-type.md)   
+[Report Layouts](devenv-report-design-overview.md#report-layouts)
