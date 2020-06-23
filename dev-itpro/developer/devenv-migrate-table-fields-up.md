@@ -54,7 +54,7 @@ The transition extension will contain replicas of all table object definitions i
 
 3. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`.
+    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`. The value for your extension will be different.
 
 ## Create empty version of releasing extension (Ext X v2)
 
@@ -88,7 +88,7 @@ You now create a new extension that contains the customization you want to move 
 5. Compile the extension package.
 6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`.
+    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`. The value for your extension will be different. 
 
 ## Create final version of releasing extension (Ext X v3)
 
@@ -149,10 +149,11 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 
        Synchronize **Ext Z v2** last. When you synchronize **Ext Z v2**, ownership of the tables is transferred from **Ext Z** to **Ext X** and **Ext Y**.
       
-5. Install the new receiving extension **Ext Y v1**.
 6. Run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) on the new releasing extension version**Ext X v3**.
 
     This step basically installs the new extension version. You run a data upgrade because an earlier version has been installed and is still published.
+
+5. Install the new receiving extension **Ext Y v1**.
 
 7. Unpublish both versions of **Ext Z**.
 
