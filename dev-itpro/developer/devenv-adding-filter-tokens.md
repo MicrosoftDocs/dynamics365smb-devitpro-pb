@@ -1,5 +1,5 @@
 ---
-title: "Adding custom filter tokens"
+title: "Adding Custom Filter Tokens"
 ms.custom: na
 ms.date: 04/28/2020
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: mikebcMSFT
 ---
 
-# Adding Filter Tokens
+# Adding Custom Filter Tokens
 
 In the client, when filtering lists using the filter pane, users can enter filter tokens, which are special words that resolve to one or more values. This powerful feature makes filtering easier by reducing the need to navigate to other pages to look up values to enter as filter criteria.
 
