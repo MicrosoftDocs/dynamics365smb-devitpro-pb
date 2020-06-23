@@ -66,6 +66,7 @@ For more information, see [Business Central BCTech repository on GitHub](https:/
 
 ## See also
 
+[Telemetry Event IDs](telemetry-event-ids.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

@@ -1,7 +1,7 @@
 ---
 title: "AL Simple Statements"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -95,6 +95,10 @@ var
 ```  
 
 ## With statements
+
+> [!IMPORTANT]  
+> Using the `with` statement will be deprecated and removed for cloud development in a future release. With the next release this will be a warning, which will become an error in a future release.
+
 The following syntax shows a with-do statement.  
 
 ```  
@@ -108,7 +112,7 @@ When you work with records, addressing is created as record name, dot (period), 
 
 If you work continuously with the same record, then you can use `with` statements. When you use a `with` statement, you can only specify the record name one time.  
 
-Within the scope of <*Statement*>, fields in *Record*> can be addressed without having to specify the record name.  
+Within the scope of <*Statement*>, fields in <*Record*> can be addressed without having to specify the record name.  
 
 You can nest several `with` statements. If you have identical names, then the inner `with` statement overrules the outer `with` statement.  
 
@@ -177,5 +181,7 @@ end;
 ```  
 
 ## See Also
+
 [Control Statements](devenv-al-control-statements.md)  
 [Methods](devenv-al-methods.md)  
+[AL Essential Methods](devenv-essential-al-methods.md)

@@ -369,7 +369,13 @@ In this task, you'll publish the platform symbols and the extensions configured 
     - **Base Application** extension
     - Customization extensions (if any).
 
-    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter. 
+    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
+
+3. Restart the server instance.
+
+    ```powershell
+    Restart-NAVServerInstance -ServerInstance <server instance name>
+    ```
 
 ## Task 10: Synchronize tenant
 
