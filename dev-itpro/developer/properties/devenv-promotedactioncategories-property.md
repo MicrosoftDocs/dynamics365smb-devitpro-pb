@@ -19,6 +19,19 @@ Sets a category for a promoted action.
   
 - Pages
 
+## Parameters
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the PromotedActionCategories is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the PromotedActionCategories, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific PromotedActionCategories.
+
 ## Syntax
 ```
 PromotedActionCategories = 'New caption, Process caption, Report caption, Category4 caption';

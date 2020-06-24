@@ -24,6 +24,19 @@ Sets the text used for instructions in the UI.
 
 -   PageGroup
 
+## Parameters
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the InstructionalText is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the InstructionalText, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific InstructionalText.
+
 ## Remarks
 
 The default is an empty string, which means there will be no instructions. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply instructional text to setup guides and similar pages.  
