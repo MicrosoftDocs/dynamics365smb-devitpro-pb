@@ -249,10 +249,10 @@
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 #### Page Parts
 ##### [Parts Overview](developer/devenv-designing-parts.md)
-<!-- reenable when topics have been written
 ##### [Designing List Parts](developer/devenv-designing-listparts.md)
 ##### [Designing Card Parts](developer/devenv-designing-cardparts.md)
 ##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+<!-- reenable when topics have been written
 ##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) -->
 ##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 ### Fields
