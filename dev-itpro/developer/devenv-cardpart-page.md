@@ -13,7 +13,7 @@ author: blrobl
 
 A *CardPart* page is a type of page part embedded within another page used to display additional data relevant to the page that hosts it. It can display the data in the form of almost any page control, such as fields, cue tiles, charts, images, or control add-ins. You can also define actions to operate on the card part page. 
 
-A card part can be placed on Role Centers, on the FactBox area of other pages or on a tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different design constraints, which determine its position and dimensions. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
+A card part can be placed in Role Centers, in the FactBox and content area of other pages or in a tabular step in a Wizard. Depending on the type of the hosting page, a card part is subject to different design constraints, which determine its position and dimensions. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
 
 ## Creating a card part
 
@@ -28,7 +28,7 @@ To create a card part, you create a page object, set the [PageType Property](pro
 
 ## Adding a card part to a page
 
-To place a card part on a page, you add a `part` control to the hosting page and associate it with the card part page object. Here you can also define additional properties. These will only apply to the container of the card part, whose functionality is independent from the hosting page.
+To place a card part in a page, you add a `part` control to the hosting page and associate it with the card part page object. Here you can also define additional properties. These will only apply to the container of the card part, whose functionality is independent from the hosting page.
 
 
 ## Example
@@ -92,12 +92,12 @@ page 50102 "Customer Card"
             }
         }
         
-        // Display the card part on the Factbox area
+        // Display the card part in the Factbox area
         area(FactBoxes)
         {
             part("Customer Sales History"; "Customer Sales History")
             {
-                // Filter on the sales history that relate to the customer on the card page.
+                // Filter on the sales history that relate to the customer in the card page.
                 SubPageLink = "No." = FIELD("No.");
             }
         }

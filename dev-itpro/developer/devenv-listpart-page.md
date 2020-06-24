@@ -13,7 +13,7 @@ author: blrobl
 
 A *ListPart* page is a type of page part used to display a list of records embedded within another page. It consists of a repeater, which presents the records of the source table as rows and columns, and optionally, of an action bar.
 
-A list part can be contained in Role Centers, in the FactBox area of other pages, in a tabular step in a Wizard and as a sub-page on a Document page. Depending on the type of the hosting page, a list part is subject to different design constraints, which determine its position and dimensions. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
+A list part can be contained in Role Centers, in the FactBox and content area of other pages, in a tabular step in a Wizard and as a sub-page in a Document page. Depending on the type of the hosting page, a list part is subject to different design constraints, which determine its position and dimensions. For more information, see [Design Considerations](devenv-designing-parts#design-considerations.md).
 
 ## Creating a list part
 
@@ -21,7 +21,7 @@ To create a list part, you create a page object, set the [PageType Property](pro
 
 ## Adding a list part to a page
 
-To place the list part on a page, you add a `part` control to the hosting page and associate it with the list part page object. Here you can also define additional properties. These will only apply to the container of the list part, whose functionality is independent from the hosting page.
+To place the list part in a page, you add a `part` control to the hosting page and associate it with the list part page object. Here you can also define additional properties. These will only apply to the container of the list part, whose functionality is independent from the hosting page.
 
 
 ## Example
@@ -83,7 +83,7 @@ page 50102 "Customer Card"
             {
                 part("Pending Shipments"; "Pending Shipments")
                 {
-                    // Filter on the sales orders that relate to the customer on the card page.
+                    // Filter on the sales orders that relate to the customer in the card page.
                     SubPageLink = "Sell-to Customer No." = FIELD("No.");
                 }
             }
