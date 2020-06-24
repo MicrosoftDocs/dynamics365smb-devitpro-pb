@@ -63,10 +63,11 @@
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
-## [Version numbers in Business Central](administration/version-numbers.md)
-## [Enabling new features ahead of time](administration/feature-management.md)
+## [Version Numbers in Business Central](administration/version-numbers.md)
+## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
+## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -76,9 +77,12 @@
 ### [Overview](administration/telemetry-overview.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+### [Event IDs](administration/telemetry-event-ids.md)
 ## Administration Center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -111,6 +115,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
 ### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
 ### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
 ### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
@@ -379,6 +384,12 @@
 ### Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
+#### [Essential AL Methods](developer/devenv-essential-al-methods.md)
+#### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
+#### [Creating Handler Methods](developer/devenv-creating-handler-methods.md)
+#### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
+#### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
 #### [Action Option Type](developer/methods-auto/action/action-option.md)

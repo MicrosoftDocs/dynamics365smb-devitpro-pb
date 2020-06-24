@@ -2,7 +2,7 @@
 title: "SetAutoCalcFields Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,6 +38,11 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+See [AL Database Methods and Performance on SQL Server - SETAUTOCALCFIELDS](../../../administration/optimize-sql-al-database-methods-and-performance-on-server.md#setautocalcfields).
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

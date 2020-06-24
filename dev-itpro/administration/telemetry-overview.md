@@ -24,10 +24,12 @@ Monitoring telemetry gives you a look at the activities and general health of yo
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
-|Telemetry | Description |Online/On-premises|See more|
+|Area | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
+|Database lock timeouts|Provides information about database locks that have timed out. |Both|[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|
+|Extension update|Provides information about errors that occur when upgrading an extension.|Both|[Analyzing Extension Upgrade Telemetry](telemetry-extension-update-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
 |Report generation|Provides information about the execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
 |Web service requests|Provides information about the execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
@@ -64,6 +66,7 @@ For more information, see [Business Central BCTech repository on GitHub](https:/
 
 ## See also
 
+[Telemetry Event IDs](telemetry-event-ids.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

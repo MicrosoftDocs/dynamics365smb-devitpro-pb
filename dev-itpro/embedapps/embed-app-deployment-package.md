@@ -191,7 +191,7 @@ Sample of the manifest.json file.
     "signInHelpUrl": "https://fabrikam.com/au/contact", 
     "comingSoonUrl": "https://go.microsoft.com/fwlink/?linkid=2047422", 
     "blogUrl": "https://go.microsoft.com/fwlink/?linkid=2076643", 
-    "contactSalesUrl": "https://go.microsoft.com/fwlink/?linkid=828707", 
+    "contactSalesUrl": "https://go.microsoft.com/fwlink/?linkid=828707" 
   }, 
   "apps":  [ 
                  { 

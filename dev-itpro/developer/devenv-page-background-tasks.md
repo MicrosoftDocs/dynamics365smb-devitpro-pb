@@ -201,7 +201,7 @@ To create a page background task, you call the [ENQUEUEBACKGROUNDTASK method](me
     First, determine where in the code that you want to call the background task from. Typically, you call the ENQUEUEBACKGROUNDTASK method from a page trigger.
 
     > [!IMPORTANT]
-    > It's important that the ID of the current record of the page remains static after the ENQUEUEBACKGROUNDTASK method call is made and while the background task is running; otherwise the task will be cancelled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` or `OnValidate` triggers. Instead, use the `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
+    > It's important that the ID of the current record of the page remains static after the ENQUEUEBACKGROUNDTASK method call is made and while the background task is running; otherwise the task will be cancelled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` or `OnValidate` triggers. Instead, use the `OnAfterGetCurrRecord` trigger.
 
     Once you've determined the location, add the following code to enqueue the background task:
     
@@ -231,8 +231,12 @@ To re-enqueue a page background task, call the ENQUEUEBACKGROUNDTASK method on e
 
 ### Design considerations and limitations
 
-- The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled.  
+- The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. 
+- On list pages, it's recommended not to enqueue a page background task from `OnAfterGetRecord` trigger, unless you're aware of the consequences. If you enqueue a page background task from the `OnAfterGetRecord`, the task will be immediately canceled after the first row is retrieved. The reason is that the `OnAfterGetRecord` trigger is called on every row. Because the record changes for each row, the page background task is canceled when the trigger runs after the first row.
 - ​By default, only five page background tasks can be run simultaneously for a parent session. If there are more than five, they're queued and run when a slot becomes available as other tasks finish.​ If you're using version 15.2 or later, you can increase or decrease this value by changing the **Child Sessions Max Concurrency** setting of the server instance. You can also change the **Child Sessions Max Queue Length** setting to specify the maximum number of child sessions that can be queued per parent session of a page background task. If this value is exceeded, an error occurs. For more information, see [Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT).
+  the Page.Rec is different.
+
+
 <!--
 - If a timeout occurs, you can re-schedule the task in the completion trigger by using the automatic refresh capability. ​For more information and samples, see the [BCTech GitHub repository](https://github.com/microsoft/BCTech/tree/master/samples/PageBackgroundTask.AutoRefresh).
 -->
@@ -280,7 +284,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
         durationtime: Text;
         endtime: Text;
 
-    trigger OnAfterGetRecord()
+    trigger OnAfterGetCurrRecord()
     var
         //Defines a variable for passing parameters to the background task
         TaskParameters: Dictionary of [Text, Text];

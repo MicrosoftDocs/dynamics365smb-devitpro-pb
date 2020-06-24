@@ -24,8 +24,8 @@ This image below is an example of what an offering looks like on AppSource, when
 
 |Item Number| Validation Requirements | Guidance/Examples | 
 |-----------|--------------|--------------|
-|0.A - 0.C|Your app can be in any language – if not in English, a document with English translation is required. Branding - Remember to use the product branding guidelines properly| [General Best Practices including Language and Branding](readiness-checklist-a-languange-branding.md) |
-|0.D| Must be the same as the manifest. (Your offer name) for Microsoft Dynamics 365 Business Central | [Offer Name](readiness-checklist-b-offername-summary.md)|
+|0.A - 0.B|Your app can be in any language – if not in English, a document with English translation is required. Branding - Remember to use the product branding guidelines properly| [General Best Practices including Language and Branding](readiness-checklist-a-languange-branding.md) |
+|0.C| Must be the same as the manifest. (Your offer name) for Microsoft Dynamics 365 Business Central | [Offer Name](readiness-checklist-b-offername-summary.md)|
 |1|Max. 25 words or 100 characters, value proposition| [Offer Summary](readiness-checklist-b-offername-summary.md)|
 |2 - 2.G|Use the Rich Text Editor, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
 |2.F|Supported Editions: Premium, Essential or both|  [Premium SKU Listing](readiness-checklist-c-offer-description.md#SupportedEditions)|
@@ -60,8 +60,6 @@ the beginning. Failing to do so will jeopardize the hard work you put in, when
 developing your offer, likely leaving the prospect confused or looking
 elsewhere. Accordingly, we recommend you put in the time, effort and due
 diligence when developing this content. Follow this marketing validation checklist and get your app passed on the first submission. 
-
-
 
 ## Why marketing validation is mandatory
 

@@ -1,7 +1,7 @@
 ---
 title: "Essential AL Methods"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,13 +16,13 @@ Although there are hundreds of methods in AL, there are several methods that you
 
 The topics in this section describe the most common AL methods. For more details about all of the AL methods, see [AL Method Reference](methods-auto/library.md).  
 
-[Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)   
-[SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)   
-[Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)   
-[LockTable Method](methods/devenv-locktable-method.md)   
-[CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)   
-[Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)   
-[StrMenu Method](methods/devenv-strmenu-method.md)
+- [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  
+- [SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  
+- [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)  
+- [LockTable Method](methods/devenv-locktable-method.md)  
+- [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)  
+- [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)  
+- [StrMenu Method](methods/devenv-strmenu-method.md)
 
 ## See Also
 

@@ -47,7 +47,6 @@ After you install [!INCLUDE[server](../developer/includes/server.md)], you can c
 
 ### Restarting [!INCLUDE[server](../developer/includes/server.md)] after modifications
 
-
 If you use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modify the CustomSettings.config file directly, you must restart the [!INCLUDE[server](../developer/includes/server.md)] instance before any changes can take effect.
 
 The [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) doesn't always require restarting the server instance. It depends on the configuration setting that you change. There are several settings that are *dynamically updatable*. *Dynamically updatable* means that a server instance restart isn't necessarily required after modification. For more information, see [Modifying dynamically updatable settings](configure-server-instance.md#DynamicSettings).
@@ -157,7 +156,7 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |Token Signing Key|ClientServicesTokenSigningKey|Specifies the signing information that you obtain from the Microsoft Azure portal. The parameter value is a 256-bit symmetric token signing key for use with Azure Access Control service \(ACS\). This parameter is relevant only when **Credential Type**, on the **General** tab, is set to **AccessControlService**.<br /><br />Default: EncryptAndSign<br />Dynamically Updatable: No|  
 |Use the Simplified Filters|UseSimplifiedFilters|Specifies how the search on list pages behaves for plain text search filters. Pain text search filters don't use search symbols like @ or \*.<br /><br />If you enable this setting, the search uses a case sensitive and accent sensitive search to find fields that start with the provided filter text. For example, the search on **man** returns all records that include a field that starts with *man* (lowercase m), and the search on **Man** returns all records that include a field that starts with *Man* (uppercase M). Notice that you can get the same results by entering **man**\* and **Man**\* respectively.<br /><br />If the setting is disabled (which is default), the search on **man** and **Man** return the same results, which are all records that include fields that contain the text *man*, regardless of the case.<br /><br /> For more information about the search, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters).<br /><br />Default: Not enabled<br />Dynamically Updatable: No|  
 |Web Client Base URL|PublicWebBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`http[s]://[hostname]:[port]/[webserverinstance]`<br /><br />This field maps to the `PublicWebBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Web client<br />Dynamically Updatable: No|  
-|Windows Client Base URL|PublicWinBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`DynamicsNAV://[hostname]:[port]/[instance]/`<br /><br /> This field maps to the `PublicWinBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Wndows client<br />Dynamically Updatable: No|  
+|Windows Client Base URL|PublicWinBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`DynamicsNAV://[hostname]:[port]/[instance]/`<br /><br /> This field maps to the `PublicWinBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Windows client<br />Dynamically Updatable: No|  
 
 ##  <a name="SOAPServices"></a> SOAP Services Settings
   
@@ -318,6 +317,7 @@ The following table describes fields on the **Extensions** tab in the [!INCLUDE[
 |-----------|--------|---------------|
 |Overwrite Existing Translations|OverwriteExistingTranslations|Specifies whether to overwrite existing text translations in the base application with text translations included in extensions.<br /><br />Default: Enabled<br />Dynamically Updatable: No|
 |Required Extensions|RequiredExtensions|Specifies a list of required extensions that can't be uninstalled by using the **Extension Management** page in the client. The extensions can still be uninstalled by using the [Uninstall-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].<br /><br />You specify an extension by its AppID (which is a GUID). When you've more than one extension, separate each AppID with a semicolon. The AppID for the BaseApp extension is 437dbf0e-84ff-417a-965d-ed2bb9650972 and System Application extension is 63ca2fa4-4f03-4f2b-a480-172fef340d3f. <br /><br /> Default: Blank or "" (empty string)<br />Dynamically Updatable: Yes<br /><br />**APPLIES TO:** [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2|
+|Solution Version Extension|SolutionVersionExtension|Specifies the ID of the extension whose version number will show as the Application Version on the client's Help and Support page. Typically, you'd use the extension considered to be your solution's base application. If your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`. <br /><br /> Default: 00000000-0000-0000-0000-000000000000<br />Dynamically Updatable: Yes|
 
 ## <a name="Development"></a>Development Settings
 
@@ -390,6 +390,8 @@ Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize 
 ```
 
 For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](/powershell/business-central/overview).  
+
+
 
 ## See Also
 
