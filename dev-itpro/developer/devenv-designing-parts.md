@@ -31,8 +31,8 @@ Business Central offers different types of parts that display data in a specific
 
 |PageType|Purpose|Hosting page types|
 |----|---|---|
-|**ListParts**|Display a list of records.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Tabular step in a Wizard; Subpage on a Document page.|
-|**CardParts**|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images, or control addins.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Step in a Wizard.|
+|[**ListParts**](devenv-designing-listparts.md)|Display a list of records.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Tabular step in a Wizard; Subpage on a Document page.|
+|[**CardParts**](devenv-designing-cardparts.md)|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images, or control add-ins.|Role Centers; FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus; Step in a Wizard.|
 |[**HeadlineParts**](devenv-create-role-center-headline.md)|Display relevant insights from across the business.|Role Centers only.|
 
 
@@ -91,7 +91,9 @@ Like other page types, you can design a part page to use one or more page backgr
 [AL Development Environment](devenv-reference-overview.md)  
 [FactBoxes](devenv-adding-a-factbox-to-page.md)  
 [Headlines](devenv-create-role-center-headline.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
+[List Parts](devenv-designing-listparts.md)  
+[Card Parts](devenv-designing-cardparts.md)  
+[Page Extension Object](devenv-page-ext-object.md)   
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
 [Using Designer](devenv-inclient-designer.md)  
 <!-- [Designing pages with multiple lists](devenv-designing-multilist-pages.md) -->

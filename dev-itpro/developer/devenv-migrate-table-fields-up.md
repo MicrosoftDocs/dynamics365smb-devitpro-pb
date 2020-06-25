@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 # Moving Tables and Fields to Extensions Up the Dependency Graph
 
-[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+[!INCLUDE[2019_releasewave2_15.3_onprem](../includes/2019_releasewave2_15.3_onprem.md)]
 
 This article explains how to move tables and fields from an extension to another extension that is up the dependency graph.
 
@@ -74,7 +74,7 @@ In this step, you create a new version of the releasing extension that doesn't c
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 2. Delete all objects from the extension. The objects include **TableA**, **TableB**, and **TableC**.
-3. In the app.json file, increase the `version` value.
+3. In the app.json file, increase the `version` value. Ensure that `"target": "OnPrem"`.
 4. Compile a new version of the extension package.
 
 ## Create receiving extension (Ext Y v1)
