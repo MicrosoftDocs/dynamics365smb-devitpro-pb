@@ -369,7 +369,13 @@ In this task, you'll publish the platform symbols and the extensions configured 
     - **Base Application** extension
     - Customization extensions (if any).
 
-    This step publishes the extensions that you created in Task 3.
+    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
+
+3. Restart the server instance.
+
+    ```powershell
+    Restart-NAVServerInstance -ServerInstance <server instance name>
+    ```
 
 ## Task 10: Synchronize tenant
 
@@ -417,7 +423,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
     >
     > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
-4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 9. 
+4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 9.
 
 ## Task 11: Install DestinationAppsForMigration and move tables
 

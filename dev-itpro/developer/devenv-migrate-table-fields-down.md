@@ -12,7 +12,7 @@ ms.author: jswymer
 ---
 # Moving Tables and Fields to Extensions Down the Dependency Graph
 
-[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+[!INCLUDE[2019_releasewave2_15.3_onprem](../includes/2019_releasewave2_15.3_onprem.md)]
 
 This article explains how to move tables and fields from an extension to another extension that is down the dependency graph.
 
@@ -65,6 +65,7 @@ The receiving extension will contain the table and fields that you want to move.
 
 2. Modify the app.json file as follows:
 
+    - Ensure that `"target": "OnPrem"`.
     - Increase the `"version"` value.
     - In the `""dependencies"` parameter, set up a dependency on the new receiving extension **Ext Y**.
 

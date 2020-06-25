@@ -168,7 +168,7 @@ Occurs when a copying a company was canceled.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
-|message|**Company copied canceled: <source company name> to <destination company name>**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul> |
+|message|**Company copied canceled: {source company name} to {destination company name}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul> |
 |severityLevel|**2**||
 
 ### Custom dimensions

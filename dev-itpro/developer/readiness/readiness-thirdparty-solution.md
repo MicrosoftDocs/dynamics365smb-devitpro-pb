@@ -10,10 +10,10 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Integrate a 3rd Party Solution
+
 If you are an ISV with an existing service offering, then there are several reasons why you should choose to integrate your service with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]:
 
 - [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] exposes many “ready-to-use” APIs for Connect apps to make a seamless integration between your service offering and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
@@ -33,6 +33,7 @@ Learn more details on how you can build a Business Central offering in the
 **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
 
 ## See Also
+
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
 [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  

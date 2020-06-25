@@ -16,14 +16,16 @@ author: SusanneWindfeldPedersen
 AL code consists of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  
-- Compound Statements
-- Conditional Statements
-- Repetitive Statements
+
+- [AL Compound Statements](devenv-al-control-statements.md#al-compound-statements)
+- [AL Conditional Statements](devenv-al-control-statements.md#al-conditional-statements)
+- [AL Repetitive Statements](devenv-al-control-statements.md#al-repetitive-statements)
 
 > [!NOTE]  
 > In the following sections conventions for how to structure and align AL code are presented to introduce best practices. In many cases the structure is not necessary to get the code to compile, but rather to improve readability.
 
-## AL Compound Statements
+## AL compound statements
+
 In some cases, the AL syntax only lets you use a single statement. However, if you have to execute more than one simple statement, the statements can be written as a compound statement by enclosing the statements between the begin and end keywords.  
 
 ```  
@@ -66,7 +68,8 @@ end else begin
 end;  
 ```  
 
-## AL Conditional Statements
+## AL conditional statements
+
 You use conditional statements to specify a condition and one or more commands to execute if the condition is evaluated as true or false. There are two types of conditional statements in AL:  
 
 - if-then-else, where there are two choices.  
@@ -276,7 +279,7 @@ var
 
  The value set 'abc' is not converted because the evaluated expression MyCode is a code variable.  
 
-## Repetitive statements
+## AL repetitive statements
 A repetitive statement is also known as a loop. The following table shows the looping mechanisms in AL.  
 
 |Looping mechanism|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
@@ -542,4 +545,7 @@ var
 ```
 
 ## See Also
-[Programming in AL](devenv-programming-in-al.md)
+
+[Programming in AL](devenv-programming-in-al.md)  
+[AL Simple Statements](devenv-al-simple-statemnents.md)  
+[AL Essential Methods](devenv-essential-al-methods.md)
