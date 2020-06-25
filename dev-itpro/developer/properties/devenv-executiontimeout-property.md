@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # ExecutionTimeout Property
 
-Sets the maximum time the report will run after which it is automatically terminated.
+Sets the maximum time the report will run after which it is automatically terminated. The format must be a timeout duration specified as `hh:mm:ss`.
   
 ## Applies To  
 
@@ -22,7 +22,7 @@ Sets the maximum time the report will run after which it is automatically termin
  
 ## Syntax
 ```
-
+ExecutionTimeout := `10:05:55`;
 ```
 
 ## Remarks  
