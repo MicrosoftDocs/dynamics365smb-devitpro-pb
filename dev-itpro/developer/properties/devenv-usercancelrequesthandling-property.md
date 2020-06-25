@@ -12,17 +12,17 @@ author: SusanneWindfeldPedersen
 
 # UserCancelRequestHandling Property
 
-Sets the behavior exhibited when the user attempts to cancel a running report.
+Sets the behavior exhibited when the user attempts to cancel a running report. The following values are permitted: `CancellationSafe`, `CancellationUnsafe`, and `CancellationSafeAndResumable`.
 
 ## Applies To  
 
-- Word reports
+- Reports
 
 ## Property Value   
  
 ## Syntax
 ```
-
+UserCancelRequestHandling := CancellationSafe;
 ```
 
 ## Remarks  
