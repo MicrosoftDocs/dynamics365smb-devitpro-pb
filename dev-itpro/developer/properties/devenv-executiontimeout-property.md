@@ -16,7 +16,7 @@ Sets the maximum time the report will run after which it is automatically termin
   
 ## Applies To  
 
-- Word reports
+- Reports
 
 ## Property Value   
  

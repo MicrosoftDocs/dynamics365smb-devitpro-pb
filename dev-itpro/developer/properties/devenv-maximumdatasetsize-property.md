@@ -11,13 +11,14 @@ author: SusanneWindfeldPedersen
 ---
 
 # MaximumDataSetSize Property
+
 Sets the maximum amount of rows to be included on the report.
   
 ## Applies To  
 
 - Reports
   
-## Property Value   
+## Property Value
  
 ## Syntax
 ```

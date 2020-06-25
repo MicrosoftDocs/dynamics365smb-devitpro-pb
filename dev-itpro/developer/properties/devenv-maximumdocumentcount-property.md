@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # MaximumDocumentCount Property
+
 Sets the maximum document count when generating a generating a Word layout report.
   
 ## Applies To  
