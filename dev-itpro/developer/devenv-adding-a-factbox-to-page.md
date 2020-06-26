@@ -128,7 +128,7 @@ page 50101 "Simple Customerlist Page"
 ```
 
 ## Performance considerations
-Having a page composed of multiple FactBox pages that each process data from different sources can degrade performance. To mitigate this and improve the time it takes to load the page, Business Central version 17.0 and later optimizes the sequence in which content is loaded. The sequence is as follows:
+Having a page composed of multiple FactBox pages that each process data from different sources can degrade performance. To improve responsiveness and the time it takes to load the page, Business Central version 17.0 and later optimizes the sequence in which content is loaded. The sequence is as follows:
 1. Content on the hosting page is loaded first and users can immediately begin interacting with it.
 2. The FactBox pane is loaded next where each FactBox is loaded independently in sequence starting from the top.
     1. FactBoxes having the Visible property evaluate to False will not be loaded.
