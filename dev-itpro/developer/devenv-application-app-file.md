@@ -112,7 +112,7 @@ To enable these benefits, all you need to do, as an AppSource or PTE app owner, 
 
 ```
 > [!IMPORTANT]  
-> Soon up-taking the Application app will also be a mandatory requirement, enforced by the AppSource technical validation. Thus it is highly recommended to change the existing AppSource apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prodshort](includes/prodshort.md)] online environments.
+> Soon up-taking the Application app will also be a mandatory requirement for AppSource apps, enforced by the AppSource technical validation. Thus it is highly recommended to change the existing AppSource apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prodshort](includes/prodshort.md)] online environments.
 
 
 ## See Also
