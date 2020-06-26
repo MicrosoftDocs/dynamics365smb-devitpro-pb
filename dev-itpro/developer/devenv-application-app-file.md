@@ -81,7 +81,7 @@ If you have a code-customized base application, the file can be edited to reflec
 ...
 ```
 
-## Up-taking the Application app
+## Uptaking the Application app
 
 The Application app logically encapsulates apps making up a solution (such as Base Application and System Application), and provides an abstraction to protect the AppSource and PTE extensions running on top of that solution from not being able to resolve dependencies to these apps. 
 
