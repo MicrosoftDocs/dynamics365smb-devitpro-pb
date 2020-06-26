@@ -1,6 +1,6 @@
 ---
-title: "Using labels"
-description: ""
+title: "Working with labels"
+description: "What are labels used for and their syntax."
 ms.custom: na
 ms.date: 06/24/2020
 ms.topic: article
@@ -76,6 +76,7 @@ The **Label** variable names should have an approved suffix. For more informatio
 
 
 ## See Also
+[Working with labels](devenv-using-labels.md)    
 [Working with Translation Files](devenv-work-with-translation-files.md)  
 [Label Data Type](methods-auto/label/label-data-type.md)   
 [Report Layouts](devenv-report-design-overview.md#report-layouts)
