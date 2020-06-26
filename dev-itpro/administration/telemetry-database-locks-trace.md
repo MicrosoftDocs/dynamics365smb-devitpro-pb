@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Database Lock Timeout Trace Telemetry
 
-**INTRODUCED IN:** Business Central 2020 release wave 1, version 16.2
+**INTRODUCED IN:** Business Central 2020 release wave 1, version 16.0
 
 Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
 
