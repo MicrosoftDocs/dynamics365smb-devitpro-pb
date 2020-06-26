@@ -2,7 +2,7 @@
 title: "The Microsoft_Application.app File"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/26/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -83,9 +83,9 @@ If you have a code-customized base application, the file can be edited to reflec
 
 ## Up-taking the Application app
 
-The Application app was introduced as an additional improvement to protect the AppSource and PTE apps running on top of the Business Central apps (such as Base Application and System Application) from breaking changes in their dependencies. When using it, future refactoring of the Microsoft apps (like extracting some areas into separate apps) will not be forcing all other apps to update their dependencies, as these dependencies will be resolved implicitly via the reference to the Application app. Additionally, it is meant to simplify the on-prem upgrade scenarios, when customizations are extracted from the Base Application into extensions. And finally it makes it possible to make the same apps available not only to the Business Central customers, but also to the customers of the rich vertical solutions called Embed Apps, which are also running in the Business Central service. 
+The Application app was introduced as an additional improvement to protect the AppSource and PTE apps running on top of the [!INCLUDE[prodshort](includes/prodshort.md)] apps (such as Base Application and System Application) from breaking changes in their dependencies. When using it, future refactoring of the Microsoft apps; like extracting some areas into separate apps, will not be forcing all other apps to update their dependencies, as these dependencies will be resolved implicitly via the reference to the Application app. Additionally, it is meant to simplify the on-premises upgrade scenarios, when customizations are extracted from the Base Application into extensions. And finally it makes it possible to make the same apps available not only to the [!INCLUDE[prodshort](includes/prodshort.md)] customers, but also to the customers of the rich, vertical solutions called Embed Apps, which are also running in the [!INCLUDE[prodshort](includes/prodshort.md)] service. 
 
-To enable these benefits, all you need to do, as an AppSource or PTE app owner, is to add `"application"` property in the app.json file of your app and provide the minimum Microsoft Base Application version this app is compatible with. Also you need to remove the direct dependencies to the Base Application and System Application from the app.json file. See the following example:
+To enable these benefits, all you need to do, as an AppSource or PTE app owner, is to add the `"application"` property in the `app.json` file of your app and provide the minimum Microsoft Base Application version that this app is compatible with. For more information, see [JSON Files](devenv-json-files.md). Also, you need to remove the direct dependencies to the Base Application and System Application from the `app.json` file. See the following example:
 
 ```
 {
@@ -112,8 +112,7 @@ To enable these benefits, all you need to do, as an AppSource or PTE app owner, 
 
 ```
 > [!IMPORTANT]  
-Soon up-taking the Application app will also be a mandatory requirement, enforced by the AppSource technical validation. Thus it is highly recommended to change the existing AppSource apps at first convenience (for instance with your next planned app update) and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) you use in the Business Central online environments.
-
+> Soon up-taking the Application app will also be a mandatory requirement, enforced by the AppSource technical validation. Thus it is highly recommended to change the existing AppSource apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prodshort](includes/prodshort.md)] online environments.
 
 
 ## See Also
