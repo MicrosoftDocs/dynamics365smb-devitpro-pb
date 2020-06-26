@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 The Microsoft_Application.app file is included with [!INCLUDE[prodshort](includes/prodshort.md)] and is located in the `\Applications\Application\Source` folder. The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
 
 > [!NOTE]  
-> In previous versions the references to base and system application were stated explicitly under `dependencies` in the `app.json` file of the extension. Instead you must use the Application version property in app.json. For more information, see [JSON Files](devenv-json-files.md).
+> In previous versions the references to base and system application were stated explicitly under `dependencies` in the `app.json` file of the extension. Instead you must now use the `Application` version property in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md).
 
 The file name of the reference is `Microsoft_Application.app` and in the app.json file of the application package file, the name is `Application`. For code-customized base applications that have their own appId, the `Microsoft_Application.app` file can be modified to reference the appId of the code-customized base applications instead. This allows any extensions that are dependent on the `Application` to resolve to the custom appId. 
 
