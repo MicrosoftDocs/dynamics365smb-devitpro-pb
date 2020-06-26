@@ -12,11 +12,11 @@ author: SusanneWindfeldPedersen
 
 # MaximumDocumentCount Property
 
-Sets the maximum document count when generating a generating a Word layout report.
+Sets the maximum document count when generating a report by using `WordMergerDataItem`.
   
 ## Applies To  
 
-- Word reports
+- Reports
 
 ## Property Value   
  
