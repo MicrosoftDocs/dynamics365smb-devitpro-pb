@@ -1,9 +1,9 @@
 ---
 title: "Adding a FactBox to a Page"
-description: A FactBox is located on the right-most side of a page. This area is used to display content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links.
+description: A FactBox is located on the right-most side of a page. This area is used to display related facts about the current record including charts, data from related tables, Notes, and Links.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/26/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,9 +32,9 @@ You define the FactBox by adding a FactBox area container control to the page. T
   
 - Document  
   
-- List  
-  
 - ListPlus  
+
+- List  
   
 - Navigate  
   
@@ -126,6 +126,49 @@ page 50101 "Simple Customerlist Page"
     }
 }
 ```
+
+## Performance considerations
+Having a page composed of multiple FactBox pages that each process data from different sources can degrade performance. To mitigate this and improve the time it takes to load the page, Business Central version 17.0 and later optimizes the sequence in which content is loaded. The sequence is as follows:
+1. Content on the hosting page is loaded first and users can immediately begin interacting with it.
+2. The FactBox pane is loaded next where each FactBox is loaded independently in sequence starting from the top.
+    1. FactBoxes having the Visible property evaluate to False will not be loaded.
+    2. FactBoxes that are not within view are only loaded when the user scrolls them into view.
+If the FactBox pane is collapsed, no FactBoxes are loaded until the user expands the FactBox pane.
+
+Below are some practical tips to help you make the most out of this optimization:
+ - Consider hiding any FactBoxes that represent secondary content which only some users will require. Learn more about [Choosing the Visibility of Parts](devenv-designing-parts#choosing-the-visibility-of-parts)  
+ - Consider processing in the background for FactBoxes that require heavy processing. Learn more about [Using Page Background Tasks](devenv-designing-parts#using-page-background-tasks)  
+ - Avoid having triggers on the hosting page that call into a FactBox as this forces the FactBox to ignore performance optimizations and load along with the content of the hosting page, adding to the total loading time. 
+ 
+### FAQ about performance
+
+##### Are any FactBox triggers executed when the FactBox is hidden?
+No. The trigger is only run once the FactBox is visible and within the user's view.
+
+##### How often are triggers executed if the FactBox pane is expanded, collapsed and then expanded again?
+In this scenario, the OnOpenPage trigger is only run the first time. Once a FactBox is loaded, it is not loaded again for as long as the page remains open.
+
+##### Are FactBoxes processed asynchronously?
+No. This optimization is simply a controlled sequence in which triggers are executed, still within the same session as the hosting page. For more information about asynchronous processing in the background, see [Designing page parts for page background tasks](devenv-page-background-tasks#partpages).
+
+##### Does this work with SubPageLink or SubPageView properties?
+The use of these properties has no effect on the sequence of loading content on a page. Using properties such as SubPageView is preferred to writing trigger code to update a FactBox.
+
+##### Does this optimization apply to parts that are not FactBoxes?
+This optimization does not apply to Role Center pages. When parts are used in the content area of a page, such as on a Card page, they are not loaded if their Visible property evaluates to False. 
+
+##### Can I force a FactBox to load along with page content?
+There is no AL API to force FactBoxes to load along with the content of the hosting page.
+
+##### Can i set the FactBox pane to start collapsed on all pages?
+No. The default state of the FactBox pane is set by the Business Central platform and modifed by the user.
+
+##### Does the experience vary on different browsers?
+Each browser has its own definition of whether a FactBox is considered within view or not. For example, opening Business Central in a new browser tab and quickly switching back to the original tab may pause loading of any FactBoxes in the new tab.
+
+##### Does this optimization apply to other form factors?
+This applies to desktop, tablet and phone clients.
+
 
 ## See Also 
  
