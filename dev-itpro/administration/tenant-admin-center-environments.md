@@ -102,6 +102,92 @@ Canceling a session is sometimes the only way to unblock a customer. For example
 
 To cancel a session, select it from the list and then select **Cancel selected sessions**.
 
+## <a name="rename"></a>Renaming an environment 
+
+You can rename an environment by opening the environment card and clicking on the Rename button.
+
+In the Rename environment dialogue enter a new name to be used by this environment and click on Rename button.  
+
+Confirm your intent to rename the environment.  
+ 
+> [!IMPORTANT]
+> It is important you study ## Environment rename considerations  to understand the consequences before you confirm your intent to rename. Additionally, this operation requires a restart to the environment. We recommend doing this when no users are active in Business Central. 
+
+The environment state will change to Preparing and back to Active again, once the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
+
+You can also review the log of Rename operation on the Operations page afterwards.   
+
+## Environment rename considerations  
+
+Environment name is a part of the environment URL, which uniquely identifies this environment among your other environments. Changing the name can affect many scenarios and integrations. While renaming an environment during early stages of a customer implementation may be a low risk operation, renaming an environment which has been used by customers for a longer period of time and is integrated with many external services and components is very risky and you must carefully plan for it.   
+
+Here are some of the areas, which use the environment name, which you need to consider before attempting to rename an environment:  
+
+- Web Services URL  
+
+- External integrations which use Odata or SOAP 
+
+- 3rd Party apps (AppSource / Per tenant extensions ) 
+
+- Web Client URL 
+
+- Bookmarked links to Web client  
+
+- User-created links 
+
+    - Links to records/filters/pages/reports/tables/Profiles/Companies on each user's browser(s) and device(s). Thru regular usage, these links inevitably get saved across repositories such as Emails, Teams channels, Word docs, Excels, OneNote, Calendars, exchanged amongst users in same company, across companies, across environments, across tenants. Links can also be in desktop shortcuts eg. "launch POS".
+
+    > [!NOTE]
+    > Admins do not have access to some/most of the above and therefore cannot update EnvName in behalf of the user. 
+
+    - Links in the notification mails sent from BC before name change won't find the correct environment after the change. 
+
+- Partners, Partner Support, Customer Admins, Customer IT Support can also embed web client links in documentation, support websites, instructional steps and videos, and other material. Only some of this can be updated by an admin. 
+
+- Browser cache. We store the Url including environment name in some of our cached data. This is cached browser-side, that is, in the user's browser(s) across device(s). Admins typically don't have access or control this. When a user loses their cache, they lose micro-personalizations to all their pages, preferences to  
+
+- Integrations which embed the Web client - e.g. SharePoint apps composed of BC pages 
+
+- Integrations which launch the Web client  
+
+- Partner-developed mobile apps, web applications, etc. These likely originate from partners outside the customer's organization where the admin cannot update Urls. 
+
+- Mobile apps incl. Windows 10 store app for desktop/tablet 
+
+    Affected  only when users modify protocol handler before rename - to force the app to connect to environment with name different than "production". So if the user keeps working with "production" on mobile (which is default now), and the admin is renaming "prod2" to "myprod" the mobile user is not affected. Otherwise the app would throw an error and the user would have to bail out using a newly created protocol handler link. 
+
+- Effect on the Business Central add-ins and integrations with other Microsoft services 
+
+    - Outlook Add-in  
+    
+         The AddIn manifest saved into Exchange Server per org or per user includes the environment name. 
+    
+    - Excel Add-in  
+    
+         Each user's Excel sheet stores the Environment name. these Excels could be stored on user's desktop PCs, mobile devices, file shares, SharePointa, archives, etc. some of which will be unreachable by an admin to update. 
+    
+    - Power BI 
+    
+        All reports built (including the default ones we deploy from Role Center) or any Power BI apps installed before rename would be affected with no automatic way to repair. Partner/user would have to manually update the connections. 
+    
+    - Power Apps/Automate  
+    
+        All apps/flows built before rename would be affected with no automatic way to repair. Partner/user would have to manually update the connections. 
+    
+    - CDS  
+    
+        CDS Virtual Entity setup will store Environment name 
+    
+    - Accountant Hub 
+
+- Development scenarios  
+
+    - Publish to SB from VS Code. Launch.json configurations contain the sandbox name if different from "default", so these will be impacted and require source code updates 
+
+    - CI/CD pipelines for test and deploy, these could be impacted by environment renames 
+
+- Azure AppInsights logs and metrics 
+
 ## See also
 
 [Working with Administration Tools](administration.md)  
