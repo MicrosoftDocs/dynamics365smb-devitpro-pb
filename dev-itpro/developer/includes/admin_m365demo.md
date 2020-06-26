@@ -1,13 +1,13 @@
-1. ---
+---
 author: dmc-dk
 
 ms.service: dynamics365-business-central
 ms.topic: include
 ms.reviewer: edupont
-ms.date: 06/26/2020
+ms.date: 06/25/2020
 ms.author: dmitrych
 ---
-Log in to [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) using your partner account.
+1. Log in to [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) using your partner account.
 2. Choose the **My Environments** tab, and then, under **My tenants**, choose the **Create Tenant** button.
 3. As the type, choose **Quick Tenant**.
 4. As the period, choose either a quarter or a full year.
