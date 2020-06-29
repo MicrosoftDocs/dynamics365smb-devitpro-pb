@@ -24,10 +24,6 @@ To help you manage app updates, the administration center includes the **Manage 
 
 Like other features in the administration center, this functionality can be used by the partner (delegated administrator) or a local customer admin.
 
-> [!NOTE]
-> The capability to update apps using the administration center is being made available gradually. Until the feature is generally available, some apps can't be updated using this feature. For information about the timeline, see [Installing AppSource apps updates in the Business Central administration center](/dynamics365-release-plan/2020wave1/dynamics365-business-central/installing-appsource-apps-updates-business-central-administration-center).
-
-
 ## Get an overview and check for updates
 
 Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
