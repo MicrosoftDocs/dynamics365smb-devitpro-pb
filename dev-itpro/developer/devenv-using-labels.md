@@ -27,7 +27,7 @@ Labels have a specific syntax defined by a text constant followed by three optio
 
 ## Using labels
 
-A label is used as the value of three different AL structures. It can be the property value of certain page and report properties, the value of a label data type variable or the value of a report label. These scenarios are explained in more detail below.
+A label is used as the value of four different AL structures. It can be the property value of certain page and report properties, the value of a label data type variable or the value of a report or page label. These scenarios are explained in more detail below.
 
 ### Properties
 
@@ -60,6 +60,21 @@ labels
   LabelName2 = 'Label Text2', Comment='Foo', Locked=false;
 } 
 ```
+
+### Page labels
+
+Page labels are used to display plain text on a page, such instructions or informative texts. You can find several examples of page labels in the Rapidstart Services Wizard in page `"Config. Wizard"`.
+
+Page labels are defined by a `label(Name)` control inside the `area(Content)` part of a page. The following code shows how to define a page label.
+
+```
+label(BeforeSetupCloseMessage)
+{
+    ApplicationArea = Basic, Suite;
+    Caption = 'If you still need to change setup data, do not change the profile.'
+}
+```
+
 
 ### Label Data Type
 
