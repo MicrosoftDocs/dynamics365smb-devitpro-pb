@@ -103,7 +103,7 @@ begin
     Date1 := CALCDATE(Expr1, RefDate);  
     Date2 := CALCDATE(Expr2, RefDate);  
     Date3 := CALCDATE(Expr3, RefDate);  
-    MESSAGE(RefDateTxt + Expr1Txt + Expr2Txt + Expr3Txt,  
+    Message(RefDateTxt + Expr1Txt + Expr2Txt + Expr3Txt,  
       RefDate, Expr1, Date1, Expr2, Date2, Expr3, Date3);  
 end;
 ```  
