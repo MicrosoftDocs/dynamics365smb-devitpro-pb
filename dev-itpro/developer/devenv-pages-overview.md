@@ -3,7 +3,7 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/14/2020
+ms.date: 06/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,6 +42,7 @@ page 50102 PageName
 ```
 
 ### Types of pages  
+
 Which page type you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. The Role Center page is the main or home page and it helps the user focus on the most important daily tasks and activities. Other types of pages, such as list pages or card pages are typically linked from the home page for easy access. The following page types are available:  
 
 |Page type   |Description|
@@ -70,8 +71,8 @@ You can choose between the following `area` categories:
 
 |Area type|Placement on the page|
 |---------|---------------------|
-|`Content`|The content area displays the content of a RoleCenter or a List page.|
-|`FactBoxes`|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
+|`Content`|The content area displays the content of, for example, a RoleCenter or a List page.|
+|`FactBoxes`|The FactBox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
   
 ### Page actions
@@ -88,6 +89,7 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
 
 ## Using keywords to place actions and controls
+
 You can use the following keywords in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these keywords to place actions in the ribbon. 
 
 |Keywords        |Syntax | Applies to |
