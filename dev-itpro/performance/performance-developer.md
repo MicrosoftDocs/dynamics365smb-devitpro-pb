@@ -74,7 +74,7 @@ Instead of exposing UI pages as web service endpoints, use the built-in API page
 
 The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
-For Odata, limit the set ($filter or $top) if you are using an expensive $expand statements. If you have moved calculated fields to a separate page then it is good practice to limit the set to get a good performance
+For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
 
 ### Web service client performance 
 
