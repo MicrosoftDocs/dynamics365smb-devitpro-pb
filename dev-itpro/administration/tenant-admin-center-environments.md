@@ -102,7 +102,10 @@ Canceling a session is sometimes the only way to unblock a customer. For example
 
 To cancel a session, select it from the list and then select **Cancel selected sessions**.
 
-## <a name="rename"></a>Renaming an environment 
+## <a name="rename"></a>Renaming an environment
+
+> [!NOTE]
+> This feature is in preview. It might change or be removed in the future updates.
 
 You can rename an environment by opening the environment card and clicking on the Rename button.
 
@@ -117,7 +120,7 @@ The environment state will change to Preparing and back to Active again, once th
 
 You can also review the log of Rename operation on the Operations page afterwards.   
 
-## Environment rename considerations  
+## Environment rename considerations
 
 Environment name is a part of the environment URL, which uniquely identifies this environment among your other environments. Changing the name can affect many scenarios and integrations. While renaming an environment during early stages of a customer implementation may be a low risk operation, renaming an environment which has been used by customers for a longer period of time and is integrated with many external services and components is very risky and you must carefully plan for it.   
 
