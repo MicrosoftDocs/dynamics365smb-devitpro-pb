@@ -64,9 +64,17 @@ Things that have historically caused performance on pages that are exposed as en
 - Many SIFT fields 
 - FactBoxes 
  
+Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take a lot of time to calculate. 
+
+Don't use temp tables as a source if you have a lot of records. Temp tables based APIs are a performance hit. The server has to fetch and insert every record, and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
+
+Don't insert child records belonging to same parent in parallel. This causes locks on Sales Header and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
+
 Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
 The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+
+For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
 
 ### Web service client performance 
 
@@ -81,7 +89,7 @@ Handling Status Code 429 requires the client to adopt a retry logic while provid
 - exponential back-off
 - randomization.
 
-Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit, but splitting the request into multiple requests - and then dealing with potential 429, by applying a back off strategy.
+Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit by splitting the request into multiple requests, then dealing with potential 429 codes by applying a back off strategy.
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
