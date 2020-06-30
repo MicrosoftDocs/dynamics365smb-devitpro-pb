@@ -135,14 +135,13 @@ The easiest way is to use the Azure portal. For instructions, see [Quickstart: S
 
 For using other methods, see [Azure Key Vault Developer's Guide](/azure/key-vault/general/developers-guide#creating-and-managing-key-vaults).
 
-### Register an application for reading from key vaults
+### Register a key vault reader application in Azure AD
 
 Next, register a new application on your Azure AD tenant for reading secrets from the key vaults.
 
 When Azure AD authentication was set up, an Azure AD tenant was created in Azure. Reading key vaults requires a separate application registration with the Azure AD tenant.
 
-There are a couple steps involved in this task. The steps in this task are done from the the [Azure portal](https://portal.azure.com).Certificates & secrets
-
+The steps in this task are done from the the [Azure portal](https://portal.azure.com).
 
 1. Register an Azure AD application for the reading key vault.
 
@@ -162,13 +161,64 @@ There are a couple steps involved in this task. The steps in this task are done 
     -->
     When completed, the **Overview** displays in the portal for the new application.
 
+    Make a note of the **Display name** and/or **Application (client) ID**. You will use this information later.
+
 2. Upload the security certificate to the registered application.
 
     In this step, you upload the certificate file that you obtained as part of the prerequisites.
 
-    From the registered applications overview page, select **Certificates & secrets** > **Upload certificate**, and follow instructions. 
+    From the registered applications overview page, select **Certificates & secrets**, **Upload certificate**, and follow instructions.
+
+### Grant the key vault reader application permission to read secrets from the key vaults
+
+In this task, you grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the the [Azure portal](https://portal.azure.com).
+
+1. Open the key vault in the portal. 
+2. Select **Access policies**, then **Add Access Policy**.
+3. Set **Secret Permissions** to **Get**.
+4. Select **Select principal**, and on the right, search for either **Application (client) ID** or display name for the key vault reader application. 
+5. Select **Add**, then **Save**.
+
+At this point, the work in Azure is finished.
+
+## Configure the Business Central Server
+
+Finally, it's time to configure the NST to use the AAD application and its certificate when authenticating to the key vaults. This is done by setting the following values: 
+
+ 
+
+AzureKeyVaultClientCertificateStoreLocation        
+
+LocalMachine 
+
+AzureKeyVaultClientCertificateStoreName            
+
+My 
+
+AzureKeyVaultClientCertificateThumbprint           
+
+<the thumbprint that you printed above> 
+
+AzureKeyVaultClientId                              
+
+<the application/client ID from the Azure portal> 
+
+AzureKeyVaultAppSecretsPublisherValidationEnabled  
+
+false 
+
+ 
+
+Caution: Setting the AzureKeyVaultAppSecretsPublisherValidationEnabled to false means the NST will not perform any additional validation that the extension has the right to read secrets from the key vaults that it specified. This implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details. 
+
+ 
+
+At this point, you can run your extension and read secrets from key vault. For troubleshooting, please look in the Event Log and configure App Insights telemetry. 
+
+ 
 
 
+##
 In the Azure portal, create one or two Key Vaults in your Azure subscription. 
 
 Add the secrets to the key vault(s), which you want to make available to your extension. 
