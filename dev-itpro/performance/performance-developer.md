@@ -64,9 +64,17 @@ Things that have historically caused performance on pages that are exposed as en
 - Many SIFT fields 
 - FactBoxes 
  
+Avoid exposing calculated fields – calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit as they take a lot of time to calculate. 
+
+Do not use Temp Table as a source if you have a lot of records. Temp table based APIs are a performance hit. The server need to fetch and insert every record and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100, 200 records do not use temp tables.
+
+Do not insert child records belonging to same parent in parallel This causes locks on Sales Header and Integration Record tables, since parallel calls try to update the same parent record. The solution is to wait for the first call to finish or to use $batch (it will make sure calls get executed one after another)
+
 Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
 The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+
+For Odata, limit the set ($filter or $top) if you are using an expensive $expand statements. If you have moved calculated fields to a separate page then it is good practice to limit the set to get a good performance
 
 ### Web service client performance 
 
