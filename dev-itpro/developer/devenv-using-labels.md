@@ -1,6 +1,6 @@
 ---
 title: "Working with labels"
-description: "What are labels used for and their syntax."
+description: "Labels syntax and usage in Business Central."
 ms.custom: na
 ms.date: 06/24/2020
 ms.topic: article
@@ -9,20 +9,19 @@ ms.author: t-blrobl
 author: blrobl
 ---
 
-# Working with labels
-
-Labels are string constants displayed in the [!INCLUDE[prodshort](includes/prodshort.md)] client that can be translated into multiple languages, such as captions, descriptions or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage developement](devenv-work-with-translation-files.md).
+# Working with Labels
+Labels are string constants displayed in the [!INCLUDE[prodshort](includes/prodshort.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage developement](devenv-work-with-translation-files.md).
 
 ## Label syntax
 
-Labels have a specific syntax defined by a text constant followed by three optional parameters. They must be comma-separated, but the order is not enforced. The three parameters that you can set are described in the following table.
+Labels have a specific syntax defined by a text constant followed by three optional parameters. They must be comma-separated, but the order of the parameters is not enforced. The parameters that you can set are described in the following table.
 
 
 | Parameter   | Type  | Description|
 |-------------|-------|--------------|
-|**Comment**  |Text   | It is used for general comments about the label, specifically about the placeholders in that label.|
-|**Locked**   |Boolean|  When Locked is set to **true**, the label should not be translated. Default value is **false**.|
-|**MaxLength**|Integer|It determines how much of the label is used. If no maximum length is specified, the string can be any length.|
+|**Comment**  |Text   | Used for general comments about the label, specifically about the placeholders in that label.|
+|**Locked**   |Boolean| When Locked is set to **true**, the label should not be translated. Default value is **false**.|
+|**MaxLength**|Integer| Determines how much of the label is used. If no maximum length is specified, the string can be any length.|
 
 
 ## Using labels
@@ -31,7 +30,7 @@ A label can take the form of four different AL structures. It can be the propert
 
 ### Properties
 
-The label syntax is used in properties that are set to display text in the user interface. It applies to the following properties:
+The label syntax is used in properties that are set to display text on the user interface. It applies to the following properties:
 
 - [Caption Property](properties/devenv-caption-property.md)
 - [ToolTip Property](properties/devenv-tooltip-property.md)
@@ -41,7 +40,7 @@ The label syntax is used in properties that are set to display text in the user 
 - [PromotedActionCategories Property](properties/devenv-promotedactioncategories-property.md)
 - [RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)
 
-The following example shows how to use the label syntax as property value for the **Caption** property.
+The following example shows the label syntax when it is used as property value for the **Caption** property.
 
 ```
 Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999;
@@ -49,7 +48,7 @@ Caption = 'Developer translation for %1',  Comment = '%1 is extension name', loc
 
 ### Report labels
 
-Report labels are used by RDLC and Word report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. For a code example on how to use report labels for a RDLC layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
+Report labels are used by RDL and Word report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
 
 Report labels are defined inside the `labels` control of a report object, as shown in the code sample below.
 
@@ -76,9 +75,9 @@ label(BeforeSetupCloseMessage)
 ```
 
 
-### Label Data Type
+### Label data type
 
-The [Label Data Type](methods-auto/label/label-data-type.md) denotes a string variable used to define error messages, questions, captions, tokens or other text constants displayed to the user. 
+The [Label Data Type](methods-auto/label/label-data-type.md) denotes a string variable used to define error messages, questions, captions, tokens, or other text constants displayed to the user. 
 
 The following code sample illustrates how to use the **Label** data type.
 
