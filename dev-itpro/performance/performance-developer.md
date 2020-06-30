@@ -66,7 +66,7 @@ Things that have historically caused performance on pages that are exposed as en
  
 Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take a lot of time to calculate. 
 
-Don't use temp tables as a source if you have a lot of records. Temp tables based APIs are a performance hit. The server has to fetch and insert every record, and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100, 200 records do not use temp tables.
+Don't use temp tables as a source if you have a lot of records. Temp tables based APIs are a performance hit. The server has to fetch and insert every record, and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
 
 Don't insert child records belonging to same parent in parallel. This causes locks on Sales Header and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
