@@ -36,7 +36,7 @@ Number series in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are s
 
 ### Be cautious with the **Rename/Copy company** operation
 
-The **Rename/Copy company** operations are not intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operation is likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operations uses resources on the database, which can in turn cause resource starvation for users working in other companies.  
+The **Rename company** and **Copy company** operations are not intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operations are likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operations use resources on the database, which can in turn cause resource starvation for users working in other companies.  
 
 If you must do a **Rename/Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.
 
