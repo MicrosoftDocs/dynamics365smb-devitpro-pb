@@ -89,7 +89,7 @@ Handling Status Code 429 requires the client to adopt a retry logic while provid
 - exponential back-off
 - randomization.
 
-Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit by splitting the request into multiple requests, then dealing with potential 429 code by applying a back off strategy.
+Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit by splitting the request into multiple requests, then dealing with potential 429 codes by applying a back off strategy.
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
