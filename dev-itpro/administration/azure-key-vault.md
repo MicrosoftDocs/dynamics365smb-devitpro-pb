@@ -93,9 +93,9 @@ The use case for specifying two key vaults is to ensure high availability. At ru
 
 ## Setting up Azure Key Vault for on-prem installations 
 
-Follow these steps to configure a local installation to use the App Key Vault feature. 
+Follow the tasks in this section to configure an on-premises installation to use the Azure Key Vault feature. 
 
-### Prerequisite
+### Prerequisites
 
 - Configure Azure Active Directory (Azure AD) authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
 
@@ -105,15 +105,16 @@ Follow these steps to configure a local installation to use the App Key Vault fe
 
     As part of the setup later on, you'll have to register and configure an application in Azure AD for reading key vault, which requires the use of a certificate. The certificate is used prove the application's identity when requesting upon request. In a production environment, obtain a certificate from a certification authority or trusted provider. In a test environment, if you don't have a certificate, then you can create your own self-signed certificate.
 
-    <!-- 
-    ```powershell
-        $cert = New-SelfSignedCertificate -Subject "BusinessCentralKeyVaultReader" -Provider "Microsoft Strong Cryptographic Provider"
+<!-- 
+```powershell
+    $cert = New-SelfSignedCertificate -Subject "BusinessCentralKeyVaultReader" -Provider "Microsoft Strong Cryptographic Provider"
 
-      $cert.Thumbprint
+    $cert.Thumbprint
 
-      Export-Certificate -Cert $cert -FilePath c:\certs\BusinessCentralKeyVaultReader.cer
-    ```
-    >
+    Export-Certificate -Cert $cert -FilePath c:\certs\BusinessCentralKeyVaultReader.cer
+```
+-->
+
 
 ### Create the Azure Key Vault with secrets
 
@@ -173,7 +174,7 @@ The steps in this task are done from the the [Azure portal](https://portal.azure
 
 In this task, you grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the the [Azure portal](https://portal.azure.com).
 
-1. Open the key vault in the portal. 
+1. Open the key vault in the portal.
 2. Select **Access policies**, then **Add Access Policy**.
 3. Set **Secret Permissions** to **Get**.
 4. Select **Select principal**, and on the right, search for either **Application (client) ID** or display name for the key vault reader application. 
@@ -185,27 +186,14 @@ At this point, the work in Azure is finished.
 
 Finally, it's time to configure the NST to use the AAD application and its certificate when authenticating to the key vaults. This is done by setting the following values: 
 
- 
+|Setting|Value|
+|-------|-----|
+|AzureKeyVaultClientCertificateStoreLocation|LocalMachine|
+|AzureKeyVaultClientCertificateStoreName|MY|
+|AzureKeyVaultClientCertificateThumbprint|<the thumbprint that you printed above>|
+|AzureKeyVaultClientId|<the application/client ID from the Azure portal>|
+|AzureKeyVaultAppSecretsPublisherValidationEnabled|false|
 
-AzureKeyVaultClientCertificateStoreLocation        
-
-LocalMachine 
-
-AzureKeyVaultClientCertificateStoreName            
-
-My 
-
-AzureKeyVaultClientCertificateThumbprint           
-
-<the thumbprint that you printed above> 
-
-AzureKeyVaultClientId                              
-
-<the application/client ID from the Azure portal> 
-
-AzureKeyVaultAppSecretsPublisherValidationEnabled  
-
-false 
 
  
 
