@@ -223,11 +223,9 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 
 At this point, you can run your extensions that use key vault secrets to read secrets from key vault. For troubleshooting, please look in the Event Log and configure App Insights telemetry.
 
-## Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online 
+## Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
 
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the Azure Key Vault feature is available for all App Source apps. However, there are some onboarding tasks required.  
-
-Some steps are the same as for on-premises installations. You need to create one or two key vaults, and you need to adjust your extension manifest and AL code to read from these key vaults.
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the Azure Key Vault feature is available for all App Source apps. However, there are some onboarding tasks required. 
 
 ### Create the Azure Key Vault with secrets
 
