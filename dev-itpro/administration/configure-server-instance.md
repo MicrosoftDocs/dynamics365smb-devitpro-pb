@@ -224,7 +224,7 @@ The following table describes fields on the **Management Services** tab in the [
 
 The following table describes fields on the **Azure Key Vault Client Identity** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-These settings are used when you want to use Azure Key Vault to store extension secrets and data encryption keys. For more information, see [App Key Vaults](azure-key-vault.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
+These settings are used when you want to use Azure Key Vault to store extension secrets and data encryption keys. For more information, see [Extension Key Vaults](extension-key-vault.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------| 
@@ -239,7 +239,7 @@ The following table describes fields on the **Azure Key Vault Extension Secrets*
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------| 
-|Enable Publisher Validation|AzureKeyVaultAppSecretsPublisherValidationEnabled| Specifies whether extensions can only use key vaults that belong to their publishers. <ul><li> **true** enables validation. Extensions can only use key vaults that belong to their publishers. This setting blocks attempts in AL to read secrets from another publisher's key vault. </li><li>**false** disables publisher validation. **Important** When **false**, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security Considerations](azure-key-vault.md#security).</li></ul>An extension publisher's identity is specified when the extension is published. <br /><br />Default: false <br />Dynamically Updatable: No|
+|Enable Publisher Validation|AzureKeyVaultAppSecretsPublisherValidationEnabled| Specifies whether extensions can only use key vaults that belong to their publishers. <ul><li> **true** enables validation. Extensions can only use key vaults that belong to their publishers. This setting blocks attempts in AL to read secrets from another publisher's key vault. </li><li>**false** disables publisher validation. **Important** When **false**, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security Considerations](extension-key-vault.md#security).</li></ul>An extension publisher's identity is specified when the extension is published. <br /><br />Default: false <br />Dynamically Updatable: No|
 
 ## <a name="AzureAd"></a>Azure Active Directory (Azure AD) Settings
 
