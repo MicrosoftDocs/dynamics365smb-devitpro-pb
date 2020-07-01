@@ -1,6 +1,6 @@
----""''&copy;&trade;&reg;*
-title: User Authentication with Azure AD for Single Sign-on
-description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Office 365.
+---
+title: Azure Key Vaults with Business Central
+description: Describes how to use an Azure Key vault with Business Central extensions.
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
+# Azure Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
 
 Some [!INCLUDE[prodshort](../developer/includes/prodshort.md) extensions make web service calls to non-[!INCLUDE[prodshort](../developer/includes/prodshort.md) services. For example, one extension might call Azure Storage to read/write blobs. Another extension might call the extension publisher's web service to do an operation. 
 
