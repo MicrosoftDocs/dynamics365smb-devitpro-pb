@@ -1,4 +1,4 @@
----
+---""''&copy;&trade;&reg;*
 title: User Authentication with Azure AD for Single Sign-on
 description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Office 365.
 ms.custom: na
@@ -91,7 +91,7 @@ An extension manifest can specify up to two Azure Key Vaults, like this:
  
 The use case for specifying two key vaults is to ensure high availability. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate the key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute without impact because the other key vault will most likely be available.
 
-## Setting up Azure Key Vault for on-prem installations 
+## Setting up Azure Key Vault for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises 
 
 Follow the tasks in this section to configure an on-premises installation to use the Azure Key Vault feature. 
 
@@ -168,7 +168,7 @@ The steps in this task are done from the the [Azure portal](https://portal.azure
 
     In this step, you upload the certificate file that you obtained as part of the prerequisites.
 
-    From the registered applications overview page, select **Certificates & secrets**, **Upload certificate**, and follow instructions.
+    From the key vault reader application overview page, select **Certificates & secrets**, **Upload certificate**, and follow instructions to locate and upload the certificate.
 
 ### Grant the key vault reader application permission to read secrets from the key vaults
 
@@ -184,164 +184,38 @@ At this point, the work in Azure is finished.
 
 ## Configure the Business Central Server
 
-Finally, it's time to configure the NST to use the AAD application and its certificate when authenticating to the key vaults. This is done by setting the following values: 
+Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md) instance to use the key vault reader application and its certificate, which you registered in Azure AD, for authenticating to the key vaults.
 
-|Setting|Value|
-|-------|-----|
-|AzureKeyVaultClientCertificateStoreLocation|LocalMachine|
-|AzureKeyVaultClientCertificateStoreName|MY|
-|AzureKeyVaultClientCertificateThumbprint|<the thumbprint that you printed above>|
-|AzureKeyVaultClientId|<the application/client ID from the Azure portal>|
+You can configure the server instance using any of the following methods:
+
+- [!INCLUDE[admintool](../developer/includes/admintool.md)-
+- [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md).
+- Manually modifying the server instances CustomSetting.config file. 
+
+For more information about using these tools, see [Configuring Business Central Server](configure-server-instance.md).
+
+### Required settings
+The following table describes the settings that you configure to enable Azure key vault on the server instance:
+ 
+|Setting|Key name in CustomSetting.config|Value|Example|
+|--------|-------------------------------|-----|-------|
+|Client Certificate Store Location|AzureKeyVaultClientCertificateStoreLocation|Specifies the certificate store location for the Key Vault client certificate.|LocalMachine|
+|Client Certificate Store Name|AzureKeyVaultClientCertificateStoreName|Specifies the certificate store name for the Key Vault client certificate.|MY|
+|Client Certificate Thumbprint|AzureKeyVaultClientCertificateThumbprint|<the thumbprint that you printed above>|649419e4fbb87340f5a0f995e605b74c5f6d943e|
+|Client ID|AzureKeyVaultClientId|Specifies the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant. |ed4129d9-b913-4514-83db-82e305163bec|
 |AzureKeyVaultAppSecretsPublisherValidationEnabled|false|
 
 
- 
+> [!IMPORTANT]
+> Setting the AzureKeyVaultAppSecretsPublisherValidationEnabled to false means the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details.
 
-Caution: Setting the AzureKeyVaultAppSecretsPublisherValidationEnabled to false means the NST will not perform any additional validation that the extension has the right to read secrets from the key vaults that it specified. This implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details. 
-
- 
+At this point, you can run your extensions that use key vault secrets to read secrets from key vault. For troubleshooting, please look in the Event Log and configure App Insights telemetry. 
 
 At this point, you can run your extension and read secrets from key vault. For troubleshooting, please look in the Event Log and configure App Insights telemetry. 
 
- 
+## Setting up Azure Key Vault for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online 
 
-
-##
-In the Azure portal, create one or two Key Vaults in your Azure subscription. 
-
-Add the secrets to the key vault(s), which you want to make available to your extension. 
-
- 
-
-Access the secrets in the key vaults from your extension 
-
-Specify the key vaults in the extension manifest as illustrated above. 
-
-Access the secrets in the AL code as illustrated above. 
-
- 
-
-If you execute the AL code at this point, it will fail to access the secrets, and the reason is that the key vaults haven't granted anybody permission to read secrets in the key vaults. This must be done using the Access Policies on the key vaults. Specifically, we must grant an AAD application permission to read secrets from the key vaults. 
-
- 
-
-Create an AAD application 
-
-In the Azure portal, register a new AAD application by following these steps: 
-
-Open the Azure Active Directory blade 
-
-Click "App registrations" 
-
-Click "New registration" 
-
-Give a name such as "Business Central Key Vault Reader" 
-
-Click "Register" 
-s
-Make a note of the "Application (client) ID" guid. 
-
-Click "Certificates & secrets" 
-
-We need to add a certificate here - see next step 
-
- 
-
-Register a certificate on the AAD application 
-
-Obtain a certificate as you normally obtain certificates. 
-
- 
-
-You can also generate a self-signed certificate, for example using the following commands: 
-
-Generate a new self-signed certificate: 
-
-$cert = New-SelfSignedCertificate -Subject "BusinessCentralKeyVaultReader" -Provider "Microsoft Strong Cryptographic Provider" 
-
-The generated certificate will be placed in the LocalMachine\My certificate store. 
-
-You can print the certificate's thumbprint (you will need it later) using this command: 
-
-$cert.Thumbprint 
-
-Next, export the certificate to a .cer file: 
-
-Export-Certificate -Cert $cert -FilePath BusinessCentralKeyVaultReader.cer 
-
- 
-
-Go back to the Azure portal, locate the AAD application, and click on the "Certificates & secrets" page. Upload the .cer file. 
-
- 
-
-Grant the AAD application permission to read secrets from the key vaults 
-
-In the Azure portal, locate the key vaults again, and perform the following steps for each of them: 
-
-Click "Access policies" 
-
-Click "Add Access Policy" 
-
-Select "Secret permission": "Get" 
-
-Click "Select principal" and search for the AAD application above, either using its application/client ID or using its name 
-
-Click "Select" 
-
-Click "Add" 
-
-Click "Save" 
-
- 
-
-Configure the NST 
-
-Finally, it's time to configure the NST to use the AAD application and its certificate when authenticating to the key vaults. This is done by setting the following values: 
-
- 
-
-AzureKeyVaultClientCertificateStoreLocation        
-
-LocalMachine 
-
-AzureKeyVaultClientCertificateStoreName            
-
-My 
-
-AzureKeyVaultClientCertificateThumbprint           
-
-<the thumbprint that you printed above> 
-
-AzureKeyVaultClientId                              
-
-<the application/client ID from the Azure portal> 
-
-AzureKeyVaultAppSecretsPublisherValidationEnabled  
-
-false 
-
- 
-
-Caution: Setting the AzureKeyVaultAppSecretsPublisherValidationEnabled to false means the NST will not perform any additional validation that the extension has the right to read secrets from the key vaults that it specified. This implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details. 
-
- 
-
-At this point, you can run your extension and read secrets from key vault. For troubleshooting, please look in the Event Log and configure App Insights telemetry. 
-
- 
-
- 
-
-Instructions for SaaS 
-
-In Business Central SaaS, the App Key Vault feature is available for all App Source apps, however, there are onboarding steps. 
-
- 
-
-Note: Why isn't the App Key Vault feature available for PTEs (Per-Tenant Extensions) and developer extensions in SaaS? For security reasons. Since the Business Central SaaS service has permission to access key vaults from different ISVs, it needs a way to determine if a given extension has the right to access the key vaults that it specifies in the extension manifest. And since the Business Central SaaS service has no way of verifying who authored a given PTE or developer extension, it also cannot restrict access to only the author's key vaults. 
-
- 
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the Azure Key Vault feature is available for all App Source apps. However, there are some onboarding tasks required.  
 
 Some steps are the same as for on-premises installations. You need to create one or two key vaults, and you need to adjust your extension manifest and AL code to read from these key vaults. 
 
@@ -381,37 +255,29 @@ The onboarding process involves a manual verification step that verifies that yo
 
  
 
-Security considerations 
+## Security considerations 
 
-Please keep the following in mind when you use the App Key Vault feature. 
+Keep the following information in mind when you use the App Key Vault feature. 
 
- 
+### Use NonDebuggable 
 
-Use NonDebuggable 
+As always when your code works with secrets, whether from a key vault or from Isolated Storage, remember to mark the methods as NonDebuggable. This prevents other partners from debugging into your code and seeing the secrets. 
 
-As always when your code works with secrets, whether from a key vault or from Isolated Storage, remember to mark the functions as NonDebuggable. This prevents other partners from debugging into your code and seeing the secrets. 
-
- 
-
-Don't pass the App Key Vault Secret Provider to untrusted code 
+### Don't pass the App Key Vault Secret Provider to untrusted code 
 
 Once the App Key Vault Secret Provider codeunit has been initialized, it can be used to get secrets. If you pass the codeunit to another function, then that function can also use it. If you pass the codeunit to a function in another extension, then the other extension can also use the secret provider to get secrets. This may not be what you want, so be careful with who you pass the secret provider to. 
 
- 
-
-Run with publisher validation 
+### Run with publisher validation 
 
 In the on-premises steps above, you configured the NST to run with publisher validation disabled. You should only do this if you trust all extensions that get installed to not do malicious things like read secrets they are not supposed to. If you don't trust all extensions that might get installed, you should enable publisher validation. This is how the Business Central SaaS service is configured. 
 
- 
-
 When publisher validation is enabled, and an extension tries to initialize the App Key Vault Secret Provider codeunit, the following check will be performed: 
 
-Extension.KeyVaultUrls.AadTenantId == Extension.PublisherAadTenantId 
+`Extension.KeyVaultUrls.AadTenantId == Extension.PublisherAadTenantId`
 
 Only if this check is satisfied will the initialization succeed. 
 
-How does the NST know an extension publisher's AAD tenant ID? The value can be specified when publishing an extension, like this: 
+So how does the NST know an extension publisher's AAD tenant ID? The value can be specified when publishing an extension, like this: 
 
 Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid> 
 
