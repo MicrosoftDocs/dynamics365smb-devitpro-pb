@@ -1,4 +1,4 @@
----
+[Data Encryption](../developer/devenv-encrypting-data.md).---
 title: "Encrypting Data in Dynamics 365 for Business Central"
 ms.custom: na
 ms.date: 04/01/2020
