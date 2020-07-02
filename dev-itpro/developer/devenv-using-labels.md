@@ -10,19 +10,18 @@ author: blrobl
 ---
 
 # Working with Labels
-Labels are string constants displayed in the [!INCLUDE[prodshort](includes/prodshort.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage developement](devenv-work-with-translation-files.md).
+
+Labels are string constants displayed in the [!INCLUDE[prodshort](includes/prodshort.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage development](devenv-work-with-translation-files.md).
 
 ## Label syntax
 
 Labels have a specific syntax defined by a text constant followed by three optional parameters. They must be comma-separated, but the order of the parameters is not enforced. The parameters that you can set are described in the following table.
-
 
 | Parameter   | Type  | Description|
 |-------------|-------|--------------|
 |**Comment**  |Text   | Used for general comments about the label, specifically about the placeholders in that label.|
 |**Locked**   |Boolean| When Locked is set to **true**, the label should not be translated. Default value is **false**.|
 |**MaxLength**|Integer| Determines how much of the label is used. If no maximum length is specified, the string can be any length.|
-
 
 ## Using labels
 
