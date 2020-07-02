@@ -20,7 +20,6 @@ The credential is a kind of secret. It is secret to the extension. It shouldn't 
 
 Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault.
 
-
 ## Specifying Azure Key Vault in extensions
 
 To use an Azure Key Vault for an extension, you specify the key vault the extension's manifest file (app.json), like this: 
@@ -182,7 +181,7 @@ In this task, you grant the key vault reader application permission to read secr
 
 At this point, the work in Azure is finished.
 
-## Configure the Business Central Server for the Apps Key Vault
+### Configure the Business Central Server for the Apps Key Vault
 
 Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md) instance to use the key vault reader application and its certificate, which you registered in Azure AD, for authenticating to the key vaults.
 
@@ -282,7 +281,7 @@ To provision the key vault reader application, use the [Azure Active Directory P
     
     This step provisions the application in your Azure AD tenant, where it now "lives" together with your key vaults.
 
-## Grant the key vault reader application permission to your key vaults
+### Grant the key vault reader application permission to your key vaults
 
 The next task is to grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the the [Azure portal](https://portal.azure.com).
 
@@ -292,8 +291,7 @@ The next task is to grant the key vault reader application permission to read se
 4. Select **Select principal**, and on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV Key Vault Reader**. 
 5. Select **Add**, then **Save**.
 
-
-## Contact Microsoft to enable the App Key Vault feature 
+### Contact Microsoft to enable the App Key Vault feature
 
 Send an email to TODO@microsoft.com to start the onboarding process. This should be done before you publish your updated extension to Partner Center.
 
@@ -303,7 +301,7 @@ The onboarding process involves a manual verification step that verifies that yo
 
 Keep the following information in mind when you use the App Key Vault feature. 
 
-### Use NonDebuggable 
+### Use NonDebuggable
 
 As always when your code works with secrets, whether from a key vault or from Isolated Storage, remember to mark the methods as NonDebuggable. This prevents other partners from debugging into your code and seeing the secrets. 
 
