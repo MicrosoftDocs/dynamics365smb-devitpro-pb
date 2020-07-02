@@ -73,22 +73,22 @@ The following example illustrates the generated .xml file from **MyProject** whi
 
 The mapping of object types in the XML generated from Visual Studio Code is the following:
 
-|Object type|Number|
-|-----------|------|
-|TableData  |  0   |
-|Table      |  1   |
-|Report     |  3   |
-|Codeunit   |  5   |
-|XMLPort    |  6   |
-|Page       |  8   |
-|Query      |  9   |
-|FieldNumber|  11  |
-|PageExtension|  14|
-|TableExtension| 15|
-|Enum       |  16  |
-|EnumExtension| 17 |
-|Profile    |  18  |
-|ProfileExtension|19|
+|Object type      |Number|
+|-----------------|------|
+|TableData        |  0   |
+|Table            |  1   |
+|Report           |  3   |
+|Codeunit         |  5   |
+|XMLPort          |  6   |
+|Page             |  8   |
+|Query            |  9   |
+|FieldNumber      |  11  |
+|PageExtension    |  14  |
+|TableExtension   |  15  |
+|Enum             |  16  |
+|EnumExtension    |  17  |
+|Profile          |  18  |
+|ProfileExtension |  19  |
 
 
 ## See Also
