@@ -17,6 +17,7 @@ ms.author: jswymer
 
 App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. Extensions can be configured to retrieve secrets from one or key vaults.
 
+There are various reasons retrieving secret might fail, for example, 
 The gathered data can help you identify, troubleshoot, and resolve issues with per-tenant extensions. For more information about using key vault secrets with extensions, see [App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-key-vault.md).
 
 ## App Key Vault secret initialization succeeded
@@ -139,7 +140,6 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 
 <!--
 {"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","Component version":"16.0.14248.0","componentVersion":"16.0.14248.0","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","extensionPublisher":"Microsoft","Company name":"CRONUS International Ltd.","AL Object Id":"3801","Extension version":"17.0.14320.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"17.0.14320.0","Client type":"WebClient","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Server","alObjectId":"3801","clientType":"WebClient","Extension name":"System Application","extensionName":"System Application","eventId":"RT0016","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","AL Object name":"App Key Vault Secret Pr. Impl.","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","AL Object type":"CodeUnit","alObjectName":"App Key Vault Secret Pr. Impl.","alObjectType":"CodeUnit","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","keyVaultUrl":"https://jswymer-keyvault-1.vault.azure.net/"}
-
 -->
 
 ## App Key Vault secret retrieval failed
