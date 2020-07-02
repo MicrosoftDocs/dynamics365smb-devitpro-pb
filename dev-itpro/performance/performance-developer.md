@@ -36,7 +36,7 @@ To avoid unnecessary recalculation of expensive results, consider caching the da
 
 Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
 
-### Pattern - Do less 
+### Pattern - Do less
 
 One way to speed up things is to reduce the work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. An additional benefit of a simple page with few UI elements can also be ease of use and navigation.
 
@@ -50,7 +50,7 @@ To get to a responsive UI fast, consider using Page Background Tasks for calcula
 
 For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
-## Writing efficient Web Services 
+## Writing efficient Web Services
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server (the endpoint) and as seen from the consumer (the client). 
 
@@ -116,11 +116,14 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When concatenating strings, make sure to use the `TextBuilder` datatype and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
+When concatenating strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
 Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). For more information, see [List Data Type](../developer/methods-auto/list/list-data-type.md).
+
+Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `Media` and `MediaSet` data types have a couple advantages over the `Blob` data type when working with images. First of all, a thumbnail version of the image is generated when you save the data. You can use the thumbnail when loading a page and then load the larger image asynchronously using a page background task. Second, data for `Media` and `MediaSet` data types is cached on the client. Data for the `Blob` data type is never cached on the server. It's always fetched from the database.
+
 
 ### <a name="runasync"></a>Pattern - Run async (and parallelize)
 
@@ -176,6 +179,8 @@ Read more about query objects here:
 - [Query overview](../developer/devenv-query-overview.md)  
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
+
+
 
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
@@ -245,7 +250,7 @@ Read more about SIFT here:
 
 The following article can help you find missing SIFT indexes on FlowFields:
 
-[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md). 
+[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
 
 ### How AL relates to SQL 
 
