@@ -34,6 +34,10 @@ You can generate a permission set file which contains permissions to all the fil
     > If you do this repeatedly, Visual Studio Code will probe for overwriting the file, there is no support for merging manual corrections into newly generated content.
 3. Publish the app. 
 
+Now, you have the XML file with default permissions to all your objects.
+
+### Example from Visual Studio Code
+
 The following example illustrates the generated .xml file from **MyProject** which contains a table with objectID 50106 and two object types are generated; `<ObjectType>0</ObjectType>` is `TableData` and `<ObjectType>1</ObjectType>` is `Table`.
 
 ```xml
@@ -65,7 +69,7 @@ The following example illustrates the generated .xml file from **MyProject** whi
 
 ```
 
-Now, you have the XML file with default permissions to all your objects.
+### Object type mapping
 
 The mapping of object types in the XML generated from Visual Studio Code is the following:
 
