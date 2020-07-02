@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 07/01/2020
 ---
 
 # Configure Context-Sensitive Help
@@ -50,9 +50,9 @@ In this example, the *helpBaseUrl* and *supportedLocales* properties specify tha
 
 ## Page-level configuration
 
-Your target website is expected to have a default page that will display if nothing else is specified. But for each page or page extension, and for each field or field group on those pages, you can then specify the exact Help page that describes this page or field. You can do that using the *ContextSensitiveHelpPage* property as shown in the following example:
+Your target website is expected to have a default page that will display if nothing else is specified. But for each page or page extension, you can then specify the exact Help page that describes this page or the fields that the page extension adds to the page. You can do that using the *ContextSensitiveHelpPage* property as shown in the following example:
 
-```
+```AL
 page 50101 "Reward Card"
 {
     PageType = Card;
@@ -63,6 +63,17 @@ page 50101 "Reward Card"
 ```
 
 In this example, the app contains a page object that is mapped to the *sales-rewards* Help file on the website that the app.json specifies. As a result, the *Learn more* link in the tooltips for this page will go to the equivalent of *https://mysite.com/documentation/sales-rewards*.  
+
+Similarly, the following code example shows a page extension object that also sets the *ContextSensitiveHelpPage* property so that the *Learn more* link in tooltips for the fields that this page extension adds to the Customer Card will go to the *https://mysite.com/documentation/sales-rewards* page rather than the default location at docs.microsoft.com:
+
+```AL
+pageextension 50104 "Customer Card Ext" extends "Customer Card"
+{
+    ContextSensitiveHelpPage = 'sales-rewards';
+    layout
+    {...}
+}
+```
 
 You can use the [ContextSensitiveHelpPage property](../developer/properties/devenv-contextsensitivehelppage-property.md) to direct all Help calls to the same article, or to group the Help calls based on individual features or workflows. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the Help for specific area in the base application. If the Help for a specific area is made more granular, then the context-sensitive Help mapping is updated accordingly.  
 
