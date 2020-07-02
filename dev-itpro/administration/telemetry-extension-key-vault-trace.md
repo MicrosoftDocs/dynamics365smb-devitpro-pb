@@ -1,5 +1,5 @@
 ---
-title:  Extension Update Trace Telemetry | Microsoft Docs
+title:  App Key Vault Secret Trace Telemetry | Microsoft Docs
 description: Learn about the extension upgrade telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
@@ -11,7 +11,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 05/10/2020
 ms.author: jswymer
 ---
-# Analyzing Extension Update Trace Telemetry
+# Analyzing App Key Vault Secret Trace Telemetry
 
 **INTRODUCED IN:** Business Central 2020 release wave 2
 
@@ -28,7 +28,7 @@ Occurs when an extension secret was successfully initialized.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**App Key Vault initialization succeeded: '{keVaultUri}'.**|
+|message|**App Key Vault initialization succeeded: '{keyVaultUri}'.**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -111,7 +111,7 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**App Key Vault secret retrieval succeeded from key vault '{keVaultUri}'.**|
+|message|**App Key Vault secret retrieval succeeded from key vault '{keyVaultUri}'.**|
 |severityLevel|**1**|
 
 ### Custom dimensions
@@ -150,7 +150,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**App Key Vault secret retrieval failed from key vault '{keVaultUri}'.**|
+|message|**App Key Vault secret retrieval failed from key vault '{keyVaultUri}'.**|
 |severityLevel|**3**|
 
 ### Custom dimensions
