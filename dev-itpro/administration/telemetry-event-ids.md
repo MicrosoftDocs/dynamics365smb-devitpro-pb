@@ -31,8 +31,10 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 |RT0010|Extension lifecycle|[Extension Update Failed: exception raised in extension {extensionName} by {extensionPublisher} (updating to version {extensionTargetedVersion})](telemetry-extension-update-trace.md#extension-update-failed-exception-raised-in-extension) | 
 | RT0012 | Performance | [Database lock timed out](telemetry-database-locks-trace.md#database-lock-timed-out) | 
 | RT0013 | Performance | [Database lock snapshot: {snapshotId}](telemetry-database-locks-trace.md#database-lock-snapshot) |
-| RT0017 | Performance | [Database lock snapshot: {snapshotId}](telemetry-database-locks-trace.md#database-lock-snapshot) |
-
+| RT0014 | Security | [App Key Vault initialization succeeded: '{keyVaultUri}'](telemetry-extension-key-vault-trace.md#initializedsuccess) |
+| RT0015 | Security | [App Key Vault initialization failed](telemetry-extension-key-vault-trace.md#initializedfailed) |
+| RT0016 | Security | [App Key Vault secret retrieval succeeded from key vault '{keyVaultUri}'](telemetry-extension-key-vault-trace.md#retrievedsuccess) |
+| RT0017 | Security | [App Key Vault secret retrieval failed from key vault: '{keyVaultUri}'](telemetry-extension-key-vault-trace.md#retrievedfailed) |
 
 
 ## Lifecycle events

@@ -75,6 +75,7 @@
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ## Monitoring and Analyzing Telemetry
 ### [Overview](administration/telemetry-overview.md)
+### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 ### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
