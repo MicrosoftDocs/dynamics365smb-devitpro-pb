@@ -188,15 +188,15 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 
 1. If not already done, import your key vault certificate to the local certificate store for your [!INCLUDE[prodshort](../developer/includes/prodshort.md) server computer.
 
-    You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) orr [Import-Certificate cmdlet](/powershell/module/pkiclient/import-certificate) from a Windows PowerShell prompt.
+    1. You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) orr [Import-Certificate cmdlet](/powershell/module/pkiclient/import-certificate) from a Windows PowerShell prompt.
 
-    For example, the following PowerShell command installs a certificate to the local machine's personal store: 
+      For example, the following PowerShell command installs a certificate to the local machine's personal store: 
     
-    ```powershell
-    Import-Certificate -FilePath "C:\certificates\BusinessCentralKeyVaultReader.cer" -CertStoreLocation Cert:\LocalMachine\My
-    ```
-        
-    Make a note of the certificate thumbprint because you'll need it in the next step. For instructions on getting the thumbprint using the MMC snap-in, see [How to: Retrieve the Thumbprint of a Certificate](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
+        ```powershell
+        Import-Certificate -FilePath "C:\certificates\BusinessCentralKeyVaultReader.cer" -CertStoreLocation Cert:\LocalMachine\My
+        ```
+
+    2.     Make a note of the certificate thumbprint because you'll need it in the next step. For instructions on getting the thumbprint using the MMC snap-in, see [How to: Retrieve the Thumbprint of a Certificate](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
 
 2. Configure the server instance.
 
