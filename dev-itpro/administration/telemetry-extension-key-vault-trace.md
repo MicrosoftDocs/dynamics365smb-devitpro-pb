@@ -19,19 +19,21 @@ App key vault telemetry gathers information about the acquisition of secrets in 
 
 The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
 
-- Initialization is the first stage. This stage verifies the configuration of the app key vault provider in the extension and on the service. To give you a better understanding idea of what happens in this stage, here are some conditions that cause failures:
+#### Initialization
 
-    - The extension doesn't specify a key vault in it's app.json file.
-    - The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
-    - The Business Central Server lacks permission to the private key of the Azure Key Vault client certificate.
+Initialization is the first stage. This stage verifies the configuration of the app key vault provider in the extension and on the service. To give you a better understanding idea of what happens in this stage, here are some conditions that cause failures:
 
-- Retrieval is the second stage, and occurs after a successful initialization. In this stage, the service tries to get a secret from a specified key vault. Some conditions that cause failures include:
+- The extension doesn't specify a key vault in it's app.json file.
+- The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
+- The Business Central Server lacks permission to the private key of the Azure Key Vault client certificate.
 
-    - The secret name requested by the extension is missing or not valid.
-    - 
-    - The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
-    - The Business Central Server lacks permission to the private key of the Azure Key Vault client certificate.
+#### Retrieval
 
+Retrieval is the second stage, and occurs after a successful initialization. In this stage, the service tries to get a secret from a specified key vault. Some conditions that cause failures include:
+
+- The secret name requested by the extension is missing or not valid.
+- The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
+- The Business Central Server lacks permission to the private key of the Azure Key Vault client certificate.
 
 For more information about using key vault secrets with extensions, see [App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-key-vault.md).
 
