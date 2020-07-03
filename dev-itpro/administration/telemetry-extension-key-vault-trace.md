@@ -17,8 +17,23 @@ ms.author: jswymer
 
 App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. Extensions can be configured to retrieve secrets from one or key vaults.
 
-There are various reasons retrieving secret might fail, for example, 
-The gathered data can help you identify, troubleshoot, and resolve issues with per-tenant extensions. For more information about using key vault secrets with extensions, see [App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-key-vault.md).
+The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
+
+- Initialization is the first stage. This stage verifies the configuration of the app key vault provider in the extension and on the service. To give you a better understanding idea of what happens in this stage, here are some conditions that cause failures:
+
+    - The extension doesn't specify a key vault in it's app.json file.
+    - The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
+    - The Business Central Server lacks permission to the private key of the Azure Key Vault client certificate.
+
+- Retrieval is the second stage, and occurs after a successful initialization. In this stage, the service tries to get a secret from a specified key vault. Some conditions that cause failures include:
+
+    - The secret name requested by the extension is missing or not valid.
+    - 
+    - The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
+    - The Business Central Server lacks permission to the private key of the Azure Key Vault client certificate.
+
+
+For more information about using key vault secrets with extensions, see [App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-key-vault.md).
 
 ## <a name="initializedsuccess"></a>App Key Vault secret initialization succeeded
 
@@ -48,10 +63,10 @@ Occurs when an extension secret was successfully initialized.
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0014**|
-|extensionName|Specifies the name of the extension.|
-|extensionId|Specifies the AppID of the extension.|
-|extensionPublisher|Specifies the publisher of the extension|
-|extensionVersion|Specifies the version of the extension.|
+|extensionName|Specifies the name of the extension that requested the secret. |
+|extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionPublisher|Specifies the publisher of the extension that requested the secret. |
+|extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
@@ -89,10 +104,9 @@ Occurs when a key vault failed to be initialized.
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0015**|
-|extensionName|Specifies the name of the extension.|
-|extensionId|Specifies the AppID of the extension.|
-|extensionPublisher|Specifies the publisher of the extension|
-|extensionVersion|Specifies the version of the extension.|
+|extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionPublisher|Specifies the publisher of the extension that requested the secret. |
+|extensionVersion|Specifies the version of the extension that requested the secret.|
 |failureReason|Specifies the error that occurred.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
@@ -100,7 +114,7 @@ Occurs when a key vault failed to be initialized.
 <!--
 ## Example
 
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","Component version":"16.0.14248.0","componentVersion":"16.0.14248.0","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","AL Object Id":"3801","Company name":"CRONUS International Ltd.","Client type":"WebClient","companyName":"CRONUS International Ltd.","eventId":"RT0015","clientType":"WebClient","alObjectId":"3801","extensionPublisher":"Microsoft","Extension version":"17.0.14320.0","extensionVersion":"17.0.14320.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","Extension name":"System Application","extensionName":"System Application","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","AL Object name":"App Key Vault Secret Pr. Impl.","alObjectName":"App Key Vault Secret Pr. Impl.","alObjectType":"CodeUnit","failureReason":"No key vaults specified for extension 'ALProject4 by Me 1.0.0.3'.","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 4 - ALProject4 by Me","AL Object type":"CodeUnit","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 4 - ALProject4 by Me"}
+{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionPublisher":"Microsoft","Extension version":"17.0.14384.0","Component version":"16.0.14248.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"17.0.14384.0","componentVersion":"16.0.14248.0","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50100).OnOpenPage(Trigger) line 4 - ALProject1 by Default publisher","AL Object type":"CodeUnit","Extension name":"System Application","AL Object name":"App Key Vault Secret Pr. Impl.","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","extensionName":"System Application","failureReason":"Extension 'ALProject1 by Default publisher 1.0.0.4' does not have a publisher AAD tenant ID, so it cannot use key vaults. The publisher's AAD tenant ID must be specified at publish time.","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50100).OnOpenPage(Trigger) line 4 - ALProject1 by Default publisher","Company name":"CRONUS International Ltd.","alObjectType":"CodeUnit","alObjectName":"App Key Vault Secret Pr. Impl.","AL Object Id":"3801","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","Client type":"WebClient","companyName":"CRONUS International Ltd.","alObjectId":"3801","clientType":"WebClient","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"RT0015"}
 
 -->
 ## <a name="retrievedsuccess"></a>App Key Vault secret retrieval succeeded
@@ -131,10 +145,9 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0016**|
-|extensionName|Specifies the name of the extension.|
-|extensionId|Specifies the AppID of the extension.|
-|extensionPublisher|Specifies the publisher of the extension|
-|extensionVersion|Specifies the version of the extension.|
+|extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionPublisher|Specifies the publisher of the extension that requested the secret. |
+|extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
@@ -170,11 +183,9 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0017**|
-|extensionName|Specifies the name of the extension.|
-|extensionId|Specifies the AppID of the extension.|
-|extensionPublisher|Specifies the publisher of the extension|
-|extensionVersion|Specifies the version of the extension.|
-|failureReason|Specifies the error that occurred.|
+|extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionPublisher|Specifies the publisher of the extension that requested the secret. |
+|extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
@@ -189,7 +200,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 
 ## See also
 
-[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
+[App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-key-vault.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
 [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
