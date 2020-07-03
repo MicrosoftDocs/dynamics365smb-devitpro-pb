@@ -70,7 +70,6 @@ var
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
 > - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
 > - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
-> - [ReqFilterHeadingML](properties/devenv-reqfilterheadingml-property.md)
 > - [RequestFilterHeadingML](properties/devenv-requestfilterheadingml-property.md)
 > - [ToolTipML](properties/devenv-tooltipml-property.md)
 > 
@@ -121,7 +120,8 @@ We recommend that you use only one .txt file per language. There is no enforced 
 For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ## See Also
-[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  
+[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)   
+[Working with labels](devenv-using-labels.md)    
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
 [JSON Files](devenv-json-files.md)
 

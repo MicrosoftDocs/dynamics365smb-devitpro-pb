@@ -369,6 +369,7 @@
 ### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Protected Variables](developer/devenv-protected-variables.md)
+### [Working with labels](developer/devenv-using-labels.md)
 ### Objects
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
