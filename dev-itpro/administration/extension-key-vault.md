@@ -295,7 +295,7 @@ To provision the key vault reader application, use the [Azure Active Directory P
     New-AzureADServicePrincipal -AppId 7e97dcfb-bcdd-426e-8f0a-96439602627a
     ```
     
-    7e97dcfb-bcdd-426e-8f0a-96439602627a is the Application (client) ID of Microsoft's centralized Azure AD application.
+    `7e97dcfb-bcdd-426e-8f0a-96439602627a` is the Application (client) ID of Microsoft's centralized Azure AD application.
     
     This step provisions the application in your Azure AD tenant, where it now "lives" together with your key vaults.
 
@@ -342,6 +342,7 @@ So how does the NST know an extension publisher's AAD tenant ID? The value can b
 Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid> 
 
 In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
+
 
 ## See Also  
 
