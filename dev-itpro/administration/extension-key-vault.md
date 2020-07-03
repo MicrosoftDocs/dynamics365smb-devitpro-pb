@@ -96,24 +96,28 @@ Follow the tasks in this section to configure an on-premises installation to use
 
 ### Prerequisites
 
-- Configure Azure Active Directory (Azure AD) authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
+- An Azure subscription with an Active Directory tenant.
 
-    For more information, see [Authenticating Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md).
+    You sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com). For information about getting an Azure AD tenant, see [How to get an Azure Active Directory tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
-- Obtain a security certificate
+- A security certificate
 
-    As part of the setup later on, you'll have to register and configure an application in Azure AD for reading key vault, which requires the use of a certificate. The certificate is used prove the application's identity when requesting upon request. In a production environment, obtain a certificate from a certification authority or trusted provider. In a test environment, if you don't have a certificate, then you can create your own self-signed certificate.
+    As part of the setup later on, you'll have to register and configure an application in Azure AD for reading key vault, which requires the use of a certificate. The certificate is used prove the application's identity when requesting upon request. In a production environment, obtain a certificate from a certification authority or trusted provider. 
 
-<!-- 
-```powershell
+    In a test environment, if you don't have a certificate, then you can create your own self-signed certificate. For example, on your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer, start Windows PowerShell as an administrator. Then at the prompt, run the following commands, one at a time:
+        
+    ```powershell
     $cert = New-SelfSignedCertificate -Subject "BusinessCentralKeyVaultReader" -Provider "Microsoft Strong Cryptographic Provider"
+            Export-Certificate -Cert $cert -FilePath c:\certs\BusinessCentralKeyVaultReader.cer
+    ```
 
+    ```powershell
     $cert.Thumbprint
+    ```
 
+    ```powershell
     Export-Certificate -Cert $cert -FilePath c:\certs\BusinessCentralKeyVaultReader.cer
-```
--->
-
+    ```
 
 ### Create the Azure Key Vault with secrets
 
@@ -131,21 +135,20 @@ Now, you create one or more key vaults in Azure, and add the secrets that you wa
 
 There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
 
-The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](/azure/key-vault/secrets/quick-create-portal). 
+The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal). 
 
 For using other methods, see [Azure Key Vault Developer's Guide](/azure/key-vault/general/developers-guide#creating-and-managing-key-vaults).
 
 ### Register a key vault reader application in Azure AD
 
-Next, register a new application on your Azure AD tenant for reading secrets from the key vaults.
-
-When Azure AD authentication was set up, an Azure AD tenant was created in Azure. Reading key vaults requires a separate application registration with the Azure AD tenant.
+Next, register an application on your Azure AD tenant for reading secrets from the key vaults. When Azure AD authentication was set up, an Azure AD tenant was created in Azure. Reading key vaults requires a separate application registration with the Azure AD tenant. You can use an existing application if you have one.
 
 The steps in this task are done from the the [Azure portal](https://portal.azure.com).
 
-1. Register an Azure AD application for the reading key vault.
+1. Sign-in to Azure portal at [portal.azure.com](http://portal.azure.com) and set the portal to your Azure Active Directory tenant.
+2. Register an Azure AD application for the reading key vault.
 
-    You add the new application by using the [Azure portal](https://portal.azure.com). For guidelines, see [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+    You add the new application by using the [Azure portal](https://portal.azure.com). For guidelines, see [Register your application with your Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
     
     When you add an application to an Azure AD tenant, you must specify the following information:
 
@@ -171,13 +174,16 @@ The steps in this task are done from the the [Azure portal](https://portal.azure
 
 ### Grant the key vault reader application permission to key vaults
 
-In this task, you grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the the [Azure portal](https://portal.azure.com).
+In this task, you grant the key vault reader application permission to read secrets from your key vaults.
+
+The steps in this task are done from the the [Azure portal](https://portal.azure.com).
 
 1. Open the key vault in the portal.
 2. Select **Access policies**, then **Add Access Policy**.
 3. Set **Secret Permissions** to **Get**.
 4. Select **Select principal**, and on the right, search for either **Application (client) ID** or display name for the key vault reader application. 
-5. Select **Add**, then **Save**.
+5. Select **Add**.
+6. Select **Save**.
 
 At this point, the work in Azure is finished.
 
@@ -195,9 +201,21 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
         Import-Certificate -FilePath "C:\certificates\BusinessCentralKeyVaultReader.cer" -CertStoreLocation Cert:\LocalMachine\My
         ```
 
-    2.     Make a note of the certificate thumbprint because you'll need it in the next step. For instructions on getting the thumbprint using the MMC snap-in, see [How to: Retrieve the Thumbprint of a Certificate](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
+2. Give the service account used by the [!INCLUDE[server](../developer/includes/server.md) instance permission to access the certificates private key.
 
-2. Configure the server instance.
+    1.  In the left pane of MMC, expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then select the **Certificates** subfolder.  
+      
+    2.  In the right pane, right-click the certificate, select **All Tasks**, and then choose **Manage Private Keys**.  
+      
+    3.  In the **Permissions** dialog box for the certificate, choose **Add**.  
+      
+    4.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, enter the name of the dedicated domain user account that is associated with [!INCLUDE[server](../developer/includes/server.md)], and then choose the **OK** button.  
+      
+    5.  In the **Full Control** field, select **Allow**, and then choose the **OK** button.  
+
+3. Make a note of the certificate thumbprint because you'll need it in the next step. For instructions on getting the thumbprint using the MMC snap-in, see [How to: Retrieve the Thumbprint of a Certificate](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
+
+4. Configure the server instance.
 
     Now, you'll configure App Key Vault settings on the server instance. You can use any of the following methods:
     
