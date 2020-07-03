@@ -102,13 +102,12 @@ Follow the tasks in this section to configure an on-premises installation to use
 
 - A security certificate
 
-    As part of the setup later on, you'll have to register and configure an application in Azure AD for reading key vault, which requires the use of a certificate. The certificate is used prove the application's identity when requesting upon request. In a production environment, obtain a certificate from a certification authority or trusted provider. 
+    As part of the setup later on, you'll have to register and configure an application in Azure AD for reading key vault, which requires the use of a certificate. The certificate is used to prove the application's identity when requesting upon request. In a production environment, obtain a certificate from a certification authority or trusted provider. 
 
     In a test environment, if you don't have a certificate, then you can create your own self-signed certificate. For example, on your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer, start Windows PowerShell as an administrator. Then at the prompt, run the following commands, one at a time:
         
     ```powershell
     $cert = New-SelfSignedCertificate -Subject "BusinessCentralKeyVaultReader" -Provider "Microsoft Strong Cryptographic Provider"
-            Export-Certificate -Cert $cert -FilePath c:\certs\BusinessCentralKeyVaultReader.cer
     ```
 
     ```powershell
@@ -118,6 +117,8 @@ Follow the tasks in this section to configure an on-premises installation to use
     ```powershell
     Export-Certificate -Cert $cert -FilePath c:\certs\BusinessCentralKeyVaultReader.cer
     ```
+
+    These commands add a certificate called BusinessCentralKeyVaultReader to the computer's **LocalMachine** > **Personal (My)** certificate store.
 
 ### Create the Azure Key Vault with secrets
 
@@ -193,7 +194,7 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 
 1. If not already done, import your key vault certificate to the local certificate store for your [!INCLUDE[prodshort](../developer/includes/prodshort.md) server computer.
 
-    1. You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) orr [Import-Certificate cmdlet](/powershell/module/pkiclient/import-certificate) from a Windows PowerShell prompt.
+    1. You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) or [Import-Certificate cmdlet](/powershell/module/pkiclient/import-certificate) from a Windows PowerShell prompt.
 
       For example, the following PowerShell command installs a certificate to the local machine's personal store: 
     
@@ -203,37 +204,47 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 
 2. Give the service account used by the [!INCLUDE[server](../developer/includes/server.md) instance permission to access the certificates private key.
 
-    1.  In the left pane of MMC, expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then select the **Certificates** subfolder.  
-      
-    2.  In the right pane, right-click the certificate, select **All Tasks**, and then choose **Manage Private Keys**.  
-      
-    3.  In the **Permissions** dialog box for the certificate, choose **Add**.  
-      
-    4.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, enter the name of the dedicated domain user account that is associated with [!INCLUDE[server](../developer/includes/server.md)], and then choose the **OK** button.  
-      
-    5.  In the **Full Control** field, select **Allow**, and then choose the **OK** button.  
+    To do this using the MMC:
 
-3. Make a note of the certificate thumbprint because you'll need it in the next step. For instructions on getting the thumbprint using the MMC snap-in, see [How to: Retrieve the Thumbprint of a Certificate](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
+    1.  Open the MMC snap-in for certificates. See [How to: View Certificates with the MMC Snap-in](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
+    
+    2. Expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then select the **Certificates** subfolder.  
+      
+    3.  In the right pane, right-click the certificate, select **All Tasks**, and then choose **Manage Private Keys**.  
+      
+    4.  In the **Permissions** dialog box for the certificate, choose **Add**.  
+      
+    5.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, enter the name of the dedicated domain user account that is associated with [!INCLUDE[server](../developer/includes/server.md)], and then choose the **OK** button.  
+      
+    6.  In the **Full Control** field, select **Allow**, and then choose the **OK** button.  
 
-4. Configure the server instance.
+3. Make a note of the certificate thumbprint because you'll need it in the next step. See [How to: Retrieve the Thumbprint of a Certificate](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
 
-    Now, you'll configure App Key Vault settings on the server instance. You can use any of the following methods:
-    
-    - [!INCLUDE[admintool](../developer/includes/admintool.md)
-    - [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md).
-    - Manually modifying the server instances CustomSetting.config file. 
-    
-    For more information about using these tools, see [Configuring Business Central Server](configure-server-instance.md).
-    
-    The following table describes the settings that you configure to enable Azure key vault on the server instance:
+4. Configure the [!INCLUDE[server](../developer/includes/server.md) instance.
+
+    Now, you'll configure App Key Vault settings on the server instance. The following table describes the settings that you must configure to enable Azure key vault on the server instance:
      
-    |Setting|Key name in CustomSetting.config|Value|Example|
+    |Admin Tool Setting|Key name for  CustomSetting.config|Value|Example|
     |--------|-------------------------------|-----|-------|
     |Client Certificate Store Location|AzureKeyVaultClientCertificateStoreLocation|Set to the certificate store location where key vault certificate was stored.|LocalMachine|
     |Client Certificate Store Name|AzureKeyVaultClientCertificateStoreName|Set to the certificate store name where key vault certificate was stored.|MY|
     |Client Certificate Thumbprint|AzureKeyVaultClientCertificateThumbprint|Set to the thumbprint for the key vault certificate.|649419e4fbb87340f5a0f995e605b74c5f6d943e|
     |Client ID|AzureKeyVaultClientId|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant. |ed4129d9-b913-4514-83db-82e305163bec|
     |Enable Publisher Validation|AzureKeyVaultAppSecretsPublisherValidationEnabled| Specifies whether extensions can only use key vaults that belong to their publishers. An extension publisher's identity is specified when the extension is published. Enabling this setting blocks attempts in AL to read secrets from another publisher's key vault.|false|
+
+    You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
+      
+    For example, to use the Set-NAVServerConfiguration cmdlet, start the [[!INCLUDE[admintool](../developer/includes/admintool.md)] as an administrator, and run the following commands one at a time. Substitute brackets with your own values.
+
+    ```powershell
+    Import-Module Microsoft.Dynamics.Nav.Management.dll 
+    Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreLocation -KeyValue <certificate store location>    
+    Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreName -KeyValue <certifcate store>    
+    Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateThumbprint -KeyValue <certificate thumbprint> 
+    Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientId -KeyValue <application ID of key vault reader app in Azure> 
+    Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultAppSecretsPublisherValidationEnabled -KeyValue false 
+    Restart-NAVServerInstance -ServerInstance <serverInstance> 
+    ```
 
     > [!IMPORTANT]
     > Setting the `AzureKeyVaultAppSecretsPublisherValidationEnabled` to false means the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details.
@@ -347,4 +358,5 @@ In SaaS, this value will always be empty for PTEs and dev extensions, and it wil
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
+[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)   
+[Configuring Business Central Server](configure-server-instance.md)  
