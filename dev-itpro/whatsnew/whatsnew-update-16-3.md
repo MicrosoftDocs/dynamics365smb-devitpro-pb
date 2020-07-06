@@ -24,7 +24,7 @@ Below you'll find an overview and relevant links to what has been done on hotfix
 
 - [Bank reconciliation improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/bank-reconciliation-improvements)
 - [Extension lifecycle telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/extension-lifecycle-telemetry-application-insights-partners)
-- [Client pageview telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features) <!-- Link ej klart endnu…! -->
+- [Client page view telemetry in Application Insights for partners](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/client-pageview-telemetry-application-insights-partners)
 - [Installing AppSource apps updates in the Business Central administration center](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps) – rollout has been completed. Customers can now discover and install all AppSource apps updates in the Business Central Admin Center. 
 - Feature Update: [Page layout is now cached to browser storage](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/improved-load-time-pages) 
 
