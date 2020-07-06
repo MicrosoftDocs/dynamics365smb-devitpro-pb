@@ -24,7 +24,9 @@ The following example shows how to initialize the codeunit 131007 `Library - Rep
 codeunit 50105 MyReportTesting
 {
     Subtype = Test;
-
+    
+    [Test]
+    [HandlerFunctions('RemittanceAdviceJournalRequestPageHandler')]
     procedure TestingReports();
     var
         XmlParameters: Text;
