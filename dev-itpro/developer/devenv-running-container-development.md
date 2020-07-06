@@ -44,7 +44,7 @@ Use this command to run a sandbox container with the US localization of version 
 ```docker run -e accept_eula=Y -m 4G -e artifacturl=https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us mcr.microsoft.com/dynamicsnav:10.0.19041.329-generic```
 
 > [!IMPORTANT]  
-> You need to specify the correct Windows Version in the generic image name. If your version of Windows doesn't have a corresponding Docker image, you might need to use Hyper-V isolation.
+> You need to specify the correct Windows Version in the generic image name. If your version of Windows doesn't have a corresponding generic Docker image, you might need to use Hyper-V isolation.
 
 After starting the `docker run` command above, you will see log entries similar to the following:
 
