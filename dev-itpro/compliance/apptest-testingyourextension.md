@@ -3,7 +3,7 @@ title: "Testing your Extension"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/06/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -28,9 +28,9 @@ Use Docker for your development and testing. At least, run your full test in [!I
 
 If you test in an on-premises deployment, you might miss errors that would be seen online.
 
-And with this, make sure you are running using the correct artifacts for Docker to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. Use the function Get-BCArtifactUrl in the NavContainerHelper module to retrieve the artifactUrl of the current version. If you test on a build older or much newer, your app will most likely fail validation.
+Make sure that you use the correct artifacts for Docker to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. Use the function Get-BCArtifactUrl in the NavContainerHelper module to retrieve the artifactUrl of the current version. If you test on a build that is older or much newer than the current version, your app will most likely fail validation.
 
-Make sure you refresh the docker instance each time you want to submit. If you haven't run your Docker script to refresh for months, then you are on a much older build.
+Also make sure that you refresh the Docker instance each time you want to submit. If you haven't run your Docker script to refresh for months, then you are on a much older build.
 
 ## Use the correct data when you test your app
 
