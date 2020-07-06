@@ -2,7 +2,7 @@
 title: Arrange Fields Using Grid Control
 description: Fields in a FastTab are arranged automatically. Use Grid control to manually set up rows, columns, span fields across, and show or hide captions.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -90,7 +90,7 @@ The following screenshot shows how the resulting page looks like from the [!INCL
 
 
 ## Setting fields to span multiple rows and columns  
-You can set a field to span multiple rows or columns. When you set a field to span multiple rows, the field occupies the cells in the rows below it, and existing fields in the occupied cells are moved to the right. When you set a field to span multiple columns, the field occupies the cells in the columns to the right, and existing fields in the occupied cells are moved to the right. You can also set a field to span multiple rows and columns. 
+You can set a field to span multiple rows or columns. When you set a field to span multiple rows, the field occupies the cells in the rows below it, and existing fields in the occupied cells are moved to the right. When you set a field to span multiple columns, the field occupies the cells in the columns to the left, and existing fields in the occupied cells are moved to the right. You can also set a field to span multiple rows and columns. 
 
 > [!IMPORTANT]  
 > The [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client does not support row and column spanning for fields. If the page displays in the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client, the fields appear without spanning.  
