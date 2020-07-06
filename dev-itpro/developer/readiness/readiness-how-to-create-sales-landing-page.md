@@ -18,25 +18,7 @@ Microsoft will drive qualified traffic to AppSource. Though, once a prospect bec
 
 Your app landing page should be built to move prospects effectively through the following stages:
 
-## Accommodating more languages than English
-
-English is the de facto language that is used on AppSource to ease the validation process and create a uniform user experience.
-
-For you, this means that both the storefront details of your app, and everything that is accessible through it must be in English too.
-
-- This includes: your app’s landing page, videos, documentation – such as “Learn more” documents, factsheets, setup instructions, privacy policies, SLAs etc. – as well as help, support, and contact options.
-
-If your app caters to a local language that is not English, you can improve the user experience by:
-
-- Creating a website that has two landing pages (i.e. two language buttons – cf. one in English and one in the given local language). In so doing your customers can switch to the language they master and thus easily be able to find the right docs and contact info by a shift of a button.
-- However, this setup implies that you need to *make two versions of all your docs, support options and landing pages*.
-
-> [!NOTE]  
-> As mentioned earlier within the "Marketing Validation Checklist" everything that is accessible through the Cloud Partner Portal needs to be in English.
-
-Below you can see how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. We recommend that you use it as inspiration on how to create a user-friendly landing page. If you click on the pictures you will be re-directed to their two respective landing pages.
-
-Example of Deex Korea Co Ltd.’s user-friendly landing pages that accomodates two language options and is set up in accordance with our best practices:
+#
 
 ## Examples of how other partners have implemented our best practices
 
