@@ -15,7 +15,7 @@ ms.author: solsen
 
 
 > [!TIP]  
-> Use the Get-BCArtifactUrl from the NavContainerHelper PowerShell module to get the artifact URL for the version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] that you want.
+> Use the `Get-BCArtifactUrl` from the NavContainerHelper PowerShell module to get the artifact URL for the version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] that you want.
 
 ## Install and configure Docker
 Install Docker and configure it for Windows Containers.
