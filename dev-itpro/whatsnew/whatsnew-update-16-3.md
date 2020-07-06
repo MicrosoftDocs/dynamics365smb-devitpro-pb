@@ -18,7 +18,7 @@ Below you'll find an overview and relevant links to what has been done on hotfix
 
 ## Hotfixes
 
-[Link to Hotfixes](https://support.microsoft.com/help/xxxxx) <!-- Link is missing! -->
+[Link to Hotfixes](https://support.microsoft.com/help/4563407)
 
 ## Feature changes
 
