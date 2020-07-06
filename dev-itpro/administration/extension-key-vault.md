@@ -10,14 +10,25 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
+# Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
 
 Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions make web service calls to non-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] services. For example, one extension might call Azure Storage to read/write blobs. Another extension might call the extension publisher's web service to do an operation. 
 
 These web service calls are typically authenticated, which means the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extension must provide a credential in the call. These credentials enable the other service to accept or reject the call.
 
-The credential is a kind of secret. It is secret to the extension. It shouldn't leak to customers, partners, or anybody else. So where does the extension get the secret from? Well, this is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
+Consider the credential as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where does the extension get the secret from? Well, this is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
 
+## Getting started
+
+There are two parts to using secrets with extensions.
+
+- One or more key vaults for storing secrets must be set up in Azure, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service must be configured to access the key vaults.
+
+    The setup is different for online and on-premises. For more information, see:
+    - [](setup-app-key-vault.md)
+    - [](setup-app-key-vault-onprem.md)
+
+- Extensions must be developed with code that specifies the key vaults  
 Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault.
 
 ## Specifying Azure Key Vault in extensions
