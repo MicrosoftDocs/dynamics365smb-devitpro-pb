@@ -130,4 +130,5 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
 
 ## See Also  
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Developing Extensions](devenv-dev-overview.md)
+[Developing Extensions](devenv-dev-overview.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  
