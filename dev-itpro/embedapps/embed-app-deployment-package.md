@@ -35,7 +35,7 @@ Deployment routine will pull the apps that are uploaded via the App Management A
 
 ### Using Docker
 
-We strongly recommend you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Docker containers and the [NAVContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper) to prepare the BACPAC files. 
+We strongly recommend you run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Docker using the [NAVContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper) to prepare the BACPAC files. 
 
 > [!IMPORTANT]
 > You must only use the container images available in the  "mcr.microsoft.com/businesscentral/sandbox" container registry for your online deployments.
@@ -71,13 +71,13 @@ No users can sign in to your service if these tables are empty.
 
 For more information about these tables, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/).
 
-The entitlements can be copied from the standard Business Central Demo Database available on the Docker containers. Consult the documentation provided for the Clean-BCContainerDatabase and New-BCContainer commands included with the NAVContainerHelper PowerShell module. 
+The entitlements can be copied from the standard Business Central Demo Database available in sandbox Docker containers. Consult the documentation provided for the `Clean-BCContainerDatabase` and `New-BCContainer` commands included with the NAVContainerHelper PowerShell module. 
 
 ### Tenant database
 
 You can include your own specific demonstration data and companies in the tenant template database. It can help ensure that the new sign-ups get up and running quicker. However, in the future, we recommend you to use RapidStart packages to populate the companies with the demo data.  
  
-Once you compose and test your solution in Docker container, you can export the application and tenant template databases. You export the database to BACPAC format by using the Export-NavContainerDatabasesAsBacpac command. This command is included in the NAVContainerHelper PowerShell module.  
+Once you compose and test your solution on Docker, you can export the application and tenant template databases. You export the database to BACPAC format by using the `Export-BCContainerDatabasesAsBacpac` command. This command is included in the NAVContainerHelper PowerShell module.  
  
 We strongly recommend using this command for creating the BACPAC files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover BACPAC-related issues with deployments. So, remember to update the NAVContainerHelper PowerShell module for every new iteration.  
  
