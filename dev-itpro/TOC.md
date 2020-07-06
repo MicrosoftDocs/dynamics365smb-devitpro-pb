@@ -666,9 +666,10 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
-#### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
-#### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
-#### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
+#### [October 2018 On-Premises Updates](deployment/update-versions-13.md)
+#### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
+#### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
+#### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
