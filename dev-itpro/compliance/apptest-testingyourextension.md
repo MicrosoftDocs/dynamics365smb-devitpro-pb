@@ -28,9 +28,9 @@ Use Docker for your development and testing. At least, run your full test in [!I
 
 If you test in an on-premises deployment, you might miss errors that would be seen online.
 
-And with this, make sure you are using the correct Docker image tag to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. If you want your app to go live as soon as possible with the current production version at the time you submit your app, you must use the image tag mentioned on the Collaborate site. To do so, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Current Build - Developing for Dynamics 365 Business Central**. The image tag never changes and when we roll out a new version to production, the build underneath the image tag automatically changes for you. This means that you are always testing on current production. If you test on a build older or much newer, your app will most likely fail validation.
+And with this, make sure you are running using the correct artifacts for Docker to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. Use the function Get-BCArtifactUrl in the NavContainerHelper module to retrieve the artifactUrl of the current version. If you test on a build older or much newer, your app will most likely fail validation.
 
-Use the image tag from the current build link above and make sure you refresh the docker instance each time you want to submit. If you haven't run your Docker script to refresh for months, then you are on a much older build.
+Make sure you refresh the docker instance each time you want to submit. If you haven't run your Docker script to refresh for months, then you are on a much older build.
 
 ## Use the correct data when you test your app
 

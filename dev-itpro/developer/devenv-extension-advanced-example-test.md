@@ -92,13 +92,19 @@ We will be using the Application Test Toolkit to automate and run the tests that
 
 In order to install the Application Test Toolkit:
 1. Open the NavContainerHelper prompt found on the Desktop. You will see a list of functions that you can run on the container.
-2. Run the `Import-TestToolkitToNavContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
+2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
 ```
-Import-TestToolkitToNavContainer -containerName <name-of-container> 
+Import-TestToolkitToBCContainer -containerName <name-of-container> 
 ```
 
-Alternatively, if you use the `New-NavContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+Alternatively, if you use the `New-BCContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+
+Without further, the Import-TestToolkitToBCContainer and New-BCContainer with -includeTestToolkit will install the framework, the libraries and all the base application tests. Both the Import-TestToolkitToBCContainer and New-BCContainer supports two additional parameters, which limits the number of apps installed:
+
+`-includeTestFrameworkOnly` installs the Test Framework only. This includes the Test Runner and low level functions like Any and Assert.
+
+`-includeTestLibrariesOnly` installs the Test Framework and the Test Libraries only. Beside the Test Framework, this includes functionality, which is shared between base application tests.
 
 ## Describing your tests 
 To help you design the relevant tests for your functionality, you can write scenarios that outline what you want to test, and you can write test criteria in the GIVEN-WHEN-THEN format. By adding comments based on feature, scenario, and GIVEN-WHEN-THEN, you add structure to your test code and make tests readable. 
