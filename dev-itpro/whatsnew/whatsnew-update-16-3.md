@@ -2,7 +2,7 @@
 title: "Update 16.3 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/30/2020
+ms.date: 07/06/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Below you'll find an overview and relevant links to what has been done on hotfix
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features). [REMEMBER to include link to release plan 2020, wave 2 - if ready!!]()
+If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
 
 ## Upgrade to 16.3
 
