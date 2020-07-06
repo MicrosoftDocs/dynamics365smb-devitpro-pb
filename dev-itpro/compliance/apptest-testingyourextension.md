@@ -28,7 +28,7 @@ Use Docker for your development and testing. At least, run your full test in [!I
 
 If you test in an on-premises deployment, you might miss errors that would be seen online.
 
-Make sure that you use the correct artifacts for Docker to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. Use the function Get-BCArtifactUrl in the NavContainerHelper module to retrieve the artifactUrl of the current version. If you test on a build that is older or much newer than the current version, your app will most likely fail validation.
+Make sure that you use the correct artifacts for Docker to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. Use the function `Get-BCArtifactUrl` in the NavContainerHelper module to retrieve the artifactUrl of the current version. If you test on a build that is older or much newer than the current version, your app will most likely fail validation.
 
 Also make sure that you refresh the Docker instance each time you want to submit. If you haven't run your Docker script to refresh for months, then you are on a much older build.
 
@@ -49,7 +49,7 @@ When we validate apps, we use the base CRONUS demo data. This of course is there
 
 ## Use the right user for your testing
 
-Do not do your testing with a user that has SUPER permissions marked. The SUPER user can do all without issue and you won't catch your true app bugs. No live customer will have several users marked with this permission set. Therefore, we cannot test with it. You need to setup a user in your test environment that only has the BUS FULL ACCESS permission set, LOCAL, and any of your own permission sets. For information on how to setup this user, see this blog [Enabling Premium Experience in Business Central Sandbox Containers](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/04/13/enabling-premium-experience-in-business-central-sandbox-containers/?source=nav). 
+Do not do your testing with a user that has SUPER permissions marked. The SUPER user can do all without issue and you won't catch your true app bugs. No live customer will have several users marked with this permission set. Therefore, we cannot test with it. You need to setup a user in your test environment that only has the BUS FULL ACCESS permission set, LOCAL, and any of your own permission sets. For information on how to set up this user, see this blog [Enabling Premium Experience in Business Central Sandbox Containers](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/04/13/enabling-premium-experience-in-business-central-sandbox-containers/?source=nav). 
 
 ## Testing your app
 
