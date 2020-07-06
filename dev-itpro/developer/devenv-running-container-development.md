@@ -76,7 +76,7 @@ At this point, you can open your internet browser and type in the Web client URL
 > The container image uses a so called self-signed certificate for https communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances and only for test and development environments, it is safe to ignore this warning. If you want to solve this warning, you can install the certificate on your PC (see the link under "Files" in the log entries).
 
 ## Using the NavContainerHelper PowerShell module
-To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016 machine, start Powershell as an Administrator and type:
+To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10, Windows Server 2016 or Windows server 2019 machine, start Powershell as an Administrator and type:
 
 ```install-module navcontainerhelper -force```
 
