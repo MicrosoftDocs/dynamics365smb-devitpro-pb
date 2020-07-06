@@ -3,7 +3,7 @@ title: "Object Ranges"
 description: "Description of the object ranges in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ In the following each individual range is explained.
 This range is assigned to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] base app functionality and must not be used.
 
 ## 50,000-99,999 
-This range is for customizations. A partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop this either by using a sandbox tenant or by running a build of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on docker, that matches the version of the tenant. Once the development is done, the extension can be deployed to the individual tenant.
+This range is for customizations. A partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop this either by using a sandbox tenant or by running a build of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker that matches the version of the tenant. Once the development is done, the extension can be deployed to the individual tenant.
 
 ## 100,000-999,999
 The objects in this range are mainly designed when the Microsoft team localizes [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for a specific country or region. These objects cannot be used by partners.
