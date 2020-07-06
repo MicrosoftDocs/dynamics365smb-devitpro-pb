@@ -4,7 +4,7 @@ description: "Overview of the getting started with the container-based developme
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/06/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
@@ -22,7 +22,7 @@ You set up a container sandbox by running the **SANDBOX ENVIRONMENT (CONTAINER)*
 When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilities and use Docker to provide the infrastructure for the container-based application. The difference is:
 
 - With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign up for an Azure subscription, and additional costs may be incurred for each container sandbox.
-- Local hosting requires that your computer is running Windows 10, Windows Server 2016 or Windows Server 2019, and you install and configure Docker before setting up the container sandbox.
+- Local hosting requires that your computer is running Windows 10, Windows Server 2016, or Windows Server 2019, and you install and configure Docker before setting up the container sandbox.
 
 ## Set up an Azure-hosted container sandbox
 1. If you you do not already have one, sign up for an Azure subscription.
