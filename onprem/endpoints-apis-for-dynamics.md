@@ -29,7 +29,7 @@ Once you have the API access enabled, you can write code that integrates your we
 |**Authentication**|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|Basic authentication.<br> Username and [web service<br> access key](developer/devenv-develop-connect-apps-for-fin.md) as password.|Basic authentication.<br> Username and [web service<br> access key](developer/devenv-develop-connect-apps-for-fin.md) as password.|
 |**API/Data access**|Based on user's<br> [permissions](permissions-on-database-objects.md)|Based on user's<br> [permissions](permissions-on-database-objects.md)|Based on user's<br> [permissions](permissions-on-database-objects.md)|Based on user's<br> [permissions](permissions-on-database-objects.md)|
 |**API update cycle**|Monthly|Monthly|Monthly|Hotfixes installed by partner|
-|**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Get [Docker](https://aka.ms/navdeveloperpreview) instance|
+|**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Get [Docker](https://aka.ms/bcsandboxazure) instance|
 
 ## See Also
 [API Documentation](dynamics-nav/api-reference/v1.0/index.md)[Configuring Microsoft Dynamics NAV Server](configuring-microsoft-dynamics-nav-server.md)  

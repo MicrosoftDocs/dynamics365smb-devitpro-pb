@@ -76,6 +76,11 @@ The list of modules is growing continuously. The following table lists and descr
 
 
 <!--## Example - Enhancing a Module
+
+
+FREDDYK: THIS IS NO LONGER THE WAY TO DO THIS
+
+
 This example shows how to...
 
 1. Start by pulling the latest Docker image. For more information, see [Freddy's Blog](https://freddysblog.com/2019/07/31/preview-of-dynamics-365-business-central-2019-release-wave-2/).
@@ -119,7 +124,7 @@ New-BCContainer -accept_eula `
 3. Uninstall and unpublish the System Application.
   
 ```
-UnPublish-NavContainerApp -containerName $containerName ` 
+UnPublish-BCContainerApp -containerName $containerName ` 
 
   -appName "System Application" ` 
 
@@ -145,7 +150,7 @@ You now have the latest version of the System Application, and you can download 
 7. Switch back to PowerShell and run the following cmdlet to publish and install a new version of the app: 
 
 ```
-Publish-NavContainerApp -containerName $containerName ` 
+Publish-BCContainerApp -containerName $containerName ` 
 
 -appFile "C:\ProgramData\NavContainerHelper\AL\DemoSolution\Microsoft_System Application_15.0.0.0.app" ` 
 

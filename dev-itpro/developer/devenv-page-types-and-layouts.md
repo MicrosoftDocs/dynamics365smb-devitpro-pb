@@ -228,7 +228,9 @@ It is also possible to use the common page types (`Card`, `Document`, `List`, et
 
 Generally, [!INCLUDE[prodshort](includes/prodshort.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
-Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains a lot of content, it is possible for the user to increase the dialog size with the maximize button.
+Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains a lot of content, it is possible for the user to increase the dialog size with the maximize button.  
+> [!NOTE]  
+> The dialogs created from the ConfirmationDialog and StandardDialog page types are not currently providing a maximize button.
  
 ## See Also
 
