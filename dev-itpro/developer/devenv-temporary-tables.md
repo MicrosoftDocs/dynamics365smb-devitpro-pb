@@ -1,17 +1,16 @@
 ---
 title: "Temporary Tables"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: 55ab1366-7406-4060-8a41-41ec12f1bdea
-caps.latest.revision: 14
+ms.prod: "dynamics365-business-central"
 ---
+
 # Temporary Tables
-A temporary table is a temporary variable that holds a table. A temporary table is used as a buffer for table data in your C/AL programs.  
+A temporary table is a temporary variable that holds a table. A temporary table is used as a buffer for table data in your AL programs.  
 
  You can use a temporary table just like you use a database table. The differences between a temporary table and a database table are as follows:  
 
