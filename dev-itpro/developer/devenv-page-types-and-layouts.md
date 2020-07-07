@@ -93,7 +93,7 @@ For more information about page areas, see [Pages Overview](devenv-pages-overvie
 
 ### Field groups and page parts 
 
-In the following sections are descriptions of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
+In the following sections you find descriptions of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
 
 |Symbol|Section|Notes|
 |---------|---------------|----|
@@ -236,6 +236,7 @@ Given the size of the screen where the dialog appears, more or less of the page 
 ## See Also
 
 [Page Properties Overview](properties/devenv-page-property-overview.md)  
+[PageType Property](properties/devenv-pagetype-property.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
