@@ -3,7 +3,7 @@ title: "Page Types and Layouts"
 description: Pages are the main way to display and organize data. 
 author: jacobwj
 ms.custom: na
-ms.date: 04/17/2020
+ms.date: 07/07/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ In the following we are focusing on how pages appear when a user accesses [!INCL
 
 ## Understanding page types 
 
-Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support. 
+Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
 
 The following table provides an overview of the page types supported in [!INCLUDE[prodshort](includes/prodshort.md)], their typical uses, and basic characteristics. 
 
