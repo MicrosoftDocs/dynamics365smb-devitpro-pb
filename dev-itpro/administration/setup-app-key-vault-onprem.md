@@ -12,7 +12,9 @@ author: jswymer
 ---
 # Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises 
 
-Follow the tasks in this section to configure an on-premises installation to use the Azure Key Vault feature. 
+For authentication purposes, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions can be developed to get for secrets from Azure Keys Vaults. This article describes the tasks required to set up Azure Keys Vaults for storing extension secrets and configure them in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment.
+
+For more information about developing extensions and key vaults, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-keyvaults).
 
 ## Prerequisites
 
@@ -22,7 +24,7 @@ Follow the tasks in this section to configure an on-premises installation to use
 
 - A security certificate
 
-    As part of the setup later on, you'll have to register and configure an application in Azure AD for reading key vault, which requires the use of a certificate. The certificate is used to prove the application's identity when requesting upon request. In a production environment, obtain a certificate from a certification authority or trusted provider. 
+    As part of the setup later on, you'll have to register and configure an application in Azure AD for reading key vaults, which requires the use of a certificate. The certificate is used to prove the application's identity when requesting upon request. In a production environment, obtain a certificate from a certification authority or trusted provider. 
 
     In a test environment, if you don't have a certificate, then you can create your own self-signed certificate. For example, on your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer, start Windows PowerShell as an administrator. Then at the prompt, run the following commands, one at a time:
         
@@ -56,9 +58,11 @@ Now, you create one or more key vaults in Azure, and add the secrets that you wa
 
 There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
 
-The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal). 
+- The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal).
 
-For using other methods, see [Azure Key Vault Developer's Guide](/azure/key-vault/general/developers-guide#creating-and-managing-key-vaults).
+    After you create the key vault, add the secrets. 
+
+- For using other methods, see [Azure Key Vault Developer's Guide](/azure/key-vault/general/developers-guide#creating-and-managing-key-vaults).
 
 ## Register a key vault reader application in Azure AD
 
@@ -85,7 +89,7 @@ The steps in this task are done from the the [Azure portal](https://portal.azure
     -->
     When completed, the **Overview** displays in the portal for the new application.
 
-    Make a note of the **Display name** and/or **Application (client) ID**. You will use this information later.
+    Copt the **Display name** and/or **Application (client) ID**. You will use this information later.
 
 2. Upload the security certificate to the registered application.
 
@@ -110,7 +114,9 @@ At this point, the work in Azure is finished.
 
 ## Configure the Business Central Server for the Apps Key Vault
 
-Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance to use the key vault reader application and its certificate, which you registered in Azure AD, for authenticating to the key vaults.
+Next, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to use the key vault reader application and its certificate, which you registered in Azure AD, for authenticating to the key vaults.
+
+To complete this task, you'll need the user name of the service account that runs the [!INCLUDE[server](../developer/includes/server.md)].
 
 1. If not already done, import your key vault certificate to the local certificate store for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer.
 
@@ -132,9 +138,9 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
       
     3.  In the right pane, right-click the certificate, select **All Tasks**, and then choose **Manage Private Keys**.  
       
-    4.  In the **Permissions** dialog box for the certificate, choose **Add**.  
+    4.  In the **Security** dialog box, choose **Add**.  
       
-    5.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, enter the name of the dedicated domain user account that is associated with [!INCLUDE[server](../developer/includes/server.md)], and then choose the **OK** button.  
+    5.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, enter the name of the dedicated domain user account that is associated with [!INCLUDE[server](../developer/includes/server.md)], for example, NETWORK SERVICE. Then, choose the **OK** button.  
       
     6.  In the **Full Control** field, select **Allow**, and then choose the **OK** button.  
 
@@ -150,14 +156,13 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
     |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.|MY|
     |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.|649419e4fbb87340f5a0f995e605b74c5f6d943e|
     |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant. |ed4129d9-b913-4514-83db-82e305163bec|
-    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. An extension publisher's identity is specified when the extension is published. Enabling this setting blocks attempts in AL to read secrets from another publisher's key vault.|false|
+    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. An extension publisher's identity is specified when the extension is published. Enabling this setting blocks attempts in AL to read secrets from another publisher's key vault.<br /><br />**Important** If not enabled (`false`), the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security considerations](extension-key-vault.md#security). |false|
 
     You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       
-    For example, to use the Set-NAVServerConfiguration cmdlet, start the [[!INCLUDE[admintool](../developer/includes/admintool.md)] as an administrator, and run the following commands one at a time. Substitute brackets with your own values.
+    For example, to use the Set-NAVServerConfiguration cmdlet, start the [[!INCLUDE[admintool](../developer/includes/admintool.md)] as an administrator, and run the following commands one at a time. Substitute brackets with your own values. 
 
     ```powershell
-    Import-Module Microsoft.Dynamics.Nav.Management.dll 
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreLocation -KeyValue <certificate store location>    
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreName -KeyValue <certifcate store>    
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateThumbprint -KeyValue <certificate thumbprint> 
@@ -166,13 +171,21 @@ Next, you configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)
     Restart-NAVServerInstance -ServerInstance <serverInstance> 
     ```
 
+<!--
     > [!IMPORTANT]
     > Setting the `AzureKeyVaultAppSecretsPublisherValidationEnabled` to false means the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details.
+-->
 
 At this point, you can run your extensions that use key vault secrets to read secrets from key vault. For troubleshooting, please look in the Event Log and configure App Insights telemetry.
+
+
+## Monitoring and Troubleshooting
+
+Extensions 
+
+The initialization failures provide information about problems with the set up of the App Key Vault. 
 
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)   
 [Configuring Business Central Server](configure-server-instance.md)  

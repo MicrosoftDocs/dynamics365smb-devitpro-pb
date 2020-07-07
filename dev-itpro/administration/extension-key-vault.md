@@ -49,35 +49,24 @@ To use an Azure Key Vault for an extension, you specify the key vault the extens
 Then, you can add code to the extension to read secrets from the key vault at runtime, like this: 
 
 ```
-page 50100 HelloWorldPage 
+page 50100 HelloWorldPage
+{
+    var
+        SecretProvider: Codeunit "App Key Vault Secret Provider";
+        SecretValue: Text;
 
-{ 
-
-    var 
-
-        SecretProvider: Codeunit "App Key Vault Secret Provider"; 
-
-        SecretValue: Text; 
-
-    trigger OnOpenPage(); 
-
-    begin 
-
-        if SecretProvider.TryInitializeFromCurrentApp() then begin 
-
-            SecretProvider.GetSecret('secret1', SecretValue); 
-
-            Message('retrieved secret: ' + SecretValue); 
-
-        end 
-
-        else 
-
-            Message('ERROR: ' + GetLastErrorText()); 
-
-    end; 
-
-} 
+    trigger OnOpenPage();
+    begin
+        if SecretProvider.TryInitializeFromCurrentApp() then begin
+            if SecretProvider.GetSecret('nameofsecret', SecretValue) then
+                Message('Retrieved secret: ' + SecretValue)
+            else
+                Message('Failed to retrieve secret')
+        end
+        else
+            Message('ERROR: ' + GetLastErrorText());
+    end;
+}
 
 ```
 
@@ -98,7 +87,7 @@ An extension manifest can specify up to two Azure Key Vaults, like this:
 
     ] 
 ```
- 
+
 The use case for specifying two key vaults is to ensure high availability. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate the key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute without impact because the other key vault will most likely be available.
 
 ## Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises 
@@ -337,7 +326,7 @@ Send an email to TODO@microsoft.com to start the onboarding process. This should
 
 The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
 
-## Security considerations 
+## <a name="security"></a>Security considerations 
 
 Keep the following information in mind when you use the App Key Vault feature. 
 
