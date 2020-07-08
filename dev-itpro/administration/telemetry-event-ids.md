@@ -46,6 +46,20 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 | LC0007 | Company Lifecycle | [Company deleted: {companyName}](telemetry-company-lifecycle-trace.md#company-deleted)| 
 | LC0008 | Company Lifecycle | [Company deletion canceled: {companyName}](telemetry-company-lifecycle-trace.md#company-deletion-canceled) | 
 | LC0009 | Company Lifecycle | [Company deletion failed: {companyName}](telemetry-company-lifecycle-trace.md#company-deletion-failed) | 
+| LC0010 | Extension Lifecycle | [Extension installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#installedsuccess) |
+| LC0011 | Extension Lifecycle | [Extension failed to install: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#installedfailed) |
+| LC0012 | Extension Lifecycle | [Extension synchronized successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId}](telemetry-extension-lifecycle-trace.md#syncedsuccess) |
+| LC0013 | Extension Lifecycle | [Extension failed to synchronize: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#syncedfailed) |
+| LC0014 | Extension Lifecycle | [Extension published successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#publishedsuccess) |
+| LC0015 | Extension Lifecycle | [Extension failed to publish: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#publishedfailed) |
+| LC0016 | Extension Lifecycle | [Extension un-installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#uninstalledsuccess) |
+| LC0017 | Extension Lifecycle | [Extension failed to un-install: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#uninstalledfailed) |
+| LC0018 | Extension Lifecycle | [Extension unpublished successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#unpublishedsuccess) |
+| LC0019 | Extension Lifecycle | [Extension failed to un-publish: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#unpublishfailed) |
+| LC0020 | Extension Lifecycle | [Extension compiled successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledsuccess) |
+| LC0021 | Extension Lifecycle | [Extension failed to compile: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledfailed) |
+| LC0022 | Extension Lifecycle | [Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher}](telemetry-extension-lifecycle-trace.md#updatedsuccess) |
+| LC0023 | Extension Lifecycle | [Extension failed to update: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#updatedfailed) |
 
 <!--
 | RT0010 | Extension Lifecycle | [Extension Update Failed: exception raised in extension {extensionName} by {extensionPublisher} (updating to version {extensionTargetedVersion})]( )|

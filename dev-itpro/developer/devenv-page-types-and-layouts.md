@@ -3,7 +3,7 @@ title: "Page Types and Layouts"
 description: Pages are the main way to display and organize data. 
 author: jacobwj
 ms.custom: na
-ms.date: 04/17/2020
+ms.date: 07/07/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ In the following we are focusing on how pages appear when a user accesses [!INCL
 
 Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support. 
 
-The following table provides an overview of the page types supported in [!INCLUDE[prodshort](includes/prodshort.md)], their typical uses, and basic characteristics. 
+The following table provides an overview of the page types supported in [!INCLUDE[prodshort](includes/prodshort.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
+
 
 |Page type|Examples of use|Main data display|Characteristics|
 |---------|---------------|----------------|---------------|
@@ -86,13 +87,13 @@ For all pages (excluding `RoleCenter`, dialogs, and part pages) there is a commo
 
 ![Containers](media/page-layout-containers.png "Containers for Content and FactBoxes, plus actions.")
 
-The 'content' area provide rich layout capabilities, which are described in the coming sections. The 'FactBoxes' area is limited to show a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, and so on.
+The `content` area provides rich layout capabilities, which are described in the coming sections. The `FactBoxes` area is limited to showing a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, and so on.
 
 For more information about page areas, see [Pages Overview](devenv-pages-overview.md). 
 
 ### Field groups and page parts 
 
-In the following sections are descriptions of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
+In the following sections you find descriptions of typical page layouts, recommendations for how to organize the contents, and illustrations of the principles by which the sections of page share screen real estate. The types of content on a page are illustrated this way:
 
 |Symbol|Section|Notes|
 |---------|---------------|----|
@@ -235,6 +236,7 @@ Given the size of the screen where the dialog appears, more or less of the page 
 ## See Also
 
 [Page Properties Overview](properties/devenv-page-property-overview.md)  
+[PageType Property](properties/devenv-pagetype-property.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  

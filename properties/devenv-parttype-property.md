@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # PartType Property
+<!-- article redirected -->
 Sets the content type that can display in a part FactBox.  
 
 <!-- This property does not appli to AL. -->
