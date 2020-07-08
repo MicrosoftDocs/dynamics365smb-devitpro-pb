@@ -12,8 +12,6 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # PagePartID Property
 Sets a link to another page.  
   
