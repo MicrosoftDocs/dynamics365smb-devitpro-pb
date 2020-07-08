@@ -340,19 +340,32 @@ When your code works with secrets, whether from a key vault or from Isolated Sto
 
 Once the **App Key Vault Secret Provider** codeunit has been initialized, it can be used to get secrets. If you pass the codeunit to another method, then that method can also use it. If you pass the codeunit to a method in another extension, then the other extension can also use the secret provider to get secrets.  This may not be what you want, so be careful with who you pass the secret provider to. 
 
-### Run with publisher validation 
+### Run publisher validation
 
-For In the on-premises steps above, you configured the NST to run with publisher validation disabled. You should only do this if you trust all extensions that get installed to not do malicious things like read secrets they are not supposed to. If you don't trust all extensions that might get installed, you should enable publisher validation. This is how the Business Central SaaS service is configured. 
+For on-premises deployments, you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to run with or without publisher validation on key vault secret providers. Publisher validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
 
-When publisher validation is enabled, and an extension tries to initialize the App Key Vault Secret Provider codeunit, the following check will be performed: 
+#### How it works
 
-`Extension.KeyVaultUrls.AadTenantId == Extension.PublisherAadTenantId`
+Publisher validation is done by comparing the Azure AD tenant ID of the Azure Key Vault provider with that of the extension's publisher. It works this way:
 
-Only if this check is satisfied will the initialization succeed. 
+1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Azure AD tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
 
-So how does the NST know an extension publisher's AAD tenant ID? The value can be specified when publishing an extension, like this: 
+    ```powershell
+    Publish-NavApp -ServerInstance <server instance> -Path <path to extension package> -PublisherAzureActiveDirectoryTenantId <Azure AD tenant ID GUID>
+    ```
+    
+    > [!NOTE]
+    > An error will not occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing someone from publishing the extension at this point.   
 
-Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid> 
+2.  When the extension tries to initialize the **App Key Vault Secret Provider** codeunit, the system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
+
+    - If they match, initialization succeeds
+    - If the don't match, an error occurs.
+
+#### Turning off publisher validation is turned on by default, which is the recommended setting
+
+Publisher validation is turned on by default, which is the recommended setting. You  
+
 
 In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
 

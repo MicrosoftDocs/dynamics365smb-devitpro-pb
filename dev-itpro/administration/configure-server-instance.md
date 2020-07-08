@@ -223,14 +223,14 @@ The following table describes fields on the **Management Services** tab in the [
 
 The following table describes fields on the **Azure Key Vault Client Identity** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-These settings are used when you want to use Azure Key Vault to store extension secrets and data encryption keys. For more information, see [Extension Key Vaults](extension-key-vault.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
+These settings are used when you want to use Azure Key Vaults to store extension secrets and data encryption keys. For more information, see [Setting up App Key Vaults ](setup-app-key-vault-onprem.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------| 
-|  Client Certificate Store Location|AzureKeyVaultClientCertificateStoreLocation| Specifies the location of the certificate store for the Key Vault client certificate.<br /><br />**LocalMachine** specifies that the certificate is stored in a certificate store for the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />**CurrentUser** specifies that the certificate is stored in a certificate store for your account on the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />Default: LocalMachine <br />Dynamically Updatable: No|
-|  Client Certificate Store Name|AzureKeyVaultClientCertificateStoreName|  Specifies the certificate store where the Key Vault client certificate is stored.<br /><br />Default: My <br />Dynamically Updatable: No|
-|  Client Certificate Thumbprint|AzureKeyVaultClientCertificateThumbprint|  Specifies the thumbprint of the Key Vault client certificate<br /><br />Default: My<br />Dynamically Updatable: No|
-|  Client ID  |AzureKeyVaultClientId|  Specifies the unique identifier (GUID) of the Key Vault client application in Microsoft Azure.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No |
+|  Client Certificate Store Location|AzureKeyVaultClientCertificateStoreLocation| Specifies the location of the certificate store where the key vault reader certificate is stored.<br /><br />**LocalMachine** specifies that the certificate is stored in a certificate store for the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />**CurrentUser** specifies that the certificate is stored in a certificate store for your account on the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />Default: LocalMachine <br />Dynamically Updatable: No|
+|  Client Certificate Store Name|AzureKeyVaultClientCertificateStoreName|  Specifies the certificate store where the key vault reader certificate is stored.<br /><br />Default: My <br />Dynamically Updatable: No|
+|  Client Certificate Thumbprint|AzureKeyVaultClientCertificateThumbprint|  Specifies the thumbprint of the certificate used by the key vault reader application in Azure.<br /><br />Default: My<br />Dynamically Updatable: No|
+|  Client ID  |AzureKeyVaultClientId|  Specifies the appication (client) ID of the key vault reader application in Azure. The value is a GUID.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No |
 
 ## Azure Key Vault Extension Secrets Tab Settings
 
@@ -238,7 +238,7 @@ The following table describes fields on the **Azure Key Vault Extension Secrets*
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------| 
-|Enable Publisher Validation|AzureKeyVaultAppSecretsPublisherValidationEnabled| Specifies whether extensions can only use key vaults that belong to their publishers. <ul><li> **true** enables validation. Extensions can only use key vaults that belong to their publishers. This setting blocks attempts in AL to read secrets from another publisher's key vault. </li><li>**false** disables publisher validation. **Important** When **false**, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security Considerations](extension-key-vault.md#security).</li></ul>An extension publisher's identity is specified when the extension is published. <br /><br />Default: false <br />Dynamically Updatable: No|
+|Enable Publisher Validation|AzureKeyVaultAppSecretsPublisherValidationEnabled| Specifies whether extensions can only use key vaults that belong to their publishers. <ul><li> **true** turns on validation. Extensions can only use key vaults that belong to their publishers. This setting blocks attempts in AL to read secrets from another publisher's key vault. </li><li>**false** turns off validation. **Important** When **false**, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security Considerations](extension-key-vault.md#security).</li></ul>An extension publisher's identity is specified when the extension is published. However, the validation is done at runtime. This setting doesn't affect extensions that don't use app key vault secrets.<br /><br />Default: true <br />Dynamically Updatable: No|
 
 ## <a name="AzureAd"></a>Azure Active Directory (Azure AD) Settings
 
