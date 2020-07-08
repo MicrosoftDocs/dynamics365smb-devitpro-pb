@@ -16,37 +16,49 @@ Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions make w
 
 These web service calls are typically authenticated, which means the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extension must provide a credential in the call. These credentials enable the other service to accept or reject the call.
 
-Consider the credential as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where does the extension get the secret from? Well, this is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
+Consider the credential as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where does the extension get the secret from? This is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
 
 ## Getting started
 
-There are two parts to using secrets with extensions.
+Getting extensions to use secrets from Azure Key Vault involves two areas of work:
 
-- One or more key vaults for storing secrets must be set up in Azure, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service must be configured to access the key vaults.
+- Setting up and configuring Azure Key Vault.
 
-    The setup is different for online and on-premises. For more information, see:
-    - [](setup-app-key-vault.md)
-    - [](setup-app-key-vault-onprem.md)
+    An extension can retrieve secrets from up to two different Azure Key Vaults. These key vaults must be first created in Azure, and then the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service is configured to access them. The setup process is different for online and on-premises. For more information, see:
+    - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
+    - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md)
 
-- Extensions must be developed with code that specifies the key vaults  
-Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault.
+- Developing the extensions to use secrets from Azure Key Vault.
 
-## Specifying Azure Key Vault in extensions
+    Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault. In short, this work involves specifying the key vaults's URL and adding code to retrieve a secret from the key vault.
 
-To use an Azure Key Vault for an extension, you specify the key vault the extension's manifest file (app.json), like this: 
+## Specify the Azure Key Vault in extensions
+
+You specify the key vaults for an extension in the extension's manifest file (app.json). To specify a key vault, you add the `"keyVaultUrls"` to the app.json, and set the value to the key vault's URL. The following code snippet .: , like this: 
 
 ```
- 
-
     "keyVaultUrls": [ 
-
         "https://mykeyvault.vault.azure.net" 
-
     ] 
-
 ```
 
-Then, you can add code to the extension to read secrets from the key vault at runtime, like this: 
+You can specify up to two key vaults in the app.json, as shown in the following code snippet: 
+
+``` 
+    "keyVaultUrls": [ 
+        "https://myfirstkeyvault.vault.azure.net", 
+        "https://mysecondkeyvault.vault.azure.net" 
+    ] 
+```
+
+Specifying two key vaults ensures a higher availability of secrets. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate both key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute because the other key vault will most likely be available.
+
+
+## Add code to retrieve secrets the key vault
+
+Next, you add code to the extension for reads secrets from the key vault at runtime. To read secrets, you use the **Secrets** module of the System Application, specifically codeunit **3800 "App Key Vault Secret Provider"**. 
+
+, like this. The system  
 
 ```
 page 50100 HelloWorldPage
@@ -58,7 +70,7 @@ page 50100 HelloWorldPage
     trigger OnOpenPage();
     begin
         if SecretProvider.TryInitializeFromCurrentApp() then begin
-            if SecretProvider.GetSecret('nameofsecret', SecretValue) then
+            if SecretProvider.GetSecret('<nameofsecret>', SecretValue) then
                 Message('Retrieved secret: ' + SecretValue)
             else
                 Message('Failed to retrieve secret')
@@ -73,22 +85,6 @@ page 50100 HelloWorldPage
 The call to the `TryInitializeFromCurrentApp` method determines the extension that is currently being executed, then determines the extension's key vaults as specified in the extension manifest. After initialization, you can call the `GetSecret` method to read secrets from the key vault.
 
 
-## Specifying two Azure Key Vaults 
-
-An extension manifest can specify up to two Azure Key Vaults, like this: 
-
-``` 
-
-    "keyVaultUrls": [ 
-
-        "https://myfirstkeyvault.vault.azure.net", 
-
-        "https://mysecondkeyvault.vault.azure.net" 
-
-    ] 
-```
-
-The use case for specifying two key vaults is to ensure high availability. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate the key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute without impact because the other key vault will most likely be available.
 
 ## Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises 
 
