@@ -14,7 +14,7 @@ author: jswymer
 
 Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions make web service calls to non-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] services. For example, one extension might call Azure Storage to read/write blobs. Another extension might call the extension publisher's web service to do an operation. 
 
-These web service calls are typically authenticated, which means the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extension must provide a credential in the call. The credentials enable the other service to accept or reject the call. You can consider the credentials as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where can the extension get the secret from? This is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
+These web service calls are typically authenticated, which means the extension must provide a credential in the call. The credentials enable the other service to accept or reject the call. You can consider the credentials as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where can the extension get the secret from? This is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
 
 ## Getting started
 
@@ -22,7 +22,7 @@ Getting extensions to use secrets from Azure Key Vault involves two areas of wor
 
 ### Setting up and configuring Azure Key Vault
 
-An extension can retrieve secrets from up to two different Azure Key Vaults. These key vaults must be first created in Azure. Then, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service must be configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
+An extension can retrieve secrets from two different Azure Key Vaults. These key vaults must be first created in Azure. Then, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service must be configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
 
 - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
 - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises](setup-app-key-vault-onprem.md)
@@ -356,9 +356,9 @@ Publisher validation is done by comparing the Azure AD tenant ID of the Azure Ke
     ```
     
     > [!NOTE]
-    > An error will not occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing someone from publishing the extension at this point.   
+    > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
 
-2.  When the extension tries to initialize the **App Key Vault Secret Provider** codeunit, the system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
+2.  When the extension is run and tries to initialize the **App Key Vault Secret Provider** codeunit, the system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
 
     - If they match, initialization succeeds
     - If the don't match, an error occurs.
