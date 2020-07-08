@@ -22,18 +22,18 @@ Consider the credential as a kind of secret to the extension. A secret shouldn't
 
 Getting extensions to use secrets from Azure Key Vault involves two areas of work:
 
-- Setting up and configuring Azure Key Vault.
+### Setting up and configuring Azure Key Vault
 
-    An extension can retrieve secrets from up to two different Azure Key Vaults. These key vaults must be first created in Azure, and then the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service is configured to access them. The setup process is different for online and on-premises. For more information, see:
+An extension can retrieve secrets from up to two different Azure Key Vaults. These key vaults must be first created in Azure. Then, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service must be configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
 
-    - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
-    - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md)
+- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
+- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md)
 
-- Developing the extensions to use secrets from Azure Key Vault.
+### Developing the extensions to use secrets from Azure Key Vault
 
-    Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault. In short, this work involves specifying the key vaults's URL and adding code to retrieve a secret from the key vault.
+Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault. In short, this work involves specifying the key vault's URL and adding code to retrieve a secret from the key vault.
 
-    See [Using App Key Vaults with Extensions](developer/devenc-app-key-vault.md).
+For more information, see [Using App Key Vaults with Extensions](developer/devenv-app-key-vault.md).
 
 
 <!--

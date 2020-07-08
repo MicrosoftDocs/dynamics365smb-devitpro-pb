@@ -15,13 +15,13 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Business Central 2020 release wave 2
 
-App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. Extensions can be configured to retrieve secrets from one or key vaults.
+App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. Secrets are a kind of credential used for authenticating an extension. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-key-vault.md).
 
 The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
 
 #### Initialization
 
-Initialization is the first stage. This stage verifies the configuration of the app key vault provider in the extension and on the service. To give you a better understanding idea of what happens in this stage, here are some conditions that cause failures:
+Initialization is the first stage. It verifies the configuration of the app key vault provider in the extension and on the service. This stage is initiated by the `TryInitializeFromCurrentApp` method call in the extension code. Some conditions that cause failures in this stage include:
 
 - The extension doesn't specify a key vault in it's app.json file.
 - The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
@@ -29,7 +29,7 @@ Initialization is the first stage. This stage verifies the configuration of the 
 
 #### Retrieval
 
-Retrieval is the second stage, and occurs after a successful initialization. In this stage, the service tries to get a secret from a specified key vault. Some conditions that cause failures include:
+Retrieval is the second stage, and occurs after a successful initialization. In this stage, the service tries to get a secret from a specified key vault. This stage is initiated by the `GetSecret` method call in the extension code. Some conditions that cause failures include:
 
 - The secret name requested by the extension is missing or not valid.
 - The Azure Key Vault Client Identity settings are incorrect. For example, like the application (client) ID of the key vault reader application in Azure.
@@ -57,7 +57,7 @@ Occurs when an extension secret was successfully initialized.
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that executed the request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
@@ -98,7 +98,7 @@ Occurs when a key vault failed to be initialized.
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|clientType|Specifies the type of client that executed request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
@@ -202,7 +202,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 
 ## See also
 
-[App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-key-vault.md)  
+[App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
 [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
