@@ -330,19 +330,19 @@ The onboarding process involves a manual verification step that verifies that yo
 -->
 ## <a name="security"></a>Security considerations 
 
-Keep the following information in mind when you use the App Key Vault feature. 
+Keep the following information in mind when you use the App Key Vault feature with your extensions.
 
-### Use NonDebuggable
+### Mark Methods as NonDebuggable
 
-As always when your code works with secrets, whether from a key vault or from Isolated Storage, remember to mark the methods as NonDebuggable. This prevents other partners from debugging into your code and seeing the secrets. 
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](../methods/devenv-nondebuggable-attribute.md). This prevents other partners from debugging into your code and seeing the secrets.
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
-Once the App Key Vault Secret Provider codeunit has been initialized, it can be used to get secrets. If you pass the codeunit to another function, then that function can also use it. If you pass the codeunit to a function in another extension, then the other extension can also use the secret provider to get secrets. This may not be what you want, so be careful with who you pass the secret provider to. 
+Once the **App Key Vault Secret Provider** codeunit has been initialized, it can be used to get secrets. If you pass the codeunit to another method, then that method can also use it. If you pass the codeunit to a method in another extension, then the other extension can also use the secret provider to get secrets.  This may not be what you want, so be careful with who you pass the secret provider to. 
 
 ### Run with publisher validation 
 
-In the on-premises steps above, you configured the NST to run with publisher validation disabled. You should only do this if you trust all extensions that get installed to not do malicious things like read secrets they are not supposed to. If you don't trust all extensions that might get installed, you should enable publisher validation. This is how the Business Central SaaS service is configured. 
+For In the on-premises steps above, you configured the NST to run with publisher validation disabled. You should only do this if you trust all extensions that get installed to not do malicious things like read secrets they are not supposed to. If you don't trust all extensions that might get installed, you should enable publisher validation. This is how the Business Central SaaS service is configured. 
 
 When publisher validation is enabled, and an extension tries to initialize the App Key Vault Secret Provider codeunit, the following check will be performed: 
 
@@ -356,9 +356,6 @@ Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid>
 
 In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
 
-
 ## See Also  
 
-[Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)   
 [Configuring Business Central Server](configure-server-instance.md)  
