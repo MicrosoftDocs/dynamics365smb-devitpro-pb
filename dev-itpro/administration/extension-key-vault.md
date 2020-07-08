@@ -14,9 +14,7 @@ author: jswymer
 
 Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions make web service calls to non-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] services. For example, one extension might call Azure Storage to read/write blobs. Another extension might call the extension publisher's web service to do an operation. 
 
-These web service calls are typically authenticated, which means the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extension must provide a credential in the call. These credentials enable the other service to accept or reject the call.
-
-Consider the credential as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where does the extension get the secret from? This is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
+These web service calls are typically authenticated, which means the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extension must provide a credential in the call. The credentials enable the other service to accept or reject the call. You can consider the credentials as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where can the extension get the secret from? This is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
 
 ## Getting started
 
@@ -27,7 +25,7 @@ Getting extensions to use secrets from Azure Key Vault involves two areas of wor
 An extension can retrieve secrets from up to two different Azure Key Vaults. These key vaults must be first created in Azure. Then, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service must be configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
 
 - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
-- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md)
+- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises](setup-app-key-vault-onprem.md)
 
 ### Developing the extensions to use secrets from Azure Key Vault
 
@@ -342,7 +340,10 @@ Once the **App Key Vault Secret Provider** codeunit has been initialized, it can
 
 ### Run publisher validation
 
-For on-premises deployments, you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to run with or without publisher validation on key vault secret providers. Publisher validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
+For on-premises deployments, you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabledPublisher) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
+
+> [!TIP]
+> With a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online production environment, publisher validation is not performed for per-tenant extensions. Publisher validation is done automatically for onboarded AppSource extensions.
 
 #### How it works
 
@@ -362,12 +363,11 @@ Publisher validation is done by comparing the Azure AD tenant ID of the Azure Ke
     - If they match, initialization succeeds
     - If the don't match, an error occurs.
 
-#### Turning off publisher validation is turned on by default, which is the recommended setting
+#### Turning off publisher validation
 
-Publisher validation is turned on by default, which is the recommended setting. You  
+Publisher validation is turned on by default, which is the recommended setting. If it's turned off, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. So, don't turn off publisher validation unless you trust the extensions that can be potentially installed.
 
-
-In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
+For information about how to turn publisher validation on or off, see [Configuring Business Central Server](configure-server-instance.md).
 
 ## See Also  
 

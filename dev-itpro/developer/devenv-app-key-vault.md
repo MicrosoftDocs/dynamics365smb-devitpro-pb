@@ -111,7 +111,9 @@ Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid>
 
 In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
 
+If you don't trust all extensions that might get installed, you should enable publisher validation. The Business Central SaaS service is configured to validate publish
 
+When **false**, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of.
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  

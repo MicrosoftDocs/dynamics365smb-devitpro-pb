@@ -156,7 +156,7 @@ To complete this task, you'll need the user name of the service account that run
     |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.|MY|
     |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.|649419e4fbb87340f5a0f995e605b74c5f6d943e|
     |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant. |ed4129d9-b913-4514-83db-82e305163bec|
-    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. An extension publisher's identity is specified when the extension is published. Enabling this setting blocks attempts in AL to read secrets from another publisher's key vault.<br /><br />**Important** If not enabled (`false`), the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security considerations](extension-key-vault.md#security). |false|
+    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID. <br /><br />**Important** We recommend that you only disable this setting If you disable this setting (`false`), the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security considerations](extension-key-vault.md#security). |true|
 
     You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       
@@ -167,7 +167,7 @@ To complete this task, you'll need the user name of the service account that run
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreName -KeyValue <certifcate store>    
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateThumbprint -KeyValue <certificate thumbprint> 
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientId -KeyValue <application ID of key vault reader app in Azure> 
-    Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultAppSecretsPublisherValidationEnabled -KeyValue false 
+    Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultAppSecretsPublisherValidationEnabled -KeyValue <true|false> 
     Restart-NAVServerInstance -ServerInstance <serverInstance> 
     ```
 
