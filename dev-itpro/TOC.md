@@ -209,6 +209,9 @@
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
+## App Key Vaults for Secrets
+### [Overview](developer/extension-key-vault.md)
+### [Using Key Vault Secrets in Extensions](developer/devenv-app-key-vault.md)
 ## Tables
 ### [Tables Overview](developer/devenv-tables-overview.md)
 ### [Table Object](developer/devenv-table-object.md)
