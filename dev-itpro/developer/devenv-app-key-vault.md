@@ -14,7 +14,7 @@ author: jswymer
 
 This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are a kind of credential used for authenticating en extension. Secrets are typically used when the extensions makes calls to web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../administration/extension-key-vault.md).
 
-Developing an extension to use secrets from a key vaults involves two tasks as described in this article:
+Developing an extension to use secrets from a key vaults involves two tasks, as described in this article:
 
 - Specifying the Azure Key Vault in the extension's manifest.
 - Adding code to retrieve the secrets from the key vault.
@@ -22,8 +22,8 @@ Developing an extension to use secrets from a key vaults involves two tasks as d
 Secrets are actually retrieved at runtime.
 
 ## Preparation
- 
-Using secrets requires that Azure Key Vault is available with secrets and configured for use by the the service. For more information, see [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md) or [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md).
+
+Using secrets requires that you have at least one Azure Key Vault with secrets set up and configured for use by the the service. For more information, see [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md) or [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md).
 
 For coding, you'll need the URI the Azure Key Vault that stores the secret and the name of the secret itself. If you don't have this information, you can get it from Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal).
 
