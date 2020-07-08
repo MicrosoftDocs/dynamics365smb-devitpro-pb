@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e12a808e-652f-467e-a8b1-768b6dba429d
-caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
@@ -20,6 +18,13 @@ Sets whether a temporary table is created.
 ## Applies To  
 - Record variables  
   
+## Syntax
+
+```
+var
+    TempInvoicePostBuffer: Record "Invoice Post. Buffer" temporary;
+```
+
 ## Remarks  
 Changes made to a temporary table are not stored to a database.  
   
