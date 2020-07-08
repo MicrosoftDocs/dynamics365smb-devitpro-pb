@@ -2,7 +2,7 @@
 title: Azure Key Vaults with Business Central
 description: Describes how to use an Azure Key vault with Business Central extensions.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/08/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,9 @@ Getting extensions to use secrets from Azure Key Vault involves two areas of wor
 
     Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault. In short, this work involves specifying the key vaults's URL and adding code to retrieve a secret from the key vault.
 
+    See [Using App Key Vaults with Extensions](developer/devenc-app-key-vault.md).
+
+<!--
 ## Specify the Azure Key Vault in extensions
 
 You specify the key vaults for an extension in the extension's manifest file (app.json). To specify a key vault, you add the `"keyVaultUrls"` to the app.json, and set the value to the key vault's URL. The following code snippet .: , like this: 
@@ -129,7 +132,7 @@ Now, you create one or more key vaults in Azure, and add the secrets that you wa
 2. Create one or more key vaults and add secrets that extensions will use.
 
 -->
-
+<!--
 There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
 
 The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal). 
@@ -159,7 +162,8 @@ The steps in this task are done from the the [Azure portal](https://portal.azure
             |App ID URI|The URI to a domain in your Azure AD tenant, such as *https://solutions.onmicrosoft.com/ExcelAddinforBusinessCentral*. **Important:**  The App ID URI must be unique within the Azure AD tenant and not the same as you specified for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.|
                 |Sign-on URL (App URL)|The URI for signing in to your [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)], such as `https://www.solutions.com/BC`|
     -->
-    When completed, the **Overview** displays in the portal for the new application.
+
+<!--    When completed, the **Overview** displays in the portal for the new application.
 
     Make a note of the **Display name** and/or **Application (client) ID**. You will use this information later.
 
@@ -264,7 +268,7 @@ Now, you create one or more key vaults in Azure, and add the secrets that you wa
 
 -->
 
-There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
+<!--There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
 
 The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](/azure/key-vault/secrets/quick-create-portal). 
 
@@ -350,7 +354,7 @@ Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid>
 
 In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
 
-
+-->
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
