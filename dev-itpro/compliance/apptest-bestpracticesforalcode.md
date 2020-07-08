@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/08/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -19,12 +19,15 @@ This page defines some of the best practices to follow when writing AL code for 
 > If a best practice is not mentioned here, the PreCal rules listed [here](https://community.dynamics.com/nav/w/designpatterns/156.3-cal-coding-guidelines) apply.
 
 ## Extension structure 
+
 An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
 
 ## File naming 
+
 Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects.
 
 ### File naming notation
+
 Follow the syntax for file naming as shown below:
 
 |Full objects|Extensions|
@@ -33,6 +36,7 @@ Follow the syntax for file naming as shown below:
 |`<PrefixObjectName>.<FullTypeName>.al`|`<PrefixObjectName>.<FullTypeName>Ext.al`|
 
 ### Type map
+
 Use the listed abbreviations for each type of object in the file naming:
 
 |Object    |Abbreviation|
@@ -55,17 +59,20 @@ Use the listed abbreviations for each type of object in the file naming:
 
 ### Examples of object naming
 
-#### Table  
+#### Table
+
 ```
 table 70000000 MyPrefixSalesperson
 ```
 
 #### Page
+
 ```
 page 70000000 MyPrefixSalesperson
 ```
 
-#### Page extension  
+#### Page extension
+
 ```
 actions
 {
@@ -75,6 +82,7 @@ actions
 ```
 
 #### Codeunit
+
 ```
 codeunit 70000000 MyPrefixSalesperson
 ```
@@ -88,7 +96,6 @@ For the listed objects above, these are examples of the file naming.
 |codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
 |page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
 |page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
-
 
 
 ## Formatting
@@ -133,19 +140,21 @@ page 123 PageName
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. For more information on how to use it, see [AL Formatter](../developer/devenv-al-formatter.md).
 
 ## Line length
+
 In general, there is no restriction on line length, but lengthy lines can make the code unreadable. We recommend that you keep your code easily scannable and readable.
 
 ## Object naming
+
 Object names are prefixed. They start with the feature/group name, followed by the logical name as in these two examples: 
 
 - `Intrastat extension validation codeunit for Denmark`
 - `codeunit 123 "IntrastatDK Validation"`
 
-
 > [!NOTE]  
 > The "MS - " prefix is not required. 
 
-## File structure 
+## File structure
+
 Inside an .al code file, the structure for all objects must follow the sequence below:
 
 1. Properties
@@ -159,6 +168,7 @@ Inside an .al code file, the structure for all objects must follow the sequence 
 4. Methods
 
 ## Referencing 
+
 In AL, objects are referenced by their object name, not by their ID. 
 
 ### Example
@@ -170,19 +180,29 @@ var
     Customer: Record Customer;
 ```
 
-## Variable naming 
+## Variable and field naming 
+
 For variables they must:
 - Be named using PascalCase
 - Have the `Temp` prefix if they are temporary variables
 - Include the object name in the name (for objects)
 
+Furthermore:
+
+- Field and variable names should not include wildcard symbols, such as `%` and `&`. This might break features such as export using Excel or RapidStart. 
+- Name fields using aA-zZ and 0-9 and use Caption and xliff files to display the field appropriately. For more information, see [Working with Translation Files](../developer/devenv-work-with-translation-files.md).
+- Using English as the language for naming improves the ability to troubleshoot issues that may arise. 
+
+
 ### Example
+
 ```
 TempCustomer: Record Customer temporary;
 Vendor: Record Vendor; 
 ```
 
 ## Method declaration 
+
 To declare a method, follow the guidelines below: 
 
 - Include a space after a semicolon when declaring multiple arguments. 
@@ -206,9 +226,11 @@ end;
 ```
 
 ## Calling methods
+
 When calling a method, include one space after each command if you are passing multiple parameters. Parentheses must be specified when you are making a method call or system call such as: `Init()`, `Modify()`, `Insert()` etc. 
 
 ### Example
+
 ```
 MyProcedure();
 MyProcedure(1);
@@ -216,6 +238,7 @@ MyProcedure(1, 2);
 ```
 
 ## Type definition (colon)
+
 When declaring a variable or a parameter, the name of that variable or parameter must be immediately followed by a colon, then a single space, and then the type of the variable/parameter as illustrated in the example below.
 
 ```
@@ -228,3 +251,4 @@ local procedure MyProcedure(a: Integer; b: Integer): Integer
 ## See Also
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
 [Rules and Guidelines for AL Code](apptest-overview.md)  
+[Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
