@@ -183,8 +183,9 @@ var
 ## Variable and field naming 
 
 For variables they must:
+
 - Be named using PascalCase
-- Have the `Temp` prefix if they are temporary variables
+- Have the `temp` prefix if they are temporary variables
 - Include the object name in the name (for objects)
 
 Furthermore:
