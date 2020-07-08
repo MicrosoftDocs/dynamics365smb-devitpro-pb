@@ -25,6 +25,7 @@ Getting extensions to use secrets from Azure Key Vault involves two areas of wor
 - Setting up and configuring Azure Key Vault.
 
     An extension can retrieve secrets from up to two different Azure Key Vaults. These key vaults must be first created in Azure, and then the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service is configured to access them. The setup process is different for online and on-premises. For more information, see:
+
     - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
     - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md)
 
@@ -33,6 +34,7 @@ Getting extensions to use secrets from Azure Key Vault involves two areas of wor
     Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault. In short, this work involves specifying the key vaults's URL and adding code to retrieve a secret from the key vault.
 
     See [Using App Key Vaults with Extensions](developer/devenc-app-key-vault.md).
+
 
 <!--
 ## Specify the Azure Key Vault in extensions
@@ -325,7 +327,7 @@ The next task is to grant the key vault reader application permission to read se
 Send an email to TODO@microsoft.com to start the onboarding process. This should be done before you publish your updated extension to Partner Center.
 
 The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
-
+-->
 ## <a name="security"></a>Security considerations 
 
 Keep the following information in mind when you use the App Key Vault feature. 
@@ -354,7 +356,7 @@ Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid>
 
 In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
 
--->
+
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
