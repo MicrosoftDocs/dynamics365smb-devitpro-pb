@@ -69,6 +69,12 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 | RT0010 | Extension Lifecycle | [Extension Update Failed: exception raised in extension {extensionName} by {extensionPublisher} (updating to version {extensionTargetedVersion})]( )|
 -->
 
+## Client events
+
+| Event ID | Area | Message |
+|----------|-------------|-----------------|
+| CL0001 | Page views | [Page opened: {pageName}](telemetry-page-view-trace.md#opened) |
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

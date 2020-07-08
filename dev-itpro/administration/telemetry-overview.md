@@ -33,6 +33,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|Both|[Analyzing Extension Lifecycle Telemetry](telemetry-extension-lifecycle-trace.md) |
 |Extension update|Provides information about errors that occur when upgrading an extension.|Both|[Analyzing Extension Upgrade Telemetry](telemetry-extension-update-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
+|Page views|Provides information about the pages that users open in the modern client.|Online|[Analyzing Page View Telemetry](telemetry-page-view-trace.md)|
 |Report generation|Provides information about the execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
 |Web service requests|Provides information about the execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
