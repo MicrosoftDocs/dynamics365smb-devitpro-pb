@@ -68,6 +68,7 @@
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
+### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -213,6 +214,8 @@
 ## App Key Vaults for Secrets
 ### [Overview](administration/extension-key-vault.md)
 ### [Using Key Vault Secrets in Extensions](developer/devenv-app-key-vault.md)
+### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
+### [Setting up App Key Vaults for On-premises](administration/setup-app-key-vault-onprem.md)
 ## Tables
 ### [Tables Overview](developer/devenv-tables-overview.md)
 ### [Table Object](developer/devenv-table-object.md)
@@ -721,6 +724,7 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
+### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events

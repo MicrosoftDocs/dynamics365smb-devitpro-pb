@@ -1,5 +1,5 @@
 ---
-title: Azure Key Vaults with Business Central
+title: Using Key Vault Secrets in Business Central Extensions 
 description: Describes how to use an Azure Key vault with Business Central extensions.
 ms.custom: na
 ms.date: 04/01/2020
@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
+# Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
 
 This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are a kind of credential used for authenticating en extension. Secrets are typically used when the extensions makes calls to web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../administration/extension-key-vault.md).
 
