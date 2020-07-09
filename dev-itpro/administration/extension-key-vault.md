@@ -31,7 +31,7 @@ An extension can retrieve secrets from one or two different Azure Key Vaults. Th
 
 Once you have an Azure Key Vault, you can develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions to retrieve secrets from the key vault. In short, this work involves specifying the key vault's URL and adding code to retrieve a secret from the key vault.
 
-For more information, see [Using App Key Vaults with Extensions](developer/devenv-app-key-vault.md).
+For more information, see [Using App Key Vault Secrets in Extensions](../developer/devenv-app-key-vault.md).
 
 
 <!--
