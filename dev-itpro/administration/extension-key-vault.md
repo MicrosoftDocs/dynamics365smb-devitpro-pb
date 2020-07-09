@@ -14,15 +14,15 @@ author: jswymer
 
 Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions make web service calls to non-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] services. For example, one extension might call Azure Storage to read/write blobs. Another extension might call the extension publisher's web service to do an operation. 
 
-These web service calls are typically authenticated, which means the extension must provide a credential in the call. The credentials enable the other service to accept or reject the call. You can consider the credentials as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where can the extension get the secret from? This is where Azure Key Vaults comes into play. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, like passwords and database connection strings, enabling you to control access and distribution of the secrets.
+These web service calls are typically authenticated, which means the extension must provide a credential in the call. The credentials enable the other service to accept or reject the call. You can consider the credentials as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where can the extension get the secret from? Here is where Azure Key Vaults is used. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, enabling you to control access and distribution of the secrets.
 
 ## Getting started
 
 Getting extensions to use secrets from Azure Key Vault involves two areas of work:
 
-### Setting up and configuring Azure Key Vault
+### Setting up and configuring Azure Key Vaults
 
-An extension can retrieve secrets from two different Azure Key Vaults. These key vaults must be first created in Azure. Then, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service must be configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
+An extension can retrieve secrets from one or two different Azure Key Vaults. These key vaults must be created in Azure, and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
 
 - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
 - [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises](setup-app-key-vault-onprem.md)
@@ -326,28 +326,33 @@ Send an email to TODO@microsoft.com to start the onboarding process. This should
 
 The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
 -->
-## <a name="security"></a>Security considerations 
+## <a name="security"></a>Security considerations
 
 Keep the following information in mind when you use the App Key Vault feature with your extensions.
 
 ### Mark Methods as NonDebuggable
 
-When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](../methods/devenv-nondebuggable-attribute.md). This prevents other partners from debugging into your code and seeing the secrets.
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](../methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
-Once the **App Key Vault Secret Provider** codeunit has been initialized, it can be used to get secrets. If you pass the codeunit to another method, then that method can also use it. If you pass the codeunit to a method in another extension, then the other extension can also use the secret provider to get secrets.  This may not be what you want, so be careful with who you pass the secret provider to. 
+Once the **App Key Vault Secret Provider** codeunit has been initialized, it can be used to get secrets.
 
-### Run publisher validation
+- If you pass the codeunit to another method, then that method is also able use it.
+- If you pass the codeunit to a method in another extension, then the other extension can also use the secret provider to get secrets.
 
-For on-premises deployments, you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabledPublisher) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
+These conditions may not be what you want, so be careful with who you pass the secret provider.
+
+### <a name="validation"></a>Run publisher validation
+
+For on-premises deployments, you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the server's **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabledPublisher) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
 
 > [!TIP]
 > With a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online production environment, publisher validation is not performed for per-tenant extensions. Publisher validation is done automatically for onboarded AppSource extensions.
 
 #### How it works
 
-Publisher validation is done by comparing the Azure AD tenant ID of the Azure Key Vault provider with that of the extension's publisher. It works this way:
+Publisher validation is done by comparing the key vault secret provider's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
 
 1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Azure AD tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
 
@@ -358,10 +363,11 @@ Publisher validation is done by comparing the Azure AD tenant ID of the Azure Ke
     > [!NOTE]
     > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
 
-2.  When the extension is run and tries to initialize the **App Key Vault Secret Provider** codeunit, the system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
+2.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
+3. The system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
 
-    - If they match, initialization succeeds
-    - If the don't match, an error occurs.
+    - If they match, initialization succeeds.
+    - If they don't match, an error occurs.
 
 #### Turning off publisher validation
 
