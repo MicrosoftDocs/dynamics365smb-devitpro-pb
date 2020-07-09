@@ -79,13 +79,13 @@ page 50100 HelloWorldPage
 }
 ```
 
-The call to the `TryInitializeFromCurrentApp` method determines the extension that is currently being executed, then determines the extension's key vaults as specified in the extension manifest. After initialization, you can call the `GetSecret` method to read secrets from the key vault.
+The call to the `TryInitializeFromCurrentApp` method determines the extension that is currently being executed, then determines the extension's key vaults as specified in the extension manifest. After initialization, the `GetSecret` call reads secrets from the key vault.
 
 ## <a name="security"></a>Security considerations
 
 Keep the following information in mind when you use the App Key Vault feature with your extensions.
 
-### Mark Methods as NonDebuggable
+### Mark methods as NonDebuggable
 
 When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](../methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
 
