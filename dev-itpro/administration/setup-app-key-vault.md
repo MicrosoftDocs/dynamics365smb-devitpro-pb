@@ -87,6 +87,6 @@ The onboarding process involves a manual verification step that verifies that yo
 
 ## See Also  
 
-[Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)   
+[Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
+[Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Configuring Business Central Server](configure-server-instance.md)  
