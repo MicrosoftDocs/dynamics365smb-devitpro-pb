@@ -83,37 +83,92 @@ page 50100 HelloWorldPage
 
 The call to the `TryInitializeFromCurrentApp` method determines the extension that is currently being executed, then determines the extension's key vaults as specified in the extension manifest. After initialization, you can call the `GetSecret` method to read secrets from the key vault.
 
-## <a name="security"></a>Security considerations 
+## <a name="security"></a>Security considerations
 
-Keep the following information in mind when you use the App Key Vault feature. 
+Keep the following information in mind when you use the App Key Vault feature with your extensions.
 
-### Use NonDebuggable
+### Mark Methods as NonDebuggable
 
-As always when your code works with secrets, whether from a key vault or from Isolated Storage, remember to mark the methods as NonDebuggable. This prevents other partners from debugging into your code and seeing the secrets. 
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](../methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
-Once the App Key Vault Secret Provider codeunit has been initialized, it can be used to get secrets. If you pass the codeunit to another function, then that function can also use it. If you pass the codeunit to a function in another extension, then the other extension can also use the secret provider to get secrets. This may not be what you want, so be careful with who you pass the secret provider to. 
+Once the **App Key Vault Secret Provider** codeunit has been initialized, it can be used to get secrets.
 
-### Run with publisher validation 
+- If you pass the codeunit to another method, then that method is also able use it.
+- If you pass the codeunit to a method in another extension, then the other extension can also use the secret provider to get secrets.
 
-In the on-premises steps above, you configured the NST to run with publisher validation disabled. You should only do this if you trust all extensions that get installed to not do malicious things like read secrets they are not supposed to. If you don't trust all extensions that might get installed, you should enable publisher validation. This is how the Business Central SaaS service is configured. 
+These conditions may not be what you want, so be careful with who you pass the secret provider.
 
-When publisher validation is enabled, and an extension tries to initialize the App Key Vault Secret Provider codeunit, the following check will be performed: 
+### <a name="validation"></a>Run publisher validation
 
-`Extension.KeyVaultUrls.AadTenantId == Extension.PublisherAadTenantId`
+For on-premises deployments, you can configure [!INCLUDE[server](../developer/includes/server.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the server's **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabledPublisher) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
 
-Only if this check is satisfied will the initialization succeed. 
+> [!TIP]
+> With a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online production environment, publisher validation is not performed for per-tenant extensions. Publisher validation is done automatically for onboarded AppSource extensions.
 
-So how does the NST know an extension publisher's AAD tenant ID? The value can be specified when publishing an extension, like this: 
+#### How it works
 
-Publish-NavApp … -PublisherAzureActiveDirectoryTenantId <guid> 
+Publisher validation is done by comparing the key vault secret provider's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
 
-In SaaS, this value will always be empty for PTEs and dev extensions, and it will only be non-empty for App Source apps if they have been onboarded. 
+1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Azure AD tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
 
-If you don't trust all extensions that might get installed, you should enable publisher validation. The Business Central SaaS service is configured to validate publish
+    ```powershell
+    Publish-NavApp -ServerInstance <server instance> -Path <path to extension package> -PublisherAzureActiveDirectoryTenantId <Azure AD tenant ID GUID>
+    ```
+    
+    > [!NOTE]
+    > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
 
-When **false**, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of.
+2.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
+3. The system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
+
+    - If they match, initialization succeeds.
+    - If they don't match, an error occurs.
+
+#### Turning off publisher validation
+
+Publisher validation is turned on by default, which is the recommended setting. If it's turned off, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. So, don't turn off publisher validation unless you trust the extensions that can be potentially installed.
+
+For information about how to turn publisher validation on or off, see [Configuring Business Central Server](configure-server-instance.md).
+
+## <a name="troubleshooting"></a>Monitoring and troubleshooting
+
+### Compiling and publishing
+
+If you get errors when you compile or publish your extension, the most likely reasons are the following: 
+
+- You are using an old Visual Studio Code AL extension. Upgrade to the latest AL extension. 
+
+- Your extension targets an older runtime. Make sure that the `"runtime"` value in the app.json file is at least `"6.0"`. 
+
+- You are running an old version of [!INCLUDE[server](../developer/includes/server.md)]. Use upgrade to at least version 17.0. 
+
+### Runtime
+
+For runtime operations, there are two sources that you can use for gathering details:
+
+- Windows Event Log of the machine running the [!INCLUDE[server](../developer/includes/server.md)].
+- Application Insights.
+
+These sources provide details about retrieving secrets from key vaults, for calls to the `TryInitializeFromCurrentApp` and `GetSecret` methods from an extension.
+
+#### Using Application Insights
+
+You can set up extensions to emit telemetry to an Application Insights resource in Azure.
+
+1. Get Application Insights resource. 
+
+    Copy the the reource's instrumentation key 
+2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
+
+ ``` 
+ "applicationInsightsKey": ["<instumenation key>"] 
+ ```
+3. Now, you can run your extensions and view data in Application Insights.
+
+   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  

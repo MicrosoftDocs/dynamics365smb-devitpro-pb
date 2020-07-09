@@ -183,7 +183,6 @@ At this point, you can run your extensions that use key vault secrets to read se
 Extensions can be set up to emit telemetry data to Azure Application Insights. The telemetry data provides information about the success or failure provide information about problems with the set up of the App Key Vault.
 
 
-
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  

@@ -326,55 +326,10 @@ Send an email to TODO@microsoft.com to start the onboarding process. This should
 
 The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
 -->
-## <a name="security"></a>Security considerations
 
-Keep the following information in mind when you use the App Key Vault feature with your extensions.
-
-### Mark Methods as NonDebuggable
-
-When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](../methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
-
-### Don't pass the App Key Vault Secret Provider to untrusted code 
-
-Once the **App Key Vault Secret Provider** codeunit has been initialized, it can be used to get secrets.
-
-- If you pass the codeunit to another method, then that method is also able use it.
-- If you pass the codeunit to a method in another extension, then the other extension can also use the secret provider to get secrets.
-
-These conditions may not be what you want, so be careful with who you pass the secret provider.
-
-### <a name="validation"></a>Run publisher validation
-
-For on-premises deployments, you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the server's **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabledPublisher) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
-
-> [!TIP]
-> With a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online production environment, publisher validation is not performed for per-tenant extensions. Publisher validation is done automatically for onboarded AppSource extensions.
-
-#### How it works
-
-Publisher validation is done by comparing the key vault secret provider's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
-
-1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Azure AD tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
-
-    ```powershell
-    Publish-NavApp -ServerInstance <server instance> -Path <path to extension package> -PublisherAzureActiveDirectoryTenantId <Azure AD tenant ID GUID>
-    ```
-    
-    > [!NOTE]
-    > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
-
-2.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
-3. The system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
-
-    - If they match, initialization succeeds.
-    - If they don't match, an error occurs.
-
-#### Turning off publisher validation
-
-Publisher validation is turned on by default, which is the recommended setting. If it's turned off, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. So, don't turn off publisher validation unless you trust the extensions that can be potentially installed.
-
-For information about how to turn publisher validation on or off, see [Configuring Business Central Server](configure-server-instance.md).
 
 ## See Also  
 
+[Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
+[Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Configuring Business Central Server](configure-server-instance.md)  
