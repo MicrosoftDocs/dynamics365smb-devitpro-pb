@@ -146,17 +146,17 @@ To complete this task, you'll need the user name of the service account that run
 
 3. Make a note of the certificate thumbprint because you'll need it in the next step. See [How to: Retrieve the Thumbprint of a Certificate](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate).
 
-4. Configure the [!INCLUDE[server](../developer/includes/server.md) instance.
+4. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
     Now, you'll configure App Key Vault settings on the server instance. The following table describes the settings that you must configure to enable Azure key vault on the server instance:
      
-    |Setting<br />(key name)|Value|Example|
-    |--------|-------------------------------|-----|-------|
-    |Client Certificate Store Location<br />(AzureKeyVaultClientCertificateStoreLocation)|Set to the certificate store location where key vault certificate was stored.|LocalMachine|
-    |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.|MY|
-    |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.|649419e4fbb87340f5a0f995e605b74c5f6d943e|
-    |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant. |ed4129d9-b913-4514-83db-82e305163bec|
-    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID. <br /><br />**Important** We recommend that you only disable this setting If you disable this setting (`false`), the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. For more information, see [App Key Vaults - Security considerations](extension-key-vault.md#security). |true|
+    |Setting<br />(key name)|Value|
+    |--------|-------------------------------|
+    |Client Certificate Store Location<br />(AzureKeyVaultClientCertificateStoreLocation)|Set to the certificate store location where key vault certificate was stored.<br /><br />Example:<br />LocalMachine|
+    |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.<br /><br />Example:<br />MY|
+    |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.<br /><br />Example:<br />649419e4fbb87340f5a0f995e605b74c5f6d943e|
+    |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant.<br /><br />Example:<br />ed4129d9-b913-4514-83db-82e305163bec|
+    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID. <br /><br />**Important** We recommend that you only set this to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](extension-key-vault.md#security).<br /><br />Example:<br />true|
 
     You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       
@@ -178,12 +178,11 @@ To complete this task, you'll need the user name of the service account that run
 
 At this point, you can run your extensions that use key vault secrets to read secrets from key vault. For troubleshooting, please look in the Event Log and configure App Insights telemetry.
 
-
 ## Monitoring and Troubleshooting
 
-Extensions 
+Extensions can be set up to emit telemetry data to Azure Application Insights. The telemetry data provides information about the success or failure provide information about problems with the set up of the App Key Vault.
 
-The initialization failures provide information about problems with the set up of the App Key Vault. 
+
 
 ## See Also  
 
