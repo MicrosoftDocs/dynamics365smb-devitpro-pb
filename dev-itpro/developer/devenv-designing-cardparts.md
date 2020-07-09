@@ -107,7 +107,8 @@ page 50102 "Customer Card"
 
 ## See Also
 
-[Page Parts Overview](devenv-designing-parts.md)   
+[Page Parts Overview](devenv-designing-parts.md)  
+[Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Page Object](devenv-page-object.md)   
 [Page Extension Object](devenv-page-ext-object.md)    
 [Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)   

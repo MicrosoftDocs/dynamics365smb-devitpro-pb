@@ -29,6 +29,7 @@ To do so, your description should consist of 6 paragraphs (in the following orde
 - Closing Call to action paragraph (point 2.E)
 - Supported editions paragraph (point 2.F)
 - Supported countries paragraph (point 2.G)
+- Supported languages paragraph (point 2.H)
 
 By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
 

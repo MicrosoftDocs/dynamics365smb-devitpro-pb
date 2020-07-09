@@ -94,7 +94,8 @@ page 50102 "Customer Card"
 
 ## See Also
 
-[Page Parts Overview](devenv-designing-parts.md)   
+[Page Parts Overview](devenv-designing-parts.md)  
+[Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Designing List Pages](devenv-designing-list-pages.md)   
 [Page Object](devenv-page-object.md)   
 [Page Extension Object](devenv-page-ext-object.md)   

@@ -275,7 +275,7 @@ A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and u
 1. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
     ```  
-    Start-NavDataUpgrade -ServerInstance ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
+    Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
     ```  
     
     Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.
@@ -292,7 +292,7 @@ A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and u
     Run the following command to get a list of any errors that have occurred:
 
     ``` 
-    Get-NAVDataUpgrade ServerInstanceName> -ErrorOnly
+    Get-NAVDataUpgrade -ServerInstance <ServerInstanceName> -ErrorOnly
     ``` 
 
     Resolve the errors before going to the next task.
