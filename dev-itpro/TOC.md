@@ -213,9 +213,9 @@
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## App Key Vaults for Secrets
 ### [Overview](developer/devenv-app-key-vault-overview.md)
-### [Using Key Vault Secrets in Extensions](developer/devenv-app-key-vault.md)
 ### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
 ### [Setting up App Key Vaults for On-premises](administration/setup-app-key-vault-onprem.md)
+### [Using Key Vault Secrets in Extensions](developer/devenv-app-key-vault.md)
 ## Tables
 ### [Tables Overview](developer/devenv-tables-overview.md)
 ### [Table Object](developer/devenv-table-object.md)
