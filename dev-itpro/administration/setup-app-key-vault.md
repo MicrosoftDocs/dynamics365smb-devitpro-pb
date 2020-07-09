@@ -16,7 +16,7 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the Azure Key Vaul
 
 ## Create the Azure Key Vault with secrets
 
-Now, you create one or more key vaults in Azure, and add the secrets that you want to make available to your extensions.
+In this task, you create a key vault in Azure, and add the secrets that you want to make available to your extensions. An extension can use up to two key vaults, so you can create more than one.
 <!--
 
 1. Get an Azure subscription.
@@ -71,17 +71,17 @@ To provision the key vault reader application, use the [Azure Active Directory P
 
 ## Grant the key vault reader application permission to your key vaults
 
-The next task is to grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the the [Azure portal](https://portal.azure.com).
+The next task is to grant the key vault reader application permission to read secrets from your key vaults. The steps in this task are done from the [Azure portal](https://portal.azure.com).
 
 1. Open the key vault in the portal.
 2. Select **Access policies**, then **Add Access Policy**.
 3. Set **Secret Permissions** to **Get**.
-4. Select **Select principal**, and on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV Key Vault Reader**. 
+4. Choose **Select principal**, and on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV Key Vault Reader**. 
 5. Select **Add**, then **Save**.
 
 ## Contact Microsoft to enable the App Key Vault feature
 
-Send an email to TODO@microsoft.com to start the onboarding process. This should be done before you publish your updated extension to Partner Center.
+Send an email to TODO@microsoft.com to start the onboarding process. Do this step before you publish your updated extension to Partner Center.
 
 The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
 

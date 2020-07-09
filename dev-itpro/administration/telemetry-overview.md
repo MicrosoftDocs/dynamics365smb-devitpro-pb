@@ -26,7 +26,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 
 |Area | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
-|App Key Vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|Both|[Analyzing App Key Vault Secret Trace Telemetry](telemetry-extension-key-vault-trace.md) |
+|App Key Vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|Both|[Analyzing App Key Vault Secret Trace Telemetry](telemetry-app-key-vault-trace.md) |
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
 |Database lock timeouts|Provides information about database locks that have timed out. |Both|[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|

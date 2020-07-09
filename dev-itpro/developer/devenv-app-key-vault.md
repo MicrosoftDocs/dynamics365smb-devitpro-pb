@@ -12,20 +12,18 @@ author: jswymer
 ---
 # Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
 
-This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are a kind of credential used for authenticating en extension. Secrets are typically used when the extensions makes calls to web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../administration/extension-key-vault.md).
+This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are a kind of credential used for authenticating en extension. Secrets are typically used when the extensions calls a web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../devenv-app-key-vault-overview.md).
 
-Developing an extension to use secrets from a key vaults involves two tasks, as described in this article:
+Developing an extension to use secrets from a key vault involves two tasks, as described in this article:
 
 - Specifying the Azure Key Vault in the extension's manifest.
 - Adding code to retrieve the secrets from the key vault.
 
-Secrets are actually retrieved at runtime.
-
 ## Preparation
 
-Using secrets requires that you have at least one Azure Key Vault with secrets set up and configured for use by the the service. For more information, see [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md) or [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises ](setup-app-key-vault-onprem.md).
+- Using secrets requires that you have at least one Azure Key Vault with secrets set up and configured for use by the service. If you don't already have an Azure Key Vault, see [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md) or [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises](setup-app-key-vault-onprem.md).
 
-For coding, you'll need the URI the Azure Key Vault that stores the secret and the name of the secret itself. If you don't have this information, you can get it from Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal).
+- For coding, you'll need the URI the Azure Key Vault that stores the secret and the name of the secret itself. If you don't have this information, you can get it from Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal).
 
 ## Specify the Azure Key Vault in extensions
 
@@ -51,7 +49,7 @@ Specifying two key vaults ensures a higher availability of secrets. At runtime, 
 
 ## Add code to retrieve secrets the key vault
 
-Next, you add code to the extension for reading secrets from the key vault at runtime. To read secrets, you use the **Secrets** module of the System Application, specifically codeunit **3800 "App Key Vault Secret Provider"**. This codeunit includes two methods:
+Next, you add code to the extension for reading secrets from the key vault at runtime. To read secrets, you use the **Secrets** module of the System Application. Specifically, you'll use codeunit **3800 "App Key Vault Secret Provider"**. This codeunit includes two methods:
 
 | Method |Description|
 |--------|-----------|
@@ -136,13 +134,13 @@ For information about how to turn publisher validation on or off, see [Configuri
 
 ### Compiling and publishing
 
-If you get errors when you compile or publish your extension, the most likely reasons are the following: 
+If you get errors when you compile or publish your extension, the most likely reasons are: 
 
-- You are using an old Visual Studio Code AL extension. Upgrade to the latest AL extension. 
+- You're using an old Visual Studio Code AL extension. Upgrade to the latest AL extension. 
 
 - Your extension targets an older runtime. Make sure that the `"runtime"` value in the app.json file is at least `"6.0"`. 
 
-- You are running an old version of [!INCLUDE[server](../developer/includes/server.md)]. Use upgrade to at least version 17.0. 
+- You're running an old version of [!INCLUDE[server](../developer/includes/server.md)]. Upgrade to at least version 17.0. 
 
 ### Runtime
 
@@ -170,10 +168,9 @@ You can set up extensions to emit telemetry to an Application Insights resource 
  ```
 3. Now, you can run your extensions and view data in Application Insights.
 
-   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-app-key-vault-trace.md).
 
 ## See Also  
-
-[Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)   
-[Configuring Business Central Server](configure-server-instance.md)  
+[Getting Started with AL](devenv-get-started.md)  
+[Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
+[Configuring Business Central Server](../administration/configure-server-instance.md)  
