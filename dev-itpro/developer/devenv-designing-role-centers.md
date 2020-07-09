@@ -99,7 +99,9 @@ The following table describes some of the most common parts for Role Centers, as
 To use or test the new Role Center in the client, you must first associate the Role Center page with a profile. Profiles define user roles and each profile is associated with a single Role Center page. Create a new [profile object](devenv-profile-object.md) that references your page. Then, go to **My Settings** and select the new profile.
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
+[Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
