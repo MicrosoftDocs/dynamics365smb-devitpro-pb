@@ -157,9 +157,12 @@ These sources provide details about retrieving secrets from key vaults, for call
 
 You can set up extensions to emit telemetry to an Application Insights resource in Azure.
 
-1. Get Application Insights resource. 
+1. Create an Application Insights resource in Azure if you don't have one.
 
-    Copy the the reource's instrumentation key 
+    The Application Insights resource will be assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
+
+    For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+
 2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
 
  ``` 
