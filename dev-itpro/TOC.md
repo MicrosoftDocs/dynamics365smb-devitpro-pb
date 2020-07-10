@@ -81,6 +81,7 @@
 ### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 ### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)

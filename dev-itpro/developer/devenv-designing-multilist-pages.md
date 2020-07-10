@@ -16,7 +16,9 @@ ms.author: mikebc
 **Hang in there! This content is coming soon.**
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
+[Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Page Parts Overview](devenv-designing-parts.md)
 [Designing ListParts](devenv-designing-listparts.md)
 [FactBoxes](devenv-adding-a-factbox-to-page.md)  
