@@ -448,6 +448,9 @@ Uploads an .app file into the specified `app` and `country` based on the provide
 POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions
 ```
 
+> [!IMPORTANT]
+> Make sure the is app is available in the country before you upload the app version.
+
 #### Parameters
 
 |Type|Name|Description|Schema|
