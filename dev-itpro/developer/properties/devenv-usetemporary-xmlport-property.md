@@ -32,5 +32,6 @@ UseTemporary = true;
 ## See Also  
 [Properties](devenv-properties.md)   
 [XMLPort Object](../devenv-xmlport-object.md)   
-[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)
+[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)  
+[Temporary Tables](devenv-temporary-tables.md)
 

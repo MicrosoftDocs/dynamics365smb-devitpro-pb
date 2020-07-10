@@ -31,4 +31,6 @@ Changes made to a temporary table are not stored to a database.
 ## See Also  
 [Properties](devenv-properties.md)   
 [UseTemporary Property (Report)](devenv-usetemporary-report-property.md)   
-[UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)
+[UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)    
+[Temporary Tables](devenv-temporary-tables.md)  
+[Temporary Tables](devenv-temporary-tables.md)
