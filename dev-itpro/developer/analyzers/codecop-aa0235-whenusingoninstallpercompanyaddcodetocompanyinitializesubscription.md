@@ -2,7 +2,7 @@
 title: "When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2020
+ms.date: 07/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
