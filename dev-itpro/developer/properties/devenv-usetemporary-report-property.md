@@ -37,5 +37,5 @@ For an example of the use of the UseTemporary property, see report 1306 in the [
 [Properties](devenv-properties.md)   
 [Report Object](../devenv-report-object.md)   
 [UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)   
-[Temporary Tables](devenv-temporary-tables.md)
+[Temporary Tables](../devenv-temporary-tables.md)
 
