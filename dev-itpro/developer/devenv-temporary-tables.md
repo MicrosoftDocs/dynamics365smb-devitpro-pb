@@ -40,7 +40,7 @@ You manipulate the temporary table variable as you would with any other database
 
 ## Temporary tables on reports and XMLPorts
 
-You can also use temporary tables for storing the data set that is returned by a report object or that is imported by an XMLPort. To do so, set the the **UseTemporary property** to **True** on the relevant report data item or XMLPort table element. For more information, see [UseTemporary Property \(XMLports\)](properties/devenv-usetemporary-xmlport-property.md) and [UseTemporary Property \(Reports\)](properties/devenv-usetemporary-report-property.md).  
+You can also use temporary tables for storing the data set that is returned by a report object or that is imported by an XMLPort. To do so, set the **UseTemporary property** to **True** on the relevant report data item or XMLPort table element. For more information, see [UseTemporary Property \(XMLports\)](properties/devenv-usetemporary-xmlport-property.md) and [UseTemporary Property \(Reports\)](properties/devenv-usetemporary-report-property.md).  
 
 It is useful to use a temporary table for a report when the column data is not mapped directly to a field in the database but is instead the result of a process or operation, such as an aggregation of data from several columns. If a temporary table is not used, the data must be handled by AL code.
 
