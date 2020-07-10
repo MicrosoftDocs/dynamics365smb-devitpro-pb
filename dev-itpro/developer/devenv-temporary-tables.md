@@ -1,12 +1,13 @@
 ---
 title: "Temporary Tables"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics365-business-central"
+author: blrobl
 ---
 
 # Temporary Tables
@@ -35,7 +36,7 @@ var
     TempInvoicePostBuffer: Record "Invoice Post. Buffer" temporary;
 ```
 
-You manipulate the temporary table variable as you would with any other database table. For example, you can apply filters and perform searches, amongst other operations. For more information, see [Record Data Type](methods-auto/record/record-data-type.md). 
+You manipulate the temporary table variable as you would with any other database table. For example, you can apply filters and perform searches. For more information about the operations you can perform, see [Record Data Type](methods-auto/record/record-data-type.md). 
 
 ## Temporary tables on reports and XMLPorts
 
