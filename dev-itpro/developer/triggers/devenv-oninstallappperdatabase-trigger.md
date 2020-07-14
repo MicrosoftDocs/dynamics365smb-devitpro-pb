@@ -13,7 +13,7 @@ author: blrobl
 # OnInstallAppPerDatabase Trigger
 Runs during the installation or reinstallation of an extension.
 
-## Applies To  
+## Applies to  
 -  Install codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **Install**.  
 
 ## Remarks  
