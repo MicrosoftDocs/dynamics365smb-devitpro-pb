@@ -61,5 +61,7 @@ MESSAGE(MyTextConst, RecID);
 ```  
   
 ## See Also  
+
+[AL Method Reference](../methods-auto/library.md)  
 [Record Data Type](../datatypes/devenv-record-data-type.md)  
 [Format Property](../properties/devenv-format-property.md)
