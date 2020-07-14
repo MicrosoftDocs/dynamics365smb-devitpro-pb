@@ -85,4 +85,6 @@ codeunit 10 StringifierWithOverloads
 ```
 
 ## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [AL Development Environment](../devenv-reference-overview.md)  
