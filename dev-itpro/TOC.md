@@ -217,6 +217,7 @@
 ### [View Table Data](developer/devenv-view-table-data.md)
 ### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
+### [Temporary Tables](developer/devenv-temporary-tables.md)
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
