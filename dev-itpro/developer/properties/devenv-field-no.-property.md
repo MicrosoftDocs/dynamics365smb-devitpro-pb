@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Field No. Property
 Sets a unique numeric ID for the field.  
   
-## Applies To  
+## Applies to  
  Fields  
 
 ## Syntax

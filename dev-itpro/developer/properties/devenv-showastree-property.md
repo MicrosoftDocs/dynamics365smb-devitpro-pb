@@ -19,7 +19,7 @@ Sets a list page to display records (rows) in an indented hierarchy that can be 
 ShowAsTree = true;
 ```
 
-## Applies To  
+## Applies to  
   
 - Repeater controls on list page types  
   

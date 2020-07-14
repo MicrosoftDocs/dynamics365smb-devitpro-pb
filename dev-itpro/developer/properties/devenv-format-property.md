@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Format Property
 Sets the formats of the source expression for various data types.  
   
-## Applies To  
+## Applies to  
 
 All data types in AL.  
   

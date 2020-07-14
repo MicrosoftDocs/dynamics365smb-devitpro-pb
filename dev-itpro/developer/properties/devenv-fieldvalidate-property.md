@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 Sets a value that specifies whether the values in the source field are validated by the [OnValidate (Fields) Trigger](../triggers/devenv-onvalidate-fields-trigger.md) trigger for the field.  
   
-## Applies To  
+## Applies to  
 
 - Field elements in XMLports 
 - Field attributes in XMLports

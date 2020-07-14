@@ -19,7 +19,7 @@ Sets up a link to the page you are launching. Set the RunPageLink property to es
 > [!IMPORTANT]  
 > For performance reasons, always set the `RunPageView` property if the `RunPageLink` property is also set. In fact, the sort order chosen in the `RunPageView` property must contain the fields listed in the `RunPageLink` property or else the performance is decreased.
 
-## Applies To  
+## Applies to  
   
 - Page Actions  
   

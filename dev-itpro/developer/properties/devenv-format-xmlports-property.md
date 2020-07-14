@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 Determines the import and export format of the XMLPort.  
   
-## Applies To  
+## Applies to  
   
 - XMLports  
 

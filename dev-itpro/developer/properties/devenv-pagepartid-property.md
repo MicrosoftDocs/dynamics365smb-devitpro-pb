@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # PagePartID Property
 Sets a link to another page.  
   
-## Applies To  
+## Applies to  
   
 -   Part controls on pages  
   

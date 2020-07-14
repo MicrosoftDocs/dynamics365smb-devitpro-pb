@@ -18,7 +18,7 @@ ms.author: solsen
 # Style Property
 Sets a value that determines how text in a field on a page is formatted. For fields that are included in a **CueGroup**, this property sets the value of the color indicator on the cue.  
 
-## Applies To  
+## Applies to  
 
 -   Page field controls that contain text.  
 

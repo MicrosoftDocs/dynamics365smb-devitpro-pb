@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # PreviewMode Property
 Specifies how the report opens when you preview it.  
 
-## Applies To  
+## Applies to  
  Reports  
 
 ## Property Value  

@@ -15,7 +15,7 @@ ms.author: jswymer
 # UseTemporary Property (XMLport)
 Sets whether a temporary table is created to store the records imported using the XmlPort.
 
-## Applies To  
+## Applies to  
 
 - XMLport table elements
 

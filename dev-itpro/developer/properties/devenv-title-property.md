@@ -20,7 +20,7 @@ Sets whether the first letter in each word the user types is capitalized.
 > [!IMPORTANT]  
 >  This property has been deprecated. Setting the property has no effect on the client. 
  
-## Applies To  
+## Applies to  
 - Page fields
   
   

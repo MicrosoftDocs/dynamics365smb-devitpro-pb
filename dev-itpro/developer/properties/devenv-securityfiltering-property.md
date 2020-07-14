@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SecurityFiltering Property
 Specifies how security filters are applied to the record.  
   
-## Applies To  
+## Applies to  
   
 -   Record variables  
   

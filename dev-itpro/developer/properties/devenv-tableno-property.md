@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 
 Sets a record parameter by reference to a table on the `OnRun` trigger. 
   
-## Applies To
+## Applies to
 
 Codeunits  
   
