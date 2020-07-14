@@ -47,7 +47,7 @@ action(CustomerBalance)
 
 ## Remarks
 
-For example, if the current page is the customer card and you need to provide a way to see the outstanding sales orders for the current customer, you would select RunObject in the PushAction property and use the [RunObject Property](devenv-runobject-property.md) to run the customer sales orders page. In this property you would select the Customer No. field as the link between the two pages.  
+For example, if the current page is the customer card and you need to provide a way to see the outstanding sales orders for the current customer, you would use the [RunObject Property](devenv-runobject-property.md) to run the customer sales orders page. In this property you would select the `Customer No.` field as the link between the two pages.  
   
 ## See Also  
 
