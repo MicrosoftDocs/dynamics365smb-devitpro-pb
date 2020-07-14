@@ -19,7 +19,7 @@ You can use the following handler methods:
 
 |Method type|Purpose|Signature|  
 |-------------------|-------------|---------------|
-|MessageHandler|Handles **Message** statements.|\<*Function name*>\(\<*Message*> : Text\[1024\]\)|  
+|MessageHandler|Handles **Message** statements.|\<*Function name*>\(\<*Message*> : Text\[1024\]\)<img width=210/>|  
 |ConfirmHandler|Handles **Confirm** statements.|\<*Function name*>\(\<*Question*> : Text\[1024\]; var \<*Reply*> : Boolean\)|
 |StrMenuHandler|Handles **StrMenu** statements.|\<*Function name*>\(\<*Options* : Text\[1024\]; var \<*Choice*> : Integer; \<*Instruction*> : Text\[1024\]\)|
 |PageHandler|Handles specific pages that are not run modally.|\<*Function name*>\(var \<*Page*> : Page \<*page id*>\)<br /><br /> \<*Function name*>\(var \<*Page*> : TestPage \<*testpage id*>\)|
