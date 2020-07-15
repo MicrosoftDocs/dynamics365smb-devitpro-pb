@@ -14,6 +14,7 @@ ms.author: solsen
 When you create a new report, there are two things you have to think about; defining the report dataset of data items and columns, and then designing the report layout. These steps will show how to create a very simple report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md).
 
 ## Create a Word layout report
+
 To facilitate testing your report layout, the following simple example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
 1. Create a new extension to the **Customer List** page that contains code to run the report, as well as a simple report object by adding the following lines of code:  
