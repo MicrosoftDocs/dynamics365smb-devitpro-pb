@@ -71,7 +71,7 @@ To facilitate testing your report layout, the following simple example extends t
 You will now see the generated report in preview mode.
 
 > [!NOTE]  
-> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, then **Extensions**, and then **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
     ```
     "al.compilationOptions": {
             "generateReportLayout": true
