@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2020
+ms.date: 07/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,7 +74,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0221](codecop-aa0221-optioncaptionmustbefilledonpageforoptionfields.md)|You must specify a OptionCaption property for all fields which source expressions is not a table field.|You must specify a OptionCaption property for all fields which source expressions is not a table field.|The OptionCaption property for {0} {1} must be filled in.|Localizability|Warning|true|
 |[AA0222](codecop-aa0222-siftindexshouldnotbeusedforprimaryanduniquekey.md)|SIFT index should not be used on primary or unique key.|SIFT index should not be used on primary or unique key.|SIFT index should not be used on key {0}.|Design|Warning|true|
 |[AA0223](codecop-aa0223-optioncaptionlanguagevaluemustbefilled.md)|The value of the OptionCaption property of Fields must be filled in.|The value of the OptionCaption property of Fields must be filled in.|The value of the {0} OptionCaption property for {1} {2} must be filled in.|Localizability|Warning|true|
-|[AA0224](codecop-aa0224-countofoptionscaptioniswrong.md)|The count of captions property is wrong.|The count of captions property is wrong.|The count of captions property for {0} {1} is wrong.|Localizability|Warning|true|
+|[AA0224](codecop-aa0224-countofoptionscaptioniswrong.md)|The count of option captions specified in the OptionCaption property is wrong.|The count of option captions specified in the OptionCaption property is wrong.|The count of option captions specified in the OptionCaption property for {0} {1} is wrong.|Localizability|Warning|true|
 |[AA0225](codecop-aa0225-captionmustbefilledonpageforfields.md)|You must specify a caption in the Caption property for Fields that exist on page objects.|You must specify a caption in the Caption property for Fields that exist on page objects.|The Caption property for {0} {1} must be filled in.|Localizability|Warning|true|
 |[AA0226](codecop-aa0226-captionlanguagevaluemustbefilled.md)|The value of the Caption property of Fields must be filled in.|The value of the Caption property of Fields must be filled in.|The value of the {0} Caption property for {1} {2} must be filled in.|Localizability|Warning|true|
 |[AA0227](codecop-aa0227-alwaysguardmethodswithunhandlederrorsinupgradecodeunits.md)|Optional return value should not be omitted in upgrade codeunits.|In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors.|Optional return value of the method should not be omitted in upgrade codeunits.|Design|Warning|true|
@@ -86,6 +86,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0235](codecop-aa0235-whenusingoninstallpercompanyaddcodetocompanyinitializesubscription.md)|When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription.|When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' you must also add a 'Company - Initialize'::'OnCompanyInitialize' subscription.|Codeunit '{0}' must contain the 'OnCompanyInitialize' subscription.|Design|Info|true|
 |[AA0237](codecop-aa0237-nontemporaryvariablesmustnotbeprefixedtemp.md)|The name of non-temporary variables must not be prefixed with Temp.|Only temporary variable names must be prefixed with Temp.|The name of non temporary variables '{0}' must not be prefixed with Temp.|Readability|Warning|true|
 |[AA0240](codecop-aa0240-emailandphonenomustnotbepresentinthesource.md)|Email and Phone No must not be present in any part of the source code.|Email and Phone No must not be present in any part of the source code that might be collected as telemetry data.|The {0} '{1}' must not be contain Email or Phone No.|Design|Warning|true|
+|[AA0241](codecop-aa0241-uselowercaseforlanguagekeywords.md)|Use all lowercase letters for reserved language keywords.|Use all lowercase letters for reserved language keywords. This rule does not apply to built-in methods and types; they must be written using Pascal case.|You must use all lowercase letters for reserved keyword '{0}'.|Readability|Warning|true|
 |[AA0448](codecop-aa0448-usefieldtablecaptionforusermessages.md)|You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.|If you want to enable your application for multilanguage functionality, you must use the FieldCaption and TableCaption methods instead of the FieldName and TableName methods.|Use FieldCaption instead of FieldName and TableCaption instead of TableName in methods that display messages.|Localizability|Warning|true|
 |[AA0470](codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md)|Placeholders should have a comment explaining their content.|Provide an explanation that describes the content of each of the placeholders.|Variable '{0}' with placeholders should have a comment explaining their content.|Localizability|Warning|true|
 

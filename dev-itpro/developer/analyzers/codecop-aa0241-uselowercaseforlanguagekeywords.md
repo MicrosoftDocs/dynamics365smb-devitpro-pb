@@ -1,5 +1,5 @@
 ---
-title: "The count of option captions specified in the OptionCaption property is wrong."
+title: "Use all lowercase letters for reserved language keywords."
 ms.author: solsen
 ms.custom: na
 ms.date: 07/16/2020
@@ -13,20 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0224
-The count of option captions specified in the OptionCaption property is wrong.  
+# CodeCop Rule AA0241
+Use all lowercase letters for reserved language keywords.  
 
 ## Description
-The count of option captions specified in the OptionCaption property is wrong.
+Use all lowercase letters for reserved language keywords. This rule does not apply to built-in methods and types; they must be written using Pascal case.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Remarks
-
-The number of option captions specified in the **OptionCaption** property must match the number of option values available for a variable or a field on a page or report.
-
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[OptionCaption Property](../properties/devenv-optioncaption-property.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
