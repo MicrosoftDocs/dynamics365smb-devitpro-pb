@@ -25,7 +25,7 @@ begin
 end;
 ```
 
-## Values
+## Attribute values
 
 `CommitBehavior::Ignore`
 This will ignore all `commit` calls until the method scope ends.
@@ -33,13 +33,14 @@ This will ignore all `commit` calls until the method scope ends.
 `CommitBehavior::Error`
 This will throw an exception and stop the execution of further code when a `commit` is called before the end of the scope of the method.
 
-Note: We can only assign a more restrictive Commit Behavior. That is, if CommitBehavior::Ignore is attempted on a method scope, but the method calling the current method (let’s call it the parent method) is actually running with CommitBehavior::Error, then the current method will continue running with CommitBehavior::Error, even though Ignore attribute was specified.
 
-The CommitBehavior only lasts for the method scope.
-Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the CommitBehavior reverts to the standard behavior, where COMMIT statements will commit to the database.
+> [!NOTE]  
+> It is only possible to assign a more restrictive `commit` behavior. That is, if `CommitBehavior::Ignore` is attempted on a method scope, but the method calling the current method, e.g. the parent method is actually running with `CommitBehavior::Error`, then the current method will continue running with `CommitBehavior::Error`, even though the `Ignore` attribute was specified.
 
 
-  
+> [!NOTE]   
+> The `CommitBehavior` only lasts for the method scope. Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the `CommitBehavior` reverts to the standard behavior, where `commit` statements will commit to the database.
+
 ## Example
 
 ```
