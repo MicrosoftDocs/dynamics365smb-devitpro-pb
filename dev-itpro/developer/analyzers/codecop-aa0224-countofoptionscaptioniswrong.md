@@ -25,6 +25,30 @@ The count of option captions specified in the OptionCaption property is wrong.
 
 The number of option captions specified in the **OptionCaption** property must match the number of option values available for a variable or a field on a page or report.
 
+## Example
+
+The following code sample will raise a warning because the number of option values available for the page field `"VAT Posting"` is two, while only one option caption is defined in the **OptionCaption** property. 
+
+```
+page 50100 MyPage
+{
+    layout
+    {
+        area(Content)
+        {
+            field("VAT Posting"; postingOptions)
+            {
+                OptionCaption = 'Automatic VAT Entry';
+            }
+        }
+    }
+
+    var
+        postingOptions: Option "Automatic VAT Entry" , "Manual VAT Entry";
+}
+```
+
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [OptionCaption Property](../properties/devenv-optioncaption-property.md)  
