@@ -13,22 +13,67 @@ author: SusanneWindfeldPedersen
 
 # CommitBehavior Attribute
 
-Specifies that a method ...
+Specifies the behavior of `commit` calls inside the method scope of the call.
 
 ## Syntax  
 
 ```  
 [CommitBehavior(CommitBehavior::Ignore)]
-local procedure MyEventPublisher()
+local procedure ProcedureIgnoreCommit()
 begin
+    // Do something
 end;
 ```
+
+## Values
+
+`CommitBehavior::Ignore`
+This will ignore all `commit` calls until the method scope ends.
+
+`CommitBehavior::Error`
+This will throw an exception and stop the execution of further code when a `commit` is called before the end of the scope of the method.
+
+Note: We can only assign a more restrictive Commit Behavior. That is, if CommitBehavior::Ignore is attempted on a method scope, but the method calling the current method (let’s call it the parent method) is actually running with CommitBehavior::Error, then the current method will continue running with CommitBehavior::Error, even though Ignore attribute was specified.
+
+The CommitBehavior only lasts for the method scope.
+Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the CommitBehavior reverts to the standard behavior, where COMMIT statements will commit to the database.
+
+
   
 ## Example
 
 ```
+codeunit 50100 MyCodeunit
+{
+    trigger OnRun()
+    var
+    begin
+        FunctionAllowCommit();
+    end;
 
+    local procedure FunctionAllowCommit()
+    begin
+        FunctionIgnoreCommit();
+        COMMIT; // This is valid, and Commit call will be executed.
+    end;
 
+    [CommitBehavior(CommitBehavior::Ignore)]
+    local procedure FunctionIgnoreCommit()
+    begin
+        TryFunctionErrorCommit();
+        COMMIT; // This call will be silently ignored.
+    end;
+
+    [CommitBehavior(CommitBehavior::Error)]
+    [TryFunction]
+    local procedure TryFunctionErrorCommit()
+    begin
+        COMMIT; // This will throw an error. No further code will be executed and User will see a dialog to contact the System administrator.
+    end;
+
+    var
+        myInt: Integer;
+}
 ```
   
 ## See Also  
