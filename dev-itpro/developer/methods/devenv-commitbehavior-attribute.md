@@ -38,7 +38,7 @@ This will throw an exception and stop the execution of further code when a `comm
 > It is only possible to assign a more restrictive `commit` behavior. That is, if `CommitBehavior::Ignore` is attempted on a method scope, but the method calling the current method, e.g. the parent method is actually running with `CommitBehavior::Error`, then the current method will continue running with `CommitBehavior::Error`, even though the `Ignore` attribute was specified.
 
 
-> [!NOTE]   
+> [!NOTE]  
 > The `CommitBehavior` only lasts for the method scope. Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the `CommitBehavior` reverts to the standard behavior, where `commit` statements will commit to the database.
 
 ## Example
@@ -55,21 +55,21 @@ codeunit 50100 MyCodeunit
     local procedure FunctionAllowCommit()
     begin
         FunctionIgnoreCommit();
-        COMMIT; // This is valid, and Commit call will be executed.
+        commit; // This is valid, and commit call will be executed.
     end;
 
     [CommitBehavior(CommitBehavior::Ignore)]
     local procedure FunctionIgnoreCommit()
     begin
         TryFunctionErrorCommit();
-        COMMIT; // This call will be silently ignored.
+        commit; // This call will be silently ignored.
     end;
 
     [CommitBehavior(CommitBehavior::Error)]
     [TryFunction]
     local procedure TryFunctionErrorCommit()
     begin
-        COMMIT; // This will throw an error. No further code will be executed and User will see a dialog to contact the System administrator.
+        commit; // This will throw an error. No further code will be executed and the user will see a dialog to contact the system administrator.
     end;
 
     var
