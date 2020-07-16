@@ -2,7 +2,7 @@
 title: "Update 16.3 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/06/2020
+ms.date: 07/15/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,13 @@ author: ManuelaHochstrasser
 # Update 16.3 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
 
 Would you like to know what has changed in update 16.3?
-Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.  
+Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting. 
+
+[Jump right to downloading update 16.3](https://www.microsoft.com/en-us/download/details.aspx?id=101461).
 
 ## Hotfixes
 
-[Link to Hotfixes](https://support.microsoft.com/help/4563407)
+[Link to Hotfixes](https://support.microsoft.com/help/4563407).
 
 ## Feature changes
 
