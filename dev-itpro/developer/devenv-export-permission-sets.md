@@ -3,7 +3,7 @@ title: "Exporting Permission Sets"
 description: Export permission sets for Dynamics 365 for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/02/2020
+ms.date: 07/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,6 +39,10 @@ Now, you have the XML file with default permissions to all your objects.
 ### Example from Visual Studio Code
 
 The following example illustrates the generated .xml file from **MyProject** which contains a table with objectID 50106 and two object types are generated; `<ObjectType>0</ObjectType>` is `TableData` and `<ObjectType>1</ObjectType>` is `Table`.
+
+> [!NOTE]  
+> The maximum length of the RoleID attribute is 20 characters. If the RoleID exceeds this length, then XML schema validation fails and the corresponding PermissionSet file is not included in the resulting app package. You will get a warning in the Visual Studio output panel.
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
