@@ -41,7 +41,7 @@ Now, you have the XML file with default permissions to all your objects.
 The following example illustrates the generated .xml file from **MyProject** which contains a table with objectID 50106 and two object types are generated; `<ObjectType>0</ObjectType>` is `TableData` and `<ObjectType>1</ObjectType>` is `Table`.
 
 > [!NOTE]  
-> The maximum length of the RoleID attribute is 20 characters. If the RoleID exceeds this length, then XML schema validation fails and the corresponding PermissionSet file is not included in the resulting app package. You will get a warning in the Visual Studio output panel.
+> The maximum length of the RoleID attribute is 20 characters. If the RoleID exceeds this length, then the XML schema validation fails and the corresponding permission set file is not included in the resulting app package. You will get a warning in the Visual Studio output panel.
 
 
 ```xml
