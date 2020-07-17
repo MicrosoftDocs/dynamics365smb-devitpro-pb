@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.service: "dynamics365-business-central"
 ms.topic: article
 ---
-# Register You On-Premises Deployment in the Azure Management Portal
+# Register Your On-Premises Deployment in the Azure Management Portal
 
 If you want to use services that are based on Microsoft Azure, you must register your Business Central on-premises in the Azure Management Portal. For example, the [Sales and Inventory Forecast](ui-extensions-sales-forecast.md) extension requires that you specify an API key and API URI, and other services require similar information. So where do you find that information?
 
