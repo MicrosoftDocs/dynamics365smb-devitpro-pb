@@ -75,7 +75,7 @@ The following example illustrates the generated .xml file from **MyProject** whi
 
 ### Object type mapping
 
-The mapping of object types in the XML generated from Visual Studio Code is the following:
+The mapping of object types in the XML such as `<ObjectType>0</ObjectType>` generated from Visual Studio Code is the following:
 
 |Object type      |Number|
 |-----------------|------|
@@ -96,6 +96,7 @@ The mapping of object types in the XML generated from Visual Studio Code is the 
 
 
 ## See Also
+
 [Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
 [Permissions Property](properties/devenv-permissions-property.md)  
 [TestPermissions Property](properties/devenv-testpermissions-property.md)  
