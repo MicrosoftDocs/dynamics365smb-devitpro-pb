@@ -2,7 +2,7 @@
 title: "App Management API"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -449,7 +449,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 ```
 
 > [!IMPORTANT]
-> Make sure you registered your app with the service and added a country to it, before you attempt to upload the app version.
+> Make sure that you registered your app with the service and added a country to it, before you attempt to upload the app version.
 
 #### Parameters
 
