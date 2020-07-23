@@ -49,8 +49,8 @@ You have now registered your Business Central on-premises solution in the Azure 
 
 ## To add the information to Business Central
 
-1. In the top right corner, choose the :::image type="content" source="../developer/media/search_icon.png" alt-text="Search icon"::: icon, enter **Set Up Azure Active Directory**, and then choose the related link.
-2. In the wizard, choose **Next**.
+1. In the top right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Set Up Azure Active Directory**, and then choose the related link.
+2. In the wizard, choose **Next**.  
 3. In the **Client ID** field, specify the content that you copied from the **Application ID** field earlier.
 4. In the **Secret Key** field, specify the content that you copied from the **Keys** pane earlier.
 5. Choose **Next**. Unless you see an error message, you are now done.
