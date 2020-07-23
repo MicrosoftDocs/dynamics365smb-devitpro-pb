@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AutoFormatExpression Property
 Sets an AL expression that specifies how to format data.  
   
-## Applies To  
+## Applies to  
  Fields (or columns) of the decimal data type in the following objects:  
   
 - Tables  

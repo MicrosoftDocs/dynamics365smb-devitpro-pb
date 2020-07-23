@@ -13,7 +13,8 @@ ms.service: "dynamics365-business-central"
 
 Sets a specific table view for the page that you launch from this control. 
   
-## Applies To  
+## Applies to  
+
 - Page actions  
   
 ## Remarks  

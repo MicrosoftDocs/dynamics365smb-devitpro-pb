@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # Temporary Property
 Sets whether a temporary table is created.  
   
-## Applies To  
+## Applies to  
 - Record variables  
   
 ## Syntax

@@ -56,13 +56,12 @@ ArrayOfDotNetVariables: Array [10] of DotNet String;
 ## Methods
 The following AL methods for arrays are available:  
 
-[ARRAYLEN Method](../methods-auto/system/system-arraylen-method.md) 
+[ArrayLen Method](../methods-auto/system/system-arraylen-method.md) 
 
-[COMPRESSARRAY Method](../methods-auto/system/system-compressarray-method.md)
+[CompressArray Method](../methods-auto/system/system-compressarray-method.md)
 
-[COPYARRAY Method](../methods-auto/system/system-copyarray-method.md)
-
-
+[CopyArray Method](../methods-auto/system/system-copyarray-method.md)
 
 ## See Also  
-[AL Method Reference](devenv-al-method-reference.md)  
+
+[AL Method Reference](../methods-auto/library.md)  

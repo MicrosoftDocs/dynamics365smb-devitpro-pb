@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 Sets the data that is being imported or exported as XML data types or as the standard AL data types.  
   
-## Applies To  
+## Applies to  
 
 - XMLports  
   

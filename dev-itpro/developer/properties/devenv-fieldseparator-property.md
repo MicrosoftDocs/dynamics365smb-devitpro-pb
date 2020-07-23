@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 # FieldSeparator Property
 Sets the string that is to be used to separate fields.  
   
-## Applies To  
+## Applies to  
   
 - XMLports  
   

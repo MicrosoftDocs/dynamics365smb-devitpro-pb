@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # FieldClass Property
 Sets the class of the field.  
   
-## Applies To  
+## Applies to  
 
 Fields  
   

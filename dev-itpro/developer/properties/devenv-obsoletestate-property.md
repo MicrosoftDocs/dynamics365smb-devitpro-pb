@@ -15,7 +15,7 @@ ms.author: jswymer
 # ObsoleteState Property
 Marks whether the object or element is or will become obsolete.   
 
-## Applies To  
+## Applies to  
 
 -   Table objects
 -   Table fields

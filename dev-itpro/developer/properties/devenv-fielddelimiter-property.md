@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # FieldDelimiter Property
 Specifies the text delimiter for a field.  
   
-## Applies To  
+## Applies to  
   
 - XMLports  
 

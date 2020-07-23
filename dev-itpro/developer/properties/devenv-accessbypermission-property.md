@@ -23,7 +23,7 @@ Sets a value for a table field or UI element that determines the permission mask
 
 -   Page parts, such as **Lines** FastTabs  
 
-## Applies To  
+## Applies to  
 
 -   Fields in tables (affecting all related fields on pages)  
 

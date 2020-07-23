@@ -18,7 +18,7 @@ author: jswymer
 
 Sets the width of a field when it appears as a column in a list. The width is specified by an integer that corresponds to the number of characters. <!-- and must be a fixed number when specified. --> 
   
-## Applies To  
+## Applies to  
   
 -   Page fields  
   

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SQLJoinType Property
 Sets the data item link type between data items in a query to determine the records that are included in the resulting dataset.  
   
-## Applies To  
+## Applies to  
   
 -   Query data items  
   

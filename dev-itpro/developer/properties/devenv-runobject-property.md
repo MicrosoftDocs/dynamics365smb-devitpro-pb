@@ -14,9 +14,9 @@ author: SusanneWindfeldPedersen
 
 Sets the object you want to run immediately when the action is activated.  
   
-## Applies To  
+## Applies to  
   
-- Page Actions  
+- Page actions  
   
 ## Remarks  
 

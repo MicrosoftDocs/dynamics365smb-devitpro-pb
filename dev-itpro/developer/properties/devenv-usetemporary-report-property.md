@@ -15,7 +15,7 @@ ms.author: jswymer
 # UseTemporary Property (Report)
 Sets whether a temporary table is used to store the data set that is returned for columns of a data item.
 
-## Applies To  
+## Applies to  
 
 - Report data items
 
