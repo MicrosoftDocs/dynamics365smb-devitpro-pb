@@ -449,7 +449,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 ```
 
 > [!IMPORTANT]
-> Make sure the is app is available in the country before you upload the app version.
+> Make sure you registered your app with the service and added a country to it, before you attempt to upload the app version.
 
 #### Parameters
 
