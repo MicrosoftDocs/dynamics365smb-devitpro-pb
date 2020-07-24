@@ -114,7 +114,9 @@ Using the [Scope (Action)](properties/devenv-scope-action-property.md) property,
 Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
+[Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  

@@ -19,7 +19,7 @@ Sets the name of the table field or variable that controls row indentation in a 
 IndentationColumn = IntegerFieldName;
 ```
   
-## Applies To  
+## Applies to  
   
 - Repeater controls on list page types
   

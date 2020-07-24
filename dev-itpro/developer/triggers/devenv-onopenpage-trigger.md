@@ -22,7 +22,7 @@ begin
 end;
 ```  
 
-## Applies To  
+## Applies to  
 -   Pages  
 
 ## Remarks  

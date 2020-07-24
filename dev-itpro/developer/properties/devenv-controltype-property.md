@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ControlType Property
 Use this property when you select a control type.  
   
-## Applies To  
+## Applies to  
  This property displays the following control types for you to choose from:  
   
 -   Container  

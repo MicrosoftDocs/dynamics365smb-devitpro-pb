@@ -15,7 +15,8 @@ author: jswymer
 Specifies that the method is a FilterPageHandler method.
 
 ## Applies to  
- AL test methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
+
+AL test methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
 
 ## Syntax  
   
@@ -31,5 +32,7 @@ The **FilterPageHandler** method is called when a filter page is invoked in the 
 The **FilterPageHandler** attribute requires that the method where it is applied has the signature `FilterPageHandler(var RecRef: RecordRef) : Boolean;`. The parameter variable, *RecRef*, holds the record of the filter page.
 
 ## See Also  
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

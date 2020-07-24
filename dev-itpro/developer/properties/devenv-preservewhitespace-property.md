@@ -20,7 +20,7 @@ Determines whether white space should be preserved in documents that are importe
   
  When this property is set to **true**, no normalizations are performed.  
   
-## Applies To  
+## Applies to  
  XMLports  
   
 ## Property Value  
