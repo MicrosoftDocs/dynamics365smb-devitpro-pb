@@ -42,7 +42,7 @@ The following table provides an explanation of the parameters:
 |Parameter   |Description  |
 |------------|-------------|
 |Json |Specifies a relative path for the location of the docfx.json file. In Microsoft documentation repos, this location is typically ```articles/```. |
-|Out |Specifies the folder where your existing clone is, or the folder to clone the repo to. If you run HtmlFromRepoGenerator to clone a repo, this folder must not already exist. Use the language name as the folder name as described in [Language and locale descriptors in across product and Help](language-locale.md). |
+|Out |Specifies the folder where your existing clone is, or the folder to clone the repo to. If you run HtmlFromRepoGenerator to clone a repo, this folder must not already exist. <!--Use the language name as the folder name as described in [Language and locale descriptors in across product and Help](language-locale.md). -->|
 |ExternalText |Specifies text that must be added to the updated links if HtmlFromRepoGenerator must replace the original links.|
 |DoNotClone |Set this parameter when you run the tool against previously cloned repos. |
 |Repo |Specifies the repo URL. Optional if you run the tool based on a previously cloned repo. Examples of Microsoft documentation repo URLs include *https://github.com/MicrosoftDocs/dynamics365smb-docs* for English (US) and *https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de* for German (Germany).|

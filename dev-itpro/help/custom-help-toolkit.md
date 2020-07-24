@@ -44,4 +44,4 @@ The toolkit is available at TBD. The repo contains the following tools and the s
 ## See also
 
 [Configure Context-Sensitive Help](context-sensitive-help.md)  
-[[!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model](../user-assistance.md)  
+[User Assistance Model](../user-assistance.md)  
