@@ -11,6 +11,8 @@
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
+#### [Custom Help Toolkit](help/custom-help-toolkit.md)
+#### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 <!--Learn-->
 ## Training and Readiness
 ### Learning Catalogs
