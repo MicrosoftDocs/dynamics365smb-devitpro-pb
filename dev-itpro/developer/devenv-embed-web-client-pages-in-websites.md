@@ -67,7 +67,7 @@ By default, the [!INCLUDE[webclient](includes/webclient.md)] will not allow a we
     </httpProtocol>  
 ```  
 
-In order to show a list page in an HTML site on a different host, the configuration fole (navsettings.json) of the [!INCLUDE[webserver](includes/webserver.md)] instance that hosts the [!INCLUDE[webclient](includes/webclient.md)](includes/nav_web_md.md)] has to be configured to include a hostname as a value of the `AllowedFrameAncestors` setting.  
+In order to show a list page in an HTML site on a different host, the configuration file (navsettings.json) of the [!INCLUDE[webserver](includes/webserver.md)] instance that hosts the [!INCLUDE[webclient](includes/webclient.md)] has to be configured to include a hostname as a value of the `AllowedFrameAncestors` setting.  
 
 ```  
 "NAVWebSettings":  {  
