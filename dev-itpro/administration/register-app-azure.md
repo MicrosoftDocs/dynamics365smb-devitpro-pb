@@ -31,7 +31,7 @@ The point of the registration is that your [!INCLUDE [prodshort](../developer/in
 3. In the top menu, choose **Add**, and then, in the **Create pane**, fill in the fields with the following information:
    - **Name**: Specify a name for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution, such as *Business Central on-premises*.
    - **Application Type**: Choose **Web app\* \/ API**.
-   - **Sign-on URL**: Enter the URL for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] browser client, such as `https://MyServer:8080/BC16/WebClient/OAuthLanding.htm`.
+   - **Sign-on URL**: Enter the URL for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] browser client, such as `https://MyServer:8080/BC160/WebClient/OAuthLanding.htm`.
        The OAuthLanding.htm file is a file that helps manage the exchange of data between [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and other services through Azure AD.
 4. Choose the **Create** button.
     This adds your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to the **App registrations pane**, so you can now add settings to it.
