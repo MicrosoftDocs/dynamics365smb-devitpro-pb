@@ -292,7 +292,7 @@ You'll synchronize the tenant's database schema with any schema changes in the a
     ```
    Replace `<extension version>` with the exact version of the published Base Application.
 
-4. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension (when comping from 15.2 and earlier only).
+4. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension (when coming from 15.2 and earlier only).
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
