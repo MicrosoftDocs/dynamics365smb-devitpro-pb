@@ -54,7 +54,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 1. Make backup of the databases.
 
-2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
 
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
