@@ -13,9 +13,7 @@ ms.topic: article
 
 > **APPLIES TO** [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is automatically configured for integration with other online services.
 
-This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use Microsoft Azure services. There are several services based on Microsoft Azure that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises. A couple examples services are Cortana Intelligence and Power BI.
-
-Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](ui-extensions-sales-forecast.md) extension requires that you specify an API key and API URI. Other services require similar information.
+This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](ui-extensions-sales-forecast.md) extension requires that you specify an API key and API URI. Other services require similar information.
 
 > [!NOTE]
 > In earlier versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], an **Azure AD Application Setup Wizard** guide has an action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. In the 16.4 update, this action is removed, and the guide is updated to make it easier to enter the information that you get manually from the Azure Management Portal.
@@ -25,14 +23,15 @@ Before using the services, you have to register Business Central on-premises in 
 - [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises is configured to use Azure Active Directory (AD) authentication.
 
     To complete the tasks in this article, you need access to the Azure Active AD tenant in the Azure portal. For more information, see [Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md)
-- An Azure AD account.
-    In most cases, this account is the same as your Business Central account,
+- An Azure AD account
+
+    In most cases, this account is the same as your Business Central account.
 
 ## Register an application in Azure Active Directory
 
-In this first task, use the Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises and the services to know each other's Azure Active Directory (Azure AD) details.
+The first task is to use Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises and the services to know each other's Azure Active Directory (Azure AD) details.
 
-The steps in this task describe how to register a new application. However, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], because you're using Azure AD authentication. Instead of registering another application, you can use the existing application. But if you do, make sure you modify it base on the information in the steps that follow. 
+The following steps describe how to register a new application. However, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], because you're using Azure AD authentication. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it base on the information in the steps that follow. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises in Azure Active Directory tenant.
 
