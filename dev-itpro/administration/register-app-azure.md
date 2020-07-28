@@ -28,7 +28,7 @@ Before using the services, you have to register Business Central on-premises in 
 - An Azure AD account.
     In most cases, this account is the same as your Business Central account,
 
-## Register an application for Business Central in Azure Active Directory using the Azure portal
+## Register an application in Azure Active Directory
 
 In this first task, use the Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises and the services to know each other's Azure Active Directory (Azure AD) details.
 
@@ -63,7 +63,7 @@ The steps in this task describe how to register a new application. However, you 
     --> 
 
     >[!NOTE]
-    > Before you leave the **Certificates & secrets** page, copy the key value to a temporary location. The key isn't accessible once you leave the page. You'll use this key later in your client application code.
+    > Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
 
 3. Grant the registered application delegated permission to access the required service APIs, like Power BI.
 
@@ -116,7 +116,7 @@ You have now registered your Business Central on-premises solution in the Azure 
 Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 -->
-## Set up the registered Azure AD application in Business Central
+## Set up the registered application in Business Central
 
 After you've registered and configured the application in Azure AD, the next task is to configure the Business Central tenant to use the application. You'll need the information about the application that you gathered in the previous task: Application (client) ID and redirect URL.
 
