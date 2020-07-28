@@ -121,10 +121,12 @@ After you've registered and configured the application in Azure AD, the next tas
 1. In the top-right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 2. Select **Set up Azure Active Directory**, then **Next**.
 
+    The **Connect With Azure** page opens.
+
     ![Setting the Azure Active Directory](../developer/media/set-up-azure-ad.png)
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
-3. In the **Application ID** field, specify the application (client) ID that you copied from the registered Business Central application in Azure AD.
-4. In the **Key** field, specify the value of the client secret that you copied from the registered Business Central application in Azure AD
+3. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
+4. In the **Key** field, specify the value of the client secret of the Business Central application in Azure AD that you copied in the previous task. 
 5. Choose **Next**. Unless you see an error message, you're now done.
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
