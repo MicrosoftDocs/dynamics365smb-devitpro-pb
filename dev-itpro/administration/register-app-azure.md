@@ -120,8 +120,10 @@ Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solu
 
 After you've registered and configured the application in Azure AD, the next task is to configure the Business Central tenant to use the application. You'll need the information about the application that you gathered in the previous task: Application (client) ID and redirect URL.
 
-1. In the top-right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Set Up Azure Active Directory**, and then choose the related link.
-2. In the wizard, choose **Next**.  
+1. In the top-right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
+2. Select **Set up Azure Active Directory**, then **Next**.
+
+    ![Setting the Azure Active Directory](media/set-up-azure-ad.png)
 3. In the **Client ID** field, specify the content that you copied from the **Application ID** field earlier.
 4. In the **Secret Key** field, specify the content that you copied from the **Keys** pane earlier.
 5. Choose **Next**. Unless you see an error message, you're now done.
