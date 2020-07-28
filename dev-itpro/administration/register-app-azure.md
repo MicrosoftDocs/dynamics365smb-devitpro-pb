@@ -31,27 +31,27 @@ This article describes how to set up [!INCLUDE [prodshort](../developer/includes
 
 The first task is to use Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises and the services to know each other's Azure Active Directory (Azure AD) details.
 
-The following steps describe how to register a new application. However, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], because you're using Azure AD authentication. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it base on the information in the steps that follow. 
+> [!TIP]
+> The following steps describe how to register a new application. However, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], because you're using Azure AD authentication. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it base on the information in the steps that follow. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises in Azure Active Directory tenant.
 
-    Follow the general guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+    1. Follow the general guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
 
-    When you add an application to an Azure AD tenant, you must specify the following information:
+        When you add an application to an Azure AD tenant, you must specify the following information:
+    
+        |Setting|Description|
+        |-------|-----------|
+        |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Pwr BI for Business Central on-premises*. |
+        |Supported account types| Select <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong> |
+        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*. For example, *https://MyServer:8080/BC160/OAuthLanding.htm*. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.|
+    
+        When completed, an **Overview** displays in the portal for the new application.
 
-    |Setting|Description|
-    |-------|-----------|
-    |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Pwr BI for Business Central on-premises*. |
-    |Supported account types| Select <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong> |
-    |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*. For example, *https://MyServer:8080/BC160/OAuthLanding.htm*. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.|
-
-    When completed, an **Overview** displays in the portal for the new application.
-
-    >[!NOTE]
-    > Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information later.
+    2. Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information later.
 2. Create a client secret for the registered application.
 
-    Follow the general guidelines at [Add credentials to your web application](https://docs.microsoft.com/en-us//azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
+    1. Follow the general guidelines at [Add credentials to your web application](https://docs.microsoft.com/en-us//azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
     <!--
     1. From the application's **Overview** page, select **Certificates & secrets**, and then **New client secret**.
@@ -61,8 +61,7 @@ The following steps describe how to register a new application. However, you alr
     4. Copy the key value to a temporary location. You'll use this key later in your client application code. The key isn't accessible once you leave the  **Certificates & secrets** page.
     --> 
 
-    >[!NOTE]
-    > Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
+    2. Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
 
 3. Grant the registered application delegated permission to access the required service APIs, like Power BI.
 
