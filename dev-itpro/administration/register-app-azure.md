@@ -22,10 +22,10 @@ This article describes how to set up [!INCLUDE [prodshort](../developer/includes
 
 - [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises is configured to use Azure Active Directory (AD) authentication.
 
-    To complete the tasks in this article, you need access to the Azure Active AD tenant in the Azure portal. For more information, see [Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md)
+    For more information, see [Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md)
 - An Azure AD account
 
-    In most cases, this account is the same as your Business Central account.
+    In most cases, this account is the same as your Business Central account. To complete the tasks in this article, you need access to the Azure Active AD tenant via the Azure portal.
 
 ## Register an application in Azure Active Directory
 
