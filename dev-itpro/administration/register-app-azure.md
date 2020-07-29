@@ -42,7 +42,7 @@ The first task is to use Azure portal to register an application for Business Ce
     
         |Setting|Description|
         |-------|-----------|
-        |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Pwr BI for Business Central on-premises*. |
+        |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
         |Supported account types| Select <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong> |
         |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*. For example, *https://MyServer:8080/BC160/OAuthLanding.htm*. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.|
     
@@ -133,7 +133,7 @@ The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solut
 
 
 ## See Also
-
+[Enabling Your Business Data for Power BI](/business-central/admin-powerbi)  
 [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
