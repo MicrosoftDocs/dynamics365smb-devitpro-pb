@@ -13,7 +13,7 @@ ms.topic: article
 
 > **APPLIES TO** [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is automatically configured for integration with other online services.
 
-This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](ui-extensions-sales-forecast.md) extension requires that you specify an API key and API URI. Other services require similar information.
+This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
 
 > [!NOTE]
 > In earlier versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], an **Azure AD Application Setup Wizard** guide has an action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. In the 16.4 update, this action is removed, and the guide is updated to make it easier to enter the information that you get manually from the Azure Management Portal.
@@ -133,7 +133,7 @@ The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solut
 
 
 ## See Also
-[Enabling Your Business Data for Power BI](/business-central/admin-powerbi)  
+[Enabling Your Business Data for Power BI](https://docs.microsoft.com/dynamics365/business-central/admin-powerbi)  
 [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
