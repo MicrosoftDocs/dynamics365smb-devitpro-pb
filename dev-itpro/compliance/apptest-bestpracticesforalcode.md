@@ -250,6 +250,7 @@ local procedure MyProcedure(a: Integer; b: Integer): Integer
 ```
 
 ## See Also
+
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
 [Rules and Guidelines for AL Code](apptest-overview.md)  
-[Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
+[Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md)

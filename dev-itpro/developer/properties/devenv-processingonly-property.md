@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 # ProcessingOnly Property
 Sets the value that indicates whether a report produces printed output or only processes data.  
   
-## Applies To  
+## Applies to  
   
 -   Reports  
   

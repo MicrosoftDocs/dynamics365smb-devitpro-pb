@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # EnabledIfError Property
 Sets a value that specifies whether an action is enabled or disabled if it enters an error state.  
   
-## Applies To  
+## Applies to  
   
 -   Actions  
   

@@ -15,7 +15,7 @@ author: jswymer
 
 Sets the name of the external file to read data from or write data to an XMLport.  
   
-## Applies To  
+## Applies to  
   
 -  XMLports  
 

@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 Sets the list of options that are available in the field that is currently selected. 
 
   
-## Applies To  
+## Applies to  
   
 -   Fields  
 

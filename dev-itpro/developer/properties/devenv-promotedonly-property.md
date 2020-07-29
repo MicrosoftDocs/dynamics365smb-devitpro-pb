@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # PromotedOnly Property
 Specifies whether the selected action is *promoted only*, which means that it will appear only on the **Home** tab in the ribbon and not on the tab (ActionContainer control) where it is defined.  
   
-## Applies To  
+## Applies to  
   
 - Page Actions  
   

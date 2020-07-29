@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # IncludeCaption Property
 Sets whether to include the caption of a field in the dataset of a report.  
 
-## Applies To  
+## Applies to  
  Columns on client report definition (RDLC) report datasets.  
 
 ## Property Value  

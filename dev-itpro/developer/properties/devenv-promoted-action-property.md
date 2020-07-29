@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Promoted (Action) Property
 Sets the value that indicates whether the selected action is promoted, which means that it is elevated to a promoted category in the action bar, as well as the group where is it defined. **Promoted** can also be set on Profiles, see [Promoted (Profiles) Property](devenv-promoted-profile-property.md).
   
-## Applies To  
+## Applies to  
   
 - Page actions  
   

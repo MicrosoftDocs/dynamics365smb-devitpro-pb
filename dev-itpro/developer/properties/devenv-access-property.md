@@ -21,7 +21,7 @@ The `Access` property is an access modifier which allows controlling the accessi
 > [!NOTE]  
 > This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection based mechanisms such as RecordRef. 
 
-## Applies To  
+## Applies to  
 
 - Tables and table fields
 - Codeunits
