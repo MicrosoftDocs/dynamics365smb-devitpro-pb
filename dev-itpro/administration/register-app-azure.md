@@ -51,7 +51,7 @@ The first task is to use Azure portal to register an application for Business Ce
     2. Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information later.
 2. Create a client secret for the registered application.
 
-    1. Follow the general guidelines at [Add credentials to your web application](https://docs.microsoft.com/en-us//azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
+    1. Follow the general guidelines at [Add credentials to your web application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
     <!--
     1. From the application's **Overview** page, select **Certificates & secrets**, and then **New client secret**.
