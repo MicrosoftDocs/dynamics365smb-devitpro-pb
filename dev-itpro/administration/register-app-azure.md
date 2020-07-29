@@ -25,14 +25,14 @@ This article describes how to set up [!INCLUDE [prodshort](../developer/includes
     For more information, see [Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md)
 - An Azure AD account
 
-    In most cases, this account is the same as your Business Central account. To complete the tasks in this article, you need access to the Azure Active AD tenant via the Azure portal.
+    In most cases, this account is the same as your Business Central account. You'll use this account to access Azure Active AD tenant via the Azure portal.
 
 ## Register an application in Azure Active Directory
 
 The first task is to use Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises and the services to know each other's Azure Active Directory (Azure AD) details.
 
 > [!TIP]
-> The following steps describe how to register a new application. However, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], because you're using Azure AD authentication. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it base on the information in the steps that follow. 
+> The following steps describe how to register a new application. However, because you're using Azure AD authentication, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises in Azure Active Directory tenant.
 
@@ -116,7 +116,7 @@ Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solu
 -->
 ## Set up the registered application in Business Central
 
-After you've registered and configured the application in Azure AD, the next task is to configure the Business Central tenant to use the application. You'll need the the information about the application that you created in the previous task: redirect URL, application (client) ID, and client secret.
+After you register and configure the application in Azure AD, the next task is to configure the Business Central tenant to use the application. You'll need the information about the application that you created in the previous task: redirect URL, application (client) ID, and client secret.
 
 1. In the top-right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 2. Select **Set up Azure Active Directory**, then **Next**.
@@ -126,7 +126,7 @@ After you've registered and configured the application in Azure AD, the next tas
     ![Setting the Azure Active Directory](../developer/media/set-up-azure-ad.png)
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
 3. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
-4. In the **Key** field, specify the value of the client secret of the Business Central application in Azure AD that you copied in the previous task. 
+4. In the **Key** field, specify the value of the client secret used by the Business Central application in Azure AD.
 5. Choose **Next**. Unless you see an error message, you're now done.
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
