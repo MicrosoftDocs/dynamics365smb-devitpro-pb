@@ -753,7 +753,7 @@
 #### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
-<!--### [Registering Your Deployment on Azure](administration/register-app-azure.md)-->
+### [Registering Your Deployment on Azure](administration/register-app-azure.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end administration -->
 <!-- upgrade -->

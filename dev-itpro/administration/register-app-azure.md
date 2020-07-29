@@ -3,11 +3,10 @@ title: "Register on-premises as an app in the Azure Management Portal"
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 07/23/2020
+ms.date: 07/29/2020
 ms.reviewer: na
 ms.service: "dynamics365-business-central"
 ms.topic: article
-ROBOTS: NOINDEX
 ---
 
 # Registering Business Central On-Premises in Azure AD for Integrating with Other Services
