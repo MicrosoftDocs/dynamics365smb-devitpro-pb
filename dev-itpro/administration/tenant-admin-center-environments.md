@@ -111,7 +111,7 @@ You can change the name of any environment. Before you change a name, consider t
 
 ### Before you rename an environment
 
-- Carefully read the [Environment rename considerations](#consider) section to understand the consequences of renaming an environment.
+- Read the [Environment rename considerations](#consider) section to understand the consequences of renaming an environment.
 - Determine the best time to do the remaining.
     Renaming an environment requires a restart to the environment. We recommend doing this when no users are active in Business Central.  
 
@@ -119,8 +119,9 @@ You can change the name of any environment. Before you change a name, consider t
 
 1. Open the environment you want to rename.
 2. Select **Rename**.
-3. On **Rename environment** page, enter the new name and then select **Rename**.
-4. Confirm your intent to rename the environment.
+3. On **Rename environment** page, read the information presented.
+4. Enter the new name and then select **Rename**.
+5. Confirm your intent to rename the environment.
 
     At this point, the environment state will first change to **Preparing**, then to **Active** again when the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
 
@@ -130,46 +131,43 @@ You can also review the log for the Rename operation on the **Operations** page 
 
 Changing the name can affect many scenarios and integrations. Renaming an environment during early stages of a customer implementation may be a low risk operation. But renaming an environment that's been used by customers for a longer period of time or integrated with many external services and components is very risky. You must carefully plan for it.
 
-Here are some of the areas, which use the environment name, which you need to consider before attempting to rename an environment:  
+Here are some areas where the environment name is used, which you need to consider before attempting to rename an environment:  
 
-- Web Services URL  
+- Web services URL 
+- External integrations that use OData or SOAP
+- Third-party apps (AppSource and per-tenant extensions)
+- Web client URL
+- Bookmarked links to web client  
+- Links created by users
 
-- External integrations which use Odata or SOAP 
-
-- 3rd Party apps (AppSource / Per tenant extensions ) 
-
-- Web Client URL 
-
-- Bookmarked links to Web client  
-
-- User-created links 
-
-    - Links to records/filters/pages/reports/tables/Profiles/Companies on each user's browser(s) and device(s). Thru regular usage, these links inevitably get saved across repositories such as Emails, Teams channels, Word docs, Excels, OneNote, Calendars, exchanged amongst users in same company, across companies, across environments, across tenants. Links can also be in desktop shortcuts eg. "launch POS".
+    These links are stored in users' browsers and on devices. They target things like: records, filters, pages, reports, profiles, companies, and so on. Over time, these links inevitably get saved in various repositories such as emails, Teams channels, Word and Excel documents. They're often exchanged among users in the same company, across companies, across environments, across tenants. Links can also be in desktop shortcuts.
 
     > [!NOTE]
-    > Admins do not have access to some/most of the above and therefore cannot update EnvName in behalf of the user. 
+    > Admins don't have access to some or most of these type of links, so they can't update the URL on behalf of users. 
 
-    - Links in the notification mails sent from BC before name change won't find the correct environment after the change. 
+- Links in the notification mails sent from Business Central. Links sent before the name change will no longer work after the name change. 
 
-- Partners, Partner Support, Customer Admins, Customer IT Support can also embed web client links in documentation, support websites, instructional steps and videos, and other material. Only some of this can be updated by an admin. 
+- Partners, Partner Support, Customer admins, Customer IT Support can also embed web client links in documentation, support web sites, videos, and other material. Only some of these links can be updated by an admin. 
 
-- Browser cache. We store the Url including environment name in some of our cached data. This is cached browser-side, that is, in the user's browser(s) across device(s). Admins typically don't have access or control this. When a user loses their cache, they lose micro-personalizations to all their pages, preferences to  
+- Browser cache.
 
-- Integrations which embed the Web client - e.g. SharePoint apps composed of BC pages 
+    We store the URL, including environment name, in some of our cached data. This data is cached browser-side, that is, in the user's browser and across devices. Admins typically don't have access or control this data cache. When users lose their cache, they lose micro-personalizations to all their pages and preferences. 
 
-- Integrations which launch the Web client  
+- Integrations that embed the web client, for example, SharePoint apps composed of Business Central pages 
 
-- Partner-developed mobile apps, web applications, etc. These likely originate from partners outside the customer's organization where the admin cannot update Urls. 
+- Integrations that launch the web client  
+
+- Partner-developed mobile apps, web applications, and so on. These apps likely originate from partners outside the customer's organization where the admin cannot update URLS. 
 
 - Mobile apps incl. Windows 10 store app for desktop/tablet 
 
     Affected  only when users modify protocol handler before rename - to force the app to connect to environment with name different than "production". So if the user keeps working with "production" on mobile (which is default now), and the admin is renaming "prod2" to "myprod" the mobile user is not affected. Otherwise the app would throw an error and the user would have to bail out using a newly created protocol handler link. 
 
-- Effect on the Business Central add-ins and integrations with other Microsoft services 
+- Business Central add-ins and integrations with other Microsoft services 
 
     - Outlook Add-in  
     
-         The AddIn manifest saved into Exchange Server per org or per user includes the environment name. 
+         The Add-In manifest that is saved to Exchange Server per org or per user includes the environment name. 
     
     - Excel Add-in  
     
