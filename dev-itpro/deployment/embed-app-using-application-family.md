@@ -21,8 +21,8 @@ The following table describes different aspects of using the application family 
 
 |Area|How to use with the Embed application family|Additional details|
 |----|--------------------------------------------|------------------|
-|[!INCLUDE[webclient](../developer/includes/webclient.md)] |Use the application family to the URL:<br /><br />`[application family].bc.dynamics.com` |[Web Client URL](../developer/devenv-web-client-urls.md) |
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services|Use the application family to the URL:<br /><br />`[application family].api.bc.dynamics.com`|[Introduction to automation APIs](../administration/itpro-introduction-to-automation-apis.md)|
+|[!INCLUDE[webclient](../developer/includes/webclient.md)] |Use the application family in the URL:<br /><br />`[application family].bc.dynamics.com` |[Web Client URL](../developer/devenv-web-client-urls.md) |
+|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services|Use the application family in the URL:<br /><br />`[application family].api.bc.dynamics.com`|[Introduction to automation APIs](../administration/itpro-introduction-to-automation-apis.md)|
 |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] mobile app|Use the application family in the URL:<br /><br />`ms-businesscentral://[application family].bc.dynamics.com/` |[Getting Business Central on Your Mobile Device](/dynamics365/business-central/install-mobile-app) |
 |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center|Application family is displayed for each environment |[The Business Central Administration Center](../administration/tenant-admin-center.md) |
 |In-code URL generation (GETURL) |GETURL returns the branded endpoint, including the application family. |[GetUrl Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)|
