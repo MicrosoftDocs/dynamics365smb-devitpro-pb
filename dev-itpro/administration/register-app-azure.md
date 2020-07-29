@@ -15,8 +15,13 @@ ms.topic: article
 
 This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
 
+<!--
 > [!NOTE]
-> In earlier versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], an **Azure AD Application Setup Wizard** guide has an action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. In the 16.4 update, this action is removed, and the guide is updated to make it easier to enter the information that you get manually from the Azure Management Portal.
+> In earlier versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], a **Azure AD Application Setup Wizard** guide has an action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. In the 16.4 update, this action is removed, and the guide is updated to make it easier to enter the information that you get manually from the Azure Management Portal.
+-->
+
+> [!NOTE]
+> In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] versions earlier than update 16.4, the **Set up Azure Active Directory** wizard has the **Auto register** action. Previously, you could use this action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. This auto-register functionality has since been removed. Now, you have to register the application manually by using the Azure portal, regardless of your version. The wizard in earlier versions still includes the **Auto register** link. But now the link now opens this article that guides you through the manual registration. 
 
 ## Prerequisites
 
@@ -116,7 +121,7 @@ Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solu
 -->
 ## Set up the registered application in Business Central
 
-After you register and configure the application in Azure AD, the next task is to configure the Business Central tenant to use the application. You'll need the information about the application that you created in the previous task: redirect URL, application (client) ID, and client secret.
+After you register the application, the next task is to configure the Business Central tenant to use the application. You'll need the information about the application that you created in the previous task: redirect URL, application (client) ID, and client secret.
 
 1. In the top-right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 2. Select **Set up Azure Active Directory**, then **Next**.
