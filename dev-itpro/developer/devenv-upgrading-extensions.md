@@ -359,3 +359,5 @@ To upgrade to the new extension version, you use the [Sync-NavApp](https://go.mi
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Sample Extension](devenv-extension-example.md)  
+[Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  

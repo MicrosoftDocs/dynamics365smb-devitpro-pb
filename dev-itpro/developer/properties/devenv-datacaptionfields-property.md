@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # DataCaptionFields Property
 Sets the fields that appear to the left of the caption on pages that display the contents of this table.  
   
-## Applies To  
+## Applies to  
   
 -   Pages  
   

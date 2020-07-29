@@ -14,6 +14,7 @@ ms.author: solsen
 ---
 
 # Page and Page Extension Properties Overview
+
 This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md).
 
 ## Page object properties

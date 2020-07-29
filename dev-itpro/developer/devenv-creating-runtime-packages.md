@@ -28,7 +28,7 @@ For more information about this cmdlet, see [Get-NAVAppRuntimePackage cmdlet](/p
 
 The following example gets the NAV App runtime package with the provided name and version.
 
-`Get-NAVAppRuntimePackage -ServerInstance DynamicsNAV -AppName 'Proseware SmartApp' -Version 2.3.4.500 -ExtensionPath 'Prosware SmartApp_2.3.4.500_runtime.app'`
+`Get-NAVAppRuntimePackage -ServerInstance DynamicsNAV -AppName 'Proseware SmartApp' -Version 2.3.4.500 -Path 'Prosware SmartApp_2.3.4.500_runtime.app'`
 
 For publishing and installing the package, use the [Publish-NavApp](https://go.microsoft.com/fwlink/?linkid=616079) and the [Install-NAVApp](https://go.microsoft.com/fwlink/?linkid=618056) PowerShell cmdlets. 
 

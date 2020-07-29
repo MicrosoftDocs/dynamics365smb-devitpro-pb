@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # ExternalType Property
 Specifies the data type of the corresponding field data type in the external database table. For example, tables in Dynamics 365 Sales database.
 
-## Applies To  
+## Applies to  
 
 - Fields 
 

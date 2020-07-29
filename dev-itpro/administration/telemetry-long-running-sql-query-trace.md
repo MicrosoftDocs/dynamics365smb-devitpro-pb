@@ -84,11 +84,12 @@ This table describes the different dimensions of a **Long Running Operation (SQL
 |clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |alObjectId|The type of the AL object that executed the SQL statement.||
 |component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.||
-|executionTime|Specifies the time that it took to execute the SQL statement. The value has the format hh:mm:ss.sssssss.||
+|executionTime|Specifies the time that it took to execute the SQL statement**. The value has the format hh:mm:ss.sssssss.||
 |longRunningThreshold|Specifies the amount of time that an SQL query can run before a warning event is recorded.  The value has the format hh:mm:ss.sssssss. <br /><br >This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting called SqlLongRunningThreshold. |
 |sqlStatement|Specifies the SQL statement that was executed for the long running query. The value is limited to 8192 characters. If the value exceeds 8192 characters, it will be truncated in manner that still provides the most pertinent information.||
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 
+** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 ## Example
 
 The following code snippet shows an example of the CustomDimensions.

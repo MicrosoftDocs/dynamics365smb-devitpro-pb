@@ -16,8 +16,6 @@ caps.latest.revision: 18
 
 # Control Add-In Object
 
- 
-
 The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data within an iframe or a page. For example, a control add-in can display the content of a webpage, visualize data as a chart or on a map, or host a custom web application. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] server on various data types and can respond to user interaction to raise events that execute additional AL code.
 
 ## Control add-in properties
@@ -70,14 +68,19 @@ Control add-ins can either have fixed dimensions or dynamically adapt to the ava
 - [VerticalStretch](properties/devenv-verticalstretch-property.md)
 
 
-## Control add-in considerations
-Designing control add-ins that provide the best possible experience can require some additional planning, design, and implementation. The following considerations will help you design add-ins that look and feel seamlessly integrated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+## Control add-in considerations and limitations
+
+Designing control add-ins that provide the best possible experience can require some additional planning, design, and implementation. The following considerations and limitations will help you design add-ins that look and feel seamlessly integrated with both [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] online and on-premises. 
+
 - Respond to touch events so that mobile users or those on devices supporting touch input can also use the add-in.
 - Design content that is responsive and is able to flow, resize, or reorganize naturally based on the available space.
 - Consider the accessibility needs of users, for example by implementing keyboard access and support for screen readers.
 - Use the Style guidelines to apply a choice of colors, typefaces, and font sizes that match that of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Control Add-in Style Guide](devenv-control-addin-style.md).
 - Provide language translation and other localizations that match the current user language in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+- In extensions for Business Central online, don't reference font files in stylesheets, because the fonts won't display in client. Instead, do one of the following:
 
+  - Reference the font files from some other source such as a public or private CDN.
+  - Base64 encode the fonts and include the encoded fonts in the CSS file.
 
 ## Control add-in syntax example
 The following control add-in syntax exemplifies how to implement small customizations regarding the layout and functionality of a page.

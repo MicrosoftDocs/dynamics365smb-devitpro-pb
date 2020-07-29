@@ -18,7 +18,7 @@ Sets the string that is used to identify a control or other object in the user i
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
-## Applies To  
+## Applies to  
 
 - Codeunit objects  
 - XMLport objects  

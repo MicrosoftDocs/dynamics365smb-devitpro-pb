@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ClearOnLookup Property
 Sets a value that determines whether the current contents of the field are deleted before the value that is selected via the lookup is added.  
   
-## Applies To  
+## Applies to  
   
 -   Fields  
 
