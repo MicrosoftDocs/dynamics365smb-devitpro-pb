@@ -21,7 +21,7 @@ This article describes how to set up [!INCLUDE [prodshort](../developer/includes
 -->
 
 > [!NOTE]
-> In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] versions earlier than 16.4, the **Set up Azure Active Directory** wizard has an **Auto register** action. Previously, you could use this action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. The auto-register functionality has since been removed. Now, you must register the application manually, regardless of your version. The wizard in earlier versions still includes the **Auto register** link. But the link now opens this article that guides you through the manual registration.
+> In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version earlier than 16.4, the **Set up Azure Active Directory** wizard has an **Auto register** action. Previously, you could use this action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. The auto-register functionality has since been removed. Now, you must register the application manually, regardless of your version. The wizard in earlier versions still includes the **Auto register** link. But the link now opens this article, which guides you through the manual registration.
 
 ## Prerequisites
 
