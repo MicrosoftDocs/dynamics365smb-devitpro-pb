@@ -15,7 +15,7 @@ ms.date: 07/29/2020
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service is a part of rich ecosystem of surrounding applications and services. One of the prominent [!INCLUDE[embed app](../developer/includes/embedapp.md)] capabilities is to promote and use the ISV [brand](embed-app-overview.md#partner-branding) in various places of the overall service experience.
 
-During onboarding, the ISV provides the application family name. The application family helps identify their solution among other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps, [!INCLUDE[embed app](../developer/includes/embedapp.md)]'s of other ISVs and [!INCLUDE[embed app](../developer/includes/embedapp.md)]'s own apps.  
+During onboarding, the ISV provides the application family name. The application family helps identify their solution among other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps and [!INCLUDE[embed app](../developer/includes/embedapp.md)]'s of other ISVs.  
 
 The following table describes different aspects of using the application family when interacting with Business Central components and surrounding services.  
 
@@ -28,11 +28,11 @@ The following table describes different aspects of using the application family 
 |In-code URL generation (GETURL) |GETURL returns the branded endpoint, including the application family. |[GetUrl Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)|
 |Development endpoint for Visual Studio Code|To publish and debug apps in a Sandbox environment, use the "applicationFamily" property in the launch.json file |[JSON Files](../developer/devenv-json-files.md) |
 |Microsoft AppSource|To install AppSource apps, use the branded URL with the following parameters:<br /><br />`https://[application family].bc.dynamics.com/?noSignUpCheck=1&filter=%27ID%27%20IS%20%27[APP ID]%27&page=2503` |Installing apps by selecting a direct app link in AppSource (for example, "Get it now" or "Free trial") isn't supported. This action redirects to the standard Business Central URL. |
-|Microsoft Power BI|Support for connecting to the environment data from Power BI and for embedding Power BI pages in the [!INCLUDE[webclient](../developer/includes/webclient.md)].  |[Enabling Your Business Data for Power BI](/dynamics365/business-central/admin-powerbi) |
+|Microsoft Power BI|Supported for connecting to the environment data from Power BI and embedding Power BI pages in the [!INCLUDE[webclient](../developer/includes/webclient.md)].  |[Enabling Your Business Data for Power BI](/dynamics365/business-central/admin-powerbi) |
 |Outlook Add-in | Not supported | [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook)|
 |Excel Add-in|Supported|[Setting up the Excel Add-In for Editing Business Central Data](../administration/configuring-excel-addin.md)|
 |CDS integration| Supported  |[Integrating with Common Data Service](/dynamics365/business-central/admin-common-data-service)|
-|Power Automate, Power Apps, Logic apps |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] standard connector currently can't be used (support is coming soon), the ISV needs to build a custom connector. The custom connector is required anyway, also for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments, if you want to include data from other tables, which aren't included with the standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connector. [!INCLUDEprodshort] |[Custom connector FAQ for Azure Logic Apps, Power Automate, and Power Apps](/connectors/custom-connectors/faq)|  
+|Power Automate, Power Apps, Logic apps |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] standard connector currently can't be used (support is coming soon). The ISV needs to build a custom connector. The custom connector is required anyway, also for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments, if you want to include data from other tables that aren't included with the standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connector. |[Custom connector FAQ for Azure Logic Apps, Power Automate, and Power Apps](/connectors/custom-connectors/faq)|  
 |Cloud Migration Tool|Supported|[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)|
 
 
