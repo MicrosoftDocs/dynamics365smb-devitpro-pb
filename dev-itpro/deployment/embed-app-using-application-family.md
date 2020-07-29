@@ -33,7 +33,7 @@ The following table describes different aspects of using the application family 
 |Excel Add-in|Supported|[Setting up the Excel Add-In for Editing Business Central Data](../administration/configuring-excel-addin.md)|
 |CDS integration| Supported  |[Integrating with Common Data Service](/dynamics365/business-central/admin-common-data-service)|
 |Power Automate, Power Apps, Logic apps |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] standard connector currently can't be used (support is coming soon), the ISV needs to build a custom connector. The custom connector is required anyway, also for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments, if you want to include data from other tables, which aren't included with the standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connector. [!INCLUDEprodshort] |[Custom connector FAQ for Azure Logic Apps, Power Automate, and Power Apps](/connectors/custom-connectors/faq)|  
-|Cloud Migration Tool|Supported|[Migrating On-Premises Data to Business Central Online](../administration/migrate-data-md)|
+|Cloud Migration Tool|Supported|[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)|
 
 
 ## See Also
