@@ -116,7 +116,7 @@ Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solu
 -->
 ## Set up the registered application in Business Central
 
-After you've registered and configured the application in Azure AD, the next task is to configure the Business Central tenant to use the application. You'll need the the information about the application that you created in the previous task: Application (client) ID and redirect URL.
+After you've registered and configured the application in Azure AD, the next task is to configure the Business Central tenant to use the application. You'll need the the information about the application that you created in the previous task: redirect URL, application (client) ID, and client secret.
 
 1. In the top-right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 2. Select **Set up Azure Active Directory**, then **Next**.
