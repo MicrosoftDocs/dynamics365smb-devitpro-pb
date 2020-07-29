@@ -107,22 +107,28 @@ To cancel a session, select it from the list and then select **Cancel selected s
 > [!NOTE]
 > This feature is in preview. It might change or be removed in the future updates.
 
-You can rename an environment by opening the environment card and clicking on the Rename button.
+You can change the name of any environment. Before you change a name, consider that apart from uniquely identify the environment from your other environments, the name also is part of the environment's URL. The URL is used to access the environment in various ways - by application code and users. So changing the name can have significant impact.
 
-In the Rename environment dialogue enter a new name to be used by this environment and click on Rename button.  
+### Before you rename an environment
 
-Confirm your intent to rename the environment.  
- 
-> [!IMPORTANT]
-> It is important you study ## Environment rename considerations  to understand the consequences before you confirm your intent to rename. Additionally, this operation requires a restart to the environment. We recommend doing this when no users are active in Business Central. 
+- Carefully read the [Environment rename considerations](#consider) section to understand the consequences of renaming an environment.
+- Determine the best time to do the remaining.
+    Renaming an environment requires a restart to the environment. We recommend doing this when no users are active in Business Central.  
 
-The environment state will change to Preparing and back to Active again, once the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
+### Rename an environment
 
-You can also review the log of Rename operation on the Operations page afterwards.   
+1. Open the environment you want to rename.
+2. Select **Rename**.
+3. On **Rename environment** page, enter the new name and then select **Rename**.
+4. Confirm your intent to rename the environment.
 
-## Environment rename considerations
+    At this point, the environment state will first change to **Preparing**, then to **Active** again when the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
 
-Environment name is a part of the environment URL, which uniquely identifies this environment among your other environments. Changing the name can affect many scenarios and integrations. While renaming an environment during early stages of a customer implementation may be a low risk operation, renaming an environment which has been used by customers for a longer period of time and is integrated with many external services and components is very risky and you must carefully plan for it.   
+You can also review the log for the Rename operation on the **Operations** page afterwards.
+
+### <a name="consider"></a>Environment rename considerations
+
+Changing the name can affect many scenarios and integrations. Renaming an environment during early stages of a customer implementation may be a low risk operation. But renaming an environment that's been used by customers for a longer period of time or integrated with many external services and components is very risky. You must carefully plan for it.
 
 Here are some of the areas, which use the environment name, which you need to consider before attempting to rename an environment:  
 
