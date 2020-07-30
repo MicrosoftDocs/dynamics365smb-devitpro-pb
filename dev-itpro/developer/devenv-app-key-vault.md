@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
 
-This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are a kind of credential used for authenticating en extension. Secrets are typically used when the extensions calls a web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../devenv-app-key-vault-overview.md).
+This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are typically used when the extensions calls a web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with Extensions](devenv-app-key-vault-overview.md).
 
 Developing an extension to use secrets from a key vault involves two tasks, as described in this article:
 
@@ -44,10 +44,10 @@ You can specify up to two key vaults in the app.json, as shown in the following 
     ] 
 ```
 
-Specifying two key vaults ensures a higher availability of secrets. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate both key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute because the other key vault will most likely be available.
+Specifying two key vaults ensures a higher availability of secrets, especially if created in two different Azure regions. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate both key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute because the other key vault will most likely be available.
 
 
-## Add code to retrieve secrets the key vault
+## Add code to retrieve secrets from the key vault
 
 Next, you add code to the extension for reading secrets from the key vault at runtime. To read secrets, you use the **Secrets** module of the System Application. Specifically, you'll use codeunit **3800 "App Key Vault Secret Provider"**. This codeunit includes two methods:
 
@@ -56,7 +56,7 @@ Next, you add code to the extension for reading secrets from the key vault at ru
 | `TryInitializeFromCurrentApp(): Boolean`|Identifies the calling extension and initializes the codeunit with the key vaults specified in the extension's manifest.|
 | `GetSecret(SecretName: Text, var SecretValue: Text): Boolean`|Retrieves the value of a specific secret from one of the app's key vaults.|
 
-Look at following example for a simple page object. The code retrieves the value of the secret named **MySecret** in app key vault:
+Look at the following example for a simple page object. The code retrieves the value of the secret named **MySecret** in app key vault:
 
 ```
 page 50100 HelloWorldPage
@@ -96,18 +96,18 @@ Once the **App Key Vault Secret Provider** codeunit has been initialized, it can
 - If you pass the codeunit to another method, then that method is also able use it.
 - If you pass the codeunit to a method in another extension, then the other extension can also use the secret provider to get secrets.
 
-These conditions may not be what you want, so be careful with who you pass the secret provider.
+These conditions may not be what you want, so be careful who you pass the secret provider to.
 
-### <a name="validation"></a>Run publisher validation
+### <a name="validation"></a>Enable publisher validation
 
-For on-premises deployments, you can configure [!INCLUDE[server](../developer/includes/server.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the server's **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabledPublisher) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
+For on-premises deployments, you can configure [!INCLUDE[server](../developer/includes/server.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the server's **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabled) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
 
 > [!TIP]
 > With a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online production environment, publisher validation is not performed for per-tenant extensions. Publisher validation is done automatically for onboarded AppSource extensions.
 
 #### How it works
 
-Publisher validation is done by comparing the key vault secret provider's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
+Publisher validation is done by comparing the key vault's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
 
 1. When an extension is published by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp), the publisher can provide their Azure AD tenant ID by setting the `-PublisherAzureActiveDirectoryTenantId` parameter:
 
@@ -119,7 +119,7 @@ Publisher validation is done by comparing the key vault secret provider's Azure 
     > An error won't occur if `-PublisherAzureActiveDirectoryTenantId` isn't set. There is nothing preventing you from publishing the extension at this point.
 
 2.  When the extension runs, it tries to initialize the **App Key Vault Secret Provider** codeunit.
-3. The system compares the key vault secret provider's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
+3. The system compares the key vault's Azure AD tenant ID with the Azure AD tenant ID published with the extension:
 
     - If they match, initialization succeeds.
     - If they don't match, an error occurs.
@@ -164,11 +164,11 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
 
  ``` 
- "applicationInsightsKey": ["<instumenation key>"] 
+ "applicationInsightsKey": ["<instrumenation key>"] 
  ```
 3. Now, you can run your extensions and view data in Application Insights.
 
-   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-app-key-vault-trace.md).
+   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
 ## See Also  
 [Getting Started with AL](devenv-get-started.md)  

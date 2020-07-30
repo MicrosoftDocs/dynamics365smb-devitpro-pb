@@ -40,17 +40,7 @@ To complete the tasks in this article, you need:
 
 ## Create the Azure Key Vault with secrets
 
-Now, you create one or more key vaults in Azure, and add the secrets that you want to make available to your extensions. An extension can be set up with one or two key vaults. This step requires an Azure subscription. Because your solution is using Azure AD authentication, you should already have one.
-
-<!--
-
-1. Get an Azure subscription.
-
-    Sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com).
-
-2. Create one or more key vaults and add secrets that extensions will use.
-
--->
+Now, you create one or more key vaults in Azure, and add the secrets that you want to make available to your extensions. An extension can be set up with one or two key vaults.
 
 There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
 
@@ -108,7 +98,7 @@ The steps in this task are done from the [Azure portal](https://portal.azure.com
 
 At this point, the work in Azure is finished.
 
-## Configure the Business Central Server for the Apps Key Vault
+## Configure the Business Central Server to use the Apps Key Vault feature
 
 Next, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to use the key vault reader application and its certificate, which you registered in Azure AD, for authenticating to the key vaults.
 
