@@ -21,7 +21,7 @@ The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes
 
 ## Viewing details for an environment
 
-In the list of environments, you can open a page with more details for an environment by choosing the link in the **Name** column of the list for the environment.
+In the environments list, you can view more details by choosing the link in the **Name** column.
 
 > [!div class="mx-imgBorder"]
 > ![View details about an environment](../developer/media/admin/business_central_admin_center_details-v2.png)
@@ -42,7 +42,7 @@ You can create environments of different types. Which type of environment to cho
 
 ## Create a new production environment
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, if you have been using a production environment for training purposes, and you have decided to start using [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to run the business, you can delete the original production environment and then create a new production environment.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, if you have been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to run the business, you can delete the original production environment and then create a new production environment.  
 
 > [!NOTE]
 > Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three production environments.
@@ -51,7 +51,7 @@ To create a production environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, in the **Environment Type** list, choose **Production**.
-3. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+3. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 4. Select **Create**.
 
 When the new production environment is created, it will be based on the latest production version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
@@ -74,21 +74,21 @@ To create a sandbox environment:
 4. Specify if you want the sandbox environment to contain a copy of another environment. If you choose this option, you must specify which environment to copy.
     > [!NOTE]
     > When you create a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will also contain all per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
-5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 6. Choose the relevant application version for the new sandbox environment from the **Version** list if more than one version is available.
 7. Select **Create**.
     > [!NOTE]
-    > The sandbox environment will not be accessible until the **State** shows *Active*.
+    > The sandbox environment won't be accessible until the **State** shows *Active*.
 
 To delete a sandbox environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then choose **Delete** on the action ribbon.
 
 ### Selecting a version for a new sandbox environment
 
-If you choose to create a sandbox that is not a copy of an existing environment, you must specify an application version for the new environment. The version list will show the latest *production* version, which is the version used for new production environments.
+If you create a sandbox that isn't a copy of an existing environment, you must specify an application version for the new environment. The version list will show the latest *production* version, which is the version used for new production environments.
 
-The version list may also have one or more *preview* versions. Preview versions are early release candidates of upcoming releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that are made available specifically for sandbox environments. This gives you access to review new functionality, validate extension compatibility, and other general testing of the upcoming release.
+The version list may also have one or more *preview* versions. Preview versions are early release candidates of upcoming releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that are made available specifically for sandbox environments. This list gives you access to review new functionality, validate extension compatibility, and other general testing of the upcoming release.
 
-When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment will not be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it is deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
+When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment won't be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it's deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
 
 ## Managing Sessions
 
@@ -107,13 +107,13 @@ To cancel a session, select it from the list and then select **Cancel selected s
 > [!NOTE]
 > This feature is in preview. It might change or be removed in the future updates.
 
-You can change the name of any environment. Before you change a name, consider that apart from uniquely identify the environment from your other environments, the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
+You can change the name of any environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
 
 ### Before you rename an environment
 
 - Read the [Environment rename considerations](#consider) section to understand the consequences of renaming an environment.
 - Determine the best time to do the remaining.
-    Renaming an environment requires a restart to the environment. We recommend doing this when no users are active in Business Central.  
+    Renaming an environment requires a restart to the environment. We recommend doing this operation when no users are active in Business Central.  
 
 ### Rename an environment
 
@@ -129,7 +129,7 @@ You can also review the log for the Rename operation on the **Operations** page 
 
 ### <a name="consider"></a>Environment rename considerations
 
-Changing the name can affect many scenarios and integrations. Renaming an environment during early stages of a customer implementation may be a low risk operation. But renaming an environment that's been used by customers for a longer period of time or integrated with many external services and components is very risky. You must carefully plan for it.
+Changing the name can affect many scenarios and integrations. Renaming an environment during early stages of a customer implementation may be a low risk operation. But renaming an environment that's been used by customers for a longer period of time or integrated with many external services and components is risky. You must carefully plan for it.
 
 Here are some areas where the environment name is used, which you need to consider before attempting to rename an environment:  
 
@@ -140,7 +140,7 @@ Here are some areas where the environment name is used, which you need to consid
 - Bookmarked links to web client  
 - Links created by users
 
-    These links are stored in users' browsers and on devices. They target things like: records, filters, pages, reports, profiles, companies, and so on. Over time, these links inevitably get saved in various repositories such as emails, Teams channels, Word and Excel documents. They're often exchanged among users in the same company, across companies, across environments, across tenants. Links can also be in desktop shortcuts.
+    These links are stored in users' browsers and on devices. They target things like: records, filters, pages, reports, profiles, companies, and so on. Over time, these links inevitably get saved in various repositories such as emails, Teams channels, Word, and Excel documents. They're often exchanged among users in the same company, across companies, across environments, across tenants. Links can also be in desktop shortcuts.
 
     > [!NOTE]
     > Admins don't have access to some or most of these type of links, so they can't update the URL on behalf of users.
@@ -151,7 +151,7 @@ Here are some areas where the environment name is used, which you need to consid
 
 - Browser cache.
 
-    We store the URL, including environment name, in some of our cached data. This data is cached browser-side, that is, in the user's browser and across devices. Admins typically don't have access or control this data cache. When users lose their cache, they lose micro-personalizations to all their pages and preferences. 
+    We store the URL, including environment name, in some of our cached data. This data is cached browser-side, that is, in the user's browser and across devices. Admins typically don't have access or control this data cache. When users lose their cache, they lose the link modifications to all their pages and preferences. 
 
 - Integrations that embed the web client, for example, SharePoint apps composed of Business Central pages
 
@@ -161,21 +161,21 @@ Here are some areas where the environment name is used, which you need to consid
 
 - Mobile apps, including Windows 10 store app for desktop/tablet
 
-    Affects only users who have modified the protocol handler, for example, to force the app to connect to environment with name other than "production". So if the user keeps working with "production" on the mobile app (which is default now), and the admin renames the environment from "prod2" to "myprod", the mobile user is not affected. Otherwise, the app would throw an error, and the user would have to exit using a newly created protocol handler link.
+    Affects only users who have modified the protocol handler to force the app to connect to environment with name other than "production". If the user keeps working with "production" on the mobile app (which is default now), and the admin renames the environment from "prod2" to "myprod", the mobile user isn't affected. Otherwise, the app would throw an error, and the user would have to exit using a newly created protocol handler link.
 
 - Business Central add-ins and integrations with other Microsoft services
 
     - Outlook Add-in  
     
-        The Add-In manifest that is saved to Exchange Server, per-organization or per-user, includes the environment name.
+        The Add-In manifest that is saved to Exchange Server, either per-organization or per-user, includes the environment name.
     
     - Excel Add-in  
     
-         Each user's Excel worksheet stores the environment name. These Excel worksheets can be stored in various locations, like the user's desktop PCs, mobile devices, file shares, SharePoint, archives, and more. Some locations are not accessible to admins.
+         Each user's Excel worksheet stores the environment name. These Excel worksheets can be stored in various locations, like: the user's desktop PCs, mobile devices, file shares, SharePoint, archives. Some locations aren't accessible to admins.
     
     - Power BI 
     
-        All reports (including the default reports deployed from the Role Center) built before the rename and Power BI apps installed before the rename would be affected. There is no automatic way to repair these items. The partner or user would have to manually update the connections. 
+        All reports, including the default reports deployed from the Role Center, built before the rename will be affected. Also, Power BI apps installed before the rename would be affected. There's no automatic way to repair these items. The partner or user would have to manually update the connections.
     
     - Power Apps/Automate  
     
