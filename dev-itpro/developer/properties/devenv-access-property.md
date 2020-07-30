@@ -18,7 +18,10 @@ author: SusanneWindfeldPedersen
 
 The `Access` property is an access modifier which allows controlling the accessibility level of methods and objects. If the `Access` property is not specified, the default is `Public`.
 
-## Applies To  
+> [!NOTE]  
+> This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection based mechanisms such as RecordRef. 
+
+## Applies to  
 
 - Tables and table fields
 - Codeunits

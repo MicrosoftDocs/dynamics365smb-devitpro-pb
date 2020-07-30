@@ -19,7 +19,7 @@ This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includ
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
 
-# Countries and regions
+## Countries and regions
 
 |Country/Region|Localized by|Availability|
 |-----------|---------|------------|
@@ -68,9 +68,11 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Vietnam|Partner|Available|
 
 ## Important information regarding planned availability
+
 Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners have not successfully published their app(s) to AppSource by this time.
 
 ## Supported languages
+
 To maximize productivity [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports many languages.
 It is important to know that language support requires translation of *platform* captions and *application* captions (UI). 
 Translated platform captions are provided by Microsoft for all supported languages. Application languages are provided by both Microsoft and partners, depending on the language.
@@ -81,7 +83,7 @@ This table gives an overview of supported languages and how application language
 
 |Language|Locale|Translation app provided by|
 |-----------|---------|------|
-|Czech (Czech Republic)|cz-CZ|Microsoft, Available on AppSource|
+|Czech (Czech Republic)|cs-CZ|Microsoft, Available on AppSource|
 |Danish (Denmark)|da-DK|Microsoft, Available on AppSource|
 |German (Austria)|de-AT|Microsoft, Available on AppSource|
 |German (Switzerland)|de-CH|Microsoft, Available on AppSource|
@@ -89,7 +91,7 @@ This table gives an overview of supported languages and how application language
 |English (Australian)|en-AU|Microsoft, Available on AppSource|
 |English (Canada)|en-CA|Microsoft, Available on AppSource|
 |English (Great Britain)|en-GB|Microsoft, Available on AppSource|
-|Enligsh (New Zealand)|en-NZ|Microsoft, Available on AppSource|
+|English (New Zealand)|en-NZ|Microsoft, Available on AppSource|
 |English (United States)|en-US|Built-in|
 |English (South Africa)|en-ZA|Supported by platform, no app available|
 |Spanish (Spain)|es-ES|Microsoft, Available on AppSource|
@@ -123,12 +125,12 @@ This table gives an overview of supported languages and how application language
 |Turkish (Turkey)|tr-TR|Partner, Available on AppSource (pending)|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
+|Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|
 
-> [!NOTE]
+> [!NOTE]  
 > Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
 ## See Also
 
 [Rules and Guidelines for AL Code](apptest-overview.md)  
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-

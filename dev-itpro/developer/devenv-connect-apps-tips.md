@@ -43,7 +43,7 @@ ms.service: "dynamics365-business-central"
 
 ## <a name="AcceptLanguage"></a>Accept-Language
 
-By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It is strongly recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings.
+By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It is strongly recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings. This setting also controls the regional formatting settings, affecting behavior such as how date and time will be formatted.
 
 One of the most common examples is showing error messages to the users in their language. To see which possible error messages to display, see [Error Codes](/dynamics-nav/api-reference/v1.0/dynamics_error_codes). Another common example is displaying reports in a specific language, see the example below for how to specify `Accept-Language`. The following example sets the language to always be `en-US`.
 

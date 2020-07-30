@@ -33,6 +33,8 @@ The following table lists the cumulative updates that have been released for the
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4563405](https://support.microsoft.com/help/4563405) |Cumulative Update 14 |July 2020|Application 14.15.43800</br>Platform Build 14.15.43793|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4564070](https://support.microsoft.com/help/4564070) |Cumulative Update 13 |June 2020|Application 14.14.43294</br>Platform Build 14.14.43286|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4549684](https://support.microsoft.com/help/4549684) |Cumulative Update 12 |May 2020|Application 42648</br>Platform Build 42627|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4549677](https://support.microsoft.com/help/4549677) |Cumulative Update 11 |April 2020|Application 41935</br>Platform Build 41862|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4538887](https://support.microsoft.com/help/4538887) |Cumulative Update 10 |March 2020|Application 41204</br>Platform Build 41143|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

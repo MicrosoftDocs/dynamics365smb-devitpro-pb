@@ -1,8 +1,8 @@
 ---
 title: "IntegrationEvent Attribute"
 ms.custom: na
-ms.date: 04/01/2020
-ms.reviewer: na
+ms.date: 06/29/2020
+ms.reviewer: 
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -11,9 +11,11 @@ author: SusanneWindfeldPedersen
 ---
 
 # IntegrationEvent Attribute
+
 Specifies that the method is published as an integration type event.
 
 ## Snippet support
+
 Typing the shortcut `teventint` will create the basic IntegrationEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Syntax  
@@ -23,6 +25,7 @@ Typing the shortcut `teventint` will create the basic IntegrationEvent attribute
 ```    
   
 ### Arguments  
+
 *IncludeSender*  
 Type: Boolean  
   
@@ -35,6 +38,10 @@ When you set the argument to **true**, the signature of event subscriber methods
 *GlobalVarAccess*  
 Type: Boolean  
 
+> [!IMPORTANT]  
+> Using *GlobalVarAccess* will throw a compiler warning, which will become an error in a future release. Instead use the event parameters or mark the page or table variables as protected. For more information, see [Protected Variables](../devenv-protected-variables.md).
+
+
 Specifies whether global variables in the object that contains the event publisher method are accessible to event subscriber methods that subscribe to the published event.
 
 **True** exposes the global variables; **false** does not. The default value is **false**.
@@ -44,6 +51,7 @@ When you set the argument to **true**, event subscriber methods that subscribe t
 You must add variable parameters to the event subscriber method signatures manually and use a name and type that matches the variable declaration in the event publisher object (see the example).
 
 ## Remarks
+
 For more information about the different event types, see [Event Types](../devenv-event-types.md) 
 
 ## Example
@@ -84,7 +92,9 @@ begin
 end;
 ``` 
 -->
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing Events](../devenv-publishing-events.md)   
 [Raising Events](../devenv-raising-events.md)   

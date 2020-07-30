@@ -13,14 +13,27 @@ author: SusanneWindfeldPedersen
 # OptionCaption Property
 Sets the text string options that are displayed to the user.  
   
-## Applies To  
+## Applies to  
   
 - Pages  
   
 - Reports  
   
 - Variables  
-  
+
+## Parameters
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the OptionCaption is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the OptionCaption, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific OptionCaption.
+
 ## Syntax
 ```
 field(1300; "Payment Prediction"; Option)

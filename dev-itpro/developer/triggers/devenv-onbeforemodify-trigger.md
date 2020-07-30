@@ -14,7 +14,7 @@ author: blrobl
 # OnBeforeModify Trigger
 Runs when a user modifies an existing record in a table.  
   
-## Applies To  
+## Applies to  
 - Table extensions
   
 ## Remarks  

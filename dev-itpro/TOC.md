@@ -1,6 +1,6 @@
 ﻿# Get Started
 ## [Development and Administration](index.md)
-## [Frequently Asked Questions](faq.md)
+## [FAQ](faq.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical Support](technical-support.md)
@@ -45,6 +45,7 @@
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
 #### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### [Using Application Family](deployment/embed-app-using-application-family.md)
 ####  App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
@@ -63,10 +64,11 @@
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
-## [Version numbers in Business Central](administration/version-numbers.md)
-## [Enabling new features ahead of time](administration/feature-management.md)
+## [Version Numbers in Business Central](administration/version-numbers.md)
+## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
+## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -76,9 +78,14 @@
 ### [Overview](administration/telemetry-overview.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
+### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+### [Event IDs](administration/telemetry-event-ids.md)
 ## Administration Center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
@@ -102,7 +109,7 @@
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Overview](administration/migrate-data.md)
-### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
+### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Running the Cloud Migration Tool](administration/migration-tool.md)
 ### [Managing the Migration to the Cloud](administration/migration-management.md)
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
@@ -111,10 +118,12 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
+### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
 ### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
 ### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -167,7 +176,7 @@
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
-### Frequently asked questions about apps
+### FAQ about apps
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
 #### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
@@ -209,6 +218,7 @@
 ### [View Table Data](developer/devenv-view-table-data.md)
 ### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
+### [Temporary Tables](developer/devenv-temporary-tables.md)
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
@@ -245,10 +255,10 @@
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 #### Page Parts
 ##### [Parts Overview](developer/devenv-designing-parts.md)
-<!-- reenable when topics have been written
 ##### [Designing List Parts](developer/devenv-designing-listparts.md)
 ##### [Designing Card Parts](developer/devenv-designing-cardparts.md)
 ##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+<!-- reenable when topics have been written
 ##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) -->
 ##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 ### Fields
@@ -363,6 +373,7 @@
 ### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Protected Variables](developer/devenv-protected-variables.md)
+### [Working with labels](developer/devenv-using-labels.md)
 ### Objects
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
@@ -379,6 +390,12 @@
 ### Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
+#### [Essential AL Methods](developer/devenv-essential-al-methods.md)
+#### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
+#### [Creating Handler Methods](developer/devenv-creating-handler-methods.md)
+#### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
+#### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
 #### [Action Option Type](developer/methods-auto/action/action-option.md)
@@ -653,9 +670,10 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
-#### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
-#### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
-#### [Dynamics 365 Business Central 2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
+#### [October 2018 On-Premises Updates](deployment/update-versions-13.md)
+#### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
+#### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
+#### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -736,6 +754,7 @@
 #### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
+<!--### [Registering Your Deployment on Azure](administration/register-app-azure.md)-->
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end administration -->
 <!-- upgrade -->

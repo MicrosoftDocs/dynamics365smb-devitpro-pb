@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
-ms.date: 04/22/2020
+ms.date: 06/11/2020
 ms.author: mikebc
 ---
 
@@ -19,9 +19,9 @@ This document describes how administrators can turn on new features using the Fe
 
 ## About Feature Management
 
-Some new features can be enabled ahead of time on sandbox and production environments. The capability allows you to benefit as early as possible. It gives you the time you need to test and prepare your organization for change.
+Some new features can be enabled ahead of time on sandbox and production environments. This capability allows you to benefit as early as possible from feature improvements and innovative new features. It gives you the time you need to test and prepare your organization for change.
 
-When Microsoft releases features or feature design improvements as part of minor updates, some features aren't immediately enabled. Administrators can learn about these features and independently enable each feature from the **Feature Management** page. Once a feature is enabled, it becomes available for all users on that environment no matter how they access [!INCLUDE[prodshort](../includes/prodshort.md)]. Features can be safely turned off again.
+When Microsoft releases features or feature design improvements as part of minor updates, some features aren't immediately enabled. Administrators can learn about these features and independently enable each feature from the **Feature Management** page. Once a feature is enabled, it becomes available for all users on that environment no matter how they access [!INCLUDE[prodshort](../includes/prodshort.md)].
 
 These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the Feature Management page and can no longer be turned off.
 
@@ -46,17 +46,23 @@ Learn about [new features available in the last minor update](https://aka.ms/bcl
 2. If the page isn't editable, choose **Edit List** from the action menu.
 3. For any row in the list, set the **Enabled for** field to *All users*.
 
-As soon as you enable the feature, any user that signs in to that environment experiences the change. You won't experience the change yourself until you sign out and sign in again, or start a new session.
+As soon as you enable the feature, any user that signs in to that environment experiences the change. You won't necessarily experience the change yourself until you sign out and sign in again, or start a new session.
 
 > [!TIP]
 > You can try out the feature for yourself without enabling it for all users by choosing the **Try it out** link. This will open a new browser tab with the feature enabled for that session. Any new sessions in your browser will also have the feature temporarily turned on. To stop trying the feature, close your browser window or sign out.  
 
+## Features that can't be turned off
 
-## Frequently Asked Questions about Feature Management
+Some features or feature improvements may permanently affect the state and capabilities of [!INCLUDE[prodshort](../includes/prodshort.md)] and can't be safely reverted. These irreversible features can't be turned off again after they've been enabled. Before you enable an irreversible feature on a production environment, we recommend that you first enable and evaluate it on a sandbox environment that has a copy of production data.
+
+> [!NOTE]
+> When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose **Yes** to proceed with permanently enabling the feature on that environment.
+
+## FAQ about Feature Management
 
 #### There are no features listed as optional. Did I do something wrong?
 
-There may be periods where no optional features have been made available, which is perfectly normal. There will likely be no features listed in the **Feature Management** page immediately after a major update.
+There may be periods where no optional features have been made available, which is perfectly normal. There will likely be few or no features listed in the **Feature Management** page immediately after a major update.
 
 #### Will all new features eventually be listed on the Feature Management list?
 
@@ -64,7 +70,7 @@ No. We carefully select applicable features based on different criteria so that 
 
 #### Are these features still under development or in beta/preview?
 
-No. Features listed in the Feature Management page are considered ready and generally available. These features are already enabled for new customers to benefit from.
+No. Features listed in the Feature Management page are considered ready and generally available. Most of these features are automatically enabled on newly provisioned environments for new customers to benefit from.
 
 #### Does Microsoft provide support for optional features?
 
@@ -100,14 +106,14 @@ No. Business Central doesn't provide the ability to enable a feature for a singl
 
 #### I don't see a link to try out an optional feature. Is something wrong?  
 
-Some features don't provide a way to try out the feature for yourself and won't display a **Try it out** link. Before you enable these features, we recommend you first enable and test the features on a sandbox environment. The sandbox environment that has a copy of production data.
+Some features don't provide a way to try out the feature for yourself and won't display a **Try it out** link. Before you enable these features, we recommend you first enable and test the features on a sandbox environment that has a copy of production data.
 
 #### Are optional features also optional on new environments?
 
-Yes. All optional features are enabled by default on new environments for new customers to benefit from. Administrators can still turn any of these features off from the Feature Management page.
+Yes. Most optional features are enabled by default on new environments for new customers to benefit from. Administrators can still turn any of these features off from the Feature Management page. Some features are irreversible and are not enabled by default.
 
 #### Are optional features automatically enabled on sandbox environments?
-When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, all features are enabled by default.  
+When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, each feature is enabled by default, unless a feature is irreversible. 
 
 #### Is feature management applicable to on-premises deployments of Business Central?
 

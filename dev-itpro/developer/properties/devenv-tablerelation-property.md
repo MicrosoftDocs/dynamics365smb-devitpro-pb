@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 Sets relationships (links) to other tables. For example, if you want to provide a lookup into another table, set the name of that table on this property.  
   
-## Applies To  
+## Applies to  
   
 - Table Fields  
 - Page Fields  

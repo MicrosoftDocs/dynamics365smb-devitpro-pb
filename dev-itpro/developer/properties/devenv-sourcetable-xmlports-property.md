@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SourceTable Property (XMLports)
 Sets the table to which you want to map XML data or the table that you want to export data from.  
   
-## Applies To  
+## Applies to  
 - Table elements in XMLports
 
 ## Syntax

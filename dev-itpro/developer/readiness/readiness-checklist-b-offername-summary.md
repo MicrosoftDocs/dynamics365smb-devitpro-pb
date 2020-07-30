@@ -3,7 +3,7 @@ title: "Offer Name and Offer Summary"
 description: "Guidelines on offer name and offer summary"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/09/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -34,7 +34,7 @@ When creating a name for your offer, you can use the following two naming struct
 
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
-| 0.D **Offer Name** | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
+| 0.C **Offer Name** | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
 
 **How to create a strong app name for your offer** (Do’s and don’ts)?
 How to create a good offer name

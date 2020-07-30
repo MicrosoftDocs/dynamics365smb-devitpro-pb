@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions | Microsoft Docs
+title: FAQ | Microsoft Docs
 description: Get answers to your questions about connecting to the intelligent cloud from an on-premises solution through Business Central.
 author: bmeier94
 
@@ -9,10 +9,9 @@ ms.topic: article
 ms. search.keywords: cloud, edge
 ms.date: 05/26/2020
 ms.author: bmeier
-
 ---
 
-# Frequently Asked Questions about Connecting to the Intelligent Cloud from On-Premises Solutions
+# FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions
 
 This section contains answers to frequently asked questions about connecting on-premises solutions to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.  
 

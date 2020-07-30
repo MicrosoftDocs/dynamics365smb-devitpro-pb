@@ -21,7 +21,7 @@ begin
 end;
 ``` 
 
-## Applies To  
+## Applies to  
 - Fields on pages  
 
 > [!NOTE]  

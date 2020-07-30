@@ -24,7 +24,7 @@ When you develop a new extension version, you must consider the data from the pr
 
 You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
 
-The upgrade codeunit becomes an integral part of the extension and may be modified as needed for later versions. You can have more than one upgrade codeunit. There's a set order to the sequence of the upgrade triggers, but  the execution order of the different codeunits isn't guaranteed. If you do use multiple upgrade units, make sure that they can run independent of each other.
+The upgrade codeunit becomes an integral part of the extension and may be modified as needed for later versions. You can have more than one upgrade codeunit. There's a set order to the sequence of the upgrade triggers, but  the execution order of the different codeunits isn't guaranteed. If you do use multiple upgrade units, make sure that they can run independently of each other.
 
 ### Upgrade triggers
 
@@ -167,7 +167,7 @@ The codeunit also publishes the following events:
 The following steps provide the general pattern for using an upgrade tag on upgrade code.
 
 > [!IMPORTANT]
-> Use upgrade tags only upgrade purposes only.
+> Use upgrade tags only for upgrade purposes only.
 
 1. Use the following construct around the upgrade code to check for and add an upgrade tag.
         
@@ -182,7 +182,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
     UpgradeTag.SetUpgradeTag(UpgradeTagValue); 
     ```
 
-    You can use any value for the upgrade tag, but we recommend that you use the convention [CompanyPrefix]-[ID]-[Description]-[YYYYMMDD], for example, ABC-1234-MyExtensionUpgrade-22020161206.
+    You can use any value for the upgrade tag, but we recommend that you use the convention [CompanyPrefix]-[ID]-[Description]-[YYYYMMDD], for example, ABC-1234-MyExtensionUpgrade-20201206.
     
 2. Add code to register the upgrade tag for new companies that might eventually be created.
 
@@ -202,7 +202,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 3. Add code to register the upgrade tag for first-time installations of the extension.
 
-    The step ensures that the upgrade code isn't on first upgrade because of missing tag.
+    The step ensures that the upgrade code isn't run on first upgrade because of missing tag.
 
     To register the tag, call the `SetUpgradeTag` method on the `OnInstallAppPerCompany` and `OnInstallAppPerDatabase` triggers in the extension's install codeunit.
 
@@ -271,7 +271,7 @@ codeunit 50100 "ABC Upgrade Shoe Size"
             if Customer."ABC - Customer Shoesize" <> 0 then
                 Error('ShoeSize must be blank, the value is already assigned');
 
-            //This code avoids blank modifies because they're they down the upgrade
+            // Avoid blank modifies - it is a performance hit and slows down the upgrade
             if Customer."ABC - Customer Shoesize" <> Customer.Shoesize then begin
                 Customer."ABC - Customer Shoesize" := Customer.Shoesize;
                 Customer.Modify();
@@ -304,7 +304,7 @@ The extension might initiate code that you don't want to run during upgrade. The
 
 For example, let's say the extension runs code that prints a check after a purchase invoice is posted for buying shoes. If the upgrade fails, the purchase invoice is rolled back. But the check will still be printed, unless you have implemented a mechanism to prevent printing. 
 
-To avoid this situation, use the session `ExecutionContext`. Depending on the scenario, the system runs a session in a special context for a limited time, which can be either `Normal`, `Install`, `Uninstall`, or `Upgrade`. You get the `ExecutionContext` by calling [GETEXECUTIONCONTEXT method](/methods-auto/session/session-getexecutioncontext-method.md). For example, referring the example for printing checks, you could add something like the following code to verify the ExecutionContent before printing the check:
+To avoid this situation, use the session `ExecutionContext`. Depending on the scenario, the system runs a session in a special context for a limited time, which can be either `Normal`, `Install`, `Uninstall`, or `Upgrade`. You get the `ExecutionContext` by calling the [GetExecutionContext method](methods-auto/session/session-getexecutioncontext-method.md). For example, referring the example for printing checks, you could add something like the following code to verify the ExecutionContent before printing the check:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterPurchInvHeaderInsert', '', false, false)]
@@ -359,3 +359,5 @@ To upgrade to the new extension version, you use the [Sync-NavApp](https://go.mi
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Sample Extension](devenv-extension-example.md)  
+[Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  

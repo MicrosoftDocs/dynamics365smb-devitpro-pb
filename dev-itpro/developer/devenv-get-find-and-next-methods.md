@@ -12,15 +12,17 @@ author: SusanneWindfeldPedersen
 ---
 
 # Get, Find, and Next Methods
+
 The following methods are used to search for records:  
   
-- Get
-- Find  
-- Next  
+- `Get`
+- `Find`  
+- `Next`  
   
 These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.  
   
 ## Get method  
+
 The [Get Method (Record)](methods-auto/record/record-get-method.md) retrieves one record based on values of the primary key fields.  
   
 Get has the following syntax.  
@@ -65,7 +67,7 @@ The following example gets the record that has the SystemId `5286305A-08A3-E911-
 ```
 var
     Customer: Record Customer;
-    Text000: TextConst ENU = 'Customer was found.';
+    Text000: Label 'Customer was found.';
 begin
     If Customer.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
     Message(Text000);
@@ -73,6 +75,7 @@ end;
 ```  
 
 ## Find methods  
+
 The [Find Method (Record)](methods-auto/record/record-find-method.md) locates a record in a table that is based on the values stored in the keys.  
   
 Find has the following syntax.  
@@ -107,6 +110,7 @@ if not SalesOrderLine.IsEmpty then
 If you want to find the first record in a table or set, then use the [FindFirst Method (Record)](methods-auto/record/record-findfirst-method.md). If you want to find the last record in a table or set, then use the [FindLast Method (Record)](methods-auto/record/record-findlast-method.md).  
   
 ## Next method  
+
 The [Next Method (Record)](methods-auto/record/record-next-method.md) is often used with FIND to step through the records of a table.  
   
 Next has the following syntax.  
@@ -125,5 +129,6 @@ until (Rec.Next = 0);
 ```
 
 ## See Also
+
 [AL Methods](methods-auto/library.md)  
 [SystemId Field](devenv-table-object.md#systemid)

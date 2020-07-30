@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # TransactionModel Property
 Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method.  
 
-## Applies To  
+## Applies to  
  AL test methods on test codeunits. A test codeunit is a codeunit that has the [SubType Property \(Codeunit\)](devenv-subtype-codeunit-property.md) set to **Test**.  
 
  The TransactionModel property applies to both test methods that use TestPages and test methods that do not use TestPages.  
