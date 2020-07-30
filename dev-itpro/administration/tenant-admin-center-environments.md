@@ -107,7 +107,7 @@ To cancel a session, select it from the list and then select **Cancel selected s
 > [!NOTE]
 > This feature is in preview. It might change or be removed in the future updates.
 
-You can change the name of any environment. Before you change a name, consider that apart from uniquely identify the environment from your other environments, the name also is part of the environment's URL. The URL is used to access the environment in various ways - by application code and users. So changing the name can have significant impact.
+You can change the name of any environment. Before you change a name, consider that apart from uniquely identify the environment from your other environments, the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
 
 ### Before you rename an environment
 
@@ -117,10 +117,10 @@ You can change the name of any environment. Before you change a name, consider t
 
 ### Rename an environment
 
-1. Open the environment you want to rename.
+1. Select **Environments**, then select the environment you want to rename.
 2. Select **Rename**.
-3. On **Rename environment** page, read the information presented.
-4. Enter the new name and then select **Rename**.
+3. On **Rename environment** page, read the information.
+4. Enter the new name, and then select **Rename**.
 5. Confirm your intent to rename the environment.
 
     At this point, the environment state will first change to **Preparing**, then to **Active** again when the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
@@ -143,7 +143,7 @@ Here are some areas where the environment name is used, which you need to consid
     These links are stored in users' browsers and on devices. They target things like: records, filters, pages, reports, profiles, companies, and so on. Over time, these links inevitably get saved in various repositories such as emails, Teams channels, Word and Excel documents. They're often exchanged among users in the same company, across companies, across environments, across tenants. Links can also be in desktop shortcuts.
 
     > [!NOTE]
-    > Admins don't have access to some or most of these type of links, so they can't update the URL on behalf of users. 
+    > Admins don't have access to some or most of these type of links, so they can't update the URL on behalf of users.
 
 - Links in the notification mails sent from Business Central. Links sent before the name change will no longer work after the name change. 
 
@@ -153,47 +153,47 @@ Here are some areas where the environment name is used, which you need to consid
 
     We store the URL, including environment name, in some of our cached data. This data is cached browser-side, that is, in the user's browser and across devices. Admins typically don't have access or control this data cache. When users lose their cache, they lose micro-personalizations to all their pages and preferences. 
 
-- Integrations that embed the web client, for example, SharePoint apps composed of Business Central pages 
+- Integrations that embed the web client, for example, SharePoint apps composed of Business Central pages
 
 - Integrations that launch the web client  
 
-- Partner-developed mobile apps, web applications, and so on. These apps likely originate from partners outside the customer's organization where the admin cannot update URLS. 
+- Partner-developed mobile apps, web applications, and so on. These apps likely originate from partners outside the customer's organization where the admin can't update URLS. 
 
-- Mobile apps incl. Windows 10 store app for desktop/tablet 
+- Mobile apps, including Windows 10 store app for desktop/tablet
 
-    Affected  only when users modify protocol handler before rename - to force the app to connect to environment with name different than "production". So if the user keeps working with "production" on mobile (which is default now), and the admin is renaming "prod2" to "myprod" the mobile user is not affected. Otherwise the app would throw an error and the user would have to bail out using a newly created protocol handler link. 
+    Affects only users who have modified the protocol handler, for example, to force the app to connect to environment with name other than "production". So if the user keeps working with "production" on the mobile app (which is default now), and the admin renames the environment from "prod2" to "myprod", the mobile user is not affected. Otherwise, the app would throw an error, and the user would have to exit using a newly created protocol handler link.
 
-- Business Central add-ins and integrations with other Microsoft services 
+- Business Central add-ins and integrations with other Microsoft services
 
     - Outlook Add-in  
     
-         The Add-In manifest that is saved to Exchange Server per org or per user includes the environment name. 
+        The Add-In manifest that is saved to Exchange Server, per-organization or per-user, includes the environment name.
     
     - Excel Add-in  
     
-         Each user's Excel sheet stores the Environment name. these Excels could be stored on user's desktop PCs, mobile devices, file shares, SharePointa, archives, etc. some of which will be unreachable by an admin to update. 
+         Each user's Excel worksheet stores the environment name. These Excel worksheets can be stored in various locations, like the user's desktop PCs, mobile devices, file shares, SharePoint, archives, and more. Some locations are not accessible to admins.
     
     - Power BI 
     
-        All reports built (including the default ones we deploy from Role Center) or any Power BI apps installed before rename would be affected with no automatic way to repair. Partner/user would have to manually update the connections. 
+        All reports (including the default reports deployed from the Role Center) built before the rename and Power BI apps installed before the rename would be affected. There is no automatic way to repair these items. The partner or user would have to manually update the connections. 
     
     - Power Apps/Automate  
     
-        All apps/flows built before rename would be affected with no automatic way to repair. Partner/user would have to manually update the connections. 
+        All apps/flows built before rename would be affected with no automatic way to repair. The partner or user would have to manually update the connections. 
     
     - CDS  
     
-        CDS Virtual Entity setup will store Environment name 
+        CDS Virtual Entity setup stores environment name.
     
     - Accountant Hub 
 
 - Development scenarios  
 
-    - Publish to SB from VS Code. Launch.json configurations contain the sandbox name if different from "default", so these will be impacted and require source code updates 
+    - Publish to sandbox environment from Visual Studio Code. The launch.json file of extensions might contain the sandbox name, if different from "default". The files require source code updates,
 
-    - CI/CD pipelines for test and deploy, these could be impacted by environment renames 
+    - CI/CD pipelines for test and deployment could be impacted by environment renames.
 
-- Azure AppInsights logs and metrics 
+- Azure Application Insights logs and metrics 
 
 ## See also
 
