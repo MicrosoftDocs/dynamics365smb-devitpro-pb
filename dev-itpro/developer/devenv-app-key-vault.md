@@ -102,9 +102,6 @@ These conditions may not be what you want, so be careful who you pass the secret
 
 For on-premises deployments, you can configure [!INCLUDE[server](../developer/includes/server.md)] to run with or without publisher validation of key vault secret providers. Publisher validation is controlled by the server's **Enable Publisher Validation** (AzureKeyVaultAppSecretsPublisherValidationEnabled) configuration setting. The validation is a runtime operation that ensures extensions use only key vaults that belong to their publishers. It essentially blocks attempts in AL to read secrets from another publisher's key vault.
 
-> [!TIP]
-> With a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online production environment, publisher validation is not performed for per-tenant extensions. Publisher validation is done automatically for onboarded AppSource extensions.
-
 #### How it works
 
 Publisher validation is done by comparing the key vault's Azure AD tenant ID with the extension publisher's Azure AD tenant ID. It works this way:
