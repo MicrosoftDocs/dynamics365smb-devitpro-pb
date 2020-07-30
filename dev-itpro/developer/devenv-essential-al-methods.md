@@ -19,10 +19,10 @@ The topics in this section describe the most common AL methods. For more details
 - [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  
 - [SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  
 - [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)  
-- [LockTable Method](methods/devenv-locktable-method.md)  
+- [LockTable Method](methods-auto/record/record-locktable-method.md)  
 - [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)  
 - [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)  
-- [StrMenu Method](methods/devenv-strmenu-method.md)
+- [StrMenu Method](methods-auto/dialog/dialog-strmenu-method.md)
 
 ## See Also
 
