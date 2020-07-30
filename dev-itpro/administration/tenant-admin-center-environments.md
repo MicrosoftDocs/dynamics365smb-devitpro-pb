@@ -193,7 +193,7 @@ Here are some areas where the environment name is used, which you need to consid
 
     - CI/CD pipelines for test and deployment could be impacted by environment renames.
 
-- Azure Application Insights logs and metrics 
+- Azure Application Insights logs and metrics
 
 ## See also
 
