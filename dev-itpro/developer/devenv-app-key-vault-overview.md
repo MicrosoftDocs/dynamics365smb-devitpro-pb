@@ -24,8 +24,8 @@ Getting extensions to use secrets from Azure Key Vault involves two areas of wor
 
 An extension can retrieve secrets from one or two different Azure Key Vaults. These key vaults must be created in Azure, and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service configured to access key vaults. The setup process is different for online and on-premises. For more information, see:
 
-- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](setup-app-key-vault.md)
-- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises](setup-app-key-vault-onprem.md)
+- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](../administration/setup-app-key-vault.md)
+- [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises](../administration/setup-app-key-vault-onprem.md)
 
 ### Developing the extensions to use secrets from Azure Key Vault
 
