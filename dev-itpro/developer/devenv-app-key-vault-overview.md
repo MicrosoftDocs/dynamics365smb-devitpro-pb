@@ -16,9 +16,12 @@ Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions make w
 
 These web service calls are typically authenticated, which means the extension must provide a credential in the call. The credentials enable the other service to accept or reject the call. You can consider the credentials as a kind of secret to the extension. A secret shouldn't be leaked to customers, partners, or anybody else. So where can the extension get the secret from? Here is where Azure Key Vault is used. Azure Key Vault is a cloud service that works as a secure secrets store. It provides centralized storage for secrets, enabling you to control access and distribution of the secrets.
 
+> [NOTE]
+> For [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the app key vault feature is only supported for AppSource extensions.
+
 ## Getting started
 
-Getting extensions to use secrets from Azure Key Vault involves two areas of work:
+Getting extensions to use secrets from Azure Key Vault involves two areas of work: setting up and configuring Azure Key Vaults and developing the extensions to use secrets from Azure Key Vault.
 
 ### Setting up and configuring Azure Key Vaults
 
