@@ -33,6 +33,9 @@ Open the **Manage Apps** page from the environment details page. Choose **Enviro
 
 The **Manage Apps** lists all the apps installed on the environment and indicates whether updates are available. When first opened, the system will start checking for updates. Wait for this operation to complete.
 
+   > [!Important]
+   > When an ISV [provides a new version of their AppSource app](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/appsource), Microsoft team validates it against the latest currently available version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] at that given time. If the new app version passess validation, it is made available for the customers' environments, which are running on that version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and greater. Therefore if you are not seeing an AppSource app update on this list, your environment may not yet be runnig on the version, the app was registered for.   
+
 When completed, if an update is available for an app, there are two indications:
 
 - The **Latest Available Version** column contains the new version number of the app.
