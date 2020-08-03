@@ -13,7 +13,7 @@ author: blrobl
 
 A *ListPart* page is a type of page part used to display a list of records embedded within another page. It consists of a repeater, which presents the records of the source table as rows and columns, and optionally, of an action bar.
 
-A list part can be contained in Role Centers, in the FactBox and content area of other pages, in a tabular step in a Wizard and as a subpage in a Document page. Depending on the type of the hosting page, a list part is subject to different design constraints, which determine its position and dimensions. For more information, see [Design Considerations](devenv-designing-parts.md#design-considerations.md).
+A list part can be contained in Role Centers, in the FactBox and content area of other pages, in a tabular step in a Wizard and as a subpage in a Document page. Depending on the type of the hosting page, a list part is subject to different design constraints, which determine its position and dimensions. For more information, see [Design Considerations](devenv-designing-parts.md#design-considerations).
 
 ## Creating a list part
 
