@@ -136,6 +136,17 @@ After you register the application, the next task is to configure the Business C
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
+## Fixing problems
+
+This section provides solutions to problems that might occur.
+
+### Sorry, but we're having trouble signing you in
+
+When you try to connect, you get a message similar to the following:  
+
+**AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: '1111111-aaaa-2222-bbbb-333333333333'**
+
+To fix this issue, verify that the **Reply URL** in the Setup Azure AD page is correct. It must match the Reply URL set on the registered app in Azure AD.
 
 ## See Also
 [Enabling Your Business Data for Power BI](https://docs.microsoft.com/dynamics365/business-central/admin-powerbi)  
