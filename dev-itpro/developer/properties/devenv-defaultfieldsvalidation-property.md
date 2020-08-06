@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # DefaultFieldsValidation Property
 Sets a value that indicates whether fields are validated.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## Property Value  

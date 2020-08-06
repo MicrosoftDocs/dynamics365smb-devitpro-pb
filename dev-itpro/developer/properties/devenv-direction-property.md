@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Direction Property
 Sets the XMLport to import, export, or import and export data in XML format.  
   
-## Applies To  
+## Applies to  
 
 - XMLports  
   

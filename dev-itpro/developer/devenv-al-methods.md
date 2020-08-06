@@ -1,7 +1,7 @@
 ---
 title: "Working with AL methods"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # AL methods
 
-Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application. 
+Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application.  
 
 There are two types of methods: system methods (built-in) and user-defined (custom) methods.
 
@@ -24,7 +24,7 @@ There are two types of methods: system methods (built-in) and user-defined (cust
 
 The method declaration defines the method and has the following syntax:
 
-```
+```AL
 [Attributes(arguments list)]
 local procedure <method_name>(parameter list) <return_value_name> : <data_type>[<length>]
 ```
@@ -44,23 +44,23 @@ Attributes are placed before the method. For information about the available att
 A method can be a *local* method or *global* method. A local method can only be accessed or called from inside the object in which it is declared. A global method can be called from inside the object in which it is declared and from other objects.
 
 To declare a local method, start the declaration with `local`: 
-```
+```AL
 local procedure Mymethod();
 ```
 
 To declare a global method, *omit* `local`:
 
-```
+```AL
  procedure Mymethod();
 ```
 
 ### Parameters (optional)
 
-A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by commas. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
+A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by semicolons. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
-```
+```AL
  procedure  Mymethod(MyCustomer : Record Customer;var MyDimension : ARRAY [2] OF Boolean)
 ```
 
@@ -75,7 +75,7 @@ You can run, or call, a built-in or a custom method by using its name in a metho
 A method can be used as part of an expression. For example, the following code uses a
 method named `CalculatePrice` as an expression:
 
-```
+```AL
 TotalCost := Quantity * CalculatePrice;
 ```
 
@@ -83,14 +83,14 @@ In this case, the `CalculatePrice` method must return a value that is used in ev
 
 A method can also be run by using a method call statement. This statement only calls the method and does not return any value. The following is an example of calling a method named `MyRunMethod`:
 
-```
+```AL
 if Quantity > 5 then
 MyRunMethod;
 ```
 
 The `MyRunMethod` returns no data back to the calling code.
 
-### <a name="Parameters"></a> parameters  
+### <a name="Parameters"></a> Parameters  
 
 In a method call, the parameters are separated by commas, and the optional parameters may be omitted starting from the right. For example, this means that if a method has three optional parameters, then you cannot omit the second parameter without omitting the third parameter.  
   
@@ -104,18 +104,19 @@ You can specify that a parameter is passed to a method by value or by reference.
 
 The following shows the syntax for a method. The first example shows a method with two mandatory parameters.
 
-```
+```AL
 method(Parameter1, Parameter2)  
 ```
- 
+
 Some built-in methods have optional parameters, the syntax is shown below. The optional parameters may be omitted starting from the right.
 
-```  
+```AL
 method([Optional1] [, Optional2] [, Optional3])  
 ```  
   
 The method that uses the syntax above can be called by using the following code.  
-```  
+
+```AL
 method(Optional1, Optional2)  
 ```
   
@@ -123,7 +124,7 @@ method(Optional1, Optional2)
 
 ABS is an example of an AL method that has a fixed number of parameters (1).  
   
-```  
+```AL
 Value := -1033; //A negative integer value  
 PositiveValue := ABS(Value); //Calculate the positive value 1033  
 ```  
@@ -132,7 +133,7 @@ PositiveValue := ABS(Value); //Calculate the positive value 1033
 
 The method `DMY2DATE` is an example of a method that can be called by using a variable number of parameters.  
   
-```  
+```AL
 NewDate := DMY2DATE(5, 11, 1992); //Returns the date November 5, 1992  
 ```  
   
@@ -142,7 +143,7 @@ Depending on the use of the `DMY2DATE` method, one, two, or three parameters can
 
 You can assign the return value of a method to a variable.  
   
-```  
+```AL
 ReturnVal := MyMethod(Param1);  
 ```  
   
@@ -150,7 +151,7 @@ ReturnVal := MyMethod(Param1);
 
 In this example, `MyMethod` returns a Boolean value. You can use the return value in a conditional statement.  
   
-```  
+```AL
 if (MyMethod(Param1)) then  
   <Statement1>  
 else  
@@ -162,4 +163,4 @@ else
 [Development Overview](devenv-dev-overview.md)  
 [AL Methods](methods-auto/library.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)  
-[AL Control Statements](devenv-al-control-statements.md)
+[AL Control Statements](devenv-al-control-statements.md)  

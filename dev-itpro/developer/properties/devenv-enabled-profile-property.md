@@ -16,7 +16,7 @@ Specifies whether the profile can be used by users or not.
 
 For information about the **Enabled** property for pages, keys and table fields, see [Enabled Property](devenv-enabled-property.md).
 
-## Applies To  
+## Applies to  
 
 - Profiles
 

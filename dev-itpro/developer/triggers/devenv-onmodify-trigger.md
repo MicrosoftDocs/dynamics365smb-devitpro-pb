@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnModify Trigger
 Runs when a user modifies an existing record in a table.  
   
-## Applies To  
+## Applies to  
 - Tables  
 - Table extensions
   

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # TableType Property
 Specifies the table type.  
 
-## Applies To  
+## Applies to  
 
 - Tables  
 

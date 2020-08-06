@@ -14,7 +14,7 @@ author: jswymer
 
 Specifies how a field appears on the FastTab of a page when the FastTab is expanded and collapsed.
   
-## Applies To  
+## Applies to  
  Page Fields  
 
 ## Property Values  
