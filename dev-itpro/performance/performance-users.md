@@ -2,7 +2,7 @@
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/07/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,8 @@ This section describes how you can work with end-users to improve the performanc
 - Where possible, avoid older browsers such as Internet Explorer, and switch to one of our recommended modern browsers, such as the [new Microsoft Edge](https://www.microsoft.com/edge/).  
 
     Internet Explorer is still supported, but since the new Edge browser is available for Windows Server now, we see a declining rate of usage for Internet Explorer. You can also get [a pilot of Edge in IE mode](https://www.microsoft.com/edge/business). For more information, see [Microsoft Edge documentation](/deployedge/edge-ie-mode).
-- Keep your browser always updated to the latest version.
+- Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance features and optimizations are only available for modern browsers.
+- Keep your browser always updated to the latest version which may include the latest performance enhancements.
 
 ## Choosing a network connection
 
@@ -42,7 +43,13 @@ In order to provide an optimal experience, Business Central saves some preferenc
  - List pages load records in small batches while the user scrolls through the list, allowing it to scale to very large tables.
  - The overall structure of a page (but not business data) is cached on the client device after a page is accessed the first time.
 
-The time taken to load any page is also affected by the number of controls on the page. Users can improve performance on complex pages using these methods: 
+To take full advantage of page caching, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires a modern browser with access to the browser's storage mechanisms. Any browser settings that restrict access to local storage or the browser's IndexedDB may prevent [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from applying performance optimizations.
+
+> [!IMPORTANT]  
+> Browsers that run in private or guest mode typically discard browser storage when the browser window is closed. This discards cached data and users will not be able to take advantage of page caching when they next sign into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Users relying on private or guest browsing to work with multiple identities or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] organizations are advised to use browser profiles instead.
+
+
+The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
 - By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] saves time from attempting to display all the related facts.
 - By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
