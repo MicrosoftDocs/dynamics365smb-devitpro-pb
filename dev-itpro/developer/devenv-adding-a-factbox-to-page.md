@@ -131,16 +131,16 @@ page 50101 "Simple Customerlist Page"
 
 Having a page composed of multiple FactBox pages that each process data from different sources can degrade performance. To improve responsiveness and the time it takes to load the page, [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 and later optimizes the sequence in which content is loaded. The sequence is as follows:
 
-1. Content on the hosting page is loaded first and users can immediately begin interacting with it.
-2. The FactBox pane is loaded next where each FactBox is loaded independently in sequence starting from the top.
-    1. FactBoxes having the `Visible` property evaluate to `false` will not be loaded.
-    2. FactBoxes that are not within view are only loaded when the user scrolls them into view.
+1. Content on the hosting page is loaded first, and users can immediately begin interacting with it.
+2. The FactBox pane is loaded next, where each FactBox is loaded independently in sequence starting from the top.
+    1. FactBoxes having the `Visible` property evaluate to `false` won't be loaded.
+    2. FactBoxes that aren't within view are only loaded when the user scrolls them into view.
 If the FactBox pane is collapsed, no FactBoxes are loaded until the user expands the FactBox pane.
 
-Below are some practical tips to help you make the most out of this optimization:
- - Consider hiding any FactBoxes that represent secondary content which only some users will require. Learn more about [Choosing the Visibility of Parts](devenv-designing-parts#choosing-the-visibility-of-parts).  
- - Consider processing in the background for FactBoxes that require heavy processing. Learn more about [Using Page Background Tasks](devenv-designing-parts#using-page-background-tasks).  
- - Avoid having triggers on the hosting page that call into a FactBox as this forces the FactBox to ignore performance optimizations and load along with the content of the hosting page, adding to the total loading time. 
+Below are some practical tips to help you make the most of this optimization:
+ - Consider hiding any FactBoxes that represent secondary content that only some users will require. Learn more about [Choosing the Visibility of Parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).  
+ - For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about [Using Page Background Tasks](devenv-designing-parts.md#using-page-background-tasks).  
+ - Avoid having triggers on the hosting page that call into a FactBox because this condition forces the FactBox to ignore performance optimizations and load along with the content of the hosting page, adding to the total loading time. 
  
 ### FAQ about performance
 
