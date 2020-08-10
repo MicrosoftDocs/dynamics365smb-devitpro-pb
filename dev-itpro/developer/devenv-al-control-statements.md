@@ -1,7 +1,7 @@
 ---
 title: "AL Control Statements"
 ms.custom: na
-ms.date: 10/08/2020
+ms.date: 08/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,10 +29,10 @@ In some cases, the AL syntax only lets you use a single statement. However, if y
 
 ```  
 begin  
-  <Statement 1>;  
-  <Statement 2>;  
-  ..  
-  <Statement n>;  
+    <Statement 1>;  
+    <Statement 2>;  
+    ..  
+    <Statement n>;  
 end;  
 ```  
 
@@ -48,8 +48,8 @@ When begin follows then, else, or do, it should be on the same line and preceded
 
 ```  
 if (x = y) and (a = b) then begin  
-  x := a;  
-  y := b;  
+    x := a;  
+    y := b;  
 end;   
 ```  
 
@@ -57,14 +57,14 @@ end;
 
 ```  
 if (xxx = yyyyyyyyyy) and   
-   (aaaaaaaaaa = bbb)  
+    (aaaaaaaaaa = bbb)  
 then begin  
-  x := a;  
-  x := y;  
-  a := y;  
+    x := a;  
+    x := y;  
+    a := y;  
 end else begin  
-  y := x;  
-  y := a;  
+    y := x;  
+    y := a;  
 end;  
 ```  
 
@@ -81,9 +81,9 @@ if-then-else statements have the following syntax.
 
 ```  
 if <Condition> then  
-  <Statement1>  
+    <Statement1>  
 [else  
-  <Statement2>]  
+    <Statement2>]  
 ```  
 
 If *`<Condition>`* is true, then *`<Statement1>`* is executed. If *`<Condition>`* is false, then *`<Statement2>`* is executed.  
@@ -94,10 +94,10 @@ You can build more complex control structures by nesting if-then-else statements
 
 ```  
 if <Condition1> then   
-  if <Condition2> then   
-    <Statement1>   
-  else  
-    <Statement2>  
+    if <Condition2> then   
+        <Statement1>   
+    else  
+        <Statement2>  
 ```  
 
 If *`<Condition1>`* is false, then nothing is executed. If *`<Condition1>`* and *`<Condition2>`* are both true, then *`<Statement1>`* is executed. If *`<Condition1>`* is true and *`<Condition2>`* is false, then *`<Statement2>`* is executed.  
@@ -121,27 +121,27 @@ Reading several nested if-then-else statements can be very confusing but general
 
 ```  
 if x = y then  
-  x := x + 1  
+    x := x + 1  
 else  
-  x := -x - 1;  
+    x := -x - 1;  
 ```  
 
 #### Example  
 
 ```  
 if (xxxxxxxxxx = yyy) and   
-   (aaa = bbbbbbbbbb)  
+    (aaa = bbbbbbbbbb)  
 then  
-  x := a  
+    x := a  
 else  
-  y := b;  
+    y := b;  
 ```  
 
 #### Example  
 
 ```  
 if x <> y then  
-  exit(true);  
+    exit(true);  
 x := x * 2;  
 y := y - 1;  
 ```  
@@ -150,10 +150,10 @@ y := y - 1;
 
 ```  
 if x < y then  
-  exit(true)  
+    exit(true)  
 else begin  
-  x := x * 2;  
-  y := y - 1;  
+    x := x * 2;  
+    y := y - 1;  
 end;  
 ```  
 
@@ -162,7 +162,7 @@ The following example shows an if-then statement without the optional else state
 
 ```  
 if Amount < 1000 then  
-  Total := Total + Amount;  
+    Total := Total + Amount;  
 ```  
 
 #### Example  
@@ -171,14 +171,14 @@ The following example shows a nested if-then-else statement.
 ```  
 ...  
 if Amount < 1000 then begin  
-  if I > J then  
-    Max := I  
-  else  
-    Max := J;  
-  Amount := Amount * Max;  
-end  
+    if I > J then  
+        Max := I  
+    else  
+        Max := J;  
+    Amount := Amount * Max;  
+    end  
 else  
-  ...  
+...  
 
 ```  
 
@@ -187,15 +187,15 @@ Case statements have the following syntax.
 
 ```  
 case <Expression> of  
-  <Value set 1>:  
-    <Statement 1>;  
-  <Value set 2>:  
-    <Statement 2>;  
+    <Value set 1>:  
+        <Statement 1>;  
+    <Value set 2>:  
+        <Statement 2>;  
 
-  <Value set n>:  
-    <Statement n>;  
-[else  
-  <Statement n+1>]  
+    <Value set n>:  
+        <Statement n>;  
+    [else  
+        <Statement n+1>]  
 end;  
 ```  
 
@@ -299,12 +299,12 @@ The following syntax shows the for-to and for-downto statement.
 
 ```  
 for <Control Variable> := <Start Number> to <End Number> do  
-  <Statement>  
+    <Statement>  
 ```  
 
 ```  
 for <Control Variable> := <Start Number> downto <End Number> do  
-  <Statement>  
+    <Statement>  
 ```  
 
  The data type of *`<Control Variable>`*, *`<Start Number>`*, and *`<End Number>`* must be Boolean, number, time, or date. 
@@ -345,15 +345,15 @@ When this statement is executed, a run-time error occurs because the start and e
 
 ```  
 for I := 1 to 5 do  
-  for J := 1 to 7 do  
-    A[I,J] := 23;  
+    for J := 1 to 7 do  
+        A[I,J] := 23;  
 ```  
 
 This example requires the following Integer data type variables.  
 ```  
 var
-  I : Integer;
-  J : Integer;
+    I : Integer;
+    J : Integer;
 ```  
 
 ### Foreach control structure
@@ -362,7 +362,7 @@ The foreach statement has the following syntax.
 
 ```  
 foreach <Element> in <List> do
-  <Statement>  
+    <Statement>  
 ```  
 The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection, or JsonArray type. The *`<Element>`* variable must be a data type that is compatible with elements specified by the *`<List>`*.  
 
@@ -370,44 +370,46 @@ The following code example iterates through a list of customer names and returns
 ```  
 procedure PrintCustomerNames(customerNames : List of [Text]);
 var
-  customerName : Text;
+    customerName : Text;
 begin
-  foreach customerName in customerNames do
-    message(customerName);
+    foreach customerName in customerNames do
+        message(customerName);
 end;
 
 ```  
 
 ### While-do control structure  
- The following syntax shows the while-do statement.  
+
+The following syntax shows the while-do statement.  
 
 ```  
 while <Condition> do  
-  <Statement>  
+    <Statement>  
 ```  
 
- If *`<Condition>`* is true, then *`<Statement>`* is executed repeatedly until *`<Condition>`* becomes false. If *`<Condition>`* is false from the start, then *`<*Statement>`* is never executed.  
+If *`<Condition>`* is true, then *`<Statement>`* is executed repeatedly until *`<Condition>`* becomes false. If *`<Condition>`* is false from the start, then *`<*Statement>`* is never executed.  
 
- The while do statement can be used when some code should be repeated as long as an expression is true.  
+The while do statement can be used when some code should be repeated as long as an expression is true.  
 
 #### Programming conventions  
- When there is only one condition, put while and do on the same line. Put the statements on separate lines and indented by two spaces.  
 
- When there are multiple conditions, put the conditions on separate lines and indented by two spaces and put do on a separate line that is aligned with while.  
+When there is only one condition, put while and do on the same line. Put the statements on separate lines and indented by two spaces.  
+
+When there are multiple conditions, put the conditions on separate lines and indented by two spaces and put do on a separate line that is aligned with while.  
 
 #### Example  
 
 ```  
 while <expr> do  
-  <Statement>;  
+    <Statement>;  
 ```  
 
 #### Example  
 
 ```  
 while <expr> do begin  
-  <Statement>;  
-  <Statement>;  
+    <Statement>;  
+    <Statement>;  
 end;  
 ```  
 
@@ -418,8 +420,8 @@ while <expr> and
       <expr> and  
       <expr>  
 do begin  
-  <Statement>;  
-  <Statement>;  
+    <Statement>;  
+    <Statement>;  
 end;  
 ```  
 
@@ -428,7 +430,7 @@ The following AL code increases the variable I until it equals 1000 and displays
 
 ```  
 while I < 1000 do  
-  I := I + 1;  
+    I := I + 1;  
 message(format(I));  
 ```  
 
@@ -436,7 +438,7 @@ This example requires the following integer data type variable.
 
 ```  
 var  
-  I : integer
+    I : integer
 ```
 
 ### Repeat-until control structure  
@@ -444,7 +446,7 @@ The following syntax shows the repeat-until statement.
 
 ```  
 repeat  
-  <Statements> until <Condition>  
+    <Statements> until <Condition>  
 ```  
 
  *`<Statements>`* is executed repeatedly until *`<Condition>`* is true.  
@@ -458,11 +460,11 @@ repeat
 
 ```  
 if x < y then begin  
-  repeat  
-    x := x + 1;  
-    a := a - 1;  
-  until x = y;  
-  b := x;  
+    repeat  
+        x := x + 1;  
+        a := a - 1;  
+    until x = y;  
+        b := x;  
 end;  
 ```  
 
@@ -471,10 +473,10 @@ This code uses a repeat-until loop to count the number of entries in the Custome
 
 ```  
 Count := 0;  
-if Customer.FIND('-') then  
+if Customer.find('-') then  
 repeat  
-  Count := Count + 1;  
-until Customer.NEXT <= 0;  
+    Count := Count + 1;  
+until Customer.next <= 0;  
 message('The Customer table contains %1 records.',Count);  
 ```  
 This example requires the following variables.
@@ -486,7 +488,8 @@ var
 The FIND method finds the first entry in the table. Each time NEXT is called, it steps one record forward. When NEXT equals 0, there are no more entries in the table. The loop is exited, and a message displays how many entries were found.  
 
 ### Exit statement  
- The exit statement is used to control the flow of the execution. The following syntax shows an exit statement.  
+
+The exit statement is used to control the flow of the execution. The following syntax shows an exit statement.  
 
 ```  
 exit([<Value>])  
@@ -507,9 +510,9 @@ exit([<Value>])
 
 ```  
 for I := 1 to 1000 do begin  
-  if Amount[I] < Total[I] then  
-    exit(1);  
-  A[I] := Amount[I] + Total[I];  
+    if Amount[I] < Total[I] then  
+        exit(1);  
+    A[I] := Amount[I] + Total[I];  
 end;  
 ```  
 
