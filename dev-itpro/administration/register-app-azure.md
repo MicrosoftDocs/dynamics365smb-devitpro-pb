@@ -13,7 +13,7 @@ ms.topic: article
 
 > **APPLIES TO** [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is automatically configured for integration with other online services.
 
-This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
+This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
 
 > [!NOTE]
 > In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version earlier than 16.4, the **Set up Azure Active Directory** wizard has an **Auto register** action. Previously, you could use this action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. The auto-register functionality has since been removed. Now, you must register the application manually, regardless of your version. The wizard in earlier versions still includes the **Auto register** link. But the link now opens this article, which guides you through the manual registration.
@@ -51,13 +51,13 @@ The first task is to use Azure portal to register an application for Business Ce
     2. Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information later.
 2. Create a client secret for the registered application.
 
-    1. Follow the general guidelines at [Add credentials to your web application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
+    1. Follow the general guidelines at [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
     2. Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
 
 3. Grant the registered application delegated permission to access the required service APIs, like Power BI.
 
-    Follow the general guidelines at [Add permissions to access web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) for each service.
+    Follow the general guidelines at [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) for each service.
 
     Use the following table to help you set the minimum permissions:
 
@@ -98,7 +98,7 @@ When you try to connect, you get a message similar to the following:
 To fix this issue, verify that the **Reply URL** in the Setup Azure AD page is correct. It must match the Reply URL set on the registered app in Azure AD.
 
 ## See Also
-[Enabling Your Business Data for Power BI](https://docs.microsoft.com/dynamics365/business-central/admin-powerbi)  
+[Enabling Your Business Data for Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
