@@ -115,7 +115,7 @@ Reading several nested if-then-else statements can be very confusing but general
 
 - When you write if expressions with then and else parts, write them so that the then result is more probable than the else one.  
 
-- If the last statement in the then part of an if-then-else statement is an exit or an ERROR, do not continue with an else statement.  
+- If the last statement in the then part of an if-then-else statement is an exit or an error, do not continue with an else statement.  
 
 #### Example  
 
@@ -218,7 +218,7 @@ For more information about Code variables, see [Code Data Type](datatypes/devenv
 
 #### Programming conventions
 
-When you use a case statement, indent the value sets by two character spaces. If you have two or more value sets on the same line, then separate them by commas without spaces. The last value set on a line is immediately followed by a colon without a preceding space. The action starts on the line after the value set and is further indented by two character spaces. If there is a begin, then it should be put on a separate line unless it follows else. If a begin follows an else, then it should be on the same line as else.  
+When you use a case statement, indent the value sets by four character spaces. If you have two or more value sets on the same line, then separate them by commas without spaces. The last value set on a line is immediately followed by a colon without a preceding space. The action starts on the line after the value set and is further indented by four character spaces. If there is a begin, then it should be put on a separate line unless it follows else. If a begin follows an else, then it should be on the same line as else.  
 
 If there are more than two alternatives, use a case statement. Otherwise, use an if-then-else statement.  
 
@@ -226,19 +226,19 @@ If there are more than two alternatives, use a case statement. Otherwise, use an
 
 ```  
 case Field of  
-  Field::A:  
-    begin  
-     x := x + 1;  
-     y := -y - 1;  
+    Field::A:  
+        begin  
+            x := x + 1;  
+            y := -y - 1;  
+        end;  
+    Field::B:  
+        x := y;  
+    Field::C,Field::D:  
+        y := x;  
+    else begin  
+        y := x;  
+        a := b;  
     end;  
-  Field::B:  
-    x := y;  
-  Field::C,Field::D:  
-    y := x;  
-  else begin  
-    y := x;  
-    a := b;  
-  end;  
 end;  
 ```  
 
