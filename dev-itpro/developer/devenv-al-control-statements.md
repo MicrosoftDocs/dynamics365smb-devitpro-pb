@@ -248,26 +248,27 @@ The following AL code prints various messages depending on the value of *Number*
 
 ```  
 case Number of  
-  1,2,9:  
-    MESSAGE('1, 2, or 9.');  
-  10..100:  
-    MESSAGE('In the range from 10 to 100.');  
-  else  
-    MESSAGE('Neither 1, 2, 9, nor in the range from 10 to 100.');  
+    1,2,9:  
+        message('1, 2, or 9.');  
+    10..100:  
+        message('In the range from 10 to 100.');  
+    else  
+        message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
 end;  
-```  
+```
+
 #### Example  
 The following AL code shows how value sets in a case statement are evaluated if the expression is a Code data type.
 
 ```  
 MyCode := 'ABC';  
 case MyCode of  
-  'abc':  
-    MESSAGE('This message is not displayed.');   
-  'def':  
-    MESSAGE('This message is not displayed.');  
-else  
-  MESSAGE('The value set does not match the expression.');
+    'abc':  
+        message('This message is not displayed.');   
+    'def':  
+        message('This message is not displayed.');  
+    else  
+      message('The value set does not match the expression.');
 end;
 ```
 
@@ -278,9 +279,10 @@ var
     MyCode : Code[10];
 ```  
 
- The value set 'abc' is not converted because the evaluated expression MyCode is a code variable.  
+The value set 'abc' is not converted because the evaluated expression MyCode is a code variable.  
 
 ## AL repetitive statements
+
 A repetitive statement is also known as a loop. The following table shows the looping mechanisms in AL.  
 
 |Looping mechanism|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
@@ -291,9 +293,9 @@ A repetitive statement is also known as a loop. The following table shows the lo
 |repeat|Repeats the inner statements until the specified conditions evaluate to **true**. The statements in a loop of this kind are always executed at least one time.|  
 
 
-
 ### For-to and for-downto control structure  
- The following syntax shows the for-to and for-downto statement.  
+
+The following syntax shows the for-to and for-downto statement.  
 
 ```  
 for <Control Variable> := <Start Number> to <End Number> do  
@@ -427,7 +429,7 @@ The following AL code increases the variable I until it equals 1000 and displays
 ```  
 while I < 1000 do  
   I := I + 1;  
-Message(format(I));  
+message(format(I));  
 ```  
 
 This example requires the following integer data type variable.  
@@ -473,7 +475,7 @@ if Customer.FIND('-') then
 repeat  
   Count := Count + 1;  
 until Customer.NEXT <= 0;  
-Message('The Customer table contains %1 records.',Count);  
+message('The Customer table contains %1 records.',Count);  
 ```  
 This example requires the following variables.
 ```  
@@ -530,7 +532,7 @@ break;
 while Count < 1000 do
   begin
   Count := Count + 1;
-  MESSAGE(FORMAT(Count));
+  message(FORMAT(Count));
   if Count = 10 then
     break;
   end; 
