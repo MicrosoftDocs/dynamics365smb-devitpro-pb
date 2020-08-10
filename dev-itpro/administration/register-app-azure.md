@@ -77,9 +77,9 @@ After you register the application, the next task is to configure the Business C
 
     ![Setting the Azure Active Directory](../developer/media/set-up-azure-ad.png)
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
-3. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
-4. In the **Key** field, specify the value of the client secret used by the Business Central application in Azure AD.
-5. Choose **Next**. Unless you see an error message, you're now done.
+4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
+5. In the **Key** field, specify the value of the client secret used by the Business Central application in Azure AD.
+6. Choose **Next**. Unless you see an error message, you're now done.
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
