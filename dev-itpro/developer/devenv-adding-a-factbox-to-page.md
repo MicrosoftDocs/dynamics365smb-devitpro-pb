@@ -144,25 +144,25 @@ Below are some practical tips to help you make the most of this optimization:
  
 ### FAQ about performance
 
-#### Are any FactBox triggers executed when the FactBox is hidden?
-No. The trigger is only run once the FactBox is visible and within the user's view.
+#### Are any FactBox triggers run when the FactBox is hidden?
+No. The trigger is only run when the FactBox is visible and within the user's view.
 
-#### How often are triggers executed if the FactBox pane is expanded, collapsed and then expanded again?
-In this scenario, the `OnOpenPage` trigger is only run the first time. Once a FactBox is loaded, it is not loaded again for as long as the page remains open.
+#### How often are triggers run if the FactBox pane is expanded, collapsed, and then expanded again?
+In this scenario, the `OnOpenPage` trigger is only run the first time. Once a FactBox is loaded, it isn't loaded again for as long as the page remains open.
 
 #### Are FactBoxes processed asynchronously?
-No. This optimization is simply a controlled sequence in which triggers are executed, still within the same session as the hosting page. For more information about asynchronous processing in the background, see [Designing page parts for page background tasks](devenv-page-background-tasks#partpages).
+No. This optimization is simply a controlled sequence in which triggers are run, still within the same session as the hosting page. For more information about asynchronous processing in the background, see [Designing page parts for page background tasks](devenv-page-background-tasks.md#partpages).
 
-#### Does this work with SubPageLink or SubPageView properties?
+#### Does this optimization work with SubPageLink or SubPageView properties?
 The use of these properties has no effect on the sequence of loading content on a page. Using properties such as `SubPageView` is preferred to writing trigger code to update a FactBox.
 
-#### Does this optimization apply to parts that are not FactBoxes?
-This optimization does not apply to Role Center pages. When parts are used in the content area of a page, such as on a Card page, they are not loaded if their `Visible` property evaluates to `false`. 
+#### Does this optimization apply to parts that aren't FactBoxes?
+This optimization doesn't apply to Role Center pages. When parts are used in the content area of a page, such as on a Card page, they aren't loaded if their `Visible` property evaluates to `false`. 
 
 #### Can I force a FactBox to load along with page content?
-There is no AL API to force FactBoxes to load along with the content of the hosting page.
+There's no AL API to force FactBoxes to load along with the content of the hosting page.
 
-#### Can i set the FactBox pane to start collapsed on all pages?
+#### Can I set the FactBox pane to start collapsed on all pages?
 No. The default state of the FactBox pane is set by the [!INCLUDE[prodshort](includes/prodshort.md)] platform and modifed by the user.
 
 #### Does the experience vary on different browsers?
