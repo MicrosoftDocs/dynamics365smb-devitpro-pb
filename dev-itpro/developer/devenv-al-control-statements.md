@@ -1,32 +1,31 @@
 ---
 title: "AL Control Statements"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/08/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: cea1b445-58fe-4c4d-9843-7700e64bb46f
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
 # AL Control Statements
+
 AL code consists of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  
 
-- [AL Compound Statements](devenv-al-control-statements.md#al-compound-statements)
-- [AL Conditional Statements](devenv-al-control-statements.md#al-conditional-statements)
-- [AL Repetitive Statements](devenv-al-control-statements.md#al-repetitive-statements)
+- [AL Compound Statements](devenv-al-control-statements.md#al-compound-statements)  
+- [AL Conditional Statements](devenv-al-control-statements.md#al-conditional-statements)  
+- [AL Repetitive Statements](devenv-al-control-statements.md#al-repetitive-statements)  
 
 > [!NOTE]  
 > In the following sections conventions for how to structure and align AL code are presented to introduce best practices. In many cases the structure is not necessary to get the code to compile, but rather to improve readability.
 
 ## AL compound statements
 
-In some cases, the AL syntax only lets you use a single statement. However, if you have to execute more than one simple statement, the statements can be written as a compound statement by enclosing the statements between the begin and end keywords.  
+In some cases, the AL syntax only lets you use a single statement. However, if you have to execute more than one simple statement, the statements can be written as a compound statement by enclosing the statements between the `begin` and `end` keywords.  
 
 ```  
 begin  
@@ -40,6 +39,7 @@ end;
 The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not, as in other programming languages, as a terminator symbol for a statement. Nevertheless, an extra semicolon before an end does not cause an error because it is interpreted by the compiler as an empty statement.  
 
 ## Blocks  
+
 The begin-end structure is also called a *block*. Blocks can be very useful to refer to the other control structures in AL.  
 
 When begin follows then, else, or do, it should be on the same line and preceded by one space character.  
@@ -72,18 +72,18 @@ end;
 
 You use conditional statements to specify a condition and one or more commands to execute if the condition is evaluated as true or false. There are two types of conditional statements in AL:  
 
-- if-then-else, where there are two choices.  
+- if-then-else, where there are two choices  
+- case, where there are more than two choices  
 
-- case, where there are more than two choices.  
+### If-then else statements
 
-### If-then else statements  
 if-then-else statements have the following syntax.  
 
 ```  
 if <Condition> then  
   <Statement1>  
-else  
-  <Statement2>  
+[else  
+  <Statement2>]  
 ```  
 
 If *`<Condition>`* is true, then *`<Statement1>`* is executed. If *`<Condition>`* is false, then *`<Statement2>`* is executed.  
@@ -108,6 +108,7 @@ If *`<Condition1>`* is false, then nothing is executed. If *`<Condition1>`* and 
 Reading several nested if-then-else statements can be very confusing but generally, an else statement belongs to the last if statement that lacks an else statement.  
 
 #### Programming conventions  
+
 - If and then should be on the same line. else should be on a separate line.
 
 - If there are many or long expressions, then should be on a new line and be aligned with if.  
