@@ -3,7 +3,7 @@ title: "Register on-premises as an app in the Azure Management Portal"
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 07/29/2020
+ms.date: 08/10/2020
 ms.reviewer: na
 ms.service: "dynamics365-business-central"
 ms.topic: article
@@ -14,11 +14,6 @@ ms.topic: article
 > **APPLIES TO** [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is automatically configured for integration with other online services.
 
 This article describes how to set up [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Azure Active directory and give it access to the services. For example, the [Sales and Inventory Forecast](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
-
-<!--
-> [!NOTE]
-> In earlier versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], a **Azure AD Application Setup Wizard** guide has an action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. In the 16.4 update, this action is removed, and the guide is updated to make it easier to enter the information that you get manually from the Azure Management Portal.
--->
 
 > [!NOTE]
 > In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version earlier than 16.4, the **Set up Azure Active Directory** wizard has an **Auto register** action. Previously, you could use this action to automatically register [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure AD. The auto-register functionality has since been removed. Now, you must register the application manually, regardless of your version. The wizard in earlier versions still includes the **Auto register** link. But the link now opens this article, which guides you through the manual registration.
@@ -58,14 +53,6 @@ The first task is to use Azure portal to register an application for Business Ce
 
     1. Follow the general guidelines at [Add credentials to your web application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
-    <!--
-    1. From the application's **Overview** page, select **Certificates & secrets**, and then **New client secret**.
-    2. Specify a description and expiration option.
-    3. Select **Add** to generate the key.
-
-    4. Copy the key value to a temporary location. You'll use this key later in your client application code. The key isn't accessible once you leave the  **Certificates & secrets** page.
-    --> 
-
     2. Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
 
 3. Grant the registered application delegated permission to access the required service APIs, like Power BI.
@@ -79,46 +66,6 @@ The first task is to use Azure portal to register an application for Business Ce
     |Microsoft Graph / User.Read|Delegated|Sign in and read user profile|
     |Power BI Service / Report.Read.All|Delegated|View all reports|
 
-
-<!--temporary notice-->
-
-
-<!--
-## To register Business Central on-premises in the Azure Management Portal
-
-1. Log in to the Azure Management Portal at [https://portal.azure.com](https://portal.azure.com).
-    If you are not familiar with the Azure Management Portal, you can find guidance in the [Azure documentation library](https://docs.microsoft.com/azure/).
-2. In the left navigation pane, choose **More services**, and then choose **App registrations**.
-3. In the top menu, choose **Add**, and then, in the **Create pane**, fill in the fields with the following information:
-   - **Name**: Specify a name for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution, such as *Business Central on-premises*.
-   - **Application Type**: Choose **Web app\* \/ API**.
-   - **Sign-on URL**: Enter the URL for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] browser client, such as `https://MyServer:8080/BC160/WebClient/OAuthLanding.htm`.
-       The OAuthLanding.htm file is a file that helps manage the exchange of data between [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and other services through Azure AD.
-4. Choose the **Create** button.
-    This adds your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to the **App registrations pane**, so you can now add settings to it.
-5. In the **App registrations list**, choose your new app. If this does not open the **Settings** pane, you should see an action to open **Settings**.
-6. In the **Settings** pane, in the **API Access** section, choose **Keys**.
-7. In the **Keys** pane, specify a description and when you want to let the key expire, and then choose **Save**.
-8. Copy the generated key to a temporary location - you will need it in the next procedure.
-9. In the **API Access** section, choose **Required Permissions**.
-    - Add delegated permissions to view all reports to the Power BI Service
-    - Add delegated permissions to Sign In and read user profile to Windows Azure Active Directory
-    - Repeat for other services that you want to grant access to your Business Central on-premises solution
-10. Close the **Settings** pane, and then, in the **Essentials** pane, copy the value of the **Application ID** to a temporary location.
-
-You have now registered your Business Central on-premises solution in the Azure Management Portal, you have given access to the relevant services, and you have extracted the information that you need in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
-## To add the information to Business Central
-
-1. In the top right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Set Up Azure Active Directory**, and then choose the related link.
-2. In the wizard, choose **Next**.  
-3. In the **Client ID** field, specify the content that you copied from the **Application ID** field earlier.
-4. In the **Secret Key** field, specify the content that you copied from the **Keys** pane earlier.
-5. Choose **Next**. Unless you see an error message, you are now done.
-
-Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
--->
 ## Set up the registered application in Business Central
 
 After you register the application, the next task is to configure the Business Central tenant to use the application. You'll need the information about the application that you created in the previous task: redirect URL, application (client) ID, and client secret.
