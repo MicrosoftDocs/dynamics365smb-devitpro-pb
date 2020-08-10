@@ -533,12 +533,12 @@ break;
 
 ```  
 while Count < 1000 do
-  begin
-  Count := Count + 1;
-  message(FORMAT(Count));
-  if Count = 10 then
-    break;
-  end; 
+    begin
+    Count := Count + 1;
+    message(FORMAT(Count));
+    if Count = 10 then
+        break;
+    end; 
 end; 
  
 ```  
@@ -547,7 +547,7 @@ This example requires the following integer data type variable.
 
 ```  
 var  
-  I : integer
+    I : integer
 ```
 
 ## See Also
