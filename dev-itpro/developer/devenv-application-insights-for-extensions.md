@@ -20,8 +20,7 @@ This article describes how to develop an extension to send telemetry data to an 
 This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
 
 > [!NOTE]
-> This feature is not supported for AppSource extensions, because these extensions are automatically set up to send telemetry to Application Insights.  
-
+> This feature is not supported for AppSource extensions.  
 
 ## Get an Application Insights resource in Azure
 
