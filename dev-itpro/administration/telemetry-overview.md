@@ -30,7 +30,7 @@ It can also be enabled a per-extension basis. An Application Insights key is set
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
-|Area | Description |Online/On-premises|Extension|See more|
+|Area | Description |Online/On-premises|Extension support|See more|
 |-----|-------------|------------------|---------|--------|
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|No|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|No|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
