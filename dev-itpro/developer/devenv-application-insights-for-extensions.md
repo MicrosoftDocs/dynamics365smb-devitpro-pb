@@ -1,8 +1,8 @@
 ---
-title: Using Key Vault Secrets in Business Central Extensions 
-description: Describes how to use an Azure Key vault with Business Central extensions.
+title: Sending Extension Telemetry to Azure Application Insights 
+description: Describes how to configure an extension to send telemetry data to Azure Application Insights. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 12/08/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,28 +13,37 @@ author: jswymer
 
 # Sending Extension Telemetry to Azure Application Insights
 
-This article describes how to develop an extension to emit telemetry to an Application Insights resource in Azure. There are several operations  
+[!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-#### Using Application Insights
+This article describes how to develop an extension to send telemetry data to an Application Insights resource in Azure. [!INCLUDE[prodshort](includes/prodshort.md)] emits telemetry data for several operations that occur when extension code is run. You can configure an extension to send this telemetry data to an Application Insights resource on Microsoft Azure. For an overview about the telemetry with Application Insights, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
+
+This feature targets publishers of per-tenant extensions to get insight into issues in their extension before partners and customers report them.
+
+> [!NOTE]
+> This feature is not supported for AppSource extensions. AppSource extensions are automatically set up to send telemetry to Application Insights.  
 
 
+## Get an Application Insights resource in Azure
 
-1. Create an Application Insights resource in Azure if you don't have one.
+The first thing to do is to create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-    The Application Insights resource will be assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
+The Application Insights resource is assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
 
-    For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
+## Add the Application Insights Key to the extension's app.json
 
- ``` 
- "applicationInsightsKey": ["<instrumenation key>"] 
- ```
-3. Now, you can run your extensions and view data in Application Insights.
+The next step is to add `"applicationInsightsKey"`setting the extension's app.json as shown:
 
-   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+``` 
+"applicationInsightsKey": ["<instrumenation key>"] 
+```
+
+Replace `<instrumenation key>` with your key. 
+
+When done, build the extension package, then publish and install it as usual. When the extension is run from [!INCLUDE[prodshort](includes/prodshort.md)], Application Insights gathers the telemetry data for viewing.
 
 ## See Also  
 [Getting Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
-[Configuring Business Central Server](../administration/configure-server-instance.md) 
+[JSON Files](devenv-json-files.md)  
+[Viewing telemetry data in Application Insights](../administration/telemetry-overview.md)
