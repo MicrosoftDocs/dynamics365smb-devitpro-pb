@@ -16,25 +16,31 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities and operations on tenants. Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities and operations on tenants and extensions. Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview). Monitoring telemetry gives you a look at the activities and general health of your tenants. It helps you diagnose problems and analyze operations that affect performance.
 
-Monitoring telemetry gives you a look at the activities and general health of your tenants. It helps you diagnose problems and analyze operations that affect performance.
+
+## Service-level and extension-level telemetry
+
+Application Insights can be enabled on two different levels: service and extension. When enabled on the service, either for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data tenant-wide operations. 
+
+It can also be enabled a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to get insight into issues in their extension before partners and customers report them.
+
 
 ## Available telemetry
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
-|Area | Description |Online/On-premises|See more|
-|----------|-------------|-----------------|--------|
-|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
-|Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
-|Database lock timeouts|Provides information about database locks that have timed out. |Both|[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|
-|Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|Both|[Analyzing Extension Lifecycle Telemetry](telemetry-extension-lifecycle-trace.md) |
-|Extension update|Provides information about errors that occur when upgrading an extension.|Both|[Analyzing Extension Upgrade Telemetry](telemetry-extension-update-trace.md) |
-|Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
-|Page views|Provides information about the pages that users open in the modern client.|Online|[Analyzing Page View Telemetry](telemetry-page-view-trace.md)|
-|Report generation|Provides information about the execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
-|Web service requests|Provides information about the execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
+|Area | Description |Online/On-premises|Extension|See more|
+|-----|-------------|------------------|---------|--------|
+|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|No|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
+|Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|No|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
+|Database lock timeouts|Provides information about database locks that have timed out. |Both|No|[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|
+|Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|Both|No|[Analyzing Extension Lifecycle Telemetry](telemetry-extension-lifecycle-trace.md) |
+|Extension update|Provides information about errors that occur when upgrading an extension.|Both|Yes|[Analyzing Extension Upgrade Telemetry](telemetry-extension-update-trace.md) |
+|Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|Both|Yes|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
+|Page views|Provides information about the pages that users open in the modern client.|Online|No|[Analyzing Page View Telemetry](telemetry-page-view-trace.md)|
+|Report generation|Provides information about the execution of reports.|Both|Yes|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
+|Web service requests|Provides information about the execution time of web service requests.|Both|Yes|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
 ## Enabling Application Insights
 
@@ -44,7 +50,7 @@ Sending telemetry data to Application Insights requires you have an Application 
 
 - For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).
 
-- 
+- For extensions, see []
 ## Viewing telemetry data in Application Insights
 
 Telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is stored in Azure Monitor Logs in the *traces* table. You can view collected data by writing log queries. Log queries are written in the Kusto query language (KQL). For more information, see [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
