@@ -26,8 +26,7 @@ This feature targets publishers of per-tenant extensions to give them insight in
 
 The first thing to do is to create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-The Application Insights resource is assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
-
+The Application Insights resource is assigned an instrumentation key, which you can see on the **Overview** page for the resource in Azure. Copy this key because you'll need it to enable Application Insights in the extension.
 
 ## Add the Application Insights Key to the extension's app.json
 
