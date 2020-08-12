@@ -22,7 +22,7 @@ ms.author: jswymer
 
 Application Insights can be enabled on two different levels: tenant and extension. When enabled on the tenant, either for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data on tenant-wide operations. 
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 and later, Application Insights can also be enabled a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to get insight into issues in their extension before partners and customers report them.
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 and later, Application Insights can also be enabled on a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
 
 ## Available telemetry
 
