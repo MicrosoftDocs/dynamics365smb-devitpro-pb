@@ -1,59 +1,42 @@
 ---
-# required metadata
-
-title: Finance and Operations and Common Data Service admin reference
-description: This topic covers set up and configuration of virtual entities for Finance and Operations.
-author: Sunil-Garg
-manager: AnnBe
-ms.date: 07/13/2020
+title: "Business Central and Common Data Service admin reference"
+ms.custom: na
+ms.date: 08/12/2020
+ms.reviewer: solsen
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.search.region: Global
-# ms.search.industry:
-ms.author: sunilg
-ms.search.validFrom: 2020-05-31
-ms.dyn365.ops.version: 10.0.12
+ms.service: "dynamics365-business-central"
+author: solsen
 ---
 
-# Finance and Operations and Common Data Service admin reference
+# Business Central and Common Data Service admin reference
 [!include[banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires [Platform updates for version 10.0.12 of Finance and Operations apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires [Platform updates for version 10.0.12 of Business Central apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
+This topic provides step-by-step instructions about how to set up and configure virtual entities for Business Central apps in Common Data Service.
 
 ## Getting the solution
-The Common Data Service solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
+The Common Data Service solution for Business Central virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Business Central virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
 Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
 
-- **Dynamics365Company** - This adds the **Company** entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
+- **Dynamics365Company** - This adds the **Company** entity, which is referenced by all Business Central entities with a PrimaryCompanyContext metadata value.
 
-- **MicrosoftOperationsVESupport** - This provides the core support for the Finance and Operations virtual entity feature.
+- **MicrosoftOperationsVESupport** - This provides the core support for the Business Central virtual entity feature.
 
-- **MicrosoftOperationsERPCatalog** - This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity virtual entity.
+- **MicrosoftOperationsERPCatalog** - This provides a list of available Business Central entities through the mserp_financeandoperationsentity virtual entity.
 
 - **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
 
 ## Authentication and authorization
 
-After the solutions are imported in the Common Data Service environment, both environments must be set up to connect to each other. Common Data Service will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Common Data Service environment. If you have multiple pairs of Common Data Service and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Common Data Service environments. The following procedure shows the creation of the AAD application.
+After the solutions are imported in the Common Data Service environment, both environments must be set up to connect to each other. Common Data Service will call Business Central using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Common Data Service environment. If you have multiple pairs of Common Data Service and Business Central environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Business Central and Common Data Service environments. The following procedure shows the creation of the AAD application.
 
 > [!IMPORTANT]
-> The AAD application must be created on the same tenant as Finance and Operations.
+> The AAD application must be created on the same tenant as Business Central.
 
 1.  Go to <https://portal.azure.com> **\> Azure Active Directory \> App registrations**.
 
@@ -79,11 +62,11 @@ After the solutions are imported in the Common Data Service environment, both en
 
     - Select **Save**. A key will be created and displayed. Copy this value for later use.
 
-The AAD application created above will be used by Common Data Service to call Finance and Operations apps. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Finance and Operations environment and access the virtual entity functionality.
+The AAD application created above will be used by Common Data Service to call Business Central apps. As such, it must be trusted by Business Central and associated with a user account with the appropriate rights in Business Central. A special service user must be created in Business Central with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Business Central environment and access the virtual entity functionality.
 
-The next steps walk through this process in Finance and Operations apps.
+The next steps walk through this process in Business Central apps.
 
-1.  In Finance and Operations, go to **System Administration \> Users \> Users**.
+1.  In Business Central, go to **System Administration \> Users \> Users**.
 
 2.  Select **New** to add a new user. Enter the following information:
 
@@ -109,15 +92,15 @@ The next steps walk through this process in Finance and Operations apps.
 
     - **User ID** - The user ID created above.
 
-The next step in the process is to provide Common Data Service with the Finance and Operations instance to connect to. The following steps walk through this part of the process.
+The next step in the process is to provide Common Data Service with the Business Central instance to connect to. The following steps walk through this part of the process.
 
 1.  In Common Data Service, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
 
-2.  Select the data source named “Finance and Operations”.
+2.  Select the data source named “Business Central”.
 
 3.  Fill in the information from the steps above.
 
-    - **Target URL** - The URL at which you can access Finance and Operations.
+    - **Target URL** - The URL at which you can access Business Central.
 
     - **OAuth URL** - https://login.windows.net/
 
@@ -127,17 +110,17 @@ The next step in the process is to provide Common Data Service with the Finance 
 
     - **AAD Application Secret** - The secret generated above.
 
-    - **AAD Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the AAD application representing Finance and Operations, and should always be this same value).
+    - **AAD Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the AAD application representing Business Central, and should always be this same value).
 
 4.  Save the changes.
 
 ## Enabling virtual entities
 
-Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
+Due to the large number of OData enabled entities available in Business Central, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
 
 1. In Common Data Service, go to **Advanced find**.
 
-2. Look for “Available Finance and Operations Entities” and select **Results**.
+2. Look for “Available Business Central Entities” and select **Results**.
 
 ![Catalog](../media/fovecatalog.png)
 
@@ -149,7 +132,7 @@ Due to the large number of OData enabled entities available in Finance and Opera
 
 ## Refreshing virtual entity metadata
 
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by setting **Refresh** to **Yes** and saving. This will sync the latest entity definition from Finance and Operations to Common Data Service and update the virtual entity.
+The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Business Central to have changed. This can be done by setting **Refresh** to **Yes** and saving. This will sync the latest entity definition from Business Central to Common Data Service and update the virtual entity.
 
 Referencing virtual entities
 ----------------------------
