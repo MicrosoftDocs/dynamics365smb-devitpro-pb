@@ -18,13 +18,11 @@ ms.author: jswymer
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits telemetry data for various activities and operations on tenants and extensions. Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview). Monitoring telemetry gives you a look at the activities and general health of your tenants. It helps you diagnose problems and analyze operations that affect performance.
 
-
 ## Service-level and extension-level telemetry
 
-Application Insights can be enabled on two different levels: service and extension. When enabled on the service, either for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data tenant-wide operations. 
+Application Insights can be enabled on two different levels: service and extension. When enabled on the service, either for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data on tenant-wide operations. 
 
-It can also be enabled a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to get insight into issues in their extension before partners and customers report them.
-
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 and later, Application Insights can also be enabled a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to get insight into issues in their extension before partners and customers report them.
 
 ## Available telemetry
 
