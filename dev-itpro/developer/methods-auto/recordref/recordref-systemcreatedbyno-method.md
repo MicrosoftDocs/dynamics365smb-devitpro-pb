@@ -1,5 +1,5 @@
 ---
-title: "CountApprox Method"
+title: "SystemCreatedByNo Method"
 ms.author: solsen
 ms.custom: na
 ms.date: 08/12/2020
@@ -13,13 +13,13 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CountApprox Method
-Gets an approximate count of the number of records in the table
+# SystemCreatedByNo Method
+Gets the field number that is used by the SystemCreatedBy field. The SystemCreatedBy field is a system field that the platform adds to all table objects.
 
 
 ## Syntax
 ```
-Number :=   RecordRef.CountApprox()
+SystemCreatedByFieldNo :=   RecordRef.SystemCreatedByNo()
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
@@ -30,13 +30,13 @@ Number :=   RecordRef.CountApprox()
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 ## Return Value
-*Number*  
+*SystemCreatedByFieldNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Approximate number of records in the table.  
+The field number of the SystemCreatedBy field.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)
