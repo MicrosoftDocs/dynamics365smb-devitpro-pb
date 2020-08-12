@@ -17,8 +17,10 @@ author: jswymer
 
 This article describes how to develop an extension to send telemetry data to an Azure Application Insights for monitoring and analyzing. [!INCLUDE[prodshort](includes/prodshort.md)] emits telemetry data for several operations that occur when extension code is run. You can configure an extension to send this telemetry data to a specific Application Insights resource on Microsoft Azure. For an overview about the telemetry with Application Insights, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
+This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
+
 > [!NOTE]
-> This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them. This feature is not supported for AppSource extensions, because these extensions are automatically set up to send telemetry to Application Insights.  
+> This feature is not supported for AppSource extensions, because these extensions are automatically set up to send telemetry to Application Insights.  
 
 
 ## Get an Application Insights resource in Azure
@@ -30,7 +32,7 @@ The Application Insights resource is assigned an instrumentation key. Copy this 
 
 ## Add the Application Insights Key to the extension's app.json
 
-The next step is to add `"applicationInsightsKey"`setting the extension's app.json as shown:
+The next step is to add the `"applicationInsightsKey"`setting the extension's app.json as shown:
 
 ``` 
 "applicationInsightsKey": ["<instrumenation key>"] 
