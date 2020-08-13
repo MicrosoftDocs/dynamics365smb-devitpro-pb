@@ -1,5 +1,5 @@
 ---
-title: "[!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities FAQ"
+title: "Business Central virtual entities FAQ"
 ms.custom: na
 ms.date: 08/12/2020
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities FAQ
+# Business Central Virtual Entities FAQ
 
 [!include[banner](../includes/banner.md)]
 

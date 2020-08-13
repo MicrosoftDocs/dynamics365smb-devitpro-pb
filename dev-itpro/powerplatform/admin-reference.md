@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Business Central and Common Data Service admin reference
+# Business Central and Common Data Service Admin Reference
 
 [!include[banner](../includes/banner.md)]
 

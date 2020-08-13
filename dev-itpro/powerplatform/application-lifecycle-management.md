@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Application lifecycle management for solutions that use virtual entities
+# Application Lifecycle Management for Solutions that use Virtual Entities
 
 [!include[banner](../includes/banner.md)]
 

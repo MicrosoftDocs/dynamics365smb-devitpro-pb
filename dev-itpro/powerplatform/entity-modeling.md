@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Entity modeling
+# Entity Modeling
 
 [!include[banner](../includes/banner.md)]
 
@@ -23,7 +23,7 @@ Building an app requires capabilities to perform relational modeling between ent
 
 ## Generating virtual entities
 
-By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps don't exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
+By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
 

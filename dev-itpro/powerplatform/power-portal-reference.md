@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Power Apps portals with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+# Power Apps Portals with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 [!include[banner](../includes/banner.md)]
 
