@@ -55,6 +55,6 @@ One or more ISV solutions will take a dependency on the MicrosoftOperationsERPVE
 
 The established guidelines and ALM for entity development in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] ensure that there are no conflicting entity names across ISV solutions. Therefore, no conflicts of this type can occur when virtual entities are generated in Common Data Service for custom [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities from multiple ISV solutions. All virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities, including custom entities, will have the "mserp\_" prefix that was mentioned earlier.
 
-### Managing a Finance and Operation instance in a Common Data Service environment for virtual entities
+### Managing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance in a Common Data Service environment for virtual entities
 
 One [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance must be linked to a Common Data Service environment for virtual entities. The connection setup information that is required is captured in a virtual entity data source for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This data source is included in the MicrosoftOperationsERPCatalog solution.
