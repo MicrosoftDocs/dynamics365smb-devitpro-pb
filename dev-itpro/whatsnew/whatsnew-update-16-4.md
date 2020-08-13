@@ -13,13 +13,13 @@ author: ManuelaHochstrasser
 
 # Update 16.4 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
 
-Would you like to know what has changed in update 16.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 16.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links that you might find interesting.
 
-[Jump right to downloading update 16.3](https://www.microsoft.com/download/details.aspx?id=101461).
+[Jump right to downloading update 16.4](https://www.microsoft.com/download/details.aspx?id=101461).
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4563415/update-16-4-for-microsoft-dynamics-365-business-central-2020-release-w).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4563415).
 
 ## Release Plan
 
