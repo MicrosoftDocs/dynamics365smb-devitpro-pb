@@ -14,7 +14,7 @@ author: ManuelaHochstrasser
 # Update 16.3 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
 
 Would you like to know what has changed in update 16.3?
-Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.  
+Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting. 
 
 ## Hotfixes
 
@@ -45,5 +45,5 @@ In between the Microsoft Dynamics 365 Business Central minor updates we deploy n
 Visit [aka.ms/bcperformance](https://aka.ms/bcperformance) 
 and learn about best practices, dos and don'ts and different ways to make changes with a performance impact. The Performance Tuning Guide will help you understand and improve the performance of Business Central whether you are a functional consultant, a developer, or an administrator. 
 
-**Are you a Business Central Wave ‘Champ’?**  
-Did you attend the #MSDyn365BCVirtualEvent on June 3rd? Don’t forget to watch the 15+ virtual on demand sessions featuring new innovations, tools, and in-depth product demonstrations from the experts. The best part of it - it’s all for free! You just need to [register](https://aka.ms/virtual/businesscentral/2020RW1) to become a Business Central ‘Wave Champ’ and boost your knowledge.  
+**Are you a Business Central Wave 'Champ'?**  
+Did you attend the #MSDyn365BCVirtualEvent on June 3rd? Don't forget to watch the 15+ virtual on demand sessions featuring new innovations, tools, and in-depth product demonstrations from the experts. The best part of it - it's all for free! You just need to [register](https://aka.ms/virtual/businesscentral/2020RW1) to become a Business Central 'Wave Champ' and boost your knowledge.  
