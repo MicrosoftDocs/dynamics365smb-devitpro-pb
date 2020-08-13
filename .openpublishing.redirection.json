@@ -5209,6 +5209,11 @@
     "source_path": "dev-itpro/developer/readiness/readiness-develop-your-app.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0010-repeatersingroupsnotsupportedinlistpages.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
    }
   ]
 }
