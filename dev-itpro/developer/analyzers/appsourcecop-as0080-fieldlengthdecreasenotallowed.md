@@ -1,5 +1,5 @@
 ---
-title: "Unsupported table property change"
+title: "Fields must not decrease in length"
 ms.author: solsen
 ms.custom: na
 ms.date: 08/13/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0034
-Unsupported table property change  
+# AppSourceCop Rule AS0080
+Fields must not decrease in length  
 
 ## Description
-Modifying table properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions.
+Field length changes can only be increasing. If the field part of the primary key, the field length cannot change.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

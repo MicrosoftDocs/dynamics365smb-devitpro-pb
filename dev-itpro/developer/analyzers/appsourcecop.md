@@ -2,7 +2,7 @@
 title: "AppSourceCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 08/13/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -90,6 +90,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0077](appsourcecop-as0077-addingvarparamatermodifierinevent.md)|Adding a var modifier in events is not allowed|Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it.|A var modifier has been added on the parameter '{0}' in the event '{1}'. This might break the runtime behavior of dependent extensions subscribing to this event.|Upgrade|Warning|true|
 |[AS0078](appsourcecop-as0078-changingvarparamatermodifier.md)|Adding or removing a var modifier in external procedures is not allowed|Adding or removing a var modifier in public procedures is not allowed as it might break the runtime behavior of extensions calling it.|A var modifier has been added or removed on the parameter '{0}' in the procedure '{1}'. This might break the runtime behavior of dependent extensions calling this procedure.|Upgrade|Warning|true|
 |[AS0079](appsourcecop-as0079-extensionproceduresmusthaveaffix.md)|An affix is required for procedures defined in extension objects.|An affix is required for procedures defined in extension objects, because it prevents breaking dependent extensions that reference it in case a procedure with the same signature is introduced by the base object or by another extension.|The procedure '{0}' in {1} '{2}' must have at least one of the mandatory affixes '{3}' to prevent breaking dependent extensions that reference it in case a procedure with the same signature is introduced by the base object or by another extension.|Extensibility|Warning|true|
+|[AS0080](appsourcecop-as0080-fieldlengthdecreasenotallowed.md)|Fields must not decrease in length|Field length changes can only be increasing. If the field part of the primary key, the field length cannot change.|Field '{0}' has changed from '{1}' to '{2}' in table or table extension '{3}'. Decreasing the field length of any field is not allowed. For fields used in the primary key, increasing the length is also not allowed.|Upgrade|Error|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
