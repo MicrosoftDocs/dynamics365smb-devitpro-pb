@@ -2,7 +2,7 @@
 title: "Next Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 08/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,8 @@ An instance of the [Record](record-data-type.md) data type.
 *Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the direction of the search and how many records to step over. This parameter follows the following rules:
--   > 0  Search Steps records forward in the table.
--   < 0  Search Steps records backward in the table.
+-   \> 0  Search Steps records forward in the table.
+-   \< 0  Search Steps records backward in the table.
 -   = 0  Stay on the same record in the table.
 If you do not specify this parameter, then the next record is found.
           

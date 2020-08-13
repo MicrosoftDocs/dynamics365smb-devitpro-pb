@@ -2,7 +2,7 @@
 title: "SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ The name of the column in the query that you want to filter. The name is defined
         
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, >, \, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
+The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
         
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

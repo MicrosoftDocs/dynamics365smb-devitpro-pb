@@ -2,7 +2,7 @@
 title: "Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Specifies the XmlPort to run.
         
 *RequestWindow*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specify true to show request page; specify false to run the report and skip the request page. This parameter overrides the setting of the UseRequestPage Property of the XMLPort. If you do not provide a value for the RequestWindow parameter, then the setting of the UseRequestPage property is used. > Web client does not support request pages with XmlPorts. If the XMLPort will appear in the web client, you should set the value to false; otherwise, you will get an error at runtime.
+Specify true to show request page; specify false to run the report and skip the request page. This parameter overrides the setting of the UseRequestPage Property of the XMLPort. If you do not provide a value for the RequestWindow parameter, then the setting of the UseRequestPage property is used. \> Web client does not support request pages with XmlPorts. If the XMLPort will appear in the web client, you should set the value to false; otherwise, you will get an error at runtime.
           
 *Import*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
