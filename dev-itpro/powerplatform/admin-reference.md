@@ -1,5 +1,5 @@
 ---
-title: "[!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service admin reference"
+title: "Business Central and Common Data Service admin reference"
 ms.custom: na
 ms.date: 08/12/2020
 ms.reviewer: solsen
@@ -10,7 +10,8 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service admin reference
+# Business Central and Common Data Service admin reference
+
 [!include[banner](../includes/banner.md)]
 
 > [!IMPORTANT]
