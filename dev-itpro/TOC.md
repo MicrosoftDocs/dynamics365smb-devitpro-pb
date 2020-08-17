@@ -16,7 +16,7 @@
 ## Roles
 ### Functional consultant
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Documentation]((/dynamics365/business-central/product-get-started?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Documentation](/dynamics365/business-central/product-get-started?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### Developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
