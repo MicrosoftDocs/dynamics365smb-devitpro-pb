@@ -2,7 +2,7 @@
 title: Sending Extension Telemetry to Azure Application Insights 
 description: Describes how to configure an extension to send telemetry data to Azure Application Insights. 
 ms.custom: na
-ms.date: 12/08/2020
+ms.date: 08/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,4 +44,5 @@ When done, build the extension package, then publish and install it as usual. Wh
 [Getting Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
 [JSON Files](devenv-json-files.md)  
-[Viewing telemetry data in Application Insights](../administration/telemetry-overview.md)
+[Viewing telemetry data in Application Insights](../administration/telemetry-overview.md)  
+[LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
