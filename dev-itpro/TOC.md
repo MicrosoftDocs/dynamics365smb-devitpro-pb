@@ -118,6 +118,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
 ### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
 ### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
 ### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
@@ -754,7 +755,7 @@
 #### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
-<!--### [Registering Your Deployment on Azure](administration/register-app-azure.md)-->
+### [Registering Your Deployment on Azure](administration/register-app-azure.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end administration -->
 <!-- upgrade -->
