@@ -1,6 +1,6 @@
 ﻿# Get Started
-## [Development and Administration](index.md)
-## [FAQ](faq.md)
+## [Get started with development and administration](index.md)
+## [Frequently asked questions](faq.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical Support](technical-support.md)
@@ -13,51 +13,50 @@
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
-<!--Learn-->
-## Training and Readiness
-### Learning Catalogs
-#### [Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Business Decision Maker Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-decision-makers?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Business User Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-users?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Developer Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Functional Consultant Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
-<!--Ready2Go-->
-### Readiness
-#### [Build Your Business on Dynamics 365 Business Central](developer/readiness/readiness-welcome.md)
-#### [Resell Different Solutions](developer/readiness/readiness-reseller.md)
-#### [Integrate a 3rd Party Solution](developer/readiness/readiness-thirdparty-solution.md)
-#### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
-#### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
-#### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
-## Sell Business Central
-### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-## Build apps for Business Central
+## Roles
+### Functional consultant
+#### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Documentation]((/dynamics365/business-central/product-get-started?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### Developer
+#### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Documentation](developer/devenv-dev-overview.md)
+### Solution architect
+#### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Documentation](administration/tenant-administration.md)
+## Readiness
+### Sell
+#### [Become a Reseller](/dynamics365/business-central/product-sell?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+#### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### Develop
+#### [Extending Business Central](/dynamics365/business-central/about-develop-extensions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!--#### What the partner's responsibilities are -->
 <!--#### How Microsoft runs the service -->
-### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
-### [Components and Capabilities](deployment/app-components.md)
-### [Licensing](deployment/licensing.md)
-### [Add your App to AppSource](administration/appsource.md)
-### Embed Apps
-#### [Embed App Overview](deployment/embed-app-overview.md)
-#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
-#### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-#### [Using Application Family](deployment/embed-app-using-application-family.md)
-####  App Management
-##### [Introduction](administration/appmanagement/app-management-overview.md)
-##### [App Management API](administration/appmanagement/app-management-api.md)
+#### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
+#### [Components and Capabilities](deployment/app-components.md)
+#### [Licensing](deployment/licensing.md)
+#### [Add your App to AppSource](administration/appsource.md)
+#### Get started with building apps
+##### [Overview](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+##### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
+##### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
+##### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
+#### Embed Apps
+##### [Embed App Overview](deployment/embed-app-overview.md)
+##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+##### [Using Application Family](deployment/embed-app-using-application-family.md)
+##### App Management
+###### [Introduction](administration/appmanagement/app-management-overview.md)
+###### [App Management API](administration/appmanagement/app-management-api.md)
 <!--AppSourcevalidation-->
-### AppSource Validation
-#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
-#### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
-#### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
-#### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-#### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+#### AppSource Validation
+##### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+##### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
+##### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
+##### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+##### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 <!-- administration-->
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
