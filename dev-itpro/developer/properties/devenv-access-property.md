@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[2019_releasewave2.md](../../includes/2019_releasewave2.md)]
 
-The `Access` property is an access modifier which allows controlling the accessibility level of methods and objects. If the `Access` property is not specified, the default is `Public`.
+Sets the object accessibility level, which controls whether the object can be used from other code in your module or other modules. If the `Access` property is not specified, the default is `Public`.
 
 > [!NOTE]  
 > This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection based mechanisms such as RecordRef. 
