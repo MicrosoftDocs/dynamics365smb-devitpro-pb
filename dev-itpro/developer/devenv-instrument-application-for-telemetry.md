@@ -11,9 +11,11 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Instrumenting an Application for Telemetry
+
 This article describes how you can implement custom telemetry trace events in your application for collecting telemetry data. This data can then be collected and visualized for analyzing the application against the desired business goals, troubleshooting, and more.
 
 ## Telemetry overview
+
 One aspect of event logging is collecting data about how the application and your deployment infrastructure is working in order to diagnose conditions and troubleshoot problems that affect operation and performance. For example, this type of event logging includes [!INCLUDE[nav_server_md](includes/server.md)] events and trace events like SQL and AL method (function) traces.
 
 Another aspect of event logging is *telemetry*, which is collecting data about how your application functions and how it is being used in production. Telemetry can tell you about specific activities that users perform within the application in the production environment. Telemetry is also a useful tool for troubleshooting, especially instances where you are not able to reproduce the conditions experienced by the user or have no access to the user's environment. Telemetry can be divided into different levels or categories, like: telemetry for engineering, telemetry about the business, telemetry for customers.
