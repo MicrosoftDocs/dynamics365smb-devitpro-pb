@@ -105,7 +105,7 @@ When you try to connect, you get a message similar to the following:
 To fix this issue, verify that the **Reply URL** in the Setup Azure AD page is correct. It must match the Reply URL set on the registered app in Azure AD.
 
 ## See Also
-[Enabling Your Business Data for Power BI](/dynamics365/business-central/admin-powerbi)  
+[Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
