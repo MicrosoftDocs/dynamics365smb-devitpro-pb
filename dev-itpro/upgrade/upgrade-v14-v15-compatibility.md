@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 You can upgrade [!INCLUDE[prod short](../developer/includes/prodshort.md)] Spring 2019 (version 14) directly to 2019 release wave 2 (version 15) or to 2020 release wave 1 (version 16). And, of course, you can upgrade 2019 release wave 2 directly to 2020 release wave 1 (version 16). For an overview of the supported paths, see [Supported Upgrade Paths](upgrade-paths.md).
 
-However, minor updates are regularly made available for each major release, like 14.1 or 15.2. When upgrading, it's important you target an update version is compatible with your current version.
+However, minor updates are regularly made available for each major release, like 14.1 or 15.2. When upgrading, it's important to target an update version that's compatible with your current version.
 
 ## Version 14 compatibility
 
