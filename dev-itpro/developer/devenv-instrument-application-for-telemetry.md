@@ -27,9 +27,9 @@ There are two different resources where telemetry trace events can be sent for m
 |Reource|Description|Online|On-premises|More information|
 |-----------|-----------|------|-----------|----------------|
 |Event log| Create custom telemetry trace events that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace events by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.||![check](media/check.png)|[See...](devenv-instrument-application-for-telemetry-event-log.md)|
-|Application Insights|Create custom telemetry events that are sent to an Application Insights resource in Azure. [Application Insights?](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. Extension developers can specify whether the signal is sent to the extension publisher or VAR partner telemetry resource.<br /><br />You create these custom trace events by using the [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md) or [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md) in code.|![check](media/check.png)|![check](media/check.png)|
+|Application Insights|Create custom telemetry events that are sent to an Application Insights resource in Azure. [Application Insights?](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. Extension developers can specify whether the signal is sent to the extension publisher or VAR partner telemetry resource.<br /><br />You create these custom trace events by using the [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md) or [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md) in code.|![check](media/check.png)|![check](media/check.png)|[See...](devenv-instrument-application-for-telemetry-app-insights.md)|
 
-
+<!--
 ### Creating custom telemetry events for the Event Log
 
 If you have a [!INCLUDE[server](includes/server.md)] on-premises environment, you can create custom telemetry trace events that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace events by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.
@@ -37,7 +37,7 @@ If you have a [!INCLUDE[server](includes/server.md)] on-premises environment, yo
 ### Creating custom telemetry events for the Application Insights
 
 Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can create custom telemetry events that are sent Application Insights. [Application Insights?](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. This is the recommended way for custom trace events going forward.
-
+-->
 <!--
 
 ## Creating custom telemetry events

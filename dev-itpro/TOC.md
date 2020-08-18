@@ -335,7 +335,10 @@
 ### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
-## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
+## Instrumenting for Telemetry
+### [Overview](developer/devenv-instrument-application-for-telemetry.md)
+### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
+### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
