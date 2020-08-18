@@ -18,7 +18,7 @@ This article explains how to create custom telemetry trace events in AL code tha
 
 ## Overview
 
-
+Business Central c
 
 ## Create custom telemetry events
 
@@ -32,13 +32,13 @@ Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataC
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 
-Use the parameters to define the information about the telemetry trace event. This information is then consumed by Application Insights. 
+Use the parameters to build dimension that will show for the event trace in Application Insights.
 
-|Parameter|Description|
-|---------|-----------|
-|EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique from these telemetry event tags by, for example, using at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|
-|Message|A text string that specifies the descriptive message for the telemetry trace event.|
-|Verbosity|An enumeration that specifies the severity level of the telemetry trace event. The value can be Critical, Error, Warning, Normal, or Verbose. This severity level can be used by [!INCLUDE[server](includes/server.md)] to filter out lower-level telemetry trace events from being emitted. See [Viewing and collecting telemetry data](devenv-instrument-application-for-telemetry.md#ViewTelemetry). |
+|Parameter|Description|Dimension in Application Insights|
+|---------|-----------|---------------------------------|
+|EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique from these telemetry event tags by, for example, using at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
+|Message|A text string that specifies the descriptive message for the telemetry trace event.|message|
+|Verbosity|An enumeration that specifies the severity level of the telemetry trace event. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal`|
 |DataClassification|A DataClassification data type that assigns a classification to the telemetry trace event. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|
 |TelemetryScope|Scope of emitting the telemetry. There are two values: `all` and  |
 |CustomDimensions|A dictionary of text that defines the custom dimensions for the trace event in Application Insights.|
@@ -47,18 +47,18 @@ Use the parameters to define the information about the telemetry trace event. Th
 |Dimension2|The name of the custom dimension.|
 |Value2|The value of Dimension2.|
 
-
 For example, the following code creates simple telemetry trace events for the five different severity levels. 
 
 ```  
-SENDTRACETAG('Cronus-0001', 'Action', VERBOSITY::Critical, 'This is a critical message.', DATACLASSIFICATION::CustomerContent);
-SENDTRACETAG('Cronus-0002', 'Action', VERBOSITY::Error, 'This is an error message.',  DATACLASSIFICATION::EndUserIdentifiableInformation);
-SENDTRACETAG('Cronus-0003', 'Action', VERBOSITY::Warning, 'This is a warning message.', DATACLASSIFICATION::AccountData);
-SENDTRACETAG('Cronus-0004', 'Action', VERBOSITY::Normal, 'This is an informational message.', DATACLASSIFICATION::OrganizationIdentifiableInformation);
-SENDTRACETAG('Cronus-0005', 'Action', VERBOSITY::Verbose, 'This is a verbose message.', DATACLASSIFICATION::SystemMetadata);
+LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+LogMessage('MyExt-0002', 'This is an error message', Verbosity::Error, DATACLASSIFICATION::EndUserIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'error in code');
+LogMessage('MyExt-0003', 'This is an warning message', Verbosity::Warning, DATACLASSIFICATION::AccountData, TelemetryScope::ExtensionPublisher, 'result', 'succeeded', 'reason', 'warning in code');
+LogMessage('MyExt-0004', 'This is an error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
+LogMessage('MyExt-0005', 'This is an verbose message', Verbosity::Verbose, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
 ```  
 
 For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or functions as well.
+
 ## See Also
 
 [Instrumenting an Application for Telemetry](devenv-instrument-application-for-telemetry.md)  
