@@ -12,6 +12,8 @@ author: jswymer
 ---
 # Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
 
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
 This article describes how to code an extension to retrieve secrets from Azure Key Vaults. Secrets are typically used when the extensions calls a web service. For an overview of app key vaults and secrets, see [Using App Key Vaults with Extensions](devenv-app-key-vault-overview.md).
 
 Developing an extension to use secrets from a key vault involves two tasks, as described in this article:

@@ -12,6 +12,8 @@ author: jswymer
 ---
 # Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
 
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
 AppsSource apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be developed to get secrets from Azure Keys Vaults. The app key feature is readily available for use on the service by all App Source apps. However, there are some onboarding tasks required. 
 
 ## Create the Azure Key Vault with secrets
