@@ -55,6 +55,15 @@ Custom dimension value.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```
+trigger OnRun();
+begin
+    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+end;
+```
 ## See Also
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

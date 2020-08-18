@@ -1,6 +1,6 @@
 ---
 title: Creating custom telemetry events for the Event Log
-description: This topic describes how to add code to application objects that enables you to gather telemetry.
+description: This article describes how to add code to application objects that enables you to gather telemetry.
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -14,15 +14,24 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-This article explains how to create custom telemetry trace events in AL code that will be sent to Application Insights. 
+This article explains how to develop extensions to send custom telemetry trace events to Azure Application Insights for viewing and analyzing.
 
 ## Overview
 
+You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up in beforehand. 
 
+## Set up application Insights 
+
+The Application Insights resource must be set up beforehand in one or both of the following places:
+
+- The app.json file of the extension.
+- On the [!INCLUDE[server](includes/server.md)] instance.
 
 ## Create custom telemetry events
 
-To create a custom telemetry event, you use a LOGMESSAGE method in code where you want to trigger the event. There are two variations of the LOGMESSAGE method. The difference is that one method uses a dictionary object to define custom dimensions for the trace event. The other method includes two overloads so you don't have to construct a dictionary. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
+To create a custom telemetry event, use a LOGMESSAGE method in AL code where you want to trigger the event. The LOGMESSAGE method defines the information that is sent to Application Insights for a specific operation or activity.
+
+There are two variations of the LOGMESSAGE method. The difference is that one method uses a dictionary object to define custom dimensions for the trace event. The other method includes two overloads so you don't have to construct a dictionary. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
 
 With dictionary:
 ```
@@ -59,9 +68,8 @@ var
     CustDimension: Dictionary of [Text, Text];
 begin
     CustDimension.Add('result', 'failed');
-    CustDimension.Add('reason', 'error in code');
-    LogMessage('MyExt-0002', 'This is an informational message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
-
+    CustDimension.Add('reason', 'critical error in code');
+    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
 end;
 ```
 
@@ -69,13 +77,12 @@ end;
 
 ```
 trigger OnRun();
-var
-    CustDimension: Dictionary of [Text, Text];
 begin
-    LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
 end;
-
 ``` 
+
+
 <!--
 ```  
 LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
