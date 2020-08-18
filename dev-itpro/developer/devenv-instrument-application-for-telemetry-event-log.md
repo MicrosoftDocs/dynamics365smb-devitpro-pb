@@ -1,6 +1,6 @@
 ---
-title: Developing telemetry into your Business Central application
-description: This topic desscribes how to add code to application objects that enables you to gather telemetry.
+title: Creating custom telemetry events for the Event Log
+description: This topic describes how to add code to application objects that enables you to gather telemetry.
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -10,37 +10,13 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Instrumenting an Application for Telemetry
+# Creating custom telemetry events for the Event Log
 
-This article describes how you can implement custom telemetry trace events in your application for collecting telemetry data. This data can then be collected and visualized for analyzing the application against the desired business goals, troubleshooting, and more.
+[!INCLUDE[on_prem_only](includes/on_prem_only.md)]
 
-## Telemetry overview
+This article explains how to create custom telemetry trace events in AL code that will be sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. 
 
-One aspect of event logging is collecting data about how the application and your deployment infrastructure is working in order to diagnose conditions and troubleshoot problems that affect operation and performance. For example, this type of event logging includes [!INCLUDE[server](includes/server.md)] events and trace events like SQL and AL method (function) traces.
-
-Another aspect of event logging is *telemetry*, which is collecting data about how your application functions and how it is being used in production. Telemetry can tell you about specific activities that users perform within the application in the production environment. Telemetry is also a useful tool for troubleshooting, especially instances where you are not able to reproduce the conditions experienced by the user or have no access to the user's environment. Telemetry can be divided into different levels or categories, like: telemetry for engineering, telemetry about the business, telemetry for customers.
-
-## Creating custom telemetry events
-
-There are two different resources where telemetry trace events can be sent for monitoring and analyzing: Event Log and Microsoft Azure Application Insights. By default, the [!INCLUDE[prodshort](includes/prodshort.md)] application is instrumented to emit several system telemetry trace events to these destinations. Custom telemetry trace events enable you to send telemetry data from anywhere in the application code to either of these destinations. The procedure for creating custom telemetry events is different for each destination. Your choice will also depend on whether you are developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online or on-premises.
-
-|Reource|Description|Online|On-premises|More information|
-|-----------|-----------|------|-----------|----------------|
-|Event log| Create custom telemetry trace events that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace events by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.||![check](media/check.png)|[See...](devenv-instrument-application-for-telemetry-event-log.md)|
-|Application Insights|Create custom telemetry events that are sent to an Application Insights resource in Azure. [Application Insights?](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. Extension developers can specify whether the signal is sent to the extension publisher or VAR partner telemetry resource.<br /><br />You create these custom trace events by using the [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md) or [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md) in code.|![check](media/check.png)|![check](media/check.png)|
-
-
-### Creating custom telemetry events for the Event Log
-
-If you have a [!INCLUDE[server](includes/server.md)] on-premises environment, you can create custom telemetry trace events that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace events by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.
-
-### Creating custom telemetry events for the Application Insights
-
-Whether running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online or On-premises, you can create custom telemetry events that are sent Application Insights. [Application Insights?](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. This is the recommended way for custom trace events going forward.
-
-<!--
-
-## Creating custom telemetry events
+## Create custom telemetry events
 
 To create a custom telemetry event, you use the [SENDTRACETAG method](methods/devenv-sendtracetag-method.md) in code. You can use the SENDTRACETAG method in any object, trigger, or method. The SENDTRACETAG method has the following syntax:
 
@@ -70,7 +46,8 @@ SENDTRACETAG('Cronus-0005', 'Action', VERBOSITY::Verbose, 'This is a verbose mes
 
 For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or functions as well.
 
-## <a name="ViewTelemetry"></a>Viewing and collecting telemetry data
+## <a name="ViewTelemetry"></a>View and collect telemetry data
+
 Viewing and collecting telemetry data is done the same way as with other trace events emitted by [!INCLUDE[prodshort](includes/prodshort.md)], for example, by using tools like Event Viewer, Performance Monitor, PerfView, or logman.
 
 -   In Event Viewer, telemetry trace events can be viewed from **Applications and Services Logs**, in the **Microsoft** > **Dynamics365BusinessCentral** > **Common** folder. The custom telemetry trace events are recorded in the **Admin**  folder. You should be aware that only events with severity level of Warning, Error, and Critical will appear.
@@ -83,6 +60,6 @@ Viewing and collecting telemetry data is done the same way as with other trace e
 
 > [!IMPORTANT]  
 >  The [!INCLUDE[server](includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General). 
--->
+
 ## See Also
 [Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
