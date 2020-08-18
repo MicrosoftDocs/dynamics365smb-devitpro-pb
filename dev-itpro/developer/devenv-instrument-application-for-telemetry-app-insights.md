@@ -35,7 +35,7 @@ With dimension overloads:
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 
-Use the parameters to build the dimension that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
+Use the parameters to build the dimensions, or columns, that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
 
 |Parameter|Description|Dimension|
 |---------|-----------|---------------------------------|
