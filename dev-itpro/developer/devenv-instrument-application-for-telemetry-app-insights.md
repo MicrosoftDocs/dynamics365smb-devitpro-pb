@@ -38,7 +38,7 @@ Use the parameters to build the dimension that will show for the event trace in 
 |---------|-----------|---------------------------------|
 |EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique from these telemetry event tags by, for example, using at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
 |Message|A text string that specifies the descriptive message for the telemetry trace event.|message|
-|Verbosity|An enumeration that specifies the severity level of the telemetry trace event. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal`|
+|Verbosity|An enumeration that specifies the severity level of the telemetry trace event. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br /><br />For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](../includes/server.md)] instance control severity levels are sent.|
 |DataClassification|A DataClassification data type that assigns a classification to the telemetry trace event. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|
 |TelemetryScope|Scope of emitting the telemetry. There are two values: `all` and  |
 |CustomDimensions|A dictionary of text that defines the custom dimensions for the trace event in Application Insights.|
