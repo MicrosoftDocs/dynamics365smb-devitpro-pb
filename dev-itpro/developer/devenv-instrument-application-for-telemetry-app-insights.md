@@ -22,11 +22,14 @@ This article explains how to create custom telemetry trace events in AL code tha
 
 ## Create custom telemetry events
 
-To create a custom telemetry event, you use a LOGMESSAGE method in code where you want to trigger the event. There are two variations of the LOGMESSAGE method. The difference is that one method enables you to use a dictionary object to define multiple custom dimensions for the trace event. The other method lets you define up to two custom dimensions. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
+To create a custom telemetry event, you use a LOGMESSAGE method in code where you want to trigger the event. There are two variations of the LOGMESSAGE method. The difference is that one method uses a dictionary object to define custom dimensions for the trace event. The other method includes two overloads so you don't have to construct a dictionary. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
 
+With dictionary:
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
+
+With dimension overloads:
 
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
@@ -47,20 +50,11 @@ Use the parameters to build the dimension that will show for the event trace in 
 |Dimension2|The name of the custom dimension.|
 |Value2|The value of Dimension2.|
 
-For example, the following code creates simple telemetry trace events for the five different severity levels. 
+The following code snippets creates simple telemetry trace events for critical-level telemetry event that is scoped to the event publisher. For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or function.
 
-```  
-LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
-LogMessage('MyExt-0002', 'This is an error message', Verbosity::Error, DATACLASSIFICATION::EndUserIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'error in code');
-LogMessage('MyExt-0003', 'This is an warning message', Verbosity::Warning, DATACLASSIFICATION::AccountData, TelemetryScope::ExtensionPublisher, 'result', 'succeeded', 'reason', 'warning in code');
-LogMessage('MyExt-0004', 'This is an informational message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
-LogMessage('MyExt-0005', 'This is an verbose message', Verbosity::Verbose, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
-``` 
-
-The folloing example show how to use a dictionary:
-
+**Using a dictionary:**
 ```
-trigger OnOpenPage();
+trigger OnRun();
 var
     CustDimension: Dictionary of [Text, Text];
 begin
@@ -71,7 +65,28 @@ begin
 end;
 ```
 
-For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or functions as well.
+**Using an overload:**
+
+```
+trigger OnRun();
+var
+    CustDimension: Dictionary of [Text, Text];
+begin
+    LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+end;
+
+``` 
+<!--
+```  
+LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+LogMessage('MyExt-0002', 'This is an error message', Verbosity::Error, DATACLASSIFICATION::EndUserIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'error in code');
+LogMessage('MyExt-0003', 'This is an warning message', Verbosity::Warning, DATACLASSIFICATION::AccountData, TelemetryScope::ExtensionPublisher, 'result', 'succeeded', 'reason', 'warning in code');
+LogMessage('MyExt-0004', 'This is an informational message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
+LogMessage('MyExt-0005', 'This is an verbose message', Verbosity::Verbose, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
+``` 
+-->
+
+s as well.
 
 ## See Also
 
