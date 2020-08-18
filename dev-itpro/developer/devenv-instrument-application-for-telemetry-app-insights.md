@@ -14,10 +14,53 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-This article explains how to create custom telemetry trace events in AL code that will be sent to Application Insights.  
+This article explains how to create custom telemetry trace events in AL code that will be sent to Application Insights. 
+
+## Overview
+
+
 
 ## Create custom telemetry events
 
+To create a custom telemetry event, you use a LOGMESSAGE method in code where you want to trigger the event. There are two variations of the LOGMESSAGE method. The difference is that one method enables you to use a dictionary object to define multiple custom dimensions for the trace event. The other method lets you define up to two custom dimensions. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
 
+```
+Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
+```
+
+```
+Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
+```
+
+Use the parameters to define the information about the telemetry trace event. This information is then consumed by Application Insights. 
+
+|Parameter|Description|
+|---------|-----------|
+|EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique from these telemetry event tags by, for example, using at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|
+|Message|A text string that specifies the descriptive message for the telemetry trace event.|
+|Verbosity|An enumeration that specifies the severity level of the telemetry trace event. The value can be Critical, Error, Warning, Normal, or Verbose. This severity level can be used by [!INCLUDE[server](includes/server.md)] to filter out lower-level telemetry trace events from being emitted. See [Viewing and collecting telemetry data](devenv-instrument-application-for-telemetry.md#ViewTelemetry). |
+|DataClassification|A DataClassification data type that assigns a classification to the telemetry trace event. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|
+|TelemetryScope|Scope of emitting the telemetry. There are two values: `all` and  |
+|CustomDimensions|A dictionary of text that defines the custom dimensions for the trace event in Application Insights.|
+|Dimension1|The name of the custom dimension.|
+|Value1|The value of Dimension1.|
+|Dimension2|The name of the custom dimension.|
+|Value2|The value of Dimension2.|
+
+
+For example, the following code creates simple telemetry trace events for the five different severity levels. 
+
+```  
+SENDTRACETAG('Cronus-0001', 'Action', VERBOSITY::Critical, 'This is a critical message.', DATACLASSIFICATION::CustomerContent);
+SENDTRACETAG('Cronus-0002', 'Action', VERBOSITY::Error, 'This is an error message.',  DATACLASSIFICATION::EndUserIdentifiableInformation);
+SENDTRACETAG('Cronus-0003', 'Action', VERBOSITY::Warning, 'This is a warning message.', DATACLASSIFICATION::AccountData);
+SENDTRACETAG('Cronus-0004', 'Action', VERBOSITY::Normal, 'This is an informational message.', DATACLASSIFICATION::OrganizationIdentifiableInformation);
+SENDTRACETAG('Cronus-0005', 'Action', VERBOSITY::Verbose, 'This is a verbose message.', DATACLASSIFICATION::SystemMetadata);
+```  
+
+For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or functions as well.
 ## See Also
-[Monitoring Business Central Server Events](../administration/monitor-server-events.md)  
+
+[Instrumenting an Application for Telemetry](devenv-instrument-application-for-telemetry.md)  
+[LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)  
+[LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
