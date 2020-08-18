@@ -32,9 +32,9 @@ Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataC
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 
-Use the parameters to build dimension that will show for the event trace in Application Insights.
+Use the parameters to build the dimension that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
 
-|Parameter|Description|Dimension in Application Insights|
+|Parameter|Description|Dimension|
 |---------|-----------|---------------------------------|
 |EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique from these telemetry event tags by, for example, using at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
 |Message|A text string that specifies the descriptive message for the telemetry trace event.|message|
