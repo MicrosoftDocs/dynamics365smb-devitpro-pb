@@ -18,7 +18,7 @@ This article explains how to create custom telemetry trace events in AL code tha
 
 ## Overview
 
-Business Central c
+
 
 ## Create custom telemetry events
 
@@ -53,9 +53,23 @@ For example, the following code creates simple telemetry trace events for the fi
 LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
 LogMessage('MyExt-0002', 'This is an error message', Verbosity::Error, DATACLASSIFICATION::EndUserIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'error in code');
 LogMessage('MyExt-0003', 'This is an warning message', Verbosity::Warning, DATACLASSIFICATION::AccountData, TelemetryScope::ExtensionPublisher, 'result', 'succeeded', 'reason', 'warning in code');
-LogMessage('MyExt-0004', 'This is an error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
+LogMessage('MyExt-0004', 'This is an informational message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
 LogMessage('MyExt-0005', 'This is an verbose message', Verbosity::Verbose, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
-```  
+``` 
+
+The folloing example show how to use a dictionary:
+
+```
+trigger OnOpenPage();
+var
+    CustDimension: Dictionary of [Text, Text];
+begin
+    CustDimension.Add('result', 'failed');
+    CustDimension.Add('reason', 'error in code');
+    LogMessage('MyExt-0002', 'This is an informational message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
+
+end;
+```
 
 For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or functions as well.
 
