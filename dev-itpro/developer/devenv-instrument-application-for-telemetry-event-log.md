@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Creating custom telemetry events for the Event Log
 
-[!INCLUDE[on_prem_only-v2](includes/on_prem_only-v2.md)]
+[!INCLUDE[on_prem_only_v2](includes/on_prem_only_v2.md)]
 
 This article explains how to create custom telemetry trace events in AL code that will be sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. 
 
