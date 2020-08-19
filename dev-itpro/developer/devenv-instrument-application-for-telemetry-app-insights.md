@@ -55,9 +55,7 @@ The LOGMESSAGE method for using a dictionary for dimensions has the following si
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
-This restriction prevents dependent extensions from breaking if they use the old ordinal value of the enum value
 
-Enum '{0}' is missing the enum value '{1}' or the ID or name of that value has changed (previous value was {2} with ID {3})
 #### Setting the parameters
 
 Use the parameters to build the dimensions, or columns, that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
