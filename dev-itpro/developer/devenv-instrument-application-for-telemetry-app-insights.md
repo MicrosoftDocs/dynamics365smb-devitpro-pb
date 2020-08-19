@@ -30,7 +30,7 @@ An Application Insights resource can be configured in two places:
 
     For more information, see [Enabling Application Insights](../administration/telemetry-overview.md#enable)
 
-When you create a custom telemetry event, you can specify a telemetry scope. The telemetry scope enables you to send an event only to the Application Insights resource specified in the extension's app.json or to all available resources.
+When you create a custom telemetry event, you can specify a telemetry scope. The telemetry scope enables you to send an event only to the Application Insights resource specified in the extension's app.json. Or to all available resources.
 
 > [!NOTE]
 > The Application Insights resource is not required to create custom events. 
@@ -62,7 +62,7 @@ Use the parameters to build the dimensions, or columns, that will show for the e
 
 |Parameter|Description|Dimension|
 |---------|-----------|---------------------------------|
-|EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique from these telemetry event tags by, for example, using at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
+|EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique. For example, use at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
 |Message|A text string that specifies the descriptive message for the telemetry trace event.|message|
 |Verbosity<sup>[*](#*)|An enumeration that specifies the severity level of the telemetry trace event. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />|
 |DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace event. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
@@ -75,7 +75,7 @@ Use the parameters to build the dimensions, or columns, that will show for the e
 
 ## Examples
 
-The following code snippets creates simple telemetry trace events for critical-level telemetry event that is scoped to the event publisher. For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or function.
+The following code snippets create simple telemetry trace events. They create a critical-level telemetry event that is scoped to the event publisher. For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit.
 
 **Using a dictionary:**
 ```
@@ -100,9 +100,11 @@ end;
 
 ## <a name="*"></a>Design considerations
 
-- For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls the severity levels that are sent. So, if the **Diagnostic Trace Level** is set to **Warning**, then **Normal** and **Verbose** events won't be sent to Application Insights.
+- For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls which events are sent, based on their severity level.
 
-- To protect private data, events that have a `DataClassification` of `CustomerContent` or `OrganizationIdentifiableInformation` are not sent to Application Insight resources set up on the tenant. 
+    If the **Diagnostic Trace Level** is set to **Warning** for example, then **Normal** and **Verbose** events won't be sent to Application Insights. For more information, see [](../administration/configure-server-instance.md#General).
+
+- To protect private data, events that have a `DataClassification` of `CustomerContent` or `OrganizationIdentifiableInformation` aren't sent to Application Insight resources set up on the tenant. 
 
 <!--
 ```  
