@@ -16,8 +16,6 @@ author: jswymer
 
 This article explains how to develop extensions to send custom telemetry trace events to Azure Application Insights for viewing and analyzing.
 
-## Overview
-
 You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up in beforehand. 
 
 ## Set up application Insights 
@@ -41,40 +39,14 @@ The LOGMESSAGE method for using a dictionary for dimensions has the following si
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
 
-### Example
-
-The following code snippets creates simple telemetry trace events for critical-level telemetry event that is scoped to the event publisher.
-
-```
-trigger OnRun();
-var
-    CustDimension: Dictionary of [Text, Text];
-begin
-    CustDimension.Add('result', 'failed');
-    CustDimension.Add('reason', 'critical error in code');
-    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
-end;
-```
-
-## Using dimension overloads
+### Using dimension overloads
 
 The LOGMESSAGE method for using a dictionary for dimensions has the following signature:
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 
-### Example
-
-The following code snippets creates simple telemetry trace events for critical-level telemetry event that is scoped to the event publisher.
-
-```
-trigger OnRun();
-begin
-    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
-end;
-``` 
-
-## Setting the parameters
+### Setting the parameters
 
 Use the parameters to build the dimensions, or columns, that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
 
@@ -82,14 +54,16 @@ Use the parameters to build the dimensions, or columns, that will show for the e
 |---------|-----------|---------------------------------|
 |EventID|A text string that assigns an identifier to the telemetry trace event. The tag can consist of letters, numbers, and special characters. Try to make your tags unique from these telemetry event tags by, for example, using at least 8 characters or a prefix, like Cronus-0001 and Cronus-0002.|eventId|
 |Message|A text string that specifies the descriptive message for the telemetry trace event.|message|
-|Verbosity|An enumeration that specifies the severity level of the telemetry trace event. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance control severity levels are sent.|
-|DataClassification|A DataClassification data type that assigns a classification to the telemetry trace event. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|
-|TelemetryScope|Scope of emitting the telemetry. There are two values: `all` and  |
+|Verbosity<sup>[*](#*)|An enumeration that specifies the severity level of the telemetry trace event. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />|
+|DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace event. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
+|TelemetryScope|Scope of emitting the telemetry. <ul><li>`all` - </li><li>`extensionpublisher` </li> |telemetryScope
 |CustomDimensions|A dictionary of text that defines the custom dimensions for the trace event in Application Insights.|
-|Dimension1|The name of the custom dimension.|
-|Value1|The value of Dimension1.|
-|Dimension2|The name of the custom dimension.|
-|Value2|The value of Dimension2.|
+|Dimension1|A text string that specifies the name of the custom dimension.|
+|Value1|A text string that specifies the value of Dimension1.|
+|Dimension2|A text string that specifies the name of the custom dimension.|
+|Value2|A text string that specifies the value of Dimension2.|
+
+## Examples
 
 The following code snippets creates simple telemetry trace events for critical-level telemetry event that is scoped to the event publisher. For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit. Of course, you can also call the code from other objects, triggers or function.
 
@@ -112,8 +86,13 @@ trigger OnRun();
 begin
     LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
 end;
-``` 
+```
 
+## <a name="*"></a>Design considerations
+
+- For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance control severity levels are sent. So, if the **Diagnostic Trace Level** is set to **Warning**, then **Normal** and **Verbose** events won't be sent to Application Insights.
+
+- To protect private data, events that have a `DataClassification` of `CustomerContent` or `OrganizationIdentifiableInformation` are not sent to Application Insight resources set up on the tenant. 
 
 <!--
 ```  
@@ -124,8 +103,6 @@ LogMessage('MyExt-0004', 'This is an informational message', Verbosity::Normal, 
 LogMessage('MyExt-0005', 'This is an verbose message', Verbosity::Verbose, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');
 ``` 
 -->
-
-s as well.
 
 ## See Also
 
