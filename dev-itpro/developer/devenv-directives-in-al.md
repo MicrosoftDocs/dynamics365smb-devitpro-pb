@@ -32,11 +32,17 @@ The following AL preprocessor directives are supported. For examples, see the [E
 |#region                | Specifies a block of code that you can expand or collapse. |
 |#endregion             | Specifies the end of a #region block of code. |
 |#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. |
-|#disable               |  |
-|#restore               |  |
-|#enable                |  |
+|#disable               | ? |
+|#restore               | ? |
+|#enable                | ? |
 
 ## Defining symbols
+
+Symbols can be defined in the manifest file. The syntax is the following:
+
+```
+
+```
 
 ## Examples
 
