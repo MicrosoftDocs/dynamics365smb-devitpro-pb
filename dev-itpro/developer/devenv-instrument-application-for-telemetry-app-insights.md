@@ -22,9 +22,9 @@ You can add AL code in extensions to emit messages about activities or operation
 
 An Application Insights resource can be configured in two places:
 
-- The app.json file of the extension.
+- In the app.json file of the extension.
 
-    For more information, see 
+    For more information, see [Enabling Application Insight on an Extension](devenv-application-insights-for-extensions.md).
 
 - In the tenant on the [!INCLUDE[server](includes/server.md)] service/server.
 
