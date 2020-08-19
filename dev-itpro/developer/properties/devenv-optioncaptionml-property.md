@@ -1,14 +1,13 @@
 ---
 title: "OptionCaptionML Property"
 ms.custom: na
+ms.author: solsen
 ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: daacd18c-f0d0-4e21-9537-904960280778
-caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
