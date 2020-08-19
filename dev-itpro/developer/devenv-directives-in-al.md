@@ -13,9 +13,10 @@ ms.author: solsen
 
 # Preprocessor Directives in AL
 
-In AL, like in other programming languages, preprocessor directives are used to make code conditional. Any code can be made conditional, also table fields. Symbols are defined in the manifest file or at the beginning of a source file. There are currently no built-in symbols.
+In AL, like in other programming languages, preprocessor directives are used to make code conditional. Any code can be made conditional, including table fields. Symbols are defined in the manifest file or at the beginning of a source file. 
 
-<!-- There is a server side check-in that create ParseOptions from manifest and it when parsing up syntax trees. -->
+> [!NOTE]  
+> There are currently no built-in symbols.
 
 The following AL preprocessor directives are supported. For examples, see the [Examples](devenv-directives-in-al-md#Examples) section below.
 
@@ -69,7 +70,6 @@ table 50110 MyTable
         #pragma warning restore
     }
 }
-
 ```
 
 ## Conditional code
@@ -85,3 +85,6 @@ table 50110 MyTable
 ```
 
 ## See Also
+
+[Development in AL](devenv-dev-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)
