@@ -29,20 +29,52 @@ The Application Insights resource must be set up beforehand in one or both of th
 
 ## Create custom telemetry events
 
-To create a custom telemetry event, use a LOGMESSAGE method in AL code where you want to trigger the event. The LOGMESSAGE method defines the information that is sent to Application Insights for a specific operation or activity.
+To create a custom telemetry event, use a LOGMESSAGE method in AL code where you want to trigger the event. The LOGMESSAGE method defines the information that is sent to Application Insights for a specific operation or activity. 
 
 There are two variations of the LOGMESSAGE method. The difference is that one method uses a dictionary object to define custom dimensions for the trace event. The other method includes two overloads so you don't have to construct a dictionary. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
 
-With dictionary:
+## Using a dictionary
+
+The LOGMESSAGE method for using a dictionary for dimensions has the following signature:
+
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
 
-With dimension overloads:
+### Example
 
+The following code snippets creates simple telemetry trace events for critical-level telemetry event that is scoped to the event publisher.
+
+```
+trigger OnRun();
+var
+    CustDimension: Dictionary of [Text, Text];
+begin
+    CustDimension.Add('result', 'failed');
+    CustDimension.Add('reason', 'critical error in code');
+    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
+end;
+```
+
+## Using dimension overloads
+
+The LOGMESSAGE method for using a dictionary for dimensions has the following signature:
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
+
+### Example
+
+The following code snippets creates simple telemetry trace events for critical-level telemetry event that is scoped to the event publisher.
+
+```
+trigger OnRun();
+begin
+    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+end;
+``` 
+
+## Setting the parameters
 
 Use the parameters to build the dimensions, or columns, that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
 
@@ -100,3 +132,4 @@ s as well.
 [Instrumenting an Application for Telemetry](devenv-instrument-application-for-telemetry.md)  
 [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)  
 [LOGMESSAGE method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  
+[Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md)  
