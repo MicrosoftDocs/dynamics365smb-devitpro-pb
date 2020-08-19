@@ -1,9 +1,9 @@
 ---
-title: "Directives in AL"
+title: "Preprocessor Directives in AL"
 description: 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/08/2020
+ms.date: 08/19/2020
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -11,9 +11,9 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Directives in AL
+# Preprocessor Directives in AL
 
-Anything can be made conditional, also table fields. Symbols can be defined in the manifest or in the beginning of a source file. There are currently no built-in symbols.
+In AL, like in other programming languages, preprocessor directives are used to make code conditional. Any code can be made conditional, also table fields. Symbols can be defined in the manifest or at the beginning of a source file. There are currently no built-in symbols.
 
 <!-- There is a server side check-in that create ParseOptions from manifest and it when parsing up syntax trees. -->
 
@@ -68,3 +68,4 @@ table 50110 MyTable
     end;
 #endif
 
+## See Also
