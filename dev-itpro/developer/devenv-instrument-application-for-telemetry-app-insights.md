@@ -100,7 +100,7 @@ end;
 
 ## <a name="*"></a>Design considerations
 
-- For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance control severity levels are sent. So, if the **Diagnostic Trace Level** is set to **Warning**, then **Normal** and **Verbose** events won't be sent to Application Insights.
+- For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls the severity levels that are sent. So, if the **Diagnostic Trace Level** is set to **Warning**, then **Normal** and **Verbose** events won't be sent to Application Insights.
 
 - To protect private data, events that have a `DataClassification` of `CustomerContent` or `OrganizationIdentifiableInformation` are not sent to Application Insight resources set up on the tenant. 
 
