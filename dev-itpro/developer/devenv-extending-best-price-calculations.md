@@ -174,7 +174,7 @@ The following image shows the schema of how the methods called in the Sales Line
 :::image type="content" source="../media/best-pricing-diagram3-data-sources.png" alt-text="Diagram showing an price calculation for a sales line.":::
 
 ## Interface Objects
-AL interface objects are important for extensibility. They define the capabilities that are available to an object, and allow implementations to differ as long as they comply with the interface requirements. For more information, see [Interfaces in AL](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-interfaces-in-al?branch=April-2020).
+AL interface objects are important for extensibility. They define the capabilities that are available to an object, and allow implementations to differ as long as they comply with the interface requirements. For more information, see [Interfaces in AL](devenv-interfaces-in-al.md).
 
 Price calculation uses the following AL interface objects:
 
@@ -332,7 +332,7 @@ We have the following licenses in our price list. If you buy 70061 or 70062 alon
 |70064|Sales Professional|$65|$15 and $16 when bundled with 70061 or 70062.|
 |70065|Customer Service Pro|$50|$20 and $21 when bundled with 70061 or 70062.|
 
-The following image shows an example of a Price List page that is extended with the Attached to Line No. field. Notice that the prices are changed based on the combinations of licenses.
+The following image shows an example of a Sales Line page that is extended with the Attached to Line No. field. Notice that the prices are changed based on the combinations of licenses.
 
 :::image type="content" source="../media/best-pricing-sales-lines.png" alt-text="Image that shows an example of an extended Price List page.":::
 

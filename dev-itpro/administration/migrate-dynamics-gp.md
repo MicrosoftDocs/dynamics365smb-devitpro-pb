@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge, gp, migration
-ms.date: 04/01/2020
+ms.date: 06/22/2020
 ms.author: jenolson
 
 ---
@@ -18,6 +18,9 @@ ms.author: jenolson
 # Migrate to Business Central Online from Dynamics GP
 
 The **Cloud Migration Management** assisted setup guide in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 on SQL Server 2012 and later versions of Dynamics GP and SQL Server.  
+
+> [!IMPORTANT]
+> Migrating from Dynamics GP using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets: United States, Canada, United Kingdom.
 
 ## Migrated data
 

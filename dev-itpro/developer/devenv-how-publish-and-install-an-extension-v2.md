@@ -114,3 +114,4 @@ This example upgrades the app at the specified path for the tenant with the ID *
 ## See Also  
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  

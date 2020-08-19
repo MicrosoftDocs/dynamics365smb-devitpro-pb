@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # TableIDExpr Property
 Sets the ID of the table to which you want to apply a table filter.  
   
-## Applies To  
+## Applies to  
  Fields  
   
 ## Remarks  

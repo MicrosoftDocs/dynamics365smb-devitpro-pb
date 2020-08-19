@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +14,13 @@ ms.author: solsen
 
 # JSON Files
 
-In an AL project there are two JSON files; the `app.json` file and the `launch.json` file that are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on. 
+In an AL project there are two JSON files; the `app.json` file and the `launch.json` file that are generated automatically when you start a new project. The `app.json` file contains information about the extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on.  
 
 > [!NOTE]  
 > For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
 
 ## <a name="Appjson"></a>App.json file
+
 The following table describes the settings in the `app.json` file:
 
 |Setting|Mandatory|Value|
@@ -42,7 +43,7 @@ The following table describes the settings in the `app.json` file:
 |idRange|Yes|For example: `"idRange": {"from": 50100,"to": 50149}`. A range for application object IDs. For all objects outside the range, a compilation error will be raised. When you create new objects, an ID is automatically suggested.|
 |idRanges|Yes|For example: `"idRanges": [{"from": 50100,"to": 50200},{"from": 50202,"to": 50300}]`. A list of ranges for application object IDs. For all objects outside the ranges, a compilation error will be raised. When you create new objects, an ID is automatically suggested. You must use *either* the `idRange` *or* the `idRanges` setting. Overlapping ranges are not allowed and will result in a compilation error. |
 |showMyCode|No|This is by default set to `false` and not visible in the manifest. To enable viewing the source code when debugging into an extension, add the following setting: `"showMyCode": true`|
-|target|No|By default this is `Cloud`. The setting currently has the following options: `Internal`, `Extension`, `OnPrem`, and `Cloud`. The `Internal` and `Extension` settings are being deprecated. For on-premises, you can set this to `OnPrem` to get access to otherwise restricted APIs and .NET Interop. The Business Central Server setting must then also be set to `OnPrem`.|
+|target|No|By default this is `Cloud`. The setting currently has the following options: `Internal`, `Extension`, `OnPrem`, and `Cloud`. The `Internal` and `Extension` settings are being deprecated with runtime 4.0 and replaced by the `OnPrem` and `Cloud` respectively. For on-premises, you can set this to `OnPrem` to get access to otherwise restricted APIs and .NET Interop. The Business Central Server setting must then also be set to `OnPrem`. **Note:** System tables that have the [Scope](properties/devenv-scope-property.md) property set to `Internal`/`OnPrem` cannot be accessed from extensions that have `target` set to `Cloud`/`External` through direct reference or through RecordRef. For more information, see [Compilation Scope Overview](devenv-compilation-scope-overview.md)|
 |contextSensitiveHelpUrl|No, but required for AppSource submission|The URL for the website that displays context-sensitive Help for the objects in the app, such as `https://mysite.com/documentation/`. If the app does not support all locales currently supported by [!INCLUDE [prodshort](includes/prodshort.md)], then include a parameter for the locale in this URL, `/{0}/`, and also specify the relevant locales in the `supportedLocales` setting.|
 |helpBaseUrl|No|The URL for the website that overtakes all Help for the specified locales. This property is intended for localization apps specifically since the setting overwrites the default URL of `/{0}/dynamics365/business-central`. If you set this value, you must also specify one or more languages in the `supportedLocales` setting.|
 |supportedLocales|No|The list of locales that are supported in your Help if different from all locales. The value on the list is inserted into the URL defined in the `contextSensitiveHelpUrl` and `helpBaseUrl` properties. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]` for an app that supports only Danish and English (US).|

@@ -2,7 +2,7 @@
 title: "An enum field replacing an option field should preserve the member names."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 06/19/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

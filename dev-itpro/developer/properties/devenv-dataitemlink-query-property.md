@@ -13,7 +13,7 @@ author: jswymer
 # DataItemLink Property (Query)
 Sets a reference between one or more fields of the data item table and data item or data items above it.  
   
-## Applies To  
+## Applies to  
   
 - Query data items  
   

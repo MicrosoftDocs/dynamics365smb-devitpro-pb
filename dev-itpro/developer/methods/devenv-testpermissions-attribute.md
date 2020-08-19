@@ -21,7 +21,8 @@ AL methods on test codeunits.
 [TestPermissions(TestPermissions: Testpermissions)]
 ```
 
-### Arguments  
+### Arguments
+
 *TestPermissions*  
 Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-option.md)  
  
@@ -41,9 +42,11 @@ Specifies the permission sets used on tests that are run by the test method.
 
 Apart from **InheritFromTestCodeunit**, the values themselves do not perform any operations or have any specific behavior. Instead, you programmatically define what each value does, and the permissions sets it applies at runtime, by adding code in a test runner codeunit.
 
-> [!NOTE]
+> [!NOTE]  
 > To specify the permission sets that are used by all the tests run by a test codeunit, use the [TestPermissions Property](../properties/devenv-testpermissions-property.md).
 
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)   
 [TestPermissions Property](../properties/devenv-testpermissions-property.md)

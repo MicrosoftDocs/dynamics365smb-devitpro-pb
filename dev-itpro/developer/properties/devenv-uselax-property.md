@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # UseLax Property
 Specifies whether an XMLport uses LAX \(Lazy API for XML\) to process an XML file.  
   
-## Applies To  
+## Applies to  
   
 -   XMLports  
   

@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # SubType Property (BLOB)
 Sets additional information about what will be contained in the field.  
   
-## Applies To  
+## Applies to  
 - BLOB fields  
   
 ## Property Value  

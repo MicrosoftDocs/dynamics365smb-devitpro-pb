@@ -11,9 +11,11 @@ author: SusanneWindfeldPedersen
 ---
 
 # TryFunction
-Specifies the method to be try method, which can be used to catch and handle errors and exceptions that occur when code is run.  
+
+Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run.  
   
-## Applies to  
+## Applies to
+ 
 - AL methods 
   
 > [!NOTE]  
@@ -33,6 +35,7 @@ For more information, see [Handling Errors by Using Try Methods](../devenv-handl
 
 ## See Also  
 
+[AL Method Reference](../methods-auto/library.md)  
 [Essential AL Methods](../devenv-essential-al-methods.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md)  

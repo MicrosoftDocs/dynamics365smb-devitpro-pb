@@ -69,12 +69,13 @@ The custom dimensions that are of particular interest for this operation include
 |eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
 |result|**Success**|
-|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that the report executed.|
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+|serverExecutionTime|Specifies the amount of time it took the service to complete the request**. The time has the format hh:mm:ss.sssssss.|
+|sqlExecutes|Specifies the number of SQL statements that the report executed**.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
-|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
+|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report**. The time has the format hh:mm:ss.sssssss.|
 
+** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 ## Failed report generation
 
 This operation occurs when the report dataset couldn't be generated because of an error.

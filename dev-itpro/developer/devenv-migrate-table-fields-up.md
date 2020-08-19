@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 # Moving Tables and Fields to Extensions Up the Dependency Graph
 
-[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+[!INCLUDE[2019_releasewave2_15.3_onprem](../includes/2019_releasewave2_15.3_onprem.md)]
 
 This article explains how to move tables and fields from an extension to another extension that is up the dependency graph.
 
@@ -54,7 +54,7 @@ The transition extension will contain replicas of all table object definitions i
 
 3. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`.
+    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`. The value for your extension will be different.
 
 ## Create empty version of releasing extension (Ext X v2)
 
@@ -74,7 +74,7 @@ In this step, you create a new version of the releasing extension that doesn't c
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 2. Delete all objects from the extension. The objects include **TableA**, **TableB**, and **TableC**.
-3. In the app.json file, increase the `version` value.
+3. In the app.json file, increase the `version` value. Ensure that `"target": "OnPrem"`.
 4. Compile a new version of the extension package.
 
 ## Create receiving extension (Ext Y v1)
@@ -88,7 +88,7 @@ You now create a new extension that contains the customization you want to move 
 5. Compile the extension package.
 6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`.
+    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`. The value for your extension will be different. 
 
 ## Create final version of releasing extension (Ext X v3)
 
@@ -99,6 +99,9 @@ In this step, you create another version of the releasing extension **Ext X**. T
 3. Add a table object for **TableC** and field definition for **C-1** that matches the definitions in the original **TableC** object of the releasing extension.
 3. In the app.json file, increase the `version` value.
 4. Compile the extension package.
+5. Make a note of the `ID` of the extension. You'll use this ID in the next task.
+
+    For purposes of the example, the ID is `77777777-eeee-8888-ffff-999999999999`. The value for your extension will be different.
 
 ## Create new empty version of transition extension (Ext Z v2)
 
@@ -110,7 +113,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
     { 
     "apprules": [ 
         { 
-            "id": "11111111-aaaa-2222-bbbb-333333333333"
+            "id": "77777777-eeee-8888-ffff-999999999999"
         }
         { 
             "id": "44444444-cccc-5555-dddd-666666666666"
@@ -149,10 +152,11 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 
        Synchronize **Ext Z v2** last. When you synchronize **Ext Z v2**, ownership of the tables is transferred from **Ext Z** to **Ext X** and **Ext Y**.
       
-5. Install the new receiving extension **Ext Y v1**.
 6. Run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) on the new releasing extension version**Ext X v3**.
 
     This step basically installs the new extension version. You run a data upgrade because an earlier version has been installed and is still published.
+
+5. Install the new receiving extension **Ext Y v1**.
 
 7. Unpublish both versions of **Ext Z**.
 

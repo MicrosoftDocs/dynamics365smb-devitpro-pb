@@ -24,10 +24,6 @@ To help you manage app updates, the administration center includes the **Manage 
 
 Like other features in the administration center, this functionality can be used by the partner (delegated administrator) or a local customer admin.
 
-> [!NOTE]
-> The capability to update apps using the administration center is being made available gradually. Until the feature is generally available, some apps can't be updated using this feature. For information about the timeline, see [Installing AppSource apps updates in the Business Central administration center](/dynamics365-release-plan/2020wave1/dynamics365-business-central/installing-appsource-apps-updates-business-central-administration-center).
-
-
 ## Get an overview and check for updates
 
 Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
@@ -36,6 +32,9 @@ Open the **Manage Apps** page from the environment details page. Choose **Enviro
 > ![Business Central Admin Center apps](../developer/media/admin/business_central_admin_center_manage_apps.png)
 
 The **Manage Apps** lists all the apps installed on the environment and indicates whether updates are available. When first opened, the system will start checking for updates. Wait for this operation to complete.
+
+   > [!Important]
+   > When an ISV [provides a new version of their AppSource app](appsource.md), Microsoft validates it against the latest, currently available version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] at the time. If the new app version passes validation, it's made available for the customers' environments that are running on that version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and greater. So if you're not seeing an AppSource app update in the list, your environment may not yet be running on the version the app was registered for.
 
 When completed, if an update is available for an app, there are two indications:
 
@@ -49,7 +48,7 @@ When completed, if an update is available for an app, there are two indications:
 
 ## Install an app update - the flow
 
-We recommend you always install and test an app update on a Sandbox environment first. You want to make sure the app update won't disrupt the operational flow or cause problems for the users.
+We recommend you always install and test an app update on a Sandbox environment first. Make sure the app update won't disrupt the operational flow or cause problems for the users.
 
 The following steps provide the general flow for updating an app.
 

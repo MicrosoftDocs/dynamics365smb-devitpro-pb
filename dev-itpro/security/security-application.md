@@ -29,7 +29,9 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 
 [Authentication and Credential Types](../administration/users-credential-types.md)
 
-[Multi-factor Authentication](multifactor-authentication.md)
+[Multi-factor Authentication](multifactor-authentication.md)  
+
+The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
  
 ## Authorization
 
@@ -44,6 +46,8 @@ Once authenticated, authorization determines which areas a user can access, such
 [Removing Elements from the User Interface According to Permissions](../administration/hide-ui-elements.md)  
 
 [Analyzing Authorization Telemetry](../administration/telemetry-authorization-trace.md)
+
+[Using OAuth to Authorize Business Central Web Services ](../webservices/authenticate-web-services-using-oauth.md)
 
 ## Auditing
 

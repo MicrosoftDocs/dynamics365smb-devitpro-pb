@@ -24,7 +24,7 @@ When you develop a new extension version, you must consider the data from the pr
 
 You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
 
-The upgrade codeunit becomes an integral part of the extension and may be modified as needed for later versions. You can have more than one upgrade codeunit. There's a set order to the sequence of the upgrade triggers, but  the execution order of the different codeunits isn't guaranteed. If you do use multiple upgrade units, make sure that they can run independent of each other.
+The upgrade codeunit becomes an integral part of the extension and may be modified as needed for later versions. You can have more than one upgrade codeunit. There's a set order to the sequence of the upgrade triggers, but  the execution order of the different codeunits isn't guaranteed. If you do use multiple upgrade units, make sure that they can run independently of each other.
 
 ### Upgrade triggers
 
@@ -167,7 +167,7 @@ The codeunit also publishes the following events:
 The following steps provide the general pattern for using an upgrade tag on upgrade code.
 
 > [!IMPORTANT]
-> Use upgrade tags only upgrade purposes only.
+> Use upgrade tags only for upgrade purposes only.
 
 1. Use the following construct around the upgrade code to check for and add an upgrade tag.
         
@@ -182,7 +182,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
     UpgradeTag.SetUpgradeTag(UpgradeTagValue); 
     ```
 
-    You can use any value for the upgrade tag, but we recommend that you use the convention [CompanyPrefix]-[ID]-[Description]-[YYYYMMDD], for example, ABC-1234-MyExtensionUpgrade-22020161206.
+    You can use any value for the upgrade tag, but we recommend that you use the convention [CompanyPrefix]-[ID]-[Description]-[YYYYMMDD], for example, ABC-1234-MyExtensionUpgrade-20201206.
     
 2. Add code to register the upgrade tag for new companies that might eventually be created.
 
@@ -202,7 +202,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 3. Add code to register the upgrade tag for first-time installations of the extension.
 
-    The step ensures that the upgrade code isn't on first upgrade because of missing tag.
+    The step ensures that the upgrade code isn't run on first upgrade because of missing tag.
 
     To register the tag, call the `SetUpgradeTag` method on the `OnInstallAppPerCompany` and `OnInstallAppPerDatabase` triggers in the extension's install codeunit.
 
@@ -234,53 +234,6 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 ### Example
 
 The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed [ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
-
-<!--
-```
-codeunit 50100 ShoeSizeUpgCodeunitPerCompany
-{
-    Subtype = Upgrade;
-
-    trigger OnUpgradePerCompany()
-    var
-        UpgradeTagMgt: Codeunit "Upgrade Tag";
-    begin
-
-        // Check whether the tag has been used before, and if so, don't run upgrade code
-        if UpgradeTagMgt.HasUpgradeTag('ABC-1234-ShoeSizeUpgrade-20201125') then
-            exit;
-
-        // Run upgrade code
-        UpgradeShoeSize();
-
-        // Insert the upgrade tag in table 9999 "Upgrade Tags" for future reference
-        UpgradeTagMgt.SetUpgradeTag('ABC-1234-ShoeSizeUpgrade-20201125');
-    end;
-
-    local procedure UpgradeShoeSize()
-    var
-        Customer: Record Customer;
-    begin
-
-        if not Customer.FindSet() then
-            exit;
-
-        repeat
-            Customer."ABC - Customer Shoesize" := Customer.Shoesize;
-            Customer.Modify();
-        until Customer.Next() = 0;
-    end;
-
-    // Register the new upgrade tag for new companies when they are created.
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
-    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]]);
-    begin
-        PerCompanyUpgradeTags.Add('ABC-1234-ShoeSizeUpgrade-20201125');
-    end;
-
-}
-```
--->
 
 ```
 codeunit 50100 "ABC Upgrade Shoe Size"
@@ -318,7 +271,7 @@ codeunit 50100 "ABC Upgrade Shoe Size"
             if Customer."ABC - Customer Shoesize" <> 0 then
                 Error('ShoeSize must be blank, the value is already assigned');
 
-            //This code avoids blank modifies because they're they down the upgrade
+            // Avoid blank modifies - it is a performance hit and slows down the upgrade
             if Customer."ABC - Customer Shoesize" <> Customer.Shoesize then begin
                 Customer."ABC - Customer Shoesize" := Customer.Shoesize;
                 Customer.Modify();
@@ -343,6 +296,34 @@ codeunit 50101 "ABC Upgrade Tag Definitions"
     end;
 
 }
+```
+
+## Protecting sensitive code from running during upgrade
+
+The extension might initiate code that you don't want to run during upgrade. The changes done to the data stored in the database will be rolled back. However, things like calls to external web services or physical printing can't be rolled back. Also, some code, like scheduling tasks, might throw an error and fail the upgrade.
+
+For example, let's say the extension runs code that prints a check after a purchase invoice is posted for buying shoes. If the upgrade fails, the purchase invoice is rolled back. But the check will still be printed, unless you have implemented a mechanism to prevent printing. 
+
+To avoid this situation, use the session `ExecutionContext`. Depending on the scenario, the system runs a session in a special context for a limited time, which can be either `Normal`, `Install`, `Uninstall`, or `Upgrade`. You get the `ExecutionContext` by calling the [GetExecutionContext method](methods-auto/session/session-getexecutioncontext-method.md). For example, referring the example for printing checks, you could add something like the following code to verify the ExecutionContent before printing the check:
+
+```
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterPurchInvHeaderInsert', '', false, false)]
+local procedure PrintCheckWhenPurchasingShoes(var PurchHeader: Record "Purchase Header"; var PurchInvHeader: Record "Purch. Inv. Header")
+begin
+    // Check whether global context is upgrade or installation of extension
+    if Session.GetExecutionContext() <> ExecutionContext::Normal then
+        // Check whether code is triggered by the extension
+        if Session.GetCurrentModuleExecutionContext() <> ExecutionContext::Normal then
+            // Something is wrong, so you want to abort here because the code doesn't raise the EnqueuePrintingCheck trigger
+            Error('Check can't be printed')
+        else begin
+            // Other code is invoking the upgrade, so use Job queue or similar mechanism to roll back if upgrade fails
+            EnqueuePrintingCheck(PurchInvHeader);
+            exit;
+        end;
+
+    CallWebServiceToPrintCheck(PurchInvHeader);
+end;
 ```
 
 ## Running the upgrade for the new extension version
@@ -378,3 +359,5 @@ To upgrade to the new extension version, you use the [Sync-NavApp](https://go.mi
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Sample Extension](devenv-extension-example.md)  
+[Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  

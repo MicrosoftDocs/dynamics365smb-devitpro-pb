@@ -2,7 +2,7 @@
 title: "AL Table Proxy Generator"
 description: "Tool for creating integration or proxy tables for integration with Common Data Service from Business Central"
 ms.custom: na
-ms.date: 04/21/2020
+ms.date: 06/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
     -ServiceURI
     -Entities
     -BaseId
-    -TableType
+    -[TableType]
     ```
 3. The table or tables are generated in the folder of the specified AL project.
 
@@ -42,12 +42,14 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
 |*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying entities](devenv-al-table-proxy-generator.md#specifying-entities). |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
-|*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`.|
+|*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`. <br><br>**Note:** If unspecified, the system looks both for `CDS` and `CRM` tables .  |
 
 ## Specifying entities
+
 The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* entity relationships in CDS. For more information, see [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all entities that you want created, including the related entities, in the `Entities` parameter separated by commas.
 
 ### Example
+
 An example could be, that you want to generate an AL proxy table for the **CDS Worker Address** (cdm_workeraddress). 
 If you run the altpgen tool and only specify `cdm_workeraddress`, the tool will not generate the `Worker` lookup field, because no related table `Worker` is specified.
 
@@ -57,7 +59,7 @@ If you, in the `Entities` parameter specify `cdm_workeraddress, cdm_worker`, the
 The following example starts the process for creating a new integration table in the specified AL project. When complete, the output path contains the **Worker.al** file that contains the description of the **50000 CDS Worker** integration table. This table is set to the table type **CDS**.
 
 ```
-.\altpgen -project: <Your AL project folder> -packagecachepath: <Your AL project cache folder> -serviceuri: <CDS server URL> -entities: cdm_worker, cdm_workeraddress -baseid: 50000 -tabletype: CDS 
+.\altpgen -project:"C:\myprojectpath" -packagecachepath:"C:\mypackagepath" -serviceuri:"https://tenant.crm.dynamics.com" -entities:cdm_worker,cdm_workeraddress -baseid:50000 -tabletype:CDS 
 ```
 
 ## See Also

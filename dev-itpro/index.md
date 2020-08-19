@@ -66,7 +66,7 @@ The following table outlines recommended content for you to get started:
 ## See Also
 
 [[!INCLUDE[prodlong](includes/prodlong.md)] Business Functionality Help](/dynamics365/business-central/index)  
-[Frequently Asked Questions for Dynamics 365 Business Central Development and Administration](faq.md)  
+[FAQ for Dynamics 365 Business Central Development and Administration](faq.md)  
 [Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]](help-and-support.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  
