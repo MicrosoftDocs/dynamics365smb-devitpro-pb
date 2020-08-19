@@ -29,9 +29,9 @@ The following AL preprocessor directives are supported. For examples, see the [E
 |#undef                 | Undefines a symbol.  |
 |#warning               | Specifies a compiler warning from code.  |
 |#error                 | Specifies a compiler error from code. |
-|#region                | Specifies a block of code that you can expand or collapse |
-|#endregion             |  |
-|#pragma                |  |
+|#region                | Specifies a block of code that you can expand or collapse. |
+|#endregion             | Specifies the end of a #region block of code. |
+|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. |
 |#disable               |  |
 |#restore               |  |
 |#enable                |  |
@@ -42,32 +42,40 @@ The following AL preprocessor directives are supported. For examples, see the [E
 
 ### Region support
 
-#region Ugly stuff - not written by me, of course
+```
+#region Ugly code - not written by me, of course
     procedure UglyCode()
     begin
         // No one should look at this
     end;
 #endregion
+```
 
 ## Warning suppression
 
+```
 table 50110 MyTable
 {
     fields
     {
-#pragma warning disable AL0468         
+        #pragma warning disable AL0468
         field(1; TableWithLongIdentifierThatExceedsOurMax; Integer) { }
-#pragma warning restore        
+        #pragma warning restore
     }
 }
 
+```
+
 ## Conditional code
 
+```
 #if DEBUG
     trigger OnOpenPage()
     begin
         Message('Only in debug versions');
     end;
 #endif
+
+```
 
 ## See Also
