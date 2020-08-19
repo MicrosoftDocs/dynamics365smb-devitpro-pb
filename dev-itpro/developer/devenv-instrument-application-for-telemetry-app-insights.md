@@ -35,7 +35,7 @@ When you create a custom telemetry event, you can specify a telemetry scope. The
 > [!NOTE]
 > The Application Insights resource is not required to create custom events. 
 
-## Create custom telemetry events
+## Create a custom telemetry event
 
 To create a custom telemetry event, use a LOGMESSAGE method in AL code where you want to trigger the event. The LOGMESSAGE method defines the information that is sent to Application Insights for a specific operation or activity.
 
@@ -66,7 +66,7 @@ Use the parameters to build the dimensions, or columns, that will show for the e
 |Message|A text string that specifies the descriptive message for the telemetry trace event.|message|
 |Verbosity<sup>[*](#*)|An enumeration that specifies the severity level of the telemetry trace event. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />|
 |DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace event. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
-|TelemetryScope|Scope of emitting the telemetry. <ul><li>`all` - </li><li>`extensionpublisher` </li> |telemetryScope
+|TelemetryScope|Scope of emitting the telemetry. <ul><li>`extensionpublisher` sends the custom event only to the Application Insight resource specified in the extension's app.json file</li><li>`all` sends the custom event to Application Insight resource specified in the extension's app.json file and on the tenant. </li></ul> |telemetryScope
 |CustomDimensions|A dictionary of text that defines the custom dimensions for the trace event in Application Insights.|
 |Dimension1|A text string that specifies the name of the custom dimension.|
 |Value1|A text string that specifies the value of Dimension1.|
