@@ -28,7 +28,7 @@ An Application Insights resource can be configured in two places:
 
 - In the tenant on the [!INCLUDE[server](includes/server.md)] service/server.
 
-    For more information, see [Enabling Application Insights](../administration/telemetry-overview.md#enable)
+    For more information, see [Enabling Application Insights](../administration/telemetry-overview.md#enable).
 
 When you create a custom telemetry event, you can specify a telemetry scope. The telemetry scope enables you to send an event only to the Application Insights resource specified in the extension's app.json. Or to all available resources.
 
@@ -55,7 +55,9 @@ The LOGMESSAGE method for using a dictionary for dimensions has the following si
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
+This restriction prevents dependent extensions from breaking if they use the old ordinal value of the enum value
 
+Enum '{0}' is missing the enum value '{1}' or the ID or name of that value has changed (previous value was {2} with ID {3})
 #### Setting the parameters
 
 Use the parameters to build the dimensions, or columns, that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
