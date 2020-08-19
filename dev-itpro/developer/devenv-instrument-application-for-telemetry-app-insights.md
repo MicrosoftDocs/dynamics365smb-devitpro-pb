@@ -41,7 +41,7 @@ To create a custom telemetry event, use a LOGMESSAGE method in AL code where you
 
 There are two variations of the LOGMESSAGE method. The difference is that one method uses a dictionary object to define custom dimensions for the trace event. The other method includes two overloads so you don't have to construct a dictionary. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
 
-## Using a dictionary
+#### Using a dictionary
 
 The LOGMESSAGE method for using a dictionary for dimensions has the following signature:
 
@@ -49,14 +49,14 @@ The LOGMESSAGE method for using a dictionary for dimensions has the following si
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
 
-### Using dimension overloads
+#### Using dimension overloads
 
 The LOGMESSAGE method for using a dictionary for dimensions has the following signature:
 ```
 Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 
-### Setting the parameters
+#### Setting the parameters
 
 Use the parameters to build the dimensions, or columns, that will show for the event trace in Application Insights. `Message` and `Verbosity` will appear as general dimensions. All other parameters appear as custom dimensions. 
 
