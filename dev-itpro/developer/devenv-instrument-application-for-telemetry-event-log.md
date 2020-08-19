@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Creating custom telemetry events for the Event Log
+# Creating Custom Telemetry Events for Event Log Monitoring
 
 [!INCLUDE[on_prem_only_v2](includes/on_prem_only_v2.md)]
 

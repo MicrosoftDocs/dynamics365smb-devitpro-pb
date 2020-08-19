@@ -28,8 +28,11 @@ The procedure for creating custom telemetry events is different for each resourc
 
 |Reource|Description|Online|On-premises|More information|
 |-----------|-----------|------|-----------|----------------|
-|Event log| Create custom telemetry trace events that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace events by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.||![check](media/check.png)|[See...](devenv-instrument-application-for-telemetry-event-log.md)|
 |Application Insights|Create custom telemetry events that are sent to an Application Insights resource in Azure. [Application Insights](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. <br /><br />Extension developers can specify whether the signal is sent to the extension publisher or VAR partner telemetry resource.<br /><br />You create these custom trace events by using the LOGMESSAGE method in code.|![check](media/check.png)|![check](media/check.png)|[See...](devenv-instrument-application-for-telemetry-app-insights.md)|
+|Event Log| Create custom telemetry trace events that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace events by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.||![check](media/check.png)|[See...](devenv-instrument-application-for-telemetry-event-log.md)|
+
+> [!NOTE]
+> Using Application Insights is recommended. 
 
 <!--
 ### Creating custom telemetry events for the Event Log

@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Creating custom telemetry events for Application Insights
+# Creating Custom Telemetry Events for Application Insights Monitoring
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
 This article explains how to develop extensions to send custom telemetry trace events to Azure Application Insights for viewing and analyzing.
 
-You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up in beforehand. 
+You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up in beforehand. In Application Insights, the custom telemetry events are store in the trace log.   
 
 ## Set up Application Insights 
 

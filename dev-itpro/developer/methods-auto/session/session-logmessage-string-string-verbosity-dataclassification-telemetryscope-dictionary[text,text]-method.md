@@ -47,6 +47,10 @@ Scope of emitting the telemetry.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+For more information about using this method, see [Creating Custom Telemetry Events for Application Insights](../../devenv-instrument-application-for-telemetry-app-insights.md).
+
 ## Example
 
 ```

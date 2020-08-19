@@ -337,8 +337,8 @@
 ### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
 ## Instrumenting for Telemetry
 ### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
