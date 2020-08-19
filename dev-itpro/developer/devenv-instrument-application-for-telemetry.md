@@ -24,7 +24,7 @@ Another aspect of event logging is *telemetry*, which is collecting data about h
 
 There are two different resources where telemetry trace events can be sent for monitoring and analyzing: Event Log and Microsoft Azure Application Insights. By default, the [!INCLUDE[prodshort](includes/prodshort.md)] application is instrumented to emit several system telemetry trace events to these destinations. Custom telemetry trace events enable you to send telemetry data from anywhere in the application code to either of these destinations.
 
-The procedure for creating custom telemetry events is different for each destination. Your choice might also depend on whether you are developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online or on-premises.
+The procedure for creating custom telemetry events is different for each resource. Your choice might also depend on whether you are developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online or on-premises.
 
 |Reource|Description|Online|On-premises|More information|
 |-----------|-----------|------|-----------|----------------|
