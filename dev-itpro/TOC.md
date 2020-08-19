@@ -1,6 +1,16 @@
 ﻿# Get Started
 ## [Get started with development and administration](index.md)
-## [Frequently asked questions](faq.md)
+## Frequently asked questions
+### [Generally asked questions](faq.md)
+### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
+### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
+### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
+### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
+### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
+### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
+### [FAQ for Marketing Validation](developer/readiness/readiness-marketing-validation-faq.md)
+### [FAQ for Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
+### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical Support](technical-support.md)
@@ -13,16 +23,15 @@
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
-## Roles
-### Functional consultant
-#### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Documentation](/dynamics365/business-central/product-get-started?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### Developer
-#### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Documentation](developer/devenv-dev-overview.md)
-### Solution architect
-#### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Documentation](administration/tenant-administration.md)
+## Get started as a functional consultant
+### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Documentation](/dynamics365/business-central/product-get-started?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## Get started as a developer
+### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Documentation](developer/devenv-dev-overview.md)
+## Get started as a solution architect
+### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Documentation](administration/tenant-administration.md)
 ## Readiness
 ### Sell
 #### [Become a Reseller](/dynamics365/business-central/product-sell?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -30,7 +39,6 @@
 #### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
-
 ### Develop
 #### [Extending Business Central](/dynamics365/business-central/about-develop-extensions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!--#### What the partner's responsibilities are -->
