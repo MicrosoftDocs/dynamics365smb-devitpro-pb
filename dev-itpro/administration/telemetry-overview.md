@@ -36,7 +36,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Report generation|Provides information about the execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
 |Web service requests|Provides information about the execution time of web service requests.|Both|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
-## Enabling Application Insights
+## <a name="enable"></a> Enabling Application Insights
 
 Sending telemetry data to Application Insights requires you have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants to send telemetry data to your Application Insights resource. The configuration is different for Online and On-premises:
 

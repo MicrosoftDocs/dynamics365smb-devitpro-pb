@@ -18,16 +18,26 @@ This article explains how to develop extensions to send custom telemetry trace e
 
 You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up in beforehand. 
 
-## Set up application Insights 
+## Set up Application Insights 
 
-The Application Insights resource must be set up beforehand in one or both of the following places:
+An Application Insights resource can be configured in two places:
 
 - The app.json file of the extension.
-- On the [!INCLUDE[server](includes/server.md)] instance.
+
+    For more information, see 
+
+- In the tenant on the [!INCLUDE[server](includes/server.md)] service/server.
+
+    For more information, see [Enabling Application Insights](../administration/telemetry-overview.md#enable)
+
+When you create a custom telemetry event, you can specify a telemetry scope. The telemetry scope enables you to send an event only to the Application Insights resource specified in the extension's app.json or to all available resources.
+
+> [!NOTE]
+> The Application Insights resource is not required to create custom events. 
 
 ## Create custom telemetry events
 
-To create a custom telemetry event, use a LOGMESSAGE method in AL code where you want to trigger the event. The LOGMESSAGE method defines the information that is sent to Application Insights for a specific operation or activity. 
+To create a custom telemetry event, use a LOGMESSAGE method in AL code where you want to trigger the event. The LOGMESSAGE method defines the information that is sent to Application Insights for a specific operation or activity.
 
 There are two variations of the LOGMESSAGE method. The difference is that one method uses a dictionary object to define custom dimensions for the trace event. The other method includes two overloads so you don't have to construct a dictionary. You can use these methods in any object, trigger, or method. The methods have the following signatures:  
 
