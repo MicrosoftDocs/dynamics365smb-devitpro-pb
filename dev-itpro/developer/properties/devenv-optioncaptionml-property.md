@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # OptionCaptionML Property
+
 Sets the strings that are displayed to the user for selecting an option. OptionCaptionML is only used if the field or variable has an [OptionMembers Property](devenv-optionmembers-field-property.md). The OptionMembers property contains the set of values that are acceptable choices, and it is one of these values that is saved in the database or used in AL code.  
 
 > [!NOTE]  

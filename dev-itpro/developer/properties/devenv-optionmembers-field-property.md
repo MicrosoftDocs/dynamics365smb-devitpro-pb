@@ -1,7 +1,7 @@
 ---
 title: "OptionMembers Property (Field)"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/19/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ field(2; OptionField; option)
 }
 ```
 
-For more information, 
+Setting the `OptionMembers` property is necessary to enable the `OptionCaptionML` property. For more information, see [OptionCaptionML Property](devenv-optioncaptionml-property.md).
 
 ## See Also  
 [Properties](devenv-properties.md)  
