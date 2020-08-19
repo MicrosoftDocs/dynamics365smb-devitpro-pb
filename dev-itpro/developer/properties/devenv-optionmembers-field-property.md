@@ -27,6 +27,7 @@ field(2; OptionField; option)
 }
 ```
 
+For more information, 
 
 ## See Also  
 [Properties](devenv-properties.md)  
