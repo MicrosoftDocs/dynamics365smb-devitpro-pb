@@ -13,7 +13,13 @@ ms.author: solsen
 
 # Preprocessor Directives in AL
 
-In AL, like in other programming languages, preprocessor directives are used to make code conditional. Any code can be made conditional, including table fields. Symbols are defined in the manifest file or at the beginning of a source file. 
+In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable expand and collapse in code. Preprocessor directives can be divided into the following groups:
+
+- Conditional directives (for example, if/else)
+- Regions (enables expand/collapse)
+- Pragmas (for example, to suppress code)
+
+Any code can be made conditional, including table fields. Symbols are defined in the manifest file or at the beginning of a source file. 
 
 > [!NOTE]  
 > There are currently no built-in symbols.
