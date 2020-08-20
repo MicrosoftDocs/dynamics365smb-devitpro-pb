@@ -29,19 +29,14 @@ The following AL preprocessor directives are supported. For examples, see the [E
 |Preprocessor directive |Description |
 |-----------------------|------------|
 |#if                    | Specifies the start of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol is defined. |
-|#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluates to `true`, the compiler will evaluate code between #else and #endif. |
+|#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluates to `true`, the compiler will evaluate code between `#else` and `#endif`. |
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
 |#endif                 | Specifies the end of a conditional clause that starts with `#if`. |
 |#define                | Defines a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. |
 |#undef                 | Undefines a symbol.  |
-|#warning               | Specifies a compiler warning from code.  |
-|#error                 | Specifies a compiler error from code. |
 |#region                | Specifies a block of code that you can expand or collapse. |
 |#endregion             | Specifies the end of a #region block of code. |
-|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. |
-|#disable               | ? |
-|#restore               | ? |
-|#enable                | ? |
+|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions; such as `disable`, `restore`, and `enable`.|
 
 ## Defining symbols
 
