@@ -50,9 +50,9 @@ The following table explains the custom dimensions included in a **Web Services 
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|alObjectId|Specifies the ID of the AL object that was run by request.<sup>[\[1\]](#*)</sup>|
-|alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#*)</sup>|
-|alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#*)</sup>|
+|alObjectId|Specifies the ID of the AL object that was run by request.<sup>[\[1\]](#1)</sup>|
+|alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
+|alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
@@ -63,8 +63,8 @@ The following table explains the custom dimensions included in a **Web Services 
 |eventId|**RT0008**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |httpStatusCode |Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**401**<br />Access denied. The user who made the request doesn't have proper permissions. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). </li><li>**404**<br />Not found. The given endpoint was not valid. For more information, see [Publishing a Web Service](../webservices/publish-web-service.md)</li><li>**408**<br />Request timed out. The request took longer to complete than the threshold configured for the service. For information about this threshold in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataServicesOperationTimeout setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**429**<br /> Too Many Requests. The request exceeded the maximum simultaneous requests allowed on the service. For information about this threshold in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataMaxConnections setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li></ul><br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.3.|
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#*)</sup> <sup>[\[2\]](#2)</sup>|
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<sup>[\[1\]](#*)</sup> <sup>[\[2\]](#2)</sup>|
+|sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
 |totalTime|Specifies the amount of time it took to process the request.<sup>[\[2\]](#2)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
