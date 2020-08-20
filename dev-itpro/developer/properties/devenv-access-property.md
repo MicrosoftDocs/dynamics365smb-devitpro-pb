@@ -3,7 +3,7 @@ title: "Access Property"
 description:
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,8 +18,8 @@ author: SusanneWindfeldPedersen
 
 Sets the object accessibility level, which controls whether the object can be used from other code in your module or other modules. If the `Access` property is not specified, the default is `Public`.
 
-> [!NOTE]  
-> This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection based mechanisms such as RecordRef. 
+> [!IMPORTANT]  
+> This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection based mechanisms such as RecordRef. Setting the object accessibility level as `Access = Internal;` cannot be used as a security feature.
 
 ## Applies to  
 
@@ -86,6 +86,7 @@ codeunit 50113 MyCodeunit
 ```
 
 ## See Also  
+
 [Properties](devenv-properties.md)  
 [Extensible Property](devenv-extensible-property.md)  
 [Protected Variables](../devenv-protected-variables.md)
