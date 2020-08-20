@@ -19,7 +19,7 @@ In AL, like in other programming languages, preprocessor directives can be used 
 - Regions (enables expand/collapse)
 - Pragmas (for example, to suppress code)
 
-Any code can be made conditional, including table fields. Symbols are defined in the manifest file or at the beginning of a source file. 
+Any code can be made conditional, including table fields. Symbols are defined in the `app.json` file or at the beginning of a source file. 
 
 > [!NOTE]  
 > There are currently no built-in symbols.
@@ -40,11 +40,13 @@ The following AL preprocessor directives are supported. For examples, see the [E
 
 ## Defining symbols
 
-Symbols can be defined in the manifest file. The syntax is the following:
+Symbols can be defined globally in the `app.json` file. A symbol can also be defined using the `#define` directive in code, but if symbols are defined in the `app.json` file, they can be used globally. The following example defines `DEBUG` as a global symbol. This can then be used from code as illustrated in the [Conditional code](devenv-directives-in-al.md#conditional-code) example below.
 
 ```
-
+"preprocessorSymbols": [ "DEBUG" ],
 ```
+
+<!-- document this in the app.json file too, with the different options -->
 
 ## Examples
 
