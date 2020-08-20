@@ -70,7 +70,7 @@ The following table explains the custom dimensions included in a **Web Services 
 
 <sup>1</sup><a name="1"></a>This dimension is not relevant for $metadata calls, so it will not have a value.
 
-<sup>2</sup><a name="2"></a>*From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
+<sup>2</sup><a name="2"></a>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 
 ### Example trace
 
