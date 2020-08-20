@@ -17,7 +17,7 @@ In AL, like in other programming languages, preprocessor directives can be used 
 
 - Conditional directives (for example, if/else)
 - Regions (enables expand/collapse)
-- Pragmas (for example, to suppress code)
+- Pragmas (for example, to suppress code warnings)
 
 Any code can be made conditional, including table fields. Symbols are defined in the `app.json` file or at the beginning of a source file. 
 
