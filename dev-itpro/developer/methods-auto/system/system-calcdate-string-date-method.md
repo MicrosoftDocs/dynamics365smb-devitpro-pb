@@ -91,10 +91,10 @@ var
     Date1: Date;
     Date2: Date;
     Date3: Date;
-    Text000: TextConst ENU = 'The reference date is: %1 \\';  
-    Text001: TextConst ENU = 'The expression: %2 returns %3\\';  
-    Text002: TextConst ENU = 'The expression: %4 returns %5\\';  
-    Text003: TextConst ENU = 'The expression: %6 returns %7';
+    RefDateTxt: Label 'The reference date is: %1 \\';  
+    Expr1Txt: Label 'The expression: %2 returns %3\\';  
+    Expr2Txt: Label 'The expression: %4 returns %5\\';  
+    Expr3Txt: Label 'The expression: %6 returns %7';
 begin 
     Expr1 := '<CQ+1M-10D>'; // Current quarter + 1 month - 10 days  
     Expr2 := '<-WD2>'; // The last weekday no.2, (last Tuesday)  
@@ -103,7 +103,7 @@ begin
     Date1 := CALCDATE(Expr1, RefDate);  
     Date2 := CALCDATE(Expr2, RefDate);  
     Date3 := CALCDATE(Expr3, RefDate);  
-    MESSAGE(Text000 + Text001 + Text002 + Text003,  
+    Message(RefDateTxt + Expr1Txt + Expr2Txt + Expr3Txt,  
       RefDate, Expr1, Date1, Expr2, Date2, Expr3, Date3);  
 end;
 ```  

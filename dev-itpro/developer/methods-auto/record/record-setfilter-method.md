@@ -2,7 +2,7 @@
 title: "SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,13 @@ Replacement values to insert in replacement fields in the filter expression. The
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+`SetFilter` does not filter for empty values. For example, if you set `MyRecord.SetFilter(MyTextField, '');` no filter is applied.
+
 ## See Also
+
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

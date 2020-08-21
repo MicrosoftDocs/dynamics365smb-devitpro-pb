@@ -2,7 +2,7 @@
 title: "App Management API"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -324,11 +324,15 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
 
 {
-    "roles": [
-        "Reader"
-    ]
+    "aadTenantId":  "20ba9ed9-d37b-4db0-ade4-f64322ad7c02",
+    "Type":  "User",
+    "roles":  [
+                  "Reader"
+              ]
 }
 ```
+
+When using `Type:"Application"`, the `aadTenantId` must not be used.
 
 #### Example Response
 
@@ -443,6 +447,9 @@ Uploads an .app file into the specified `app` and `country` based on the provide
 ```
 POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions
 ```
+
+> [!IMPORTANT]
+> Make sure that you registered your app with the service and added a country to it, before you attempt to upload the app version.
 
 #### Parameters
 

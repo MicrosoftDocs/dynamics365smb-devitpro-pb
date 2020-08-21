@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # TestTableRelation Property
 Sets whether to include this field when evaluating field relations between primary and secondary indexes.  
   
-## Applies To  
+## Applies to  
  Fields  
   
 ## Property Value  

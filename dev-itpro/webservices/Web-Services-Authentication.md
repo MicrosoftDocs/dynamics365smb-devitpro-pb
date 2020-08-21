@@ -45,7 +45,7 @@ Follow these instructions to generate a web service access key for a user. You p
   
     The access key is automatically generated and appears in the **Web Service Access Key** field.  
   
-### Implement the Web Service Access Key  
+### Implement the Web Service Access Key
 Typically, you would create a user account strictly for web services, and then use the account's credentials, which include the user name and access key, in a web service application. For example, if you develop your own web service application, then you can design your application to programmatically pass the credentials to the web service. Some applications let you provide the connection credentials through a user interface. The steps for implementing the web service access key are done in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.  
 
   

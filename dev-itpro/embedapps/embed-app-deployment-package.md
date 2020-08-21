@@ -35,7 +35,7 @@ Deployment routine will pull the apps that are uploaded via the App Management A
 
 ### Using Docker
 
-We strongly recommend you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Docker containers and the [NAVContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper) to prepare the BACPAC files. 
+We strongly recommend you run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Docker using the [NAVContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper) to prepare the BACPAC files. 
 
 > [!IMPORTANT]
 > You must only use the container images available in the  "mcr.microsoft.com/businesscentral/sandbox" container registry for your online deployments.
@@ -50,7 +50,7 @@ With the Docker container, you can: 
 For more information about these and other things you can do, see [NAVContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
 
 > [!IMPORTANT]
-> If your Embed app uses a customized Base Application, you must create your own unique App ID and use it in the app.json file of your customized Base App. You must also change the Publisher property and the Application name to your own in the app.json file. You cannot use the original values of the Microsoft Base Application unless you've extracted all your customizations from that app. The System Application must not be customized and must be used as a dependency for your customized Base Application. Use the `Microsoft_Application.app` file to logically incapsulate all of the extensions making up your solution instead of referencing each extension separately, to allow other apps to refer to this solution via the `Microsoft_Application.app`. For more information about the Microsoft_Application.app, see [The Microsoft_Application.app File](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file).
+> If your Embed app uses a customized Base Application, you must create your own unique App ID and use it in the app.json file of your customized Base App. You must also change the Publisher property and the Application name to your own in the app.json file. You cannot use the original values of the Microsoft Base Application unless you've extracted all your customizations from that app. The System Application must not be customized and must be used as a dependency for your customized Base Application. Use the `Microsoft_Application.app` file to logically incapsulate all of the extensions making up your solution instead of referencing each extension separately, to allow other apps to refer to this solution via the `Microsoft_Application.app`. For more information about the Microsoft_Application.app, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 ### .NET add-ins
 
@@ -71,13 +71,13 @@ No users can sign in to your service if these tables are empty.
 
 For more information about these tables, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/).
 
-The entitlements can be copied from the standard Business Central Demo Database available on the Docker containers. Consult the documentation provided for the Clean-BCContainerDatabase and New-BCContainer commands included with the NAVContainerHelper PowerShell module. 
+The entitlements can be copied from the standard Business Central Demo Database available in sandbox Docker containers. Consult the documentation provided for the `Clean-BCContainerDatabase` and `New-BCContainer` commands included with the NAVContainerHelper PowerShell module. 
 
 ### Tenant database
 
 You can include your own specific demonstration data and companies in the tenant template database. It can help ensure that the new sign-ups get up and running quicker. However, in the future, we recommend you to use RapidStart packages to populate the companies with the demo data.  
  
-Once you compose and test your solution in Docker container, you can export the application and tenant template databases. You export the database to BACPAC format by using the Export-NavContainerDatabasesAsBacpac command. This command is included in the NAVContainerHelper PowerShell module.  
+Once you compose and test your solution on Docker, you can export the application and tenant template databases. You export the database to BACPAC format by using the `Export-BCContainerDatabasesAsBacpac` command. This command is included in the NAVContainerHelper PowerShell module.  
  
 We strongly recommend using this command for creating the BACPAC files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover BACPAC-related issues with deployments. So, remember to update the NAVContainerHelper PowerShell module for every new iteration.  
  
@@ -191,7 +191,7 @@ Sample of the manifest.json file.
     "signInHelpUrl": "https://fabrikam.com/au/contact", 
     "comingSoonUrl": "https://go.microsoft.com/fwlink/?linkid=2047422", 
     "blogUrl": "https://go.microsoft.com/fwlink/?linkid=2076643", 
-    "contactSalesUrl": "https://go.microsoft.com/fwlink/?linkid=828707", 
+    "contactSalesUrl": "https://go.microsoft.com/fwlink/?linkid=828707" 
   }, 
   "apps":  [ 
                  { 

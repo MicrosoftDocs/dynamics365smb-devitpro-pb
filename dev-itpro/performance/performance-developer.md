@@ -36,7 +36,7 @@ To avoid unnecessary recalculation of expensive results, consider caching the da
 
 Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
 
-### Pattern - Do less 
+### Pattern - Do less
 
 One way to speed up things is to reduce the work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. An additional benefit of a simple page with few UI elements can also be ease of use and navigation.
 
@@ -50,12 +50,13 @@ To get to a responsive UI fast, consider using Page Background Tasks for calcula
 
 For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
-## Writing efficient Web Services 
+## Writing efficient Web Services
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server (the endpoint) and as seen from the consumer (the client). 
 
 ### Endpoint performance  
 
+#### Anti-patterns (do not do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
 
 Things that have historically caused performance on pages that are exposed as endpoints are:
@@ -64,9 +65,20 @@ Things that have historically caused performance on pages that are exposed as en
 - Many SIFT fields 
 - FactBoxes 
  
+Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take a lot of time to calculate. 
+
+Don't use temp tables as a source if you have a lot of records. Temp tables based APIs are a performance hit. The server has to fetch and insert every record, and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
+
+Don't insert child records belonging to same parent in parallel. This causes locks on Sales Header and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
+
+#### Performance patterns (do this)
 Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
 The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+
+For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
+
+If you want OData endpoints that work as data readers (e.g. for consumption in PowerBI), then consider using API queries and set DataAccessIntent = ReadOnly, see [API Query Type](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-querytype) and [DataAccessIntent Property](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataaccessintent-property).
 
 ### Web service client performance 
 
@@ -81,7 +93,7 @@ Handling Status Code 429 requires the client to adopt a retry logic while provid
 - exponential back-off
 - randomization.
 
-Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit, but splitting the request into multiple requests - and then dealing with potential 429, by applying a back off strategy.
+Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit by splitting the request into multiple requests, then dealing with potential 429 codes by applying a back off strategy.
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
@@ -108,11 +120,14 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When concatenating strings, make sure to use the `TextBuilder` datatype and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
+When concatenating strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
 Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). For more information, see [List Data Type](../developer/methods-auto/list/list-data-type.md).
+
+Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `Media` and `MediaSet` data types have a couple advantages over the `Blob` data type when working with images. First of all, a thumbnail version of the image is generated when you save the data. You can use the thumbnail when loading a page and then load the larger image asynchronously using a page background task. Second, data for `Media` and `MediaSet` data types is cached on the client. Data for the `Blob` data type is never cached on the server. It's always fetched from the database.
+
 
 ### <a name="runasync"></a>Pattern - Run async (and parallelize)
 
@@ -168,6 +183,8 @@ Read more about query objects here:
 - [Query overview](../developer/devenv-query-overview.md)  
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
+
+
 
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
@@ -237,7 +254,7 @@ Read more about SIFT here:
 
 The following article can help you find missing SIFT indexes on FlowFields:
 
-[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md). 
+[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
 
 ### How AL relates to SQL 
 

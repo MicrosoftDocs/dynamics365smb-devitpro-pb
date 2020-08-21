@@ -44,7 +44,7 @@ The following list describes the meaning of each of the numbers in a full versio
 
 In other words, if you see a version number such as `16.1.23456.26323`, then it means major version *16*, update number *1*, build number *23456*, and hotfix number *26323*.
 
-The same version numbers are used in the on-premises Docker images that you can get for development purposes, and for the on-premises cumulative updates.  
+The same version numbers are used to identify artifacts for running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Docker.  
 
 ## See Also
 

@@ -196,6 +196,8 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
 6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
+    To open the settings.json, select **File** > **Preferences** > **Settings**, then look for the **Edit settings.json** link. For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
+
     Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
 
     ```
@@ -206,7 +208,6 @@ In this task, you will create a AL project in Visual Studio code that you will u
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
     ]
     ```
-    For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
     > [!NOTE]  
     > Adding assemblies to the folders in your assembly probing paths is not automatically detected by the compiler. You must restart Visual Studio Code for the changes to be detected.
@@ -223,7 +224,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
         ```
 
         We recommend that you set the "version" to the same version as the C/AL application.  
-    - Set the `target` to `OnPrem`.
+    - Add the setting `"target": "OnPrem"` somewhere in the file.
     - Change the `idRange` to include all the IDs used by your base application (or leave blank).
     - Delete the values in the `dependencies` parameter.
 

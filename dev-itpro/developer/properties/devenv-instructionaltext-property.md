@@ -16,13 +16,26 @@ caps.latest.revision: 13
 # InstructionalText Property
 Sets the text used for instructions in the UI.  
   
-## Applies To  
+## Applies to  
   
 -   Page object  
   
 -   RequestPage
 
 -   PageGroup
+
+## Parameters
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the InstructionalText is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the InstructionalText, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific InstructionalText.
 
 ## Remarks
 

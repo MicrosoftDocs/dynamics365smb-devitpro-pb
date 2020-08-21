@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/22/2020
+ms.date: 04/25/2020
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -58,7 +58,7 @@ About two months before a major update, you can try out new functionality in pre
 
 Sometimes, the out-of-the-box demo environment is not what you want to show your prospects. For example, if you want to demonstrate integration with machinery, or your solution is an ISV solution that fully or partially replaces the default experience. In those types of scenarios, the free trial is probably not the best starting point.  
 
-Instead, you might want to [deploy [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises](../deployment/deployment-scenarios.md) with your customizations or other solutions. Or you could set up a dedicated environment based on the [[!INCLUDE [prodshort](../developer/includes/prodshort.md)] container-based image on Docker](../developer/devenv-running-container-development.md).  
+Instead, you might want to [deploy [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises](../deployment/deployment-scenarios.md) with your customizations or other solutions. Or you could set up a dedicated environment with [[!INCLUDE [prodshort](../developer/includes/prodshort.md)] running on Docker](../developer/devenv-running-container-development.md).
 
 Alternatively, you can create a free trial with a Microsoft 365 demo account from [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com), and then create a dedicated environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that you then apply your solution to, such as by deploying your app straight from Visual Studio Code, or any other configuration changes that you want to make. For inspiration for how to get started, see [Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](test-environment.md).  
 

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnPreXMLport Trigger
 Runs after the table views and filters are set and before the XMLport is run.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## See Also  

@@ -212,10 +212,11 @@ For more information, see [Connecting a Server Instance to a Database](../admini
     - Table 829 DO Payment Trans. Log Entry
     - Table 1510 Notification Template
 
-    When you delete a table object, in the **Delete** confirmation dialog box that appears, set the **Synchronize Schema** option to **Force**.
-
+    
     > [!IMPORTANT]
-    > In this step, it is very important that you do not use the **Sync. Schema For All Tables** option from the **Tools** menu.
+    > When you delete a table object, in the **Delete** confirmation dialog box that appears, set the **Synchronize Schema** option to **Force**.
+    >
+    > In this step, it's very important that you do not use the **Sync. Schema For All Tables** option from the **Tools** menu.
 
 4. (Upgrade from [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If the old database includes test runner codeunits, you will get errors on these codeunits that the OnBeforeTestRun and OnAfterTestRun trigger signatures are not valid. To fix these issues, you change the signature of the OnBeforeTestRun and OnAfterTestRun triggers to include the *TestPermission* parameter.
 
@@ -274,7 +275,7 @@ A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and u
 1. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
     ```  
-    Start-NavDataUpgrade -ServerInstance ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
+    Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
     ```  
     
     Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.
@@ -291,7 +292,7 @@ A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and u
     Run the following command to get a list of any errors that have occurred:
 
     ``` 
-    Get-NAVDataUpgrade ServerInstanceName> -ErrorOnly
+    Get-NAVDataUpgrade -ServerInstance <ServerInstanceName> -ErrorOnly
     ``` 
 
     Resolve the errors before going to the next task.

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnInitXMLport Trigger
 Runs when the XMLport is loaded and before any table views and filters are set.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## See Also  

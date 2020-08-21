@@ -3,7 +3,7 @@ author: solsen
 title: "Testing the Advanced Sample Extension"
 description: "Includes test code for the advanced example extension."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/06/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -92,13 +92,19 @@ We will be using the Application Test Toolkit to automate and run the tests that
 
 In order to install the Application Test Toolkit:
 1. Open the NavContainerHelper prompt found on the Desktop. You will see a list of functions that you can run on the container.
-2. Run the `Import-TestToolkitToNavContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
+2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
 ```
-Import-TestToolkitToNavContainer -containerName <name-of-container> 
+Import-TestToolkitToBCContainer -containerName <name-of-container> 
 ```
 
-Alternatively, if you use the `New-NavContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+Alternatively, if you use the `New-BCContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+
+Without further configuration, the Import-TestToolkitToBCContainer and New-BCContainer with -includeTestToolkit will install the framework, the libraries, and all base application tests. Both the Import-TestToolkitToBCContainer and New-BCContainer cmdlets support two additional parameters, which limits the number of apps installed:
+
+- `-includeTestFrameworkOnly` installs the Test Framework only. This option includes the Test Runner and low-level functions such as *Any* and *Assert*.
+
+- `-includeTestLibrariesOnly` installs the Test Framework and the Test Libraries only. Beside the Test Framework, this option includes functionality that is shared between base application tests.
 
 ## Describing your tests 
 To help you design the relevant tests for your functionality, you can write scenarios that outline what you want to test, and you can write test criteria in the GIVEN-WHEN-THEN format. By adding comments based on feature, scenario, and GIVEN-WHEN-THEN, you add structure to your test code and make tests readable. 
@@ -299,12 +305,12 @@ codeunit 50103 "Customer Rewards Test"
         LibraryLowerPermissions: Codeunit "Library - Lower Permissions"; 
         LibrarySales: Codeunit "Library - Sales"; 
         MockCustomerRewardsExtMgt: Codeunit MockCustomerRewardsExtMgt; 
-        ActivatedTxt: TextConst ENU = 'Customer Rewards should be activated'; 
-        NotActivatedTxt: TextConst ENU = 'Customer Rewards should not be activated'; 
-        BronzeLevelTxt: TextConst ENU = 'BRONZE'; 
-        SilverLevelTxt: TextConst ENU = 'SILVER'; 
-        GoldLevelTxt: TextConst ENU = 'GOLD'; 
-        NoLevelTxt: TextConst ENU = 'NONE'; 
+        ActivatedTxt: Label 'Customer Rewards should be activated'; 
+        NotActivatedTxt: Label 'Customer Rewards should not be activated'; 
+        BronzeLevelTxt: Label 'BRONZE'; 
+        SilverLevelTxt: Label 'SILVER'; 
+        GoldLevelTxt: Label 'GOLD'; 
+        NoLevelTxt: Label 'NONE'; 
 
     [Test] 
 

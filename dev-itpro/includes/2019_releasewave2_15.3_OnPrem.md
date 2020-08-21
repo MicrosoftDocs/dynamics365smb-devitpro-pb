@@ -1,0 +1,1 @@
+<token>**INTRODUCED IN:** Business Central 2019 Release Wave 2, update 15.3, for on-premises only<token>

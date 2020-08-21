@@ -2,7 +2,7 @@
 title: "Record Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -96,6 +96,7 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, TextConst)](record-testfield-joker-textconst-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, String)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|
 |[FieldError(Any [, String])](record-fielderror-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
 |[TransferFields(var Record [, Boolean])](record-transferfields-table-boolean-method.md)|Copies all matching fields in one record to another record.|
