@@ -13,7 +13,7 @@ author: jswymer
 
 # Data Audit Fields in [!INCLUDE[prodshort](includes/prodshort.md)]
 
-[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)] includes development features for tagging business data with specific classifications. Specifically, this includes data that is stored in table fields of the database and telemetry data that is emitted from the application.    
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
 [!INCLUDE[prodshort](includes/prodshort.md)] has four data audit fields present on all tables:
 
@@ -24,14 +24,14 @@ author: jswymer
 
 ## Data audit fields
 
-The data audit fields have the following static characteristics:
+Data audit fields are exposed in the platform code and from AL code, allowing you to code against them. The data audit fields have the following static characteristics:
 
 |Field name (AL) |Column name (database)|Datatype|Field number|
 |----------------|----------------------|--------|------------|
 |SystemCreatedBy  |$SystemCreatedBy |GUID ||
-|SystemCreatedOn|$SystemCreatedOn |Datetime||
+|SystemCreatedAt|$SystemCreatedAt |Datetime||
 |SystemLastModifiedBy|$SystemLastModifiedBy |GUID||
-|SystemLastModifiedOn|$SystemLastModifiedOn |Datetime||
+|SystemLastModifiedAt|$SystemLastModifiedAt |Datetime||
 
 ## Runtime
 
