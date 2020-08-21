@@ -566,6 +566,7 @@
 # Security
 ## [Security and Protection Overview](security/security-and-protection.md)
 ## [Application](security/security-application.md)
+## [Tips for Business Users](security/security-users.md)
 ## [Online](security/security-online.md)
 ## [On-Premises](security/security-onpremises.md)
 <!--
