@@ -81,3 +81,4 @@ The following articles explain to secure client, web service, and PowerBI connec
 
 [Security and Protection](security-and-protection.md)  
 [Data Security](data-security.md)  
+[Security Tips for Business Users](security-users.md)  
