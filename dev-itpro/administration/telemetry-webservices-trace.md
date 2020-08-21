@@ -68,7 +68,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |totalTime|Specifies the amount of time it took to process the request.<sup>[\[2\]](#2)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
-<sup>1</sup><a name="1"></a>This dimension is not relevant for $metadata calls, like `https://localhost:7048/BC/ODataV4/$metadata`, so it will not have a value.
+<sup>1</sup><a name="1"></a>This dimension is not relevant for $metadata calls, like `https://localhost:7048/BC/ODataV4/$metadata`, so it will not be in the trace.
 
 <sup>2</sup><a name="2"></a>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 
