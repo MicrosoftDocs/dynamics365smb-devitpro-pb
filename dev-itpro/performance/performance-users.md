@@ -18,15 +18,17 @@ This section describes how you can work with end-users to improve the performanc
 
 ## Choosing a desktop browser
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports multiple browsers that each offer a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface. See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports multiple browsers that each offer a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
 
-- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy, and switch to one of our recommended modern browsers, such as the [new Microsoft Edge](https://www.microsoft.com/edge/). Modern browsers typically offer significantly better performance. 
+- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy, and switch to one of our recommended modern browsers, such as the [new Microsoft Edge](https://www.microsoft.com/edge/). Modern browsers generally offer better performance. 
 
 > [!IMPORTANT] 
-> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to the new Microsoft Edge before that date.
+> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to the new Microsoft Edge before support ends.
 
 - Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance features and optimizations are only available for modern browsers.
 - Keep your browser always updated to the latest version which may include the latest performance enhancements.
+
+See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
 
 ## Choosing a network connection
 
