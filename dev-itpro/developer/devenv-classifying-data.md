@@ -48,7 +48,7 @@ When you upgrade an application from a [!INCLUDE[d365fin_md](includes/d365fin_md
 
 Run the script below from Developer Shell:
 ``` 
-Invoke-NAVCodeunit -Tenant <TenantID> -CompanyName <CompanyName> -CodeunitID 1750 -MethodNAme ‘SyncAllFields’ -ServerIntance <ServerInstance>
+Invoke-NAVCodeunit -Tenant <TenantID> -CompanyName <CompanyName> -CodeunitID 1750 -MethodNAme 'SyncAllFields' -ServerIntance <ServerInstance>
 ```
 
 ### Bulk-classifying data
