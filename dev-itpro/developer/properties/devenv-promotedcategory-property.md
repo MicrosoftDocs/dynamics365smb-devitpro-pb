@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 
 Sets a category for a promoted action.  
   
-## Applies To  
+## Applies to  
   
 - Page actions  
 

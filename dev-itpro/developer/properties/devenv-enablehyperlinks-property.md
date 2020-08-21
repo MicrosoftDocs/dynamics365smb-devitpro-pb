@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # EnableHyperlinks Property
 Sets whether hyperlinks to URLs are allowed on reports.  
   
-## Applies To  
+## Applies to  
  Client report definition (RDLC) report layouts  
   
 ## Property Value  

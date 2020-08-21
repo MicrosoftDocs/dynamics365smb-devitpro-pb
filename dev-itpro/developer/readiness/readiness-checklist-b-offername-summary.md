@@ -34,7 +34,7 @@ When creating a name for your offer, you can use the following two naming struct
 
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
-| 0.D **Offer Name** | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
+| 0.C **Offer Name** | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
 
 **How to create a strong app name for your offer** (Do’s and don’ts)?
 How to create a good offer name

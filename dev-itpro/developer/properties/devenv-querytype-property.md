@@ -13,7 +13,7 @@ ms.author: solsen
 # QueryType Property
 Sets the type of query to create. The options for this property are `Normal` and `API`.
 
-## Applies To  
+## Applies to  
 - Queries
 
 ## Syntax

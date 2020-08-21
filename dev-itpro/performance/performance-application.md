@@ -34,11 +34,11 @@ When the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database need
 
 Number series in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are shared resources that sometimes cause locking issues. Not all records that you create in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are financial transactions that must use sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that are assigned a number from a number series. They aren't subject to financial auditing and can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. For more information, see [Gaps in Number Series](/dynamics365/business-central/ui-create-number-series#gaps-in-number-series).
 
-### Be cautious with the **Copy company** operation
+### Be cautious with the **Rename/Copy company** operations
 
-The **Copy company** operation isn't intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operation is likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operation uses resources on the database, which can in turn cause resource starvation for users working in other companies.  
+The **Rename company** and **Copy company** operations are not intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operations are likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operations use resources on the database, which can in turn cause resource starvation for users working in other companies.  
 
-If you must do a **Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.
+If you must do a **Rename/Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.
 
 ## Periodic activities that maintain performance
 

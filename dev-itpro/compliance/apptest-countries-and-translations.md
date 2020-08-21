@@ -19,7 +19,7 @@ This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includ
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
 
-# Countries and regions
+## Countries and regions
 
 |Country/Region|Localized by|Availability|
 |-----------|---------|------------|
@@ -125,6 +125,7 @@ This table gives an overview of supported languages and how application language
 |Turkish (Turkey)|tr-TR|Partner, Available on AppSource (pending)|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
+|Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|
 
 > [!NOTE]  
 > Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.

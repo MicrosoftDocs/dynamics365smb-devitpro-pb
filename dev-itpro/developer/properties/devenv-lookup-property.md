@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Lookup Property
 Use this property to provide a lookup window for a text box.  
   
-## Applies To  
+## Applies to  
   
 -   Page Fields  
   

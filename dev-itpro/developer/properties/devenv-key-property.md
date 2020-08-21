@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Key Property
 Use this property to identify the field or fields that make up this key.  
   
-## Applies To  
+## Applies to  
  Keys  
   
 ## Remarks  

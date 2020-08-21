@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # UseDefaultNamespace Property
 Specifies whether the value in default namespace should be used for both output and input XML documents.  
   
-## Applies To  
+## Applies to  
   
 -   XMLports  
   

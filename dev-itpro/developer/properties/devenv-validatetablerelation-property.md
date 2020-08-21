@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ValidateTableRelation Property
 Sets whether to validate a table relationship.  
   
-## Applies To  
+## Applies to  
   
 -   Fields  
   

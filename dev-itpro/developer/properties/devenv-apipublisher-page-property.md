@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # APIPublisher Property (Page)
 Sets the publisher of the API endpoint the page is exposed in. The syntax for providing a publisher is illustrated in the example below:
 
-## Applies To  
+## Applies to  
 
 - Page object 
 
@@ -23,7 +23,8 @@ Sets the publisher of the API endpoint the page is exposed in. The syntax for pr
 APIPublisher = 'contoso';
 ```
 >[!NOTE]
-> The property **APIPublisher** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**.
+> The property **APIPublisher** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](devenv-api-pagetype.md).
+
 
 ## See Also  
 [Properties](devenv-properties.md)   

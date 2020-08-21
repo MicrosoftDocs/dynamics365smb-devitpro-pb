@@ -10,10 +10,10 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Development of a Vertical Solution
+
 If you like to create an industry specific solution, then there are several reasons why you would want to choose [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]:
 
 - [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] provides a proven ERP platform and application for your vertical solution. 
@@ -36,6 +36,7 @@ Learn more details on how you can build a Business Central offering in the **Rea
 - This business management solution extends the powerful financial management functionality of Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to provide Professional Services Automation features for service and project based businesses. Progressus Software’s functionality spans all the important processes – resource management, project management, sales and marketing, human capital management, and financial management – to provide unparalled insight and control of critical business functions for different project based roles. 
 
 ## See Also
+
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
 [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  

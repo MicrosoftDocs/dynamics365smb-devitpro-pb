@@ -17,7 +17,7 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 
 For information about the **Enabled** property for Profiles, see [Enabled (Profile) Property](devenv-enabled-profile-property.md).
 
-## Applies To  
+## Applies to  
 
 - Group, part, and field controls on pages  
 - Page actions  

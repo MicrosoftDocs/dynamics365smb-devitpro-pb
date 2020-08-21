@@ -3,7 +3,7 @@ title: "Creating an RDL Layout Report"
 description: "Describes the steps involved in creating a report that uses an RDL layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ ms.author: solsen
 When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to think about; defining the report dataset of data items and columns, and then designing the report layout. These steps will show you how to create a very simple report based on an RDL layout. For more information about the report object, see [Report Object](devenv-report-object.md). 
 
 > [!IMPORTANT]  
-> RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example. like sending emails) compared to Word layouts. When developing layouts for document reports, we recommend that you design Word layouts instead of RDL. With Word layouts, reports are not impacted by the security constraints on sandbox appdomains like they are with RDL layouts. From a service perspective, RDL layouts are not trusted, so they will run in a sandbox appdomain that only lives for the current report invocation.
+> RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example. like sending emails) compared to Word layouts. When developing layouts for document reports, we recommend that you design Word layouts instead of RDL. With Word layouts, reports are not impacted by the security constraints on sandbox app domains like they are with RDL layouts. From a service perspective, RDL layouts are not trusted, so they will run in a sandbox app domain that only lives for the current report invocation.
 
 To create and modify RDL report layouts, you use SQL Server Report Builder or Visual Studio Report Designer. For information about required versions of these tools, see [System Requirements](../deployment/system-requirement-business-central.md).
 
@@ -70,7 +70,16 @@ To facilitate testing your report layout, the following simple example extends t
 
 You will now see the generated report in preview mode.
 
+> [!NOTE]  
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
+    ```
+    "al.compilationOptions": {
+            "generateReportLayout": true
+        }
+    ```
+
 ## See Also
+
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  

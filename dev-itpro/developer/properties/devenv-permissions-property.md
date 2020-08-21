@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Permissions Property
 Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.  
   
-## Applies To  
+## Applies to  
   
 -   Codeunits  
   
