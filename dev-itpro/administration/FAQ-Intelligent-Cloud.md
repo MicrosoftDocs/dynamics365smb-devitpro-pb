@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions | Microsoft Docs
+title: FAQ | Microsoft Docs
 description: Get answers to your questions about connecting to the intelligent cloud from an on-premises solution through Business Central.
 author: bmeier94
 
@@ -7,12 +7,11 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 04/01/2020
+ms.date: 05/26/2020
 ms.author: bmeier
-
 ---
 
-# Frequently Asked Questions about Connecting to the Intelligent Cloud from On-Premises Solutions
+# FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions
 
 This section contains answers to frequently asked questions about connecting on-premises solutions to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.  
 
@@ -20,11 +19,12 @@ This section contains answers to frequently asked questions about connecting on-
 
 The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can connect the following products in order to provide intelligent insights:
 
-- Dynamics GP 2018 R2
-- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
-- Dynamics NAV 2018 CU 16
+- Dynamics GP (supported major versions)
+- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises (current version + the two previous major versions)
 
-    Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. However, the 2019 release wave 2 removes support for migrating directly from Dynamics NAV 2018 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. You must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan and [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online) in the Migrate to Business Central Online section here.
+  This means that if the current version is version 16, then you can connect to the intelligent cloud if you are on version 16, 15, or 14.  
+
+If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan and [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online) in the Migrate to Business Central Online section here.
     
 <!-- - Dynamics SL 2018 CU 1-->
 
@@ -52,7 +52,7 @@ No, only tables that are available in both your on-premises solution and your [!
 
 When you connect your on-premises solution to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online for intelligent insights, all existing users are automatically added to the *Intelligent Cloud* user group, unless they have the SUPER permission set. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment is read-only, and the data is used to generate intelligent business insights based on your on-premises data for you. We restrict permissions to prevent users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place.  
 
-## Can I ‘turn off’ my intelligent cloud?
+## Can I 'turn off' my intelligent cloud?
 
 You can switch off your connection to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online environment at any point. Once you disable your intelligent cloud configuration, your on-premises solution and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will become independent of one another. If you switch off the connection, and you want to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment as your primary solution to run and manage your business, you must reassign permissions to provide read/write access to the relevant users.  
 
@@ -94,7 +94,7 @@ The extension must be created in the same manner as any other extension. For dat
 
 ## How do I find my SQL connection string?
 
-A connection string to your SQL database can be found in SQL Management Studio or using Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string should look something like this:
+Find the connection string to your SQL database in SQL Management Studio or Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string will look something like this:
 
 *Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;*
 

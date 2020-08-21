@@ -25,6 +25,19 @@ AdditionalSearchTerms = '<term>[,<term>]';
 - Page objects
 - Report objects
 
+## Parameters
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the AdditionalSearchTerms is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the AdditionalSearchTerms, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific AdditionalSearchTerms.
+
 ## Property Values
 
 |Value           |Description                                  |

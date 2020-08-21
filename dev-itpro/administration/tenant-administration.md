@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 04/01/2020
+ms.date: 06/26/2020
 ms.author: edupont
 ---
 
@@ -18,7 +18,7 @@ As an administrator, you can manage [!INCLUDE [prodshort](../developer/includes/
 
 ## Administration as an internal administrator
 
-Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** role in the Office 365 admin center. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Office 365 admin content.  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
 
 ### Administration in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 
@@ -30,6 +30,8 @@ As an internal administrator you have **read-only** access to all areas of [!INC
 > You must have a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] license in order to set up integration to other products, or perform any other tasks in [!INCLUDE [prodshort](../developer/includes/prodshort.md)], except the two mentioned above. For information about licensing, see [Microsoft Dynamics 365 Business Central Licencing Guide](https://aka.ms/BusinessCentralLicensing).
 
 For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+
+You can also use telemetry to track usage and monitor user sessions, for example. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md) and [Managing Sessions](tenant-admin-center-environments.md#managing-sessions).  
 
 ### Administration of a trial
 
@@ -92,28 +94,17 @@ As a reselling partner, you must be the first line of support for your [!INCLUDE
 
 ## Extending trials
 
-An organization can sign up for a free trial of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  
-
-However, sometimes a 30 day trial is not enough to decide if they want to buy [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In that case, they can extend their trial with an additional 30 days. For more information, see [Need More Time to Decide Whether to Subscribe?](/dynamics365/business-central/admin-extend-trial) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
-> [!NOTE]
-> If you are a reselling partner, we recommend that you set up demo environments for prospects that need longer time to decide if they want to buy [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. You can also use demo environments to help customers train their employees, for example. Using the 30 days trials for training should be limited to just that short period. However, demo environments cannot be used for production. For more information, see [Preparing Demonstration Environments](demo-environment.md).
-
-If the prospect wants to extend the trial further than those 30 days, they must contact a [partner](/dynamics365/business-central/across-faq#findpartner). The partner can extend it another 30 days if the delegated administrator signs into the prospect's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and runs the **Extend Trial Period** guide.  
-
-After those additional 30 days, the prospect must either purchase [!INCLUDE[prodshort](../developer/includes/prodshort.md)], or the partner can ask Microsoft for an additional extension of the trial by [contacting Microsoft Support](manage-technical-support.md#escalating-support-issues-to-microsoft).  
-
-> [!TIP]
-> As a reselling partner, you can suggest your prospects sign up for a trial, but you can also help set up a customized demonstration environment based on a sandbox environment or a trial environment. In both cases, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](demo-environment.md).  
+[!INCLUDE [admin-extendtrials](../developer/includes/admin-extendtrials.md)]
 
 ### <a name="premiumtrial"></a>The Dynamics 365 Business Central Premium Trial
 
-In the Partner Center, you can find a special license type called the **Dynamics 365 Business Central Premium Trial** license, which is a very different way to give a prospect or an existing customer a trial experience. If you assigned the **Dynamics 365 Business Central Premium Trial** license to a customer's account in the Partner Center, then that also expires after 30 days. You cannot extend the Premium trial, but you can add one more Premium trial license to give the customer an extra 30 days of trial. But when the second Premium trial expires, then the customer must either convert their trial to a paid subscription, or they must sign up for the viral trial as described above.  
+[!INCLUDE [admin-premiumtrial](../developer/includes/admin-premiumtrial.md)]
 
-For more information, see [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products) in the Partner Center documentation. If you have technical difficulties assigning this license, contact Partner Center support. For more information, see [Report problems with Partner Center](/partner-center/report-problems-with-partner-center).  
+## Data and access when a trial or subscription ends
 
-> [!CAUTION]
-> Make sure you understand the limitations of this type of trial, before you offer it to a prospect or customer. It is easy to convert this type of trial to a paid subscription, but if the prospect needs more than 30 days to decide, or if they want to add more than 25 users, then the viral trial is probably a better fit for them.  
+Trials can expire, and so can a apid subscription, such as if the customer does not renew the subscription or stops payments, or if the customer cancels the subscription.  
+
+[!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
 
 ## See Also
 

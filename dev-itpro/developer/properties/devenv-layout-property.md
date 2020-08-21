@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # Layout Property
 Sets whether the fields in Group controls are arranged horizontally in a row or vertically in a column.  
   
-## Applies To  
+## Applies to  
   
 -   Group controls, including Group, Repeater, CueGroup, FixedLayout, and GridLayout on pages.  
   

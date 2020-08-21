@@ -15,7 +15,7 @@ ms.author: solsen
 # Name Property
 Sets the name of the object. The name is used for internal identification of the objects, controls, and other elements in AL code and the development environment.  
 
-## Applies To  
+## Applies to  
 
 -   Codeunits  
 

@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AutoSave Property
 Sets whether imported records are automatically written to the table.  
   
-## Applies To  
+## Applies to  
  Table elements in XMLports  
   
 ## Property Value  

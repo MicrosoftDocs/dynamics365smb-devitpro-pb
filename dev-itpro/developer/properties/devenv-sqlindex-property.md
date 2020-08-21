@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # SQLIndex Property
 Controls the actual fields and their ordering in the corresponding index on SQL Server.  
   
-## Applies To  
+## Applies to  
  Keys  
 
 ## Syntax

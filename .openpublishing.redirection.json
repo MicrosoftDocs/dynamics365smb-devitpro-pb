@@ -5164,6 +5164,57 @@
     "source_path": "dev-itpro/webservices/how-to--set-up-a-local-language-for-the-adcs-web-service.md",
     "redirect_url": "/dynamics365/business-central/warehouse-use-automated-data-capture-systems-adcs",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/methods-auto/string/string-data-type.md",
+    "redirect_url": "/dynamics365/business-central//dev-itpro/developer/methods-auto/text/text-data-type",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0045-permissionsmustbeassigned.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0046-correctpermissionsmustbeassigned.md",
+    "redirect_url": "/dynamics365/business-central//dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-trymethod-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods/devenv-tryfunction-attribute",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/readiness/readiness-develop-your-app.md.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-temporary-xmlports-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-usetemporary-xmlports-property",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-temporary-reports-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-usetemporary-reports-property",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-parttype-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-page-property-overview",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/readiness/readiness-develop-your-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-optionstring-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-optionmembers-field-property",
+    "redirect_document_id": false
    }
+   
   ]
 }

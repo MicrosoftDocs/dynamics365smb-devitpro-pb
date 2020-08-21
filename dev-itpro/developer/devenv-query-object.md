@@ -53,9 +53,9 @@ query ID Name
             }
             dataitem(DataItem2; Table2)
             {
-                // Sets a link between FieldY of Table2 and FieldY of Table2.
+                // Sets a link between FieldY of Table2 and FieldX of Table1.
                 DataItemLink = FieldY = DataItem1.FieldX;
-                //The dataset contains records from Table1 and Table2 where a match is found between FieldY and FieldZ.
+                //The dataset contains records from Table1 and Table2 where a match is found between FieldY and FieldX.
                 SqlJoinType = InnerJoin;
 
                 column(Column1; Field1)

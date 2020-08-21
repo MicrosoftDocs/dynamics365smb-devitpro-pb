@@ -56,6 +56,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Math|Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Math/README.md)|
 |Object Selection|Look up page for all of the application objects, including objects from installed extensions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Object%20Selection/README.md)|
 |Password Dialog|Sets and verifies passwords.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Password%20Dialog/README.md)|
+|Printer Management|Contains functionality that enables a user to manage printers.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Printer%20Management)|
 |Record Link Management|Provides helper functions for RecordLinks.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Record%20Link%20Management/README.md)|
 |Recurrence Schedule|Calculates when the next event will occur.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Recurrence%20Schedule/README.md)|
 |Satisfaction Survey|Shows a satisfaction survey.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Satisfaction%20Survey/README.md)|
@@ -75,6 +76,11 @@ The list of modules is growing continuously. The following table lists and descr
 
 
 <!--## Example - Enhancing a Module
+
+
+FREDDYK: THIS IS NO LONGER THE WAY TO DO THIS
+
+
 This example shows how to...
 
 1. Start by pulling the latest Docker image. For more information, see [Freddy's Blog](https://freddysblog.com/2019/07/31/preview-of-dynamics-365-business-central-2019-release-wave-2/).
@@ -118,7 +124,7 @@ New-BCContainer -accept_eula `
 3. Uninstall and unpublish the System Application.
   
 ```
-UnPublish-NavContainerApp -containerName $containerName ` 
+UnPublish-BCContainerApp -containerName $containerName ` 
 
   -appName "System Application" ` 
 
@@ -139,12 +145,12 @@ UnPublish-NavContainerApp -containerName $containerName `
 
 6. Get the latest code for the System Application from our GitHub repository at [AlAppExtensions](https://github.com/microsoft/ALAppExtensions). In GitHub, choose the **Clone** or **Download** buttons, and then **Download ZIP**. Open the downloaded archive and copy the content of the \ALAppExtensions-master\Modules\System folder to your AL project.
 
-You now have the latest version of the System Application, and you can download symbols and make enhancements. When you’re done, package the System Application without publishing it. 
+You now have the latest version of the System Application, and you can download symbols and make enhancements. When you're done, package the System Application without publishing it. 
 
 7. Switch back to PowerShell and run the following cmdlet to publish and install a new version of the app: 
 
 ```
-Publish-NavContainerApp -containerName $containerName ` 
+Publish-BCContainerApp -containerName $containerName ` 
 
 -appFile "C:\ProgramData\NavContainerHelper\AL\DemoSolution\Microsoft_System Application_15.0.0.0.app" ` 
 

@@ -78,6 +78,8 @@ The following methods are available on instances of the Report data type.
 |[PaperSource(Integer [, Integer])](reportinstance-papersource-method.md)|Gets or sets the paper source used for the current page or a specified page.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
+[Report Object](../../devenv-report-object.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

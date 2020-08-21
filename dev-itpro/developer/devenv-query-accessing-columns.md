@@ -98,7 +98,7 @@ codeunit 50100 QueryColumnAccess
     var
         MyQuery: Query "Customer_Sales_Quantity";
 
-        Text000: TextConst ENU = 'Customer name = %1, Quantity = %2.';
+        Text000: Label 'Customer name = %1, Quantity = %2.';
 }
 ```
 

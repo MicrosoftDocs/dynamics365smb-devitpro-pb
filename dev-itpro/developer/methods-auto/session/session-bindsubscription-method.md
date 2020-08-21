@@ -2,7 +2,7 @@
 title: "BindSubscription Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,10 +40,11 @@ The codeunit that contains the event subscribers.
 ## Remarks  
  You can only call this method on codeunits that have the [EventSubscriberInstance Property](../../properties/devenv-eventsubscriberinstance-property.md) set to **Manual**.  
   
- The codeunit instance to which event subscribers bind will be this exact instance and events will be raised on this instance. You cannot bind the same instance more than once, but you can bind multiple instances of the same codeunit. This will result in an event subscriber call on each bound instance when a given event is raised.  
+The codeunit instance that event subscribers are bound to will be this exact instance. Events will be raised on this instance. You can't bind the same instance more than once, but you can bind multiple instances of the same codeunit. This condition will result in an event subscriber call on each bound instance when a given event is raised.  
   
 ## Example  
- The following pseudocode illustrates a typical use of the BINDSUBSCRIPTION method.  
+ 
+The following sample code illustrates a typical use of the BINDSUBSCRIPTION method.  
   
 ```  
 Method MyFunction(….)  
@@ -55,7 +56,7 @@ begin
   
   SubScriberCodeunit5000.MySetGlobalInfo(<info you can later test in the subscriber event method>)  
   BINDSUBSCRIPTION(SubscriberCodeunit5000);  
-  DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are “active”.  
+  DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are "active".  
   
 end; // Notice, that when SubScriberCodeunit5000 goes out of scope, all bindings are removed.  
   

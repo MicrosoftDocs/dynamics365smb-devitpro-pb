@@ -15,7 +15,7 @@ Sets whether tooltips are provided for the given control, such as a field or act
 
 In the client, tooltips appear when you point to the caption of the control.
 
-## Applies To  
+## Applies to  
 
 - Actions in the ribbon  
 
@@ -34,7 +34,20 @@ In the client, tooltips appear when you point to the caption of the control.
 - ActionContainers  
 
   > [!NOTE]  
-  >  ActionContainers tooltips are only shown in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] for the subtype **HomeItems**.  
+  >  ActionContainers tooltips are only shown in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] for the subtype **Embedding**.  
+
+## Parameters
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the ToolTip is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the ToolTip, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific ToolTip.
 
 ## Remarks  
 The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply tooltips to controls on pages.  
@@ -55,4 +68,4 @@ field("Reward ID";"Reward ID")
 [Configuring the Help Experience](../../deployment/configure-help.md)  
 [ToolTipML Property](devenv-tooltipml-property.md)  
 [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../devenv-extension-example.md)  
- <!-- [Multilanguage Development](Multilanguage-Development.md)-->
+[Multilanguage Development](../devenv-work-with-translation-files.md)

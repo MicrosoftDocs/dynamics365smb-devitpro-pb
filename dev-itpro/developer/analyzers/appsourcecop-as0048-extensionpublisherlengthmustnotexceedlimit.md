@@ -1,8 +1,8 @@
 ---
-title: "The extension publisher length must not exceed the specified limit"
+title: "The publisher name is too long."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2020
+ms.date: 06/19/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +14,17 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0048
-The extension publisher length must not exceed the specified limit  
+The publisher name is too long.  
 
 ## Description
-The extension publisher length must not exceed the specified limit.
+The extension publisher length must not exceed the limit of 50 characters.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This rule verifies that the extension publisher specified in the [app.json](../devenv-json-files.md) does not exceed 50 characters.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

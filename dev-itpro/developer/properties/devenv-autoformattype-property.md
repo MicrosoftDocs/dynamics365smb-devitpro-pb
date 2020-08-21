@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # AutoFormatType Property
 Sets a value that determines how data is formatted, together with the AL expression in the [AutoFormatExpression Property](devenv-autoformatexpr-property.md).  
   
-## Applies To  
+## Applies to  
  Fields of the decimal data type in the following objects:  
   
 -   Tables  
@@ -52,7 +52,7 @@ AutoFormatType = 1;
 For example, this will result in a value like 7,564.00.
 
 
-Changing the **AutoFormatExpression** property to `ÌRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
+Changing the **AutoFormatExpression** property to `IRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
 
 ```
 AutoFormatExpression = 'IRD';
@@ -77,7 +77,7 @@ This example prefixes the decimal value with a $, includes a thousand separator,
 
 ```
 AutoFormatType = 1;
-AutoFormatExpression = '$<precision, 2:2><standard format, 0>
+AutoFormatExpression = '$<precision, 2:2><standard format, 0>;
 ```
 
 ## Example

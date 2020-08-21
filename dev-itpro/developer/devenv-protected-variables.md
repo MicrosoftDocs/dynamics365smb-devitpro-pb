@@ -19,13 +19,15 @@ The `protected` keyword can be used to make variables accessible between tables 
 ## Syntax
 ```
 protected var
-        myInt: Integer;
+        myInt: Integer; // protected var
 
 var
-        myLocalInt: Integer;
+        myLocalInt: Integer; // local var
 ```
 
 ## Example
+The example below illustrates how to declare and use a protected variable.
+
 ```
 page 500100 MyPage
 {

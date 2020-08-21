@@ -8,10 +8,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
 ms.service: "dynamics365-business-central"
-
+author: SusanneWindfeldPedersen
 ---
-
- 
 
 # Gesture Property
 Specifies a gesture that runs the action on a device with a touch interface, such as the phone client.
@@ -34,13 +32,11 @@ Gesture = None;
 ```
 
 ## Remarks
+
 You typically use the Gesture property on list type pages for executing an action on items in a repeater control.
 
-In Action Designer, you can use the **Gesture** column to view the Gesture property value for all page actions. If the **Gesture** column is not visible, then on the **View** menu, choose **Show Column**, and then select **Gesture**.  
-
 ## See Also
+
 [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md)  
-<!--
-[Developing for the Microsoft Dynamics NAV Universal App](../devenv-Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)  
-[Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md)
--->
+[Introducing the Dynamics 365 Business Central Mobile App](../devenv-introducing-business-central-mobile-app.md)   
+<!-- [Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md) -->

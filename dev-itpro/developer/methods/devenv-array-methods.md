@@ -30,7 +30,7 @@ The `Dimension` is a comma-delimited list of integer literals greater than 0, wh
 
 The `Type` is the element type of the array.
 
-## Code Example 
+## Code example 
 The following code sample shows the declaration of an array with a simple element type.
 
 ```
@@ -56,13 +56,12 @@ ArrayOfDotNetVariables: Array [10] of DotNet String;
 ## Methods
 The following AL methods for arrays are available:  
 
-[ARRAYLEN Method](../methods-auto/system/system-arraylen-method.md) 
+[ArrayLen Method](../methods-auto/system/system-arraylen-method.md) 
 
-[COMPRESSARRAY Method](../methods-auto/system/system-compressarray-method.md)
+[CompressArray Method](../methods-auto/system/system-compressarray-method.md)
 
-[COPYARRAY Method](../methods-auto/system/system-copyarray-method.md)
-
-
+[CopyArray Method](../methods-auto/system/system-copyarray-method.md)
 
 ## See Also  
-[AL Method Reference](devenv-al-method-reference.md)  
+
+[AL Method Reference](../methods-auto/library.md)  

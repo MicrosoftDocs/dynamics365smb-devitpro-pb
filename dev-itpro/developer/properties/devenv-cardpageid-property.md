@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # CardPageID Property
 Sets the card page that is associated with items in the current list page.  
   
-## Applies To  
+## Applies to  
  - List pages  
  - ListPart pages  
 

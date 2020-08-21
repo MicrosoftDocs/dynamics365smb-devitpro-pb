@@ -2,7 +2,7 @@
 title: "HideSubsequentDialogs Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,10 +44,11 @@ A value specifying whether to hide subsequent dialogs.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-You must call the HIDESUBSEQUENTDIALOGS method on the dialog variable before the [OPEN Method](../../methods-auto/dialog/dialog-open-method.md). Until the [OPEN Method](../../methods-auto/dialog/dialog-open-method.md) is called on this variable, calls on other dialog variables will behave as normal.
 
-##  Example
-The following code illustrates how the HIDESUBSEQUENTDIALOGS method works with two dialog variables.
+You must call the `HideSubsequentDialogs` method on the dialog variable before the [Open Method](../../methods-auto/dialog/dialog-open-method.md). Until the [Open Method](../../methods-auto/dialog/dialog-open-method.md) is called on this variable, calls on other dialog variables will behave as normal.
+
+## Example
+The following code illustrates how the `HideSubsequentDialogs` method works with two dialog variables.
 
 ```
 var

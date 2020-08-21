@@ -12,15 +12,17 @@ author: SusanneWindfeldPedersen
 ---
 
 # Get, Find, and Next Methods
+
 The following methods are used to search for records:  
   
-- Get
-- Find  
-- Next  
+- `Get`
+- `Find`  
+- `Next`  
   
 These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.  
   
 ## Get method  
+
 The [Get Method (Record)](methods-auto/record/record-get-method.md) retrieves one record based on values of the primary key fields.  
   
 Get has the following syntax.  
@@ -65,7 +67,7 @@ The following example gets the record that has the SystemId `5286305A-08A3-E911-
 ```
 var
     Customer: Record Customer;
-    Text000: TextConst ENU = 'Customer was found.';
+    Text000: Label 'Customer was found.';
 begin
     If Customer.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
     Message(Text000);
@@ -73,6 +75,7 @@ end;
 ```  
 
 ## Find methods  
+
 The [Find Method (Record)](methods-auto/record/record-find-method.md) locates a record in a table that is based on the values stored in the keys.  
   
 Find has the following syntax.  
@@ -91,22 +94,22 @@ The important differences between Get and Find are as follows:
   
 - Find can find the first or the last record, depending on the sort order defined by the current key.  
   
-When you are developing applications in a relational database, there are often one-to-many relationships defined between tables. An example could be the relationship between an **Item Variant** table, which registers items, and a **Sales Line** table, which registers the detailed lines from sales orders. One record in the **Sales Line** table can only be related to one item, but each item can be related to any number of sales line records. You would not want an item record to be deleted as long as there are still open sales orders that include the item. You can use Find to check for open sales orders.  
+When you are developing applications in a relational database, there are often one-to-many relationships defined between tables. An example could be the relationship between an **Item** table, which registers items, and a **Sales Line** table, which registers the detailed lines from sales orders. One record in the **Sales Line** table can only be related to one item, but each item can be related to any number of sales line records. You would not want an item record to be deleted as long as there are still open sales orders that include the item. You can use Find to check for open sales orders.  
   
-The OnDelete trigger of the **Item Variant** table includes the following code that illustrates using Find.  
+The OnDelete trigger of the **Item** table includes the following code that illustrates using Find.  
   
 ```  
-SalesOrderLine.SetCurrentKey(Type, "No.");
-SalesOrderLine.SetRange(Type, SalesOrderLine.Type::Item);
-SalesOrderLine.SetRange("No.", "Item No.");
-SalesOrderLine.SetRange("Variant Code", Code);
-if not SalesOrderLine.IsEmpty then
-    Error(Text001, Code, SalesOrderLine.TableCaption);  
+SalesOrderLine.SetCurrentKey(Type,"No.");  
+SalesOrderLine.SetRange(Type,SalesOrderLine.Type::Item);  
+SalesOrderLine.SetRange("No.","No.");  
+if SalesOrderLine.Find('-') then  
+    Error(Text001,TableCaption,"No.",SalesOrderLine."Document Type");  
 ```  
   
 If you want to find the first record in a table or set, then use the [FindFirst Method (Record)](methods-auto/record/record-findfirst-method.md). If you want to find the last record in a table or set, then use the [FindLast Method (Record)](methods-auto/record/record-findlast-method.md).  
   
 ## Next method  
+
 The [Next Method (Record)](methods-auto/record/record-next-method.md) is often used with FIND to step through the records of a table.  
   
 Next has the following syntax.  
@@ -125,5 +128,6 @@ until (Rec.Next = 0);
 ```
 
 ## See Also
+
 [AL Methods](methods-auto/library.md)  
 [SystemId Field](devenv-table-object.md#systemid)

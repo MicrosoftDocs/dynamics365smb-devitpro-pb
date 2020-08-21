@@ -44,7 +44,7 @@ The upper limit of the range. The data type of this parameter must match the dat
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- SETRANGE is a quick way to set a simple filter on a field. The SETRANGE method is functionally equivalent to calling *Query*.SetFilter\(ColumnName, ‘FromValue..ToValue’\).  
+ SETRANGE is a quick way to set a simple filter on a field. The SETRANGE method is functionally equivalent to calling *Query*.SetFilter\(ColumnName, 'FromValue..ToValue'\).  
   
  To apply filters to a dataset, the **SETRANGE** method must be called before the **OPEN**, **SAVEASXML**, and **SAVEASCSV** methods, as shown in the following example. To remove filters, you call the [CLEAR Method](../system/system-clear-joker-method.md) or **SETRANGE** without values for the *FromValue* and *ToValue* parameters.  
   
@@ -64,7 +64,7 @@ Query.SETRANGE(Column1, FromValue, ToValue);
 Query.READ;  
 ```  
   
- In addition to the **SETRANGE** method, you can apply filters to a query using the **SETFILTER** method and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer.  
+ In addition to the **SETRANGE** method, you can apply filters to a query using the **SETFILTER** method and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SETRANGE** method...|then...|  
 |-------------------------------------|-------------|  
@@ -73,7 +73,7 @@ Query.READ;
 |Sets a filter on the same field as the **SETFILTER** method|The method that is called last is applied to the dataset.|  
 |Sets a filter on a field that has global filters that are applied by the **FILTERGROUP\(1\)** method|The filters of the **SETRANGE** method are added to the global filters.|  
   
- For example, a query has the following filters set on the **Quantity** column in Query Designer:  
+ For example, a query has the following filters set on the **Quantity** column:  
   
 -   **DataItemTableFilter** property: Quantity=FILTER\(\<>10\)  
   

@@ -20,6 +20,7 @@ Parameters cannot be removed from events
 Parameters cannot be removed from events.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

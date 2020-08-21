@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # SubType Property (Codeunit)
 Sets the codeunit to method as a normal, test, test runner, or upgrade codeunit.  
   
-## Applies To  
+## Applies to  
 Codeunits  
   
 ## Property Value  
