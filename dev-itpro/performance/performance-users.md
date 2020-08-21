@@ -20,15 +20,30 @@ This section describes how you can work with end-users to improve the performanc
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports multiple browsers that each offer a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
 
-- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy, and switch to one of our recommended modern browsers, such as the [new Microsoft Edge](https://www.microsoft.com/edge/). Modern browsers generally offer better performance. 
+- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
 
 > [!IMPORTANT] 
-> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to the new Microsoft Edge before support ends.
+> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/) before support ends.
 
-- Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance features and optimizations are only available for modern browsers.
 - Keep your browser always updated to the latest version which may include the latest performance enhancements.
+- Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance features and optimizations such as page caching are only available for modern browsers.
 
-See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
+### Browsers and page caching
+The overall structure of a page (but not business data) is cached on the client device when a page is accessed the first time. The next time that same page is accessed, the layout of the page will be immediately displayed while the latest data is fetched from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service. To take full advantage of page caching, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires a modern browser with access to the browser's storage mechanisms.
+
+|Browser|Page caching availability|
+|--------|---------|
+|New Edge|Available|
+|Chrome|Available|
+|Safari|Partly available. In some cases, users will not benefit from page caching across sessions. |
+|FireFox|Partly available. In some cases, users will not benefit from page caching across sessions. |
+|Edge Legacy|Unavailable|
+|Internet Explorer|Unavailable|
+
+> [!IMPORTANT]  
+> Browsers that run in private or guest mode typically discard browser storage when the browser window is closed. This discards cached data and users will not be able to take advantage of page caching when they next sign into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Users relying on private or guest browsing to work across multiple identities and organizations are advised to use browser profiles instead.  
+> Any browser policies or settings that restrict access to local storage or the browser's IndexedDB may prevent [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from applying performance optimizations.
+
 
 ## Choosing a network connection
 
@@ -38,23 +53,14 @@ If a choice of networks is available, consider connecting to a secure network th
 
 Newer browsers and operating systems are generally better at handling resources such as memory, network, and storage. Some devices will automatically limit resources available to the browser when running on battery power. Consider keeping laptops and similar devices plugged in to a power source for best performance.
 
-<!-- ## Freeing up device resources
-In order to provide an optimal experience, Business Central saves some preferences in your browser's local storage. No business data is saved, only settings that determine how the page is displayed. [!INCLUDE[prodshort] should consume significant browser storage space, but an environment that has undergone significant change from extensions may consume more space. You can clear browser local storage to increase performance in some cases.
--->
 
 ## Making pages load faster
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has numerous mechanisms that make the user interface more responsive and help pages load faster. For example:
  - List pages load records in small batches while the user scrolls through the list, allowing it to scale to very large tables.
  - The overall structure of a page (but not business data) is cached on the client device after a page is accessed the first time.
-
-To take full advantage of page caching, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires a modern browser with access to the browser's storage mechanisms. Any browser settings that restrict access to local storage or the browser's IndexedDB may prevent [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from applying performance optimizations.
-
-> [!IMPORTANT]  
-> Browsers that run in private or guest mode typically discard browser storage when the browser window is closed. This discards cached data and users will not be able to take advantage of page caching when they next sign into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Users relying on private or guest browsing to work across multiple identities and organizations are advised to use browser profiles instead.
-
-The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
-- By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] saves time from attempting to display all the related facts.
-- By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
+ - The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
+   - By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] saves time from attempting to process and display all the related facts.
+   - By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
 
 ## Agility of navigating and entering data
