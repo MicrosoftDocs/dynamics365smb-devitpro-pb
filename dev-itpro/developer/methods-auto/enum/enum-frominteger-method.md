@@ -2,7 +2,7 @@
 title: "FromInteger Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 05/11/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,6 +34,28 @@ Enum with integer value :=   Enum.FromInteger(Value: Integer)
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Example
+
+```
+enum 50130 YesNo
+{
+    value(0; Yes) { }
+    value(10; No) { }
+}
+
+codeunit 50130 YesNoTest
+{
+    procedure Test();
+    var
+        Answer: enum YesNo;
+    begin
+        Answer := YesNo.FromInteger(10); // Ordinal value for 'No'
+        if Answer = YesNo::No then
+            Message('Success');
+    end;
+}
+```
+
 ## See Also
 [Enum Data Type](enum-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

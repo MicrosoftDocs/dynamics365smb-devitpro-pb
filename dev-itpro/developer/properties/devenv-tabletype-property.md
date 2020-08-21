@@ -1,7 +1,7 @@
 ---
 title: "TableType Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 05/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # TableType Property
 Specifies the table type.  
 
-## Applies To  
+## Applies to  
 
 - Tables  
 
@@ -27,6 +27,9 @@ Specifies the table type.
 |**Temporary**|Specifies the table as an in-memory only table in the [!INCLUDE[server](../includes/server.md)]. This table type isn't synchronized to the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.|
 |**Exchange**|For internal use only.|
 |**MicrosoftGraph**|For for internal use only.|
+
+<!-- 
+|**Temporary**|Specifies the table as a temporary table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This table type is not synchronized.| -->
 
 
 ## Syntax

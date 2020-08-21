@@ -2,7 +2,7 @@
 title: "Table field property changes that cause destructive changes must not be removed"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2020
+ms.date: 06/19/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Table field property changes that cause destructive changes must not be removed  
 
 ## Description
-Table field property changes that cause destructive changes must not be removed.
+Removing table field properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

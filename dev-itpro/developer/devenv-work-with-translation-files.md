@@ -70,7 +70,6 @@ var
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
 > - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
 > - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
-> - [ReqFilterHeadingML](properties/devenv-reqfilterheadingml-property.md)
 > - [RequestFilterHeadingML](properties/devenv-requestfilterheadingml-property.md)
 > - [ToolTipML](properties/devenv-tooltipml-property.md)
 > 
@@ -82,9 +81,9 @@ var
 In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `<trans-unit id>` attribute corresponds to the object ID in the extension. This is illustrated in the example below.
 
 ```
-<ding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language=”da-DK” original="ALProject16">
+  <file datatype="xml" source-language="en-US" target-language="da-DK" original="ALProject16">
     <body>
       <group id="body">
         <trans-unit id="PageExtension 50110" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
@@ -121,7 +120,8 @@ We recommend that you use only one .txt file per language. There is no enforced 
 For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ## See Also
-[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  
+[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)   
+[Working with labels](devenv-using-labels.md)    
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
 [JSON Files](devenv-json-files.md)
 

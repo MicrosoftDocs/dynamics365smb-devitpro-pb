@@ -14,7 +14,7 @@ author: jswymer
 
 Specifies that the method is a HyperLinkHandler method.
 
-## Applies To  
+## Applies to  
 AL test methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
 
 ## Syntax  
@@ -30,6 +30,8 @@ The **HyperLinkHandler** method is called when a hyperlink is invoked in the cod
 
 The **HyperLinkHandler** attribute requires that the method where it is applied has the signature `HyperLinkHandler(Message: Text[1024])`. The parameter type, *Text*,  contains the actual hyperlink.
 
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

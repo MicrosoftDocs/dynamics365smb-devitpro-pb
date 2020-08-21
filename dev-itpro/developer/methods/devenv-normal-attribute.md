@@ -14,7 +14,7 @@ author: jswymer
 
 Specifies that the method is a Normal method.
 
-## Applies To  
+## Applies to  
 AL methods on codeunits.
 
 ## Syntax  
@@ -28,6 +28,8 @@ procedure Normal();
 
 The **Normal** method acts as a normal method.
 
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

@@ -16,7 +16,7 @@ caps.latest.revision: 8
 # RunPageOnRec Property
 Sets the same record on the page you launch from this control as is already displayed on the current page.  
   
-## Applies To  
+## Applies to  
   
 -   Page actions  
   

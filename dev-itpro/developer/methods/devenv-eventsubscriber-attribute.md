@@ -19,7 +19,7 @@ Specifies the method to be an integration type event subscriber.
 [EventSubscriber(ObjectType: ObjectType, ObjectId: Integer, EventName: Text, ElementName: Text, SkipOnMissingLicense: Boolean, SkipOnMissingPermission: Boolean)
 ```    
   
-#### Arguments  
+### Arguments  
 *ObjectType*  
 Type: Enumeration  
   
@@ -79,7 +79,9 @@ codeunit 50106 MyEventSubscriber
 }
 ``` 
 
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing Events](../devenv-publishing-events.md)   
 [Raising Events](../devenv-raising-events.md)   

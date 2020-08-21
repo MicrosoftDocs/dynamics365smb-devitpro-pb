@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SQLJoinType Property
 Sets the data item link type between data items in a query to determine the records that are included in the resulting dataset.  
   
-## Applies To  
+## Applies to  
   
 -   Query data items  
   
@@ -38,7 +38,7 @@ Sets the data item link type between data items in a query to determine the reco
 ```
   
 ## Remarks  
- When setting up a data item link between two data items, you always set up the **SQLJoinType** property on the lower data item in Query Designer.  
+When setting up a data item link between two data items, you always set up the **SQLJoinType** property on the lower data item.  
   
 Except for `CrossJoin`, the **SQLJoinType** property works together with the **DataItemLink** property to combine records from tables into a dataset. The **DataItemLink** property sets up an "equal to" \(=\) comparison between two or more fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that having matching values for the fields. Records that have matching field values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values.
   

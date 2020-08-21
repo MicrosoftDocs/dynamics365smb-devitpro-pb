@@ -14,7 +14,7 @@ author: jswymer
 
 Sets whether the value of a key must be unique. 
 
-## Applies To  
+## Applies to  
   
 Table keys
 

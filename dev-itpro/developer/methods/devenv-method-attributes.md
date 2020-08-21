@@ -54,7 +54,8 @@ The following method attributes are available:
 - [StrMenuHandler Attribute](devenv-strmenuhandler-attribute.md)
 - [Test Attribute](devenv-test-attribute.md)
 - [TestPermissions Attribute](devenv-testpermissions-attribute.md)
+- [TryFunction Attribute](devenv-tryfunction-attribute.md)
 
-## See Also   
+## See Also
 
-[AL Method Reference](devenv-al-method-reference.md)  
+[AL Method Reference](../methods-auto/library.md)  

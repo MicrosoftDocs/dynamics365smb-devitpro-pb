@@ -2,7 +2,7 @@
 title: "StrMenu Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/18/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,8 @@ The number of the menu option that the user selected. If the user presses the Es
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example shows how to use the Dialog.STRMENU method.  
+
+This example shows how to use the Dialog.StrMenu method.  
  
 ```
 var
@@ -63,21 +64,21 @@ begin
 end;
 ```  
   
- The menu window displays the following text:  
+The menu window displays the following text:  
   
- **Choose one of the following options:**  
+**Choose one of the following options:**  
   
- **Save**  
+**Save**  
   
- **Delete**  
+**Delete**  
   
- **Exit**  
+**Exit**  
   
- **Find**  
+**Find**  
   
- Option 3, Exit, is highlighted. The option that the user selects is stored in the variable *Selected*. The user receives following message:  
+Option 3, **Exit**, is highlighted. The option that the user selects is stored in the variable *Selected*. The user receives following message:  
   
- **You selected option 3.**  
+**You selected option 3.**  
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  

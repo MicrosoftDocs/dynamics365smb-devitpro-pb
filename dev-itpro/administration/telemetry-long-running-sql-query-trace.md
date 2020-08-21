@@ -30,11 +30,11 @@ This table explains the columns included in long running query events emitted to
 |Column|Description or value||
 |---------|-----|-----------|
 |timestamp|Specifies the date and time that the long running query event occurred, such as 2019-08-20T07:23:07.9996696Z||
-|message|**Action took longer than expected**||
+|message|Version 16.1 and later:<br />**Operation exceeded time threshold (SQL query)**<br /><br />Before version 16.1:<br />**Action took longer than expected**||
 |severityLevel|**2** (This level indicates a warning. Long running queries are always recorded as warnings)||
 |itemType|**trace**||
 |customDimensions|(see table that follows)||
-|operation_Name|**Long Running Operation (SQL Query)**||
+|operation_Name|**Long Running Operation (SQL Query)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.||
 |operation_Id|Specifies the GUID assigned to the client operation. An operation is created whenever the user does something in the client, such as selecting an action.||
 |operation_ParentId|Currently this column is the same as the operation_Id. This behavior might change in a future release.||
 |session_Id|Specifies the GUID of the client session. When a client makes a connection to the [!INCLUDE[server](../developer/includes/server.md)] instance, a session is created and assigned an ID. ||
@@ -79,21 +79,23 @@ This table describes the different dimensions of a **Long Running Operation (SQL
 |alStackTrace|The stack trace in AL.||
 |companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |extensionId|Specifies the AppID of the extension.||
+|eventId|**RT0005**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
 |clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |alObjectId|The type of the AL object that executed the SQL statement.||
 |component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.||
-|executionTime|Specifies the time that it took to execute the SQL statement. The value has the format hh:mm:ss.sssssss.||
+|executionTime|Specifies the time that it took to execute the SQL statement**. The value has the format hh:mm:ss.sssssss.||
 |longRunningThreshold|Specifies the amount of time that an SQL query can run before a warning event is recorded.  The value has the format hh:mm:ss.sssssss. <br /><br >This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting called SqlLongRunningThreshold. |
 |sqlStatement|Specifies the SQL statement that was executed for the long running query. The value is limited to 8192 characters. If the value exceeds 8192 characters, it will be truncated in manner that still provides the most pertinent information.||
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 
+** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 ## Example
 
 The following code snippet shows an example of the CustomDimensions.
 
 `{"extensionVersion":"16.0.10962.0","telemetrySchemaVersion":"0.3","componentVersion":"15.0.40494.0","environmentType":"Production","environmentName":"Production","extensionName":"Base Application","alObjectType":"Report","alObjectName":"Suggest Worksheet Lines","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 840\r\n AL CallStack: \"Suggest Worksheet Lines\"(Report 840).DeleteEntries line 10 - Base Application by Microsoft\r\n\"Suggest Worksheet Lines\"(Report 840).\"Cash Flow Forecast - OnPostDataItem\"(Trigger) line 5 - Base Application by Microsoft\r\n\"Cash Flow Management\"(CodeUnit 841).UpdateCashFlowForecast line 32 - Base Application by Microsoft\r\n\"Cash Flow Forecast Update\"(CodeUnit 842).OnRun(Trigger) line 18 - Base Application by Microsoft\r\n\"Job Queue Start Codeunit\"(CodeUnit 449).OnRun(Trigger) line 11 - Base Application by Microsoft\r\n\"Job Queue Dispatcher\"(CodeUnit 448).HandleRequest line 30 - Base Application by Microsoft\r\n\"Job Queue Dispatcher\"(CodeUnit 448).OnRun(Trigger) line 19 - Base Application by Microsoft","companyName":"CRONUS USA, Inc.","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","aadTenantId":"8ca62103-8877-486d-88e2-9a91303abfc6","clientType":"Background","alObjectId":"840","component":"Dynamics 365 Business Central Server","executionTime":"00:00:05.7470000","sqlStatement":"DELETE FROM \"SQLDATABASE\".dbo.\"CURRENTCOMPANY$Cash Flow Forecast Entry$437dbf0e-84ff-417a-965d-ed2bb9650972\" WHERE (\"Cash Flow Forecast No_\"=@0)"}`
-
+ 
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

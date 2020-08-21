@@ -10,18 +10,18 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 05/11/2020
 
 ---
 # Authentication and Credential Types for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]  
 
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, users are added through the Office 365 Admin Center. Once users are created in Office 365, they can be imported into the **Users** window in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, users are added through the Microsoft 365 admin center. Once users are created in Microsoft 365, they can be imported into the **Users** window in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
 
 ## Configuring Authentication for On-Premises Deployments
 An on-premises deployment of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports several credential authorization mechanisms for users. When you create a user, you provide different information depending on the credential type that you are using in the current [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 > [!IMPORTANT]  
->  All users of a [!INCLUDE[server](../developer/includes/server.md)] instance must be using the same credential type. In on-premises deployments, you can specify which credential type is used for a particular [!INCLUDE[server](../developer/includes/server.md)] instance in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+> All users of a [!INCLUDE[server](../developer/includes/server.md)] instance must be using the same credential type. In on-premises deployments, you can specify which credential type is used for a particular [!INCLUDE[server](../developer/includes/server.md)] instance in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 ### Credential Types  
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises supports the following credential types.  
@@ -36,7 +36,7 @@ An on-premises deployment of [!INCLUDE[prodshort](../developer/includes/prodshor
 |**ExchangeIdentity and TaskScheduler**| For internal use only. Do not use.|
 
 > [!IMPORTANT]  
->  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [How to: Implement Security Certificates in a Production Environment](/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment.md) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
+>  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [How to: Implement Security Certificates in a Production Environment](/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
 ### Configuring the Credential Type for Client and Server  
 For on-premises deployment, you must make sure that clients and [!INCLUDE[server](../developer/includes/server.md)] are configured to use the same credential type.  
@@ -58,7 +58,7 @@ In the relevant configuration file, find the **ClientServicesCredentialType** pa
 For the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] users, you must modify the *navsettings.json* for the [!INCLUDE[webserver](../developer/includes/webserver.md)]. The navsettings.json file is a Java Script Object Notification file type that is similar to files that use the XML file format. The file is stored in the physical path of the web server instance, which is by default is *c:\inetpub\\wwwroot\\[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]*. For more information, see [Settings in the navsettings.json](configure-web-server.md#Settings).  
 
 For each [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] user, you must modify the ClientUserSettings.config file. The default location for this file is **C:\\Users\\\<username>\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\130**, where *\<username>* is the name of the user. For more information, see [Configuring the Microsoft Dynamics NAV Windows Client](/dynamics-nav/configuring-the-windows-client) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. 
- 
+
 ### Security Certificates 
 With UserName, NavUserPassword, and AccessControlService credential types require that you install and configure security certificates on components. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 

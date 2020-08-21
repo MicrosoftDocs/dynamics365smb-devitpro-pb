@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/01/2020
+ms.date: 07/22/2020
 ---
 
 # The Business Central Administration Center API
@@ -22,10 +22,14 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API en
 
 For more information about administrative capabilities, see [The Business Central Administration Center](tenant-admin-center.md). This article describes the API contracts for these administrative capabilities.
 
+[!INCLUDE [admin-azure-ad-preconsent](../developer/includes/admin-azure-ad-preconsent.md)]
+
 ## Location
+
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
 
-## Setting up Azure Active Directory (AAD) based authentication
+## Setting up Azure Active Directory (Azure AD) based authentication
+
 Sign in to the [Azure portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
 1. Follow the instructions in the [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
@@ -85,7 +89,6 @@ If an error occurs during the execution of an API method, it will respond back w
 **General unhandled errors**
 
 All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown** 
-
 
 ## Environments
 
@@ -205,6 +208,7 @@ Returns a single environment if exists.
 Creates a new environment with sample data.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 
@@ -311,6 +315,7 @@ GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/
 Creates a new environment with a copy of another environment's data.
 
 ```
+Content-Type: application/json
 POST /admin/v2.1/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
@@ -529,6 +534,7 @@ Returns the environment's update settings, or "null" if none exist
 Sets the update window start and end times.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
@@ -575,7 +581,11 @@ Returns the updated settings
 ### Put AppInsights key
 Sets the key an environment uses for Azure AppInsights.
 
+> [!IMPORTANT]
+> This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this during non-working hours to avoid disruptions.
+
 ```
+Content-Type: application/json
 POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
@@ -690,6 +700,7 @@ Returns a wrapped array of recipients.
 Create a new notification recipient.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/settings/notification/recipients
 ```
 
@@ -804,6 +815,7 @@ Pass the application family name in the URL and a boolean in the body.
 - False - disables the access.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/manageableapplications/{applicationFamily}/countries/{countryCode}
 ```
 
@@ -881,6 +893,7 @@ Returns information about the scheduled update for that environment.
 Reschedule an update, if able.
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
@@ -959,6 +972,7 @@ Returns information about the support contact for that environment.
 Sets the support contact information for a specified environment
 
 ```
+Content-Type: application/json
 PUT /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
@@ -1103,7 +1117,8 @@ Returns the list of outages reported across all environments for the calling ten
 Initiates an outage report indicating that an environment isn't accessible
 
 ```
-GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+Content-Type: application/json
+POST /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
 #### Route Parameters
@@ -1112,7 +1127,7 @@ GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environme
 
 `environmentName` - Name of the targeted environment
 
-**Body:**
+#### Body
 ```
 {
   "outageType": string, // The category of the outage being reported.
@@ -1185,6 +1200,7 @@ Returns the metrics around the current month's database exports.
 Starts the export of an environment's database to a provided Azure storage account
 
 ```
+Content-Type: application/json
 POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
@@ -1365,6 +1381,7 @@ GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/
 Schedules the installation of an app update version. The update will be installed as soon as a time slot is available.
 
 ```
+Content-Type: application/json
 POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
@@ -1381,6 +1398,7 @@ POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
 ```
 { 
     "targetVersion": string // Version the installed app should be updated to
+    "allowPreviewVersion": bool // Indicates whether to allow updating to an app version that is marked as a Preview by the ISV (exact version must be specified in the targetVersion)
 }
 ```
 

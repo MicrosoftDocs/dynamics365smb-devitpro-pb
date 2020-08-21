@@ -2,7 +2,7 @@
 title: "Properties must not change value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2020
+ms.date: 05/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,15 @@ Properties must not change value.
 Properties must not change value. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+This rule does not exist anymore and has been replaced by:
+- [AS0034 - For table property value changes](appsourcecop-as0034-destructivetablepropertychangenotallowed.md)
+- [AS0036 - For field property value changes](appsourcecop-as0036-destructivetablefieldpropertychangenotallowed.md)
+- [AS0038 - For key property value changes](appsourcecop-as0038-destructivekeypropertychangenotallowed.md)
+- [AS0039 - For table property removal](appsourcecop-as0039-destructivetablepropertyremovenotallowed.md)
+- [AS0041 - For field property removal](appsourcecop-as0041-destructivetablefieldpropertyremovenotallowed.md)
+- [AS0042 - For key property removal](appsourcecop-as0042-destructivekeypropertyremovenotallowed.md)
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

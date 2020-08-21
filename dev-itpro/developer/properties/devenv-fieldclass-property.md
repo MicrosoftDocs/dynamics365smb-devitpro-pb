@@ -7,18 +7,15 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a9a813ea-3543-42ee-9fdc-6e3700c604ac
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
- 
 
 # FieldClass Property
 Sets the class of the field.  
   
-## Applies To  
- Fields  
+## Applies to  
+
+Fields  
   
 ## Property Value  
   
@@ -29,13 +26,16 @@ Sets the class of the field.
 |**FlowField**|A calculated field|  
 
 ## Syntax
+
 ```
 FieldClass = FlowFilter;
 ```  
 
 ## Remarks  
- There are three classes of fields: Normal, FlowFields, and FlowFilters. For more information, see [FlowFields](../devenv-flowfields.md) and [FlowFilter Overview](../devenv-flowfilter-overview.md).  
+
+There are three classes of fields: Normal, FlowFields, and FlowFilters. For more information, see [FlowFields](../devenv-flowfields.md) and [FlowFilter Overview](../devenv-flowfilter-overview.md).  
   
-## See Also  
- [Properties](devenv-properties.md)   
+## See Also
+  
+[Properties](devenv-properties.md)   
  

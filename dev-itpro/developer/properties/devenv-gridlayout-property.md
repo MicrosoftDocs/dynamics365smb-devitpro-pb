@@ -17,7 +17,7 @@ Specifies if the layout is rows or columns.
 
 The controls inside this definition should be laid out as a grid using the caption of the first group as row caption. 
 
-## Applies To  
+## Applies to  
   
 -   Group controls on pages  
   

@@ -127,7 +127,7 @@ codeunit 50111 "ERM Vendor Discount"
         LibraryPurchase: Codeunit "Library - Purchase";
         Assert: Codeunit Assert;
         myInt: Integer;
-        PurchInvDiscErr: TextConst ENU = 'The Purchase Invoice Discount Amount was not calculated correctly.';
+        PurchInvDiscErr: Label 'The Purchase Invoice Discount Amount was not calculated correctly.';
 
 }
 ```

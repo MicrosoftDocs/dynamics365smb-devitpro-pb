@@ -2,7 +2,7 @@
 title: "FAQ about developer and IT-Pro experiences"
 description: Get answers to some of your questions about deploying or administering Business Central.
 author: edupont04
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -10,12 +10,30 @@ ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 04/01/2020
 ---
-# Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
-This section contains answers to frequently asked questions about developing for and administering [!INCLUDE[prodlong](includes/prodlong.md)].  
+# FAQ for Dynamics 365 Business Central
 
-> [!TIP]
-> If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq) in the business functionality content for [!INCLUDE[prodshort](includes/prodshort.md)].
+The following sections guide you to frequently asked questions about [!INCLUDE[prodshort](includes/prodshort.md)].
+
+- Visit [FAQ about Developing in AL](developer/devenv-dev-faq.md) for questions and answers related to developing extensions in AL.
+- Visit [FAQ on Managing and submitting your business central offer](developer/app-faq-offer.md) in Partner Center.
+- Visit [FAQ about Library and Dependency Apps](developer/app-faq-dependencies-libraries.md) to learn about differences between library and dependency apps.
+- Visit [FAQ about Updating your App](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
+- Visit [FAQ about Testing your App](developer/app-faq-test.md) to learn about testing before submitting an app.
+- Visit [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
+- Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
+- Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prodshort](includes/prodshort.md)] Windows client.
+- Visit [FAQ about Signing Up and Using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)] in the business functionality content for.
+
+
+Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] here you can find answers to some of the most frequently asked questions:
+
+- Visit [Copy Paste FAQ](/dynamics365/business-central/ui-copy-paste) for tips on copying and pasting.
+- Visit [Tell Me FAQ](/dynamics365/business-central/ui-search-faq) for guidance on using search.
+- Visit [List Views FAQ](/dynamics365/business-central/ui-views-faq) to find answers on list views.
+- Visit [Searching and Filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) to learn about setting filters on data.
+
+Below find some of our top-most frequently asked questions for developer and ITPro experiences.
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
 

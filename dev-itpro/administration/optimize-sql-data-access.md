@@ -17,7 +17,7 @@ Data that is needed in the client goes through the following path from the [!INC
     2. If the data does not reside in SQL Servers data cache, it is fetched from storage and returned.
 
 ## [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server data caching
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache is shared by all users who are connected to the same [!INCLUDE[server](../developer/includes/server.md)] instance. This means that after one user has read a record, a second user who reads the same record gets it from the cache. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache was isolated for each user.  
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache is shared by all users who are connected to the same [!INCLUDE[server](../developer/includes/server.md)] instance. This means that after one user has read a record, a second user who reads the same record gets it from the cache.  
 
 The following AL functions utilize the cache system:  
 -   GET  

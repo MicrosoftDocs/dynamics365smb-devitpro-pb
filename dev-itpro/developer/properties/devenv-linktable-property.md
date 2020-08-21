@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # LinkTable Property
 Sets the table that this XML item should be linked to. This property is only available for XML items that have a table as their data source.  
   
-## Applies To  
+## Applies to  
  XMLports  
 
 ## Syntax

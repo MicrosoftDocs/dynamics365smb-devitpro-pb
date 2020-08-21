@@ -3,7 +3,7 @@ title: "Table Object"
 description: "Description of the table object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 06/11/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,7 @@ ms.author: solsen
 --- 
 
 # Table Object
+
 Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Regardless of how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
 The structure of a table has four sections. The first block contains metadata for the overall table; the table type. The fields section describes the data elements that make up the table; their name and the type of data they can store. The keys section contains the definitions of the keys that the table needs to support. The final section details the triggers and code that can run on the table.
@@ -33,12 +34,13 @@ Typing the shortcut `ttable` will create the basic layout for a table object whe
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Table example
-This table stores address information and it has four fields; Address, Locality, Town/City, and County.
+
+This table stores address information and it has four fields; `Address`, `Locality`, `Town/City`, and `County`.
 
 ```
 table 50104 Address
 {
-    caption = 'Sample table';
+    Caption = 'Sample table';
     DataPerCompany = true;
 
     fields
@@ -75,7 +77,7 @@ table 50104 Address
     }
 
     var
-        Msg: TextConst = 'Hello from my method';
+        Msg: Label 'Hello from my method';
 
     trigger OnInsert();
     begin
@@ -109,7 +111,6 @@ The **SystemId** field is a GUID data type field that specifies a unique, immuta
 
 The **SystemId** field is exposed in the platform code and for AL code, allowing you to code against it. For example:
 
-
 - The [Insert(Boolean, Boolean)](methods-auto/record/record-insert-boolean-boolean-method.md) lets you specify the **SystemId** value for a record, instead of using one assigned by the platform:
 
     ```
@@ -117,7 +118,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
     myRec.Insert(true, true);
     ```
 
-- The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) gets the **SystemId** for a record:
+- The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) uses the **SystemId** to get a record:
 
     ```
     id := myRec.GetBySystemId('{B6666666-F5A2-E911-8180-001DD8B7338E}';  
@@ -132,7 +133,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 - The [TableRelation](properties/devenv-tablerelation-property.md) lets you use the **SystemId** field to set up table relationships:
 
     ```
-    field(1; MyField; Integer)
+    field(1; MyField; Guid)
     {
         DataClassification = ToBeClassified;
         TableRelation = Customer.SystemId;
@@ -174,6 +175,22 @@ A typical use of the **timestamp** field is for synchronizing data changes in ta
         SqlTimestamp = true;
     }
 
+Alternatively, you can use a [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variable to access the timestamp value of a record, as follows:
+
+1.    Create a [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) variable that references the record in a table for which you want to retrieve its timestamp.
+
+2.    Use the [Field Method](methods-auto/recordref/recordref-field-method.md) on the **RecordRef** variable to get the **FieldRef** for the field that has the number 0. This field contains the timestamp value.
+
+The following example shows how to retrieve the timestamp value for the first record in the `Customer` table. **RecordRef** and **FieldRef** are [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) and [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variables, respectively.
+
+    
+```
+RecordRef.Open(DATABASE::Customer);
+RecordRef.FindFirst();
+FieldRef := RecordRef.Field(0);
+Message(Format(FieldRef.Value()));
+```
+    
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  

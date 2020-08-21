@@ -45,7 +45,7 @@ Read scale-out may introduce a slight delay when reading data from a database's 
 
 For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent).
 
-## Frequently asked questions about read scale-out
+## FAQ about read scale-out
 
 #### Which objects are supported?
 

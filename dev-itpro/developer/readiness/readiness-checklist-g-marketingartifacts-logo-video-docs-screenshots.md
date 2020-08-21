@@ -22,6 +22,7 @@ You are required to provide two offer logos on AppSource:
 - one in 48x48 pixels resolution for your app's search page:
 - one in 216x216 pixels resolution for your app's details page:
 - Both logos needs to be uploaded as .png images
+- The name of the logo files can only use alphanumeric characters, dashes (-), or underscores (no spaces or other special characters)
 
 ![Storefront Detail - Offer Logo](../../media/OfferLogo.png)
 
@@ -70,8 +71,8 @@ See guidelines on how to best structure the 4 above mentioned videos (and why it
 > *Example of a video that is set up according to our best practices:*
 > [A "How and What product video" from Open Door Technology](https://vimeo.com/260138342)
 
-How to upload video(s) to the Cloud Partner Portal? 
-When uploading a video in the in the Cloud Partner Portal you need to provide the following:
+How to upload video(s) to Partner Center? 
+When uploading a video in the in Partner Center you need to provide the following:
 - A name for your video (cf. customers will see this name on your app's details page)
 - An URL to a YouTube or Vimeo video 
 - The video URL must be either a YouTube or Vimeo link that is able to be played using an embedded experience.
@@ -108,7 +109,7 @@ Examples of Sales and marketing docs you can include as your "Learn more" assets
 - Set up instructions, customer reviews, marketing materials, white papers, brochures, check lists, PowerPoints etc.
 - A unique offer landing page
 
-When uploading a document in the in the Cloud Partner Portal you need to provide the following:
+When uploading a document in the in Partner Center you need to provide the following:
 - A name for your document (cf. customers will see this name on your app's details page) 
 - Upload the doc you want to include in your storefront details
 
@@ -146,7 +147,7 @@ Choose key visual elements to highlight rather than including a full screen of d
 - *Don't use small fonts*, as small fonts that require squinting.
 - *Don't include screenshots from the Winclient* – only use screenshots from the Webclient and the Dynamics 365 Business Central UI.
 
-When uploading a screenshot in the in the Cloud Partner Portal you need to provide the following: 
+When uploading a screenshot in the in Partner Center you need to provide the following: 
 |- A name for your screenshot (Customers will see this name on your app's details page)
 - An URL to a YouTube or Vimeo video o The video URL must be either a YouTube or Vimeo link that is able to be played using an embedded experience.
 - Upload only a .png image with resolution 1280 x 720.
@@ -155,6 +156,6 @@ When uploading a screenshot in the in the Cloud Partner Portal you need to provi
 > *Example:* *Dashboard* *Set up instructions*
 
 > [!TIP]  
-> *Example:* of the completed screenshot fields (cf. point 17) in the "Marketing artifacts" section of the Cloud partner portal:
+> *Example:* of the completed screenshot fields (cf. point 17) in the "Marketing artifacts" section of Partner Center:
 
 ![Storefront Detail - Screenshots](../../media/Screenshots.png)

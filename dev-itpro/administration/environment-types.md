@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 04/20/2020
+ms.date: 04/27/2020
 ms.author: edupont
 ---
 
