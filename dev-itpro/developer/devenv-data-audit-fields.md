@@ -37,7 +37,7 @@ Data audit fields are exposed in the platform code and from AL code, allowing yo
 
 At runtime, the data audit fields have the following characteristics and behavior: 
 
-- It is not possible to assign your own value to any of the audit fields. The platform will automatically generate and assign values 
+- It is not possible to assign your own value to any of the audit fields. The platform will automatically generate and assign values:
 
   - After all OnBefore[Modify|Insert] events
   - After the Modify/Insert trigger 
