@@ -30,7 +30,7 @@ Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the followi
 
   Specifies the SID of the user that last modified the record
 
-Data audit fields are automatically added by the platform. The fields are exposed in AL code, allowing developers to code against them.
+Data audit fields are automatically added by the platform. The platform also exposes the fields in AL code, allowing developers to code against them.
 
 ## Static characteristics
 
