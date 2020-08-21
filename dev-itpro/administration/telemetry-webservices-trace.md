@@ -77,7 +77,7 @@ The following table explains the custom dimensions included in a **Web Services 
 The following code snippet is a CustomDimensions example:
 
 `
-{"telemetrySchemaVersion":"0.6","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines","httpStatusCode":"200"}
+{"telemetrySchemaVersion":"0.6","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC/ODataV4/Company()/workflowSalesDocumentLines","httpStatusCode":"200"}
 `
  
 ## See also
