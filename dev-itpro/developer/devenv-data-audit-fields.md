@@ -1,4 +1,4 @@
----
+---""''&copy;&trade;&reg;*
 title: "Data audit fields in Business Central"
 ms.author: jswymer
 ms.custom: na
@@ -49,15 +49,17 @@ At runtime, the data audit fields have the following characteristics and behavio
 
 -  The platform will automatically generate and assign values on the following  
 
-   - After all OnBefore[Modify|Insert] events
-   - After the Modify/Insert trigger 
-   - Before all OnAfter[Modify|Insert] events
+   - After all  [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
+   - After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run.
+   - Before all [OnAfterInsert](triggers/devenv-onafterinsert-trigger.md) and [OnAfterModify](triggers/devenv-onaftermodify-trigger.md) triggers are run.
 
-   You can't assign your own values to any of the audit fields.
+    You can't assign your own values to any of the audit fields.
 
 - When a new record is created, before calling Insert, the audit fields are given blank GUIDs and blank dates as values.
 
-- When a record is first inserted, the fields are populated with actual values. The SystemCreatedBy and SystemLastModifiedBy are given the same value at this point. So are the SystemCreatedAt and SystemLastModifiedAt fields.
+- When a record is first inserted, the fields are populated with actual values.
+
+    The SystemCreatedBy and SystemLastModifiedBy fields are given the same value. So are the SystemCreatedAt and SystemLastModifiedAt fields.
 
     The SystemCreatedBy and SystemCreatedAt won't change after this point.
 
