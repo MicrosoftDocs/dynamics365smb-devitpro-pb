@@ -1,6 +1,6 @@
 ---
 title: "Access Property"
-description:
+description: "Describes the usage of the access modifier on objects in Business Central."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/20/2020
