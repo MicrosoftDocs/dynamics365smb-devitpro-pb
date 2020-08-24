@@ -18,8 +18,6 @@ Access modifiers are used to set accessibility of tables, table fields, codeunit
 
 You set the object accessibility by using the [Access Property](properties/devenv-using-access-modifiers.md). If the `Access` property is not specified; default is `Public`. 
 
-> [!NOTE]  
-> Setting access to `internal` is linked to the [JSON Files](devenv-json-files.md) setting `internalsVisibleTo`. 
 
 > [!NOTE]  
 > In AL access modifiers are primarily intended for designing APIs and *cannot* be used as a security boundary.
@@ -35,6 +33,7 @@ The access modifiers that are available in AL are:
 |`protected`|The field can be accessed only by code in the same table or tableextensions of that table. <br>**Note:** Applies to table fields only.|
 |`public`|The object or field can be accessed by any other code in the same module and in other modules that references it. <br>**Note:** This is the default value.|
 
+Setting access to `internal` is linked to the [JSON Files](devenv-json-files.md) setting `internalsVisibleTo`. 
 
 > [!IMPORTANT]  
 > Access modifiers are only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection-based mechanisms such as `RecordRef`, or `TransferFields`. And the `OnRun` trigger can be run on `internal` codeunits by using `Codeunit.Run`. Setting the object accessibility level as `Access = Internal;` *cannot* be used as a security boundary. Also see [JSON Files](devenv-json-files.md#appjson).
