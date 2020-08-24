@@ -12,7 +12,7 @@ ms.date: 04/01/2020
 ms.author: jswymer
 ---
 
-# Analyzing Web Services Request Telemetry
+# Analyzing Incoming Web Services Request Telemetry
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
@@ -34,7 +34,7 @@ For more performance guidelines, see [Writing efficient Web Services](../perform
 
 ## General dimensions
 
-The following table explains the general dimensions included in a **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
+The following table explains the general dimensions included in an incoming **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value||
 |---------|-----|-----------|
