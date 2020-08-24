@@ -5,13 +5,15 @@ author: edupont04
 
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 07/24/2020
+ms.date: 08/24/2020
 ms.author: edupont
 ---
 
 # Custom Help Toolkit
 
-Microsoft has published a GitHub repository with scripts and tools that can help you prepare context-sensitive Help for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. This context-sensitive Help can be accessed from the user interface through the *Learn more* links.
+Microsoft has published a GitHub repository with scripts and tools that can help you prepare context-sensitive Help for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. This context-sensitive Help can be accessed from the user interface through the *Learn more* links as described in [Configure Context-Sensitive Help](context-sensitive-help.md). You are welcome to use any other tool or process to help you build and deploy content, and the toolkit is simply intended to help you be more productive.
+
+The GitHub repository includes source code for the tools, and we welcome contributions and feedback as we collaborate on making the toolkit develop over time.  
 
 ## Tools in the toolkit
 
@@ -20,15 +22,18 @@ The toolkit is available at TBD. The repo contains the following tools and the s
 - HtmlFromRepoGenerator tool
 
     For more information, see [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
+- Dynamics NAV field Help conversion scripts
+
+    If you are migrating a solution from Dynamics NAV to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can use the toolkit's script to convert the field Help to tooltip-type text that you can then apply to your solution's page objects.
+- HtmlLocaleChanger tool
+
+    For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)
 
 <!--
 - ConvertHtmlToJson tool
 
     For more information, see [Custom Help Toolkit: The ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md)
 
-- HtmlLocaleChanger tool
-
-    For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)
 
 - "Help Pane extension" Visual Studio project
 

@@ -23,6 +23,7 @@
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
+#### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 ## Get started as a functional consultant
 ### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Documentation](/dynamics365/business-central/product-get-started?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -42,7 +43,6 @@
 ### Develop
 #### [Extending Business Central](/dynamics365/business-central/about-develop-extensions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!--#### What the partner's responsibilities are -->
-<!-- What the partner's responsibilities are -->
 #### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 #### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 #### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
