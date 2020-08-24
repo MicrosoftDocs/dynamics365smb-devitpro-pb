@@ -1,0 +1,23 @@
+---
+title: "XML Comments in Code"
+ms.custom: na
+ms.author: solsen
+ms.date: 08/24/2020
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: SusanneWindfeldPedersen
+---
+
+# XML Comments in Code
+
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The syntax for adding XML comments in your code is triple slashes. 
+
+
+
+## See Also  
+[AL Development Environment](devenv-reference-overview.md)  
+[Developing Extensions in AL](devenv-dev-overview.md)  
+[Pages Overview](devenv-pages-overview.md)  
