@@ -14,7 +14,28 @@ ms.author: solsen
 
 # Using Access Modifiers in AL
 
+Access modifiers are used to set accessibility of tables, table fields, codeunits, and queries, which controls whether the object can be used from other code in your module or other modules.
 
+> [!NOTE]  
+> In AL access modifiers are primarily intended for designing APIs and cannot be used as a security boundary.
+
+The [Access Property](properties/devenv-using-access-modifiers.md) must be used to set this accessibility. If the `Access` property is not specified, the default is `Public`. The access modifiers that are available are:
+
+internal
+local
+protected
+public
+
+Depending on the 
+
+
+	
+RecordRef/FieldRef can access tables/fields by id. 
+	TransferFields can copy internal fields by id.
+	The OnRun trigger can be run on internal codeunits with Codeunit.Run(1020)
+	... 
+
+<!-- design time validation -->
 
 ## See Also
 
