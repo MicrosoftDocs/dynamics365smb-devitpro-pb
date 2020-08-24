@@ -25,9 +25,9 @@ Whether you can run automated tests will depend on your and you environment.
 |[!INCLUDE[prodshort](includes/prodshort.md)] solution|Environment|Testing capabilities||
 |-----------|--------------------||
 |Online |Production||Not allowed. Running tests is not allowed. Running tests in production environment can cause damage to the business, since you may incidentally invoke external systems (e.g. CDS, PayPal, Webhook Subscriptions), slow down other users of your system or cause data corruption.|
-||Sandbox||Sandboxes can be used to run limited tests manually to verify functionality on SaaS Environment. Running large number of tests or tests that take long time (more than 15 minutes per test method) is not supported.|
-|On-premises|Production||Should be the default environment for running large number of tests or setting up CI/CD gates. You can disable the ability to run tests by setting TestAutomationEnabled to false in the server configuration.|
-||Container-Based Development Environment||Docker / OnPrem– Docker or dedicated OnPrem Box should be the default environment for running large number of tests or setting up CI/CD gates. [We can add links here if we did this already on other topics]|
+||Sandbox|![check](media/check.png)|![check](media/check.png)|Sandboxes can be used to run limited tests manually to verify functionality on SaaS Environment. Running large number of tests or tests that take long time (more than 15 minutes per test method) is not supported.|
+|On-premises|Production|![check](media/check.png)|![check](media/check.png)|Should be the default environment for running large number of tests or setting up CI/CD gates. You can disable the ability to run tests by setting TestAutomationEnabled to false in the server configuration.|
+||Container-Based Development Environment|![check](media/check.png)|![check](media/check.png)|Docker / OnPrem– Docker or dedicated OnPrem Box should be the default environment for running large number of tests or setting up CI/CD gates. [We can add links here if we did this already on other topics]|
 
 <!--
 1.    Production SaaS – running tests is not allowed. Running tests in production environment can cause damage to the business, since you may incidentally invoke external systems (e.g. CDS, PayPal, Webhook Subscriptions), slow down other users of your system or cause data corruption.
