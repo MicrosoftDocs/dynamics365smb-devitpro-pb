@@ -22,13 +22,20 @@ By adding XML comments in code, you can enable IntelliSense in Visual Studio Cod
 
 The following table lists the XML elements that are supported for AL.
 
-| XML Tag | Description |
-|---------|-------------|
-|`<summary>`||
-|`<param>`| |
-|`<return>`||
+| XML Tag   | Description |Syntax|
+|-----------|-----------|---------|--|
+|`<summary>`|A summary of the object|`<summary>description</summary>`|
+|`<param>`  |Used in method declaration to describe one or more parameters defined in the method.|`<param name="name">description</param>`|
+|`<return>` |Used in method declaration to describe the return value of the method.|`<returns>description</returns>`|
 
 ## Example
+
+```xml
+/// <summary>
+/// This property specifies access
+/// </summary>
+```
+
 
 ## See Also  
 [AL Development Environment](devenv-reference-overview.md)  
