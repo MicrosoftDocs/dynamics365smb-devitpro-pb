@@ -1,6 +1,6 @@
 ---
 title: "Lifecycle of apps and extensions"
-description: "Overview of the process of updating an app, how to update it."
+description: "Overview of the process of updating an app for Business Central, how to update it."
 author: edupont04
 
 ms.custom: na
@@ -8,22 +8,22 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 08/24/2020
 ---
 
 # The Lifecycle of Apps and Extensions for Business Central
 
-When you build an app or extension to [!INCLUDE[prodshort](includes/prodshort.md)] and get that published to AppSource, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, the [!INCLUDE[prodshort](includes/prodshort.md)] service itself, will also get updated. But what happens after your app gets published?
+When you build an app or extension to [!INCLUDE[prodshort](includes/prodshort.md)] and get that published to AppSource, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prodshort](includes/prodshort.md)] online itself, will also get updated. But what happens after your app gets published?
 
-When your app has passed all of our validations and has gone live to App Source, customers can install your extension and use it for their business. You might ask, what now happens with my app?  
+When your app has passed all of our validations and has gone live to App Source, customers can install your extension and use it for their business. But you are expected to keep it compliant with the service and update it if something changes.  
 
-The following sections describe the different upgrade scenarios that we have seen play out as we update [!INCLUDE[prodshort](includes/prodshort.md)].
+The following sections describe the different upgrade scenarios that we have seen play out as we update [!INCLUDE[prodshort](includes/prodshort.md)]. For more information about your responsibility for keeping your app updated and the resources that are available to you, see [Maintain AppSource Apps and Per-Tenant Extensions](app-maintain.md).  
 
 ## Scenario 1: Business Central service update
 
 You don't need to make any bug fixes, feature adds, or app changes to your app. It continues to work fine without any interaction on your part.  
 
-### Impact
+### Impact of service updates
 
 The monthly service upgrades to [!INCLUDE[prodshort](includes/prodshort.md)] do not impact your app. Your app just gets moved along and no upgrade code from your app needs to get used. [!INCLUDE[prodshort](includes/prodshort.md)] itself gets upgraded on your tenant, and once complete, the customer sees no difference with your app.
 
@@ -31,7 +31,7 @@ The monthly service upgrades to [!INCLUDE[prodshort](includes/prodshort.md)] do 
 
 You (our partner) add some features to your app and also some minor bug fixes. The app is submitted for validation. The app passes validation and gets checked into the service. This is now the active app for any new tenants and also for existing tenants that have never had your app installed before
 
-### Impact
+### Impact of app updates
 
 Customers can either do an uninstall and then reinstall on their own, or they can ask their partner do it on their behalf from the Extension Management window within [!INCLUDE[prodshort](includes/prodshort.md)]. Otherwise, they would have to wait until our every 6-month major release. That is the only time we do a force upgrade of extensions (except for critical bug hotfix extension updates)
 
@@ -39,7 +39,7 @@ Customers can either do an uninstall and then reinstall on their own, or they ca
 
 You (our partner) has various customers report some bugs that are impacting their usage of the app. The bugs aren't critical but they are important. The partner makes the fixes in the app and resubmits for validation. The app passes validation and gets checked into the service. This is now the active app for any new tenants and also for existing tenants that have never had your app installed before
 
-### Impact
+### Impact of bugs
 
 We still do not force the upgrade of this app to this latest version on all of the tenants. Some tenants may not be using the functionality that includes this bug and continue to work fine on the current version of the app. Therefore, you should work directly with all of the impacted customer tenants to uninstall and reinstall to get the latest app version that contains fixes for the bug.
 
@@ -51,7 +51,7 @@ Critical bug within the app is found in tenants. These tenants cannot do their d
 
 Microsoft has to break your app file for a needed [!INCLUDE[prodshort](includes/prodshort.md)] core change. Some reasons for breaking could be security, bugs in the underlying code, high priority feature adds, and so on. Keep in mind, we do our very best to not break your app through our changes. We try and find proper ways of doing the changes without breaking your app. However, if we can't find a proper (non-breaking) way, then we could break your app. This won't be as likely in a minor update release (unless a security change is required on our part and that is the change that breaks you), but it can be more likely in our major (every 6-month) releases.
 
-### Impact
+### Impact of breaking changes
 
 Here is our process when this takes place:
 
@@ -68,7 +68,7 @@ If a customer uninstalls your app, and then installs it again later, then when t
 
 ### How Microsoft handles your app
 
-When Microsoft upgrades a tenant with a service update, your app is tested against the new service version. If the app breaks, Microsoft rolls back to the previous healthy state. Your customer never learns that anything was about to break.
+When Microsoft upgrades a tenant with a service update, your app is tested against the new service version. If the app breaks, Microsoft rolls back to the previous healthy state. Your customer never learns that anything was about to break.  
 
 When a tenant uninstalls and reinstalls an extension via the Extension Management page or AppSource, there is platform logic that determines whether an *Install* or an *Upgrade* must take place. We detect which version of the extension the tenant previously had installed and perform the appropriate action. Therefore, the result of manually uninstalling/installing the extension is the exact same as an automated upgrade.  
 
@@ -76,8 +76,14 @@ Additionally, there will not be any data loss during uninstall, install, or upgr
 
 When an extensions gets uninstalled, these tables do not get removed. Therefore, when the extension gets reinstalled (or upgraded), the data is still available. You do not need to worry about data loss for choosing the uninstall/install route. However, do keep in mind that if any actions are being performed on the tenant while the extension is uninstalled, the extension's events and such will not be firing, and your app may miss the creation of new data. Try to perform the uninstall/install while the tenant is not online.  
 
+For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-apps-or-ptes-cannot-be-updated-by-microsoft).  
+
 ## See Also
 
+[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
-[Checklist for Submitting Your App](devenv-checklist-submission.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  
+[Add your App to AppSource](../administration/appsource.md)  
+[Checklist for Submitting Your App](devenv-checklist-submission.md)  
+[Upgrading AppSource Apps in Production](devenv-upgrade-appsource-app-in-prod.md)  
+[Maintain AppSource Apps and Per-Tenant Extensions](app-maintain.md)  
