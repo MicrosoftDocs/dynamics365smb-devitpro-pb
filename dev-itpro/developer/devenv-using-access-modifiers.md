@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Using Access Modifiers in AL
 
-Access modifiers are used to set accessibility of tables, table fields, codeunits, and queries, which controls whether the object can be used from other code in your module or other modules.
+Access modifiers are used to set accessibility of tables, table fields, codeunits, and queries, which controls whether the object can be used from other code in your module or other modules. Setting access to `internal` is linked to the [JSON Files](devenv-json-files.md) setting `internalsVisibleTo`. Only 
 
 > [!NOTE]  
 > In AL access modifiers are primarily intended for designing APIs and cannot be used as a security boundary.
@@ -25,12 +25,11 @@ The access modifiers that are available in AL are:
 
 |Access Modifier| Description  |
 |---------------|------|
-|`internal`|The object or field can be accessed only by code in the same module, but not from another module. The accessibility is controlled by the `internalsVisibleTo` setting. For more information, see [JSON Files](devenv-json-files.md)|
+|`internal`|The object or field can be accessed only by code in the same module, but not from another module. This accessibility level is controlled by the `internalsVisibleTo` setting. For more information, see [JSON Files](devenv-json-files.md)|
 |`local`|he field can be accessed only by code in the same table or table extension where the field is defined. Applies to tables fields only.|
 |`protected`|The field can be accessed only by code in the same table or tableextensions of that table. Applies to table fields only.|
 |`public`|The object or field can be accessed by any other code in the same module and in other modules that references it. This is the default value.|
 
-Depending on the 
 	
 RecordRef/FieldRef can access tables/fields by id. 
 	TransferFields can copy internal fields by id.
