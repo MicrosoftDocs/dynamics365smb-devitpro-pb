@@ -28,7 +28,7 @@ The access modifiers that are available in AL are:
 |Access Modifier| Description  |
 |---------------|------|
 |`internal`|The object or field can be accessed only by code in the same module, but not from another module. <br>**Note:** This accessibility level is controlled by the `internalsVisibleTo` setting. For more information, see [JSON Files](devenv-json-files.md)|
-|`local`|he field can be accessed only by code in the same table or table extension where the field is defined. <br>**Note:** Applies to tables fields only.|
+|`local`|The field can be accessed only by code in the same table or table extension where the field is defined. <br>**Note:** Applies to tables fields only.|
 |`protected`|The field can be accessed only by code in the same table or tableextensions of that table. <br>**Note:** Applies to table fields only.|
 |`public`|The object or field can be accessed by any other code in the same module and in other modules that references it. <br>**Note:** This is the default value.|
 
