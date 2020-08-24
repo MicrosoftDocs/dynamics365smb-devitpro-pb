@@ -51,6 +51,7 @@ For table fields there are two additional settings for **Access** and you have t
 
 ## Syntax
 
+### Tables
 ```
 table 50111 MyTable
 {
@@ -59,6 +60,8 @@ table 50111 MyTable
     ...
     
 ```
+### Table fields
+
 ```
 table 50111 MyTable
 {
@@ -73,6 +76,8 @@ table 50111 MyTable
     ...            
 
 ```
+### Queries
+
 ```
 query 50114 MyQuery
 {
@@ -80,6 +85,9 @@ query 50114 MyQuery
     Access = Internal;
     ...
 ```
+
+### Codeunits
+
 ```
 codeunit 50113 MyCodeunit
 {
