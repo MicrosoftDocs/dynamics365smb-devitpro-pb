@@ -22,11 +22,11 @@ This section describes how you can work with end-users to improve the performanc
 
 - Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
 
-> [!IMPORTANT] 
-> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/) before support ends.
+  > [!IMPORTANT] 
+  > [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/), before support ends.
 
-- Keep your browser always updated to the latest version which may include the latest performance enhancements.
-- Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance features and optimizations such as page caching are only available for modern browsers.
+- Always keep your browser updated to the latest version, which may include the latest performance enhancements.
+- Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance features and optimizations, such as page caching, are only available for modern browsers.
 
 ### Browsers and page caching
 The overall structure of a page (but not business data) is cached on the client device when a page is accessed the first time. The next time that same page is accessed, the layout of the page will be immediately displayed while the latest data is fetched from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service. To take full advantage of page caching, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires a modern browser with access to the browser's storage mechanisms.
