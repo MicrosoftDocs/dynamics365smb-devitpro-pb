@@ -18,25 +18,22 @@ For a walkthrough concerning advanced extension testing, see [Testing the Advanc
 
 [!INCLUDE[prodshort](includes/prodshort.md)] includes the below features to help you test your application.
 
-## Environment Testing
+## Testing support per environment
 
 Whether you can run automated tests will depend on your and you environment. 
 
-|[!INCLUDE[prodshort](includes/prodshort.md)] solution|Environment|Testing capabilities||
-|-----------|--------------------||
-|Online |Production||Not allowed. Running tests is not allowed. Running tests in production environment can cause damage to the business, since you may incidentally invoke external systems (e.g. CDS, PayPal, Webhook Subscriptions), slow down other users of your system or cause data corruption.|
-||Sandbox|![check](media/check.png)|![check](media/check.png)|Sandboxes can be used to run limited tests manually to verify functionality on SaaS Environment. Running large number of tests or tests that take long time (more than 15 minutes per test method) is not supported.|
-|On-premises|Production|![check](media/check.png)|![check](media/check.png)|Should be the default environment for running large number of tests or setting up CI/CD gates. You can disable the ability to run tests by setting TestAutomationEnabled to false in the server configuration.|
-||Container-Based Development Environment|![check](media/check.png)|![check](media/check.png)|Docker / OnPrem– Docker or dedicated OnPrem Box should be the default environment for running large number of tests or setting up CI/CD gates. [We can add links here if we did this already on other topics]|
+|[!INCLUDE[prodshort](includes/prodshort.md)] solution|Environment|Testing allowed|More details|
+|-----------------------------------------------------|-----------|-------|----|
+|Online |Production||Running tests is not allowed because it might have an adverse effect on your business. Testing can incidentally invoke external systems, like CDS, PayPal, and web hook subscriptions. Invoking these systems may slow down the solution for other users or cause data corruption.|
+||Sandbox|![check](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running large number of tests or tests that take long time (more than 15 minutes per test method) is not supported.|
+|On-premises|Production|![check](media/check.png)|For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#General)|
+||Container-based development environment|![check](media/check.png)|This should be the default environment for running large number of tests or setting up CI/CD gates.|
 
 <!--
 1.    Production SaaS – running tests is not allowed. Running tests in production environment can cause damage to the business, since you may incidentally invoke external systems (e.g. CDS, PayPal, Webhook Subscriptions), slow down other users of your system or cause data corruption.
 2.    Sandbox – sandboxes can be used to run limited tests manually to verify functionality on SaaS Environment. Running large number of tests or tests that take long time (more than 15 minutes per test method) is not supported.
 3.    
 -->
-
-> [!IMPORTANT]
-> For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.
 
 ## Test Codeunits and Test Methods 
 
