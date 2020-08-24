@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Outgoing Web Services Telemetry
 
-[!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
+[!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
 Web services telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
 
@@ -38,8 +38,7 @@ The following table explains the general dimensions included in a **Web Services
 
 |Dimension|Description or value||
 |---------|-----|-----------|
-|operation_Name|**Web Services Call**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.||
-|message|Version 16.1 and later (depending on the type):<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>Before version 16.1:<ul><li>**Received a web service request of type API**</li><li>**Received a web service request of type ODataV4**</li><li>**Received a web service request of type ODataV3**</li><li>**Received a web service request of type SOAP**||
+|message|**Web Service Called (Outgoing): {endpoint}**||
 |severityLevel|**1**||
 
 ## Custom dimensions
@@ -55,32 +54,34 @@ The following table explains the custom dimensions included in a **Web Services 
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|alAuthenticationMethod|Specifies the ID of the AL object that was run by request.|
+|alHttpTimeout||
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |alObjectName|Specifies the name of the AL object that was run by the request.|
 |alObjectType|Specifies the type of the AL object that was run by the request.|
-|category|Specifies the service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
+|companyName||
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |endpoint|Specifies the endpoint for the request.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|eventId|**RT0019**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
-|httpStatusCode |Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**401**<br />Access denied. The user who made the request doesn't have proper permissions. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). </li><li>**404**<br />Not found. The given endpoint was not valid. For more information, see [Publishing a Web Service](../webservices/publish-web-service.md)</li><li>**408**<br />Request timed out. The request took longer to complete than the threshold configured for the service. For information about this threshold in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataServicesOperationTimeout setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**429**<br /> Too Many Requests. The request exceeded the maximum simultaneous requests allowed on the service. For information about this threshold in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataMaxConnections setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li></ul><br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.3.|
+|eventId|**RT0019**|
+|extensionId|Specifies the appID of the extension that the report object belongs to.|
+|extensionName|Specifies the name of the extension that the report object belongs to.|
+|extensionVersion|Specifies the version of the extension that the report object belongs to.|
+|httpMethod||
+|httpReturnCode |Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**401**<br />Access denied. The user who made the request doesn't have proper permissions. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). </li><li>**404**<br />Not found. The given endpoint was not valid. For more information, see [Publishing a Web Service](../webservices/publish-web-service.md)</li><li>**408**<br />Request timed out. The request took longer to complete than the threshold configured for the service. For information about this threshold in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataServicesOperationTimeout setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**429**<br /> Too Many Requests. The request exceeded the maximum simultaneous requests allowed on the service. For information about this threshold in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataMaxConnections setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li></ul><br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.3.|
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that the request executed\*\*.|
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements\*\*.|
 |totalTime|Specifies the amount of time it took to process the request\*\*. The time has the format hh:mm:ss.sssssss. <br /><br />|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
-
-** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 
 ### Example trace
 
 The following code snippet is a CustomDimensions example:
 
 `
-{"telemetrySchemaVersion":"0.6","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC160/ODataV4/Company()/workflowSalesDocumentLines","httpStatusCode":"200"}
+{"Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","Component version":"17.0.15765.0","Environment type":"Production","componentVersion":"17.0.15765.0","Environment name":"Production","environmentName":"Production","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension version":"17.0.15821.0","extensionVersion":"17.0.15821.0","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","aadTenantId":"afbb64dc-bc88-43a3-9153-dd9d2fde08e6","AadTenantId":"afbb64dc-bc88-43a3-9153-dd9d2fde08e6","AL Object Id":"7203","Company name":"CRONUS USA, Inc.","AL Object type":"CodeUnit","Extension name":"Base Application","AL Object name":"CDS Environment","component":"Dynamics 365 Business Central Server","companyName":"CRONUS USA, Inc.","extensionName":"Base Application","Component":"Dynamics 365 Business Central Server","alObjectId":"7203","alObjectName":"CDS Environment","alObjectType":"CodeUnit","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","eventId":"RT0019","httpMethod":"GET","serverExecutionTime":"00:00:00.1971767","totalTime":"00:00:00.1971767","endpoint":"https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances","alAuthenticationMethod":"AccessControlService","alHttpTimeout":"00:01:40","httpReturnCode":"200"}
 `
  
 ## See also
