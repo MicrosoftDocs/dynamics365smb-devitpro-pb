@@ -20,7 +20,7 @@ For a walkthrough concerning advanced extension testing, see [Testing the Advanc
 
 ## Testing support per environment
 
-Whether you can run automated tests will depend on your solution and environment. 
+Whether you can run automated tests will depend on your [!INCLUDE[prodshort](includes/prodshort.md)] solution type and environment.
 
 |[!INCLUDE[prodshort](includes/prodshort.md)] solution|Environment|Testing allowed|More details|
 |-----------------------------------------------------|-----------|-------|----|
