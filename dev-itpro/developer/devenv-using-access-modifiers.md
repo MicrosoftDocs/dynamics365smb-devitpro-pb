@@ -14,9 +14,12 @@ ms.author: solsen
 
 # Using Access Modifiers in AL
 
-Access modifiers are used to set accessibility of tables, table fields, codeunits, and queries, which controls whether the object can be used from other code in your module or other modules. Setting access to `internal` is linked to the [JSON Files](devenv-json-files.md) setting `internalsVisibleTo`. 
+Access modifiers are used to set accessibility of tables, table fields, codeunits, and queries, which controls whether the object can be used from other code in your module or other modules. Access modifiers in AL are designed to create solid APIs, by limiting the symbols that dependant modules can take a reference on. Limiting the API surface can hide implementation details and allow for later refactoring of code with breaking external code.
 
 You set the object accessibility by using the [Access Property](properties/devenv-using-access-modifiers.md). If the `Access` property is not specified; default is `Public`. 
+
+> [!NOTE]  
+> Setting access to `internal` is linked to the [JSON Files](devenv-json-files.md) setting `internalsVisibleTo`. 
 
 > [!NOTE]  
 > In AL access modifiers are primarily intended for designing APIs and *cannot* be used as a security boundary.
