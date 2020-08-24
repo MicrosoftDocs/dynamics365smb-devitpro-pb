@@ -192,13 +192,14 @@ The data audit fields have the following static characteristics:
 
 At runtime, the data audit fields have the following characteristics and behavior: 
 
--  The platform will automatically generate and assign values on the following  
+-  The platform will automatically generate and assign values as follows:   
 
    - After all  [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
    - After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run
    - Before all [OnAfterInsert](triggers/devenv-onafterinsert-trigger.md) and [OnAfterModify](triggers/devenv-onaftermodify-trigger.md) triggers are run
 
-    You can't assign your own values to any of the audit fields.
+    > [!NOTE]
+    > You can't assign your own values to any of the audit fields.
 
 - When a new record is created, before calling Insert, the audit fields are given blank GUIDs and blank dates as values.
 
