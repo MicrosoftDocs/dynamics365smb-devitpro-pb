@@ -20,19 +20,24 @@ This article describes how to set up [!INCLUDE [prodshort](../developer/includes
 
 ## Prerequisites
 
-- [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises is configured to use Azure Active Directory (AD) authentication.
+- An Azure Active Directory (AD) tenant.
 
-    For more information, see [Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md)
-- An Azure AD account
+   You'll need a tenant on Azure AD that has at least one user. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
 
-    In most cases, this account is the same as your Business Central account. You'll use this account to access Azure Active AD tenant via the Azure portal.
+   If the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] deployment is using Azure AD authentication, then you already have a tenant with users. See [Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md).
+
+   If your deployment uses NavUserPassword authentication, you'll need the credentials (sign in email and password) of a user account later in this article.
+
+- An Azure portal account
+
+    You'll need an account for accessing the Azure portal. In most cases, this account is the same as your Business Central account. You'll use this account to access Azure Active AD tenant via the Azure portal.
 
 ## Register an application in Azure Active Directory
 
 The first task is to use Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises and the services to know each other's Azure Active Directory (Azure AD) details.
 
 > [!TIP]
-> The following steps describe how to register a new application. However, because you're using Azure AD authentication, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow. 
+> The following steps describe how to register a new application. However, if you're using AZure AD authentication, you already have a registered application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises in Azure Active Directory tenant.
 
@@ -81,9 +86,11 @@ After you register the application, the next task is to configure the Business C
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
 4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
 5. In the **Key** field, specify the value of the client secret used by the Business Central application in Azure AD.
-6. Choose **Next**. Unless you see an error message, you're now done.
+6. Choose **Next**.
 
-The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+    If you're using NavUserPassword authentication, you're prompted to sign in to the Azure AD tenant. In this case, enter the sign in email and password of a valid account.
+
+Unless you see an error message, you're now done. The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 ## Fixing problems
 
@@ -98,7 +105,7 @@ When you try to connect, you get a message similar to the following:
 To fix this issue, verify that the **Reply URL** in the Setup Azure AD page is correct. It must match the Reply URL set on the registered app in Azure AD.
 
 ## See Also
-[Enabling Your Business Data for Power BI](/dynamics365/business-central/admin-powerbi)  
+[Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
