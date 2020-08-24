@@ -97,7 +97,7 @@ var
 ## With statements
 
 > [!IMPORTANT]  
-> Using the `with` statement will be deprecated and removed for cloud development in a future release. With the next release this will be a warning, which will become an error in a future release.
+> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it will be a warning, which will become an error in a future release. <br>Using `with` statements, allowing to work with members using just simple names instead of qualifying these introduces possible uniqueness collisions when multiple extensions contribute to the same objects. To avoid this going forward, we are marking the use of WITH, be it implicit or explicit (using WITH keyword) as warnings. In addition, we are adding quick actions to fix a file, as well as suppress obsolete warnings for now. This will, however, need to be refactored before `with` statements are compiled with errors.
 
 The following syntax shows a with-do statement.  
 
