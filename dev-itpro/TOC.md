@@ -224,8 +224,6 @@
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
-### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### [Data Audit Fields](developer/devenv-data-audit-fields.md)
 ### Migrating Tables and Fields Between Extensions
 #### [Overview](developer/devenv-migrate-table-fields.md)
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
