@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The syntax for adding XML comments in your code is triple slashes. 
 
-By adding XML comments in code, you can enable IntelliSense on the AL objects that you add in your code.
+By adding XML comments in code, you can enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code.
 
 
 ## Supported XML tags
@@ -25,6 +25,8 @@ The following table lists the XML elements that are supported for AL.
 | XML Tag | Description |
 |---------|-------------|
 |`<summary>`||
+|`<param>`| |
+|`<return>`||
 
 ## Example
 
