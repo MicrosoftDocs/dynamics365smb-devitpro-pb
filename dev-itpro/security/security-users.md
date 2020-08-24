@@ -13,11 +13,12 @@ author: mikebc
 
 # Security Tips for Business Users
 
-This section describes how you can work with end-users and configure their devices to improve the security.
+This article describes how you can work with end-users and configure their devices to improve the security.
 
 ## Kiosks and shared devices
+
 Customers using kiosks, where multiple users sign into [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with their own identity from that terminal, should apply additional security practices for an appropriate level of isolation between users.
- - Before ending a session at the kiosk, business users should remember to sign out of Business Central then close all browser windows. Closing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] browser tab or closing the browser without signing out may not fully complete the signout process.
+ - Before ending a session at the kiosk, business users should remember to sign out of Business Central, then close all browser windows. Closing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] browser tab or closing the browser without signing out may not fully complete the signout process.
  - Each user should use private or guest browsing modes so that any data cached by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is discarded when the browser is closed. Private or guest browsing may degrade some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] features and performance optimizations that are only available when the browser provides access to its storage mechanisms.
 
 
