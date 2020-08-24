@@ -20,14 +20,14 @@ For a walkthrough concerning advanced extension testing, see [Testing the Advanc
 
 ## Testing support per environment
 
-Whether you can run automated tests will depend on your and you environment. 
+Whether you can run automated tests will depend on your solution and environment. 
 
 |[!INCLUDE[prodshort](includes/prodshort.md)] solution|Environment|Testing allowed|More details|
 |-----------------------------------------------------|-----------|-------|----|
 |Online |Production||Running tests is not allowed because it might have an adverse effect on your business. Testing can incidentally invoke external systems, like CDS, PayPal, and web hook subscriptions. Invoking these systems may slow down the solution for other users or cause data corruption.|
 ||Sandbox|![check](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running large number of tests or tests that take long time (more than 15 minutes per test method) is not supported.|
 |On-premises|Production|![check](media/check.png)|For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#General)|
-||Container-based development environment|![check](media/check.png)|This should be the default environment for running large number of tests or setting up CI/CD gates.|
+||Container-based development environment|![check](media/check.png)|This should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development)|
 
 <!--
 1.    Production SaaS – running tests is not allowed. Running tests in production environment can cause damage to the business, since you may incidentally invoke external systems (e.g. CDS, PayPal, Webhook Subscriptions), slow down other users of your system or cause data corruption.
