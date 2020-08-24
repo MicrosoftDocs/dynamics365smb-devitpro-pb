@@ -29,19 +29,21 @@ This section describes how you can work with end-users to improve the performanc
 - Some [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance features and optimizations, such as page caching, are only available for modern browsers.
 
 ### Browsers and page caching
-The overall structure of a page (but not business data) is cached on the client device when a page is accessed the first time. The next time that same page is accessed, the layout of the page will be immediately displayed while the latest data is fetched from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service. To take full advantage of page caching, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires a modern browser with access to the browser's storage mechanisms.
+
+The overall structure of a page (but not business data) is cached on the client device when a page is accessed the first time. The next time that same page is accessed, the layout of the page will be immediately displayed, while the latest data is fetched from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service. To take full advantage of page caching, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires a modern browser with access to the browser's storage mechanisms.
 
 |Browser|Page caching availability|
 |--------|---------|
 |New Edge|Available|
 |Chrome|Available|
-|Safari|Partly available. In some cases, users will not benefit from page caching across sessions. |
-|FireFox|Partly available. In some cases, users will not benefit from page caching across sessions. |
+|Safari|Partly available. In some cases, users won't benefit from page caching across sessions. |
+|FireFox|Partly available. In some cases, users won't benefit from page caching across sessions. |
 |Edge Legacy|Unavailable|
 |Internet Explorer|Unavailable|
 
 > [!IMPORTANT]  
-> Browsers that run in private or guest mode typically discard browser storage when the browser window is closed. This discards cached data and users will not be able to take advantage of page caching when they next sign into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Users relying on private or guest browsing to work across multiple identities and organizations are advised to use browser profiles instead.  
+> Browsers that run in private or guest mode typically discard browser storage when the browser window is closed. This discards cached data and users won't be able to take advantage of page caching the next time they sign into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Users relying on private or guest browsing to work across multiple identities and organizations are advised to use browser profiles instead.
+>
 > Any browser policies or settings that restrict access to local storage or the browser's IndexedDB may prevent [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from applying performance optimizations.
 
 
