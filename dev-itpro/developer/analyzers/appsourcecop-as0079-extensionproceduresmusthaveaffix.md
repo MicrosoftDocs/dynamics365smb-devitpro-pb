@@ -21,42 +21,6 @@ An affix is required for procedures defined in extension objects, because it pre
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks
-
-We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
-
-Built-in methods and types are not included in this rule because they are written using Pascal case.
-
-## Bad code example
-
-```
-trigger OnValidate()
-BEGIN
-    IF "Order Date" > "Starting Date" THEN
-       Error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
-END;
-
-VAR
-    Text007: Label '%1 cannot be greater than %2.';
-```
-
-## Good code example
-
-```
-trigger OnValidate()
-begin
-    if "Order Date" > "Starting Date" then
-       Error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
-end;
-
-var
-    Text007: Label '%1 cannot be greater than %2.';
-
-```
-
-## Good and bad practices for fixing the rule
-Change every reserved language keyword to use lowercase letters.
-
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  

@@ -16,8 +16,6 @@ author: ManuelaHochstrasser
 Would you like to know what has changed in update 16.3?
 Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting. 
 
-[Jump right to downloading update 16.3](https://www.microsoft.com/download/details.aspx?id=101461).
-
 ## Hotfixes
 
 [Link to Hotfixes](https://support.microsoft.com/help/4563407).
