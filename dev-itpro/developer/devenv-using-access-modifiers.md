@@ -18,7 +18,6 @@ Access modifiers are used to set accessibility of tables, table fields, codeunit
 
 You set the object accessibility by using the [Access Property](properties/devenv-using-access-modifiers.md). If the `Access` property is not specified; default is `Public`. 
 
-
 > [!NOTE]  
 > In AL access modifiers are primarily intended for designing APIs and *cannot* be used as a security boundary.
 
