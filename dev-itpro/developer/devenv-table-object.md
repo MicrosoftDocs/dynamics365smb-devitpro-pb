@@ -207,7 +207,7 @@ At runtime, the data audit fields have the following characteristics and behavio
 
     The SystemCreatedBy and SystemLastModifiedBy fields are given the same value. So are the SystemCreatedAt and SystemLastModifiedAt fields.
 
-    The SystemCreatedBy and SystemCreatedAt won't change after this point.
+    The SystemCreatedBy and SystemCreatedAt fields won't change after this point.
 
 - When a record is updated, the SystemLastModifiedBy and SystemLastModifiedAt fields are changed.
 
@@ -257,14 +257,12 @@ Alternatively, you can use a [FieldRef Data Type](methods-auto/fieldref/fieldref
 
 The following example shows how to retrieve the timestamp value for the first record in the `Customer` table. **RecordRef** and **FieldRef** are [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) and [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variables, respectively.
 
-    
 ```
 RecordRef.Open(DATABASE::Customer);
 RecordRef.FindFirst();
 FieldRef := RecordRef.Field(0);
 Message(Format(FieldRef.Value()));
 ```
-    
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
