@@ -19,16 +19,18 @@ Access modifiers are used to set accessibility of tables, table fields, codeunit
 > [!NOTE]  
 > In AL access modifiers are primarily intended for designing APIs and cannot be used as a security boundary.
 
-The [Access Property](properties/devenv-using-access-modifiers.md) must be used to set this accessibility. If the `Access` property is not specified, the default is `Public`. The access modifiers that are available are:
+You set the object accessibility by using the [Access Property](properties/devenv-using-access-modifiers.md). If the `Access` property is not specified; default is `Public`. 
 
-internal
-local
-protected
-public
+The access modifiers that are available in AL are:
+
+|Access Modifier| Description  |
+|---------------|------|
+|`internal`|The object or field can be accessed only by code in the same module, but not from another module. The accessibility is controlled by the `internalsVisibleTo` setting. For more information, see [JSON Files](devenv-json-files.md)|
+|`local`|he field can be accessed only by code in the same table or table extension where the field is defined. Applies to tables fields only.|
+|`protected`|The field can be accessed only by code in the same table or tableextensions of that table. Applies to table fields only.|
+|`public`|The object or field can be accessed by any other code in the same module and in other modules that references it. This is the default value.|
 
 Depending on the 
-
-
 	
 RecordRef/FieldRef can access tables/fields by id. 
 	TransferFields can copy internal fields by id.
