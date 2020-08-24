@@ -20,7 +20,7 @@ This section describes how you can work with end-users to improve the performanc
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports multiple browsers. Each browser offers a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
 
-- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported, recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and browsers for [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
+- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
 
 > [!IMPORTANT] 
 > [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/) before support ends.
