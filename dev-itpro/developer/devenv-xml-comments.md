@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The syntax for adding XML comments in your code is triple slashes followed by one of the supported XML tags. 
 
-By adding XML comments in code, you can enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code. This means that when you have built extension and someone extends this code, they will get inline documentation when they use the given object.
+By adding XML comments in code, you can enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code. This means that when you have built an extension and someone extends this code, they will get inline documentation when they call the given object.
 
 > [!NOTE]  
 > Integration with DocFx and SandCastle is not yet supported.
@@ -27,8 +27,8 @@ The following table lists the XML elements that are supported for AL.
 | XML Tag   | Description |Syntax|
 |-----------|-----------|---------|--|
 |`<summary>`|A summary of the object|`<summary>description</summary>`|
-|`<param>`  |Used in method declaration to describe one or more parameters defined in the method. For each parameter, specify the name and a description.|`<param name="name">description</param>`|
-|`<returns>` |Used in method declaration to describe the return value of the method.|`<returns>description</returns>`|
+|`<param>`  |Used in method declarations to describe one or more parameters defined in the method. For each parameter, specify the name and a description.|`<param name="name">description</param>`|
+|`<returns>` |Used in method declarations to describe the return value of the method.|`<returns>description</returns>`|
 |`<paramref>`|Specifies a reference to a parameter in a `<summary>` or `<remarks>` block.|`<paramref name="name"/>`|
 
 
