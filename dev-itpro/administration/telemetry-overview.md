@@ -26,7 +26,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 
 |Area | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
-|AL methods Provides information about long running AL methods|Online|[Analyzing AL Methods Telemetry](telemetry-al-methods-trace.md) |
+|AL methods| Provides information about long running AL methods|Online|[Analyzing AL Methods Telemetry](telemetry-al-method-trace.md) |
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
 |Database lock timeouts|Provides information about database locks that have timed out. |Both|[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|
