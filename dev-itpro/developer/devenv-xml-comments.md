@@ -17,6 +17,9 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documen
 
 By adding XML comments in code, you can enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code. This means that when you have built extension and someone extends this code, they will get inline documentation when they use the given object.
 
+> []
+> Integration with DocFx and SandCastle is not yet supported.
+
 ## Supported XML tags
 
 The following table lists the XML elements that are supported for AL.
@@ -38,8 +41,18 @@ Description = 'Name of the organization.';
 
 ```
 
+## Special symbols
+
+If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. This encoding is shown in the following example.
+
+```xml
+/// <summary>
+/// This property always returns a value &lt; 1.
+/// </summary>
+```
 
 ## See Also  
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
