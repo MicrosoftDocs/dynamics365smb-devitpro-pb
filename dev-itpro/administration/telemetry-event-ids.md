@@ -31,7 +31,7 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 |RT0010|Extension lifecycle|[Extension Update Failed: exception raised in extension {extensionName} by {extensionPublisher} (updating to version {extensionTargetedVersion})](telemetry-extension-update-trace.md#extension-update-failed-exception-raised-in-extension) | 
 | RT0012 | Performance | [Database lock timed out](telemetry-database-locks-trace.md#database-lock-timed-out) | 
 | RT0013 | Performance | [Database lock snapshot: {snapshotId}](telemetry-database-locks-trace.md#database-lock-snapshot) |
-| RT0019 | Outgoing Web service requests  | [Database lock snapshot: {snapshotId}](telemetry-webservices-outgoing-trace.md) |
+| RT0019 | Outgoing Web service requests  | [Web Service Called (Outgoing): {endpoint}](telemetry-webservices-outgoing-trace.md) |
 
 ## Lifecycle events
 
