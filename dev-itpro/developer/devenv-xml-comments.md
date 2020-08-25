@@ -17,7 +17,6 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documen
 
 By adding XML comments in code, you can enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code.
 
-
 ## Supported XML tags
 
 The following table lists the XML elements that are supported for AL.
@@ -32,8 +31,11 @@ The following table lists the XML elements that are supported for AL.
 
 ```xml
 /// <summary>
-/// This property specifies access
+/// This property specifies a description of the object.
 /// </summary>
+
+Description = 'Name of the organization.';
+
 ```
 
 
