@@ -18,7 +18,7 @@ Sets a link to a Factbox from a page.
 SubPageLink = <TableFilters> ::= <TableFilter> {,<TableFilter>} <TableFilter> ::= <PagePartTableFieldName> = CONST(<FieldConst>) | FILTER(<Filter>) | FIELD (<SourceFieldName>) | FIELD(UPPERLIMIT(<SourceFieldName>)) | FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
 ```  
   
-## Applies to  
+## Applies To  
   
 - Parts  
 

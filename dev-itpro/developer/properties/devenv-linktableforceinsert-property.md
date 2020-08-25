@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # LinkTableForceInsert Property
 Sets whether data from the linked table is forcibly modified or inserted into a table to prevent an error from being generated.  
   
-## Applies to  
+## Applies To  
  XMLports  
   
 ## Property Value  

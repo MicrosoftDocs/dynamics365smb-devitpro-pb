@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # BlankNumbers Property
 Indicates whether the system will clear a range of numbers as it formats them.  
   
-## Applies to  
+## Applies To  
   
 - Page Fields  
   

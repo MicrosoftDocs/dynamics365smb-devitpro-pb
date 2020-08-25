@@ -18,7 +18,7 @@ ms.author: solsen
 # WithEvents Property
 Sets whether a DotNet variable subscribes to the events published by a .NET Framework type.  
   
-## Applies to  
+## Applies To  
  Variables of the **DotNet** data type.  
 
 ## Syntax

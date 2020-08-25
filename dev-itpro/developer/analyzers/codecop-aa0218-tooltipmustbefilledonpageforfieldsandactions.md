@@ -2,7 +2,7 @@
 title: "You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects. See [the style guide](https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066) for more information."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 08/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

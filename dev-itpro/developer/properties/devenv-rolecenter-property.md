@@ -14,7 +14,7 @@ ms.author: solsen
 # RoleCenter Property
 Specifies the Role Center Page associated with the profile.
   
-## Applies to  
+## Applies To  
   
 - Profile object  
 

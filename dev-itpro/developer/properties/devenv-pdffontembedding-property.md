@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # PdfFontEmbedding Property
 Specifies whether fonts are embedded in PDF files that are generated for reports.  
   
-## Applies to  
+## Applies To  
   
 -   Reports  
   

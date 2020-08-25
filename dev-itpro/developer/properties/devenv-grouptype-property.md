@@ -16,7 +16,7 @@ caps.latest.revision: 18
 # GroupType Property
 Sets the subtype for a group control on a page, which determines how fields in a group layout on a page.  
   
-## Applies to  
+## Applies To  
   
 -   Group type controls on pages  
   

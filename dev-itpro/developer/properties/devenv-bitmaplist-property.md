@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # BitmapList Property
 Sets a list of bitmaps from which the correct bitmap to display is selected.  
   
-## Applies to  
+## Applies To  
 - Picture boxes  
   
 ## Remarks  

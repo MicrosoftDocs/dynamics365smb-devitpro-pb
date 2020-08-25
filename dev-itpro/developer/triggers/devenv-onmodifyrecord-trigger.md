@@ -26,7 +26,7 @@ end;
   
  (Boolean) Indicates whether a record should be modified. The return value is checked after each  call. If **true**, the record is modified (default). If **false**, the record is not modified.  
   
-## Applies to  
+## Applies To  
   
 - Pages  
   

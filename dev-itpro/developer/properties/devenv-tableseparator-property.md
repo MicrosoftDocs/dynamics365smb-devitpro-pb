@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # TableSeparator Property
 Specifies the table separator for a table.  
   
-## Applies to  
+## Applies To  
   
 -   XMLports  
   

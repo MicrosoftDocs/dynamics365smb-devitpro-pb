@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # TransactionType Property
 Sets the transaction type.  
   
-## Applies to  
+## Applies To  
   
 -   Database transactions for all AL code  
   

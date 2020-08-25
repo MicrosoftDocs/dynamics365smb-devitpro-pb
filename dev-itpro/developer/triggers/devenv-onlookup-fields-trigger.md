@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnLookup (Fields) Trigger
 Causes the system to display a lookup page.  
 
-## Applies to  
+## Applies To  
 - Fields  
 
 ## Remarks  

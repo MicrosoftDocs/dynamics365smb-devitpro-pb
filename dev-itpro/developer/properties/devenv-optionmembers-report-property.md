@@ -18,7 +18,7 @@ This property seemed new to Niels, he can only guess about how this property wor
 # OptionMembers Property (Report)
 Gets the list of options that are available in the field that is currently selected.
   
-## Applies to  
+## Applies To  
   
 -   Report columns  
 

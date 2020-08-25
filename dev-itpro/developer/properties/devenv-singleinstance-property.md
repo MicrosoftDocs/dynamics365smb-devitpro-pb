@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SingleInstance Property
 Sets whether a single instance of the codeunit and codeunit variables are instantiated.  
   
-## Applies to  
+## Applies To  
  Codeunits  
   
 ## Property Values  

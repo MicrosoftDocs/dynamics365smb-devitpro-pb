@@ -13,7 +13,7 @@ caps.latest.revision: 10
 # EnableExternalAssemblies Property
 Sets whether external Microsoft .NET assemblies can be used on a report.  
   
-## Applies to  
+## Applies To  
  Client report definition \(RDLC\) report layouts  
   
 ## Property Value  

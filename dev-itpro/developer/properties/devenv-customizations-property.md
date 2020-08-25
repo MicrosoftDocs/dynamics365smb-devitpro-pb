@@ -14,7 +14,7 @@ ms.author: solsen
 # Customizations Property
 Specifies the list of page customizations associated with this profile.
   
-## Applies to  
+## Applies To  
   
 - Profile object  
 

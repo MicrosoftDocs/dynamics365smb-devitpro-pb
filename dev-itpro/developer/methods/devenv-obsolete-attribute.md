@@ -37,9 +37,7 @@ codeunit 50143 SoonObsolete
     
 ```
      
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Method Attributes](devenv-obsolete-attribute.md)  
 [ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  

@@ -13,7 +13,7 @@ author: blrobl
 # OnValidateUpgradePerCompany Trigger
 Runs after an extension upgrade. 
 
-## Applies to  
+## Applies To  
 -  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **Upgrade**.  
 
 > [!NOTE]  

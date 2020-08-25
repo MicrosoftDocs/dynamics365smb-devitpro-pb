@@ -19,7 +19,7 @@ Whether the value of this property can be changed is dependent on if the table h
 
 The value `true` means that data is available to the current company only, this is the default value. You can only set this property to `true` if the table is empty in all companies, or if the table holds data in only one company. You cannot change the value to `false` if there is data in the table in any of the companies. 
  
-## Applies to
+## Applies To
 Tables  
   
 ## Property Value  

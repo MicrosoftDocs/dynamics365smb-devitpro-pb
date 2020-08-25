@@ -54,7 +54,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 1. Make backup of the databases.
 
-2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
 
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
@@ -292,7 +292,7 @@ You'll synchronize the tenant's database schema with any schema changes in the a
     ```
    Replace `<extension version>` with the exact version of the published Base Application.
 
-4. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension (when coming from 15.2 and earlier only).
+4. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension (when comping from 15.2 and earlier only).
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # CharAllowed Property
 Sets the range of characters the user can enter into this field or control.  
   
-## Applies to  
+## Applies To  
   
 -   Page Fields  
   

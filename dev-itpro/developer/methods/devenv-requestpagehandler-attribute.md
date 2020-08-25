@@ -32,9 +32,7 @@ The **RequestPageHandler** attribute requires that the method where it is applie
 
 If you create a **ReportHandler** method, then that method replaces all code for running the report, including the request page, and a **RequestPageHandler** is not called. Only create a **RequestPageHandler** method if you are not using a **ReportHandler** one. 
 
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Method Attributes](devenv-method-attributes.md)  
 [ReportHandler Attribute](devenv-reporthandler-attribute.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

@@ -18,7 +18,7 @@ Sets the table view for a part.
 SubPageView = [<SORTING>[<KeyList>] [ORDER(Ascending|Descending)] [WHERE(<TableFilters>)]<KeyList> ::= PagePartTableKey1, PagePartTableKey2, <TableFilters> ::= <TableFilter> {,<TableFilter>}<TableFilter> ::= <PagePartTableFieldName>= CONST(<FieldConst>) | FILTER(<FilterExpression>)
 ```
 
-## Applies to  
+## Applies To  
   
 - Parts
   

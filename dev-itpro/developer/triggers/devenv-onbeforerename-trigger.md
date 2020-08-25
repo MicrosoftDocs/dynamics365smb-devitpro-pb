@@ -14,7 +14,7 @@ author: blrobl
 # OnBeforeRename Trigger
 Runs when a user tries to rename a record.  
 
-## Applies to  
+## Applies To  
 - Table extensions 
   
 ## Remarks  

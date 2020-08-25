@@ -1,1 +1,0 @@
-<Token> **INTRODUCED IN:** Business Central 2020 release wave 2</Token>

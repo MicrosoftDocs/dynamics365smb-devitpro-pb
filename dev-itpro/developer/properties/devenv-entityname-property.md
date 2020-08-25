@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # EntityName Property
 Sets the singular entity name with which the page is exposed in the api endpoint. The following example illustrates the syntax:
 
-## Applies to  
+## Applies To  
   
 - Pages  
   

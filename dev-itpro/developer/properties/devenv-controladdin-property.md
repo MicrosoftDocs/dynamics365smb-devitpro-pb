@@ -14,7 +14,7 @@ caps.latest.revision: 14
 # ControlAddin Property
 Sets the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] control add-in to use on the field control.  
   
-## Applies to  
+## Applies To  
   
 -   Page Fields  
   

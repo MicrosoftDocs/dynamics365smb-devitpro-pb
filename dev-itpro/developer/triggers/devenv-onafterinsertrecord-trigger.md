@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnAfterInsertRecord Trigger
 Runs after a record has been inserted into a database table.  
   
-## Applies to  
+## Applies To  
 - XMLports  
   
 ## Remarks  

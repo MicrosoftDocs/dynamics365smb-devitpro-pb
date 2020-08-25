@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # PaperSourceFirstPage Property
 Specifies which paper source to use when printing page one of the report.  
   
-## Applies to  
+## Applies To  
  Reports  
 
 ## Syntax

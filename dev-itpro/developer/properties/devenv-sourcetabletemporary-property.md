@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SourceTableTemporary Property
 Sets whether the source table is a temporary table.  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
   

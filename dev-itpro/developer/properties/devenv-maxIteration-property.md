@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MaxIteration Property
 Sets a limit on the number of times that a data item will be iterated when the report is run.  
   
-## Applies to  
+## Applies To  
  Data items  
 
 ## Syntax

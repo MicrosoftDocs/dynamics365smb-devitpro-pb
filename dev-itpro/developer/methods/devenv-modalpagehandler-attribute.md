@@ -30,8 +30,6 @@ The **ModalPageHandler** method is called when a modal page is invoked in the co
 
 The **ModalPageHandler** attribute requires that the method where it is applied has the signature `ModalPageHandler(var Page: TestPage)`. The parameter variable, *TestPage*, is the specific page in this case.
 
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

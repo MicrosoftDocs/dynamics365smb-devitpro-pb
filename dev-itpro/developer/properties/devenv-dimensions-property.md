@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Dimensions Property
 Sets the dimensions of a variable that is to create a multi-dimensional variable (array).  
   
-## Applies to  
+## Applies To  
 
 Variables  
   

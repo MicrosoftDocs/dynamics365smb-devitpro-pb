@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 07/22/2020
+ms.date: 04/01/2020
 ms.author: bmeier
 
 ---
@@ -52,7 +52,7 @@ The assisted setup guide consists of up to six pages that take you through the p
 
 2. Product selection
 
-    On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don't see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
+    On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don’t see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
 
 3. SQL Connection
 
@@ -70,17 +70,14 @@ The assisted setup guide consists of up to six pages that take you through the p
 
 5. Company Selection
 
-    You will be provided with a list of companies from your on-premises solution, or source. Select the companies you would like to migrate data for. If the company does not exist in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant, it will be automatically created for you.  
-
-    > [!NOTE]
-    > This process may take several minutes depending on the number of companies that need to be created.
+    You will be provided with a list of companies from your on-premises solution, or source. Select the companies you would like to migrate data for. If the company does not exist in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant, it will be automatically created for you. This process may take several minutes depending on the number of companies that need to be created.
 
 6. Enable & Scheduling Migration
 
     The final page in the wizard allows you to enable the migration process and create a schedule for when the data migration should occur. These settings are also available within your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant on the **Cloud Migration Management** page. You have the option to schedule migrations daily or weekly. We recommend that you schedule your data migration for off-peak business hours.
 
 > [!NOTE]  
->The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
+>The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
 
 ## Adding a tenant to an existing runtime service, or updating companies
 

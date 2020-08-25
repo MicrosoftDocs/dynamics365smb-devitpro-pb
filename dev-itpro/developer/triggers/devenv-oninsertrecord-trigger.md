@@ -30,7 +30,7 @@ end;
  *Ok*  
  \(Boolean\) Determines whether to insert a new record. The return value is checked after each call. If **true**, the record is inserted. If **false**, the record is not inserted.  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
   

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # PopulateAllFields Property
 Sets whether fields are filled out automatically with a single filter value when a new record is inserted in a table.  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
 

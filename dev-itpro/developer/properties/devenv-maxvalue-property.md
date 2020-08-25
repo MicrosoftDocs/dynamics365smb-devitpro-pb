@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MaxValue Property
 Sets the maximum numeric value for a field.  
   
-## Applies to  
+## Applies To  
   
 -   Page Fields  
   

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # EnableExternalImages Property
 Sets whether external images are allowed on a report.  
   
-## Applies to  
+## Applies To  
  Client report definition (RDLC) report layouts  
   
 ## Property Value  
