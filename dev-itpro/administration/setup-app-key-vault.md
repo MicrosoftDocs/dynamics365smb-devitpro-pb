@@ -83,7 +83,7 @@ The next task is to grant the key vault reader application permission to read se
 
 ## Contact Microsoft to enable the App Key Vault feature
 
-Send an email to *bcappkeyvaultonboard@microsoft.com* to start the onboarding process. Do this step before you publish your updated extension to Partner Center.
+Send an email to bcappkeyvaultonboard@microsoft.com to start the onboarding process. Do this step before you publish your updated extension to Partner Center.
 
 The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
 
