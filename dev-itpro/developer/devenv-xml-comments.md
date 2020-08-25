@@ -43,7 +43,7 @@ Description = 'Name of the organization.';
 
 ## Special symbols
 
-If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. This encoding is shown in the following example.
+For special symbols, such as angle brackets to appear in text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. The following example illustrates how.
 
 ```xml
 /// <summary>
