@@ -16,7 +16,7 @@ Sets a date formula used to verify that the date the user enters is correct.
 > [!NOTE]  
 >  We recommend that you do not use this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
 
-## Applies to  
+## Applies To  
 
 - Table Fields  
 

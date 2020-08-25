@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # CurrentPath Property
 Returns the path of the current node as a text string.  
   
-## Applies to  
+## Applies To  
   
 -   XMLports  
   

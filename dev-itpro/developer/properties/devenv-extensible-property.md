@@ -17,7 +17,7 @@ ms.author: solsen
 
 Sets a value that indicates whether a table, page, or enum can be extended. If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, or `enumextension` respectively.
 
-## Applies to  
+## Applies To  
 
 - Tables
 - Pages

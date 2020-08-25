@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # NamespacePrefix Property
 Specifies the namespace prefix on an XMLport element.  
   
-## Applies to  
+## Applies To  
   
 -   Table elements, Field elements and Text elements in XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**.  
 

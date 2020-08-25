@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # APIPublisher Property (Page)
 Sets the publisher of the API endpoint the page is exposed in. The syntax for providing a publisher is illustrated in the example below:
 
-## Applies to  
+## Applies To  
 
 - Page object 
 

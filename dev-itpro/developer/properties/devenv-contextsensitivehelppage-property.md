@@ -16,7 +16,7 @@ ms.author: edupont
 
 Use this property to set the target Help file for context-sensitive Help for pages objects, report objects, and XMLport objects in your solution.  
 
-## Applies to
+## Applies To
 
 - Page objects
 

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Width Property (XMLport)
 Sets the width of a data item of an XMLport.  
   
-## Applies to  
+## Applies To  
  Fields \(in XMLports\)  
  
 ## Syntax

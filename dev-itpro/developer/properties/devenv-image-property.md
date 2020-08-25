@@ -17,7 +17,7 @@ Specifies the icon that you want to associate with an action or display on a Cue
 > [!NOTE]  
 >  On **RoleCenter** type pages, the image property does not apply to actions that are set up in the navigation bar or top-level actions in the action bar. These actions cannot be assigned in icon, or if they have icon by default, the icon cannot be changed. The property only applies to subgroups and child actions in the action bar.
   
-## Applies to  
+## Applies To  
   
 - Action and ActionGroup controls on pages  
 - Field controls in a CueGroup control on pages  

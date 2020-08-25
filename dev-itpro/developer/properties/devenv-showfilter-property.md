@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ShowFilter Property
 Sets whether the filter pane is shown on a page by default.  
   
-## Applies to  
+## Applies To  
  Pages  
   
 ## Property Values  

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnBeforeModifyRecord Trigger
 Runs after a record is read from the input stream and before the existing record in the database is modified.  
   
-## Applies to  
+## Applies To  
 - XMLports  
   
 ## Remarks  

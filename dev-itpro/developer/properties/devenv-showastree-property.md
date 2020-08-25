@@ -19,7 +19,7 @@ Sets a list page to display records (rows) in an indented hierarchy that can be 
 ShowAsTree = true;
 ```
 
-## Applies to  
+## Applies To  
   
 - Repeater controls on list page types  
   
@@ -34,7 +34,7 @@ To enable the tree view, you must also set the **IndentationColumn** property. T
 Optionally, you can set the **TreeInitialState** property to specify whether the list displays as collapsed or expanded when the list page opens in the client.
 
 > [!NOTE]
-> When you set this property to **true**, the **IndentationControl** property is ignored and the first column on the page is indented.
+> When you set this property to **true**, if the **IndentationControl** property is set, it is ignored and the first column on the page is indented.
 
 For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
 

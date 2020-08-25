@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # DataCaptionExpression Property
 Sets an AL expression that is evaluated and displayed to the left of the page caption.  
   
-## Applies to  
+## Applies To  
 -   Pages  
 -   RequestPage
  

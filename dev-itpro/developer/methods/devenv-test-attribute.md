@@ -28,8 +28,6 @@ procedure TestMethod();
 
 The **Test** attribute is used to test an area of the application.
 
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

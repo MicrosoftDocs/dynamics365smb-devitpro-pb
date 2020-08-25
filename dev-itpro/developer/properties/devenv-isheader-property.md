@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # IsHeader Property
 Specifies if the page action separator is a header.
   
-## Applies to  
+## Applies To  
 - Page action separators
   
 ## Property Type

@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # PromotedActionCategoriesML Property
 Sets the caption of the group that you are promoting the action to.  
   
-## Applies to  
+## Applies To  
   
 - Pages
 

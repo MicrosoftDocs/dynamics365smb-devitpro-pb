@@ -13,7 +13,7 @@ ms.author: solsen
 # Editable Property
 Sets a value that indicates whether a field, page, or control can be edited through the UI.  
 
-## Applies to  
+## Applies To  
 
 - Pages and group, part, and field controls  
 

@@ -30,8 +30,6 @@ The **MessageHandler** method is called when a message method is invoked in the 
 
 The **MessageHandler** attribute requires that the method where it is applied has the signature `MessageHandler(Message: Text[1024])`. The parameter type, *Text*,  contains the text of the method.
 
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

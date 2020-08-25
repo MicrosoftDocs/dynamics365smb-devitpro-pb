@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # InitValue Property
 Sets the initial value of this field when a user creates a new record.  
   
-## Applies to  
+## Applies To  
 Fields  
 
 ## Syntax

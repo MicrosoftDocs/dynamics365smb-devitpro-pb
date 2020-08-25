@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnBeforeInsertRecord Trigger
 Runs after a record has been loaded and before it is inserted into a database table.  
   
-## Applies to  
+## Applies To  
 - XMLports  
   
 ## Remarks  

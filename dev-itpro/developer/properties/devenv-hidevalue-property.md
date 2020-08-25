@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # HideValue Property
 Sets whether to show or hide a value for the user based on an expression.  
   
-## Applies to  
+## Applies To  
  Page Fields  
   
 ## Property Values  

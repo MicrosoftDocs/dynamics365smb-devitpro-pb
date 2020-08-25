@@ -30,8 +30,6 @@ The **ReportHandler** method is called when a report is invoked in the code.
 
 The **ReportHandler** attribute requires that the method where it is applied has the signature `ReportHandler(var Report: Report)`. The parameter variable, *Report*, is the specific report in this case.
 
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

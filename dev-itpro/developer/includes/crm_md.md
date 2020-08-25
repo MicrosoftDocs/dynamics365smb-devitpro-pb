@@ -1,1 +1,1 @@
-Dynamics 365 Sales
+Dynamics 365 for Sales

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnInsert Trigger
 Runs when a user inserts a new record into the table.  
   
-## Applies to  
+## Applies To  
 - Tables  
   
 ## Remarks  

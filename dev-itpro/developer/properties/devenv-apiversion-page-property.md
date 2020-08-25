@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # APIVersion Property (Page)
 Sets the version(s) of the API endpoint the page is exposed in. The syntax for providing versions is illustrated in the example below:
 
-## Applies to  
+## Applies To  
 
 - Page object 
 

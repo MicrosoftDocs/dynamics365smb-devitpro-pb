@@ -14,7 +14,7 @@ ms.author: solsen
 Sets the list of options that are available in the field that is currently selected. 
 
   
-## Applies to  
+## Applies To  
   
 -   Fields  
 

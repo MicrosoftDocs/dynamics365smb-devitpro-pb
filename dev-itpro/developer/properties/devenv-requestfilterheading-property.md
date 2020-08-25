@@ -14,7 +14,7 @@ author: jswymer
 # RequestFilterHeading Property
 Sets a caption for the request page tab that is related to a report's data item or an XMLport's table element. The value is taken from the [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) if this property is set.  
   
-## Applies to  
+## Applies To  
   
 - Data items on reports
   

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # DataItemTable Property
 Sets the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database table that is associated with a data item.  
   
-## Applies to  
+## Applies To  
   
 - Queries  
 - Reports  

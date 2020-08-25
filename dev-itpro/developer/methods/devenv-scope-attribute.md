@@ -39,10 +39,9 @@ procedure MyProcedureForOnPrem()
 
 ```
   
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Method Attributes](devenv-method-attributes.md)  
 [JSON Files](../devenv-json-files.md)  
 [Access Property](../properties/devenv-access-property.md)  
 [Extensible Property](../properties/devenv-extensible-property.md)
+

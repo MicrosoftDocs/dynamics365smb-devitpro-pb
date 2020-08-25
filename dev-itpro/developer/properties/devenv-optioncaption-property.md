@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OptionCaption Property
 Sets the text string options that are displayed to the user.  
   
-## Applies to  
+## Applies To  
   
 - Pages  
   

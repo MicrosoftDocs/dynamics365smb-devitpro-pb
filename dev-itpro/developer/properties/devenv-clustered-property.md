@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Clustered Property
 Sets a value that indicates whether the index is clustered.  
   
-## Applies to  
+## Applies To  
 
 Table keys  
 

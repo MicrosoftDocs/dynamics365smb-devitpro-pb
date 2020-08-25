@@ -71,7 +71,7 @@ The Embed App partner can choose to allow customers to use a self-service sign-u
 
 `https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2F[application name].bc.dynamics.com%2F%3FredirectedFromSignup%3D1`
 
-The partner can then pass the URL to their customers, either from the partner's own marketing page or in a welcome e-mail, for example.
+The partner can then pass the URL to their customers, either from the partner’s own marketing page or in a welcome e-mail, for example.
 
 To work with an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], the customers would use a URL that looks something like this:
 

@@ -58,7 +58,7 @@ else
 ```  
 
 ## Method statements
-You use method statements to execute either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
+You use method statements to execute either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#CallMethod). 
 
 ## AssertError statements
 You use AssertError statements in test methods to test how your application behaves under failing conditions. The AssertError keyword specifies that an error is expected at run time in the statement that follows the AssertError keyword.  

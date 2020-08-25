@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # NodeName Property
 Sets the name of a node in an XML document.  
   
-## Applies to  
+## Applies To  
  XMLport data items
 
 ## Syntax

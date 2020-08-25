@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # XmlName Property
 Sets a variable name for the table or the text that is the data source of the current element.
 
-## Applies to  
+## Applies To  
 
 - XmlPortTextElement 
 

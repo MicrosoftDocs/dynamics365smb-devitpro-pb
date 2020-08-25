@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnBeforePassField Trigger
 Runs before a field is passed to the XML document.  
 
-## Applies to  
+## Applies To  
 - XMLports  
 
 ## Remarks  

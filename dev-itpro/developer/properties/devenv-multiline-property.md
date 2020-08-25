@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MultiLine Property
 Sets the value that indicates whether a field can display multiple lines of text.  
   
-## Applies to  
+## Applies To  
   
 -   Page Fields  
   

@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # WordMergeDataItem Property
 Specifies the name of the root-level **DataItem** that is used for generating separate reports for multiple records.
 
-## Applies to  
+## Applies To  
   
 -   Reports  
 

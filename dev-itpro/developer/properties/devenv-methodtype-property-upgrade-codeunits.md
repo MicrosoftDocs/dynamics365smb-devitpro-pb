@@ -14,7 +14,7 @@ caps.latest.revision: 6
 # FunctionType Property (Upgrade Codeunits)
 Sets the type of method in an upgrade codeunit.  
 
-## Applies to  
+## Applies To  
 - AL methods on upgrade codeunits. 
 
 An upgrade codeunit is a codeunit that has the [SubType Property (Codeunit)](devenv-subtype-property-codeunit.md) set to **Upgrade**.  

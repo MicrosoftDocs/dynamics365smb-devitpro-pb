@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # LinkedObject Property
 Use this property to link to SQL Server objects.  
   
-## Applies to  
+## Applies To  
  Tables  
 
 ## Property Value  

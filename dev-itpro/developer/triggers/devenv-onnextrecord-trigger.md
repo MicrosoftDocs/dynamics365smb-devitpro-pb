@@ -31,7 +31,7 @@ end;
 
  \(Integer\) This return value contains the actual number of steps or records cycled through. The default value is zero \(0\).  
 
-## Applies to  
+## Applies To  
 
 - Pages  
 

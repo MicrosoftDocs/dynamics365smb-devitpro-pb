@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # BlankZero Property
 Indicates whether the system displays zeros (0) and No.  
   
-## Applies to  
+## Applies To  
   
 -   Page Fields  
   

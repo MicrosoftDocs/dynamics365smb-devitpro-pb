@@ -25,7 +25,7 @@ Sets the container type when you want to add one of the following controls to a 
   
 -   Part  
   
-## Applies to  
+## Applies To  
   
 -   Container controls on Pages  
 

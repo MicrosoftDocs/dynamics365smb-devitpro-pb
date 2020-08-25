@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # PromotedActionCategories Property
 Sets a category for a promoted action.
   
-## Applies to  
+## Applies To  
   
 - Pages
 

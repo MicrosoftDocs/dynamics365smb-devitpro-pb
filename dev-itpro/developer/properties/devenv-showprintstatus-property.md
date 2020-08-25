@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ShowPrintStatus Property
 Sets whether a window that shows the printing status of a report when it is run is displayed.  
   
-## Applies to  
+## Applies To  
  Reports  
   
 ## Property Value  

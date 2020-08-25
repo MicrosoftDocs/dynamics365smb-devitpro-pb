@@ -18,7 +18,7 @@ Procedure overload enables developers to create multiple procedures with the sam
 
 ## Reasons for using procedure overload
 
-Overloaded procedures give programmers the flexibility to call a procedure with similar semantics for different types of data. At the same time, overloaded procedures remove the need for abusing the [Variant data type](../methods-auto/variant/variant-data-type.md) for the purpose of processing different types of data in a similar manner and allows the developer to write strongly-typed code and rely on the compiler for validation. 
+Overloaded procedures give programmers the flexibility to call a procedure with similar semantics for different types of data. At the same time, overloaded procedures remove the need for abusing the Variant data type for the purpose of processing different types of data a similar manner and allows the developer to write strongly-typed code and rely on the compiler for validation. 
 
 ### Remarks 
 Overload resolution is performed by using procedure signatures to find the best match. The signature of a procedure is represented by its name and the type, order, and number of parameters. The return type of a procedure is not part of the procedure’s signature. 
@@ -85,6 +85,4 @@ codeunit 10 StringifierWithOverloads
 ```
 
 ## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
 [AL Development Environment](../devenv-reference-overview.md)  

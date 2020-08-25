@@ -42,7 +42,7 @@ end;
 |true|Found|  
 |false|Not found (default)|  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
   

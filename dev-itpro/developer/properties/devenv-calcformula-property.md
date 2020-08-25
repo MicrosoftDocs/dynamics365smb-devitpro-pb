@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # CalcFormula Property
 Sets the calculation for FlowFields.  
   
-## Applies to  
+## Applies To  
  Table Fields  
 
 ## Syntax

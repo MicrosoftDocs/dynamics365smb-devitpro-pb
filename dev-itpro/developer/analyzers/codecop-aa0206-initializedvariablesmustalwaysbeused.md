@@ -2,7 +2,7 @@
 title: "The value assigned to a variable must be used."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 08/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

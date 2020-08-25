@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # SharedLayout Property
 The `SharedLayout` property specifies whether a view has the same layout as the default view **All**.
 
-## Applies to  
+## Applies To  
 - Views
 
 ## Property Values  
