@@ -55,7 +55,7 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 | LC0016 | Extension Lifecycle | [Extension un-installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#uninstalledsuccess) |
 | LC0017 | Extension Lifecycle | [Extension failed to un-install: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#uninstalledfailed) |
 | LC0018 | Extension Lifecycle | [Extension unpublished successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#unpublishedsuccess) |
-| LC0019 | Extension Lifecycle | [Extension failed to un-publish: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#unpublishfailed) |
+| LC0019 | Extension Lifecycle | [Extension failed to un-publish: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#unpublishedfailed) |
 | LC0020 | Extension Lifecycle | [Extension compiled successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledsuccess) |
 | LC0021 | Extension Lifecycle | [Extension failed to compile: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledfailed) |
 | LC0022 | Extension Lifecycle | [Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher}](telemetry-extension-lifecycle-trace.md#updatedsuccess) |
@@ -69,7 +69,7 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
-| CL0001 | Page views | [Page opened: {pageName}](telemetry-page-view-trace.md#opened) |
+| CL0001 | Page views | [Page opened: {alObjectName}](telemetry-page-view-trace.md#page-opened-alobjectname) |
 
 ## See also
 

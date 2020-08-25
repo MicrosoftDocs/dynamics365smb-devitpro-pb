@@ -20,7 +20,7 @@ Specifies the format of text in a field. For fields in a **CueGroup** control, t
 > [!IMPORTANT]  
 >  This note pertains to backward compatibility only. If the property is set to Boolean true or false, it sets whether the format specified in the **Style** property is applied to text in a field.  
 
-## Applies To  
+## Applies to  
 
 -   Page field controls that are not of data type Boolean or BLOB.  
 

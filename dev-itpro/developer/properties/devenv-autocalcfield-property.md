@@ -23,7 +23,7 @@ Sets whether FlowFields should be automatically calculated.
 AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprty.md) because CalcField is just a list of fields and these types that are calculated fields of FlowFields types. 
 -->
   
-## Applies To  
+## Applies to  
   
 -   Report columns
 -   Field elements in XMLports

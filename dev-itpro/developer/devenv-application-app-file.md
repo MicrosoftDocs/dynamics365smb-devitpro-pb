@@ -2,7 +2,7 @@
 title: "The Microsoft_Application.app File"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/26/2020
+ms.date: 08/11/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ The Microsoft_Application.app file is included with [!INCLUDE[prodshort](include
 The file name of the reference is `Microsoft_Application.app` and in the app.json file of the application package file, the name is `Application`. For code-customized base applications that have their own appId, the `Microsoft_Application.app` file can be modified to reference the appId of the code-customized base applications instead. This allows any extensions that are dependent on the `Application` to resolve to the custom appId. 
 
 > [!NOTE]  
-> Whether the extensions that are dependent on the `Application` compile and work is up to the partner redefining the application to ensure by not introducing breaking changes.
+> The partner who redefines the application must ensure that extensions that are dependent on the `Application` compile and work. This can be ensured, for example, by not introducing any breaking changes.
 
 > [!IMPORTANT]  
 > If you have modified the `Microsoft_Application.app` file, you can rename the file name, and change information about the `publisher`, but it is important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbols references. It is also important to keep the `propagateDependencies` set to `true`. The `version` must be set to the version of the Microsoft base application with which it is compatible.
@@ -83,7 +83,7 @@ If you have a code-customized base application, the file can be edited to reflec
 
 ## Uptaking the Application app
 
-The Application app logically encapsulates apps making up a solution (such as Base Application and System Application), and provides an abstraction to protect the AppSource and PTE extensions running on top of that solution from not being able to resolve dependencies to these apps. 
+The Application app logically encapsulates apps making up a solution (such as Base Application and System Application), and provides an abstraction to protect the AppSource and PTE extensions running on top of that solution from not being able to resolve dependencies to these apps.
 
 When using it, future refactoring of the referenced solution; like extracting some areas into separate apps, or changes to the identities of the apps which comprise the solution, will not be forcing all other dependent apps to change or add new apps to their dependencies, as these dependencies will be resolved implicitly via the reference to the Application app. 
 
@@ -104,7 +104,6 @@ To enable these benefits, all you need to do, as an AppSource or PTE app owner, 
     "url":  "https://go.microsoft.com/fwlink/?LinkId=724011",
     "application": "15.3.0.0",
     "dependencies":  [
-                                        
                      ],
     "screenshots":  [
 
@@ -115,6 +114,7 @@ To enable these benefits, all you need to do, as an AppSource or PTE app owner, 
 }
 
 ```
+
 > [!IMPORTANT]  
 > Soon up-taking the Application app will also be a mandatory requirement for AppSource apps, enforced by the AppSource technical validation. Thus it is highly recommended to change the existing AppSource apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prodshort](includes/prodshort.md)] online environments.
 

@@ -66,7 +66,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
     1. Find the **CodeViewer** folder in the **Add-ins** folder of the version 14 RoleTailored client installation. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins.
     
-    2. Copy the folder to the **Add-ins** folder of the version 15 server installation. By default, the folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\10\Service\Add-ins. Replace the existing folder and files, if any. 
+    2. Copy the folder to the **Add-ins** folder of the version 16 server installation. By default, the folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins. Replace the existing folder and files, if any. 
      
     CodeViewer is no longer used in version 16. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 

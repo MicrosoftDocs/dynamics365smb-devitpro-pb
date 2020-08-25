@@ -16,7 +16,7 @@ ms.author: solsen
 # BackupKey Property
 This property is used by the backup/restore system. Under normal circumstances, you do not need to set this property.  
 
-## Applies To  
+## Applies to  
  Keys  
 
 ## Property Value  

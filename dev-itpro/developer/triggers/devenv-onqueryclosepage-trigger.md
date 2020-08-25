@@ -32,7 +32,7 @@ end;
 
  **True** to close the page; otherwise **false**. This value is checked after each  call.  
 
-## Applies To  
+## Applies to  
 
 - Pages  
 

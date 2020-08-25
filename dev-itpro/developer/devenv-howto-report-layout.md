@@ -3,7 +3,7 @@ title: "Creating a Word Layout Report"
 description: "Describes the steps involved in creating a report that uses a Word layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/15/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -14,6 +14,7 @@ ms.author: solsen
 When you create a new report, there are two things you have to think about; defining the report dataset of data items and columns, and then designing the report layout. These steps will show how to create a very simple report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md).
 
 ## Create a Word layout report
+
 To facilitate testing your report layout, the following simple example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
 1. Create a new extension to the **Customer List** page that contains code to run the report, as well as a simple report object by adding the following lines of code:  
@@ -65,7 +66,16 @@ To facilitate testing your report layout, the following simple example extends t
 
 You will now see the generated report in preview mode.
 
+> [!NOTE]  
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
+    ```
+    "al.compilationOptions": {
+            "generateReportLayout": true
+        }
+    ```
+
 ## See Also
+
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  

@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # DataItemTableView Property
 Sets the key on which to sort, the sort order, and the filters for the data item.  
   
-## Applies To  
+## Applies to  
 Data items on reports.  
 
 ## Examples

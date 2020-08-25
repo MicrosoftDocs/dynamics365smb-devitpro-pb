@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MinOccurs Property
 Sets the minimum number of times that an element can occur.  
   
-## Applies To  
+## Applies to  
  XMLports  
   
 ## Property Values  

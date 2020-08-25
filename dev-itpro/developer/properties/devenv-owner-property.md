@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Owner Property
 Sets the user who owns the object in the BLOB field of a table object.  
   
-## Applies To  
+## Applies to  
   
 -   Fields of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md).  
   

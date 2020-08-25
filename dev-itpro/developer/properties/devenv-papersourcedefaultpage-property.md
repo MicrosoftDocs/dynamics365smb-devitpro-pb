@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # PaperSourceDefaultPage Property
 Specifies the default paper source to use when printing the report.  
   
-## Applies To  
+## Applies to  
  Reports  
 
 ## Syntax
