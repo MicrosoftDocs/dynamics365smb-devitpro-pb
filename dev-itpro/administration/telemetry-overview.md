@@ -30,7 +30,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 
 |Area | Description |Online|On-premises|Extension support|More information|
 |-----|-------------|------|-----------|-----------------|--------|
-|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check](../developer/media/check.png)||||[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
+|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check](../developer/media/check.png)||||[See...](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-company-lifecycle-trace.md) |
 |Database lock timeouts|Provides information about database locks that have timed out. |![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-database-locks-trace.md)|
 |Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-extension-lifecycle-trace.md) |
