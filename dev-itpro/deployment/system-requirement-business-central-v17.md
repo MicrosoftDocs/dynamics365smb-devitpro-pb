@@ -24,7 +24,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 
 |||  
 |------|-----|  
-|Supported browsers|Recommended browsers:<ul><li>New Microsoft Edge for Windows</li><li>Google Chrome 81.0 for Windows</li><li>Mozilla Firefox 75.0 for Windows</li><li>Safari 12.0 for macOS</li></ul>Other supported browsers:<ul><li>Internet Explorer 11</li><li>Microsoft Edge Legacy</li></ul>Cookies and JavaScript must be enabled in the browser.<br /><br /> **Note:** Starting in April 2021, Internet Explorer 11 and Edge Legacy will no longer be supported. We recommend you switch to one of the recommended modern browsers as soon as possible.|
+|Supported browsers|Recommended browsers:<ul><li>New Microsoft Edge for Windows</li><li>Google Chrome 81.0 for Windows</li><li>Mozilla Firefox 75.0 for Windows</li><li>Safari 12.0 for macOS</li></ul>Other supported browsers:<ul><li>Internet Explorer 11</li><li>Microsoft Edge Legacy</li></ul>Cookies and JavaScript must be enabled in the browser.|
 |Business inbox in Outlook|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2019, Excel 2016, or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
