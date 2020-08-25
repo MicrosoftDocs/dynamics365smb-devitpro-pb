@@ -38,7 +38,8 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
 |Page views|Provides information about the pages that users open in the modern client.|![check](../developer/media/check.png)|||[Analyzing Page View Telemetry](telemetry-page-view-trace.md)|
 |Report generation|Provides information about the execution of reports.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
-|Web service requests|Provides information about the execution time of web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
+|Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
+|Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
 
 ## Enabling Application Insights
 
