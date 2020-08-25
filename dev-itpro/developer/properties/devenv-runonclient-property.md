@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # RunOnClient Property
 Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE[webclient](../includes/webclient.md)] or [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].  
 
-## Applies to  
+## Applies To  
  Variables of the **DotNet** data type.  
 
 ## Syntax 

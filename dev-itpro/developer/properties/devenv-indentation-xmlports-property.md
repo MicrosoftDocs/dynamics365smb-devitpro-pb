@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # Indentation Property (XMLports)
 Sets the indentation level of an element or an attribute in **XMLport Designer**.  
   
-## Applies to  
+## Applies To  
  XMLports  
   
 ## Remarks  

@@ -15,7 +15,7 @@ ms.author: jswymer
 # UseTemporary Property (Report)
 Sets whether a temporary table is used to store the data set that is returned for columns of a data item.
 
-## Applies to  
+## Applies To  
 
 - Report data items
 
@@ -36,6 +36,5 @@ For an example of the use of the UseTemporary property, see report 1306 in the [
 ## See Also  
 [Properties](devenv-properties.md)   
 [Report Object](../devenv-report-object.md)   
-[UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)   
-[Temporary Tables](../devenv-temporary-tables.md)
+[UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)  
 

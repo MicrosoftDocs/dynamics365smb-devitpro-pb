@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnDelete Trigger
 Runs when a user tries to delete a record.  
   
-## Applies to  
+## Applies To  
 - Tables  
 - Table extensions
   

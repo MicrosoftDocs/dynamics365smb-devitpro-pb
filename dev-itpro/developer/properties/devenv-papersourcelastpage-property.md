@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # PaperSourceLastPage Property
 Specifies which paper source to use when printing the last page of the report.  
   
-## Applies to  
+## Applies To  
  Reports  
 
 ## Syntax

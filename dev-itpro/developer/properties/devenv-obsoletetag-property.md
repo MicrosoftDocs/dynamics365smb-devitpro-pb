@@ -15,7 +15,7 @@ ms.author: solsen
 # ObsoleteTag Property
 Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.
 
-## Applies to  
+## Applies To  
 
 - Table objects
 - Table fields

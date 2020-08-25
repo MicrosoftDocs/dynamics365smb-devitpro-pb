@@ -21,7 +21,7 @@ The following triggers have been added to support integration with Dynamics 365 
 
 - **OnDatabaseDelete**  
 
-## Applies to  
+## Applies To  
 - Pages  
 - Tables  
 

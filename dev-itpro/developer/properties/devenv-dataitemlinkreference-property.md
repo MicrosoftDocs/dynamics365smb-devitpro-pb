@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # DataItemLinkReference Property
 Sets the parent data item to which a child data item is linked. After you specify the **DataItemLinkReference** value, use the [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md) to specify a field from each data item on which to base the link.  
   
-## Applies to  
+## Applies To  
   
 -   Data items  
 -   Reports  

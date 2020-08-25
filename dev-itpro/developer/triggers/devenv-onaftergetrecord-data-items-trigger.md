@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnAfterGetRecord (Data Items) Trigger
 Runs each time a record is retrieved from the data item.  
 
-## Applies to  
+## Applies To  
 - Data items  
 
 ## Syntax  

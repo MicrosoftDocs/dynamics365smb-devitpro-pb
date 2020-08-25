@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # ProfileDescription Property
 Sets the description of the profile to be displayed to end-users; describing who the profile is for, and when or how to use it.
     
-## Applies to  
+## Applies To  
 - Profiles
 
 ## Syntax

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ClosingDates Property
 Sets a value that determines whether users can enter a closing date in this field. The default value is **false**.  
   
-## Applies to  
+## Applies To  
   
 -   Table Fields  
   

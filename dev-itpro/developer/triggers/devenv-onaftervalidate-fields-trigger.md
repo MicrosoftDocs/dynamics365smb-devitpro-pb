@@ -14,7 +14,7 @@ author: blrobl
 # OnAfterValidate Trigger
 Runs after the user input is validated. 
 
-## Applies to  
+## Applies To  
 - Fields  
   
 ## Remarks  

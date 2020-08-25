@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # DataLength Property
 Sets the maximum length of data stored in this field.  
   
-## Applies to  
+## Applies To  
  Fields  
 
 ## Syntax

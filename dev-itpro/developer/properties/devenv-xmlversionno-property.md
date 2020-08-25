@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # XMLVersionNo Property
 Set which version of XML the XML document conforms to. Two options are available: V10 \(the default\) and V11.  
   
-## Applies to  
+## Applies To  
  XMLports  
 
 ## Syntax

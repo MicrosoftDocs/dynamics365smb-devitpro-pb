@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/22/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,12 @@ ms.author: solsen
 
 # JSON Files
 
-In an AL project there are two JSON files; the `app.json` file and the `launch.json` file that are generated automatically when you start a new project. The `app.json` file contains information about the extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on.  
+In an AL project there are two JSON files; the `app.json` file and the `launch.json` file that are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on. 
 
 > [!NOTE]  
 > For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
 
 ## <a name="Appjson"></a>App.json file
-
 The following table describes the settings in the `app.json` file:
 
 |Setting|Mandatory|Value|

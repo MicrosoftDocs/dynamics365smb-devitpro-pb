@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # CalcFields Property
 Sets a list of FlowFields to automatically calculate.  
   
-## Applies to  
+## Applies To  
   
 -   Reports  
 -   Table elements in XMLports

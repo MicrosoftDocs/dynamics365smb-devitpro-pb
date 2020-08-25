@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # SQLTimestamp Property
 Specifies a field to be a timestamp field.  
 
-## Applies to  
+## Applies To  
  Table Fields  
 
 ## Property Value  

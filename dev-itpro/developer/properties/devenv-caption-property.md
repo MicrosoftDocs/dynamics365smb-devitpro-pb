@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Caption Property
 Sets the text string that displays with the object, control, or other element in user interface for the current language. The property has three optional parameters; `Locked`, `Comment`, and `MaxLength`.
 
-## Applies to  
+## Applies To  
 
 - Codeunit objects  
 - XMLport objects  

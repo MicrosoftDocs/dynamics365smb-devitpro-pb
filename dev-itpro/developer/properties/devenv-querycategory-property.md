@@ -14,7 +14,7 @@ ms.author: t-blrobl
 This property is for internal use only.
 
 <!--
-## Applies to  
+## Applies To  
 - Queries
 - Pages
 

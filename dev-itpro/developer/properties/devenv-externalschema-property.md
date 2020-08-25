@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # ExternalSchema Property
 Specifies the name of the database schema of the external database.  
   
-## Applies to  
+## Applies To  
   
 - Tables  
   

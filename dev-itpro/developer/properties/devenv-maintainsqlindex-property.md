@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MaintainSQLIndex Property
 Sets a value that indicates whether a SQL Server index that corresponds to the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] key should be created.  
   
-## Applies to  
+## Applies To  
  Keys  
   
 ## Property Value  

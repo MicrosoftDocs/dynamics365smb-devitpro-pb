@@ -21,7 +21,7 @@ Sets whether the indented hierarchy list is collapsed or expanded when the page 
 TreeInitialState = CollapseAll;
 ```
   
-## Applies to  
+## Applies To  
   
 - Repeater controls on list page types on which the **ShowAsTree** property is set to **true**.
   

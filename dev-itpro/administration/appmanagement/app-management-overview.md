@@ -2,7 +2,7 @@
 title: "App Management for ISVs"
 author: jswymer
 ms.custom: na
-ms.date: 07/24/2020
+ms.date: 04/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ For more information about the API, see [App Management API](app-management-api.
 
 ## Legal information
 
-The apps that are stored in the App Repository are governed by the Microsoft Publisher Agreement. For more information, see [Publishing your business application](https://partner.microsoft.com/solutions/business-applications/isv-publish). 
+The apps that are stored in the App Repository are governed by the Microsoft Publisher Agreement. For more information, see [Publishing your business application](https://partner.microsoft.com/en-us/solutions/business-applications/isv-publish). 
 
 The App Management API is governed by Microsoft APIs Terms of Use. For more information, see [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)  
 

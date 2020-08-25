@@ -16,7 +16,7 @@ caps.latest.revision: 10
 # RecordSeparator Property
 Sets the string that is to be used to separate records.  
   
-## Applies to  
+## Applies To  
   
 -   XMLports  
   

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnBeforePassVariable Trigger
 Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document.  
   
-## Applies to  
+## Applies To  
 - XMLports  
   
 ## Remarks  

@@ -17,7 +17,7 @@ ms.author: jswymer
 # Visible Property
 Sets whether to display the page or control.  
 
-## Applies to  
+## Applies To  
 
 -   Page fields and action controls
 

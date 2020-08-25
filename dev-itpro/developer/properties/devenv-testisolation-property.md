@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # TestIsolation Property
 Specifies which changes to the database to roll back after the tests in the test runner codeunit execute.  
   
-## Applies to  
+## Applies To  
  Test runner codeunits. A test runner codeunit has the [SubType Property \(Codeunit\)](devenv-subtype-property-codeunit.md) set to **TestRunner**.   
   
 ## Property Value  

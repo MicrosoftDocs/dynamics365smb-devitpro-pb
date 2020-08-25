@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MaintainSIFTIndex Property
 Sets the value to determine whether SIFT structures should be created in SQL Server to support the corresponding SumIndexFields for the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] key.  
   
-## Applies to  
+## Applies To  
  Keys  
   
 ## Property Value  

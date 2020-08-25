@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ID Property
 Sets a unique numeric ID for this codeunit, table, page, report, XMLport, or control.  
   
-## Applies to  
+## Applies To  
   
 -   Codeunits  
   

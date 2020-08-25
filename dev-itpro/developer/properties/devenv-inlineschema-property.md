@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # InlineSchema Property
 Specifies whether an XML schema definition should be included inside an XML document.  
 
-## Applies to  
+## Applies To  
   
 -   XMLports  
   

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MultipleNewLines Property
 Sets a value that determines whether users can add multiple new lines between records.  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
   

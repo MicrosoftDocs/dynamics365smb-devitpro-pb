@@ -21,7 +21,7 @@ Sets the data item link type between data items in a query to determine the reco
 > [!IMPORTANT]  
 > This property can only be used in C/SIDE development; it is not supported in AL. In AL, you use the [SQLJoinType Property](devenv-sqljointype-property.md) property instead.
 
-## Applies to  
+## Applies To  
   
 - Query data items  
   

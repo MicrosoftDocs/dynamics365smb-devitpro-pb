@@ -15,7 +15,7 @@ Sets whether tooltips are provided for the given control, such as a field or act
 
 In the client, tooltips appear when you point to the caption of the control.
 
-## Applies to  
+## Applies To  
 
 - Actions in the ribbon  
 

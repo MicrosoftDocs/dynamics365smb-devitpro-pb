@@ -35,7 +35,7 @@ The following are examples of durations:
 ```  
 var
     DateTime1: DateTime;
-    DateTime2: DateTime;
+    DateTime2: DateTime1;
     Duration: Duration;
 begin
     DateTime1 := CREATEDATETIME(20090101D, 080000T); // January 1, 2009 at 08:00:00 AM  

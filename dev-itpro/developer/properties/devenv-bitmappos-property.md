@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # BitmapPos Property
 Sets the position of a bitmap.  
   
-## Applies to  
+## Applies To  
   
 - Check boxes  
   

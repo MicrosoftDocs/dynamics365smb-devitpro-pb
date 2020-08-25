@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MinValue Property
 Sets the minimum value for a field.  
   
-## Applies to  
+## Applies To  
   
 -   Page Fields  
   

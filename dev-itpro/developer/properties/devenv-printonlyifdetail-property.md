@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # PrintOnlyIfDetail Property
 Specifies whether to print data in a report for the parent data item when the child data item does not generate any output.  
   
-## Applies to  
+## Applies To  
  Data items  
   
 ## Property Value  

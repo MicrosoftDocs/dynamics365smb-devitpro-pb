@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Unbound Property
 Sets whether the element can be repeated an unknown number of times at runtime before the import or export moves on to the next element.  
   
-## Applies to  
+## Applies To  
   
 -   XMLports.  
   

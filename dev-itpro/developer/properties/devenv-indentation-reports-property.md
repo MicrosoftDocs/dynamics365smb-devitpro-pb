@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # Indentation Property (Reports)
 Sets the indentation level of a data item or column on a report.  
   
-## Applies to  
+## Applies To  
   
 -   Reports  
 

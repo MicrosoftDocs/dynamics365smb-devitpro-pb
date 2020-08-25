@@ -64,9 +64,7 @@ begin
 end;
 ```  
   
-## See Also
-
-[AL Method Reference](../methods-auto/library.md)  
+## See Also  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing Events](../devenv-publishing-events.md)   
 [Raising Events](../devenv-raising-events.md)   

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ModifyAllowed Property
 Sets the value to determine whether users can modify records while using this page.  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
   

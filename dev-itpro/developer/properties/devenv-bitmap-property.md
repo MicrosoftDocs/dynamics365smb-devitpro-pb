@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # Bitmap Property
 Sets a bitmap icon to be shown with a department on the Department page.  
 
-## Applies to  
+## Applies To  
 
 - MenuSuite buttons  
 

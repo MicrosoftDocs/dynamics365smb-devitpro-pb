@@ -19,7 +19,7 @@ Sets the values of a AL text constant for the different languages that are avail
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
   
-## Applies to  
+## Applies To  
  **Local** and **global** text constants in the AL code of objects.  
  
 ## Syntax
