@@ -68,9 +68,12 @@ The following table outlines recommended content for you to get started:
 [!INCLUDE [prodshort](developer/includes/prodshort.md)] supports the same profiles and roles as other Dynamics 365 services. If you see yourself as a solution architect or functional consultant, for example, [!INCLUDE [prodshort](developer/includes/prodshort.md)] has functionality and content for you. Look around in the Help & Support section [here](help-and-support.md), for example, ramp up on features in the [business functionality
 content](/dynamics365/business-central/across-business-functionality), or learn how you can [integrate this with other products](/dynamics365/business-central/admin-common-data-service).  
 
+If you are completely new to [!INCLUDE [prodshort](developer/includes/prodshort.md)], we recommend you take the [Get started](https://go.microsoft.com/fwlink/?linkid=847861) learning path.
+
 ## See Also
 
 [[!INCLUDE[prodlong](includes/prodlong.md)] Business Functionality Help](/dynamics365/business-central/index)  
+[Dynamics 365 Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
 [FAQ for Dynamics 365 Business Central Development and Administration](faq.md)  
 [Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]](help-and-support.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  

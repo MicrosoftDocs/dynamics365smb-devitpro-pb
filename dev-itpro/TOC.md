@@ -30,6 +30,7 @@
 ### Resources for an administrator
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](administration/tenant-administration.md)
+### [Dynamics 365 Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
 ## Readiness
 ### Sell
 #### [Become a Reseller](/dynamics365/business-central/product-sell?toc=/dynamics365/business-central/dev-itpro/toc.json)
