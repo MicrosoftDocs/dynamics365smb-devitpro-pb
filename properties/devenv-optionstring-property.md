@@ -12,7 +12,8 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
- 
+
+<!-- This topic is being redirected -->
 
 # OptionString Property
 Sets the option values for a field, text box, or variable. OptionString is multilanguage enabled.  
@@ -35,7 +36,7 @@ OptionString = Ship,Invoice,All;
 
  For other multilanguage enabled properties ([Caption Property](devenv-caption-property.md), [ToolTip Property](devenv-tooltip-property.md), and [ReqFilterHeading Property](devenv-reqfilterheading-property.md)), there is a relationship between the property itself and the multilanguage counterpart. The only connection between the OptionString and OptionCaptionML properties is that if the OptionCaptionML property is not set, then the strings displayed are taken from the OptionString property.  
 
- For Option fields and variables, use this property to list the options you want to be accepted (and displayed, if OptionCaptionML is not set). You can enter a maximum of 250 characters. Separate the options with a comma. For example: option1,option2,option3.  
+ For Option fields and variables, use this property to list the options you want to be accepted (and displayed, if OptionCaptionML is not set). You can enter a maximum of 250 characters. Separate the options with a comma. <1For example: option1,option2,option3.  
 
  For controls, you can use this property to limit the number of options that the user can select. You cannot add options; if you do, a run-time error occurs when users select an option outside the set of options defined for the field or variable.  
 
