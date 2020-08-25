@@ -89,4 +89,5 @@ Now that you have the tools and the `HelloWorld` example up and running, you mig
 [FAQ for Developing in AL](devenv-dev-faq.md)  
 [Syntax](devenv-syntax.md)  
 [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)   
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
+[XML Comments in Code](devenv-xml-comments.md)
