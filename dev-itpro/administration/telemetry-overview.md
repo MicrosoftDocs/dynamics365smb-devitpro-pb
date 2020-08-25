@@ -28,9 +28,9 @@ With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
-|Area | Description |Online/On-premises|Extension support|See more|
-|-----|-------------|------------------|---------|--------|
-|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|No|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
+|Area | Description |Online|On-premises|Extension support|See more|
+|-----|-------------|------|-----------|-----------------|--------|
+|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check](media/check.png)||||[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|No|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
 |Database lock timeouts|Provides information about database locks that have timed out. |Both|No|[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|
 |Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|Both|No|[Analyzing Extension Lifecycle Telemetry](telemetry-extension-lifecycle-trace.md) |
