@@ -20,7 +20,13 @@ A Repeater control used on a List page must be defined at the beginning of the a
 A Repeater control used on a List page must be defined at the beginning of the area(Content) section.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This rule is deprecated from runtime 5.0 and onwards.
+
 ## See Also  
+
 [UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
