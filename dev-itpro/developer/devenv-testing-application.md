@@ -55,7 +55,7 @@ Test runner codeunits include the following triggers:
 
 For more information about test runner codeunits, see [Test Runner Codeunits](devenv-testrunner-codeunits.md).
 
-> [!TIP)
+> [!TIP]
 > You can reuse test runners from [Test Runner module](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/DevTools/TestFramework/TestRunner) in the Microsoft/ALAppExtensions GitHub repo. You can also use the repo to request for the new functionality.
 
 ## Test Pages
