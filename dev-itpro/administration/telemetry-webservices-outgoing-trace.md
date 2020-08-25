@@ -16,9 +16,7 @@ ms.author: jswymer
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-Outgoing web service request telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
-
-As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
+Outgoing web service request telemetry gathers data about outgoing web service requests sent using the AL HTTPClient module. As a partner, this data gives you insight into the execution time and failures that happen in external services that your environment and extensions depend. Use the data to monitor your environments for performance issues caused by external services and be more proactive in preventing these issues from occurring.
 
 ## General dimensions
 
