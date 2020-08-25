@@ -1,5 +1,5 @@
 ---
-title: "Page controls and actions must use the ApplicationArea property"
+title: "InternalsVisibleTo should not be used as a security feature."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/25/2020
@@ -13,16 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0062
-Page controls and actions must use the ApplicationArea property  
+# AppSourceCop Rule AS0081
+InternalsVisibleTo should not be used as a security feature.  
 
 ## Description
-Page controls and actions must use the ApplicationArea property to be visible to users.
+The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[ApplicationArea Property](..//properties/devenv-applicationarea-property.md)  

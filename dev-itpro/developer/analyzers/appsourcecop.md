@@ -2,7 +2,7 @@
 title: "AppSourceCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/13/2020
+ms.date: 08/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -91,6 +91,9 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0078](appsourcecop-as0078-changingvarparamatermodifier.md)|Adding or removing a var modifier in external procedures is not allowed|Adding or removing a var modifier in public procedures is not allowed as it might break the runtime behavior of extensions calling it.|A var modifier has been added or removed on the parameter '{0}' in the procedure '{1}'. This might break the runtime behavior of dependent extensions calling this procedure.|Upgrade|Warning|true|
 |[AS0079](appsourcecop-as0079-extensionproceduresmusthaveaffix.md)|An affix is required for procedures defined in extension objects.|An affix is required for procedures defined in extension objects, because it prevents breaking dependent extensions that reference it in case a procedure with the same signature is introduced by the base object or by another extension.|The procedure '{0}' in {1} '{2}' must have at least one of the mandatory affixes '{3}' to prevent breaking dependent extensions that reference it in case a procedure with the same signature is introduced by the base object or by another extension.|Extensibility|Warning|true|
 |[AS0080](appsourcecop-as0080-fieldlengthdecreasenotallowed.md)|Fields must not decrease in length|Field length changes can only be increasing. If the field part of the primary key, the field length cannot change.|Field '{0}' has changed from '{1}' to '{2}' in table or table extension '{3}'. Decreasing the field length of any field is not allowed. For fields used in the primary key, increasing the length is also not allowed.|Upgrade|Error|true|
+|[AS0081](appsourcecop-as0081-internalsvisibletonosecurityfeature.md)|InternalsVisibleTo should not be used as a security feature.|The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development.|The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development.|Extensibility|Warning|true|
+|[AS0082](appsourcecop-as0082-enumvaluechangenotallowed.md)|It is not allowed to change a value's ID in an enum.|Changing an enum value's ID is not allowed, unless the enum is marked as obsolete. This restriction prevents dependent extensions from breaking, if they use the old ordinal value of the enum value.|The enum '{0}' must declare at least the same values with the same ID's as in the previous version of the extension. Enum value with name '{1}' has ID '{2}' but ID must be '{3}'.|Upgrade|Error|true|
+|[AS0083](appsourcecop-as0083-enumvaluedeletionnotallowed.md)|It is not allowed to delete a value from an enum.|Deleting an enum value is not allowed, unless the enum is marked as obsolete. This restriction prevents dependent extensions from breaking, if they use the enum value.|The enum '{0}' does not declare a value with ID '{1}' and name '{2}' anymore. This is not allowed, because it might break upgrade of existing installations and dependent extensions may break.|Upgrade|Error|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

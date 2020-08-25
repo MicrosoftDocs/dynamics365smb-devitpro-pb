@@ -2,7 +2,7 @@
 title: "Adding or removing a var modifier in external procedures is not allowed"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/13/2020
+ms.date: 08/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
