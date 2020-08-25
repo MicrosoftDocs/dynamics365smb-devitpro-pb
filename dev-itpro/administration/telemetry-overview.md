@@ -28,18 +28,18 @@ With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave
 
 In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is logged as traces. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers telemetry on the following operations:  
 
-|Area | Description |Online|On-premises|Extension support|See more|
+|Area | Description |Online|On-premises|Extension support|More information|
 |-----|-------------|------|-----------|-----------------|--------|
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check](../developer/media/check.png)||||[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
-|Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
-|Database lock timeouts|Provides information about database locks that have timed out. |![check](../developer/media/check.png)|![check](../developer/media/check.png)||[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|
-|Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[Analyzing Extension Lifecycle Telemetry](telemetry-extension-lifecycle-trace.md) |
-|Extension update|Provides information about errors that occur when upgrading an extension.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Extension Upgrade Telemetry](telemetry-extension-update-trace.md) |
-|Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
-|Page views|Provides information about the pages that users open in the modern client.|![check](../developer/media/check.png)|||[Analyzing Page View Telemetry](telemetry-page-view-trace.md)|
-|Report generation|Provides information about the execution of reports.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
-|Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
-|Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Web Service Requests Telemetry](telemetry-webservices-trace.md)|
+|Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-company-lifecycle-trace.md) |
+|Database lock timeouts|Provides information about database locks that have timed out. |![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-database-locks-trace.md)|
+|Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-extension-lifecycle-trace.md) |
+|Extension update|Provides information about errors that occur when upgrading an extension.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-extension-update-trace.md) |
+|Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-long-running-sql-query-trace.md)|
+|Page views|Provides information about the pages that users open in the modern client.|![check](../developer/media/check.png)|||[See...](telemetry-page-view-trace.md)|
+|Report generation|Provides information about the execution of reports.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-reports-trace.md)|
+|Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-webservices-trace.md)|
+|Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-webservices-outgoing-trace.md)|
 
 ## Enabling Application Insights
 
