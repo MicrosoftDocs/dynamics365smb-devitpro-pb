@@ -16,7 +16,7 @@ caps.latest.revision: 6
 # ShowCaption Property
 Sets whether the text that is specified by the [Caption Property](devenv-caption-property.md) is displayed for the control.  
 
-## Applies To  
+## Applies to  
  - Field controls on pages  
  - Group controls on pages
 

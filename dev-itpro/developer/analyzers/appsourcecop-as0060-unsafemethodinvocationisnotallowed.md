@@ -2,7 +2,7 @@
 title: "Unsafe methods cannot be invoked in an AppSource application"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/25/2020
+ms.date: 06/19/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

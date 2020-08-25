@@ -22,7 +22,7 @@ Specifies whether the page field control has input focus when users navigate thr
 > [!NOTE]  
 >  Specifying an expression as the value of the property is not supported.  -->
   
-## Applies To
+## Applies to
   
 Page fields  
 

@@ -19,7 +19,7 @@ Sets the name of the table field or variable that controls row indentation in a 
 IndentationColumn = IntegerFieldName;
 ```
   
-## Applies To  
+## Applies to  
   
 - Repeater controls on list page types
   
@@ -27,7 +27,7 @@ IndentationColumn = IntegerFieldName;
 
 This property must be set to a field or variable of the [Integer Data Type](../datatypes/devenv-integer-data-type.md).
 
-This property is used by the **IndentationControls** property and **ShowAsTree** property. It has no effect if these properties aren't properly set.
+The IndentationColumn property is used together with either the IndentationControls property or ShowAsTree property to create an indented hierarchy list. This property has no effect if the IndentationControls property is not set and ShowAsTree property is set to false (default).
 
 For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
 

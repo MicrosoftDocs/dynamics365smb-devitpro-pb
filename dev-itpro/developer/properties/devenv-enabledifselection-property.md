@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # EnabledIfSelection Property
 Sets a value that indicates whether the selected action is enabled or disabled.  
   
-## Applies To  
+## Applies to  
   
 -   Actions  
   

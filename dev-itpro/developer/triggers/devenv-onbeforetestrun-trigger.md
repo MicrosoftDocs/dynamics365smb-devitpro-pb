@@ -59,7 +59,7 @@ Specifies the permission set level to use on the test run. The value is retrieve
 
  **True** to run the test ; otherwise, **false**. This value is checked after each  call.  
 
-## Applies To  
+## Applies to  
 -  Test runner codeunits. Test runner codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **TestRunner**.  
 
 > [!NOTE]  

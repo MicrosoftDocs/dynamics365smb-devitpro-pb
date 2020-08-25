@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnAfterModifyRecord Trigger
 Runs after a record has been modified.  
 
-## Applies To  
+## Applies to  
 - XMLports  
 
 ## Remarks  

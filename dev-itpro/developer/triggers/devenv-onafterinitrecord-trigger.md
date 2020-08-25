@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnAfterInitRecord Trigger
 Runs after a record is loaded.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## Remarks  

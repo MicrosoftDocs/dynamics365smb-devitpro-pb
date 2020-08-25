@@ -19,7 +19,7 @@ This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includ
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
 
-# Countries and regions
+## Countries and regions
 
 |Country/Region|Localized by|Availability|
 |-----------|---------|------------|

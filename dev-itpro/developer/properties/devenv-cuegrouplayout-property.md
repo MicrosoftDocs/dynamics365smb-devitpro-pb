@@ -13,7 +13,7 @@ author: jswymer
 # CuegroupLayout Property
 Sets whether a `cuegroup` control displays in the wide layout.   
   
-## Applies To  
+## Applies to  
   
 -   `cuegroup` controls
   

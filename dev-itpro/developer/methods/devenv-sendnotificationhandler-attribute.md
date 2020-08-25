@@ -30,6 +30,8 @@ The **SendNotificationHandler** method is called when a notification is raised f
 
 The **SendNotificationHandler** attribute requires that the method where it is applied has the signature `SendNotificationHandler(var Notification: Notification) : Boolean`. The parameter variable, *Notification*, holds the actual notification.
 
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

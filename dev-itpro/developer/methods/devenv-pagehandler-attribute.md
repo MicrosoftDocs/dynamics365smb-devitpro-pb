@@ -30,6 +30,8 @@ The **PageHandler** method is called when a non-modal page is invoked in the cod
 
 The **PageHandler** attribute requires that the method where it is applied has the signature `procedure PageHandler(var MappingPage: TestPage 1214);`. The parameter variable, *TestPage* is the specific page in this case.
 
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

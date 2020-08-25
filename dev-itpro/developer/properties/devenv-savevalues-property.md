@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # SaveValues Property
 Sets whether user-specific control values are saved for this page.  
   
-## Applies To  
+## Applies to  
   
 - Pages
 - Report request page  

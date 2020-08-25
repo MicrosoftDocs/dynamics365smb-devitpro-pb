@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # LinkedInTransaction Property
 Gets and sets data from linked server data sources, such as Microsoft Office Excel, Access, or another SQL Server.  
   
-## Applies To  
+## Applies to  
  Tables  
 
 ## Syntax

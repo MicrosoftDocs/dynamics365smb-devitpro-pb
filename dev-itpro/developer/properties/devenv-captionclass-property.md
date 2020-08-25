@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # CaptionClass Property
 Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.  
   
-## Applies To  
+## Applies to  
   
 - Table Fields  
   
