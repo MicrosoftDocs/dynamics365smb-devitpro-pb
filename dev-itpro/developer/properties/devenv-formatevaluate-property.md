@@ -7,25 +7,25 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a2c73a08-58f9-48dd-860f-b898c56b6879
-caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # FormatEvaluate Property
+
 Sets the data that is being imported or exported as XML data types or as the standard AL data types.  
   
-## Applies To  
- XMLports  
+## Applies to  
+
+- XMLports  
   
 ## Property Values  
- AL Format/Evaluate (default)  
+
+AL Format/Evaluate (default)  
   
- XML Format/Evaluate  
+XML Format/Evaluate  
  
 ## Syntax
+
 ```
 FormatEvaluate = XML;
 ```
@@ -33,9 +33,10 @@ FormatEvaluate = XML;
 ## Remarks  
   
 ### Importing  
- If the XML document that you want to import contains data that corresponds to the standard AL data types, use AL Format/Evaluate (default value). The data is then evaluated before being inserted into the database.  
+
+If the XML document that you want to import contains data that corresponds to the standard AL data types, use AL Format/Evaluate (default value). The data is then evaluated before being inserted into the database.  
   
- If the XML document that you want to import contains data that uses the standard XML data types, use the XML Format/Evaluate setting. This ensures that the data is evaluated and converted to the AL data types before being inserted into the database.  
+If the XML document that you want to import contains data that uses the standard XML data types, use the XML Format/Evaluate setting. This ensures that the data is evaluated and converted to the AL data types before being inserted into the database.  
   
  If the data that you want to import does not follow either the Standard AL formats or the XML formats, import the data into a temporary table in text format. You can then use AL code to convert the data before inserting it into the database.  
   

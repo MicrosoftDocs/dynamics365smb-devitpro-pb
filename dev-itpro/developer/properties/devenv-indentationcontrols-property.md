@@ -18,7 +18,7 @@ Sets which columns (controls) are indented in a list.
 IndentationControls = Field1[, Field2];
 ```
 
-## Applies To  
+## Applies to  
   
 - Repeater controls on list page types
 

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Expression Property
 Sets the source expression for this control.  
   
-## Applies To  
+## Applies to  
   
 -   Page Fields  
   

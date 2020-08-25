@@ -2,7 +2,7 @@
 title: "MarkedOnly Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/12/2020
+ms.date: 04/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ Activates a special filter.
 ## Return Value
 *MarkedOnly*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the special filter is being used; otherwise, **false**.  
+  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

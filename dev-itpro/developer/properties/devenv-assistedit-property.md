@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AssistEdit Property
 Sets assist-edit capabilities for a text box.  
   
-## Applies To  
+## Applies to  
   
 -   Page Fields  
   

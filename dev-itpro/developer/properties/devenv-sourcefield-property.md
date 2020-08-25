@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SourceField Property
 Sets the field that you want to map XML data to.  
   
-## Applies To  
+## Applies to  
 - Field elements in XMLports
 - Field attributes in XMLports
   

@@ -14,7 +14,7 @@ author: blrobl
 # OnAfterDelete Trigger
 Runs when the user tries to delete a record. 
 
-## Applies To  
+## Applies to  
 - Table extensions 
   
 ## Remarks  

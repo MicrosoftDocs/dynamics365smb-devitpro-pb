@@ -20,7 +20,7 @@ begin
     ...
 end;
 ```  
-## Applies To  
+## Applies to  
 - Data items  
   
 ## Remarks  

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MenuLevel Property
 Sets the menu level for a control. Levels are indicated by indentation.  
   
-## Applies To  
+## Applies to  
  Menu items  
   
 ## Remarks  

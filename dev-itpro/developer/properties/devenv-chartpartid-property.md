@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # ChartPartID Property
 Sets the ID of the chart to add to the page.  
   
-## Applies To  
+## Applies to  
   
 -   Part control on a page  
   

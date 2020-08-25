@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SourceTable Property
 Sets the ID of the table from which this page will display records.  
   
-## Applies To  
+## Applies to  
   
 -   Pages  
 

@@ -15,7 +15,7 @@ ms.author: jswymer
 # CustomAPIName Property (Page)
 Sets the custom name of the API endpoint that the page is exposed in. The custom name must be unique.
 
-## Applies To  
+## Applies to  
 
 - Page object
 

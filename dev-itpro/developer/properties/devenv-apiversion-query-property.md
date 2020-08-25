@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # APIVersion Property (Query)
 Sets the version(s) of the API endpoint the query is exposed in.  The syntax for providing versions is illustrated in the example below:
 
-## Applies To  
+## Applies to  
 
 - Query object 
 

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MenuItemType Property
 Sets the value for the type of menu item.  
   
-## Applies To  
+## Applies to  
  Menu items  
   
 ## Property Value  

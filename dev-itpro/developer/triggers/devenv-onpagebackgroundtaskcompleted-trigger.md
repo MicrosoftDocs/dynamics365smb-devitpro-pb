@@ -32,7 +32,7 @@ Type: Dictionary of [Text, Text]
 
 Specifies the results of the page background task.
 
-## Applies To
+## Applies to
 
 Pages
 

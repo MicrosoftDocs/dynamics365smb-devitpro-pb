@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 Sets the group of the API endpoint the page is exposed in.  The syntax for providing versions is illustrated in the example below:
 
-## Applies To  
+## Applies to  
 
 - Page object 
 

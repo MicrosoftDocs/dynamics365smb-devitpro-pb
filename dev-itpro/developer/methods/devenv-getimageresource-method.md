@@ -40,5 +40,7 @@ var map = new VEMap('controlAddIn');
   
 ```  
 
-## See Also  
- [InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)
