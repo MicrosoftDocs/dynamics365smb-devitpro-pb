@@ -51,6 +51,7 @@ The following example is taken from the Email.Codeunit.al file in the System App
 /// <summary>
 /// Provides functionality to create and send e-mails.
 /// </summary>
+
 codeunit 8901 "Email"
 {
     Access = Public;
