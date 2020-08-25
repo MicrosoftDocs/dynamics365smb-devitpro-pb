@@ -74,7 +74,7 @@ codeunit 8901 "Email"
 
 ## Special symbols
 
-For special symbols, such as angle brackets to appear in text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. The following example illustrates how.
+For special symbols, such as angle brackets, to appear in text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. The following example illustrates how.
 
 ```xml
 /// <summary>
