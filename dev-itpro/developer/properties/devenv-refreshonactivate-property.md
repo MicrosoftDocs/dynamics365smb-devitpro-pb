@@ -18,7 +18,7 @@ caps.latest.revision: 2
 # RefreshOnActivate Property
 Set this property on pages where you want to refresh the data when the user navigates back from another page.   
   
-## Applies to  
+## Applies To  
   
 -   Pages 
 

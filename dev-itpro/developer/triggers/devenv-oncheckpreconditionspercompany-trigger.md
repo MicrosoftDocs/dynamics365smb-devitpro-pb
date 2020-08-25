@@ -13,7 +13,7 @@ author: blrobl
 # OnCheckPreconditionsPerCompany Trigger
 Runs before an extension upgrade.
 
-## Applies to  
+## Applies To  
 -  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **Upgrade**.  
 
 > [!NOTE]  

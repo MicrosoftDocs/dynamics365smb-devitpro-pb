@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # EnabledIfInsertion Property
 Sets a value that indicates whether the action should be enabled or disabled if the record is undefined.  
   
-## Applies to  
+## Applies To  
   
 -   Actions  
   

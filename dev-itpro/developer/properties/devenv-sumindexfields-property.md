@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # SumIndexFields Property
 Sets the **SumIndexField Technology (SIFT)** for the key, if applicable.  
 
-## Applies to  
+## Applies To  
  Keys  
 
 ## Syntax

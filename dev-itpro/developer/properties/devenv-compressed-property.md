@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # Compressed Property
 Sets a value that specifies whether a BLOB is compressed.  
   
-## Applies to  
+## Applies To  
  Fields of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md)   
 
 ## Property value

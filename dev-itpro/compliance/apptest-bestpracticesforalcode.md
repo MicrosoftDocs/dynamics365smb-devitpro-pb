@@ -185,7 +185,7 @@ var
 For variables they must:
 
 - Be named using PascalCase
-- Have the `Temp` prefix if they are temporary variables
+- Have the `temp` prefix if they are temporary variables
 - Include the object name in the name (for objects)
 
 Furthermore:
@@ -243,14 +243,13 @@ MyProcedure(1, 2);
 When declaring a variable or a parameter, the name of that variable or parameter must be immediately followed by a colon, then a single space, and then the type of the variable/parameter as illustrated in the example below.
 
 ```
-var
+Var
     Number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```
 
 ## See Also
-
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
 [Rules and Guidelines for AL Code](apptest-overview.md)  
-[Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md)
+[Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  

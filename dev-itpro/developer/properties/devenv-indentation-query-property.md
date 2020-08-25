@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Indentation Property (Query)
 Sets the indentation level of a data item, column, or filter row in a query.  
   
-## Applies to  
+## Applies To  
   
 -   Query data items, columns, and filter rows  
   

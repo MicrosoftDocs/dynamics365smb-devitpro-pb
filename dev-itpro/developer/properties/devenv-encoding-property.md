@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Encoding Property
 Sets a value that specifies which system is applied to the XMLport for character encoding.  
   
-## Applies to  
+## Applies To  
  XMLports  
 
 ## Syntax

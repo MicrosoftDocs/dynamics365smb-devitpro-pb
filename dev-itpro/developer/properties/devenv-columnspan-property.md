@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # ColumnSpan Property
 Sets the number of columns that a field spans in a Grid control.  
   
-## Applies to  
+## Applies To  
 Field controls in a Grid control on a page.  
   
 ## Property Values  

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # MaxOccurs Property
 Sets a value that indicates the maximum number of times an element can occur.  
   
-## Applies to  
+## Applies To  
  XMLports  
   
 ## Property Value  

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # LinkFields Property
 Specifies the fields that are linked between two tables using the [LinkTable Property](devenv-linktable-property.md). This property is only available for XML items that have a table as their data source.  
   
-## Applies to  
+## Applies To  
  XMLports  
   
 ## Property Value  

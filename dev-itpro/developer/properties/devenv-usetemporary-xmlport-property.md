@@ -15,7 +15,7 @@ ms.author: jswymer
 # UseTemporary Property (XMLport)
 Sets whether a temporary table is created to store the records imported using the XmlPort.
 
-## Applies to  
+## Applies To  
 
 - XMLport table elements
 
@@ -32,6 +32,5 @@ UseTemporary = true;
 ## See Also  
 [Properties](devenv-properties.md)   
 [XMLPort Object](../devenv-xmlport-object.md)   
-[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)  
-[Temporary Tables](../devenv-temporary-tables.md)
+[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)
 

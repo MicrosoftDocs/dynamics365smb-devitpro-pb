@@ -27,7 +27,7 @@ end;
 
  Text string entered into the text box and used as the lookup value.  
 
-## Applies to  
+## Applies To  
 - Fields on pages  
 
 ## Remarks  

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # UseSystemPrinter Property
 Sets which printer is suggested when the report is run.  
   
-## Applies to  
+## Applies To  
  Reports  
   
 ## Property Value  

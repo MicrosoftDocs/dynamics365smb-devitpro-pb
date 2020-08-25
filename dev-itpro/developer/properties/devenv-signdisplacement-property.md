@@ -16,7 +16,7 @@ caps.latest.revision: 5
 # SignDisplacement Property
 Sets a value to shift negative values to the right for display purposes only. You can shift negative values in increments of 1/100 of a millimeter.  
   
-## Applies to  
+## Applies To  
  Text boxes 
 
 ## Syntax

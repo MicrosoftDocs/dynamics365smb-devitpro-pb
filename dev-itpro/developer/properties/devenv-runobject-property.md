@@ -7,27 +7,29 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+ms.assetid: 779b813c-5f83-49bd-9dd9-ac79a0f7768f
+caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-# RunObject Property
+ 
 
+# RunObject Property
 Sets the object you want to run immediately when the action is activated.  
   
-## Applies to  
+## Applies To  
   
-- Page actions  
+-   Page Actions  
   
 ## Remarks  
-
-Use this property to select the object you want to run.  
+ To use this property, first select RunObject in the PushAction property. Then use this property to select the object you want to run.  
   
-Use the following properties to set parameters for the object you want to run:  
+ Use the following properties to set parameters for the object you want to run:  
   
-- [RunPageView Property](devenv-runpageview-property.md)  
-- [RunPageLink Property](devenv-runpagelink-property.md)  
+-   [RunPageView Property](devenv-runpageview-property.md)  
   
-## See Also
-
-[RunPageView Property](devenv-runpageview-property.md)   
-[RunPageLink Property](devenv-runpagelink-property.md)
+-   [RunPageLink Property](devenv-runpagelink-property.md)  
+  
+## See Also  
+ [RunPageView Property](devenv-runpageview-property.md)   
+ [RunPageLink Property](devenv-runpagelink-property.md)

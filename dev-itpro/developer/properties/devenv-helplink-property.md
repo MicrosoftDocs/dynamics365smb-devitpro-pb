@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # HelpLink Property
 Sets the link to be directed to when pressing the Help button in the user interface.
   
-## Applies to  
+## Applies To  
 - RequestPages 
 
 - Pages

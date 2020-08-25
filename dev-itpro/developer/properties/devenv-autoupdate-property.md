@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # AutoUpdate Property
 Sets whether a record in the database with the same primary key as the record in the imported XMLport is updated with values from the imported record.  
 
-## Applies to  
+## Applies To  
 Table elements in XMLports.  
 
 ## Property Value  

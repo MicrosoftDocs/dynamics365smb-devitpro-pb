@@ -26,7 +26,7 @@ end;
   
  \(Boolean\) If **true**, the record is deleted. If **false**, the record is not deleted. This value is checked after each  call.  
   
-## Applies to  
+## Applies To  
   
 - Pages  
   

@@ -14,7 +14,7 @@ author: blrobl
 # OnBeforeDelete Trigger
 Runs when the user tries to delete a record. 
 
-## Applies to  
+## Applies To  
 - Table extensions 
   
 ## Remarks  

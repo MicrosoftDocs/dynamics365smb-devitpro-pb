@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # LinksAllowed Property
 Sets whether links are allowed.  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
   

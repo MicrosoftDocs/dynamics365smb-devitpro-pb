@@ -17,15 +17,16 @@ Sets up a link to the page you are launching. Set the RunPageLink property to es
 > This property is supported only on actions for pages.
 
 > [!IMPORTANT]  
-> For performance reasons, always set the `RunPageView` property if the `RunPageLink` property is also set. In fact, the sort order chosen in the `RunPageView` property must contain the fields listed in the `RunPageLink` property or else the performance is decreased.
+> For performance reasons, always set the RunPageView property if the RunPageLink property is also set. In fact, the sort order chosen in the RunPageView property must contain the fields listed in the RunPageLink property or else the performance is decreased.
 
-## Applies to  
+## Applies To  
   
 - Page Actions  
   
+## Applies To  
+- Page actions  
   
 ## Syntax example
-
 ```
 action(ShowVendors)
 { 
@@ -45,9 +46,8 @@ action(CustomerBalance)
 }
 ```
 
-## Remarks
-
-For example, if the current page is the customer card and you need to provide a way to see the outstanding sales orders for the current customer, you would use the [RunObject Property](devenv-runobject-property.md) to run the customer sales orders page. In this property you would select the `Customer No.` field as the link between the two pages.  
+## Remarks  
+For example, if the current page is the customer card and you need to provide a way to see the outstanding sales orders for the current customer, you would select RunObject in the PushAction property and use the [RunObject Property](devenv-runobject-property.md) to run the customer sales orders page. In this property you would select the Customer No. field as the link between the two pages.  
   
 ## See Also  
 

@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # ConstValue Property
 Sets the value of the AL text constant for the current application language of the [!INCLUDE[d365_dev_short_md](../includes/d365_dev_short_md.md)].  
   
-## Applies to  
+## Applies To  
  **Local** and **global** text constants in the AL code of objects.  
 
 ## Syntax

@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # OnAfterGetField Trigger
 Runs after a field is passed to the XML document.  
   
-## Applies to  
+## Applies To  
 - XMLports  
   
 ## Remarks  

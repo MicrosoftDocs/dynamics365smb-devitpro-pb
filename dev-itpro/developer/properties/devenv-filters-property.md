@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 # Filters Property
 Sets the filter that you want to use to define the view of the source table presented to the user. This property can be set on [views](../devenv-views.md).
   
-## Applies to  
+## Applies To  
   
 - Views  
 

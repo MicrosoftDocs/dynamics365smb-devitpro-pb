@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnAfterGetRecord (XMLports) Trigger
 Runs after a record is retrieved from a table and before it is exported to the XML document.  
   
-## Applies to  
+## Applies To  
 - XMLports  
   
 ## Remarks  

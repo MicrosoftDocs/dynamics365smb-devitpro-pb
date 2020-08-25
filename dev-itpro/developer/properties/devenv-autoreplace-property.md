@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AutoReplace Property
 Sets whether imported records automatically replace existing records with the same primary key.  
   
-## Applies to  
+## Applies To  
  Table elements in XMLports.  
 
 ## Syntax

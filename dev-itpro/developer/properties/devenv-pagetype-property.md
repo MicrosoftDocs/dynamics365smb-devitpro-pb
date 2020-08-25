@@ -33,7 +33,7 @@ The following page types are available:
 |`HeadlinePart` | A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
 
 
-## Applies to  
+## Applies To  
  Pages  
 
 ## Syntax

@@ -61,7 +61,7 @@ The blog talks about opportunities, processes, programs, and tools for the Busin
 Use the GitHub forum to post questions about AL to the community and Microsoft experts here: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues).
 
 ### Follow “Ready to Go” activity on social media
-Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prodshort.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd). 
+Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prodshort.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd) and [LinkedIn](https://www.linkedin.com/search/results/content/v2/?keywords=%23MSDYN365BC%20%23READYTOGO&origin=GLOBAL_SEARCH_HEADER).
 
 ### Learn more about the offering types
 + [Build Add-on apps: https://aka.ms/BusinessCentralAddonApps](https://aka.ms/BusinessCentralAddonApps)  

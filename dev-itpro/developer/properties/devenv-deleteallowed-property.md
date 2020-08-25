@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # DeleteAllowed Property
 Sets a value that specifies whether users can delete records while using the page.  
   
-## Applies to  
+## Applies To  
   
 - Pages  
   

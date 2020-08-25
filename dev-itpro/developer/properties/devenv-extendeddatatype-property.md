@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # ExtendedDataType Property
 Sets the extended data type of a field.  
   
-## Applies to  
+## Applies To  
   
 - Page Fields  
   

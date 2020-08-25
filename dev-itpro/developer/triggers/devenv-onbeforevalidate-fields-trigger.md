@@ -14,7 +14,7 @@ author: blrobl
 # OnBeforeValidate Trigger
 Runs before the user input is validated. 
 
-## Applies to  
+## Applies To  
 - Fields  
   
 ## Remarks  

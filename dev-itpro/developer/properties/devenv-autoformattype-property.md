@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # AutoFormatType Property
 Sets a value that determines how data is formatted, together with the AL expression in the [AutoFormatExpression Property](devenv-autoformatexpr-property.md).  
   
-## Applies to  
+## Applies To  
  Fields of the decimal data type in the following objects:  
   
 -   Tables  

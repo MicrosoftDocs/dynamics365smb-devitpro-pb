@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # ExternalAccess Property
 This property is specific to Dynamics 365 Sales. The ExternalAccess property specifies the access to the underlying CDS entity when Dynamics 365 Sales tables are generated using the cmdlet. 
 
-## Applies to  
+## Applies To  
 
 - Fields  
 

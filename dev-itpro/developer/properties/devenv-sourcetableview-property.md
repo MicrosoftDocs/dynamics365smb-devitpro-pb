@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # SourceTableView Property
 Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.  
   
-## Applies to  
+## Applies To  
   
 -   Pages  
 

@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AutoIncrement Property
 Sets whether the field value should be automatically incremented.  
   
-## Applies to  
+## Applies To  
  Fields of [Integer Data Type](../datatypes/devenv-integer-data-type.md) and [BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md)  
   
 ## Property Value  

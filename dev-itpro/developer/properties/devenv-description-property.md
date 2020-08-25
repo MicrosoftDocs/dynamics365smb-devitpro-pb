@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Description Property
 Sets the description of the table, field, page, report, control and many more. This description is for internal use and does not appear to end-users.  
 
-## Applies to  
+## Applies To  
 
 - Codeunits
 - Fields

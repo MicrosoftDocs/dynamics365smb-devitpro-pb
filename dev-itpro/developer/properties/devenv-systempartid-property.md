@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # SystemPartID Property
 Sets pre-defined system parts.  
   
-## Applies to  
+## Applies To  
   
 -   Part control on a page  
 

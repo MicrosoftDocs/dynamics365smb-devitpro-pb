@@ -175,22 +175,6 @@ A typical use of the **timestamp** field is for synchronizing data changes in ta
         SqlTimestamp = true;
     }
 
-Alternatively, you can use a [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variable to access the timestamp value of a record, as follows:
-
-1.    Create a [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) variable that references the record in a table for which you want to retrieve its timestamp.
-
-2.    Use the [Field Method](methods-auto/recordref/recordref-field-method.md) on the **RecordRef** variable to get the **FieldRef** for the field that has the number 0. This field contains the timestamp value.
-
-The following example shows how to retrieve the timestamp value for the first record in the `Customer` table. **RecordRef** and **FieldRef** are [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) and [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variables, respectively.
-
-    
-```
-RecordRef.Open(DATABASE::Customer);
-RecordRef.FindFirst();
-FieldRef := RecordRef.Field(0);
-Message(Format(FieldRef.Value()));
-```
-    
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  

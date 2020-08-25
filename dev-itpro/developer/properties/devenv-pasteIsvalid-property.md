@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # PasteIsValid Property
 Sets whether inserting records into this table using the paste command is enabled.  
   
-## Applies to  
+## Applies To  
  Tables  
   
 ## Property Value  

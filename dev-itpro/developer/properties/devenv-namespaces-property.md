@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Namespaces Property
 Specifies namespaces on the XMLport.  
   
-## Applies to  
+## Applies To  
   
 -   XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**.  
  
