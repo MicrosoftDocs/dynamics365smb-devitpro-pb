@@ -1,9 +1,9 @@
 ---
 title: "Access Property"
-description:
+description: "Describes the usage of the access modifier on objects in Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,8 +18,8 @@ author: SusanneWindfeldPedersen
 
 Sets the object accessibility level, which controls whether the object can be used from other code in your module or other modules. If the `Access` property is not specified, the default is `Public`.
 
-> [!NOTE]  
-> This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection based mechanisms such as RecordRef. 
+> [!IMPORTANT]  
+> This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection-based mechanisms such as `RecordRef`, or `TransferFields`. And the `OnRun` trigger can be run on `internal` codeunits by using `Codeunit.Run`. Setting the object accessibility level as `Access = Internal;` *cannot* be used as a security boundary. Also see [JSON Files](../devenv-json-files.md#Appjson).
 
 ## Applies To  
 
@@ -30,6 +30,7 @@ Sets the object accessibility level, which controls whether the object can be us
 ## Property Values  
 
 ### Object level
+
 The **Access** property values are as described below for objects:
 
 |Access modifier    |Level of accessibility |
@@ -38,6 +39,7 @@ The **Access** property values are as described below for objects:
 |Public             |The object can be accessed by any other code in the same module and in other modules that references it. This is the default value.|
 
 ### Table field level
+
 For table fields there are two additional settings for **Access** and you have the following settings available:
 
 |Access modifier    |Level of accessibility |
@@ -48,6 +50,8 @@ For table fields there are two additional settings for **Access** and you have t
 |Public             |The field can be accessed by any other code in the same module and in other modules that references it.|
 
 ## Syntax
+
+### Tables
 ```
 table 50111 MyTable
 {
@@ -56,6 +60,8 @@ table 50111 MyTable
     ...
     
 ```
+### Table fields
+
 ```
 table 50111 MyTable
 {
@@ -70,6 +76,8 @@ table 50111 MyTable
     ...            
 
 ```
+### Queries
+
 ```
 query 50114 MyQuery
 {
@@ -77,6 +85,9 @@ query 50114 MyQuery
     Access = Internal;
     ...
 ```
+
+### Codeunits
+
 ```
 codeunit 50113 MyCodeunit
 {
@@ -86,6 +97,7 @@ codeunit 50113 MyCodeunit
 ```
 
 ## See Also  
+
 [Properties](devenv-properties.md)  
 [Extensible Property](devenv-extensible-property.md)  
 [Protected Variables](../devenv-protected-variables.md)

@@ -77,8 +77,8 @@ codeunit 50102 MyPublishingCodeunit
 
 codeunit 50103 MySubscribingCodeunit
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublishingCodeunit2, 'OnAddressLineChangedEvent', '', true, true)]
-    local procedure SubcribeToOnAddressLineChangedEvent(sender: Codeunit MyPublishingCodeunit2; myGlobalVar: Integer)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublishingCodeunit, 'OnAddressLineChangedEvent', '', true, true)]
+    local procedure SubcribeToOnAddressLineChangedEvent(sender: Codeunit MyPublishingCodeunit; myGlobalVar: Integer)
     begin
         // My subscriber code
     end;

@@ -5194,6 +5194,17 @@
     "source_path": "dev-itpro/developer/properties/devenv-parttype-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-page-property-overview",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/readiness/readiness-develop-your-app.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-optionstring-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-optionmembers-field-property",
+    "redirect_document_id": false
    }
+  
   ]
 }
