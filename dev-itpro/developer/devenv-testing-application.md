@@ -28,7 +28,7 @@ The extent to which you can run automated tests will depend on your [!INCLUDE[pr
 ||Sandbox|![check](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running a large number of tests or tests that take a long time (more than 15 minutes per test method) isn't allowed. It's recommended that you don't run tests more that one or two hours a day.|
 |
 |On-premises|Production|![check](media/check.png)|For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#General)|
-||Container-based development environment|![check](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
+||Container-based development environment|![check](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development.md) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
 
 ## Test Codeunits and Test Methods 
 
