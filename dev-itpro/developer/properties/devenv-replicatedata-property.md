@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # ReplicateData Property
 Indicates that the table data is replicated to the cloud service. The default value is `true` for all tables. For more information, see [FAQ about Connecting to the Intelligent Cloud](../../administration/FAQ-Intelligent-Cloud.md).
   
-## Applies To  
+## Applies to  
 - Table fields
 
 ## Property  

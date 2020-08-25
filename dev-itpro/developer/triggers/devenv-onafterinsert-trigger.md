@@ -14,7 +14,7 @@ author: blrobl
 # OnAfterInsert Trigger
 Runs when a user inserts a new record into the table.  
   
-## Applies To  
+## Applies to  
 - Table extensions
   
 ## Remarks  

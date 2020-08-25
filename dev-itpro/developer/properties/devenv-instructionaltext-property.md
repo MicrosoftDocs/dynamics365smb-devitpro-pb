@@ -16,7 +16,7 @@ caps.latest.revision: 13
 # InstructionalText Property
 Sets the text used for instructions in the UI.  
   
-## Applies To  
+## Applies to  
   
 -   Page object  
   

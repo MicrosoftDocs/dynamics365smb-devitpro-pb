@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # InFooterBar Property
 Sets whether an action should be viewed as an exit action in the lower part of the page.  
   
-## Applies To  
+## Applies to  
   
 -   Actions  
   

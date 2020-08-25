@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # DecimalPlaces Property
 Sets display and storage requirements for the [Decimal Data Type](../datatypes/devenv-decimal-data-type.md).  
   
-## Applies To  
+## Applies to  
   
 - Page Fields  
 

@@ -18,7 +18,7 @@ In the client, tooltips appear when you point to caption of the control.
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
-## Applies To  
+## Applies to  
 
 -   Actions in the ribbon  
 

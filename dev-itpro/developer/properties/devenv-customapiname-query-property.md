@@ -18,7 +18,7 @@ Sets the custom name of the API endpoint that the query is exposed in. The custo
 >[!NOTE]
 > The property 'CustomAPIName' can only be set if the property 'QueryType' is set to 'API'.
 
-## Applies To  
+## Applies to  
 
 - Queries
 

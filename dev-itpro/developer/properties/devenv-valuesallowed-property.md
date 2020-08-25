@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ValuesAllowed Property
 Sets the values that are allowed in the field.  
   
-## Applies To  
+## Applies to  
   
 -   Table Fields  
   

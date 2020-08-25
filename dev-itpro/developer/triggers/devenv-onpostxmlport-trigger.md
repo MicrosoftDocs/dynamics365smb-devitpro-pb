@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnPostXMLport Trigger
 Runs after the XMLPort is run.  
   
-## Applies To  
+## Applies to  
 - XMLPorts  
   
 ## Remarks  

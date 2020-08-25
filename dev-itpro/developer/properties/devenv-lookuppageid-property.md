@@ -22,7 +22,7 @@ Sets the ID of the page you want to use as a lookup.
 LookupPageId = 50100;
 ```
  
-## Applies To  
+## Applies to  
   
 -   Page Fields  
   

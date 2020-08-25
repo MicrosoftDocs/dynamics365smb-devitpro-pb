@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # DrillDown Property
 Sets a drill-down for a field on a page.  
   
-## Applies To  
+## Applies to  
   
 -   Page Fields  
 <!--  

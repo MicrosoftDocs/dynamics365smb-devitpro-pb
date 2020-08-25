@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Numeric Property
 Sets a value that requires that users enter only numbers in the field.  
   
-## Applies To  
+## Applies to  
   
 -   Table Fields  
   

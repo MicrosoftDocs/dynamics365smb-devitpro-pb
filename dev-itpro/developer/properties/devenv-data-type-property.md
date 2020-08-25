@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Data Type Property
 Sets the data type of a table field or the variables it applies to.  
   
-## Applies To  
+## Applies to  
 Table Fields  
 
   
