@@ -9,6 +9,7 @@ ms.topic: article
 ms.author: jswymer
 ms.prod: "dynamics365-business-central"
 author: blrobl
+ROBOTS: NOINDEX
 ---
 
 # Testing With Permission Sets

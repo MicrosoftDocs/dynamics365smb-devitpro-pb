@@ -556,7 +556,7 @@
 ### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
 ### [Test Pages](developer/devenv-testing-pages.md)
 ### [UI Handlers](developer/devenv-creating-handler-methods.md)
-### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)
+<!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
 ### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
