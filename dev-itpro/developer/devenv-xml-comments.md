@@ -34,8 +34,8 @@ The following table lists the XML elements that are supported for AL.
 |----------------------|-----------|---------|
 |`<paramref>`|Specifies a reference to a parameter in a `<summary>` or `<remarks>` block.|`<paramref name="name"/>`|
 |`<para>`|Allows structuring text inside a `<summary>`, `<remarks>`, or `<returns>` tag.|`<para>paragraph</para>`|
-|`<b>`||`<b>bold</b>`|
-|`<i>`||`<i>italic</i>`|
+|`<b>`|Allows formatting text to be **bold**|`<b>bold</b>`|
+|`<i>`|Allows formatting text |`<i>italic</i>`|
 |`<c>`|Specifies that text within a description should be marked as code|`<c>inline code</c>`|
 |`<code>`|Specifies that multiline text within a description should be marked as code|`<code>code block</code>`|
 |`<list>`||`<list>` - bullet, number, (table), see C# documentation|
