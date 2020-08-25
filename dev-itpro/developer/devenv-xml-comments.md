@@ -25,19 +25,19 @@ By adding XML comments in code, you can enable IntelliSense in Visual Studio Cod
 The following table lists the XML elements that are supported for AL.
 
 | Top-level XML Tag   | Description |Syntax|
-|---------------------|-----------|---------|--|
+|---------------------|-----------|---------|
 |`<summary>`|A summary of the object|`<summary>description</summary>`|
 |`<param>`  |Used in method declarations to describe one or more parameters defined in the method. For each parameter, specify the name and a description.|`<param name="name">description</param>`|
 |`<returns>` |Used in method declarations to describe the return value of the method.|`<returns>description</returns>`|
 
 | Formatting XML Tag   | Description |Syntax|
-|------------------|-----------|---------|--|
+|----------------------|-----------|---------|
 |`<paramref>`|Specifies a reference to a parameter in a `<summary>` or `<remarks>` block.|`<paramref name="name"/>`|
-|`<para>`|paragraph|`<para>paragraph</para>`|
+|`<para>`|Allows structuring text inside a `<summary>`, `<remarks>`, or `<returns>` tag.|`<para>paragraph</para>`|
 |`<b>`||`<b>bold</b>`|
 |`<i>`||`<i>italic</i>`|
-|`<c>`||`<c>inline code</c>`|
-|`<code>`||`<code>code block</code>`|
+|`<c>`|Specifies that text within a description should be marked as code|`<c>inline code</c>`|
+|`<code>`|Specifies that multiline text within a description should be marked as code|`<code>code block</code>`|
 |`<list>`||`<list>` - bullet, number, (table), see C# documentation|
 
 
