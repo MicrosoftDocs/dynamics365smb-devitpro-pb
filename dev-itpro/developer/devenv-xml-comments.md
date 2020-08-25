@@ -32,7 +32,7 @@ The following table lists the XML elements that are supported for AL.
 |`<paramref>`|Specifies a reference to a parameter in a `<summary>` or `<remarks>` block.|`<paramref name="name"/>`|
 
 
-## Example
+## Example 1
 
 ```xml
 /// <summary>
@@ -42,6 +42,34 @@ The following table lists the XML elements that are supported for AL.
 Description = 'Name of the organization.';
 
 ```
+
+## Example 2
+
+The following example is taken from the Email.Codeunit.al file in the System Application. In this example, the parameter `EmailMessageId` is documented using the `<param>` syntax.
+
+```xml
+/// <summary>
+/// Provides functionality to create and send e-mails.
+/// </summary>
+codeunit 8901 "Email"
+{
+    Access = Public;
+
+    /// <summary>
+    /// Enqueues an email in the outbox to be sent in the background.
+    /// </summary>
+    /// <param name="EmailMessageId">The ID of the email to enqueue</param>
+    procedure Enqueue(EmailMessageId: Guid)
+    begin
+        EmailImpl.Enqueue(EmailMessageId);
+    end;
+...
+
+```
+
+## Example 3
+
+
 
 ## Special symbols
 
