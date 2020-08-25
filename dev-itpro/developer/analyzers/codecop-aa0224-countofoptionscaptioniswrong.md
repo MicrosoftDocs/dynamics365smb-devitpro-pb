@@ -1,8 +1,8 @@
 ---
-title: "The count of captions property is wrong."
+title: "The count of option captions specified in the OptionCaption property is wrong."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/10/2020
+ms.date: 08/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0224
-The count of captions property is wrong.  
+The count of option captions specified in the OptionCaption property is wrong.  
 
 ## Description
-The count of captions property is wrong.
+The count of option captions specified in the OptionCaption property is wrong.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

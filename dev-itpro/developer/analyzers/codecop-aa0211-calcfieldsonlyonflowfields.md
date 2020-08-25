@@ -2,7 +2,7 @@
 title: "Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/10/2020
+ms.date: 08/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -2,7 +2,7 @@
 title: "When BEGIN follows THEN, ELSE, DO, it should be on the same line, preceded by one space character."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/10/2020
+ms.date: 08/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

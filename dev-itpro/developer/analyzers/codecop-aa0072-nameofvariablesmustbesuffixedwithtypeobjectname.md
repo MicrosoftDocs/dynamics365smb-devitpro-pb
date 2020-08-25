@@ -1,5 +1,5 @@
 ---
-title: "SIFT index should not be used on primary or unique key."
+title: "The name of variables and parameters must be suffixed with the type or object name."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/25/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0222
-SIFT index should not be used on primary or unique key.  
+# CodeCop Rule AA0072
+The name of variables and parameters must be suffixed with the type or object name.  
 
 ## Description
-SIFT index should not be used on primary or unique key.
+To improve readability the name of variables and parameters must be suffixed with the type or object name.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
