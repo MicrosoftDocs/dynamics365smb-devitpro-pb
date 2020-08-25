@@ -18,7 +18,7 @@ Sets the multilanguage value of the InstructionalText of the object. Use this pr
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
-## Applies To  
+## Applies to  
 Pages including:  
   
 - Page properties  

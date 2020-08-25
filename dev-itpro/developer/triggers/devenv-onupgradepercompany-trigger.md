@@ -13,7 +13,7 @@ author: blrobl
 # OnUpgradePerCompany Trigger
 Runs during the upgrade of an extension.
 
-## Applies To  
+## Applies to  
 -  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **Upgrade**.  
 
 > [!NOTE]  

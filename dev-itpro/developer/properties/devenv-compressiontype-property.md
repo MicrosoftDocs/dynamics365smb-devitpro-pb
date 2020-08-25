@@ -17,7 +17,7 @@ caps.latest.revision: 13
 
 Specifies whether data compression is used on the table, and if so, what type of compression is used. 
   
-## Applies To  
+## Applies to  
   
 -   Table objects.
 

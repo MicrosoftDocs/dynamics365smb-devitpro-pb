@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # APIPublisher Property (Query)
 Sets the publisher of the API endpoint the query is exposed in. The syntax for providing a publisher is illustrated in the example below:
 
-## Applies To  
+## Applies to  
 
 - Query object 
 

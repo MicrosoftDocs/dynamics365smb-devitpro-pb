@@ -2,7 +2,7 @@
 title: "The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/25/2020
+ms.date: 06/19/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets a shortcut key for selecting an action.
   
   
-## Applies To
+## Applies to
 
 -  Actions on pages.  
 

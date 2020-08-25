@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # UseRequestPage Property
 Sets whether a request page is presented to the user.  
   
-## Applies To  
+## Applies to  
   
 - Reports  
 - XMLports  

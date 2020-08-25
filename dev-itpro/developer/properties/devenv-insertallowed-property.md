@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # InsertAllowed Property
 Sets a value to specify whether users can add records while using a page.  
   
-## Applies To  
+## Applies to  
   
 -   Pages  
   

@@ -15,7 +15,7 @@ Specifies the name of the original table in the external database.
 
 Specify this property if the original name is different from the name that you specify in the **Name** property. This means that you can use a different name for the table in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].  
 
-## Applies To  
+## Applies to  
 
 - Tables  
 

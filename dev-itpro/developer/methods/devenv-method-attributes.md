@@ -56,6 +56,6 @@ The following method attributes are available:
 - [TestPermissions Attribute](devenv-testpermissions-attribute.md)
 - [TryFunction Attribute](devenv-tryfunction-attribute.md)
 
-## See Also   
+## See Also
 
-[AL Method Reference](devenv-al-method-reference.md)  
+[AL Method Reference](../methods-auto/library.md)  

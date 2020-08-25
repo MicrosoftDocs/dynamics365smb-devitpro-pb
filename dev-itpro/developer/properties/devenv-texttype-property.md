@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # TextType Property
 Sets the type of text this element or attribute contains.  
   
-## Applies To  
+## Applies to  
  - Text elements in XMLports  
  - Text attributes in XMLports
   
