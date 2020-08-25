@@ -45,7 +45,7 @@ Description = 'Name of the organization.';
 
 ## Example 2
 
-The following example is taken from the Email.Codeunit.al file in the System Application. In this example, the parameter `EmailMessageId` is documented using the `<param>` syntax.
+The following example is taken from the *Email.Codeunit.al* file in the System Application. In this example, the parameter `EmailMessageId` is documented using the `<param>` syntax.
 
 ```xml
 /// <summary>
