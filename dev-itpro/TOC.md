@@ -368,6 +368,7 @@
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [Working with AL Methods](developer/devenv-al-methods.md)
 ### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
+### [XML Comments in Code](developer/devenv-xml-comments.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
