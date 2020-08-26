@@ -32,15 +32,16 @@ The following table lists the XML elements that are supported for AL.
 |`<example>`|Used to specify an example of how to use a given codeunit or object.|`<example>description</example>`|
 |`<remarks>`|Used to supplement information given in the `<summary>` section.|`<remarks>description</remarks>`|
 
+
 | Formatting XML Tag   | Description |Syntax|
 |----------------------|-----------|---------|
 |`<paramref>`|Specifies a reference to a parameter in a `<summary>` or `<remarks>` block.|`<paramref name="name"/>`|
 |`<para>`|Allows structuring text inside a `<summary>`, `<remarks>`, or `<returns>` tag.|`<para>paragraph</para>`|
-|`<b>`|Allows formatting text as **bold**.|`<b>bold</b>`|
-|`<i>`|Allows formatting text as *italic*.|`<i>italic</i>`|
-|`<c>`|Specifies that text within a description should be marked as code.|`<c>inline code</c>`|
-|`<code>`|Specifies that multiline text within a description should be marked as code.|`<code>code block</code>`|
-|`<list>`|Specifies a list formatted as a bulleted or numbered list, or as a table. |`<list type="bullet|number|table">`. See full [List syntax](devenv-xml-comments.md#ListSyntax) below.|
+|`<b>`|Allows formatting text as **bold** inside a top-level tag.|`<b>bold</b>`|
+|`<i>`|Allows formatting text as *italic* inside a top-level tag.|`<i>italic</i>`|
+|`<c>`|Specifies that text within a description should be marked as code inside a top-level tag.|`<c>inline code</c>`|
+|`<code>`|Specifies that multiline text within a description should be marked as code inside a top-level tag.|`<code>code block</code>`|
+|`<list>`|Specifies a list formatted as a bulleted or numbered list, or as a table in a `<summary>` or `<remarks>` block. |`<list type="bullet|number|table">`. See full [List syntax](devenv-xml-comments.md#ListSyntax) below.|
 
 ## List syntax
 
