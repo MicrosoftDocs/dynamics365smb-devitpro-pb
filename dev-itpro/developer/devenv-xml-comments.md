@@ -59,18 +59,7 @@ The following table lists the XML elements that are supported for AL.
 </list>
 ```
 
-## Example 1
-
-```xml
-/// <summary>
-/// This property specifies a description of the object.
-/// </summary>
-
-Description = 'Name of the organization.';
-
-```
-
-## Example 2
+## Example
 
 The following example is taken from the *Email.Codeunit.al* file in the System Application. In this example, the parameter `EmailMessageId` is documented using the `<param>` syntax.
 
@@ -94,10 +83,6 @@ codeunit 8901 "Email"
 ...
 
 ```
-
-## Example 3
-
-
 
 ## Special symbols
 
