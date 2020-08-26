@@ -13,6 +13,8 @@ author: SusanneWindfeldPedersen
 
 # XML Comments in Code
 
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The syntax for adding XML comments in your code is triple slashes followed by one of the supported XML tags. 
 
 By adding XML comments in code, you can enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code. This means that when you have built an extension and someone extends this code, they will get inline documentation when they call the given object.
