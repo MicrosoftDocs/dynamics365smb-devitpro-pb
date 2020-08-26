@@ -112,24 +112,24 @@ You can change the name of any environment. The name uniquely identifies the env
 ### Before you rename an environment
 
 - Read the [Environment rename considerations](#consider) section to understand the consequences of renaming an environment.
-- Determine the best time to do the remaining.
-    Renaming an environment requires a restart to the environment. We recommend doing this operation when no users are active in Business Central.  
+- Make sure you notify all your users (including any external service integrations you may have) about the upcoming URL change, so they could prepare to update their references. 
+- Determine the best time to do the renaming. Renaming an environment requires a restart to the environment. We recommend doing this operation when no users are active in Business Central.  
 
 ### Rename an environment
 
 1. Select **Environments**, then select the environment you want to rename.
-2. Select **Rename**.
+2. On the **Environment Details** page, select **Rename**.
 3. On **Rename environment** page, read the information.
 4. Enter the new name, and then select **Rename**.
 5. Confirm your intent to rename the environment.
 
-    At this point, the environment state will first change to **Preparing**, then to **Active** again when the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
+At this point, the environment state will first change to **Preparing | Rename Scheduled**, then to **Active** again when the rename has been completed. The new name will be available immediately. The environment will no longer be accessible using the old environment name.  
 
 You can also review the log for the Rename operation on the **Operations** page afterwards.
 
 ### <a name="consider"></a>Environment rename considerations
 
-Changing the name can affect many scenarios and integrations. Renaming an environment during early stages of a customer implementation may be a low risk operation. But renaming an environment that's been used by customers for a longer period of time or integrated with many external services and components is risky. You must carefully plan for it.
+Changing the environment name can affect many scenarios and integrations. Renaming an environment during early stages of a customer implementation may be a low risk operation. But renaming an environment that's been used by customers for a longer period of time or integrated with many external services and components is risky. You must carefully plan for it.
 
 Here are some areas where the environment name is used, which you need to consider before attempting to rename an environment:  
 
