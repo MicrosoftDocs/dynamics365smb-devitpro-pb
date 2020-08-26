@@ -34,12 +34,27 @@ The following table lists the XML elements that are supported for AL.
 |----------------------|-----------|---------|
 |`<paramref>`|Specifies a reference to a parameter in a `<summary>` or `<remarks>` block.|`<paramref name="name"/>`|
 |`<para>`|Allows structuring text inside a `<summary>`, `<remarks>`, or `<returns>` tag.|`<para>paragraph</para>`|
-|`<b>`|Allows formatting text to be **bold**|`<b>bold</b>`|
-|`<i>`|Allows formatting text |`<i>italic</i>`|
-|`<c>`|Specifies that text within a description should be marked as code|`<c>inline code</c>`|
-|`<code>`|Specifies that multiline text within a description should be marked as code|`<code>code block</code>`|
-|`<list>`||`<list>` - bullet, number, (table), see C# documentation|
+|`<b>`|Allows formatting text as **bold**.|`<b>bold</b>`|
+|`<i>`|Allows formatting text as *italic*.|`<i>italic</i>`|
+|`<c>`|Specifies that text within a description should be marked as code.|`<c>inline code</c>`|
+|`<code>`|Specifies that multiline text within a description should be marked as code.|`<code>code block</code>`|
+|`<list>`|Specifies a list formatted as a bulleted or numbered list, or as a table. |`<list type="bullet|number|table">`. See full [List syntax](devenv-xml-comments.md#ListSyntax) below.|
 
+## List syntax
+
+```xml
+
+<list type="bullet|number|table">
+    <listheader>
+        <term>term</term>
+        <description>description</description>
+    </listheader>
+    <item>
+        <term>term</term>
+        <description>description</description>
+    </item>
+</list>
+```
 
 ## Example 1
 
