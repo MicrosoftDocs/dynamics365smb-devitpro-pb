@@ -229,7 +229,7 @@ The following methods are available on the [RecordRef](methods-auto/recordref/re
 |[SystemCreatedAtNo](methods-auto/recordref/recordref-systemcreatedatno-method.md)|Gets the field number that is used by the **SystemCreatedAt** field. |
 |[SystemCreatedByNo](methods-auto/recordref/recordref-systemcreatedbyno-method.md)|Gets the field number that is used by the **SystemCreatedBy** field.|
 |[SystemModifiedAtNo](methods-auto/recordref/recordref-systemmodifiedatno-method.md)|Gets the field number that is used by the **SystemModifiedAt** field.|
-|[SystemModifiedByNo](methods-auto/recordref/recordref-systemmodifiedbyno-method.md)|Gets the field number that is used by the SystemModifiedBy field.|
+|[SystemModifiedByNo](methods-auto/recordref/recordref-systemmodifiedbyno-method.md)|Gets the field number that is used by the **SystemModifiedBy** field.|
 
 There are a couple points of interest you should know:
 
