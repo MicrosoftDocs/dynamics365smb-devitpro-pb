@@ -15,7 +15,7 @@ author: mikebc
 
 This article describes how you can work with end-users and configure their devices to improve the security.
 
-> [IMPORTANT)
+> [IMPORTANT]
 > Use this article together with industry standard security practices for securing users and their access to company data. This article describes additional considerations for how you can work with end-users and configure their devices to improve security.
 
 ## Kiosks and shared devices
