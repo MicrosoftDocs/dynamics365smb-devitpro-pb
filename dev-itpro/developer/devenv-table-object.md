@@ -170,10 +170,10 @@ Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the followi
 - SystemCreatedBy
 
   Specifies security ID (SID) of the user that created the record 
-- SystemLastModifiedAt
+- SystemModifiedAt
 
   Specifies the data and time that the record was last modified.
-- SystemLastModifiedBy
+- SystemModifiedBy
 
   Specifies the SID of the user that last modified the record
 
@@ -185,8 +185,8 @@ The data audit fields have the following static characteristics:
 |----------------|----------------------|--------|------------|
 |SystemCreatedAt|$systemCreatedAt |DateTime|2000000001|
 |SystemCreatedBy  |$systemCreatedBy |GUID |2000000002|
-|SystemLastModifiedAt|$systemLastModifiedAt |DateTime|2000000003|
-|SystemLastModifiedBy|$systemLastModifiedBy |GUID|2000000004|
+|SystemModifiedAt|$systemModifiedAt |DateTime|2000000003|
+|SystemModifiedBy|$systemModifiedBy |GUID|2000000004|
 
 #### Runtime characteristics
 
@@ -205,11 +205,11 @@ At runtime, the data audit fields have the following characteristics and behavio
 
 - When a record is first inserted, the fields are populated with actual values.
 
-    The $systemCreatedBy and $systemLastModifiedBy fields are given the same value. So are the $systemCreatedAt  and $systemLastModifiedAt fields.
+    The $systemCreatedBy and $systemModifiedBy fields are given the same value. So are the $systemCreatedAt  and $systemModifiedAt fields.
 
     The $systemCreatedBy and $systemCreatedAt fields won't change after this point.
 
-- When a record is updated, the $systemLastModifiedBy and $systemLastModifiedAt fields are changed.
+- When a record is updated, the $systemModifiedBy and $systemModifiedAt fields are changed.
 
 - The following operations won't change the values of audit fields:
 
@@ -221,6 +221,15 @@ At runtime, the data audit fields have the following characteristics and behavio
 #### In AL 
 
 The data audit fields are exposed in AL code. As a developer, the audit fields give you an easy and performant way to program against historical data. For example, you could write AL queries that return data that has changed since a specific date and time.
+
+The following methods are available on the [RecordRef](methods-auto/recordref/recordref-data-type) data type:
+
+|Method|Description|
+|------|-----------|
+|[SystemCreatedAtNo](methods-auto/recordref/recordref-systemcreatedatno-method.md)|Gets the field number that is used by the **SystemCreatedAt** field. |
+|[SystemCreatedByNo](methods-auto/recordref/recordref-systemcreatedbyno-method.md)|Gets the field number that is used by the **SystemCreatedBy** field.|
+|[SystemModifiedAtNo](methods-auto/recordref/recordref-systemmodifiedatno-method.md)|Gets the field number that is used by the **SystemModifiedAt** field.|
+|[SystemModifiedByNo](methods-auto/recordref/recordref-systemmodifiedbyno-method.md)|Gets the field number that is used by the SystemModifiedBy field.|
 
 There are a couple points of interest you should know:
 
