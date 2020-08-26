@@ -15,6 +15,9 @@ author: mikebc
 
 This article describes how you can work with end-users and configure their devices to improve the security.
 
+> [IMPORTANT)
+> Use this article together with industry standard security practices for securing users and their access to company data. This article describes additional considerations for how you can work with end-users and configure their devices to improve security.
+
 ## Kiosks and shared devices
 
 Customers using kiosks, where multiple users sign into [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with their own identity from that terminal, should apply additional security practices for an appropriate level of isolation between users.
