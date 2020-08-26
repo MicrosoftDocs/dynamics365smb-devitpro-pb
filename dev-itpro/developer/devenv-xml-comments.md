@@ -29,8 +29,8 @@ The following table lists the XML elements that are supported for AL.
 |`<summary>`|A summary of the object|`<summary>description</summary>`|
 |`<param>`  |Used in method declarations to describe one or more parameters defined in the method. For each parameter, specify the name and a description.|`<param name="name">description</param>`|
 |`<returns>` |Used in method declarations to describe the return value of the method.|`<returns>description</returns>`|
-|`<example>`|||
-|`<remarks>`|||
+|`<example>`|Used to specify an example of how to use a given codeunit or object.|`<example>description</example>`|
+|`<remarks>`|Used to supplement information given in the `<summary>` section.|`<remarks>description</remarks>`|
 
 | Formatting XML Tag   | Description |Syntax|
 |----------------------|-----------|---------|
