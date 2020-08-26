@@ -26,6 +26,15 @@ Use the data to gather statistics about system usage and also troubleshoot perfo
 
 Occurs when a page has been opened in the client.  
 
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|name|Name of the page opened in the client |
+|url|Base url|
+|session_id|An identifier for the session. Can be used to create a timeline of page views happening in the session|
+
+
 ### Custom dimensions
 
 |Dimension|Description or value|
@@ -34,6 +43,7 @@ Occurs when a page has been opened in the client.
 |alObjectId|Specifies the ID of the page object that was opened.|
 |alObjectName|Specifies the name of the page object that was opened.|
 |alObjectType|**Page**|
+|client_Browser|The browser name and version used by the user|
 |clientType|Specifies the type of client that opened the page such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used when the page opened. |
 |component|**Dynamics 365 Business Central Server**.|
