@@ -42,7 +42,7 @@ The name of the field in the record.
 
 ## Remarks
 
-The advantage of using the FIELDNAME method method call instead of a static assignment, like NameOfField := 'MyField', is that using the FIELDNAME method dynamically adapts to any change to the field name made in the development environment.
+The advantage of using the FIELDNAME method call instead of a static assignment, like NameOfField := 'MyField', is that using the FIELDNAME method dynamically adapts to any change to the field name made in the development environment.
 
 ## Example
 
