@@ -183,10 +183,10 @@ The data audit fields have the following static characteristics:
 
 |Field name (in AL) |Column name (in database)|Data type|Field number|
 |----------------|----------------------|--------|------------|
-|SystemCreatedAt|$SystemCreatedAt |DateTime|2000000001|
-|SystemCreatedBy  |$SystemCreatedBy |GUID |2000000002|
-|SystemLastModifiedAt|$SystemLastModifiedAt |DateTime|2000000003|
-|SystemLastModifiedBy|$SystemLastModifiedBy |GUID|2000000004|
+|SystemCreatedAt|$systemCreatedAt |DateTime|2000000001|
+|SystemCreatedBy  |$systemCreatedBy |GUID |2000000002|
+|SystemLastModifiedAt|$systemLastModifiedAt |DateTime|2000000003|
+|SystemLastModifiedBy|$systemLastModifiedBy |GUID|2000000004|
 
 #### Runtime characteristics
 
@@ -199,17 +199,17 @@ At runtime, the data audit fields have the following characteristics and behavio
    - Before all [OnAfterInsert](triggers/devenv-onafterinsert-trigger.md) and [OnAfterModify](triggers/devenv-onaftermodify-trigger.md) triggers are run
 
     > [!NOTE]
-    > You can't assign your own values to any of the audit fields.
+    > You can assign the values, but the values written to the database are always provided by the platform.
 
 - When a new record is created, before calling Insert, the audit fields are given blank GUIDs and blank dates as values.
 
 - When a record is first inserted, the fields are populated with actual values.
 
-    The SystemCreatedBy and SystemLastModifiedBy fields are given the same value. So are the SystemCreatedAt and SystemLastModifiedAt fields.
+    The $systemCreatedBy and $systemLastModifiedBy fields are given the same value. So are the $systemCreatedAt  and $systemLastModifiedAt fields.
 
-    The SystemCreatedBy and SystemCreatedAt fields won't change after this point.
+    The $systemCreatedBy and $systemCreatedAt fields won't change after this point.
 
-- When a record is updated, the SystemLastModifiedBy and SystemLastModifiedAt fields are changed.
+- When a record is updated, the $systemLastModifiedBy and $systemLastModifiedAt fields are changed.
 
 - The following operations won't change the values of audit fields:
 
