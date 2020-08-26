@@ -76,8 +76,12 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-| Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
-| Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
+|Default max documents | The maximum number of documents that can be merged in report by default Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.|200|
+|Max documents | The maximum number of documents that can be merged in report. |500|
+|Default max execution timeout | The maximum execution time that it can take to generate a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.|6 hours|
+|Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
+|Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.|500,000|
+|Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
 |Max execution timeout for Word reports| The maximum execution time that it can take to generate a report that uses a Word layout. If exceeded, the report will be canceled.|30 minutes|
 
 ## Query limits
