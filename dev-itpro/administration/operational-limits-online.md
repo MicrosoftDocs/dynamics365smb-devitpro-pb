@@ -92,7 +92,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
-|Max connections|The maximum number of simultaneous OData requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
+|Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
 |Max request queue size|The maximum number of pending OData V4 requests, including requests being processed and waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
@@ -106,7 +106,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max concurrent requests|The maximum number of SOAP requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
-|Max connections|The maximum number of simultaneous SOAP requests on the server instance. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
+|Max connections|The maximum number of simultaneous SOAP requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
 |Max message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
 |Max request queue size|The maximum number of pending SOAP requests, including requests being processed and waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br /> 300 requests/minute<br /><br />Production:<br />600 requests/minute|
