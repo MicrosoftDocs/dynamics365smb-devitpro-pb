@@ -43,7 +43,7 @@ The following table outlines recommended content for you to get started:
 
 |Link  |Description  |
 |------|-------------|
-|[Developer Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)| Provides links to role-specific training. |
+|[Developer learning paths on Microsoft Learn](/learn/browse/?resource_type=learning%20path&products=dynamics-business-central&roles=developer)| Provides links to role-specific training. |
 |[Development in AL](developer/devenv-dev-overview.md)|Get an understanding of the basics and terms you will encounter while working in Visual Studio Code with the AL extension.|
 |[Getting Started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
 |[Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)|Learn how to create an industry specific solution on top of [!INCLUDE [prodshort](developer/includes/prodshort.md)].|
@@ -58,9 +58,7 @@ The following table outlines recommended content for you to get started:
 |Link  |Description  |
 |------|-------------|
 |[Resell Different Solutions](developer/readiness/readiness-reseller.md)| Landing page for readiness for resellers. |
-|[Functional Consultant Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)| Provides links to role-specific training. |
-|[Pre-Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)| Provides links to role-specific training.|
-|[Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)| Provides links to role-specific training.|
+|[Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant|  Provides links to role-specific training. |
 |[Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) | Describes the different models for selling in the Cloud Solution Provider (CSP) program so you can determine which works best with your business.        |
 
 ## Other roles and profiles

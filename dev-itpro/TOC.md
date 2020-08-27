@@ -1,13 +1,12 @@
-﻿# [Development and administration for Dynamics 365 Business Central](index.md)
-# [New and Planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
-# Get Started
+﻿# [Development and administration](index.md)
+# [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
+# Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Learn
-### [Dynamics 365 Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
+### [Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
-### [Extending Business Central](/dynamics365/business-central/about-develop-extensions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!--#### What the partner's responsibilities are -->
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
