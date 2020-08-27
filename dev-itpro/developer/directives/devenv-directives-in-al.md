@@ -15,16 +15,16 @@ ms.author: solsen
 
 # Preprocessor Directives in AL
 
-In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable expand and collapse in code. Preprocessor directives can be divided into the following groups:
+In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable expand and collapse in code. Preprocessor directives can be divided into the following groups. For more information about each type, use the links provided below.
 
 - [Conditional directives](devenv-directives-in-al.md#conditional-directives)
 - [Regions](devenv-directive-region.md)
 - [Pragmas](devenv-directive-pragma.md)
 
-Any code can be made conditional, including table fields. Symbols are defined in the `app.json` file or at the beginning of a source file. 
+Any code can be made conditional, including table fields, and checked using a conditional directive. To check code using a conditional directive, you must define a symbol to check. A symbol returns a boolean value; `true` or `false`. Symbols can be defined at the beginning of a source file and the scope of the specific symbol is the file that it is defined within. You can also define symbols in the `app.json` file, and then the scope..... 
 
 > [!NOTE]  
-> There are currently no built-in symbols in AL.
+> Built-in symbols are currently not supported in AL.
 
 ## Conditional directives
 
