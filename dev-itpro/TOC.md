@@ -1,49 +1,46 @@
-﻿# Get Started
-## [Get started with development and administration](index.md)
-## Product overview
-### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### Learn
-#### [Dynamics 365 Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
-#### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### Develop
-#### [Extending Business Central](/dynamics365/business-central/about-develop-extensions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+﻿[Development and administration for Dynamics 365 Business Central](index.md)
+# Get Started
+## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## Learn
+### [Dynamics 365 Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
+### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## Develop
+### [Extending Business Central](/dynamics365/business-central/about-develop-extensions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!--#### What the partner's responsibilities are -->
-#### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
-#### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
-#### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
+### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
+### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 <!--#### How Microsoft runs the service -->
-#### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
-#### [Components and Capabilities](deployment/app-components.md)
-#### [Licensing](deployment/licensing.md)
-#### [Add your App to AppSource](administration/appsource.md)
-#### Get started with building apps
-##### [Overview](developer/readiness/readiness-add-on-apps-getting-you-started.md)
-##### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
-##### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-##### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
-#### Embed Apps
-##### [Embed App Overview](deployment/embed-app-overview.md)
-##### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
-##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-##### [Using Application Family](deployment/embed-app-using-application-family.md)
-##### App Management
-###### [Introduction](administration/appmanagement/app-management-overview.md)
-###### [App Management API](administration/appmanagement/app-management-api.md)
+### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
+### [Components and Capabilities](deployment/app-components.md)
+### [Licensing](deployment/licensing.md)
+### [Add your App to AppSource](administration/appsource.md)
+### Get started with building apps
+#### [Overview](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+#### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
+#### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
+#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
+### Embed Apps
+#### [Embed App Overview](deployment/embed-app-overview.md)
+#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
+#### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### [Using Application Family](deployment/embed-app-using-application-family.md)
+#### App Management
+##### [Introduction](administration/appmanagement/app-management-overview.md)
+##### [App Management API](administration/appmanagement/app-management-api.md)
 <!--AppSourcevalidation-->
-#### AppSource Validation
-##### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
-##### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
-##### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
-##### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-##### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
-### Sell
-#### [Become a Reseller](/dynamics365/business-central/product-sell?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-#### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### AppSource Validation
+#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
+#### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
+#### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+## Sell
+### [Become a Reseller](/dynamics365/business-central/product-sell?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Frequently asked questions
 ### [Generally asked questions](faq.md)
 ### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
@@ -585,8 +582,9 @@
 ### [JSON files](developer/devenv-json-files.md) -->
 <!-- end AL -->
 <!-- begin security -->
-# Security
-## [Security and Protection Overview](security/security-and-protection.md)
+# Security, Privacy, Compliance
+## Security and Protection
+### [Overview](security/security-and-protection.md)
 ## [Application](security/security-application.md)
 ## [Online](security/security-online.md)
 ## [On-Premises](security/security-onpremises.md)
@@ -599,6 +597,10 @@
 ### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
+## Privacy
+### [Privacy (microsoft.com)](https://www.microsoft.com/en-us/trust-center/privacy)
+## Compliance
+### [Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->
 <!-- begin performance -->
 # Performance
