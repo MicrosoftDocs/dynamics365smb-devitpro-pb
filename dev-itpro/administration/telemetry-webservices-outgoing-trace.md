@@ -22,10 +22,10 @@ Outgoing web service request telemetry gathers data about outgoing web service r
 
 The following table explains the general dimensions included in an outgoing **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
 
-|Dimension|Description or value||
+|Dimension|Description or value|
 |---------|-----|-----------|
-|message|**Web Service Called (Outgoing): {endpoint}**||
-|severityLevel|**1**||
+|message|**Web Service Called (Outgoing): {endpoint}**|
+|severityLevel|**1**|
 
 ## Custom dimensions
 
