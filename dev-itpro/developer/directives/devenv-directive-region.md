@@ -17,10 +17,7 @@ ms.author: solsen
 
 ## Region
 
-|Region preprocessor directive| Description|
-|-----------------------------|------------|
-|#region                | Specifies a block of code that you can expand or collapse. |
-|#endregion             | Specifies the end of a #region block of code. |
+The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability. The `#endregion` specifies the end of a `#region` block of code.
 
 
 ## Examples
