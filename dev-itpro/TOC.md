@@ -558,6 +558,7 @@
 ### [UI Handlers](developer/devenv-creating-handler-methods.md)
 ### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)
 ### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
+### [The Performance Toolkit Extension](devenv-performance-toolkit.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
