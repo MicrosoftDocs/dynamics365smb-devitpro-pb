@@ -112,7 +112,7 @@ You can change the name of any environment. The name uniquely identifies the env
 ### Before you rename an environment
 
 - Read the [Environment rename considerations](#consider) section to understand the consequences of renaming an environment.
-- Make sure you notify all your users (including any external service integrations you may have) about the upcoming URL change, so they could prepare to update their references. 
+- Make sure you notify all your users, including any external service integrations you may have, about the upcoming URL change. It will let them prepare to update their references. 
 - Determine the best time to do the renaming. Renaming an environment requires a restart to the environment. We recommend doing this operation when no users are active in Business Central.  
 
 ### Rename an environment
@@ -129,7 +129,7 @@ You can also review the log for the Rename operation on the **Operations** page 
 
 ### <a name="consider"></a>Environment rename considerations
 
-Changing the environment name can affect many scenarios and integrations. Renaming an environment during early stages of a customer implementation may be a low risk operation. But renaming an environment that's been used by customers for a longer period of time or integrated with many external services and components is risky. You must carefully plan for it.
+Changing the environment name can affect many scenarios and integrations. In the early stages of a customer implementation, it may be a low risk operation. But renaming an environment that's been used by customers for a while or integrated with many external services and components is risky. So carefully plan for it.
 
 Here are some areas where the environment name is used, which you need to consider before attempting to rename an environment:  
 
