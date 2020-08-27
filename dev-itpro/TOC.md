@@ -1,4 +1,5 @@
-﻿[Development and administration for Dynamics 365 Business Central](index.md)
+﻿# [Development and administration for Dynamics 365 Business Central](index.md)
+# [New and Planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get Started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Learn
