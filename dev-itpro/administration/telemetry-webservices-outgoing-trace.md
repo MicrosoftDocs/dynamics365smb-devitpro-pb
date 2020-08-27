@@ -16,11 +16,11 @@ ms.author: jswymer
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-Outgoing web service request telemetry gathers data about outgoing web service requests sent using the AL HTTPClient module. As a partner, the data give insight into the execution time and failures that happen in external services that your environment and extensions depend. Use the data to monitor environments for performance issues caused by external services, and be more proactive in preventing issues from occurring.
+Outgoing web service request telemetry gathers data about outgoing web service requests sent using the AL HTTPClient module. As a partner, the data gives you insight into the execution time and failures that happen in external services that your environment and extensions depend. Use the data to monitor environments for performance issues caused by external services, and be more proactive in preventing issues from occurring.
 
 ## General dimensions
 
-The following table explains the general dimensions included in an outgoing **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
+The following table explains the general dimensions included in an outgoing **Web Services Call (Outgoing)** trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
 |---------|-----|-----------|
@@ -34,8 +34,8 @@ The following table explains the custom dimensions included in a **Web Services 
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|alAuthenticationMethod|Specifies the user authentication used by the service of the AL object that was run by request. Values include: Windows, UserName, NavUserPassword, AccessControlService. For more information about the authentication types, see [Authentication and Credential Types](users-credential-types.md).|
-|alHttpTimeout|Specifies the timeout defined for the request. The timeout is the time to wait before the request is canceled. The value has the format hh:mm:ss. <br /><br />The timeout is defined either by the [NavHttpClientMaxTimeout](configure-server-instance.md#Development) setting on the [!INCLUDE[server](../developer/includes/server.md)] instance or by a [TimeOut method](../developer/methods-auto/httpclient/httpclient-timeout-method) call in extension code. The TimeOut method call takes precedence. |
+|alAuthenticationMethod|Specifies the user authentication used by the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service . Values include: Windows, UserName, NavUserPassword, AccessControlService. For more information about the authentication types, see [Authentication and Credential Types](users-credential-types.md).|
+|alHttpTimeout|Specifies the timeout defined for the request. The timeout is the time to wait before a request gets canceled. The value has the format hh:mm:ss. <br /><br />The timeout is defined either by the [NavHttpClientMaxTimeout](configure-server-instance.md#Development) setting on the [!INCLUDE[server](../developer/includes/server.md)] instance or by a [TimeOut method](../developer/methods-auto/httpclient/httpclient-timeout-method) call in extension code. The TimeOut method call takes precedence. |
 |alObjectId|Specifies the ID of the AL object that made the request.|
 |alObjectName|Specifies the name of the AL object that made the request.|
 |alObjectType|Specifies the type of the AL object that made the request.|
