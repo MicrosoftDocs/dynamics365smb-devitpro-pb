@@ -15,14 +15,26 @@ ms.author: solsen
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-## Pragma
+`#pragma warning` can enable or disable certain warnings.
 
-|Pragma preprocessor directive| Description|
-|-----------------------------|------------|
-|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions; such as `disable`, `restore`, and `enable`.|
+## Syntax
 
 
-## Examples
+```
+#pragma warning disable warning-list  
+#pragma warning restore warning-list  
+```
+
+## Parameters
+
+*warning-list* 
+A comma-separated list of warning numbers.
+
+When no warning numbers are specified, disable disables all warnings and restore enables all warnings.
+
+> [!NOTE]  
+> To find warning numbers in AL, build your project in Visual Studio Code and then look for the warning numbers in the **Output** window.
+
 
 ## Warning suppression
 
