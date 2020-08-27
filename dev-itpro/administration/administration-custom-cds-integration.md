@@ -409,9 +409,8 @@ Users can now manually synchronize employee records in [!INCLUDE[prodshort](../i
 > [!TIP]  
 > To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
-### To reset the defined selected integration table mapping to default
-
-To enable the users to reset a selected defined integration table mapping to the default:
+### Enable customers to reset selected integration table mappings to the default settings
+Customers might make changes to the integration table mappings that they later regret. To enable them to reset selected custom integration table mappings to the default, rather than all custom table mappings, follow these steps:
 
 1. In the same codeunit created for this section, add an event subscriber to **OnBeforeHandleCustomIntegrationTableMapping** and point to the default behaviour of the integration defined above, as follows:
 
@@ -439,8 +438,8 @@ To enable the users to reset a selected defined integration table mapping to the
         end;
     end;
     ```
-> [!TIP]  
-> Only if the IsHandled property is set to true, the default implementation will not be triggered. The default implementation will reset all defined mappings to the default, regardless of the user's selection.
+> [!Important]  
+> You must set the the IsHandled property to true to avoid triggering the default implementation. Otherwise, the default implementation will reset all custom table mappings to the default, regardless of the user's selection.
 
 ## Customizing Synchronization  
 
