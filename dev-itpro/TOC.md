@@ -66,12 +66,12 @@
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 #### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
-### Resources for a developer
+<!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
 ### Resources for an administrator
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Documentation](administration/tenant-administration.md)
+#### [Documentation](administration/tenant-administration.md)-->
 
 <!-- administration-->
 # Administration
@@ -586,9 +586,9 @@
 # Security, Privacy, Compliance
 ## Security and Protection
 ### [Overview](security/security-and-protection.md)
-## [Application](security/security-application.md)
-## [Online](security/security-online.md)
-## [On-Premises](security/security-onpremises.md)
+### [Application](security/security-application.md)
+### [Online](security/security-online.md)
+### [On-Premises](security/security-onpremises.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
