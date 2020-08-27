@@ -24,19 +24,16 @@ Any code can be made conditional, including table fields. Symbols are defined in
 > [!NOTE]  
 > There are currently no built-in symbols in AL.
 
-The following AL preprocessor directives are supported. For examples, see the [Examples](devenv-directives-in-al-md#Examples) section below.
+The following conditional AL preprocessor directives are supported. For examples, see the [Examples](devenv-directives-in-al-md#Examples) section below.
 
-|Preprocessor directive |Description |
+|Conditional preprocessor directive |Description |
 |-----------------------|------------|
 |#if                    | Specifies the start of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol is defined. |
 |#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluates to `true`, the compiler will evaluate code between `#else` and `#endif`. |
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
 |#endif                 | Specifies the end of a conditional clause that starts with `#if`. |
-|#define                | Defines a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. |
+|#define                | Defines a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. The scope of the symbol is the file that it was defined in.|
 |#undef                 | Undefines a symbol.  |
-|#region                | Specifies a block of code that you can expand or collapse. |
-|#endregion             | Specifies the end of a #region block of code. |
-|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions; such as `disable`, `restore`, and `enable`.|
 
 ## Defining symbols
 
@@ -45,15 +42,30 @@ Symbols can be defined globally in the `app.json` file. A symbol can also be def
 ```
 "preprocessorSymbols": [ "DEBUG" ],
 ```
+<!-- where do I define what DEBUG means? -->
 
 <!-- document this in the app.json file too, with the different options -->
+
+## Region
+
+|Region preprocessor directive| Description|
+|-----------------------------|------------|
+|#region                | Specifies a block of code that you can expand or collapse. |
+|#endregion             | Specifies the end of a #region block of code. |
+
+## Pragma
+
+|Pragma preprocessor directive| Description|
+|-----------------------------|------------|
+|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions; such as `disable`, `restore`, and `enable`.|
+
 
 ## Examples
 
 ### Region support
 
 ```
-#region Ugly code - not written by me, of course
+#region Ugly code - let's skip this
     procedure UglyCode()
     begin
         // No one should look at this
