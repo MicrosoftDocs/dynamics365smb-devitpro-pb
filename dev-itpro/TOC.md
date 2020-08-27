@@ -367,7 +367,9 @@
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [Working with AL Methods](developer/devenv-al-methods.md)
-### [Preprocessor Directives in AL](developer/devenv-directives-in-al.md)
+### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
+#### [Region Directive](developer/directives/devenv-directive-region.md)
+#### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
 ### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
