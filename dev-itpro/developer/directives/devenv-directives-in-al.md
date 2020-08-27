@@ -17,14 +17,16 @@ ms.author: solsen
 
 In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable expand and collapse in code. Preprocessor directives can be divided into the following groups:
 
-- Conditional directives (for example, if/else)
-- Regions (enables expand/collapse)
-- Pragmas (for example, to suppress code warnings)
+- [Conditional directives](devenv-directives-in-al.md#conditional-directives)
+- [Regions](devenv-directive-region.md)
+- [Pragmas](devenv-directive-pragma.md)
 
 Any code can be made conditional, including table fields. Symbols are defined in the `app.json` file or at the beginning of a source file. 
 
 > [!NOTE]  
 > There are currently no built-in symbols in AL.
+
+## Conditional directives
 
 The following conditional AL preprocessor directives are supported. For examples, see the [Examples](devenv-directives-in-al-md#Examples) section below.
 

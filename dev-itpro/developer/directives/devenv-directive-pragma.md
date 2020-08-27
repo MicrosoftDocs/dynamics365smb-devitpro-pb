@@ -21,6 +21,10 @@ ms.author: solsen
 |-----------------------------|------------|
 |#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions; such as `disable`, `restore`, and `enable`.|
 
+AL supports the following pragma directives:
+
+- [Pragma ImplicitWith](devenv-directive-pragma-implicitwith.md)
+- [Pragma Warning](devenv-directive-pragma-warning.md)
 
 ## Examples
 
