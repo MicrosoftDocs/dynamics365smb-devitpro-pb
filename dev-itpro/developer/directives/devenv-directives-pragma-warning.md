@@ -13,6 +13,7 @@ ms.author: solsen
 
 # Pragma Warning Directive
 
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
 ## Pragma
 

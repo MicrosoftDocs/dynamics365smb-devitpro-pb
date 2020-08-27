@@ -11,6 +11,8 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
 # Preprocessor Directives in AL
 
 In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable expand and collapse in code. Preprocessor directives can be divided into the following groups:

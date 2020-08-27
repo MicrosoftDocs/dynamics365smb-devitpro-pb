@@ -13,6 +13,8 @@ ms.author: solsen
 
 # Pragma ImplicitWith
 
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
 ## Pragma
 
 |Pragma preprocessor directive| Description|
