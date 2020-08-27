@@ -46,52 +46,10 @@ Symbols can be defined globally in the `app.json` file. A symbol can also be def
 
 <!-- document this in the app.json file too, with the different options -->
 
-## Region
-
-|Region preprocessor directive| Description|
-|-----------------------------|------------|
-|#region                | Specifies a block of code that you can expand or collapse. |
-|#endregion             | Specifies the end of a #region block of code. |
-
-## Pragma
-
-|Pragma preprocessor directive| Description|
-|-----------------------------|------------|
-|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions; such as `disable`, `restore`, and `enable`.|
-
-AL-specific "parameters" C#
-    warning
-    implicitwith
-
 
 ## Examples
 
-### Region support
-
-```
-#region Ugly code - let's skip this
-    procedure UglyCode()
-    begin
-        // No one should look at this
-    end;
-#endregion
-```
-
-## Warning suppression
-
-```
-table 50110 MyTable
-{
-    fields
-    {
-        #pragma warning disable AL0468
-        field(1; TableWithLongIdentifierThatExceedsOurMax; Integer) { }
-        #pragma warning restore
-    }
-}
-```
-
-## Conditional code
+### Conditional code
 
 ```
 #if DEBUG
