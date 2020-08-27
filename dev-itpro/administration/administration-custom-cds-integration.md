@@ -409,6 +409,39 @@ Users can now manually synchronize employee records in [!INCLUDE[prodshort](../i
 > [!TIP]  
 > To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
+### To reset the defined selected integration table mapping to default
+
+To enable the users to reset a selected defined integration table mapping to the default:
+
+1. In the same codeunit created for this section, add an event subscriber to **OnBeforeHandleCustomIntegrationTableMapping** and point to the default behaviour of the integration defined above, as follows:
+
+    ```
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Integration Management", 'OnBeforeHandleCustomIntegrationTableMapping', '', false, false)]
+    local procedure HandleCustomIntegrationTableMappingReset(var IsHandled: Boolean; IntegrationTableMappingName: Code[20])
+    var
+        IntegrationTableMapping: Record "Integration Table Mapping";
+    begin
+        case IntegrationTableMappingName of
+            'EMPLOYEE-WORKER':
+                begin
+                    InsertIntegrationTableMapping(
+                        IntegrationTableMapping, 'EMPLOYEE-WORKER',
+                        DATABASE::Employee, DATABASE::"CDS Worker", C
+                        DSWorker.FieldNo(cdm_workerId), CDSWorker.FieldNo(ModifiedOn),
+                        '', '', true);
+                    InsertIntegrationFieldMapping('EMPLOYEE-WORKER',
+                        Employee.FieldNo("First Name"), CDSWorker.FieldNo(cdm_FirstName),
+                        IntegrationFieldMapping.Direction::Bidirectional, '', true, false);
+                    ...
+                    IsHandled := true;
+                end;
+                ...
+        end;
+    end;
+    ```
+> [!TIP]  
+> Only if the IsHandled property is set to true, the default implementation will not be triggered. The default implementation will reset all defined mappings to the default, regardless of the user's selection.
+
 ## Customizing Synchronization  
 
 When synchronizing data, some entities may require custom code to successfully synchronize data. Other entities might require the initialization of fields, the validation of relationships, or the transformation of data.  
