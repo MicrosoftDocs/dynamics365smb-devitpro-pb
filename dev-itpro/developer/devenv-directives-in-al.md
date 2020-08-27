@@ -22,7 +22,7 @@ In AL, like in other programming languages, preprocessor directives can be used 
 Any code can be made conditional, including table fields. Symbols are defined in the `app.json` file or at the beginning of a source file. 
 
 > [!NOTE]  
-> There are currently no built-in symbols.
+> There are currently no built-in symbols in AL.
 
 The following AL preprocessor directives are supported. For examples, see the [Examples](devenv-directives-in-al-md#Examples) section below.
 
