@@ -19,13 +19,10 @@ ms.author: solsen
 
 The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability. The `#endregion` specifies the end of a `#region` block of code.
 
-
-## Examples
-
-### Region support
+## Example
 
 ```
-#region Ugly code - let's skip this
+#region Ugly code - let's not look at this
     procedure UglyCode()
     begin
         // No one should look at this
