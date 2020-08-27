@@ -39,6 +39,25 @@ The name of the field in the record.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The advantage of using the FIELDNAME method call instead of a static assignment, like NameOfField := 'MyField', is that using the FIELDNAME method dynamically adapts to any change to the field name made in the development environment.
+
+## Example
+
+The following example gets the name of the **No.** field in the **Customer** table, and stores it in a string.
+
+```
+var
+    NameOfField: Text;
+    CustomerRec: Record Customer;
+
+begin
+    NameOfField := CustomerRec.FIELDNAME("No.");
+end;
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
