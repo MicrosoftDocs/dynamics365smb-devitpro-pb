@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Pragma Warning Directive
 
-[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+[!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
 The `#pragma warning` directive can enable or disable certain warnings.
 

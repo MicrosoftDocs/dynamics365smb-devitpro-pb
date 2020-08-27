@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Region Directive in AL
 
-[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+[!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
 ## Region
 
