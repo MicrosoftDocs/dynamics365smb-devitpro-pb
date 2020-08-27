@@ -41,6 +41,8 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Report generation|Provides information about the execution of reports.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-reports-trace.md)|
 |Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-webservices-trace.md)|
 |Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[See...](telemetry-webservices-outgoing-trace.md)|
+|Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check](../developer/media/check.png)|![check](../developer/media/check.png)|![check](../developer/media/check.png)|[Analyzing Web Service Access Key Telemetry](telemetry-webservices-access-key-trace.md)|
+
 
 ## Enabling Application Insights
 
