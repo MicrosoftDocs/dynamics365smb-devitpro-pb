@@ -15,28 +15,17 @@ ms.author: solsen
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-## Pragma
+The `#pragma implicitwith` directive can enable or disable warnings on usage of implicit `with` statements in AL code.
 
-|Pragma preprocessor directive| Description|
-|-----------------------------|------------|
-|#pragma                | Gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions; such as `disable`, `restore`, and `enable`.|
-
-
-## Examples
-
-## Warning suppression
+## Syntax
 
 ```
-table 50110 MyTable
-{
-    fields
-    {
-        #pragma warning disable AL0468
-        field(1; TableWithLongIdentifierThatExceedsOurMax; Integer) { }
-        #pragma warning restore
-    }
-}
+#pragma implicitwith
+....
 ```
+
+## Parameters
+
 
 ## See Also
 
