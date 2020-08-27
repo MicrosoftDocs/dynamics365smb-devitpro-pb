@@ -39,7 +39,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |alObjectId|Specifies the ID of the AL object that made the request.|
 |alObjectName|Specifies the name of the AL object that made the request.|
 |alObjectType|Specifies the type of the AL object that made the request.|
-|companyName||companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company from which the request was made.|
+|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company from which the request was made.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
