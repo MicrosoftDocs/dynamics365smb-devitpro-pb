@@ -40,5 +40,5 @@ A `#region` block cannot overlap with a `#if` block. However, a `#region` block 
 
 ## See Also
 
-[Development in AL](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[Development in AL](../devenv-dev-overview.md)  
+[AL Development Environment](../devenv-reference-overview.md)

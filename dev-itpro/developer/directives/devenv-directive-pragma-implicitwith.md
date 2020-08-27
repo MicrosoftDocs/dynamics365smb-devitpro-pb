@@ -29,5 +29,5 @@ The `#pragma implicitwith` directive can enable or disable warnings on usage of 
 
 ## See Also
 
-[Development in AL](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[Development in AL](../devenv-dev-overview.md)  
+[AL Development Environment](../devenv-reference-overview.md)

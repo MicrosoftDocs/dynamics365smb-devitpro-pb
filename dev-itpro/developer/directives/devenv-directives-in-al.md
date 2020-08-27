@@ -67,5 +67,5 @@ Symbols can be defined globally in the `app.json` file. A symbol can also be def
 
 ## See Also
 
-[Development in AL](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[Development in AL](../devenv-dev-overview.md)  
+[AL Development Environment](../devenv-reference-overview.md)

@@ -44,5 +44,5 @@ table 50110 MyTable
 
 ## See Also
 
-[Development in AL](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[Development in AL](../devenv-dev-overview.md)  
+[AL Development Environment](../devenv-reference-overview.md)
