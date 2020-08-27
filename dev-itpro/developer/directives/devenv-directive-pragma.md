@@ -26,22 +26,6 @@ AL supports the following pragma directives:
 - [Pragma ImplicitWith](devenv-directive-pragma-implicitwith.md)
 - [Pragma Warning](devenv-directive-pragma-warning.md)
 
-## Examples
-
-## Warning suppression
-
-```
-table 50110 MyTable
-{
-    fields
-    {
-        #pragma warning disable AL0468
-        field(1; TableWithLongIdentifierThatExceedsOurMax; Integer) { }
-        #pragma warning restore
-    }
-}
-```
-
 ## See Also
 
 [Development in AL](../devenv-dev-overview.md)  

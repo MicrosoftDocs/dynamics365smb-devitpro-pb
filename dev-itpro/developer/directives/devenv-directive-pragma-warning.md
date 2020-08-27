@@ -35,7 +35,7 @@ When no warning numbers are specified, disable disables all warnings and restore
 > To find warning numbers in AL, build your project in Visual Studio Code and then look for the warning numbers in the **Output** window.
 
 
-## Warning suppression
+## Example
 
 ```
 table 50110 MyTable
