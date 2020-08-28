@@ -15,15 +15,15 @@ author: jswymer
 
 # Preparing For and Installing the Microsoft Dynamics 365 Business Central App
 
-This article describes how to prepare for and install the Business Central App when you have on-premises solution. If you have a Business Central Online, there is no preparation (see [Getting Business Central on Your Mobile Device](/dynamics365/business-central/install-mobile-app).
+This article describes how to prepare for and install the Business Central App when you have on-premises solution. If you have a Business Central Online, there is no preparation (see [Getting Business Central on Your Mobile Device](/dynamics365/business-central/install-mobile-app)).
 
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] App is available in for the following devices with the following operating systems (OS):
 
 |OS|Description|Download|
 |--|-----------|--------|
-|iOS |Mobile app for iPad and iPhone|[[App Store]](https://go.microsoft.com/fwlink/?LinkId=734847)|
+|iOS |Mobile app for iPad and iPhone|[App Store](https://go.microsoft.com/fwlink/?LinkId=734847)|
 |Android|Mobile app for Android phones| [Google Play](https://go.microsoft.com/fwlink/?LinkId=734849)|
-|Windows 10 or Xbox|a companion desktop app for Windows 10 or Xbox One that mimics that [!INCLUDE[webclient](../developer/includes/webclient.md)] but has the same look-and-feel as mobile apps. It can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online or on-premises|[Windows Store](https://go.microsoft.com/fwlink/?LinkId=734848)|
+|Windows 10 or Xbox One|A companion desktop app that mimics that [!INCLUDE[webclient](../developer/includes/webclient.md)] but has the same look-and-feel as mobile apps.|[Windows Store](https://go.microsoft.com/fwlink/?LinkId=734848)|
 
 Like the [!INCLUDE[webclient](../developer/includes/webclient.md)], the Business Central App relies on a Business Central web server instance that connects to Business Central Server and database. The Business Central App uses the same application code as the Web client, except it renders the application in a different format.
 
@@ -36,24 +36,24 @@ To install a working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] A
 - The [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must be configured for:
 
   - https (SSL)
-  - For the iOS app, the [navsettings.json]() file must include the `"GlobalEndPoints"` with the endpoints: null, ms-businesscentral, and ms-dynamicsnav. For example:
+  - For the iOS app, the navsettings.json file must include the `"GlobalEndPoints"` with the endpoints: null, ms-businesscentral, and ms-dynamicsnav. For example:
 
     ```
     "GlobalEndPoints": "null,ms-businesscentral,ms-dynamicsnav"
     ```
-    You can set other endpoint, but these endpoints must be included for the app to work.
+    You can set other endpoints, but these endpoints must be included for the app to work.
 
 - You are set up as a user in Business Central.
 
     If you installed Business Central, then by default, your Windows account has been added as a user.
 
-- Computer on which you install the app must meet the [minimum requirements](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:regionofsystemrequirementstab) for installing the Business Central App.
+- Computer on which you install the app must meet the requirements outlined on the download page for the app.
 
 ## Install the Business Central App
 
 1. Go to the download page from links provided in the preceding table, and select **Get**.
 
-    You can also install the desktop app by running setup.exe from the [prodlong](../developer/includes/prodlong.md)] installation media (DVD). Follow Setup until you come to the **[!INCLUDE[prodlong](../developer/includes/prodlong.md)]** page, select  **Get the Business Central app from the Microsoft Store**, and then **Get**.
+    You can also install the desktop app by running setup.exe from the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] installation media (DVD). Follow Setup until you come to the **[!INCLUDE[prodlong](../developer/includes/prodlong.md)]** page, select  **Get the Business Central app from the Microsoft Store**, and then **Get**.
 
 2. On the **Welcome** page, select **Connect to a local or hosted service**.
 3. In the **Service name** box, enter the URL for your [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
