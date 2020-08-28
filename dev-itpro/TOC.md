@@ -715,10 +715,10 @@
 #### [Creating Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 ### Business Central Mobile App
-### [Introducing the Mobile App](developer/devenv-introducing-business-central-mobile-app.md)
-### [Preparing For and Installing the Mobile App](deployment/install-business-central-app.md)
-### [Troubleshooting the Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
-### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md)
+#### [Introducing the Mobile App](developer/devenv-introducing-business-central-mobile-app.md)
+#### [Preparing For and Installing the Mobile App](deployment/install-business-central-app.md)
+#### [Troubleshooting the Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
+#### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md)
 <!-- end deployment -->
 <!-- administration -->
 ## Administration
