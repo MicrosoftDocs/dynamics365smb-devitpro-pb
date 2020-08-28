@@ -131,69 +131,29 @@ You can also review the log for the Rename operation on the **Operations** page 
 
 Changing the environment name can affect many scenarios and integrations. In the early stages of a customer implementation, it may be a low risk operation. But renaming an environment that's been used by customers for a while or integrated with many external services and components is risky. So carefully plan for it.
 
-Here are some areas where the environment name is used, which you need to consider before attempting to rename an environment:  
+Here are some areas where the environment name is used, which will be affected when you change the environment name, therefore you need to consider these areas and plan your communication before attempting to rename an environment:  
 
-- Web services URL 
-- External integrations that use OData or SOAP
-- Third-party apps (AppSource and per-tenant extensions)
-- Web client URL
-- Bookmarked links to web client  
-- Links created by users
-
-    These links are stored in users' browsers and on devices. They target things like: records, filters, pages, reports, profiles, companies, and so on. Over time, these links inevitably get saved in various repositories such as emails, Teams channels, Word, and Excel documents. They're often exchanged among users in the same company, across companies, across environments, across tenants. Links can also be in desktop shortcuts.
-
-    > [!NOTE]
-    > Admins don't have access to some or most of these type of links, so they can't update the URL on behalf of users.
-
-- Links in the notification mails sent from Business Central. Links sent before the name change will no longer work after the name change. 
-
-- Partners, Partner Support, Customer admins, Customer IT Support can also embed web client links in documentation, support web sites, videos, and other material. Only some of these links can be updated by an admin. 
-
-- Browser cache.
-
-    We store the URL, including environment name, in some of our cached data. This data is cached browser-side, that is, in the user's browser and across devices. Admins typically don't have access or control this data cache. When users lose their cache, they lose the link modifications to all their pages and preferences. 
-
+- Web client URL, including links to web client bookmarked by users 
+- Deep links to specific pages within [!INCLUDE[prodshort](../developer/includes/prodshort.md)] created by users or shared by them via e-mails, internal documentation or training  portals, Teams channels, Word, and Excel documents. They're often exchanged among users in the same company, across companies, across environments, across tenants. Links created by users as desktop shortcuts. Links sent or created before the name change will no longer work after the name change.
 - Integrations that embed the web client, for example, SharePoint apps composed of Business Central pages
-
 - Integrations that launch the web client  
-
 - Partner-developed mobile apps, web applications, and so on. These apps likely originate from partners outside the customer's organization where the admin can't update URLS. 
+- Mobile apps, including Windows 10 store app for desktop/tablet. Affected only users who have modified the protocol handler to force the app to connect to environment with name other than "production". If the user keeps working with "production" on the mobile app (which is default now), and the admin renames the environment from "prod2" to "myprod", the mobile user isn't affected. Otherwise, the app would throw an error, and the user would have to exit using a newly created protocol handler link.
+- Browser cache. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] stores the URL, including environment name, in some of its cached data. This data is cached browser-side, that is, in the user's browser and across devices. Admins typically don't have access or control this data cache. When users lose their cache, they lose the link modifications to all their pages and preferences. 
+- Web services URL, potentially affecting external integrations that use OData or SOAP
 
-- Mobile apps, including Windows 10 store app for desktop/tablet
-
-    Affects only users who have modified the protocol handler to force the app to connect to environment with name other than "production". If the user keeps working with "production" on the mobile app (which is default now), and the admin renames the environment from "prod2" to "myprod", the mobile user isn't affected. Otherwise, the app would throw an error, and the user would have to exit using a newly created protocol handler link.
-
-- Business Central add-ins and integrations with other Microsoft services
-
-    - Outlook Add-in  
-    
-        The Add-In manifest that is saved to Exchange Server, either per-organization or per-user, includes the environment name.
-    
-    - Excel Add-in  
-    
-         Each user's Excel worksheet stores the environment name. These Excel worksheets can be stored in various locations, like: the user's desktop PCs, mobile devices, file shares, SharePoint, archives. Some locations aren't accessible to admins.
-    
-    - Power BI 
-    
-        All reports, including the default reports deployed from the Role Center, built before the rename will be affected. Also, Power BI apps installed before the rename would be affected. There's no automatic way to repair these items. The partner or user would have to manually update the connections.
-    
-    - Power Apps/Automate  
-    
-        All apps/flows built before rename would be affected with no automatic way to repair. The partner or user would have to manually update the connections. 
-    
-    - CDS  
-    
-        CDS Virtual Entity setup stores environment name.
-    
-    - Accountant Hub 
-
+- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] add-ins and integrations with other Microsoft services
+    - Outlook Add-in. The Add-In manifest that is saved to Exchange Server, either per-organization or per-user, includes the environment name.
+    - Excel Add-in. Each user's Excel worksheet stores the environment name. 
+    - Power BI. All reports, including the default reports deployed from the Role Center, built before the rename will be affected. Also, Power BI apps installed before the rename would be affected. There's no automatic way to repair these items. The partner or user would have to manually update the connections.
+    - Power Apps/Automate. All apps and flows built before rename would be affected with no automatic way to repair. The partner or user would have to manually update the connections. 
+    - CDS. CDS Virtual Entity setup stores environment name.
 - Development scenarios  
-
     - Publish to sandbox environment from Visual Studio Code. The launch.json file of extensions might contain the sandbox name, if different from "default". The files require source code updates,
-
     - CI/CD pipelines for test and deployment could be impacted by environment renames.
-
 - Azure Application Insights logs and metrics
+
+
 
 ## See also
 
