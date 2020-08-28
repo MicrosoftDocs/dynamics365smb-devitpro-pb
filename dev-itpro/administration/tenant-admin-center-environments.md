@@ -131,9 +131,9 @@ You can also review the log for the Rename operation on the **Operations** page 
 
 Changing the environment name can affect many scenarios and integrations. In the early stages of a customer implementation, it may be a low risk operation. But renaming an environment that's been used by customers for a while or integrated with many external services and components is risky. So carefully plan for it.
 
-Here are some areas where the environment name is used, which will be affected when you change the environment name, therefore you need to consider these areas and plan your communication before attempting to rename an environment:  
+Here are some areas where the environment name is used, which will be affected when you change the environment name. You need to consider these areas and plan your communication before attempting to rename an environment:  
 
-- Web client URL, including links to web client bookmarked by users 
+- Web client URL, including links to web client bookmarked by users
 - Deep links to specific pages within [!INCLUDE[prodshort](../developer/includes/prodshort.md)] created by users or shared by them via e-mails, internal documentation or training  portals, Teams channels, Word, and Excel documents. They're often exchanged among users in the same company, across companies, across environments, across tenants. Links created by users as desktop shortcuts. Links sent or created before the name change will no longer work after the name change.
 - Integrations that embed the web client, for example, SharePoint apps composed of Business Central pages
 - Integrations that launch the web client  
@@ -143,17 +143,15 @@ Here are some areas where the environment name is used, which will be affected w
 - Web services URL, potentially affecting external integrations that use OData or SOAP
 
 - [!INCLUDE[prodshort](../developer/includes/prodshort.md)] add-ins and integrations with other Microsoft services
-    - Outlook Add-in. The Add-In manifest that is saved to Exchange Server, either per-organization or per-user, includes the environment name.
-    - Excel Add-in. Each user's Excel worksheet stores the environment name. 
-    - Power BI. All reports, including the default reports deployed from the Role Center, built before the rename will be affected. Also, Power BI apps installed before the rename would be affected. There's no automatic way to repair these items. The partner or user would have to manually update the connections.
-    - Power Apps/Automate. All apps and flows built before rename would be affected with no automatic way to repair. The partner or user would have to manually update the connections. 
-    - CDS. CDS Virtual Entity setup stores environment name.
+  - Outlook Add-in. The Add-In manifest that is saved to Exchange Server, either per-organization or per-user, includes the environment name.
+  - Excel Add-in. Each user's Excel worksheet stores the environment name. 
+  - Power BI. All reports, including the default reports deployed from the Role Center, built before the rename will be affected. Also, Power BI apps installed before the rename would be affected. There's no automatic way to repair these items. The partner or user would have to manually update the connections.
+  - Power Apps/Automate. All apps and flows built before rename would be affected with no automatic way to repair. The partner or user would have to manually update the connections. 
+  - CDS. CDS Virtual Entity setup stores environment name.
 - Development scenarios  
-    - Publish to sandbox environment from Visual Studio Code. The launch.json file of extensions might contain the sandbox name, if different from "default". The files require source code updates,
-    - CI/CD pipelines for test and deployment could be impacted by environment renames.
+  - Publish to sandbox environment from Visual Studio Code. The launch.json file of extensions might contain the sandbox name, if different from "default". The files require source code updates,
+  - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
-
-
 
 ## See also
 
