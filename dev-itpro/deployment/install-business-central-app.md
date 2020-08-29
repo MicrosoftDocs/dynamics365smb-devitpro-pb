@@ -17,7 +17,7 @@ author: jswymer
 
 This article describes how to prepare for and install the Business Central App when you have on-premises solution. If you have a Business Central Online, there is no preparation (see [Getting Business Central on Your Mobile Device](/dynamics365/business-central/install-mobile-app)).
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] App is available in for the following devices with the following operating systems (OS):
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] App is available for download for devices that use following operating systems (OS):
 
 |OS|Description|Download|
 |--|-----------|--------|
@@ -47,7 +47,7 @@ To install a working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] A
 
     If you installed Business Central, then by default, your Windows account has been added as a user.
 
-- Computer on which you install the app must meet the requirements outlined on the download page for the app.
+- The computer on which you install the app must meet the requirements outlined on the download page for the app.
 
 ## Install the Business Central App
 
