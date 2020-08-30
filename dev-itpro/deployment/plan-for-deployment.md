@@ -40,7 +40,7 @@ For more information, see [Authentication and Credential Types](../administratio
  
 ## [!INCLUDE[server](../developer/includes/server.md)] Service Account
 
-The central component of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment is the  [!INCLUDE[server](../developer/includes/server.md)], which handles all communication between the client and the databases. The [!INCLUDE[server](../developer/includes/server.md)] requires a log on account, referred to as the service account. By default, the Network Service Account is used, which is acceptable in a test enviroment, but we recommend that you use a domain account your production environment.   
+The central component of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment is the  [!INCLUDE[server](../developer/includes/server.md)], which handles all communication between the client and the databases. The [!INCLUDE[server](../developer/includes/server.md)] requires a log on account, referred to as the service account. By default, the Network Service Account is used, which is acceptable in a test environment, but we recommend that you use a domain account your production environment.   
 
 For more information, see [Provisioning the [!INCLUDE[server](../developer/includes/server.md)] Service Account](provision-server-account.md).
  
