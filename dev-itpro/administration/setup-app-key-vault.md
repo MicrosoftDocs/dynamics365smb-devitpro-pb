@@ -19,15 +19,6 @@ AppSource apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can
 ## Create the Azure Key Vault with secrets
 
 In this task, you create a key vault in Azure, and add the secrets that you want to make available to your extensions. An extension can use up to two key vaults, so you can create more than one.
-<!--
-
-1. Get an Azure subscription.
-
-    Sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com).
-
-2. Create one or more key vaults and add secrets that extensions will use.
-
--->
 
 There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
 
