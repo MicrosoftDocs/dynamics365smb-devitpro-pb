@@ -91,13 +91,17 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 2. Install version 17 components.
 
-    You can keep version 16 installed. But if you do, when you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 16.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll keep version 16 installed for now. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 16.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     <!--
     > [!IMPORTANT]
     > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins folder.-->
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+
+## Copy Dynamics Online Connect add-in to version 17
+
+The Dynamics Online Connect add-in has been deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, when doing a technical upgrade, it is still required for the old System Application. To meet this requirement, copy the **Add-ins\Connect** folder of the version 16 server installation to the **Add-ins** folder of the version 17 server installation.
 
 ## Task 3: Convert the version 16.0 application database
 
