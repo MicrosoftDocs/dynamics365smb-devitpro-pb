@@ -36,7 +36,18 @@ New snapshot debugging configuration data:
 |sessionId| A session ID for the user specified above in `userId`.|
 |snapshotVerbosity | Determines how much execution context to be recorded. If snappoint only is specified than only methods that hit a snappoint will be recorded.|
 
+When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then choose **AL:Initialize Snapshot Debugging** or by pressing **F4**. 
 
+The server will now wait for a connection to happen with the following rules to record AL execution: 
+
+- If a session ID is specified for a userId for a given tenant then it will be that session that will be snapshot debugged.
+- If only a userId is specified for a given tenant then the next session that is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
+- If no userId is specified then the next session on a given tenant that validates the `breakOnNext`parameter will be snapshot debugged. 
+
+Once a snapshot debugging session is initialized the snapshot debugging session counter on the status-bar will be updated and look like this:
+
+<!-- image-->
+ 
 ## See Also
 
 [Attach and Debug Next](devenv-attach-debug-next.md)  
