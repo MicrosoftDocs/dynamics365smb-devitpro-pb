@@ -57,16 +57,17 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
-    ``` 
+    ```powershell 
     Get-NAVAppInfo -ServerInstance <BC16 server instance> | % { Uninstall-NAVApp -ServerInstance <BC16 server instance> -Name $_.Name -Version $_.Version }
     ```
+
 4. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet.  You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
-    ``` 
+    ```powershell 
     Get-NAVAppInfo -ServerInstance <BC16 server instance> -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance <BC16 server instance> -Name $_.Name -Version $_.Version }
-    ```    
+    ```
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)  
 
@@ -74,13 +75,13 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
-    ```
+    ```powershell
     Dismount-NAVTenant -ServerInstance <BC16 server instance> -Tenant <tenant ID>
     ```
 
 6. Stop the server instance.
 
-    ```
+    ```powershell
     Stop-NAVServerInstance -ServerInstance <BC16 server instance>
     ```
 
@@ -109,12 +110,13 @@ This task runs a technical upgrade on the application database. A technical upgr
 
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion. In a multitenant deployment, run this cmdlet against the application database.
 
-    ```
+    ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server>\<database instance> -DatabaseName "<BC16 database name>"
     ```
+
     When completed, a message like the following displays in the console:
 
-    ```
+    ```powershell
     DatabaseServer      : .\BCDEMO
     DatabaseName        : Demo Database BC (16-0)
     DatabaseCredentials :
@@ -128,29 +130,40 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
 
 1. Set the server instance to connect to the application database.
 
+    ```powershell
+    Set-NAVServerConfiguration -ServerInstance <BC17 server instance> -KeyName DatabaseName -KeyValue "<BC17 database name>"
     ```
-    Set-NAVServerConfiguration -ServerInstance <BC16 server instance> -KeyName DatabaseName -KeyValue "<BC16 database name>"
-    ```
-    
+
     In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 2. Disable task scheduler on the server instance for purposes of upgrade.
 
-    ```
+    ```powershell
     Set-NavServerConfiguration -ServerInstance <BC17 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
+
     Be sure to re-enable task scheduler after upgrade if needed.
 3. Restart the server instance.
 
-    ```
+    ```powershell
     Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
+
+## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
+
+If you have a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
+
+```powershell
+Import-NAVServerLicense -ServerInstance <BC17 server instance> -LicenseFile "<path to the license>"
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
 ## Task 6: Publish new system symbols
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.
 
-```
+```powershell
 Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
 ```
 
@@ -163,12 +176,13 @@ Compile all published extensions against the new platform.
     ```powershell  
     Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
     ```
-    
+
     To compile all published extensions at once, you can use this command:
-    
+
     ```powershell  
     Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp  
     ```
+
 2. Restart the server instance.
 
     ```powershell
@@ -202,6 +216,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```powershell 
     Install-NAVApp -ServerInstance <server instance> -Name "System Application" -Version <extension version>
     ```
+
     Replace `<extension version>` with the exact version of the published System Application.
 
 2. Install the Base Application.
@@ -209,23 +224,24 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```powershell
     Install-NAVApp -ServerInstance <server instance> -Name "Base Application" -Version <extension version>
     ```
+
     Replace `<extension version>` with the exact version of the published System Application.
 
-2. (Upgrading from 15.3 and later) Install the Application extension.
-
-    This extension was introduced in 15.3. For more information about it see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+3. Install the Application extension.
 
     ```powershell
     Install-NAVApp -ServerInstance <server instance> -Name "Application" -Version <extension version>
     ```
 
-    Replace `<extension version>` with the exact version of the published System Application.
+    Replace `<extension version>` with the exact version of the published Application extension.
 
-3. Install other extensions, including Microsoft and third-party extensions.
-    
+    For more information about the Application extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+4. Install other extensions, including Microsoft and third-party extensions.
+
     ```powershell
     Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ```
+
 At this point, your solution has been updated to the latest platform.
 
 
