@@ -58,14 +58,14 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
     ``` 
-    Get-NAVAppInfo -ServerInstance <BC15 server instance> | % { Uninstall-NAVApp -ServerInstance <BC15 server instance> -Name $_.Name -Version $_.Version }
+    Get-NAVAppInfo -ServerInstance <BC16 server instance> | % { Uninstall-NAVApp -ServerInstance <BC16 server instance> -Name $_.Name -Version $_.Version }
     ```
 4. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet.  You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
     ``` 
-    Get-NAVAppInfo -ServerInstance <BC15 server instance> -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance <BC15 server instance> -Name $_.Name -Version $_.Version }
+    Get-NAVAppInfo -ServerInstance <BC16 server instance> -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance <BC16 server instance> -Name $_.Name -Version $_.Version }
     ```    
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)  
@@ -75,13 +75,13 @@ In this task, you prepare the application and tenant databases for the upgrade.
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
     ```
-    Dismount-NAVTenant -ServerInstance <BC15 server instance> -Tenant <tenant ID>
+    Dismount-NAVTenant -ServerInstance <BC16 server instance> -Tenant <tenant ID>
     ```
 
 6. Stop the server instance.
 
     ```
-    Stop-NAVServerInstance -ServerInstance <BC15 server instance>
+    Stop-NAVServerInstance -ServerInstance <BC16 server instance>
     ```
 
 ## Task 2: Install version 17
