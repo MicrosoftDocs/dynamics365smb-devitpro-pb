@@ -34,6 +34,12 @@ To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/modu
     ```
     Replace `<server instance>`with your [!INCLUDE[server](../developer/includes/server.md)] instance name. Replace `<path to the license>` with the folder path and file name of your license.
 
+3. Restart the server instance.
+
+    ```powershell
+    Restart-NAVServerInstance -ServerInstance <server instance>
+    ```
+
 ## Upload the License File to SQL Server using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
 
 > **APPLIES TO:** [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 and earlier.
