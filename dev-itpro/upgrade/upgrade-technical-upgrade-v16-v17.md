@@ -42,7 +42,7 @@ In version 16, a number of tables have been deprecated and replaced by new table
 <!--
 This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
 -->
-## <a name="Preparedb"></a> Task 3: Prepare databases
+## <a name="Preparedb"></a> Task 1: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
 
