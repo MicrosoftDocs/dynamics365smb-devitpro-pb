@@ -36,7 +36,7 @@ To install a working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] A
 - The [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must be configured for:
 
   - https (SSL)
-  - For the iOS app, the navsettings.json file must include the `"GlobalEndPoints"` with the endpoints: null, ms-businesscentral, and ms-dynamicsnav. For example:
+  - For the iOS app, the navsettings.json file must include the `"GlobalEndPoints"` parameter with the following endpoints as a minimum: null, ms-businesscentral, and ms-dynamicsnav. For example:
 
     ```
     "GlobalEndPoints": "null,ms-businesscentral,ms-dynamicsnav"
