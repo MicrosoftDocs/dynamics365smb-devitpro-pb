@@ -53,6 +53,7 @@ The following table describes the settings in the `app.json` file:
 |propagateDependencies|No|Specifies whether the dependencies of this project should be propagated as direct dependencies of projects that depend on this one. Default is `false`. If set to `true` then any dependencies of the current package will be visible to consumers of the package. For example, if A depends on B that depends on C, by default, A will not be able to use types defined in C. If B has `"propagateDependencies" : "true"`, then A will be able to use types defined in C without taking a direct dependency.<br>**Note:** `propagateDependencies` applies to all dependencies, there is no option to exclude specific dependencies.|
 |applicationInsightsKey|The instrumentation key of the Azure Application Insights resource for monitoring operations, for example, like app secrets retrieval by extensions. <br><br>For more information, see [Monitoring and Analyzing Telemetry](../administrartion/telemetry-overview.md).|
 |keyVaultUrls|No|List of URLs of key vaults that the extension from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](../devenv-app-key-vault-overview.md).
+|suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. For example `"suppressWarnings": [ "AL0458" ]`.|
 
 ## <a name="Launchjson"></a>Launch.json file
 
