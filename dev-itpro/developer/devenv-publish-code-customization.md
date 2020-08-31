@@ -77,9 +77,9 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     ```
     "al.assemblyProbingPaths": [
-        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\160",
-        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\160",
-        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170",
+        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\170",
+        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"
     ],        
     ```
@@ -87,12 +87,12 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 10. Next, you must uninstall all extensions from the command line. If you at this point try to just publish the extension from Visual Studio Code you will get the following error:
 
-    `The request for path /BC160/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
+    `The request for path /BC170/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
 
     You get the error because the extensions are installed in the `global` scope. If you want to publish an extension from Visual Studio Code, within the `developer` scope, you will have to first uninstall and then unpublish the extensions from the command line.
 
     Ideally, you should uninstall the application that you want to update and all its dependencies. To uninstall the Base Application use the following cmdlet:<br>
-    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC160 -Force`
+    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC170 -Force`
 
     Use the `-Force` parameter to uninstall all dependencies.
 
@@ -124,6 +124,8 @@ Make sure to have the following prerequisites installed to be able to follow the
         UnpublishAppAndDependencies $ServerInstance  $ApplicationName
     
     }  
+    
+    UninstallAndUnpublish -ServerInstance "BC170" -ApplicationName "Base Application"
     ```
 12. Save the script as **unpublish.ps1**. 
 13. Run the script from the PowerShell commandline to handle the uninstall and unpublishing of the Base Application and its dependencies:
@@ -133,7 +135,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 15. Import a license with rights to publish the extension. For example:  
     ```
-    Import-NAVServerLicense -ServerInstance BC160 -LicenseFile "C:\Users\mylicense.flf"
+    Import-NAVServerLicense -ServerInstance BC170 -LicenseFile "C:\Users\mylicense.flf"
     ```
 
 16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
