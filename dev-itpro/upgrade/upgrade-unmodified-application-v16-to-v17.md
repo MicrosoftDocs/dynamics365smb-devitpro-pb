@@ -23,9 +23,9 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 ## Prerequisites
 
-1. Your version 15 is compatible with version 16.
+1. Your version 16 is compatible with version 17.
 
-    There are several updates for version 15. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.5, you can't upgrade to 16.0. You must wait until 16.1 is available.  
+    There are several updates for version 16. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 16.6, you can't upgrade to 17.0. You must wait until 17.1 is available.  
 
 2. Disable data encryption.
 
@@ -35,22 +35,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-## Task 1: Install version 16
-
-1. Download the latest available update for Business Central 2020 (version 16) that is compatible with your version 15.
-
-    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
-
-
-2. Before you install version 16, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
-
-3. Install Business Central version 16 components.
-
-    You'll have to keep version 15 installed to complete some steps in the upgrade process. When you install version 16, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
-
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
-
-## Task 2: Prepare version 15 databases
+## Task 1: Prepare version 16 databases
 
 1. Make backup of the databases.
 
@@ -110,11 +95,25 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 3: Convert version 15 database
+## Task 2: Install version 17
 
-This task runs a technical upgrade on the application database to convert it from the version 15 platform to the version 16 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+1. Download the latest available update for Business Central 2020 (version 17) that is compatible with your version 16.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+
+2. Before you install version 17, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
+
+3. Install Business Central version 17 components.
+
+    You can keep version 15 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the version 16.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+
+## Task 3: Convert version 16 database
+
+This task runs a technical upgrade on the application database to convert it from the version 16 platform to the version 17 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17 as an administrator.
 2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
@@ -126,15 +125,15 @@ This task runs a technical upgrade on the application database to convert it fro
 
     ```
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (15-0)
+    DatabaseName        : Demo Database BC (16-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
     ```
 
-## Task 4: Configure version 16 server
+## Task 4: Configure version 17 server
 
-When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 16 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 1**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 16 to version 17 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -155,9 +154,9 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
     
-## Task 5: Import version 16 license
+## Task 5: Import version 17 license
 
-1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 16 license to the database. 
+1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 17 license to the database. 
 
     ```powershell
     Import-NAVServerLicense -ServerInstance <server instance name> -LicenseFile <path and file name>
@@ -177,9 +176,9 @@ Publishing an extension adds the extension to the application database that is m
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 that you started in the previous task.
 
-1. Publish version 16 system symbols extension.
+1. Publish version 17 system symbols extension.
 
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.  
 
     ```powershell
     Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly
@@ -201,9 +200,9 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Base Application.app>"
     ```
 
-4. Publish the Microsoft_Application extension (when coming from 15.2 and earlier only).
+4. Publish the Microsoft_Application extension.
 
-    The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Application.app>"
@@ -211,7 +210,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 5. Publish the new versions of Microsoft extensions.
 
-    In this step, you publish new versions of Microsoft extensions that were used on your version 15 deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
+    In this step, you publish new versions of Microsoft extensions that were used on your version 16 deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft extension>"
@@ -220,17 +219,18 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     For example:
 
     ```powershell
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
+    Publish-NAVApp -ServerInstance BC170 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 
 6. Publish new versions of 3rd-party extensions.
 
-    If you have new versions of these extensions, built on the Business Central version 16, then publish the new versions.  
+    If you have new versions of these extensions, built on the Business Central version 17, then publish the new versions.  
 
     ```powershell
-    Publish-NAVApp -ServerInstance BC160 -Path "<path to extension>"
+    Publish-NAVApp -ServerInstance BC170 -Path "<path to extension>"
     ```
-7. Recompile extensions not build on version 16.
+
+7. Recompile extensions not build on version 17.
 
     This step pertains to any published extension versions that aren't built on version 16, which you want to reinstall on tenants. These extensions must be recompiled to work with version 16. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
@@ -250,7 +250,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 You'll synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 15 server instance.
+1. (Multitenant only) Mount the tenant to the version 17 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
@@ -314,7 +314,7 @@ In this task, you run a data upgrade for extensions.
 
 Run the data upgrade on extensions in order of dependency.
 
-1. Run the data upgrade for the system application, followed by the base application.
+1. Run the data upgrade for the System Application, followed by the Base Application. 
 
     To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -327,16 +327,9 @@ Run the data upgrade on extensions in order of dependency.
 
     Complete this task to upgrade any Microsoft and third-party extension used in the old deployment to new versions on the installation media. The new versions are in the **Application** folder of the DVD. There's a folder for each extension. The extension package (.app file) is in the **Source** folder. 
 
-    1. Install **Application** extension (when comping from 15.2 and earlier only). 
+    For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade). First, run the data upgrade for the Application extension, then run it for other Microsoft extensions and third-party extensions. 
 
-        You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
-
-        ```powershell
-        Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
-        ```
-    2. For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade).
-
-        This step will also automatically install the new extension version on the tenant.
+    This step will also automatically install the new extension version on the tenant.
 
 #### Multitenant
 
