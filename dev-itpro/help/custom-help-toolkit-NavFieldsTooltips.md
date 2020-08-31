@@ -43,7 +43,14 @@ NavFieldsTooltips.exe --h D:\BC\de --v
 
 In the example, the `D:\BC\de` folder contains HTML files.  
 
+## After the conversion
+
+Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter the data. If you work with dedicated technical writers, then they are probably more efficient if they can work with tooltip text in Excel or similar. So you might prefer to wait with importing the content into your solution until they have completed their editing and enhancement work.  
+
+To import the tooltips into your solution, you must map the original field IDs to page control IDs in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. Microsoft cannot provide you with a tool to do this - you know your solution better than Microsoft does. The mapping is not always straightforward because the same table is often used by two or more pages. As a result, the page ID can be many numbers away from the table ID. You might have to do quite a bit of cleaning up and shuffling around in Excel after the conversion, just like we at Microsoft did originally.
+
 ## See also
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
+[Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format](../upgrade/migrate-help.md)  

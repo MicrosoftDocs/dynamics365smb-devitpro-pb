@@ -29,19 +29,14 @@ The toolkit is available at *TBD*. The repo contains the following tools and the
 
     For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)
 
-<!--
-- ConvertHtmlToJson tool
+## Custom Help
 
-    For more information, see [Custom Help Toolkit: The ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md)
+Depending on your solution, you are expected to deploy Help to a website that can be accessed by users of your solution. For more information, see [User Assistance Model](../user-assistance.md) and [Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/configure-help.md). The tools in this toolkit can help you with some of the steps, either as a one-off conversion, or as a step that you repeat with new versions, or that you incorporate in your DevOps, for example.  
 
-- "Help Pane extension" Visual Studio project
 
-    For more information, see [Connect your Help website with the Help pane](connect-help-pane.md)
-
-> [!NOTE]
-> The first version of this toolkit is available as a [release in the GitHub repo](https://github.com/microsoft/dynamics365f-o-custom-help/releases).  -->
 
 ## See also
 
 [Configure Context-Sensitive Help](context-sensitive-help.md)  
 [User Assistance Model](../user-assistance.md)  
+[Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format](../upgrade/migrate-help.md)  
