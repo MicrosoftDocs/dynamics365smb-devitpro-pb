@@ -46,7 +46,7 @@ The server will now wait for a connection to happen with the following rules to 
 
 Once a snapshot debugging session is initialized the snapshot debugging session counter on the status-bar will be updated and look like this:
 
-<!-- image-->
+![Snapshot Debugger](media/snapshotdebugger.png)
 
 ## Status of a snapshot debugging session
 
