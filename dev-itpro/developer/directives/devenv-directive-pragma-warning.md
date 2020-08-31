@@ -15,7 +15,7 @@ ms.author: solsen
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-The `#pragma warning` directive can enable or disable certain warnings.
+The `#pragma warning` instruction can enable or disable certain warnings.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ The `#pragma warning` directive can enable or disable certain warnings.
 *warning-list* 
 A comma-separated list of warning numbers.
 
-When no warning numbers are specified, disable disables all warnings and restore enables all warnings.
+When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
 
 > [!NOTE]  
 > To find warning numbers in AL, build your project in Visual Studio Code and then look for the warning numbers in the **Output** window.

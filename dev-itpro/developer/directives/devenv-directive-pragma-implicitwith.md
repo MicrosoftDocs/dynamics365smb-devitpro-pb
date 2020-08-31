@@ -15,7 +15,7 @@ ms.author: solsen
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-The `#pragma implicitwith` directive can enable or disable warnings on usage of implicit `with` statements in AL code.
+The `#pragma implicitwith` instruction can enable or disable warnings on usage of implicit `with` statements in AL code.
 
 ## Syntax
 

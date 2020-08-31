@@ -41,14 +41,12 @@ The following conditional preprocessor directives are supported in AL.
 
 ## Defining symbols
 
-Symbols can be defined globally in the `app.json` file. A symbol can also be defined using the `#define` directive in code, but if symbols are defined in the `app.json` file, they can be used globally. The following example defines `DEBUG` as a global symbol. This can then be used from code as illustrated in the [Conditional code](devenv-directives-in-al.md#conditional-code) example below.
+Symbols can be defined globally in the `app.json` file. A symbol can also be defined using the `#define` directive in code, but if symbols are defined in the `app.json` file, they can be used globally. The following example defines `DEBUG` as a global symbol. This can then be used from code as illustrated in the [Conditional code](devenv-directives-in-al.md#conditional-code) example below. A symbol has a boolean value, that means it evaluates to `true` or `false`.
 
 ```
 "preprocessorSymbols": [ "DEBUG" ]
 ```
-<!-- where do I define what DEBUG means? -->
 
-<!-- document this in the app.json file too, with the different options -->
 For more information, see [JSON Files](../devenv-json-files.md).
 
 ## Examples
