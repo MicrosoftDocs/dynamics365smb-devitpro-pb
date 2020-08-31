@@ -99,11 +99,11 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Copy Dynamics Online Connect add-in to version 17
+## Task 3: Copy Dynamics Online Connect add-in
 
 The Dynamics Online Connect add-in has been deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, when doing a technical upgrade, it is still required for the old System Application. To meet this requirement, copy the **Add-ins\Connect** folder of the version 16 server installation to the **Add-ins** folder of the version 17 server installation.
 
-## Task 3: Convert the version 16.0 application database
+## Task 4: Convert the version 16.0 application database
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 16.0 platform to the version 17.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
