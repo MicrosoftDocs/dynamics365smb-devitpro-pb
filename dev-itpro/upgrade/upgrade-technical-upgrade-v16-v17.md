@@ -159,7 +159,7 @@ Import-NAVServerLicense -ServerInstance <BC17 server instance> -LicenseFile "<pa
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 6: Publish new system symbols
+## Task 7: Publish new system symbols
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.
 
@@ -183,6 +183,17 @@ Compile all published extensions against the new platform.
     Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp  
     ```
 
+
+    <!--
+    Repair-NAVApp : Extension compilation failed DotNet%20Aliases/src/dotnet.al(372,14): error AL0451: An assembly named 'Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect, PublicKeyToken=null' could not be found in the assembly probing paths 'C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-Ins, 
+   C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\Microsoft Dynamics NAV\Add-Ins\17.0.16001.0, C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\, C:\Windows\Microsoft.NET\assembly\'
+   At line:1 char:51
+   + Get-NAVAppInfo -ServerInstance $NewInstanceName | Repair-NAVApp
+   +                                                   ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Repair-NAVApp], InvalidOperationException
+    + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC170/nav-systemapplication,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.RepairNavApp
+ 
+    -->
 2. Restart the server instance.
 
     ```powershell
@@ -243,7 +254,18 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```
 
 At this point, your solution has been updated to the latest platform.
-
+<!--
+PS C:\Windows\system32> Install-NAVApp -ServerInstance $NewInstanceName -Name "Intelligent Cloud Base"
+WARNING: This license is not compatible with this version of Business Central.
+WARNING: This license is not compatible with this version of Business Central.
+WARNING: UnhandledErrorMessage
+Install-NAVApp : The socket connection was aborted. This could be caused by an error processing your message or a receive timeout being exceeded by the remote host, or an underlying network resource issue. Local socket timeout was '10675199.02:48:05.4775807'.
+At line:1 char:1
++ Install-NAVApp -ServerInstance $NewInstanceName -Name "Intelligent Cl ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Install-NAVApp], CommunicationException
+    + FullyQualifiedErrorId : System.ServiceModel.CommunicationException,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
+-->
 
 ## Task 10: <a name="JSaddins"></a>Upgrade control add-ins
 
