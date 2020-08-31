@@ -11,7 +11,7 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 
-# Upgrading Version 16 Base Application to Version 17
+# Upgrading Version 16 Microsoft System and Base Application to Version 17
 
 Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 solution that uses the Microsoft System and Base applications.
 
