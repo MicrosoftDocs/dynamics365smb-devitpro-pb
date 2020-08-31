@@ -49,9 +49,7 @@ Symbols can be defined globally in the `app.json` file. A symbol can also be def
 
 For more information, see [JSON Files](../devenv-json-files.md).
 
-## Examples
-
-### Conditional code
+## Example
 
 ```
 #if DEBUG
