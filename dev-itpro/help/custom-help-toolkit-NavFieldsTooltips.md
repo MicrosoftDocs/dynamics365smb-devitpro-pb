@@ -45,5 +45,5 @@ In the example, the `D:\BC\de` folder contains HTML files.
 
 ## See also
 
-[Custom Help Overview](custom-help-overview.md)  
+[Custom Help Toolkit](custom-help-toolkit.md)  
 [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
