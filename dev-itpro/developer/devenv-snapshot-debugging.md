@@ -51,7 +51,7 @@ Once a snapshot debugging session is initialized the snapshot debugging session 
 ## Status of a snapshot debugging session
 
 Clicking on the status bar icon or pressing **Shift+F4**  will bring up a list of all available snapshots.  
-The status list will show the state of a snapshot debugged session. 
+The status list will show the state of a snapshot-debugged session. 
 
 A snapshot debugging session can be in one of the three states:
 
@@ -73,7 +73,7 @@ Snapshot debugging sessions that have produced a snapshot file can be debugged. 
 There are two user actions that will start snapshot debugging:
 
 - Creating a new launch debug configuration and specifying the snapshot file name in the `snapshotFileName` configuration setting. This is the only setting that is needed besides the type, request, and name. 
-- Clicking on the status icon or by pressing **Shift+F4** and selecting a finished snapshot debugged session. 
+- Clicking on the status icon or by pressing **Shift+F4** and selecting a finished snapshot-debugged session. 
 
 Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they cannot be removed by user actions. Other snappoints are just regular breakpoints that can be removed/re-added by user actions. 
 If no snappoints are specified the first recorded methods, the first line is the entry breakpoint. 
