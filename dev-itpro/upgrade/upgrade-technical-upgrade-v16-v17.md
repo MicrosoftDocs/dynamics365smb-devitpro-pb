@@ -22,7 +22,6 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Prerequisites
 
-
 1. Your version 16 platform is compatible with version 17.
 
     There are several updates for version 16. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 16.6, you can't upgrade to 17.0. You must wait until 17.1 is available.  
@@ -34,20 +33,6 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
     For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
-
-## Task 1: Install version 17
-
-1. Before you install version 17, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16.0 tools.
-
-2. Install version 17 components.
-
-    You'll keep version 14 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 16.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
-
-    <!--
-    > [!IMPORTANT]
-    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins folder.-->
-
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 <!--
 ## Task 2: Rewrite code for obsoleted system tables
@@ -99,7 +84,21 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Stop-NAVServerInstance -ServerInstance <BC15 server instance>
     ```
 
-## Task 4: Convert the version 16.0 application database
+## Task 2: Install version 17
+
+1. Before you install version 17, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16.0 tools.
+
+2. Install version 17 components.
+
+    You can keep version 16 installed. But if you do, when you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 16.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+
+    <!--
+    > [!IMPORTANT]
+    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins folder.-->
+
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+
+## Task 3: Convert the version 16.0 application database
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 16.0 platform to the version 17.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
