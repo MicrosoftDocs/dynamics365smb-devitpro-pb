@@ -820,6 +820,9 @@
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v16.md)
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v16.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v16.md)
+### Business Central 2020 Release Wave 2
+#### Technical Upgrade
+##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
