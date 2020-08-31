@@ -24,7 +24,7 @@ The toolkit is available at *TBD*. The repo contains the following tools and the
     For more information, see [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
 - Dynamics NAV field Help conversion scripts
 
-    If you are migrating a solution from Dynamics NAV to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can use the toolkit's script to convert the field Help to tooltip-type text that you can then apply to your solution's page objects.
+    For more information, see [Custom Help Toolkit: The NavFieldsTooltips tool](custom-help-toolkit-NavFieldsTooltips.md)
 - HtmlLocaleChanger tool
 
     For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)
