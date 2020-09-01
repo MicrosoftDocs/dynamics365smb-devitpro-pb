@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 --- 
 
-# System fields
+# System Fields
 
 System fields are fields that are automatically included in every table object by the platform. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes the following system fields:
 
