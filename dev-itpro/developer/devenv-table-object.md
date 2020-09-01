@@ -98,7 +98,13 @@ table 50104 Address
 
 ## System fields
 
-System fields are fields that are automatically included in every table object by the platform.
+System fields are fields that are automatically included in every table object by the platform. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md) includes the following system fields:
+
+- SystemId
+- Data audit fields
+- Timestamp
+
+These system fields are described in the sections that follow.  
 
 System fields are assigned numbers in the range 2000000000-2147483647. This range is reserved for system fields. You'll get a design-time error if you give a field a number in this range.
 
@@ -181,18 +187,18 @@ Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the followi
 
 The data audit fields have the following static characteristics:
 
-|Field name (in AL) |Column name (in database)|Data type|Field number|
-|----------------|----------------------|--------|------------|
-|SystemCreatedAt|$systemCreatedAt |DateTime|2000000001|
-|SystemCreatedBy  |$systemCreatedBy |GUID |2000000002|
-|SystemModifiedAt|$systemModifiedAt |DateTime|2000000003|
-|SystemModifiedBy|$systemModifiedBy |GUID|2000000004|
+|Field name (in AL) |Column name (in database)|Data type|Field number|Description|
+|-------------------|-------------------------|---------|------------|-----------|
+|SystemCreatedAt|$systemCreatedAt |DateTime|2000000001|Specifies the data and time that the record was created.|
+|SystemCreatedBy  |$systemCreatedBy |GUID |2000000002|Specifies security ID (SID) of the user that created the record.|
+|SystemModifiedAt|$systemModifiedAt |DateTime|2000000003|Specifies the data and time that the record was last modified.|
+|SystemModifiedBy|$systemModifiedBy |GUID|2000000004|Specifies the SID of the user that last modified the record|
 
 #### Runtime characteristics
 
 At runtime, the data audit fields have the following characteristics and behavior: 
 
--  The platform will automatically generate and assign values as follows:   
+-  The platform will automatically generate and assign values as follows:
 
    - After all  [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
    - After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run
