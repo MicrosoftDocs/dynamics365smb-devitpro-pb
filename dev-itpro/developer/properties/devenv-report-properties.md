@@ -38,9 +38,12 @@ This topic lists properties of the report object.
 |[EnableExternalAssemblies Property](devenv-enableexternalassemblies-property.md)|<ul><li>Report Object</li></ul>|
 |[EnableExternalImages Property](devenv-enableexternalimages-property.md)|<ul><li>Report Object</li></ul>|
 |[EnableHyperlinks Property](devenv-enablehyperlinks-property.md)|<ul><li>Report Object</li></ul>|
+|[ExecutionTimeout Property](devenv-executiontimeout-property.md)|<ul><li>Report Object</li></ul>|
 |[ID Property](devenv-id-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
 |[IncludeCaption Property](devenv-includecaption-property.md)|<ul><li>Column controls</li></ul>| 
 |[Indentation Property \(Reports\)](devenv-indentation-reports-property.md)|<ul><li>DataItem controls</li><li>Column controls</li><ul>|
+|[MaximumDataSetSize Property](devenv-maximumdatasetsize-property.md)|<ul><li>Report Object</li></ul>|
+|[MaximumDocumentCount Property](devenv-maximumdocumentcount-property.md )|<ul><li>Report Object</li></ul>|
 |[MaxIteration Property](devenv-maxiteration-property.md)|<ul><li>DataItem controls</li></ul>|
 |[Name Property](devenv-name-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
 |[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li></ul>|
@@ -64,6 +67,7 @@ This topic lists properties of the report object.
 |[ShowPrintStatus Property](devenv-showprintstatus-property.md)|<ul><li>Report Object</li></ul>|
 |[SourceExpr Property](devenv-sourceexpr-property.md)|<ul><li>Column controls</li></ul>|
 |[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>Report Object</li></ul>|
+|[UserCancelRequestHandling Property](devenv-usercancelrequesthandling-property.md)|<ul><li>Report Object</li></ul>| 
 |[UsageCategory Property](devenv-usagecategory-property.md)|<ul><li>Report Object</li></ul>|
 |[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>Report Object</li></ul>|
 |[UseTemporary Property \(Reports\)](devenv-usetemporary-report-property.md)|<ul><li>DataItem controls</li></ul>|
