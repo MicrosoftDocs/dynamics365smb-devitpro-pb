@@ -13,15 +13,14 @@ author: solsen
 # Entity Modeling
 
 > [!IMPORTANT]
-> This functionality requires version 10.0.12 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-> The public entity name that is exposed in Common Data Service metadata for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity uses the physical name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity. This could be different from the public name of the entity as exposed by the OData metadata in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps.
 
 Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Common Data Service must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ## Generating virtual entities
 
-By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
+By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
 
