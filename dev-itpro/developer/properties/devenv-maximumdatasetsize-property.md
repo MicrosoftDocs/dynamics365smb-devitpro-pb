@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 
 # MaximumDataSetSize Property
@@ -19,10 +19,13 @@ Sets the maximum amount of rows to be included on the report.
 - Reports
   
 ## Property Value
- 
-## Syntax
-```
 
+An integer
+
+## Syntax
+
+```
+MaximumDatasetSize = 2000;
 ```
 
 ## Remarks  
@@ -30,3 +33,5 @@ Sets the maximum amount of rows to be included on the report.
 ## See Also  
 
 [Properties](devenv-properties.md)  
+[Report Properties](devenv-report-properties.md)  
+[Report Object](../devenv-report-object.md)  

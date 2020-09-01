@@ -7,26 +7,31 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 
 # ExecutionTimeout Property
 
-Sets the maximum time the report will run after which it is automatically terminated. The format must be a timeout duration specified as `hh:mm:ss`.
+Sets the maximum time the report will run after which it is automatically terminated. 
   
 ## Applies To  
 
 - Reports
 
 ## Property Value   
- 
+
+A string in the format `hh:mm:ss`.
+
 ## Syntax
 ```
 ExecutionTimeout := `10:05:55`;
 ```
 
-## Remarks  
+## Remarks
 
+At runtime,
 ## See Also  
 
-[Properties](devenv-properties.md) 
+[Properties](devenv-properties.md)  
+[Report Properties](devenv-report-properties.md)  
+[Report Object](../devenv-report-object.md)  

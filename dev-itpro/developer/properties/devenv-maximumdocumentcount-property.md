@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 
 # MaximumDocumentCount Property
@@ -18,11 +18,14 @@ Sets the maximum document count when generating a report by using `WordMergerDat
 
 - Reports
 
-## Property Value   
+## Property Value
+
+An integer
  
 ## Syntax
-```
 
+```
+MaximumDocumentCount = 100;
 ```
 
 ## Remarks  
@@ -30,3 +33,5 @@ Sets the maximum document count when generating a report by using `WordMergerDat
 ## See Also  
 
 [Properties](devenv-properties.md)  
+[Report Properties](devenv-report-properties.md)  
+[Report Object](../devenv-report-object.md)  
