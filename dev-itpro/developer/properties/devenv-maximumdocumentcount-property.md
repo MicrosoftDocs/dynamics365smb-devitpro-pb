@@ -30,7 +30,7 @@ MaximumDocumentCount = 100;
 
 ## Remarks
 
-At runtime, this property will override the hard limit that is set by the **Default Max Documents** (ReportDefaultMaxDocuments) setting for [!INCLUDE[server](../includes/server.md)] instance.
+At runtime, this property will override the hard limit that is set by the **Default Max Documents** (ReportDefaultMaxDocuments) setting for [!INCLUDE[server](../includes/server.md)] instance. The [!INCLUDE[server](../includes/server.md)] instance also includes the **Max Documents (hard limit)** (ReportMaxDocuments) setting, which this property won't override.
 
 ## See Also  
 

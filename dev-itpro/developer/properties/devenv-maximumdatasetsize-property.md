@@ -30,7 +30,7 @@ MaximumDatasetSize = 2000;
 
 ## Remarks  
 
-At runtime, this property will override the hard limit that is set by the **Default Max Rows** (ReportMaxRows) setting for [!INCLUDE[server](../includes/server.md)] instance.
+At runtime, this property will override the hard limit that is set by the **Default Max Rows** (ReportMaxRows) setting for [!INCLUDE[server](../includes/server.md)] instance. The [!INCLUDE[server](../includes/server.md)] instance also includes the **Max Rows (hard limit)** (ReportMaxRows) setting, which this property won't override.
 
 ## See Also  
 

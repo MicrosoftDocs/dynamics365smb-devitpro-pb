@@ -29,7 +29,7 @@ ExecutionTimeout := `10:05:55`;
 
 ## Remarks
 
-At runtime, this property will override the hard limit that is set by the **Max Rendering Timeout (hard limit)** (ReportTimeout) setting for [!INCLUDE[server](../includes/server.md)] instance. 
+At runtime, this property will override the limit that is set by the **Default Max Rendering Timeout** (ReportDefaultTimeout) setting for [!INCLUDE[server](../includes/server.md)] instance. The [!INCLUDE[server](../includes/server.md)] instance also includes the **Max Rendering Timeout (hard limit)** (ReportTimeout) setting, which this property won't override.
 
 ## See Also  
 
