@@ -29,9 +29,12 @@ ExecutionTimeout := `10:05:55`;
 
 ## Remarks
 
-At runtime,
+At runtime, this property will override the hard limit that is set by the **Max Rendering Timeout (hard limit)** (ReportTimeout) setting for [!INCLUDE[server](../includes/server.md)] instance. 
+
 ## See Also  
 
 [Properties](devenv-properties.md)  
 [Report Properties](devenv-report-properties.md)  
 [Report Object](../devenv-report-object.md)  
+[Configuring Business Central Server - Reports](../../administration/configure-server-instance.md#Reports)  
+[Operational Limits for Business Central Online - Reports](../../administration/operational-limits-online.md#Reports)  
