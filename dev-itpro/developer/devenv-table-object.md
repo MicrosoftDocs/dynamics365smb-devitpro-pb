@@ -222,7 +222,7 @@ The platform will populate audit field values as follows:
 
 The platform will not populate audit field values in these cases:
 
-- Copy company. The values in the tables of the company being copied stay the same, and the values are copied to the tables of the new company.
+- Copying company. The values in the tables of the company being copied stay the same, and the values are copied to the tables of the new company.
 - Synchronizing the table schema with the application.
 
 > [!NOTE]
