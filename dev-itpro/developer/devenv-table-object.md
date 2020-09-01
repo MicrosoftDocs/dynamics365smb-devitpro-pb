@@ -169,7 +169,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
 Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the following four system fields, which can be used for auditing records:
-
+<!--
 - SystemCreatedAt
 
    Specifies the data and time that the record was created
@@ -186,6 +186,7 @@ Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the followi
 #### Static characteristics
 
 The data audit fields have the following static characteristics:
+-->
 
 |Field name (in AL) |Column name (in database)|Data type|Field number|Description|
 |-------------------|-------------------------|---------|------------|-----------|
