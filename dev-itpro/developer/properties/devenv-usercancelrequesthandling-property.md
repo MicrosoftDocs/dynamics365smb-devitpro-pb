@@ -29,7 +29,6 @@ UserCancelRequestHandling := CancellationSafe;
 
 ## See Also  
 
-[Properties](devenv-properties.md)  
 [Report Properties](devenv-report-properties.md)  
 [Report Object](../devenv-report-object.md)  
 [Configuring Business Central Server - Reports](../../administration/configure-server-instance.md#Reports)  
