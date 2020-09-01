@@ -78,7 +78,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
         ...
     ```
 
-## Data Audit Fields
+## Data audit fields
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
