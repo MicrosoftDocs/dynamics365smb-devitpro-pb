@@ -39,6 +39,7 @@ The following table describes the user and workspace settings for the AL Languag
 <!-- |DefaultLaunchConfigurationName|Specifies the setting for resolving a server name. If this is set then all scenarios that need to resolve a server name will use this configuration setting.<br><br> For example, using the **Go to definition** option, if this server name is not specified, a list will be displayed to select a configuration from, which will be used going forward to resolve the server name and possibly provide symbolic information in the DAL file. To change that, specify the `DefaultLaunchConfigurationName`setting.<br> Another example is **Download symbols**; if there are multiple debug configurations, the specified `DefaultLaunchConfigurationName` will be used to resolve the server name and download symbols. If the server name is not specified, a list will be displayed to select a configuration from.| -->
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
 [JSON Files](devenv-json-files.md)  
