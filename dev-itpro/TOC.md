@@ -183,6 +183,7 @@
 ## Compiling, Publishing, and Debugging
 ### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
 ### [Debugging in AL](developer/devenv-debugging.md)
+### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ### [Signing an App Package File](developer/devenv-sign-extension.md)
