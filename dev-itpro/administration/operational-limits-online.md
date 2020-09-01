@@ -82,7 +82,6 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
 |Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.|500,000|
 |Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
-|Max execution timeout for Word reports| The maximum execution time that it can take to generate a report that uses a Word layout. If exceeded, the report will be canceled.|30 minutes|
 
 ## Query limits
 

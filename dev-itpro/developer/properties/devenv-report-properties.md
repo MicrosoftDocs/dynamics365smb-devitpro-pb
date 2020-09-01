@@ -67,7 +67,6 @@ This topic lists properties of the report object.
 |[ShowPrintStatus Property](devenv-showprintstatus-property.md)|<ul><li>Report Object</li></ul>|
 |[SourceExpr Property](devenv-sourceexpr-property.md)|<ul><li>Column controls</li></ul>|
 |[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>Report Object</li></ul>|
-|[UserCancelRequestHandling Property](devenv-usercancelrequesthandling-property.md)|<ul><li>Report Object</li></ul>| 
 |[UsageCategory Property](devenv-usagecategory-property.md)|<ul><li>Report Object</li></ul>|
 |[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>Report Object</li></ul>|
 |[UseTemporary Property \(Reports\)](devenv-usetemporary-report-property.md)|<ul><li>DataItem controls</li></ul>|
