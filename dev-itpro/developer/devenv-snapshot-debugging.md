@@ -59,12 +59,12 @@ A snapshot debugging session can be in one of the three states:
 
 ## Finishing a snapshot debugging session
 
-You finish a snapshot debugging session by pressing **Alt+F4** command. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
+You finish a snapshot debugging session by pressing **Alt+F4**. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
 
 > [!IMPORTANT]  
-> Because the snapshot file can contain customer privacy data, it must be handled according to privacy compliance and should be deleted when it is not needed anymore.
+> The snapshot file can contain customer privacy data and must therefore be handled according to privacy compliance and should be deleted when it is not needed anymore.
 
-Snapshot debugging sessions that have produced a snapshot file can be debugged. The location of a snapshot file is controlled by the `al.snapshotOutputPath` configuration parameter. By default it is local to the current workspace and it is called `.snapshots`.
+Snapshot debugging sessions that have produced a snapshot file can be debugged. The location of a snapshot file is controlled by the `al.snapshotOutputPath` configuration parameter. By default it is local to the current workspace and it is called `./.snapshots`. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 ## Debugging a snapshot file 
 
