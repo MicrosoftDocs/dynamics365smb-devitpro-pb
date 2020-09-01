@@ -98,7 +98,7 @@ table 50104 Address
 
 ## System fields
 
-System fields are fields that are automatically included in every table object by the platform. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md) includes the following system fields:
+System fields are fields that are automatically included in every table object by the platform. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes the following system fields:
 
 - SystemId
 - Data audit fields
@@ -199,14 +199,16 @@ The data audit fields have the following static characteristics:
 
 At runtime, the data audit fields have the following characteristics and behavior: 
 
--  The platform will automatically generate and assign values as follows:
+The platform will automatically generate and assign values as follows:
 
-   - After all  [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
-   - After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run
-   - Before all [OnAfterInsert](triggers/devenv-onafterinsert-trigger.md) and [OnAfterModify](triggers/devenv-onaftermodify-trigger.md) triggers are run
+- After all [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
+- After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run
+- Before all [OnAfterInsert](triggers/devenv-onafterinsert-trigger.md) and [OnAfterModify](triggers/devenv-onaftermodify-trigger.md) triggers are run
 
-    > [!NOTE]
-    > You can assign the values, but the values written to the database are always provided by the platform.
+> [!NOTE]
+> You can assign the values, but the values written to the database are always provided by the platform.
+
+The platform will populate audit field values as follows:
 
 - When a new record is created, before calling Insert, the audit fields are given blank GUIDs and blank dates as values.
 
@@ -218,14 +220,15 @@ At runtime, the data audit fields have the following characteristics and behavio
 
 - When a record is updated, the $systemModifiedBy and $systemModifiedAt fields are changed.
 
-- The following operations won't change the values of audit fields:
+The platform will not populate audit field values in these cases:
 
-  - Copy company. The values in the tables of the company being copied stay the same, and the values are copied to the tables of the new company.
-  - Synchronizing the table schema with the application.
+- Copy company. The values in the tables of the company being copied stay the same, and the values are copied to the tables of the new company.
+- Synchronizing the table schema with the application.
 
-- Audit fields can't be imported with configuration packages.
+> [!NOTE]
+> Audit fields can't be imported with configuration packages.
 
-#### In AL 
+#### In AL
 
 The data audit fields are exposed in AL code. As a developer, the audit fields give you an easy and performant way to program against historical data. For example, you could write AL queries that return data that has changed since a specific date and time.
 
