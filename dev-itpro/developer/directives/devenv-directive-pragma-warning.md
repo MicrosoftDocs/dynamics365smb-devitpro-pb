@@ -17,6 +17,9 @@ ms.author: solsen
 
 The `#pragma warning` instruction can enable or disable certain warnings. This can be used as a solution to avoid getting warnings on, for example, string length on fields that you cannot change. With the `#pragma warning disable` statement you disable the emit of the warning for a specific location in code, and with `#pragma warning restore` you restore the warning back to it's original state. If you do not `restore`, the `disable` instruction is valid for the rest of the file.
 
+> [!IMPORTANT]  
+> It is important to be aware that most warnings are there for a reason, and suppressing them could lead to sudden impact if warnings are changed to errors, such as obsoletes. 
+
 ## Syntax
 
 ```
