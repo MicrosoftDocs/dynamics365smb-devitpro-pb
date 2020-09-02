@@ -823,6 +823,7 @@
 ### Business Central 2020 Release Wave 2
 #### Application and Data
 ##### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
+##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v17.md)
 #### Technical Upgrade
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)

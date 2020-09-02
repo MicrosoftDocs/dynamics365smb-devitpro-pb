@@ -28,7 +28,7 @@ In version 17, a number of tables have been deprecated and replaced by new table
 
 1. Your version 15 platform is compatible with version 17.
 
-    There are several updates for version 15. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.5, you can't upgrade to 16.0. You must wait until 16.1 is available.  
+    There are several updates for version 15. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.11, you can't upgrade to 17.0. You must wait until 17.1 is available.  
 
 2. Disable data encryption.
 
@@ -38,13 +38,13 @@ In version 17, a number of tables have been deprecated and replaced by new table
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-## Task 1: Install version 16
+## Task 1: Install version 17
 
-1. Before you install version 16, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16.0 tools.
+1. Before you install version 17, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17.0 tools.
 
-2. Install version 16 components.
+2. Install version 17 components.
 
-    You'll keep version 15 component installed for now. When you install version 16, you must either specify different port numbers for components during installation or stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll keep version 15 component installed for now. When you install version 17, you must either specify different port numbers for components during installation or stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     <!--
     > [!IMPORTANT]
@@ -56,7 +56,7 @@ In version 17, a number of tables have been deprecated and replaced by new table
 
 ## Task 2: Rewrite code to handle obsoleted system tables
 
-In version 16, [!INCLUDE[prodshort](../developer/includes/prodshort.md)], a number of tables have been deprecated and replaced by new tables. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the tables. This change will typically affect your base application or the Microsoft System Application, if you're using it.
+In version 17, several tables have been deprecated and replaced by new tables, compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the tables. This change will typically affect your base application or the Microsoft System Application, if you're using it.
 
 For the base application or system application extensions, you'll have to create a new version that uses the new tables. The basic steps are as follows:
 
@@ -66,17 +66,17 @@ For the base application or system application extensions, you'll have to create
 
 2. Include the source files of the current version in the project.
 
-3. Copy the version 16 System symbols (System.app) file to the **.alpackages** folder of the project.
+3. Copy the version 17 System symbols (System.app) file to the **.alpackages** folder of the project.
 
-    You'll find the System.app file on the installation media (DVD) for version 16 or in the **AL Development Environment** installation folder. By default, the folder is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment.
+    You'll find the System.app file on the installation media (DVD) for version 17 or in the **AL Development Environment** installation folder. By default, the folder is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.
 
     For the base application, also include the extension package (.app) for the new version of the Microsoft System Application, if you're using it.
 
 4. Modify the app.json:
 
-    - Increase `"version"` number. You have to increase the version so you can run a data upgrade later in this process. 
+    - Increase `"version"` number. You have to increase the version so you can run a data upgrade later in this process.
     - Set `"runtime"` to `5.0`
-    - Set `"platform"` to `16.0.0.0`
+    - Set `"platform"` to `17.0.0.0`
     - Set `"target"` to `OnPrem`
 
     For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
@@ -132,12 +132,12 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 ## Task 4: Convert the version 15.0 application database
 
-This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 15.0 platform to the version 16.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 15.0 platform to the version 17.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
 > [!IMPORTANT]
 > The conversion does not modify the application objects, but it will remove any modifications that you have made to system tables. After the conversion you will no longer be able to use it with Business Central 14.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16.0 as an administrator.
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 as an administrator.
 
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion. In a multitenant deployment, run this cmdlet against the application database.
 
@@ -156,12 +156,12 @@ This task runs a technical upgrade on the application database. A technical upgr
 
 ## Task 5: Configure version 16 server
 
-When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 16.0 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 16.0 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
     ```
-    Set-NAVServerConfiguration -ServerInstance <BC16 server instance> -KeyName DatabaseName -KeyValue "<BC15 database name>"
+    Set-NAVServerConfiguration -ServerInstance <BC17 server instance> -KeyName DatabaseName -KeyValue "<BC15 database name>"
     ```
     
     In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
@@ -169,18 +169,18 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
 2. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
-    Set-NavServerConfiguration -ServerInstance <BC16 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
+    Set-NavServerConfiguration -ServerInstance <BC17 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
     Be sure to re-enable task scheduler after upgrade if needed.
 3. Restart the server instance.
 
     ```
-    Restart-NAVServerInstance -ServerInstance <BC16 server instance>
+    Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
 
-## Task 6: Import version 16 license
+## Task 6: Import version 17 license
 
-1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 16 license to the database. 
+1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 17 license to the database. 
 
     ```
     Import-NAVServerLicense -ServerInstance <server instance name> -LicenseFile <path and file name>
@@ -194,7 +194,7 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
 
 ## Task 7: Publish new system symbols
 
-Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment.
+Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.
 
 ```
 Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
@@ -256,13 +256,13 @@ Compile all other published extensions, except the Microsoft System Application 
 
 Instead of directly installing the system amd base applications, you'll have to run a data upgrade because previous versions of these extensions were installed. 
 
-To do this, run the [Start-NAVAppDataUpgrade cmdlet] on each extension. Start with the system application, then the base application.
+To do this, run the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) on each extension. Start with the system application, then the base application.
 
 ```powershell  
 Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name <extension name> version <extension version> -Tenant <tenant ID>
 ```
-This will basically install the extensions on the tenant.
 
+This will run the data upgrade and install the extensions on the tenant.
 
 ## Task 12: Reinstall other extensions
 
@@ -293,7 +293,7 @@ Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsof
 
 ```powershell
 $InstanceName = 'BC160'
-$ServicesAddinsFolder = 'C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins'
+$ServicesAddinsFolder = 'C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins'
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.BusinessChart' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.FlowIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'FlowIntegration\Microsoft.Dynamics.Nav.Client.FlowIntegration.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.OAuthIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'OAuthIntegration\Microsoft.Dynamics.Nav.Client.OAuthIntegration.zip')
