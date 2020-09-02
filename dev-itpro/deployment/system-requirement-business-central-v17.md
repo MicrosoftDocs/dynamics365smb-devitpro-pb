@@ -157,12 +157,12 @@ The following table shows the product version requirements for integrating [!INC
 
 ||||||  
 |---|----|---|---|---|
-|Sales/Dynamics NAV/Business Central|2015/Update 1/online|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|
-|Dynamics NAV 2016|Supported *** |Supported *** |Supported *** |Supported *** |
-|Dynamics NAV 2017|Supported **|Supported *|Supported *|Supported *|
-|Dynamics NAV 2018|Supported **|Supported *|Supported *|Supported *|
-|Business Central (online)|Not supported |Not supported |Supported *|Supported *|
-|Business Central (on-premises)|Supported **|Supported *|Supported *|Supported *|  
+|Sales/Dynamics NAV/Business Central|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|
+|Dynamics NAV 2016|Supported *** |Supported *** |Supported *** |
+|Dynamics NAV 2017|Supported *|Supported *|Supported *|
+|Dynamics NAV 2018|Supported *|Supported *|Supported *|
+|Business Central (online)|Not supported |Supported *|Supported *|
+|Business Central (on-premises)|Supported *|Supported *|Supported *|  
 
 Legend:  
 * "*" item availability capability is supported.  
@@ -170,7 +170,7 @@ Legend:
 * "***" viewing item availability isn't supported  
 
 > [!Note] 
-> AD, IFD and Claims authentication types are supported for the 2015 and 2016 on-premises versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. OAuth and Office 365 authentication are supported for the 2015, 2015 Update 1, and 2016 Update 1 online versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. For more information about authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).
+> AD, IFD and Claims authentication types are supported for the 2016 on-premises version of [!INCLUDE[crm](../developer/includes/crm_md.md)]. OAuth and Office 365 authentication are supported for the 2016 Update 1 and online versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. For more information about authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).
 
 ## <a name="SharePointApp"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint
 
