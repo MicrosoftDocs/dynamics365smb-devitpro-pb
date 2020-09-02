@@ -330,4 +330,4 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 ## See Also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
-[Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)
+[Business Central Compatibility Matrix](upgrade-v14-v15-compatibility.md)
