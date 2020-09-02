@@ -98,7 +98,7 @@ table 50104 Address
 
 ## System fields
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
+The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
 
 
 ## See Also
