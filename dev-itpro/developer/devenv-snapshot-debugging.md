@@ -39,7 +39,7 @@ Choose whether to run the session on a cloud service or locally. The configurati
 |`sessionId`| A session ID for the user specified above in `userId`.|
 |`snapshotVerbosity`| Determines how much execution context to be recorded. If only **"SnapPoint** is specified then only methods that hit a snappoint will be recorded.|
 
-When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F4**. 
+When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**. 
 
 To record the AL execution, the server will now wait for a connection to happen with the following rules: 
 
@@ -53,7 +53,7 @@ Once a snapshot debugging session is initialized the snapshot debugging session 
 
 ## Status of a snapshot debugging session
 
-Clicking on the status bar icon or pressing **Shift+F4**  will bring up a list of all available snapshots.  
+Clicking on the status bar icon or pressing **Shift+F7**  will bring up a list of all available snapshots.  
 The status list will show the state of a snapshot-debugged session. 
 
 A snapshot debugging session can be in one of the three states:
@@ -65,7 +65,7 @@ A snapshot debugging session can be in one of the three states:
 
 ## Finishing a snapshot debugging session
 
-You finish a snapshot debugging session by pressing **Alt+F4**. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
+You finish a snapshot debugging session by pressing **Alt+F7**. This brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. 
 
 > [!IMPORTANT]  
 > The snapshot file can contain customer privacy data and must therefore be handled according to privacy compliance and should be deleted when it is not needed anymore.
@@ -77,7 +77,7 @@ Snapshot debugging sessions that have produced a snapshot file can be debugged. 
 There are two user actions that will start snapshot debugging:
 
 - Creating a new launch debug configuration and specifying the snapshot file name in the `snapshotFileName` configuration setting. This is the only setting that is needed besides the type, request, and name. 
-- Clicking on the status icon or by pressing **Shift+F4** and selecting a finished snapshot-debugged session. 
+- Clicking on the status icon or by pressing **Shift+F7** and selecting a finished snapshot-debugged session. 
 
 Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they cannot be removed by user actions. Other snappoints are just regular breakpoints that can be removed/re-added by user actions. If no snappoints are specified the first recorded methods; the first line is the entry breakpoint. 
 
