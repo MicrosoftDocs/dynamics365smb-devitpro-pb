@@ -83,24 +83,6 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
 Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the following four system fields, which can be used for auditing records:
-<!--
-- SystemCreatedAt
-
-   Specifies the data and time that the record was created
-- SystemCreatedBy
-
-  Specifies security ID (SID) of the user that created the record 
-- SystemModifiedAt
-
-  Specifies the data and time that the record was last modified.
-- SystemModifiedBy
-
-  Specifies the SID of the user that last modified the record
-
-#### Static characteristics
-
-The data audit fields have the following static characteristics:
--->
 
 |Field name (in AL) |Column name (in database)|Data type|Field number|Description|
 |-------------------|-------------------------|---------|------------|-----------|
@@ -113,7 +95,7 @@ The data audit fields have the following static characteristics:
 
 At runtime, the data audit fields have the following characteristics and behavior: 
 
-The platform will automatically generate and assign values as follows:
+The platform will automatically generate and assign values according to the following triggers:
 
 - After all [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
 - After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run
@@ -122,7 +104,7 @@ The platform will automatically generate and assign values as follows:
 > [!NOTE]
 > You can assign the values, but the values written to the database are always provided by the platform.
 
-The platform will populate audit field values as follows:
+Fields are populated as follows:
 
 - When a new record is created, before calling Insert, the audit fields are given blank GUIDs and blank dates as values.
 
@@ -134,7 +116,7 @@ The platform will populate audit field values as follows:
 
 - When a record is updated, the $systemModifiedBy and $systemModifiedAt fields are changed.
 
-The platform will not populate audit field values in these cases:
+The platform won't populate audit field values in these cases:
 
 - Copying company. The values in the tables of the company being copied stay the same, and the values are copied to the tables of the new company.
 - Synchronizing the table schema with the application.
@@ -144,7 +126,7 @@ The platform will not populate audit field values in these cases:
 
 #### In AL
 
-The data audit fields are exposed in AL code. As a developer, the audit fields give you an easy and performant way to program against historical data. For example, you could write AL queries that return data that has changed since a specific date and time.
+The data audit fields are exposed in AL code. As a developer, the audit fields give you an easy and performant way to program against historical data. For example, you can write AL queries that return data changes since a specific date and time.
 
 The following methods are available on the [RecordRef](methods-auto/recordref/recordref-data-type) data type:
 
@@ -164,7 +146,7 @@ There are a couple points of interest you should know:
 
 The **timestamp** field contains row version numbers for records, as maintained in SQL Server. The **timestamp** field is hidden. But, you can expose it by using [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md). You're then able to write code against it, add filters, and so on, similar to any other field in a table. However, you can't write to the **timestamp** field.  
   
-A typical use of the **timestamp** field is for synchronizing data changes in tables, when you want to identify records that have changed since the last synchronization. For example, you can read all the records in a table, and then store the highest **timestamp** value. Later, you can query and retrieve records that have a higher **timestamp** value than the stored value.  
+A typical use of the **timestamp** field is for synchronizing data changes in tables. It lets you identify records that have changed since the last synchronization. For example, you can read all the records in a table, then store the highest **timestamp** value. Later, you can query and retrieve records that have a higher **timestamp** value than the stored value.  
   
 #### Expose the timestamp field  
  
