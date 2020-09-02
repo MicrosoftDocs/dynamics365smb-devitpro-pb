@@ -40,6 +40,12 @@ If you want to add more companies after the first selection of companies, you ca
 
 If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Options for databases larger than 30 GB will be available in a future update, as we are continually working on improving and optimizing the migration tool for larger database sizes.
 
+In the current version of Business Central, the migration tool has been optimized to migrate databases up to 30 GB. If your database is larger than 30 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.
+
+If you want to add more companies after the first selection of companies, you can add additional companies in the Cloud Migration Management page in the Business Central online tenant. For more information, see Adding a tenant to an existing runtime service, or updating companies.
+
+If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Options for databases larger than 30 GB will be available in a future update, as we are continually working on improving and optimizing the migration tool for larger database sizes.
+
 ## Is my SQL connection string required to set up the connection?
 
 Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime. The connection string is used to communicate with your SQL Server instance during the data replication process. For more information, see [How do I find my SQL connection string?](#how-do-i-find-my-sql-connection-string).  
