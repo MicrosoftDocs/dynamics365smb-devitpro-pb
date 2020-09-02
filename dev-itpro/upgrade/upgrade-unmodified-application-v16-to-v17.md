@@ -133,7 +133,7 @@ This task runs a technical upgrade on the application database to convert it fro
 
 ## Task 4: Configure version 17 server
 
-When you installed version 17 in **Task 1**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 16 to version 17 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 2**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 16 to version 17 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 

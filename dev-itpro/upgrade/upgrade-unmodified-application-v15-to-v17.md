@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 
 # Upgrading Version 15 Base Application to Version 17
 
-Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 solution that uses the Microsoft System and Base applications.
+Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 solution that uses the Microsoft System and Base applications.
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-to-17-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
@@ -35,22 +35,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-## Task 1: Install version 16
-
-1. Download the latest available update for Business Central 2020 (version 16) that is compatible with your version 15.
-
-    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
-
-
-2. Before you install version 16, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
-
-3. Install Business Central version 16 components.
-
-    You'll have to keep version 15 installed to complete some steps in the upgrade process. When you install version 16, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
-
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
-
-## Task 2: Prepare version 15 databases
+## Task 1: Prepare version 15 databases
 
 1. Make backup of the databases.
 
@@ -61,7 +46,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
 
     1. Get a list of installed extensions.
-    
+
         This step is optional, but it can be useful to the names and versions of the extensions.
 
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
@@ -73,20 +58,20 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
         For a single-tenant deployment, set the `<tenant ID>` to default.
 
     2. Uninstall the extensions.
-    
+
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
-    
+
         ```powershell 
         Uninstall-NAVApp -ServerInstance <server instance name> -Name <extensions name> -Tenant <tenant ID> -Version <extension version> -Force
         ```
-        
+
         Replace  `<extension name>` and `<extension version>` with the exact name and version the published System Application.
 
         For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
 
         ```powershell 
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>| % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
-        ``` 
+        ```
 
 5. Unpublish all system symbols.
 
@@ -104,11 +89,26 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     ```powershell
     Dismount-NAVTenant -ServerInstance <server instance name> -Tenant <tenant ID>
     ```
+
 7. Stop the server instance.
 
     ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
+
+## Task 2: Install version 17
+
+1. Download the latest available update for Business Central 2020 release wave 2 (version 17) that is compatible with your version 15.
+
+    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+
+2. Before you install version 17, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
+
+3. Install Business Central version 17 components.
+
+    You'll keep version 15 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## Task 3: Convert version 15 database
 
@@ -134,7 +134,7 @@ This task runs a technical upgrade on the application database to convert it fro
 
 ## Task 4: Configure version 16 server
 
-When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 16 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 2**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 16 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
