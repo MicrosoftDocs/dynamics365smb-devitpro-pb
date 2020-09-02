@@ -12,9 +12,12 @@ ms.author: solsen
 
 # Snapshot Debugging
 
-Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group.
+Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service.
 
-Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
+> [!NOTE]  
+> With this release snapshot debugging is enabled in sandbox environments only. The difference from regular debugging with this release is the ability to attach to a user session with snapshot debugging.
+
+Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
 - Snappoints 
 - AL exceptions
