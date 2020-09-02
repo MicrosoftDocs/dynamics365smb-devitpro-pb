@@ -825,6 +825,7 @@
 ##### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
 #### Technical Upgrade
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
+##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
