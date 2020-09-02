@@ -12,6 +12,8 @@ ms.author: solsen
 
 # Snapshot Debugging
 
+[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+
 Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service.
 
 > [!NOTE]  
