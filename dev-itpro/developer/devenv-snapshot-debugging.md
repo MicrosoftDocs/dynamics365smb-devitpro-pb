@@ -58,9 +58,10 @@ The status list will show the state of a snapshot-debugged session.
 
 A snapshot debugging session can be in one of the three states:
 
-- **Initialized** - the server is waiting for the next session to be snapshot debugged based on the above rules. 
-- **Started** - an end-user has connected with a session that is snapshot debugged. 
-- **Finished** - snapshot debugging has finished. 
+- **Initialized** - A request is issued and the server is waiting for the next session to be snapshot debugged based on the above rules. 
+- **Started** - You have attached to an end-user session to snapshot debug. 
+- **Finished** - When the snapshot debugging session has finished. 
+- **Downloaded** - When the snapshot file is downloaded. 
 
 ## Finishing a snapshot debugging session
 
