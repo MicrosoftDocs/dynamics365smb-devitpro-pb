@@ -61,9 +61,12 @@ The following table provides an overview of some of the shortcut key combination
 ## Debugging in Visual Studio Code
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|F5|Start debugging session|
+|F5|Start debugging session.|
 |Ctrl+Alt+F5  |Start RAD publishing without debugging.|
 |Alt+F5       |Start RAD with debugging.|
+|F7|Start snapshot debugging session.|
+|Shift+F7|See list of available snapshots.|
+|Alt+F7|Finish a snapshot debugging session.|
 
 
 ## See Also
