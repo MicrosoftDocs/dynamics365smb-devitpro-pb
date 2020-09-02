@@ -347,6 +347,8 @@ On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dyna
 Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck
 ```
 
+This command will upgrade and install the extensions on the tenant.
+
 ## Task 9: Install 3rd-party extensions
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):

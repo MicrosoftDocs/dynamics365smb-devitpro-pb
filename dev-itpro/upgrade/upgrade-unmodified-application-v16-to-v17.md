@@ -334,11 +334,13 @@ Run the data upgrade on extensions in order of dependency.
 
 #### Multitenant
 
-On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows to change the version number:
+On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:
     
 ```
 Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck
 ```
+
+This command will upgrade and install the extensions on the tenant.
 
 ## Task 9: Install 3rd-party extensions
 
@@ -422,7 +424,7 @@ At this point, the upgrade is complete, and you can open the client.
     3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
     
     ```powershell
-    Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
+    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID> 
     ```
 
 5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
