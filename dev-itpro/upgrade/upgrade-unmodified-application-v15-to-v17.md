@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 solution that uses the Microsoft System and Base applications.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc15-to-16-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application](../developer/media/bc15-to-17-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 
