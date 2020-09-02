@@ -98,7 +98,7 @@ table 50104 Address
 
 ## System fields
 
-System fields are fields that are automatically included in every table object by the platform. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes several system fields. For more information, see [System Fields](devenv-table-system-fields.md).
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
 
 
 ## See Also
