@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/01/2020
+ms.date: 09/02/2020
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -31,24 +31,24 @@ In the [Development in AL](developer/devenv-dev-overview.md) section, you find d
 
 The reference documentation of the AL language publishes under the [AL Programming](developer/devenv-programming-in-al.md) umbrella. This content is partly generated automatically from code, but currently most of the reference content is maintained by hand. Use the following landing pages to quickly find the reference content that you need:
 
-* Objects
-    * [Table object](developer/devenv-table-object.md)
-    * [Table extension object](developer/devenv-table-ext-object.md)
-    * [Page object](developer/devenv-page-object.md)
-    * [Page extension object](developer/devenv-page-ext-object.md)
-    * [Page customization object](developer/devenv-page-customization-object.md)
-    * [Report object](developer/devenv-report-object.md)
-    * [XMLport Object](developer/devenv-xmlport-object.md)
-    * [Query object](developer/devenv-query-object.md)
-    * [Codeunit object](developer/devenv-codeunit-object.md)
-    * [Profile object](developer/devenv-profile-object.md)
-    * [Control add-in object](developer/devenv-control-addin-object.md)
 * Methods
-    * [Data Types and Methods in AL](developer/methods-auto/library.md)
+  * [Data Types and Methods in AL](developer/methods-auto/library.md)
 * Properties
-    * [Page and Page Extension Properties Overview](developer/properties/devenv-page-property-overview.md)
+  * [Properties Overview](developer/properties/devenv-properties.md)
 * Triggers
-    * [Triggers Overview](developer/triggers/devenv-triggers.md)
+  * [Triggers Overview](developer/triggers/devenv-triggers.md)
+* Objects
+  * [Table object](developer/devenv-table-object.md)
+  * [Table extension object](developer/devenv-table-ext-object.md)
+  * [Page object](developer/devenv-page-object.md)
+  * [Page extension object](developer/devenv-page-ext-object.md)
+  * [Page customization object](developer/devenv-page-customization-object.md)
+  * [Report object](developer/devenv-report-object.md)
+  * [XMLport object](developer/devenv-xmlport-object.md)
+  * [Query object](developer/devenv-query-object.md)
+  * [Codeunit object](developer/devenv-codeunit-object.md)
+  * [Profile object](developer/devenv-profile-object.md)
+  * [Control add-in object](developer/devenv-control-addin-object.md)
 
 ### Product versions and Help versions
 
@@ -91,10 +91,10 @@ You can learn about current and coming capabilities through a number of differen
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Release plans |[/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
-> |Business Central docs|[/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
-> |Business Central development and administration docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
-> |The "Ready to Go" learning catalog|[/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
+> |Release plans |[https://docs.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
+> |Business Central development and administration docs|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
+> |The "Ready to Go" learning catalog|[https://docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
 
 ### Share an idea about a new feature you'd like to have
 
