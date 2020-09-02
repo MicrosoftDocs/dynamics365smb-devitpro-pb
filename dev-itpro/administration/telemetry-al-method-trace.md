@@ -18,7 +18,7 @@ The Business Central server will emit telemetry about the execution time of long
 
 ## General dimensions
 
-The following table explains the general dimensions included in an outgoing **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
+The following table explains the general dimensions included in the trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
 |---------|--------------------|
