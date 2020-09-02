@@ -85,6 +85,7 @@ The user can set breakpoints and continue execution to that breakpoint for testi
 Snapshot debugging is almost the same as a regular debugging with a few differences:
 
 - Breakpoints can be added and removed and they will be hit if given a breakpoint; the breakpoint is in the execution context of a recorded state. This means that if walking the execution stack for a breakpoint the next stepped line is reached, then the code will break on the breakpoint. 
+- A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection.
 - You can always navigate through all the breakpoints with **Continue** (F5). The order may not be the same as the execution order on the [!INCLUDE[prodshort](includes/prodshort.md)] server. This is due to the fact that some calls on a [!INCLUDE[prodshort](includes/prodshort.md)] server are AL calls with non-walkable stacks. Some are direct server calls on the server like triggers. A snapshot debugging session on the [!INCLUDE[prodshort](includes/prodshort.md)] server can only record AL calls and walk AL stack traces. 
 - This is also true when stepping. The rule of thumb is that breakpoints within the reach are hit first, and if there are none; the next line is hit. Breakpoints on triggers may not always qualify as code within reach. 
 - Variable data is only shown on snappoints. 
