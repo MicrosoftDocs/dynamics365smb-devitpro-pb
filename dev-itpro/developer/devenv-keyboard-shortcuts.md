@@ -19,7 +19,7 @@ The following table provides an overview of some of the shortcut key combination
 |Keyboard Shortcut| Action|
 |-----------------|-------|
 |Ctrl+Shift+P|Show All Commands|
-|F7|Download source code|
+|Alt+F6|Download source code|
 |Alt+A Alt+L|AL Go! Generates a HelloWorld project|
 |Ctrl+Shift+B|Package|
 |F5|Publish|  
