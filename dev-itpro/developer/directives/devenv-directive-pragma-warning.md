@@ -15,7 +15,7 @@ ms.author: solsen
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-The `#pragma warning` instruction can enable or disable certain warnings. This can be used as a solution to avoid getting warnings on, for example, string length on fields that you cannot change. With the `#pragma warning disable` statement you disable the emit of the warning for a specific location in code, and with `#pragma warning restore` you restore the warning back to it's original state.
+The `#pragma warning` instruction can enable or disable certain warnings. This can be used as a solution to avoid getting warnings on, for example, string length on fields that you cannot change. With the `#pragma warning disable` statement you disable the emit of the warning for a specific location in code, and with `#pragma warning restore` you restore the warning back to it's original state. If you do not `restore` the `disable` instruction is valid for the rest of the file.
 
 ## Syntax
 
