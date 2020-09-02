@@ -15,7 +15,6 @@ author: solsen
 > [!IMPORTANT]
 > This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-
 Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Common Data Service must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ## Generating virtual entities
@@ -23,7 +22,7 @@ Building an app requires capabilities to perform relational modeling between ent
 By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
-
+@lukasz - please look at the entire section
 When a virtual entity is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service. For data types that are supported, the field properties in Common Data Service are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 This rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
@@ -36,7 +35,8 @@ This rest of this section describes supported and unsupported data types. For mo
 | String (non-memo), String (memo)    | String – single line of text, String – multiple lines of text |
 | UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as a null value in Common Data Service. |
 | Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as an empty value in Common Data Service. |
-| Enum                                | Picklist<br><br>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service aren't guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], because these enums don't have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. |
+| Enum                                | Picklist<br><br>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service aren't guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], because these enums don't have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated.  @lukasz - how do we handle enums?| 
+| Blob | Multiline | 
 
 Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as the *decimal* data type in Common Data Service. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
 
@@ -49,28 +49,14 @@ Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/
 
 The following data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] aren't supported in Common Data Service. Fields of these data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities won't be made available in the corresponding virtual entities in Common Data Service. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this topic.
 
-- AnyType
-- BLOB
-- Class
-- Container
-- Guid
-- Record
-- Time
-- UserType
-- VarArg
-- Void (Void return types on OData actions are supported.)
-
-Data type that are supported in Common Data Service but not in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] aren't supported in virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- @antino which datatypes in BC is not supported in CDS? 
 
 ## Entity key/primary key
 
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], entities can have one or more fields of various data types as the entity key. An entity key uniquely identifies a record in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity. Additionally, a record in an entity can be uniquely identified by a record ID primary key of the Int64 type.
-
-In Common Data Service, the primary key is always a globally unique identifier (GUID). The GUID-based primary key enables a record in an entity in Common Data Service to be uniquely identified.
-
-To bridge the implementation gap between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service, the primary key of a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is a GUID (to comply with Common Data Service). This GUID consists of the data entity ID in the first 4 bytes, and the record ID of the root data source in the entity as the last 8 bytes. This design satisfies Common Data Service's requirement that a GUID be used as the entity key. It also enables the table ID and record ID to be used to uniquely identify the entity record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], entities uses the SystemId (GUID) as the primary key, which uniquely identifies a record in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In Common Data Service, the SystemId exposed by the entity is used as the primary key.
 
 ## Primary field
+@lukasz, please look through this section. How do we set the primary field. We use displayName when possible. For ducuments we use No. But, what do we use when displayName/No. is not there? 
 
 In Common Data Service, each entity must have a primary field. This field must be a single field of the string type. The primary field is used in Common Data Service in the following scenarios:
 
@@ -78,7 +64,7 @@ In Common Data Service, each entity must have a primary field. This field must b
 - The quick view form for an entity includes the primary field.
 - A lookup to another entity is added to a page and shows the data from the primary field.
 
-Based on this use of the primary field in Common Data Service, the primary field for a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is designed to use the entity key of the corresponding entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Based on this use of the primary field in Common Data Service, the primary field for a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is designed to use the entity key of the corresponding entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
 
 Because the primary field in Common Data Service is expected to have only one field of the string type, whereas the entity key in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
 
@@ -112,11 +98,13 @@ Native entity–to–native entity relationships are the standard Common Data Se
 
 The relationships between two [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities are driven by the relation metadata in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities. As was explained earlier, these relations are generated as relationships in Common Data Service when the virtual entity is generated. As in the behavior for native entities in Common Data Service, these relationships use the GUID to identify the unique record of the entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Semantically, the GUID on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity behaves like the GUID on the native Common Data Service entity. For information about the implementation of the GUID in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this topic.
 
-In the preceding example, the GUID of the related entity is the entity key of Entity B and will be used to build queries to identify a record in Finance and Operation. The relation that Entity A has to Entity B will be used.
+In the preceding example, the GUID of the related entity is the entity key of Entity B and will be used to build queries to identify a record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The relation that Entity A has to Entity B will be used.
 
 Therefore, in effect, the entity name is the only information that is used in a relation that comes from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity isn't used at all.
 
 ### Virtual entity–to–native entity relationship
+@lukasz scenario description in here is good.
+
 
 As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Common Data Service entity (including in native entity–to–native entity relationships) or in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity (including in virtual entity–to–virtual entity relationships). However, consider an example where you want to show sales orders from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Account A in Common Data Service. The query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Common Data Service, because the sales orders must be filtered for a specific account in Common Data Service. However, because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] doesn't have any information about the GUID of the entity in Common Data Service, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] understands.
 
