@@ -229,17 +229,16 @@ There are two ways of suppressing warnings to unclutter warnings while working o
 
 ### suppressWarnings setting
 
-Warnings can be suppressed globally in an extension by specifying this in the `app.json` file. The syntax is:
+Warnings can be suppressed globally in an extension by specifying this in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md). The syntax is:
 
 ```
 "suppressWarnings": [ "AL0606", "AL0604" ]
 ```
 
-For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
-
 ### Pragmas
 
-It is also possible to use a pragma to suppress individual warnings for one or more lines of code.
+It is also possible to use a pragma to suppress individual warnings for one or more lines of code. For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
+
 ```
 #pragma warning disable AL0606
     // No AL0606 will be shown for code here.
@@ -251,7 +250,6 @@ It is also possible to use a pragma to suppress individual warnings for one or m
 #pragma warning restore AL0606
 // Suppression of AL0606 is restored to global state.
 ```
-For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
 
 
 ## See Also
