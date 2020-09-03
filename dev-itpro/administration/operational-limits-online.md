@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Operational Limits for Business Central Online
 
-To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
+To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them. The limits are per-tenant limits.
 
 > [!TIP]
 > Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
