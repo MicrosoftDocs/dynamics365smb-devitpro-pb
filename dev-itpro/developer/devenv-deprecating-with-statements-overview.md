@@ -13,9 +13,7 @@ author: esbenk
 
 # Deprecating Explicit and Implicit With Statements
 
-The extensibility model and the AL programming language is a successor to the C/AL language. And the `with` statement has up until now been supported in AL.
-
-Using the `with` statement might make code harder to read, but it can also prevent code in Business Central online from being upgraded without changes to the code or even worse - upgraded but with changed behavior.
+The extensibility model and the AL programming language is a successor to the C/AL language. And the `with` statement has up until now been supported in AL. While using the `with` statement might make code harder to read, it can also prevent code in [!INCLUDE[prodshort](includes/prodshort.md)] online from being upgraded without changes to the code or even worse - upgraded but with changed behavior. We distinguish between two types of with statements; the explicit type of `with` using the keyword, and then the implicit with which is not expressed directly in code. The next sections describe these one by one.
 
 ## The explicit with statement
 
