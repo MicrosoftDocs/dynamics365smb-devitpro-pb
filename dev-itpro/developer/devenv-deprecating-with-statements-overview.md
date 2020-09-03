@@ -254,14 +254,19 @@ The QuickFix code actions will automatically insert the pragma before and after 
 
 ## Suppressing warnings 
 
-There are two ways of suppressing warnings to unclutter warnings while working on other issues and then you can fix the warnings at your own pace.
+There are two ways of suppressing warnings to unclutter warnings while working on other issues and then afterwards you can fix the warnings at your own pace.
+
+### suppressWarnings setting
 
 Warnings can be suppressed globally in an extension by specifying this in the `app.json` file. The syntax is:
 
 ```
 "suppressWarnings": [ "AL0606", "AL0604" ]
 ```
+
 For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+
+### Pragmas
 
 It is also possible to use a pragma to suppress individual warnings for one or more lines of code.
 ```

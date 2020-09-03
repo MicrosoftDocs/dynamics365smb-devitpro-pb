@@ -21,6 +21,8 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] these code actions ar
 - Interface implementer.
 - Make method local.
 - Use parenthesis for method call.
+- Fix explicit `with` statements.
+- Fix implicit with statements.
 
 ## To enable AL Code Actions
 
