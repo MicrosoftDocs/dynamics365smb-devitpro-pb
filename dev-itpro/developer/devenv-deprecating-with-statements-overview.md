@@ -206,6 +206,53 @@ Just qualifying with `Rec.` will not solve the problem. The `IsDirty()` will sti
 
 The solution for that is to introduce pragmas in AL. A pragma is an instruction to the compiler on how it should understand the code. The pragma instructs the compiler not to create an implicit with for the `Rec` variable.
 
+Syntax for the implicit with pragma. The pragma must be used before the beginning of the codeunit or page. For more information, see [Pragma Directive](directives/devenv-directive-pragma.md) and [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md).
+
+```
+#pragma implicitwith disable|restore
+```
+
+The fixed example under [Pages](devenv-deprecating-with-statements-overview.md#pages) looks like this:
+
+```
+#pragma implicitwith disable
+page 50143 ImplicitWith
+{
+    SourceTable = Customer;
+
+    layout
+    {
+        area(Content)
+        {
+            field("No."; Rec."No.") { }
+            field(Name; Rec.Name)
+            {
+                trigger OnValidate()
+                begin
+                    Rec.Name := 'test';
+                end;
+            }
+        }
+    }
+
+    trigger OnInit()
+    begin
+        if IsDirty() then Rec.Insert()
+    end;
+
+    local procedure IsDirty(): Boolean
+    begin
+        exit(Name <> '');
+    end;
+} 
+#pragma implicitwith restore
+```
+
+The QuickFix code-actions will automatically insert the pragma before and after the fixed object. 
+
+> [!TIP]  
+> Remember to enable CodeActions in the settings for the AL Language extension.
+
 
 ## See Also
 
