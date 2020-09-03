@@ -44,7 +44,7 @@ codeunit 50140 MyCodeunit
 
 The `DoStuff()` procedure processes work on the Customer record and calls a local procedure `IsDirty()` to check whether to update the record or not. Looking at the code above it looks like it does nothing since `IsDirty()` returns `false` - assuming that the `IsDirty()` call in line 11 is in fact calling the local `IsDirty()` procedure.
 
-In [!INCLUDE[prodshort](includes/prodshort.md)] online your code is recompiled when the platform and application are upgraded. The recompilation ensures that it is working and it regenerates the runtime artifacts to match the new platform. Breaking changes without due warning are not allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a completely non-breaking way. This problem is not isolated to changes made by Microsoft, any additive change has the potential to break a `with` statement in consuming code.
+In [!INCLUDE[prodshort](includes/prodshort.md)] online your code is recompiled when the platform and application versions are upgraded. The recompilation ensures that it is working and the recompile regenerates the runtime artifacts to match the new platform. Breaking changes without due warning are not allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a completely non-breaking way. This problem is not isolated to changes made by Microsoft, any additive change has the potential to break a `with` statement in consuming code.
 
 ## Symbol lookup
 
