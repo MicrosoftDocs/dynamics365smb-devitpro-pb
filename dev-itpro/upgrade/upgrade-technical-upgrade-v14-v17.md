@@ -70,7 +70,6 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
      
     CodeViewer is no longer used in version 17. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 
-
 ## Task 2: Convert your v14 C/AL application to AL
 
 For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).

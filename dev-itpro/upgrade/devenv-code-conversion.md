@@ -17,32 +17,38 @@ Before you start, we recommend getting familiar with the basics of setting up an
 > [!NOTE]  
 > Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
 
+## Considerations
+
+### Code rewrites
+
+Some rewriting of code is required to complete the conversion and compile the extension. Rewriting can be a result of changes to system application objects referenced from other objects. For example, starting in version 16, several system tables have been deprecated. If you're converting your application to run on version 16 or later, you'll have to rewrite code to use these new tables. For more information, see [Deprecated Tables](deprecated-tables.md). You'll do this work after you convert objects to AL, as described in this article.
+
 #### Breaking changes
 
-when converting from C/AL to AL, it is important that you do not introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
+When converting from C/AL to AL, it's important that you don't introduce any breaking schema changes to the database. Otherwise, you can't synchronize the new extension with the database.
 
 ## Task 1: Import the test library into your C/AL solution 
 
-If your solution uses Microsoft (1st-party) extensions, you will have to convert the test library from C/AL to AL. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way to do this is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the version 14 installation media (DVD) in the **TestToolKit** folder.
+This task is optional. If your solution uses Microsoft (1st-party) extensions, you'll have to convert the test library from C/AL to AL. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the version 14 installation media (DVD) in the **TestToolKit** folder.
 
 You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). For more information, see [Exporting and Importing Objects](../cside/cside-import-objects.md).
 
 ## Task 2: Compile all the objects in your C/AL solution
 
-Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
+Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following tools:  
 - C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
-- [Compile-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
+- [Compile-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run it as an administrator.
 
-## Task 3: Export the application objects to the new TXT syntax
+## Task 3: Export application objects to TXT syntax
 
-Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
+Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It's important to:
 
-- Omit omit all system objects, which have IDs in the 2000000000 range. 
+- Omit omit all system objects, which have IDs in the 2000000000 range.
 - Use the `ExportToNewSyntax` switch to export the objects in a syntax that is compatible with the Txt2Al conversion tool.
 
-The Export-NAVApplicationObject cmdlet will export all objects to a single .txt file. If you imported the test library objects into the database, then you will export the base application objects and the test library separately because later, you will create a separate AL project for each set of files.
+The Export-NAVApplicationObject cmdlet will export all objects to a single .txt file. If you imported the test library objects into the database, then you'll export the base application objects and the test library separately. Later, you'll create a separate AL project for each set of files.
 
-For example, do the following:
+For example, do the following steps:
 
 1. Export the custom base application objects.
     1. Create a folder for storing the exported base application objects to TXT files (for example, c:\export2al\baseapplication).
@@ -71,9 +77,9 @@ For example, do the following:
         Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\testlibrary\bc14testlibrary-part2.txt" -Filter 'Id=130440..139999'
         ```
 
-## Task 4: Create a declaration file for custom .NET assemblies (optional)
+## Task 4: Create .NET assemblies declaration file
 
-If your solution contains .NET interoperability code and control add-ins, you can create a file that contains the declarations to the assemblies. This file will be used when you convert the C/AL TXT files to AL in the next step. Alternatively, after the conversion, you will have to manually add the declarations to objects that use the assemblies.
+If your solution contains .NET interoperability code and control add-ins, you can create a file that contains the assembly declarations. This file will be used when you convert the C/AL TXT files to AL in the next step. You can choose not to create this file, But after the conversion, you'll have to manually add the declarations to objects that use the assemblies.
 
 To create the file, use a text editor or Visual Studio code to create a file that contains the assembly declarations as follows:
 
@@ -96,31 +102,31 @@ dotnet
 
 ```
 
-Save the file with any name and the extension **.al**, for example **mydotnet.al**. Make a note of the path because you will use it in the next step. 
+Save the file with any name and the file type **.al**, for example **mydotnet.al**. Make a note of the path because you'll use it in the next step.
 
-## Task 5: Convert the C/AL TXT files to AL
+## Task 5: Convert C/AL TXT files to AL
 
-With C/AL exported to the new TXT format, you now convert the code to AL using the [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md). The Txt2Al creates .al files for each object in the TXT files. Similar to **Task 3**, if you imported the test library objects into the database, then you will convert the base application objects and the test library separately. 
+With C/AL exported to the new TXT format, you now convert the code to AL using the [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md). The Txt2Al creates .al files for each object in the TXT files. If you imported the test library objects into the database, you'll convert the base application objects and the test library separately.
 
 1. Convert the base application TXT files to AL.
     1. Create a folder for storing the AL files for base application objects (for example, c:\export2al\baseapplication\al).
-    2. Start a command prompt as administrator, and navigate to the folder that contain txt2al.exe file.
+    2. Start a command prompt as administrator, and navigate to the folder that contains txt2al.exe file.
     
         By default, the location is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client.
     3. Run the txt2al command:
     
         ```      
         txt2al --source=C:\export2al\baseapplication --target=C:\export2al\baseapplication\al --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix=BC --rename
-        ```      
+        ```
     
-        If your solution contains .NET interoperability code, the following Txt2Al command line parameters are used to achieve a conversion that requires less manual intervention:  
+        If your solution contains .NET interoperability code, the following Txt2Al command-line parameters are used to achieve a conversion that requires less manual intervention:  
     
         - `--injectDotNetAddIns` injects the definition of standard .NET add-ins in the resulting .NET package. The standard .NET add-ins are a set of add-ins that are embedded into the platform.
-        - `--dotNetAddInsPackage` should be used to point the conversion tool to an AL file containing declarations for the .NET types that represent .NET control addins. Use this to inject a custom set of .NET control add-in declarations. This parameter is only required if you completed **Task 4**, and you set it to point to the location of the dotnet.al file.
+        - `--dotNetAddInsPackage` should be used to point the conversion tool to an AL file containing declarations for the .NET types that represent .NET control add-ins. Use this to inject a custom set of .NET control add-in declarations. This parameter is only required if you completed **Task 4**, and you set it to point to the location of the dotnet.al file.
             
             > [!NOTE]
             >If you are interested in migrating your localization resources, you should use the `--addLegacyTranslationInfo` switch to instruct Txt2Al to generate information about the legacy IDs of the translation code.
-        - `--dotNetTypePrefix` specifies a prefix to be used for all .NET type aliases created during the conversion. This will ensure that no naming conflicts occur with existing types. In the example, `BC` is the prefix.
+        - `--dotNetTypePrefix` specifies a prefix to be used for all .NET type aliases created during the conversion. This paramter will ensure that no naming conflicts occur with existing types. In the example, `BC` is the prefix.
     
         - `--rename` renames the output files to prevent clashes with the source .txt files.
 
@@ -128,8 +134,8 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
 
 2. Convert the test library TXT files to AL.
 
-    This is similar to the previous step.
-    1. Create a folder for storing the AL files for base application objects (for example, c:\export2al\baseapplication\al).
+    This step is similar to the previous step.
+    1. Create a folder for storing the AL files for test application objects (for example, c:\export2al\testlibrary\al).
     2. Run the txt2al command:
     
         ```      
