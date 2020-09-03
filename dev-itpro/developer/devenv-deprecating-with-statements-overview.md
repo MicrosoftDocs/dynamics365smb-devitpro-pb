@@ -201,7 +201,7 @@ The warning has a QuickFix code action that allows you to convert the statement(
 
 ### AL0604 - use of implicit with
 
-Just qualifying with `Rec.` will not solve the problem. The `IsDirty()` will still be vulnerable to upstream change. We want to remove the implicit with, but also offer an opt-in model to avoid forcing everyone to upgrading their code at once.
+Just qualifying with `Rec.` will not solve this problem. The `IsDirty()` will still be vulnerable to upstream change. We want to remove the implicit with, but also offer an opt-in model to avoid forcing everyone to upgrade their code at once.
 
 The solution for that is to introduce pragmas in AL. A pragma is an instruction to the compiler on how it should understand the code. The pragma instructs the compiler not to create an implicit with for the `Rec` variable.
 
@@ -211,7 +211,7 @@ Syntax for the implicit with pragma. The pragma must be used before the beginnin
 #pragma implicitwith disable|restore
 ```
 
-The fixed example under [Pages](devenv-deprecating-with-statements-overview.md#pages) looks like this:
+The fixed example under [Pages](devenv-deprecating-with-statements-overview.md#pages) will then look like this:
 
 ```
 #pragma implicitwith disable
@@ -247,7 +247,7 @@ page 50143 ImplicitWith
 #pragma implicitwith restore
 ```
 
-The QuickFix code-actions will automatically insert the pragma before and after the fixed object. 
+The QuickFix code actions will automatically insert the pragma before and after the fixed object. 
 
 > [!TIP]  
 > Remember to enable **CodeActions** in the settings for the AL Language extension. For more information, see [Code Actions](devenv-code-actions.md).
