@@ -152,6 +152,59 @@ codeunit 50140 MyCodeunit
 } 
 ```
 
+## Pages
+
+Pages on tables have the same type of implicit with, but around the entire object. Everywhere inside the page object the fields and methods from the source tables are directly available without any prefix.
+
+```
+{
+    SourceTable = Customer;
+
+    layout
+    {
+        area(Content)
+        {
+            field("No."; "No.") { }
+            field(Name; Name)
+            {
+                trigger OnValidate()
+                begin
+                    Name := 'test';
+                end;
+            }
+        }
+    }
+
+    trigger OnInit()
+    begin
+        if IsDirty() then Insert()
+    end;
+
+    local procedure IsDirty(): Boolean
+    begin
+        exit(Name <> '');
+    end;
+}
+```
+
+On pages it is not only the code in triggers and procedures that is spanned by the implicit with on the source `Rec`; also the source expressions for the fields are covered.
+
+## Current release warnings and using pragma
+
+From [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 we will begin to warn about the use of explicit and implicit with for extensions with that are targeting the cloud. There will be two different warnings: `AL0604` and `AL0606`.
+
+> [!NOTE]  
+> The warnings will become errors with a future release. We will at the earliest remove with statement support from the [!INCLUDE[prodshort](includes/prodshort.md)] 2021 release wave 2.
+
+### AL0606 - use of explicit with
+
+The warning has a QuickFix code-action that allows you to convert the statement(s) inside the `with` statement to fully-qualified statements. Same as described above.
+
+### AL0604 - use of implicit with
+
+Just qualifying with `Rec.` will not solve the problem. The `IsDirty()` will still be vulnerable to upstream change. We want to remove the implicit with, but also offer an opt-in model to avoid forcing everyone to upgrading their code at once.
+
+The solution for that is to introduce pragmas in AL. A pragma is an instruction to the compiler on how it should understand the code. The pragma instructs the compiler not to create an implicit with for the `Rec` variable.
 
 
 ## See Also
