@@ -539,7 +539,7 @@ This task is only required if you'll reinstall version 14 customization extensio
           "name": "<test library extension name>",
           "publisher": "<test library extension publisher>",
           "version": "<test library extension version>"
-        },
+        }
       ],
       "screenshots": [],
       "platform": "17.0.0.0",
