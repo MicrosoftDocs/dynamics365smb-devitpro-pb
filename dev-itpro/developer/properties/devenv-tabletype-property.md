@@ -52,10 +52,11 @@ Marking a table as **Temporary** is the same as:
 -  Setting all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
 -  Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
 
-Temporary tables aren't synchronized to the SQL database, so they don't follow the same rules about making destructive changes.
+Temporary tables aren't synchronized with the SQL database, so they don't follow the same rules about making destructive changes.
 
 You can change an existing table from **Normal** to **Temporary**. But the table will be deleted from the database when you synchronize the extension. If the table contains data, you'll have to use the ForceSync mode.
 
+For more information, see [Temporary Tables](../devenv-temporary-tables.md).
 
 ## See Also  
 
