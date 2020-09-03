@@ -1,5 +1,5 @@
 ---
-title: "Deprecating Implict and Explict With Statements"
+title: "Deprecating Implicit and Explicit With Statements"
 ms.custom: na
 ms.date: 09/03/2020
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Deprecating Implict and Explict With Statements
+# Deprecating Implicit and Explicit With Statements
 
 
 ## See Also
