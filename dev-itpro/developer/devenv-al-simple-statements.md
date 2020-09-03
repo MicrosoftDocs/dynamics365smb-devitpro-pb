@@ -1,5 +1,6 @@
 ---
 title: "AL Simple Statements"
+description: "Describes the simple statements in AL for Business Central with examples"
 ms.custom: na
 ms.date: 06/22/2020
 ms.reviewer: na
@@ -97,7 +98,7 @@ var
 ## With statements
 
 > [!IMPORTANT]  
-> Using the `with` statement will be deprecated and removed for cloud development in a future release. With the next release this will be a warning, which will become an error in a future release. For more information, see [Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md).
+> Using the `with` statement will be deprecated and removed for cloud development in a future release. With the next release this will be a warning, which will become an error in a future release. For more information, see [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md).
 
 The following syntax shows a with-do statement.  
 

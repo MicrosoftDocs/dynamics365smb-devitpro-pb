@@ -1,6 +1,6 @@
 ---
 title: "Pragma Warning Directive in AL"
-description: 
+description: "The pragma warning instruction on the pragma directive in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/19/2020
