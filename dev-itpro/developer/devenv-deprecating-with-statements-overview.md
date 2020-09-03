@@ -16,7 +16,7 @@ The extensibility model and the AL programming language is a successor to the C/
 
 Using the `with` statement might make code harder to read, but it can also prevent code in Business Central online from being upgraded without changes to the code or even worse - upgraded but with changed behavior.
 
-## Explicit with - simple example
+## The explicit with statement
 
 The following example illustrates code written using the `with` statement; referred to in this context as the explicit `with`.
 
@@ -63,7 +63,7 @@ When the AL compiler searches for the symbol `IsDirty()` in the sample above it 
 
 The first time the search for `IsDirty` finds the name IsDirty, it will not continue to the next top-level group. That means that if a procedure named `IsDirty` is introduced in the Customer table (platform or application) that procedure will be found instead of the procedure in `MyCodeunit`.
 
-The solution for the *explicit* `with` is to stop using it. Using the `with` statement can make your code vulnerable to upstream changes. The example below illustrates how to rewrite the [Simple Example](devenv-deprecating-with-statements-overview.md#explicit-with-simple-example):
+The solution for the *explicit* `with` is to stop using it. Using the `with` statement can make your code vulnerable to upstream changes. The example below illustrates how to rewrite the sample in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement):
 
 ``` 
 // Safe version
@@ -87,6 +87,70 @@ codeunit 50140 MyCodeunit
 } 
 ```
 
+## The implicit with statement
+
+The implicit with is injected automatically by the compiler in certain situations.
+
+### Codeunits
+
+When a codeunit has the `TableNo` property set, then there is an implicit with around the code inside the `OnRun` trigger. This is indicated with the comments in the code example below.
+
+```
+codeunit 50140 MyCodeunit
+{
+    TableNo = Customer;
+
+    trigger OnRun()
+    begin
+        // with Rec do begin
+        SetRange("No.", '10000', '20000');
+        if Find() then
+            repeat
+            until Next() = 0;
+
+        if IsDirty() then
+            Message('Something is not clean');
+        // end;
+    end;
+
+    local procedure IsDirty(): Boolean;
+    begin
+        exit(false);
+    end;
+}
+```
+
+Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it will call the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that may not be the case.
+
+The implicit with on the `Rec` variable can be mitigated by extracting the content of the `OnRun` trigger into a separate procedure that takes the record as a parameter (see the code below). Doing that isolates the implicit with to the `OnRun` trigger and only a name clash with the extracted method name can cause issues.
+
+```
+codeunit 50140 MyCodeunit
+{
+    TableNo = Customer;
+
+    trigger OnRun()
+    begin
+        MyOwnOnRunTrigger(Rec);
+    end;
+
+    local procedure MyOwnOnRunTrigger(Customer: Record Customer)
+    begin
+        Customer.SetRange("No.", '10000', '20000');
+        if Customer.Find() then
+            repeat
+            until Customer.Next() = 0;
+
+        if IsDirty() then
+            Message('Something is not clean');
+    end;
+
+    local procedure IsDirty(): Boolean;
+    begin
+        exit(false);
+    end;
+} 
+```
 
 
 
