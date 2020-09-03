@@ -116,7 +116,7 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
     3. Run the txt2al command:
     
         ```      
-        txt2al --source=C:\export2al\baseapplication --target=C:\export2al\baseapplication\al --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix=BC --rename
+        txt2al --source=C:\export2al\baseapplication --target=C:\export2al\baseapplication\al --injectDotNetAddIns --dotNetAddInsPackage=C:\mydotnet\mydotnet.al --dotNetTypePrefix=BC --rename
         ```
     
         If your solution contains .NET interoperability code, the following Txt2Al command-line parameters are used to achieve a conversion that requires less manual intervention:  
