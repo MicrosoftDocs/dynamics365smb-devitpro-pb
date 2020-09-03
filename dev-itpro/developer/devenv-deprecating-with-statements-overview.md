@@ -161,7 +161,7 @@ On pages it is not only the code in triggers and procedures that is spanned by t
 
 ## Warnings and using pragma
 
-From [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 we begin to warn about the use of explicit and implicit with for extensions that are targeting the cloud. There will be two different warnings: `AL0604` and `AL0606`.
+From [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 we begin to warn about the use of explicit and implicit with for extensions that are targeting the cloud. There are two different warnings: `AL0604` and `AL0606`.
 
 > [!NOTE]  
 > The warnings will become errors with a future release. We will at the earliest remove with statement support from the [!INCLUDE[prodshort](includes/prodshort.md)] 2021 release wave 2.
@@ -251,6 +251,8 @@ It is also possible to use a pragma to suppress individual warnings for one or m
 #pragma warning restore AL0606
 // Suppression of AL0606 is restored to global state.
 ```
+For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
+
 
 ## See Also
 
@@ -259,4 +261,5 @@ It is also possible to use a pragma to suppress individual warnings for one or m
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Pragma Directive](directives/devenv-directive-pragma.md)  
 [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md)  
+[Pragma Warning](directives/devenv-directive-pragma-warning.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)
