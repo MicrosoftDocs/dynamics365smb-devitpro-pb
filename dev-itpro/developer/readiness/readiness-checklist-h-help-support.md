@@ -14,14 +14,14 @@ ms.author: v-liober
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
-| 6. **Help URL** | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.| Required|
+| 6. **Help URL** | You need to provide a URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, and so on.| Required|
 
 Formatting
 - The Help page can be in any language. We do recommend that your help information is in English and are formatted as PDF-files.
-- There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
+- There needs to be a clear distinction between the support and the help site. We require two separate pages (unless a single page covers all Help Link and Support Link requirements). 
 
 Structure
-- Provide an URL for a distinct help page, where prospects can find different types of online product help.
+- Provide a URL for a distinct help page, where prospects can find different types of online product help.
 
 The help page needs to include online documentation that can be used as help.
 - Types of online help that you can include on your help page are:
@@ -31,7 +31,6 @@ The help page needs to include online documentation that can be used as help.
 
 *Example of a help site that is set up according to our best practices:* [Foodware's help page](https://docs.foodware365.com/bcportal/Foodware365QuickStart.htm?b=Expiration%20Management)
 
-- Use the dropdown box to choose which countries your offer supports.
 
 > [!TIP]  
 > *Example:* of the help link-, supported countries/regions-, supported
@@ -43,12 +42,12 @@ details" section of Partner Center:
 ## <a name="Support"></a>Support URL
 | Customer support | Description | Requirements |
 |------------------|-------------|--------------|
-| 20. **Support URL**  | Formatting  Your support page can be in any language. *If not available in English Support contact details must be provided via an attached document.* It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required |
+| 20. **Support URL**  | Formatting  your support page can be in any language. It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required |
 
-There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
 
 Structure
-- You need to provide an URL for a distinct support page where prospects can find different contact options.
+- You need to provide a URL for a distinct support page where prospects can find different contact options
+- The support page should be accessible without a login
 
 The support page needs to include the following contact options and docs: 
 - Email 

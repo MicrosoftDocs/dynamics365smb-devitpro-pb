@@ -30,16 +30,28 @@
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
 #### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+<!--How to resell BC-->
 ## Sell Business Central
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+<!--How to build apps-->
 ## Build apps for Business Central
-<!--#### What the partner's responsibilities are -->
+### [Add your App to AppSource](administration/appsource.md)
+<!-- What the partner's responsibilities are -->
+### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
+### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
+### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Licensing](deployment/licensing.md)
-### [Add your App to AppSource](administration/appsource.md)
+### FAQ about apps
+#### [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
+#### [FAQ about Managing and Submitting your Offer](developer/app-faq-offer.md)
+#### [FAQ about Library and Dependency Apps](developer/app-faq-dependencies-libraries.md)
+#### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
+#### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
+<!--EmbedApp-->
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
@@ -69,6 +81,7 @@
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
+## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -118,6 +131,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
 ### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
 ### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
 ### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
@@ -171,27 +185,28 @@
 ### [Debugging in AL](developer/devenv-debugging.md)
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
+### [Signing an App Package File](developer/devenv-sign-extension.md)
 ## Working with Projects and Workspaces
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
+### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
+### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 ### FAQ about apps
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
 #### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
 #### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
 #### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
-### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
-### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
-### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-### [Exporting Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [Writing Extension Install Code](developer/devenv-extension-install-code.md)
 ### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
 ### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
-## [Signing an App Package File](developer/devenv-sign-extension.md)
+### [Generating Delta Files](developer/devenv-generating-delta-files.md)
+### [Exporting Data for Extensions](developer/devenv-export-data-for-extension.md)
+### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
+### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ## Extending the Base Application
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
@@ -352,6 +367,7 @@
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [Working with AL Methods](developer/devenv-al-methods.md)
+### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
