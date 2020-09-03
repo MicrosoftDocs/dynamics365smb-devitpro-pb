@@ -73,9 +73,13 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 
 ## How does Microsoft handle database sizes?
 
-For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in an environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much database storage capacity we allow each tenant to use for their environments (databases). If a tenant exceeds this limit, we limit administrative actions that create additional environments. Exceeding the storage limit will not interrupt transaction processing within the existing environments.
 
-The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.
+The limit for the database size which can be consumed by all environments (production and sandboxes) of each [!INCLUDE [prodshort](developer/includes/prodshort.md)] customer is 80 GB. The limit is applied to the entire AAD tenant, including all of their environments, not per environment. 
+
+Customers can purchase additional database capacity via their CSP partner. 
+
+When customers purchase additional [!INCLUDE [prodshort](developer/includes/prodshort.md)] production environments, their overall tenant-wide database capacity quota is extended by 4Gb. 
 
 ## Is the Windows client supported?
 
