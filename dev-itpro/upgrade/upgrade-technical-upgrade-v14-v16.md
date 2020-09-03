@@ -70,14 +70,13 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
      
     CodeViewer is no longer used in version 16. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 
-
 ## Task 2: Convert your v14 C/AL application to AL
 
 For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
 ## Task 3: Rewrite code for obsoleted system tables
 
-In version 16, a number of tables have been deprecated and replaced by new tables. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
+In version 17, a number of tables have been deprecated and replaced by new tables compared to version 14. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
 
 <!--
 This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.

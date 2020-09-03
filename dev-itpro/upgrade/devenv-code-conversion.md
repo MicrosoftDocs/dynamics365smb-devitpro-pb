@@ -17,7 +17,6 @@ Before you start, we recommend getting familiar with the basics of setting up an
 > [!NOTE]  
 > Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
 
-
 #### Breaking changes
 
 when converting from C/AL to AL, it is important that you do not introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
