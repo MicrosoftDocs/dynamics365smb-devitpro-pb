@@ -225,7 +225,7 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
     ```
 
     Replace `<150, 160, or 170>` with the folder for your version.
-     
+
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
     > [!NOTE]  
@@ -233,25 +233,33 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
 7. Modify the `app.json` for the project as follows:
 
-    - **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
-
-        ```
-          "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-          "name": "Base Application",
-          "publisher": "Microsoft",
-          "version": "14.5.0.0"
-        ```
-
-        We recommend that you set the "version" to the same version as the C/AL application.  
-    - Set the `target` to `OnPrem`.
+    - For the `"appId"`, use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.
+    - We recommend that you set the `"version"` to the same version as the C/AL application.  
+    - Add and set the `target` to `OnPrem`.
     - Change the `idRange` to include all the IDs used by your base application (or leave blank).
     - Delete the values in the `dependencies` parameter.
+    - Make sure the `platform` parameter matches the target Business Central version. 
+    - Delete the `application` parameter.
+
+    The default values for other parameters can be used for now.
+
+    <!-- **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:-->
+
+    ```
+        "appId": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>",
+        "name": "<Extension Name>",
+        "publisher": "<Publisher name>",
+        "version": "<Version>",
+        "target": "OnPrem",
+        "platform": [<15.0.0.0., 16.0.0.0, or 17.0.0.0>],
+        "idRanges": [ ],
+    ```
 
 8. Copy all of the base application AL files generated in the previous task (**Task 5**) to the root folder of your project.
 
 9. Open the **dotnet.al** file for the project, and make the following changes:
 
-    - Delete all instances of `Version = '14.0.0.0';` for **Microsoft.Dynamics.Nav** assembly declarations.
+    - Delete all instances of `Version = '14.0.0.0';` for **Microsoft.Dynamics.Nav** and **Microsoft.Dynamics.Framework** assembly declarations.
     - For the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
 
         ```
@@ -262,17 +270,18 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
         ```
 10. Delete objects that are related to the client debugger client.
 
-     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15. To avoid compilation errors, delete the following objects:
+     Debugging from the client is no longer supported. It has been replaced by the AL Debugger. The version 14 debugger objects aren't supported on version 15, 16, or 17. To avoid compilation errors, delete the following objects:
     
     - Debugger.Page.al
     - DebuggerBreakpointCondition.Page.al
     - DebuggerBreakpointList.Page.al
+    - DebuggerBreakRules.Page.al
     - DebuggerCallstackFactBox.Page.al
     - DebuggerCodeViewer.Page.al
     - DebuggerManagement.Codeunit.al
     - DebuggerVariableList.Page.al
     - DebuggerWatchValueFactBox.Page.al
-    - SessionList.Page.al
+    - SessionList.Page.al (remove all references from other objects)
         
     You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
     
@@ -280,8 +289,10 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
     The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again.
 
+    For more information about some of the errors, see [Rewriting Code for Breaking Changes](deprecated-tables-fix-compile-errors.md).
+
     > [!TIP]
-    > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in C/AL objects and convert to AL again. This makes it future changes easier to foward push changes because code bases will be similar.
+    > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in C/AL objects and convert to AL again. This makes it future changes easier to forward push changes because code bases will be similar.
     <!--
     The following are known issues that you might encounter:
     1. FlowSelectorTemplate.Page.al

@@ -319,6 +319,105 @@ Replace `"Runtime Package ID"` with `"App Runtime Package ID"`:
 
 Replace `"Runtime Package ID"` with `"App Runtime Package ID"`:
 
+
+## No overload for method 'Initialize' takes 5 arguments. Candidates: built-in method 'Initialize(DotNet "System.String", DotNet "System.String", DotNet "System.String")'
+
+#### Affected objects
+
+|AL File|Object|
+|---------------------|--------------|
+|FlowSelectorTemplate.Page.al|page 6401 "Flow Selector"|
+|FlowTemplateSelector.Page.al|page 6400 "Flow Template Selector"|
+
+#### Solution
+
+FlowSelectorTemplate.Page.al
+
+```   
+usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
+{
+ApplicationArea = Basic,Suite;
+
+trigger ControlAddInReady()
+begin
+/*                                 CurrPage.FlowAddin.Initialize(
+    FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
+    AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+    AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+    AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
+
+LoadTemplates;
+
+AddInReady := true; */
+end;
+``` 
+
+
+FlowTemplateSelector.Page.al:
+
+```   
+usercontrol(FlowAddin; "Microsoft.Dynamics.Nav.Client.FlowIntegration")
+{
+    ApplicationArea = Basic, Suite;
+
+    trigger ControlAddInReady()
+    begin
+/*                                 CurrPage.FlowAddin.Initialize(
+            FlowServiceManagement.GetFlowUrl, FlowServiceManagement.GetLocale,
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl, FlowServiceManagement.GetFlowResourceName, false),
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl, FlowServiceManagement.GetFlowResourceName, false),
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl, FlowServiceManagement.GetFlowResourceName, false));
+
+        LoadTemplates;
+
+        AddInReady := true; */
+    end;
+```  
+
+## There is no argument given that corresponds to the required formal parameter 'overwrite' of 'ImportReportRequest(DotNet "System.Guid", DotNet "System.IO.Stream", DotNet "System.String", DotNet "System.String", DotNet "System.Boolean")'
+
+#### Affected objects
+
+|AL File|Object|
+|---------------------|--------------|
+|PowerBIServiceMgt.Codeunit.al|codeunit 6301 "Power BI Service Mgt."|
+
+#### Solution
+
+```  
+/*             ApiRequest := ApiRequest.ImportReportRequest
+              (PowerBIBlob.Id, BlobStream, PowerBIBlob.Name, not PowerBIReportUploads.IsEmpty);
+            ApiRequestList.Add(ApiRequest); */
+
+/*                         ApiRequest := ApiRequest.ImportReportRequest
+                          (PowerBICustomerReports.Id, BlobStream, PowerBICustomerReports.Name, not PowerBIReportUploads.IsEmpty);
+                        ApiRequestList.Add(ApiRequest); */
+```  
+
+## There is no argument given that corresponds to the required formal parameter 'maxRetries' of 'ImportReports(DotNet "Microsoft.Dynamics.Nav.PowerBIEmbedded.Models.ImportReportRequestList", DotNet "System.String", DotNet "System.String", DotNet "System.String", DotNet "System.Int32")'
+
+#### Affected objects
+
+|AL File|Object|
+|---------------------|--------------|
+|PowerBIServiceMgt.Codeunit.al|codeunit 6301 "Power BI Service Mgt."|
+
+#### Solution
+
+```  
+/*                 if FinancialsAccessToken <> '' then
+                    ApiResponseList := PbiServiceWrapper.GetImportedReports(ImportIdList,
+                        CompanyName, FinancialsAccessToken, GetServiceRetries)
+                else */
+
+/*                  if FinancialsAccessToken <> '' then
+                    ApiResponseList := PbiServiceWrapper.ImportReports(ApiRequestList,
+                        CompanyName, FinancialsAccessToken, GetServiceRetries)
+                else begin
+                    SetIsDeployingReports(false);
+                    exit;
+                end; */
+```  
 ### See Also
 
 [Technical Upgrade](upgrade-technical-upgrade-v15-v16.md)
