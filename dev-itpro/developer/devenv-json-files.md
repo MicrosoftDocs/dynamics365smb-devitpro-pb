@@ -19,6 +19,9 @@ In an AL project there are two JSON files; the `app.json` file and the `launch.j
 > [!NOTE]  
 > For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
 
+> [!IMPORTANT]  
+> The `rad.json` and the `snapshots.json` files should not be modified.
+
 ## <a name="Appjson"></a>App.json file
 
 The following table describes the settings in the `app.json` file:

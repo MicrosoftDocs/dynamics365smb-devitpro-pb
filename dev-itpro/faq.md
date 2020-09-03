@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 09/03/2020
 ---
 
 # FAQ for Dynamics 365 Business Central
@@ -73,9 +73,11 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 
 ## How does Microsoft handle database sizes?
 
-For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in an environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much database storage capacity we allow each tenant to use for their environments (databases). If a tenant exceeds this limit, we limit administrative actions that create additional environments. Exceeding the storage limit will not interrupt transaction processing within the existing environments.
 
-The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.
+The maximum database size for each [!INCLUDE [prodshort](developer/includes/prodshort.md)] customer's tenant is 80 GB. The limit is applied to the entire Azure Active Directory  tenant, including all environments of type production or sandbox, not to individual environments. Customers can purchase additional database capacity through their CSP partner. 
+
+When customers purchase additional [!INCLUDE [prodshort](developer/includes/prodshort.md)] production environments, their overall, tenant-wide database capacity quota is extended by 4 GB.  
 
 ## Is the Windows client supported?
 
