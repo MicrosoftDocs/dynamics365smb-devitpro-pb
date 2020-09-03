@@ -1,5 +1,5 @@
 ---
-title: "Deprecating Implicit and Explicit With Statements"
+title: "Deprecating Explicit and Implicit With Statements"
 ms.custom: na
 ms.date: 09/03/2020
 ms.reviewer: na
@@ -10,13 +10,15 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Deprecating Implicit and Explicit With Statements
+# Deprecating Explicit and Implicit With Statements
 
 The extensibility model and the AL programming language is a successor to the C/AL language. And the `with` statement has up until now been supported in AL.
 
 Using the `with` statement might make code harder to read, but it can also prevent code in Business Central online from being upgraded without changes to the code or even worse - upgraded but with changed behavior.
 
-## Simple example
+## Explicit with - simple example
+
+The following example illustrates code written using the `with` statement; referred to in this context as the explicit `with`.
 
 ```
 codeunit 50140 MyCodeunit
@@ -61,7 +63,7 @@ When the AL compiler searches for the symbol `IsDirty()` in the sample above it 
 
 The first time the search for `IsDirty` finds the name IsDirty, it will not continue to the next top-level group. That means that if a procedure named `IsDirty` is introduced in the Customer table (platform or application) that procedure will be found instead of the procedure in `MyCodeunit`.
 
-The solution for the *explicit* `with` is to stop using it. Using the `with` statement can make your code vulnerable to upstream changes. The example below illustrates how to rewrite the [Simple Example](devenv-deprecating-with-statements-overview.md#simple-example):
+The solution for the *explicit* `with` is to stop using it. Using the `with` statement can make your code vulnerable to upstream changes. The example below illustrates how to rewrite the [Simple Example](devenv-deprecating-with-statements-overview.md#explicit-with-simple-example):
 
 ``` 
 // Safe version
@@ -84,6 +86,9 @@ codeunit 50140 MyCodeunit
     end;
 } 
 ```
+
+
+
 
 ## See Also
 
