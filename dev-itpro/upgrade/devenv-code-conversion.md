@@ -150,6 +150,7 @@ Copy the **CodeViewer** folder from the **Add-ins** folder of the Business Centr
  
 In version 15.0 CodeViewer is no longer used, but it is required because of references thar exist in the converted application. If you omit this step, you might get compilation errors.
 -->
+<!--
 ## Task 6: Create a new application database for development
 
 To build your base application, you will create a new application database on the Business Central version 15 or version 16 platform. This will only be used during development.
@@ -170,6 +171,7 @@ To build your base application, you will create a new application database on th
     ```
     Restart-NAVServerInstance -ServerInstance BC
     ```
+-->
 <!--
 5. Publish system symbols extension (System.app) to application on the server instance. 
 
@@ -181,11 +183,13 @@ To build your base application, you will create a new application database on th
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 -->
-## Task 7: Create and build an AL project for custom base application
+## Task 6: Create an AL project for the base application
 
-In this task, you will create a AL project in Visual Studio code that you will use for building your custom base application extension based on your converted C/AL application.
+In this task, you'll create a AL project in Visual Studio Code. You'll use it for building your custom base application extension based on your converted C/AL application.
 
-1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15.0 or 16.0 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
+1. If you haven't already, install Visual Studio Code and the latest AL Language extension for the target Business Central version (15.0, 16.0, or 17.0).
+
+    For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
 2. Configure Visual Studio Code for optimal performance with AL projects.
 
@@ -193,10 +197,18 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
 3. In Visual Studio Code, from the **Command Palette**, select the **AL Go!** command to create a new project.
 
-    Specify the path for the project, and set the **Target Platform** to **4.0 Business Central 2019 release wave 2** or **5.0 Business Central 2020 release wave 1**. When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
-4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app file) to the folder.
+    Specify the path for the project, and set the **Target Platform** to the option that matches the verion you're upgrading to:
+    
+    - **4.0 Business Central 2019 release wave 2**
+    - **5.0 Business Central 2020 release wave 1**
+    - **6.0 Business Central 2020 release wave 2**
+    
+    When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
+4. Create a **.alpackages** folder in the root folder of the project and then copy the system symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150 or 160>\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
+    This file contains the symbols for all the system tables and codeunits. The System.app file is located where you installed the AL Development Environment. By default, the folder is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150, 160, or 170>\AL Development Environment.
+
+    [What are symbols?](upgrade-overview-v15.md#Symbols).
 5. Delete the **HelloWorld.al** sample file from the project.
 
 6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
@@ -205,12 +217,15 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
     ```
     "al.assemblyProbingPaths": [
-    "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
-    "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150\\RoleTailored Client",
+    "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\<150, 160, or 170>",
+    "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\<150, 160, or 170>\\RoleTailored Client",
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
     ]
     ```
+
+    Replace `<150, 160, or 170>` with the folder for your version.
+     
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
     > [!NOTE]  
