@@ -284,3 +284,4 @@ It is also possible to use a pragma to suppress individual warnings for one or m
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Pragma Directive](directives/devenv-directive-pragma.md)  
 [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md)  
+[AL Simple Statements](devenv-al-simple-statements.md)
