@@ -121,7 +121,7 @@ codeunit 50140 MyCodeunit
 
 Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it will call the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that may not be the case.
 
-The implicit with on the `Rec` variable can be mitigated by extracting the content of the `OnRun` trigger into a separate procedure that takes the record as a parameter (see the code below). Doing that isolates the implicit with to the `OnRun` trigger and only a name clash with the extracted method name can cause issues.
+The implicit with on the `Rec` variable can be mitigated by extracting the content of the `OnRun` trigger into a separate procedure that takes the record as a parameter, see the code below. Doing that isolates the implicit with to the `OnRun` trigger and only a name clash with the extracted method name can cause issues.
 
 ```
 codeunit 50140 MyCodeunit
@@ -188,16 +188,16 @@ Pages on tables have the same type of implicit with, but around the entire objec
 
 On pages it is not only the code in triggers and procedures that is spanned by the implicit with on the source `Rec`; also the source expressions for the fields are covered.
 
-## Current release warnings and using pragma
+## Warnings and using pragma
 
-From [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 we will begin to warn about the use of explicit and implicit with for extensions with that are targeting the cloud. There will be two different warnings: `AL0604` and `AL0606`.
+From [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 we begin to warn about the use of explicit and implicit with for extensions that are targeting the cloud. There will be two different warnings: `AL0604` and `AL0606`.
 
 > [!NOTE]  
 > The warnings will become errors with a future release. We will at the earliest remove with statement support from the [!INCLUDE[prodshort](includes/prodshort.md)] 2021 release wave 2.
 
 ### AL0606 - use of explicit with
 
-The warning has a QuickFix code-action that allows you to convert the statement(s) inside the `with` statement to fully-qualified statements. Same as described above.
+The warning has a QuickFix code action that allows you to convert the statement(s) inside the `with` statement to fully-qualified statements, this means statements as shown in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement).
 
 ### AL0604 - use of implicit with
 
