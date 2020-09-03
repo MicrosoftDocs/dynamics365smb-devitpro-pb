@@ -76,7 +76,7 @@ You manipulate the temporary table variable as you would with any other database
 
 ## Using a SourceTableTemporary property on page objects
 
-Another option for temporary tables is to set the [SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md) on the page that uses the table. This implementation will also use a physical table in the database.
+Another option for temporary tables is to set the [SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md) on all pages that use the table. This implementation will also use a physical table in the database.
 
 ```
 page 50100 MyPage
