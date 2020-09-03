@@ -108,7 +108,7 @@ codeunit 50140 MyCodeunit
             until Next() = 0;
 
         if IsDirty() then
-            Message('Something is not clean');
+            Error('Something is not clean');
         // end;
     end;
 
@@ -119,43 +119,14 @@ codeunit 50140 MyCodeunit
 }
 ```
 
-Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it will call the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that may not be the case.
-
-The implicit with on the `Rec` variable can be mitigated by extracting the content of the `OnRun` trigger into a separate procedure that takes the record as a parameter, see the code below. Doing that isolates the implicit with to the `OnRun` trigger and only a name clash with the extracted method name can cause issues.
-
-```
-codeunit 50140 MyCodeunit
-{
-    TableNo = Customer;
-
-    trigger OnRun()
-    begin
-        MyOwnOnRunTrigger(Rec);
-    end;
-
-    local procedure MyOwnOnRunTrigger(Customer: Record Customer)
-    begin
-        Customer.SetRange("No.", '10000', '20000');
-        if Customer.Find() then
-            repeat
-            until Customer.Next() = 0;
-
-        if IsDirty() then
-            Message('Something is not clean');
-    end;
-
-    local procedure IsDirty(): Boolean;
-    begin
-        exit(false);
-    end;
-} 
-```
+Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it will call the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that may not be the case. If any of these implement an `IsDirty` method with an identical signature that returns `true`, then the example above will fail with an error. If an `IsDirty` method with a different signature is implemented, then this code will not compile and will fail to upgrade.
 
 ## Pages
 
 Pages on tables have the same type of implicit with, but around the entire object. Everywhere inside the page object the fields and methods from the source tables are directly available without any prefix.
 
 ```
+page 50143 ImplicitWith
 {
     SourceTable = Customer;
 
