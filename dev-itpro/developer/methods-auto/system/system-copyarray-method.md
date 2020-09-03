@@ -2,7 +2,7 @@
 title: "CopyArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ The position of the first array element to copy.
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of array elements to copy. If you do not specify Length, all array elements are copied from Position to the last element. Use the following equation to determine valid values.
-1 =< LENGTH =< MAXLEN(ARRAY) - POSITION + 1
+1 =\< LENGTH =\< MAXLEN(ARRAY) - POSITION + 1
           
 
 
