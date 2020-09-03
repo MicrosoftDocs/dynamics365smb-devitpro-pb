@@ -74,10 +74,11 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
+<!--
 ## Task 3: Rewrite code for obsoleted system tables
 
 In version 16, a number of tables have been deprecated and replaced by new tables. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
-
+-->
 <!--
 This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
 -->
@@ -134,9 +135,9 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 ## Task 5: Convert version 14.0 application database
 
-This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 16.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 17.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16.0 as an administrator.
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 as an administrator.
 
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
@@ -176,8 +177,17 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
     ```
     Restart-NAVServerInstance -ServerInstance <BC16 server instance>
     ```
+## <a name="UploadLicense"></a> Task 7: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
 
-## Task 7: Publish system symbols, base application, and test library extensions
+If you have a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
+
+```powershell
+Import-NAVServerLicense -ServerInstance <BC17 server instance> -LicenseFile "<path to the license>"
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
+
+## Task 8: Publish system symbols, base application, and test library extensions
 
 In this task, you'll publish extensions to the version 16.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -190,6 +200,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
     Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
     ```
+
 2. Publish the custom base application extension that you created in **Task 2**.
 
     ```
@@ -202,7 +213,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the test library extension package file>"
     ```
 
-## Task 8: Synchronize tenant
+## Task 9: Synchronize tenant
 
 This task updates the tenant database schema with schema changes in system objects and application objects.
 

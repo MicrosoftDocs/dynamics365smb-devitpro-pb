@@ -505,7 +505,7 @@ This task is only required if you'll reinstall version 14 customization extensio
 
 1. Create a new AL project in Visual Studio Code.
 
-    Follow steps 1 through 5 in **Task 7** to create an AL project. You can give the project any name.
+    Follow steps 1 through 4 in **Task 7** to create an AL project. You can give the project any name.
 
 2. Create an **.alpackages** folder in root of the project. Copy the extension package .app files for the system symbols, base application, and test library to the **.alpackages** folder.
 
