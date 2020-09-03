@@ -251,8 +251,31 @@ page 50143 ImplicitWith
 The QuickFix code-actions will automatically insert the pragma before and after the fixed object. 
 
 > [!TIP]  
-> Remember to enable CodeActions in the settings for the AL Language extension.
+> Remember to enable **CodeActions** in the settings for the AL Language extension. For more information, see [Code Actions](devenv-code-actions.md).
 
+## Suppressing warnings 
+
+There are two ways of suppressing warnings to unclutter warnings while working on other issues and then you can fix the warnings at your own pace.
+
+Warnings can be suppressed globally in an extension by specifying this in the `app.json` file. The syntax is:
+
+```
+"suppressWarnings": [ "AL0606", "AL0604" ]
+```
+For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+
+It is also possible to use a pragma to suppress individual warnings for one or more lines of code.
+```
+#pragma warning disable AL0606
+    // No AL0606 will be shown for code here.
+    with Customer do begin
+        Name := 'Foo';
+        Insert();
+    end;
+
+#pragma warning restore AL0606
+// Suppression of AL0606 is restored to global state.
+```
 
 ## See Also
 
