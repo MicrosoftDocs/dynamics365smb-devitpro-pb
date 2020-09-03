@@ -24,7 +24,7 @@ Specifies the table type.
 |**Normal**|Specifies the table as a normal table in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. This value is the default.|  
 |**CDS**|Specifies the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with [!INCLUDE[crm](../includes/crm_md.md)]. The table is typically based on an entity in [!INCLUDE[crm](../includes/crm_md.md)], such as the Accounts entity.|  
 |**ExternalSQL**|Specifies the table as a table or view in SQL Server that isn't in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.|  
-|**Temporary**|Specifies the table as an in-memory only table in the [!INCLUDE[server](../includes/server.md)]. This table type isn't synchronized to the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. **APPLIES TO:** [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] 2020 release wave 2 and later.|
+|**Temporary**|Specifies the table as an in-memory only table in the [!INCLUDE[server](../includes/server.md)]. This table type isn't synchronized to the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. Specifies the table as an in-memory only table in the Business Central Server. This table type isn't synchronized to the Dynamics 365 Business Central database. <br /><br />**APPLIES TO:** [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] 2020 release wave 2 and later.|
 |**Exchange**|For internal use only.|
 |**MicrosoftGraph**|For for internal use only.|
 

@@ -41,6 +41,8 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 ## Setting the TableType to Temporary
 
+[!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
+
 With this implementation, a physical table isn't created in the database. In the table object, set the `TableType` property to `true`:
 
 ```
