@@ -2,12 +2,12 @@
 title: "Deprecating Explicit and Implicit With Statements"
 ms.custom: na
 ms.date: 09/03/2020
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+author: esbenk
 ---
 
 # Deprecating Explicit and Implicit With Statements
