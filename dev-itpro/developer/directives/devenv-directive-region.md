@@ -1,6 +1,6 @@
 ---
 title: "Region Directive in AL"
-description: 
+description: "The region directive in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/19/2020
