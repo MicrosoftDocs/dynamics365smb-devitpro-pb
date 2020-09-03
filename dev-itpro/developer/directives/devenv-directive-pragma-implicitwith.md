@@ -20,7 +20,6 @@ The `#pragma implicitwith` instruction can enable or disable warnings on usage o
 > [!IMPORTANT]  
 > It is important to be aware that the `implicitwith` warning will become an error in a future release and therefore suppressing it should be a temporary solution.
 
-
 ## Syntax
 
 ```
@@ -30,11 +29,11 @@ The `#pragma implicitwith` instruction can enable or disable warnings on usage o
 
 ## Example
 
-```
+For more background information and examples, see [Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md).
 
-```
 
 ## See Also
 
 [Development in AL](../devenv-dev-overview.md)  
-[AL Development Environment](../devenv-reference-overview.md)
+[AL Development Environment](../devenv-reference-overview.md)  
+[Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)
