@@ -64,4 +64,5 @@ For more information, see [JSON Files](../devenv-json-files.md).
 ## See Also
 
 [Development in AL](../devenv-dev-overview.md)  
-[AL Development Environment](../devenv-reference-overview.md)
+[AL Development Environment](../devenv-reference-overview.md)  
+[Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)
