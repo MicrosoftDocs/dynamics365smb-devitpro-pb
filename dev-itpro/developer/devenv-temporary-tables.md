@@ -41,7 +41,7 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 ## Setting the TableType to Temporary
 
-With this implementation, a physical table isn't created in the database. In the table object, set the [TableType property] to `true`:
+With this implementation, a physical table isn't created in the database. In the table object, set the `TableType` property to `true`:
 
 ```
 table 50100 MyTable
@@ -57,9 +57,9 @@ table 50100 MyTable
 
 This implementation has the same effect as using a temporary record variable or setting the SourceTableTemporary property on a page. But the advantage is that the table schema isn't synchronized with the database. So it doesn't have restrictions on breaking schema changes, like removing a field, changing its data type or length.
 
-It will also improve the performance of BACPAC generation using the sqlpackage command-line tool, compared to temporary tables based on temporary record variables and pages. For more information, see [](/performance/performance-onprem.md#performance-of-bacpac-generation).
+It will also improve the performance of BACPAC generation using the sqlpackage command-line tool, compared to temporary tables based on temporary record variables and pages. For more information, see [Performance of BACPAC generation](/performance/performance-onprem.md#performance-of-bacpac-generation).
 
-### Changing the table type
+#### Changing the table type
 
 You can change from **Normal** to **Temporary**, and the other way around. When changing **Normal** to **Temporary** the table, you'll have to synchronize the extension with the database. This step will remove the table from the database. So if the table contains data, you'll have to synchronize the schema using the ForceSync mode.
 
