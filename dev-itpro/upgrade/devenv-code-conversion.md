@@ -204,13 +204,13 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
     - **6.0 Business Central 2020 release wave 2**
     
     When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
-4. Create a **.alpackages** folder in the root folder of the project and then copy the system symbols extension (System.app file) to the folder.
+4. Delete the **HelloWorld.al** sample file from the project.
+
+5. Create a **.alpackages** folder in the root folder of the project and then copy the system symbols extension (System.app file) to the folder.
 
     This file contains the symbols for all the system tables and codeunits. The System.app file is located where you installed the AL Development Environment. By default, the folder is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150, 160, or 170>\AL Development Environment.
 
     [What are symbols?](upgrade-overview-v15.md#Symbols).
-5. Delete the **HelloWorld.al** sample file from the project.
-
 6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
     Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
@@ -233,27 +233,30 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
 7. Modify the `app.json` for the project as follows:
 
-    - For the `"appId"`, use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.
-    - We recommend that you set the `"version"` to the same version as the C/AL application.  
-    - Add and set the `target` to `OnPrem`.
-    - Change the `idRange` to include all the IDs used by your base application (or leave blank).
+    - For the `"id"`, use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.
+    - Set the `"name"` and `"publisher"`.
+    - Set the `"version"`. You can set it to any valid version number. We recommend that you set it to the same version as the C/AL application.  
     - Delete the values in the `dependencies` parameter.
     - Make sure the `platform` parameter matches the target Business Central version. 
     - Delete the `application` parameter.
-
-    The default values for other parameters can be used for now.
+    - Change the `idRange` to include all the IDs used by your base application (or leave blank).
+    - Add and set the `target` to `OnPrem`.
 
     <!-- **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:-->
 
     ```
-        "appId": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>",
+        "id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>",
         "name": "<Extension Name>",
         "publisher": "<Publisher name>",
         "version": "<Version>",
-        "target": "OnPrem",
+        "dependencies": [],
         "platform": [<15.0.0.0., 16.0.0.0, or 17.0.0.0>],
         "idRanges": [ ],
+        "target": "OnPrem",
+        ...
     ```
+
+    The default values for other parameters can be used for now.
 
 8. Copy all of the base application AL files generated in the previous task (**Task 5**) to the root folder of your project.
 
@@ -439,43 +442,130 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
 
 -->
 
-When all errors are fixed, the custom base application package (.app) will be created.
+When all errors are fixed, the an extension package (.app file) is created for the base application.
 
-## Task 8: Create and build an AL project for the test library
+## Task 7: Create AL extension for test library
 
-If you converted the test library form C/AL to AL, you will now create and build a project for test library, similar to what you did for the base application.
+If you converted the test library form C/AL to AL, you'll now create and build a project for test library, similar to what you did for the base application.
 
-1. Follow steps 1 through 5 in **Task 7** to create an AL project for the test library.  
+1. Follow steps 1 through 4 in **Task 6** to create an AL project for the test library.
+
+2. Create a **.alpackages** folder in the root folder of the project. Then copy the following files to the folder:
+
+  - The same System.app file that you used when building the base application.
+  - The .app file that was built for your base application. This file is required because the test library has a dependency on the base application.
 
 2. As with base application project, you have to modify the `app.json` file, but in this case, you have to change the version and add a dependency on the base application that you created.
 
-    - Set the `"version"` to the old application version, such as `14.5.0.0`.
-    - Set the `"dependencies"` to include information about your custom the base application. 
+    - For the `"id"`, use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.
+    - Set the `"name"` and `"publisher"` similar to what you set for the base application.
+    - Set the `"version"`. You can set it to any valid version number. We recommend that you set it to the same version as the C/AL application.  
+    - Set the `"dependencies"` parameter to include information about the base application that you just created. 
+    - Make sure the `platform` parameter matches the target Business Central version. 
+    - Delete the `application` parameter.
+    - Change the `idRange` to include all the IDs used by your base application (or leave blank).
+    - Add and set the `target` to `OnPrem`.
 
-        ``` 
+
+    <!-- **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:-->
+
+    ```
+        "Id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>",
+        "name": "<Extension Name>",
+        "publisher": "<Publisher name>",
+        "version": "<Version>",
+        "target": "OnPrem",
+        "platform": [<15.0.0.0., 16.0.0.0, or 17.0.0.0>],
+        "idRanges": [ ],
         "dependencies": [
         {
-            "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-            "publisher": "Microsoft",
-            "name": "Base Application",
-            "version": "14.5.0.0"
+            "Id": "<appId of your new base application extension>",
+            "publisher": "<base application publisher name>",
+            "name": "<Base application name>",
+            "version": "<Base application version number>"
         }
         ],
-        ```
-    - Set the `target` to `OnPrem`.
-    - Change the `idRange` to include all the IDs used by your test application (or leave blank).
-3. Copy all of the AL files that you generated for the test library in **Task 5** to the root folder of your project.
+        ...
+    ```
+
+    The default values for other parameters can be used for now.
+
+3. Copy all of the AL files that you generated for the test library in **Task 5** to the project's root folder.
 4. Open the **dotnet.al** file for the project, and make the following changes:
 
     - Delete all instances of `Version = '14.0.0.0';` for **Microsoft.Dynamics.Nav** assembly declarations.
+
 5. Build the project.
+
+Fix any compilation errors. When all errors are fixed, the an extension package (.app file) is created for the base application.
+
+## Task 8: Create an Application extension
+
+This task is only required if you'll reinstall version 14 customization extensions, like Microsoft and third-party extensions. The Application extension is basically an app.json file that defines the dependencies for these extensions. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+
+1. Create a new AL project in Visual Studio Code.
+
+    Follow steps 1 through 5 in **Task 7** to create an AL project. You can give the project any name.
+
+2. Create an **.alpackages** folder in root of the project. Copy the extension package .app files for the system symbols, base application, and test library to the **.alpackages** folder.
+
+    This step is required because for dependencies.
+
+3. Modify the app.json file to look similar to the following code:
+
+    ```json
+    {
+      "id": "cc377b84-bf2d-4b22-ac91-a7dba1f628bd",
+      "name": "Application",
+      "publisher": "<publisher name>",
+      "version": "<N.N.N.N>",
+      "propagateDependencies": true,
+      "brief": "",
+      "description": "",
+      "privacyStatement": "",
+      "EULA": "",
+      "help": "",
+      "url": "",
+      "logo": "",
+      "dependencies": [
+        {
+          "id": "<custom base application extension ID>",
+          "name": "<custom base application name>",
+          "publisher": "<custom base application publisher>",
+          "version": "<custom base application version>"
+        },   
+        {
+          "id": "<test library extension ID>",
+          "name": "<test library extension name>",
+          "publisher": "<test library extension publisher>",
+          "version": "<test library extension version>"
+        },
+      ],
+      "screenshots": [],
+      "platform": "17.0.0.0",
+      "idRanges": [ ],
+      "contextSensitiveHelpUrl": "https://ALProject27.com/help/",
+      "showMyCode": true,
+      "runtime": "6.0"
+    }
+    ```
+
+    It's important that:
+
+    - `"name"` is set to `"Application"`
+    - `"propagateDependencies"` is set to `"true"`
+    - `"dependencies"` is set to identify the custom base application and test library extensions.
+    - `"platform"` matches your installation, which can be either `"15.0.0.0"` or `"16.0.0.0"`.
+
+4. Build the extension package.
 
 ## Next Steps
 
 If you are performing a technical upgrade from version 14.0 to version 15.0 or 16, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
 
     - [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
-    - [Technical Upgrade to to version 15.0]](upgrade-technical-upgrade-v14-v16.md#Preparedb)
+    - [Technical Upgrade to to version 16.0](upgrade-technical-upgrade-v14-v16.md#Preparedb)
+    - [Technical Upgrade to to version 17.0](upgrade-technical-upgrade-v14-v17.md#Preparedb)
 
 <!--
 ## Task 11: Publish your project
