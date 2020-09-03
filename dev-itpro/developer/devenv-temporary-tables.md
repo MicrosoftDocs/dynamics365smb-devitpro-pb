@@ -63,7 +63,7 @@ It will also improve the performance of BACPAC generation using the sqlpackage c
 
 You can change from **Normal** to **Temporary**, and the other way around. When changing **Normal** to **Temporary** the table, you'll have to synchronize the extension with the database. This step will remove the table from the database. So if the table contains data, you'll have to synchronize the schema using the ForceSync mode.
 
-### Using a temporary record variable
+## Using a temporary record variable
 
 With this implementation, a physical table isn't created in the database. You create a global or local variable of the type record and set the [Temporary Property](properties/devenv-temporary-property.md) next to it. The variable that holds a temporary table is defined just like any other global or local variable. The syntax is shown in the following example:
 
@@ -74,7 +74,7 @@ var
 
 You manipulate the temporary table variable as you would with any other database table. For example, you can apply filters and do searches. For more information about the operations you can do, see [Record Data Type](methods-auto/record/record-data-type.md).
 
-### Using a SourceTableTemporary property on page objects
+## Using a SourceTableTemporary property on page objects
 
 Another option for temporary tables is to set the [SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md) on the page that uses the table. This implementation will also use a physical table in the database.
 
