@@ -18,17 +18,17 @@ author: solsen
 This topic provides step-by-step instructions about how to set up and configure virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps in Common Data Service.
 
 ## Getting the solution
-The Common Data Service solution for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [[!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
+The Common Data Service solution for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [[!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity](https://appsource.microsoft.com/product/dynamics-crm/@henrikwh).
 
 Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
 
 - **Dynamics365Company** - This adds the **Company** entity, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities with a PrimaryCompanyContext metadata value.
 
-- **MicrosoftOperationsVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity feature.
+- **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity feature.
 
-- **MicrosoftOperationsERPCatalog** - This provides a list of available [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities through the mserp_financeandoperationsentity virtual entity.
+- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities through the mserp_financeandoperationsentity virtual entity.
 
-- **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
+- **MicrosoftBusinessCentralVEAnchor** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible. @lukasz
 
 ## Authentication and authorization
 
