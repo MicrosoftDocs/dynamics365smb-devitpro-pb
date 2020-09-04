@@ -31,7 +31,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Area | Description |Online|On-premises|Extension support|More information|
 |-----|-------------|------|-----------|-----------------|--------|
 |AL method trace|Provides information about long running AL methods.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-al-function-trace.md) |
-|App key vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|![check](../developer/media/check.png)|![check](../developer/media/check.png)<sup>[\[1\]](#1)|![check](../developer/media/check.png)<sup>[\[1\]](#1)|[See...](telemetry-extension-key-vault-trace.md) |
+|App key vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|![check](../developer/media/check.png)<sup>[\[1\]](#1)|![check](../developer/media/check.png)<sup>[\[1\]](#1)|![check](../developer/media/check.png)|[See...](telemetry-extension-key-vault-trace.md) |
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check](../developer/media/check.png)|||[See...](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-company-lifecycle-trace.md) |
 |Database lock timeouts|Provides information about database locks that have timed out. |![check](../developer/media/check.png)|![check](../developer/media/check.png)||[See...](telemetry-database-locks-trace.md)|
