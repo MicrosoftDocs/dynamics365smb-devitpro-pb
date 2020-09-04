@@ -290,7 +290,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension>"
     ```
 
-## Task 8: Restart server instance
+## Task 7: Restart server instance
 
 Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for completing the upgrade.
 
@@ -300,7 +300,7 @@ Restart-NAVServerInstance -ServerInstance <server instance name>
 
 This step is important, otherwise you might experience issues when you run the data upgrade.
 
-## Task 9: Synchronize tenant
+## Task 8: Synchronize tenant
 
 In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -365,7 +365,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 10: Upgrade data
+## Task 9: Upgrade data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -404,7 +404,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 11: Install 3rd-party extensions
+## Task 10: Install 3rd-party extensions
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -412,7 +412,7 @@ Complete this task to install third-party extensions for which a new version was
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
-## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
