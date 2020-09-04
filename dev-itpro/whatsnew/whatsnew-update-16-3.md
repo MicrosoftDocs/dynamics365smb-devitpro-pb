@@ -16,8 +16,6 @@ author: ManuelaHochstrasser
 Would you like to know what has changed in update 16.3?
 Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting. 
 
-[Jump right to downloading update 16.3](https://www.microsoft.com/en-us/download/details.aspx?id=101461).
-
 ## Hotfixes
 
 [Link to Hotfixes](https://support.microsoft.com/help/4563407).
@@ -32,7 +30,7 @@ Below you'll find an overview and relevant links to what has been done on hotfix
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
 
 ## Upgrade to 16.3
 
@@ -41,11 +39,11 @@ Please note that new customers will automatically get the latest builds of [!INC
 ## Good to know
 
 **Keep track on deployed builds**  
-In between the Microsoft Dynamics 365 Business Central minor updates we deploy new builds as they become available. Visit the [Update History](https://support.microsoft.com/en-us/help/4553289/update-history-for-microsoft-dynamics-365-business-central) to see the latest important builds that have been pushed out automatically since last minor update.
+In between the Microsoft Dynamics 365 Business Central minor updates we deploy new builds as they become available. Visit the [Update History](https://support.microsoft.com/help/4553289/update-history-for-microsoft-dynamics-365-business-central) to see the latest important builds that have been pushed out automatically since last minor update.
 
 **Want to improve the performance of Business Central?**  
 Visit [aka.ms/bcperformance](https://aka.ms/bcperformance) 
 and learn about best practices, dos and don'ts and different ways to make changes with a performance impact. The Performance Tuning Guide will help you understand and improve the performance of Business Central whether you are a functional consultant, a developer, or an administrator. 
 
-**Are you a Business Central Wave ‘Champ’?**  
-Did you attend the #MSDyn365BCVirtualEvent on June 3rd? Don’t forget to watch the 15+ virtual on demand sessions featuring new innovations, tools, and in-depth product demonstrations from the experts. The best part of it - it’s all for free! You just need to [register](https://aka.ms/virtual/businesscentral/2020RW1) to become a Business Central ‘Wave Champ’ and boost your knowledge.  
+**Are you a Business Central Wave 'Champ'?**  
+Did you attend the #MSDyn365BCVirtualEvent on June 3rd? Don't forget to watch the 15+ virtual on demand sessions featuring new innovations, tools, and in-depth product demonstrations from the experts. The best part of it - it's all for free! You just need to [register](https://aka.ms/virtual/businesscentral/2020RW1) to become a Business Central 'Wave Champ' and boost your knowledge.  

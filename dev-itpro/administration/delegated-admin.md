@@ -47,6 +47,8 @@ The following tasks are *not* available to the delegated administrator:
 
     Instead, a user who is assigned the SUPER permission set in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] can run the assisted setup guide.
 
+- Access a web service by using a Web Service Access key.
+
 ## Managing delegated permissions as a partner
 
 Delegated administrators are not visible in the customer's Azure AD user list and cannot be managed by the customer's internal admin. However, when a delegated admin logs into a Business Center environment on behalf of a customer, they are automatically created as a user inside the Business Central environment. This means that the actions performed by a delegated admin are logged in Business Central, such as posting documents and, associated with their user ID.  

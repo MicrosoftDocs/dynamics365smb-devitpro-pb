@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/01/2020
+ms.date: 07/22/2020
 ---
 
 # The Business Central Administration Center API
@@ -22,10 +22,14 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API en
 
 For more information about administrative capabilities, see [The Business Central Administration Center](tenant-admin-center.md). This article describes the API contracts for these administrative capabilities.
 
+[!INCLUDE [admin-azure-ad-preconsent](../developer/includes/admin-azure-ad-preconsent.md)]
+
 ## Location
+
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
 
-## Setting up Azure Active Directory (AAD) based authentication
+## Setting up Azure Active Directory (Azure AD) based authentication
+
 Sign in to the [Azure portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
 1. Follow the instructions in the [Integrating applications with Azure Active Directory](/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
