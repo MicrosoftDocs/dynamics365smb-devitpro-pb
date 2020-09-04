@@ -233,14 +233,20 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
 7. Modify the `app.json` for the project as follows:
 
-    - For the `"id"`, use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.
-    - Set the `"name"` and `"publisher"`.
-    - Set the `"version"`. You can set it to any valid version number. We recommend that you set it to the same version as the C/AL application.  
-    - Delete the values in the `dependencies` parameter.
-    - Make sure the `platform` parameter matches the target Business Central version. 
-    - Delete the `application` parameter.
-    - Change the `idRange` to include all the IDs used by your base application (or leave blank).
-    - Add and set the `target` to `OnPrem`.
+
+    |Parameter|Value|
+    |---------|-----|
+    |`"id"|Use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.|
+    |`"name"`|A name for the extension.|
+    |`"publisher"`|The publisher name.|
+    |`"version"`| You can set it to any valid version number. We recommend that you set it to the same version as the C/AL application. |
+    |`"dependencies"`  |Delete the `"dependencies"` parameter or leave it blank.|
+    |`"platform"` |Set to match Business Central version you're upgrading to. |
+    |`"application"`|Delete the `"application"` parameter.|
+    |`"idRange"`|Include all the IDs used by your base application (or leave blank).|
+    |`"target"`|Add it ans set `"OnPrem"`|
+
+    The default values for other parameters can be used for now.
 
     <!-- **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:-->
 
@@ -457,16 +463,20 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
 2. As with base application project, you have to modify the `app.json` file, but in this case, you have to change the version and add a dependency on the base application that you created.
 
-    - For the `"id"`, use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.
-    - Set the `"name"` and `"publisher"` similar to what you set for the base application.
-    - Set the `"version"`. You can set it to any valid version number. We recommend that you set it to the same version as the C/AL application.  
-    - Set the `"dependencies"` parameter to include information about the base application that you just created. 
-    - Make sure the `platform` parameter matches the target Business Central version. 
-    - Delete the `application` parameter.
-    - Change the `idRange` to include all the IDs used by your base application (or leave blank).
-    - Add and set the `target` to `OnPrem`.
 
+    |Parameter|Value|
+    |---------|-----|
+    |`"id"|Use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.|
+    |`"name"`|A name for the extension.|
+    |`"publisher"`|The publisher name, typically the same as for the base application.|
+    |`"version"`| You can set it to any valid version number. We recommend that you set it to the same version as the C/AL application. |
+    |`"dependencies"`  |Include information about the base application that you just created:`"id"`, `"name"`, `"publisher"`, `"version"`|
+    |`"platform"` |Set to match Business Central version you're upgrading to. |
+    |`"application"`|Delete the `"application"` parameter.|
+    |`"idRange"`|Include all the IDs used by your base application (or leave blank).|
+    |`"target"`|Add it ans set `"OnPrem"`|
 
+    The default values for other parameters can be used for now.
     <!-- **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:-->
 
     ```
@@ -488,7 +498,7 @@ If you converted the test library form C/AL to AL, you'll now create and build a
         ...
     ```
 
-    The default values for other parameters can be used for now.
+
 
 3. Copy all of the AL files that you generated for the test library in **Task 5** to the project's root folder.
 4. Open the **dotnet.al** file for the project, and make the following changes:
@@ -555,7 +565,7 @@ This task is only required if you'll reinstall version 14 customization extensio
     - `"name"` is set to `"Application"`
     - `"propagateDependencies"` is set to `"true"`
     - `"dependencies"` is set to identify the custom base application and test library extensions.
-    - `"platform"` matches your installation, which can be either `"15.0.0.0"` or `"16.0.0.0"`.
+    - `"platform"` matches your installation, which can be either `"15.0.0.0"`, `"16.0.0.0"`, or `"17.0.0.0"`.
 
 4. Build the extension package.
 
