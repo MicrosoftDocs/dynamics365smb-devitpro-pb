@@ -28,7 +28,11 @@ The Performance Toolkit is two extensions, the **[!INCLUDE[prodshort](includes/p
 Typically, you'll probably want to run the suite for multiple sessions at the same time. In that case, after you configure the suite, use the **Start** action. However, if you want to do lighter weight testing, for example, if your suite will send a lot of calls to your SQL server and you want to test that, you can choose **Start in Single Run mode** to run the suite for a single session. 
 
 ## Running in the Background and Foreground
-To limit the impact on performance, uou can run only one suite in the foreground. If your suite has multiple lines, and you choose to run in single mode, only one line will be run at a time. <!--this seems like it needs something--> 
+On the suite lines, the **Run in Foreground** check box lets you speed up run when you're in single run mode. When you run a suite in the foreground, settings for user delays, number of users, and iterations are disregarded.
+
+Use run in foreground if you want to run the suite in single run mode. You can also use it in combination with background tasks, but that will run each session individually. You can only run one session in the foreground. Used only for one user, such as a warehouse manager who makes reservations. <!--this seems like it needs something--> 
+
+To limit the impact on performance, you can run only one suite in the foreground. If your suite has multiple lines, and you choose to run in single mode, only one line will be run at a time.
 
 ## Configuring a suite 
 The settings to configure a suite depend on the environment that you want to simulate. The following steps provide an example for testing multiple sessions, but they also apply if you want to do a single run. We'll configure a test suite for scenario with the following stats:
@@ -42,9 +46,16 @@ The settings to configure a suite depend on the environment that you want to sim
 
 1. Search for **BCPT Suites**, and then choose the related link.
 2. Choose **New** to open the BCPT Suite page.
-3. In the **Code**, **Description**, and **Tag** fields, provide an identifier, some information about the test, and a tag that you can use to find the suite later.
-4. Specify how long you want the test to run. 
-    1. 1 work day works with duration field to update the work date starts at field, and you use it to test processes that have deadlines, such as payments.
+3. In the **Code**, **Description**, and **Tag** fields, provide an identifier, some information about the test, and a tag that you can use to find the results of the suite on the Log Entries page.
+4. Define timing for the run. 
+    1. The **1 Work Day Corresponds to** field works with the **Duration (minutes)** field to update the **Work Date Starts at** field, and you use it to test processes that have deadlines, such as payments. The duration can be up to 240 minutes.
+    2. The **Default Min. User Delay** and **Default Max. User Delay** fields let you simulate pauses in the action, for example, when someone goes for a cup of coffee. You must specify a delay.
+5. Specify the base version to compare 
+   > [!TIP]
+   > To change the value in the **Base Version** field, you might need to turn on Edit mode.
+1. Configure lines for the suite. 
+    1. In the **Codeunit** field,  
+
 
 ## Starting the run from the command line
 Open a PowerShell command prompt, and make sure you have installed the necessary binaries and scripts. <!--not sure whether they still need to check the binaries and scripts. If they do, where and how do they check that?--> The commands use the example from above. <!--To start a test on the local machine (“on-prem”), run this command: command is missing-->
@@ -81,11 +92,11 @@ TestRunnerPage 150010 -SuiteCode "TRADE-50U"
 > When you start from the command ine, there is a two second delay between new sessions.
 
 ## Analyzing log entries
-After running the suite, you can choose **Log Entries** to see what happened.
+After running the suite, you can choose **Log Entries** to see what happened. Use the **Show Errors** and **Show sessions running at the same time as this** buttons to apply filters to the results. For example, filtering can help you troubleshooting errors by showing you what a user was doing when an error occurred. You can use the **Open in Excel** action to build dashboards that can help you visualize performance results.
 
 ********Image of the Log Entries page******************
 
-Log entries are listed in the order that they were created, so the different scenarios are mixed. Each test run is identified by the value in the **Version No.** fields. 
+Log entries are listed in the order that they were created, which means that the different scenarios are mixed. <!--they need to apply filters to group results, I guess?--> Each run is identified by the value in the **Version No.** fields. 
 
 By default, the **Log Entries** page is filtered to show the latest version, but you can change or remove the filter if you want to compare runs. 
 
