@@ -2,7 +2,7 @@
 title: "WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,13 @@ The ID of the report that you want to run. If the report you specify does not ex
         
 *ExtendedFormat*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If you set this variable to true, then XML elements will include the following attributes attributes:
+If you set this variable to true, then XML elements will include the following attributes:
 -   ElementType="Parameter|Column|DataItem". Specifies the element type as defined for the report in Report Designer. Parameter is typically used for elements, such as captions.
 -   ElementId="ID". Specifies the ID that is assigned to the element by its ID Property.
 -   DataType="Type". Specifies the data type of the element.
 If you omit this parameter or set it to false, then the element attributes are not included in the XML. This is the recommended setting when you will use the Word XML part in Word for modifying the report layout because the XML is simpler.
-The following example illustrates an XML element that has the ExtendedFormat set to false: <CompanyName ElementType="Column" ElementId="3" DataType="OemText">
-The following example illustrates the same XML with the ExtendedFormat set to true:<CompanyName>
+The following example illustrates an XML element that has the ExtendedFormat set to true: \<CompanyName ElementType="Column" ElementId="3" DataType="OemText"\>
+The following example illustrates the same XML with the ExtendedFormat set to false:\<CompanyName\>
           
 
 
