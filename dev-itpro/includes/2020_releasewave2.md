@@ -1,1 +1,1 @@
-<Token> **INTRODUCED IN:** Business Central 2020 release wave 2</Token>
+<Token> **APPLIES TO:** Business Central 2020 release wave 2 and later</Token>
