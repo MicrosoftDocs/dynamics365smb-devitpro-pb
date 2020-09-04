@@ -12,13 +12,16 @@ author: jswymer
 ---
 # Creating Custom Telemetry Events for Event Log Monitoring
 
-[!INCLUDE[on_prem_only_v2](includes/on_prem_only_v2.md)]
+[!INCLUDE[on_prem_only_v2](includes/on_prem_only_v2.md)].
 
-This article explains how to create custom telemetry trace events in AL code that will be sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. 
+This article explains how to create custom telemetry trace events in AL code that will be sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine.
+
+> [!NOTE]
+> The SENDTRACETAG method is marked as obsolete in [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 (v17). You can still use it, but we recommend that you send traces to Application Insights using the LOGMESSAGE method instead. For more information, see [Creating Custom Telemetry Traces for Application Insights Monitoring](devenv-instrument-application-for-telemetry-app-insights.md).
 
 ## Create custom telemetry events
 
-To create a custom telemetry event, you use the [SENDTRACETAG method](methods/devenv-sendtracetag-method.md) in code. You can use the SENDTRACETAG method in any object, trigger, or method. The SENDTRACETAG method has the following syntax:
+To create a custom telemetry event, you use the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code. You can use the SENDTRACETAG method in any object, trigger, or method. The SENDTRACETAG method has the following syntax:
 
 ```  
 SENDTRACETAG(Tag, Category, Verbosity, Message[, DataClassification])  
