@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2020 Release Wave 2
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 (version 17) is the third major release that is fully AL-based. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, has been deprecated. From an application perspective, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is now extension-based only. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has been moved into separate modules. These modules are combined into an extension known as the System Application. This change will influence how you do the upgrade compared to earlier releases.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 (version 17) is the third major release that is fully AL-based. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is now extension-based only. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has been moved into separate modules. These modules are combined into an extension known as the System Application. This change will influence how you do the upgrade compared to earlier releases.
 
 ## Upgrade path
 
@@ -30,7 +30,7 @@ Your current version doesn't have to be the latest update for the version. Howev
 
 When upgrading your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) solution to version 17, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade levels that you follow to get to this state, as illustrated in the following figure. We recommend that you refactor to the system application as a minimum.
 
-![Upgrade path on Business Central application](../developer/media/bc16-upgrade-paths-v1.png "Upgrade paths")
+![Upgrade path on Business Central application](../developer/media/bc17-upgrade-paths-v1.png "Upgrade paths")
 
 ### Technical Upgrade
 
@@ -40,7 +40,7 @@ When upgrading from version 14, part of the technical upgrade process includes c
 
 ## New and changed features
 
-There are several new and changed platform and application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2. These changes affect users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2020 release wave 2](/dynamics365-release-plan/2020wave1/dynamics365-business-central/).
+There are several new and changed platform and application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2. These changes affect users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/).
 
 To take advantage of these features, you'll have to do an application code upgrade, not just a technical (platform) upgrade. 
 
