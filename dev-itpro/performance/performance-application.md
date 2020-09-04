@@ -14,6 +14,9 @@ author: KennieNP
 
 The topics in this section are tips and tricks on how to set up [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
+## Un-install extensions that you do not use
+The extensions you have installed can affect the overall system performance. So if you have installed an app from AppSource but later discovers that it doesn’t solve your business needs, then uninstall it. The same advice applies to the extension that come preinstalled on your environment. For example, do uninstall all migration extension once you have migrated data, or if you do not intend to migrate data.
+
 ## Run things in the background
 
 It's often desirable to offload work from the user session to happen in the background. Examples are:
@@ -66,6 +69,14 @@ These areas of the application are known to cause a performance impact and requi
 - [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
 - [Change log](/dynamics365/business-central/across-log-changes)  
 
+## Manage the database access intent on reports, API pages, and queries
+
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server to load-balance analytical workloads. **Read Scale-Out** is built in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, but it can also be enabled for on-premises.
+
+**Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload. This way, they won't affect the performance of business processes.
+
+A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. **Read Scale-Out** is controlled by the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent).
+
 ## Don't do these things
 
 Finally, make sure that you don't repeat these performance mistakes that we have seen cause massive performance issues for customers:
@@ -77,13 +88,6 @@ Finally, make sure that you don't repeat these performance mistakes that we have
 - Don't postpone setting up global dimensions, because it can be a heavy operation when you have much data. Set up correct global dimensions to avoid changing them later on.
 - Don't run the **Copy company** operation during business hours.
 
-## Manage the database access intent on reports, API pages, and queries
-
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server to load-balance analytical workloads. **Read Scale-Out** is built in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, but it can also be enabled for on-premises.
-
-**Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload. This way, they won't affect the performance of business processes.
-
-A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. **Read Scale-Out** is controlled by the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent).
 
 ## See Also
 
