@@ -262,8 +262,6 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
         ...
     ```
 
-    The default values for other parameters can be used for now.
-
 8. Copy all of the base application AL files generated in the previous task (**Task 5**) to the root folder of your project.
 
 9. Open the **dotnet.al** file for the project, and make the following changes:
@@ -290,10 +288,10 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
     - DebuggerManagement.Codeunit.al
     - DebuggerVariableList.Page.al
     - DebuggerWatchValueFactBox.Page.al
-    - SessionList.Page.al (remove all references from other objects)
-        
+    - SessionList.Page.al
+
     You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
-    
+
 11. Build and compile your project (press Ctrl+Shift+B).
 
     The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again.
@@ -302,8 +300,6 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
     > [!TIP]
     > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in C/AL objects and convert to AL again. This makes it future changes easier to forward push changes because code bases will be similar.
-    
-
 
 When all errors are fixed, the an extension package (.app file) is created for the base application.
 
