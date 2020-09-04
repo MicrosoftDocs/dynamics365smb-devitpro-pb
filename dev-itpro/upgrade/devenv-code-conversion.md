@@ -413,6 +413,7 @@ This task is only required if you'll reinstall version 14 customization extensio
     It's important that:
 
     - `"name"` is set to `"Application"`
+    - `"version"` matches the old application version for version 14 extensions.
     - `"propagateDependencies"` is set to `"true"`
     - `"dependencies"` is set to identify the custom base application and test library extensions.
     - `"platform"` matches your installation, which can be either `"15.0.0.0"`, `"16.0.0.0"`, or `"17.0.0.0"`.
