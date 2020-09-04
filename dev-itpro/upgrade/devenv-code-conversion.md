@@ -11,6 +11,7 @@ ms.author: jswymer
 # Code Conversion from C/AL to AL
 
 This article explains how to convert your existing C/AL code-customized on-premises solution to an AL code-customized on-premises solution.
+Idle Timeout Specifies the time the Administration can be inactive after which it will be closed. The value has the format HH:MM:SS.
 
 Before you start, we recommend getting familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](../developer/devenv-dev-overview.md). 
 
@@ -215,7 +216,7 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
     Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
 
-    ```
+    ```json
     "al.assemblyProbingPaths": [
     "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\<150, 160, or 170>",
     "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\<150, 160, or 170>\\RoleTailored Client",
@@ -250,7 +251,7 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
     <!-- **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:-->
 
-    ```
+    ```json
         "id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>",
         "name": "<Extension Name>",
         "publisher": "<Publisher name>",
@@ -479,7 +480,7 @@ If you converted the test library form C/AL to AL, you'll now create and build a
     The default values for other parameters can be used for now.
     <!-- **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:-->
 
-    ```
+    ```json
         "Id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>",
         "name": "<Extension Name>",
         "publisher": "<Publisher name>",
