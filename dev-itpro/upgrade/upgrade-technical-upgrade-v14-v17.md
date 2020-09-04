@@ -156,12 +156,12 @@ This task runs a technical upgrade on the application database. A technical upgr
 
 ## Task 6: Configure version 16 server
 
-When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 16.0 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 16.0 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
     ```
-    Set-NAVServerConfiguration -ServerInstance <BC15 server instance> -KeyName DatabaseName -KeyValue "<BC14 database name>"
+    Set-NAVServerConfiguration -ServerInstance <BC17 server instance> -KeyName DatabaseName -KeyValue "<BC14 database name>"
     ```
     
     In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
@@ -169,13 +169,13 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
 2. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
-    Set-NavServerConfiguration -ServerInstance <BC16 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
+    Set-NavServerConfiguration -ServerInstance <BC17 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
     Be sure to re-enable task scheduler after upgrade if needed.
 3. Restart the server instance.
 
     ```
-    Restart-NAVServerInstance -ServerInstance <BC16 server instance>
+    Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
 ## <a name="UploadLicense"></a> Task 7: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
 
@@ -191,26 +191,26 @@ For more information, see [Uploading a License File for a Specific Database](../
 
 In this task, you'll publish extensions to the version 16.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16.0 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 that you started in the previous task.
 
-1. Publish the system symbols extension for version 16.
+1. Publish the system symbols extension for version 17.
 
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default installation path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default installation path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.  
 
     ```
-    Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
+    Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
     ```
 
 2. Publish the custom base application extension that you created in **Task 2**.
 
     ```
-    Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the base application extension package file>"
+    Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to the base application extension package file>"
     ```
 
 3. Publish the test library extension if you created one in **Task 2**.
 
     ```
-    Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the test library extension package file>"
+    Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to the test library extension package file>"
     ```
 
 ## Task 9: Synchronize tenant
@@ -224,7 +224,7 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
     ```
-    Mount-NAVTenant -ServerInstance <BC16 server instance> -DatabaseName "<BC14 database name>" -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
+    Mount-NAVTenant -ServerInstance <BC17 server instance> -DatabaseName "<BC14 database name>" -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
     ```
     
     > [!IMPORTANT]
@@ -238,7 +238,7 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
     ```  
-    Sync-NAVTenant -ServerInstance <BC16 server instance> -Tenant <tenant ID> -Mode Sync
+    Sync-NAVTenant -ServerInstance <BC17 server instance> -Tenant <tenant ID> -Mode Sync
     ```
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
@@ -256,7 +256,7 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
-    Sync-NAVApp -ServerInstance <BC16 server instance> -Name "Base Application" -Version <extension version> -tenant <tenant ID>
+    Sync-NAVApp -ServerInstance <BC17 server instance> -Name "Base Application" -Version <extension version> -tenant <tenant ID>
     ```
 
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID.
@@ -266,15 +266,16 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
     ```
-    Install-NAVApp -ServerInstance <BC16 server instance> -Name "Base Application" -Version <extension version>
+    Install-NAVApp -ServerInstance <BC17 server instance> -Name "Base Application" -Version <extension version>
     ```
 
     At this point, the base application is upgraded to the version 16 platform and is operational. You can open the application in the client.
 
 3. Synchronize and install the test library extension.
 
-    This step is like what you did for the custom base application in steps 3 and 4.
+    This step is like what you did for the custom base application in steps 1 and 2.
 
+<!--
 ## Task 10: Configure version 16 server for app migration
 
 In this task, you configure the version 16 server so that the Microsoft and third-party extensions that were installed in the version 14 deployment can be reinstalled. You'll configure the `DestinationAppsForMigration` parameter of the serve instance with information about the custom base application and test library. Specifically, you need the ID, name, and publisher assigned to these extensions. With the `DestinationAppsForMigration` parameter set, when you publish the Microsoft and third-party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application and test library extension, allowing them to be published. For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
@@ -285,14 +286,14 @@ In this task, you configure the version 16 server so that the Microsoft and thir
     Get-NAVAppInfo -ServerInstance <BC15 server instance>
     ```
 
-2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (if used). For example:<!-- skip this step for now in single tenant-->
+2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (if used). For example: <skip this step for now in single tenant
 
     ```
     Set-NAVServerConfiguration -ServerInstance <BC16 server instance> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"<test library extension app ID>", "name":"<test library extension name>", "publisher": "<test library publisher>"}]'
     ```
 
 3. Restart the server instance.
-
+-->
 ## Task 11: Publish and install extensions
 
 Now, you can install the Microsoft and 3rd-party extensions that were installed on the tenant before the upgrade.
@@ -300,7 +301,7 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
 1. Publish the old extension versions.
 
     ```
-    Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to extension package file>"
+    Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to extension package file>"
     ```
 
     You only need to do this step once.
@@ -308,13 +309,13 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
 2. Synchronize the extension.
 
     ```
-    Sync-NAVApp -ServerInstance <BC16 server instance> -Name "<extension name>" -Version <extension version> -tenant <tenant ID>
+    Sync-NAVApp -ServerInstance <BC17 server instance> -Name "<extension name>" -Version <extension version> -tenant <tenant ID>
     ```
 
 3. Install the extension:
 
     ```
-    Install-NAVApp -ServerInstance <BC16 server instance> -Name "<extension name>" -Version <extension version> -tenant <tenant ID>
+    Install-NAVApp -ServerInstance <BC17 server instance> -Name "<extension name>" -Version <extension version> -tenant <tenant ID>
     ```
 
 4. Repeat steps 2 and 3 for each extension and on each tenant.
@@ -338,7 +339,7 @@ To upgrade the control add-ins from the client, do the following steps:
 Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
 
 ```powershell
-$InstanceName = 'BC160'
+$InstanceName = 'BC170'
 $ServicesAddinsFolder = 'C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins'
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.BusinessChart' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.FlowIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'FlowIntegration\Microsoft.Dynamics.Nav.Client.FlowIntegration.zip')
