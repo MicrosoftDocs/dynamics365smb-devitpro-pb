@@ -223,7 +223,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
         ```
 
         We recommend that you set the "version" to the same version as the C/AL application.  
-    - Set the `target` to `OnPrem`.
+    - Add the setting `"target": "OnPrem"` somewhere in the file.
     - Change the `idRange` to include all the IDs used by your base application (or leave blank).
     - Delete the values in the `dependencies` parameter.
 

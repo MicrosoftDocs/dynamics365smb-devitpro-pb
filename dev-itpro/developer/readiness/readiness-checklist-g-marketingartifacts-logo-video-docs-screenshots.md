@@ -22,6 +22,7 @@ You are required to provide two offer logos on AppSource:
 - one in 48x48 pixels resolution for your app's search page:
 - one in 216x216 pixels resolution for your app's details page:
 - Both logos needs to be uploaded as .png images
+- The name of the logo files can only use alphanumeric characters, dashes (-), or underscores (no spaces or other special characters)
 
 ![Storefront Detail - Offer Logo](../../media/OfferLogo.png)
 
