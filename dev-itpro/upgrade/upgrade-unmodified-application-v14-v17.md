@@ -39,7 +39,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-## Task 1: Install version 16
+## Task 1: Install version 17
 
 1. Download the latest available update for version 16 that is compatible with your version 14.
 
@@ -47,7 +47,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
   
     The guidelines in this article assume that you're running the latest available update.
 
-2. Before you install version 16, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
+2. Before you install version 17, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17 tools.
 
 3. Install Business Central version 16 components.
 
