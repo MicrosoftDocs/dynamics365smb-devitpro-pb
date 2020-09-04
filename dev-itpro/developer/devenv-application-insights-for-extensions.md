@@ -19,9 +19,6 @@ This article describes how to develop an extension to send telemetry data to Azu
 
 This feature targets publishers of per-tenant extensions to give them insight into issues in their extensions before partners and customers report them.
 
-> [!NOTE]
-> This feature is not supported for AppSource extensions.  
-
 ## Get an Application Insights resource in Azure
 
 The first thing to do is to create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
