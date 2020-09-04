@@ -427,9 +427,9 @@ This task is only required if you'll reinstall version 14 customization extensio
 
 If you are performing a technical upgrade from version 14.0 to version 15.0 or 16, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
 
-    - [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
-    - [Technical Upgrade to to version 16.0](upgrade-technical-upgrade-v14-v16.md#Preparedb)
-    - [Technical Upgrade to to version 17.0](upgrade-technical-upgrade-v14-v17.md#Preparedb)
+- [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
+- [Technical Upgrade to to version 16.0](upgrade-technical-upgrade-v14-v16.md#Preparedb)
+- [Technical Upgrade to to version 17.0](upgrade-technical-upgrade-v14-v17.md#Preparedb)
 
 <!--
 
@@ -577,7 +577,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
     There is a known issue with the XmlTextReader reference in LibraryVerifyXMLSchema.Codeunit.al
  
 
--->
+
 ## Task 11: Publish your project
 When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image. 
 
@@ -609,7 +609,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
     - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md). 
 
     - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**.
-
+-->
 ## See Also
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  
 [Developing Extensions](../developer/devenv-dev-overview.md)  
