@@ -236,7 +236,7 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
     |Parameter|Value|
     |---------|-----|
-    |`"id"|Use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.|
+    |`"id"`|Use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.|
     |`"name"`|A name for the extension.|
     |`"publisher"`|The publisher name.|
     |`"version"`| You can set it to any valid version number. We recommend that you set it to the same version as the C/AL application. |
