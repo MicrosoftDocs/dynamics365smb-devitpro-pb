@@ -608,8 +608,8 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
     - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md). 
 
-    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
--->
+    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**.
+
 ## See Also
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  
 [Developing Extensions](../developer/devenv-dev-overview.md)  
