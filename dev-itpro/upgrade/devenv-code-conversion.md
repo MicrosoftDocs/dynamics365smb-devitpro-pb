@@ -234,7 +234,6 @@ In this task, you'll create a AL project in Visual Studio Code. You'll use it fo
 
 7. Modify the `app.json` for the project as follows:
 
-
     |Parameter|Value|
     |---------|-----|
     |`"id"|Use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.|
@@ -464,7 +463,6 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
 2. As with base application project, you have to modify the `app.json` file, but in this case, you have to change the version and add a dependency on the base application that you created.
 
-
     |Parameter|Value|
     |---------|-----|
     |`"id"|Use the default or set your own. Once the extension is published and synchronized with the tenant, the process for changing the ID becomes more involved.|
@@ -498,8 +496,6 @@ If you converted the test library form C/AL to AL, you'll now create and build a
         ],
         ...
     ```
-
-
 
 3. Copy all of the AL files that you generated for the test library in **Task 5** to the project's root folder.
 4. Open the **dotnet.al** file for the project, and make the following changes:
