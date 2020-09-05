@@ -405,9 +405,9 @@ At this point, the upgrade is complete, and you can open the client.
 
     (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
 
-    On the **Help and Support** page in the client, you'll see an application version, such as 16.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
+    On the **Help and Support** page in the client, you'll see an application version, such as 15.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
 
-    We recommend setting the value to application build number for the version 15 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
+    We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
 
     1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -418,7 +418,7 @@ At this point, the upgrade is complete, and you can open the client.
     For example:
 
     ```powershell
-    Set-NAVApplication -ServerInstance BC160 -ApplicationVersion 17.0.38071.0 -Force
+    Set-NAVApplication -ServerInstance BC170 -ApplicationVersion 17.0.38071.0 -Force
     ```
 
     2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.

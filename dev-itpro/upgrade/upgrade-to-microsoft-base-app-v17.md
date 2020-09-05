@@ -235,7 +235,7 @@ You can create the empty extension like any other extension by adding an AL proj
 4.  Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
 
 > [!TIP]
-> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in Task 15. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
+> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in Task 14. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
 
 ## DATA UPGRADE
 
@@ -383,7 +383,7 @@ The version has the format `major.minor.build.revision`, such as, '14.3.14824.1'
 <!--
 Later, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database ($ndo$tenantproperty table).
 -->
-## Task 9: Publish symbols and DestinationAppsForMigrations
+## Task 8: Publish symbols and DestinationAppsForMigrations
 
 In this task, you'll publish the platform symbols and the extensions configured as DestinationAppsForMigration.
 
@@ -417,7 +417,7 @@ In this task, you'll publish the platform symbols and the extensions configured 
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 10: Synchronize tenant
+## Task 9: Synchronize tenant
 
 In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -463,9 +463,9 @@ If you have a multitenant deployment, do these steps for each tenant.
     > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
     >
     > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
-4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 9.
+4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 8.
 
-## Task 11: Install DestinationAppsForMigration and move tables
+## Task 10: Install DestinationAppsForMigration and move tables
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions. The step installs table migration extension. It moves data from the old tables to the new tables owned by the table migration extension.
 
@@ -484,7 +484,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
 
-3. Install the empty versions of the system, base, and custom extensions that you published in Task 9.
+3. Install the empty versions of the system, base, and custom extensions that you published in Task 8.
 
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
@@ -494,7 +494,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 4. (Multitenant only) Repeat steps 1 and 2 for each tenant.
 
-## Task 12: Publish final extensions
+## Task 11: Publish final extensions
 
 This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions.
 
@@ -523,7 +523,7 @@ Publish the extensions in the following order:
 
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
-## Task 13: Synchronize final extensions
+## Task 12: Synchronize final extensions
 
 Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you did in previous steps.
 
@@ -543,7 +543,7 @@ Synchronize the extensions in the following order:
 > [!IMPORTANT]
 > Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
 
-## Task 14: Upgrade on table migration extension
+## Task 13: Upgrade on table migration extension
 
 Run data upgrade on the table migration extension by using the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet. For example:
 
@@ -551,7 +551,7 @@ Run data upgrade on the table migration extension by using the [Start-NAVAppData
 Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migration extension>" -version <version 2>
 ```
 
-## Task 15: Upgrade and install final extensions
+## Task 14: Upgrade and install final extensions
 
 The final step is to upgrade to the new extension versions in the following order. Use the Start-NAVAppDataUpgrade cmdlet like you did in the previous task.
 
@@ -564,7 +564,7 @@ Run the data upgrade on the extensions in the following order:
 
    For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see Task 11). If you have a customization extension for which you didn't create and publish an empty version, complete the next task for these extensions.
 
-## Task 16: Install remaining customization extensions
+## Task 15: Install remaining customization extensions
 
 Complete this task for customizations extension that you created in Task 1, but create and publish an empty version first.
 
@@ -574,7 +574,7 @@ To install each extension, run the [Install-NAVApp cmdlet](/powershell/module/mi
 Install-NAVApp -ServerInstance <BC16 server instance> -Name "<name>" -Version <extension version>
 ```
 
-## Task 17: Upgrade control add-ins
+## Task 16: Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
 
@@ -629,8 +629,40 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
+5. Change application version.
 
-5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+    (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
+
+    On the **Help and Support** page in the client, you'll see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
+
+    We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
+
+    1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
+
+    ```powershell
+    Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
+    ```
+
+    For example:
+
+    ```powershell
+    Set-NAVApplication -ServerInstance BC170 -ApplicationVersion 17.0.38071.0 -Force
+    ```
+
+    2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
+
+    ```powershell  
+    Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
+    ```
+
+    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+
+    3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
+
+    ```powershell
+    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID> 
+    ```
+6. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
     Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
     
