@@ -829,6 +829,10 @@
 ##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v17.md)
 ##### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
+##### Migrating Tables and Fields Between Extensions
+###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+###### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)

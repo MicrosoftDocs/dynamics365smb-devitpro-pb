@@ -167,7 +167,7 @@ Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This
 Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
 ```
 
-## Task 7: Recompile published extensions
+## Task 8: Recompile published extensions
 
 Compile all published extensions against the new platform.
 
@@ -189,7 +189,7 @@ Compile all published extensions against the new platform.
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
 
-## Task 8: Synchronize tenant
+## Task 9: Synchronize tenant
 
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
@@ -205,7 +205,7 @@ Compile all published extensions against the new platform.
 
     For a single-tenant deployment, you can either set the `<tenant ID>` to `default` or omit the `-Tenant <tenant ID>` parameter. For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-## Task 9: Reinstall extensions
+## Task 10: Reinstall extensions
 
 Skip this task for a multitenant environment. In this task, you reinstall the same extensions that were installed on the tenant before.
 
@@ -256,7 +256,7 @@ At line:1 char:1
     + FullyQualifiedErrorId : System.ServiceModel.CommunicationException,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
 -->
 
-## Task 10: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
@@ -288,7 +288,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
-## Task 11: Post-upgrade
+## Task 12: Post-upgrade
 
 1. Enable task scheduler on the server instance.
 2. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.

@@ -70,7 +70,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
-## <a name="Preparedb"></a> Task 4: Prepare databases
+## <a name="Preparedb"></a> Task 3: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
 
@@ -120,7 +120,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Stop-NAVServerInstance -ServerInstance <BC14 server instance>
     ```
 
-## Task 5: Convert version 14.0 application database
+## Task 4: Convert version 14.0 application database
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 17.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
@@ -141,7 +141,7 @@ This task runs a technical upgrade on the application database. A technical upgr
     Collation           :
     ```
 
-## Task 6: Configure version 17 server
+## Task 5: Configure version 17 server
 
 When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 17.0 upgrade and can be reverted after you complete the upgrade.
 
@@ -164,7 +164,7 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
     ```
     Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
-## <a name="UploadLicense"></a> Task 7: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
+## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
 
 If you have a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
 
@@ -174,7 +174,7 @@ Import-NAVServerLicense -ServerInstance <BC17 server instance> -LicenseFile "<pa
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 8: Publish system symbols, base application, and test library extensions
+## Task 7: Publish system symbols, base application, and test library extensions
 
 In this task, you'll publish extensions to the version 17.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -200,7 +200,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to the test library extension package file>"
     ```
 
-## Task 9: Synchronize tenant
+## Task 8: Synchronize tenant
 
 This task updates the tenant database schema with schema changes in system objects and application objects.
 
@@ -262,7 +262,7 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
 
     This step is like what you did for the custom base application in steps 1 and 2.
 
-## Task 11: Publish and install extensions
+## Task 10: Publish and install extensions
 
 Now, you can install the Microsoft and 3rd-party extensions that were installed on the tenant before the upgrade.
 
@@ -290,7 +290,7 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
 
 Now, your application is fully upgraded to the version 17 platform.
 
-## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
@@ -322,7 +322,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
-## Task 13: Post-upgrade
+## Task 12: Post-upgrade
 
 1. Enable task scheduler on the server instance.
 2. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
