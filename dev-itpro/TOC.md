@@ -825,6 +825,7 @@
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### Application and Data
 ##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v17.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v17.md)
 ##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v17.md)
 ##### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
