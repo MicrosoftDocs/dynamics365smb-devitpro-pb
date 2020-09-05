@@ -1,5 +1,5 @@
 ---
-title: "Technical Upgrade From Version 14 to Version 16" 
+title: "Technical Upgrade From Version 14 to Version 17" 
 ms.custom: na
 ms.date: 04/29/2020
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Technical Upgrade From Version 14 to Version 16
+# Technical Upgrade From Version 14 to Version 17
 
 Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 platform (version 17). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
@@ -24,9 +24,9 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Upgrade to Business Central Spring 2019 (version 14).
 
-   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
    
-   If your solution is already on version 14, then you don't have to upgrade to the latest version 16 update.
+   If your solution is already on version 14, then you don't have to upgrade to the latest version 17 update.
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
@@ -56,10 +56,6 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
     You'll have to keep version 14.0 installed, because you'll need the it to complete the C/AL to AL conversion in this process. Therefore, when you install version 17, you must either specify different port numbers for components during installation or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
-    <!--
-    > [!IMPORTANT]
-    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins folder.-->
-
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 3. Copy the version 14 **CodeViewer** add-in to the version 17.0 server installation
@@ -73,15 +69,6 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 ## Task 2: Convert your v14 C/AL application to AL
 
 For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
-
-<!--
-## Task 3: Rewrite code for obsoleted system tables
-
-In version 16, a number of tables have been deprecated and replaced by new tables. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
--->
-<!--
-This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
--->
 
 ## <a name="Preparedb"></a> Task 4: Prepare databases
 
@@ -154,9 +141,9 @@ This task runs a technical upgrade on the application database. A technical upgr
     Collation           :
     ```
 
-## Task 6: Configure version 16 server
+## Task 6: Configure version 17 server
 
-When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 16.0 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 17.0 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -189,7 +176,7 @@ For more information, see [Uploading a License File for a Specific Database](../
 
 ## Task 8: Publish system symbols, base application, and test library extensions
 
-In this task, you'll publish extensions to the version 16.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
+In this task, you'll publish extensions to the version 17.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 that you started in the previous task.
 
@@ -219,7 +206,7 @@ This task updates the tenant database schema with schema changes in system objec
 
 If you have a multitenant deployment, run these steps for each tenant (replacing `<tenant ID>` with the appropriate tenant ID).
 
-1. (Multitenant only) Mount the tenant to the version 16 server instance.
+1. (Multitenant only) Mount the tenant to the version 17 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
@@ -269,31 +256,12 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
     Install-NAVApp -ServerInstance <BC17 server instance> -Name "Base Application" -Version <extension version>
     ```
 
-    At this point, the base application is upgraded to the version 16 platform and is operational. You can open the application in the client.
+    At this point, the base application is upgraded to the version 17 platform and is operational. You can open the application in the client.
 
 3. Synchronize and install the test library extension.
 
     This step is like what you did for the custom base application in steps 1 and 2.
 
-<!--
-## Task 10: Configure version 16 server for app migration
-
-In this task, you configure the version 16 server so that the Microsoft and third-party extensions that were installed in the version 14 deployment can be reinstalled. You'll configure the `DestinationAppsForMigration` parameter of the serve instance with information about the custom base application and test library. Specifically, you need the ID, name, and publisher assigned to these extensions. With the `DestinationAppsForMigration` parameter set, when you publish the Microsoft and third-party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application and test library extension, allowing them to be published. For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
-
-1. Get the ID, name, and publisher of the custom base application and test library.
-
-    ```
-    Get-NAVAppInfo -ServerInstance <BC15 server instance>
-    ```
-
-2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (if used). For example: <skip this step for now in single tenant
-
-    ```
-    Set-NAVServerConfiguration -ServerInstance <BC16 server instance> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"<test library extension app ID>", "name":"<test library extension name>", "publisher": "<test library publisher>"}]'
-    ```
-
-3. Restart the server instance.
--->
 ## Task 11: Publish and install extensions
 
 Now, you can install the Microsoft and 3rd-party extensions that were installed on the tenant before the upgrade.
@@ -320,7 +288,7 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
 
 4. Repeat steps 2 and 3 for each extension and on each tenant.
 
-Now, your application is fully upgraded to the version 16 platform.
+Now, your application is fully upgraded to the version 17 platform.
 
 ## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
@@ -333,7 +301,7 @@ To upgrade the control add-ins from the client, do the following steps:
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.
 
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
 Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
@@ -366,9 +334,9 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
 4. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
-    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
     
-    - If you have a version 16 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
+    - If you have a version 17 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
     
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 

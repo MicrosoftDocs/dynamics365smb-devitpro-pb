@@ -46,10 +46,6 @@ In version 17, a number of tables have been deprecated and replaced by new table
 
     You'll keep version 15 component installed for now. When you install version 17, you must either specify different port numbers for components during installation or stop the version 15.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
-    <!--
-    > [!IMPORTANT]
-    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins folder.-->
-
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## APPLICATION
@@ -154,9 +150,9 @@ This task runs a technical upgrade on the application database. A technical upgr
     Collation           :
     ```
 
-## Task 5: Configure version 16 server
+## Task 5: Configure version 17 server
 
-When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 16.0 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 17.0 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -197,7 +193,7 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.
 
 ```
-Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
+Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
 ```
 
 ## Task 8: Publish new extension versions
@@ -205,7 +201,7 @@ Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to the System
 Publish the new versions of the system and base application extensions.
 
 ```
-Publish-NAVApp -ServerInstance <BC16 server instance> -Path "<path to .app file for system or base application>" 
+Publish-NAVApp -ServerInstance <BC17 server instance> -Path "<path to .app file for system or base application>" 
 ```
 
 ## Task 9: Recompile published extensions
@@ -286,13 +282,13 @@ To upgrade the control add-ins, do the following steps:
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.
 
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
 Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
 
 ```powershell
-$InstanceName = 'BC160'
+$InstanceName = 'BC170'
 $ServicesAddinsFolder = 'C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins'
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.BusinessChart' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.FlowIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'FlowIntegration\Microsoft.Dynamics.Nav.Client.FlowIntegration.zip')
@@ -318,9 +314,9 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 4. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
-    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
     
-    - If you have a version 16 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
+    - If you have a version 17 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
     
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 

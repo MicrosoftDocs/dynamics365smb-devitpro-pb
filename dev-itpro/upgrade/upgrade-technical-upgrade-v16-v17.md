@@ -87,15 +87,11 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 ## Task 2: Install version 17
 
-1. Before you install version 17, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16.0 tools.
+1. Before you install version 17, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17.0 tools.
 
 2. Install version 17 components.
 
     You'll keep version 16 installed for now. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 16.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
-
-    <!--
-    > [!IMPORTANT]
-    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins folder.-->
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -187,17 +183,6 @@ Compile all published extensions against the new platform.
     Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp  
     ```
 
-
-    <!--
-    Repair-NAVApp : Extension compilation failed DotNet%20Aliases/src/dotnet.al(372,14): error AL0451: An assembly named 'Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect, PublicKeyToken=null' could not be found in the assembly probing paths 'C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-Ins, 
-   C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\Microsoft Dynamics NAV\Add-Ins\17.0.16001.0, C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\, C:\Windows\Microsoft.NET\assembly\'
-   At line:1 char:51
-   + Get-NAVAppInfo -ServerInstance $NewInstanceName | Repair-NAVApp
-   +                                                   ~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (:) [Repair-NAVApp], InvalidOperationException
-    + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC170/nav-systemapplication,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.RepairNavApp
- 
-    -->
 2. Restart the server instance.
 
     ```powershell
@@ -282,7 +267,7 @@ To upgrade the control add-ins, do the following steps:
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.
 
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
 Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
@@ -314,7 +299,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 4. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
-    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
     
     - If you have a version 16 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
     

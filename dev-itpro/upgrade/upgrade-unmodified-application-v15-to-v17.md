@@ -25,7 +25,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 1. Your version 15 is compatible with version 17.
 
-    There are several updates for version 15. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.5, you can't upgrade to 16.0. You must wait until 16.1 is available.  
+    There are several updates for version 15. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.5, you can't upgrade to 17.0. You must wait until 17.1 is available.  
 
 2. Disable data encryption.
 
@@ -102,7 +102,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-2. Before you install version 17, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
+2. Before you install version 17, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17 tools.
 
 3. Install Business Central version 17 components.
 
@@ -114,7 +114,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 This task runs a technical upgrade on the application database to convert it from the version 15 platform to the version 17 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17 as an administrator.
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
     ```powershell
@@ -134,7 +134,7 @@ This task runs a technical upgrade on the application database to convert it fro
 
 ## Task 4: Configure version 17 server
 
-When you installed version 17 in **Task 2**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 16 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 2**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 15 to version 17 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -175,7 +175,7 @@ In this task, you'll publish the platform symbols and extensions. As minimum, yo
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17 that you started in the previous task.
 
 1. Publish version 17 system symbols extension.
 
@@ -231,9 +231,9 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension>"
     ```
 
-7. Recompile extensions not build on version 16.
+7. Recompile extensions not build on version 17.
 
-    This step pertains to any published extension versions that aren't built on version 16, which you want to reinstall on tenants. These extensions must be recompiled to work with version 16. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+    This step pertains to any published extension versions that aren't built on version 17, which you want to reinstall on tenants. These extensions must be recompiled to work with version 17. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
     ```powershell  
     Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
@@ -368,7 +368,7 @@ To upgrade the control add-ins from the client, do the following steps:
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.
 
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
 Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
@@ -437,7 +437,7 @@ At this point, the upgrade is complete, and you can open the client.
 
 5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
-    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
 
     - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
