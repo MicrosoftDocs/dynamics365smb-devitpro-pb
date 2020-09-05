@@ -336,7 +336,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
     Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
     
-    - If you have a version 17 application, export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
+    - Export the **EXCEL EXPORT ACTION** permission set. Then, import it to your application and add it to appropriate users. 
     
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
