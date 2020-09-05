@@ -27,20 +27,16 @@ The Performance Toolkit is two extensions, the **[!INCLUDE[prodshort](includes/p
 2. Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
 3. A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, for security reasons you must start these scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. for more information, see [Starting the run from the command line](devenv-performance-toolkit.md#starting-the-run-from-the-command-line) 
 
-## Single Runs and Multiple Sessions
-Typically, you'll probably want to run the suite for multiple sessions at the same time. In that case, after you configure the suite, use the **Start** action. However, if you want to do lighter weight testing, for example, if your suite will send a lot of calls to your SQL server and you want to test that, you can choose **Start in Single Run mode** to run the suite for a single session. 
+## Single and Multiple Sessions
+Typically, you'll probably want to run the suite for multiple sessions at the same time. In that case, after you configure the suite, use the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** to run your test just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
 
 You can run up to 100 sessions at the same time for a suite. This is controlled by the **Total No. of Sessions** field. 
 
 ## Running in the Background and Foreground
-On the suite lines, the **Run in Foreground** check box lets you speed up run when you're in single run mode. When you run a suite in the foreground, settings for user delays, number of users, and iterations are disregarded.
-
-Use run in foreground if you want to run the suite in single run mode. You can also use it in combination with background tasks, but that will run each session individually. You can only run one session in the foreground. Used only for one user, such as a warehouse manager who makes reservations. <!--this seems like it needs something--> 
-
-To limit the impact on performance, you can run only one suite in the foreground. If your suite has multiple lines, and you choose to run in single mode, only one line will be run at a time.
+On the suite lines, the **Run in Foreground** check box lets you run tests in sequence, rather than in parallel. You can also use it in combination with background tasks, but that will run each session individually. You can only run one session in the foreground at a time. 
 
 > [!NOTE]
-> If you want to run in single run mode, you don't need to go to PowerShell. You can do that by using the **Start in Single Run mode** action on the **BCPT Suites** page.
+> If you use Single Run mode and run in the foreground, you don't need to go to PowerShell to run the test.
 
 ## Comparing Runs
 In this example the change log is turned on for all modifications on sales and purchase lines. However, this is not a recommended approach and used here for demonstration purposes only. <!--can we show a recommended approach instead?--> Before running the simulation with change log on, change the **Tag** field to **Change log**. When looking at the log entries afterwards, either remove the filter on the **Version No.** field, or change it to only include the last two runs. After exporting to Excel, select the tag as columns in the pivot table, use **Operation** as a filter, and set the filter to **Scenario**.
@@ -66,8 +62,8 @@ We'll configure a test suite for scenario with the following stats:
 3. In the **Code**, **Description**, and **Tag** fields, provide an identifier, some information about the test, and a tag that you can use to find the results of the suite on the Log Entries page.
 4. Define timing for the run. 
     1. The **1 Work Day Corresponds to** field works with the **Duration (minutes)** field to update the **Work Date Starts at** field, and you use it to test processes that have deadlines, such as payments. The duration can be up to 240 minutes.
-    2. The **Default Min. User Delay** and **Default Max. User Delay** fields in the header let you simulate pauses in the action, for example, when someone goes for a cup of coffee. You must specify a delay. You can also specify whether you always want the same delay, or different delays within this range by choosing an option in the **Delay Type** field on the line.
-5. Specify the base version to compare 
+    2. The **Default Min. User Delay** and **Default Max. User Delay** fields in the header let you simulate pauses between actions. You must specify a delay. Between each iteration, for example when creating sales orders, you can define a **Delay** (Delay between iterations) before the test starts on the next sales order. The delay can be **Fixed** or **Random**. Delays are not included the results for run times.
+5. Specify the base version to compare. 
    > [!TIP]
    > To change the value in the **Base Version** field, you might need to turn on Edit mode.
 1. Configure lines for the suite. 
