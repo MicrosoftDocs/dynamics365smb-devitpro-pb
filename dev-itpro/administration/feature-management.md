@@ -59,16 +59,10 @@ Some features or feature improvements may permanently affect the state and capab
 > When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose **Yes** to proceed with permanently enabling the feature on that environment.
 
 ## Features that update data
-When enabled, some features change the user experience, which can be disruptive for users. Administrators can help avoid disturbing daily work by enabling features per company at their own pace, for example, after users have been trained in the new feature. 
+When enabled, some features change the user experience, which can be disruptive for users. Administrators can help avoid disturbing daily work by enabling features per company at their own pace, for example, after users have been trained in the new feature. If you have more than one company, you must enable the feature in each one.
 
-<!--
-Questions for Ivan:
-
-Is it "update data" or "change the user experience?"
-How can they tell whether a feature will require data updates? 
-Should we say anything about running it as a background task?
-
--->
+> [!IMPORTANT]
+> Features that update data cannot be turned off. Therefore, we recommend that you enable and test the feature's impact in a sandbox environment with a copy of your production data. For more information, see [Production and Sandbox Environments](/administration/environment-types.md).
 
 When enabling features that update data, on the **Feature Management** page, use the **Feature Data Update** setup guide. The guide lets you review the data, and specify whether to run the update now, or schedule it to run as a background task later. For more information, see [Page Background Tasks](/developer/devenv-page-background-tasks.md). To start the setup guide, do on one of the following:
 
