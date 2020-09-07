@@ -36,13 +36,13 @@ Please note that new customers will automatically get the latest builds of [!INC
 ## Good to know
 
 **It’s time to switch your [!INCLUDE[prodlong](../developer/includes/prodlong.md)] browser to Microsoft Edge**
-On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take here
+On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/21/its-time-to-switch-your-dynamics-365-business-central-browser-to-microsoft-edge/).
 
 **Leveraging IoT data in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]**
-Make sure to read the blog about getting started with leveraging the Internet of Things (IoT) data in [!INCLUDE[prodlong](../developer/includes/prodlong.md)] using services from Microsoft Azure is easier than you may think
+Make sure to read the [blog](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/24/leveraging-iot-data-in-dynamics-365-business-central/) about getting started with leveraging the Internet of Things (IoT) data in [!INCLUDE[prodlong](../developer/includes/prodlong.md)] using services from Microsoft Azure is easier than you may think.
 
 **Support for an unlimited number of production and sandbox environments**
-With 2020 release wave 2 (October), we're introducing the ability for customers to buy additional [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production environments to expand their business. More environments will open up new opportunities like creating more business branches, moving into more countries, or expanding within their current country, read more here
+With 2020 release wave 2 (October), we're introducing the ability for customers to buy additional [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production environments to expand their business. More environments will open up new opportunities like creating more business branches, moving into more countries, or expanding within their current country, read more [here](/dynamics365-business-central/support-unlimited-number-production-sandbox-environments).
 
 **Running a Container-Based Development Environment**
-From 16.4 and onwards Microsoft will stop producing docker images and instead publish builds as artifacts, which can be used together with the generic Docker image to run the image you want. Read more here.
+From 16.4 and onwards Microsoft will stop producing docker images and instead publish builds as artifacts, which can be used together with the generic Docker image to run the image you want. Read more [here](../developer/devenv-running-container-development.md).
