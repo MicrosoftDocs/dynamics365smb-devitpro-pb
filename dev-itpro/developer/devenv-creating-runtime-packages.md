@@ -34,6 +34,7 @@ For publishing and installing the package, use the [Publish-NavApp](https://go.m
 
 ## Limitations
 The limitation of runtime packages is that they only work for on-premise installations and therefore cannot be submitted to AppSource. Moreover, debugging into an extension to view the source code is not allowed by default; the `ShowMyCode` flag is by default set to `false`.
+Runtime packages are guaranteed to work only if published to a platform with the same version as the one where they were produced.
 
 > [!NOTE]  
 > If you set the `ShowMyCode` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and you thereby also allow viewing the source code.
