@@ -94,7 +94,7 @@ The implicit with is injected automatically by the compiler in certain situation
 
 ### Codeunits
 
-When a codeunit has the `TableNo` property set, then there is an implicit with around the code inside the `OnRun` trigger. This is indicated with the comments in the code example below.
+When a codeunit has the `TableNo` property set, there is an implicit with around the code inside the `OnRun` trigger. This is indicated with the comments in the code example below.
 
 ```
 codeunit 50140 MyCodeunit
@@ -170,7 +170,7 @@ From [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 we begin t
 
 ### AL0606 - use of explicit with
 
-The warning has a QuickFix code action that allows you to convert the statement(s) inside the `with` statement to fully-qualified statements, this means statements as shown in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement).
+The warning has a Quick Fix code action that allows you to convert the statement(s) inside the `with` statement to fully-qualified statements, this means statements as shown in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement).
 
 ### AL0604 - use of implicit with
 
@@ -178,7 +178,7 @@ Just qualifying with `Rec.` will not solve this problem. The `IsDirty()` will st
 
 The solution for that is to introduce pragmas in AL. A pragma is an instruction to the compiler on how it should understand the code. The pragma instructs the compiler not to create an implicit with for the `Rec` variable.
 
-Syntax for the implicit with pragma. The pragma must be used before the beginning of the codeunit or page. For more information, see [Pragma Directive](directives/devenv-directive-pragma.md) and [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md).
+The following shows the syntax for the implicit with pragma. The pragma must be used before the beginning of the codeunit or page. For more information, see [Pragma Directive](directives/devenv-directive-pragma.md) and [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md).
 
 ```
 #pragma implicitwith disable|restore
@@ -220,10 +220,10 @@ page 50143 ImplicitWith
 #pragma implicitwith restore
 ```
 
-The QuickFix code actions will automatically insert the pragma before and after the fixed object. 
+The Quick Fix code actions will automatically insert the pragma before and after the fixed object. 
 
 > [!TIP]  
-> Remember to enable **CodeActions** in the settings for the AL Language extension. For more information, see [Code Actions](devenv-code-actions.md).
+> Remember to **Enable Code Actions** in the settings for the AL Language extension. For more information, see [Code Actions](devenv-code-actions.md).
 
 ## Suppressing warnings 
 
