@@ -453,6 +453,8 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
 
+    When completed, the table migration extension will be installed.
+
 3. Install the empty versions of the system, base, and custom extensions that you published in Task 8.
 
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
@@ -497,7 +499,7 @@ Publish the extensions in the following order:
 Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you did in previous steps.
 
 ```powershell
-Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version>
+Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version>
 ```
 
 Synchronize the extensions in the following order:
@@ -507,14 +509,14 @@ Synchronize the extensions in the following order:
 2. Microsoft Application
 3. Microsoft and third-party extensions
 4. Customization extensions
-5. Second version of the table migration extension
+5. Second version of the table migration extension (empty version)
 
 > [!IMPORTANT]
 > Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
 
-## Task 13: Upgrade on table migration extension
+## Task 13: Upgrade empty table migration extension
 
-Run data upgrade on the table migration extension by using the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet. For example:
+Run data upgrade on the table migration extension (empty version) by using the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet. For example:
 
 ```powershell
 Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migration extension>" -version <version 2>
@@ -522,17 +524,17 @@ Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migratio
 
 ## Task 14: Upgrade and install final extensions
 
-The final step is to upgrade to the new extension versions in the following order. Use the Start-NAVAppDataUpgrade cmdlet like you did in the previous task.
+The final step is to upgrade to the new extension versions in the following order. Use the Start-NAVAppDataUpgrade or Install-NAVApp cmdlets like you did in the previous task.
 
 Run the data upgrade on the extensions in the following order:
 
-1. Microsoft System Application.
-2. Microsoft Base Application.
-3. Install Application 
-3. Customization, Microsoft, and third-party extensions.
+1. Upgrade the Microsoft System Application extension.
+2. Upgrade the Microsoft Base Application extension.
+3. Install the Microsoft Application extension
+3. Upgrade customization extensions, Microsoft, and third-party extensions.
 
-   For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see Task 11). If you have a customization extension for which you didn't create and publish an empty version, complete the next task for these extensions.
-
+   For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see **Task 11**). If you have a customization extension for which you didn't create and publish an empty version, complete the next task to install these extensions.
+s
 ## Task 15: Install remaining customization extensions
 
 Complete this task for customizations extension that you created in Task 1, but create and publish an empty version first.
@@ -629,8 +631,9 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
     3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
 
     ```powershell
-    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID> 
+    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
     ```
+
 6. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
     Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
