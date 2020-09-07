@@ -27,7 +27,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
 
-For a list of next wave release plans, see the [2020 release wave 2 release plan]().
+For a list of next wave release plans, see the [2020 release wave 2 release plan](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
 
 ## Upgrade to 16.5
 
