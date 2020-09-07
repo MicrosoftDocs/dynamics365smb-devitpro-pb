@@ -2,7 +2,7 @@
 title: "WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 08/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ An instance of the [Report](report-data-type.md) data type.
 
 *ExtendedFormat*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If you set this variable to true, then XML elements will include the following attributes attributes:
+If you set this variable to true, then XML elements will include the following attributes:
 -   ElementType="Parameter|Column|DataItem". Specifies the element type as defined for the report in Report Designer. Parameter is typically used for elements, such as captions.
 -   ElementId="ID". Specifies the ID that is assigned to the element by its ID Property.
 -   DataType="Type". Specifies the data type of the element.
