@@ -5219,6 +5219,11 @@
     "source_path": "dev-itpro/developer/properties/devenv-optionstring-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-optionmembers-field-property",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/deployment/demo-license.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-demolicense-properties",
+    "redirect_document_id": false
    }
    
   ]
