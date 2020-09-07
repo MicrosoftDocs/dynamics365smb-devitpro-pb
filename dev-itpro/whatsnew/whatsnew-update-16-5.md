@@ -21,7 +21,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Feature changes
 
-- [Delete extension data]()
+- [Delete extension data](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/delete-extension-data)
 
 ## Release Plan
 
