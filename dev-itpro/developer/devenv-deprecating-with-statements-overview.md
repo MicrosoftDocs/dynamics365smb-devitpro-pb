@@ -239,7 +239,7 @@ Warnings can be suppressed globally in an extension by specifying this in the `a
 
 ### Pragmas
 
-It is also possible to use a pragma to suppress individual warnings for one or more lines of code. For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
+It is also possible to use `#pragma` to suppress individual warnings for one or more lines of code. For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
 
 ```
 #pragma warning disable AL0606
