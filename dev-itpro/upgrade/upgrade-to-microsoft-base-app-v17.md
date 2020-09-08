@@ -73,6 +73,9 @@ This section describes how to upgrade the application code. This work involves c
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft base application.
 
+- Create extensions for the target platform **6.0 Business Central 2020 release wave 2**.
+- Include dependencies for the Microsoft System, Base, and Application extensions for version 17.0.0.0.
+
 ## Task 2: Create table migration extension
 
 In this step, you create an extension that consists only of the non-system table objects from your custom base application. The table objects will only include the properties and field definitions. They won't include AL code on triggers or methods. This extension is an interim extension used only during the upgrade. 
