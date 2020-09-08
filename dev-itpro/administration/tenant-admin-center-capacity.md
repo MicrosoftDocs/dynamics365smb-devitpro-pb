@@ -68,8 +68,6 @@ However, once the capacity limits are exceeded, the customers will not be able t
 
 Administrative actions are currently not limited by the File storage, however similar restrictions will be applied to the File storage with one of the next releases of Business Central.
 
-The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
-
 ## See also
 
 [Working with Administration Tools](administration.md)  
