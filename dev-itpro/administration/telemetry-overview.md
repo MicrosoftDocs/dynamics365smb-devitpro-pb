@@ -26,12 +26,12 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 
 |Area | Description |Online/On-premises|See more|
 |----------|-------------|-----------------|--------|
-|AL methods| Provides information about long running AL methods|Online|[Analyzing AL Methods Telemetry](telemetry-al-method-trace.md) |
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|Online|[Analyzing Authentication Telemetry](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|Both|[Analyzing Company Lifecycle Telemetry](telemetry-company-lifecycle-trace.md) |
 |Database lock timeouts|Provides information about database locks that have timed out. |Both|[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)|
 |Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|Both|[Analyzing Extension Lifecycle Telemetry](telemetry-extension-lifecycle-trace.md) |
 |Extension update|Provides information about errors that occur when upgrading an extension.|Both|[Analyzing Extension Upgrade Telemetry](telemetry-extension-update-trace.md) |
+|Long running AL methods| Provides information about long running AL methods|Both|[Analyzing AL Methods Telemetry](telemetry-al-method-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|Both|[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md)|
 |Page views|Provides information about the pages that users open in the modern client.|Online|[Analyzing Page View Telemetry](telemetry-page-view-trace.md)|
 |Report generation|Provides information about the execution of reports.|Both|[Analyzing Report Generation Telemetry](telemetry-reports-trace.md)|
