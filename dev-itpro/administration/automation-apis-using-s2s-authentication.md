@@ -1,6 +1,6 @@
 ---
 title: "Using Service to Service Authentication with Automation APIs"
-description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
+description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
 author: henrikwh
 ms.custom: na
 ms.date: 07/22/2020
