@@ -92,7 +92,7 @@ page 50101 SimpleCustomerCard
 [Views](devenv-views.md)  
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  
+[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
 [Page Properties](properties/devenv-page-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  

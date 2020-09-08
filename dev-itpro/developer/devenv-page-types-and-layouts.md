@@ -235,7 +235,7 @@ Given the size of the screen where the dialog appears, more or less of the page 
  
 ## See Also
 
-[Page Properties Overview](properties/devenv-page-property-overview.md)  
+[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
 [PageType Property](properties/devenv-pagetype-property.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
