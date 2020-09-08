@@ -193,9 +193,10 @@ Message(Format(FieldRef.Value()));
     
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
 [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md)  
 [Table Keys](devenv-table-keys.md)  
-[Table Properties](properties/devenv-table-properties.md)  
+[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
