@@ -1,5 +1,6 @@
 ---
 title: "OnFindRecord Trigger"
+description: "Describes the functionality of the OnFindRecord trigger."
 ms.custom: na
 ms.date: 09/08/2020
 ms.reviewer: na
