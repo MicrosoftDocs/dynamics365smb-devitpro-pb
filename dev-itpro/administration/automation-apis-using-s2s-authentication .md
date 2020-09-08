@@ -36,35 +36,7 @@ Complete the two tasks that follow to be able to call Business Central Automatio
 
 ## Task 1: Create an Azure Application for authentication to Business Central 
 
-These few steps will create an Azure Application, needed for authentication for API calls against Business Central 
-
-Navigate to https://portal.azure.com > Azure Active Directory > App registrations  
-
-New Registration  
-
-Name = (Some unique name)  
-
-Account type = Choose organizational accounts only. Single tenant or multitenant.  
-
-Redirect URI = (Leave blank)  
-
-Create a symmetric key for the application  
-
-Certificates & secrets  
-
-+ New client secret  
-
-Provide a description and an expiration date  
-
- 
-
-Under API Permissions add permission. 
-
-Click add permission 
-
-Find Business Central and select application permission 
-
-Add the Automation.ReadWrite.All permission 
+These few steps will create an Azure Application, needed for authentication for API calls against Business Central.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -84,13 +56,13 @@ Add the Automation.ReadWrite.All permission
 
 3. Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information in the next task.
 
-3. Create a client secret for the registered application.
+4. Create a client secret for the registered application.
 
     1. Follow the general guidelines at [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
     2. Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
 
-4. Grant the registered application  **Automation.ReadWrite.All** permission to Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)] API.
+5. Grant the registered application  **Automation.ReadWrite.All** permission to Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)] API.
 
     Follow the general guidelines at [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
@@ -127,3 +99,4 @@ Add the Automation.ReadWrite.All permission
 ## See Also
 
 [Automation API overview](dynamics-microsoft-automation-overview.md)  
+
