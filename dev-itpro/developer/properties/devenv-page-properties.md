@@ -11,6 +11,7 @@ ms.author: solsen
 ---
 
 # Page Properties
+
 This topic lists properties that apply to the page object, controls, and actions on a page.  
 
 ## Page Object Properties
