@@ -112,9 +112,6 @@ For the scenarios when the **outbound calls** are made from your [!INCLUDE[prods
 Here you can find the IP addresses of the Azure regions here: 
 https://www.microsoft.com/en-us/download/details.aspx?id=56519
  
-
-Outgoing calls will come directly from the app service, no? In that case FWSE has nothing to do with it.
-
 ## See Also
 
 [FAQ for Developing in AL](developer/devenv-dev-faq.md)  
