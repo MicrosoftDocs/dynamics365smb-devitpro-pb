@@ -22,21 +22,25 @@ Service to service authentication is only intended to support the hydration of c
 
 ## Usage
 
-Automation APIs provide capability for automating company setup through APIs. Once the tenants have been created, the automation APIs can be used, to hydrate the tenant - to bring the tenant up to a desired state. Usually this process involves creating a new company on the tenant, applying RapidStart packages, installing extensions, adding users to user groups and assigning permission sets to users. 
+Automation APIs provide capability for automating company setup through APIs. Once the tenants have been created, the automation APIs can be used to hydrate the tenant - to bring the tenant up to a desired state. Usually this process involves creating a new company on the tenant, applying RapidStart packages, installing extensions, adding users to user groups and assigning permission sets to users.
 
-The D365 Automation Entitlements give access to APIs in the /api/microsoft/automation route, using OAuth Client Credentials flow. An application token with `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs.
+The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs.
 
-Usage is intended for company setup through APIs only. 
+Service-to-service authentication is intended only for company setup through APIs.
 
-## Setup for service-to-service authentication using D365 Automation 
+## Setup Overview 
 
-To enable service-to-service authentication, an Azure Active Directory application must be created and registered in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
+To enable service-to-service authentication, two things are required:
 
-Complete the two tasks that follow to be able to call Business Central Automation APIs using a service as authentication. 
+- An application must be registered in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+- The Azure AD application must also be registered in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+The following tasks describe how to complete this setup. 
 
 ## Task 1: Create an Azure Application for authentication to Business Central 
 
-These few steps will create an Azure Application, needed for authentication for API calls against Business Central.
+Complete these steps to register an application in Azure AD for service-to-service authentication.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -58,15 +62,13 @@ These few steps will create an Azure Application, needed for authentication for 
 
 4. Create a client secret for the registered application.
 
-    1. Follow the general guidelines at [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
+    Follow the general guidelines at [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
-    2. Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
-
-5. Grant the registered application  **Automation.ReadWrite.All** permission to Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)] API.
+5. Grant the registered application  **Automation.ReadWrite.All** permission to **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API.
 
     Follow the general guidelines at [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
-    1. Look for and select **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** under **Microsoft APIs**.
+    1. Select **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** under **Microsoft APIs**. Then, add 
     2. Add a **Application permissions** type, and select the **Automation.ReadWrite.All** permissions.
 
     When completed, the **API permissions** page should include the following entry:
@@ -75,13 +77,17 @@ These few steps will create an Azure Application, needed for authentication for 
     |---------------------|----|-----------|
     |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
 
-## Task 2: Create an application registration in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 
+    
+
+## Task 2: Register the service-to-service application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+
+Complete these steps to register the Azure AD application for service-to-service authentication in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 1. In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, search for **AAD Applications**  and open the page.
 
 2. Select **New**.
 
-    The **AAD Application Card** opens. 
+    The **AAD Application Card** opens.
 
 3. In the **Client Id** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
 
