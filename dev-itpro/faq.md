@@ -95,13 +95,13 @@ For the scenarios when your own Web Service client wants to call [!INCLUDE[prods
 •	Australia East
 •	East US 2
  
-When you call [!INCLUDE[prodshort](includes/prodshort.md)] APIs, the calls are routed via one of the Business Central online services called Fixed Web Service Endpoint service, to allow you you to use a single, easy to remember, endpoint no matter where your environment is located: 
+When you call [!INCLUDE[prodshort](includes/prodshort.md)] APIs, the calls are routed via one of the Business Central online services called Fixed Web Service Endpoint service, to allow you to use a single, easy to remember, endpoint no matter where your environment is located: 
  
 https://api.businesscentral.dynamcis.com/
  
 Fixed Web Service Endpoint is a global service, replicated in the abovementioned Azure regions using the Azure Traffic Manager service. 
  
-During the call, Azure Traffic Manager tries to determine the most optimal instance of the Fixed Web Service Endpoint service, based on various metrics (performance, latency, availablility etc.), and routes your call and [!INCLUDE[prodshort](includes/prodshort.md)] responses via that instance. Therefore if you need to whitelist the Azure regions where Fixed Web Service Endpoint service instances are running. 
+During the call, Azure Traffic Manager tries to determine the most optimal instance of the Fixed Web Service Endpoint service, based on various metrics (performance, latency, availability etc.), and routes your call and [!INCLUDE[prodshort](includes/prodshort.md)] responses via that instance. Therefore if you need to whitelist the Azure regions where Fixed Web Service Endpoint service instances are running. 
 
 [!IMPORTANT] Data routed via Fixed Web Service Endpoint service is not stored in the abovementioned locations, only transiting through them.  
 
