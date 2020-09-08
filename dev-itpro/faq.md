@@ -89,28 +89,23 @@ If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md
 
 ## What IP addresses or ranges does my [!INCLUDE[prodshort](includes/prodshort.md)] environment APIs use?
 
-For the scenarios when your own Web Service client wants to call [!INCLUDE[prodshort](includes/prodshort.md)] APIs (i.e. for the **inbound calls**), the calls can be coming from one of the following Azure Regions: 
- 
-•	West Europe
-•	Australia East
-•	East US 2
- 
-When you call [!INCLUDE[prodshort](includes/prodshort.md)] APIs, the calls are routed via one of the Business Central online services called Fixed Web Service Endpoint service, to allow you to use a single, easy to remember, endpoint no matter where your environment is located: 
- 
-https://api.businesscentral.dynamcis.com/
- 
-Fixed Web Service Endpoint is a global service, replicated in the abovementioned Azure regions using the Azure Traffic Manager service. 
- 
-During the call, Azure Traffic Manager tries to determine the most optimal instance of the Fixed Web Service Endpoint service, based on various metrics (performance, latency, availability etc.), and routes your call and [!INCLUDE[prodshort](includes/prodshort.md)] responses via that instance. Therefore if you need to whitelist the Azure regions where Fixed Web Service Endpoint service instances are running. 
+There can be two directions for HTTP requests:
+1.	Inbound - requests going into the Business Central APIs (e.g. OData calls)
+2.	Outbound - requests coming from Business Central environments (e.g., AL code using HttpClient to send HTTP requests)
 
-[!IMPORTANT] Data routed via Fixed Web Service Endpoint service is not stored in the abovementioned locations, only transiting through them.  
+The **inbound requests** will go to the https://api.businesscentral.dynamics.com. The api.businesscentral.dynamics.com domain currently resolves to IP addresses in the IP ranges of the following Azure regions: 
+- West Europe, 
+- Australia East
+- East US 2
 
-Note, that we reserve the right to change the list of Azure regions where the Fixed Web Service Endpoint service is deployed, without prior announcement. We will however update this guidance accordingly once the change is implemented. 
+[!IMPORTANT] Data routed via https://api.businesscentral.dynamics.com is not stored in the abovementioned locations, only transiting through them.  
 
-For the scenarios when the **outbound calls** are made from your [!INCLUDE[prodshort](includes/prodshort.md)] environment, they will be coming from the Azure region where your environment is located. That region is displayed on the **Environment Details** page of [!INCLUDE[prodshort](includes/prodshort.md)] admin center.  
+Note, that we reserve the right to change the list of Azure regions used by https://api.businesscentral.dynamics.com, without prior announcement. We will however update this guidance accordingly once the change is implemented. 
 
-Here you can find the IP addresses of the Azure regions here: 
-https://www.microsoft.com/en-us/download/details.aspx?id=56519
+The **outbound requests** will come from an IP address in the IP ranges of the Azure region in which the environment is hosted, which can be seen on the Environment details page in the Business Central Admin Center.
+
+You can find the IP addresses of the Azure regions here: 
+https://www.microsoft.com/en-us/download/details.aspx?id=56519 
  
 ## See Also
 
