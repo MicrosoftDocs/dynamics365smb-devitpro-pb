@@ -18,8 +18,6 @@ ms.author: jswymer
 
 Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.  
 
-Service to service authentication is only intended to support the hydration of companies supported by the Automation APIs.
-
 ## Usage
 
 Automation APIs provide capability for automating company setup through APIs. Once the tenants have been created, the automation APIs can be used to hydrate the tenant - to bring the tenant up to a wanted state. Usually this process involves:
@@ -30,7 +28,7 @@ Automation APIs provide capability for automating company setup through APIs. On
 
 The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs.
 
-Service-to-service authentication is intended only for company setup through APIs.
+Service-to-service authentication is only intended to support the hydration of companies supported by the Automation APIs.
 
 ## Setup Overview 
 
