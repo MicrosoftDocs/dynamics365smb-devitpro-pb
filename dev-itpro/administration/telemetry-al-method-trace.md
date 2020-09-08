@@ -51,7 +51,7 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |environmentName|Specifies the environment name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
 |eventId|**RT0018**|
 |executionTime|Specifies the time that it took to execute the the AL method. The value has the format hh:mm:ss.sssssss.|
-|extensionInfo|Specifies information about the extensions that ran the AL method, including:<ul><li>`id` - </li><li>`extensionName` - </li><li>`extensionVersion` - </li><li>`extensionPublisher` - </li><li>`subscriberExecutionCount` - </li><li>`executionTime` - </li><li>|
+|extensionInfo|Specifies information about the extensions that ran the AL method, including:<ul><li>`id` -  the ID of the extension.</li><li>`extensionName` - the name of the extension.</li><li>`extensionVersion` - the version of the extension.</li><li>`extensionPublisher` - the publisher of the extension.</li><li>`subscriberExecutionCount` - </li><li>`executionTime` - </li></ul>|
 |extensionName|Specifies the name of the extension that executed the AL method.|
 |extensionPublisher|Specifies the publisher of the extension that executed the AL method.|
 |extensionVersion|Specifies the version of the extension that executed the AL method..|
