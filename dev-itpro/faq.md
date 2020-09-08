@@ -87,6 +87,34 @@ The first releases of Business Central on premises included an installed client 
 
 If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], you will find that in-product Help is very different in [!INCLUDE [prodshort](developer/includes/prodshort.md)]. For more information, see [[!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model](user-assistance.md).
 
+## What IP addresses or ranges does my [!INCLUDE[prodshort](includes/prodshort.md)] environment APIs use?
+
+For the scenarios when your own Web Service client wants to call [!INCLUDE[prodshort](includes/prodshort.md)] APIs (i.e. for the **inbound calls**), the calls can be coming from one of the following Azure Regions: 
+ 
+•	West Europe
+•	Australia East
+•	East US 2
+ 
+When you call [!INCLUDE[prodshort](includes/prodshort.md)] APIs, the calls are routed via one of the Business Central online services called Fixed Web Service Endpoint service, to allow you you to use a single, easy to remember, endpoint no matter where your environment is located: 
+ 
+https://api.businesscentral.dynamcis.com/
+ 
+Fixed Web Service Endpoint is a global service, replicated in the abovementioned Azure regions using the Azure Traffic Manager service. 
+ 
+During the call, Azure Traffic Manager tries to determine the most optimal instance of the Fixed Web Service Endpoint service, based on various metrics (performance, latency, availablility etc.), and routes your call and [!INCLUDE[prodshort](includes/prodshort.md)] responses via that instance. Therefore if you need to whitelist the Azure regions where Fixed Web Service Endpoint service instances are running. 
+
+[!IMPORTANT] Data routed via Fixed Web Service Endpoint service is not stored in the abovementioned locations, only transiting through them.  
+
+Note, that we reserve the right to change the list of Azure regions where the Fixed Web Service Endpoint service is deployed, without prior announcement. We will however update this guidance accordingly once the change is implemented. 
+
+For the scenarios when the **outbound calls** are made from your [!INCLUDE[prodshort](includes/prodshort.md)] environment, they will be coming from the Azure region where your environment is located. That region is displayed on the **Environment Details** page of [!INCLUDE[prodshort](includes/prodshort.md)] admin center.  
+
+Here you can find the IP addresses of the Azure regions here: 
+https://www.microsoft.com/en-us/download/details.aspx?id=56519
+ 
+
+Outgoing calls will come directly from the app service, no? In that case FWSE has nothing to do with it.
+
 ## See Also
 
 [FAQ for Developing in AL](developer/devenv-dev-faq.md)  
