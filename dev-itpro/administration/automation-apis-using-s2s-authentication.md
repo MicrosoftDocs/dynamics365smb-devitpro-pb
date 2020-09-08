@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Using Service-to-Service Authentication with Automation APIs
 
-[!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)] online
+[!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)] (Online)
 
 Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.  
 
