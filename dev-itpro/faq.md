@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/03/2020
+ms.date: 09/08/2020
 ---
 
 # FAQ for Dynamics 365 Business Central
@@ -87,6 +87,29 @@ The first releases of Business Central on premises included an installed client 
 
 If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], you will find that in-product Help is very different in [!INCLUDE [prodshort](developer/includes/prodshort.md)]. For more information, see [[!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model](user-assistance.md).
 
+## Which IP addresses or ranges does my [!INCLUDE[prodshort](includes/prodshort.md)] environment API use?
+
+When you exchange data through the API, you might have to whitelist the IP addresses. The addresses depend on the direction of the call.
+
+- Inbound
+
+  Inbound requests go into the [!INCLUDE [prodshort](includes/prodshort.md)] API, for example through OData calls. The requests go to the `https://api.businesscentral.dynamics.com` URL that currently resolves to IP addresses in the IP ranges of the following Azure regions: 
+
+    - Australia East
+    - West Europe
+    - East US 2
+
+  > [!IMPORTANT]
+  > Data routed through `https://api.businesscentral.dynamics.com` is not *stored* in the these regions. The data *transits* through them.  
+
+  We reserve the right to change the list of Azure regions used by the `https://api.businesscentral.dynamics.com` URL without prior announcement. We will, however, update this guidance accordingly once such a change is implemented.   
+  
+- Outbound
+
+  Outbound requests come from [!INCLUDE [prodshort](includes/prodshort.md)] environment, such as code that uses the `HttpClient`method to send HTTP requests. The requests come from an IP address in the IP ranges of the Azure region in which the environment is hosted. You can see where an environment is hosted on the **Environment details** page in the [!INCLUDE [prodshort](includes/prodshort.md)] admin center.
+
+You can find the IP addresses of the Azure regions here: [https://www.microsoft.com/en-us/download/details.aspx?id=56519 ](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
+ 
 ## See Also
 
 [FAQ for Developing in AL](developer/devenv-dev-faq.md)  
