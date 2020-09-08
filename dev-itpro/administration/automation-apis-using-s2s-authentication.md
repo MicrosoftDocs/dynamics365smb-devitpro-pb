@@ -22,7 +22,11 @@ Service to service authentication is only intended to support the hydration of c
 
 ## Usage
 
-Automation APIs provide capability for automating company setup through APIs. Once the tenants have been created, the automation APIs can be used to hydrate the tenant - to bring the tenant up to a desired state. Usually this process involves creating a new company on the tenant, applying RapidStart packages, installing extensions, adding users to user groups and assigning permission sets to users.
+Automation APIs provide capability for automating company setup through APIs. Once the tenants have been created, the automation APIs can be used to hydrate the tenant - to bring the tenant up to a wanted state. Usually this process involves:
+- creating a new company on the tenant
+- applying RapidStart packages
+- installing extensions
+- adding users to user groups and assigning permission sets to users.
 
 The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs.
 
@@ -32,9 +36,9 @@ Service-to-service authentication is intended only for company setup through API
 
 To enable service-to-service authentication, two things are required:
 
-- An application must be registered in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- An application is registered in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-- The Azure AD application must also be registered in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- The Azure AD application is registered in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 The following tasks describe how to complete this setup. 
 
@@ -60,14 +64,14 @@ Complete these steps to register an application in Azure AD for service-to-servi
 
 3. Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information in the next task.
 
-4. Create a client secret for the registered application.
+4. Create a client secret for the registered application:
 
     1. Select **Certificates & secrets** > **New client secret**.
     2. Add a description, select a duration, and select **Add**.
 
     For the latest guidelines about adding client secrets in Azure AD, see [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
-5. Grant the registered application  **Automation.ReadWrite.All** permission to **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API.
+5. Grant the registered application  **Automation.ReadWrite.All** permission to **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API:
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
     2. Select **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]**.
@@ -93,13 +97,13 @@ Complete these steps to register the Azure AD application for service-to-service
 
 3. In the **Client Id** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
 
-4. Fill-in the **Description** field.
+4. Fill in the **Description** field.
 
 5. Set the **State** to **Enabled**.
 
 6. Validate the permission sets assigned. 
 
-7. Select **Grant Consent** and follow the wizard to the complete the set up.
+7. Select **Grant Consent** and follow the wizard to the complete the setup.
 
    > [!NOTE]
    > Pre-Consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  
