@@ -62,22 +62,24 @@ Complete these steps to register an application in Azure AD for service-to-servi
 
 4. Create a client secret for the registered application.
 
-    Follow the general guidelines at [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
+    1. Select **Certificates & secrets** > **New client secret**.
+    2. Add a description, select a duration, and select **Add**.
+
+    For the latest guidelines about adding client secrets in Azure AD, see [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
 5. Grant the registered application  **Automation.ReadWrite.All** permission to **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API.
 
-    Follow the general guidelines at [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
+    1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
+    2. Select **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]**.
+    3. Select **Application permissions**, select **Automation.ReadWrite.All**, then select **Add permissions**.
 
-    1. Select **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** under **Microsoft APIs**. Then, add 
-    2. Add a **Application permissions** type, and select the **Automation.ReadWrite.All** permissions.
-
-    When completed, the **API permissions** page should include the following entry:
+    When completed, the **API permissions** page will include the following entry:
 
     |API / Permission name|Type|Description|
     |---------------------|----|-----------|
     |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
 
-    
+    For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
 ## Task 2: Register the service-to-service application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
