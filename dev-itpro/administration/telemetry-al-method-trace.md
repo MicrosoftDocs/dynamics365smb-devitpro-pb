@@ -46,13 +46,16 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |environmentName|Specifies the environment name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
 |eventId|**RT0018**|
 |executionTime|Specifies the time that it took to execute the the AL method. The value has the format hh:mm:ss.sssssss.|
-|extensionInfo|Specifies the name of the extension. Id, extensionName, extensionVersion, extensionPublisher, subscriberExecutionCount, executionTime|
+|extensionInfo|Specifies information about the extensions that ran the AL method, including:<ul><li>`id` - </li><li>`extensionName` - </li><li>`extensionVersion` - </li><li>`extensionPublisher` - </li><li>`subscriberExecutionCount` - </li><li>`executionTime` - </li><li>|
 |extensionName|Specifies the name of the extension that executed the AL method.|
 |extensionPublisher|Specifies the publisher of the extension that executed the AL method.|
 |extensionVersion|Specifies the version of the extension that executed the AL method..|
 |extensionId|Specifies the AppID of the extension that executed the AL method.|
-|longRunningThreshold|Specifies the amount of time that an AL method can run before a warning event is recorded. The value has the format hh:mm:ss.sssssss. <br /><br >This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration settings called ALLongRunningFunctionTracingThreshold and ALLongRunningFunctionTracingThresholdForApplicationInsights. |
+|longRunningThreshold|Specifies the amount of time that an AL method can run before a warning event is recorded. The value has the format hh:mm:ss.sssssss. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. |
+
+<!-- for 17.1 
+<br /><br >This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration settings called ALLongRunningFunctionTracingThreshold and ALLongRunningFunctionTracingThresholdForApplicationInsights.-->
 
 <!--
 ## Example
