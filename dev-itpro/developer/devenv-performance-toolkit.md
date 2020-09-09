@@ -25,7 +25,7 @@ The Performance Toolkit is two extensions, the **[!INCLUDE[prodshort](includes/p
 
 1. A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
 2. Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
-3. A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, for security reasons you must start these scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. for more information, see [Starting the run from the command line](devenv-performance-toolkit.md#starting-the-run-from-the-command-line) 
+3. A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, for security reasons you must start these scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. for more information, see [Starting the run from the command line](devenv-performance-toolkit.md#starting-the-run-from-powershell) 
 
 ## Single and Multiple Sessions
 Typically, you'll probably want to run the suite for multiple sessions at the same time. In that case, after you configure the suite, use the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** to run your test just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
@@ -72,7 +72,7 @@ We'll configure a test suite for scenario with the following stats:
     1. On the **BCPT Suite Lines** FastTab, choose the codeunits to run.
     2. In the **Parameters** field, enter a parameter to define iterations, for example, to create lines on sales orders, Example, a Lines=10 parameter creates 10 lines on a document.  
     3. In the **No. of Sessions** field, enter the number of concurrent users to simulate. 
-    4. Optional: If you want to run in Single Run mode, or you want to run one of the sessions without applying settings such as minimum and maximum delays, choose the **Run in Foreground** check box. For more information, see [Running in the Background and Foreground](devenv-performance-toolkit,md#running-in-the-background-and-foreground).
+    4. Optional: If you want to run in Single Run mode, or you want to run one of the sessions without applying settings such as minimum and maximum delays, choose the **Run in Foreground** check box. For more information, see [Running in the Background and Foreground](devenv-performance-toolkit.md#running-in-the-background-and-foreground).
 
 ## Starting the Run from PowerShell
 Open a PowerShell command prompt, and make sure you have installed the necessary binaries and scripts. <!--not sure whether they still need to check the binaries and scripts. If they do, where and how do they check that?--> The commands use the example from above. <!--To start a test on the local machine (“on-prem”), run this command: command is missing-->
@@ -131,7 +131,7 @@ This example shows how to use Single Run mode for performance regression testing
 The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline. <!--not sure what "maintained" means here. Kept?-->
 
 ## To run a test in Single Run mode
-The following steps provide an example of how to run a PRT in Single Run mode. The [Analyzing the results](/developer/devenv-performance-toolkit.md#analyzing-the-results) section covers how to analyze the results.
+The following steps provide an example of how to run a PRT in Single Run mode. The [Analyzing the results](devenv-performance-toolkit.md#analyzing-the-results) section covers how to analyze the results.
 
 1. On the **BCPT Suites** page, choose ** New**.
 2. In the **Code** field, enter a name for the suite. In this example, we'll use **PreTest**. <!--Need to get the terminology right around "suite."-->
