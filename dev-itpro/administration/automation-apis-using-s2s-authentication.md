@@ -20,15 +20,9 @@ Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 rel
 
 ## Usage
 
-Automation APIs provide capability for automating company setup through APIs. Once the tenants have been created, the automation APIs can be used to hydrate the tenant - to bring the tenant up to a wanted state. Usually this process involves:
-- creating a new company on the tenant
-- applying RapidStart packages
-- installing extensions
-- adding users to user groups and assigning permission sets to users.
+Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to a desired state. Service-to-service authentication is only intended to support the hydration of companies as supported by the Automation APIs.
 
-The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs.
-
-Service-to-service authentication is only intended to support the hydration of companies supported by the Automation APIs.
+The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs. 
 
 ## Setup Overview 
 
@@ -108,8 +102,9 @@ Complete these steps to register the Azure AD application for service-to-service
 
 7. Select **Grant Consent** and follow the wizard to the complete the setup.
 
-   > [!NOTE]
-   > Pre-Consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  
+   > [!TIP]
+   > Pre-consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
+
 
 ## See Also
 
