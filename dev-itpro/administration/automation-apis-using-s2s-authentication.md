@@ -24,13 +24,13 @@ Automation APIs provide capability for automating company setup through APIs. Th
 
 The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs. 
 
-## Setup Overview 
+## Setup overview 
 
 To enable service-to-service authentication, you'll have to complete two tasks:
 
 1. Register an application in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-2. Register the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+2. Set up the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 The tasks are described in the sections that follow. 
 
