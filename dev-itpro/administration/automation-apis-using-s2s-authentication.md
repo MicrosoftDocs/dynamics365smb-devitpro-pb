@@ -18,25 +18,23 @@ ms.author: jswymer
 
 Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.  
 
-## Usage
+## Usage and setup overview
 
 Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to an initial state. Service-to-service authentication is intended only for the hydration of companies.
 
-The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs. 
+The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs.
 
-## Setup overview 
+To enable service-to-service authentication, you'll have to do two things:
 
-To enable service-to-service authentication, you'll have to complete two tasks:
+- Register an application in your Azure Active Directory tenant for authenticating API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-1. Register an application in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- Set up the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-2. Set up the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+These tasks are described in the sections that follow. 
 
-The tasks are described in the sections that follow. 
+## Task 1: Register an Azure AD application for authentication to Business Central
 
-## Task 1: Register an application in Azure AD for authentication to Business Central
-
-Complete these steps to register an application in Azure AD for service-to-service authentication.
+Complete these steps to register an application in your Azure AD tenant for service-to-service authentication.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -54,16 +52,14 @@ Complete these steps to register an application in Azure AD for service-to-servi
     
     When completed, an **Overview** displays in the portal for the new application.
 
-3. Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information in the next task.
-
-4. Create a client secret for the registered application:
+3. Create a client secret for the registered application as follows:
 
     1. Select **Certificates & secrets** > **New client secret**.
     2. Add a description, select a duration, and select **Add**.
 
     For the latest guidelines about adding client secrets in Azure AD, see [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
 
-5. Grant the registered application  **Automation.ReadWrite.All** permission to **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API:
+4. Grant the registered application **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API as follows:
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
     2. Select **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]**.
