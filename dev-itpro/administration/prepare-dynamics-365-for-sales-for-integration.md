@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
+ms.service: dynamics365-business-central
 ---
 # Preparing  Dynamics 365 for Sales for Integration
 
