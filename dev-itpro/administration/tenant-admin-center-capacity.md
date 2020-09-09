@@ -1,5 +1,5 @@
 ---
-title: Managing Managing Capacity | Microsoft Docs
+title: Managing Capacity | Microsoft Docs
 description: Use the Business Central administration center to manage your tenant managing capacity 
 author: jswymer
 ms.service: dynamics365-business-central
@@ -14,22 +14,29 @@ ms.author: jswymer
 
 # Capacity
 
-To help customers manage and plan their storage costs on an ongoing basis, the Capacity page of the Business Central admin center provides visibility of total database and file storage usage, along with details about the storage used by every particular environment. The page also displays the currently used and the maximum allowed number of Production and Sandbox environments available for the customer.  
+To help customers manage and plan their storage costs on an ongoing basis, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center includes the **Capacity** page. The page provides visibility of the total database and file storage usage, with details about the storage used by every particular environment. The page also displays the currently used and the maximum allowed number of Production and Sandbox environments available for the customer.  
 
 Customers can purchase additional database capacity and environments via their reselling partner, using the following add-ons:  
 - Dynamics 365 Business Central Database Capacity 
-- Dynamics 365 Business Central Additional Environment Addon 
+- Dynamics 365 Business Central Additional Environment Add-on
 
 ## Number of environments 
 
-Business Central administrators can create multiple environments of Sandbox and Production type for various purposes like creating more business branches, moving into more countries, expanding within their current country, development, testing changes, learning new product capabilities and many other scenarios. 
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators can create multiple Sandbox and Production type environments for various purposes like:
+- creating more business branches
+- moving into more countries
+- expanding within their current country
+- development
+- testing changes
+- learning new product capabilities
+- and more. 
 
-Every [!INCLUDE[prodshort](../developer/includes/prodshort.md)] customer with Business Central Premium or Essential subscriptions can use 1 production environment and 3 sandbox environments, at no extra charge.  
+Every [!INCLUDE[prodshort](../developer/includes/prodshort.md)] customer with Business Central Premium or Essential subscriptions can use one production environment and three sandbox environments, at no extra charge.  
 
 > [!NOTE]
 > Existing customers with Business Central Essentials or Premium subscriptions purchased before October 1st 2020 will keep their existing environment entitlements for a period of 1 year until October 1st 2021, or until their subscription is renewed or ended, whichever occurs latest. This won't increase their overall database storage capacity and will not enable extra sandbox environments. These benefits are only activated with the production environments purchased by the customers separately. 
 
-Customers can also choose to purchase an unlimited number of additional production environments, if needed, via their CSP partner. Each additionally purchased  production environment comes with 3 additional sandbox environments included with it.  
+Customers can also choose to purchase an unlimited number of additional production environments, if needed, via their CSP partner. Each additionally purchased  production environment comes with three additional sandbox environments included with it.  
 
 Production and sandbox environments can be created and used in any country where [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service is available, also in the country where the default [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are located. Additional environments can be created by the customers via the Business Central Admin Center. 
 
@@ -39,13 +46,13 @@ When customer administrators create users in Microsoft 365 Admin Center and assi
 
 Storage capacity of Business Central is represented by the Database and File storage.  
 
-Business Central customers can use up to 80Gb of database storage capacity across all of their environments (Production and Sandbox), meaning that the sum of database capacity usage of all of their environments must not exceed 80Gb.  
+Business Central customers can use up to 80 Gb of database storage capacity across all of their environments (Production and Sandbox), meaning that the sum of database capacity usage of all of their environments must not exceed 80 Gb.  
 
-Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there is an option to purchase extra database capacity as an add-on to their existing Business Central subscriptions via their reselling CSP partner.  Every add-on increases overall database capacity quota by 1Gb.  
+Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there is an option to purchase extra database capacity as an add-on to their existing Business Central subscriptions via their reselling CSP partner.  Every add-on increases overall database capacity quota by 1 Gb.  
 
-Every additional production environment purchased by the customer also increases tenant-wide database capacity quota by 4Gb.  
+Every additional production environment purchased by the customer also increases tenant-wide database capacity quota by 4 Gb.  
 
-The **Capacity** page provides a tenant-level view of where your organization is using storage capacity. On this page you can see how much database and file storage is used by each environment. For each of your environments you can also navigate to the [Table Information page](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-view-table-information) within Business Central product, which let's you see the distribution of data size across tables. 
+The **Capacity** page provides a tenant-level view of where your organization is using storage capacity. On this page, you can see how much database and file storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-view-table-information) within Business Central product, which let's you see the distribution of data size across tables. 
 
 > [!NOTE]
 > Only the environments running on version 17 (release Wave 2 2020) and up are included in the database capacity calculations.  
