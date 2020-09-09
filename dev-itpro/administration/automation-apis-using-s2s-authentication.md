@@ -28,13 +28,13 @@ The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/
 
 To enable service-to-service authentication, you'll have to complete two tasks:
 
-- Register an application in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+1. Register an application in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-- Register the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+2. Register the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 The tasks are described in the sections that follow. 
 
-## Create an Azure Application for authentication to Business Central 
+## Task 1: Register an application in Azure AD for authentication to Business Central
 
 Complete these steps to register an application in Azure AD for service-to-service authentication.
 
@@ -48,7 +48,7 @@ Complete these steps to register an application in Azure AD for service-to-servi
     
     |Setting|Description|
     |-------|-----------|
-    |Name|Specify a uniques name for your Business Central application. |
+    |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
     |Redirect URI|Leave this option empty.|
     
@@ -77,9 +77,9 @@ Complete these steps to register an application in Azure AD for service-to-servi
 
     For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
-## Register the service-to-service application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Task 2: Set up the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-Complete these steps to register the Azure AD application for service-to-service authentication in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Complete these steps to set up the Azure AD application for service-to-service authentication in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 1. In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, search for **AAD Applications**  and open the page.
 
