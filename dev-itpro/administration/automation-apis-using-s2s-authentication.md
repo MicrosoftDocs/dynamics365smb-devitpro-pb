@@ -20,19 +20,19 @@ Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 rel
 
 ## Usage
 
-Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to a desired state. Service-to-service authentication is only intended to support the hydration of companies as supported by the Automation APIs.
+Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to an initial state. Service-to-service authentication is intended only for the hydration of companies.
 
 The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs. 
 
 ## Setup Overview 
 
-To enable service-to-service authentication, two things are required:
+To enable service-to-service authentication, you'll have to do two tasks:
 
-- An application is registered in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- Register an application in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-- The Azure AD application is registered in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- Register the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-The following tasks describe how to complete this setup. 
+The tasks are described in the sections that follow. 
 
 ## Task 1: Create an Azure Application for authentication to Business Central 
 
