@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 04/01/2020
+ms.date: 09/07/2020
 ms.author: edupont
 ---
 
@@ -17,14 +17,14 @@ ms.author: edupont
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center-v2.png)
+> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
 
 ## Viewing details for an environment
 
 In the list of environments, you can open a page with more details for an environment by choosing the link in the **Name** column of the list for the environment.
 
 > [!div class="mx-imgBorder"]
-> ![View details about an environment](../developer/media/admin/business_central_admin_center_details-v2.png)
+> ![View details about an environment](../developer/media/admin/business_central_admin_center_details.png)
 
 ## Types of environments
 

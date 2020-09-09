@@ -7,7 +7,7 @@ ms.date: 07/08/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Guideline on Creating an Effective Sales Landing Page for Your App

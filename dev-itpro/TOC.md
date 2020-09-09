@@ -43,7 +43,7 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Frequently asked questions
-### [Generally asked questions](faq.md)
+### [Frequently asked questions (general)](faq.md)
 ### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
@@ -137,6 +137,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
 ### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
 ### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
 ### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
@@ -535,8 +536,8 @@
 #### [XmlWriteOptions Data Type](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
 ### Properties
 #### [Properties Overview](developer/properties/devenv-properties.md)
-#### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
-#### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
+#### [Table, Table Fields, and Table Extension Properties](developer/properties/devenv-table-properties.md)
+#### [Page, Page Fields, and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
 #### [Profile Properties](developer/properties/devenv-profile-properties.md)
 #### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
 #### [Query Properties](developer/properties/devenv-query-properties.md)  
