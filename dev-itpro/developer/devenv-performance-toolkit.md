@@ -125,6 +125,50 @@ By default, the **Log Entries** page is filtered to show the latest version, but
 
 The **Operation** column shows the individual measurements, where the term _Scenario_ is used for running the codeunit without the user wait time. The **No. of SQL Statements** column includes the SQL statements that were issued by the scenario and system activities, such as retrieving metadata. The counts do, however, exclude the log entries themselves. To drill down to a single session, filter on the **Session No.** field or choose **Open in Excel** to create a pivot table and pivot chart for deeper analysis. 
 
+## Example: Evaluate SQL calls and timing in Single Run mode
+This example shows how to use Single Run mode for performance regression testing (PRT) between runs to evaluate SQL calls and timing. Often, when developing a new extension, you start out with limited code and may want to wait to do a larger benchmark test with simulated concurrent users until you’re closer to having a full, end-to-end scenario. You can use the **Start in Single Run Mode** action to perform a limited test, for example, on a new extension. Single Run mode will still provide things like a baseline, the ability to run the test in the background, and give you instant feedback. 
+
+The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline. <!--not sure what "maintained" means here. Kept?-->
+
+## To run a test in Single Run mode
+The following steps provide an example of how to run a PRT in Single Run mode. The [Analyzing the results](/developer/devenv-performance-toolkit.md#analyzing-the-results) section covers how to analyze the results.
+
+1. On the **BCPT Suites** page, choose ** New**.
+2. In the **Code** field, enter a name for the suite. In this example, we'll use **PreTest**. <!--Need to get the terminology right around "suite."-->
+3. In the **Tag** field, enter something that will make it easy to identify the suite later when you analyze the results.
+4. The fields for duration and delays are not used for Single Run mode, so we'll leave their default values.
+5. In the testcase repeater (grid), choose the test you wrote for your new component. <!--Is the "repeater grid" the suite lines? also, this assumes that they've written a test. Instead, can we have them choose one that's already available?-->
+6. In this example, we're a total weight for the Sales Order page, so we'll use the Sales Order page test with a parameter that creates four lines. <!--Does "weight" mean "wait time" here? and we should probably give an example of a parameter that creates four lines.--> 
+7. Clear the **Run in Foreground** check box. <!--why clear the check box? Don't they want this to run in the foreground?-->
+8. Choose **Start in Single Run mode**.
+9. To set your baseline after the run completes, In the **Version Field**, enter **1** in the **Baseline** field. <!--the field naming here is fishy. Investigate-->
+
+> [!TIP]
+> If you run the test again you'll have delta values in the test case line. <!--where do they see the delta values?--> You can reset the baseline to any version, and run as many test as needed.
+
+### Analyzing the results
+The results of the PRT are shown on the suite lines, as described in the following table.
+<!--
+The title of the example calls out SQL calls and timing, but the description of the analysis doesn't seem to do that, specifically. Should we change the title to "Analyzing Results" or should we 
+
+Should we include this sentence in a note about "warming up" the client? 
+
+In this example, the baseline version is set to the 2 (second) run, this is because the warmup of the Client add’s significant overhead to the time.  -->
+
+|Field  |Value  |
+|---------|---------|
+|**No. of Iterations**|How many times was it executed, this will remain 1 as we use the Start In single Run Mode.|
+|**Total Duration in (ms)**|How long it took to complete one iteration.|
+|**Average duration** |Equal to **Total Duration in (ms)** field for the first run, but after you run test multiple times it's a result of the sum of runs since your baseline.|
+|**No. of SQL statements**|The number of SQL statements generated for one run.|
+|**Avg. No. of SQL Statements**|Similar to the duration fields, for the first run this will be the same as the **No. of SQL statements** field, but will become the sum of subsequent runs. <!--not sure I understand the "sum" part. Isn't it average?-->|
+|**No. of Iterations Base**|Not relevant for PRTs in Single Run mode.|
+|**Total Duration Base (ms)**|The baseline version number after you have done multiple runs. <!--the name of this field includes "duration" but the description talks about version number. Should this be for the No. of Iterations Base field just above?-->|
+|**Avg. Duration Base (ms)**|Not relevant for PRTs in Single Run mode.|
+|**Avg. No. of SQL Statements Base**|Displays this value from your baseline run as in the total and average durations for your base. <!--need to ask about this. Don't understand-->|
+|**Change in No. of SQL statements (%)**|The difference, as a percent, between a baseline and the latest run.|
+|**Changes in Duration (%)**|The change in measured time between a baseline and the latest run.|
+
 ## Writing Test Cases (codeunits)
 A test suite, in its simplest form, is just a codeunit that does something:
 
