@@ -26,7 +26,7 @@ The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/
 
 ## Setup Overview 
 
-To enable service-to-service authentication, you'll have to do two tasks:
+To enable service-to-service authentication, you'll have to complete two tasks:
 
 - Register an application in your Azure Active Directory tenant for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This application is used to authenticate API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
@@ -34,7 +34,7 @@ To enable service-to-service authentication, you'll have to do two tasks:
 
 The tasks are described in the sections that follow. 
 
-## Task 1: Create an Azure Application for authentication to Business Central 
+## Create an Azure Application for authentication to Business Central 
 
 Complete these steps to register an application in Azure AD for service-to-service authentication.
 
@@ -77,7 +77,7 @@ Complete these steps to register an application in Azure AD for service-to-servi
 
     For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
-## Task 2: Register the service-to-service application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Register the service-to-service application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 Complete these steps to register the Azure AD application for service-to-service authentication in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
