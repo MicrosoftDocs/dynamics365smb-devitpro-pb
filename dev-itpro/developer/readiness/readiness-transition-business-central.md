@@ -7,7 +7,7 @@ ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Transitioning to Microsoft Dynamics 365 Business Central from Dynamics NAV or Dynamics GP
