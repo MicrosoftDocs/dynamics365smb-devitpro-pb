@@ -18,7 +18,7 @@
 ### [Licensing](deployment/licensing.md)
 ### [Add your App to AppSource](administration/appsource.md)
 ### Get started with building apps
-#### [Overview](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+#### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 #### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
@@ -94,7 +94,7 @@
 ### [Preparing Test Environments](administration/test-environment.md)
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ## Monitoring and Analyzing Telemetry
-### [Overview](administration/telemetry-overview.md)
+### [Telemetry Overview](administration/telemetry-overview.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 ### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
@@ -127,7 +127,7 @@
 ### [Technical Support of Business Central](technical-support.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
-### [Overview](administration/migrate-data.md)
+### [Migrating On-Premises Data](administration/migrate-data.md)
 ### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Running the Cloud Migration Tool](administration/migration-tool.md)
 ### [Managing the Migration to the Cloud](administration/migration-management.md)
@@ -247,7 +247,7 @@
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Migrating Tables and Fields Between Extensions
-#### [Overview](developer/devenv-migrate-table-fields.md)
+#### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 #### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 #### [Migration.json File](developer/devenv-migration-json-file.md)
@@ -313,14 +313,14 @@
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Developing Printer Extensions
-#### [Overview](developer/devenv-reports-printing.md)
+#### [Printer Extension Overview](developer/devenv-reports-printing.md)
 #### [Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
 <!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
 <!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
 <!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
 <!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
 ## Queries
-### [Overview](developer/devenv-query-overview.md)
+### [Queries Overview](developer/devenv-query-overview.md)
 ### [Query Object](developer/devenv-query-object.md)
 ### [Linking and Joining Data Items](developer/devenv-query-links-joins.md)
 ### [Filtering](developer/devenv-query-filters.md)
@@ -588,7 +588,7 @@
 <!-- begin security -->
 # Security, Privacy, Compliance
 ## Security and Protection
-### [Overview](security/security-and-protection.md)
+### [Security and Protection Overview](security/security-and-protection.md)
 ### [Application](security/security-application.md)
 ### [Online](security/security-online.md)
 ### [On-Premises](security/security-onpremises.md)
@@ -604,7 +604,7 @@
 ## Privacy
 ### [Privacy (microsoft.com)](https://www.microsoft.com/en-us/trust-center/privacy)
 ## Compliance
-### [Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Compliance Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->
 <!-- begin performance -->
 # Performance
@@ -690,7 +690,7 @@
 # Business Central on-premises
 <!-- deployment -->
 ## Deployment
-### [Overview](deployment/deployment.md)
+### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
 ### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
@@ -768,13 +768,13 @@
 #### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
 #### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
 #### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
-#### Utilizing Read Scale-Out
-##### [Overview](administration/database-read-scale-out-overview.md)
+#### Read Scale-Out
+##### [Using Read Scale-Out for Better Performance](administration/database-read-scale-out-overview.md)
 ##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using Telemetry
-#### [Overview](administration/telemetry-overview.md)
+#### [Telemetry Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
@@ -790,7 +790,7 @@
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported Upgrade Paths](upgrade/upgrade-paths.md)
 ### Business Central Spring 2019
-#### [Overview](upgrade/upgrading-to-business-central-on-premises.md)
+#### [Upgrade Overview](upgrade/upgrading-to-business-central-on-premises.md)
 #### [Before You Upgrade](upgrade/Upgrade-Considerations.md)
 #### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 #### Technical Upgrade
@@ -806,13 +806,13 @@
 ##### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update.md)
 ### Business Central 2019 Release Wave 2
-#### [Overview](upgrade/upgrade-overview-v15.md)
+#### [Upgrade Overview](upgrade/upgrade-overview-v15.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v15.md)
 ### Business Central 2020 Release Wave 1
-#### [Overview](upgrade/upgrade-overview-v16.md)
+#### [Upgrade Overview](upgrade/upgrade-overview-v16.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### Application and Data
 <!--##### [Overiew](upgrade/upgrade-application-code-upgrade-v16.md)-->
@@ -822,7 +822,7 @@
 ##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v16.md)
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
 ##### Migrating Tables and Fields Between Extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
 ###### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 ###### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 <!--#### Data Upgrade
