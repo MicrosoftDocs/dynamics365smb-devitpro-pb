@@ -99,7 +99,12 @@ Complete these steps to register the Azure AD application for service-to-service
 
 5. Set the **State** to **Enabled**.
 
-6. Validate the permission sets assigned. 
+6. Assign permissions to objects as needed.
+
+   For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). 
+   
+   > [!TIP]
+   > The system permission set and user group called **Dynamics 365 Automation** provide access to most typical objects used with automation. 
 
 7. Select **Grant Consent** and follow the wizard to the complete the setup.
 
