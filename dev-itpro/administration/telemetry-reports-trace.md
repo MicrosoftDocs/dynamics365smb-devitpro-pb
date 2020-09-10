@@ -71,11 +71,11 @@ The custom dimensions that are of particular interest for this operation include
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed<sup>[\[1\]](#1)</sup>.|
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements*<sup>[\[1\]](#1)</sup>.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements<sup>[\[1\]](#1)</sup>.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
 
-<sup><a name=1></a></sup>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
+<sup><a name=1>1</a></sup>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 
 ## Failed report generation
 
@@ -120,7 +120,7 @@ The following table explains the general dimensions of the **Failed report gener
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to generate the dataset and render the report before it failed. The time has the format hh:mm:ss.sssssss.|
 
-<sup><a name=2></a></sup> Available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 and later only. 
+<sup><a name=2></a>2</sup> Available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 and later only. 
 
 ### Analyzing report generation failures
 
