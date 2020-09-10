@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Page Customization Object
 
-The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. 
+The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. See [](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) for how to place actions and controls on a page customization object.
 
 The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 
 
@@ -29,11 +29,13 @@ The page customization object has more restrictions than the [page extension obj
 
 
 ## Snippet support
+
 Typing the shortcut `tpagecust` will create the basic layout for a page customization object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Views
+
 Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
 
 
