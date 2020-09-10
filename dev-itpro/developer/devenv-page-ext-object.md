@@ -213,8 +213,7 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
                     ApplicationArea = All;
                     
                     // Run page to test how actions work
-                    RunObject = page "Absence Registration";
-                    
+                    RunObject = page "Absence Registration";                    
                 }
             }
         }
