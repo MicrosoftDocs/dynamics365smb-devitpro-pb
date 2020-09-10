@@ -1,6 +1,6 @@
 ---
 title: "Using Designer"
-description: "Description of how Designer works."
+description: "Description of how Designer works and is integrated with the AL development experience."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/16/2020
@@ -17,7 +17,7 @@ ms.author: solsen
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br><br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.
+> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br><br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*. Designer *cannot be used by multiple users at the same time* in sandboxes.
 
 Here is a quick overview of capabilities in **Designer**: 
 
@@ -39,7 +39,6 @@ Here is a quick overview of capabilities in **Designer**:
 
 - Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users.
 - The changes you make in Designer will apply to **all** users.
-- Designer *cannot be used by multiple users at the same time* in sandboxes.
 - You cannot remove specific fields that are bound to a page and a field must belong to an underlying table.
 - You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components can't be moved using drag-and-drop and are restricted to the view that they are in.
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
