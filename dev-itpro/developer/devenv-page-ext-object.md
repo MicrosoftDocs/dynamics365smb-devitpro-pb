@@ -49,17 +49,17 @@ You can use the following keywords in the `layout` section to place and move fie
 |-----------------------|-------|-------------|
 |`addfirst`|`addfirst(Anchor)`|**Anchor**: areas and groups|
 |`addlast` |`addlast(Anchor)` |**Anchor**: areas and groups|
-|`addafter` |`addafter(Anchor)` |**Anchor**: controls, actions and groups|
-|`addbefore`|`addbefore(Anchor)` |**Anchor**: controls, actions and groups|
+|`addafter` |`addafter(Anchor)` |**Anchor**: controls, actions, and groups|
+|`addbefore`|`addbefore(Anchor)` |**Anchor**: controls, actions, and groups|
 |`movefirst`|`movefirst(Anchor; Target1, Target2)`|**Anchor**: area, group <br>**Target**: list of actions or list of controls|
 |`movelast` |`movelast(Anchor; Target1, Target2)` |**Anchor**: area, group <br>**Target**: list of actions or list of controls|
-|`moveafter` |`moveafter(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls|
-|`movebefore`|`movebefore(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls|
-|`modify`|`modify(Target)`|**Target**: controls, actions and groups|
+|`moveafter` |`moveafter(Anchor; Target1, Target2)`|**Anchor**: controls, actions, and groups <br>**Target**: list of actions or list of controls|
+|`movebefore`|`movebefore(Anchor; Target1, Target2)`|**Anchor**: controls, actions, and groups <br>**Target**: list of actions or list of controls|
+|`modify`|`modify(Target)`|**Target**: controls, actions, and groups|
 
 ### Example
 
-To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, `action` creates a new group in the ribbon and places it last in the `Creation` group.  
+To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, the `actions` section creates a new group in the ribbon and places it last in the `Creation` group.  
 
 ```
 pageextension 70000020 CustomerCardExtension extends "Customer Card"
