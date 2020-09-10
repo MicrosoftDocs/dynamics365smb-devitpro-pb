@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Page Customization Object
 
-The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. See [](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) for how to place actions and controls on a page customization object.
+The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. See [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) for how to place actions and controls on a page customization object.
 
 The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 
 
@@ -22,7 +22,7 @@ The page customization object has more restrictions than the [page extension obj
 > A single page customization can be used with multiple profiles within the same extension. Page customizations only apply to the RoleCenters they are specified for. In order to view or changes the RoleCenters in the client, go to **My Settings** > **Role Center**. 
 
 > [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters.   
+> Extension objects can have a name with a maximum length of 30 characters.
 
 > [!NOTE]  
 > Modifying actions in Cue groups on page extensions is not supported.
