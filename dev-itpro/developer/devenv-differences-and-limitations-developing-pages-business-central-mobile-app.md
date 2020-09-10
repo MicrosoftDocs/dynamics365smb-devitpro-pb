@@ -6,7 +6,7 @@ ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: blrobl
 ms.author: t-blrobl
 ---

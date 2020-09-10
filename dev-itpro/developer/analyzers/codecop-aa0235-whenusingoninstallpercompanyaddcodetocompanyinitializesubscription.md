@@ -2,7 +2,7 @@
 title: "When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 09/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,6 @@ codeunit 1160 "AP Install"
    end;
 
    [EventSubscriber(ObjectType::Codeunit, Codeunit::""Company - Initialize"", 'OnCompanyInitialize', '', false, false)]
-
    local procedure CompanyInitialize()
    begin
    ...
