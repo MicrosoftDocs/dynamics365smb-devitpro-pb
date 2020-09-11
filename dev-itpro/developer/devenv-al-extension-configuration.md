@@ -12,9 +12,10 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
+# AL Language Extension Configuration
+
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-# AL Language Extension Configuration
 The AL Language extension has a number of settings that can be specified for a specific user or for a workspace. To activate the settings, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration** you will find the settings that are available for the AL Language extension. 
 
 ## Settings
