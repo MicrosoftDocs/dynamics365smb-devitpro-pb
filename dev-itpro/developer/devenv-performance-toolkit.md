@@ -18,19 +18,19 @@ This extension is built for independent solution vendors (ISVs) and value added 
 In short, the Performance Toolkit helps answer questions such as, "Does my solution for [!INCLUDE[prodshort](includes/prodshort.md)] support X number of users doing this, that, and the other thing at the same time?" It doesn't answer questions such as, "How many orders can [!INCLUDE[prodshort](includes/prodshort.md)] process per hour?"
 
 > [!IMPORTANT]
-> You cannot use the toolkit in a production tenant. You can only use it in sandboxes and Docker images.
+> You can only use the toolkit only in sandbox environments and Docker images. You cannot use it in a production tenant.
 
 ## Components of the Performance Toolkit
-The Performance Toolkit is two extensions, the **[!INCLUDE[prodshort](includes/prodshort.md)] Performance Toolkit** and the **[!INCLUDE[prodshort](includes/prodshort.md)] Performance Toolkit Samples**. To get the full benefit of the toolkit, we recommend that you download and install both from AppSource. <!--check whether you can link to the download pages--> Combined, they provide the following:
+The Performance Toolkit is two extensions, the **[!INCLUDE[prodshort](includes/prodshort.md)] Performance Toolkit** and the **[!INCLUDE[prodshort](includes/prodshort.md)] Performance Toolkit Samples**. To get the full benefit of the toolkit, we recommend that you download and install both from AppSource. <!--check whether you can link to the download pages--> Combined, the extensions provide the following:
 
-1. A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
-2. Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
-3. A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, for security reasons you must start these scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. for more information, see [Starting the run from the command line](devenv-performance-toolkit.md#starting-the-run-from-powershell) 
+* A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
+* Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
+* A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, for security reasons you must start these scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the run from the command line](devenv-performance-toolkit.md#starting-the-run-from-powershell) 
 
 ## Single and Multiple Sessions
-Typically, you'll probably want to run the suite for multiple sessions at the same time. In that case, after you configure the suite, use the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** to run your test just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
+Typically, you'll probably want to run the suite for multiple sessions at the same time. In that case, after you configure the suite, use the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** action to run your suite just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
 
-You can run up to 100 sessions at the same time for a suite. This is controlled by the **Total No. of Sessions** field. 
+You can run up to 125 sessions at the same time for a test suite. The **Total No. of Sessions** field shows how many sessions will be created when you run the suite. 
 
 ## Running in the Background and Foreground
 On the suite lines, the **Run in Foreground** check box lets you run tests in sequence, rather than in parallel. You can also use it in combination with background tasks, but that will run each session individually. You can only run one session in the foreground at a time. 
@@ -116,15 +116,13 @@ TestRunnerPage 150010 -SuiteCode "TRADE-50U"
 When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results).
 
 ## Troubleshooting log entries
-After running the suite, you can choose **Log Entries** to see what happened. Use the **Show Errors** and **Show sessions running at the same time as this** buttons to apply filters to the results. For example, filtering can help you troubleshooting errors by showing you what a user was doing when an error occurred. You can use the **Open in Excel** action to build dashboards that can help you visualize performance results.
+After running the suite, you can choose **Log Entries** to see what happened. Use the **Show Errors** and **Show sessions running at the same time as this** actions to apply filters to the results. For example, filtering can help troubleshoot errors by showing what a user was doing when an error occurred. By default, the page is filtered to show the latest version, but you can change or remove the filter if you want to compare runs. You can use the **Open in Excel** action to build dashboards that can help visualize performance results.
 
 <!--********NEED AN IMAGE OF THE LOG ENTRIES PAGE******************-->
 
 Log entries are listed in the order that they were created, which means that the different scenarios are mixed. <!--they need to apply filters to group results, I guess?--> Each run is identified by the value in the **Version No.** fields. 
 
-By default, the **Log Entries** page is filtered to show the latest version, but you can change or remove the filter if you want to compare runs. 
-
-The **Operation** column shows the individual measurements, where the term _Scenario_ is used for running the codeunit without the user wait time. The **No. of SQL Statements** column includes the SQL statements that were issued by the scenario and system activities, such as retrieving metadata. The counts do, however, exclude the log entries themselves. To drill down to a single session, filter on the **Session No.** field or choose **Open in Excel** to create a pivot table and pivot chart for deeper analysis. 
+The **Operation** column shows the individual measurements, where the term _Scenario_ is used for running the codeunit without the user wait time. The **No. of SQL Statements** column includes the SQL statements that were issued by the scenario and system activities, such as retrieving metadata. The counts exclude the log entries themselves. To drill down to a single session, filter on the **Session No.** field or choose **Open in Excel** to create a pivot table and pivot chart for deeper analysis. 
 
 ## Example: Evaluate SQL calls and timing in Single Run mode
 This example shows how to use Single Run mode for performance regression testing (PRT) between changes to code, to evaluate SQL calls and timing. Often, when developing a new extension, you start out with limited code and may want to wait to do a larger benchmark test with simulated concurrent users until you’re closer to having a full, end-to-end scenario. You can use the **Start in Single Run Mode** action to perform a limited test, for example, on a new extension. Single Run mode will still provide things like a baseline, the ability to run the test in the background, and give you instant feedback. 
