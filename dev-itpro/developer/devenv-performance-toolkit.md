@@ -155,14 +155,18 @@ The results of the PRT are shown on the **BCPT Suite Lines** FastTab. The follow
 |**Average duration** |Equal to **Total Duration in (ms)** field for the first run, but after you run test multiple times it's a result of the sum of runs since your baseline.|
 |**No. of SQL statements**|The number of SQL statements generated for one run.|
 |**Avg. No. of SQL Statements**|Similar to the duration fields, for the first run this will be the same as the **No. of SQL statements** field, but will become averaged after subsequent runs.|
-
+  
+<br>The following table describes the fields related to the baseline.
+  
 |Fields for Baseline  |Description  |
 |---------|---------|
 |**No. of Iterations Base**|Not relevant for PRTs in Single Run mode.|
 |**Total Duration Base (ms)**|The total duration of the baseline run.|
 |**Avg. Duration Base (ms)**|Not relevant for PRTs in Single Run mode.|
 |**Avg. No. of SQL Statements Base**|The number of SQL statements in your base run.|
-
+  
+<br>The following table describes the fields that show the delta between the run and the baseline.
+  
 |Fields for the Delta  |Description  |
 |---------|---------|
 |**Change in No. of SQL statements (%)**|The difference, as a percent, between a baseline and the latest run.|
