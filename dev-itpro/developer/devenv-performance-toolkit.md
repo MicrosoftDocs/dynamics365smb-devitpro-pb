@@ -67,11 +67,11 @@ We'll configure a test suite for scenario with the following stats:
 5. Specify the base version to compare. 
    > [!TIP]
    > To change the value in the **Base Version** field, you might need to turn on Edit mode.
-1. Configure lines for the suite. 
+6. Configure lines for the suite. 
    > [!TIP]
    > The lines will contain some of the settings from the header. Updating the values on the lines will also update the header.
     1. On the **BCPT Suite Lines** FastTab, choose the codeunits to run.
-    2. In the **Parameters** field, enter a parameter to define iterations, for example, to create lines on sales orders, Example, a Lines=10 parameter creates 10 lines on a document.  
+    2. In the **Parameters** field, enter a parameter to define iterations such as, for example, creating lines on documents. For example, a parameter **Lines=10** will create 10 lines on a document.  
     3. In the **No. of Sessions** field, enter the number of concurrent users to simulate. 
     4. Optional: If you want to run in Single Run mode, or you want to run one of the sessions without applying settings such as minimum and maximum delays, choose the **Run in Foreground** check box. For more information, see [Running in the Background and Foreground](devenv-performance-toolkit.md#running-in-the-background-and-foreground).
 
