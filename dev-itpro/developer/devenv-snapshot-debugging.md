@@ -87,7 +87,7 @@ The user can set breakpoints and continue execution to that breakpoint for testi
 
 Snapshot debugging is almost the same as a regular debugging with the differences mentioned in the following:
 
-||
+|Snapshot versus regular debugging|
 |--|
 |Breakpoints can be added and removed and they will be hit if given a breakpoint; the breakpoint is in the execution context of a recorded state. This means that if walking the execution stack for a breakpoint and the next stepped line is reached, then the code will break on the breakpoint. |
 |A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection.|
