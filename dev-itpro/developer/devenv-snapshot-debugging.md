@@ -17,7 +17,7 @@ ms.author: solsen
 Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
 
 > [!IMPORTANT]  
-> With this release snapshot debugging is enabled in sandbox environments only. Debugging in a production environment will be enabled with a later release. You can, however, use snapshot debugging in this release to attach to a specific user session, which is currently not possible with regular debugging.
+> With this release snapshot debugging is enabled in *sandbox environments* only. Debugging in a production environment will be enabled with a later release. You can, however, use snapshot debugging in this release to attach to a specific user session, which is currently not possible with regular debugging.
 
 Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
@@ -37,11 +37,11 @@ Choose whether to run the session on a cloud service or locally. The configurati
 |--------|-------------|
 |`userId`| The GUID of the user on whose behalf a snapshot debugging will be started. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. |
 |`sessionId`| A session ID for the user specified above in `userId`.|
-|`snapshotVerbosity`| Determines how much execution context to be recorded. If only **"SnapPoint** is specified then only methods that hit a snappoint will be recorded.|
+|`snapshotVerbosity`| Determines how much execution context to be recorded. If **"SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
 
-When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**. 
+When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**.
 
-To record the AL execution, the server will now wait for a connection to happen with the following rules: 
+To record the AL execution, the server will now wait for a connection to happen where the following rules apply: 
 
 - If a `sessionId` is specified for a userId for a given tenant then it will be that session that will be snapshot debugged.
 - If only a `userId` is specified for a given tenant then the next session that is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
