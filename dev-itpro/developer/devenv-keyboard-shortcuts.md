@@ -59,6 +59,9 @@ The following table provides an overview of some of the shortcut key combination
 |Ctrl+F5|Build and deploy|
 
 ## Debugging in Visual Studio Code
+
+For topics on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapshot Debugging](devenv-snapshot-debugging.md).
+
 |Keyboard Shortcut|Action|
 |-----------------|------|
 |F5           |Start debugging session.|
@@ -70,6 +73,7 @@ The following table provides an overview of some of the shortcut key combination
 
 
 ## See Also
+
 [Developing Extensions](devenv-dev-overview.md)  
 [Getting Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)
