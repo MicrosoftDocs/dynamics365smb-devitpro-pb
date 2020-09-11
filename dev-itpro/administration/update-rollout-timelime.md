@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 04/03/2020
+ms.date: 09/11/2020
 ms.author: edupont
 ---
 
@@ -131,7 +131,7 @@ The following table describes the suggested milestones with example dates.
 |---------|------------|-----------|
 |Previews are available|September 1, 2020|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
 |A few days before you know that the update is announced|September 30, 2020|You create a new sandbox environment based on your existing production environment (copy your production environment into a sandbox) and wait for it to be updated to the new version.|
-|Update available in your region|October 5. 2020|The major update is made available. You're notified about it via e-mail. Go to the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and set the update date for your sandbox environment to the current date. The sandbox will be updated within the closest available update time window you set for it. Now you can test your existing extensions and your production data against the new version. We recommend that you set the update date for your production environment a few days or weeks in the future, to ensure that it does not get updated automatically before you had a chance to test the new version and your extensions in your sandbox environment.|
+|Update available in your region|October 5. 2020|The major update is made available. You're notified about it via e-mail. Go to the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and set the update date for your sandbox environment to the current date. The sandbox will be updated within the closest available update time window that you set for it. Now, you can test your existing extensions and your production data against the new version.</ br></ br>We recommend that you set the update date for your production environment a few days or weeks in the future, to help make sure that it does not get updated automatically before you had a chance to test the new version and your extensions in your sandbox environment.|
 |Preview sandboxes are deleted|November 1, 2020|30 days after the new major update is announced, the preview sandboxes are deleted. There will be no option to keep these sandboxes or export data from them.|
 
 ## See also
