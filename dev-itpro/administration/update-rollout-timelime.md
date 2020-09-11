@@ -19,7 +19,7 @@ This article provides an overview of what you need to know about how a major [!I
 
 ## Timelines for major updates
 
-The following figure illustrates the key milestones and dates for rolling out a major update. The timeline and dates are loosely based on [2020 release wave 1](/dynamics365-release-plan/2020wave1/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
+The following figure illustrates the key milestones and dates for rolling out a major update. The timeline and dates are loosely based on [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
 
 ![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
 
@@ -27,12 +27,12 @@ The following table describes the milestones with example dates.
 
 |Milestone|Example date|Description|
 |---------|------------|-----------|
-|Update is available|April 1, 2020|The date when the new major version of Business Central becomes generally available|
-|Update starts rolling out|April 8, 2020|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within allowed date range, to a date, which fits you better.|
-|Last scheduled update date|May 30, 2020|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 2020 release wave 1.|
+|Update is available|October 1, 2020|The date when the new major version of Business Central becomes generally available|
+|Update starts rolling out|October 15, 2020|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within allowed date range, to a date, which fits you better.|
+|Last scheduled update date|November 30, 2020|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 2020 release wave 2.|
 
 > [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule. Specifically for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], existing customers have 60 days to upgrade after the new version is generally available. For a general overview, see [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule). For more information about the steps that you must take, see [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md).
+> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft made some changes to the update schedules in April in response to COVID-19. Specifically for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], existing customers were given 60 days to upgrade after the new version was made generally available. The extended 60 days update window is also impemented for 2020 release wave 2 updates. 
 
 Dates and times differ significantly across countries and regions. Make sure that you have set up notifications in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] so that you're notified when the next major update is available.  
 
@@ -129,11 +129,10 @@ The following table describes the suggested milestones with example dates.
 
 |Milestone|Example date|Description|
 |---------|------------|-----------|
-|Previews are available|February 25, 2020|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
-|A few days before you know that the update is announced|March 30, 2020|You create a new sandbox environment based on your existing production environment and wait for it to be automatically updated to the new version.|
-|Interim sandbox is updated to the new version|April 2. 2020|The new sandbox is updated, and you can test your existing extensions and your production data against the new version.|
-|Update available in your region|April 8, 2020|you're notified that the update is available and hurry to set the relevant update dates in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].|
-|Preview sandboxes are deleted|May 1, 2020|30 days after the new major update is announced, the preview sandboxes are deleted.|
+|Previews are available|September 1, 2020|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
+|A few days before you know that the update is announced|September 30, 2020|You create a new sandbox environment based on your existing production environment (copy your production environment into a sandbox) and wait for it to be updated to the new version.|
+|Update available in your region|October 5. 2020|The major update is made available. You're notified about it via e-mail. Go to the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and set the update date for your sandbox environment to the current date. The sandbox will be updated within the closest available update time window you set for it. Now you can test your existing extensions and your production data against the new version. We recommend that you set the update date for your production environment a few days or weeks in the future, to ensure that it does not get updated automatically before you had a chance to test the new version and your extensions in your sandbox environment.|
+|Preview sandboxes are deleted|November 1, 2020|30 days after the new major update is announced, the preview sandboxes are deleted. There will be no option to keep these sandboxes or export data from them.|
 
 ## See also
 
