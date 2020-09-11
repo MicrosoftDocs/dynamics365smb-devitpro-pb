@@ -15,7 +15,7 @@ ms.author: solsen
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-The `#pragma implicitwith` instruction can enable or disable warnings on usage of implicit `with` statements in AL code. This can be used as a temporary solution to avoid getting warnings on the usage of implicit with statements in the code, that you plan on rewriting but just have not fixed yet. With the `#pragma implicitwith disable` you disable the emit of implicit with warnings for a specific location in code, and with `#pragma implicitwith restore` you restore the warning back to it's original state. If you do not `restore`, the `disable` instruction is valid for the rest of the file.
+The `#pragma implicitwith` instruction changes the compiler behavior to not create an implicit with. This can be used as a temporary solution to avoid getting warnings on the usage of implicit with statements in the code, that you plan on rewriting but just have not fixed yet. With the `#pragma implicitwith disable` you disable the emit of implicit with warnings for a specific location in code, and with `#pragma implicitwith restore` you restore the warning back to it's original state. If you do not `restore`, the `disable` instruction is valid for the rest of the file.
 
 > [!IMPORTANT]  
 > It is important to be aware that the `implicitwith` warning will become an error in a future release and therefore suppressing it should be a temporary solution.
