@@ -126,7 +126,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## NonDebuggable attribute
 
-To restrict the ability to debug certain methods and/or variables, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
 ## See Also
 
