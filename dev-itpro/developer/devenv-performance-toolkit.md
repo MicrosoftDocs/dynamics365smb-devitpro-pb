@@ -1,6 +1,6 @@
 ---
 title: "Performance Toolkit Extension"
-description: Test your extensions for performance regressions. 
+description: Test your extensions for performance regressions during the development process. 
 author: bholtorf
 ms.custom: na
 ms.date: 06/29/2020
@@ -38,8 +38,9 @@ On the suite lines, the **Run in Foreground** check box lets you run tests in se
 > [!NOTE]
 > If you use Single Run mode and run in the foreground, you don't need to go to PowerShell to run the test.
 
+<!--
 ## Comparing Runs
-In this example the change log is turned on for all modifications on sales and purchase lines. However, this is not a recommended approach and used here for demonstration purposes only. <!--can we show a recommended approach instead?--> Before running the simulation with change log on, change the **Tag** field to **Change log**. When looking at the log entries afterwards, either remove the filter on the **Version No.** field, or change it to only include the last two runs. After exporting to Excel, select the tag as columns in the pivot table, use **Operation** as a filter, and set the filter to **Scenario**.
+Before running a simulation with change log on, change the **Tag** field to **Change log**. When looking at the log entries afterwards, either remove the filter on the **Version No.** field, or change it to only include the last two runs. After exporting to Excel, select the tag as columns in the pivot table, use **Operation** as a filter, and set the filter to **Scenario**.
 
 Logging all changes to the sales and purchase line significantly added to the duration, and the added load made the other scenarios a bit slower. <!---this might be a note-->
 
@@ -112,12 +113,12 @@ TestRunnerPage 150010 -SuiteCode "TRADE-50U"
 > When you start from the command ine, there is a two second delay between new sessions.
 
 ## Analyzing Results
-When a run has completed, you can view the results on the lines in the fields to the right of the **No. of Iterations** field.
+When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results).
 
 ## Troubleshooting log entries
 After running the suite, you can choose **Log Entries** to see what happened. Use the **Show Errors** and **Show sessions running at the same time as this** buttons to apply filters to the results. For example, filtering can help you troubleshooting errors by showing you what a user was doing when an error occurred. You can use the **Open in Excel** action to build dashboards that can help you visualize performance results.
 
-********Image of the Log Entries page******************
+<!--********NEED AN IMAGE OF THE LOG ENTRIES PAGE******************-->
 
 Log entries are listed in the order that they were created, which means that the different scenarios are mixed. <!--they need to apply filters to group results, I guess?--> Each run is identified by the value in the **Version No.** fields. 
 
@@ -126,62 +127,58 @@ By default, the **Log Entries** page is filtered to show the latest version, but
 The **Operation** column shows the individual measurements, where the term _Scenario_ is used for running the codeunit without the user wait time. The **No. of SQL Statements** column includes the SQL statements that were issued by the scenario and system activities, such as retrieving metadata. The counts do, however, exclude the log entries themselves. To drill down to a single session, filter on the **Session No.** field or choose **Open in Excel** to create a pivot table and pivot chart for deeper analysis. 
 
 ## Example: Evaluate SQL calls and timing in Single Run mode
-This example shows how to use Single Run mode for performance regression testing (PRT) between runs to evaluate SQL calls and timing. Often, when developing a new extension, you start out with limited code and may want to wait to do a larger benchmark test with simulated concurrent users until you’re closer to having a full, end-to-end scenario. You can use the **Start in Single Run Mode** action to perform a limited test, for example, on a new extension. Single Run mode will still provide things like a baseline, the ability to run the test in the background, and give you instant feedback. 
+This example shows how to use Single Run mode for performance regression testing (PRT) between changes to code, to evaluate SQL calls and timing. Often, when developing a new extension, you start out with limited code and may want to wait to do a larger benchmark test with simulated concurrent users until you’re closer to having a full, end-to-end scenario. You can use the **Start in Single Run Mode** action to perform a limited test, for example, on a new extension. Single Run mode will still provide things like a baseline, the ability to run the test in the background, and give you instant feedback. 
 
-The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline. <!--not sure what "maintained" means here. Kept?-->
+The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline. 
 
 ## To run a test in Single Run mode
-The following steps provide an example of how to run a PRT in Single Run mode. The [Analyzing the results](devenv-performance-toolkit.md#analyzing-the-results) section covers how to analyze the results.
+The following steps provide an example of how to run a PRT in Single Run mode.
 
-1. On the **BCPT Suites** page, choose ** New**.
-2. In the **Code** field, enter a name for the suite. In this example, we'll use **PreTest**. <!--Need to get the terminology right around "suite."-->
+1. On the **BCPT Suites** page, choose **New**.
+2. In the **Code** field, enter a name for the test suite. In this example, we'll use **PreTest**. 
 3. In the **Tag** field, enter something that will make it easy to identify the suite later when you analyze the results.
 4. The fields for duration and delays are not used for Single Run mode, so we'll leave their default values.
-5. In the testcase repeater (grid), choose the test you wrote for your new component. <!--Is the "repeater grid" the suite lines? also, this assumes that they've written a test. Instead, can we have them choose one that's already available?-->
-6. In this example, we're a total weight for the Sales Order page, so we'll use the Sales Order page test with a parameter that creates four lines. <!--Does "weight" mean "wait time" here? and we should probably give an example of a parameter that creates four lines.--> 
-7. Clear the **Run in Foreground** check box. <!--why clear the check box? Don't they want this to run in the foreground?-->
+5. On the BCPT Suit Lines FastTab, choose the test suite for your component.
+6. In this example, we're calculating the total weight of the items on a sales order, so we'll use the **Sales Order** page test with a parameter that creates four lines. The parameter looks as follows: Lines=4. 
+7. Clear the **Run in Foreground** check box. This will run the test suite in a background thread. 
 8. Choose **Start in Single Run mode**.
-9. To set your baseline after the run completes, In the **Version Field**, enter **1** in the **Baseline** field. <!--the field naming here is fishy. Investigate-->
+9. To set your baseline after the run completes, in the **Base Version** field, enter **1**.
 
 > [!TIP]
-> If you run the test again you'll have delta values in the test case line. <!--where do they see the delta values?--> You can reset the baseline to any version, and run as many test as needed.
+> If you run the test again you'll have delta values in the test case line. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results). You can reset the baseline to any version, and run as many test as needed.
 
 ### Analyzing the results
-The results of the PRT are shown on the suite lines, as described in the following table.
-<!--
-The title of the example calls out SQL calls and timing, but the description of the analysis doesn't seem to do that, specifically. Should we change the title to "Analyzing Results" or should we 
+The results of the PRT are shown on the **BCPT Suite Lines** FastTab. The following tables describe the fields that show results of the current run, the results of the baseline, and the delta between the two.
 
-Should we include this sentence in a note about "warming up" the client? 
-
-In this example, the baseline version is set to the 2 (second) run, this is because the warmup of the Client add’s significant overhead to the time.  -->
-
-|Field  |Value  |
+|Fields for Current Run  |Description  |
 |---------|---------|
-|**No. of Iterations**|How many times was it executed, this will remain 1 as we use the Start In single Run Mode.|
+|**No. of Iterations**|How many times it ran. this will remain 1 as we use the Start In single Run Mode.|
 |**Total Duration in (ms)**|How long it took to complete one iteration.|
 |**Average duration** |Equal to **Total Duration in (ms)** field for the first run, but after you run test multiple times it's a result of the sum of runs since your baseline.|
 |**No. of SQL statements**|The number of SQL statements generated for one run.|
-|**Avg. No. of SQL Statements**|Similar to the duration fields, for the first run this will be the same as the **No. of SQL statements** field, but will become the sum of subsequent runs. <!--not sure I understand the "sum" part. Isn't it average?-->|
+|**Avg. No. of SQL Statements**|Similar to the duration fields, for the first run this will be the same as the **No. of SQL statements** field, but will become averaged after subsequent runs.|
+
+|Fields for Baseline  |Description  |
+|---------|---------|
 |**No. of Iterations Base**|Not relevant for PRTs in Single Run mode.|
-|**Total Duration Base (ms)**|The baseline version number after you have done multiple runs. <!--the name of this field includes "duration" but the description talks about version number. Should this be for the No. of Iterations Base field just above?-->|
+|**Total Duration Base (ms)**|The total duration of the baseline run.|
 |**Avg. Duration Base (ms)**|Not relevant for PRTs in Single Run mode.|
-|**Avg. No. of SQL Statements Base**|Displays this value from your baseline run as in the total and average durations for your base. <!--need to ask about this. Don't understand-->|
+|**Avg. No. of SQL Statements Base**|The number of SQL statements in your base run.|
+
+|Fields for the Delta  |Description  |
+|---------|---------|
 |**Change in No. of SQL statements (%)**|The difference, as a percent, between a baseline and the latest run.|
 |**Changes in Duration (%)**|The change in measured time between a baseline and the latest run.|
 
 ## Writing Test Cases (codeunits)
-A test suite, in its simplest form, is just a codeunit that does something:
+A test suite is a codeunit that runs on the BCPT Line record so it can read parameters from the record fields, such as the user delay.
 
-*************Image of codeunit**************
-> [!NOTE]
-> The codeunit runs on the BCPT Line record so it can read parameters from the record fields, such as the user delay.
-
-To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. <!--need the image of the codeunit-->Test-codeunits don’t run on tables, so get the BCPT Line record by calling the BCPT Role Wrapper codeunit, which is a single-instance codeunit. In the example of the BCPT Open Item List, BCPTLine is declared as a global variable, and the first thing called is the BCPT Role Wrapper to get the line. The example also shows the use of individual timers where we call the BCPTLine.StartScenario(‘<some name>’) which stores the current date-time, and later ABTLine.EndScenario(‘<some name>’) which creates a log entry that specifies the start and end time, duration, and the Operation (‘<some name>’ in this case). You must also call ABTLine.UserWait(), which simulates a delay in the user moving between fields, as well issuing a Commit().
+To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. <!--**NEED AN IMAGE OF A CODEUNIT**-->Test-codeunits don’t run on tables, so get the BCPT Line record by calling the BCPT Role Wrapper codeunit, which is a single-instance codeunit. In the example of the BCPT Open Item List, BCPTLine is declared as a global variable, and the first thing called is the BCPT Role Wrapper to get the line. The example also shows the use of individual timers where we call the BCPTLine.StartScenario(‘<some name>’) which stores the current date-time, and later ABTLine.EndScenario(‘<some name>’) which creates a log entry that specifies the start and end time, duration, and the Operation (‘<some name>’ in this case). You must also call ABTLine.UserWait(), which simulates a delay in the user moving between fields, as well issuing a Commit().
 
 > [!IMPORTANT]
 > If you run tests on standard [!INCLUDE[prodshort](includes/prodshort.md)] demo companies, and you want to create more than just a handful of entities, you will probably have to change the number series or create a new one.
 
-********Image of codeunit 150110*************
+<!--********NEED AN IMAGE OF CODEUNIT 150110*************-->
 
 ## See Also
 [Testing the Application Overview](devenv-testing-application.md)  
