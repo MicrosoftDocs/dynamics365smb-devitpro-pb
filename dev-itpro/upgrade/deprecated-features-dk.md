@@ -1,5 +1,5 @@
 ---
-title: German Features that are Moved, Removed, or Replaced | Microsoft Docs
+title: Danish Features that are Moved, Removed, or Replaced
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Denmark that we have moved, removed, or replaced.
 author: bholtorf
 
