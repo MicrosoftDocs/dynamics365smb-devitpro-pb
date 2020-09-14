@@ -22,6 +22,9 @@ By adding XML comments in code, you can enable IntelliSense in Visual Studio Cod
 > [!NOTE]  
 > Integration with documentation generator tools like DocFx and SandCastle is currently not supported.
 
+> [!NOTE]  
+> If you have the `showMyCode` setting in the app.json file set to `false` and download an app package; the app package will not contain any XML comments.
+
 ## Supported XML tags
 
 The following table lists the XML elements that are supported for AL.
