@@ -22,9 +22,9 @@ A number of fields that are related to pictures are no longer in use, because th
 |5200|Employee|19|Picture|Will be removed in a later release.|
 |5600|Fixed Asset|22|Picture|Will be removed in a later release.|
 
-For more information about Media Data Type, see [Media Data Type](../../developer/methods-auto/media/media-data-type.md) documentation.
+For more information about Media Data Type, see [Media Data Type](../developer/methods-auto/media/media-data-type.md) reference documentation.
 
-A field that is related to VAT Registration Number validation is no longer in use, because the feature was replaced EU VAT Registration No. Validation Service Setup [!INCLUDE[prodshort](prodshort.md)]. The field is marked as ObsoleteState:Pending. 
+A field that is related to VAT Registration Number validation is no longer in use, because the feature was replaced EU VAT Registration No. Validation Service Setup [!INCLUDE[prodshort](prodshort.md)]. The field is marked as ObsoleteState:Pending.  
 
 |Table ID|Field ID|Comments|
 |--------|--------|--------|
