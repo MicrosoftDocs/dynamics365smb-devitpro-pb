@@ -21,8 +21,6 @@ The following fields are marked as ObsoleteState:Pending in the UK version.
 |5107|10501|Will be removed in a later release.|
 |5109|10501|Will be removed in a later release.|
 
-A number of fields are also deleted in the UK version. For more information, see [Deprecated Features in the UK Version](deprecated-features-uk.md).
-
 The following tables are marked as ObsoleteState:Pending in the UK version.
 
 |Table ID|Table Name|Field ID|Field Name|Comments|

@@ -8,7 +8,7 @@ ms.author: edupont
 ---
 The following fields are marked as ObsoleteState:Pending in the CZ version.
 
-#### Different types of disposal and maintenance
+Different types of disposal and maintenance:
 
 |Table ID|Table Name|Field ID|Field Name|Comments|
 |--------|--------|--------|--------|--------|
@@ -16,7 +16,7 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |5603|FA Setup|31045|FA Disposal By Reason Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |5606|FA Posting Group|31042|Use Standard Disposal|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Posting Description
+Posting Description:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -37,13 +37,13 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |11785|Posting Description|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |11786|Posting Desc. Parameter|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### General Journal Reconciliation
+General Journal Reconciliation:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |269|G/L Account Net Change|11760|Type|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Industry Classification
+Industry Classification:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -65,14 +65,14 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |6660|Return Receipt Header|31065|Industry Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |11791|Industry Code|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### VAT Rounding Improvements
+VAT Rounding Improvements:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |98|General Ledger Setup|11765|Round VAT Coeff.|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |98|General Ledger Setup|11766|VAT Coeff. Rounding Precision|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Postponing VAT on Sales Credit Memo
+Postponing VAT on Sales Credit Memo:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -88,7 +88,7 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |5994|Service Cr.Memo Header|11763|Postponed VAT|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |5994|Service Cr.Memo Header|11764|Postponed VAT Realized|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Non-deductible VAT
+Non-deductible VAT:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -133,7 +133,7 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |11784|Non Deductible VAT Setup|3|From Date|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |11784|Non Deductible VAT Setup|4|Non Deductible VAT %|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### VAT Registration in Other Countries
+VAT Registration in Other Countries:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -183,7 +183,7 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |31066|VIES Declaration Header|80|Perform. Country/Region Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |31100|VAT Control Report Header|15|Perform. Country/Region Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### VAT Identifier
+VAT Identifier:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -191,7 +191,7 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |11767|VAT Identifier|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |11768|VAT Identifier Translate|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Reverse Charge Statement
+Reverse Charge Statement:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -201,20 +201,20 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |31093|Reverse Charge Header|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |31094|Reverse Charge Line|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Fixed Assets Classification - SKP codes
+Fixed Assets Classification - SKP codes:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |5600|Fixed Asset|31044|SKP Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |31043|SKP Code|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Fixed Assets – Depreciation FA Appreciation From
+Fixed Assets – Depreciation FA Appreciation From:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |5612|FA Depreciation Book|31040|Depr. FA Appreciation From|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Fixed Assets – item consumption for maintenance
+Fixed Assets – item consumption for maintenance:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -232,7 +232,7 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |5621|FA Journal Line|31040|Item Ledger Entry No.|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |5625|Maintenance Ledger Entry|31040|Item Ledger Entry No.|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Tax corrective documents for VAT
+Tax corrective documents for VAT:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -257,13 +257,13 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |5995|Service Cr.Memo Line|11762|Reason Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |6661|Return Receipt Line|11762|Reason Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Vendor Templates
+Vendor Templates:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |11794|Vendor Template|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Item Charges Enhancements
+Item Charges Enhancements:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -278,7 +278,7 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |5800|Item Charge|31077|Disable Return Receipt Lines|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |5800|Item Charge|31078|Assignment on Receive/Shipment|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### No. Series Enhancements
+No. Series Enhancements:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -290,14 +290,14 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |5740|Transfer Header|11799|Shipping Wh. No. Series|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |11799|No. Series Link|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Packaging Tax Calculation
+Packaging Tax Calculation:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |31070|Package Material|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |31071|Item Package Material|All|All Fields|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Dimension for VAT Entry
+Dimension for VAT Entry:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -305,13 +305,13 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |254|VAT Entry|11772|Global Dimension 2 Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |254|VAT Entry|11773|Dimension Set ID|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Disable Cards Deleting
+Disable Cards Deleting:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |98|General Ledger Setup|11792|Delete Card with Entries|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Field for Full Description
+Field for Full Description:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
@@ -326,25 +326,22 @@ The following fields are marked as ObsoleteState:Pending in the CZ version.
 |5600|Fixed Asset|11792|Full Description|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |5718|Nonstock Item|11792|Full Description|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Customer Template extension
+Customer Template extension:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |5105|Customer Template|11790|No. Series|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |5105|Customer Template|11791|Language Code|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Indivisible Unit of Measure
+Indivisible Unit of Measure:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |204|Unit of Measure|31070|Indivisible Unit|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 |5404|Item Unit of Measure|31070|Indivisible Unit|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
 
-#### Check Balance in General Ledger Journal
+Check Balance in General Ledger Journal:
 
 |TableNo|TableName|No.|FieldName|ObsoleteReason|
 |----|----|----|----|----|
 |80|Gen. Journal Template|11761|Not Check Correction|Will be removed in a later release (marked as ObsoleteState:Removed in 01.2021).|
-
-A number of fields are also deleted in the CZ version. For more information, see [Deprecated Features in the CZ Version](deprecated-features-cz.md).
-
