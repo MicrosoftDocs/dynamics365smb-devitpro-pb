@@ -36,8 +36,9 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 1. Get the Base Application source from the `/Applications/BaseApp/Source` folder on the DVD.
 2. Unzip the *BaseApplication.source.zip* file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
-3. Next, download symbols for the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**. 
-4. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
+3. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
+4. Next, download symbols for the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**. 
+5. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
     ```
     ...
     field(Name; Name)
@@ -57,10 +58,9 @@ Make sure to have the following prerequisites installed to be able to follow the
     }
     ...
     ```
-5. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
+6. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
     - **Allowed Extension Target Level** is set to **OnPrem**.
     - **Enable Developer Service Endpoint** checkbox is selected.
-6. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
 7. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:
     ```
     "dependencies": [
