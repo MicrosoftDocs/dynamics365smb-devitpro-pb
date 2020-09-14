@@ -43,7 +43,7 @@ The following table lists the XML elements that are supported for AL.
 |`<i>`|Allows formatting text as *italic* inside a top-level tag.|`<i>italic</i>`|
 |`<c>`|Specifies that text within a description should be marked as code inside a top-level tag.|`<c>inline code</c>`|
 |`<code>`|Specifies that multiline text within a description should be marked as code inside a top-level tag.|`<code>code block</code>`|
-|`<list>`|Specifies a list formatted as a bulleted or numbered list, or as a table in a `<summary>` or `<remarks>` block. |`<list type="bullet|number|table">`. See full [List syntax](devenv-xml-comments.md#ListSyntax) below.|
+|`<list>`|Specifies a list formatted as a bulleted or numbered list, or as a table in a `<summary>` or `<remarks>` block. |`<list type="bullet|number|table">`. See full [List syntax](devenv-xml-comments.md#list-syntax) below.|
 
 ## List syntax
 
