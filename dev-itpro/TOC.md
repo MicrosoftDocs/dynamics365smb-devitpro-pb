@@ -674,6 +674,7 @@
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
+### [Deprecated Features in the Czech Version](upgrade/deprecated-features-cz.md)
 ### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
 ### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
 ### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
