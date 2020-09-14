@@ -347,7 +347,6 @@
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
 ## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
-## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## Developing for the Business Central Mobile App
 ### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
 ### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
@@ -659,6 +658,7 @@
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 <!-- end web services -->
+## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 <!-- CDS -->
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
