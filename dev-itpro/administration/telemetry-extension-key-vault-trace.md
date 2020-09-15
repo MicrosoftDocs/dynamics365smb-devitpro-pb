@@ -191,8 +191,6 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
-### Troubleshooting failures
-
 <!--
 ### Example
 
