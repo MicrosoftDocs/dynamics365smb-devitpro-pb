@@ -34,7 +34,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 <!-- no limit
 |Operation timeout|The maximum time for the service to return a call from the client.||  
 -->
-##  <a name="ClientServices"></a> Data handling limits
+##  <a name="DataHandling"></a> Data handling limits
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
