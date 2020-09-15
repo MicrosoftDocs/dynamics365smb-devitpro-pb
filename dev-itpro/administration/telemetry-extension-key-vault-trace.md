@@ -52,18 +52,14 @@ Occurs when an extension secret was successfully initialized.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0014**|
 |extensionName|Specifies the name of the extension that requested the secret. |
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -93,20 +89,17 @@ Occurs when a key vault failed to be initialized.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0015**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionName|Specifies the name of the extension that requested the secret.|
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |failureReason|Specifies the error that occurred.|
@@ -134,20 +127,17 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0016**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionName|Specifies the name of the extension that requested the secret. |
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
@@ -172,20 +162,17 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |alObjectName|Specifies the name of the AL object that was run by request.|
 |alObjectType|Specifies the type of AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0017**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionName|Specifies the name of the extension that requested the secret. |
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
