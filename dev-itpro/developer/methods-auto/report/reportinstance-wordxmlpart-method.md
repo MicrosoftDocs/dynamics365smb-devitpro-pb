@@ -1,8 +1,8 @@
 ---
-title: "WordXmlPart Method"
+title: "Report.WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/12/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WordXmlPart Method
+# Report.WordXmlPart Method
 Gets the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 

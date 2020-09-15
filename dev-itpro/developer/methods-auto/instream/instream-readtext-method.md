@@ -1,8 +1,8 @@
 ---
-title: "ReadText Method"
+title: "InStream.ReadText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ReadText Method
+# InStream.ReadText Method
 Reads text from an InStream object.
 
 
@@ -37,7 +37,7 @@ The number of characters to be read. If you do not specify this parameter, the m
 ## Return Value
 *Read*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of characters that were read.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The number of characters that were read. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,8 +1,8 @@
 ---
-title: "CreateTempFile Method"
+title: "File.CreateTempFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CreateTempFile Method
+# File.CreateTempFile Method
 Creates a temporary file. This enables you to save data of any format to a temporary file. This file has a unique name and will be stored in a temporary file folder.
 
 > [!NOTE]

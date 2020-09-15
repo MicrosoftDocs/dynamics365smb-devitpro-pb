@@ -1,8 +1,8 @@
 ---
-title: "Number Method"
+title: "FieldRef.Number Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Number Method
+# FieldRef.Number Method
 Gets the number of a field as a string.
 
 

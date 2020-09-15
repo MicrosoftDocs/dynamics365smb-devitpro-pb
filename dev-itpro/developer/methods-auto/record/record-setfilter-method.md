@@ -1,8 +1,8 @@
 ---
-title: "SetFilter Method"
+title: "Record.SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/12/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SetFilter Method
+# Record.SetFilter Method
 Assigns a filter to a field that you specify.
 
 
@@ -32,7 +32,7 @@ The field that you want to filter.
           
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
+The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
           
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

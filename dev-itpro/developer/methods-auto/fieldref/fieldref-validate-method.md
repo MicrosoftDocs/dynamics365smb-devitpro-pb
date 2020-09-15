@@ -1,8 +1,8 @@
 ---
-title: "Validate Method"
+title: "FieldRef.Validate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Validate Method
+# FieldRef.Validate Method
 Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field.
 
 

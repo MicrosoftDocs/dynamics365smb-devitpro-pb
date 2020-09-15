@@ -2,7 +2,7 @@
 title: "NavApp Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,9 @@ The following methods are available on the NavApp data type.
 |[LoadPackageData(Integer)](navapp-loadpackagedata-method.md)|Loads default, or starting, table data into the specified table of an extension during installation.|
 |[IsInstalling()](navapp-isinstalling-method.md)|Returns **true** if the application that contains the AL object that is currently running is being installed, otherwise it returns **false**.|
 |[GetCurrentModuleInfo(var ModuleInfo)](navapp-getcurrentmoduleinfo-method.md)|Gets information about the application that contains the AL object that is currently running.|
+|[GetCallerModuleInfo(var ModuleInfo)](navapp-getcallermoduleinfo-method.md)|Gets information about the extension that contains the method that called the currently running method.
+For example, if method 1 (in extension A) calls method 2 (in extension B), which then calls GetCallerModuleInfo, GetCallerModuleInfo will return information about extension B.
+    |
 |[GetModuleInfo(Guid, var ModuleInfo)](navapp-getmoduleinfo-method.md)|Gets information about the specified AL application.|
 
 

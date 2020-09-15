@@ -2,7 +2,7 @@
 title: "FieldRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,8 @@ The following methods are available on instances of the FieldRef data type.
 |[OptionCaption()](fieldref-optioncaption-method.md)|Gets the option caption of the field that is currently selected.|
 |[GetEnumValueName(Integer)](fieldref-getenumvaluename-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
 |[GetEnumValueNameFromOrdinalValue(Integer)](fieldref-getenumvaluenamefromordinalvalue-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueCaption(Integer)](fieldref-getenumvaluecaption-method.md)|Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueCaptionFromOrdinalValue(Integer)](fieldref-getenumvaluecaptionfromordinalvalue-method.md)|Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected.|
 |[GetEnumValueOrdinal(Integer)](fieldref-getenumvalueordinal-method.md)|Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected.|
 |[EnumValueCount()](fieldref-enumvaluecount-method.md)|Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected.|
 |[Active()](fieldref-active-method.md)|Checks whether the field that is currently selected is enabled.|

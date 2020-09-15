@@ -1,8 +1,8 @@
 ---
-title: "Remove Method"
+title: "MediaSet.Remove Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Remove Method
+# MediaSet.Remove Method
 Removes a media object from a MediaSet of a record.
 
 
@@ -35,7 +35,7 @@ Specifies the unique ID that is assigned to the media object that you want to re
 ## Return Value
 *Result*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the object was removed or **false** if a media object with the given ID was not present in the set.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the object was removed or **false** if a media object with the given ID was not present in the set. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
