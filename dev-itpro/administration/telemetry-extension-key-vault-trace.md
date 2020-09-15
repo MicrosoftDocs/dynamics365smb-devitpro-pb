@@ -61,11 +61,11 @@ Occurs when an extension secret was successfully initialized.
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0014**|
-|extensionName|Specifies the name of the extension that requested the secret. |
 |extensionId|Specifies the AppID of the extension that requested the secret.|
+|extensionName|Specifies the name of the extension that requested the secret. |
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
-|keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
+|keyVaultUrls|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
 <!--
@@ -140,7 +140,7 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |extensionName|Specifies the name of the extension that requested the secret. |
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
-|keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
+|keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
 <!--
@@ -175,7 +175,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |extensionName|Specifies the name of the extension that requested the secret. |
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
-|keyVaultUri|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
+|keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
 <!--
