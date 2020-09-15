@@ -97,7 +97,11 @@ The .bacpac file contains data that is customer-specific business data. Technica
 
 This means that if you want to export the data in order to change the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
+[!IMPORTANT] While you can import the downloaded .bacpac into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the the .bacpac downloaded from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. 
+
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
+
+
 
 ## See also
 
