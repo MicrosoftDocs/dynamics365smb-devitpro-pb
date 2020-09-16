@@ -18,11 +18,11 @@ Visual Studio Code is built to handle many smaller, dependent projects, and not 
 
 Open your `settings.json` file in the project (or global settings if you prefer that) pressing **Ctrl+P**. Set:
 
-- `"al.enableCodeAnalysis": false` to remove code analysis, read more here [Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md).
-
-- `"al.enableCodeActions": false`
-
-- `"editor.codeLens": false` to remove code lens in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/Docs/editor/editingevolved#_reference-information).
+- `"al.enableCodeAnalysis": false` to turn off code analysis completely, read more here [Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md).
+- `"al.backgroundCodeAnalysis": false` to turn off running code analysis in the background, but code analysis will be enabled when building with **Ctrl+Shift+B**. This is an alternative if analyzers are required with `"al.enableCodeAnalysis": true`.
+- `"al.enableCodeActions": false` to turn off AL Code Actions, read more here [AL Code Actions](devenv-code-actions.md).
+- `"al.incrementalBuild": true` to allow the compiler to reuse the existing background compilation for creating the package.
+- `"editor.codeLens": false` to turn off code lens in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/Docs/editor/editingevolved#_reference-information).
 
 - Add the build folder to the exclusion list for [Windows Defender](https://support.microsoft.com/help/4028485/windows-10-add-an-exclusion-to-windows-security).
 
