@@ -30,6 +30,8 @@
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
 #### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+## [Legal Resources](terms/legal.md)
+
 <!--How to resell BC-->
 ## Sell Business Central
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
@@ -822,5 +824,6 @@
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v16.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v16.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
+## [Legal Resources](terms/legal-onpremises.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
