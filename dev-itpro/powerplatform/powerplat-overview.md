@@ -13,13 +13,13 @@ author: solsen
 # Microsoft Power Platform Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 > [!IMPORTANT]
-> This functionality requires version 10.0.12 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities does not reside in Common Data Service. Instead, it continues to reside in Dynamcis 365 Business Central. To enable CRUD operations on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. The allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] is a virtual data source in Common Data Service, and enables create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities does not reside in Common Data Service. Instead, it continues to reside in Dynamcis 365 Business Central. To enable operations on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities in Common Data Service, entities must be made available as virtual entities in Common Data Service.
 
 ## Prerequisite reading
 
-To understand the architecture of virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps, you must understand how Common Data Service and virtual entities work. Therefore, the following documentation is a prerequisite:
+To work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities, you must understand how Common Data Service and virtual entities work. Therefore, the following documentation is a prerequisite:
 
 - [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - [Entity overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)
@@ -29,6 +29,8 @@ To understand the architecture of virtual entities for [!INCLUDE[prodshort](../d
 
 ## Virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 
 
-Open Data Protocol (OData) entities exposed through API Pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are available as virtual entities in Common Data Service, and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with full CRUD capability and without copying to Common Data Service.
+Open Data Protocol (OData) entities exposed through API Pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are available can be consumed in Common Data Service and virtual entities can be generated. 
+Virtual entities in Common Data Service acts as regular entities and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with full CRUD capability and without copying to Common Data Service, and leverage all the logic already residing in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-### Custom APIs
+### Using Custom APIs as basis for Virtual Entities
+Since the integration depends on APIs exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)], custom APIs can used for generating virtual entities. 
