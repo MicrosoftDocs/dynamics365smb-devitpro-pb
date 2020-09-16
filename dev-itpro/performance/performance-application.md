@@ -40,6 +40,11 @@ The **Rename company** and **Copy company** operations are not intended to run w
 
 If you must do a **Rename/Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.
 
+The **Copy Company** operation also has a number of long term effects:
+* Increased database size
+* Upgrade operations take longer
+* Larger bacpac files when requesting backups from the Tenant Admin Center. This also means that export/import operations involving bacpac files take longer
+
 ## Periodic activities that maintain performance
 
 Block inactive customers, vendors, or items to improve filtering and searching on document data entry
