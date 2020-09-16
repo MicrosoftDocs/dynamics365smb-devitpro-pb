@@ -13,6 +13,15 @@ ms.service: "dynamics365-business-central"
 
 This page provides links to legal information for the Business software specified below.
 
+
+## Microsoft AL Language
+
+- [AL Lanuage - Terms of Use](https://go.microsoft.com/fwlink/?linkid=2009120)
+
+## Envestnet Yodlee - Bank Feeds 
+
+- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2009120)
+
 ## Teams integration
 
 - links
@@ -20,4 +29,3 @@ This page provides links to legal information for the Business software specifie
 ## See Also
 
 [Welcome to the Developer and IT-Pro Help for Microsoft Dynamics NAV](../index.md)  
-
