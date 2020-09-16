@@ -24,6 +24,9 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 - Snappoints 
 - AL exceptions
 
+> [!IMPORTANT]  
+> To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work.
+
 ## Initializing a snapshot debugging session
 
 From Visual Studio Code, you start a snapshot by creating a snapshot configuration file. There are two template configurations for a snapshot, which are accessed by selecting **Add Configuration** in Visual Studio Code.
