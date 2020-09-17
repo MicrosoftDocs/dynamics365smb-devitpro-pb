@@ -10,16 +10,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 04/01/2020
-ms.author: jenolson
+ms.date: 09/17/2020
+ms.author: edupont
 
 ---
 
 # Migrate to Business Central Online from Business Central On-premises
 
-Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. The data migration can be started quite easily from the assisted setup wizard in your on-premises solution. For more information, see [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md).  
+Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. Use this twin to migrate to the cloud, or use it to connect to intelligent cloud scenarios. The data migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
 
-### Migrating data from extensions
+## Migrating data from extensions
 
 When your on-premises solution is connected to the cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production tenant to help avoid any data failures or unintended consequences.  
 
@@ -43,10 +43,10 @@ During the data migration process, [!INCLUDE[prodshort](../developer/includes/pr
 
 ## Upgrading to a new version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 
-If you upgrade to a new version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant contains different extensions for the cloud migration. For more information, see [Business Central Intelligent Cloud Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
+If you upgrade to a new version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant contains different extensions for the cloud migration. For more information, see [Business Central Intelligent Cloud Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 
 > [!IMPORTANT]
-> You must always install, publish, or upgrade the **Intelligent Cloud Base Extension** extension first, and then the product-specific extension or extensions. Also, if your on-premises solution is [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then you must update the extensions both on-premises and online.
+> You must always install, publish, or upgrade the **Intelligent Cloud Base Extension** extension first, and then the product-specific extension or extensions. Also, you must update the extensions both on-premises and online.
 
 ## See also
 
