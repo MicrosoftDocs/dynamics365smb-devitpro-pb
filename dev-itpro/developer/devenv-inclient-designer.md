@@ -57,7 +57,7 @@ After you are done with the changes, choose **Stop Designing**. You can name the
 
 If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
 
-![Designer](media/designer.gif)
+![Work with Designer](media/designer.gif)
 
 ## Drag-and-drop components
 
