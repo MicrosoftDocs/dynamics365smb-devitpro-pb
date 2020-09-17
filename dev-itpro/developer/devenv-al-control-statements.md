@@ -554,4 +554,5 @@ var
 
 [Programming in AL](devenv-programming-in-al.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [AL Essential Methods](devenv-essential-al-methods.md)
