@@ -32,10 +32,10 @@ The following conditional preprocessor directives are supported in AL.
 
 |Conditional preprocessor directive |Description |
 |-----------------------|------------|
-|#if                    | Specifies the start of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol being checked is defined.|
+|#if                    | Specifies the beginning of a conditional clause. The `#endif` clause ends it. Compiles the code between the directives if the specified symbol being checked is defined.|
 |#else                  | Specifies a compound conditional clause. If none of the preceding clauses evaluates to `true`, the compiler will evaluate code between `#else` and `#endif`. |
 |#elif                  | Combines `else` and `if`. If `#elif` is `true` the compiler evaluates all code between `#elif` and the next conditional directive.|
-|#endif                 | Specifies the end of a conditional clause that starts with `#if`. |
+|#endif                 | Specifies the end of a conditional clause that begins with `#if`. |
 |#define                | Defines a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. The scope of the symbol is the file that it was defined in.|
 |#undef                 | Undefines a symbol. |
 
