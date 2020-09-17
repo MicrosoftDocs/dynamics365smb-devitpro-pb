@@ -23,7 +23,7 @@ The cloud migration tool in [!INCLUDE [prodshort](../developer/includes/prodshor
 
 * [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 * [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
-* [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md##upgrading-from--to--online)
+* [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 
 The same tool can also be used to set up a connection to the intelligent cloud but still remain on-premises. For the list of on-premises solutions that currently supported for connecting to the intelligent cloud, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
 

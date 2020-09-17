@@ -23,7 +23,7 @@ The cloud migration tool in [!INCLUDE [prodshort](../developer/includes/prodshor
 
 * [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 * [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
-* [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md##upgrading-from--to--online)
+* [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 
 ## Data migration
 
