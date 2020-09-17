@@ -108,25 +108,27 @@ The process to run the migration in an Australian [!INCLUDE [prodshort](../devel
 
 * Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields.  
 
-## Migrate Dynamics GP to Azure Data Lake
+## Move your Dynamics GP database to Azure Data Lake
 
-Starting with 2020 release wave 2, you can migrate from Dynamics GP by creating a copy of the Dynamics GP database in Azure Data Lake. To take advantage of this functionality, there are some pieces that must be setup before the migration process. A customer is not required to copy their database to Azure Data Lake, but there are several benefits to being able to do so. For an introduction to Azure Data Lake, see [azure.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2135056).  
+Starting with 2020 release wave 2, you can create a copy of the Dynamics GP database in Azure Data Lake so that you have it for future reference after the migration to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. To take advantage of this functionality, there are some pieces that must be set up before the migration process. A customer is not required to copy their database to Azure Data Lake, but there are several benefits to being able to do so, including having access to the historical data that is not migrated by the migration tool. For an introduction to Azure Data Lake, see [azure.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2135056).  
 
-To create an Azure Data Lake storage account, you log in to your Azure subscription (or sign up for an Azure subscription). Once logged into the Azure portal, you can create a storage account. Under the **Access Keys** section of the information about your storage account in the Azure portal, you can see the keys that you msut provide in the cloud migration wizard in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information about Azure Data Lake and setting up a storage account, see [Azure documentation](/azure/storage/blobs/data-lake-storage-introduction).  
+To create an Azure Data Lake storage account, you log in to your Azure subscription (or sign up for an Azure subscription). Once logged into the Azure portal, you can create a storage account. Under the **Access Keys** section of the information about your storage account in the Azure portal, you can see the keys that you must provide in the cloud migration wizard in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information about Azure Data Lake and setting up a storage account, see [Azure documentation](/azure/storage/blobs/data-lake-storage-introduction).  
 
-### To migrate to Azure Data Lake
+### To move to Azure Data Lake
 
 1. In your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant, choose the :::image type="icon" source="../media/search_small.png" border="false"::: icon, enter **Cloud Migration Management**, and then choose the related link.
 2. Choose the **Azure Data Lake** action.
 
-  The **Azure Data Lake Migration Setup** guide takes you through the steps to connect your on-premises Dynamics GP database and your storage in Azure Data Lake. You must have created an Azure Data Lake storage account before launching the assisted setup, and you must have access to the storage account name and storage account key.
+    The **Azure Data Lake Migration Setup** guide takes you through the steps to connect your on-premises Dynamics GP database and your storage in Azure Data Lake. You must have created an Azure Data Lake storage account before launching the assisted setup, and you must have access to the storage account name and storage account key.
 3. When the setup completes, you can monitor the progress of moving your data from on-premises to Azure Data Lake in the **Cloud Migration Management** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
 If you go back to the Azure portal, you can see the data that was moved from your Dynamics GP database to Azure Data Lake. Under the containers section of the Data Lake storage, a new *gp-database* folder contains the company/system databases, and sub-folders contain the series folder and data files.  
 
 The database folder in Azure Data Lake will always be set as *gp-database*. If you want to rename it, you can do so after the migration has competed. The same applies to the various sub-folders. The folders created follow the standard naming convention of the *series* folders in Dynamics GP. An additional folder, *3rd Party*, will be created, and any files that haven't be mapped to a folder will reside in there. You can modify the content in the folders after the migration has completed.
 
-If an Azure Data Lake migration has already been run in Business Central and you launch a second run, the migration tool will check to see if a *gp-database* folder exists. If you still want to run the migration again, you must delete the *gp-database* folder and its contents before you can run the wizard again.
+If an Azure Data Lake migration has already been run in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] company and you launch a second run, the migration tool will check to see if a *gp-database* folder exists. If you still want to run the migration again, you must delete the *gp-database* folder and its contents before you can run the wizard again.  
+
+At the end of the migration, you have a completely copy of your Dynamics GP database in the cloud with all the advantages of having access to historical data without having to maintain a server on-premises.  
 
 ## See also
 

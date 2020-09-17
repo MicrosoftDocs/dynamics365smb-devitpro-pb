@@ -19,6 +19,9 @@ ms.author: edupont
 
 Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. Use this twin to migrate to the cloud, or use it to connect to intelligent cloud scenarios. The data migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
 
+> [!NOTE]
+> Upgrade your solution to 2020 release wave 2 (version 17), and then migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.
+
 ## Migrating data from extensions
 
 When your on-premises solution is connected to the cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production tenant to help avoid any data failures or unintended consequences.  
