@@ -27,6 +27,16 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 > [!IMPORTANT]  
 > To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work.
 
+## Snapshot debugging keyboard shortcuts
+
+In the following sections you can read more about how to initialize, view the status, and finalize a snapshot debugging session. For these actions, the following keyboard shortcuts are useful to familiarize yourself with. For additional keyboard shortcuts, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md).
+
+|Keyboard Shortcut|Action|
+|-----------------|------|
+|F7|Start a snapshot debugging session.|
+|Shift + F7|List all available snapshots.|
+|Alt+F7|Finish a snapshot debugging session.|
+
 ## Initializing a snapshot debugging session
 
 From Visual Studio Code, you start a snapshot by creating a snapshot configuration file. There are two template configurations for a snapshot, which are accessed by selecting **Add Configuration** in Visual Studio Code.
@@ -52,7 +62,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 
 Once a snapshot debugging session is initialized the snapshot debugging session counter on the status-bar will be updated and look like this:
 
-![Snapshot Debugger](media/snapshotdebugger.png)
+![Snapshot Debugger Counter](media/snapshotdebugger.png)
 
 ## Status of a snapshot debugging session
 
