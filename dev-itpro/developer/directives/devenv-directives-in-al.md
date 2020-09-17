@@ -21,7 +21,7 @@ In AL, like in other programming languages, preprocessor directives can be used 
 - [Regions](devenv-directive-region.md)
 - [Pragmas](devenv-directive-pragma.md)
 
-Any code can be made conditional, including table fields, and checked using a conditional directive. To check code using a conditional directive, you must define a symbol to check. A symbol returns a boolean value; `true` or `false`. Symbols can be defined at the beginning of a source file and the scope of the specific symbol is the file that it is defined within. You can also define symbols in the `app.json` file, and then the scope..... 
+Any code can be made conditional, including table fields, and checked using a conditional directive. To check code using a conditional directive, you must define a symbol to check. A symbol returns a boolean value; `true` or `false`. Symbols can be defined at the beginning of a source file and the scope of the specific symbol is the file that it is defined within.<!-- You can also define symbols in the `app.json` file, and then the scope..... -->
 
 > [!NOTE]  
 > Built-in symbols are currently not supported in AL.
