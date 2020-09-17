@@ -61,4 +61,5 @@ table 50110 MyTable
 [Development in AL](../devenv-dev-overview.md)  
 [AL Development Environment](../devenv-reference-overview.md)  
 [Pragma Directive in AL](devenv-directive-pragma.md)  
+[Conditional directives](devenv-directives-in-al.md#conditional-directives)  
 [Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)

@@ -65,4 +65,7 @@ For more information, see [JSON Files](../devenv-json-files.md).
 
 [Development in AL](../devenv-dev-overview.md)  
 [AL Development Environment](../devenv-reference-overview.md)  
+[Conditional directives](devenv-directives-in-al.md#conditional-directives)  
+[Region Directive in AL](devenv-directive-region.md)  
+[Pragma Directive in AL](devenv-directive-pragma.md)  
 [Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)
