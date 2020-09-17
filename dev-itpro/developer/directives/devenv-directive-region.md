@@ -17,11 +17,15 @@ ms.author: solsen
 
 ## Region
 
-The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability or for focusing on code that you're currently working on. The `#endregion` specifies the end of a `#region` block of code.
+The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability or for focusing on code that you are currently working on. The `#endregion` specifies the end of a `#region` block of code.
 
 ## Syntax
+
 ```
 #region code
+```
+
+```
 #endregion
 ```
 
@@ -29,9 +33,11 @@ The `#region` directive is used to mark a block of code that you can expand or c
 
 A `#region` block must be terminated with a `#endregion` directive.
 
-A `#region` block cannot overlap with a `#if` block. However, a `#region` block can be nested in a `#if` block, and a `#if` block can be nested in a `#region` block.
+A `#region` block cannot overlap with an `#if` block. However, a `#region` block can be nested in an `#if` block, and an `#if` block can be nested in a `#region` block.
 
 ## Example
+
+In this example the `#region` directive makes a code block that is up for refactoring collapsible.
 
 ```
 #region Ugly code - let's not look at this
