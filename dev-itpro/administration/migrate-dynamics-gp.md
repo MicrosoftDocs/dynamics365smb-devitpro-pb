@@ -116,7 +116,7 @@ To create an Azure Data Lake storage account, you log in to your Azure subscript
 
 ### To migrate to Azure Data Lake
 
-1. In your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant, choose the ![Lightbulb that opens the Tell Me feature](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Cloud Migration Management**, and then choose the related link.
+1. In your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant, choose the :::image type="icon" source="../media/search_small.png" border="false"::: icon, enter **Cloud Migration Management**, and then choose the related link.
 2. Choose the **Azure Data Lake** action.
 
   The **Azure Data Lake Migration Setup** guide takes you through the steps to connect your on-premises Dynamics GP database and your storage in Azure Data Lake. You must have created an Azure Data Lake storage account before launching the assisted setup, and you must have access to the storage account name and storage account key.

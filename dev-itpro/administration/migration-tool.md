@@ -23,7 +23,7 @@ The cloud migration tool in [!INCLUDE [prodshort](../developer/includes/prodshor
 
 * [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 * [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
-* [Upgrading from Dynamics NAV to Business Central Online(../upgrade/Upgrade-Considerations.md##upgrading-from--to--online)
+* [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md##upgrading-from--to--online)
 
 The same tool can also be used to set up a connection to the intelligent cloud but still remain on-premises. For the list of on-premises solutions that currently supported for connecting to the intelligent cloud, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
 
@@ -86,6 +86,8 @@ The assisted setup guide consists of up to six pages that take you through the p
 6. Enable & Scheduling Migration
 
     The final page in the wizard allows you to enable the migration process and create a schedule for when the data migration should occur. These settings are also available within your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant on the **Cloud Migration Management** page. You have the option to schedule migrations daily or weekly. We recommend that you schedule your data migration for off-peak business hours.
+
+If you are migrating data, you end the migration by disabling it in the **Cloud Migration Setup** page. If you are connecting to the intelligent cloud, you can adjust the migration schedule.  
 
 > [!NOTE]  
 >The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
