@@ -12,9 +12,10 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
+# AL Language Extension Configuration
+
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-# AL Language Extension Configuration
 The AL Language extension has a number of settings that can be specified for a specific user or for a workspace. To activate the settings, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration** you will find the settings that are available for the AL Language extension. 
 
 ## Settings
@@ -34,9 +35,12 @@ The following table describes the user and workspace settings for the AL Languag
 |Package Cache Path|Sets the directory path where reference symbol packages are located.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
 |Incremental Build| Specifies whether a project, when it is built using **Ctrl+Shift+B**, **Ctrl+F5**, or **F5**, will reuse the last known tracked compilation which will enhance the compilation time significantly. For more information about project to project references, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md). <br> **Note:** Setting this to `true` will not do an end-to-end build, as it is depending on an already-compiled state. To get a clean, full build, this flag must be set to `false`. Default is `false`.|
+|Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
+|Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 <!-- |DefaultLaunchConfigurationName|Specifies the setting for resolving a server name. If this is set then all scenarios that need to resolve a server name will use this configuration setting.<br><br> For example, using the **Go to definition** option, if this server name is not specified, a list will be displayed to select a configuration from, which will be used going forward to resolve the server name and possibly provide symbolic information in the DAL file. To change that, specify the `DefaultLaunchConfigurationName`setting.<br> Another example is **Download symbols**; if there are multiple debug configurations, the specified `DefaultLaunchConfigurationName` will be used to resolve the server name and download symbols. If the server name is not specified, a list will be displayed to select a configuration from.| -->
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
 [JSON Files](devenv-json-files.md)  
