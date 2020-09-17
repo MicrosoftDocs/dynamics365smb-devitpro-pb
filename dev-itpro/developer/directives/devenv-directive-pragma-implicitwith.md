@@ -34,7 +34,6 @@ The `#pragma implicitwith` instruction changes the compiler behavior to not crea
 
 For more background information and examples, see [Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md).
 
-
 ## See Also
 
 [Development in AL](../devenv-dev-overview.md)  
