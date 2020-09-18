@@ -19,7 +19,7 @@ This topic is a collection of frequently asked questions about [!INCLUDE[prodsho
 
 ### What version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do I need?
 
-17.0 is needed. 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual entities. 
+17.0 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is needed. 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual entities.  
 
 ### Can a solution from an independent software vendor (ISV) take a dependency on virtual entities? What does the application lifecycle management (ALM) look like?
 

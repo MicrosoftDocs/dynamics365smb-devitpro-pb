@@ -34,3 +34,18 @@ Virtual entities in Common Data Service acts as regular entities and therefore a
 
 ### Using Custom APIs as basis for Virtual Entities
 Since the integration depends on APIs exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)], custom APIs can used for generating virtual entities. 
+
+## Known limitations
+Theres known limitations with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entities.
+
+-  Flows not triggered for virtual entities. Currently, Business Central currently has no way to signal Common Data Service about data change events
+-  Virtual entities cannot be used in Charts. Common Data Services does not support Virtual Entities being using in Charts.
+-  Relations between native and virtual entities. This is currently a limitation of the Preview version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entities solution.
+-  Virtual Entities cannot be customized on Common Data Service, e.g. adding new fields. All modifications to virtual entites needs to happen in the API exposed on Business Central. But custom APIs can be developed and consumed as virutal entities.  
+-  Attachment and Images/Pictures are not supported for virtual entities.
+-  Blob to Multiline support
+-  Advanced search has some limitation. Each query designed translates to an OData query against Business Central. 
+- The following predicates are not supported: Does Not Equal, Does Not Contain, Does Not Begin With, Does Not End With, Does Not Contain Data, Contains Data
+- Combining 'And' and 'Or' groups across columns
+- Filtering on related entities.
+
