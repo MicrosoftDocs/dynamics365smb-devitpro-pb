@@ -21,7 +21,7 @@ This topic provides step-by-step instructions on how to set up and configure vir
 
 ## Getting the solution
 
-The Common Data Service solution for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [[!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+The following solutions are installed in Common Data Service once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities is installed.
 
 The following solutions are installed in Common Data Service:
 
@@ -67,8 +67,8 @@ The virtual entity metadata can be force-refreshed when it is expected for the e
 
 ## Referencing virtual entities
 
-@lukasz
-The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution. That means that the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
+The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option
+in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
 
 To consume virtual entities:
 
