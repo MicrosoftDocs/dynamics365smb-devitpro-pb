@@ -29,33 +29,28 @@ The following solutions are installed in Common Data Service.
 
 - **MicrosoftBusinessCentralERPCatalog** - This provides a list of available [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-- **MicrosoftBusinessCentralVEAnchor** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
+- **MicrosoftBusinessCentralVEAnchor** - This serves as a container, holding information needed for AppSource. 
+
+- **MicrosoftBusinessCentralERPVE** - Virtual Entities generated for Busienss Central will be contained in this solution. Entities are added at runtime once they are made visible.
 
 ## Authentication and authorization
 After the solutions are installed in the Common Data Service environment, connection can be setup to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment. *Both environments have to be in the same tenant*.  
 
 The next step in the process is to provide Common Data Service with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment and company to connect to. The following steps walk through this part of the process.
 
-1.  In Common Data Service, go to the entity **Business Central Virtual Data Source Configuration** .
+0.  In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], go to the page 'AAD Applications' and toggle the app 'Dynamics 365 Business Central for Virtual Entities' from Disabled to Enabled. This will allow Common Data Service to communicate with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+1.  In Common Data Service, go to the entity **Business Central Virtual Data Source Configuration**.
 
 2.  Select and edit the data source named “[!INCLUDE[prodshort](../developer/includes/prodshort.md)]”.
 
-3.  Fill in the information from the steps above. @kim
-
-    - **Target URL** - The URL at which you can access [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
-
-    - **OAuth URL** - https://login.windows.net/
-
-    - **Tenant ID** - Your tenant, such as “contoso.com”.
-
-    - **AAD Application ID** - The **Application (client) ID** created above.
-
-    - **AAD Application Secret** - The secret generated above.
+3.  On the Business Central Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants will have an default environment called 'production'.
 
 4.  Set the **Default Company** value. 
+
 5.  Save the changes.
 
-## Enabling virtual entities
+## Making virtual entities visible
 
 Due to the large number of OData enabled entities available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
 
@@ -63,17 +58,17 @@ Due to the large number of OData enabled entities available in [!INCLUDE[prodsho
 
 2. Choose **Data* in the horizontal menu to view the avaliable data.
 
-3. Locate and open the entity that you want to enable.
+3. Locate and edit the entity that you want to enable.
 
-4. Set **Visible** to **Yes** and save. This will generate the virtual entity, so that it will appear in all of the appropriate menus, and in advanced find dialog box.
+4. Set **Visible** to **Checked** and save. This will generate the virtual entity, so that it will appear in all of the appropriate menus, and in advanced find dialog box.
 
 ## Refreshing virtual entity metadata
 
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to have changed. This can be done by setting **Refresh** to **Yes** and saving. This will sync the latest entity definition from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Common Data Service and update the virtual entity.
+The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This will sync the latest entity definition from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Common Data Service and update the virtual entity.
 
 ## Referencing virtual entities
 @lukasz
-The virtual entities are all generated in the MicrosoftBusinessCentralVE solution, which is API Managed. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option
+The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option
 in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
 
 To consume virtual entities:
