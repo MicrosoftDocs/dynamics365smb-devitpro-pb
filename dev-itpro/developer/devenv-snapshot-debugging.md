@@ -50,7 +50,7 @@ Choose whether to run the session on a cloud service or locally. The configurati
 |--------|-------------|
 |`userId`| The GUID of the user on whose behalf a snapshot debugging will be started. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. |
 |`sessionId`| A session ID for the user specified above in `userId`.|
-|`snapshotVerbosity`| Determines how much execution context to be recorded. If **"SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
+|`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
 
 When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**.
 
