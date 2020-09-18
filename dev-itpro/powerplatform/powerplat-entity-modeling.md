@@ -102,9 +102,9 @@ In the preceding example, the GUID of the related entity is the entity key of En
 
 Therefore, in effect, the entity name is the only information that is used in a relation that comes from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity isn't used at all.
 
-### Virtual entity–to–native entity relationship
-@lukasz scenario description in here is good.
 
+<!-- ### Virtual entity–to–native entity relationship
+@lukasz scenario description in here is good.
 
 As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Common Data Service entity (including in native entity–to–native entity relationships) or in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity (including in virtual entity–to–virtual entity relationships). However, consider an example where you want to show sales orders from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Account A in Common Data Service. The query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Common Data Service, because the sales orders must be filtered for a specific account in Common Data Service. However, because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] doesn't have any information about the GUID of the entity in Common Data Service, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] understands.
 
@@ -136,12 +136,14 @@ The field mapping indicates which field on the virtual entity maps to the field 
 ```
 The next step is to generate or refresh the virtual entity to get the new relationship. Note that relationships between a virtual entity and a native entity cannot be updated in Common Data Service once it is created. The only way to make an update is to physically remove the relationship, refresh the entity, and then physically re-add the relationship in order to resolve the issue.
 
-This relationship looks like a typical GUID-based relationship, but has extra metadata to translate query filters on the relationship into restrictions on the backing fields. The query that is now generated will have a WHERE clause that is based on the fields that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps recognize. That query will then return the filtered list of sales orders, as expected.
+This relationship looks like a typical GUID-based relationship, but has extra metadata to translate query filters on the relationship into restrictions on the backing fields. The query that is now generated will have a WHERE clause that is based on the fields that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps recognize. That query will then return the filtered list of sales orders, as expected. -->
 
+
+<!--
 ### Native entity–to–virtual entity relationships
 
-<!--HERE-->Native entity–to–virtual entity relationships works much like native entity–to–native entity relationships. Users associate native records with virtual records in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and the GUID of the virtual entity is saved on the native entity record. As was explained earlier, the entities that participate in a relationship will have the GUID field of the related entity on them. Therefore, when a quotation in Common Data Service is associated with a customer in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity, the GUID of the customer virtual entity will be saved in the quotation entity. This behavior enables records to be retrieved as expected, by using standard Common Data Service functionality.
-
+Native entity–to–virtual entity relationships works much like native entity–to–native entity relationships. Users associate native records with virtual records in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and the GUID of the virtual entity is saved on the native entity record. As was explained earlier, the entities that participate in a relationship will have the GUID field of the related entity on them. Therefore, when a quotation in Common Data Service is associated with a customer in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity, the GUID of the customer virtual entity will be saved in the quotation entity. This behavior enables records to be retrieved as expected, by using standard Common Data Service functionality.
+-->
 ## Enums
 
 Enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as OptionSets in Common Data Service. When a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is generated, the required enums are generated as OptionSets. If an OptionSet already exists, it's used instead.
@@ -179,7 +181,7 @@ Here are some examples of OData actions that are supported in [!INCLUDE[prodshor
 
 ## Labels and localization
 
-Labels that are defined on metadata, such as entity names and field names in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], are retrieved when virtual entities are generated in Common Data Service. The labels are retrieved by passing the list of language locales that are installed in Common Data Service. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] returns each label as a list of locale/value sets that are then used to construct a label instance in Common Data Service. Only the language packs that exist at the time of entity generation or update are included. Additionally, only labels that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has provided a translation for are included. Any missing translations revert to the label ID, such as **\@SYS:DataEntity**. After a new language pack is installed in Common Data Service, existing entities must be updated to pick up the new label information, if labels in that language exist in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Labels that are defined on metadata, such as entity names and field names in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], are retrieved when virtual entities are generated in Common Data Service. The labels are retrieved using an API on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] called **entityDefinitions**. This API is avaliable on every API route, and will serve translations and other entity metadata, not suited for OData $metadata. But with both the entityDefinition and $metadata Common Data Service has all it needs to generate localized virtual entities.  
 
 Any runtime labels are returned in the language of the current user context. In other words, they are returned in the language that is specified on that user's UserInfo record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This behavior also applies to error messages.
 
