@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 05/26/2020
+ms.date: 09/02/2020
 ms.author: bmeier
 ---
 
@@ -25,7 +25,7 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
   This means that if the current version is version 16, then you can connect to the intelligent cloud if you are on version 16, 15, or 14.  
 
 If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan and [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online) in the Migrate to Business Central Online section here.
-    
+
 <!-- - Dynamics SL 2018 CU 1-->
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
@@ -34,7 +34,11 @@ Data is replicated using an Azure service called Azure Data Factory (ADF). ADF i
 
 ## Are there any limits on the amount or type of data will replicate?
 
-Data replication for the initial release will have a limit of 30 GB.  There are no restrictions on the type of data that can be replicated.  
+There are no restrictions on the type of data that can be replicated. In the current version of Business Central, the migration tool has been optimized to migrate databases up to 30 GB. If your database is larger than 30 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.
+
+If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Adding a tenant to an existing runtime service, or updating companies](migration-tool.md#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).
+
+If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Options for databases larger than 30 GB will be available in a future update, as we are continually working on improving and optimizing the migration tool for larger database sizes.
 
 ## Is my SQL connection string required to set up the connection?
 

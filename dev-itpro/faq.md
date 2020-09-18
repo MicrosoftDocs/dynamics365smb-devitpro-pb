@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 09/08/2020
 ---
 
 # FAQ for Dynamics 365 Business Central
@@ -73,9 +73,11 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 
 ## How does Microsoft handle database sizes?
 
-For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in an environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much database storage capacity we allow each tenant to use for their environments (databases). If a tenant exceeds this limit, we limit administrative actions that create additional environments. Exceeding the storage limit will not interrupt transaction processing within the existing environments.
 
-The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.
+The maximum database size for each [!INCLUDE [prodshort](developer/includes/prodshort.md)] customer's tenant is 80 GB. The limit is applied to the entire Azure Active Directory  tenant, including all environments of type production or sandbox, not to individual environments. Customers can purchase additional database capacity through their CSP partner. 
+
+When customers purchase additional [!INCLUDE [prodshort](developer/includes/prodshort.md)] production environments, their overall, tenant-wide database capacity quota is extended by 4 GB.  
 
 ## Is the Windows client supported?
 
@@ -84,6 +86,29 @@ The first releases of Business Central on premises included an installed client 
 ## What's going on with the Help?
 
 If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], you will find that in-product Help is very different in [!INCLUDE [prodshort](developer/includes/prodshort.md)]. For more information, see [[!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model](user-assistance.md).
+
+## Which IP addresses or ranges does my environment's API use?
+
+When you exchange data through the API, you might have to whitelist the IP addresses. The addresses depend on the direction of the call.
+
+- Inbound
+
+  Inbound requests go into the [!INCLUDE [prodshort](includes/prodshort.md)] API, for example through OData calls. The requests go to the `https://api.businesscentral.dynamics.com` URL that currently resolves to IP addresses in the IP ranges of the following Azure regions:
+
+  - Australia East
+  - West Europe
+  - East US
+
+  > [!IMPORTANT]
+  > Data routed through `https://api.businesscentral.dynamics.com` is not *stored* in these regions. The data *transits* through them.  
+
+  We reserve the right to change the list of Azure regions used by the `https://api.businesscentral.dynamics.com` URL without prior announcement. We will, however, update this guidance accordingly once such a change is implemented.  
+  
+- Outbound
+
+  Outbound requests come from [!INCLUDE [prodshort](includes/prodshort.md)] environment, such as code that uses the `HttpClient`data type to send HTTP requests. The requests come from an IP address in the IP ranges of the Azure region in which the environment is hosted. You can see where an environment is hosted on the **Environment details** page in the [!INCLUDE [prodshort](includes/prodshort.md)] admin center. For more information, see [Managing Environments](administration/tenant-admin-center-environments.md).  
+
+You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/en-us/download/details.aspx?id=56519).  
 
 ## See Also
 
