@@ -19,6 +19,8 @@ When developing extensions in the AL development environment, you have a wide ra
 > [!IMPORTANT]  
 > Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.
 
+## Designer capabilities
+
 Here is a quick overview of capabilities in **Designer**: 
 
 |Features      |Applies to    | 
@@ -82,7 +84,7 @@ Fields on non-list type pages, such as card and document type pages, include Des
 
 ## Setting the Quick Entry on fields
 
-You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press ENTER key to navigate through fields on a page. You use Quick Entry to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill in.
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press the **Enter** key to navigate through fields on a page. You use Quick Entry to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill in.
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
@@ -131,8 +133,8 @@ Actions and actions groups that are already hidden appear dimmed. To change the 
 
 Designer lets you move actions within the action bar. For example, you can:
 
-- Move an action from an action menu to a promoted category
-- Move an action from one promoted category to another
+- Move an action from an action menu to a promoted category.
+- Move an action from one promoted category to another.
 - Move an action within an action group or to a different action group.  
 
 To move an action or action group, drag and drop it to the wanted location, just like with fields and columns.  
