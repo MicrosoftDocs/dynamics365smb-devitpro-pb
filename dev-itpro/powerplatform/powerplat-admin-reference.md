@@ -21,7 +21,7 @@ This topic provides step-by-step instructions about how to set up and configure 
 The Common Data Service solution for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [[!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
 
-The following solutions are installed in Common Data Service.
+The following solutions are installed in Common Data Service once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities is installed.
 
 - **Dynamics365Company** - This adds the **cdm_company** entity, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities. All communication to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the company id in the request. 
 
@@ -67,7 +67,6 @@ Due to the large number of OData enabled entities available in [!INCLUDE[prodsho
 The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This will sync the latest entity definition from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Common Data Service and update the virtual entity.
 
 ## Referencing virtual entities
-@lukasz
 The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option
 in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
 

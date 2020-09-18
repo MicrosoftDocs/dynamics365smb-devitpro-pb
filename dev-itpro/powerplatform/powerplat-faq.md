@@ -39,15 +39,7 @@ In the **Advanced find** window, the entity is named **Available [!INCLUDE[prods
 
 ### Can I change the prefix for the virtual entities?
 
-No. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities should be generated in the MicrosoftBusinessCentralERPVE solution, and they all have the "mserp\_" prefix. This prefix will not be changed.
-
-### How can I filter data in an app that is created by using Power Apps, based on the current user or any other dynamic criteria, such as today-10?
-
-You can write a pre-operation plug-in on the RetrieveMultiple message of the entity and change the criteria on the query in it. Alternatively, you can write a post-operation plug-in to filter the results before they are returned. @lukasz
-
-### Can I pin a model-driven app into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]?
-
-No, it isn't currently possible to pin a model-driven app into [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+No. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities should be generated in the MicrosoftBusinessCentralERPVE solution, and they all have the "dyn365bc\_" prefix. This prefix will not be changed.
 
 ### How can I show, in the same grid, data from multiple virtual entities that are joined to a physical entity record in Common Data Service?
 
@@ -62,16 +54,6 @@ Yes. Here is the order of calls:
 3. Common Data Service sends another Retrieve (single) message to get the latest copy of the data, including any fields that default values were entered for.
 @lukasz
 
-### Can I debug [!INCLUDE[prodshort](../developer/includes/prodshort.md)] when we do a create, read, update, and delete (CRUD) operation from Common Data Service? If so, which process do I have to attach?
-
-Yes, to debug in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], open Visual Studio as an admin. Typically, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps run under w3wp.exe as a process. However, when you open Visual Studio as an admin, IISExpress.exe is automatically opened, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is hosted there. You can attach to IISExpress.exe (or to w3wp.exe if not running Visual Studio as an admin). To set breakpoints in the virtual entity code, find the **CDSVirtualEntityAdapter** and **CDSVirtualEntityController** classes. The adapter class is the first class that is called, and it only does serialization/deserialization. It then delegates to the controller class to do the actual queries. Therefore, the controller class is usually the easiest place to put breakpoints.
-@lukasz
-
-
 ### Does the form business logic in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] get called through virtual entities?
 
-business logic that resides on forms isn't invoked through virtual entities. Instead, you should expect the same behavior that you get through OData access to the same entities. The expectation is that an entity that is exposed to OData (that is, **IsPublic** is set to **Yes**) has appropriate protections to ensure that data can't be corrupted. If any entity lacks this protection, that situation represents a bug in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] API exposing the entity. If you see differences in entity behavior between OData and virtual entities, that situation represents a bug in the virtual entity feature.
-
-### If I develop a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity and want to see it in Common Data Service, do I have to select Refresh entity list in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]? Do I have to do anything in Common Data Service?
-
-In theory, no, you don't have to refresh the entity list. At most, you might have to either reset Internet Information Services (IIS) or restart IIS Express, depending on where Application Object Server (AOS) is running. The fact that the list of entities is accurate is cached in SysGlobalObjectCache, which is a per-process cache. Any time that this cache doesn't indicate that the list is accurate, the list is rebuilt. The rebuild process takes about five seconds. Therefore, when you restart your AOS process (w3wp.exe or iisexpress.exe), the list will be accurate the next time that you query it from Common Data Service. Additionally, although recompilation *should* flush the SysGlobalObjectCache cache, it might not. In that case, an AOS restart will flush it.
+Business logic that resides on forms isn't invoked through virtual entities. Instead, you should expect the same behavior that you get through OData access to the same entities. The expectation is that an entity that is exposed to OData (that is, **IsPublic** is set to **Yes**) has appropriate protections to ensure that data can't be corrupted. If any entity lacks this protection, that situation represents a bug in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] API exposing the entity. If you see differences in entity behavior between OData and virtual entities, that situation represents a bug in the virtual entity feature.
