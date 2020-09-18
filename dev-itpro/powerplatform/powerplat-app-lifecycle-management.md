@@ -12,6 +12,8 @@ author: solsen
 
 # Application Lifecycle Management for Solutions that use Virtual Entities
 
+[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+
 > [!IMPORTANT]
 > This functionality requires version17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
@@ -57,3 +59,10 @@ The established guidelines and ALM for entity development in [!INCLUDE[prodshort
 ### Managing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance in a Common Data Service environment for virtual entities
 
 One [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance must be linked to a Common Data Service environment for virtual entities. The connection setup information that is required is captured in a virtual entity data source for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This data source is included in the MicrosoftBusinessCentralERPCatalog solution.
+
+## See Also
+
+[Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)  
+[Entity Modeling](powerplatform/powerplat-entity-modeling.md)  
+[Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)  
+[FAQ](powerplatform/powerplat-faq.md)  

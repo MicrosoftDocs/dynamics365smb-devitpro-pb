@@ -12,6 +12,8 @@ author: solsen
 
 # Entity Modeling
 
+[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+
 > [!IMPORTANT]
 > This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
@@ -192,3 +194,10 @@ Any runtime labels are returned in the language of the current user context. In 
 ## Calculated/unmapped fields
 
 Calculated and unmapped fields in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are also available in the corresponding virtual entities in Common Data Service.
+
+## See Also
+
+[Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)  
+[Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)  
+[Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)  
+[FAQ](powerplatform/powerplat-faq.md)  
