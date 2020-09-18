@@ -12,6 +12,8 @@ author: solsen
 
 # Business Central Virtual Entities FAQ
 
+[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+
 > [!IMPORTANT]
 > This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
@@ -75,3 +77,10 @@ business logic that resides on forms isn't invoked through virtual entities. Ins
 ### If I develop a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity and want to see it in Common Data Service, do I have to select Refresh entity list in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]? Do I have to do anything in Common Data Service?
 
 In theory, no, you don't have to refresh the entity list. At most, you might have to either reset Internet Information Services (IIS) or restart IIS Express, depending on where Application Object Server (AOS) is running. The fact that the list of entities is accurate is cached in SysGlobalObjectCache, which is a per-process cache. Any time that this cache doesn't indicate that the list is accurate, the list is rebuilt. The rebuild process takes about five seconds. Therefore, when you restart your AOS process (w3wp.exe or iisexpress.exe), the list will be accurate the next time that you query it from Common Data Service. Additionally, although recompilation *should* flush the SysGlobalObjectCache cache, it might not. In that case, an AOS restart will flush it.
+
+## See Also
+
+[Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)  
+[Entity Modeling](powerplatform/powerplat-entity-modeling.md)  
+[Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)  
+[Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)  

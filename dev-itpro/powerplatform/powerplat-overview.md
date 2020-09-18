@@ -12,6 +12,8 @@ author: solsen
 
 # Microsoft Power Platform Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
+[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+
 > [!IMPORTANT]
 > This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
@@ -34,3 +36,10 @@ Virtual entities in Common Data Service acts as regular entities and therefore a
 
 ### Using Custom APIs as basis for Virtual Entities
 Since the integration depends on APIs exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)], custom APIs can used for generating virtual entities. 
+
+## See Also
+
+[Entity Modeling](powerplatform/powerplat-entity-modeling.md)  
+[Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)  
+[Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)  
+[FAQ](powerplatform/powerplat-faq.md)  
