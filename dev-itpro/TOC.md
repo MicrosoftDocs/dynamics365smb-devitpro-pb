@@ -658,7 +658,6 @@
 ### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
 ### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
 ### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
-### [Power Apps Portals with Business Central](powerplatform/powerplat-portal-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
 <!-- Business Central API -->
