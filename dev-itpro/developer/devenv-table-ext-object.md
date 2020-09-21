@@ -90,5 +90,5 @@ tableextension 50115 RetailWinterSportsStore extends Customer
 [AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
-[Table and Table Extension Properties](properties/devenv-table-properties.md)  
+[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
 [Table Keys](devenv-table-keys.md)
