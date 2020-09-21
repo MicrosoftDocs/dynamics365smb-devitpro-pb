@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 21/08/2020
+ms.date: 08/21/2020
 ms.author: jswymer
 ---
 # Security and Protection in Business Central
