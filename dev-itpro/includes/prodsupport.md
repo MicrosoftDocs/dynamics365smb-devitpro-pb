@@ -8,7 +8,7 @@ ms.author: edupont
 ---
 |Issue type             |Site               |
 |-----------------------|-------------------|
-|Submit support request on behalf of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
+|Submit support request on behalf of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](../administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
 |Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
 |Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
 |Report bug in production code as an ISV|The [Partner Center](/partner-center/report-problems-with-partner-center#report-a-problem-with-the-partner-center)|
