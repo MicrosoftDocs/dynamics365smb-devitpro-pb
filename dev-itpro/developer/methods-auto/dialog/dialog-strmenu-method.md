@@ -1,5 +1,6 @@
 ---
 title: "StrMenu Method"
+description: Describes the StrMenu method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020
