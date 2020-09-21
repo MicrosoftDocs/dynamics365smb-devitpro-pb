@@ -55,11 +55,12 @@ The following data types in [!INCLUDE[prodshort](../developer/includes/prodshort
 
 <!-- @antino which datatypes in BC is not supported in CDS? -->
 
-## Entity key/primary key
+## Entity key - primary key
 
 In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], entities uses the SystemId (GUID) as the primary key, which uniquely identifies a record in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In Common Data Service, the SystemId exposed by the entity is used as the primary key.
 
 ## Primary field
+
 @lukasz, please look through this section. How do we set the primary field. We use displayName when possible. For ducuments we use No. But, what do we use when displayName/No. is not there? 
 
 In Common Data Service, each entity must have a primary field. This field must be a single field of the string type. The primary field is used in Common Data Service in the following scenarios:
@@ -100,11 +101,11 @@ Native entity–to–native entity relationships are the standard Common Data Se
 
 ### Virtual entity–to–virtual entity relationships
 
-The relationships between two [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities are driven by the relation metadata in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities. As was explained earlier, these relations are generated as relationships in Common Data Service when the virtual entity is generated. As in the behavior for native entities in Common Data Service, these relationships use the GUID to identify the unique record of the entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Semantically, the GUID on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity behaves like the GUID on the native Common Data Service entity. For information about the implementation of the GUID in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this topic.
+The relationships between two [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities are driven by the relation metadata in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities. As was explained earlier, these relations are generated as relationships in Common Data Service when the virtual entity is generated. As in the behavior for native entities in Common Data Service, these relationships use the GUID to identify the unique record of the entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Semantically, the GUID on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity behaves like the GUID on the native Common Data Service entity. For information about the implementation of the GUID in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-key---primary-key) section earlier in this topic.
 
 In the preceding example, the GUID of the related entity is the entity key of Entity B and will be used to build queries to identify a record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The relation that Entity A has to Entity B will be used.
 
-Therefore, in effect, the entity name is the only information that is used in a relation that comes from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity isn't used at all.
+Therefore, in effect, the entity name is the only information that is used in a relation that comes from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity is not used at all.
 
 
 <!-- ### Virtual entity–to–native entity relationship
