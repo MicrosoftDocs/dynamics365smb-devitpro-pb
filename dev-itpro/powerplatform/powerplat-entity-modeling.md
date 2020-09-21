@@ -51,7 +51,7 @@ Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/
 
 The following data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] aren't supported in Common Data Service. Fields of these data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities won't be made available in the corresponding virtual entities in Common Data Service. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this topic.
 
-- @antino which datatypes in BC is not supported in CDS? 
+<!-- @antino which datatypes in BC is not supported in CDS? -->
 
 ## Entity key/primary key
 
@@ -75,7 +75,7 @@ Because the primary field in Common Data Service is expected to have only one fi
 > [!IMPORTANT]
 > A write transaction that spans a virtual entity and a native entity is not supported. We do not recommend using this form of transaction, as there is no way to ensure consistency.
 
-Relations in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations aren't supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Relations in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 For example, in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service.
 
