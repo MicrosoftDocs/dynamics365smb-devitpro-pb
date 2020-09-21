@@ -149,7 +149,7 @@ Here are some areas where the environment name is used, which will be affected w
   - Power Apps/Automate. All apps and flows built before rename would be affected with no automatic way to repair. The partner or user would have to manually update the connections. 
   - CDS. CDS Virtual Entity setup stores environment name.
 - Development scenarios  
-  - Publish to sandbox environment from Visual Studio Code. The launch.json file of extensions might contain the sandbox name, if different from "default". The files require source code updates,
+  - Publish to sandbox environment from Visual Studio Code. The launch.json file of extensions might contain the sandbox name, if different from "default". The files require source code updates.
   - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
 
