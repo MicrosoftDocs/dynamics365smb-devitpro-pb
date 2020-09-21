@@ -75,7 +75,7 @@ When you design a page with hidden parts, users can choose to display those part
 > [!NOTE]  
 > Parts embedded on Role Center pages can't be made visible using expressions, because the hosting Role Center page can't execute code.
 
-## Using page background tasks
+### Using page background tasks
 
 Like other page types, you can design a part page to use one or more page background tasks. However, unlike other page types, a part page won't display any data until all page background tasks have completed. For more information about this behavior, see [Designing part pages for page background tasks](devenv-page-background-tasks.md#partpages).
 
