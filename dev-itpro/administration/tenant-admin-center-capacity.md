@@ -12,15 +12,15 @@ ms.date: 04/01/2020
 ms.author: jswymer
 ---
 
-# Capacity
+#  Capacity
 
-To help customers manage and plan their storage costs on an ongoing basis, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center includes the **Capacity** page. The page provides visibility of the total database and file storage usage, with details about the storage used by every particular environment. The page also displays the currently used and the maximum allowed number of Production and Sandbox environments available for the customer.  
+To help customers manage and plan their storage costs on an ongoing basis, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center includes the **Capacity** page. The **Capacity** page provides visibility of the total database and file storage usage, with details about the storage used by every particular environment. The page also displays the currently used and the maximum allowed number of Production and Sandbox environments available for the customer.  
 
 Customers can purchase additional database capacity and environments via their reselling partner, using the following add-ons:  
 - Dynamics 365 Business Central Database Capacity 
 - Dynamics 365 Business Central Additional Environment Add-on
 
-## Number of environments 
+## Number of environments
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators can create multiple Sandbox and Production type environments for various purposes like:
 - creating more business branches
