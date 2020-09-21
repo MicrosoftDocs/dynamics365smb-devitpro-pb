@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/01/2020
+ms.date: 09/15/2020
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -31,24 +31,24 @@ In the [Development in AL](developer/devenv-dev-overview.md) section, you find d
 
 The reference documentation of the AL language publishes under the [AL Programming](developer/devenv-programming-in-al.md) umbrella. This content is partly generated automatically from code, but currently most of the reference content is maintained by hand. Use the following landing pages to quickly find the reference content that you need:
 
-* Objects
-    * [Table object](developer/devenv-table-object.md)
-    * [Table extension object](developer/devenv-table-ext-object.md)
-    * [Page object](developer/devenv-page-object.md)
-    * [Page extension object](developer/devenv-page-ext-object.md)
-    * [Page customization object](developer/devenv-page-customization-object.md)
-    * [Report object](developer/devenv-report-object.md)
-    * [XMLport Object](developer/devenv-xmlport-object.md)
-    * [Query object](developer/devenv-query-object.md)
-    * [Codeunit object](developer/devenv-codeunit-object.md)
-    * [Profile object](developer/devenv-profile-object.md)
-    * [Control add-in object](developer/devenv-control-addin-object.md)
 * Methods
-    * [Data Types and Methods in AL](developer/methods-auto/library.md)
+  * [Data Types and Methods in AL](developer/methods-auto/library.md)
 * Properties
-    * [Page and Page Extension Properties Overview](developer/properties/devenv-page-property-overview.md)
+  * [Properties Overview](developer/properties/devenv-properties.md)
 * Triggers
-    * [Triggers Overview](developer/triggers/devenv-triggers.md)
+  * [Triggers Overview](developer/triggers/devenv-triggers.md)
+* Objects
+  * [Table object](developer/devenv-table-object.md)
+  * [Table extension object](developer/devenv-table-ext-object.md)
+  * [Page object](developer/devenv-page-object.md)
+  * [Page extension object](developer/devenv-page-ext-object.md)
+  * [Page customization object](developer/devenv-page-customization-object.md)
+  * [Report object](developer/devenv-report-object.md)
+  * [XMLport object](developer/devenv-xmlport-object.md)
+  * [Query object](developer/devenv-query-object.md)
+  * [Codeunit object](developer/devenv-codeunit-object.md)
+  * [Profile object](developer/devenv-profile-object.md)
+  * [Control add-in object](developer/devenv-control-addin-object.md)
 
 ### Product versions and Help versions
 
@@ -91,10 +91,19 @@ You can learn about current and coming capabilities through a number of differen
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Release plans |[/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
-> |Business Central docs|[/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
-> |Business Central development and administration docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
-> |The "Ready to Go" learning catalog|[/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
+> |Release plans |[https://docs.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
+> |Business functionality|[https://docs.microsoft.com/dynamics365/business-central/across-business-functionality](/dynamics365/business-central/across-business-functionality) |Use this content to learn about business functionality in the default version of [!INCLUDE [prodshort](developer/includes/prodshort.md)]. |
+> |Development in the AL language|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-dev-overview.md)|Use this content to learn how to extend and customize Business Central using the native AL language.|
+> |Administrative tasks|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/](administration/tenant-administration.md)|Use this content to learn how to administer Business Central online.|
+> |Development in the AL language|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-programming-in-al.md)|Use this content to learn how to extend and customize Business Central.|
+> |Security in Business Central|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/security/](security/security-and-protection.md)|Use this content to help you understand and improve the security of Business Central.|
+> |Compliance|[https://docs.microsoft.com/dynamics365/business-central/compliance/compliance-overview](/dynamics365/business-central/compliance/compliance-overview)|Use this content to learn about compliance in relation to Business Central.|
+> |Performance|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/performance](performance/performance-overview.md)|Use this content to learn how to extend and customize Business Central.|
+> |Integrating with Business Central using web services|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/webservices/](webservices/web-services.md)|Use this content to learn how to integrate Business Central with other products by using web services.|
+> |Migrate to Business Central online|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
+> |Features not implemented in on-premises deployments|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
+> |The "Ready to Go" learning catalog|[https://docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
+> |E-learning|[aka.ms/bclearn](https://aka.ms/bclearn)|Free [!INCLUDE [prodshort](developer/includes/prodshort.md)] learning paths on Microsoft Learn|
 
 ### Share an idea about a new feature you'd like to have
 
@@ -119,29 +128,17 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 
 ### Summary of where to file bugs and issues
 
-As a partner, you have different support channels depending on what type of issue you want support for. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
+As a partner, you have different support channels depending on what type of issue you want support for. The following list outlines the various channels.  
 
-|Issue type             |Site               |
-|-----------------------|-------------------|
-|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
-|Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
-|Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
-|Report bug in supported in-market versions of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises|The [Support for business](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=93d37907-ad94-d591-22e9-593cfa09dd3f) site|
+[!INCLUDE [prod_support](includes/prodsupport.md)]
+
+For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
 
 #### Non-product related questions
 
 On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
 
-|For questions related to               |Contact               |
-|---------------------------------------|----------------------|
-|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com), respectively |
-|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |The Partner Center [Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) site|
-|Payments, credit terms, checks, wire, or similar |Email [MBS Accounting](mailto:msgpar@microsoft.com) |
-|Technical issues with PSBC, PartnerSource, or Order Central|Email [IT MBS Support](mailto:itmbssup@microsoft.com)  |
-|Incentives |Email [CSA Team](mailto:mbscsa@microsoft.com)|
-|Cloud Solution Provider incentives|Email [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
-|CSA/Ocina escalations| Email [NAOC Channel Incentives Escalations](mailto:naoccies@microsoft.com) |
-|Volume licensing |The [Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email [Online Licensing](mailto:mvlohelp@microsoft.com)|
+[!INCLUDE [nonprodsupport](includes/nonprodsupport.md)]
 
 ## Trials
 
