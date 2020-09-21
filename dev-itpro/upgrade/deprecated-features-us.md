@@ -38,9 +38,12 @@ Shows a list of aged remaining balances for each customer for a given period of 
 |----|----|----|
 |Replaced| The Aged Accounts Receivable report (report 120) provides the same capabilities as the (local) Aged Accounts Receivable (report 10040) and it is available for all countries. | 2019 release wave 2 |
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-us](../includes/fields-obsolete-us.md)]
 
 ## See Also
+
 [Upgrading [!INCLUDE [prodshort](../developer/includes/prodshort.md)]](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-

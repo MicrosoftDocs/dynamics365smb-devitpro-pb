@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/08/2020
+ms.date: 09/21/2020
 ---
 
 # FAQ for Dynamics 365 Business Central
@@ -24,7 +24,6 @@ The following sections guide you to frequently asked questions about [!INCLUDE[p
 - Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
 - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prodshort](includes/prodshort.md)] Windows client.
 - Visit [FAQ about Signing Up and Using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)] in the business functionality content for.
-
 
 Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] here you can find answers to some of the most frequently asked questions:
 
@@ -73,11 +72,11 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 
 ## How does Microsoft handle database sizes?
 
-For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much database storage capacity we allow each tenant to use for their environments (databases). If a tenant exceeds this limit, we limit administrative actions that create additional environments. Exceeding the storage limit will not interrupt transaction processing within the existing environments.
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much database storage capacity we allow each tenant to use for their environments (databases).  
 
-The maximum database size for each [!INCLUDE [prodshort](developer/includes/prodshort.md)] customer's tenant is 80 GB. The limit is applied to the entire Azure Active Directory  tenant, including all environments of type production or sandbox, not to individual environments. Customers can purchase additional database capacity through their CSP partner. 
+[!INCLUDE [admin-db-quota](developer/includes/admin-db-quota.md)]
 
-When customers purchase additional [!INCLUDE [prodshort](developer/includes/prodshort.md)] production environments, their overall, tenant-wide database capacity quota is extended by 4 GB.  
+For more information, see [Managing capacity](administration/tenant-admin-center-environments.md#managing-capacity).  
 
 ## Is the Windows client supported?
 

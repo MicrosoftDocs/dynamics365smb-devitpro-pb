@@ -1,5 +1,6 @@
 ---
 title: "Classifying Data in Dynamics 365"
+description: Learn about classifying data in Business Central
 ms.author: jswymer
 ms.custom: na
 ms.date: 04/01/2020
@@ -48,7 +49,7 @@ When you upgrade an application from a [!INCLUDE[d365fin_md](includes/d365fin_md
 
 Run the script below from Developer Shell:
 ``` 
-Invoke-NAVCodeunit -Tenant <TenantID> -CompanyName <CompanyName> -CodeunitID 1750 -MethodNAme ‘SyncAllFields’ -ServerIntance <ServerInstance>
+Invoke-NAVCodeunit -Tenant <TenantID> -CompanyName <CompanyName> -CodeunitID 1750 -MethodNAme 'SyncAllFields' -ServerIntance <ServerInstance>
 ```
 
 ### Bulk-classifying data
