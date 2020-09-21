@@ -1,5 +1,6 @@
 ---
 title: "Application lifecycle management for solutions that use virtual entities"
+description: "Lifecycle management for Common Data Service entities end-to-end solutions"
 ms.custom: na
 ms.date: 08/12/2020
 ms.reviewer: solsen

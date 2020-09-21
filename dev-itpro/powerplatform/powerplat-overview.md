@@ -1,5 +1,6 @@
 ---
-title: "Microsoft Power Platform integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]"
+title: "Microsoft Power Platform integration with Business Central"
+description: "Integration of Power Platform with Business Central"
 ms.custom: na
 ms.date: 08/12/2020
 ms.reviewer: solsen
@@ -10,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Microsoft Power Platform Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+# Microsoft Power Platform Integration with Business Central
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 

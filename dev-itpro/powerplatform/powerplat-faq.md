@@ -1,5 +1,6 @@
 ---
 title: "Business Central virtual entities FAQ"
+description: "Frequently asked questions for working with Business Central virtual entities"
 ms.custom: na
 ms.date: 08/12/2020
 ms.reviewer: solsen
