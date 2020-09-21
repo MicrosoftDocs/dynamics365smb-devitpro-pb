@@ -1,5 +1,6 @@
 ---
 title: "LogMessage Method"
+description: Describes the LogMessage method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020
@@ -70,5 +71,5 @@ end;
 ```
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

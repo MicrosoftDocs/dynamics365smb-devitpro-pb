@@ -103,7 +103,7 @@ end;
 
 - For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls which signals are sent, based on their severity level.
 
-    If the **Diagnostic Trace Level** is set to **Warning** for example, then **Normal** and **Verbose** signals won't be sent to Application Insights. For more information, see [](../administration/configure-server-instance.md#General).
+    If the **Diagnostic Trace Level** is set to **Warning** for example, then **Normal** and **Verbose** signals won't be sent to Application Insights. For more information, see [Configuring Business Central Server - General](../administration/configure-server-instance.md#General).
 
 - For privacy reasons, events that have a `DataClassification` other than `SystemMetadata` aren't sent to Application Insight resources set up on the tenant. During development of your extension, it's good practice to have a privacy review of the use of LOGMESSAGE calls to ensure that customer data isn't mistakenly leaked into Application Insights resources. 
 
