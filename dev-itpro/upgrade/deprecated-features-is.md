@@ -3,8 +3,8 @@ title: Iceland Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Iceland that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.prod: dynamics-nav-2018
 ms.topic: article
+ms.service: dynamics365-business-central
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

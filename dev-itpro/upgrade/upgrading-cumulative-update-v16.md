@@ -143,7 +143,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
     1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Setup** page.
     2. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
-    3. On the **Design customization the installation** page, select the following components as a minimum:
+    3. On the **Customize the installation** page, select the following components as a minimum:
 
         - AL Development Environment (optional but recommended)
         - Server

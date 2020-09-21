@@ -1,14 +1,13 @@
 ---
 title: "Operation Limits in Dynamics 365 Business Central"
-description: ""
+description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.author: jswymer
 ---
 
@@ -34,7 +33,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 <!-- no limit
 |Operation timeout|The maximum time for the service to return a call from the client.||  
 -->
-##  <a name="ClientServices"></a> Data handling limits
+##  <a name="DataHandling"></a> Data handling limits
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
