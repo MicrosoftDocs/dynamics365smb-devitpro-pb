@@ -53,7 +53,7 @@ Theres known limitations with [!INCLUDE[prodshort](../developer/includes/prodsho
 
 ## See Also
 
-[Entity Modeling](powerplatform/powerplat-entity-modeling.md)  
-[Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)  
-[Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)  
-[FAQ](powerplatform/powerplat-faq.md)  
+[Entity Modeling](powerplat-entity-modeling.md)  
+[Application Lifecycle Management for Solutions that use Virtual Entities](powerplat-app-lifecycle-management.md)  
+[Business Central and Common Data Service Admin Reference](powerplat-admin-reference.md)  
+[FAQ](powerplat-faq.md)  

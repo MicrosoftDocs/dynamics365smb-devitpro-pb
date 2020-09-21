@@ -59,3 +59,10 @@ Yes. Here is the order of calls:
 ### Does the form business logic in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] get called through virtual entities?
 
 Business logic that resides on forms isn't invoked through virtual entities. Instead, you should expect the same behavior that you get through OData access to the same entities. The expectation is that an entity that is exposed to OData (that is, **IsPublic** is set to **Yes**) has appropriate protections to ensure that data can't be corrupted. If any entity lacks this protection, that situation represents a bug in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] API exposing the entity. If you see differences in entity behavior between OData and virtual entities, that situation represents a bug in the virtual entity feature.
+
+## See Also
+
+[Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
+[Entity Modeling](powerplat-entity-modeling.md)  
+[Business Central and Common Data Service Admin Reference](powerplat-admin-reference.md)  
+[Application Lifecycle Management for Solutions that use Virtual Entities](powerplat-app-lifecycle-management.md)  

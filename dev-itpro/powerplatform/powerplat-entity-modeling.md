@@ -24,6 +24,7 @@ Building an app requires capabilities to perform relational modeling between ent
 By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
+
 @lukasz - please look at the entire section
 When a virtual entity is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service. For data types that are supported, the field properties in Common Data Service are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
@@ -83,14 +84,14 @@ The external name of this relationship uses the naming convention **FK\_\<relati
 
 When a relationship is generated for a virtual entity in Common Data Service, a new field of the lookup type is also added to the source entity. In the preceding example, when the relationship is created, a new lookup field that uses the naming convention **mserp\_fk\_\<target\_entity\>\_id** is added to source entity Entity A. Because there can be several relations in an entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the same number of lookup fields (one per related entity) will be created in the source virtual entity. When this lookup field is added to a page or a view, it will show the primary field value from the related entity.
 
-A relationship in the virtual entity in Common Data Service will be generated only if the related entity in the relation already exists as a virtual entity in Common Data Service. In the preceding example, if Entity B doesn't exist as a virtual entity in Common Data Service, the relation to Entity B won't be created in Entity A when Entity A is generated as a virtual entity. This relation will be added to Entity A only when Entity B is generated as a virtual entity. Therefore, when a virtual entity is generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], validations are done to ensure that only relationships that can be complete and functional are generated in the virtual entity that is being generated.
+A relationship in the virtual entity in Common Data Service will be generated only if the related entity in the relation already exists as a virtual entity in Common Data Service. In the preceding example, if Entity B doesn't exist as a virtual entity in Common Data Service, the relation to Entity B will not be created in Entity A when Entity A is generated as a virtual entity. This relation will be added to Entity A only when Entity B is generated as a virtual entity. Therefore, when a virtual entity is generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], validations are done to ensure that only relationships that can be complete and functional are generated in the virtual entity that is being generated.
 
 In summary, a relationship to another [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity might not exist in the virtual entity for either of the following reasons:
 
-- The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity that is participating in the relationship doesn't exist as a virtual entity.
+- The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity that is participating in the relationship does not exist as a virtual entity.
 - The length of the name of the relationship exceeds 120 characters.
 
-Note that if an error is encountered when any part of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity is generated in Common Data Service, the virtual entity won't be created at all. If relationships don't exist for either of the preceding reasons, the situation isn't considered an error.
+Note that if an error is encountered when any part of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity is generated in Common Data Service, the virtual entity will not be created at all. If relationships do not exist for either of the preceding reasons, the situation is not considered an error.
 
 ### Native entity–to–native entity relationships
 
@@ -197,7 +198,7 @@ Calculated and unmapped fields in [!INCLUDE[prodshort](../developer/includes/pro
 
 ## See Also
 
-[Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)  
-[Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)  
-[Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)  
-[FAQ](powerplatform/powerplat-faq.md)  
+[Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
+[Application Lifecycle Management for Solutions that use Virtual Entities](powerplat-app-lifecycle-management.md)  
+[Business Central and Common Data Service Admin Reference](powerplat-admin-reference.md)  
+[FAQ](powerplat-faq.md)  

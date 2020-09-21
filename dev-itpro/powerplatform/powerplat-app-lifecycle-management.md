@@ -62,7 +62,7 @@ One [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance must be l
 
 ## See Also
 
-[Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)  
-[Entity Modeling](powerplatform/powerplat-entity-modeling.md)  
-[Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)  
-[FAQ](powerplatform/powerplat-faq.md)  
+[Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
+[Entity Modeling](powerplat-entity-modeling.md)  
+[Business Central and Common Data Service Admin Reference](powerplat-admin-reference.md)  
+[FAQ](powerplat-faq.md)  
