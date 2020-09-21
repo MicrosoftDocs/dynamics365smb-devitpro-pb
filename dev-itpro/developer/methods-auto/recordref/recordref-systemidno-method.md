@@ -56,7 +56,7 @@ end;
 
 ## See Also
 
-[SystemId Field](../../devenv-table-object.md#systemid)  
+[SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [RecordRef Data Type](recordref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

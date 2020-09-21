@@ -187,4 +187,4 @@ Do not add keys that are fields of the base table. // still true
 [Tables Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
-[SystemId Field](devenv-table-object.md#systemid)  
+[SystemId Field](devenv-table-system-fields.md#systemid)  

@@ -130,4 +130,4 @@ until (Rec.Next = 0);
 ## See Also
 
 [AL Methods](methods-auto/library.md)  
-[SystemId Field](devenv-table-object.md#systemid)
+[SystemId Field](devenv-table-system-fields.md#systemid)
