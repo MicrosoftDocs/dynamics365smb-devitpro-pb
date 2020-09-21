@@ -347,8 +347,11 @@ The following table describes settings that you can adjust for compatibility wit
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------|
 |Security Protocol|SecurityProtocol|Specifies the default security protocol level for the server instance. This setting also controls the [HttpClient](../developer/methods-auto/httpclient/httpclient-data-type.md).<br /><br />Values: **Ssl3**, **Tls**, **Tls11**, **Tls12**, **SystemDefault**. For more information about these values, see [SecurityProtocolType Enum](/dotnet/api/system.net.securityprotocoltype).<br /><br />Default: **Tls12**<br />Dynamically Updatable: No|
+|Unsupported Language IDs<sup>[\[1\]](#1)|UnsupportedLanguageIds|Specifies which installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)] languages aren't available for use in the clients. Use this setting to prevent including languages that have the same name but different culture identifiers (LCIDs). A culture identifier is a standard international numeric abbreviation. For example, the LCID for *Spanish - Spain (Traditional)* is 1034, and *English - United States* is 1033.<br /><br />The setting's value is a semicolon-separated list that contains the LCIDs for each language.<br /><br />Default: **1034**<br />Dynamically Updatable: No|
 |Use Client Timestamp For Report Execution Timestamp|ReplaceReportExecutionTimeWithClientTime|Specifies whether to replace the report execution timestamp with the client timestamp instead of the server instance timestamp.<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 |Use FIND('-') to Populate Pages Instead of FIND('=><')|UseFindMinusWhenPopulatingPage|Specifies whether pages are initially populated by using FIND('-') instead of FIND('=><'). This setting is relevant to pages that display lists in descending order. Enabling this setting ensures that the first record, instead of the last record, is in focus when the page opens. Pages that use the OnFindRecord trigger will ignore this setting and always use FIND('=><').<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
+
+<sup><a name=1></a>1</sup>Introduced in [!INCLUDE[prodshort.md](../includes/prodshort.md)] 2020 release wave 1, update 16.4.
 
 [!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]
 
