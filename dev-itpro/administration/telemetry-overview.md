@@ -49,7 +49,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|
 -->
 
-## Enabling Application Insights
+## <a name="enable"></a> Enabling Application Insights
 
 Sending telemetry data to Application Insights requires you have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to your Application Insights resource. The configuration is different for Online and On-premises:
  
