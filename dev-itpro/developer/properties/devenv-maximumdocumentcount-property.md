@@ -1,5 +1,6 @@
 ---
 title: "MaximumDocumentCount Property"
+description: Explains the MaximumDocumentCount property on reports in Business Central
 ms.custom: na
 ms.date: 06/25/2020
 ms.reviewer: na
