@@ -11,6 +11,7 @@ ms.author: solsen
 ---
 
 # Page Properties
+
 This topic lists properties that apply to the page object, controls, and actions on a page.  
 
 ## Page Object Properties
@@ -52,6 +53,7 @@ The following properties apply to a **Page** object.
 - [UsageCategory Property](devenv-usagecategory-property.md)  
 
 ## Container Control Properties  
+
 The following properties apply to **Container** controls on a page.  
 
 - [Caption Property](devenv-caption-property.md)  
@@ -62,6 +64,7 @@ The following properties apply to **Container** controls on a page.
 - [Name Property](devenv-name-property.md)  
 
 ## Group Control Properties  
+
 The following properties apply to **Group** controls on a page.  
 
 - [Caption Property](devenv-caption-property.md)  
@@ -83,6 +86,7 @@ The following properties apply to **Group** controls on a page.
 - [Visible Property](devenv-visible-property.md)  
 
 ## Field Control Properties  
+
 The following properties apply to **Field** controls on a page.  
 
 - [AccessByPermission Property](devenv-accessbypermission-property.md)  
@@ -137,6 +141,7 @@ The following properties apply to **Field** controls on a page.
 - [Width Property](devenv-width-property.md)  
 
 ## Part Control Properties  
+
 The following properties apply to **Part** controls on a page.  
 
 - [AccessByPermission Property](devenv-accessbypermission-property.md)  
@@ -164,6 +169,7 @@ The following properties apply to **Part** controls on a page.
 - [Visible Property](devenv-visible-property.md)  
 
 ## ActionContainer Properties  
+
 The following properties apply to **ActionContainer** on a page.  
 
 - [Caption Property](devenv-caption-property.md)  
@@ -174,6 +180,7 @@ The following properties apply to **ActionContainer** on a page.
 
 
 ## ActionGroup Properties  
+
 The following properties apply to **ActionGroups**.  
 
 - [Caption Property](devenv-caption-property.md)  
@@ -188,6 +195,7 @@ The following properties apply to **ActionGroups**.
 - [Visible Property](devenv-visible-property.md)  
 
 ## Action Properties  
+
 The following properties apply to **Actions**.  
 
 - [AccessByPermission Property](devenv-accessbypermission-property.md)  
@@ -219,6 +227,7 @@ The following properties apply to **Actions**.
 - [Visible Property](devenv-visible-property.md)  
 
 ## Separator Properties  
+
 The following properties apply to **Separators**.  
 
 - [Caption Property](devenv-caption-property.md)  
@@ -230,5 +239,6 @@ The following properties apply to **Separators**.
 
 
 ## See Also  
+
 [Properties](devenv-properties.md)  
-[Page and Page Extension Properties](devenv-page-property-overview.md)  
+[Page, Page Fields, and Page Extension Properties](devenv-page-property-overview.md)  

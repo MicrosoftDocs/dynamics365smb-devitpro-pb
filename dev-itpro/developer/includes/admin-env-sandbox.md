@@ -11,7 +11,4 @@ You can create a sandbox environment that includes data from your production env
 
 Sandbox environments are handy for certain types of development scenarios because the debugging endpoint is open by default. This means that you can attach Visual Studio Code to a running system and debug through running code. It also allows you to publish directly to the environment from Code.  
 
-> [!NOTE]
-> Each [!INCLUDE[prodshort](prodshort.md)] tenant is limited to three sandbox environments.
-
 If your organization has more than one sandbox environment, you can switch between environments by opening the App Launcher, choosing the Dynamics 365 tile, then choose the Business Central Sandbox tile. The sandbox environment picker shows the available sandboxes, so choose the one that you want to switch to.

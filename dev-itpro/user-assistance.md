@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 05/04/2020
+ms.date: 08/28/2020
 ms.author: edupont
 ---
 
@@ -24,7 +24,7 @@ The [!INCLUDE[prodshort](developer/includes/prodshort.md)] user assistance model
 
     The Help menu and the tooltips provide context-sensitive links to Help articles with more information.
 
-Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Configure the Help Experience](deployment/configure-help.md).  
+Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 In this article, we'll talk about the user assistance model itself and what it does.  
 
@@ -48,7 +48,7 @@ This "What is this field?"-content is associated with the user interface because
 
 The tooltips in [!INCLUDE [prodshort](developer/includes/prodshort.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[flyouts](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/flyouts)* in the Fluent Design guidelines. [!INCLUDE [prodshort](developer/includes/prodshort.md)] does not have the equivalent of [teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip) that you can add to your solution, though our platform includes a few flyouts of the same type.
 
-Each tooltip ends with an automatically generated link to *learn more*. For more information, see the [Help users learn more](#help-users-learn-more) section. However, tooltips for actions render differently and do not have the *Learn more* link:
+Most tooltips end with an automatically generated link to *learn more* as described in the [Help users learn more](#help-users-learn-more) section. However, tooltips for actions render differently and do not have the *Learn more* link:
 
 :::image type="content" source="media/ua_tooltip_client.png" alt-text="A tooltip for an action without Learn More link.":::
 
@@ -93,7 +93,7 @@ We welcome your contributions, both as pull requests with suggestions or correct
 > [!IMPORTANT]
 > Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
 
-Microsoft also accepts contributions and feedback about the developer and ITpro content through the [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb). This repo does not have translation repos associated with it, but other than that, the same rules apply as for the *dynamics365smb-docs* repo.  
+Microsoft also accepts contributions and feedback about the development and administration content through the [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb). This repo does not have translation repos associated with it, but other than that, the same rules apply as for the *dynamics365smb-docs* repo.  
 
 For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
 
@@ -103,7 +103,7 @@ If you fork one of our repos, you will be authoring in something called MarkDown
 
 The team that built the Docs.microsoft.com site have also developed an extension for Visual Studio Code that helps with MarkDown validation, for example. For more information, see [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack). However, you can also use other text editors.  
 
-For other tips and tricks, see [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
+For other tips and tricks, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
 
@@ -113,7 +113,7 @@ The user assistance in the shape of tooltips and other user interface text is tr
 
 ## Style
 
-At Microsoft, we are in process of simplifying and unifying our style guides. To get to know the Microsoft style, use the [Microsoft Writing Style Guide](/style-guide/welcome/) as a good starting point. If you have a partner account, you can get access to product-specific Microsoft style guides on the [Microsoft Style Guides platform](https://styleguides.azurewebsites.net/). You can then download the style guide that you want and share that local copy with colleagues.  
+At Microsoft, we are in process of simplifying and unifying our style guides. To get to know the Microsoft style, use the [Microsoft Writing Style Guide](/style-guide/welcome/) as a good starting point. The [!INCLUDE [prodshort](developer/includes/prodshort.md)] follows most of the guidelines in the Microsoft Writing Style Guide with exceptions for industry terminology and other product-specific issues.  
 
 ## See Also
 

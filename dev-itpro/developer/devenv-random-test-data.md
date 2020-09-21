@@ -1,5 +1,6 @@
 ---
 title: "Random Test Data"
+description: Describes how to generate random data for application tests in Business Central
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: solsen
@@ -26,7 +27,10 @@ Result := MIN(Number1,Number2);
 Assert.AreEqual(Number1,Result,Err);  
 ```  
   
- This example uses random integers because it does not matter if the second number is 2 or 2000. You can use similar code to generate random decimal numbers, dates, and so on.  
+ This example uses random integers because it does not matter if the second number is 2 or 2000. You can use similar code to generate random decimal numbers, dates, and so on. 
+
+> [!TIP]
+> Use the [Any module](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/DevTools/TestFramework/TestLibraries/Any) in the Microsoft/ALAppExtensions GitHub repo to generate pseudo-random values during test set-up. This module generates the same set of numbers, allowing you to reproduce test failures.
   
 ### Seeding test data  
 Sometimes random value can lead to test failures, so you want to be able to reproduce the failure and fix it. In most of codeunits in the application test libraries, you find an `Initialize` method that often contains following statement:  
