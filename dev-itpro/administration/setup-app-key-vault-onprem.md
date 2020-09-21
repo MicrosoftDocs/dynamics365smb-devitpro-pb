@@ -1,6 +1,6 @@
 ---
-title: Azure Key Vaults with Business Central
-description: Describes how to use an Azure Key vault with Business Central extensions.
+title: Setting up App Key Vaults for Business Central on-premises
+description: Describes how to set up App Key Vault with Business Central on-premises.
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -16,7 +16,7 @@ author: jswymer
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions can be developed to get secrets from Azure Keys Vaults. This article describes the tasks required to set up Azure Keys Vaults for storing extension secrets and configure them in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment.
 
-For more information about developing extensions and key vaults, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](extension-keyvaults).
+For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault.md).
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ Now, you create one or more key vaults in Azure, and add the secrets that you wa
 
 There are different ways to create an Azure key vault. For example, you can use the Azure portal, Azure CLI, and more.
 
-- The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal).
+- The easiest way is to use the Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](/azure/key-vault/secrets/quick-create-portal).
 
     After you create the key vault, add the secrets. 
 
@@ -61,7 +61,7 @@ The steps in this task are done from the [Azure portal](https://portal.azure.com
 1. Sign in to Azure portal at [portal.azure.com](https://portal.azure.com) and set the portal to your Azure Active Directory tenant.
 2. Register an Azure AD application for the reading key vault.
 
-    You add the new application by using the [Azure portal](https://portal.azure.com). For guidelines, see [Register your application with your Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+    You add the new application by using the [Azure portal](https://portal.azure.com). For guidelines, see [Register your application with your Azure Active Directory tenant](/azure/active-directory/develop/quickstart-register-app).
     
     When you add an application to an Azure AD tenant, you must specify the following information:
 
@@ -120,7 +120,7 @@ To complete this task, you'll need the user name of the service account that run
 
     To do this using the MMC:
 
-    1.  Open the MMC snap-in for certificates. See [How to: View Certificates with the MMC Snap-in](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
+    1.  Open the MMC snap-in for certificates. See [How to: View Certificates with the MMC Snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
     
     2. Expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then select the **Certificates** subfolder.  
       
@@ -144,9 +144,9 @@ To complete this task, you'll need the user name of the service account that run
     |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.<br /><br />Example:<br />MY|
     |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.<br /><br />Example:<br />649419e4fbb87340f5a0f995e605b74c5f6d943e|
     |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant.<br /><br />Example:<br />ed4129d9-b913-4514-83db-82e305163bec|
-    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID. <br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](devenv-app-key-vault-overview.md#security).<br /><br />Example:<br />true|
+    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID. <br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](../developer/devenv-app-key-vault.md#security).<br /><br />Example:<br />true|
 
-    You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)]](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
+    You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)]](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       
     To use the Set-NAVServerConfiguration cmdlet, start the [[!INCLUDE[admintool](../developer/includes/admintool.md)] as an administrator, and run the following commands one at a time. Replace brackets with your own values. 
 
@@ -167,6 +167,8 @@ To complete this task, you'll need the user name of the service account that run
 At this point, you can run your extensions that use key vault secrets to read secrets from key vault.
 
 ## See Also  
+
+[Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md)
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Authentication and Credential Types](Users-Credential-Types.md)  
