@@ -28,6 +28,7 @@ Furthermore, the page has properties. Properties work in the same way for pages 
 > For information about designing pages, see [Page Types and Layouts](devenv-page-types-and-layouts.md).
 
 ## Page metadata
+
 For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
 
 ```
@@ -65,6 +66,7 @@ Which page type you choose depends on the application task that you want to supp
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
 ## Page layout
+
 The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. 
 
 You can choose between the following `area` categories:
@@ -87,87 +89,6 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 - Report
 
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
-
-## Using keywords to place actions and controls
-
-You can use the following keywords in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these keywords to place actions in the ribbon. 
-
-|Keywords        |Syntax | Applies to |
-|-----------------------|-------|-------------|
-|`addfirst`|`addfirst(Anchor)`|**Anchor**: areas and groups|
-|`addlast` |`addlast(Anchor)` |**Anchor**: areas and groups|
-|`addafter` |`addafter(Anchor)` |**Anchor**: controls, actions and groups|
-|`addbefore`|`addbefore(Anchor)` |**Anchor**: controls, actions and groups|
-|`movefirst`|`movefirst(Anchor; Target1, Target2)`|**Anchor**: area, group <br>**Target**: list of actions or list of controls|
-|`movelast` |`movelast(Anchor; Target1, Target2)` |**Anchor**: area, group <br>**Target**: list of actions or list of controls|
-|`moveafter` |`moveafter(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls|
-|`movebefore`|`movebefore(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls|
-|`modify`|`modify(Target)`|**Target**: controls, actions and groups|
-
-
-### Example
-To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, `action` creates a new group in the ribbon and places it last in the `Creation` group.  
-
-```
-pageextension 70000020 CustomerCardExtension extends "Customer Card"
-{
-    layout
-    {
-        // Adding a new control field 'ShoeSize' in the group 'General'
-        addlast(General)
-        {
-            field("Shoe Size"; ShoeSize)
-            {
-                Caption = 'Shoe size';
-
-                trigger OnValidate();
-                begin
-                    if ShoeSize < 10 then
-                        Error('Feet too small');
-                end;
-            }
-        }
-
-        // Modifying the caption of the field 'Address 2'
-        modify("Address 2")
-        {
-            Caption = 'New Address 2';
-        }
-
-        // Moving the two fields 'CreditLimit' and 'CalcCreditLimitLCYExpendedPct'
-        // to be the first ones in the 'Balance' group.
-        movefirst(Balance; CreditLimit, CalcCreditLimitLCYExpendedPct)
-    }
-    actions
-    {
-        // Adding a new action group 'MyNewActionGroup' in the 'Creation' area
-        addlast(Creation)
-        {
-            group(MyNewActionGroup)
-            {
-                action(MyNewAction)
-                {
-                    Caption = 'My New Action';
-
-                    trigger OnAction();
-                    begin
-                        Message('My message');
-                    end;
-                }
-            }
-        }
-    }
-}
-
-tableextension 70000020 CustomerTableExtension extends Customer
-{
-    fields
-    {
-        // Adding a new table field in the 'Customer' table
-        field(50100; ShoeSize; Integer) { }
-    }
-}
-```
 
 ## Adding Help to the page objects
 
@@ -244,7 +165,7 @@ We recommend that you simplify the user experience by reducing what users see by
 
 ## See Also
 
-[Page Properties Overview](properties/devenv-page-property-overview.md)  
+[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)   

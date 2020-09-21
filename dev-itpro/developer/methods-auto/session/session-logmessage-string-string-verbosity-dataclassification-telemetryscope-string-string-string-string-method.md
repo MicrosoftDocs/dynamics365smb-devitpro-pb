@@ -1,5 +1,6 @@
 ---
 title: "LogMessage Method"
+description: Describes the LogMessage method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020
@@ -55,7 +56,20 @@ Custom dimension value.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For more information about using this method, see [Creating Custom Telemetry Events for Application Insights](../../devenv-instrument-application-for-telemetry-app-insights.md).
+
+## Example
+
+```
+trigger OnRun();
+begin
+    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+end;
+```
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)
