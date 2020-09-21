@@ -1,9 +1,9 @@
 ---
 title: Inspecting Pages
-description: "Provides and overview of Role Center design"
+description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 07/30/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,7 @@ As you navigate to other pages in the application, the **Page Inspection** pane 
 
 ## What Page Inspection Shows
 
-In short, the page inspection pane shows the information for the main page or sub-page in a part, the page's source table (if any) and fields, extensions that affect the page, and current filters applied to the page. The following sections describe details about what is shown.
+In short, the page inspection pane shows the information for the main page or page part, the page's source table (if any) and fields, extensions that affect the page, and current filters applied to the page. The following sections describe details about what is shown.
 
 > [!NOTE]
 > If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
@@ -69,10 +69,12 @@ The **Page** field shows information about the main page or a selected (highligh
 
 ### [Table](#tab/table)
 
-If the page is associated with a source table, the **Table** field displays information about the source table of the main page or the selected page in a part, as specified by the page's [SourceTable property](properties/devenv-sourcetable-property.md). The **Table** field shows the following information:
+If the page is associated with a source table, the **Table** field displays information about the source table of the main page or the selected page part, as specified by the page's [SourceTable property](properties/devenv-sourcetable-property.md). The **Table** field shows the following information:
 
 - The name, as specified by its [Name property](properties/devenv-name-property.md)
 - The ID as specified by the [ID property](properties/devenv-id-property.md).
+
+If the page uses a query object as a data source, the table field shows the query name and ID instead.
 
 #### View Table
 
@@ -99,12 +101,11 @@ Each field is shown with the following information:
 #### What field information is not shown
 
 - Page fields that are not bound to the source table by the [SourceExp property](properties/devenv-sourceexpr-property.md).
-- Fields in temporary tables.
 - The value of fields that have a data type of blob, byte, media, or mediaset.
 
 ## [Extensions](#tab/extensions)
 
-The **Extensions** tab displays extensions that are installed on the tenant and affect the selected page or its source table.
+The **Extensions** tab displays extensions that are installed for the current environment and affect the selected page or its source table.
 
 ![Page Inspection](media/page-inspection-extensions.png)
 
