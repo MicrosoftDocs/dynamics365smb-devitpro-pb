@@ -1,20 +1,19 @@
 ---
 title: "Operation Limits in Dynamics 365 Business Central"
-description: ""
+description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.author: jswymer
 ---
 
 # Operational Limits for Business Central Online
 
-To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
+To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them. The limits are per-tenant limits.
 
 > [!TIP]
 > Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
@@ -34,7 +33,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 <!-- no limit
 |Operation timeout|The maximum time for the service to return a call from the client.||  
 -->
-##  <a name="ClientServices"></a> Data handling limits
+##  <a name="DataHandling"></a> Data handling limits
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
@@ -72,13 +71,16 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |ChildSessionsMaxConcurrency|The maximum number of child sessions that can run concurrently per parent session. When the value is exceeded, additional child sessions will be queued and run when a slot becomes available as other child sessions are finished.|5|
 |ChildSessionsMaxQueueLength|The maximum number of child sessions that can be queued per parent session. If the value is exceeded, an error occurs.|100|
 
-## Report limits
+## <a name="Reports"></a>Report limits
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-| Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
-| Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
-|Max execution timeout for Word reports| The maximum execution time that it can take to generate a report that uses a Word layout. If exceeded, the report will be canceled.|30 minutes|
+|Default max documents | The maximum number of documents that can be merged in report by default Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using [MaximumDocumentCount property](../developer/properties/devenv-maximumdocumentcount-property.md) of a report. Client users can do the same when running a report from the report request page|200|
+|Max documents | The maximum number of documents that can be merged in report. If exceeded, the report will be canceled.|500|
+|Default max execution timeout | The maximum execution time that it can take to generate a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [ExecutionTimeout property](../developer/properties/devenv-executiontimeout-property.md) of a report. Client users can do the same when running a report from the report request page.|6 hours|
+|Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
+|Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [MaximumDataSetSize property](../developer/properties/devenv-maximumdatasetsize-property.md) of a report. Client users can do the same when running a report from the report request page.|500,000|
+|Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
 
 ## Query limits
 
@@ -91,8 +93,10 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Max connections|The maximum number of simultaneous OData requests on the server instance. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
+|Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
+|Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
+|Max request queue size|The maximum number of pending OData V4 requests, including requests being processed and waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
 |Operation timeout|The maximum amount of time that the service gives a single SOAP request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|10 minutes|
 
@@ -103,8 +107,10 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Maximum connections|The maximum number of simultaneous SOAP requests on the server instance. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
-|Maximum message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
+|Max concurrent requests|The maximum number of SOAP requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
+|Max connections|The maximum number of simultaneous SOAP requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
+|Max message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
+|Max request queue size|The maximum number of pending SOAP requests, including requests being processed and waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br /> 300 requests/minute<br /><br />Production:<br />600 requests/minute|
 |Operation timeout|The maximum amount of time that the service gives to a single SOAP request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
 

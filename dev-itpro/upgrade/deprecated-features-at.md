@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Austria, local functionality
 ms.date: 04/01/2020
-ms.author: SorenGP
+ms.author: edupont
 
 ---
 
@@ -44,6 +44,10 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Moved| Blanket Order Archiving and Document Line Tracking features are no longer specific to Austria, so we have made them generally available in the standard product. |
+
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-at](../includes/fields-obsolete-at.md)]
 
 ## See Also
 

@@ -76,17 +76,17 @@ If you do not want to publish and invoke functionality to debug it, you can inst
 
 |Keystroke    |Action         |
 |-------------|---------------|
-|F5           |Start debugging|
-|Ctrl+F5      |Start without debugging|
-|Shift+F5     |Stop debugging|
-|Ctrl+Shift+F5|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
-|Alt+F5       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
-|F10          |Step over|
-|F11          |Step into|
-|Shift+F11    |Step out|
-|F12          |Go To Definition| 
+|**F5**           |Start debugging|
+|**Ctrl+F5**      |Start without debugging|
+|**Shift+F5**     |Stop debugging|
+|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|**Alt+F5**       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
+|**F10**          |Step over|
+|**F11**          |Step into|
+|**Shift+F11**    |Step out|
+|**F12**          |Go To Definition| 
 
-For more shortcuts, see [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging). 
+For more shortcuts, see [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging). For working with Snapshot Debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 <!-- 
 To use the Go To Definition on local server, it requires that the AL symbols are rebuilt and downloaded from C/SIDE. The application symbols that were built with the previous version of C/SIDE would not make it possible to have Go To Definition work on base application methods. -->
@@ -126,7 +126,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## NonDebuggable attribute
 
-To restrict the ability to debug certain methods and/or variables, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
 ## See Also
 

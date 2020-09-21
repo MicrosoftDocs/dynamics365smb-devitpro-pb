@@ -19,6 +19,9 @@ In an AL project there are two JSON files; the `app.json` file and the `launch.j
 > [!NOTE]  
 > For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
 
+> [!IMPORTANT]  
+> The `rad.json` and the `snapshots.json` files should not be modified.
+
 ## <a name="Appjson"></a>App.json file
 
 The following table describes the settings in the `app.json` file:
@@ -49,8 +52,9 @@ The following table describes the settings in the `app.json` file:
 |supportedLocales|No|The list of locales that are supported in your Help if different from all locales. The value on the list is inserted into the URL defined in the `contextSensitiveHelpUrl` and `helpBaseUrl` properties. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]` for an app that supports only Danish and English (US).|
 |runtime|Yes|The version of the runtime that the project is targeting. The project can be published to the server with an earlier or the same runtime version. The available options are: `1.0` - Business Central April 2018 release, `2.2` - Business Central October 2018 release CU 2, `3.0` - Business Central April 2019 release, `4.0` - Business Central 2019 release wave 2, and `5.0` - Business Central 2020 release wave 1.|
 |features|No|Specifies a list of options for translations. The `TranslationFile` option generates a `\Translations` folder that is populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The `GenerateCaptions` option depends on the `TranslationFile` setting. It generates captions for objects that do not have a `Caption` or `CaptionML` specified, these are then written to the .xlf file.<br> The syntax is `"features": [ "TranslationFile", "GenerateCaptions" ]`. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md)|
-|internalsVisibleTo|No|Specifies a list of modules that have access to the objects that are marked as `Internal` using the **Access** property from the current module.<br> The syntax is `{   "appId": "d6c3f231-08d3-4681-996f-261c06500e1a", "name": "TheConsumer", "publisher": "Microsoft"}]`. For more information see [Access Property](properties/devenv-access-property.md) and [InternalEvent Attribute](methods/devenv-internal-attribute.md).|
+|internalsVisibleTo|No|Specifies a list of modules that have access to the objects that are marked as `Internal` using the **Access** property from the current module.<br> The syntax is `{   "appId": "d6c3f231-08d3-4681-996f-261c06500e1a", "name": "TheConsumer", "publisher": "Microsoft"}]`. For more information see [Access Property](properties/devenv-access-property.md) and [InternalEvent Attribute](methods/devenv-internal-attribute.md). **Note:** Using `internalsVisibleTo` in Business Central online will throw a warning from AppSourceCop and PTECop. `Access = Internal` is *not* designed as a security boundary, but for API development.|
 |propagateDependencies|No|Specifies whether the dependencies of this project should be propagated as direct dependencies of projects that depend on this one. Default is `false`. If set to `true` then any dependencies of the current package will be visible to consumers of the package. For example, if A depends on B that depends on C, by default, A will not be able to use types defined in C. If B has `"propagateDependencies" : "true"`, then A will be able to use types defined in C without taking a direct dependency.<br>**Note:** `propagateDependencies` applies to all dependencies, there is no option to exclude specific dependencies.|
+|suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example `"suppressWarnings": [ "AL0458" ]`.|
 
 ## <a name="Launchjson"></a>Launch.json file
 
@@ -79,6 +83,9 @@ The following table describes the settings in the `launch.json` file. The `launc
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 |attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
+|forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version.|
+|useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
+
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|

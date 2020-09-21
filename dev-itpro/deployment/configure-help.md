@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/20/2020
+ms.date: 08/28/2020
 ms.author: edupont
 ---
 
@@ -18,20 +18,20 @@ These and other scenarios are also supported in [!INCLUDE[prodshort](../develope
 
 ## Apps for online tenants
 
-When you build an app for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model. This includes tooltips and context-sensitive links to Help.  
+When you build an app for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model. This includes tooltips and context-sensitive links to Help content that is hosted on a website.  
 
 For more information, see [User Assistance Model](../user-assistance.md) and [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 ## On-premises deployments
 
-For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you must choose between using the legacy Dynamics NAV Help Server or an online website. Help Server is a simple website that requires your Help to be in a specific format (HTML files), and the online website can host any content that you want to make available. Your choice depends on the concrete needs of your solution and your users.  
+For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you must choose between using the legacy Dynamics NAV Help Server or an online website. Help Server is a simple website that requires your Help to be in a specific format (HTML files), and the online website can host any content that you want to make available. Your choice depends on the concrete needs of your solution and your users. You can configure each client to use either an online library or Help Server. If you add configuration for an online library, you must remove the settings for Help Server.  
 
 > [!IMPORTANT]
-> You can configure each client to use either an online library or Help Server. If you add configuration for an online library, you must remove the settings for Help Server.  
+> The legacy Dynamics NAV Help Server component will be deprecated. We recommend that you invest in a different type of website. For more information, see the [2020 release wave 2 release plan](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-) and [Custom Help Toolkit](../help/custom-help-toolkit.md).
 
-### Online library
+## Online library
 
-If you want to use a website that is *not* based on Help Server, then you must specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
+Host your content on a website of your own choosing and specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
 
 The navsettings.json file must contain the following setting in the `ApplicationIdSettings` element:
 
@@ -53,7 +53,11 @@ The navsettings.json file must contain the following setting in the `Application
 
 For more information, see [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](../administration/configure-web-server.md).  
 
-### Help Server
+### Deploy content to your website
+
+Currently, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has no firm requirements for the website that hosts your content. You can deploy your content using any tool and process, such as [Azure Static Web Apps](/azure/static-web-apps/), [Azure App Service](/azure/app-service/quickstart-html), a website that is based on [customization of the DocFx Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html), or third-party services such as [MkDocs](https://www.mkdocs.org/). For examples of how to build HTML files, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
+
+## Help Server
 
 If you want to use Help Server, then you must specify the server and port in the installation options. The Help Server website can also serve as a starting point for adding a library to your existing website, for example.  
 
@@ -74,7 +78,7 @@ The navsettings.json file must contain the following settings in the `NAVWebSett
 }
 ```
 
-In the example, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and adminstration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+In the example, `https://myserver.com` represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and adminstration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
 > If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Neither does the original Help lookup mechanism that was based on filenames that reflected the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server?target=_blank).
@@ -84,31 +88,9 @@ In the example, *https://myserver.com* represents the URL to the Help Server ins
 
 You can also still download the files that were made available for [!INCLUDE [nav2017](../developer/includes/nav2017.md)]. The download consists of 45 CAB files with the content from the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016 DVD rebranded to [!INCLUDE [nav2017](../developer/includes/nav2017.md)]. There are CAB files with the W1 application Help translated into each of the supported languages plus the local functionality for the country/region where that language is spoken. There are also CAB files with local functionality in English. The files were published as a single download so each administrator could choose exactly the files that they needed at the time. For more information, see [Microsoft Dynamics NAV 2017 Classic Help Download](https://www.microsoft.com/download/details.aspx?id=54315).  
 
-### Known issues with Microsoft's content
-
-Microsoft's content in the various GitHub repos is optimized for the Docs.microsoft.com site and the tools that are used for this site. If you reuse Microsoft's content, you may experience a number of known issues, depending on your deployment method. This section describes recommended steps to work around these issues.  
-
-#### Docs are not available for a specific version
-
-Microsoft's public GitHub repos reflect the current version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then please check the following sections for suggested workarounds.  
-
-#### Broken links
-
-If you deploy Microsoft's content to a website, your tools or your users will report that some links do not work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the Docs.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, or if you install the legacy Dynamics NAV Help Server from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media, you don't have the same redirection.  
-
-We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, the trick is to check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the Docs.microsoft.com site to manage redirection when a file is deprecated. So if you get an error that "finance-how-to-set-up-sepa-direct-debit.md does not exist", then you can see in the `.openpublishing.redirection.json` file that that article has been deprecated and replaced by finance-collect-payments-with-sepa-direct-debit.md. So you can replace the link in the file that is looking for finance-how-to-set-up-sepa-direct-debit.md to link to finance-collect-payments-with-sepa-direct-debit.md instead.  
-
-#### ToC.xml for Help Server is different from the TOC.md file
-
-Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, it will be deprecated in the future. As a result, it contains links that are broken as described in the previous section.  
-
-#### Translated content is not available
-
-Microsoft creates content in English (US) that then gets translated into the Microsoft-provided target languages. The translations are available in the relevant localization repos after a few weeks.  
-
 ## Fork the Microsoft repos, and customize or extend the content
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. For guidance about how to generate HTML files for your website, see [Build HTML files](../help/contributor-guide.md#build-html-files). For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).  
+If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. For guidance about how to generate HTML files for your website, see [Build HTML files](../help/contributor-guide.md#build-html-files). For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
 ## See Also
 

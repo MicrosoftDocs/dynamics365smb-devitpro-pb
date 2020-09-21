@@ -7,7 +7,7 @@ ms.date: 04/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Transitioning to Microsoft Dynamics 365 Business Central from Dynamics NAV or Dynamics GP
@@ -15,9 +15,8 @@ ms.author: v-liober
 > [!IMPORTANT]  
 > Here are the links to the assets in the Transition Playbook. Please refer to the [**Transition Playbook**](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/TransitionPartnerPlaybook.pptx) for more information and prescriptive guidance.  
 
-
-| **Sales Step** | | **Asset** | **Description** |  
-|---------------------------|---------------------------|---------------------------|-----------------------------|
+| **Sales Step** | **Asset** | **Description** |  
+|----------------|-----------|-----------------|
 | STEP1:LEARN | | Dynamics 365 Business Central Customer Transition Pitch decks – [NAV](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/NAV_ShortPitchdeckcustomer.pptx) & [GP](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/GP_ShortPitchdeckcustomer.pptx) |**Start here.** Become familiar with the three options for your existing customers. Use this pitch deck when you want to present a succinct pitch to the business decision makers in your customers’ organizations. This pitch will inform your customers about Microsoft’s Cloud vision in the age of digital transformation and what’s next for their ERP system. 
 | | | Dynamics 365 Business Central [Transition conversation guide](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/TransitionConversationGuide.pptx) | Use this guide when working with your customers to assess the next step for their ERP system. Learn how to ask insightful questions to determine your customer’s pain points and offer the best practical solution. This guide is meant for deeper discussions with supporting demos to win your customers’ trust. | 
 | | | [Recorded video delivery](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/TransitionConversationRecording/TransitionConversationRecording.mp4) of Dynamics 365 Business Central Transition Conversation Guide | Listen to Microsoft’s guidance on how to leverage the conversation guide to have the most insightful discussions with your customers. Use the talking points and questions in the recorded video to customize your discussions. | 

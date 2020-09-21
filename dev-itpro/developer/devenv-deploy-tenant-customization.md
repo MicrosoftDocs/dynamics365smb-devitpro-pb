@@ -47,7 +47,7 @@ If you are developing and deploying an updated version of a previously-deployed 
 > [!NOTE]
 > These parameters are defined in the app.json file of the extension. For more information, see [JSON files](devenv-json-files.md#Appjson).
 
-If you have successfully deployed an extension to a tenant, and then recompile the extension’s source code, this generates a new extension package file with a new package ID. If you try to upload this new extension package file to a different tenant, the upload will fail with the error  `An extension with same App ID and version has already been uploaded. Resolve and deploy again.`.
+If you have successfully deployed an extension to a tenant, and then recompile the extension’s source code without updating version number, this generates a new extension package file with a new package ID. If you try to upload this new extension package file to a different tenant, the upload will fail with the error similar to `An extension with same App ID and version has already been uploaded. Resolve and deploy again.`. Similarly, if an extension failed to deploy, and you try to upload a new extension package with the same version number, the upload will fail as well.
 
 When developing a per-tenant extension from the same source code as an extension for multiple tenants, we recommend that you adjust the App ID, Name, Publisher, and Version of the extension for each tenant to maintain uniqueness. You may deploy the same extension package to multiple tenants if the package ID, app ID, name, publisher, and version are all the same.
 

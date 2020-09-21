@@ -300,11 +300,13 @@ GO
 USE [Business Central Database]  
 GO
 
-CREATE ROLE BCServer_runtime
-ALTER ROLE db_datareader ADD MEMBER BCServer_runtime
-ALTER ROLE db_datawriter ADD MEMBER BCServer_runtime
-ALTER ROLE db_ddladmin ADD MEMBER BCServer_runtime
-GRANT VIEW CHANGE TRACKING on schema::[dbo] TO  BCServer_runtime
+CREATE ROLE bc_server_runtime
+ALTER ROLE db_datareader ADD MEMBER bc_server_runtime
+ALTER ROLE db_datawriter ADD MEMBER bc_server_runtime
+ALTER ROLE db_ddladmin ADD MEMBER bc_server_runtime
+GRANT VIEW CHANGE TRACKING on schema::[dbo] TO  bc_server_runtime
+GRANT VIEW DATABASE STATE TO bc_server_runtime
+GRANT ALTER ON DATABASE::[Business Central Database] TO bc_server_runtime
 GO
 
 CREATE USER [domain\accountname] FOR LOGIN [domain\accountname]  

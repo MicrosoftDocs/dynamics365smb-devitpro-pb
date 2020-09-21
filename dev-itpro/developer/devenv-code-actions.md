@@ -21,10 +21,11 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] these code actions ar
 - Interface implementer.
 - Make method local.
 - Use parenthesis for method call.
+- Using `with` statements in code.
 
 ## To enable AL Code Actions
 
-1. Open the Command Palette by pressing **Ctrl+P** and then open the `settings.json` file.  
+1. Open the Command Palette by pressing **Ctrl+Shift+P** and then open the `settings.json` file.  
 2. Enter the setting `al.enableCodeActions` and set it to `true` like this `"al.enableCodeActions": true`
 3. Save the settings file. You have now enabled code actions on your project.
 
@@ -35,6 +36,7 @@ Alternatively:
 3. Click on the **Enable Code Actions** checkbox. You have now enabled code actions on your project.
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [AL Outline View](devenv-al-outline-view.md)  
 [AL Formatter](devenv-al-formatter.md)  

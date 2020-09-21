@@ -22,6 +22,7 @@ This section describes how you can work with end-users to improve the performanc
 
 - Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
 
+  <!-- If other legacy applications require you to remain on Internet Explorer, consider using [Edge in Internet Explorer mode](https://www.microsoft.com/edge/business). For more information, see [Microsoft Edge documentation](/deployedge/edge-ie-mode).-->
   > [!IMPORTANT] 
   > [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/), before support ends.
 
@@ -46,7 +47,6 @@ The overall structure of a page (but not business data) is cached on the client 
 >
 > Any browser policies or settings that restrict access to local storage or the browser's IndexedDB may prevent [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from applying performance optimizations.
 
-
 ## Choosing a network connection
 
 If a choice of networks is available, consider connecting to a secure network that has lower latency. In general, the user interface performs better when latency is low.
@@ -63,7 +63,6 @@ Newer browsers and operating systems are generally better at handling resources 
  - The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
    - By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] saves time from attempting to process and display all the related facts.
    - By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department, or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
-
 
 ## Agility of navigating and entering data
 
