@@ -43,7 +43,7 @@ The next step in the process is to provide Common Data Service with the [!INCLUD
 
 2. Select and edit the data source named “[!INCLUDE[prodshort](../developer/includes/prodshort.md)]”.
 
-3. On the Business Central Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants will have an default environment called 'production'.
+3. On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants will have an default environment called 'production'.
 
 4. Set the **Default Company** value. 
 
@@ -55,7 +55,7 @@ Due to the large number of OData enabled entities available in [!INCLUDE[prodsho
 
 1. In Common Data Service, go to **Data -> Entities** and search for *Available Business Central Entity*. Make sure to search for All and not just Default.
 
-2. Choose **Data* in the horizontal menu to view the avaliable data.
+2. Choose **Data* in the horizontal menu to view the available data.
 
 3. Locate and edit the entity that you want to enable.
 
@@ -67,8 +67,7 @@ The virtual entity metadata can be force-refreshed when it is expected for the e
 
 ## Referencing virtual entities
 
-The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option
-in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
+The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
 
 To consume virtual entities:
 
