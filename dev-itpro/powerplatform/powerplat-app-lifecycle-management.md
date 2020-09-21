@@ -31,7 +31,7 @@ When a solution that depends on MicrosoftBusinessCentralERPVE is exported, place
 
 The following list describes other solutions that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities require to work, and that must be available in the Common Data Service environment:
 
-- **MicrosoftBusinessCentralERPVE** - Solution that contains the generated virtual entities 
+- **MicrosoftBusinessCentralERPVE** - Solution that contains the generated virtual entities. 
 - **MicrosoftBusinessCentralERPCatalog** – This solution provides a catalog of the available entities in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance. It also provides the connection that is used to set up a configuration. For more information, see the later sections of this topic.
 - **MicrosoftBusinessCentralVESupport** – This solution provides the virtual entity provider for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The provider can communicate with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  and Common Data Service. For more information, see the next section.
 - **Dynamics365Company** – This solution adds the Company entity, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities that have a **PrimaryCompanyContext** metadata value.
@@ -48,7 +48,7 @@ Note that each Common Data Service environment must point to only one [!INCLUDE[
 
 The **mserp\_businesscentralvirtualentity** entity that represents the catalog can be queried to list the entities in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance. Because this entity is a virtual entity, the catalog is never persisted in Common Data Service.
 
-Notice that the name of the catalog entity has the "mserp\_" prefix. This prefix identifies the entities in the catalog as [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities. The same prefix is also added to the system names of the virtual entities that are generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the MicrosoftBusinessCentralERPVE solution. Therefore, the maker can distinguish [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities from other entities. The prefix is set in the managed solution and can't be changed.
+Notice that the name of the catalog entity has the "mserp\_" prefix. This prefix identifies the entities in the catalog as [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities. The same prefix is also added to the system names of the virtual entities that are generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the MicrosoftBusinessCentralERPVE solution. Therefore, the maker can distinguish [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities from other entities. The prefix is set in the managed solution and cannot be changed.
 
 ### Managing entities from multiple ISV solutions
 
