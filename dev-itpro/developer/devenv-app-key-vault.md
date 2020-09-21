@@ -89,7 +89,7 @@ Keep the following information in mind when you use the App Key Vault feature wi
 
 ### Mark methods as NonDebuggable
 
-When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](../methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
@@ -127,7 +127,7 @@ Publisher validation is done by comparing the key vault's Azure AD tenant ID wit
 
 Publisher validation is turned on by default, which is the recommended setting. If it's turned off, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. So, don't turn off publisher validation unless you trust the extensions that can be potentially installed.
 
-For information about how to turn publisher validation on or off, see [Configuring Business Central Server](configure-server-instance.md).
+For information about how to turn publisher validation on or off, see [Configuring Business Central Server](../administration/configure-server-instance.md#keyvault).
 
 ## <a name="troubleshooting"></a>Monitoring and troubleshooting
 

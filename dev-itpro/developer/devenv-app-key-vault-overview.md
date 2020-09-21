@@ -42,4 +42,4 @@ For more information, see [Using App Key Vault Secrets in Extensions](../develop
 
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
-[Configuring Business Central Server](../administration/configure-server-instance.md)  
+[Configuring Business Central Server - Azure Key Vault Extensions](../administration/configure-server-instance.md#keyvault)  

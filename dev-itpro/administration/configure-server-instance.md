@@ -239,7 +239,7 @@ These settings are used when you want to use Azure Key Vaults to store extension
 |  Client Certificate Thumbprint|AzureKeyVaultClientCertificateThumbprint|  Specifies the thumbprint of the certificate used by the key vault reader application in Azure.<br /><br />Default: My<br />Dynamically Updatable: No|
 |  Client ID  |AzureKeyVaultClientId|  Specifies the appication (client) ID of the key vault reader application in Azure. The value is a GUID.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No |
 
-## Azure Key Vault Extension Secrets Tab Settings
+## <a name="keyvault"></a>Azure Key Vault Extension Secrets Tab Settings
 
 The following table describes fields on the **Azure Key Vault Extension Secrets** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
