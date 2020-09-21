@@ -31,7 +31,7 @@ Developing an extension to use secrets from a key vault involves two tasks, as d
 
 You specify the key vaults for an extension in the extension's manifest file (app.json). To specify a key vault, you add the `"keyVaultUrls"` to the app.json, and set the value to the key vault's URL. For example, the following code snippet specifies a key vault that has the URI `https://mykeyvault.vault.azure.net`: 
 
-```
+```json
     "keyVaultUrls": [ 
         "https://mykeyvault.vault.azure.net" 
     ] 
@@ -39,7 +39,7 @@ You specify the key vaults for an extension in the extension's manifest file (ap
 
 You can specify up to two key vaults in the app.json, as shown in the following example code snippet: 
  
-``` 
+```json 
     "keyVaultUrls": [ 
         "https://myfirstkeyvault.vault.azure.net", 
         "https://mysecondkeyvault.vault.azure.net" 
