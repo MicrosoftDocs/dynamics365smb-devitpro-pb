@@ -22,7 +22,7 @@ This topic is a collection of frequently asked questions about [!INCLUDE[prodsho
 
 ### What version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do I need?
 
-17.0 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is needed. 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual entities.  
+Version 17.0 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is needed. Version 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual entities.  
 
 ### Can a solution from an independent software vendor (ISV) take a dependency on virtual entities? What does the application lifecycle management (ALM) look like?
 
@@ -55,7 +55,8 @@ Yes. Here is the order of calls:
 1. Common Data Service sends a create or update message.
 2. All the existing logic on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity and backing tables is invoked. This logic includes default value entry that might change values.
 3. Common Data Service sends another Retrieve (single) message to get the latest copy of the data, including any fields that default values were entered for.
-@lukasz
+
+<!-- @lukasz -->
 
 ### Does the form business logic in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] get called through virtual entities?
 

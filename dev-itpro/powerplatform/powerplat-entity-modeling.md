@@ -26,7 +26,8 @@ By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prod
 
 ## Entity fields
 
-@lukasz - please look at the entire section
+<!-- @lukasz - please look at the entire section -->
+
 When a virtual entity is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service. For data types that are supported, the field properties in Common Data Service are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 This rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
@@ -39,7 +40,7 @@ This rest of this section describes supported and unsupported data types. For mo
 | String (non-memo), String (memo)    | String – single line of text, String – multiple lines of text |
 | UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as a null value in Common Data Service. |
 | Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as an empty value in Common Data Service. |
-| Enum                                | Picklist<br><br>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service are not guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], because these enums do not have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated.  @lukasz - how do we handle enums?| 
+| Enum                                | Picklist<br><br>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service are not guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], because these enums do not have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. <!-- @lukasz - how do we handle enums?-->| 
 | Blob | Multiline | 
 
 Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as the *decimal* data type in Common Data Service. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
@@ -61,7 +62,7 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], entities uses the 
 
 ## Primary field
 
-@lukasz, please look through this section. How do we set the primary field. We use displayName when possible. For ducuments we use No. But, what do we use when displayName/No. is not there? 
+<!-- @lukasz, please look through this section. How do we set the primary field. We use displayName when possible. For ducuments we use No. But, what do we use when displayName/No. is not there? -->
 
 In Common Data Service, each entity must have a primary field. This field must be a single field of the string type. The primary field is used in Common Data Service in the following scenarios:
 
