@@ -87,6 +87,7 @@
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
+## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
@@ -94,7 +95,8 @@
 ### [Preparing Test Environments](administration/test-environment.md)
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ## Monitoring and Analyzing Telemetry
-### [Telemetry Overview](administration/telemetry-overview.md)
+### [Overview](administration/telemetry-overview.md)
+### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 ### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
@@ -235,6 +237,11 @@
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
+## App Key Vaults for Secrets
+### [Overview](developer/devenv-app-key-vault-overview.md)
+### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
+### [Setting up App Key Vaults for On-premises](administration/setup-app-key-vault-onprem.md)
+### [Using Key Vault Secrets in Extensions](developer/devenv-app-key-vault.md)
 ## Tables
 ### [Tables Overview](developer/devenv-tables-overview.md)
 ### [Table Object](developer/devenv-table-object.md)
@@ -757,6 +764,7 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
+### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
