@@ -48,7 +48,7 @@ Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/
 | Use case                                     | Resulting behavior |
 |----------------------------------------------|--------------------|
 | Common Data Service has higher precision.    | This use case should never occur unless the metadata is out of sync. |
-| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher precision. | During a read operation, the value is rounded to the closest precision value in Common Data Service. If the value is edited in Common Data Service, it's rounded to the closest precision value in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. During a write operation, the value that is specified in Common Data Service is written, because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports higher precision. |
+| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher precision. | During a read operation, the value is rounded to the closest precision value in Common Data Service. If the value is edited in Common Data Service, it is rounded to the closest precision value in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. During a write operation, the value that is specified in Common Data Service is written, because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports higher precision. |
 | Common Data Service has higher scale.        | Not applicable |
 | [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher scale.     | Common Data Service shows the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] value, even if it exceeds 100 billion. However, there will be a loss of precision. For example, 987,654,100,000,000,000 is shown in Common Data Service as "987,654,099,999,999,900". If the value of this field is edited in Common Data Service, Common Data Service validation throws an error that the value exceeds the maximum value before that value is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. |
 
@@ -152,7 +152,7 @@ Native entity–to–virtual entity relationships works much like native entity�
 -->
 ## Enums
 
-Enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as OptionSets in Common Data Service. When a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is generated, the required enums are generated as OptionSets. If an OptionSet already exists, it's used instead.
+Enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as OptionSets in Common Data Service. When a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is generated, the required enums are generated as OptionSets. If an OptionSet already exists, it is used instead.
 
 ## Company
 
@@ -187,13 +187,13 @@ Here are some examples of OData actions that are supported in [!INCLUDE[prodshor
 
 ## Labels and localization
 
-Labels that are defined on metadata, such as entity names and field names in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], are retrieved when virtual entities are generated in Common Data Service. The labels are retrieved using an API on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] called **entityDefinitions**. This API is avaliable on every API route, and will serve translations and other entity metadata, not suited for OData $metadata. But with both the entityDefinition and $metadata Common Data Service has all it needs to generate localized virtual entities.  
+Labels that are defined on metadata, such as entity names and field names in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], are retrieved when virtual entities are generated in Common Data Service. The labels are retrieved using an API on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] called **entityDefinitions**. This API is available on every API route, and will serve translations and other entity metadata, not suited for OData $metadata. But with both the entityDefinition and $metadata Common Data Service has all it needs to generate localized virtual entities.  
 
 Any runtime labels are returned in the language of the current user context. In other words, they are returned in the language that is specified on that user's UserInfo record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This behavior also applies to error messages.
 
 ## Error handling
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] create, read, update, and delete (CRUD) business logic on entities and backing tables is run when it's called through the virtual entity in Common Data Service. If any exception is thrown on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] side, the last message in the error log is returned to Common Data Service and is thrown as an InvalidPluginExecutionException exception that contains the message from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Because the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] code runs in the context of the user, the language of the error message is based on the language that is specified on the UserInfo record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If any messages that are written to the info log in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] don't result in an exception, they are not shown in Common Data Service.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] create, read, update, and delete (CRUD) business logic on entities and backing tables is run when it is called through the virtual entity in Common Data Service. If any exception is thrown on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] side, the last message in the error log is returned to Common Data Service and is thrown as an InvalidPluginExecutionException exception that contains the message from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Because the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] code runs in the context of the user, the language of the error message is based on the language that is specified on the UserInfo record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If any messages that are written to the info log in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not result in an exception, they are not shown in Common Data Service.
 
 ## Calculated/unmapped fields
 
