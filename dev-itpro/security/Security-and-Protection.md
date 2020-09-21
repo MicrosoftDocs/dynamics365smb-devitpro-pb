@@ -1,5 +1,6 @@
 ---
 title: "Security and Protection"
+description: Get an overview of the articles about security and protection in Business Central
 author: jswymer
 ms.custom: na
 ms.reviewer: na
