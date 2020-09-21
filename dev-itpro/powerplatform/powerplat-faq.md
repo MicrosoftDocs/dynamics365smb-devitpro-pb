@@ -46,7 +46,7 @@ No. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entiti
 
 ### How can I show, in the same grid, data from multiple virtual entities that are joined to a physical entity record in Common Data Service?
 
-This approach isn't currently possible in Common Data Service.
+This approach is not currently possible in Common Data Service.
 
 ### If I want a default value to be entered in a field during pre-create, will an initValue on the data entity work?
 
@@ -59,7 +59,7 @@ Yes. Here is the order of calls:
 
 ### Does the form business logic in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] get called through virtual entities?
 
-Business logic that resides on forms isn't invoked through virtual entities. Instead, you should expect the same behavior that you get through OData access to the same entities. The expectation is that an entity that is exposed to OData (that is, **IsPublic** is set to **Yes**) has appropriate protections to ensure that data can't be corrupted. If any entity lacks this protection, that situation represents a bug in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] API exposing the entity. If you see differences in entity behavior between OData and virtual entities, that situation represents a bug in the virtual entity feature.
+Business logic that resides on forms is not invoked through virtual entities. Instead, you should expect the same behavior that you get through OData access to the same entities. The expectation is that an entity that is exposed to OData (that is, **IsPublic** is set to **Yes**) has appropriate protections to ensure that data cannot be corrupted. If any entity lacks this protection, that situation represents a bug in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] API exposing the entity. If you see differences in entity behavior between OData and virtual entities, that situation represents a bug in the virtual entity feature.
 
 ## See Also
 
