@@ -1,6 +1,6 @@
 ---
 title: "Table System fields"
-description: "Description of the table System fields."
+description: Description of the table System fields.
 author: jswymer
 ms.custom: na
 ms.date: 06/11/2020
