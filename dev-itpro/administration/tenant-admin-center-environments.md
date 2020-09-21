@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 04/01/2020
+ms.date: 09/21/2020
 ms.author: edupont
 ---
 
@@ -17,14 +17,14 @@ ms.author: edupont
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center-v2.png)
+> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
 
 ## Viewing details for an environment
 
 In the environments list, you can view more details by choosing the link in the **Name** column.
 
 > [!div class="mx-imgBorder"]
-> ![View details about an environment](../developer/media/admin/business_central_admin_center_details-v2.png)
+> ![View details about an environment](../developer/media/admin/business_central_admin_center_details.png)
 
 ## Types of environments
 
@@ -34,9 +34,13 @@ You can create environments of different types. Which type of environment to cho
 
 [!INCLUDE [admin-env-prod](../developer/includes/admin-env-prod.md)]
 
+[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
+
 ### Sandbox environments
 
 [!INCLUDE [admin-env-sandbox](../developer/includes/admin-env-sandbox.md)]
+
+[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
 [!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
@@ -44,8 +48,7 @@ You can create environments of different types. Which type of environment to cho
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, if you have been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to run the business, you can delete the original production environment and then create a new production environment.  
 
-> [!NOTE]
-> Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three production environments.
+[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
 To create a production environment:
 
@@ -62,9 +65,6 @@ A sandbox environment is a non-production instance of [!INCLUDE[prodshort](../de
 
 > [!IMPORTANT]
 > Make sure that you understand the limitations of a sandbox before you create a new sandbox environment. For more information, see [Sandbox environments](environment-types.md#sandbox-environments) section.
-
-> [!NOTE]
-> Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three sandbox environments.
 
 To create a sandbox environment:
 
@@ -89,6 +89,12 @@ If you create a sandbox that isn't a copy of an existing environment, you must s
 The version list may also have one or more *preview* versions. Preview versions are early release candidates of upcoming releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that are made available specifically for sandbox environments. This list gives you access to review new functionality, validate extension compatibility, and other general testing of the upcoming release.
 
 When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment won't be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it's deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
+
+## Renaming environments
+
+You can rename environments in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], such as if the customer is dissatisfied with the default name that was assigned to their environment during setup, or when an administrator wants to restore an environment and, accordingly, must rename the original environment to prevent it from being used. The new name will be applied to the environment immediately, so make sure that you plan all the necessary communications about the new name well in advance.  
+
+The renaming of an environment is logged and shown in the [operations log](#opslog). 
 
 ## Managing Sessions
 
@@ -152,6 +158,29 @@ Here are some areas where the environment name is used, which will be affected w
   - Publish to sandbox environment from Visual Studio Code. The launch.json file of extensions might contain the sandbox name, if different from "default". The files require source code updates.
   - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
+
+## Managing capacity
+
+The **Capacity** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides an overview of the database and file capacity available for the current environments, and how much of it is currently used. Use this overview to better control the size of the environments and evaluate whether this tenant ought to purchase additional capacity or free up capacity in time for when it is needed.  
+
+For example, if you notice that the tenant is getting perilously close to the storage limits, you can dig into what is taking up storage - is it that extra sandbox environment that the organization isn't using anymore, or is it historical data in the production database?  
+
+This dashboard supplements the information that you can gather through telemetry, and you can use it to take appropriate action when needed.  
+
+### Storage limits
+
+[!INCLUDE [admin-db-quota](../developer/includes/admin-db-quota.md)]
+
+## <a name="opslog"></a>Log of administrative operations
+
+The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Currently, the log includes the following operations:
+
+- Renaming environments  
+- Restoring environments  
+- Updating apps (pending)  
+
+Use this log to see which operations were created, when, and by whom. You can also access detailed error messages in this log, should any operation fail.  
+
 
 ## See also
 

@@ -1,5 +1,6 @@
 ---
 title: "Insert, Modify, ModifyAll, Delete, and DeleteAll Methods"
+description: Describes how to use the Insert, Modify, ModifyAll, Delete, and DeleteAll methods in Business Central
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -154,4 +155,4 @@ Customer.DeleteAll;
 
 ## See Also
 [AL Methods](methods/devenv-al-method-reference.md)  
-[SystemId Field](devenv-table-object.md#systemid)  
+[SystemId Field](devenv-table-system-fields.md#systemid)  
