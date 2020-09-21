@@ -1,6 +1,6 @@
 ---
 title: Azure Key Vaults with Business Central
-description: Describes how to use an Azure Key vault with Business Central extensions.
+description: Provides an overview of Azure key vaults with Business Central extensions.
 ms.custom: na
 ms.date: 07/08/2020
 ms.reviewer: na
@@ -42,4 +42,4 @@ For more information, see [Using App Key Vault Secrets in Extensions](../develop
 
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
-[Configuring Business Central Server](configure-server-instance.md)  
+[Configuring Business Central Server](../administration/configure-server-instance.md)  
