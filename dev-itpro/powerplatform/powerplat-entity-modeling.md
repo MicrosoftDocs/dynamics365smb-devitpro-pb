@@ -159,7 +159,7 @@ An entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be bo
 
 ## Attachments
 
-Attachments in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are supported on a per-entity basis. For example, an invoice header entity will implement an invoice-related attachments entity to [enable attachments via entities](../../fin-ops/organization-administration/configure-document-management.md#how-can-attachments-be-extracted-from-the-system).
+Attachments in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are supported on a per-entity basis. For example, an invoice header entity will implement an invoice-related attachments entity to enable attachments via entities.
 
 Entities of this type will have relations with the corresponding attachments entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Therefore, they will follow the same pattern as the other relations that were discussed earlier. In other words, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities that have implemented attachments functionality will also make attachments available by using virtual entities. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities that do not support attachments also will not support attachments when they are virtualized in Common Data Service.
 
