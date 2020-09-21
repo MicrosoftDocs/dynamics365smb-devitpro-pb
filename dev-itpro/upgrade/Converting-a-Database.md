@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Converting a Database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019  - Technical Upgrade

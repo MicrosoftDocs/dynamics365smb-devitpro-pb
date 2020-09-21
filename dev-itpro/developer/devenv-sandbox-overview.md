@@ -21,6 +21,10 @@ To get started developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_m
 
 For more information, see [Production and Sandbox Environments](../administration/environment-types.md).  
 
+> [!IMPORTANT]  
+> It is not supported to publish, from Visual Studio Code, an extension with the same identifiers as an extension published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
+
+
 ## Development sandbox overview
 
 The following table outlines the most important capabilities on the offered development sandbox environments for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
