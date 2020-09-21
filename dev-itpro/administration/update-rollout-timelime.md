@@ -142,3 +142,4 @@ The following table describes the suggested milestones with example dates for th
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
