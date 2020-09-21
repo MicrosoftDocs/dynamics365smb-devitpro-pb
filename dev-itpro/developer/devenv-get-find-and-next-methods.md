@@ -1,5 +1,6 @@
 ---
 title: "Get, Find, and Next Methods"
+description: Learn about the Get, Find, and Next methods in Business Central for searching records
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2020

@@ -1,5 +1,6 @@
 ---
 title: "GetBySystemId Method"
+description: Describes the GetBySystemId method in Business Central 
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020

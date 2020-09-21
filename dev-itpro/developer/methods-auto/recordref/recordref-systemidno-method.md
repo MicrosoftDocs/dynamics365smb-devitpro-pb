@@ -1,5 +1,6 @@
 ---
 title: "SystemIdNo Method"
+description: Describes the SystemIdNo method on recordref data types in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020

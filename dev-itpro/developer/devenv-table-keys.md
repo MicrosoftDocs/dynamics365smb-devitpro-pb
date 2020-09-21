@@ -1,5 +1,6 @@
 ---
 title: "Table Keys"
+description: Learn about table keys in Business Central
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na

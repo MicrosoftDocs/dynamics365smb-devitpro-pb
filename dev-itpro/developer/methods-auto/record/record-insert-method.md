@@ -1,5 +1,6 @@
 ---
 title: "Insert Method"
+description: Describes the Insert method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2020
