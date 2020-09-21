@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 # Getting Started Developing for the Dynamics 365 Business Central Mobile App
