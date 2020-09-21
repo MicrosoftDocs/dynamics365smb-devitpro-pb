@@ -22,7 +22,7 @@ The application lifecycle for an end-to-end solution using [!INCLUDE[prodshort](
 
 ## Solution management
 
-Virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] don't exist in Common Data Service until they are created. Virtual entities must be created inside a solution. The MicrosoftBusinessCentralERPVE solution is used for this purpose. This solution will contain all the virtual entities that are created from an instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service until they are created. Virtual entities must be created inside a solution. The MicrosoftBusinessCentralERPVE solution is used for this purpose. This solution will contain all the virtual entities that are created from an instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 MicrosoftBusinessCentralERPVE is a [managed solution](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions). By definition, a managed solution can't be modified after it has been generated. However, MicrosoftBusinessCentralERPVE is a managed solution that grants privileges to update the components (that is, virtual entities) that are inside it. Therefore, new virtual entities can be added to the solution as they are created, and existing virtual entities can be updated as required. Nevertheless, the privileges to modify the managed solution are available only to the platform itself. Users can't make changes directly to the solution.
 

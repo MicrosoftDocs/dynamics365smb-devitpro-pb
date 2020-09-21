@@ -26,7 +26,7 @@ This topic is a collection of frequently asked questions about [!INCLUDE[prodsho
 
 ### Can a solution from an independent software vendor (ISV) take a dependency on virtual entities? What does the application lifecycle management (ALM) look like?
 
-Yes. The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution, which is API-managed. In other words, the items in the solution change as you make entities visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. Missing dependency of the solution will be checked when the solution is imported and during import, if a specified virtual entity doesn't yet exist, the virtual entity is automatically made visible.
+Yes. The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution, which is API-managed. In other words, the items in the solution change as you make entities visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. Missing dependency of the solution will be checked when the solution is imported and during import, if a specified virtual entity does not yet exist, the virtual entity is automatically made visible.
 
 ### Which entities from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do users see in the catalog in Common Data Service?
 
