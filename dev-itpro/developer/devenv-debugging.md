@@ -99,7 +99,7 @@ Traditionally, debugging AL has been about examining behavior of the language ru
 
 In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
 
-|       |       |
+|Insight | Description  |
 |-------|-------|
 |Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
@@ -112,7 +112,7 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 
 The database insights also let you peek into the most recent and the latest long running SQL statements executed by the server. To view a list if these, expand either the **\<Last Executed SQL Statements\>** or **\<Last Long Running SQL Statements\>** node. The following insights are part of the SQL statement statistics:
 
-|       |       |
+| Insight    | Description      |
 |-------|-------|
 |Statement | The SQL statement that the AL server sent to the [!INCLUDE[prodshort](includes/prodshort.md)] database. You can copy this into other database tools, such as SQL Server Management Studio, for further analysis.| 
 |Execution time (UTC) | The timestamp (in UTC) of when the SQL statement was executed. You can use this to infer whether the SQL statement was part of the AL code between current and last breakpoint (if set).
