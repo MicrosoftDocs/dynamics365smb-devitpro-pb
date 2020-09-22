@@ -1,4 +1,4 @@
-﻿# Get Started
+# Get Started
 ## [Development and Administration](index.md)
 ## [FAQ](faq.md)
 ## Help and Support
@@ -587,6 +587,7 @@
 ## [Application](security/security-application.md)
 ## [Online](security/security-online.md)
 ## [On-Premises](security/security-onpremises.md)
+## [Privacy FAQ](security/privacy-faq.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
