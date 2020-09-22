@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 04/01/2020
+ms.date: 09/22/2020
 ms.author: jswymer
 ---
 
@@ -39,7 +39,7 @@ Customers can also choose to purchase any number of additional production enviro
 
 Production and sandbox environments can be created and used in any country where [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service is available, also in the country where the default [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. 
 
-When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prodshort](../developer/includes/prodshort.md)] licenses, each user, by default, gets access to all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments (sandbox and production) under the same single [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment. 
+When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prodshort](../developer/includes/prodshort.md)] licenses, each user, by default, gets access to all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments (sandbox and production) under the same single [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment. 
 
 ## Storage
 
@@ -53,7 +53,7 @@ Every additional production environment purchased by the customer also increases
 
 #### Storage usage by environment
 
-The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database and file storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which let's you see the distribution of data size across tables.
+The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database and file storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which let's you see the distribution of data size across tables.
 
 > [!NOTE]
 > Only the environments running on version 17 (2020 release wave 2) and later are included in the database capacity calculations.  
