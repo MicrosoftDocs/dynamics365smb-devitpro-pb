@@ -159,28 +159,11 @@ Here are some areas where the environment name is used, which will be affected w
   - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
 
-## Managing capacity
-
-The **Capacity** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides an overview of the database and file capacity available for the current environments, and how much of it is currently used. Use this overview to better control the size of the environments and evaluate whether this tenant ought to purchase additional capacity or free up capacity in time for when it is needed.  
-
-For example, if you notice that the tenant is getting perilously close to the storage limits, you can dig into what is taking up storage - is it that extra sandbox environment that the organization isn't using anymore, or is it historical data in the production database?  
-
-This dashboard supplements the information that you can gather through telemetry, and you can use it to take appropriate action when needed.  
-
-### Storage limits
-
-[!INCLUDE [admin-db-quota](../developer/includes/admin-db-quota.md)]
-
 ## <a name="opslog"></a>Log of administrative operations
 
-The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Currently, the log includes the following operations:
+The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Currently, the log includes the following operations: Renaming environments.
 
-- Renaming environments  
-- Restoring environments  
-- Updating apps (pending)  
-
-Use this log to see which operations were created, when, and by whom. You can also access detailed error messages in this log, should any operation fail.  
-
+Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.  
 
 ## See also
 
