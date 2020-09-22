@@ -88,9 +88,11 @@ The following table describes the settings in the `launch.json` file. The `launc
 |attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 |forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
+|snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
 
 
 ### Publish to cloud settings
+
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Microsoft cloud sandbox"|
@@ -102,6 +104,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |sandboxName|No|Specifies which sandbox to use in cases where multiple sandboxes are owned by the same tenant.|
 |applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example Fabrikam. This property is reserved for Embed apps.|
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
+|breakOnNext| No | Specifies the session type that the server will connect to. This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant, or if this is not specified with the userId in the configuration settings; the first user on the tenant.|
 |breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
 |launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value is not specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session is not started unless you launch your extension in debugging mode.|
 |enableSqlInformationDebugger|Yes|Specifies whether the debugger shows the SQL information.|
