@@ -1,5 +1,6 @@
 ---
 title: "LogMessage Method"
+description: Describes the LogMessage method for the session data type in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020
@@ -46,7 +47,25 @@ Scope of emitting the telemetry.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For more information about using this method, see [Creating Custom Telemetry Events for Application Insights](../../devenv-instrument-application-for-telemetry-app-insights.md).
+
+## Example
+
+```
+trigger OnRun();
+var
+    CustDimension: Dictionary of [Text, Text];
+begin
+    CustDimension.Add('result', 'failed');
+    CustDimension.Add('reason', 'critical error in code');
+    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
+end;
+```
+
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

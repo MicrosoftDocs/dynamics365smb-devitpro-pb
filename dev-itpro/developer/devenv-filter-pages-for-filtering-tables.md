@@ -1,7 +1,7 @@
 ---
 title: "Creating Filter Pages for Filtering Tables"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,8 +20,8 @@ To create a filter page, you use AL code and the methods that are available for 
   
 ```  
 var
-    varFilterPageBuilder: FilterPageBuilder;
     varItem: Record Item;
+    varFilterPageBuilder: FilterPageBuilder;
 begin
     varFilterPageBuilder.AddTable('Customer Table', Database::Customer);
     varFilterPageBuilder.AddRecord('Item Table', varItem);

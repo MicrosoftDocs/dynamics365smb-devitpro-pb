@@ -55,6 +55,8 @@ The following table describes the settings in the `app.json` file:
 |internalsVisibleTo|No|Specifies a list of modules that have access to the objects that are marked as `Internal` using the **Access** property from the current module.<br> The syntax is `{   "appId": "d6c3f231-08d3-4681-996f-261c06500e1a", "name": "TheConsumer", "publisher": "Microsoft"}]`. For more information see [Access Property](properties/devenv-access-property.md) and [InternalEvent Attribute](methods/devenv-internal-attribute.md). **Note:** Using `internalsVisibleTo` in Business Central online will throw a warning from AppSourceCop and PTECop. `Access = Internal` is *not* designed as a security boundary, but for API development.|
 |propagateDependencies|No|Specifies whether the dependencies of this project should be propagated as direct dependencies of projects that depend on this one. Default is `false`. If set to `true` then any dependencies of the current package will be visible to consumers of the package. For example, if A depends on B that depends on C, by default, A will not be able to use types defined in C. If B has `"propagateDependencies" : "true"`, then A will be able to use types defined in C without taking a direct dependency.<br>**Note:** `propagateDependencies` applies to all dependencies, there is no option to exclude specific dependencies.|
 |preprocessorSymbols|No|Defines any symbols to use with preprocessor directives. The syntax is `"preprocessorSymbols": [ "DEBUG" ]`. For more information, see [Preprocessor Directives in AL](directives/devenv-directives-in-al.md).|
+|applicationInsightsKey|No|The instrumentation key of the Azure Application Insights resource for monitoring operations, for example, like app secrets retrieval by extensions. <br><br>For more information, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).|
+|keyVaultUrls|No|List of URLs of key vaults that the extension from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](devenv-app-key-vault-overview.md).|
 |suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example `"suppressWarnings": [ "AL0458" ]`.|
 
 ## <a name="Launchjson"></a>Launch.json file
@@ -84,6 +86,9 @@ The following table describes the settings in the `launch.json` file. The `launc
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 |attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
+|forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version.|
+|useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
+
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
@@ -115,3 +120,4 @@ The following table describes the settings in the `launch.json` file. The `launc
 [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[App Key Vaults](devenv-app-key-vault-overview.md)

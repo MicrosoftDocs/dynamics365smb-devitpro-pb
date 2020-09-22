@@ -61,6 +61,9 @@ The Designer works in the client itself allowing design of pages using a drag-an
 ## Compiling and deploying
 Extensions are compiled as .app package files. The .app package file can be deployed to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server. An .app package contains the various artifacts that deliver the new functionality to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] deployment as well as a manifest that specifies the name, publisher, version, and other attributes of the extension. For information about the manifest files, see [JSON Files](devenv-json-files.md).
 
+## Instrumenting your app with telemetry
+Business Central emits telemetry data for several operations that occur when extension code is run. You can configure your extension to send this data to a specific Application Insights resource on Microsoft Azure. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
+
 ## Submitting your app
 When all development and testing is done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to help facilitating the validation. For more information, see [Checklist for Submitting Your App](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to AppSource, you can enable the AppSourceCop code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
 
@@ -70,4 +73,6 @@ When all development and testing is done, you can submit your extension package 
 [Getting Started Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[XML Comments in Code](devenv-xml-comments.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
+[Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
