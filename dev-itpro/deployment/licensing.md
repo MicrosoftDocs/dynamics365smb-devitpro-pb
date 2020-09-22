@@ -42,7 +42,7 @@ In versions earlier than 2020 release wave 2 (version 17.0), entitlements are on
 
 However, partners that create and test their extensions using sandbox environments of that type could miss errors in their code that would be related to entitlements or access, so that those issues would not be found until they deployed their extensions to the production environments.  
 
-Also, you can explore such functionality by creating an evaluation company in either a production or a sandbox environment using the free evaluation subscription that is available from [https://dynamics.microsoft.com/en-us/business-central](https://dynamics.microsoft.com/en-us/business-central/overview).  Alternatively, you can use the **Business Central Premium - Trial** subscription that is available through the CSP program as described [here](customer-signup#premiumtrial). By using these subscription types, customers and partners can explore the capabilities included with the Premium subscription.  
+Also, you can explore such functionality by creating an evaluation company in either a production or a sandbox environment using the free evaluation subscription that is available from [https://dynamics.microsoft.com/en-us/business-central](https://dynamics.microsoft.com/en-us/business-central/overview).  Alternatively, you can use the **Business Central Premium - Trial** subscription that is available through the CSP program as described [here](customer-signup.md#premiumtrial). By using these subscription types, customers and partners can explore the capabilities included with the Premium subscription.  
 
 With 2020 release wave 2, the license checks for entitlements are now also enforced in the sandbox environments.  
 
