@@ -1,6 +1,6 @@
 ---
-title: Analyzing Long Running AL Methods Telemetry
-description: Learn about analyzing long running AL methods in Business Central.  
+title: Analyzing Long Running Operation (SQL Query) Telemetry
+description: Learn about analyzing long running operation (SQL Query) in Business Central.  
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -12,7 +12,7 @@ ms.date: 04/01/2020
 ms.author: jswymer
 ---
 
-# Analyzing Long Running AL Methods Telemetry
+# Analyzing Long Running Operation (SQL Query) Telemetry
 
 A SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource.
 
