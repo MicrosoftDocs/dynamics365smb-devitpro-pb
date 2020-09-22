@@ -587,7 +587,7 @@
 ## [Application](security/security-application.md)
 ## [Online](security/security-online.md)
 ## [On-Premises](security/security-onpremises.md)
-## [Privacy FAQ](security/privacyfaq.md)
+## [Privacy FAQ](security/PrivacyFAQ.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
