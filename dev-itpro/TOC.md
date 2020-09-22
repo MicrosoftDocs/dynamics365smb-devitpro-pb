@@ -228,6 +228,7 @@
 ### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
+## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
@@ -386,6 +387,9 @@
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [Working with AL Methods](developer/devenv-al-methods.md)
+### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
+#### [Region Directive](developer/directives/devenv-directive-region.md)
+#### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
 ### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [XML Comments in Code](developer/devenv-xml-comments.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)

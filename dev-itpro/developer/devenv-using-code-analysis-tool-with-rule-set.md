@@ -81,8 +81,10 @@ Changing the contents of the ruleset file will not be detected by the [!INCLUDE[
 <!-- - In the project settings file, make changes to one of the settings, such as **al.ruleSetPath**, and save it. You can then undo the changes. -->
 
 ## See also
+
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [Development in AL](devenv-dev-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

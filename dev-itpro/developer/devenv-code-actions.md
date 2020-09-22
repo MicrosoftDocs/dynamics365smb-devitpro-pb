@@ -21,7 +21,8 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] these code actions ar
 - Interface implementer.
 - Make method local.
 - Use parenthesis for method call.
-- Using `with` statements in code.
+- Fix explicit `with` statements.
+- Fix implicit with statements.
 
 ## To enable AL Code Actions
 
@@ -40,4 +41,5 @@ Alternatively:
 [AL Development Environment](devenv-reference-overview.md)  
 [AL Outline View](devenv-al-outline-view.md)  
 [AL Formatter](devenv-al-formatter.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 
