@@ -43,27 +43,27 @@ When customer administrators create users in Microsoft 365 Admin Center and assi
 
 ## Storage
 
-Storage capacity of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is represented by **Database** and **File**.  
+Storage capacity usage of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is represented by **Database** and **File** on the **Capacity** page.  
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] customers can use up to 80 GB of database storage capacity across all of their environments (production and sandbox), meaning that the sum of database capacity usage of all of their environments must not exceed 80 GB.  
 
-Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there is an option to purchase extra database capacity as an add-on to their existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] subscriptions via their reselling CSP partner.  Every add-on increases overall database capacity quota by 1 GB.  
+Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there is an option to purchase extra database capacity as an add-on to their existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] subscriptions through their reselling CSP partner. Every add-on increases overall database capacity quota by 1 GB.  
 
 Every additional production environment purchased by the customer also increases tenant-wide database capacity quota by 4 GB.  
 
 #### Storage usage by environment
 
-The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database and file storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product, which let's you see the distribution of data size across tables. 
+The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database and file storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which let's you see the distribution of data size across tables.
 
 > [!NOTE]
 > Only the environments running on version 17 (2020 release wave 2) and later are included in the database capacity calculations.  
 
-The **File** storage is calculated based on the size of the content of the following tables: 
+The **File usage** storage is calculated based on the size of the content of the following tables: 
 
 - Tenant Media 
 - Tenant Media Thumbnails 
 
-The content of the other tables is counted towards the Database storage.  
+The content of the other tables is counted towards the **Database usage** storage.  
 
 > [!IMPORTANT]
 > When you uninstall extensions, you have a choice of deleting or leaving the extension data in the database. If you decide not to delete the data when uninstalling extensions, this data will be counted in the overall database storage you use.  
