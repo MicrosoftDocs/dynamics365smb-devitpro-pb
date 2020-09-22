@@ -344,7 +344,7 @@ During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 535
 * **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 * **OnAfterUncoupleRecord** - Occurs after coupling is removed, and can be used to change data after uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnAfterUncoupleRecord. The event removes couplings to the contacts linked to the uncoupled customers and vendors.
 
-For more information about how to subscribe to events, see [Subscribing to Events]().
+For more information about how to subscribe to events, see [Subscribing to Events](/developer/devenv-subscribing-to-events.md).
 
 Be aware that custom uncoupling is running in background as it could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities and it might take significant time.
 
@@ -358,10 +358,8 @@ Be aware that custom uncoupling is running in background as it could modify [!IN
 >   if TableId = Database::"CDS Worker" then
 >     HasField := true;
 > end;
-
-```
+> ```
 ## Create default integration table mappings and field mappings
-
 For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **Employee**). There are two types of mapping:  
 
 - **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity.  
