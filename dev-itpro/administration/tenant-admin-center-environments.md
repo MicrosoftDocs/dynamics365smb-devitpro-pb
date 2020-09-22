@@ -157,7 +157,7 @@ Here are some areas where the environment name is used, which will be affected w
 
 The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Currently, the log includes the following operations: Renaming environments.
 
-Use this log to see which operations were created, when, and by whom. You can also access detailed error messages in this log, should any operation fail.  
+Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.  
 
 ## See also
 
