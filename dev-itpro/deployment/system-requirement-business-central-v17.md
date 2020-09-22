@@ -125,10 +125,7 @@ The following table shows the minimum system requirements for Automated Data Cap
 |||  
 |-----|-----|  
 |Additional software|<ul><li>MSXML version 6.0.</li><li>Telnet or Microsoft Windows HyperTerminal.</li><li>VT100 Plug-in for each computer on which you install ADCS.</li><li>Microsoft Loopback Adapter.</li></ul>|  
-|Additional information|<ul><li>HyperTerminal is no longer included with Windows. For more information, see [What happened to HyperTerminal?](https://go.microsoft.com/fwlink/?LinkId=222571) in the Windows Help.</li><li>VT100 Plug-in acts as a virtual Telnet server. </li></ul>| 
-
-> [!NOTE]
-> Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1, the VT100 Plug-in for ADCS is no longer included on installation media. You can use VT100 Plug-in from previous releases. However, remember to test that it works properly. 
+|Additional information|<ul><li>VT100 Plug-in acts as a virtual Telnet server.</li><li>Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1, the VT100 Plug-in for ADCS is no longer included on installation media. You can use VT100 Plug-in from previous releases. However, remember to test that it works properly.</li><li> HyperTerminal is no longer included with Windows.</li></ul>|  
 
 ## <a name="BusInboxOutlook"></a>Business Inbox in Microsoft Outlook
 
