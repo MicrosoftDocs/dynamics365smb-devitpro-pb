@@ -25,7 +25,7 @@ AssertError must be used only in test codeunits, because it creates its own tran
 This can lead to unexpected behaviors when used in production code.
 
 For more information about the usage of AssertError, see:
-- [AssertError statements](../devenv-al-simple-statements#asserterror-statements.md)
+- [AssertError statements](../devenv-al-simple-statements.md#asserterror-statements)
 - [Testing the Application Overview](../devenv-testing-application.md)
 - [TransactionModel Property](../properties/devenv-transactionmodel-property.md)
 
