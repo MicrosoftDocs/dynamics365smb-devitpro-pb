@@ -46,5 +46,5 @@ Specifies whether fields where the field type on the source record do not match 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)
