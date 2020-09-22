@@ -27,28 +27,28 @@ There are multiple reasons that affect the time it takes SQL queries to run. For
 
 This table explains the columns included in long running query events emitted to Application Insights. Bold text indicates that the value of the columns is a constant. Some columns are standard for Application Insights. These columns are indicated by *Application Insights*.
 
-|Column|Description or value||
-|---------|-----|-----------|
-|timestamp|Specifies the date and time that the long running query event occurred, such as 2019-08-20T07:23:07.9996696Z||
-|message|Version 16.1 and later:<br />**Operation exceeded time threshold (SQL query)**<br /><br />Before version 16.1:<br />**Action took longer than expected**||
-|severityLevel|**2** (This level indicates a warning. Long running queries are always recorded as warnings)||
-|itemType|**trace**||
-|customDimensions|(see table that follows)||
-|operation_Name|**Long Running Operation (SQL Query)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.||
-|operation_Id|Specifies the GUID assigned to the client operation. An operation is created whenever the user does something in the client, such as selecting an action.||
-|operation_ParentId|Currently this column is the same as the operation_Id. This behavior might change in a future release.||
-|session_Id|Specifies the GUID of the client session. When a client makes a connection to the [!INCLUDE[server](../developer/includes/server.md)] instance, a session is created and assigned an ID. ||
-|client_Type|*Application Insights*||
-|client_IP|*Application Insights*||
-|client_City|*Application Insights*||
-|client_StateOrProvince|*Application Insights*||
-|client_CountryOrRegion|*Application Insights*||
-|cloud_RoleName|Specifies the display name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. For on-premises, this value is the same as the cloud_RoleInstance.  ||
-|cloud_RoleInstance|Specifies the name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. ||
-|appId|*Application Insights*||
-|appName|*Application Insights*||
-|iKey|*Application Insights*||
-|sdkVersion|*Application Insights*||
+|Column|Description or value|
+|---------|-----|
+|timestamp|Specifies the date and time that the long running query event occurred, such as 2019-08-20T07:23:07.9996696Z|
+|message|Version 16.1 and later:<br />**Operation exceeded time threshold (SQL query)**<br /><br />Before version 16.1:<br />**Action took longer than expected**|
+|severityLevel|**2** (This level indicates a warning. Long running queries are always recorded as warnings)|
+|itemType|**trace**|
+|customDimensions|(see table that follows)|
+|operation_Name|**Long Running Operation (SQL Query)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|operation_Id|Specifies the GUID assigned to the client operation. An operation is created whenever the user does something in the client, such as selecting an action.|
+|operation_ParentId|Currently this column is the same as the operation_Id. This behavior might change in a future release.|
+|session_Id|Specifies the GUID of the client session. When a client makes a connection to the [!INCLUDE[server](../developer/includes/server.md)] instance, a session is created and assigned an ID. |
+|client_Type|*Application Insights*|
+|client_IP|*Application Insights*|
+|client_City|*Application Insights*|
+|client_StateOrProvince|*Application Insights*|
+|client_CountryOrRegion|*Application Insights*|
+|cloud_RoleName|Specifies the display name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. For on-premises, this value is the same as the cloud_RoleInstance.  |
+|cloud_RoleInstance|Specifies the name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. |
+|appId|*Application Insights*|
+|appName|*Application Insights*|
+|iKey|*Application Insights*|
+|sdkVersion|*Application Insights*|
 
 ## CustomDimensions
 
@@ -66,30 +66,31 @@ This table explains the columns included in long running query events emitted to
 
 This table describes the different dimensions of a **Long Running Operation (SQL Query)** operation.
 
-|Column (key)|Description or value||
-|---------|-----|-----------|
-|extensionVersion|Specifies the version of the extension.||
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
+|Column (key)|Description or value|
+|---------|-----|
+|extensionVersion|Specifies the version of the extension.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. |
 |componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
 |environmentType|Specifies the environment type of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
 |environmentName|Specifies the environment name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
-|extensionName|Specifies the name of the extension.||
-|alObjectType|The type of the AL object that executed the SQL statement||
-|alObjectName|The name of the AL object that executed the SQL statement||
-|alStackTrace|The stack trace in AL.||
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
-|extensionId|Specifies the AppID of the extension.||
+|extensionName|Specifies the name of the extension.|
+|alObjectType|The type of the AL object that executed the SQL statement|
+|alObjectName|The name of the AL object that executed the SQL statement|
+|alStackTrace|The stack trace in AL.|
+|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. |
+|extensionId|Specifies the AppID of the extension.|
 |eventId|**RT0005**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
-|clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
-|alObjectId|The type of the AL object that executed the SQL statement.||
-|component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.||
-|executionTime|Specifies the time that it took to execute the SQL statement**. The value has the format hh:mm:ss.sssssss.||
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|alObjectId|The type of the AL object that executed the SQL statement.|
+|component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.|
+|executionTime|Specifies the time that it took to execute the SQL statement**. The value has the format hh:mm:ss.sssssss.|
 |longRunningThreshold|Specifies the amount of time that an SQL query can run before a warning event is recorded.  The value has the format hh:mm:ss.sssssss. <br /><br >This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting called SqlLongRunningThreshold. |
-|sqlStatement|Specifies the SQL statement that was executed for the long running query. The value is limited to 8192 characters. If the value exceeds 8192 characters, it will be truncated in manner that still provides the most pertinent information.||
+|sqlStatement|Specifies the SQL statement that was executed for the long running query. The value is limited to 8192 characters. If the value exceeds 8192 characters, it will be truncated in manner that still provides the most pertinent information.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 
 ** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
+
 ## Example
 
 The following code snippet shows an example of the CustomDimensions.
