@@ -22,7 +22,7 @@ Only use AssertError in Test Codeunits.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 AssertError must be used only in test codeunits, because it creates its own transaction scope. 
-This can lead to unexepcted behaviors when used in production code.
+This can lead to unexpected behaviors when used in production code.
 
 For more information about the usage of AssertError, see:
 - [AssertError statements](../devenv-al-simple-statements#asserterror-statements.md)
