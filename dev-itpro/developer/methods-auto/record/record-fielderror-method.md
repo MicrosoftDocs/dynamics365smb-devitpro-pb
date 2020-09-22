@@ -52,7 +52,7 @@ The following guidelines for error messages are recommended:
 - Note that a period is automatically inserted at the end of a FieldError.  
 - Use a label data type for the *Text* parameter.  
   
-For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Functions](Progress-Windows--MESSAGE--ERROR--and-CONFIRM-Functions.md).  -->
+For more information, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).
   
 ### Example 1
  

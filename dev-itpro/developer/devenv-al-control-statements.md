@@ -458,7 +458,7 @@ repeat
 
 #### Example  
 
-```  
+```AL
 if x < y then begin  
     repeat  
         x := x + 1;  
@@ -485,7 +485,7 @@ var
     Count : Integer;
     Customer : Record Customer;  
 ```  
-The FIND method finds the first entry in the table. Each time NEXT is called, it steps one record forward. When NEXT equals 0, there are no more entries in the table. The loop is exited, and a message displays how many entries were found.  
+The `find` method finds the first entry in the table. Each time NEXT is called, it steps one record forward. When NEXT equals 0, there are no more entries in the table. The loop is exited, and a message displays how many entries were found.  
 
 ### Exit statement  
 
@@ -554,4 +554,5 @@ var
 
 [Programming in AL](devenv-programming-in-al.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [AL Essential Methods](devenv-essential-al-methods.md)
