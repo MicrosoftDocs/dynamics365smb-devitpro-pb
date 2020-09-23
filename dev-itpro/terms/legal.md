@@ -15,7 +15,7 @@ This page provides links to legal information for the business software specifie
 
 ## Micrososft Online Serice Terms (OST)
 
-- [Online Service Tesrms(OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products)
+- [Online Service Terms(OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products)
 
 ## Microsoft AL Language
 
