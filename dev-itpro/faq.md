@@ -97,7 +97,7 @@ When you exchange data through the API, you might have to whitelist the IP addre
 
   - Australia East
   - West Europe
-  - East US 2
+  - East US
 
   > [!IMPORTANT]
   > Data routed through `https://api.businesscentral.dynamics.com` is not *stored* in these regions. The data *transits* through them.  
