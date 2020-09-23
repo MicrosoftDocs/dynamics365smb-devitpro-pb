@@ -43,13 +43,13 @@ Complete these steps to register an application in your Azure AD tenant for serv
     Follow the general guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
 
     When you add an application to an Azure AD tenant, you must specify the following information:
-    
+
     |Setting|Description|
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
     |Redirect URI|Leave this option empty.|
-    
+
     When completed, an **Overview** displays in the portal for the new application.
 
 3. Create a client secret for the registered application as follows:
@@ -83,7 +83,7 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
     The **AAD Application Card** opens.
 
-3. In the **Client Id** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
+3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
 
 4. Fill in the **Description** field.
 
@@ -91,10 +91,10 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 6. Assign permissions to objects as needed.
 
-   For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). 
-   
+   For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+
    > [!TIP]
-   > The system permission set and user group called **Dynamics 365 Automation** provide access to most typical objects used with automation. 
+   > The system permission set and user group called **Dynamics 365 Automation** provide access to most typical objects used with automation.
 
 7. Select **Grant Consent** and follow the wizard to the complete the setup.
 
@@ -105,4 +105,3 @@ Complete these steps to set up the Azure AD application for service-to-service a
 ## See Also
 
 [Automation API overview](dynamics-microsoft-automation-overview.md)  
-
