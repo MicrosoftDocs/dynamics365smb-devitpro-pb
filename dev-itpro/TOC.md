@@ -136,7 +136,7 @@
 ### [Managing the Migration to the Cloud](administration/migration-management.md)
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
-### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
+### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
