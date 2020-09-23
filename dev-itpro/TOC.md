@@ -122,6 +122,7 @@
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 ### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
+### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 ## Onboard your customers
 ### [Trials and Sign-ups](deployment/customer-signup.md)
 <!-- ### Do cool demos -->
