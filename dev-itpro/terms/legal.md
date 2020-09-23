@@ -13,6 +13,10 @@ ms.service: "dynamics365-business-central"
 
 This page provides links to legal information for the business software specified below.
 
+## Micrososft Online Serice Terms(OST)
+
+- [Online Service Tesrms(OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products)
+
 ## Microsoft AL Language
 
 - [AL Lanuage - Terms of Use](https://go.microsoft.com/fwlink/?linkid=2009120)
