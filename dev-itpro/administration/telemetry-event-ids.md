@@ -35,6 +35,7 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 | RT0015 | Security | [App Key Vault initialization failed](telemetry-extension-key-vault-trace.md#initializedfailed) |
 | RT0016 | Security | [App Key Vault secret retrieval succeeded from key vault '{keyVaultUri}'](telemetry-extension-key-vault-trace.md#retrievedsuccess) |
 | RT0017 | Security | [App Key Vault secret retrieval failed from key vault: '{keyVaultUri}'](telemetry-extension-key-vault-trace.md#retrievedfailed) |
+| RT0018 | Performance | [Operation exceeded time threshold (AL method)](telemetry-al-method-trace.md) |
 | RT0019 | Outgoing Web service requests  | [Web Service Called (Outgoing): {endpoint}](telemetry-webservices-outgoing-trace.md) |
 
 
