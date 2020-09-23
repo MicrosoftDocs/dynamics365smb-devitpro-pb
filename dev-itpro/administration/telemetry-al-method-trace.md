@@ -19,7 +19,7 @@ ms.author: jswymer
 The Business Central server will emit telemetry about the execution time of long running AL methods, excluding the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 
 > [!NOTE]
-> Currently this signal isn't enabled for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, it's enabled on a case-by-case basis by the service.
+> Currently this signal isn't enabled for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, it's enabled with a specific threshold on a case-by-case basis by the service.
 
 ## General dimensions
 
