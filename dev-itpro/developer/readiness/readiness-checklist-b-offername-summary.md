@@ -7,7 +7,7 @@ ms.date: 06/09/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Offer Name 

@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: dynamics365-business-central
 ---
 # Creating Tenants from Companies in Business Central
 If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution includes multiple companies in one database, you can choose to migrate to multitenancy where the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] companies become tenants of your application database.  

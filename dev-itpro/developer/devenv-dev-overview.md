@@ -13,6 +13,7 @@ ms.author: solsen
 ---
 
 # Development in AL
+
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This section explains how you can develop extensions using the development environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 
 If you are new to building extensions, we recommend that you read this document to get an understanding of the basics and terms you will encounter while working. Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
@@ -21,6 +22,7 @@ If you are new to building extensions, we recommend that you read this document 
 > If you are looking for the C/SIDE documentation, visit our [Dynamics NAV library](/dynamics-nav/development).
 
 ## Understanding objects in the development environment
+
 All functionality in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is coded in objects. The extension model is object-based; you create new objects, and extend existing objects depending on what you want your extension to do. Table objects define the table schema that holds data, page objects represent the pages seen in the user interface and codeunits contain code for logical calculations and for the application behavior. These objects are stored as code, known as AL code, and are saved in files with the `.al` file extension. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality which allows you to work with multiple AL folders within one workspace. 
 For more information on how to group a set of disparate project folders into one workspace, see [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md).
 
