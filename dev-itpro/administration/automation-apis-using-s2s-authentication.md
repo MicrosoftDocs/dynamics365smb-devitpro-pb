@@ -57,7 +57,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     1. Select **Certificates & secrets** > **New client secret**.
     2. Add a description, select a duration, and select **Add**.
 
-    For the latest guidelines about adding client secrets in Azure AD, see [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
+    For the latest guidelines about adding client secrets in Azure AD, see [Add credentials ](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
 4. Grant the registered application **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API as follows:
 
@@ -71,7 +71,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |---------------------|----|-----------|
     |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
 
-    For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
+    For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
 
 ## Task 2: Set up the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
