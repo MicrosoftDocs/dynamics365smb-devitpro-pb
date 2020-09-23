@@ -28,6 +28,10 @@ If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE
 
 <!-- - Dynamics SL 2018 CU 1-->
 
+### System requirements
+
+To connect to the cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions.  
+
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
 
 Data is replicated using an Azure service called Azure Data Factory (ADF). ADF is a service that is always running within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online service manager. When you have connected to the intelligent cloud, a data pipeline is created in the ADF service so that data can flow from your on-premises solution to your Business Central online tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and manages the communication between the cloud services and your on-premises data without opening any ports or firewalls.  

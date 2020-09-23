@@ -17,17 +17,20 @@ ms.author: edupont
 
 # Running the Cloud Migration Tool
 
-Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online by running the cloud migration tool.  
+Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online by running the **Cloud Migration Setup** assisted setup that runs the cloud migration tool.  
 
-The cloud migration tool in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] supports migration from specific versions of specific software. For more information, see the following articles:
+The cloud migration tool supports migration from specific versions of specific software. For more information, see the following articles:
 
 * [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 * [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 * [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 
-The same tool can also be used to set up a connection to the intelligent cloud but still remain on-premises. For the list of on-premises solutions that currently supported for connecting to the intelligent cloud, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
+Use the same assisted setup to set up a connection to the intelligent cloud but still remain on-premises. For the list of on-premises solutions that currently supported for connecting to the intelligent cloud, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
 
 In this article, you're working in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant and connecting it to your on-premises database. Either because you are migrating from on-premises to online, or because you are connecting to the intelligent cloud.  
+
+> [!TIP]
+> In migration scenarios, we recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, you can log into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company.
 
 ## Setting up your connection using the cloud migration tool
 
@@ -70,24 +73,25 @@ The assisted setup guide consists of up to six pages that take you through the p
     |---------|---------|
     |*SQL Connection* |**SQL Server**, which is your locally installed SQL Server instance, or **Azure SQL**.|
     |*SQL Connection string*|You must specify the connection string to your SQL Server. For more information, see [the SQL Server blog](https://docs.microsoft.com/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string). The following snippets illustrate a couple connection strings with different formats: </br>`Server={SQL Server Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`</br></br>`Server={SQL Server Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`</br></br>The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.|
-    |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your Business Central online tenant. </br></br>If you are a hosting partner, you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new pipeline will be created in the Azure service. This should take less than a minute to complete.|
+    |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your Business Central online tenant. The integration runtime must be running on the machine that holds the SQL Server database. If you want to test your SQL string, open the **Microsoft Integration Runtime Configuration Manager**, and then choose the **Diagnostics** menu option. From there, you can test to see if the connection is good. </br></br>If you are a hosting partner, you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new pipeline will be created in the Azure service. This should take less than a minute to complete. </br></br>For more information, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).|
 
-4. Self-Hosted Integration Runtime (SHIR)
-
-    This is the service will allow access to the Azure replication services to your on-premises SQL Database during the migration process. Follow the instructions on this page to install the Self-Hosted Integration Service (SHIR) to a local machine.  
-
-5. Company Selection
+4. Company Selection
 
     You will be provided with a list of companies from your on-premises solution, or source. Select the companies you would like to migrate data for. If the company does not exist in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant, it will be automatically created for you.  
 
     > [!NOTE]
     > This process may take several minutes depending on the number of companies that need to be created.
 
-6. Enable & Scheduling Migration
+5. Enable & Scheduling Migration
 
-    The final page in the wizard allows you to enable the migration process and create a schedule for when the data migration should occur. These settings are also available within your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant on the **Cloud Migration Management** page. You have the option to schedule migrations daily or weekly. We recommend that you schedule your data migration for off-peak business hours.
+    The final page in the wizard allows you to enable the migration process and create a schedule for when the data migration should occur. These settings are also available within your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant on the **Cloud Migration Management** page. You have the option to schedule migrations daily or weekly.  
 
-If you are migrating data, you end the migration by disabling it in the **Cloud Migration Setup** page. If you are connecting to the intelligent cloud, you can adjust the migration schedule.  
+    > [!TIP]
+    > We recommend that you schedule your data migration for off-peak business hours since it can take many hours to run, depending on the amount of data.
+    >
+    > We also recommend that you make sure that all users are logged out of both the source company and the target company.
+
+If you are migrating data, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This is an important step, because each time someone runs the migration, outstanding documents for vendors and customers, general ledger account numbers, inventory items, and any other changes made in the target company in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are overwritten. If you are connecting to the intelligent cloud, you can adjust the migration schedule.  
 
 > [!NOTE]  
 >The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
@@ -121,10 +125,6 @@ Users that are reassigned to the Intelligent Cloud user group will have access t
 ### Extensions
 
 It is highly recommended that you test the impact of any extension in a sandbox environment before having it installed in your production [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to help avoid any data failures or untended consequences.  
-
-## System requirements
-
-To connect to the cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions. For more information, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
 
 ## See Also
 

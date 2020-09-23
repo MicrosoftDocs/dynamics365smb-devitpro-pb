@@ -17,7 +17,7 @@ ms.author: edupont
 
 # Migrate to Business Central Online from Dynamics GP
 
-The **Cloud Migration Management** assisted setup guide in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 on SQL Server 2012 and later versions of Dynamics GP and SQL Server.  
+An assisted setup guide in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 on SQL Server 2012 and later versions of Dynamics GP and SQL Server.  
 
 > [!IMPORTANT]
 > Migrating from Dynamics GP using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets: United States, Canada, United Kingdom, Australia.
@@ -88,11 +88,11 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     This data can be used in Power BI reports and Power Apps. In Business Central online, the data is included in the SmartList views in the Customers, Vendors, and Items lists. Technically, the data is stored in table extensions.
 6. Checkbooks and outstanding transactions in Bank Reconciliation. We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as we will bring over transactions that have not been reconciled during the migration process.  
 
-## Diagnostic Run within the Dynamics GP migration tool
+## Diagnostics run
 
-We have enhanced the Diagnostic run to do more data validation/verification before the Migration is run so a customer can decrease the chances of a failed migration.
+In the **Cloud Migration Management** page, you can create a diagnostics run to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.
 
-With field length maximum differences between GP and Business Central we want to catch and display warnings. We check item Numbers to look for duplicates based on the character limit of 20. We also look to make sure there are no blank posting accounts that are needed for posting of transactions with the migration.
+The maximum field length is different in Dynamics GP (30) and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] (20), and the diagnostics run checks for issues and shows warnings. The tool also checks item numbers to look for duplicates based on the character limit, and it checks to make sure there are no blank posting accounts that are needed for posting of transactions with the migration.
 
 Here is an example of what you might see when you run a diagnostic run:
 
