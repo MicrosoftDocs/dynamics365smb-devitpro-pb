@@ -16,10 +16,12 @@ ms.author: jswymer
 
 [!INCLUDE[prodshort](../includes/2020_releasewave2.md)]
 
-The Business Central server will emit telemetry about the execution time of long running AL methods. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
+The Business Central server will emit telemetry about the execution time of long running AL methods, excluding the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 
+<!--
 > [!NOTE]
 > In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, the long running AL method threshold isn't configurable. The threshold is *tbd*.
+-->
 
 ## General dimensions
 
