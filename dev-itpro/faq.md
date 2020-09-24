@@ -88,7 +88,7 @@ If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md
 
 ## Which IP addresses or ranges does my environment's API use?
 
-When you exchange data through the API, you might have to whitelist the IP addresses. The addresses depend on the direction of the call.
+When you exchange data through the API, you might have to safe list the IP addresses. The addresses depend on the direction of the call.
 
 - Inbound
 
