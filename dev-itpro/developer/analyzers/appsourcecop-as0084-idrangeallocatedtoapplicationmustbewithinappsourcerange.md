@@ -68,6 +68,7 @@ The `app.json` file of the extension:
   ]
 }
 ```
+The ID range specified is contained in the range allowed for AppSource applications. 
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  

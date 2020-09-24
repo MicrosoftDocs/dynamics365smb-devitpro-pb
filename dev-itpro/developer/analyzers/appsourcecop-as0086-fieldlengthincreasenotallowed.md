@@ -29,8 +29,8 @@ The validation of the length of table fields was previously done with [AS0004](a
 
 ## How to fix this diagnostic
 
-Reverting the change will fix this diagnostic. If increasing the length of the field is required, the recommended approach is to mark it as [Obsolete Pending](../properties/devenv-obsoletestate-property.md) and introduce a new field with the desired length.
-Once all dependent extensions have uptaken the new field, you can mark the field as [Obsolete Removed](../properties/devenv-obsoletestate-property.md).
+Reverting the change will fix this diagnostic. If increasing the length of the field is required, the recommended approach is to mark the field as [Obsolete Pending](../properties/devenv-obsoletestate-property.md) and introduce a new field with the desired length.
+Once all dependent extensions have uptaken the new field, you can mark the the original one as [Obsolete Removed](../properties/devenv-obsoletestate-property.md).
 
 ## Code example triggering the rule
 
