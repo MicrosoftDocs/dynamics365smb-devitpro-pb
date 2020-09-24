@@ -241,7 +241,9 @@
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### [Partial Records](developer/devenv-partial-records.md)
+### Partial Records
+#### [Using Partial Records](developer/devenv-partial-records.md)
+#### [FAQ](developer/devenv-partial-records-faq.md)
 ### Migrating Tables and Fields Between Extensions
 #### [Overview](developer/devenv-migrate-table-fields.md)
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)

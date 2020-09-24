@@ -15,7 +15,7 @@ author: jswymer
 
 [!INCLUDE[d365fin_long_md](../includes/2020_releasewave2.md)]
 
-The partial records capability in Business Central allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports and OData pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
+The partial records capability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports and OData pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
 
 Accessing a data source from AL code is typically done by using the methods like GET, FIND, NEXT, and so on. Without using partial records, the runtime loads all normal fields when accessing the data source. Using the partial records API, you can now add code that loads only a selected set of fields.
 
@@ -30,14 +30,12 @@ To accommodate partial record loading, the following methods are available on bo
 |SetLoadFields|Specifies a set of fields to be initially loaded when the record is retrieved from its data source. A call to this method will overwrite any fields that were previously set to load.|[Record.SetLoadFields](methods-auto/record/record-setloadfields-method.md)<br /><br />[RecordRef.SetLoadFields](methods-auto/recordref/recordref-setloadfields-method.md)|
 |AddLoadFields|Adds fields to the current set of fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to this method won't overwrite fields that were previously selected for loading.|[Record.AddLoadFields](methods-auto/record/record-addloadfields-method.md)<br /><br />[RecordRef.AddLoadFields](methods-auto/recordref/recordref-addloadfields-method.md)|
 
-
 **Current load methods**
 
 |Method|Description|See more|
 |------|-----------|--------|
 |AreFieldsLoaded|Checks whether the specified fields are all initially loaded.|[Record.AreFieldsLoaded](methods-auto/record/record-arefieldsloaded-method.md)<br /><br />[RecordRef.AreFieldsLoaded](methods-auto/recordref/recordref-arefieldsloaded-method.md)|
 |LoadFields|Accesses the table's corresponding data source to load the specified fields.|[Record.LoadFields](methods-auto/record/record-loadfields-method.md)<br /><br />[RecordRef.LoadFields](methods-auto/recordref/recordref-loadfields-method.md)|
-
 
 ## Example
 
@@ -131,51 +129,8 @@ There are a few options to remedy this situation:
 - Call ADDLOADFIELDS(fieldnames) on the original record before passing by value.
 - Before calling FIND, GET, NEXT, and so on, use the SETLOADFIELDS(fieldnames) to set all fields needed for load.
 
-## FAQ
-
-### Do I need to change any code to keep my solution functional? 
-
-No. If a field that's not selected for loading is accessed, the data will be fetched automatically for the current record. The field will then be selected for loading on future requests by using this record instance. However, you may still get the message *Record has been modified by another user*, like you could before. But now, the message can also appear in read-only scenarios where the record isn't locked. 
-
-### Where is "Partial Records" applied? To all records instances?
-
-Currently, partial records capability is only used on report data items and web service pages. The behavior for all other record instances is as before, that is, all fields will be loaded. AL developers are, however, able to use it in their own code to improve performance in looping code. 
-
-### What happens when accessing fields not selected for load? 
-
-The platform will load any fields not selected for loading when accessed, making it seem like the field was already loaded. 
-
-### What happens if the record has been modified or deleted in-between the original load and JIT load? 
-
-The platform will validate that either the record is unchanged, or no change has been made to read fields. 
-
-### What is a JIT load? 
-
-The platform determines that a field, which isn't currently loaded, is needed. Then it loads the field. 
-
-### Can I optimize my code, so that I can avoid an extra database call to load my field? 
-
-Yes. You can add your field to the list of fields selected for loading, using the method AddLoadFields 
-
-### Which fields can be selected for not being loaded?
-
-Any field that isn't a FlowField, FlowFilter, Primary Key, Timestamp, SystemId, Audit Fields, or Blobs. 
-
-### How does partial records interact with table extensions? 
-
-When no fields from a table extension are selected for loading, then table extension data isn't joined, which saves time.  
-
-### What is the performance overhead of determining the fields necessary for a record? 
-
-Currently, for reports a calculation takes place at compile time and once per data item instance.  For OData and API pages, the calculation takes place at compile time and once per request segment. 
-
-Compared to the time it takes to fetch data, the overhead is insignificant. 
-
-### Can I disable partial records in certain scenarios? 
-
-- With [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, you can turn it by using **Enable Partial Records** setting of [!INCLUDE [server](includes/server.md)]. 
-
-- With [!INCLUDE [prodshort](includes/prodshort.md)] online, you can set the field selected for loading by calling the SetLoadFields method with no fields, which will revert it to previous behavior.
-
 ## See Also
-[Classifying Data](devenv-classifying-data.md)
+
+[Performance Articles For Developers](../performance/performance-developer.md)  
+[Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  
+[Configuring Business Central Server](../administration/configure-server-instance.md)  
