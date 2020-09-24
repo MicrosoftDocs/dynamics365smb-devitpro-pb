@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Legal Resources for Business Central On-Premises
 
-This page provides links to legal information for the business software specified below.
+This page provides links to legal information for Business Central on-premises.
 
 
 ## Microsoft Online Service Terms (OST)
