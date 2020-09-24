@@ -184,8 +184,9 @@ Read more about query objects here:
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
 
+### <a name="partialrecords"></a>Pattern - Use partial records when looping over data 
 
-
+tbd
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
 If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
