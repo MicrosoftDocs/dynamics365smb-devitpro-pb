@@ -1,5 +1,6 @@
 ---
 title: "Loading Partial Records"
+description: Describes the partial records capability in Business Central
 ms.author: jswymer
 ms.custom: na
 ms.date: 08/06/2020
