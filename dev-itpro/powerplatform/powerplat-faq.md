@@ -30,7 +30,7 @@ Yes. The virtual entities are all generated in the MicrosoftBusinessCentralERPVE
 
 ### Which entities from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do users see in the catalog in Common Data Service?
 
-Generally, users see all entities where **IsPublic** is set to **Yes**. These entities are the same entities that are currently exposed as API Pages.
+Generally, users see all entities exposed as API Pages with the exception of Microsoft legacy API pages: beta and v1.0.
 
 ### Do all Microsoft Power Platform users have to be users in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]?
 
