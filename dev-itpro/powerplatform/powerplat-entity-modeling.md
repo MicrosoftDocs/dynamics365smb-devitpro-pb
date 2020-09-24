@@ -41,7 +41,6 @@ This rest of this section describes supported and unsupported data types. For mo
 | UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as a null value in Common Data Service. |
 | Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as an empty value in Common Data Service. |
 | Enum                                | Picklist<br><br>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service are not guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], because these enums do not have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. <!-- @lukasz - how do we handle enums?-->| 
-| Blob | Multiline | 
 
 Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as the *decimal* data type in Common Data Service. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
 
@@ -62,17 +61,13 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], entities uses the 
 
 ## Primary field
 
-<!-- @lukasz, please look through this section. How do we set the primary field. We use displayName when possible. For ducuments we use No. But, what do we use when displayName/No. is not there? -->
-
 In Common Data Service, each entity must have a primary field. This field must be a single field of the string type. The primary field is used in Common Data Service in the following scenarios:
 
 - The default views that are created for an entity include the primary field.
 - The quick view form for an entity includes the primary field.
 - A lookup to another entity is added to a page and shows the data from the primary field.
 
-Based on this use of the primary field in Common Data Service, the primary field for a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is designed to use the entity key of the corresponding entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
-
-Because the primary field in Common Data Service is expected to have only one field of the string type, whereas the entity key in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
+The primary field for a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is designed to use **displayname** field on entity if present. If this field is not present the first string fields is chosen as the primary field.
 
 ## Relations
 
@@ -81,17 +76,18 @@ Because the primary field in Common Data Service is expected to have only one fi
 
 Relations in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-For example, in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service.
+For example, in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **dyn365bc\_\<source entity name\>\_\<target_entity name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service. It is required that the foreign key is a SystemId(GUID). If the foreign key is of a different type then rge  relation will not be generated.
 
-The external name of this relationship uses the naming convention **FK\_\<relation name\>**. The external name is used to determine the relation in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] when the query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is built.
+The external name of this relationship uses the naming convention **\<relation name\>**. The external name is used to determine the relation in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] when the query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is built.
 
-When a relationship is generated for a virtual entity in Common Data Service, a new field of the lookup type is also added to the source entity. In the preceding example, when the relationship is created, a new lookup field that uses the naming convention **mserp\_fk\_\<target\_entity\>\_id** is added to source entity Entity A. Because there can be several relations in an entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the same number of lookup fields (one per related entity) will be created in the source virtual entity. When this lookup field is added to a page or a view, it will show the primary field value from the related entity.
+When a relationship is generated for a virtual entity in Common Data Service, a new field of the lookup type is also added to the source entity. In the preceding example, when the relationship is created, a new lookup field that uses the naming convention **dyn365bc\_\<target\_entity\>\_id** is added to source entity Entity A. Because there can be several relations in an entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the same number of lookup fields (one per related entity) will be created in the source virtual entity. When this lookup field is added to a page or a view, it will show the primary field value from the related entity.
 
 A relationship in the virtual entity in Common Data Service will be generated only if the related entity in the relation already exists as a virtual entity in Common Data Service. In the preceding example, if Entity B does not exist as a virtual entity in Common Data Service, the relation to Entity B will not be created in Entity A when Entity A is generated as a virtual entity. This relation will be added to Entity A only when Entity B is generated as a virtual entity. Therefore, when a virtual entity is generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], validations are done to ensure that only relationships that can be complete and functional are generated in the virtual entity that is being generated.
 
 In summary, a relationship to another [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity might not exist in the virtual entity for either of the following reasons:
 
 - The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity that is participating in the relationship does not exist as a virtual entity.
+- The foreign key is not SystemId(GUID)
 - The length of the name of the relationship exceeds 120 characters.
 
 Note that if an error is encountered when any part of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity is generated in Common Data Service, the virtual entity will not be created at all. If relationships do not exist for either of the preceding reasons, the situation is not considered an error.
@@ -109,47 +105,9 @@ In the preceding example, the GUID of the related entity is the entity key of En
 Therefore, in effect, the entity name is the only information that is used in a relation that comes from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity is not used at all.
 
 
-<!-- ### Virtual entity–to–native entity relationship
-@lukasz scenario description in here is good.
+### Virtual entity–to–native entity relationship
+The relationship between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity and native entity is not supported in the preview version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity solution.
 
-As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Common Data Service entity (including in native entity–to–native entity relationships) or in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity (including in virtual entity–to–virtual entity relationships). However, consider an example where you want to show sales orders from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Account A in Common Data Service. The query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Common Data Service, because the sales orders must be filtered for a specific account in Common Data Service. However, because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not have any information about the GUID of the entity in Common Data Service, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] understands.
-
-Therefore, how can the GUID of the accounts entity in Common Data Service be replaced with fields that are in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], in such a way that the query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will return the correct list of sales orders?
-
-To solve this issue and enable a rich set of scenarios that allows for virtual entity–to–native entity relationships, relationships can be added to this type of entity. The relation will appear as a relationship when the virtual entity is synced.
-
-In the above example, the relationship between the SalesOrderHeader virtual entity and the Account native entity should be based on the Account Number and Company fields. By default, the native account entity in Common Data Service does not have a company field. For this example, we will add a company lookup field named new_testcompany to the native Account entity.
-
-Next, we add a new key named new_accountcompanyidx, which specifies that (accountnumber, new_testcompany) together represent a unique row in the account entity in Common Data Service.
-
-The next step is to define this relationship in X++. The following example shows sample X++ code. The names of the fields, index, and mapping information should match the names of the fields and indexes created in Common Data Service. In this example, a relationship named “synthaccount” will be created between the virtual SalesorderHeader entity and the native account entity in Common Data Service. The mapped fields make up the new_accountcompanyidx index. The display name for the relationship will be @SYS11307. Note the backslash at the start of the display name. This ensures that the label defines the relationship, so that it is appropriately translated.
-
-The field mapping indicates which field on the virtual entity maps to the field on the native entity. In the field mapping, the key is the virtual entity field, and the value is the native entity field.
-
-```x++
-[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', 'accountcompanyidx', '\@SYS11307')]
-    public static Map syntheticAccountRelationship()
-    {
-        Map fieldMapping = new Map(Types::String, Types::String);
-
-        // Assumes the Common Data Service account entity has a key on [msdyn_accountnumber, msdyn_companyid]
-        // Also assumes that the Common Data Service cdm_Company entity has a key on [msdyn_companycode]
-        fieldMapping.insert(fieldStr(CDSVirtualEntityTestEntity, StringField), 'msdyn_accountnumber');
-        fieldMapping.insert(fieldStr(CDSVirtualEntityTestEntity, DataAreaId), 'msdyn_companyid');
-
-        return fieldMapping;
-    }
-```
-The next step is to generate or refresh the virtual entity to get the new relationship. Note that relationships between a virtual entity and a native entity cannot be updated in Common Data Service once it is created. The only way to make an update is to physically remove the relationship, refresh the entity, and then physically re-add the relationship in order to resolve the issue.
-
-This relationship looks like a typical GUID-based relationship, but has extra metadata to translate query filters on the relationship into restrictions on the backing fields. The query that is now generated will have a WHERE clause that is based on the fields that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps recognize. That query will then return the filtered list of sales orders, as expected. -->
-
-
-<!--
-### Native entity–to–virtual entity relationships
-
-Native entity–to–virtual entity relationships works much like native entity–to–native entity relationships. Users associate native records with virtual records in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and the GUID of the virtual entity is saved on the native entity record. As was explained earlier, the entities that participate in a relationship will have the GUID field of the related entity on them. Therefore, when a quotation in Common Data Service is associated with a customer in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity, the GUID of the customer virtual entity will be saved in the quotation entity. This behavior enables records to be retrieved as expected, by using standard Common Data Service functionality.
--->
 ## Enums
 
 Enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as OptionSets in Common Data Service. When a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is generated, the required enums are generated as OptionSets. If an OptionSet already exists, it is used instead.
