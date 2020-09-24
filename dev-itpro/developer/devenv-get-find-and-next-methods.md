@@ -22,8 +22,8 @@ The following methods are used to search for records:
 These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.
 
 > [!TIP]
-> partial records. tbd
-  
+> When using these methods, consider using the partial records API to improve performance, especially when looping through several records and using table extensions. For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
+
 ## Get method  
 
 The [Get Method (Record)](methods-auto/record/record-get-method.md) retrieves one record based on values of the primary key fields.  
