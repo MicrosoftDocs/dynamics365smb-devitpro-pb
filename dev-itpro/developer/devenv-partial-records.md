@@ -131,6 +131,7 @@ There are a few options to remedy this situation:
 
 ## See Also
 
+[FAQ for Partial Records](devenv-partial-records.md)  
 [Performance Articles For Developers](../performance/performance-developer.md)  
 [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  
