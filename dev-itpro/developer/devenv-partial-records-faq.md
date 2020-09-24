@@ -15,7 +15,7 @@ author: jswymer
 
 This article answers some of the most typical questions about the partial records capability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-# Do I need to change any code to keep my solution functional? 
+## Do I need to change any code to keep my solution functional? 
 
 No. If a field that's not selected for loading is accessed, the data will be fetched automatically for the current record. The field will then be selected for loading on future requests by using this record instance. However, you may still get the message *Record has been modified by another user*, like you could before. But now, the message can also appear in read-only scenarios where the record isn't locked. 
 
