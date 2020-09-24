@@ -186,7 +186,7 @@ Read more about query objects here:
 
 ### <a name="partialrecords"></a>Pattern - Use partial records when looping over data 
 
-If you know exactly which fields have to be loaded upfront at runtime, you can use the partial records API to load only these fields initially. The remaining fields are still accessible, but they'll be loaded as needed. Partial records improve performance in two ways. First, they limit the fields that need to be loaded from the database. Second, they prevent joining table extensions that aren't necessary.
+If you know exactly which fields have to be loaded upfront at runtime, you can use the partial records capability to load only these fields initially. The remaining fields are still accessible, but they'll be loaded as needed. Partial records improve performance in two ways. First, they limit the fields that need to be loaded from the database. Second, they prevent joining unnecessary table extensions.
 
 For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
