@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE[d365fin_long_md](../includes/2020_releasewave2.md)]
 
-The partial records capability in Business Central allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports, pages, and API pages - objects whose source code loops through records. It's particularly beneficial when table extensions are  used in the application.  
+The partial records capability in Business Central allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports, pages, and API pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
 
 Accessing a data source from AL code is typically done by using the methods like GET, FIND, NEXT, and so on. Without using partial records, the runtime loads all normal fields when accessing the data source. Using the partial records API, you can now add code that loads only a selected set of fields.
 
@@ -72,7 +72,7 @@ The main goal of the feature is to provide the ability to limit the number of fi
 -->
 
 > [!TIP]
-> Testing on the example code above showed a significant decrease in execution time when loading all normal fields versus only loading the "Standard Cost" field: from 1200 milliseconds down to 150 milliseconds. Performance numbers will vary depending on the machine and the setup with the SQL database.
+> Testing on the example code above showed that the execution time for loading only the "Standard Cost" field was nine times faster than loading all normal fields. Your performance numbers will vary depending on the machine and the setup with the SQL database.
 
 For performance reasons, it's not recommended to use partial records on a record that will do inserts, deletes, or copies to temporary records. All these operations require that the record is fully loaded out. So you lose the performance gains of loading fewer. For this reason, the feature is especially advantageous in reading-based scenarios.
 
@@ -80,7 +80,7 @@ For performance reasons, it's not recommended to use partial records on a record
 
 Currently, the platform uses partial records when fetching data for reports and calling API pages through OData. We intend to expand to different areas in future releases.
 
-For reports, the fields that are selected for loading are fields set up as columns in the report data set. If a report accesses a field that isn't in the dataset, it's beneficial to do one of the following to avoid just-in-time (JIT) loading:
+For reports, the fields that are selected for loading are fields set up as columns in the report data set. If a report accesses a field that isn't in the data set, it's beneficial to do one of the following to avoid just-in-time (JIT) loading:
 
 - Add the field as a column in the data set.
 - Add the field on the [OnPreDataItem trigger](/triggers/devenv-onpredataitem-trigger.md).
