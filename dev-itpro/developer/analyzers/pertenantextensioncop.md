@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0009](pertenantextensioncop-pte0009-donotusemanifesttranslationproperties.md)|This app.json property must not be used for per-tenant extensions.|The properties 'HelpBaseUrl' and 'SupportedLocales' are reserved for translation apps.|The app.json '{0}' property must not be used for per-tenant extensions.|PackageValidation|Error|true|
 |[PTE0010](pertenantextensioncop-pte0010-extensionnamelengthmustnotexceedlimit.md)|The extension name length must not exceed the specified limit.|The extension name length must not exceed the specified limit.|The length of the extension name must not exceed {0} characters.|PackageValidation|Error|true|
 |[PTE0011](pertenantextensioncop-pte0011-extensionpublisherlengthmustnotexceedlimit.md)|The extension publisher length must not exceed the specified limit.|The extension publisher length must not exceed the specified limit.|The length of the extension publisher must not exceed {0} characters.|PackageValidation|Error|true|
+|[PTE0012](pertenantextensioncop-pte0012-internalsvisibletonosecurityfeature.md)|InternalsVisibleTo should not be used as a security feature.|The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development.|The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development.|Extensibility|Warning|true|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
