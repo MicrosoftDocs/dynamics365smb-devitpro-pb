@@ -186,9 +186,10 @@ Read more about query objects here:
 
 ### <a name="partialrecords"></a>Pattern - Use partial records when looping over data 
 
-If welll defined what fields you need to access, you can specify the fields to limited feilds loaded from the db.
+While writing code, you know which fields you need to access, then you use partial records to specify the fields and limit what is loaded from the db. This removed the need for loading unnecessary fields and joining unnecessary table extensions
 
 tbd
+
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
 If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 

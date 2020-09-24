@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE[d365fin_long_md](../includes/2020_releasewave2.md)]
 
-The partial records capability in Business Central allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports, pages, and API pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
+The partial records capability in Business Central allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports and OData pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
 
 Accessing a data source from AL code is typically done by using the methods like GET, FIND, NEXT, and so on. Without using partial records, the runtime loads all normal fields when accessing the data source. Using the partial records API, you can now add code that loads only a selected set of fields.
 
@@ -76,9 +76,9 @@ The main goal of the feature is to provide the ability to limit the number of fi
 
 For performance reasons, it's not recommended to use partial records on a record that will do inserts, deletes, or copies to temporary records. All these operations require that the record is fully loaded out. So you lose the performance gains of loading fewer. For this reason, the feature is especially advantageous in reading-based scenarios.
 
-## Reports and API pages
+## Reports and OData pages
 
-Currently, the platform uses partial records when fetching data for reports and calling API pages through OData. We intend to expand to different areas in future releases.
+Currently, the platform uses partial records when fetching data for reports and calling pages through OData.
 
 For reports, the fields that are selected for loading are fields set up as columns in the report data set. If a report accesses a field that isn't in the data set, it's beneficial to do one of the following to avoid just-in-time (JIT) loading:
 
