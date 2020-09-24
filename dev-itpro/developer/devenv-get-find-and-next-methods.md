@@ -19,7 +19,10 @@ The following methods are used to search for records:
 - `Find`  
 - `Next`  
   
-These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.  
+These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.
+
+> [!TIP]
+> partial records. tbd
   
 ## Get method  
 

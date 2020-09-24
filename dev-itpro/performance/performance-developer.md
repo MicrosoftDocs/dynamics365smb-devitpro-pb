@@ -186,6 +186,8 @@ Read more about query objects here:
 
 ### <a name="partialrecords"></a>Pattern - Use partial records when looping over data 
 
+If welll defined what fields you need to access, you can specify the fields to limited feilds loaded from the db.
+
 tbd
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
