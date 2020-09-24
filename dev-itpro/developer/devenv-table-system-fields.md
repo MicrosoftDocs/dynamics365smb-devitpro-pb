@@ -128,7 +128,7 @@ The platform won't populate audit field values in these cases:
 
 The data audit fields are exposed in AL code. As a developer, the audit fields give you an easy and performant way to program against historical data. For example, you can write AL queries that return data changes since a specific date and time.
 
-The following methods are available on the [RecordRef](methods-auto/recordref/recordref-data-type) data type:
+The following methods are available on the [RecordRef](methods-auto/recordref/recordref-data-type.md) data type:
 
 |Method|Description|
 |------|-----------|

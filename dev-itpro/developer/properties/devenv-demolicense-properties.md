@@ -1,7 +1,7 @@
 ---
 title: "Demonstration License for Business Central On-Premises"
 description: Learn about the properties of the demo license for on-premises deployments.
-ms.author: edupont04
+ms.author: edupont
 ms.custom: na
 ms.reviewer: na
 ms.suite: na

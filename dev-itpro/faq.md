@@ -52,7 +52,7 @@ Databases are protected by automatic backups that are retained for 30 days. As a
 
 ## Can I request a copy of the backup of my production database?
 
-No, but from the Business Central administration center, you can export the database for Business Central online environments as .bacpac files to an Azure storage container. For more information, see [Exporting Databases](administration/tenant-admin-center-database-export.md).  
+No, but from the [!INCLUDE[prodshort](includes/prodshort.md)] administration center, you can export the database for [!INCLUDE[prodshort](includes/prodshort.md)] online environments as .bacpac files to an Azure storage container. For more information, see [Exporting Databases](administration/tenant-admin-center-database-export.md).  
 
 ## Can I get training in Business Central?
 
@@ -80,7 +80,7 @@ For more information, see [Managing capacity](administration/tenant-admin-center
 
 ## Is the Windows client supported?
 
-The first releases of Business Central on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
+The first releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
 
 ## What's going on with the Help?
 
@@ -88,7 +88,7 @@ If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md
 
 ## Which IP addresses or ranges does my environment's API use?
 
-When you exchange data through the API, you might have to whitelist the IP addresses. The addresses depend on the direction of the call.
+When you exchange data through the API, you might have to safe list the IP addresses. The addresses depend on the direction of the call.
 
 - Inbound
 

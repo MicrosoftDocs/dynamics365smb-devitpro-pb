@@ -373,6 +373,7 @@
 ### [Overview](developer/devenv-instrument-application-for-telemetry.md)
 ### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
+## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
@@ -381,9 +382,6 @@
 ### Accessing Device Capabilities
 #### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing Location in AL](developer/devenv-implement-location-al.md)
-## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
-## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-## [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
@@ -678,7 +676,9 @@
 #### [Containments and Associations](webservices/use-containments-associations.md)
 #### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+#### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
+#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 <!-- CDS -->
