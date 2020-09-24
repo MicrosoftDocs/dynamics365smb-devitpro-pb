@@ -63,7 +63,7 @@ The [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will promote the par
 
 The partner can control which third party apps can be installed for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)].  
 
-- Whitelisting of the 3rd party apps - no other apps will be possible to install, except the ones explicitly approved by the partner  
+- Safe listing of the 3rd party apps - no other apps will be possible to install, except the ones explicitly approved by the partner  
 - App install/uninstall controlled by the partner  
 - The partner can choose to allow a customer to install other extensions from the AppSource, but this will be an explicit partner decision, not the default behavior  
 
@@ -90,7 +90,7 @@ Partners can choose to bring their own code-customized base application as an [!
 
     ![Embed App contact](../media/embed-app-contact.png "Embed App contact")  
 
-- Whitelisted domains for embedding [!INCLUDE[embedapp](../developer/includes/embedapp.md)] pages into other web sites, including SharePoint (“frame ancestors”) 
+- Safe listed domains for embedding [!INCLUDE[embedapp](../developer/includes/embedapp.md)] pages into other web sites, including SharePoint (“frame ancestors”) 
 - Target version of [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] platform
 - Target version of [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] base application (if not included with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)])  
 - Azure KeyVault account for storing application secrets, such as accounts for connecting to 1-3rd party services  
