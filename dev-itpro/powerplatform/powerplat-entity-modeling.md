@@ -67,7 +67,7 @@ In Common Data Service, each entity must have a primary field. This field must b
 - The quick view form for an entity includes the primary field.
 - A lookup to another entity is added to a page and shows the data from the primary field.
 
-The primary field for a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is designed to use **displayname** field on entity if present. If this field is not present the first string fields is chosen as the primary field.
+The primary field for a virtual entity for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is designed to use **displayname** field on entity if present. If this field is not present the first string field is chosen as the primary field.
 
 ## Relations
 
