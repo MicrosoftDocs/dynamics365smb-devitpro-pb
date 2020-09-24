@@ -56,12 +56,6 @@ Yes. Here is the order of calls:
 2. All the existing logic on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity and backing tables is invoked. This logic includes default value entry that might change values.
 3. Common Data Service sends another Retrieve (single) message to get the latest copy of the data, including any fields that default values were entered for.
 
-<!-- @lukasz -->
-
-### Does the form business logic in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] get called through virtual entities?
-
-Business logic that resides on forms is not invoked through virtual entities. Instead, you should expect the same behavior that you get through OData access to the same entities. The expectation is that an entity that is exposed to OData (that is, **IsPublic** is set to **Yes**) has appropriate protections to ensure that data cannot be corrupted. If any entity lacks this protection, that situation represents a bug in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] API exposing the entity. If you see differences in entity behavior between OData and virtual entities, that situation represents a bug in the virtual entity feature.
-
 ## See Also
 
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
