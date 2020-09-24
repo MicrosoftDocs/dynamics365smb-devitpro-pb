@@ -78,7 +78,7 @@ The choice of protocol for the endpoint can have a significant impact on perform
 
 For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
 
-If you want OData endpoints that work as data readers (e.g. for consumption in PowerBI), then consider using API queries and set DataAccessIntent = ReadOnly, see [API Query Type](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-querytype) and [DataAccessIntent Property](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataaccessintent-property).
+If you want OData endpoints that work as data readers (e.g. for consumption in PowerBI), then consider using API queries and set DataAccessIntent = ReadOnly, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
 ### Web service client performance 
 
@@ -157,16 +157,16 @@ They come with different characteristics as described in this table:
 
 ### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping 
 
-The AL methods such as `FINDSET`, `CALCFIELDS`, `CALCSUMS`, and `SETAUTOCALCFIELDS` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
+The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
 
-- [CALCFIELDS, CALCSUMS, and COUNT](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
+- [CalcFields, CalcSums, and Count](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
 - [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
 
-One common use of the `CALCSUMS` method is to efficiently calculate totals. 
+One common use of the `CalcSums` method is to efficiently calculate totals. 
 
 Try to minimize work done in the `OnAfterGetRecord` trigger code. Common performance coding patterns in this trigger are:
 
-- Avoiding `CALCFIELDS` calls. Defer them until the end.
+- Avoiding `CalcFields` calls. Defer them until the end.
 - Avoiding repeated calculations. Move them outside the loop, if possible. 
 - Avoid changing filters. This pattern requires the server to throw away the result set.
 
@@ -183,8 +183,6 @@ Read more about query objects here:
 - [Query overview](../developer/devenv-query-overview.md)  
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
-
-
 
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
@@ -220,7 +218,7 @@ The following are best practices for getting performant events:
 Table events change the behavior of SQL optimizations on the [!INCLUDE[server](../developer/includes/server.md)] in the following ways:
 
 - The [!INCLUDE[server](../developer/includes/server.md)] will issue SQL update/delete statements row in a for loop rather than one SQL statement.
-- They impact `MODIFYALL` and `DELETEALL` methods that normally do bulk SQL operations to be forced to do single row operations.
+- They impact `ModifyAll` and `DeleteAll` methods that normally do bulk SQL operations to be forced to do single row operations.
 
 ## Efficient data access 
 
