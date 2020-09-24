@@ -114,9 +114,13 @@ Enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled a
 
 ## Company
 
-An entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be bound to a company, or it can be global. The virtual entity for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity that is bound to a company will have a relationship to the cdm\_company entity in Common Data Service. The cdm\_company entity is a native entity in Common Data Service and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup field is also created in the virtual entity for the related entity (cdm\_company in this case). This lookup field is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A field that is named **Company Code** is also added in the virtual entity. The value is a four-character string. This field must be used in programming.
+If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has multiple companies, the default company must be selected. This can be done either on a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity configuration page or on a User entity page.
+
+Furthermore, every virtual entity for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity have a relationship to the cdm\_company entity in Common Data Service. The cdm\_company entity is a native entity in Common Data Service and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup field is also created in the virtual entity for the related entity (cdm\_company in this case). This lookup field is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A field that is named **Company Code** is also added in the virtual entity. This field must be used in programming.
 
 ## Attachments
+
+@henrik, should we remove this section for now?
 
 Attachments in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are supported on a per-entity basis. For example, an invoice header entity will implement an invoice-related attachments entity to enable attachments via entities.
 
@@ -128,20 +132,7 @@ Note that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual enti
 
 OData actions in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are made available as custom actions in Common Data Service. For more information about custom actions and what they enable in Common Data Service, see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
 
-Input and output parameters of the following types are supported. If an input or output parameter is of a different type, the OData action does not appear as the SDK message in Common Data Service.
-
-- Integer
-- String
-- Guid
-- Boolean
-- Date/Datetime
-
-Here are some examples of OData actions that are supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities, but that are not supported in the corresponding virtual entities in Common Data Service:
-
-- RetailStoreTenderTypeTable.queryDistinctTenderTypeIdAndName (a collection of RetailStoreTenderTypeTable entity)
-- DocumentRoutingClientApp.syncPrinters (DocumentRoutingClientApp entity)
-- DocumentRoutingClientApp.updateJobStatus (DocumentRoutingJobStatus enum)
-- DimensionCombination.getCombinationDisplayValue (LedgerJournalACType enum)
+OData actions generated for [!INCLUDE[prodshort] have only one parameter which is the entity. There is no ouput parameter.
 
 ## Labels and localization
 
