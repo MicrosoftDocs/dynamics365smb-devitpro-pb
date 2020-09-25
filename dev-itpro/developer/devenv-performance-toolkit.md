@@ -28,7 +28,7 @@ The Performance Toolkit is two extensions, the **[!INCLUDE[prodshort](includes/p
 * A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, for security reasons you must start these scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the run from the command line](devenv-performance-toolkit.md#starting-the-run-from-powershell) 
 
 ## Single and Multiple Sessions
-Typically, you'll probably want to run the suite for multiple sessions at the same time. In that case, after you configure the suite, use the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** action to run your suite just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
+Typically, you'll want to run the suite for multiple sessions at the same time. After you configure the suite, you can do that by using the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** action to run your suite just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
 
 You can run up to 125 sessions at the same time for a test suite. The **Total No. of Sessions** field shows how many sessions will be created when you run the suite. 
 
@@ -45,19 +45,9 @@ Before running a simulation with change log on, change the **Tag** field to **Ch
 Logging all changes to the sales and purchase line significantly added to the duration, and the added load made the other scenarios a bit slower. <!---this might be a note-->
 
 ## Configuring a Suite 
-The settings to configure a suite depend on the environment that you want to simulate. The following steps provide an example for testing multiple sessions, but they also apply if you want to do a single run. 
+The settings to configure a suite depend on the environment that you want to simulate. The following procedure provides an example for testing multiple sessions, but the steps also apply to a single run. 
 
-<!--
-
-We'll configure a test suite for scenario with the following stats:
-
-* Number of sessions (simulated users) = 10
-* Duration of the session = 10 minutes
-* Scenario tested = Create as many sales orders as possible with N number of lines within the duration of the run
-* Time period = 1 work day corresponds to 10 minutes 
--->
 ### To configure a suite
-
 1. Search for **BCPT Suites**, and then choose the related link.
 2. Choose **New** to open the BCPT Suite page.
 3. In the **Code**, **Description**, and **Tag** fields, provide an identifier, some information about the test, and a tag that you can use to find the results of the suite on the Log Entries page.
@@ -76,36 +66,19 @@ We'll configure a test suite for scenario with the following stats:
     4. Optional: If you want to run in Single Run mode, or you want to run one of the sessions without applying settings such as minimum and maximum delays, choose the **Run in Foreground** check box. For more information, see [Running in the Background and Foreground](devenv-performance-toolkit.md#running-in-the-background-and-foreground).
 
 ## Starting the Run from PowerShell
-Open a PowerShell command prompt, and make sure you have installed the necessary binaries and scripts. <!--not sure whether they still need to check the binaries and scripts. If they do, where and how do they check that?--> The commands use the example from above. <!--To start a test on the local machine (“on-prem”), run this command: command is missing-->
-
-> [!NOTE]
-> If you want to run in single run mode, you don't need to go to powershell. You can do that from the UI.
-
-Create an authorization object in PowerShell with following command:
+After you have installed the binaries and scripts and configured your suite, you can run the tests from PowerShell by using the following commands 
 
 ```
-$Credential = New-Object PSCredential -ArgumentList <username>,
-(ConvertTo-SecureString -String '<password>' -AsPlainText -Force)
+<localpath>\ RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -TestRunnerPage 149002 -SuiteCode “TRADE-50U" -BCPTTestRunnerInternalFolderPath <localpath>\ ApplicationBenchmarkTool -ServiceUrl <webclient URL>/BC
 
 ```
-Now run the following command:
+ 
+To start tests in a [!INCLUDE[prodshort](includes/prodshort.md)] online sandbox, run these two commands:
 
 ```
-<localpath>\ RunABTTests.ps1 -Environment OnPrem -
-AuthorizationType NavUserPassword -TestRunnerPage 50010 -
-SuiteCode “TRADE-50U" -ABTTestRunnerInternalFolderPath
-<localpath>\ApplicationBenchmarkTool -Credential $Credential -
-ServiceUrl <webclient URL>/BC
-```
+$Credential = New-Object PSCredential -ArgumentList <user email>, (ConvertTo-SecureString -String <password> -AsPlainText -Force) RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential 
 
-To start tests in a [!INCLUDE[prodshort](includes/prodshort.md)]d online sandbox, run these two commands:
-
-```
-$Credential = New-Object PSCredential -ArgumentList <user email>,
-(ConvertTo-SecureString -String <password> -AsPlainText -Force)
-RunABTTests.ps1 -Environment PROD -AuthorizationType AAD -
-Credential $Credential -SandboxName <sandbox name> -
-TestRunnerPage 150010 -SuiteCode "TRADE-50U"
+$Credential -SandboxName <sandbox name> -TestRunnerPage 149002 -SuiteCode "TRADE-50U"
 
 ```
 
