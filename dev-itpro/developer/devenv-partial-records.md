@@ -85,7 +85,7 @@ For reports, the fields that are selected for loading are fields set up as colum
 - Add the field as a column in the data set.
 - Add the field on the [OnPreDataItem trigger](/triggers/devenv-onpredataitem-trigger.md).
 
-    The following example code snippet illustrates how to use the AddLoadFields method on a report's OnPreDataItem trigger add a field for loading:
+    The following example code snippet illustrates how to use the AddLoadFields method on a report's OnPreDataItem trigger to add a field for loading:
     
     ```
     trigger OnPreDataItem()
