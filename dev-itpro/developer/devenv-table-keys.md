@@ -1,5 +1,6 @@
 ---
 title: "Table Keys"
+description: Learn about table keys in Business Central
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -187,4 +188,4 @@ Do not add keys that are fields of the base table. // still true
 [Tables Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
-[SystemId Field](devenv-table-object.md#systemid)  
+[SystemId Field](devenv-table-system-fields.md#systemid)  

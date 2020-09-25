@@ -87,7 +87,7 @@ table 50100 MyTable
 }
 ```
 
-In version 2.0, the field became a [FlowField](../devenv-flowfields). As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. Changing a Normal field to FlowField is a then destructive change.
+In version 2.0, the field became a [FlowField](../devenv-flowfields.md). As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. Changing a Normal field to FlowField is a then destructive change.
 
 ### Example 3 - Changing the Access property to make a field less accessible
 
@@ -198,7 +198,7 @@ table 50100 MyTable
 }
 ```
 
-In version 2.0, the [FlowField](../devenv-flowfields) became a Normal field. As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. For the schema synchronization, changing a flow field to a normal field is similar to creating a new field and is then not a destructive change.
+In version 2.0, the [FlowField](../devenv-flowfields.md) became a Normal field. As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. For the schema synchronization, changing a flow field to a normal field is similar to creating a new field and is then not a destructive change.
 
 ### Example 3 - Changing the Access property to make a field more accessible
 

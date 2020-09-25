@@ -1,5 +1,6 @@
 ---
 title: "Dialog.StrMenu Method"
+description: Describes the StrMenu method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 09/15/2020
@@ -57,7 +58,7 @@ var
     Text001: Label 'You selected option %1.';
     Text002: Label 'Choose one of the following options:';
 begin
-    Options := Text000  
+    Options := Text000;  
     // Sets the default to option 3  
     Selected := Dialog.STRMENU(Options, 3, Text002);  
     MESSAGE(Text001, Selected);  
