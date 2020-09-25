@@ -41,34 +41,37 @@ The FieldNo's of the fields to be loaded.
 
 ## Remarks
 
-Calling SetLoadFields on a record without passing any fields will reset the fields selected to load to the default, where all readable normal fields are selected for load. 
+Calling SetLoadFields on a record without passing any fields will reset the fields selected to load to the default, where all readable normal fields are selected for load.
+
+This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
 ## Example
 
-To speedup the calculation of a simple mean function, one can decide not to load out all fields, but just the necessary ones. In below code snippet only the "Standard Cost" is need, so only it is selected to be loaded. 
+To speedup the calculation of a simple mean function, you can decide not to load out all fields, but just the necessary ones. In the following code snippet, only the "Standard Cost" is needed, so only it is selected to be loaded.
 
 ```
-procedure ComputeArithmeticMean(): Decimal; 
+procedure ComputeArithmeticMean(): Decimal;
+var
+    item: Record Item;
+    acc: Decimal;
+    cou: Integer;
+begin
+    item.SetLoadFields(item."Standard Cost");
+    if (item.FindSet()) then begin
+        repeat
+            acc += item."Standard Cost";
+            cou += 1;
+        until (item.Next = 0)
+    end else
+        exit(0);
 
-var 
-    item: Record Item; 
-    acc: Decimal; 
-    cou: Integer; 
-
-begin 
-    SelectLatestVersion(); 
-    item.SetLoadFields(item."Standard Cost"); 
-    if (item.FindSet()) then begin 
-        repeat 
-            acc += item."Standard Cost"; 
-            cou += 1; 
-        until (item.Next = 0) 
-    end; 
-    exit(acc / cou);
+    exit(acc / cou);
 end;
 ```
 
 ## See Also
+
+[Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

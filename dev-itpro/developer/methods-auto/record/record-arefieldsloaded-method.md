@@ -39,24 +39,30 @@ The FieldNo's of the fields to check.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+
 ## Example
 
-If you were to only need to use one of the names on the Customer table, you could imagine a function that selected which ever of the names are actually loaded, or causes a JIT load if non.
+This example shows how to use the AreFieldsLoaded method when you only need either the **Name** or **Name 2** field on the **Customer** table. The procedure selects which ever field is actually loaded. If neither is loaded, this causes a JIT load.
 
 ```
 procedure GetLoadedName(Cust: Record Customer): Text 
 begin 
     if Cust.AreFieldsLoaded(Cust.Name) then 
-        exit(cust.Name) 
+        exit(Cust.Name) 
     else 
-        if (cust.AreFieldsLoaded(Cust."Name 2")) then 
-            exit(cust."Name 2") 
+        if Cust.AreFieldsLoaded(Cust."Name 2") then 
+            exit(Cust."Name 2") 
         else 
             exit(Cust.Name);
-end; 
+end;
 ```
 
 ## See Also
+
+[Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

@@ -39,7 +39,7 @@ The following methods are available on instances of the Record data type.
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
 |[AddLoadFields([Any,...])](record-addloadfields-method.md)|Specifies fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields selected for initial load.|
 |[SetLoadFields([Any,...])](record-setloadfields-method.md)|Sets the fields to be initially loaded when the the record is retrieved from its data source. Will overwrite previously selections of fields to load.|
-|[AreFieldsLoaded(Any,...)](record-arefieldsloaded-method.md)|Checks whether the specified fields are all initally loaded.|
+|[AreFieldsLoaded(Any,...)](record-arefieldsloaded-method.md)|Checks whether the specified fields are all initially loaded.|
 |[LoadFields(Any,...)](record-loadfields-method.md)|Accesses the table's corresponding data source and loads out the specified fields.|
 |[Count()](record-count-method.md)|Counts the number of records in a table.|
 |[IsEmpty()](record-isempty-method.md)|Determines whether a table or a filtered set of records is empty.|
