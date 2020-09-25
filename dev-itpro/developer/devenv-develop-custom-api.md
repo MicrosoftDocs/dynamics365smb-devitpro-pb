@@ -130,9 +130,9 @@ To expose data in an API page, the first thing needed is a source table. For the
     ```
 > [!TIP]  
 > As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
-> `<Property Name="fuelType" Type="Edm.String"/>`
+> `<Property Name="fuelType" Type="Edm.String"/>`.
 > <br>On the other hand, Enums have their on types and all available Enum members are generated in the metadata:
-> `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`  
+> `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`.  
 >
 >```
 >< EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
@@ -151,8 +151,8 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
 1. Create a new API page.
 2. Name the page **API Car Model**, and specify **50101** as the page ID.  
 3. Specify the **Car Model**  table as the source table.
-4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will effect your custom endpoint: https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel. For more information, see [Business Central API endpoints](/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics.md).
-5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions (https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions) which are localized and translatable. 
+4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will affect your custom endpoint: `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel`. For more information, see [Business Central API endpoints](/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics.md).
+5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions` which are localized and translatable. 
 6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [Table Object](devenv-table-object.md#systemid). 
 
 ```
