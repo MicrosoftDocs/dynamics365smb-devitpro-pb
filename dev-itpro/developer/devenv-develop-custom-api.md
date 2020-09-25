@@ -280,17 +280,17 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
     ``` 
 
 > [!TIP]  
-> Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add **CaptionML = ENU = 'Multiplicity=ZeroOrOne';** property in your part as below:
+> Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add the **CaptionML = ENU = 'Multiplicity=ZeroOrOne';** property in your part as shown below:
 >```
 >part(carModels; "API Car Model")
->   {
->       CaptionML = ENU = 'Multiplicity=ZeroOrOne';
+>    {
+>        CaptionML = ENU = 'Multiplicity=ZeroOrOne';
 >        EntityName = 'carModel';
 >        EntitySetName = 'carModels';
 >        SubPageLink = "Brand Id" = Field(SystemId);
 >    }
 > ```
-> This will change the **NavigationalProperty** in the metadata from a Collection to an object as below:
+>This will change the **NavigationalProperty** in the metadata from a Collection to an object as shown below:
 > 
 >```
 ><NavigationProperty Name="carModel" Type="Microsoft.NAV.carModel" ContainsTarget="true">
