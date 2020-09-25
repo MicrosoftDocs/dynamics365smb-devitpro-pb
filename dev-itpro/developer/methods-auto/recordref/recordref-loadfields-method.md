@@ -43,7 +43,11 @@ The FieldNo's of the fields to be loaded.
 
 This method will trigger a JIT load, but allows for triggering the JIT load on multiple fields. If the fields are already loaded, another load will not be triggered.
 
+This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+
 ## See Also
+
+[Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)
