@@ -20,11 +20,15 @@ This page provides links to legal information for Business Central.
 
 ## Microsoft AL Language
 
-- [AL Language - Terms of Use](https://go.microsoft.com/fwlink/?linkid=2009120)
+- [AL Language - Terms of Use](https://go.microsoft.com/fwlink/?linkid=724013)
 
 ## Envestnet Yodlee - Bank Feeds 
 
-- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2009120)
+- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=7240130)
+
+##Trial Services terms 
+
+- [Link to Trial Services terms](https://go.microsoft.com/fwlink/?linkid=828977)
 
 <!--## Teams integration-->
 
