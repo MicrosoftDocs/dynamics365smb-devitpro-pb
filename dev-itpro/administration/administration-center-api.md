@@ -92,9 +92,10 @@ All unknown and unhandled errors that aren't covered by the lists above will use
 
 ## Environments
 
-Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. Currently, it's only possible to create three production environments and three sandbox environments per tenant. The environment APIs can be used to:
+Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. The environment APIs can be used to:
 
 - Get information about the environments currently set up for the tenant
+- Get information about the used storage and allowed quotas
 - Create a new environment using sample data or as a sandbox copy of the production environment
 - Delete an environment.
 
@@ -106,20 +107,18 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-GET /admin/v2.1/applications/environments[?skipDbSize={bool}]
+GET /admin/v2.3/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments[?skipDbSize={bool}]
+GET /admin/v2.3/applications/{applicationFamily}/environments
 ```
 
 #### Route Parameters
 
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral)
-
-`skipDbSize` - `true` does not return database size in response; `false` does.
 
 #### Response
 
@@ -141,10 +140,6 @@ Returns a wrapped array of environments.
       "webServiceUrl": string, // Url to use to access the environment's service API
       "locationName": string, // The Azure location where the environment's data is stored
       "platformVersion": string, // The version of the environment's Business Central platform
-      "databaseSize": { // Contains info about the size of the environment's database or null if unknown
-          "value": double, // The size of the database quantified by the provided 'unit' property
-          "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
-      },
       "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
       "appInsightsKey": string // The environment's key for Azure Application Insights
     }
@@ -161,7 +156,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[?skipDbSize={bool}]
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -169,8 +164,6 @@ GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}[
 `applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
-
-`skipDbSize` - `true` does not return database size in response; `false` does.
 
 #### Response
 Returns a single environment if exists.
@@ -188,10 +181,6 @@ Returns a single environment if exists.
   "webServiceUrl": string, // Url to use to access the environment's service API
   "locationName": string, // The Azure location where the environment's data is stored
   "platformVersion": string, // The version of the environment's Business Central platform
-  "databaseSize": { // Contains info about the size of the environment's database or null if unknown
-      "value": double, // The size of the database quantified by the provided 'unit' property
-      "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
-  },
   "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
@@ -209,7 +198,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -247,10 +236,6 @@ Returns newly created environment.
   "webServiceUrl": string, // Url to use to access the environment's service API
   "locationName": string, // The Azure location where the environment's data is stored
   "platformVersion": string, // The version of the environment's Business Central platform
-  "databaseSize": { // Contains info about the size of the environment's database or null if unknown
-      "value": double, // The size of the database quantified by the provided 'unit' property
-      "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
-  },
   "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
@@ -293,30 +278,16 @@ DoesNotExist` - the provided value for the application family wasn't found
 
 `environmentReservationFailed` -- another environment within the same application family already has this name
 
-`maximumNumberOfEnvironmentsAllowedReached` - the limit on the number of allowed environments of the provided type has been reached 
+`maximumNumberOfEnvironmentsAllowedReached` - the limit on the number of allowed environments of the provided type has been reached
 
-### Get Database Size
-
-Gets size of a database for a specific environment.
-
-```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/dbsize
-```
-
-#### Response
-```
-{
-    value: double,
-    unit: string
-}
-```
+`maximumStorageCapacityUsageReached` - the limit of the storage capacity usage has been reached
 
 ### Copy environment
 Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.1/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.3/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 #### Route Parameters
@@ -350,10 +321,6 @@ Returns newly copied environment.
   "webServiceUrl": string, // Url to use to access the environment's service API
   "locationName": string, // The Azure location where the environment's data is stored
   "platformVersion": string, // The version of the environment's Business Central platform
-  "databaseSize": { // Contains info about the size of the environment's database or null if unknown
-      "value": double, // The size of the database quantified by the provided 'unit' property
-      "unit": string, // The sizing unit for the 'value' property (Currently always 'Bytes')
-  },
   "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
@@ -403,14 +370,15 @@ Returns newly copied environment.
   
 `environmentReservationFailed` -- another environment within the same application family already has the same name
 
-`maximumNumberOfEnvironmentsAllowedReached` - the limit on the number of allowed environments of the provided type has been reached 
+`maximumNumberOfEnvironmentsAllowedReached` - the limit on the number of allowed environments of the provided type has been reached
 
+`maximumStorageCapacityUsageReached` - the limit of the storage capacity usage has been reached
 
 ### Delete environment
 Deletes the specified environment. Warning: A production environment shouldn't be deleted.
 
 ```
-DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -437,6 +405,81 @@ DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentNam
 
    - target: {applicationFamily}/{environmentName}
 
+### Get used storage of an environment by application family and name
+Returns used storage properties for the provided environment name if it exists.
+
+```
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application as is. (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+#### Response
+Returns used storage information of a single environment if exists.
+```
+{
+  "environmentType": string, // Environment type (for example, "Sandbox", "Production")
+  "environmentName": string, // Environment name, unique within an application family
+  "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+  "fileStorageInKilobytes": int, // Used file storage in kilobytes
+  "databaseStorageInKilobytes": int // Used database storage in kilobytes
+}
+```
+
+> [!NOTE]  
+> If an error occurs when calculating file storage or database storage the corresponding property will be -1.
+
+#### Expected Error Codes
+
+`environmentNotFound` - the targeted environment couldn't be found
+   
+   - `target: {applicationFamily}/{environmentName}`
+   
+### Get used storage for all environments
+Returns a list of used storage objects for all the environments.
+
+```
+GET /admin/v2.3/applications/environments/usedstorage
+```
+
+#### Response
+Returns a wrapped array of used storage objects.
+```
+{
+  "value":
+  [
+    {
+       "environmentType": string, // Environment type (for example, "Sandbox", "Production")
+       "environmentName": string, // Environment name, unique within an application family
+       "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+       "fileStorageInKilobytes": int, // Used file storage in kilobytes
+       "databaseStorageInKilobytes": int // Used database storage in kilobytes
+    }
+  ]
+}
+```
+
+### Get allowed quotas
+Returns different types of quotas and their limits.
+
+```
+GET /admin/v2.3/applications/environments/quotas
+```
+
+#### Response
+Returns quotas object.
+```
+{
+  "productionEnvironmentsCount": int, // Maximum allowed number of production environments
+  "sandboxEnvironmentsCount": string, // Maximum allowed number of sandbox environments
+  "fileStorageInKilobytes": int, // Maximum allowed file storage in kilobytes
+  "databaseStorageInKilobytes": int // Maximum allowed database storage in kilobytes
+}
+```
 
 ## Available Applications
 Get information about the currently available application families, countries, rings, and versions that environments can be created on.
@@ -446,7 +489,7 @@ The API endpoints here should be utilized to determine what values can be used f
 Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
 
 ```
-GET /admin/v2.1/applications/
+GET /admin/v2.3/applications/
 ```
 
 #### Response
@@ -472,7 +515,7 @@ GET /admin/v2.1/applications/
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+GET /admin/v2.3/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
 #### Route Parameters
@@ -502,7 +545,7 @@ Allows you to manage environment specific settings such as the environment's App
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 #### Route Parameters
@@ -535,7 +578,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 #### Route Parameters
@@ -586,7 +629,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 ```
 Content-Type: application/json
-POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 #### Route Parameters
@@ -621,7 +664,7 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
 #### Route Parameters
@@ -672,7 +715,7 @@ Notifications are sent to the recipient email addresses set up for the tenant. F
 Returns a list of notification recipients.
 
 ```
-GET /admin/v2.1/settings/notification/recipients
+GET /admin/v2.3/settings/notification/recipients
 ```
 
 #### Response
@@ -701,7 +744,7 @@ Create a new notification recipient.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.1/settings/notification/recipients
+PUT /admin/v2.3/settings/notification/recipients
 ```
 
 #### Body
@@ -740,7 +783,7 @@ Returns the newly created recipient.
 Deletes an existing notification recipient.
 
 ```
-DELETE /admin/v2.1/settings/notification/recipients/{id}
+DELETE /admin/v2.3/settings/notification/recipients/{id}
 ```
 
 #### Route Parameters
@@ -760,7 +803,7 @@ DELETE /admin/v2.1/settings/notification/recipients/{id}
 Returns the full set of notification settings including the list of recipients.
 
 ```
-GET /admin/v2.1/settings/notification
+GET /admin/v2.3/settings/notification
 ```
 
 #### Response
@@ -791,7 +834,7 @@ You can get the list of applications that are available to the tenant. From this
 Returns a list of manageable applications by family and country code.
 
 ```
-GET /admin/v2.1/manageableapplications
+GET /admin/v2.3/manageableapplications
 ```
 
 #### Response
@@ -816,7 +859,7 @@ Pass the application family name in the URL and a boolean in the body.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.1/manageableapplications/{applicationFamily}/countries/{countryCode}
+PUT /admin/v2.3/manageableapplications/{applicationFamily}/countries/{countryCode}
 ```
 
 #### Route Parameters
@@ -851,7 +894,7 @@ Allows for the management of scheduled updates such as rescheduling the update t
 Get information about updates that have already been scheduled for a specific environment.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 #### Route Parameters
@@ -894,7 +937,7 @@ Reschedule an update, if able.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/upgrade
+PUT /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 #### Route Parameters
@@ -935,7 +978,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.3/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 #### Route Parameters
@@ -973,7 +1016,7 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.3/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 #### Route Parameters
@@ -1023,7 +1066,7 @@ Enables the ability to report that an environment isn't accessible and may requi
 Gets the list of supported categories of outages
 
 ```
-GET /admin/v2.1/support/outageTypes
+GET /admin/v2.3/support/outageTypes
 ```
 
 #### Response
@@ -1050,7 +1093,7 @@ Returns a list with information about the supported outage types for reporting
 Gets the list of metadata about questions that need to be answered when reporting an environment outage
 
 ```
-GET /admin/v2.1/support/outageTypes/{outageType}/outageQuestions
+GET /admin/v2.3/support/outageTypes/{outageType}/outageQuestions
 ```
 
 #### Response
@@ -1084,7 +1127,7 @@ Returns the list of question metadata for the provided outage type
 Gets the list of outages that have been previously reported 
 
 ```
-GET /admin/v2.1/support/reportedoutages
+GET /admin/v2.3/support/reportedoutages
 ```
 
 #### Response
@@ -1118,7 +1161,7 @@ Initiates an outage report indicating that an environment isn't accessible
 
 ```
 Content-Type: application/json
-POST /admin/v2.1/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+POST /admin/v2.3/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
 #### Route Parameters
@@ -1170,7 +1213,7 @@ Allows for the export of an environment's Azure database. Databases are exported
 Gets information about the number of exports allowed per month and the amount remaining.
 
 ```
-GET /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+GET /admin/v2.3/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
 #### Route Parameters
@@ -1201,7 +1244,7 @@ Starts the export of an environment's database to a provided Azure storage accou
 
 ```
 Content-Type: application/json
-POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/v2.3/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -1234,7 +1277,7 @@ POST /admin/v2.1/exports/applications/{applicationFamily}/environments/{environm
 Gets information about the exports that have been done within a provided time frame, for which environment, and by whom.
 
 ```
-POST /admin/v2.1/exports/history?start={startTime}&end={endTime}
+POST /admin/v2.3/exports/history?start={startTime}&end={endTime}
 ```
 
 #### Query parameters
@@ -1305,7 +1348,7 @@ Manage the apps that are installed on the environment.
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 #### Route Parameters
@@ -1340,7 +1383,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 #### Route Parameters
@@ -1382,7 +1425,7 @@ Schedules the installation of an app update version. The update will be installe
 
 ```
 Content-Type: application/json
-POST /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 #### Route Parameters
@@ -1420,7 +1463,7 @@ Returns information about the scheduled app update request.
 Gets information about app update operations for the specified app.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 #### Route Parameters
@@ -1468,7 +1511,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/sessions
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
 #### Response
@@ -1501,7 +1544,7 @@ GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 #### Response
@@ -1530,7 +1573,7 @@ GET /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.1/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.3/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also
