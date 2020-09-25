@@ -22,13 +22,13 @@ Building an app requires capabilities to perform relational modeling between ent
 
 ## Generating virtual entities
 
-By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
+By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generates the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
 
 When a virtual entity is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service. For data types that are supported, the field properties in Common Data Service are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-This rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
+The rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
 
 | Data type in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] | Modeled data type in Common Data Service |
 |-------------------------------------|------------------------------------------|
@@ -38,7 +38,7 @@ This rest of this section describes supported and unsupported data types. For mo
 | String (non-memo), String (memo)    | String – single line of text, String – multiple lines of text |
 | UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as a null value in Common Data Service. |
 | Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is surfaced as an empty value in Common Data Service. |
-| Enum                                | Picklist<br><br>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service are not guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], because these enums do not have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. <!-- @lukasz - how do we handle enums?-->| 
+| Enum                                | Picklist<br><br>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service are not guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], because these enums do not have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated.| 
 
 Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled as the *decimal* data type in Common Data Service. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
 
@@ -46,16 +46,16 @@ Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/
 |----------------------------------------------|--------------------|
 | Common Data Service has higher precision.    | This use case should never occur unless the metadata is out of sync. |
 | [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher precision. | During a read operation, the value is rounded to the closest precision value in Common Data Service. If the value is edited in Common Data Service, it is rounded to the closest precision value in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. During a write operation, the value that is specified in Common Data Service is written, because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports higher precision. |
-| Common Data Service has higher scale.        | Not applicable |
+| Common Data Service has higher scale.        | Not applicable. |
 | [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher scale.     | Common Data Service shows the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] value, even if it exceeds 100 billion. However, there will be a loss of precision. For example, 987,654,100,000,000,000 is shown in Common Data Service as "987,654,099,999,999,900". If the value of this field is edited in Common Data Service, Common Data Service validation throws an error that the value exceeds the maximum value before that value is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. |
 
-The following data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are not supported in Common Data Service. Fields of these data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities won't be made available in the corresponding virtual entities in Common Data Service. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this topic.
+The following data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are not supported in Common Data Service. Fields of these data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities will not be made available in the corresponding virtual entities in Common Data Service. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions will not be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](powerplat-entity-modeling.md#odata-actions) section later in this topic.
 
-<!-- @antino which datatypes in BC is not supported in CDS? -->
+<!-- non-supported data types? -->
 
 ## Entity key - primary key
 
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], entities uses the SystemId (GUID) as the primary key, which uniquely identifies a record in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In Common Data Service, the SystemId exposed by the entity is used as the primary key.
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], entities use the SystemId (GUID) as the primary key, which uniquely identifies a record in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In Common Data Service, the SystemId exposed by the entity is used as the primary key.
 
 ## Primary field
 
@@ -69,8 +69,8 @@ The primary field for a virtual entity for [!INCLUDE[prodshort](../developer/inc
 
 ## Relations
 
-> [!IMPORTANT]
-> A write transaction that spans a virtual entity and a native entity is not supported. We do not recommend using this form of transaction, as there is no way to ensure consistency.
+> [!IMPORTANT]  
+> A write transaction that spans a virtual entity and a native entity is not supported. Using this form of transaction is not recommended, as there is no way to ensure consistency.
 
 Relations in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
