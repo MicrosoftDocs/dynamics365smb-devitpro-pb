@@ -189,7 +189,7 @@ Read more about query objects here:
 
 When writing AL code where the fields needed on a record is known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
 
-Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, Partial records limit the amount of table extensions that need to be joined.
+Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the amount of table extensions that need to be joined.
 
 The performance gains compound when looping over many records, because both effects scale with the amount of rows loaded.
 
