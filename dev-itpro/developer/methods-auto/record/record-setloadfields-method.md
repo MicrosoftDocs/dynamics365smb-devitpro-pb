@@ -38,6 +38,36 @@ The FieldNo's of the fields to be loaded.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+Calling SetLoadFields on a record without passing any fields will reset the fields selected to load to the default, where all readable normal fields are selected for load. 
+
+## Example
+
+To speedup the calculation of a simple mean function, one can decide not to load out all fields, but just the necessary ones. In below code snippet only the "Standard Cost" is need, so only it is selected to be loaded. 
+
+```
+procedure ComputeArithmeticMean(): Decimal; 
+
+var 
+    item: Record Item; 
+    acc: Decimal; 
+    cou: Integer; 
+
+begin 
+    SelectLatestVersion(); 
+    item.SetLoadFields(item."Standard Cost"); 
+    if (item.FindSet()) then begin 
+        repeat 
+            acc += item."Standard Cost"; 
+            cou += 1; 
+        until (item.Next = 0) 
+    end; 
+    exit(acc / cou);
+end;
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

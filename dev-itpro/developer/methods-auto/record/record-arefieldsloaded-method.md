@@ -38,6 +38,24 @@ The FieldNo's of the fields to check.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+If you were to only need to use one of the names on the Customer table, you could imagine a function that selected which ever of the names are actually loaded, or causes a JIT load if non.
+
+```
+procedure GetLoadedName(Cust: Record Customer): Text 
+begin 
+    if Cust.AreFieldsLoaded(Cust.Name) then 
+        exit(cust.Name) 
+    else 
+        if (cust.AreFieldsLoaded(Cust."Name 2")) then 
+            exit(cust."Name 2") 
+        else 
+            exit(Cust.Name);
+end; 
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -38,6 +38,10 @@ The FieldNo's of the fields to be loaded.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Remarks
+
+This method will trigger a JIT load, but allows for triggering the JIT load on multiple fields. If the fields are already loaded, another load will not be triggered. Using this method over implicit jit loads allows for more explicit error handling when a load fails. 
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

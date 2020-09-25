@@ -38,6 +38,27 @@ The FieldNo's of the fields to be loaded.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+On a report, you might load a field that is outside the ones default selected for load via DataColumn, so one can add it in the OnPreDataItem trigger:
+
+```
+trigger OnPreDataItem() 
+begin 
+
+    CurrencyDataItem.AddLoadFields(CurrencyDataItem."ISO Numeric Code"); 
+end; 
+
+trigger OnAfterGetRecord() 
+begin 
+    if (CurrencyDataItem."ISO Numeric Code" <> 'DKK') then 
+    begin 
+        CurrReport.Skip(); 
+    end; 
+end; 
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
