@@ -66,24 +66,23 @@ The settings to configure a suite depend on the environment that you want to sim
     4. Optional: If you want to run in Single Run mode, or you want to run one of the sessions without applying settings such as minimum and maximum delays, choose the **Run in Foreground** check box. For more information, see [Running in the Background and Foreground](devenv-performance-toolkit.md#running-in-the-background-and-foreground).
 
 ## Starting the Run from PowerShell
-After you have installed the binaries and scripts and configured your suite, you can run the tests from PowerShell by using the following commands 
+After you have installed the binaries and scripts and configured your suite, you can create the credential object and run the tests from PowerShell by using the following commands 
 
+To create the credential object, run the following command:
 ```
-<localpath>\ RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -TestRunnerPage 149002 -SuiteCode “TRADE-50U" -BCPTTestRunnerInternalFolderPath <localpath>\ ApplicationBenchmarkTool -ServiceUrl <webclient URL>/BC
+$Credential = New-Object PSCredential -ArgumentList <user email>,(ConvertTo-SecureString -String <password> -AsPlainText -Force)
 
 ```
  
-To start tests in a [!INCLUDE[prodshort](includes/prodshort.md)] online sandbox, run these two commands:
+To start tests in a [!INCLUDE[prodshort](includes/prodshort.md)] online sandbox, run the following command:
 
 ```
-$Credential = New-Object PSCredential -ArgumentList <user email>, (ConvertTo-SecureString -String <password> -AsPlainText -Force) RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential 
-
-$Credential -SandboxName <sandbox name> -TestRunnerPage 149002 -SuiteCode "TRADE-50U"
+RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential $Credential -SandboxName <sandbox name> -TestRunnerPage 149002 -SuiteCode "TRADE-50U"
 
 ```
 
 > [!NOTE]
-> When you start from the command ine, there is a two second delay between new sessions.
+> When you start tests from PowerShell, there is a two second delay between new sessions.
 
 ## Analyzing Results
 When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results).
