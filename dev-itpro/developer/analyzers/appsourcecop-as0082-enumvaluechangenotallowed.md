@@ -1,8 +1,8 @@
 ---
-title: "It is not allowed to change a value's ID in an enum."
+title: "It is not allowed to rename an enum value."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2020
+ms.date: 09/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0082
-It is not allowed to change a value's ID in an enum.  
+It is not allowed to rename an enum value.  
 
 ## Description
-Changing an enum value's ID is not allowed, unless the enum is marked as obsolete. This restriction prevents dependent extensions from breaking, if they use the old ordinal value of the enum value.
+Renaming an enum value is not allowed. Name changes are not allowed because it might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
