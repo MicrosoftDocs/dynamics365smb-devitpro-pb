@@ -33,7 +33,7 @@ For more information about the properties in the `app.json` file, see [JSON File
 
 If you are targetting the AppSource markeplace, you need to update the ID range in your `app.json` file with the one that Microsoft provided you with.
 
-If you are not targeting the AppSource markeplace, you can suppress this rule using [rulesets](devenv-using-code-analysis-tool-with-rule-set.md).
+If you are not targeting the AppSource markeplace, you can suppress this rule using [rulesets](../devenv-using-code-analysis-tool-with-rule-set.md).
 
 ## Code example triggering the rule
 
