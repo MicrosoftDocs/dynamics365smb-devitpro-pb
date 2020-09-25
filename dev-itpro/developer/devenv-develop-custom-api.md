@@ -131,7 +131,7 @@ To expose data in an API page, the first thing needed is a source table. For the
 > [!TIP]  
 > As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
 > `<Property Name="fuelType" Type="Edm.String"/>`
-> On the other hand, Enums have their on types and all available Enum members are generated in the metadata:
+> <br>On the other hand, Enums have their on types and all available Enum members are generated in the metadata:
 > `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`  
 >
 > ```
