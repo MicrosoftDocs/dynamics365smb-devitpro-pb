@@ -46,21 +46,20 @@ This method is part of the partial records capability for improving performance.
 ## Example
 
 On a report, you might load a field that is outside the ones default selected for load via DataColumn, so one can add it in the OnPreDataItem trigger:
+The following example code snippet illustrates how to use the AddLoadFields method on a report's OnPreDataItem trigger add a field for loading:
 
 ```
-trigger OnPreDataItem() 
-begin 
+trigger OnPreDataItem()
+begin
+    CurrencyDataItem.AddLoadFields(CurrencyDataItem."ISO Numeric Code");
+end;
 
-    CurrencyDataItem.AddLoadFields(CurrencyDataItem."ISO Numeric Code"); 
-end; 
-
-trigger OnAfterGetRecord() 
-begin 
-    if (CurrencyDataItem."ISO Numeric Code" <> 'DKK') then 
-    begin 
-        CurrReport.Skip(); 
-    end; 
-end; 
+trigger OnAfterGetRecord()
+begin
+    if (CurrencyDataItem."ISO Numeric Code" <> 'DKK') then begin
+        CurrReport.Skip();
+    end;
+end;
 ```
 
 ## See Also
