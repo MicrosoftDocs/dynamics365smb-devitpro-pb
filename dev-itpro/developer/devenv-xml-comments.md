@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The documentation comment must immediately precede a user-defined type, such as the codeunit, table, or interface, or the member such as a field or method, that they annotate. The syntax for adding XML comments in your code is triple slashes (///) followed by one of the supported XML tags. There is IntelliSense support for writing documentation comments. Most importantly providing a template documentation comment when writing the third slash in the triple slash.
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The documentation comment must immediately precede a user-defined type that it annotates, for example a codeunit, table, or interface, or a member such as a field or method. The syntax for adding XML comments in your code is triple slashes (///) followed by one of the supported XML tags. There is IntelliSense support for writing documentation comments. Most importantly providing a template documentation comment when writing the third slash in the triple slash.
 
 Documentation comments are visible when hovering over source symbols, in completion lists, and in signature help. 
 
