@@ -27,7 +27,7 @@ This walkthrough describes how to develop a custom API page and access it. At a 
 This walkthrough requires the following:  
 
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
-  - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
+  - The CRONUS International Ltd. demonstration data. For more information, see [Properties of the Demo License](../deployment/demo-license.md)
   - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
 ## Create the source table for the API
