@@ -40,7 +40,7 @@ The FieldNo's of the fields to be loaded.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Remarks
 
-This method will trigger a JIT load, but allows for triggering the JIT load on multiple fields. If the fields are already loaded, another load will not be triggered. Using this method over implicit jit loads allows for more explicit error handling when a load fails.
+This method will trigger a [JIT load](../../devenv-partial-records.md#jit) of the specified fields. The method allows for triggering the JIT load on multiple fields. If the fields are already loaded, another load will not be triggered. Using this method instead of relying on implicit JIT loads lets you develop for more explicit error handling when a load fails.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
