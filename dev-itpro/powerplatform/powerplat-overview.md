@@ -50,9 +50,9 @@ There are known limitations with [!INCLUDE[prodshort](../developer/includes/prod
 - Attachment and Images/Pictures are not supported for virtual entities.
 - BLOB to multiline support.
 - Advanced search has some limitations. Each query designed translates to an OData query against [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
-- The following predicates are not supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
-- Combining **And** and **Or** groups across columns.
-- Filtering on related entities.
+  * The following predicates are not supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
+  * Combining **And** and **Or** groups across columns.
+  * Filtering on related entities.
 
 ## See Also
 
