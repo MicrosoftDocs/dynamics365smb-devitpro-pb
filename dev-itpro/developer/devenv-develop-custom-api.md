@@ -134,12 +134,12 @@ To expose data in an API page, the first thing needed is a source table. For the
 > <br>On the other hand, Enums have their on types and all available Enum members are generated in the metadata:
 > `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`  
 >
-> ```
-> < EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
+>```
+>< EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
 >            <Member Name="Petrol" Value="0"/>
 >            <Member Name="Diesel" Value="1"/>
 >            <Member Name="Electric" Value="2"/>
->     </EnumType>
+>    </EnumType>
 > ```
 
 ## Create the API page
