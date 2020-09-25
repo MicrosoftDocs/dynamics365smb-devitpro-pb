@@ -68,7 +68,7 @@ tableextension 50100 Foo_CustomerExtension extends Customer
 
 ## Example of issues detected by this rule
 
-The following example involves three extensions, Foo, Bar and Foobar.
+The following example involves three extensions; Foo, Bar, and Foobar.
 
 Foo defines a table named that does not have any procedure:
 ```
@@ -120,7 +120,7 @@ table 10 Foo_Table
 }
 ```
 
-When compiling the extension Bar, the AL compiler reports now a warning similar to `AL0523: The 'Table Bar_Table' already defines a method called 'MyProcedure' with the same parameter types.`. The runtime behavior of your extension is still preserved though as it will execute the procedure defined in the table extension.
+When compiling the extension Bar, the AL compiler reports now a warning similar to `AL0523: The 'Table Bar_Table' already defines a method called 'MyProcedure' with the same parameter types.`. The runtime behavior of your extension is still preserved though as it will run the procedure defined in the table extension.
 
 When compiling the extension Foobar, the compilation fails because the AL compiler reports an error similar to `AL0196: The call is ambiguous between the method 'MyProcedure()' defined in TableExtension 'Bar_CustomerExtension' by the extension 'Bar' and the method 'MyProcedure()' defined in Table 'Foo_Table' by the extension 'Foo`.
 
