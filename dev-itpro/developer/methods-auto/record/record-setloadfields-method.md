@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.SetLoadFields Method
-Sets the fields to be initially loaded when the the record is retrieved from its data source. Will overwrite previously selections of fields to load.
+Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.
 
 
 ## Syntax
@@ -28,13 +28,13 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Fields*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The FieldNo's of the fields that should be loaded.  
+The FieldNo's of the fields to be loaded.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if all could be selected for initial loading; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if all fields are selected for subsequent loads; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
