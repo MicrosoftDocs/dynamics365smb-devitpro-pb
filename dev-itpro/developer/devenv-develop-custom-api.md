@@ -36,99 +36,98 @@ To expose data in an API page, the first thing needed is a source table. For the
 
 1. Create a new table. For more information, see [Tables Overview](../developer/devenv-tables-overview.md). 
 2. Name the table **Car Brand**, and specify **50100** as the table ID.  
-3. Add necessary fields for a car brand as shown in the example below:
+3. Add any necessary fields for a car brand as shown below:
 
-```
-table 50100 "Car Brand"
-{
-    DataClassification = CustomerContent;
-    Caption = 'Car Brand';
-
-    fields
+    ```
+    table 50100 "Car Brand"
     {
-        field(1; Name; Text[100])
+        DataClassification = CustomerContent;
+        Caption = 'Car Brand';
+
+        fields
         {
-            Caption = 'Name';
+            field(1; Name; Text[100])
+            {
+                Caption = 'Name';
+            }
+            field(2; Description; Text[100])
+            {
+                Caption = 'Description';
+            }
+            field(3; "Country"; Text[100])
+            {
+                Caption = 'Brand Id';
+            }
         }
-        field(2; Description; Text[100])
+
+        keys
         {
-            Caption = 'Description';
-        }
-        field(3; "Country"; Text[100])
-        {
-            Caption = 'Brand Id';
+            key(PK; Name)
+            {
+                Clustered = true;
+            }
         }
     }
-
-    keys
-    {
-        key(PK; Name)
-        {
-            Clustered = true;
-        }
-    }
-}
-```
+    ```
 4. Now, create a new table for **Car Model**, and specify **50101** as the table ID.
-5. Add any necessary fields for a car model as shown in the example below. Make sure to have a field for **Brand Id** and that **TableRelation** is set to **"Car Brand".SystemId**.
+5. Add any necessary fields for a car model as shown in the below. Make sure to have a field for **Brand Id** and that **TableRelation** is set to **"Car Brand".SystemId**.
+    ```
+    table 50101 "Car Model"
+    {
+        DataClassification = CustomerContent;
+        Caption = 'Car Model';
+    
+        fields
+        {
+            field(1; Name; Text[100])
+            {
+                Caption = 'Name';
+            }
+            field(2; Description; Text[100])
+            {
+                Caption = 'Description';
+            }
+            field(3; "Brand Id"; Guid)
+            {
+                TableRelation = "Car Brand".SystemId;
+                Caption = 'Brand Id';
+            }
+            field(4; Power; Integer)
+            {
+                Caption = 'Power (cc)';
+            }
+            field(5; "Fuel Type"; Enum "Fuel Type")
+            {
+                Caption = 'Fuel Type';
+            }
+        }
 
-```
-table 50101 "Car Model"
-{
-    DataClassification = CustomerContent;
-    Caption = 'Car Model';
-
-    fields
-    {
-        field(1; Name; Text[100])
+        keys
         {
-            Caption = 'Name';
-        }
-        field(2; Description; Text[100])
-        {
-            Caption = 'Description';
-        }
-        field(3; "Brand Id"; Guid)
-        {
-            TableRelation = "Car Brand".SystemId;
-            Caption = 'Brand Id';
-        }
-        field(4; Power; Integer)
-        {
-            Caption = 'Power (cc)';
-        }
-        field(5; "Fuel Type"; Enum "Fuel Type")
-        {
-            Caption = 'Fuel Type';
+            key(PK; Name, "Brand Id")
+            {
+                Clustered = true;
+            }
         }
     }
 
-    keys
+    enum 50100 "Fuel Type"
     {
-        key(PK; Name, "Brand Id")
+        Extensible = true;
+        value(0; Petrol)
         {
-            Clustered = true;
+            Caption = 'Petrol';
+        }
+        value(1; Diesel)
+        {
+            Caption = 'Diesel';
+        }
+        value(2; Electric)
+        {
+            Caption = 'Electric';
         }
     }
-}
-
-enum 50100 "Fuel Type"
-{
-    Extensible = true;
-    value(0; Petrol)
-    {
-        Caption = 'Petrol';
-    }
-    value(1; Diesel)
-    {
-        Caption = 'Diesel';
-    }
-    value(2; Electric)
-    {
-        Caption = 'Electric';
-    }
-}
-```
+    ```
 > [!TIP]  
 > As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
 > `<Property Name="fuelType" Type="Edm.String"/>`
