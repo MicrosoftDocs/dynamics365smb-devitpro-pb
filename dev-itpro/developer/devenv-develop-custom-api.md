@@ -213,88 +213,99 @@ page 50101 "API Car Model"
 }
 ```
 
-7. Now repeat the steps 1-6 for **API Car Brand** page.
-8. You can define a **API Car Model** part in **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate **ReferentialConstraints** property in the metadata as below: ```
-<NavigationProperty Name="carModels" Type="Collection(Microsoft.NAV.carModel)" Partner="carBrand" ContainsTarget="true">
+7. Now, repeat the steps 1-6 for **API Car Brand** page.
+8. You can define a **API Car Model** part in **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate **ReferentialConstraints** property in the metadata as below:  
+
+    ```
+    <NavigationProperty Name="carModels" Type="Collection(Microsoft.NAV.carModel)" Partner="carBrand" ContainsTarget="true">
     <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
-</NavigationProperty>```
+    </NavigationProperty>
+    ```
 
-```
-page 50100 "API Car Brand"
-{
-    PageType = API;
+    And the **API Car Brand** page:
 
-    APIVersion = 'v1.0';
-    APIPublisher = 'bctech';
-    APIGroup = 'demo';
-
-    EntityCaption = 'CarBrand';
-    EntitySetCaption = 'CarBrands';
-    EntityName = 'carBrand';
-    EntitySetName = 'carBrands';
-
-    ODataKeyFields = SystemId;
-    SourceTable = "Car Brand";
-
-    Extensible = false;
-    DelayedInsert = true;
-
-    layout
+    ```
+    page 50100 "API Car Brand"
     {
-        area(content)
-        {
-            repeater(Group)
-            {
-                field(id; Rec.SystemId)
-                {
-                    Caption = 'Id';
-                    Editable = false;
-                }
+        PageType = API;
 
-                field(name; Rec.Name)
+        APIVersion = 'v1.0';
+        APIPublisher = 'bctech';
+        APIGroup = 'demo';
+
+        EntityCaption = 'CarBrand';
+        EntitySetCaption = 'CarBrands';
+        EntityName = 'carBrand';
+        EntitySetName = 'carBrands';
+
+        ODataKeyFields = SystemId;
+        SourceTable = "Car Brand";
+
+        Extensible = false;
+        DelayedInsert = true;
+
+        layout
+        {
+            area(content)
+            {
+                repeater(Group)
                 {
-                    Caption = 'Name';
-                }
-                field(description; Rec.Description)
-                {
-                    Caption = 'Description';
-                }
-                field(country; Rec.Country)
-                {
-                    Caption = 'Country';
-                }
-                part(carModels; "API Car Model")
-                {
-                    Caption = 'Car Models';
-                    EntityName = 'carModel';
-                    EntitySetName = 'carModels';
-                    SubPageLink = "Brand Id" = Field(SystemId);
+                    field(id; Rec.SystemId)
+                    {
+                        Caption = 'Id';
+                        Editable = false;
+                    }
+
+                    field(name; Rec.Name)
+                    {
+                        Caption = 'Name';
+                    }
+                    field(description; Rec.Description)
+                    {
+                        Caption = 'Description';
+                    }
+                    field(country; Rec.Country)
+                    {
+                        Caption = 'Country';
+                    }
+                    part(carModels; "API Car Model")
+                    {
+                        Caption = 'Car Models';
+                        EntityName = 'carModel';
+                        EntitySetName = 'carModels';
+                        SubPageLink = "Brand Id" = Field(SystemId);
+                    }
                 }
             }
         }
     }
-}
-``` 
+    ``` 
 
 > [!TIP]  
-    > Parts are defined as 1-N relationship by default. However you can define it to be as 1-0, 1-1 relationship. In order to achieve that add **CaptionML = ENU = 'Multiplicity=ZeroOrOne';** property in your part as below:
-    > ```part(carModels; "API Car Model")
-        {
-            CaptionML = ENU = 'Multiplicity=ZeroOrOne';
-            EntityName = 'carModel';
-            EntitySetName = 'carModels';
-            SubPageLink = "Brand Id" = Field(SystemId);
-        }```
-    > This will change the **NavigationalProperty** in the metadata from a Collection to an object as below:
-    > ```<NavigationProperty Name="carModel" Type="Microsoft.NAV.carModel" ContainsTarget="true">
-            <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
-        </NavigationProperty>```
+> Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add **CaptionML = ENU = 'Multiplicity=ZeroOrOne';** property in your part as below:
+>```
+>part(carModels; "API Car Model")
+>   {
+>       CaptionML = ENU = 'Multiplicity=ZeroOrOne';
+>        EntityName = 'carModel';
+>        EntitySetName = 'carModels';
+>        SubPageLink = "Brand Id" = Field(SystemId);
+>    }
+> ```
+> This will change the **NavigationalProperty** in the metadata from a Collection to an object as below:
+> 
+>```
+><NavigationProperty Name="carModel" Type="Microsoft.NAV.carModel" ContainsTarget="true">
+>            <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
+>        </NavigationProperty>
+>```
 
 ## Using carBrand and carModel APIs
 
-Both API pages support create, read, update and delete operations. If you want to disallow create, update and delete operations, you can use **InsertAllowed, ModifyAllowed, DeleteAllowed** properties respectively.
+Both API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use **InsertAllowed**, **ModifyAllowed**, and **DeleteAllowed** properties respectively.
 
-Now let's create a car brand:
+Now, we will create a car brand:
+
 ```
 POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
 
@@ -304,11 +315,15 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
     "country": "Italy"
 }
 ```
-You can make a GET request to retrieve the car brands:
+
+You can make a `GET` request to retrieve the car brands:
+
 ```
 GET https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
 ```
+
 Which will result in following response:
+
 ```
 {
    "@odata.context":"https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/$metadata#companies(<company id>)/carBrands",
@@ -323,7 +338,8 @@ Which will result in following response:
    ]
 }
 ```
-We can now create a car model that belongs to car brand we just created. Since navigational property is defined in the API page as a part, we can create a car model in different ways:
+
+We can now create a car model that belongs to car brand we just created. Since the navigational property is defined in the API page as a part, we can create a car model in the following different ways:
 
 1. ``` 
     POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
@@ -345,7 +361,8 @@ We can now create a car model that belongs to car brand we just created. Since n
         "fuelType": "Petrol"
     }
     ```
-And navigational property also allows us to do a deep insert, deep insert is the creation of an entity instance and related entity instances, in a single POST request. So you can combine car brand and car model creation in a single request as below:
+
+And the navigational property also allows us to do a deep insert; deep insert is the creation of an entity instance and related entity instances, in a single `POST` request. So you can combine car brand and car model creation in a single request as illustrated below:
 
 3. ``` 
     POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carBrands
@@ -368,14 +385,19 @@ And navigational property also allows us to do a deep insert, deep insert is the
     }
     ```
 
-## General Tips For Custom APIs
+## General tips for custom APIs
 
 1. Use SystemId as OData primary key.
-2. Make sure all the table fields in TableRelations/SubPageLink are available in the API pages and make sure to define the relationship multiplicity (1-0/1-1 or 1-N)
+2. Make sure that all the table fields in TableRelations/SubPageLink are available in the API pages and make sure to define the relationship multiplicity (1-0/1-1 or 1-N).
     - Doing so enables the platform to generate ReferentialConstraints, that OData consumers can use to understand the relations between entities
     - The platform will create as well bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
-3. Use Enumerations
-3. Make sure to localize your custom API pages
+3. Use Enumerations.
+3. Make sure to localize your custom API pages:
     - Use EntityCaption, EntitySetCaption properties
     - Use captions for Enums
     - All these localizations can be retrieved through https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions
+
+
+## See Also
+
+[]()
