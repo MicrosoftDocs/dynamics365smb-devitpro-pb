@@ -32,11 +32,11 @@ This walkthrough requires the following:
 
 ## Create the source table for the API
 
-To expose data in an API page, the first thing needed is a source table. For this walkthrough we will create a table object that describes the schema for a car brand.
+To expose data in an API page, the first thing needed is a source table. For the purpose of this walkthrough we will create a table object that describes the schema for a car brand.
 
 1. Create a new table. For more information, see [Tables Overview](../developer/devenv-tables-overview.md). 
 2. Name the table **Car Brand**, and specify **50100** as the table ID.  
-3. Add necessary fields for a car brand as shown below:
+3. Add necessary fields for a car brand as shown in the example below:
 
 ```
 table 50100 "Car Brand"
@@ -69,8 +69,8 @@ table 50100 "Car Brand"
     }
 }
 ```
-4. Now create a new table for **Car Model**, and specify **50101** as the table ID.
-5. Add necessary fields for a car model as shown below. Make sure to have a field for **Brand Id** and **TableRelation** is set to **"Car Brand".SystemId**.
+4. Now, create a new table for **Car Model**, and specify **50101** as the table ID.
+5. Add any necessary fields for a car model as shown in the example below. Make sure to have a field for **Brand Id** and that **TableRelation** is set to **"Car Brand".SystemId**.
 
 ```
 table 50101 "Car Model"
@@ -130,28 +130,31 @@ enum 50100 "Fuel Type"
 }
 ```
 > [!TIP]  
-    > As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
-    > ``` <Property Name="fuelType" Type="Edm.String"/> ```
-    > On the other hand, Enums have their on types and all available Enum members are generated in the metadata:
-    > ``` <Property Name="fuelType" Type="Microsoft.NAV.fuelType"/> ```
-    > ``` <EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
-    >            <Member Name="Petrol" Value="0"/>
-    >            <Member Name="Diesel" Value="1"/>
-    >            <Member Name="Electric" Value="2"/>
-    >     </EnumType>```
+> As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
+> `<Property Name="fuelType" Type="Edm.String"/>`
+> On the other hand, Enums have their on types and all available Enum members are generated in the metadata:
+> `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`  
+>
+> ```
+> < EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
+>            <Member Name="Petrol" Value="0"/>
+>            <Member Name="Diesel" Value="1"/>
+>            <Member Name="Electric" Value="2"/>
+>     </EnumType>
+> ```
 
 ## Create the API page
 
-Now let's create API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with type property equal to API. Read more about API pages here: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype
+In the following, we will create two API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with type property equal to API. For more information, see [API Page Type](devenv-api-pagetype.md).
 
-### To create API paged to display **Car Brand** and **Car Model**
+### To create API pages to display **Car Brand** and **Car Model**
 
 1. Create a new API page.
 2. Name the page **API Car Model**, and specify **50101** as the page ID.  
 3. Specify the **Car Model**  table as the source table.
-4. Specify APIVersion, APIPublisher, APIGroup, EntityName and EntitySetName for your API page. These properties will effect your custom endpoint: https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel. For more information on Business Central API endpoints, see https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics.
-5. Specify EntityCaption and EntitySetCaption. These two properties are generated in the entityDefinitions (https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions) which are localized and translatable. 
-6. Make sure to set ODataKeyFields property to SystemId. SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table (https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-table-object#systemid). 
+4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will effect your custom endpoint: https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel. For more information, see [Business Central API endpoints](/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics.md).
+5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions (https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions) which are localized and translatable. 
+6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [Table Object](devenv-table-object.md#systemid). 
 
 ```
 page 50101 "API Car Model"
