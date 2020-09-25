@@ -22,13 +22,13 @@ Building an app requires capabilities to perform relational modeling between ent
 
 ## Generating virtual entities
 
-By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
+By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more entities, and then request that Common Data Service generates the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
 
 When a virtual entity is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service. For data types that are supported, the field properties in Common Data Service are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-This rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
+The rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
 
 | Data type in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] | Modeled data type in Common Data Service |
 |-------------------------------------|------------------------------------------|
