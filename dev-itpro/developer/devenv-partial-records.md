@@ -103,7 +103,7 @@ For reports, the fields that are selected for loading are fields set up as colum
 
 The same issue arises for pages called through OData. If a field isn't requested for the OData output, it won't be loaded. In this case, it's beneficial to add the fields using the AddLoadFields method in the OnOpenPage trigger.
 
-## Just-in-time (JIT) loading
+## <a name="jit"></a>Just-in-time (JIT) loading
 
 When a record is loaded as a partial record, the obvious question is: What happens when accessing a field that hasn't been selected for loading?". The answer is JIT loading. The platform, in such a case, does an implicit GET on the record and loads out the missing field.
 
