@@ -300,7 +300,7 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
 
 ## Using carBrand and carModel APIs
 
-Both API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use **InsertAllowed**, **ModifyAllowed**, and **DeleteAllowed** properties respectively.
+Both API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the **InsertAllowed**, **ModifyAllowed**, and **DeleteAllowed** properties respectively.
 
 Now, we will create a car brand:
 
@@ -314,7 +314,7 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 }
 ```
 
-You can make a `GET` request to retrieve the car brands:
+We can make a `GET` request to retrieve the car brands:
 
 ```
 GET https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
@@ -337,51 +337,55 @@ Which will result in following response:
 }
 ```
 
-We can now create a car model that belongs to car brand we just created. Since the navigational property is defined in the API page as a part, we can create a car model in the following different ways:
+We can now create a car model that belongs to the car brand that we just created. Since the navigational property is defined in the API page as a part, we can create a car model in one of the following different ways:
 
-1. ``` 
-    POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
-    {
-        "name": "MODEL1",
-        "description": "Model 1",
-        "power": 1700,
-        "fuelType": "Petrol"
-    }
-    ```
+### Example 1
+``` 
+POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
+{
+    "name": "MODEL1",
+    "description": "Model 1",
+    "power": 1700,
+    "fuelType": "Petrol"
+}
+```
+### Example 2
 
-2. ``` 
-    POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carModels
-    {
-        "name": "MODEL1",
-        "brandId": "24cafc3a-b1fe-ea11-9306-000d3a482952",
-        "description": "Model 1",
-        "power": 1700,
-        "fuelType": "Petrol"
-    }
-    ```
+``` 
+POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carModels
+{
+    "name": "MODEL1",
+    "brandId": "24cafc3a-b1fe-ea11-9306-000d3a482952",
+    "description": "Model 1",
+    "power": 1700,
+    "fuelType": "Petrol"
+}
+```
+
+### Example 3
 
 And the navigational property also allows us to do a deep insert; deep insert is the creation of an entity instance and related entity instances, in a single `POST` request. So you can combine car brand and car model creation in a single request as illustrated below:
 
-3. ``` 
-    POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carBrands
-    {
-        "name": "CARBRAND2",
-        "description": "Car Brand 2",
-        "country": "Germany",
-        "carModels": [{
-		    			"name": "MODELA",
-			    		"description": "Model A",
-				    	"power": 0,
-					    "fuelType": "Electric"
-				    },
-				    {
-    					"name": "MODELB",
-	    				"description": "Model B",
-		    			"power": 0,
-			    		"fuelType": "Electric"
-				    }]
-    }
-    ```
+``` 
+POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carBrands
+{
+    "name": "CARBRAND2",
+    "description": "Car Brand 2",
+    "country": "Germany",
+    "carModels": [{
+	    			"name": "MODELA",
+		    		"description": "Model A",
+			    	"power": 0,
+				    "fuelType": "Electric"
+			    },
+			    {
+   					"name": "MODELB",
+    				"description": "Model B",
+	    			"power": 0,
+		    		"fuelType": "Electric"
+			    }]
+}
+```
 
 ## General tips for custom APIs
 
