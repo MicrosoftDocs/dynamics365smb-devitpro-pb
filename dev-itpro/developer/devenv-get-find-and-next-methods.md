@@ -23,7 +23,7 @@ The following methods are used to search for records:
 These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.
 
 > [!TIP]
-> When using these methods, consider using the partial records methods to improve performance, especially when looping through several records and using table extensions. For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
+> When using these methods, consider using the partial records methods to improve performance, especially when looping through several records or when table extensions are defined on the table. For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
 ## Get method  
 

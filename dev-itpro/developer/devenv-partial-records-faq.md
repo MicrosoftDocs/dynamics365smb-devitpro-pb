@@ -21,7 +21,7 @@ No. If a field that's not selected for loading is accessed, the data will be fet
 
 ## Where is "Partial Records" applied? To all records instances?
 
-Currently, partial records capability is only used on report data items and web service pages. The behavior for all other record instances is as before, that is, all fields will be loaded. AL developers are, however, able to use it in their own code to improve performance in looping code. 
+Currently, the partial records capability is only implicitly used on report data items and OData web service pages. The behavior for all other record instances is as before, that is, all fields will be loaded. AL developers are, however, able to use it in their own code to improve performance in looping code.
 
 ## What happens when accessing fields not selected for load?
 
@@ -37,7 +37,7 @@ The platform determines that a field, which isn't currently loaded, is needed. T
 
 ## Can I optimize my code, so that I can avoid an extra database call to load my field?
 
-Yes. You can add your field to the list of fields selected for loading, using the method AddLoadFields
+Yes. You can add your field to the list of fields selected for loading by using the AddLoadFields method.
 
 ## Which fields can be selected not to be loaded?
 
@@ -49,7 +49,7 @@ When no fields from a table extension are selected for loading, then table exten
 
 ## What's the performance overhead of determining the fields necessary for a record? 
 
-Currently, for reports a calculation takes place at compile time and once per data item instance.  For OData and API pages, the calculation takes place at compile time and once per request segment.
+For reports, a calculation takes place at compile time and once per data item type per report execution.  For OData pages, the calculation takes place at compile time and once per request segment.
 
 Compared to the time it takes to fetch data, the overhead is insignificant.
 
