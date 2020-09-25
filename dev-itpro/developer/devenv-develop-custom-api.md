@@ -389,17 +389,17 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 
 ## General tips for custom APIs
 
-1. Use SystemId as OData primary key.
-2. Make sure that all the table fields in TableRelations/SubPageLink are available in the API pages and make sure to define the relationship multiplicity (1-0/1-1 or 1-N).
+1. Use SystemId as the OData primary key.
+2. Make sure that all the table fields in TableRelations/SubPageLinks are available in the API pages and make sure to define the relationship multiplicity (1-0/1-1 or 1-N).
     - Doing so enables the platform to generate ReferentialConstraints, that OData consumers can use to understand the relations between entities
-    - The platform will create as well bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
+    - The platform will also create bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
 3. Use Enumerations.
 3. Make sure to localize your custom API pages:
     - Use EntityCaption, EntitySetCaption properties
     - Use captions for Enums
     - All these localizations can be retrieved through https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions
 
-
 ## See Also
 
-[]()
+[Getting Started with AL](../developer/devenv-get-started.md)  
+[API Page Type](devenv-api-pagetype.md)  
