@@ -24,6 +24,10 @@ You can integrate with Isabel to make it easy to upload and download bank files.
 |----|----|
 |Removed| This feature uses an automation that is not supported by the Dynamics 365 Business Central compiler and blocks the C/AL to AL conversion. In an earlier release we made this functionality unavailable, and now we have removed it. Microsoft partners can provide their solutions for customers who need to integrate with Isabel.
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-be](../includes/fields-obsolete-be.md)]
+
 ## See Also
 [Upgrading to Microsoft Dynamics 365 Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  

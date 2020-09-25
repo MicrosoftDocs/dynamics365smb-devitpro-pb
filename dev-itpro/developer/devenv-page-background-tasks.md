@@ -29,7 +29,7 @@ A page background task is a *child session* that runs processes from a codeunit 
 
 A background task is a multithread operation between the parent and child sessions. The following diagram illustrates the flow of a background task. In the illustration, the threads start in the order: THREAD A, THREAD B, THREAD C.  
 
-[![](media/page-background-task-flow-v4.png "Select Page background task flow")](media/page-background-task-flow-v4.png#lightbox)
+[![Background task flow](media/page-background-task-flow-v4.png "Select Page background task flow")](media/page-background-task-flow-v4.png#lightbox)
 
 ### Background task characteristics and behavior
 
