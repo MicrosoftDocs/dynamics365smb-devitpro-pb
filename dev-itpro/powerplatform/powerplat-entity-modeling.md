@@ -26,8 +26,6 @@ By default, virtual entities for [!INCLUDE[prodshort](../developer/includes/prod
 
 ## Entity fields
 
-<!-- @lukasz - please look at the entire section -->
-
 When a virtual entity is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Common Data Service. For data types that are supported, the field properties in Common Data Service are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 This rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
@@ -117,16 +115,6 @@ Enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled a
 If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has multiple companies, the default company must be selected. This can be done either on a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity configuration page or on a User entity page.
 
 Furthermore, every virtual entity for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity have a relationship to the cdm\_company entity in Common Data Service. The cdm\_company entity is a native entity in Common Data Service and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup field is also created in the virtual entity for the related entity (cdm\_company in this case). This lookup field is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A field that is named **Company Code** is also added in the virtual entity. This field must be used in programming.
-
-## Attachments
-
-@henrik, should we remove this section for now?
-
-Attachments in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are supported on a per-entity basis. For example, an invoice header entity will implement an invoice-related attachments entity to enable attachments via entities.
-
-Entities of this type will have relations with the corresponding attachments entity in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Therefore, they will follow the same pattern as the other relations that were discussed earlier. In other words, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities that have implemented attachments functionality will also make attachments available by using virtual entities. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities that do not support attachments also will not support attachments when they are virtualized in Common Data Service.
-
-Note that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities support only the reading of attachments. They do not currently support the creation, update, or deletion of attachments by using virtual entities.
 
 ## OData actions
 
