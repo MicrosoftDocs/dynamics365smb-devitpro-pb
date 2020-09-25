@@ -39,6 +39,10 @@ The FieldNo's of the fields to be loaded.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+
 ## Example
 
 On a report, you might load a field that is outside the ones default selected for load via DataColumn, so one can add it in the OnPreDataItem trigger:
@@ -60,6 +64,8 @@ end;
 ```
 
 ## See Also
+
+[Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)
