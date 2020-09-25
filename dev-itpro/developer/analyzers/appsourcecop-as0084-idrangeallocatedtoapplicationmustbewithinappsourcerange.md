@@ -27,11 +27,11 @@ This rule validates that the ID range specified in the `app.json` of your extens
 
 For more information about the object ID ranges in Business Central, see [Object Ranges in Dynamics 365 Business Central](../devenv-object-ranges.md).
 
-For more information about the properties in the `app.json`, see [JSON Files](../devenv-json-files.md).
+For more information about the properties in the `app.json` file, see [JSON Files](../devenv-json-files.md).
 
 ## How to fix this diagnostic
 
-If you are targetting the AppSource markeplace, you need to update the ID range in your app.json with the one that Microsoft provided you with.
+If you are targetting the AppSource markeplace, you need to update the ID range in your `app.json` file with the one that Microsoft provided you with.
 
 If you are not targeting the AppSource markeplace, you can suppress this rule using [rulesets](devenv-using-code-analysis-tool-with-rule-set.md).
 
