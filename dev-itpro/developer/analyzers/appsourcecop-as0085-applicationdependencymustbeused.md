@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 The 'application' property must be used instead of explicit dependencies  
 
 ## Description
-The 'application' property must be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies. See https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
+The 'application' property must be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
