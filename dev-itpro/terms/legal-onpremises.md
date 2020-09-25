@@ -12,8 +12,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Legal Resources for Business Central On-Premises
 
-This page provides links to legal information for Business Central on-premises.
-
+This page provides links to legal information for Business Central On-Premises.
 
 ## Software License Terms
 
@@ -44,4 +43,5 @@ This page provides links to legal information for Business Central on-premises.
 [Legal Resources for Business Central Online](legal.md)  
 [Microsoft Online Service Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products)  
 [Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)  
+[Online Service Terms](https://www.microsoft.com/licensing/product-licensing/products)
 
