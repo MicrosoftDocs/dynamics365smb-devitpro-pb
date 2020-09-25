@@ -14,9 +14,11 @@ ms.service: "dynamics365-business-central"
 
 # Developing a Custom API
 
+This walkthrough describes how to develop a custom API page by using an AL extension and accessing it to retrieve responses and make updates through the API.
+
 ## About this walkthrough
 
-This walkthrough describes how to develop a custom API page and access it. At a high-level, this process involves the following tasks:  
+At a high-level, this process involves the following tasks:  
 
 1. Develop an AL extension with a new API page.
 2. Add necessary fields, properties, and subpages to the API page.
@@ -30,7 +32,7 @@ This walkthrough requires the following:
   - The CRONUS International Ltd. demonstration data. For more information, see [Properties of the Demo License](../deployment/demo-license.md)
   - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
-## Create the source table for the API
+## Creating source tables for the API
 
 To expose data in an API page, the first thing needed is a source table. For the purpose of this walkthrough we will create a table object that describes the schema for a car brand.
 
@@ -142,9 +144,9 @@ To expose data in an API page, the first thing needed is a source table. For the
 >    </EnumType>
 > ```
 
-## Create the API page
+## Creating API pages
 
-In the following, we will create two API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with type property equal to API. For more information, see [API Page Type](devenv-api-pagetype.md).
+In the following, we will create two API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with the `PageType` property set to `API`. For more information, see [API Page Type](devenv-api-pagetype.md).
 
 ### To create API pages to display **Car Brand** and **Car Model**
 
