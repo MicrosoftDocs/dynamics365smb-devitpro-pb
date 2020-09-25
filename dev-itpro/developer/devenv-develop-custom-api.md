@@ -395,9 +395,9 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
     - The platform will also create bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
 3. Use Enumerations.
 3. Make sure to localize your custom API pages:
-    - Use EntityCaption, EntitySetCaption properties
+    - Use `EntityCaption` and `EntitySetCaption` properties
     - Use captions for Enums
-    - All these localizations can be retrieved through https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions
+    - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
 ## See Also
 
