@@ -1,5 +1,6 @@
 ---
 title: "Legal Resources for Business Central online"
+description: Provides links to legal information for Business Central. 
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2020
@@ -9,11 +10,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Legal Resources for Business Central Online
+# Legal Landing Page for Microsoft Dynamics 365 Business Central
 
-This page provides links to legal information for the business software specified below.
+This page provides links to legal information for Business Central. 
 
-## Micrososft Online Serice Terms (OST)
+## Microsoft Online Service Terms (OST)
 
 - [Online Service Terms(OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products)
 
