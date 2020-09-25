@@ -30,7 +30,7 @@ Yes. The virtual entities are all generated in the MicrosoftBusinessCentralERPVE
 
 ### Which entities from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do users see in the catalog in Common Data Service?
 
-Generally, users see all entities exposed as API Pages with the exception of Microsoft legacy API pages: beta and v1.0.
+Generally, users see all entities exposed as API pages with the exception of Microsoft legacy API pages: beta and v1.0.
 
 ### Do all Microsoft Power Platform users have to be users in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]?
 
@@ -48,7 +48,7 @@ No. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entiti
 
 This approach is not currently possible in Common Data Service.
 
-### If I want a default value to be entered in a field during pre-create, will an initValue on the data entity work?
+### If I want a default value to be entered in a field during pre-create, will an initValue on the data entity then work?
 
 Yes. Here is the order of calls:
 

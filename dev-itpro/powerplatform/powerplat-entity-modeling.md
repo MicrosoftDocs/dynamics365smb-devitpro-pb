@@ -120,11 +120,11 @@ Furthermore, every virtual entity for a [!INCLUDE[prodshort](../developer/includ
 
 OData actions in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are made available as custom actions in Common Data Service. For more information about custom actions and what they enable in Common Data Service, see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
 
-OData actions generated for [!INCLUDE[prodshort] have only one parameter which is the entity. There is no ouput parameter.
+OData actions generated for [!INCLUDE[prodshort] have only one parameter which is the entity. There is no output parameter.
 
 ## Labels and localization
 
-Labels that are defined on metadata, such as entity names and field names in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], are retrieved when virtual entities are generated in Common Data Service. The labels are retrieved using an API on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] called **entityDefinitions**. This API is available on every API route, and will serve translations and other entity metadata, not suited for OData $metadata. But with both the entityDefinition and $metadata Common Data Service has all it needs to generate localized virtual entities.  
+Labels that are defined on metadata, such as entity names and field names in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], are retrieved when virtual entities are generated in Common Data Service. The labels are retrieved using an API on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] called **entityDefinitions**. This API is available on every API route, and will serve translations and other entity metadata, not suited for OData `$metadata`. But with both the entityDefinition and `$metadata` Common Data Service has all it needs to generate localized virtual entities.  
 
 Any runtime labels are returned in the language of the current user context. In other words, they are returned in the language that is specified on that user's UserInfo record in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This behavior also applies to error messages.
 
