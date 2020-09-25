@@ -47,7 +47,7 @@ This method is part of the partial records capability for improving performance.
 
 ## Example
 
-To speedup the calculation of a simple mean function, you can decide not to load out all fields, but just the necessary ones. In the following code snippet, only the "Standard Cost" is needed, so only it is selected to be loaded.
+This example uses the SetLoadFields method to speedup the calculation of the mean for values of the **Standard Cost** field in the **Item** table. Instead of loading all fields, only the **Standard Cost** is loaded. The other fields aren't needed for the calculation, so they're not loaded.
 
 ```
 procedure ComputeArithmeticMean(): Decimal;
