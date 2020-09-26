@@ -24,7 +24,7 @@ This page provides links to legal information for Business Central.
 
 ## Envestnet Yodlee - Bank Feeds
 
-- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=7240130)
+- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=724013)
 
 ## Trial Services terms 
 
