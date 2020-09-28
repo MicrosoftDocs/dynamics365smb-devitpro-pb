@@ -1,5 +1,6 @@
 ---
 title: "Page Properties"
+description: Overview of page properties in Business Central
 author: solsen
 ms.custom: na
 ms.date: 04/01/2020
