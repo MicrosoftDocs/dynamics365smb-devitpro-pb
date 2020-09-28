@@ -1,5 +1,6 @@
 ---
 title: "UICop Analyzer"
+description: Overview of the UICop analyzer rules.
 ms.author: solsen
 ms.custom: na
 ms.date: 08/25/2020
