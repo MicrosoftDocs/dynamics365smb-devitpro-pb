@@ -1,6 +1,6 @@
 ---
 title: "Page Object"
-description: "Description of the page object."
+description: "Description of the page object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2020
