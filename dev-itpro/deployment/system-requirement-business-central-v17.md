@@ -26,7 +26,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |------|-----|  
 |Supported browsers|Recommended browsers:<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Other supported browsers:<ul><li>Internet Explorer 11, latest version</li><li>Microsoft Edge Legacy, latest version</li></ul>Cookies and JavaScript must be enabled in the browser.|
 
-
+<!--
 ## <a name="NavApps"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Tablet Client and Phone Client \(in a Browser\)
 
 The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] running in a desktop browser when used for development and testing purposes.  
@@ -35,7 +35,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[nav_
 |------|-----|  
 |Server component|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client.|  
 |Supported browsers|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client.|  
-
+-->
 ##  <a name="DynNAVApp"></a> [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]
 
  The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)].  
@@ -50,7 +50,6 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |Additional hardware|<ul><li>1-GB RAM for Android and Windows.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7" for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4" for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|  
 
-
 ## <a name="Office"></a> Microsoft Office Applications
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises offers various features that require Office apps to be available on client devices. The following table shows the minimum system requirements for the features. 
@@ -61,7 +60,6 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |Word|<ul><li>Microsoft Office 2019, Word for web, or Word mobile app for iOS or Android&trade;trade;.</li></ul>|
 |Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirement-business-central-v17.md#BusInboxOutlook).|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Skype or Microsoft Teams is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|  
-
 
 ## AL Development
 
