@@ -37,7 +37,7 @@ Virtual entities in Common Data Service acts as regular entities and therefore a
 
 ### Using Custom APIs as basis for virtual entities
 
-Since the integration depends on APIs exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)], custom APIs can used for generating virtual entities. 
+Since the integration depends on APIs exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)], custom APIs can used for generating virtual entities. For more information, see [Developing a Custom API](../developer/devenv-develop-custom-api.md).
 
 ## Known limitations
 
@@ -60,3 +60,4 @@ There are known limitations with [!INCLUDE[prodshort](../developer/includes/prod
 [Application Lifecycle Management for Solutions that use Virtual Entities](powerplat-app-lifecycle-management.md)  
 [Business Central and Common Data Service Admin Reference](powerplat-admin-reference.md)  
 [FAQ](powerplat-faq.md)  
+[Developing a Custom API](../developer/devenv-develop-custom-api.md)  

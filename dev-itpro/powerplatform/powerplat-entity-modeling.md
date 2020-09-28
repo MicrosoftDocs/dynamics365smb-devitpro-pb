@@ -120,7 +120,7 @@ Furthermore, every virtual entity for a [!INCLUDE[prodshort](../developer/includ
 
 OData actions in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are made available as custom actions in Common Data Service. For more information about custom actions and what they enable in Common Data Service, see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
 
-OData actions generated for [!INCLUDE[prodshort] have only one parameter which is the entity. There is no output parameter.
+OData actions generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] have only one parameter which is the entity. There is no output parameter.
 
 ## Labels and localization
 
