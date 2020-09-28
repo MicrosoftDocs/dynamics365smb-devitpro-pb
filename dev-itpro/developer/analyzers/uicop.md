@@ -1,6 +1,6 @@
 ---
 title: "UICop Analyzer"
-description: Overview of the UICop analyzer rules.
+description: "The UICop analyzer enforces rules that must be respected by extensions that customize the Web client for Business Central."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/25/2020

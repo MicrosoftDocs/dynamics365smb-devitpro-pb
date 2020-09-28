@@ -1,6 +1,6 @@
 ---
 title: "AL Control Statements"
-description: Explains AL control statements in Business Central
+description: "Compound, conditional, and repetitive control statements in AL for Business Central"
 ms.custom: na
 ms.date: 08/10/2020
 ms.reviewer: na
