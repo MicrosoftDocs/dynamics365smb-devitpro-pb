@@ -1,5 +1,5 @@
 ---
-title: "Insert Method"
+title: "Record.Insert Method"
 description: Describes the Insert method on records in Business Central
 ms.author: solsen
 ms.custom: na
