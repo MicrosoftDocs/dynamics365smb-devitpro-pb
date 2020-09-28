@@ -1,5 +1,6 @@
 ---
 title: "When using 'OnInstallPerCompany' you should also add 'Company - Initialize'::'OnCompanyInitialize' event subscriber."
+description: Explains CodeCop Rule AA0235.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/23/2020

@@ -1,5 +1,6 @@
 ---
 title: "The name of variables and parameters must be suffixed with the type or object name."
+description: Explains CodeCop Rule AA0072.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/23/2020
