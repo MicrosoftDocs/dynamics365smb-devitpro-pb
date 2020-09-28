@@ -1,5 +1,6 @@
 ---
 title: "InternalsVisibleTo should not be used as a security feature."
+description: Explains AppSourceCop Rule AS0081.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2020

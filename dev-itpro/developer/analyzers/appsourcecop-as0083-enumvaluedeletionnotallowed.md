@@ -1,5 +1,6 @@
 ---
 title: "It is not allowed to delete a value from an enum."
+description: Explains AppSourceCop Rule AS0083.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2020
