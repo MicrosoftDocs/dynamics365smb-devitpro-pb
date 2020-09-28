@@ -405,3 +405,9 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 
 [Getting Started with AL](../developer/devenv-get-started.md)  
 [API Page Type](devenv-api-pagetype.md)  
+[APIPublisher Property](properties/devenv-apipublisher-page-property.md)  
+[APIGroup Property](properties/devenv-apigroup-page-property.md)  
+[APIVersion Property](properties/devenv-apiversion-page-property.md)  
+[EntityName Property](properties/devenv-entityname-property.md)  
+[EntitySetName Property](properties/devenv-entitysetname-property.md)  
+[Developing Extensions](devenv-dev-overview.md)  
