@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 06/03/2020
+ms.date: 08/28/2020
 ms.author: edupont
 ---
 
@@ -160,20 +160,22 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 ## Build HTML files
 
-For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). DocFx is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files for the Dynamics NAV Help Server.  
+For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+Alternatively, use [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files straight from your fork of one of the Microsoft repos. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md).  
 
 > [!TIP]
-> You can also use DocFx to generate content for other websites. In that case, either modify NAV docfx.json or replace NAVdocfx.json with your own configuration file to meet your website's requirements.
+> You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file that is kept available in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
 
 1. Install [DocFx](https://dotnet.github.io/docfx/) on your computer.
 
     DocFx is a command line tool, but you can also run it from a PowerShell script.  
 
-    You must provide a .JSON file that defines certain build settings, including the output folder in which to store the generated HTML files. We suggest that you use the NAVdocfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. However, it is configured for use with the legacy Dynamics NAV Help Server. To configure it for use with a different website, remove or replace the value of the `template` property.  
+    You must provide a .JSON file that defines certain build settings, including the output folder in which to store the generated HTML files. We suggest that you use the docfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo.  
 
     Alternatively, create your own docfx.json file based on the setup of your website. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
 
-2. To change settings in the NAVdocfx.json file, in the folder where your local clone is, such as *C:\GitHu b\MSFT\dynamics365smb-docs\business-central*, open the NAVdocfx.json file in your preferred editor.  
+2. To change settings in the docfx.json file, in the folder where your local clone is, such as *C:\GitHub\MSFT\dynamics365smb-docs\business-central*, open the docfx.json file in your preferred editor.  
 
     The following table describes key parameters.
 
@@ -181,7 +183,7 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
     |----------|-------------|
     |**dest**  | Specifies the output folder of the generated HTML files, such as `c:\Working\output\`. |
     |**template**     | Specifies the templates that the HTML files will be generated after. The value can be a string or an array. |
-    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format. In the NAVdocfx.json file, this property applies the `ROBOTS: NOINDEX, NOFOLLOW` metadata to each HTML file.  The intent is that search engines will find Microsoft's original content on the Docs.microsoft.com site rather than any customizations that you and hundreds of other may have published. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `ROBOTS` property. You can also add other global metadata, or metadata that applies to specific subfolders.  |
+    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format. We encourage you to use this property to apply the `ROBOTS: NOINDEX, NOFOLLOW` metadata to each HTML file.  The intent is that search engines will find Microsoft's original content on the Docs.microsoft.com site rather than any customizations that you and hundreds of other may have published. For an example, see the NAVdocfx.json file. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `ROBOTS` property. You can also add other global metadata, or metadata that applies to specific subfolders.  |
     |**markdownEngineName**||
 
     For more information, see the [Properties for build](https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#32-properties-for-build) section in the DocFx user manual.
@@ -205,7 +207,7 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
 6. Run the equivalent of the following command:
 
     ```powershell
-    docfx "c:\GitHub\MSFT\dynamics365smb-docs\business-central\NAVdocfx.json"
+    docfx "c:\GitHub\MSFT\dynamics365smb-docs\business-central\docfx.json"
     ```
 
 The files are generated as .html files and stored in the specified output.
@@ -226,6 +228,28 @@ For tips and tricks about writing in MarkDown, see the [Authoring Guide](writing
 [!INCLUDE [docslinkanchor](../developer/includes/docslinkanchor.md)]
 
 Alternatively, you can add a post-processing step to the script that you use to run DocFx to change the equivalent of ```<h3 id=da-DK-anchor-name>``` with ```<h3 id=en-US-anchor-name>```. In this example, the step would change ```<h3 id=min-oversatte-overskrift'>``` to ```<h3 id=my-translated-subheading'>```.  
+
+## Known issues with Microsoft's content
+
+Microsoft's content in the various GitHub repos is optimized for the Docs.microsoft.com site and the tools that are used for this site. If you reuse Microsoft's content, you may experience a number of known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
+
+### Docs are not available for a specific version
+
+Microsoft's public GitHub repos reflect the latest version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then please check the following sections for suggested workarounds.  
+
+### Broken links
+
+If you deploy Microsoft's content to a website, your tools or your users will report that some links do not work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the Docs.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, you don't have the same redirection.  
+
+We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, the trick is to check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the Docs.microsoft.com site to manage redirection when a file is deprecated. So if you get an error that *"finance-how-to-set-up-sepa-direct-debit.md does not exist"*, then you can see in the `.openpublishing.redirection.json` file that the article has been deprecated and replaced by *finance-collect-payments-with-sepa-direct-debit.md*. So you can replace the link in the file that is looking for *finance-how-to-set-up-sepa-direct-debit.md* to link to *finance-collect-payments-with-sepa-direct-debit.md* instead.  
+
+### ToC.xml for Help Server is different from the TOC.md file
+
+Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, it will be deprecated in the future. As a result, it contains links that are broken as described in the previous section.  
+
+### Translated content is not available
+
+Microsoft creates content in English (US) that then gets translated into the Microsoft-provided target languages. The translations are available in the relevant localization repos after a few weeks.  
 
 ## Translate the content
 

@@ -76,17 +76,17 @@ If you do not want to publish and invoke functionality to debug it, you can inst
 
 |Keystroke    |Action         |
 |-------------|---------------|
-|F5           |Start debugging|
-|Ctrl+F5      |Start without debugging|
-|Shift+F5     |Stop debugging|
-|Ctrl+Shift+F5|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
-|Alt+F5       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
-|F10          |Step over|
-|F11          |Step into|
-|Shift+F11    |Step out|
-|F12          |Go To Definition| 
+|**F5**           |Start debugging|
+|**Ctrl+F5**      |Start without debugging|
+|**Shift+F5**     |Stop debugging|
+|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|**Alt+F5**       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
+|**F10**          |Step over|
+|**F11**          |Step into|
+|**Shift+F11**    |Step out|
+|**F12**          |Go To Definition| 
 
-For more shortcuts, see [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging). 
+For more shortcuts, see [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging). For working with Snapshot Debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 <!-- 
 To use the Go To Definition on local server, it requires that the AL symbols are rebuilt and downloaded from C/SIDE. The application symbols that were built with the previous version of C/SIDE would not make it possible to have Go To Definition work on base application methods. -->
@@ -99,7 +99,7 @@ Traditionally, debugging AL has been about examining behavior of the language ru
 
 In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
 
-|       |       |
+|Insight | Description  |
 |-------|-------|
 |Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
@@ -112,7 +112,7 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 
 The database insights also let you peek into the most recent and the latest long running SQL statements executed by the server. To view a list if these, expand either the **\<Last Executed SQL Statements\>** or **\<Last Long Running SQL Statements\>** node. The following insights are part of the SQL statement statistics:
 
-|       |       |
+| Insight    | Description      |
 |-------|-------|
 |Statement | The SQL statement that the AL server sent to the [!INCLUDE[prodshort](includes/prodshort.md)] database. You can copy this into other database tools, such as SQL Server Management Studio, for further analysis.| 
 |Execution time (UTC) | The timestamp (in UTC) of when the SQL statement was executed. You can use this to infer whether the SQL statement was part of the AL code between current and last breakpoint (if set).
@@ -126,7 +126,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## NonDebuggable attribute
 
-To restrict the ability to debug certain methods and/or variables, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
 ## See Also
 

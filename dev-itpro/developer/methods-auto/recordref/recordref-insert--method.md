@@ -1,5 +1,5 @@
 ---
-title: "Insert Method"
+title: "RecordRef.Insert Method"
 ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020

@@ -1,6 +1,6 @@
 ---
 title: "Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen"
-description: "Describing the steps you must go through to successfully submit your app to AppSource."
+description: Describes how to replace OnBeforeCompanyOpen and OnAfterCompanyOpen events.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2020

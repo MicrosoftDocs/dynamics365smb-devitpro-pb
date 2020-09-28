@@ -1,5 +1,6 @@
 ---
 title: "Working with AL methods"
+description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
 ms.date: 07/22/2020
 ms.reviewer: na
@@ -44,6 +45,7 @@ Attributes are placed before the method. For information about the available att
 A method can be a *local* method or *global* method. A local method can only be accessed or called from inside the object in which it is declared. A global method can be called from inside the object in which it is declared and from other objects.
 
 To declare a local method, start the declaration with `local`: 
+
 ```AL
 local procedure Mymethod();
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Be careful about UI for web services"
-description: "Describing the steps you must go through to successfully submit your app to AppSource."
+description: Describes restrictions on UI for web services.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2020

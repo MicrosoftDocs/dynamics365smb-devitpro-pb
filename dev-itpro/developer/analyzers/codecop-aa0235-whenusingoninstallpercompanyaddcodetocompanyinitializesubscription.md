@@ -1,8 +1,9 @@
 ---
-title: "When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription."
+title: "When using 'OnInstallPerCompany' you should also add 'Company - Initialize'::'OnCompanyInitialize' event subscriber."
+description: Explains CodeCop Rule AA0235.
 ms.author: solsen
 ms.custom: na
-ms.date: 09/03/2020
+ms.date: 09/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0235
-When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription.  
+When using 'OnInstallPerCompany' you should also add 'Company - Initialize'::'OnCompanyInitialize' event subscriber.  
 
 ## Description
-When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' you must also add a 'Company - Initialize'::'OnCompanyInitialize' subscription.
+When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' you should also add a 'Company - Initialize'::'OnCompanyInitialize' event subscriber to ensure that new companies also have the correct setup.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

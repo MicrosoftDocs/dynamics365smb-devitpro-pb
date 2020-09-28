@@ -1,5 +1,6 @@
 ---
-title: "Insert Method"
+title: "RecordRef.Insert Method"
+description: Describes the Record.Insert(Boolean, Boolean) method for recordref data types in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 04/15/2020
