@@ -1,5 +1,6 @@
 ---
 title: "It is not allowed to rename an enum value."
+description: Explains AppSourceCop Rule AS0082.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/25/2020

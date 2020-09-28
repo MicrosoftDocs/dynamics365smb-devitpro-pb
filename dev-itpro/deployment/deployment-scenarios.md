@@ -25,7 +25,7 @@ This section describes how to install and configure the [!INCLUDE[webservercompo
   
 ## Deployment Scenarios 
 
-The following table lists some of the most typical deployment topologies for the INCLUDE[prodshort](../developer/includes/prodshort.md)], with links to detailed instructions. However, components can be installed on one, two, or three machines in any combination. So your scenario might vary.
+The following table lists some of the most typical deployment topologies for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)], with links to detailed instructions. However, components can be installed on one, two, or three machines in any combination. So your scenario might vary.
 
 |Topology|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|More information|  
 |--------------|---------------------------------------|---|  

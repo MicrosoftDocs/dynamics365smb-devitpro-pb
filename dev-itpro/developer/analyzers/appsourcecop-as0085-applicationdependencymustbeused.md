@@ -1,5 +1,6 @@
 ---
 title: "The 'application' property must be used instead of explicit dependencies"
+description: Explains AppSourceCop Rule AS0085.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2020
