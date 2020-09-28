@@ -32,18 +32,18 @@ Developing an extension to use secrets from a key vault involves two tasks, as d
 You specify the key vaults for an extension in the extension's manifest file (app.json). To specify a key vault, you add the `"keyVaultUrls"` to the app.json, and set the value to the key vault's URL. For example, the following code snippet specifies a key vault that has the URI `https://mykeyvault.vault.azure.net`: 
 
 ```json
-    "keyVaultUrls": [ 
-        "https://mykeyvault.vault.azure.net" 
+"keyVaultUrls": [ 
+   "https://mykeyvault.vault.azure.net" 
     ] 
 ```
 
 You can specify up to two key vaults in the app.json, as shown in the following example code snippet: 
  
 ```json 
-    "keyVaultUrls": [ 
-        "https://myfirstkeyvault.vault.azure.net", 
-        "https://mysecondkeyvault.vault.azure.net" 
-    ] 
+"keyVaultUrls": [ 
+    "https://myfirstkeyvault.vault.azure.net", 
+    "https://mysecondkeyvault.vault.azure.net" 
+] 
 ```
 
 Specifying two key vaults ensures a higher availability of secrets, especially if created in two different Azure regions. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate both key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute because the other key vault will most likely be available.
