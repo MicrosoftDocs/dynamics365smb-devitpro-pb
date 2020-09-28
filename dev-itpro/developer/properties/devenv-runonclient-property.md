@@ -1,5 +1,6 @@
 ---
 title: "RunOnClient Property"
+description: Explains the RunOnClient property in Business Central.
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na

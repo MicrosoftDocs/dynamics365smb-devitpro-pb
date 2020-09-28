@@ -1,5 +1,6 @@
 ---
 title: "Format Property"
+description: Explains the Format property in Business Central.
 ms.custom: na
 ms.date: 09/15/2020
 ms.reviewer: na

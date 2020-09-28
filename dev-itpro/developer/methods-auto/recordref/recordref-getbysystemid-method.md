@@ -1,5 +1,6 @@
 ---
 title: "RecordRef.GetBySystemId Method"
+description: Explains the RecordRef.GetBySystemId method in Business Central.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/15/2020

@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
+# Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 

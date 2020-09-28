@@ -1,5 +1,6 @@
 ---
 title: "Record.FieldError Method"
+description: Explains the Record.FieldError method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 09/15/2020

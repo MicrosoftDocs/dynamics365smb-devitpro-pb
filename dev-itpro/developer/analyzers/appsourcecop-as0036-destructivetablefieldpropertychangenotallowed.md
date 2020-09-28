@@ -1,5 +1,6 @@
 ---
 title: "Unsupported table field property change"
+description: Explains AppSourceCop Rule AS0036.
 ms.author: solsen
 ms.custom: na
 ms.date: 06/19/2020

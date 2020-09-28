@@ -10,11 +10,13 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
+# Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
 AppSource apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be developed to get secrets from Azure Keys Vaults. The app key vault feature is readily available for use on the service by all App Source apps. However, there are some onboarding tasks required. 
+
+For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault.md).
 
 ## Create the Azure Key Vault with secrets
 

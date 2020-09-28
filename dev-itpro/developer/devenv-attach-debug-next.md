@@ -1,5 +1,6 @@
 ---
 title: "Attach and Debug Next"
+description: "Attach to a session on a specified server and debug for Web API sessions."
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na

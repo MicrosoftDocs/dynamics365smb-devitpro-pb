@@ -1,7 +1,7 @@
 ---
 title: "Lifecycle Services for Embed App"
 author: jswymer
-
+description: Provides an overview of Lifecycle Services for Embed App in Business Central
 ms.custom: na
 ms.reviewer: na
 ms.suite: na

@@ -1,5 +1,6 @@
 ---
 title: "JsonArray.Insert Method"
+description: The JsonArray.Insert method in Business Central.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/15/2020

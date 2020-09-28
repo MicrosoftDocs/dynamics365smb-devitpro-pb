@@ -1,5 +1,6 @@
 ---
 title: "Record.Insert Method"
+description: Describes the RecordRef.Insert method for record data types in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 09/15/2020

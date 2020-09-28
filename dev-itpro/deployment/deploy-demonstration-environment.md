@@ -9,7 +9,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
 ---
 # Deploying a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demonstration Environment
 
