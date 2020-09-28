@@ -45,7 +45,7 @@ A fundamental characteristic of a page type is how it relates to the data presen
 
 |`Card`, `Document`, and `ListPlus`|`List` and `Worksheet`|
 |---------|---------------|
-|![Entity and collection page actions](media/page-layout-entity-actions.png "Entity pages and their actions")|![Entity and collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")|
+|![Entity page actions](media/page-layout-entity-actions.png "Entity pages and their actions")|![Collection page actions](media/page-layout-collection-actions.png "Collection pages and their actions")|
 |The **entity-oriented** page types have actions (in top and in action bar) that affect the entity or context given by the title of the page.|The **collection-oriented** page types provide actions in action bar (and on the rows' action menu) that take effect on the selected row(s) in the collection.|
 
 #### Entity-oriented pages 
@@ -98,8 +98,8 @@ In the following sections you find descriptions of typical page layouts, recomme
 |Symbol|Section|Notes|
 |---------|---------------|----|
 |![CardPart or Group](media/page-layout-cardpartgroup.png "CardPart or field group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
-|![Designer action bar](media/page-layout-listpart.png "ListPart section")|ListPart|List or table layout, with integrated action bar.|
-|![Designer action bar](media/page-layout-repeater.png "Repeater section")|Repeater|List or table layout.|
+|![Designer action bar on ListPart](media/page-layout-listpart.png "ListPart section")|ListPart|List or table layout, with integrated action bar.|
+|![Designer action bar on Repeater](media/page-layout-repeater.png "Repeater section")|Repeater|List or table layout.|
 
 ### Sizing of page sections
 
@@ -111,9 +111,9 @@ There are three different ways a section's size are determined.
 
 |Symbol|Layout behavior|Notes|
 |---------|---------------|----|
-|![Designer action bar](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
-|![Designer action bar](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
-|![Designer action bar](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar size to content](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
+|![Designer action bar size with limits](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar size to fill space](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
 
 Which of the section sizing behavior is used is dependent on the chosen page type. For each of the page types described in the sections below, we present the typical layouts, and the way that the sections are sized.
 
