@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -26,22 +26,28 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Australia|Microsoft|Available|
 |Austria|Microsoft|Available|
 |Belgium|Microsoft|Available|
+|Brazil|Partner|Available|
 |Canada|Microsoft|Available|
 |Colombia|Partner|Available|
 |Croatia|Partner|Available|
 |Czechia|Microsoft|Available|
 |Denmark|Microsoft|Available|
 |Estonia|Partner|Available|
+|Faroe Islands (Denmark)|Microsoft|Available|
 |Finland|Microsoft|Available|
 |France|Microsoft|Available|
 |Germany|Microsoft|Available|
+|Greenland (Denmark)|Microsoft|Available|
 |Hong Kong SAR|Partner|Available|
 |Hungary|Partner|Available|
 |Iceland|Microsoft|Available|
+|Ireland|Partner|Available|
 |Indonesia|Partner|Available|
+|India|Microsoft|Preview|
 |Italy|Microsoft|Available|
 |Japan|Partner|Available|
 |Latvia|Partner|Available|
+|Lithuania|Partner|Available|
 |Malaysia|Partner|Available|
 |Mexico|Microsoft|Available|
 |Netherlands|Microsoft|Available|
@@ -83,6 +89,7 @@ This table gives an overview of supported languages and how application language
 
 |Language|Locale|Translation app provided by|
 |-----------|---------|------|
+|Bulgarian|bg-BG|Partner, Available on AppSource (pending)|
 |Czech (Czech Republic)|cs-CZ|Microsoft, Available on AppSource|
 |Danish (Denmark)|da-DK|Microsoft, Available on AppSource|
 |German (Austria)|de-AT|Microsoft, Available on AppSource|
@@ -104,7 +111,7 @@ This table gives an overview of supported languages and how application language
 |French (France)|fr-FR|Microsoft, Available on AppSource|
 |Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
-|Icelandish (Iceland)|is-IS|Microsoft, Available on AppSource|
+|Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
 |Italian (Switzerland)|it-CH|Microsoft, Available on AppSource|
 |Italian (Italy)|it-IT|Microsoft, Available on AppSource|
 |Japanese (Japan)|jp-JP|Partner, Available on AppSource|
@@ -117,6 +124,7 @@ This table gives an overview of supported languages and how application language
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
 |Portuguese (Brazil)|pt-BR|Partner, Available on AppSource (pending)|
 |Portuguese (Portugal)|pt-PT|Partner, Available on AppSource|
+|Romanian|ro-RO|Partner, Available on AppSource (pending)|
 |Russian (Russia)|ru-RU|Microsoft, Available on AppSource|
 |Slovak (Slovakian)|sk-SK|Partner, Available on AppSource (pending)|
 |Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
