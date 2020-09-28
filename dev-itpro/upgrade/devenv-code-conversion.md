@@ -20,7 +20,7 @@ Before you start, we recommend getting familiar with the basics of setting up an
 
 #### Breaking changes
 
-when converting from C/AL to AL, it is important that you do not introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
+When converting from C/AL to AL, it's important that you don't introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
 
 ## Task 1: Import the test library into your C/AL solution 
 
@@ -32,11 +32,11 @@ You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev
 
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
 - C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
-- [Compile-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
+- [Compile-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
 
 ## Task 3: Export the application objects to the new TXT syntax
 
-Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
+Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
 
 - Omit omit all system objects, which have IDs in the 2000000000 range. 
 - Use the `ExportToNewSyntax` switch to export the objects in a syntax that is compatible with the Txt2Al conversion tool.
@@ -443,8 +443,8 @@ If you converted the test library form C/AL to AL, you will now create and build
 
 If you are performing a technical upgrade from version 14.0 to version 15.0 or 16, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
 
-    - [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
-    - [Technical Upgrade to to version 15.0]](upgrade-technical-upgrade-v14-v16.md#Preparedb)
+- [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
+- [Technical Upgrade to to version 15.0]](upgrade-technical-upgrade-v14-v16.md#Preparedb)
 
 <!--
 ## Task 11: Publish your project

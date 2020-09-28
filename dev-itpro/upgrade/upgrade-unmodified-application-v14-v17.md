@@ -1,6 +1,6 @@
 ---
-title: "Upgrading Unmodified C/AL Application to Version 16"
-description: Describes how to upgrade an unmodified Business Central 14 application to version 16 base application
+title: "Upgrading Unmodified C/AL Application to Version 17"
+description: Describes how to upgrade an unmodified Business Central 14 application to version 17
 ms.custom: na
 ms.date: 04/29/2020
 ms.reviewer: na
@@ -11,11 +11,11 @@ ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading Unmodified C/AL Application to Version 16
+# Upgrading Unmodified C/AL Application to Version 17
 
-Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new system and base application extensions. The result will be a fully upgraded Business Central 2020 release wave 1 (version 16) application and platform.
+Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2020 release wave 1 (version 17) application and platform.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc14-to-16-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application](../developer/media/bc14-to-17-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 
@@ -26,7 +26,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 1. Upgrade to Business Central Spring 2019 (version 14).
 
    - If your solution is already on version 14, then no action on this step is required.
-   - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 16. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 17. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
@@ -40,19 +40,19 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-## Task 1: Install version 16
+## Task 1: Install version 17
 
-1. Download the latest available update for version 16 that is compatible with your version 14.
+1. Download the latest available update for version 17 that is compatible with your version 14.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
   
     The guidelines in this article assume that you're running the latest available update.
 
-2. Before you install version 16, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
+2. Before you install version 17, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17 tools.
 
-3. Install Business Central version 16 components.
+3. Install Business Central version 17 components.
 
-    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 16, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 17, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -130,9 +130,9 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 ## Task 3: Convert the version 14 database
 
-This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 16 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 17 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17 as an administrator.
 2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
@@ -149,9 +149,9 @@ This task runs a technical upgrade on the application database to convert it fro
     Collation           :
     ```
 
-## Task 4: Configure version 16 server for DestinationAppsForMigration
+## Task 4: Configure version 17 server for DestinationAppsForMigration
 
-When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 16.0 upgrade and can be reverted after you complete the upgrade.
+When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 17.0 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -168,11 +168,11 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
     This setting serves the following purposes:
 
     - When you run the data upgrade on a tenant, the server will run the data upgrade for the base and system application extensions. The base and system applications will be automatically installed on the tenant also.
-    - Lets you republish extensions that haven't been built on version 16. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
+    - Lets you republish extensions that haven't been built on version 17. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
 
     For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
 
-2. Disable task Scheduler on the server instance for purposes of upgrade.
+2. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance <server instance name> -KeyName "EnableTaskScheduler" -KeyValue false
@@ -185,32 +185,11 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 5: Increase application version
+## <a name="UploadLicense"></a>Task 5: Import version 17 license
 
-This task is optional, but it's recommended. You can choose to skip it for now and do it later. In this task, you'll increase the application_version that's stored in $ndo$dbproperty table of the application database. The application version isn't changed automatically. The application version serves two purposes:
+If you have a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license, make sure that it has been uploaded to the database.
 
-- Enables running the Start-NAVDataUpgrade cmdlet later in Task 8 of this article. The application version is compared with the tenant's version. If the application version is greater, a data upgrade can be run. If you skip this task, you'll have to use the `-SkipAppVersionCheck` switch with Start-NAVDataUpgrade cmdlet in Task 9. 
-- The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version.
-
-The version has the format `major.minor.build.revision`, such as, '14.3.14824.1'. As a minimum, you increase the revision by 1. However, we recommend setting the value to application build number for the version 16 update. You can get this number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706) page.
-
-To change the application version, run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
-
-```
-Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
-```
-
-For example:
-
-```
-Set-NAVApplication -ServerInstance BC160 -ApplicationVersion 16.0.38071.0 -Force
-```
-
-Later, when you synchronize and upgrade the tenant(s), the new application version will be updated in the tenant database ($ndo$tenantproperty table).
-
-## Task 6: Import version 16 license
-
-1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 16 license to the database. 
+1. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
     ```powershell
     Import-NAVServerLicense -ServerInstance <server instance name> -LicenseFile <path and file name>
@@ -222,7 +201,9 @@ Later, when you synchronize and upgrade the tenant(s), the new application versi
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 7: Publish symbols and extensions
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
+ 
+## Task 6: Publish symbols and extensions
 
 In this task, you'll publish the platform symbols and extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
@@ -230,14 +211,15 @@ Publishing an extension adds the extension to the application database that is m
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 that you started in the previous task.
 
-1. Publish version 16 system symbols extension.
+1. Publish version 17 system symbols extension.
 
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment.  
 
     ```powershell
     Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly
     ```
-    [What are symbols?](upgrade-overview-v15.md#Symbols) 
+
+    [What are symbols?](upgrade-overview-v15.md#Symbols)
 2. Publish the **System Application** extension (Microsoft_System Application.app).
 
     You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).
@@ -245,7 +227,8 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_System Application.app>"
     ```
-    [What is the System Application?](upgrade-overview-v15.md#SystemApplication) 
+
+    [What is the System Application?](upgrade-overview-v15.md#SystemApplication)
 3. Publish the Business Central base application extension (Microsoft_Base Application.app).
 
     The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
@@ -253,10 +236,10 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Base Application.app>"
     ```
+
 4. Publish the Microsoft_Application extension
 
     The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
-
 
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<folder path>\Microsoft_Application.app"
@@ -271,18 +254,20 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
     For example:
+
     ```powershell
-    Publish-NAVApp -ServerInstance BC160 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
+    Publish-NAVApp -ServerInstance BC170 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
+
 6. Publish 3rd-party extensions.
 
-    Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on the Business Central version 16, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
+    Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on the Business Central version 17, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
 
     ```powershell
-    Publish-NAVApp -ServerInstance BC150 -Path "<path to extension>"
+    Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension>"
     ```
 
-## Task 8: Restart server instance
+## Task 7: Restart server instance
 
 Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for completing the upgrade.
 
@@ -292,13 +277,13 @@ Restart-NAVServerInstance -ServerInstance <server instance name>
 
 This step is important, otherwise you might experience issues when you run the data upgrade.
 
-## Task 9: Synchronize tenant
+## Task 8: Synchronize tenant
 
 In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 16 server instance.
+1. (Multitenant only) Mount the tenant to the version 17 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
@@ -333,14 +318,14 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     Replace `<extension version>` with the exact version of the published System Application. To get the version, you can use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
     
-4. Synchronize the tenant with the Business Central Base Application extension.
+4. Synchronize the tenant with the **Base Application** extension.
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Base Application" -Version <extension version>
     ```
    Replace `<extension version>` with the exact version of the published Base Application.
 
-4. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
+4. Synchronize the tenant with the **Application** extension.
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
@@ -351,13 +336,13 @@ If you have a multitenant deployment, do these steps for each tenant.
     For each extension, run the Sync-NAVApp cmdlet:
 
     ```powershell
-    Sync-NAVApp -ServerInstance BC160 -Tenant default -Name "<extension name>" -Version <extension version>
+    Sync-NAVApp -ServerInstance <server instance name> -Tenant default -Name "<extension name>" -Version <extension version>
     ```
 
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 10: Upgrade data
+## Task 9: Upgrade data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -368,10 +353,10 @@ If you have a multitenant deployment, do these steps for each tenant.
     1. To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
         ```powershell
-        Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial [-SkipAppVersionCheck]
+        Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck
         ```
 
-        You only need to use the -SkipAppVersionCheck if you didn't increase the application version in Task 5. 
+        <!--You only need to use the -SkipAppVersionCheck if you didn't increase the application version in Task 5.--> 
     2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
 
     This step will automatically install the base application and system application on the tenant.
@@ -396,7 +381,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 11: Install 3rd-party extensions
+## Task 10: Install 3rd-party extensions
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -404,7 +389,7 @@ Complete this task to install third-party extensions for which a new version was
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
-## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
@@ -415,14 +400,14 @@ To upgrade the control add-ins from the client, do the following steps:
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.
 
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
 Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
 
 ```powershell
-$InstanceName = 'BC160'
-$ServicesAddinsFolder = 'C:\Program Files\Microsoft Dynamics 365 Business Central\160\Service\Add-ins'
+$InstanceName = 'BC170'
+$ServicesAddinsFolder = 'C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins'
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.BusinessChart' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.FlowIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'FlowIntegration\Microsoft.Dynamics.Nav.Client.FlowIntegration.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.OAuthIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'OAuthIntegration\Microsoft.Dynamics.Nav.Client.OAuthIntegration.zip')
@@ -448,9 +433,43 @@ At this point, the upgrade is complete, and you can open the client.
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-4. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+4. Change application version.
 
-    Version 16 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
+    (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
+
+    On the **Help and Support** page in the client, you'll see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
+
+    We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
+
+    1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
+
+    ```powershell
+    Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
+    ```
+
+    For example:
+
+    ```powershell
+    Set-NAVApplication -ServerInstance BC170 -ApplicationVersion 17.0.38071.0 -Force
+    ```
+
+    2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
+
+    ```powershell  
+    Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
+    ```
+
+    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+
+    3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
+
+    ```powershell
+    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID> 
+    ```
+
+5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+
+    Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
 
     - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
