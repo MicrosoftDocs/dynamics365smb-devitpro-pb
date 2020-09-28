@@ -1,5 +1,6 @@
 ---
 title: "Upgrading Version 16 Base Application to Version 17"
+description: Describes how to upgrade an unmodified Business Central 16 application to version 17
 ms.custom: na
 ms.date: 04/29/2020
 ms.reviewer: na
