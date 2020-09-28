@@ -682,6 +682,7 @@
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
