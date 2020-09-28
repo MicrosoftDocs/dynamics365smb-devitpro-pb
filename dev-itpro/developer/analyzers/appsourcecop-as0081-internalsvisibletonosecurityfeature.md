@@ -2,7 +2,7 @@
 title: "InternalsVisibleTo should not be used as a security feature."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/23/2020
+ms.date: 09/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
