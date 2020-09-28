@@ -1,5 +1,6 @@
 ---
 title: "Technical Upgrade From Version 14 to Version 16" 
+description: Describes how to do a technical upgrade from Business Central 14 to 16
 ms.custom: na
 ms.date: 04/29/2020
 ms.reviewer: na
@@ -70,14 +71,13 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
      
     CodeViewer is no longer used in version 16. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 
-
 ## Task 2: Convert your v14 C/AL application to AL
 
 For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
 ## Task 3: Rewrite code for obsoleted system tables
 
-In version 16, a number of tables have been deprecated and replaced by new tables. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
+In version 17, a number of tables have been deprecated and replaced by new tables compared to version 14. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
 
 <!--
 This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
@@ -103,7 +103,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 3. Unpublish all extensions from the application server instance.
 
-    To unpublish extensions, use the [Unpublish-NAVAPP cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp). Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo?view=businesscentral-ps), you can uninstall all extensions from the tenant using a single command:
+    To unpublish extensions, use the [Unpublish-NAVAPP cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp). Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), you can uninstall all extensions from the tenant using a single command:
 
     ```
     Get-NAVAppInfo -ServerInstance <BC14 server instance> | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }

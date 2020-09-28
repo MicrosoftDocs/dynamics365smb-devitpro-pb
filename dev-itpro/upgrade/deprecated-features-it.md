@@ -31,6 +31,10 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 |----|----|
 |Moved| The Multiple Interest Rates feature is no longer specific to Italy, so we have made it generally available in the standard product. |
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-it](../includes/fields-obsolete-it.md)]
+
 ## See Also
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  

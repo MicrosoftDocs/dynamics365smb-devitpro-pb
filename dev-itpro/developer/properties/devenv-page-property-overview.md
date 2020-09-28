@@ -1,9 +1,9 @@
 ---
-title: "Page and Page Extension Properties Overview"
+title: "Page, Page Fields, and Page Extension Properties"
 description: "Description of the available properties on page extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/08/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,12 +13,13 @@ ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 ---
 
-# Page and Page Extension Properties Overview
+# Page, Page Fields, and Page Extension Properties
 
-This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md).
+This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md).
 
 ## Page object properties
-The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below.
+
+The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below. This list is sorted alphabetically by property name. For page properties sorted by function on a page, see [Page Properties](devenv-page-properties.md).
 
 |Property Name|Available for Page Extension Object|Applies to|
 |-------------|-----------|---------------------|
