@@ -1,5 +1,6 @@
 ---
 title: "IntegrationEvent Attribute"
+description: "The IntegrationEvent attribute in AL for Business Central"
 ms.custom: na
 ms.date: 06/29/2020
 ms.reviewer: 
