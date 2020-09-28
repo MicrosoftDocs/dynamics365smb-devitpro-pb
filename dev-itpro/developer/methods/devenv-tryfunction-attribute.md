@@ -1,5 +1,6 @@
 ---
 title: "TryFunction Attribute"
+description: "The TryFunction attribute in AL for Business Central"
 ms.custom: na
 ms.date: 05/12/2020
 ms.reviewer: na

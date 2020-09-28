@@ -1,5 +1,6 @@
 ---
 title: "GetImageResource Method"
+description: "The GetImageResource method in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2020
