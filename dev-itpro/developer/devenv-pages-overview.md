@@ -1,6 +1,6 @@
 ---
 title: "Pages Overview"
-description: Pages are the main way to display and organize data. 
+description: "Pages are the main way to display and organize data." 
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 06/29/2020

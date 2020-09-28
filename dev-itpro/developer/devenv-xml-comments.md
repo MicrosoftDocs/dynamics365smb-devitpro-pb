@@ -1,5 +1,6 @@
 ---
 title: "XML Comments in Code"
+description: "Adding documentation to AL code by including XML elements in special syntax."
 ms.custom: na
 ms.author: solsen
 ms.date: 08/24/2020
