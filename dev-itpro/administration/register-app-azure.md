@@ -1,5 +1,6 @@
 ---
 title: "Register on-premises as an app in the Azure Management Portal"
+description: Learn what to do when you want to use Business Central on-premises with online offerings.
 author: jswymer
 ms.author: jswymer
 ms.custom: na

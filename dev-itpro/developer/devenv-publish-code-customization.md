@@ -97,11 +97,11 @@ Make sure to have the following prerequisites installed to be able to follow the
     Use the `-Force` parameter to uninstall all dependencies.
 
     > [!NOTE]  
-    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC160 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC160 -Force}`
+    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC170 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC170 -Force}`
 
 11. Having uninstalled, the next step is to unpublish the application and all of its dependencies. This needs to happen before we can publish it. The following command can be used if there are no dependencies to the Base Application:
 
-    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC160`
+    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC170`
 
     But if there are dependencies on the Base Application this will give an error. To solve this, you must unpublish all the applications with dependencies on the Base Application. This is easier to do using a script that recursively removes the dependencies. Use Windows PowerShell ISE to create a new script with the following lines of code:
 

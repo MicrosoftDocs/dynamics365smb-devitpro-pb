@@ -32,11 +32,11 @@ Navigate back to the main page and start creating a new project by selecting the
 
 Next, provide a short description for your project (optional), select **Microsoft Dynamics NAV** as the product name and **Microsoft Dynamics 365 Business Central (SaaS)** as the product version. Select the **Create** button to complete creation of the project. 
 
-After you create the project, send its ID to the e-mail alias specified on the main project page for whitelisting purposes. You can find the project ID in the URL displayed in your browser, such as `https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]`
+After you create the project, send its ID to the e-mail alias specified on the main project page for safe listing purposes. You can find the project ID in the URL displayed in your browser, such as `https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]`
 
 ## Uploading deployment package
 
-Once your LCS project ID has been whitelisted by Microsoft, you can continue to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. <!-- COMMENTED OUT UNTIL THE FILE IS FOUND You can read more about the the content and structure of the deployment package [here]: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package.--> 
+Once your LCS project ID has been safe listed by Microsoft, you can continue to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. <!-- COMMENTED OUT UNTIL THE FILE IS FOUND You can read more about the the content and structure of the deployment package [here]: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package.--> 
 
 In your LCS project, select the **Asset library** action to navigate to the Asset library page. Then, select the **+** action to open the **Upload Software deployable package file** wizard. Provide the **Name** and **Description** (optional) for your package. The asset name you provide here will be displayed on the Application Version list inside your project. Select the Add the file action to select and upload the deployment package. Wait for the package to get uploaded and select the Confirm button to close the upload wizard.  
 

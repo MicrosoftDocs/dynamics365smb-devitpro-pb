@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes  
 
 ## Description
-The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes. Each country code must correspond to a country for which the product allows AppSource submissions. See [Country/Regional availability and Supported Translations](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations) for more information.
+The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes. Each country code must correspond to a country for which the product allows AppSource submissions. See [Country/Regional availability and Supported Translations](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations) for more information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
