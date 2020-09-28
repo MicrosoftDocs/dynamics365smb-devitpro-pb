@@ -27,7 +27,7 @@ You start page inspection from the **Help & Support** page. Choose the question 
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
-![Page Inspection](media/page-inspection-example.png)
+![Page Inspection Pane](media/page-inspection-example.png)
 
 When the **Page Inspection** pane first opens, it shows information that pertains to the main page object.
 
@@ -87,7 +87,7 @@ If a page has a source table, the **View table** link is available. This  link w
 
 The **Table Fields** tab displays information about all fields in the source table for the current record, including those fields that do not appear on the page.
 
-![Page Inspection](media/page-inspection-table-fields.png)
+![Page Inspection Table Fields Tab](media/page-inspection-table-fields.png)
 
 Each field is shown with the following information:
 
@@ -107,7 +107,7 @@ Each field is shown with the following information:
 
 The **Extensions** tab displays extensions that are installed for the current environment and affect the selected page or its source table.
 
-![Page Inspection](media/page-inspection-extensions.png)
+![Page Inspection Extensions Tab](media/page-inspection-extensions.png)
 
 Except for the type, the data that is shown is defined in the extension's app.json file, which you configure during development. For more information, see [App.json](devenv-json-files.md#Appjson).
 
@@ -122,18 +122,19 @@ There are four different extension types:
 
 The **Page Filters** tab displays the current filters used on the current page. This includes filters that are set by code, list views, or defined by the user in the filter pane of the page.
 
-![Page Inspection](media/page-inspection-page-filters.png)
+![Page Inspection Page Filters](media/page-inspection-page-filters.png)
 
 The following table describes the different filter types.
 
 |Type|Description|
 |----|-----------|
-|UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md).|
+|UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SetFilter](methods-auto/record/record-setfilter-method.md) or [SetRange](methods-auto/record/record-setrange-method.md).|
 |TableViewFilter|Filter that is defined on the page by the [SourceTableView property](properties/devenv-sourcetableview-property.md)|
 |SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the sub-page.|
 |FormViewFilters|Filter that is defined by the [RunPageView property](properties/devenv-runpageview-property.md) of the action that opens the page.|
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
