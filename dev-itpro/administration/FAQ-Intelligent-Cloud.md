@@ -24,7 +24,7 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
   This means that if the current version is version 17, then you can connect to the intelligent cloud if you are on version 17, 16, or 15.  
 
-If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online).
+If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#online).
 
 <!-- - Dynamics SL 2018 CU 1-->
 

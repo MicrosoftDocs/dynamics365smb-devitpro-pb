@@ -108,7 +108,7 @@ The process to run the migration in an Australian [!INCLUDE [prodshort](../devel
 
 * Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields.  
 
-## Move your Dynamics GP database to Azure Data Lake
+## <a name="lake"></a>Move your Dynamics GP database to Azure Data Lake
 
 Starting with 2020 release wave 2, you can create a copy of the Dynamics GP database in Azure Data Lake so that you have it for future reference after the migration to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. To take advantage of this functionality, there are some pieces that must be set up before the migration process. A customer is not required to copy their database to Azure Data Lake, but there are several benefits to being able to do so, including having access to the historical data that is not migrated by the migration tool. For an introduction to Azure Data Lake, see [azure.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2135056).  
 
