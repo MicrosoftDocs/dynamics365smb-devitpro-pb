@@ -20,7 +20,8 @@ The following sections list the minimum hardware and software requirements to us
 
 ## <a name="WebClient"></a> Web Client
 
-The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client on-premises.  
+The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client on-premises.
+
 |||  
 |------|-----|  
 |Supported browsers|Recommended browsers:<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Other supported browsers:<ul><li>Internet Explorer 11, latest version</li><li>Microsoft Edge Legacy, latest version</li></ul>Cookies and JavaScript must be enabled in the browser.|
@@ -52,12 +53,12 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 
 ## <a name="Office"></a> Microsoft Office Applications
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises offers various features that require Office apps to be available on client devices. The following table shows the minimum system requirements for those features. 
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises offers various features that require Office apps to be available on client devices. The following table shows the minimum system requirements for the features. 
 
 |||  
 |------|-----|  
-|Excel|<ul><li>Sending data to Excel requires Microsoft Office 2019, the Web version of Excel, or Excel mobile app for iOS or Android™.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or the Web version of Excel.</li></ul>|  
-|Word|<ul><li>Microsoft Office 2019, or the Web version of Word, or Word mobile app for iOS or Android™.</li></ul>|
+|Excel|<ul><li>Sending data to Excel requires Microsoft Office 2019, Excel for web, or Excel mobile app for iOS or Android&trade;trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or Excel for web.</li></ul>|  
+|Word|<ul><li>Microsoft Office 2019, Word for web, or Word mobile app for iOS or Android&trade;trade;.</li></ul>|
 |Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirement-business-central-v17.md#BusInboxOutlook).|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Skype or Microsoft Teams is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|  
 
@@ -140,11 +141,11 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 
 |||  
 |-----|-----|
-|Supported Outlook Applications |<ul><li>Outlook 2019 or later</li><li>Outlook Web App</li><li>Outlook Web App for iPad</li><li>Outlook Web App for iPhone</li><li> Outlook Web App for Android™.</li></ul>|
+|Supported Outlook Applications |<ul><li>Outlook 2019 or later</li><li>Outlook on the web<!--Outlook Web App--></li><li>Outlook Web App for iPad</li><li>Outlook Web App for iPhone</li><li> Outlook Web App for Android&trade;trade;.</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2019<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to run with NavUserPassword, ACS, or AAD Credentials Type.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
-|Supported Browsers|<ul><li>When using the Outlook Web App (Microsoft Outlook Web App), your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
-|Supported Operating Systems|<ul><li>When using Outlook Web App for iPad, iPhone, or Android™, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
+|Supported Browsers|<ul><li>When using Outlook on the web<!--the Outlook Web App (Microsoft Outlook Web App)-->, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
+|Supported Operating Systems|<ul><li>When using Outlook Web App for iPad, iPhone, or Android&trade;trade;, your mobile device must use a supported operating system listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
 
 ## <a name="Outlook"></a>Microsoft Outlook Legacy Add-In
 
