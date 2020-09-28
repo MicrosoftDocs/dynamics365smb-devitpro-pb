@@ -104,6 +104,7 @@
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
 ### [Exporting Databases](administration/tenant-admin-center-database-export.md)
+### [Capacity](administration/tenant-admin-center-capacity.md)
 ### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 ### [Managing Updates](administration/tenant-admin-center-update-management.md)
 ### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
@@ -131,6 +132,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
 ### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
 ### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
 ### [Update 16.2](whatsnew/whatsnew-update-16-2.md)

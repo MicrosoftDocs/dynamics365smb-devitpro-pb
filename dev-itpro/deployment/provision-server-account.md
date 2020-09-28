@@ -305,6 +305,7 @@ ALTER ROLE db_datareader ADD MEMBER bc_server_runtime
 ALTER ROLE db_datawriter ADD MEMBER bc_server_runtime
 ALTER ROLE db_ddladmin ADD MEMBER bc_server_runtime
 GRANT VIEW CHANGE TRACKING on schema::[dbo] TO  bc_server_runtime
+GRANT VIEW DATABASE STATE TO bc_server_runtime
 GRANT ALTER ON DATABASE::[Business Central Database] TO bc_server_runtime
 GO
 
