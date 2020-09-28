@@ -130,14 +130,14 @@ Below are examples of Card and Document page compositions, showing how space is 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
 |Sections are placed vertically from top to bottom of the page.|A ListPart can be embedded. In this case, the ListPart's height is limited.|When a ListPart is embedded as the last part on the page, it will expand to fill space.|
-|![Card layout 1](media/page-layout-card-1.png "Card example 1")|![Card layout 2](media/page-layout-card-2.png "Card example 2")|![Card layout 3](media/page-layout-card-3.png "Card example 3")|
+|![Card layout example 1](media/page-layout-card-1.png "Card example 1")|![Card layout example 2](media/page-layout-card-2.png "Card example 2")|![Card layout example 3](media/page-layout-card-3.png "Card example 3")|
 
 ### Document layouts
 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
 |Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be embedded. In this case, the first ListPart is allowed the most space.|When no ListPart is embedded, the Document layout follows the Card layout exactly.|
-|![Document layout 1](media/page-layout-doc-1.png "Document example 1")|![Document layout 2](media/page-layout-doc-2.png "Document example 2")|![Document layout 3](media/page-layout-doc-3.png "Document example 3")|
+|![Document layout example 1](media/page-layout-doc-1.png "Document example 1")|![Document layout example 2](media/page-layout-doc-2.png "Document example 2")|![Document layout example 3](media/page-layout-doc-3.png "Document example 3")|
 
 > [!NOTE]  
 > The Document page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
@@ -167,7 +167,7 @@ A ListPlus page should generally not contain a repeater control but will typical
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two or more ListParts, they'll share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
-|![ListPlus layout 1](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout 2](media/page-layout-listplus-3.png "ListPlus example 3")|
+|![ListPlus layout example 1](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout example 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout example 3](media/page-layout-listplus-3.png "ListPlus example 3")|
 
 From the user's perspective, the following are qualities of a well-designed ListPlus page:
 
@@ -186,7 +186,7 @@ List pages must contain a single `Repeater` group. In addition, a list can embed
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The repeater control assumes full vertical space.|When a field group or cardpart is embedded, space for repeater is reduced.|When a listpart is embedded, space is shared equally between part and repeater.|
-|![List layout 1](media/page-layout-list-1.png "List example 1")|![List layout 2](media/page-layout-list-2.png "List example 2")|![List layout 2](media/page-layout-list-3.png "List example 3")|
+|![List layout example 1](media/page-layout-list-1.png "List example 1")|![List layout example 2](media/page-layout-list-2.png "List example 2")|![List layout example 3](media/page-layout-list-3.png "List example 3")|
 
 From the user's perspective, the following are qualities of a well-designed List page:
 
@@ -210,7 +210,7 @@ Worksheet pages must contain a single `Repeater` group. In addition, a worksheet
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The repeater control takes full vertical space, but leaving space for a group or CardPart above.|A group, CardPart, or ListPart can be embedded below the repeater that then assumes the remaining vertical space.|Groups and/or parts are embedded above and below, leaving the remaining vertical space for the repeater.| 
-|![Worksheet layout 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout 2](media/page-layout-worksheet-3.png "Worksheet example 3")|
+|![Worksheet layout example 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout example 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout example 3](media/page-layout-worksheet-3.png "Worksheet example 3")|
 
 From the user's perspective, the following are qualities of a well-designed worksheet page:
 
@@ -225,7 +225,7 @@ Some page types in [!INCLUDE[prodshort](includes/prodshort.md)] are available ex
 
 It is also possible to use the common page types (`Card`, `Document`, `List`, etc.) to present a dialog to the user. In this case, pages are created, composed, and can embed the same elements, as when displayed ordinarily. Presenting the page to the user as a dialog requires certain AL code that activates the dialog mode. When this happens, the page is shown with dismiss buttons in the page footer.
 
-![Dialog page layouts](media/page-layout-dialog.png "Dialog page layout")
+![Dialog page layouts example](media/page-layout-dialog.png "Dialog page layout")
 
 Generally, [!INCLUDE[prodshort](includes/prodshort.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
