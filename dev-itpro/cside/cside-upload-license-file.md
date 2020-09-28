@@ -1,5 +1,6 @@
 ---
 title: "How to: Upload the License File"
+description: Describes how to upload a Business Central license
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na

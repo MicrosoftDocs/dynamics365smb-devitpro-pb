@@ -1,5 +1,6 @@
 ---
-title: "Technical Upgrade From Version 14 to Version 17" 
+title: "Technical Upgrade From Version 14 to Version 17"
+description: Describes how to do a technical upgrade from Business Central 14 to 17
 ms.custom: na
 ms.date: 04/29/2020
 ms.reviewer: na
@@ -90,7 +91,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 3. Unpublish all extensions from the application server instance.
 
-    To unpublish extensions, use the [Unpublish-NAVAPP cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp). Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo?view=businesscentral-ps), you can uninstall all extensions from the tenant using a single command:
+    To unpublish extensions, use the [Unpublish-NAVAPP cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp). Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), you can uninstall all extensions from the tenant using a single command:
 
     ```
     Get-NAVAppInfo -ServerInstance <BC14 server instance> | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }

@@ -1,5 +1,6 @@
 ---
 title: "Upgrade paths to Business Central"
+description: Provides an overview of the different upgrade paths for Business Central
 ms.custom: na
 ms.date: 04/29/2020
 ms.reviewer: na

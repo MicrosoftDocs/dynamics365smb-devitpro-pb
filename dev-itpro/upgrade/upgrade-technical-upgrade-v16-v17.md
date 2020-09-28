@@ -1,5 +1,6 @@
 ---
-title: "Technical Upgrade from Version 17 to Version 17" 
+title: "Technical Upgrade from Version 16 to Version 17"
+description: Describes how to do a technical upgrade from Business Central 16 to 17
 ms.custom: na
 ms.date: 04/29/2020
 ms.reviewer: na
