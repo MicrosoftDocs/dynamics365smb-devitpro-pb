@@ -1,5 +1,6 @@
 ---
 title: "CommitBehavior Attribute"
+description: "The CommitBehavior attribute in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 07/16/2020
