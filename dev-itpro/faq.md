@@ -76,7 +76,7 @@ For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a l
 
 [!INCLUDE [admin-db-quota](developer/includes/admin-db-quota.md)]
 
-For more information, see [Managing capacity](administration/tenant-admin-center-environments.md#managing-capacity).  
+For more information, see [Managing capacity](administration/tenant-admin-center-capacity.md).  
 
 ## Is the Windows client supported?
 
