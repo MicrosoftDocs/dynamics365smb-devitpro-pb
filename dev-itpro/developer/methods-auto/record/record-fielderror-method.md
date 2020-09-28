@@ -1,5 +1,6 @@
 ---
 title: "FieldError Method"
+description: Explains the FieldError method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020
