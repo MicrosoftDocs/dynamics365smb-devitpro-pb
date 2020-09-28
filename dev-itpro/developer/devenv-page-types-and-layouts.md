@@ -1,6 +1,6 @@
 ---
 title: "Page Types and Layouts"
-description: Pages are the main way to display and organize data. 
+description: "Understanding page types to be able to create good user experience in Business Central." 
 author: jacobwj
 ms.custom: na
 ms.date: 07/07/2020
