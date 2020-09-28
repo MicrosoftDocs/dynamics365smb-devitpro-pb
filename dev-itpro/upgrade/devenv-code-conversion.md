@@ -20,7 +20,7 @@ Before you start, we recommend getting familiar with the basics of setting up an
 
 #### Breaking changes
 
-when converting from C/AL to AL, it is important that you do not introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
+When converting from C/AL to AL, it's important that you don't introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
 
 ## Task 1: Import the test library into your C/AL solution 
 

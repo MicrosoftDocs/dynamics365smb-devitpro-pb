@@ -71,7 +71,7 @@ For the base application or system application extensions, you'll have to create
 4. Modify the app.json:
 
     - Increase `"version"` number. You have to increase the version so you can run a data upgrade later in this process.
-    - Set `"runtime"` to `5.0`
+    - Set `"runtime"` to `6.0`
     - Set `"platform"` to `17.0.0.0`
     - Set `"target"` to `OnPrem`
 
@@ -80,9 +80,9 @@ For the base application or system application extensions, you'll have to create
 
 6. Rewrite code that references the deprecated table to reference the new tables.
 
-    Try to build the project first to see what errors you get. Then, resolve the errors. For help about most of the errors, see [Rewriting Code for Breaking Changes](deprecated-tables-fix-compile-errors.md).
+    Try to build the project first to see what errors you get. Then, resolve the errors. <!-- For help about most of the errors, see [Rewriting Code for Breaking Changes](deprecated-tables-fix-compile-errors.md).-->
 
-6. Compile and build the new version of the extension.
+7. Compile and build the new version of the extension.
 
 ## DATA
 
