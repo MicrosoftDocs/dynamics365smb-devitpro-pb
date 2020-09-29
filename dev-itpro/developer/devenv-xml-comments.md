@@ -16,11 +16,9 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The documentation comment must immediately precede a user-defined type that it annotates, for example a codeunit, table, or interface, or a member such as a field or method. The syntax for adding XML comments in your code is triple slashes (///) followed by one of the supported XML tags. There is IntelliSense support for writing documentation comments. Most importantly providing a template documentation comment when writing the third slash in the triple slash.
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The documentation comment must immediately precede a user-defined type that it annotates, for example a codeunit, table, or interface, or a member such as a field or method. The syntax for adding XML comments in your code is triple slashes `///` followed by one of the supported XML tags. There is IntelliSense support for writing documentation comments. Most importantly providing a template documentation comment when writing the third slash in the triple slash.
 
-Documentation comments are visible when hovering over source symbols, in completion lists, and in signature help. 
-
-By adding XML comments in code, you can enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code. This means that when you have built an extension and someone extends this code, they will get inline documentation when they call the given object.
+Documentation comments are visible when hovering over source symbols, in completion lists, and in signature help. By adding XML comments in code, you can improve readability, add useful information about the implementation, and help others take over code that you wrote. With XML comments you also enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code. This means that when you have built an extension and someone extends this code, they will get inline documentation when they call the given object.
 
 > [!NOTE]  
 > Integration with documentation generator tools like DocFx and SandCastle is currently not supported.
@@ -51,7 +49,7 @@ The following table lists the XML elements that are supported for AL.
 |`<code>`|Specifies that multiline text within a description should be marked as code inside a top-level tag.|`<code>code block</code>`|
 |`<list>`|Specifies a list formatted as a bulleted or numbered list, or as a table in a `<summary>` or `<remarks>` block. |`<list type="bullet|number|table">`. See full [List syntax](devenv-xml-comments.md#list-syntax) below.|
 
-## List syntax
+### List syntax
 
 ```xml
 

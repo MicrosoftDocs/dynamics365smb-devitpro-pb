@@ -30,7 +30,7 @@ For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_
 
 ## How do I enable the debugger?
 
-To read about enabling the Visual Studio Code Debugger, see here [Debugging](devenv-debugging.md)
+To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md). To read about snapshot debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 ## Can I create something similar to Menusuites?
 
