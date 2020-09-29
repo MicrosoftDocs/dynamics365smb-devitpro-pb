@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 09/02/2020
+ms.date: 09/17/2020
 ms.author: bmeier
 ---
 
@@ -22,11 +22,15 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 - Dynamics GP (supported major versions)
 - [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises (current version + the two previous major versions)
 
-  This means that if the current version is version 16, then you can connect to the intelligent cloud if you are on version 16, 15, or 14.  
+  This means that if the current version is version 17, then you can connect to the intelligent cloud if you are on version 17, 16, or 15.  
 
-If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan and [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#upgrading-from--to--online) in the Migrate to Business Central Online section here.
+If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#online).
 
 <!-- - Dynamics SL 2018 CU 1-->
+
+### System requirements
+
+To connect to the cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions.  
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
 

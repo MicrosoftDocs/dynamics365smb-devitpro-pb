@@ -1,6 +1,6 @@
 ---
 title: "Get, Find, and Next Methods"
-description: Explains the Get, Find, and Next methods for records in Business Central
+description: Learn about the Get, Find, and Next methods in Business Central for searching records
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2020
@@ -134,4 +134,4 @@ until (Rec.Next = 0);
 ## See Also
 
 [AL Methods](methods-auto/library.md)  
-[SystemId Field](devenv-table-object.md#systemid)
+[SystemId Field](devenv-table-system-fields.md#systemid)
