@@ -45,7 +45,7 @@ This method is part of the partial records capability for improving performance.
 
 ## Example
 
-This code example shows how you could use the AreFieldsLoaded method to determines how many fields are currently loaded for a given recordRef. Note that because the platform might require more fields be loaded than specified by calls to SetLoadFields and AddLoadFields, the result might be larger than expected.
+This code example shows how you could use the AreFieldsLoaded method to determines how many fields are currently loaded for a given recordRef. Note that, because the platform might require more fields be loaded than specified by calls to SetLoadFields and AddLoadFields, the result might be larger than expected.
 
 ```
 procedure GetLoadedFieldCount(MyRecordRef: RecordRef): Integer
