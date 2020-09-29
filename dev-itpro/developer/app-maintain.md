@@ -117,6 +117,4 @@ It is crucial for you to keep contact details correctly up to date. We advise yo
 [Update Lifecycle for Customizations](devenv-customization-update-lifecycle.md)  
 [Microsoft Responsibilities for Apps on Business Central online](../deployment/microsoft-responsibilities.md)  
 [Technical Support for Business Central online](../technical-support.md)  
-[Creating Custom Telemetry Traces for Application Insights Monitoring](devenv-instrument-application-for-telemetry-app-insights.md)  
-[Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md)  
-
+[Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
