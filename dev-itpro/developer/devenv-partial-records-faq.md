@@ -1,6 +1,6 @@
 ---
 title: "FAQ for Partial Records"
-description: Aswers some of the most typical questions about the partial records capability in Business Central
+description: Answers some of the most typical questions about the partial records capability in Business Central
 ms.author: jswymer
 ms.custom: na
 ms.date: 08/06/2020
@@ -21,7 +21,7 @@ No. If a field that's not selected for loading is accessed, the data will be fet
 
 ## Where is "Partial Records" applied? To all records instances?
 
-Currently, the partial records capability is only implicitly used on report data items and OData web service pages. The behavior for all other record instances is as before, that is, all fields will be loaded. AL developers are, however, able to use it in their own code to improve performance in looping code.
+Currently, the partial records capability is only implicitly used on report data items and OData pages. The behavior for all other record instances is as before, that is, all fields will be loaded. However, as an AL developer, use in your own code to improve performance in looping code.
 
 ## What happens when accessing fields not selected for load?
 
@@ -49,15 +49,15 @@ When no fields from a table extension are selected for loading, then table exten
 
 ## What's the performance overhead of determining the fields necessary for a record? 
 
-For reports, a calculation takes place at compile time and once per data item type per report execution.  For OData pages, the calculation takes place at compile time and once per request segment.
+For reports, a calculation takes place at compile time and once per data item type per report execution. For OData pages, the calculation takes place at compile time and once per request segment.
 
 Compared to the time it takes to fetch data, the overhead is insignificant.
 
 ## Can I disable partial records in certain scenarios?
 
-- With [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, you can turn it off by using **Enable Partial Records** setting of [!INCLUDE [server](includes/server.md)]. 
+- With [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, you can turn off partial records by using **Enable Partial Records** setting of [!INCLUDE [server](includes/server.md)].
 
-- With [!INCLUDE [prodshort](includes/prodshort.md)] online, you can set the field selected for loading by calling the SetLoadFields method with no fields, which will revert it to previous behavior.
+- With [!INCLUDE [prodshort](includes/prodshort.md)] online, you can call the SetLoadFields method with no fields. Calling an empty SetLoadFields method will revert the behavior to what it was before [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2.
 
 ## See Also
 
