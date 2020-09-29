@@ -16,7 +16,7 @@ author: jswymer
 
 This article explains how to develop extensions to send custom telemetry trace signals to Azure Application Insights for viewing and analyzing.
 
-You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up in beforehand. "In Application Insights, the custom telemetry events are stored in the *traces* table.   
+You can add AL code in extensions to emit messages about activities or operations that users do within the application. At runtime, the messages can be picked up by an Application Insights resource, which you set up in beforehand. In Application Insights, the custom telemetry events are stored in the *traces* table.   
 
 ## Set up Application Insights 
 
