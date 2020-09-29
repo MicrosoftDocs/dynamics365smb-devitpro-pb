@@ -44,21 +44,19 @@ The following code shows a way to load only a single field from the **Item** tab
 ```
 procedure ComputeArithmeticMean(): Decimal;
 var
-    item: Record Item;
-    acc: Decimal;
-    cou: Integer;
+    Item: Record Item;
+    SumTotal: Decimal;
+    Counter: Integer;
 begin
-    item.SetLoadFields(item."Standard Cost");
-    if (item.FindSet()) then begin
+    Item.SetLoadFields(Item."Standard Cost");
+    if Item.FindSet() then begin
         repeat
-            acc += item."Standard Cost";
-            cou += 1;
-        until (item.Next = 0)
-    end else
-        exit(0);
-
-    exit(acc / cou);
-end;
+            SumTotal += Item."Standard Cost";
+            Counter += 1;
+        until Item.Next() = 0;
+        exit(SumTotal / Counter);
+    end;
+end
 ```
 
 Notice that the call to SetLoadFields occurs before the data fetching operations. This call determines which fields are needed for the FindSet call. You use the same pattern for AddLoadFields calls.
