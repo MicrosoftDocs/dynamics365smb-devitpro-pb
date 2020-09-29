@@ -45,10 +45,7 @@ This method is part of the partial records capability for improving performance.
 
 ## Example
 
-The following example code illustrates how to use the AddLoadFields method to add a field for loading on a report.
-
-The example loads a field that is outside of the fields selected by default by DataColumns. The field is added by using the AddLoadFields on the [OnPreDataItem trigger](../../triggers/devenv-onpredataitem-trigger.md).
-
+The following example code shows how to use the AddLoadFields method to add a field for loading on a report. The example loads a field that is outside of the default fields selected by DataColumns of the report. The field is added by using the AddLoadFields on the [OnPreDataItem trigger](../../triggers/devenv-onpredataitem-trigger.md).
 
 ```
 trigger OnPreDataItem()
