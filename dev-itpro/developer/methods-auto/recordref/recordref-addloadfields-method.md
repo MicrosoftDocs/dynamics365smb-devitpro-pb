@@ -43,6 +43,21 @@ The FieldNo's of the fields to be loaded.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
+## Example
+
+This code example uses the AddLoadFields method to make sure that if a record is a **Currency**, then the **Currency Factor** field is loaded. This code would have to be called before a database operation is executed on the RecordRef.
+
+```
+procedure AlwaysNeededFields(VAR MyRecordRef: RecordRef)
+var
+        Currency: Record Currency;
+begin
+if (MyecordRef.Number = Database::Currency) then
+// We always want the Currency."Currency Factor"
+MyRecordRef.AddLoadFields(Currency.FieldNo(Currency."Currency Factor"));
+end;
+```
+
 ## See Also
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  

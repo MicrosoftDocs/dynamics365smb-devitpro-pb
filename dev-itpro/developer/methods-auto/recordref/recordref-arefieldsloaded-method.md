@@ -43,6 +43,27 @@ The FieldNo's of the fields to check.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
+## Example
+
+This code example shows how you could use the AreFieldsLoaded method to determines how many fields are currently loaded for a given recordRef. Note: Since the platform might require more fields be loaded than specified via calls to SetLoadFields and AddLoadFields, the result might be larger than expected.
+
+```
+procedure GetLoadedFieldCount(MyRecordRef: RecordRef): Integer
+var
+    MyFieldRef: FieldRef;
+    LoadedFields: Integer;
+    Idx: Integer;
+begin
+    for Idx := 0 to MyRecordRef.FieldCount do begin
+        MyFieldRef := MyRecordRef.FieldIndex(idx);
+        if (MyFieldRef.Active() AND MyRecordRef.AreFieldsLoaded(MyFieldRef.Number)) then
+            LoadedFields += 1;
+    end;
+
+    exit(LoadedFields);
+end;
+```
+
 ## See Also
 
 [Using Partial Records](../../devenv-partial-records.md)  
