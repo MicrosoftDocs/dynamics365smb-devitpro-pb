@@ -1,6 +1,6 @@
 ---
 title: "Snapshot Debugging"
-description: "Overview of how snapshot debugging works in AL for Business Central"
+description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/31/2020
