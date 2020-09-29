@@ -32,7 +32,7 @@ New video that needs to be created -->
 
 Technically and architecturally an Embed app can be constructed and composed by combining a few approaches such as: 
 - Creating your own extensions and customizations to [!INCLUDE[d365fin_long](../includes/d365_bus_central_md.md)].
-- Leveraging other services components from Microsoft; for example, PowerBI, Power Automate, Power Apps, Office 365, Azure services, and more.   
+- Leveraging other services components from Microsoft; for example, PowerBI, Power Automate, Power Apps, Microsoft 365, Azure services, and more.   
 - Leveraging the integration to services from other ISV’s; for example, Payroll services, Bank integration, and more.   
 - Including Add-on apps provided by other ISV’s that are specifically created to enhance and extend the capabilities of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]; for example, payment and shipping functionality, and more. 
 
