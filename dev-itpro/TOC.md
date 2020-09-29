@@ -376,7 +376,7 @@
 ## Instrumenting for Telemetry
 ### [Overview](developer/devenv-instrument-application-for-telemetry.md)
 ### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-### [Sending Extension Telemetry to Azure Application Insights](developer/devenv-application-insights-for-extensions.md)
+### [Sending Extension Telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## .NET in AL
