@@ -684,10 +684,9 @@
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
-## Integrating with Microsoft Power Platform
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
 <!-- end CDS -->
 <!-- Microsoft Power Platform -->
+## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
 ### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
 ### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
@@ -695,7 +694,7 @@
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
 <!-- Business Central API -->
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
+## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
