@@ -163,9 +163,9 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 ## Build HTML files
 
-For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
-Alternatively, crete your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files straight from your fork of one of the Microsoft repos. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
+For publishing to your own website, you can <!--use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  -->
+<!--
+Alternatively, --> create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files straight from your fork of one of the Microsoft repos. <!--You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.-->
 
 > [!TIP]
 > You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file that is kept available in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
