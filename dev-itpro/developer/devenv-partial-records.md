@@ -72,7 +72,7 @@ The main goal of the feature is to provide the ability to limit the number of fi
 -->
 
 > [!TIP]
-> Testing on the example code above showed that the execution time for loading only the "Standard Cost" field was nine times faster than loading all normal fields. Your performance numbers will vary depending on the machine and the setup with the SQL database.
+> Testing on the previous example code showed that the execution time for loading only the "Standard Cost" field was nine times faster than loading all normal fields. Your performance numbers will vary depending on the machine and the setup with the SQL database.
 
 For performance reasons, it's not recommended to use partial records on a record that will do inserts, deletes, or copies to temporary records. All these operations require that the record is fully loaded, so you lose the performance gains of loading fewer. For this reason, the feature is especially advantageous in reading-based scenarios.
 
@@ -80,7 +80,7 @@ For performance reasons, it's not recommended to use partial records on a record
 
 Currently, the platform implicitly uses partial records when fetching data for reports and calling pages through OData.
 
-For reports, the fields that are selected for loading are fields set up as columns in the report data set. If a report accesses a field that isn't in the data set, it's beneficial to do one of the following to avoid just-in-time (JIT) loading:
+For reports, the fields that are selected for loading are fields setup as columns in the report data set. If a report accesses a field that isn't in the data set, it's beneficial to do one of the following to avoid just-in-time (JIT) loading:
 
 - Add the field as a column in the data set.
 - Add the field on the [OnPreDataItem trigger](/triggers/devenv-onpredataitem-trigger.md).
@@ -107,7 +107,7 @@ The same issue arises for pages called through OData. If a field isn't requested
 
 When a record is loaded as a partial record, the obvious question is: What happens when accessing a field that hasn't been selected for loading?". The answer is JIT loading. The platform, in such a case, does an implicit GET on the record and loads out the missing field.
 
-When JIT loading occurs, another access to the data source is required. These operations are generally fast because they're GET calls. GET calls can often be served by the server's data cache or become clustered index seeks on the database.
+When JIT loading occurs, another access to the data source is required. These operations tend to be faster because they're GET calls. GET calls can often be served by the server's data cache or become clustered index seeks on the database.
 
 A JIT load may fail for multiple reasons, like:
 
@@ -117,7 +117,7 @@ A JIT load may fail for multiple reasons, like:
 
 ## Iterating over records
 
-When iterating over records in the database, an enumerator is created based on selected fields and a row is fetched when NEXT is called. This behavior is an optimization that allows for large parts of the operation to be done only once.
+When iterating over records in the database, an enumerator is created based on selected fields. Then, a row is fetched when NEXT is called. This behavior is an optimization that allows for large parts of the operation to be done only once.
 
 Certain operations will invalidate the enumerator and force the creation of a new one, which adds some overhead. As long as the enumerator isn't invalidated too frequently, this model is an effective optimization. When accessing fields that aren't loaded, the platform does a JIT load, followed by an update of the enumerator. This process eliminates the need to trigger a JIT load on subsequent iterations.
 
