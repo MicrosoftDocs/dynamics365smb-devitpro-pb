@@ -1,5 +1,6 @@
 ---
 title: "SessionSettingsHandler Attribute"
+description: "The SessionSettingsHandler attribute in AL for Business Central"
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na

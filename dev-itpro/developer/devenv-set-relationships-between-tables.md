@@ -1,5 +1,6 @@
 ---
 title: "Setting Relationships Between Tables"
+description: "Relationships between tables in relational database design for Business Central."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2020

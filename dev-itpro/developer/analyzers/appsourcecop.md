@@ -1,5 +1,6 @@
 ---
 title: "AppSourceCop Analyzer"
+description: Overview of AppSourceCop analyzer rules.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/25/2020

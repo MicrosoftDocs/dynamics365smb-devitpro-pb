@@ -28,7 +28,7 @@ The following table describes the settings in the `app.json` file:
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
-|id|Yes|The unique ID of the extension. When the app.json file is automatically created, the ID is set to a new GUID value.|
+|id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value.|
 |name|Yes|The unique extension name.|
 |publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**.|
 |brief|No, but required for AppSource submission|Short description of the extension.|
@@ -57,13 +57,14 @@ The following table describes the settings in the `app.json` file:
 |preprocessorSymbols|No|Defines any symbols to use with preprocessor directives. The syntax is `"preprocessorSymbols": [ "DEBUG" ]`. For more information, see [Preprocessor Directives in AL](directives/devenv-directives-in-al.md).|
 |applicationInsightsKey|No|The instrumentation key of the Azure Application Insights resource for monitoring operations, for example, like app secrets retrieval by extensions. <br><br>For more information, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).|
 |keyVaultUrls|No|List of URLs of key vaults that the extension from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](devenv-app-key-vault-overview.md).|
-|suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example `"suppressWarnings": [ "AL0458" ]`. It is also possible to use `#pragma` directives. For more information, see [Pragma Warning Directive](directives/devenv-directive-pragma-warning.md) and [Suppressing Warnings](devenv-deprecating-with-statements-overview.md#suppressing-warnings).|
+|suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example `"suppressWarnings": [ "AL0458" ]`. It is also possible to use `#pragma` directives for suppressing warnings for specific areas of code. For more information, see [Pragma Warning Directive](directives/devenv-directive-pragma-warning.md) and [Suppressing Warnings](devenv-deprecating-with-statements-overview.md#suppressing-warnings).|
 
 ## <a name="Launchjson"></a>Launch.json file
 
 The following table describes the settings in the `launch.json` file. The `launch.json` file has two configurations depending on whether the extension is published to a local server or to the cloud.
 
 ### Publish to local server settings
+
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Your own server"|

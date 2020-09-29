@@ -1,5 +1,6 @@
 ---
 title: "Page Background Tasks"
+description: Explains how to create page background tasks in Business Central.
 author: jswymer
 ms.author: jswymer
 ms.custom: na
@@ -65,7 +66,7 @@ The API for background tasks includes the following methods and triggers:
 
 The following figure illustrates the application objects and code involved in creating a background task. The code has been simplified for demonstration purposes.
 
-![Page background task flow](media/page-background-task-code.png "Page background task flow")
+![Create page background task](media/page-background-task-code.png "Hot to create a page background task")
 
 The general steps are as follows:
 

@@ -55,7 +55,7 @@ The following figure illustrates the general layout and elements of a list page.
 The following table describes the elements of a typical list page.
 
 
-|    |Area|Description|Usage Guidelines|
+|  No.  |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
 |1|List|Displays records of the source table as rows and columns, where each row is a record and the columns are the fields. You define the list by adding a `repeater()` control within the `area(Content)` control of the page, and then add `field()` controls for each field that you want to display. For more information about the repeater control, see [Working with Repeater Controls](devenv-repeater-controls.md).|The order of the `field` controls determines the order they appear on the page. |
 |2|Tile view|Renders records in a list as tiles (or bricks). Client users can toggle between the list and tile view.<br /><br /> As a developer, to enable a list to be displayed as tiles, you must specify the table fields that you want to include in the tiles. You do this by adding a `fieldgroup(Brick; <Field>)` keyword in the code of the source table.<br /><br /> For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).|You can design any list page to display as tiles. The tile view is particularly beneficial for lists with records that include media or images, such a customers, contacts, and items lists. For more information about adding media to records, see [Working With Media on Records](devenv-working-with-media-on-records.md).|
@@ -76,7 +76,7 @@ The following table describes the elements of a typical list page.
 
 ## [Developer tips](#tab/tips)
 
-From the user’s perspective, the following are qualities of a well-designed list page does the following:
+From the user's perspective, the following are qualities of a well-designed list page does the following:
 
 - Displays a single collection of entities or entries that the user needs for their work. 
 - Includes page title that clearly identifies the collection and any specific view that is in effect.

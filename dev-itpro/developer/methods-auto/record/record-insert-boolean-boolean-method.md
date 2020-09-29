@@ -1,6 +1,6 @@
 ---
-title: "Insert Method"
-description: Describes the Insert method for record data types in Business Central
+title: "Record.Insert Method"
+description: Describes the Record.Insert(Boolean, Boolean) method for record data types in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020

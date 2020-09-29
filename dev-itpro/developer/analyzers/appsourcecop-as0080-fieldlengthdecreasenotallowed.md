@@ -1,5 +1,6 @@
 ---
 title: "Fields must not decrease in length"
+description: Explains AppSourceCop Rule AS0080.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2020
