@@ -382,6 +382,34 @@
 ### Accessing Device Capabilities
 #### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
 #### [Implementing Location in AL](developer/devenv-implement-location-al.md)
+<!--### Events
+#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
+#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)-->
+<!-- Testing the application -->
+## Testing the Application
+### [Testing the Application Overview](developer/devenv-testing-application.md)
+### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
+### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
+### [Test Pages](developer/devenv-testing-pages.md)
+### [UI Handlers](developer/devenv-creating-handler-methods.md)
+<!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
+### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
+### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
+<!-- end Testing the application -->
+<!-- Rules and Guidelines -->
+## Rules and Guidelines
+### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
+### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
+### [Benefits and Guidelines for using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
+### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
+### [Testing your Extension](compliance/apptest-testingyourextension.md)
+### [User Scenario Documentation](compliance/apptest-userscenario.md)
+### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
+### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
+### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
+### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+<!-- end Rules and Guidelines -->
+<!-- AL programming -->
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
@@ -572,38 +600,7 @@
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
-<!--### Events
-#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
-#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)-->
-## Testing the Application
-### [Testing the Application Overview](developer/devenv-testing-application.md)
-### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
-### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
-### [Test Pages](developer/devenv-testing-pages.md)
-### [UI Handlers](developer/devenv-creating-handler-methods.md)
-<!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
-### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
-### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
-## Rules and Guidelines
-### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
-### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
-### [Benefits and Guidelines for using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
-### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
-### [Testing your Extension](compliance/apptest-testingyourextension.md)
-### [User Scenario Documentation](compliance/apptest-userscenario.md)
-### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
-### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
-### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
-### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-
-<!--
-## Preview Features in AL
-### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
-### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
-### [InternalEvent Attribute](developer/methods/devenv-internal-attribute.md)
-### [Access Property](developer/properties/devenv-access-property.md)
-### [Extensible Property](developer/properties/devenv-extensible-property.md)
-### [JSON files](developer/devenv-json-files.md) -->
+<!-- end AL programming -->
 <!-- end AL -->
 <!-- begin security -->
 # Security, Privacy, Compliance
