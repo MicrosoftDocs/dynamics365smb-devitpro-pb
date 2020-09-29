@@ -22,7 +22,7 @@ The following methods are available on instances of the FieldRef data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Number()](fieldref-number-method.md)|Gets the number of a field as a string.|
+|[Number()](fieldref-number-method.md)|Gets the number of a field as an integer.|
 |[Name()](fieldref-name-method.md)|Gets the name of a field as a string.|
 |[Caption()](fieldref-caption-method.md)|Gets the current caption of a field as a String.|
 |[Type()](fieldref-type-method.md)|Gets the data type of the field that is currently selected.|
