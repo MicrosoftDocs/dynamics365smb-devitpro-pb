@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Switzerland, local functionality
 ms.date: 04/01/2020
-ms.author: SorenGP
+ms.author: edupont
 
 ---
 
@@ -45,7 +45,12 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 |----|----|
 |Moved| Blanket Order Archiving and Document Line Tracking features are no longer specific to Switzerland, so we have made them generally available in the standard product. |
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-ch](../includes/fields-obsolete-ch.md)]
+
 ## See Also
+
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  

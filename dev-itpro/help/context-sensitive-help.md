@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 07/01/2020
+ms.date: 08/24/2020
 ---
 
 # Configure Context-Sensitive Help
@@ -33,7 +33,9 @@ If your app only supports a limited number of locales, you can specify that as w
   ],
 ```
 
-In this example, the *contextSensitiveHelpUrl* and *supportedLocales* properties specify that the links to the Help for page objects in this particular app must go to the *mysite.com* site, but that the site only supports those two languages. All other Help calls will go to the default location on the *docs.microsoft.com* site.  
+In this example, the *contextSensitiveHelpUrl* and *supportedLocales* properties specify that the links to the Help for page objects in this particular app must go to the *mysite.com* site, but that the site only supports those two languages. All other Help calls from objects in this app will go to the default locale on the specified webserver, in this case the equivalent of `https://mysite.com/en-GB/documentation/my-feature`.  
+
+Help calls for Microsoft objects will continue to go to the default location on the *docs.microsoft.com* site.  
 
 ### Localization apps
 
@@ -62,9 +64,9 @@ page 50101 "Reward Card"
 }
 ```
 
-In this example, the app contains a page object that is mapped to the *sales-rewards* Help file on the website that the app.json specifies. As a result, the *Learn more* link in the tooltips for this page will go to the equivalent of *https://mysite.com/documentation/sales-rewards*.  
+In this example, the app contains a page object that is mapped to the *sales-rewards* Help file on the website that the app.json specifies. As a result, the *Learn more* link in the tooltips for this page will go to the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
-Similarly, the following code example shows a page extension object that also sets the *ContextSensitiveHelpPage* property so that the *Learn more* link in tooltips for the fields that this page extension adds to the Customer Card will go to the *https://mysite.com/documentation/sales-rewards* page rather than the default location at docs.microsoft.com:
+Similarly, the following code example shows a page extension object that also sets the *ContextSensitiveHelpPage* property so that the *Learn more* link in tooltips for the fields that this page extension adds to the Customer Card will go to the `https://mysite.com/documentation/sales-rewards` page rather than the default location at docs.microsoft.com:
 
 ```AL
 pageextension 50104 "Customer Card Ext" extends "Customer Card"
@@ -85,7 +87,7 @@ In contrast, the app.json file also contains a *help* property, but this specifi
 
 In the current version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the context-sensitive links to Help for the base application works in a different way that is based on a UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are listed, and have a target Help article associated with each of them. This means that multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
 
-The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [/dynamics365/business-central/](/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to that app provider's website. For more information, see [Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/configure-help.md).  
+The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [/dynamics365/business-central/](/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to that app provider's website. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
 
 ### Adding page-level UI-to-Help mapping to the system table
 

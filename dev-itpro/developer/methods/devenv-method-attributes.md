@@ -1,5 +1,6 @@
 ---
 title: "Method Attributes"
+description: "The attributes that you can apply to methods in AL for Business Central"
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -30,6 +31,7 @@ For example, the Integration attribute has two arguments, and the syntax is:
 
 The following method attributes are available:
 
+- [CommitBehavior Attribute](devenv-commitbehavior-attribute.md)  
 - [Business Attribute](devenv-business-attribute.md)  
 - [ConfirmHandler Attribute](devenv-confirmhandler-attribute.md)  
 - [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)  

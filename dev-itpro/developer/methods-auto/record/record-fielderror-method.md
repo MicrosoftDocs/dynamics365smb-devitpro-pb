@@ -1,5 +1,6 @@
 ---
-title: "FieldError Method"
+title: "Record.FieldError Method"
+description: Explains the Record.FieldError method in Business Central
 ms.author: solsen
 ms.custom: na
 ms.date: 06/18/2020
@@ -52,7 +53,7 @@ The following guidelines for error messages are recommended:
 - Note that a period is automatically inserted at the end of a FieldError.  
 - Use a label data type for the *Text* parameter.  
   
-For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Functions](Progress-Windows--MESSAGE--ERROR--and-CONFIRM-Functions.md).  -->
+For more information, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).
   
 ### Example 1
  

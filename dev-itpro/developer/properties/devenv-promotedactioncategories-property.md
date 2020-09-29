@@ -40,7 +40,7 @@ PromotedActionCategories = 'New caption, Process caption, Report caption, Catego
 ## Remarks  
 Promoted actions appear in the action bar on a page. You promote an action by setting the [Promoted Property](devenv-promoted-property.md) to **true**. You use the  [PromotedCategory Property](devenv-promotedcategory-property.md) to set the category of an action, which allows you to group similar actions under a common caption. You can choose between 20 categories: New, Process, Report, and Category4 through Category20.
 
-By default, the category names are used as the captions in the ribbon. You use this property to customize these captions. The new caption names must me expressed as a string list, where the first three places correspond to the captions of the New, Process and Report categories, respectively, the fourth place to Category4's caption, the fifth to Category5's and so on.
+By default, the category names are used as the captions in the ribbon. You use this property to customize these captions. The new caption names must be expressed as a string list, where the first three places correspond to the captions of the New, Process and Report categories, respectively, the fourth place to Category4's caption, the fifth to Category5's and so on.
 
 ## See Also  
 [Properties](devenv-properties.md)   

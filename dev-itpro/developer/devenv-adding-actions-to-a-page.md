@@ -31,7 +31,7 @@ For more information about different types of actions and where to use them, see
 
 The page actions are displayed on the header section. There are multiple tabs to help navigate to the right item.
   
-In order to add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. For more information about adding, moving, and modifying actions, see [Using Keywords to Place Actions and Controls](devenv-pages-overview.md#using-keywords-to-place-actions-and-controls).
+In order to add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. For more information about adding, moving, and modifying actions, see [Using Keywords to Place Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls).
 
 > [!NOTE]  
 > Actions can only be linked to a page, or to a group control. Actions cannot be linked to fields, or parts on a page.
