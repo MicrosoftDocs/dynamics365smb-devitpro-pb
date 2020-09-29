@@ -1,5 +1,6 @@
 ---
 title: "The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes"
+description: Explains AppSourceCop Rule AS0056.
 ms.author: solsen
 ms.custom: na
 ms.date: 06/19/2020

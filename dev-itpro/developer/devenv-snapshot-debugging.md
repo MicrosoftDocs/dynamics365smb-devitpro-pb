@@ -1,6 +1,6 @@
 ---
 title: "Snapshot Debugging"
-description: "Overview of how snapshot debugging works in AL for Business Central"
+description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/31/2020
@@ -21,7 +21,7 @@ Snapshot debugging allows a delegated admin to record AL code that runs on the s
 
 Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
-- Snappoints 
+- Snappoints  
 - AL exceptions
 
 > [!IMPORTANT]  

@@ -1,5 +1,6 @@
 ---
 title: "Working with AL methods"
+description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
 ms.date: 07/22/2020
 ms.reviewer: na

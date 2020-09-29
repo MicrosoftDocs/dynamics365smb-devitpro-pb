@@ -1,5 +1,6 @@
 ---
 title: "PerTenantExtensionCop Analyzer"
+description: Overview of the PerTenantExtensionCop analyzer rules.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/23/2020

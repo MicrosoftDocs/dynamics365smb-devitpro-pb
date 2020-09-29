@@ -443,7 +443,7 @@ Returns used storage information of a single environment if exists.
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.3/applications/environments/usedstorage
+GET /admin/v2.3/environments/usedstorage
 ```
 
 #### Response
@@ -467,7 +467,7 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.3/applications/environments/quotas
+GET /admin/v2.3/environments/quotas
 ```
 
 #### Response

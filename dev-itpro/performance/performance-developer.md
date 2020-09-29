@@ -1,5 +1,6 @@
 ---
 title: "Performance Article For Developers"
+description: Provides information for developers to help improve performance in Business Central
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na

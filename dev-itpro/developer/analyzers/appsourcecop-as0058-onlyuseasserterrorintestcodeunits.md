@@ -1,5 +1,6 @@
 ---
 title: "Only use AssertError in Test Codeunits"
+description: Explains AppSourceCop Rule AS0058.
 ms.author: solsen
 ms.custom: na
 ms.date: 06/19/2020

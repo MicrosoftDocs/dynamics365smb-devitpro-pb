@@ -1,5 +1,6 @@
 ---
 title: "The ID range assigned to the extension must be within the allowed range"
+description: Explains AppSourceCop Rule AS0084.
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2020

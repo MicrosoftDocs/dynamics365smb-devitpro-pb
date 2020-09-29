@@ -12,7 +12,9 @@ ms.author: solsen
 
 # Debugging
 
-The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing **F5**. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging).
+The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing **F5**. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
+
+An alternative to classic debugging, is snapshot debugging, which allows you to record running code, and later debug it. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 > [!IMPORTANT]  
 > To enable debugging in versions before [!INCLUDE[prodshort](../includes/prodshort.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
