@@ -20,7 +20,7 @@ This page provides links to legal information for Business Central On-Premises.
 
 ## Third Party Notices
 
-- [Dynamics Business Central On Prem Third Party Notice.pdf](https://go.microsoft.com/en-us/download/details.aspx?id=2144507) 
+- [Dynamics Business Central On Prem Third Party Notice.pdf](https://go.microsoft.com/fwlink/?linkid=2144507) 
 
 ## AL Language
 
