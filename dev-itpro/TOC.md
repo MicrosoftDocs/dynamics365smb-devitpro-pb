@@ -730,9 +730,11 @@
 ## Deployment
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
-### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System Requirements April '19](deployment/system-requirement-business-central.md)
+### System Requirements
+#### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
+#### [2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
+#### [2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+#### [April 2019](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
