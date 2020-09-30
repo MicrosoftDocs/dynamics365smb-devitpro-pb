@@ -2,7 +2,7 @@
 title: "WebServiceActionContext Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ The following methods are available on instances of the WebServiceActionContext 
 
 |Method name|Description|
 |-----------|-----------|
-|[AddEntityKey(Integer, Any)](webserviceactioncontext-addentitykey-method.md)|Add a new <fieldId, value> pair to the collection of entity keys.|
+|[AddEntityKey(Integer, Any)](webserviceactioncontext-addentitykey-method.md)|Add a new \<fieldId, value\> pair to the collection of entity keys.|
 |[SetObjectType(ObjectType)](webserviceactioncontext-setobjecttype-method.md)|Sets the object type.|
 |[GetObjectType()](webserviceactioncontext-getobjecttype-method.md)|Gets the object type.|
 |[SetObjectId(Integer)](webserviceactioncontext-setobjectid-method.md)|Sets the object ID.|

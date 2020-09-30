@@ -1,8 +1,8 @@
 ---
-title: "Confirm Method"
+title: "Dialog.Confirm Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Confirm Method
+# Dialog.Confirm Method
 Creates a dialog box that prompts the user for a yes or no answer. The dialog box is centered on the screen.
 
 
@@ -26,7 +26,7 @@ Ok :=   Dialog.Confirm(String: String [, Default: Boolean] [, Value1: Any,...])
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-Specifies the string that is displayed in the dialog box. Use a backslash (\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
+Specifies the string that is displayed in the dialog box. Use a backslash (\\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
         
 *Default*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

@@ -2,7 +2,7 @@
 title: "Report Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ The following methods are available on the Report data type.
 |-----------|-----------|
 |[Run(Integer [, Boolean] [, Boolean] [, var Record])](report-run-method.md)|Loads and executes the report that you specify.|
 |[RunModal(Integer [, Boolean] [, Boolean] [, var Record])](report-runmodal-method.md)|Loads and executes the report that you specify.|
-|[SaveAsHtml(Integer, String [, var Record])](report-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. > This method is only supported when a report uses a Word report layout when it is run.|
+|[SaveAsHtml(Integer, String [, var Record])](report-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsXml(Integer, String [, var Record])](report-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SAVEASXML function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
 |[SaveAsPdf(Integer, String [, var Record])](report-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsExcel(Integer, String [, var Record])](report-saveasexcel-method.md)|Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.|
@@ -57,7 +57,7 @@ The following methods are available on instances of the Report data type.
 |[Preview()](reportinstance-preview-method.md)|Indicates whether a report is being printed in preview mode.|
 |[RunModal()](reportinstance-runmodal-method.md)|Loads and executes the report that you specify.|
 |[Run()](reportinstance-run-method.md)|Loads and executes the report that you specify.|
-|[SaveAsHtml(String)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. > This method is only supported when a report uses a Word report layout when it is run.|
+|[SaveAsHtml(String)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsXml(String)](reportinstance-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SAVEASXML method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
 |[SaveAsPdf(String)](reportinstance-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsExcel(String)](reportinstance-saveasexcel-method.md)|Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.|

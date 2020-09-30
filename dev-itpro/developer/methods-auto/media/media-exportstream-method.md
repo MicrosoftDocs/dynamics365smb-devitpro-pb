@@ -1,8 +1,8 @@
 ---
-title: "ExportStream Method"
+title: "Media.ExportStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ExportStream Method
+# Media.ExportStream Method
 Exports the current media object (such as a JPEG image) that is used on record to an OUTSTREAM object. The OUTSTREAM object can be created from a BLOB field, a FILE or from a .NET Framework interoperability object. In the record, the media is referenced in a Media data type field.
 
 
@@ -34,7 +34,7 @@ The OutStream object that is created by the object that will receive the media c
 ## Return Value
 *Result*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the media was successfully exported, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the media was successfully exported, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

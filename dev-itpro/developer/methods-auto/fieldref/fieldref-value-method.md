@@ -1,8 +1,8 @@
 ---
-title: "Value Method"
+title: "FieldRef.Value Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Value Method
+# FieldRef.Value Method
 Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected.
 
 

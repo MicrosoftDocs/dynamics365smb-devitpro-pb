@@ -1,8 +1,8 @@
 ---
-title: "IsSessionActive Method"
+title: "Session.IsSessionActive Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsSessionActive Method
+# Session.IsSessionActive Method
 Tests if the specified SessionID is active on the server instance where it was started.
 
 

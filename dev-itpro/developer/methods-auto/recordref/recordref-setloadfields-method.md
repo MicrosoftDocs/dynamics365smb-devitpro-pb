@@ -43,8 +43,29 @@ The FieldNo's of the fields to be loaded.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
+## Example
+
+This code example uses the SetLoadFields method to speedup the calculation of the mean for values in a table field. The other fields aren't needed for the calculation, so they're not loaded.
+
+```
+procedure ComputeAritmeticMean(MyRecordRef: RecordRef; FieldNo: Integer): Decimal
+var
+    SumTotal: Decimal;
+    Counter: Integer;
+begin
+    MyRecordRef.SetLoadFields(FieldNo);
+    if MyRecordRef.FindSet() then begin
+        repeat
+            SumTotal := MyRecordRef.Field(FieldNo).Value;
+            Counter += 1;
+        until MyRecordRef.Next() = 0;
+        exit(SumTotal / Counter);
+    end;
+end;
+```
+
 ## See Also
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -1,8 +1,8 @@
 ---
-title: "FieldIndex Method"
+title: "KeyRef.FieldIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldIndex Method
+# KeyRef.FieldIndex Method
 Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable. Returns an error if no key is selected.
 
 

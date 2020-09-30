@@ -1,8 +1,8 @@
 ---
-title: "TopNumberOfRows Method"
+title: "Query.TopNumberOfRows Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TopNumberOfRows Method
+# Query.TopNumberOfRows Method
 Specifies the maximum number of rows to include in the resulting data set of a query.
 
 

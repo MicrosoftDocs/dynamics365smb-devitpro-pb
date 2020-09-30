@@ -1,8 +1,8 @@
 ---
-title: "Get Method"
+title: "HttpClient.Get Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Get Method
+# HttpClient.Get Method
 Sends a GET request to get the resource identified by the request URL.
 
 
@@ -38,7 +38,7 @@ The response received from the remote endpoint.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

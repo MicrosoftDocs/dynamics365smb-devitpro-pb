@@ -1,8 +1,8 @@
 ---
-title: "AddRecordRef Method"
+title: "FilterPageBuilder.AddRecordRef Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 09/15/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AddRecordRef Method
+# FilterPageBuilder.AddRecordRef Method
 Adds a filter control for a table to a filter page. The table is specified by a RecordRef variable that is passed to the method. This creates a filter control on the filter page, where users can set filter table data.
 
 
@@ -39,7 +39,7 @@ The record reference to use in the filter control.
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.
-      If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+       If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
