@@ -55,6 +55,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
+### [Legal Resources](terms/legal.md)
 ### [Technical Support](technical-support.md)
 ### Help system
 #### [User Assistance Model](user-assistance.md)
@@ -625,6 +626,7 @@
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 ## Privacy
+### [Privacy FAQ](security/PrivacyFAQ.md)
 ### [Privacy (microsoft.com)](https://www.microsoft.com/en-us/trust-center/privacy)
 ## Compliance
 ### [Compliance Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -726,6 +728,7 @@
 <!--end deprecated features -->
 <!--on-prem-->
 # Business Central on-premises
+## [Legal Resources](terms/legal-onpremises.md)
 <!-- deployment -->
 ## Deployment
 ### [Deployment Overview](deployment/deployment.md)
