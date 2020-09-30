@@ -10,7 +10,7 @@ ms.author: edupont
 ---
 # Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online
 
-As a partner, keeping your apps and per-tenant extensions (PTEs) up-to-date is your responsibility. [!INCLUDE [prodshort](includes/prodshort.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prodshort](includes/prodshort.md)] because of this promise of having an always up-to-date business solution.  
+As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prodshort](includes/prodshort.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prodshort](includes/prodshort.md)] because of this promise of having an always up-to-date business solution.  
 
 To not break this promise, developers that bring apps to Microsoft AppSource, and resellers that provide PTEs to respond to the unique needs of customers, have a responsibility to align their code to the Microsoft release rhythm.  
 
@@ -26,11 +26,11 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Access to pre-release bits
 
-    Business Central partners have access to the next major, next minor, and daily pre-release bits in Docker. These can be used to test apps against upcoming updates.  
+    Business Central partners have access to the next major, next minor, and daily pre-release bits in Docker. These bits can be used to test apps against upcoming updates.  
 
 - Information about what will be deprecated
 
-    With all [!INCLUDE [prodshort](includes/prodshort.md)] releases, Microsoft controls and regulates breaking changes with major releases and [communicates upcoming breaking changes](../upgrade/deprecated-features-w1.md) at least 1 year in advance. If developers missed this above info, the compiler in Visual Studio Code also [warns for potential controls that will become obsolete](analyzers/appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md) in future versions and how to deal with them.  
+    With all [!INCLUDE [prodshort](includes/prodshort.md)] releases, Microsoft controls and regulates breaking changes with major releases and [communicates upcoming breaking changes](../upgrade/deprecated-features-w1.md) at least one year in advance. If developers missed this above info, the compiler in Visual Studio Code also [warns for potential controls that will become obsolete](analyzers/appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md) in future versions and how to deal with them.  
 
 - Policy definitions and terms
 
@@ -44,11 +44,11 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Service notifications
 
-    [!INCLUDE [prodshort](includes/prodshort.md)] online will support app and PTE publishers with extra warnings about potential technical incompatibility. If publishers respond to these notifications in due timing and avoid incompatibilities repeatedly, Microsoft will stand with these publishers to help where needed.  
+    [!INCLUDE [prodshort](includes/prodshort.md)] online will support app and PTE publishers with extra warnings about potential technical incompatibility. If publishers respond to these notifications in due timing and avoid incompatibilities repeatedly, Microsoft will stand with these publishers to help where needed. If a publisher includes a telemetry key in their app, then, starting with 2020 release wave 2, [!INCLUDE [prodshort](includes/prodshort.md)] also provides publishers with telemetry about upgrade failures that happen in production because of issues in the publisher's upgrade code.
 
-If publishers lack to keep their code updatable, they risk that ultimately their apps or PTEs will be removed from the customers tenant, and this will most likely result in important data not being captured as it should. For apps, this also means removal from the marketplace.  
+If publishers lack to keep their code updatable, they risk that ultimately their apps or PTEs will be removed from the customer's tenant, and this will most likely result in important data not being captured as it should. For apps, this also means removal from the marketplace.  
 
-Since resellers are the first line contact point for customers, they carry responsibility to explain what it means to load code in a customer's environment. The best way to is to explain this is with terms.  
+Since resellers are the first line contact point for customers, they carry responsibility to explain what it means to load code in a customer's environment. The best way is to explain this is with terms.  
 
 We advise these terms include topics like intellectual property rights, upgrade responsibilities, associated costs to keep code updatable, support options, data privacy, and so on.  
 
@@ -65,11 +65,11 @@ This section describes the processes that are initiated during and after upgrade
 
 - **T1 – T30**: Microsoft alerts administrators, resellers, and ISVs
 
-    Shortly after a service update of [!INCLUDE [prodshort](includes/prodshort.md)] online, (Day **T**), Microsoft will initiate daily updates attempts on all tenants. In these update attempts, the publisher's provided upgrade code is triggered and run. These attempts run repeatedly in a time frame of approximately 1 month until the upgrade is successful. For more information, see [Major Updates of Business Central Online](../administration/update-rollout-timelime.md).  
+    Shortly after a service update of [!INCLUDE [prodshort](includes/prodshort.md)] online (Day **T**), Microsoft will initiate daily updates attempts on all tenants. In these update attempts, the publisher's provided upgrade code is triggered and run. These attempts run repeatedly in a time frame of approximately one month until the upgrade is successful. For more information, see [Major Updates of Business Central Online](../administration/update-rollout-timelime.md).  
 
     With every unsuccessful upgrade attempt, stakeholders will receive notifications. Customers and their reselling partners can follow these notifications in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)].  
 
-    ISVs who provide third-party AppSource apps might not be listed in the customer's admin center. The reseller will in most cases have worked with the ISV to test compatibility, but after 2 weeks (Day **T+15**) of failed upgrade attempts, the Microsoft AppSource team will also send the app provider a warning message that action within the next few days is required.  
+    ISVs who provide third-party AppSource apps might not be listed in the customer's admin center. The reseller will in most cases have worked with the ISV to test compatibility, but after two weeks (Day **T+15**) of failed upgrade attempts, the Microsoft AppSource team will also send the app provider a warning message that action within the next few days is required.  
 
     This message will explain that if they fail to respond correctly, their app will be removed from AppSource at Day **T+30**.  
 
@@ -81,11 +81,11 @@ This section describes the processes that are initiated during and after upgrade
 
     If the publisher wants to have their app available again, they must mitigate all existing incompatibility issues and go through the full validation process again.  
 
-    If the source of the incompatibility has been resolved by the publisher, they will have to submit a support request to schedule a new set of upgrade attempts for any tenants that are blocked due this incompatibility. They will also have to work with their resellers to inform them about the compatibility resolution.  
+    If the source of the incompatibility has been resolved by the publisher, they'll have to submit a support request to schedule a new set of upgrade attempts for any tenants that are blocked because of this incompatibility. They'll also have to work with their resellers to inform them about the compatibility resolution.  
 
 - **T60 – T150**: Microsoft initiates the customer wind-down period
 
-    If the incompatibility issues are not resolved at **T+60**, and the publisher remained unresponsive to the ask to resolve the incompatibility, Microsoft may choose to send out a wind-down communication to the customer about removal of the publisher's code.  
+    If the incompatibility issues are not resolved at **T+60**, and the publisher remained unresponsive to the request to resolve the incompatibility, Microsoft may choose to send out a wind-down communication to the customer about removal of the publisher's code.  
 
     This communication will share that the code from the publisher will be removed in *90* days (**T+150**).  
 
@@ -97,7 +97,7 @@ This section describes the processes that are initiated during and after upgrade
 
 ### Get notified about incompatibilities by Microsoft
 
-It is crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. These are the mail addresses we will use in the above process.  
+It is crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the above process:  
 
 - PTE publishers
 
@@ -117,3 +117,4 @@ It is crucial for you to keep contact details correctly up to date. We advise yo
 [Update Lifecycle for Customizations](devenv-customization-update-lifecycle.md)  
 [Microsoft Responsibilities for Apps on Business Central online](../deployment/microsoft-responsibilities.md)  
 [Technical Support for Business Central online](../technical-support.md)  
+[Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
