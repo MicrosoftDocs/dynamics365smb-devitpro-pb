@@ -131,7 +131,7 @@ Entitlements are part of the license. Entitlements are permissions that describe
 
 Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They aren't assigned in Business Central. To assign entitlements to a user, see one of the following articles:
 
-- From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](/microsoft-365/admin/add-users/add-users).
+- From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Microsoft 365](/microsoft-365/admin/add-users/add-users).
 
 - From the Microsoft Partner Center, see [User management tasks for customer accounts](/partner-center/assign-licenses-to-users).
 
@@ -245,7 +245,7 @@ For help with resolving this issue, read the following articles or contact Micro
 
 - [Troubleshoot account lockout problems with an Azure AD Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
 
-- ["It looks like your account has been blocked" error when signing in to Office 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
+- ["It looks like your account has been blocked" error when signing in to Microsoft 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
 
 #### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
 

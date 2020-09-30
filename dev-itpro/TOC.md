@@ -63,10 +63,10 @@
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
-#### [Custom Help Toolkit](help/custom-help-toolkit.md)
+<!--#### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 #### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
-#### [Custom Help Toolkit: The NavFieldsTooltips tool](help/custom-help-toolkit-NavFieldsTooltips.md)
+#### [Custom Help Toolkit: The NavFieldsTooltips tool](help/custom-help-toolkit-NavFieldsTooltips.md)-->
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -260,6 +260,10 @@
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### Partial Records
+#### [Using Partial Records](developer/devenv-partial-records.md)
+#### [FAQ](developer/devenv-partial-records-faq.md)
 ### Migrating Tables and Fields Between Extensions
 #### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
@@ -372,6 +376,7 @@
 ## Instrumenting for Telemetry
 ### [Overview](developer/devenv-instrument-application-for-telemetry.md)
 ### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+### [Sending Extension Telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## .NET in AL
