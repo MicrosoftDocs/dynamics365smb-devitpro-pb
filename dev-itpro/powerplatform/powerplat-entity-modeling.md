@@ -104,6 +104,7 @@ Therefore, in effect, the entity name is the only information that is used in a 
 
 
 ### Virtual entity–to–native entity relationship
+
 The relationship between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity and native entity is not supported in the preview version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity solution.
 
 ## Enums
