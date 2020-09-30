@@ -78,6 +78,10 @@ For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a l
 
 For more information, see [Managing capacity](administration/tenant-admin-center-capacity.md).  
 
+## Why doesn't the Outlook add-in work for my users?
+
+The Outlook add-in is designed to function as a business inbox in Outlook, based on the standard [!INCLUDE [prodsetup](developer/includes/prodsetup.md)] online. If you are using a different type of deployment, such as a solution that is part of the Embed App program, then you must set up an Azure Key Vault and specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. For more information, see [Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](developer/devenv-app-key-vault.md).  
+
 ## Is the Windows client supported?
 
 The first releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
