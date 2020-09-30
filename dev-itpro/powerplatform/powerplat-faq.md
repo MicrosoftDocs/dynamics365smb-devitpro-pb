@@ -15,7 +15,7 @@ author: solsen
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic is a collection of frequently asked questions about [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities. 
@@ -26,7 +26,7 @@ Version 17.0 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is nee
 
 ### Can a solution from an independent software vendor (ISV) take a dependency on virtual entities? What does the application lifecycle management (ALM) look like?
 
-Yes. The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution, which is API-managed. In other words, the items in the solution change as you make entities visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. Missing dependency of the solution will be checked when the solution is imported and during import, if a specified virtual entity does not yet exist, the virtual entity is automatically made visible.
+Yes. The virtual entities are all generated in the **MicrosoftBusinessCentralERPVE** solution, which is API-managed. In other words, the items in the solution change as you make entities visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. Missing dependency of the solution will be checked when the solution is imported and during import, if a specified virtual entity does not yet exist, the virtual entity is automatically made visible.
 
 ### Which entities from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do users see in the catalog in Common Data Service?
 
@@ -42,7 +42,7 @@ In the **Advanced find** window, the entity is named **Available [!INCLUDE[prods
 
 ### Can I change the prefix for the virtual entities?
 
-No. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities should be generated in the MicrosoftBusinessCentralERPVE solution, and they all have the "dyn365bc\_" prefix. This prefix will not be changed.
+No. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities should be generated in the **MicrosoftBusinessCentralERPVE** solution, and they all have the "dyn365bc\_" prefix. This prefix will not be changed.
 
 ### How can I show, in the same grid, data from multiple virtual entities that are joined to a physical entity record in Common Data Service?
 
