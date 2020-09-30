@@ -61,5 +61,5 @@ end;
 ## See Also
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)
