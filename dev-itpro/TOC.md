@@ -684,12 +684,23 @@
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
 <!-- end CDS -->
+<!-- Microsoft Power Platform -->
+## Integrating with Microsoft Power Platform
+### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
+### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
+### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
+### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
+### [FAQ](powerplatform/powerplat-faq.md)
+<!-- end Microsoft Power Platform -->
+<!-- Business Central API -->
+## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
+<!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated Tables
