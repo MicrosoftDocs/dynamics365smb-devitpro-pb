@@ -15,7 +15,7 @@ author: solsen
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Common Data Service must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
@@ -51,7 +51,6 @@ Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/
 
 The following data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are not supported in Common Data Service. Fields of these data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities will not be made available in the corresponding virtual entities in Common Data Service. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions will not be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](powerplat-entity-modeling.md#odata-actions) section later in this topic.
 
-<!-- non-supported data types? -->
 
 ## Entity key - primary key
 
@@ -74,7 +73,7 @@ The primary field for a virtual entity for [!INCLUDE[prodshort](../developer/inc
 
 Relations in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-For example, in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **dyn365bc\_\<source entity name\>\_\<target_entity name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service. It is required that the foreign key is a SystemId (GUID). If the foreign key is of a different type then the  relation will not be generated.
+For example, in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **dyn365bc\_\<source entity name\>\_\<target_entity name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters will not be generated in the virtual entity in Common Data Service. It is required that the foreign key is a SystemId (GUID). If the foreign key is of a different type then the relation will not be generated.
 
 The external name of this relationship uses the naming convention **\<relation name\>**. The external name is used to determine the relation in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] when the query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is built.
 
@@ -85,10 +84,11 @@ A relationship in the virtual entity in Common Data Service will be generated on
 In summary, a relationship to another [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity might not exist in the virtual entity for either of the following reasons:
 
 - The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entity that is participating in the relationship does not exist as a virtual entity.
-- The foreign key is not SystemId (GUID)
+- The foreign key is not SystemId (GUID).
 - The length of the name of the relationship exceeds 120 characters.
 
-Note that if an error is encountered when any part of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity is generated in Common Data Service, the virtual entity will not be created at all. If relationships do not exist for either of the preceding reasons, the situation is not considered an error.
+> [!NOTE]  
+> If an error is encountered when any part of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity is generated in Common Data Service, the virtual entity will not be created at all. If relationships do not exist for either of the preceding reasons, the situation is not considered an error.
 
 ### Native entity–to–native entity relationships
 
