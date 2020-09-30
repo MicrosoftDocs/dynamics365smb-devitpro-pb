@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
-ms.date: 09/07/2020
+ms.date: 10/01/2020
 ---
 
 # Demonstration License for Business Central On-Premises

@@ -4,7 +4,7 @@ author: dmc-dk
 ms.service: dynamics365-business-central
 ms.topic: include
 ms.reviewer: edupont
-ms.date: 06/25/2020
+ms.date: 10/01/2020
 ms.author: dmitrych
 ---
 1. Log in to [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) using your partner account.

@@ -3,7 +3,7 @@ title: "Object Ranges"
 description: "Description of the object ranges in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/13/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

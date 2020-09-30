@@ -2,7 +2,7 @@
 title: "TableType Property"
 description: Describes the TableType property on table objects in Business Central
 ms.custom: na
-ms.date: 05/04/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

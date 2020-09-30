@@ -3,7 +3,7 @@ title: "RecordRef.SetLoadFields Method"
 description: The RecordRef.SetLoadFields method in Business Central.
 ms.author: solsen
 ms.custom: na
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

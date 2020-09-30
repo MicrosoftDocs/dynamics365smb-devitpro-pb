@@ -2,7 +2,7 @@
 title: "Special Permission Sets"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/17/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

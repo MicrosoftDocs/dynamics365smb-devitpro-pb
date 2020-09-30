@@ -4,7 +4,7 @@ description: "Developing a custom API in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -72,7 +72,7 @@ To expose data in an API page, the first thing needed is a source table. For the
     }
     ```
 4. Now, create a new table for **Car Model**, and specify **50101** as the table ID.
-5. Add any necessary fields for a car model as shown in the below. Make sure to have a field for **Brand Id** and that **TableRelation** is set to **"Car Brand".SystemId**.
+5. Add any necessary fields for a car model as shown in the example below. Make sure to have a field for **Brand Id** and that **TableRelation** is set to **"Car Brand".SystemId**.
     ```
     table 50101 "Car Model"
     {
@@ -133,7 +133,7 @@ To expose data in an API page, the first thing needed is a source table. For the
 > [!TIP]  
 > As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
 > `<Property Name="fuelType" Type="Edm.String"/>`.
-> <br>On the other hand, Enums have their on types and all available Enum members are generated in the metadata:
+> <br>Whereas Enums have their own types and all available Enum members are generated in the metadata:
 > `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`.  
 >
 >```

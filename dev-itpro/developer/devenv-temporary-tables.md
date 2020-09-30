@@ -2,7 +2,7 @@
 title: "Temporary Tables"
 description: Learn about temporary tables in Business Central 
 ms.custom: na
-ms.date: 07/10/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

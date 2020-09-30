@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 09/17/2020
+ms.date: 10/01/2020
 ms.author: edupont
 
 ---

@@ -4,7 +4,7 @@ description: Learn what to do when you want to use Business Central on-premises 
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 08/10/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.service: "dynamics365-business-central"
 ms.topic: article

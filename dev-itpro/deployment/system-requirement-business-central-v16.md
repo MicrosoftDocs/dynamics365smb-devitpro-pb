@@ -6,7 +6,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 05/06/2020
+ms.date: 10/01/2020
 author: jswymer
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2020 Release Wave 1

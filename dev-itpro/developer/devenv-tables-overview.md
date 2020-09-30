@@ -2,7 +2,7 @@
 title: "Tables Overview"
 description: Tables are the objects in which you store and manipulate data, and you create pages and reports in order to access and view the data in the tables.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

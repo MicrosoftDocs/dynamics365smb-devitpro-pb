@@ -2,7 +2,7 @@
 title: "Entity modeling"
 description: "Relational modeling between Common Data Service entities used in Business Central"
 ms.custom: na
-ms.date: 08/12/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

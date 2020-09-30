@@ -2,7 +2,7 @@
 title: "Business Central virtual entities FAQ"
 description: "Frequently asked questions for working with Business Central virtual entities"
 ms.custom: na
-ms.date: 08/12/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

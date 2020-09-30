@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 07/29/2020
+ms.date: 10/01/2020
 ---
 
 # Using Application Family in [!INCLUDE[embed app](../developer/includes/embedapp.md)]

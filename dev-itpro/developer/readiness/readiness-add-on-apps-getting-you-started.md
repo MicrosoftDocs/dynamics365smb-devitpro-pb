@@ -3,7 +3,7 @@ title: "Add-On Apps - Getting You Started"
 description: "Getting you started with Microsoft Dynamics 365 Business Central Add-On Apps on AppSource"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
