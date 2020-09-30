@@ -44,7 +44,7 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Service notifications
 
-    [!INCLUDE [prodshort](includes/prodshort.md)] online will support app and PTE publishers with extra warnings about potential technical incompatibility. If publishers respond to these notifications in due timing and avoid incompatibilities repeatedly, Microsoft will stand with these publishers to help where needed. If a publisher includes a telemetry key in their app, then starting in 2020 release wave 2, [!INCLUDE [prodshort](includes/prodshort.md)] will also provide publishers with telemetry about upgrade failures happening in production due to issues in publishers upgrade code.
+    [!INCLUDE [prodshort](includes/prodshort.md)] online will support app and PTE publishers with extra warnings about potential technical incompatibility. If publishers respond to these notifications in due timing and avoid incompatibilities repeatedly, Microsoft will stand with these publishers to help where needed. If a publisher includes a telemetry key in their app, then, starting with 2020 release wave 2, [!INCLUDE [prodshort](includes/prodshort.md)] also provides publishers with telemetry about upgrade failures that happen in production due to issues in the publisher's upgrade code.
 
 If publishers lack to keep their code updatable, they risk that ultimately their apps or PTEs will be removed from the customers tenant, and this will most likely result in important data not being captured as it should. For apps, this also means removal from the marketplace.  
 
