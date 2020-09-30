@@ -11,7 +11,7 @@ author: jswymer
 ---
 # Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-If your organization uses Exchange Server or Exchange Online (alone or part of Office 365), [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes add-ins for Outlook that enable users to complete [!INCLUDE[prodshort](../developer/includes/prodshort.md)] business tasks from their Outlook inbox. 
+If your organization uses Exchange Server or Exchange Online (alone or part of Microsoft 365), [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes add-ins for Outlook that enable users to complete [!INCLUDE[prodshort](../developer/includes/prodshort.md)] business tasks from their Outlook inbox. 
 
 ## Overview
 
@@ -82,7 +82,7 @@ With an Exchange Server or Exchange Online administrator account, you can deploy
 -	Run the **Outlook for Business Central** assisted setup and choose the **My Organization** option. This method deploys both the Contact Insights and Document View add-ins.
 -	Use the **Office Add-ins Management** page. The **Office Add-ins Management** page lets deploy  the Contact Insights and Document View add-ins individually.
 
-Both methods will lead you through the deployment. The information that you must provide depends on whether you are using Exchange Online (or Office 365) or Exchange Server, and the user authentication method that is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
+Both methods will lead you through the deployment. The information that you must provide depends on whether you are using Exchange Online (or Microsoft 365) or Exchange Server, and the user authentication method that is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
 
 **For Exchange Online or Office 365:**
 

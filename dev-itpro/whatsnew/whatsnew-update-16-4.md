@@ -17,13 +17,13 @@ Would you like to know what has changed in update 16.4? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4563415).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/4563415).
 
 ## Release Plan
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
 
-For a list of next wave release plans, see the [2020 release wave 2 release plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
+For a list of next wave release plans, see the [2020 release wave 2 release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
 
 ## Upgrade to 16.4
 

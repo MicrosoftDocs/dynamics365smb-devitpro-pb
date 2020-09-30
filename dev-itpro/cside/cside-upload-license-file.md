@@ -1,5 +1,6 @@
 ---
 title: "How to: Upload the License File"
+description: Describes how to upload a Business Central license
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: na
@@ -7,8 +8,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+ms.author: jswymer
+author: jswymer
 ---
 # Uploading the License File
+
 After an administrator or a Microsoft Certified Partner initially installs [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the next step is to upload the license file that is supplied by Microsoft.  
 
  To save the license file, you must have the Per Database license granule \(2020\) in your license. You must also have the necessary roles and permissions in SQL Server. See [Setting Database Owner and Security Administration Permissions](../security/Setting-Database-Owner-and-Security-Administration-Permissions.md).  
@@ -16,10 +20,32 @@ After an administrator or a Microsoft Certified Partner initially installs [!INC
 > [!NOTE]  
 >  Uploading the license file is typically something you do once for each database installation, not once for each client installation. If you need to upload a license for a specific database, see [Uploading a License File for a Specific Database](#UploadtoDatabase).  
 
- Initially, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses CRONUS.flf, which is the demonstration license file. All license files that are not demonstration license files are named FIN.flf. The demonstration license file has been given a different name so that it cannot be mistakenly overwritten.  
+Initially, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses CRONUS.flf, which is the demonstration license file. All license files that are not demonstration license files are named FIN.flf. The demonstration license file has been given a different name so that it cannot be mistakenly overwritten.  
 
-## Upload the License File to SQL Server  
- The following procedure uploads the license for all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases on the SQL Server instance.  
+## Upload the License File to SQL Server
+
+To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). 
+
+1.  Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.  
+
+2. Run the following command:
+
+    ```powershell
+    Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile "<path to the license>"
+    ```
+    Replace `<server instance>`with your [!INCLUDE[server](../developer/includes/server.md)] instance name. Replace `<path to the license>` with the folder path and file name of your license.
+
+3. Restart the server instance.
+
+    ```powershell
+    Restart-NAVServerInstance -ServerInstance <server instance>
+    ```
+
+## Upload the License File to SQL Server using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
+
+> **APPLIES TO:** [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 and earlier.
+
+The following procedure uploads the license for all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases on the SQL Server instance.  
 
 1.  Start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
 

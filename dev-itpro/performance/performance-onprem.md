@@ -1,5 +1,6 @@
 ---
 title: "Performance of Business Central On-Premises Installations"
+description: Learn about how you can investigate and improve performance in Business Central
 ms.custom: na
 ms.date: 04/01/2020
 ms.reviewer: solsen
@@ -107,9 +108,11 @@ These articles can be useful when troubleshooting database performance issues:
 - [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md)  
 - [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
 
-#### Performance of bacpac generation
+#### Performance of BACPAC generation
 
-The sqlpackage is the command-line tool used to generate bacpac/dacpac files. The February 2019 update of sqlpackage solved a significant schema-compare performance issue that occurred when generating scripts. Make sure you use **version 18.1 or later** if you experience issues in bacpac generation performance.
+The sqlpackage is the command-line tool used to generate BACPAC/DACPAC files. The February 2019 update of sqlpackage solved a significant schema-compare performance issue that occurred when generating scripts. Make sure you use **version 18.1 or later** if you experience issues in BACPAC generation performance.
+
+You can also limit the amount of SQL schema to restore from a BACPAC. On tables used only with temporary record variables and pages, set the [TableType property](../developer/properties/devenv-tabletype-property.md) to **Temporary**.
 
 #### Performance impact on setting up CDC on SQL Server
 

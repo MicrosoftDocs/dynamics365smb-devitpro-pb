@@ -1,7 +1,7 @@
 ---
 title: "Lifecycle Services for Embed App"
 author: jswymer
-
+description: Provides an overview of Lifecycle Services for Embed App in Business Central
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -32,11 +32,11 @@ Navigate back to the main page and start creating a new project by selecting the
 
 Next, provide a short description for your project (optional), select **Microsoft Dynamics NAV** as the product name and **Microsoft Dynamics 365 Business Central (SaaS)** as the product version. Select the **Create** button to complete creation of the project. 
 
-After you create the project, send its ID to the e-mail alias specified on the main project page for whitelisting purposes. You can find the project ID in the URL displayed in your browser, such as `https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]`
+After you create the project, send its ID to the e-mail alias specified on the main project page for safe listing purposes. You can find the project ID in the URL displayed in your browser, such as `https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]`
 
 ## Uploading deployment package
 
-Once your LCS project ID has been whitelisted by Microsoft, you can continue to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. <!-- COMMENTED OUT UNTIL THE FILE IS FOUND You can read more about the the content and structure of the deployment package [here]: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package.--> 
+Once your LCS project ID has been safe listed by Microsoft, you can continue to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. <!-- COMMENTED OUT UNTIL THE FILE IS FOUND You can read more about the the content and structure of the deployment package [here]: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package.--> 
 
 In your LCS project, select the **Asset library** action to navigate to the Asset library page. Then, select the **+** action to open the **Upload Software deployable package file** wizard. Provide the **Name** and **Description** (optional) for your package. The asset name you provide here will be displayed on the Application Version list inside your project. Select the Add the file action to select and upload the deployment package. Wait for the package to get uploaded and select the Confirm button to close the upload wizard.  
 
@@ -67,7 +67,7 @@ Navigating to `https://businesscentral.dynamics.com` will trigger provisioning o
 
 ### Self Service (IW) sign-up - evaluation
 
-The Embed App partner can choose to allow customers to use a self-service sign-up (also known as IW sign-up and viral sign-up) for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)]. In that case, the partner must prepare a sign-up URL that will redirect the Office 365 sign-up flow to their application URL. The sign-up URL must have the following format:
+The Embed App partner can choose to allow customers to use a self-service sign-up (also known as IW sign-up and viral sign-up) for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)]. In that case, the partner must prepare a sign-up URL that will redirect the Microsoft 365 sign-up flow to their application URL. The sign-up URL must have the following format:
 
 `https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2F[application name].bc.dynamics.com%2F%3FredirectedFromSignup%3D1`
 
