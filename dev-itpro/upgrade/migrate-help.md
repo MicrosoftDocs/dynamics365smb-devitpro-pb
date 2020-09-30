@@ -43,9 +43,9 @@ If you are migrating from an earlier version of [!INCLUDE[navnow_md](../develope
 
 The tooltips play an important role as part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] [user assistance model](../user-assistance.md), and we encourage you to apply tooltips to your controls and actions as well.  
 
-For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. Use the Custom Help Toolkit to help you reuse your existing content in the same way. For more information, see [Custom Help Toolkit: The NavFieldsTooltips tool](../help/custom-help-toolkit-NavFieldsTooltips.md).  
+For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. Use the Custom Help Toolkit to help you reuse your existing content in the same way. For more information, see [Custom Help Toolkit: The FieldTopicTextExtractor tool](../help/custom-help-toolkit-FieldTopicTextExtractor.md).  
 
-For Microsoft, it was a three-step process. The **NavFieldsTooltips** tool can help you with step 1 in the following list.  
+For Microsoft, it was a three-step process. The **FieldTopicTextExtractor** tool can help you with step 1 in the following list.  
 
 1. The starting point for us was two .TXT files, one file with all application objects, and one file with the first paragraph from HTML files with the field Help plus the ID of the table field. A tool then mapped the content from the HTML files to the page and control IDs in the application objects based on regular expressions to help with the mapping (step 2).
 
