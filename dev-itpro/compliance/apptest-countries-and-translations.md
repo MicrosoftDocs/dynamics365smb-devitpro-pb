@@ -33,10 +33,10 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Czechia|Microsoft|Available|
 |Denmark|Microsoft|Available|
 |Estonia|Partner|Available|
-|Faroe Islands (Denmark)|Microsoft|Available|
+|Faroe Islands (Denmark)|Microsoft|Coming|
 |Finland|Microsoft|Available|
 |France|Microsoft|Available|
-|Germany|Microsoft|Available|
+|Germany|Microsoft|Coming|
 |Greenland (Denmark)|Microsoft|Available|
 |Hong Kong SAR|Partner|Available|
 |Hungary|Partner|Available|

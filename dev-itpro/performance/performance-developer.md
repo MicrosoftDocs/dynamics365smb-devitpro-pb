@@ -185,6 +185,16 @@ Read more about query objects here:
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
 
+### <a name="partialrecords"></a>Pattern - Use partial records when looping over data or when table extension fields aren't needed
+
+When writing AL code where the fields needed on a record is known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
+
+Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the amount of table extensions that need to be joined.
+
+The performance gains compound when looping over many records, because both effects scale with the amount of rows loaded.
+
+For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
+
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
 If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 

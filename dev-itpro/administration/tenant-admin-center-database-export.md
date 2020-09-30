@@ -86,7 +86,7 @@ Permission to export databases is limited to specific types of users, typically 
 
 - Users from the organization that subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
 
-  - Users who are internal administrators and have the **Global admin** role in the Office 365 tenant
+  - Users who are internal administrators and have the **Global admin** role in the Microsoft 365 tenant
   - Users who are members of the *D365 BACKUP/RESTORE* user group
 
     To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  

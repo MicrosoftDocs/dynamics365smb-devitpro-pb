@@ -260,6 +260,10 @@
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### Partial Records
+#### [Using Partial Records](developer/devenv-partial-records.md)
+#### [FAQ](developer/devenv-partial-records-faq.md)
 ### Migrating Tables and Fields Between Extensions
 #### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
@@ -372,6 +376,7 @@
 ## Instrumenting for Telemetry
 ### [Overview](developer/devenv-instrument-application-for-telemetry.md)
 ### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+### [Sending Extension Telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## .NET in AL
@@ -679,12 +684,23 @@
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Common Data Service
 ### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
 <!-- end CDS -->
+<!-- Microsoft Power Platform -->
+## Integrating with Microsoft Power Platform
+### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
+### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
+### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
+### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
+### [FAQ](powerplatform/powerplat-faq.md)
+<!-- end Microsoft Power Platform -->
+<!-- Business Central API -->
+## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
+<!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated Tables
@@ -714,9 +730,11 @@
 ## Deployment
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-### [System Requirements 2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
-### [System Requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System Requirements April '19](deployment/system-requirement-business-central.md)
+### System Requirements
+#### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
+#### [2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
+#### [2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+#### [April 2019](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
