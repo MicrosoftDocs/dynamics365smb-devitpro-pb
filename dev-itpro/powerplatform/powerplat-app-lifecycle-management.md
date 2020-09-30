@@ -15,7 +15,7 @@ author: solsen
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > This functionality requires version17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 The application lifecycle for an end-to-end solution using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities will encompass both [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as well as Common Data Service.

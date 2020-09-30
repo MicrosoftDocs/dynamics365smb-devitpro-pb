@@ -15,7 +15,7 @@ author: solsen
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic provides step-by-step instructions on how to set up and configure virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Common Data Service.
@@ -30,7 +30,7 @@ The following solutions are installed in Common Data Service:
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity feature.
 - **MicrosoftBusinessCentralERPCatalog** - This provides a list of available [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 - **MicrosoftBusinessCentralVEAnchor** - This serves as a container, holding information needed for AppSource. 
-- **MicrosoftBusinessCentralERPVE** - Virtual Entities generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be contained in this solution. Entities are added at runtime once they are made visible.
+- **MicrosoftBusinessCentralERPVE** - Virtual entities generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be contained in this solution. Entities are added at runtime once they are made visible.
 
 ## Authentication and authorization
 
@@ -68,7 +68,7 @@ The virtual entity metadata can be force-refreshed when it is expected for the e
 
 ## Referencing virtual entities
 
-The virtual entities are all generated in the MicrosoftBusinessCentralERPVE solution. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
+The virtual entities are all generated in the **MicrosoftBusinessCentralERPVE** solution. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
 
 To consume virtual entities:
 
