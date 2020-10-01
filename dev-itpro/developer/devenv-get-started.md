@@ -63,7 +63,7 @@ By default, Visual Studio Code is set up with a telemetry system to enable that 
 
 To modify the telemetry setting, press **Ctrl+Shift+P** in Visual Studio Code and choose **User Settings**, which opens the `settings.json` file, and then add `telemetry.enableTelemetry` and set it to `false` like shown below.
  
-```
+```AL
 "telemetry.enableTelemetry": false,
 ```
 

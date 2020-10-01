@@ -38,7 +38,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 2. Unzip the *BaseApplication.source.zip* file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
 3. Next, download symbols for the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**. 
 4. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
-    ```
+    ```AL
     ...
     field(Name; Name)
     {
@@ -62,7 +62,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     - **Enable Developer Service Endpoint** checkbox is selected.
 6. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
 7. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:
-    ```
+    ```json
     "dependencies": [
         {
         "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
@@ -75,7 +75,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 8. Configure **User Settings** or **Workspace Settings** to include the following paths for the `"al.assemblyProbingPaths"` setting. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
-    ```
+    ```json
     "al.assemblyProbingPaths": [
         "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170",
         "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\170",

@@ -45,7 +45,7 @@ A **Rule** is a complex JSON object that specifies how you can process a specifi
 
 ## Examples
 The following example shows a ruleset that sets the severity of rule **AA0001 : There must be exactly one space character on each side of a binary operator such as := + - AND OR =.** provided by the **CodeCop** analyzer to **Error**.
-```
+```json
 {
     "name": "Company ruleset",
     "description": "These rules must be respected by all the AL code written within the company.",
@@ -61,7 +61,7 @@ The following example shows a ruleset that sets the severity of rule **AA0001 : 
 
 The following example shows a project-specific ruleset that extends a company-wide ruleset contained in the file **company.ruleset.json** and sets the severity of the rule **AA0005 : Only use BEGIN..END to enclose compound statements.** provided by the **CodeCop** analyzer to **Info**.
 
-```
+```json
 {
     "name": "Personal Project ruleset",
     "description": "A list of project specific rules",

@@ -26,7 +26,7 @@ In the extension `app.json` file, ensure that `"target": "OnPrem"`. For more inf
 2) Name the file `migration.json`.
 3) Edit the file by adding one or more IDs inside the `"apprules":[]` section, such as the following:
 
-```
+```json
 { 
     "apprules": [ 
         { 
