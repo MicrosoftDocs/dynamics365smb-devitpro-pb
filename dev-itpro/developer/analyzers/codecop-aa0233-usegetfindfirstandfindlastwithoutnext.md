@@ -25,7 +25,7 @@ Avoid enumeration of a dataset when the dataset is not filtered.
 If you use `FindFirst()`, `FindLast()`, or `Get()`, then the database query will only fetch a single record and must fetch again when you call `Next()`, which will lower performance.
 
 ## Bad code example
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var
@@ -44,7 +44,7 @@ codeunit 1 MyCodeunit
 
 ## Good code example
 
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var

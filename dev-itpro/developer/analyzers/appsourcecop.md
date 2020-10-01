@@ -130,7 +130,7 @@ In the following example, we will configure AppSourceCop to validate that all ne
 > Make sure that code analysis is enabled and `${AppSourceCop}` is specified in the list of enabled code analyzers. For more information see [AL Language Extension Configuration](../devenv-al-extension-configuration.md).
 
 We start by creating the default "Hello world" extension.
-```
+```AL
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
@@ -144,7 +144,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 
 We continue by adding the configuration file `AppSourceCop.json` in the project's root folder and setting its content to the following. 
 
-```
+```json
 {
     "mandatoryAffixes": [ "Foo", "Bar" ]
 }

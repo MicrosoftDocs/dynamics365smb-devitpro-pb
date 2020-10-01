@@ -33,7 +33,7 @@ TextConst and Label variable names should have a suffix (an approved three-lette
 |Txt                  |Text |
 
 ## Example
-```
+```AL
 // TextConst prefixed with Tok for Token
 MethodGetTok : TextConst ENU = 'GET';
 ```

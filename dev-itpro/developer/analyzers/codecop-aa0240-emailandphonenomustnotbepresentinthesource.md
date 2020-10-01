@@ -25,7 +25,7 @@ Email and Phone No must not be present in any part of the source code that might
 To prevent exposing personal data, make sure that Email or Phone No information is not available in the source code because that might be collected as telemetry data.
 
 ## Bad code example
-```
+```AL
 table 18 Customer
 {
    ...
@@ -38,7 +38,7 @@ table 18 Customer
 ```
 
 ## Good code example
-```
+```AL
 table 18 Customer
 {
    ...

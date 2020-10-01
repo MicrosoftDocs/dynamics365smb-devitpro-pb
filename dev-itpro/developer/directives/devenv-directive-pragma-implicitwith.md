@@ -22,11 +22,11 @@ The `#pragma implicitwith` instruction changes the compiler behavior to not crea
 
 ## Syntax
 
-```
+```AL
 #pragma implicitwith disable
 ```
 
-```
+```AL
 #pragma implicitwith restore
 ```
 

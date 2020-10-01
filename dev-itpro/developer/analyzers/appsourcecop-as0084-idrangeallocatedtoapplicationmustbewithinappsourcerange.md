@@ -39,7 +39,7 @@ If you are not targeting the AppSource markeplace, you can suppress this rule us
 ## Code example triggering the rule
 
 The `app.json` file of the extension:
-```
+```json
 {
    [...]
    "idRanges": [
@@ -57,7 +57,7 @@ The ID range specified is not contained in the range allowed for AppSource appli
 ## Code example not triggering the rule
 
 The `app.json` file of the extension:
-```
+```json
 {
    [...]
    "idRanges": [
