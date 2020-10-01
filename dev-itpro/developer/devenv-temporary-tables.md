@@ -46,7 +46,7 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `true`:
 
-```
+```AL
 table 50100 MyTable
 {
     DataClassification = ToBeClassified;
@@ -70,7 +70,7 @@ You can change from **Normal** to **Temporary**, and the other way around. When 
 
 With this implementation, a physical table is not created in the database. You create a global or local variable of the type record and set the [Temporary Property](properties/devenv-temporary-property.md) next to it. The variable that holds a temporary table is defined just like any other global or local variable. The syntax is shown in the following example:
 
-```
+```AL
 var
     TempInvoicePostBuffer: Record "Invoice Post. Buffer" temporary;
 ```
@@ -81,7 +81,7 @@ You manipulate the temporary table variable as you would with any other database
 
 Another option for temporary tables is to set the [SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md) on all pages that use the table. This implementation will also use a physical table in the database.
 
-```
+```AL
 page 50100 MyPage
 {
     PageType = Card;

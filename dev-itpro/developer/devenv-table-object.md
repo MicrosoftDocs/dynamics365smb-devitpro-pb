@@ -42,7 +42,7 @@ Typing the shortcut `ttable` will create the basic layout for a table object whe
 
 This table stores address information and it has four fields; `Address`, `Locality`, `Town/City`, and `County`.
 
-```
+```AL
 table 50104 Address
 {
     Caption = 'Sample table';

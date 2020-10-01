@@ -20,7 +20,7 @@ The AL code in this article creates a simple list page that displays records fro
 
 For a more detailed explanation of the list page, see [Designing List Pages](devenv-designing-list-pages.md).
 
-```
+```AL
 page 50111 SampleCustomerList
 {
     PageType = List;

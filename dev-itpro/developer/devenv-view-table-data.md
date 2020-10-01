@@ -59,7 +59,7 @@ You can configure an AL project to view a table when you publish or debug the pr
 
 In the `launch.json` file for the project, set the `"startupObjectType"` parameter to `"table"` and the `"startupObjectId"` parameter to the ID of the table. For example:
 
-```
+```AL
 {
     "version": "1.0.0",
     "configurations": [

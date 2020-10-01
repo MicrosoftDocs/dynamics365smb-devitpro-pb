@@ -85,7 +85,7 @@ Viktor will now add labels to the report. You define the labels in the `label` p
 
 The following code exemplifies the code that Viktor has written for the report.
 
-```
+```AL
 report 50101 "Report for Multiple Tables"
 {
     //Make the report searchable from Tell me under the Administration category.
