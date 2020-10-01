@@ -34,7 +34,7 @@ The same page customization objects can used in different profile objects. A pro
 
 The following example creates a profile object that uses the `Business Manager` role center page. It uses two page customization objects; one that modifies the **Business Manager Role Center** page and another that modifies the **Customer List** page. 
 
-```
+```AL
 profile TheBoss
 {
     Description = 'This is the profile for the Boss';

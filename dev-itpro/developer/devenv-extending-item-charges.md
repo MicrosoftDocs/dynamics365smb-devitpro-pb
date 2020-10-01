@@ -46,7 +46,7 @@ The procedures are based on an example where the **By Fairy Dust** option is add
 
 Create a new codeunit and add an event subscriber to the **OnBeforeShowSuggestItemChargeAssignStrMenu** event.
 
-```
+```AL
 codeunit 50100 "Item Ch. Assign by Fairy Dust"
 {
     var
@@ -73,7 +73,7 @@ codeunit 50100 "Item Ch. Assign by Fairy Dust"
 ## To add a new distribution method for item charges
 In the new codeunit, add functions to distribute the charges over the item lines.
 
-```
+```AL
     local procedure AssignByFairyDust(var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal);
     var
         TempItemChargeAssgntPurch: Record "Item Charge Assignment (Purch)" temporary;
@@ -183,7 +183,7 @@ In the new codeunit, add functions to distribute the charges over the item lines
 ## To call the new distribution method
 In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 
-```
+```AL
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Charge Assgnt. (Purch.)", 'OnAssignItemCharges', '', false, false)]
     local procedure AssignByFairyDustOnAssignItemCharges(SelectionTxt: Text; var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; PurchaseHeader: Record "Purchase Header"; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal; VAR ItemChargesAssigned: Boolean);
     begin

@@ -28,7 +28,7 @@ To place the list part in a page, you add a `part` control to the hosting page a
 
 The following code sample illustrates how to create a `ListPart` page, `"Pending Shipments"`, and how to integrate it in the card page `"Customer Card"`. 
 
-```
+```AL
 page 50101 "Pending Shipments"
 {
     PageType = ListPart;

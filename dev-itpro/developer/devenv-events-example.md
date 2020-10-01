@@ -20,7 +20,7 @@ This article includes a simple code example to explain how to use Business Centr
 - Subscribes to the event to check the address value and return a message to the user if it contains a plus sign.
 
 
-```
+```AL
 // The following code creates codeunit that publishes the `OnAddressLineChanged` event.
 
 codeunit 50100 MyPublishers
