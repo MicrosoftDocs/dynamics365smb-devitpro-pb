@@ -90,7 +90,7 @@ Occurs when an extension compiles successfully on the service. An extension comp
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0020**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies. The dimension's value has a limit of 8 K characters. If the value exceeds this limit, the value will be split  among three dimensions as needed, each with a maximum 8 K characters. The additional dimensions will have the names extensionCompilationDependencyList_1 and extensionCompilationDependencyList_2. |
 |extensionCompilationResult |**Compilation succeeded without errors or warnings.**|
 | extensionName|Specifies the name of the extension that was compiled.|
 | extensionId|Specifies the AppID of the extension that was compiled.|
