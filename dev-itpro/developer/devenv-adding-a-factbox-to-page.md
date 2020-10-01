@@ -48,7 +48,7 @@ You define the FactBox by adding a FactBox area container control to the page. T
 
 ### Example
 
-```
+```AL
 page 50100 "Simple Customercard Page"
 {
     PageType = Card;
@@ -95,7 +95,7 @@ In many cases, you want to change the content that is displayed on the page in t
 
 ### Example
 
-```
+```AL
 page 50101 "Simple Customerlist Page"
 {
     PageType = List;

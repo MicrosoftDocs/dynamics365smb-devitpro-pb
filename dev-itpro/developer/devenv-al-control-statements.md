@@ -28,7 +28,7 @@ The control structures in AL are divided into the following main groups, as desc
 
 In some cases, the AL syntax only lets you use a single statement. However, if you have to execute more than one simple statement, the statements can be written as a compound statement by enclosing the statements between the `begin` and `end` keywords.  
 
-```  
+```AL
 begin  
     <Statement 1>;  
     <Statement 2>;  
@@ -47,7 +47,7 @@ When begin follows then, else, or do, it should be on the same line and preceded
 
 ### Example  
 
-```  
+```AL
 if (x = y) and (a = b) then begin  
     x := a;  
     y := b;  
@@ -56,7 +56,7 @@ end;
 
 ### Example  
 
-```  
+```AL
 if (xxx = yyyyyyyyyy) and   
     (aaaaaaaaaa = bbb)  
 then begin  
@@ -80,7 +80,7 @@ You use conditional statements to specify a condition and one or more commands t
 
 if-then-else statements have the following syntax.  
 
-```  
+```AL  
 if <Condition> then  
     <Statement1>  
 [else  
@@ -93,7 +93,7 @@ The square brackets around else *`<Statement2>`* mean that this part of the stat
 
 You can build more complex control structures by nesting if-then-else statements. The following example is a typical if-then-else statement.  
 
-```  
+```AL 
 if <Condition1> then   
     if <Condition2> then   
         <Statement1>   
@@ -120,7 +120,7 @@ Reading several nested if-then-else statements can be very confusing but general
 
 #### Example  
 
-```  
+```AL 
 if x = y then  
     x := x + 1  
 else  
@@ -129,7 +129,7 @@ else
 
 #### Example  
 
-```  
+```AL  
 if (xxxxxxxxxx = yyy) and   
     (aaa = bbbbbbbbbb)  
 then  
@@ -140,7 +140,7 @@ else
 
 #### Example  
 
-```  
+```AL 
 if x <> y then  
     exit(true);  
 x := x * 2;  
@@ -149,7 +149,7 @@ y := y - 1;
 
 #### Incorrect example  
 
-```  
+```AL  
 if x < y then  
     exit(true)  
 else begin  
@@ -161,7 +161,7 @@ end;
 #### Example  
 The following example shows an if-then statement without the optional else statement.  
 
-```  
+```AL 
 if Amount < 1000 then  
     Total := Total + Amount;  
 ```  
@@ -169,7 +169,7 @@ if Amount < 1000 then
 #### Example  
 The following example shows a nested if-then-else statement.  
 
-```  
+```AL 
 ...  
 if Amount < 1000 then begin  
     if I > J then  
@@ -186,7 +186,7 @@ else
 ### Case statements  
 Case statements have the following syntax.  
 
-```  
+```AL 
 case <Expression> of  
     <Value set 1>:  
         <Statement 1>;  
@@ -225,7 +225,7 @@ If there are more than two alternatives, use a case statement. Otherwise, use an
 
 #### Example
 
-```  
+```AL 
 case Field of  
     Field::A:  
         begin  
@@ -247,7 +247,7 @@ end;
 The following AL code prints various messages depending on the value of *Number*. If the value of *Number* does not match any of the entries in the case structure, then the else entry is used as the default.  
  
 
-```  
+```AL 
 case Number of  
     1,2,9:  
         message('1, 2, or 9.');  
@@ -261,7 +261,7 @@ end;
 #### Example  
 The following AL code shows how value sets in a case statement are evaluated if the expression is a Code data type.
 
-```  
+```AL 
 MyCode := 'ABC';  
 case MyCode of  
     'abc':  
@@ -275,7 +275,7 @@ end;
 
 This example requires that you create the following code data type variable.
 
-```
+```AL
 var
     MyCode : Code[10];
 ```  
@@ -298,12 +298,12 @@ A repetitive statement is also known as a loop. The following table shows the lo
 
 The following syntax shows the for-to and for-downto statement.  
 
-```  
+```AL  
 for <Control Variable> := <Start Number> to <End Number> do  
     <Statement>  
 ```  
 
-```  
+```AL  
 for <Control Variable> := <Start Number> downto <End Number> do  
     <Statement>  
 ```  
@@ -325,12 +325,12 @@ for <Control Variable> := <Start Number> downto <End Number> do
 #### Example 1  
 The following code initiates a for loop that uses the integer control variable named Count.  
 
-```  
+```AL  
 for Count := 1000 to 100000000000000 do  
 ```  
 
 This example requires the following Integer data type variable.  
-```  
+```AL 
 var
     Count : Integer;
 ```  
@@ -344,14 +344,14 @@ When this statement is executed, a run-time error occurs because the start and e
 
  The following for statements could be used to initialize every element in a 5x7 array with the value 23.  
 
-```  
+```AL  
 for I := 1 to 5 do  
     for J := 1 to 7 do  
         A[I,J] := 23;  
 ```  
 
 This example requires the following Integer data type variables.  
-```  
+```AL  
 var
     I : Integer;
     J : Integer;
