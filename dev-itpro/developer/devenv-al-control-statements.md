@@ -361,14 +361,14 @@ var
 You can use the foreach statement to iterate through List, XmlNodeList, XmlAttributeCollection, and JsonArray expressions.
 The foreach statement has the following syntax.
 
-```  
+```AL  
 foreach <Element> in <List> do
     <Statement>  
 ```  
 The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection, or JsonArray type. The *`<Element>`* variable must be a data type that is compatible with elements specified by the *`<List>`*.  
 
 The following code example iterates through a list of customer names and returns each customer name in a message.
-```  
+```AL  
 procedure PrintCustomerNames(customerNames : List of [Text]);
 var
     customerName : Text;
@@ -383,7 +383,7 @@ end;
 
 The following syntax shows the while-do statement.  
 
-```  
+```AL  
 while <Condition> do  
     <Statement>  
 ```  
@@ -400,14 +400,14 @@ When there are multiple conditions, put the conditions on separate lines and ind
 
 #### Example  
 
-```  
+```AL  
 while <expr> do  
     <Statement>;  
 ```  
 
 #### Example  
 
-```  
+```AL  
 while <expr> do begin  
     <Statement>;  
     <Statement>;  
@@ -416,7 +416,7 @@ end;
 
 #### Example  
 
-```  
+```AL
 while <expr> and   
       <expr> and  
       <expr>  
@@ -429,7 +429,7 @@ end;
 #### Example  
 The following AL code increases the variable I until it equals 1000 and displays a message when it is finished.  
 
-```  
+```AL
 while I < 1000 do  
     I := I + 1;  
 message(format(I));  
@@ -437,7 +437,7 @@ message(format(I));
 
 This example requires the following integer data type variable.  
 
-```  
+```AL
 var  
     I : integer
 ```
@@ -445,7 +445,7 @@ var
 ### Repeat-until control structure  
 The following syntax shows the repeat-until statement.  
 
-```  
+```AL
 repeat  
     <Statements> until <Condition>  
 ```  
@@ -472,7 +472,7 @@ end;
 #### Example  
 This code uses a repeat-until loop to count the number of entries in the Customer table.
 
-```  
+```AL
 Count := 0;  
 if Customer.find('-') then  
 repeat  
@@ -481,7 +481,7 @@ until Customer.next <= 0;
 message('The Customer table contains %1 records.',Count);  
 ```  
 This example requires the following variables.
-```  
+```AL
 var
     Count : Integer;
     Customer : Record Customer;  
@@ -492,7 +492,7 @@ The `find` method finds the first entry in the table. Each time NEXT is called, 
 
 The exit statement is used to control the flow of the execution. The following syntax shows an exit statement.  
 
-```  
+```AL
 exit([<Value>])  
 ```  
 
@@ -509,7 +509,7 @@ exit([<Value>])
 #### Example  
  The following example shows the use of the exit statement in a local method. Assume that the if statement is used to detect an error. If the error condition is met, then execution is stopped and the local method returns the error code 1.  
 
-```  
+```AL
 for I := 1 to 1000 do begin  
     if Amount[I] < Total[I] then  
         exit(1);  
@@ -520,7 +520,7 @@ end;
 ## Break statement
 You use the break statement to terminate the iterative statement in which it appears.  
 
-```  
+```AL
 break;  
 ```  
 
@@ -532,7 +532,7 @@ break;
 ## Example  
  The following AL code increases the variable I by one for each iteration, and terminates the iteration when I equals 10.  
 
-```  
+```AL
 while Count < 1000 do
     begin
     Count := Count + 1;
@@ -546,7 +546,7 @@ end;
 
 This example requires the following integer data type variable.  
 
-```  
+```AL
 var  
     I : integer
 ```
