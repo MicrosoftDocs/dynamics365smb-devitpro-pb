@@ -45,7 +45,7 @@ Version 1.0 of the extension defines a page named MyPage that contains a control
 
 If a dependent extension modifies this control in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The control 'MyControl' is not found in the target 'MyPage' (AL0270)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyPage
 {
     layout
@@ -62,7 +62,7 @@ pageextension 50100 SomePageExtension extends MyPage
 
 If a dependent extension uses this control as an anchor for a change in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The control 'MyControl' is not found in the target 'MyPage' (AL0270)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyPage
 {
     layout
@@ -81,7 +81,7 @@ pageextension 50100 SomePageExtension extends MyPage
 
 If a dependent extension is moving this control in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The control 'MyControl' is not found in the target 'MyPage' (AL0270)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyPage
 {
     layout

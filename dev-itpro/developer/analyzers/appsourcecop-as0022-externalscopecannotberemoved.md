@@ -35,7 +35,7 @@ The availability of a procedure is defined by:
 In the following examples, version 1.0 of the extension defines a procedure which is public and available for `Cloud` development.
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [Scope('Cloud')]
@@ -48,7 +48,7 @@ codeunit 50100 MyCodeunit
 ### Example 1 - Adding a local access modifier
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [Scope('Cloud')]
@@ -61,7 +61,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the procedure is only accessible within its declaring codeunit. If a dependent extension called this procedure, this will lead to a compilation error similar to `'MyProcedure()' is inaccessible due to its protection level. (AL0161)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     procedure AnotherMethod()
@@ -77,7 +77,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 2 - Changing the Scope attribute from 'Cloud' to 'OnPrem'
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [Scope('OnPrem')]
@@ -90,7 +90,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the procedure is only available for `OnPrem` development. If a dependent extension uses the `Cloud` compilation target in the app.json and calls this procedure, this will lead to a compilation error similar to `The type or method 'MyProcedure' cannot be used for 'Extension' development. (AL0296)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     procedure AnotherMethod()
@@ -107,7 +107,7 @@ codeunit 50120 AnotherCodeunit
 In the following examples, version 1.0 of the extension defines a procedure which does not have a return type.
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [Scope('OnPrem')]
@@ -124,7 +124,7 @@ codeunit 50100 MyCodeunit
 ### Example 1 - Removing a local access modifier
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [Scope('OnPrem')]
@@ -143,7 +143,7 @@ In version 2.0, the procedure `MyLocalProcedure` is now public and becomes avail
 ### Example 2 - Changing the Scope attribute from 'OnPrem' to 'Cloud'
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [Scope('Cloud')]
