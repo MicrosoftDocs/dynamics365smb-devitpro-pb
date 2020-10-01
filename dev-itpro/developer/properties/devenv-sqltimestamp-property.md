@@ -1,7 +1,8 @@
 ---
 title: "SQLTimestamp Property"
+description: Describes the SQLTimestanp property on table fields in Business Central
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +28,7 @@ SQLTimestamp = true;
 ```
 
 ## Remarks  
-Each table includes a hidden timestamp field. The timestamp field contains row version numbers for records as maintained in SQL Server. This property exposes the timestamp field in the table object, and enables you to write code against it. This property only applies to fields that have the data type `BigInteger`. For more information, see [Timestamp Field](../devenv-table-object.md#timestamp).
+Each table includes a hidden timestamp field. The timestamp field contains row version numbers for records as maintained in SQL Server. This property exposes the timestamp field in the table object, and enables you to write code against it. This property only applies to fields that have the data type `BigInteger`. For more information, see [Timestamp Field](../devenv-table-system-fields.md#timestamp).
 
 ## See Also  
  [Properties](devenv-properties.md)   

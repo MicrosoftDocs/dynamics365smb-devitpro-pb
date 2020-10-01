@@ -3,7 +3,7 @@ title: "Testing your Extension"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/06/2020
+ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"

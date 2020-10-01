@@ -3,7 +3,7 @@ title: "Add-On Apps - Getting You Started"
 description: "Getting you started with Microsoft Dynamics 365 Business Central Add-On Apps on AppSource"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -16,7 +16,7 @@ ms.author: a-emniel
 
 Microsoft Dynamics 365 Business Central is a business management solution that helps companies connect their financials, sales, service and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you can easily and quickly tailor, extend and build applications so they fit your specific needs — with little to no code development.
 
-AppSource is Microsoft’s marketplace for your Dynamics 365 Business Central offerings and there are several reasons why going to market with Microsoft AppSource is a great idea. For example, it allows you to promote your brand, expand your reach, accelerate the customer journey and upsell your solutions and it connects you with millions of Office 365 & Dynamics 365 business users. Find more information about which opportunities you have as a partner at: Apps on AppSource for Business Central [aka.ms/BusinessCentralApps](https://aka.ms/BusinessCentralApps).
+AppSource is Microsoft’s marketplace for your Dynamics 365 Business Central offerings and there are several reasons why going to market with Microsoft AppSource is a great idea. For example, it allows you to promote your brand, expand your reach, accelerate the customer journey and upsell your solutions and it connects you with millions of Microsoft 365 & Dynamics 365 business users. Find more information about which opportunities you have as a partner at: Apps on AppSource for Business Central [aka.ms/BusinessCentralApps](https://aka.ms/BusinessCentralApps).
 
 You can bring two types of offerings to Microsoft AppSource:
 - **Add-on Apps** (that brings your industry expertise to market), **Connect Apps** (that connect services) and **Embed Apps** (an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry). [What is an Embed App?](/dynamics365/business-central/dev-itpro/deployment/embed-app-overview)
@@ -134,7 +134,7 @@ Learn more about how you can leverage the “Ready to Go” program’s differen
 *Prerequisites you need to have to register on Microsoft Collaborate*
 - Azure Active Directory (AAD)
 
-*Note: If you have Office 365 then your company should have AAD*
+*Note: If you have Microsoft 365 then your company should have AAD*
 - AAD Global Administrator permission
 
 To find out if your company has an AAD account, please check with your Network Administration team for your company.

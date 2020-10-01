@@ -1,8 +1,8 @@
 ---
-title: "ColumnNo Method"
+title: "Query.ColumnNo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ColumnNo Method
+# Query.ColumnNo Method
 Returns the ID that is assigned to a query column in the query definition.
 
 

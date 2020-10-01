@@ -3,7 +3,7 @@ title: "Help and Customer Support"
 description: "Guidelines on help and customer support links"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -29,13 +29,12 @@ The help page needs to include online documentation that can be used as help.
 - Links to existing videos and documentation 
 - Links to the most frequently asked questions
 
-*Example of a help site that is set up according to our best practices:* [Foodware's help page](https://docs.foodware365.com/bcportal/Foodware365QuickStart.htm?b=Expiration%20Management)
-
+For more information, see [Help users learn more](../../user-assistance.md#help-users-learn-more).  
 
 > [!TIP]  
-> *Example:* of the help link-, supported countries/regions-, supported
-languages and app version fields (cf. point 6,7,8 and 9) in the "Listing
-details" section of Partner Center:
+> Example of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/docs.continia-home/en-GB/index.html)
+
+The following screenshot illustrates how the Help URL, supported countries/regions, supported languages, and app version fields (cf. point 6,7,8 and 9 in the "Listing details" section) are used:
 
 ![Storefront Detail - Support & Help Links](../../media/SupportHelp.png)
 

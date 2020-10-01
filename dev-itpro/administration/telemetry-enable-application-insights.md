@@ -2,7 +2,7 @@
 title: "Enabling Application Insights for Tenant Telemetry On-Premises"
 description: This topic describes how to enable Application Insights for telemetry on-premises. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

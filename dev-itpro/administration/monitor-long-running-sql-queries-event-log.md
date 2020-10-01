@@ -2,7 +2,7 @@
 title: "Monitoring Long Running SQL Queries to the Event Log"
 description: This topic provides an overview on how to monitor long running SQL queries in the event log starting with NAV 2017. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

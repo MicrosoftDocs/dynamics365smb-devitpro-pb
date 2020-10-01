@@ -8,7 +8,7 @@ ms.topic: article
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
-ms.date: 07/13/2020
+ms.date: 10/01/2020
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-Premises Spring 2019 (v.14)
 

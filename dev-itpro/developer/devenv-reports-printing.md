@@ -2,7 +2,7 @@
 title: "Printing Reports"
 description: Dynamics 365 Business Central supports printing reports to cloud-based printers. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

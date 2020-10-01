@@ -3,7 +3,7 @@ title: "Publishing a Code-Customized Base Application"
 description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -77,9 +77,9 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     ```
     "al.assemblyProbingPaths": [
-        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\160",
-        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\160",
-        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170",
+        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\170",
+        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"
     ],        
     ```
@@ -87,21 +87,21 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 10. Next, you must uninstall all extensions from the command line. If you at this point try to just publish the extension from Visual Studio Code you will get the following error:
 
-    `The request for path /BC160/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
+    `The request for path /BC170/dev/apps?SchemaUpdateMode=synchronize&DependencyPublishingOption=ignore failed with code 422. Reason: The extension could not be deployed because it is already deployed on another tenant.`
 
     You get the error because the extensions are installed in the `global` scope. If you want to publish an extension from Visual Studio Code, within the `developer` scope, you will have to first uninstall and then unpublish the extensions from the command line.
 
     Ideally, you should uninstall the application that you want to update and all its dependencies. To uninstall the Base Application use the following cmdlet:<br>
-    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC160 -Force`
+    `Uninstall-NavApp -Name "Base Application" -ServerInstance BC170 -Force`
 
     Use the `-Force` parameter to uninstall all dependencies.
 
     > [!NOTE]  
-    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC160 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC160 -Force}`
+    > Alternatively, uninstall everything using the following cmdlet. `Get-NAVAppInfo -ServerInstance BC170 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC170 -Force}`
 
 11. Having uninstalled, the next step is to unpublish the application and all of its dependencies. This needs to happen before we can publish it. The following command can be used if there are no dependencies to the Base Application:
 
-    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC160`
+    `Unpublish-NavApp -Name "Base Application" -ServerInstance BC170`
 
     But if there are dependencies on the Base Application this will give an error. To solve this, you must unpublish all the applications with dependencies on the Base Application. This is easier to do using a script that recursively removes the dependencies. Use Windows PowerShell ISE to create a new script with the following lines of code:
 
@@ -124,6 +124,8 @@ Make sure to have the following prerequisites installed to be able to follow the
         UnpublishAppAndDependencies $ServerInstance  $ApplicationName
     
     }  
+    
+    UninstallAndUnpublish -ServerInstance "BC170" -ApplicationName "Base Application"
     ```
 12. Save the script as **unpublish.ps1**. 
 13. Run the script from the PowerShell commandline to handle the uninstall and unpublishing of the Base Application and its dependencies:
@@ -133,7 +135,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 15. Import a license with rights to publish the extension. For example:  
     ```
-    Import-NAVServerLicense -ServerInstance BC160 -LicenseFile "C:\Users\mylicense.flf"
+    Import-NAVServerLicense -ServerInstance BC170 -LicenseFile "C:\Users\mylicense.flf"
     ```
 
 16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.

@@ -3,7 +3,7 @@ title: "Table Extension Object"
 description: "Description of the table extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -90,5 +90,5 @@ tableextension 50115 RetailWinterSportsStore extends Customer
 [AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
-[Table and Table Extension Properties](properties/devenv-table-properties.md)  
+[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
 [Table Keys](devenv-table-keys.md)

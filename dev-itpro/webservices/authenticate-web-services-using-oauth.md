@@ -1,7 +1,7 @@
 ---
 title: "Using OAuth to Authenticate Business Central Web Services (OData and SOAP)"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,11 +18,11 @@ author: jswymer
 
 ### About OAuth
 
-OAuth is an open standard for authorizing access to web services and APIs from native clients and websites in Azure Active Directory (Azure AD). In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], OAuth is useful when your deployment is configured for Azure Active Directory authentication, either through your own Azure subscription or an Office 365 subscription, because it lets users sign-in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using their Office 365 or Azure AD credentials. Otherwise, they would have to use their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] account credentials (user name and password or web access key).
+OAuth is an open standard for authorizing access to web services and APIs from native clients and websites in Azure Active Directory (Azure AD). In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], OAuth is useful when your deployment is configured for Azure Active Directory authentication, either through your own Azure subscription or an Microsoft 365 subscription, because it lets users sign-in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using their Microsoft 365 or Azure AD credentials. Otherwise, they would have to use their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] account credentials (user name and password or web access key).
 
 ### About the tasks in this article
 
-This article illustrates how to use OAuth by walking you through the creation of a simple console application that <!-- is a basically an alteration of the console application that is used in the article [Interacting with a Page Web Service (OData)](interact-with-page-odata-web-service.md)--> returns a list of customers from a page in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that is published as a web service. The console application connects to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by using the ODataV4 endpoint. <!--The difference here is that you will abandon the use of the built-in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user name and password for authentication (NavUserPassword) and use Office 365 or Azure AD credentials instead.-->
+This article illustrates how to use OAuth by walking you through the creation of a simple console application that <!-- is a basically an alteration of the console application that is used in the article [Interacting with a Page Web Service (OData)](interact-with-page-odata-web-service.md)--> returns a list of customers from a page in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that is published as a web service. The console application connects to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by using the ODataV4 endpoint. <!--The difference here is that you will abandon the use of the built-in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user name and password for authentication (NavUserPassword) and use Microsoft 365 or Azure AD credentials instead.-->
 
 <!--
 The result will be a .NET console application that contains following code (with some adjustments to suit your environment):
@@ -114,7 +114,7 @@ You will start by creating a custom application that connects to the [!INCLUDE[p
 
 To complete the following tasks in this article, make sure your system meets the following requirements:
 
-- Configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure Active Directory or Office 365 authentication.
+- Configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure Active Directory or Microsoft 365 authentication.
 
     For more information, see [Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory](../administration/authenticating-users-with-azure-active-directory.md).
 
@@ -126,8 +126,8 @@ To complete the following tasks in this article, make sure your system meets the
 
     |Setting/option|[Description|
     |-----------------|---------------------------------|---------------------------------------|
-    |Azure Active Directory Tenant ID|This is the ID identities the directory that is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Azure AD.  The Azure Active Directory Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name, which is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have an Office 365 subscription. You can get the domain name from the **Domain** or **Custom domain names** settings for the Active Directory tenant in the Azure Portal. The Azure AD Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance||
-    |App ID URI|When you configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD or Office 365 authentication, you had to register [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an application in the Azure Active Directory (Azure AD) and also specify an APP ID URI. The  APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure Portal by viewing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application **Settings** in Active Directory. This is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, [Azure Active Directory Settings](../administration/configure-server-instance.md#AzureAd).|
+    |Azure Active Directory Tenant ID|This is the ID identities the directory that is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Azure AD.  The Azure Active Directory Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name, which is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have an Microsoft 365 subscription. You can get the domain name from the **Domain** or **Custom domain names** settings for the Active Directory tenant in the Azure Portal. The Azure AD Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance||
+    |App ID URI|When you configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD or Microsoft 365 authentication, you had to register [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an application in the Azure Active Directory (Azure AD) and also specify an APP ID URI. The  APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure Portal by viewing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application **Settings** in Active Directory. This is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, [Azure Active Directory Settings](../administration/configure-server-instance.md#AzureAd).|
   
 - Enable OData Services and V4 Endpoint on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -153,13 +153,13 @@ If you have not already done so, set the **Azure AD App ID URI** setting in the 
 
 
 <!-- 
-## The Starting Point: [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Configured for Office 365 Single Sign-on 
+## The Starting Point: [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Configured for Microsoft 365 Single Sign-on 
 
-This article assumes that you already have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation, and that you have configured it for either for single sign-on (SSO) with your Office 365 account. We will not cover the details of how to do this here. <!--You can learn about single sign-on by watching the video How Do I: Enable Single Sign-On with Office 365 in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2013 R2 or reading the topic How to: Set up [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Single Sign-on With Office 365 using Windows PowerShell.
+This article assumes that you already have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation, and that you have configured it for either for single sign-on (SSO) with your Microsoft 365 account. We will not cover the details of how to do this here. <!--You can learn about single sign-on by watching the video How Do I: Enable Single Sign-On with Microsoft 365 in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2013 R2 or reading the topic How to: Set up [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Single Sign-on With Microsoft 365 using Windows PowerShell.
  
 - App ID URI of the registered [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure Active Directory
 
-    When you configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for single sign-on with Office 365, you had to register [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an application in a Microsoft Azure Active Directory (Azure AD), and also specify an APP ID URI. You will need the APP ID URI later to enable OAuth. You can get the ID from the Azure Management Portal by viewing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application configuration in Active Directory. For more information, see Integrating Applications with Azure Active Directory.
+    When you configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for single sign-on with Microsoft 365, you had to register [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an application in a Microsoft Azure Active Directory (Azure AD), and also specify an APP ID URI. You will need the APP ID URI later to enable OAuth. You can get the ID from the Azure Management Portal by viewing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application configuration in Active Directory. For more information, see Integrating Applications with Azure Active Directory.
 
 - Azure Active Directory Tenant ID (AadTenantId)
 
@@ -168,11 +168,11 @@ This article assumes that you already have a [!INCLUDE[prodshort](../developer/i
     `https://manage.windowsazure.com/*\[Domain name]#Workspaces/ActiveDirectoryExtension/Directory/[Tenant ID]*/directoryQuickStart`
 - Set the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance credential type to `NavUserPassword`.
 
-    To make sure that the procedures in this article work as expected, set the Credential Type setting (ClientServicesCredentialType) of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance to NavUserPassword. When this is the case, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance supports both NavUserPassword (Basic) and AccessControlService (Office 365) authentication.
+    To make sure that the procedures in this article work as expected, set the Credential Type setting (ClientServicesCredentialType) of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance to NavUserPassword. When this is the case, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance supports both NavUserPassword (Basic) and AccessControlService (Microsoft 365) authentication.
 
     For more information, see Configuring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server.
 
-When configured for single sign-on, you will be prompted for your Office 365 credentials when you try to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To verify this, open a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+When configured for single sign-on, you will be prompted for your Microsoft 365 credentials when you try to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To verify this, open a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
 
 -->
 
@@ -197,7 +197,7 @@ Use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to publ
     For more information about publishing, see [Publish a Web Service](/dynamics365/business-central/dev-itpro/webservices/publish-web-service).
 5. After you publish the web service, you can now enter the OData URL in the address of an Internet browser.
 
-    Your are prompted for your user name and password. The user name and password that you enter is the user name and password (or web service access key) of your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] account; not your Office 365 or Azure AD user name and password.
+    Your are prompted for your user name and password. The user name and password that you enter is the user name and password (or web service access key) of your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] account; not your Microsoft 365 or Azure AD user name and password.
 
     <!--On the **User Card** in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this information is specified by the **User Name** field in the **General** section and the **Password** field in the **[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Password Authentication** section (or by the **Web Service Access Key** field in the **Web Service Access** section if your account is set up a web access key).-->
 
@@ -304,14 +304,14 @@ You will start by creating an application that connects to the [!INCLUDE[prodsho
 
 ## Converting the Application to OAuth Authentication
 
-The next step is to abandon the use of the built-in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user name and password for authentication and use the Office 365 user name and password instead. This is a three-step process as described in this section.
+The next step is to abandon the use of the built-in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user name and password for authentication and use the Microsoft 365 user name and password instead. This is a three-step process as described in this section.
 -->
 
 <!--
 
 1. If you do not know the APP ID URI for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, get it by using the Azure Management Portal.
 
-    For more information, see The Starting Point: [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Configured for Office 365 Single Sign-on.
+    For more information, see The Starting Point: [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Configured for Microsoft 365 Single Sign-on.
 
 2. Using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Administration tool, open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance for editing, and fill in the Azure Active Directory App ID URL field with the APP ID URI value. Restart the instance.
 
@@ -448,7 +448,7 @@ The final task is to modify the custom application to use OAuth authentication. 
 
 |Information|Description|Example|
 |-----------|-----------|-------|
-|Azure AD Tenant ID|This is the ID that is assigned to the Azure AD directory. For more information about finding this value, see The Starting Point: [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Configured for Office 365 Single Sign-on.|mytenant.onmicrosoft.com|
+|Azure AD Tenant ID|This is the ID that is assigned to the Azure AD directory. For more information about finding this value, see The Starting Point: [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Configured for Microsoft 365 Single Sign-on.|mytenant.onmicrosoft.com|
 |Client ID|This is the ID that is assigned to the custom application in Azure AD.|e64a621d-beb8-4e7d-bf0b-30e3e79651dd|
 |Redirect URI|This is the redirect URI that you assigned the ID that is assigned to the custom application in Azure AD.|https://MyBClient|
 |App ID URI|The App ID URI that you assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD.|https://myserver/NAVAppIdUri|
@@ -499,11 +499,11 @@ Once you have this information, follow these steps:
     }
     ```
 
-    Notice the few changes that you had to make: You had to specify the IDs that were used when you registered the applications in Azure AD. Then, you had to add 3 lines of code to open the Office 365 logon page to get the OAuth access token.
+    Notice the few changes that you had to make: You had to specify the IDs that were used when you registered the applications in Azure AD. Then, you had to add 3 lines of code to open the Microsoft 365 logon page to get the OAuth access token.
 3. Press F5 to run the custom application.
 
-    You should see the Office 365 Sign-in page.
-4. Enter your Office 365 user name and password.
+    You should see the Microsoft 365 Sign-in page.
+4. Enter your Microsoft 365 user name and password.
 
     You should again see the list of customers from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 -->
@@ -550,7 +550,7 @@ By the way, this also gives a new refresh token, and in this manner, the client 
 
 ## Summary
 
-More and more companies adopt Office 365 and integrate [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with Office 365 to obtain single sign-on. As this occurs, it also becomes important that customers can authenticate to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services by using their universal credentials – the Office 365 user name and password. OAuth is the web service authorization protocol that makes this possible.
+More and more companies adopt Microsoft 365 and integrate [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with Microsoft 365 to obtain single sign-on. As this occurs, it also becomes important that customers can authenticate to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services by using their universal credentials – the Microsoft 365 user name and password. OAuth is the web service authorization protocol that makes this possible.
 
 This article covered how to configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services for OAuth authorization. It also demonstrated how to create a simple .NET console application that connects to these web services. It is also possible to create other types of applications that authenticate using OAuth, such as modern Windows 10 apps, iOS apps, and Android apps. The Microsoft Azure Active Directory team has released libraries for all these platforms. See the following resources:
 
