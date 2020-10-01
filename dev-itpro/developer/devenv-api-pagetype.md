@@ -32,7 +32,7 @@ At design time, the compiler will show warnings on casing violations and errors 
 The following page example publishes an API available at:
 `../contoso/app1/v2.0/companies({id})/customers`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
 
-```
+```AL
 page 50120 MyCustomerApi
 {
     PageType = API;

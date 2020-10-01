@@ -32,7 +32,7 @@ To set up a grid in row-by-row or column-by-column format, you define the **Grid
 #### Example
 The following example demonstrates how to structure a page in a grid-like format. 
 
-```
+```AL
 page 50113 "Customers Page"
 {
     PageType = Card;

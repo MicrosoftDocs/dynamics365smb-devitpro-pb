@@ -20,7 +20,7 @@ Queries of the type `API` are used to generate web service endpoints and this ty
 The following query example publishes an API available at:
 `../contoso/app1/v1.0/companies({id})/customerSales`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
 
-```
+```AL
 query 20000 "APIV1 - Customer Sales"
 {
     QueryType = API;
