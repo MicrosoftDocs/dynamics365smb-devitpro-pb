@@ -18,7 +18,7 @@ author: solsen
 > [!IMPORTANT]  
 > This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entity, which is published on AppSource, is a virtual data source in Common Data Service, and enables create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities does not reside in Common Data Service. Instead, it continues to reside in [!INCLUDE[prodshort](../developer/includes/prodshort.md). To enable operations on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities in Common Data Service, entities must be made available as virtual entities in Common Data Service.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entity, which is published on AppSource, is a virtual data source in Common Data Service, and enables create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities does not reside in Common Data Service. Instead, it continues to reside in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To enable operations on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] entities in Common Data Service, entities must be made available as virtual entities in Common Data Service.
 
 ## Prerequisite reading
 
