@@ -44,13 +44,17 @@ The process uses two special features for migrating tables and data to extension
 
 The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
-## Prerequisites
+## <a name="prereqs"></a>Prerequisites
 
 1. Your version 14 is compatible with version 17.
 
     There are several updates for version 14. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
 
 2. The version 14 [!INCLUDE[devshell](../developer/includes/devshell.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] are installed. 
+
+3. Get the required version of the txt2al conversion tool.
+
+  During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/en-us/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
 ## Install version 17
 
@@ -109,6 +113,8 @@ You'll create two versions of this extension. The first version contains the tab
 
     For more information about this tool, see [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
 
+    > [!NOTE]
+    > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
 4. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 17 DVD.
 
    For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
