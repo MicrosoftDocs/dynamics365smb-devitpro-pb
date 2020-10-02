@@ -58,7 +58,7 @@ The following table outlines recommended content for you to get started:
 |Link  |Description  |
 |------|-------------|
 |[Resell Different Solutions](developer/readiness/readiness-reseller.md)| Landing page for readiness for resellers. |
-|[Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant|  Provides links to role-specific training. |
+|[Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant)|  Provides links to role-specific training. |
 |[Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) | Describes the different models for selling in the Cloud Solution Provider (CSP) program so you can determine which works best with your business.        |
 
 ## Other roles and profiles
