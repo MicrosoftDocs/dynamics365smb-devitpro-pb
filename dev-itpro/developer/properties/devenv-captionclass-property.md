@@ -21,7 +21,7 @@ Controls the caption that is used in the label of a field in a database table or
 
 ## Syntax
 
-```
+```AL
 CaptionClass = '1,2,3';
 ```
   

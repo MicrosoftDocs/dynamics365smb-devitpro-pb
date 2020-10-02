@@ -20,7 +20,7 @@ Sets whether imported records automatically replace existing records with the sa
  Table elements in XMLports.  
 
 ## Syntax
-```
+```AL
 AutoReplace = true;
 ```
   

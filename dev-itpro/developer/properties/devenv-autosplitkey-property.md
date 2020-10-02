@@ -23,7 +23,7 @@ Sets whether a key is automatically created for a new record placed between the 
  **True** if the key is automatically created for the new record; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+```AL
 AutoSplitKey = true;
 ```
 

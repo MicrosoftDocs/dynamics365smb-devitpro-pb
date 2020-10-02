@@ -64,7 +64,7 @@ For other objects including Table, Page, Query, Report, Codeunit, or Xmlport, it
 >  If you set multiple permissions, then one or the other applies. 
 
 ## Syntax
-```
+```AL
 AccessByPermission = tabledata MySetup = I; 
 ```
 

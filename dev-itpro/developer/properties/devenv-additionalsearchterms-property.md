@@ -16,7 +16,7 @@ Specifies search terms (words and phrases) for the page or report. In addition t
 
 ## Syntax
 
-```
+```AL
 AdditionalSearchTerms = '<term>[,<term>]';
 ```
 
@@ -55,7 +55,7 @@ The [UsageCategory property](devenv-usagecategory-property.md) must be set to a 
 
 The following code snippet uses the **AdditionalSearchTerms** property to add two search terms, **product** and **merchandise**, to a list page whose caption is **Items**.
 
-```
+```AL
 page 50100 MyItems
 {
     PageType = List;

@@ -22,7 +22,7 @@ Sets the calculation for FlowFields.
 
 ## Syntax
 
-```
+```AL
 CalcFormula = Count(RecordCalcFields);
 ```
   
