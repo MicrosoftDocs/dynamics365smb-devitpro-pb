@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 10/02/2020
 ms.author: edupont
 ---
 
@@ -20,12 +20,27 @@ You can also find guidance in the [Docs Contributor Guide](/contribute/).
 
 There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo contains the source content in English (US). If you want access to the content in other languages, navigate to the relevant repo - the names follow this pattern: ```dynamics365smb-docs-pr.\<language>-\<country>```, such as [dynamics365smb-docs-pr.da-DK](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-DK) for the Danish version.  
 
-When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated weekly. The related language-specific repos are updated less frequently, based on when new translations are made available. If you fork one of our repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
+Optionally, use the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's content and generate HTML files that you can then customize. The tool handles the GitHub work for you, but you will still have to understand the basics of the Microsoft GitHub repos.  
+
+When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated at least weekly. The related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization. Alternatively, if you customize the Microsoft content based on MarkDown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
 
 > [!TIP]
-> You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a Help Server website, for example. For more information, see the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, if you want to extend or customize the Microsoft content, we recommend that you join us in GitHub.
+> You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a website, for example. You do not even have to get a GitHub account, as shown in the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, in many scenarios, you might want to join us in GitHub for closer collaboration and easy of extensibility. Choose the process that works better for you.
 
-For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is all about, see [User Assistance Model](../user-assistance.md).
+If you fork one of our repos, with or without use of the [Custom Help Toolkit](custom-help-toolkit.md), you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently. Choose the schedule that works for you.  
+
+For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is all about, see [User Assistance Model](../user-assistance.md).  
+
+The remaining sections of this article are intended for people who do **not** use the [Custom Help Toolkit](custom-help-toolkit.md) - and for the curious.  
+
+- Read the [Get started with GitHub](#get-started-with-github) section to learn more about the mechanics of working in GitHub
+- Read the [What the GitHub repos contain](#what-the-github-repos-contain) section to learn more about  files and subfolders in the repos
+- Read the [Get updates from Microsoft](#get-updates-from-microsoft) section to learn more about how to interact with the GitHub repos without using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool
+- Read the [Contributing](#contributing) section to learn more about how you can contribute to Microsoft's content
+- Read the [Get the content without a GitHub account](#get-the-content-without-a-github-account) section to learn more about forking a repo without using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool
+- Read the [Build HTML files](#build-html-files) section to learn more about generating content for your website without using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool
+- Read the [Known issues with Microsoft's content](#known-issues-with-microsofts-content) section to learn more about potential problems you might see when you customize Microsoft's content
+- Read the [Translate the content](#translate-the-content) section to learn more about using the Dynamics 365 Translation Service to manage translations
 
 ### Get started with GitHub
 
@@ -163,12 +178,12 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 ## Build HTML files
 
-For publishing to your own website, you can <!--use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  -->
-<!--
-Alternatively, --> create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files straight from your fork of one of the Microsoft repos. <!--You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.-->
+For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Custom Help Toolkit](custom-help-toolkit.md).  
+
+Alternatively, create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files straight from your fork of one of the Microsoft repos. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.
 
 > [!TIP]
-> You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file that is kept available in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
+> You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAVdocfx.json file that is kept available in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
 
 1. Install [DocFx](https://dotnet.github.io/docfx/) on your computer.
 
@@ -268,6 +283,10 @@ To translate content for either [!INCLUDE [prodshort](../developer/includes/prod
 
 [Business Central User Assistance Model](../user-assistance.md)  
 [Configuring the Help Experience](../deployment/configure-help.md)  
+[Custom Help Toolkit](custom-help-toolkit.md)  
+[Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
+[Custom Help Toolkit: The FieldTopicTextExtractor tool](custom-help-toolkit-FieldTopicTextExtractor.md)  
+[Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)  
 [Authoring Guide](writing-guide.md)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  

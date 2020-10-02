@@ -11,13 +11,13 @@ ms.author: edupont
 
 # Custom Help Toolkit
 
-Microsoft has published a GitHub repository with scripts and tools that can help you prepare context-sensitive Help for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. This context-sensitive Help can be accessed from the user interface through the *Learn more* links as described in [Configure Context-Sensitive Help](context-sensitive-help.md). You are welcome to use any tools or processes to build and deploy content; this toolkit is intended to help you in some of the steps that are required.
+Microsoft has published a GitHub repository with scripts and tools that can help you prepare customized Help for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. This Help content can then be accessed from the user interface through the *Learn more* links as described in [Configure Context-Sensitive Help](context-sensitive-help.md). You are welcome to use any tools or processes to build and deploy content; this toolkit is intended to help you in some of the steps that are required.
 
 The GitHub repository includes source code for the tools, and we welcome contributions and feedback to collaborate on improving the toolkit.  
 
 ## Tools in the toolkit
 
-The toolkit is available at *TBD*. The repo contains the following tools and the source code for the tools:
+The toolkit is not yet available. The repo will contain the following tools and the source code for the tools:
 
 - HtmlFromRepoGenerator tool
 
