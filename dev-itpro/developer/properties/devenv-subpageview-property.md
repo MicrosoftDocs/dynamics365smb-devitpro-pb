@@ -33,7 +33,7 @@ You can use this property to sort the information in the table for display in th
 
 ## Example
 
-```
+```AL
 SubPageView = sorting("No.") where (City=filter('Miami'));
 ```
 
