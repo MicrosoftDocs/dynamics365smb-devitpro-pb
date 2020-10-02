@@ -12,16 +12,15 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # WordLayout Property
+
 Sets the imported file name and the Word layout that is used on a report.
 
-
-> [!NOTE]
-> Reports support both Word and RDLC layout.
+> [!NOTE]  
+> Reports support both Word and RDL layout.
 
 ## Remarks
+
 The  Word file has to be in the same folder as the AL object. 
 
 ## Example
@@ -30,7 +29,7 @@ Code taken from this file: devenv-howto-report-layout
 -->
 The following example shows how to use this property to generate the *MyWordReport.docx* file.
 
-```
+```AL
 pageextension 50100 MyExtension extends "Customer List"
 {
     trigger OnOpenPage();
@@ -46,7 +45,8 @@ report 50124 MyWordReport
 }
 ```
 
-## See Also  
+## See Also
+
 [Creating a Word Layout Report](../devenv-howto-report-layout.md)    
 [RDLCLayout Property](devenv-rdlclayout-property.md)  
 [Creating an RDL Layout Report](../devenv-howto-rdl-report-layout.md)  
