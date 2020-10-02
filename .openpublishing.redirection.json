@@ -5224,6 +5224,11 @@
     "source_path": "dev-itpro/developer/deployment/demo-license.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-demolicense-properties",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/help/custom-help-toolkit-NavFieldsTooltips.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/help/custom-help-toolkit",
+    "redirect_document_id": false
    }
    
   ]
