@@ -12,15 +12,17 @@ ms.service: "dynamics365-business-central"
 ---
 
 # OnAfterTestRun Trigger
+
 Runs after a test  of a test codeunit has been run.
 
 ## Syntax
 
-```
+```AL
 OnAfterTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]; MethodTestPermissions : TestPermissions; Success : Boolean)
 ```
 
 ## Parameters
+
 *CodeunitID*
 
 Type: Integer
@@ -48,10 +50,10 @@ Type: TestPermissions
 
 Specifies the permission set level to use on the test run. The value is retrieved from the [TestPermissions Property](../properties/devenv-testpermissions-property.md) of the test codeunit or test  that is run. The parameter accepts the following values:
 
-*   **Disabled**
-*   **Restrictive**
-*   **NonRestrictive**
-*   **InheritFromTestCodunit** - Specifies that a test the  uses the **TestPermissions** property setting of the test codeunit to which it belongs.
+* **Disabled**
+* **Restrictive**
+* **NonRestrictive**
+* **InheritFromTestCodunit** - Specifies that a test the  uses the **TestPermissions** property setting of the test codeunit to which it belongs.
 
 <!-- For more information, see [Testing With Permission Sets](testing-permissionsets.md). -->
 
@@ -62,48 +64,51 @@ Type: Boolean
 **True** indicates that the test  run succeeded; otherwise, **false** indicates that the test  run failed.
 
 ## Applies to
-Test runner codeunits. Test runner codeunits have the **SubType** property set to **TestRunner**.
+
+- Test runner codeunits.  
+  Test runner codeunits have the **SubType** property set to **TestRunner**.
 
 **Note**: This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it as a .  
 
 ## Remarks
+
 A test runner codeunit manages the execution of test codeunits that are run from its **OnRun** . When a test codeunit runs, it executes each test  one at a time in the codeunit. When implemented, the **OnAfterTestRun** trigger is called after each test  has run and after all of the test codeunit has run.
 
 The **OnAfterTestRun** trigger suppresses the automatic display of the results message after the test codeunit runs.
 
 > [!NOTE]  
->  To return the error message for a failed test  run, use the [GETLASTERRORTEXT Method](../methods/devenv-getlasterrortext-method.md).  
+> To return the error message for a failed test  run, use the [GETLASTERRORTEXT Method](../methods/devenv-getlasterrortext-method.md).  
   
-
 You can use the **OnAfterTestRun** trigger to perform post-processing, such as logging, or to automate tests by integrating the test runner codeunit with a test management framework.
 
 The *TestPermissions* parameter, enables you can control how to handle applied permission sets, if any, after the test is run. <!-- For more information about testing with permision sets, including an example, see [Testing With Permission Sets](testing-permissionsets.md).-->
 
 The **OnAfterTestRun** trigger is run in its own database transaction.
 
-##  Example
+## Example
 The following **OnAfterTestRun** trigger code logs test results to a test reporting system. This example requires that you create a record variable named log.
 
-```
-log.INIT;
+```AL
+log.Init;
 log.UnitId := CodeunitId;
 log.Unit := CodeunitName;
 log.Func := MethodName;
 log.Before := Before;
-log.After := CURRENTDATETIME;
-If Success THEN
+log.After := CurrentDateTime;
+if Success then
   log.Status := log.Status::Success
-ELSE BEGIN
+else begin
   log.Status := log.Status::Failure;
-  IF MethodName <> '' THEN
-    log.Message := GETLASTERRORTEXT;
-END;
-log.INSERT(true);
+  if MethodName <> '' then
+    log.Message := GetLastErrorText;
+end;
+log.Insert(true);
 ```
 
-The GETLASTERRORTEXT returns the text that was contained in the last error message.
+The GetLastErrorText returns the text that was contained in the last error message.
 
-## See Also  
+## See Also
+
 [TestPermissions Property](../properties/devenv-testpermissions-property.md)  
 [OnBeforeTestRun Trigger](devenv-trigger-onbeforetestrun.md)   
 <!--
