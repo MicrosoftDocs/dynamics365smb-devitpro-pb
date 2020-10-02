@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # DelayedInsert Property
+
 Sets a value that specifies whether a user must leave a record before it is inserted into the database. By default, new records are inserted when the user leaves the control that shows the primary key in the table.  
   
 ## Applies to  
@@ -23,7 +24,7 @@ Sets a value that specifies whether a user must leave a record before it is inse
 
 ## Syntax
 
-```
+```AL
 DelayedInsert = false;
 ```
   
