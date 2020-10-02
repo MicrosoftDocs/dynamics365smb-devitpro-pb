@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 10/02/2020
 ms.author: edupont
 ---
 
@@ -20,7 +20,7 @@ When you move to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you 
 
 More specifically, if you have content that you created for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you can choose to reuse that for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.  
 
-For example, you have a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server website with HTML files that describe your solution according to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] documentation model and format. In that scenario, you can reuse the Help Server website and rebrand that and the content accordingly. You then connect your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with that Help Server website.  
+For example, you have a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server website with HTML files that describe your solution according to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] documentation model and format. In that scenario, you can reuse the Help Server website and rebrand that and the content accordingly. You then connect your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with that Help Server website. For more information, see [Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/configure-help.md).  
 
 However, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] does not support the field-based approach to context-sensitive Help that [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2017 and earlier use. Instead, you must use the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] page-based approach to context-sensitive Help. You do not have to convert your existing Help, but you do need to make the content available. For more information, see [Adding page-level UI-to-Help mapping to the system table](../help/context-sensitive-help.md#adding-page-level-ui-to-help-mapping-to-the-system-table).  
 
@@ -35,7 +35,7 @@ If you are migrating your solution from Dynamics GP, you might have content in P
 
 ### Migrating from Dynamics NAV
 
-If you are migrating your solution from [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] or later versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you most likely have been using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server, and your Help content is in HTML format. That means that you can reuse your existing content as-is, or you can use publicly available third-party solutions to convert some or all of your HTML files to MarkDown, if you want to follow similar processes to the ones the Microsoft team follows. For more information, see the [Moving to MarkDown](#moving-to-markdown) section.  
+If you are migrating your solution from [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] or later versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you most likely have been using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server, and your Help content is in HTML format. That means that you can reuse your existing content as-is, you can use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to get new HTML files to supplement your existing content, or you can use publicly available third-party solutions to convert some or all of your HTML files to MarkDown, if you want to follow similar processes to the ones the Microsoft team follows. For more information, see the [Moving to MarkDown](#moving-to-markdown) section.  
 
 If you are migrating from an earlier version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you can choose to first migrate to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] format, and then migrate again to MarkDown or similar formats. For more information, see [Upgrading Your Existing Help Content](/previous-versions/dynamicsnav-2013r2/dn466754(v=nav.71)) in the legacy docs for [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)].  
 
@@ -45,7 +45,7 @@ The tooltips play an important role as part of the [!INCLUDE[prodshort](../devel
 
 For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. Use the Custom Help Toolkit to help you reuse your existing content in the same way. For more information, see [Custom Help Toolkit: The FieldTopicTextExtractor tool](../help/custom-help-toolkit-FieldTopicTextExtractor.md).  
 
-For Microsoft, it was a three-step process. The **FieldTopicTextExtractor** tool can help you with step 1 in the following list.  
+For Microsoft, it was a three-step process. The **FieldTopicTextExtractor** tool can help you with step 1 in this three-step process.  
 
 1. The starting point for us was two .TXT files, one file with all application objects, and one file with the first paragraph from HTML files with the field Help plus the ID of the table field. A tool then mapped the content from the HTML files to the page and control IDs in the application objects based on regular expressions to help with the mapping (step 2).
 
@@ -59,11 +59,11 @@ For Microsoft, it was a three-step process. The **FieldTopicTextExtractor** tool
 
     `T363-C13-P8631-A1033-L999:Specifies one of the four dimensions that you can include in an analysis view. By entering a dimension here, you will be able to filter entries in the Analysis by Dimensions window, which will allow you to investigate and monitor relationships between entries and the dimension information attached to them. To select a dimension code, choose the field.`
 
-    The ID of the tooltip, `T363-C13-P8631-A1033-L999`, is based on the **Translate Export** format for [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] and specifies the table, the field, the property, the language, and the field length. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files](/previous-versions/dynamicsnav-2016/dd301161(v=nav.90)) in the docs for [!INCLUDE [navcorfu_md](../developer/includes/navcorfu_md.md)].  
+    The ID of the tooltip, `T363-C13-P8631-A1033-L999`, was based on the **Translate Export** format for [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] and specifies the table, the field, the property, the language, and the field length. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files](/previous-versions/dynamicsnav-2016/dd301161(v=nav.90)) in the docs for [!INCLUDE [navcorfu_md](../developer/includes/navcorfu_md.md)].  
 
 2. The second step mapped that table field ID to the corresponding control on the Analysis View page object. This step was required because tooltips are not supported on table fields, only on controls on page objects.  
 
-    The mapping is not always straightforward because the same table is often used by two or more pages. As a result, the page ID could be many numbers away from the table ID. So we did much cleaning up and shuffling around in Excel after the conversion.
+    The mapping is not always straightforward because the same table is often used by two or more pages. As a result, the page ID could be many numbers away from the table ID. So we did much cleaning up and shuffling around in Excel after the conversion. It requires knowledge of the actual solution to determine which tooltips are relevant for which pages, and Excel was very handy for us because we could sort and filter, and then copy content. The **FieldTopicTextExtractor** tool generates an Excel file that you can use for this purpose.
 
 3. The last step was to get the edited tooltips into the metadata for the relevant page objects.  
 
@@ -73,9 +73,7 @@ For Microsoft, it was a three-step process. The **FieldTopicTextExtractor** tool
 
 ### After the conversion
 
-Now that the tooltips are in the page objects, we work with them using Excel. Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter the data. Due to the requirement of getting the text into Tooltip properties on page objects, we had to make it easy to do this work in a large Git enlistment in Azure DevOps, so the tooling is surrounded by a bunch of PowerShell scripts. We cannot share our current tooltip tool either, but it uses an open-source tool, [https://closedxml.codeplex.com/](https://closedxml.codeplex.com/), to handle the Excel integration - creating, opening, and saving an Excel workbook. The tool is then surrounded by PowerShell cmdlets scripts to populate the new Excel file with the existing page objects and their existing tooltips, and import the changed tooltips into the page objects.  
-
-You can also choose to work with tooltips in the translation files or straight in the .AL files. Different solutions require different processes, so pick the process that is more efficient for you.  
+In the base application, tooltips are in the page objects. We edit code to edit tooltips. You do not have to do the same. You can choose to work with tooltips in the translation files or straight in the .AL files. Different solutions require different processes, so pick the process that is more efficient for you.  
 
 We chose to associate the "What is this field?"-content with the user interface, meaning the controls on page objects. In the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] help model, we chose a different approach, focusing on the database structure. Both approaches have their advantages and disadvantages, but the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user assistance model currently focuses on the user interface with tooltips on page objects. For more information, see [User Assistance Model](../user-assistance.md).  
 

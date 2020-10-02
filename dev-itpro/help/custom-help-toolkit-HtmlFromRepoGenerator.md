@@ -36,7 +36,7 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
 Here is the syntax for HtmlFromRepoGenerator.exe:  
 
-```
+```cmd
 HtmlFromRepoGenerator.exe --Out <path> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--Rtl] [--?[--]]
 ```
 
@@ -66,25 +66,25 @@ The following additional parameters are used when the tool is run against the lo
 
 The following example clones the en-US repo and generates HTML files.
 
-```
+```cmd
 HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --LogsDir D:\BC\logs\en-US
 ```
 
 The following example uses a previously cloned en-US repo and generates HTML files.
 
-```
+```cmd
 HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --DoNotClone --LogsDir D:\BC\logs\en-US
 ```
 
 The following example clones both the de-DE and en-US repos, and generates HTML files for de-DE.
 
-```
+```cmd
 HtmlFromRepoGenerator.exe --out "D:\BC\de-DE" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de" --EnRepo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --EnOut "D:\BC\en-US" --lng "de-DE" --LogsDir D:\BC\logs\de-DE
 ```
 
 The following example uses previously cloned de-DE and en-US repos to generate HTML files for de-DE. Make sure that the de-DE repo is up to date if you use an existing cloned repo.
 
-```
+```cmd
 HtmlFromRepoGenerator.exe --out "D:\BC\de-DE" --DoNotClone --enOut "D:\BC\en-US" --lng "de-DE" --LogsDir D:\BC\logs\de-DE
 ```
 
