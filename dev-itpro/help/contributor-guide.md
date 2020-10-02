@@ -12,9 +12,9 @@ ms.author: edupont
 
 # Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-The source files for the Help for the base application are available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files.  
+The source files for the Help for the base application are available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files. You can also find guidance in the [Docs Contributor Guide](/contribute/).  
 
-You can also find guidance in the [Docs Contributor Guide](/contribute/).  
+If you want to get Microsoft's content and deploy it to your own website with or without customizations, see [Custom Help Toolkit](custom-help-toolkit.md).  
 
 ## Get content from the GitHub repos
 
@@ -27,7 +27,7 @@ When Microsoft publishes an update to the content, the *live* branch in the corr
 > [!TIP]
 > You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a website, for example. You do not even have to get a GitHub account, as shown in the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, in many scenarios, you might want to join us in GitHub for closer collaboration and easy of extensibility. Choose the process that works better for you.
 
-If you fork one of our repos, with or without use of the [Custom Help Toolkit](custom-help-toolkit.md), you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently. Choose the schedule that works for you.  
+If you fork one of our repos, with or without use of the [Custom Help Toolkit](custom-help-toolkit.md), you can choose to update your fork with updates from the Microsoft repo on a monthly basis, more frequently, or less frequently. Choose the schedule that works for you.  
 
 For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is all about, see [User Assistance Model](../user-assistance.md).  
 
