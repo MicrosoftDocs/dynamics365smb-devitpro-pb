@@ -113,6 +113,10 @@ When you exchange data through the API, you might have to safe list the IP addre
 
 You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/en-us/download/details.aspx?id=56519).  
 
+## How do I join the "Ready to Go" program?
+
+Read [this](developer/readiness/readiness-ready-to-go.md?tabs=learning), and then send email to [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com).
+
 ## See Also
 
 [FAQ for Developing in AL](developer/devenv-dev-faq.md)  

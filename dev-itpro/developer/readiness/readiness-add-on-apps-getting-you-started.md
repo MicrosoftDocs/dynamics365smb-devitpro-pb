@@ -177,7 +177,7 @@ If you DO want to add coworkers, please follow the 5 steps below:
 
 1. Register on [Microsoft Collaborate](https://aka.ms/Collaborate) by using your Azure AD Global Admin account (as described in detail above).
 2. Once you have successfully registered (and added coworkers) on Microsoft Collaborate, your company's Azure Active Directory (Azure AD) global administrator can send us an email ([Dynamics 365 Business Central Programs](mailto:Dyn365BEP@microsoft.com)) to complete the on-boarding. We must assign you to the right programs and engagements. Expect a response from us within 1-2 business days.
-3. In this email to [mailto:Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com), please specify the following:
+3. In this email to [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com), please specify the following:
     - Your *Publisher Display Name*
     - The name(s) of the people you have added to Microsoft Collaborate
     - The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
