@@ -25,7 +25,7 @@ An integer
  
 ## Syntax
 
-```
+```AL
 MaximumDocumentCount = 100;
 ```
 

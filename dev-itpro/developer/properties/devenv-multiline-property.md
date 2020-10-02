@@ -12,22 +12,24 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # MultiLine Property
+
 Sets the value that indicates whether a field can display multiple lines of text.  
   
 ## Applies to  
   
--   Page Fields  
+- Page Fields  
   
 ## Property Value  
- **True** if you want to display multiple lines; otherwise, **false**. The default is **false**.  
+
+**True** if you want to display multiple lines; otherwise, **false**. The default is **false**.  
 
 ## Syntax
-```
+
+```AL
 MultiLine = true;
 ```
   
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

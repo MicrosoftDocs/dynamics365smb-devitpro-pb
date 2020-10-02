@@ -12,13 +12,13 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # MaxOccurs Property
+
 Sets a value that indicates the maximum number of times an element can occur.  
   
 ## Applies to  
- XMLports  
+
+- XMLports  
   
 ## Property Value  
   
@@ -29,20 +29,23 @@ Sets a value that indicates the maximum number of times an element can occur.
 |**Field**|Once|  
 
 ## Syntax
-```
+
+```AL
 MaxOccurs = Once;
 ```
  
-## Remarks  
- The default value of the **MaxOccurs** property varies depending on the type of this element.  
+## Remarks
+
+The default value of the **MaxOccurs** property varies depending on the type of this element.  
   
- The minimum number of times an element can appear is determined by the value of the [MinOccurs Property](devenv-minoccurs-property.md).  
+The minimum number of times an element can appear is determined by the value of the [MinOccurs Property](devenv-minoccurs-property.md).  
   
- The **MinOccurs** and **MaxOccurs** properties conform to the standard occurrence constraints that are used when defining XML schemas.  
+The **MinOccurs** and **MaxOccurs** properties conform to the standard occurrence constraints that are used when defining XML schemas.  
   
- The minimum number can be either 1 or 0.  
+The minimum number can be either 1 or 0.  
   
- The maximum number can be either 1 or infinite.  
+The maximum number can be either 1 or infinite.  
   
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)
