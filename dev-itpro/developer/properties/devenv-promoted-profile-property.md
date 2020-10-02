@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Promoted (Profile) Property
+
 For profiles the **Promoted** property specifies whether or not the profile is available in the **Role Explorer** to the user. **Promoted** can also be set on Page Actions, see [Promoted (Actions) Property](devenv-promoted-action-property.md).
   
 ## Applies to  
@@ -18,12 +19,14 @@ For profiles the **Promoted** property specifies whether or not the profile is a
 - Profiles
   
 ## Property Value  
+
 **True** if the profile is available from the **Role Explorer** in the UI; otherwise, **false**. The default is **false**.  
 
 ## Example
+
 The following code illustrates how to set the **Promoted** property.
  
-```
+```AL
 profile MyProfile
 { 
     Description = 'Some internal comment that only the Dev can see'; 
