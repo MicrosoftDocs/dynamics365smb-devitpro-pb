@@ -12,6 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # ExtendedDataType Property
+
 Sets the extended data type of a field.  
   
 ## Applies to  
@@ -21,11 +22,13 @@ Sets the extended data type of a field.
 - Table Fields  
 
 ## Syntax
-```
+
+```AL
 ExtendedDatatype = EMail;
 ```
  
-## Remarks  
+## Remarks
+
 The property affects the layout and behavior of controls on a page. Use this, for example, to display a field as an email address.
 
 By applying special meaning or semantics to a field, the value of the table field is converted to a text field of the new data type that may apply special validation, a different way of displaying the value or interacting with the field.
@@ -45,5 +48,6 @@ Extended data types can only be used on specific field types according to the fo
 |Person            |Media, MediaSet  |The client handles the field as media representing a person and will display this in the signature rounded styling. When the media field is empty, a silhouette of a person is shown.|
 |Resource          |Text, Code|The client will use the field content as a bitmap resource name from which it will load a brick icon.|
 
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

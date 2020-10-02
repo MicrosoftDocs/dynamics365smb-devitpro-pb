@@ -29,7 +29,7 @@ Sets a value that indicates whether a table, page, or enum can be extended. If t
 
 ## Syntax
 
-```
+```AL
 table 50111 MyTable
 {
     DataClassification = CustomerContent;
@@ -38,7 +38,8 @@ table 50111 MyTable
 
 ```
 
-## See Also  
+## See Also
+
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
 [Access Property](devenv-access-property.md)  
