@@ -12,22 +12,24 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # InsertAllowed Property
+
 Sets a value to specify whether users can add records while using a page.  
   
 ## Applies to  
   
--   Pages  
+- Pages  
   
 ## Property Value  
- **True** if you want to allow users to add records; otherwise, **false**. The default value is **true**.  
+
+**True** if you want to allow users to add records; otherwise, **false**. The default value is **true**.  
 
 ## Syntax
-```
+
+```AL
 InsertAllowed = false;
 ```
  
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)
