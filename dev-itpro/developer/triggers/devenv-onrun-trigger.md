@@ -12,17 +12,19 @@ manager: edupont
 ms.service: "dynamics365-business-central"
 ---
 
-
 # OnRun Trigger
+
 Runs when you execute the codeunit and before the other methods run.
 
 ## Syntax
-```
+
+```AL
 trigger OnRun()
 begin
     ...
 end;
 ```
 
-## See Also  
+## See Also
+
 [Codeunit Triggers](devenv-codeunit-triggers.md)   
