@@ -12,23 +12,26 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # DataCaptionExpression Property
+
 Sets an AL expression that is evaluated and displayed to the left of the page caption.  
   
-## Applies to  
--   Pages  
--   RequestPage
+## Applies to
+
+- Pages  
+- RequestPages
  
 ## Syntax
-```
+
+```AL
 DataCaptionExpression = Description;
 ```
 
-## Remarks  
- The expression is evaluated each time the user switches from one record to another or when one of the fields in the record changes.  
+## Remarks
+
+The expression is evaluated each time the user switches from one record to another or when one of the fields in the record changes.  
   
 ## See Also  
+
 [Page Object](../devenv-page-object.md)  
 [Properties](devenv-properties.md)

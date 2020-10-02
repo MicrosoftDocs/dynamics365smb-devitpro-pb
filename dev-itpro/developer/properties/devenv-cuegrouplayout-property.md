@@ -11,18 +11,20 @@ author: jswymer
 ---
 
 # CuegroupLayout Property
+
 Sets whether a `cuegroup` control displays in the wide layout.   
   
 ## Applies to  
   
--   `cuegroup` controls
+- `cuegroup` controls
   
 ## Property Values  
 
 `wide` sets the `cuegroup` control to the wide layout; otherwise, the control uses the normal layout.     
 
 ## Syntax
-```
+
+```AL
 CuegroupLayout = wide;
 ```
   
@@ -30,7 +32,8 @@ CuegroupLayout = wide;
 For more information about the wide layout for Cues, see [Normal and wide layout for Cues](../devenv-cues-action-tiles.md#CueWideLayout).
 
 ## Example
-```
+
+```AL
 cuegroup(SalesCueContainer)
 {
     CaptionML=ENU='Sales Invoices';
@@ -43,7 +46,8 @@ cuegroup(SalesCueContainer)
 } 
 ```
   
-## See Also  
+## See Also
+
 [Properties](devenv-properties.md)
 [Rowspan Property](devenv-rowspan-property.md)  
 [Columnspan Property](devenv-columnspan-property.md)
