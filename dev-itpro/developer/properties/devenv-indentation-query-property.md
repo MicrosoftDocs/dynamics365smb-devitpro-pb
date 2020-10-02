@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Indentation Property (Query)
+
 Sets the indentation level of a data item, column, or filter row in a query.  
   
 ## Applies to  
   
--   Query data items, columns, and filter rows  
+- Query data items, columns, and filter rows  
   
 ## Property Value  
- Integer  
+
+Integer  
   
- **0** sets no indentation, **1** indents the item one level, **2** indents the item two levels, and so on.  
+**0** sets no indentation, **1** indents the item one level, **2** indents the item two levels, and so on.  
 
 <!--
 ## Syntax
@@ -34,5 +34,6 @@ Sets the indentation level of a data item, column, or filter row in a query.
 -->
  
 ## See Also  
+
 [Properties](devenv-properties.md)  
 [Indentation Property Reports](devenv-indentation-reports-property.md) 
