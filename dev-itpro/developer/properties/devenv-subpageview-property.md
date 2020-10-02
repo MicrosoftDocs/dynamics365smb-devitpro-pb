@@ -3,7 +3,7 @@ title: "SubPageView Property"
 description: Describes the SubPageView property in Business Central.
 author: jswymer
 ms.custom: na
-ms.date: 06/23/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

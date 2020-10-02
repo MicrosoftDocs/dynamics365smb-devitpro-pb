@@ -2,7 +2,7 @@
 title: "Application Security in Business Central"
 description: Helps you understand and improve the security of your Business Central application regardless of where it is hosted.
 ms.custom: na
-ms.date: 08/21/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

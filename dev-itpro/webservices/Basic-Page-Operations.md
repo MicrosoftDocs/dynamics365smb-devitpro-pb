@@ -1,7 +1,7 @@
 ---
 title: "Basic Page Operations"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,4 +36,4 @@ When you publish a page as a SOAP web service, it has a set of default operation
 |[UpdateMultiple Operation](UpdateMultiple-Operation.md)|Updates a set of records.<br /><br /> `void UpdateMultiple(ref Entity[] entity)`|  
 
 ## See Also  
- [Basic Page Operations](Basic-Page-Operations.md)
+ [SOAP Web Services](soap-web-services.md)  

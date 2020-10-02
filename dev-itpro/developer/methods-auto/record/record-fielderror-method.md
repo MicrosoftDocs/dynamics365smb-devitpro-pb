@@ -3,7 +3,7 @@ title: "Record.FieldError Method"
 description: Explains the Record.FieldError method in Business Central
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldError Method
+# Record.FieldError Method
 Stops the execution of the code causing a run-time error, and creates an error message for a field.
 
 
@@ -33,7 +33,7 @@ The field for which you want to create an error message.
           
 *Text*  
 &emsp;Type: [String](../string/string-data-type.md)  
-Use this optional parameter to include the text of the error message. If you do not use this parameter, then default text is used as shown in the following examples. You can use backslashes (\) to break lines.
+Use this optional parameter to include the text of the error message. If you do not use this parameter, then default text is used as shown in the following examples. You can use backslashes (\\) to break lines.
           
 
 

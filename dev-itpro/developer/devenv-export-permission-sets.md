@@ -3,7 +3,7 @@ title: "Exporting Permission Sets"
 description: Export permission sets for Dynamics 365 for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/17/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Performance Toolkit Extension"
 description: Test your extensions for performance regressions during the development process. 
 author: bholtorf
 ms.custom: na
-ms.date: 06/29/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,19 +13,19 @@ ms.author: bholtorf
 ---
 
 # The Performance Toolkit Extension
-This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prodshort](includes/prodshort.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the [!INCLUDE[prodshort](includes/prodshort.md)] Performance Toolkit lets developers simulate the amount of resources that customers use in realistic scenarios to compare performance between builds of their solutions.
+This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prodshort](includes/prodshort.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the Performance Toolkit lets developers simulate the amount of resources that customers use in realistic scenarios to compare performance between builds of their solutions.
 
 In short, the Performance Toolkit helps answer questions such as, "Does my solution for [!INCLUDE[prodshort](includes/prodshort.md)] support X number of users doing this, that, and the other thing at the same time?" It doesn't answer questions such as, "How many orders can [!INCLUDE[prodshort](includes/prodshort.md)] process per hour?"
 
 > [!IMPORTANT]
-> You can only use the toolkit only in sandbox environments and Docker images. You cannot use it in a production tenant.
+> You can use the toolkit only in sandbox environments and Docker images. You cannot use it in a production tenant.
 
 ## Components of the Performance Toolkit
-The Performance Toolkit is two extensions, the **[!INCLUDE[prodshort](includes/prodshort.md)] Performance Toolkit** and the **[!INCLUDE[prodshort](includes/prodshort.md)] Performance Toolkit Samples**. To get the full benefit of the toolkit, we recommend that you download and install both from AppSource. <!--check whether you can link to the download pages--> Combined, the extensions provide the following:
+The Performance Toolkit is two extensions, the **Performance Toolkit** and **Performance Toolkit Samples**. To get the full benefit of the toolkit, we recommend that you download and install both from AppSource. <!--check whether you can link to the download pages--> Combined, the extensions provide the following:
 
 * A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
 * Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
-* A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, for security reasons you must start these scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the run from the command line](devenv-performance-toolkit.md#starting-the-run-from-powershell) 
+* A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, you must start those scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the Run from PowerShell](devenv-performance-toolkit.md#starting-the-run-from-powershell). 
 
 ## Single and Multiple Sessions
 Typically, you'll want to run the suite for multiple sessions at the same time. After you configure the suite, you can do that by using the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** action to run your suite just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
@@ -145,14 +145,19 @@ The results of the PRT are shown on the **BCPT Suite Lines** FastTab. The follow
 |**Changes in Duration (%)**|The change in measured time between a baseline and the latest run.|
 
 ## Writing Test Cases (codeunits)
-A test suite is a codeunit that runs on the BCPT Line record so it can read parameters from the record fields, such as the user delay.
+A test case is a codeunit of either a **Normal** or **Test** subtype. If the subtype is Normal, the test scenario should be defined in the OnRun trigger because the Performance Toolkit uses the codeunit to run the testcase. 
 
-To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. <!--**NEED AN IMAGE OF A CODEUNIT**-->Test-codeunits don’t run on tables, so get the BCPT Line record by calling the BCPT Role Wrapper codeunit, which is a single-instance codeunit. In the example of the BCPT Open Item List, BCPTLine is declared as a global variable, and the first thing called is the BCPT Role Wrapper to get the line. The example also shows the use of individual timers where we call the BCPTLine.StartScenario(‘<some name>’) which stores the current date-time, and later ABTLine.EndScenario(‘<some name>’) which creates a log entry that specifies the start and end time, duration, and the Operation (‘<some name>’ in this case). You must also call ABTLine.UserWait(), which simulates a delay in the user moving between fields, as well issuing a Commit().
+To interact with pages and make tests more realistic, define a codeunit of the subtype Test, as shown in the example for codeunit BCPT Open Item List. Test codeunits use the BCPT Test Context codeunit to get information about the context in which the testcase is running. The BCPT Test Context codeunit exposes several test methods that test cases can use. The following table describes the methods.
 
-> [!IMPORTANT]
-> If you run tests on standard [!INCLUDE[prodshort](includes/prodshort.md)] demo companies, and you want to create more than just a handful of entities, you will probably have to change the number series or create a new one.
+|Method  |Description  |
+|---------|---------|
+|StartScenario(ScenarioOperation: Text)|Starts the scope of a test session that collects the performance numbers.|
+|EndScenario(ScenarioOperation: Text)|Ends the scope of a test session that collects the performance numbers.|
+|UserWait()|Simulates user delays between operations to make scenarios more realistic. Delays are calculated using the parameters defined on the BCPT suite.|
+|GetParameters(): Text|Returns the parameter list associated with the test case as text.|
+|GetParameter(ParameterName: Text): Text|Returns the requested parameter value associated with the test case.|
 
-<!--********NEED AN IMAGE OF CODEUNIT 150110*************-->
+To provide default parameters for a suite configuration, the test codeunits must implement the **BCPT Param. Provider**  interface, and add it to the enum that has been extended from **BCPT Test Param. Enum**. For an example, see the samples in the BCPT Create PO with N Lines codeunit.
 
 ## See Also
 [Testing the Application Overview](devenv-testing-application.md)  

@@ -2,7 +2,7 @@
 title: "Insert, Modify, ModifyAll, Delete, and DeleteAll Methods"
 description: Describes how to use the Insert, Modify, ModifyAll, Delete, and DeleteAll methods in Business Central
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

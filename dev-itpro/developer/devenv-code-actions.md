@@ -4,7 +4,7 @@ description: "Code Actions"
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/30/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen

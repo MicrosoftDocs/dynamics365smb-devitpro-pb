@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/22/2020
+ms.date: 10/01/2020
 ms.author: jswymer
 ---
 # Telemetry Event IDs in Application Insights

@@ -1,7 +1,7 @@
 ---
 title: "How to: Disable Logging Events to the Windows Application Log"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,8 @@
 ---
-title: "BindSubscription Method"
+title: "Session.BindSubscription Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# BindSubscription Method
+# Session.BindSubscription Method
 Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance.
 
 
@@ -32,7 +32,7 @@ The codeunit that contains the event subscribers.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the event subscriber methods bind successfully to the codeunit instance and no errors occurred, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the event subscriber methods bind successfully to the codeunit instance and no errors occurred, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

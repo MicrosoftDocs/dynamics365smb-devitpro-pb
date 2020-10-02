@@ -2,7 +2,7 @@
 title: Query Totals and Grouping
 description: Perform calculation on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

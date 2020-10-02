@@ -3,7 +3,7 @@ author: edupont04
 
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 09/21/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ---
 Production environments are meant to be precisely that: Environments that a business can run their daily business in [!INCLUDE [prodshort](prodshort.md)] in, deployed on performance tiers in Azure with a guaranteed high level of availability and support.  

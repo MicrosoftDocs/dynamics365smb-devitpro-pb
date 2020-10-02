@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 
 # Customizing an Integration with Common Data Service

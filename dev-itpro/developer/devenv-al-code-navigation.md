@@ -3,7 +3,7 @@ title: "AL Code Navigation"
 description: "This topic describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central." 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/30/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

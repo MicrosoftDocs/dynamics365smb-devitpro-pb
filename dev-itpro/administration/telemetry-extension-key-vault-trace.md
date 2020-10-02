@@ -8,12 +8,12 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/10/2020
+ms.date: 10/01/2020
 ms.author: jswymer
 ---
 # Analyzing App Key Vault Secret Trace Telemetry
 
-**INTRODUCED IN:** Business Central 2020 release wave 2
+[!INCLUDE[prodshort](../includes/2020_releasewave2.md)]
 
 App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md).
 

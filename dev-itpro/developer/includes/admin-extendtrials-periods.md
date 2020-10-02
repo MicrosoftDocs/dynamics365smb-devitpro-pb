@@ -2,7 +2,7 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 05/28/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ---
 When a trial or a subscription expires, two special periods kick in: 

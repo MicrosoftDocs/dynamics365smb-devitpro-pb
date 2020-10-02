@@ -1,9 +1,9 @@
 ---
 title: "Snapshot Debugging"
-description: "Overview of how snapshot debugging works in AL for Business Central"
+description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/31/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -13,6 +13,9 @@ ms.author: solsen
 # Snapshot Debugging
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+
+> [!IMPORTANT]  
+> The Snapshot Debugging feature in 17.0 is not yet active in 17.0 sandbox tenants because of the delay of the deployment of some of our SaaS components. We are working on a mitigation to get this fixed as soon as possible. At this point any attempt at Snapshot Debugging will return an Internal Server Error in Visual Studio Code.
 
 Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
 
