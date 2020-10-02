@@ -75,6 +75,13 @@ As a simple example, do the following steps:
     | sort by timestamp desc 
     ```
 
+### <a name="customdimensions"></a>About Custom Dimensions
+
+Each trace includes a `customDimensions` column. The `customDimensions` column, in turn, includes a set dimensions that contain metrics specific to the trace. Each of these custom dimensions has a limit of 8000 characters. If a dimension's value exceeds 8000 characters, additional dimensions will be added to the trace for containing the excess characters. There can be up to two additional parameters, each with a maximum 8000 characters. The additional dimensions will have the names that `\[custom_dimension_name\]_1` and `\[custom_dimension_name\]_2`, where `\[custom_dimension_name\]` is the name of the original dimension. For example, if the custom dimension is `extensionCompilationDependencyList`, then the additional dimensions would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+
+> [!NOTE]
+> The 8000 character limit is governed by the [Application Insights API](azure/azure-monitor/app/api-custom-events-metrics#limits).
+
 ## Application Insights sample code
 
 On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started using Application Insights. 
