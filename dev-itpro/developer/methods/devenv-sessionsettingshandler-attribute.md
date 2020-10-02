@@ -20,7 +20,7 @@ AL methods on test codeunits. A test codeunit is a codeunit that has the [SubTyp
 
 ## Syntax  
   
-```  
+```AL
 [SessionSettingsHandler]
 procedure SessionSettingsHandler(var SessionSettings: SessionSettings) : Boolean;
 ```    

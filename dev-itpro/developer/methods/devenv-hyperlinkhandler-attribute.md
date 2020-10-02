@@ -20,7 +20,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
 
 ## Syntax  
   
-```  
+```AL  
 [HyperLinkHandler]
 procedure HyperLinkHandler(Message : Text[1024]);
 ```    

@@ -16,8 +16,7 @@ Gets the RecordId of the record that is currently selected in the table. If no t
   
 ## Syntax  
   
-```  
-  
+```AL
 RecordId := Record.RecordId;  
 ```  
   
@@ -55,7 +54,7 @@ The following example opens table 18 \(Customer\) as a Record variable that is n
 |------------------|--------|---------------|  
 |MyTextConst|Text|The record ID for the last record is: %1|  
   
-```  
+```AL
 MyRecord.FindLast;  
 RecID := MyRecord.RecordId;  
 MESSAGE(MyTextConst, RecID);  
