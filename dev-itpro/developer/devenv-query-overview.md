@@ -13,7 +13,7 @@ author: jswymer
 
 # Queries in Business Central
 
-Queries enable you to retrieve records from one or more tables or data sources and then combine the data into rows and columns in a single dataset. Queries can also perform calculations on data, such finding the sum or average of all values in a column of the dataset.
+Queries enable you to retrieve records from one or more tables or data sources and then combine the data into rows and columns in a single dataset. Queries can also perform calculations on data, such as finding the sum or average of all values in a column of the dataset.
 
 ## Query Types
 
