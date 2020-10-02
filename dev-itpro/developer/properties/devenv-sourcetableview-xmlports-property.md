@@ -12,16 +12,17 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # SourceTableView Property (XMLports)
+
 Sets the key, sort order, and filter of the source table presented to the user.
   
 ## Applies to  
- Table elements in XMLports  
+
+- Table elements in XMLports  
 
 ## Syntax
-```
+
+```AL
 SourceTableView = SORTING(Code);
 ```
  
@@ -29,6 +30,6 @@ SourceTableView = SORTING(Code);
 
 To sort a set of table fields in the table view, use the **sorting** keyword. To sort the records in ascending or descending order, use the **order** keyword.  And, to apply a set of filters in the table view, use the **where** keyword.
 
-  
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)
