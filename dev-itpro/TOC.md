@@ -114,10 +114,10 @@
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
-### [Exporting Databases](administration/tenant-admin-center-database-export.md)
-### [Capacity](administration/tenant-admin-center-capacity.md)
-### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
+### [Managing Capacity](administration/tenant-admin-center-capacity.md)
+### [Managing Notifications](administration/tenant-admin-center-notifications.md)
 ### [Managing Updates](administration/tenant-admin-center-update-management.md)
+### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 ### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 ### [Administration Center API](administration/administration-center-api.md)
 ## Automation
