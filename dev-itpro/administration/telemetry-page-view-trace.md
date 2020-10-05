@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/07/2020
+ms.date: 10/01/2020
 ms.author: jswymer
 ---
 # Analyzing Page View Telemetry
@@ -25,6 +25,19 @@ Use the data to gather statistics about system usage and also troubleshoot perfo
 ## Page opened: {alObjectName}
 
 Occurs when a page has been opened in the client.  
+
+### 
+The pageViews table is a built-in table in Application Insights. Here are some of the fields most used in analysis of the signal:
+
+|Field|Description or value|
+|---------|-----|
+|client_Browser|Browser running on the client device.|
+|client_OS|Operating system of the client device.|
+|client_Type|Type of the client device.|
+|duration| Number of milliseconds it took the application to handle the page view.|
+|url|URL of the page view.|
+
+All fields are documented here: [Application Insights PageViews Schema](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/pageviews)
 
 ### Custom dimensions
 

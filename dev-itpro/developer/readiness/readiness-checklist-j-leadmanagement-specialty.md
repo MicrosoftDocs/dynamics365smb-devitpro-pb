@@ -3,11 +3,11 @@ title: "Lead Management and Specialty Apps"
 description: "Guidelines on lead manangement and specialty apps"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Lead Management

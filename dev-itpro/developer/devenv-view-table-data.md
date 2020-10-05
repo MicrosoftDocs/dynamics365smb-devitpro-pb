@@ -1,9 +1,9 @@
 ---
-title: "Viewing Table Data in Browser"
+title: "Viewing Table Data"
 description: "View tables in browser for troubleshooting"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/05/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,9 @@ ms.author: jswymer
 
 For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions.
 
-- In a production environment, administrators and support can view a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
+- In a production environment, administrators and support can view a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].  
+
+- From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can launch a list of all tables, sorted by storage size. For more information, see [Storage usage by environment](../administration/tenant-admin-center-capacity.md#storage-usage-by-environment).  
 
 - In a development environment, in addition to viewing a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], developers can view a table automatically when they publish/debug an AL project from Visual Studio Code.
 
@@ -23,9 +25,10 @@ For developers, administrators, and support personnel, it can be useful to inspe
 > The table appears as read-only in the client, so modifications, insertions, and deletions cannot be made.
 
 > [!IMPORTANT]  
-> Data in the tables can be sensitive. Be sure to follow your organization's guidelines for handling such data. 
+> Data in the tables can be sensitive. Make sure that you follow your organization's guidelines for handling such data.
 
 ## Required permissions
+
 Whether viewing the table directly from the client or from Visual Studio Code, your [!INCLUDE[d365fin_md](includes/d365fin_md.md)] user account must have the following permissions:
 
 - Read permission on the table that you want to view.
@@ -34,8 +37,9 @@ Whether viewing the table directly from the client or from Visual Studio Code, y
 Any end-user that is assigned these permissions will be able to view that table in the browser.
 
 For information about assigning permissions, see [Manage Users and Permissions](/dynamics365/financials/ui-how-users-permissions).
- 
+
 ## View a table object directly from the client
+
 To view a table, you add the `table=<TableID>` parameter to the client's address (URL), replacing `<TableID>` with the ID of the table that you want to view.
 
 For example, if your URL starts with `https://businesscentral.dynamics.com`, then to view table **18 Customer** in your current company, you could use the following URL:
@@ -55,6 +59,7 @@ https://businesscentral.dynamics.com/?company=CRONUS%20Inc.&table=18
 Note the use of `&` when `table=<TableID>` is not located directly after the domain name.
 
 ## View a table object from an AL project in Visual Studio Code
+
 You can configure an AL project to view a table when you publish or debug the project (pressing **F5** or **Ctrl+F5**). 
 
 In the `launch.json` file for the project, set the `"startupObjectType"` parameter to `"table"` and the `"startupObjectId"` parameter to the ID of the table. For example:
@@ -78,8 +83,7 @@ In the `launch.json` file for the project, set the `"startupObjectType"` paramet
 
 For more information about the `launch.json` file, see [Launch.json file](devenv-json-files.md#Launchjson).
 <!--
-U
-sers: 
+Users: 
 Must have read access to the table 
 Must have execute permission on the Run Table System object 
 Developers: 
@@ -94,6 +98,7 @@ Known limitation: Viewing and scrolling through large tables has bad performance
 
 -->
 ## Constraints
+
 You cannot view virtual tables or the following system tables:
 
 |  ID  |  Name  |
@@ -134,9 +139,10 @@ You cannot view virtual tables or the following system tables:
 | 2000000199 |Webhook Subscription|
 
 > [!NOTE]  
-> The tables marked with * in the table above have changed names with Business Central 2020 release wave 1. For more information, see [Deprecated Tables](../upgrade/deprecated-tables.md).
+> The tables marked with * in the table above changed names with Business Central 2020 release wave 1. For more information, see [Deprecated Tables](../upgrade/deprecated-tables.md).
 
 ## See Also  
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Deprecated Tables](../upgrade/deprecated-tables.md)
+[Deprecated Tables](../upgrade/deprecated-tables.md)  
+[Managing Capacity](../administration/tenant-admin-center-capacity.md)  

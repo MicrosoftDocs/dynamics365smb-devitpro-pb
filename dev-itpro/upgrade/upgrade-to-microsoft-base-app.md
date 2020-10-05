@@ -1,7 +1,8 @@
 ---
 title:  "Upgrading Customized C/AL Application to Microsoft Base Application"
+description: Describes how to upgrade an unmodified Business Central 14 application to version 16 Microsoft Base Application
 ms.custom: na
-ms.date: 04/29/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 This article describes how to upgrade a customized version 14 application to a version 16 solution that uses the Microsoft Base Application.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc14-to-16-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application") 
+ ![Shows the upgrade on unmodified Business Central application](../developer/media/bc14-to-16-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application") 
 
 <!--
 
@@ -27,7 +28,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-![Upgrade on unmodified Business Central application](../developer/media/upgrade-v14-to-v16-base-app-v2.png "Upgrade on unmodified Business Central application") 
+![Show the upgrade process on an unmodified Business Central application](../developer/media/upgrade-v14-to-v16-base-app-v2.png "Upgrade process on unmodified Business Central application") 
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -43,11 +44,15 @@ The process uses two special features for migrating tables and data to extension
 
 The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
-## Prerequisites
+## <a name="prereqs"></a>Prerequisites
 
 1. Your version 14 is compatible with version 16.
 
-    There are several updates for version 14. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).  
+    There are several updates for version 14. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
+
+2. Get the required version of the txt2al conversion tool.
+
+    During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/en-us/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
 ## Install version 16
 
@@ -92,6 +97,9 @@ You'll create two versions of this extension. The first version contains the tab
     ```
 
     For more information about this tool, see [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
+
+    > [!NOTE]
+    > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
 
 3. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 

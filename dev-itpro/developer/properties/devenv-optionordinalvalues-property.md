@@ -2,7 +2,7 @@
 title: "OptionOrdinalValues Property"
 description: Specifies the list of option values when you set the ExternalType property for synchronizing the database with external tables.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

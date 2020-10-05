@@ -2,7 +2,7 @@
 title: "Designing CardParts"
 description: "Design and implementation tips for page part of type CardPart."
 ms.custom: na
-ms.date: 06/24/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: t-blrobl

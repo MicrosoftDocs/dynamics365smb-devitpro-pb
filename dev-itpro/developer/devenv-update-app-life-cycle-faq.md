@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: rweigel
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 
 # Update Lifecycle for AppSource Apps FAQ

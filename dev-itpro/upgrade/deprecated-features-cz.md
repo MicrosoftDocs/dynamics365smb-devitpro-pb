@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Czech, local functionality
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.author: v-zdbice
 
@@ -353,6 +353,10 @@ The following list shows additional fields that are deleted as a result of the f
 |31101|VAT Control Report Line|44|Insolvency Proceedings (p.44)|Removed|Replaced by **Corrections for Bad Receivable**|
 |31103|VAT Control Report Buffer|44|Insolvency Proceedings (p.44)|Removed|Replaced by **Corrections for Bad Receivable**|
 |31101|Certificate CZ|All|All Fields|Removed|Moved to standard  table 1262 **Isolated Certificate**|
+
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-cz](../includes/fields-obsolete-cz.md)]
 
 ## See Also
 

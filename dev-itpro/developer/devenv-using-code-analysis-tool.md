@@ -4,7 +4,7 @@ description: "Using static code analysis tool on an AL project."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -66,6 +66,7 @@ In order to improve performance when running code analysis on large projects, yo
 [Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Development in AL](devenv-dev-overview.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [Debugging in AL](devenv-debugging.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 

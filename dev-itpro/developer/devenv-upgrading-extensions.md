@@ -3,7 +3,7 @@ author: jswymer
 title: "Upgrading an Extension V2 to a new version"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

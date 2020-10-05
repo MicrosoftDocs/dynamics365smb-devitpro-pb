@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 06/03/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ---
 
@@ -70,21 +70,24 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prodshort](../deve
 
 - accountant
 
-    Contains files that are relevant for Dynamics 365 — Accountant Hub
+    Contains files that are relevant for Dynamics 365 — Accountant Hub but will soon be deleted due to deprecation. You can ignore this folder.
+- archive
+
+    Contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder.
 - business-central
 
     Contains files that are relevant for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
-- invoicing
-
-    Contains files that are relevant for Microsoft Invoicing
 - media-source
 
     Contains source files for some of the pictures that are used in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content
+- Templates
+
+    Contains a template that you can use if you build HTML files for the legacy Dynamics NAV Help Server website
 
 The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the Docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
 
 > [!TIP]
-> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media still contain CAB files for Help Server. However, you can always get newer content from the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, you can get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
+> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media still contain CAB files for Help Server. However, you can always get newer content from the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, get the latest files from GitHub. We recommend that you follow the best practice of getting the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
 
 The article that you are reading right now is also based on a source file in a GitHub repo, but it's not the dynamics365smb-docs repo. If you want to contribute to the developer and administration content, this is the repo to fork (or clone): `https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb`
 
@@ -96,7 +99,7 @@ When you decide it is time to get the latest version of the content from Microso
 
 However, if your solution is available in more than one country, then you are likely to want to make content available in multiple languages. Microsoft has a GitHub repo for each supported language, but the configuration files are only available in the English (US) source repo, MicrosoftDocs/dynamics365smb-docs. To help you get the content that you need, you might want to run a PowerShell script that picks up content from the various GitHub repos.  
 
-The following example is based on a script that a Danish partner developed in order to get the Microsoft source for a number of languages, copy media files to the localization repos, and then build HTML files for the legacy Dynamics NAV Help Server. The script is provided in agreement with the partner without further support.
+The following example is based on a script that a Danish partner developed in order to get the Microsoft source for a number of languages, copy media files to the localization repos, and then build HTML files. The script is provided in agreement with the partner without further support.
 
 ```powershell
 $languages = $("da-dk","de-ch","de-de")
@@ -110,18 +113,18 @@ foreach ($language in $languages)
 {
     $arguments = $("clone --single-branch --branch live https://github.com/MicrosoftDocs/dynamics365smb-docs-pr." + $language + ".git")
     Start-Process -FilePath $git -ArgumentList $arguments -WorkingDirectory "C:\working\help" -Wait
-    Copy-Item $($365docs + "\business-central\NAVdocfx.json") $($langDir + $language + "\business-central")
+    Copy-Item $($365docs + "\business-central\docfx.json") $($langDir + $language + "\business-central")
     Copy-Item $($365docs + "\business-central\media") $($langDir + $language + "\business-central") -Recurse -Force
     Copy-Item $($365docs + "\business-central\LocalFunctionality") $($langDir + $language + "\business-central") -Recurse -Force
     Copy-Item $($365docs + "\Templates") $($langDir + $language) -Recurse -Force
-    Set-Content -Path $($langDir + $language + "\business-central\NAVdocfx.json") -Value (get-content -Path $($365docs + "\business-central\NAVdocfx.json"))
-    Start-Process -FilePath $docfx -ArgumentList $("C:\working\help\dynamics365smb-docs-pr." + $language + "\business-central\NAVdocfx.json" + " --output c:\working\output\" + $language)
+    Set-Content -Path $($langDir + $language + "\business-central\docfx.json") -Value (get-content -Path $($365docs + "\business-central\docfx.json"))
+    Start-Process -FilePath $docfx -ArgumentList $("C:\working\help\dynamics365smb-docs-pr." + $language + "\business-central\docfx.json" + " --output c:\working\output\" + $language)
 }
 ```
 
-Because the Microsoft repos are public, you do not need a valid GitHub account in order to get the content. However, we recommend that your organization has a system account with access to GitHub at a minimum.  
+For more information, see the [Build HTML files](#build-html-files) section.  
 
-See also the [Build HTML files](#build-html-files) section.  
+Because the Microsoft repos are public, you do not need a valid GitHub account in order to get the content. However, we recommend that your organization has a system account with access to GitHub at a minimum.  
 
 ### Contributing
 
@@ -160,33 +163,36 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 ## Build HTML files
 
-For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). DocFx is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files for the Dynamics NAV Help Server.  
+For publishing to your own website, you can <!--use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  -->
+<!--
+Alternatively, --> create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files, such as if you want to preview your content locally, or to generate content for a website. This section provides some guidance on how you can use DocFx to publish HTML files straight from your fork of one of the Microsoft repos. <!--You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.-->
 
 > [!TIP]
-> You can also use DocFx to generate content for other websites. In that case, either modify NAV docfx.json or replace NAVdocfx.json with your own configuration file to meet your website's requirements.
+> You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file that is kept available in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
 
 1. Install [DocFx](https://dotnet.github.io/docfx/) on your computer.
 
     DocFx is a command line tool, but you can also run it from a PowerShell script.  
 
-    You must provide a .JSON file that defines certain build settings, including the output folder in which to store the generated HTML files. We suggest that you use the NAVdocfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. However, it is configured for use with the legacy Dynamics NAV Help Server. To configure it for use with a different website, remove or replace the value of the `template` property.  
+    You must provide a .JSON file that defines certain build settings, including the output folder in which to store the generated HTML files. We suggest that you use the docfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo.  
 
     Alternatively, create your own docfx.json file based on the setup of your website. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
 
-2. To change settings in the NAVdocfx.json file, in the folder where your local clone is, such as *C:\GitHu b\MSFT\dynamics365smb-docs\business-central*, open the NAVdocfx.json file in your preferred editor.  
+2. To change settings in the docfx.json file, in the folder where your local clone is, such as *C:\GitHub\MSFT\dynamics365smb-docs\business-central*, open the docfx.json file in your preferred editor.  
 
-    The following table describes key parameters.
+    The following table describes key parameters for you to customize.
 
     |Property  |Description  |
     |----------|-------------|
     |**dest**  | Specifies the output folder of the generated HTML files, such as `c:\Working\output\`. |
-    |**template**     | Specifies the templates that the HTML files will be generated after. The value can be a string or an array. |
-    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format. In the NAVdocfx.json file, this property applies the `ROBOTS: NOINDEX, NOFOLLOW` metadata to each HTML file.  The intent is that search engines will find Microsoft's original content on the Docs.microsoft.com site rather than any customizations that you and hundreds of other may have published. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `ROBOTS` property. You can also add other global metadata, or metadata that applies to specific subfolders.  |
-    |**markdownEngineName**||
+    |**template**     | Specifies the templates that the HTML files will be generated after. The default for Microsoft is blank, but the value can be a string or an array.|
+    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format. We encourage you to use this property to apply the `ROBOTS: NOINDEX, NOFOLLOW` metadata to each HTML file. The intent is that search engines will find Microsoft's original content on the Docs.microsoft.com site rather than any customizations that you and hundreds of other may have published. For an example, see the NAVdocfx.json file. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `ROBOTS` property. You can also add other global metadata, or metadata that applies to specific subfolders.  |
+    |**fileMetadata**|Contains metadata that will be applied to specific files, based on the specified parameters, in key-value pair format. The default is currently blank.|
+    |**markdownEngineName**|Specifies the "flavor" of MarkDown to use to build the HTML files. The default is `markdig`.|
 
     For more information, see the [Properties for build](https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#32-properties-for-build) section in the DocFx user manual.
 
-    The Microsoft repos also contain a docfx.json file that has a different settings because the repos are configured for the Docs.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
+    The docfx.json files in the Microsoft repos have several other settings because the repos are configured for the Docs.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
 
 3. If you have cloned a localization repo such as [dynamics365smb-docs-pr.da-dk](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk), you must also clone the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo and then copy the content of the \business-central\media\ folder.
 
@@ -205,15 +211,15 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
 6. Run the equivalent of the following command:
 
     ```powershell
-    docfx "c:\GitHub\MSFT\dynamics365smb-docs\business-central\NAVdocfx.json"
+    docfx "c:\GitHub\MSFT\dynamics365smb-docs\business-central\docfx.json"
     ```
 
-The files are generated as .html files and stored in the specified output.
+The files are generated as .html files and stored in the output location that is specified in the docfx.json file.
 
 > [!IMPORTANT]
 > Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com](https://docs.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
-Originally, the table of contents on the docs.microsoft.com site was based on a MarkDown file, TOC.md. But we are about to convert that into a YAML file in order to be more compliant with the docs.microsoft.com site. Once we convert the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format. Alternatively, do your customizations in HTML, and then it will not matter if the Microsoft source is in MarkDown or YAML format.  
+Originally, the table of contents on the docs.microsoft.com site was based on a MarkDown file, TOC.md. But we considering converting that into a YAML file in order to be more compliant with the docs.microsoft.com site. Once we convert the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format. Alternatively, do your customizations in HTML, and then it will not matter if the Microsoft source is in MarkDown or YAML format.  
 
 The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the Docs.microsoft.com site but have been deprecated later. As part of standard website practices, the Docs.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the `.openpublishing.redirection.json` file provides the mapping for redirection.  
 
@@ -226,6 +232,28 @@ For tips and tricks about writing in MarkDown, see the [Authoring Guide](writing
 [!INCLUDE [docslinkanchor](../developer/includes/docslinkanchor.md)]
 
 Alternatively, you can add a post-processing step to the script that you use to run DocFx to change the equivalent of ```<h3 id=da-DK-anchor-name>``` with ```<h3 id=en-US-anchor-name>```. In this example, the step would change ```<h3 id=min-oversatte-overskrift'>``` to ```<h3 id=my-translated-subheading'>```.  
+
+## Known issues with Microsoft's content
+
+Microsoft's content in the various GitHub repos is optimized for the Docs.microsoft.com site and the tools that are used for this site. If you reuse Microsoft's content, you may experience a number of known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
+
+### Docs are not available for a specific version
+
+Microsoft's public GitHub repos reflect the latest version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then please check the following sections for suggested workarounds.  
+
+### Broken links
+
+If you deploy Microsoft's content to a website, your tools or your users will report that some links do not work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the Docs.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, you don't have the same redirection.  
+
+We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, the trick is to check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the Docs.microsoft.com site to manage redirection when a file is deprecated. So if you get an error that *"finance-how-to-set-up-sepa-direct-debit.md does not exist"*, then you can see in the `.openpublishing.redirection.json` file that the article has been deprecated and replaced by *finance-collect-payments-with-sepa-direct-debit.md*. So you can replace the link in the file that is looking for *finance-how-to-set-up-sepa-direct-debit.md* to link to *finance-collect-payments-with-sepa-direct-debit.md* instead.  
+
+### ToC.xml for Help Server is different from the TOC.md file
+
+Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, [it will be deprecated in 2021 release wave 1](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-). As a result, it contains links that are broken as described in the previous section.  
+
+### Translated content is not available
+
+Microsoft creates content in English (US) that then gets translated into the Microsoft-provided target languages. The translations are available in the relevant localization repos after a few weeks.  
 
 ## Translate the content
 

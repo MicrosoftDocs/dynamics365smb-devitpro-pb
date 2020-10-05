@@ -2,7 +2,7 @@
 title: "System Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ The following methods are available on the System data type.
 |[Format(Any, Integer, String)](system-format-joker-integer-string-method.md)|Formats a value into a string.|
 |[WindowsLanguage()](system-windowslanguage-method.md)|Gets the current Windows language setting.|
 |[GlobalLanguage([Integer])](system-globallanguage-method.md)|Gets and sets the current global language setting.|
-|[DaTi2Variant(Date, Time)](system-dati2variant-method.md)|Creates a variant that contains an encapsulation of a COM VT\_DATE.|
+|[DaTi2Variant(Date, Time)](system-dati2variant-method.md)|Creates a variant that contains an encapsulation of a COM VT\\_DATE.|
 |[Variant2Date(Variant)](system-variant2date-method.md)|Gets a date from a variant.|
 |[Variant2Time(Variant)](system-variant2time-method.md)|Gets a time from a variant.|
 |[CopyStream(OutStream, InStream [, Integer])](system-copystream-method.md)|Copies the information that is contained in an InStream to an OutStream.|

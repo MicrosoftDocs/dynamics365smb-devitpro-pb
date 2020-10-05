@@ -3,7 +3,7 @@ title: Simple Role Center Example
 description: "Provides AL code for a simple role center"
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

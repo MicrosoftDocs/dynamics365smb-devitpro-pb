@@ -10,14 +10,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 07/09/2020
+ms.date: 10/01/2020
 ---
 
 # Microsoft Responsibilities for Apps on Business Central online
 
 [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is a cloud service for small to medium-sized businesses that is built on and for Microsoft Azure. [!INCLUDE [prodshort](../developer/includes/prodshort.md)] brings together the business management solution, business intelligence, infrastructure, computing, and database services in a single offering that enables organizations to run horizontal or industry-specific apps from Independent Software Vendors (ISVs), without the hassle of managing infrastructure.
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online model distinguishes specific roles and responsibilities for partner-provided vertical solutions, system integrators, resellers, and Microsoft throughout the life cycle of the service. Microsoft maintains the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service by deploying, actively monitoring, and servicing the customers' production tenants that are running on the service. This includes allocating the required system infrastructure to run the service and proactively communicating to customers about the service's health (which is done through the Service Health dashboard in the Office 365 Admin Portal).
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online model distinguishes specific roles and responsibilities for partner-provided vertical solutions, system integrators, resellers, and Microsoft throughout the life cycle of the service. Microsoft maintains the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service by deploying, actively monitoring, and servicing the customers' production tenants that are running on the service. This includes allocating the required system infrastructure to run the service and proactively communicating to customers about the service's health (which is done through the Service Health dashboard in the Microsoft 365 Admin Portal).
 
 Microsoft responsibilities in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service include:
 

@@ -1,7 +1,9 @@
 ---
 title: "SubPageView Property"
+description: Describes the SubPageView property in Business Central.
+author: jswymer
 ms.custom: na
-ms.date: 06/23/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,9 +37,10 @@ You can use this property to sort the information in the table for display in th
 SubPageView = sorting("No.") where (City=filter('Miami'));
 ```
 
-For an example of a page part using the `SubPageView` property, see [Adding a FactBox to a Page](../developer/devenv-adding-a-factbox-to-page.md).
+For an example of a page part using the `SubPageView` property, see [Adding a FactBox to a Page](../devenv-adding-a-factbox-to-page.md).
 
-## See Also  
+## See Also 
+ 
 [Properties](devenv-properties.md)  
 [SubPageLink Property](devenv-subpagelink-property.md)  
  

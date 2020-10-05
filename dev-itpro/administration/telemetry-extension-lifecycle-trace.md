@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/16/2020
+ms.date: 10/01/2020
 ms.author: jswymer
 ---
 # Analyzing Extension Lifecycle Trace Telemetry
@@ -90,7 +90,7 @@ Occurs when an extension compiles successfully on the service. An extension comp
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0020**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
 |extensionCompilationResult |**Compilation succeeded without errors or warnings.**|
 | extensionName|Specifies the name of the extension that was compiled.|
 | extensionId|Specifies the AppID of the extension that was compiled.|
@@ -130,7 +130,7 @@ Occurs when an extension failed to compile on the service. An extension compiles
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0021**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
 |extensionCompilationResult |Specifies details about the error that occurred during compilation.|
 | extensionName|Specifies the name of the extension that failed to compile.|
 | extensionId|Specifies the AppID of the extension that failed to compile.|

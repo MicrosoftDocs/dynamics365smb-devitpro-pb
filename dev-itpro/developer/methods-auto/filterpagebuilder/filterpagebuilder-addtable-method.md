@@ -1,8 +1,8 @@
 ---
-title: "AddTable Method"
+title: "FilterPageBuilder.AddTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AddTable Method
+# FilterPageBuilder.AddTable Method
 Adds filter control for a table to a filter page.
 
 
@@ -38,7 +38,7 @@ The ID of the table object that you want to filter on.
 ## Return Value
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

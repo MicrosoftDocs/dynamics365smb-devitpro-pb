@@ -1,26 +1,41 @@
 ---
-title: "Legal Resources for Microsoft Dynamics NAV"
-author: tsiggaar
+title: "Legal Resources for Business Central online"
+description: Provides links to legal information for Business Central. 
+author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-manager: edupont
 ---
-# Legal Resources for Microsoft Dynamics NAV
+# Legal Landing Page for Microsoft Dynamics 365 Business Central
 
-This page provides links to legal information for the Microsoft Dynamics NAV software specified below.
+This page provides links to legal information for Business Central. 
 
-## Microsoft Dynamics NAV 2017
+## Microsoft Online Service Terms (OST)
 
--	[Software License Terms](https://www.microsoft.com/download/details.aspx?id=54115)  
--	[Third Party Notices](https://www.microsoft.com/download/details.aspx?id=54116)  
--	[Privacy Statement](https://go.microsoft.com/fwlink/?linkid=825751)  
--   [Copyright and Trademarks](../Copyright-and-Trademarks.md)
+- [Online Service Terms(OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products)
+
+## Microsoft AL Language
+
+- [AL Language - Terms of Use](https://go.microsoft.com/fwlink/?linkid=724013)
+
+## Envestnet Yodlee - Bank Feeds
+
+- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=724013)
+
+## Trial Services terms 
+
+- [Trial Services terms](https://go.microsoft.com/fwlink/?linkid=828977)
+
+<!--## Teams integration-->
+
+<!--- links-->
 
 ## See Also
-[Welcome to the Developer and IT-Pro Help for Microsoft Dynamics NAV](../index.md)  
-[Legal Resources for Microsoft Dynamics NAV Universal Apps](legal-universal-app.md)  
+
+[Privacy FAQ](../security/PrivacyFAQ.md)  
+[Legal Resources for Business Central On-Premises](legal-onpremises.md)  
+[Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)  

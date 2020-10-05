@@ -1,7 +1,8 @@
 ---
 title: "IntegrationEvent Attribute"
+description: "The IntegrationEvent attribute in AL for Business Central"
 ms.custom: na
-ms.date: 06/29/2020
+ms.date: 10/01/2020
 ms.reviewer: 
 ms.suite: na
 ms.tgt_pltfrm: na
