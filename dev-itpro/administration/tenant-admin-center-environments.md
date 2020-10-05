@@ -90,12 +90,13 @@ The version list may also have one or more *preview* versions. Preview versions 
 
 When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment won't be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it's deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
 
+<!--
 ## Renaming environments
 
 You can rename environments in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], such as if the customer is dissatisfied with the default name that was assigned to their environment during setup, or when an administrator wants to restore an environment and, accordingly, must rename the original environment to prevent it from being used. The new name will be applied to the environment immediately, so make sure that you plan all the necessary communications about the new name well in advance.  
 
 The renaming of an environment is logged and shown in the [operations log](#opslog). 
-
+-->
 ## Managing Sessions
 
 The **Manage Sessions** page displays information about active sessions on an environment and lets you cancel selected sessions.
@@ -114,6 +115,8 @@ To cancel a session, select it from the list and then select **Cancel selected s
 > This feature is in preview. It might change or be removed in the future updates.
 
 You can change the name of any environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
+
+The renaming of an environment is logged and shown in the [operations log](#opslog).
 
 ### Before you rename an environment
 
