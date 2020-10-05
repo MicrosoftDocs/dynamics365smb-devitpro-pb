@@ -1,9 +1,9 @@
 ---
 title: "Using Designer"
-description: "Description of how Designer works."
+description: "Description of how Designer works and is integrated with the AL development experience."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,9 @@ ms.author: solsen
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br><br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.
+> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.
+
+## Designer capabilities
 
 Here is a quick overview of capabilities in **Designer**: 
 
@@ -38,15 +40,10 @@ Here is a quick overview of capabilities in **Designer**:
 ## Important points to note
 
 - Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users.
-
 - The changes you make in Designer will apply to **all** users.
-
 - You cannot remove specific fields that are bound to a page and a field must belong to an underlying table.
-
 - You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components can't be moved using drag-and-drop and are restricted to the view that they are in.
-
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
-
 - In the client, users can change many of these settings for their workspace only by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
 
 ## Start and stop designing
@@ -55,11 +52,9 @@ In the [!INCLUDE[prodshort](includes/prodshort.md)] client, you start Designer b
 
 After you are done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
-If you choose not to download the code at the end, you can still pull the code using the **F7** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
+If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
 
-
-
-![Designer](media/designer.gif)
+![Work with Designer](media/designer.gif)
 
 ## Drag-and-drop components
 
@@ -89,7 +84,7 @@ Fields on non-list type pages, such as card and document type pages, include Des
 
 ## Setting the Quick Entry on fields
 
-You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press ENTER key to navigate through fields on a page. You use Quick Entry to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill in.
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press the **Enter** key to navigate through fields on a page. You use Quick Entry to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill in.
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
@@ -138,8 +133,8 @@ Actions and actions groups that are already hidden appear dimmed. To change the 
 
 Designer lets you move actions within the action bar. For example, you can:
 
-- Move an action from an action menu to a promoted category
-- Move an action from one promoted category to another
+- Move an action from an action menu to a promoted category.
+- Move an action from one promoted category to another.
 - Move an action within an action group or to a different action group.  
 
 To move an action or action group, drag and drop it to the wanted location, just like with fields and columns.  
@@ -153,12 +148,12 @@ To move an action or action group, drag and drop it to the wanted location, just
 
 The display type icons let you preview the changes you made on desktop, tablet, and phone clients. This way you can make sure that your design will work on the intended display target(s). You can flip to display tablet and phone designs in portrait and landscape orientation. 
 
-## Controlling User Access to Designer
+## Controlling user access to Designer
 
 Accessing Designer is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. If a user is assigned this permission set, then Designer is available for the user in the client. To prohibit a user from using Designer, just remove the user from the **D365 EXTENSION MGT** permission set.
 
 > [!NOTE]  
-> It is important that the **D365 EXTENSION MGT** permission set does not have a company specified; otherwise the user will not be able to access Designer.
+> It is important that the **D365 EXTENSION MGT** permission set does not have a *company* specified; otherwise the user will not be able to access Designer.
 
 ## See Also
 

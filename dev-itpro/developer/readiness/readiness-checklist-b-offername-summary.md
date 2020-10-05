@@ -3,11 +3,11 @@ title: "Offer Name and Offer Summary"
 description: "Guidelines on offer name and offer summary"
 author: v-liober
 ms.custom: na
-ms.date: 06/09/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Offer Name 

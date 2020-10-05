@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Mexico, local functionality
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
 
 ---
@@ -37,6 +37,10 @@ Shows a list of aged remaining balances for each customer for a given period of 
 |Moved, Removed, or Replaced?|Why?| When?|
 |----|----|----|
 |Replaced| The Aged Accounts Receivable report (report 120) provides the same capabilities as the (local) Aged Accounts Receivable (report 10040) and it is available for all countries. | 2019 release wave 2 |
+
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-mx](../includes/fields-obsolete-mx.md)]
 
 ## See Also
 [Upgrading [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](upgrading-to-business-central.md)  

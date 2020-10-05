@@ -3,7 +3,7 @@ title: "Ruleset for the Code Analysis Tool"
 description: "Description of the custom ruleset for the Code Analysis Tool."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -82,7 +82,9 @@ The following example shows a project-specific ruleset that extends a company-wi
 ```
 
 ## See Also
+
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Using the Code Analysis Tools with the ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

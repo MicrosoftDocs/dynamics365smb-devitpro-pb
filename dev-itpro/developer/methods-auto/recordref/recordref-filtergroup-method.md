@@ -1,8 +1,8 @@
 ---
-title: "FilterGroup Method"
+title: "RecordRef.FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterGroup Method
+# RecordRef.FilterGroup Method
 Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.
 
 

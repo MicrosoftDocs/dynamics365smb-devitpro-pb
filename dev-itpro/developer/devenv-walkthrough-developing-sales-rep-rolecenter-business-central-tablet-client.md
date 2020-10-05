@@ -1,12 +1,12 @@
 ---
 title: "Example: Developing a Sales Rep Role Center for the Business Central Tablet Client"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 # Example: Developing a Sales Rep Role Center for the Business Central Tablet Client

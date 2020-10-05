@@ -1,16 +1,16 @@
 ---
-title: "Technical Upgrade Quick Reference"
+title: "Multitenant Technical Upgrade Quick Reference"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Business Central Multitenant Full Upgrade Quick Reference 
+# Business Central Multitenant Full Upgrade Quick Reference
 
 This article provides an overview of the full upgrade process for Business Central in a multitenant deployment. For more detailed steps, see [Upgrading the Data: Multitenant Mode](upgrading-the-data-multitenant.md).
 

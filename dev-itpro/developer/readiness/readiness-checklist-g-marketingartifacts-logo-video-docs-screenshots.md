@@ -3,11 +3,11 @@ title: "Marketing Artifacts"
 description: "Guidelines to marketing artifacts including logos, screenshots, documents and videos"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Marketing Artifacts - Offer Logo

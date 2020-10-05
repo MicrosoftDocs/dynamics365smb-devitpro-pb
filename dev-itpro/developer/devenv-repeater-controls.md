@@ -3,7 +3,7 @@ title: "Working with Repeater Controls"
 description: A repeater is a control used to define a list of records from the source table of a page.
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

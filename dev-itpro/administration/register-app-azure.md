@@ -1,9 +1,10 @@
 ---
 title: "Register on-premises as an app in the Azure Management Portal"
+description: Learn what to do when you want to use Business Central on-premises with online offerings.
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 08/10/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.service: "dynamics365-business-central"
 ms.topic: article
@@ -56,7 +57,7 @@ The first task is to use Azure portal to register an application for Business Ce
     2. Copy the **Application (Client) ID** that was assigned the application and also redirect URL that you specified. You'll use this information later.
 2. Create a client secret for the registered application.
 
-    1. Follow the general guidelines at [Add credentials to your web application](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
+    1. Follow the general guidelines at [Add credentials to your web application](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 
     2. Before you leave the **Certificates & secrets** page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.
 

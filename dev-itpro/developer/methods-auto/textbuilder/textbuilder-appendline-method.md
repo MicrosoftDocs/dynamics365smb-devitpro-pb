@@ -1,8 +1,8 @@
 ---
-title: "AppendLine Method"
+title: "TextBuilder.AppendLine Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppendLine Method
+# TextBuilder.AppendLine Method
 Appends a copy of the specified string followed by the default line terminator to the end of the current TextBuilder object. If this parameter is omitted, only the line terminator will be appended.
 
 
@@ -34,7 +34,7 @@ The string to append.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the copy of the specified string with the default line terminator succeeded, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the copy of the specified string with the default line terminator succeeded, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

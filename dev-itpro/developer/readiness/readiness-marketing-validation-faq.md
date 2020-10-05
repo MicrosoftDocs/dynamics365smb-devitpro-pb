@@ -3,7 +3,7 @@ title: "Marketing Validation FAQ"
 description: "The marketing validation FAQ for Business Central apps"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/15/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"

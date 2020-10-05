@@ -1,7 +1,8 @@
 ---
 title: "Upgrade paths to Business Central"
+description: Provides an overview of the different upgrade paths for Business Central
 ms.custom: na
-ms.date: 04/29/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,6 +53,14 @@ The following sections provide the supported upgrade paths to the different [!IN
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] v14 first.|
 |<ul><li> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] v14)</li><li> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (v15)</li></ul>|Direct|
+
+
+## Upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 Release Wave 2 (v17) 
+
+|  Source version  |   Upgrade path  |
+|------------|--------------|
+|<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] v14 first.|
+|<ul><li> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] v14)</li><li> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (v15)</li><li> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (v16)</li></ul>|Direct|
   
 ## See Also
 

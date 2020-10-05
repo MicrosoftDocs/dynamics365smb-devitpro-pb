@@ -3,11 +3,11 @@ title: "How to create an effective sales landing page"
 description: "Guideline on creating an effective Sales Landing page for your app"
 author: v-liober
 ms.custom: na
-ms.date: 07/08/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Guideline on Creating an Effective Sales Landing Page for Your App
@@ -74,7 +74,7 @@ If you need help formulating a positioning statement, try the value proposition 
 ||You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more.||
 || Your questions should be intriguing and customer-centric.||
 ||In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest.||
-|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Office 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.||
+|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.||
 |Messaging (Address their pains)|	Pain is a strong motivator of action. |	<!-- >./media/image40.jpg to be fixed-->| 
 ||- Identify 1-3 key sources of the client’s most prominent pain early on the page.|<!-- ./media/image41.jpg to be fixed-->|
 ||- Call out the fears that are likely to be holding them back.||
