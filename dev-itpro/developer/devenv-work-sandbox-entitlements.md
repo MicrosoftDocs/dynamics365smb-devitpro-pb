@@ -49,7 +49,7 @@ If you use [https://aka.ms/bcsandbox](https://aka.ms/bcsandbox) to create your [
 
 **Assign Premium Plan** specifies whether or not your admin user should be assigned a Premium plan. **Create Test Users** specifies whether or not you want the setup to include test users. 
 
-### NavContainerHelper
+### BCContainerHelper
 If you are using `New-BCContainer` to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox container, you must make sure that you are using version 0.2.8.3 or later.
 
 Use the switch `assignPremiumPlan` on `New-BCContainer` like this:
