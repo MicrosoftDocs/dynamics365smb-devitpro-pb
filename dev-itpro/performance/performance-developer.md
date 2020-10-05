@@ -303,10 +303,26 @@ You can use the `SessionInformation` data type in unit tests that track the numb
 
 For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
+### Performance Scenario and Regression Testing
+Use the Performance Toolkit to simulate the amount of resources that customers use in realistic scenarios to compare performance between builds of their solutions.
+
+The Performance Toolkit helps answer questions such as, "Does my solution for Business Central support X number of users doing this, that, and the other thing at the same time?" 
+
+### Performance Throughput Analysis
+The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/operational-limits-online). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer if the system is able to process the workload you intend.
+
 ### Performance telemetry
 
-The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment). 
-- [Long Running SQL Queries](../administration/tenant-admin-center-telemetry.md#appinsights).
+The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment): 
+- Database locks
+- Long Running AL operations
+- Long Running SQL Queries
+- Page views
+- Reports
+- Sessions started
+- Web Service Requests
+
+Read more in this section: [How to use telemetry to analyze performance](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/performance/performance-online#telemetry)
 
 ### Troubleshooting
 
