@@ -1,8 +1,9 @@
 ---
-title: "SendTraceTag Method"
+title: "Session.SendTraceTag Method"
+description: Describes the SendTraceTag method in Business Central
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SendTraceTag Method
+# Session.SendTraceTag Method
 Send a trace tag to the telemetry service.
 
 > [!NOTE]
@@ -70,6 +71,9 @@ A telemetry event is given one of the following event IDs, depending on the `DAT
 
 
 <!-- For more information about instrumenting and monitoring telemetry, see [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md) and [Monitoring-Dynamics NAV Server Events](../../Monitoring-Microsoft-Dynamics-NAV-Server-Events.md). -->
+
+> [!NOTE]
+> The SENDTRACETAG method is marked as obsolete in [!INCLUDE[prodshort](../../includes/prodshort.md)] 2020 release wave 2 (v17). You can still use it, but we recommend that you send traces to Application Insights using the LOGMESSAGE method instead. For more information, see [Creating Custom Telemetry Traces for Application Insights Monitoring](../../devenv-instrument-application-for-telemetry-app-insights.md).
 
 ## Example 
 The following code defines simple telemetry events for the five different severity levels. 

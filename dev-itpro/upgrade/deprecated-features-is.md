@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Norway, local functionality
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: bholtorf
 
 ---
@@ -24,7 +24,12 @@ The local tax regulation of conditional discounts feature enables you to issue a
 |----|----|
 |Moved| This feature is no longer specific to Iceland, so we have made it generally available in the standard product. There is a field for number series for credit invoices on the **Sales and Receivables Setup** form, and a field on the **Customer Ledger Entry** table to link the appropriate entries to a credit invoice. |
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-is](../includes/fields-obsolete-is.md)]
+
 ## See Also
+
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  

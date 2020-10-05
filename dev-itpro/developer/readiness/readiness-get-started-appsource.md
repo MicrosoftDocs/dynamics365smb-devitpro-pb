@@ -3,7 +3,7 @@ title: "Getting Started with AppSource"
 description: ""
 author: 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -18,7 +18,7 @@ Microsoft Dynamics 365 Business Central is a business management solution that h
 
 ## Go to Market with Microsoft AppSource
 
-AppSource is Microsoft’s marketplace for your Dynamics 365 Business Central offerings and there are several reasons why going to market with Microsoft AppSource is a great idea. For example, it allows you to promote your brand, expand your reach, accelerate the customer journey and upsell your solutions and it connects you with millions of Office 365 & Dynamics 365 business users. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine. There are no fees for listing your offer in AppSource. Our goal is to connect Microsoft customers with solutions and services that our partner ecosystem offers.
+AppSource is Microsoft’s marketplace for your Dynamics 365 Business Central offerings and there are several reasons why going to market with Microsoft AppSource is a great idea. For example, it allows you to promote your brand, expand your reach, accelerate the customer journey and upsell your solutions and it connects you with millions of Microsoft 365 & Dynamics 365 business users. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine. There are no fees for listing your offer in AppSource. Our goal is to connect Microsoft customers with solutions and services that our partner ecosystem offers.
 
 ## App Submission Process
 <!--

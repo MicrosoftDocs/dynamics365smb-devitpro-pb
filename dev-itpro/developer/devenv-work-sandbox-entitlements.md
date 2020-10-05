@@ -4,7 +4,7 @@ description:
 ms.author: freddyk
 ms.reviewer: solsen
 ms.custom: na
-ms.date: 05/05/2020
+ms.date: 10/01/2020
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -33,7 +33,7 @@ To mimic users with a specific subscription plan assigned, you can set them up w
 |EXTERNALACCOUNTANT<br><br>Dynamics 365 Business Central External Accountant|D365 EXT. ACCOUNTANT<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
 |PREMIUM<br><br>Dynamics 365 Business Central Premium<br>Dynamics 365 Business Central for IWs|D365 BUS PREMIUM<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
 |ESSENTIAL<br><br>Dynamics 365 Business Central Essential|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|INTERNALADMIN<br><br>Internal Administrator (Office 365 Global administrator role)|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|
+|INTERNALADMIN<br><br>Internal Administrator (Microsoft 365 Global administrator role)|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|
 |TEAMMEMBER<br><br>Dynamics 365 for Team Members|D365 TEAM MEMBER<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
 |DEVICE    <br><br>Dynamics 365 Business Central Device|D365 FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br><br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |
 |DELEGATEDADMIN<br><br>Delegated Admin agent - Partner<br>Delegated Helpdesk agent - Partner|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|
@@ -49,7 +49,7 @@ If you use [https://aka.ms/bcsandbox](https://aka.ms/bcsandbox) to create your [
 
 **Assign Premium Plan** specifies whether or not your admin user should be assigned a Premium plan. **Create Test Users** specifies whether or not you want the setup to include test users. 
 
-### NavContainerHelper
+### BCContainerHelper
 If you are using `New-BCContainer` to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox container, you must make sure that you are using version 0.2.8.3 or later.
 
 Use the switch `assignPremiumPlan` on `New-BCContainer` like this:

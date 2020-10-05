@@ -1,7 +1,8 @@
 ---
 title: "Encrypting Data in Dynamics 365 for Business Central"
+description: Learn about encrypting data in Business Central.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,4 +46,5 @@ Each tenant supports having a single encryption key. To use the encryption meth
 
 ## See Also  
 
-[Application Security in Business Central](../security/security-application.md)
+[Application Security in Business Central](../security/security-application.md)  
+[Data Encryption](devenv-encrypting-data.md)  

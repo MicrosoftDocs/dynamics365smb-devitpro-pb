@@ -2,7 +2,7 @@
 title: "Publishing Events"
 description: This article describes how to create an event publisher method to publish business and integration events.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

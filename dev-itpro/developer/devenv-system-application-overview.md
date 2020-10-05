@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 
 # Overview of the System Application
@@ -60,6 +60,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Record Link Management|Provides helper functions for RecordLinks.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Record%20Link%20Management/README.md)|
 |Recurrence Schedule|Calculates when the next event will occur.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Recurrence%20Schedule/README.md)|
 |Satisfaction Survey|Shows a satisfaction survey.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Satisfaction%20Survey/README.md)|
+|Secrets|Contains secret providers for reading secrets from the key vault that is specified by an extension or from other secret providers.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Secrets/README.md)|
 |Server Settings|Exposes methods that get settings from the server configuration file.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Server%20Settings/README.md)|
 |System Initialization|Runs non-business logic on user log-ins.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/System%20Initialization/README.md)|
 |Tenant License State|Retrieves the current state of the tenant license.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Tenant%20License%20State/README.md)|
@@ -136,7 +137,7 @@ UnPublish-BCContainerApp -containerName $containerName `
 4. In Visual Studio Code, run the **AL:Go!** command to create a new AL Project, and then choose **4.0** as the **Target Platform**.
   
   > [!Note]
-  > The alProjectFolder must be in a location that is shared with the container. For example, a folder in C:\ProgramData\NavContainerHelper will work.
+  > The alProjectFolder must be in a location that is shared with the container. For example, a folder in C:\ProgramData\BCContainerHelper will work.
 
 5. When your project is created, follow these steps:  
   
@@ -152,7 +153,7 @@ You now have the latest version of the System Application, and you can download 
 ```
 Publish-BCContainerApp -containerName $containerName ` 
 
--appFile "C:\ProgramData\NavContainerHelper\AL\DemoSolution\Microsoft_System Application_15.0.0.0.app" ` 
+-appFile "C:\ProgramData\BCContainerHelper\AL\DemoSolution\Microsoft_System Application_15.0.0.0.app" ` 
 
 -skipVerification ` 
 

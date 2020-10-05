@@ -1,7 +1,8 @@
 ---
 title: "AL Simple Statements"
+description: "Describes the simple statements in AL for Business Central with examples"
 ms.custom: na
-ms.date: 06/22/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -97,7 +98,7 @@ var
 ## With statements (to be deprecated)
 
 > [!IMPORTANT]  
-> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it will be a warning, which will become an error in a future release. <br>Using `with` statements introduces possible uniqueness collisions when multiple extensions contribute to the same objects because it allows working with members using just simple names instead of qualifying them. To avoid this going forward, we are marking the use of `with`, be it implicit or explicit as warnings. With this release, you can use a quick action to fix these files, as well as suppress obsolete warnings for now. Code that contains `with` statements will, however, need to be refactored before `with` statements are compiled with errors.
+> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it will is a warning, which will become an error in a future release. <br>Using `with` statements introduces possible uniqueness collisions when multiple extensions contribute to the same objects because it allows working with members using just simple names instead of qualifying them. To avoid this going forward, we are marking the use of `with`, be it implicit or explicit as warnings. With this release, you can use a quick action to fix these files, as well as suppress obsolete warnings for now. Code that contains `with` statements will, however, need to be refactored before `with` statements are compiled with errors. For more information, see [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md). For information about using directives in code, see [Directives in AL](directives/devenv-directives-in-al.md) and [Pragma ImplicitWith Directive in AL](directives/devenv-directive-pragma-implicitwith.md).
 
 The following syntax shows a with-do statement.  
 
@@ -184,4 +185,5 @@ end;
 
 [Control Statements](devenv-al-control-statements.md)  
 [Methods](devenv-al-methods.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [AL Essential Methods](devenv-essential-al-methods.md)

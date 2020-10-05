@@ -1,5 +1,5 @@
 ---
-title: Managing Tenant Notifications | Microsoft Docs
+title: Managing Tenant-Specific Notifications
 description: Learn about how a VAR or an internal administrator can manage tenant notifications. 
 author: edupont04
 
@@ -9,12 +9,12 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
 
 ---
 
-# Tenant Notifications
+# Managing Tenant-Specific Notifications
 
 Notifications are sent by email for administrative events that occur on the tenant. For example, notifications are sent when a major update is available for tenant environments, when an environment update has succeeded or failed, or when extensions require changes to be compatible with an upcoming release. When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.
 
