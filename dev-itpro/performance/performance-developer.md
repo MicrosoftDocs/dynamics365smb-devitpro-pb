@@ -313,8 +313,16 @@ The Performance Toolkit doesn't answer questions such as, "How many orders can B
 
 ### Performance telemetry
 
-The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment). 
-- [Long Running SQL Queries](../administration/tenant-admin-center-telemetry.md#appinsights).
+The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment): 
+- Database locks
+- Long Running AL operations
+- Long Running SQL Queries
+- Page views
+- Reports
+- Sessions started
+- Web Service Requests
+
+Read more in this section: [How to use telemetry to analyze performance](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/performance/performance-online#telemetry)
 
 ### Troubleshooting
 
