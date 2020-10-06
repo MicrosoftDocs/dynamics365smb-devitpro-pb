@@ -78,7 +78,49 @@ codeunit 50100 MyCodeunit
         myInt: Integer;
 }
 ```
-  
+
+## Example
+This example illustrates how you can protect your code from commits happening in event subscriber code (typically written by a third party)
+
+```AL
+codeunit 50102 MyPublishingCodeunit
+{
+    // by stating CommitBehavior::Ignore here, any subscribers attempt to commit will be ignored
+    [CommitBehavior(CommitBehavior::Ignore)]
+    [IntegrationEvent(true, false)]
+    procedure OnSomethingChangedEvent()
+    begin
+        // this part of ImportantAtomicOperation is extensible
+    end;
+
+    procedure Validate() result: Boolean
+    begin
+        // validation code 
+    end;
+
+    procedure DoImportantAtomicOperation()
+    begin
+        // do work
+        OnSomethingChangedEvent();
+        // do more work
+
+        if Validate() then Commit() else Error('Validation failed');
+    end;
+
+}
+
+codeunit 50103 MySubscribingCodeunit
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublishingCodeunit, 'OnSomethingChangedEvent', '', true, true)]
+    local procedure SubcribeToOnAddressLineChangedEvent(sender: Codeunit MyPublishingCodeunit)
+    begin
+        // subscriber code
+        Commit();
+    end;
+
+```
+
+
 ## See Also  
 
 [AL Method Reference](../methods-auto/library.md)  
