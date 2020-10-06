@@ -51,7 +51,7 @@ The receiving extension will contain the table and fields that you want to move.
 
 1. In the releasing extension AL project, add a migration.json file that points to the ID of the target extension.
 
-    ```
+    ```json
     { 
     "apprules": [ 
         { 

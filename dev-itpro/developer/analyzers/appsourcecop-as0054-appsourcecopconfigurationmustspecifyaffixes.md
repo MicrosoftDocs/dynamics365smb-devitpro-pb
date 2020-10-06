@@ -24,7 +24,7 @@ The AppSourceCop configuration must specify one of the following properties: 'ma
 ## Remarks
 In the `AppSourceCop.json` configuration file, use the `mandatorySuffix`, `mandatoryPrefix`, or `mandatoryAffixes` to specify which affixes apply for this particular extension. For example:
 
-```
+```json
 {
     "mandatoryAffixes": [ "Foo", "Bar" ]
 }

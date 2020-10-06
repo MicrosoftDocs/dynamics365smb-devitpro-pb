@@ -23,7 +23,7 @@ The AppSourceCop configuration must specify the list of countries targeted by th
 
 ## Remarks
 In the AppSourceCop.json file specify the setting as shown in the example below:
-```
+```json
 "supportedCountries": ["DE", "AT"];
 ```
 

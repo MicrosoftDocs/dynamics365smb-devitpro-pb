@@ -12,35 +12,39 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # MaximumWidth Property
 
 Specifies the maximum size in pixels to which the control add-in can dynamically increase its width.
 
-## Applies to 
+## Applies to
+
 - Control add-in objects 
   
 ## Value Type 
   
--   Integer 
+- Integer 
 
 ## Property Values
+
 The default is the integer’s maximum value. If [HorizontalStretch](devenv-horizontalstretch-property.md) is **true** but MaximumWidth is not set, the control add-in can expand indefinitely.
 
 ## Dependent Property
+
 This setting only applies if [HorizontalStretch](devenv-horizontalstretch-property.md) is set to **true**.
 
 ## Remarks
+
 Use this property when the visual content of the add-in is no longer usable or no longer visually appealing beyond a certain size.
   
-## Code Example 
-```
+## Example 
+
+```AL
 RequestedWidth = 600;
 HorizontalStretch = true;
 MaximumWidth = 800;
 ```
 
-## See Also  
+## See Also
+
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

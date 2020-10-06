@@ -22,11 +22,11 @@ The `#pragma warning` instruction can enable or disable certain warnings. This c
 
 ## Syntax
 
-```
+```AL
 #pragma warning disable warning-list  
 ```
 
-```
+```AL
 #pragma warning restore warning-list  
 ```
 
@@ -44,7 +44,7 @@ When no warning numbers are specified, `disable` disables all warnings and `rest
 
 The following example illustrates how the specific rule `AL0468` is temporarily turned off for a specific field definition.
 
-```
+```AL
 table 50110 MyTable
 {
     fields

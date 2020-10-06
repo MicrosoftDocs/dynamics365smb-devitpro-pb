@@ -17,7 +17,7 @@ With .NET Framework interoperability in [!INCLUDE[prodlong](includes/prodlong.md
 
 You start by declaring in AL the usage of two .NET types from the `System` assembly. The first type is `System.Timers.Timer` and it will be used to generate .NET events. The second one is called `System.Timers.ElapsedEventArgs` and it is required for creating a subscriber to the `Elapsed` event emitted by the `Timer` type.
 
-```
+```AL
 dotnet
 {
     assembly(System)
@@ -32,7 +32,7 @@ You can only subscribe to events that are emitted by global variables of the .NE
 For all the global variables that are marked with this attribute, the compiler will expose the events available on the type as triggers on the variable.
 The syntax for declaring these triggers is `{VariableName}::{EventName}(...ParameterList)`, but IntelliSense will offer suggestions for the event name and autocomplete the parameter list.
 
-```
+```AL
 pageextension 50101 CustomerListExt extends "Customer List"
 {
     var 

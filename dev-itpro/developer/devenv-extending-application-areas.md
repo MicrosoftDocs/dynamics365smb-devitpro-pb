@@ -41,7 +41,7 @@ The following example extends the **Customer List** page. The field **ExampleFie
 
 The **OnOpenPage** trigger will display the message only if **ApplicationArea** is enabled.  
 
-```
+```AL
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     layout
@@ -72,7 +72,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 
 To add an application area, the **Application Area Setup** table must be extended. A new boolean field is added and the name of this field will be used in the attribute that you want to be tagged with this application area. This particular case, in the code below, is an exception, because space is used inside it. Usually, spaces are omitted in the application area attribute. At this point, the extension has an application area but it still needs to be enabled.
 
-```
+```AL
 tableextension 50100 "Application Area Setup" extends "Application Area Setup"
 {
     fields
@@ -88,7 +88,7 @@ tableextension 50100 "Application Area Setup" extends "Application Area Setup"
 
 The codeunit **Install Example Extension** is of the subtype Install and it enables the application area inside the **OnInstallAppPerCompany** trigger. 
 
-```
+```AL
 codeunit 50101 "Install Example Extension"
 {
     Subtype = Install;
@@ -117,7 +117,7 @@ By subscribing to **OnValidateApplicationAreas**, the application area inside an
 
 In case a needed application area is not enabled, the suggested action is to show an error and turn off the extension to avoid unintended behavior. However, if the functionality controlled by this application area is of secondary importance and its loss does not affect the rest of the extension, it is also appropriate to keep the extension enabled.
 
-```
+```AL
 codeunit 50100 "Enable Example Extension"
 {
     // Extend and modify Essential experience tier with "Example App Area"
@@ -172,7 +172,7 @@ Depending on which experience you want to enable **Advanced** for you can subscr
 The experiences are additive so you only need to subscribe to one of the events. For example, to enable **Essentials** and 
 **Premium** experiences you only need to subscribe to `OnGetEssentialExperienceAppAreas`. 
 
-```
+```AL
 codeunit 50102 EnableAdvancedApplicationArea
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetEssentialExperienceAppAreas','', false, false)]

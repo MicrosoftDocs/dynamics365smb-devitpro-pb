@@ -42,7 +42,7 @@ Version 1.0 of the extension defines a page named MyPage. Version 2.0 does not d
 
 If a dependent extension references this page from code, when compiling against version 2.0, this will lead to a compilation error similar to `Page 'MyPage' is missing (AL0185)`.
 
-```
+```AL
 codeunit 50100 SomeCodeunit
 {
     procedure SomeProcedure()
@@ -57,7 +57,7 @@ codeunit 50100 SomeCodeunit
 
 If a dependent extension runs this page from code, when compiling against version 2.0, this will lead to a compilation error similar to `'Page' does not contain a definition for 'MyPage' (AL0132)`.
 
-```
+```AL
 codeunit 50100 SomeCodeunit
 {
     procedure SomeProcedure()
@@ -71,7 +71,7 @@ codeunit 50100 SomeCodeunit
 
 If a dependent extension references this page from an action, when compiling against version 2.0, this will lead to a compilation error similar to `Page 'MyPage' is missing (AL0185)`.
 
-```
+```AL
     action(ActionName)
     {
         RunObject = page MyPage;
@@ -82,7 +82,7 @@ If a dependent extension references this page from an action, when compiling aga
 
 If a dependent extension extends or customizes this page, when compiling against version 2.0, this will lead to a compilation error similar to `The target Page MyPage for the extension object is not found (AL0247)`.
 
-```
+```AL
 pageextension 50100 MyExtension extends MyPage
 {
     // Some additional changes on the page.

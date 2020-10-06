@@ -29,7 +29,7 @@ Use the FieldCaption(Record) method and the TableCaption(Record) method whenever
 > The only exception to this rule is the Open(Dialog) method. In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. 
 
 ## Bad code example
-```
+```AL
 trigger OnValidate()
 begin
     if "Order Date" > "Starting Date" then
@@ -41,7 +41,7 @@ var
 ```
 
 ## Good code example
-```
+```AL
 trigger OnValidate()
 begin
     if "Order Date" > "Starting Date" then

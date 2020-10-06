@@ -25,7 +25,7 @@ An integer
 
 ## Syntax
 
-```
+```AL
 MaximumDatasetSize = 2000;
 ```
 

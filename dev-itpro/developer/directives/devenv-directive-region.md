@@ -21,11 +21,11 @@ The `#region` directive is used to mark a block of code that you can expand or c
 
 ## Syntax
 
-```
+```AL
 #region code
 ```
 
-```
+```AL
 #endregion
 ```
 
@@ -39,7 +39,7 @@ A `#region` block cannot overlap with an `#if` block. However, a `#region` block
 
 In this example the `#region` directive makes a code block that is up for refactoring collapsible.
 
-```
+```AL
 #region Ugly code - let's not look at this
     procedure UglyCode()
     begin

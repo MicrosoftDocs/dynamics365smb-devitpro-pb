@@ -45,7 +45,7 @@ Version 1.0 of the extension defines a list page named MyListPage that contains 
 
 If a dependent extension modifies this view in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The view 'MyView' is not found in the target 'MyListPage' (AL0533)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyListPage
 {
     views
@@ -62,7 +62,7 @@ pageextension 50100 SomePageExtension extends MyListPage
 
 If a dependent extension uses this view as an anchor for a change in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The view 'MyView' is not found in the target 'MyListPage' (AL0533)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyListPage
 {
     views
@@ -81,7 +81,7 @@ pageextension 50100 SomePageExtension extends MyListPage
 
 If a dependent extension is moving this view in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The view 'MyView' is not found in the target 'MyListPage' (AL0533)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyListPage
 {
     views

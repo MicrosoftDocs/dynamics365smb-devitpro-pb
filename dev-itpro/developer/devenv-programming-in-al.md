@@ -41,14 +41,14 @@ You can initiate the execution of your AL code from the following:
 
 Variables in AL are declared using the `var` keyword, and the syntax looks like this:
 
-```
+```AL
 var
         myInt: Integer;
 ```
 
 If you have multiple variables of the same type, these can be declared in one line, such as:
 
-```
+```AL
 var
         myInt, nextInt, thirdInt : Integer;
         isValid, doCheck : Boolean;

@@ -23,7 +23,7 @@ This property is used by the backup/restore system. Under normal circumstances, 
  **True** if the enabled property of secondary keys will be restored during restore; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+```AL
 BackupKey = true;
 ```
 

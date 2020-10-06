@@ -14,7 +14,8 @@ author: jswymer
 Sets which columns (controls) are indented in a list.  
  
 ## Syntax
-```
+
+```AL
 IndentationControls = Field1[, Field2];
 ```
 
@@ -39,7 +40,7 @@ For more information about how to use this property, see [Designing Indented Hie
 
 ## Example
 
-```
+```AL
 repeater(Control1)
 {
     IndentationColumn = Indent;

@@ -76,7 +76,7 @@ By using these methods, you can restore or move all your data from the old V1 ex
 ### Example
 This code illustrates a simple upgrade codeunit for restoring the V1 extension data for extension table `70000000`. 
 
-```
+```AL
 codeunit 70000001 MyExtensionUpgrade
 {
     Subtype=Upgrade;

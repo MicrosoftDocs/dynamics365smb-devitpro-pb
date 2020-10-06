@@ -26,13 +26,13 @@ Typing the shortcut `tview` will create the basic layout for a view when using t
 
 ## Filtering and sorting
 You can filter on the data in a view by using the `Filters` property. The following is an example of the syntax:
-```
+```AL
 Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
 ```
 For more information, see [Filters](properties/devenv-filters-property.md).
 
 You can sort on the data in a view by using the `OrderBy` property. The following is an example of the syntax:
-```
+```AL
 OrderBy = ascending ("Balance (LCY)", Name);
 ```
 For more information, see [OrderBy](properties/devenv-orderby-property.md).
@@ -46,7 +46,7 @@ The following example shows a page customization of the **Customer List** page, 
 > [!IMPORTANT]  
 > The definition of the `view` section must come after any definition of layout and actions, otherwise you will get a compilation error.
 
-```
+```AL
 profile MyProfile
 {
     Description = 'My Role Center';

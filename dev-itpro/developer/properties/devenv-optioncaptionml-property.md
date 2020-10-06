@@ -21,7 +21,6 @@ Sets the strings that are displayed to the user for selecting an option. OptionC
 ## Applies to  
   
 - Page Fields  
-  
 - Variables  
   
 ## Remarks  
@@ -30,7 +29,7 @@ OptionCaptionML is multilanguage enabled so it can contain a list of text in dif
   
 The OptionCaptionML property has the following format.  
   
-```  
+```AL
 OptionCaptionML = <Language ID> = '<optioncaption [,optioncaption]*>'  
 ```  
   
@@ -40,7 +39,7 @@ Although you can use OptionCaptionML to limit the number of options displayed to
   
 The following is an example of an OptionCaptionML value.  
   
-```  
+```AL
 OptionCaptionML = DAN = 'Resultatopgørelse,Balance', DEU = 'GuV,Bilanz', ESP = 'Comercial,Balance';  
 ```  
   

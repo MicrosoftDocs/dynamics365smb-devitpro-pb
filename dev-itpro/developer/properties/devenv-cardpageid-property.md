@@ -23,7 +23,7 @@ Sets the card page that is associated with items in the current list page.
 
 ## Syntax
 
-```
+```AL
 CardPageID = "Customer Card";
 ```
   

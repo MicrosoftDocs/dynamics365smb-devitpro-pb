@@ -28,7 +28,7 @@ At this point, the selected analyzers will be run on your project. Next, add som
 ## Adding your own code to the project
 In the Visual Studio Code Explorer, open the `HelloWorld.al` file and replace the existing code with the following:
 
-```
+```AL
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();

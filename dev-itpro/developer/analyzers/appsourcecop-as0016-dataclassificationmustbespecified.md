@@ -37,7 +37,7 @@ In order to fix the diagnostics reported you must set the [DataClassification](.
 
 ### Example 1 - No data classification specified
 
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -50,7 +50,7 @@ The following example triggers the rule because the field `MyField` does not hav
 
 ### Example 2 - Data classification has to be classified
 
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -66,7 +66,7 @@ The following example triggers the rule because the data classification for fiel
 
 ## Code example not triggering the rule
 
-```
+```AL
 table 50100 MyTable
 {
     fields

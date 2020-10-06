@@ -61,7 +61,7 @@ Advanced table relations are typically prefixed with a conditional statement and
 ```  
 
 For example:
-```
+```AL
 table 50120 TableWithRelation
 {
   fields

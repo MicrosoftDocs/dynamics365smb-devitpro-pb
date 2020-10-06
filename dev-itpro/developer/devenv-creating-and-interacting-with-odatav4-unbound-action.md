@@ -22,7 +22,7 @@ To declare an OData unbound action define a codeunit with a procedure with the d
 
 The following example illustrates a simple codeunit with three procedures that can be exposed as a web service and called as OData unbound actions.
 
-```
+```AL
 codeunit 50100 "MiscOperations"
 {
     procedure Ping(input: Integer): Integer

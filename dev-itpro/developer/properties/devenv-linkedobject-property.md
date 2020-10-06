@@ -12,24 +12,28 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # LinkedObject Property
+
 Use this property to link to SQL Server objects.  
   
 ## Applies to  
- Tables  
 
-## Property Value  
- **True** if a link to SQL Server objects is provided; otherwise, **false**. The default value is **false**.  
+- Tables  
+
+## Property Value
+
+**True** if a link to SQL Server objects is provided; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+
+```AL
 LinkedObject = true;
 ```
   
-## Remarks  
- When you set the LinkedObject property to **true**, the [LinkedInTransaction Property](devenv-linkedintransaction-property.md) becomes available.  
+## Remarks
+
+When you set the LinkedObject property to **true**, the [LinkedInTransaction Property](devenv-linkedintransaction-property.md) becomes available.  
   
-## See Also  
- [Table Properties](devenv-table-properties.md)
+## See Also
+
+[Table Properties](devenv-table-properties.md)

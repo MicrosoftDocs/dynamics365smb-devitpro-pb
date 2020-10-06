@@ -23,7 +23,7 @@ This article explains how to create custom telemetry trace events in AL code tha
 
 To create a custom telemetry event, you use the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code. You can use the SENDTRACETAG method in any object, trigger, or method. The SENDTRACETAG method has the following syntax:
 
-```  
+```AL  
 SENDTRACETAG(Tag, Category, Verbosity, Message[, DataClassification])  
 ```  
 
@@ -39,7 +39,7 @@ You use the parameters to define the information about the telemetry trace event
 
 For example, the following code creates simple telemetry trace events for the five different severity levels. 
 
-```  
+```AL 
 SENDTRACETAG('Cronus-0001', 'Action', VERBOSITY::Critical, 'This is a critical message.', DATACLASSIFICATION::CustomerContent);
 SENDTRACETAG('Cronus-0002', 'Action', VERBOSITY::Error, 'This is an error message.',  DATACLASSIFICATION::EndUserIdentifiableInformation);
 SENDTRACETAG('Cronus-0003', 'Action', VERBOSITY::Warning, 'This is a warning message.', DATACLASSIFICATION::AccountData);

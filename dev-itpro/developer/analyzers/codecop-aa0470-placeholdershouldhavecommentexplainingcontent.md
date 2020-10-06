@@ -26,12 +26,12 @@ Provide an explanation that describes the content of each of the placeholders.
 Documentation of placeholders is required in order to enable translators to properly know the construct of the label to be translated.
 
 ## Bad code example
-```
+```AL
 MissingNodeErr: Label 'Cannot find an XML node that matches %1 or %2.'; 
 ```
 
 ## Good code example
-```
+```AL
 MissingNodeErr: Label 'Cannot find an XML node that matches %1 or %2.', Comment = '%1 = XML node name ; %2 = Parent XML node name';
 ```
 

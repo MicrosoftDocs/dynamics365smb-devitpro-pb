@@ -53,7 +53,7 @@ The following code adds a new table **50100 Reward** for storing the reward leve
 > [!TIP]
 > Type `ttable` followed by the Tab key. This snippet will create a basic layout for a table object.
 
-```
+```AL
 table 50100 Reward
 {
     DataClassification = ToBeClassified;
@@ -116,7 +116,7 @@ The following code adds a new page **50101 Reward Card** for viewing and editing
 > [!TIP]
 > Use the snippet `tpage, Page` to create the basic structure for the page object.
 
-```
+```AL
 page 50101 "Reward Card"
 {
     // The page will be of type "Card" and will render as a card.
@@ -168,7 +168,7 @@ The following code adds the **50102 Reward List** page that enables users to vie
 > [!TIP]
 > Use the snippet `tpage, Page of type list` to create the basic structure for the page object. 
 
-```
+```AL
 page 50102 "Reward List"
 {
     // Specify that this page will be a list page.
@@ -221,7 +221,7 @@ After you have created the objects, update the **startupObjectId** in the `launc
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components.  
 To show how the Designer changes the design of a page, you begin by adding two new fields to the **Reward** table. These fields will be used later on to exemplify the Designer's properties. 
 
-```
+```AL
 field(4;"Minimum Purchase";Decimal)
 {
     MinValue = 0;
@@ -238,7 +238,7 @@ field(5;"Last Modified Date";Date)
 ```
 The **Last Modified Date** field requires constant changes to remain accurate. To keep it updated, triggers will be used. Triggers are predefined methods that are executed when certain actions happen. They are added by default when you use the `ttable` template, but you can also use the `ttriger` snippet to add them manually. Now you can add code to the triggers.  
 
-```
+```AL
     // "OnInsert" trigger executes when a new record is inserted into the table.
     trigger OnInsert();
     begin
@@ -273,7 +273,7 @@ The **Last Modified Date** field requires constant changes to remain accurate. T
 From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions to add the same fields. Both ways lead to the same results, but the Designer speeds up the process. 
 
 
-```
+```AL
 field("Minimum Purchase";"Minimum Purchase")
 {
     ApplicationArea = All;
@@ -310,7 +310,7 @@ The following code creates a table extension for the **Customer** table and adds
 > [!TIP]
 > Use the snippet `ttableext` to create a basic structure for the table extension object.
 
-```
+```AL
 tableextension 50103 "Customer Ext" extends Customer
 {
     fields
@@ -347,7 +347,7 @@ A page extension object can be used to add new functionality to pages that are p
 > [!TIP]
 > Use the shortcuts `tpageext` to create the basic structure for the page extension object.
 
-```
+```AL
 pageextension 50104 "Customer Card Ext" extends "Customer Card"
 {
     layout
@@ -405,14 +405,14 @@ Open the app.json file, and then change the value of the `contextSensitiveHelpUr
 
 Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) for the **Reward Card** and **Reward List** pages:
 
-```
+```AL
     // The target Help topic is hosted on the website that is specified in the app.json file.
     ContextSensitiveHelpPage = 'sales-rewards';
 ```
 
 The following example illustrates the properties for the **Reward List** page after you have specified the context-sensitive Help page.
 
-```
+```AL
 page 50102 "Reward List"
 {
     // Specify that this page will be a list page.
@@ -442,13 +442,13 @@ Even the best designed user interface can still be confusing to some. It can be 
 
 For the purposes of this walkthrough, add the following tooltip to the properties of the **Reward ID** field on all three pages:
 
-```
+```AL
 ToolTip = 'Specifies the level of reward that the customer has at this point.';
 ```
 
 The following example illustrates the tooltip:
 
-```
+```AL
 field("Reward ID";"Reward ID")
 {
 ApplicationArea = All;
@@ -469,7 +469,7 @@ In this example, the following install codeunit initializes the **Reward** table
 > [!TIP]
 > Use the shortcuts `tcodeunit` to create the basic structure for the codeunit.
 
-```
+```AL
 codeunit 50105 RewardsInstallCode
 {
     // Set the codeunit to be an install codeunit. 
@@ -517,7 +517,7 @@ When you upgrade an extension to a newer version, if any modifications to the ex
 > [!IMPORTANT]
 > Remember to increase the `version` number of the extension in the app.json file.
 
-```
+```AL
 codeunit 50106 RewardsUpgradeCode
 {
     // An upgrade codeunit includes AL methods for synchronizing changes to a table definition 

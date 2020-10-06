@@ -37,7 +37,7 @@ In order to fix this diagnostic, you have to replace the dependencies specifed o
 ## Code example triggering the rule
 
 The `app.json` file of the extension:
-```
+```json
 {
   [...]
   "dependencies": [
@@ -61,7 +61,7 @@ The `app.json` file of the extension:
 ## Code example not triggering the rule
 
 The `app.json` file of the extension:
-```
+```json
 {
   [...]
   "application": "17.0.0.0",

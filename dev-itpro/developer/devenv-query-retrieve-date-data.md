@@ -46,7 +46,7 @@ The following table contains data about sales orders for customers. The **Order 
 
 The following query object retrieves data from the sample Sales Header table. The query includes a totals method that counts the total the number of records from the table included in the dataset.
   
-```
+```AL
 query 50100 "Sample Data Query"
 {
     QueryType = Normal;

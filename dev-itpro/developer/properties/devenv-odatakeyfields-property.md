@@ -12,17 +12,17 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ODataKeyFields Property
+
 This property is used to select the fields that will be the key fields under OData usage.
 
 ## Applies to  
   
--   Pages
+- Pages
 
 ## Syntax
-```
+
+```AL
 ODataKeyFields = Id;
 ```
   
@@ -30,5 +30,6 @@ ODataKeyFields = Id;
 
 - SourceTable
 
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

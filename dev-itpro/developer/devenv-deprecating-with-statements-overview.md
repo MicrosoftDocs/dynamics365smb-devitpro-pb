@@ -23,7 +23,7 @@ In [!INCLUDE[prodshort](includes/prodshort.md)] online your code is recompiled w
 
 The following example illustrates code written using the `with` statement; referred to in this context as the explicit `with`.
 
-```
+```AL
 codeunit 50140 MyCodeunit
 {
     procedure DoStuff()
@@ -66,7 +66,7 @@ The first time the search for `IsDirty` finds the name IsDirty, it will not cont
 
 The solution for the *explicit* `with` is to stop using it. Using the `with` statement can make your code vulnerable to upstream changes. The example below illustrates how to rewrite the sample in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement):
 
-``` 
+```AL 
 // Safe version
 codeunit 50140 MyCodeunit
 {
@@ -96,7 +96,7 @@ The implicit with is injected automatically by the compiler in certain situation
 
 When a codeunit has the `TableNo` property set, there is an implicit with around the code inside the `OnRun` trigger. This is indicated with the comments in the code example below.
 
-```
+```AL
 codeunit 50140 MyCodeunit
 {
     TableNo = Customer;
@@ -127,7 +127,7 @@ Similar to the [The explicit with statement](devenv-deprecating-with-statements-
 
 Pages on tables have the same type of implicit with, but around the entire object. Everywhere inside the page object the fields and methods from the source tables are directly available without any prefix.
 
-```
+```AL
 page 50143 ImplicitWith
 {
     SourceTable = Customer;
@@ -180,13 +180,13 @@ The solution for that is to introduce pragmas in AL. A pragma is an instruction 
 
 The following shows the syntax for the implicit with pragma. The pragma must be used before the beginning of the codeunit or page. For more information, see [Pragma Directive](directives/devenv-directive-pragma.md) and [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md).
 
-```
+```AL
 #pragma implicitwith disable|restore
 ```
 
 The fixed example under [Pages](devenv-deprecating-with-statements-overview.md#pages) will then look like this:
 
-```
+```AL
 #pragma implicitwith disable
 page 50143 ImplicitWith
 {
@@ -233,7 +233,7 @@ There are two ways of suppressing warnings to unclutter warnings while working o
 
 Warnings can be suppressed globally in an extension by specifying this in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md). The syntax is:
 
-```
+```json
 "suppressWarnings": [ "AL0606", "AL0604" ]
 ```
 
@@ -241,7 +241,7 @@ Warnings can be suppressed globally in an extension by specifying this in the `a
 
 It is also possible to use `#pragma` to suppress individual warnings for one or more lines of code. For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
 
-```
+```AL
 #pragma warning disable AL0606
     // No AL0606 will be shown for code here.
     with Customer do begin

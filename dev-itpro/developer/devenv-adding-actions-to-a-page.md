@@ -50,7 +50,7 @@ The following example shows how to use different action areas on a **page object
 3. Navigate menu: The `area(Navigation)` action area is used to display the action in the Navigate tab. This action and other actions in this example uses the **RunObject** property to assign a page to the action.
 4. Report menu: The `area(Reporting)` action area is used to display this action in the Report menu, and also a Group control is added as a submenu to this menu. It sets the **Caption** property to make the action group visible in the Reports menu.
 
-```
+```AL
 page 50110 PageName
 {
     PageType = Card;

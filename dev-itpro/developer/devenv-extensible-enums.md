@@ -16,7 +16,7 @@ An enumeration type, also known as an enum in programming, is a keyword used to 
 
 To declare an `enum` in AL you must specify an ID and a name. The enumeration list consists of values and each of the values are declared with an ID and a value. The value ID is the ordinal value on the enumeration list and must be unique. The following example shows the declaration of an enum, which can be extended, and has the four values; **None**, **Bronze**, **Silver**, and **Gold**. 
 
-```
+```AL
 enum 50121 Loyalty
 {
     Extensible = true;
@@ -41,7 +41,7 @@ enum 50121 Loyalty
 
 Enums can be extended in order to add more values to the enumeration list in which case the `Extensible` property must be set to `true`. The syntax for an enum extension, which extends the **Loyalty** enum with the value **Diamond**, is shown below.
 
-```
+```AL
 enumextension 50130 LoyaltyWithDiamonds extends Loyalty
 {
     value(50130; Diamond)
@@ -58,20 +58,20 @@ When referencing a defined enum from code, you use the syntax as illustrated bel
 
 If you want to define an enum as a table field type, use the syntax illustrated below:
  
-```
+```AL
 field(50100; Loyal; enum Loyalty) {}
 ```
 
 Or, as a variable:
 
-```
+```AL
 var
     LoyaltyLevel: enum Loyalty;
 ```
 
 In code, you address a specific enum value like in the following example:
 
-```
+```AL
 codeunit 50140 EnumUsage
 {
     procedure Foo(p: enum Loyalty)
@@ -88,7 +88,7 @@ codeunit 50140 EnumUsage
 ## Example
 The following example illustrates how to define an enum extension of `TypeEnum`, using this in a table extension `TableWithRelationExt` and displaying this as a control on a new page.
 
-```
+```AL
 enumextension 50133 TypeEnumExt extends TypeEnum
 {
     value(10; Resource) { }

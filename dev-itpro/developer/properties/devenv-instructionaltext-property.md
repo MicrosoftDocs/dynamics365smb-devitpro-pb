@@ -11,20 +11,18 @@ ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
 caps.latest.revision: 13
 ---
 
- 
-
 # InstructionalText Property
+
 Sets the text used for instructions in the UI.  
   
 ## Applies to  
   
--   Page object  
-  
--   RequestPage
-
--   PageGroup
+- Page object  
+- RequestPage
+- PageGroup
 
 ## Parameters
+
 *Locked*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 If `true` the InstructionalText is locked and should not be translated.  
@@ -43,7 +41,7 @@ The default is an empty string, which means there will be no instructions. Accor
 
 The following example illustrates how you can apply instructional text in an app:  
 
-```
+```AL
 InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.';
 ```
 

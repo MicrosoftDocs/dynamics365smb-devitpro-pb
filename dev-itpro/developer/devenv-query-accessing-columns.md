@@ -17,7 +17,7 @@ If the query is in the reading state, you can retrieve the value of columns in t
 
 ## Syntax  
 
-```  
+```AL
 ColumnValue := QueryVariable.ColumnName  
 ```  
 
@@ -39,7 +39,7 @@ This example demonstrates how to access a column of a query dataset. When the qu
 
 The following query object links table **18 Customer** and table **37 Sales Line**.
   
-```
+```AL
 query 50123 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
@@ -75,7 +75,7 @@ query 50123 "Customer_Sales_Quantity"
 
 The following codeunit opens the query, reads each row of dataset, and then displays a message that has the content of each row.
 
-```  
+```AL  
 codeunit 50100 QueryColumnAccess
 {
     trigger OnRun()

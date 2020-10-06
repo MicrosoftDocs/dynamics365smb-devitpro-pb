@@ -36,7 +36,7 @@ This example uses a page extension object **50100 MyCustomerExt** to modify the 
 
 In the code that follows, the page extension object modifies the `OnBeforeValidate` trigger of the **Customer Card** page to raise the event `OnAddressLineChanged` which includes the new value of the **Address** field.
 
-```
+```AL
 pageextension 50100 MyCustomerExt extends "Customer Card"
 {
     layout

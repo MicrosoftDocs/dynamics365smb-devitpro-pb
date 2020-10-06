@@ -61,7 +61,7 @@ Our CustomerRewardsTest project will be referencing objects from the CustomerRew
 > [!NOTE]  
 > Another prerequisite is to update the app.json with a dependency to the test toolkit.
 
-```
+```json
  {
   ...  
   "dependencies": [ 
@@ -145,7 +145,7 @@ We can now begin writing the tests for the extension.
 
 The 50102 **MockCustomerRewardsExtMgt** codeunit contains all the code that mocks the process of validating the activation code for Customer Rewards. Because we cannot make requests to external services in the tests, we define a subscriber method **MockOnGetActivationCodeStatusFromServerSubscriber** for handling the **OnGetActivationCodeStatusFromServer** event when it is raised in the **Customer Rewards Ext. Mgt.** codeunit. The **EventSubscriberInstance** property for this codeunit is set to **Manual** so that we can control when the subscriber function is called. We want the subscriber method to be called only during our tests. We also define a Setup procedure that modifies the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table so that the actual **OnGetActivationCodeStatusFromServerSubscriber** will not handle **OnGetActivationCodeStatusFromServer** event when it is raised. 
 
-```
+```AL
 codeunit 50102 MockCustomerRewardsExtMgt 
 
 { 
@@ -291,7 +291,7 @@ Finally, to verify that the customer got the correct reward points and level, we
 
 There are many more areas that we look at in the sample test. See the full codeunit below for the rest of the tests. 
 
-```
+```AL
 codeunit 50103 "Customer Rewards Test" 
 
 { 
@@ -965,7 +965,7 @@ You can now see all the test methods from your test codeunits.
 ## Failing Tests 
 Let us look at what to do if you have a failing test. To create a failing test, we will modify the **SetDefaultCustomerRewardsExtMgtCodeunit** method in codeunit 50100 **Customer Rewards Install Logic** to the following: 
 
-``` 
+```AL
 procedure SetDefaultCustomerRewardsExtMgtCodeunit(); 
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 

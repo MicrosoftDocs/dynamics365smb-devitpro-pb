@@ -35,7 +35,7 @@ To place a card part in a page, you add a `part` control to the hosting page and
 
 The following code sample illustrates how to create a `CardPart` page, `"Customer Sales History"`, and how to integrate it in the FactBox area of the card page `"Customer Card"`. 
 
-```
+```AL
 page 50101 "Customer Sales History"
 {
     PageType = CardPart;

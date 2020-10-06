@@ -23,7 +23,7 @@ The following example shows you how you can declare an OData bound action on a p
 > [!NOTE]   
 > Bound actions cannot be added by extending an existing page that has been exposed as a web service. 
 
-```
+```AL
 page 50110 SalesInvoiceCopy
 {
     ODataKeyFields = "Id";

@@ -26,7 +26,7 @@ Using a .NET type in AL is a two-step process. First, you must declare the type 
 
 You start by declaring an empty **dotnet** package in your extension. See the example snippet below.
 
-```
+```AL
 dotnet
 {
     
@@ -38,7 +38,7 @@ It is recommended to have only one package per extension that contains all the .
 You continue by adding a declaration of the assembly that you will be referencing. For this example, we will use the `mscorlib` assembly that contains the core .NET types. A **dotnet** package can contain an unlimited number of assembly declarations. The name of the assembly must be the one defined in the assembly's manifest. See the following example snippet.
 
 
-```
+```AL
 dotnet
 {    
     assembly(mscorlib)
@@ -50,7 +50,7 @@ dotnet
 
 By default, the compiler only knows about the location of the `mscorlib` assembly. You can reference any compatible assembly by providing the compiler with a path to the assembly's containing folder. This can be achieved by adding the path to assembly's containing folder to the `"al.assemblyProbingPaths"` setting. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings** and specify the `al.assemblyProbingPaths` setting. For example:
 
-```
+```AL
 "al.assemblyProbingPaths": [
         "./.netpackages",
         "C:/Program Files/Assemblies"
@@ -62,7 +62,7 @@ By default, the compiler only knows about the location of the `mscorlib` assembl
 
 You continue by adding a reference to a type from the referenced assembly. In this example, we will use `System.DateTime` from `mscorlib` and we will give it the alias `MyDateTime`. The type must be referenced using its fully-qualified name. The alias is used for referencing the .NET type from code. If an alias is not provided, the compiler will use the .NET type name. A .NET assembly declaration can contain any number of type declarations. See the example below.
 
-```
+```AL
 dotnet
 {
     assembly(mscorlib)
@@ -75,7 +75,7 @@ dotnet
 ## Using a .NET type from AL code
 From this point on, we can reference the .NET type from AL code using its given alias, as shown in the example below.
 
-```
+```AL
 dotnet
 {
     assembly(mscorlib)

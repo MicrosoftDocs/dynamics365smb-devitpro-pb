@@ -27,7 +27,8 @@ Use this property to set the target Help file for context-sensitive Help for pag
 - XMLport objects
 
 ## Syntax
-```
+
+```AL
 ContextSensitiveHelpPage = 'page-extension-topic';
 ```
 

@@ -12,8 +12,6 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # RequestedWidth Property
 
 Specifies the ideal width in pixels of the control add-in.
@@ -24,24 +22,27 @@ Specifies the ideal width in pixels of the control add-in.
   
 ## Value Type 
   
--   Integer 
+- Integer 
 
 ## Property Values
+
 The default value is 100 pixels.
 
 ## Remarks 
+
 This setting is optional. You can use it when the visual content of the add-in is optimal at a specific size. If space is available on the page, the requested width will be applied. If the add-in must compete for space with other content on the page, such as a second add-in, then the RequestedWidth value is ignored and the add-in will shrink or stretch to the minimum or maximum width.
 
 The value of RequestedWidth is ignored if the add-in is the only content on a card page.
 
-## Code Example
-```
+## Example
+
+```AL
 RequestedWidth = 600;
 HorizontalShrink = true;
 MinimumWidth = 100; 
-
 ```
 
-## See Also  
+## See Also
+
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

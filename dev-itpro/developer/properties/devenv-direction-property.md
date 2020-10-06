@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Direction Property
+
 Sets the XMLport to import, export, or import and export data in XML format.  
   
 ## Applies to  
@@ -30,7 +31,7 @@ Sets the XMLport to import, export, or import and export data in XML format.
  
 ## Syntax
 
-```
+```AL
 Direction = Import;
 ```
 

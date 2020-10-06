@@ -20,7 +20,7 @@ Specifies the behavior of `commit` calls inside the method scope of the call. Th
 
 ## Syntax  
 
-```  
+```AL
 [CommitBehavior(CommitBehavior::Ignore)]
 local procedure ProcedureIgnoreCommit()
 begin
@@ -45,7 +45,7 @@ This will throw an exception and stop the execution of further code when a `comm
 ## Example
 The example shown below illustrates how the attribute is used on a local method; it can also be applied on a global method.
 
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     trigger OnRun()

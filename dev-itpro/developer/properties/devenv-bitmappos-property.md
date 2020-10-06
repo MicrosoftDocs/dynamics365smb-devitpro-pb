@@ -37,7 +37,7 @@ Sets the position of a bitmap.
 |**Center**|In the center|  
 
 ## Syntax
-```
+```AL
 BitmapPos = Bottom;
 ```
   

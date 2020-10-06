@@ -10,24 +10,23 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # GridLayout Property
+
 Specifies if the layout is rows or columns.
 
 The controls inside this definition should be laid out as a grid using the caption of the first group as row caption. 
 
 ## Applies to  
   
--   Group controls on pages  
+- Group controls on pages  
   
 ## Property Values  
--   Rows 
-
--   Columns  
+- Rows
+- Columns  
 
 ## Syntax
-```
+
+```AL
 GridLayout = Columns;
 ```
   

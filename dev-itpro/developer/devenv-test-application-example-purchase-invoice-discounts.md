@@ -58,7 +58,7 @@ Tne next task is to create a helper method that generates data for the test. The
 
 ## Code
 
-```
+```AL
 codeunit 50111 "ERM Vendor Discount"
 {
     // Specifies the codeunit to be a test codeunit

@@ -23,7 +23,7 @@ Indicates whether the system displays zeros (0) and No.
  **True** if zeros and No are not displayed; otherwise, **false**. The default is **false**.  
   
 ## Syntax
-```
+```AL
 BlankZero = true;
 ```
 

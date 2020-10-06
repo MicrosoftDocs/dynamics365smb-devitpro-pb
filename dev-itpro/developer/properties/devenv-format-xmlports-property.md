@@ -20,7 +20,7 @@ Determines the import and export format of the XMLPort.
 
 ## Syntax
 
-```
+```AL
 Format = VariableText;
 ```
   
@@ -29,9 +29,7 @@ Format = VariableText;
 This property supports CSV (comma separated values) export files and XML files. The available options are:  
   
 - XML  
-  
 - VariableText  
-  
 - FixedText  
 
 The default value for the **Format** property is **XML**, which allows to work with XML documents. 

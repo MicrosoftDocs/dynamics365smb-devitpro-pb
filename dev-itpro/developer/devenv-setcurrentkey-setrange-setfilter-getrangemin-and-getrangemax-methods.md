@@ -30,7 +30,7 @@ The following methods are used to filter records in a table:
 
  SetCurrentKey has the following syntax.  
 
-```  
+```AL
 [Ok :=] Record.SetCurrentKey(Field1, [Field2],...)  
 ```  
 
@@ -53,13 +53,13 @@ The following methods are used to filter records in a table:
 
  SETRANGE has the following syntax.  
 
-```  
+```AL
 Record.SETRANGE(Field [,From-Value] [,To-Value]);  
 ```  
 
  In the following example, SETRANGE filters the **Customer** table by selecting only those records where the **No.** field has a value between 10000 and 90000.  
 
-```  
+```AL
 Customer.SETRANGE("No.",'10000','90000');  
 ```  
 
@@ -76,7 +76,7 @@ Customer.SETRANGE("No.",'10000','90000');
 
  SETFILTER has the following syntax.  
 
-```  
+```AL
 Record.SETFILTER(Field, String [, Value], ...]);  
 ```  
 
@@ -84,13 +84,13 @@ Record.SETFILTER(Field, String [, Value], ...]);
 
  The following example selects records where the value of No. is larger than 10000 and not equal to 20000.  
 
-```  
+```AL
 Customer.SETFILTER("No.", '>10000 & <> 20000');  
 ```  
 
  If the variables *Value1* and *Value2* have been assigned "10000" and "20000" respectively, then you can use the following statement to create the same filter.  
 
-```  
+```AL 
 Customer.SETFILTER("No.",'>%1&<>%2',Value1, Value2);  
 ```  
 
@@ -99,19 +99,19 @@ Customer.SETFILTER("No.",'>%1&<>%2',Value1, Value2);
 
  GETRANGEMIN has the following syntax.  
 
-```  
+```AL
 Record.GETRANGEMIN(Field);  
 ```  
 
  A run-time error occurs if the filter that is currently applied is not a range. For example, you can set a filter as follows.  
 
-```  
+```AL
 Customer.SETFILTER("No.",'10000|20000|30000');  
 ```  
 
  With this filter, the following code fails because the filter is not a range.  
 
-```  
+```AL
 BottomValue := Customer.GETRANGEMIN("No.");  
 ```  
 
@@ -120,6 +120,6 @@ BottomValue := Customer.GETRANGEMIN("No.");
 
  GETRANGEMAX has the following syntax.  
 
-```  
+```AL
 Value := Record.GETRANGEMAX(Field)  
 ```

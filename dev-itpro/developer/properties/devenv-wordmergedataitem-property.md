@@ -12,22 +12,25 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-
 # WordMergeDataItem Property
+
 Specifies the name of the root-level **DataItem** that is used for generating separate reports for multiple records.
 
 ## Applies to  
   
--   Reports  
+- Reports  
 
 ## WordMergeDataItem Data Type
+
 String
 
 ## Syntax
-```
+
+```AL
  WordMergeDataItem = Header;
 ```
 
 ## See Also
+
 [Report](../devenv-reports.md)  
 [RDL Layout Reports](../devenv-howto-rdl-report-layout.md) 

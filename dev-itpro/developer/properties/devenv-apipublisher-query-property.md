@@ -19,7 +19,7 @@ Sets the publisher of the API endpoint the query is exposed in. The syntax for p
 - Query object 
 
 ## Syntax
-```
+```AL
 APIPublisher = 'contoso';
 ```
 

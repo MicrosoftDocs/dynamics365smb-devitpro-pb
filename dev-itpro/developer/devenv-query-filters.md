@@ -29,7 +29,7 @@ There are different ways to filter on fields of a query. You can set up filters 
 
 To specify filters on a data item, you set the [DataItemTableFilter property](properties/devenv-dataitemtablefilter-property.md) of a data item. **DataItemTableFilter** property has the following syntax:
 
-```
+```AL
 DataItemTableFilter = String;
 ```
 
@@ -45,7 +45,7 @@ A data item filter is static which means that it can't be overwritten by the [Co
 
 The following query object links table `18 Customer` and table `37 Sales Line` to get the number of line items in each sales for customers. The **DataItemTableFilter** property is used to only include rows in which the number of line items is greater than 10.  
 
-```
+```AL
 query 50100 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
@@ -83,7 +83,7 @@ Unlike data item filters, filters on a column or filter row are dynamic and can 
 
 You use filters on a column to filter on fields that are included in the dataset. To apply a filter on a column, you set the [ColumnFilter Property](properties/devenv-ColumnFilter-Property.md) of the column.  You can apply a filter on any column, including aggregated columns that are applied an aggregate method by the [Method Property](properties/devenv-Method-Property.md).  The **ColumnFilter** property has the following syntax:
 
-```
+```AL
 ColumnFilter = String;
 ```
 
@@ -101,7 +101,7 @@ The following query object links the `Customer` table and the `Sales Line` table
 
 - A filter on filter row for the `Location Code` field of the Sales Line table that includes only records where the location code is WHITE. 
 
-```
+```AL
 query 50100 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
@@ -155,14 +155,14 @@ You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [
 
 To call the **SETFILTER** method, you use the following code.  
 
-```  
-Query.SETFILTER(Column, String)  
+```AL 
+Query.SetFilter(Column, String)  
 ```  
 
 To call the **SETRANGE** method, you use the following code.  
 
-```  
-Query.SETRANGE(Column, FromValue, ToValue)  
+```AL  
+Query.SetRange(Column, FromValue, ToValue)  
 ```
  
 where:
@@ -182,7 +182,7 @@ For more information about these methods and important behavior, see [SETFILTER 
 
 Referring to the query example in the previous sections, you can add the following code to the **OnBeforeOpen** trigger of the query object to change the filters on the `Quantity` column and the  `Location\_Code` filter row to include quantities of in the range of 10 to 50 and a location code of RED.
 
-```  
+```AL  
 trigger OnBeforeOpen()
 begin
     currQuery.SETRANGE(Qty, 10, 50);

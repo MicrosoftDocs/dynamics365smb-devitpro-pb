@@ -31,7 +31,7 @@ This table reflects information about individual data items in a report, for exa
 ### Example
 The following example shows how to get Report XML parameters which reflects information about report and report request page. 
 
-```
+```AL
 codeunit 50103 "Report Xml Parameters Builder"
 {
     procedure "Get Report Page Structure As Xml"("Report ID": Integer): XmlDocument

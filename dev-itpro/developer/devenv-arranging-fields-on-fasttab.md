@@ -30,7 +30,7 @@ Pages automatically adjust to the available space on the screen. If horizontal s
 
 Creating a FastTab is easy. A FastTab is a group control directly within the `content` area of a card, document, or task page. The following example shows how you can create a FastTab containing a pair of fields.
 
-```
+```AL
 page 50101 SimpleCustomerCard
 {
     PageType = Card;

@@ -20,7 +20,7 @@ AL methods on test codeunits. A test codeunit is a codeunit that has the [SubTyp
 
 ## Syntax  
   
-```  
+```AL
 [StrMenuHandler]
 procedure StrMenuHandler(Option: Text[1024]; var Choice: Integer; Instruction: Text[1024])
 ```    

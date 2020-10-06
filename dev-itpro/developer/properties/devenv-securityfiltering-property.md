@@ -12,18 +12,15 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # SecurityFiltering Property
+
 Specifies how security filters are applied to the record.  
   
 ## Applies to  
   
--   Record variables  
-  
--   Records on pages, reports, and XMLports  
-  
--   Query variables  
+- Record variables  
+- Records on pages, reports, and XMLports  
+- Query variables  
   
 ## Property Value  
   
@@ -35,16 +32,18 @@ Specifies how security filters are applied to the record.
 |Validated|All security filters are applied to this instance of the record and if any code tries to access a record that is outside the range of the security filters, then an error occurs.|  
   
 ## Remarks  
- To specify the **SecurityFiltering** property in AL code, use the following syntax.  
+
+To specify the **SecurityFiltering** property in AL code, use the following syntax.  
   
-```  
+```AL
 RecordVar.SecurityFiltering := SecurityFilter::<Disallowed|Filtered|Ignored|Validated>  
 ```  
   
- The value of the **SecurityFiltering** property on a record takes effect immediately and remains in effect through the lifetime of the variable, or until you change the value. 
+The value of the **SecurityFiltering** property on a record takes effect immediately and remains in effect through the lifetime of the variable, or until you change the value. 
 
- For more information, see [Security Filter Modes](../../security/Security-Filters.md). 
+For more information, see [Security Filter Modes](../../security/Security-Filters.md). 
   
 ## See Also  
+
 [Record-Level Security](../../security/data-security.md)   
 [Using Security Filters](../../security/security-filters.md)   

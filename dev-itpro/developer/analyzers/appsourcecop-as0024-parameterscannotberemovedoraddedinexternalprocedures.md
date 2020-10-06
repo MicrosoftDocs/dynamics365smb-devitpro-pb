@@ -30,7 +30,7 @@ It is not allowed to remove or add new parameters in public procedures as this w
 ### Example 1 - Removing parameters
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Integer)
@@ -40,7 +40,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure()
@@ -52,7 +52,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the parameter i of the procedure has been removed. If a dependent extension calls this procedure, this will lead to a compilation error similar to `No overload for method 'MyProcedure' takes 1 argument. (AL0126)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     procedure RaiseEvent()
@@ -65,7 +65,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 2 - Adding new parameters
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Integer)
@@ -75,7 +75,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Integer; j: Integer)
@@ -87,7 +87,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, a new parameter j has been added to the procedure. If a dependent extension calls this procedure, this will lead to a compilation error similar to `There is no argument given that corresponds to the required formal parameter 'j' of 'MyProcedure(Integer, Integer)' (AL0135)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     procedure RaiseEvent()
@@ -105,7 +105,7 @@ The behavior of the obsoleted procedure should be preserved in order to not brea
 ### Example - Adding a parameter to a public procedure
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Integer)
@@ -115,7 +115,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [Obsolete('Use MyProcedure(i: Integer;j: Integer) instead. This method will be removed in version 3.0.', '2.0')]
@@ -132,7 +132,7 @@ codeunit 50100 MyCodeunit
 Once dependent extensions have been updated to use the new procedure, the obsolete procedure can be removed.
 
 Version 3.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {  
     procedure MyProcedure(i: Integer; j: Integer)

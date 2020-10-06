@@ -33,7 +33,7 @@ By placing the fields in a Fixed control throughout a group control, you can def
 ### Example
 The following AL code uses **Fixed** control to display four fields on a page inside the group called Fixed Layout.
 
-```
+```AL
 page 50114 "Fixed Control Example"
 {    
     layout

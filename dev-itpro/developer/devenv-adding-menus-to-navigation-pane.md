@@ -32,7 +32,7 @@ The top-level navigation should provide access to relevant entity lists for the 
 
 The example below adds the root menu item called `My Customers` to the navigation menu of the **Sales Order Processor** Role Center. The `My Customers` menu item  contains two actions, the `Customer Bank Account List` and `Customer Ledger Entries` actions, which open corresponding page objects. The `My Customers` menu item also includes a group that contains two other actions, which open sales-related documents.
 
-```
+```AL
 pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
 {
 
@@ -84,7 +84,7 @@ You define the navigation bar by using an `area(Embedding)` control in the page 
 ### Example
 The following code adds a new link to the navigation bar by defining this area with an `area(Embedding)` control in the page code. The object targeted in this case is the `Sales Cycles` page and it will appear as the last one. 
 
-```
+```AL
 ...
 addlast(Embedding)
 {
@@ -106,7 +106,7 @@ The first action area that appears at the top of the Role Center page is `area(C
 
 ### Example
 
-```
+```AL
 ...
 addlast(Creation)
 {
@@ -123,7 +123,7 @@ The example below shows how you can use the group control to organize similar ac
 
 ### Example
 
-```
+```AL
 ...
 addlast(Processing)
 {
@@ -148,7 +148,7 @@ The actions in the `area(Reporting)` control will appear last in the action area
 
 ### Example
 
-```
+```AL
 ...
 addlast(Reporting)
 {

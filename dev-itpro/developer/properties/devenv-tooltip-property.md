@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # ToolTip Property
+
 Sets whether tooltips are provided for the given control, such as a field or action. The tooltip value is taken from the [ToolTipML Property](devenv-tooltipml-property.md) if this property is set.
 
 In the client, tooltips appear when you point to the caption of the control.
@@ -18,14 +19,12 @@ In the client, tooltips appear when you point to the caption of the control.
 ## Applies to  
 
 - Actions in the ribbon  
-
 - Fields on pages
 
   > [!NOTE]  
   >  List page field tooltips are only shown in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] and [!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)].
 
 - Factboxes  
-
 - Activity buttons  
 
   > [!NOTE]  
@@ -37,6 +36,7 @@ In the client, tooltips appear when you point to the caption of the control.
   >  ActionContainers tooltips are only shown in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] for the subtype **Embedding**.  
 
 ## Parameters
+
 *Locked*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 If `true` the ToolTip is locked and should not be translated.  
@@ -54,7 +54,7 @@ The default is an empty string, which means there will be no tooltip. According 
 
 The following example illustrates how you can apply tooltips in an app:  
 
-```
+```AL
 field("Reward ID";"Reward ID")
 {
     ApplicationArea = All;
@@ -62,7 +62,8 @@ field("Reward ID";"Reward ID")
 }
 ```
 
-## See Also  
+## See Also
+
 [User Assistance Model](../../user-assistance.md)  
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  
 [Configuring the Help Experience](../../deployment/configure-help.md)  

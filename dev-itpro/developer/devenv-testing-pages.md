@@ -63,7 +63,7 @@ These are instances of the [TestPart Data Type](methods-auto/testpart/testpart-d
 
 For example, to compare the value of the `No.` field on a page to the value of the `No`. field on a FactBox on the page, you can write the following code.  
 
-```  
+```AL
 if CustomerCard."No.".Value <> CustomerCard."Sales Hist. Sell-to FactBox"."No.".Value then  
   error("Page part data is not updated.");  
   
@@ -72,7 +72,7 @@ if CustomerCard."No.".Value <> CustomerCard."Sales Hist. Sell-to FactBox"."No.".
 ## Filtering Data on Test Pages  
  To filter the data that can be accessed on a test page, you use AL methods correspoding to the [TestFilter Data Type](methods-auto/testpart/testpart-data-type.md) instances. For example, to filter the customers on the `Customer List` page based on a range of values in the `No.` field, you can write the following code.  
   
-```  
+```AL
 CustomerList.Filter.SETFILTER("No.", '20000..30000');  
 ```  
   

@@ -12,16 +12,17 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # PaperSourceDefaultPage Property
+
 Specifies the default paper source to use when printing the report.  
   
 ## Applies to  
- Reports  
+
+- Reports  
 
 ## Syntax
-```
+
+```AL
 PaperSourceDefaultPage = AutomaticFeed;
 ```
 
@@ -49,6 +50,7 @@ PaperSourceDefaultPage = AutomaticFeed;
  [How to: Add GetPaperTrayForReport Procedure in Codeunit 1](../devenv-How-to--Add-GetPaperTrayForReport-Procedure-in-Codeunit-1.md) -->
 
 ## See Also
- [Report Properties](devenv-report-properties.md)   
- [Report Object](../devenv-report-object.md)   
- [Properties](devenv-properties.md)
+
+[Report Properties](devenv-report-properties.md)   
+[Report Object](../devenv-report-object.md)   
+[Properties](devenv-properties.md)

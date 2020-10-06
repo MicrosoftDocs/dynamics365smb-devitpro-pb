@@ -22,7 +22,7 @@ Sets the enum to be assignable to an enum of any type.
 
 ## Syntax
 
-```
+```AL
 AssignmentCompatibility = true;
 ```
 

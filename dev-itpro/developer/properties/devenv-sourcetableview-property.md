@@ -13,15 +13,16 @@ author: SusanneWindfeldPedersen
 ---
 
 # SourceTableView Property
+
 Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.  
   
 ## Applies to  
   
--   Pages  
+- Pages  
 
 ## Example
 
-```
+```AL
 page 50101 MyCustomers
 {
     PageType = List;
@@ -50,4 +51,5 @@ For more information on how you can scan, find, and limit records in a list, see
 When you combine a descending sort order on SourceTableView with overriding the OnFindRecord, you may experience that the page displays the last record instead of the first when the page opens. You can resolve this condition by adding `Rec.FindFirst` in the OnOpenPage trigger, or using `Find(-)` in the OnFindRecord trigger.
   
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)

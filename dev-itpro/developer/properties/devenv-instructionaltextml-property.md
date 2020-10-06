@@ -13,21 +13,25 @@ author: SusanneWindfeldPedersen
 ---
 
 # InstructionalTextML Property
+
 Sets the multilanguage value of the InstructionalText of the object. Use this property as a label.  
 
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 ## Applies to  
+
 Pages including:  
   
 - Page properties  
 - Group controls  
 
 ## Syntax
-```
+
+```AL
 InstructionalTextML = ENU='Add an entity from your list of contacts.'; ESP='Añada una entidad de su lista de contactos.'; FRA='Ajoutez une entité de votre liste de contacts'.
 ```
 
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)

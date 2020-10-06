@@ -12,6 +12,7 @@ ms.author: solsen
 ---
 
 # RoleCenter Property
+
 Specifies the Role Center Page associated with the profile.
   
 ## Applies to  
@@ -19,10 +20,12 @@ Specifies the Role Center Page associated with the profile.
 - Profile object  
 
 ## Syntax
-```
+
+```AL
 RoleCenter = MyRoleCenter;
 ```
 
-## See Also  
+## See Also
+
 [Profile Object](../devenv-profile-object.md)  
 [Designing Role Centers](../devenv-designing-role-centers.md)

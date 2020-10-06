@@ -19,7 +19,7 @@ Sets the version(s) of the API endpoint the page is exposed in. The syntax for p
 - Page object 
 
 ## Syntax
-```
+```AL
 APIVersion = 'beta', 'v1.0';
 ```
 

@@ -35,7 +35,7 @@ Promoted actions can be grouped. You can add promoted actions by different group
 You assign a promoted action to a category by setting the **PromotedCategory** property of the action. By default, these category names correspond to the captions that are displayed for the category on the page in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will typically want to change the captions, especially the Category4 through Category10 captions. See the table below for the default **PromotedCategory** values. To change the default captions, set the **PromotedActionCategories** property. 
 You type the values of the **PromotedActionCategories** where each caption is separated with a comma as shown below: 
 
-```
+```AL
 PromotedActionCategories = 'New_caption,Process_caption,report_caption,category4_caption,category5_caption,category6_caption,category7_caption,category8_caption,category9_caption,category10_caption';
 ```
 
@@ -70,7 +70,7 @@ The example shows how to promote actions on a Customers page using different pro
 3. Each promoted action in the example is assigned to a unique icon. Additionally, to display bigger icons, the **Sales Quote** and **Contact** actions are set with the `PromotedIsBig` property. 
 4. The **Sales Quote** and **Send Approval Request** actions are set to appear only on the Home tab.
 
-```
+```AL
 page 50103 Customers
 {
     PageType = Card;

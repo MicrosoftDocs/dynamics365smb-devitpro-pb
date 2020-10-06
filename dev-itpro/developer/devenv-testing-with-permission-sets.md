@@ -52,7 +52,7 @@ For applying permission sets, the code uses a *DotNet* data type variable for **
 
 The OnBeforeTestRun trigger will apply one of three permission sets, which have the Role IDs **O365 BASIC**, **O365 BUS FULL ACCESS**, and **SUPER**.
 
-```
+```AL
 codeunit 50101 MyTestPermissionsTestRunner
 {
     Subtype = TestRunner;

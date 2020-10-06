@@ -23,7 +23,7 @@ ms.service: "dynamics365-business-central"
 + Calling a resource API (GET) will return a list of all instances of the resource type
 + Each resource is uniquely identified through an ID, see the following example:  
 
-    ```
+    ```json
     {
         "@odata.context": "<endpoint>/$metadata#companies",
         "value": [

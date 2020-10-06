@@ -79,7 +79,7 @@ The first thing that you must do is to create a table that contains fields that 
 
 #### Example
 
-```
+```AL
 table 50100 SalesInvoiceCueTable
 {
     DataClassification = ToBeClassified;
@@ -122,7 +122,7 @@ After you have a table for holding the Cue data, you create a page that you asso
 
     You must initialize the Cue fields on the page. To do this, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers/devenv-onopenpage-trigger.md).     
 
-    ```
+    ```AL
           RESET;
         if not get then begin
             INIT;
@@ -131,7 +131,7 @@ After you have a table for holding the Cue data, you create a page that you asso
     ```    
 
 #### Example 
-```
+```AL
 page 50105 SalesInvoiceCuePage
 {
     PageType = CardPart;
@@ -186,7 +186,7 @@ Similar to Cues, Actions tile can be grouped together, under a common caption, b
 #### Example
 The following code adds an Action tile that opens **Sales Invoice** page.
 
-```
+```AL
 cuegroup(SalesActionontainer)
 {
     Caption='New Sales Invoice';

@@ -23,7 +23,7 @@ In the `app.json` file, two properties control the help URL and the supported lo
 The `helpBaseUrl` property represents the URL that will be used to overwrite the default Microsoft help link, which is `(/{0}/dynamics365/business-central)`. This URL must contain a placeholder `{0}` for the user's locale culture. 
 The `supportedLocales` property is used to specify the list of locales that are supported by the URL specified in the `helpBaseUrl` property and used in the translation app. If the user's current locale is among the `supportedLocales` of the extension, the user will be re-directed to the help base URL that you specified. The settings in the `app.json` file look like this:
 
-```
+```json
 "helpBaseUrl": "https://www.mydocumentationwebsite.com/{0}/business-central/",
 "supportedLocales": ["da-DK"]
 ```
