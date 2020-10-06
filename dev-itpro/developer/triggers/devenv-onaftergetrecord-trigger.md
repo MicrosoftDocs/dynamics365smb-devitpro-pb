@@ -1,5 +1,6 @@
 ---
 title: "OnAfterGetRecord Trigger"
+description: "OnAfterGetRecord trigger in AL for Business Central."
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -9,7 +10,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
 
 # OnAfterGetRecord Trigger
 
@@ -28,7 +28,6 @@ begin
 end;
 ``` 
   
- 
 ## Remarks  
 
 Use this trigger to calculate variables that depend on the current record.  
