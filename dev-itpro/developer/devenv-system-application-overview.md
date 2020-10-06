@@ -137,7 +137,7 @@ UnPublish-BCContainerApp -containerName $containerName `
 4. In Visual Studio Code, run the **AL:Go!** command to create a new AL Project, and then choose **4.0** as the **Target Platform**.
   
   > [!Note]
-  > The alProjectFolder must be in a location that is shared with the container. For example, a folder in C:\ProgramData\NavContainerHelper will work.
+  > The alProjectFolder must be in a location that is shared with the container. For example, a folder in C:\ProgramData\BCContainerHelper will work.
 
 5. When your project is created, follow these steps:  
   
@@ -153,7 +153,7 @@ You now have the latest version of the System Application, and you can download 
 ```
 Publish-BCContainerApp -containerName $containerName ` 
 
--appFile "C:\ProgramData\NavContainerHelper\AL\DemoSolution\Microsoft_System Application_15.0.0.0.app" ` 
+-appFile "C:\ProgramData\BCContainerHelper\AL\DemoSolution\Microsoft_System Application_15.0.0.0.app" ` 
 
 -skipVerification ` 
 

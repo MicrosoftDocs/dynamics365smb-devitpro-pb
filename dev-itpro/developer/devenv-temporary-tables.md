@@ -60,7 +60,7 @@ table 50100 MyTable
 
 This implementation has the same effect as using a temporary record variable or setting the SourceTableTemporary property on a page. But the advantage is that the table schema isn't synchronized with the database. So it does not have restrictions on breaking schema changes, like removing a field, changing its data type or length.
 
-It will also improve the performance of BACPAC generation using the sqlpackage command-line tool, compared to temporary tables based on temporary record variables and pages. For more information, see [Performance of BACPAC generation](/performance/performance-onprem.md#performance-of-bacpac-generation).
+It will also improve the performance of BACPAC generation using the sqlpackage command-line tool, compared to temporary tables based on temporary record variables and pages. For more information, see [Performance of BACPAC generation](../performance/performance-onprem.md#performance-of-bacpac-generation).
 
 #### Changing the table type
 

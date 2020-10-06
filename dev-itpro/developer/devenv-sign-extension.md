@@ -44,7 +44,7 @@ SignTool sign /f C:\Certificates\MyCert.pfx /p MyPassword /t http://timestamp.ve
 > It is recommended to use a time stamp when signing the APP package file. A time stamp allows the signature to be verifiable even after the certificate used for the signature has expired. For more information, see [Time Stamping Authenticode Signatures](/windows/desktop/SecCrypto/time-stamping-authenticode-signatures). Depending on the certification authority, you may need to acquire a specific certificate in order to time stamp, an [Extended Validation](https://www.digicert.com/code-signing/ev-code-signing/) certificate from DigiCert for example.
 
 > [!NOTE]  
-> If you are using the NavContainerHelper PowerShell module to run [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker, you can use the function `Sign-BCContainerApp` to perform all the steps above.
+> If you are using the BCContainerHelper PowerShell module to run [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker, you can use the function `Sign-BCContainerApp` to perform all the steps above.
 
 ## Self-signed certificate
 For testing purposes and on-premise deployments, it is acceptable to create your own self-signed certificate using the [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps) cmdlet in PowerShell on Windows 10 or [MakeCert](/windows/desktop/SecCrypto/makecert).  

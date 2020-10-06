@@ -8,7 +8,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2020
+ms.date: 10/05/2020
 ms.author: edupont
 
 ---
@@ -69,7 +69,7 @@ In this section, we provide an overview of the most useful tools for troubleshoo
 - Environment telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]  
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can view telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack. For more information, see [Environment telemetry](tenant-admin-center-telemetry.md).  
-- Create sandbox environments  
+- Troubleshoot in a sandbox environment  
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create sandbox environments for safe debugging and troubleshooting. For more information, see [Sandbox environments](environment-types.md#sandbox-environments).  
 - Use the Event Recorder  
@@ -77,7 +77,7 @@ In this section, we provide an overview of the most useful tools for troubleshoo
     Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For more information, see [Discoverability of Events](../developer/devenv-events-discoverability.md).  
 - Check the data in the database  
 
-    You can view table objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions. For more information, see [Viewing Table Data](../developer/devenv-view-table-data.md).  
+    You can view table objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions. From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can also launch a list of all tables, sorted by storage size. For more information, see [Viewing Table Data](../developer/devenv-view-table-data.md).  
 - Analyze long running operations in Application Insights  
 
     Set up Application Insights so that any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. For more information, see [Analyzing long running operations in Application Insights](telemetry-long-running-sql-query-trace.md).  

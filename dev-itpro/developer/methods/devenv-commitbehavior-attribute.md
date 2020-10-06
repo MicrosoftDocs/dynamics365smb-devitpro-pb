@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 
 # CommitBehavior Attribute
 
+[!INCLUDE[2020_releasewave2.md](../../includes/2020_releasewave2.md)]
+
 Specifies the behavior of `commit` calls inside the method scope of the call. This attribute can be used on both local and global methods.
 
 ## Syntax  

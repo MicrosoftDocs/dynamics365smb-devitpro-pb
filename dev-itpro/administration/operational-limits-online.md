@@ -65,7 +65,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously on the server instance.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|10|
+|  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously for an environment.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|3|
 |  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
 |  Page background task max timeout | The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
 |ChildSessionsMaxConcurrency|The maximum number of child sessions that can run concurrently per parent session. When the value is exceeded, additional child sessions will be queued and run when a slot becomes available as other child sessions are finished.|5|
@@ -98,7 +98,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
 |Max request queue size|The maximum number of pending OData V4 requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
-|Operation timeout|The maximum amount of time that the service gives a single SOAP request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled. For example, copying a company will fail if it takes loner than 8 minutes. To avoid this timeout, customers should schedule a job for long running operations instead.|8 minutes|
+|Operation timeout|The maximum amount of time that the service gives a single OData request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled. |8 minutes|
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|

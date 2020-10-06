@@ -1,7 +1,7 @@
 ---
 title: "OData Web Services"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/05/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,10 +59,13 @@ Lambda operators are not supported by [!INCLUDE[prodshort](../developer/includes
 
 If you use Web services that are based on UI pages, you must expect the same behavior from the Web service as from the UI page. If you want to have full control and separation of concern it is recommended to use the Business Central APIs instead.
 
-### Deep insert
+### Deep patching
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports deep insert, but not deep patching. Multiple requests will need to be issued when patching nested entities. 
 
+### Batch operations
+
+For SaaS, batch operations cannot be issued in JSON format. For more information, see [Batch Processing (OData Version 3.0)](https://www.odata.org/documentation/odata-version-3-0/batch-processing/).
 
 ## See Also  
 
