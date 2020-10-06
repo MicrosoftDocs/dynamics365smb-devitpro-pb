@@ -44,7 +44,7 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `true`:
+With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `Temporary`:
 
 ```
 table 50100 MyTable
