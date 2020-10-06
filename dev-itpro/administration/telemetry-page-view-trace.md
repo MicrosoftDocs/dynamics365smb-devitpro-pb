@@ -37,7 +37,7 @@ The pageViews table is a built-in table in Application Insights. Here are some o
 |duration| Number of milliseconds it took the application to handle the page view.|
 |url|URL of the page view.|
 
-All fields are documented here: [Application Insights PageViews Schema](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/pageviews)
+All fields are documented here: [Application Insights PageViews Schema](/azure/azure-monitor/reference/tables/pageviews)
 
 ### Custom dimensions
 
