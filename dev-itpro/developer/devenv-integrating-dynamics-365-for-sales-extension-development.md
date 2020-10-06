@@ -2,7 +2,7 @@
 title: "Enabling Common Data Service Tables for Extension Development"
 description: "This topic explains how to enable Common Data Service tables for the extension development process."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

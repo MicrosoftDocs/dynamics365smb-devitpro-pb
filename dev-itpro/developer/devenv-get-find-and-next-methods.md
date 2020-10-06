@@ -3,7 +3,7 @@ title: "Get, Find, and Next Methods"
 description: Learn about the Get, Find, and Next methods in Business Central for searching records
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,8 +20,11 @@ The following methods are used to search for records:
 - `Find`  
 - `Next`  
   
-These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.  
-  
+These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.
+
+> [!TIP]
+> When using these methods, consider using the partial records methods to improve performance, especially when looping through several records or when table extensions are defined on the table. For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
+
 ## Get method  
 
 The [Get Method (Record)](methods-auto/record/record-get-method.md) retrieves one record based on values of the primary key fields.  

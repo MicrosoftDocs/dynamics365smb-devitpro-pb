@@ -3,7 +3,7 @@ title: "Working with multiple AL project folders within one workspace"
 description: "Handling solutions in the AL language that contain multiple projects."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

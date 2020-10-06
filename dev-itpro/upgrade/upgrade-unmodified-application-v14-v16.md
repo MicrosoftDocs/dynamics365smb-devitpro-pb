@@ -2,7 +2,7 @@
 title: "Upgrading Unmodified C/AL Application to Version 16"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 16 base application
 ms.custom: na
-ms.date: 04/29/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

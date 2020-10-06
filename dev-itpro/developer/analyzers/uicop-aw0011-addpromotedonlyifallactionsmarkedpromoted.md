@@ -3,7 +3,7 @@ title: Add PromotedOnly to some or all promoted actions to avoid identical actio
 description: UICop Rule AW0011
 ms.author: solsen
 ms.custom: na
-ms.date: 08/25/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

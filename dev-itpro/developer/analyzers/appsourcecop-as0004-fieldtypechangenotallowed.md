@@ -3,7 +3,7 @@ title: "Fields must not change type, since dependent extensions may break"
 description: Explains AppSourceCop Rule AS0004
 ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

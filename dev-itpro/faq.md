@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/21/2020
+ms.date: 10/01/2020
 ---
 
 # FAQ for Dynamics 365 Business Central
@@ -78,6 +78,10 @@ For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a l
 
 For more information, see [Managing capacity](administration/tenant-admin-center-capacity.md).  
 
+## Why doesn't the Outlook add-in work for my users?
+
+The Outlook add-in is designed to function as a business inbox in Outlook, based on the standard [!INCLUDE [prodshort](developer/includes/prodshort.md)] online. If you are using a different type of deployment, such as a solution that is part of the Embed App program, then you must set up an Azure Key Vault and specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. For more information, see [Using Key Vault Secrets in [!INCLUDE [prodshort](developer/includes/prodshort.md)] Extensions](developer/devenv-app-key-vault.md).  
+
 ## Is the Windows client supported?
 
 The first releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
@@ -108,6 +112,10 @@ When you exchange data through the API, you might have to safe list the IP addre
   Outbound requests come from [!INCLUDE [prodshort](includes/prodshort.md)] environment, such as code that uses the `HttpClient`data type to send HTTP requests. The requests come from an IP address in the IP ranges of the Azure region in which the environment is hosted. You can see where an environment is hosted on the **Environment details** page in the [!INCLUDE [prodshort](includes/prodshort.md)] admin center. For more information, see [Managing Environments](administration/tenant-admin-center-environments.md).  
 
 You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/en-us/download/details.aspx?id=56519).  
+
+## How do I join the "Ready to Go" program?
+
+Read [this](developer/readiness/readiness-ready-to-go.md?tabs=learning), and then send email to [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com).
 
 ## See Also
 

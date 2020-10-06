@@ -3,7 +3,7 @@ title: "Development and Administration for Business Central"
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central
 author: edupont04
 
-ms.date: 08/25/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,7 +58,7 @@ The following table outlines recommended content for you to get started:
 |Link  |Description  |
 |------|-------------|
 |[Resell Different Solutions](developer/readiness/readiness-reseller.md)| Landing page for readiness for resellers. |
-|[Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant|  Provides links to role-specific training. |
+|[Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant)|  Provides links to role-specific training. |
 |[Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) | Describes the different models for selling in the Cloud Solution Provider (CSP) program so you can determine which works best with your business.        |
 
 ## Other roles and profiles

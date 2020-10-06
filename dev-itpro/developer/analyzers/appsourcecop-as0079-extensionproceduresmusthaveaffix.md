@@ -3,7 +3,7 @@ title: "An affix is required for procedures defined in extension objects."
 description: Explains AppSourceCop Rule AS0079.
 ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

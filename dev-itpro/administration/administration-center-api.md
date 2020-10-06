@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 07/22/2020
+ms.date: 10/01/2020
 ---
 
 # The Business Central Administration Center API

@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Performance Monitor to Collect Event Trace Data"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

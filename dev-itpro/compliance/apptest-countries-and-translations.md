@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 09/11/2020
+ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -33,10 +33,10 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Czechia|Microsoft|Available|
 |Denmark|Microsoft|Available|
 |Estonia|Partner|Available|
-|Faroe Islands (Denmark)|Microsoft|Available|
+|Faroe Islands (Denmark)|Microsoft|Coming|
 |Finland|Microsoft|Available|
 |France|Microsoft|Available|
-|Germany|Microsoft|Available|
+|Germany|Microsoft|Coming|
 |Greenland (Denmark)|Microsoft|Available|
 |Hong Kong SAR|Partner|Available|
 |Hungary|Partner|Available|

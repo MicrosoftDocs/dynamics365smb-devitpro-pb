@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 09/17/2020
+ms.date: 10/01/2020
 ms.author: bmeier
 ---
 

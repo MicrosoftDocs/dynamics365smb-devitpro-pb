@@ -4,7 +4,7 @@ description: "How to extend pages that previously had the Date virtual table as 
 author: blrobl
 ms.custom: na
 ms.reviewer: solsen
-ms.date: 05/07/2020
+ms.date: 10/01/2020
 ms.suite: na
 ms.topic: article
 ms.service: "dynamics365-business-central"

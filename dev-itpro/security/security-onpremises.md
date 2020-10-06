@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 08/21/2020
+ms.date: 10/01/2020
 ---
 # Business Central On-Premises Security
 

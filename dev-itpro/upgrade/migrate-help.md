@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/31/2020
+ms.date: 10/02/2020
 ms.author: edupont
 ---
 
@@ -20,7 +20,7 @@ When you move to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you 
 
 More specifically, if you have content that you created for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you can choose to reuse that content for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.  
 
-For example, you have a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server website with HTML files that describe your solution according to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] documentation model and format. You can reuse the Help Server website and rebrand the website and the content. You then connect your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with the Help Server website.  
+For example, you have a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server website with HTML files that describe your solution according to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] documentation model and format. You can reuse the Help Server website and rebrand the website and the content. You then connect your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with the Help Server website. For more information, see [Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/configure-help.md).  
 
 [!INCLUDE [prodshort](../developer/includes/prodshort.md)] does not support the field-based approach to context-sensitive Help that [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2017 and earlier versions use. Instead, you must use the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] page-based approach to context-sensitive Help. You do not have to convert your existing Help, but you do need to make the content available. For more information, see [Adding page-level UI-to-Help mapping to the system table](../help/context-sensitive-help.md#adding-page-level-ui-to-help-mapping-to-the-system-table).  
 
@@ -35,7 +35,7 @@ For example, if you are migrating your solution from Dynamics GP, you might have
 
 ### Migrating from Dynamics NAV
 
-If you are migrating your solution from [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] or later versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you most likely have been using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server, and your Help content is in HTML format. That means that you can reuse your existing content as-is, or you can use publicly available third-party solutions to convert some or all of your HTML files to MarkDown if you want to follow similar processes to the ones the Microsoft team follows. For more information, see the [Moving to MarkDown](#moving-to-markdown) section.  
+If you are migrating your solution from [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] or later versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you most likely have been using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server, and your Help content is in HTML format. That means that you can reuse your existing content as-is, you can use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to get new HTML files to supplement your existing content, or you can use publicly available third-party solutions to convert some or all of your HTML files to MarkDown if you want to follow similar processes to the ones the Microsoft team follows. For more information, see the [Moving to MarkDown](#moving-to-markdown) section.  
 
 If you are migrating from an earlier version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you can choose to first migrate to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] format, and then migrate again to MarkDown. For more information, see [Upgrading Your Existing Help Content](/previous-versions/dynamicsnav-2013r2/dn466754(v=nav.71)) in the legacy docs for [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)].  
 

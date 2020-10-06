@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 09/17/2020
+ms.date: 10/01/2020
 ms.author: edupont
 
 ---
@@ -40,7 +40,7 @@ The following table describes the actions that you can run from the page:
 |Reset Runtime Service Key    |If at any time you suspect that your Self-Hosted Integration Runtime key is no longer secure, you can choose this option to regenerate a new key. A new key will be generated for you and automatically be updated in the Self Host Integration Runtime service.|
 |Disable Cloud Migration    |Opens a guide that helps you through a checklist of instructions to disable the cloud migration configuration. Once the steps in this process are complete, you can use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant as your primary solution.|
 |Check for Update           |If there have been changes to the migration service, we will publish the new service. This action will check to see if a new service has been published. The check will display the version of the service you are currently running and then also display the latest service published. You will then have the option to update your solution. We recommend that you update the solution if a newer version has been published.|
-|Define User Mappings       |This option is available when you log in to a particular company that has been migrated. This action  should be done in one of the companies you have migrated. This action gives you a list of the users that were in your on-premises environment, and then gives you a list of your Office 365 users, so that you can map the two together. This process renames the **Name** field on the **User Card** to match the user name in your on-premises solution. This is not a required step, but if you use some of the processes in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that work in conjunction with the user name, such as timesheets, you may want to map users. Timesheets are visible based on the user name you are logged in as in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|
+|Define User Mappings       |This option is available when you log in to a particular company that has been migrated. This action  should be done in one of the companies you have migrated. This action gives you a list of the users that were in your on-premises environment, and then gives you a list of your Microsoft 365 users, so that you can map the two together. This process renames the **Name** field on the **User Card** to match the user name in your on-premises solution. This is not a required step, but if you use some of the processes in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that work in conjunction with the user name, such as timesheets, you may want to map users. Timesheets are visible based on the user name you are logged in as in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|
 |Setup Checklist      |When you are ready to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant as your main system, the tables that were not migrated must be set up or defined as needed. The checklist page shows recommended steps to complete your migration to the cloud.|
 |Azure Data Lake|This option is available if the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](migrate-dynamics-gp.md#lake).|
 

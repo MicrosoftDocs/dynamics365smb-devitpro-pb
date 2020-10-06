@@ -2,7 +2,7 @@
 title: "Performance of Business Central On-Premises Installations"
 description: Learn about how you can investigate and improve performance in Business Central
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

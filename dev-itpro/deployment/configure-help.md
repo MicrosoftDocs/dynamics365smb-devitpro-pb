@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/28/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ---
 
@@ -87,6 +87,9 @@ In the example, `https://myserver.com` represents the URL to the Help Server ins
 > If you are upgrading from [!INCLUDE [navnowlong_md](../developer/includes/navnowlong_md.md)], you can reuse your existing Help Server content by simply replacing the product name and make any other changes that apply to your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment.  
 
 You can also still download the files that were made available for [!INCLUDE [nav2017](../developer/includes/nav2017.md)]. The download consists of 45 CAB files with the content from the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2016 DVD rebranded to [!INCLUDE [nav2017](../developer/includes/nav2017.md)]. There are CAB files with the W1 application Help translated into each of the supported languages plus the local functionality for the country/region where that language is spoken. There are also CAB files with local functionality in English. The files were published as a single download so each administrator could choose exactly the files that they needed at the time. For more information, see [Microsoft Dynamics NAV 2017 Classic Help Download](https://www.microsoft.com/download/details.aspx?id=54315).  
+
+> [!IMPORTANT]
+> Specifically for the preview of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in India, the installation of Help Server fails due to missing files on the installation media. The solution is to install Help Server without the HTML files for local functionality and instead pick up the content from GitHub. For more information, see [Get updates from Microsoft](../help/contributor-guide.md#get-updates-from-microsoft).
 
 ## Fork the Microsoft repos, and customize or extend the content
 
