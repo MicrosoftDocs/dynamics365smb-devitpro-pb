@@ -21,7 +21,7 @@ AL variables of [Boolean Data Type](../datatypes/devenv-boolean-data-type.md) or
 Defined to include the variable's value in the dataset; otherwise, undefined. The default is undefined.  
 
 ## Syntax
-```
+```AL
 var
 [InDataSet]
 MyVariable: Boolean;

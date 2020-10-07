@@ -22,7 +22,7 @@ For a more detailed explanation of Role Centers, see [Designing Role Centers](de
 
 This example uses the **RoleCenterHeadline** page code [example](devenv-create-role-center-headline.md) to display the headline and the **SalesInvoiceCuePage** page and the following code [example](devenv-cues-action-tiles.md) for the Cue and Action tile.
 
-```
+```AL
 page 50125 MyRoleCenter
 {
     PageType = RoleCenter;

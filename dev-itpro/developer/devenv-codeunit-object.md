@@ -25,7 +25,7 @@ This codeunit example checks whether a given customer has registered a shoe size
 
 The codeunit can be used both as a direct call to `codeunit.run(customer)` or as a call to the procedure inside the codeunit `createcustomer.CheckSize(customer)`.
 
-```
+```AL
 codeunit 50113 CreateCustomer
 {
     TableNo = Customer;

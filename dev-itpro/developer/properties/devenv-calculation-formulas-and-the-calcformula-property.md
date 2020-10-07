@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Calculation Formulas and the CalcFormula Property
 A FlowField is always associated with a calculation formula that determines how the FlowField is calculated. The following syntax is valid for the CalcFormula property.  
 
-```  
+```AL
 <CalculationFormula> ::=  
     [-]Exist(<TableNo> [WHERE (<TableFilters>)]) |  
     Count(<TableNo> [WHERE (<TableFilters>)]) |  
@@ -37,7 +37,7 @@ A FlowField is always associated with a calculation formula that determines how 
     <DstFieldNo>=FIELD(UPPERLIMIT(FILTER(<SrcFieldNo>)))  
 ```  
 
- Parts of the formula are described in the following table.  
+Parts of the formula are described in the following table.  
 
 |Symbol|Description|  
 |------|-----------|  
@@ -50,5 +50,6 @@ A FlowField is always associated with a calculation formula that determines how 
 |<Filter>|A filter expression such as 10&#124;20..30.|  
 
 ## See Also  
- [FlowFields](../devenv-flowfields.md)   
- [FlowFilter Overview](../devenv-flowfilter-overview.md)   
+
+[FlowFields](../devenv-flowfields.md)   
+[FlowFilter Overview](../devenv-flowfilter-overview.md)   

@@ -10,6 +10,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Filters Property
+
 Sets the filter that you want to use to define the view of the source table presented to the user. This property can be set on [views](../devenv-views.md).
   
 ## Applies to  
@@ -18,7 +19,7 @@ Sets the filter that you want to use to define the view of the source table pres
 
 ## Example
 
-```
+```AL
 pagecustomization MyCustomization customizes "Customer List"
 {
     views
@@ -39,5 +40,6 @@ pagecustomization MyCustomization customizes "Customer List"
 
 For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters). 
   
-## See Also  
+## See Also
+
 [Properties](devenv-properties.md)

@@ -33,7 +33,7 @@ It is not allowed to change the type or subtype of parameters in public procedur
 ### Example 1 - Modifying parameters type
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Integer)
@@ -43,7 +43,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Boolean)
@@ -57,7 +57,7 @@ In version 2.0, the type of the parameter `i` has changed from `Integer` to `Boo
 ### Example 2 - Modifying parameters subtype
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Record Customer)
@@ -67,7 +67,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(i: Record Vendor)

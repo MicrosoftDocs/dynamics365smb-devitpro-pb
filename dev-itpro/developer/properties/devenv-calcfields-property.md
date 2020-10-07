@@ -21,7 +21,7 @@ Sets a list of FlowFields to automatically calculate.
 -   Table elements in XMLports
 
 ## Syntax
-```
+```AL
 CalcFields = Amount;
 ```
 

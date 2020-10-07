@@ -33,7 +33,7 @@ This example shows how you can use the guidelines above to create the **%MYTOKEN
 > [!NOTE]  
 > To keep this sample short and simple, the entire filter string is overwritten.
 
-```
+```AL
 codeunit 50101 MyAccountFilterTokenSimple
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Filter Tokens", 'OnResolveTextFilterToken', '', true, true)]

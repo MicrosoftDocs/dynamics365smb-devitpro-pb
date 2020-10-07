@@ -26,7 +26,7 @@ Tiles are interactive. A context menu is available in the upper right corner. Th
 
 You specify the data that you want shown in the tile view in the source table of the page by adding a `Field Group` that has the name `Brick`:
 
-```
+```AL
     fieldgroups
     {
         fieldgroup(Brick; <field 1>, <field 2>, <field 3>, <field 4>, <field 5>)
@@ -65,7 +65,7 @@ Like the list view, the tile view supports the [Style Property](properties/deven
 ## Example
 The following code is a simple example of a table that includes `Field Group` control for displaying data in the tile view of a list page.
 
-```
+```AL
 Table 50100 MyTable
 {
 

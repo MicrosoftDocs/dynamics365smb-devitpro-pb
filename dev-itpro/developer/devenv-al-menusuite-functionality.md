@@ -46,7 +46,7 @@ You can specify other words or phrases that can help users find a page or report
 ## Example
 The following example creates a `SimpleItemList` page and sets a `UsageCategory` property to the page, so that the `SimpleItemList` page is discoverable through search using the **Tell me** feature. Also, the example sets the   `AdditionalSearchTerms` property to add two search terms for the page. 
 
-```
+```AL
 page 50210 SimpleItemList 
 { 
     PageType = List; 

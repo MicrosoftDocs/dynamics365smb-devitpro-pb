@@ -42,7 +42,7 @@ Once all dependent extensions have uptaken the new field, you can mark the the o
 ### Example 1 - Decreasing the length of a field
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -53,7 +53,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -70,7 +70,7 @@ Moreover, if a dependent extension uses this field, this change of length can le
 ### Example 2 - Modifying the length of a field which is part of the primary key
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -85,7 +85,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields

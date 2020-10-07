@@ -21,7 +21,7 @@ AL methods on test codeunits. A test codeunit is a codeunit that has the [SubTyp
 
 ## Syntax  
   
-```  
+```AL
 [RecallNotificationHandler]
 procedure RecallNotificationHandler(var Notification: Notification): Boolean;
 ```    

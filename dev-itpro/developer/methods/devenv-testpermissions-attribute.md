@@ -18,7 +18,7 @@ AL methods on test codeunits. A test codeunit is a codeunit that has the [SubTyp
 AL methods on test codeunits.
 
 ## Syntax  
-```
+```AL
 [TestPermissions(TestPermissions: Testpermissions)]
 ```
 

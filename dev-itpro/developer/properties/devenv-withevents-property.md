@@ -13,21 +13,23 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ---
 
- 
-
 # WithEvents Property
+
 Sets whether a DotNet variable subscribes to the events published by a .NET Framework type.  
   
 ## Applies to  
- Variables of the **DotNet** data type.  
+
+Variables of the **DotNet** data type.  
 
 ## Syntax
-```
+
+```AL
 [WithEvents]
 timer: DotNet MyTimer;
 ```
 
 ## Remarks
+
 You can only subscribe to events that are emitted by global variables of the .NET type marked with the WithEvents property. For all the global variables that are marked with this property, the compiler will expose the events available on the type as triggers on the variable. The syntax for declaring these triggers is {VariableName}::{EventName}(...ParameterList), but IntelliSense will offer suggestions for the event name and autocomplete the parameter list.
 
 <!--  
@@ -36,4 +38,5 @@ You can only subscribe to events that are emitted by global variables of the .NE
  -->
 
 ## See Also
+
 [Properties](devenv-properties.md)

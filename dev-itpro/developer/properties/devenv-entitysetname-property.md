@@ -12,20 +12,21 @@ author: SusanneWindfeldPedersen
 ---
 
 # EntitySetName Property
-Sets the plural entity name with which the page is exposed in the api endpoint. The following example illustrates the syntax:
 
+Sets the plural entity name with which the page is exposed in the api endpoint. The following example illustrates the syntax:
     
 ## Applies to  
   
-- Pages  
-  
+- Pages    
 - Queries  
  
 ## Syntax
-```
+
+```AL
 EntitySetName = 'Customers';
 ```
 
-## See Also  
- [EntityName Property](devenv-entityname-property.md)  
- [Properties](devenv-properties.md)  
+## See Also
+
+[EntityName Property](devenv-entityname-property.md)  
+[Properties](devenv-properties.md)  

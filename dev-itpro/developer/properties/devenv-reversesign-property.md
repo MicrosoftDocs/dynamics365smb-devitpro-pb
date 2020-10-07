@@ -12,29 +12,33 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ReverseSign Property
+
 Changes negative values into positive values and positive values into negative values in a column of a resulting query dataset.  
   
 ## Applies to  
- Query columns  
+
+- Query columns  
   
 > [!NOTE]  
->  The **ReverseSign** property applies only to columns that have a numeric data type. If you set the **ReverseSign** property on a column that does not have a numeric data type, you will get an error.  
+> The **ReverseSign** property applies only to columns that have a numeric data type. If you set the **ReverseSign** property on a column that does not have a numeric data type, you will get an error.  
   
 ## Property Value  
- **True** to reverse the sign of column values; otherwise, **false**. The default is **false**.  
+
+**True** to reverse the sign of column values; otherwise, **false**. The default is **false**.  
  
 ## Syntax
-```
+
+```AL
 ReverseSign = true;
 ```
  
-## Remarks  
- Field values in a database table can be negative numbers, as well as positive. For example, credits are typically stored as negative values to deduct them from the overall balance due. However, for displaying purposes, such as in spreadsheets and charts, you might want these quantities to appear as a positive numbers.  
+## Remarks
+
+Field values in a database table can be negative numbers, as well as positive. For example, credits are typically stored as negative values to deduct them from the overall balance due. However, for displaying purposes, such as in spreadsheets and charts, you might want these quantities to appear as a positive numbers.  
 
 ## See Also  
+
 [Properties](devenv-properties.md)   
 [AL Data Types](../datatypes/devenv-al-data-types.md)   
  

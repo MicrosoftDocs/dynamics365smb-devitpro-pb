@@ -49,7 +49,7 @@ Typing the shortcut `txmlport` will create the basic layout for an XMLport objec
 ### Example
 The following example adds the `Customer` table as a table element, the `Address` field as a field element and the `County` and `City` fields as field attributes.
 
-```
+```AL
 schema
 {
     textelement(Customers)

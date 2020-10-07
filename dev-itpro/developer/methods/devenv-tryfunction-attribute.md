@@ -23,7 +23,7 @@ Specifies the method to be a try method, which can be used to catch and handle e
 > In test and upgrade codeunits, this property only applies to normal methods as specified by the [Normal Attribute \(Test Codeunits\)](devenv-normal-attribute.md) or [MethodType Property \(Upgrade Codeunits\)](../devenv-methodtype-property-upgrade-codeunits.md).  
 
 ## Syntax
-```
+```AL
 [TryFunction]
 local procedure MyTryMethod()
 ```

@@ -39,15 +39,16 @@ Descriptive text for the Caption, for example, with regards to translation.
 Sets the maximum length of the specific Caption.
 
 ## Syntax
-```
+```AL
 Caption = 'Name';
 ```
 
-```
+```AL
 Caption = 'Name', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
 ```
 
-## Remarks  
+## Remarks
+
 A caption is the text used to show the identity of a control. For example, in the caption bar of a page or a label for another control.  
 
 > [!NOTE]  

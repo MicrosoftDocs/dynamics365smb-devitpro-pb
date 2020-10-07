@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # FreezeColumn Property
+
 Specifies the columns in a list that remain in view on a page, even when you scroll right.
   
 ## Applies to  
@@ -19,7 +20,7 @@ Specifies the columns in a list that remain in view on a page, even when you scr
 
 ## Syntax
 
-```
+```AL
 FreezeColumn = GroupCompanyDisplayName;
 ```
 

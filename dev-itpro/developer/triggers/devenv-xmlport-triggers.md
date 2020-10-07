@@ -1,5 +1,6 @@
 ---
 title: "XMLport Triggers"
+description: "XMLport triggers in AL for Business Central."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/01/2020

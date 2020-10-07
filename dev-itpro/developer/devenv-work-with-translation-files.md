@@ -22,7 +22,7 @@ To add a new language to the extension that you have built, you must first enabl
 
 In the app.json file of your extension, add the following line:
 
-```
+```json
   "features": [ "TranslationFile" ]
 ```
 
@@ -33,14 +33,14 @@ Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a 
 
 By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` or `CaptionML` property set, that value will be used, for table fields the `OptionCaption` is used. The syntax is the following:
 
-```
+```json
   "features": [ "TranslationFile", "GenerateCaptions" ]
 ```
 
 ## Label syntax
 The label syntax is shown in the example below for the **Caption** property: 
 
-```
+```AL
 Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999; 
 ```
 
@@ -49,7 +49,7 @@ Caption = 'Developer translation for %1',  Comment = '%1 is extension name', loc
 
 Use the same syntax for report labels:  
 
-```
+```AL
 labels
 {
   LabelName = 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
@@ -58,7 +58,7 @@ labels
 
 And the following is the syntax for **Label** data types:
 
-```
+```AL
 var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```
@@ -80,7 +80,7 @@ var
 
 In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `<trans-unit id>` attribute corresponds to the object ID in the extension. This is illustrated in the example below.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="da-DK" original="ALProject16">

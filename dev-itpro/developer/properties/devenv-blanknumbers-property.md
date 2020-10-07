@@ -31,8 +31,9 @@ Indicates whether the system will clear a range of numbers as it formats them.
 |**BlankPos**|Clear positive numbers|  
 
 ## Syntax  
-```
+```AL
 BlankNumbers = BlankNegAndZero;
 ```
+
 ## See Also  
  [BlankZero Property](devenv-blankzero-property.md)

@@ -1,5 +1,6 @@
 ---
 title: "OnAfterInsertRecord Trigger"
+description: "OnAfterInsertRecord trigger in AL for Business Central."
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -11,6 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # OnAfterInsertRecord Trigger
+
 Runs after a record has been inserted into a database table.  
   
 ## Applies to  

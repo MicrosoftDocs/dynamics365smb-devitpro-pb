@@ -14,6 +14,7 @@ ms.service: "dynamics365-business-central"
 Sets a link to a Factbox from a page.
 
 ## Syntax
+
 ```
 SubPageLink = <TableFilters> ::= <TableFilter> {,<TableFilter>} <TableFilter> ::= <PagePartTableFieldName> = CONST(<FieldConst>) | FILTER(<Filter>) | FIELD (<SourceFieldName>) | FIELD(UPPERLIMIT(<SourceFieldName>)) | FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
 ```  
@@ -24,7 +25,7 @@ SubPageLink = <TableFilters> ::= <TableFilter> {,<TableFilter>} <TableFilter> ::
 
 ## Syntax example
 
-```
+```AL
 area(factboxes)
 {
     part(MyControl;Id)

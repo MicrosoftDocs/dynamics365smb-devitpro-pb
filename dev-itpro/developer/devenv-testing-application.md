@@ -93,7 +93,7 @@ If a statement that follows the `AssertError` keyword doesn't cause an error, th
 ### Example  
 To create a test method to test the result of a failure of a CheckDate method that you've defined, you can use the following code. This example requires that you create a method called CheckDate. This method checks whether the date is valid for the customized application. You also create the following text constant, *Date* variable InvalidDate, and *Text* variable InvalidDateErrorMessage.  
 
-```  
+```AL
 InvalidDate := 010184D;  
 InvalidDateErrorMessage := 'The date is outside the valid date range.';  
 ASSERTERROR CheckDate(InvalidDate);  

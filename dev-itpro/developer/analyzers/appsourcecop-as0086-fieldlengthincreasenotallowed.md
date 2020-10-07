@@ -36,7 +36,7 @@ Once all dependent extensions have uptaken the new field, you can mark the the o
 ## Code example triggering the rule
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -47,7 +47,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields

@@ -13,19 +13,24 @@ author: SusanneWindfeldPedersen
 ---
 
 # ConstValue Property
+
 Sets the value of the AL text constant for the current application language of the [!INCLUDE[d365_dev_short_md](../includes/d365_dev_short_md.md)].  
   
 ## Applies to  
- **Local** and **global** text constants in the AL code of objects.  
+
+**Local** and **global** text constants in the AL code of objects.  
 
 ## Syntax
-```
+
+```AL
 ConstValue = Name;
 ```
 
 ## Remarks  
- The **ConstValue** property sets the text string in the [ConstValueML Property](devenv-constvalueml-property.md) for the current application language of the [!INCLUDE[d365_dev_short_md](../includes/d365_dev_short_md.md)]. For example, if the application language of the [!INCLUDE[d365_dev_short_md](../includes/d365_dev_short_md.md)] is set to English (United States) and you set the **ConstValue** property to **test**, then the value **ENU=test** is included in the **ConstValueML** property.  
+
+The **ConstValue** property sets the text string in the [ConstValueML Property](devenv-constvalueml-property.md) for the current application language of the [!INCLUDE[d365_dev_short_md](../includes/d365_dev_short_md.md)]. For example, if the application language of the [!INCLUDE[d365_dev_short_md](../includes/d365_dev_short_md.md)] is set to English (United States) and you set the **ConstValue** property to **test**, then the value **ENU=test** is included in the **ConstValueML** property.  
   
 ## See Also  
- <!-- [How to: Change the Language in the User Interface](How-to--Change-the-Language-in-the-User-Interface.md) -->   
- [Multilanguage Development](../devenv-multilanguage-development.md)
+
+<!-- [How to: Change the Language in the User Interface](How-to--Change-the-Language-in-the-User-Interface.md) -->   
+[Multilanguage Development](../devenv-multilanguage-development.md)

@@ -123,7 +123,7 @@ repeater(Control1)
 Now, the code will indent each record based on the value of the **Indent** field.
 
 -->
-```
+```AL
 page 50100 MyPage
 {
     PageType = List;
@@ -200,7 +200,7 @@ repeater(Control1)
 
 ```
 -->
-```
+```AL
 page 50100 MyPage
 {
     PageType = List;

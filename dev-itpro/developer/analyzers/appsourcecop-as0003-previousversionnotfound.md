@@ -30,7 +30,7 @@ This rule validates that the version of the extension specified as a baseline fo
 In order to set up AppSourceCop to detect breaking changes, the version of the extension used as a baseline must be specified in the AppSourceCop.json file using the `version` property. The version specified is the exact version against which the breaking changes are validated. It is also possible to specify the `name` and the `publisher` of the extension in the AppSourceCop.json file.
 
 For example:
-```
+```json
 {
     "name": "ExtensionName",
     "publisher": "ExtensionPublisher",

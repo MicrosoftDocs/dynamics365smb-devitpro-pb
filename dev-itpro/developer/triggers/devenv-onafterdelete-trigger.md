@@ -1,5 +1,6 @@
 ---
-title: "OnBeforeDelete Trigger"
+title: "OnAfterDelete Trigger"
+description: "OnAfterDelete trigger in AL for Business Central."
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen

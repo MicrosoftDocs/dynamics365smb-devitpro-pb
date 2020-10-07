@@ -19,7 +19,7 @@ Sets the group of the API endpoint the query is exposed in.  The syntax for prov
 - Query object 
 
 ## Syntax
-```
+```AL
 APIGroup = 'app1';
 ```
 

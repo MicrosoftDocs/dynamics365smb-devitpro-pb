@@ -37,7 +37,7 @@ You can use the following handler methods:
 
 To create a handler method, you set one of the handler attributes on a method. You must use the method signature specified for the handler attribute that you are using, as illustrated in this code example.
 
-```
+```AL
 [MessageHandler]
 procedure MessageHandler(Message: Text[1024])
 begin
@@ -54,7 +54,7 @@ You can call handler methods from methods that have the [Test Attribute](methods
 
 The following example shows a test method that uses the [HandlerFunctions Attribute](methods/devenv-handlerfunctions-attribute.md) to call the **MessageHandler** method.
 
-```
+```AL
 [Test]
 [HandlerFunctions('MessageHandler')]
 procedure ApproveRequestForPurchCreditMemo()

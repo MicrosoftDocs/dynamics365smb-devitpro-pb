@@ -20,7 +20,7 @@ AL methods on codeunits.
 
 ## Syntax  
   
-```  
+```AL
 [Normal]
 procedure Normal();
 ```    

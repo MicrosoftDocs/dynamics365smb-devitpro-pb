@@ -3,7 +3,7 @@ title: "CommitBehavior Attribute"
 description: "The CommitBehavior attribute in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/07/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,13 @@ author: SusanneWindfeldPedersen
 
 # CommitBehavior Attribute
 
+[!INCLUDE[2020_releasewave2.md](../../includes/2020_releasewave2.md)]
+
 Specifies the behavior of `commit` calls inside the method scope of the call. This attribute can be used on both local and global methods.
 
 ## Syntax  
 
-```  
+```AL
 [CommitBehavior(CommitBehavior::Ignore)]
 local procedure ProcedureIgnoreCommit()
 begin
@@ -40,10 +42,11 @@ This will throw an exception and stop the execution of further code when a `comm
 > [!NOTE]  
 > The `CommitBehavior` only lasts for the method scope. Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the `CommitBehavior` reverts to the standard behavior, where `commit` statements will commit to the database.
 
-## Example
+## Example - local method
+
 The example shown below illustrates how the attribute is used on a local method; it can also be applied on a global method.
 
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     trigger OnRun()
@@ -76,7 +79,50 @@ codeunit 50100 MyCodeunit
         myInt: Integer;
 }
 ```
-  
+
+## Example - event subscriber
+
+This example illustrates how you can protect your code from commits happening in event subscriber code; typically written by a third party.
+
+```AL
+codeunit 50102 MyPublishingCodeunit
+{
+    // by stating CommitBehavior::Ignore here, any subscribers attempt to commit will be ignored
+    [CommitBehavior(CommitBehavior::Ignore)]
+    [IntegrationEvent(true, false)]
+    procedure OnSomethingChangedEvent()
+    begin
+        // this part of ImportantAtomicOperation is extensible
+    end;
+
+    procedure Validate() result: Boolean
+    begin
+        // validation code 
+    end;
+
+    procedure DoImportantAtomicOperation()
+    begin
+        // do work
+        OnSomethingChangedEvent();
+        // do more work
+
+        if Validate() then Commit() else Error('Validation failed');
+    end;
+
+}
+
+codeunit 50103 MySubscribingCodeunit
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublishingCodeunit, 'OnSomethingChangedEvent', '', true, true)]
+    local procedure SubcribeToOnAddressLineChangedEvent(sender: Codeunit MyPublishingCodeunit)
+    begin
+        // subscriber code
+        Commit();
+    end;
+
+```
+
+
 ## See Also  
 
 [AL Method Reference](../methods-auto/library.md)  

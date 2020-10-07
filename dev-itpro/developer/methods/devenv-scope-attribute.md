@@ -19,14 +19,14 @@ Specifies the scope of a method. The attribute has two options `OnPrem` and `Clo
 > In previous versions `OnPrem` was equivalent to `Internal` and `Cloud` was equivalent to `External`. Both `Internal` and `External` options are being deprecated.
 
 ## Syntax  
-```  
+```AL
 [Scope('OnPrem')]
 ```
   
 ## Example
 Setting the attribute on a method. Each method must be marked with `[Scope('OnPrem')]`.
 
-```
+```AL
 procedure MyProcedureForCloud()
     begin
         Message('My procedure is available externally.');    

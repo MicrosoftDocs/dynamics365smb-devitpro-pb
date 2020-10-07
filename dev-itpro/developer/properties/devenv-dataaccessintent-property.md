@@ -39,7 +39,8 @@ The property has the following values.
 |**ReadWrite**|Specifies to get the data from the primary database. **ReadWrite** is the default value.|  
   
 ## Syntax
-```
+
+```AL
 DataAccessIntent = ReadOnly|ReadWrite;
 ```
 

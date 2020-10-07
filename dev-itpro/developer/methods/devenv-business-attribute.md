@@ -19,7 +19,7 @@ Typing the shortcut `teventbus` will create the basic BusinessEvent attribute sy
 
 ## Syntax  
   
-```  
+```AL
 [BusinessEvent(IncludeSender : Boolean)] 
 ```    
   
@@ -33,7 +33,7 @@ Specifies whether global methods in the object that contains the event publisher
 
 When you set the argument to **true**, the signature of event subscriber methods that subscribe to the published event automatically include a VAR parameter for the published event object, as shown in the following example:
 
-```
+```AL
 codeunit 50100 MyPublishingCodeunit
 {
     [BusinessEvent(true)]
@@ -58,7 +58,7 @@ For more information about the different event types, see [Event Types](../deven
 ## Example
 This example publishes a business type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender argument is set to **false**.
 
-```
+```AL
 [BusinessEvent(false)] 
 procedure OnAddressLineChanged(line : Text[100]);
 begin    

@@ -33,7 +33,7 @@ Simon is a partner developer working for CRONUS International Ltd. Nancy is a Sa
 
 The following code illustrates how Simon implements the Role Center.
 
-```
+```AL
 page 50106 "Sales Rep Role Center"
 {
     PageType = RoleCenter;

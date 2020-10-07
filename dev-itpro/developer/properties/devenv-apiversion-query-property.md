@@ -19,7 +19,7 @@ Sets the version(s) of the API endpoint the query is exposed in.  The syntax for
 - Query object 
 
 ## Syntax
-```
+```AL
 APIVersion = 'beta', 'v1.0';
 ```
 

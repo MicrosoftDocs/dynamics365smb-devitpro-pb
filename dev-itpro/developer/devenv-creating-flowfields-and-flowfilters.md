@@ -34,7 +34,7 @@ In the following example, `MyTable` sets the `Global Dimension 1 Filter` and `Gl
 `Total Amount`, `Amount upper bound`, `Amount lower bound`, `First Entry`, and `Customer Balance` are classified as a FlowField type and here you specify the calculations. These fields display the results immediately based on the filters that you apply in the user interface. 
 
 
-```
+```AL
 table 50123 MyTable
 {
     fields

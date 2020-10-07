@@ -23,7 +23,7 @@ Sets whether imported records are automatically written to the table.
  **True** if the record is written to the table automatically; otherwise, **false**. The default value is **true**.  
 
 ## Syntax
-```
+```AL
 AutoSave = false;
 ```
 

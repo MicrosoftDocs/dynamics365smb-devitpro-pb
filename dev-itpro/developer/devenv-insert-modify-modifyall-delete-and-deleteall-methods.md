@@ -32,13 +32,13 @@ The Insert method inserts a record in a table. Insert has the following syntax.
 [Ok :=] Record.Insert([RunTrigger])  
 ```  
 -->
-```  
+```AL
 [Ok := ]  Record.Insert([RunTrigger: Boolean[, InsertWithSystemId: Boolean]])
 ```  
 
 A record must be assigned a **SystemId**. You have the option to assign your own value or have the platform assign an auto-generated value. The following example inserts a new record, with the **SystemId**, **No.**, and **Name** fields specified in the assigned values, while other fields will have their default values. If the **No.** field is the primary key of the **Customer** table, then the record will be inserted in the **Customer** table unless the table already contains a record with the same primary key. In this case you receive an error message because the return value is not tested.  
 
-```
+```AL
 var
     Customer: Record Customer;
 begin
@@ -57,7 +57,7 @@ end;
 Modify modifies a record that already exists. For more information, see [Modify Method](methods-auto/record/record-modify-method.md).
 Modify has the following syntax.  
 
-```  
+```AL 
 [Ok :=] Record.Modify([RunTrigger])  
 ```  
 
@@ -69,7 +69,7 @@ The following example changes the name of customer 4711 to Richard Roe. This exa
 |--------------|---------------|-------------|  
 |Customer|Record|Customer|  
 
-```  
+```AL 
 Customer.Get('4711');  
 Customer.Name := 'Richard Roe';  
 Customer.Modify;  
@@ -80,7 +80,7 @@ ModifyAll performs a bulk update of records. For more information, see [ModifyAl
 
 ModifyAll has the following syntax.  
 
-```  
+```AL  
 Record.ModifyAll(Field, NewValue [, RunTrigger])  
 ```  
 
@@ -92,7 +92,7 @@ In the following example, the `SetRange` statement selects the records where Sal
 |--------------|---------------|-------------|  
 |Customer|Record|Customer|  
 
-```  
+```AL  
 Customer.SetRange("Salesperson Code",'PS','PS');  
 Customer.ModifyAll("Salesperson Code",'JR');  
 ```  
@@ -101,7 +101,7 @@ Customer.ModifyAll("Salesperson Code",'JR');
 Delete deletes a record from the database. For more information, see [Delete Method](methods-auto/record/record-delete-method.md) 
 Delete has the following syntax.  
 
-```  
+```AL  
 [Ok :=] Record.Delete([RunTrigger])  
 ```  
 
@@ -113,7 +113,7 @@ The following example shows how to use Delete to delete the record for customer 
 |--------|---------|-------------|  
 |Customer|Record|Customer|  
 
-```  
+```AL  
 Customer."No." := '4711';  
 Customer.Delete;  
 ```  
@@ -134,7 +134,7 @@ This can cause problems in a multi-user environment. Another user can modify or 
 DeleteAll deletes all the records that are specified by the filter settings. If no filters are applied, it deletes all the records in the table. For more information, see [DeleteAll Method](methods-auto/record/record-deleteall-method.md) 
 DeleteAll has the following syntax.  
 
-```  
+```AL  
 Record.DeleteAll([RunTrigger])  
 ```  
 
@@ -144,7 +144,7 @@ The following example deletes all the records from the **Customer** table where 
 |--------------|---------------|-------------|  
 |Customer|Record|Customer|  
 
-```  
+```AL  
 Customer.SetRange("Salesperson Code", 'PS', 'PS');  
 Customer.DeleteAll;  
 ```  

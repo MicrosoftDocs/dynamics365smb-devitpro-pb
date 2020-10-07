@@ -22,7 +22,7 @@ Table elements in XMLports.
  **True** if the records are updated; otherwise, **false**. The default value is **true**.  
 
 ## Syntax
-```
+```AL
 AutoUpdate = true;
 ```
 

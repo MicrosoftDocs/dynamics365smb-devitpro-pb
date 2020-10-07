@@ -16,23 +16,24 @@ Sets whether the value of a key must be unique.
 
 ## Applies to  
   
-Table keys
+- Table keys
 
 > [!NOTE]  
 > The `Unique` property cannot be used in table extension objects.
 
 ## Property Value
   
- **true** if the key value must be unique; otherwise, **false**. The default is **false**.  
+**true** if the key value must be unique; otherwise, **false**. The default is **false**.  
 
 ## Remarks
+
 A unique index ensures that records in a table do not have identical field values. With a unique index, when a table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
 
 ## Example
 
 The following example defines a primary key and two unique secondary keys.
 
-```
+```AL
 keys
 {
     key(PrimaryKey; ID)

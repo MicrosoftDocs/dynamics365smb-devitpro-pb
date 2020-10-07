@@ -12,25 +12,22 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ContainerType Property
+
 Sets the container type when you want to add one of the following controls to a page:  
   
--   Container  
-  
--   Group  
-  
--   Field  
-  
--   Part  
+- Container  
+- Group  
+- Field   
+- Part  
   
 ## Applies to  
   
--   Container controls on Pages  
+- Container controls on Pages  
 
 ## Syntax
-```
+
+```AL
 page 50100 MyPage
 {
     PageType = RoleCenter;
@@ -55,8 +52,9 @@ page 50100 MyPage
 }
 ```
   
-## Remarks  
- A Container control methods as a high-level container for other page controls. You can choose from one of the following subtypes:  
+## Remarks
+
+A Container control methods as a high-level container for other page controls. You can choose from one of the following subtypes:  
   
 |Value|Description|  
 |-----|-----------|  
@@ -64,5 +62,6 @@ page 50100 MyPage
 |FactBoxArea|Specifies a FactBox area on the page. A FactBox is an area that is located along the right-side of the page that contains one or page parts.|  
 |RoleCenterArea|Specifies the main content area for a RoleCenter page type.|  
    
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

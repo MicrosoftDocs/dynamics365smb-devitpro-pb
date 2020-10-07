@@ -20,7 +20,7 @@ Sets the group of the API endpoint the page is exposed in.  The syntax for provi
 - Page object 
 
 ## Syntax
-```
+```AL
 APIGroup = 'app1';
 ```
 

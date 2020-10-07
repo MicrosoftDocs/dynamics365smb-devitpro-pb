@@ -27,7 +27,7 @@ At this point, the selected analyzers will be run on your project. Next, add som
 ## Add your own code to the project
 In the Visual Studio Code Explorer, open the `HelloWorld.al` file and replace the existing code with the following:
 
-```
+```AL
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
@@ -52,7 +52,7 @@ To create and customize a ruleset of your own, follow the next steps:
 2. Save the empty file with a name, for example `<name>.ruleset.json` and make a note of the file path.
 3. Add the following code to the `<name>.ruleset.json` file:
 
-    ```
+    ```json
     {
         "name": "My Custom ruleset",
         "rules": [

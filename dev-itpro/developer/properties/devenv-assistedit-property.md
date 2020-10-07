@@ -24,7 +24,7 @@ Sets assist-edit capabilities for a text box.
  **True** if assist-edit capabilities and an AssistEdit button are provided; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+```AL
 AssistEdit = true;
 ```
 

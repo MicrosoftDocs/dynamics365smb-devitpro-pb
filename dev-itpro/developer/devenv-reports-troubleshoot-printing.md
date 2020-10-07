@@ -44,7 +44,7 @@ When a page that uses the **Printers** system table opens, the system raises the
 
 For example, the following code snippet creates a page that lists extension printer setups.
 
-```
+```AL
 page 50101 MyPrinterList
 {
     PageType = List;
@@ -79,7 +79,7 @@ page 50101 MyPrinterList
 
 You might want to look at the views that are in the report payload. The following code snippet unpacks the views that are in a report payload into a message:
 
-```
+```AL
 procedure DisplayFilterView(ObjectPayload: JsonObject) 
 var 
     ViewSize: Integer; 

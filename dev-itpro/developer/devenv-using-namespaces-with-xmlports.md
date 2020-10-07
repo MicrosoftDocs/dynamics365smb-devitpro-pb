@@ -20,7 +20,7 @@ The external system that provides or consumes [!INCLUDE[d365_dev_long_md](includ
 
 For example, the following code is a portion of a simple XML document for transferring sales order information. The XML includes namespaces for mapping fields from the `Sales Header` table.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-16"?>  
 <Root xmlns="urn:bc:schema:all" xmlns:bcField="urn:bc:schema:field" xmlns:bcTable="urn:bc:schema:table">  
   <bcTable:SalesHeader>  

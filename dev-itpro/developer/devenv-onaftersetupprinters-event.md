@@ -38,7 +38,7 @@ The OnAfterSetupPrinters event is raised when you:
 procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
 ```
 -->
-```
+```AL
 [IntegrationEvent(false, false)]
 local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
 ```

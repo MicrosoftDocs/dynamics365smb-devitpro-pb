@@ -29,7 +29,7 @@ The following example shows how a **ToString** method can be implemented with an
 In the first code snippet, a **ToString** procedure is implemented. This takes a Variant value and inspects the type of the value to delegate to different implementations. If the caller passes a value of a different type than Integer, Date, and Text, an empty string will be returned. This can lead to bugs that will only show up at runtime. 
 
 
-```
+```AL
 codeunit 10 Stringifier 
 { 
     local procedure TextToString(value : Text) : Text; 
@@ -64,7 +64,7 @@ codeunit 10 Stringifier
 
 In the second code snippet, we overload the ToString procedure for Text, Date and Integer. At this point, it is not possible for a caller to call a ToString method with a different type other than Integer, Date, or Text. This will catch the bug above at compile time. 
 
-```
+```AL
 codeunit 10 StringifierWithOverloads 
 { 
     procedure ToString(value : Text) : Text; 

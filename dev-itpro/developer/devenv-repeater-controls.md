@@ -46,7 +46,7 @@ You can also use the Tile View to display records as tiles (or bricks) instead o
 
 The following example shows how the repeater control is used to define a list page for the Customer table.
 
-```
+```AL
 page 50111 SampleCustomerList
 {
     PageType = List;
@@ -108,7 +108,7 @@ page 50111 SampleCustomerList
 
 You can use page customizations to modify the layout of a page for concrete users. The following code hides the `"Phone No."` column from the users with `Accountant` profile.
 
-```
+```AL
 profile Accountant
 {
     Description = 'Functionality for finance staff performing any AR or AP work and managerial reporting.';

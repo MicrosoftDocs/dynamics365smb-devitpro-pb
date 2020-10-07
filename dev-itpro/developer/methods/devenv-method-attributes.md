@@ -17,13 +17,13 @@ An attribute is modifier on a method declaration that specifies information that
 
 In AL, attributes are placed before the method, and have the following syntax:
 
-```
+```AL
 [Attribute_Name(ArgumentName : data_type, ArgumentName : data_type)]
 ```
 
 For example, the Integration attribute has two arguments, and the syntax is:
 
-```
+```AL
 [Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)]
 ```
 

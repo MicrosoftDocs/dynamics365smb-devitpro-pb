@@ -12,24 +12,26 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # SourceTable Property
+
 Sets the ID of the table from which this page will display records.  
   
 ## Applies to  
   
--   Pages  
+- Pages  
 
 ## Syntax
-```
+
+```AL
 SourceTable = Customer;
 ```
   
-## Remarks  
- Use the up arrow to select the table you want. There are some page types that do not support having a source table. 
- The SourceTable defines the structure of the record that you want to show on the page. 
+## Remarks
+
+Use the up arrow to select the table you want. There are some page types that do not support having a source table. 
+The SourceTable defines the structure of the record that you want to show on the page. 
   
 ## See Also  
- [Page Property Overview](devenv-page-property-overview.md)   
- [Properties](devenv-page-property-overview.md)
+
+[Page Property Overview](devenv-page-property-overview.md)   
+[Properties](devenv-page-property-overview.md)

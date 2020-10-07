@@ -42,7 +42,7 @@ The label syntax is used in properties that are set to display text on the user 
 
 The following example shows the label syntax when it is used as property value for the **Caption** property.
 
-```
+```AL
 Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999;
 ```
 
@@ -52,7 +52,7 @@ Report labels are used by RDL and Word report layouts as, for example, the capti
 
 Report labels are defined inside the `labels` control of a report object, as shown in the code sample below.
 
-```
+```AL
 labels
 {
   LabelName1 = 'Label Text1', Comment='Foo', MaxLength=999, Locked=true;
@@ -66,7 +66,7 @@ Page labels are used to display plain text on a page, such as instructions or in
 
 Page labels are defined by a `label(Name)` control inside the `area(Content)` part of a page. The following code shows how to define a page label.
 
-```
+```AL
 label(BeforeSetupCloseMessage)
 {
     ApplicationArea = Basic, Suite;
@@ -81,7 +81,7 @@ The [Label Data Type](methods-auto/label/label-data-type.md) denotes a string va
 
 The following code sample illustrates how to use the **Label** data type.
 
-```
+```AL
 var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```

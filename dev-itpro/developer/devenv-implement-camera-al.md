@@ -29,7 +29,7 @@ The example also shows how to specify options for the camera functionality such 
 
 The following code will create two variables; the `CameraAvailable` variable is a **Boolean** that checks whether the current device has a camera. The `Camera` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add the actions to the page that lets the user start the camera. Finally, the trigger `Camera::PictureAvailable` is defined to handle the incoming picture.  
 
-```
+```AL
 page 50101 "Card with Camera Capability"
 {
 

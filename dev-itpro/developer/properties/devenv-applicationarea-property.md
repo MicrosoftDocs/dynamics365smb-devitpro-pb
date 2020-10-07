@@ -30,7 +30,7 @@ An application area tag must have the format *name*, where *name* is the applica
 If the control applies to all application areas, you can set the property to **All**. This means that the control will always appear in the user interface.  
  
 ## Syntax
-```
+```AL
 ApplicationArea = Basic, Suite;
 ```
 

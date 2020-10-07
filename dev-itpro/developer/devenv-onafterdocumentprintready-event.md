@@ -28,7 +28,7 @@ When a user selects the print action on a report request page
 
 ## Syntax
 
-```
+```AL
 IntegrationEvent(false, false)]
 local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
 ```

@@ -53,14 +53,14 @@ In test and upgrade codeunits, you can only use a try method on a normal method 
 
 The following simple example illustrates how the try method works. First, create a codeunit that has a local method `MyTrymethod`. Add the following code on the `OnRun` trigger and `MyTrymethod` method.
 
-```
+```AL
 trigger OnRun()
 begin
     MyTrymethod;
     message('Everything went well');
 end;
 ```
-```
+```AL
 local procedure MyTryMethod()
 begin
     error('An error occurred during the operation');
@@ -71,7 +71,7 @@ When you run this codeunit, the execution of the `OnRun` trigger, the calling me
 
 Now, set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) of the  `MyTrymethod` method. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
 
-```
+```AL
 [TryFunction]
 local procedure MyTryMethod()
 begin

@@ -45,13 +45,13 @@ The following procedure provides an outline of the tasks that are involved in cr
 
 3.  Decorate the method with either the [Integration attribute](methods/devenv-integration-attribute.md) or [Business attribute](methods/devenv-business-attribute.md) as follows: 
 
-    ```  
+    ```AL
     [IntegrationEvent(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
     ```
 
     or
 
-    ```  
+    ```AL 
     [BusinessEvent(IncludeSender : Boolean)] 
     ```
 
@@ -73,7 +73,7 @@ This example creates the codeunit **50100 MyPublishers** to publish an integrati
 > [!NOTE]  
 > This example is part of a larger, simple scenario where when users change the address of a customer on the page **21 Customer Card**, you want to check that the address doesn't include a plus sign (+). If it does, you want to display a message. To accomplish this, you will publish an event that is raised when the **Address** field on **Customer Card** is changed, and add an event subscriber method to that includes logic that checks the address value and returns a message to the user if it contains a plus sign. For a complete description of this scenario and all the code involved, see [Event Example](devenv-events-example.md).
 
-```
+```AL
 codeunit 50100 MyPublishers
 {
     [IntegrationEvent(false, false)]

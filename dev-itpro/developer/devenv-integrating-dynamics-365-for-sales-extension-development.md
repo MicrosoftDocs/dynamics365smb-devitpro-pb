@@ -39,7 +39,7 @@ Typing the shortcut `ttable` will create the basic layout for a table object whe
 ## Example 
 In the following example, the `SalesIntegration` table uses the `TableType` and `ExternalName` properties to link the underlying **Common Data Service** entity for mapping the fields from the `Sales` table with the specified fields. 
 
-```
+```AL
 table 50100 SalesIntegration
 {
     TableType = CDS;

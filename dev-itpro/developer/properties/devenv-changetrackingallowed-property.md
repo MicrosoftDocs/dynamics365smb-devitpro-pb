@@ -23,11 +23,11 @@ Indicates whether change tracking is enabled for the entity exposed through the 
 
 ## Syntax
 
-```
+```AL
 ChangeTrackingAllowed = true;
 ```
 
->[!NOTE]
+> [!NOTE]
 > The property **ChangeTrackingAllowed** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**.
 
  
