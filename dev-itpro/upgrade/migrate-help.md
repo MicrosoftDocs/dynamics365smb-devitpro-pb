@@ -53,7 +53,7 @@ For more information, see [Working with Application Objects as Text Files](/prev
 
 ## Moving to MarkDown
 
-Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
+Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://www.writage.com/) plugin for Word.  
 
 Once you have converted your content to MarkDown, we recommend storing your content in a repository, such as a Git repo in Azure DevOps, a private or public repo in GitHub, or a project in [MkDocs](https://www.mkdocs.org/). You can use open-source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open-source tools and do not have a hard dependency on Microsoft providing you with tools. The Custom Help Toolkit can help you prepare content for publishing. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
