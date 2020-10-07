@@ -24,14 +24,14 @@ For more information, see [User Assistance Model](../user-assistance.md) and [Co
 
 ## On-premises deployments
 
-For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you must choose between using the legacy Dynamics NAV Help Server or an online website. Help Server is a simple website that requires your Help to be in a specific format (HTML files), while the online website can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
+For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you must choose between using the legacy Dynamics NAV Help Server or an online website. Help Server is a simple website that requires your Help to be in a specific format (HTML files), while the online website can host any content that you want to make available. Your choice depends on the needs of your solution and your users. You can configure each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance to use either an online library or Help Server. If you add configuration for an online library, you must remove any settings for Help Server.  
 
 > [!IMPORTANT]
 > The legacy Dynamics NAV Help Server component will be deprecated. We recommend that you invest in a different type of website. For more information, see the [2020 release wave 2 release plan](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-) and [Custom Help Toolkit](../help/custom-help-toolkit.md).
 
-## Online website
+## Online library
 
-To display content from an online website that hosts your user assistance content, specify the URL in the settings for the Web client. The navsettings.json file must contain the following setting in the `ApplicationIdSettings` element:
+To display content from an website that hosts your user assistance content, specify the URL in the settings for the [!INCLUDE[webserver](../developer/includes/webserver.md)]. The navsettings.json file must contain the following setting in the `ApplicationIdSettings` element:
 
 ```json
 {
@@ -49,9 +49,10 @@ To display content from an online website that hosts your user assistance conten
 > [!NOTE]
 > Replace the value of the BaseHelpUrl key with the URL for your own website. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
 
-The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.
-
 For more information, see [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](../administration/configure-web-server.md).  
+
+> [!TIP]
+> The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
 
 ### Deploy content to your website
 
