@@ -44,7 +44,7 @@ The tooltips help users unblock themselves by providing an answer to the most li
 
 :::image type="content" source="media/ua_tooltip_standard.png" alt-text="A standard tooltip for a field on a card page.":::
 
-Table fields can be read-only in one page and editable in another so "What is this field?"-content can describe the difference. In [!INCLUDE [prodshort](developer/includes/prodshort.md)], help content is embedded in the page objects, and resource files can be used for translated user interfaces. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
+Table fields can be read-only in one page and editable in another so the tooltips describe the difference. In [!INCLUDE [prodshort](developer/includes/prodshort.md)], this type of "What is this field?"-content is embedded in the page objects, and resource files can be used for translated user interfaces. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 
 Most tooltips end with an automatically generated link to *learn more* as described in the [Help users learn more](#help-users-learn-more) section; however, tooltips for actions do not have *Learn more* links:
 
@@ -60,15 +60,23 @@ The Microsoft user assistance model requires a tooltip for all controls of type 
 
 - If the control is a field, begin with the verb *Specifies*.
 - If the control is an action, begin with a verb in the imperative form , such as *Calculate* or *View*.
-- Include the most valuable information that users need to perform the task(s) that the field or action supports. </br>For example, for the **Post** action, do not write *Post the document*. Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines*.  
-- Describe complex options in tooltips for option fields. </br>Use a colon to call out the option name and its description. See example 3 below.
-- Try to not exceed 200 characters including spaces. </br>This makes the tooltip easier to scan so the user can get unblocked quickly. However, the UI will render longer tooltip text if you want to provide more detailed user assistance.  
-- Do not use line breaks in the tooltip text. </br>The tooltip cannot render formatting or line breaks.
+- Include the most valuable information that users need to perform the task(s) that the field or action supports.
+
+    For example, for the **Post** action, do not write *Post the document*. Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines*.  
+- Describe complex options in tooltips for option fields.
+
+    Use a colon to call out the option name and its description. See example 3 below.
+- Try to not exceed 200 characters including spaces.
+
+    This makes the tooltip easier to scan so the user can get unblocked quickly. However, the UI will render longer tooltip text if you want to provide more detailed user assistance.  
+- Do not use line breaks in the tooltip text.
+
+    The tooltip cannot render formatting or line breaks.
 
 **Examples:**
 
 |Control Name  |Tooltip  |
-|---------|---------|
+|--------------|---------|
 |**Password** field |Specifies your company's password to the service that converts bank data. The password that you enter in this field must be the same as on the service provider's sign-on page. </br>(175 characters including spaces) |
 |**Entries** action |View the history of transactions that have been posted for the customer.</br> (72 characters including spaces)|
 |**Account Type** field|Specifies the purpose of the account. Total: Used to total a series of balances on accounts from many different account groupings. To use Total, leave this field blank. Begin-Total: A marker for the beginning of a series of accounts to be totaled that ends with an End-Total account. End-Total: A total of a series of accounts that starts with the preceding Begin-Total account. The total is defined in the Totaling field. </br>(522 characters including spaces)|
@@ -87,7 +95,7 @@ For the base version of [!INCLUDE [prodshort](developer/includes/prodshort.md)],
 
 On docs.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
 
-We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. Note that we can only accept feedback and contributions to the content in the *dynamics365smb-docs* repo and we cannot address issues or questions about the product.  
+We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the *dynamics365smb-docs* repo and we cannot address issues or questions about the product.  
 
 > [!IMPORTANT]
 > Microsoft only accepts pull requests to the *dynamics365smb-docs* repo, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
@@ -98,7 +106,7 @@ For more information, see [Extend, Customize, and Collaborate on the Help](help/
 
 ### Working in MarkDown
 
-If you fork one of our repos, you will be authoring in MarkDown. We recommend that you learn the basics by referring to the [Docs Markdown reference](/contribute/markdown-reference).  
+If you fork one of our repos, you will be authoring in MarkDown. We recommend that you learn the basics by referring to the [Docs Markdown reference](/contribute/markdown-reference) section in the Docs Contributor Guide.  
 
 The [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with MarkDown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit MarkDown.  
 
@@ -106,7 +114,7 @@ For other tips and tricks, see [Extend, Customize, and Collaborate on the Help](
 
 ## Translate the Help
 
-If you want to deliver a [localized application](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country, you will want to translate the Help. We suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
+If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country, you will want to translate the Help. We suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 
 The user interface text, including the tooltips, is translated as part of the application. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 
