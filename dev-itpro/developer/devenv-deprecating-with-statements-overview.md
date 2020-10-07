@@ -225,6 +225,8 @@ The Quick Fix code actions will automatically insert the pragma before and after
 > [!TIP]  
 > Remember to **Enable Code Actions** in the settings for the AL Language extension. For more information, see [Code Actions](devenv-code-actions.md).
 
+In the `app.json` file, you can set the `NoImplicitWith` flag to disable implicit with when you have rewritten all code. For more information, see [JSON Files](devenv-json-files.md#Appjson).
+
 ## Suppressing warnings 
 
 There are two ways of suppressing warnings to unclutter warnings while working on other issues and then afterwards you can fix the warnings at your own pace.
