@@ -12,7 +12,7 @@ ms.author: edupont
 
 # Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] implements a [user assistance model](../user-assistance.md) where tooltips explain all fields and actions and topics containing conceptual descriptions of functionality are published to a website. If you are building an application, you are expected to comply with this model. However, there are many ways in which you can migrate and reuse your existing Help within this model.  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] implements a [user assistance model](../user-assistance.md) where tooltips explain all fields and actions, and articles with conceptual descriptions of functionality are published to a website. If you are building an app, you are expected to comply with this model. However, there are many ways in which you can migrate and reuse your existing Help within this model.  
 
 ## Reusing existing web content
 
@@ -43,7 +43,11 @@ If you are migrating from an earlier version of [!INCLUDE[navnow_md](../develope
 
 Tooltips play an important role as part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] [user assistance model](../user-assistance.md), and we encourage you to apply tooltips to your controls and actions as well.  
 
-If you would like to reuse text from your Dynamics NAV Help for table fields, the [FieldTopicTextExtractor](../help/custom-help-toolkit-FieldTopicTextExtractor.md) tool can extract the first paragraph from your Dynamics NAV Help topics for table fields. The resulting spreadsheet will help you copy and paste the text from your Dynamics NAV Help topics into the ToolTip property of your controls.
+If you would like to reuse text from your Dynamics NAV Help for table fields, the [FieldTopicTextExtractor](../help/custom-help-toolkit-FieldTopicTextExtractor.md) tool can extract the first paragraph from your Dynamics NAV Help topics for table fields. The resulting spreadsheet will help you copy and paste the text from your Dynamics NAV Help topics into the ToolTip property of your controls.  
+
+Mapping the table fields to page controls is not always straightforward because the same table is often used by two or more pages. As a result, the page ID can be many numbers away from the table ID. It requires knowledge of the actual solution to determine which tooltips are relevant for which pages. The **FieldTopicTextExtractor** tool generates an Excel file that you can use for this purpose, since you can sort and filter, and then copy content in Excel.  
+
+In the base application, tooltips are in the page objects, so, at Microsoft, we edit code to edit tooltips. You do not have to do the same. You can choose to work with tooltips in the translation files or straight in the .AL files. Different solutions require different processes, so pick the process that is more efficient for you. We chose to associate the "What is this field?"-content with the user interface, meaning the controls on page objects. In the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help model, we chose a different approach, focusing on the database structure. Both approaches have their advantages and disadvantages, but the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user assistance model currently focuses on the user interface with tooltips on page objects. For more information, see [User Assistance Model](../user-assistance.md). 	
 
 For more information, see [Working with Application Objects as Text Files](/previous-versions/dynamicsnav-2016/dn789521%28v%3dnav.90%29) in the docs for [!INCLUDE [navcorfu_md](../developer/includes/navcorfu_md.md)], [How to Add Translated Strings By Importing and Exporting Multilanguage Files](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files) in the docs for [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)], and [Working with Translation Files](../developer/devenv-work-with-translation-files.md) for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
