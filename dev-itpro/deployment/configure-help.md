@@ -12,28 +12,26 @@ ms.author: edupont
 
 # Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-The default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] comes with conceptual overviews and other articles that publish to the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com//dynamics365/business-central/) site. This location is then accessible from the Help menu and through the Learn More links in all tooltips. Each extension that you add will include its own tooltips and links to Help. But what if you want to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server?  
+The default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] comes with conceptual overviews and other articles that publish to the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com//dynamics365/business-central/) site. This location is accessible from the Help menu and through the Learn More links in all tooltips. Each extension that you add will include its own tooltips and links to Help.
 
-These and other scenarios are also supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. But the options and possibilities are different, depending on your deployment scenario.  
+But what if you want to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
 ## Apps for online tenants
 
-When you build an app for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model. This includes tooltips and context-sensitive links to Help content that is hosted on a website.  
+When you build an app for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model. The user assistance model requires the use of tooltips and context-sensitive links to Help content that is hosted on a website.  
 
 For more information, see [User Assistance Model](../user-assistance.md) and [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 ## On-premises deployments
 
-For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you must choose between using the legacy Dynamics NAV Help Server or an online website. Help Server is a simple website that requires your Help to be in a specific format (HTML files), and the online website can host any content that you want to make available. Your choice depends on the concrete needs of your solution and your users. You can configure each client to use either an online library or Help Server. If you add configuration for an online library, you must remove the settings for Help Server.  
+For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you can choose between using the legacy Dynamics NAV Help Server and an online website, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. Help Server is a simple website that requires your Help to be in a specific format (HTML files), while the online website can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
 
 > [!IMPORTANT]
 > The legacy Dynamics NAV Help Server component will be deprecated. We recommend that you invest in a different type of website. For more information, see the [2020 release wave 2 release plan](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-) and [Custom Help Toolkit](../help/custom-help-toolkit.md).
 
 ## Online library
 
-Host your content on a website of your own choosing and specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
-
-The navsettings.json file must contain the following setting in the `ApplicationIdSettings` element:
+To display content from an website that hosts your user assistance content, specify the URL in the settings for the [!INCLUDE[webserver](../developer/includes/webserver.md)]. The navsettings.json file must contain the following setting in the `ApplicationIdSettings` element:
 
 ```json
 {
@@ -53,9 +51,12 @@ The navsettings.json file must contain the following setting in the `Application
 
 For more information, see [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](../administration/configure-web-server.md).  
 
+> [!TIP]
+> The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
+
 ### Deploy content to your website
 
-Currently, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has no firm requirements for the website that hosts your content. You can deploy your content using any tool and process, such as [Azure Static Web Apps](/azure/static-web-apps/), [Azure App Service](/azure/app-service/quickstart-html), a website that is based on [customization of the DocFx Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html), or third-party services such as [MkDocs](https://www.mkdocs.org/). For examples of how to build HTML files, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
+Currently, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has no firm requirements for the website that hosts your content. You can deploy your content using any tool and process, such as [Azure Static Web Apps](/azure/static-web-apps/), [Azure App Service](/azure/app-service/quickstart-html), a website that can render MarkDown files using a [customization of the DocFx Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html), or third-party services such as [MkDocs](https://www.mkdocs.org/). For examples of how to build HTML files, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
 ## Help Server
 
@@ -93,7 +94,7 @@ You can also still download the files that were made available for [!INCLUDE [na
 
 ## Fork the Microsoft repos, and customize or extend the content
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. For guidance about how to generate HTML files for your website, see [Build HTML files](../help/contributor-guide.md#build-html-files). For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
+If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the repos that contain translations. For guidance about how to generate HTML files for your website, see [Build HTML files](../help/contributor-guide.md#build-html-files). For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
 ## See Also
 
