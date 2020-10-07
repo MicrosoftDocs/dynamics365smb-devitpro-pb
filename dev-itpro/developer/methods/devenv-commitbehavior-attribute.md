@@ -3,7 +3,7 @@ title: "CommitBehavior Attribute"
 description: "The CommitBehavior attribute in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/07/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,8 @@ This will throw an exception and stop the execution of further code when a `comm
 > [!NOTE]  
 > The `CommitBehavior` only lasts for the method scope. Regardless of whether the method finishes successfully or if an error causes the method to exit prematurely, the `CommitBehavior` reverts to the standard behavior, where `commit` statements will commit to the database.
 
-## Example
+## Example - local method
+
 The example shown below illustrates how the attribute is used on a local method; it can also be applied on a global method.
 
 ```AL
@@ -79,8 +80,9 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-## Example
-This example illustrates how you can protect your code from commits happening in event subscriber code (typically written by a third party)
+## Example - event subscriber
+
+This example illustrates how you can protect your code from commits happening in event subscriber code; typically written by a third party.
 
 ```AL
 codeunit 50102 MyPublishingCodeunit
