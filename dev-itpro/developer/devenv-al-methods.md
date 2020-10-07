@@ -68,7 +68,18 @@ For example, the following method declaration includes two parameters: `MyCustom
 
 ### Return values (optional)
 
-A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type. For example, if the return value is a Text DataType, the text might have a length of 50.
+A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type. 
+
+For example, if the return value is a Text DataType, the text might have a length of 50.
+
+```AL
+    procedure MyMethod() ReturnValue: Text[50]
+        var result : Text[50];
+    begin
+        // do something important where result is calculated
+        ReturnValue := result;
+    end;
+```
 
 ## <a name="Callmethod"></a>Calling methods
 
