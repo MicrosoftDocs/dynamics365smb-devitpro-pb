@@ -38,13 +38,13 @@ The Windows client **remains supported** for the [!INCLUDE[prodshort](includes/p
 No. This change only impacts on-premises installations because the Windows client was only available on premises.
 
 ## Does this impact me if I use Business Central on premises?
-Yes. When you **choose to upgrade** to [!INCLUDE[prodshort](includes/prodshort.md)] 2019 release wave 2, you must switch to access [!INCLUDE[prodshort](includes/prodshort.md)] using one of the modern clients. The most popular choice on desktop computers is the web-browser client where your browser is pointing to an on-premises web server using a URL, such as this example (not active): https://myserver.mydomain.com/BC150   
+Yes. When you **choose to upgrade** to [!INCLUDE[prodshort](includes/prodshort.md)] 2019 release wave 2 or later, you must switch to access [!INCLUDE[prodshort](includes/prodshort.md)] using one of the modern clients. The most popular choice on desktop computers is the web-browser client where your browser is pointing to an on-premises web server using a URL, such as this example (not active): `https://myserver.mydomain.com/BC170`  
 
 ## What if I really want to have an installable component or at least an icon on my desktop?
-You can always add a browser shortcut on your desktop or pin the web page with [!INCLUDE[prodshort](includes/prodshort.md)] to your Windows task bar. Alternatively, the [!INCLUDE[prodshort](includes/prodshort.md)] Windows 10 desktop app, which is available from Microsoft Store, is a great way to access [!INCLUDE[prodshort](includes/prodshort.md)] both on premises and in the cloud. To get the app, go to [Microsoft Dynamics 365 [!INCLUDE[prodshort](includes/prodshort.md)]](https://www.microsoft.com/en-gb/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab) in the store.
+You can always add a browser shortcut on your desktop or pin the web page with [!INCLUDE[prodshort](includes/prodshort.md)] to your Windows task bar. Alternatively, the [!INCLUDE[prodshort](includes/prodshort.md)] Windows 10 desktop app, which is available from Microsoft Store, is a great way to access [!INCLUDE[prodshort](includes/prodshort.md)] both online and on-premises. To get the app, go to [Microsoft Dynamics 365 [!INCLUDE[prodshort](includes/prodshort.md)]](https://www.microsoft.com/en-us/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab) in the store.
 
 ## How does this impact mobile?
-There is **no impact** on mobile apps for [!INCLUDE[prodshort](includes/prodshort.md)] as they are already part of the modern-client family. For more information about the mobile apps, see [Getting [!INCLUDE[prodshort](includes/prodshort.md)] on Your Mobile Device](/dynamics365/business-central/install-mobile-app.md).  
+There is **no impact** on mobile apps for [!INCLUDE[prodshort](includes/prodshort.md)] as they are already part of the modern-client family. For more information about the mobile apps, see [Getting [!INCLUDE[prodshort](includes/prodshort.md)] on Your Mobile Device](/dynamics365/business-central/install-mobile-app).  
 
 ## Can I still work with Business Central data in Excel?
 Yes. There are multiple ways to work with [!INCLUDE[prodshort](includes/prodshort.md)] and Excel, including the following:
@@ -52,7 +52,7 @@ Yes. There are multiple ways to work with [!INCLUDE[prodshort](includes/prodshor
 - The Open in Excel feature that downloads any list as an Excel file for your processing or reporting  
 - The Edit in Excel feature that allows you to edit almost any list-based data in Excel and publish it back to [!INCLUDE[prodshort](includes/prodshort.md)]  
 
-For more information, see [Viewing and Editing in Excel From [!INCLUDE[prodshort](includes/prodshort.md)]](/dynamics365/business-central/across-work-with-excel.md). For instructions on how to configure it for on premises, see [Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](includes/prodshort.md)] Data](/dynamics365/business-central/dev-itpro/administration/configuring-excel-addin).
+For more information, see [Viewing and Editing in Excel From [!INCLUDE[prodshort](includes/prodshort.md)]](/dynamics365/business-central/across-work-with-excel). For instructions on how to configure it for on premises, see [Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](includes/prodshort.md)] Data](administration/configuring-excel-addin).
 
 Note that the legacy, COM-based Excel plugin that used to be included on the installation media is no longer supported.
 
