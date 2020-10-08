@@ -37,6 +37,13 @@ By setting the `GenerateCaptions` flag in the app.json file, you specify that yo
   "features": [ "TranslationFile", "GenerateCaptions" ]
 ```
 
+## GenerateLockedTranslations
+
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
+By setting the `GenerateLockedTranslations` flag in the app.json file, you specify that you want to generate `<trans-unit>` elements for locked labels in the XLIFF file. The default behavior is that these elements are not generated.
+
+
 ## Label syntax
 The label syntax is shown in the example below for the **Caption** property: 
 
