@@ -16,7 +16,7 @@ ms.author: jswymer
 
 Specifies why an object or element has been marked as **Pending** or **Removed** in the **ObsoleteState** property.  
 
-# Applies To
+## Applies To
 
 - Table objects
 - Table fields
