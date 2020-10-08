@@ -15,7 +15,6 @@
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
-### [Licensing](deployment/licensing.md)
 ### [Add your App to AppSource](administration/appsource.md)
 ### Get started with building apps
 #### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
@@ -81,6 +80,7 @@
 ## [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+## [Licenses and Entitlements](deployment/licensing.md)
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ## [Version Numbers in Business Central](administration/version-numbers.md)
