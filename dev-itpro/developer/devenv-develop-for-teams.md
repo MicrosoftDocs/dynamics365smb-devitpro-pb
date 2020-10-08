@@ -2,7 +2,7 @@
 title: "Developing Pages and Tables for Microsoft Teams Integration"
 description: Provides an introduction to developing pages for Microsoft Teams integration
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/08/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
