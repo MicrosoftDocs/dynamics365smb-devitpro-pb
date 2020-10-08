@@ -64,7 +64,7 @@ begin
         until Item.Next() = 0;
         exit(SumTotal / Counter);
     end;
-    end;
+end;
 ```
 
 ## See Also
