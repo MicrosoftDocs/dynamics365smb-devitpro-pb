@@ -700,6 +700,12 @@
 ### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
+<!-- Microsoft Teams -->
+## Integrating with Microsoft Teams
+### [Overview](developer/devenv-develop-for-teams.md)
+### [Extending Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### [FAQ](developer/devenv-dev-faq-teams.md)
+<!-- end Microsoft Teams -->
 <!-- Business Central API -->
 ## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
 <!-- end Business Central API -->
