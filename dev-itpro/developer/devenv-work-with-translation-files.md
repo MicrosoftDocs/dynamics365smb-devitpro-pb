@@ -2,7 +2,7 @@
 title: "Working with Translation Files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -35,6 +35,16 @@ By setting the `GenerateCaptions` flag in the app.json file, you specify that yo
 
 ```json
   "features": [ "TranslationFile", "GenerateCaptions" ]
+```
+
+### GenerateLockedTranslations
+
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
+By setting the `GenerateLockedTranslations` flag in the app.json file, you specify that you want to generate `<trans-unit>` elements for locked labels in the XLIFF file. The default behavior is that these elements are not generated. For more information, see [JSON Files](devenv-json-files.md).
+
+```json
+  "features": [ "GenerateLockedTranslations" ]
 ```
 
 ## Label syntax
