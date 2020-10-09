@@ -55,7 +55,7 @@ The following table lists the Business Central 15 versions and the minimum Busin
 
 |Version 15|Version 16|Version 17|
 |----------|----------|----------|
-|15.0 to 15.4|16.0|
+|15.0 to 15.4|16.0|17.0
 |[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|17.0
 |[15.6](https://support.microsoft.com/help/4549685)|[16.2](https://support.microsoft.com/help/4564072)|17.0
 |[15.7](https://support.microsoft.com/help/4564071)|[16.3](https://support.microsoft.com/help/4563407)|17.0
