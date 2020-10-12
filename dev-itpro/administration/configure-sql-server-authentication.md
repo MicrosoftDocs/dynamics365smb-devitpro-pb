@@ -51,9 +51,9 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
   
      For more information, see [Create a Login](https://msdn.microsoft.com/library/aa337562.aspx).  
   
-3.  Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+3.  Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and give the user the relevant privileges in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
   
-     For more information, see [Create a Database User](https://msdn.microsoft.com/library/aa337545.aspx).  
+     For more information, see [Create a Database User](/sql/relational-databases/security/authentication-access/create-a-database-user) in the SQL Server docs and the [Giving the service account database privileges in SQL Server](#ConfigSQL) in the current article.  
   
 ##  <a name="ConfigNavServer"></a> Configure SQL Server Authentication on the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Instance \(Non-Multitenant\)  
  You configure the [!INCLUDE[server](../developer/includes/server.md)] instance with the login credentials \(user name and password\) of the user account in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server that you want to use for authentication. You can do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
