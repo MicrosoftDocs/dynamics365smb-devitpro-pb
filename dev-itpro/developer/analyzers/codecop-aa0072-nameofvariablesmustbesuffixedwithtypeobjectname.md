@@ -1,5 +1,5 @@
 ---
-title: "Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming."
+title: "The name of variables and parameters must be suffixed with the type or object name."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/13/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0215
-Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.  
+# CodeCop Rule AA0072
+The name of variables and parameters must be suffixed with the type or object name.  
 
 ## Description
-Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.
+To improve readability the name of variables and parameters must be suffixed with the type or object name.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

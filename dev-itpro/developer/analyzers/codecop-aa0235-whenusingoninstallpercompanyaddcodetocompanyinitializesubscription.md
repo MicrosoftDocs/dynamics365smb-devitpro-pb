@@ -1,8 +1,8 @@
 ---
-title: "When using 'OnInstallPerCompany' you must also add 'OnCompanyInitialize' subscription."
+title: "When using 'OnInstallPerCompany' you should also add 'Company - Initialize'::'OnCompanyInitialize' event subscriber."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/13/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
