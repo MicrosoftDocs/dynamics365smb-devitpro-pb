@@ -1,7 +1,8 @@
 ---
 title: "Performance Article For Developers"
+description: Provides information for developers to help improve performance in Business Central
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,6 +57,7 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 
 ### Endpoint performance  
 
+#### Anti-patterns (do not do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
 
 Things that have historically caused performance on pages that are exposed as endpoints are:
@@ -70,11 +72,14 @@ Don't use temp tables as a source if you have a lot of records. Temp tables base
 
 Don't insert child records belonging to same parent in parallel. This causes locks on Sales Header and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
+#### Performance patterns (do this)
 Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
 The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
+
+If you want OData endpoints that work as data readers (e.g. for consumption in PowerBI), then consider using API queries and set DataAccessIntent = ReadOnly, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
 ### Web service client performance 
 
@@ -153,16 +158,16 @@ They come with different characteristics as described in this table:
 
 ### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping 
 
-The AL methods such as `FINDSET`, `CALCFIELDS`, `CALCSUMS`, and `SETAUTOCALCFIELDS` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
+The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
 
-- [CALCFIELDS, CALCSUMS, and COUNT](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
+- [CalcFields, CalcSums, and Count](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
 - [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
 
-One common use of the `CALCSUMS` method is to efficiently calculate totals. 
+One common use of the `CalcSums` method is to efficiently calculate totals. 
 
 Try to minimize work done in the `OnAfterGetRecord` trigger code. Common performance coding patterns in this trigger are:
 
-- Avoiding `CALCFIELDS` calls. Defer them until the end.
+- Avoiding `CalcFields` calls. Defer them until the end.
 - Avoiding repeated calculations. Move them outside the loop, if possible. 
 - Avoid changing filters. This pattern requires the server to throw away the result set.
 
@@ -180,7 +185,15 @@ Read more about query objects here:
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
 
+### <a name="partialrecords"></a>Pattern - Use partial records when looping over data or when table extension fields aren't needed
 
+When writing AL code where the fields needed on a record is known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
+
+Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the amount of table extensions that need to be joined.
+
+The performance gains compound when looping over many records, because both effects scale with the amount of rows loaded.
+
+For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
 ### <a name="tips"></a>Other AL performance tips and tricks 
 
@@ -216,7 +229,7 @@ The following are best practices for getting performant events:
 Table events change the behavior of SQL optimizations on the [!INCLUDE[server](../developer/includes/server.md)] in the following ways:
 
 - The [!INCLUDE[server](../developer/includes/server.md)] will issue SQL update/delete statements row in a for loop rather than one SQL statement.
-- They impact `MODIFYALL` and `DELETEALL` methods that normally do bulk SQL operations to be forced to do single row operations.
+- They impact `ModifyAll` and `DeleteAll` methods that normally do bulk SQL operations to be forced to do single row operations.
 
 ## Efficient data access 
 
@@ -290,10 +303,26 @@ You can use the `SessionInformation` data type in unit tests that track the numb
 
 For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
+### Performance Scenario and Regression Testing
+Use the Performance Toolkit to simulate the amount of resources that customers use in realistic scenarios to compare performance between builds of their solutions.
+
+The Performance Toolkit helps answer questions such as, "Does my solution for Business Central support X number of users doing this, that, and the other thing at the same time?" 
+
+### Performance Throughput Analysis
+The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
+
 ### Performance telemetry
 
-The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment). 
-- [Long Running SQL Queries](../administration/tenant-admin-center-telemetry.md#appinsights).
+The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment): 
+- Database locks
+- Long Running AL operations
+- Long Running SQL Queries
+- Page views
+- Reports
+- Sessions started
+- Web Service Requests
+
+Read more in this section: [How to use telemetry to analyze performance](/dynamics365/business-central/dev-itpro/performance/performance-online#telemetry)
 
 ### Troubleshooting
 

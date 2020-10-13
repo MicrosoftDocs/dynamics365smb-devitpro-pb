@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/16/2020
+ms.date: 10/01/2020
 ms.author: jswymer
 ---
 # Analyzing Extension Lifecycle Trace Telemetry
@@ -90,7 +90,7 @@ Occurs when an extension compiles successfully on the service. An extension comp
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0020**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
 |extensionCompilationResult |**Compilation succeeded without errors or warnings.**|
 | extensionName|Specifies the name of the extension that was compiled.|
 | extensionId|Specifies the AppID of the extension that was compiled.|
@@ -130,7 +130,7 @@ Occurs when an extension failed to compile on the service. An extension compiles
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0021**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
 |extensionCompilationResult |Specifies details about the error that occurred during compilation.|
 | extensionName|Specifies the name of the extension that failed to compile.|
 | extensionId|Specifies the AppID of the extension that failed to compile.|
@@ -287,7 +287,6 @@ Occurs when an extension fails to unpublish on the service.
 |eventId|**LC0019**|
 | extensionId|Specifies the AppID of the extension that failed to unpublish.|
 | extensionName|Specifies the name of the extension that failed to unpublish.|
-| extensionId|Specifies the AppID of the extension that failed to unpublish.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
@@ -328,6 +327,7 @@ Occurs when an extension synchronizes successfully on the tenant.
 | component|**Dynamics 365 Business Central Server**.|
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0012**|
 | extensionId|Specifies the AppID of the extension that was synchronized.|
@@ -369,6 +369,7 @@ Occurs when an extension fails to synchronize on the tenant.
 | component|**Dynamics 365 Business Central Server**.|
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0013**|
 | extensionId|Specifies the AppID of the extension that failed to synchronize.|
@@ -378,7 +379,7 @@ Occurs when an extension fails to synchronize on the tenant.
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
 | extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it is intended for use during development. It lets you to sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). It is typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
 | extensionVersion|Specifies the version of the extension was synchronized.|
-| failedReason|Specifies the error that occurred when synchronizing the extension.|
+| failureReason|Specifies the error that occurred when synchronizing the extension.|
 | result|**Failure**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
@@ -405,6 +406,7 @@ Occurs when an extension installs successfully on a tenant.
 | component|**Dynamics 365 Business Central Server**.|
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+| environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0010**|
 | extensionId|Specifies the AppID of the extension that was installed.|
@@ -443,6 +445,7 @@ Occurs when an extension failed to install on a tenant.
 | component|**Dynamics 365 Business Central Server**.|
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0011**|
 | extensionId|Specifies the AppID of the extension that failed to uninstall.|
@@ -483,6 +486,8 @@ Occurs when an extension is successfully uninstalled from a tenant.
 | component|**Dynamics 365 Business Central Server**.|
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0016**|
 | extensionId|Specifies the AppID of the extension that was uninstalled.|
@@ -523,6 +528,7 @@ Occurs when an extension failed to uninstall on a tenant.
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0017**|
 | extensionId|Specifies the AppID of the extension that failed to uninstall.|
@@ -568,10 +574,13 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 | component|**Dynamics 365 Business Central Server**.|
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We 
+| environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0022**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
+| extensionId|Specifies the AppID of the extension that failed to uninstall.|
 | extensionName|Specifies the name of the extension that was being upgraded.|
+| extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
 | extensionVersionFrom|Specifies the old version of the extension being upgraded.|
 | result|**Success**|
@@ -606,10 +615,13 @@ Occurs when an extension failed to update on the service. <!--The update operati
 | component|**Dynamics 365 Business Central Server**.|
 | componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
 | deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+| environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0023**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
+| extensionId|Specifies the AppID of the extension that failed to uninstall.|
 | extensionName|Specifies the name of the extension that was being upgraded.|
+| extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
 | extensionVersionFrom|Specifies the old version of the extension being upgraded.|
 | failureReason|Specifies the error that occurred during upgrade.|

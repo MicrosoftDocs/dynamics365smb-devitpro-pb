@@ -1,7 +1,7 @@
 ---
 title: "SourceTableTemporary Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,22 +12,25 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
 
 # SourceTableTemporary Property
+
 Sets whether the source table is a temporary table.  
   
 ## Applies to  
   
--   Pages  
+- Pages  
   
 ## Property Value  
- **True** if you want the source table to be a temporary table; otherwise, **false**. The default value is **false**.
+
+**True** if you want the source table to be a temporary table; otherwise, **false**. The default value is **false**.
 
 ## Syntax
-```
+
+```AL
 SourceTableTemporary = true;
 ```
 
 ## See Also
- [Properties](devenv-properties.md)   
+
+[Properties](devenv-properties.md)   

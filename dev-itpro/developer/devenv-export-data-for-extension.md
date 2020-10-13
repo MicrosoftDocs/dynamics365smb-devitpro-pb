@@ -3,7 +3,7 @@ title: "Exporting data for Extensions"
 description: "How you can export data such as permisisons, web services, and table data for an extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -65,7 +65,7 @@ The data must be exported into files to be included in the extension. To use the
 3. Add the exported table data files to the Visual Studio Code project that contains your extension.
 4. Call the procedure in a Codeunit with the Subtype property `Install` or `Upgrade` and specify the table ID  in the `NavApp.LoadPackageData` procedure as shown in the following example.
 
-    ```
+    ```AL
     codeunit 50100 MyExtensionUpgrade
     {
         Subtype = Upgrade;

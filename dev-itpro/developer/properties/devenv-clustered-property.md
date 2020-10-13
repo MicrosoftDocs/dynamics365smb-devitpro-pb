@@ -1,7 +1,7 @@
 ---
 title: "Clustered Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,9 +12,8 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Clustered Property
+
 Sets a value that indicates whether the index is clustered.  
   
 ## Applies to  
@@ -28,7 +27,8 @@ Table keys
 **True** if the index is clustered, otherwise **false**. The default is **false**.
 
 ## Syntax
-```
+
+```AL
 Clustered = true;
 ```
 
@@ -41,7 +41,8 @@ There can be only one clustered key on a table.
 ## Example
 
 The following example defines a secondary key to be a clustered index. 
-```
+
+```AL
 keys
 {
     key(PrimaryKey; ID)
@@ -55,5 +56,7 @@ keys
 }
 
 ```
+
 ## See Also  
- [Table Key](devenv-key-properties.md)  
+
+[Table Key](devenv-key-properties.md)  

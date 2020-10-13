@@ -1,8 +1,8 @@
 ---
-title: "Mark Method"
+title: "RecordRef.Mark Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Mark Method
+# RecordRef.Mark Method
 Marks a record. You can also use this method to determine whether a record is marked.
 
 
@@ -34,11 +34,11 @@ Specifies if a record is marked.
 ## Return Value
 *Marked*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+**true** if the record is marked; otherwise, **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

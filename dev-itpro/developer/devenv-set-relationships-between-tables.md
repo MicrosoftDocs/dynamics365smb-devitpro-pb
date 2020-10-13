@@ -1,8 +1,9 @@
 ---
 title: "Setting Relationships Between Tables"
+description: "Relationships between tables in relational database design for Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -10,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Setting Relationships Between Tables
+
 It is common to distinguish among the following types of relationships between tables in relational database design:  
   
 - One-to-many relationships  
@@ -36,6 +38,7 @@ If your database contains tables with related data, then you can define a relati
 
 
 ## Table relationships and the TableRelation property  
+
 Table relationships are defined in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] using the **TableRelation** property. This property allows you to define both simple and advanced table relations.  
   
 > [!NOTE]  
@@ -58,7 +61,7 @@ Advanced table relations are typically prefixed with a conditional statement and
 ```  
 
 For example:
-```
+```AL
 table 50120 TableWithRelation
 {
   fields
@@ -89,15 +92,17 @@ The following table describes each of the symbols.
 |Filter|A filter expression, such as 10&#124;20..30.|  
 
 ## Examples of table relationships  
+
 For example, you have an **Orders** table that stores orders and a **Salesperson** table that stores the names of all salespeople in your company. In the **Orders** table, you can include a **Salesperson** field that identifies the salesperson. By setting up a relationship between these two tables, you can check whether the **Salesperson** field in the **Orders** table contains a valid code.  
   
- ![](../media/NAV_ADG_7_Diag_7.png "NAV\_ADG\_7\_Diag\_7")  
+ ![Table relationships](../media/NAV_ADG_7_Diag_7.png "NAV\_ADG\_7\_Diag\_7")  
   
 For example, you have a **Vendors** table with all your vendors and a **Currency Code** table. You can create a relationship between a **Currency Code** field in the **Vendors** table and the **Currency Code** table. This will allow users to look up information about valid currency codes.  
   
 Furthermore, if you change one of the currency codes in the **Currency Code** table, then the change is automatically propagated to all tables that refer to this code.  
   
 ## See Also  
+
 [Overview of Tables](devenv-tables-overview.md)  
 <!-- [How to: Synchronize Table and SQL Server Relationships](How-to--Synchronize-Table-and-SQL-Server-Relationships.md)  
 [Maintaining Table Relationships on SQL Server](Maintaining-Table-Relationships-on-SQL-Server.md)   -->

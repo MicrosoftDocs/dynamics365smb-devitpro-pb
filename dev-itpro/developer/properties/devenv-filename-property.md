@@ -1,7 +1,7 @@
 ---
 title: "FileName Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,16 +11,18 @@ author: jswymer
 ---
 
 # FileName Property
+
 [!INCLUDE[windows_client_only](../includes/windows_client_only.md)]
 
 Sets the name of the external file to read data from or write data to an XMLport.  
   
 ## Applies to  
   
--  XMLports  
+- XMLports  
 
 ## Syntax
-```
+
+```AL
 FileName = 'File.txt';
 ```
  
@@ -36,6 +38,7 @@ If **FileName** is blank, then a default request options page tab will be create
 > In the [!INCLUDE[webclient](../includes/webclient.md)], because web browser restrictions, the file name cannot be set. Users will have to manually select the file when the XMLport is run.
   
 ## See Also  
- [IMPORT Method (XMLport)](../methods-auto/xmlport/xmlportinstance-import-method.md)   
- [FILENAME Method (XMLport)](../methods-auto/xmlport/xmlportinstance-filename-method.md)   
- [UseRequestPage Property](devenv-userequestpage-property.md)
+
+[IMPORT Method (XMLport)](../methods-auto/xmlport/xmlportinstance-import-method.md)   
+[FILENAME Method (XMLport)](../methods-auto/xmlport/xmlportinstance-filename-method.md)   
+[UseRequestPage Property](devenv-userequestpage-property.md)

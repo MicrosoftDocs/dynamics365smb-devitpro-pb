@@ -1,14 +1,13 @@
 ---
 title: "Merging an Application Database with a Tenant Database"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: dynamics365-business-central
 ms.assetid: 39a81332-8db1-4e5d-acda-915bf9591880
-caps.latest.revision: 5
 author: jswymer
 ---
 # Migrating to Single-Tenancy From Multitenancy

@@ -3,7 +3,7 @@ author: solsen
 title: "Testing the Advanced Sample Extension"
 description: "Includes test code for the advanced example extension."
 ms.custom: na
-ms.date: 07/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,7 +61,7 @@ Our CustomerRewardsTest project will be referencing objects from the CustomerRew
 > [!NOTE]  
 > Another prerequisite is to update the app.json with a dependency to the test toolkit.
 
-```
+```json
  {
   ...  
   "dependencies": [ 
@@ -91,14 +91,14 @@ We will be using the Application Test Toolkit to automate and run the tests that
 - Application objects for running application tests such as the **Test Tool** page. 
 
 In order to install the Application Test Toolkit:
-1. Open the NavContainerHelper prompt found on the Desktop. You will see a list of functions that you can run on the container.
+1. Open the BCContainerHelper prompt found on the Desktop. You will see a list of functions that you can run on the container.
 2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
 ```
 Import-TestToolkitToBCContainer -containerName <name-of-container> 
 ```
 
-Alternatively, if you use the `New-BCContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+Alternatively, if you use the `New-BCContainer` function from the BCContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
 
 Without further configuration, the Import-TestToolkitToBCContainer and New-BCContainer with -includeTestToolkit will install the framework, the libraries, and all base application tests. Both the Import-TestToolkitToBCContainer and New-BCContainer cmdlets support two additional parameters, which limits the number of apps installed:
 
@@ -145,7 +145,7 @@ We can now begin writing the tests for the extension.
 
 The 50102 **MockCustomerRewardsExtMgt** codeunit contains all the code that mocks the process of validating the activation code for Customer Rewards. Because we cannot make requests to external services in the tests, we define a subscriber method **MockOnGetActivationCodeStatusFromServerSubscriber** for handling the **OnGetActivationCodeStatusFromServer** event when it is raised in the **Customer Rewards Ext. Mgt.** codeunit. The **EventSubscriberInstance** property for this codeunit is set to **Manual** so that we can control when the subscriber function is called. We want the subscriber method to be called only during our tests. We also define a Setup procedure that modifies the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table so that the actual **OnGetActivationCodeStatusFromServerSubscriber** will not handle **OnGetActivationCodeStatusFromServer** event when it is raised. 
 
-```
+```AL
 codeunit 50102 MockCustomerRewardsExtMgt 
 
 { 
@@ -291,7 +291,7 @@ Finally, to verify that the customer got the correct reward points and level, we
 
 There are many more areas that we look at in the sample test. See the full codeunit below for the rest of the tests. 
 
-```
+```AL
 codeunit 50103 "Customer Rewards Test" 
 
 { 
@@ -965,7 +965,7 @@ You can now see all the test methods from your test codeunits.
 ## Failing Tests 
 Let us look at what to do if you have a failing test. To create a failing test, we will modify the **SetDefaultCustomerRewardsExtMgtCodeunit** method in codeunit 50100 **Customer Rewards Install Logic** to the following: 
 
-``` 
+```AL
 procedure SetDefaultCustomerRewardsExtMgtCodeunit(); 
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 

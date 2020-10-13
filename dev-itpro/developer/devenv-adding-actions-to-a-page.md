@@ -4,7 +4,7 @@ description: Create and display actions in the ribbon of all pages and group the
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -31,7 +31,7 @@ For more information about different types of actions and where to use them, see
 
 The page actions are displayed on the header section. There are multiple tabs to help navigate to the right item.
   
-In order to add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. For more information about adding, moving, and modifying actions, see [Using Keywords to Place Actions and Controls](devenv-pages-overview.md#using-keywords-to-place-actions-and-controls).
+In order to add actions to the action bar, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. For more information about adding, moving, and modifying actions, see [Using Keywords to Place Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls).
 
 > [!NOTE]  
 > Actions can only be linked to a page, or to a group control. Actions cannot be linked to fields, or parts on a page.
@@ -50,7 +50,7 @@ The following example shows how to use different action areas on a **page object
 3. Navigate menu: The `area(Navigation)` action area is used to display the action in the Navigate tab. This action and other actions in this example uses the **RunObject** property to assign a page to the action.
 4. Report menu: The `area(Reporting)` action area is used to display this action in the Report menu, and also a Group control is added as a submenu to this menu. It sets the **Caption** property to make the action group visible in the Reports menu.
 
-```
+```AL
 page 50110 PageName
 {
     PageType = Card;

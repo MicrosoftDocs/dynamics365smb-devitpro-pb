@@ -1,7 +1,7 @@
 ---
 title: "Using the Date Method to Retrieve Day, Month, and Year Data"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ The following table contains data about sales orders for customers. The **Order 
 
 The following query object retrieves data from the sample Sales Header table. The query includes a totals method that counts the total the number of records from the table included in the dataset.
   
-```
+```AL
 query 50100 "Sample Data Query"
 {
     QueryType = Normal;

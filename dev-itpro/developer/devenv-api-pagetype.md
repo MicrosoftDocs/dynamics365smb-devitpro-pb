@@ -3,14 +3,17 @@ title: "API Page Type"
 description: "Description of the API page type used for exposing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.topic: article
+ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # API Page Type
 
-Pages of the type `API` are used to create versioned, webhook-supported, OData v4 enabled REST web services. This type of page cannot be displayed in the user interface, but is intended for building reliable integration services. When creating this page type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tpage - Page of type API` to get the right template and the list of these properties automatically filled in. This page type cannot be extended by creating a page extension object. Instead, you must create a new API by adding a page object.
+Pages of the type `API` are used to create versioned, webhook-supported, OData v4 enabled REST web services. This type of page cannot be displayed in the user interface, but is intended for building reliable integration services. When creating this page type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tpage - Page of type API` to get the right template and the list of these properties automatically filled in. This page type cannot be extended by creating a page extension object. Instead, you must create a new API by adding a page object. 
+
+Pages of the type `API` can be used to develop a custom API. For more information, see [Developing a Custom API](devenv-develop-custom-api.md).
 
 ## Naming conventions
 
@@ -29,7 +32,7 @@ At design time, the compiler will show warnings on casing violations and errors 
 The following page example publishes an API available at:
 `../contoso/app1/v2.0/companies({id})/customers`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
 
-```
+```AL
 page 50120 MyCustomerApi
 {
     PageType = API;
@@ -66,6 +69,7 @@ page 50120 MyCustomerApi
 
 [AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  
+[Developing a Custom API](devenv-develop-custom-api.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [APIPublisher Property](properties/devenv-apipublisher-page-property.md)  
 [APIGroup Property](properties/devenv-apigroup-page-property.md)  

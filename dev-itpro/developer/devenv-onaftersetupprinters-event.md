@@ -2,7 +2,7 @@
 title: "OnAfterSetupPrinters Event"
 description: Describe the OnAfterSetupPrinters Event in Business Central. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ The OnAfterSetupPrinters event is raised when you:
 procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
 ```
 -->
-```
+```AL
 [IntegrationEvent(false, false)]
 local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
 ```

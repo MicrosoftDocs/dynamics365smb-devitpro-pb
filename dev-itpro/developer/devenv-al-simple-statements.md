@@ -1,7 +1,8 @@
 ---
 title: "AL Simple Statements"
+description: "Describes the simple statements in AL for Business Central with examples"
 ms.custom: na
-ms.date: 06/22/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,33 +25,33 @@ You use the ":=" operator for assignment statements.
 ### Example  
 The following example assigns a constant integer value to an integer variable that you have defined.  
 
-```  
+```AL  
 Count := 1;  
 ```  
 
 ### Example  
  The following example assigns a value that consists of a constant, an operator, and a variable.  
 
-```  
+```AL  
 Amount := 2 * Price;  
 ```  
 
 ### Example  
 The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you have defined.  
 
-```  
+```AL  
 OK := TestFile.Open('C:\temp\simple.xml');  
 ```  
 
 The return value of the `Open` method is optional. If you do not handle the return value in your code, then a run-time error occurs when a method returns **false**. The following example causes a run-time error if the file `C:\temp\simple.xml` cannot be opened.  
 
-```  
+```AL  
 TestFile.Open('C:\temp\simple.xml');  
 ```  
 
 You can handle the return value by using an if-then statement.  
 
-```  
+```AL  
 if TestFile.Open('C:\temp\simple.xml') then begin  
   // continue running  
 else  
@@ -67,7 +68,7 @@ If a simple or compound statement that follows the AssertError keyword causes an
 
 If a statement that follows the AssertError keyword does not cause an error, then the AssertError statement causes the following error and the test method that is running produces a FAILURE result:  
 
-```
+```AL
 TestAsserterrorFail: FAILURE
 
 An error was expected inside an AssertError statement.
@@ -76,7 +77,7 @@ An error was expected inside an AssertError statement.
 ### Example
 To create a test method to test the result of a failure of a `CheckDate` method that you have defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
-```  
+```AL  
 InvalidDate := 19000101D;  
 InvalidDateErrorMessage := Text001;  
 AssertError CheckDate(InvalidDate);  
@@ -87,21 +88,21 @@ IF GetLastErrorText <> InvalidDateErrorMessage then
 
 This example requires the following variables.
 
-```  
+```AL  
 var
     InvalidDate : Date;
     InvalidDateErrorMessage : Text; 
     Text001 : Label 'The date is outside the valid date range.';
 ```  
 
-## With statements
+## With statements (to be deprecated)
 
 > [!IMPORTANT]  
-> Using the `with` statement will be deprecated and removed for cloud development in a future release. With the next release this will be a warning, which will become an error in a future release.
+> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it will is a warning, which will become an error in a future release. <br>Using `with` statements introduces possible uniqueness collisions when multiple extensions contribute to the same objects because it allows working with members using just simple names instead of qualifying them. To avoid this going forward, we are marking the use of `with`, be it implicit or explicit as warnings. With this release, you can use a quick action to fix these files, as well as suppress obsolete warnings for now. Code that contains `with` statements will, however, need to be refactored before `with` statements are compiled with errors. For more information, see [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md). For information about using directives in code, see [Directives in AL](directives/devenv-directives-in-al.md) and [Pragma ImplicitWith Directive in AL](directives/devenv-directive-pragma-implicitwith.md).
 
 The following syntax shows a with-do statement.  
 
-```  
+```AL  
 with <Record> do  
   <Statement>  
 ```  
@@ -119,7 +120,7 @@ You can nest several `with` statements. If you have identical names, then the in
 ### Example  
 This example shows two ways to write the same code that creates a record variable that you can commit later.  
 
-```  
+```AL  
 CustomerRec."No." := '1234';  
 CustomerRec.Name := 'Windy City Solutions';  
 CustomerRec."Phone No." := '555-444-333';  
@@ -130,14 +131,14 @@ Message('A variable has been created for this customer.');
 
 This example requires the following variables.
 
-```  
+```AL  
 var
     CustomerRec : Record Customer;
 ```  
 
 The following example shows another way to create a record variable that you can commit later: 
 
-```  
+```AL  
 with CustomerRec do begin  
   "No." := '1234';  
   Name := 'Windy City Solutions';  
@@ -156,7 +157,7 @@ If you nest a `with-do` block within another explicit or implicit `with-do` bloc
 #### Example  
 The following example demonstrates nested `with-do` blocks. Both `with-do` blocks are attached to a Customer Ledger Entry record variable.  
 
-```  
+```AL  
 with CustLedgEntry do begin  
   Insert;  
   ...;  
@@ -170,7 +171,7 @@ end;
 #### Incorrect example  
 The following example demonstrates incorrect code in which you cannot directly tell which record variable that the MyField field refers to.  
 
-```  
+```AL  
 with CustLedgEntry do begin
   ...;  
   with VendLedgEntry do begin  
@@ -184,4 +185,5 @@ end;
 
 [Control Statements](devenv-al-control-statements.md)  
 [Methods](devenv-al-methods.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [AL Essential Methods](devenv-essential-al-methods.md)

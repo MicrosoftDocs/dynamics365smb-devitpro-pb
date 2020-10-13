@@ -3,7 +3,7 @@ title: Simple Card Page Example
 description: "Provides AL code for a simple card type page"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ The AL code in this article creates a simple card page that displays records fro
 
 For a more detailed explanation of the list page, see [Designing Card and Document Pages](devenv-designing-card-pages.md).
 
-```
+```AL
 page 50112 SampleCustomerCard
 {
     PageType = Card;

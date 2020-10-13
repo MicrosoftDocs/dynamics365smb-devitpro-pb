@@ -2,7 +2,7 @@
 title: "An affix is required"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ The rule validates that at least one of the affixes specified in the `mandatoryA
 
 The `mandatoryAffixes` property expects to receive an array of string as follows:
 
-```
+```json
 {
     "mandatoryAffixes": [ "Foo", "Bar" ]
 }
@@ -44,7 +44,7 @@ The `mandatoryAffixes` property expects to receive an array of string as follows
 In order to preserve backward compatibility, the properties `mandatoryPrefix` and `mandatorySuffix` are still supported by the AppSourceCop.
 
 Both properties expect to receive a string as follows:
-```
+```json
 {
     "mandatoryPrefix": "Prefix",
     "mandatorySuffix": "Suffix"
@@ -69,7 +69,7 @@ For objects which already exist in the version of the extension used as baseline
 #### Example - Adding an affix to an existing codeunit
 
 For instance, if the baseline of the extension contains a codeunit without affix:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure()
@@ -80,7 +80,7 @@ codeunit 50100 MyCodeunit
 ```
 
 The extension should be modified into:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     ObsoleteState = Pending;

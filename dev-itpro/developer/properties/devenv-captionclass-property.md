@@ -1,7 +1,7 @@
 ---
 title: "CaptionClass Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Controls the caption that is used in the label of a field in a database table or
 
 ## Syntax
 
-```
+```AL
 CaptionClass = '1,2,3';
 ```
   

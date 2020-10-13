@@ -1,7 +1,7 @@
 ---
 title: "XMLVersionNo Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,21 +12,24 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # XMLVersionNo Property
-Set which version of XML the XML document conforms to. Two options are available: V10 \(the default\) and V11.  
+
+Sets which version of XML the XML document conforms to. Two options are available: V10 \(the default\) and V11.  
   
 ## Applies to  
- XMLports  
+
+- XMLports  
 
 ## Syntax
-```
+
+```AL
 XMLVersionNo = V10;
 ```
   
-## Remarks  
- The XML version number is inserted into the XML document as the XML declaration.  
+## Remarks
+
+The XML version number is inserted into the XML document as the XML declaration.  
   
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)

@@ -2,7 +2,7 @@
 title: "Query Overview"
 description: "Description of the query object."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: jswymer
 
 # Queries in Business Central
 
-Queries enable you to retrieve records from one or more tables or data sources and then combine the data into rows and columns in a single dataset. Queries can also perform calculations on data, such finding the sum or average of all values in a column of the dataset.
+Queries enable you to retrieve records from one or more tables or data sources and then combine the data into rows and columns in a single dataset. Queries can also perform calculations on data, such as finding the sum or average of all values in a column of the dataset.
 
 ## Query Types
 
@@ -43,7 +43,7 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 ## Query Data Type
 The query resulting dataset cannot be used directly by other objects such as pages and reports. Instead, you must create a [Query Data Type](methods-auto/query/query-data-type.md) instance and apply methods for handling the data from the query object. You must first call the [OPEN Method](methods-auto/query/queryinstance-open-method.md) to be able to perform actions such as reading the dataset or setting filters and you must use the [CLOSE Method](methods-auto/query/queryinstance-close-method.md) when you are finished. You can write this code in a codeunit, for example. The following example illustrates how to do this. 
 
-```
+```AL
 var
     MyQuery: Query "Customer SalesQuantity";
     Text000: Label 'Customer name = %1, Quantity = %2';

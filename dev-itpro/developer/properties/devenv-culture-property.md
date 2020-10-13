@@ -1,7 +1,7 @@
 ---
 title: "Culture Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,17 +12,16 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Culture Property
 
 Specifies the culture of the .NET assembly.
 
 ## Syntax
-```
+```AL
 Culture = 'neutral';
 ```
 
-## See Also  
+## See Also
+
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

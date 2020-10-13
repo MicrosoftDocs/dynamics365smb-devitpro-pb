@@ -2,12 +2,12 @@
 title: Role Center Behaviors
 description: This section describes in which areas the Role Center pages have a different behavior in the tablet client and the phone client from the web client.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 

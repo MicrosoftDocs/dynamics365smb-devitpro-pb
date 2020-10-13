@@ -2,7 +2,7 @@
 title: "App Management for ISVs"
 author: jswymer
 ms.custom: na
-ms.date: 07/24/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ For more information about the API, see [App Management API](app-management-api.
 > [!NOTE]
 > Currently, direct access to the API is only available for the ISVs working with the Embed apps; not Add-on and Connect apps. To manage versions of Add-on and Connect apps, you use Partner Center to upload the new app versions to **Business Central** offers. The apps will undergo a technical and marketing validation before becoming available on AppSource. After passing validation, the new versions are made available in Business Central administration center to the customers that have these apps installed.
 
-## Legal information 
+## Legal information
 
 The apps that are stored in the App Repository are governed by the Microsoft Publisher Agreement. For more information, see [Publishing your business application](https://partner.microsoft.com/solutions/business-applications/isv-publish). 
 

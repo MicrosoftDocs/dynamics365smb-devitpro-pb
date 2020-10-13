@@ -1,7 +1,7 @@
 ---
 title: "Removing Elements from the User Interface According to Permissions"
 ms.custom: na
-ms.date: 06/26/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

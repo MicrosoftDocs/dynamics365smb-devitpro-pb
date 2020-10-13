@@ -3,7 +3,7 @@ title: "Write, WriteText, Read, and ReadText Method Behavior"
 description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ When writing to and Reading from a stream object using the Write, WriteText, Rea
 
 To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlogTable`.
 
-```
+```AL
 var
     myInt: Integer;
     MyRecord: Record MyBlobTable;

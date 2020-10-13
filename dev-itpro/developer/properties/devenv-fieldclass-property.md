@@ -1,7 +1,7 @@
 ---
 title: "FieldClass Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # FieldClass Property
+
 Sets the class of the field.  
   
 ## Applies to  
@@ -27,7 +28,7 @@ Fields
 
 ## Syntax
 
-```
+```AL
 FieldClass = FlowFilter;
 ```  
 

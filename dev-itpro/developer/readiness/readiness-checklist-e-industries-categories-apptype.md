@@ -3,11 +3,11 @@ title: "Industries, Categories and App Type"
 description: "Guidelines on industries, categories and app type "
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Industries, Categories, App Type

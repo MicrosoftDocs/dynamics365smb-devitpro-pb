@@ -2,7 +2,7 @@
 title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
@@ -20,7 +20,7 @@ Before you start, we recommend getting familiar with the basics of setting up an
 
 #### Breaking changes
 
-when converting from C/AL to AL, it is important that you do not introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
+When converting from C/AL to AL, it's important that you don't introduce any breaking schema changes to the database. Otherwise, you won't be able to synchronize the new extension with the database.
 
 ## Task 1: Import the test library into your C/AL solution 
 
@@ -32,11 +32,11 @@ You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev
 
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
 - C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
-- [Compile-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
+- [Compile-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
 
 ## Task 3: Export the application objects to the new TXT syntax
 
-Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
+Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
 
 - Omit omit all system objects, which have IDs in the 2000000000 range. 
 - Use the `ExportToNewSyntax` switch to export the objects in a syntax that is compatible with the Txt2Al conversion tool.
@@ -196,8 +196,6 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
 6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
-    To open the settings.json, select **File** > **Preferences** > **Settings**, then look for the **Edit settings.json** link. For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
-
     Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
 
     ```
@@ -208,6 +206,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
     ]
     ```
+    For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
     > [!NOTE]  
     > Adding assemblies to the folders in your assembly probing paths is not automatically detected by the compiler. You must restart Visual Studio Code for the changes to be detected.
@@ -444,8 +443,8 @@ If you converted the test library form C/AL to AL, you will now create and build
 
 If you are performing a technical upgrade from version 14.0 to version 15.0 or 16, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
 
-    - [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
-    - [Technical Upgrade to to version 15.0]](upgrade-technical-upgrade-v14-v16.md#Preparedb)
+- [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
+- [Technical Upgrade to to version 15.0]](upgrade-technical-upgrade-v14-v16.md#Preparedb)
 
 <!--
 ## Task 11: Publish your project

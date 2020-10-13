@@ -1,7 +1,8 @@
 ---
 title: "ConfirmHandler Attribute"
+description: "The ConfirmHandler attribute in AL for Business Central"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +21,7 @@ AL methods on test codeunits. A test method is a method that has the [Test Attri
 
 ## Syntax  
   
-```  
+```AL
 [ConfirmHandler]
 procedure ConfirmHandler(Question: Text[1024]; var Reply: Boolean);
 ```    

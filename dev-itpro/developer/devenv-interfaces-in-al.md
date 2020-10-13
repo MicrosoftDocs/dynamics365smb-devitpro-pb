@@ -3,7 +3,7 @@ title: "Interfaces in AL"
 description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ The following example defines an interface `IAddressProvider`, which has one met
 
 The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the `IAddressProvider` interface.
 
-```
+```AL
 interface IAddressProvider
 {
     procedure GetAddress(): Text;

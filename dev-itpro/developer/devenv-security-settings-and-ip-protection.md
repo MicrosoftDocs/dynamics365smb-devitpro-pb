@@ -3,7 +3,7 @@ title: "Security Setting and IP Protection"
 description: This topic explains how to set the security setting and IP protection against downloading or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 ## Changing the IP protection setting
 If you want to allow debugging into an extension to view the source code, you can add the `showMyCode` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `ShowMyCode` flag is set to **true** in the app.json for extension A as shown in the example below:
 
-```
+```json
 "showMyCode": true
 ```
 

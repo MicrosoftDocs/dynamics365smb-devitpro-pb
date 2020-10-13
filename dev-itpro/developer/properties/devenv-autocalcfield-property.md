@@ -1,7 +1,7 @@
 ---
 title: "AutoCalcField Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprt
  **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
 
 ## Syntax
-```
+```AL
 AutoCalcField = false;
 ```
 

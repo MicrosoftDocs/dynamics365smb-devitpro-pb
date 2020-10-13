@@ -1,7 +1,7 @@
 ---
 title: "How to: Set Up Multiple Web Server Instances for the Business Central"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -111,14 +111,15 @@ At the command prompt, run the New-NAVWebServerInstance cmdlet. The following ar
 
 RootSite example:
 
-    ```  
-    New-NAVWebServerInstance -WebServerInstance MyBCWebsite -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType RootSite -WebSitePort 8081 -PublishFolder "C:\Web Client\WebPublish"
-    ```  
+```  
+New-NAVWebServerInstance -WebServerInstance MyBCWebsite -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType RootSite -WebSitePort 8081 -PublishFolder "C:\Web Client\WebPublish"
+```  
+
 SubSite example:
 
-    ```  
-    New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType Subsite -ContainerSiteName MySiteContainer -WebSitePort 8081 -PublishFolder "C:\WebClient\WebPublish"
-    ```  
+```  
+New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType Subsite -ContainerSiteName MySiteContainer -WebSitePort 8081 -PublishFolder "C:\WebClient\WebPublish"
+```  
 
 -  Susbtitute *MyBCWebsite* with the name that you want to give the web application in IIS for the web server instance. If you are creating a SubSite deployment type, this name will become part of the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] application, for example, https://MyWebServer:8081/MyWebApp.  
   

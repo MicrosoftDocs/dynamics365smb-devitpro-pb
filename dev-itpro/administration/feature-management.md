@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
-ms.date: 06/11/2020
+ms.date: 10/01/2020
 ms.author: mikebc
 ---
 

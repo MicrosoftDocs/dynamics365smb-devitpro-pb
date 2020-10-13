@@ -1,7 +1,7 @@
 ---
 title: "InFooterBar Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,24 +12,25 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # InFooterBar Property
+
 Sets whether an action should be viewed as an exit action in the lower part of the page.  
   
 ## Applies to  
   
--   Actions  
-  
--   Pages  
+- Actions  
+- Pages  
  
 ## Property value
+
 **True** if the action is viewed as an exit action, otherwise **false**. The default is **false**.
 
 ## Syntax
-```
+
+```AL
 InFooterBar = false;
 ```
 
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

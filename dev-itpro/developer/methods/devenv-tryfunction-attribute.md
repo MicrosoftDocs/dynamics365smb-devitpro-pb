@@ -1,7 +1,8 @@
 ---
 title: "TryFunction Attribute"
+description: "The TryFunction attribute in AL for Business Central"
 ms.custom: na
-ms.date: 05/12/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# TryFunction
+# TryFunction Attribute
 
 Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run.  
   
@@ -19,10 +20,10 @@ Specifies the method to be a try method, which can be used to catch and handle e
 - AL methods 
   
 > [!NOTE]  
-> In test and upgrade codeunits, this property only applies to normal methods as specified by the [Normal Attribute \(Test Codeunits\)](../methods/devenv-normal-attribute.md) or [MethodType Property \(Upgrade Codeunits\)](devenv-methodtype-property-upgrade-codeunits.md).  
+> In test and upgrade codeunits, this property only applies to normal methods as specified by the [Normal Attribute \(Test Codeunits\)](devenv-normal-attribute.md) or [MethodType Property \(Upgrade Codeunits\)](../devenv-methodtype-property-upgrade-codeunits.md).  
 
 ## Syntax
-```
+```AL
 [TryFunction]
 local procedure MyTryMethod()
 ```
@@ -39,4 +40,4 @@ For more information, see [Handling Errors by Using Try Methods](../devenv-handl
 [Essential AL Methods](../devenv-essential-al-methods.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md)  
-[Properties](devenv-properties.md)
+[Properties](../properties/devenv-properties.md)

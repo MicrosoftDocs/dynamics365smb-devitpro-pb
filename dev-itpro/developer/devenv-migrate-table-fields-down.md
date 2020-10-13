@@ -2,7 +2,7 @@
 title: "Moving Tables and Fields to Extensions Down the Dependency Graph"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ The receiving extension will contain the table and fields that you want to move.
 
 1. In the releasing extension AL project, add a migration.json file that points to the ID of the target extension.
 
-    ```
+    ```json
     { 
     "apprules": [ 
         { 

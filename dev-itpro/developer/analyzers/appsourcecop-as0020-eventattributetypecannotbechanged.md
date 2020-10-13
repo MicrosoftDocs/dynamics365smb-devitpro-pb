@@ -2,7 +2,7 @@
 title: "The type of events cannot be changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,7 +57,7 @@ Internal events can only be subscribed to from within the same module. It is the
 ### Example 1 - Converting an integration type event to a business type event
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [IntegrationEvent(true, false)]
@@ -68,7 +68,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(true)]
@@ -83,7 +83,7 @@ In the newer version of the extension, the sender remains exposed through the bu
 ### Example 2 - Converting an internal event to an integration event
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [InternalEvent(true)]
@@ -94,7 +94,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [IntegrationEvent(true, false)]
@@ -111,7 +111,7 @@ The event `MyEvent` now becomes available for other extensions.
 ### Example 1 - Conversion of a business type event to an internal type event
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
@@ -122,7 +122,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [InternalEvent(false)]
@@ -135,7 +135,7 @@ codeunit 50100 MyCodeunit
 In the newer version, the sender exposed by `MyEvent` is not accessible to subscribers anymore. If a dependent extension relies on it, this will lead to a compilation error similar to `'MyEvent' is inaccessible due to its protection level (AL0161)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', true, true)]
@@ -150,7 +150,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 2 - Conversion of an integration type event that exposed variables to a business type event
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [IntegrationEvent(true, true)]
@@ -164,7 +164,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(true)]
@@ -180,7 +180,7 @@ codeunit 50100 MyCodeunit
 In the newer version, the global variables exposed by `MyEvent` are not accessible to subscribers anymore. If a dependent extension relies on global variables, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'myGlobalVariable' is not found (AL0282)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', true, true)]
@@ -195,7 +195,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 3 - Conversion of an integration type event to a business type event that stops exposing its sender
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [IntegrationEvent(true, false)]
@@ -206,7 +206,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
@@ -219,7 +219,7 @@ codeunit 50100 MyCodeunit
 In the newer version, the sender exposed by `MyEvent` is not accessible to subscribers anymore. If a dependent extension relies on it, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'sender' is not found (AL0282)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', true, true)]

@@ -1,7 +1,7 @@
 ---
 title: "CompressionType"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,17 +11,15 @@ ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
 caps.latest.revision: 13
 ---
 
- 
-
 # CompressionType Property
 
 Specifies whether data compression is used on the table, and if so, what type of compression is used. 
   
 ## Applies to  
   
--   Table objects.
+- Table objects.
 
-    The [TableType property](devenv-tabletype-property.md) must be `Normal`. This property cannot be used on table extension objects.
+  The [TableType property](devenv-tabletype-property.md) must be `Normal`. This property cannot be used on table extension objects.
 
 ## Property Values  
 
@@ -30,7 +28,7 @@ Specifies whether data compression is used on the table, and if so, what type of
 |None         |Do not use compression on the table.|
 |Page        |Compress the table on a page-level. This includes row, prefix, and dictionary compression.| 
 |Row        |Compress the table on a row-level.|
-|Unspecified        |Use the compression type that is specified externally on the table, for example, in SQL Server.|
+|Unspecified    |Use the compression type that is specified externally on the table, for example, in SQL Server.|
 
 ## Remarks
 
@@ -39,13 +37,16 @@ With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.m
 For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression).
 
 ## Syntax
-```
+
+```AL
 CompressionType = None|Page|Row|Unspecified; 
 ```
 
 ## Example
+
 The following code snippet sets page-level compression on table 50100.
-```
+
+```AL
 table 50100 MyTable
 {
     TableType = Normal;
@@ -56,7 +57,8 @@ table 50100 MyTable
        ...
 ```
 
-## See Also  
+## See Also
+
 [Properties](devenv-properties.md)  
 [Page object](../devenv-page-object.md)  
 [Set-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/get-navtenant)  

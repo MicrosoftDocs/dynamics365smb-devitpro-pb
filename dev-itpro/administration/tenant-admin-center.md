@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 05/11/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ---
 # The Business Central Administration Center
@@ -30,9 +30,9 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 - Admin agent
 - Helpdesk agent
 
-Internal administrators are users who are assigned the **Global admin** role in the Microsoft 365 admin center. These users are typically system administrators, IT professionals, or super users at the customer's company. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Office 365 admin content.  
+*Internal administrators* are users who are assigned the **Global admin** role or the **Dynamics 365 Admin** role in the Microsoft 365 admin center. These users are typically system administrators, IT professionals, or super users at the customer's company. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
 
-The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
+The *admin agent* and *helpdesk agent* roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
 
 ### Mobile apps
 

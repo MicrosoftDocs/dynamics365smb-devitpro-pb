@@ -3,12 +3,12 @@ title: "Serializing .NET Framework Types"
 description: "How to serialize .NET Framework Types"
 author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics-nav-2018"
 ms.assetid: 60509047-8419-4b08-a391-83117489fdee
 caps.latest.revision: 17
 ms.author: solsen

@@ -1,13 +1,14 @@
 ---
-title: "Technical Upgrade Quick Reference"
+title: "Single-Tenant Full Upgrade Quick Reference"
+description: Get an overview of the steps required to upgrade from one version of Business Central on-premises to the next.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Business Central Single-Tenant Full Upgrade Quick Reference

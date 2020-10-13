@@ -3,7 +3,7 @@ title: "Adding Help Links from Pages, Reports, and XMLports"
 description: "This topic shows how to specify the help link."
 author: edupont04
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,14 +22,14 @@ The context-sensitive Help link is generated based on a configuration setting in
 
 The following examples show how you can specify the *ContextSensitiveHelpPage* property from new pages, reports, and XMLports:
 
-```
+```AL
 page 50100 MyPageWithHelp
 {
     ContextSensitiveHelpPage = 'sales-rewards';
 }
 ```
 
-```
+```AL
 report 50100 MyReportWithHelp
 {
     requestpage
@@ -39,7 +39,7 @@ report 50100 MyReportWithHelp
 }
 ```
 
-```
+```AL
 xmlport 50100 XmlPortWithHelp
 {
     requestpage

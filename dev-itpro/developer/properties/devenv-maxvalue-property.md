@@ -1,7 +1,7 @@
 ---
 title: "MaxValue Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,14 +12,13 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # MaxValue Property
+
 Sets the maximum numeric value for a field.  
   
 ## Applies to  
   
--   Page Fields  
+- Page Fields  
   
 ## Property Value  
   
@@ -31,14 +30,17 @@ Sets the maximum numeric value for a field.
 |**23:59:59**|Time|  
 
 ## Syntax
-```
+
+```AL
 MaxValue = 100;
 ```
   
-## Remarks  
- The field setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **MaxValue** is not validated.  
+## Remarks
+
+The field setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **MaxValue** is not validated.  
   
 ## See Also  
- [MinValue Property](devenv-minvalue-property.md)   
- [NotBlank Property](devenv-notblank-property.md)   
- [Numeric Property](devenv-numeric-property.md)
+
+[MinValue Property](devenv-minvalue-property.md)   
+[NotBlank Property](devenv-notblank-property.md)   
+[Numeric Property](devenv-numeric-property.md)

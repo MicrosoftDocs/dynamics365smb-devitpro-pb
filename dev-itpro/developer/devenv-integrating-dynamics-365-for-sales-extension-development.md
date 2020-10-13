@@ -2,7 +2,7 @@
 title: "Enabling Common Data Service Tables for Extension Development"
 description: "This topic explains how to enable Common Data Service tables for the extension development process."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ Typing the shortcut `ttable` will create the basic layout for a table object whe
 ## Example 
 In the following example, the `SalesIntegration` table uses the `TableType` and `ExternalName` properties to link the underlying **Common Data Service** entity for mapping the fields from the `Sales` table with the specified fields. 
 
-```
+```AL
 table 50100 SalesIntegration
 {
     TableType = CDS;

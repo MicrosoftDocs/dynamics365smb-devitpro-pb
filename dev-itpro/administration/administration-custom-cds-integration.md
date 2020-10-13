@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 
 # Customizing an Integration with Common Data Service
@@ -328,9 +328,38 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 
 }
 ```
+## Customizing Uncoupling
+Entities might require custom code to remove couplings, for example, to change entities before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function InsertIntegrationTableMapping in your codeunit, as follows:
 
+```
+local procedure InsertIntegrationTableMapping(var IntegrationTableMapping: Record "Integration Table Mapping"; MappingName: Code[20]; TableNo: Integer; IntegrationTableNo: Integer; IntegrationTableUIDFieldNo: Integer; IntegrationTableModifiedFieldNo: Integer; TableConfigTemplateCode: Code[10]; IntegrationTableConfigTemplateCode: Code[10]; SynchOnlyCoupledRecords: Boolean)
+begin
+    IntegrationTableMapping.CreateRecord(MappingName, TableNo, IntegrationTableNo,  IntegrationTableUIDFieldNo, IntegrationTableModifiedFieldNo, TableConfigTemplateCode, IntegrationTableConfigTemplateCode, SynchOnlyCoupledRecords, IntegrationTableMapping.Direction::Bidirectional, 'CDS', Codeunit::"CRM Integration Table Synch.", Codeunit::"CDS Int. Table Uncouple");
+end;
+
+```
+
+During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following table describes the events that are published by codeunit Int. Rec. Uncouple Invoke. 
+
+* **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+* **OnAfterUncoupleRecord** - Occurs after coupling is removed, and can be used to change data after uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnAfterUncoupleRecord. The event removes couplings to the contacts linked to the uncoupled customers and vendors.
+
+For more information about how to subscribe to events, see [Subscribing to Events](/developer/devenv-subscribing-to-events.md).
+
+Be aware that custom uncoupling is running in background as it could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities and it might take significant time.
+
+> [!TIP]
+> To reset Company ID on uncoupling custom entities just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities, users can subscribe to the OnHasCompanyIdField event in codeunit CDS Integration Mgt. (ID 7200), as follows:
+>
+> ```
+> [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Integration Mgt.", 'OnHasCompanyIdField', '', false, false)]
+> local procedure HandleOnHasCompanyIdField(TableId: Integer; var HasField: Boolean)
+> begin
+>   if TableId = Database::"CDS Worker" then
+>     HasField := true;
+> end;
+> ```
 ## Create default integration table mappings and field mappings
-
 For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **Employee**). There are two types of mapping:  
 
 - **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity.  
@@ -408,6 +437,38 @@ Users can now manually synchronize employee records in [!INCLUDE[prodshort](../i
 
 > [!TIP]  
 > To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
+
+### Enable customers to reset selected integration table mappings to the default settings
+Customers might make changes to the integration table mappings that they later regret. To enable them to reset selected custom integration table mappings to the default, rather than all custom table mappings, follow these steps:
+
+* In the same codeunit created for this section, add an event subscriber to **OnBeforeHandleCustomIntegrationTableMapping** and point to the default behavior, as follows:
+
+    ```
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Integration Management", 'OnBeforeHandleCustomIntegrationTableMapping', '', false, false)]
+    local procedure HandleCustomIntegrationTableMappingReset(var IsHandled: Boolean; IntegrationTableMappingName: Code[20])
+    var
+        IntegrationTableMapping: Record "Integration Table Mapping";
+    begin
+        case IntegrationTableMappingName of
+            'EMPLOYEE-WORKER':
+                begin
+                    InsertIntegrationTableMapping(
+                        IntegrationTableMapping, 'EMPLOYEE-WORKER',
+                        DATABASE::Employee, DATABASE::"CDS Worker", C
+                        DSWorker.FieldNo(cdm_workerId), CDSWorker.FieldNo(ModifiedOn),
+                        '', '', true);
+                    InsertIntegrationFieldMapping('EMPLOYEE-WORKER',
+                        Employee.FieldNo("First Name"), CDSWorker.FieldNo(cdm_FirstName),
+                        IntegrationFieldMapping.Direction::Bidirectional, '', true, false);
+                    ...
+                    IsHandled := true;
+                end;
+                ...
+        end;
+    end;
+    ```
+> [!Important]  
+> You must set the the IsHandled property to True to avoid triggering the default implementation. Otherwise, all custom table mappings will be reset to default, regardless of the user's selection.
 
 ## Customizing Synchronization  
 

@@ -4,12 +4,12 @@ description: Use the User Personalization page to assign a user to a profile, an
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 ---
 
 # Assign a User to a Profile

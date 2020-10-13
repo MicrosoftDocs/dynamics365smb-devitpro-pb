@@ -1,7 +1,7 @@
 ---
 title: "RunPageLink Property"
 ms.custom: na
-ms.date: 05/14/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,9 @@ Sets up a link to the page you are launching. Set the RunPageLink property to es
   
 - Page Actions  
   
-  
 ## Syntax example
 
-```
+```AL
 action(ShowVendors)
 { 
     ...
@@ -35,7 +34,8 @@ action(ShowVendors)
     ...
 }
 ```
-```
+
+```AL
 action(CustomerBalance)
 {   
     ...

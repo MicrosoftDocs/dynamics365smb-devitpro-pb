@@ -2,7 +2,7 @@
 title: "Extensible Property"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Sets a value that indicates whether a table, page, or enum can be extended. If t
 
 ## Syntax
 
-```
+```AL
 table 50111 MyTable
 {
     DataClassification = CustomerContent;
@@ -38,7 +38,8 @@ table 50111 MyTable
 
 ```
 
-## See Also  
+## See Also
+
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
 [Access Property](devenv-access-property.md)  

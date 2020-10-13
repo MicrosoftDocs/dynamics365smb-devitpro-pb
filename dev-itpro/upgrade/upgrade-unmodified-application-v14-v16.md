@@ -1,7 +1,8 @@
 ---
 title: "Upgrading Unmodified C/AL Application to Version 16"
+description: Describes how to upgrade an unmodified Business Central 14 application to version 16 base application
 ms.custom: na
-ms.date: 04/29/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -99,7 +100,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ``` 
 
-    Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo?view=businesscentral-ps), you can unpublish all extensions by using a single command:
+    Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), you can unpublish all extensions by using a single command:
 
     ```powershell
     Get-NAVAppInfo -ServerInstance <BC14 server instance> | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
@@ -188,7 +189,7 @@ When you installed version 16 in **Task 1**, a version 16 [!INCLUDE[server](../d
 
 This task is optional, but it's recommended. You can choose to skip it for now and do it later. In this task, you'll increase the application_version that's stored in $ndo$dbproperty table of the application database. The application version isn't changed automatically. The application version serves two purposes:
 
-- Enables running the Start-NAVDataUpgrade cmdlet later in Task 8 of this article. The application version is compared with the tenant's version. If the application version is greater, a data upgrade can be run. If you skip this task, you'll have to use the `-SkipAppVersionCheck` switch with Start-NAVDataUpgrade cmdlet in Task 8. 
+- Enables running the Start-NAVDataUpgrade cmdlet later in Task 8 of this article. The application version is compared with the tenant's version. If the application version is greater, a data upgrade can be run. If you skip this task, you'll have to use the `-SkipAppVersionCheck` switch with Start-NAVDataUpgrade cmdlet in Task 9. 
 - The application version is shown in the client on the **Help and Support** page. This task ensures that page displays the latest application version.
 
 The version has the format `major.minor.build.revision`, such as, '14.3.14824.1'. As a minimum, you increase the revision by 1. However, we recommend setting the value to application build number for the version 16 update. You can get this number from the [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706) page.
@@ -221,7 +222,7 @@ Later, when you synchronize and upgrade the tenant(s), the new application versi
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 6: Publish symbols and extensions
+## Task 7: Publish symbols and extensions
 
 In this task, you'll publish the platform symbols and extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
@@ -281,7 +282,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "<path to extension>"
     ```
 
-## Task 7: Restart server instance
+## Task 8: Restart server instance
 
 Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for completing the upgrade.
 
@@ -291,7 +292,7 @@ Restart-NAVServerInstance -ServerInstance <server instance name>
 
 This step is important, otherwise you might experience issues when you run the data upgrade.
 
-## Task 8: Synchronize tenant
+## Task 9: Synchronize tenant
 
 In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -356,7 +357,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 9: Upgrade data
+## Task 10: Upgrade data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -395,7 +396,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 10: Install 3rd-party extensions
+## Task 11: Install 3rd-party extensions
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -403,7 +404,7 @@ Complete this task to install third-party extensions for which a new version was
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
-## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 

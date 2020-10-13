@@ -1,7 +1,8 @@
 ---
 title: "RecordId Method (Record)"
+description: "The RecordId method in AL for Business Central"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +16,7 @@ Gets the RecordId of the record that is currently selected in the table. If no t
   
 ## Syntax  
   
-```  
-  
+```AL
 RecordId := Record.RecordId;  
 ```  
   
@@ -54,7 +54,7 @@ The following example opens table 18 \(Customer\) as a Record variable that is n
 |------------------|--------|---------------|  
 |MyTextConst|Text|The record ID for the last record is: %1|  
   
-```  
+```AL
 MyRecord.FindLast;  
 RecID := MyRecord.RecordId;  
 MESSAGE(MyTextConst, RecID);  

@@ -3,7 +3,7 @@ title: "Using the Client to Create Profiles"
 description: "Gives an overview of how to create profiles by using the client together with Visual Studio Code."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -103,7 +103,7 @@ The sections that follow explain a bit more about the file types and creating th
 
 Each user-created profile is exported to a separate AL file. This file contains the `profile` object that defines the profile's ID, name, and Role Center. It also includes references to the page customizations it uses. For example, let's say you created a profile with the ID **MyProfile** that uses the role center page **9022 Business Manager Role Center**.  You then customized the Business Manager Role Center itself and the **Customer** list page. The exported profile package would contain a file called **PROFILE.MyProfile.al**. This file would include the following code:
 
-```
+```AL
 profile MyProfile
 {
   CaptionML = ENU='My Profile';
@@ -126,7 +126,7 @@ Customizations made to extension-based profiles are exported to a profile extens
 
 For example, let's say you changed the description and customized the **Customer** page for the **Business Manager** profile that is provided by the Base Application extension. The profile package would then contain the file **ProfileExtension._BUSINESS MANAGER.al**. This file will contain code similar to the following code:
 
-```
+```AL
 profileextension BUSINESSMANAGER_1 extends "BUSINESS MANAGER"
 {
   CaptionML = ENU='Business Manager';
@@ -171,7 +171,7 @@ The files would include code similar to the following code:
 
 ##### PageCustomization._Business Manager Role Center_.Configuration1.al
 
-```
+```AL
 pagecustomization Configuration1 customizes "Business Manager Role Center"
 {
   layout
@@ -189,7 +189,7 @@ pagecustomization Configuration1 customizes "Business Manager Role Center"
 
 ##### PageCustomization._Customer List_.Configuration2.al
 
-```
+```AL
 pagecustomization Configuration2 customizes "Customer List"
 {
   layout
@@ -207,7 +207,7 @@ pagecustomization Configuration2 customizes "Customer List"
 
 ##### PageCustomization._Customer List_.Configuration3.al
 
-```
+```AL
 pagecustomization Configuration3 customizes "Customer List"
 {
   layout

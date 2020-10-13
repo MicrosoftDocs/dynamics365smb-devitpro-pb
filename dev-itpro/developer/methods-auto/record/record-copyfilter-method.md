@@ -1,8 +1,8 @@
 ---
-title: "CopyFilter Method"
+title: "Record.CopyFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CopyFilter Method
+# Record.CopyFilter Method
 Copies the filter that has been set for one field and applies it to another field.
 
 

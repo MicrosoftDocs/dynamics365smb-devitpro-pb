@@ -2,7 +2,7 @@
 title: "The AppSourceCop configuration must specify the list of countries targeted by the application"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ The AppSourceCop configuration must specify the list of countries targeted by th
 
 ## Remarks
 In the AppSourceCop.json file specify the setting as shown in the example below:
-```
+```json
 "supportedCountries": ["DE", "AT"];
 ```
 

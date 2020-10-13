@@ -2,7 +2,7 @@
 title: "AutoFormatExpression Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Sets an AL expression that specifies how to format data.
 - Reports  
   
 ## Syntax
-```
+```AL
 AutoFormatExpression = '<Currency Code>';
 AutoFormatType = 2;
 ```
@@ -40,7 +40,7 @@ For more information, see [Formatting Decimal Values in Fields](../devenv-format
 
 The following example uses **AutoFormatExpression** property to set the format of decimal values to USD.
 
-```
+```AL
 AutoFormatExpression = 'USD';
 AutoFormatType = 1;
 ```
@@ -50,7 +50,7 @@ For example, this will result in a value like 7,564.00.
 
 Changing the **AutoFormatExpression** property to `ÌRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
 
-```
+```AL
 AutoFormatExpression = 'IRD';
 AutoFormatType = 1;
 ```
@@ -60,7 +60,7 @@ For example, this will result in a value like 7,564.
 
 The following example is similar to the previous example, except it adds a $ sign before the amount.
 
-```
+```AL
 AutoFormatExpression = '1,USD';
 AutoFormatType = 10;
 ```
@@ -71,7 +71,7 @@ For example, this will result in a value like $7,564.00.
 
 This example prefixes the decimal value with a $, includes a thousand separator, and has a maximum of two decimal places, such as $76,453.21:
 
-```
+```AL
 AutoFormatType = 1;
 AutoFormatExpression = '$<precision, 2:2><standard format, 0>':
 ```

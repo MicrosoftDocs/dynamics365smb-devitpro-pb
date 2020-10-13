@@ -1,5 +1,5 @@
 ---
-title: Environment types | Microsoft Docs
+title: Production and Sandbox Environments
 description: Learn about the differences between production and sandbox environments for Dynamics 365 Business Central. 
 author: edupont04
 ms.service: dynamics365-business-central
@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 04/27/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ---
 
@@ -30,9 +30,13 @@ You can create environments of different types. Which type of environment to cho
 
 [!INCLUDE [admin-env-prod](../developer/includes/admin-env-prod.md)]
 
+[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
+
 ## Sandbox environments
 
 [!INCLUDE [admin-env-sandbox](../developer/includes/admin-env-sandbox.md)]
+
+[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
 ### Precautions for sandbox environments with production data
 

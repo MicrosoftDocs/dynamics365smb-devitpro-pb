@@ -1,8 +1,8 @@
 ---
-title: "Find Method"
+title: "RecordRef.Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Find Method
+# RecordRef.Find Method
 Finds a record in a table based on the values stored in the key fields.
 
 
@@ -30,18 +30,18 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies how to perform the search. The table will be searched until the record is found or there are no more records. Each character in the string can be present only one time. You can use the following characters:
 -   =  search for a record that equals the key values (default)
--   >  search for a record that is larger than the key values
--   <  search for a record that is less than the key values
+-   \>  search for a record that is larger than the key values
+-   \<  search for a record that is less than the key values
 -   +  search for the last record in the table (+ can only be used alone)
 -   -  search for the first record in the table (- can only be used alone)
-You can combine the '=', '>', and '<' characters. If this parameter contains '=', '>', or '<', then you must assign value to all fields of the current and primary keys before you call FIND.
+You can combine the '=', '\>', and '\<' characters. If this parameter contains '=', '\>', or '\<', then you must assign value to all fields of the current and primary keys before you call FIND.
   
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

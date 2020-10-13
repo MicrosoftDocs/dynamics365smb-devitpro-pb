@@ -9,8 +9,8 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Finland, local functionality
-ms.date: 04/01/2020
-ms.author: SorenGP
+ms.date: 10/01/2020
+ms.author: edupont
 
 ---
 
@@ -24,7 +24,12 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 |----|----|
 |Moved| The Multiple Interest Rates feature is no longer specific to Finland, so we have made it generally available in the standard product. |
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-fi](../includes/fields-obsolete-fi.md)]
+
 ## See Also
+
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  

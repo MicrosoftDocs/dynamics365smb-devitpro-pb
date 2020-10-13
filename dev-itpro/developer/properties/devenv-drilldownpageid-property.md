@@ -1,7 +1,7 @@
 ---
 title: "DrillDownPageID Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,12 +11,12 @@ author: SusanneWindfeldPedersen
 ---
 
 # DrillDownPageID Property
+
 Sets the ID of the page to use as a drill-down.  
   
 ## Applies to  
   
 - Page Fields  
-  
 - Tables  
 
 <!--  //NAV
@@ -26,7 +26,7 @@ Sets the ID of the page to use as a drill-down.
 
 ## Syntax
 
-```
+```AL
 DrillDownPageID = 50100;
 ```
 

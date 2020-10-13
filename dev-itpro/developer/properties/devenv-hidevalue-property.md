@@ -1,7 +1,7 @@
 ---
 title: "HideValue Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,21 +12,24 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # HideValue Property
+
 Sets whether to show or hide a value for the user based on an expression.  
   
 ## Applies to  
- Page Fields  
+
+- Page Fields  
   
 ## Property Values  
- **True** if the value is hidden; otherwise, **false**. The default is **false**.  
+
+**True** if the value is hidden; otherwise, **false**. The default is **false**.  
 
 ## Syntax
-```
+
+```AL
 HideValue = true;
 ```
   
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)

@@ -1,7 +1,7 @@
 ---
 title: "InsertAllowed Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,22 +12,24 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # InsertAllowed Property
+
 Sets a value to specify whether users can add records while using a page.  
   
 ## Applies to  
   
--   Pages  
+- Pages  
   
 ## Property Value  
- **True** if you want to allow users to add records; otherwise, **false**. The default value is **true**.  
+
+**True** if you want to allow users to add records; otherwise, **false**. The default value is **true**.  
 
 ## Syntax
-```
+
+```AL
 InsertAllowed = false;
 ```
  
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

@@ -1,16 +1,17 @@
 ---
 title: Web Server Components Deployment Scenarios
 description: This article describes how to install and configure the Dynamics NAV Web Server components in different network topologies and the deployment scenarios.
+ms.author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: ae4ef9f5-f1bd-4792-a232-f8cab454f3c5
-caps.latest.revision: 16
+author: jswymer
 ---
+
 # Deployment Topologies
 
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment consists of various components that support the production, development, and testing. These components can be installed on various computers, in different combinations. The deployment process varies depending on the topology that you implement. This article provides an overview of the supported topologies. 
@@ -24,7 +25,7 @@ This section describes how to install and configure the [!INCLUDE[webservercompo
   
 ## Deployment Scenarios 
 
-The following table lists some of the most typical deployment topologies for the INCLUDE[prodshort](../developer/includes/prodshort.md)], with links to detailed instructions. However, components can be installed on one, two, or three machines in any combination. So your scenario might vary.
+The following table lists some of the most typical deployment topologies for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)], with links to detailed instructions. However, components can be installed on one, two, or three machines in any combination. So your scenario might vary.
 
 |Topology|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|More information|  
 |--------------|---------------------------------------|---|  

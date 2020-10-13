@@ -1,7 +1,7 @@
 ---
 title: "Gesture Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,12 +12,15 @@ author: SusanneWindfeldPedersen
 ---
 
 # Gesture Property
+
 Specifies a gesture that runs the action on a device with a touch interface, such as the phone client.
 
 ## Applies to
+
 *  Page Action controls
 
 ## Property values
+
 The property has the following values:
 
 |  Value  |  Description  |
@@ -27,7 +30,8 @@ The property has the following values:
 |**RightSwipe**|Swipe in from the left edge of the touch interface.  |
 
 ## Syntax
-```
+
+```AL
 Gesture = None;
 ```
 

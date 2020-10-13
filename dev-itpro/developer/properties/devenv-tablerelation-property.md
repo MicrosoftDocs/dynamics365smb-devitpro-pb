@@ -2,7 +2,7 @@
 title: "TableRelation Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ In addition, when you choose the option to test the relationships between primar
 
 This example shows a simple application of the `TableRelation` property for creating a `Vendors` sub-table by filtering between the records to include only the ones where the purchase expenses are higher than 10,000. 
 
-```
+```AL
 table 50100 "Main Vendors"
 {
   fields
@@ -55,7 +55,7 @@ table 50100 "Main Vendors"
 
 Moreover, the `TableRelation` property can be modified through a [table extension](../devenv-table-ext-object.md). Modifications to the `TableRelation` are additive and evaluated after the existing value. The primary use case is conditional table relations based on conditional enums. The following example illustrates how to define first, an enum, and then a table setting a `TableRelation`. 
 
-```
+```AL
 enum 50120 TypeEnum
 {
   Extensible = true;
@@ -83,7 +83,7 @@ table 50120 TableWithRelation
 ```
 The next code sample implements a table extension of the table defined above and an enum extension. The combined table relation is evaluated top-down. That means that the first unconditional relation will prevail, meaning that you cannot change an existing `TableRelation` from Customer to Item, since the original table relation is unconditional. 
 
-```
+```AL
 enumextension 50133 TypeEnumExt extends TypeEnum
 {
   value(10; Resource) { }

@@ -2,7 +2,7 @@
 title: "Deprecated Features in W1"
 author: bholtorf
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ The following feature will be Removed with [!INCLUDE[prodshort](../developer/inc
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed (for SaaS)| OAuth2 will be the only authentication option for SaaS. OAuth flows currently supported are Implicit and Auth Token. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises Basic Auth will remain an option for the time being. |
+|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises Basic Auth will remain an option for the time being. This has no impact on how [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connects to external services.|
 
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as obsolete:pending in 2020 release wave 1.

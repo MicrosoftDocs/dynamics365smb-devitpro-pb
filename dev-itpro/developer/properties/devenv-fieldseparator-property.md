@@ -1,7 +1,7 @@
 ---
 title: "FieldSeparator Property"
 ms.custom: na
-ms.date: 07/13/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ---
 
 # FieldSeparator Property
+
 Sets the string that is to be used to separate fields.  
   
 ## Applies to  
@@ -30,7 +31,7 @@ Sets the string that is to be used to separate fields.
 
 ## Syntax
 
-```
+```AL
 Format = VariableText;
 FieldSeparator = '<TAB>';
 ```

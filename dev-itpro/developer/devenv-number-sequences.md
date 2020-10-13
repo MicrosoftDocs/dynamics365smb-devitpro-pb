@@ -3,7 +3,7 @@ title: "Number Sequences"
 description: "This topic describes how to create number sequences in AL code in Dynamics 365 Business Central." 
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,7 +43,7 @@ To create and manage number sequences, you use the `NumberSequence` data type an
 
 ### Examples
 
-```
+```AL
 // Creates a NumberSequence object that starts with the value '0' and increments by '1'​
 NumberSequence.Insert('DefaultSequence');
 

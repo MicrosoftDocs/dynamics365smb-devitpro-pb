@@ -3,7 +3,7 @@ title: "Substituting Reports"
 description: "How to substitute reports for other reports."
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Contrary to pages and tables, extensibility is not yet supported for report obje
 
 To substitute a report, you create a method and subscribe it to the **OnAfterSubstituteReport** event, as shown in the code below. The `OnSubstituteReport` method replaces the report specified by the `ReportId` with the one given by the `NewReportId` parameter. In this example the `"Customer - List"` report will be substituted for `"My New Customer - List"`.
 
-```
+```AL
 codeunit 50100 "Substitute Report"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterSubstituteReport', '', false, false)]

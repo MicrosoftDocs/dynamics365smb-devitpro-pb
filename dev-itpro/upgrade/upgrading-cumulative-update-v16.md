@@ -2,7 +2,7 @@
 title: Install an update
 description: This article describes the tasks required for getting the monthly update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -143,7 +143,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
     1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Setup** page.
     2. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
-    3. On the **Design customization the installation** page, select the following components as a minimum:
+    3. On the **Customize the installation** page, select the following components as a minimum:
 
         - AL Development Environment (optional but recommended)
         - Server

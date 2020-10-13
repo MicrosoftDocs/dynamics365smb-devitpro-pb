@@ -1,7 +1,7 @@
 ---
 title: "ShowAsTree Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,13 +9,14 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # ShowAsTree Property
 
 Sets a list page to display records (rows) in an indented hierarchy that can be collapsed and expanded.
 
 ## Syntax
 
-```
+```AL
 ShowAsTree = true;
 ```
 
@@ -25,7 +26,7 @@ ShowAsTree = true;
   
 ## Property Value
 
- **true** enables the tree view; otherwise, **false**. The default is **false**.  
+**true** enables the tree view; otherwise, **false**. The default is **false**.  
 
 ## Remarks
 
@@ -33,14 +34,14 @@ To enable the tree view, you must also set the **IndentationColumn** property. T
 
 Optionally, you can set the **TreeInitialState** property to specify whether the list displays as collapsed or expanded when the list page opens in the client.
 
-> [!NOTE]
+> [!NOTE]  
 > When you set this property to **true**, the **IndentationControl** property is ignored and the first column on the page is indented.
 
 For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
 
 ## Example
 
-```
+```AL
 repeater(Control1)
 {
     IndentationColumn = Indent;

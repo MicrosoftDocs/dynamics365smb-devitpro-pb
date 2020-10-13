@@ -1,7 +1,8 @@
 ---
 title: "Working with AL methods"
+description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
-ms.date: 07/22/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,6 +45,7 @@ Attributes are placed before the method. For information about the available att
 A method can be a *local* method or *global* method. A local method can only be accessed or called from inside the object in which it is declared. A global method can be called from inside the object in which it is declared and from other objects.
 
 To declare a local method, start the declaration with `local`: 
+
 ```AL
 local procedure Mymethod();
 ```
@@ -66,7 +68,18 @@ For example, the following method declaration includes two parameters: `MyCustom
 
 ### Return values (optional)
 
-A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type. For example, if the return value is a Text DataType, the text might have a length of 50.
+A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type. 
+
+For example, if the return value is a Text DataType, the text might have a length of 50.
+
+```AL
+    procedure MyMethod() ReturnValue: Text[50]
+        var result : Text[50];
+    begin
+        // do something important where result is calculated
+        ReturnValue := result;
+    end;
+```
 
 ## <a name="Callmethod"></a>Calling methods
 

@@ -2,7 +2,7 @@
 title: Creating and Altering Business Central Databases
 description: Create a new database by using the New-NAVDatabase cmdlet in the Administration Shell. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

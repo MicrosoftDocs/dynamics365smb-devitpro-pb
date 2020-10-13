@@ -1,7 +1,7 @@
 ---
 title: "Field No. Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,13 +11,16 @@ author: SusanneWindfeldPedersen
 ---
 
 # Field No. Property
+
 Sets a unique numeric ID for the field.  
   
 ## Applies to  
- Fields  
+
+- Fields  
 
 ## Syntax
-```
+
+```AL
 field(Field No.; MyField; Blob)
 {
     ...

@@ -1,7 +1,7 @@
 ---
 title: "IndentationControls Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,8 @@ author: jswymer
 Sets which columns (controls) are indented in a list.  
  
 ## Syntax
-```
+
+```AL
 IndentationControls = Field1[, Field2];
 ```
 
@@ -39,7 +40,7 @@ For more information about how to use this property, see [Designing Indented Hie
 
 ## Example
 
-```
+```AL
 repeater(Control1)
 {
     IndentationColumn = Indent;

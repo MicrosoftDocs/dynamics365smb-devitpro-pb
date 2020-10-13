@@ -1,8 +1,8 @@
 ---
-title: "CopyArray Method"
+title: "System.CopyArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CopyArray Method
+# System.CopyArray Method
 Copies one or more elements in an array to a new array.
 
 
@@ -38,7 +38,7 @@ The position of the first array element to copy.
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of array elements to copy. If you do not specify Length, all array elements are copied from Position to the last element. Use the following equation to determine valid values.
-1 =< LENGTH =< MAXLEN(ARRAY) - POSITION + 1
+1 =\< LENGTH =\< MAXLEN(ARRAY) - POSITION + 1
           
 
 

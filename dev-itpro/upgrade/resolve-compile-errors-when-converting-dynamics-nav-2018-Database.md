@@ -1,12 +1,13 @@
 ---
 title: "Compilation Errors When Converting a Microsoft Dynamics NAV 2018 Database"
+description: Learn how to resolve errors when you convert a Dynamics NAV database to the Business Central format.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2017"
+ms.service: dynamics365-business-central
 author: jswymer
 ---
 # Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database
@@ -26,7 +27,7 @@ The following table lists the compilation errors that might occur when you compi
 |Page|6400|Flow Selector|FlowAddin::ControlAddInReady|When the function is called, the minimum number of parameters should be used. For example: MyFunc( .. , .. , .. )|[Resolving Page 6400 and 6410 Compilation Errors](resolve-page-6400-6401-error-converting-database.md). |
 |Page|6401|Flow Template Selector|FlowAddin::ControlAddInReady|When the function is called, the minimum number of parameters should be used. For example: MyFunc( .. , .. , .. )|[Resolving Page 6400 and 6410 Compilation Errors](resolve-page-6400-6401-error-converting-database.md). |
 |Page|9624|Finish Design List Part|GetTaskDisplayName|You have specified an unknown variable. Display Name Define the variable under 'Global C/AL symbols'.|See [Resolving Page 9624 Compilation Error](Resolve-Page-9624-Error-Converting-Database.md). |
-|Table|	1670|Option Lookup Buffer|FillBufferInternal|'SETPERMISSIONFILTER' is obsolete for Microsoft Dynamics NAV Server.|This warning and can be ignored.|
+|Table|    1670|Option Lookup Buffer|FillBufferInternal|'SETPERMISSIONFILTER' is obsolete for Microsoft Dynamics NAV Server.|This warning and can be ignored.|
 |Codeunit|1751|Data Classification Eval. Data|ClassifySession|The 'Record2000000009' type is obsolete.|This warning and can be ignored or to clear it, remove the procedure `LOCAL PROCEDURE ClassifySession@72();` and the reference to it.|
 
 <!--

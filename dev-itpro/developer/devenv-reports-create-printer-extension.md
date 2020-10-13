@@ -2,7 +2,7 @@
 title: "Creating a Printer Extension"
 description: Describes how to create an extension that sets up cloud printers. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,7 @@ This section describes how to use the OnAfterSetupPrinters event to set up a pri
 
     At this point, your code would look something like this:
     
-    ```
+    ```AL
     codeunit 50100 SetupPrinter
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
@@ -60,7 +60,7 @@ This section describes how to use the OnAfterSetupPrinters event to set up a pri
 
     In this example, you set up a printer named 'My Printer' that has two paper trays: A4 and Custom. There are two ways of setting values for a payload JSON object. You can add properties (key-value pairs) by using the Add method, as shown in the example. Or, you can use the ReadFrom method to read the JSON data from the string into a JsonObject variable (see [Using ReadFrom to create the payload](#readfrom)).  
 
-    ```
+    ```AL
     codeunit 50100 SetupPrinter
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
@@ -104,7 +104,7 @@ This section describes how to use the OnAfterSetupPrinters event to set up a pri
 
 The event subscriber method has one parameter, which is a dictionary of printers. The key is a name of the printer. The value is a JSON object that is referred to as the payload. The payload specifies information about a specific printer. The payload includes several attributes in the following structure:
 
-```
+```json
 {
     "version": 1,
     "description":[default=""],
@@ -131,7 +131,7 @@ There are few required attributes, such as `version` and `papertrays`. The `pape
 
 The following example illustrates how to create a payload by using the ReadFrom method.
 
-```
+```AL
 codeunit 50101 SetupPrinter2
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
@@ -154,14 +154,14 @@ A printer can have several paper trays. If a report doesn't specify which paper 
 
 You can change the paper tray for an existing report by subscribing to the `OnAfterGetPaperTrayForReport` event and setting a value for a `DefaultPage` parameter.
 
-```
+```AL
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterGetPaperTrayForReport', '', true, true)]
 procedure GetPaperTrayForReport(ReportID: Integer; var FirstPage: Integer; var DefaultPage: Integer; var LastPage: Integer)
 ```
 
 As an alternative, if you're creating a new report, you can set a paper tray by specifying PaperSourceDefaultPage property.
 
-```
+```AL
 report 50103 MyReport
 {
     PaperSourceDefaultPage = Upper;
@@ -271,7 +271,7 @@ This section describes how to subscribe to the OnAfterDocumentPrintReady event. 
 
     At this point, your code would look something like this:
     
-    ```
+    ```AL
     codeunit 50102 HandlePrintAction
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentPrintReady', '', true, true)]
@@ -336,7 +336,7 @@ This section describes how to subscribe to the OnAfterDocumentPrintReady event. 
     }
     ```
     -->
-    ```
+    ```AL
     codeunit 50101 SendReportByEmail
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentPrintReady', '', true, true)]
@@ -401,7 +401,7 @@ This section describes how to subscribe to the OnAfterDocumentPrintReady event. 
 The event subscriber receives the printer payload and combines it with the report metadata, like the report's ID. This combination is the report payload. The content of the report itself is received as a stream object. You add code to define how and where to send the report payload for printing. In this example, it's sent as an email.
 
 The report object payload is a JSON object that includes several parameters and values arranged in a specific structure, as shown in the following example
-```
+```json
 {
     "filterviews":
     [

@@ -2,7 +2,7 @@
 title: "Use Get(), FindFirst() and FindLast() without Next() method."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Avoid enumeration of a dataset when the dataset is not filtered.
 If you use `FindFirst()`, `FindLast()`, or `Get()`, then the database query will only fetch a single record and must fetch again when you call `Next()`, which will lower performance.
 
 ## Bad code example
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var
@@ -44,7 +44,7 @@ codeunit 1 MyCodeunit
 
 ## Good code example
 
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var

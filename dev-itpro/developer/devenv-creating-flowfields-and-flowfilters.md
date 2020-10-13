@@ -2,7 +2,7 @@
 title: Create FlowFields and FlowFilters
 description: FlowFields and FlowFilters are used to display the result of the calculation described in the CalcFormula property. 
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ In the following example, `MyTable` sets the `Global Dimension 1 Filter` and `Gl
 `Total Amount`, `Amount upper bound`, `Amount lower bound`, `First Entry`, and `Customer Balance` are classified as a FlowField type and here you specify the calculations. These fields display the results immediately based on the filters that you apply in the user interface. 
 
 
-```
+```AL
 table 50123 MyTable
 {
     fields

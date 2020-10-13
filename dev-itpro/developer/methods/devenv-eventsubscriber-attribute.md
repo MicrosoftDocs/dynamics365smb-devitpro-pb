@@ -1,7 +1,8 @@
 ---
 title: "EventSubscriber Attribute"
+description: "The EventSubscriber attribute in AL for Business Central"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +16,7 @@ Specifies the method to be an integration type event subscriber.
 
 ## Syntax  
   
-```  
+```AL  
 [EventSubscriber(ObjectType: ObjectType, ObjectId: Integer, EventName: Text, ElementName: Text, SkipOnMissingLicense: Boolean, SkipOnMissingPermission: Boolean)
 ```    
   
@@ -61,7 +62,7 @@ Specifies whether to skip a call to this method if the user does not have permis
 ## Example
 This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess arguments are set to **false**.
 
-```
+```AL
 codeunit 50105 MyEventPublisher
 {
     [IntegrationEvent(false, false)]

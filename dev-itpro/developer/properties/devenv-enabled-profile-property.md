@@ -2,7 +2,7 @@
 title: "Enabled (Profile) Property"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,6 +12,7 @@ ms.author: solsen
 ---
 
 # Enabled (Profile) Property
+
 Specifies whether the profile can be used by users or not.
 
 For information about the **Enabled** property for pages, keys and table fields, see [Enabled Property](devenv-enabled-property.md).
@@ -20,17 +21,21 @@ For information about the **Enabled** property for pages, keys and table fields,
 
 - Profiles
 
-## Property Value  
+## Property Value
+
 **True** on profiles that should be available to the end-user; otherwise, **false**. **True** is default.
 
 ## Syntax
-```
+
+```AL
 Enabled = false;
 ```
+
 ## Example
+
 The following code illustrates how to set the **Enabled** property. **True** is default, but just used here for illustration purposes.
  
-```
+```AL
 profile MyProfile
 { 
     Description = 'Some internal comment that only the Dev can see'; 

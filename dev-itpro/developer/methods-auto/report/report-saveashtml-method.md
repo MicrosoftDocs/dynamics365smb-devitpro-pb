@@ -1,8 +1,8 @@
 ---
-title: "SaveAsHtml Method"
+title: "Report.SaveAsHtml Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +13,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SaveAsHtml Method
-Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. > This method is only supported when a report uses a Word report layout when it is run.
+# Report.SaveAsHtml Method
+Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
@@ -40,7 +40,7 @@ Specifies which record to use in the report. Any filters that have been applied 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

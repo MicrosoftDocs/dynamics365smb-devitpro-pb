@@ -1,7 +1,7 @@
 ---
 title: "PaperSourceLastPage Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,16 +12,17 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # PaperSourceLastPage Property
+
 Specifies which paper source to use when printing the last page of the report.  
   
 ## Applies to  
- Reports  
+
+- Reports  
 
 ## Syntax
-```
+
+```AL
 PaperSourceLastPage = AutomaticFeed;
 ```
 
@@ -47,6 +48,7 @@ PaperSourceLastPage = AutomaticFeed;
  [How to: Add GetPaperTrayForReport Procedure in Codeunit 1](How-to--Add-GetPaperTrayForReport-Procedure-in-Codeunit-1.md) -->
 
 ## See Also
- [Report Properties](devenv-report-properties.md)   
- [Report Object](../devenv-report-object.md)   
- [Properties](devenv-properties.md)
+
+[Report Properties](devenv-report-properties.md)   
+[Report Object](../devenv-report-object.md)   
+[Properties](devenv-properties.md)

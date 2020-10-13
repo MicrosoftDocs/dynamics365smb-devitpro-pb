@@ -1,7 +1,7 @@
 ---
 title: "Description Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Description Property
+
 Sets the description of the table, field, page, report, control and many more. This description is for internal use and does not appear to end-users.  
 
 ## Applies to  
@@ -27,7 +28,7 @@ Sets the description of the table, field, page, report, control and many more. T
 
 ## Syntax
 
-```
+```AL
 Description = 'Name of the organization.';
 ```
 

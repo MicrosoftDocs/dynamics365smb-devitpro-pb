@@ -3,7 +3,7 @@ author: jswymer
 title: "Upgrading an Extension V2 to a new version"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ The following table describes the upgrade triggers and lists them in the order i
 
 The following code illustrates the basic syntax and structure of an upgrade codeunit:
 
-```
+```AL
 codeunit [ID] [NAME]
 {
     Subtype=Upgrade;
@@ -111,7 +111,7 @@ All these properties are encapsulated in a `ModuleInfo` data type. You can acces
 
 This example uses the `OnCheckPreconditionsPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade before restoring the archived data of the old extension.
 
-```
+```AL
 codeunit 50100 MyUpgradeCodeunit
 {
     Subtype=Upgrade;
@@ -171,7 +171,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 1. Use the following construct around the upgrade code to check for and add an upgrade tag.
         
-    ```
+    ```AL
     // Check whether upgrade tag exists
     if UpgradeTag.HasUpgradeTag(UpgradeTagValue) then
       exit;
@@ -190,7 +190,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
     To register the tag, subscribe to the `OnGetPerCompanyUpgradeTags` or `OnGetPerDatabaseUpgradeTags` events.
 
-    ```
+    ```AL
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
     local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]]);
     begin
@@ -206,7 +206,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
     To register the tag, call the `SetUpgradeTag` method on the `OnInstallAppPerCompany` and `OnInstallAppPerDatabase` triggers in the extension's install codeunit.
 
-    ```
+    ```AL
     codeunit 50100 InstallCodeunit
     {
         Subtype=Install;
@@ -235,7 +235,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed [ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
 
-```
+```AL
 codeunit 50100 "ABC Upgrade Shoe Size"
 {
     Subtype = Upgrade;
@@ -306,7 +306,7 @@ For example, let's say the extension runs code that prints a check after a purch
 
 To avoid this situation, use the session `ExecutionContext`. Depending on the scenario, the system runs a session in a special context for a limited time, which can be either `Normal`, `Install`, `Uninstall`, or `Upgrade`. You get the `ExecutionContext` by calling the [GetExecutionContext method](methods-auto/session/session-getexecutioncontext-method.md). For example, referring the example for printing checks, you could add something like the following code to verify the ExecutionContent before printing the check:
 
-```
+```AL
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterPurchInvHeaderInsert', '', false, false)]
 local procedure PrintCheckWhenPurchasingShoes(var PurchHeader: Record "Purchase Header"; var PurchInvHeader: Record "Purch. Inv. Header")
 begin

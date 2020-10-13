@@ -1,8 +1,8 @@
 ---
-title: "Round Method"
+title: "System.Round Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Round Method
+# System.Round Method
 Rounds the value of a numeric variable.
 
 
@@ -37,8 +37,8 @@ This optional parameter determines the precision used when rounding. If you do n
 &emsp;Type: [String](../string/string-data-type.md)  
 This optional parameter specifies how to round the Number parameter. The default rounding method is '='. The following are the options for rounding:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
--   '>' rounds up
--   '<' rounds down
+-   '\>' rounds up
+-   '\<' rounds down
           
 
 

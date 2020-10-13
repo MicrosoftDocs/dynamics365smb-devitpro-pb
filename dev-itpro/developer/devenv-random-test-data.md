@@ -1,12 +1,13 @@
 ---
 title: "Random Test Data"
+description: Describes how to generate random data for application tests in Business Central
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 
@@ -16,7 +17,7 @@ You can use codeunit **Library – Random** to help generate random data for you
 ## Using random data  
 When your application test does not require a specific value, use the methods in the **Library – Random** codeunit to generate random data for you on the fly. For example, the following code snippet illustrates how you generate two values and test that the second is larger than the first.  
   
-```  
+```AL
 Number1 := RandomNumberGenerator.RandInt(10);   
   
 Number2 := Number1+ RandomNumberGenerator.RandInt(10);   
@@ -26,18 +27,21 @@ Result := MIN(Number1,Number2);
 Assert.AreEqual(Number1,Result,Err);  
 ```  
   
- This example uses random integers because it does not matter if the second number is 2 or 2000. You can use similar code to generate random decimal numbers, dates, and so on.  
+ This example uses random integers because it does not matter if the second number is 2 or 2000. You can use similar code to generate random decimal numbers, dates, and so on. 
+
+> [!TIP]
+> Use the [Any module](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/DevTools/TestFramework/TestLibraries/Any) in the Microsoft/ALAppExtensions GitHub repo to generate pseudo-random values during test set-up. This module generates the same set of numbers, allowing you to reproduce test failures.
   
 ### Seeding test data  
 Sometimes random value can lead to test failures, so you want to be able to reproduce the failure and fix it. In most of codeunits in the application test libraries, you find an `Initialize` method that often contains following statement:  
   
-```  
+```AL 
 RandomTestRunner.SetSeed(1);  
 ```  
   
 The `SetSeed` method injects a starting point for the random numbers that the test will generate. Then, when you rerun the test or try to reproduce the failure in another table or database, the same sequence of records is created each time. The followed code snippet illustres this seeding of data.  
   
-```  
+```AL  
 RandomHistory.DELETEALL;   
   
 RandomTestRunner.SetSeed(1);   

@@ -1,7 +1,7 @@
 ---
 title: "SQLJoinType Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,17 +12,18 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
- 
 
 # SQLJoinType Property
+
 Sets the data item link type between data items in a query to determine the records that are included in the resulting dataset.  
   
 ## Applies to  
   
--   Query data items  
+- Query data items  
   
 ## Property Value  
- The **SQLJoinType** property has the following values.  
+
+The **SQLJoinType** property has the following values.  
   
 |Value|Description| 
 |-----------|---------------------------------------|  
@@ -33,11 +34,13 @@ Sets the data item link type between data items in a query to determine the reco
 |`CrossJoin`|The resulting dataset contains rows that combine each row from the upper data item table with each row from a lower data item table. Cross joins are also called Cartesian products.<br /><br /> **Important:** Cross Join does not require any comparisons between fields of data items, so the **DataItemLink** property must be left blank.|  
 
 ## Syntax
-```
+
+```AL
  SqlJoinType = InnerJoin;
 ```
   
-## Remarks  
+## Remarks
+
 When setting up a data item link between two data items, you always set up the **SQLJoinType** property on the lower data item.  
   
 Except for `CrossJoin`, the **SQLJoinType** property works together with the **DataItemLink** property to combine records from tables into a dataset. The **DataItemLink** property sets up an "equal to" \(=\) comparison between two or more fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that having matching values for the fields. Records that have matching field values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values.

@@ -2,7 +2,7 @@
 title: Reports Overview
 description: Use reports to display information from database to structure and summarize information and print documents, such as invoices. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,8 @@
 ---
-title: "CopyStr Method"
+title: "Text.CopyStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CopyStr Method
+# Text.CopyStr Method
 Copies a substring of any length from a specific position in a string (text or code) to a new string.
 
 
@@ -34,7 +34,7 @@ The position of the first character to copy. If the value of Position is less th
         
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of characters to copy. If the value of Length is less than 0, then the COPYSTR function returns an error. If the value of Length causes Position + Length to be > (total length of the string), then the result includes all the characters from Position to the end of the string. If you omit Length, then the resulting string includes all the characters from Position to the end of the string.  
+The number of characters to copy. If the value of Length is less than 0, then the COPYSTR function returns an error. If the value of Length causes Position + Length to be \> (total length of the string), then the result includes all the characters from Position to the end of the string. If you omit Length, then the resulting string includes all the characters from Position to the end of the string.  
 
 
 ## Return Value

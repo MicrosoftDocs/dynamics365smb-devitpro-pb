@@ -1,9 +1,10 @@
 ---
 title: "Page Background Tasks"
+description: Explains how to create page background tasks in Business Central.
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +30,7 @@ A page background task is a *child session* that runs processes from a codeunit 
 
 A background task is a multithread operation between the parent and child sessions. The following diagram illustrates the flow of a background task. In the illustration, the threads start in the order: THREAD A, THREAD B, THREAD C.  
 
-[![](media/page-background-task-flow-v4.png "Select Page background task flow")](media/page-background-task-flow-v4.png#lightbox)
+[![Background task flow](media/page-background-task-flow-v4.png "Select Page background task flow")](media/page-background-task-flow-v4.png#lightbox)
 
 ### Background task characteristics and behavior
 
@@ -65,7 +66,7 @@ The API for background tasks includes the following methods and triggers:
 
 The following figure illustrates the application objects and code involved in creating a background task. The code has been simplified for demonstration purposes.
 
-![Page background task flow](media/page-background-task-code.png "Page background task flow")
+![Create page background task](media/page-background-task-code.png "Hot to create a page background task")
 
 The general steps are as follows:
 
@@ -98,7 +99,7 @@ When a page background task is enqueued, it can include a set of parameters that
 
 To get the parameters, call the [GETBACKGROUNDPARAMETERS method](methods-auto/page/page-getbackgroundparameters-method.md):
 
-```
+```AL
 Parameters :=  Page.GetBackgroundParameters()
 ```
 ​
@@ -114,7 +115,7 @@ The basic steps for defining the results are as follows:
 2. Use the [Add](methods-auto/dictionary/dictionary-add-method.md) to add key-value pairs for the results to the dictionary.
 3. Call the SETBACKGROUNDTASKRESULT method to set the results in the background task.
 
-    ```
+    ```AL
     Page.SetBackgroundTaskResult(Result: Dictionary[Text, Text])​
     ```
     
@@ -146,7 +147,7 @@ codeunit 50100 PBTDataSumConcatRow​
 }​
 ```
 -->
-```
+```AL
 codeunit 50100 PBTWaitCodeunit
 {
     trigger OnRun()
@@ -182,7 +183,7 @@ To create a page background task, you call the [ENQUEUEBACKGROUNDTASK method](me
 
     The ENQUEUEBACKGROUNDTASK method can pass parameters to the background task that can be used as input to the task. Input parameters must have the data type  `Dictionary of [Text, Text]`. For example, the following code defines a `Dictionary of [Text, Text]` variable and adds a single key and value pair to dictionary on the variable.
 
-    ```
+    ```AL
     var
         TaskParameters: Dictionary of [Text, Text];
     begin
@@ -205,7 +206,7 @@ To create a page background task, you call the [ENQUEUEBACKGROUNDTASK method](me
 
     Once you've determined the location, add the following code to enqueue the background task:
     
-    ```
+    ```AL
     CurrPage.EnqueueBackgroundTask(TaskID, CodeunitId, Parameters, Timeout, ErrorLevel)
     ```
 
@@ -244,7 +245,7 @@ To re-enqueue a page background task, call the ENQUEUEBACKGROUNDTASK method on e
 
 The following example extends **Customer Card** page of the base application to include three fields for displaying times that are calculated in a page background task.
 
-```
+```AL
 pageextension 50100 CustomerCardExt extends "Customer Card"
 {
     layout
@@ -318,7 +319,7 @@ end;
 
 When a page background task completes successfully, the `OnPageBackgroundTaskComplete` trigger of the page in the parent session is called, and the results of the task are passed to the trigger. The results are passed as a dictionary of text. You add code to the trigger to handle the results. This operation typically includes updating the record in the page UI with the calculated values and caching the results in the database. The `OnPageBackgroundTaskComplete` trigger has the following signature:
 
-``` 
+```AL
 trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [Text, Text])  
 ``` 
 
@@ -338,7 +339,7 @@ trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [T
 
 The following example modifies the `OnPageBackgroundTaskCompleted` trigger to update the page with the started and finished times that were calculated in the page background task, and displays a notification that the times have been updated.
 
-``` 
+```AL 
     trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [Text, Text])
     var
         started: Text;
@@ -393,7 +394,7 @@ When an error occurs in the page background task codeunit, the `OnPageBackground
 
 The `OnPageBackgroundTaskError` trigger has the following signature:
 
-```
+```AL
 trigger OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: Text; ErrorCallStack: Text; var IsHandled: Boolean)​
 ```
 
@@ -457,7 +458,7 @@ begin​
 end;
 ```
 -->
-```
+```AL
 trigger OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: Text; ErrorCallStack: Text; var IsHandled: Boolean)
 var
     PBTErrorNotification: Notification;
@@ -480,7 +481,7 @@ end;
 
 The TestPage data type includes the RUNBACKGROUNDTASK method that allows you to run unit tests for page background task codeunit. The following code is an example of a text codeunit that uses the RUNBACKGROUNDTASK method to test the page background task codeunit used in this article:
 
-```
+```AL
 codeunit 50122 MyPBTCodeunit
 {
     Subtype = Test;

@@ -1,8 +1,9 @@
 ---
-title: "A Repeater control used on a List page must be defined at the beginning of the area(Content) section."
+title: "Translations of enum value captions must not contain commas"
+description: Explains AppSourceCop Rule AS0087.
 ms.author: solsen
 ms.custom: na
-ms.date: 05/20/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Rule AW0010
-A Repeater control used on a List page must be defined at the beginning of the area(Content) section.  
+# AppSourceCop Rule AS0087
+Translations of enum value captions must not contain commas  
 
 ## Description
-A Repeater control used on a List page must be defined at the beginning of the area(Content) section.
+Translations of enum value captions must not contain commas. Commas in captions will result in values with wrong captions both in the UI and potential unexpected results in connection with formatting and evaluating enums.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[UICop Analyzer](uicop.md)  
+[AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

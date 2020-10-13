@@ -2,7 +2,7 @@
 title: "The EventSubscriber method must be local."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ The EventSubscriber method must be local.
 The method which is marked as an event subscriber must be local, because it must not to used for external calls. Not marking the method as local might cause confusion.
 
 ## Bad code example
-```
+```AL
 [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
 procedure CheckAddressLine(var Rec : Record Customer)
 begin
@@ -35,7 +35,7 @@ end;
 ```
  
 ## Good code example
-```
+```AL
 [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
 local procedure CheckAddressLine(var Rec : Record Customer)
 begin

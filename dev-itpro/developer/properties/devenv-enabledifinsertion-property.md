@@ -1,7 +1,7 @@
 ---
 title: "EnabledIfInsertion Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,25 +12,26 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # EnabledIfInsertion Property
+
 Sets a value that indicates whether the action should be enabled or disabled if the record is undefined.  
   
 ## Applies to  
   
--   Actions  
+- Actions  
+- Pages  
   
--   Pages  
-  
-## Property Value  
- **True**/**false**  
+## Property Value
+
+**True**/**false**  
 
 ## Syntax
-```
+
+```AL
 EnabledIfInsertion = true;
 ```
   
 ## See Also  
- [EnabledIfError Property](devenv-enablediferror-property.md)   
- [EnabledIfSelection Property](devenv-enabledifselection-property.md)
+
+[EnabledIfError Property](devenv-enablediferror-property.md)   
+[EnabledIfSelection Property](devenv-enabledifselection-property.md)

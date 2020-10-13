@@ -1,15 +1,16 @@
 ---
-title: "Deploying Business Central a Demonstration Environment"
+title: "Deploying a Business Central Demonstration Environment"
+author: jswymer
+description: Learn about deploying demos for Business Central on-premises. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
 ---
-# Deploying the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demonstration Environment
+# Deploying a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demonstration Environment
 
 This deployment scenario installs the major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components on a single computer, complete with a base application and database with demonstration data. After the installation, you will have an end-to-end environment, where you can access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data from the Web client. The installation requires minimal hardware resources, preparation, and configuration.  
 
@@ -28,7 +29,7 @@ This deployment scenario installs the major [!INCLUDE[prodshort](../developer/in
 
 -   SQL Server Database Components, including [!INCLUDE[demolong](../developer/includes/demolong_md.md)] and demo license.
 
-    For information about what you can do with this license, see [Properties of the Demo License](Demo-License.md).      
+    For information about what you can do with this license, see [Demonstration License for Business Central On-Premises](../developer/properties/devenv-demolicense-properties.md).  
 
 -    [!INCLUDE[admintool](../developer/includes/admintool.md)] 
 

@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 
 # FAQ for Dynamics 365 Business Central
@@ -24,7 +24,6 @@ The following sections guide you to frequently asked questions about [!INCLUDE[p
 - Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
 - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prodshort](includes/prodshort.md)] Windows client.
 - Visit [FAQ about Signing Up and Using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)] in the business functionality content for.
-
 
 Working with processes and UI in [!INCLUDE[prodshort](includes/prodshort.md)] here you can find answers to some of the most frequently asked questions:
 
@@ -53,7 +52,7 @@ Databases are protected by automatic backups that are retained for 30 days. As a
 
 ## Can I request a copy of the backup of my production database?
 
-No, but from the Business Central administration center, you can export the database for Business Central online environments as .bacpac files to an Azure storage container. For more information, see [Exporting Databases](administration/tenant-admin-center-database-export.md).  
+No, but from the [!INCLUDE[prodshort](includes/prodshort.md)] administration center, you can export the database for [!INCLUDE[prodshort](includes/prodshort.md)] online environments as .bacpac files to an Azure storage container. For more information, see [Exporting Databases](administration/tenant-admin-center-database-export.md).  
 
 ## Can I get training in Business Central?
 
@@ -73,17 +72,50 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 
 ## How does Microsoft handle database sizes?
 
-For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in an environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much database storage capacity we allow each tenant to use for their environments (databases).  
 
-The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.
+[!INCLUDE [admin-db-quota](developer/includes/admin-db-quota.md)]
+
+For more information, see [Managing capacity](administration/tenant-admin-center-capacity.md).  
+
+## Why doesn't the Outlook add-in work for my users?
+
+The Outlook add-in is designed to function as a business inbox in Outlook, based on the standard [!INCLUDE [prodshort](developer/includes/prodshort.md)] online. If you are using a different type of deployment, such as a solution that is part of the Embed App program, then you must set up an Azure Key Vault and specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. For more information, see [Using Key Vault Secrets in [!INCLUDE [prodshort](developer/includes/prodshort.md)] Extensions](developer/devenv-app-key-vault.md).  
 
 ## Is the Windows client supported?
 
-The first releases of Business Central on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
+The first releases of [!INCLUDE[prodshort](includes/prodshort.md)] on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
 
 ## What's going on with the Help?
 
 If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], you will find that in-product Help is very different in [!INCLUDE [prodshort](developer/includes/prodshort.md)]. For more information, see [[!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model](user-assistance.md).
+
+## Which IP addresses or ranges does my environment's API use?
+
+When you exchange data through the API, you might have to safe list the IP addresses. The addresses depend on the direction of the call.
+
+- Inbound
+
+  Inbound requests go into the [!INCLUDE [prodshort](includes/prodshort.md)] API, for example through OData calls. The requests go to the `https://api.businesscentral.dynamics.com` URL that currently resolves to IP addresses in the IP ranges of the following Azure regions:
+
+  - Australia East
+  - West Europe
+  - East US
+
+  > [!IMPORTANT]
+  > Data routed through `https://api.businesscentral.dynamics.com` is not *stored* in these regions. The data *transits* through them.  
+
+  We reserve the right to change the list of Azure regions used by the `https://api.businesscentral.dynamics.com` URL without prior announcement. We will, however, update this guidance accordingly once such a change is implemented.  
+  
+- Outbound
+
+  Outbound requests come from [!INCLUDE [prodshort](includes/prodshort.md)] environment, such as code that uses the `HttpClient`data type to send HTTP requests. The requests come from an IP address in the IP ranges of the Azure region in which the environment is hosted. You can see where an environment is hosted on the **Environment details** page in the [!INCLUDE [prodshort](includes/prodshort.md)] admin center. For more information, see [Managing Environments](administration/tenant-admin-center-environments.md).  
+
+You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/en-us/download/details.aspx?id=56519).  
+
+## How do I join the "Ready to Go" program?
+
+Read [this](developer/readiness/readiness-ready-to-go.md?tabs=learning), and then send email to [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com).
 
 ## See Also
 

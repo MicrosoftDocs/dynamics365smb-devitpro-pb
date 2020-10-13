@@ -1,8 +1,8 @@
 ---
-title: "GetUrl Method"
+title: "System.GetUrl Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetUrl Method
+# System.GetUrl Method
 Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
 
 
@@ -26,7 +26,7 @@ String :=   System.GetUrl(ClientType: ClientType, Company: String, ObjectType: O
 ## Parameters
 *ClientType*  
 &emsp;Type: [ClientType](../clienttype/clienttype-option.md)  
-Specifies the client that you want to generate the URL for. This parameter is required. If you want to generate a URL that depends on the client that the user is accessing the URL from, choose Current. The following table describes the options.> A runtime error occurs if the ClientType is set to SOAP or OData but the specified object type and ID has not been published as a web service.
+Specifies the client that you want to generate the URL for. This parameter is required. If you want to generate a URL that depends on the client that the user is accessing the URL from, choose Current. The following table describes the options.\> A runtime error occurs if the ClientType is set to SOAP or OData but the specified object type and ID has not been published as a web service.
           
 *Company*  
 &emsp;Type: [String](../string/string-data-type.md)  
