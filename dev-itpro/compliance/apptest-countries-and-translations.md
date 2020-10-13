@@ -36,8 +36,8 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Faroe Islands (Denmark)|Microsoft|Coming|
 |Finland|Microsoft|Available|
 |France|Microsoft|Available|
-|Germany|Microsoft|Coming|
-|Greenland (Denmark)|Microsoft|Available|
+|Germany|Microsoft|Available|
+|Greenland (Denmark)|Microsoft|Coming|
 |Hong Kong SAR|Partner|Available|
 |Hungary|Partner|Available|
 |Iceland|Microsoft|Available|
