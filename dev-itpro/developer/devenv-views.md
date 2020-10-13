@@ -21,6 +21,9 @@ A view offers:
 
 Views are defined directly in code, on the list page that they modify. The defined view or views are available to the user through **Filter Pane** on a page and appear in the sequence that they are defined in code.
 
+> [!NOTE]  
+> `showMyCode` does not apply to views. Views defined in an extension with `showMyCode` set to false can still be copied using the in-client designer.
+
 ## Snippet support
 Typing the shortcut `tview` will create the basic layout for a view when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 

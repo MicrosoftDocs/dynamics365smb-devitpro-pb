@@ -104,6 +104,9 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 > [!NOTE]  
 > Several rules enforced by the AppSourceCop analyzer are incompatible with rules enforced by the PerTenantExtensionCop. Make sure to enable only one of these at a time.
 
+> [!NOTE]  
+> Failing to comply with the rules whose default severity is set to `Error`, will fail the submission of your extension to the AppSource marketplace. It is recommended, but not mandatory to comply with the rules whose serverity is marked as `Warning` or `Info`. 
+
 ## Configuration
 The AppSourceCop analyzer can be further configured by adding a file named `AppSourceCop.json` in the project's root folder. The AL Language extension will offer IntelliSense for this file.
 

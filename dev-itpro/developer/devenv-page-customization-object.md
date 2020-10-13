@@ -27,6 +27,9 @@ The page customization object has more restrictions than the [page extension obj
 > [!NOTE]  
 > Modifying actions in Cue groups on page extensions is not supported.
 
+> [!NOTE]  
+> `showMyCode` does not apply to page customizations. Page customizations defined in an extension with `showMyCode` set to false can still be copied using the in-client designer.
+
 
 ## Snippet support
 

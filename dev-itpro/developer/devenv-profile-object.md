@@ -21,6 +21,9 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
+> [!NOTE]  
+> `showMyCode` does not apply to profiles. Profiles defined in an extension with `showMyCode` set to false can still be copied using the in-client designer.
+
 ## Snippet support
 Typing the shortcut `tprofile` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
