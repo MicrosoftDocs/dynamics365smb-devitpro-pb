@@ -58,7 +58,7 @@ ObsoleteReason = 'Not Needed';
 
 ## Remarks 
 
-Use this property to inform developers about a table, field, or key that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
+Use this property to inform developers about an object or element that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
 
 ## See Also
 
