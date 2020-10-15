@@ -63,7 +63,7 @@ To install a working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] A
 
     Select the arrow to continue.
 
-4. When prompted, provide a valid user name and password for accessing Business Central. 
+4. When prompted, provide a valid user name and password for accessing Business Central.  
 
     For example, if your deployment is using Windows authentication, this would be your Windows user name and password.
 
@@ -73,6 +73,7 @@ To install a working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] A
 
 ## See Also
 
+[Troubleshooting the Business Central Mobile App On-Premises](../developer/devenv-troubleshooting-the-mobile-app.md)  
 [Installing Business Central Using Setup](install-using-setup.md)  
 [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](../administration/configure-web-server.md)  
 [Components](product-and-architecture-overview.md)  
