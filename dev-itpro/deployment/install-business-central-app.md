@@ -1,5 +1,6 @@
 ---
-title: "Install Business Central Using Setup"
+title: Install the Business Central Mobile App
+description: Learn about prerequisites for using Business Central on-premises on mobile devices.
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
