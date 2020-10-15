@@ -45,7 +45,7 @@ We still do not force the upgrade of this app to this latest version on all of t
 
 ## Scenario 4: Critical bug in your app
 
-If a bug which leads to core functionality being broken or data loss/corruption/misrepresentation is found in the application, and the issue prevents customers from performing time-critical tasks, the validation and deployment of the application can be prioritized. The partner must create a support ticker for this case and they must immediately provide a fixed app for validation through Partner Center. The validation team makes this a top priority and does validation as soon as possible. If the fixed application passes validation, it will be checked into the service and will become available for environment administrators to install.
+If a bug which leads to core functionality being broken or data loss/corruption/misrepresentation is found in the application, and the issue prevents customers from performing time-critical tasks, the validation and deployment of the application can be prioritized. The partner must create a support ticket for this case and they must immediately provide a fixed app for validation through Partner Center. The validation team makes this a top priority and does validation as soon as possible. If the fixed application passes validation, it will be checked into the service and will become available for environment administrators to install.
 
 ## Scenario 5: Microsoft feature breaks your app
 
