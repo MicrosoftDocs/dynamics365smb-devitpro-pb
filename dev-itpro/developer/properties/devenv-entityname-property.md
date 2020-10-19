@@ -27,7 +27,7 @@ EntityName = 'Customer';
 ```
 
 > [!NOTE]
-> The value `EntityMetadata` is reserved and using it for the **EntityName Property** it will result in a compiler error.
+> The value `EntityMetadata` is reserved and using it for the **EntityName Property** will result in a compiler error.
   
 ## See Also
 
