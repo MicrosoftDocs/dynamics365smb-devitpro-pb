@@ -25,6 +25,9 @@ Sets the singular entity name with which the page is exposed in the api endpoint
 ```AL
 EntityName = 'Customer';
 ```
+
+> [!NOTE]
+> The value `EntityMetadata` is reserved and using it for the **EntityName Property** will result in a compiler error.
   
 ## See Also
 
