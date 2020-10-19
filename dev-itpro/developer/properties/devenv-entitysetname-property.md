@@ -27,7 +27,7 @@ EntitySetName = 'Customers';
 ```
 
 > [!NOTE]
-> The value `EntityDefinitions` is reserved and using it for the **EntitySetName Property** it will result in a compiler error.
+> The value `EntityDefinitions` is reserved and using it for the **EntitySetName Property** will result in a compiler error.
 
 ## See Also
 
