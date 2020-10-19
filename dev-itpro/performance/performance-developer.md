@@ -106,6 +106,8 @@ Reports generally fall into two categories. They can be specific to a single ins
 
 - Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
+Read more about how to tune RDLC reports here:
+- [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
 ## AL performance patterns 
 
