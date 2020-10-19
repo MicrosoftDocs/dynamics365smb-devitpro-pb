@@ -232,7 +232,7 @@
 ### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
-### [Walkthrough: Creating new modules in the System Application]
+### Creating new modules in the System Application
 #### [Module architecture](developer/devenv-blueprint.md)
 #### [Getting started with modules](developer/devenv-getting-started.md)
 #### [Set up your development environment](developer/devenv-set-up-an-environment.md)
