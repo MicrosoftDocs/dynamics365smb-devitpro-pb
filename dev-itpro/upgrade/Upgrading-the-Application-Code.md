@@ -280,7 +280,7 @@ For more information, see [Making Pages and Reports Searchable After an Upgrade]
 
 ## Task 8: Build object search index
 
-Build the object search index to make objects able to be searched from **Tell Me** in the client. If you completed step 6, you can skip this step.
+Build the object search index to make objects able to be searched from **Tell Me** in the client. If you completed step 7, you can skip this step.
 
 In the **Tools** menu of the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], select **Build Object Search Index**.
 

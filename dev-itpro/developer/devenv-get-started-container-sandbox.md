@@ -16,7 +16,7 @@ ms.author: jswymer
 You set up a container sandbox by running the **SANDBOX ENVIRONMENT (CONTAINER)** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whether you want an Azure-hosted or locally hosted container sandbox. See the next section for details.
 
 > [!TIP]
-> [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] also offers an online sandbox. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
+> [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] also offers an online sandbox. For more information, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 ## <a name="AzureVsLocal"></a>Choosing an Azure-hosted or local-hosted container sandbox
 When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilities and use Docker to provide the infrastructure for the container-based application. The difference is:
@@ -148,5 +148,5 @@ Creating Desktop Shortcuts for MyBCapp2
 ## See Also
 [Running a Container-Based Development Environment](devenv-running-container-development.md)  
 [Working with Sandboxes and Entitlements](devenv-work-sandbox-entitlements.md)  
-[Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
+[Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

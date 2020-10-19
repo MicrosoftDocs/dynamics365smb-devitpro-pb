@@ -17,11 +17,11 @@ Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] ins
 Events that occur on [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in the event channels specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and also in the general Windows Application log. Event channels provide a way to collect and view events from a specific event trace provider. This differs from the Windows Application log which contains system-wide events from multiple publishers \(applications and components\).   
 
 ## Business Central channel logs
-In the Event Viewer console tree, open **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral**.
+In the Event Viewer console tree, open **Applications and Services Logs** > **Microsoft** > **DynamicsNAV**.
  
 ### Server folder
 
-The **Server** folder contains events from the event trace provider called **Microsoft-Dynamics365BusinessCentral-Server**. The events are recorded in the following logs:  
+The **Server** folder contains events from the event trace provider called **Microsoft-DynamicsNAV-Server**. The events are recorded in the following logs:  
   
 |Log|Description|  
 |---------|-----------------|  
@@ -31,7 +31,7 @@ The **Server** folder contains events from the event trace provider called **Mic
 
 ### Common folder 
 
-The **Common** folder contains telemetry events from the event trace provider called **Microsoft-Dynamics365BusinessCentral-Common**. This folder contains strictly telemetry events, which have IDs 700-707. The telemetry events are recorded in the following logs:  
+The **Common** folder contains telemetry events from the event trace provider called **Microsoft-DynamicsNAV-Common**. This folder contains strictly telemetry events, which have IDs 700-707. The telemetry events are recorded in the following logs:  
       
 |Log|Description|  
 |---------|-----------------|  
@@ -45,7 +45,7 @@ The Application log includes admin and operational type events \(errors, warning
   
 To view the **Application** log, in the console tree, choose **Windows Logs**, **Applications**.  
   
-The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **Dynamics365BusinessCentral** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[server](../developer/includes/server.md)] events, you can disable logging [!INCLUDE[server](../developer/includes/server.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [Disable Logging Events to the Windows Application Log](disable-Logging-Events-Windows-Application-Log.md).  
+The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **DynamicsNAV** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[server](../developer/includes/server.md)] events, you can disable logging [!INCLUDE[server](../developer/includes/server.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [Disable Logging Events to the Windows Application Log](disable-Logging-Events-Windows-Application-Log.md).  
   
 > [!NOTE]  
 >  Trace events are not included in this log.  
@@ -59,7 +59,7 @@ By default, the [!INCLUDE[server](../developer/includes/server.md)] logs contain
   
 ### To filter the event log  
   
-1.  For example, in the console tree of Event Viewer, choose **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Server**.  
+1.  For example, in the console tree of Event Viewer, choose **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Server**.  
   
 2.  Select the **Admin** log.  
   
@@ -77,18 +77,18 @@ By default, the [!INCLUDE[server](../developer/includes/server.md)] logs contain
   
     ```  
     <QueryList>  
-      <Query Id="0" Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
-        <Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
+      <Query Id="0" Path="Microsoft-DynamicsNAV-Server/Admin">  
+        <Select Path="Microsoft-DynamicsNAV-Server/Admin">  
           *[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 604800000]]]  
       </Query>  
     </QueryList>  
     ```  
   
-     `Microsoft-Dynamics365BusinessCentral-Server` indicates that [!INCLUDE[server](../developer/includes/server.md)] is the provider of the events in the log.  
+     `Microsoft-DynamicsNAV-Server` indicates that [!INCLUDE[server](../developer/includes/server.md)] is the provider of the events in the log.  
   
 7.  Select the **Edit** query manually check box, and then choose the **Yes** button.  
   
-8.  In the `<Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">` element, after `*[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 86400000]]]`, add the following lines:  
+8.  In the `<Select Path="Microsoft-DynamicsNAV-Server/Admin">` element, after `*[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 86400000]]]`, add the following lines:  
   
     ```  
     and  
@@ -102,8 +102,8 @@ By default, the [!INCLUDE[server](../developer/includes/server.md)] logs contain
   
     ```  
     <QueryList>  
-      <Query Id="0" Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
-        <Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
+      <Query Id="0" Path="Microsoft-DynamicsNAV-Server/Admin">  
+        <Select Path="Microsoft-DynamicsNAV-Server/Admin">  
           *[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 604800000]]]  
           and  
           *[EventData[Data[@Name='tenantId'] and Data  = 'MyTenant1']]  
