@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 10/01/2020
+ms.date: 10/19/2020
 ms.author: edupont
 
 ---
@@ -19,6 +19,9 @@ ms.author: edupont
 
 You can connect your on-premises solution to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant for the purpose of migrating your data to the cloud. Once you have set up this configuration, you can manage your cloud environment and data migration from the **Cloud Migration Management** page in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.  
 
+> [!NOTE]
+> To run the migration tool and manage migrations, you must have the SUPER permission set.
+
 ## Cloud Migration Management
 
 The **Cloud Migration Management** page provides information about your data migration runs as well as the ability to manage your migration services, for example.  
@@ -26,7 +29,6 @@ The **Cloud Migration Management** page provides information about your data mig
 The page provides a view of the status of all migration runs. You can view the time the migration ran and the status of each migration. If you have set up a schedule, you can also see when the next migration is scheduled to run. The **Migration Statistics** tiles show the number of migrated tables and the number of tables that did not migrate due to warnings or errors. Choose a tile to drill into additional details and guidance to correct any errors.  
 
 There is also a tile that shows tables that are not migrated due to problems with the data. For example, tables with permissions are not migrated from on-premises solutions because permissions work differently between online and on-premises.
-
 
 The following table describes the actions that you can run from the page:  
 
