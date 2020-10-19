@@ -31,7 +31,7 @@ When you want to do many operations on the data in a specific table in the datab
 
 There are three ways to implement a temporary table:
 
-- Setting the [TableType property](properties/devenv-tabletype-property.md) on the table object to **Temporary**
+- Setting the [TableType property](properties/devenv-tabletype-property.md) on the table object to **Temporary**.
 - Using a temporary record variable.
 - Setting the [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md) on a page.
 
@@ -44,7 +44,7 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `true`:
+With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `Temporary`:
 
 ```AL
 table 50100 MyTable
