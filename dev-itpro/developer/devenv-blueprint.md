@@ -15,7 +15,7 @@ author: bholtorf
 There are some ground rules to follow to ensure that application modules bring us closer to the architecture we want. The internal architecture of modules can, and most likely will, differ, but that is not within the scope of this document. 
 
 To ensure low coupling and high cohesion, every module is a separate entity that is equipped with a publicly accessible façade, while the internal implementation is hidden from public access: 
-<!-->
+<!--
 <p align="center">
   <img src="Images/Architecture.png" alt="Architecture layout" />
 </p>
