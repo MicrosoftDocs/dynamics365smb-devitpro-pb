@@ -59,7 +59,7 @@ You can modify or extend the layout and behavior of the page, like you would any
 
 ## Preparing your environment for development and testing
 
-Developing for Teams integration is similar to other development activities in [!INCLUDE [prodshort](includes/prodshort.md)]. It requires Visual Studio Code, installed with the AL language extension, and knowledge of the AL language. However, because the [!INCLUDE [prodshort](includes/prodshort.md)] app for Teams only supports [!INCLUDE [prodshort](includes/prodshort.md)] online, you must deploy your extensions to an online sandbox to test the implementation. For more information about sandboxes, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
+Developing for Teams integration is similar to other development activities in [!INCLUDE [prodshort](includes/prodshort.md)]. It requires Visual Studio Code, installed with the AL language extension, and knowledge of the AL language. However, because the [!INCLUDE [prodshort](includes/prodshort.md)] app for Teams only supports [!INCLUDE [prodshort](includes/prodshort.md)] online, you must deploy your extensions to an online sandbox to test the implementation. For more information about sandboxes, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 ## See Also
 [FAQ for Teams Integration](devenv-dev-faq-teams.md)  

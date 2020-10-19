@@ -96,7 +96,7 @@ This will assign the Premium plan to the admin user in the database.
 ## See Also
 
 [Programming in AL](devenv-programming-in-al.md)  
-[Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
+[Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)  
 [Container Sandbox](devenv-get-started-container-sandbox.md)  
 [Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)  
 [Production and Sandbox Environments](../administration/environment-types.md)  
