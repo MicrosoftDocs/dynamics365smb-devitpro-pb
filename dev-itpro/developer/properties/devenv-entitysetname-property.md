@@ -26,6 +26,9 @@ Sets the plural entity name with which the page is exposed in the api endpoint. 
 EntitySetName = 'Customers';
 ```
 
+> [!NOTE]
+> The value `EntityDefinitions` is reserved and using it for the **EntitySetName Property** will result in a compiler error.
+
 ## See Also
 
 [EntityName Property](devenv-entityname-property.md)  

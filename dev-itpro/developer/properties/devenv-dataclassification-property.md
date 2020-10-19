@@ -34,6 +34,8 @@ Sets the classification of the data in the table or field. The data classificati
 
 ## Remarks  
 FlowField and FlowFilter fields are automatically set to the **SystemMetadata** data classification.  
+
+When the **DataClassification** property is set on a table level, the fields on the table will inherit the property value. If the **DataClassification** property is set on both a table and field level, then the data classification specified on a field level will override the one from the table.
   
 ## See Also
 [Table Properties](devenv-table-properties.md)  
