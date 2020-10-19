@@ -233,11 +233,11 @@
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ### [Walkthrough: Creating new modules in the System Application]
-#### [Module architecture](devenv-blueprint.md)
-#### [Getting started with modules](devenv-getting-started.md)
-#### [Set up your development environment](devenv-set-up-an-environment.md)
-#### [Create a new module](devenv-new-module.md)
-#### [Change a module](devenv-change-a-module.md)
+#### [Module architecture](developer/devenv-blueprint.md)
+#### [Getting started with modules](developer/devenv-getting-started.md)
+#### [Set up your development environment](developer/devenv-set-up-an-environment.md)
+#### [Create a new module](developer/devenv-new-module.md)
+#### [Change a module](developer/devenv-change-a-module.md)
 ## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)

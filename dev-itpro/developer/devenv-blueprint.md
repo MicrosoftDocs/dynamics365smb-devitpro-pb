@@ -1,15 +1,25 @@
-# Development Blueprint
+---
+title: "Module Architecture"
+description: "Learn about the internal components of modules in the System Application."
+ms.custom: na
+ms.date: 10/01/2020
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: bholtorf
+---
 
-## Architecture
-
+# Module Architecture
 There are some ground rules to follow to ensure that application modules bring us closer to the architecture we want. The internal architecture of modules can, and most likely will, differ, but that is not within the scope of this document. 
 
 To ensure low coupling and high cohesion, every module is a separate entity that is equipped with a publicly accessible façade, while the internal implementation is hidden from public access: 
-
+<!-->
 <p align="center">
   <img src="Images/Architecture.png" alt="Architecture layout" />
 </p>
-
+-->
 This is achieved by following a few simple design principles:
 
 ### One module, one project
@@ -73,11 +83,11 @@ Source Code: Add the source code of the module in a src subfolder. For example, 
 
 ## Testing
 Every module must be tested through a separate test module. Only public functions that are exposed through the façade, or other public objects such as pages, tables, xmlports, and queries, are tested by the test module.
-
+<!--
 <p align="center">
   <img src="Images/Testing.png" alt="Testing" />
 </p>
- 
+-->
 **Test Module Name / Location**: The test module should have the same name as the module it tests, but be placed in a separate layer/package that contains tests for all modules in the layer. For example, *Modules\\**System Tests**\My Module*). Test code cannot reside in the same layer folder structure as the module or within the module because it must not be executable or part of a production environment.
 
 ## Documentation
@@ -105,3 +115,4 @@ Every public function must have a summary, parameter description as well as retu
 /// <param name="ipsum ">The CaptionClass expression to resolve</param>
 /// <returns> Fusce in tristique massa, tincidunt tempor libero.</returns>
 ```
+## See Also

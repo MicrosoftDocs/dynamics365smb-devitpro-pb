@@ -1,6 +1,19 @@
-# How to create a new module
+---
+title: "Create a New Module in the System Application"
+author: bholtorf
+ms.custom: na
+ms.date: 10/01/2020
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.author: bholtorf
+ms.service: "dynamics365-business-central"
+---
 
-This topic provides an overview of how to create a new module.
+# Create a New Module in the System Application
+
+This topic provides an overview of how to create a new module in the System Application.
 
 ### Prerequisites
 1. You are familiar with development in AL. For more information, see [AL Development](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
