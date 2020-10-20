@@ -14,20 +14,21 @@ author: bholtorf
 # Change an Existing Module
 This topic provides an overview of how to change an existing module.
 
-### Prerequisites
-1. You are familiar with development in AL. For more information, see [Getting Started with AL](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
-2. Your development environment has been set up. For more information, see [Developer Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
+## Requirements
+1. Familiarity with development in AL. For more information, see [AL Development](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
+2. Your development environment is ready. For more information, see [Development Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
 
-### Steps
-1. In Visual Studio Code, open the folder from the AlAppExtensions repository that you want to contribute to. System modules are located in the `System` folder.
-2. To open the command search, press `F1,` and then choose **AL: Download Symbols**.
-3. Now you can modify the the module and add you contribution. Remember that your changes should conform to the general guidelines for modules described in the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). See below for an example. 
-4. The main consideration when changing an existing module, compared to contributing with a new module, is that you need to adhere to, and think about no breaking changes. When doing your changes make sure that you do not break existing functionality. Once you are done, check that existing tests still pass, and add new tests for the functionality that you changed or added.
+> [!NOTE]
+> Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
-### Example
+Remember that your changes should conform to the general guidelines for modules described in the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). 
+
+The main consideration when changing an existing module, compared to contributing with a new module, is that you need to adhere to, and think about no breaking changes. When doing your changes make sure that you do not break existing functionality. Once you are done, check that existing tests still pass, and add new tests for the functionality that you changed or added.
+
+## Example
 In the following, we will go through an example contribution to an existing module. Specifically, we will look at a previous contribution to the Base64 Convert module. The contribution added support for other text encodings than UTF8. Thus, if you are following along you will see that these changes have already been published in the AlAppExtensions repository. You can find the actual PR that we will be recreating here: https://github.com/microsoft/ALAppExtensions/pull/7676. Let's take a look at what it took to create this PR.
 
-#### Set up Visual Studio Code for module development
+### Set up Visual Studio Code for module development
 
 When setting up your development environment, you should have taken note of the `server` and `serverInstance` settings.
 
@@ -40,7 +41,7 @@ Open the `launch.json` file and update the `server`, `serverInstance` and `authe
 ```
 Open the `settings.json` file and update the `al.assemblyProbingPaths` as described in [setting up your development environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
 
-#### Make a branch
+### Make a branch
 
 Make a branch:
 ```
@@ -49,7 +50,7 @@ Make a branch:
 ```
 You are now ready to start changing the module.
 
-#### Making changes to the module
+### Making changes to the module
 
 Before making changes, make sure you are familiar with the general architecture of system modules by looking at the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). You can also check the article: [How to add a system module](https://github.com/microsoft/ALAppExtensions/blob/master/How-to-add-a-module.md) for an example of creating a full system module.
 
@@ -142,7 +143,7 @@ We also need to update some of the existing functions in `System/Base64 Convert/
 ```
 At this point, we have changed the implementation codeunit. We have made sure not to break existing functionality, by keeping the same behaviour for existing functions.
 
-We can then add public functions in the facade codeunit with the functionality that we want to expose. Since the functions here are public we need to ensure that these are well-documented and tested. The functions simply call the corresponding function in the implementation codeunit. We add the following functions to `System/Base64 Convert/src/Base64Convert.Codeunit.al`:
+We can then add public functions in the facade codeunit with the functionality that we want to expose. Since the functions here are public we need to ensure that these are well-documented and tested. The functions simply call the corresponding function in the implementation codeunit. We add the following functions to **System/Base64 Convert/src/Base64Convert.Codeunit.al**:
 ```
     /// <summary>
     /// Converts the value of the input string to its equivalent string representation that is encoded with base-64 digits.
@@ -196,9 +197,9 @@ We can then add public functions in the facade codeunit with the functionality t
         exit(Base64ConvertImpl.FromBase64(Base64String, TextEncoding, Codepage));
     end;
 ```
-We have now exposed the appropriate functions. The next step is to first make sure existing tests pass and then add new tests to test the functionality that we added.
+We have now exposed the functions. The next steps are to ensure that existing tests pass, and then add new tests for the functionality that we added.
 
-After verifying that the tests passes, we add the following two new tests to the file `System Tests/Base64 Convert/src/Base64ConvertTest.Codeunit.al`:
+After verifying that the tests passes, we'll add the following tests to the **System Tests/Base64 Convert/src/Base64ConvertTest.Codeunit.al`:** file.
 ```
     [Test]
     procedure StringToBase64UTF16Test()
@@ -230,16 +231,12 @@ After verifying that the tests passes, we add the following two new tests to the
 ```
 After running all the tests including the new ones and verifying that they pass, we have now made our changes!
 
-#### Commit and push your changes and open a PR
+### Commit and push your changes and open a PR
+To submit your changes, follow these steps:
 
-Commit your changes
-```
-    git commit -m "Your message"
-```
-Push your changes
-```
-    git push
-```
+1. To commit your changes, run the **git commit -m "Your message"** command.
+2. To push your changes, run the **git push** command.
+
 You can now go to your GitHub fork and open a pull request in the AlAppExtensions repository. 
 
 ## See Also

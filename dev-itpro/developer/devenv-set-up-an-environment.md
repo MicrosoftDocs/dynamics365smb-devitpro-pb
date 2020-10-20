@@ -1,45 +1,50 @@
-# Setting up your environment
+---
+title: "Set Up an Environment for Developing a Module"
+description: Learn how to set up the tools you need to build a module in the System Applicaton.
+ms.author: bholtorf
+ms.custom: na
+ms.date: 10/01/2020
+ms.reviewer: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: bholtorf
+---
 
-## Prerequisites
+# Set Up an Environment for Developing a Module
+This topic describes how to set up an environment for developing a module in the System Application.
 
-- You are familiar with the basics of [Git](https://git-scm.com/) and it is installed. It is used to communicate with the GitHub repository.
-- [Docker](https://www.docker.com/) is installed. It is used to run Business Central as a self-contained application.
-- [BcContainerHelper](https://www.powershellgallery.com/packages/BcContainerHelper/) is installed and will be used to create our Docker container.
-- Demo or Partner License
+## Requirements
 
-## Getting the Repository onto the Local Machine
+- You must have a GitHub account.
+- You are familiar with the basics of [Git](https://git-scm.com/), and have the application available. You will use Git to access the GitHub repository.
+- [Docker](https://www.docker.com/) is installed. You will use it to run Business Central as a self-contained application.
+- [BcContainerHelper](https://www.powershellgallery.com/packages/BcContainerHelper/) is installed. You will use it to create a Docker container.
+- Demo or Partner license for Business Central
 
-1. Visit the [ALAppExtensions Repository](https://github.com/microsoft/ALAppExtensions)
-2. Fork the repository under your user. The button can be located at the top right of the repository page.
-3. Open the green dropdown button labeled 'Code' and copy the URL under code to clone the forked repository. 
+## Get the Repository On Your Local Machine
+1. Open the [ALAppExtensions Repository](https://github.com/microsoft/ALAppExtensions), and choose Fork to create a fork of the repository.
+2. Choose **Code**, and then copy the URL under code to clone the forked repository. 
 
-    The URL looks like [https://github.com/\<username\>/ALAppExtensions.git](https://github.com/\<username\>/ALAppExtensions.git). Where `<username>` is your GitHub username.
-4. On your local machine, open PowerShell and go to the directory you'd like to keep the repository files.
+    The URL looks like https://github.com/\<*username*\>/ALAppExtensions.git, and <*username*> is your GitHub username.
+4. Open PowerShell, and then open the directory in which you want to keep the repository files.
+5. Run the **git clone <URL>** command. Replace <*URL*>` with the URL you copied in step 3.
+6. Open VS Code, and then go to the **System Modules** folder in the cloned repository.
+7. Run the **code ALAppExtensions/Modules/System** command.
+8. In the **System** folder, open the **app.json** and note the **version** that is listed. You will need that in step 3 in the process of setting up a Docker container.
 
-    Run the command `git clone <URL>`. Where `<URL>` is step 3's URL you copied.
+## Set Up a Business Central Docker Container
+1. In PowerShell, import the **BcContainerHelper** module by running the **Import-Module BcContainerHelper** command. This loads the functions from the module. 
+2. Run the **New-BcContainerWizard** command. This opens a new PowerShell window and allows you to configure your [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] container.
+3. Complete the steps in the wizard. Make the following changes to the default values. 
 
-5. Open VS Code in the System modules folder in the cloned repository.
-
-    Run the command `code ALAppExtensions/Modules/System`
-
-6. Open the file `app.json` in the System folder and take a look at what `version` is listed.
-
-## Setting up Business Central Docker Container
-
-1. Import BcContainerHelper to the PowerShell window
-
-    Run the command `Import-Module BcContainerHelper`. This will load up all the functions from the module.
-2. Run the command `New-BcContainerWizard`. This will open a new PowerShell window and allow you to configure the options you'd like for your Business Central container.
-3. The options below aren't the complete list of options that show up but the ones we change from the default choices.
-
-    1. Local Docker Container or Azure VM, we will be using a local docker container.
-    2. Authentication, Username/Password Authentication, options a, b or c.
-    3. Container Name. Any name you prefer.
-    4. Version, options e or f. Depending on whether you want an Sandbox or OnPrem build.
+    1. On the **Local Docker Container or Azure VM** step, choose a local docker container.
+    2. On the **Authentication, Username/Password Authentication** step, choose options **a**, **b** or **c**.
+    3. On the **Container Name** step, enter a name.
+    4. On the **Version** step, choose options **e** or **f**, depending on whether you want a sandbox or on-premesis build.
     
-        - Key in the `version` from `ALAppExtensions/Modules/System/app.json` after selecting option e or f.
-    5. Country, us is fine.
-    6. Test Toolkit, if you have a partner license, you may choose any option. If you only have a demo license, choose option d, No Test Toolkit.
+        - Enter the version from `ALAppExtensions/Modules/System/app.json` after selecting option **e** or **f**.
+    5. Country, US is fine.
+    6. Test Toolkit, if you have a partner license, you may choose any option. If you only have a demo license, choose option **d**, **No Test Toolkit**. 
     7. Premium Plan, not required.
     8. Create Test Users, not required.
     9. AL Base App Development, we will need this as we will work on the System Application.
@@ -48,9 +53,10 @@
     12. License, put in the path to your license file.
     13. Database, default option a.
     14. Multitenant, non-multitenant setup.
-    15. We will then put in `!` to use the default option choices for the rest of the options.
+    15. We will then put in **!** to use the default option choices for the rest of the options.
 4. At the end of the configuration, you should be presented with the following script:
-    ##
+
+```
         $containerName = 'mydemo'
         $password = 'P@ssw0rd'
         $securePassword = ConvertTo-SecureString -String $password -AsPlainText -Force
@@ -68,5 +74,12 @@
             -licenseFile $licenseFile `
             -includeAL -doNotExportObjectsToText `
             -updateHosts
-    If you copy the above script, do not forget to update the `<path to license file>`. Also, if you are using a demo license, remove the options `-includeTestToolkit` and `-includeTestLibrariesOnly`.
-5. Run the above script and the docker container will be created. This may take some time if you are running it for the first time.
+```    
+    
+    If you copy the script, remember to update the path to the license file ($licensFile). Also, if you are using a demo license, remove the **-includeTestToolkit** and **-includeTestLibrariesOnly** options.
+5. Run the script to create the Docker container. This can take some time if you are running it for the first time.
+
+## See Also
+[Getting Started with Modules](devenv-getting-started.md)  
+[Create a New Module in the System Application](devenv-new-module.md)  
+[Module Architecture](devenv-blueprint.md)  

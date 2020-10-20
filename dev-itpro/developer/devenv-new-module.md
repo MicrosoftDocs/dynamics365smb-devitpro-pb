@@ -12,27 +12,20 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Create a New Module in the System Application
-This topic provides an overview of how to create a new module in the System Application.
+This topic provides an overview of how to create a new module in the System Application. 
 
-### Requirements
+## Requirements
 1. Familiarity with development in AL. For more information, see [AL Development](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
 2. Your development environment is ready. For more information, see [Development Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
 
-## Steps
-<!--Not sure what these steps actually do. Is it just how to get the symbols?-->
+> [!NOTE]
+> Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
-1. In Visual Studio Code, open the folder from the AlAppExtensions repository that you want to contribute to. System modules are located in the `System` folder.
-2. To open the command search, press `F1,` and then choose **AL: Download Symbols**.
-3. Now you can modify the module and add you contribution. Remember that your changes should comply with the general guidelines for modules. For more information, see [Module Architecture](devenv-blueprint.md). 
-
-#### Example
-<!--Not sure I'm getting this right. Should this "Example" heading be an H2?-->
+## Example
 This is an example of a contribution for a new module. The example is based on a module that was already added, the XmlWriter module. That contribution added a wrapper module to provide support for the XmlWriter. These changes are already published in the AlAppExtensions repository. The pull request that we will be recreating is available here: [Pull Request 7876](https://github.com/microsoft/ALAppExtensions/pull/7876). Let's take a look at what it took to create this pull request.
 
 ### Set Up Visual Studio Code for Module Development
-When setting up your development environment, you should have taken note of the `server` and `serverInstance` settings. <!--Seems like we should have told them about this earlier. Maybe in step 2 in Requirements-->
-
-Open the `launch.json` file and update the `server`, `serverInstance`, and `authentication` settings, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
+Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
 ```
 
@@ -41,20 +34,15 @@ Open the `launch.json` file and update the `server`, `serverInstance`, and `auth
     "authentication": "Windows",
 
 ```
-Open the `settings.json` file, and update the `al.assemblyProbingPaths`, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
+Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
 
-#### Create a Branch
-Run the following command to create a branch:
-```
-    git checkout -b "YourFeatureBranchName"
+### Create a Branch
+To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
 
-```
-You are now ready to start creating a new module.
-
-#### Creating a new module
+### Create a New Module
 Before you create a new module, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md).
 
-We'll start by creating a new folder named `XmlWriter` in the `System` folder, where we will add an app.json file. This `json` file will contain the general details of the module for compilation.
+We'll start by creating a new folder named **XmlWriter** in the **System** folder, where we will add an app.json file. The app.json file will contain the general details of the module.
 
 ```
     {
@@ -91,9 +79,9 @@ We'll start by creating a new folder named `XmlWriter` in the `System` folder, w
 
 ```
 > [!NOTE]
-> After you finish developing your module, you will need to update the app.json file to ensure that the `versions` and `idRanges` are correct. You can easily verify the version by checking the app.json in other modules in the System Application. The idRanges must reflect the IDs used in the module.
+> After we finish developing our module, we will need to update the app.json file to ensure that the **versions** and **idRanges** are correct. We can easily verify the version by checking the app.json in other modules in the System Application. The idRanges must reflect the IDs used in the module.
 
-Next, create the `src` folder under `System/XmlWriter`. This folder will contain our source code. We must create an internal implementation codeunit named `XmlWriterImpl.Codeunit.al` in the `src` folder.
+Next, create the **src** folder under **System/XmlWriter**. This folder will contain our source code. We will create an internal implementation codeunit named **XmlWriterImpl.Codeunit.al** in the **src** folder.
 
 After adding the implementation functions, the implementation codeunit will look as follows.
 
@@ -132,9 +120,9 @@ After adding the implementation functions, the implementation codeunit will look
     }
 
 ````
-Now that we have created our implementation codeunit. We need to add public functions in a facade codeunit with the functionality that we want to expose. Since the functions here are public, we need to ensure that these are well-documented and tested. To do this, we need to create a facade codeunit which we will call `XmlWriter.Codeunit.al`. The functions simply call the corresponding function in the implementation codeunit.
+Now that we have created our implementation codeunit, we must add public functions in a facade codeunit with the functionality that we want to expose. Because the functions are public, we must ensure that these are tested and documented. To do this, we need to create a facade codeunit. In this example, we'll name the codeunit **XmlWriter.Codeunit.al**. The functions call the corresponding functions in the implementation codeunit.
 
-It will look like the following after adding the public functions and documentation.
+The following is an example of the facade codeunit named **XmlWriter.Codeunit.al** that includes public functions and documentation.
 
 ```
 
@@ -180,9 +168,9 @@ It will look like the following after adding the public functions and documentat
             XmlWriterImpl: Codeunit "XmlWriter Impl";
     }
 ```
-Now that we have now exposed the functions we need, the next step is to add tests. To do that, we must create a new folder under `System Tests`, `XmlWriter`. We will also need to create the `app.json` file for module details and an `src` folder for our test code.
+Now that we have now exposed the functions, the next step is to add tests. To do that, we'll create a new folder under **System Tests**, **XmlWriter**. We will also create an app.json file for the module details and an **src** folder for our test code.
 
-We will add the following new file under `System Tests/XmlWriter/src`, `XmlWriterTest.Codeunit.al`. The file will look as follows:
+We will add the following new file under **System Tests/XmlWriter/src**, **XmlWriterTest.Codeunit.al**. 
 
 ```
     // ------------------------------------------------------------------------------------------------
@@ -227,21 +215,19 @@ We will add the following new file under `System Tests/XmlWriter/src`, `XmlWrite
     }
 
 ```
-After running the tests, including the new ones, and verifying that they pass, our changes are complete.
+After running the tests successfully, changes are complete.
 
 #### Commit and push your changes and open a PR
 
-Commit your changes
-
-    git commit -m "Your message"
-
-Push your changes
-
-    git push
+* To commit your changes, run the **git commit -m "Your message"** command.
+* To push your changes, run the **git push** command.
 
 You can now go to your Github fork and open a pull request in the AlAppExtensions repository. 
 
 ## See Also
-https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/  
-https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions  
-https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github
+[Become a Contributor to Business Central](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)  
+["Git" going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)  
+[Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)  
+[Getting Started with Modules](devenv-getting-started.md)  
+[Create a New Module in the System Application](devenv-new-module.md)  
+[Module Architecture](devenv-blueprint.md)  
