@@ -21,7 +21,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 ## Countries and regions
 
-|Country/Region|Localized by|Availability|Tenant Admin Center Code|
+|Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|
 |-----------|---------|------------|-----------|
 |Australia|Microsoft|Available|AU|
 |Austria|Microsoft|Available|AT|
