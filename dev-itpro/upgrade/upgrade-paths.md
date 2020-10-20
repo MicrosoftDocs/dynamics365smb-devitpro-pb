@@ -67,3 +67,4 @@ The following sections provide the supported upgrade paths to the different [!IN
 [Upgrading to Business Central Spring 2019](upgrading-to-business-central-on-premises.md)  
 [Upgrading to Business Central 2019 release Wave 2](upgrade-overview-v15.md)  
 [Upgrading to Business Central 2020 release Wave 1](upgrade-overview-v16.md)  
+[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)  
