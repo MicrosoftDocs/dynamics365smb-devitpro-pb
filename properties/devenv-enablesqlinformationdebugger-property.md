@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
+<!-- redirected -->
 
 # EnableSqlInformationDebugger Property
 Specifies whether the debugger shows the SQL Information in the debugger. Default value is **true**.
