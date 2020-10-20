@@ -75,8 +75,7 @@ To create a sandbox environment:
     
     When you create a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will also contain all per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
 
-    > [!IMPORTANT]
-    > [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
+   [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
 5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 6. Choose the relevant application version for the new sandbox environment from the **Version** list if more than one version is available.
 7. Select **Create**.
