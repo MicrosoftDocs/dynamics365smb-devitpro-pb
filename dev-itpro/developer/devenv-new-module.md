@@ -12,50 +12,51 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Create a New Module in the System Application
-
 This topic provides an overview of how to create a new module in the System Application.
 
-### Prerequisites
-1. You are familiar with development in AL. For more information, see [AL Development](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
-2. Your development environment has been set up. For more information, see [Development Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
+### Requirements
+1. Familiarity with development in AL. For more information, see [AL Development](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
+2. Your development environment is ready. For more information, see [Development Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
 
-### Steps
+## Steps
+<!--Not sure what these steps actually do. Is it just how to get the symbols?-->
+
 1. In Visual Studio Code, open the folder from the AlAppExtensions repository that you want to contribute to. System modules are located in the `System` folder.
-2. Open the command search by pressing `F1` and run **AL: Download Symbols**.
-3. Now you are ready to go. You can modify the the module and add you contribution. Remember that your changes should adhere to the general guidelines for modules described in the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). See below for an example.
+2. To open the command search, press `F1,` and then choose **AL: Download Symbols**.
+3. Now you can modify the module and add you contribution. Remember that your changes should comply with the general guidelines for modules. For more information, see [Module Architecture](devenv-blueprint.md). 
 
-### Example
-In the following, we will go through an example contribution for a new module. Specifically, we will look at a the XmlWriter module. The contribution added a wrapper module to provide support for the XmlWriter. Thus, if you are following along you will see that these changes have already been published in the AlAppExtensions repository. You can find the actual PR that we will be recreating here: [Pull Request 7876](https://github.com/microsoft/ALAppExtensions/pull/7876). Let's take a look at what it took to create this PR.
+#### Example
+<!--Not sure I'm getting this right. Should this "Example" heading be an H2?-->
+This is an example of a contribution for a new module. The example is based on a module that was already added, the XmlWriter module. That contribution added a wrapper module to provide support for the XmlWriter. These changes are already published in the AlAppExtensions repository. The pull request that we will be recreating is available here: [Pull Request 7876](https://github.com/microsoft/ALAppExtensions/pull/7876). Let's take a look at what it took to create this pull request.
 
-#### Set up Visual Studio Code for module development
+### Set Up Visual Studio Code for Module Development
+When setting up your development environment, you should have taken note of the `server` and `serverInstance` settings. <!--Seems like we should have told them about this earlier. Maybe in step 2 in Requirements-->
 
-When setting up your development environment, you should have taken note of the `server` and `serverInstance` settings.
+Open the `launch.json` file and update the `server`, `serverInstance`, and `authentication` settings, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
 
-Open the `launch.json` file and update the `server`, `serverInstance` and `authentication` settings, as described in [setting up your development environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
+```
 
     "server": "https://YourDockerContainerName",
     "serverInstance": "BC",
     "authentication": "Windows",
 
+```
+Open the `settings.json` file, and update the `al.assemblyProbingPaths`, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
 
-Open the `settings.json` file and update the `al.assemblyProbingPaths` as described in [setting up your development environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
-
-#### Make a branch
-
-Make a branch by using the following command
-
+#### Create a Branch
+Run the following command to create a branch:
+```
     git checkout -b "YourFeatureBranchName"
 
+```
 You are now ready to start creating a new module.
 
 #### Creating a new module
+Before you create a new module, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md).
 
-Before creating a new module, make sure you are familiar with the general architecture of system modules by looking at the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md).
+We'll start by creating a new folder named `XmlWriter` in the `System` folder, where we will add an app.json file. This `json` file will contain the general details of the module for compilation.
 
-We start by creating a new folder in the `System` folder called `XmlWriter`.
-
-Once we have the new folder, we will add an `app.json` file. This `json` file will contain the general details of the module for compilation.
-
+```
     {
         "id":  "215b484f-9fbf-437c-bc6e-67e2c0f283b0",
         "name":  "XMLWriter",
@@ -88,12 +89,15 @@ Once we have the new folder, we will add an `app.json` file. This `json` file wi
         "contextSensitiveHelpUrl":  "https://docs.microsoft.com/dynamics365/business-central/"
     }
 
-You will have to revisit the `app.json` file at the end of your development to ensure that the `versions` and `idRanges` are set properly. The `versions` can be easily verified by checking the other System Application's `app.json`. The `idRanges` will have to be updated to properly reflect the ids used in the module.
+```
+> [!NOTE]
+> After you finish developing your module, you will need to update the app.json file to ensure that the `versions` and `idRanges` are correct. You can easily verify the version by checking the app.json in other modules in the System Application. The idRanges must reflect the IDs used in the module.
 
-Next we create the `src` folder under `System/XmlWriter`. This folder will contain all our source code. Next, we need to create an internal implementation codeunit in the `src` folder, `XmlWriterImpl.Codeunit.al`.
+Next, create the `src` folder under `System/XmlWriter`. This folder will contain our source code. We must create an internal implementation codeunit named `XmlWriterImpl.Codeunit.al` in the `src` folder.
 
-The implementation codeunit would look like the following after adding the implementation functions.
+After adding the implementation functions, the implementation codeunit will look as follows.
 
+```
     // ------------------------------------------------------------------------------------------------
     // Copyright (c) Microsoft Corporation. All rights reserved.
     // Licensed under the MIT License. See License.txt in the project root for license information.
@@ -127,9 +131,12 @@ The implementation codeunit would look like the following after adding the imple
             XmlTextWriter: DotNet XmlTextWriter;
     }
 
+````
 Now that we have created our implementation codeunit. We need to add public functions in a facade codeunit with the functionality that we want to expose. Since the functions here are public, we need to ensure that these are well-documented and tested. To do this, we need to create a facade codeunit which we will call `XmlWriter.Codeunit.al`. The functions simply call the corresponding function in the implementation codeunit.
 
 It will look like the following after adding the public functions and documentation.
+
+```
 
     // ------------------------------------------------------------------------------------------------
     // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -172,13 +179,12 @@ It will look like the following after adding the public functions and documentat
         var
             XmlWriterImpl: Codeunit "XmlWriter Impl";
     }
+```
+Now that we have now exposed the functions we need, the next step is to add tests. To do that, we must create a new folder under `System Tests`, `XmlWriter`. We will also need to create the `app.json` file for module details and an `src` folder for our test code.
 
-We have now exposed the appropriate functions. The next step is to make sure add tests to test the functionality that we added.
+We will add the following new file under `System Tests/XmlWriter/src`, `XmlWriterTest.Codeunit.al`. The file will look as follows:
 
-Like we did for the module itself, we will need to create a new folder under `System Tests`, `XmlWriter`. We will also need to create the `app.json` file for module details and `src` folder for our test code.
-
-We will add the following new file under `System Tests/XmlWriter/src`, `XmlWriterTest.Codeunit.al` and it will look like the following:
-
+```
     // ------------------------------------------------------------------------------------------------
     // Copyright (c) Microsoft Corporation. All rights reserved.
     // Licensed under the MIT License. See License.txt in the project root for license information.
@@ -220,7 +226,8 @@ We will add the following new file under `System Tests/XmlWriter/src`, `XmlWrite
         end;
     }
 
-After running all the tests including the new ones and verifying that they pass, we have now made our changes!
+```
+After running the tests, including the new ones, and verifying that they pass, our changes are complete.
 
 #### Commit and push your changes and open a PR
 
@@ -234,9 +241,7 @@ Push your changes
 
 You can now go to your Github fork and open a pull request in the AlAppExtensions repository. 
 
-#### Resources
-
-Have a look at the following articles for other walkthroughs:  
-* https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/  
-* https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions  
-* https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github
+## See Also
+https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/  
+https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions  
+https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github

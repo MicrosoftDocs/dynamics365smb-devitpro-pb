@@ -20,8 +20,8 @@ This topic provides an overview of how to change an existing module.
 
 ### Steps
 1. In Visual Studio Code, open the folder from the AlAppExtensions repository that you want to contribute to. System modules are located in the `System` folder.
-2. Open the command search by pressing `F1` and run **AL: Download Symbols**.
-3. Now you are ready to go. You can modify the the module and add you contribution. Remember that your changes should adhere to the general guidelines for modules described in the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). See below for an example. 
+2. To open the command search, press `F1,` and then choose **AL: Download Symbols**.
+3. Now you can modify the the module and add you contribution. Remember that your changes should conform to the general guidelines for modules described in the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). See below for an example. 
 4. The main consideration when changing an existing module, compared to contributing with a new module, is that you need to adhere to, and think about no breaking changes. When doing your changes make sure that you do not break existing functionality. Once you are done, check that existing tests still pass, and add new tests for the functionality that you changed or added.
 
 ### Example
