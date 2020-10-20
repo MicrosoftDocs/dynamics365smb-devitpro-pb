@@ -12,7 +12,7 @@ author: bholtorf
 ---
 
 # Module Architecture
-There are some ground rules to follow to ensure that application modules bring us closer to the architecture we want. The internal architecture of modules can, and most likely will, differ. To reduce coupling and increase consistency, every module is a separate entity that is equipped with a publicly accessible facade, while the internal implementation is not public, as shown in the following image: 
+Though the internal architecture of modules can, and most likely will, differ, there are rules that ensure consistency and reliability in the architecture of application modules. To reduce coupling and increase consistency, every module is a separate entity that has a publicly accessible facade, while the internal implementation is not public, as shown in the following image: 
 <!--
 <p align="center">
   <img src="Images/Architecture.png" alt="Architecture layout" />
@@ -20,34 +20,34 @@ There are some ground rules to follow to ensure that application modules bring u
 -->
 This is achieved by following a few simple design principles:
 
-### One module, one project
-Modules are independent projects and have their own app.json files. For details about the contents of the app.json file, see the Project Setup section.
+## One Module, One Project
+Modules are independent projects and have their own app.json files. For details about the contents of the app.json file, see [Project Setup](devenv-blueprint.md#project-setup).
 
-### Packaging and Layering
-Modules can belong to a specific package, or functional layer if you will. A module becomes part of a layer when it’s added to the folder structure of the layer’s package. A module can belong to several packages because the module is a package of its own, and can be bundled into larger functional layering packages.
+## Packaging and Layering
+Modules can belong to a specific package, or functional layer. A module becomes part of a layer when it’s added to the folder structure of the layer’s package. A module can belong to several packages because the module is a package of its own, and can be bundled into larger functional layering packages.
 
-### Dependencies 
+## Dependencies 
 Dependencies to other modules can only be taken to modules in the same functional layer or to lower layers. For example, a module in the Core Application can only take dependencies to modules in the Core Application or System Application, but never to extensions.
 
-### Target Environment
+## Target Environment
 Every module must initially target the most restrictive environment, which is the cloud environment. If unsafe operations are required, those should result in a System Application module where the unsafe operations are wrapped with safe APIs. That is done by setting the **Target** to **OnPrem**. Modules in layers above the System Application must have **Target** set to **Cloud** in the **app.json** file.
 
-### Object Accessibility 
-Only facade codeunits, pages and tables required in the public API of the module can be accessible. Internal implementation details must be marked as such by setting the access modifier to Internal, i.e. entities can be accessed within the module but cannot be called from outside the module.
+## Object Accessibility 
+Only facade codeunits, pages, and tables required in the public API of the module can be accessible. Internal implementation details must be marked as such by setting the access modifier to Internal, i.e. entities can be accessed within the module but cannot be called from outside the module.
 
-### facade Codeunits
+## Facade Codeunits
 Every module must have a facade that meets the following rules:
-* Access must be **Public**. It should be set explicitly to emphasize that this is a facade or an API-like codeunit for exposing the core functionality in the module.
+* Access must be **Public**. It should be set explicitly to emphasize that this is a facade or an API-like codeunit that exposes the core functionality in the module.
 * All integration and business event publishers must be in the facade as internal functions. This prevents them from being invoked outside the module.
 * Event publishers should be marked as internal. Exceptions must be documented.
 * All external methods go in the facade.
 * Facades cannot contain logic or local functions.
 * Because the facade is the codeunit that other modules reference, it should have a short, meaningful name. Internal implementation codeunits can be suffixed with “Impl,” for example, because they are not referenced outside the module.
 
-### Business Logic
+## Business Logic
 Implementation codeunits contain the business logic. Pages and tables can contain code, but should do so only when it's absolutely required.
 
-### Extensibility
+## Extensibility
 Extensibility must be thought into the internal implementation of every module. If a module should not be extensible, the **Extensibility** property on tables, pages, and enums must be set to **False** to prevent those objects from being extended.
 
 Functions and fields in extensible tables and pages must have an access modifier, as described in the following table.
@@ -59,22 +59,22 @@ Functions and fields in extensible tables and pages must have an access modifier
 |Protected|Accessed only by code in the same table or table/page extensions of that table.|
 |Public|Accessed by any other code in the same module and in other modules that reference it.|
 
-### Documentation
-Every publicly accessible object must be documented, following the standards specified in section Documentation.
+## Documentation
+Every publicly accessible object must be documented. For more information, see [Documentation](devenv-blueprint.md#documentation).
 
-### Tests
+## Tests
 Every module’s public API must be tested according to Microsoft standards. For more information, see [Testing](devenv-blueprint.md#testing).
 
-### Single Instance
-Use single instance only when it’s required, or if the module is expected to be called very frequently.
+## Single Instance
+Use single instance only when it’s required, or if the module is expected to be called frequently.
 
-### .NET
+## .NET
 If a .NET type is an integral part of the module and is not referenced elsewhere, the alias for that type must be defined in the module. If the .NET type is used in different modules, then the alias for it must be defined in the DotNet Aliases module.
 
 ## Project Setup
 Every module begins with a project setup that includes the following: 
 
-* **Module Name**: If the module represents an entity, name the module after the entity. If the module does not represent an entity, give it a name that describes what it does. Try to avoid using words such as “Management” or “Helper” in the name because they don't add value. Module names can be singular or plural, depending on whether they handle one or more entities or tasks.
+* **Module Name**: If the module represents an entity, name the module after the entity. If the module does not represent an entity, give it a name that describes what it does. Module names can be singular or plural, depending on whether they handle one or more entities or tasks.
 * **Location**: Determine which layer the module belongs to, and create a subfolder in a folder in that layer. For example, *Modules\System\My Module*).
 * **Source Code**: Add the source code of the module in a src subfolder. For example, *Modules\System\My Module\src*).
 
@@ -86,19 +86,19 @@ Every module must be tested through a separate test module. Only public function
   <img src="Images/Testing.png" alt="Testing" />
 </p>
  -->
-**Test Module Name and Location**: The test module should have the same name as the module it tests, but be placed in a separate layer/package that contains tests for all modules in the layer. For example, *Modules\\**System Tests**\My Module*). Test code cannot reside in the same layer folder structure as the module, or within the module, because it must not be executable or part of a production environment.
+The test module should have the same name as the module it tests, but be placed in a separate layer/package that contains tests for all modules in the layer. For example, *Modules\\**System Tests**\My Module*). Test code cannot reside in the same layer folder structure as the module, or within the module, because it must not be executable or part of a production environment.
 
 ## Documentation
 It's important that you document your module. The following sections provide some guidelines.
 
-### Module
+## Modules
 The app.json file for each module must contain a user-friendly title, a short brief, and a description that states its purpose. 
 
-### Public API
+## Public API
 Every publicly accessible object must have developer facing documentation that follows the XML documentation comments standard.
 
-#### Public objects
-Every public codeunit, table, page, and so on, must have a summary that states what the object is used for.
+## Public Objects
+Public objects, such as codeunits, tables, pages, and so on, must have a summary that states what the object is used for.
 
 ```
 /// <summary>
@@ -106,8 +106,8 @@ Every public codeunit, table, page, and so on, must have a summary that states w
 /// </summary>
 ```
 
-#### Public functions
-Every public function must have a summary, parameter description, and a return value description. The following is an example:
+## Public Functions
+Public functions must have a summary, a parameter description, and a return value description. The following is an example.
 
 ```
 /// <summary>

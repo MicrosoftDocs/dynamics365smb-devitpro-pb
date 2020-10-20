@@ -21,8 +21,8 @@ This topic provides an overview of how to create a new module in the System Appl
 > [!NOTE]
 > Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
-## Example
-This is an example of a contribution for a new module. The example is based on a module that was already added, the XmlWriter module. That contribution added a wrapper module to provide support for the XmlWriter. These changes are already published in the AlAppExtensions repository. The pull request that we will be recreating is available here: [Pull Request 7876](https://github.com/microsoft/ALAppExtensions/pull/7876). Let's take a look at what it took to create this pull request.
+## Create a New Module
+The following sections provide an example of how to contribute a new module. The example is based on the XmlWriter module, which is published in the AlAppExtensions repository. That contribution added a wrapper module to provide support for the XmlWriter, and the steps in this topic will recreate the pull request for the XmlWriter module. If you want to view the original pull request, it's available here: [Pull Request 7876](https://github.com/microsoft/ALAppExtensions/pull/7876). 
 
 ### Set Up Visual Studio Code for Module Development
 Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).

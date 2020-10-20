@@ -1,5 +1,5 @@
 ---
-title: "Change a module in the System Application"
+title: "Change a Module in the System Application"
 description: "This topic provides steps and examples of how to change a module in the System Application."
 ms.custom: na
 ms.date: 10/01/2020
@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 
-# Change an Existing Module
+# Change a Module in the System Application
 This topic provides an overview of how to change an existing module.
 
 ## Requirements
@@ -25,36 +25,29 @@ Remember that your changes should conform to the general guidelines for modules 
 
 The main consideration when changing an existing module, compared to contributing with a new module, is that you need to adhere to, and think about no breaking changes. When doing your changes make sure that you do not break existing functionality. Once you are done, check that existing tests still pass, and add new tests for the functionality that you changed or added.
 
-## Example
-In the following, we will go through an example contribution to an existing module. Specifically, we will look at a previous contribution to the Base64 Convert module. The contribution added support for other text encodings than UTF8. Thus, if you are following along you will see that these changes have already been published in the AlAppExtensions repository. You can find the actual PR that we will be recreating here: https://github.com/microsoft/ALAppExtensions/pull/7676. Let's take a look at what it took to create this PR.
-
-### Set up Visual Studio Code for module development
-
-When setting up your development environment, you should have taken note of the `server` and `serverInstance` settings.
-
-Open the `launch.json` file and update the `server`, `serverInstance` and `authentication` settings, as described in [setting up your development environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
+### Set Up Visual Studio Code for Module Development
+Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
 ```
+
     "server": "https://YourDockerContainerName",
     "serverInstance": "BC",
     "authentication": "Windows",
+
 ```
-Open the `settings.json` file and update the `al.assemblyProbingPaths` as described in [setting up your development environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
+Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
 
-### Make a branch
+### Create a Branch
+To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
 
-Make a branch:
-```
+## Change an Existing Module
+The following, sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the AlAppExtensions repository. The contribution added support for other text encodings than UTF8. If you're interested, the original pull request is available here: https://github.com/microsoft/ALAppExtensions/pull/7676.
 
-    git checkout -b "YourFeatureBranchName"
-```
-You are now ready to start changing the module.
+### Make Changes to a Module
+Before making changes, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md). You can also check out the article titled [How to add a system module](https://github.com/microsoft/ALAppExtensions/blob/master/How-to-add-a-module.md) for an example of creating a full system module.
 
-### Making changes to the module
+We'll start by adding the functions that we need to support different text encodings to the internal implementation codeunit. We'll add the following functions to the **System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al** implementation codeunit:
 
-Before making changes, make sure you are familiar with the general architecture of system modules by looking at the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). You can also check the article: [How to add a system module](https://github.com/microsoft/ALAppExtensions/blob/master/How-to-add-a-module.md) for an example of creating a full system module.
-
-We start by adding the functions that we need to the internal implementation codeunit, that we need to support different text encodings. We add the following functions to the implementation codeunit `System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al`:
 ```
     procedure ToBase64(String: Text; TextEncoding: TextEncoding): Text
     begin
@@ -124,7 +117,8 @@ We start by adding the functions that we need to the internal implementation cod
         exit(OutputString);
     end;
 ```
-We also need to update some of the existing functions in `System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al`, while making sure that they keep the same functionality:
+We also need to update some of the existing functions in **System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al**, while making sure that they keep the same functionality:
+
 ```
     procedure ToBase64(String: Text): Text
     begin
@@ -141,9 +135,10 @@ We also need to update some of the existing functions in `System/Base64 Convert/
         exit(FromBase64(Base64String, TextEncoding::UTF8, 0));
     end;
 ```
-At this point, we have changed the implementation codeunit. We have made sure not to break existing functionality, by keeping the same behaviour for existing functions.
+We have changed the implementation codeunit, and avoided breaking existing functionality by keeping the same behavior for existing functions.
 
-We can then add public functions in the facade codeunit with the functionality that we want to expose. Since the functions here are public we need to ensure that these are well-documented and tested. The functions simply call the corresponding function in the implementation codeunit. We add the following functions to **System/Base64 Convert/src/Base64Convert.Codeunit.al**:
+Now we'll add public functions in the facade codeunit with the functionality that we want to expose. Because the functions are public, we need to ensure that they are documented and tested. The functions call the corresponding functions in the implementation codeunit. We add the following functions to **System/Base64 Convert/src/Base64Convert.Codeunit.al**:
+
 ```
     /// <summary>
     /// Converts the value of the input string to its equivalent string representation that is encoded with base-64 digits.
@@ -199,7 +194,8 @@ We can then add public functions in the facade codeunit with the functionality t
 ```
 We have now exposed the functions. The next steps are to ensure that existing tests pass, and then add new tests for the functionality that we added.
 
-After verifying that the tests passes, we'll add the following tests to the **System Tests/Base64 Convert/src/Base64ConvertTest.Codeunit.al`:** file.
+After verifying that the tests pass, we'll add the following tests to the **System Tests/Base64 Convert/src/Base64ConvertTest.Codeunit.al** file.
+
 ```
     [Test]
     procedure StringToBase64UTF16Test()
@@ -229,9 +225,8 @@ After verifying that the tests passes, we'll add the following tests to the **Sy
         Assert.AreEqual(SampleUTF16Txt, ConvertedText, ConvertionFromBase64UTF16Err);
     end;
 ```
-After running all the tests including the new ones and verifying that they pass, we have now made our changes!
 
-### Commit and push your changes and open a PR
+### Commit and Push Changes, and Open a Pull Request
 To submit your changes, follow these steps:
 
 1. To commit your changes, run the **git commit -m "Your message"** command.
