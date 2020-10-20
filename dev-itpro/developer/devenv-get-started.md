@@ -21,7 +21,7 @@ To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fi
 Go through the following steps to set up a sandbox environment. With this you get sample code that compiles and runs with just a few commands. 
 
 > [!NOTE]  
-> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
+> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 > [!IMPORTANT]  
 > It is not supported to publish, from Visual Studio Code, an extension with the same identifiers as an extension published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.

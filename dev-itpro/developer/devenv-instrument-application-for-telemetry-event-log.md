@@ -53,7 +53,7 @@ For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and
 
 Viewing and collecting telemetry data is done the same way as with other trace events emitted by [!INCLUDE[prodshort](includes/prodshort.md)], for example, by using tools like Event Viewer, Performance Monitor, PerfView, or logman.
 
--   In Event Viewer, telemetry trace events can be viewed from **Applications and Services Logs**, in the **Microsoft** > **Dynamics365BusinessCentral** > **Common** folder. The custom telemetry trace events are recorded in the **Admin**  folder. You should be aware that only events with severity level of Warning, Error, and Critical will appear.
+-   In Event Viewer, telemetry trace events can be viewed from **Applications and Services Logs**, in the **Microsoft** > **DynamicsNAV** > **Common** folder. The custom telemetry trace events are recorded in the **Admin**  folder. You should be aware that only events with severity level of Warning, Error, and Critical will appear.
 
     For more information, see [Monitoring Business Central Server Events Using Event Viewer](../administration/monitor-server-events-windows-event-log.md).
 
