@@ -10,17 +10,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 10/01/2020
+ms.date: 10/20/2020
 ms.author: edupont
 
 ---
 
 # Migrate to Business Central Online from Business Central On-premises
 
-Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. Use this twin to migrate to the cloud, or use it to connect to intelligent cloud scenarios. The data migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
+Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. Use this twin to migrate to the cloud, or use it to connect to intelligent cloud scenarios. The migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
 
 > [!NOTE]
-> Upgrade your solution to 2020 release wave 2 (version 17), and then migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.
+> You can migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online from versions 14, 15, 16, and 17.
 
 ## Migrating data from extensions
 
@@ -58,6 +58,6 @@ If you upgrade to a new version of [!INCLUDE [prodshort](../developer/includes/p
 [Managing your Intelligent Cloud Environment](manage-intelligent-edge.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  
 [Intelligent Insights with Business Central](/dynamics365/business-central/about-intelligent-cloud)  
-[Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)  
-[Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format](../upgrade/migrate-help.md)  
+[Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
+[Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)  

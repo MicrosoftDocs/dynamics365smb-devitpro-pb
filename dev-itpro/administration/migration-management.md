@@ -1,6 +1,6 @@
 ---
 title: Manage the cloud migration
-description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
+description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, or Dynamics NAV.
 author: bmeier94
 
 ms.service: dynamics365-business-central
@@ -56,6 +56,9 @@ When a company is created in [!INCLUDE [prodshort](../developer/includes/prodsho
 
 ## See also
 
-[FAQ about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
 [Running the Cloud Migration Tool](migration-tool.md)  
+[Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
+[Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
+[Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
+[FAQ about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
