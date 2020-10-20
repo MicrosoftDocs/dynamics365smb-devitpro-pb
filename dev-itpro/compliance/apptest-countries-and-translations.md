@@ -56,7 +56,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Peru|Partner|Available|PE|
 |Philippines|Partner|Available|PH|
 |Poland|Partner|Available|PL|
-|Portugal|Partner|Available|PO|
+|Portugal|Partner|Available|PT|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|
 |Serbia|Partner|Available|RS|
 |Singapore|Partner|Available|SG|
