@@ -44,7 +44,7 @@ This image below is an example of what an offering looks like on AppSource, when
 |16|Minimum of 1 document (max of 3) permitted.| [Documents](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#Documents)|
 |17|Please double check the resolution needs to be 1280 x 720 and only in .png format. It's required to have a minimum of 3 but you can have up to 5.| [Screenshots](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#Screenshots)|
 |18|Landing page where prospects can find information on how you handle their data.| [Privacy Policy Link](readiness-checklist-i-privacypolicy-termsofuse.md)|
-|19|You need to provide a URL for a distinct page with your license agreement, where prospects can find the information on your terms of use.| [License Agreeement](readiness-checklist-i-privacypolicy-termsofuse.md)|
+|19|You need to provide a license agreement, where prospects can find the information on your terms of use.| [License Agreeement](readiness-checklist-i-privacypolicy-termsofuse.md)|
 |20|It is a requirement that you provide different (i.e. more than two) contact options on your offer's support page.| [Support Link](readiness-checklist-h-help-support.md#Support)|
 ||||
 ||**Special Rules for Localization, Connect & Consulting Services Apps**|
