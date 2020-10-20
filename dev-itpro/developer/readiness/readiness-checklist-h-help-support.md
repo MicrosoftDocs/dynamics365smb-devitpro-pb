@@ -47,7 +47,7 @@ The following screenshot illustrates how the Help URL, supported countries/regio
 - The support page can be in any language 
 - There needs to be a clear distinction between the support and the help site. We require two separate pages (unless a single page covers all Help Link and Support Link requirements). 
 
-**What do I need to include on my support page?**
+**What should I include on my support page?**
 - You need to provide a URL for a distinct support page where prospects can find different contact options (suh as email address, phone number, live-chat etc.)
 - It is a requirement that the support page is accessible without a login
 - It is a recommendation that you include the time frame for replies (such as within 1-2 business days).
