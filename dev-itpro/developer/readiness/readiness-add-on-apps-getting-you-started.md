@@ -165,9 +165,9 @@ As the final step, to complete registration, click **GO TO DASHBOARD**.
 If you DO want to add coworkers, please follow the 5 steps below:
 
 1. Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
-2. Click on the 'Gear' Icon on the top right corner of the page and then on **Account Settings** as shown on the image below.
+2. Click on the 'Gear' Icon on the top right corner of the page and then on **Developer Settings**.
 
-3. Click on **Users** under **Settings** in the grey panel on the left-hand side of the page. The following image will appear.
+3. Click on **Users** under **Settings** in the grey panel on the left-hand side of the page. 
 
 4. Click the grey **ADD USERS** button and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button (see image below).
 
