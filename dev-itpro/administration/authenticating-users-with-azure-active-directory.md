@@ -34,13 +34,13 @@ You can use the Azure AD service to associate your existing Microsoft account wi
 
 To get started, you have to have an Azure AD tenant where you can register and manage apps, like [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
 
-- If you have an Microsoft 365 subscription that is based on a domain such as *solutions\.onmicrosoft\.com*, you are already using Azure AD because the Microsoft 365 user accounts are based on Azure AD. So, there is nothing more to do in this task.
+- If you have a Microsoft 365 subscription that is based on a domain such as *solutions\.onmicrosoft\.com*, you are already using Azure AD because the Microsoft 365 user accounts are based on Azure AD. So, there is nothing more to do in this task.
 
 <!--    Then, if you add the email addresses for those user accounts to the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  -->
 
-- If you want to sign up for an Microsoft 365 plan, you can use a plan such as Microsoft 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Microsoft 365 site is *solutions.onmicrosoft.com*, your administrative account can be *admin\@solutions\.onmicrosoft\.com*. For more information, see [Select an Microsoft 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
+- If you want to sign up for a Microsoft 365 plan, you can use a plan such as Microsoft 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Microsoft 365 site is *solutions.onmicrosoft.com*, your administrative account can be *admin\@solutions\.onmicrosoft\.com*. For more information, see [Select a Microsoft 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
 
-- Alternatively, you can sign up for an Azure subscription that is not associated with an Microsoft 365 subscription and create your own Azure AD tenant.
+- Alternatively, you can sign up for an Azure subscription that is not associated with a Microsoft 365 subscription and create your own Azure AD tenant.
     
     1. Sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com).
 
