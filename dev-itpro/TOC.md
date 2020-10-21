@@ -232,6 +232,12 @@
 ### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
+### Creating New Modules in the System Application
+#### [Module Architecture](developer/devenv-blueprint.md)
+#### [Getting Started with Modules](developer/devenv-getting-started.md)
+#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
+#### [Create a New Module](developer/devenv-new-module.md)
+#### [Change a Module](developer/devenv-change-a-module.md)
 ## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)

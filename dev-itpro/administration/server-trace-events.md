@@ -95,7 +95,7 @@ AL function tracing events track the execution of AL functions and statements on
 |-------------|-------------|-------------------|-----------------------|  
 |Microsoft-DynamicsNAV-Server|ALTracing|8|0x8|  
   
-The event data that is collected includes: session ID, tenant ID, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user, ALAL function, AL statements, and line number. For more information, see [Event Trace Data](server-trace-events.md#ArgRef).  
+The event data that is collected includes: session ID, tenant ID, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user, AL function, AL statements, and line number. For more information, see [Event Trace Data](server-trace-events.md#ArgRef).  
   
 > [!IMPORTANT]  
 >  If the [!INCLUDE[server](../developer/includes/server.md)] instance is not configured for full AL function tracing, then only root-level AL function will be traced. Statements and AL functions that are called from functions will not be traced. By default, the [!INCLUDE[server](../developer/includes/server.md)] instance is not configured for full AL function tracing. For information about how to specify full AL function tracing, see [Configuring Business Central Server](configure-server-instance.md).  

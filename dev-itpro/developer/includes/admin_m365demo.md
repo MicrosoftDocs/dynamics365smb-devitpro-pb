@@ -19,7 +19,7 @@ ms.author: dmitrych
 
 6. Choose the **Dynamics 365 Business Central** content pack, and then choose the **Create Tenant** button.
 
-    The content pack gives you all you need for the next step. Alternatively, use the **Microsoft 365 Business Demo Content** or **Microsoft 365 Enterprise Demo Content** content packs so that you can get more users for your demo and other scenarios. These content packs are also useful for when you want to demo more complex Microsoft 365 integration scenarios, or if you want to make sure that you get a [!INCLUDE [prodshort](prodshort.md)] tenant for a specific country, for example.
+    The content pack gives you all you need for the next step. Alternatively, use the **Microsoft 365 Business Premium Demo Content** or **Microsoft 365 Enterprise Demo Content** content packs so that you can get more users for your demo and other scenarios. These content packs are also useful for when you want to demo more complex Microsoft 365 integration scenarios, or if you want to make sure that you get a [!INCLUDE [prodshort](prodshort.md)] tenant for a specific country, for example.
 
 7. In an in-private browser window, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and log in with the new administrator account that you created, typically called something like admin@CRMbc123456.onmicrosoft.com.
 

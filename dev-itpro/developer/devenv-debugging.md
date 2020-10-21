@@ -95,7 +95,7 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 
 ## <a name="DebugSQL"></a>Debugging SQL behavior
 
-Traditionally, debugging AL has been about examining behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prodshort](includes/prodshort.md)] April 2019, the AL debugger also offers the capability to examine the impact that your AL code has on the [!INCLUDE[prodshort](includes/prodshort.md)] database.
+Traditionally, debugging AL has been about examining behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prodshort](includes/prodshort.md)] April 2019, the AL debugger also offers the capability to examine the impact that your AL code has on the [!INCLUDE[prodshort](includes/prodshort.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. For more information, see [JSON Files](devenv-json-files.md#Launchjson).
 
 ### View database statistics
 
@@ -136,7 +136,3 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  
-[EnableLongRunningSQLStatements Property](properties/devenv-enablelongrunningsqlstatements-property.md)  
-[EnableSQLInformationDebugger Property](properties/devenv-enablesqlinformationdebugger-property.md)  
-[LongrunningSQLStatementsThreshold Property](properties/devenv-longrunningsqlstatementsthreshold-property.md)  
-[NumberOfSQLStatements Property](properties/devenv-numberofsqlstatements-property.md)  
