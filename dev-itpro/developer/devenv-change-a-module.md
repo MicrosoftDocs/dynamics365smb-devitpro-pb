@@ -35,7 +35,7 @@ Open the **launch.json**, file and update the **server**, **serverInstance**, an
     "authentication": "Windows",
 
 ```
-Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
+Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
 ### Create a Branch
 To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
