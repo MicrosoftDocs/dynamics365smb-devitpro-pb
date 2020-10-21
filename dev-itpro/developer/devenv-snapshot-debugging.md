@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -44,8 +44,8 @@ In the following sections you can read more about how to initialize, view the st
 
 From Visual Studio Code, you start a snapshot by creating a snapshot configuration file. There are two template configurations for a snapshot, which are accessed by selecting **Add Configuration** in Visual Studio Code.
 
-- AL: Initialize a snapshot debugging session locally 
-- AL: Initialize a snapshot debugging session on cloud 
+- AL: Initialize a snapshot debugging session locally
+- AL: Initialize a snapshot debugging session on cloud
 
 Choose whether to run the session on a cloud service or locally. The configuration file will now contain the following information: 
 
@@ -98,6 +98,15 @@ There are two user actions that will start snapshot debugging:
 Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they cannot be removed by user actions. Other snappoints are just regular breakpoints that can be removed or re-added by user actions. If no snappoints are specified the first recorded methods; the first line is the entry breakpoint. 
 
 The user can set breakpoints and continue execution to that breakpoint for testing, for example, if a line is hit, but it is the snappoint that carries the real information.
+
+## Downloading symbols on the snapshot debugger endpoint
+
+In order to download symbols on a production server, you need three permission related entries.
+
+- Be a delegated admin
+- Have snapshot debugger rights (D365 Snapshot Debug permission group)
+- The existing right of having read-only access to the Published Application table emphasized in the ExtensionManagement permission set should also be granted. <!-- check name -->
+
 
 ## Snapshot debugging versus regular debugging
 
