@@ -41,7 +41,7 @@ Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as 
 To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
 
 ## Change an Existing Module
-The following, sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the AlAppExtensions repository. The contribution added support for other text encodings than UTF8. If you're interested, the original pull request is available here: https://github.com/microsoft/ALAppExtensions/pull/7676.
+The following, sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the AlAppExtensions repository. The contribution added support for other text encodings than UTF8. If you're interested, you can view the original pull request at [Pull Request 7676](https://github.com/microsoft/ALAppExtensions/pull/7676).
 
 ### Make Changes to a Module
 Before making changes, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md). You can also check out the article titled [How to add a system module](https://github.com/microsoft/ALAppExtensions/blob/master/How-to-add-a-module.md) for an example of creating a full system module.

@@ -25,9 +25,9 @@ This topic describes how to set up an environment for developing a module in the
 1. Open the [ALAppExtensions Repository](https://github.com/microsoft/ALAppExtensions), and choose Fork to create a fork of the repository.
 2. Choose **Code**, and then copy the URL under code to clone the forked repository. 
 
-    The URL looks like https://github.com/\<*username*\>/ALAppExtensions.git, and <*username*> is your GitHub username.
+    The URL looks like https://github.com/<*username*\>/ALAppExtensions.git, and <*username*> is your GitHub username.
 4. Open PowerShell, and then open the directory in which you want to keep the repository files.
-5. Run the **git clone <URL>** command. Replace <*URL*>` with the URL you copied in step 3.
+5. Run the **git clone <URL>** command. Replace <*URL*> with the URL you copied in step 3.
 6. Open VS Code, and then go to the **System Modules** folder in the cloned repository.
 7. Run the **code ALAppExtensions/Modules/System** command.
 8. In the **System** folder, open the **app.json** and note the **version** that is listed. You will need that in step 3 in the process of setting up a Docker container.
@@ -74,9 +74,9 @@ This topic describes how to set up an environment for developing a module in the
             -licenseFile $licenseFile `
             -includeAL -doNotExportObjectsToText `
             -updateHosts
-```    
-    
-    If you copy the script, remember to update the path to the license file ($licensFile). Also, if you are using a demo license, remove the **-includeTestToolkit** and **-includeTestLibrariesOnly** options.
+```   
+   > [!NOTE]
+   > If you copy the script, remember to update the path to the license file ($licenseFile). Also, if you are using a demo license, remove the **-includeTestToolkit** and **-includeTestLibrariesOnly** options.
 5. Run the script to create the Docker container. This can take some time if you are running it for the first time.
 
 ## See Also
