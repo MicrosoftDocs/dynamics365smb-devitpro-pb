@@ -103,7 +103,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object.  The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy. This parameter must contain a tenant AAD domain name, for example `mycustomer.onmicrosoft.com`.|
-|environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prodshort](includes/prodshort.md)]. Possible values are `OnPrem`, `Sandbox`, and `Production`.|
+|environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prodshort](includes/prodshort.md)]. Possible values are `OnPrem`, `Sandbox`, or `Production`.|
 |environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
 |applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example `Fabrikam`. This property is reserved for Embed apps.|
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
