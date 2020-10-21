@@ -29,6 +29,8 @@ To verify that you are running on the version that supports this migration, in t
 * Business Central Intelligent Cloud
 * Intelligent Cloud Base
 
+For more information, see [Managing Apps](tenant-admin-center-manage-apps.md).  
+
 ## Migrating data from extensions
 
 When your on-premises solution is connected to the cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production tenant to help avoid any data failures or unintended consequences.  
