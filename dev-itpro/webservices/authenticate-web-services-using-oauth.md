@@ -18,7 +18,7 @@ author: jswymer
 
 ### About OAuth
 
-OAuth is an open standard for authorizing access to web services and APIs from native clients and websites in Azure Active Directory (Azure AD). In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], OAuth is useful when your deployment is configured for Azure Active Directory authentication, either through your own Azure subscription or an Microsoft 365 subscription, because it lets users sign-in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using their Microsoft 365 or Azure AD credentials. Otherwise, they would have to use their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] account credentials (user name and password or web access key).
+OAuth is an open standard for authorizing access to web services and APIs from native clients and websites in Azure Active Directory (Azure AD). In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], OAuth is useful when your deployment is configured for Azure Active Directory authentication, either through your own Azure subscription or a Microsoft 365 subscription, because it lets users sign-in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using their Microsoft 365 or Azure AD credentials. Otherwise, they would have to use their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] account credentials (user name and password or web access key).
 
 ### About the tasks in this article
 
@@ -126,7 +126,7 @@ To complete the following tasks in this article, make sure your system meets the
 
     |Setting/option|[Description|
     |-----------------|---------------------------------|---------------------------------------|
-    |Azure Active Directory Tenant ID|This is the ID identities the directory that is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Azure AD.  The Azure Active Directory Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name, which is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have an Microsoft 365 subscription. You can get the domain name from the **Domain** or **Custom domain names** settings for the Active Directory tenant in the Azure Portal. The Azure AD Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance||
+    |Azure Active Directory Tenant ID|This is the ID identities the directory that is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Azure AD.  The Azure Active Directory Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name, which is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have a Microsoft 365 subscription. You can get the domain name from the **Domain** or **Custom domain names** settings for the Active Directory tenant in the Azure Portal. The Azure AD Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance||
     |App ID URI|When you configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD or Microsoft 365 authentication, you had to register [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an application in the Azure Active Directory (Azure AD) and also specify an APP ID URI. The  APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure Portal by viewing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application **Settings** in Active Directory. This is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, [Azure Active Directory Settings](../administration/configure-server-instance.md#AzureAd).|
   
 - Enable OData Services and V4 Endpoint on the [!INCLUDE[server](../developer/includes/server.md)] instance.
@@ -256,9 +256,9 @@ In this section, you will create the Windows console application that connects t
 <!--
 You will start by creating an application that connects to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData web service by using Basic authentication. To do this, follow these steps:
 
-1. In Visual Studio, create a new C# Console Application project and name it “MyBCClient”.
+1. In Visual Studio, create a new C# Console Application project and name it "MyBCClient".
 2. Add a service reference according to the following guidelines:
-    1. In the Address field of the Add Service Reference dialog box, enter the base part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData URL. This is the part of the URL up to and including “/OData”, for example, https://myserver:7047/NAV/OData.
+    1. In the Address field of the Add Service Reference dialog box, enter the base part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData URL. This is the part of the URL up to and including "/OData", for example, https://myserver:7047/NAV/OData.
     2. Choose GO, and enter your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user name and password when you are prompted.
     
         In the Service pane, you will see the OData feeds that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has exposed, which includes the Customer feed that you exposed earlier.
@@ -452,7 +452,7 @@ The final task is to modify the custom application to use OAuth authentication. 
 |Client ID|This is the ID that is assigned to the custom application in Azure AD.|e64a621d-beb8-4e7d-bf0b-30e3e79651dd|
 |Redirect URI|This is the redirect URI that you assigned the ID that is assigned to the custom application in Azure AD.|https://MyBClient|
 |App ID URI|The App ID URI that you assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD.|https://myserver/NAVAppIdUri|
-|OData URL|The base part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData URL. This is the part of the URL up to and including “/ODataV4”. For more information, see Exposing a Web Service.|https://myserver:7048/BC/ODataV4|
+|OData URL|The base part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData URL. This is the part of the URL up to and including "/ODataV4". For more information, see Exposing a Web Service.|https://myserver:7048/BC/ODataV4|
 
 Once you have this information, follow these steps:
 
