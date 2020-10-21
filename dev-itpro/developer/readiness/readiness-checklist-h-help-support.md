@@ -36,8 +36,7 @@ The following screenshot illustrates how the Help URL, supported countries/regio
 
 ![Storefront Detail - Support & Help Links](../../media/SupportHelp.png)
 
-
-# Support URL
+## Support URL
 | Listing details | Description | Requirements |
 |------------------|-------------|--------------|
 | 20. **Support URL**  | You need to provide a URL for a distinct support page, where prospects can find different contact options. It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required |
