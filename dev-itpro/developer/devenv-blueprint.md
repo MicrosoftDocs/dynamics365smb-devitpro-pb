@@ -83,16 +83,16 @@ Every module must be tested through a separate test module. Only public function
 
 The test module should have the same name as the module it tests, but be placed in a separate layer/package that contains tests for all modules in the layer. For example, *Modules\\**System Tests**\My Module*). Test code cannot reside in the same layer folder structure as the module, or within the module, because it must not be executable or part of a production environment.
 
-## Documentation
+## Documentation Guidelines
 It's important that you document your module. The following sections provide some guidelines.
 
-## Modules
+### Modules
 The app.json file for each module must contain a user-friendly title, a short brief, and a description that states its purpose. 
 
-## Public API
+### Public API
 Every publicly accessible object must have developer facing documentation that follows the XML documentation comments standard.
 
-## Public Objects
+### Public Objects
 Public objects, such as codeunits, tables, pages, and so on, must have a summary that states what the object is used for.
 
 ```
