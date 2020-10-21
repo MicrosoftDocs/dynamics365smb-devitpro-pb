@@ -16,7 +16,7 @@ ms.author: a-emniel
 > In these guidelines, you will find an outline of our requirements for marketing validation as well as examples of best practices, which you can use as inspiration, while developing the storefront
 details of your offer, your sales landing page and video materials. 
 
-To ease your experience with developing the storefront details of your listing, we have numerated the core elements, as they appear when you upload your content in the “Storefront Details” tab in Partner Center. 
+To ease your experience with developing the storefront details of your listing, we have numerated the core elements, as they appear when you upload your content in the "Storefront Details" tab in Partner Center. 
 
 This image below is an example of what an offering looks like on AppSource, when the storefront details are completed according to best practices. We highly recommend that you review these guidelines.  Click on any of the links under Guidance/Examples to gain more insight on that particular section or item within the marketing validation process. 
 
@@ -27,7 +27,7 @@ This image below is an example of what an offering looks like on AppSource, when
 |0.A - 0.B|Your app can be in any language – if not in English, a document with English translation is required. Branding - Remember to use the product branding guidelines properly| [General Best Practices including Language and Branding](readiness-checklist-a-languange-branding.md) |
 |0.C| Must be the same as the manifest. (Your offer name) for Microsoft Dynamics 365 Business Central | [Offer Name](readiness-checklist-b-offername-summary.md)|
 |1|Max. 25 words or 100 characters, value proposition| [Offer Summary](readiness-checklist-b-offername-summary.md)|
-|2 - 2.G|Use the Rich Text Editor, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
+|2 - 2.G|Use the Rich Text Editor, 3000 characters See link for best practices on formatting the content.| [Description](readiness-checklist-c-offer-description.md)|
 |2.F|Supported Editions: Premium, Essential or both|  [Premium SKU Listing](readiness-checklist-c-offer-description.md#SupportedEditions)|
 |2.G |State only the Dynamics 365 Business Central Supported Countries that apply.|  [Supported Countries](readiness-checklist-d-supportedcountries-languages.md)|
 |2.H |State the languages that your app is available in.|  [Supported Languages](readiness-checklist-c-offer-description.md#supported-languages)|
@@ -45,7 +45,7 @@ This image below is an example of what an offering looks like on AppSource, when
 |17|Please double check the resolution needs to be 1280 x 720 and only in .png format. It's required to have a minimum of 3 but you can have up to 5.| [Screenshots](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#Screenshots)|
 |18|Landing page where prospects can find information on how you handle their data.| [Privacy Policy Link](readiness-checklist-i-privacypolicy-termsofuse.md)|
 |19|You need to provide a license agreement, where prospects can find the information on your terms of use.| [License Agreeement](readiness-checklist-i-privacypolicy-termsofuse.md)|
-|20|It is a requirement that you provide different (i.e. more than two) contact options on your offer's support page.| [Support Link](readiness-checklist-h-help-support.md#Support)|
+|20|It is a requirement that you provide different (i.e. more than two) contact options on your offer's support page.| [Support Link](readiness-checklist-h-help-support.md#support-url)|
 ||||
 ||**Special Rules for Localization, Connect & Consulting Services Apps**|
 ||Add-On Apps with some unique requirements.| [Localization Apps](readiness-checklist-j-leadmanagement-specialty.md#Localization)|
@@ -64,6 +64,6 @@ diligence when developing this content. Follow this marketing validation checkli
 
 ## Why marketing validation is mandatory
 
-The marketing validation is in place to make sure that the customer journey on AppSource is a uniform experience, where customers quickly and easily can get an overview of your offer’s functionality, why they can benefit from using it, while also enticing them to learn more and take the necessary actions to start using your offer. Accordingly, to ensure that your listing establishes a good first impression, we carry out a marketing validation of all Dynamics 365 Business Central apps that are being published on AppSource. This also goes for apps that already are live, if some of the content in their storefront details needs to be edited – in this case they need to be resubmitted for marketing validation as well.
+The marketing validation is in place to make sure that the customer journey on AppSource is a uniform experience, where customers quickly and easily can get an overview of your offer's functionality, why they can benefit from using it, while also enticing them to learn more and take the necessary actions to start using your offer. Accordingly, to ensure that your listing establishes a good first impression, we carry out a marketing validation of all Dynamics 365 Business Central apps that are being published on AppSource. This also goes for apps that already are live, if some of the content in their storefront details needs to be edited – in this case they need to be resubmitted for marketing validation as well.
 Consequently, to be published on AppSource all listings need to pass the required elements within the marketing validation process.
 
