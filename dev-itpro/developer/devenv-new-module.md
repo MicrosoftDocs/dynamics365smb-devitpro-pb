@@ -1,5 +1,6 @@
 ---
 title: "Create a New Module in the System Application"
+description: Learn how to create a new module in the System Application.
 author: bholtorf
 ms.custom: na
 ms.date: 10/01/2020
@@ -34,7 +35,7 @@ Open the **launch.json**, file and update the **server**, **serverInstance**, an
     "authentication": "Windows",
 
 ```
-Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-setting-up-your-development-environment.md).
+Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up a Development Environment](devenv-set-up-an-environment.md).
 
 ### Create a Branch
 To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
