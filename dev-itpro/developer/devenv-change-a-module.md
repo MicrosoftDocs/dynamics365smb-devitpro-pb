@@ -28,12 +28,10 @@ The main consideration when changing an existing module, compared to contributin
 ### Set Up Visual Studio Code for Module Development
 Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
-```
-
+```json
     "server": "https://YourDockerContainerName",
     "serverInstance": "BC",
     "authentication": "Windows",
-
 ```
 Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
@@ -48,7 +46,7 @@ Before making changes, make sure you are familiar with the general architecture 
 
 We'll start by adding the functions that we need to support different text encodings to the internal implementation codeunit. We'll add the following functions to the **System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al** implementation codeunit:
 
-```
+```AL
     procedure ToBase64(String: Text; TextEncoding: TextEncoding): Text
     begin
         exit(ToBase64(String, false, TextEncoding, 0));
@@ -119,7 +117,7 @@ We'll start by adding the functions that we need to support different text encod
 ```
 We also need to update some of the existing functions in **System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al**, while making sure that they keep the same functionality:
 
-```
+```AL
     procedure ToBase64(String: Text): Text
     begin
         exit(ToBase64(String, false));
@@ -139,7 +137,7 @@ We have changed the implementation codeunit, and avoided breaking existing funct
 
 Now we'll add public functions in the facade codeunit with the functionality that we want to expose. Because the functions are public, we need to ensure that they are documented and tested. The functions call the corresponding functions in the implementation codeunit. We add the following functions to **System/Base64 Convert/src/Base64Convert.Codeunit.al**:
 
-```
+```AL
     /// <summary>
     /// Converts the value of the input string to its equivalent string representation that is encoded with base-64 digits.
     /// </summary>
@@ -196,7 +194,7 @@ We have now exposed the functions. The next steps are to ensure that existing te
 
 After verifying that the tests pass, we'll add the following tests to the **System Tests/Base64 Convert/src/Base64ConvertTest.Codeunit.al** file.
 
-```
+```AL
     [Test]
     procedure StringToBase64UTF16Test()
     var
