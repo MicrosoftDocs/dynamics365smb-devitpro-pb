@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/22/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -159,12 +159,13 @@ Inside an .al code file, the structure for all objects must follow the sequence 
 
 1. Properties
 2. Object-specific constructs such as
-    *  Table fields
-    *  Page layout
-    *  Actions
+    - Table fields
+    - Page layout
+    - Actions
+    - Triggers
 3. Global variables
-    * Labels (old Text Constants)
-    * Global variables
+    - Labels
+    - Global variables
 4. Methods
 
 ## Referencing 
