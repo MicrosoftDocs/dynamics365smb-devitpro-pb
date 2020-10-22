@@ -486,7 +486,7 @@ You can set **Solution Version Extension** by using the [!INCLUDE[admintool](../
 The following example uses the Set-NAVServerConfiguration cmdlet to set the **Solution Version Extension** to the Microsoft Base Application:
 
 ```powershell  
-Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName SolutionVersionExtension -KeyValue 437dbf0e-84ff-417a-965d-ed2bb9650972 -ApplyTo All  
+Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName SolutionVersionExtension -KeyValue 437dbf0e-84ff-417a-965d-ed2bb9650972 -ApplyTo All  
 ```
 
 For more information about how to configure a server instance, see [Configuring Business Central Server](../administration/configure-server-instance.md).
