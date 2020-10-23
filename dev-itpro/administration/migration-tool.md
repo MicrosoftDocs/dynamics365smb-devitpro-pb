@@ -59,7 +59,7 @@ There are a few key points that need to be understood before you start the proce
 
 To begin configuring the connection, navigate to the assisted setup page and launch the **Cloud Migration Setup** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
 
-### The "Set up Cloud Mogration" assisted setup guide
+### The "Set up Cloud Migration" assisted setup guide
 
 The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud Migration" wizard whcih consists of up to six pages that take you through the process of connecting your solution to the Business Central cloud tenant.  
 
