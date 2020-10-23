@@ -61,7 +61,7 @@ To begin configuring the connection, navigate to the assisted setup page and lau
 
 ### The "Set up Cloud Migration" assisted setup guide
 
-The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud Migration" wizard whcih consists of up to six pages that take you through the process of connecting your solution to the Business Central cloud tenant.  
+The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud Migration" wizard which consists of up to six pages that take you through the process of connecting your solution to the Business Central cloud tenant.  
 
 1. Welcome and Consent page
 
@@ -70,7 +70,7 @@ The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud 
 2. Product selection
 
     On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don't see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
-    To set up migration from previous versions of [!INCLUDE[prodshort] in the Data Migration Setup dialog, choose "Dynamics 365 Business Central (Previous Version)" as a Product.
+    To set up migration from previous versions of [!INCLUDE[prodshort], in the Data Migration Setup dialog, choose "Dynamics 365 Business Central (Previous Version)" as a Product.
 
 3. SQL Connection
 
