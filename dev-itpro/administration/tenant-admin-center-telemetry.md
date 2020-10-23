@@ -43,7 +43,10 @@ For an overview of the telemetry types that are currently emitted, see [Monitori
 
     The Application Insights resource will be assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-    The Application Insights instrumentation key can be in any Azure tenant that is accessible to your organization. For example, a delegated administrator from the reselling partner is the person analyzing the telemetry. But this person might not have access rights the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
+    The Application Insights resource can be in any Azure tenant that is accessible to your organization. For example, a delegated administrator from the reselling partner is the person analyzing the telemetry. But this person might not have access rights the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
+
+    > [!TIP]
+    > You can use the same Application Insights resource for multiple tenants and their different environments.
 
     For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
