@@ -17,7 +17,7 @@ ms.author: edupont
 
 # Running the Cloud Migration Tool
 
-Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online by running the **Cloud Migration Setup** assisted setup that runs the cloud migration tool.  
+Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online by running the **Set up Cloud Migration** assisted setup that runs the cloud migration tool.  
 
 The cloud migration tool supports migration from specific versions of specific software. For more information, see the following articles:
 
@@ -34,7 +34,7 @@ In the following sections, you're working in your [!INCLUDE [prodshort](../devel
 
 ## Setting up your connection using the cloud migration tool
 
-This section provides the steps required to get the cloud migration setup through a connection to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. This can simply be done by following the instructions in the **Cloud Migration Setup** assisted setup wizard in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant.  
+This section provides the steps required to get the cloud migration setup through a connection to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. This can simply be done by following the instructions in the **Data Migration Setup** assisted setup wizard in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant.  
 
 There are a few key points that need to be understood before you start the process:
 
@@ -57,11 +57,11 @@ There are a few key points that need to be understood before you start the proce
 * Before setting up the connection to the cloud migration, ensure that at least one user in the system that has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 * Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
 
-To begin configuring the connection, navigate to the assisted setup page and launch the **Cloud Migration Setup** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
+To begin configuring the connection, navigate to the assisted setup page and launch the **Set up Cloud Migration** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
 
 ### The "Set up Cloud Migration" assisted setup guide
 
-When you choose the **Set up Cloud Migration** assisted setup, it launches the **Setup Cloud Migration** guide, which consists of up to six pages that take you through the process of connecting your solution to the Business Central online tenant.  
+When you choose the **Set up Cloud Migration** assisted setup, it launches the **Data Migration Setup** guide, which consists of up to six pages that take you through the process of connecting your solution to the Business Central online tenant.  
 
 1. Welcome and Consent page
 
