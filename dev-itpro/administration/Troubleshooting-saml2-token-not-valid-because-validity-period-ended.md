@@ -48,5 +48,5 @@ Close and reopen the Windows client.
 
 ## See Also
 
-[Authenticating Business Central Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md)
+[Authenticating Business Central Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md)  
 [Configuring Business Central Server](Configure-server-instance.md)
