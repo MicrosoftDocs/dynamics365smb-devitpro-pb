@@ -61,7 +61,7 @@ To begin configuring the connection, navigate to the assisted setup page and lau
 
 ### The "Set up Cloud Migration" assisted setup guide
 
-The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud Migration" wizard which consists of up to six pages that take you through the process of connecting your solution to the Business Central cloud tenant.  
+When you choose the **Set up Cloud Migration** assisted setup, it launches the **Setup Cloud Migration** guide, which consists of up to six pages that take you through the process of connecting your solution to the Business Central online tenant.  
 
 1. Welcome and Consent page
 
@@ -71,7 +71,7 @@ The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud 
 
     On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don't see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
     
-    To set up migration from previous versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], in the Data Migration Setup dialog, choose "Dynamics 365 Business Central (Previous Version)" as a Product.
+    To set up migration from previous versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], in the **Data Migration Setup** dialog, choose *Dynamics 365 Business Central (Previous Version)* as the product.
 
 3. SQL Connection
 
@@ -104,7 +104,7 @@ The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud 
 If you are migrating data, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This is an important step, because each time someone runs the migration, outstanding documents for vendors and customers, general ledger account numbers, inventory items, and any other changes made in the target company in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are overwritten. If you are connecting to the intelligent cloud, you can adjust the migration schedule.  
 
 > [!NOTE]  
->The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
+> The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
 
 ## Adding a tenant to an existing runtime service, or updating companies
 
