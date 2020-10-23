@@ -70,7 +70,8 @@ The assisted setup, called "Set up Cloud Migration", is starting a "Setup Cloud 
 2. Product selection
 
     On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don't see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
-    To set up migration from previous versions of [!INCLUDE[prodshort], in the Data Migration Setup dialog, choose "Dynamics 365 Business Central (Previous Version)" as a Product.
+    
+    To set up migration from previous versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], in the Data Migration Setup dialog, choose "Dynamics 365 Business Central (Previous Version)" as a Product.
 
 3. SQL Connection
 
