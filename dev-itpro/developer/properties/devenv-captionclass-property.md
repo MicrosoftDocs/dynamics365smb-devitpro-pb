@@ -11,13 +11,14 @@ author: SusanneWindfeldPedersen
 ---
 
 # CaptionClass Property
-Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.  
-  
-## Applies to  
-  
-- Table Fields  
-  
-- Page Fields  
+
+Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.
+
+## Applies to
+
+- Field
+- Page Label
+- Page Field
 
 ## Syntax
 
@@ -26,6 +27,7 @@ CaptionClass = '1,2,3';
 ```
   
 ## Remarks  
+
 The data type of the AL expression must be either `Text` (maximum length 80) or `Code`.  
   
 Because this property lets you enter an expression, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] must be able to differentiate between a literal string like 'DIM1' and a variable or method called DIM1. Every text string that you enter must be enclosed in '  ' or it will be interpreted as a variable or method. You must enter a value that results in a string. For example, if you want to enter 1 + 5, you must either enter '1+ 5', or FORMAT(1 + 5), which results in '6'.  
@@ -50,7 +52,8 @@ When you set the **CaptionClass property** on a field, users can configure the c
 The **CaptionClassTranslate** method is triggered when a field that uses the **CaptionClass** property is shown. The method takes as input the parameters Language, the current language ID, and CaptionClass, the **CaptionClass** property value. Then it converts the CaptionClass expression into the specific caption for that language and returns it as a string. The caption of the field is then replaced with the returned string.
 
   
-## See Also  
+## See Also
+
 [CaptionML Property](devenv-captionml-property.md)   
 [Caption Property](devenv-caption-property.md)  
 [CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md) 
