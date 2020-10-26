@@ -58,6 +58,9 @@ As a partner, you have different support channels depending on what type of issu
 
 [!INCLUDE [prod_support](includes/prodsupport.md)]
 
+> [!TIP]
+> When you submit your first support ticket as a partner, you must specify details about your company's support plan. If you or your colleagues do not know these details, contact your Microsoft rep.
+
 #### Non-product related questions
 
 On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
