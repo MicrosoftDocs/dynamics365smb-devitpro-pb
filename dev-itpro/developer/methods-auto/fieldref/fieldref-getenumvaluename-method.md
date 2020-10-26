@@ -38,6 +38,29 @@ The Enum value name.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```al
+procedure GetOptionNo(Value: Text; FieldRef: FieldRef): Integer
+    var
+        FieldRefValueVar: Variant;
+        FieldRefValueInt: Integer;
+    begin
+        if (Value = '') and (FieldRef.GetEnumValueName(1) = ' ') then
+            exit(0);
+
+        FieldRefValueVar := FieldRef.Value();
+        FieldRefValueInt := -1;
+        if Evaluate(FieldRef, Value) then begin
+            FieldRefValueInt := FieldRef.Value();
+            FieldRef.Value(FieldRefValueVar);
+        end;
+
+        exit(FieldRefValueInt);
+    end;
+```
+
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
