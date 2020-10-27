@@ -107,7 +107,7 @@ Current version of the extension:
 table 50100 MyTable
 {
     ObsoleteState = Pending;
-    ObsoleteReason = 'Use codeunit X instead.';
+    ObsoleteReason = 'Use table X instead.';
     ObsoleteTag = '2.1';
 
     fields
@@ -131,7 +131,7 @@ Version of the extension used as baseline:
 table 50100 MyTable
 {
     ObsoleteState = Pending;
-    ObsoleteReason = 'Use codeunit X instead.';
+    ObsoleteReason = 'Use table X instead.';
     ObsoleteTag = '1.0';
 
     fields
@@ -146,7 +146,7 @@ Current version of the extension:
 table 50100 MyTable
 {
     ObsoleteState = Removed;
-    ObsoleteReason = 'Use codeunit X instead.';
+    ObsoleteReason = 'Use table X instead.';
     ObsoleteTag = '1.0';
 
     fields
@@ -205,7 +205,7 @@ Version of the extension used as baseline:
 table 50100 MyTable
 {
     ObsoleteState = Pending;
-    ObsoleteReason = 'Use codeunit X instead.';
+    ObsoleteReason = 'Use table X instead.';
     ObsoleteTag = '1.0';
 
     fields
@@ -220,7 +220,7 @@ Current version of the extension:
 table 50100 MyTable
 {
     ObsoleteState = Removed;
-    ObsoleteReason = 'Use codeunit X instead.';
+    ObsoleteReason = 'Use table X instead.';
     ObsoleteTag = '2.0';
 
     fields

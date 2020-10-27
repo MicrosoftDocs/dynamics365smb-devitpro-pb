@@ -53,7 +53,7 @@ codeunit 50100 MyCodeunit
     [Obsolete]
     procedure MyProcedure()
     begin
-        // Some logic.
+        // Business logic.
     end;
 }
 ```
@@ -83,7 +83,7 @@ codeunit 50100 MyCodeunit
     [Obsolete('This procedure is being deprecated for reason X. Use procedure Y instead.')]
     procedure MyProcedure()
     begin
-        // Some logic.
+        // Business logic.
     end;
 }
 ```
