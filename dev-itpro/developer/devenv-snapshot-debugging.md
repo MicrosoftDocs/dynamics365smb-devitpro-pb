@@ -105,7 +105,7 @@ In order to download symbols on a production server, you need three permission r
 
 - Be a delegated admin
 - Have snapshot debugger rights (D365 Snapshot Debug permission group)
-- The existing right of having read-only access to the Published Application table emphasized in the ExtensionManagement permission set should also be granted. <!-- check name -->
+- The read-only access to the **Published Application** table emphasized in the **D365 EXTENSION MGT** permission set should also be granted.
 
 
 ## Snapshot debugging versus regular debugging
