@@ -52,7 +52,7 @@ else
 .... // Do some error processing.  
 ```  
   
-Get searches for the records, regardless of the current filters, and it does not change any filters. Get always searches through all the records in a table.  
+Get searches for a record, regardless of the current filters, and it does not change any filters. Get always searches through all the records in a table.  
 
 ## GetBySystemId method
 
@@ -77,6 +77,8 @@ begin
     Message(Text000);
 end;
 ```  
+
+Similar to the Get method, GetBySystemId searches for a record, regardless of the current filters, and it does not change any filters. Get always searches through all the records in a table. 
 
 ## Find methods  
 

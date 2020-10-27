@@ -10,14 +10,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 10/01/2020
+ms.date: 10/22/2020
 ms.author: edupont
 
 ---
 
 # Running the Cloud Migration Tool
 
-Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online by running the **Cloud Migration Setup** assisted setup that runs the cloud migration tool.  
+Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online by running the **Set up Cloud Migration** assisted setup that runs the cloud migration tool.  
 
 The cloud migration tool supports migration from specific versions of specific software. For more information, see the following articles:
 
@@ -34,7 +34,7 @@ In the following sections, you're working in your [!INCLUDE [prodshort](../devel
 
 ## Setting up your connection using the cloud migration tool
 
-This section provides the steps required to get the cloud migration setup through a connection to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. This can simply be done by following the instructions in the **Cloud Migration Setup** assisted setup wizard in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant.  
+This section provides the steps required to get the cloud migration setup through a connection to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. This can simply be done by following the instructions in the **Data Migration Setup** assisted setup wizard in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant.  
 
 There are a few key points that need to be understood before you start the process:
 
@@ -57,11 +57,11 @@ There are a few key points that need to be understood before you start the proce
 * Before setting up the connection to the cloud migration, ensure that at least one user in the system that has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 * Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
 
-To begin configuring the connection, navigate to the assisted setup page and launch the **Cloud Migration Setup** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
+To begin configuring the connection, navigate to the assisted setup page and launch the **Set up Cloud Migration** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
 
-### The assisted setup guide
+### The "Set up Cloud Migration" assisted setup guide
 
-The assisted setup guide consists of up to six pages that take you through the process of connecting your solution to the Business Central cloud tenant.  
+When you choose the **Set up Cloud Migration** assisted setup, it launches the **Data Migration Setup** guide, which consists of up to six pages that take you through the process of connecting your solution to the Business Central online tenant.  
 
 1. Welcome and Consent page
 
@@ -70,6 +70,8 @@ The assisted setup guide consists of up to six pages that take you through the p
 2. Product selection
 
     On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don't see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
+    
+    To set up migration from previous versions of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], in the **Data Migration Setup** dialog, choose *Dynamics 365 Business Central (Previous Version)* as the product.
 
 3. SQL Connection
 
@@ -78,8 +80,10 @@ The assisted setup guide consists of up to six pages that take you through the p
     |Field  |Description  |
     |---------|---------|
     |*SQL Connection* |**SQL Server**, which is your locally installed SQL Server instance, or **Azure SQL**.|
-    |*SQL Connection string*|You must specify the connection string to your SQL Server. For more information, see [the SQL Server blog](https://docs.microsoft.com/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string). The following snippets illustrate a couple of connection strings with different formats: </br>`Server={SQL Server Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`</br></br>`Server={SQL Server Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`</br></br>The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.|
-    |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your Business Central online tenant. The integration runtime must be running on the machine that holds the SQL Server database. If you want to test your SQL string, open the **Microsoft Integration Runtime Configuration Manager**, and then choose the **Diagnostics** menu option. From there, you can test to see if the connection is good. </br></br>If you are a hosting partner, you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new pipeline will be created in the Azure service. This should take less than a minute to complete. </br></br>For more information, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).|
+    |*SQL Connection string*|You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account. For example, `Server=MyServer\BCDEMO;Database=BC170;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, version 17. For more information, see [the SQL Server blog](https://docs.microsoft.com/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string). The following snippets illustrate a couple of connection strings with different formats: </br>`Server={Server Name\Instance Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`</br></br>`Server={Server Name\Instance Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`</br></br>The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.|
+    |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. The integration runtime must be running on the machine that holds the SQL Server database. If you don't already have a runtime service, leave the field empty, and then choose the **Next** button. Once you choose **Next**, a new pipeline will be created in the Azure service. This takes less than a minute to complete, in most cases. If you want to test your SQL string, open the **Microsoft Integration Runtime Configuration Manager**, and then choose the **Diagnostics** menu option. From there, you can test to see if the connection is good. </br></br>If you are a hosting partner, you may have multiple tenants running on the same integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. </br></br>For more information, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).|
+
+    If you left the *Integration runtime name* field empty, a new page appears from where you can download the self-hosted integration runtime that you must install. Follow the instructions on the page.
 
 4. Company Selection
 
@@ -100,7 +104,7 @@ The assisted setup guide consists of up to six pages that take you through the p
 If you are migrating data, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This is an important step, because each time someone runs the migration, outstanding documents for vendors and customers, general ledger account numbers, inventory items, and any other changes made in the target company in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are overwritten. If you are connecting to the intelligent cloud, you can adjust the migration schedule.  
 
 > [!NOTE]  
->The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
+> The amount of time the migration will take to complete is dependent on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly as only changed data is migrating.  
 
 ## Adding a tenant to an existing runtime service, or updating companies
 

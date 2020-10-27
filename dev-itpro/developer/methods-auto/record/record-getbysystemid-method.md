@@ -1,9 +1,8 @@
 ---
 title: "Record.GetBySystemId Method"
-description: Describes the GetBySystemId method in Business Central 
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

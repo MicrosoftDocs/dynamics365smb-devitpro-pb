@@ -14,11 +14,11 @@ author: jswymer
 
 Azure Active Directory \(Azure AD\) is a cloud service that provides identity and access capabilities, such as for applications on Microsoft Azure, Microsoft 365, and for applications that install on-premises. If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to use the AccessControlService credential type, you can associate the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user accounts with Azure AD accounts (or Microsoft 365 account) that users use to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], Microsoft 365, and SharePoint.  
 
- For example, your users access a website, such as a SharePoint site. From there, they have single sign-on access to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] because you have configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD.  
+ For example, your users access a website, such as a SharePoint site. From there, they have single sign-on access to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] because you've configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD.  
 
 ## Azure AD and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
- 
-You can use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Microsoft 365. Also, if you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[webserver](../developer/includes/webserver.md)] on-premises. You do not have to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure to use Azure AD for user authentication.
+
+You use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Microsoft 365. Also, if you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[webserver](../developer/includes/webserver.md)] on-premises. You don't have to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure to use Azure AD for user authentication.
 
  The following sections describe the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
 
@@ -32,13 +32,13 @@ You can use the Azure AD service to associate your existing Microsoft account wi
 
 ## Task 1: Create an Azure AD Tenant
 
-To get started, you have to have an Azure AD tenant where you can register and manage apps, like [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
+To get started, you need an Azure AD tenant where you can register and manage apps, like [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
 
 - If you have a Microsoft 365 subscription that is based on a domain such as *solutions\.onmicrosoft\.com*, you are already using Azure AD because the Microsoft 365 user accounts are based on Azure AD. So, there is nothing more to do in this task.
 
 <!--    Then, if you add the email addresses for those user accounts to the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  -->
 
-- If you want to sign up for a Microsoft 365 plan, you can use a plan such as Microsoft 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Microsoft 365 site is *solutions.onmicrosoft.com*, your administrative account can be *admin\@solutions\.onmicrosoft\.com*. For more information, see [Select a Microsoft 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
+- If you want to sign up for a Microsoft 365 plan, you can use a plan such as Microsoft 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account that you will use to access the Azure management portal. For example, if your Microsoft 365 site is *solutions.onmicrosoft.com*, your administrative account can be *admin\@solutions\.onmicrosoft\.com*. For more information, see [Select a Microsoft 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
 
 - Alternatively, you can sign up for an Azure subscription that is not associated with a Microsoft 365 subscription and create your own Azure AD tenant.
     
@@ -46,7 +46,7 @@ To get started, you have to have an Azure AD tenant where you can register and m
 
     2. Sign in to Azure portal and create a directory.
 
-        This will create an Azure AD tenant. For about how to do this, see [How to get an Azure Active Directory tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+        This step will create an Azure AD tenant. For more information, see [How to get an Azure Active Directory tenant](/azure/active-directory/develop/active-directory-howto-tenant).
     
     
         When you create an Azure Active Directory in the Azure portal, you specify an initial domain name that identifies your Azure AD tenant, such as *solutions.onmicrosoft.com* or *cronusinternationltd.onmicrosoft.com*. You will use the domain name when you add users to your Azure AD and when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. In the steps that follow, this is referred to as the Azure AD Tenant ID. 
@@ -58,18 +58,18 @@ To get started, you have to have an Azure AD tenant where you can register and m
 
 ### To set the access token lifetime
 
-As a reference, see the prerequisites section in the following topic: [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites). Follow the steps outlined below.
+As a reference, see the prerequisites section in the following article: [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites). Follow the steps outlined below.
 
 1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
 2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
 3. Login as the tenant admin. 
 4. Run the `Get-AzureADPolicy` command. 
-5. For each `Id` which is the result of above command, run `    Remove-AzureADPolicy -Id {Guid}`. 
+5. For each `Id` that is the result of above command, run `    Remove-AzureADPolicy -Id {Guid}`. 
 6. Set the token lifetime to 10 minutes by running the following command: `New-AzureADPolicy -Definition @('{"TokenLifetimePolicy":{"Version":1, "AccessTokenLifetime":"0.00:10:00"}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault $true -Type "TokenLifetimePolicy"`.
 
 ## Task 2: Register an Application for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the Azure AD Tenant  
 
-You must register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution as an application in Azure AD tenant. Then, you can choose to make it available to other Azure AD tenants.  
+Register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution as an application in Azure AD tenant. Then, you can choose to make it available to other Azure AD tenants.  
 
 1. You register an application by using the [Azure portal](https://portal.azure.com). To register the application, follow the guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
 
@@ -78,7 +78,7 @@ You must register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
     | Setting | Description |
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
-    |Supported account types|Specifies which accounts that you would like your application to support. For purposes of this article, select **Accounts in this organizational directory only**. Otherwise, select **Help me choose** link on the **Register an Application** page in the portal.|
+    |Supported account types|Specifies the accounts that you would like your application to support. For purposes of this article, select **Accounts in this organizational directory only**. Otherwise, select **Help me choose** link on the **Register an Application** page in the portal.|
     |Redirect URI|Specifies the type of application that you are registering and the redirect URI (or reply URL) for your application. Select the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC150/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>`, such as `https://cronusinternationltd.onmicrosoft.com/BC150/SignIn` or `https://MyBcWebServer/BC150/Signin`. **Important** The portion of the reply URL after the domain name (in this case `BC150/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
 2. After you register the application, set the Application ID URI for the application. 
@@ -101,7 +101,7 @@ You must register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 -->
 
-Your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is now registered in your Azure AD tenant. To complete the steps that follow, you will need the value of domain (or **Directory (tenant) ID**), **Redirect URI** and **Application ID URI** when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. So, make a note of or copy the values for these settings for later use. You can view the settings in the Azure portal by selecting **Overview** for the registered application.
+Your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is now registered in your Azure AD tenant. To complete the steps that follow, you'll need the value of domain (or **Directory (tenant) ID**), **Redirect URI** and **Application ID URI**. So, make a note of or copy the values for these settings for later use. You can view the settings in the Azure portal by selecting **Overview** for the registered application.
 
 > [!NOTE]
 > The guidelines for the Azure Portal in this article might not reflect the current user interface of the Azure Portal. Please refer to the Azure Portal documentation for the latest instructions.
@@ -139,7 +139,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 3. Specify the WS-federation login endpoint.
 
-    The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to when users sign on from a client. You must specify a URL in the following format:
+    The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to when users sign in from a client. Specify a URL in the following format:
 
     ```
     https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<Application ID URI>%26wreply=<Redirect URL>
@@ -239,4 +239,4 @@ The access key that appears in the **Web Service Access Key** is needed to acces
 ## See Also  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
-[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
+[Troubleshooting: SAML2 token errors with Azure Active Directory/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
