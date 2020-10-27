@@ -107,6 +107,18 @@ In order to download symbols on a production server, you need three permission r
 - Have snapshot debugger rights (D365 Snapshot Debug permission group)
 - The read-only access to the **Published Application** table emphasized in the **D365 EXTENSION MGT** permission set should also be granted.
 
+Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server.
+
+Since snapshotdebugging is a prod feature we need to allow that people download symbols from prod.  We use the  snapshotinitialize Debug configuration to do that, since people would need to configure their snapshotinitilaize configuration for prod.
+Thus if one would like to download symbols and her configuration is snapshotinitialize it will download symbols from where that configuration is configured at. (mostly prod)
+The difference between downloading with a launch configuration and a snapshotinitalize configuration is that  launch can only target Sandbox and Onprem to download symbols snapshotinitalize SAAS prod, sandbox and Onprem
+
+I think I can make it possible that multiple configurations are supported. Like if the partner has multiple SAAS customers it does not have to clean the cache and reenter passwords if it wants to switch.
+I have not done yet but there are options how to solve it. Most probably it will be done with a new configuration parameter available for all configurations called EnviromentName.
+I will detail on that when done, if done.
+
+
+
 
 ## Snapshot debugging versus regular debugging
 
