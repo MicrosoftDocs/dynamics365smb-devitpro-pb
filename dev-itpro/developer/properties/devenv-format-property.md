@@ -107,9 +107,8 @@ The following examples demonstrate how to use the `Format` property:
     > [!NOTE]  
     > The settings that are specified under the Regional and Language Options in Windows determine how some separators are displayed.  
   
-## Standard Formats  
-
-The following tables list the predefined formats for each data type. This table shows the standard Decimal formats with the regional setting of a European country/region.  
+## Standard Decimal Formats  
+This table shows the standard Decimal formats with the regional setting of a European country/region.  
   
 |**Europe Decimal**|**Format**|**Example**|  
 |------------------------|----------------|-----------------|  
@@ -131,6 +130,7 @@ The following table shows the standard Decimal formats with the regional setting
 |\<Integer>\<Decimals>\<Sign,1>|4|76543.21-|  
 |\<XML format>\|9|-76543.21|  
   
+## Standard Date Formats  
 The following table shows the standard Date formats with the regional setting of a European country/region.  
   
 |**Europe Date**|**Format**|**Example**|  
@@ -159,6 +159,7 @@ The following table shows the standard Date formats with the regional setting of
 |\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2003|  
 |\<XML format>\|9|2003-04-05|  
   
+## Standard Time Formats    
 The following table shows the standard Time formats with the regional setting of a European country/region.  
   
 |**Europe Time**|**Format**|**Example**|  
@@ -176,7 +177,8 @@ The following table shows the standard Time formats with the regional setting of
 |\<Hours12>:\<Minutes,2>:\<Seconds,2>\<Second dec.> \<AM/PM>|1|4:35:55.553 AM|  
 |\<Hours24,2>\<Filler Character,0>\<Minutes,2>\<Seconds,2> \<Second dec.>T|2|043555 .553T|  
 |\<XML format>\|9|04:35:55.553|  
-  
+
+## Standard DateTime Formats  
 The following table shows the standard DateTime formats with the regional setting of a European country/region.  
   
 |**Europe DateTime**|**Format**|**Example**|  
@@ -196,20 +198,26 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2> \<AM/PM>|2|04/05/03 04:35 AM|  
 |\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2> \<AM/PM>|3|04/05/03 04:35:55 AM|  
 |\<XML format>\ **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC-08:00\) Pacific Time zone, UTC is eight hours later than local time on the computer.|9|2003-04-05T12:35:55.553Z|  
-  
+
+## Standard Integer Formats  
+
 |**Integer and BigInteger**|**Format**|**Example**|  
 |--------------------------------|----------------|-----------------|  
 |\<Sign>\<Integer>|0|-567|  
 |\<Sign>\<Integer>|1|-567|  
 |\<Sign>\<Integer>|2|-567|  
 |\<XML format>\|9|-567|  
-  
+
+## Standard Boolean Formats  
+
 |**Boolean**|**Format**|**Example**|  
 |-----------------|----------------|-----------------|  
 |\<Text>|0|True/False|  
 |\<Text>|1|True/False|  
 |\<Number>|2|1/0|  
 |\<XML format>\|9|true/false|  
+
+## Standard GUID Formats  
 
 |**GUID**|**Format**|**Example**|  
 |----------------|----------------|-----------------|  
@@ -222,20 +230,24 @@ The following table shows the standard DateTime formats with the regional settin
 |{0X<4byte>,0X<2byte>,0X<2byte>,{0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,<br/>0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>}}|6|{0XEA48A3E0,0X48E0,0X4AB7,{0XB1,0XA1,0XE3,0XEA,0X85,0XBF,0X1B,0X75}}|  
 |\<XML format>\|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
 
+## Standard Enum Formats  
+
 |**Enum value**|**Format**|**Example**|  
 |----------------|----------------|-----------------|  
 |\<Text>|0|Bronze|  
 |\<Text>|1|Bronze|  
 |\<Number>|2|1|  
 |\<XML format>\|9|1|  
-  
+
+## Standard Option Formats  
 |**Option**|**Format**|**Example**|  
 |----------|----------|-----------------|  
 |\<Text>|0|Blue|  
 |\<Text>|1|Blue|  
 |\<Number>|2|1|  
 |\<XML format>\|9|1|  
-  
+
+## Standard XML and String Formats  
 Standard format 9 is used to display the data in the standard XML formats.  
   
 For Chars, all formats should resemble the following: <Char/Number>.  
