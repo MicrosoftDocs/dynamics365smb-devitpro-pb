@@ -6,7 +6,7 @@ author: edupont04
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.reviewer: jowilco
-ms.date: 10/01/2020
+ms.date: 10/27/2020
 ms.author: edupont
 ---
 
