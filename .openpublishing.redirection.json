@@ -4946,6 +4946,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "dev-itpro/developer/properties/devenv-dataitemlink-type-property.md",
+      "redirect_url": "devenv-sqljointype-property",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "dev-itpro/developer/properties/devenv-dataitemtable-filter-property.md",
       "redirect_url": "devenv-dataitemtablefilter-property",
       "redirect_document_id": false
@@ -5229,7 +5234,11 @@
     "source_path": "dev-itpro/help/custom-help-toolkit-NavFieldsTooltips.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/help/custom-help-toolkit",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-enablesqlinformationdebugger-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
    }
-   
   ]
 }

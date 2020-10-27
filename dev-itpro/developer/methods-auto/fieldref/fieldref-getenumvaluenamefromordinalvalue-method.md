@@ -38,6 +38,20 @@ The Enum value name.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```al
+procedure OptionNoExists(var FieldRef: FieldRef; OptionValue: Text): Boolean
+    var
+        OptionNo: Integer;
+    begin
+        if Evaluate(OptionNo, OptionValue) then
+            exit((FieldRef.GetEnumValueNameFromOrdinalValue(OptionNo) <> '') or ((FieldRef.GetEnumValueNameFromOrdinalValue(OptionNo) = '') and (OptionNo = 0)));
+
+        exit(false);
+    end;
+```
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

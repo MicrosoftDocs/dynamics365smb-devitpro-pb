@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: dynamics365-business-central
-ms.date: 10/01/2020
+ms.date: 10/20/2020
 ms.author: jswymer
 ---
 # Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 and Later Versions
@@ -20,15 +20,17 @@ Depending on which version you are upgrading from, and the degree to which your 
 You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!NOTE]
-> Upgrade your solution to 2020 release wave 2 (version 17), and then migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.
+> Upgrade your solution to Business Central Spring 2019 (version 14) or later, and then migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.
 
 The process consists of two parts:
 
-- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the tools described in [Upgrading to Business Central on-premises](upgrading-to-business-central-on-premises.md).
+- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the tools described in [Upgrading to Business Central on-premises (version 14)](upgrading-to-business-central-on-premises.md). For more information, see [Supported Upgrade Paths to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Releases](upgrade-paths.md).  
 - Convert non-standard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
 - Run the cloud migration tool as described in [Running the Cloud Migration Tool](../administration/migration-tool.md), and then switch to use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online going forward.
 
 ## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]
+
+This section lists specific changes between [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] and [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 ### Codeunit 1 has been deprecated and replaced
 
