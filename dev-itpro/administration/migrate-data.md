@@ -42,4 +42,5 @@ The initial data migration time can vary depending factors such as the amount of
 [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
+[Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  

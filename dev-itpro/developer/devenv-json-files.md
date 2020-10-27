@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/07/2020
+ms.date: 10/21/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -77,13 +77,15 @@ The following table describes the settings in the `launch.json` file. The `launc
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
+|environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prodshort](includes/prodshort.md)]. Possible values are `OnPrem`, `Sandbox`, or `Production`.|
+|environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. |
 |breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including ODdata and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant, or if this is not specified with the userId in the configuration settings; the first user on the tenant.|
 |breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
 |launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value is not specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session is not started unless you launch your extension in debugging mode.|
 |enableSqlInformationDebugger|Yes|Specifies whether the debugger shows the SQL information. The default value is `true`. For more information, see [Debugging SQL behavior](devenv-debugging.md#DebugSQL).|
 |enableLongRunningSqlStatements|Yes|Specifies whether the debugger enables long running SQL statements in the debugger window.|
-|longRunningSqlStatementsThreshold|Yes|Sets the number of miliseconds spent before a SQL statement is considered as long running in the debugger.|
+|longRunningSqlStatementsThreshold|Yes|Sets the number of milliseconds spent before a SQL statement is considered as long running in the debugger.|
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
@@ -103,15 +105,16 @@ The following table describes the settings in the `launch.json` file. The `launc
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object.  The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy. This parameter must contain a tenant AAD domain name, for example `mycustomer.onmicrosoft.com`.|
-|sandboxName|No|Specifies which sandbox to use in cases where multiple sandboxes are owned by the same tenant.|
-|applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example Fabrikam. This property is reserved for Embed apps.|
+|environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prodshort](includes/prodshort.md)]. Possible values are `OnPrem`, `Sandbox`, or `Production`.|
+|environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
+|applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example `Fabrikam`. This property is reserved for Embed apps.|
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
 |breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant, or if this is not specified with the userId in the configuration settings; the first user on the tenant.|
 |breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
 |launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value is not specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session is not started unless you launch your extension in debugging mode.|
 |enableSqlInformationDebugger|Yes|Specifies whether the debugger shows the SQL information. The default value is `true`. For more information, see [Debugging SQL behavior](devenv-debugging.md#DebugSQL).|
 |enableLongRunningSqlStatements|Yes|Specifies whether the debugger enables long running SQL statements in the debugger window.|
-|longRunningSqlStatementsThreshold|Yes|Sets the number of miliseconds spent before a SQL statement is considered as long running in the debugger.|
+|longRunningSqlStatementsThreshold|Yes|Sets the number of milliseconds spent before a SQL statement is considered as long running in the debugger.|
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|

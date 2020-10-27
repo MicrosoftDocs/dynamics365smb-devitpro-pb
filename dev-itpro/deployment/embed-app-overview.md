@@ -78,8 +78,7 @@ Partners can choose to bring their own code-customized base application as an [!
 
     Extensions today can support many scenarios and the Microsoft team is working on extending these capabilities even more. However, some customization needs of the partners are not yet possible using the current version of the extensions framework, so partners can choose to do these changes directly in the base application using C/SIDE Development Environment based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version 14.  
 - Availability of 3rd party add-ins as extensions.
-
-    Some of the add-ins required by the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] might not yet be available as extensions, for the reasons mentioned above. The partner can choose to import these add-ins as FOB files into the base application that they submit with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)].  
+    
 - Usage of .NET interoperability and custom assemblies.
 
     Partners that use .NET interoperability in their current application to address multiple business scenarios. Although extensions today allow a number of these scenarios to be implemented in AL, they don't and cannot cover for all possible scenarios of .NET usage. Therefore, the partner can choose to import the required .NET add-ins into the Add-ins table of the base application, and these add-ins will automatically be deployed into the environment where they will be running.
