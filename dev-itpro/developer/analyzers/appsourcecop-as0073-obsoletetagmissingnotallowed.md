@@ -27,7 +27,7 @@ The format of the Obsolete Tag is not validated by the AL compiler. However, you
 
 ## Setting up AppSourceCop to validate the Obsolete Tag
 
-The rule AS0073 is not enabled by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to enable it.
+The diagnostics for rule AS0073 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to surface them.
 
 For example, the following ruleset turns the diagnostic for rule AS0073 into an error.
 

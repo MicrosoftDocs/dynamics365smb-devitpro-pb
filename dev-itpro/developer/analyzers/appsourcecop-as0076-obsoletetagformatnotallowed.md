@@ -27,7 +27,7 @@ The property ObsoleteTag [property]() and [attribute parameter]() values are not
 
 ### Enabling the rule using a ruleset
 
-The rule AS0076 is not enabled by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to enable it.
+The diagnostics for rule AS0076 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to surface them.
 
 For example, the following ruleset turns the diagnostic for rule AS0076 into an error.
 
