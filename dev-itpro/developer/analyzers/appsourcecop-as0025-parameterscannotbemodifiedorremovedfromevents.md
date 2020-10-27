@@ -37,7 +37,7 @@ This rule validates that changes on the parameters of `Business` type and `Integ
 In the following examples, the version 1.0 of the extension defines a Business type event whose accessibility is not public. This means that this event can be subscribed to from other extensions, but cannot be raised from other extensions.
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
@@ -50,7 +50,7 @@ codeunit 50100 MyCodeunit
 ### Example 1 - Removing parameters
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
@@ -63,7 +63,7 @@ codeunit 50100 MyCodeunit
 In the version 2.0, the parameter `i` of the event has been removed. If a dependent extension subscribed to this event and used `i`, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'i' is not found. (AL0282)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'MyEvent', '', false, false)]
@@ -79,7 +79,7 @@ codeunit 50120 AnotherCodeunit
 The dependent extension remains the same as in example 1.
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
@@ -96,7 +96,7 @@ In version 2.0, the type of the parameter `i` has changed from Integer to Boolea
 The dependent extension remains the same as in example 1.
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
@@ -113,7 +113,7 @@ In version 2.0, the parameter `i` has been renamed to `j`. If a dependent extens
 For `local` or `internal` events, it is allowed to add parameters to the event.
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]
@@ -124,7 +124,7 @@ codeunit 50100 MyCodeunit
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [BusinessEvent(false)]

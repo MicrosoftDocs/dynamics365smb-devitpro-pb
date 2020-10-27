@@ -12,20 +12,22 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # SourceField Property
+
 Sets the field that you want to map XML data to.  
   
 ## Applies to  
+
 - Field elements in XMLports
 - Field attributes in XMLports
   
 ## Syntax
-```
+
+```AL
 fieldattribute(NodeName2; NodeName.SourceField){}
 ```  
   
-## See Also  
- [Properties](devenv-properties.md)   
- [SourceTable Property](devenv-sourcetable-property.md)
+## See Also
+
+[Properties](devenv-properties.md)   
+[SourceTable Property](devenv-sourcetable-property.md)

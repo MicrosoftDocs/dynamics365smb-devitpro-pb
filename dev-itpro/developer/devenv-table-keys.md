@@ -121,7 +121,7 @@ The overall speed depends on the following factors:
 
 You define keys in AL code of a table object. To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
 
-```
+```AL
 keys
 {
     key(Name; Fields)
@@ -143,7 +143,7 @@ The first `key` keyword defines the primary key. Subsequent `key` keywords defin
 
 There are several properties that configure the behavior of a key, such as the [Enabled](properties/devenv-enabled-property.md), [Clustered](properties/devenv-clustered-property.md), and [Unique](properties/devenv-unique-property.md) properties:
 
-```
+```AL
 keys
 {
     key(PrimaryKey; ID)

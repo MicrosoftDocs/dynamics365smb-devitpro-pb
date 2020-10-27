@@ -20,7 +20,7 @@ The AL code in this article creates a simple card page that displays records fro
 
 For a more detailed explanation of the list page, see [Designing Card and Document Pages](devenv-designing-card-pages.md).
 
-```
+```AL
 page 50112 SampleCustomerCard
 {
     PageType = Card;

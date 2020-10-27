@@ -1,5 +1,5 @@
 ---
-title: "Setting Up the Office Add-In for Outlook Inbox Integration"
+title: "Setting Up the Business Central Add-In for Outlook Inbox Integration"
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Setting Up the Office Add-In for Outlook Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-Premises
+# Setting Up the Add-In for Outlook Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-Premises
 
 If your organization uses Exchange Server or Exchange Online (alone or part of Microsoft 365), [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes integration with Outlook that enable users to complete [!INCLUDE[prodshort](../developer/includes/prodshort.md)] business tasks from their Outlook inbox.  
 
@@ -27,7 +27,7 @@ If your organization uses Exchange Server or Exchange Online (alone or part of M
 
 <!--    ![Office Add-ins for Outlook](../media/OutlookAddinsCallouts.png "Office Add-ins for Outlook")-->
 
-  Setting up the Office add-in involves two procedures. First, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the add-ins. Then, you deploy the add-ins from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to users' Outlook. Before you begin, make sure that the deployment environment meets the prerequisites.
+  Setting up the add-in involves two procedures. First, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the add-ins. Then, you deploy the add-ins from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to users' Outlook. Before you begin, make sure that the deployment environment meets the prerequisites.
 
 ## Prerequisites
 

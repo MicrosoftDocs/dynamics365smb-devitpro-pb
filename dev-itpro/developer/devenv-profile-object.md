@@ -21,6 +21,9 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
+> [!NOTE]  
+> `showMyCode` does not apply to profiles. Profiles defined in an extension with `showMyCode` set to `false` can still be copied using Designer.
+
 ## Snippet support
 Typing the shortcut `tprofile` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
@@ -29,7 +32,7 @@ Typing the shortcut `tprofile` will create the basic layout for a profile object
 ## Profile example
 The following profile object example creates a profile for the `MyRoleCenter` Role Center, which is available in the **Role Explorer** in the UI and available to end-users. The profile also depends on the customization `MyCustomization` and modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. For more information, see [Profile Properties](properties/devenv-profile-properties.md).
 
-```
+```AL
 profile MyProfile
 { 
     Description = 'Some internal comment that only the Dev can see'; 

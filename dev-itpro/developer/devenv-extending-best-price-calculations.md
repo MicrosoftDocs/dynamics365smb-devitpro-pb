@@ -124,7 +124,7 @@ Table 7001 "Price List Line" is compatible with all tables used by the B
 
 If you extended the Business Central (Version 15.0) tables you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. Here's are examples that extend the Sales Price table with a Document No. field.
 
-```
+```AL
 tableextension 50010 "Document No in Sales Price" extends "Sales Price"
 {
     fields
@@ -136,7 +136,7 @@ tableextension 50010 "Document No in Sales Price" extends "Sales Price"
 ```
 Now we'll extend the Price List Line table with the same field.
 
-```
+```AL
 tableextension 50011 "Doc. No in Price List Line" extends "Price List Line"
 {
     fields
@@ -148,7 +148,7 @@ tableextension 50011 "Doc. No in Price List Line" extends "Price List Line"
 ```
 Now we'll subscribe to the 'OnCopyFromSalesPrice' event to copy data from "Sales Price" to "Price List Line" table.
 
-```
+```AL
 codeunit 50012 "Copy DocumentNo to Price List"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::CopyFromToPriceListLine, 'OnCopyFromSalesPrice', '', false, false)]
@@ -194,7 +194,7 @@ The Price Calculation - Undefined implementation is used when the setup line doe
 
 You can add a new implementation codeunit or reuse one as a starting point and rewrite it as needed. For the new codeunit, you must extend the Price Calculation Handler enum that implements Price Calculation interface and is used in the Price Calculation Setup table.
 
-```
+```AL
 enumextension 50000 "SpecialPriceHandler" extends "Price Calculation Handler"
 {
     value(50000; "Special Price")
@@ -203,11 +203,11 @@ enumextension 50000 "SpecialPriceHandler" extends "Price Calculation Handler"
     }
 }
 ```
-Afterword you can insert a record in the Price Calculation Setup table and set the new implementation as the default.
+Afterwards you can insert a record in the Price Calculation Setup table and set the new implementation as the default.
 
 The following code in codeunit 7001 "Price Calculation Mgt." returns a Price Calculation interface that initialized with the instance of the Line With Price interface that depends on the setup record:
 
-```
+```AL
 procedure GetHandler(
     LineWithPrice: Interface "Line With Price"; 
     var PriceCalculation: Interface "Price Calculation") Result: Boolean;
@@ -222,7 +222,7 @@ procedure GetHandler(
 ```
 After the price calculation implementation is defined the document line typically calls the methods in the interfrace that calculate the price and discount. The following code is used in the Sales Line table:
 
-```
+```AL
     var
         Line: Variant;
     begin
@@ -240,7 +240,7 @@ The Line With Price interface defines methods for lines that require the calcula
 
 The following example shows a typical use of the codeunits in the Sales Line table.
 
-```
+```AL
      var
         PriceCalculationMgt: codeunit "Price Calculation Mgt.";
         PriceCalculation: Interface "Price Calculation";                 
@@ -253,7 +253,7 @@ The following example shows a typical use of the codeunits in the Sales Line tab
 ```
 The SalesLinePrice codeunit is declared directly because this is the sales line context. The instance is initialized by the interface's SetLine() method, and then passed to the GetHandler() method for PriceCalculation initialization because all Price Calculation implementation codeunits include an instance of the Line With Price interface, which stores data about document and journal lines. The following example shows how to declare the interface variable.
 
-```
+```AL
     var
         CurrLineWithPrice: Interface "Line With Price";
 ```
@@ -277,7 +277,7 @@ The Price Source interface defines methods for price sources, such as vendors or
 #### Example
 The Price Source enum implements the Price Source interface and defines Price Source -  Customer as the implementation for the value Customer.
 
-```
+```AL
 enum 7003 "Price Source Type" implements "Price Source", "Price Source Group"
     value(11; Customer)
     {
@@ -287,7 +287,7 @@ enum 7003 "Price Source Type" implements "Price Source", "Price Source Group"
 ```
 The Price Source table has a public method LookupNo() that opens a different page depending on the Source Type value. The PriceSourceInterface variable gets the implementation value from the Source Type enum value and then calls the interface's IsLookupOK(Rec) method.
 
-```
+```AL
 table 7005 "Price Source"
     var
         PriceSourceInterface: Interface "Price Source";
@@ -301,7 +301,7 @@ table 7005 "Price Source"
 
 Because the source type Customer implementation is the "Price Source - Customer" codeunit, the interface calls its IsLookupOK() method and then opens the Customer List page.
 
-```
+```AL
 codeunit 7032 "Price Source - Customer" implements "Price Source"
 
     procedure IsLookupOK(var PriceSource: Record "Price Source"): Boolean
@@ -340,7 +340,7 @@ Let's look at some sample extensions that will implement this for us.
 
 The first table extension adds a new field named Attach to Line No. to the Sales Line table and recalculates pricing when we make a change. This field will let us create the combinations that determine our discounts. It also copies the GetPriceCalculationHandler() function from the Sales Line table.
 
-```
+```AL
 tableextension 50001 "Attach Price" extends "Sales Line"
 {
     fields
@@ -374,7 +374,7 @@ tableextension 50001 "Attach Price" extends "Sales Line"
 
 The following page extension adds the Attach Line No. field to the Sales order page (subform). 
 
-```
+```AL
 pageextension 50001 "Attach Price" extends "Sales Order Subform"
 {
     layout
@@ -391,7 +391,7 @@ pageextension 50001 "Attach Price" extends "Sales Order Subform"
 
 ```
 The following table extension adds the Attach to Item No. field to the "Price List line" table.
-```
+```AL
 tableextension 50002 "Attach To Price - Line" extends "Price List Line"
 {
     fields
@@ -404,7 +404,7 @@ tableextension 50002 "Attach To Price - Line" extends "Price List Line"
 ```
 The following table extension adds the Attach to Item No. field to the "Price Calculation Buffer" table.
 
-```
+```AL
 tableextension 50003 "Attach To Price - Buffer" extends "Price Calculation Buffer"
 {
     fields
@@ -422,7 +422,7 @@ The calculation that links these three new fields is based on the following even
 - OnAfterFillBuffer() – Copies the value from the sales line to the buffer. 
 - FindItemToAttachToInLine() - Defines the value of the item number stored in the sales line that we attach to.
 
-```
+```AL
 codeunit 50004 "Attached Price Mgt."
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation Buffer Mgt.", 'OnAfterSetFilters', '', false, false)]
@@ -448,7 +448,7 @@ codeunit 50004 "Attached Price Mgt."
 ```
 The new price calculation capabilities are not available in the user interface. When a page does become available, either, from Microsoft or one that you develop yourself, you can use the following sample code to extend the page with a new control.
 
-```
+```AL
    field("Attach To Item No."; "Attach To Item No.")
    { }
 ```

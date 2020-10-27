@@ -55,7 +55,7 @@ First, we will get started with the table objects that store the data.
 #### Reward Level table object
 The following code adds a new table 50100 **Reward Level** for storing reward level information set up by the user. The table consists of two fields: **Level** and **Minimum Reward Points**. 
 
-```
+```AL
 table 50100 "Reward Level" 
 { 
     fields 
@@ -105,7 +105,7 @@ table 50100 "Reward Level"
 #### Activation Code Information table object 
 The following code adds a new table 50101 **Activation Code Information** for storing activation information for the extension. The table consists of three fields: **ActivationCode**, **Date Activated**, and **Expiration Date**. 
 
-```
+```AL
 table 50101 "Activation Code Information" 
 { 
     fields 
@@ -139,7 +139,7 @@ table 50101 "Activation Code Information"
 
 #### Customer Rewards Mgt. Setup table object 
 The following code adds a new table 50102 **Customer Rewards Mgt. Setup** for storing information about the codeunit that should be used to handle events in the extension. This enables us to mock events in our sample test. The table consists of two fields: **Primary Key** and **Customer Rewards Ext. Mgt. Codeunit ID**. 
-```
+```AL
 table 50102 "Customer Rewards Mgt. Setup" 
 { 
     fields 
@@ -169,7 +169,7 @@ table 50102 "Customer Rewards Mgt. Setup"
 #### Customer table extension object 
 The **Customer** table, like many other tables, is part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service and it cannot be modified directly by developers. To add additional fields or to change properties on this table, developers must create a new type of object; a table extension. The following code creates a table extension for the **Customer** table and adds the **RewardPoints** field. 
 
-``` 
+```AL
 tableextension 50100 "CustomerTable Ext." extends Customer 
 { 
     fields 
@@ -189,7 +189,7 @@ For each page object, you can specify the target Help page that describes the fe
 #### Customer Rewards Wizard page object
 The following code adds the 50100 **Customer Rewards Wizard** page that enables the user to accept the terms for using the extension as well as activating the extension. The page consists of a welcome step, an activation step, and a finish step. The welcome step has a checkbox for the Terms of Use that must be enabled. The activation step has a text box where the activation code must be entered for validation. A valid activation code for this sample extension is any 14 character alphanumeric code. 
 
-```
+```AL
 page 50100 "Customer Rewards Wizard" 
 { 
     // Specifies that this page will be a navigate page. 
@@ -518,7 +518,7 @@ page 50100 "Customer Rewards Wizard"
 
 The following code adds the 50101 **Rewards Level List** page that enables the user to view, edit, or add new reward levels and their corresponding minimum required points. The code example includes tooltips for controls and a relative link to context-sensitive Help.  
 
-```
+```AL
 page 50101 "Rewards Level List"
 { 
     PageType = List;
@@ -565,7 +565,7 @@ page 50101 "Rewards Level List"
 #### Customer card page extension object 
 A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. The following page extension object extends the **Customer Card** page object by adding two field controls: **RewardLevel** and **RewardPoints** after the **Name** field control on the page. The fields are added in the layout section. 
 
-```
+```AL
 pageextension 50100 "Customer Card Ext." extends "Customer Card" 
 { 
     layout 
@@ -608,7 +608,7 @@ pageextension 50100 "Customer Card Ext." extends "Customer Card"
 #### Customer list page extension object 
 A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. The following page extension object extends the **Customer List** page object by adding one action control; **Reward Levels** to the **Customer** group on the page. 
 
-```
+```AL
 pageextension 50101 "Customer List Ext." extends "Customer List" 
 { 
     actions 
@@ -646,7 +646,7 @@ pageextension 50101 "Customer List Ext." extends "Customer List"
 #### Customer Rewards Install Logic codeunit object 
 The following code adds the 50100 **Customer Rewards Install Logic** codeunit that initializes the default codeunit that will be used for handling events. Because this is an install codeunit, it has its **Subtype** property set to **Install**. The **OnInstallAppPerCompany** trigger is run when the extension is installed for the first time and the same version is re-installed. 
 
-```
+```AL
 codeunit 50100 "Customer Rewards Install Logic" 
 { 
     // Customer Rewards Install Logic 
@@ -673,7 +673,7 @@ codeunit 50100 "Customer Rewards Install Logic"
 #### Customer Rewards Ext. Mgt. codeunit object 
 The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the logic and functionality required for the Customer Rewards extension. This codeunit contains examples of how we can use events to react to specific actions or behavior that occur within our extension. In this sample extension, there is the need to make a call to an external service or API to validate activation codes entered by the user. Typically, you may do this by defining procedures that take in the activation code and then make calls to the API. Instead of using that approach, we use events in AL. Let us look at the following code from the codeunit. 
  
-```
+```AL
     // Activates Customer Rewards if activation code is validated successfully  
     procedure ActivateCustomerRewards(ActivationCode: Text): Boolean; 
     var 
@@ -744,7 +744,7 @@ For more information about events, see [Events in Microsoft [!INCLUDE[d365fin_lo
 
 Below is the full code for this codeunit. 
 
-```
+```AL
 codeunit 50101 "Customer Rewards Ext. Mgt." 
 { 
     var 

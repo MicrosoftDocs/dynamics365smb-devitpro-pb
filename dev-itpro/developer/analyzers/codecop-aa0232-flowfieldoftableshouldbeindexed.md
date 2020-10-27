@@ -26,7 +26,7 @@ When there are performance issues on List pages, the root cause is often that th
 As any FlowField potentially can be shown on a page, make sure that they are all adequately indexed.
 
 ## Bad code example
-```
+```AL
 table 18 Customer
 {...
     fields
@@ -64,7 +64,7 @@ table 379 "Detailed Cust. Ledg. Entry"
  
 ## Good code example
 
-```     
+```AL
 table 18 Customer
 {...
     fields

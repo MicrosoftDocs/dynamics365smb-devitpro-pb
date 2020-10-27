@@ -13,26 +13,31 @@ author: SusanneWindfeldPedersen
 ---
 
 # TopNumberOfRows Property
+
 Specifies the maximum number of rows to include in the resulting dataset of a query.  
   
 ## Applies to  
- Query objects  
+
+- Query objects  
   
 ## Property Value  
- An integer that specifies the maximum number of rows to include in the resulting dataset.  
+
+An integer that specifies the maximum number of rows to include in the resulting dataset.  
   
 > [!NOTE]  
->  A value of **0** is the same as leaving the property blank. If you set the value to **0**, then there is no limit and all rows of the dataset are returned.  
+> A value of **0** is the same as leaving the property blank. If you set the value to **0**, then there is no limit and all rows of the dataset are returned.  
  
 ## Syntax
-```
+
+```AL
 TopNumberOfRows = 10;
 ```
 
-## Remarks  
+## Remarks
+
 You use the **TopNumberOfRows** property to limit the resulting dataset to the first set of rows that are generated for the query. For example, you can include only the first 10 or first 100 rows in the resulting dataset. The TOPNUMBEROFROWS property is useful for key performance indicators such as the top number of customers or sales.  
   
- You can also specify the number of rows to include in the dataset by calling the [TOPNUMBEROFROWS Method](../methods-auto/query/queryinstance-topnumberofrows-method.md) from AL. The TOPNUMBEROFROWS method will overwrite the **TopNumberOfRows** property setting.  
+You can also specify the number of rows to include in the dataset by calling the [TOPNUMBEROFROWS Method](../methods-auto/query/queryinstance-topnumberofrows-method.md) from AL. The TOPNUMBEROFROWS method will overwrite the **TopNumberOfRows** property setting.  
   
 ## See Also
 

@@ -31,7 +31,7 @@ Furthermore, the page has properties. Properties work in the same way for pages 
 
 For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
 
-```
+```AL
 page 50102 PageName
 {
     PageType = List;
@@ -112,7 +112,7 @@ The base application has applied instructional text to setup guides and certain 
 
 The following example shows how you can apply user assistance and link to Help in a page object:
 
-```
+```AL
 page 50101 "Reward Card"
 {
     PageType = Card;

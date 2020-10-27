@@ -25,33 +25,33 @@ You use the ":=" operator for assignment statements.
 ### Example  
 The following example assigns a constant integer value to an integer variable that you have defined.  
 
-```  
+```AL  
 Count := 1;  
 ```  
 
 ### Example  
  The following example assigns a value that consists of a constant, an operator, and a variable.  
 
-```  
+```AL  
 Amount := 2 * Price;  
 ```  
 
 ### Example  
 The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you have defined.  
 
-```  
+```AL  
 OK := TestFile.Open('C:\temp\simple.xml');  
 ```  
 
 The return value of the `Open` method is optional. If you do not handle the return value in your code, then a run-time error occurs when a method returns **false**. The following example causes a run-time error if the file `C:\temp\simple.xml` cannot be opened.  
 
-```  
+```AL  
 TestFile.Open('C:\temp\simple.xml');  
 ```  
 
 You can handle the return value by using an if-then statement.  
 
-```  
+```AL  
 if TestFile.Open('C:\temp\simple.xml') then begin  
   // continue running  
 else  
@@ -68,7 +68,7 @@ If a simple or compound statement that follows the AssertError keyword causes an
 
 If a statement that follows the AssertError keyword does not cause an error, then the AssertError statement causes the following error and the test method that is running produces a FAILURE result:  
 
-```
+```AL
 TestAsserterrorFail: FAILURE
 
 An error was expected inside an AssertError statement.
@@ -77,7 +77,7 @@ An error was expected inside an AssertError statement.
 ### Example
 To create a test method to test the result of a failure of a `CheckDate` method that you have defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
-```  
+```AL  
 InvalidDate := 19000101D;  
 InvalidDateErrorMessage := Text001;  
 AssertError CheckDate(InvalidDate);  
@@ -88,7 +88,7 @@ IF GetLastErrorText <> InvalidDateErrorMessage then
 
 This example requires the following variables.
 
-```  
+```AL  
 var
     InvalidDate : Date;
     InvalidDateErrorMessage : Text; 
@@ -102,7 +102,7 @@ var
 
 The following syntax shows a with-do statement.  
 
-```  
+```AL  
 with <Record> do  
   <Statement>  
 ```  
@@ -120,7 +120,7 @@ You can nest several `with` statements. If you have identical names, then the in
 ### Example  
 This example shows two ways to write the same code that creates a record variable that you can commit later.  
 
-```  
+```AL  
 CustomerRec."No." := '1234';  
 CustomerRec.Name := 'Windy City Solutions';  
 CustomerRec."Phone No." := '555-444-333';  
@@ -131,14 +131,14 @@ Message('A variable has been created for this customer.');
 
 This example requires the following variables.
 
-```  
+```AL  
 var
     CustomerRec : Record Customer;
 ```  
 
 The following example shows another way to create a record variable that you can commit later: 
 
-```  
+```AL  
 with CustomerRec do begin  
   "No." := '1234';  
   Name := 'Windy City Solutions';  
@@ -157,7 +157,7 @@ If you nest a `with-do` block within another explicit or implicit `with-do` bloc
 #### Example  
 The following example demonstrates nested `with-do` blocks. Both `with-do` blocks are attached to a Customer Ledger Entry record variable.  
 
-```  
+```AL  
 with CustLedgEntry do begin  
   Insert;  
   ...;  
@@ -171,7 +171,7 @@ end;
 #### Incorrect example  
 The following example demonstrates incorrect code in which you cannot directly tell which record variable that the MyField field refers to.  
 
-```  
+```AL  
 with CustLedgEntry do begin
   ...;  
   with VendLedgEntry do begin  

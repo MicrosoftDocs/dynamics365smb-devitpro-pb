@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 10/12/2020
 ms.author: edupont
 ---
 
@@ -38,22 +38,29 @@ For an overview of the telemetry types that are currently emitted, see [Monitori
 
 ### <a name="appinsights"></a>Enable Application Insights
 
-> [!IMPORTANT]  
-> This process requires a restart to the environment, which is triggered automatically after step 6. Plan to do this during non-working hours to avoid disruptions.
-
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
 2. Create an Application Insights resource in Azure.
 
     The Application Insights resource will be assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-    The Application Insights instrumentation key can be in any Azure tenant that is accessible to your organization. For example, a delegated administrator from the reselling partner is the person analyzing the telemetry. But this person might not have access rights the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
+    The Application Insights resource can be in any Azure tenant that is accessible to your organization. For example, a delegated administrator from the reselling partner is the person analyzing the telemetry. But this person might not have access rights the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
+
+    > [!TIP]
+    > You can use the same Application Insights resource for multiple tenants and their different environments.
 
     For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment that you want to change.
-4. On the **Environment** page, select **Application Insights Key**.
-5. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
-6. Select **Save**.
+
+    > [!IMPORTANT]  
+    > The next steps require a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
+4. On the **Environment** page, the **Application Insights Key** field shows if the environment already uses application insights.
+
+    To enable application insights, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
+
+    > [!NOTE]
+    > In version 15 and 16, to enable application insights, choose the **Application Insights Key** action, and then specify the instrumentation key.
+5. Choose the **Save** button.
 
 <!--
 ### <a name="lrsql"></a>Analyze long running SQL queries

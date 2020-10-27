@@ -104,7 +104,11 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 > [!NOTE]  
 > Several rules enforced by the AppSourceCop analyzer are incompatible with rules enforced by the PerTenantExtensionCop. Make sure to enable only one of these at a time.
 
+> [!NOTE]  
+> Failing to comply with the rules whose default severity is set to `Error` will fail the submission of your extension to the AppSource marketplace. It is recommended, but not mandatory to comply with the rules whose severity is marked as `Warning` or `Info`. 
+
 ## Configuration
+    
 The AppSourceCop analyzer can be further configured by adding a file named `AppSourceCop.json` in the project's root folder. The AL Language extension will offer IntelliSense for this file.
 
 The following table describes the settings in the `AppSourceCop.json` file:
@@ -130,7 +134,7 @@ In the following example, we will configure AppSourceCop to validate that all ne
 > Make sure that code analysis is enabled and `${AppSourceCop}` is specified in the list of enabled code analyzers. For more information see [AL Language Extension Configuration](../devenv-al-extension-configuration.md).
 
 We start by creating the default "Hello world" extension.
-```
+```AL
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
@@ -144,7 +148,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 
 We continue by adding the configuration file `AppSourceCop.json` in the project's root folder and setting its content to the following. 
 
-```
+```json
 {
     "mandatoryAffixes": [ "Foo", "Bar" ]
 }

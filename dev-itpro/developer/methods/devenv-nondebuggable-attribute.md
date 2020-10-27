@@ -18,14 +18,14 @@ Specifies that a method or a variable is hidden from debugging in the sense that
 
 ## Syntax  
 
-```  
+```AL  
 [NonDebuggable]
 ```
   
 ## Example
 Setting the attribute on a method. Each method must be marked with `[NonDebuggable]`.
 
-```
+```AL
 codeunit 50142 NoDebuggingOfMethod
 {
     [NonDebuggable]
@@ -40,7 +40,7 @@ codeunit 50142 NoDebuggingOfMethod
 ```
 
 Setting the attribute on variables. Each variable must be marked as `[NonDebuggable]`.
-```
+```AL
 codeunit 50143 NoDebuggingOfVar 
 {
     local procedure MyProcedure()

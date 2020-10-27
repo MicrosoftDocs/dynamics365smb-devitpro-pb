@@ -20,7 +20,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
 
 ## Syntax  
   
-```  
+```AL
 [MessageHandler]
 procedure MessageHandler(Message : Text[1024]);
 ```    

@@ -1,5 +1,6 @@
 ---
 title: "Triggers Overview"
+description: "Triggers in AL for Business Central."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/01/2020

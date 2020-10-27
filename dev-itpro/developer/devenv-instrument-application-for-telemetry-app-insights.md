@@ -79,7 +79,7 @@ Use the parameters to build the dimensions, or columns, that will show for the t
 The following code snippets create simple telemetry trace signals. They create a critical-level telemetry signal that is scoped to the signal publisher. For a simple test of this code, add it to the `OnRun` trigger of a codeunit, and then run the codeunit.
 
 **Using a dictionary:**
-```
+```AL
 trigger OnRun();
 var
     CustDimension: Dictionary of [Text, Text];
@@ -92,7 +92,7 @@ end;
 
 **Using an overload:**
 
-```
+```AL
 trigger OnRun();
 begin
     LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');

@@ -16,7 +16,7 @@ Specifies the method to be an integration type event subscriber.
 
 ## Syntax  
   
-```  
+```AL  
 [EventSubscriber(ObjectType: ObjectType, ObjectId: Integer, EventName: Text, ElementName: Text, SkipOnMissingLicense: Boolean, SkipOnMissingPermission: Boolean)
 ```    
   
@@ -62,7 +62,7 @@ Specifies whether to skip a call to this method if the user does not have permis
 ## Example
 This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess arguments are set to **false**.
 
-```
+```AL
 codeunit 50105 MyEventPublisher
 {
     [IntegrationEvent(false, false)]

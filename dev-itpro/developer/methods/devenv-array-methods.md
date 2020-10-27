@@ -23,7 +23,7 @@ The length of a dimension determines the valid range of indices for that dimensi
 ## Syntax 
 
 The syntax for declaring an array of a specific type is the following:
-```
+```AL
 Array [Dimension] of Type;
 ```
 
@@ -34,20 +34,20 @@ The `Type` is the element type of the array.
 ## Code example 
 The following code sample shows the declaration of an array with a simple element type.
 
-```
+```AL
 ArrayOfInteger: Array [10] of Integer;
 ```
 
 The following code sample shows the declaration of an array with an element type of a fixed length.
 
-```
+```AL
 ArrayOfCode: Array [10] of Code[20];
 ArrayOfText: Array [10] of Text[20];
 ```
 
 The following code sample shows the declaration of an array with a complex element type.
 
-```
+```AL
 ArrayOfCodeunits: Array [10] of Codeunit 10;
 ArrayOfQueryes: Array [10] of Query "My Query";
 ArrayOfTemporaryRecords: Array [10] of Record 10 Temporary;

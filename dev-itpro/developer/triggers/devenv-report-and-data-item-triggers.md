@@ -1,5 +1,6 @@
 ---
 title: "Report and Data Item Triggers"
+description: "Report and data item triggers in AL for Business Central."
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na

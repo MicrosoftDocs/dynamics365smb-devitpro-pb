@@ -16,7 +16,7 @@ Specifies search terms (words and phrases) for the page or report in different l
 
 ## Syntax
 
-```
+```AL
 AdditionalSearchTermsML = <language ID> = '<term>[,<term>]'[, <language ID> = '<term>[,<term>]'];
 ```
 
@@ -44,7 +44,7 @@ The [UsageCategory property](devenv-usagecategory-property.md) must be set to a 
 
 The following code snippet uses the **AdditionalSearchTermsML** property to add search terms in English and Danish to a list page whose caption is **Items**.
 
-```
+```AL
 page 50101 SearchTestML
 {
     PageType = List;

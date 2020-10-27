@@ -1,7 +1,7 @@
 ---
 title: "Embed app deployment packages"
+description: Learn about how to deploy a Business Central Embed app to the Online service
 author: jswymer
-
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -101,7 +101,7 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 #### "branding"
 
-||||
+|Setting|Type|Description|
 |----|----|-----------|
 | productName| String  |Official marketing name of your Embed app. This name will be displayed in the title bar of the Business Central Web Client.  
 | productNameShort| String  |Short version of Embed app marketing name. It's displayed in the areas of the UI where full Product Name can't be displayed. |
@@ -110,7 +110,7 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 #### "images"
 
-||||
+|Setting|Type|Description|
 |----|----|-----------|
 | appleTouchIconPath| String |Format: PNG. Dimensions: 114x114  |
 | faviconPath| String |Format: ICO. Dimensions 16x16, 32x32, 48x48 & 64x64. Used on the Browser tab and bookmark icon.|  
@@ -120,14 +120,14 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 #### "databases"
 
-||||
+|Setting|Type|Description|
 |----|----|-----------|
 | applicationBacpacPath| String  |Path to the application database (.bacpac) included with the deployment package. |
 | tenantTemplateBacpacPath| String|Path to the tenant template database (.bacpac) included with the deployment package. |
 
 #### "links"
 
-||||
+|Setting|Type|Description|
 |----|----|-----------|
 | baseHelpUrl| String  |Link to your online Help server or web page. |
 | baseHelpSearchUrl| String |Link to your online Help server or web page.| 
@@ -143,13 +143,13 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 This section of the manifest.json file must list all the apps used by your solution and their dependencies. Even if the dependency app belongs to a different publisher, for example Microsoft, you must include it. This list will be used by the deployment routine to publish and install these apps to your service and for your environments.   
 
-||||
+|Setting|Type|Description|
 |----|----|-----------| 
 | id| String|Unique ID of the app. Use the same Id as listed in the app.json file.|  
 | name| String |Name of the app. Use the same Name as listed in the app.json file.|  
 | publisher| String|Name of the ISV organization that owns the app. Use the same Publisher as listed in the app.json file.| 
-| initialVersion| String |Minimum required (and compatible) version of the app. The exact version of the app you specify must be uploaded via the App Management API. Either you upload the apps or publishers that own the apps do.|
-| allowedUpdates| Enum |Allowed values: none, hotfix, minor, all. <br /><br />You can set up rules that determine which app version to use for the new sign-ups. You can also specify whether updating of the installed app is allowed. <ul><li>`"none"`: It won't be possible to apply any new versions to this app inline (only side by side).  Only the application version, which matches the specified initial version number exactly, will be used for the new signups.</li><li>`"hotfix"`: You allow hot fixing this app with newer hotfix versions (versions with higher build and revision versions). New signups will automatically get the latest available HF version of the app installed.</li><li>`"minor"`: Customers can view and install newer applicable minor (or hotfix) versions of the app via the Business Central Admin Center. New signups will automatically get the latest available hotfix version of the app installed, however the minor updates will not be automatically installed, they should be installed by the newly signed up customers using the Business Central Admin Center. </li><li>`"all"`: Customers can view and install all newer applicable versions of the app via the Business Central Admin Center. </li> </ul> |
+| initialVersion| String |Minimum required and compatible version of the app. <br /><br />If `"allowedUpdates"` is set to `"none"`, then the exact version of the app you specify must be available in the App Repository. In this case, a full initial version number must be specified. <br /><br />For other `"allowedUpdates"` values, it's enough that an app with a higher or equal [build].[revision] part of the version is available in the App Repository. This also means that you don't need to specify a full version number -- [major].[minor] and [major].[minor].[revision] are also accepted. This applies to the App versions uploaded either by you or by other publishers who own the apps.|
+| allowedUpdates| Enum |Allowed values: none, hotfix, minor, all. <br /><br />You can set up rules that determine which app version to use for the new signups. You can also specify whether updating of the installed app is allowed.<ul><li>`"none"`: It won't be possible to apply any new versions to this app inline (only side-by-side).  Only the application version that exactly matches the specified initial version number will be used for the new signups.</li><li>`"hotfix"`: You allow hot fixing this app with newer hotfix versions, that is, versions with a higher build and revision numbers than in the `"initialVersion"`, but with the same major and minor version. New signups and environments you upgrade to this deployment will automatically get the latest available hotfix version of the app installed.</li><li>`"minor"`: Customers can view and install newer applicable minor (or hotfix) versions of the app via the Business Central Administration Center. New signups and environments that you upgrade to this deployment will automatically get the latest available hotfix version of the app installed. Minor updates won't be automatically installed. They must be installed by the newly signed-up customers using the Business Central Administration Center. </li><li>`"all"`: Customers can view and install all newer applicable versions of the app via the Business Central Administration Center. New signups and environments that you upgrade to this deployment will automatically get the latest available hotfix version of the app installed.</li></ul> |
 | blockUninstall| Boolean |Allow or disallow the app to be uninstalled using the Extension Management page.|  
 | publishOnly| Boolean |Specifies whether to only publish (`true`) that app to the service. Customers can then install it manually from the Extension Management page. If `false`, the app is automatically installed for all new environments and environments updated to this deployment. | 
 
@@ -196,13 +196,22 @@ Sample of the manifest.json file.
   "apps":  [ 
                  { 
                      "id":  "63ca2fa4-4f03-4f2b-a480-172fef340d3f", 
-                     "initialVersion":  "16.1.40074.41897", 
+                     "initialVersion":  "16.1", 
                      "name":  "System Application", 
                      "publisher":  "Microsoft", 
                      "allowedUpdates":"hotfix", 
                      "publishOnly":  false, 
                      "blockUninstall":  true 
-                 }, 
+                 },
+                 { 
+                     "id":  "201e5067-99cc-4974-900a-b50bd4fbe777", 
+                     "initialVersion":  "16.1.5", 
+                     "name":  "Fabrikam Rentals Add-on", 
+                     "publisher":  "Fabrikam", 
+                     "allowedUpdates":"minor", 
+                     "publishOnly":  false, 
+                     "blockUninstall":  true 
+                 },                 
                  { 
                      "id":  "201e5067-99cc-4974-900a-b50bd4fbe777", 
                      "initialVersion":  "16.1.50043.50321", 
@@ -219,7 +228,7 @@ Sample of the manifest.json file.
 
 ## Preparing the deployment package 
  
-Once you've all the components of the deployment package ready, you can package them into a .zip archive.  the archive content mustn't include any additional subfolders and must have the following structure: 
+Once you have all the components of the deployment package ready, you can package them into a .zip archive. The archive content can't include any additional subfolders and must have the following structure: 
  
 [FOLDER] branding/
   - favicon.ico 

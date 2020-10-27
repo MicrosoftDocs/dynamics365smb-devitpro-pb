@@ -11,13 +11,16 @@ author: SusanneWindfeldPedersen
 ---
 
 # Field No. Property
+
 Sets a unique numeric ID for the field.  
   
 ## Applies to  
- Fields  
+
+- Fields  
 
 ## Syntax
-```
+
+```AL
 field(Field No.; MyField; Blob)
 {
     ...

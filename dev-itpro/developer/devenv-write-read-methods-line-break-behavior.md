@@ -22,7 +22,7 @@ When writing to and Reading from a stream object using the Write, WriteText, Rea
 
 To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlogTable`.
 
-```
+```AL
 var
     myInt: Integer;
     MyRecord: Record MyBlobTable;

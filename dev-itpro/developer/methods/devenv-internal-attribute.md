@@ -23,7 +23,7 @@ Specifies that the method is published as an internal event. It can only be subs
 Typing the shortcut `teventinternal` will create the basic internal attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Syntax  
-```  
+```AL
 [InternalEvent(IncludeSender : Boolean)]
 ```
   
@@ -36,7 +36,7 @@ Specifies that the firing instance of the object is available as a parameter to 
 ## Example
 Setting the attribute on a method. Each method must be marked with `[InternalEvent]`.
 
-```
+```AL
 codeunit 50131 MyInternalCodeunit
 {
     Access = Internal;

@@ -41,7 +41,7 @@ Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on li
 
 ## Page example
 
-```
+```AL
 page 50101 SimpleCustomerCard
 {
     PageType = Card;

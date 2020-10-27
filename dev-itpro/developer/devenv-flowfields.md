@@ -37,7 +37,7 @@ Consider the Customer table in the following illustration. This table contains t
   
 The figure shows that the value in the Balance FlowField for customer number 10000 (Windy City Solutions) is retrieved from the Amount column in the Customer Entry table. The value is the sum of the amount fields for the entries that have the customer number 10000.  
   
-```  
+```AL
 Sum = 10 + 20 + 30 = 60.  
 ```  
   
@@ -45,13 +45,13 @@ The values shown in the **Balance** column in the Customer table for customers 1
   
 In this example, the Balance FlowField in the Customer table reflects the sum of a specific subset of the Amount fields in the Customer Entry table. How the calculation of a FlowField is to be made, is defined in a calculation formula. The calculation formula for the **Balance** field is:  
   
-```  
+```AL
 Sum("Customer Entries".Amount WHERE(CustNo=FIELD(CustNo)))  
 ```  
   
 Correspondingly, the **Any Entries** field, which indicates whether any entries exist, has the following definition:  
   
-```  
+```AL
 Exist("Customer Entries" WHERE(CustNo=FIELD(CustNo)))  
 ```  
 

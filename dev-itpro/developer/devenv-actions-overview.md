@@ -110,7 +110,7 @@ The Home menu is always displayed first so promoted actions provide quick access
 
 Within the different areas, you can create sub-menus to a group of actions and improve navigation. You create a sub-menu by adding a `group()` control, as shown in the following example:  
 
-```
+```AL
 actions
 {
     area(Report)
@@ -157,7 +157,7 @@ actions
   
  To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods-auto/page/page-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers/devenv-onaction-trigger.md) trigger on an action on a page.  
   
-```
+```AL
 if confirm('Are you sure you want to call this codeunit?', true) then begin
     CurrPage.SetSelectionFilter(Rec);  
     codeunit.Run(50000, Rec);  

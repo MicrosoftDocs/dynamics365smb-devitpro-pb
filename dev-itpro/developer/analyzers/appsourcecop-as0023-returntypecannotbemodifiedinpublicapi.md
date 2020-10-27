@@ -35,7 +35,7 @@ It is only allowed to add a return type to a procedure which previously did not 
 In the following examples, version 1.0 of the extension defines a public procedure which returns an Integer.
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(): Integer
@@ -48,7 +48,7 @@ codeunit 50100 MyCodeunit
 ### Example 1 - Changing the return type of a procedure from Integer to Boolean
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(): Boolean
@@ -61,7 +61,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the return type of `MyProcedure` has changed from `Integer` to `Boolean`. If a dependent extension used the return type of this procedure, this will lead to a compilation error similar to `Cannot implicitly convert type 'Boolean' to 'Integer' (AL0122)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     procedure AnotherMethod()
@@ -77,7 +77,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 2 - Removing the return type of a procedure
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure()
@@ -89,7 +89,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the procedure does not return anything anymore. If a dependent extension used the return type of this procedure, this will lead to a compilation error similar to `Cannot implicitly convert type 'None' to 'Integer' (AL0122)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     procedure AnotherMethod()
@@ -105,7 +105,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 3 - Removing the return type of a procedure and adding a TryFunction attribute
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [TryFunction]
@@ -123,7 +123,7 @@ In version 2.0, the procedure now returns a Boolean value because it is marked a
 In the following examples, the version 1.0 of the extension defines a procedure which does not have a return type.
 
 Version 1.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure()
@@ -135,7 +135,7 @@ codeunit 50100 MyCodeunit
 ### Example 1 - Adding a return type to a procedure
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure(): Boolean
@@ -150,7 +150,7 @@ In version 2.0, the procedure `MyProcedure` is now returning a boolean. However,
 ### Example 2 - Adding a TryFunction attribute to a procedure
 
 Version 2.0 of the extension:
-```
+```AL
 codeunit 50100 MyCodeunit
 {
     [TryFunction]

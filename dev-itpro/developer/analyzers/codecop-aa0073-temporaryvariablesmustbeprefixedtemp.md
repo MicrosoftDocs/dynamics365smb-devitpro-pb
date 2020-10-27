@@ -25,12 +25,12 @@ Only temporary variable names must be prefixed with Temp.
 Temporary variables must be named with identifiers that abbreviate the word temporary, such as temp. This improves readability of the code.
 
 ## Bad code example
-```
+```AL
 JobWIPBuffer : Record "Job WIP Buffer" temporary;
 ```
 
 ## Good code example
-```
+```AL
 TempJobWIPBuffer : Record "Job WIP Buffer" temporary;
 ```
 

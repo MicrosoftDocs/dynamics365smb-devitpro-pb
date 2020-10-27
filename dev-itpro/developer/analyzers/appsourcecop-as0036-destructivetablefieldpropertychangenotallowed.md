@@ -29,7 +29,7 @@ It is not allowed to change property values in a way that would prevent the sche
 ### Example 1 - Changing Enabled from true to false
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -43,7 +43,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -61,7 +61,7 @@ In version 2.0, the field is not enabled anymore. Disabled fields are not create
 ### Example 2 - Changing FieldClass from Normal to FlowField
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -75,7 +75,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -93,7 +93,7 @@ In version 2.0, the field became a [FlowField](../devenv-flowfields.md). As Flow
 ### Example 3 - Changing the Access property to make a field less accessible
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -107,7 +107,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -123,7 +123,7 @@ table 50100 MyTable
 In version 2.0, the field `MyField` is now only accessible within `MyTable` and cannot be used from other extension. If a dependent extension references this field, this will lead to a compilation error similar to `'MyField' is inaccessible due to its protection level (AL0161)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     trigger OnRun()
@@ -140,7 +140,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 1 - Setting Enabled from false to true
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -154,7 +154,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -172,7 +172,7 @@ In version 2.0, the field is now enabled. Disabled fields are not created in the
 ### Example 2 - Changing FieldClass from FlowField to Normal
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -186,7 +186,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -204,7 +204,7 @@ In version 2.0, the [FlowField](../devenv-flowfields.md) became a Normal field. 
 ### Example 3 - Changing the Access property to make a field more accessible
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -218,7 +218,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields

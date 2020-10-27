@@ -12,23 +12,26 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Width Property (XMLport)
+
 Sets the width of a data item of an XMLport.  
   
 ## Applies to  
- Fields \(in XMLports\)  
+
+- Fields \(in XMLports\)  
  
 ## Syntax
-```
+
+```AL
 Width = 1;
 ```
  
-## Remarks  
- This property is used only if the [Format Property \(XMLports\)](devenv-format-xmlports-property.md) is **Fixed Text**.  
+## Remarks
+
+This property is used only if the [Format Property \(XMLports\)](devenv-format-xmlports-property.md) is **Fixed Text**.  
   
- The value is an integer that defines the number of characters in the field.  
+The value is an integer that defines the number of characters in the field.  
   
 ## See Also  
- [XMLport Properties](devenv-xmlport-properties.md)
+
+[XMLport Properties](devenv-xmlport-properties.md)

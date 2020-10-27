@@ -27,6 +27,9 @@ The page customization object has more restrictions than the [page extension obj
 > [!NOTE]  
 > Modifying actions in Cue groups on page extensions is not supported.
 
+> [!NOTE]  
+> `showMyCode` does not apply to page customizations. Page customizations defined in an extension with `showMyCode` set to `false` can still be copied using Designer.
+
 
 ## Snippet support
 
@@ -43,7 +46,7 @@ Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on li
 
 The following page customization example `MyCustomization` makes changes to **Customer List**. By using the `moveafter` method, `Blanket Orders` is moved after the `Orders` action item. And the `modify` method is used to hide the `NewSalesBlanketOrder` action item.
 
-```
+```AL
 profile TheBoss
 {
     Description = 'The Boss';
@@ -69,7 +72,7 @@ pagecustomization MyCustomization customizes "Customer List"
 
 You can use the same page customization on another profile within the same extension package by referencing its name from the profile definition, for example:
 
-```
+```AL
 profile TheSalesman
 {
     ProfileDescription = 'The Boss';

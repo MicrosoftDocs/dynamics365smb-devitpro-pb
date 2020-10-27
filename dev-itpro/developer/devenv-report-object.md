@@ -34,7 +34,7 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 ## Report example
 The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).
 
-```
+```AL
 report 50103 "Customer List"
 {
   CaptionML=ENU='Customer List';

@@ -19,12 +19,13 @@ Sets the maximum time the report will run after which it is automatically termin
 
 - Reports
 
-## Property Value   
+## Property Value
 
 A string in the format `hh:mm:ss`.
 
 ## Syntax
-```
+
+```AL
 ExecutionTimeout := `10:05:55`;
 ```
 

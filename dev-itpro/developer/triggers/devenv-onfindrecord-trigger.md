@@ -17,7 +17,7 @@ Overrides the default page behavior and enables you to specify which record you 
 
 ## Syntax  
 
-```  
+```AL
 trigger OnFindRecord(Which): Ok
 begin
     ...

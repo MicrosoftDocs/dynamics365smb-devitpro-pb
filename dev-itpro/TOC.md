@@ -15,7 +15,6 @@
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
-### [Licensing](deployment/licensing.md)
 ### [Add your App to AppSource](administration/appsource.md)
 ### Get started with building apps
 #### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
@@ -81,6 +80,7 @@
 ## [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+## [Licenses and Entitlements](deployment/licensing.md)
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ## [Version Numbers in Business Central](administration/version-numbers.md)
@@ -114,10 +114,10 @@
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
-### [Exporting Databases](administration/tenant-admin-center-database-export.md)
-### [Capacity](administration/tenant-admin-center-capacity.md)
-### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
+### [Managing Capacity](administration/tenant-admin-center-capacity.md)
+### [Managing Notifications](administration/tenant-admin-center-notifications.md)
 ### [Managing Updates](administration/tenant-admin-center-update-management.md)
+### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 ### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 ### [Administration Center API](administration/administration-center-api.md)
 ## Automation
@@ -232,6 +232,12 @@
 ### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
+### Creating New Modules in the System Application
+#### [Module Architecture](developer/devenv-blueprint.md)
+#### [Getting Started with Modules](developer/devenv-getting-started.md)
+#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
+#### [Create a New Module](developer/devenv-new-module.md)
+#### [Change a Module](developer/devenv-change-a-module.md)
 ## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
@@ -700,6 +706,12 @@
 ### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
+<!-- Microsoft Teams -->
+## Integrating with Microsoft Teams
+### [Overview](developer/devenv-develop-for-teams.md)
+### [Extending Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### [FAQ](developer/devenv-dev-faq-teams.md)
+<!-- end Microsoft Teams -->
 <!-- Business Central API -->
 ## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
 <!-- end Business Central API -->
@@ -748,8 +760,6 @@
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
-### [Troubleshooting the Business Central Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
-### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md) 
 ### Deployment Topologies
 #### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
 #### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
@@ -771,6 +781,11 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
+### Business Central Mobile App
+#### [Introducing the Mobile App](developer/devenv-introducing-business-central-mobile-app.md)
+#### [Preparing For and Installing the Mobile App](deployment/install-business-central-app.md)
+#### [Troubleshooting the Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
+#### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md)
 <!-- end deployment -->
 <!-- administration -->
 ## Administration

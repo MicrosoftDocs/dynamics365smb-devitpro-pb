@@ -1,5 +1,6 @@
 ---
 title: "OnAfterModifyRecord Trigger"
+description: "OnAfterModifyRecord trigger in AL for Business Central."
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na

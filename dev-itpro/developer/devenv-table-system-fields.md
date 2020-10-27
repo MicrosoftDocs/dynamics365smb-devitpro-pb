@@ -38,26 +38,26 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 
 - The [Insert(Boolean, Boolean)](methods-auto/record/record-insert-boolean-boolean-method.md) lets you specify the **SystemId** value for a record, instead of using one assigned by the platform:
 
-    ```
+    ```AL
     myRec.SystemId := '{B6666666-F5A2-E911-8180-001DD8B7338E}';  
     myRec.Insert(true, true);
     ```
 
 - The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) uses the **SystemId** to get a record:
 
-    ```
+    ```AL
     id := myRec.GetBySystemId('{B6666666-F5A2-E911-8180-001DD8B7338E}';  
     ```
 
 - The [SystemIdNo()](methods-auto/recordref/recordref-systemidno-method.md) gets the field number used by the **SystemId** field in the table:
 
-    ```
+    ```AL
     myRec.OPEN(DATABASE::MyTable);
     SystemIdFieldNo := myRec.SystemIdNo();
     ```
 - The [TableRelation](properties/devenv-tablerelation-property.md) lets you use the **SystemId** field to set up table relationships:
 
-    ```
+    ```AL
     field(1; MyField; Guid)
     {
         DataClassification = ToBeClassified;
@@ -67,7 +67,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 
 - The **SystemId** field can be used as a binding key to an API:
 
-    ```
+    ```AL
     page 50100 "Customer Entity"
     {
         PageType = API;

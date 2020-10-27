@@ -40,7 +40,7 @@ To expose data in an API page, the first thing needed is a source table. For the
 2. Name the table **Car Brand**, and specify **50100** as the table ID.  
 3. Add any necessary fields for a car brand as shown below:
 
-    ```
+    ```AL
     table 50100 "Car Brand"
     {
         DataClassification = CustomerContent;
@@ -73,7 +73,7 @@ To expose data in an API page, the first thing needed is a source table. For the
     ```
 4. Now, create a new table for **Car Model**, and specify **50101** as the table ID.
 5. Add any necessary fields for a car model as shown in the example below. Make sure to have a field for **Brand Id** and that **TableRelation** is set to **"Car Brand".SystemId**.
-    ```
+    ```AL
     table 50101 "Car Model"
     {
         DataClassification = CustomerContent;
@@ -136,7 +136,7 @@ To expose data in an API page, the first thing needed is a source table. For the
 > <br>Whereas Enums have their own types and all available Enum members are generated in the metadata:
 > `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`.  
 >
->```
+>```AL
 >< EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
 >            <Member Name="Petrol" Value="0"/>
 >            <Member Name="Diesel" Value="1"/>
@@ -155,8 +155,8 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
 3. Specify the **Car Model**  table as the source table.
 4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will affect your custom endpoint: `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel`. For more information, see [Business Central API endpoints](/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics.md).
 5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions` which are localized and translatable. 
-6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [Table Object](devenv-table-object.md#systemid). 
-    ```
+6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [Table Object](devenv-table-object.md). 
+    ```AL
     page 50101 "API Car Model"
     {
         PageType = API;
@@ -224,7 +224,7 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
 
     And the **API Car Brand** page:
 
-    ```
+    ```AL
     page 50100 "API Car Brand"
     {
         PageType = API;
@@ -283,7 +283,7 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
 
 > [!TIP]  
 > Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add the **CaptionML = ENU = 'Multiplicity=ZeroOrOne';** property in your part as shown below:
->```
+>```AL
 >part(carModels; "API Car Model")
 >    {
 >        CaptionML = ENU = 'Multiplicity=ZeroOrOne';

@@ -49,7 +49,7 @@ If you use [https://aka.ms/bcsandbox](https://aka.ms/bcsandbox) to create your [
 
 **Assign Premium Plan** specifies whether or not your admin user should be assigned a Premium plan. **Create Test Users** specifies whether or not you want the setup to include test users. 
 
-### NavContainerHelper
+### BCContainerHelper
 If you are using `New-BCContainer` to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox container, you must make sure that you are using version 0.2.8.3 or later.
 
 Use the switch `assignPremiumPlan` on `New-BCContainer` like this:
@@ -96,7 +96,7 @@ This will assign the Premium plan to the admin user in the database.
 ## See Also
 
 [Programming in AL](devenv-programming-in-al.md)  
-[Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
+[Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)  
 [Container Sandbox](devenv-get-started-container-sandbox.md)  
 [Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)  
 [Production and Sandbox Environments](../administration/environment-types.md)  

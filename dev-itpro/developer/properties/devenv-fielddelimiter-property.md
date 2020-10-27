@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # FieldDelimiter Property
+
 Specifies the text delimiter for a field.  
   
 ## Applies to  
@@ -19,7 +20,7 @@ Specifies the text delimiter for a field.
 
 ## Syntax
 
-```
+```AL
 FieldDelimiter = '<None>';
 ```
   

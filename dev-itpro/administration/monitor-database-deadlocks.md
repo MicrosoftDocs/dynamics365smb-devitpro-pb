@@ -143,8 +143,8 @@ All deadlock events have the trace tag **00000DI**. If you only want to see dead
 
 ```
 <QueryList>
-  <Query Id="0" Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">
-    <Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">
+  <Query Id="0" Path="Microsoft-DynamicsNAV-Server/Admin">
+    <Select Path="Microsoft-DynamicsNAV-Server/Admin">
                  *[EventData[Data[@Name='tag'] and (Data='00000DI')]]
                </Select>
   </Query>

@@ -25,7 +25,7 @@ Avoid getting the dataset when an enumeration is not used, which will decrease p
 If you use `FindSet()` or `Find()` you must have a `Next()` method. Otherwise, you are wasting CPU and bandwidth since multiple records are loaded but you only use one.
 
 ## Bad code example
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var
@@ -42,7 +42,7 @@ codeunit 1 MyCodeunit
 ```
 
 ## Good code example
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var

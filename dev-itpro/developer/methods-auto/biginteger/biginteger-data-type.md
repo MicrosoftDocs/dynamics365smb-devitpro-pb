@@ -28,7 +28,7 @@ Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,
 
  If you assign -9,223,372,036,854,775,808 directly to a BigInteger variable, then you get an error when you try to compile the code. However, you can indirectly assign -9,223,372,036,854,775,808 to a BigInteger variable by using the following code.  
 
-```  
+```AL  
 BigIntegerVar := -9223372036854775807L;  
 BigIntegerVar := BigIntegerVar - 1;  
 ```  
@@ -37,7 +37,7 @@ BigIntegerVar := BigIntegerVar - 1;
 
 ## Example  
 
-```  
+```AL  
 BI := 1L;  
 BI := 455500000000L;  
 ```  

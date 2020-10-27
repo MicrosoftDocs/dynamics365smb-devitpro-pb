@@ -31,7 +31,7 @@ When you want to do many operations on the data in a specific table in the datab
 
 There are three ways to implement a temporary table:
 
-- Setting the [TableType property](properties/devenv-tabletype-property.md) on the table object to **Temporary**
+- Setting the [TableType property](properties/devenv-tabletype-property.md) on the table object to **Temporary**.
 - Using a temporary record variable.
 - Setting the [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md) on a page.
 
@@ -44,9 +44,9 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `true`:
+With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `Temporary`:
 
-```
+```AL
 table 50100 MyTable
 {
     DataClassification = ToBeClassified;
@@ -60,7 +60,7 @@ table 50100 MyTable
 
 This implementation has the same effect as using a temporary record variable or setting the SourceTableTemporary property on a page. But the advantage is that the table schema isn't synchronized with the database. So it does not have restrictions on breaking schema changes, like removing a field, changing its data type or length.
 
-It will also improve the performance of BACPAC generation using the sqlpackage command-line tool, compared to temporary tables based on temporary record variables and pages. For more information, see [Performance of BACPAC generation](/performance/performance-onprem.md#performance-of-bacpac-generation).
+It will also improve the performance of BACPAC generation using the sqlpackage command-line tool, compared to temporary tables based on temporary record variables and pages. For more information, see [Performance of BACPAC generation](../performance/performance-onprem.md#performance-of-bacpac-generation).
 
 #### Changing the table type
 
@@ -70,7 +70,7 @@ You can change from **Normal** to **Temporary**, and the other way around. When 
 
 With this implementation, a physical table is not created in the database. You create a global or local variable of the type record and set the [Temporary Property](properties/devenv-temporary-property.md) next to it. The variable that holds a temporary table is defined just like any other global or local variable. The syntax is shown in the following example:
 
-```
+```AL
 var
     TempInvoicePostBuffer: Record "Invoice Post. Buffer" temporary;
 ```
@@ -81,7 +81,7 @@ You manipulate the temporary table variable as you would with any other database
 
 Another option for temporary tables is to set the [SourceTableTemporary](properties/devenv-sourcetabletemporary-property.md) on all pages that use the table. This implementation will also use a physical table in the database.
 
-```
+```AL
 page 50100 MyPage
 {
     PageType = Card;

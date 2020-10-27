@@ -11,12 +11,12 @@ author: SusanneWindfeldPedersen
 ---
 
 # DrillDownPageID Property
+
 Sets the ID of the page to use as a drill-down.  
   
 ## Applies to  
   
 - Page Fields  
-  
 - Tables  
 
 <!--  //NAV
@@ -26,7 +26,7 @@ Sets the ID of the page to use as a drill-down.
 
 ## Syntax
 
-```
+```AL
 DrillDownPageID = 50100;
 ```
 

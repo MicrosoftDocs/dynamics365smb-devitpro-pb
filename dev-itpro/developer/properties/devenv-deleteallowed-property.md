@@ -23,7 +23,7 @@ Sets a value that specifies whether users can delete records while using the pag
 
 ## Syntax
 
-```
+```AL
 DeleteAllowed = false;
 ```
   

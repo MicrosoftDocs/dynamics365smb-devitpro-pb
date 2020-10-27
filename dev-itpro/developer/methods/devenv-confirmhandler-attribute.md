@@ -21,7 +21,7 @@ AL methods on test codeunits. A test method is a method that has the [Test Attri
 
 ## Syntax  
   
-```  
+```AL
 [ConfirmHandler]
 procedure ConfirmHandler(Question: Text[1024]; var Reply: Boolean);
 ```    

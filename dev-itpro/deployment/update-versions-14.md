@@ -1,6 +1,6 @@
 ---
 title: "Cumulative updates for the Spring 2019 version"
-description: "Learn about the cumulative updates for Dynamics 365 Business Central on-premises deployments."
+description: "Learn about the cumulative updates for Dynamics 365 Business Central Spring 2019 on-premises deployments."
 author: MartinNielander
 ms.custom: na
 ms.reviewer: edupont
@@ -33,9 +33,10 @@ The following table lists the cumulative updates that have been released for the
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[4576662](https://support.microsoft.com/help/4576662) |Cumulative Update 16 |September 2020|Application 14.17</br>Platform Build 14.17|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4563410](https://support.microsoft.com/help/4563410) |Cumulative Update 15 |August 2020|Application 14.16</br>Platform Build 14.16|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4563405](https://support.microsoft.com/help/4563405) |Cumulative Update 14 |July 2020|Application 14.15.43800</br>Platform Build 14.15.43793|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4583496](https://support.microsoft.com/help/4583496) |Cumulative Update 17 |October 2020|Application 14.18.44963</br>Platform Build 14.0.44962|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4576662](https://support.microsoft.com/help/4576662) |Cumulative Update 16 |September 2020|Application 14.17.44663</br>Platform Build 14.0.44656|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4563410](https://support.microsoft.com/help/4563410) |Cumulative Update 15 |August 2020|Application 14.16.44342</br>Platform Build 14.0.44327|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4563405](https://support.microsoft.com/help/4563405) |Cumulative Update 14 |July 2020|Application 14.15.43800</br>Platform Build 14.0.43793|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4564070](https://support.microsoft.com/help/4564070) |Cumulative Update 13 |June 2020|Application 14.14.43294</br>Platform Build 14.14.43286|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4549684](https://support.microsoft.com/help/4549684) |Cumulative Update 12 |May 2020|Application 42648</br>Platform Build 42627|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4549677](https://support.microsoft.com/help/4549677) |Cumulative Update 11 |April 2020|Application 41935</br>Platform Build 41862|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

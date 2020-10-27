@@ -24,7 +24,7 @@ The following example illustrates how to add two new fields, `"Add. -Currency De
 
 The first step is to create a [Table Extension object](devenv-table-ext-object.md) and add the two fields, `"Add.-Currency Debit Amount"` and `"Add.-Currency Credit Amount"`, to the **G/L Account Balance Buffer** source table. Then you create a [Page Extension object](devenv-page-ext-object.md) to display the fields in the **G/L Account Balance Lines** page. This is shown in the following code.
 
-```
+```AL
 tableextension 50001 GLAccBalanceBufferExt extends "G/L Acc. Balance Buffer"
 {
     fields
@@ -66,7 +66,7 @@ pageextension 50001 GLAccountBalanceLinesExt extends "G/L Account Balance Lines"
 
 The subscriber method `GLAccountBalanceLinesOnAfterCalcLine` computes the values of the `"Add.-Currency Credit Amount"` and `"Add.-Currency Debit Amount"` fields and updates the **G/L Acc. Balance Buffer** table. This method is called when the **OnAfterCalcLine** event in the **G/L Account Balance Lines** page is raised.
 
-```
+```AL
 codeunit 50001 GLAccountBalanceLinesExt
 {
     // Subscribe to OnAfterCalcLine event

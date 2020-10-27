@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # FieldClass Property
+
 Sets the class of the field.  
   
 ## Applies to  
@@ -27,7 +28,7 @@ Fields
 
 ## Syntax
 
-```
+```AL
 FieldClass = FlowFilter;
 ```  
 

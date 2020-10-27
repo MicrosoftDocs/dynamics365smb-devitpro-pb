@@ -36,7 +36,7 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
 
 4.  Decorate the event subscriber method with the [EventSubscriber attribute](methods/devenv-eventsubscriber-attribute.md).
 
-    ```  
+    ```AL
     [EventSubscriber(ObjectType::<Event Publisher Object Type>, <Event Publisher Object>, '<Published Event Name>', '<Published Event Element Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
     ```
 
@@ -66,7 +66,7 @@ This example creates the codeunit **50101 MySubscribers** to subscribe to an eve
 
 The following code creates a codeunit called **50101 MySubscribers** that includes an event subscriber method, called `CheckAddressLine`. The method includes code for handling the published event.
 
-```
+```AL
 codeunit 50101 MySubscribers
 {
     EventSubscriberInstance = StaticAutomatic;
@@ -87,7 +87,7 @@ codeunit 50101 MySubscribers
 ## Example 2
 This example achieves the same as example 1, except it subscribes to the page trigger event `OnBeforeValidateEvent` on the `Address` field instead. By using the page trigger, you avoid creating an event publisher and adding code to raise the event. The event is raised automatically by the system.
 
-```
+```AL
 codeunit 50101 MySubscribers
 {
     EventSubscriberInstance = StaticAutomatic;

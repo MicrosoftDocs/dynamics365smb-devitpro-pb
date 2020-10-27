@@ -34,7 +34,7 @@ The install codeunit becomes an integral part of the extension version. You can 
 ### Install codeunit syntax
 The following code illustrates the basic syntax and structure of an install codeunit:
 
-```
+```AL
 codeunit [ID] [NAME]
 {
     Subtype=Install;
@@ -60,7 +60,7 @@ Each extension version has a set of properties that contain information about th
 ### Install codeunit example
 This example uses the ` OnInstallAppPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade.
 
-```
+```AL
 codeunit 50100 MyInstallCodeunit
 {
     Subtype=Install;

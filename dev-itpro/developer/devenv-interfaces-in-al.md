@@ -34,7 +34,7 @@ The following example defines an interface `IAddressProvider`, which has one met
 
 The `MyAddressPage` is a simple page with an action that captures the choice of address and calls, based on that choice, an implementation of the `IAddressProvider` interface.
 
-```
+```AL
 interface IAddressProvider
 {
     procedure GetAddress(): Text;

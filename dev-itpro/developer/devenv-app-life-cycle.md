@@ -45,7 +45,7 @@ We still do not force the upgrade of this app to this latest version on all of t
 
 ## Scenario 4: Critical bug in your app
 
-Critical bug within the app is found in tenants. These tenants cannot do their day to day work due to this bug. This fits into our hotfix scenario as it is critical. A support ticket is related to this case. The partner immediately provides a fixed app for validation. The validation team makes this top priority and does validation ASAP. Fixed app passes validation and gets checked into the service. All tenants with the app are refreshed automatically by the Microsoft team to this fixed version.
+If a bug which leads to core functionality being broken or data loss/corruption/misrepresentation is found in the application, and the issue prevents customers from performing time-critical tasks, the validation and deployment of the application can be prioritized. The partner must create a support ticket for this case and they must immediately provide a fixed app for validation through Partner Center. The validation team makes this a top priority and does validation as soon as possible. If the fixed application passes validation, it will be checked into the service and will become available for environment administrators to install.
 
 ## Scenario 5: Microsoft feature breaks your app
 

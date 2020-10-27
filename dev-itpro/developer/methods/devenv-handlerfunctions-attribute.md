@@ -21,7 +21,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
 
 ## Syntax
 
-```
+```AL
 [HandlerFunctions('HandlerName1, [HandlerName2, ...]]
 ```
 
@@ -52,7 +52,7 @@ The following is some important information about handler methods:
 
 ## Example
 
-```
+```AL
 [Test]
 [HandlerFunctions('SendNotificationHandler')]
 procedure MyTestFunction();

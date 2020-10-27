@@ -1,5 +1,6 @@
 ---
 title: "OnAfterValidate Trigger"
+description: "OnAfterValidate trigger in AL for Business Central."
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen
@@ -12,18 +13,22 @@ author: blrobl
 ---
 
 # OnAfterValidate Trigger
+
 Runs after the user input is validated. 
 
 ## Applies to  
+
 - Fields  
   
 ## Remarks  
- This trigger is after the default validation behavior is executed on a record field entry, which are default checks such as data type validation. An error message displays if an error occurs in the trigger code. In case of an error, the user entry is not written to the database.  
+
+This trigger is after the default validation behavior is executed on a record field entry, which are default checks such as data type validation. An error message displays if an error occurs in the trigger code. In case of an error, the user entry is not written to the database.  
 
 It applies to an already existing table field when it is being modified in a table extension. 
 
 ## Example
-```
+
+```AL
 tableextension 50111 "CustomerExt" extends Customer
 {
     fields
@@ -40,8 +45,9 @@ tableextension 50111 "CustomerExt" extends Customer
 }    
 ```
 
-## See Also  
- [Triggers](devenv-triggers.md)  
- [Table and Field Triggers](devenv-table-and-field-triggers.md)  
- [OnBeforeValidate Trigger](devenv-onbeforevalidate-fields-trigger.md)  
- [Table Properties](../properties/devenv-table-properties.md)   
+## See Also
+
+[Triggers](devenv-triggers.md)  
+[Table and Field Triggers](devenv-table-and-field-triggers.md)  
+[OnBeforeValidate Trigger](devenv-onbeforevalidate-fields-trigger.md)  
+[Table Properties](../properties/devenv-table-properties.md)   

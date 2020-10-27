@@ -3,7 +3,7 @@ title: "Using Access Modifiers in AL"
 description: "Describes how the AL access modifiers can be used in code."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Using Access Modifiers in AL
 
-Access modifiers are used to set accessibility of tables, table fields, codeunits, and queries, which controls whether the object can be used from other code in your module or other modules. Access modifiers in AL are designed to create solid APIs, by limiting the symbols that dependant modules can take a reference on. Limiting the API surface can hide implementation details and allow for later refactoring of code with breaking external code.
+Access modifiers are used to set accessibility of tables, table fields, codeunits, and queries, which controls whether the object can be used from other code in your module or other modules. Access modifiers in AL are designed to create solid APIs, by limiting the symbols that dependant modules can take a reference on. Limiting the API surface can hide implementation details and allow for later refactoring of code without breaking external code.
 
 You set the object accessibility by using the [Access Property](properties/devenv-access-property.md). If the `Access` property is not specified; default is `Public`. 
 

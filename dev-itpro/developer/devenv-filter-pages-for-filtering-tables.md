@@ -19,7 +19,7 @@ In AL code, you can use the FilterPageBuilder data type to create a filter page 
   
 To create a filter page, you use AL code and the methods that are available for the [FilterPageBuilder Data Type](methods-auto/filterpagebuilder/filterpagebuilder-data-type.md). The following code example shows the code that creates the filter page in the figure.  
   
-```  
+```AL
 var
     varItem: Record Item;
     varFilterPageBuilder: FilterPageBuilder;

@@ -26,6 +26,22 @@ Use the data to gather statistics about system usage and also troubleshoot perfo
 
 Occurs when a page has been opened in the client.  
 
+### General dimensions
+
+The pageViews table is a built-in table in Application Insights. Here are some of the fields most used in analysis of the signal:
+
+|Field|Description or value|
+|---------|-----|
+|client_Browser|Browser running on the client device.|
+|client_OS|Operating system of the client device.|
+|client_Type|Type of the client device.|
+|duration| Number of milliseconds it took the application to handle the page view.|
+|url|URL of the page view.|
+|name|Name of the page opened in the client |
+|session_id|An identifier for the session. Can be used to create a timeline of page views happening in the session|
+
+All fields are documented here: [Application Insights PageViews Schema](/azure/azure-monitor/reference/tables/pageviews)
+
 ### Custom dimensions
 
 |Dimension|Description or value|

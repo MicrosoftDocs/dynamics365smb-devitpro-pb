@@ -916,8 +916,8 @@ Returns information about the scheduled update for that environment.
   "didTenantSelectDate": boolean, // Indicates if the tenant has selected the current date for the update.
   "earliestSelectableUpgradeDate": datetime, // Specifies the earliest date that can be chosen for the update.
   "latestSelectableUpgradeDate": datetime, // Specifies the latest date that can be chosen for the update.
-  "upgadeDate": datetime, // The currently selected scheduled date of the update.
-  "updateStatus": string, // The current status of the environment's updatee. (enum | "Scheduled" or "Running")
+  "upgradeDate": datetime, // The currently selected scheduled date of the update.
+  "updateStatus": string, // The current status of the environment's update. (enum | "Scheduled" or "Running")
   "ignoreUpgradeWindow": boolean, // Indicates if the environment's update window will be ignored
   "isActive": boolean, // Indicates if the update is activated and is scheduled to occur.
 }

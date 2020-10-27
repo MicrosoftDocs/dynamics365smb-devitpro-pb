@@ -12,22 +12,24 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ModifyAllowed Property
+
 Sets the value to determine whether users can modify records while using this page.  
   
 ## Applies to  
   
--   Pages  
+- Pages  
   
-## Property Value  
- **True** if you want to allow the users to modify records; otherwise, **false**. The default is **true**. 
+## Property Value
+
+**True** if you want to allow the users to modify records; otherwise, **false**. The default is **true**. 
 
 ## Syntax
-```
+
+```AL
 ModifyAllowed = false;
 ``` 
   
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

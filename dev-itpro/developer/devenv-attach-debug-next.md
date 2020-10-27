@@ -29,7 +29,7 @@ You activate the attach functionality by creating a new configuration in the `la
 
 In the attach configuration, the `breakOnNext` setting specifies the next client to break on when the debugging session starts and allows only one option. The available options are: `WebServiceClient`, `WebClient`, and `Background`. The example below illustrates a configuration for a local server.
 
-```
+```json
 ...
 {
             "name": "My attach to local server",

@@ -23,7 +23,8 @@ Sets the text used as a heading for a request page tab. If this property is set,
 - Table elements on XMLports
   
 ## Example
-```
+
+```AL
 RequestFilterHeadingML = DAN='Kundeliste'; // Customer list
 ```
 
@@ -39,6 +40,7 @@ You can enter values for the **RequestFilterHeadingML** property in the followin
   
 - If you enter a **RequestFilterHeadingML**, this value will be inserted in **RequestFilterHeadingML** as the value for the language that is currently selected. If the language is set to Danish when a value is entered in **RequestFilterHeadingML**, **RequestFilterHeadingML** will be updated with a DAN=<*value*> string. You have to use the abbreviated name (DAN for Danish, for example) of the languages.  
   
-## See Also  
+## See Also
+
 [Request Pages](../devenv-request-pages.md)  
 [Multilanguage Development](../devenv-multilanguage-development.md)

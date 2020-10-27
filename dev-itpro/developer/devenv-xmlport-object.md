@@ -22,7 +22,7 @@ You can design XMLports to include a request page, which is a dialog box that en
 ## XMLport example
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 
 
-```
+```AL
 pageextension 50111 PermissionSetExporter extends "Permission Sets"
 {
     actions

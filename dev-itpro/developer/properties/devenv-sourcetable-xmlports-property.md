@@ -12,19 +12,22 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
- 
 
 # SourceTable Property (XMLports)
+
 Sets the table to which you want to map XML data or the table that you want to export data from.  
   
 ## Applies to  
+
 - Table elements in XMLports
 
 ## Syntax
-```
+
+```AL
 tableelement(NodeName; SourceTable){}
 ```
   
-## See Also  
- [Properties](devenv-properties.md)   
- [SourceField Property](devenv-sourcefield-property.md)
+## See Also
+
+[Properties](devenv-properties.md)   
+[SourceField Property](devenv-sourcefield-property.md)

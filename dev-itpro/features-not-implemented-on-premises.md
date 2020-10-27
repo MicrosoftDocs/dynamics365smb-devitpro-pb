@@ -43,8 +43,8 @@ The following features are not intended for use in on-premises deployments. Ther
 |---------|---------|
 |Inviting the external accountant |Integration with [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
 |Default Power BI reports |Automatic deployment and configuration of Power BI reports is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
-|Bulk Invoicing from Microsoft Bookings |Integration with the Bookings app in Office Business Premium is not supported.  |
-|Create workflow from Flow |Power Automate does not integrate with on-premises workflow functionality. You cannot create new workflows based on existing Power Automate templates in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)]. |
+|Bulk Invoicing from Microsoft Bookings |Integration with the Bookings app that is available in certain Microsoft 365 subscriptions is not supported.  |
+|Create workflow from Power Automate |Power Automate does not integrate with on-premises workflow functionality. You cannot create new workflows based on existing Power Automate templates in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)]. |
 |Sandbox environments  |The sandbox environment that you can use to develop extensions against for the new developer experience cannot connect to an on-premises deployment. For more information, see [Get started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md). |
 |In-product search |In online deployments of [!INCLUDE[prodshort](includes/prodshort.md)], Tell Me, the in-product search, also searches in content on the docs.microsoft.com site. For on-premises deployments, this is not supported.  |
 |Late Payment Prediction|The Late Payment Prediction functionality is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |

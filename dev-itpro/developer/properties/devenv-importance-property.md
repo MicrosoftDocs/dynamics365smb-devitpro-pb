@@ -14,8 +14,9 @@ author: jswymer
 
 Specifies how a field appears on the FastTab of a page when the FastTab is expanded and collapsed.
   
-## Applies to  
- Page Fields  
+## Applies to
+
+- Page Fields  
 
 ## Property Values  
   
@@ -26,7 +27,8 @@ Specifies how a field appears on the FastTab of a page when the FastTab is expan
 |**Additional**|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|  
 
 ## Syntax
-```
+
+```AL
 Importance = Additional;
 ```
   
@@ -38,4 +40,4 @@ As a developer, the **Importance** property can also be set also by using Design
 
 ## See Also
 
- [Properties](devenv-properties.md)
+[Properties](devenv-properties.md)

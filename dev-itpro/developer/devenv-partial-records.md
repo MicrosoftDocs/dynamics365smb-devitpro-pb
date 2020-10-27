@@ -41,7 +41,7 @@ To accommodate partial record loading, the following methods are available on bo
 
 The following code shows a way to load only a single field from the **Item** table for computing the arithmetic mean.
 
-```
+```AL
 procedure ComputeArithmeticMean(): Decimal;
 var
     Item: Record Item;
@@ -85,7 +85,7 @@ For reports, the fields that are selected for loading are fields setup as column
 
     The following example code snippet illustrates how to use the AddLoadFields method on a report's OnPreDataItem trigger to add a field for loading:
     
-    ```
+    ```AL
     trigger OnPreDataItem()
     begin
         CurrencyDataItem.AddLoadFields(CurrencyDataItem."ISO Numeric Code");
@@ -129,7 +129,7 @@ There are a few options to remedy this situation:
 
 ## See Also
 
-[FAQ for Partial Records](devenv-partial-records.md)  
+[FAQ for Partial Records](devenv-partial-records-faq.md)  
 [Performance Articles For Developers](../performance/performance-developer.md)  
 [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  

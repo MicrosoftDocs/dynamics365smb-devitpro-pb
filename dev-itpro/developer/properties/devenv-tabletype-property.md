@@ -12,6 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # TableType Property
+
 Specifies the table type.  
 
 ## Applies to  
@@ -34,12 +35,14 @@ Specifies the table type.
 
 
 ## Syntax
-```
+
+```AL
 TableType = CDS;
 ```
 
-## Remarks  
- Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. <!-- For more information, see [External Tables](External-Tables.md).  -->
+## Remarks
+
+Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. <!-- For more information, see [External Tables](External-Tables.md).  -->
 
 > [!IMPORTANT]  
 >  We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
@@ -50,10 +53,10 @@ TableType = CDS;
 
 Marking a table as **Temporary** is the same as:
 
--  Setting all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
--  Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
+- Setting all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
+- Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
 
-Temporary tables aren't synchronized with the SQL database, so they don't follow the same rules about making destructive changes.
+Temporary tables are not synchronized with the SQL database, so they do not follow the same rules about making destructive changes.
 
 You can change an existing table from **Normal** to **Temporary**. But the table will be deleted from the database when you synchronize the extension. If the table contains data, you'll have to use the ForceSync mode.
 
@@ -66,5 +69,3 @@ For more information, see [Temporary Tables](../devenv-temporary-tables.md).
 [Temporary Property](devenv-temporary-property.md)  
 <!--  [External Tables](External-Tables.md)   
  [Table Designer](uiref/-$-S_2102-Table-Designer-$-.md)  -->
-
-

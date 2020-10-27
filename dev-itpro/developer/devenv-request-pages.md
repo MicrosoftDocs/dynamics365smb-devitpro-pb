@@ -43,7 +43,7 @@ The fields that you define as `RequestFilterFields` are shown on the request pag
 
 Defining the `RequestFilterFields` property in the `dataitem()` part of the report code is done as illustrated in the following code example:  
 
-```
+```AL
 report 50103 "Customer List"
 {
     CaptionML = ENU = 'Customer List';
@@ -63,7 +63,7 @@ For more information about the report object, see [Report Object](devenv-report-
 
 Defining the `RequestFilterFields` property in the `tableelement()` part of an XMLport is done in a similar way:  
 
-```
+```AL
 XMLport 50104 "Export Customer List"
 {
     CaptionML = ENU = 'Export customer List';
@@ -100,7 +100,7 @@ On reports, in addition to defining the filter options by setting the `RequestFi
 > [!NOTE]
 > With request pages that have `SaveValues = true`, users can preview the report multiple times in the client and the request page remains open. If `SaveValues = false` or omitted, a **Preview & Close** action appears on the request page. In this case, the request page closes once the report has been previewed. 
 
-```
+```AL
 ...
 requestpage
     {

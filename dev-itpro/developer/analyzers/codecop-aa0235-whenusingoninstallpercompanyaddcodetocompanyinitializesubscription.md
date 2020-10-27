@@ -3,7 +3,7 @@ title: "When using 'OnInstallPerCompany' you should also add 'Company - Initiali
 description: Explains CodeCop Rule AA0235.
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' 
 'OnInstallAppPerCompany' is only run on companies that exist when installing the extension. Many extensions were missing a 'OnCompanyInitialize' subscription, so companies that were created after the extension installation were missing setup that the extension should do. For example, insertion of records in some tables was done only for existing companies and not for new ones.
 
 ## Bad code example
-```
+```AL
 codeunit 1160 "AP Install"
 {
    Subtype = Install;
@@ -40,7 +40,7 @@ codeunit 1160 "AP Install"
 ```
 
 ## Good code example
-```
+```AL
 codeunit 1160 "AP Install"
 {
    Subtype = Install;
@@ -51,7 +51,7 @@ codeunit 1160 "AP Install"
    ...
    end;
 
-   [EventSubscriber(ObjectType::Codeunit, Codeunit::""Company - Initialize"", 'OnCompanyInitialize', '', false, false)]
+   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Company - Initialize", 'OnCompanyInitialize', '', false, false)]
    local procedure CompanyInitialize()
    begin
    ...

@@ -39,7 +39,7 @@ For procedures which already exist in the version of the extension used as basel
 #### Example - Adding an affix to an existing procedure
 
 For instance, if the baseline of the extension contains a codeunit without affix:
-```
+```AL
 tableextension 50100 Foo_CustomerExtension extends Customer
 {
     procedure MyProcedure()
@@ -50,7 +50,7 @@ tableextension 50100 Foo_CustomerExtension extends Customer
 ```
 
 The extension should be modified to:
-```
+```AL
 tableextension 50100 Foo_CustomerExtension extends Customer
 {
     [Obsolete('Use Foo_MyProcedure instead')]
@@ -72,7 +72,7 @@ tableextension 50100 Foo_CustomerExtension extends Customer
 The following example involves three extensions; Foo, Bar, and Foobar.
 
 Foo defines a table named that does not have any procedure:
-```
+```AL
 table 10 Foo_Table
 {
     fields
@@ -83,7 +83,7 @@ table 10 Foo_Table
 ```
 
 Bar depends on Foo and defines a table extension that introduces a procedure named MyProcedure:
-```
+```AL
 tableextension 50100 Bar_TableExtension extends Foo_Table
 {
     procedure MyProcedure()
@@ -94,7 +94,7 @@ tableextension 50100 Bar_TableExtension extends Foo_Table
 ```
 
 Foobar depends on both Foo and Bar and defines a procedure referencing MyProcedure from Bar:
-```
+```AL
 tableextension 50120 Foobar_TableExtension extends Foo_Table
 {
     procedure Foobar_SomeProcedure()
@@ -106,7 +106,7 @@ tableextension 50120 Foobar_TableExtension extends Foo_Table
 ```
 
 In a later version, the base extension Foo introduces a new method named Foo on the table:
-```
+```AL
 table 10 Foo_Table
 {
     fields

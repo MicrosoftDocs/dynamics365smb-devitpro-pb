@@ -12,17 +12,16 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Culture Property
 
 Specifies the culture of the .NET assembly.
 
 ## Syntax
-```
+```AL
 Culture = 'neutral';
 ```
 
-## See Also  
+## See Also
+
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

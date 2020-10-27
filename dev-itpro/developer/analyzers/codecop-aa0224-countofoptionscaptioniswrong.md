@@ -29,7 +29,7 @@ The number of option captions specified in the **OptionCaption** property must m
 
 The following code sample will raise a warning because the number of option values available for the page field `"VAT Posting"` is two, while only one option caption is defined in the **OptionCaption** property. 
 
-```
+```AL
 page 50100 MyPage
 {
     layout

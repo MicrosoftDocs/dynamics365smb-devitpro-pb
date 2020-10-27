@@ -28,7 +28,7 @@ Throughout the print process, the system compiles the report into a PDF file and
 
 You subscribe to the OnAfterSetupPrinters event to set up different printers that users can use on reports, which they select from the **Printer Selections** page. The OnAfterSetupPrinters event is a global integration event that is published from codeunit **44 Report Managements**. It has the following declaration:  
 
-```
+```AL
 [IntegrationEvent(false, false)]
 local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
 ```
@@ -47,7 +47,7 @@ You subscribe to the OnAfterDocumentPrintReady event to specify what happens whe
 
 The OnAfterDocumentPrintReady event is also a global integration event that is published from codeunit **44 Report Managements**. It has the following declaration:
 
-```
+```AL
 IntegrationEvent(false, false)]
 local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
 ```

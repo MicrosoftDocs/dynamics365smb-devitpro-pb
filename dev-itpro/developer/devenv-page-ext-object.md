@@ -61,7 +61,7 @@ You can use the following keywords in the `layout` section to place and move fie
 
 To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, the `actions` section creates a new group in the ribbon and places it last in the `Creation` group.  
 
-```
+```AL
 pageextension 70000020 CustomerCardExtension extends "Customer Card"
 {
     layout
@@ -127,7 +127,7 @@ tableextension 70000020 CustomerTableExtension extends Customer
 In the following example, we use a table extension to extend the Customer table with a new field named `ShoeSize` of the datatype Integer. Then we create a page extension object that extends the Customer Card page object by adding a field control `ShoeSize` to the `General` group on the page. The field control is added as the last control in the group using the `addlast` method. The example also illustrates how to add a display-only control to the page.
 In the actions area, you can see what the syntax looks like for actions that execute triggers and actions that run objects.
 
-```
+```AL
 tableextension 50115 RetailWinterSportsStore extends Customer
 {
     fields
@@ -223,7 +223,7 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
 
 You can reference Report and XMLPort objects and use these objects in the **RunObject** property, as well as, declare variables of the types **Report** and **XMLPort** and call AL methods on them. This page extension object extends the Customer List page object by adding two actions; the first action calls the **Customer - List** report, the second action calls the **Export Contact** XMLPort.
 
-```
+```AL
 pageextension 50114 AddCustomerReport extends "Customer List"
 {
     actions

@@ -33,7 +33,7 @@ AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprt
  **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
 
 ## Syntax
-```
+```AL
 AutoCalcField = false;
 ```
 

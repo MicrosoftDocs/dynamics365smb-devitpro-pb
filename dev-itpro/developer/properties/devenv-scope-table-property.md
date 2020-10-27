@@ -28,7 +28,7 @@ When a table is marked with `Scope = OnPrem` it is not available to a cloud exte
 
 ## Examples
 
-```
+```AL
 table 50105 "Retention Period"
 {
     ...
