@@ -20,7 +20,7 @@ However, minor updates are regularly made available for each major release, like
 
 ## Version 14 compatibility
 
-The following table lists the Business Central 14 versions and the minimum version 15 or version 16 that is compatible for upgrade.
+The following table lists the Business Central 14 versions and the minimum 15, 16, and 17 version that's compatible for upgrade.
 
 |Version 14|Version 15|Version 16|Version 17|
 |----------|----------|----------|----------|
@@ -42,16 +42,13 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.17 (cumulative update 16)](https://support.microsoft.com/help/4576662)|[15.11](https://support.microsoft.com/help/4583500) |[16.6](https://support.microsoft.com/help/4583501) |17.0|
 |[14.18 (cumulative update 17)](https://support.microsoft.com/help/4583496)|15.12|16.7|17.1|
 
-For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later).
+For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later). For the latest Business Central 14 version, the compatible Business Central 15 version might not yet be available. If you are currently operating on the latest Business Central 14 version, you will have to wait until the compatible Business Central 15 version is available before you upgrade.
 
 To see the available updates for Business Central 2019 Release Wave 2, see [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
-  
-> [!IMPORTANT]
-> For the latest Business Central 14 version, the compatible Business Central 15 version might not yet be available. If you are currently operating on the latest Business Central 14 version, you will have to wait until the compatible Business Central 15 version is available before you upgrade.
 
 ## Version 15 compatibility
 
-The following table lists the Business Central 15 versions and the minimum Business Central 16 version that is compatible for upgrade.
+The following table lists the Business Central 15 versions and the minimum 16 and 17 version that's compatible for upgrade.
 
 |Version 15|Version 16|Version 17|
 |----------|----------|----------|
@@ -68,7 +65,7 @@ To see the available updates for Business Central 2020 Release Wave 1, see [Rele
 
 ## Version 16 compatibility
 
-The following table lists the Business Central 15 versions and the minimum Business Central 16 version that is compatible for upgrade.
+The following table lists the Business Central 16 versions and the minimum 17 version that's compatible for upgrade.
 
 |Version 16|Version 17|
 |----------|----------|
