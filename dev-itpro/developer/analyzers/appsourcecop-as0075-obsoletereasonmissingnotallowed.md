@@ -2,7 +2,7 @@
 title: "Obsolete Reason must be set."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 27/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,6 @@ When an object, element, variable or procedure is marked as obsolete, you should
 When the property [Obsolete State](../properties/devenv-obsoletestate-property.md) is used to mark an object as `Obsolete Pending` or `Obsolete Removed`, you need to also specify the property [Obsolete Reason](../properties/devenv-obsoletereason-property.md).
 
 When the attribute [Obsolete](../methods/devenv-obsolete-attribute.md) is used, you need to specify the obsolete reason attribute parameter.
-
 
 ## Code examples triggering the rule
 

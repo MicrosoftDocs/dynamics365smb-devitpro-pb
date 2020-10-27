@@ -2,7 +2,7 @@
 title: "Obsolete Tag must be set."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 27/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,34 @@ Obsolete Tag must be set.
 When an object, element, variable or procedure is marked as obsolete, you should also specify an obsolete tag. The obsolete tag can be used to provide information, such as the timeline of the deprecation, to developers that are referencing it. The obsolete tag appears in the message of the diagnostics AL0432 and AL0433 reported by the AL compiler when referencing obsolete elements.
 
 The format of the Obsolete Tag is not validated by the AL compiler. However, you can specify an expected format to be validated by the AppSourceCop. For more information, see [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
+
+## Setting up AppSourceCop to validate the Obsolete Tag
+
+The rule AS0073 is not enabled by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to enable it.
+
+For example, the following ruleset turns the diagnostic for rule AS0073 into an error.
+
+```json
+{
+    "name": "My custom ruleset",
+    "rules": [
+        {
+            "id": "AS0073",
+            "action": "Error",
+            "justification": "Validating that obsolete tags are specified is important"
+        }
+    ]
+}
+```
+
+```json
+{
+    "al.ruleSetPath": "custom.ruleset.json"
+}
+```
+
+> [!NOTE]  
+> In order to fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
 
 ## How to fix this diagnostic?
 

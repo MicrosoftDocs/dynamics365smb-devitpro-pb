@@ -2,7 +2,7 @@
 title: "Obsolete Tag format."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 27/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,26 +21,91 @@ Obsolete Tag must have a specific format.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-### Setting up AppSourceCop to validate the Obsolete Tag
+The property ObsoleteTag [property]() and [attribute parameter]() values are not validated by the AL compiler. However it is possible to setup the AppSourceCop to verify it using a Regex expression.
 
-TODO(qutreson)
+## Setting up AppSourceCop to validate the Obsolete Tag
 
-In order to set up AppSourceCop to detect breaking changes, the version of the extension used as a baseline must be specified in the AppSourceCop.json file using the `version` property. The version specified is the exact version against which the breaking changes are validated. It is also possible to specify the `name` and the `publisher` of the extension in the AppSourceCop.json file.
+### Enabling the rule using a ruleset
 
-For example:
+The rule AS0076 is not enabled by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to enable it.
+
+For example, the following ruleset turns the diagnostic for rule AS0076 into an error.
+
 ```json
 {
-    "name": "ExtensionName",
-    "publisher": "ExtensionPublisher",
-    "version": "1.1.0.0"
+    "name": "My custom ruleset",
+    "rules": [
+        {
+            "id": "AS0076",
+            "action": "Error",
+            "justification": "Validating that obsolete tags are formated properly is important"
+        }
+    ]
 }
 ```
 
-The previous version of the extension must be added to the package cache where the symbols for your extension's dependencies are located. The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. 
+```json
+{
+    "al.ruleSetPath": "custom.ruleset.json"
+}
+```
+
+> [!NOTE]  
+> In order to fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
+
+### Setting up the AppSourceCop.json
+
+By default, the rule will validate that the specified obsolete tags are following the pattern `(\\d+)\\.(\\d+)`.
+
+However, it is possible to specify a custom pattern as a regular expression using the `obsoleteTagPattern` property in the AppSourceCop.json.
+The property `obsoleteTagPatternDescription` can be used in order to provide a human readable version of the expected pattern. 
+The pattern description is used when reporting diagnostics.
+
+```json
+{
+    "obsoleteTagPattern": "^[A-Z]{3}$",
+    "obsoleteTagPatternDescription": "Three upper case letters"
+}
+```
 
 ## How to fix this diagnostic?
 
-## TODO(qutreson) - mention AS0072 and AS0076.
+In order to fix this diagnostic, make sure that your obsolete tags are matching the expected `obsoleteTagPattern`.
+
+For instance, when using the default obsolete tag pattern, two diagnostics will be reported by rule AS0076 because the obsolete tag property and the obsolete tag attribute parameter values do not respect the format Major.Minor.
+
+```AL
+codeunit 50100 MyCodeunit
+{
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Use codeunit X instead.';
+    ObsoleteTag = 'Next major';
+
+    [Obsolete('Use function Y instead', 'Next spring')]
+    procedure MyProcedure()
+    begin
+    end;
+}
+```
+
+The code should be fixed a follows:
+
+```AL
+codeunit 50100 MyCodeunit
+{
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Use codeunit X instead.';
+    ObsoleteTag = '17.0';
+
+    [Obsolete('Use function Y instead', '17.0')]
+    procedure MyProcedure()
+    begin
+    end;
+}
+```
+
+> [!NOTE]  
+> The version to specify when using the default obsolete tag pattern is validated by the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md) and [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md).
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
