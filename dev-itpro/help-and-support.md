@@ -52,13 +52,13 @@ The reference documentation of the AL language publishes under the [AL Programmi
 
 ### Product versions and Help versions
 
-In general, the [!INCLUDE [prodshort](developer/includes/prodshort.md)] content on the Docs.microsoft.com site reflects the latest version of [!INCLUDE [prodshort](developer/includes/prodshort.md)] online with limited support for earlier versions.  
+In general, the [!INCLUDE [prodshort](developer/includes/prodshort.md)] content on the docs.microsoft.com site reflects the latest version of [!INCLUDE [prodshort](developer/includes/prodshort.md)] online with limited support for earlier versions.  
 
-If you support [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality docs](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website. For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
+If you support [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality documentation](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website. For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
 
 ### Customize and extend the user assistance
 
-When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)] online, or before they buy [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, they have access to tooltips that can help them get unblocked, and context-sensitive links to learn more according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize or extend [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
+If you customize or extend [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 ## Support
 
