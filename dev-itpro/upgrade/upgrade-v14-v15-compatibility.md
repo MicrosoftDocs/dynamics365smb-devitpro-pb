@@ -76,8 +76,6 @@ The following table lists the Business Central 16 versions and the minimum 17 ve
 
 To see the available updates for Business Central 2020 Release Wave 2, see [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4549687).
 
-
-
 ## See Also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
