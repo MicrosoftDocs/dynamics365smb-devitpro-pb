@@ -58,7 +58,7 @@ ObsoleteTag = 'This field is being deprecated with the newest build of the produ
 
 ## Remarks
 
-Use this property to add valuable information to developers about about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. For more information, see [Obsolete Attribute](../methods/devenv-obsolete-attribute.md).
+Use this property to add valuable information to developers about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. For more information, see [Obsolete Attribute](../methods/devenv-obsolete-attribute.md).
 
 ## See Also  
 
