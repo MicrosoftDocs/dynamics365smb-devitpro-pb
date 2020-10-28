@@ -32,7 +32,7 @@ Internal administrators can also [create sandbox environments](environment-types
 Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. As the partner, you must have specified support contact details in the **Help and Support** page. For more information, see [Configuring the support experience](../technical-support.md#configuring-the-support-experience).  
 
 > [!IMPORTANT]
-> You must have set up users in your own tenant in Partner Center as either *Admin agent* or *Helpdesk agent*, and they must have *delegated administration* privileges in your customer's [!INCLUDE [prodshort](developer/includes/prodshort.md)] to support the customer. For more information, see [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md).
+> You must have set up users in your own tenant in Partner Center as either *Admin agent* or *Helpdesk agent*, and they must have *delegated administration* privileges in your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to support the customer. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).
 
 The delegated administrator can access the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, and they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to [analyse telemetry](telemetry-overview.md), [create a sandbox environment](environment-types.md#sandbox-environments) for debugging, or an extra production environment for step-by-step reproduction, for example.  
 
@@ -184,7 +184,7 @@ Internal and delegated administrators can report this outage to Microsoft by usi
 
 ### To report an outage
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
+1. On the **Environments** tab of the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
 2. In the action ribbon, choose **Support**, and then choose **Report Production Outage**.
 3. In the **Report Production Outage** pane, choose the outage type:
 

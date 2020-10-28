@@ -16,7 +16,7 @@ ms.author: edupont
 
 As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you must set up your employees to work in Partner Center, and you must assign employees to support your customers. When you request a reseller relationship with a customer, you can choose to include *delegated administration* privileges for Azure Active Directory (Azure AD) and Office 365 in the request email that you send to the customer.  
 
-You must already have set up users in your own tenant in Partner Center so that the **Assists your customers as** field specifies the relevant role for this user to be able to login in to your customers' [!INCLUDE [prodshort](prodshort.md)] environments as either *Admin agent* or *Helpdesk agent*. These roles are used when the customer accepts the relationship, so you can assign the right people to the customer's Azure AD tenant.  
+You must already have set up users in your own tenant in Partner Center so that the **Assists your customers as** field specifies the relevant role for this user to be able to login in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environments as either *Admin agent* or *Helpdesk agent*. These roles are used when the customer accepts the relationship, so you can assign the right people to the customer's Azure AD tenant.  
 
 When a customer grants the delegated administration privilege to a partner:
 
