@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/26/2020
+ms.date: 10/28/2020
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -69,8 +69,6 @@ For more information, see [Technical Support](technical-support.md).
 ## Training
 
 You and your customers can find free eLearning content on the Microsoft Learn site. Find the related learning paths at [aka.ms/bclearn](https://aka.ms/bclearn).  
-
-
 
 ## Resources
 

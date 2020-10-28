@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 10/28/2020
 ---
 # Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 
@@ -53,7 +53,9 @@ For more information, see [Configuring [!INCLUDE[webserver](developer/includes/w
 
 ## Troubleshooting and support
 
-The [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] is your primary tool to support your customers. However, you can also log in to the customer's [!INCLUDE [prodshort](developer/includes/prodshort.md)] as the delegated admin for troubleshooting. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+The [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] is your primary tool to support your customers. However, you can also log in to the customer's [!INCLUDE [prodshort](developer/includes/prodshort.md)] as the delegated admin for troubleshooting.  
+
+For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
 
 ### Summary of where to file bugs and issues
 

@@ -144,7 +144,7 @@ Both internal and delegated administrators can access [!INCLUDE [prodadmincenter
 In the Power Platform Admin Center, both internal and delegated administrators can explore different solutions based on the keywords that they specify.  
 
 > [!NOTE]
-> The internal administrator cannot contact Microsoft directly. If you suspect that something is wrong with your [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must contact your partner for next steps.
+> The internal administrator cannot contact Microsoft directly. If you are an internal admin and suspect that something is wrong with your [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must contact your partner for next steps.
 
 ### <a name="submitsupportrequest"></a>Submitting support requests on behalf of your customer
 
@@ -153,7 +153,7 @@ As the delegated administrator, if you are logged into the [!INCLUDE [prodadminc
 > [!TIP]
 > Alternatively, you can use customer-specific URLs such as `https://admin.powerplatform.microsoft.com/account/login/[customer tenant ID]`.
 
-#### To start the process of submitting a new support request
+#### To start the process of submitting a new support request from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
 2. In the **Support** menu, choose **New Support Request**.
@@ -169,7 +169,11 @@ You can find most of the necessary information in the [!INCLUDE [prodadmincenter
 
 Microsoft Support will keep you updated on the status of your support request. You can also see the status in the Power Platform Admin Center. For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).  
 
-<!--From the Power Platform Admin Center, you can access Partner Center.--> You can also go straight to the Partner Center, but you might need information from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is why we recommend this route. For more information, see [Report problems on behalf of a customer](/partner-center/report-problems-on-behalf-of-a-customer) in the Partner Center content.
+#### To start the process of submitting a new support request from the Partner Center
+
+You can also start the process from the Partner Center, where you can choose the customer you want to open a case on, and then follow the support request work flow. This will redirect the delegated administrator to the Power Platform admin center in the context of the customer's tenant.  
+
+However, you might need information from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is why we recommend that route. For more information, see [Report problems on behalf of a customer](/partner-center/report-problems-on-behalf-of-a-customer) in the Partner Center content.
 
 <!-- TODO: How to manage your customers' support issues -->
 
