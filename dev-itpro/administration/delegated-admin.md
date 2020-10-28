@@ -1,6 +1,6 @@
 ---
 title: Delegated administrator access to Business Central Online
-description: Learn about how you as the internal administrator or as a reselling partner can manage online tenants of Dynamics 365 Business Central.  
+description: Learn about how you as the reselling partner can help customers manage Dynamics 365 Business Central online and offer technical support, provided that you have given your users the Admin agent or Helpdesk agent roles.  
 author: edupont04
 
 ms.service: dynamics365-business-central
