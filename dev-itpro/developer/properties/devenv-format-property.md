@@ -49,7 +49,7 @@ You can use the `Format` property to create your own formats. To create a format
   
 The following table shows the syntax.  
   
-|||  
+|Syntax|Values|  
 |-|-|  
 |FormatProperty :=|\[\<Char> &#124; \<Field> &#124; \<Attribute>\]|  
 |\<Char> :=|character with ASCII value \[32..255\]|  
