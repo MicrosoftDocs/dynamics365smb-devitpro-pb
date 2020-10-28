@@ -58,15 +58,15 @@
 ### [Technical Support](technical-support.md)
 ### Help system
 #### [User Assistance Model](user-assistance.md)
-#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
-#### [Authoring Guide](help/writing-guide.md)
-#### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
+#### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
-<!--#### [Custom Help Toolkit](help/custom-help-toolkit.md)
+#### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 #### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
-#### [Custom Help Toolkit: The NavFieldsTooltips tool](help/custom-help-toolkit-NavFieldsTooltips.md)-->
+#### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
+#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Authoring Guide](help/writing-guide.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)

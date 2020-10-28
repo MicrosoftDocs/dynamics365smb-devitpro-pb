@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: Overview of AppSourceCop analyzer rules.
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/27/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -120,6 +120,10 @@ The following table describes the settings in the `AppSourceCop.json` file:
 |version|Yes|The version of a previous version of this package with which you want to compare the current package for breaking changes.|
 |mandatoryAffixes|No|Affixes that must be prepended or appended to the name of all new application objects, extension objects, and fields.|
 |supportedCountries|No|The set of country codes, in the alpha-2 ISO 3166 format, in which the application will be available.|
+|targetVersion|No|Specifies the next Major.Minor version of the extension in the current branch in order to validate the ObsoleteTag values with [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md). This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used. This property is being deprecated in favor of obsoleteTagVersion.|
+|obsoleteTagVersion|No|Specifies the next Major.Minor version of the extension in the current branch in order to validate the ObsoleteTag values with [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md). This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
+|obsoleteTagPattern|No|The Obsolete tag pattern used by [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md). This should be a valid regular expression. By default, the pattern '(\\d+)\\.(\\d+)' is used.|
+|obsoleteTagPatternDescription|No|A human-readable description for the ObsoleteTagPattern regular expression. This is used in diagnostics reported by [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md). By default, 'Major.Minor' is used.|
 
 The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. This package must be located in the package cache folder of your extension. The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. AppSourceCop will compare the previous version of your extension with its current version and will report any breaking changes introduced by the current package.
 

@@ -35,6 +35,11 @@ The following methods are available on instances of the Enum data type.
 |[Ordinals()](enum-ordinals--method.md)|Gets the ordinal numbers/ID's for the values|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+For more information, see [Extensible Enums](../../devenv-extensible-enums.md).
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
