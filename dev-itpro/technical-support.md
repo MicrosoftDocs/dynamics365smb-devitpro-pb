@@ -18,6 +18,9 @@ In this section, you can learn about the tools that are available to you to help
 
 Because you are the first line of support for your customers, you must make it easy for them to contact you. To that end, there is a section in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page in your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants where they can find this information.  
 
+> [!IMPORTANT]
+> You must have set up users in your own tenant in Partner Center as either *Admin agent* or *Helpdesk agent*, and they must have *delegated administration* privileges in your customer's [!INCLUDE [prodshort](developer/includes/prodshort.md)] to support the customer. For more information, see [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md).
+
 ### To supply your support contact information in the administration center
 
 1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], choose the environment that you want to specify your contact details for, such as *Production*, and then, in the **Support** menu, choose **Manage Support Contact**.
