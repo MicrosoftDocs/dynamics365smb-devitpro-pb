@@ -37,7 +37,7 @@ To accommodate partial record loading, the following methods are available on bo
 |AreFieldsLoaded|Checks whether the specified fields are all initially loaded.|[Record.AreFieldsLoaded](methods-auto/record/record-arefieldsloaded-method.md)<br /><br />[RecordRef.AreFieldsLoaded](methods-auto/recordref/recordref-arefieldsloaded-method.md)|
 |LoadFields|Accesses the table's corresponding data source to load the specified fields.|[Record.LoadFields](methods-auto/record/record-loadfields-method.md)<br /><br />[RecordRef.LoadFields](methods-auto/recordref/recordref-loadfields-method.md)|
 
-A record instance that has previous had load fields specified on it, can be reset to a non-partial load either by calling [Record.SetLoadFields](methods-auto/record/record-setloadfields-method.md) without any parameters, or by calling [Reset](methods-auto/record/record-reset-method.md). After either, subsequent loads will behave as SetLoadFields had not previously been called on the record instance.
+A record instance that has been previously loaded with fields can be reset to a non-partial load either by calling [Record.SetLoadFields](methods-auto/record/record-setloadfields-method.md) without any parameters, or by calling [Reset](methods-auto/record/record-reset-method.md). After being reset, subsequent loads will behave as if SetLoadFields hadn't previously been called on the record instance.
 
 ## Example
 
@@ -74,7 +74,7 @@ The main goal of the feature is to provide the ability to limit the number of fi
 > [!TIP]
 > Testing on the previous example code showed that the execution time for loading only the "Standard Cost" field was nine times faster than loading all normal fields. Your performance numbers will vary depending on the machine and the setup with the SQL database.
 
-For performance reasons, it's not recommended to use partial records on a record that will do inserts, deletes, renames, transferfields, or copies to temporary records. All these operations require that all fields on the record is loaded, so the platform will emit a JIT load if they are not already loaded. A JIT load requires to access the data source again, this cost is larger than the gains of loading fewer fields. For this reason, the feature is especially advantageous in reading-based scenarios.
+For performance reasons, it's not recommended to use partial records on a record that will do inserts, deletes, renames, transferfields, or copies to temporary records. All these operations require that all fields on the record are loaded, so the platform will emit a JIT load if they're not already loaded. A JIT load requires to access the data source again, this cost is larger than the gains of loading fewer fields. For this reason, the feature is especially advantageous in reading-based scenarios.
 
 ## Reports and OData pages
 
