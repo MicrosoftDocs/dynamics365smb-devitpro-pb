@@ -23,7 +23,7 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 
 1. Start Windows PowerShell as an administrator.
 2. From the command prompt, write `.\altpgen.exe` followed by the parameters as described below.  
-    ```
+    ```powershell
     -Project
     -PackageCachePath
     -ServiceURI
@@ -40,17 +40,18 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |*Project*| The AL project folder to create the table(s) in.|
 |*PackageCachePath*| The AL project cache folder for symbols. <br> **Note:** It is important that the latest symbols have been downloaded because these are used for comparison when the tool runs. |
 |*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
-|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying entities](devenv-al-table-proxy-generator.md#specifying-entities). |
+|*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying tables](devenv-al-table-proxy-generator.md#specifying-tables). |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
 |*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`. <br><br>**Note:** If unspecified, the system looks both for `CDS` and `CRM` tables .  |
 
 ## Specifying entities
 
-The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* entity relationships in CDS. For more information, see [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all entities that you want created, including the related entities, in the `Entities` parameter separated by commas.
+The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* table relationships in Common Data Service. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
 
 ### Example
 
 An example could be, that you want to generate an AL proxy table for the **CDS Worker Address** (cdm_workeraddress). 
+ 
 If you run the altpgen tool and only specify `cdm_workeraddress`, the tool will not generate the `Worker` lookup field, because no related table `Worker` is specified.
 
 If you, in the `Entities` parameter specify `cdm_workeraddress, cdm_worker`, the `Worker` lookup field will be generated. Furthermore, if your *symbols contain* the `cdm_worker` entity definition, the `Worker` table will not be created as it's already in your symbols. If your *symbols do not contain* the `cdm_worker` entity, the `Worker` table will be created together with the `Worker Address` table.  
