@@ -64,7 +64,7 @@ To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tab
 1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Export the **AL Table Proxy Generator** tool called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed the AL Language extension, go to the equivalent of this folder: `C:\Users\<myname>\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
 3. In PowerShell, run the tool with the following arguments:
-    ```
+    ```powershell
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<Common Data Service server URL>
@@ -84,7 +84,7 @@ For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_
 2. Name the page **CDS Worker List**, and specify **50001** as the page ID.  
 3. Specify the **CDS Worker** integration table as the source table as shown below:
 
-```
+```al
 page 50001 "CDS Worker List"
 {
     PageType = List;
@@ -148,7 +148,7 @@ To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a
 1. Create a new codeunit.
 2. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnGetCDSTableNo** event, as follows:
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnGetCDSTableNo', '', false, false)]
 local procedure HandleOnGetCDSTableNo(BCTableNo: Integer; var CDSTableNo: Integer; var handled: Boolean)
 begin
@@ -161,7 +161,7 @@ end;
 
 3. Now, we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that is table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
 local procedure HandleOnIsIntegrationRecord(TableID: Integer; var isIntegrationRecord: Boolean)
 begin
@@ -169,7 +169,7 @@ begin
         isIntegrationRecord := true;
 end;
 ```
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnAfterAddToIntegrationPageList', '', true, true)]
 local procedure HandleOnAfterAddToIntegrationPageList(var TempNameValueBuffer: Record "Name/Value Buffer"; var NextId: Integer)
 begin
@@ -186,7 +186,7 @@ When changes occur in the **Employee** table, an integration record will be crea
 
 4. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
 
-```
+```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Lookup CRM Tables", 'OnLookupCRMTables', '', true, true)]
 local procedure HandleOnLookupCRMTables(CRMTableID: Integer; NAVTableId: Integer; SavedCRMId: Guid; var CRMId: Guid; IntTableFilter: Text; var Handled: Boolean)
 begin
@@ -224,7 +224,7 @@ end;
 
 To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, and for synchronizing. The following code example adds those actions to **Employee Card**.
 
-```
+```al
 pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 {
     actions
@@ -328,10 +328,12 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 
 }
 ```
+
 ## Customizing Uncoupling
+
 Entities might require custom code to remove couplings, for example, to change entities before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function InsertIntegrationTableMapping in your codeunit, as follows:
 
-```
+```al
 local procedure InsertIntegrationTableMapping(var IntegrationTableMapping: Record "Integration Table Mapping"; MappingName: Code[20]; TableNo: Integer; IntegrationTableNo: Integer; IntegrationTableUIDFieldNo: Integer; IntegrationTableModifiedFieldNo: Integer; TableConfigTemplateCode: Code[10]; IntegrationTableConfigTemplateCode: Code[10]; SynchOnlyCoupledRecords: Boolean)
 begin
     IntegrationTableMapping.CreateRecord(MappingName, TableNo, IntegrationTableNo,  IntegrationTableUIDFieldNo, IntegrationTableModifiedFieldNo, TableConfigTemplateCode, IntegrationTableConfigTemplateCode, SynchOnlyCoupledRecords, IntegrationTableMapping.Direction::Bidirectional, 'CDS', Codeunit::"CRM Integration Table Synch.", Codeunit::"CDS Int. Table Uncouple");
@@ -351,7 +353,7 @@ Be aware that custom uncoupling is running in background as it could modify [!IN
 > [!TIP]
 > To reset Company ID on uncoupling custom entities just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities, users can subscribe to the OnHasCompanyIdField event in codeunit CDS Integration Mgt. (ID 7200), as follows:
 >
-> ```
+> ```al
 > [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Integration Mgt.", 'OnHasCompanyIdField', '', false, false)]
 > local procedure HandleOnHasCompanyIdField(TableId: Integer; var HasField: Boolean)
 > begin
@@ -359,11 +361,13 @@ Be aware that custom uncoupling is running in background as it could modify [!IN
 >     HasField := true;
 > end;
 > ```
+
 ## Create default integration table mappings and field mappings
+
 For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **Employee**). There are two types of mapping:  
 
-- **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity.  
-- **Integration field mapping** - Field mapping links a field in an entity record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort](../includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for an entity.  
+- **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.  
+- **Integration field mapping** - Field mapping links a field in a table row in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort](../includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for a table.  
 
 In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prodshort](../includes/prodshort.md)]. 
 
@@ -402,7 +406,7 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ``` 
 
-   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../includes/prodshort.md)] that we want to map to the **Worker** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../includes/prodshort.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
 
