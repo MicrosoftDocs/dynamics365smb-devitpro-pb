@@ -7,12 +7,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: t-blrobl
+ms.author: solsen
 ---
  
 # QueryCategory Property
 
-This property is used for displaying SmartLists in the UI. SmartLists are additional views of information linked to a master entity in [!INCLUDE[prodshort](../includes/prodshort.md)]. SmartLists are displayed in the UI under any defined views.
+This property can be used for displaying SmartLists in the UI. SmartLists are additional views of information linked to a master entity in [!INCLUDE[prodshort](../includes/prodshort.md)]. SmartLists are displayed in the UI under any defined views.
 
 SmartLists can be created based on queries. With this functionality, you can create your own lists through extensions. The created list can then be assigned to an entity by setting the `QueryCategory` property.
 
