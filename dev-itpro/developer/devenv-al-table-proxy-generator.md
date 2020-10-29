@@ -48,15 +48,16 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 
 The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* table relationships in Common Data Service. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
 
-### Example
+### Related tables
 
 An example could be, that you want to generate an AL proxy table for the **CDS Worker Address** (cdm_workeraddress). 
  
 If you run the altpgen tool and only specify `cdm_workeraddress`, the tool will not generate the `Worker` lookup field, because no related table `Worker` is specified.
 
-If you, in the `Entities` parameter specify `cdm_workeraddress, cdm_worker`, the `Worker` lookup field will be generated. Furthermore, if your *symbols contain* the `cdm_worker` entity definition, the `Worker` table will not be created as it's already in your symbols. If your *symbols do not contain* the `cdm_worker` entity, the `Worker` table will be created together with the `Worker Address` table.  
+If you, in the `Entities` parameter specify `cdm_workeraddress, cdm_worker`, the `Worker` lookup field will be generated. Furthermore, if your *symbols contain* the `cdm_worker` table definition, the `Worker` table will not be created as it's already in your symbols. If your *symbols do not contain* the `cdm_worker` table, the `Worker` table will be created together with the `Worker Address` table.  
 
-## Example
+## Creating a new integration table
+
 The following example starts the process for creating a new integration table in the specified AL project. When complete, the output path contains the **Worker.al** file that contains the description of the **50000 CDS Worker** integration table. This table is set to the table type **CDS**.
 
 ```
