@@ -2,7 +2,7 @@
 title: "Enabling Common Data Service Tables for Extension Development"
 description: "This topic explains how to enable Common Data Service tables for the extension development process."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 Develop extensions and streamline the workflow by synchronizing Common Data Service data with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
-For developing extensions to integrate with sales data, you simply enable the tables used in Common Data Service. The extension development process includes the following set of properties to enable field mapping. You can enable the field mapping by using the following properties. The tables are extensible, so that you can update Common Data Service with data as well.
+For developing extensions to integrate with sales data, you simply enable the tables used in Common Data Service. The extension development process includes the following set of properties in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to enable field mapping. You can enable the field mapping by using the following properties. The tables are extensible, so that you can update Common Data Service with data as well.
 
 ## Associated table and field properties
 
@@ -70,6 +70,7 @@ table 50100 SalesIntegration
 ```
 
 ## See Also
+
 [Table Properties](properties/devenv-table-properties.md)  
 [TableType Property](properties/devenv-tabletype-property.md)  
 [AL Proxy Table Generator](devenv-al-table-proxy-generator.md)  
