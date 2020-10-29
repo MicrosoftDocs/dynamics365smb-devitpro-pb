@@ -26,7 +26,7 @@ The following properties are used for integrating with Common Data Service:
 |[TableType Property](properties/devenv-tabletype-property.md)|Tables |Specifies the table type. This enables the table to integrate with the external database. For example, `CDS`. |
 |[ExternalName Property](properties/devenv-externalname-property.md)|Tables, Fields|Specifies the name of the original table in the external database when used as a table property.</br> <br>Specifies the field name of the corresponding field specified in the external table when used as a field property.</br> | 
 |[ExternalAccess Property](properties/devenv-externalaccess-property.md)|Fields|Specifies the access to the underlying Common Data Service table when Common Data Service tables are generated using the **AL Table Proxy Generator** tool, see [AL Proxy Table Generator](devenv-al-table-proxy-generator.md)|
-|[ExternalType Property](properties/devenv-externaltype-property.md)|Fields|Specifies the data type of the corresponding field in the Common Data Service table. |
+|[ExternalType Property](properties/devenv-externaltype-property.md)|Fields|Specifies the data type of the corresponding column in the Common Data Service table. |
 |[OptionMembers Property](properties/devenv-optionstring-property.md)|Fields|Sets the option values for a field, text box, or variable. | 
 |[OptionOrdinalValues Property](properties/devenv-optionordinalvalues-property.md)|Fields|Specifies the list of option values. You can set this property, if the **ExternalType** is set to **Picklist**.| 
 
@@ -35,10 +35,12 @@ The following properties are used for integrating with Common Data Service:
 Typically in Common Data Service, tables handle the internal processes. In order to access to the underlying Common Data Service table, you use the `TableType` property and select the value called **CDS**. This enables the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with Common Data Service. The table is mainly based on a table in Common Data Service, such as the Accounts table.
 
 ## Snippet support
+
 Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
 
-## Example 
-In the following example, the `SalesIntegration` table uses the `TableType` and `ExternalName` properties to link the underlying **Common Data Service** table for mapping the fields from the `Sales` table with the specified fields. 
+## Example
+
+In the following example, the `SalesIntegration` table uses the `TableType` and `ExternalName` properties to link the underlying **Common Data Service** table for mapping the columns from the `Sales` table with the specified fields. 
 
 ```AL
 table 50100 SalesIntegration
