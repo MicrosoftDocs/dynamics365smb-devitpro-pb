@@ -27,10 +27,25 @@ On queries, the `QueryCategory` property specifies one or more query categories 
 
 ## Syntax
 
+```al
+page 50111 CustomerSourceTable
+{
+    PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Administration;
+    SourceTable = Customer;
+    QueryCategory = 'Customer';
+...
+```
+```al
+query 50100 QueryWithCategories
+{
+    QueryType = Normal;
+    QueryCategory = 'Customer', 'Items';
 
+...
 ```
-QueryCategory = 'Customer List', 'Vendor List';
-```
+
 
 
 ## See Also  
