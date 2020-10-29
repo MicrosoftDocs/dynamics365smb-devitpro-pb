@@ -1,8 +1,8 @@
 ---
-title: "Compilation Errors When Converting a Microsoft Dynamics NAV 2018 Database"
+title: "Compilation Errors When Converting Dynamics NAV 2018 Database"
 description: Learn how to resolve errors when you convert a Dynamics NAV database to the Business Central format.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
