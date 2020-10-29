@@ -31,7 +31,7 @@ This walkthrough describes how to integrate new and existing extensions with [!I
 8. Use events to add custom integration field mappings for existing integration table mappings.
 
 > [!NOTE]  
-> The customization in this walkthrough is done entirely in [!INCLUDE[prodshort](../includes/prodshort.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, for example, by adding or modifying entities and forms.  
+> The customization in this walkthrough is done entirely in [!INCLUDE[prodshort](../includes/prodshort.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, for example, by adding or modifying tables and forms.  
 
 ## Prerequisites
 
