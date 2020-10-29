@@ -1,7 +1,7 @@
 ---
 title: "QueryCategory Property"
 ms.custom: na
-ms.date: 10/22/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,6 +36,7 @@ page 50111 CustomerSourceTable
     SourceTable = Customer;
     QueryCategory = 'Customer';
 ...
+}
 ```
 ```al
 query 50100 QueryWithCategories
@@ -44,6 +45,7 @@ query 50100 QueryWithCategories
     QueryCategory = 'Customer', 'Items';
 
 ...
+}
 ```
 
 
