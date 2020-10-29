@@ -2,13 +2,12 @@
 title: Custom Integration with Common Data Service
 description: Learn how to integrate your extension with Common Data Service.
 author: bholtorf
-
 ms.custom: na
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ---
 
 # Customizing an Integration with Common Data Service
@@ -22,12 +21,12 @@ This walkthrough describes how to customize an integration between [!INCLUDE[pro
 
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
 
-1. Develop an AL extension to integrate entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
-2. Create an integration table object in [!INCLUDE[prodshort](../includes/prodshort.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity to a [!INCLUDE[prodshort](../includes/prodshort.md)] record type.  
-3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as the data source for a page in [!INCLUDE[prodshort](../includes/prodshort.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity records.  
+1. Develop an AL extension to integrate tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
+2. Create an integration table object in [!INCLUDE[prodshort](../includes/prodshort.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table to a [!INCLUDE[prodshort](../includes/prodshort.md)] record type.  
+3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as the data source for a page in [!INCLUDE[prodshort](../includes/prodshort.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table rows.  
 4. Extend a page in [!INCLUDE[prodshort](../includes/prodshort.md)] for coupling and synchronizing entity records in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prodshort](../includes/prodshort.md)].  
-5. Use events to create an integration table and a field mapping between a table in [!INCLUDE[prodshort](../includes/prodshort.md)] table and an integration table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
-6. Develop another AL extension to extend an existing integration between entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. 
+5. Use events to create an integration table and a field mapping between a table in [!INCLUDE[prodshort](../includes/prodshort.md)] and an integration table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+6. Develop another AL extension to extend an existing integration between tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. 
 7. Create a table extension for an existing integration table object.
 8. Use events to add custom integration field mappings for existing integration table mappings.
 
@@ -39,15 +38,15 @@ This walkthrough describes how to integrate new and existing extensions with [!I
 This walkthrough requires the following:  
 
 - [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], including the following:  
-    - Worker entity.
+    - Worker table.
 
     > [!NOTE]  
-    > To get the worker entity you must install the Talent Core HR solution. For more information, see [Common Data Service entities](/dynamics365/talent/corehrentities#worker-entities).
+    > To get the worker table you must install the Talent Core HR solution. For more information, see [Common Data Service entities](/dynamics365/talent/corehrentities#worker-entities).
     - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
-    - The user name and password of a user account that has full permissions to add and modify entities.  
+    - The user name and password of a user account that has full permissions to add and modify tables.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
     - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
-    - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. <!--For more information, see []()....  -->
+    - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
     - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
