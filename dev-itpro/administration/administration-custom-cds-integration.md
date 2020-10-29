@@ -182,7 +182,7 @@ begin
 end;
 ```
 
-When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling [!INCLUDE[prodshort](../includes/prodshort.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] records.
+When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling [!INCLUDE[prodshort](../includes/prodshort.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] rows.
 
 4. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
 
@@ -271,7 +271,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                 {
                     Caption = 'Coupling';
                     Image = LinkAccount;
-                    ToolTip = 'Create, change, or delete a coupling between the Business Central record and a Common Data Service record.';
+                    ToolTip = 'Create, change, or delete a coupling between the Business Central record and a Common Data Service row.';
 
                     action(ManageCDSCoupling)
                     {
