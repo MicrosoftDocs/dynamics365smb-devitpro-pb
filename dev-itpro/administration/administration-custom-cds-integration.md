@@ -41,7 +41,7 @@ This walkthrough requires the following:
     - Worker table.
 
     > [!NOTE]  
-    > To get the worker table you must install the Talent Core HR solution. For more information, see [Common Data Service entities](/dynamics365/talent/corehrentities#worker-entities).
+    > To get the worker table you must install the Talent Core HR solution. For more information, see [Common Data Service tables](/dynamics365/talent/corehrentities#worker-tables).
     - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
     - The user name and password of a user account that has full permissions to add and modify tables.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
@@ -331,7 +331,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 
 ## Customizing Uncoupling
 
-Entities might require custom code to remove couplings, for example, to change entities before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function InsertIntegrationTableMapping in your codeunit, as follows:
+Tables might require custom code to remove couplings, for example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function InsertIntegrationTableMapping in your codeunit, as follows:
 
 ```al
 local procedure InsertIntegrationTableMapping(var IntegrationTableMapping: Record "Integration Table Mapping"; MappingName: Code[20]; TableNo: Integer; IntegrationTableNo: Integer; IntegrationTableUIDFieldNo: Integer; IntegrationTableModifiedFieldNo: Integer; TableConfigTemplateCode: Code[10]; IntegrationTableConfigTemplateCode: Code[10]; SynchOnlyCoupledRecords: Boolean)
@@ -343,15 +343,15 @@ end;
 
 During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following table describes the events that are published by codeunit Int. Rec. Uncouple Invoke. 
 
-* **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+* **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 * **OnAfterUncoupleRecord** - Occurs after coupling is removed, and can be used to change data after uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnAfterUncoupleRecord. The event removes couplings to the contacts linked to the uncoupled customers and vendors.
 
 For more information about how to subscribe to events, see [Subscribing to Events](/developer/devenv-subscribing-to-events.md).
 
-Be aware that custom uncoupling is running in background as it could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities and it might take significant time.
+Be aware that custom uncoupling is running in background as it could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables and it might take significant time.
 
 > [!TIP]
-> To reset Company ID on uncoupling custom entities just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entities, users can subscribe to the OnHasCompanyIdField event in codeunit CDS Integration Mgt. (ID 7200), as follows:
+> To reset Company ID on uncoupling custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, users can subscribe to the OnHasCompanyIdField event in codeunit CDS Integration Mgt. (ID 7200), as follows:
 >
 > ```al
 > [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Integration Mgt.", 'OnHasCompanyIdField', '', false, false)]
@@ -477,7 +477,7 @@ Customers might make changes to the integration table mappings that they later r
 
 ## Customizing Synchronization  
 
-When synchronizing data, some entities may require custom code to successfully synchronize data. Other entities might require the initialization of fields, the validation of relationships, or the transformation of data.  
+When synchronizing data, some tables may require custom code to successfully synchronize data. Other tables might require the initialization of fields, the validation of relationships, or the transformation of data.  
 
 You can either use the standard transformation rules on page **Integration Field Mapping List** (ID 5361) or you can transform data programmatically. For more information, see [Transformation Rules](/dynamics365/business-central/across-how-to-set-up-data-exchange-definitions#transformation-rules).
 
@@ -499,7 +499,7 @@ During the synchronization process, certain events are published and raised by c
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 > [!TIP]  
-> In order to have Company ID mapping for custom entities just like the base CDS entities , users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
+> In order to have Company ID mapping for custom tables just like the base Common Data Service tables , users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
 > ```al
 >   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Rec. Synch. Invoke", 'OnBeforeInsertRecord', '', false, false)]
 >   local procedure HandleOnBeforeInsertRecord(SourceRecordRef: RecordRef; DestinationRecordRef: RecordRef)
@@ -510,7 +510,7 @@ For more information about how to subscribe to events, see [Subscribing to Event
 >       CDSIntegrationMgt.SetCompanyId(DestinationRecordRef);
 >   end;
 >``` 
-For more information on base CDS entities, see [Data Ownership Models](/dynamics365/business-central/admin-cds-company-concept).
+For more information on base Common Data Service tables, see [Data Ownership Models](/dynamics365/business-central/admin-cds-company-concept).
 
 ## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
