@@ -50,16 +50,16 @@ This walkthrough requires the following:
     - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
-    > Make sure that your integration user has permission to access the Worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+    > Make sure that your integration user has permission to access the Worker table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
-## Create an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity  
+## Create an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table  
 
-To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
+To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
 
 > [!NOTE]  
-> The table can contain some or all of the fields from the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
+> The table can contain some or all of the fields from the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
 
-### To create the integration table for the worker entity in Business Central 
+### To create the integration table for the worker table in Business Central 
 
 1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Export the **AL Table Proxy Generator** tool called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed the AL Language extension, go to the equivalent of this folder: `C:\Users\<myname>\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
@@ -76,7 +76,7 @@ To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] ent
 
 ## Create a page for displaying [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data  
 
-For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific entity, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, such as all workers. In this walkthrough we will create a list page that uses the generated integration table **CDS Worker** with ID 50000 as its data source.  
+For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific table, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, such as all workers. In this walkthrough we will create a list page that uses the generated integration table **CDS Worker** with ID 50000 as its data source.  
 
 ### To create a list page to display [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] workers  
 
@@ -109,7 +109,7 @@ page 50001 "CDS Worker List"
                 Caption = 'Create in Business Central';
                 Promoted = true;
                 PromotedCategory = Process;
-                ToolTip = 'Generate the entity from the coupled Common Data Service worker.';
+                ToolTip = 'Generate the table from the coupled Common Data Service worker.';
 
                 trigger OnAction()
                 var
@@ -143,9 +143,7 @@ page 50001 "CDS Worker List"
 
 ## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and in [!INCLUDE[prodshort](../includes/prodshort.md)]
 
-To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity record, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] record and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
-
-<!-- Shouldn't step 0 be: Create a codeunit to manage this?-->
+To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table row, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] row and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
 
 1. Create a new codeunit.
 2. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnGetCDSTableNo** event, as follows:
@@ -161,7 +159,7 @@ begin
 end;
 ```
 
-3. Now we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that is table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
+3. Now, we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that is table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
