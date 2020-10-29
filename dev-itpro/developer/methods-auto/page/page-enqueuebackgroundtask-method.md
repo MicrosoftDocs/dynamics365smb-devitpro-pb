@@ -68,7 +68,7 @@ The [!INCLUDE[server](../../includes/server.md)] instance includes two configura
 
 For more information these settings, see [Configuring Business Central Server](../../../administration/configure-server-instance.md#PBT).
 
-It's possible to enqueue the task again in the completion trigger or error trigger, but this pattern isn't recommended as it can lead to an endless loop. For more information, see [Page Background Tasks](../../devenv-page-background-tasks.md#reenqueu).
+It's possible to enqueue the task again in the completion trigger or error trigger, but this pattern isn't recommended as it can lead to an endless loop. For more information, see [Page Background Tasks](../../devenv-page-background-tasks.md#reenqueue).
 
 ## Example
 

@@ -4946,6 +4946,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "dev-itpro/developer/properties/devenv-dataitemlink-type-property.md",
+      "redirect_url": "devenv-sqljointype-property",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "dev-itpro/developer/properties/devenv-dataitemtable-filter-property.md",
       "redirect_url": "devenv-dataitemtablefilter-property",
       "redirect_document_id": false

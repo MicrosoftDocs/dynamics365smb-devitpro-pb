@@ -15,6 +15,9 @@ ms.date: 10/01/2020
 
 This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
+> [!TIP]
+> Sample code that shows how to integrate an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomEmployeeWorkerIntegration) repository.
+
 ## About this walkthrough
 
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
@@ -29,7 +32,7 @@ This walkthrough describes how to integrate new and existing extensions with [!I
 8. Use events to add custom integration field mappings for existing integration table mappings.
 
 > [!NOTE]  
-> The customization in this walkthrough is done entirely in [!INCLUDE[prodshort](../includes/prodshort.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, such as adding or modify entities and forms.  
+> The customization in this walkthrough is done entirely in [!INCLUDE[prodshort](../includes/prodshort.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, for example, by adding or modifying entities and forms.  
 
 ## Prerequisites
 
@@ -39,8 +42,8 @@ This walkthrough requires the following:
     - Worker entity.
 
     > [!NOTE]  
-    > The worker entity is part of Talent Core HR solution and it must be installed. For more information, see [Common Data Service entities](https://docs.microsoft.com/dynamics365/talent/corehrentities#worker-entities).
-    - The URL of your Common Data Service environment.
+    > To get the worker entity you must install the Talent Core HR solution. For more information, see [Common Data Service entities](/dynamics365/talent/corehrentities#worker-entities).
+    - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
     - The user name and password of a user account that has full permissions to add and modify entities.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
     - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
@@ -48,14 +51,14 @@ This walkthrough requires the following:
     - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
-    > Make sure that your integration user has permission to access the Worker entity.
+    > Make sure that your integration user has permission to access the Worker entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Create an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity  
 
-To integrate data from a Common Data Service entity into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
+To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
 
 > [!NOTE]  
-> The table can contain some or all of the fields from the Common Data Service entity. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
+> The table can contain some or all of the fields from the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] entity. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
 
 ### To create the integration table for the worker entity in Business Central 
 
@@ -182,7 +185,7 @@ begin
 end;
 ```
 
-When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling [!INCLUDE[prodshort](../includes/prodshort.md)] records with Common Data Service records.
+When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling [!INCLUDE[prodshort](../includes/prodshort.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] records.
 
 4. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
 
@@ -511,6 +514,9 @@ For more information on base CDS entities, see [Data Ownership Models](/dynamics
 
 Let us explore another scenario. If we added an **Industry** field to the **Contact** entity in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
+> [!TIP]
+> Sample code that customizes an integration between a contact in [!INCLUDE[prodshort](../includes/prodshort.md)] and a contact in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] by adding a new field is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomContactIntegration) repository. 
+
 ### To create the integration table extension for table "CRM Contact" (ID 5342)
 
 1. Create a new AL extension.
@@ -584,9 +590,9 @@ After we publish the extension we can update the mappings by running the **CDS C
 ## See Also
 
 [Overview](/dynamics365/business-central/admin-common-data-service)  
-[Setting Up User Accounts for Integrating with Common Data Service](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
-[Set Up a Connection to Common Data Service](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection) 
-[Synchronizing Business Central and Common Data Service](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  
+[Setting Up User Accounts for Integrating with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
+[Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection) 
+[Synchronizing Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  
 [Mapping the Tables and Fields to Synchronize](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)  
 [Manually Synchronize Table Mappings](/dynamics365/business-central/admin-manual-synchronization-of-table-mappings)  
 [Schedule a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries)  
