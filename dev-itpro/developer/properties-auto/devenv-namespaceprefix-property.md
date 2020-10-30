@@ -24,6 +24,22 @@ Specifies the namespace prefix on an XmlPort element.
 -   Xml Port Text Attribute
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+NamespacePrefix = 'bc';
+```
+ 
+## Remarks
+
+You can only set the property to a prefix that is declared in the [Namespaces Property](devenv-namespaces-property.md) of the XMLport.  
+
+This property only applies to element node types and will be ignored if it is set in `textattribute` and `fieldattribute` nodes. 
+
+For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
+
 ## See Also  
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
