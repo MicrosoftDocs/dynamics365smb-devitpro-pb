@@ -52,7 +52,7 @@ Yes. There are multiple ways to work with [!INCLUDE[prodshort](includes/prodshor
 - The Open in Excel feature that downloads any list as an Excel file for your processing or reporting  
 - The Edit in Excel feature that allows you to edit almost any list-based data in Excel and publish it back to [!INCLUDE[prodshort](includes/prodshort.md)]  
 
-For more information, see [Viewing and Editing in Excel From [!INCLUDE[prodshort](includes/prodshort.md)]](/dynamics365/business-central/across-work-with-excel). For instructions on how to configure it for on premises, see [Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](includes/prodshort.md)] Data](administration/configuring-excel-addin).
+For more information, see [Viewing and Editing in Excel From [!INCLUDE[prodshort](includes/prodshort.md)]](/dynamics365/business-central/across-work-with-excel). For instructions on how to configure it for on-premises, see [Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](includes/prodshort.md)] Data](administration/configuring-excel-addin.md).
 
 Note that the legacy, COM-based Excel plugin that used to be included on the installation media is no longer supported.
 

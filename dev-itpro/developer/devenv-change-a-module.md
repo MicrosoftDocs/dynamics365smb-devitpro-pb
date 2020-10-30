@@ -21,19 +21,15 @@ This topic provides an overview of how to change an existing module.
 > [!NOTE]
 > Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
-Remember that your changes should conform to the general guidelines for modules described in the [Blueprint](https://github.com/microsoft/ALAppExtensions/blob/master/Blueprint.md). 
-
-The main consideration when changing an existing module, compared to contributing with a new module, is that you need to adhere to, and think about no breaking changes. When doing your changes make sure that you do not break existing functionality. Once you are done, check that existing tests still pass, and add new tests for the functionality that you changed or added.
+Your changes must follow the guidelines for module architecture. For more information, see [Module Architecture](devenv-blueprint.md). When changing an existing module, do not introduce breaking changes, that is, make sure that you do not break existing functionality. Existing tests must still pass, and you should add new tests for the functionality that you change or add.
 
 ### Set Up Visual Studio Code for Module Development
 Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
-```
-
+```json
     "server": "https://YourDockerContainerName",
     "serverInstance": "BC",
     "authentication": "Windows",
-
 ```
 Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
@@ -41,14 +37,14 @@ Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as 
 To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
 
 ## Change an Existing Module
-The following, sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the AlAppExtensions repository. The contribution added support for other text encodings than UTF8. If you're interested, you can view the original pull request at [Pull Request 7676](https://github.com/microsoft/ALAppExtensions/pull/7676).
+The following sections provide an example of how to contribute to an existing module. The example is based on a previous contribution to the Base64 Convert module, which has been published in the AlAppExtensions repository. The contribution added support for text encodings other than UTF8. If you're interested, you can view the original pull request at [Pull Request 7676](https://github.com/microsoft/ALAppExtensions/pull/7676).
 
 ### Make Changes to a Module
 Before making changes, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md). You can also check out the article titled [How to add a system module](https://github.com/microsoft/ALAppExtensions/blob/master/How-to-add-a-module.md) for an example of creating a full system module.
 
 We'll start by adding the functions that we need to support different text encodings to the internal implementation codeunit. We'll add the following functions to the **System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al** implementation codeunit:
 
-```
+```AL
     procedure ToBase64(String: Text; TextEncoding: TextEncoding): Text
     begin
         exit(ToBase64(String, false, TextEncoding, 0));
@@ -119,7 +115,7 @@ We'll start by adding the functions that we need to support different text encod
 ```
 We also need to update some of the existing functions in **System/Base64 Convert/src/Base64ConvertImpl.Codeunit.al**, while making sure that they keep the same functionality:
 
-```
+```AL
     procedure ToBase64(String: Text): Text
     begin
         exit(ToBase64(String, false));
@@ -139,7 +135,7 @@ We have changed the implementation codeunit, and avoided breaking existing funct
 
 Now we'll add public functions in the facade codeunit with the functionality that we want to expose. Because the functions are public, we need to ensure that they are documented and tested. The functions call the corresponding functions in the implementation codeunit. We add the following functions to **System/Base64 Convert/src/Base64Convert.Codeunit.al**:
 
-```
+```AL
     /// <summary>
     /// Converts the value of the input string to its equivalent string representation that is encoded with base-64 digits.
     /// </summary>
@@ -196,7 +192,7 @@ We have now exposed the functions. The next steps are to ensure that existing te
 
 After verifying that the tests pass, we'll add the following tests to the **System Tests/Base64 Convert/src/Base64ConvertTest.Codeunit.al** file.
 
-```
+```AL
     [Test]
     procedure StringToBase64UTF16Test()
     var

@@ -12,9 +12,7 @@ ms.author: edupont
 
 # Authoring Guide for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-If you are contributing to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help, or if you are customizing and extending the Microsoft content for your own solution, then you will probably want to use the same tools, processes, and style guide that Microsoft uses.  
-
-This page shows tips and tricks for authoring in MarkDown based on what the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] team of technical writers learnt when they started in MarkDown in 2015.
+If you are contributing to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help, or if you are customizing and extending the Microsoft content for your own solution, you will probably want to use the same tools, processes, and style guide that Microsoft uses.  
 
 ## Resources
 
@@ -28,7 +26,7 @@ This page shows tips and tricks for authoring in MarkDown based on what the [!IN
 
 ## Authoring in Markdown
 
-The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content is styled using a MarkDown syntax as described below. You can also get a lot of guidance in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
+The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content is styled using a MarkDown syntax as described below. Extended guidance is available in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
 
 ### Headings
 
@@ -51,7 +49,7 @@ The following options are available:
 
 ### Ordered lists
 
-Use numbers for ordered lists. No space between the lines, we'll let the template for the documentation website take care of that.
+Use numbers for ordered lists. Do not add spaces between the lines.
 
 ```
 1. Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Journal**, and then choose the related link.
@@ -76,11 +74,11 @@ For tables in the body, use the markdown syntax. The Docs Authoring Pack for Vis
 | | |
 ```
 
-For nested tables in ordered and unordered lists use HTML-syntax. Markdown does not support tables very well. If you use the markdown syntax the list will be broken, the table will align left and list will be renumbered.
+MarkDown syntax for nested tables is limited, so we recommend using HTML-syntax for nested tables in ordered and unordered lists use HTML-syntax.
 
 ### Comment syntax
 
-Useful for sections that are not ready and will not pass the build check.
+Useful for sections that are not ready and will not pass build checks.
 ```
 <!-- Comments -->
 ```
@@ -180,7 +178,7 @@ The TOC structure of the TOC.md file is as follows:
 
 ### Standard Phrases
 
-All fields in Business Central have tooltips. Therefore, do not document fields in Help. To refer readers to the tooltips, use this standard phrase where relevant:
+All fields in Business Central have tooltips; therefore, do not document fields in Help. To refer readers to the tooltips, use this standard phrase where relevant:
 
 > "Choose a field to read a short description of the field or link to more information."
 
