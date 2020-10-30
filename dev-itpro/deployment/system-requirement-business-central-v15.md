@@ -1,6 +1,6 @@
 ---
 title: System Requirements for Business Central 2019 Release Wave 2
-description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central on-premises.
+description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central 2019 Release Wave 2on-premises.
 author: jswymer
 ms.custom: na
 ms.reviewer: edupont
@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2
 
@@ -22,7 +22,7 @@ The following sections list the minimum hardware and software requirements to us
 ###  <a name="WebClient"></a> Web Client Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client on-premises.  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported browsers|Recommended browsers:<ul><li>Microsoft Edge</li><li>Google Chrome 77.0 for Windows</li><li>Mozilla Firefox 69.0 for Windows</li><li>Safari 12.0 for macOS</li></ul>Other supported browsers:<ul><li>Internet Explorer 11</li></ul>Cookies and JavaScript must be enabled in the browser.|
 |Business inbox in Outlook|<ul><li>Microsoft 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
@@ -35,7 +35,7 @@ The following sections list the minimum hardware and software requirements to us
 ###  <a name="NavApps"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Tablet Client and Phone Client \(in a Browser\) Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] running in a browser when used for development and testing purposes.  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Server component|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)]Web client.|  
 |Supported browsers|The following desktop browsers are supported:<ul><li> Microsoft Edge</li><li>Internet Explorer 11 \(build 11.0.9600.17239\) for Windows 10.</li><li>Google Chrome 72.0 for Windows.</li><li>Mozilla Firefox 65.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser. |  
@@ -47,7 +47,7 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 [![Windows Store](../developer/media/install-mobile-app/windowsstore.png)](https://go.microsoft.com/fwlink/?LinkId=734848)
 [![App Store](../developer/media/install-mobile-app/appstore.png)](https://go.microsoft.com/fwlink/?LinkId=734847) [![Google Play](../developer/media/install-mobile-app/googleplay.png)](https://go.microsoft.com/fwlink/?LinkId=734849)  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 S, Home, Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Android 6.0 or higher (tablet and phone).</li><li> iOS 10.0 or higher (iPad and iPhone).</li></ul>|  
 |Additional hardware|<ul><li>1 GB RAM for Android and Windows.</li></ul>|  
@@ -58,7 +58,7 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 
 The following table shows the minimum system requirements for customizing or extending [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the AL language in Visual Studio Code.
 
-|||
+|Specification|Requirement|
 |-|-|
 |Supported operating systems|<ul><li>Window Server 2016.</li><li>Windows 10 - [supported versions](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).</ul></li>|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
@@ -71,7 +71,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 ###  <a name="NavServerReqs"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)].  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
 |Hardware resources|<ul><li>Hard disk space: 2 GB.</li><li>Memory:<br /> 2 GB for only running the application.<br /> 16 GB for publishing the application to the server.|  
@@ -81,7 +81,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 
 ###  <a name="WebServer"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Server Components Requirements  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
 |Web server|<ul><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0.|   
@@ -91,7 +91,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 ###  <a name="SQLReq"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database Components for SQL Server Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components for SQL Server.  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul> |  
 |Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
@@ -102,7 +102,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 ###  <a name="HelpServer"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server.  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit editions\).</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
 |Hardware resource|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.</li></ul>|  
@@ -114,7 +114,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 ###  <a name="ADCS"></a> Automated Data Capture System Requirements  
  The following table shows the minimum system requirements for Automated Data Capture System \(ADCS\) for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Additional software|<ul><li>MSXML version 6.0.</li><li>Telnet or Microsoft Windows HyperTerminal.</li><li>VT100 Plug-in for each computer on which you install ADCS.</li><li>Microsoft Loopback Adapter.</li></ul>|  
 |Additional information|<ul><li>HyperTerminal is no longer included with Windows. For more information, see [What happened to HyperTerminal?](https://go.microsoft.com/fwlink/?LinkId=222571) in the Windows Help.</li><li>VT100 Plug-in acts as a virtual Telnet server.</li></ul>|  
@@ -122,7 +122,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 ###  <a name="BusInboxOutlook"></a> Business Inbox in Microsoft Outlook Requirements  
 The following table shows the minimum system requirements for using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as your business inbox in Outlook.
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2016 or later</li><li>Outlook Web App</li><li>OWA for iPad</li><li>OWA for iPhone</li><li> OWA for Android.</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2019</li><li>Exchange Server 2016<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
@@ -133,7 +133,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 ###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
 The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Add-In for Outlook for synchronization with Outlook.
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2019</li><li>Outlook 2016</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|  
@@ -142,9 +142,8 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 ###  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
  The following table shows the product version requirements for integrating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
 
-||||||  
-|-|-|-|-|-|
 |Sales/Dynamics NAV/Business Central|2015/Update 1/online|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|
+|-|-|-|-|-|
 |Dynamics NAV 2016|Supported *** |Supported *** |Supported *** |Supported *** |
 |Dynamics NAV 2017|Supported **|Supported *|Supported *|Supported *|
 |Dynamics NAV 2018|Supported **|Supported *|Supported *|Supported *|
@@ -162,7 +161,7 @@ Legend:
 ###  <a name="SharePointApp"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint Requirements  
 The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint.  
 
-|||  
+|Specification|Requirement|  
 |-|-|  
 |Supported operating systems|<ul><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
 |Additional software|<ul><li>SharePoint 2013 Service Pack 1.</li><li>SharePoint Online.</li></ul>|  

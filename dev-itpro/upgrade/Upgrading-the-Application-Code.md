@@ -64,14 +64,14 @@ To complete the tasks in this article, you will use various tools and components
 
 #### [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] upgrade
 
-|    |  Tool/Component  |
+|  Product  |  Tool/Component  |
 |----|------------------|
 | Old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[navnow](../developer/includes/navnow_md.md)] Development Shell</li></ul>|
 |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] ([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|
 
 #### [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] upgrade
 
-|    |  Tool/Component  |
+| Product   |  Tool/Component  |
 |----|------------------|
 | Old [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li></ul>|
 |New [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|

@@ -36,11 +36,11 @@ Occurs when a user has been successfully authorized.
 
 ### General dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|Version 16.1 and later:<br />**Authorization Succeeded (Pre Open Company)**<br /><br />Before Version 16.1:<br />**Authorization steps prior to the open company trigger succeeded.**||
+|Dimension|Description or value|
+|---------|-----|
+|message|Version 16.1 and later:<br />**Authorization Succeeded (Pre Open Company)**<br /><br />Before Version 16.1:<br />**Authorization steps prior to the open company trigger succeeded.**|
 |operation_Name|**Authorization Succeeded (Pre Open Company)** <br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|severityLevel|**1**||
+|severityLevel|**1**|
 
 ### Custom dimensions
 
@@ -141,11 +141,11 @@ Occurs when the company has opened successfully.
 
 ### General dimensions
 
-|Dimension|Description or value||
+|Dimension|Description or value|
 |---------|-----|-----------|
-|message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**||
+|message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**|
 |operation_Name|**Authorization Succeeded (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|severityLevel|**1**||
+|severityLevel|**1**|
 
 <!--
 |operation_Name|**Authorization Succeeded (Open Company)**||
