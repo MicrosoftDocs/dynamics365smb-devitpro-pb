@@ -1,5 +1,6 @@
 ---
-title: "Upgrading to Microsoft Dynamics 365 Business Central On-Premises v.14"
+title: "Upgrading to On-Premises v.14"
+description: Gives an overview of the different upgrade paths to On-Premises Spring 2019 from older versions.
 ms.custom: na
 ms.reviewer: edupont
 ms.suite: na
@@ -8,7 +9,7 @@ ms.topic: article
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-Premises Spring 2019 (v.14)
 

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 10/28/2020
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -74,17 +74,29 @@ You and your customers can find free eLearning content on the Microsoft Learn si
 
 As a partner, you can keep on top of current and upcoming capabilities, and you can share Microsoft's roadmap with your prospects, for example. This section provides links to places to keep track of for people who are new to [!INCLUDE [prodshort](developer/includes/prodshort.md)] as well as for people who have been working with the product for years.  
 
-### Get set up as a partner
+This article provides information about the following types of resources:
+
+* [How to get started as a partner](#partner)
+* [What is the "Ready to go" program](#ready2go)
+* [Where to learn about current and upcoming capabilities](#capabilities)
+* [How to make a feature request](#ideas)
+* [Where to find blog posts](#blog)
+* [Where to find communities](#communities)
+* [Where to file bugs and issues](#bugs)
+* [Where to contribute to code or docs](#github)
+* [Where to ask non-product related questions](#nonproduct)
+
+### <a name="partner"></a>Get set up as a partner
 
 If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
 
-### Get started with the "Ready to Go" program
+### <a name="ready2go"></a>Get started with the "Ready to Go" program
 
 The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md).  
 
 Get an overview of role-specific training material from Microsoft in the [The "Ready to Go" learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 
-### Learn about current or upcoming capabilities
+### <a name="capabilities"></a>Learn about current or upcoming capabilities
 
 You can learn about current and coming capabilities through a number of different resources as outlined in the following table.
 
@@ -105,13 +117,13 @@ You can learn about current and coming capabilities through a number of differen
 > |The "Ready to Go" learning catalog|[https://docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
 > |E-learning|[aka.ms/bclearn](https://aka.ms/bclearn)|Free [!INCLUDE [prodshort](developer/includes/prodshort.md)] learning paths on Microsoft Learn|
 
-### Share an idea about a new feature you'd like to have
+### <a name="ideas"></a>Share an idea about a new feature you'd like to have
 
 On the [Dynamics 365 Ideas site](https://aka.ms/bcideas), you can provide suggestions for new feature and capabilities. Your input goes directly to Business Central's engineering backlog for investigation and prioritization.  
 
 Make sure to search through the list of submitted suggestions, as chances are that someone already submitted something similar and might have already received votes. Vote if an idea already has been submitted to get it prioritized on the team's backlog.  
 
-### Business Central blog posts
+### <a name="blog"></a>Business Central blog posts
 
 The Dynamics 365 blog is where Microsoft publishes announcements, updates, and tips and tricks, including for [!INCLUDE[prodshort](includes/prodshort.md)].  
 
@@ -120,13 +132,13 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 > |---------|---------|---------|
 > |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some older blog posts are still available on the [Community site for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) or the [Community site for business users](https://community.dynamics.com/business/b/financials).|
 
-### Business Central communities
+### <a name="communities"></a>Business Central communities
 
 On the [Business Central Community site](https://community.dynamics.com/business), you have access to the [Business Central Forum](https://community.dynamics.com/business/f/758). You can use this forum to submit a question and learn from other Business Central community members. MVPs, partners, and Microsoft employees participate in the conversations.
 
 You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central and Dynamics NAV](https://www.navug.com/home), which is a user-led, user-driven community of more than 26,000 users, partners, and MVPs.  
 
-### Summary of where to file bugs and issues
+### <a name="bugs"></a>Summary of where to file bugs and issues
 
 As a partner, you have different support channels depending on what type of issue you want support for. The following list outlines the various channels.  
 
@@ -134,7 +146,35 @@ As a partner, you have different support channels depending on what type of issu
 
 For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
 
-#### Non-product related questions
+### <a name="github"></a>Engage with us on GitHub
+
+GitHub brings together communities of developers and other contributors to discover, share, and build software. Here are some useful repositories for  [!INCLUDE [prodshort](developer/includes/prodshort.md)]:
+
+* Microsoft AL
+
+  For collaboration on the AL development environment in Visual Studio Code, use the GitHub repo here: [https://github.com/microsoft/al](https://github.com/microsoft/al)
+
+* Microsoft AL application add-ons
+
+  There are a couple of ways to engage with us in the [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions/) repo:
+
+  * You can grab the code and contribute to the published apps.
+  * If you're building your own app and need something specific from us, such as an event, you can help improve the general extensibility of the business logic.
+
+* NAV Docker
+
+  Use this repo to collaborate around the source code and the scripts of the generic docker image for [!INCLUDE [prodshort](developer/includes/prodshort.md)]: [https://github.com/Microsoft/nav-docker](https://github.com/Microsoft/nav-docker)
+
+* Documentation
+
+  The product Help and developer and administration content is based on GitHub as well, and you can collaborate and extend the docs. The GitHub repos are:
+
+  * Product Help (English US): [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
+  * Developer and administration content: [https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)
+
+  For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).
+
+#### <a name="nonproduct"></a>Non-product related questions
 
 On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
 

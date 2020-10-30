@@ -1,9 +1,9 @@
 ---
-title: "Troubleshooting: The SAML2 token is not valid because its validity period has ended."
+title: "The SAML2 token is not valid because its validity period has ended."
 description: Troubleshooting guidelines for SAML2 token errors that can occur when using Azure AD or Office authentication
 author: jswymer
 ms.custom: na
-ms.date: 10/21/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
