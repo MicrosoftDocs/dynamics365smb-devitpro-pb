@@ -34,7 +34,8 @@ IntegerVar := IntegerVar - 1;
  If you try to indirectly assign a value that is smaller than -2,147,483,648 or larger than 2,147,483,647, then you get a run-time error.  
 
 
-## Example  
+## Example 1
+
  The following are examples of integer values.  
   
 ```  
@@ -42,7 +43,8 @@ IntegerVar := IntegerVar - 1;
 -3425  
 ```  
   
-## Example  
+## Example 2
+
  The following example is a decimal and not an integer.  
   
 ```  

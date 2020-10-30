@@ -43,7 +43,8 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
  For more information about option variables in multilanguage-enabled applications, see [Developing Multilanguage-Enabled Applications](../../dynamics-nav/Developing-Multilanguage-Enabled-Applications.md).  
  --> 
 
-## Example  
+## Example 1
+
 In the Purchase Header table, the Status field is an Option data type. In the following example, the option value is converted into an integer.
 
  ```
@@ -55,7 +56,8 @@ begin
 end;
 ```  
   
-## Example  
+## Example 2
+
 This example shows how you can use the value of an option field as a constant in your AL code.  
   
 ```  

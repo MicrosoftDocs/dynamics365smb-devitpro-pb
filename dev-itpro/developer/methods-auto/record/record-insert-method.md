@@ -45,7 +45,7 @@ If this parameter is true, the code in the OnInsert Trigger is executed. If this
 
 The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.
 
-## Example
+## Example 1
 
 This example shows how to use the INSERT method without a return value.  
   
@@ -57,7 +57,7 @@ Customer.Insert(true);
   
 If customer 1120 already exists, then a run-time error occurs.  
   
-## Example
+## Example 2
   
 This example shows how to use the INSERT method with a return value.
 

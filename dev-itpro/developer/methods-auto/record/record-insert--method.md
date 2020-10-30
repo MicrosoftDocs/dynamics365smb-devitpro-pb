@@ -40,7 +40,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.
 
-## Example
+## Example 1
 
 This example shows how to use the INSERT method without a return value.  
   
@@ -52,7 +52,7 @@ Customer.Insert();
   
 If customer 1120 already exists, then a run-time error occurs.  
 
-## Example
+## Example 2
   
 This example shows how to use the INSERT method with a return value.
 
