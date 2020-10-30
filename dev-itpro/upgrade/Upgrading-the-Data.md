@@ -1,6 +1,6 @@
 ---
-title: Upgrading the Database
-description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
+title: Upgrading the Data to in Single-Tenant Deployment
+description: This article describes the tasks required for upgrade the data when you have a single-tenant deployment. 
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
