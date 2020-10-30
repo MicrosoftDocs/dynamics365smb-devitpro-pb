@@ -20,6 +20,17 @@ Specifies the fields to select when using OData.
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+ODataKeyFields = Id;
+```
+  
+## Dependent Property
+
+- SourceTable
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
