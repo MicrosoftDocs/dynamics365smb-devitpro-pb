@@ -28,6 +28,34 @@ On queries, the `QueryCategory` property specifies one or more query categories 
 ## Syntax
 
 ```al
+query 50100 QueryWithCategories
+{
+    QueryType = Normal;
+    QueryCategory = 'Customer', 'Items';
+
+    elements
+    {
+        dataitem(DataItemName; Customer)
+        {
+            column(ColumnName; Name)
+            {
+
+            }
+
+        }
+    }
+
+    var
+        myInt: Integer;
+
+    trigger OnBeforeOpen()
+    begin
+
+    end;
+}
+```
+
+```al
 page 50111 CustomerSourceTable
 {
     PageType = List;
@@ -35,23 +63,46 @@ page 50111 CustomerSourceTable
     UsageCategory = Administration;
     SourceTable = Customer;
     QueryCategory = 'Customer';
-...
+
+    layout
+    {
+        area(Content)
+        {
+            group(GroupName)
+            {
+                field(Name; Name)
+                {
+                    ApplicationArea = All;
+
+                }
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(ActionName)
+            {
+                ApplicationArea = All;
+
+                trigger OnAction()
+                begin
+
+                end;
+            }
+        }
+    }
 }
 ```
-```al
-query 50100 QueryWithCategories
-{
-    QueryType = Normal;
-    QueryCategory = 'Customer', 'Items';
 
-...
-}
-```
+## Remarks
 
+For the syntax examples above, when page **CustomerSourceTable** is opened in the client, query **QueryWithCategories** will be available as a view. **QueryWithCategories** could also be used on other pages by setting the QueryCategory of the pages to either `'Customer'` or `'Items'`.
 
+## See Also
 
-## See Also  
 [Properties](devenv-properties.md)   
 [Query Object](../devenv-query-object.md)  
 [Page Object](../devenv-page-object.md)
-
