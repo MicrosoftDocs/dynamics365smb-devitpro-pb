@@ -52,13 +52,13 @@ end;
   
 In this example, the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] displays following error message:  
   
-**No. must be equal to 10000 in Customer: No.=. Current value is ‘’.**
+**No. must be equal to 10000 in Customer: No.=. Current value is ''.**
   
 ## Example
 
 If the value of the No. field is set to a value other than 10000, [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] displays the following error message:  
   
-**No. must be equal to 10000 in Customer: No.=AAA10000. Current value is ‘AAA 10000’.**
+**No. must be equal to 10000 in Customer: No.=AAA10000. Current value is 'AAA 10000'.**
   
 ```  
 CustomerRecref.Open(DataBase::Customer);  

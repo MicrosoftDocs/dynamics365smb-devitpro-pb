@@ -75,7 +75,7 @@ The following code gets the data for a notification:
 
 ```
 MyNotification.GETDATA('Created');
-MyNotification.GETDATA('ID');
+MyNotification.GETDATA('ID');''
 ```
 
 ## See Also
