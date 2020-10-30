@@ -25,7 +25,7 @@ APIGroup = 'app1';
 ```
 
 > [!NOTE]  
-> The property **APIGroup** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](devenv-api-pagetype.md).
+> The property **APIGroup** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
 
 ## See Also  
 
