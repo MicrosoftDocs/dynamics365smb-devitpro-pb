@@ -52,4 +52,4 @@ In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000.
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [CurrentDateTime Method](../system/system-currentdatetime-method.md)  
-[Format Property](../../developer/properties/devenv-format-property.md)
+[Format Property](../../properties/devenv-format-property.md)
