@@ -57,17 +57,17 @@ A view with detached layout `SharedLayout = false` defines its own layout and is
 ```AL
 view(DetachedView)
 {
-	Caption = 'View With Detached Layout';
-	Filters = where("Balance Due (LCY)" = filter(> 10000));
-	// By settings this property to false, the view gets its own independent layout.
-	// User personalization are not applied on this view.
-	// Instead, the layout defined below is applied.
-	SharedLayout = false;
-	
-	layout
-	{
-		movefirst(Control1; "Balance Due (LCY)")
-	}
+    Caption = 'View With Detached Layout';
+    Filters = where("Balance Due (LCY)" = filter(> 10000));
+    // By settings this property to false, the view gets its own independent layout.
+    // User personalization are not applied on this view.
+    // Instead, the layout defined below is applied.
+    SharedLayout = false;
+    
+    layout
+    {
+        movefirst(Control1; "Balance Due (LCY)")
+    }
 }
 ```
 
