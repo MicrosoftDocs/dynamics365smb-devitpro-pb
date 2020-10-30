@@ -14,7 +14,7 @@ ms.author: solsen
 
 This property can be used for displaying SmartLists in the UI. SmartLists are additional views of information linked to a master entity in [!INCLUDE[prodshort](../includes/prodshort.md)]. SmartLists are displayed in the UI under any defined views.
 
-SmartLists can be created based on queries. With this functionality, you can create your own lists through extensions. The created list can then be assigned to an entity by setting the `QueryCategory` property.
+SmartLists are created based on queries. With this functionality, you can create your own lists through extensions. The created list can then be assigned to an entity by setting the `QueryCategory` property.
 
 By being able to create a new list page based on a query, you can get the data you want on one list even if all the data isn’t in a single table in the database.
 
