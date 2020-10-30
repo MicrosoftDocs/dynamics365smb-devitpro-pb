@@ -1,6 +1,6 @@
 ---
 title: System Requirements for Business Central 2019 Release Wave 2
-description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central 2019 Release Wave 2on-premises.
+description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central 2019 Release Wave 2 on-premises.
 author: jswymer
 ms.custom: na
 ms.reviewer: edupont
