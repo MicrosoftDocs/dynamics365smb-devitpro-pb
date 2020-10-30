@@ -44,7 +44,8 @@ Specifies the order in which a search will be performed.
 ## Remarks  
  This method works just like the [ASCENDING Method \(Record\)](../../methods/devenv-ascending-method-record.md).  
   
-## Example  
+## Example 1
+
  The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in ascending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **True** in a message box. 
     
   
@@ -61,7 +62,8 @@ begin
 end;
 ```  
   
-## Example  
+## Example 2
+
  The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in descending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **False** in a message box because the sort order is descending. The ASCENDING method changes the sort order to ascending by setting the *SetAscending* parameter to **true**. The ASCENDING method checks the sort order again. This time **True** is displayed.  
   
 ```  

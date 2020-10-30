@@ -43,7 +43,8 @@ The position at which a specific string first occurs in this BigText instance.
 ## Remarks  
  The first character in a *BigText* variable is position 1.  
   
-## Example  
+## Example 1
+
  The following examples show how to use the [TEXTPOS Method](../../methods-auto/bigtext/bigtext-textpos-method.md). These examples require that you create the following global variables and text constant.  
 
 ```
@@ -64,7 +65,8 @@ MESSAGE(Text000, VarPosition);
   
 ```  
   
-## Example  
+## Example 2
+
  In the following example, the method returns 0 because the specified string is not found in the MyBigText variable. The return value is stored in the variable VarPosition and displayed in a message box.  
   
 ```  
@@ -73,15 +75,15 @@ VarPosition := MyBigText.TEXTPOS(''); // Returns 0.
 MESSAGE(Text000, VarPosition);  
 ```  
   
-## Example  
+## Example 3
+
  In the following example, the method returns 0 because the specified string is not found in the MyBigText variable. The return value is stored in the variable VarPosition and displayed in a message box.  
   
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS('XYZ'); // Returns 0.  
 MESSAGE(Text000, VarPosition);  
-```  
-  
+``` 
 
 ## See Also
 

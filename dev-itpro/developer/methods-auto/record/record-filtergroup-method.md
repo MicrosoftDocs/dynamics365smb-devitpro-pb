@@ -82,10 +82,11 @@ Rec.FilterGroup(1);
 Then, for each field in the table that to which the Rec variable refers, set an empty filter.  
   
 ```  
-Rec.SetFilter(<field>,’’);  
+Rec.SetFilter(<field>,'');  
 ```  
   
-## Example  
+## Example 1
+
 The following example uses the [SetFilter Method (Record)](record-setfilter-method.md) to set a filter that selects records with No. field between 10000 and 20000. Then the **FilterGroup** method returns the number for the filter group. No filter group was selected explicitly so the filter is set in filter group 0. This value is stored in the `varOrigGroup` variable and displayed in a message box. Next, the **FilterGroup** method changes the filter group to 100. The new value is stored in the `varCurrGroup` variable and displayed in a message box.  
   
 ```
@@ -104,7 +105,8 @@ begin
 end;
 ```  
   
-## Example  
+## Example 2
+
 The following example finds all customers where the Customer Name or Contact Name contains the string **John**.  
  
 ```

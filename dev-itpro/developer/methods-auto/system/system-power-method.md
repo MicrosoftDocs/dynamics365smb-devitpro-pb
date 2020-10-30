@@ -40,7 +40,8 @@ The exponent in the exponential method.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
 ```  
 var
     Number1: Decimal;
@@ -61,7 +62,8 @@ end;
   
  This example shows that raising a number to the power of 0.5 corresponds to the square root of the number.  
   
-## Example  
+## Example 2
+
  This example shows a typical use for the POWER method.  
   
  If a principal amount P is deposited at interest rate R and compounded annually, then at the end of N years, the accumulated amount \(A\) is:  
