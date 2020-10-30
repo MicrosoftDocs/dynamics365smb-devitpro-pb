@@ -45,10 +45,11 @@ The syntax for defining DateTime format follows the [ISO standard](https://en.wi
 
 ## SQL Server
 
-In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000. The latest permitted DateTime is December 31, 9999, 23:59:59.999. If you store a date in the database that is outside the valid range for a SQL DATETIME, a run-time error run-time occurs.  
+In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000. The latest permitted DateTime is December 31, 9999, 23:59:59.999. If you store a date in the database that is outside the valid range for a SQL DateTime, a runtime error occurs.  
 
 ## See Also
 
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[CurrentDateTime Method](../system/system-currentdatetime-method.md)
+[CurrentDateTime Method](../system/system-currentdatetime-method.md)  
+[Format Property](../../developer/properties/devenv-format-property.md)
