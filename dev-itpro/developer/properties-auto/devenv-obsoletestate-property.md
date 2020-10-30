@@ -56,6 +56,22 @@ Marks whether the table, field, or key is or will become obsolete (deprecated).
 |Pending|Will become obsolete in a future version.|
 |Removed|Has been made obsolete.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+ObsoleteState = Pending;
+```
+
+## Remarks
+
+By coding against this property, you can use this property as a way to communicate through code to other developers which objects and elements will become obsolete over time and those which are already obsolete, enabling them to adjust their application code accordingly.
+
+> [!NOTE]  
+> When developing using [!INCLUDE[nav_dev_long_md](../includes/nav_dev_long_md.md)] (CSIDE), you do not get warnings or errors when you compile objects that reference table objects, fields, or keys that are marked as **Pending** or **Removed**. **ObsoleteState** property is only detected by the AL compiler, which will return warnings for references to elements marked as **Pending** and errors for references to elements marked as **Removed**.
+
+## See Also
+
+[ObsoleteReason Property](devenv-obsoletereason-property.md)  
+[Properties](devenv-properties.md)  
+[Upgrade Codeunits](../devenv-methodtype-property-upgrade-codeunits.md)  
