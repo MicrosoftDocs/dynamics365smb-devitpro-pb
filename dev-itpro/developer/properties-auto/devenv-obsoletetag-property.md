@@ -49,6 +49,20 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Control Add In
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+ObsoleteTag = 'This field is being deprecated with the newest build of the product.';
+```
+
+## Remarks
+
+Use this property to add valuable information to developers about a table, field, or key that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete(<Reason>,<tag>)]`. For more information, see [Obsolete Attribute](../methods/devenv-obsolete-attribute.md).
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[ObsoleteReason](devenv-obsoletereason-property.md)  
+[ObsoleteState](devenv-obsoletestate-property.md)  
+[Properties](devenv-properties.md)  
+[MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  

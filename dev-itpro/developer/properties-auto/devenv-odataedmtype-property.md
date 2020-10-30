@@ -20,6 +20,13 @@ Specifies the Entity Data Model Type to be used for this node in the OData metad
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+ODataEDMType = 'POSTALADDRESS';
+```  
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
