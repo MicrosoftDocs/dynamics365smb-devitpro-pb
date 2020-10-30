@@ -40,7 +40,7 @@ For a simple code example of a role center page, see [Simple Role Center Code Ex
 
 The navigation and actions area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:
 
-|    |Area|Description|Usage Guidelines|
+|  No.  |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
 |1|Navigation menus|The top-level navigation consists of one or more root menu items that expand to display links to other pages. The links can be grouped into sub-menus, enabling you to create a logical hierarchy. The pages targeted by the links will open in the content area of the Role Center. <br /><br />You define this area with an `area(Sections)` control in the page code.|The top-level navigation should provide access to relevant entity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root items in order of importance, starting from the left.|
 |2|Navigation bar|The second-level navigation displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />You define this area with an `area(embedding)` control in the page code.|You should use these items to link to users’ most useful entity lists in their business process. For example, with a business manager, these could be links to customers, sales orders, and bank accounts. You should place items in the order that reflects the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead, if the number gets too large. |
@@ -62,7 +62,7 @@ The content area consists of one or more parts that display content from other p
 
 The following table describes some of the most common parts for Role Centers, as illustrated in the previous figure.
 
-|    |Element|Description|More information|
+|  No.  |Element|Description|More information|
 |----|-------|-----------|----------------|
 |4|Headline|Displays a series of automatically changing headlines that provide users with up-to-date information and insight into the business and daily work. This is created by a `HeadlinePart` page type. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
 |5|Wide data cues | A set of cues for displaying large numbers, like monetary values. This is created by using a `cuegroup` control on a `CardPart` page type, where the [Layout property](properties/devenv-layout-property.md) is set to `wide`. |[Wide Cues](devenv-cues-action-tiles.md#CueWideLayout)|
