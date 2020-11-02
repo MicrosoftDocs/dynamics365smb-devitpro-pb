@@ -102,7 +102,7 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
      For example, if **BCSERVER** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and **[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]** is the instance name, the actual command has the following format.  
   
     ```  
-    setspn -A BC150/BCSERVER.corp:7046 corp\bcdomainuser  
+    setspn -A BC160/BCSERVER.corp:7046 corp\bcdomainuser  
     ```  
   
 ##  <a name="Kernel"></a> Configuring Kernel Mode Authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)]   
