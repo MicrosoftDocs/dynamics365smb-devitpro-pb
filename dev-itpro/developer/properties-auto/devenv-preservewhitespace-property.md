@@ -24,6 +24,17 @@ When this property is set to Yes, no normalizations are performed.
 -   Xml Port
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+
+**False** to normalize white space; otherwise, **true** to not normalize white space. The default is **false**.  
+
+## Syntax
+
+```AL
+PreserveWhiteSpace = true;
+```
+ 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

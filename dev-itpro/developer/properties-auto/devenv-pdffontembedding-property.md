@@ -27,6 +27,7 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
 |Yes|TODO:Add documentation|
 |No|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
