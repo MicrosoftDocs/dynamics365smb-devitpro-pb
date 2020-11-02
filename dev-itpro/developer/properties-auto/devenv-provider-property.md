@@ -22,6 +22,14 @@ Sets the provider for a FactBox. This property enables you to create a link from
 -   Page Chart Part
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+Provider = PartName;
+```
+
+## See Also
+
+[Page Object](../devenv-page-object.md)
+[Properties](devenv-properties.md)

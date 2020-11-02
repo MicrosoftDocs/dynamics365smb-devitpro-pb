@@ -1,5 +1,5 @@
 ---
-title: "ProfileDescriptionML Property"
+title: "Promoted Property"
 ms.author: solsen
 ms.custom: na
 ms.date: 10/29/2020
@@ -13,21 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ProfileDescriptionML Property
-Sets the description of the profile that users will see in the relevant language.
+# Promoted Property
+Sets the value that indicates whether the selected action is promoted, which means that it appears on the Home tab as well as the tab where is it defined.
 
 ## Applies to
+-   Page Action
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Syntax
-
-```AL
-ProfileDescriptionML = ENU ='This profile can be used for processing sales order on a daily basis.', DAN = 'Denne profil kan bruges til daglig salgsordrehåndtering.';
-```
-
-## See Also
-
-[Properties](devenv-properties.md)  
-[ProfileDescription Property](devenv-profiledescription-property.md)
+## See Also  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

@@ -20,6 +20,14 @@ Sets the description of the profile that users will see.
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+ProfileDescription = 'This profile can be used for processing sales order on a daily basis.';
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[ProfileDescriptionML Property](devenv-profiledescriptionml-property.md)

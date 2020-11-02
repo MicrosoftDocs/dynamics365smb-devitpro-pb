@@ -20,6 +20,21 @@ Sets the value that indicates whether a report produces printed output or only p
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value
+
+**True** if you want a report that will not produce output; otherwise, **false**. The default is **false**. 
+
+## Syntax
+
+```AL
+ProcessingOnly = true;
+``` 
+  
+## Remarks  
+
+If **ProcessingOnly** is **true**, then the **Print** and **Preview** options on the request page are replaced by an **OK** button.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)
