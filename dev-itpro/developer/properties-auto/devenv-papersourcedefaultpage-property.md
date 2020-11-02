@@ -53,6 +53,14 @@ Specifies the default paper source to use when printing the report.
 |Custom15|TODO:Add documentation|
 |Custom16|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Syntax
+
+```AL
+PaperSourceDefaultPage = AutomaticFeed;
+```
+
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
