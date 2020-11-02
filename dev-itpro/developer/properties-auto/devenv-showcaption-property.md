@@ -22,6 +22,19 @@ Sets whether the text that is specified by the Caption Property is displayed for
 -   Page Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+
+**True** if the caption is displayed; otherwise, **false**. The default is **true**.  
+
+## Syntax
+
+```AL
+ShowCaption = false;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)   
+[Caption Property](devenv-caption-property.md)    
+
