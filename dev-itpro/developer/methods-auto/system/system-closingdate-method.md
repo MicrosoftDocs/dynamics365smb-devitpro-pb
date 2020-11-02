@@ -46,7 +46,8 @@ The input date.
   
  The compiler cannot convert the expression xxxxxxC to a Date data type. Therefore, you must use the CLOSINGDATE method to create a closing date.  
   
-## Example  
+## Example 1
+
  The first example shows how to use the CLOSINGDATE method. A regular date is given as input. 
 
 ```  
@@ -65,7 +66,8 @@ end;
   
  **The closing date for 04/04/14 is C04/04/14.**  
   
-## Example  
+## Example 2
+
  The second example shows some statements that do not work and explains why they do not work. 
  
 ```  
