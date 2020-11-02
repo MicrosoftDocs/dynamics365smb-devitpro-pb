@@ -20,6 +20,8 @@ Specifies the script which is invoked when the control add-in is refreshed.
 -   Control Add In
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

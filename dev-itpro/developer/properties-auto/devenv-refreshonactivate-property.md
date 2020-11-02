@@ -20,6 +20,18 @@ Set this property on pages where you want to refresh the data when the user navi
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+RefreshOnActivate = true;
+```
+ 
+## Remarks
+
+On RoleCenters, modifying data in one part will automatically refresh data in any other parts which have the RefreshOnActivate property set to **true**.
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[Page Properties](devenv-page-properties.md)
