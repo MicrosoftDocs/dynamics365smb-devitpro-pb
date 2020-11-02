@@ -32,6 +32,14 @@ The filters defined by this property are not visible in the UI and cannot be mod
 -   Page Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+
+The table view is the view of the table that you present to the user. You determine what records the user can see by setting filters, determining the sorting order, and selecting the keys.  
+  
+You can use this property to indicate how information should be sorted.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[RunObject Property](devenv-runobject-property.md)   
+[RunPageLink Property](devenv-runpagelink-property.md)
