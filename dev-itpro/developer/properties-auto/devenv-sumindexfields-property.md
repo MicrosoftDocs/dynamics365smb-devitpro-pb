@@ -20,6 +20,22 @@ Sets the SumIndexField Technology (SIFT) for the key, if applicable.
 -   Key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+key(PK;PK) { MaintainSqlIndex=false; MaintainSiftIndex=true; SumIndexFields=IntField; }
+```  
+ 
+## Remarks  
+
+You can select up to 20 SumIndexFields for each key.  
+  
+The fields must be of a numeric datatype \(Decimal, Integer, BigInteger, or Duration\).  
+  
+Changing existing keys may affect the behavior of the application since other parts of your application may depend on the existence of certain keys.  
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[AL Data Types](../datatypes/devenv-al-data-types.md)
