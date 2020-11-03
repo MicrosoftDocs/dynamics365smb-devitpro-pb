@@ -45,7 +45,8 @@ The resulting checksum value.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
  This example shows how to use the STRCHECKSUM method to calculate a checksum.  
  
 ```  
@@ -74,7 +75,8 @@ end;
 
  **has the checksum: 0**  
 
-## Example  
+## Example 2
+
  This example shows how to use the STRCHECKSUM method to calculate a modulus 10 checksum for a bar code.  
 
  The STRCHECKSUM method can be used to calculate checksums for 13- and 8-digit European Article Number \(EAN\) and EAN-compatible bar codes such as a Universal Product Code \(UPC\) or Japanese Article Number \(JAN\).  

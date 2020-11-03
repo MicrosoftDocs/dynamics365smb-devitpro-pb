@@ -24,7 +24,8 @@ The following permission sets have special definitions that you should be aware 
 
 ## See Also  
 [Removing Elements from the User Interface According to Permissions](hide-ui-elements.md)  
-[Assign Permissions to Users and Groups](/business-central/ui-define-granular-permissions)
+<!--[Assign Permissions to Users and Groups](/business-central/ui-define-granular-permissions)
+broken link removed in SEO audit cleanup-->
 <!--
 [Security Overview](Security-Overview.md)   
 [Removing Elements from the User Interface According to Permissions](Removing-Elements-from-the-User-Interface-According-to-Permissions.md)   

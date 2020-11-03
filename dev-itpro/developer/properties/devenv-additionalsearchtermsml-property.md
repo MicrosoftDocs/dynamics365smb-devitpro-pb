@@ -1,6 +1,6 @@
 ---
-title: "AdditionalSearchTerms Property"
-description: "Describes the AdditionalSearchTerms Property in AL."
+title: "AdditionalSearchTermsML Property"
+description: Describes the AdditionalSearchTermsML Property that specifies search terms for the page or report in different languages.
 author: jswymer
 ms.custom: na
 ms.date: 10/01/2020

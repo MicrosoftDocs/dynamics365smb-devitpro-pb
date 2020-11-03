@@ -63,7 +63,8 @@ Use this optional parameter to define a reference date. The default is the curre
 
  For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../../datatypes/devenv-duration-data-type.md).  
 
-## Example  
+## Example 1
+
  This code example shows how to use the production rules that were previously described.  
 
 ```  
@@ -79,7 +80,8 @@ Use this optional parameter to define a reference date. The default is the curre
 > [!NOTE]  
 >  The angle brackets \(\< >\) specify that the expression is not translated, regardless of the application language. <!-- For more information about multilanguage capabilities with date formulas, see [Developing Multilanguage-Enabled Applications](Developing-Multilanguage-Enabled-Applications.md).  -->
 
-## Example  
+## Example 2
+
  This example shows how to use the CALCDATE method.  
  
 ``` 

@@ -1,6 +1,6 @@
 ---
 title: "AdditionalSearchTerms Property"
-description: "Describes the AdditionalSearchTerms Property in AL."
+description: Describes the AdditionalSearchTerms Property that specifies search terms for the page or report.
 author: jswymer
 ms.custom: na
 ms.date: 10/01/2020
