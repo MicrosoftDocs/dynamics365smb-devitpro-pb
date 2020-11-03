@@ -18,8 +18,9 @@ Sets the width of a field when it appears as a column in a list. The width is sp
   
 ## Applies to  
   
-- Page fields  
-- Table fields  
+-   Table Field
+-   Page Field
+-   Page Label
 
 ## Syntax
 

@@ -31,6 +31,10 @@ Indicates whether the system will clear a range of numbers as it formats them.
 |BlankZeroAndPos|TODO:Add documentation|
 |BlankPos|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax  
+```AL
+BlankNumbers = BlankNegAndZero;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+ [BlankZero Property](devenv-blankzero-property.md)

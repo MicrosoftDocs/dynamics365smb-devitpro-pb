@@ -18,7 +18,11 @@ Sets the width of a data item of an XMLport.
   
 ## Applies to  
 
-- Data items in XMLports 
+-   Xml Port Text Element
+-   Xml Port Field Element
+-   Xml Port Table Element
+-   Xml Port Field Attribute
+-   Xml Port Text Attribute
 
 ## Syntax
 

@@ -22,6 +22,21 @@ Sets whether FlowFields should be automatically calculated.
 -   Report Column
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+ **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
+
+## Syntax
+```AL
+AutoCalcField = false;
+```
+
+## Remarks
+FlowFields have an effect if the associated data source is a calculated value of the FlowFields.
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[FlowFields](../devenv-flowfields.md)   
+[Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
+[CalcFormula Property](devenv-calcformula-property.md)  
+[FlowFilter Overview](../devenv-flowfilter-overview.md)   
+[CalcFields Property](devenv-calcfields-property.md)
