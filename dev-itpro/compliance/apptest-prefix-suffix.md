@@ -3,7 +3,7 @@ title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/12/2020
+ms.date: 11/05/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -92,19 +92,22 @@ Let's say that you're creating a per-tenant extension, **myext** and you want to
 
 Let's look at some examples:
 
-| Prefixes                      | Suffixes                      |
-|-------------------------------|-------------------------------|
-| pte-myext-salespersoncode.al  | salespersoncode-myext-pte.al  |
-| pte_myext_salespersoncode.al  | salespersoncode_myext_pte.al  |
-| pte myext salesperson code.al | salesperson code myext pte.al |
-| pteMyExtSalesPersonCode.al    | SalesPersonCodeMyExtPte.al    |
+| Prefixes                   | Suffixes                   |
+|----------------------------|----------------------------|
+| pte-myext-salespersoncode  | salespersoncode-myext-pte  |
+| pte_myext_salespersoncode  | salespersoncode_myext_pte  |
+| pte myext salesperson code | salesperson code myext pte |
+| pteMyExtSalesPersonCode    | SalesPersonCodeMyExtPte    |
 
 ## Examples - AppSource app
 
-Alternatively, let's say you're company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
+Alternatively, let's say your company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
 
 > [!TIP]
 > It is always a good idea to supply a few suggestions in priority order to avoid back and forth communication.
+
+> [!NOTE]  
+> For AppSource validation file names are not enforced; only object names.
 
 A registered affix must be 3 letters, no more, no less, and you must provide the publisher name, which you will be using in app.json when you apply for an affix.  
 
@@ -127,6 +130,9 @@ At Fabrikam, another team is building another app, so you request a special affi
 |FabRentalsSalesPersonCode.al|SalesPersonCodeRentalsfab.al|
 
 In this scenario, your appSourceCop.json configuration will specify something like `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
+
+> [!IMPORTANT]  
+> You are not required to change any already registered affixes; you can continue using these affixes. The guidelines above only apply to new registrations.
 
 > [!TIP]
 > Contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) to reserve the prefix/suffix of your choosing.
