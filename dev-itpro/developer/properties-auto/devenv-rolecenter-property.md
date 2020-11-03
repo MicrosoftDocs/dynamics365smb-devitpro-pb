@@ -20,6 +20,14 @@ Specifies the Role Center Page for this profile.
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+RoleCenter = MyRoleCenter;
+```
+
+## See Also
+
+[Profile Object](../devenv-profile-object.md)  
+[Designing Role Centers](../devenv-designing-role-centers.md)

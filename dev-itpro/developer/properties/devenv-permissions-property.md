@@ -45,11 +45,30 @@ You can give users access to an object, but only through another object. This is
 
 However, the user does not need full access to the Sales Line table to run the codeunit. If the user has Indirect permission for the Sales Line table, then the Sales-Post codeunit runs successfully. When a user has Indirect permission, that user can only modify the Sales Line table by running the Sales-Post codeunit or another object that has permission to modify the Sales Line table. The user can only modify the Sales Line table when doing so from supported application areas. The user cannot run the feature inadvertently or maliciously by other methods.
 
+<!--
 |||Permission granted|Permission granted|Permission granted|
 |---------|---------|---------|---------|---------|
 |||**Blank**<br> No permissions|**Indirect**<br>|**Yes**<br>Direct permission|
 |Permission property in object|Defined|Result: Runtime error caused by missing permissions.<br>The user must also have Indirect permission.|Result: Success|Result: Success <br> User has full access to the data.|
 |Permission property in object|Not defined<br>Default|Result: Runtime error caused by missing permissions.|Result: Runtime error caused by missing permissions.|Result: Success|
+-->
+
+The following table illustrates how the Permission property works with the permissions granted to an object by the license or a permission set. The table shows the runtime results when the Permission property is set and when it isn't.
+
+<!--
+|Is Permission property set?|No permission to object|Indirect permission to object|Direct permission to object |
+|---------|---------|---------|---------|
+|Yes|Runtime error caused by missing permissions.|Success|Success <br> User has full access to the data.|
+|No (default)|Runtime error caused by missing permissions.|Runtime error caused by missing permissions.|Success|
+
+-->
+
+|Permissions granted by permission set|Permission property not set|Permission property set|
+|---------|---------|---------|
+|None|Runtime error caused by missing permissions.|Runtime error caused by missing permissions.|
+|Indirect permission|Runtime error caused by missing permissions.|Success|
+|Direct permission|Success|Success<br> User has full access to the data.|
+
 
 The following example shows how to specify the permissions property for the codeunit used for customer ledger entries. You can define the permissions property in other objects in the same way.
 

@@ -21,6 +21,19 @@ Sets a value that requires that users enter only numbers in the field.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+Numeric = true;
+```
+  
+## Remarks  
+
+This setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **Numeric** property is not validated.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[MinValue Property](devenv-minvalue-property.md)  
+[MaxValue Property](devenv-maxvalue-property.md)  
+[Properties](devenv-properties.md)

@@ -14,7 +14,10 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-AppSource apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be developed to get secrets from Azure Keys Vaults. The app key vault feature is readily available for use on the service by all App Source apps. However, there are some onboarding tasks required.  
+AppSource apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be developed to get secrets from Azure Keys Vaults. The app key vault feature is readily available for use on the service by all App Source apps. However, there are some onboarding tasks required.
+
+> [!IMPORTANT]
+> With [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, App key vaults can only be used with AppSource apps. They're not supported with per-tenant extensions.
 
 > [!TIP]
 > You must also specify secrets in a key vault if you deploy [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as part of the Embed App program. Especially if you must support the Outlook add-in, in which case you must specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. <!--For more information, see [Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](Setting-up-Office-Add-Ins-Outlook-Inbox.md).-->

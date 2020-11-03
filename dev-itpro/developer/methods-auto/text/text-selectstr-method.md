@@ -50,7 +50,7 @@ The substring from the comma-separated string at the index specified.
   
  Quotes are not supported. For example, a,b,"c,d",e is treated as a five-element substring where substring 4 is d".  
   
-## Example  
+## Example 1
  
 ```  
 var
@@ -86,7 +86,8 @@ end;
   
  **>33\<**  
   
-## Example   
+## Example 2
+
 ```  
 var
     CommaStr2: Text[60];  

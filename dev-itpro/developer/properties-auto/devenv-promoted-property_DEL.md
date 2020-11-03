@@ -1,5 +1,5 @@
 ---
-title: "SourceTableTemporary Property"
+title: "Promoted Property"
 ms.author: solsen
 ms.custom: na
 ms.date: 10/29/2020
@@ -13,25 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SourceTableTemporary Property
-Sets whether the source table is a temporary table.
+# Promoted Property
+Sets the value that indicates whether the selected action is promoted, which means that it appears on the Home tab as well as the tab where is it defined.
 
 ## Applies to
--   Page
--   Request Page
+-   Page Action
+-   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Property Value  
-
-**True** if you want the source table to be a temporary table; otherwise, **false**. The default value is **false**.
-
-## Syntax
-
-```AL
-SourceTableTemporary = true;
-```
-
-## See Also
-
-[Properties](devenv-properties.md)   
+## See Also  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

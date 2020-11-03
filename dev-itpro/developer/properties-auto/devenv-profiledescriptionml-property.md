@@ -20,6 +20,14 @@ Sets the description of the profile that users will see in the relevant language
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+ProfileDescriptionML = ENU ='This profile can be used for processing sales order on a daily basis.', DAN = 'Denne profil kan bruges til daglig salgsordrehåndtering.';
+```
+
+## See Also
+
+[Properties](devenv-properties.md)  
+[ProfileDescription Property](devenv-profiledescription-property.md)

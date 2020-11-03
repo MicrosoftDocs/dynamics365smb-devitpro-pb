@@ -26,6 +26,14 @@ Sets the type of query to create.
 |Normal|TODO:Add documentation|
 |API|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+QueryType = API;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[Query Object](../devenv-query-object.md)

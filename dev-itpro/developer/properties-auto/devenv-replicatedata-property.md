@@ -20,6 +20,18 @@ Specifies if the table should be replicated.
 -   Table
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property
+
+**True** if the table data is replicated to the cloud service otherwise, **false**. The default is **true**.  
+
+## Syntax
+
+```AL
+ReplicateData = false;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[Table Properties](devenv-table-properties.md)  

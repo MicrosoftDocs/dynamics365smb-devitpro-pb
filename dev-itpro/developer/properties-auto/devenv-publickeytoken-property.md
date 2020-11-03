@@ -20,6 +20,14 @@ Specifies the public key token of the .NET assembly.
 -   Dot Net Assembly
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+PublicKeyToken = 'b77e3c561734a029';
+```
+
+## See Also
+
+[Control Add-In Object](../devenv-control-addin-object.md)   
+ 

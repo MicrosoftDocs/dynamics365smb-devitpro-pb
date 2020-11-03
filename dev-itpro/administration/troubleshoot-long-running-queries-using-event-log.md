@@ -1,15 +1,15 @@
 ---
-title: "Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Microsoft Dynamics 365 Business Central"
-description: This article describes how to troubleshoot long running SQL queries that use the event viewer.
+title: "Using Event Log to Monitor Long Running SQL Queries"
+description: Shows how to monitor long running SQL queries in Event Viewer. Use the information determine SQL queries that are good candidates for optimization.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 
 # Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central

@@ -40,6 +40,21 @@ Sets the type of page to create.
 |XmlPort|TODO:Add documentation|
 |HeadlinePart|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+PageType = List;
+```
+
+## Remarks  
+
+You typically set this property when you are create new pages, but you can change it at any time. The value for the **PageType** property specifies the Page layout.
+
+The exception is the value *API*. Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. For an overview of supported page types, see [Pages Overview](../devenv-pages-overview.md).
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Page Properties](devenv-page-properties.md)  
+[Properties](devenv-properties.md)  
+[Pages Overview](../devenv-pages-overview.md)  

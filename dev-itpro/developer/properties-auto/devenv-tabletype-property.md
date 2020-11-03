@@ -31,6 +31,37 @@ Specifies the table type.
 |CDS|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
 |Temporary|Specifies the table as an in-memory table used to store temporary data.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+TableType = CDS;
+```
+
+## Remarks
+
+Tables that are marked as **CDS** or **ExternalSQL** are considered external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. 
+
+> [!IMPORTANT]  
+> We advise against creating tables of type CDS manually. Instead, use the integration mapping functionality.
+<!-- For more information, see [Introduction to Dynamics 365 for Sales Integration Customization in Dynamics NAV](Introduction-to-Dynamics-CRM-Integration-Customization-in-Dynamics-NAV.md).  
+ -->
+
+## Temporary tables
+
+Marking a table as **Temporary** is the same as:
+
+- Setting all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
+- Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
+
+Temporary tables are not synchronized with the SQL database, so they do not follow the same rules about making destructive changes.
+
+You can change an existing table from **Normal** to **Temporary**. But the table will be deleted from the database when you synchronize the extension. If the table contains data, you'll have to use the ForceSync mode.
+
+For more information, see [Temporary Tables](../devenv-temporary-tables.md).
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)  
+[Temporary Property](devenv-temporary-property.md)  

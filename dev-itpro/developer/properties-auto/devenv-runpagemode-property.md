@@ -27,6 +27,14 @@ Sets the mode in which the page is run. Choose between View, Edit, or Create.
 |Edit|TODO:Add documentation|
 |Create|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+RunPageMode = Edit;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[RunObject Property](devenv-runobject-property.md)

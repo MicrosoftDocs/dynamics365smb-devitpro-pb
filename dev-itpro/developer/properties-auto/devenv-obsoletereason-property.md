@@ -49,6 +49,20 @@ Specifies why a table, field, or key has been marked as Pending or Obsolete in t
 -   Control Add In
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+ObsoleteReason = 'Not Needed';
+```
+
+## Remarks 
+
+Use this property to inform developers about a table, field, or key that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
+
+## See Also
+
+[ObsoleteState](devenv-obsoletestate-property.md)  
+[ObsoleteTag](devenv-obsoletetag-property.md)  
+[Properties](devenv-properties.md)  
+[MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  

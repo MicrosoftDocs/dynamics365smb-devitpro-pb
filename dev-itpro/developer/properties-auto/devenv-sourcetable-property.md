@@ -21,6 +21,19 @@ Sets the ID of the table from which this page will display records.
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+SourceTable = Customer;
+```
+  
+## Remarks
+
+Use the up arrow to select the table you want. There are some page types that do not support having a source table. 
+The SourceTable defines the structure of the record that you want to show on the page. 
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Page Property Overview](devenv-page-property-overview.md)   
+[Properties](devenv-page-property-overview.md)

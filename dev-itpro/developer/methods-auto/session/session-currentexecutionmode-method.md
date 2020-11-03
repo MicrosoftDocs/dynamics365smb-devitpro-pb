@@ -41,6 +41,7 @@ The mode in which the session is running.
 ```  
 Mode := CURRENTEXECUTIONMODE;   
 MESSAGE('Current execution mode is %1.', Mode); 
+```
 
 ## See Also
 [Session Data Type](session-data-type.md)  

@@ -48,7 +48,8 @@ The one-based index of the first occurrence of the substring inside the string.
   
  If *String* or *SubString* is empty, then the method returns zero.  
   
-## Example  
+## Example 1
+
  This example shows how to use the STRPOS method.  
   
 ```  
@@ -76,7 +77,7 @@ end;
   
  **returns the position: 5**  
   
-## Example  
+## Example 2
   
 ```  
 Pos1 := StrPos("abc",""); // Returns 0.  

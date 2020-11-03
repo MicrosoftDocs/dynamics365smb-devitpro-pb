@@ -32,6 +32,24 @@ SubPageView =
 -   Page Chart Part
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks  
+
+The table view is the view of the table that you present to the user. You determine what records the user can see by setting filters, determining the sorting order, and selecting the keys.  
+  
+You can use this property to sort the information in the table for display in this part.
+
+
+## Example
+
+```AL
+SubPageView = sorting("No.") where (City=filter('Miami'));
+```
+
+For an example of a page part using the `SubPageView` property, see [Adding a FactBox to a Page](../devenv-adding-a-factbox-to-page.md).
+
+## See Also 
+ 
+[Properties](devenv-properties.md)  
+[SubPageLink Property](devenv-subpagelink-property.md)  
+ 

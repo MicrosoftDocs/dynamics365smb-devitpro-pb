@@ -21,6 +21,19 @@ Sets whether user-specific control values are saved for this page.
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Property Value  
+
+**True** if user-defined control values are saved; otherwise, **false**. The default is **false**.  
+  
+## Remarks  
+
+This information is saved in the `Page Data Personalization` table.  
+
+The **SaveValues** property enables the *Saved Settings* feature, that is, to save a predefined group of options and filters for a page or request page. You can later use the saved settings to consistently generate the same reports, XMLports, or batch jobs. For more information, see [Manage Saved Settings for Reports and Batch jobs](https://docs.microsoft.com/dynamics365/business-central/reports-saving-reusing-settings).
+  
+## See Also
+
+[Properties](devenv-properties.md)  
+[Manage Saved Settings for Reports and Batch jobs](/business-central/reports-saving-reusing-settings)  
+[Using Saved Settings](/business-central/ui-work-report#SavedSettings)

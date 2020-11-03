@@ -24,6 +24,20 @@ Sets whether the filter pane is shown on a page by default.
 -   Page Part
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Property Values  
+
+**True** to show the filter pane; otherwise, **false**. The default value is **true**.
+
+## Syntax
+
+```AL
+ShowFilter = false;
+``` 
+  
+## Remarks  
+
+Using customization, a user can override the ShowFilter property setting to show or hide the filter except when the page is displayed in a part of another page, such as a FastTab or FactBox. When the page is displayed in a page part, the ShowFilter property permanently hides or shows the filter pane.
+
+## See Also
+[Properties](devenv-properties.md)

@@ -20,6 +20,28 @@ Sets the source table number, if any, for this codeunit.
 -   Codeunit
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+Although you do not see this in AL code, setting the **TableNo** property changes the signature of the `OnRun` trigger of the codeunit to include a variable `Record` data type parameter (named `Rec`) for the specified table. For example, the following code sets the **TableNo** property in a codeunit to the **Item** table.
+
+```AL
+codeunit 50100 MyCodeunit
+{
+    TableNo = Item;
+
+    trigger OnRun()
+    begin
+        
+    end;
+
+}
+```
+
+The signature of the `OnRun` trigger is `OnRun(var Rec : Record Item)`. 
+
+You can then use the `Rec` variable in the codeunit, and use the  [Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-RUN-method.md) to execute the codeunit.  
+  
+## See Also
+
+[Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-run-method.md)

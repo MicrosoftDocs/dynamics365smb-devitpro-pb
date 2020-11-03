@@ -20,6 +20,17 @@ Sets the object you want to run immediately when the action is activated.
 -   Page Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks  
+
+Use this property to select the object you want to run.  
+  
+Use the following properties to set parameters for the object you want to run:  
+  
+- [RunPageView Property](devenv-runpageview-property.md)  
+- [RunPageLink Property](devenv-runpagelink-property.md)  
+  
+## See Also
+
+[RunPageView Property](devenv-runpageview-property.md)   
+[RunPageLink Property](devenv-runpagelink-property.md)

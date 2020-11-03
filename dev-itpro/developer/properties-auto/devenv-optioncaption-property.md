@@ -22,6 +22,30 @@ Sets the text string options that are displayed to the user.
 -   Report Column
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+field(1300; "Payment Prediction"; Option)
+{
+    OptionMembers = " ",Late,"On-Time";
+    OptionCaption = ' ,Late,On-Time';
+}
+```
+
+```AL
+field(1301; "Prediction Confidence"; Option)
+{
+    OptionMembers = " ",Low,Medium,High;
+    OptionCaption = ' ,Low,Medium,High';
+}
+```
+
+## Remarks
+
+**OptionCaption** sets the text used to show the option values available for a variable or a field on a page or report. The [OptionString Property](devenv-optionstring-property.md) contains the set of values that are acceptable choices. If you have set the [OptionCaptionML Property](devenv-optioncaptionml-property.md), this overrides the OptionCaption setting.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[OptionString Property](devenv-optionstring-property.md)  
+[OptionCaptionML Property](devenv-optioncaptionml-property.md)  

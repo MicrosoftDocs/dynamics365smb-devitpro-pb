@@ -29,12 +29,12 @@ An instance of the [Record](record-data-type.md) data type.
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 
-        The field that you want to test.
+The field that you want to test.
         
 *Value*  
 &emsp;Type: [Enum](../enum/enum-data-type.md)  
 
-        The value that you want to compare to Field. The data type of this parameter must match the data type of Field. If you include this optional parameter and the contents of Field do not match, then an error message is displayed. If you omit this parameter and the contents of Field is zero or blank (empty string), then an error message is displayed.
+The value that you want to compare to Field. The data type of this parameter must match the data type of Field. If you include this optional parameter and the contents of Field do not match, then an error message is displayed. If you omit this parameter and the contents of Field is zero or blank (empty string), then an error message is displayed.
         
 
 

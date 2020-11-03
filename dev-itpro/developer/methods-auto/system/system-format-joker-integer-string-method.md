@@ -79,7 +79,8 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 > [!NOTE]  
 > You cannot use both *FormatNumber* and *FormatStr* at the same time.
 
-## Example  
+## Example 1
+
 
 ```  
 var
@@ -108,7 +109,8 @@ On a computer that has the regional format set to Danish \(Denmark\), the messag
 
 **The formatted value: > 123.456,78-\<**  
 
-## Example  
+## Example 2
+
 This example shows how to use a string to build a format.
 ```  
 var

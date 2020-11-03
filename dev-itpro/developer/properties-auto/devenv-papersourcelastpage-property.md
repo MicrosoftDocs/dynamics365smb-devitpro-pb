@@ -53,6 +53,13 @@ Specifies which paper source to use when printing the last page of the report.
 |Custom15|TODO:Add documentation|
 |Custom16|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+PaperSourceLastPage = AutomaticFeed;
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
