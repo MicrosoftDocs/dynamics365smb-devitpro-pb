@@ -20,6 +20,15 @@ Specifies the version of the .NET assembly.
 -   Dot Net Assembly
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+Version = '4.0.0.0';
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)       
+[Control Add-In Object](../devenv-control-addin-object.md)   
+ 

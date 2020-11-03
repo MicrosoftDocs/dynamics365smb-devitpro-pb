@@ -28,6 +28,17 @@ Sets a value that specifies what happens when a main page with a subpage is upda
 |SubPart|An update action will update the subpage only|
 |Both|An update action will update both the main page and the subpage|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+ UpdatePropagation = Both;
+```
+ 
+## Remarks
+
+Use the **UpdatePropagation** property to update a main page total, when the amount on the subpage lines is updated. Add a `CurrPage.UPDATE();` call, for example, in the OnValidate trigger on the subpage to have the **UpdatePropagation** property take effect.
+
+## See Also
+
+[Properties](devenv-properties.md) 
