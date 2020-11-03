@@ -28,6 +28,19 @@ Specifies the type of access to the original table field in the external databas
 |Modify|TODO:Add documentation|
 |Read|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+ExternalAccess = Full;
+```
+
+## Remarks
+
+This property appears when you specify **CDS** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[TableType Property](devenv-tabletype-property.md)   
+[ExternalSchema Property](devenv-externalschema-property.md)   
+[Name Property](devenv-name-property.md)   
+[Properties](devenv-properties.md)   

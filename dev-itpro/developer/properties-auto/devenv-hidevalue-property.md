@@ -21,6 +21,16 @@ Sets whether to show or hide a value for the user based on an expression.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property Values  
+
+**True** if the value is hidden; otherwise, **false**. The default is **false**.  
+
+## Syntax
+
+```AL
+HideValue = true;
+```
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

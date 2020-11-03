@@ -20,6 +20,23 @@ HorizontalStretch specifies that the control add-in can be made larger horizonta
 -   Control Add In
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Values
+
+**True** if the control add-in is allowed to stretch horizontally. The default value is **false**.
+
+## Remarks
+
+HorizontalStretch is typically used together with the [MaximumWidth](devenv-maximumwidth-property.md) property. If HorizontalStretch is **true** but [MaximumWidth](devenv-maximumwidth-property.md) is not set, the control add-in can stretch indefinitely.
+
+## Example
+
+```AL
+RequestedWidth = 600;
+HorizontalStretch = true;
+MaximumWidth = 800;
+```
+
+## See Also
+
+[Control Add-In Object](../devenv-control-addin-object.md)   
+ 

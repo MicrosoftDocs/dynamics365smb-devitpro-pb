@@ -27,6 +27,17 @@ Sets the class of the field.
 |FlowField|TODO:Add documentation|
 |FlowFilter|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Syntax
+
+```AL
+FieldClass = FlowFilter;
+```  
+
+## Remarks  
+
+There are three classes of fields: Normal, FlowFields, and FlowFilters. For more information, see [FlowFields](../devenv-flowfields.md) and [FlowFilter Overview](../devenv-flowfilter-overview.md).  
+  
+## See Also
+  
+[Properties](devenv-properties.md)   
+ 

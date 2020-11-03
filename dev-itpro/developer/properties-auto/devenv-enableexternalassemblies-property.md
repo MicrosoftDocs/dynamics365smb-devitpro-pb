@@ -20,6 +20,29 @@ Sets whether external Microsoft .NET assemblies can be used on a report.
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value  
+
+**True** if external assemblies can be used; otherwise, **false**. The default is **false**.  
+
+## Syntax
+
+```AL
+EnableExternalAssemblies = true;
+``` 
+
+## Remarks  
+
+> [NOTE]
+> It applies to client report definition \(RDLC\) report layouts.  
+
+When you use the Visual Studio Report Designer for creating reports for the RoleTailored client, you can reference external assemblies to add functionality to a report. The location of the assembly must be accessible from the RoleTailored client. To use external assemblies on a report, the EnableExternalAssemblies property must be set to **true**.  
+  
+For more information about referencing assemblies, see [Adding Custom Code to a Report \(Visual Studio Report Designer\)](https://go.microsoft.com/fwlink/?LinkID=184561&clcid=0x409).  
+  
+## Security Considerations  
+
+[!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] cannot verify assemblies and protect against malicious sources that may be harmful to your computer. You should set the EnableExternalAssemblies property to **true** only if you can ensure that assemblies on the report come from a trusted source.  
+  
+## See Also
+
+[Properties](devenv-properties.md)   

@@ -21,6 +21,13 @@ Specifies the help link to show when the user presses Help in the UI.
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Syntax
+
+```AL
+HelpLink = 'https://www.my-help-link-page.com';
+```
+
+## See Also
+
+[Page Object](../devenv-page-object.md)  
+[Adding Help Links from Pages, Reports, and XMLports](../devenv-adding-help-links-from-pages-tables-xmlports.md)

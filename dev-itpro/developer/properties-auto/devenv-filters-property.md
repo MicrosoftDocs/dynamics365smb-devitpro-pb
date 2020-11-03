@@ -27,6 +27,29 @@ Filters = [WHERE(<TableFilters>)]
 -   Page View
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Example
+
+```AL
+pagecustomization MyCustomization customizes "Customer List"
+{
+    views
+    {
+        addfirst
+        {
+            view(BalanceLCY)
+            {
+                Caption = 'Ordered Balance LCY';
+                OrderBy = ascending ("Balance (LCY)");
+                Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
+            }
+        }
+    }
+}
+
+```
+
+For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters). 
+  
+## See Also
+
+[Properties](devenv-properties.md)

@@ -28,6 +28,18 @@ Specifies a gesture that runs the action on a device with a touch interface, suc
 |RightSwipe|TODO:Add documentation|
 |ContextMenu|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+Gesture = None;
+```
+
+## Remarks
+
+You typically use the Gesture property on list type pages for executing an action on items in a repeater control.
+
+## See Also
+
+[Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md)  
+[Introducing the Dynamics 365 Business Central Mobile App](../devenv-introducing-business-central-mobile-app.md)   

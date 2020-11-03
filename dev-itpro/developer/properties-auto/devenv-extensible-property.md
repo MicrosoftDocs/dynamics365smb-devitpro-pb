@@ -22,6 +22,24 @@ Sets whether an Enum can be extended or not.
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value  
+
+**True** if the table, page, or enum can be extended; otherwise, **false**. The default is **true** on tables and pages, and **false** on enums.  
+
+## Syntax
+
+```AL
+table 50111 MyTable
+{
+    DataClassification = CustomerContent;
+    Extensible = true;
+    ...
+
+```
+
+## See Also
+
+[Table Properties](devenv-table-properties.md)  
+[Properties](devenv-properties.md)  
+[Access Property](devenv-access-property.md)  
+[Extensible Enums](../devenv-extensible-enums.md)

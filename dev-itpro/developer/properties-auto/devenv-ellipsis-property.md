@@ -20,6 +20,16 @@ Sets a value that specifies whether an ellipsis (...) is appended to the caption
 -   Page Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value
+
+**True** if the ellipsis is appended; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+
+```AL
+Ellipsis = true;
+```
+  
+## See Also
+
+[Properties](devenv-properties.md)

@@ -20,6 +20,14 @@ Specifies the columns in a list that remain in view on a page, even when you scr
 -   Page Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+FreezeColumn = GroupCompanyDisplayName;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[Page object](../devenv-page-object.md)  
+[FreezeColumnID Property](devenv-freezecolumnid-property.md)
