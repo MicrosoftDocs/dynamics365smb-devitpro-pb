@@ -20,6 +20,19 @@ Sets assist-edit capabilities for a text box.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+ **True** if assist-edit capabilities and an AssistEdit button are provided; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+
+```AL
+AssistEdit = true;
+```
+
+## Remarks  
+ You can add AL code in the [OnAssistEdit Trigger](../triggers/devenv-onassistedit-trigger.md) to change the default assist-edit behavior.  
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+ [Lookup Property](devenv-lookup-property.md)   
+ [DrillDown Property](devenv-drilldown-property.md)

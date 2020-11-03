@@ -37,6 +37,40 @@ All types of UI elements will be removed if they relate to an object to which th
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [!NOTE]  
+>  For this property to take effect in the client, the **UI Elements Removal** setting of [!INCLUDE[server](../includes/server.md)] configuration must be set to **LicenseFile** or **LicenseFileAndUserPermissions**. For more information, see [Hide UI Elements](../../administration/hide-ui-elements.md).  
+
+## Property Values  
+
+The **AccessByPermission** property values are as described below: 
+
+| Values   |Represents  |Description   |
+|----------|------------|-------------------------------------------------------|
+|R         |Read        |Specify if Read permission is required to display the UI element.|
+|I         |Insert      |Specify if Insert permission is required to display the UI element.| 
+|M         |Modify      |Specify if Modify permission is required to display the UI element.
+|D         |Delete      |Specify if Delete permission is required to display the UI element.|
+|X         |Execute     |Specify if Execute permission is required to display the UI element.|
+
+## Remarks
+
+The property value for TableData can be set with a combination of **Read**, **Insert**, **Modify** and **Delete** permissions. This means, you can set the property value to ``RIMD`` permissions; the value ``X`` is not valid for TableData. 
+
+For other objects including Table, Page, Query, Report, Codeunit, or Xmlport, it can only be **Execute** permission. This means, you can set the property value to ``X`` for the specified object type. 
+
+> [!NOTE]  
+>  If you set multiple permissions, then one or the other applies. 
+
+## Syntax
+```AL
+AccessByPermission = tabledata MySetup = I; 
+```
+
+## Dependent Property
+
+The **UsageCategory** property is a required setting used together with the **AccessByPermission** property. This enables a page or a report to be available in Search for the navigation support. For more information about navigation support, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).  
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

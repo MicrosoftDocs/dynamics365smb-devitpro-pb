@@ -21,6 +21,13 @@ Indicates whether the system displays zeros (0) and No.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property Value  
+ **True** if zeros and No are not displayed; otherwise, **false**. The default is **false**.  
+  
+## Syntax
+```AL
+BlankZero = true;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+ [BlankNumbers Property](devenv-blanknumbers-property.md)

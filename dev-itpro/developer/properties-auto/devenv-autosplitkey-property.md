@@ -21,6 +21,21 @@ Sets whether a key is automatically created for a new record placed between the 
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+ **True** if the key is automatically created for the new record; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+```AL
+AutoSplitKey = true;
+```
+
+## Remarks  
+To set this property to a value of **true**, the following conditions must be met:  
+  
+- The current key must be the primary key.  
+  
+- The last field in the primary key must be an [Integer Data Type](../datatypes/devenv-integer-data-type.md), [BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md), [GUID Data Type](../datatypes/devenv-guid-data-type.md), or [Decimal Data Type](../datatypes/devenv-decimal-data-type.md) field.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Properties](devenv-properties.md)
