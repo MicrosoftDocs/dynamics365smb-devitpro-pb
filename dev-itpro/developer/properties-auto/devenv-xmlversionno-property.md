@@ -26,6 +26,17 @@ Set which version of XML the XML document conforms to. Two options are available
 |V10|TODO:Add documentation|
 |V11|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+XMLVersionNo = V10;
+```
+  
+## Remarks
+
+The XML version number is inserted into the XML document as the XML declaration.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

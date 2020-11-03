@@ -20,6 +20,14 @@ Specifies the root-level DataItem that is used to generate separate reports for 
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+ WordMergeDataItem = Header;
+```
+
+## See Also
+
+[Report](../devenv-reports.md)  
+[RDL Layout Reports](../devenv-howto-rdl-report-layout.md) 
