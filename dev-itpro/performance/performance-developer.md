@@ -98,6 +98,8 @@ Handling 504 - Gateway Timeout requires the client to refactor long running requ
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
+The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure that your AL code can handle slow response times, throttling, and failures in external services that you integrate to.
+
 ## Writing efficient reports
 
 Reports generally fall into two categories. They can be specific to a single instance of an entity, like an invoice. Or, they can be of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports lie in the latter category. The following articles contain advice about implementing faster reports: 
