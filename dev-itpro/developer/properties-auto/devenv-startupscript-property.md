@@ -20,6 +20,24 @@ Specifies the script which is invoked when web page with the control add-in is l
 -   Control Add In
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Property Values
+
+A path to a single script file. The default is blank, with no script being specified. 
+
+## Remarks 
+
+This property is typically JavaScript representing the main body of the control add-in. The script is invoked when the page that hosts the control add-in has loaded and after other scripts referenced by the [Scripts](devenv-scripts-property.md) property have loaded. 
+Although this property is optional, the control add-in must either specify the StartupScript property or specify one or more scripts.
+The script is embedded within the extension and must be added to the extension project folder in Visual Studio Code and referenced using a relative path. 
+
+## Example
+
+```AL
+StartupScript = 'js/chart.js';
+```
+
+## See Also
+
+[Properties](devenv-properties.md)   
+[Control Add-In Object](../devenv-control-addin-object.md)   

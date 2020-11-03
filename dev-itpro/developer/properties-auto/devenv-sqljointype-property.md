@@ -29,6 +29,22 @@ Sets the data item link type between data items in a query to determine the reco
 |FullOuterJoin|TODO:Add documentation|
 |CrossJoin|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+
+```AL
+ SqlJoinType = InnerJoin;
+```
+  
+## Remarks
+
+When setting up a data item link between two data items, you always set up the **SQLJoinType** property on the lower data item.  
+  
+Except for `CrossJoin`, the **SQLJoinType** property works together with the **DataItemLink** property to combine records from tables into a dataset. The **DataItemLink** property sets up an "equal to" \(=\) comparison between two or more fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that having matching values for the fields. Records that have matching field values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values.
+  
+For more information, see [Linking and Joining Data Items to Define the Query Dataset](../devenv-query-links-joins.md).
+
+## See Also
+
+[Query Object](../devenv-query-object.md)  
+[Properties](devenv-properties.md)  
