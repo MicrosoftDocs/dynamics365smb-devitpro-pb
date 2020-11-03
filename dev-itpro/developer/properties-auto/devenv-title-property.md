@@ -20,6 +20,10 @@ Sets whether the first letter in each word the user types is capitalized.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+> [!IMPORTANT]  
+>  This property has been deprecated. Setting the property has no effect on the client. 
+
+## See Also
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

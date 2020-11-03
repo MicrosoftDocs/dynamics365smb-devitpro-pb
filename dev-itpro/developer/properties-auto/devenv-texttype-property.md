@@ -27,6 +27,17 @@ Sets the type of text this element or attribute contains.
 |Text|TODO:Add documentation|
 |BigText|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+
+**BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
+ 
+## Syntax
+
+```AL
+TextType = BigText;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)
