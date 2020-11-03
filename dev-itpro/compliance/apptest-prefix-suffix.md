@@ -115,19 +115,19 @@ Once you get confirmation from Microsoft, you are free to use object and field n
 
 | Prefixes               | Suffixes               |
 |------------------------|------------------------|
-| fab-salespersoncode.al | salespersoncode-fab.al |
-| fab_salespersoncode.al | salespersoncode_fab.al |
-| fab salespersoncode.al | salespersoncode fab.al |
-| FabSalesPersonCode.al  | SalesPersonCodefab.al  |
+| fab-salespersoncode | salespersoncode-fab |
+| fab_salespersoncode | salespersoncode_fab |
+| fab salespersoncode | salespersoncode fab |
+| FabSalesPersonCode  | SalesPersonCodefab  |
 
 At Fabrikam, another team is building another app, so you request a special affix for your app so that the two Fabrikam apps can be kept apart. In this scenario, you do not have to register anything with Microsoft, as long as you do this with your company affix. Here are some examples:
 
 | Prefixes               | Suffixes               |
 |------------------------|------------------------|
-|fab-rentals-salespersoncode.al|salespersoncode-rentals-fab.al|
-|fab_rentals_salespersoncode.al|salespersoncode_rentals_fab.al|
-|fab rentals salesperson code.al|salesperson code rentals fab.al|
-|FabRentalsSalesPersonCode.al|SalesPersonCodeRentalsfab.al|
+|fab-rentals-salespersoncode|salespersoncode-rentals-fab|
+|fab_rentals_salespersoncode|salespersoncode_rentals_fab|
+|fab rentals salesperson code|salesperson code rentals fab|
+|FabRentalsSalesPersonCode|SalesPersonCodeRentalsfab|
 
 In this scenario, your appSourceCop.json configuration will specify something like `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
 
