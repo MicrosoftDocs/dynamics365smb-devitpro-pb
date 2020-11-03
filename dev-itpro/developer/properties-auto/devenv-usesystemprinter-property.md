@@ -20,6 +20,23 @@ Sets which printer is suggested when the report is run.
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value  
+
+**True** if you want the system default printer to be used; otherwise, **false**. The default is **false**.  
+
+## Syntax
+
+```AL
+UseSystemPrinter = true;
+```
+  
+## Remarks  
+
+The user will be able to select another printer at runtime if the [UseRequestPage Property](devenv-userequestpage-property.md) is **true**.  
+  
+If the UseSystemPrinter property is set to **false**, but there is no specific printer defined for the User/Report combination, the system default printer will be suggested.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[UseRequestPage Property](devenv-userequestpage-property.md)

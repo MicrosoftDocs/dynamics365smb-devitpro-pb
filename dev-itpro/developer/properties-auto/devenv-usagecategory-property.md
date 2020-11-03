@@ -32,6 +32,27 @@ Sets the department column for a searched page or report in the Web client.
 |History|TODO:Add documentation|
 |Administration|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**:
+
+- The page or report will not show up when you use the search functionality.  
+- Users will not be able to bookmark a link to the page or report object from the user interface.
+
+## Syntax
+
+```AL
+UsageCategory = ReportsAndAnalysis;  
+```
+
+## Dependent Properties
+
+The [AccessByPermission property](devenv-accessbypermission-property.md) and [ApplicationArea Property](devenv-applicationarea-property.md) are optional properties, which can be applied to set restrictions on an object accessibility, when you add the **UsageCategory** property. 
+
+## See Also
+
+[Adding Pages and Reports to Tell me](../devenv-al-menusuite-functionality.md)  
+[Properties](devenv-properties.md)  
+[Page Object](../devenv-page-object.md)  
+[Report Object](../devenv-report-object.md)  

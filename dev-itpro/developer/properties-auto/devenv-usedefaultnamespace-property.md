@@ -20,6 +20,22 @@ Specifies whether the value in default namespace should be used for both output 
 -   Xml Port
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Property Value  
+
+**True** if the default namespace should be used; otherwise, **false**. The default is **false**.  
+
+## Syntax
+
+```AL
+UseDefaultNamespace = true;
+```
+  
+For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
+
+## See Also
+
+[Properties](devenv-properties.md)   
+[Namespaces Property](devenv-namespaces-property.md)   
+[NamespacePrefix Property](devenv-namespaceprefix-property.md)  
+[DefaultNamespace Property](devenv-defaultnamespace-property.md)  
