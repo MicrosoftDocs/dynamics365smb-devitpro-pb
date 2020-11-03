@@ -21,6 +21,17 @@ Sets whether the source table is a temporary table.
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Property Value  
+
+**True** if you want the source table to be a temporary table; otherwise, **false**. The default value is **false**.
+
+## Syntax
+
+```AL
+SourceTableTemporary = true;
+```
+
+## See Also
+
+[Properties](devenv-properties.md)   

@@ -28,6 +28,25 @@ Also, be aware that while it is possible to use an expression for the ShowMandat
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [!IMPORTANT]  
+> Using expressions has the limitation that number fields with default values, will be interpreted as having a value, and will not be marked with a red asterisk. For example, on the **Customer** page, on the **Credit Limit (LCY)** field, using an expression like **Credit Limit (LCY) < 5000** will not result in a red asterisk, even if the value is below 5000, because the field already has a default value.  
+>   
+> Also, be aware that while it is possible to use an expression for the **ShowMandatory** property, the property cannot validate an AL method.  
+  
+## Syntax
+
+```AL
+ShowMandatory = true;
+```
+ 
+## Remarks  
+
+The **ShowMandatory** property controls marking the page field with a red asterisk independently of the [NotBlank Property](devenv-notblank-property.md). The **ShowMandatory** property can be used to mark all page fields, but does not enforce any validation of the field. This means that the user will be able to close a page without entering data.  
+  
+The **NotBlank** property can be used to mark the UI on primary key fields with a red asterisk and to enforce a validation error. For more information, see [NotBlank Property](devenv-notblank-property.md).  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)   
+[NotBlank Property](devenv-notblank-property.md)

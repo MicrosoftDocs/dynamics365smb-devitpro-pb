@@ -21,6 +21,27 @@ Sets a value to shift negative values to the right for display purposes only. Yo
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+SignDisplacement = 600; 
+```
+  
+## Remarks  
+
+For example, if you enter 600 (6 millimeters) you would see a result similar to:  
+  
+(+)999888777  
+  
+(+)123456789  
+  
+(-) 123456789  
+  
+(-) 999888777  
+  
+(+)987654321  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)
