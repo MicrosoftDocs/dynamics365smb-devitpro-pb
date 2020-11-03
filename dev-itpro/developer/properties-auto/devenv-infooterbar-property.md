@@ -20,6 +20,16 @@ Sets whether an action should be viewed as an exit action in the lower part of t
 -   Page Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property value
+
+**True** if the action is viewed as an exit action, otherwise **false**. The default is **false**.
+
+## Syntax
+
+```AL
+InFooterBar = false;
+```
+
+## See Also
+
+[Properties](devenv-properties.md)

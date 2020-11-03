@@ -22,6 +22,12 @@ Sets the multilanguage value of the InstructionalText of the object. Use this pr
 -   Page Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+InstructionalTextML = ENU='Add an entity from your list of contacts.'; ESP='Añada una entidad de su lista de contactos.'; FRA='Ajoutez une entité de votre liste de contacts'.
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)devenv-page-object.md)  

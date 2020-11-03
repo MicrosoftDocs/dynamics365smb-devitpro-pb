@@ -20,6 +20,18 @@ Specifies if the page action separator is a header.
 -   Page Action Separator
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Type
+
+**True** if the page action separator is a header; otherwise, **false**.
+
+
+## Syntax
+
+```AL
+IsHeader = true;
+```
+ 
+  
+## See Also
+
+[Properties](devenv-properties.md)

@@ -21,6 +21,16 @@ Sets a value to specify whether users can add records while using a page.
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value  
+
+**True** if you want to allow users to add records; otherwise, **false**. The default value is **true**.  
+
+## Syntax
+
+```AL
+InsertAllowed = false;
+```
+ 
+## See Also
+
+[Properties](devenv-properties.md)

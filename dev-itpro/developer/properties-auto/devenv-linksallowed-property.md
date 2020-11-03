@@ -21,6 +21,22 @@ Sets whether links are allowed.
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value
+
+**True** if links are allowed; otherwise, **false**. The default value is **true**.  
+
+## Syntax
+
+```AL
+LinksAllowed = false;
+```  
+
+## Remarks
+
+If LinksAllowed is set to **true**, then you can add links or notes to a page. The links can be a links to web sites, files stored on the local computer or on a remote computer, or links to pages.  
+  
+On a page, the links and notes are displayed in FactBoxes. If LinksAllowed is set to **true**, then the **Actions** menu has a **Notes** item and a **Links** item. You use these to create and modify notes and links.  
+  
+## See Also
+
+[Properties](devenv-properties.md)

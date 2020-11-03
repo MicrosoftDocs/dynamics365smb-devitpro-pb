@@ -22,6 +22,19 @@ Specifies the icon that you want to associate with a field in a CueGroup control
 -   Page Action Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+  > [!NOTE]  
+  > You can only use images on fields that have an integer data type.
+
+## Syntax
+
+```AL
+Image = Report;
+```
+
+## Remarks
+
+ On **RoleCenter** type pages, the image property does not apply to actions that are set up in the navigation bar or top-level actions in the action bar. These actions cannot be assigned in icon, or if they have icon by default, the icon cannot be changed. The property only applies to subgroups and child actions in the action bar.
+
+## See Also
+
+[Properties](devenv-properties.md)   

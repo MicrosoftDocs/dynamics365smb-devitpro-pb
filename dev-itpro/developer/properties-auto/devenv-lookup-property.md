@@ -20,6 +20,21 @@ Specifies if a page field has a lookup window.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+  
+## Property Value
+
+**True** if you want a lookup for the field; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+
+```AL
+Lookup = true;
+```
+  
+## Remarks
+
+By default, a lookup provides a list of records in the table. Using this list, users can select a record and retrieve information from it into this control.  
+  
+## See Also
+
+[LookupPageID Property](devenv-lookuppageid-property.md)

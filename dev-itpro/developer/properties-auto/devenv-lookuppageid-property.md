@@ -21,6 +21,10 @@ Sets the ID of the page you want to use as a lookup.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Remarks
+
+By default, a lookup provides a list of records in the table. Using this list, users can select a record and retrieve information from it into this control.
+
+## See Also
+
+[Lookup Property](devenv-lookup-property.md)

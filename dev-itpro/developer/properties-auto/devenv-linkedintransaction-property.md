@@ -20,6 +20,20 @@ Gets and sets data from linked server data sources, such as Microsoft Office Exc
 -   Table
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+LinkedInTransaction = false;
+```
+ 
+## Remarks
+
+This property is available when the [LinkedObject Property](devenv-linkedobject-property.md) is set to **true**.  
+  
+Set the **LinkedInTransaction** property to **false** when the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] table description refers to an object outside the current database or on a linked server.  
+  
+The access to linked server data sources is not under [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] transaction control. This means that if a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] transaction is aborted, then any changes that were made to a linked object that is outside the current database or on a linked server during this transaction will remain in effect.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[LinkedObject Property](devenv-linkedobject-property.md)

@@ -21,6 +21,16 @@ Sets the value to determine whether users can modify records while using this pa
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value
+
+**True** if you want to allow the users to modify records; otherwise, **false**. The default is **true**. 
+
+## Syntax
+
+```AL
+ModifyAllowed = false;
+``` 
+  
+## See Also
+
+[Properties](devenv-properties.md)

@@ -28,6 +28,33 @@ Sets a value that indicates the maximum number of times an element can occur.
 |Once|TODO:Add documentation|
 |Unbounded|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+The default values are the following:
+
+|**SourceType**|**Default**|  
+|--------------|-----------|  
+|**Table**|Unbounded|  
+|**Text**|Unbounded|  
+|**Field**|Once|  
+
+## Syntax
+
+```AL
+MaxOccurs = Once;
+```
+ 
+## Remarks
+
+The default value of the **MaxOccurs** property varies depending on the type of this element.  
+  
+The minimum number of times an element can appear is determined by the value of the [MinOccurs Property](devenv-minoccurs-property.md).  
+  
+The **MinOccurs** and **MaxOccurs** properties conform to the standard occurrence constraints that are used when defining XML schemas.  
+  
+The minimum number can be either 1 or 0.  
+  
+The maximum number can be either 1 or infinite.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

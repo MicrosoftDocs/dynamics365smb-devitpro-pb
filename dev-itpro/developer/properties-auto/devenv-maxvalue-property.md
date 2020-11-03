@@ -21,6 +21,27 @@ Sets the maximum numeric value for a field.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property Value  
+  
+|**Value**|**Description**|  
+|---------|---------------|  
+|**9999**|Integers|  
+|**9999.0**|Decimals|  
+|**December 31, 9999**|Dates|  
+|**23:59:59**|Time|  
+
+## Syntax
+
+```AL
+MaxValue = 100;
+```
+  
+## Remarks
+
+The field setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **MaxValue** is not validated.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[MinValue Property](devenv-minvalue-property.md)   
+[NotBlank Property](devenv-notblank-property.md)   
+[Numeric Property](devenv-numeric-property.md)

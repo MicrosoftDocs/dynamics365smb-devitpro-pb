@@ -20,6 +20,27 @@ Specifies the minimum height that the control add-in can be shrunk to. This sett
 -   Control Add In
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Value Type 
+  
+- Integer 
+
+## Property Values 
+
+The default is 0. If [VerticalShrink](devenv-verticalshrink-property.md) is **true** but MinimumHeight is 0, the control add-in can shrink to nothing.
+
+## Dependent Property
+
+This setting only applies if [VerticalShrink](devenv-verticalshrink-property.md) is set to **true**.
+
+## Example 
+
+```AL
+RequestedHeight = 300;
+VerticalShrink = true;
+MinimumHeight = 150;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Control Add-In Object](../devenv-control-addin-object.md)   
+ 

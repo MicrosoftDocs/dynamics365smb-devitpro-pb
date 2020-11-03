@@ -20,6 +20,20 @@ Specifies a link to SQL Server objects.
 -   Table
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value
+
+**True** if a link to SQL Server objects is provided; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+
+```AL
+LinkedObject = true;
+```
+  
+## Remarks
+
+When you set the LinkedObject property to **true**, the [LinkedInTransaction Property](devenv-linkedintransaction-property.md) becomes available.  
+  
+## See Also
+
+[Table Properties](devenv-table-properties.md)

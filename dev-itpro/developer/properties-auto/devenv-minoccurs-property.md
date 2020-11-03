@@ -28,6 +28,20 @@ Sets the minimum number of times that an element can occur.
 |Zero|TODO:Add documentation|
 |Once|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+MinOccurs = Zero;
+```
+ 
+## Remarks
+
+The maximum number of times an element can appear is determined by the value of the [MaxOccurs Property](devenv-maxoccurs-property.md). The **MinOccurs** and **MaxOccurs** properties conform to the standard occurrence constraints that are used when defining XML schemas.  
+  
+If you use Lazy API for XML (LAX), then the minimum number is 1. If you do not use LAX, then the minimum number is 0.  
+  
+The maximum number can be either 1 or infinite.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[MaxOccurs Property](devenv-maxoccurs-Property.md)

@@ -21,6 +21,16 @@ Sets the value that indicates whether a field can display multiple lines of text
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Value  
+
+**True** if you want to display multiple lines; otherwise, **false**. The default is **false**.  
+
+## Syntax
+
+```AL
+MultiLine = true;
+```
+  
+## See Also
+
+[Properties](devenv-properties.md)
