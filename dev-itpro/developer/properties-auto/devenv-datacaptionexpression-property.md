@@ -21,6 +21,17 @@ Sets an AL expression that is evaluated and displayed to the left of the page ca
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+DataCaptionExpression = Description;
+```
+
+## Remarks
+
+The expression is evaluated each time the user switches from one record to another or when one of the fields in the record changes.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Page Object](../devenv-page-object.md)  
+[Properties](devenv-properties.md)

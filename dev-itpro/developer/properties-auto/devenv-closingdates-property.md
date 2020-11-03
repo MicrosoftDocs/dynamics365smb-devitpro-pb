@@ -21,6 +21,20 @@ Sets a value that determines whether users can enter a closing date in this fiel
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property value
+
+**True** if users can enter a closing date in the field, otherwise **false**. The default is **false**.
+
+## Syntax
+
+```AL
+ClosingDates = true;
+```
+
+## Remarks  
+
+All dates have a corresponding closing date. A closing date is a period following the given date, but before the next date. Closing dates are sorted immediately after the corresponding date but before the next date.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Date and Time Methods](../methods/devenv-date-and-time-methods.md)

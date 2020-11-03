@@ -21,6 +21,19 @@ Sets the range of characters the user can enter into this field or control.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+```AL
+CharAllowed = 'AZ';
+```
+  
+## Remarks  
+
+If you want users to only enter uppercase letters in this field, enter **AZ**. This ensures that only uppercase characters in the range of A-Z are accepted. If you want both uppercase and lowercase characters, leave this value blank.  
+  
+You can specify multiple ranges of characters by entering the parameters in pairs. For example, a value of **admpzz** indicates that only the following characters are accepted: a, b, c, d, m, n, o, p, and z. If you only want to allow a single character, then enter that character twice to specify a starting and ending range.  
+  
+The setting for the field is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **CharAllowed** property is not validated.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

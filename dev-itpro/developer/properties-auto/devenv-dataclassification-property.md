@@ -32,6 +32,13 @@ Specifies the classification to be applied on the data contained in the table.
 |SystemMetadata|Data generated while running the service or program that is not linkable to a user or tenant.|
 |ToBeClassified|Content that has not yet been given a classification. This is the initial value when table or field is created.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Remarks  
+
+The data classification can be used to adhere to security, compliance, and privacy requirements and processes for collecting, storing, and using user personal information.
+
+FlowField and FlowFilter fields are automatically set to the **SystemMetadata** data classification.  
+
+When the **DataClassification** property is set on a table level, the fields on the table will inherit the property value. If the **DataClassification** property is set on both a table and field level, then the data classification specified on a field level will override the one from the table.
+  
+## See Also
+[Table Properties](devenv-table-properties.md) 

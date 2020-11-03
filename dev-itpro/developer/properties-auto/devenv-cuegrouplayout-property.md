@@ -25,6 +25,32 @@ Specifies if the layout is wide.
 |-----------|---------------------------------------|
 |Wide|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Syntax
+
+```AL
+CuegroupLayout = wide;
+```
+  
+## Remarks  
+For more information about the wide layout for Cues, see [Normal and wide layout for Cues](../devenv-cues-action-tiles.md#CueWideLayout).
+
+## Example
+
+```AL
+cuegroup(SalesCueContainer)
+{
+    CaptionML=ENU='Sales Invoices';
+    CuegroupLayout=wide;
+    field(SalesCue; SalesInvoicesOpen)
+    {
+        CaptionML=ENU='Open';
+        DrillDownPageId="Sales Invoice List";
+    }
+} 
+```
+  
+## See Also
+
+[Properties](devenv-properties.md)
+[Rowspan Property](devenv-rowspan-property.md)  
+[Columnspan Property](devenv-columnspan-property.md)

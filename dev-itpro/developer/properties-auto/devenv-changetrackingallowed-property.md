@@ -20,6 +20,18 @@ Sets a value that indicates whether the entity exposed through the OData API sup
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property value
+**True** if the page is exposed as a service, otherwise **false**. The default is **false**.
+
+## Syntax
+
+```AL
+ChangeTrackingAllowed = true;
+```
+
+> [!NOTE]
+> The property **ChangeTrackingAllowed** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**.
+
+ 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Properties](devenv-properties.md)  

@@ -20,6 +20,19 @@ Sets a value that specifies whether a BLOB is compressed.
 -   Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property value
+
+**True** if the BLOB is compressed, otherwise **false**. The default is **false**.
+
+## Syntax
+
+```AL
+Compressed = true;
+```
+
+## Remarks
+It must be applied on a field of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md).
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[BLOB Data Type](../datatypes/devenv-blob-data-type.md)

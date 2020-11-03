@@ -20,6 +20,17 @@ Sets a value that indicates whether the table data applies to all companies in t
 -   Table
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property Value
+
+**True** if data is available only to this company; otherwise, **false**. The default value is **true**.  
+
+## Syntax
+
+```AL
+DataPerCompany = true;
+```
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  
+[DataSource Property](devenv-datasource-property.md)  

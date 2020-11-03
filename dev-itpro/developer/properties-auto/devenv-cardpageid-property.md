@@ -21,6 +21,17 @@ Sets the card page that is associated with items in the current list page.
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+CardPageID = "Customer Card";
+```
+  
+## Remarks  
+ Use this property on a list page or listpart page to specify the card page that should be displayed when an end user double-clicks an item on the list page or listpart page.  
+ 
+ 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[PagePartID Property](devenv-pagepartid-property.md)   
+[ChartPartID Property](devenv-chartpartid-property.md)   
+[SystemPartID Property](devenv-systempartid-property.md)

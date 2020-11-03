@@ -20,6 +20,16 @@ Sets a value that specifies whether a user must leave a record before it is inse
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property Value  
+
+**True** if the record is inserted when the user leaves the record; otherwise, **false** if the record is inserted when the user leaves the control that shows the primary key. The default value is **false**.  
+
+## Syntax
+
+```AL
+DelayedInsert = false;
+```
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

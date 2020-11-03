@@ -21,6 +21,21 @@ Specifies the help topic to show when the user presses Help in the UI. The help 
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
+ContextSensitiveHelpPage = 'page-extension-topic';
+```
+
+## Remarks
+
+The value of this property forms the second half of the URL to context-sensitive Help for your app. The first half is set in the app.json where you specify the URL to your library of Learn More content. For more information, see [Configure Context-Sensitive Help](../../help/context-sensitive-help.md).  
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Configure Context-Sensitive Help](../../help/context-sensitive-help.md)  
+[User Assistance Model](../../user-assistance.md)  
+[Configuring the Help Experience](../../deployment/configure-help.md)  
+[Adding Help Links from Pages, Reports, and XMLports](../devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Properties](devenv-properties.md)  

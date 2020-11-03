@@ -20,6 +20,12 @@ Specifies the culture of the .NET assembly.
 -   Dot Net Assembly
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Syntax
+```AL
+Culture = 'neutral';
+```
+
+## See Also
+
+[Control Add-In Object](../devenv-control-addin-object.md)   

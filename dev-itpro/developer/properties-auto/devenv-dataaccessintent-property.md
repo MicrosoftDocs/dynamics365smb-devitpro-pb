@@ -28,6 +28,24 @@ Sets the data access intent of the page.
 |ReadOnly|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
 |ReadWrite|Intent to access and modify records.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+DataAccessIntent = ReadOnly|ReadWrite;
+```
+
+## Remarks  
+
+[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+
+For reports, API pages, and queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, use this property to reduce the load on the primary database. Using **ReadOnly** might also improve performance when viewing objects. **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if one is available. When a workload is executed against the replica, insert/delete/modify operations aren't possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
+
+From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Using Read Scale-Out for Better Performance](../../administration/database-read-scale-out-overview.md)  
+[Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  
+[Properties](devenv-properties.md)   
+[Page Properties](devenv-page-properties.md)  
+[InDataSet Property](devenv-indataset-property.md)

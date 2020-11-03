@@ -20,6 +20,43 @@ Sets a value that indicates whether the index is clustered.
 -   Key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+> [!NOTE]  
+> The `Clustered` property cannot be used in table extension objects.
+
+## Property value
+**True** if the index is clustered, otherwise **false**. The default is **false**.
+
+## Syntax
+
+```AL
+Clustered = true;
+```
+
+## Remarks
+
+A clustered index determines the physical order in which records are stored in the table. Using a clustered key can improve the time it takes to retrieve records. 
+
+There can be only one clustered key on a table.
+
+## Example
+
+The following example defines a secondary key to be a clustered index. 
+
+```AL
+keys
+{
+    key(PrimaryKey; ID)
+    {
+        Clustered = false;
+    }
+    key(CustomerInfo; Name,Address,City)
+    {
+        Clustered = true;
+    }
+}
+
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Table Key](devenv-key-properties.md)  

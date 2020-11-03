@@ -21,6 +21,15 @@ Sets a value that specifies whether users can delete records while using the  pa
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Property Value  
+
+**True** if the user can delete records; otherwise, **false**. The default value is **true**.  
+
+## Syntax
+
+```AL
+DeleteAllowed = false;
+```
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Properties](devenv-properties.md)

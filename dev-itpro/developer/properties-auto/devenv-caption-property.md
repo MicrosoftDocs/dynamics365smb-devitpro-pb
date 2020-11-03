@@ -42,6 +42,35 @@ Sets the string that is used to identify a control or other object in the user i
 -   Enum Type
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Parameters
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the Caption is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the Caption, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific Caption.
+
+## Syntax
+```AL
+Caption = 'Name';
+```
+
+```AL
+Caption = 'Name', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
+```
+
+## Remarks
+
+A caption is the text used to show the identity of a control. For example, in the caption bar of a page or a label for another control.  
+
+> [!NOTE]  
+> For query columns, when you run the query from Object Designer, the About This Query window that opens in the [!INCLUDE[rtc](../includes/rtc_md.md)] displays the value for the [Name Property](devenv-name-property.md) of the query column, not the Caption property or CaptionML Property.  
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[ShowCaption Property](devenv-showcaption-property.md)  
+[Multilanguage Development](../devenv-multilanguage-development.md)

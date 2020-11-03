@@ -21,6 +21,16 @@ Sets the ID of the page to use as a drill-down.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+DrillDownPageID = 50100;
+```
+
+## Remarks  
+
+Drill-downs are a system-wide feature of fields (normal fields and [FlowFields](../devenv-flowfields.md)) that let you see the underlying transactions that make up the information shown in the field. For example, the DrillDownID property is typically used to create a link from a Cue to an underlying page.  
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

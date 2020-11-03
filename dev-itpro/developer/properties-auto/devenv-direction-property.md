@@ -27,6 +27,16 @@ Sets the XmlPort to import, export, or import and export data in XML format.
 |Export|TODO:Add documentation|
 |Both|TODO:Add documentation|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [!NOTE]  
+> Request pages show when the XMLport is run from an action page or the `Run` method in AL code. Request pages do not show with Export or Import methods<br /><br /> If the XMLPort does not use a request, then XMLPort defaults to **Import**, unless you specify the direction by Import parameter of the `Run` method.|  
+ 
+## Syntax
+
+```AL
+Direction = Import;
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)

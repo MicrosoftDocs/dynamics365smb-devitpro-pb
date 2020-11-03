@@ -49,6 +49,12 @@ Sets the description. This description is for internal use and does not appear t
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+Description = 'Name of the organization.';
+```
+
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[Properties](devenv-properties.md)  

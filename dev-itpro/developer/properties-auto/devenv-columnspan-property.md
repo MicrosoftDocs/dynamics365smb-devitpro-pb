@@ -21,6 +21,23 @@ Sets the number of columns that a field spans in a Grid control.
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Property Values  
+
+An integer that specifies the number of columns to span the field.  
+
+## Syntax
+
+```AL
+ColumnSpan = 2;
+```
+  
+## Remarks  
+
+When you set a field to span several columns, the field occupies the cells to its right, and existing fields in the occupied cells are moved to the right. 
+
+## See Also
+
+[Properties](devenv-properties.md)  
+[RowSpan Property](devenv-rowspan-property.md)  
+[GridLayout Property](devenv-gridlayout-property.md)
+  

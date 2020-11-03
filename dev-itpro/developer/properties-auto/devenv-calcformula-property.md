@@ -37,6 +37,19 @@ FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
 -   Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Applies to  
+ Table Fields  
+
+## Syntax
+
+```AL
+CalcFormula = Count(RecordCalcFields);
+```
+  
+## Remarks  
+ You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists.  
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
