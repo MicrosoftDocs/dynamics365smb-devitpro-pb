@@ -310,7 +310,7 @@ Use the Performance Toolkit to simulate the amount of resources that customers u
 
 The Performance Toolkit helps answer questions such as, "Does my solution for Business Central support X number of users doing this, that, and the other thing at the same time?" 
 
-For more information, see [The Performance Toolkit Extension](../developer/devenv-performance-toolkit).
+For more information, see [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
 
 ### Performance Throughput Analysis
 The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.

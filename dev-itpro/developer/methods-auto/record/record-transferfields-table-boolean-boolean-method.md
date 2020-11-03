@@ -31,11 +31,11 @@ An instance of the [Record](record-data-type.md) data type.
 The record from which to copy.  
 *InitPrimaryKeyFields*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+Default: true
 
-        Default: true
-        If this parameter is true and the records are in the same table, both the timestamp and the Primary Key fields of the destination record will be changed.
-        If this parameter is true and the records are not in the same table, then the Primary Key fields of the destination record will be changed but the timestamp of the destination record will not be changed.
-        If this parameter is false, then neither the timestamp nor the Primary Key fields of the destination record are changed.
+If this parameter is true and the records are in the same table, both the timestamp and the Primary Key fields of the destination record will be changed.
+If this parameter is true and the records are not in the same table, then the Primary Key fields of the destination record will be changed but the timestamp of the destination record will not be changed.
+If this parameter is false, then neither the timestamp nor the Primary Key fields of the destination record are changed.
         
 *SkipFieldsNotMatchingType*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

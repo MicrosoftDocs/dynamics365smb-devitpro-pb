@@ -1,6 +1,6 @@
 ---
-title: Install an update
-description: This article describes the tasks required for getting the monthly update applied to your Dynamics 365 Business Central on-premises.
+title: Install a version 16 update
+description: This article describes the tasks required for getting the monthly version 16 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
