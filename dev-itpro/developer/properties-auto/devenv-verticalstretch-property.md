@@ -20,6 +20,30 @@ VerticalStretch specifies that the control add-in can be made larger vertically.
 -   Control Add In
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+> [!NOTE]  
+> Use this property when the visual content of the add-in is designed to remain usable when height is increased.
+
+> [!NOTE]  
+> VerticalStretch is only supported when the control add-in is displayed in a CardPart on Role Center pages, or when it is the only content displayed in a Card page.
+
+## Property Values
+
+**True** if the control add-in is allowed to stretch vertically. The default value is **false**.
+
+## Remarks
+
+VerticalStretch is typically used together with the [MaximumHeight](devenv-maximumheight-property.md) property. If VerticalStretch is **true** but [MaximumHeight](devenv-maximumheight-property.md) is not set, the control add-in can stretch indefinitely. 
+
+
+## Example
+
+```AL
+RequestedHeight = 300;
+VerticalStretch = true;
+MaximumHeight = 500;
+```
+
+## See Also
+
+[Control Add-In Object](../devenv-control-addin-object.md)   
