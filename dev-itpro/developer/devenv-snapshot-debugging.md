@@ -101,10 +101,28 @@ The user can set breakpoints and continue execution to that breakpoint for testi
 In order to download symbols on a production server, you need three permission related entries.
 
 - Be a delegated admin
-- Have snapshot debugger rights (D365 Snapshot Debug permission group)
 - The read-only access to the **Published Application** table emphasized in the **D365 EXTENSION MGT** permission set should also be granted.
 
 Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server.
+
+Symbols download is using the **snapshotInitialize** debug configuration settings in Visual Studio Code, which is set up when you choose either **AL: Initialize a snapshot debugging session locally** or **AL: Initialize a snapshot debugging session on cloud**.
+
+```al
+{
+            "name": "snapshotInitialize: MyServer",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "environmentType": "OnPrem",
+            "server": "http://localhost",
+            "serverInstance": "BC170",
+            "authentication": "UserPassword",
+            "breakOnNext": "WebClient"
+        },
+```
+
+> [!IMPORTANT]  
+> Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server. This is why you must download symbols from production servers for snapshot debugging in order for a breakpoint set on one line to match with what the server understands of this line. This is to avoid a scenario where you set a breakpoint in a DAL file on line 12, but line 12 on the server is an empty line or a completely different line if the symbols are not the same.
+
 
 ## Snapshot debugging versus regular debugging
 
