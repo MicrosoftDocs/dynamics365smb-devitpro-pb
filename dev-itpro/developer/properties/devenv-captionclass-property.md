@@ -61,8 +61,6 @@ The `OnAfterCaptionClassResolve` event is used to overwrite the above logic, in 
     end;
 ```
 
-The **CaptionClassTranslate** method is triggered when a field that uses the **CaptionClass** property is shown. The method takes as input the parameters Language, the current language ID, and CaptionClass, the **CaptionClass** property value. Then it converts the CaptionClass expression into the specific caption for that language and returns it as a string. The caption of the field is then replaced with the returned string. 
-
 The following example shows an implementation of the `OnResolveCaptionClass` event.
 
 ```al
@@ -87,7 +85,6 @@ codeunit 50000 "MyCaptionClassMgmt"
         exit(CaptionBLbl);
 }
 ```
-
 
 ## See Also
 
