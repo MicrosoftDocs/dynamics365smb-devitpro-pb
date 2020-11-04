@@ -144,20 +144,13 @@ The results of the PRT are shown on the **BCPT Suite Lines** FastTab. The follow
 |**Change in No. of SQL statements (%)**|The difference, as a percent, between a baseline and the latest run.|
 |**Changes in Duration (%)**|The change in measured time between a baseline and the latest run.|
 
+> [!NOTE]
+> The first iteration of any scenario running will show higher number of SQL Statements because nothing has been cached.
+
 ## Writing Test Cases (codeunits)
 A test case is a codeunit of either a **Normal** or **Test** subtype. If the subtype is Normal, the test scenario should be defined in the OnRun trigger because the Performance Toolkit uses the codeunit to run the testcase. 
 
-To interact with pages and make tests more realistic, define a codeunit of the subtype Test, as shown in the example for codeunit BCPT Open Item List. Test codeunits use the BCPT Test Context codeunit to get information about the context in which the testcase is running. The BCPT Test Context codeunit exposes several test methods that test cases can use. The following table describes the methods.
-
-|Method  |Description  |
-|---------|---------|
-|StartScenario(ScenarioOperation: Text)|Starts the scope of a test session that collects the performance numbers.|
-|EndScenario(ScenarioOperation: Text)|Ends the scope of a test session that collects the performance numbers.|
-|UserWait()|Simulates user delays between operations to make scenarios more realistic. Delays are calculated using the parameters defined on the BCPT suite.|
-|GetParameters(): Text|Returns the parameter list associated with the test case as text.|
-|GetParameter(ParameterName: Text): Text|Returns the requested parameter value associated with the test case.|
-
-To provide default parameters for a suite configuration, the test codeunits must implement the **BCPT Param. Provider**  interface, and add it to the enum that has been extended from **BCPT Test Param. Enum**. For an example, see the samples in the BCPT Create PO with N Lines codeunit.
+To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. Codeunit BCPT Test Context is an interface for running tests. Tests can use the StartScenario amd EndScenario functions on the BCPT Test Context codeunit to log when a scenario that is being measured started and stopped. To simulate user delays, the UserWait() function should be called while moving between fields to make the tests more realistic. The BCPT Test Context codeunit also exposes the parameters that are set on the test codeunit to the test suite. When using [!INCLUDE[prodshort](includes/prodshort.md)], an implicit Commit() is called for every interaction, and that should be simulated in the tests by calling an explicit Commit().
 
 ## See Also
 [Testing the Application Overview](devenv-testing-application.md)  
