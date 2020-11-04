@@ -2,7 +2,7 @@
 title: "DefaultLayout Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,8 @@ Specifies whether the report uses the built-in RDLC or Word report layout by def
 
 |Value|Description|
 |-----------|---------------------------------------|
-|RDLC|TODO:Add documentation|
-|Word|TODO:Add documentation|
+|RDLC|Specifies the built-in RDL layout as the default layout.|
+|Word|Specifies the built-in Word layout as the default layout.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

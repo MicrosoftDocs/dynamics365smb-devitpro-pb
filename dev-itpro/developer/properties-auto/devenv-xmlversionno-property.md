@@ -2,7 +2,7 @@
 title: "XmlVersionNo Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,8 @@ Set which version of XML the XML document conforms to. Two options are available
 
 |Value|Description|
 |-----------|---------------------------------------|
-|V10|TODO:Add documentation|
-|V11|TODO:Add documentation|
+|V10|Version 1.0. This is the default value.|
+|V11|Version 1.1.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

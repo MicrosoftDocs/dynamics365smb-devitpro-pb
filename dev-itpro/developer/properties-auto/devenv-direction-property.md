@@ -2,7 +2,7 @@
 title: "Direction Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,9 +23,9 @@ Sets the XmlPort to import, export, or import and export data in XML format.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Import|TODO:Add documentation|
-|Export|TODO:Add documentation|
-|Both|TODO:Add documentation|
+|Import|The XMLPort only imports data.|
+|Export|The XMLPort only exports data.|
+|Both|The XMLPort can import and export data.<br /><br /> If the XMLPort uses a request page, as specified by the [UseRequestPage Property](devenv-userequestpage-property.md), then an option appears on the request page that enables the users to choose to import or export data. This is the default value.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]  

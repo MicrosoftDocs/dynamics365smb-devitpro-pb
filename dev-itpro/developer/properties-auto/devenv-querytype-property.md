@@ -2,7 +2,7 @@
 title: "QueryType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,8 @@ Sets the type of query to create.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Normal|TODO:Add documentation|
-|API|TODO:Add documentation|
+|Normal|It is a normal query.|
+|API|The query is of the type API.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

@@ -2,7 +2,7 @@
 title: "PageType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,22 +23,22 @@ Sets the type of page to create.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Card|TODO:Add documentation|
-|List|TODO:Add documentation|
-|RoleCenter|TODO:Add documentation|
-|CardPart|TODO:Add documentation|
-|ListPart|TODO:Add documentation|
-|Document|TODO:Add documentation|
-|Worksheet|TODO:Add documentation|
-|ListPlus|TODO:Add documentation|
-|ConfirmationDialog|TODO:Add documentation|
-|NavigatePage|TODO:Add documentation|
-|StandardDialog|TODO:Add documentation|
-|API|TODO:Add documentation|
+|Card|Master, reference, and set up data management.|
+|List|Entity overviews and navigation, and inline editing of simple entities.|
+|RoleCenter|Overview of business performance and the start page for a specific user profile.|
+|CardPart|A page that is embedded in another page, such as in a FactBox.|
+|ListPart|A page that is embedded in another page, such as in a FactBox.|
+|Document|Transaction and other document management.|
+|Worksheet|Line-based data entry tasks (such as journals) and inquiries.|
+|ListPlus|Statistics, details, and related data management.|
+|ConfirmationDialog|Confirmative or exceptional dialog, such as warnings.|
+|NavigatePage|Multi-step dialog (also known as a "Wizard").|
+|StandardDialog|Routine dialog that starts or progresses a task.|
+|API|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
 |ReportPreview|TODO:Add documentation|
 |ReportProcessingOnly|TODO:Add documentation|
 |XmlPort|TODO:Add documentation|
-|HeadlinePart|TODO:Add documentation|
+|HeadlinePart|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

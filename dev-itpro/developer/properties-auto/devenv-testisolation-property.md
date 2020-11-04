@@ -2,7 +2,7 @@
 title: "TestIsolation Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,9 +23,9 @@ Specifies which changes to the database to roll back after the tests in the test
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Disabled|TODO:Add documentation|
-|Codeunit|TODO:Add documentation|
-|Function|TODO:Add documentation|
+|Disabled|Do not roll back any changes to the database. Tests are not isolated from each other. This is the default value.|
+|Codeunit|Roll back all changes to the database after each test codeunit executes.|
+|Function|Roll back all changes to the database after each test method executes.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

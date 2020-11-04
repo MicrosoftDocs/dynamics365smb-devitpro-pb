@@ -2,7 +2,7 @@
 title: "MaxOccurs Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +25,8 @@ Sets a value that indicates the maximum number of times an element can occur.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Once|TODO:Add documentation|
-|Unbounded|TODO:Add documentation|
+|Once|The element can occur at most once.|
+|Unbounded|There is no maximum number of occurences.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 The default values are the following:

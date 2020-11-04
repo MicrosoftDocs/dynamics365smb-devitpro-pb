@@ -2,7 +2,7 @@
 title: "GridLayout Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,8 @@ Specifies if the layout is rows or columns.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Rows|TODO:Add documentation|
-|Columns|TODO:Add documentation|
+|Rows|Use rows for the layout.|
+|Columns|Use columns for the layout.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

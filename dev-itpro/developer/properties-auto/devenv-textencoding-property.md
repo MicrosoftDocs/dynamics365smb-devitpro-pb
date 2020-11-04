@@ -2,7 +2,7 @@
 title: "TextEncoding Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,10 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 
 |Value|Description|
 |-----------|---------------------------------------|
-|MSDOS|TODO:Add documentation|
-|UTF8|TODO:Add documentation|
-|UTF16|TODO:Add documentation|
-|WINDOWS|TODO:Add documentation|
+|MSDOS|Use  MS-DOS  encoding format. It is the default value.|
+|UTF8|Use UTF-8 encoding format.|
+|UTF16|Use UTF-16 encoding format.|
+|WINDOWS|Use Windows encoding format.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 For more information, see [[File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md).  

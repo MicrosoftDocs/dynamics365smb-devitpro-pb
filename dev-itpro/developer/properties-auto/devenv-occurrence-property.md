@@ -2,7 +2,7 @@
 title: "Occurrence Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +24,8 @@ Sets a value that specifies whether an attribute must occur in the data that is 
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Required|TODO:Add documentation|
-|Optional|TODO:Add documentation|
+|Required|If the attribute must be part of the data. This is the default value.|
+|Optional|If the attribute does not have to be part of the data.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

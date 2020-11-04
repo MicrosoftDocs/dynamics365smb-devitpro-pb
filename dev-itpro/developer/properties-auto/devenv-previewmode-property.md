@@ -2,7 +2,7 @@
 title: "PreviewMode Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,8 @@ Specifies how the report opens when you preview it.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Normal|TODO:Add documentation|
-|PrintLayout|TODO:Add documentation|
+|Normal|Specifies that the report opens in the default view mode where you can navigate between entries and so on.|
+|PrintLayout|Specifies that the report opens in the print layout mode that shows how the report will print on paper.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

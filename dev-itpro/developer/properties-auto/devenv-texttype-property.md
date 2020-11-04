@@ -2,7 +2,7 @@
 title: "TextType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +24,8 @@ Sets the type of text this element or attribute contains.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Text|TODO:Add documentation|
-|BigText|TODO:Add documentation|
+|Text|To display normal text. It is the default value.|
+|BigText|To display large text.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value  

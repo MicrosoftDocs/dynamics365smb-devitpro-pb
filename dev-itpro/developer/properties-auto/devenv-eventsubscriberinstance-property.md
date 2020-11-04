@@ -2,7 +2,7 @@
 title: "EventSubscriberInstance Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,8 @@ Specifies how event subscriber functions in a codeunit are bound to the codeunit
 
 |Value|Description|
 |-----------|---------------------------------------|
-|StaticAutomatic|TODO:Add documentation|
-|Manual|TODO:Add documentation|
+|StaticAutomatic|Subscribers are automatically bound to the events that they subscribe to. |
+|Manual|Subscribers are bound to an event only if the **BINDSUBSCRIPTION** method is called from the code that raises the event.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

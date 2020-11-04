@@ -2,7 +2,7 @@
 title: "Style Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,17 +24,17 @@ Sets a value that determines how text in a field on a page is formatted. For fie
 
 |Value|Description|
 |-----------|---------------------------------------|
-|None|TODO:Add documentation|
-|Standard|TODO:Add documentation|
-|StandardAccent|TODO:Add documentation|
-|Strong|TODO:Add documentation|
-|StrongAccent|TODO:Add documentation|
-|Attention|TODO:Add documentation|
-|AttentionAccent|TODO:Add documentation|
-|Favorable|TODO:Add documentation|
-|Unfavorable|TODO:Add documentation|
-|Ambiguous|TODO:Add documentation|
-|Subordinate|TODO:Add documentation|
+|None|None|
+|Standard|Standard|
+|StandardAccent|Blue|
+|Strong|Bold|
+|StrongAccent|Blue + Bold|
+|Attention|Red + Italic|
+|AttentionAccent|Blue + Italic|
+|Favorable|Bold + Green|
+|Unfavorable|Bold + Italic + Red|
+|Ambiguous|Yellow|
+|Subordinate|Grey|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  

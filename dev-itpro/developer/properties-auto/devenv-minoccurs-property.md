@@ -2,7 +2,7 @@
 title: "MinOccurs Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +25,8 @@ Sets the minimum number of times that an element can occur.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Zero|TODO:Add documentation|
-|Once|TODO:Add documentation|
+|Zero|There is no minimum number of occurences.|
+|Once|The element must occur at least once.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 
