@@ -1,7 +1,7 @@
 ---
 title: "CaptionClass Property"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/04/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
