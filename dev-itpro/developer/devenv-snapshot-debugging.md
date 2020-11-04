@@ -25,7 +25,7 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 - AL exceptions
 
 > [!IMPORTANT]  
-> To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work.
+> To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
 
 ## Snapshot debugging keyboard shortcuts
 
@@ -85,20 +85,9 @@ You finish a snapshot debugging session by pressing **Alt+F7**. This brings up a
 
 Snapshot debugging sessions that have produced a snapshot file can be debugged. The location of a snapshot file is controlled by the `al.snapshotOutputPath` configuration parameter. By default it is local to the current workspace and it is called `./.snapshots`. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
-## Debugging a snapshot file 
-
-There are two user actions that will start snapshot debugging:
-
-- Creating a new launch debug configuration and specifying the snapshot file name in the `snapshotFileName` configuration setting. This is the only setting that is needed besides the type, request, and name. 
-- Clicking on the status icon or by pressing **Shift+F7** and selecting a finished snapshot-debugged session. 
-
-Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they cannot be removed by user actions. Other snappoints are just regular breakpoints that can be removed or re-added by user actions. If no snappoints are specified the first recorded methods; the first line is the entry breakpoint. 
-
-The user can set breakpoints and continue execution to that breakpoint for testing, for example, if a line is hit, but it is the snappoint that carries the real information.
-
 ## Downloading symbols on the snapshot debugger endpoint
 
-In order to download symbols on a production server, you need three permission related entries.
+In order to download symbols on a production server, you need permission related entries:
 
 - Be a delegated admin
 - The read-only access to the **Published Application** table emphasized in the **D365 EXTENSION MGT** permission set should also be granted.
@@ -123,6 +112,18 @@ Symbols download is using the **snapshotInitialize** debug configuration setting
 > [!IMPORTANT]  
 > Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server. This is why you must download symbols from production servers for snapshot debugging in order for a breakpoint set on one line to match with what the server understands of this line. This is to avoid a scenario where you set a breakpoint in a DAL file on line 12, but line 12 on the server is an empty line or a completely different line if the symbols are not the same.
 
+
+
+## Debugging a snapshot file 
+
+There are two user actions that will start snapshot debugging:
+
+- Creating a new launch debug configuration and specifying the snapshot file name in the `snapshotFileName` configuration setting. This is the only setting that is needed besides the type, request, and name. 
+- Clicking on the status icon or by pressing **Shift+F7** and selecting a finished snapshot-debugged session. 
+
+Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they cannot be removed by user actions. Other snappoints are just regular breakpoints that can be removed or re-added by user actions. If no snappoints are specified the first recorded methods; the first line is the entry breakpoint. 
+
+The user can set breakpoints and continue execution to that breakpoint for testing, for example, if a line is hit, but it is the snappoint that carries the real information.
 
 ## Snapshot debugging versus regular debugging
 
