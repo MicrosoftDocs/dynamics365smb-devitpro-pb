@@ -43,7 +43,7 @@ The `Caption Class` (codeunit 42) in the system application exposes two events; 
 
 For more information, see [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
 
-The Caption Class raises an `OnResolveCaptionClass` event for any other value of <Caption Area>. Typically, it means that <Caption Expression> should be further parsed. 
+The Caption Class raises an `OnResolveCaptionClass` event for any other value of <Caption Area>. 
 
 ```al
 [IntegrationEvent(false, false)]
@@ -52,7 +52,7 @@ The Caption Class raises an `OnResolveCaptionClass` event for any other value of
     end;
 ```
 
-The `OnAfterCaptionClassResolve` event is used to completely overwrite the above logic, in case the CaptionClass property is not the expected format or if some extra logic needs to be added.
+The `OnAfterCaptionClassResolve` event is used to overwrite the above logic, in case the `CaptionClass` property is not the expected format or if some extra logic needs to be added.
 
 ```al
 [IntegrationEvent(false, false)]
