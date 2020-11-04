@@ -24,8 +24,10 @@
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
-#### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### Deployment
+##### [Overview](embedapps\embed-app-deployment-overview.md)
+##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Using Application Family](deployment/embed-app-using-application-family.md)
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)

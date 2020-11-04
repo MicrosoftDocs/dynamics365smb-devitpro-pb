@@ -1,5 +1,5 @@
 ---
-title: "Develop a custom API for Dynamics 365 Business Central"
+title: "Developing a custom API"
 description: "Developing a custom API in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
