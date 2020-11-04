@@ -1,7 +1,8 @@
 ---
-title: "SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods"
+title: "SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, GETRANGEMAX Methods"
+description: Describes methods that set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

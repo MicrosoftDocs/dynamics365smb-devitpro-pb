@@ -78,6 +78,13 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
         ...
     ```
 
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
+- If the **SystemId** field is specified in a Web Service POST request, the OData stack persists the value in the database.
+- The **SystemId** field can be used as part of a (non-primary) key.
+- You can show the **SystemId** field as a field on a page.
+- You can link FactBoxes/page parts using the **SystemId** field.
+
 ## Data audit fields
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]

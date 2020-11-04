@@ -50,7 +50,8 @@ The number of array elements to copy. If you do not specify Length, all array el
 
  You cannot copy an array if the data type of the array is a complex data type. For more information about complex data types, see [AL Data Types](../../datatypes/devenv-al-data-types.md).  
 
-## Example  
+## Example 1
+
  The following example assigns values to Array1 and copies values from Array1 to Array2. Array1 is an integer array with the [Dimensions Property](../../properties/devenv-dimensions-property.md) set to 10. It contains integers from 1 to 10. The example code copies the numbers 6, 7, 8, 9, and 10 to Array2, an integer array with the **Dimensions** property set to 5. 
 
 ```  
@@ -72,7 +73,8 @@ begin
 end;
 ```  
 
-## Example  
+## Example 2
+
  If Array1 is an integer array with dimension 10, and it contains the numbers from 1 to 10, and Array2 is an integer array with dimension 5, then the following command causes a run-time error.  
 
 ```  
