@@ -35,7 +35,7 @@ The `CaptionClass` property must be expressed in the format `"<Caption Area>, <C
 When you set the **CaptionClass property** on a field, users can configure the caption of a text box that is connected to a label or the caption of a check box without having to modify code. The `Caption Class` in the system application layer then translates the `CaptionClass` property into actual captions that will be displayed in the UI. For example, if `CaptionClass = “3, My awesome caption”;` the result caption in the UI will be **My awesome caption**.
 
 > [!NOTE]  
-> If you omit the format of pattern of `"<Caption Area>, <Caption Expression>"`, the caption becomes the value of whatever string has been given to the `CaptionClass` property. This means that you can use an expression such as `CaptionClass = ItemRec.Fieldcaption("Location Code");` as long as the returned data type is Text.
+> If you omit the pattern of `"<Caption Area>, <Caption Expression>"`, the caption becomes the value of whatever string has been given to the `CaptionClass` property. This means that you can use an expression such as `CaptionClass = ItemRec.Fieldcaption("Location Code");` as long as the returned data type is Text.
 
 ### Caption Class
 
