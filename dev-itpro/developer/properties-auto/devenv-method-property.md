@@ -34,7 +34,7 @@ Gets or sets the method type as defined in the HTTP standard.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Date Methods  
 
-You can only use the date methods on fields of the Date and DateTime data type.  
+You can only use the date methods on fields of the [Date](../methods-auto/date/date-data-type.md) and [DateTime](../methods-auto/datetime/datetime-data-type.md) data type.  
   
 When you set up a totals method on another column in the query, rows in the resulting dataset are grouped by the day, month, or year, depending on the **Method** property setting.  
  

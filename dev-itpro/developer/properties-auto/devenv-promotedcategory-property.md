@@ -2,7 +2,7 @@
 title: "PromotedCategory Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/05/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,26 +23,26 @@ Sets a category for a promoted action.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|New|TODO:Add documentation|
-|Process|TODO:Add documentation|
-|Report|TODO:Add documentation|
-|Category4|TODO:Add documentation|
-|Category5|TODO:Add documentation|
-|Category6|TODO:Add documentation|
-|Category7|TODO:Add documentation|
-|Category8|TODO:Add documentation|
-|Category9|TODO:Add documentation|
-|Category10|TODO:Add documentation|
-|Category11|TODO:Add documentation|
-|Category12|TODO:Add documentation|
-|Category13|TODO:Add documentation|
-|Category14|TODO:Add documentation|
-|Category15|TODO:Add documentation|
-|Category16|TODO:Add documentation|
-|Category17|TODO:Add documentation|
-|Category18|TODO:Add documentation|
-|Category19|TODO:Add documentation|
-|Category20|TODO:Add documentation|
+|New|Actions will appear in the New menu.|
+|Process|Actions will appear in the Process menu.|
+|Report|Actions will appear in the Report menu.|
+|Category4|Actions will appear in the Category 4 menu.|
+|Category5|Actions will appear in the Category 5 menu.|
+|Category6|Actions will appear in the Category 6 menu.|
+|Category7|Actions will appear in the Category 7 menu.|
+|Category8|Actions will appear in the Category 8 menu.|
+|Category9|Actions will appear in the Category 9 menu.|
+|Category10|Actions will appear in the Category 10 menu.|
+|Category11|Actions will appear in the Category 11 menu.|
+|Category12|Actions will appear in the Category 12 menu.|
+|Category13|Actions will appear in the Category 13 menu.|
+|Category14|Actions will appear in the Category 14 menu.|
+|Category15|Actions will appear in the Category 15 menu.|
+|Category16|Actions will appear in the Category 16 menu.|
+|Category17|Actions will appear in the Category 17 menu.|
+|Category18|Actions will appear in the Category 18 menu.|
+|Category19|Actions will appear in the Category 19 menu.|
+|Category20|Actions will appear in the Category 20 menu.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
