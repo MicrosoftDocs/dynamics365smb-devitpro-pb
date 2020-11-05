@@ -7,7 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/22/2020
+ms.date: 11/05/2020
 ---
 
 # Reducing Data Stored in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases 
