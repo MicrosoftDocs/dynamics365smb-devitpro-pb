@@ -2,7 +2,7 @@
 title: "Clustered Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/05/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Clustered Property
-Sets a value that indicates whether the index is clustered.
+Sets a value that indicates whether the key also defines the clustered index in the database.  
+
+By default the primary key is configured as the clustered key.
 
 ## Applies to
 -   Key
@@ -45,6 +47,7 @@ The following example defines a secondary key to be a clustered index.
 ```AL
 keys
 {
+    // the first key defined in the keys section is the primary key
     key(PrimaryKey; ID)
     {
         Clustered = false;
