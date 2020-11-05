@@ -20,7 +20,7 @@ When developing extensions in the AL development environment, you have a wide ra
 > Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.
 
 > [!NOTE]  
-> Extensions created using the designer are discarded when an environment is upgraded or moved to another node. See [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md) for more information.
+> Extensions created using Designer are discarded when an environment is upgraded or moved to another node. See [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md) for more information.
 
 ## Designer capabilities
 
