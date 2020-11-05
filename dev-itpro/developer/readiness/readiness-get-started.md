@@ -1,0 +1,195 @@
+---
+title: "Get Started Building Apps"
+description: "Getting you started with Microsoft [!INCLUDE [prodshort](../includes/prodshort.md)] Add-On Apps on AppSource"
+author: v-liober
+ms.custom: na
+ms.date: 10/01/2020
+ms.reviewer: solsen
+ms.topic: article
+ms.service: "dynamics365-business-central"
+ms.author: a-emniel
+---
+
+# Get Start with Building Apps
+
+[!INCLUDE [prodlong](../includes/prodlong.md)] is a business management solution that helps companies connect their financials, sales, services, and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you can easily and quickly tailor, extend and build applications so they fit your specific needs — with little to no code development.
+
+After you have developed your line-of-business app, be that for a specific industry, process, or department such as HR, finance, marketing, or operations, you can publish your app to [Microsoft AppSource](https://appsource.microsoft.com/partners), which is a marketplace where customers can find, try and get in touch with you. AppSource gives app publishers access to more than 100 million commercial users.  
+
+Learn how you can become a [!INCLUDE [prodshort](../includes/prodshort.md)] app publisher in 6 or 7 steps in this article.  
+
+## Step 1: Become a partner
+
+Becoming a Microsoft partner gives you access to the Microsoft resources needed to build, market, and sell your apps. While you don't have to be a Microsoft partner to begin developing your apps, all of the steps below are required to gain access to the programs that enable you to publish, market, and sell your apps.
+
+### Obtain your work account
+
+Your work account or work email is the email address provided to you by your company. This email is usually in the format *you@yourcompany.com*. More information on work accounts can be found [here](/partner-center/azure-active-directory-tenants-and-partner-center).
+
+### Join the Microsoft Partner Network
+
+Becoming a Microsoft partner gives you access to all the resources you need to build and publish apps. To become a partner, you must join the Microsoft Partner Network (MPN), at which time you will be assigned an MPN ID. MPN membership is free to all partners; you can enroll in the MPN [here](https://partner.microsoft.com/membership).
+
+### Set up your Partner Center account
+
+Once you have joined the Microsoft Partner Network (MPN), you can [set up your Partner Center (PC) account](/partner-center/mpn-create-a-partner-center-account). The Microsoft Partner Center is a generic portal where partners can sell and manage customer subscriptions for Microsoft services, such as Microsoft 365, Azure, Dynamics 365, and others, as well as for some third-party products. For more information, see the [Partner Center documentation](/partner-center/).
+
+Your Partner Center account provides you with access to pricing information, tools and services, and enables you to manage admin credentials for your company's work account. Partner Center is also where you can purchase or renew subscriptions to Microsoft Action Packs, create a business profile to receive and manage sales leads from Microsoft, and see if you qualify for co-selling opportunities.
+
+## Step 2: Register as a publisher
+
+The first step to becoming a publisher is to register in Partner Center (PC). PC is where you submit your apps for publication, promote your apps, and manage your offers. To begin the registration process, you must complete [these steps](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/azureisv). Shortly thereafter, one of our team members will follow up to help you complete your registration. Once registered, you can access PC.
+
+For more information, see [Partner Center Account](/partner-center/partner-center-account-setup). 
+
+### PartnerSource Business Center (PSBC) account
+
+Developing apps requires you to be known as [!INCLUDE [prodshort](../includes/prodshort.md)] developer and requires you to have a unique development license file with a specific object range.
+
+To obtain an object range for developing a [!INCLUDE [prodshort](../includes/prodshort.md)], you must first have access to PartnerSource Business Center (PSBC). You have access to PSBC if you have one of the following agreements:
+
+- [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
+
+- [A Registered Solution Program Addendum](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram) (RSPA)
+
+The relevant contract can be requested through your local Regional Operations Center (ROC) Contracts and Agreements Team below:
+
+- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you are based in Europe, the Middle East, or Africa
+
+- [mbsagree@microsoft.com](mailto:mbsagree@microsoft.com) if you are based in the Americas
+
+- [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you are based in the Asia Pacific region.
+
+## Step 3: Your unique app specifications
+
+### Requesting an object range
+
+When you develop an app for [!INCLUDE [prodshort](../includes/prodshort.md)], you must request access to an object range which holds a certain number of objects with which you can build your solution. In order to avoid overlap between objects used in different solution, each partner is assigned a number of objects in a unique object range. For example, a partner could get assigned the object range 70,001,000 – 70,001,999 which will give them 1000 numbered objects which they can use to develop [!INCLUDE [prodshort](../includes/prodshort.md)] solutions.
+
+Depending on where you will deploy your [!INCLUDE [prodshort](../includes/prodshort.md)] solution, online or on-premises, you can use different licensing methods and object ranges. There are currently 2 available ranges which you can request. Both have some characteristics which you must keep in mind:
+
+- The RSP Object Range (1-69 million ID range)
+
+    This object range is tied to [the RSP Program](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram) details.
+
+> [!IMPORTANT]
+> We currently advise NEW publishers NOT to request an RSP object range
+
+- The App Object Range (70-75 million ID range)
+
+    This object range was originally designed to run in the [!INCLUDE [prodshort](../includes/prodshort.md)] service only for Microsoft AppSource Apps.
+
+> [!IMPORTANT]
+> We currently advise NEW Publishers to request an App Object Range.
+
+Currently, you can implement apps developed in both the RSP Range and the app object range in [!INCLUDE [prodshort](../includes/prodshort.md)] online and on-premises, as well as partner-hosted.
+
+You can request an object range by downloading the object range request form [here](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram). After completion please send them to your Regional Operational Center (ROC) for processing:
+
+- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you are based in Europe, the Middle East, or Africa
+
+- [mbsagree@microsoft.com](mailto:mbsagree@microsoft.com) if you are based in the Americas
+
+- [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you are based in the Asia Pacific region.
+
+### Downloading your development license file
+
+After your Regional Operational Center has processed your Agreements and Object Range Request forms, you will be able to download your companies unique Developer license from [PartnerSource Business Center](https://aka.ms/PSBC) under the developer tools section, license key configuration.
+
+## Step 4: Getting access to preview bits
+
+Get access to preview builds by joining Microsoft Collaborate.
+
+In Microsoft Collaborate, you get access to a set of [!INCLUDE [prodshort](../includes/prodshort.md)] builds:
+
+- The current major version
+- An upcoming major version
+- Daily builds
+
+You must have the following prerequisites to register on Microsoft Collaborate:
+
+- Azure Active Directory (Azure AD).
+
+  > [!NOTE]
+  > Note: If you have Microsoft 365, then your company most likely has Azure AD
+
+- Azure AD Global Administrator permission
+
+  > [!NOTE]
+  > To find out if your company has an Azure AD account, please check with your Network Administration team.
+
+### Step A: How your Global Administrator must register for Collaborate
+
+Not all people from your company can initiate the onboarding into Collaborate – only your company Global Administrator has the permission to do. He/she will have to register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate), then choose the **Get Started** action and complete the registration form.
+
+#### Optional Step: Add your coworkers to Microsoft Collaborate
+
+If you want to add coworkers, please follow the 5 steps below:
+
+1. Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
+
+2. Click on the 'Gear' Icon on the top right corner of the page and then on **Developer Settings**.
+
+3. Click on **Users** under **Settings** in the grey panel on the left-hand side of the page.
+
+4. Click the grey **ADD USERS** button and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button.
+
+5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
+
+### Step B: Getting access to the available builds and engagements
+
+Once you have successfully registered (and added coworkers) on Microsoft Collaborate, Microsoft must assign you to the right programs and engagements before you can see the preview bits. Therefore, you should contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with below filled in table:
+
+| **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
+|--|--|--|--|--|
+| Contoso | 12345 | John | Doe | <John.Doe@Contoso.com> |
+| Contoso | 12345 | Jane | Doe | <Jane.Doe@Contoso.com> |
+
+After sending the email, expect a response from Microsoft within 1-2 business days.
+
+### Register your unique prefix or suffix
+
+In your extension, the name of each new application object must contain [a prefix or suffix](/dynamics365/business-central/dev-itpro/compliance/apptest-prefix-suffix). This rule applies to all objects. Email [d365val@microsoft.com](mailto:d365val@microsoft.com) with a prioritized list of 3 letter affixes of your choice together with your MPN ID and the publisher name that you will use for the app.
+
+## Step 5: Resources when developing your solution
+
+Find below some guiding resources on how to develop your apps for [!INCLUDE [prodshort](../includes/prodshort.md)].
+
+- Microsoft Learn
+
+    Learn new skills and discover the power of Microsoft products with step-by-step guidance. Start your journey today by exploring our [learning paths and modules](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central).
+
+- Microsoft Docs
+
+    Find [The developer and administration content on Microsoft Docs](/dynamics365/business-central/dev-itpro/)
+
+- Join the conversation
+
+    [Join the conversation on developing apps on Yammer](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=41498640384&view=all)
+
+- Join the monthly Office hour calls
+
+    Join the monthly [Office hour calls](https://aka.ms/ReadyToGoOfficeHours) to learn more about a hot topic
+
+- Get coaching from experts
+
+    Need help with developing your apps? There is a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prodshort](../includes/prodshort.md)] ready to engage with you
+
+## Step 6: Set up Azure DevOps for your development processes
+
+Optionally, use the CI/CD workshop document at [https://aka.ms/cicdhol](https://aka.ms/cicdhol) if you want to do it yourself, or choose between vendors offering tools or services around DevOps.
+
+Talk to one of the [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) for guidance.
+
+## Step 7: Publish your app on Microsoft AppSource
+
+Once your app is ready for submission, you can list your app on Microsoft AppSource by submitting it in [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview). This article describes [how to create a new [!INCLUDE [prodshort](../includes/prodshort.md)] offering](/azure/marketplace/partner-center-portal/create-new-business-central-offer).
+
+Before you submit it is advised to review the [Technical validation checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission) and [marketing validation checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) which lists all requirements that you **must meet before submitting** an app for validation. If you do not meet these mandatory requirements, your extension will fail validation
+
+## See also
+
+[The Lifecycle of Apps and Extensions for [!INCLUDE [prodshort](../includes/prodshort.md)]](../devenv-app-life-cycle.md)  
+[Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
+[Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prodshort](../includes/prodshort.md)] Online](../app-maintain.md)  
+[Microsoft Responsibilities for Apps on [!INCLUDE [prodshort](../includes/prodshort.md)] online](../../deployment/microsoft-responsibilities.md)  
