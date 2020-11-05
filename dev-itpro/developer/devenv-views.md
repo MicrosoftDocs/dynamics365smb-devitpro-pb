@@ -4,7 +4,7 @@ description: "Description of what views are and how they are defined in Business
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -21,18 +21,21 @@ A view offers:
 
 Views are defined directly in code, on the list page that they modify. The defined view or views are available to the user through **Filter Pane** on a page and appear in the sequence that they are defined in code.
 
+> [!NOTE]  
+> `showMyCode` does not apply to views. Views defined in an extension with `showMyCode` set to `false` can still be copied using Designer.
+
 ## Snippet support
 Typing the shortcut `tview` will create the basic layout for a view when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Filtering and sorting
 You can filter on the data in a view by using the `Filters` property. The following is an example of the syntax:
-```
+```AL
 Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
 ```
 For more information, see [Filters](properties/devenv-filters-property.md).
 
 You can sort on the data in a view by using the `OrderBy` property. The following is an example of the syntax:
-```
+```AL
 OrderBy = ascending ("Balance (LCY)", Name);
 ```
 For more information, see [OrderBy](properties/devenv-orderby-property.md).
@@ -46,7 +49,7 @@ The following example shows a page customization of the **Customer List** page, 
 > [!IMPORTANT]  
 > The definition of the `view` section must come after any definition of layout and actions, otherwise you will get a compilation error.
 
-```
+```AL
 profile MyProfile
 {
     Description = 'My Role Center';

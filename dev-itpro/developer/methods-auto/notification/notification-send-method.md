@@ -1,8 +1,8 @@
 ---
-title: "Send Method"
+title: "Notification.Send Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2020
+ms.date: 10/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Send Method
+# Notification.Send Method
 Sends the notification to the client, where it will display in the UI.
 
 
@@ -30,7 +30,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the notification was sent; otherwise **false**If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the notification was sent; otherwise **false** If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

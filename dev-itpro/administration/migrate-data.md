@@ -10,14 +10,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 04/01/2020
-ms.author: bmeier
+ms.date: 10/01/2020
+ms.author: edupont
 
 ---
 
 # Migrating On-Premises Data to Business Central Online
 
-Customers that run their workloads on-premises but are looking to move to the cloud can migrate using the cloud migration tool. Moving to the cloud gives users the benefits of cloud scenarios such as Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
+Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. By moving to the cloud, users get the benefits of cloud scenarios such as Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
+
+The cloud migration tool in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] supports migration from specific versions of specific software. For more information, see the following articles:
+
+* [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
+* [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
+* [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)
 
 ## Data migration
 
@@ -36,4 +42,5 @@ The initial data migration time can vary depending factors such as the amount of
 [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
+[Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  

@@ -2,7 +2,7 @@
 title: "OnFindRecord Trigger"
 description: "Describes the functionality of the OnFindRecord trigger."
 ms.custom: na
-ms.date: 09/08/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ Overrides the default page behavior and enables you to specify which record you 
 
 ## Syntax  
 
-```  
+```AL
 trigger OnFindRecord(Which): Ok
 begin
     ...

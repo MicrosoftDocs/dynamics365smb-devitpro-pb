@@ -2,7 +2,7 @@
 title: "Actions that have been published must not be deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ Version 1.0 of the extension defines a page named MyPage that contains an action
 
 If a dependent extension modifies this action in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The action 'MyAction' is not found in the target 'MyPage' (AL0271)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyPage
 {
     actions
@@ -63,7 +63,7 @@ pageextension 50100 SomePageExtension extends MyPage
 
 If a dependent extension uses this action as an anchor for a change in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The action 'MyAction' is not found in the target 'MyPage' (AL0271)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyPage
 {
     actions
@@ -82,7 +82,7 @@ pageextension 50100 SomePageExtension extends MyPage
 
 If a dependent extension is moving this action in a page extension or customization, when compiling against version 2.0, this will lead to a compilation error similar to `The action 'MyAction' is not found in the target 'MyPage' (AL0271)`.
 
-```
+```AL
 pageextension 50100 SomePageExtension extends MyPage
 {
     actions

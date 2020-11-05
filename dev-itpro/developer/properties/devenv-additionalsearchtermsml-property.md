@@ -1,9 +1,9 @@
 ---
-title: "AdditionalSearchTerms Property"
-description: "Describes the AdditionalSearchTerms Property in AL."
+title: "AdditionalSearchTermsML Property"
+description: Describes the AdditionalSearchTermsML Property that specifies search terms for the page or report in different languages.
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -16,7 +16,7 @@ Specifies search terms (words and phrases) for the page or report in different l
 
 ## Syntax
 
-```
+```AL
 AdditionalSearchTermsML = <language ID> = '<term>[,<term>]'[, <language ID> = '<term>[,<term>]'];
 ```
 
@@ -44,7 +44,7 @@ The [UsageCategory property](devenv-usagecategory-property.md) must be set to a 
 
 The following code snippet uses the **AdditionalSearchTermsML** property to add search terms in English and Danish to a list page whose caption is **Items**.
 
-```
+```AL
 page 50101 SearchTestML
 {
     PageType = List;

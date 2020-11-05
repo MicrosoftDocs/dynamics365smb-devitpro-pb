@@ -2,7 +2,7 @@
 title: "Record Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 10/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,6 +37,10 @@ The following methods are available on instances of the Record data type.
 |[CalcFields(Any [, Any,...])](record-calcfields-method.md)|Calculates the FlowFields in a record. You specify which fields to calculate by using parameters.|
 |[CalcSums(Any [, Any,...])](record-calcsums-method.md)|Calculates the total of a column in a table. You specify which fields to calculate by using parameters.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
+|[AddLoadFields([Any,...])](record-addloadfields-method.md)|Specifies fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.|
+|[SetLoadFields([Any,...])](record-setloadfields-method.md)|Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|
+|[AreFieldsLoaded(Any,...)](record-arefieldsloaded-method.md)|Checks whether the specified fields are all initially loaded.|
+|[LoadFields(Any,...)](record-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
 |[Count()](record-count-method.md)|Counts the number of records in a table.|
 |[IsEmpty()](record-isempty-method.md)|Determines whether a table or a filtered set of records is empty.|
 |[CountApprox()](record-countapprox-method.md)|Returns an approximate count of the number of records in the table, for example, for updating progress bars or displaying informational messages.|

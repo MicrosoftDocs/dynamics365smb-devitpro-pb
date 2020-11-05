@@ -1,8 +1,9 @@
 ---
 title: "Unsupported table field property change"
+description: Explains AppSourceCop Rule AS0036.
 ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +29,7 @@ It is not allowed to change property values in a way that would prevent the sche
 ### Example 1 - Changing Enabled from true to false
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -42,7 +43,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -60,7 +61,7 @@ In version 2.0, the field is not enabled anymore. Disabled fields are not create
 ### Example 2 - Changing FieldClass from Normal to FlowField
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -74,7 +75,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -87,12 +88,12 @@ table 50100 MyTable
 }
 ```
 
-In version 2.0, the field became a [FlowField](../devenv-flowfields). As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. Changing a Normal field to FlowField is a then destructive change.
+In version 2.0, the field became a [FlowField](../devenv-flowfields.md). As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. Changing a Normal field to FlowField is a then destructive change.
 
 ### Example 3 - Changing the Access property to make a field less accessible
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -106,7 +107,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -122,7 +123,7 @@ table 50100 MyTable
 In version 2.0, the field `MyField` is now only accessible within `MyTable` and cannot be used from other extension. If a dependent extension references this field, this will lead to a compilation error similar to `'MyField' is inaccessible due to its protection level (AL0161)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
-```
+```AL
 codeunit 50120 AnotherCodeunit
 {
     trigger OnRun()
@@ -139,7 +140,7 @@ codeunit 50120 AnotherCodeunit
 ### Example 1 - Setting Enabled from false to true
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -153,7 +154,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -171,7 +172,7 @@ In version 2.0, the field is now enabled. Disabled fields are not created in the
 ### Example 2 - Changing FieldClass from FlowField to Normal
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -185,7 +186,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -198,12 +199,12 @@ table 50100 MyTable
 }
 ```
 
-In version 2.0, the [FlowField](../devenv-flowfields) became a Normal field. As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. For the schema synchronization, changing a flow field to a normal field is similar to creating a new field and is then not a destructive change.
+In version 2.0, the [FlowField](../devenv-flowfields.md) became a Normal field. As FlowFields are not physical fields that are stored in the database, they are not created during schema synchronization. For the schema synchronization, changing a flow field to a normal field is similar to creating a new field and is then not a destructive change.
 
 ### Example 3 - Changing the Access property to make a field more accessible
 
 Version 1.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields
@@ -217,7 +218,7 @@ table 50100 MyTable
 ```
 
 Version 2.0 of the extension:
-```
+```AL
 table 50100 MyTable
 {
     fields

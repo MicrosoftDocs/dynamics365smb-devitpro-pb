@@ -2,7 +2,7 @@
 title: "The value assigned to a variable must be used."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ The value assigned to a variable must be used, otherwise the variable is not nec
 Unused variable can be confusing for the reader and can cost performance to the system.
 
 ## Bad code example
-```
+```AL
 procedure AddEntities@1(FilterStr@1000 : Text[250])
 var
     Vendor@1001 : Record Vendor;
@@ -43,7 +43,7 @@ end;
 ```
 
 ## Good code example
-```
+```AL
 procedure AddEntities@1(FilterStr@1000 : Text[250])
 var
     Vendor@1001 : Record Vendor;

@@ -1,8 +1,8 @@
 ---
-title: "Init Method"
+title: "Record.Init Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Init Method
+# Record.Init Method
 Initializes a record in a table.
 
 
@@ -57,7 +57,7 @@ This method assigns default values to each field in the record, including the Sy
 > [!NOTE]  
 > Primary key and timestamp fields are not initialized.  
   
-After the method runs, you can change the values in any or all of the fields before you call the [INSERT Method (RecordRef)](recordref-insert-method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
+After the method runs, you can change the values in any or all of the fields before you call the [INSERT Method (RecordRef)](../recordref/recordref-insert-method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
   
 The method works in the same way as the [INIT Method (RecordRef)](../recordref/recordref-init-method.md).  
 

@@ -1,7 +1,8 @@
 ---
 title: "OnPageBackgroundTaskError Trigger"
+description: "OnPageBackgroundTaskError trigger in AL for Business Central."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,11 +18,12 @@ Runs when an error occurs in a page background task.
 
 ## Syntax  
 
-```  
+```AL
 OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: Text; ErrorCallStack: Text; var IsHandled: Boolean)  
 ```  
 
-#### Parameters  
+#### Parameters
+
 *TaskID*  
 Type: Integer  
 
@@ -50,13 +52,13 @@ Specifies the call stack for the error that occurred.
 
 ## Applies to  
 
-Pages
+- Pages
 
 ## Example  
 
 The following example modifies the `OnPageBackgroundTaskError` trigger to display a more user-friendly notification in the client when the error `Could not parse parameter WaitParam` or timeout occurs in the page background task. For more details about this example, see [Page Background Tasks](../devenv-page-background-tasks.md).
 
-```
+```AL
 trigger OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: Text; ErrorCallStack: Text; var IsHandled: Boolean)
 var
     PBTErrorNotification: Notification;

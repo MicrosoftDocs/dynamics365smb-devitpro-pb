@@ -1,7 +1,7 @@
 ---
 title: "Implementing Location in AL"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ The example also shows how to specify options for the location functionality suc
 The following code will create two variables; the `LocationAvailable` variable is a **Boolean** that checks whether the current device has location capabilities. The `Location` variable is a **DotNet** type that gets instantiated by adding code to the `OnOpenPage` trigger. Then, it will add an action to the page that lets the user retrieve the location information. Finally, the trigger `Location::LocationChanged` is defined to handle the incoming location information.  
 
 
-```
+```AL
 page 50101 "Card with Location Capability"
 {
 

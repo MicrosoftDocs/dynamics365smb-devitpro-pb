@@ -2,7 +2,7 @@
 title: "Troubleshooting Printing"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global, and trigger events. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ When a page that uses the **Printers** system table opens, the system raises the
 
 For example, the following code snippet creates a page that lists extension printer setups.
 
-```
+```AL
 page 50101 MyPrinterList
 {
     PageType = List;
@@ -79,7 +79,7 @@ page 50101 MyPrinterList
 
 You might want to look at the views that are in the report payload. The following code snippet unpacks the views that are in a report payload into a message:
 
-```
+```AL
 procedure DisplayFilterView(ObjectPayload: JsonObject) 
 var 
     ViewSize: Integer; 

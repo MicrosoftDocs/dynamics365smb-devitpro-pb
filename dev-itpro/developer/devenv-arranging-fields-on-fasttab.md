@@ -2,7 +2,7 @@
 title: "Field Arrangement on FastTabs"
 description: FastTabs in Dynamics 365 Business Central allow users to find key information on a page displayed in separate groups.
 ms.custom: na
-ms.date: 04/03/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Pages automatically adjust to the available space on the screen. If horizontal s
 
 Creating a FastTab is easy. A FastTab is a group control directly within the `content` area of a card, document, or task page. The following example shows how you can create a FastTab containing a pair of fields.
 
-```
+```AL
 page 50101 SimpleCustomerCard
 {
     PageType = Card;

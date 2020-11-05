@@ -2,7 +2,7 @@
 title: "Variables must be initialized before usage."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Always initialize a variable before usage. This can improve readability and make
 Using uninitialized variables may lead to strange behavior, the code may become harder to debug and in some cases readability of the code can decrease. 
 
 ## Bad code example 1
-```
+```AL
 var
     x: Integer;
     z: Integer;
@@ -45,7 +45,7 @@ end;
 ```
 
 ## Good code example 1
-```
+```AL
 var
     x: Integer;
     z: Integer;
@@ -65,7 +65,7 @@ end;
 ```
 
 ## Bad code example 2
-```
+```AL
  procedure TestFunc()
     var
         a: Integer;
@@ -76,7 +76,7 @@ end;
 ```
 
 ## Good code example 2
-```
+```AL
 procedure TestFunc()
     var
         a: Integer;

@@ -2,7 +2,7 @@
 title: "Notifications"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,19 +29,19 @@ By using the **Notification** and **NotificationScope** data types and methods i
 
 |  Method  |  Description  |
 |------------|---------------|
-|[Message](methods/devenv-message-method-notification.md)  |Specifies the content of the notification that appears in the UI.|
-|[Scope](methods/devenv-scope-method-notification.md)     |Specifies the scope in which the notification appears.|
-|[Send](methods/devenv-send-method-notification.md)  |Sends the notification to be displayed by the client.|
-|[AddAction](methods/devenv-addaction-method-notification.md)  |Adds an action on the notification.|
-|[SetData](methods/devenv-setdata-method-notification.md)  |Sets a data property value for the notification|
-|[GetData](methods/devenv-getdata-method-notification.md)  |Gets a data property value from the notification.|
-|[Recall](methods/devenv-recall-method-notification.md)|Recalls a sent notification.|
+|[Message](methods-auto/notification/notification-message-method.md)  |Specifies the content of the notification that appears in the UI.|
+|[Scope](methods-auto/notification/notification-scope-method.md)     |Specifies the scope in which the notification appears.|
+|[Send](methods-auto/notification/notification-send-method.md)  |Sends the notification to be displayed by the client.|
+|[AddAction](methods-auto/notification/notification-addaction-method.md)  |Adds an action on the notification.|
+|[SetData](methods-auto/notification/notification-setdata-method.md)  |Sets a data property value for the notification|
+|[GetData](methods-auto/notification/notification-getdata-method.md)  |Gets a data property value from the notification.|
+|[Recall](methods-auto/notification/notification-recall-method.md)|Recalls a sent notification.|
 
 
 ## Creating and sending a notification
 You create a notification by using the **Message** and **Send** methods. The **Message** method defines the message part of the notification. When the **Send** method is called, the notification is sent to the client and content of the message is displayed.
 
-```
+```AL
 MyNotification.Message := 'This is a notification';
 MyNotification.Send();
 ```
@@ -60,7 +60,7 @@ The scope determines where the notification is broadcast in the client. There ar
 
 The following code creates a notification in the *LocalScope*:
 
-```
+```AL
 MyNotification.Message := 'This is a notification';
 MyNotification.Scope := NotificationScope::LocalScope;
 MyNotification.Send();
@@ -71,7 +71,7 @@ You add actions on notifications by using the **AddAction** method. This method 
 
 Conceptually, a notification action calls a method in a specified codeunit, passing the notification object in the call. The method includes the business logic for handling the action.
 
-```
+```AL
 MyNotification.Message := 'This is a notification';
 MyNotification.Scope := NotificationScope::LocalScope;
 MyNotification.AddAction('Action 1',Codeunit::"Action Handler",'RunAction1');
@@ -93,7 +93,7 @@ You use the **SetData** and **GetData** methods to add data to a notification, w
 
 The following code sets data for a notification:
 
-```
+```AL
 MyNotification.Message := 'This is a notification';
 MyNotification.Scope := NotificationScope::LocalScope;
 MyNotification.SetData('Created',Format(CurrentDateTime,0,9));
@@ -105,7 +105,7 @@ MyNotification.Send();
 
 The following code gets the data for a notification:
 
-```
+```AL
 DataValue := MyNotification.GetData('Created');
 DataValue := MyNotification.GetData('ID');
 ```
@@ -169,7 +169,7 @@ To complete the example, follow these steps:
 
 1. Create a page extension object that extends page **42 Sales Order**, and add the notification code on the **OnOpenPage** trigger.
 
-    ```
+    ```AL
     pageextension 50100 CreditBalanceNotification extends "Sales Order"
     {
     
@@ -199,7 +199,7 @@ To complete the example, follow these steps:
 
 2. Create a codeunit called **ActionHandler** for handling the notification action. Add a global method called **OpenCustomer** that has a **Notification** data type parameter called **CreditBalanceNotification** for receiving the Notification object, and include the following code on the method:
 
-    ```
+    ```AL
     codeunit 50100 ActionHandler
     {
         trigger OnRun()
@@ -219,7 +219,7 @@ To complete the example, follow these steps:
             // Open the Customer Card page for the customer.
             if CustRec.Get(CustNo) then begin
                 CustPage.SetRecord(CustRec);
-                CustPage.Run();;
+                CustPage.Run();
             end else begin
                 Error('Could not find Customer: ' + CustNo);
             end;
@@ -228,6 +228,6 @@ To complete the example, follow these steps:
     ```
 
 ## See Also
-[Notification Data Type](datatypes/devenv-notification-data-type.md)
-[Developing Extensions](devenv-dev-overview.md)
-[Getting Started with AL](devenv-get-started.md)
+[Notification Data Type](datatypes/devenv-notification-data-type.md)   
+[Developing Extensions](devenv-dev-overview.md)   
+[Getting Started with AL](devenv-get-started.md)   

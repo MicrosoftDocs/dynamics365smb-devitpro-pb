@@ -1,7 +1,8 @@
 ---
 title: "Configuring Business Central Web Server instance"
+description: Learn about the different configuration settings when you deploy the Business Central web server on-premises.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -104,7 +105,7 @@ The following table describes the settings that are available in the navsettings
 |Setting/KeyName|Description|  
 |-------------|-----------------|  
 |AllowedFrameAncestors|Specifies the host name of any web sites in which the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or parts of are embedded. By default, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will not allow a website to display it inside an iframe unless the website is hosted on the same web server. This value of this setting is a comma-separated list of host names (URIs). Wildcard names are accepted. For example: `https:mysite.sharepoint.com, https:*.myportal.com`<BR /><BR /> <!--For more information, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md)-->|
-|GlobalEndPoints|Specifies the comma-separated list of global endpoints that are allowed to call this website. The values must include http scheme and fully qualified domain name (FDQN), such as `https://financials.microsoft.com`.<br /><br /> Default value: none|
+|GlobalEndPoints|Specifies the comma-separated list of global endpoints that are allowed to call this website. The values must include http scheme and fully qualified domain name (FDQN), such as `https://businesscentral.microsoft.com`.<br /><br />"GlobalEndPoints": "null,ms://businesscentral,ms://dynamicsnav"<br /><br /> Default value: none|
 |LoadScriptsFromCdn|Specifies whether to load scripts from Content Distribution Networks (CDNs). This only applies to scripts that are available from a CDN, like jQuery.<br /><br />If set to `false`, scripts will be loaded from the Web server, which is useful in, for example, an intranet scenario where there is no internet access.<br />Default value: `true`<br /><br />**DISCONTINUED AFTER:** Business Central Spring 2019|
 |AllowNtlm|Specifies whether NT LAN Manager \(NTLM\) fallback is permitted for authentication.<br /><br /> To require Kerberos authentication, set this value to `false`.<br /><br /> Values: `true`, `false`<br /><br /> Default value: `true`|  
 |ClientServicesChunkSize|Sets the maximum size, in kilobytes, of a data chunk that is transmitted between [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)]. Data that is transmitted between [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)] is broken down into smaller units called chunks, and then reassembled when it reaches its destination.<br /><br /> Values: From 4 to 80.<br /><br /> Default value: 28|  

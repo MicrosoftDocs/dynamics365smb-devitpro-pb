@@ -1,7 +1,7 @@
 ---
-title: "Culture Property"
+title: "Version Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,14 +17,13 @@ author: SusanneWindfeldPedersen
 Specifies the version of the .NET assembly.
 
 ## Syntax
-```
+
+```AL
 Version = '4.0.0.0';
 ```
 
 ## See Also  
-[Properties](devenv-properties.md)       
 
-## See Also  
 [Properties](devenv-properties.md)       
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

@@ -2,7 +2,7 @@
 title: "The FindSet() or Find() methods must be used only in connection with the Next() method."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Avoid getting the dataset when an enumeration is not used, which will decrease p
 If you use `FindSet()` or `Find()` you must have a `Next()` method. Otherwise, you are wasting CPU and bandwidth since multiple records are loaded but you only use one.
 
 ## Bad code example
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var
@@ -42,7 +42,7 @@ codeunit 1 MyCodeunit
 ```
 
 ## Good code example
-```
+```AL
 codeunit 1 MyCodeunit
 {
    var

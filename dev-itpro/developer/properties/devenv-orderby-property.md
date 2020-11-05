@@ -4,20 +4,23 @@ description: "Description of the OrderBy property for Business Central."
 
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
 # OrderBy Property
+
 Sorts rows in the resulting dataset of a query in ascending or descending order by a column or columns.  
   
 ## Applies to  
+
 - [Query](../devenv-query-object.md) objects
 - [Views](../devenv-views.md)
   
-## Property Value  
+## Property Value
+
  *Column*=**Ascending**&#124;**Descending**  
   
 - *Column* is the name of the query column as specified by its [Name Property](devenv-name-property.md).  
@@ -30,9 +33,10 @@ Sorts rows in the resulting dataset of a query in ascending or descending order 
 > Separate multiple columns with a comma.  
   
 ## Remarks
+
 In the OrderBy property, you add a column by name and set its direction to ascending or descending:
 
-```
+```AL
 view(MyFirstView)
 {
     Caption = 'This is my first view!';
@@ -72,7 +76,7 @@ The **OrderBy** property corresponds to the Order By clause in SQL select statem
   
 The following is the Order By clause in SQL that corresponds to the OrderBy property in this example.  
   
-```  
+```AL
 OrderBy = ascending (Name,Quantity);  
 ```
 

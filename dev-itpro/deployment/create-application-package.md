@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 # Moving from Dynamics NAV On-premises to Business Central Online
 This article describes you can move your on-premise [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.

@@ -3,7 +3,7 @@ title: "ContextSensitiveHelpPage Property"
 author: edupont04
 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,8 @@ Use this property to set the target Help file for context-sensitive Help for pag
 - XMLport objects
 
 ## Syntax
-```
+
+```AL
 ContextSensitiveHelpPage = 'page-extension-topic';
 ```
 

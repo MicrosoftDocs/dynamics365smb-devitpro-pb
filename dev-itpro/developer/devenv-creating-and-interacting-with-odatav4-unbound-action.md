@@ -3,7 +3,7 @@ title: "Creating and Interacting with an OData V4 Unbound Action"
 description: "Describing how to create and interact with an OData V4 Unbound Action in AL."
 author: ap3rus
 ms.custom: na
-ms.date: 04/21/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ To declare an OData unbound action define a codeunit with a procedure with the d
 
 The following example illustrates a simple codeunit with three procedures that can be exposed as a web service and called as OData unbound actions.
 
-```
+```AL
 codeunit 50100 "MiscOperations"
 {
     procedure Ping(input: Integer): Integer

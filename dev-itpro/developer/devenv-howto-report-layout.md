@@ -3,7 +3,7 @@ title: "Creating a Word Layout Report"
 description: "Describes the steps involved in creating a report that uses a Word layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/15/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -18,7 +18,7 @@ When you create a new report, there are two things you have to think about; defi
 To facilitate testing your report layout, the following simple example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
 1. Create a new extension to the **Customer List** page that contains code to run the report, as well as a simple report object by adding the following lines of code:  
-    ```
+    ```AL
     pageextension 50100 MyExtension extends "Customer List"
     {
         trigger OnOpenPage();
@@ -35,7 +35,7 @@ To facilitate testing your report layout, the following simple example extends t
     ```
 2. Build the extension (**Ctrl+Shift+B**) to generate the MyWordReport.docx file.
 3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report. For more information about defining a dataset, see [Report Dataset](devenv-report-dataset.md).  
-    ```
+    ```AL
     report 50124 MyWordReport
     {
         DefaultLayout = Word;
@@ -68,7 +68,7 @@ You will now see the generated report in preview mode.
 
 > [!NOTE]  
 > If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
-    ```
+    ```json
     "al.compilationOptions": {
             "generateReportLayout": true
         }

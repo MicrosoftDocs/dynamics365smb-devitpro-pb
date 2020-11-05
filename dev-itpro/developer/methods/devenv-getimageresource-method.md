@@ -1,8 +1,9 @@
 ---
 title: "GetImageResource Method"
+description: "The GetImageResource method in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +32,7 @@ Gets the URL for an image resource specified in the control add-in manifest. The
 <!--
  For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
   
-```  
+```AL
 var map = new VEMap('controlAddIn');  
     map.LoadMap(...);  
     var pushpin = map.AddPushpin(map.GetCenter());  

@@ -1,7 +1,7 @@
 ---
 title: "ClearOnLookup Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,16 +19,18 @@ Sets a value that determines whether the current contents of the field are delet
   
 ## Applies to  
   
--   Fields  
+- Fields  
 
-  
 ## Property Value  
- **True** if current contents of the field are replaced; otherwise, **false** if the contents are pasted. The default value is **true** for all fields except FlowFilters fields.  
+
+**True** if current contents of the field are replaced; otherwise, **false** if the contents are pasted. The default value is **true** for all fields except FlowFilters fields.  
 
 ## Syntax
-```
+
+```AL
 ClearOnLookup = true;
 ```
   
-## See Also  
- [FlowFilter Overview](../devenv-flowfilter-overview.md)
+## See Also
+
+[FlowFilter Overview](../devenv-flowfilter-overview.md)

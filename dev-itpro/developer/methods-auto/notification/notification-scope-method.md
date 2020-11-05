@@ -1,8 +1,8 @@
 ---
-title: "Scope Method"
+title: "Notification.Scope Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2020
+ms.date: 10/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Scope Method
+# Notification.Scope Method
 Specifies the context in which the notification appears in the client.
 
 
@@ -41,11 +41,12 @@ The scope of the current notification.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks
+## Remarks 1
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
-##  Example
+##  Example 1
+
 The following code creates a notification and sends it in the local scope.
 ```
 MyNotification.MESSAGE := 'This is a notification';
@@ -53,14 +54,15 @@ MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
 MyNotification.SEND;
 ```
 
-## Remarks
+## Remarks 2
 The data that is specified by the SETDATA method can be retrieved by the [GETDATA Method](../../methods/devenv-getdata-method-notification.md). The SETDATA and GETDATA methods are typically used for actions with actions on the notification. The SETDATA method is called from the source is the notification, while the GETDATA method is called from the action code.
 
 You can use multiple SETDATA method calls to specify different data items. The data remains available for the life of the notification instance. The data is cleared once the notification instance has been dismissed or an action is taken.
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
-##  Example
+##  Example 2
+
 The following code sets the data for a notification:
 ```
 MyNotification.MESSAGE := 'This is a notification';
@@ -75,7 +77,7 @@ The following code gets the data for a notification:
 
 ```
 MyNotification.GETDATA('Created');
-MyNotification.GETDATA('ID');
+MyNotification.GETDATA('ID');''
 ```
 
 ## See Also

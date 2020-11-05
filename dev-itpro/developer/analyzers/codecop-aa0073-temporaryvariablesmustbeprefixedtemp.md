@@ -2,7 +2,7 @@
 title: "The name of temporary variable must be prefixed with Temp."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,12 +25,12 @@ Only temporary variable names must be prefixed with Temp.
 Temporary variables must be named with identifiers that abbreviate the word temporary, such as temp. This improves readability of the code.
 
 ## Bad code example
-```
+```AL
 JobWIPBuffer : Record "Job WIP Buffer" temporary;
 ```
 
 ## Good code example
-```
+```AL
 TempJobWIPBuffer : Record "Job WIP Buffer" temporary;
 ```
 

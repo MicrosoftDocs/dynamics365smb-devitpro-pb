@@ -1,6 +1,6 @@
 ---
 title: Managing technical support
-description: Learn about how to support your Business Central customers, online and on-premises.
+description: Learn about how to support your Business Central users, online and on-premises, as the internal or delegated administrator.
 author: edupont04
 
 ms.service: dynamics365-business-central
@@ -8,7 +8,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/30/2020
+ms.date: 10/28/2020
 ms.author: edupont
 
 ---
@@ -31,11 +31,16 @@ Internal administrators can also [create sandbox environments](environment-types
 
 Each customer of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] has a partner who assists with technical support when requested by the internal administrator. As the partner, you must have specified support contact details in the **Help and Support** page. For more information, see [Configuring the support experience](../technical-support.md#configuring-the-support-experience).  
 
-The delegated administrator can then access either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, or they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to [analyse telemetry](telemetry-overview.md), [create a sandbox environment](environment-types.md#sandbox-environments) for debugging, or an extra production environment for step-by-step reproduction, for example.  
+> [!IMPORTANT]
+> You must have set up users in your own tenant in Partner Center as either *Admin agent* or *Helpdesk agent*, and they must have *delegated administration* privileges in your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to support the customer. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).
 
-If a prospect wants to extend their free trial a second time, the delegated administrator can sign in to the prospect's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and run the same **Extend Trial Period** guide. For more information, see [Extending trials](tenant-administration.md#extending-trials).  
+The delegated administrator can access the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for further troubleshooting, and they can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to [analyse telemetry](telemetry-overview.md), [create a sandbox environment](environment-types.md#sandbox-environments) for debugging, or an extra production environment for step-by-step reproduction, for example.  
 
 If the partner cannot find a solution, they can request support from Microsoft. For more information, see the [Escalating support issues to Microsoft](#escalating-support-issues-to-microsoft) section.  
+
+### Extend trials
+
+Another task for a delegated admin is to help with extending trials. For more information, see [Extending trials](tenant-administration.md#extending-trials).  
 
 ### Cleaning up settings
 
@@ -69,7 +74,7 @@ In this section, we provide an overview of the most useful tools for troubleshoo
 - Environment telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]  
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can view telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack. For more information, see [Environment telemetry](tenant-admin-center-telemetry.md).  
-- Create sandbox environments  
+- Troubleshoot in a sandbox environment  
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create sandbox environments for safe debugging and troubleshooting. For more information, see [Sandbox environments](environment-types.md#sandbox-environments).  
 - Use the Event Recorder  
@@ -77,7 +82,7 @@ In this section, we provide an overview of the most useful tools for troubleshoo
     Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For more information, see [Discoverability of Events](../developer/devenv-events-discoverability.md).  
 - Check the data in the database  
 
-    You can view table objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions. For more information, see [Viewing Table Data](../developer/devenv-view-table-data.md).  
+    You can view table objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. This lets you to see the data in all rows and columns of a specific table, including any columns that are added by table extensions. From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can also launch a list of all tables, sorted by storage size. For more information, see [Viewing Table Data](../developer/devenv-view-table-data.md).  
 - Analyze long running operations in Application Insights  
 
     Set up Application Insights so that any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. For more information, see [Analyzing long running operations in Application Insights](telemetry-long-running-sql-query-trace.md).  
@@ -132,14 +137,14 @@ The link cannot open errors that were generated by the platform. So if you suspe
 
 ## Escalating support issues to Microsoft
 
-Sometimes the tenant has run into a problem that the partner cannot resolve. In those cases, the administrator can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily submit a support request to Microsoft.  
+Sometimes the tenant has run into a problem that the partner cannot resolve. In those cases, the delegated admin can use the Partner Center or the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to submit a support request to Microsoft.  
 
 Both internal and delegated administrators can access [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and then, in the **Support** menu, choose the **New Support Request** button. This logs you in to the Power Platform Admin Center. Here, you can launch the **New Support Request** guide that will help you identify potential solutions or workarounds based on how you fill in the various fields.  
 
 In the Power Platform Admin Center, both internal and delegated administrators can explore different solutions based on the keywords that they specify.  
 
 > [!NOTE]
-> The internal administrator cannot contact Microsoft directly. If you suspect that something is wrong with your [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must contact your partner for next steps.
+> The internal administrator cannot contact Microsoft directly. If you are an internal admin and suspect that something is wrong with your [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must contact your partner for next steps.
 
 ### <a name="submitsupportrequest"></a>Submitting support requests on behalf of your customer
 
@@ -148,7 +153,7 @@ As the delegated administrator, if you are logged into the [!INCLUDE [prodadminc
 > [!TIP]
 > Alternatively, you can use customer-specific URLs such as `https://admin.powerplatform.microsoft.com/account/login/[customer tenant ID]`.
 
-#### To start the process of submitting a new support request
+#### To start the process of submitting a new support request from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
 2. In the **Support** menu, choose **New Support Request**.
@@ -160,11 +165,15 @@ In the Power Platform Admin Center, you are automatically logged in with informa
 You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers. For more information, see [View solutions or enter a support request through the new support center](/power-platform/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the Power Platform administration content.  
 
 > [!IMPORTANT]
-> Your company must be registered as a partner in order to submit a support request to Microsoft, and you must have the ASfP (Advanced Support for Partners) support plan. The support person can be a member of the **Helpdesk agent** group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad). Your service account manager can get you more information about getting the ASfP, and if you already have a support plan, they can get the contract information and access ID that you must specify when you submit a new support request on behalf of your customer.  
+> Your company must be registered as a partner in order to submit a support request to Microsoft, and you must have the ASfP (Advanced Support for Partners) support plan. The support person can be a member of the **Helpdesk agent** group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md). Your service account manager can get you more information about getting the ASfP, and, if you already have a support plan, they can get the contract information and access ID that you must specify when you submit a new support request on behalf of your customer.  
 
 Microsoft Support will keep you updated on the status of your support request. You can also see the status in the Power Platform Admin Center. For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).  
 
-<!--From the Power Platform Admin Center, you can access Partner Center. You can also go straight to the Partner Center, but you might need information from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is why we recommend this route. For more information, see [Report problems on behalf of a customer](/partner-center/report-problems-on-behalf-of-a-customer) in the Partner Center content.  -->
+#### To start the process of submitting a new support request from the Partner Center
+
+You can also start the process from the Partner Center, where you can choose the customer you want to open a case on, and then follow the support request work flow. This will redirect the delegated administrator to the Power Platform admin center in the context of the customer's tenant.  
+
+However, you might need information from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is why we recommend that route. For more information, see [Report problems on behalf of a customer](/partner-center/report-problems-on-behalf-of-a-customer) in the Partner Center content.
 
 <!-- TODO: How to manage your customers' support issues -->
 
@@ -179,7 +188,7 @@ Internal and delegated administrators can report this outage to Microsoft by usi
 
 ### To report an outage
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
+1. On the **Environments** tab of the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
 2. In the action ribbon, choose **Support**, and then choose **Report Production Outage**.
 3. In the **Report Production Outage** pane, choose the outage type:
 

@@ -3,7 +3,7 @@ title: "Working with Repeater Controls"
 description: A repeater is a control used to define a list of records from the source table of a page.
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ You can also use the Tile View to display records as tiles (or bricks) instead o
 
 The following example shows how the repeater control is used to define a list page for the Customer table.
 
-```
+```AL
 page 50111 SampleCustomerList
 {
     PageType = List;
@@ -108,7 +108,7 @@ page 50111 SampleCustomerList
 
 You can use page customizations to modify the layout of a page for concrete users. The following code hides the `"Phone No."` column from the users with `Accountant` profile.
 
-```
+```AL
 profile Accountant
 {
     Description = 'Functionality for finance staff performing any AR or AP work and managerial reporting.';

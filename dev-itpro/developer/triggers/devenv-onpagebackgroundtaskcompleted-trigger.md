@@ -1,7 +1,8 @@
 ---
 title: "OnPageBackgroundTaskCompleted Trigger"
+description: "OnPageBackgroundTaskCompleted trigger in AL for Business Central."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,11 +18,12 @@ Runs after a page background task has successfully completed.
 
 ## Syntax  
 
-```  
+```AL
 OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [Text, Text])  
 ```  
 
-#### Parameters  
+#### Parameters
+
 *TaskID*  
 Type: Integer  
 
@@ -34,13 +36,13 @@ Specifies the results of the page background task.
 
 ## Applies to
 
-Pages
+- Pages
 
 ## Example
 
 The following example modifies the `OnPageBackgroundTaskCompleted` trigger to update the page with the started and finished times that were calculated in the page background task, and displays a notification that the times have been updated. For more details about this example, see [Page Background Tasks](../devenv-page-background-tasks.md).
 
-``` 
+```AL
     trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [Text, Text])
     var
         started: Text;

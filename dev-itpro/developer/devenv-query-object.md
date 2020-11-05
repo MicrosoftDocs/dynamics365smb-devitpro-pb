@@ -2,7 +2,7 @@
 title: "Query Object"
 description: "Description of the query object."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,7 @@ A query object is comprised mainly of two different types of elements: dataitems
 
 The following shows the basic structure of a query object.
 
-```
+```AL
 query ID Name
 {
 
@@ -88,7 +88,7 @@ When you have specified the dataitem and column elements, you create links betwe
 > Extension objects can have a name with a maximum length of 30 characters.
 
 ## Snippet support
-Typing the shortcut ```tquery``` will create the basic layout for a Query object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tquery` will create the basic layout for a Query object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -97,7 +97,7 @@ The following example shows a query that displays a list of customers with sales
 
 The query also uses the DataItemLink property to create a link between the **Customer** table, **Salesperson Code** field and the **Salesperson Purchaser** table, **Code** fields and a link between the **Customer** table, **Country/Region Code** field and the **Country/Region** table, **Code** field. 
 
-```
+```AL
 query 50102 "Top Customer Overview"
 {
     QueryType = Normal;

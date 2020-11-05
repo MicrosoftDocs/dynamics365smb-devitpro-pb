@@ -2,7 +2,7 @@
 title: "How to: Publish a Web Service"
 ms.custom: na
 author: jswymer
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

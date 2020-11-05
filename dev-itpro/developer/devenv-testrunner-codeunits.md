@@ -2,7 +2,7 @@
 title: Test Runner Codeunits
 description: This topic describes how to create test codeunits and how to create test runner codeunits. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ In the **OnRun** trigger you enter the code to run the codeunits. It runs when y
 ## Example
 This sample codeunit runs three test codeunits in the automated application test libraries.
 
-```
+```AL
 codeunit 50101 TestRunnerCodeunit
 {
     Subtype = TestRunner;
@@ -56,7 +56,7 @@ codeunit 50101 TestRunnerCodeunit
 
 You may want to define your test suite in a table and then write code in the test runner codeunit to iterate through items in the table and run each test codeunit. In that case, you can make use of the following example.
 
-```
+```AL
 codeunit 50102 TestRunnerCodeunit
 {
     Subtype = TestRunner;

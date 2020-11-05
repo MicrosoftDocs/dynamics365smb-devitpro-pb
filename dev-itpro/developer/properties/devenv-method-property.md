@@ -1,7 +1,7 @@
 ---
 title: "Method Property"
 ms.custom: na
-ms.date: 05/18/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,7 +43,7 @@ For more information about date methods, see [Retrieving Date Data in Queries](.
 
 ### Syntax
 
-```
+```AL
 Method = Day;
 ```
   
@@ -56,11 +56,13 @@ Except for the **Count** method, you can only use a totals method on a field tha
 **Count** is only associated with its parent **DataItem**, not a specific column. Therefore, when you set a column to **Count**, you leave the [DataSource Property](devenv-datasource-property.md) of the column blank. The **Count** method returns an integer value that corresponds to the number of rows that are returned from the table that is specified by the data item associated with the column.  
 
 ### Syntax
-```
+
+```AL
 Method = Max;
 ```
 
  
-## See Also  
+## See Also
+
 [MethodType Property](devenv-methodtype-property.md)   
 [Properties](devenv-properties.md)  

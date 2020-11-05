@@ -2,7 +2,7 @@
 title: Install a cumulative update
 description: This article describes the tasks required for getting the monthly cumulative update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,9 +56,9 @@ To upgrade to the latest platform, the database must be converted by using the D
     ```
 3. Install Business Central components of the cumulative update.
 
-    There are two ways to install components. You can use the set.exe file from the installation media or manually patch files to the existing installation:
+    There are two ways to install components. You can use the setup.exe file from the installation media or manually patch files to the existing installation:
 
-    - Using set.up exe
+    - Using setup.exe
 
         1. Uninstall the current version of Business Central. 
 
@@ -79,7 +79,7 @@ To upgrade to the latest platform, the database must be converted by using the D
         |Microsoft Office Outlook Integration|<ul><li>DVD\Outlook\program files\Microsoft Dynamics NAV\140\OutlookAddin</li><li>Microsoft.Dynamics.NAV.OLSync.NAVSyncAddIn.dll</li></ul>|<ul><li>C:\Program Files(x64)\Microsoft Office\Office \<version\></li><li>C:\Program Files (x64)\Microsoft Office\Office\xx-XX</li></ul>|
 
     > [!TIP]
-    > Before you install, save a copy of the configuration files for the [!INCLUDE[server](../developer/includes/server.md)] (CustomSetting.config), the [!INCLUDE[webserver](../developer/includes/webserver.md)] (navsettings.json), and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (ClientUserSettings.config). You can then refer to settings the copies to configure the components again. 
+    > Before you install, save a copy of the configuration files for the [!INCLUDE[server](../developer/includes/server.md)] (CustomSettings.config), the [!INCLUDE[webserver](../developer/includes/webserver.md)] (navsettings.json), and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (ClientUserSettings.config). You can then refer to settings the copies to configure the components again. 
     
 4. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an administrator
 6. Open the application database.

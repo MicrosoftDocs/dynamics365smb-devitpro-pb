@@ -1,7 +1,7 @@
 ---
 title: "RequestFilterFields Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,19 +17,20 @@ Specifies which fields are automatically included on the tab of the request page
 ## Applies to  
   
 - Data items on reports  
-  
 - Table elements on XMLports
   
 ## Property Value
+
 A comma-separated list of field names.  
 
 ## Example
 
-```
+```AL
 RequestFilterFields="No.","Search Name","Customer Posting Group";
 ```
   
-## Remarks  
+## Remarks
+
 We recommend that you use this property for common filter fields.
   
 If you do not want users to add filters on fields, then use one of the following methods:  
@@ -42,4 +43,5 @@ If you do not want users to add filters on fields, then use one of the following
 > On the Windows client, users can specify filters, even if **RequestFilterFields** is not specified.
 
 ## See Also
+
 [Request Pages](../devenv-request-pages.md)  

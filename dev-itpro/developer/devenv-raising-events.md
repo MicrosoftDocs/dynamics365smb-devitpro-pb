@@ -2,7 +2,7 @@
 title: "Raising Events"
 description: This article describes how to modify the application to raise an event in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ This example uses a page extension object **50100 MyCustomerExt** to modify the 
 
 In the code that follows, the page extension object modifies the `OnBeforeValidate` trigger of the **Customer Card** page to raise the event `OnAddressLineChanged` which includes the new value of the **Address** field.
 
-```
+```AL
 pageextension 50100 MyCustomerExt extends "Customer Card"
 {
     layout

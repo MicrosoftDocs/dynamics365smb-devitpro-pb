@@ -1,8 +1,8 @@
 ---
-title: "MaxStrLen Method"
+title: "Text.MaxStrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MaxStrLen Method
+# Text.MaxStrLen Method
 Gets the maximum defined length of a variant variable. Calling this method always results in a run-time exception.
 
 
@@ -37,34 +37,36 @@ The maximum length of the string variable.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If you call this method on a Variant, it returns an error.  
+## Remarks
+
+If you call this method on a Variant, it returns an error.  
   
-## Example  
+## Example
+
 ```
 var
     City: Text[30];
     MaxLength: Integer;
     Length: Integer;
     Text000: Label 'Vedbaek';
-    Text001: Label 'The MAXSTRLEN method returns %1,\\';
-    Text002: Label 'whereas the STRLEN method returns %2';
+    Text001: Label 'The MaxStrLen method returns %1,\\';
+    Text002: Label 'whereas the StrLen method returns %2';
 begin
     City := Text000;  
-    MaxLength := MAXSTRLEN(City);  
-    Length := STRLEN(City);  
+    MaxLength := MaxStrLen(City);  
+    Length := StrLen(City);  
     MESSAGE(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   
  The message window displays the following:  
   
- **The MAXSTRLEN method returns 30,**  
+ **The MaxStrLen method returns 30,**  
   
- **whereas the STRLEN method returns 7.**  
+ **whereas the StrLen method returns 7.**
   
-
 ## See Also
+
 [Text Data Type](text-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

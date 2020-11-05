@@ -1,7 +1,7 @@
 ---
 title: "AccessByPermission Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,7 +64,7 @@ For other objects including Table, Page, Query, Report, Codeunit, or Xmlport, it
 >  If you set multiple permissions, then one or the other applies. 
 
 ## Syntax
-```
+```AL
 AccessByPermission = tabledata MySetup = I; 
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "ODataKeyFields Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,17 +12,17 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ODataKeyFields Property
+
 This property is used to select the fields that will be the key fields under OData usage.
 
 ## Applies to  
   
--   Pages
+- Pages
 
 ## Syntax
-```
+
+```AL
 ODataKeyFields = Id;
 ```
   
@@ -30,5 +30,6 @@ ODataKeyFields = Id;
 
 - SourceTable
 
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

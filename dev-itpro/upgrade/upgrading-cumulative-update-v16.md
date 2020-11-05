@@ -1,8 +1,8 @@
 ---
-title: Install an update
-description: This article describes the tasks required for getting the monthly update applied to your Dynamics 365 Business Central on-premises.
+title: Install a version 16 update
+description: This article describes the tasks required for getting the monthly version 16 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -486,7 +486,7 @@ You can set **Solution Version Extension** by using the [!INCLUDE[admintool](../
 The following example uses the Set-NAVServerConfiguration cmdlet to set the **Solution Version Extension** to the Microsoft Base Application:
 
 ```powershell  
-Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName SolutionVersionExtension -KeyValue 437dbf0e-84ff-417a-965d-ed2bb9650972 -ApplyTo All  
+Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName SolutionVersionExtension -KeyValue 437dbf0e-84ff-417a-965d-ed2bb9650972 -ApplyTo All  
 ```
 
 For more information about how to configure a server instance, see [Configuring Business Central Server](../administration/configure-server-instance.md).

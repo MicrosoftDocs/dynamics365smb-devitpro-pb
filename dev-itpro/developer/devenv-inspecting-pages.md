@@ -1,9 +1,9 @@
 ---
 title: Inspecting Pages
-description: "Provides and overview of Role Center design"
+description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ You start page inspection from the **Help & Support** page. Choose the question 
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
-![Page Inspection](media/page-inspection-example.png)
+![Page Inspection Pane](media/page-inspection-example.png)
 
 When the **Page Inspection** pane first opens, it shows information that pertains to the main page object.
 
@@ -37,7 +37,7 @@ As you navigate to other pages in the application, the **Page Inspection** pane 
 
 ## What Page Inspection Shows
 
-In short, the page inspection pane shows the information for the main page or sub-page in a part, the page's source table (if any) and fields, extensions that affect the page, and current filters applied to the page. The following sections describe details about what is shown.
+In short, the page inspection pane shows the information for the main page or page part, the page's source table (if any) and fields, extensions that affect the page, and current filters applied to the page. The following sections describe details about what is shown.
 
 > [!NOTE]
 > If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
@@ -69,10 +69,12 @@ The **Page** field shows information about the main page or a selected (highligh
 
 ### [Table](#tab/table)
 
-If the page is associated with a source table, the **Table** field displays information about the source table of the main page or the selected page in a part, as specified by the page's [SourceTable property](properties/devenv-sourcetable-property.md). The **Table** field shows the following information:
+If the page is associated with a source table, the **Table** field displays information about the source table of the main page or the selected page part, as specified by the page's [SourceTable property](properties/devenv-sourcetable-property.md). The **Table** field shows the following information:
 
 - The name, as specified by its [Name property](properties/devenv-name-property.md)
 - The ID as specified by the [ID property](properties/devenv-id-property.md).
+
+If the page uses a query object as a data source, the table field shows the query name and ID instead.
 
 #### View Table
 
@@ -85,7 +87,7 @@ If a page has a source table, the **View table** link is available. This  link w
 
 The **Table Fields** tab displays information about all fields in the source table for the current record, including those fields that do not appear on the page.
 
-![Page Inspection](media/page-inspection-table-fields.png)
+![Page Inspection Table Fields Tab](media/page-inspection-table-fields.png)
 
 Each field is shown with the following information:
 
@@ -99,14 +101,13 @@ Each field is shown with the following information:
 #### What field information is not shown
 
 - Page fields that are not bound to the source table by the [SourceExp property](properties/devenv-sourceexpr-property.md).
-- Fields in temporary tables.
 - The value of fields that have a data type of blob, byte, media, or mediaset.
 
 ## [Extensions](#tab/extensions)
 
-The **Extensions** tab displays extensions that are installed on the tenant and affect the selected page or its source table.
+The **Extensions** tab displays extensions that are installed for the current environment and affect the selected page or its source table.
 
-![Page Inspection](media/page-inspection-extensions.png)
+![Page Inspection Extensions Tab](media/page-inspection-extensions.png)
 
 Except for the type, the data that is shown is defined in the extension's app.json file, which you configure during development. For more information, see [App.json](devenv-json-files.md#Appjson).
 
@@ -121,18 +122,19 @@ There are four different extension types:
 
 The **Page Filters** tab displays the current filters used on the current page. This includes filters that are set by code, list views, or defined by the user in the filter pane of the page.
 
-![Page Inspection](media/page-inspection-page-filters.png)
+![Page Inspection Page Filters](media/page-inspection-page-filters.png)
 
 The following table describes the different filter types.
 
 |Type|Description|
 |----|-----------|
-|UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md).|
+|UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SetFilter](methods-auto/record/record-setfilter-method.md) or [SetRange](methods-auto/record/record-setrange-method.md).|
 |TableViewFilter|Filter that is defined on the page by the [SourceTableView property](properties/devenv-sourcetableview-property.md)|
 |SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the sub-page.|
 |FormViewFilters|Filter that is defined by the [RunPageView property](properties/devenv-runpageview-property.md) of the action that opens the page.|
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  

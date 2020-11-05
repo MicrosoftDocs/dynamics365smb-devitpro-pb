@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: jswymer
 ---
 
@@ -56,30 +56,30 @@ The following steps provide the general flow for updating an app.
     For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
 2. Open the Sandbox environment and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
-5. If the **Available Update Action** column for the app shows the **Action required** link, resolve the update requirements.
+4. If the **Available Update Action** column for the app shows the **Action required** link, resolve the update requirements.
 
     See [Resolving requirements for app updates](#requirements).
-4. When the **Available Update Action** column for the app shows **Install update**, select this action to install the new version of the app.
+5. When the **Available Update Action** column for the app shows **Install update**, select this action to install the new version of the app.
 
     > [!Important]
     > The update will be applied immediately after you accept the confirmation dialogue. The users can continue working during update installation, but depending on the app changes coming with the update, they may receive a message asking them to log out and login again. It is therefore recommended that you apply the updates outside of working hours.
-    
-5. Wait for the app to be installed.
+
+6. Wait for the app to be installed.
 
     Select **Refresh** occasionally to check the status.
 
     - If the app installs successfully, the new version displays in the **Installed version** column and the **Available Update Action** column is **Up to date**.
     - If the installation fails the **Available Update Action** column changes to **Update failed**. See [What to do when an update fails](#failure).
 
-4. If the app update succeeded, sign in the Sandbox environment and test the new app version.
-5. If the app update works as expected on the Sandbox, switch to the production environment, and repeat the installation steps for the app update.
+7. If the app update succeeded, sign in the Sandbox environment and test the new app version.
+8. If the app update works as expected on the Sandbox, switch to the production environment, and repeat the installation steps for the app update.
 
     > [!TIP]
     > Use the environment switch box at the top of the page to quickly change to your production environment.
 
 ## <a name="requirements"></a>Resolve requirements for app updates
 
-For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates page provide this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
+For apps that have dependencies on other apps, you may have to update or install the dependency apps. The **Requirements for App Updates** page provide this information. The requirements are divided into two categories: **Update requirements** and **Install requirements**.
 
 After you resolve all requirements, the app that you want to update will be ready to install.
 

@@ -1,8 +1,8 @@
 ---
-title: "CalcDate Method"
+title: "System.CalcDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/12/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CalcDate Method
+# System.CalcDate Method
 Calculates a new date that is based on a date expression and a reference date.
 
 
@@ -65,7 +65,8 @@ Use this optional parameter to define a reference date. The default is the curre
 
  For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../../datatypes/devenv-duration-data-type.md).  
 
-## Example  
+## Example 1
+
  This code example shows how to use the production rules that were previously described.  
 
 ```  
@@ -81,7 +82,8 @@ Use this optional parameter to define a reference date. The default is the curre
 > [!NOTE]  
 >  The angle brackets \(\< >\) specify that the expression is not translated, regardless of the application language. <!-- For more information about multilanguage capabilities with date formulas, see [Developing Multilanguage-Enabled Applications](Developing-Multilanguage-Enabled-Applications.md).  -->
 
-## Example  
+## Example 2
+
  This example shows how to use the CALCDATE method.  
 
 ```  

@@ -1,7 +1,7 @@
 ---
 title: "Programming in AL"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,14 +41,14 @@ You can initiate the execution of your AL code from the following:
 
 Variables in AL are declared using the `var` keyword, and the syntax looks like this:
 
-```
+```AL
 var
         myInt: Integer;
 ```
 
 If you have multiple variables of the same type, these can be declared in one line, such as:
 
-```
+```AL
 var
         myInt, nextInt, thirdInt : Integer;
         isValid, doCheck : Boolean;

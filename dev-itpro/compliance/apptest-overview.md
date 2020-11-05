@@ -3,7 +3,7 @@ title: "Rules and Guidelines for AL Code"
 description: "Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ To help you save time, we're sharing a list of the top 15 common pitfalls that r
 3. Required translation files missing
 
     There are many countries today that where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, and that you can support as well with your app. For specifying additional languages, we no longer support Caption ML. You must use xliff translation files instead. For more information, see [Working with Translation Files](../developer/devenv-work-with-translation-files.md).  
-    Microsoft provides a free translation tool that you can access from [https://lcs.dynamics.com](https://lcs.dynamics.com.)
+    Microsoft provides a free translation tool that you can access from [https://lcs.dynamics.com](https://lcs.dynamics.com).
     To support a specific country, you must include a translation file per for each language code. For example, to support Switzerland, you must provide fr-CH, de-CH, and it-CH.
 4. Missing permission sets
 

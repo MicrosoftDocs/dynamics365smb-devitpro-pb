@@ -1,7 +1,8 @@
 ---
-title: "Example: Developing a Sales Rep Role Center for the Business Central Tablet Client"
+title: "Develop a Sales Rep Role Center for the Tablet Client"
+description: "Create a Role Center for the Business Central Tablet client for a sales representative."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,7 +10,9 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-# Example: Developing a Sales Rep Role Center for the Business Central Tablet Client
+
+# Develop a Sales Rep Role Center for the Tablet Client
+
 In this example, you will learn how to create a new Role Center for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)]. Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] occurs in the [!INCLUDE[d365_dev_long](includes/d365_dev_long_md.md)] and is not much different from developing for one of the other [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)] clients. This example will concentrate on how to build a Role Center for a sales representative, which links to already existing page objects, but combined in a way so that it works well on the tablet.  
 
 ## About this example 
@@ -33,7 +36,7 @@ Simon is a partner developer working for CRONUS International Ltd. Nancy is a Sa
 
 The following code illustrates how Simon implements the Role Center.
 
-```
+```AL
 page 50106 "Sales Rep Role Center"
 {
     PageType = RoleCenter;

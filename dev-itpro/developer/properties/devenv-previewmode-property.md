@@ -1,7 +1,7 @@
 ---
 title: "PreviewMode Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,13 +12,13 @@ caps.latest.revision: 3
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # PreviewMode Property
+
 Specifies how the report opens when you preview it.  
 
 ## Applies to  
- Reports  
+
+- Reports  
 
 ## Property Value  
 
@@ -28,18 +28,20 @@ Specifies how the report opens when you preview it.
 |**PrintLayout**|Specifies that the report opens in the print layout mode that shows how the report will print on paper.|  
 
 ## Syntax
-```
+
+```AL
 PreviewMode = Normal;
 ```
 
 ## Remarks  
- In the **Report – Properties** window, in the **PreviewMode** field, specify how the report must open in preview mode. The default mode can be different to how the report prints on paper. If you want to make sure that users see the report as it will look on paper, choose **PrintLayout**.  
 
- Regardless of your choice, users can change the display mode in the **Print Preview** window. For example, if you choose the default mode, users can choose the **Print Layout** button. However, if the AL code for the report uses the PREVIEW function to disable printing from the preview, then users cannot change the display mode to print layout.  
+In the **Report – Properties** window, in the **PreviewMode** field, specify how the report must open in preview mode. The default mode can be different to how the report prints on paper. If you want to make sure that users see the report as it will look on paper, choose **PrintLayout**.  
+
+Regardless of your choice, users can change the display mode in the **Print Preview** window. For example, if you choose the default mode, users can choose the **Print Layout** button. However, if the AL code for the report uses the PREVIEW function to disable printing from the preview, then users cannot change the display mode to print layout.  
 
 ## See Also  
 <!--
  [Report Design Overview](../devenv-report-design-overview.md)   
  [Designing Reports](../devenv-designing-reports.md)   
  [Printing Reports](../devenv-printing-reports.md) -->  
- [PREVIEW Method (Report)](../methods-auto/report/reportinstance-preview-method.md)
+[Preview Method (Report)](../methods-auto/report/reportinstance-preview-method.md)

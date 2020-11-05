@@ -1,7 +1,7 @@
 ---
 title: "DefaultNamespace Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # DefaultNamespace Property
+
 Specifies the default namespace for both the [IMPORT Method (XMLport)](../methods-auto/xmlport/xmlport-IMPORT-Method.md) and [EXPORT Method (XMLport)](../methods-auto/xmlport/xmlport-EXPORT-Method.md) methods.  
   
 ## Applies to  
@@ -19,11 +20,12 @@ Specifies the default namespace for both the [IMPORT Method (XMLport)](../method
 
 ## Syntax
 
-```
+```AL
 DefaultNamespace = 'urn:microsoft-dynamics-nav/xmlports/x100';
 ```
   
-## Remarks  
+## Remarks
+
 This property specifies the default namespace for both import and export. A default namespace is a namespace that does not include a prefix. The default prefix is applied to all the elements that do not include a prefix and is unique for different XMLports. For example, the following string specifies a namespace: `urn:microsoft-dynamics-nav/xmlports/x100`, where 100 is the ID of the XMLport.  
 
 > [!NOTE]  

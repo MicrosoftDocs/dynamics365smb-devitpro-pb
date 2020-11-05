@@ -1,7 +1,7 @@
 ---
 title: "Editable Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,23 +11,26 @@ ms.author: solsen
 ---
 
 # Editable Property
+
 Sets a value that indicates whether a field, page, or control can be edited through the UI.  
 
 ## Applies to  
 
 - Pages and group, part, and field controls  
-
 - Table fields  
 
-## Property Value  
+## Property Value
+
 **True** on pages if the field, page, or control can be edited; otherwise, **false** on pages. The default value is **true**.  
 
 ## Syntax
-```
+
+```AL
 Editable = true;
 ```
 
-## Remarks  
+## Remarks
+
 For fields, use this property to make a field for display only.  
 
 For controls, if the **Editable** property for the container that contains this control is set to **false**, then that setting overrides what you enter here.  
@@ -47,7 +50,8 @@ On pages, you use the **Editable** property for group, part, field, and action c
 > [!NOTE]  
 > You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable and the [InDataSet Attribute](../methods/devenv-indataset-attribute.md) must be defined on the variable.   
 
-## See Also  
+## See Also
+
 [Properties](devenv-properties.md)   
 [Page Properties](devenv-page-properties.md)  
 [InDataSet Property](devenv-indataset-property.md)

@@ -2,7 +2,7 @@
 title: "ApplicationArea Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ An application area tag must have the format *name*, where *name* is the applica
 If the control applies to all application areas, you can set the property to **All**. This means that the control will always appear in the user interface.  
  
 ## Syntax
-```
+```AL
 ApplicationArea = Basic, Suite;
 ```
 

@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.author: edupont
 
 ---
@@ -30,7 +30,7 @@ Before you can export the file, you must first set up the Azure storage account 
 
 ### Creating the storage account
 
-The first step of creating the storage account container is to create the Azure storage account. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure Portal](https://portal.azure.com). 
+The first step of creating the storage account container is to create the Azure storage account. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com). 
 
 For more information setting up an Azure storage account, see [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
 
@@ -86,7 +86,7 @@ Permission to export databases is limited to specific types of users, typically 
 
 - Users from the organization that subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
 
-  - Users who are internal administrators and have the **Global admin** role in the Office 365 tenant
+  - Users who are internal administrators and have the **Global admin** role in the Microsoft 365 tenant
   - Users who are members of the *D365 BACKUP/RESTORE* user group
 
     To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  
@@ -96,6 +96,9 @@ Permission to export databases is limited to specific types of users, typically 
 The .bacpac file contains data that is customer-specific business data. Technically, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
 
 This means that if you want to export the data in order to change the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+> [!IMPORTANT]
+> While you can import the downloaded .bacpac file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the .bacpac that you download from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.  
 
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 

@@ -1,7 +1,7 @@
 ---
 title: "AutoSplitKey Property"
 ms.custom: na
-ms.date: 05/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Sets whether a key is automatically created for a new record placed between the 
  **True** if the key is automatically created for the new record; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+```AL
 AutoSplitKey = true;
 ```
 

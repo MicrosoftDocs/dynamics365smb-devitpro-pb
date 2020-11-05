@@ -2,7 +2,7 @@
 title: "BackupKey Property"
 author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ This property is used by the backup/restore system. Under normal circumstances, 
  **True** if the enabled property of secondary keys will be restored during restore; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+```AL
 BackupKey = true;
 ```
 

@@ -3,7 +3,7 @@ title: "Adding Pages and Reports to Tell me"
 description: "Description of how you use AL to add pages and reports so that they are discoverable through search in the client."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -46,7 +46,7 @@ You can specify other words or phrases that can help users find a page or report
 ## Example
 The following example creates a `SimpleItemList` page and sets a `UsageCategory` property to the page, so that the `SimpleItemList` page is discoverable through search using the **Tell me** feature. Also, the example sets the   `AdditionalSearchTerms` property to add two search terms for the page. 
 
-```
+```AL
 page 50210 SimpleItemList 
 { 
     PageType = List; 

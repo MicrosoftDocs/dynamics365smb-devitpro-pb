@@ -49,7 +49,24 @@
       "ms.service": "dynamics365-business-central",
       "extendBreadcrumb": true
     },
-    "fileMetadata":{},
+    "fileMetadata": {
+      "author":
+      {
+        "administration/*.md": "jswymer",
+        "compliance/*.md": "SusanneWindfeldPedersen",
+        "cside/*.md": "jswymer",
+        "deployment/*.md": "jswymer",
+        "developer/**/*.md": "SusanneWindfeldPedersen",
+        "developer/*.md": "SusanneWindfeldPedersen",
+        "help/*.md": "edupont04",
+        "performance/*.md": "jswymer",
+        "powerplatform/*.md": "SusanneWindfeldPedersen",
+        "security/*.md": "jswymer",
+        "upgrade/*.md": "jswymer",
+        "webservices/*.md": "jswymer",
+        "whatsnew/*.md": "SusanneWindfeldPedersen"
+      }
+   },
     "template": [],
     "dest": "dev-itpro",
     "markdownEngineName": "markdig"

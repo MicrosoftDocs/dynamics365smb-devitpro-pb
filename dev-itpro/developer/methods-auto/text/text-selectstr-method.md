@@ -1,8 +1,8 @@
 ---
-title: "SelectStr Method"
+title: "Text.SelectStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SelectStr Method
+# Text.SelectStr Method
 Retrieves a substring from a comma-separated string.
 
 
@@ -50,7 +50,7 @@ The substring from the comma-separated string at the index specified.
   
  Quotes are not supported. For example, a,b,"c,d",e is treated as a five-element substring where substring 4 is d".  
   
-## Example  
+## Example 1
  
 ```  
 var
@@ -86,7 +86,8 @@ end;
   
  **>33\<**  
   
-## Example   
+## Example 2
+
 ```  
 var
     CommaStr2: Text[60];  

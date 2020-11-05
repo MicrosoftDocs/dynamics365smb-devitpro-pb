@@ -1,8 +1,8 @@
 ---
-title: "FieldSeparator Method"
+title: "Xmlport.FieldSeparator Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldSeparator Method
+# Xmlport.FieldSeparator Method
 Gets and sets the FieldSeparator used when running, importing or exporting the XmlPort.
 
 

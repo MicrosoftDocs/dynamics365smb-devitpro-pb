@@ -3,7 +3,7 @@ title: "Defining an XMLport schema"
 description: "An XMLport schema determines which data is exported from or imported to Dynamics 365 Business Central database tables and the format and structure of the files used."
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ Typing the shortcut `txmlport` will create the basic layout for an XMLport objec
 ### Example
 The following example adds the `Customer` table as a table element, the `Address` field as a field element and the `County` and `City` fields as field attributes.
 
-```
+```AL
 schema
 {
     textelement(Customers)

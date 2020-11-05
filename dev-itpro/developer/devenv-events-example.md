@@ -2,7 +2,7 @@
 title: "Event example"
 description: This article shows a simple example of how to use events in Business Central.
 ms.custom: na
-ms.date: 06/09/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ This article includes a simple code example to explain how to use Business Centr
 - Subscribes to the event to check the address value and return a message to the user if it contains a plus sign.
 
 
-```
+```AL
 // The following code creates codeunit that publishes the `OnAddressLineChanged` event.
 
 codeunit 50100 MyPublishers

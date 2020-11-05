@@ -1,8 +1,8 @@
 ---
-title: "Find Method"
+title: "Record.Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/12/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Find Method
+# Record.Find Method
 Finds a record in a table that is based on the values stored in keys.
 
 
@@ -41,7 +41,7 @@ If this parameter contains '=', '\>' or '\<', then you must assign value to all 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -56,7 +56,8 @@ if not MyRecord.FIND then
     Error('error message');
 ```
   
-## Example  
+## Example 1
+
  The following example shows how use the **FIND** method to find a record in a table. The code sets the number of the record to find to 1100, which is the primary key of the record to find. The **FIND** method uses the '=' parameter to find the record that has a primary value that equals the specified primary key. If the record is found, then the item number, description, and unit price of the item are displayed in a message box. Otherwise, a message that specifies that the item is not found is displayed.
 
 ```  
@@ -74,8 +75,9 @@ var
     Text001: Label 'The item was not found.';
 ```  
   
-## Example  
-The following example defines a record variable that is named ItemRec. The **FIND** method uses the ‘+’ parameter to find the last record in the table. If the record is found, then the item number, description, and unit price of the item are displayed in a message box. Otherwise, the message that specifies that the item was not found is displayed. 
+## Example 2
+
+The following example defines a record variable that is named ItemRec. The **FIND** method uses the '+' parameter to find the last record in the table. If the record is found, then the item number, description, and unit price of the item are displayed in a message box. Otherwise, the message that specifies that the item was not found is displayed. 
 
 ```  
 begin

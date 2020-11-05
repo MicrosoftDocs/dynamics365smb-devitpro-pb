@@ -1,7 +1,7 @@
 ---
 title: "Compressed Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,18 +13,23 @@ author: SusanneWindfeldPedersen
 ---
 
 # Compressed Property
+
 Sets a value that specifies whether a BLOB is compressed.  
   
 ## Applies to  
- Fields of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md)   
+
+Fields of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md)   
 
 ## Property value
+
 **True** if the BLOB is compressed, otherwise **false**. The default is **false**.
 
 ## Syntax
-```
+
+```AL
 Compressed = true;
 ```
 
 ## See Also  
- [BLOB Data Type](../datatypes/devenv-blob-data-type.md)
+
+[BLOB Data Type](../datatypes/devenv-blob-data-type.md)

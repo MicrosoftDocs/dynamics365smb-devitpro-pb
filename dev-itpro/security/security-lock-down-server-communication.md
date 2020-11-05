@@ -1,7 +1,8 @@
 ---
-title: "User Security in Business Central"
+title: "Locking Down Server Communication"
+description: List the server configuration settings that you can use to help secure and limit communication with clients and the database.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

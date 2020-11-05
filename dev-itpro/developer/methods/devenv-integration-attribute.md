@@ -1,7 +1,8 @@
 ---
 title: "IntegrationEvent Attribute"
+description: "The IntegrationEvent attribute in AL for Business Central"
 ms.custom: na
-ms.date: 06/29/2020
+ms.date: 10/01/2020
 ms.reviewer: 
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +21,7 @@ Typing the shortcut `teventint` will create the basic IntegrationEvent attribute
 
 ## Syntax  
   
-```  
+```AL
 [IntegrationEvent(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
 ```    
   
@@ -63,7 +64,7 @@ The `IncludeSender` and `GlobalVarAccess` arguments are set to **true**. This me
 - The `sender` parameter for event publishing codeunit `MyPublishingCodeunit`.
 - A parameter for the global variable `myGlobalVar` defined in the publishing codeunit `MyPublishingCodeunit`.
 
-```
+```AL
 codeunit 50102 MyPublishingCodeunit
 {
     [IntegrationEvent(true, true)]

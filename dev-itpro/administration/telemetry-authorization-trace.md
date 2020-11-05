@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/24/2020
+ms.date: 10/01/2020
 ms.author: jswymer
 ---
 
@@ -36,11 +36,11 @@ Occurs when a user has been successfully authorized.
 
 ### General dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|Version 16.1 and later:<br />**Authorization Succeeded (Pre Open Company)**<br /><br />Before Version 16.1:<br />**Authorization steps prior to the open company trigger succeeded.**||
+|Dimension|Description or value|
+|---------|-----|
+|message|Version 16.1 and later:<br />**Authorization Succeeded (Pre Open Company)**<br /><br />Before Version 16.1:<br />**Authorization steps prior to the open company trigger succeeded.**|
 |operation_Name|**Authorization Succeeded (Pre Open Company)** <br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|severityLevel|**1**||
+|severityLevel|**1**|
 
 ### Custom dimensions
 
@@ -131,7 +131,7 @@ Entitlements are part of the license. Entitlements are permissions that describe
 
 Entitlements are assigned to the user account in the Microsoft 365 admin center or Microsoft Partner Center. They aren't assigned in Business Central. To assign entitlements to a user, see one of the following articles:
 
-- From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Office 365](/microsoft-365/admin/add-users/add-users).
+- From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Microsoft 365](/microsoft-365/admin/add-users/add-users).
 
 - From the Microsoft Partner Center, see [User management tasks for customer accounts](/partner-center/assign-licenses-to-users).
 
@@ -141,11 +141,11 @@ Occurs when the company has opened successfully.
 
 ### General dimensions
 
-|Dimension|Description or value||
+|Dimension|Description or value|
 |---------|-----|-----------|
-|message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**||
+|message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**|
 |operation_Name|**Authorization Succeeded (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|severityLevel|**1**||
+|severityLevel|**1**|
 
 <!--
 |operation_Name|**Authorization Succeeded (Open Company)**||
@@ -245,7 +245,7 @@ For help with resolving this issue, read the following articles or contact Micro
 
 - [Troubleshoot account lockout problems with an Azure AD Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout)
 
-- ["It looks like your account has been blocked" error when signing in to Office 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
+- ["It looks like your account has been blocked" error when signing in to Microsoft 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
 
 #### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
 

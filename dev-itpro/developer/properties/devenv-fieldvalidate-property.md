@@ -1,7 +1,7 @@
 ---
 title: "FieldValidate Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Sets a value that specifies whether the values in the source field are validated
 
 ## Syntax
 
-```
+```AL
 FieldValidate = false;
 ```
  

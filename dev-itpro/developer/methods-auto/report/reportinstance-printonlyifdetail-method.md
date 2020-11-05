@@ -1,8 +1,8 @@
 ---
-title: "PrintOnlyIfDetail Method"
+title: "Report.PrintOnlyIfDetail Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# PrintOnlyIfDetail Method
+# Report.PrintOnlyIfDetail Method
 Gets or sets the current settings of the PrintOnlyIfDetail property.
 
 > [!NOTE]
@@ -43,7 +43,8 @@ The current settings of the PrintOnlyIfDetail property.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
  The following example is from the OnAfterGetRecord trigger of a report. If the PrintOnlyIfDetail property is true and if a GLEntryPage record exists, given the current filters, then the PageGroupNo is incremented.
  
 ```  
@@ -56,7 +57,8 @@ begin
 end;
 ```  
   
-## Example  
+## Example 2
+
  The following example sets the value of the [PrintOnlyIfDetail Property](../../properties/devenv-printonlyifdetail-property.md) to true. It requires that you create a Report variable named Report111. The Subtype of the variable is report 111, Customer - Top 10 List.  
   
 ```  

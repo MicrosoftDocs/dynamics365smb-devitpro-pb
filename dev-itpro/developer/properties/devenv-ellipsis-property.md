@@ -1,7 +1,7 @@
 ---
 title: "Ellipsis Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,26 +12,26 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Ellipsis Property
+
 Sets a value that specifies whether an ellipsis (...) is appended to the caption on a command button or menu item. An ellipsis tells the user that other choices will appear if the command button or menu item are selected.  
   
 ## Applies to  
   
--   Command buttons  
+- Command buttons  
+- Menu items  
+- Pages  
   
--   Menu items  
-  
--   Pages  
-  
-## Property Value  
- **True** if the ellipsis is appended; otherwise, **false**. The default value is **false**.  
+## Property Value
+
+**True** if the ellipsis is appended; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+
+```AL
 Ellipsis = true;
 ```
   
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

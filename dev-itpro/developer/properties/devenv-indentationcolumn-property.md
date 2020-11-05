@@ -1,7 +1,7 @@
 ---
 title: "IndentationColumn Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,13 +9,14 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # IndentationColumn Property
 
 Sets the name of the table field or variable that controls row indentation in a list page.
 
 ## Syntax
 
-```
+```AL
 IndentationColumn = IntegerFieldName;
 ```
   
@@ -34,7 +35,7 @@ For more information about how to use this property, see [Designing Indented Hie
 
 ## Example
 
-```
+```AL
 repeater(Control1)
 {
     IndentationColumn = Indent;

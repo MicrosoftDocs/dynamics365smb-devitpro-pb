@@ -2,7 +2,7 @@
 title: "Do not declare parameters by reference if their values are never changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ Defining a parameter as passed by reference and not actually changing it may lea
 
 ## Bad code example 1
 The following example illustrates the developer's error - forgot to remove var property of MyList in Method1, after redesigning Method2.
-```
+```AL
 procedure Method1(var MyB: boolean)
 begin
 Method2(MyB);
@@ -41,7 +41,7 @@ end;
 ```
 
 ## Good code example 1
-```
+```AL
 procedure Method1(MyB: boolean)
 begin
 Method2(MyB);
@@ -56,7 +56,7 @@ end;
 ```
 
 ## Bad code example 2
-```
+```AL
 procedure Method1(var InvtValue: array[5] of Integer)
 var 
 MyInt: Integer;
@@ -66,7 +66,7 @@ end;
 ``` 
 
 ## Good code example 2
-```
+```AL
 procedure Method1(InvtValue: array[5] of Integer)
 var 
 MyInt: Integer;

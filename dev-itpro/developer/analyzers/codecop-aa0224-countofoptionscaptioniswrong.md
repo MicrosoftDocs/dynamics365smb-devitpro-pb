@@ -2,7 +2,7 @@
 title: "The count of option captions specified in the OptionCaption property is wrong."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ The number of option captions specified in the **OptionCaption** property must m
 
 The following code sample will raise a warning because the number of option values available for the page field `"VAT Posting"` is two, while only one option caption is defined in the **OptionCaption** property. 
 
-```
+```AL
 page 50100 MyPage
 {
     layout

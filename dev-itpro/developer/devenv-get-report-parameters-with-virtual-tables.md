@@ -2,7 +2,7 @@
 title: Get Report Parameters using Virtual Tables
 description: A virtual table allows you to generate report parameters, XML string without invoking the report request page. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ This table reflects information about individual data items in a report, for exa
 ### Example
 The following example shows how to get Report XML parameters which reflects information about report and report request page. 
 
-```
+```AL
 codeunit 50103 "Report Xml Parameters Builder"
 {
     procedure "Get Report Page Structure As Xml"("Report ID": Integer): XmlDocument

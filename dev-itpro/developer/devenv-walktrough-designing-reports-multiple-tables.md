@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Designing a Report from Multiple Tables"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -85,7 +85,7 @@ Viktor will now add labels to the report. You define the labels in the `label` p
 
 The following code exemplifies the code that Viktor has written for the report.
 
-```
+```AL
 report 50101 "Report for Multiple Tables"
 {
     //Make the report searchable from Tell me under the Administration category.

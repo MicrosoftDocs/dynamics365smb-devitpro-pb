@@ -2,7 +2,7 @@
 title: "APIGroup Property (Query)"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Sets the group of the API endpoint the query is exposed in.  The syntax for prov
 - Query object 
 
 ## Syntax
-```
+```AL
 APIGroup = 'app1';
 ```
 

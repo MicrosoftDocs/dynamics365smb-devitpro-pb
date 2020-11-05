@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 04/03/2020
+ms.date: 10/01/2020
 ms.author: edupont
 ---
 
@@ -19,20 +19,20 @@ This article provides an overview of what you need to know about how a major [!I
 
 ## Timelines for major updates
 
-The following figure illustrates the key milestones and dates for rolling out a major update. The timeline and dates are loosely based on [2020 release wave 1](/dynamics365-release-plan/2020wave1/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
+The following figure illustrates the key milestones and dates for rolling out a major update. The timeline and dates are loosely based on [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
 
 ![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
 
-The following table describes the milestones with example dates.
+The following table describes the milestones with example dates for the two release waves in any given calendar year.
 
-|Milestone|Example date|Description|
-|---------|------------|-----------|
-|Update is available|April 1, 2020|The date when the new major version of Business Central becomes generally available|
-|Update starts rolling out|April 8, 2020|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within allowed date range, to a date, which fits you better.|
-|Last scheduled update date|May 30, 2020|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 2020 release wave 1.|
+|Milestone|Example date wave 1| Example date wave 2|Description|
+|---------|-------------------|--------------------|-----------|
+|Update is available|April 1 |October 1|The date when the new major version of Business Central becomes generally available|
+|Update starts rolling out|April 15 |October 15|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within allowed date range, to a date, which fits you better.|
+|Last scheduled update date|May 31 |November 30|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 2020 release wave 2.|
 
 > [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule. Specifically for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], existing customers have 60 days to upgrade after the new version is generally available. For a general overview, see [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule). For more information about the steps that you must take, see [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md).
+> As announced in the [blog post](https://aka.ms/covid19Blog), in response to COVID-19, Microsoft made some changes to the update schedules in April, 2020. Specifically for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], existing customers were given 60 days to upgrade after the new version was made generally available. The extended 60 days update window also applies to 2020 release wave 2 updates.
 
 Dates and times differ significantly across countries and regions. Make sure that you have set up notifications in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] so that you're notified when the next major update is available.  
 
@@ -49,9 +49,9 @@ When the update becomes available for an environment, all [notification recipien
 Starting from the official release date, Microsoft begins scheduling updates. Scheduling doesn't occur for all environments around the world simultaneously. During scheduling, Microsoft sets a default update date for each environment, typically 14 days in the future from the date when you received the notification. You can see this date in the environment details page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
 > [!IMPORTANT]
-> If you don't change the default date, **Microsoft updates the environment automatically** any day between the scheduled update date and the date that is shown as the last possible update date in your e-mail notification. If you don't want your environment to be updated automatically, change the update date to the one that fits you better. 
+> If you don't change the default date, **Microsoft updates the environment automatically** any day between the scheduled update date and the date that is shown as the last possible update date in your e-mail notification. If you don't want your environment to be updated automatically, change the update date to the one that fits you better.
 
-You can change the default date set by Microsoft at any point of time, including changing it to the current date. In some cases, Microsoft can suspend or postpone all updates beyond this last possible date. For more information about what happens in such cases, see [Postponed updates](#postponed-updates). 
+You can change the default date set by Microsoft at any point of time, including changing it to the current date. In some cases, Microsoft can suspend or postpone all updates beyond this last possible date. For more information about what happens in such cases, see [Postponed updates](#postponed-updates).  
 
 When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all sign-in attempts during the update will be blocked with the message `Service is under maintenance`. We strongly encourage that you set an update window for all production environments so that updates don't start during business hours. For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
 
@@ -125,15 +125,14 @@ Any environments that fail to update due to per-tenant extension compatibility i
 
 ### Overview of the timeline for preparing for the next major update
 
-The following table describes the suggested milestones with example dates.
+The following table describes the suggested milestones with example dates for the two release waves in any given calendar year.
 
-|Milestone|Example date|Description|
-|---------|------------|-----------|
-|Previews are available|February 25, 2020|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
-|A few days before you know that the update is announced|March 30, 2020|You create a new sandbox environment based on your existing production environment and wait for it to be automatically updated to the new version.|
-|Interim sandbox is updated to the new version|April 2. 2020|The new sandbox is updated, and you can test your existing extensions and your production data against the new version.|
-|Update available in your region|April 8, 2020|you're notified that the update is available and hurry to set the relevant update dates in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].|
-|Preview sandboxes are deleted|May 1, 2020|30 days after the new major update is announced, the preview sandboxes are deleted.|
+|Milestone|Example date wave 1|Example date wave 2|Description|
+|---------|-------------------|-------------------|-----------|
+|Previews are available|March 1 |September 1|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
+|A few days before you know that the update is announced|March 31 |September 30|You create a new sandbox environment based on your existing production environment (copy your production environment into a sandbox) and wait for it to be updated to the new version.|
+|Update available in your region|April 6 |October 5|The major update is made available. You're notified about it via e-mail. Go to the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and set the update date for your sandbox environment to the current date. The sandbox will be updated within the closest available update time window that you set for it. Now, you can test your existing extensions and your production data against the new version.</br></br>We recommend that you set the update date for your production environment a few days or weeks in the future, to help make sure that it does not get updated automatically before you had a chance to test the new version and your extensions in your sandbox environment.|
+|Preview sandboxes are deleted|May 1 |November 1|30 days after the new major update is announced, the preview sandboxes are deleted. There will be no option to keep these sandboxes or export data from them.|
 
 ## See also
 
@@ -143,3 +142,4 @@ The following table describes the suggested milestones with example dates.
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+

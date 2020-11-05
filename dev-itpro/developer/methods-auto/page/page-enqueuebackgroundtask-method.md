@@ -1,8 +1,8 @@
 ---
-title: "EnqueueBackgroundTask Method"
+title: "Page.EnqueueBackgroundTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# EnqueueBackgroundTask Method
+# Page.EnqueueBackgroundTask Method
 Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session. If the task completes successfully, the **OnPageBackgroundTaskCompleted** trigger is invoked. If an error occurs, the **OnPageBackgroundTaskError** trigger is invoked. If the page is closed before the task completes, or the page record ID on the task changed, the task is cancelled.
 
 
@@ -46,7 +46,7 @@ Specifies the level of error handling on page background task level.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the page background task is successfully queued for execution; otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the page background task is successfully queued for execution; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -55,7 +55,7 @@ Specifies the level of error handling on page background task level.
 
 The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the ENQUEUEBACKGROUNDTASK method from a page trigger. The ID of the current record of the page must remain static after the call is made and while the background task is running. Otherwise, the task will be canceled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
 
-​The **Child Session Max Concurrency** setting of the [!INCLUDE[server](../../includes/server.md)] controls how many page background tasks can be run simultaneously for a parent session.  The setting has a default value of 5. If this number is exceeded, then they'll be queued and run when a slot becomes available as other tasks are finished. Enqueuing the task will fail if the total number of enqueued tasks exceed the **Child Sessions Max Queue Length** server configuration setting.​ For more information, see [Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT).
+​The **Child Session Max Concurrency** setting of the [!INCLUDE[server](../../includes/server.md)] controls how many page background tasks can be run simultaneously for a parent session.  The setting has a default value of 5. If this number is exceeded, then they'll be queued and run when a slot becomes available as other tasks are finished. Enqueuing the task will fail if the total number of enqueued tasks exceed the **Child Sessions Max Queue Length** server configuration setting.​ For more information, see [Configuring Business Central Server - Asynchronous Processing](../../../administration/configure-server-instance.md#PBT).
 
 ### <a name="timeout"></a>Timeout
 
@@ -68,7 +68,7 @@ The [!INCLUDE[server](../../includes/server.md)] instance includes two configura
 
 For more information these settings, see [Configuring Business Central Server](../../../administration/configure-server-instance.md#PBT).
 
-It's possible to enqueue the task again in the completion trigger or error trigger, but this pattern isn't recommended as it can lead to an endless loop. For more information, see [Page Background Tasks](../../devenv-page-background-tasks.md#reenqueu).
+It's possible to enqueue the task again in the completion trigger or error trigger, but this pattern isn't recommended as it can lead to an endless loop. For more information, see [Page Background Tasks](../../devenv-page-background-tasks.md#reenqueue).
 
 ## Example
 

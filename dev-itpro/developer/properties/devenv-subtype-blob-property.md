@@ -1,7 +1,7 @@
 ---
 title: "SubType Property (BLOB)"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,9 +13,11 @@ author: SusanneWindfeldPedersen
 ---
 
 # SubType Property (BLOB)
+
 Sets additional information about what will be contained in the field.  
   
 ## Applies to  
+
 - BLOB fields  
   
 ## Property Value  
@@ -29,10 +31,12 @@ Sets additional information about what will be contained in the field.
 
  
 ## Syntax
-```
+
+```AL
 SubType = Bitmap;
 ```
 
-## See Also  
+## See Also
+
 [Properties](devenv-properties.md)   
 [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   

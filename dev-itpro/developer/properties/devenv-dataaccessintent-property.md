@@ -1,7 +1,7 @@
 ---
 title: "DataAccessIntent Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,8 @@ The property has the following values.
 |**ReadWrite**|Specifies to get the data from the primary database. **ReadWrite** is the default value.|  
   
 ## Syntax
-```
+
+```AL
 DataAccessIntent = ReadOnly|ReadWrite;
 ```
 

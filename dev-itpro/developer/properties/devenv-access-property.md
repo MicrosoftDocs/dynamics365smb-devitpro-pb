@@ -3,7 +3,7 @@ title: "Access Property"
 description: "Describes the usage of the access modifier on objects in Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/20/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ For table fields there are two additional settings for **Access** and you have t
 ## Syntax
 
 ### Tables
-```
+```AL
 table 50111 MyTable
 {
     DataClassification = CustomerContent;
@@ -62,7 +62,7 @@ table 50111 MyTable
 ```
 ### Table fields
 
-```
+```AL
 table 50111 MyTable
 {
     DataClassification = CustomerContent;
@@ -78,7 +78,7 @@ table 50111 MyTable
 ```
 ### Queries
 
-```
+```AL
 query 50114 MyQuery
 {
     QueryType = Normal;
@@ -88,7 +88,7 @@ query 50114 MyQuery
 
 ### Codeunits
 
-```
+```AL
 codeunit 50113 MyCodeunit
 {
     Access = Internal;

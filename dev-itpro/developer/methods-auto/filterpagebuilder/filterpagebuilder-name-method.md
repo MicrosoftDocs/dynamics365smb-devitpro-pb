@@ -1,8 +1,8 @@
 ---
-title: "Name Method"
+title: "FilterPageBuilder.Name Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Name Method
+# FilterPageBuilder.Name Method
 Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control.
 
 

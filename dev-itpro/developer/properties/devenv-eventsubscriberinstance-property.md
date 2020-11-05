@@ -1,7 +1,7 @@
 ---
 title: "EventSubscriberInstance Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ Specifies how event subscribers in a codeunit are bound the events that they sub
 
 ## Applies to  
 
--   Codeunits  
+- Codeunits  
 
 ## Property Value  
 
@@ -35,7 +35,8 @@ Specifies how event subscribers in a codeunit are bound the events that they sub
 
 -->
 ## Syntax
-```
+
+```AL
 EventSubscriberInstance = StaticAutomatic|Manual;
 ```
 
@@ -49,7 +50,7 @@ This code example uses the EventSubscriberInstance property to manually bind an 
 
 The following code creates codeunit that publishes the `OnAddressLineChanged` event.
 
-```
+```AL
 codeunit 50100 MyPublishers
 {
     [IntegrationEvent(false, false)]
@@ -61,7 +62,7 @@ codeunit 50100 MyPublishers
 
 The following code extends the **Customer Card** page to raise the `OnAddressLineChanged` event when the **Address** field is changed: 
 
-```
+```AL
 pageextension 50100 MyCustomerExt extends "Customer Card"
 {
     layout
@@ -86,7 +87,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
 
 The following code declares the `CheckAddressLine` event subscriber in the event subscriber codeunit **50101 MySubscribers**. The event subscriber displays a message in the client when '+' is used in the **Address** field.
 
-```
+```AL
 codeunit 50101 MySubscribers
 {
     //Set the event subscribers to manual binding;
@@ -104,9 +105,10 @@ codeunit 50101 MySubscribers
 
 On the event publisher side, the bindings are always considered static. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. However, you can achieve the same by using/storing some global state on the subscriber.  
 
-## See Also  
-[BINDSUBSCRIPTION Method](../methods-auto/session/session-bindsubscription-method.md)  
-[UNBINDSUBSCRIPTION Method](../methods-auto/session/session-unbindsubscription-method.md)  
+## See Also
+
+[BindSubscription Method](../methods-auto/session/session-bindsubscription-method.md)  
+[UnBindSubscription Method](../methods-auto/session/session-unbindsubscription-method.md)  
 [Publishing Events](../devenv-publishing-Events.md)  
 [Raising Events](../devenv-raising-Events.md)  
 [Subscribing to Events](../devenv-subscribing-to-Events.md)  

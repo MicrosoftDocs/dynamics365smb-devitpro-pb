@@ -1,8 +1,9 @@
 ---
-title: "StrMenu Method"
+title: "Dialog.StrMenu Method"
+description: Describes the StrMenu method in Business Central
 ms.author: solsen
 ms.custom: na
-ms.date: 06/18/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# StrMenu Method
+# Dialog.StrMenu Method
 Creates a menu window that displays a series of options.
 
 
@@ -57,7 +58,7 @@ var
     Text001: Label 'You selected option %1.';
     Text002: Label 'Choose one of the following options:';
 begin
-    Options := Text000  
+    Options := Text000;  
     // Sets the default to option 3  
     Selected := Dialog.STRMENU(Options, 3, Text002);  
     MESSAGE(Text001, Selected);  

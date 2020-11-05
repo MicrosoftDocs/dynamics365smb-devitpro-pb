@@ -3,7 +3,7 @@ title: "Converting Extensions V1 to V2 Overview"
 description: "Overview of the converting of extensions."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,18 +13,24 @@ ms.author: jswymer
 ---
 
 # Converting Extensions V1 to Extensions V2
+
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This article explains the steps involved in converting V1 extensions, written in C/SIDE. to V2 extensions; written using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. The overall steps for the conversion are:
 
 1. Convert the source code from C/AL to the AL syntax.
 2. Complete the development of the extension in AL syntax.
 3. Write upgrade code to restore and modify data from the V1 Extension tables.
 4. Build the extension.
-5. Uninstall the V1 extension, and publish and run upgrade on the V2 extension. 
+5. Uninstall the V1 extension, and publish and run upgrade on the V2 extension.
+
+> [!IMPORTANT]  
+> Converting extensions V1 to extensions V2 can only be done on [!INCLUDE[prodshort](includes/prodshort.md)] Spring 2019 (version 14) and earlier versions. It isn't supported on later [!INCLUDE[prodshort](includes/prodshort.md)] versions, because it requires a working C/AL base application and several ArchiveData functions, which are not available in later versions.  
 
 ## Convert the source code from V1 to V2
-To convert the source code, you must use the Txt2Al conversion tool. The Txt2Al conversion tool allows you to take existing application objects that have been exported in .txt format and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information about converting the source code, see [Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
+
+To convert the source code, you must use the Txt2Al conversion tool. The Txt2Al conversion tool allows you to take existing application objects that have been exported in .txt format and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information about converting the source code, see [Txt2Al Conversion Tool](devenv-txt2al-tool.md).
 
 ## Complete the development of the extension
+
 When the source code has been converted using the Txt2Al conversion tool, open the project folder in Visual Studio Code, and then modify or add code to the new version as needed. For more information about getting started with Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], see [Getting Started with AL](devenv-get-started.md).
 
 You might run into compilation errors, which can typically be caused by:
@@ -36,9 +42,9 @@ You might run into compilation errors, which can typically be caused by:
 
 > [!IMPORTANT]  
 > In the `app.json` file, keep the ID the same as in the V1 extension. Also, make sure to increase the version number.
-
+>
 > The version number has the format `Major.Minor.Build.Revision`, for example `1.5.0.0`. To increase the version number, you must increase the value of `Major`, `Minor`, or `Build` by at least one, for example `1.5.1.0` or `1.6.0.0`. 
-
+>
 > To use `NAVAPP.RestoreArchiveData()` method for upgrading, you must not change the IDs of the tables that are being restored; this means that tables from your V1 extension must have the same IDs in the V2 extensions. 
 
 ## Write upgrade code to move data from V1 Extensions
@@ -70,7 +76,7 @@ By using these methods, you can restore or move all your data from the old V1 ex
 ### Example
 This code illustrates a simple upgrade codeunit for restoring the V1 extension data for extension table `70000000`. 
 
-```
+```AL
 codeunit 70000001 MyExtensionUpgrade
 {
     Subtype=Upgrade;

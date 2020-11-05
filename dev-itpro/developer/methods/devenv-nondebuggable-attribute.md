@@ -1,8 +1,9 @@
 ---
 title: "NonDebuggable Attribute"
+description: "The NonDebuggable attribute in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,14 +18,14 @@ Specifies that a method or a variable is hidden from debugging in the sense that
 
 ## Syntax  
 
-```  
+```AL  
 [NonDebuggable]
 ```
   
 ## Example
 Setting the attribute on a method. Each method must be marked with `[NonDebuggable]`.
 
-```
+```AL
 codeunit 50142 NoDebuggingOfMethod
 {
     [NonDebuggable]
@@ -39,7 +40,7 @@ codeunit 50142 NoDebuggingOfMethod
 ```
 
 Setting the attribute on variables. Each variable must be marked as `[NonDebuggable]`.
-```
+```AL
 codeunit 50143 NoDebuggingOfVar 
 {
     local procedure MyProcedure()

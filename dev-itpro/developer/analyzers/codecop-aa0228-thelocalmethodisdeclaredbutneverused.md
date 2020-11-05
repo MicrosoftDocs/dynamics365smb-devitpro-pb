@@ -2,7 +2,7 @@
 title: "The local method must be used; otherwise removed."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/16/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ The local method must be used, otherwise the variable is not necessary.
 Unused methods can be confusing for the reader and can cost performance to the system. 
 
 ## Bad code example
-```
+```AL
 codeunit 10 MyCodeunit
 {
     var
@@ -44,7 +44,7 @@ codeunit 10 MyCodeunit
 ```
 
 ## Good code example
-```
+```AL
 codeunit 10 MyCodeunit
 {
     var

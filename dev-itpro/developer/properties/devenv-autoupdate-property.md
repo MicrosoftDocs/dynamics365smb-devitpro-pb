@@ -1,7 +1,7 @@
 ---
 title: "AutoUpdate Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Table elements in XMLports.
  **True** if the records are updated; otherwise, **false**. The default value is **true**.  
 
 ## Syntax
-```
+```AL
 AutoUpdate = true;
 ```
 

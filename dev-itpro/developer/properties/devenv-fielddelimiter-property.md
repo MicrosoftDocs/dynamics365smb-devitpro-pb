@@ -1,7 +1,7 @@
 ---
 title: "FieldDelimiter Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # FieldDelimiter Property
+
 Specifies the text delimiter for a field.  
   
 ## Applies to  
@@ -19,7 +20,7 @@ Specifies the text delimiter for a field.
 
 ## Syntax
 
-```
+```AL
 FieldDelimiter = '<None>';
 ```
   

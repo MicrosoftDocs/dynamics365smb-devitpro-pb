@@ -2,7 +2,7 @@
 title: "Printing Reports"
 description: Dynamics 365 Business Central supports printing reports to cloud-based printers. 
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Throughout the print process, the system compiles the report into a PDF file and
 
 You subscribe to the OnAfterSetupPrinters event to set up different printers that users can use on reports, which they select from the **Printer Selections** page. The OnAfterSetupPrinters event is a global integration event that is published from codeunit **44 Report Managements**. It has the following declaration:  
 
-```
+```AL
 [IntegrationEvent(false, false)]
 local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
 ```
@@ -47,7 +47,7 @@ You subscribe to the OnAfterDocumentPrintReady event to specify what happens whe
 
 The OnAfterDocumentPrintReady event is also a global integration event that is published from codeunit **44 Report Managements**. It has the following declaration:
 
-```
+```AL
 IntegrationEvent(false, false)]
 local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
 ```

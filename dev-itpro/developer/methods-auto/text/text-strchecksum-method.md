@@ -1,8 +1,8 @@
 ---
-title: "StrCheckSum Method"
+title: "Text.StrCheckSum Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# StrCheckSum Method
+# Text.StrCheckSum Method
 Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.
 
 
@@ -45,7 +45,8 @@ The resulting checksum value.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
  This example shows how to use the STRCHECKSUM method to calculate a checksum.  
  
 ```  
@@ -74,7 +75,8 @@ end;
 
  **has the checksum: 0**  
 
-## Example  
+## Example 2
+
  This example shows how to use the STRCHECKSUM method to calculate a modulus 10 checksum for a bar code.  
 
  The STRCHECKSUM method can be used to calculate checksums for 13- and 8-digit European Article Number \(EAN\) and EAN-compatible bar codes such as a Universal Product Code \(UPC\) or Japanese Article Number \(JAN\).  

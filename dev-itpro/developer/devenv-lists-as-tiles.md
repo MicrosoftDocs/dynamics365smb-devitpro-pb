@@ -1,7 +1,8 @@
 ---
 title: "Display Data as Tiles"
+description: Describes how to display a list as tiles
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,11 +10,14 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Displaying Data as Tiles
+# Displaying Data as Tiles for Lists
 
-In the client, on `List` type pages, users can view the page in the tile view. The tile view shows records as tiles (or bricks) instead of as rows. Tiles optimize space and readability of data. Tiles are especially useful for images, like on a page that show items, customers, and contacts. 
+In the client, on `List` type pages, users can view the page in the tile view. The tile view shows records as tiles (or bricks) instead of as rows. Tiles optimize space and readability of data. Tiles are especially useful for images, like on a page that show items, customers, and contacts. Business Central also provides Microsoft Teams integration, which enables users to display an interactive, visual representation of records in a Teams chat. These features both use the same design concept, which is based defining a `Brick` field group on the an entities source table.
 
 By default, the tile view will display the first five fields that are defined in page's `repeater` control. This article describes how you can customize the tile view for list type pages.
+
+> [!NOTE]
+> The `Brick` field group is also used to define the fields that appear when a record is shown in a Microsoft Teams conversation. For more information, see [Extending Teams Cards](devenv-develop-for-teams-cards.md).
 
 ## Tile view in the client
 
@@ -26,7 +30,7 @@ Tiles are interactive. A context menu is available in the upper right corner. Th
 
 You specify the data that you want shown in the tile view in the source table of the page by adding a `Field Group` that has the name `Brick`:
 
-```
+```AL
     fieldgroups
     {
         fieldgroup(Brick; <field 1>, <field 2>, <field 3>, <field 4>, <field 5>)
@@ -65,7 +69,7 @@ Like the list view, the tile view supports the [Style Property](properties/deven
 ## Example
 The following code is a simple example of a table that includes `Field Group` control for displaying data in the tile view of a list page.
 
-```
+```AL
 Table 50100 MyTable
 {
 

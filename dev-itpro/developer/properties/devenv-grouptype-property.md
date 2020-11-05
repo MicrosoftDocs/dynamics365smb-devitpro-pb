@@ -1,7 +1,7 @@
 ---
 title: "GroupType Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,14 +11,13 @@ ms.assetid: 349e71ab-2fe0-457a-84de-9281de73d070
 caps.latest.revision: 18
 ---
 
- 
-
 # GroupType Property
+
 Sets the subtype for a group control on a page, which determines how fields in a group layout on a page.  
   
 ## Applies to  
   
--   Group type controls on pages  
+- Group type controls on pages  
   
 ## Property Values  
 
@@ -41,7 +40,7 @@ Sets the subtype for a group control on a page, which determines how fields in a
 -->
 
 ## Syntax
-```
+```AL
 page 50100 MyPage
 {  
     layout
@@ -59,5 +58,6 @@ page 50100 MyPage
 ```
 
 ## See Also
+
 [Properties](devenv-properties.md)  
 [Pages Overview](../devenv-pages-overview.md)  

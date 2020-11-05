@@ -1,7 +1,7 @@
 ---
 title: "EnabledIfSelection Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,25 +12,26 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # EnabledIfSelection Property
+
 Sets a value that indicates whether the selected action is enabled or disabled.  
   
 ## Applies to  
   
--   Actions  
-  
--   Pages  
+- Actions  
+- Pages  
 
 ## Syntax
-```
+
+```AL
 EnabledIfSelection = true;
 ```
  
-## Property Value  
- **True**/**false**  
+## Property Value
+
+**True**/**false**  
   
 ## See Also  
- [EnabledIfError Property](devenv-enablediferror-property.md)   
- [EnabledIfInsertion Property](devenv-enabledifinsertion-property.md)
+
+[EnabledIfError Property](devenv-enablediferror-property.md)   
+[EnabledIfInsertion Property](devenv-enabledifinsertion-property.md)

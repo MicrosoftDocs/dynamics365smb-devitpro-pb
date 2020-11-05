@@ -6,7 +6,7 @@ ms.reviewer: solsen
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.author: solsen
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 
 # Testing Reports
@@ -20,7 +20,7 @@ The following example shows how to initialize the codeunit 131007 `Library - Rep
 > [!TIP]  
 > If you want to run the report separately and load the data from the input stream manually, you can use the `LoadDataFromInstream` method.
 
-```
+```AL
 codeunit 50105 MyReportTesting
 {
     Subtype = Test;

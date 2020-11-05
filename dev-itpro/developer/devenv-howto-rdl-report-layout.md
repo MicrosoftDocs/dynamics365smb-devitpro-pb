@@ -3,7 +3,7 @@ title: "Creating an RDL Layout Report"
 description: "Describes the steps involved in creating a report that uses an RDL layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/15/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ To facilitate testing your report layout, the following simple example extends t
 
 1. Create a new extension to the Customer List page that contains code to run the report, as well as a simple report object by adding the following lines of code:
 
-    ```
+    ```AL
     pageextension 50123 MyExtension extends "Customer List"
     {
         trigger OnOpenPage();
@@ -45,7 +45,7 @@ To facilitate testing your report layout, the following simple example extends t
     ```
 2. Build the extension (**Ctrl+Shift+B**) to generate the MyRDLReport.rdl file.
 3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report:  
-    ```
+    ```AL
     report 50123 MyRdlReport
     {
         DefaultLayout = RDLC;
@@ -72,7 +72,7 @@ You will now see the generated report in preview mode.
 
 > [!NOTE]  
 > If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
-    ```
+    ```json
     "al.compilationOptions": {
             "generateReportLayout": true
         }

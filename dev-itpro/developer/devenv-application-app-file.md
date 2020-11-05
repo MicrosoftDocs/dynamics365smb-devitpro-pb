@@ -2,7 +2,7 @@
 title: "The Microsoft_Application.app File"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/11/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ The file name of the reference is `Microsoft_Application.app` and in the app.jso
 
 The `app.json` file of the `Microsoft_Application.app` file looks like the following example for [!INCLUDE[prodshort](includes/prodshort.md)] version 15.3.
 
-```
+```json
 {
     "id":  "c1335042-3002-4257-bf8a-75c898ccb1b8",
     "name":  "Application",
@@ -67,7 +67,7 @@ The `app.json` file of the `Microsoft_Application.app` file looks like the follo
 ```
 If you have a code-customized base application, the file can be edited to reflect the dependency to this instead. To do so, update the `"dependencies": []` section and change the `"appId":  "437dbf0e-84ff-417a-965d-ed2bb9650972"` to the `appId` of your code-customized base application. You can update the `"name"` and `"publisher"` information to match too.
 
-```
+```json
 ...
 "dependencies":  [
                          {
@@ -91,7 +91,7 @@ Additionally, it is meant to simplify the on-premises upgrade scenarios, when cu
 
 To enable these benefits, all you need to do, as an AppSource or PTE app owner, is to add the `"application"` property in the `app.json` file of your app and provide the minimum Microsoft Base Application version that this app is compatible with. For more information, see [JSON Files](devenv-json-files.md). Also, you need to remove the direct dependencies to the Base Application and System Application from the `app.json` file. See the following example:
 
-```
+```json
 {
     "id":  "e5645aaf-74be-453a-ab50-2e34ec3ee53c",
     "name":  "Fabrikam Gadgets Management",

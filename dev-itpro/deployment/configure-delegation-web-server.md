@@ -2,7 +2,7 @@
 title: Configure Web Client Delegation
 description: The client device, Web Client and Server are on separate computers. Web Client performs actions on behalf of client device called impersonation process.
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -102,7 +102,7 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
      For example, if **BCSERVER** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and **[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]** is the instance name, the actual command has the following format.  
   
     ```  
-    setspn -A BC150/BCSERVER.corp:7046 corp\bcdomainuser  
+    setspn -A BC160/BCSERVER.corp:7046 corp\bcdomainuser  
     ```  
   
 ##  <a name="Kernel"></a> Configuring Kernel Mode Authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)]   

@@ -3,7 +3,7 @@ title: "Tips for working with the APIs"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ ms.service: "dynamics365-business-central"
 + Calling a resource API (GET) will return a list of all instances of the resource type
 + Each resource is uniquely identified through an ID, see the following example:  
 
-    ```
+    ```json
     {
         "@odata.context": "<endpoint>/$metadata#companies",
         "value": [

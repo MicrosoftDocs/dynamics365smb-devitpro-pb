@@ -3,7 +3,7 @@ title: "Migrating Tables and Fields Between Extensions"
 description: "Explains how to migrate tables and fields from one extension to another."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -62,7 +62,7 @@ In this step, you create a new version of the releasing extension that doesn't c
 
 1. In the releasing extension AL project, add a migration.json file that points to the ID of the transition extension **Ext Z**.
 
-    ```
+    ```json
     { 
     "apprules": [ 
         { 
@@ -109,7 +109,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 
 1. In the extension AL project, add a migration.json file that points to the IDs of the releasing extension **Ext X** and receiving extension **Ext Y**.
 
-    ```
+    ```json
     { 
     "apprules": [ 
         { 

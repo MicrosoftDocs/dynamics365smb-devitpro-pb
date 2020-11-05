@@ -1,7 +1,7 @@
 ---
 title: "TreeInitialState Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # TreeInitialState Property
 
 [!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
@@ -17,7 +18,7 @@ Sets whether the indented hierarchy list is collapsed or expanded when the page 
 
 ## Syntax
 
-```
+```AL
 TreeInitialState = CollapseAll;
 ```
   
@@ -44,7 +45,7 @@ For more information about how to use this property, see [Designing Indented Hie
 
 ## Example
 
-```
+```AL
 repeater(Control1)
 {
     IndentationColumn = NameIndent;
@@ -61,6 +62,7 @@ repeater(Control1)
 ```
 
 ## See Also
+
 [ShowAsTree Property](devenv-showastree-property.md)  
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
 [IndentationControl Property](devenv-indentationcontrols-property.md)  

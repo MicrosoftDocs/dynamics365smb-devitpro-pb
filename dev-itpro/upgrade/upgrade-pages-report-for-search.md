@@ -1,9 +1,9 @@
 ---
-title: "Making Pages and Reports in the MenuSuite Searchable in Business Central After Upgrade"
-description: "Explains how to make pages and reports searchable in the Web Client after an upgrade to the Business Central platform from Dynmaics NAV."
+title: "Making Pages and Reports in the MenuSuite Searchable After Upgrade"
+description: Explains how to make pages and reports searchable in the Web Client after an upgrade to the Business Central platform from Dynamics NAV.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

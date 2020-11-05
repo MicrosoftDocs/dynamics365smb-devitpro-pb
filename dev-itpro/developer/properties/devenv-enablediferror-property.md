@@ -1,7 +1,7 @@
 ---
 title: "EnabledIfError Property"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,25 +12,26 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # EnabledIfError Property
+
 Sets a value that specifies whether an action is enabled or disabled if it enters an error state.  
   
 ## Applies to  
   
--   Actions  
+- Actions  
+- Pages  
   
--   Pages  
-  
-## Property Value  
- **True**/**false**  
+## Property Value
+
+**True**/**false**  
  
 ## Syntax
-```
+
+```AL
 EnabledIfError = true;
 ```
 
-## See Also  
- [EnabledIfInsertion Property](devenv-enabledifinsertion-property.md)   
- [EnabledIfSelection Property](devenv-enabledifselection-property.md)
+## See Also
+
+[EnabledIfInsertion Property](devenv-enabledifinsertion-property.md)   
+[EnabledIfSelection Property](devenv-enabledifselection-property.md)

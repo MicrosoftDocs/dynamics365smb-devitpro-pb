@@ -3,7 +3,7 @@ title: "Report Dataset"
 description: "The dataset determines the data extracted to print or display the information from the database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 
 The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
 
-```
+```AL
 dataset
 {
     dataitem(Customer; Customer)

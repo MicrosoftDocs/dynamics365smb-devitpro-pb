@@ -1,5 +1,6 @@
 ---
 title: "Upgrading to Microsoft Dynamics 365 Business Central Online"
+description: Describes how to upgrade to Business Central Online
 ms.custom: na
 ms.reviewer: edupont
 ms.suite: na
@@ -8,7 +9,7 @@ ms.topic: article
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Online
 
@@ -18,7 +19,7 @@ Use the following table to determine the procedures that you must complete for y
 
 |  Scenario  |  Procedures  |
 |------------|--------------|
-|Upgrade from [!INCLUDE[navnow](../developer/includes/navnow_md.md)]|Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online is fully supported, but there are a number of considerations that you must make.</br>For more information, see [Upgrading from Dynamics NAV to Business Central online](upgrade-considerations.md#upgrading-from--to--online).|
+|Upgrade from [!INCLUDE[navnow](../developer/includes/navnow_md.md)]|Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online is fully supported, but there are a number of considerations that you must make.</br>For more information, see [Upgrading from Dynamics NAV to Business Central online](upgrade-considerations.md#online).|
 |Set up a company based on questionnaires|Use RapidStart Services. </br>For more information, see [Setting Up a Company With RapidStart Services](/dynamics365/business-central/admin-set-up-a-company-with-rapidstart?toc=/dynamics365/business-central/dev-itpro/toc.json).|
 |Import data from any system|Use Excel or configuration packages to import data. </br>For more information, see [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json).|
 |Import data from Dynamics GP|Use the data migration wizard to import master data. </br>For more information, see [Migrate to Business Central Online from Dynamics GP](../administration/migrate-dynamics-gp.md).|

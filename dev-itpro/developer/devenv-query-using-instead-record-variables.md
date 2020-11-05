@@ -1,7 +1,7 @@
 ---
 title: "Using Queries Instead of Record Variables"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ In scenarios where you want to read records from multiple tables, it can be a go
 
 The following AL code shows an example of using record variables to retrieve and handle records from two tables. You could potentially use this code to track item movement. The code uses two record variables, `Item` and `ItemLedgerEntry`, to retrieve the first five records from table **27 Item** and table **32 Item Ledger Entry** where the **Entry Type** field equals **Sale**. The retrieved records are passed to and handled by the `OutputData` method.  
 
-```  
+```AL
 begin
     count := 0;
     if Item.FINDSET then
@@ -50,7 +50,7 @@ end;
 
 The following AL code represents a query object and additional code that will return the same results as the previous example that uses record variables.
 
-```
+```AL
 query 50100 "Item Movements Query"
 {
     QueryType = Normal;
@@ -94,7 +94,7 @@ query 50100 "Item Movements Query"
 
 Add the following code to a codeunit that will run the query.
 
-``` 
+```AL
 var
     ItemMovements: Query "Item Movements"
 begin

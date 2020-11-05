@@ -3,7 +3,7 @@ title: "Report Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/17/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 ## Report example
 The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).
 
-```
+```AL
 report 50103 "Customer List"
 {
   CaptionML=ENU='Customer List';

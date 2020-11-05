@@ -1,8 +1,8 @@
 ---
-title: "Power Method"
+title: "System.Power Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Power Method
+# System.Power Method
 Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4.
 
 
@@ -40,7 +40,8 @@ The exponent in the exponential method.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
 ```  
 var
     Number1: Decimal;
@@ -61,7 +62,8 @@ end;
   
  This example shows that raising a number to the power of 0.5 corresponds to the square root of the number.  
   
-## Example  
+## Example 2
+
  This example shows a typical use for the POWER method.  
   
  If a principal amount P is deposited at interest rate R and compounded annually, then at the end of N years, the accumulated amount \(A\) is:  

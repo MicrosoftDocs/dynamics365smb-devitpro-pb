@@ -1,9 +1,9 @@
 ---
-title: "Choosing Your Dynamics 365 Business Central Development Sandbox Environment"
+title: "Sandbox Environments for Dynamics 365 Business Central Development"
 description: "Overview of the differences between the offered sandbox environments for Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,12 +12,12 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Choosing Your Dynamics 365 Business Central Development Sandbox Environment
+# Sandbox Environments for Dynamics 365 Business Central Development
 
 To get started developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] it is important to understand the different options you have at hand. You can either choose to run a sandbox environment deployed as a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service, or you can run a container-based image either hosted as an Azure VM or locally. Both options provide the AL development tools; the container-based sandbox additionally provides access to the C/SIDE development tools. You can also choose to run a sandbox environment with production data using the **Business Central Admin Center**. For more information, see [Business Central Admin Center](../administration/tenant-admin-center.md).
 
 > [!NOTE]  
-> When you publish an app from Visual Studio Code to an online sandbox for testing, it is published within the scope of the service node that is hosting that sandbox. Upgrading the sandbox to a new version means that the sandbox is moved to another node that is running the new version. All apps deployed from Visual Studio Code are removed before the sandbox is moved because they will not be available on the new node. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available. ​Apps that are uploaded to the environments of both types (production and sandbox) on the **Extension Management** page using the **Upload Extension** action are published within a global scope and downloaded to the service node and installed during the upgrade, which means that they will not disappear.​
+> When you publish an app from Visual Studio Code to an online sandbox for testing or you create an app using Designer, it is published within the scope of the service node that is hosting that sandbox. Upgrading the sandbox to a new version means that the sandbox is moved to another node that is running the new version. All apps deployed from Visual Studio Code or created using Designer are removed before the sandbox is moved because they will not be available on the new node. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available. Apps that are uploaded to the environments of both types (production and sandbox) on the **Extension Management** page using the **Upload Extension** action are published within a global scope and downloaded to the service node and installed during the upgrade, which means that they will not disappear.
 
 For more information, see [Production and Sandbox Environments](../administration/environment-types.md).  
 

@@ -1,8 +1,8 @@
 ---
-title: "StrPos Method"
+title: "Text.StrPos Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# StrPos Method
+# Text.StrPos Method
 Searches for the first occurrence of substring inside a string.
 
 
@@ -48,7 +48,8 @@ The one-based index of the first occurrence of the substring inside the string.
   
  If *String* or *SubString* is empty, then the method returns zero.  
   
-## Example  
+## Example 1
+
  This example shows how to use the STRPOS method.  
   
 ```  
@@ -76,7 +77,7 @@ end;
   
  **returns the position: 5**  
   
-## Example  
+## Example 2
   
 ```  
 Pos1 := StrPos("abc",""); // Returns 0.  

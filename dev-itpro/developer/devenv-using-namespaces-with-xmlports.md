@@ -3,7 +3,7 @@ title: "Using Namespaces with XMLports"
 description: "Namespaces are used to avoid element name conflicts."
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ The external system that provides or consumes [!INCLUDE[d365_dev_long_md](includ
 
 For example, the following code is a portion of a simple XML document for transferring sales order information. The XML includes namespaces for mapping fields from the `Sales Header` table.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-16"?>  
 <Root xmlns="urn:bc:schema:all" xmlns:bcField="urn:bc:schema:field" xmlns:bcTable="urn:bc:schema:table">  
   <bcTable:SalesHeader>  

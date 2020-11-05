@@ -1,8 +1,9 @@
 ---
 title: "InvokeExtensibilityMethod Method"
+description: "The InvokeExtensibilityMethod in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +35,7 @@ Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_se
 ## Callback Function Syntax
   
 The syntax of the callback function is the following:  
-```  
+```AL
 function callback()
 ```
   
@@ -53,7 +54,7 @@ The following table illustrates the different settings of `skipIfBusy` combined 
 ## Example  
 For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
   
-```  
+```AL
 var map = new VEMap('controlAddIn');  
     map.onLoadMap = function () {  
     var arguments = [map.GetCenter()];  

@@ -1,7 +1,7 @@
 ---
 title: "Protected Variables"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 The `protected` keyword can be used to make variables accessible between tables and table extensions and between pages and page extensions. If you want to only expose some variables as `protected`, you must create two sections of `var` declarations. See the syntax below.
 
 ## Syntax
-```
+```AL
 protected var
         myInt: Integer; // protected var
 
@@ -28,7 +28,7 @@ var
 ## Example
 The example below illustrates how to declare and use a protected variable.
 
-```
+```AL
 page 500100 MyPage
 {
     SourceTable = Customer;

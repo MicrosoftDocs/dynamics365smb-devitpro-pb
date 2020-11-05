@@ -1,7 +1,8 @@
 ---
 title: "Method Attributes"
+description: "The attributes that you can apply to methods in AL for Business Central"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,13 +17,13 @@ An attribute is modifier on a method declaration that specifies information that
 
 In AL, attributes are placed before the method, and have the following syntax:
 
-```
+```AL
 [Attribute_Name(ArgumentName : data_type, ArgumentName : data_type)]
 ```
 
 For example, the Integration attribute has two arguments, and the syntax is:
 
-```
+```AL
 [Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)]
 ```
 
@@ -30,6 +31,7 @@ For example, the Integration attribute has two arguments, and the syntax is:
 
 The following method attributes are available:
 
+- [CommitBehavior Attribute](devenv-commitbehavior-attribute.md)  
 - [Business Attribute](devenv-business-attribute.md)  
 - [ConfirmHandler Attribute](devenv-confirmhandler-attribute.md)  
 - [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)  

@@ -3,7 +3,7 @@ title: "Language and Branding"
 description: "Guidelines on language and branding"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -39,7 +39,7 @@ See in the list below what to consider for each storefront detail when it comes 
 
 | General requirements | Description  | Requirements |
 |----------------------|--------------|--------------|
-| 0.B **Branding** (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: Throughout all your sales, communication and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding and UI, cf. either **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.  | Required |
+| 0.B **Branding** (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: Throughout all your sales, communication and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding and UI, cf. either **Microsoft Dynamics 365 Business Central**, **Dynamics 365 Business Central**, or **Business Central**.  | Required |
 
 
 Make sure to make the right reference throughout your content:

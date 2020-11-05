@@ -1,8 +1,9 @@
 ---
 title: "Scope Attribute"
+description: "The Scope attribute in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,14 +19,14 @@ Specifies the scope of a method. The attribute has two options `OnPrem` and `Clo
 > In previous versions `OnPrem` was equivalent to `Internal` and `Cloud` was equivalent to `External`. Both `Internal` and `External` options are being deprecated.
 
 ## Syntax  
-```  
+```AL
 [Scope('OnPrem')]
 ```
   
 ## Example
 Setting the attribute on a method. Each method must be marked with `[Scope('OnPrem')]`.
 
-```
+```AL
 procedure MyProcedureForCloud()
     begin
         Message('My procedure is available externally.');    

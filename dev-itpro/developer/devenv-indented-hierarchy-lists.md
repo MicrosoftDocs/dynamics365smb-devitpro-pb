@@ -2,7 +2,7 @@
 title: "Designing Indented Hierarchy Lists"
 description: This article explains how to indent rows in a repeater control to design hierarchical lists. You can nest records that users can navigate, expand, and collapse.
 ms.custom: na
-ms.date: 05/28/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -123,7 +123,7 @@ repeater(Control1)
 Now, the code will indent each record based on the value of the **Indent** field.
 
 -->
-```
+```AL
 page 50100 MyPage
 {
     PageType = List;
@@ -200,7 +200,7 @@ repeater(Control1)
 
 ```
 -->
-```
+```AL
 page 50100 MyPage
 {
     PageType = List;

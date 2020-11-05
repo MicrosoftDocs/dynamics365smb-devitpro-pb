@@ -1,7 +1,7 @@
 ---
 title: "FlowFilter Overview"
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ A user may want to limit calculations to include only those values in a column t
 
  The following illustration shows the relationship between various types of database fields and the calculation formula.  
 
- ![](media/NAV_ADG_6_Diag_5.png "Database fields and calculation formula")  
+ ![Explains database fields and calculation formula](media/NAV_ADG_6_Diag_5.png "Database fields and calculation formula")  
 
  The filters defined in the calculation formula can consist of constants, values from ordinary fields, and filters given as parameters in FlowFilter fields. In FlowFilter fields, a user can enter a filter value via the user interface in the application that will affect the calculation of a FlowField.  
 

@@ -1,8 +1,8 @@
 ---
-title: "TextPos Method"
+title: "BigText.TextPos Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TextPos Method
+# BigText.TextPos Method
 Gets the position at which a specific string first occurs in this BigText instance.
 
 
@@ -43,7 +43,8 @@ The position at which a specific string first occurs in this BigText instance.
 ## Remarks  
  The first character in a *BigText* variable is position 1.  
   
-## Example  
+## Example 1
+
  The following examples show how to use the [TEXTPOS Method](../../methods-auto/bigtext/bigtext-textpos-method.md). These examples require that you create the following global variables and text constant.  
 
 ```
@@ -64,7 +65,8 @@ MESSAGE(Text000, VarPosition);
   
 ```  
   
-## Example  
+## Example 2
+
  In the following example, the method returns 0 because the specified string is not found in the MyBigText variable. The return value is stored in the variable VarPosition and displayed in a message box.  
   
 ```  
@@ -73,15 +75,15 @@ VarPosition := MyBigText.TEXTPOS(''); // Returns 0.
 MESSAGE(Text000, VarPosition);  
 ```  
   
-## Example  
+## Example 3
+
  In the following example, the method returns 0 because the specified string is not found in the MyBigText variable. The return value is stored in the variable VarPosition and displayed in a message box.  
   
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS('XYZ'); // Returns 0.  
 MESSAGE(Text000, VarPosition);  
-```  
-  
+``` 
 
 ## See Also
 

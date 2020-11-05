@@ -1,7 +1,8 @@
 ---
 title: "Attach and Debug Next"
+description: "Attach to a session on a specified server and debug for Web API sessions."
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +29,7 @@ You activate the attach functionality by creating a new configuration in the `la
 
 In the attach configuration, the `breakOnNext` setting specifies the next client to break on when the debugging session starts and allows only one option. The available options are: `WebServiceClient`, `WebClient`, and `Background`. The example below illustrates a configuration for a local server.
 
-```
+```json
 ...
 {
             "name": "My attach to local server",
@@ -76,8 +77,10 @@ You can always add more breakpoints while debugging.
 
 
 ## See Also  
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
+[JSON Files](devenv-json-files.md)  
 [EnableLongRunningSQLStatements Property](properties/devenv-enablelongrunningsqlstatements-property.md)  
 [EnableSQLInformationDebugger Property](properties/devenv-enablesqlinformationdebugger-property.md)  
 [LongrunningSQLStatementsThreshold Property](properties/devenv-longrunningsqlstatementsthreshold-property.md)  

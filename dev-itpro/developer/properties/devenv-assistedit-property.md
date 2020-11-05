@@ -2,7 +2,7 @@
 title: "AssistEdit Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Sets assist-edit capabilities for a text box.
  **True** if assist-edit capabilities and an AssistEdit button are provided; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+```AL
 AssistEdit = true;
 ```
 
