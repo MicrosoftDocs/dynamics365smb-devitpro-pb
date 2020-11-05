@@ -76,8 +76,12 @@ However, once the capacity limits are exceeded, the customers won't be able to c
 
 Administrative actions are currently not limited by the File storage, however similar restrictions will be applied to the File storage with one of the next releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-## See also
+## Reducing Data Stored in Databases
 
+There are a few things that you can do to reduce the amount of data stored in a database to keep it under its current limit. For more information, see [Reducing Data Stored in Databases](database-reduce-data.md).
+
+## See also
+ 
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
