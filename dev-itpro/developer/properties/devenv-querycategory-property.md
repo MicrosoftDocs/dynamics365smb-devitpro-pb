@@ -12,13 +12,9 @@ ms.author: solsen
  
 # QueryCategory Property
 
-This property can be used for displaying SmartLists in the UI. SmartLists are additional views of information linked to a master entity in [!INCLUDE[prodshort](../includes/prodshort.md)]. SmartLists are displayed in the UI under any defined views.
+This property is used to indicate a given query can be made available as views displayed on certain main entity lists. With this functionality, you can create your own queries through extensions and then have them assigned to a main list page by setting the QueryCategory property. This way you can direct users to related information based on a query even where the data is not coming from a single table.
 
-SmartLists are created based on queries. With this functionality, you can create your own lists through extensions. The created list can then be assigned to an entity by setting the `QueryCategory` property.
-
-By being able to create a new list page based on a query, you can get the data you want on one list even if all the data isn’t in a single table in the database.
-
-On queries, the `QueryCategory` property specifies one or more query categories that the object supports. On pages, `QueryCategory` specifies the query category that the page supports.
+On queries, the QueryCategory property specifies one or more query categories that the object supports. On pages, QueryCategory specifies the query category that the page supports.
 
 ## Applies to  
 
