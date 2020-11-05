@@ -20,6 +20,39 @@ Sets the name of the hidden column that controls row indentation in a List page.
 -   Page Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+# Syntax
+
+```AL
+IndentationColumn = IntegerFieldName;
+```
+  
+## Remarks
+
+This property must be set to a field or variable of the [Integer Data Type](../datatypes/devenv-integer-data-type.md).
+
+The IndentationColumn property is used together with either the IndentationControls property or ShowAsTree property to create an indented hierarchy list. This property has no effect if the IndentationControls property is not set and ShowAsTree property is set to false (default).
+
+For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
+
+
+## Example
+
+```AL
+repeater(Control1)
+{
+    IndentationColumn = Indent;
+    IndentationControls = Name;
+    
+    field("No."; "No.")
+    {
+       
+    }
+
+```
+
+## See Also
+
+[IndentationControl Property](devenv-indentationcontrols-property.md)  
+[ShowAsTree Property](devenv-showastree-property.md)  
+[TreeInitialState Property](devenv-treeinitialstate-property.md)  
+[Properties](devenv-properties.md)  

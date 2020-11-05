@@ -39,5 +39,5 @@ SumIndexFields are created in [!INCLUDE[d365fin_long_md](../includes/d365fin_lon
 In situations where SumIndexFields must be created on a key to enable FlowField calculations, but the calculations are performed infrequently or on small sets of data, you can disable this property to prevent slow modifications to the table.  
   
 ## See Also  
-[SumIndexFields Property](devenv-sumindexfields-property.md)
+[SumIndexFields Property](devenv-sumindexfields-property.md)  
 [Properties](devenv-properties.md)
