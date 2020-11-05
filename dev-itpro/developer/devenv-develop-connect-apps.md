@@ -1,5 +1,6 @@
 ---
 title: "Getting Started Developing Connect Apps for Dynamics 365 Business Central"
+description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
@@ -64,7 +65,7 @@ You have now set up the AAD based authentication. Next, you can go exploring the
 ## Exploring the APIs with Postman and basic authentication
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
-1.    First, in Postman, set up a `GET` call to the base API URL.  
+1. First, in Postman, set up a `GET` call to the base API URL.  
     - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
 
     - Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v2.0/<your tenant domain>/<environment name>/api/v2.0`.
