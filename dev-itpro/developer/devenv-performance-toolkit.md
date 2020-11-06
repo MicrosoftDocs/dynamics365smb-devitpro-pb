@@ -21,7 +21,7 @@ In short, the Performance Toolkit helps answer questions such as, "Does my solut
 > You can use the toolkit only in sandbox environments and Docker images. You cannot use it in a production tenant.
 
 ## Components of the Performance Toolkit
-The Performance Toolkit is two extensions, the **Performance Toolkit**, which is available for free on [AppSource](https://go.microsoft.com/fwlink/?linkid=2148001, and **BCPT-SampleTests**, which you can download from the [ALAppExtensions](https://go.microsoft.com/fwlink/?linkid=2148002) repository on GitHub. To get the full benefit of the toolkit, we recommend that you download and install both extensions. Combined, the extensions provide the following:
+The Performance Toolkit is two extensions, the **Performance Toolkit**, which is available for free on [AppSource](https://go.microsoft.com/fwlink/?linkid=2148001), and **BCPT-SampleTests**, which you can download from the [ALAppExtensions](https://go.microsoft.com/fwlink/?linkid=2148002) repository on GitHub. To get the full benefit of the toolkit, we recommend that you download and install both extensions. Combined, the extensions provide the following:
 
 * A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
 * Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
