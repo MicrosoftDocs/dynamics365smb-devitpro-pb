@@ -37,9 +37,9 @@ Your Partner Center account provides you with access to pricing information, too
 
 ## Step 2: Register as a publisher
 
-The first step to becoming a publisher is to register in Partner Center (PC). PC is where you submit your apps for publication, promote your apps, and manage your offers. To begin the registration process, you must complete [these steps](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/azureisv). Shortly thereafter, one of our team members will follow up to help you complete your registration. Once registered, you can access PC.
+The first step to becoming a publisher is to register in Partner Center (PC). PC is where you submit your apps for publication, promote your apps, and manage your offers. To begin the registration process, you must complete [these steps](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv). Shortly thereafter, one of our team members will follow up to help you complete your registration. Once registered, you can access PC.
 
-For more information, see [Partner Center Account](/partner-center/partner-center-account-setup). 
+For more information, see [Partner Center Account](/partner-center/partner-center-account-setup).  
 
 ### PartnerSource Business Center (PSBC) account
 
