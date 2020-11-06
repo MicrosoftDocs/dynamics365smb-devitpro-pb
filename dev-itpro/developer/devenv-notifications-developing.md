@@ -219,7 +219,7 @@ To complete the example, follow these steps:
             // Open the Customer Card page for the customer.
             if CustRec.Get(CustNo) then begin
                 CustPage.SetRecord(CustRec);
-                CustPage.Run();;
+                CustPage.Run();
             end else begin
                 Error('Could not find Customer: ' + CustNo);
             end;
