@@ -146,7 +146,7 @@ Once you have successfully registered (and added coworkers) on Microsoft Collabo
 | **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
 |--|--|--|--|--|
 | Contoso | 12345 | Eugenia | Lopez | Eugenia.Lopez@Contoso.com |
-| Contoso | 12345 | Quincy | Watson | Quincy.Doe@Contoso.com |
+| Contoso | 12345 | Quincy | Watson | Quincy.Watson@Contoso.com |
 
 After sending the email, expect a response from Microsoft within 1-2 business days.
 
@@ -164,7 +164,7 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 - Join the conversation
 
-    [Join the conversation on developing apps on Yammer](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=41498640384&view=all)
+    In the dedicated Yammer network, [join the conversation on developing apps](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=41498640384&view=all)
 
 - Join the monthly Office hour calls
 
@@ -172,7 +172,7 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 - Get coaching from experts
 
-    Need help with developing your apps? There is a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prodshort](../includes/prodshort.md)] ready to engage with you
+    Need help with developing your apps? There is a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prodshort](../includes/prodshort.md)] ready to engage with you.
 
 ### Set up Azure DevOps for your development processes
 
