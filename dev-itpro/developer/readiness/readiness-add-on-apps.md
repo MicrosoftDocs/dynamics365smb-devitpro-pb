@@ -21,7 +21,7 @@ An Add-on app extends the experience and the existing functionality of [!INCLUDE
 Add-on apps are developed using extensions and the modern development tools based on Visual Studio Code. Add-on apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
 <!-- INSERT VIDEO: 
-Objective: Introducing add on apps (modern tools, integration points, rich base, “easy to publish”) 
+Objective: Introducing add on apps (modern tools, integration points, rich base, "easy to publish") 
 New video that needs to be created -->
 
 ### Examples of some of the current Add-on apps on AppSource are:  
@@ -61,16 +61,17 @@ HDI - V9: Connect to webservices in an extension DONE -->
 - [How do I add AL code to an extension?](https://youtu.be/R9o2t3whmB4)
 - [How do I upgrade logic to an extension?](https://youtu.be/hm7mCGp7qug)
 
-## How do I get my Add-on app published in Microsoft AppSource? 
+## How do I get my Add-on app published in Microsoft AppSource?
 
-To ease your journey, from the initial idea submission to the final publication, we have created a page that you can lean on throughout the process of bringing your app to AppSource. Please have a look at [Getting You Started with Building Apps](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-add-on-apps-getting-you-started)
-
+To ease your journey, from the initial idea submission to the final publication, we have created a page that you can lean on throughout the process of bringing your app to AppSource. For more information, see [Get Started with Building Apps](readiness-get-started.md).  
 
 ## See Also
+
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Get Started with Building Apps](readiness-get-started.md)  
 [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
-[Development of a Localization Solution](readiness-develop-localization.md)    
+[Development of a Localization Solution](readiness-develop-localization.md)  
 [Resell Different Solutions](readiness-reseller.md)  
