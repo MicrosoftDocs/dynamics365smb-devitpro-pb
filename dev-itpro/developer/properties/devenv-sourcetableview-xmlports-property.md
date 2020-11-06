@@ -23,7 +23,7 @@ Sets the key, sort order, and filter of the source table presented to the user.
 ## Syntax
 
 ```AL
-SourceTableView = SORTING(Code);
+SourceTableView = Sorting(Code);
 ```
  
 ## Remarks  
