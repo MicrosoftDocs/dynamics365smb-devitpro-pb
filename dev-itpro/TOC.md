@@ -9,6 +9,7 @@
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
 <!--#### What the partner's responsibilities are -->
+### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
@@ -16,16 +17,18 @@
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-### Get started with building apps
+<!--### Get started with building apps
 #### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 #### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
+#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
-#### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### Deployment
+##### [Overview](embedapps\embed-app-deployment-overview.md)
+##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Using Application Family](deployment/embed-app-using-application-family.md)
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
@@ -174,7 +177,7 @@
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
 #### [The "Ready to Go" Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+#### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
@@ -782,6 +785,7 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
+#### [Reducing Database Size](administration/database-reduce-data.md)
 ### Business Central Mobile App
 #### [Introducing the Mobile App](developer/devenv-introducing-business-central-mobile-app.md)
 #### [Preparing For and Installing the Mobile App](deployment/install-business-central-app.md)

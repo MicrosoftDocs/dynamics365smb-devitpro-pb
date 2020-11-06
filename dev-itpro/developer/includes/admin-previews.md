@@ -1,6 +1,6 @@
 About one month before a major update, you can try out new functionality in preview environments. Preview environments are essentially [!INCLUDE [prodshort](prodshort.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as *(Preview)* from the version list. This way, you get a new sandbox environment with a preview version of the application.  
 
-You must have access to Microsoft Collaborate in order to submit your feedback and report any potential issues that you discover in the preview version of the application. For more information about getting access to Collaborate, see [Register on Collaborate](../readiness/readiness-add-on-apps-getting-you-started.md#register-on-collaborate).
+You must have access to Microsoft Collaborate in order to submit your feedback and report any potential issues that you discover in the preview version of the application. For more information about getting access to Collaborate, see [Step 4: Getting access to preview bits](../readiness/readiness-get-started.md#step-4-getting-access-to-preview-bits).
 
 > [!NOTE]
 > Previews roll out gradually across the world, so if the option is not showing up for you today, please try again tomorrow.
