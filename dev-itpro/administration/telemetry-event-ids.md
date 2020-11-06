@@ -29,6 +29,7 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 | RT0007 | Report generation | [Cancellation report generation](telemetry-reports-trace.md#cancellation-report-generation) | 
 | RT0008 | Incoming Web service requests | [Web service called ({category of request}): {endpoint}](telemetry-webservices-trace.md) |
 |RT0010|Extension lifecycle|[Extension Update Failed: exception raised in extension {extensionName} by {extensionPublisher} (updating to version {extensionTargetedVersion})](telemetry-extension-update-trace.md#extension-update-failed-exception-raised-in-extension) | 
+| RT0007 | Report generation | [Report cancelled but COMMIT occurred](telemetry-reports-trace.md#cancellation-report-generation) | 
 | RT0012 | Performance | [Database lock timed out](telemetry-database-locks-trace.md#database-lock-timed-out) | 
 | RT0013 | Performance | [Database lock snapshot: {snapshotId}](telemetry-database-locks-trace.md#database-lock-snapshot) |
 | RT0014 | Security | [App Key Vault initialization succeeded: '{keyVaultUri}'](telemetry-extension-key-vault-trace.md#initializedsuccess) |
