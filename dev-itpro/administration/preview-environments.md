@@ -58,4 +58,4 @@ Once you have joined the preview engagement, you can submit your feedback by fil
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Register on Collaborate](../developer/readiness/readiness-add-on-apps-getting-you-started.md#register-on-collaborate)  
+[Step 4: Getting access to preview bits](../developer/readiness/readiness-get-started.md#step-4-getting-access-to-preview-bits)  
