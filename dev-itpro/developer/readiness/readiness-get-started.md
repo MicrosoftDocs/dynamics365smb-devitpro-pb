@@ -1,22 +1,21 @@
 ---
-title: "Get Started Building Apps"
-description: "Getting you started with Microsoft [!INCLUDE [prodshort](../includes/prodshort.md)] Add-On Apps on AppSource"
-author: v-liober
-ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: solsen
+title: Get Started Building Apps
+description: Learn how you can get started building apps for Dynamics 365 Business Central in 6 easy steps.
+author: a-emniel
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: a-emniel
+ms.reviewer: edupont
+ms.author: kurtju
+ms.date: 11/06/2020
 ---
 
-# Get Start with Building Apps
+# Get Started with Building Apps
 
 [!INCLUDE [prodlong](../includes/prodlong.md)] is a business management solution that helps companies connect their financials, sales, services, and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you can easily and quickly tailor, extend and build applications so they fit your specific needs — with little to no code development.
 
 After you have developed your line-of-business app, be that for a specific industry, process, or department such as HR, finance, marketing, or operations, you can publish your app to [Microsoft AppSource](https://appsource.microsoft.com/partners), which is a marketplace where customers can find, try and get in touch with you. AppSource gives app publishers access to more than 100 million commercial users.  
 
-Learn how you can become a [!INCLUDE [prodshort](../includes/prodshort.md)] app publisher in 6 or 7 steps in this article.  
+Learn how you can become a [!INCLUDE [prodshort](../includes/prodshort.md)] app publisher in 6 steps in this article.  
 
 ## Step 1: Become a partner
 
@@ -24,7 +23,7 @@ Becoming a Microsoft partner gives you access to the Microsoft resources needed 
 
 ### Obtain your work account
 
-Your work account or work email is the email address provided to you by your company. This email is usually in the format *you@yourcompany.com*. More information on work accounts can be found [here](/partner-center/azure-active-directory-tenants-and-partner-center).
+Your work account or work email is the email address provided to you by your company. This email is usually in the format `you@yourcompany.com`. More information on work accounts can be found [here](/partner-center/azure-active-directory-tenants-and-partner-center).
 
 ### Join the Microsoft Partner Network
 
@@ -72,15 +71,15 @@ Depending on where you will deploy your [!INCLUDE [prodshort](../includes/prodsh
 
     This object range is tied to [the RSP Program](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram) details.
 
-> [!IMPORTANT]
-> We currently advise NEW publishers NOT to request an RSP object range
+    > [!IMPORTANT]
+    > We currently advise NEW publishers NOT to request an RSP object range
 
 - The App Object Range (70-75 million ID range)
 
     This object range was originally designed to run in the [!INCLUDE [prodshort](../includes/prodshort.md)] service only for Microsoft AppSource Apps.
 
-> [!IMPORTANT]
-> We currently advise NEW Publishers to request an App Object Range.
+    > [!IMPORTANT]
+    > We currently advise NEW Publishers to request an App Object Range.
 
 Currently, you can implement apps developed in both the RSP Range and the app object range in [!INCLUDE [prodshort](../includes/prodshort.md)] online and on-premises, as well as partner-hosted.
 
@@ -95,6 +94,10 @@ You can request an object range by downloading the object range request form [he
 ### Downloading your development license file
 
 After your Regional Operational Center has processed your Agreements and Object Range Request forms, you will be able to download your companies unique Developer license from [PartnerSource Business Center](https://aka.ms/PSBC) under the developer tools section, license key configuration.
+
+### Register your unique prefix or suffix
+
+In your extension, the name of each new application object must contain [a prefix or suffix](/dynamics365/business-central/dev-itpro/compliance/apptest-prefix-suffix). This rule applies to all objects. Email [d365val@microsoft.com](mailto:d365val@microsoft.com) with a prioritized list of 3 letter affixes of your choice together with your MPN ID and the publisher name that you will use for the app.
 
 ## Step 4: Getting access to preview bits
 
@@ -111,47 +114,43 @@ You must have the following prerequisites to register on Microsoft Collaborate:
 - Azure Active Directory (Azure AD).
 
   > [!NOTE]
-  > Note: If you have Microsoft 365, then your company most likely has Azure AD
+  > If you have Microsoft 365, then your company most likely has Azure AD
 
 - Azure AD Global Administrator permission
 
   > [!NOTE]
   > To find out if your company has an Azure AD account, please check with your Network Administration team.
 
-### Step A: How your Global Administrator must register for Collaborate
+### Step 4 A: How your Global Administrator must register for Collaborate
 
-Not all people from your company can initiate the onboarding into Collaborate – only your company Global Administrator has the permission to do. He/she will have to register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate), then choose the **Get Started** action and complete the registration form.
+Not all people from your company can initiate the onboarding into Collaborate – only your company Global Administrator has the permission to do. They must register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate), then choose the **Get Started** action and complete the registration form.
 
 #### Optional Step: Add your coworkers to Microsoft Collaborate
 
 If you want to add coworkers, please follow the 5 steps below:
 
-1. Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
+1. Log in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
-2. Click on the 'Gear' Icon on the top right corner of the page and then on **Developer Settings**.
+2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top right corner of the page, and then choose **Developer Settings**.
 
-3. Click on **Users** under **Settings** in the grey panel on the left-hand side of the page.
+3. Choose **Users** under **Settings** in the grey panel on the left-hand side of the page.
 
-4. Click the grey **ADD USERS** button and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button.
+4. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button.
 
 5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
-### Step B: Getting access to the available builds and engagements
+### Step 4 B: Getting access to the available builds and engagements
 
 Once you have successfully registered (and added coworkers) on Microsoft Collaborate, Microsoft must assign you to the right programs and engagements before you can see the preview bits. Therefore, you should contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with below filled in table:
 
 | **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
 |--|--|--|--|--|
-| Contoso | 12345 | John | Doe | <John.Doe@Contoso.com> |
-| Contoso | 12345 | Jane | Doe | <Jane.Doe@Contoso.com> |
+| Contoso | 12345 | Eugenia | Lopez | Eugenia.Lopez@Contoso.com |
+| Contoso | 12345 | Quincy | Watson | Quincy.Doe@Contoso.com |
 
 After sending the email, expect a response from Microsoft within 1-2 business days.
 
-### Register your unique prefix or suffix
-
-In your extension, the name of each new application object must contain [a prefix or suffix](/dynamics365/business-central/dev-itpro/compliance/apptest-prefix-suffix). This rule applies to all objects. Email [d365val@microsoft.com](mailto:d365val@microsoft.com) with a prioritized list of 3 letter affixes of your choice together with your MPN ID and the publisher name that you will use for the app.
-
-## Step 5: Resources when developing your solution
+## Step 5: Resources while you develop your solution
 
 Find below some guiding resources on how to develop your apps for [!INCLUDE [prodshort](../includes/prodshort.md)].
 
@@ -175,17 +174,17 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
     Need help with developing your apps? There is a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prodshort](../includes/prodshort.md)] ready to engage with you
 
-## Step 6: Set up Azure DevOps for your development processes
+### Set up Azure DevOps for your development processes
 
 Optionally, use the CI/CD workshop document at [https://aka.ms/cicdhol](https://aka.ms/cicdhol) if you want to do it yourself, or choose between vendors offering tools or services around DevOps.
 
 Talk to one of the [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) for guidance.
 
-## Step 7: Publish your app on Microsoft AppSource
+## Step 6: Publish your app on Microsoft AppSource
 
-Once your app is ready for submission, you can list your app on Microsoft AppSource by submitting it in [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview). This article describes [how to create a new [!INCLUDE [prodshort](../includes/prodshort.md)] offering](/azure/marketplace/partner-center-portal/create-new-business-central-offer).
+Once your app is ready for submission, you can list your app on Microsoft AppSource by submitting it in [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview). For more information, see [Create a Dynamics 365 Business Central offer](/azure/marketplace/partner-center-portal/create-new-business-central-offer).
 
-Before you submit it is advised to review the [Technical validation checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission) and [marketing validation checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) which lists all requirements that you **must meet before submitting** an app for validation. If you do not meet these mandatory requirements, your extension will fail validation
+Before you submit it is advised to review the [technical validation checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission) and [marketing validation checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) which lists all requirements that you **must meet before submitting** an app for validation. If you do not meet these mandatory requirements, your extension will fail validation
 
 ## See also
 

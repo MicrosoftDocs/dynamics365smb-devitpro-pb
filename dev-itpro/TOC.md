@@ -9,7 +9,7 @@
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
 <!--#### What the partner's responsibilities are -->
-### [Get Start with Building Apps](developer/readiness/readiness-get-started.md)
+### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
