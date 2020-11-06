@@ -43,7 +43,7 @@ If you use this property to define an index for the primary key, it must include
 
 ## Example
 
-The following example uses the SQLIndex property on a primary key that includes two fields.
+The following example uses the SQLIndex property on a primary key that includes two fields. The clustered index in the database will be ordered like this: (MyField2,MyField1).
 
 ```AL
 keys
