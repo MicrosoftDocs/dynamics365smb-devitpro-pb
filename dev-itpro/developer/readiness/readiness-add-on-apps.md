@@ -27,12 +27,12 @@ New video that needs to be created -->
 ### Examples of some of the current Add-on apps on AppSource are:  
 
 - [Shopify Connector from Scapta](https://appsource.microsoft.com/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview)  
-    - This Add-on app adds [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to webshops, generally useful for companies selling items or services.
+    - This Add-on app adds [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to web shops, generally useful for companies selling items or services.
     - Shopify is a complete e-commerce solution that allows companies to set up an online store to sell their goods combined with the business process flows of the cutting edge ERP-system Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
  
 - [LS Express from LS Retail](https://appsource.microsoft.com/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.ls_retail%7CAID.a45ac602-7269-4b3a-bff0-2dce0b3d0b16%7CPAPPID.2d47a6c4-91c0-4593-be25-858c0b36c599?tab=Overview)  
     - This Add-on app adds a point of sales cashier, useful for front office sales. 
-    - LS Express is designed for small retail companies that need to maintain accurate financial accounts, manage large inventories and live up to the expectations of today's customers. LS Express is a complete online POS system, natively integrated with Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].   
+    - LS Express is designed for small retail companies that need to maintain accurate financial accounts, manage large inventories, and live up to the expectations of today's customers. LS Express is a complete online POS system, natively integrated with Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].   
 
 ## How do I develop an Add-on app?
 <!-- To develop an Add-on app, we advise you to create a development environment for Dynamics 365 Business Central. Follow the process described in this video to set up your environment:
@@ -70,7 +70,7 @@ To ease your journey, from the initial idea submission to the final publication,
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
 [Get Started with Building Apps](readiness-get-started.md)  
 [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
-[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
+[Integrate a Third Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
 [Development of a Localization Solution](readiness-develop-localization.md)  
