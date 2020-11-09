@@ -13,7 +13,7 @@ ms.author: bholtorf
 ---
 
 # The Performance Toolkit Extension
-This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prodshort](includes/prodshort.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the Performance Toolkit lets developers simulate the amount of resources that customers use in realistic scenarios to compare performance between builds of their solutions.
+This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prodshort](includes/prodshort.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
 
 In short, the Performance Toolkit helps answer questions such as, "Does my solution for [!INCLUDE[prodshort](includes/prodshort.md)] support X number of users doing this, that, and the other thing at the same time?" It doesn't answer questions such as, "How many orders can [!INCLUDE[prodshort](includes/prodshort.md)] process per hour?"
 
@@ -21,7 +21,7 @@ In short, the Performance Toolkit helps answer questions such as, "Does my solut
 > You can use the toolkit only in sandbox environments and Docker images. You cannot use it in a production tenant.
 
 ## Components of the Performance Toolkit
-The Performance Toolkit is two extensions, the **Performance Toolkit** and **Performance Toolkit Samples**. To get the full benefit of the toolkit, we recommend that you download and install both from AppSource. <!--check whether you can link to the download pages--> Combined, the extensions provide the following:
+The Performance Toolkit is two extensions, the **Performance Toolkit**, which is available for free on [AppSource](https://go.microsoft.com/fwlink/?linkid=2148001), and **BCPT-SampleTests**, which you can download from the [ALAppExtensions](https://go.microsoft.com/fwlink/?linkid=2148002) repository on GitHub. To get the full benefit of the toolkit, we recommend that you download and install both extensions. Combined, the extensions provide the following:
 
 * A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
 * Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.

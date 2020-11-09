@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 10/31/2020
 ms.author: jswymer
 ---
 
@@ -16,10 +16,15 @@ ms.author: jswymer
 
 [!INCLUDE[prodshort](../includes/2020_releasewave2.md)]
 
-The Business Central server will emit telemetry about the execution time of long running AL methods, excluding the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
+The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, excluding the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 
+<!--
 > [!NOTE]
 > Currently, this signal isn't enabled for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, it's enabled with a specific threshold on a case-by-case basis by the service.
+-->
+
+> [!NOTE]
+> To collect this telemetry for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the **AL Function Timing** and **AL Function Logging Threshold - Application Insights** settings must be configured on the [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General). With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, this telemetry is enabled with a specific threshold on a case-by-case basis by the service.
 
 ## General dimensions
 
@@ -56,7 +61,7 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |extensionPublisher|Specifies the publisher of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
 |extensionVersion|Specifies the version of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
 |extensionId|Specifies the ID of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
-|longRunningThreshold|Specifies the time the defines a long-running AL method, after which the trace is emitted. The value has the format hh:mm:ss.sssssss. |
+|longRunningThreshold|Specifies the time that defines a long-running AL method, after which the trace is emitted. The value has the format hh:mm:ss.sssssss. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. |
 
 <!-- for 17.1 

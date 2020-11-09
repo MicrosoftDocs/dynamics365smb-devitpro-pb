@@ -761,6 +761,7 @@
 #### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
 #### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
 #### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
+#### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -913,6 +914,7 @@
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
