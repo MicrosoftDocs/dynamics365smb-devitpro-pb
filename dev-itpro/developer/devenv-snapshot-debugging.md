@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/21/2020
+ms.date: 11/09/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -111,8 +111,6 @@ Symbols download is using the **snapshotInitialize** debug configuration setting
 
 > [!IMPORTANT]  
 > Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server. This is why you must download symbols from production servers for snapshot debugging in order for a breakpoint set on one line to match with what the server understands of this line. This is to avoid a scenario where you set a breakpoint in a DAL file on line 12, but line 12 on the server is an empty line or a completely different line if the symbols are not the same.
-
-
 
 ## Debugging a snapshot file 
 
