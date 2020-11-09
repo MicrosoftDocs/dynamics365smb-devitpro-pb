@@ -1,5 +1,6 @@
 ---
 title: "Performance Overview"
+description: Learn different ways to improve the performance of Business Central as a functional consultant, a developer, or an administrator.
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen
@@ -26,13 +27,13 @@ The video series *Performance Considerations when Building an App* is also a goo
 
 - [Performance Considerations when Building an App, Part I](https://www.youtube.com/watch?v=MooYL05V11Y)  
 
-  [![IMAGE ALT TEXT](http://img.youtube.com/vi/MooYL05V11Y/0.jpg)](https://www.youtube.com/watch?v=MooYL05V11Y "Performance Considerations when Building an App Part I")
+  ![Video about performance considerations when Building an App Part I](https://www.youtube.com/watch?v=MooYL05V11Y "Performance Considerations when Building an App Part I")
 
   This first part of performance considerations videos focuses on basic principles. It makes you aware of why it is essential to consider performance in every line of code you write, and it introduces the performance implications of the general architectural document and posting design patterns of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
   
 - [Performance Considerations when Building an App, Part II](https://www.youtube.com/watch?v=VN7V4GyULtY)  
 
-  [![IMAGE ALT TEXT](http://img.youtube.com/vi/VN7V4GyULtY/0.jpg)](https://www.youtube.com/watch?v=VN7V4GyULtY "Performance Considerations when Building an App Part II")
+  ![Video about performance considerations when Building an App Part II](https://www.youtube.com/watch?v=VN7V4GyULtY "Performance Considerations when Building an App Part II")
 
   Learn about best practices on implementing the existing data retrieval methods, learn how to greatly improve performance by minimizing server roundtrips, and get introduced to important dos and don'ts when coding for performance.
   
