@@ -1,5 +1,5 @@
 ---
-title: Migrate from Business Central on-premises to online
+title: Migrate to Business Central online from on-premises
 description: Get a cloud tenant so you can migrate to the cloud from your on-premises deployment of Business Central.
 
 author: jenolson
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 10/20/2020
+ms.date: 11/09/2020
 ms.author: edupont
 
 ---
@@ -24,10 +24,13 @@ Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solu
 
 To verify that you are running on the version that supports this migration, in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], open the environment that you intend to migrate your data to, and then choose the **Apps** action. Make sure that these apps have the latest updates installed:
 
-* Business Central Cloud Migration – Previous Release
-* Business Central Cloud Migration – Previous Release [Country Code]
-* Business Central Intelligent Cloud
 * Intelligent Cloud Base
+* Business Central Intelligent Cloud
+
+If you are migrating from version 14, 15, or 16, you must also make sure that the following apps are updated:
+
+* Business Central Cloud Migration – Previous Release
+* Business Central Cloud Migration – Previous Release [code for your country-specific version]
 
 For more information, see [Managing Apps](tenant-admin-center-manage-apps.md).  
 
@@ -59,6 +62,11 @@ If you upgrade to a new version of [!INCLUDE [prodshort](../developer/includes/p
 
 > [!IMPORTANT]
 > You must always install, publish, or upgrade the **Intelligent Cloud Base** extension first, and then the product-specific extension or extensions. Also, you must update the extensions both on-premises and online.
+
+Also, at the end of the upgrade, you must make sure to run the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) PowerShell cmdlet to set the application version in the upgraded database. The cmdlet sets the `applicationVersion` field in the `ndo$tenantdatabaseproperty` table so that the migration code can verify that you're migrating from the right version. For more information, see [Post-upgrade tasks](../upgrade/upgrade-unmodified-application-v14-v17.md#post-upgrade-tasks). If the field is blank, the migration cannot run.  
+
+> [!TIP]
+> Before you set up migration, you can test that the `applicationVersion` field is set by using the [Get-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet.
 
 ## See also
 
