@@ -5239,6 +5239,11 @@
     "source_path": "dev-itpro/developer/properties/devenv-enablesqlinformationdebugger-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/readiness/readiness-get-started-appsource.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/readiness-get-started",
+    "redirect_document_id": false
    }
   ]
 }

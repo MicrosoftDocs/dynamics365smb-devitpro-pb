@@ -84,7 +84,13 @@ The next task is to grant the key vault reader application permission to read se
 
 Send an email to [bcappkeyvaultonboard@microsoft.com](mailto:bcappkeyvaultonboard@microsoft.com) to start the onboarding process. Do this step before you publish your updated extension to Partner Center.
 
-The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
+The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults.
+
+Provide the following information in the email:
+- Your AAD tenant ID. Obtain this information from the Azure portal by going to the Azure Active Directory Overview page.
+- Your AppSource extensions, including names and App IDs, that should be enabled to read secrets from your key vaults.
+- Optionally, a screenshot from the Azure portal showing the key vault and its access policies. The screenshot can help Microsoft catch configuration mistakes early in the process.
+
 
 ## See Also  
 
