@@ -90,11 +90,11 @@ This article provides information about the following types of resources:
 
 If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
 
-### <a name="ready2go"></a>Get started with the "Ready to Go" program
+<!--### <a name="ready2go"></a>Get started with the "Ready to Go" program
 
 The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md).  
 
-Get an overview of role-specific training material from Microsoft in the [The "Ready to Go" learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).  
+Get an overview of role-specific training material from Microsoft in the [The "Ready to Go" learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).  -->
 
 ### <a name="capabilities"></a>Learn about current or upcoming capabilities
 
@@ -114,7 +114,7 @@ You can learn about current and coming capabilities through a number of differen
 > |Integrating with Business Central using web services|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/webservices/](webservices/web-services.md)|Use this content to learn how to integrate Business Central with other products by using web services.|
 > |Migrate to Business Central online|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
 > |Features not implemented in on-premises deployments|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
-> |The "Ready to Go" learning catalog|[https://docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
+> |The Business Central learning catalog|[https://docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
 > |E-learning|[aka.ms/bclearn](https://aka.ms/bclearn)|Free [!INCLUDE [prodshort](developer/includes/prodshort.md)] learning paths on Microsoft Learn|
 
 ### <a name="ideas"></a>Share an idea about a new feature you'd like to have
@@ -191,6 +191,6 @@ For more information, see [Take prospects and customers online](deployment/deplo
 [Technical Support](technical-support.md)  
 [Configuring the Help Experience](deployment/configure-help.md)  
 [Migrate Legacy Help](upgrade/migrate-help.md)  
-[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  
+<!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
 [The Business Central Administration Center](administration/tenant-admin-center.md)  
 [Blog post: Find the right resources and provide feedback](https://community.dynamics.com/business/b/financials/archive/2018/12/04/find-the-right-resources-and-provide-feedback)  

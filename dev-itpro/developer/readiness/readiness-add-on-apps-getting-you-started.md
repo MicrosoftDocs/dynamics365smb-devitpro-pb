@@ -100,7 +100,7 @@ Consistency is key!
 It is key that you use the same display name and email throughout your app submission, as you will be asked to provide them in several different touch points. such as for example:
 
 - To sign into Partner Center (and creating your app offer)
-- To enroll and sign in to the Collaborate tool and "Ready to Go" platform
+- To enroll and sign in to the Collaborate tool<!-- and "Ready to Go" platform-->
 
 ## Access to Partner Center
 
@@ -118,7 +118,7 @@ You have 3 options to work develop against the current version of Microsoft Dyna
 - If you want to setup a Docker-based development environment on Azure, you can use [Business Central Azure Sandbox](https://aka.ms/BCSandboxAzure).
 - If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](https://aka.ms/BCSandboxLocal).
 
-## The "Ready to Go" program
+<!--## The "Ready to Go" program
 
 There are several things to keep in mind in building an Add-on app. The **"Ready to Go" program** is designed to support you in bringing your Microsoft Dynamics 365 Business Central offers into Microsoft Appsource. The program encompasses the following three core support options that you can leverage:
 - Element 1: ["Ready to Go" Online learning](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -127,7 +127,7 @@ There are several things to keep in mind in building an Add-on app. The **"Ready
 
 If you want to have more in depth learning resources to get up to speed, then you can get a sneak-peek of the extensive set of **"Ready to Go" resources available in the online learning catalog**. We highly recommend that you either consume the materials which are built for you in the "Ready to Go" online learning catalog or get coached by one of our ISV Development Centers.
 
-Learn more about how you can leverage the "Ready to Go" program's different support options here: [aka.ms/ReadyToGo](https://aka.ms/readytogo).
+Learn more about how you can leverage the "Ready to Go" program's different support options here: [aka.ms/ReadyToGo](https://aka.ms/readytogo).-->
 
 ## Register on Collaborate
 
@@ -212,16 +212,16 @@ Now that you have completed step 1 (cf. setting up your accounts) you can now pr
 
 Find general information on Add-on apps for Business Central here: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo).
 
-### Monthly "Ready to Go" Office Hours call
+### Monthly Office Hours call
 
-"Ready to Go" Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as an FAQ session, where a team of our different experts will be present to answer any technical or marketing related questions that you may have in relation to bringing your app into AppSource. Sign up for the individual calls that you want to participate in here:
+The Business Central Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as an FAQ session, where a team of our different experts will be present to answer any technical or marketing related questions that you may have in relation to bringing your app into AppSource. Sign up for the individual calls that you want to participate in here:
 [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours). 
 
 ### GitHub
 
 Use the GitHub forum to ask, or search, the community and Microsoft experts for questions respectively. Go to: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) now and start asking away.
 
-### Follow "Ready to Go" engagements on social media
+### Follow Business Central engagements on social media
 
 Get insights on what's happening with Business Central – follow us on Twitter and LinkedIn.
 
