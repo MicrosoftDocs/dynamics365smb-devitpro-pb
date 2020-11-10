@@ -77,7 +77,6 @@ As a partner, you can keep on top of current and upcoming capabilities, and you 
 This article provides information about the following types of resources:
 
 * [How to get started as a partner](#partner)
-* [What is the "Ready to go" program](#ready2go)
 * [Where to learn about current and upcoming capabilities](#capabilities)
 * [How to make a feature request](#ideas)
 * [Where to find blog posts](#blog)
