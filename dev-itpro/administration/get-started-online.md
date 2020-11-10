@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Get Started as a Reseller of Business Central Online
 
-If you want to build your business on [!INCLUDE [prodlong](../developer/includes/prodlong.md)] online, you must get set up as a reseller in the Microsoft Partner Center. We also recommend that you join [The "Ready to Go" Program](../developer/readiness/readiness-ready-to-go.md).  
+If you want to build your business on [!INCLUDE [prodlong](../developer/includes/prodlong.md)] online, you must get set up as a reseller in the Microsoft Partner Center. <!--We also recommend that you join [The "Ready to Go" Program](../developer/readiness/readiness-ready-to-go.md).-->  
 
 ## Get set up in the Partner Center
 
@@ -24,9 +24,9 @@ If you want to build your business on [!INCLUDE [prodlong](../developer/includes
 
 [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
-## Join the Ready to Go program
+<!--## Join the Ready to Go program
 
-The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [Ready to Go](../developer/readiness/readiness-ready-to-go.md).  
+The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [Ready to Go](../developer/readiness/readiness-ready-to-go.md).  -->
 
 ## Help your customers get started
 

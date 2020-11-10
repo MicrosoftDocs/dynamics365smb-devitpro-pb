@@ -175,8 +175,8 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### Ready to Go
-#### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The "Ready to Go" Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Get Onboarded as a partner](developer/readiness/readiness-ready-to-go.md)
+#### [The Business Central Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
