@@ -2,7 +2,7 @@
 title: "PaperSourceLastPage Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,35 +23,35 @@ Specifies which paper source to use when printing the last page of the report.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Upper|TODO:Add documentation|
-|Lower|TODO:Add documentation|
-|Middle|TODO:Add documentation|
-|Manual|TODO:Add documentation|
-|Envelope|TODO:Add documentation|
-|ManualFeed|TODO:Add documentation|
-|AutomaticFeed|TODO:Add documentation|
-|TractorFeed|TODO:Add documentation|
-|SmallFormat|TODO:Add documentation|
-|LargeFormat|TODO:Add documentation|
-|LargeCapacity|TODO:Add documentation|
-|Cassette|TODO:Add documentation|
-|FormSource|TODO:Add documentation|
-|Custom1|TODO:Add documentation|
-|Custom2|TODO:Add documentation|
-|Custom3|TODO:Add documentation|
-|Custom4|TODO:Add documentation|
-|Custom5|TODO:Add documentation|
-|Custom6|TODO:Add documentation|
-|Custom7|TODO:Add documentation|
-|Custom8|TODO:Add documentation|
-|Custom9|TODO:Add documentation|
-|Custom10|TODO:Add documentation|
-|Custom11|TODO:Add documentation|
-|Custom12|TODO:Add documentation|
-|Custom13|TODO:Add documentation|
-|Custom14|TODO:Add documentation|
-|Custom15|TODO:Add documentation|
-|Custom16|TODO:Add documentation|
+|Upper|The upper bin of a printer.|
+|Lower|The lower bin of a printer.|
+|Middle|The middle bin of a printer.|
+|Manual|Manually fed paper.|
+|Envelope|An envelope.|
+|ManualFeed|Manually fed envelope.|
+|AutomaticFeed|Automatically fed paper.|
+|TractorFeed|A tractor feed.|
+|SmallFormat|Small-format paper.|
+|LargeFormat|Large-format paper.|
+|LargeCapacity|The large-capacity bin of printer.|
+|Cassette|A paper cassette.|
+|FormSource|The default input bin of printer.|
+|Custom1|A printer-specific paper source.|
+|Custom2|A printer-specific paper source.|
+|Custom3|A printer-specific paper source.|
+|Custom4|A printer-specific paper source.|
+|Custom5|A printer-specific paper source.|
+|Custom6|A printer-specific paper source.|
+|Custom7|A printer-specific paper source.|
+|Custom8|A printer-specific paper source.|
+|Custom9|A printer-specific paper source.|
+|Custom10|A printer-specific paper source.|
+|Custom11|A printer-specific paper source.|
+|Custom12|A printer-specific paper source.|
+|Custom13|A printer-specific paper source.|
+|Custom14|A printer-specific paper source.|
+|Custom15|A printer-specific paper source.|
+|Custom16|A printer-specific paper source.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

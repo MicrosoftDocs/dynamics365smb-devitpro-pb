@@ -2,7 +2,7 @@
 title: "Gesture Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/04/2020
+ms.date: 11/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ Specifies a gesture that runs the action on a device with a touch interface, suc
 |None|No gesture for the action.|
 |LeftSwipe|Swipe in from the right edge of the touch interface.|
 |RightSwipe|Swipe in from the left edge of the touch interface.|
-|ContextMenu|TODO:Add documentation|
+|ContextMenu|The action has a context menu.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
