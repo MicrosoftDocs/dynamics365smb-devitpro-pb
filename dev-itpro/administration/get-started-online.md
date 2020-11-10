@@ -45,7 +45,7 @@ For more information, see [Preparing Demonstration Environments of [!INCLUDE[pro
 
 ## Step 4: Configure the support experience
 
-As a Business Central reselling partner, you are an administrator of your customers' Business Central tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](../technical-support.md).  
+As a Business Central reselling partner, you are an administrator of your customers' Business Central tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft. For more information, see [Technical Support for Business Central](../technical-support.md).  
 
 ## See also
 
