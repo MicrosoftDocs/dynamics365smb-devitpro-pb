@@ -705,8 +705,8 @@
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
-### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
-### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
+### [Table Modeling](powerplatform/powerplat-entity-modeling.md)
+### [Application Lifecycle Management for Solutions that use Virtual Tables](powerplatform/powerplat-app-lifecycle-management.md)
 ### [Business Central and Microsoft Dataverse Admin Reference](powerplatform/powerplat-admin-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
