@@ -46,7 +46,7 @@ There are known limitations with [!INCLUDE[prodshort](../developer/includes/prod
 - Flows are not triggered for virtual tables. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has no way to signal [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] about data change events.
 - Virtual tables cannot be used in Charts. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]s does not support virtual tables being using in Charts.
 - Relations between native and virtual tables. This is currently a limitation of the **Preview** version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables solution.
-- Virtual tables cannot be customized on [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], for example, adding new fields. All modifications to virtual tables must happen in the API exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. But custom APIs can be developed and consumed as virtual tables.  
+- Virtual tables cannot be customized on [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], for example, adding new columns. All modifications to virtual tables must happen in the API exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. But custom APIs can be developed and consumed as virtual tables.  
 - Attachment and Images/Pictures are not supported for virtual tables.
 - BLOB to multiline support is not supported in the preview.
 - Advanced search has some limitations. Each query designed translates to an OData query against [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 

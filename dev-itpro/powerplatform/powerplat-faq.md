@@ -48,13 +48,13 @@ No. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables
 
 This approach is not currently possible in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
-### If I want a default value to be entered in a field during pre-create, will an initValue on the data table then work?
+### If I want a default value to be entered in a column during pre-create, will an initValue on the data table then work?
 
 Yes. Here is the order of calls:
 
 1. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] sends a create or update message.
 2. All the existing logic on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table and backing tables is invoked. This logic includes default value entry that might change values.
-3. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] sends another Retrieve (single) message to get the latest copy of the data, including any fields that default values were entered for.
+3. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] sends another Retrieve (single) message to get the latest copy of the data, including any columns that default values were entered for.
 
 ## See Also
 

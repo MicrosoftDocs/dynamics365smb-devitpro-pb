@@ -24,11 +24,11 @@ Building an app requires capabilities to perform relational modeling between tab
 
 By default, virtual tables for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not exist in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. A user must query the catalog table to view the tables that are available in the linked instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. From the catalog, the user can select one or more tables, and then request that [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] generates the virtual tables. This procedure is explained in later sections.
 
-## table fields
+## Table fields
 
-When a virtual table is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table in the corresponding virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In an ideal case, the total number of fields will be the same in both tables, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For data types that are supported, the field properties in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+When a virtual table is generated for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table, the system tries to create each field in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table in the corresponding virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In an ideal case, the total number of fields will be the same in both tables, unless there is a mismatch in supported data types between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For data types that are supported, the column properties in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] are set based on the properties in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-The rest of this section describes supported and unsupported data types. For more information about fields in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
+The rest of this section describes supported and unsupported data types. For more information about columns in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], see [Columns overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
 
 | Data type in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] | Modeled data type in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] |
 |-------------------------------------|------------------------------------------|
@@ -47,22 +47,22 @@ Fields of the *real* and *long* data types in [!INCLUDE[prodshort](../developer/
 | [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] has higher precision.    | This use case should never occur unless the metadata is out of sync. |
 | [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher precision. | During a read operation, the value is rounded to the closest precision value in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. If the value is edited in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], it is rounded to the closest precision value in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. During a write operation, the value that is specified in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is written, because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports higher precision. |
 | [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] has higher scale.        | Not applicable. |
-| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher scale.     | [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] shows the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] value, even if it exceeds 100 billion. However, there will be a loss of precision. For example, 987,654,100,000,000,000 is shown in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] as "987,654,099,999,999,900". If the value of this field is edited in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] validation throws an error that the value exceeds the maximum value before that value is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. |
+| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has higher scale.     | [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] shows the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] value, even if it exceeds 100 billion. However, there will be a loss of precision. For example, 987,654,100,000,000,000 is shown in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] as "987,654,099,999,999,900". If the value of this column is edited in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] validation throws an error that the value exceeds the maximum value before that value is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. |
 
 The following data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are not supported in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Fields of these data types in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tables will not be made available in the corresponding virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions will not be available for use in the corresponding virtual tables. For more information about OData actions, see the [OData actions](powerplat-table-modeling.md#odata-actions) section later in this topic.
 
 
-## table key - primary key
+## Table key - primary key
 
 In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], tables use the SystemId (GUID) as the primary key, which uniquely identifies a record in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], the SystemId exposed by the table is used as the primary key.
 
-## Primary field
+## Primary column/field
 
-In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], each table must have a primary field. This field must be a single field of the string type. The primary field is used in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the following scenarios:
+In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], each table must have a primary column. This column must be a single column of the string type. The primary column is used in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the following scenarios:
 
-- The default views that are created for an table include the primary field.
-- The quick view form for an table includes the primary field.
-- A lookup to another table is added to a page and shows the data from the primary field.
+- The default views that are created for an table include the primary column.
+- The quick view form for an table includes the primary column.
+- A lookup to another table is added to a page and shows the data from the primary column.
 
 The primary field for a virtual table for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is designed to use **displayname** field on table if present. If this field is not present the first string field is chosen as the primary field.
 
@@ -77,7 +77,7 @@ For example, in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], if ta
 
 The external name of this relationship uses the naming convention **\<relation name\>**. The external name is used to determine the relation in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] when the query that is sent to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is built.
 
-When a relationship is generated for a virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], a new field of the lookup type is also added to the source table. In the preceding example, when the relationship is created, a new lookup field that uses the naming convention **dyn365bc\_\<target\_table\>\_id** is added to source table table A. Because there can be several relations in an table in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the same number of lookup fields (one per related table) will be created in the source virtual table. When this lookup field is added to a page or a view, it will show the primary field value from the related table.
+When a relationship is generated for a virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], a new column of the lookup type is also added to the source table. In the preceding example, when the relationship is created, a new lookup column that uses the naming convention **dyn365bc\_\<target\_table\>\_id** is added to source table table A. Because there can be several relations in an table in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the same number of lookup fields (one per related table) will be created in the source virtual table. When this lookup field is added to a page or a view, it will show the primary field value from the related table.
 
 A relationship in the virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] will be generated only if the related table in the relation already exists as a virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In the preceding example, if table B does not exist as a virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], the relation to table B will not be created in table A when table A is generated as a virtual table. This relation will be added to table A only when table B is generated as a virtual table. Therefore, when a virtual table is generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], validations are done to ensure that only relationships that can be complete and functional are generated in the virtual table that is being generated.
 
@@ -115,7 +115,7 @@ Enums in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are modeled a
 
 If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has multiple companies, the default company must be selected. This can be done either on a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual table configuration page or on a User table page.
 
-Furthermore, every virtual table for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table have a relationship to the cdm\_company table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The cdm\_company table is a native table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup field is also created in the virtual table for the related table (cdm\_company in this case). This lookup field is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A field that is named **Company Code** is also added in the virtual table. This field must be used in programming.
+Furthermore, every virtual table for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table have a relationship to the cdm\_company table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The cdm\_company table is a native table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup column is also created in the virtual table for the related table (cdm\_company in this case). This lookup column is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A column that is named **Company Code** is also added in the virtual table. This column must be used in programming.
 
 ## OData actions
 
