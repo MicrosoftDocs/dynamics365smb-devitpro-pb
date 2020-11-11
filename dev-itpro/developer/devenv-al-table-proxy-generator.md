@@ -13,9 +13,9 @@ author: SusanneWindfeldPedersen
 
 # AL Table Proxy Generator
 
-The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Microsoft Dataverse. When one or more tables are present in Common Data Service, but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified table or tables.
+The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Microsoft Dataverse. When one or more tables are present in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified table or tables.
 
-An integration or proxy table is a table that represents a table in Common Data Service. The integration table includes fields that correspond to columns in the Common Data Service table. The integration table acts as a link or connector between the [!INCLUDE[prodshort](includes/prodshort.md)] table and the Common Data Service table.
+An integration or proxy table is a table that represents a table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The integration table includes fields that correspond to columns in the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. The integration table acts as a link or connector between the [!INCLUDE[prodshort](includes/prodshort.md)] table and the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.
 
 The **AL Table Proxy Generator** tool is available with the **AL Language** extension. Look for the **altpgen.exe** tool in the equivalent folder of `c:\users\<username>\.vscode\extensions\<al extension version>\bin`. 
 
@@ -39,14 +39,14 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |---------|-----------|
 |*Project*| The AL project folder to create the table(s) in.|
 |*PackageCachePath*| The AL project cache folder for symbols. <br> **Note:** It is important that the latest symbols have been downloaded because these are used for comparison when the tool runs. |
-|*ServiceURI*| The server URL for Common Data Service. For example, `https://tenant.crm.dynamics.com`.|
+|*ServiceURI*| The server URL for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For example, `https://tenant.crm.dynamics.com`.|
 |*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying tables](devenv-al-table-proxy-generator.md#specifying-tables). |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
 |*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`. <br><br>**Note:** If unspecified, the system looks both for `CDS` and `CRM` tables .  |
 
-## Specifying entities
+## Specifying tables
 
-The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* table relationships in Common Data Service. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
+The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* table relationships in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
 
 ### Related tables
 
@@ -66,4 +66,4 @@ The following example starts the process for creating a new integration table in
 
 ## See Also
 
-[Custom Integration with Common Data Service](../administration/administration-custom-cds-integration.md)  
+[Custom Integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md)  

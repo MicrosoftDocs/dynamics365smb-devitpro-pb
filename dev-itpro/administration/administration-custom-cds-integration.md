@@ -41,7 +41,7 @@ This walkthrough requires the following:
     - Worker table.
 
     > [!NOTE]  
-    > To get the worker table you must install the Talent Core HR solution. For more information, see [Common Data Service tables](/dynamics365/talent/corehrentities#worker-tables).
+    > To get the worker table you must install the Talent Core HR solution. For more information, see [Microsoft Dataverse tables](/dynamics365/talent/corehrentities#worker-tables).
     - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
     - The user name and password of a user account that has full permissions to add and modify tables.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
@@ -67,7 +67,7 @@ To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tab
     ```powershell
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
-    -serviceuri:<Common Data Service server URL>
+    -serviceuri:<Microsoft Dataverse server URL>
     -entities:cds_worker
     -baseid:50000
     ```
@@ -109,7 +109,7 @@ page 50001 "CDS Worker List"
                 Caption = 'Create in Business Central';
                 Promoted = true;
                 PromotedCategory = Process;
-                ToolTip = 'Generate the table from the coupled Common Data Service worker.';
+                ToolTip = 'Generate the table from the coupled Microsoft Dataverse worker.';
 
                 trigger OnAction()
                 var
@@ -243,7 +243,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                     Visible = true;
                     Image = Refresh;
                     Enabled = CDSIsCoupledToRecord;
-                    ToolTip = 'Send or get updated data to or from Common Data Service.';
+                    ToolTip = 'Send or get updated data to or from Microsoft Dataverse.';
 
                     trigger OnAction()
                     var
@@ -271,7 +271,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                 {
                     Caption = 'Coupling';
                     Image = LinkAccount;
-                    ToolTip = 'Create, change, or delete a coupling between the Business Central record and a Common Data Service row.';
+                    ToolTip = 'Create, change, or delete a coupling between the Business Central record and a Microsoft Dataverse row.';
 
                     action(ManageCDSCoupling)
                     {
@@ -279,7 +279,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                         ApplicationArea = All;
                         Visible = true;
                         Image = LinkAccount;
-                        ToolTip = 'Create or modify the coupling to a Common Data Service Worker.';
+                        ToolTip = 'Create or modify the coupling to a Microsoft Dataverse Worker.';
 
                         trigger OnAction()
                         var
@@ -295,7 +295,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
                         Visible = true;
                         Image = UnLinkAccount;
                         Enabled = CDSIsCoupledToRecord;
-                        ToolTip = 'Delete the coupling to a Common Data Service Worker.';
+                        ToolTip = 'Delete the coupling to a Microsoft Dataverse Worker.';
 
                         trigger OnAction()
                         var
@@ -499,7 +499,7 @@ During the synchronization process, certain events are published and raised by c
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 > [!TIP]  
-> In order to have Company ID mapping for custom tables just like the base Common Data Service tables , users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
+> In order to have Company ID mapping for custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables , users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
 > ```al
 >   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Rec. Synch. Invoke", 'OnBeforeInsertRecord', '', false, false)]
 >   local procedure HandleOnBeforeInsertRecord(SourceRecordRef: RecordRef; DestinationRecordRef: RecordRef)
@@ -510,7 +510,7 @@ For more information about how to subscribe to events, see [Subscribing to Event
 >       CDSIntegrationMgt.SetCompanyId(DestinationRecordRef);
 >   end;
 >``` 
-For more information on base Common Data Service tables, see [Data Ownership Models](/dynamics365/business-central/admin-cds-company-concept).
+For more information on base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, see [Data Ownership Models](/dynamics365/business-central/admin-cds-company-concept).
 
 ## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
 

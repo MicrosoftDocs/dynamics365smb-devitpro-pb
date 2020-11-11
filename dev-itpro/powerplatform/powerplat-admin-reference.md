@@ -1,6 +1,6 @@
 ---
-title: "Business Central and Common Data Service admin reference"
-description: "The admin reference for working with Business Central and Common Data Service entities"
+title: "Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference"
+description: "The admin reference for working with Business Central and Microsoft Dataverse tables"
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen
@@ -11,20 +11,20 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Business Central and Common Data Service Admin Reference
+# Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
 > [!IMPORTANT]  
-> This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and service update 189 for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-This topic provides step-by-step instructions on how to set up and configure virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Common Data Service.
+This topic provides step-by-step instructions on how to set up and configure virtual entities for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Getting the solution
 
-The following solutions are installed in Common Data Service once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities is installed.
+The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities is installed.
 
-The following solutions are installed in Common Data Service:
+The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]:
 
 - **Dynamics365Company** - This adds the **cdm_company** entity, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entities. All communication to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual entity feature.
@@ -34,13 +34,13 @@ The following solutions are installed in Common Data Service:
 
 ## Authentication and authorization
 
-After the solutions are installed in the Common Data Service environment, connection can be set up to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment. *Both environments have to be in the same tenant*.  
+After the solutions are installed in the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment, connection can be set up to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment. *Both environments have to be in the same tenant*.  
 
-The next step in the process is to provide Common Data Service with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment and company to connect to. The following steps walk through this part of the process.
+The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment and company to connect to. The following steps walk through this part of the process.
 
-0. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], go to the page 'AAD Applications' and toggle the app 'Dynamics 365 Business Central for Virtual Entities' to **Enabled**. This will allow Common Data Service to communicate with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+0. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], go to the page 'AAD Applications' and toggle the app 'Dynamics 365 Business Central for Virtual Entities' to **Enabled**. This will allow [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-1. In Common Data Service, go to the entity **Business Central Virtual Data Source Configuration**.
+1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to the entity **Business Central Virtual Data Source Configuration**.
 
 2. Select and edit the data source named “[!INCLUDE[prodshort](../developer/includes/prodshort.md)]”.
 
@@ -52,9 +52,9 @@ The next step in the process is to provide Common Data Service with the [!INCLUD
 
 ## Making virtual entities visible
 
-Due to the large number of OData enabled entities available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
+Due to the large number of OData enabled entities available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], by default, the entities are not available as virtual entities in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The following steps allow for enabling entities to be virtual, as needed.
 
-1. In Common Data Service, go to **Data -> Entities** and search for *Available Business Central Entity*. Make sure to search for All and not just Default.
+1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> Entities** and search for *Available Business Central Entity*. Make sure to search for All and not just Default.
 
 2. Choose **Data* in the horizontal menu to view the available data.
 
@@ -64,7 +64,7 @@ Due to the large number of OData enabled entities available in [!INCLUDE[prodsho
 
 ## Refreshing virtual entity metadata
 
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This will sync the latest entity definition from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Common Data Service and update the virtual entity.
+The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This will sync the latest entity definition from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and update the virtual entity.
 
 ## Referencing virtual entities
 
@@ -72,7 +72,7 @@ The virtual entities are all generated in the **MicrosoftBusinessCentralERPVE** 
 
 To consume virtual entities:
 
-1. Create a separate solution as usual in Common Data Service, which will contain the consuming logic.
+1. Create a separate solution as usual in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], which will contain the consuming logic.
 
 2. Select **Entities \> Add Existing**. Select the virtual entity that you want to reference from the list.
 
