@@ -1,6 +1,6 @@
 ---
-title: Custom Integration with Common Data Service
-description: Learn how to integrate your extension with Common Data Service.
+title: Custom Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]
+description: Learn how to integrate your extension with Microsoft Dataverse.
 author: bholtorf
 ms.custom: na
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.author: bholtorf
 ms.date: 10/29/2020
 ---
 
-# Customizing an Integration with Common Data Service
+# Customizing an Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]
 
 This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
