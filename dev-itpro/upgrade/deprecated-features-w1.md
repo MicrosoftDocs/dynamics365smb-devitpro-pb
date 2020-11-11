@@ -44,7 +44,7 @@ The following feature will be Removed with [!INCLUDE[prodshort](../developer/inc
 
 |Moved, Removed, or Replaced?|	Why?|
 |----------------------------|------|
-|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. It's recommended that integrations move to v2.0 of the standard APIs.|
+|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. It's recommended that integrations move to v2.0 of the Automation APIs.|
 
 
 ## Deprecated Features in 2021 release wave 1
