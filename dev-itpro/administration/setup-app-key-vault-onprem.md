@@ -168,7 +168,7 @@ At this point, you can run your extensions that use key vault secrets to read se
 
 ## See Also  
 
-[Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md)
+[Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md)  
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Authentication and Credential Types](Users-Credential-Types.md)  
