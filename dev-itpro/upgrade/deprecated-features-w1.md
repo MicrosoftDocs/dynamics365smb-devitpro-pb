@@ -26,6 +26,18 @@ The next sections give a brief description of the deprecated features, state wha
 |Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
 
+## Deprecated Features in 2021 release wave 2
+
+### Standard APIs, Beta version
+
+The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced? |	Why?|
+|-----------------------------|-----|
+|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. Its recommended that integrations move to v2.0 of the standard APIs.|
+
+
 ## Deprecated Features in 2021 release wave 1
 
 ### Expose UI pages as SOAP endpoints (Warning)
