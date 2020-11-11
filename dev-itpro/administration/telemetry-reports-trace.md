@@ -63,10 +63,10 @@ The custom dimensions that are of particular interest for this operation include
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
@@ -108,10 +108,10 @@ The following table explains the general dimensions of the **Failed report gener
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
 |result|Specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
 |serverExecutionTime|Specifies the amount of time used by service on the request. The time has the format hh:mm:ss.sssssss.|
@@ -156,10 +156,10 @@ The following table explains the general dimensions of the **Cancellation report
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|eventId|**RT0007**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |extensionId|Specifies the appID of the extension that the report object belongs to.|
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|eventId|**RT0007**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
 
 ### <a name="reportcancellation"></a>Analyzing report cancellations
@@ -168,10 +168,6 @@ The cancellation messages indicate events that caused the report to be canceled.
 
 > [!NOTE]
 > The service evaluates cancellation events in a specific order, and the evaluation is done every five seconds. For more information, see [Report Generation and Cancellation Flow](report-cancellation.md).
-
-#### The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent
-
-This message occurs when a report is being canceled, but a COMMIT in AL was made. The report will still be canceled. This pattern isn't recommended. Reconsider the report design.
 
 #### Cancellation event received. Requesting cancellation of the action.
 
@@ -192,6 +188,44 @@ This message occurs when a report that based on a Word layout takes longer to ge
 #### The number of processed rows exceeded ({0} rows) the maximum number of rows ({1} rows). Requesting cancellation of the action.
 
 The service is configured to cancel reports if they generate more than a set number of rows. With Business Central online, you can't change this threshold. With Business Central on-premises, you change the threshold by setting the **Max Rows** parameter on the [!INCLUDE[server](../developer/includes/server.md)] instance. There's no limit on rows for on-premises by default. For more information, see [Configuring Business Central Server](configure-server-instance.md#Reports).
+
+## <a name="commit"></a>Report cancelled but a commit occurred
+
+This operation occurs when the report dataset generation was canceled but a COMMIT operation occurred before the cancellation. This pattern isn't recommended. Reconsider the report design.
+
+### General dimensions
+
+The following table explains the general dimensions of the **Report cancelled but a commit occurred** operation.
+
+|Dimension|Description or value|
+|---------|-----|
+|message|The report \<ID\> \'\<Name\>' is being canceled, but a COMMIT() has been performed. This can lead to data inconsistency if the report is not idempotent|
+|severityLevel|**2**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|-----------|
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|alObjectId|Specifies the ID of the report object that was run.|
+|alObjectName|Specifies the name of the report object that was run.|
+|alObjectType|**Report**.|
+|alStackTrace|The stack trace in AL.|
+|cancelReason|The reason why the report was cancelled|
+|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|component|**Dynamics 365 Business Central Server**.|
+|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|eventId|**RT0011**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
+|extensionId|Specifies the appID of the extension that the report object belongs to.|
+|extensionName|Specifies the name of the extension that the report object belongs to.|
+|extensionPublisher|Specifies the name of the extension publisher that the report object belongs to.|
+|extensionVersion|Specifies the version of the extension that the report object belongs to.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+
 
 
 <!--

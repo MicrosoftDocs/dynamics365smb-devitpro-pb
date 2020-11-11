@@ -38,7 +38,7 @@ AutoFormatType = 2;
 ## Remarks  
 These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.  
 
-## Example
+## Example 1
 
 The following example uses **AutoFormatType** and **AutoFormatExpression** property to set the format of decimal values to USD.
 
@@ -58,7 +58,7 @@ AutoFormatType = 1;
 ```
 For example, this will result in a value like 7,564.
 
-## Example
+## Example 2
 
 The following example is similar to the previous example, except it adds a $ sign before the amount.
 
@@ -69,7 +69,7 @@ AutoFormatType = 10;
 
 For example, this will result in a value like $7,564.00.
 
-## Example
+## Example 3
 
 This example prefixes the decimal value with a $, includes a thousand separator, and has a maximum of two decimal places, such as $76,453.21:
 
@@ -78,7 +78,7 @@ AutoFormatType = 1;
 AutoFormatExpression = '$<precision, 2:2><standard format, 0>;
 ```
 
-## Example
+## Example 4
 This example sets the decimal precision to a minimum of 1 decimal and a maximum of 3.
 
 ```AL

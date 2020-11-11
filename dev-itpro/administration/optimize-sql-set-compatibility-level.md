@@ -37,4 +37,4 @@ You change the compatibility level of the database by using SQL Server Managemen
 
 ## See Also  
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)    
-[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)
+[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)'

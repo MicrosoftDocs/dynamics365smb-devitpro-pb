@@ -9,6 +9,7 @@
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
 <!--#### What the partner's responsibilities are -->
+### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
@@ -16,16 +17,18 @@
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-### Get started with building apps
+<!--### Get started with building apps
 #### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 #### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
+#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
-#### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### Deployment
+##### [Overview](embedapps\embed-app-deployment-overview.md)
+##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Using Application Family](deployment/embed-app-using-application-family.md)
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
@@ -38,9 +41,9 @@
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ## Sell
-### [Become a Reseller](/dynamics365/business-central/product-sell?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.md)
 ### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
@@ -172,9 +175,9 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### Ready to Go
-#### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The "Ready to Go" Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+#### [Get Onboarded as a partner](developer/readiness/readiness-ready-to-go.md)
+#### [The Business Central Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
@@ -268,6 +271,7 @@
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
 ### Partial Records
 #### [Using Partial Records](developer/devenv-partial-records.md)
 #### [FAQ](developer/devenv-partial-records-faq.md)
@@ -757,6 +761,7 @@
 #### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
 #### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
 #### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
+#### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -781,6 +786,7 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
+#### [Reducing Database Size](administration/database-reduce-data.md)
 ### Business Central Mobile App
 #### [Introducing the Mobile App](developer/devenv-introducing-business-central-mobile-app.md)
 #### [Preparing For and Installing the Mobile App](deployment/install-business-central-app.md)
@@ -908,6 +914,7 @@
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
