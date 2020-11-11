@@ -1,6 +1,6 @@
 ---
-title: "Enabling Common Data Service Tables for Extension Development"
-description: "This topic explains how to enable Common Data Service tables for the extension development process."
+title: "Enabling Microsoft Dataverse Tables for Extension Development"
+description: "This topic explains how to enable Microsoft Dataverse tables for the extension development process."
 ms.custom: na
 ms.date: 10/29/2020
 ms.reviewer: na
@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Integrating Common Data Service for Extension Development
+# Integrating Microsoft Dataverse for Extension Development
 
 Develop extensions and streamline the workflow by synchronizing Common Data Service data with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 

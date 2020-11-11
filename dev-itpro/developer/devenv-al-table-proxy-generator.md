@@ -1,6 +1,6 @@
 ---
 title: "AL Table Proxy Generator"
-description: "Tool for creating integration or proxy tables for integration with Common Data Service from Business Central"
+description: "Tool for creating integration or proxy tables for integration with Microsoft Dataverse from Business Central"
 ms.custom: na
 ms.date: 10/29/2020
 ms.reviewer: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # AL Table Proxy Generator
 
-The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Common Data Service. When one or more tables are present in Common Data Service, but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified table or tables.
+The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Microsoft Dataverse. When one or more tables are present in Common Data Service, but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified table or tables.
 
 An integration or proxy table is a table that represents a table in Common Data Service. The integration table includes fields that correspond to columns in the Common Data Service table. The integration table acts as a link or connector between the [!INCLUDE[prodshort](includes/prodshort.md)] table and the Common Data Service table.
 
