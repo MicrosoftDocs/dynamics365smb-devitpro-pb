@@ -27,6 +27,10 @@ We define license permissions (per object) in the **Entitlements** table. Entitl
 
 This means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Azure AD and then load the corresponding entitlements as license permissions.  
 
+> [!NOTE]
+> For more information about the different types of licenses and how licensing works in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see the Dynamics 365
+Licensing Guide, which you can download from [https://go.microsoft.com/fwlink/?LinkId=866544](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 ## Entitlements and user groups
 
 *Entitlements* are permissions that describe which objects in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] a customer is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft.  
