@@ -148,7 +148,7 @@ To complete this task, you'll need the user name of the service account that run
 
     You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)]](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       
-    To use the Set-NAVServerConfiguration cmdlet, start the [[!INCLUDE[admintool](../developer/includes/admintool.md)] as an administrator, and run the following commands one at a time. Replace brackets with your own values. 
+    To use the Set-NAVServerConfiguration cmdlet, start the [!INCLUDE[adminsehll](../developer/includes/adminshell.md)] as an administrator, and run the following commands one at a time. Replace brackets with your own values. 
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreLocation -KeyValue <certificate store location>    
