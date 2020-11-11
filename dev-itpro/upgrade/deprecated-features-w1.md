@@ -3,7 +3,7 @@ title: "Deprecated Features in W1"
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 11/05/2020
+ms.date: 11/11/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,16 @@ The following feature will be Removed with [!INCLUDE[prodshort](../developer/inc
 
 |Moved, Removed, or Replaced? |	Why?|
 |-----------------------------|-----|
-|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. Its recommended that integrations move to v2.0 of the standard APIs.|
+|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
+
+### Automation APIs, Beta version
+
+The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced?|	Why?|
+|----------------------------|------|
+|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
 
 
 ## Deprecated Features in 2021 release wave 1
