@@ -41,7 +41,7 @@ When you set the **CaptionClass property** on a field, users can configure the c
 
 The `Caption Class` (codeunit 42) in the system application exposes two events; the `OnResolveCaptionClass` and the `OnAfterCaptionClassResolve` event.
 
-For more information, see [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
+For more information, see the system [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
 
 The Caption Class raises an `OnResolveCaptionClass` event for any other value of <Caption Area>. 
 
