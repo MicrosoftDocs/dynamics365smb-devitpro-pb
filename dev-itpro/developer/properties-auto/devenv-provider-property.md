@@ -2,7 +2,7 @@
 title: "Provider Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Provider Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets the provider for a FactBox. This property enables you to create a link from a Repeater or any other type of control to a Factbox. It could also be used to link two FactBoxes.
 
 ## Applies to

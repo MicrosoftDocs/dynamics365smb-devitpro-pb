@@ -2,7 +2,7 @@
 title: "Ellipsis Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Ellipsis Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets a value that specifies whether an ellipsis (...) is appended to the caption on a command button or menu item. An ellipsis tells the user that other choices will appear if the command button or menu item are selected.
 
 ## Applies to

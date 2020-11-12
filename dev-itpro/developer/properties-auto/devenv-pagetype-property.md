@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PageType Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets the type of page to create.
 
 ## Applies to

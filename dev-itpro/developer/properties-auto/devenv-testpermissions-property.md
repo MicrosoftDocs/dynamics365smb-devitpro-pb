@@ -2,7 +2,7 @@
 title: "TestPermissions Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/04/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestPermissions Property
+> **Version**: _Available from runtime version 1.0._
+
 Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.
 
 ## Applies to

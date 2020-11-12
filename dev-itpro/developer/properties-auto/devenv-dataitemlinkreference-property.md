@@ -2,7 +2,7 @@
 title: "DataItemLinkReference Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DataItemLinkReference Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets the parent data item to which a child (indented) data item is linked. After you specify the DataItemLinkReference value, use the DataItemLink Property (Reports) to specify a field from each data item on which to base the link.
 
 ## Applies to

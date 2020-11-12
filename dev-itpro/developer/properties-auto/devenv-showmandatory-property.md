@@ -2,7 +2,7 @@
 title: "ShowMandatory Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ShowMandatory Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets a value that specifies whether users must enter a value in the selected field or text box. The field is marked on the page with a red asterisk and does not enforce any validation. Once the field is filled, the red asterisk disappears. The ShowMandatory property only controls the UI and overrides any asterisk marking of the NotBlank Property.
 
 The ShowMandatory property can be specified as true, false, or as an expression.

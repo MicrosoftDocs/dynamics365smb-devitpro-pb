@@ -2,7 +2,7 @@
 title: "ToolTip Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ToolTip Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets whether tooltips are provided for the given control, such as a field or action. The tooltip value is taken from the ToolTipML Property if this property is set.
 
 ## Applies to

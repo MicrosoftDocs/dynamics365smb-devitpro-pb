@@ -2,7 +2,7 @@
 title: "OptionCaptionML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # OptionCaptionML Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets the strings that are displayed to the user for selecting an option. OptionCaptionML is only used if the field or variable has an OptionMembers Property.
 
 ## Applies to
