@@ -13,6 +13,8 @@ author: SusanneWindfeldPedersen
 ---
 
 # DataItemLink Property
+> **Version**: _Available from runtime version 1.0._
+
 The DataItemLink property is applicable to the following types: 
 - [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md)  
 - [DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)

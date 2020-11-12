@@ -13,6 +13,7 @@ author: jswymer
 ---
 
 # Width Property
+> **Version**: _Available from runtime version 1.0._
 
 Sets the width of a field when it appears as a column in a list. The width is specified by an integer that corresponds to the number of characters. <!-- and must be a fixed number when specified. --> 
   

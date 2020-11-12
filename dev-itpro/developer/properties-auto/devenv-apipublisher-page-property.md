@@ -12,6 +12,8 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIPublisher Property (Page)
+> **Version**: _Available from runtime version 1.0._
+
 Sets the publisher of the API endpoint the page is exposed in. The syntax for providing a publisher is illustrated in the example below:
 
 ## Applies to  

@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # SubType Property (Codeunit)
+> **Version**: _Available from runtime version 1.0._
 
 Sets the codeunit to method as a normal, test, test runner, or upgrade codeunit.  
   

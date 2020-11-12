@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # SourceTableView Property
+> **Version**: _Available from runtime version 1.0._
 
 Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.  
   
