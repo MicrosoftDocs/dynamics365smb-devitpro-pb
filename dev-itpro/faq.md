@@ -44,6 +44,12 @@ Below find some of our top-most frequently asked questions for developer and ITP
 
 You can get an overview of new and upcoming changes in the [Dynamics 365 release plans](https://aka.ms/businessappsreleasenotes).  
 
+## What are the service level agreements?
+
+[!INCLUDE [service-terms](includes/service-terms.md)]
+
+For more information, see [Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance).  
+
 For information about lifecycle support for [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, see [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md).  
 
 ## How often are production databases backed up?
