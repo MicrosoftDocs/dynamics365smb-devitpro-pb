@@ -25,13 +25,13 @@ Specifies the table type.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Normal|Specifies the table type used for Dynamics 365 Business Central.|
-|CRM|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales.|
-|ExternalSQL|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database.|
-|Exchange|This is for internal use only.|
-|MicrosoftGraph|This is for internal use only.|
-|CDS|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
-|Temporary|Specifies the table as an in-memory table used to store temporary data.|
+|**Normal**|Specifies the table type used for Dynamics 365 Business Central.|
+|**CRM**|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales.|
+|**ExternalSQL**|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database.|
+|**Exchange**|This is for internal use only.|
+|**MicrosoftGraph**|This is for internal use only.|
+|**CDS**|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
+|**Temporary**|Specifies the table as an in-memory table used to store temporary data.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

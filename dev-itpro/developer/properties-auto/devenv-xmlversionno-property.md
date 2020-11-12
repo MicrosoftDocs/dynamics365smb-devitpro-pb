@@ -25,8 +25,8 @@ Set which version of XML the XML document conforms to. Two options are available
 
 |Value|Description|
 |-----------|---------------------------------------|
-|V10|Version 1.0. This is the default value.|
-|V11|Version 1.1.|
+|**V10**|Version 1.0. This is the default value.|
+|**V11**|Version 1.1.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

@@ -25,10 +25,10 @@ Sets the data type that you want to allow in a code field.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Varchar|The data type is Varchar. This is the default value.|
-|Integer|The data type is Integer.|
-|Variant|The data type is Variant|
-|BigInteger|The data type is BigInteger.|
+|**Varchar**|The data type is Varchar. This is the default value.|
+|**Integer**|The data type is Integer.|
+|**Variant**|The data type is Variant|
+|**BigInteger**|The data type is BigInteger.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 

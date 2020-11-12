@@ -25,9 +25,9 @@ Sets the class of the field.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Normal|A data entry field.|
-|FlowField|A calculated field.|
-|FlowFilter|To compute the results of FlowFields.|
+|**Normal**|A data entry field.|
+|**FlowField**|A calculated field.|
+|**FlowFilter**|To compute the results of FlowFields.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

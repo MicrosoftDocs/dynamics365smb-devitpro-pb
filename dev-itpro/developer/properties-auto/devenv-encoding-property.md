@@ -25,9 +25,9 @@ Sets a value that specifies which system is applied to the XmlPort for character
 
 |Value|Description|
 |-----------|---------------------------------------|
-|UTF8|Use UTF16 encoding system. This is the default value.|
-|UTF16|Use UTF16 encoding system.|
-|ISO88592|Use ISO88592 encoding system.|
+|**UTF8**|Use UTF16 encoding system. This is the default value.|
+|**UTF16**|Use UTF16 encoding system.|
+|**ISO88592**|Use ISO88592 encoding system.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

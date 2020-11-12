@@ -27,8 +27,8 @@ Sets the minimum number of times that an element can occur.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Zero|There is no minimum number of occurences.|
-|Once|The element must occur at least once.|
+|**Zero**|There is no minimum number of occurences.|
+|**Once**|The element must occur at least once.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

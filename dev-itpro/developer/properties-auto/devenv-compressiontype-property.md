@@ -25,10 +25,10 @@ Specifies the compression type used.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Unspecified|Use the compression type that is specified externally on the table, for example, in SQL Server.|
-|None|Do not use compression on the table.|
-|Row|Compress the table on a row-level.|
-|Page|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
+|**Unspecified**|Use the compression type that is specified externally on the table, for example, in SQL Server.|
+|**None**|Do not use compression on the table.|
+|**Row**|Compress the table on a row-level.|
+|**Page**|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks

@@ -26,12 +26,12 @@ Indicates whether the system will clear a range of numbers as it formats them.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|DontBlank|Not clear any numbers. This is the default value.|
-|BlankNeg|Clear negative numbers.|
-|BlankNegAndZero|Clear negative numbers and zero.|
-|BlankZero|Clear numbers equal to zero.|
-|BlankZeroAndPos|Clear positive numbers and zero.|
-|BlankPos|Clear positive numbers.|
+|**DontBlank**|Not clear any numbers. This is the default value.|
+|**BlankNeg**|Clear negative numbers.|
+|**BlankNegAndZero**|Clear negative numbers and zero.|
+|**BlankZero**|Clear numbers equal to zero.|
+|**BlankZeroAndPos**|Clear positive numbers and zero.|
+|**BlankPos**|Clear positive numbers.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax  
 ```AL

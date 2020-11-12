@@ -25,8 +25,8 @@ Sets the data that is being imported or exported as XML data types or as the sta
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Legacy|The data uses the standard AL data types.|
-|Xml|The data uses the standard XML data types.|
+|**Legacy**|The data uses the standard AL data types.|
+|**Xml**|The data uses the standard XML data types.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

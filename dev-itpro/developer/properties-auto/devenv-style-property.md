@@ -26,17 +26,17 @@ Sets a value that determines how text in a field on a page is formatted. For fie
 
 |Value|Description|
 |-----------|---------------------------------------|
-|None|None|
-|Standard|Standard|
-|StandardAccent|Blue|
-|Strong|Bold|
-|StrongAccent|Blue + Bold|
-|Attention|Red + Italic|
-|AttentionAccent|Blue + Italic|
-|Favorable|Bold + Green|
-|Unfavorable|Bold + Italic + Red|
-|Ambiguous|Yellow|
-|Subordinate|Grey|
+|**None**|None|
+|**Standard**|Standard|
+|**StandardAccent**|Blue|
+|**Strong**|Bold|
+|**StrongAccent**|Blue + Bold|
+|**Attention**|Red + Italic|
+|**AttentionAccent**|Blue + Italic|
+|**Favorable**|Bold + Green|
+|**Unfavorable**|Bold + Italic + Red|
+|**Ambiguous**|Yellow|
+|**Subordinate**|Grey|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  

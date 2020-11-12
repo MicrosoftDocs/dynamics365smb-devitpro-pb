@@ -25,8 +25,8 @@ Sets the type of query to create.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Normal|It is a normal query.|
-|API|The query is of the type API.|
+|**Normal**|It is a normal query.|
+|**API**|The query is of the type API.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

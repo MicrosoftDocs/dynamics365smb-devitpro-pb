@@ -25,8 +25,8 @@ Specify the multiplicity of the part.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|ZeroOrOne|Zero or one entity|
-|Many|Any number of entities.|
+|**ZeroOrOne**|Zero or one entity|
+|**Many**|Any number of entities.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

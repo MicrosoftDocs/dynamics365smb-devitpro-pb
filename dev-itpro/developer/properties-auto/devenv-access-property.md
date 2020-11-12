@@ -30,8 +30,8 @@ Sets the object accessibility level, which controls whether the object can be us
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Public|The object can be accessed by any other code in the same module and in other modules that references it.|
-|Internal|The object can be accessed only by code in the same module, but not from another module.|
+|**Public**|The object can be accessed by any other code in the same module and in other modules that references it.|
+|**Internal**|The object can be accessed only by code in the same module, but not from another module.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ### Table field level

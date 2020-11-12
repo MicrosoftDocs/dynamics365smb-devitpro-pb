@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # QueryCategory Property
 > **Version**: _Available from runtime version 3.0._
 
-Sets the query category that this page will support.
+Used to indicate a given query can be made available as views displayed on certain main entity lists. On queries, the QueryCategory property specifies one or more query categories that the object supports. On pages, QueryCategory specifies the query category that the page supports.
 
 ## Applies to
 -   Page

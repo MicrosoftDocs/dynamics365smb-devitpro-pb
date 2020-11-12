@@ -25,7 +25,7 @@ Specifies if the layout is wide.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Wide|Sets the `cuegroup` control to the wide layout|
+|**Wide**|Sets the `cuegroup` control to the wide layout|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

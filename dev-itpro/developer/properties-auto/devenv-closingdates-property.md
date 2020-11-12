@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # ClosingDates Property
 > **Version**: _Available from runtime version 1.0._
 
-Sets a value that determines whether users can enter a closing date in this field. The default value is No.
+Sets a value that determines whether users can enter a closing date in this field. The default value is False.
 
 ## Applies to
 -   Field

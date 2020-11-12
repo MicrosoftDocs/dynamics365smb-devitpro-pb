@@ -25,10 +25,10 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 
 |Value|Description|
 |-----------|---------------------------------------|
-|MSDOS|Use MS-DOS encoding format. It is the default value.|
-|UTF8|Use UTF-8 encoding format.|
-|UTF16|Use UTF-16 encoding format.|
-|WINDOWS|Use Windows encoding format.|
+|**MSDOS**|Use MS-DOS encoding format. It is the default value.|
+|**UTF8**|Use UTF-8 encoding format.|
+|**UTF16**|Use UTF-16 encoding format.|
+|**WINDOWS**|Use Windows encoding format.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 For more information, see [[File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md).  

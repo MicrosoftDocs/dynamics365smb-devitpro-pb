@@ -54,9 +54,9 @@ Marks whether the table, field, or key is or will become obsolete (deprecated).
 
 |Value|Description|
 |-----------|---------------------------------------|
-|No|Not obsolete. This is the normal/default setting.|
-|Pending|Will become obsolete in a future version.|
-|Removed|Has been made obsolete.|
+|**No**|Not obsolete. This is the normal/default setting.|
+|**Pending**|Will become obsolete in a future version.|
+|**Removed**|Has been made obsolete.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

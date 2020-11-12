@@ -25,10 +25,10 @@ Specifies the type of access to the original table field in the external databas
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Full|Allows the full access to the external database.|
-|Insert|Allows the insert access to the table fields in the external database.|
-|Modify|Allows the Modify access to the external database.|
-|Read|Allows the read-only access to the external database.|
+|**Full**|Allows the full access to the external database.|
+|**Insert**|Allows the insert access to the table fields in the external database.|
+|**Modify**|Allows the Modify access to the external database.|
+|**Read**|Allows the read-only access to the external database.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

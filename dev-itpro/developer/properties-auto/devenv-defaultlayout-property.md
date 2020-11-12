@@ -25,8 +25,8 @@ Specifies whether the report uses the built-in RDLC or Word report layout by def
 
 |Value|Description|
 |-----------|---------------------------------------|
-|RDLC|Specifies the built-in RDL layout as the default layout.|
-|Word|Specifies the built-in Word layout as the default layout.|
+|**RDLC**|Specifies the built-in RDL layout as the default layout.|
+|**Word**|Specifies the built-in Word layout as the default layout.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

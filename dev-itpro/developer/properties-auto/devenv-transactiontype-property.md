@@ -26,11 +26,11 @@ Sets the transaction type.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|UpdateNoLocks|All read operations are performed with READ UNCOMMITTED locking until the table is either modified by a write operation or locked with the **LOCKTABLE** method.|
-|Update|All read operations are performed with REPEATABLE READ locking until the table is either modified by any write operation or locked with the **LOCKTABLE** method.|
-|Snapshot|ll read operations are performed with REPEATABLE READ locking.|
-|Browse|All read operations are performed with READ UNCOMMITTED locking.|
-|Report|Maps to the **Browse** transaction type.|
+|**UpdateNoLocks**|All read operations are performed with READ UNCOMMITTED locking until the table is either modified by a write operation or locked with the **LOCKTABLE** method.|
+|**Update**|All read operations are performed with REPEATABLE READ locking until the table is either modified by any write operation or locked with the **LOCKTABLE** method.|
+|**Snapshot**|ll read operations are performed with REPEATABLE READ locking.|
+|**Browse**|All read operations are performed with READ UNCOMMITTED locking.|
+|**Report**|Maps to the **Browse** transaction type.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks

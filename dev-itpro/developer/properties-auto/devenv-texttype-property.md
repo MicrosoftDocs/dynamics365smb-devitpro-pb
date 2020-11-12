@@ -26,8 +26,8 @@ Sets the type of text this element or attribute contains.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Text|To display normal text. It is the default value.|
-|BigText|To display large text.|
+|**Text**|To display normal text. It is the default value.|
+|**BigText**|To display large text.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value  

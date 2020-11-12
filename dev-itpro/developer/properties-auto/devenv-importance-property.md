@@ -26,9 +26,9 @@ Sets the amount of information that is visible in a window or dialog box.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Standard|Displays the field on the page by default.|
-|Promoted|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
-|Additional|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
+|**Standard**|Displays the field on the page by default.|
+|**Promoted**|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
+|**Additional**|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

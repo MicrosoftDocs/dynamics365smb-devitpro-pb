@@ -25,9 +25,9 @@ Specifies which changes to the database to roll back after the tests in the test
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Disabled|Do not roll back any changes to the database. Tests are not isolated from each other. This is the default value.|
-|Codeunit|Roll back all changes to the database after each test codeunit executes.|
-|Function|Roll back all changes to the database after each test method executes.|
+|**Disabled**|Do not roll back any changes to the database. Tests are not isolated from each other. This is the default value.|
+|**Codeunit**|Roll back all changes to the database after each test codeunit executes.|
+|**Function**|Roll back all changes to the database after each test method executes.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

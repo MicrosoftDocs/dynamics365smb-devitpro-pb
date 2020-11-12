@@ -25,8 +25,8 @@ Specifies if the layout is rows or columns.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Rows|Use rows for the layout.|
-|Columns|Use columns for the layout.|
+|**Rows**|Use rows for the layout.|
+|**Columns**|Use columns for the layout.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

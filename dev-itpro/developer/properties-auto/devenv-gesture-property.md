@@ -25,10 +25,10 @@ Specifies a gesture that runs the action on a device with a touch interface, suc
 
 |Value|Description|
 |-----------|---------------------------------------|
-|None|No gesture for the action.|
-|LeftSwipe|Swipe in from the right edge of the touch interface.|
-|RightSwipe|Swipe in from the left edge of the touch interface.|
-|ContextMenu|The action has a context menu.|
+|**None**|No gesture for the action.|
+|**LeftSwipe**|Swipe in from the right edge of the touch interface.|
+|**RightSwipe**|Swipe in from the left edge of the touch interface.|
+|**ContextMenu**|The action has a context menu.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

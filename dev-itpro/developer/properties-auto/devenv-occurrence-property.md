@@ -26,8 +26,8 @@ Sets a value that specifies whether an attribute must occur in the data that is 
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Required|If the attribute must be part of the data. This is the default value.|
-|Optional|If the attribute does not have to be part of the data.|
+|**Required**|If the attribute must be part of the data. This is the default value.|
+|**Optional**|If the attribute does not have to be part of the data.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

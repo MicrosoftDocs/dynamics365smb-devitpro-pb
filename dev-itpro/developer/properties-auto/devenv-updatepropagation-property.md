@@ -27,8 +27,8 @@ Sets a value that specifies what happens when a main page with a subpage is upda
 
 |Value|Description|
 |-----------|---------------------------------------|
-|SubPart|An update action will update the subpage only|
-|Both|An update action will update both the main page and the subpage|
+|**SubPart**|An update action will update the subpage only|
+|**Both**|An update action will update both the main page and the subpage|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

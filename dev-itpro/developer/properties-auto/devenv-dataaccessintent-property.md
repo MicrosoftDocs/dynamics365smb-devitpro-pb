@@ -27,8 +27,8 @@ Sets the data access intent of the page.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|ReadOnly|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
-|ReadWrite|Intent to access and modify records.|
+|**ReadOnly**|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
+|**ReadWrite**|Intent to access and modify records.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 

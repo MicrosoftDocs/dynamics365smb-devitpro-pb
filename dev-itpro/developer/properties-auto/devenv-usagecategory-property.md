@@ -26,13 +26,13 @@ Sets the department column for a searched page or report in the Web client.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|None|The page or report is not included in a search.|
-|Lists|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
-|Tasks|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
-|ReportsAndAnalysis|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
-|Documents|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
-|History|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
-|Administration|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
+|**None**|The page or report is not included in a search.|
+|**Lists**|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
+|**Tasks**|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
+|**ReportsAndAnalysis**|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
+|**Documents**|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
+|**History**|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
+|**Administration**|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks

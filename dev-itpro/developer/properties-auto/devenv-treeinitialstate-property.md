@@ -25,8 +25,8 @@ Specifies the initial state of the records in a repeater control which is displa
 
 |Value|Description|
 |-----------|---------------------------------------|
-|ExpandAll|All records in the tree are expanded.|
-|CollapseAll|All records in the tree are collapsed.|
+|**ExpandAll**|All records in the tree are expanded.|
+|**CollapseAll**|All records in the tree are collapsed.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax

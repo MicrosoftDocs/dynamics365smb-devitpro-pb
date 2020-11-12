@@ -25,22 +25,22 @@ Sets the type of page to create.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|Card|Master, reference, and set up data management.|
-|List|Entity overviews and navigation, and inline editing of simple entities.|
-|RoleCenter|Overview of business performance and the start page for a specific user profile.|
-|CardPart|A page that is embedded in another page, such as in a FactBox.|
-|ListPart|A page that is embedded in another page, such as in a FactBox.|
-|Document|Transaction and other document management.|
-|Worksheet|Line-based data entry tasks (such as journals) and inquiries.|
-|ListPlus|Statistics, details, and related data management.|
-|ConfirmationDialog|Confirmative or exceptional dialog, such as warnings.|
-|NavigatePage|Multi-step dialog (also known as a "Wizard").|
-|StandardDialog|Routine dialog that starts or progresses a task.|
-|API|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
-|ReportPreview|Preview of a report.|
-|ReportProcessingOnly|Only report processing.|
-|XmlPort|XmlPort page.|
-|HeadlinePart|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
+|**Card**|Master, reference, and set up data management.|
+|**List**|Entity overviews and navigation, and inline editing of simple entities.|
+|**RoleCenter**|Overview of business performance and the start page for a specific user profile.|
+|**CardPart**|A page that is embedded in another page, such as in a FactBox.|
+|**ListPart**|A page that is embedded in another page, such as in a FactBox.|
+|**Document**|Transaction and other document management.|
+|**Worksheet**|Line-based data entry tasks (such as journals) and inquiries.|
+|**ListPlus**|Statistics, details, and related data management.|
+|**ConfirmationDialog**|Confirmative or exceptional dialog, such as warnings.|
+|**NavigatePage**|Multi-step dialog (also known as a "Wizard").|
+|**StandardDialog**|Routine dialog that starts or progresses a task.|
+|**API**|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
+|**ReportPreview**|Preview of a report.|
+|**ReportProcessingOnly**|Only report processing.|
+|**XmlPort**|XmlPort page.|
+|**HeadlinePart**|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
