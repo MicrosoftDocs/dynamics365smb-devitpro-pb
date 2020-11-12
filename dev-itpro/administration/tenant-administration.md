@@ -75,8 +75,7 @@ For more information, see [Unsubscribe or Remove Business Central](/dynamics365/
 
 As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you are the administrator of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants of your customers. You have access to the administration tools of their Microsoft 365 account and their [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] where you can specify update windows. You can also log into their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as a *delegated administrator* if you want to reproduce errors.  
 
-### Get set up in the Partner Center
-
+[!INCLUDE [admin-partner-mpn](../developer/includes/admin-partner-mpn.md)]
 [!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
