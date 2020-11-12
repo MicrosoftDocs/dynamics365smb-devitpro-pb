@@ -695,7 +695,9 @@
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
-## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## Connect Apps
+### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Common Data Service
