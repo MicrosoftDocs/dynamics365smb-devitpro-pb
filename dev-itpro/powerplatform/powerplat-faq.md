@@ -11,9 +11,11 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Business Central Virtual tables FAQ
+# Business Central Virtual Tables FAQ
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+
+[!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
 > [!IMPORTANT]  
 > This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
