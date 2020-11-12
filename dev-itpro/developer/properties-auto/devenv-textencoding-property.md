@@ -2,7 +2,7 @@
 title: "TextEncoding Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/04/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 
 |Value|Description|
 |-----------|---------------------------------------|
-|MSDOS|Use  MS-DOS  encoding format. It is the default value.|
+|MSDOS|Use MS-DOS encoding format. It is the default value.|
 |UTF8|Use UTF-8 encoding format.|
 |UTF16|Use UTF-16 encoding format.|
 |WINDOWS|Use Windows encoding format.|

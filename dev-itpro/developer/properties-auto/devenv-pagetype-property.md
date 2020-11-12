@@ -2,7 +2,7 @@
 title: "PageType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/04/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,9 +35,9 @@ Sets the type of page to create.
 |NavigatePage|Multi-step dialog (also known as a "Wizard").|
 |StandardDialog|Routine dialog that starts or progresses a task.|
 |API|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
-|ReportPreview|TODO:Add documentation|
-|ReportProcessingOnly|TODO:Add documentation|
-|XmlPort|TODO:Add documentation|
+|ReportPreview|Preview of a report.|
+|ReportProcessingOnly|Only report processing.|
+|XmlPort|XmlPort page.|
 |HeadlinePart|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
