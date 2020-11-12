@@ -53,6 +53,12 @@ When you onboard customers to [!INCLUDE [prodshort](../developer/includes/prodsh
 [!INCLUDE [csp-connect-customer](../developer/includes/csp-connect-customer.md)]
 [!INCLUDE [csp-disconnect-customer](../developer/includes/csp-disconnect-customer.md)]
 
+### Get Business Central right for the customer
+
+The default version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is just that - a default version. In many cases, you'll enhance the default version with [apps from the Microsoft commercial marketplace](dynamics365/business-central/ui-extensions). But you can also [customize pages for a profile](/dynamics365/business-central/ui-personalization-manage) and [change which UI elements are visible](/dynamics365/business-central/ui-experiences). For more information, see [Customize Business Central](/dynamics365/business-central/ui-customizing-overview) in the business functionality content.  
+
+If your customer wants more tweaks, you can create customizations of profiles and pages in code. For more information, see [Customizing the User Interface for User Roles](../developer/devenv-role-customization.md) in the developer content.  
+
 ## Step 5: Configure the support experience
 
 As a Business Central reselling partner, you are an administrator of your customers' Business Central tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft. For more information, see [Technical Support for Business Central](../technical-support.md).  
@@ -66,7 +72,7 @@ For more information, see [Administration of Business Central Online](tenant-adm
 ## See also
 
 [Administration of Business Central Online](tenant-administration.md)  
-[Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
+[Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] on-premises](../deployment/Deployment.md)  
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
