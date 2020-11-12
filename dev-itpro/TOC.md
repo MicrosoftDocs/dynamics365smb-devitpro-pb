@@ -44,6 +44,7 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.md)
 ### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
@@ -695,7 +696,9 @@
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
-## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## Connect Apps
+### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
