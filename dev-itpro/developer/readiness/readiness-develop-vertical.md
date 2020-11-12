@@ -23,7 +23,7 @@ To bring your solution to the cloud with [!INCLUDE[d365_bus_central_md](../inclu
 
 - You can choose to **extend and customize** the existing [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] application and enrich the end-user experience with your industry specific functionality using the new and modern development tools and Extensions version 2.0, which are made available with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. Read more [here](readiness-embed-apps.md).
 
-Learn more details on how you can build a Business Central offering in the **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
+<!--Learn more details on how you can build a Business Central offering in the **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).-->
 
 ## Examples of vertical solutions 
 
@@ -33,7 +33,7 @@ Learn more details on how you can build a Business Central offering in the **Rea
  
 [Progressus Software](https://appsource.microsoft.com/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.progressussoftware%7CAID.27c95c42-3724-4c23-bc71-1eccdf3de37c%7CPAPPID.760fc3a0-ddab-43aa-93a5-6430f34f1b76) from Plumbline Consulting LLC 
 - This app adds unique functionality to advanced project accounting and project management, which is useful for project managers, project employees, and project accountants. 
-- This business management solution extends the powerful financial management functionality of Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to provide Professional Services Automation features for service and project based businesses. Progressus Software’s functionality spans all the important processes – resource management, project management, sales and marketing, human capital management, and financial management – to provide unparalled insight and control of critical business functions for different project based roles. 
+- This business management solution extends the powerful financial management functionality of Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to provide Professional Services Automation features for service and project based businesses. Progressus Software's functionality spans all the important processes – resource management, project management, sales and marketing, human capital management, and financial management – to provide unparalled insight and control of critical business functions for different project based roles. 
 
 ## See Also
 
