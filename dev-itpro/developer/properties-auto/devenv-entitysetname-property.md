@@ -26,6 +26,16 @@ Sets the plural entity name with which the page is exposed in the API endpoint.
 -   Query
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Syntax
+
+```AL
+EntitySetName = 'Customers';
+```
+
+> [!NOTE]
+> The value `EntityDefinitions` is reserved and using it for the **EntitySetName Property** will result in a compiler error.
+
+## See Also
+
+[EntityName Property](devenv-entityname-property.md)  
+[Properties](devenv-properties.md)  

@@ -31,6 +31,12 @@ Specifies search terms (words and phrases) for the page in different languages. 
 |`<language ID>`   |The standard Windows three-letter language ID, such as ENU or DAN. Separate each language by a comma.|
 |`<term>`  |The search word or phrase, which can consist of letters, numbers and special characters. Separate each term by a comma.|
 
+## Syntax
+
+```AL
+AdditionalSearchTermsML = <language ID> = '<term>[,<term>]'[, <language ID> = '<term>[,<term>]'];
+```
+
 ## Remarks
 
 For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](../includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](../includes/webserver.md)] Instances](../../administration/configure-web-server.md#Settings).
@@ -62,7 +68,3 @@ page 50101 SearchTestML
 [Properties](devenv-properties.md)  
 [Page Object](../devenv-page-object.md)  
 [Report Object](../devenv-report-object.md)  
-
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  

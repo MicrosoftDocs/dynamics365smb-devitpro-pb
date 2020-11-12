@@ -42,6 +42,12 @@ Sets the maximum length of the specific AdditionalSearchTerms.
 |----------------|---------------------------------------------|
 |`<term>`  |The search word or phrase, which can consist of letters, numbers and special characters. Separate each term by a comma.  |
 
+## Syntax
+
+```AL
+AdditionalSearchTerms = '<term>[,<term>]';
+```
+
 ## Remarks
 For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](../includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](../includes/webserver.md)] Instances](../../administration/configure-web-server.md#Settings).
 

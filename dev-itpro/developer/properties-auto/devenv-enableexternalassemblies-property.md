@@ -22,6 +22,9 @@ Sets whether external Microsoft .NET assemblies can be used on a report.
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+> [NOTE]
+> It applies to client report definition \(RDLC\) report layouts.  
+
 ## Property Value  
 
 **True** if external assemblies can be used; otherwise, **false**. The default is **false**.  
@@ -34,8 +37,6 @@ EnableExternalAssemblies = true;
 
 ## Remarks  
 
-> [NOTE]
-> It applies to client report definition \(RDLC\) report layouts.  
 
 When you use the Visual Studio Report Designer for creating reports for the RoleTailored client, you can reference external assemblies to add functionality to a report. The location of the assembly must be accessible from the RoleTailored client. To use external assemblies on a report, the EnableExternalAssemblies property must be set to **true**.  
   

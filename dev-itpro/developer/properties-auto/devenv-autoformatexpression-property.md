@@ -33,6 +33,7 @@ AutoFormatType = 2;
 
 
 ## Remarks
+It applies to fields or columns of the decimal data type.
 
 The AL expression is evaluated when the expression performs updates. Together with the [AutoFormatType Property](devenv-autoformattype-property.md), this property determines how data is formatted. These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currencies or ratios.
 

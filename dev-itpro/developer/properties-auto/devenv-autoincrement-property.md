@@ -22,6 +22,8 @@ Sets whether the field value should be automatically incremented.
 -   Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+The fields must be of [Integer Data Type](../datatypes/devenv-integer-data-type.md) and [BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md).
+
 ## Property Value  
 
 **True** if the field value is automatically incremented; otherwise, **false**. The default value is **true**.  

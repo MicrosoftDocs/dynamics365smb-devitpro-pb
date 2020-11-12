@@ -38,7 +38,8 @@ DataAccessIntent = ReadOnly|ReadWrite;
 
 ## Remarks  
 
-[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+> [!NOTE]
+> It only applies to pages of the type API. For such, The [Editable property](devenv-editable-property.md) must be set to **false**.
 
 For reports, API pages, and queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, use this property to reduce the load on the primary database. Using **ReadOnly** might also improve performance when viewing objects. **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if one is available. When a workload is executed against the replica, insert/delete/modify operations aren't possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
 

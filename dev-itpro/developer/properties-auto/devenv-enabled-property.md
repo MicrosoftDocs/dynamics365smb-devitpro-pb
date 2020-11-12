@@ -32,8 +32,9 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
- **True** on pages if the field, key, or control is enabled; otherwise, **false** on pages. The default is **true** on pages.  
+ **True** on pages if the field, key, or control is enabled; otherwise, **false** on pages. The default is **true** on pages and profiles.  
 
 ## Syntax
 

@@ -40,6 +40,9 @@ All types of UI elements will be removed if they relate to an object to which th
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+> [!IMPORTANT]  
+>  If the **AccessByPermission** property is applied to a page field from a virtual table, this property is ignored. This means that users will see this field on the page in the client even if they do not have the permissions that are required by this property.
+
 > [!NOTE]  
 >  For this property to take effect in the client, the **UI Elements Removal** setting of [!INCLUDE[server](../includes/server.md)] configuration must be set to **LicenseFile** or **LicenseFileAndUserPermissions**. For more information, see [Hide UI Elements](../../administration/hide-ui-elements.md).  
 

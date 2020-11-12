@@ -44,6 +44,8 @@ ApplicationArea = Basic, Suite;
 ```
 
 ## Remarks  
+Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences. They are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios.
+
 The **ApplicationArea** property is used together with the [ApplicationArea method](../methods-auto/session/session-applicationarea-method.md) to hide user interface elements.  
   
 If one or more application areas are enabled in a session, any controls that are not tagged with an application area will not appear in the user interface. 

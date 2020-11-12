@@ -25,6 +25,8 @@ Sets a value that indicates whether the entity exposed through the OData API sup
 ## Property value
 **True** if the page is exposed as a service, otherwise **false**. The default is **false**.
 
+When the value of the property is set to **true**, an annotation is written in the OData metadata document which indicates that the exposed entity supports change tracking. The default is **false**.
+
 ## Syntax
 
 ```AL

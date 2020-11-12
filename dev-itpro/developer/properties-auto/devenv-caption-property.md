@@ -45,6 +45,8 @@ Sets the string that is used to identify a control or other object in the user i
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Parameters
+The property has three optional parameters; `Locked`, `Comment`, and `MaxLength`.
+
 *Locked*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 If `true` the Caption is locked and should not be translated.  

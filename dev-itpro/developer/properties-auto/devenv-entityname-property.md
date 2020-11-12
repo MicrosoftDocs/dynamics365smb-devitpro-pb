@@ -26,6 +26,15 @@ Sets the singular entity name with which the page is exposed in the API endpoint
 -   Query
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Syntax
+
+```AL
+EntityName = 'Customer';
+```
+
+> [!NOTE]
+> The value `EntityMetadata` is reserved and using it for the **EntityName Property** will result in a compiler error.
+  
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
