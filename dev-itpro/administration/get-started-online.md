@@ -20,7 +20,9 @@ If you want to build your business on [!INCLUDE [prodlong](../developer/includes
 
 Becoming a Microsoft partner gives you access to the Microsoft resources needed to sell solutions. The steps in this section below are required to gain access to the programs that enable are intended to help you get set up to sell [!INCLUDE [prodshort](../includes/prodshort.md)].
 
-### Get set up in the Partner Center
+In order to be able to service [!INCLUDE [prodshort](../includes/prodshort.md)] licenses and provide help and support to your customers, your company must have a [Microsoft Partner ID](/partner-center/mpn-overview) (MPN ID), and you must enroll in the [Cloud Solution Provider](/partner-center/csp-overview) (CSP) program.
+
+[!INCLUDE [admin-partner-mpn](../developer/includes/admin-partner-mpn.md)]
 
 [!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
 
