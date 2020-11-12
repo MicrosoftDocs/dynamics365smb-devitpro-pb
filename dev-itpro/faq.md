@@ -44,6 +44,12 @@ Below find some of our top-most frequently asked questions for developer and ITP
 
 You can get an overview of new and upcoming changes in the [Dynamics 365 release plans](https://aka.ms/businessappsreleasenotes).  
 
+## What are the service level agreements?
+
+[!INCLUDE [service-terms](includes/service-terms.md)]
+
+For more information, see [Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance).  
+
 For information about lifecycle support for [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, see [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md).  
 
 ## How often are production databases backed up?
@@ -113,9 +119,9 @@ When you exchange data through the API, you might have to safe list the IP addre
 
 You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/en-us/download/details.aspx?id=56519).  
 
-## How do I join the "Ready to Go" program?
+<!--## How do I join the "Ready to Go" program?
 
-Read [this](developer/readiness/readiness-ready-to-go.md?tabs=learning), and then send email to [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com).
+Read [this](developer/readiness/readiness-ready-to-go.md?tabs=learning), and then send email to [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com).-->
 
 ## See Also
 

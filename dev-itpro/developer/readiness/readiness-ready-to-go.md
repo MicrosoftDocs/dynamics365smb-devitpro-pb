@@ -18,7 +18,7 @@ ms.author: solsen
 
 [!INCLUDE[prodshort](../includes/prodshort.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
 
-The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Join the program by sending email to [Dynamics 365 Business Central Programs](mailto:Dyn365BEP@microsoft.com). Use the tabs below to read more about the elements of the "Ready to Go" program.  
+The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Use the tabs below to read more about the elements of the "Ready to Go" program.  
 
 > [!TIP]
 > Keep on top of news, tips, tools, programs, and new capabilities by following [Business Central on the Dynamics 365 cloudblog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/).

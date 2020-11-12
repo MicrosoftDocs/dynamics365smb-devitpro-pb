@@ -91,7 +91,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 > [!NOTE]  
 > If you have questions for building localization apps, please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
 
-Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for assistance on bringing you localization apps to AppSource.
+<!--Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for assistance on bringing you localization apps to AppSource.-->
 
 ## See Also
 

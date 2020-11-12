@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 11/10/2020
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -49,6 +49,10 @@ We also recommend that you connect to a low-latency network for a faster respons
 
 > [!IMPORTANT]
 > Environments that are based on Microsoft 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the Microsoft 365 demo account expires. If a prospect wants to use [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to help run their business, they should sign up for a trial using their own email account. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+
+### Pre-sales performance evaluation
+
+[!INCLUDE [perf-demo](../developer/includes/perf-demo.md)]
 
 ## Prepare for major updates with preview environments
 
