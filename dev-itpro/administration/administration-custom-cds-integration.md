@@ -12,6 +12,8 @@ ms.date: 10/29/2020
 
 # Customizing an Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]
 
+[!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
 This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
 > [!TIP]

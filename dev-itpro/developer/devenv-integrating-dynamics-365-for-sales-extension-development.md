@@ -13,6 +13,8 @@ author: SusanneWindfeldPedersen
 
 # Integrating Microsoft Dataverse for Extension Development
 
+[!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
 Develop extensions and streamline the workflow by synchronizing [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 For developing extensions to integrate with sales data, you simply enable the tables used in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The extension development process includes the following set of properties in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to enable field mapping. You can enable the field mapping by using the following properties. The tables are extensible, so that you can update [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with data as well.
