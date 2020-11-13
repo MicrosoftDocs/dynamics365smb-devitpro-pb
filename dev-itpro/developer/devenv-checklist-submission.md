@@ -58,7 +58,7 @@ The submitted apps will be extracted and investigated following this list:
 6. For every country in the submission list, we perform the same validation:
    - A sandbox container based on the Business Central Artifacts with the right country version is created
    - Any dependency apps not included in the submission are installed. **If any installation fails, the submission is rejected.**
-   - In order of dependencies, all apps in the submission are tested using AppSourceCop analyzer (see more here: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop)
+   - In order of dependencies, all apps in the submission are tested using AppSourceCop analyzer (see more here: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop)
      - If any **breaking changes are identified, the submission is rejected.**
      - If mandatory affixes **are not included on all object names, the submission is rejected.**
    - In order of dependencies, all prior versions of the apps are published and installed. **If any installation fails, the submission is rejected.**
@@ -69,7 +69,7 @@ The submitted apps will be extracted and investigated following this list:
 > [!Important]
 > Microsoft recommends that all partners are performing the same checks as described above before submitting apps for validation to maximize chances of validation success.
 > 
-> You can find resources for how to setup a build pipeline, which performs all these steps here: http://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
+> You can find resources for how to setup a build pipeline, which performs all these steps here: https://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
 > -	https://dev.azure.com/businesscentralapps/HelloWorld.AppSource (for Azure DevOps)
 > -	https://github.com/BusinessCentralApps/HelloWorld.AppSource (for GitHub Actions)
 
