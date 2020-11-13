@@ -67,7 +67,7 @@ The receiving extension will contain the table and fields that you want to move.
 
     - Ensure that `"target": "OnPrem"`.
     - Increase the `"version"` value.
-    - In the `""dependencies"` parameter, set up a dependency on the new receiving extension **Ext Y**.
+    - In the `"dependencies"` parameter, set up a dependency on the new receiving extension **Ext Y**.
 
     For more information, see [App.json file](devenv-json-files.md#Appjson).
 3. Complete the following steps for **TableC**.

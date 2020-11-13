@@ -44,6 +44,7 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.md)
 ### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
@@ -695,7 +696,9 @@
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
-## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## Connect Apps
+### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Common Data Service
@@ -841,10 +844,17 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Telemetry Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+#### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+#### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
+#### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
+#### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
-#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+#### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+#### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
+#### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 ### [Registering Your Deployment on Azure](administration/register-app-azure.md)

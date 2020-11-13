@@ -2,14 +2,12 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 10/28/2020
+ms.date: 11/12/2020
 ms.author: edupont
 ---
-In order to be able to service [!INCLUDE [prodshort](prodshort.md)] licenses and provide help and support to your customers, your company must have a [Microsoft Partner ID](/partner-center/mpn-overview) (MPN ID), and you must enroll in the [Cloud Solution Provider](/partner-center/csp-overview) (CSP) program. 
+### Enroll in the CSP program
 
-Microsoft Partner Network (MPN) membership unlocks our best resources to differentiate your business, take your product to market, and sell your solutions. To join MPN, visit the [Microsoft Partner Network](https://partner.microsoft.com/membership) website. Once signed up, you will get an MPN ID – your gateway to access all the membership resources and benefits for your partnership with Microsoft. There is no cost to obtain a MPN ID as a Network member, and with options to upgrade to an [Action Pack](https://partner.microsoft.com/membership/action-pack) subscription or work toward a [competency](https://partner.microsoft.com/membership/competencies), you can access even more benefits.  
-
-The CSP program helps you to be more involved in your customers' businesses, beyond reselling licenses. In CSP, you can choose to enroll as an *indirect reseller* or a *direct bill partner*.  
+The [Cloud Solution Provider](/partner-center/csp-overview) (CSP) program helps your company to be more involved in your customers' businesses, beyond reselling licenses. In CSP, you can choose to enroll as an *indirect reseller* or a *direct bill partner*.  
 
 In most cases, you will enroll as an *indirect reseller* and then work with an *indirect provider*, also referred to as a *distributor*, who then manages all interaction with Microsoft in terms of licensing and technology, so that you can focus on sales and support. If you decide to enroll as a *direct bill partner* in order to fully own the end-to-end relationship with both customers and Microsoft, make sure that you meet the eligibility requirements. For more information, see [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) in the Microsoft Partner Center content.  
 
