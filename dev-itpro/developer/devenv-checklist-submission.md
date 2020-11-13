@@ -3,12 +3,12 @@ title: "Technical Validation Checklist"
 description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/13/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # Technical Validation
@@ -45,16 +45,19 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| , [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
 -->
 
-## Technical validation performed by the Business Central Validation Team
+## Technical validation performed by the Business Central validation team
 
-The primary responsibility of the technical validation is to ensure that the Business Central online service is stable and that the apps can be installed and run without destabilizing the service.
-The Microsoft Technical validation is for a large part automated and will validate the steps described in the technical checklist above through some pipelines.
+The primary responsibility of the technical validation is to ensure that the Business Central online service is stable and that the apps can be installed and run without destabilizing the service.  
+
+The technical validation is for a large part automated and will validate the steps described in the technical checklist above through some pipelines.  
+
 The submitted apps will be extracted and investigated following this list:
-1. The apps are investigated. All dependencies must be included in the submission. We will lookup prior versions of the apps in the depot. If your app has a dependency on a 3rd party app in AppSource, you should not include this, we will locate it in the depot. **Any unresolved dependencies will cause the submission to be rejected.**
-2. If the version numbers hasn’t changed and the countries hasn’t changed – the validation will be skipped and **the apps will not be updated.**
-3. App.json is investigated for mandatory fields. **If mandatory fields are missing, the submission is rejected.**
-4. Affixes for the submission are located. **If affixes hasn’t been registered or cannot be located, the submission is rejected.**
-5. Business Central Artifacts are located for the version the apps is submitted for (Current, NextMinor or NextMajor).
+
+1. The apps are investigated. All dependencies must be included in the submission. We will lookup prior versions of the apps in the depot. If your app has a dependency on a third party app in AppSource, you should not include this, we will locate it in the depot. **Any unresolved dependencies will cause the submission to be rejected**
+2. If the version numbers haven't changed and the countries haven’t changed, the validation is skipped and **the apps will not be updated**
+3. App.json is investigated for mandatory fields. **If mandatory fields are missing, the submission is rejected**
+4. Affixes for the submission are located. **If affixes haven't been registered or cannot be located, the submission is rejected**
+5. Business Central Artifacts are located for the version the apps is submitted for (*Current*, *NextMinor*, or *NextMajor*).
 6. For every country in the submission list, we perform the same validation:
    - A sandbox container based on the Business Central Artifacts with the right country version is created
    - Any dependency apps not included in the submission are installed. **If any installation fails, the submission is rejected.**
@@ -73,7 +76,7 @@ The submitted apps will be extracted and investigated following this list:
 > -	https://dev.azure.com/businesscentralapps/HelloWorld.AppSource (for Azure DevOps)
 > -	https://github.com/BusinessCentralApps/HelloWorld.AppSource (for GitHub Actions)
 
-## Manual validation performed by the Business Central Validation Team
+## Manual validation performed by the Business Central validation team
 
 The primary responsibility of the manual validation is to ensure that the apps are working as described.
 
