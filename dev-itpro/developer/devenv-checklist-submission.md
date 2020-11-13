@@ -11,9 +11,13 @@ ms.service: "dynamics365-business-central"
 ms.author: rweigel
 ---
 
-# Technical Validation Checklist
+# Technical Validation
 
-The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. To get code validation helping you to bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
+Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
+
+## Technical Validation Checklist
+
+If you do not meet these mandatory requirements, your extension will fail validation. To get code validation helping you to bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
 
 |Requirement|Example/Guidance|
 |-----------|----------------|
@@ -40,6 +44,49 @@ The following is a checklist of all requirements that you **must meet before sub
 <!-- 
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| , [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
 -->
+
+## Technical validation performed by the Business Central Validation Team
+
+The primary responsibility of the technical validation is to ensure that the Business Central online service is stable and that the apps can be installed and run without destabilizing the service.
+The Microsoft Technical validation is for a large part automated and will validate the steps described in the technical checklist above through some pipelines.
+The submitted apps will be extracted and investigated following this list:
+1. The apps are investigated. All dependencies must be included in the submission. We will lookup prior versions of the apps in the depot. If your app has a dependency on a 3rd party app in AppSource, you should not include this, we will locate it in the depot. **Any unresolved dependencies will cause the submission to be rejected.**
+2. If the version numbers hasn’t changed and the countries hasn’t changed – the validation will be skipped and **the apps will not be updated.**
+3. App.json is investigated for mandatory fields. **If mandatory fields are missing, the submission is rejected.**
+4. Affixes for the submission are located. **If affixes hasn’t been registered or cannot be located, the submission is rejected.**
+5. Business Central Artifacts are located for the version the apps is submitted for (Current, NextMinor or NextMajor).
+6. For every country in the submission list, we perform the same validation:
+   - A sandbox container based on the Business Central Artifacts with the right country version is created
+   - Any dependency apps not included in the submission are installed. **If any installation fails, the submission is rejected.**
+   - In order of dependencies, all apps in the submission are tested using AppSourceCop analyzer (see more here: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop)
+     - If any **breaking changes are identified, the submission is rejected.**
+     - If mandatory affixes **are not included on all object names, the submission is rejected.**
+   - In order of dependencies, all prior versions of the apps are published and installed. **If any installation fails, the submission is rejected.**
+   - In order of dependencies, all new versions of the apps are published and upgrade is run (apps must be digitally signed, else they won’t install). **If any installation/upgrade fails, the submission is rejected.**
+   - A simple connection test is executed (open a role center and check simple actions and pages). If the connection test fails, **the submission investigated and potentially rejected.**
+7. If all country validations succeed and no errors are found, **the submission is accepted.**
+
+> [!Important]
+> Microsoft recommends that all partners are performing the same checks as described above before submitting apps for validation to maximize chances of validation success.
+> 
+> You can find resources for how to setup a build pipeline, which performs all these steps here: http://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
+> -	https://dev.azure.com/businesscentralapps/HelloWorld.AppSource (for Azure DevOps)
+> -	https://github.com/BusinessCentralApps/HelloWorld.AppSource (for GitHub Actions)
+
+## Manual validation performed by the Business Central Validation Team
+
+The primary responsibility of the manual validation is to ensure that the apps are working as described.
+
+Manual validation is not done on all submissions. They will be done as sample tests.
+
+For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. Rapidstart packages needed for the manual test is installed.
+
+The manual test validation document is executed manually and if the document doesn’t match the app functionality the submission is rejected.
+
+> [!Important]
+> Microsoft recommends that all partners are performing the manual validation as the last check before submitting for validation.
+>
+> This can be done either in online sandbox environments or in sandbox docker containers.
 
 ## See Also
 [Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)  
