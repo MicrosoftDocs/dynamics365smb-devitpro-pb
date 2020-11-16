@@ -32,6 +32,7 @@ When you have created a profile, you can use the **User Personalization** page t
 > [!NOTE]  
 > The **Language ID** and **Company** values are overwritten by any user values when the user starts a session. 
   
-## See Also  
+## See Also
+
 [Profile Object](devenv-profile-object.md)  
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)  
