@@ -55,9 +55,8 @@ end;
 
 trigger OnAfterGetRecord()
 begin
-    if (CurrencyDataItem."ISO Numeric Code" <> 'DKK') then begin
+    if CurrencyDataItem."ISO Numeric Code" <> 'DKK' then
         CurrReport.Skip();
-    end;
 end;
 ```
 
