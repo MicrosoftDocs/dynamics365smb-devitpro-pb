@@ -104,16 +104,24 @@ At this point, the work in Azure is finished.
 
 Next, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to use the key vault reader application and its certificate, which you registered in Azure AD, for authenticating to the key vaults.
 
+If you're running a container-based environment, you have two options for configuring the server instance. You can either do it manually or use the Set-BcContainerKeyVaultAadAppAndCertificate script. Using the Set-BcContainerKeyVaultAadAppAndCertificate script is simpler and recommended. <!--See [Configure a container-based [!INCLUDE[server](../developer/includes/server.md)] instance](#script).-->
+
+### <a name="script"></a>Configure a container-based [!INCLUDE[server](../developer/includes/server.md)] instance
+
+If you are running a container-based environment, use the Set-BcContainerKeyVaultAadAppAndCertificate.ps1 script that is available in the NAV Container Helper GitHub repository at [https://github.com/microsoft/navcontainerhelper/blob/master/ContainerHandling/Set-BcContainerKeyVaultAadAppAndCertificate.ps1](https://github.com/microsoft/navcontainerhelper/blob/master/ContainerHandling/Set-BcContainerKeyVaultAadAppAndCertificate.ps1).
+
+### Manually configure a [!INCLUDE[server](../developer/includes/server.md)] instance
+
 To complete this task, you'll need the user name of the service account that runs the [!INCLUDE[server](../developer/includes/server.md)].
 
-1. If not already done, import your key vault certificate to the local certificate store for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer.
+1. If not already done, import your key vault certificate and its private keys to the local certificate store for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer.
 
-    You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) or [Import-Certificate cmdlet](/powershell/module/pkiclient/import-certificate) from a Windows PowerShell prompt.
+    You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) or [Import-PfxCertificate cmdlet](/powershell/module/pkiclient/import-pfxcertificate) from a Windows PowerShell prompt.
 
     For example, the following PowerShell command installs a certificate to the local machine's personal store: 
     
       ```powershell
-      Import-Certificate -FilePath "C:\certificates\BusinessCentralKeyVaultReader.cer" -CertStoreLocation Cert:\LocalMachine\My
+      Import-PfxCertificate -FilePath "C:\certificates\BusinessCentralKeyVaultReader.pfx" -Password (ConvertTo-SecureString -String "pfxpassword" -AsPlainText -Force) -CertStoreLocation Cert:\LocalMachine\My\
       ```
 
 2. Give the service account used by the [!INCLUDE[server](../developer/includes/server.md)] instance permission to access the certificates private key.
