@@ -27,8 +27,8 @@ author: solsen
 To work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables, you must understand how [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables work. Therefore, the following documentation is a prerequisite:
 
 - [What is [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-- [table overview](https://docs.microsoft.com/powerapps/maker/common-data-service/table-overview)
-- [table relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)
+- [Table overview](https://docs.microsoft.com/powerapps/maker/common-data-service/table-overview)
+- [Table relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)
 - [Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-tables)
 - [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
 
