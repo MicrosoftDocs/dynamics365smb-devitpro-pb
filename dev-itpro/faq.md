@@ -70,7 +70,7 @@ You can find guidance for setting up [!INCLUDE [prodshort](developer/includes/pr
 
 You can also find relevant content on the [Microsoft Learn site](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
 
-For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](administration/demo-environment.md).  
+For more information, see [Preparing Demonstration Environments](administration/demo-environment.md).  
 
 ## How can I troubleshoot my customers' online tenants?
 

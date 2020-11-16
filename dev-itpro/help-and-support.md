@@ -187,7 +187,7 @@ On occasion, as a partner, you will run into questions that are not directly rel
 
 Giving prospects access to a pre-configured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
-For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](administration/demo-environment.md).  
+For more information, see [Preparing Demonstration Environments](administration/demo-environment.md).  
 
 ## See also
 
