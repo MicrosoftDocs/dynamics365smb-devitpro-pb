@@ -82,11 +82,11 @@ To consume virtual tables:
 
 From the development tooling, existing elements such as forms can be modified for the virtual table. Additionally, new forms, views, and other elements can also be added.
 
-When the solution is exported, it will contain hard dependencies on the virtual table generated in the MicrosoftBusinessCentralVE solution.
+When the solution is exported, it will contain hard dependencies on the virtual table generated in the **MicrosoftBusinessCentralVE** solution.
 
 ## See Also
 
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
-[table Modeling](powerplat-table-modeling.md)  
+[Table Modeling](powerplat-table-modeling.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [FAQ](powerplat-faq.md)  

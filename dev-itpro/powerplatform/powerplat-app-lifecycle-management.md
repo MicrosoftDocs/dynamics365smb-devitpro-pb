@@ -66,6 +66,6 @@ One [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance must be l
 ## See Also
 
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
-[table Modeling](powerplat-table-modeling.md)  
+[Table Modeling](powerplat-table-modeling.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
 [FAQ](powerplat-faq.md)  

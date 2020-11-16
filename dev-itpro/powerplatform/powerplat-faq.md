@@ -61,6 +61,6 @@ Yes. Here is the order of calls:
 ## See Also
 
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
-[table Modeling](powerplat-table-modeling.md)  
+[Table Modeling](powerplat-table-modeling.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
