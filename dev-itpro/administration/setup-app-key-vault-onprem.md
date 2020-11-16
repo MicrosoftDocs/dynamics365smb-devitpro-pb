@@ -144,11 +144,11 @@ To complete this task, you'll need the user name of the service account that run
     |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.<br /><br />Example:<br />MY|
     |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.<br /><br />Example:<br />649419e4fbb87340f5a0f995e605b74c5f6d943e|
     |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant.<br /><br />Example:<br />ed4129d9-b913-4514-83db-82e305163bec|
-    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID. <br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](../developer/devenv-app-key-vault.md#security).<br /><br />Example:<br />true|
+    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID, which is done by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-PublisherAzureActiveDirectoryTenantId` parameter.<br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](../developer/devenv-app-key-vault.md#security).<br /><br />Example:<br />true|
 
     You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)]](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       
-    To use the Set-NAVServerConfiguration cmdlet, start the [[!INCLUDE[admintool](../developer/includes/admintool.md)] as an administrator, and run the following commands one at a time. Replace brackets with your own values. 
+    To use the Set-NAVServerConfiguration cmdlet, start the [!INCLUDE[adminsehll](../developer/includes/adminshell.md)] as an administrator, and run the following commands one at a time. Replace brackets with your own values. 
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreLocation -KeyValue <certificate store location>    
@@ -168,7 +168,7 @@ At this point, you can run your extensions that use key vault secrets to read se
 
 ## See Also  
 
-[Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md)
+[Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md)  
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Authentication and Credential Types](Users-Credential-Types.md)  
