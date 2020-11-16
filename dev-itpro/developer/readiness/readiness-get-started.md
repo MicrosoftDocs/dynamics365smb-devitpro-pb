@@ -150,7 +150,7 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 - Microsoft Learn
 
-    Learn new skills and discover the power of Microsoft products with step-by-step guidance. Start your journey today by exploring our [learning paths and modules](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central).
+    Learn new skills and discover the power of Microsoft products with step-by-step guidance. Start your journey today by exploring our [learning paths and modules](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
 
 - Microsoft Docs
 

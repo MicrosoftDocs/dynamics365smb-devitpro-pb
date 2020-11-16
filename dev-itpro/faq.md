@@ -62,15 +62,15 @@ No, but from the [!INCLUDE[prodshort](includes/prodshort.md)] administration cen
 
 ## Can I get training in Business Central?
 
-Yes, you can. You can find free eLearning content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central). As a partner, you also have access to the Dynamics Learning Portal, where you can find older eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
+Yes, you can. You can find free eLearning content on the [Microsoft Learn site](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs). As a partner, you also have access to the Dynamics Learning Portal, where you can find older eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
 
 ## How do I help my customer configure their environment?
 
 You can find guidance for setting up [!INCLUDE [prodshort](developer/includes/prodshort.md)] in the application content. For more information, see [Setting Up Business Central](/dynamics365/business-central/setup).  
 
-You can also find relevant content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central).
+You can also find relevant content on the [Microsoft Learn site](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
 
-For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online)
+For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](administration/demo-environment.md).  
 
 ## How can I troubleshoot my customers' online tenants?
 
