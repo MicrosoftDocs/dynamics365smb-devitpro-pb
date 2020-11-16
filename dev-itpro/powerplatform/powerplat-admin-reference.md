@@ -87,6 +87,6 @@ When the solution is exported, it will contain hard dependencies on the virtual 
 ## See Also
 
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
-[Table Modeling](powerplat-table-modeling.md)  
+[Table Modeling](powerplat-entity-modeling.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [FAQ](powerplat-faq.md)  

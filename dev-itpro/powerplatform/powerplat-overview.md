@@ -58,7 +58,7 @@ There are known limitations with [!INCLUDE[prodshort](../developer/includes/prod
 
 ## See Also
 
-[Table Modeling](powerplat-table-modeling.md)  
+[Table Modeling](powerplat-entity-modeling.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
 [FAQ](powerplat-faq.md)  
