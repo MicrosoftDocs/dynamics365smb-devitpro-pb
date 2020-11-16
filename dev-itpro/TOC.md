@@ -701,16 +701,16 @@
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
-## Integrating with Common Data Service
-### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
+## Integrating with Microsoft Dataverse
+### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
-### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
-### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
-### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
+### [Table Modeling](powerplatform/powerplat-entity-modeling.md)
+### [Application Lifecycle Management for Solutions that use Virtual Tables](powerplatform/powerplat-app-lifecycle-management.md)
+### [Business Central and Microsoft Dataverse Admin Reference](powerplatform/powerplat-admin-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
 <!-- Microsoft Teams -->
