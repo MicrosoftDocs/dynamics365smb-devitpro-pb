@@ -1,5 +1,6 @@
 ---
-title: "Merging an Application Database with a Tenant Database"
+title: "Migrating to Single-Tenancy From Multitenancy"
+description: Learn how to migrate from a single-tenant Business Central deployment to a multitenant deployment.
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
