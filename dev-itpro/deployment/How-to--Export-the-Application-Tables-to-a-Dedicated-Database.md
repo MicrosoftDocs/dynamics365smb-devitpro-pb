@@ -1,5 +1,6 @@
 ---
 title: "How to: Export the Application Tables to a Dedicated Database"
+description: Learn how to export application tables from one database to a dedicated database.
 author: edupont04
 ms.custom: na
 ms.date: 10/01/2020
