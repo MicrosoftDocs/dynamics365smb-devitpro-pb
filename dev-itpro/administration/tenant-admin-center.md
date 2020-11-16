@@ -34,10 +34,6 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 
 The *admin agent* and *helpdesk agent* roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
 
-### Mobile apps
-
-Mobile apps cannot natively handle a setup where there's no production environment called 'production'. In this case, you must use the protocol handler. For more information about the protocol handler, see [Linking to the Dynamics 365 Business Central App](../developer/devenv-link-to-mobile-app.md). We recommend you don't remove the 'production' environment if mobile apps are in use.  
-
 ## Internal administrators
 
 As the internal administrator, you can choose the link in the **Settings** menu when you're signed in to [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
