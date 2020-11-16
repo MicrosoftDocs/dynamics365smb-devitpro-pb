@@ -1,6 +1,6 @@
 Sandbox environments are meant to be precisely that: Environments that you can play around with, use as a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
 
-You can also safely use sandboxes for training, such as for following a learning path from [Microsoft Learn](/learn/browse/?products=dynamics-business-central), because it's a safe environment to experiment with. If anything goes wrong, you just delete the sandbox and start over.  
+You can also safely use sandboxes for training, such as for following a learning path from [Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs), because it's a safe environment to experiment with. If anything goes wrong, you just delete the sandbox and start over.  
 
 > [!IMPORTANT]
 > The automatic backup that applies to production environments does not apply to sandbox environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart, but you cannot request a database export.  

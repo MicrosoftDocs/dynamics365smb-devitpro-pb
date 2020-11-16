@@ -68,7 +68,11 @@ For more information, see [Technical Support](technical-support.md).
 
 ## Training
 
-You and your customers can find free eLearning content on the Microsoft Learn site. Find the related learning paths at [aka.ms/bclearn](https://aka.ms/bclearn).  
+You and your customers can find free eLearning content on the [Microsoft Learn landing page for Business Central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs) with suggested collections for getting started, managing financials, and extending Business Central.  
+
+The Learn site also includes role-specific learning paths for [developers](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=developer), [administrators](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=administrator), and [functional consultants](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant).  
+
+Additionally, partners in the Business Central community offer training and books. 
 
 ## Resources
 
@@ -87,7 +91,7 @@ This article provides information about the following types of resources:
 
 ### <a name="partner"></a>Get set up as a partner
 
-If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/readiness-get-started.md).  
 
 <!--### <a name="ready2go"></a>Get started with the "Ready to Go" program
 
@@ -114,7 +118,7 @@ You can learn about current and coming capabilities through a number of differen
 > |Migrate to Business Central online|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
 > |Features not implemented in on-premises deployments|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
 > |The Business Central learning catalog|[https://docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
-> |E-learning|[aka.ms/bclearn](https://aka.ms/bclearn)|Free [!INCLUDE [prodshort](developer/includes/prodshort.md)] learning paths on Microsoft Learn|
+> |Free eLearning|[https://docs.microsoft.com/learn/dynamics365/business-central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)|Free [!INCLUDE [prodshort](developer/includes/prodshort.md)] collections and learning paths on Microsoft Learn|
 
 ### <a name="ideas"></a>Share an idea about a new feature you'd like to have
 
@@ -183,7 +187,7 @@ On occasion, as a partner, you will run into questions that are not directly rel
 
 Giving prospects access to a pre-configured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
-For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online).  
+For more information, see [Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](administration/demo-environment.md).  
 
 ## See also
 
@@ -192,4 +196,3 @@ For more information, see [Take prospects and customers online](deployment/deplo
 [Migrate Legacy Help](upgrade/migrate-help.md)  
 <!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
 [The Business Central Administration Center](administration/tenant-admin-center.md)  
-[Blog post: Find the right resources and provide feedback](https://community.dynamics.com/business/b/financials/archive/2018/12/04/find-the-right-resources-and-provide-feedback)  

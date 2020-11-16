@@ -71,7 +71,7 @@ If you are completely new to [!INCLUDE [prodshort](developer/includes/prodshort.
 ## See Also
 
 [[!INCLUDE[prodlong](includes/prodlong.md)] Business Functionality Help](/dynamics365/business-central/index)  
-[Dynamics 365 Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)  
+[Dynamics 365 Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  
 [FAQ for Dynamics 365 Business Central Development and Administration](faq.md)  
 [Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]](help-and-support.md)  
 [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)  

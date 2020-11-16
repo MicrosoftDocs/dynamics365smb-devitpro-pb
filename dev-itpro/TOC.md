@@ -4,7 +4,7 @@
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
+### [Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
