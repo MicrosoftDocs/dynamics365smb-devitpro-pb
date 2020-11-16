@@ -8,12 +8,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: ManuelaHochstrasser
+author: EmmaNielsson
 ---
 
-# Update 16.5 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
+# Update 17.1 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
 
-Would you like to know what has changed in update 16.5? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 17.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
 
@@ -21,28 +21,37 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Feature changes
 
-- [Delete extension data](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/delete-extension-data)
+- [Enhanced email capabilities](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/enhanced-email-capabilities)
+- [Notify users of high-risk changes in selected setup fields](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/notify-users-high-risk-changes-selected-setup-fields)
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/dynamics365-business-central/planned-features).
 
-For a list of next wave release plans, see the [2020 release wave 2 release plan](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 16.5
+
+## Upgrade to 17.1
 
 Please note that new customers will automatically get the latest builds of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (16.5). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
-**It’s time to switch your [!INCLUDE[prodlong](../developer/includes/prodlong.md)] browser to Microsoft Edge**  
-On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/21/its-time-to-switch-your-dynamics-365-business-central-browser-to-microsoft-edge/).
+**NEW! Migrate directly from version 14, 15, and 16 to Business Central Online**  
+Business Central includes a cloud migration tool that administrators can use to migrate customer data from on-premises databases to Business Central online. Starting now, the Cloud Migration app also supports migration from the earlier on-premises versions of Business Central, with the latest cumulative update applied: Migrate directly from versions 14.x, 15.x, and 16.x to version 17.x. 
+This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more 
+ [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
 
-**Leveraging IoT data in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]**  
-Make sure to read the [blog](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/24/leveraging-iot-data-in-dynamics-365-business-central/) about getting started with leveraging the Internet of Things (IoT) data in [!INCLUDE[prodlong](../developer/includes/prodlong.md)] using services from Microsoft Azure is easier than you may think.
+**Watch what's new sessions on demand**  
+Watch the sessions from the Business Central Launch Event in October. Register and get access to 30+ sessions [here](https://aka.ms/MSDyn365BCLaunchEvent).
 
-**Support for an unlimited number of production and sandbox environments**  
-With 2020 release wave 2 (October), we're introducing the ability for customers to buy additional [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production environments to expand their business. More environments will open up new opportunities like creating more business branches, moving into more countries, or expanding within their current country, read more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/support-unlimited-number-production-sandbox-environments).
+**Snapshot debugging**  
+Snapshot debugging has now been enabled for sandbox environments. It will be enabled in production in a later minor. Learn more [here](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging).
 
-**Running a Container-Based Development Environment**  
-From 16.4 and onwards Microsoft will stop producing docker images and instead publish builds as artifacts, which can be used together with the generic Docker image to run the image you want. Read more [here](../developer/devenv-running-container-development.md).
+**Apps are moving to office.com**  
+The home for all your business applications across Dynamics 365 and Microsoft Power Platform is moving to office.com, where you'll find the Business Central tiles for production and sandbox environments. Read more [here]().
+
+**Easy access to production or sandbox environments from the mobile app**
+Users of mobile devices can now choose between their sandbox and production environments without the need to use the pre-crafted URL as before. Partners running their own apps based on Business Central can also let their users explore it from mobile devices. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/access-multiple-production-or-sandbox-environments-mobile-apps).
+
+**Unblock multifactor authentication for mobile apps**
+We have updated core authentication components of the mobile app to support multifactor authentication. Enabling such flow in the user setting on your Microsoft 365 account and then using it on a mobile device (via an SMS code, authenticator app, or more) is now possible after updating the Business Central mobile app to version 3.0 or higher. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/unblock-multi-factor-authentication-mobile-apps).
