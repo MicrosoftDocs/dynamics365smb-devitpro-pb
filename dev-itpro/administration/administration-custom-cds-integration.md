@@ -43,7 +43,7 @@ This walkthrough requires the following:
     - Worker table.
 
     > [!NOTE]  
-    > To get the worker table you must install the Talent Core HR solution. For more information, see [Microsoft Dataverse tables](/dynamics365/talent/corehrentities#worker-tables).
+    > To get the worker table you must install the Talent Core HR solution. For more information, see [Microsoft Dataverse tables](/dynamics365/human-resources/hr-developer-entities).
     - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
     - The user name and password of a user account that has full permissions to add and modify tables.  
 - [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
