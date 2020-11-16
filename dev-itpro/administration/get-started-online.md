@@ -57,7 +57,7 @@ When you onboard customers to [!INCLUDE [prodshort](../developer/includes/prodsh
 
 ### Get Business Central right for the customer
 
-The default version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is just that - a default version. In many cases, you'll enhance the default version with [apps from the Microsoft commercial marketplace](dynamics365/business-central/ui-extensions). But you can also [customize pages for a profile](/dynamics365/business-central/ui-personalization-manage) and [change which UI elements are visible](/dynamics365/business-central/ui-experiences). For more information, see [Customize Business Central](/dynamics365/business-central/ui-customizing-overview) in the business functionality content.  
+The default version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is just that - a default version. In many cases, you'll enhance the default version with [apps from the Microsoft commercial marketplace](/dynamics365/business-central/ui-extensions). But you can also [customize pages for a profile](/dynamics365/business-central/ui-personalization-manage) and [change which UI elements are visible](/dynamics365/business-central/ui-experiences). For more information, see [Customize Business Central](/dynamics365/business-central/ui-customizing-overview) in the business functionality content.  
 
 If your customer wants more tweaks, you can create customizations of profiles and pages in code. For more information, see [Customizing the User Interface for User Roles](../developer/devenv-role-customization.md) in the developer content.  
 
