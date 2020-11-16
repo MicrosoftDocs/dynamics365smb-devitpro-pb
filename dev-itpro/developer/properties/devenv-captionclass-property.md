@@ -52,7 +52,7 @@ The Caption Class raises an `OnResolveCaptionClass` event for any other value of
     end;
 ```
 
-The `OnAfterCaptionClassResolve` event is used to overwrite the above logic, in case the `CaptionClass` property is not the expected format or if some extra logic needs to be added.
+The `OnAfterCaptionClassResolve` event is used to override the above logic, in case the `CaptionClass` property is not the expected format or if some extra logic needs to be added.
 
 ```al
 [IntegrationEvent(false, false)]

@@ -21,7 +21,10 @@ ms.author: dmitrych
 
     The content pack gives you all you need for the next step. Alternatively, use the **Microsoft 365 Business Premium Demo Content** or **Microsoft 365 Enterprise Demo Content** content packs so that you can get more users for your demo and other scenarios. These content packs are also useful for when you want to demo more complex Microsoft 365 integration scenarios, or if you want to make sure that you get a [!INCLUDE [prodshort](prodshort.md)] tenant for a specific country, for example.
 
-7. In an in-private browser window, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and log in with the new administrator account that you created, typically called something like admin@CRMbc123456.onmicrosoft.com.
+7. In an dedicated browser window, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and log in with the new administrator account that you created, typically called something like admin@CRMbc123456.onmicrosoft.com.
+
+    > [!TIP]
+    > We recommend that you use profiles in the New Edge browser rather than InPrivate or Incognito browser mode. For more information, see [Microsoft Edge documentation](/microsoft-edge/).
 
     If you chose another content pack, you must use the administrator account to sign up for a standard trial by choosing the **Get started** button on the [https://dynamics.microsoft.com/en-us/business-central/](https://dynamics.microsoft.com/en-us/business-central/) page. The **Dynamics 365 Business Central** content pack gives you a more integrated experience with Microsoft 365, but otherwise the trial experience is the same.
 
