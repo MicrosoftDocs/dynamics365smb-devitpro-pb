@@ -32,7 +32,7 @@ Setting the attribute on a method. Each method must be explicitly marked with `[
 ```AL
 procedure MyProcedureForCloud()
     begin
-        Message('My procedure is available to any extension.');
+        Message('My procedure is available in cloud, but cannot call any onprem method.');
     end;
 
 [Scope('OnPrem')]
