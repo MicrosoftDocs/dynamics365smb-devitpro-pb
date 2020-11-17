@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 10/28/2020
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prodlong](includes/prodlong.md)]
 
@@ -41,13 +41,14 @@ The following features are not intended for use in on-premises deployments. Ther
 
 |**Feature**  |**Description**  |
 |---------|---------|
-|Inviting the external accountant |Integration with [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
 |Default Power BI reports |Automatic deployment and configuration of Power BI reports is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
 |Bulk Invoicing from Microsoft Bookings |Integration with the Bookings app that is available in certain Microsoft 365 subscriptions is not supported.  |
 |Create workflow from Power Automate |Power Automate does not integrate with on-premises workflow functionality. You cannot create new workflows based on existing Power Automate templates in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)]. |
 |Sandbox environments  |The sandbox environment that you can use to develop extensions against for the new developer experience cannot connect to an on-premises deployment. For more information, see [Get started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md). |
 |In-product search |In online deployments of [!INCLUDE[prodshort](includes/prodshort.md)], Tell Me, the in-product search, also searches in content on the docs.microsoft.com site. For on-premises deployments, this is not supported.  |
 |Late Payment Prediction|The Late Payment Prediction functionality is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
+|Use the company hub to manage work across multiple companies.|Integration with the company hub is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)]. |
+|Inviting the external accountant |Integration with the now deprecated [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] and the existing company hub is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
 
 ## See Also
 

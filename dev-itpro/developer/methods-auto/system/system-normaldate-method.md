@@ -37,7 +37,8 @@ The input date. You can enter a closing date or a normal date. A run-time error 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
  The input date is a regular date.
   
 ```
@@ -56,7 +57,8 @@ end;
   
  **The normal date for 04/04/14 is 04/04/14.**  
   
-## Example  
+## Example 2
+
  The input date is a closing date.
   
 ```  

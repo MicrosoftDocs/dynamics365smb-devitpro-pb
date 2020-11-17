@@ -1,5 +1,6 @@
 ---
-title: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods"
+title: "Field Calculation Methods"
+description: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods"
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -12,7 +13,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-# CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods
+# Field Calculation Methods
 
 The following methods perform various actions on fields:  
 

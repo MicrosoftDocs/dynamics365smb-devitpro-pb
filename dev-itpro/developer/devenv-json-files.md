@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/21/2020
+ms.date: 11/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ In an AL project there are two JSON files; the `app.json` file and the `launch.j
 
 ## <a name="Appjson"></a>App.json file
 
-The following table describes the settings in the `app.json` file:
+The following table describes the settings in the `app.json` file. For an example `app.json` file, see [Business Central Performance Toolkit](https://github.com/microsoft/ALAppExtensions/edit/master/Modules/DevTools/BusinessCentralPerformanceToolkit/app.json).
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -39,7 +39,7 @@ The following table describes the settings in the `app.json` file:
 |help|No, but required for AppSource submission|URL to an online description of the extension. The link is used in AppSource and can be the same as the value of the `contextSensitiveHelpUrl` property or a different link, such as a link to your marketing page.|
 |url|No, but required for AppSource submission|URL of the extension package.|
 |logo|No, but required for AppSource submission|Relative path to the app package logo from the root of the package.|
-|dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {  "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"},{}]`. <br>**Note:** For dependencies to the System Application and Base Application these are no longer listed as explicit dependencies, but captured in the `application` setting as a reference to the application package. Must be filled in with the version number of the Application package. See `application` below. <br>**Note:** The version specified defines the minimum version for the dependency. At runtime and when downloading symbols, the latest version of the dependency satisfying the specified name, publisher and, minimum version will be returned.|
+|dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {"id": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"},{}]`. <br>**Note:** For dependencies to the System Application and Base Application these are no longer listed as explicit dependencies, but captured in the `application` setting as a reference to the application package. Must be filled in with the version number of the Application package. See `application` below. <br>**Note:** The version specified defines the minimum version for the dependency. At runtime and when downloading symbols, the latest version of the dependency satisfying the specified name, publisher and, minimum version will be returned. When `runtime` is set to 4.0 or earlier, use `appId` instead of `id`.|
 |screenshots|No|Relative paths to any screenshots that should be in the extension package.|
 |platform|Yes, if system tables are referenced in the extension|The minimum supported version of the platform symbol package file, for example: "16.0.0.0". See the [Symbols](devenv-symbols.md) for the list of object symbols contained in the platform symbol package file.|
 |application|Yes, if base application is referenced in the extension|The supported version of the system and base application package file, for example: "16.0.0.0". The file name of this reference is Microsoft_Application.app and the `name` is `Application`. For code-customized base applications, the Microsoft_Application.app file can be modified to reference the code-customized base application instead. It is important to keep `"name": "Application"` in the extension, but information about publisher can be changed and the .app file can be renamed. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md).|
@@ -58,6 +58,7 @@ The following table describes the settings in the `app.json` file:
 |applicationInsightsKey|No|The instrumentation key of the Azure Application Insights resource for monitoring operations, for example, like app secrets retrieval by extensions. <br><br>For more information, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).|
 |keyVaultUrls|No|List of URLs of key vaults that the extension from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](devenv-app-key-vault-overview.md).|
 |suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example `"suppressWarnings": [ "AL0458" ]`. It is also possible to use `#pragma` directives for suppressing warnings for specific areas of code. For more information, see [Pragma Warning Directive](directives/devenv-directive-pragma-warning.md) and [Suppressing Warnings](devenv-deprecating-with-statements-overview.md#suppressing-warnings).|
+
 
 ## <a name="Launchjson"></a>Launch.json file
 
@@ -90,7 +91,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 |attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
-|forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version.|
+|forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version. This can be useful for troubleshooting upgrade issues. <br><br>**Note:** The `forceUpgrade` setting requires the package ID to be changed.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
 

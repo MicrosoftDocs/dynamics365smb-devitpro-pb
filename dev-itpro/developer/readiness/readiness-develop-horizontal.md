@@ -24,7 +24,7 @@ As an app builder, your paths forward can be:
 
 - Build an **Add-on app**, which enriches the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] experience. This type of app, which integrates into user experience of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], allows you to build an interface based on how you want your data to flow between [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and your service offering. Read more [here](readiness-add-on-apps.md).
 
-Learn more details on how you can build a Business Central offering in the **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
+Learn more details on how you can build a Business Central offering <!--in the **Ready to Go** program details. Read more-->[here](readiness-ready-to-go.md).
 
 ## See Also
 

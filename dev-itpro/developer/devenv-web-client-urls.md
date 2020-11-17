@@ -1,7 +1,8 @@
 ---
 title: "Web Client URL"
+description: Learn about the URL for opening the Web client. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +36,7 @@ This article describes how you can construct URLs. A well-constructed URL can be
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
 ```
-https://<hostname>[/<aadtenantid>][/<environmentname>]/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[customize]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[showheader=<0|1>]&[isembedded=1]&[pagesize=<number of lines>]&[redirect<0|1>]&[extension=<extensionID>]
+https://<hostname>[/<aadtenantid>][/<environmentname>]/?[company=<companyname>]&[page|query|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[customize]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[showheader=<0|1>]&[isembedded=1]&[pagesize=<number of lines>]&[redirect<0|1>]&[extension=<extensionID>]
 ```
 
 <!-- onprem
@@ -90,6 +91,7 @@ The following table describes the parameters of the URL for displaying a page.
 |`<environmentname>`|(online only) Specifies the display name of sandbox or production environment to target.|
 |`company`|The name of the company in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] that you want to target.<br /><br /> If you only have one company, then you can omit this parameter.|
 |`page`|Opens a page object.|
+|`query`|Opens a query object. **Note:** The [TopNumberOfRows property](properties\devenv-topnumberofrows-property.md) is ignored when the query opens in the browser.|
 |`report`|Opens a report object.|
 |`table`|Opens a table object. Opening a table requires special permissions. For more information about opening a table, see [Viewing Table Data](devenv-view-table-data.md).|
 |`ID`|The ID of the page, report, or table to open. |

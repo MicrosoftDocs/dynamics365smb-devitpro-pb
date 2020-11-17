@@ -1,7 +1,8 @@
 ---
-title: "Configuring Internet Information Services for Dynamics 365 Business Central"
+title: "Configuring Internet Information Services"
+description: Learn to configuration of Internet Information Service that is required for running the web client.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,6 +51,6 @@ On the server farm in IIS, add or edit a routing rule to include a server variab
 
 |  Name  |  Value  |  Replace  |
 |--------|---------|-----------|
-|`HTTP_X_FORWARED_PROTO`|`http` ot `https`|`true`|
+|`HTTP_X_FORWARED_PROTO`|`http` or `https`|`true`|
 ## See Also  
  [Business Central Web Server Overview](web-server-overview.md)   

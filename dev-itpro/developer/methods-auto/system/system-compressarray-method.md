@@ -49,21 +49,9 @@ The string array that you want to compress.
  In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], it is not supported to use the **COMPRESSARRAY** method on multidimensional arrays. In earlier versions, **COMPRESSARRAY** works for arrays of arrays.  
   
 ## Example  
- This example shows how to use the **COMPRESSARRAY** method. The input array has the following values.  
-  
-||  
-|-|  
-|Joe Raybon|  
-|One Meca Way|   
-|Atlanta||
-  
- The output StringArray has the following values.  
-  
-||  
-|-|  
-|Joe Raybon|  
-|One Meca Way|  
-|Atlanta||  
+ This example shows how to use the **COMPRESSARRAY** method. The input array has the following values: Joe Raybon, One Meca Way, Atlanta.   
+
+The output StringArray has the following values: Joe Raybon, One Meca Way, Atlanta.  
   
  All non-empty entries have been moved to the beginning of the array.  
  

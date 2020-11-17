@@ -4,11 +4,12 @@
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Business Central on Microsoft Learn](/learn/browse/?products=dynamics-business-central)
+### [Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
 <!--#### What the partner's responsibilities are -->
+### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
@@ -16,16 +17,18 @@
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-### Get started with building apps
+<!--### Get started with building apps
 #### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 #### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)
+#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
 ### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
-#### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### Deployment
+##### [Overview](embedapps\embed-app-deployment-overview.md)
+##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Using Application Family](deployment/embed-app-using-application-family.md)
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
@@ -38,9 +41,10 @@
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ## Sell
-### [Become a Reseller](/dynamics365/business-central/product-sell?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.md)
 ### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
@@ -58,15 +62,15 @@
 ### [Technical Support](technical-support.md)
 ### Help system
 #### [User Assistance Model](user-assistance.md)
-#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
-#### [Authoring Guide](help/writing-guide.md)
-#### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
+#### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
-<!--#### [Custom Help Toolkit](help/custom-help-toolkit.md)
+#### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 #### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
-#### [Custom Help Toolkit: The NavFieldsTooltips tool](help/custom-help-toolkit-NavFieldsTooltips.md)-->
+#### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
+#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Authoring Guide](help/writing-guide.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -172,9 +176,9 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### Ready to Go
-#### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The "Ready to Go" Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+#### [Get Onboarded as a partner](developer/readiness/readiness-ready-to-go.md)
+#### [The Business Central Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
@@ -268,6 +272,7 @@
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
 ### Partial Records
 #### [Using Partial Records](developer/devenv-partial-records.md)
 #### [FAQ](developer/devenv-partial-records-faq.md)
@@ -691,19 +696,21 @@
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
-## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## Connect Apps
+### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
-## Integrating with Common Data Service
-### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
+## Integrating with Microsoft Dataverse
+### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
-### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
-### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
-### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
+### [Table Modeling](powerplatform/powerplat-entity-modeling.md)
+### [Application Lifecycle Management for Solutions that use Virtual Tables](powerplatform/powerplat-app-lifecycle-management.md)
+### [Business Central and Microsoft Dataverse Admin Reference](powerplatform/powerplat-admin-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
 <!-- Microsoft Teams -->
@@ -757,6 +764,7 @@
 #### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
 #### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
 #### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
+#### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -781,6 +789,7 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
+#### [Reducing Database Size](administration/database-reduce-data.md)
 ### Business Central Mobile App
 #### [Introducing the Mobile App](developer/devenv-introducing-business-central-mobile-app.md)
 #### [Preparing For and Installing the Mobile App](deployment/install-business-central-app.md)
@@ -835,10 +844,17 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Telemetry Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+#### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+#### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
+#### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
+#### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
-#### [Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+#### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
+#### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
+#### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 ### [Registering Your Deployment on Azure](administration/register-app-azure.md)
@@ -908,6 +924,7 @@
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--on-prem ends-->

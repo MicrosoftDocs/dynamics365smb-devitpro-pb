@@ -1,8 +1,9 @@
 ---
 title: "Deprecated Features in W1"
+description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/11/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +14,11 @@ caps.latest.revision: 16
 ---
 
 # Deprecated Features in W1
-This topic describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will change with future releases, and might not include each deprecated feature.
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will change with future releases, and might not include each deprecated feature.
 
-Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for a variety of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative.
+Deprecated features won't be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for different kinds of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed, either the feature itself or an extension of it, you should look for or develop an alternative.
 
-The next sections in this topic give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
+The next sections give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
 
 |State  |Examples  |
 |---------|---------|
@@ -25,21 +26,49 @@ The next sections in this topic give a brief description of the deprecated featu
 |Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
 
+## Deprecated Features in 2021 release wave 2
+
+### Standard APIs, Beta version
+
+The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced? |	Why?|
+|-----------------------------|-----|
+|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
+
+### Automation APIs, Beta version
+
+The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced?|	Why?|
+|----------------------------|------|
+|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs will not be available in new releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. It's recommended that integrations move to v2.0 of the Automation APIs.|
+
+
 ## Deprecated Features in 2021 release wave 1
 
-### OData v3 
+### Expose UI pages as SOAP endpoints (Warning)
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1, a warning will be shown if you expose UI pages as SOAP endpoints. The capability of exposing UI pages as SOAP endpoints will be removed in a later release.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced | SOAP has been superseded by OData V4. SOAP endpoints will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
+
+### OData V3 
 The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed | OData v3 has been superseded by OData v4. OData v3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It is recommended that integrations are migrated to OData v4 as soon as possible.  |
+|Removed | OData V3 has been superseded by OData v4. OData V3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
 
 ### Basic Auth / Web Service Access Keys for SaaS 
 The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises Basic Auth will remain an option for the time being. This has no impact on how [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connects to external services.|
+|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connects to external services.|
 
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as obsolete:pending in 2020 release wave 1.

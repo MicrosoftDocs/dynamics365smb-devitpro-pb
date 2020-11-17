@@ -27,6 +27,7 @@ The following table lists the updates that have been released for 2019 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4583512](https://support.microsoft.com/help/4583512)|Update 15.12|November 2020|Application Build 5.12.45390</br>Platform Build 15.0.45381|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583500](https://support.microsoft.com/help/4583500)|Update 15.11|October 2020|Application Build 15.11.44966</br>Platform Build 15.0.44957|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4576663](https://support.microsoft.com/help/4576663)|Update 15.10|September 2020|Application Build 15.10.44664</br>Platform Build 15.10.44655|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4563414](https://support.microsoft.com/help/4563414)|Update 15.9|August 2020|Application Build 15.9.44343</br>Platform Build 15.0.44325|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

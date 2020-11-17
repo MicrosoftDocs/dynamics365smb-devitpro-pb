@@ -1,5 +1,10 @@
-### Pre-sales performance evaluation
-
+---
+author: edupont04
+ms.service: dynamics365-business-central
+ms.topic: include
+ms.date: 11/10/2020
+ms.author: edupont
+---
 If you want to provide a prospect with an online environment where you want to demonstrate the performance and reliability of [!INCLUDE [prodshort](prodshort.md)] online in addition to demonstrating functionality, you must take a few extra steps.  
 
 To demonstrate the functionality of the default version of [!INCLUDE [prodshort](prodshort.md)], without focusing on performance, you can quite simply use your own trial experience based on a Microsoft 365 demo account. We recommend that you show the full functionality of the default version by switching the tenant to the 30 day trial and the associated My Company. You can then enable the *Premium* user experience in the new My Company's **Company Information** page, populate the new company with the data required for their evaluation scenarios, and present the environment to the prospect. For more information, see [Your own trial](../../administration/demo-environment.md#your-own-trial).  

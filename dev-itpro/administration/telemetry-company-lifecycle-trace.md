@@ -131,10 +131,10 @@ Occurs when a company has been copied from another company successfully.
 
 ### General dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
+|Dimension|Description or value|
+|---------|-----|
 |message|**Company copied: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was copied.</li><li>`{companyNameDestination}`is the name of new company that was created.</li></ul>|
-|severityLevel|**2**||
+|severityLevel|**2**|
 
 ### Custom dimensions
 
@@ -166,10 +166,10 @@ Occurs when a copying a company was canceled.
 
 ### General dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
+|Dimension|Description or value|
+|---------|-----|
 |message|**Company copied canceled: {source company name} to {destination company name}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul> |
-|severityLevel|**2**||
+|severityLevel|**2**|
 
 ### Custom dimensions
 
@@ -200,10 +200,10 @@ Occurs when a company failed to be copied from another company.
 
 ### General dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
+|Dimension|Description or value|
+|---------|-----|
 |message|**Company copy failed: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul>|
-|severityLevel|**3**||
+|severityLevel|**3**|
 
 ### Custom dimensions
 

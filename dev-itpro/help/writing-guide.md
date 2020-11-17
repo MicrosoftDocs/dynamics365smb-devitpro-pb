@@ -1,59 +1,93 @@
 ---
 title: Authoring guide for Business Central
-description: Tips and tricks for authoring in MarkDown files for Dynamics 365 Business Central.
+description: Tips and tricks for authoring in MarkDown files when you extend or customize the Help for Dynamics 365 Business Central.
 author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 11/04/2020
 ms.author: edupont
 ---
 
 # Authoring Guide for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-If you are contributing to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help, or if you are customizing and extending the Microsoft content for your own solution, then you will probably want to use the same tools, processes, and style guide that Microsoft uses.  
-
-This page shows tips and tricks for authoring in MarkDown based on what the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] team of technical writers learnt when they started in MarkDown in 2015.
+If you are contributing to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help, or if you are customizing and extending the Microsoft content for your own solution, you will probably want to use the same tools, processes, and style guide that Microsoft uses.  
 
 ## Resources
 
-- The [Microsoft Style Guide](/style-guide/welcome/) is published online
-
+- The [Microsoft Writing Style Guide](/style-guide/welcome/) is published online
+  
+  The content on the Docs.microsoft.com site generally follows the Microsoft Writing Style Guide. The content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] varies in certain ways, partly with product-specific terminology, and a generally more conservative approach to contractions, for example.
 - [Extend, Customize, and Collaborate on the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 
 - The [Docs Contributor Guide](/contribute/) has many tips and tricks for authoring in MarkDown
 
 - The [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack) adds productivity tools to Visual Studio Code  
 
-## Authoring in Markdown
+## Write for accessibility
 
-The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content is styled using a MarkDown syntax as described below. You can also get a lot of guidance in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
+At Microsoft, we write for accessibility, which also means that the same content applies to interactions with the software across devices, regardless of input method, for example. For more information, see [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) in the Microsoft Writing Style Guide.  
+
+The accessibility requirements also impacts metadata for illustrations, such as the following:
+
+```markdown
+:::image type="content" source="media/illustration.png" alt-text="Text used by screen readers":::
+```
+
+Most of Microsoft's articles use a different MarkDown formatting for illustrations, such as the following:
+
+```markdown
+![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do")
+```
+
+Both formats are valid MarkDown, and both formats are supported by DocFx.exe. For more information, see [Images](/contribute/markdown-reference#images) in the Docs Contributor Guide.  
+
+## Authoring in MarkDown
+
+The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content is styled using a MarkDown syntax as described below. Extended guidance is available in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
 
 ### Headings
 
-Use ```#``` for headings. For more information, see [Headings](/contribute/markdown-reference#headings) in the Docs Contributor Guide.
+Use `#` for headings. For more information, see [Headings](/contribute/markdown-reference#headings) in the Docs Contributor Guide.  
+
+In the source files for the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content, which publishes as English (US) on the Docs.microsoft.com site, the title of an article is expected to use Title Case (capitalize each word, except prepositions) whereas subsequent headings use Sentence case (capitalize the first word, only). The Microsoft Writing Style Guide recommends a different approach.
+
+### Metadata
+
+The content on the Docs.microsoft.com site includes metadata that is used by the site and feeds our internal telemetry dashboards. The metadata is required for Microsoft's content but not necessarily for content that extends or customizes Microsoft's content.
+
+However, some metadata is recommended as a best practice as outlined in the following table.
+
+|Metadata tag  |Description  |
+|---------|---------|
+|title |Used by search engines. Recommended length of 60-70 characters, including spaces. We recommend that the title metadata is the same as the first heading in the article.|
+|description|Used by search engines. Recommended length of 100-160 characters, including spaces. |
+|author     |GitHub account of the main contributor to the article. |
+|ROBOTS|Please apply this tag if you customize one of Microsoft's articles and deploy that to your website. By applying the metadata `ROBOTS: NOINDEX, NOFOLLOW`, you help make sure that search engines will find the original article rather than your customized version. Users of your Help will still be able to find the customized article through context-sensitive Help links and other links.  |
 
 ### Bulleted lists
 
-Use ```-``` to create bullets, for example:
+Use `-` or `*` to create bullets as shown in the following example:
 
+```MarkDown
 The following options are available:
 
-```
 - first option
 - second option
 - third option
 ```
 
 > [!TIP]
-> The Markdown validation in the current version of the Docs Authoring Pack recommends a blank line between options in a bulleted list.
+> It doesn't matter if you use `-` or `*`, but the current version of the Docs Authoring Pack requires each article to use one or the other and not mix them up.
+
+As a best practice, the MarkDown validation in the current version of the Docs Authoring Pack recommends a blank line between options in a bulleted list for better readability in MarkDown.
 
 ### Ordered lists
 
-Use numbers for ordered lists. No space between the lines, we'll let the template for the documentation website take care of that.
+Use numbers for ordered lists. Do not add spaces between the lines.
 
-```
+```MarkDown
 1. Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Journal**, and then choose the related link.
 2. In the **Payment Journal** window, on the first journal line, enter the relevant information about the payment entry.
 3. To apply a single vendor ledger entry:
@@ -68,7 +102,7 @@ Use ```**bold**``` and ```*italics*```
 
 For tables in the body, use the markdown syntax. The Docs Authoring Pack for Visual Studio Code has a shortcut for adding a table, and you can also use [Tables Generator](https://tablesgenerator.com/markdown_tables).
 
-```
+```MarkDown
 | To   | See                       |
 |------|---------------------------|
 |<text>|<link>|
@@ -76,16 +110,19 @@ For tables in the body, use the markdown syntax. The Docs Authoring Pack for Vis
 | | |
 ```
 
-For nested tables in ordered and unordered lists use HTML-syntax. Markdown does not support tables very well. If you use the markdown syntax the list will be broken, the table will align left and list will be renumbered.
+MarkDown syntax for nested tables is limited, so we recommend using HTML-syntax for nested tables in ordered and unordered lists use HTML-syntax.
 
 ### Comment syntax
 
-Useful for sections that are not ready and will not pass the build check.
-```
+Useful for sections that are not ready and will not pass build checks.
+
+```MarkDown
 <!-- Comments -->
 ```
-Examples
-```
+
+Examples:
+
+```MarkDown
 <!-- [Managing Payables](payables-manage-payables.md)-->
 <!-- This is a paragraph that spans more lines and I can just put the comment tag
 at the beginning and end of it -->
@@ -148,11 +185,11 @@ From an article, you can create a link to a specific heading in another article.
 
 ```[link text](targetarticlename#target-heading)```
 
-targetarticlename is the file name of the article, including the .md file type.
+*targetarticlename* is the file name of the article, including the .md file type.
 target-heading is the text of the heading that you want to link to, except it is all lowercase and spaces between words are replaced with hyphens.
 
-For example, to link to the heading "How Autoscaling Works" in the article Autoscaling.md", add the following code:
-```[link text](Autoscaling.md#how-autoscaling-works)```
+For example, to link to the heading "How autoscaling works" in the article Autoscaling.md, add the following code:
+```[How autoscaling works](Autoscaling.md#how-autoscaling-works)```
 
 ### <a name="anchorlink"></a>Links to anchors across languages
 
@@ -170,7 +207,7 @@ Enter four spaces in front of the non-step para. Otherwise, the non-step para wi
 
 The TOC structure of the TOC.md file is as follows:
 
-```
+```MarkDown
 #[Overview](overview.md)
  ##[Topic 1](topic-1.md)
  ##[Topic 2](topic-2.md)
@@ -178,21 +215,25 @@ The TOC structure of the TOC.md file is as follows:
  ##[Topic 4](topic-4.md)
 ```
 
-### Standard Phrases
+### Standard phrases
 
-All fields in Business Central have tooltips. Therefore, do not document fields in Help. To refer readers to the tooltips, use this standard phrase where relevant:
+All fields in Business Central have tooltips; therefore, do not document fields in Help. To refer readers to the tooltips, use this standard phrase where relevant:
 
 > "Choose a field to read a short description of the field or link to more information."
 
 For more information, see [Business Central User Assistance Model](../user-assistance.md).
 
-### Topic Titles
+### Recycle content
+
+Rather than copy-pasting content that you want to surface in two or more places, use *includes*. For more information, see [Included Markdown files](/contribute/markdown-reference#included-markdown-files) in the Docs Contributor Guide.  
+
+### Topic titles
 
 - Use imperative verb form for step-based topics ("Pay vendors").
 - Use gerund verb form for conceptual, non-step topics. ("Paying Vendors")
 - Use nouns for highest-level topics. ("Sales")
 
-### File Naming
+### File naming
 
 #### Rules
 

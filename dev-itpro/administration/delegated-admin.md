@@ -1,6 +1,6 @@
 ---
 title: Delegated administrator access to Business Central Online
-description: Learn about how you as the internal administrator or as a reselling partner can manage online tenants of Dynamics 365 Business Central.  
+description: Learn about how you as the reselling partner can help customers manage Dynamics 365 Business Central online and offer technical support, provided that you have given your users the Admin agent or Helpdesk agent roles.  
 author: edupont04
 
 ms.service: dynamics365-business-central
@@ -8,13 +8,17 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 10/01/2020
+ms.date: 10/28/2020
 ms.author: edupont
 ---
 
 # Delegated Administrator Access to Business Central Online
 
-As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you can set up your employees to work in Partner Center. There are two security groups, Admin Agents and Helpdesk Agents, in the partner's Azure Active Directory (Azure AD) tenant that are used for *delegated administration*. When a customer grants the delegated administration privilege to a partner:
+As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you must set up your employees to work in Partner Center, and you must assign employees to support your customers. When you request a reseller relationship with a customer, you can choose to include *delegated administration* privileges for Azure Active Directory (Azure AD) and Office 365 in the request email that you send to the customer.  
+
+You must already have set up users in your own tenant in Partner Center so that the **Assists your customers as** field specifies the relevant role for this user to be able to login in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environments as either *Admin agent* or *Helpdesk agent*. These roles are used when the customer accepts the relationship, so you can assign the right people to the customer's Azure AD tenant.  
+
+When a customer grants the delegated administration privilege to a partner:
 
 - The **Admin Agent** group is assigned to the **Global Administrator** role in the customer's Azure AD tenant.  
 - The **Helpdesk Agent** group is assigned to the **Helpdesk Administrator** role in the customer's Azure AD tenant.  
@@ -24,7 +28,7 @@ Based on the roles assigned, members of both groups can sign in to the customer'
 For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 > [!TIP]
-> Always include the domain or the Azure Active Directory ID of the customer in the URL when you login as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso.com/admin`. This way, you always know exactly which customer you are trying to access.
+> Always include the domain or the Azure Active Directory ID of the customer in the URL when you log in as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso.com/admin`. This way, you always know exactly which customer you are trying to access.
 
 [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 

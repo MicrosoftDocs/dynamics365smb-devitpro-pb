@@ -50,14 +50,15 @@ Dialog windows that are opened by an object are closed when the object terminate
   
 -   Enter messages as text constants.  
   
--   Write messages using active voice. For example, write “Processing items” instead of writing “Items are being processed.”  
+-   Write messages using active voice. For example, write "Processing items" instead of writing "Items are being processed."  
   
 -   Align the \# field to the left with at least one space character between the text and the variable.
 
 > [!NOTE]
 > With the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)], you can use @ characters instead of # characters for the *String* parameter to display the value as percentage and a progress indicator. The percentage value that is displayed is the percentage of the variable value from 0 to 9999. This is not supported in the [!INCLUDE[webclient](../../includes/webclient.md)].  
   
-## Example  
+## Example 1
+
  This example shows how to use the dialog.OPEN method.  
   
  ```
@@ -85,7 +86,8 @@ end;
   
  Every one second, the dialog window updates with the new value of *MyNext* until it reaches 4, then the dialog window closes.  
   
-## Example  
+## Example 2
+
  This example shows how to use the dialog.OPEN method to display a progress indicator in the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)]. The progress indicator will not display in the [!INCLUDE[webclient](../../includes/webclient.md)].
   
 ```  

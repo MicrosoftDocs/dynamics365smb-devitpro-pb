@@ -31,7 +31,7 @@ The following table describes different aspects of using the application family 
 |Microsoft Power BI|Supported for connecting to the environment data from Power BI and embedding Power BI pages in the [!INCLUDE[webclient](../developer/includes/webclient.md)].  |[Enabling Your Business Data for Power BI](/dynamics365/business-central/admin-powerbi) |
 |Outlook Add-in | Not supported | [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook)|
 |Excel Add-in|Supported|[Setting up the Excel Add-In for Editing Business Central Data](../administration/configuring-excel-addin.md)|
-|CDS integration| Supported  |[Integrating with Common Data Service](/dynamics365/business-central/admin-common-data-service)|
+|CDS integration| Supported  |[Integrating with Microsoft Dataverse](/dynamics365/business-central/admin-common-data-service)|
 |Power Automate, Power Apps, Logic apps |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] standard connector currently can't be used (support is coming soon). The ISV needs to build a custom connector. The custom connector is required anyway, also for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments, if you want to include data from other tables that aren't included with the standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connector. |[Custom connector FAQ for Azure Logic Apps, Power Automate, and Power Apps](/connectors/custom-connectors/faq)|  
 |Cloud Migration Tool|Supported|[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)|
 
