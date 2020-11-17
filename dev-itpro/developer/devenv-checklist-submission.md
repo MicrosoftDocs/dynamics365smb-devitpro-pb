@@ -61,7 +61,7 @@ The submitted apps will be extracted and investigated following this list:
 6. For every country in the submission list, we perform the same validation:
    - A sandbox container based on the Business Central Artifacts with the right country version is created.
    - Any dependency apps not included in the submission are installed. **If any installation fails, the submission is rejected.**
-   - In order of dependencies, all apps in the submission are tested using AppSourceCop analyzer. For more information, see [AppSourceCop Analyzer](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop)
+   - In order of dependencies, all apps in the submission are tested using AppSourceCop analyzer. For more information, see [AppSourceCop Analyzer](analyzers/appsourcecop.md)
      - If any **breaking changes are identified, the submission is rejected.**
      - If mandatory affixes **are not included on all object names, the submission is rejected.**
    - In order of dependencies, all prior versions of the apps are published and installed. **If any installation fails, the submission is rejected.**
