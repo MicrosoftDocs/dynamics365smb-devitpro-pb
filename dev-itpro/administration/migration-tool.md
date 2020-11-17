@@ -46,9 +46,10 @@ There are a few key points that need to be understood before you start the proce
     If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to be overwritten, do not configure the connection.
 * All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
 * If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
-* In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the migration tool has been optimized to migrate databases up to 30 GB.  
-
-    If your database is larger than 30 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard, and you can view the migration status of each company in the [Cloud Migration Management](migration-management.md) page.  
+* In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the amount of data the migration tool can move to the online environment is limited to 80 GB.  
+    If your database is larger than 80 GB, we recommend that you reduce the number of companies that you are migrating data for or delete outdated data in tables that contain log entries and archived records. Also make sure to review [how the database capacity is managed](../dev-itpro/administration/tenant-admin-center-capacity) in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment. 
+        
+    You can specify which companies to include in the migration in the assisted setup wizard, and you can view the migration status of each company in the [Cloud Migration Management](migration-management.md) page.  
 
     If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. For more information, see [Adding a tenant to an existing runtime service, or updating companies](#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).  
 
