@@ -13,7 +13,7 @@ ms.author: jswymer
 # Get started with the Container Sandbox Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to the AL development environment. 
 
-You set up a container sandbox by running the **SANDBOX ENVIRONMENT (CONTAINER)** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whether you want an Azure-hosted or locally hosted container sandbox. See the next section for details.
+You set up a container sandbox by running the **Container Sandbox Environment** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whether you want an Azure-hosted or locally hosted container sandbox. See the next section for details.
 
 > [!TIP]
 > [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] also offers an online sandbox. For more information, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
@@ -29,7 +29,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
     To get a free subscription and read more information, see [https://azure.microsoft.com](https://azure.microsoft.com).
 
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **Container Sandbox Environment**, and then select the relevant link.
 3. Choose **Host in Azure**. If prompted, enter the user name and password of your Azure subscription. 
 
     The Azure portal opens to display a custom deployment form. 
