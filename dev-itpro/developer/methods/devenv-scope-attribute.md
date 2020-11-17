@@ -3,7 +3,7 @@ title: "Scope Attribute"
 description: "The Scope attribute in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,29 +13,32 @@ author: SusanneWindfeldPedersen
 ---
 
 # Scope Attribute
-Specifies the scope of a method. The attribute has two options `OnPrem` and `Cloud`. The default option for a method is `[Scope('Cloud')]`, which means that the method can be accessed from Web services. 
+
+Specifies the scope of a method. The attribute has two options `OnPrem` and `Cloud`. The default option for a method is `[Scope('Cloud')]`, which means that the method can be accessed from Web services. For more information, see [Compilation Scope Overview](../devenv-compilation-scope-overview.md).
 
 > [!NOTE]  
 > In previous versions `OnPrem` was equivalent to `Internal` and `Cloud` was equivalent to `External`. Both `Internal` and `External` options are being deprecated.
 
-## Syntax  
+## Syntax
+
 ```AL
 [Scope('OnPrem')]
 ```
   
 ## Example
-Setting the attribute on a method. Each method must be marked with `[Scope('OnPrem')]`.
+
+Setting the attribute on a method. Each method must be explicitly marked with `[Scope('OnPrem')]` because default is `[Scope('Cloud')]`.
 
 ```AL
 procedure MyProcedureForCloud()
     begin
-        Message('My procedure is available externally.');    
+        Message('My procedure is available to any extension.');
     end;
 
 [Scope('OnPrem')]
 procedure MyProcedureForOnPrem()
     begin
-        Message('My procedure is available internally.');    
+        Message('My procedure is not available to a cloud extension.');
     end;
 
 ```
