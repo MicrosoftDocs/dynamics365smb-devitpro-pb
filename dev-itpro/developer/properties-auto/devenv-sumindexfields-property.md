@@ -2,7 +2,7 @@
 title: "SumIndexFields Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 Specify which fields should be the "aggregation fields" in a **SumIndexField Technology (SIFT)** index, if applicable.  
 
 ## Applies to
--   Key
+-   Table Key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

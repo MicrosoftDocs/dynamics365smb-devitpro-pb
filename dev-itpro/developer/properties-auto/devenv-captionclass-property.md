@@ -2,7 +2,7 @@
 title: "CaptionClass Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.
 
 ## Applies to
--   Field
+-   Table Field
 -   Page Label
 -   Page Field
 

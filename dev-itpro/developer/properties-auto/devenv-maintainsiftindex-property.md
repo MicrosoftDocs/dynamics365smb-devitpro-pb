@@ -2,7 +2,7 @@
 title: "MaintainSiftIndex Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 Sets the value to determine whether SIFT structures (indexed views) should be created in SQL Server to support the corresponding SumIndexFields part of the Dynamics 365 Business Central key.  
 
 ## Applies to
--   Key
+-   Table Key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value  

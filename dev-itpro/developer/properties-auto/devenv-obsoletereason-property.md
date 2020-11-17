@@ -2,7 +2,7 @@
 title: "ObsoleteReason Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,9 +19,9 @@ author: SusanneWindfeldPedersen
 Specifies why a table, field, or key has been marked as Pending or Obsolete in the ObsoleteState property.
 
 ## Applies to
--   Field
+-   Table Field
 -   Table
--   Key
+-   Table Key
 -   Codeunit
 -   Enum Type
 -   Enum Value

@@ -2,7 +2,7 @@
 title: "DataClassification Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ Specifies the classification to be applied on the data contained in the table.
 
 ## Applies to
 -   Table
--   Field
+-   Table Field
 
 ## Property Value
 

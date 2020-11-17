@@ -2,7 +2,7 @@
 title: "TestTableRelation Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 Sets whether to include this field when evaluating field relations between primary and secondary indexes.
 
 ## Applies to
--   Field
+-   Table Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
