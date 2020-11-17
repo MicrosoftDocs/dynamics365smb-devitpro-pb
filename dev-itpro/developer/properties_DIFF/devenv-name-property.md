@@ -20,7 +20,6 @@ Sets the name of the object. The name is used for internal identification of the
 
 - Codeunits  
 - Fields  
-- Menu items  
 - Pages  
 - Queries  
 - Reports  

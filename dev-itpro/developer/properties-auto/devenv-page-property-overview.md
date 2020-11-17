@@ -52,7 +52,11 @@ The following properties all apply to the page object, only some of these proper
 |[Editable Property](devenv-editable-property.md)||<ul><li>Page object</li><li>Group control</li><li>Field control</li><li>Part control</li></ul>|
 |[Ellipsis Property](devenv-ellipsis-property.md)||<ul><li>Action</li></ul>|
 |[Enabled Property](devenv-enabled-property.md)|X|<ul><li>Group control</li><li>Field control</li><li>Part control</li><li>ActionGroup</li><li>Action</li></ul>|
+|[EntityCaption Property](devenv-entitycaption-property.md)||<ul><li>Page object</li></ul>|
+|[EntityCaptionML Property](devenv-entitycaptionml-property.md)||<ul><li>Page object</li></ul>|
 |[EntityName Property](devenv-entityname-property.md)||<ul><li>Page object</li><li>Part control</li></ul>|
+|[EntitySetCaption Property](devenv-entitysetcaption-property.md)||<ul><li>Page object</li></ul>|
+|[EntitySetCaptionML Property](devenv-entitysetcaptionml-property.md)||<ul><li>Page object</li></ul>|
 |[EntitySetName Property](devenv-entitysetname-property.md)||<ul><li>Page object</li><li>Part control</li></ul>|
 |[ExtendedDataType Property](devenv-Extendeddatatype-property.md)||<ul><li>Field control</li></ul>|
 |[Extensible Property](devenv-extensible-property.md)||<ul><li>Page object</li></ul>|
@@ -72,9 +76,11 @@ The following properties all apply to the page object, only some of these proper
 |[Lookup Property](devenv-lookup-property.md)||<ul><li>Field control</li></ul>|
 |[ModifyAllowed Property](devenv-modifyallowed-property.md)||<ul><li>Page object</li></ul>|
 |[MultipleNewLines Property](devenv-multiplenewlines-property.md)||<ul><li>Page object</li></ul>|
+|[Multiplicity Property](devenv-multiplicity-property.md)||<ul><li>Page part</li></ul>|
 |[MinValue Property](devenv-minvalue-property.md)||<ul><li>Field control</li></ul>|
 |[MaxValue Property](devenv-maxvalue-property.md)||<ul><li>Field control</li></ul>|
 |[MultiLine Property](devenv-multiline-property.md)||<ul><li>Field control</li></ul>|
+|[NavigationPageId Property](devenv-navigationpagedd-property.md)||<ul><li>Field control</li></ul>|
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>Field control</li></ul>|
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Field control</li></ul>|
 |[ObsoleteState Property](devenv-obsoletestate-property.md)||<ul><li>Page object</li><li>Action</li><li>Action area</li><li>Action group</li><li>Action separator</li><li>Area</li><li>Chart part</li><li>Field control</li><li>Group</li><li>Label</li><li>Part</li><li>System part</li><ul>|

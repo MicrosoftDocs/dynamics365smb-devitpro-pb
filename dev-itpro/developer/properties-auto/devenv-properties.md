@@ -26,6 +26,7 @@ In the sections below, properties are sorted according to the object(s) they app
 - [Report Properties](devenv-report-properties.md)  
 - [XMLPort Properties](devenv-xmlport-properties.md)  
 - [Control Add-In Properties](devenv-control-addin-properties.md)
+- [Enum Properties](devenv-enum-properties.md)
 - [View Properties](devenv-view-properties.md)
 - [Profile Properties](devenv-profile-properties.md)
 - [Integrating with Dynamics 365 for Sales](../devenv-integrating-dynamics-365-for-sales-extension-development.md)
