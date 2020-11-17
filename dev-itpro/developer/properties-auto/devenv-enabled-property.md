@@ -33,6 +33,9 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+> [!NOTE]
+> For information about the **Enabled property** for Profiles, see [Enabled (Profile) Property](devenv-enabled-profile-property.md).
+
 ## Property Value  
  **True** on pages if the field, key, or control is enabled; otherwise, **false** on pages. The default is **true** on pages and profiles.  
 

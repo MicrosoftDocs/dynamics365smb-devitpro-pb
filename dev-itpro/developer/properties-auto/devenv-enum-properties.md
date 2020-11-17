@@ -16,8 +16,8 @@ This topic lists properties that apply to the [Extensible Enums](../devenv-exten
 |Property Name|Applies to|
 |-------------|-----------|  
 |[Access Property](devenv-access-property.md)|<ul><li>Enum objects</li></ul>|
-|[AssignmentCompatibility Property](devenv-asssignmentcompatibility-property.md)|<ul><li>Enum objects</li></ul>|
-|[AssignmentCompatibilityReason Property](devenv-asssignmentcompatibilityreason-property.md)|<ul><li>Enum objects</li></ul>|
+|[AssignmentCompatibility Property](devenv-assignmentcompatibility-property.md)|<ul><li>Enum objects</li></ul>|
+|[AssignmentCompatibilityReason Property](devenv-assignmentcompatibilityreason-property.md)|<ul><li>Enum objects</li></ul>|
 |[Caption Property](devenv-caption-property.md)|<ul><li>Enum objects</li><li>Enum value</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>Enum objects</li><li>Enum value</li></ul>|
 |[DefaultImplementation Property](devenv-defaultimplementation-property.md)|<ul><li>Enum objects</li></ul>|

@@ -55,3 +55,4 @@ CalcFormula = Count(RecordCalcFields);
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Calculation Formulas and the CalcFormula Property](../devenv-calculation-formulas-and-the-calcformula-property.md)
