@@ -1,5 +1,6 @@
 ---
 title: "How to: Export the Application Tables to a Dedicated Database"
+description: Learn how to export application tables from one database to a dedicated database.
 author: edupont04
 ms.custom: na
 ms.date: 10/01/2020
@@ -25,7 +26,7 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can export the
     > [!IMPORTANT]  
     >  You must run the program as administrator. Also, you must ensure that scripting is enabled on the computer.  
 
-     For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md).  
+     For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
 
 3.  For an overview of the cmdlet, type the following command:  
 
@@ -80,7 +81,7 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can export the
 
  You must take additional steps to get the final business data database operational. For an example of how you can write a script that runs the cmdlet for creating an application database, see the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. For an example of how to write individual commands in Windows PowerShell, see the **Example** section.  
 
- Next, you must restart the [!INCLUDE[server](../developer/includes/server.md)] service, and you must mount the two databases by using the **Mount-NAVApplication** and **Mount-NAVTenant** cmdlets. For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md).  
+ Next, you must restart the [!INCLUDE[server](../developer/includes/server.md)] service, and you must mount the two databases by using the **Mount-NAVApplication** and **Mount-NAVTenant** cmdlets. For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
 
 ## Example  
  The following code example illustrates how you can manually write commands in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration shell. The commands create an application database based on an existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
@@ -104,6 +105,6 @@ Mount-NAVTenant –ServerInstance ‘nav_server_instance’ -Id tenant1 –Datab
 ## See Also  
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
- [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md)   
+ [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)   
  [Creating Tenants from Companies](Creating-Tenants-from-Companies.md)   
  [Merging an Application Database with a Tenant Database](Merging-an-Application-Database-with-a-Tenant-Database.md)

@@ -25,15 +25,7 @@ Becoming a Microsoft partner gives you access to the Microsoft resources needed 
 
 Your work account or work email is the email address provided to you by your company. This email is usually in the format `you@yourcompany.com`. More information on work accounts can be found [here](/partner-center/azure-active-directory-tenants-and-partner-center).
 
-### Join the Microsoft Partner Network
-
-Becoming a Microsoft partner gives you access to all the resources you need to build and publish apps. To become a partner, you must join the Microsoft Partner Network (MPN), at which time you will be assigned an MPN ID. MPN membership is free to all partners; you can enroll in the MPN [here](https://partner.microsoft.com/membership).
-
-### Set up your Partner Center account
-
-Once you have joined the Microsoft Partner Network (MPN), you can [set up your Partner Center (PC) account](/partner-center/mpn-create-a-partner-center-account). The Microsoft Partner Center is a generic portal where partners can sell and manage customer subscriptions for Microsoft services, such as Microsoft 365, Azure, Dynamics 365, and others, as well as for some third-party products. For more information, see the [Partner Center documentation](/partner-center/).
-
-Your Partner Center account provides you with access to pricing information, tools and services, and enables you to manage admin credentials for your company's work account. Partner Center is also where you can purchase or renew subscriptions to Microsoft Action Packs, create a business profile to receive and manage sales leads from Microsoft, and see if you qualify for co-selling opportunities.
+[!INCLUDE [admin-partner-mpn](../includes/admin-partner-mpn.md)]
 
 ## Step 2: Register as a publisher
 
@@ -158,7 +150,7 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 - Microsoft Learn
 
-    Learn new skills and discover the power of Microsoft products with step-by-step guidance. Start your journey today by exploring our [learning paths and modules](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central).
+    Learn new skills and discover the power of Microsoft products with step-by-step guidance. Start your journey today by exploring our [learning paths and modules](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
 
 - Microsoft Docs
 
