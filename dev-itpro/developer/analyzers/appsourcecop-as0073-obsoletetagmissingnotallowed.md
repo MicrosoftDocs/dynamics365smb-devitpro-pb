@@ -1,8 +1,9 @@
 ---
 title: "Obsolete Tag must be set."
+description: Explains AppSourceCop Rule AS0073.
 ms.author: solsen
 ms.custom: na
-ms.date: 27/10/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
