@@ -2,7 +2,7 @@
 title: "Caption Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ Sets the string that is used to identify a control or other object in the user i
 
 ## Applies to
 -   Table
--   Field
+-   Table Field
 -   Page Field
 -   Field Group
 -   Page

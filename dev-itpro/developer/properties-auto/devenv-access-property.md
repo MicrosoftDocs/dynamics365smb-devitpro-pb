@@ -2,7 +2,7 @@
 title: "Access Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Sets the object accessibility level, which controls whether the object can be us
 -   Codeunit
 -   Query
 -   Table
--   Field
+-   Table Field
 -   Enum Type
 -   Interface
 

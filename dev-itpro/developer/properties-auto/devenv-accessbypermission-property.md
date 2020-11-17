@@ -2,7 +2,7 @@
 title: "AccessByPermission Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ All types of UI elements will be removed if they relate to an object to which th
    
 
 ## Applies to
--   Field
+-   Table Field
 -   Page Field
 -   Page Part
 -   Page System Part

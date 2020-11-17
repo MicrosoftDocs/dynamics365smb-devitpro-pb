@@ -2,7 +2,7 @@
 title: "Clustered Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets a value that indicates whether the key also defines the clustered index in 
 By default the primary key is configured as the clustered key.
 
 ## Applies to
--   Key
+-   Table Key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 > [!NOTE]  

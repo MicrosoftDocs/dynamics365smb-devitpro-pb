@@ -2,7 +2,7 @@
 title: "TableRelation Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
 
 
 ## Applies to
--   Field
+-   Table Field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

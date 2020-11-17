@@ -2,7 +2,7 @@
 title: "AutoIncrement Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 Sets whether the field value should be automatically incremented.
 
 ## Applies to
--   Field
+-   Table Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 The fields must be of [Integer Data Type](../datatypes/devenv-integer-data-type.md) and [BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md).
