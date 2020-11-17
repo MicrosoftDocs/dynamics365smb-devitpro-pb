@@ -1,8 +1,9 @@
 ---
 title: "AllowScheduling Property"
+description: Describes the AllowScheduling Property in AL for report objects.
 ms.author: jswymer
 ms.custom: na
-ms.date: 11/18/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
