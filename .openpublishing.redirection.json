@@ -5314,6 +5314,41 @@
     "source_path": "dev-itpro/developer/properties/devenv-enablelongrunningsqlstatements-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-event-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-eventmethod-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-eventpublisherelement-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-eventpublisherobject-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-eventtype-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-includesender-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-indentation-query-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
    }
   ]
 }
