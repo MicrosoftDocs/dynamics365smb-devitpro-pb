@@ -26,8 +26,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 - [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
 - [Control how Account Schedules for core financial reports are generated](/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
 - [Improved VAT Registration no. lookup](/dynamics365/business-central/finance-how-validate-vat-registration-number)
-- Use EvironmentType and EnvironmentName launch.json properties instead of obsoleted sandboxName (link to be updated)
-- Symbols can be downloaded with an initializesnapshopt launch.json debug configuration, suing above environment properties (link to be updated)
+- [Use environmentType and environmentName launch.json properties instead of obsoleted sandboxName](/dynamics365/business-central/dev-itpro/developer/devenv-json-files#Launchjson)
+- [Symbols can be downloaded with a snapshot initialize launch.json configuration, using above environment properties](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging#downloading-symbols-on-the-snapshot-debugger-endpoint)
 
 
 
@@ -39,7 +39,7 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 17.1
 
-Please note that new customers will automatically get the latest builds of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (16.5). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (17.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
