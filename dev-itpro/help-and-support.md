@@ -168,6 +168,10 @@ GitHub brings together communities of developers and other contributors to disco
 
   Use this repo to collaborate around the source code and the scripts of the generic docker image for [!INCLUDE [prodshort](developer/includes/prodshort.md)]: [https://github.com/Microsoft/nav-docker](https://github.com/Microsoft/nav-docker)
 
+* BcContainerHelper/NavContainerHelper
+
+  Use this repo to collaborate around the source code and the scripts of BcContainerHelper PowerShell module for [!INCLUDE [prodshort](developer/includes/prodshort.md)]: [https://github.com/Microsoft/NavContainerHelper](https://github.com/Microsoft/NavContainerHelper)
+
 * Documentation
 
   The product Help and developer and administration content is based on GitHub as well, and you can collaborate and extend the docs. The GitHub repos are:
