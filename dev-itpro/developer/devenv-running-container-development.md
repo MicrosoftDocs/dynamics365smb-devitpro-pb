@@ -86,7 +86,10 @@ To see which functions are available in the BCContainerHelper module use the fol
 
 To get quickly get started, run the following command from the BCContainerHelper module:
 
-```New-BCContainer -accept_eula -containerName test -artifactUrl https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us```
+```
+$artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select Latest
+New-BCContainer -accept_eula -containerName mysandbox -artifactUrl $artifactUrl
+```
 
 The `BCContainerHelper` will create a folder on the C:\ drive called *bcartifacts.cache* for caching artifacts. It will also create a folder under C:\ProgramData called BCContainerHelper and will place all working files underneath that folder. The C:\ProgramData\BCContainerHelper folder will be shared to the container for transfer of files etc. If you do not specify a username and a password, it will ask for your password and use the current Windows username. If you specify your windows password, the container setup will use Windows Authentication integrated with the host. The `BCContainerHelper` will also create shortcuts on the desktop for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, a container prompt, and a container PowerShell prompt.
 
