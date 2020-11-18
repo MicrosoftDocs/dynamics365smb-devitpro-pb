@@ -37,11 +37,11 @@ Install Docker and configure it for Windows Containers.
 ## Using Docker commands
 Open a Command Prompt as Administrator. In the command prompt, identify your version of Windows (example 10.0.19041.329). Run this command to pull the latest version of the generic image used to to run Business Central on Docker:
 
-```docker pull mcr.microsoft.com/dynamicsnav:10.0.19041.329-generic```
+```docker pull mcr.microsoft.com/businesscentral:10.0.19041.329```
 
 Use this command to run a sandbox container with the US localization of version 16.3.14085.14363 on Docker:
 
-```docker run -e accept_eula=Y -m 4G -e artifacturl=https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us mcr.microsoft.com/dynamicsnav:10.0.19041.329-generic```
+```docker run -e accept_eula=Y -m 4G -e artifacturl=https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us mcr.microsoft.com/businesscentral:10.0.19041.329```
 
 > [!IMPORTANT]  
 > You must specify the correct Windows Version in the generic image name. If your version of Windows doesn't have a corresponding generic Docker image, you might need to use Hyper-V isolation.
@@ -86,7 +86,10 @@ To see which functions are available in the BCContainerHelper module use the fol
 
 To get quickly get started, run the following command from the BCContainerHelper module:
 
-```New-BCContainer -accept_eula -containerName test -artifactUrl https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us```
+```
+$artifactUrl = Get-BcArtifactUrl -type sandbox -country us -select Latest
+New-BCContainer -accept_eula -containerName mysandbox -artifactUrl $artifactUrl
+```
 
 The `BCContainerHelper` will create a folder on the C:\ drive called *bcartifacts.cache* for caching artifacts. It will also create a folder under C:\ProgramData called BCContainerHelper and will place all working files underneath that folder. The C:\ProgramData\BCContainerHelper folder will be shared to the container for transfer of files etc. If you do not specify a username and a password, it will ask for your password and use the current Windows username. If you specify your windows password, the container setup will use Windows Authentication integrated with the host. The `BCContainerHelper` will also create shortcuts on the desktop for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, a container prompt, and a container PowerShell prompt.
 

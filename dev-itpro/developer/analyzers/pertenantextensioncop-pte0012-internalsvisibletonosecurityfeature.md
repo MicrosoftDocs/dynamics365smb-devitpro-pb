@@ -21,7 +21,11 @@ InternalsVisibleTo should not be used as a security feature.
 The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+For more information, see [JSON Files](../devenv-json-files.md).
+
+## See Also
+
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
