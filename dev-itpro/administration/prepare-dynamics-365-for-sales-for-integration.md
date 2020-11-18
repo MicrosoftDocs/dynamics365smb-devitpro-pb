@@ -83,10 +83,9 @@ You must have a Microsoft Azure subscription. A trial account will work for appl
 
    |API / Permission Name |Type  |Description  |
    |---------|---------|---------|
-   |Row1     |         |         |
-   |Row2     |         |         |
-   |Row3     |         |         |
-
+   |Financials.ReadWrite.All     |Delegated|Required for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].    |
+   |user_impersonation     |Delegated|Required for [!INCLUDE[crm_md](../developer/includes/crm_md.md)].|
+   
 4. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], search for **Microsoft Dynamics 365 Connection Setup**, and then choose the related link. 
 5. On the **Microsoft Dynamics 365 Connection Setup** page, in the **Authentication Type** field, choose the option for OAuth. 
 6. Choose the CRM SDK version that matches solution version you imported in step 1.
@@ -102,10 +101,9 @@ You must have a Microsoft Azure subscription. A trial account will work for appl
 This is an example of a connection string that works.
 
 ```
-AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=****;Url=https://contosotest.crm.dynamics.com;AppId=<put your AppId here>;RedirectUri=app://<put your appid here>;TokenCacheStorePath=;LoginPrompt=Auto
+AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=****;Url=https://contosotest.crm.dynamics.com;AppId=<your AppId>;RedirectUri=app://<your AppId>;TokenCacheStorePath=;LoginPrompt=Auto
 ```
 9. Enable the connection.
-
 
 <!-- 
 # View Item Availability - Support Matrix
@@ -124,7 +122,8 @@ For most versions of Business Central and Dynamics 365 for Sales, you can view a
 
 For more information, see [System Requirements for Business Central](../deployment/system-requirement-business-central.md).
 
+-->
 
 ## See Also  
-[Setting Up Dynamics 365 for Sales Integration in Dynamics NAV]  
--->
+[Connecting On-Premises Versions](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#connecting-on-premises-versions)  
+
