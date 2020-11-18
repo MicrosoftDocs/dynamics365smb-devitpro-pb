@@ -18,7 +18,6 @@
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
 <!--### Get started with building apps
-#### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 #### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
