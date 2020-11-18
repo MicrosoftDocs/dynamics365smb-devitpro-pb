@@ -21,8 +21,15 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Feature changes
 
-- [Enhanced email capabilities](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/enhanced-email-capabilities)
-- [Notify users of high-risk changes in selected setup fields](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/notify-users-high-risk-changes-selected-setup-fields)
+- [Enhanced email capabilities](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/enhanced-email-capabilities)
+- [Notify users of high-risk changes in selected setup fields](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/notify-users-high-risk-changes-selected-setup-fields)
+- [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
+- [Control how Account Schedules for core financial reports are generated](/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
+- [Improved VAT Registration no. lookup](/dynamics365/business-central/finance-how-validate-vat-registration-number)
+- Use EvironmentType and EnvironmentName launch.json properties instead of obsoleted sandboxName (link to be updated)
+- Symbols can be downloaded with an initializesnapshopt launch.json debug configuration, suing above environment properties (link to be updated)
+
+
 
 ## Release Plan
 
