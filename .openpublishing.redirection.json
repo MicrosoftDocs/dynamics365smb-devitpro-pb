@@ -5389,6 +5389,46 @@
     "source_path": "dev-itpro/developer/properties/devenv-methodtype-property-upgrade-codeunits.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-methodtype-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-numberofsqlstatements-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-onmissinglicense-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-onmissingpermission-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-owner-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-page-properties.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-standard-day-time-unit-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-suppressdispose-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
    }
   ]
 }
