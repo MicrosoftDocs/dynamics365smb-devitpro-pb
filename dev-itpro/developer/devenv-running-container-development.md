@@ -37,11 +37,11 @@ Install Docker and configure it for Windows Containers.
 ## Using Docker commands
 Open a Command Prompt as Administrator. In the command prompt, identify your version of Windows (example 10.0.19041.329). Run this command to pull the latest version of the generic image used to to run Business Central on Docker:
 
-```docker pull mcr.microsoft.com/dynamicsnav:10.0.19041.329-generic```
+```docker pull mcr.microsoft.com/businesscentral:10.0.19041.329```
 
 Use this command to run a sandbox container with the US localization of version 16.3.14085.14363 on Docker:
 
-```docker run -e accept_eula=Y -m 4G -e artifacturl=https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us mcr.microsoft.com/dynamicsnav:10.0.19041.329-generic```
+```docker run -e accept_eula=Y -m 4G -e artifacturl=https://bcartifacts.azureedge.net/sandbox/16.3.14085.14363/us mcr.microsoft.com/businesscentral:10.0.19041.329```
 
 > [!IMPORTANT]  
 > You must specify the correct Windows Version in the generic image name. If your version of Windows doesn't have a corresponding generic Docker image, you might need to use Hyper-V isolation.
