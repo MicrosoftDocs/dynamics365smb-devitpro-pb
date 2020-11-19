@@ -26,6 +26,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/da-
 - [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
 - [Control how Account Schedules for core financial reports are generated](/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
 - [Improved VAT Registration no. lookup](/dynamics365/business-central/finance-how-validate-vat-registration-number)
+- [Extension lifecycle telemetry in Application Insights for ISVs]()
 - [Use environmentType and environmentName launch.json properties instead of obsoleted sandboxName](/dynamics365/business-central/dev-itpro/developer/devenv-json-files#Launchjson)
 - [Symbols can be downloaded with a snapshot initialize launch.json configuration, using above environment properties](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging#downloading-symbols-on-the-snapshot-debugger-endpoint)
 
