@@ -60,8 +60,8 @@ Snapshot debugging has now been enabled for sandbox environments. It will be ena
 **Apps are moving to office.com**  
 The home for all your business applications across Dynamics 365 and Microsoft Power Platform is moving to office.com, where you'll find the Business Central tiles for production and sandbox environments. 
 
-**Easy access to production or sandbox environments from the mobile app**
+**Easy access to production or sandbox environments from the mobile app**  
 Users of mobile devices can now choose between their sandbox and production environments without the need to use the pre-crafted URL as before. Partners running their own apps based on Business Central can also let their users explore it from mobile devices. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/access-multiple-production-or-sandbox-environments-mobile-apps).
 
-**Unblock multifactor authentication for mobile apps**
+**Unblock multifactor authentication for mobile apps**  
 We have updated core authentication components of the mobile app to support multifactor authentication. Enabling such flow in the user setting on your Microsoft 365 account and then using it on a mobile device (via an SMS code, authenticator app, or more) is now possible after updating the Business Central mobile app to version 3.0 or higher. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/unblock-multi-factor-authentication-mobile-apps).
