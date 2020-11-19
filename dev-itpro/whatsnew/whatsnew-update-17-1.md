@@ -50,10 +50,8 @@ Business Central includes a cloud migration tool that administrators can use to 
 This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more 
  [here](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
 
- **Database size when migrating from Business Central on-prem to online**
-
-
- We have increased the limit we apply to the database size from 30 Gb to 80 Gb when migrating from Business Central on-prem to Business Central online using the Cloud Migration tool. If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Learn more [here](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#are-there-any-limits-on-the-amount-or-type-of-data-will-replicate) and read about running the cloud migration tool [here](/dynamics365/business-central/dev-itpro/administration/migration-tool).  
+**Database size when migrating from Business Central on-prem to online**  
+We have increased the limit we apply to the database size from 30 Gb to 80 Gb when migrating from Business Central on-prem to Business Central online using the Cloud Migration tool. If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Learn more [here](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#are-there-any-limits-on-the-amount-or-type-of-data-will-replicate) and read about running the cloud migration tool [here](/dynamics365/business-central/dev-itpro/administration/migration-tool).  
 
 **Watch what's new sessions on demand**  
 Watch the sessions from the Business Central Launch Event in October. Register and get access to 30+ sessions [here](https://aka.ms/MSDyn365BCLaunchEvent).
