@@ -25,7 +25,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Enhanced email capabilities](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/enhanced-email-capabilities)
 - [Notify users of high-risk changes in selected setup fields](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/notify-users-high-risk-changes-selected-setup-fields)
 - [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
-- [Control how Account Schedules for core financial reports are generated](/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
+- [Control how Account Schedules for core financial reports are generated](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
 - [Improved VAT Registration no. lookup](/dynamics365/business-central/finance-how-validate-vat-registration-number)
 - [Extension lifecycle telemetry in Application Insights for ISVs](/dynamics365/business-central/dev-itpro/administration/telemetry-extension-lifecycle-trace)
 - [Use environmentType and environmentName launch.json properties instead of obsoleted sandboxName](/dynamics365/business-central/dev-itpro/developer/devenv-json-files#Launchjson)
