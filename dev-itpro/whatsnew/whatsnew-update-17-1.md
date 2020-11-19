@@ -1,5 +1,5 @@
 ---
-title: "Update 17.1 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
+title: "Update 17.1 for Microsoft Dynamics 365 Business Central 2020 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 17.1 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
 ms.custom: na
