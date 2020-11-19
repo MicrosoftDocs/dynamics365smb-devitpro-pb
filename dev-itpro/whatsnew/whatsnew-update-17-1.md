@@ -17,7 +17,7 @@ Would you like to know what has changed in update 17.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4576664).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/da-dk/help/4583515/update-17-1-for-microsoft-dynamics-365-business-central-2020-release-w).
 
 ## Feature changes
 
