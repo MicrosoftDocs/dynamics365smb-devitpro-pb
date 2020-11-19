@@ -5469,6 +5469,86 @@
     "source_path": "dev-itpro/developer/properties/devenv-grouptype-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-id-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-key-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-layout-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-name-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-nodename-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-pagepartid-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-runonclient-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-sourceexpr-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-sourcefield-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-sourcetable-xmlports-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-sourcetable-xmlports-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-systempartid-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-tableidexpr-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-temporary-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-transactionmodel-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-withevents-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
    }
   ]
 }
