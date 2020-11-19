@@ -1,8 +1,8 @@
 ---
-title: "Update 16.5 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
+title: "Update 17.1 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/19/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
