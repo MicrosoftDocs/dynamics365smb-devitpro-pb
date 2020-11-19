@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 17.1 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
+# Update 17.1 for Microsoft Dynamics 365 Business Central online 2020 release wave 2
 
 Would you like to know what has changed in update 17.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
@@ -44,12 +44,15 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**NEW! Migrate directly from version 14, 15, and 16 to Business Central Online**  
+**NEW! Migrate directly from version 14, 15, and 16 to Business Central online**  
 Business Central includes a cloud migration tool that administrators can use to migrate customer data from on-premises databases to Business Central online. Starting now, the Cloud Migration app also supports migration from the earlier on-premises versions of Business Central, with the latest cumulative update applied: Migrate directly from versions 14.x, 15.x, and 16.x to version 17.x. 
 This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more 
  [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
 
- **Database size when migrating from Business Central on-prem to online** We have increased the limit we apply to the database size from 30 Gb to 80 Gb when migrating from Business Central on-prem to Business Central online using the Cloud Migration tool. If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Learn more [here](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#are-there-any-limits-on-the-amount-or-type-of-data-will-replicate) and read about running the cloud migration tool [here](/dynamics365/business-central/dev-itpro/administration/migration-tool).  
+ **Database size when migrating from Business Central on-prem to online**
+
+ 
+ We have increased the limit we apply to the database size from 30 Gb to 80 Gb when migrating from Business Central on-prem to Business Central online using the Cloud Migration tool. If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Learn more [here](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#are-there-any-limits-on-the-amount-or-type-of-data-will-replicate) and read about running the cloud migration tool [here](/dynamics365/business-central/dev-itpro/administration/migration-tool).  
 
 **Watch what's new sessions on demand**  
 Watch the sessions from the Business Central Launch Event in October. Register and get access to 30+ sessions [here](https://aka.ms/MSDyn365BCLaunchEvent).
