@@ -26,7 +26,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/da-
 - [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
 - [Control how Account Schedules for core financial reports are generated](/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
 - [Improved VAT Registration no. lookup](/dynamics365/business-central/finance-how-validate-vat-registration-number)
-- [Extension lifecycle telemetry in Application Insights for ISVs]()
+- [Extension lifecycle telemetry in Application Insights for ISVs](/dynamics365/business-central/dev-itpro/administration/telemetry-extension-lifecycle-trace)
 - [Use environmentType and environmentName launch.json properties instead of obsoleted sandboxName](/dynamics365/business-central/dev-itpro/developer/devenv-json-files#Launchjson)
 - [Symbols can be downloaded with a snapshot initialize launch.json configuration, using above environment properties](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging#downloading-symbols-on-the-snapshot-debugger-endpoint)
 
@@ -51,7 +51,7 @@ This helps customers reduce their costs of migrating to the Business Central clo
 
  **Database size when migrating from Business Central on-prem to online**
 
- 
+
  We have increased the limit we apply to the database size from 30 Gb to 80 Gb when migrating from Business Central on-prem to Business Central online using the Cloud Migration tool. If you are looking at migrating a larger database, we recommend that you contact the support team and work with them to make sure that the migration is successful. Learn more [here](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#are-there-any-limits-on-the-amount-or-type-of-data-will-replicate) and read about running the cloud migration tool [here](/dynamics365/business-central/dev-itpro/administration/migration-tool).  
 
 **Watch what's new sessions on demand**  
