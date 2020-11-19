@@ -1,5 +1,5 @@
 ---
-title: Managing Apps | Microsoft Docs
+title: Managing Apps
 description: Use the Business Central administration center to manage apps used by your tenant environments. 
 author: jswymer
 ms.service: dynamics365-business-central
@@ -23,6 +23,9 @@ Updates are frequently made available for these apps by Microsoft, partners, and
 To help you manage app updates, the administration center includes the **Manage Apps** page. 
 
 Like other features in the administration center, this functionality can be used by the partner (delegated administrator) or a local customer admin.
+
+> [!Note]
+> In the current version, it's not possible to install new apps, either main apps or their dependencies (library apps), by using the **Manage Apps**. To install the apps, continue using the **Extension Management** page within your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment.
 
 ## Get an overview and check for updates
 
