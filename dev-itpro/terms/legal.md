@@ -1,6 +1,6 @@
 ---
 title: "Legal Resources for Business Central online"
-description: Provides links to legal information for Business Central. 
+description: Get a list of links to legal information for Business Central, including the online service terms for Business Central online. 
 author: jswymer
 ms.custom: na
 ms.date: 10/01/2020
