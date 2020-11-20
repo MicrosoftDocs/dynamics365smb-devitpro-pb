@@ -3,7 +3,7 @@ title: "Migrating Tables and Fields Between Extensions"
 description: "Explains how to migrate tables and fields from one extension to another."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/28/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
