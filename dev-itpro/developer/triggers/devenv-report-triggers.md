@@ -38,7 +38,7 @@ When you run a report, the report triggers are called in a specific order.
 
  When there are no more records to be processed in a data item, control returns to the point from which processing was started. For an indented data item, it's the next record of the data item on the next highest level. If the data item is already on the highest level, then control returns to the report.  
 
-## Trigger execution when previewing a report
+## Trigger execution with multiple previews
 
 [!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2 (version 17) introduced the ability to preview a report multiple times, without closing the request page. With this change, the execution flow of the report triggers is different.
 
