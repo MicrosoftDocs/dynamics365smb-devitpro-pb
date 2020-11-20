@@ -2,7 +2,7 @@
 title: Business Central compatibility matrix
 description: Provides an overview of the Business Central versions and their compatibility
 ms.custom: na
-ms.date: 10/28/2020
+ms.date: 11/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ However, minor updates are regularly made available for each major release, like
 
 ## Before choosing the target version
 
-Before you choose the target version for your upgrade, read the [Known Issues](known-issues.md) article. This article will describe issues in [!INCLUDE[prod short](../developer/includes/prodshort.md)] versions that affect upgrade.
+Before you choose the target version for your upgrade, read the [Some Known Issues](known-issues.md) article. This article will describe issues in [!INCLUDE[prod short](../developer/includes/prodshort.md)] versions that affect upgrade.
 
 ## Version 14 compatibility
 

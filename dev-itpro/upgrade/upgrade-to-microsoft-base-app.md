@@ -2,7 +2,7 @@
 title:  "Upgrading Customized C/AL Application to Microsoft Base Application"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 16 Microsoft Base Application
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -63,7 +63,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
     For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
     > [!IMPORTANT]
-    > You must use version 16.5 or later, otherwise you'll run problems during upgrade because of missing enum objects later in this procedure. For more information, see [Known Issues](known-issues.md#enum).
+    > You must use version 16.5 or later, otherwise you'll run problems during upgrade because of missing enum objects later in this procedure. For more information, see [Some Known Issues](known-issues.md#enum).
 
 2. Before you install version 16, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
 
