@@ -75,13 +75,15 @@ var
     query : Text;
     salaryToken : JsonToken;
 begin
-    query := '$.company.employees[?(@.id=="'+employeeId+'")].salary';
+    query := '$.company.employees[?(@.id=='''+employeeId+''')].salary';
     companyData.SelectToken(query, salaryToken);
 
     salary := salaryToken.AsValue().AsDecimal();    
 end;
 ```
 
+> [!NOTE]
+> Ensure that select expression contains ' (single quotation mark) and not " (double quotation mark) to decorate string value.
 
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
