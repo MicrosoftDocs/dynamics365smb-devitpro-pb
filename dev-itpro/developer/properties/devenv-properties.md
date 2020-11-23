@@ -12,10 +12,11 @@ author: SusanneWindfeldPedersen
 
 # Properties Overview
 
-This section describes the properties that are available to developers in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Properties can be set explicitly in AL code using syntax such as: <br>
-`Promoted = true;`<br>
-`PromotedCategory = Process;`<br>
-`ApplicationArea = All;`
+This section describes the properties that are available to developers in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Properties can be set explicitly in AL code using syntax such as: <br><br>
+
+  `Promoted = true;`<br>
+  `PromotedCategory = Process;`<br>
+  `ApplicationArea = All;`
 
 In the sections below, properties are sorted according to the object(s) they apply to.
 
