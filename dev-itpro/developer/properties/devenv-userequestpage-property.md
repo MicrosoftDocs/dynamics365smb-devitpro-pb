@@ -1,7 +1,8 @@
 ---
 title: "UseRequestPage Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,16 +10,20 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UseRequestPage Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets whether a request page is presented to the user.  
-  
-## Applies to  
-  
-- Reports  
-- XMLports  
-  
+Sets whether a request page is presented to the user.
+
+## Applies to
+-   Xml Port
+-   Report
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** if you want to show a request page; otherwise, **false**. The default is **true**.

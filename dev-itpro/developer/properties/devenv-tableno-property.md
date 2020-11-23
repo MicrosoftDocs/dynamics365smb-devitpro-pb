@@ -1,26 +1,28 @@
 ---
 title: "TableNo Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e28a2f89-b24f-4191-aa37-12d3a9901b88
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
-
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableNo Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a record parameter by reference to a table on the `OnRun` trigger. 
-  
+Sets the source table number, if any, for this codeunit.
+
 ## Applies to
+-   Codeunit
 
-- Codeunits  
-  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks
 
 Although you do not see this in AL code, setting the **TableNo** property changes the signature of the `OnRun` trigger of the codeunit to include a variable `Record` data type parameter (named `Rec`) for the specified table. For example, the following code sets the **TableNo** property in a codeunit to the **Item** table.
@@ -44,4 +46,4 @@ You can then use the `Rec` variable in the codeunit, and use the  [Run Method \(
   
 ## See Also
 
-[Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-RUN-method.md)
+[Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-run-method.md)

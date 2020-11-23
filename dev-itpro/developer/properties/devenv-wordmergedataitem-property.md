@@ -1,28 +1,27 @@
 ---
 title: "WordMergeDataItem Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5e251ec0-0bf2-4139-a8a2-cfaca5dae3ad
-caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WordMergeDataItem Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the name of the root-level **DataItem** that is used for generating separate reports for multiple records.
+Specifies the root-level DataItem that is used to generate separate reports for multiple records.
 
-## Applies to  
-  
-- Reports  
+## Applies to
+-   Report
 
-## WordMergeDataItem Data Type
-
-String
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

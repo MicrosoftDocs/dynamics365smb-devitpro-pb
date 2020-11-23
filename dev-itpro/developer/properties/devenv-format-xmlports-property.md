@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Format Property (XMLports)
+> **Version**: _Available from runtime version 1.0._
 
 Determines the import and export format of the XMLPort.  
   

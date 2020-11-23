@@ -1,7 +1,8 @@
 ---
 title: "InitValue Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,14 +10,18 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InitValue Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the initial value of this field when a user creates a new record.  
-  
+Sets the initial value of this field when a user creates a new record.
+
 ## Applies to
+-   Table Field
 
-- Fields
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 
@@ -30,5 +35,5 @@ This attribute is only important if you create the record in a window or by usin
   
 ## See Also
 
-[Clear Method](../methods-auto/system/system-clear-joker-method.md)  
+[Clear Method](../methods-auto/system/system-clear-joker-method.md)   
 [ClearAll Method](../methods-auto/system/system-clearall-method.md)

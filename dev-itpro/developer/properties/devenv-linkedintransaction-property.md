@@ -1,25 +1,27 @@
 ---
 title: "LinkedInTransaction Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 15821f83-34c0-4135-bcfd-095a6783ebf6
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LinkedInTransaction Property
+> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
 
-Gets and sets data from linked server data sources, such as Microsoft Office Excel, Access, or another SQL Server.  
-  
-## Applies to  
+Gets and sets data from linked server data sources, such as Microsoft Office Excel, Access, or another SQL Server.
 
-- Tables  
+## Applies to
+-   Table
 
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 
 ```AL
@@ -36,5 +38,4 @@ The access to linked server data sources is not under [!INCLUDE[d365fin_long_md]
   
 ## See Also  
 
-<!-- [Creating Table Definitions from SQL Server Objects \(Linked Objects\)](Creating-Table-Definitions-from-SQL-Server-Objects--Linked-Objects-.md)  --> 
 [LinkedObject Property](devenv-linkedobject-property.md)

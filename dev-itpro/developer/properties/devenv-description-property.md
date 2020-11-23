@@ -1,7 +1,8 @@
 ---
 title: "Description Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,23 +10,47 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Description Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the description of the table, field, page, report, control and many more. This description is for internal use and does not appear to end-users.  
+Sets the description. This description is for internal use and does not appear to end-users.
 
-## Applies to  
+## Applies to
+-   Codeunit
+-   Table Field
+-   Table Key
+-   Page
+-   Page Action
+-   Page Action Area
+-   Page Action Group
+-   Page Area
+-   Page Field
+-   Page Group
+-   Page Label
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Query
+-   Query Column
+-   Query Data Item
+-   Query Filter
+-   Report
+-   Report Data Item
+-   Report Column
+-   Request Page
+-   Table
+-   Xml Port
+-   Xml Port Text Element
+-   Xml Port Field Element
+-   Xml Port Table Element
+-   Xml Port Field Attribute
+-   Xml Port Text Attribute
+-   Profile
 
-- Codeunits
-- Fields
-- Keys
-- Pages, including page actions, page action areas, page action groups, page areas, page fields, page groups, page labels, page parts, page system parts, page chart parts, and request pages
-- Profiles
-- Queries, including query columns, query data items, and query filters
-- Reports, including report data items and report columns
-- Tables
-- XMLports, including XMLport text elements, XMLport field elements, XMLport table elements, XMLport field attributes, and XMLport text attributes
-
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 
 ```AL

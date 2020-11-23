@@ -1,29 +1,35 @@
 ---
 title: "MinOccurs Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e35b2d60-5c3e-499b-a4f9-f9b8481d69c8
-caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MinOccurs Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the minimum number of times that an element can occur.  
-  
-## Applies to  
+Sets the minimum number of times that an element can occur.
 
-- XMLports  
-  
-## Property Values  
+## Applies to
+-   Xml Port Text Element
+-   Xml Port Field Element
+-   Xml Port Table Element
 
-The possible values are **Once** and **Zero** (0). The default value is **Once**.  
+## Property Value
 
+|Value|Description|
+|-----------|---------------------------------------|
+|**Zero**|There is no minimum number of occurences.|
+|**Once**|The element must occur at least once.|
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 
 ```AL

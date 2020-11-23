@@ -1,25 +1,28 @@
 ---
 title: "MaxValue Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: f4d4594a-ef77-4f13-989f-28912b82a3d4
-caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MaxValue Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the maximum numeric value for a field.  
-  
-## Applies to  
-  
-- Page Fields  
-  
+Sets the maximum numeric value for a field.
+
+## Applies to
+-   Table Field
+-   Page Field
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value  
   
 |**Value**|**Description**|  

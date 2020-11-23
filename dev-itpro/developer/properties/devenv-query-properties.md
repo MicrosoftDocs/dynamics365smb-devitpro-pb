@@ -29,7 +29,11 @@ This topic lists properties that apply to the query object.
 |[DataItemTableFilter Property](devenv-dataitemtable-filter-property.md)|<ul><li>DataItem control</li></ul>|
 |[DataSource Property](devenv-datasource-property.md)|<ul><li>Column control</li><li>Filter control</li></ul>|
 |[Description Property](devenv-description-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
+|[EntityCaption Property](devenv-entitycaption-property.md)|<ul><li>Query Object</li></ul>|
+|[EntityCaptionML Property](devenv-entitycaptionml-property.md)|<ul><li>Query Object</li></ul>|
 |[EntityName Property](devenv-entityname-property.md)|<ul><li>Query Object</li></ul>|
+|[EntitySetCaption Property](devenv-entitysetcaption-property.md)|<ul><li>Query Object</li></ul>|
+|[EntitySetCaptionML Property](devenv-entitysetcaptionml-property.md)|<ul><li>Query Object</li></ul>|
 |[EntitySetName Property](devenv-entitysetname-property.md)|<ul><li>Query Object</li></ul>|
 |[ID Property](devenv-id-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
 |[Indentation Property (Query)](devenv-indentation-query-property.md)|<ul><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|

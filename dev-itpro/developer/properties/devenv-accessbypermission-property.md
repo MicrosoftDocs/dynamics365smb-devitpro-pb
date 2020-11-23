@@ -1,43 +1,47 @@
 ---
 title: "AccessByPermission Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 72602cd4-853f-4bca-8fd9-b33c206a593b
-caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AccessByPermission Property
-Sets a value for a table field or UI element that determines the permission mask for an object that a user must have to see and access the related page fields or UI element in the client. The UI element will be removed at runtime if the user does not have permissions to a certain object as specified in the **AccessByPermission** property.
+> **Version**: _Available from runtime version 1.0._
 
- All types of UI elements will be removed if they relate to an object to which the user does not have the required permissions:  
+Sets a value for a table field or UI element that determines the permission mask for an object that a user must have to see and access the related page fields or UI element in the client. The UI element will be removed at runtime if the user does not have permissions to a certain object as specified in the AccessByPermission property.
 
--   Fields on pages, including FactBoxes  
+All types of UI elements will be removed if they relate to an object to which the user does not have the required permissions:
 
--   Actions on pages, including toolbars and navigation panes  
+-   Fields on pages, including FactBoxes
 
--   Page parts, such as **Lines** FastTabs  
+-   Actions on pages, including ToolBars and navigation panes
 
-## Applies to  
+-   Page parts, such as Lines FastTabs
 
--   Fields in tables (affecting all related fields on pages)  
-
--   Fields on pages  
-
-    > [!IMPORTANT]  
-    >  If the page field is from a virtual table, this property is ignored. This means that users will see this field on the page in the client even if they do not have the permissions that are required by this property.
    
--   Actions on pages  
 
--   MenuSuite items  
+## Applies to
+-   Table Field
+-   Page Field
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Page Action
+-   Page
+-   Report
 
--   Page parts, such as a **Lines** FastTab  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+> [!IMPORTANT]  
+>  If the **AccessByPermission** property is applied to a page field from a virtual table, this property is ignored. This means that users will see this field on the page in the client even if they do not have the permissions that are required by this property.
 
 > [!NOTE]  
 >  For this property to take effect in the client, the **UI Elements Removal** setting of [!INCLUDE[server](../includes/server.md)] configuration must be set to **LicenseFile** or **LicenseFileAndUserPermissions**. For more information, see [Hide UI Elements](../../administration/hide-ui-elements.md).  
@@ -72,7 +76,6 @@ AccessByPermission = tabledata MySetup = I;
 
 The **UsageCategory** property is a required setting used together with the **AccessByPermission** property. This enables a page or a report to be available in Search for the navigation support. For more information about navigation support, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).  
 
-
 ## See Also  
- [ApplicationArea Property](devenv-applicationarea-property.md)  
- [Properties](devenv-properties.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

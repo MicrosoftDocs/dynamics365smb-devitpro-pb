@@ -1,25 +1,28 @@
 ---
 title: "MultiLine Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d1241fb3-fb20-4306-bd5f-40011f0bb592
-caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MultiLine Property
+> **Version**: _Available from runtime version 4.0._
 
-Sets the value that indicates whether a field can display multiple lines of text.  
-  
-## Applies to  
-  
-- Page Fields  
-  
+Sets the value that indicates whether a field can display multiple lines of text.
+
+## Applies to
+-   Page Label
+-   Page Field
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value  
 
 **True** if you want to display multiple lines; otherwise, **false**. The default is **false**.  

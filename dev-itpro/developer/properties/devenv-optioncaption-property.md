@@ -1,7 +1,8 @@
 ---
 title: "OptionCaption Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,30 +10,20 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # OptionCaption Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the text string options that are displayed to the user.  
-  
-## Applies to  
-  
-- Pages  
-- Reports  
-- Variables  
+Sets the text string options that are displayed to the user.
 
-## Parameters
+## Applies to
+-   Table Field
+-   Page Field
+-   Report Column
 
-*Locked*  
-&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-If `true` the OptionCaption is locked and should not be translated.  
-
-*Comment*  
-&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Descriptive text for the OptionCaption, for example, with regards to translation.
-
-*MaxLength*  
-&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
-Sets the maximum length of the specific OptionCaption.
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 
@@ -58,5 +49,5 @@ field(1301; "Prediction Confidence"; Option)
   
 ## See Also  
 
-[OptionString Property](devenv-optionstring-property.md)   
-[OptionCaptionML Property](devenv-optioncaptionml-property.md)
+[OptionString Property](devenv-optionstring-property.md)  
+[OptionCaptionML Property](devenv-optioncaptionml-property.md)  

@@ -1,25 +1,28 @@
 ---
 title: "ValuesAllowed Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 38807291-9e71-4a10-8c5a-e4f011061f1e
-caps.latest.revision: 11
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ValuesAllowed Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the values that are allowed in the field.  
-  
-## Applies to  
-  
-- Table Fields  
-- Page Fields  
+Sets the values that are allowed in the field.
+
+## Applies to
+-   Table Field
+-   Page Field
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

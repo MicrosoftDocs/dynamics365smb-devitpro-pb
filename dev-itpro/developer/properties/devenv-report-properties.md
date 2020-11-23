@@ -19,6 +19,7 @@ This topic lists properties of the report object.
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|<ul><li>Report Object</li></ul>|
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)|<ul><li>Report object</li></ul>|
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)|<ul><li>Report object</li></ul>|
+|[AllowScheduling Property](devenv-allowscheduling-property.md)|<ul><li>Report object</li></ul>|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|<ul><li>Report Object</li></ul>|
 |[AutoCalcField Property](devenv-autocalcfield-property.md)|<ul><li>Column controls</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|<ul><li>Column controls</li></ul>|
@@ -33,7 +34,7 @@ This topic lists properties of the report object.
 |[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DataItemTableView Property](devenv-dataitemtableview-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DecimalPlaces Property](devenv-decimalplaces-property.md)|<ul><li>Column controls</li></ul>|
-[DefaultLayout Property](devenv-defaultlayout-property.md)|<ul><li>Report Object</li></ul>|
+|[DefaultLayout Property](devenv-defaultlayout-property.md)|<ul><li>Report Object</li></ul>|
 |[Description Property](devenv-description-property.md)|<ul><li>Report Object</li><li>Column controls</li><li>Report Labels</li><li>DataItem controls</li></ul>|
 |[EnableExternalAssemblies Property](devenv-enableexternalassemblies-property.md)|<ul><li>Report Object</li></ul>|
 |[EnableExternalImages Property](devenv-enableexternalimages-property.md)|<ul><li>Report Object</li></ul>|

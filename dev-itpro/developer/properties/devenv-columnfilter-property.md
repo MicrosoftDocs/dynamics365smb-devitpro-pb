@@ -1,25 +1,28 @@
 ---
 title: "ColumnFilter Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d8dc69ca-ba8f-4f9b-82fd-4976e26817f2
-caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ColumnFilter Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a filter on the column filter row of a query.  
-  
-## Applies to  
+Sets a filter on the column filter row of a query.
 
-Query columns and filter rows  
-  
+## Applies to
+-   Query Column
+-   Query Filter
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value  
 
 Filter expression.  

@@ -1,29 +1,28 @@
 ---
 title: "ShowAsTree Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ShowAsTree Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a list page to display records (rows) in an indented hierarchy that can be collapsed and expanded.
+Sets the indentation of rows on a List Page to Tree View. If you enable this property, you can expand or collapse indented rows on a List Page.
 
-## Syntax
+## Applies to
+-   Page Group
 
-```AL
-ShowAsTree = true;
-```
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Applies to  
-  
-- Repeater controls on list page types  
-  
 ## Property Value
 
 **true** enables the tree view; otherwise, **false**. The default is **false**.  

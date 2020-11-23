@@ -1,26 +1,27 @@
 ---
 title: "LinkFields Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 9171051b-358a-44ce-a8dc-1ebc6f74ef44
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
-
- 
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LinkFields Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the fields that are linked between two tables using the [LinkTable Property](devenv-linktable-property.md). This property is only available for XML items that have a table as their data source.  
-  
-## Applies to  
+Specifies the fields that are linked between two tables using the LinkTable Property. This property is only available for XML items that have a table as their data source.
 
-- XMLports  
-  
+## Applies to
+-   Xml Port Table Element
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value  
   
 |**Value**|**Description**|  

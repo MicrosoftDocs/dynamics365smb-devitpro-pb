@@ -1,33 +1,35 @@
 ---
 title: "Gesture Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.author: solsen
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Gesture Property
+> **Version**: _Available from runtime version 1.0._
 
 Specifies a gesture that runs the action on a device with a touch interface, such as the phone client.
 
 ## Applies to
+-   Page Action
 
-*  Page Action controls
+## Property Value
 
-## Property values
-
-The property has the following values:
-
-|  Value  |  Description  |
-|---------|---------------|
-|**None** |No gesture for the action.|
-|**LeftSwipe**|Swipe in from the right edge of the touch interface.  |
-|**RightSwipe**|Swipe in from the left edge of the touch interface.  |
+|Value|Description|
+|-----------|---------------------------------------|
+|**None**|No gesture for the action.|
+|**LeftSwipe**|Swipe in from the right edge of the touch interface.|
+|**RightSwipe**|Swipe in from the left edge of the touch interface.|
+|**ContextMenu**|The action has a context menu.|
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 
@@ -41,6 +43,5 @@ You typically use the Gesture property on list type pages for executing an actio
 
 ## See Also
 
-[Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md)  
+[Implementation Tips for Gestures](../devenv-implementation-tips-gestures-property.md)  
 [Introducing the Dynamics 365 Business Central Mobile App](../devenv-introducing-business-central-mobile-app.md)   
-<!-- [Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md) -->

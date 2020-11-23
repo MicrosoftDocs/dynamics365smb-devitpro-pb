@@ -1,30 +1,28 @@
 ---
 title: "ContextSensitiveHelpPage Property"
-author: edupont04
-
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: solsen
+ms.date: 11/12/2020
+ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: edupont
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ContextSensitiveHelpPage Property
+> **Version**: _Available from runtime version 3.0._
 
-Use this property to set the target Help file for context-sensitive Help for pages objects, report objects, and XMLport objects in your solution.  
+Specifies the help topic to show when the user presses Help in the UI. The help server on which this help topic is located, must be defined in the app.json file.
 
 ## Applies to
+-   Page
+-   Request Page
 
-- Page objects
-
-- Page extension objects
-
-- Report objects
-
-- XMLport objects
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

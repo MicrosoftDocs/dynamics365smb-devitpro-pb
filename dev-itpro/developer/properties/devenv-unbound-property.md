@@ -1,25 +1,32 @@
 ---
 title: "Unbound Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d0632b9c-70ba-4a30-8b4b-5283ebb11b90
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Unbound Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets whether the element can be repeated an unknown number of times at runtime before the import or export moves on to the next element.  
-  
-## Applies to  
-  
-- XMLports
-  
+Sets whether the element can be repeated an unknown number of times at runtime before the import or export moves on to the next element.
+
+## Applies to
+-   Xml Port Text Element
+-   Xml Port Field Element
+-   Xml Port Table Element
+-   Xml Port Field Attribute
+-   Xml Port Text Attribute
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **True** if the element can be unbound; otherwise, **false**. The default value is **false**.  

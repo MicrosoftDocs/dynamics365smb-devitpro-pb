@@ -13,6 +13,8 @@ ms.author: jswymer
 ---
  
 # CustomAPIName Property (Page)
+> **Version**: _Available from runtime version 1.0._
+
 Sets the custom name of the API endpoint that the page is exposed in. The custom name must be unique.
 
 ## Applies to  

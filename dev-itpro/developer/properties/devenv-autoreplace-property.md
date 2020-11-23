@@ -2,23 +2,26 @@
 title: "AutoReplace Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 6a09a5b0-1106-45a4-83b5-367138884339
-caps.latest.revision: 11
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AutoReplace Property
-Sets whether imported records automatically replace existing records with the same primary key.  
-  
-## Applies to  
- Table elements in XMLports.  
+> **Version**: _Available from runtime version 1.0._
 
+Sets whether imported records automatically replace existing records with the same primary key.
+
+## Applies to
+-   Xml Port Table Element
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 ```AL
 AutoReplace = true;

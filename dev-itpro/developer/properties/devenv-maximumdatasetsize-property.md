@@ -1,24 +1,27 @@
 ---
-title: "MaximumDataSetSize Property"
-description: Explains the MaximumDataSetSize property on reports in Business Central
+title: "MaximumDatasetSize Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
-# MaximumDataSetSize Property
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# MaximumDatasetSize Property
+> **Version**: _Available from runtime version 6.0._
 
 Sets the maximum amount of rows to be included on the report.
-  
-## Applies To  
 
-- Reports
-  
+## Applies to
+-   Report
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value
 
 An integer

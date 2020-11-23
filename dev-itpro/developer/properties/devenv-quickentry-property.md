@@ -1,33 +1,29 @@
 ---
 title: "QuickEntry Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 6d7713f7-4d68-4989-8ed5-4dec80ae7334
-caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # QuickEntry Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies whether the page field control has input focus when users navigate through fields by pressing the Enter key. 
+Specifies if the page control should have input focus. The default value of the property is true. To specify that a control can be skipped, change this value to false.
 
+Specifying an expression as the value of the property is not supported.
 
-<!-- 
-  
-> [!NOTE]  
->  Specifying an expression as the value of the property is not supported.  -->
-  
 ## Applies to
-  
-- Page fields  
+-   Page Field
 
-<!-- onprem in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md-md)]-->
-
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value
  

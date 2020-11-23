@@ -1,25 +1,28 @@
 ---
 title: "PasteIsValid Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 7f3e261c-65ba-4adc-9fba-344a6eca8146
-caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PasteIsValid Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets whether inserting records into this table using the paste command is enabled.  
-  
-## Applies to  
+Sets whether inserting records into this table using the paste command is enabled.
 
-- Tables  
-  
+## Applies to
+-   Table
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** if you want to allow insert by pasting; otherwise, **false**. The default value is **true**.  

@@ -1,26 +1,28 @@
 ---
 title: "UseLax Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d95f6afe-8b48-4934-be3b-0e5d0fda4aa0
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
-
- 
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UseLax Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies whether an XMLport uses LAX \(Lazy API for XML\) to process an XML file.  
-  
-## Applies to  
- 
-- XMLports  
-  
+Specifies whether an XmlPort uses LAX (Lazy API for XML) to process an XML file.
+
+## Applies to
+-   Xml Port
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **true** if the XMLport uses LAX; otherwise **false**.  

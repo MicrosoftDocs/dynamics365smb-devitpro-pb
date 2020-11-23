@@ -1,24 +1,27 @@
 ---
 title: "MaximumDocumentCount Property"
-description: Explains the MaximumDocumentCount property on reports in Business Central
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MaximumDocumentCount Property
+> **Version**: _Available from runtime version 6.0._
 
-Sets the maximum document count when generating a report by using `WordMergerDataItem`.
-  
-## Applies To  
+Sets the maximum document count when generating a report by using WordMergerDataItem.
 
-- Reports
+## Applies to
+-   Report
 
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value
 
 An integer

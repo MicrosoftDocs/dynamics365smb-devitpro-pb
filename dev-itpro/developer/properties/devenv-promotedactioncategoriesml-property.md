@@ -1,24 +1,27 @@
 ---
 title: "PromotedActionCategoriesML Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 036a07c2-26b0-483b-96ae-4052fdfba6ad
-caps.latest.revision: 2
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PromotedActionCategoriesML Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the caption of the group that you are promoting the action to.  
-  
-## Applies to  
-  
-- Pages
+Sets the caption of the group that you are promoting the action to.
+
+## Applies to
+-   Page
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

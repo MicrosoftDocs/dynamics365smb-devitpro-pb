@@ -1,25 +1,27 @@
 ---
 title: "LinkTable Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 4a0ae945-1a46-46b3-b025-8bd3707128fd
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LinkTable Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the table that this XML item should be linked to. This property is only available for XML items that have a table as their data source.  
-  
-## Applies to  
+Sets the table that this XML item should be linked to. This property is only available for XML items that have a table as their data source.
 
-- XMLports  
+## Applies to
+-   Xml Port Table Element
 
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 
 ```AL

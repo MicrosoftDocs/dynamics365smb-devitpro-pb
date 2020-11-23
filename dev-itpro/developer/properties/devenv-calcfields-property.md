@@ -1,25 +1,28 @@
 ---
 title: "CalcFields Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 88fa557c-b6e7-4974-871f-6b2af85c284d
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CalcFields Property
-Sets a list of FlowFields to automatically calculate.  
-  
-## Applies to  
-  
--   Reports  
--   Table elements in XMLports
+> **Version**: _Available from runtime version 1.0._
 
+Sets a list of FlowFields to automatically calculate.
+
+## Applies to
+-   Xml Port Table Element
+-   Report Data Item
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 ```AL
 CalcFields = Amount;

@@ -1,27 +1,36 @@
 ---
 title: "Visible Property"
-author: solsen
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
-ms.author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
- 
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Visible Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets whether to display the page or control.  
+Sets whether to display the page or control.
 
-## Applies to  
+## Applies to
+-   Page Label
+-   Page Field
+-   Page Group
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Page Action
+-   Page Action Group
+-   Page View
+-   Page User Control
 
--   Page fields and action controls
--   Group and part controls on pages  
--   Views
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value  
 
@@ -58,5 +67,5 @@ When the **Visible** property is specified by a Boolean variable, users can choo
 
 ## See Also  
 
-[Properties](devenv-properties.md)   
+[Properties](devenv-properties.md)  
 [InDataSet Property](devenv-indataset-property.md)

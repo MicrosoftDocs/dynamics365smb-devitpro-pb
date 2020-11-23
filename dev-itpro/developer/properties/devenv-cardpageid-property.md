@@ -1,26 +1,28 @@
 ---
-title: "CardPageID Property"
+title: "CardPageId Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 3e156138-d9c7-486e-b697-43da477d505a
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# CardPageId Property
+> **Version**: _Available from runtime version 1.0._
 
- 
+Sets the card page that is associated with items in the current list page.
 
-# CardPageID Property
-Sets the card page that is associated with items in the current list page.  
-  
-## Applies to  
- - List pages  
- - ListPart pages  
+## Applies to
+-   Page
+-   Request Page
 
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 
 ```AL

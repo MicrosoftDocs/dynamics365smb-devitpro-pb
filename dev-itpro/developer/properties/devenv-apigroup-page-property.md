@@ -13,6 +13,8 @@ author: SusanneWindfeldPedersen
  
 # APIGroup Property (Page)
 
+> **Version**: _Available from runtime version 1.0._
+
 Sets the group of the API endpoint the page is exposed in.  The syntax for providing versions is illustrated in the example below:
 
 ## Applies to  
@@ -25,7 +27,7 @@ APIGroup = 'app1';
 ```
 
 > [!NOTE]  
-> The property **APIGroup** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
+> The property **APIGroup** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](devenv-api-pagetype.md).
 
 ## See Also  
 

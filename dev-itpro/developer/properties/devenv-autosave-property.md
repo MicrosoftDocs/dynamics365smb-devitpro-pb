@@ -2,23 +2,27 @@
 title: "AutoSave Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 7ed49a99-f761-4da3-bd68-18e15ea80c7b
-caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AutoSave Property
-Sets whether imported records are automatically written to the table.  
-  
-## Applies to  
- Table elements in XMLports  
-  
+> **Version**: _Available from runtime version 1.0._
+
+Sets whether imported records are automatically written to the table.
+
+## Applies to
+-   Xml Port Table Element
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
  **True** if the record is written to the table automatically; otherwise, **false**. The default value is **true**.  
 

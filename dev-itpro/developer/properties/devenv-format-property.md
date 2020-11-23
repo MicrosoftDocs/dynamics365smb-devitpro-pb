@@ -12,6 +12,8 @@ author: SusanneWindfeldPedersen
 ---
 
 # Format Property
+> **Version**: _Available from runtime version 1.0._
+
 Sets the formats of the source expression for various data types.  
   
 ## Applies to  

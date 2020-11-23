@@ -1,25 +1,28 @@
 ---
 title: "Namespaces Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: cd6bcd37-7b5d-4d06-a551-5569555160dc
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Namespaces Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies namespaces on the XMLport.  
-  
-## Applies to  
-  
-- XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**.  
- 
+Specifies namespaces on the XmlPort.
+
+## Applies to
+-   Xml Port
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL
@@ -48,4 +51,4 @@ For more information about using namespaces with XMLports, see  [Using Namespace
 [Properties](devenv-properties.md)  
 [NamespacePrefix Property](devenv-namespaceprefix-property.md)  
 [DefaultNamespace Property](devenv-defaultnamespace-property.md)  
-[UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md)
+[UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md)  

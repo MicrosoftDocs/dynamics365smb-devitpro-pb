@@ -1,25 +1,34 @@
 ---
 title: "Encoding Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 9c26900d-d9a2-4bde-90c1-eb85ebc62c49
-caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Encoding Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a value that specifies which system is applied to the XMLport for character encoding.  
-  
-## Applies to  
+Sets a value that specifies which system is applied to the XmlPort for character encoding.
 
-- XMLports  
+## Applies to
+-   Xml Port
 
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**UTF8**|Use UTF16 encoding system. This is the default value.|
+|**UTF16**|Use UTF16 encoding system.|
+|**ISO88592**|Use ISO88592 encoding system.|
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Syntax
 
 ```AL

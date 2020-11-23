@@ -1,17 +1,38 @@
 ---
 title: "RunPageLink Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RunPageLink Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets up a link to the page you are launching. Set the RunPageLink property to establish the link to the page that you want to launch. In the filter syntax, select a field from the table corresponding to the page that you want to launch. And then select the field in the table that underlies the current page and be careful that this field must match the field that you selected from the first table.
+Sets a link to a page that will be launched for this action.
+The following syntax is valid for the RunPageLink property:
+
+```
+RunPageLink = <TableFilters>
+<TableFilters> ::= <TableFilter> {,<TableFilter>}
+<TableFilter> ::= <RunObjectFieldName> = CONST(<FieldConst>) | FILTER(<Filter>) | FIELD(<SourceFieldName>) |
+FIELD(UPPERLIMIT(<SourceFieldName>)) | FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
+```
+
+The filters defined by this property are visible in the UI and can be modified by end-users. If it was intended to hide them from end-users, consider using the RunPageView property instead.
+
+
+## Applies to
+-   Page Action
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]  
 > This property is supported only on actions for pages.
@@ -19,10 +40,6 @@ Sets up a link to the page you are launching. Set the RunPageLink property to es
 > [!IMPORTANT]  
 > For performance reasons, always set the `RunPageView` property if the `RunPageLink` property is also set. In fact, the sort order chosen in the `RunPageView` property must contain the fields listed in the `RunPageLink` property or else the performance is decreased.
 
-## Applies to  
-  
-- Page Actions  
-  
 ## Syntax example
 
 ```AL

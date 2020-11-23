@@ -1,25 +1,27 @@
 ---
 title: "LinkedObject Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 7b633d2b-5833-47e8-aa92-9e6eb1238cb2
-caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LinkedObject Property
+> **Version**: _Available from runtime version 1.0._
 
-Use this property to link to SQL Server objects.  
-  
-## Applies to  
+Specifies a link to SQL Server objects.
 
-- Tables  
+## Applies to
+-   Table
 
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value
 
 **True** if a link to SQL Server objects is provided; otherwise, **false**. The default value is **false**.  

@@ -1,25 +1,28 @@
 ---
 title: "RequestedHeight Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: dd671414-a7c3-44bd-a860-a8bda61c7913
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestedHeight Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the ideal height in pixels of the control add-in.
+RequestedHeight specifies the initial height of the control add-in.
 
-## Applies to 
+## Applies to
+-   Control Add In
 
-- Control add-in objects
-  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Value Type 
 
 - Integer 
@@ -43,5 +46,4 @@ MinimumHeight = 150;
 
 ## See Also
 
-[Control Add-In Object](../devenv-control-addin-object.md)   
- 
+[Control Add-In Object](../devenv-control-addin-object.md)  

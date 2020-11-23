@@ -1,24 +1,27 @@
 ---
-title: "SQLIndex Property"
+title: "SqlIndex Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 58a94a2c-fbdd-404e-9760-9bfede48f36e
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# SqlIndex Property
+> **Version**: _Available from runtime version 1.0._
 
-# SQLIndex Property
+Sets the actual fields that are used in the corresponding index on SQL Server.
 
-Controls the actual fields and their ordering in the corresponding index on SQL Server.  
-  
-## Applies to  
+## Applies to
+-   Table Key
 
-- Keys  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 
@@ -42,7 +45,7 @@ If you use this property to define an index for the primary key, it must include
 
 ## Example
 
-The following example uses the SQLIndex property on a primary key that includes two fields.
+The following example uses the SQLIndex property on a primary key that includes two fields. The clustered index in the database will be ordered like this: (MyField2,MyField1).
 
 ```AL
 keys

@@ -1,54 +1,56 @@
 ---
 title: "ObsoleteTag Property"
-description: "Description of the ObsoleteTag property"
-author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteTag Property
+> **Version**: _Available from runtime version 4.3._
 
 Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.
 
-## Applies to  
+## Applies to
+-   Table Field
+-   Table
+-   Table Key
+-   Codeunit
+-   Enum Type
+-   Enum Value
+-   Page
+-   Page Action
+-   Page Action Area
+-   Page Action Group
+-   Page Action Separator
+-   Page Area
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Page Field
+-   Page Group
+-   Page Label
+-   Query
+-   Query Column
+-   Query Filter
+-   Report
+-   Report Data Item
+-   Report Column
+-   Request Page
+-   Xml Port
+-   Page View
+-   Profile
+-   Interface
+-   Control Add In
 
-- Table objects
-- Table fields
-- Table keys
-- Codeunit
-- Enum
-- EnumValue
-- Page
-- PageAction
-- PageActionArea
-- PageActionGroup
-- PageActionSeparator
-- PageArea
-- PageChartPart
-- PageField
-- PageGroup
-- PageLabel
-- PagePart
-- PageSystemPart
-- Query
-- QueryColumn
-- QueryDataItem
-- QueryFilter
-- Report
-- ReportColumn
-- ReportDataItem
-- RequestPage
-- XmlPort
-  
-## Property Value  
-
-A free-form text.
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

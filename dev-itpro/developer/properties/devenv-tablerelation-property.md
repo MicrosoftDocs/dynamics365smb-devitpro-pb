@@ -2,7 +2,7 @@
 title: "TableRelation Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/17/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,16 +10,30 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableRelation Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets relationships (links) to other tables. For example, if you want to provide a lookup into another table, set the name of that table on this property.  
-  
-## Applies to  
-  
-- Table Fields  
-- Page Fields  
-  
+Sets up a lookup into another table.
+The following syntax is valid for the TableRelation property:
+
+```
+TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
+[IF(<Conditions>) <TableName>[.<FieldName>] [WHERE(<TableFilters>)] ELSE <TableRelation>]
+<Conditions> ::= <TableFilters>
+<TableFilters>::= <TableFilter> {,<TableFilter>}
+<TableFilter>::= <DestinationFieldName>=CONST(<FieldConst>) | FIELD(<SourceFieldName>)
+```
+
+
+## Applies to
+-   Table Field
+-   Page Field
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks
 
 The `TableRelation` property lets you establish lookups into other tables. For example, on the Item card you can select a vendor from who you usually purchase an item. This is done through a table relationship.  

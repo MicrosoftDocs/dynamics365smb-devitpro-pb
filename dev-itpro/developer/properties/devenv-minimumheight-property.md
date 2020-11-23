@@ -1,25 +1,27 @@
 ---
 title: "MinimumHeight Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: dd671414-a7c3-44bd-a860-a8bda61c7913
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MinimumHeight Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the minimum size in pixels to which the control add-in can dynamically decrease its height.
+Specifies the minimum height that the control add-in can be shrunk to. This setting only applies if the VerticalShrink setting is specified.
 
-## Applies to 
+## Applies to
+-   Control Add In
 
-- Control add-in objects
-  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Value Type 
   
 - Integer 
