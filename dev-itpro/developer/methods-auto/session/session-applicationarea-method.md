@@ -2,7 +2,7 @@
 title: "Session.ApplicationArea Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Session.ApplicationArea Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the application areas for the current session.
 
 
@@ -21,8 +23,8 @@ Gets or sets the application areas for the current session.
 ```
 [ApplicationArea := ]  Session.ApplicationArea([ApplicationArea: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *ApplicationArea*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -30,9 +32,9 @@ The new application areas for the current session.
 
 
 ## Return Value
-*ApplicationArea*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The application areas for the current session.  
+*ApplicationArea*
+&emsp;Type: [String](../string/string-data-type.md)
+The application areas for the current session.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

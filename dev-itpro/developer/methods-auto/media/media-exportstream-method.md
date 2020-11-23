@@ -2,7 +2,7 @@
 title: "Media.ExportStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Media.ExportStream Method
+> **Version**: _Available from runtime version 1.0._
+
 Exports the current media object (such as a JPEG image) that is used on record to an OUTSTREAM object. The OUTSTREAM object can be created from a BLOB field, a FILE or from a .NET Framework interoperability object. In the record, the media is referenced in a Media data type field.
 
 
@@ -22,9 +24,9 @@ Exports the current media object (such as a JPEG image) that is used on record t
 [Result := ]  Media.ExportStream(Stream: OutStream)
 ```
 ## Parameters
-*Media*  
-&emsp;Type: [Media](media-data-type.md)  
-An instance of the [Media](media-data-type.md) data type.  
+*Media*
+&emsp;Type: [Media](media-data-type.md)
+An instance of the [Media](media-data-type.md) data type.
 
 *Stream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
@@ -32,9 +34,9 @@ The OutStream object that is created by the object that will receive the media c
 
 
 ## Return Value
-*Result*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the media was successfully exported, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Result*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the media was successfully exported, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

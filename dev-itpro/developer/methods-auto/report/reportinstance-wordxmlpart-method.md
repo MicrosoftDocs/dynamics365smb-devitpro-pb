@@ -2,7 +2,7 @@
 title: "Report.WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.WordXmlPart Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 
@@ -22,9 +24,9 @@ Gets the report data structure as structured XML that is compatible with Microso
 String :=   Report.WordXmlPart([ExtendedFormat: Boolean])
 ```
 ## Parameters
-*Report*  
-&emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.  
+*Report*
+&emsp;Type: [Report](report-data-type.md)
+An instance of the [Report](report-data-type.md) data type.
 
 *ExtendedFormat*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -37,9 +39,9 @@ If you omit this parameter or set it to false, then the element attributes are n
 
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-A string representation of the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+A string representation of the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

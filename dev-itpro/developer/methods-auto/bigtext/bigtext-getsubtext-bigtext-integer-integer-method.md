@@ -2,7 +2,7 @@
 title: "BigText.GetSubText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # BigText.GetSubText Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets part of a BigText variable.
 
 
@@ -22,9 +24,9 @@ Gets part of a BigText variable.
 [Length := ]  BigText.GetSubText(var Variable: BigText, Position: Integer [, Length: Integer])
 ```
 ## Parameters
-*BigText*  
-&emsp;Type: [BigText](bigtext-data-type.md)  
-An instance of the [BigText](bigtext-data-type.md) data type.  
+*BigText*
+&emsp;Type: [BigText](bigtext-data-type.md)
+An instance of the [BigText](bigtext-data-type.md) data type.
 
 *Variable*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
@@ -41,9 +43,9 @@ The length of the sub text that should be retrieved. This parameter is optional.
 
 
 ## Return Value
-*Length*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The length of the result text.  
+*Length*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The length of the result text.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
