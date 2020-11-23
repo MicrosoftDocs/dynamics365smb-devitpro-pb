@@ -35,7 +35,8 @@ Before assigning gesture activation to actions, take a moment to consider which 
 In general, having a single action available on swipe-right that starts or progresses the most important task is recommended, and - optionally - a single action is made available on left swipe. In special cases, multiple actions can be made available on either right or left swipe. In this case, the user's first swipe will reveal the available actions, and a second tap gesture is then needed to activate one of the actions. When using multiple actions on swipe, organize actions in their order of importance, sequenced in reading order, most important first.
 
 ## See Also
-[Gesture Property](devenv-gesture-property.md) 
+
+[Gesture Property](properties/devenv-gesture-property.md) 
 <!-- 
 [Developing for the Microsoft [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Mobile App](Developing-for-the-Microsoft-Dynamics-NAV-Mobile-App.md)  
 [Adding Actions to Pages](Adding-Actions-to-Pages.md) -->
