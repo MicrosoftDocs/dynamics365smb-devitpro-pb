@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: solsen
 ---
 
 # Testing your Extension
