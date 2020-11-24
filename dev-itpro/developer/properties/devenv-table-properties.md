@@ -47,14 +47,12 @@ The following topic lists properties that apply to the [table object](../devenv-
 |[ExternalName Property](devenv-externalname-property.md)||<ul><li>Table object</li></ul>|
 |[ExternalSchema Property](devenv-externalschema-property.md)||<ul><li>Table object</li></ul>|
 |[FieldClass Property](devenv-fieldclass-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
-|[ID Property](devenv-id-property.md)||<ul><li>Table object</li></ul>|
 |[InitValue Property](devenv-initvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[LinkedInTransaction Property](devenv-linkedintransaction-property.md)||<ul><li>Table object</li></ul>|
 |[LinkedObject Property](devenv-linkedobject-property.md)||<ul><li>Table object</li></ul>|
 |[LookupPageID Property](devenv-lookuppageid-property.md)||<ul><li>Table object</li></ul>|
 |[MaxValue Property](devenv-maxvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
 |[MinValue Property](devenv-minvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>| 
-|[Name Property](devenv-name-property.md)||<ul><li>Table object</li></ul>|
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>| 
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Code field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>|
 |[ObsoleteReason](devenv-obsoletereason-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Text field</li></ul>|

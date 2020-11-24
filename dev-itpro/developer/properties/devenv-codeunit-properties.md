@@ -18,30 +18,15 @@ This topic lists properties that apply to the Codeunit object, variables, text c
 |[Access Property](devenv-access-property.md)|<ul><li>Codeunit objects</li></ul>|
 |[ConstValue Property](devenv-constvalue-property.md)|<ul><li>Global Text Constants</li><li>AL Locals Text Constants</li></ul>|
 |[ConstValueML Property](devenv-constvalueml-property.md)|<ul><li>Global Text Constants</li><li>AL Locals Text Constants</li></ul>|
-|[Dimensions Property](devenv-dimensions-property.md)|<ul><li>Global Variables</li><li>AL Locals Variables</li><li>AL Locals Parameters</li><li>AL Locals Return Values</li></ul>|
-|[Event Property](devenv-event-property.md)|<ul><li>Global Methods</li></ul>|
-|[EventMethod Property](devenv-eventmethod-property.md)|<ul><li>Global Methods</li></ul>|
-|[EventPublisherElement Property](devenv-eventpublisherelement-property.md)|<ul><li>Global Methods</li></ul>|
-|[EventPublisherObject Property](devenv-eventpublisherobject-property.md)|<ul><li>Global Methods</li></ul>|
 |[EventSubscriberInstance Property](devenv-eventsubscriberinstance-property.md)|<ul><li>Codeunit Object</li></ul>|
-|[EventType Property](devenv-eventtype-property.md)|<ul><li>Global Methods</li></ul>|
-|[ID Property](devenv-id-property.md)|<ul><li>Global Variables</li><li>Global Text Constants</li><li>Global Methods</li><li>AL Locals Variables</li><li>AL Locals Text Constants</li><li>AL Locals Parameters</li><li>AL Locals Return Values</li></ul>|
-|[IncludeSender Property](devenv-includesender-property.md)|<ul><li>Global Methods</li></ul>|
-|[Local Property](devenv-local-property.md)|<ul><li>Global Methods</li></ul>|
-|[MethodType Property \(Upgrade Codeunits\)](devenv-methodtype-property-upgrade-codeunits.md)|<ul><li>Global Methods</li></ul>|
-|[Name Property](devenv-name-property.md)|<ul><li>Codeunit Object</li></ul>|
 |[OptionString Property](devenv-optionstring-property.md)|<ul><li>Global Variables</li><li>AL Locals Variables</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)|<ul><li>Codeunit Object</li></ul>|
 |[RunOnClient Property](devenv-runonclient-property.md)|<ul><li>AL Locals variables</li></ul>|
 |[SingleInstance Property](devenv-singleinstance-property.md)|<ul><li>Codeunit Object</li></ul>|
-|[SubType Property (Codeunit)](devenv-subtype-property-codeunit.md)|<ul><li>Codeunit Object</li></ul>|
+|[SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)|<ul><li>Codeunit Object</li></ul>|
 |[SuppressDispose Property](devenv-suppressdispose-property.md)|<ul><li>AL Locals variables</li></ul>|
 |[TableNo Property](devenv-tableno-property.md)|<ul><li>Codeunit Object</li></ul>|
-|[Temporary Property](devenv-temporary-property.md)|<ul><li>AL Locals Variables</li></ul>|
 |[TestIsolation Property](devenv-testisolation-property.md)|<ul><li>Codeunit Object</li></ul>|
-|[TransactionModel Property](devenv-transactionmodel-property.md)|<ul><li>Global Methods</li></ul>|
-|[TryMethod Property](devenv-trymethod-property.md)|<ul><li>Global Methods</li></ul>|
-|[WithEvents Property](devenv-withevents-property.md)|<ul><li>Global Variables</li></ul>|
 
 
 

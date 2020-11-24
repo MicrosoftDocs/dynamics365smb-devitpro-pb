@@ -64,7 +64,6 @@ The following properties all apply to the page object, only some of these proper
 |[GridLayout Property](devenv-gridlayout-property.md)||<ul><li>Group control</li></ul>|
 |[Gesture Property](devenv-gesture-property.md)||<ul><li>Action</li></ul>|
 |[HideValue Property](devenv-hidevalue-property.md)|X|<ul><li>Field control</li></ul>|
-|[IndentationColumn Property](devenv-indentationcolumnname-property.md)||<ul><li>Group control</li></ul>|
 |[IndentationControls Property](devenv-indentationcontrols-property.md)||<ul><li>Group control</li></ul>|
 |[InFooterBar Property](devenv-infooterbar-property.md)|X|<ul><li>Action</li></ul>|
 |[InsertAllowed Property](devenv-insertallowed-property.md)||<ul><li>Page object</li></ul>|

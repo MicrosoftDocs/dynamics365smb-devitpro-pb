@@ -30,8 +30,6 @@ This topic lists properties of the report object.
 |[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|<ul><li>Report Object</li></ul>|
 |[DataAccessIntent Property](devenv-dataaccessintent-property.md)|<ul><li>Report Object</li></ul>|
 |[DataItemLink Property \(Reports\)](devenv-dataitemlink-reports-property.md)|<ul><li>DataItem controls</li></ul>|
-|[DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|<ul><li>DataItem controls</li></ul>|
-|[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DataItemTableView Property](devenv-dataitemtableview-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DecimalPlaces Property](devenv-decimalplaces-property.md)|<ul><li>Column controls</li></ul>|
 |[DefaultLayout Property](devenv-defaultlayout-property.md)|<ul><li>Report Object</li></ul>|
@@ -40,13 +38,10 @@ This topic lists properties of the report object.
 |[EnableExternalImages Property](devenv-enableexternalimages-property.md)|<ul><li>Report Object</li></ul>|
 |[EnableHyperlinks Property](devenv-enablehyperlinks-property.md)|<ul><li>Report Object</li></ul>|
 |[ExecutionTimeout Property](devenv-executiontimeout-property.md)|<ul><li>Report Object</li></ul>|
-|[ID Property](devenv-id-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
 |[IncludeCaption Property](devenv-includecaption-property.md)|<ul><li>Column controls</li></ul>| 
-|[Indentation Property \(Reports\)](devenv-indentation-reports-property.md)|<ul><li>DataItem controls</li><li>Column controls</li><ul>|
 |[MaximumDataSetSize Property](devenv-maximumdatasetsize-property.md)|<ul><li>Report Object</li></ul>|
 |[MaximumDocumentCount Property](devenv-maximumdocumentcount-property.md )|<ul><li>Report Object</li></ul>|
 |[MaxIteration Property](devenv-maxiteration-property.md)|<ul><li>DataItem controls</li></ul>|
-|[Name Property](devenv-name-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
 |[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li></ul>|
 |[ObsoleteState Property](devenv-obsoletestate-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li></ul>|
 |[OptionCaption Property](devenv-optioncaption-property.md)|<ul><li>Column controls</li></ul>|
