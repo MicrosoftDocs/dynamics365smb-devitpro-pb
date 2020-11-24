@@ -11,25 +11,21 @@ ms.author: a-emniel
 ---
 
 # Offer Description 
-
-| Offer Details  | Description| Requirements |
-|----------------|------------|--------------|
-| 2. **Offer Description** (How to format and structure paragraphs in your offer description) | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. |     Required | 
+ Make an elaborate and compelling description that outlines the benefits and usage scenarios of your  offer.
 
 > [!NOTE]  
 > The description can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added to the document section. 
 
-How to structure the paragraphs in your description? Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. 
+**How to structure the paragraphs in your description?**
+Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. 
 
-To do so, your description should consist of 6 paragraphs (in the following order):
-- Introduction paragraph (point 2.A)
-- Pain based paragraph (point 2.B)
-- Benefit based paragraph (point 2.C)
-- Benefits in bullet points paragraph (2.D)
-- Closing Call to action paragraph (point 2.E)
-- Supported editions paragraph (point 2.F)
-- Supported countries paragraph (point 2.G)
-- Supported languages paragraph (point 2.H)
+To do so, your description should ideally consist of 6 paragraphs (in the following order):
+- Introduction paragraph
+- Pain based paragraph
+- Benefit based paragraph
+- Benefits in bullet points paragraph
+- Closing Call to action paragraph
+- Supported editions, countries, and languages paragraph
 
 By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
 
