@@ -82,7 +82,7 @@ end;
 ```
 
 > [!NOTE]
-> Ensure that select expression contains ' (single quotation mark) and not " (double quotation mark) to decorate string value.
+> Ensure that the selected expression contains ' (single quotation mark) and not " (double quotation mark) to decorate the string value.
 
 ## See Also
 [JsonToken Data Type](jsontoken-data-type.md)  
