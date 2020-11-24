@@ -36,8 +36,8 @@ Follow this marketing validation checklist and get your app passed on the first 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|App type|Make sure to read the branding guidelines carefully before you start referencing the product name. | [Read more](readiness-checklist-a-languange-branding.md) |
-|Contact type| Discover what to consider for each storefront detail when it comes to language. | [Read more](readiness-checklist-a-languange-branding.md)|
+|App type|Read more about the  types of apps you can submit to AppSource. | [Read more](readiness-checklist-a-languange-branding.md) |
+|Contact type| How do you want potential customers to interact with this listing offer? | [Read more](readiness-checklist-a-languange-branding.md)|
 |Test drive | If you choose “free trial” as the contact type of your offer, you need to enable a test drive. | [Read more](readiness-checklist-a-languange-branding.md)|
 |Customer leads| The lead management system should only be setup if you choose “contact me” as contact type.  | [Read more](link)
 
