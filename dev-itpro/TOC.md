@@ -18,7 +18,6 @@
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
 <!--### Get started with building apps
-#### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 #### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
 #### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
 #### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
@@ -148,6 +147,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
 ### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
 ### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
 ### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
@@ -925,6 +925,8 @@
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
+### [Some Known Issues](upgrade/known-issues.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
+
 <!-- end upgrade -->
 <!--on-prem ends-->

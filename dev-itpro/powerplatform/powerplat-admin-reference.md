@@ -48,9 +48,11 @@ The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cd
 
 3. On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants will have an default environment called 'production'.
 
-4. Set the **Default Company** value. 
+4. Save changes before setting **Default Company**. Else, company cannot be set in the next step.
 
-5. Save the changes.
+5. Set the **Default Company** value. 
+
+6. Save the changes.
 
 ## Making virtual tables visible
 
