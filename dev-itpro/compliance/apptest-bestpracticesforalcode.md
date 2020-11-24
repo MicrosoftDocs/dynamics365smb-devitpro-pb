@@ -20,16 +20,16 @@ This page defines some of the best practices to follow when writing AL code for 
 
 ## Extension structure 
 
-An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
+An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.
 
 ## File naming 
 
 Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), can contain a prefix or suffix. 
 
+The CodeCop analyzer suggests that the object name is part of the file name, which is encouraged as a best practice. Adding any affixes to the file names is voluntary.
+
 > [!NOTE]  
 > If you are submitting an app to AppSource, you must follow the guidance in the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
-
-The CodeCop analyzer suggests that the object name is part of the file name, which is encouraged as a best practice. Adding any affixes to the file names is voluntary.
 
 ### File naming notation
 
@@ -108,6 +108,7 @@ For the listed objects above, these are examples of the file naming.
 ## Formatting
 
 We recommend keeping your AL code properly formatted as follows:
+
 - Use all lowercase letters for reserved language keywords. Built-in methods and types are not included in this rule because they are written using Pascal case. 
 - Use four spaces for indentation. 
 - Curly brackets are always on a new line. If there is one property, put it on a single line. 
