@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/22/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -24,7 +24,12 @@ An extension is fully contained in a single folder. This folder often contains m
 
 ## File naming 
 
-Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects.
+Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), can contain a prefix or suffix. 
+
+> [!NOTE]  
+> If you are submitting an app to AppSource, you must follow the guidance in the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
+
+The CodeCop analyzer suggests that the object name is part of the file name, which is encouraged as a best practice. Adding any affixes to the file names is voluntary.
 
 ### File naming notation
 
@@ -34,6 +39,7 @@ Follow the syntax for file naming as shown below:
 |------|---------------------------|
 |`<ObjectNameSuffix>.<FullTypeName>.al`|`<ObjectNameSuffix>.<FullTypeName>Ext.al`|
 |`<PrefixObjectName>.<FullTypeName>.al`|`<PrefixObjectName>.<FullTypeName>Ext.al`|
+|`<ObjectNameExcludingAffix>.<FullTypeName>.al`|`<ObjectNameExcludingAffix>.<FullTypeName>Ext.al`|
 
 ### Type map
 
