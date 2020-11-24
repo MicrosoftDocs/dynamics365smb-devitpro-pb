@@ -40,10 +40,10 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|Categories|Choose a primary, a secondary, and up to four subcategories. | [Read more](link) |
-|Industries|Choose up to two industries for your offer.| [Read more](link)|
-|App version | Specify the version number of your offer. | [Read more](link)|
-|Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](link)|
+|Categories|Choose a primary, a secondary, and up to four subcategories. | [Read more](\readiness-checklist-d-supportedcountries-languages.md) |
+|Industries|Choose up to two industries for your offer.| [Read more](\readiness-checklist-d-supportedcountries-languages.md)|
+|App version | Specify the version number of your offer. | [Read more](\readiness-checklist-d-supportedcountries-languages.md)|
+|Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](\readiness-checklist-d-supportedcountries-languages.md#License-agreement)|
 
 ## Offer listing
 
