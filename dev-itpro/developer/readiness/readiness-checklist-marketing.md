@@ -32,9 +32,9 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
 |App type|Read more about the  types of apps you can submit to AppSource. | [Read more](\readiness-checklist-e-industries-categories-apptype.md#app-type) |
-|Contact type| How do you want potential customers to interact with this listing offer? | [Read more](\readiness-checklist-e-industries-categories-apptype.md#contact-type)|
+|Contact type| How do you want potential customers to interact with your offer? | [Read more](\readiness-checklist-e-industries-categories-apptype.md#contact-type)|
 |Test drive | If you choose “free trial” as the contact type of your offer, you need to enable a test drive. | [Read more](\readiness-checklist-e-industries-categories-apptype.md#test-drive)|
-|Customer leads| The lead management system should only be setup if you choose “contact me” as contact type.  | [Read more](\readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
+|Customer leads| Provide connection details to the CRM system where you would like to send customer leads.  | [Read more](\readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
 
 ## Properties
 
