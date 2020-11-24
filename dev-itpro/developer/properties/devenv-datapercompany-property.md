@@ -2,7 +2,7 @@
 title: "DataPerCompany Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets a value that indicates whether the table data applies to all companies in t
 ## Applies to
 -   Table
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **True** if data is available only to this company; otherwise, **false**. The default value is **true**.  

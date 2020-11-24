@@ -2,7 +2,7 @@
 title: "ExternalType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,9 @@ Specify this property if the original type is different from the type that you s
 ## Applies to
 -   Table Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 - String  

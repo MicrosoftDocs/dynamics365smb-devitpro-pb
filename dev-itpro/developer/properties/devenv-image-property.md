@@ -2,7 +2,7 @@
 title: "Image Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,9 @@ Specifies the icon that you want to associate with a field in a CueGroup control
 -   Page Action
 -   Page Action Group
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
   > [!NOTE]  
   > You can only use images on fields that have an integer data type.
 

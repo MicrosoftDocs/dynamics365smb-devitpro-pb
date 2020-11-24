@@ -2,7 +2,7 @@
 title: "MaintainSiftIndex Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets the value to determine whether SIFT structures (indexed views) should be cr
 ## Applies to
 -   Table Key
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** to create the SIFT structures (indexed views) in SQL Server; otherwise, **false**. The default is **true**. 

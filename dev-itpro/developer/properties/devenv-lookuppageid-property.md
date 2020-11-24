@@ -2,7 +2,7 @@
 title: "LookupPageId Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets the ID of the page you want to use as a lookup.
 -   Table
 -   Page Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks
 
 By default, a lookup provides a list of records in the table. Using this list, users can select a record and retrieve information from it into this control.

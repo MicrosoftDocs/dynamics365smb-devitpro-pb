@@ -2,7 +2,7 @@
 title: "Compressed Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets a value that specifies whether a BLOB is compressed.
 ## Applies to
 -   Table Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property value
 
 **True** if the BLOB is compressed, otherwise **false**. The default is **false**.

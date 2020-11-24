@@ -2,7 +2,7 @@
 title: "ClosingDates Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets a value that determines whether users can enter a closing date in this fiel
 -   Table Field
 -   Page Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property value
 
 **True** if users can enter a closing date in the field, otherwise **false**. The default is **false**.

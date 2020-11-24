@@ -2,7 +2,7 @@
 title: "ExternalName Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,9 @@ Specify this property if the original name is different from the name that you s
 -   Table
 -   Table Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 The name of the table in the external database.  
 

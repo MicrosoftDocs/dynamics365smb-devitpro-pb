@@ -2,7 +2,7 @@
 title: "RunPageLink Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,9 @@ The filters defined by this property are visible in the UI and can be modified b
 ## Applies to
 -   Page Action
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > This property is supported only on actions for pages.

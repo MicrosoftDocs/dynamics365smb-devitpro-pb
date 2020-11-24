@@ -2,7 +2,7 @@
 title: "PaperSourceDefaultPage Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,7 +54,9 @@ Specifies the default paper source to use when printing the report.
 |**Custom14**|A printer-specific paper source.|
 |**Custom15**|A printer-specific paper source.|
 |**Custom16**|A printer-specific paper source.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

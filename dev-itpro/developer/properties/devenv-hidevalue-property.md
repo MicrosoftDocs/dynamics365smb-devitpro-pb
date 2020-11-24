@@ -2,7 +2,7 @@
 title: "HideValue Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets whether to show or hide a value for the user based on an expression.
 -   Page Label
 -   Page Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Values  
 
 **True** if the value is hidden; otherwise, **false**. The default is **false**.  

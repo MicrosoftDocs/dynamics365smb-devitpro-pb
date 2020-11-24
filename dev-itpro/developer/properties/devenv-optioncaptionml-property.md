@@ -2,7 +2,7 @@
 title: "OptionCaptionML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,9 @@ Sets the strings that are displayed to the user for selecting an option. OptionC
 -   Page Field
 -   Report Column
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).

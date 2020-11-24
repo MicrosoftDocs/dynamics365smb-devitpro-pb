@@ -2,7 +2,7 @@
 title: "DefaultNamespace Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies the default namespace for both the IMPORT function (XmlPort) and EXPOR
 ## Applies to
 -   Xml Port
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL

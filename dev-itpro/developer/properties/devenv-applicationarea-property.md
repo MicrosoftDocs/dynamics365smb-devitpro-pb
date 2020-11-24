@@ -2,7 +2,7 @@
 title: "ApplicationArea Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,9 @@ Sets the application areas that apply to the control. Standard values are All, B
 -   Page
 -   Report
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Values  
 A text string that contains a comma-separated list of application area tags.  

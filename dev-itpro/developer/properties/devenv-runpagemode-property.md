@@ -2,7 +2,7 @@
 title: "RunPageMode Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,9 @@ Sets the mode in which the page is run. Choose between View, Edit, or Create.
 |**View**|The page is run in View mode.|
 |**Edit**|The page is run in Edit mode.|
 |**Create**|The page is run in Create mode.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

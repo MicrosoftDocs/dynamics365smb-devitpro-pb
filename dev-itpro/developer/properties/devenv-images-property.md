@@ -2,7 +2,7 @@
 title: "Images Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies the list of images to include in the control add-in.
 ## Applies to
 -   Control Add In
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Values
 
 A list of comma-separated strings that represents paths to image files. The default is blank, with no images being used by the control add-in. 

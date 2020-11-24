@@ -2,7 +2,7 @@
 title: "ShowMandatory Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,9 @@ Also, be aware that while it is possible to use an expression for the ShowMandat
 ## Applies to
 -   Page Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!IMPORTANT]  
 > Using expressions has the limitation that number fields with default values, will be interpreted as having a value, and will not be marked with a red asterisk. For example, on the **Customer** page, on the **Credit Limit (LCY)** field, using an expression like **Credit Limit (LCY) < 5000** will not result in a red asterisk, even if the value is below 5000, because the field already has a default value.  

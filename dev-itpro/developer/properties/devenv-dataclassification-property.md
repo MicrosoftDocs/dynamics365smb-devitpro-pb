@@ -2,7 +2,7 @@
 title: "DataClassification Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,9 @@ Specifies the classification to be applied on the data contained in the table.
 |**OrganizationIdentifiableInformation**|(OII) Data that can be used to identify a tenant, generally config or usage data. This data is not linkable to a user and does not contain Customer content.|
 |**SystemMetadata**|Data generated while running the service or program that is not linkable to a user or tenant.|
 |**ToBeClassified**|Content that has not yet been given a classification. This is the initial value when table or field is created.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks  
 
 The data classification can be used to adhere to security, compliance, and privacy requirements and processes for collecting, storing, and using user personal information.

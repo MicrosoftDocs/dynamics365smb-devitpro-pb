@@ -2,7 +2,7 @@
 title: "FormatEvaluate Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,9 @@ Sets the data that is being imported or exported as XML data types or as the sta
 |-----------|---------------------------------------|
 |**Legacy**|The data uses the standard AL data types.|
 |**Xml**|The data uses the standard XML data types.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL

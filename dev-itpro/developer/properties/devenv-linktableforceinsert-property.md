@@ -2,7 +2,7 @@
 title: "LinkTableForceInsert Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets whether data from the linked table is forcibly modified or inserted into a 
 ## Applies to
 -   Xml Port Table Element
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **True** if you want to forcibly insert or modify data; otherwise, **false**. The default is **true**.  

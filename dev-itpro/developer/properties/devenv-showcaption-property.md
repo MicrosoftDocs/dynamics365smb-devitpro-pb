@@ -2,7 +2,7 @@
 title: "ShowCaption Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,9 @@ Sets whether the text that is specified by the Caption Property is displayed for
 -   Page Field
 -   Page Group
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value  
 

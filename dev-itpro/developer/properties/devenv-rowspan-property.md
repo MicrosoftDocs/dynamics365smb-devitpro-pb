@@ -2,7 +2,7 @@
 title: "RowSpan Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets the number of rows that a field spans in a Grid control.
 -   Page Label
 -   Page Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Values
 

@@ -2,7 +2,7 @@
 title: "WordLayout Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets the Word layout that is used on a report and returns it as a data stream.
 ## Applies to
 -   Report
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > Reports support both Word and RDL layout.

@@ -2,7 +2,7 @@
 title: "PreserveWhiteSpace Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,9 @@ When this property is set to Yes, no normalizations are performed.
 ## Applies to
 -   Xml Port
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value  
 

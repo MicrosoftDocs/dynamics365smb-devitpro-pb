@@ -2,7 +2,7 @@
 title: "Namespaces Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies namespaces on the XmlPort.
 ## Applies to
 -   Xml Port
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

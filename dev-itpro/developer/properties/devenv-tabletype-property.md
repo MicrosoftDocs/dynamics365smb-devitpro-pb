@@ -2,7 +2,7 @@
 title: "TableType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,9 @@ Specifies the table type.
 |**MicrosoftGraph**|This is for internal use only.|
 |**CDS**|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
 |**Temporary**|Specifies the table as an in-memory table used to store temporary data.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

@@ -2,7 +2,7 @@
 title: "DateFormula Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets a date formula used to verify that the date the user enters is correct.
 -   Table Field
 -   Page Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks  
 
 > [!NOTE]  

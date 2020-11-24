@@ -2,7 +2,7 @@
 title: "DataItemLinkReference Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets the parent data item to which a child (indented) data item is linked. After
 ## Applies to
 -   Report Data Item
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks  
 The default value is the name of the last preceding data item in the report with lower indentation. You can set **DataItemLinkReference** and **DataItemLink** properties for a data item that is not a child of another data item, however, this will not have any effect.  
 

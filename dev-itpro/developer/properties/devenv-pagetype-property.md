@@ -2,7 +2,7 @@
 title: "PageType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,9 @@ Sets the type of page to create.
 |**ReportProcessingOnly**|Only report processing.|
 |**XmlPort**|XmlPort page.|
 |**HeadlinePart**|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

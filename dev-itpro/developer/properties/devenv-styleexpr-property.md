@@ -2,7 +2,7 @@
 title: "StyleExpr Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,9 @@ This note pertains to backward compatibility only. If the property is set to Boo
 -   Page Label
 -   Page Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!IMPORTANT]  
 > **StyleExpr** must not be set to a Text or Boolean array; otherwise, it will compile, but fail at runtime.

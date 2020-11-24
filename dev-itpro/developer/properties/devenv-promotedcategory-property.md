@@ -2,7 +2,7 @@
 title: "PromotedCategory Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +45,9 @@ Sets a category for a promoted action.
 |**Category18**|Actions will appear in the Category 18 menu.|
 |**Category19**|Actions will appear in the Category 19 menu.|
 |**Category20**|Actions will appear in the Category 20 menu.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Example
 

@@ -2,7 +2,7 @@
 title: "LinkFields Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies the fields that are linked between two tables using the LinkTable Prop
 ## Applies to
 -   Xml Port Table Element
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
   
 |**Value**|**Description**|  

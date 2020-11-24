@@ -2,7 +2,7 @@
 title: "BlankNumbers Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,9 @@ Indicates whether the system will clear a range of numbers as it formats them.
 |**BlankZero**|Clear numbers equal to zero.|
 |**BlankZeroAndPos**|Clear positive numbers and zero.|
 |**BlankPos**|Clear positive numbers.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax  
 ```AL
 BlankNumbers = BlankNegAndZero;

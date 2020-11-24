@@ -2,7 +2,7 @@
 title: "Description Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,9 @@ Sets the description. This description is for internal use and does not appear t
 -   Xml Port Text Attribute
 -   Profile
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL

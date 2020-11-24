@@ -2,7 +2,7 @@
 title: "OptionOrdinalValues Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies the list of option values. Can be set if the property ExternalType is 
 ## Applies to
 -   Table Field
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property values
 

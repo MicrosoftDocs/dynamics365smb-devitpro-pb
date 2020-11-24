@@ -2,7 +2,7 @@
 title: "ShowAsTree Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets the indentation of rows on a List Page to Tree View. If you enable this pro
 ## Applies to
 -   Page Group
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value
 

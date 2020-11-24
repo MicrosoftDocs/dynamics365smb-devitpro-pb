@@ -2,7 +2,7 @@
 title: "ObsoleteTag Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,9 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Interface
 -   Control Add In
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

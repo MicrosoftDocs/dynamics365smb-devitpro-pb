@@ -2,7 +2,7 @@
 title: "XmlName Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,9 @@ Sets a variable name for the table or the text that is the data source of the cu
 -   Xml Port Field Attribute
 -   Xml Port Text Attribute
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value
 

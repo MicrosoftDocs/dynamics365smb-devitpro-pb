@@ -2,7 +2,7 @@
 title: "HorizontalStretch Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ HorizontalStretch specifies that the control add-in can be made larger horizonta
 ## Applies to
 -   Control Add In
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Values
 
 **True** if the control add-in is allowed to stretch horizontally. The default value is **false**.

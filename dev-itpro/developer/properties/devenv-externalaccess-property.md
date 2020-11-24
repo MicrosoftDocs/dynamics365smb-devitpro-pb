@@ -2,7 +2,7 @@
 title: "ExternalAccess Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,9 @@ Specifies the type of access to the original table field in the external databas
 |**Insert**|Allows the insert access to the table fields in the external database.|
 |**Modify**|Allows the Modify access to the external database.|
 |**Read**|Allows the read-only access to the external database.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL

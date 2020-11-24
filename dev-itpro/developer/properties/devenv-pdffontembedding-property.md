@@ -2,7 +2,7 @@
 title: "PdfFontEmbedding Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,9 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
 |**Default**|Uses the **Report PDF Embedding** setting of the Dynamics 365 Business Central instance to determine whether fonts are embedded in PDF files.  <br /><br /> This is the default setting.|
 |**Yes**|Fonts are embedded in PDF files.|
 |**No**|Fonts are not embedded in PDF files.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

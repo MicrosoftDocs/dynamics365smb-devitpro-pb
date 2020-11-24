@@ -2,7 +2,7 @@
 title: "SumIndexFields Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specify which fields should be the "aggregation fields" in a **SumIndexField Tec
 ## Applies to
 -   Table Key
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

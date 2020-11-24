@@ -2,7 +2,7 @@
 title: "AssignmentCompatibility Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets whether an Enum can be assigned to from another Enum type. This is intended
 ## Applies to
 -   Enum Type
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!IMPORTANT]  
 > This property provides backwards compatibility in certain cases when converting from options to enums. It should not be used for enums that are not converted from options. 

@@ -2,7 +2,7 @@
 title: "DataAccessIntent Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,9 @@ Sets the data access intent of the page.
 |-----------|---------------------------------------|
 |**ReadOnly**|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
 |**ReadWrite**|Intent to access and modify records.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL

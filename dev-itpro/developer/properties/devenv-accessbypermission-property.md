@@ -2,7 +2,7 @@
 title: "AccessByPermission Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,9 @@ All types of UI elements will be removed if they relate to an object to which th
 -   Page
 -   Report
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!IMPORTANT]  
 >  If the **AccessByPermission** property is applied to a page field from a virtual table, this property is ignored. This means that users will see this field on the page in the client even if they do not have the permissions that are required by this property.

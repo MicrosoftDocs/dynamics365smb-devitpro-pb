@@ -2,7 +2,7 @@
 title: "InlineSchema Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies whether an XML schema definition should be included inside an XML docu
 ## Applies to
 -   Xml Port
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** if the XML schema definition should be included in the XML document; otherwise, **false**.  

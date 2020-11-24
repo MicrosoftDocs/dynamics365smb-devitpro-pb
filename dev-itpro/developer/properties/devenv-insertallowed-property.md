@@ -2,7 +2,7 @@
 title: "InsertAllowed Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets a value to specify whether users can add records while using a page.
 -   Page
 -   Request Page
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** if you want to allow users to add records; otherwise, **false**. The default value is **true**.  

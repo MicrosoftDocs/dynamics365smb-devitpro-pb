@@ -2,7 +2,7 @@
 title: "ExternalSchema Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies the name of the database schema of the external database.
 ## Applies to
 -   Table
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 The name of the schema of the external database.  

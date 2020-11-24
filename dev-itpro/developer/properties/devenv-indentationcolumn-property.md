@@ -2,7 +2,7 @@
 title: "IndentationColumn Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets the name of the hidden column that controls row indentation in a List page.
 ## Applies to
 -   Page Group
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 # Syntax
 
 ```AL

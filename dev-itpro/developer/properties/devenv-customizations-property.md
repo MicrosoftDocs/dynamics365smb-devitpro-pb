@@ -2,7 +2,7 @@
 title: "Customizations Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Specifies the Page Customizations which are applied with this profile.
 ## Applies to
 -   Profile
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 Comma-separated list of page customization object names.

@@ -2,7 +2,7 @@
 title: "TransactionType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,9 @@ Sets the transaction type.
 |**Snapshot**|ll read operations are performed with REPEATABLE READ locking.|
 |**Browse**|All read operations are performed with READ UNCOMMITTED locking.|
 |**Report**|Maps to the **Browse** transaction type.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Remarks
 

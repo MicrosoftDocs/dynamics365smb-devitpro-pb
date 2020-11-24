@@ -2,7 +2,7 @@
 title: "IsControlAddIn Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets a value that indicates whether the .NET type represents a control add-in.
 ## Applies to
 -   Dot Net Type Declaration
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

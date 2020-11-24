@@ -2,7 +2,7 @@
 title: "ToolTipML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,9 @@ Sets the text used for the tooltip of an action, a field, a FactBox, or an activ
 -   Page Action
 -   Page Action Group
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).

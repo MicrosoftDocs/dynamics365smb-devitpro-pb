@@ -2,7 +2,7 @@
 title: "Method Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,9 @@ Gets or sets the method type as defined in the HTTP standard.
 |**Average**|Calculates the average value of the fields in the column within a group.<br /><br /> When averaging fields that have an integer data type (such as Integer or BigInteger), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 (or 2 1/2).|
 |**Min**|Retrieves the lowest value of fields in the column within a group.|
 |**Max**|Retrieves the highest value of fields in the column within a group.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Date Methods  
 
 You can only use the date methods on fields of the [Date](../methods-auto/date/date-data-type.md) and [DateTime](../methods-auto/datetime/datetime-data-type.md) data type.  

@@ -2,7 +2,7 @@
 title: "AutoSplitKey Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets whether a key is automatically created for a new record placed between the 
 -   Page
 -   Request Page
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value  
  **True** if the key is automatically created for the new record; otherwise, **false**. The default value is **false**.  

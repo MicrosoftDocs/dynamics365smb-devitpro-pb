@@ -2,7 +2,7 @@
 title: "VerticalStretch Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ VerticalStretch specifies that the control add-in can be made larger vertically.
 ## Applies to
 -   Control Add In
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > Use this property when the visual content of the add-in is designed to remain usable when height is increased.

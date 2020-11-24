@@ -2,7 +2,7 @@
 title: "LinksAllowed Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets whether links are allowed.
 -   Page
 -   Request Page
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **True** if links are allowed; otherwise, **false**. The default value is **true**.  

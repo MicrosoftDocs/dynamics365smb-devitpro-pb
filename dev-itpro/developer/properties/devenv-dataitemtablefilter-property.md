@@ -2,7 +2,7 @@
 title: "DataItemTableFilter Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets filters on fields of the underlying table of a query.
 ## Applies to
 -   Query Data Item
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 Filter expression.  

@@ -2,7 +2,7 @@
 title: "Editable Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,9 @@ Sets a value that indicates whether a field, page, or control can be edited thro
 -   Page Chart Part
 -   Page Part
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **True** on pages if the field, page, or control can be edited; otherwise, **false** on pages. The default value is **true**.  

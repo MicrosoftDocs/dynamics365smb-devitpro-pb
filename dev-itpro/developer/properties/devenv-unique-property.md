@@ -2,7 +2,7 @@
 title: "Unique Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets a value that indicates whether a SQL Server unique constraint that correspo
 ## Applies to
 -   Table Key
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > The `Unique` property cannot be used in table extension objects.

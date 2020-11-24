@@ -2,7 +2,7 @@
 title: "Ellipsis Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets a value that specifies whether an ellipsis (...) is appended to the caption
 ## Applies to
 -   Page Action
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **True** if the ellipsis is appended; otherwise, **false**. The default value is **false**.  

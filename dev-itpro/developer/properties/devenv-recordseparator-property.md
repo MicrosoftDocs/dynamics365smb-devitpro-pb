@@ -2,7 +2,7 @@
 title: "RecordSeparator Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets the string that is to be used to separate records.
 ## Applies to
 -   Xml Port
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Remarks  
 

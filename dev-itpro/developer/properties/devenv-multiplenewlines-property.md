@@ -2,7 +2,7 @@
 title: "MultipleNewLines Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets a value that determines whether users can add multiple new lines between re
 -   Page
 -   Request Page
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** if you want to allow users to add multiple new lines between records; otherwise, **false**. The default is **false**.  

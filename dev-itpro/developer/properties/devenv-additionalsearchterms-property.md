@@ -2,7 +2,7 @@
 title: "AdditionalSearchTerms Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Specifies search terms (words and phrases) for the page. In addition to the page
 -   Page
 -   Report
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Parameters
 *Locked*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  

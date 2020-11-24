@@ -2,7 +2,7 @@
 title: "InFooterBar Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets whether an action should be viewed as an exit action in the lower part of t
 ## Applies to
 -   Page Action
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property value
 
 **True** if the action is viewed as an exit action, otherwise **false**. The default is **false**.

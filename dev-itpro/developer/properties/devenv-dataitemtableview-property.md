@@ -2,7 +2,7 @@
 title: "DataItemTableView Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets the key on which to sort, the sort order, and the filters for the data item
 ## Applies to
 -   Report Data Item
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Examples
 
 In the following example, the **DataItemView** property is used to sort a table view based on the `"Entry No."` field.

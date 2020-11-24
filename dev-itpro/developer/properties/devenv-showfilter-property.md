@@ -2,7 +2,7 @@
 title: "ShowFilter Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,9 @@ Sets whether the filter pane is shown on a page by default.
 -   Page Chart Part
 -   Page Part
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Values  
 

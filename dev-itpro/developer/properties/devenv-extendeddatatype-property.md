@@ -2,7 +2,7 @@
 title: "ExtendedDatatype Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,9 @@ Sets the extended data type of a control.
 |**Person**|The client handles the field as media representing a person and will display this in the signature rounded styling. When the media field is empty, a silhouette of a person is shown.|
 |**RichText**|RichText is for for formatting, like Bold and Italics|
 |**RichContent**|RichContent is text containing things like: links, lists, bold text or italic text.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

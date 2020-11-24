@@ -2,7 +2,7 @@
 title: "QueryCategory Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Used to indicate a given query can be made available as views displayed on certa
 -   Page
 -   Query
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 <!-- Source code to be changed to: Used to indicate a given query can be made available as views displayed on certain main entity lists. On queries, the QueryCategory property specifies one or more query categories that the object supports. On pages, QueryCategory specifies the query category that the page supports. -->
 

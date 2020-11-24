@@ -2,7 +2,7 @@
 title: "EnableExternalImages Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,9 @@ Sets whether external images are allowed on a report.
 ## Applies to
 -   Report
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** if external images are allowed; otherwise, **false**. The default is **false**.  

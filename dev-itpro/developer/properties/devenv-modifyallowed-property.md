@@ -2,7 +2,7 @@
 title: "ModifyAllowed Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,9 @@ Sets the value to determine whether users can modify records while using this pa
 -   Page
 -   Request Page
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 **True** if you want to allow the users to modify records; otherwise, **false**. The default is **true**. 

@@ -2,7 +2,7 @@
 title: "UsageCategory Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,9 @@ Sets the department column for a searched page or report in the Web client.
 |**Documents**|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
 |**History**|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
 |**Administration**|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Remarks
 

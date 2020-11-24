@@ -2,7 +2,7 @@
 title: "Enabled Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,9 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 -   Page Action Group
 -   Profile
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]
 > For information about the **Enabled property** for Profiles, see [Enabled (Profile) Property](devenv-enabled-profile-property.md).
