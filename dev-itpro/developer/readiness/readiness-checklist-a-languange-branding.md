@@ -34,7 +34,7 @@ Your app can be in any language; if not in English, a document with English tran
 > [!NOTE]  
 > If you are targeting an international audience, we  recommend you use English on AppSource.
 
-## Branding requirements
+## Branding requirements 
 
  Be consistent with branding throughout your communications. All references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding i.e. either **Microsoft Dynamics 365 Business Central**, **Dynamics 365 Business Central**, or **Business Central**. 
 
