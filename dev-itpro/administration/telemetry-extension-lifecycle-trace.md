@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 # Analyzing Extension Lifecycle Trace Telemetry
 
-**INTRODUCED IN:** Business Central 2020 release wave 1, version 16.3
+**INTRODUCED IN:** Business Central 2020 release wave 1, version 16.3. For extension telemetry, this signal was introduced in 2020 release wave 2, version 17.1
 
 Extension lifecycle telemetry gathers data about the success or failure of the following extension-related operations:
 
