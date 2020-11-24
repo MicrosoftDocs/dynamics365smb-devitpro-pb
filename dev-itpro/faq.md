@@ -1,6 +1,6 @@
 ---
 title: "FAQ about developer and IT-Pro experiences"
-description: Get answers to some of your questions about deploying or administering Business Central.
+description: Get answers to some of your questions about administering, customizing, extending, or selling  Business Central.
 author: edupont04
 ms.reviewer: solsen
 ms.suite: na

@@ -34,8 +34,8 @@ codeunit 50105 MyReportTesting
         GenJournalLine: Record "Gen. Journal Line";
     begin
         // Run the Report Remittance Advice - Journal. 
-        XmlParameters := REPORT.RUNREQUESTPAGE(REPORT::"Remittance Advice - Journal");
-        LibraryReportDataset.RunReportAndLoad(REPORT::"Remittance Advice - Journal", GenJournalLine, XmlParameters);
+        XmlParameters := Report.RunRequestPage(Report::"Remittance Advice - Journal");
+        LibraryReportDataset.RunReportAndLoad(Report::"Remittance Advice - Journal", GenJournalLine, XmlParameters);
 
         // Verifying Total Amount on Report. 
         LibraryReportDataset.AssertElementWithValueExists('Amt_GenJournalLine', GenJournalLine.Amount);
@@ -52,10 +52,14 @@ codeunit 50105 MyReportTesting
 Any changes done in the handler above will result in the `XmlParameters` being changed and applied automatically when the report runs. Examples of the implementation in the existing tests are in `Codeunit 133770` and `Codeunit 134141`.
 
 ## Remarks
-[TestRequestPage.SaveAsXML](methods-auto/testrequestpage/testrequestpage-saveasxml-method.md) uses a different format than [REPORT.SAVEASXML](methods-auto/report/report-saveasxml-method.md) or [REPORT.SaveAs](methods-auto/report/report-saveas-method.md) by serializing the output of **Report Previewer**. This is a component that will be deprecated in the future and replaced with the new methods that can be used for the new tests. Another difference is that `TestRequestPage.SaveAsXML` requires files to be saved to disk and loaded, while other methods work in memory, making them more efficient. 
+
+[TestRequestPage.SaveAsXML](methods-auto/testrequestpage/testrequestpage-saveasxml-method.md) uses a different format than [Report.SaveAsXML](methods-auto/report/report-saveasxml-method.md) or [Report.SaveAs](methods-auto/report/report-saveas-method.md) by serializing the output of **Report Previewer**. This is a component that will be deprecated in the future and replaced with the new methods that can be used for the new tests. Another difference is that `TestRequestPage.SaveAsXML` requires files to be saved to disk and loaded, while other methods work in memory, making them more efficient. 
 
 > [!NOTE]  
 > The existing tests still need support and the codeunit solves this problem by supporting both formats for now. `TestRequestPage.SaveAsXML` uses Tags for values, while the new format uses attributes. This means that you cannot use any public method that contains "Tag" in the name to test the reports generated in the memory.
 
 ## See Also
-[Reports Overview](devenv-reports.md) 
+
+[Reports Overview](devenv-reports.md)  
+[Testing Pages](devenv-resting-pages.md)  
+[Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md)

@@ -56,6 +56,7 @@ Use the listed abbreviations for each type of object in the file naming:
 |Control Add-ins|ControlAddin|
 |Dotnet    |Dotnet|
 |Profile   |Profile|
+|Interface |Interface|
 
 ### Examples of object naming
 
