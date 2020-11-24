@@ -1,9 +1,9 @@
 ---
 title: "Marketing Validation Checklist"
-description: "The marketing checklist for Business Central apps"
+description: "The marketing checklist for validation of Business Central apps"
 author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -46,6 +46,7 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](link)|
 
 ## Offer listing
+
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
 |Offer name |Enter a descriptive name for the offer. | [Read more](link) |
