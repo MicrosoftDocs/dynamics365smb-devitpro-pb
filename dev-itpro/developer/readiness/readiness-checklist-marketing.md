@@ -22,7 +22,7 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|Branding|Make sure to read the branding guidelines carefully before you start referencing the product name. | [Read more](readiness-checklist-a-languange-branding.md#Branding-requirements) |
+|Branding|Make sure to read the branding guidelines carefully before you start referencing the product name. | [Read more](readiness-checklist-a-languange-branding.md#branding-requirements) |
 |Language| Discover what to consider for each storefront detail when it comes to language. | [Read more](readiness-checklist-a-languange-branding.md#language-requirements)|
 |Microsoft images| Make sure not to use any Microsoft images (e.g., Business Central icon or Dynamics 365 logo). | [Read more](readiness-checklist-a-languange-branding.md#Microsoft-images)|
 
