@@ -116,16 +116,17 @@ Choose the type of Call to action that you want to include:
 > *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
 ## <a name="SupportedEditions"></a>Supported Editions 
-| Offer Details | Description | Requirements|
-|---------------|--------------|-------------|
-| 2.F Offer Description **(Supported editions paragraph)** | Insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
+
+| Paragraph| Description |
+|-------------|--------------|
+|Supported Editions | Insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). |
 
 **How to structure the content in this paragraph?**
 - Create a header 4 (it automatically becomes bold)
 - Call the header "Supported Editions".
 - Include a sentence that lists the edition(s) that your app supports.
 
- 
+
 *Example*:
 
  **Supported Editions:** 
@@ -135,10 +136,10 @@ This app supports both the Essential and Premium editions of Microsoft Dynamics 
 
 
 ## Supported Countries
-| Offer Details|Description | Requirements |
-|-----------|--------------|---------------|
-| 2.G Offer Description **(Supported countries paragraph)** | Insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
 
+| Paragraph| Description |
+|-------------|--------------|
+|Supported Countries | Insert a section in the bottom of your description that clearly states which countries your app is available in. |
 
 **Scenario 1: Your offer supports specific countries**:
 
@@ -174,12 +175,12 @@ How to structure the content in this paragraph?
   All countries where Microsoft Dynamics 365 Business Central is available
 
 
-
-
 ## Supported Languages
-| Offer Details|Description | Requirements |
-|-----------|--------------|---------------|
-| 2.H Offer Description **(Supported languages paragraph)** | Finally, insert a section in the bottom of your description that clearly states which languages your app is available in. | Required     |
+
+| Paragraph| Description |
+|-------------|--------------|
+|Supported Languages | Finally, insert a section in the bottom of your description that clearly states which languages your app is available in. |
+
 
 **How to structure the content in this paragraph?**
 - Create a header 4 (it automatically becomes bold)
