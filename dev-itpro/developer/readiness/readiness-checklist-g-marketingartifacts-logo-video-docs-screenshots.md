@@ -29,7 +29,7 @@ Structure:
 - Print production usually requires a four-color process CMYK (cyan, magenta, yellow, black) in high resolution of at least 300 dpi.
 
 
-## <a name="Videos"></a>Videos
+## Videos
 | Item| Description |
 |-------------|--------------|
 |Video | Pictures tell more than a 100 words – make sure to leverage this when promoting your offer. Large amounts of information are easier to take in when visualized. Using videos that demo your offer are therefore ideal to create intertest and enable prospects to learn more about your offer quickly. |
@@ -51,7 +51,7 @@ For more information on [how to create compelling video](readiness-how-to-make-c
 > [A product video from Open Door Technology](https://vimeo.com/260138342)
 
 
-## <a name="Documents"></a>Supporting documents
+## Supporting documents
 
 
 | Item| Description |
@@ -66,7 +66,7 @@ Structure:
 - Don't just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don't discourage this interest by repeating something that they already know. 
 - Instead, use this opportunity to show them something new that entices their interest to start using your offer even more.
 
-## <a name="Screenshots"></a> Screenshots
+## Screenshots
 
 | Item| Description |
 |-------------|--------------|

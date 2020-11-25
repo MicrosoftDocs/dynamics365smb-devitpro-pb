@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
 
-# Offer name and offer summary
+# Offer Name and Offer Summary
 
 
 ## Offer name
@@ -49,7 +49,7 @@ When creating a name for your offer, you can use the following two naming struct
 - Is it too much like another product and will it cause market confusion?
 
 
-## <a name="OfferSummary"></a>Offer Summary
+## Offer Summary
  The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Therefore; make sure that it is clear and concise.
 
 **How to create a good and concise summary?** 
