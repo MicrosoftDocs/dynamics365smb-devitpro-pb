@@ -32,7 +32,7 @@ Help link | You need to provide a URL for a distinct help page where prospects c
 For more information, see [Help users learn more](../../user-assistance.md#help-users-learn-more).  
 
 > [!TIP]  
-> Example of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/docs.continia-home/en-GB/index.html)
+> *Example* of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/docs.continia-home/en-GB/index.html)
 
 
 ## Support link

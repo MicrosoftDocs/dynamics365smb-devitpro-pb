@@ -49,14 +49,14 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|Offer name |Enter a descriptive name for the offer. | [Read more](link) |
-|Offer summary|A single sentence summarizing the purpose or function of the offer.| [Read more](link)|
-|Description text | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your offer (include supported editions, countries, and languages). | [Read more](link)|
-|Search keywords| Add search keywords to help users find your offer when they search in the marketplace.  | [Read more](link) |
-|Products your app work with |Add specific products that your app works with. | [Read more](link) |
-|Help link|The link to your offer’s learning resources.| [Read more](link)|
-|Privacy policy link | The link to your offer’s privacy policy. | [Read more](link)|
-|Support link | The link to your offer’s support page.  | [Read more](link)|
+|Offer name |Enter a descriptive name for the offer. | [Read more](readiness-checklist-b-offername-summary.md#offer-name) |
+|Offer summary|A single sentence summarizing the purpose or function of the offer.| [Read more](readiness-checklist-b-offername-summary.md#offer-summary)|
+|Description text | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your offer (include supported editions, countries, and languages). | [Read more](readiness-checklist-c-offer-description)|
+|Search keywords| Add search keywords to help users find your offer when they search in the marketplace.  | [Read more](readiness-checklist-f-supportedproducts-keywords.md#search-keywords) |
+|Products your app work with |Add specific products that your app works with. | [Read more](readiness-checklist-f-supportedproducts-keywords.md#products-your-app-work-with) |
+|Help link|The link to your offer’s learning resources.| [Read more](readiness-checklist-h-help-support.md#help-link)|
+|Privacy policy link | The link to your offer’s privacy policy. | [Read more](readiness-checklist-i-privacypolicy-termsofuse.md)|
+|Support link | The link to your offer’s support page.  | [Read more](readiness-checklist-h-help-support.md#support-link)|
 |Supporting documents |Add supporting sales and marketing assets such as white papers, brochures, checklists, or PowerPoint presentations. | [Read more](link) |
 |Logos|Upload a large size logo file with dimensions between 216 pixels x 216 pixels and 350 pixels x 350 pixels. | [Read more](link)|
 | Screenshots | Provide a minimum of 3 screenshots that showcase your offer. | [Read more](link)|
