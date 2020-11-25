@@ -2,7 +2,7 @@
 title:  "Upgrading Customized C/AL Application to Microsoft Base Application"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 16 Microsoft Base Application
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/20/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,19 +46,24 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## <a name="prereqs"></a>Prerequisites
 
+<!--
+
 1. Your version 14 is compatible with version 16.
 
     There are several updates for version 14. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
-
-2. Get the required version of the txt2al conversion tool.
+-->
+- Get the required version of the txt2al conversion tool.
 
     During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/en-us/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
 ## Install version 16
 
-1. Download the latest available update for Business Central 2020 (version 16) that is compatible with your version 14.
+1. Download the latest available update for Business Central 2020 release wave 1, version **16.5** or later, that is compatible with your version 14.  
 
     For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+
+    > [!IMPORTANT]
+    > You must use version 16.5 or later, otherwise you'll run problems during upgrade because of missing enum objects later in this procedure. For more information, see [Some Known Issues](known-issues.md#enum).
 
 2. Before you install version 16, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
 
