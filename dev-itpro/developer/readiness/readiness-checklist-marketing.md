@@ -19,6 +19,7 @@ developing your offer, likely leaving the prospect confused or looking elsewhere
 You use Partner Center to submit your offer to AppSource. In the following, you can find information on all the marketing-related items that you need to fill out in Partner Center prior to submitting your app to AppSource. Follow this marketing validation checklist and get your app passed on the first submission. 
 
 ## What do I need to know before I begin?
+You need to have the following three items in mind, when you are developing your storefront and creating your marketing material. 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
@@ -29,7 +30,7 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 
 ## How do I fill out the marketing section in Partner Center?
 
-The following section walks you through all the marketing-related items that you need to fill out in Partner Center prior to submitting your app to AppSource. 
+The following section walks you through the marketing-related components, that is, *offer setup*, *properties*, *offer listing*, and *availability*, which you need to fill out in Partner Center prior to submitting your app to AppSource. 
 
 ### Offer Setup
 
