@@ -31,19 +31,19 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|App type|Read more about the  types of apps you can submit to AppSource. | [Read more](\readiness-checklist-e-industries-categories-apptype.md#app-type) |
-|Contact type| How do you want potential customers to interact with your offer? | [Read more](\readiness-checklist-e-industries-categories-apptype.md#contact-type)|
-|Test drive | If you choose “free trial” as the contact type of your offer, you need to enable a test drive. | [Read more](\readiness-checklist-e-industries-categories-apptype.md#test-drive)|
-|Customer leads| Provide connection details to the CRM system where you would like to send customer leads.  | [Read more](\readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
+|App type|Read more about the  types of apps you can submit to AppSource. | [Read more](readiness-checklist-e-industries-categories-apptype.md#app-type) |
+|Contact type| How do you want potential customers to interact with your offer? | [Read more](readiness-checklist-e-industries-categories-apptype.md#contact-type)|
+|Test drive | If you choose “free trial” as the contact type of your offer, you need to enable a test drive. | [Read more](readiness-checklist-e-industries-categories-apptype.md#test-drive)|
+|Customer leads| Provide connection details to the CRM system where you would like to send customer leads.  | [Read more](readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
 
 ## Properties
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|Categories|Choose a primary, a secondary, and up to four subcategories. | [Read more](\readiness-checklist-d-supportedcountries-languages.md) |
-|Industries|Choose up to two industries for your offer.| [Read more](\readiness-checklist-d-supportedcountries-languages.md)|
-|App version | Specify the version number of your offer. | [Read more](\readiness-checklist-d-supportedcountries-languages.md)|
-|Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](\readiness-checklist-i-privacypolicy-termsofuse.md#license-agreement)|
+|Categories|Choose a primary, a secondary, and up to four subcategories. | [Read more](readiness-checklist-d-supportedcountries-languages.md) |
+|Industries|Choose up to two industries for your offer.| [Read more](readiness-checklist-d-supportedcountries-languages.md)|
+|App version | Specify the version number of your offer. | [Read more](readiness-checklist-d-supportedcountries-languages.md)|
+|Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](readiness-checklist-i-privacypolicy-termsofuse.md#license-agreement)|
 
 ## Offer listing
 

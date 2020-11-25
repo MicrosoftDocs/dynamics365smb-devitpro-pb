@@ -1,6 +1,6 @@
 ---
-title: "Industries, Categories and App Type"
-description: "Guidelines on industries, categories and app type "
+title: "App type, contact type, test drive, and customer leads"
+description: "Guidelines on app type, contact type, test drive, and customer leads."
 author: a-emniel
 ms.custom: na
 ms.date: 10/01/2020
