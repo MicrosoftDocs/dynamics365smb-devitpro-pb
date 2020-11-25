@@ -27,7 +27,11 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Microsoft images| Make sure not to use any Microsoft images (e.g., Business Central icon or Dynamics 365 logo). | [Read more](readiness-checklist-a-languange-branding.md#Microsoft-images)|
 
 
-## Offer Setup
+## How do I set up items in Partner Center?
+
+This section shows what you need to set up in...
+
+### Offer Setup
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
@@ -36,7 +40,7 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Test drive | If you choose “free trial” as the contact type of your offer, you need to enable a test drive. | [Read more](readiness-checklist-e-industries-categories-apptype.md#test-drive)|
 |Customer leads| Provide connection details to the CRM system where you would like to send customer leads.  | [Read more](readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
 
-## Properties
+### Properties
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
@@ -45,7 +49,7 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |App version | Specify the version number of your offer. | [Read more](readiness-checklist-d-supportedcountries-languages.md)|
 |Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](readiness-checklist-i-privacypolicy-termsofuse.md#license-agreement)|
 
-## Offer listing
+### Offer listing
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
@@ -71,6 +75,7 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md#hide-key)|
 
 
-## How does my offer look when it's live on AppSource? 
+<!--
+## How does my offer look when it's live on AppSource? -->
 
 <!-- Place picture here -->
