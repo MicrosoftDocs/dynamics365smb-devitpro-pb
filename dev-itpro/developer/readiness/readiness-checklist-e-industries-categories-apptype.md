@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
 
-# Offer Setup
+# App type, contact type, test drive, and customer leads
 
 ## App type
 

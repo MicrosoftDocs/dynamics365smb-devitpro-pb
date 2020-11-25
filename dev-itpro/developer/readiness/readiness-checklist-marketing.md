@@ -43,7 +43,7 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Categories|Choose a primary, a secondary, and up to four subcategories. | [Read more](\readiness-checklist-d-supportedcountries-languages.md) |
 |Industries|Choose up to two industries for your offer.| [Read more](\readiness-checklist-d-supportedcountries-languages.md)|
 |App version | Specify the version number of your offer. | [Read more](\readiness-checklist-d-supportedcountries-languages.md)|
-|Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](\readiness-checklist-d-supportedcountries-languages.md#License-agreement)|
+|Terms and conditions| Outline the terms and conditions that the customer must accept before they can use your offer.  | [Read more](\readiness-checklist-i-privacypolicy-termsofuse.md#license-agreement)|
 
 ## Offer listing
 
@@ -55,20 +55,20 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Search keywords| Add search keywords to help users find your offer when they search in the marketplace.  | [Read more](readiness-checklist-f-supportedproducts-keywords.md#search-keywords) |
 |Products your app work with |Add specific products that your app works with. | [Read more](readiness-checklist-f-supportedproducts-keywords.md#products-your-app-work-with) |
 |Help link|The link to your offer’s learning resources.| [Read more](readiness-checklist-h-help-support.md#help-link)|
-|Privacy policy link | The link to your offer’s privacy policy. | [Read more](readiness-checklist-i-privacypolicy-termsofuse.md)|
+|Privacy policy link | The link to your offer’s privacy policy. | [Read more](readiness-checklist-i-privacypolicy-termsofuse.md#privacy-policy)|
 |Support link | The link to your offer’s support page.  | [Read more](readiness-checklist-h-help-support.md#support-link)|
-|Supporting documents |Add supporting sales and marketing assets such as white papers, brochures, checklists, or PowerPoint presentations. | [Read more](link) |
-|Logos|Upload a large size logo file with dimensions between 216 pixels x 216 pixels and 350 pixels x 350 pixels. | [Read more](link)|
-| Screenshots | Provide a minimum of 3 screenshots that showcase your offer. | [Read more](link)|
-|Videos (optional)| Add up to 4 videos that demonstrate your offer. These should be hosted on an external video service.  | [Read more](link)|
+|Supporting documents |Add supporting sales and marketing assets such as white papers, brochures, checklists, or PowerPoint presentations. | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#supporting-documents) |
+|Logos|Upload a large size logo file with dimensions between 216 pixels x 216 pixels and 350 pixels x 350 pixels. | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#offer-logo)|
+| Screenshots | Provide a minimum of 3 screenshots that showcase your offer. | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#screenshots)|
+|Videos (optional)| Add up to 4 videos that demonstrate your offer. These should be hosted on an external video service.  | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#videos)|
 
 
 ## Availability 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|Markets (countries)|Choose the markets that your app is available in (make sure that it resembles the supported countries paragraph in the description text). | [Read more](link) |
-|Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](link)|
+|Markets (countries)|Choose the markets that your app is available in (make sure that it resembles the supported countries paragraph in the description text). | [Read more](readiness-checklist-f-supportedproducts-keywords.md#markets) |
+|Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md#hide-key)|
 
 
 ## How does my offer look when it's live on AppSource? 
