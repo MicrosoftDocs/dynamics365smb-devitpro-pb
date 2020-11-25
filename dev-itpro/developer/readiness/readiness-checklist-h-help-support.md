@@ -10,12 +10,14 @@ ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
 
-# Help URL
+# Help and support links
 
-| Listing details | Description | Requirements |
-|-----------------|-------------|--------------|
-| 6. **Help URL** | You need to provide a URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, and so on.| Required|
+## Help link
 
+| Item | Description |
+|-------------|--------------|
+Help link | You need to provide a URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, and so on.|
+ 
 **About the help page:**
 - The Help page can be in any language. 
 - There needs to be a clear distinction between the support and the help site. We require two separate pages (unless a single page covers all Help Link and Support Link requirements). 
@@ -32,14 +34,12 @@ For more information, see [Help users learn more](../../user-assistance.md#help-
 > [!TIP]  
 > Example of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/docs.continia-home/en-GB/index.html)
 
-The following screenshot illustrates how the Help URL, supported countries/regions, supported languages, and app version fields (cf. point 6,7,8 and 9 in the "Listing details" section) are used:
 
-![Storefront Detail - Support & Help Links](../../media/SupportHelp.png)
+## Support link
 
-## Support URL
-| Listing details | Description | Requirements |
-|------------------|-------------|--------------|
-| 20. **Support URL**  | You need to provide a URL for a distinct support page, where prospects can find different contact options. It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required |
+| Item | Description |
+|-------------|--------------|
+Support link | You need to provide a URL for a distinct support page, where prospects can find different contact options. It is a requirement that you provide different (i.e. more than two) contact options on your app landing page.|  
 
 
 **About the support page:**
