@@ -5254,6 +5254,11 @@
     "source_path": "dev-itpro/developer/readiness/readiness-add-on-apps-getting-you-started.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/readiness-get-started",
     "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/readiness/readiness-reseller.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/get-started-online",
+    "redirect_document_id": false
    }
   ]
 }
