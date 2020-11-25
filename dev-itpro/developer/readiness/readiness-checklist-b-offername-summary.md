@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
 
-# Offer name and offer summary
+# Offer Name and Offer Summary
 
 
 ## Offer name
