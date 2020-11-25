@@ -8,8 +8,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: edupont
-ms.date: bholtorf
+ms.author: bholtorf
+ms.date: 11/25/2020
 ---
 
 # Create a .NET Wrapper Module
