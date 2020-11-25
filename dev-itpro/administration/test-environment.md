@@ -21,7 +21,7 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
 ### To create a test environment based on a 30 day trial
 
-1. In Partner Center, create a new test customer with any test domain, such as *JoesGarageTest001.onmicrosoft.com*. For more information, see [Add a new customer](/partner-center/add-a-new-customer).
+1. In Partner Center, create a new test customer with any test domain, such as *contoso.onmicrosoft.com*. For more information, see [Add a new customer](/partner-center/add-a-new-customer) in the Partner Center docs.
 
     1. Fill in the fields as described in the following list:
 
@@ -39,11 +39,11 @@ This type of environment can be useful if you want to run benchmark tests, for e
     > [!NOTE]
     > It may take up to 10 minutes for the available licenses to show up on the **Users** page.
 
-    Also, make a note of the user credentials shown on the last page of the user creation wizard.
+    Also, make a note of the user credentials shown on the last page of the user creation wizard. You will use this information in step 55
 
 4. In the **Service Management** section, choose the **Dynamics 365 Business Central** link.
 
-    This opens the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: *[https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin](https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin)*
+    This opens the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: `https://businesscentral.dynamics.com/contoso.onmicrosoft.com/admin`
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create new production and sandbox environments for the test customer.
 
@@ -69,6 +69,7 @@ About two months before a major update, you can try out new functionality in pre
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
+[Preparing Demonstration Environments](demo-environment.md)  
 [Prepare for major updates with preview environments](preview-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
