@@ -1,7 +1,7 @@
 ---
-title: "Language and Branding"
-description: "Guidelines on language and branding"
-author: v-liober
+title: "Language, Branding, and Images"
+description: "Guidelines on language, branding and images"
+author: a-emniel
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen

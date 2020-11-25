@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy and Terms of Use"
 description: "Guidelines on privacy policy and terms of use (license agreement) links"
-author: v-liober
+author: a-emniel
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen

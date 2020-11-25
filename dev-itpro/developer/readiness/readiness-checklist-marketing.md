@@ -27,9 +27,9 @@ You use Partner Center to submit your offer to AppSource. In the following, you 
 |Microsoft images| Make sure not to use any Microsoft images (e.g., Business Central icon or Dynamics 365 logo). | [Read more](readiness-checklist-a-languange-branding.md#Microsoft-images)|
 
 
-## How do I set up items in Partner Center?
+## How do I fill out the marketing section in Partner Center?
 
-This section shows what you need to set up in...
+The following section walks you through all the marketing-related items that you need to fill out in Partner Center prior to submitting your app to AppSource. 
 
 ### Offer Setup
 

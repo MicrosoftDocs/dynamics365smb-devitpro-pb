@@ -1,6 +1,6 @@
 ---
-title: "Supported Countries and Supported Languages"
-description: "Guidelines on supported countries and supported languages"
+title: "Categories, industries, and app version"
+description: "Guidelines on categories, industries, and app version"
 author: a-emniel
 ms.custom: na
 ms.date: 10/01/2020

@@ -1,7 +1,7 @@
 ---
 title: "Offer Description"
 description: "Guidelines on offer description"
-author: v-liober
+author: a-emniel
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen
