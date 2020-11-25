@@ -67,7 +67,7 @@ The following section walks you through all the marketing-related items that you
 |Videos (optional)| Add up to 4 videos that demonstrate your offer. These should be hosted on an external video service.  | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#videos)|
 
 
-## Availability 
+### Availability 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
