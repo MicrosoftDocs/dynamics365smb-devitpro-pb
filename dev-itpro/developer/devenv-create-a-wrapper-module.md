@@ -13,13 +13,13 @@ ms.date: bholtorf
 ---
 
 # Create a .NET Wrapper Module
-This topic provides a description of how to contribute a .NET wrapper module to Business Central, using the Regex module as an example. The Regex module is published in the [AlAppExtensions](https://github.com/microsoft/ALAppExtensions/) repository, and if you aren't already familiar with it, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
+This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], using the Regex module as an example. The Regex module is published in the [AlAppExtensions](https://github.com/microsoft/ALAppExtensions/) repository, and if you aren't already familiar with it, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
 
 ## Converting the Regex architecture
 In the original .NET Regex module, a lot of the functionality for regular expressions is kept in the Regex class. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.
-
+<!--
 ****INSERT IMAGE HERE****
-
+-->
 ## Wrapping a .NET method
 For some methods, you can wrap the .NET method in AL in an internal codeunit and expose the procedure to the facade. For example, you can wrap the IsMatch method as follows:
 

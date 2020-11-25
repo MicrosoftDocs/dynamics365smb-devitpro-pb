@@ -241,7 +241,7 @@
 #### [Getting Started with Modules](developer/devenv-getting-started.md)
 #### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
 #### [Create a New Module](developer/devenv-new-module.md)
-#### [Create a .NET Wrapper Module](devenv-create-a-wrapper-module.md)
+#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
 #### [Change a Module](developer/devenv-change-a-module.md)
 ## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
