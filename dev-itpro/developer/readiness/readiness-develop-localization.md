@@ -100,5 +100,5 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
-[Resell Different Solutions](readiness-reseller.md)  
+[Get Started as a Reseller of Business Central Online](administration/get-started-online.md)  
 [Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  
