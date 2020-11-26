@@ -56,9 +56,9 @@ Which page type you choose depends on the application task that you want to supp
 |[ListPlus](devenv-designing-listparts.md)|A ListPlus page displays content from a table in a list format. The difference from a List page is that the main content is a ListPart, not a Repeater group as the List has it.|
 |[Document](devenv-designing-card-pages.md)|A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together.|
 |[WorkSheet](devenv-page-types-and-layouts.md#worksheet-page-layouts)|You use a Worksheet page type for creating worksheet or journal task pages.|
-|**ConfirmationDialog**|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
-|**StandardDialog**|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
-|**NavigatePage**|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
+|ConfirmationDialog|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
+|StandardDialog|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
+|NavigatePage|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
 |[HeadlinePart](devenv-create-role-center-headline.md)|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
 |[API](devenv-api-pagetype.md)|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
 
