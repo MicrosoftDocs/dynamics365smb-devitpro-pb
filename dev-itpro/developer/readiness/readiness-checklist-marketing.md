@@ -57,7 +57,7 @@ The following section walks you through the marketing-related components, that i
 |Offer name |Enter a descriptive name for the offer. | [Read more](readiness-checklist-b-offername-summary.md#offer-name) |
 |Offer summary|A single sentence summarizing the purpose or function of the offer.| [Read more](readiness-checklist-b-offername-summary.md#offer-summary)|
 |Description text | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your offer (include supported editions, countries, and languages). | [Read more](readiness-checklist-c-offer-description.md)|
-|Search keywords| Add search keywords to help users find your offer when they search in the marketplace.  | [Read more](readiness-checklist-f-supportedproducts-keywords.md#search-keywords) |
+|Search keywords| Add search keywords to help users find your offer when they search in the marketplace.  | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
 |Products your app work with |Add specific products that your app works with. | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
 |Help link|The link to your offer’s learning resources.| [Read more](readiness-checklist-h-help-support.md#help-link)|
 |Privacy policy link | The link to your offer’s privacy policy. | [Read more](readiness-checklist-i-privacypolicy-termsofuse.md#privacy-policy)|
@@ -72,8 +72,8 @@ The following section walks you through the marketing-related components, that i
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
-|Markets (countries)|Choose the markets that your app is available in (make sure that it resembles the supported countries paragraph in the description text). | [Read more](readiness-checklist-f-supportedproducts-keywords.md#markets) |
-|Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md#hide-key)|
+|Markets (countries)|Choose the markets that your app is available in (make sure that it resembles the supported countries paragraph in the description text). | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
+|Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md)|
 
 
 <!--
