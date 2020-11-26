@@ -26,7 +26,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Notify users of high-risk changes in selected setup fields](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/notify-users-high-risk-changes-selected-setup-fields)
 - [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
 - [Control how Account Schedules for core financial reports are generated](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
-- [Improved VAT Registration no. lookup](/dynamics365/business-central/finance-how-validate-vat-registration-number)
+- [Improved VAT Registration no. lookup](/dynamics365-business-central/improved-vat-registration-no-validation)
 - [Extension lifecycle telemetry in Application Insights for ISVs](/dynamics365/business-central/dev-itpro/administration/telemetry-extension-lifecycle-trace)
 - [Use environmentType and environmentName launch.json properties instead of obsoleted sandboxName](/dynamics365/business-central/dev-itpro/developer/devenv-json-files#Launchjson)
 - [Symbols can be downloaded with a snapshot initialize launch.json configuration, using above environment properties](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging#downloading-symbols-on-the-snapshot-debugger-endpoint)
@@ -57,7 +57,7 @@ Watch the sessions from the Business Central Launch Event in October. Register a
 Snapshot debugging has now been enabled for sandbox environments. It will be enabled in production in a later minor. Learn more [here](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging).
 
 **Apps are moving to office.com**  
-The home for all your business applications across Dynamics 365 and Microsoft Power Platform is moving to office.com, where you'll find the Business Central tiles for production and sandbox environments. 
+The home for all your business applications across Dynamics 365 and Microsoft Power Platform is moving to office.com, where you'll find the Business Central tiles for production and sandbox environments. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/apps-are-moving-officecom).
 
 **Easy access to production or sandbox environments from the mobile app**  
 Users of mobile devices can now choose between their sandbox and production environments without the need to use the pre-crafted URL as before. Partners running their own apps based on Business Central can also let their users explore it from mobile devices. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/access-multiple-production-or-sandbox-environments-mobile-apps).

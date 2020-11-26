@@ -56,7 +56,7 @@ Occurs when a database lock has timed out.
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
 |component|**Dynamics 365 Business Central Server**|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0012**|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -91,7 +91,7 @@ Occurs when a database lock has timed out. Each **Database lock snapshot** trace
 |alObjectType|Specifies the type of the running AL object that requested the lock, such as a page or report. |
 |alStackTrace|The stack trace in AL.|
 |component|**Dynamics 365 Business Central Server**|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0013**|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|

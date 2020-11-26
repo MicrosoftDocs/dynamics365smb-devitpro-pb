@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 11/09/2020
+ms.date: 11/25/2020
 ms.author: edupont
 
 ---
@@ -61,12 +61,9 @@ During the data migration process, [!INCLUDE[prodshort](../developer/includes/pr
 If you upgrade to a new version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] tenant contains different extensions for the cloud migration. For more information, see [Business Central Intelligent Cloud Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 
 > [!IMPORTANT]
-> You must always install, publish, or upgrade the **Intelligent Cloud Base** extension first, and then the product-specific extension or extensions. Also, you must update the extensions both on-premises and online.
+> In your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant, install, publish, or upgrade the **Intelligent Cloud Base** extension first, and then the product-specific extension or extensions.
 
-Also, at the end of the upgrade, you must make sure to run the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) PowerShell cmdlet to set the application version in the upgraded database. The cmdlet sets the `applicationVersion` field in the `ndo$tenantdatabaseproperty` table so that the migration code can verify that you're migrating from the right version. For more information, see [Post-upgrade tasks](../upgrade/upgrade-unmodified-application-v14-v17.md#post-upgrade-tasks). If the field is blank, the migration cannot run.  
-
-> [!TIP]
-> Before you set up migration, you can test that the `applicationVersion` field is set by using the [Get-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet.
+Also, at the end of the upgrade, you must make sure that the `applicationVersion` field in the `ndo$tenantdatabaseproperty` table is set to the right version. If the field is blank, or if it is set to an older version than the migration tool supports, the migration cannot run. For more information, see [Post-upgrade tasks](../upgrade/upgrade-unmodified-application-v14-v17.md#post-upgrade-tasks).  
 
 ## See also
 
