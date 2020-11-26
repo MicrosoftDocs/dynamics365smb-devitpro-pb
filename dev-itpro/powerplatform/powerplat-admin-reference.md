@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference
+# Business Central Virtual Table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
@@ -23,10 +23,9 @@ author: solsen
 This topic provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Getting the solution
+First get the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
 
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables is installed.
-
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]:
+The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables is installed from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
 - **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables. All communication to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual table feature.
@@ -60,7 +59,7 @@ Due to the large number of OData enabled tables available in [!INCLUDE[prodshort
 
 1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
 
-2. Choose **Data* in the horizontal menu to view the available data.
+2. Choose **Data** in the horizontal menu to view the available data.
 
 3. Locate and edit the table that you want to enable.
 
