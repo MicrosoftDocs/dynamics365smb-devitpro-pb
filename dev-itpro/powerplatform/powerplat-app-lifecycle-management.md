@@ -43,7 +43,7 @@ All these solutions must be present in an environment. Otherwise, virtual tables
 
 ## Managing tables from multiple environments
 
-The **MicrosoftBusinessCentralVESupport** solution consists of the **msdyn\_financeandoperationsvirtualtable** table. This table represents the virtual table data source for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that captures connection setup information. Each record in this table represents a connection to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance.
+The **MicrosoftBusinessCentralVESupport** solution consists of the **msdyn\_ businesscentralvirtualtable** table. This table represents the virtual table data source for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that captures connection setup information. Each record in this table represents a connection to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance.
 
 A catalog is used to list all the tables in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance that are available for virtualization in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] (in other words, all the tables in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that are enabled for Open Data Protocol \[OData\]). The catalog is part of the default **MicrosoftBusinessCentralERPCatalog** solution and is applicable to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance.
 

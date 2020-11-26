@@ -34,7 +34,7 @@ To work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual t
 
 ## Virtual tables for Business Central
 
-Open Data Protocol (OData) tables exposed through API Pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be consumed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables can be generated. 
+Open Data Protocol (OData) APIs exposed through API Pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be consumed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables can be generated. 
 Virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] acts as regular tables and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with full CRUD capability and without copying to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and leverage all the logic already residing in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ### Using Custom APIs as basis for virtual tables
@@ -55,7 +55,7 @@ There are known limitations with [!INCLUDE[prodshort](../developer/includes/prod
   * The following predicates are not supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
   * Combining **And** and **Or** groups across columns.
   * Filtering on related tables.
-
+- PowerApp Portals are not supported in current preview.
 ## See Also
 
 [Table Modeling](powerplat-entity-modeling.md)  
