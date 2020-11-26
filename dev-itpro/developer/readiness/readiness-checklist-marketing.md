@@ -25,7 +25,7 @@ You need to have the following three items in mind, when you are creating your s
 |-----------|--------------|--------------|
 |Branding|Make sure to read the branding guidelines carefully before you start referencing the product name. | [Read more](readiness-checklist-a-languange-branding.md#branding-requirements) |
 |Language| Discover what to consider for each storefront detail when it comes to language. | [Read more](readiness-checklist-a-languange-branding.md#language-requirements)|
-|Microsoft images| Make sure not to use any Microsoft images (e.g., Business Central icon or Dynamics 365 logo). | [Read more](readiness-checklist-a-languange-branding.md#Microsoft-images)|
+|Microsoft images| Make sure not to use any Microsoft images (e.g., Business Central icon or Dynamics 365 logo). | [Read more](readiness-checklist-a-languange-branding.md#microsoft-images)|
 
 
 ## How do I fill out the marketing section in Partner Center?
@@ -56,9 +56,9 @@ The following section walks you through the marketing-related components, that i
 |-----------|--------------|--------------|
 |Offer name |Enter a descriptive name for the offer. | [Read more](readiness-checklist-b-offername-summary.md#offer-name) |
 |Offer summary|A single sentence summarizing the purpose or function of the offer.| [Read more](readiness-checklist-b-offername-summary.md#offer-summary)|
-|Description text | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your offer (include supported editions, countries, and languages). | [Read more](readiness-checklist-c-offer-description)|
+|Description text | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your offer (include supported editions, countries, and languages). | [Read more](readiness-checklist-c-offer-description.md)|
 |Search keywords| Add search keywords to help users find your offer when they search in the marketplace.  | [Read more](readiness-checklist-f-supportedproducts-keywords.md#search-keywords) |
-|Products your app work with |Add specific products that your app works with. | [Read more](readiness-checklist-f-supportedproducts-keywords.md#products-your-app-work-with) |
+|Products your app work with |Add specific products that your app works with. | [Read more](readiness-checklist-f-supportedproducts-keywords.md) |
 |Help link|The link to your offer’s learning resources.| [Read more](readiness-checklist-h-help-support.md#help-link)|
 |Privacy policy link | The link to your offer’s privacy policy. | [Read more](readiness-checklist-i-privacypolicy-termsofuse.md#privacy-policy)|
 |Support link | The link to your offer’s support page.  | [Read more](readiness-checklist-h-help-support.md#support-link)|
