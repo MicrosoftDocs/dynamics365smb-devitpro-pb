@@ -13,22 +13,17 @@ ms.date: 11/25/2020
 ---
 
 # Create a .NET Wrapper Module
-This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], using the Regex module as an example. The Regex module is published in the [AlAppExtensions](https://github.com/microsoft/ALAppExtensions/) repository, and if you aren't already familiar with it, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
+This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], using the Regex module as an example. The Regex module is published in the [AlAppExtensions](https://github.com/microsoft/ALAppExtensions/) repository, and if you aren't already familiar with the Regex class in .NET, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
 
 ## Converting the Regex architecture
-In the original .NET Regex module, a lot of the functionality for regular expressions is kept in the Regex class. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.
+In .NET, the Regex class provides functionality for regular expressions. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.
 <!--
 ****INSERT IMAGE HERE****
 -->
 ## Wrapping a .NET method
-For some methods, you can wrap the .NET method in AL in an internal codeunit and expose the procedure to the facade. For example, you can wrap the IsMatch method as follows:
+For some methods, you can wrap the .NET method in AL in an internal codeunit and expose the procedure to the facade. For example, you can wrap the IsMatch method as follows.
 
 ```
-// ------------------------------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See License.txt in the project root for license information.
-// ------------------------------------------------------------------------------------------------
-
 /// <summary>
 /// Provides functionality to use regular expressions to match text, split text, replace text etc.  
 /// </summary>
@@ -52,11 +47,6 @@ codeunit 3960 Regex
 }
 ```
 ```
-// ------------------------------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See License.txt in the project root for license information.
-// ------------------------------------------------------------------------------------------------
-
 codeunit 3961 "Regex Impl."
 {
     Access = Internal;
@@ -72,14 +62,9 @@ codeunit 3961 "Regex Impl."
 }
 ```
 ## Codeunits in method signatures
-Not all .NET Regex modules map so directly, however. The .NET Regex module also includes classes such as Match, Group, and Capture, that are used to represent results for regular expression matches. While it's tempting to wrap these classes in codeunits and use those to output results, you should avoid that because procedure signatures should not contain codeunits. Instead, use temporary tables to model these classes. The following code example shows how to implement the Match class in a temporary table.
+Not all .NET Regex classes map so directly to system modules, however. The .NET Regex class also includes classes such as Match, Group, and Capture, that are used to represent results for regular expression matches. While it's tempting to wrap these classes in codeunits and use those to output results, you should avoid that because procedure signatures should not contain codeunits. Instead, use temporary tables to model these classes. The following code example shows how to implement the Match class in a temporary table.
 
 ```
-// ------------------------------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See License.txt in the project root for license information.
-// ------------------------------------------------------------------------------------------------
-
 /// <summary>
 /// Provides a representation of Regex Matches that models Match objects in .Net
 /// </summary>
@@ -123,11 +108,6 @@ table 3965 Matches
 The temporary table has all the normal table procedures, and can be extended with procedures if needed. Now we can write the Match objects, output by .NET, to this table.
 
 ```
-// ------------------------------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See License.txt in the project root for license information.
-// ------------------------------------------------------------------------------------------------
-
 codeunit 3961 "Regex Impl."
 {
     Access = Internal;
@@ -147,23 +127,19 @@ codeunit 3961 "Regex Impl."
 ```
 
 ## Avoiding Constructors
-The .NET Regex module also includes multiple constructors, but we should not expose them in the facade. We can, however, use constructors internally, as the code previous code example shows.
+The .NET Regex class includes multiple constructors, but we should not expose them in the facade. We can, however, use constructors internally, as the code previous code example shows.
 
-Removing constructors from a module can cause overloads. One way to get around that is to use the argument-table pattern. For example, you can construct a temporary table with all optional parameters and internally implement the logic to apply them.
+Removing constructors from a class can cause overloads. One way to get around that is to use the argument-table pattern. For example, you can construct a temporary table with all optional parameters and internally implement the logic to apply them.
 
-The .NET Regex module contains three constructors that we want to support:
+The .NET Regex class contains three constructors that we want to support:
 
 * Regex(Pattern)
 * Regex(Pattern, RegexOptions)
 * Regex(Pattern, RegexOptions, MatchTimeout)
 
-In .NET, RegexOptions is an enum with options for matching the pattern (case-sensitivity, ignoring whitespace, and so on), and MatchTimeout sets a time-out interval for matching. The following example shows how to add those to a temporary table.
+In .NET, RegexOptions is an enum with options for matching the pattern (case-sensitivity, ignoring whitespace, and so on), and MatchTimeout sets a time-out interval for matching. The following example shows how to add those options to a temporary table.
 
 ```
-// ------------------------------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See License.txt in the project root for license information.
-// -----------------------------------------------------------------------
 /// <summary>
 /// Table with options to use with Regular Expressions
 /// </summary>
@@ -197,7 +173,7 @@ table 3966 "Regex Options"
 }
 
 ```
-This temporary table makes it straightforward to add overloads to the facade. For each method, there is one procedure without an options parameter, and one overload with an options table. The following example illustrates that for Match.
+This temporary table makes it straightforward to add overloads to the facade. For each method, there is one procedure without an options parameter, and one overload with an options table. The following example illustrates that for the Match procedure.
 
 ```
 /// <summary>
