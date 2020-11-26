@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference
+# Business Central Virtual Table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
@@ -60,7 +60,7 @@ Due to the large number of OData enabled tables available in [!INCLUDE[prodshort
 
 1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
 
-2. Choose **Data* in the horizontal menu to view the available data.
+2. Choose **Data** in the horizontal menu to view the available data.
 
 3. Locate and edit the table that you want to enable.
 
