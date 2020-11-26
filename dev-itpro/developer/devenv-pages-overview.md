@@ -3,7 +3,7 @@ title: "Pages Overview"
 description: "Pages are the main way to display and organize data." 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/26/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,19 +48,19 @@ Which page type you choose depends on the application task that you want to supp
 
 |Page type   |Description|
 |------------|-----------|
-|`RoleCenter`|The Role Center page is the main page.|
-|`Card`|A Card page is used to view and edit one record or entity from a table.|
-|`CardPart`|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
-|`List`|A List page displays content from a table in a list format.|
-|`ListPart`|Similar to a List page, a List Part page displays content from a table in a list format. The difference is that you use the List part page as another page in a FactBox or as a part of the Role Center page.|
-|`ListPlus`|A ListPlus page displays content from a table in a list format. The difference from a List page is that the main content is a ListPart, not a Repeater group as the List has it.|
-|`Document`|A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together.|
-|`WorkSheet`|You use a Worksheet page type for creating worksheet or journal task pages.|
-|`ConfirmationDialog`|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
-|`StandardDialog`|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
-|`NavigatePage`|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
-|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center. For more information, see [Creating a Role Center Headline](devenv-create-role-center-headline.md)|
-|`API`|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
+|[RoleCenter](devenv-designing-role-centers.md)|The Role Center page is the main page.|
+|[Card](devenv-designing-card-pages.md)|A Card page is used to view and edit one record or entity from a table.|
+|[CardPart](devenv-designing-cardparts.md)|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
+|[List](devenv-designing-list-pages.md)|A List page displays content from a table in a list format.|
+|[ListPart](devenv-designing-listparts.md)|Similar to a List page, a List Part page displays content from a table in a list format. The difference is that you use the List part page as another page in a FactBox or as a part of the Role Center page.|
+|[ListPlus](devenv-designing-listparts.md)|A ListPlus page displays content from a table in a list format. The difference from a List page is that the main content is a ListPart, not a Repeater group as the List has it.|
+|[Document](devenv-designing-card-pages.md)|A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together.|
+|[WorkSheet](devenv-page-types-and-layouts.md#worksheet-page-layouts)|You use a Worksheet page type for creating worksheet or journal task pages.|
+|**ConfirmationDialog**|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
+|**StandardDialog**|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
+|**NavigatePage**|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
+|[HeadlinePart](devenv-create-role-center-headline.md)|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
+|[API](devenv-api-pagetype.md)|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
