@@ -219,7 +219,14 @@ This topic lists properties of the XMLport object, element, and attribute.
 
 --> 
 
-## See Also  
- [Properties](devenv-properties.md)  
- [Table and Table Extension Properties](devenv-table-properties.md)  
- [Page and Page Extension Properties Overview](devenv-page-property-overview.md)
+## See Also
+
+[Properties](devenv-properties.md)  
+[Table and Table Extension Properties](devenv-table-properties.md)  
+[Page and Page Extension Properties Overview](devenv-page-property-overview.md)  
+[Codeunit Properties](devenv-codeunit-properties.md)  
+[Query Properties](devenv-query-properties.md)  
+[Report Properties](devenv-report-properties.md)  
+[Table Properties](devenv-table-properties.md)  
+[XMLPort Properties](devenv-xmlport-properties.md)  
+[Enum Properties](devenv-enum-properties.md)
