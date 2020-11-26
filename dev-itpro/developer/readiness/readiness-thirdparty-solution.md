@@ -39,4 +39,4 @@ With your existing service offering, you path forward with [!INCLUDE[d365_bus_ce
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
 [Development of a Localization Solution](readiness-develop-localization.md)  
-[Resell Different Solutions](readiness-reseller.md)  
+[Get Started as a Reseller of Business Central Online](administration/get-started-online.md)  

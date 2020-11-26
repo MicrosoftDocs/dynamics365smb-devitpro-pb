@@ -27,7 +27,7 @@ AppSource is the launch pad for joint go-to-market activities with Microsoft and
 By listing your offer on AppSource you can get the following benefits:
 
 - Get started with confidence through a seamless onboarding experience.
-- Use Microsoft’s Go-To-Market Services.
+- Use Microsoft's Go-To-Market Services.
 - Customize your app listing page.
 - Connect directly with decision-makers and reach more customers. 
 - Generate leads and sales opportunities.
@@ -51,7 +51,7 @@ In order to inform you in the best possible way, we have organized the following
 |[**Development of a vertical solution**](readiness-develop-vertical.md) </br>Create an app that is specialized within a specific industry.|
 |[**Development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] by creating an Add-on app.|
 |[**Development of a localization solution**](readiness-develop-localization.md)</br>Comply with regulatory capabilities by developing for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].||
-|[**Dynamics 365 Reseller (VARs)**](readiness-reseller.md)</br>Resell and adjust [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to the individual needs of your customers.|
+|[**Dynamics 365 Reseller (VARs)**](administration/get-started-online.md)</br>Resell and adjust [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to the individual needs of your customers.|
 
 ## See Also
 

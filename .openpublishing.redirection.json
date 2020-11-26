@@ -5259,6 +5259,11 @@
     "source_path": "dev-itpro/developer/readiness/readiness-checklist-j-leadmanagement-specialty.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing",
     "redirect_document_id": false
+   }, 
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-reseller.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/get-started-online",
+    "redirect_document_id": false
    }
   ]
 }
