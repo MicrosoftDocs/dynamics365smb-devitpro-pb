@@ -23,10 +23,9 @@ author: solsen
 This topic provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Getting the solution
+First get the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
 
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables is installed.
-
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]:
+The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables is installed from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
 - **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables. All communication to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual table feature.
