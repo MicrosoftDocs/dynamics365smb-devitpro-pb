@@ -125,7 +125,7 @@ To add coworkers:
 
 1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
-2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page, and then choose **Developer Settings**.
+2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page, click on account settings, and then choose **Developer Settings**.
 
 3. Choose **Users** under **Settings** in the grey panel on the left-hand side of the page.
 
