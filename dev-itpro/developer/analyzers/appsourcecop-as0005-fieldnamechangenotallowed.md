@@ -2,7 +2,7 @@
 title: "Fields must not change name"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Fields must not change name  
 
 ## Description
-Fields must not change name. This might break the upgrade of existing installations and dependent extensions.
+Fields must not change name; their names are case-sensitive. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
