@@ -76,7 +76,6 @@ The following section walks you through the marketing-related components, that i
 |Hide key|The hide key is a token that is used to view the preview of your offer in AppSource before going live.| [Read more](readiness-checklist-f-supportedproducts-keywords.md)|
 
 
-<!--
-## How does my offer look when it's live on AppSource? -->
+## How does my offer look when it's live on AppSource?
 
-<!-- Place picture here -->
+![arrowhead indicator down](media/salesandinventoryforecast.gif)
