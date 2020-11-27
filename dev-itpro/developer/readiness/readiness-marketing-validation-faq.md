@@ -12,9 +12,6 @@ ms.author: solsen
 
 # Marketing Validation FAQ
  
-## Why can’t I use HTML tags to format the description text anymore? 
-
-The HTML tags have recently been replaced by the Rich Text Editor, which you’ll find above the description text field in Partner Center. Moving forward, you’ll have to use the Rich Text Editor to format your description text.  
 
 ## Where do I state the countries, editions and languages that my offer supports?  
 You are required to state the countries, editions and languages that your offer supports in the very bottom of your offer’s description text. You can use the following format:  
