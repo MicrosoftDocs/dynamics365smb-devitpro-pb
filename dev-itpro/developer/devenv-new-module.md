@@ -87,11 +87,6 @@ Next, create the **src** folder under **System/XmlWriter**. This folder will con
 After adding the implementation functions, the implementation codeunit will look as follows.
 
 ```
-    // ------------------------------------------------------------------------------------------------
-    // Copyright (c) Microsoft Corporation. All rights reserved.
-    // Licensed under the MIT License. See License.txt in the project root for license information.
-    // ------------------------------------------------------------------------------------------------
-
     codeunit 1484 "XmlWriter Impl"
     {
         Access = Internal;
@@ -126,11 +121,6 @@ Now that we have created our implementation codeunit, we must add public functio
 The following is an example of the facade codeunit named **XmlWriter.Codeunit.al** that includes public functions and documentation.
 
 ```
-
-    // ------------------------------------------------------------------------------------------------
-    // Copyright (c) Microsoft Corporation. All rights reserved.
-    // Licensed under the MIT License. See License.txt in the project root for license information.
-    // ------------------------------------------------------------------------------------------------
 
     /// <summary>
     /// Provides helper functions for System.Xml.XmlWriter
@@ -174,11 +164,6 @@ Now that we have now exposed the functions, the next step is to add tests. To do
 We will add the following new file under **System Tests/XmlWriter/src**, **XmlWriterTest.Codeunit.al**. 
 
 ```
-    // ------------------------------------------------------------------------------------------------
-    // Copyright (c) Microsoft Corporation. All rights reserved.
-    // Licensed under the MIT License. See License.txt in the project root for license information.
-    // ------------------------------------------------------------------------------------------------
-
     codeunit 139911 "Xml Writer Test"
     {
         Subtype = Test;
@@ -226,6 +211,7 @@ After running the tests successfully, changes are complete.
 You can now go to your Github fork and open a pull request in the AlAppExtensions repository. 
 
 ## See Also
+[Create a .NET Wrapper Module](devenv-create-a-wrapper-module.md)  
 [Become a Contributor to Business Central](https://blogs.msdn.microsoft.com/nav/2018/08/28/become-a-contributor-to-business-central/)  
 ["Git" going with extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/26/quot-git-quot-going-with-extensions)  
 [Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)  
