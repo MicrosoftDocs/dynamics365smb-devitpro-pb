@@ -78,4 +78,4 @@ The following section walks you through the marketing-related components, that i
 
 ## How does my offer look when it's live on AppSource?
 
-![arrowhead indicator down](media/salesandinventoryforecast.gif)
+![arrowhead indicator down](../../media/salesandinventoryforecast.gif)
