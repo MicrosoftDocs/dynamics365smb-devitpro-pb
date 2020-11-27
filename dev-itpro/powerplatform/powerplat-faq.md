@@ -2,7 +2,7 @@
 title: "Business Central virtual tables FAQ"
 description: "Frequently asked questions for working with Business Central virtual tables"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/26/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,6 +16,9 @@ author: solsen
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
+> [!NOTE]  
+> The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
 > This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).

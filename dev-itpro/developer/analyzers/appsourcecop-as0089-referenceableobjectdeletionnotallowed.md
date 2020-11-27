@@ -1,5 +1,5 @@
 ---
-title: "Keys must not be deleted, since dependent extensions may break"
+title: "Objects that can be referenced and which have been published must not be deleted."
 ms.author: solsen
 ms.custom: na
 ms.date: 11/25/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0010
-Keys must not be deleted, since dependent extensions may break  
+# AppSourceCop Rule AS0089
+Objects that can be referenced and which have been published must not be deleted.  
 
 ## Description
-The primary key must not be changed.
+Objects that can be referenced and which have been published must not be deleted. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

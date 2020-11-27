@@ -57,7 +57,7 @@ Watch the sessions from the Business Central Launch Event in October. Register a
 Snapshot debugging has now been enabled for sandbox environments. It will be enabled in production in a later minor. Learn more [here](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging).
 
 **Apps are moving to office.com**  
-The home for all your business applications across Dynamics 365 and Microsoft Power Platform is moving to office.com, where you'll find the Business Central tiles for production and sandbox environments. 
+The home for all your business applications across Dynamics 365 and Microsoft Power Platform is moving to office.com, where you'll find the Business Central tiles for production and sandbox environments. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/apps-are-moving-officecom).
 
 **Easy access to production or sandbox environments from the mobile app**  
 Users of mobile devices can now choose between their sandbox and production environments without the need to use the pre-crafted URL as before. Partners running their own apps based on Business Central can also let their users explore it from mobile devices. Learn more [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/access-multiple-production-or-sandbox-environments-mobile-apps).

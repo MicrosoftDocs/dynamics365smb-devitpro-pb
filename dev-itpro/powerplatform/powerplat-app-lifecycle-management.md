@@ -2,7 +2,7 @@
 title: "Application lifecycle management for solutions that use virtual tables"
 description: "Lifecycle management for Microsoft Dataverse tables end-to-end solutions"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/26/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,6 +16,9 @@ author: solsen
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
+> [!NOTE]  
+> The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
 > This functionality requires version17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
@@ -43,7 +46,7 @@ All these solutions must be present in an environment. Otherwise, virtual tables
 
 ## Managing tables from multiple environments
 
-The **MicrosoftBusinessCentralVESupport** solution consists of the **msdyn\_financeandoperationsvirtualtable** table. This table represents the virtual table data source for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that captures connection setup information. Each record in this table represents a connection to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance.
+The **MicrosoftBusinessCentralVESupport** solution consists of the **msdyn\_ businesscentralvirtualtable** table. This table represents the virtual table data source for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that captures connection setup information. Each record in this table represents a connection to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance.
 
 A catalog is used to list all the tables in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance that are available for virtualization in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] (in other words, all the tables in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that are enabled for Open Data Protocol \[OData\]). The catalog is part of the default **MicrosoftBusinessCentralERPCatalog** solution and is applicable to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance.
 

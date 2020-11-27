@@ -34,7 +34,7 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-company-lifecycle-trace.md) |
 |Database lock timeouts|Provides information about database locks that have timed out. |![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-database-locks-trace.md)|
-|Extension lifecycle|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-extension-lifecycle-trace.md) |
+|Extension lifecycle <sup>[\[2\]](#2)|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-lifecycle-trace.md) |
 |Extension update|Provides information about errors that occur when upgrading an extension.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-update-trace.md) |
 |Long running AL method trace|Provides information about long running AL methods.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-al-method-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-long-running-sql-query-trace.md)|
@@ -44,6 +44,8 @@ In Application Insights, telemetry from [!INCLUDE[prodshort](../developer/includ
 |Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-outgoing-trace.md)|
 
 <sup>1</sup><a name="1"></a>This signal is only emitted to the Application Insights resource that's specified in the extension.
+
+<sup>2</sup><a name="2"></a>Introduced in Business Central 2020 release wave 1, version 16.3. For extension telemetry, this signal was introduced in 2020 release wave 2, version 17.1.
 
 <!--
 |Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|

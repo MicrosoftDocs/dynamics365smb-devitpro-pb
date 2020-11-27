@@ -2,7 +2,7 @@
 title: "Microsoft Power Platform integration with Business Central"
 description: "Integration of Power Platform with Business Central"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/26/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,6 +16,9 @@ author: solsen
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
+> [!NOTE]  
+> The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
 > This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
@@ -34,7 +37,7 @@ To work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual t
 
 ## Virtual tables for Business Central
 
-Open Data Protocol (OData) tables exposed through API Pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be consumed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables can be generated. 
+Open Data Protocol (OData) APIs exposed through API Pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be consumed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables can be generated. 
 Virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] acts as regular tables and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with full CRUD capability and without copying to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and leverage all the logic already residing in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ### Using Custom APIs as basis for virtual tables
@@ -55,7 +58,7 @@ There are known limitations with [!INCLUDE[prodshort](../developer/includes/prod
   * The following predicates are not supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
   * Combining **And** and **Or** groups across columns.
   * Filtering on related tables.
-
+- PowerApp Portals are not supported in current preview.
 ## See Also
 
 [Table Modeling](powerplat-entity-modeling.md)  
