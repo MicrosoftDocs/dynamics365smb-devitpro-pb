@@ -91,14 +91,10 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 > [!NOTE]  
 > If you have questions for building localization apps, please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
 
-<!--Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for assistance on bringing you localization apps to AppSource.-->
-
 ## See Also
 
-[Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
-[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
-[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
-[Development of a Vertical Solution](readiness-develop-vertical.md)  
-[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
-[Get Started as a Reseller of Business Central Online](administration/get-started-online.md)  
+[Get Started with Building Apps](get-started.md)  
+[The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
+[Get Started as a Reseller of Business Central Online](../../administration/get-started-online.md)  
 [Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
