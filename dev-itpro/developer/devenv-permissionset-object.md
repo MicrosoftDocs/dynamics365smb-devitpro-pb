@@ -26,10 +26,22 @@ Typing the shortcut `tp...` will create the basic layout for a permission set ob
 
 The following permission set example ...
 
+<!--
 ```AL
+permissionset 50130 MyPermissionSet 
+{ 
+    Access = Internal; 
+    ObsoleteState = No; 
+    IncludedPermissionSets = SomeSet; 
 
+    Permissions = 
+        codeunitSomeCode = x, 
+        tabledata Customer = rim,
+        tabledata Vendor = RIm,
+        codeunitAccSchedManagement= X; 
+} 
 ```
-
+-->
 
 ## See Also
 
