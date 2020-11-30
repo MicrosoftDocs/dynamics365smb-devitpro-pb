@@ -182,6 +182,7 @@ Before you submit, we recommend that you review the [technical validation checkl
 
 ## See also
 
+[The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
 [The Lifecycle of Apps and Extensions for [!INCLUDE [prodshort](../includes/prodshort.md)]](../devenv-app-life-cycle.md)  
 [Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prodshort](../includes/prodshort.md)] Online](../app-maintain.md)  

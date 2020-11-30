@@ -91,7 +91,7 @@ This article provides information about the following types of resources:
 
 ### <a name="partner"></a>Get set up as a partner
 
-If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/readiness-get-started.md).  
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/get-started.md).  
 
 <!--### <a name="ready2go"></a>Get started with the "Ready to Go" program
 

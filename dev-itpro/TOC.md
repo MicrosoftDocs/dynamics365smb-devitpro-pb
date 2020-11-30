@@ -8,20 +8,17 @@
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
-<!--#### What the partner's responsibilities are -->
-### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
+### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
+### [Get Started with Building Apps](developer/readiness/get-started.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
+<!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-<!--### Get started with building apps
-#### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
-#### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
-### Embed Apps
+### ISV Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### Deployment
@@ -176,9 +173,10 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### Ready to Go
-#### [Get Onboarded as a partner](developer/readiness/readiness-ready-to-go.md)
+#### ### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
+#### [Get Started with Building Apps](developer/readiness/get-started.md)
+#### [Ready to Go Resources](developer/readiness/readiness-ready-to-go.md)
 #### [The Business Central Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)

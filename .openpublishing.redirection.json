@@ -5259,10 +5259,55 @@
     "source_path": "dev-itpro/developer/readiness/readiness-checklist-j-leadmanagement-specialty.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing",
     "redirect_document_id": false
-   }, 
+   },
    { 
     "source_path": "dev-itpro/developer/readiness/readiness-reseller.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/get-started-online",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-get-started.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/get-started",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-add-on-apps.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-connect-apps.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-embed-apps.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-thirdparty-solution.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-develop-horizontal.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-develop-vertical.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-no-codes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-welcome.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
     "redirect_document_id": false
    }
   ]
