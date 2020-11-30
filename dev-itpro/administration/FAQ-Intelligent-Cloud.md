@@ -8,7 +8,7 @@ ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
 ms.date: 10/01/2020
-ms.author: bmeier
+ms.author: edupont
 ---
 
 # FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions
