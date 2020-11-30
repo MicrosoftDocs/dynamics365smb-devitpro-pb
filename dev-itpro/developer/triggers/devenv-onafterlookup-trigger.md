@@ -14,14 +14,24 @@ author: SusanneWindfeldPedersen
 
 # OnAfterLookup Trigger
 
-Runs when 
+Runs after a record in a lookup on a field has been selected and the lookup is closed.
 
 ## Applies to
 
-- 
+- Fields
   
+## Syntax
+
+```al
+trigger OnAfterLookup()
+begin
+    ...
+end;
+```
+
 ## Remarks
 
+This trigger is introduced with version ? to address issues that arise when, for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
 
 ## See Also  
 
