@@ -1,5 +1,6 @@
 ---
 title: "ClientType System Option"
+description: "The ClientType System Option in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020
