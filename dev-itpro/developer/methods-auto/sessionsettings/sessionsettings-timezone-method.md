@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.TimeZone Method"
+description: Learn how TimeZone method works.
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,8 +43,13 @@ The time zone set in the SessionSettings object.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+The default time zone is **UTC**. This method can also be used with web service sessions.
+
 ## Example
-This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the TIMEZONE method to set the time zone to 'UTC' (Coordinated Universal Time). Finally, the REQUESTSESSIONUPDATE method sends a request to the client to abnandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
+
+This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the TIMEZONE method to set the time zone to 'UTC' (Coordinated Universal Time). Finally, the REQUESTSESSIONUPDATE method sends a request to the client to abandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
 
 ```
 var
@@ -57,6 +63,8 @@ end;
 
 
 ## See Also
+
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)  
