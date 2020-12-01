@@ -43,6 +43,7 @@ Fields have the following triggers.
 |-------------------|-------------------|  
 |[OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)|Data is entered in a field or when the [Validate (Record) method](../methods-auto/record/record-validate-method.md) is run.|  
 |[OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)|Lookup is activated.|  
+|[OnAfterLookup Trigger](devenv-onafterlookup-trigger.md)||
 |[OnBeforeValidate (Fields) Trigger](devenv-onbeforevalidate-fields-trigger.md)|Before data is entered in a field.|
 |[OnAfterValidate (Fields) Trigger](devenv-onaftervalidate-fields-trigger.md)|After data is entered in a field.|
 
