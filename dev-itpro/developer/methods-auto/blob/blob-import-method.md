@@ -1,5 +1,6 @@
 ---
 title: "Blob.Import Method"
+description: "The Blob Import Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

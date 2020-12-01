@@ -1,5 +1,6 @@
 ---
 title: "BigText.AddText Method"
+description: "The BigText AddText Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

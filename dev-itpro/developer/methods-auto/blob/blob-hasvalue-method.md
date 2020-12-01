@@ -1,5 +1,6 @@
 ---
 title: "Blob.HasValue Method"
+description: "The Blob HasValue Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

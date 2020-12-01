@@ -1,5 +1,6 @@
 ---
 title: "BigText.Read Method"
+description: "The BigText Read Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

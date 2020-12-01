@@ -1,5 +1,6 @@
 ---
 title: "BigText.Write Method"
+description: "The BigText Write Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020
