@@ -2,7 +2,7 @@
 title: "FieldRef.OptionMembers Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.OptionMembers Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the list of options that are available in the field that is currently selected.
 
 
@@ -21,18 +23,18 @@ Gets the list of options that are available in the field that is currently selec
 ```
 OptionMembers :=   FieldRef.OptionMembers()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*OptionMembers*  
-&emsp;Type: [String](../string/string-data-type.md)  
-  
+*OptionMembers*
+&emsp;Type: [String](../string/string-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

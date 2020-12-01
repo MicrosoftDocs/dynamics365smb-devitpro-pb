@@ -2,7 +2,7 @@
 title: "Report.CreateTotals Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.CreateTotals Method
+> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+
 Maintains totals for a variable in AL.
 
 
@@ -22,9 +24,9 @@ Maintains totals for a variable in AL.
  Report.CreateTotals(Vars: Array of [Decimal])
 ```
 ## Parameters
-*Report*  
-&emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.  
+*Report*
+&emsp;Type: [Report](report-data-type.md)
+An instance of the [Report](report-data-type.md) data type.
 
 *Vars*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  

@@ -15,6 +15,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SessionSettings.TimeZone Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the time zone property in a SessionSettings object.
 
 
@@ -22,12 +24,12 @@ Gets or sets the time zone property in a SessionSettings object.
 ```
 [TimeZone := ]  SessionSettings.TimeZone([NewTimeZone: String])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*  
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
+*SessionSettings*
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewTimeZone*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -35,10 +37,10 @@ Specifies the time zone property in the SessionsSettings object. The value must 
 
 
 ## Return Value
-*TimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+*TimeZone*
+&emsp;Type: [String](../string/string-data-type.md)
 The time zone set in the SessionSettings object.
-        
+      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

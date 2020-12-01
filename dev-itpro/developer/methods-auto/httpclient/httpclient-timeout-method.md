@@ -2,7 +2,7 @@
 title: "HttpClient.Timeout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpClient.Timeout Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the duration in milliseconds to wait before the request times out.
 
 
@@ -21,12 +23,12 @@ Gets or sets the duration in milliseconds to wait before the request times out.
 ```
 [CurrentTimeout := ]  HttpClient.Timeout([SetTimeout: Duration])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*HttpClient*  
-&emsp;Type: [HttpClient](httpclient-data-type.md)  
-An instance of the [HttpClient](httpclient-data-type.md) data type.  
+*HttpClient*
+&emsp;Type: [HttpClient](httpclient-data-type.md)
+An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *SetTimeout*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
@@ -34,9 +36,9 @@ The duration in milliseconds to wait before the request times out.
 
 
 ## Return Value
-*CurrentTimeout*  
-&emsp;Type: [Duration](../duration/duration-data-type.md)  
-The duration in milliseconds to wait before the request times out.  
+*CurrentTimeout*
+&emsp;Type: [Duration](../duration/duration-data-type.md)
+The duration in milliseconds to wait before the request times out.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

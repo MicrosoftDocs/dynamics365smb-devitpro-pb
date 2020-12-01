@@ -2,7 +2,7 @@
 title: "TaskScheduler.TaskExists Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TaskScheduler.TaskExists Method
+> **Version**: _Available from runtime version 1.0._
+
 Checks whether a specific task exists.
 
 
@@ -29,9 +31,9 @@ The unique identifier of the task. The unique identifier is returned by the CREA
 
 
 ## Return Value
-*Exists*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*Exists*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
