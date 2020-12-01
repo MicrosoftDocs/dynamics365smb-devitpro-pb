@@ -1,5 +1,6 @@
 ---
 title: "Database.ChangeUserPassword Method"
+description: "The Database ChangeUserPassword Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

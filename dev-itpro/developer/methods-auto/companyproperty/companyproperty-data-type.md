@@ -1,5 +1,6 @@
 ---
 title: "CompanyProperty Data Type"
+description: "The CompanyProperty Data Type in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

@@ -1,5 +1,6 @@
 ---
 title: "Database.ServiceInstanceId Method"
+description: "The Database ServiceInstanceId Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

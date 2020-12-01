@@ -1,5 +1,6 @@
 ---
 title: "Database.DataFileInformation Method"
+description: "The Database DataFileInformation Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020

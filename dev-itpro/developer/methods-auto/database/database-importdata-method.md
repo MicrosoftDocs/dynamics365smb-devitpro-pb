@@ -1,5 +1,6 @@
 ---
 title: "Database.ImportData Method"
+description: "The Database ImportData Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 11/23/2020
