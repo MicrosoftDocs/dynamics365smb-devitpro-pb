@@ -2,7 +2,7 @@
 title: "HttpClient.Post Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpClient.Post Method
+> **Version**: _Available from runtime version 1.0._
+
 Sends a POST request to the specified URI as an asynchronous operation.
 
 
@@ -22,9 +24,9 @@ Sends a POST request to the specified URI as an asynchronous operation.
 [Ok := ]  HttpClient.Post(Path: String, Content: HttpContent, var Response: HttpResponseMessage)
 ```
 ## Parameters
-*HttpClient*  
-&emsp;Type: [HttpClient](httpclient-data-type.md)  
-An instance of the [HttpClient](httpclient-data-type.md) data type.  
+*HttpClient*
+&emsp;Type: [HttpClient](httpclient-data-type.md)
+An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *Path*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,9 +41,9 @@ The response received from the remote endpoint.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

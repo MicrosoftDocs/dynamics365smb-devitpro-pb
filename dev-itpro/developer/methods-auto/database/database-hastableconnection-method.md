@@ -1,8 +1,9 @@
 ---
 title: "Database.HasTableConnection Method"
+description: "The Database HasTableConnection Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +15,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.HasTableConnection Method
+> **Version**: _Available from runtime version 1.0._
+
 Verifies if a connection to an external database exists based on the specified name.
 
 
@@ -21,8 +24,8 @@ Verifies if a connection to an external database exists based on the specified n
 ```
 Ok :=   Database.HasTableConnection(Type: TableConnectionType, Name: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Type*  
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
@@ -34,10 +37,10 @@ The name of the external table connection. You must already have registered a ta
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
 **true** if a connection to an external database exists for the specified name, otherwise **false**.
-        
+      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

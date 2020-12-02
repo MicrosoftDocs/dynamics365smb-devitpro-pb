@@ -2,7 +2,7 @@
 title: "SessionSettings.ProfileAppId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SessionSettings.ProfileAppId Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the ID of an extension, which provides a profile, in a SessionSettings object.
 
 
@@ -21,12 +23,12 @@ Gets or sets the ID of an extension, which provides a profile, in a SessionSetti
 ```
 [ProfileAppId := ]  SessionSettings.ProfileAppId([NewProfileAppId: Guid])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*  
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
+*SessionSettings*
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewProfileAppId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
@@ -35,10 +37,10 @@ Sets the GUID of the extension that provides the profile. The value must be a va
 
 
 ## Return Value
-*ProfileAppId*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
+*ProfileAppId*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
 The ID of the extension that is set in the SessionSettings object.
-      
+    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

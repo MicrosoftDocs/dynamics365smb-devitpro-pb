@@ -30,7 +30,7 @@ The Application Insights resource is assigned an instrumentation key, which you 
 The next step is to add the `"applicationInsightsKey"`setting the extension's app.json as shown:
 
 ```json
-"applicationInsightsKey": ["<instrumenation key>"] 
+"applicationInsightsKey": "<instrumenation key>"
 ```
 
 Replace `<instrumenation key>` with your key. 

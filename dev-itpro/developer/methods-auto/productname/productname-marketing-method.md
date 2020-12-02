@@ -2,7 +2,7 @@
 title: "ProductName.Marketing Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ProductName.Marketing Method
+> **Version**: _Available from runtime version 1.0._
+
 MARKETING returns a text string that contains the application's marketing name.
 
 
@@ -24,9 +26,9 @@ ProductNameMarketing :=   ProductName.Marketing()
 
 
 ## Return Value
-*ProductNameMarketing*  
-&emsp;Type: [String](../string/string-data-type.md)  
-Text of the product's marketing name.  
+*ProductNameMarketing*
+&emsp;Type: [String](../string/string-data-type.md)
+Text of the product's marketing name.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

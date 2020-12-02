@@ -2,7 +2,7 @@
 title: "FieldRef.TestField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.TestField Method
+> **Version**: _Available from runtime version 2.0._
+
 Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.
 
 
@@ -22,15 +24,14 @@ Determines whether the contents of a field matches a given value. If the content
  FieldRef.TestField(Value: Enum)
 ```
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [Enum](../enum/enum-data-type.md)  
-
 The value that you want to compare with the contents of the field referred to by FieldRef. The data type of Value must match the type of the field. If you include Value and the contents of the field do not match, an error message is displayed. If you omit Value and the content of the field is zero or blank (empty string), an error message is displayed.
-
+        
 
 
 

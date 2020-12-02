@@ -2,7 +2,7 @@
 title: "JsonArray.AsToken Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonArray.AsToken Method
+> **Version**: _Available from runtime version 1.0._
+
 Converts the value in a JsonArray to a JsonToken data type.
 
 
@@ -23,14 +25,14 @@ Token :=   JsonArray.AsToken()
 ```
 
 ## Parameters
-*JsonArray*  
-&emsp;Type: [JsonArray](jsonarray-data-type.md)  
-An instance of the [JsonArray](jsonarray-data-type.md) data type.  
+*JsonArray*
+&emsp;Type: [JsonArray](jsonarray-data-type.md)
+An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 ## Return Value
-*Token*  
-&emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
-  
+*Token*
+&emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

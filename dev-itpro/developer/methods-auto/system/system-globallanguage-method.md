@@ -2,7 +2,7 @@
 title: "System.GlobalLanguage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.GlobalLanguage Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets and sets the current global language setting.
 
 
@@ -21,10 +23,10 @@ Gets and sets the current global language setting.
 ```
 [LanguageID := ]  System.GlobalLanguage([NewLanguageID: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *NewLanguageID*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -33,10 +35,10 @@ The Microsoft language ID (LCID), such as 1033 for English (US).
 
 
 ## Return Value
-*LanguageID*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
+*LanguageID*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
 The Microsoft language ID (LCID).
-        
+      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

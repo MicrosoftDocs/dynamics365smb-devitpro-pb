@@ -2,7 +2,7 @@
 title: "Session.StartSession Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Session.StartSession Method
+> **Version**: _Available from runtime version 1.0._
+
 Starts a session without a UI and runs the specified codeunit.
 
 
@@ -21,8 +23,8 @@ Starts a session without a UI and runs the specified codeunit.
 ```
 [Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer [, Company: String] [, var Record: Record])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *SessionId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -43,9 +45,9 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

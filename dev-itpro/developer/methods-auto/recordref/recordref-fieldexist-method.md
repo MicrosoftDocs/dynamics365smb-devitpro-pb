@@ -2,7 +2,7 @@
 title: "RecordRef.FieldExist Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.FieldExist Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.
 
 
@@ -22,9 +24,9 @@ Determines if the field that has the number FieldNo exists in the table that is 
 Exist :=   RecordRef.FieldExist(FieldNo: Integer)
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *FieldNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -32,9 +34,9 @@ The FieldNo that you want to know whether exists in the table.
 
 
 ## Return Value
-*Exist*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the field exists; otherwise **false**.  
+*Exist*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the field exists; otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
