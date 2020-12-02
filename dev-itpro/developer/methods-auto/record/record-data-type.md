@@ -2,7 +2,7 @@
 title: "Record Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ The following methods are available on instances of the Record data type.
 |[Get([Any,...])](record-get-method.md)|Gets a record based on values stored in primary key fields.|
 |[Find([String])](record-find-method.md)|Finds a record in a table that is based on the values stored in keys.|
 |[Next([Integer])](record-next-method.md)|Steps through a specified number of records and retrieves a record.|
-|[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MARKEDONLY, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.|
+|[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
 |[SetCurrentKey(Any [, Any,...])](record-setcurrentkey-method.md)|Selects a key for a table.|
 |[Ascending([Boolean])](record-ascending-method.md)|Gets or sets the order in which the system searches through a table.|
 |[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
