@@ -3,7 +3,7 @@ title: "The ObsoleteTag property and the Tag in the Obsolete attribute must be s
 description: Explains AppSourceCop Rule AS0072.
 ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
