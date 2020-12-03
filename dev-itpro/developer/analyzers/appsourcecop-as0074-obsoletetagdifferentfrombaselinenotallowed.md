@@ -22,7 +22,7 @@ The Obsolete Tag must be the same across branches. This rule is only relevant on
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule verifies that the version specified as obsolete tag for objects that do not change obsolete state (not obsolete, obselete pending or obsolete removed) with the current version has not changed.
+This rule verifies that the version specified as obsolete tag for objects that do not change obsolete state (not obsolete, obsolete pending, or obsolete removed) with the current version has not changed.
 
 Obsolete objects which do not have the same state as in the baseline are not validated by this rule, but are validated by [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md).
 
@@ -31,7 +31,7 @@ Obsolete objects which do not have the same state as in the baseline are not val
 
 The version specified as `obsoleteTagVersion` can be the same as the current Major.Minor version specified in the `version` of your `app.json`, but it does not have to.
 
-## Setting up AppSourceCop to validate the Obsolete Tag
+## Setting up AppSourceCop to validate the Obsolete tag
 
 ### Enabling the rule using a ruleset
 
@@ -59,7 +59,7 @@ For example, the following ruleset turns the diagnostic for rule AS0074 into an 
 ```
 
 > [!NOTE]  
-> In order to fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
+> In order to fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
 
 ### Setting up the AppSourceCop.json
 
@@ -154,7 +154,7 @@ codeunit 50100 MyCodeunit
 
 The codeunit was marked as obsolete pending in the baseline and its obsolete tag value does not change with the new version.
 
-### Adding a tag for an obsolete object that didn't have one - Lower than specified
+### Adding a tag for an obsolete object that didn't have one - lower than specified
 
 Version 1.0 of the extension:
 ```AL
@@ -176,7 +176,7 @@ codeunit 50100 MyCodeunit
 
 The codeunit was marked as obsolete pending in the baseline without an obsolete tag. The new version of the extension specifies an obsolete version which is lower than the `obsoleteTagVersion`. This change is allowed by rule AS0074 in order to enable specifying tags without fixing the baselines.
 
-### Adding a tag for an obsolete object that didn't have one - Higher than specified
+### Adding a tag for an obsolete object that didn't have one - higher than specified
 
 Version 1.0 of the extension:
 ```AL
