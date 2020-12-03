@@ -124,6 +124,7 @@ The following table describes the settings in the `AppSourceCop.json` file:
 |version|Yes|The version of a previous version of this package with which you want to compare the current package for breaking changes.|
 |mandatoryAffixes|No|Affixes that must be prepended or appended to the name of all new application objects, extension objects, and fields.|
 |supportedCountries|No|The set of country codes, in the alpha-2 ISO 3166 format, in which the application will be available.|
+|targetVersion|No|Specifies the next Major.Minor version of the extension in the current branch in order to validate the ObsoleteTag values with [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md). This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used. This property is being deprecated in favor of obsoleteTagVersion.|
 |obsoleteTagVersion|No|Specifies the next Major.Minor version of the extension in the current branch in order to validate the ObsoleteTag values with AS0072. This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
 |obsoleteTagPattern|No|The Obsolete tag pattern used by AS0076. This should be a valid regular expression. By default, the pattern '(\\d+)\\.(\\d+)' is used.|
 |obsoleteTagPatternDescription|No|A human-readable description for the ObsoleteTagPattern regular expression. This is used in diagnostics reported by AS0076. By default, 'Major.Minor' is used.|
