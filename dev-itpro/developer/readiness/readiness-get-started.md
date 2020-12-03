@@ -125,13 +125,11 @@ To add coworkers:
 
 1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
-2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page, click on account settings, and then choose **Developer Settings**.
+2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page,  click on account settings, and choose **user management**.
 
-3. Choose **Users** under **Settings** in the grey panel on the left-hand side of the page.
+3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button.
 
-4. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button.
-
-5. You have successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
+4. You have successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 ### Step 4 B: Getting access to the available builds and engagements
 
