@@ -17,7 +17,7 @@ ms.author: jswymer
 
 Sets the custom name of the API endpoint that the query is exposed in. The custom name must be unique.
 
->[!NOTE]
+> [!NOTE]  
 > The property 'CustomAPIName' can only be set if the property 'QueryType' is set to 'API'.
 
 ## Applies to  

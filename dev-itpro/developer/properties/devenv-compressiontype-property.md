@@ -32,6 +32,11 @@ Specifies the compression type used.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+
+```AL
+CompressionType = None|Page|Row|Unspecified; 
+```
 
 ## Remarks
 
@@ -41,12 +46,6 @@ Specifies the compression type used.
 With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server or by specifying a database default compression level using the [Set-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navtenant) with the `-Compression` parameter set.
 
 For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression).
-
-## Syntax
-
-```AL
-CompressionType = None|Page|Row|Unspecified; 
-```
 
 ## Example
 
