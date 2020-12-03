@@ -2,7 +2,7 @@
 title: "DateTime Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ If you use a date that is outside the valid date range, a run-time error occurs.
 ## Syntax
 
 The syntax for defining DateTime format follows the [ISO standard](https://en.wikipedia.org/wiki/ISO_8601). 
-- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 26th of March, 2018.
+- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 25th of March, 2018.
 - The syntax for defining Time format is `hhmmssT`, where `T` is the time designator. For example, `093125H`, read as 9:13:25.
 
 ## SQL Server
