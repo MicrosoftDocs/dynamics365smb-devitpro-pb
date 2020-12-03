@@ -2,7 +2,7 @@
 title: "FieldRef.EnumValueCount Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.EnumValueCount Method
+> **Version**: _Available from runtime version 4.0._
+
 Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected.
 
 
@@ -23,14 +25,14 @@ Number of Enum values :=   FieldRef.EnumValueCount()
 ```
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Number of Enum values*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of Enum values.  
+*Number of Enum values*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of Enum values.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

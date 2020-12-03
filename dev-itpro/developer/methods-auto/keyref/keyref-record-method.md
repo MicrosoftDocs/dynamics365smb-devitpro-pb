@@ -2,7 +2,7 @@
 title: "KeyRef.Record Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # KeyRef.Record Method
+> **Version**: _Available from runtime version 1.0._
+
 Returns a RecordRef for the current record referred to by the key.
 
 
@@ -23,14 +25,14 @@ Record :=   KeyRef.Record()
 ```
 
 ## Parameters
-*KeyRef*  
-&emsp;Type: [KeyRef](keyref-data-type.md)  
-An instance of the [KeyRef](keyref-data-type.md) data type.  
+*KeyRef*
+&emsp;Type: [KeyRef](keyref-data-type.md)
+An instance of the [KeyRef](keyref-data-type.md) data type.
 
 ## Return Value
-*Record*  
-&emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
-The RecordRef of the record that is currently selected referenced by the key. If a key is not selected, an error is returned.  
+*Record*
+&emsp;Type: [RecordRef](../recordref/recordref-data-type.md)
+The RecordRef of the record that is currently selected referenced by the key. If a key is not selected, an error is returned.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

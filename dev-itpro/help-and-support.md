@@ -1,6 +1,6 @@
 ---
 title: "Resources for Help and Support"
-description: Learn about resources for support and product Help for Business Central.
+description: Learn about resources for support and product Help for Business Central if you are reselling partner or a developer.
 author: edupont04
 ms.reviewer: na
 ms.topic: article
@@ -91,7 +91,7 @@ This article provides information about the following types of resources:
 
 ### <a name="partner"></a>Get set up as a partner
 
-If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/readiness-get-started.md).  
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/get-started.md).  
 
 <!--### <a name="ready2go"></a>Get started with the "Ready to Go" program
 
@@ -167,6 +167,10 @@ GitHub brings together communities of developers and other contributors to disco
 * NAV Docker
 
   Use this repo to collaborate around the source code and the scripts of the generic docker image for [!INCLUDE [prodshort](developer/includes/prodshort.md)]: [https://github.com/Microsoft/nav-docker](https://github.com/Microsoft/nav-docker)
+
+* BcContainerHelper/NavContainerHelper
+
+  Use this repo to collaborate around the source code and the scripts of BcContainerHelper PowerShell module for [!INCLUDE [prodshort](developer/includes/prodshort.md)]: [https://github.com/Microsoft/NavContainerHelper](https://github.com/Microsoft/NavContainerHelper)
 
 * Documentation
 

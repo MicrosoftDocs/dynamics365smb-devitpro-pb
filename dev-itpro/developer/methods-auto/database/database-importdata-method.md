@@ -1,8 +1,9 @@
 ---
 title: "Database.ImportData Method"
+description: "The Database ImportData Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +15,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.ImportData Method
+> **Version**: _Available from runtime version 1.0._
+
 Imports data from a file that has been exported from a database.
 
 > [!NOTE]
@@ -23,8 +26,8 @@ Imports data from a file that has been exported from a database.
 ```
 [Ok := ]  Database.ImportData(ShowDialog: Boolean, var FileName: Text [, IncludeApplicationData: Boolean] [, IncludeGlobalData: Boolean] [, CompanyRecord: Record])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *ShowDialog*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -53,9 +56,9 @@ Specifies the company or companies that must be imported.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

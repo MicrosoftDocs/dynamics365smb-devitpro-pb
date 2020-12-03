@@ -2,7 +2,7 @@
 title: "Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference"
 description: "The admin reference for working with Business Central and Microsoft Dataverse tables"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/26/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,11 +11,14 @@ ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
-# Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference
+# Business Central Virtual Table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference
 
 [!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
+> [!NOTE]  
+> The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
 > This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and service update 189 for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
@@ -23,10 +26,9 @@ author: solsen
 This topic provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Getting the solution
+First get the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
 
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables is installed.
-
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]:
+The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables is installed from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
 - **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables. All communication to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual table feature.
@@ -48,9 +50,11 @@ The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cd
 
 3. On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants will have an default environment called 'production'.
 
-4. Set the **Default Company** value. 
+4. Save changes before setting **Default Company**. Else, company cannot be set in the next step.
 
-5. Save the changes.
+5. Set the **Default Company** value. 
+
+6. Save the changes.
 
 ## Making virtual tables visible
 
@@ -58,7 +62,7 @@ Due to the large number of OData enabled tables available in [!INCLUDE[prodshort
 
 1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
 
-2. Choose **Data* in the horizontal menu to view the available data.
+2. Choose **Data** in the horizontal menu to view the available data.
 
 3. Locate and edit the table that you want to enable.
 

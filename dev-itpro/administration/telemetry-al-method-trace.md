@@ -14,9 +14,9 @@ ms.author: jswymer
 
 # Analyzing Long Running AL Methods Telemetry
 
-[!INCLUDE[prodshort](../includes/2020_releasewave2.md)]
+[!INCLUDE[prodshort](../includes/2020_releasewave2.md)], version 17.1
 
-The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, excluding the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
+The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, including the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 
 <!--
 > [!NOTE]
@@ -50,12 +50,12 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |clientType|Specifies the type of client that executed the AL method, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. |
 |component|**Dynamics 365 Business Central Server**|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentType|Specifies the environment type of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
 |environmentName|Specifies the environment name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
 |eventId|**RT0018**|
-|executionTime|Specifies the time that it took to execute the AL method. The value has the format hh:mm:ss.sssssss.|
+|executionTime|Specifies the total time that it took to execute the AL method. The value has the format hh:mm:ss.sssssss.|
 |extensionInfo|Specifies information about individual extensions that contributed to the execution time spent in the call stack up until the point at which the long-running threshold was exceeded and the trace was emitted. The following information is included for each extension:<ul><li>`id` -  the ID of the extension.</li><li>`extensionName` - the name of the extension.</li><li>`extensionVersion` - the version of the extension.</li><li>`extensionPublisher` - the publisher of the extension.</li><li>`subscriberExecutionCount` - the number of event subscribers executed in this extension.</li><li>`executionTime` - the total execution time for this extension in the call stack. The value has the format hh:mm:ss.sssssss.</li></ul>|
 |extensionName|Specifies the name of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted. |
 |extensionPublisher|Specifies the publisher of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|

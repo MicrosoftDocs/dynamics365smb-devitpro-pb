@@ -1,8 +1,9 @@
 ---
 title: "Blob.CreateOutStream Method"
+description: "The Blob CreateOutStream Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +15,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Blob.CreateOutStream Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates an OutStream object for a binary large object (BLOB). This enables you to write data to the BLOB.
 
 
@@ -22,9 +25,9 @@ Creates an OutStream object for a binary large object (BLOB). This enables you t
  Blob.CreateOutStream(OutStream: OutStream [, Encoding: TextEncoding])
 ```
 ## Parameters
-*Blob*  
-&emsp;Type: [Blob](blob-data-type.md)  
-An instance of the [Blob](blob-data-type.md) data type.  
+*Blob*
+&emsp;Type: [Blob](blob-data-type.md)
+An instance of the [Blob](blob-data-type.md) data type.
 
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  

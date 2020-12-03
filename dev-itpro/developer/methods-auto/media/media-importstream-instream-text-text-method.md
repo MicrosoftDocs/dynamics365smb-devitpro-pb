@@ -2,7 +2,7 @@
 title: "Media.ImportStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Media.ImportStream Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field.
 
 
@@ -22,9 +24,9 @@ Adds a media type (MIME), such as jpeg image, from an InStream object to a Media
 [ID := ]  Media.ImportStream(Stream: InStream, Description: Text [, MimeType: Text])
 ```
 ## Parameters
-*Media*  
-&emsp;Type: [Media](media-data-type.md)  
-An instance of the [Media](media-data-type.md) data type.  
+*Media*
+&emsp;Type: [Media](media-data-type.md)
+An instance of the [Media](media-data-type.md) data type.
 
 *Stream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -41,9 +43,9 @@ Specifies the media content type. MIME type is used by browsers, and is an Inter
 
 
 ## Return Value
-*ID*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*ID*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

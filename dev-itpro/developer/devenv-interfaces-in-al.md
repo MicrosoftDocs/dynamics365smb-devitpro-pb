@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Interfaces in AL
 
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
+
 An interface in AL is similar to an interface in any other programming language; it is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
 
 This allows for writing code that reduces the dependency on implementation details, makes it easier to reuse code, and supports a polymorphic way of calling object methods, which again can be used for substituting business logic.
@@ -25,6 +27,7 @@ The AL compiler checks to ensure that implementations adhere to assigned interfa
 You can declare variables as a given interface to allow passing objects that implement the interface, and then call interface implementations on the passed object in a polymorphic manner.
 
 ## Snippet support
+
 Typing the shortcut `tinterface` will create the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 
