@@ -1,9 +1,8 @@
 ---
 title: "ClientType System Option"
-description: "The ClientType System Option in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,8 +21,8 @@ Represents the type of the client executing the operation.
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|Background|A background client.|
-|ChildSession|A child session client.|
+|Background|A background session.|
+|ChildSession|A child session.|
 |Desktop|A desktop client.|
 |Management|A management client.|
 |NAS|A NAS client.|
