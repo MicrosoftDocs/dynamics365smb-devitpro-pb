@@ -22,7 +22,7 @@ The ObsoleteTag property and the Tag in the Obsolete attribute must be set to th
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule verifies that the version specified as obsolete tag for objects marked whose obsolete state (not obsolete, obselete pending or obsolete removed) is updated with the current version is matching the version specified in the `obsoleteTagVersion` property of the AppSourceCop.json.
+This rule verifies that the version specified as obsolete tag for objects whose obsolete state (not obsolete, obselete pending or obsolete removed) is updated with the current version is matching the version specified in the `obsoleteTagVersion` property of the AppSourceCop.json.
 
 Obsolete objects which have the same obsolete state as in the baseline are not validated by this rule, but are validated by [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md).
 
@@ -35,7 +35,7 @@ The version specified as `obsoleteTagVersion` can be the same as the current Maj
 
 ### Enabling the rule using a ruleset
 
-The diagnostics for rule AS0072 are hidden by default, so you first have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to surface them.
+The diagnostics for rule AS0072 are hidden by default, so you have to use a [ruleset](../devenv-rule-set-syntax-for-code-analysis-tools.md) in order to surface them.
 
 For example, the following ruleset turns the diagnostic for rule AS0072 into an error.
 
@@ -63,7 +63,7 @@ For example, the following ruleset turns the diagnostic for rule AS0072 into an 
 
 ### Setting up the AppSourceCop.json
 
-In order to enable the validation, you must specify the `obsoleteTagVersion` in the AppSourceCop.json, but not specify the `obsoleteTagPattern` property to use the default pattern.
+In order to enable the validation, you must specify the `obsoleteTagVersion` in the AppSourceCop.json, without specifying the `obsoleteTagPattern` property so that the default pattern is used.
 
 ```json
 {
@@ -248,6 +248,7 @@ codeunit 50100 MyCodeunit
     begin
     end;
 }
+```
 
 Version 2.0 of the extension:
 ```AL
