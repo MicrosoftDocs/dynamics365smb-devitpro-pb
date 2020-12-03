@@ -9,10 +9,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: freddyk
 ---
 
 # Restrictions on UI for Objects Exposed as Web Services
+
 Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.
 
 **SUMMARY AND INTENT**: When writing code for Web services, you must not use end-user confirmation dialog boxes, message boxes, or any other page constructs in the code. Because a Web service runs independently of a user interface, running this type of code causes the code to throw an exception. The exception can be caught and handled, but the Web service will not complete.

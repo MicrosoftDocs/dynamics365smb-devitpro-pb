@@ -10,7 +10,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: doldrn
+ms.author: freddyk
 ---
 
 # Upgrading AppSource Apps in Production

@@ -7,7 +7,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: freddyk
 ms.date: 10/01/2020
 ---
 

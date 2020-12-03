@@ -2,7 +2,7 @@
 title: "Variant.IsTransactionType Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Variant.IsTransactionType Method
+> **Version**: _Available from runtime version 1.0._
+
 Indicates whether an AL variant contains a TransactionType variable.
 
 
@@ -21,18 +23,18 @@ Indicates whether an AL variant contains a TransactionType variable.
 ```
 Ok :=   Variant.IsTransactionType()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*Variant*  
-&emsp;Type: [Variant](variant-data-type.md)  
-An instance of the [Variant](variant-data-type.md) data type.  
+*Variant*
+&emsp;Type: [Variant](variant-data-type.md)
+An instance of the [Variant](variant-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the AL variant contains a TransactionType variable, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the AL variant contains a TransactionType variable, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

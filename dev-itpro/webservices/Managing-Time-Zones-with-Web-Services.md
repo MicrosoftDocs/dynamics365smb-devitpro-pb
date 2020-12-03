@@ -1,7 +1,8 @@
 ---
 title: "Managing Time Zones with Web Services"
+description: Learn how time zones work with web services
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,5 +35,7 @@ author: jswymer
 |01/01/2014 17:00|01/01/2014 17:00 UTC+3|01/01/2014 14:00 UTC|  
   
 ## See Also  
- [Server Administration Tool](../administration/administration-tool.md)   
- [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)
+
+[SessionSettings.TimeZone Method](../developer/methods-auto/sessionsettings/sessionsettings-timezone-method.md)  
+[Server Administration Tool](../administration/administration-tool.md)   
+[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)

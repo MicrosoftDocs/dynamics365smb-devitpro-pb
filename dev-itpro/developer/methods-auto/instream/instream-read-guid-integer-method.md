@@ -2,7 +2,7 @@
 title: "InStream.Read Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InStream.Read Method
+> **Version**: _Available from runtime version 1.0._
+
 Reads a specified number of bytes from an InStream object. Data is read in binary format.
 
 
@@ -22,9 +24,9 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 [Read := ]  InStream.Read(var Variable: Guid [, Length: Integer])
 ```
 ## Parameters
-*InStream*  
-&emsp;Type: [InStream](instream-data-type.md)  
-An instance of the [InStream](instream-data-type.md) data type.  
+*InStream*
+&emsp;Type: [InStream](instream-data-type.md)
+An instance of the [InStream](instream-data-type.md) data type.
 
 *Variable*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
@@ -35,9 +37,9 @@ Describes the number of characters to be read. If you do not specify Length, the
 
 
 ## Return Value
-*Read*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
- If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Read*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+ If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

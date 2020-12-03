@@ -2,7 +2,7 @@
 title: "WebServiceActionContext.SetResultCode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WebServiceActionContext.SetResultCode Method
+> **Version**: _Available from runtime version 2.0._
+
 Sets the web service action result status code.
 
 
@@ -22,9 +24,9 @@ Sets the web service action result status code.
  WebServiceActionContext.SetResultCode(ResultCode: WebServiceActionResultCode)
 ```
 ## Parameters
-*WebServiceActionContext*  
-&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  
-An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.  
+*WebServiceActionContext*
+&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)
+An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.
 
 *ResultCode*  
 &emsp;Type: [WebServiceActionResultCode](../webserviceactionresultcode/webserviceactionresultcode-option.md)  

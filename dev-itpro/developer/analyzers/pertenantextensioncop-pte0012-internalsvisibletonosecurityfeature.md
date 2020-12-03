@@ -1,9 +1,8 @@
 ---
-title: "InternalsVisibleTo should not be used as a security feature - PTE0012."
-description: ExplainsPerTenantExtensionCop Rule PTE0012.
+title: "InternalsVisibleTo should not be used as a security feature."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

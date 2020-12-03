@@ -2,7 +2,7 @@
 title: "System.Encrypt Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.Encrypt Method
+> **Version**: _Available from runtime version 1.0._
+
 Takes a string as input and returns the encrypted value of the string.
 
 
@@ -21,8 +23,8 @@ Takes a string as input and returns the encrypted value of the string.
 ```
 EncryptedString :=   System.Encrypt(PlainTextString: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *PlainTextString*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -30,9 +32,9 @@ The input string that will be encrypted. The input string cannot exceed a length
 
 
 ## Return Value
-*EncryptedString*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The output string that is encrypted.  
+*EncryptedString*
+&emsp;Type: [String](../string/string-data-type.md)
+The output string that is encrypted.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

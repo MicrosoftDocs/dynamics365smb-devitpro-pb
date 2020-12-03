@@ -312,7 +312,7 @@ GO
 CREATE USER [domain\accountname] FOR LOGIN [domain\accountname]  
 GO
 
-ALTER ROLE BCServer_runtime ADD MEMBER [domain\accountname] 
+ALTER ROLE bc_server_runtime ADD MEMBER [domain\accountname] 
 GO
 ```  
 

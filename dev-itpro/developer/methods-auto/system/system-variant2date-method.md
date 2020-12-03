@@ -2,7 +2,7 @@
 title: "System.Variant2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.Variant2Date Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a date from a variant.
 
 
@@ -21,8 +23,8 @@ Gets a date from a variant.
 ```
 Date :=   System.Variant2Date(Variant: Variant)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Variant*  
 &emsp;Type: [Variant](../variant/variant-data-type.md)  
@@ -30,9 +32,9 @@ The input variant.
 
 
 ## Return Value
-*Date*  
-&emsp;Type: [Date](../date/date-data-type.md)  
-  
+*Date*
+&emsp;Type: [Date](../date/date-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

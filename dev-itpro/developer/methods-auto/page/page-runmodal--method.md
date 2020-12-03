@@ -2,7 +2,7 @@
 title: "Page.RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Page.RunModal Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.
 
 
@@ -23,14 +25,14 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 ```
 
 ## Parameters
-*Page*  
-&emsp;Type: [Page](page-data-type.md)  
-An instance of the [Page](page-data-type.md) data type.  
+*Page*
+&emsp;Type: [Page](page-data-type.md)
+An instance of the [Page](page-data-type.md) data type.
 
 ## Return Value
-*Action*  
-&emsp;Type: [Action](../action/action-option.md)  
-Specifies what action the user took on the page.  
+*Action*
+&emsp;Type: [Action](../action/action-option.md)
+Specifies what action the user took on the page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

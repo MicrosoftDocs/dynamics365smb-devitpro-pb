@@ -125,7 +125,7 @@ To add coworkers:
 
 1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
-2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page, and then choose **Developer Settings**.
+2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page, click on account settings, and then choose **Developer Settings**.
 
 3. Choose **Users** under **Settings** in the grey panel on the left-hand side of the page.
 
@@ -182,6 +182,7 @@ Before you submit, we recommend that you review the [technical validation checkl
 
 ## See also
 
+[The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
 [The Lifecycle of Apps and Extensions for [!INCLUDE [prodshort](../includes/prodshort.md)]](../devenv-app-life-cycle.md)  
 [Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prodshort](../includes/prodshort.md)] Online](../app-maintain.md)  

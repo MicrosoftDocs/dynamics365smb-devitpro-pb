@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: freddyk
 ---
 
 # Rules and Guidelines for AL Code

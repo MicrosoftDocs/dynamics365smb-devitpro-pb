@@ -2,7 +2,7 @@
 title: "System.IsNull Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.IsNull Method
+> **Version**: _Available from runtime version 2.0._
+
 Gets a value indicating whether a DotNet object has been created or not.
 
 > [!NOTE]
@@ -23,8 +25,8 @@ Gets a value indicating whether a DotNet object has been created or not.
 ```
 Ok :=   System.IsNull(DotNet: DotNet)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *DotNet*  
 &emsp;Type: [DotNet](../dotnet/dotnet-data-type.md)  
@@ -32,9 +34,9 @@ A DotNet expression.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**True** if the DotNet object is NULL, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**True** if the DotNet object is NULL, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
