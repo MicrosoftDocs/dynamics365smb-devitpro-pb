@@ -26,7 +26,7 @@ You can set the `Format` property to a predefined format, or you can build your 
 
 To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* is one of the entries in the Value column of the following table.  
   
-|Value|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  
+|Value|Description|  
 |-----|---------------------------------------|  
 |0|Standard Display Format (the default for all data types)|  
 |1|Standard Display Format 2 (edit)|  
