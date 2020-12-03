@@ -19,7 +19,7 @@ This topic lists properties that apply to the [page object](../devenv-page-objec
 
 ## Page object properties
 
-The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below. This list is sorted alphabetically by property name. For page properties sorted by function on a page, see [Page Properties](devenv-page-properties.md).
+The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below. This list is sorted alphabetically by property name. For page properties sorted by method on a page, see [Page Properties](devenv-page-properties.md).
 
 |Property Name|Available for Page Extension Object|Applies to|
 |-------------|-----------|---------------------|
@@ -126,9 +126,6 @@ The following properties all apply to the page object, only some of these proper
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)||<ul><li>Field control</li></ul>|
 |[Visible Property](devenv-visible-property.md)|X|<ul><li>Group control</li><li>Field control</li><li>Part control</li><li>ActionGroup</li><li>Action</li><li>View</li></ul>|
 |[Width Property](devenv-width-property.md)|X|<ul><li>Field control</li></ul>|
-
-
-
 
 ## See Also
 [Properties](devenv-properties.md)  
