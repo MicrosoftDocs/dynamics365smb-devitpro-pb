@@ -60,6 +60,11 @@ The **AccessByPermission** property values are as described below:
 |D         |Delete      |Specify if Delete permission is required to display the UI element.|
 |X         |Execute     |Specify if Execute permission is required to display the UI element.|
 
+## Syntax
+```AL
+AccessByPermission = tabledata MySetup = I; 
+```
+
 ## Remarks
 
 The property value for TableData can be set with a combination of **Read**, **Insert**, **Modify** and **Delete** permissions. This means, you can set the property value to ``RIMD`` permissions; the value ``X`` is not valid for TableData. 
@@ -68,11 +73,6 @@ For other objects including Table, Page, Query, Report, Codeunit, or Xmlport, it
 
 > [!NOTE]  
 >  If you set multiple permissions, then one or the other applies. 
-
-## Syntax
-```AL
-AccessByPermission = tabledata MySetup = I; 
-```
 
 ## Dependent Property
 
