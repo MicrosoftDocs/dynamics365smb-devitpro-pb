@@ -28,7 +28,7 @@ This rule validates that the dependencies for the version of the extension speci
 
 ### Setting up AppSourceCop to detect breaking changes
 
-For more information on how to setup the AppSourceCop to detect breaking changes, see [AS0003](appsourcecop-as0003-previousversionnotfound.md).
+For more information on how to set up the AppSourceCop to detect breaking changes, see [AS0003](appsourcecop-as0003-previousversionnotfound.md).
 
 ## How to fix this diagnostic?
 
