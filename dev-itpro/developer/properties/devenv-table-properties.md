@@ -61,7 +61,7 @@ The following topic lists properties that apply to the [table object](../devenv-
 |[OptionMembers Property](devenv-optionmembers-property.md)||<ul><li>Option field</li></ul>|
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Table object</li></ul>|
-|[ReplicateData Property](devenv-replicatedata-property.md)|<ul><li>Table object</li></ul>|
+|[ReplicateData Property](devenv-replicatedata-property.md)||<ul><li>Table object</li></ul>|
 |[Scope (Table) Property](devenv-scope-table-property.md)||<ul><li>Table object</li></ul>|
 |[SignDisplacement Property](devenv-signdisplacement-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
 |[SQLDataType Property](devenv-sql-data-type-property.md)||<ul><li>Code field</li><li>OemCode field</li></ul>|
