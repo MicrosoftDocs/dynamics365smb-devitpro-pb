@@ -41,10 +41,6 @@ FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-
-## Applies to  
- Table Fields  
-
 ## Syntax
 
 ```AL

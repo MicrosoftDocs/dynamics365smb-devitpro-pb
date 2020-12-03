@@ -24,13 +24,13 @@ Sets whether imported records automatically replace existing records with the sa
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Property Value 
+ **True** if the records are replaced; otherwise, **false**. The default value is **false**.  
+
 ## Syntax
 ```AL
 AutoReplace = true;
 ```
-  
-## Property Value 
- **True** if the records are replaced; otherwise, **false**. The default value is **false**.  
   
 ## Remarks
  If a record with the same primary key is found in the database, then the record is initialized with the initial value for each field and then populated with the values in the imported record. Any field in the record that is not present in the imported record retains its initial value. For more information about initial values, see [InitValue Property](devenv-initvalue-property.md).  

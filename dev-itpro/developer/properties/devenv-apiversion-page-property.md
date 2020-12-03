@@ -25,7 +25,7 @@ Sets the version(s) of the API endpoint the page is exposed in. The syntax for p
 APIVersion = 'beta', 'v1.0';
 ```
 
->[!NOTE]
+> [!NOTE]  
 > The property **APIVersion** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
 
 
