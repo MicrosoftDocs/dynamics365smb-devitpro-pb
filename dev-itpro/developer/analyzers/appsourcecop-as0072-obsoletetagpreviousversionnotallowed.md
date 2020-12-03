@@ -31,7 +31,7 @@ Obsolete objects which have the same obsolete state as in the baseline are not v
 
 The version specified as `obsoleteTagVersion` can be the same as the current Major.Minor version specified in the `version` of your `app.json`, but it does not have to.
 
-## Setting up AppSourceCop to validate the Obsolete Tag
+## Setting up AppSourceCop to validate the Obsolete tag
 
 ### Enabling the rule using a ruleset
 
@@ -59,7 +59,7 @@ For example, the following ruleset turns the diagnostic for rule AS0072 into an 
 ```
 
 > [!NOTE]  
-> In order to fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
+> In order to fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
 
 ### Setting up the AppSourceCop.json
 
