@@ -40,7 +40,7 @@ OptionCaptionML = <Language ID> = '<optioncaption [,optioncaption]*>'
 
 OptionCaptionML is multilanguage-enabled so it can contain a list of text in different languages. The text that is displayed is selected according to the current language settings of the user. For more information, see [Multilanguage Development](../devenv-multilanguage-development.md).  
   
-<Language ID> is a Windows standard three-letter language ID and `<optioncaption [,optioncaption]*>` is the OptionCaption text(s) for this language. Commas are used to separate entries.  
+`<Language ID>` is a Windows standard three-letter language ID and `<optioncaption [,optioncaption]*>` is the OptionCaption text(s) for this language. Commas are used to separate entries.  
   
 Although you can use OptionCaptionML to limit the number of options displayed to the user, it is recommended that you use [OptionMembers Property](devenv-optionmembers-field-property.md) to do this. You cannot expand the set of options. If you do, a run-time error will occur when the user selects an option that is outside the option set defined for the field or variable.  
   

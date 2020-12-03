@@ -14,6 +14,7 @@ ms.author: solsen
 ---
 
 # Profile Properties
+
 The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
 
 - [ProfileDescription](devenv-profiledescription-property.md)  
@@ -24,6 +25,7 @@ The following topic lists properties that apply to [Profiles](../devenv-profile-
 - [Caption](devenv-caption-property.md)
 
 ## See also
+
 [Codeunit Properties](devenv-codeunit-properties.md)  
 [Page Properties](devenv-page-property-overview.md)  
 [Query Properties](devenv-query-properties.md)  
