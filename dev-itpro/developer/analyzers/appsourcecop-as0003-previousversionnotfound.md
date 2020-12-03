@@ -32,7 +32,7 @@ This rule validates that the version of the extension specified as a baseline fo
 
 In order to set up AppSourceCop to detect breaking changes, the version of the extension used as a baseline must be specified in the AppSourceCop.json file using the `version` property. The version specified is the exact version against which the breaking changes are validated. It is also possible to specify the `name` and the `publisher` of the extension in the AppSourceCop.json file. The `baselinePackageCachePath` allows you to specify the folder that will act as a cache for the baseline package and its dependencies for the AppSourceCop analyzer.
 
-If the `baselinePackageCachePath` is not specified, the baseline and its dependencies are expected to be found in the dependency package cache path. The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. This is sufficient for most scenarios, but `baselinePackageCachePath` provides a higher accuracy has it ensures that the previous version of the extension will be loaded using the right version of its dependencies.
+If the `baselinePackageCachePath` is not specified, the baseline and its dependencies are expected to be found in the dependency package cache path. The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. This is sufficient for most scenarios, but `baselinePackageCachePath` provides a higher accuracy as it ensures that the previous version of the extension will be loaded using the right version of its dependencies.
 
 For example:
 ```json
