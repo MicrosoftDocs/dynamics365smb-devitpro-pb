@@ -23,7 +23,7 @@ The following properties all apply to the page object, only some of these proper
 
 |Property Name|Available for Page Extension Object|Applies to|
 |-------------|-----------|---------------------|
-|[Access Property](devenv-access-property.md)||
+|[Access Property](devenv-access-property.md)||<ul><li>Codeunit</li><li>Query</li><li>Table</li><li>Table Field</li><li>Enum Type</li><li>Interface</li><ul>|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)||<ul><li>Page object</li></ul>|
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)||<ul><li>Page object</li></ul>|
