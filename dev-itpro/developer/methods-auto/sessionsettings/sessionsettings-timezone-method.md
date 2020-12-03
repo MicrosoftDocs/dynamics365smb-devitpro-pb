@@ -1,9 +1,8 @@
 ---
 title: "SessionSettings.TimeZone Method"
-description: Learn how TimeZone method works.
 ms.author: solsen
 ms.custom: na
-ms.date: 12/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

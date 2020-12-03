@@ -2,7 +2,7 @@
 title: "RecordRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ The following methods are available on instances of the RecordRef data type.
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean] [, Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
-|[Reset()](recordref-reset-method.md)|Removes all filters, including any special filters set by the MARKEDONLY method (Record) and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.|
+|[Reset()](recordref-reset-method.md)|Removes all filters, including any special filters set by the MarkedOnly method (Record), changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
 |[Ascending([Boolean])](recordref-ascending-method.md)|Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.|
 |[LockTable([Boolean] [, Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[AddLoadFields([Integer,...])](recordref-addloadfields-method.md)|Specifies additional fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.|
