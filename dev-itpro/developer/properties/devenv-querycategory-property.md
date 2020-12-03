@@ -25,9 +25,6 @@ Used to indicate a given query can be made available as views displayed on certa
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-
-<!-- Source code to be changed to: Used to indicate a given query can be made available as views displayed on certain main entity lists. On queries, the QueryCategory property specifies one or more query categories that the object supports. On pages, QueryCategory specifies the query category that the page supports. -->
-
 ## Applies to  
 
 - Queries
@@ -116,9 +113,3 @@ For the syntax examples above, when page **CustomerSourceTable** is opened in th
 [Properties](devenv-properties.md)   
 [Query Object](../devenv-query-object.md)  
 [Page Object](../devenv-page-object.md)
-
-
-
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
