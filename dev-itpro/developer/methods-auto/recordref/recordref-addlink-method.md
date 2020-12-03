@@ -2,7 +2,7 @@
 title: "RecordRef.AddLink Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.AddLink Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds a link to a record in a table.
 
 
@@ -22,9 +24,9 @@ Adds a link to a record in a table.
 [ID := ]  RecordRef.AddLink(URL: String [, Description: String])
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *URL*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -35,9 +37,9 @@ Optional description of the link.
 
 
 ## Return Value
-*ID*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the URL that you want to add to the record. Every time that you add a link to a page or a table, an entry is created in the Record Link system table. Each entry is given an ID.  
+*ID*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The ID of the URL that you want to add to the record. Every time that you add a link to a page or a table, an entry is created in the Record Link system table. Each entry is given an ID.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

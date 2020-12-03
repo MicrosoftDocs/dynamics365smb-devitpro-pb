@@ -2,7 +2,7 @@
 title: "HttpContent.ReadAs Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpContent.ReadAs Method
+> **Version**: _Available from runtime version 1.0._
+
 Reads the content into the provided text.
 
 
@@ -22,9 +24,9 @@ Reads the content into the provided text.
 [Ok := ]  HttpContent.ReadAs(var InStream: InStream)
 ```
 ## Parameters
-*HttpContent*  
-&emsp;Type: [HttpContent](httpcontent-data-type.md)  
-An instance of the [HttpContent](httpcontent-data-type.md) data type.  
+*HttpContent*
+&emsp;Type: [HttpContent](httpcontent-data-type.md)
+An instance of the [HttpContent](httpcontent-data-type.md) data type.
 
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -32,9 +34,9 @@ The InStream variable that will contain the HTTP content stream.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
