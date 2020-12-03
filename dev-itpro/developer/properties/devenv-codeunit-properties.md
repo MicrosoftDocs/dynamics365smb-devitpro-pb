@@ -11,7 +11,8 @@ author: SusanneWindfeldPedersen
 ---
 
 # Codeunit Properties 
-This topic lists properties that apply to the Codeunit object, variables, text constants, methods, parameters, and return values. 
+
+This topic lists properties that apply to the Codeunit object. 
 
 |Property Name|Applies to|
 |-------------|-----------|  
@@ -28,9 +29,8 @@ This topic lists properties that apply to the Codeunit object, variables, text c
 |[TableNo Property](devenv-tableno-property.md)|<ul><li>Codeunit Object</li></ul>|
 |[TestIsolation Property](devenv-testisolation-property.md)|<ul><li>Codeunit Object</li></ul>|
 
-
-
 ## See Also
+
 [Developing Extensions](../devenv-dev-overview.md)  
 [AL Development Environment](../devenv-reference-overview.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  
