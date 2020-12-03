@@ -2,7 +2,7 @@
 title: "RequestPage.Editable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestPage.Editable Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the default editability of the page.
 
 
@@ -21,12 +23,12 @@ Gets or sets the default editability of the page.
 ```
 [Editable := ]  RequestPage.Editable([NewEditable: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*RequestPage*  
-&emsp;Type: [RequestPage](requestpage-data-type.md)  
-An instance of the [RequestPage](requestpage-data-type.md) data type.  
+*RequestPage*
+&emsp;Type: [RequestPage](requestpage-data-type.md)
+An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 *NewEditable*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -34,9 +36,9 @@ An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 
 ## Return Value
-*Editable*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*Editable*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

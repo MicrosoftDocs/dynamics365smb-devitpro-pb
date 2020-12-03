@@ -2,7 +2,7 @@
 title: "System.NormalDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.NormalDate Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the regular date (instead of the closing date) for the argument Date.
 
 
@@ -21,8 +23,8 @@ Gets the regular date (instead of the closing date) for the argument Date.
 ```
 NormalDate :=   System.NormalDate(Date: Date)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
@@ -30,9 +32,9 @@ The input date. You can enter a closing date or a normal date. A run-time error 
 
 
 ## Return Value
-*NormalDate*  
-&emsp;Type: [Date](../date/date-data-type.md)  
-  
+*NormalDate*
+&emsp;Type: [Date](../date/date-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

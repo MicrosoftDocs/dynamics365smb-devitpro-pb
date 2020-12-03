@@ -2,7 +2,7 @@
 title: "Enum.Ordinals Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Enum.Ordinals Method
+> **Version**: _Available from runtime version 4.0._
+
 Gets the ordinal numbers/ID's for the values
 
 
@@ -24,9 +26,9 @@ List of ordinals :=   Enum.Ordinals()
 
 
 ## Return Value
-*List of ordinals*  
-&emsp;Type: [List of [Integer]](../list/list-data-type.md)  
-  
+*List of ordinals*
+&emsp;Type: [List of [Integer]](../list/list-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

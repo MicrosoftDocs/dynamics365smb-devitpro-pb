@@ -58,7 +58,7 @@ Occurs when an extension secret was successfully initialized.
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0014**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -95,7 +95,7 @@ Occurs when a key vault failed to be initialized.
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0015**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -133,7 +133,7 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0016**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -168,7 +168,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0017**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|

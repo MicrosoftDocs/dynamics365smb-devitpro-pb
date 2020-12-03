@@ -2,7 +2,7 @@
 title: "Notification.Scope Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification.Scope Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies the context in which the notification appears in the client.
 
 
@@ -21,12 +23,12 @@ Specifies the context in which the notification appears in the client.
 ```
 [Scope := ]  Notification.Scope([Scope: NotificationScope])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*Notification*  
-&emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.  
+*Notification*
+&emsp;Type: [Notification](notification-data-type.md)
+An instance of the [Notification](notification-data-type.md) data type.
 
 *Scope*  
 &emsp;Type: [NotificationScope](../notificationscope/notificationscope-option.md)  
@@ -34,9 +36,9 @@ The scope in which the notification appears in the client
 
 
 ## Return Value
-*Scope*  
-&emsp;Type: [NotificationScope](../notificationscope/notificationscope-option.md)  
-The scope of the current notification.  
+*Scope*
+&emsp;Type: [NotificationScope](../notificationscope/notificationscope-option.md)
+The scope of the current notification.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -83,4 +85,4 @@ MyNotification.GETDATA('ID');''
 ## See Also
 [Notification Data Type](notification-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)''

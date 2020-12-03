@@ -2,7 +2,7 @@
 title: "Record.Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.Find Method
+> **Version**: _Available from runtime version 1.0._
+
 Finds a record in a table that is based on the values stored in keys.
 
 
@@ -22,9 +24,9 @@ Finds a record in a table that is based on the values stored in keys.
 [Ok := ]  Record.Find([Which: String])
 ```
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *Which*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,9 +41,9 @@ If this parameter contains '=', '\>' or '\<', then you must assign value to all 
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

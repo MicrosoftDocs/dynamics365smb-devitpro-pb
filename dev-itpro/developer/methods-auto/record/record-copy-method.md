@@ -2,7 +2,7 @@
 title: "Record.Copy Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.Copy Method
+> **Version**: _Available from runtime version 1.0._
+
 Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.
 
 
@@ -22,9 +24,9 @@ Copies a specified record's filters, views, automatically calculated FlowFields,
  Record.Copy(var FromRecord: Record [, ShareTable: Boolean])
 ```
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *FromRecord*  
 &emsp;Type: [Record](record-data-type.md)  

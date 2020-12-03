@@ -2,7 +2,7 @@
 title: "Report Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Is used to display, print, or process information from a database.
 
 
@@ -76,6 +78,7 @@ The following methods are available on instances of the Report data type.
 |[Language([Integer])](reportinstance-language-method.md)|Gets or sets the current language setting for the report.|
 |[ObjectId([Boolean])](reportinstance-objectid-method.md)|Gets or sets the name or number of the report.|
 |[PaperSource(Integer [, Integer])](reportinstance-papersource-method.md)|Gets or sets the paper source used for the current page or a specified page.|
+|[IsReadOnly()](reportinstance-isreadonly-method.md)|Gets if the current report's data access intent is readonly.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

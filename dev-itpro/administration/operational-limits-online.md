@@ -55,7 +55,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Search timeout|The time (in seconds) that a search operation on lists in the client continues before it's stopped. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**|10 seconds|
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
-|SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 hours|
+|SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 minutes|
 |Long running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
 
 <!--

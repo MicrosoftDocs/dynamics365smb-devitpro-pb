@@ -2,7 +2,7 @@
 title: "JsonObject.Values Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonObject.Values Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a set of values of the JsonObject.
 
 
@@ -21,18 +23,18 @@ Gets a set of values of the JsonObject.
 ```
 Values :=   JsonObject.Values()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*JsonObject*  
-&emsp;Type: [JsonObject](jsonobject-data-type.md)  
-An instance of the [JsonObject](jsonobject-data-type.md) data type.  
+*JsonObject*
+&emsp;Type: [JsonObject](jsonobject-data-type.md)
+An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 ## Return Value
-*Values*  
-&emsp;Type: [List of [JsonToken]](../list/list-data-type.md)  
-  
+*Values*
+&emsp;Type: [List of [JsonToken]](../list/list-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

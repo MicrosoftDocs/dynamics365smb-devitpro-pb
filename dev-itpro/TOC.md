@@ -8,21 +8,17 @@
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
-<!--#### What the partner's responsibilities are -->
-### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
+### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
+### [Get Started with Building Apps](developer/readiness/get-started.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
+<!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-<!--### Get started with building apps
-#### [Build your business on Business Central](developer/readiness/readiness-add-on-apps-getting-you-started.md)
-#### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
-#### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
-### Embed Apps
+### ISV Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### Deployment
@@ -148,6 +144,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
 ### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
 ### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
 ### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
@@ -176,9 +173,9 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### Ready to Go
-#### [Get Onboarded as a partner](developer/readiness/readiness-ready-to-go.md)
+#### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
+#### [Get Started with Building Apps](developer/readiness/get-started.md)
 #### [The Business Central Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
@@ -241,6 +238,7 @@
 #### [Getting Started with Modules](developer/devenv-getting-started.md)
 #### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
 #### [Create a New Module](developer/devenv-new-module.md)
+#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
 #### [Change a Module](developer/devenv-change-a-module.md)
 ## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
@@ -701,16 +699,16 @@
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
-## Integrating with Common Data Service
-### [Custom Integration with Common Data Service](administration/administration-custom-cds-integration.md)
+## Integrating with Microsoft Dataverse
+### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
-### [Entity Modeling](powerplatform/powerplat-entity-modeling.md)
-### [Application Lifecycle Management for Solutions that use Virtual Entities](powerplatform/powerplat-app-lifecycle-management.md)
-### [Business Central and Common Data Service Admin Reference](powerplatform/powerplat-admin-reference.md)
+### [Table Modeling](powerplatform/powerplat-entity-modeling.md)
+### [Application Lifecycle Management for Solutions that use Virtual Tables](powerplatform/powerplat-app-lifecycle-management.md)
+### [Business Central and Microsoft Dataverse Admin Reference](powerplatform/powerplat-admin-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
 <!-- Microsoft Teams -->
@@ -925,6 +923,8 @@
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
+### [Some Known Issues](upgrade/known-issues.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
+
 <!-- end upgrade -->
 <!--on-prem ends-->
