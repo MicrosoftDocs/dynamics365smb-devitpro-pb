@@ -44,7 +44,7 @@ Unbound = true;
 If you design an XMLport that is used to import or export data in different formats where the number of columns can vary, you can use this property to handle the number of columns.  
   
 > [!WARNING]  
-> If this property is set to **true**, then your code for handling exports must specify when to break to the next element by using the **BREAKUNBOUND** method.  
+> If this property is set to **true**, then your code for handling exports must specify when to break to the next element by using the **BreakUnbound** method.  
 >  
 > During an import, the XMLport will automatically move on to the next record when the code reaches a record separator.  
   

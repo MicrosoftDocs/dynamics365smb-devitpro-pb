@@ -40,7 +40,7 @@ UseRequestPage = false;
 
 If `UseRequestPage` is **false**, then a request page is not shown. The user cannot choose a sort order or set any filters. To run an XMLport without using a Request page, this property must be set to **false**.
   
-You can override the setting of the `UseRequestPage` property at runtime by setting the *ReqWindow* parameter of the [RUN (Report) Method](../methods-auto/report/report-run-method.md), [RUNMODAL (Report) Method](../methods-auto/report/report-runmodal-method.md), or [RUN (XMLport) Method](../methods-auto/xmlport/xmlport-run-method.md).
+You can override the setting of the `UseRequestPage` property at runtime by setting the *ReqWindow* parameter of the [Run (Report) Method](../methods-auto/report/report-run-method.md), [RunModal (Report) Method](../methods-auto/report/report-runmodal-method.md), or [Run (XMLport) Method](../methods-auto/xmlport/xmlport-run-method.md).
 
 ## See Also
 

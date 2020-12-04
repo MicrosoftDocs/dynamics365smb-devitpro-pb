@@ -43,7 +43,7 @@ TestIsolation = Codeunit;
 We recommend that you design tests to be independent of each other. Tests might read from and write to the same database, which means that tests can interact with each other. If tests interact, then you may experience incorrect test results. To eliminate test interactions, use the **TestIsolation** property to roll back changes to the database after each test method or after each test codeunit.  
   
 > [!NOTE]  
-> If you specify that you want to roll back database changes, then all database changes are rolled back, including changes that were explicitly committed to the database during the test by using the [COMMIT Method](../methods-auto/database/database-commit-method.md).  
+> If you specify that you want to roll back database changes, then all database changes are rolled back, including changes that were explicitly committed to the database during the test by using the [Commit Method](../methods-auto/database/database-commit-method.md).  
 
 ## See Also
 

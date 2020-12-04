@@ -33,6 +33,6 @@ Version = '4.0.0.0';
 
 ## See Also  
 
-[Properties](devenv-properties.md)       
-[Control Add-In Object](../devenv-control-addin-object.md)   
+[Properties](devenv-properties.md)  
+[Control Add-In Object](../devenv-control-addin-object.md)  
  

@@ -24,10 +24,10 @@ Sets whether the first letter in each word the user types is capitalized.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-
 > [!IMPORTANT]  
->  This property has been deprecated. Setting the property has no effect on the client. 
+> This property has been deprecated. Setting the property has no effect on the client. 
 
 ## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
