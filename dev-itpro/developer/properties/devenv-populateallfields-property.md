@@ -43,7 +43,3 @@ Values are inserted in those fields where a currently active filter expression e
 ## See Also  
 
 [Properties](devenv-properties.md)
-
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  

@@ -32,6 +32,7 @@ In the sections below, properties are sorted according to the object(s) they app
 - [Profile Properties](devenv-profile-properties.md)
 - [Integrating with Dynamics 365 for Sales](../devenv-integrating-dynamics-365-for-sales-extension-development.md)
 
-## See Also  
+## See Also
+
 [Methods](../methods/devenv-al-method-reference.md)  
 [Triggers](../triggers/devenv-triggers.md)

@@ -40,5 +40,4 @@ ShowCaption = false;
 ## See Also  
 
 [Properties](devenv-properties.md)   
-[Caption Property](devenv-caption-property.md)    
-
+[Caption Property](devenv-caption-property.md)  

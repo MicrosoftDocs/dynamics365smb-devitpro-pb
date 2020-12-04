@@ -45,5 +45,4 @@ Field values in a database table can be negative numbers, as well as positive. F
 ## See Also  
 
 [Properties](devenv-properties.md)   
-[AL Data Types](../datatypes/devenv-al-data-types.md)   
- 
+[AL Data Types](../datatypes/devenv-al-data-types.md)  

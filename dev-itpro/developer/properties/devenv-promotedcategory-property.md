@@ -81,7 +81,3 @@ Promoted actions appear in the action bar on a page. You promote an action by se
 [Properties](devenv-properties.md)
 [Promoted Property](devenv-promoted-property.md)  
 [Actions Overview](../devenv-actions-overview.md)  
-
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
