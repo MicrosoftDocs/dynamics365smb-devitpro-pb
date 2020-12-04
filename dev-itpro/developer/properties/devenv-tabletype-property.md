@@ -55,7 +55,6 @@ Tables that are marked as **CDS** or **ExternalSQL** are considered external tab
 
 Marking a table as **Temporary** is the same as:
 
-- Setting all Record variables in AL code to "Temporary". See [Temporary Property](devenv-temporary-property.md).
 - Setting "SourceTableTemporary" on all pages that use the table. See [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md).  
 
 Temporary tables are not synchronized with the SQL database, so they do not follow the same rules about making destructive changes.
@@ -68,4 +67,3 @@ For more information, see [Temporary Tables](../devenv-temporary-tables.md).
 
 [Properties](devenv-properties.md)  
 [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)  
-[Temporary Property](devenv-temporary-property.md)  
