@@ -24,11 +24,25 @@ Specify the multiplicity of the part.
 ## Property Value
 
 |Value|Description|
-|-----------|---------------------------------------|
+|-----------|--------------------|
 |**ZeroOrOne**|Zero or one entity|
 |**Many**|Any number of entities.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```al
+var
+    Multiplicity: Integer;
+begin
+    // Setup Reservations.
+    // If negative scenarios, do not create available supply.
+    if FilterOnLocation or FilterOnVariant or (DueDateDelay <> 0) then
+        Multiplicity := 0
+    else
+        Multiplicity := 1;
+```
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -34,7 +34,7 @@ Specifies the fields that are linked between two tables using the LinkTable Prop
 ## Syntax
 
 ```AL
-LinkFields = <field>=FIELD(<reference field>)   
+LinkFields = <field>=FIELD(<reference field>)
 ```  
 
 ## Remarks  
@@ -43,7 +43,7 @@ This property works in combination with the [LinkTable Property](devenv-linktabl
   
 The property sets a filter on the table that is the data source for the XML item. The filter selects only those records that contain the same **<field>** value in source table as the **<reference field>** value from the table specified in [LinkTable Property](devenv-linktable-property.md).  
   
-For example, you have defined two XML items—one based on the Customer table that contains a list of customers and one based on the Sales Header table that contains a record of each sales order that has been made.  
+For example, you have defined two XML items; one based on the Customer table that contains a list of customers and one based on the Sales Header table that contains a record of each sales order that has been made.  
   
 In the Customer table, the primary key is the customer number and is stored in the No. field. In the Sales Header table that contains the sales data, each record contains this customer number as a foreign key in the field called Sell-to Customer No.  
   
