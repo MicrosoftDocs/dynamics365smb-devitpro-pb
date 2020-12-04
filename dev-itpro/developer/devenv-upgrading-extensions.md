@@ -1,9 +1,9 @@
 ---
 author: jswymer
-title: "Upgrading an Extension V2 to a new version"
+title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ This article provides information about how to make a newer version of extension
 
 ## Writing upgrade code
 
-When you develop a new extension version, you must consider the data from the previous version. You' have to determine the modifications that must be made to the data to make it compatible with the current version. For example, maybe the new version adds a new field that needs default values set for existing records. Or, the new version adds new tables that must be linked to existing records. To address this type of data handling, you must write upgrade code for the extension version. If there are no data changes between the extension versions, you don't need to write upgrade code. All data that isn't modified by upgrade code will automatically be available when the process completes.
+When you develop a new extension version, you must consider the data from the previous version. You have to determine the modifications that must be made to the data to make it compatible with the current version. For example, maybe the new version adds a new field that needs default values set for existing records. Or, the new version adds new tables that must be linked to existing records. To address this type of data handling, you must write upgrade code for the extension version. If there are no data changes between the extension versions, you don't need to write upgrade code. All data that isn't modified by upgrade code will automatically be available when the process completes.
 
 You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
 
