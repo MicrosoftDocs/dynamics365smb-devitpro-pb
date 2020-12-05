@@ -99,7 +99,7 @@ Please include app + all library apps in both previousApps and apps and please i
 > 
 > If you are having issues with Business Central on Docker, you might be able to find help here: https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker.
 > 
-> You can use https://aka.ms/getbc?artifacturl=%2f%2f%2fus%2fcurrent to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
+> You can use https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
 
 > [!NOTE]
 > Microsoft recommends that all partners setup DevOps processes to ensure that this validation process happend automatically and regularly.
