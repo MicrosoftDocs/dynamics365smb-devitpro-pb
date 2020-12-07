@@ -17,11 +17,11 @@ ms.author: solsen
 
 The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
 
-|Property Name|
-|-------------|
-|[Filters](devenv-filters-property.md) |
-|[OrderBy](devenv-orderby-property.md) |
-|[SharedLayout](devenv-sharedlayout-property.md)|
+|Property Name| Object |
+|-------------|--------|
+|[Filters](devenv-filters-property.md) | Views |
+|[OrderBy](devenv-orderby-property.md) | Views |
+|[SharedLayout](devenv-sharedlayout-property.md)| Views |
 
 ## See also
 

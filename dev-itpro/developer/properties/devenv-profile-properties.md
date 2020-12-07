@@ -17,12 +17,14 @@ ms.author: solsen
 
 The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
 
-- [ProfileDescription](devenv-profiledescription-property.md)  
-- [Enabled](devenv-enabled-profile-property.md)  
-- [Promoted](devenv-promoted-profile-property.md)
-- [RoleCenter](devenv-rolecenter-property.md)
-- [Customizations](devenv-customizations-property.md)
-- [Caption](devenv-caption-property.md)
+|Property Name| Object |
+|-------------|--------|
+|[ProfileDescription](devenv-profiledescription-property.md)  | Profiles |
+|[Enabled](devenv-enabled-profile-property.md)  | Profiles |
+|[Promoted](devenv-promoted-profile-property.md) | Profiles |
+|[RoleCenter](devenv-rolecenter-property.md) | Profiles |
+|[Customizations](devenv-customizations-property.md) | Profiles |
+|[Caption](devenv-caption-property.md) | Profiles |
 
 ## See also
 
