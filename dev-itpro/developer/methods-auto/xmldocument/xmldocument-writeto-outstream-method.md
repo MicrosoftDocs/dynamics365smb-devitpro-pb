@@ -2,7 +2,7 @@
 title: "XmlDocument.WriteTo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/07/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,8 @@ The OutStream to which you want to save the serialized representation of the nod
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Example 
+## Example
+
 The following example illustrates how to create a Stream from a Blob and write to a Stream from an XML document.
 
 ```
@@ -74,13 +75,13 @@ pageextension 50100 CustomerListExt extends "Customer List"
         xmlDoc.Add(xmlElem);
 
         // Create an outStream from the Blob, notice the encoding.
-        TempBlob.Blob.CreateOutStream(outStr, TextEncoding::UTF8);
+        TempBlob.CreateOutStream(outStr, TextEncoding::UTF8);
 
         // Write the contents of the doc to the stream
         xmlDoc.WriteTo(outStr);
 
          // From the same Blob, that now contains the XML document, create an inStr
-        TempBlob.Blob.CreateInStream(inStr, TextEncoding::UTF8);
+        TempBlob.CreateInStream(inStr, TextEncoding::UTF8);
 
         // Save the data of the InStream as a file.
         File.DownloadFromStream(inStr, 'Export', '', '', fileName);
