@@ -1,7 +1,8 @@
 ---
 title: "RequestFilterFields Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,16 +10,22 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
- 
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestFilterFields Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies which fields are automatically included on the tab of the request page that is related to a report's data item or an XMLport's table element. The user can set filters on these fields.  
+Sets which fields are automatically included on the tab of the request page that is related to this data item. The user can set filters on these fields.
 
-## Applies to  
-  
-- Data items on reports  
-- Table elements on XMLports
-  
+## Applies to
+-   Xml Port Table Element
+-   Report Data Item
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Value
 
 A comma-separated list of field names.  

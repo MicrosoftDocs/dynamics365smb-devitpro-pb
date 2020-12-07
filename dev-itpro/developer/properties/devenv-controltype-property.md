@@ -12,19 +12,18 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ControlType Property
+
 Use this property when you select a control type.  
   
 ## Applies to  
- This property displays the following control types for you to choose from:  
+
+This property displays the following control types for you to choose from:  
   
--   Container  
+- Container  
+- Group  
+- Field  
   
--   Group  
-  
--   Field  
-  
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

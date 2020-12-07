@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIGroup Property 
+> **Version**: _Available from runtime version 1.0._
+
 The APIGroup property is applicable to the following types: 
 - [APIGroup Property (Page)](devenv-APIGroup-page-property.md)   
 - [APIGroup Property (Query)](devenv-APIGroup-query-property.md)   

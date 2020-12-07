@@ -1,7 +1,8 @@
 ---
 title: "SaveValues Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,16 +10,22 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SaveValues Property
-Sets whether user-specific control values are saved for this page.  
-  
-## Applies to  
-  
-- Pages
-- Report request page  
-- XMLport request page
-  
+> **Version**: _Available from runtime version 1.0._
+
+Sets whether user-specific control values are saved for this page.
+
+## Applies to
+-   Page
+-   Request Page
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Value  
 
 **True** if user-defined control values are saved; otherwise, **false**. The default is **false**.  
@@ -32,5 +39,5 @@ The **SaveValues** property enables the *Saved Settings* feature, that is, to sa
 ## See Also
 
 [Properties](devenv-properties.md)  
-[Manage Saved Settings for Reports and Batch jobs](https://docs.microsoft.com/dynamics365/business-central/reports-saving-reusing-settings)  
-[Using Saved Settings](https://docs.microsoft.com/dynamics365/business-central/ui-work-report#SavedSettings)
+[Manage Saved Settings for Reports and Batch jobs](/business-central/reports-saving-reusing-settings)  
+[Using Saved Settings](/business-central/ui-work-report#SavedSettings)

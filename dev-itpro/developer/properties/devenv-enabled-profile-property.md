@@ -12,6 +12,7 @@ ms.author: solsen
 ---
 
 # Enabled (Profile) Property
+> **Version**: _Available from runtime version 1.0._
 
 Specifies whether the profile can be used by users or not.
 

@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Promoted (Profile) Property
+> **Version**: _Available from runtime version 1.0._
 
 For profiles the **Promoted** property specifies whether or not the profile is available in the **Role Explorer** to the user. **Promoted** can also be set on Page Actions, see [Promoted (Actions) Property](devenv-promoted-action-property.md).
   

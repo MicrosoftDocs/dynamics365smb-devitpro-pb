@@ -14,13 +14,17 @@ ms.author: solsen
 ---
 
 # View Properties
+
 The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
 
-- [Filters](devenv-filters-property.md)  
-- [OrderBy](devenv-orderby-property.md)
-- [SharedLayout](devenv-sharedlayout-property.md)
+|Property Name|
+|-------------|
+|[Filters](devenv-filters-property.md) |
+|[OrderBy](devenv-orderby-property.md) |
+|[SharedLayout](devenv-sharedlayout-property.md)|
 
 ## See also
+
 [Codeunit Properties](devenv-codeunit-properties.md)  
 [Page Properties](devenv-page-property-overview.md)  
 [Query Properties](devenv-query-properties.md)  
