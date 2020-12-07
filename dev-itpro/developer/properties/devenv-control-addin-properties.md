@@ -16,18 +16,18 @@ ms.author: solsen
 
 The following topic lists properties that apply to the [Control Add-In Object](../devenv-control-addin-object.md).
 
-|Property Name|
-|-------------|
-|[VerticalShrink](devenv-verticalshrink-property.md)|
-|[HorizontalShrink](devenv-horizontalshrink-property.md)|
-|[MinimumHeight](devenv-minimumheight-property.md)|
-|[MinimumWidth](devenv-minimumwidth-property.md)|
-|[MaximumHeight](devenv-maximumheight-property.md)|
-|[MaximumWidth](devenv-maximumwidth-property.md)|
-|[VerticalStretch](devenv-verticalstretch-property.md)|
-|[HorizontalStretch](devenv-horizontalstretch-property.md)|
-|[RequestedHeight](devenv-requestedheight-property.md)|
-|[RequestedWidth](devenv-requestedwidth-property.md)|
+|Property Name| Object |
+|-------------|--------|
+|[VerticalShrink](devenv-verticalshrink-property.md)| Control add-in |
+|[HorizontalShrink](devenv-horizontalshrink-property.md)| Control add-in |
+|[MinimumHeight](devenv-minimumheight-property.md)| Control add-in |
+|[MinimumWidth](devenv-minimumwidth-property.md)| Control add-in |
+|[MaximumHeight](devenv-maximumheight-property.md)| Control add-in |
+|[MaximumWidth](devenv-maximumwidth-property.md)| Control add-in |
+|[VerticalStretch](devenv-verticalstretch-property.md)| Control add-in |
+|[HorizontalStretch](devenv-horizontalstretch-property.md)| Control add-in |
+|[RequestedHeight](devenv-requestedheight-property.md)| Control add-in |
+|[RequestedWidth](devenv-requestedwidth-property.md)| Control add-in |
 
 ## See also
 
