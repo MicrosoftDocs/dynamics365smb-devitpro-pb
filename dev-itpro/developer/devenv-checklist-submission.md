@@ -72,7 +72,7 @@ The submitted apps will be extracted and investigated following this list:
 > [!Important]
 > Microsoft recommends that all partners are performing the same checks as described above before submitting apps for validation to maximize chances of validation success.
 
-## Running Technical validation yourself
+## Running technical validation yourself
 
 With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps will pass validation or not:
 
@@ -87,9 +87,9 @@ With the latest version of BcContainerHelper, you can run a single command, whic
         -supportedCountries @( "supported countries (f.eks. us,ca)" )
     $validationResults | Write-Host -ForegroundColor Red
 
-All array paramaters can also be specified as a comma separated string.
+All array paramaters can also be specified as a comma-separated string.
 
-Please include app + all library apps in both previousApps and apps and please include all countries on which you want to validate.
+Please include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
 
 > [!NOTE]
 > The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
@@ -102,9 +102,9 @@ Please include app + all library apps in both previousApps and apps and please i
 > You can use https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
 
 > [!NOTE]
-> Microsoft recommends that all partners setup DevOps processes to ensure that this validation process happend automatically and regularly.
+> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happend automatically and regularly.
 >
-> You can find resources for how to setup a build pipeline, which performs all these steps here: https://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
+> You can find resources for how to set up a build pipeline, which performs all these steps here: https://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
 > -	https://dev.azure.com/businesscentralapps/HelloWorld.AppSource (for Azure DevOps)
 > -	https://github.com/BusinessCentralApps/HelloWorld.AppSource (for GitHub Actions)
 
@@ -114,9 +114,9 @@ The primary responsibility of the manual validation is to ensure that the apps a
 
 Manual validation is not done on all submissions. They will be done as sample tests.
 
-For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. Rapidstart packages needed for the manual test is installed.
+For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. Rapidstart packages needed for the manual test are installed.
 
-The manual test validation document is executed manually and if the document doesn’t match the app functionality the submission is rejected.
+The manual test validation document is run manually and if the document doesn’t match the app functionality the submission is rejected.
 
 > [!Important]
 > Microsoft recommends that all partners are performing the manual validation as the last check before submitting for validation.
