@@ -24,7 +24,7 @@ Specifies the maximum width that the control add-in can be stretched to. This se
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-# Value Type 
+## Value Type 
   
 - Integer 
 

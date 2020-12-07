@@ -60,4 +60,4 @@ You can set the field separator in AL code so that the XMLport can import and ex
 ## See Also  
 
 [Properties](devenv-properties.md)   
-[Format Property (XMLports)](devenv-format-xmlports-property.md)
+[Format Property (XMLports)](devenv-format-property.md)

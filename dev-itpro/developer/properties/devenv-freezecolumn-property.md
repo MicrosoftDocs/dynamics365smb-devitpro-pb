@@ -34,4 +34,3 @@ FreezeColumn = GroupCompanyDisplayName;
 
 [Properties](devenv-properties.md)  
 [Page object](../devenv-page-object.md)  
-[FreezeColumnID Property](devenv-freezecolumnid-property.md)

@@ -70,6 +70,6 @@ For more information about formatting AL data types, see [Format Property](deven
   
 ## See Also  
 
-[Format Property (XMLports)](devenv-format-xmlports-property.md)   
+[Format Property (XMLports)](devenv-format-property.md)   
 [Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)   
 [Temporary Property (XMLports)](devenv-temporary-xmlports-property.md)

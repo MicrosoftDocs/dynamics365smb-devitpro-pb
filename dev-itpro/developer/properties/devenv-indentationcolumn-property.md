@@ -24,7 +24,7 @@ Sets the name of the hidden column that controls row indentation in a List page.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-# Syntax
+## Syntax
 
 ```AL
 IndentationColumn = IntegerFieldName;

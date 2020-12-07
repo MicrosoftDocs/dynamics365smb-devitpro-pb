@@ -78,5 +78,5 @@ The code example is based on XMLport 1220 in the [!INCLUDE[demolong](../includes
 ## See Also  
 
 [Properties](devenv-properties.md)   
-[Format Property \(XMLports\)](devenv-format-xmlports-property.md)   
+[Format Property \(XMLports\)](devenv-format-property.md)   
 [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md)

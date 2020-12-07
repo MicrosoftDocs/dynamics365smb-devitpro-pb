@@ -60,7 +60,7 @@ The following properties all apply to the page object, only some of these proper
 |[EntitySetName Property](devenv-entitysetname-property.md)||<ul><li>Page object</li><li>Part control</li></ul>|
 |[ExtendedDataType Property](devenv-Extendeddatatype-property.md)||<ul><li>Field control</li></ul>|
 |[Extensible Property](devenv-extensible-property.md)||<ul><li>Page object</li></ul>|
-|[FreezeColumn Property](devenv-freezecolumnid-property.md)|X|<ul><li>Group control</li></ul>|
+|[FreezeColumn Property](devenv-freezecolumn-property.md)|X|<ul><li>Group control</li></ul>|
 |[GridLayout Property](devenv-gridlayout-property.md)||<ul><li>Group control</li></ul>|
 |[Gesture Property](devenv-gesture-property.md)||<ul><li>Action</li></ul>|
 |[HideValue Property](devenv-hidevalue-property.md)|X|<ul><li>Field control</li></ul>|
@@ -79,7 +79,7 @@ The following properties all apply to the page object, only some of these proper
 |[MinValue Property](devenv-minvalue-property.md)||<ul><li>Field control</li></ul>|
 |[MaxValue Property](devenv-maxvalue-property.md)||<ul><li>Field control</li></ul>|
 |[MultiLine Property](devenv-multiline-property.md)||<ul><li>Field control</li></ul>|
-|[NavigationPageId Property](devenv-navigationpagedd-property.md)||<ul><li>Field control</li></ul>|
+|[NavigationPageId Property](devenv-navigationpageid-property.md)||<ul><li>Field control</li></ul>|
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>Field control</li></ul>|
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Field control</li></ul>|
 |[ObsoleteState Property](devenv-obsoletestate-property.md)||<ul><li>Page object</li><li>Action</li><li>Action area</li><li>Action group</li><li>Action separator</li><li>Area</li><li>Chart part</li><li>Field control</li><li>Group</li><li>Label</li><li>Part</li><li>System part</li><ul>|
