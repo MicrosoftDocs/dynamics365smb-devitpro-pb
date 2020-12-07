@@ -1,25 +1,30 @@
 ---
 title: "TestTableRelation Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d4b37c19-bcb3-49d2-868d-126be1d383be
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestTableRelation Property
+> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
 
-Sets whether to include this field when evaluating field relations between primary and secondary indexes.  
-  
-## Applies to  
+Sets whether to include this field when evaluating field relations between primary and secondary indexes.
 
-- Fields  
-  
+## Applies to
+-   Table Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Value  
 
 **True** if you want to test the table relationship for this field; otherwise, **false**. The default is **true**.  

@@ -36,7 +36,7 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Include the proper upgrade code allowing your app to successfully upgrade from version to version.|[Upgrading Extensions](devenv-upgrading-extensions.md)|
 |Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
 |You are required to prefix or suffix the **Name** of your fields and objects. This eliminates collision between apps.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
-|You are required to include a Visual Studio Code test package with your extension. Ensure that you include as much code coverage as you can.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
+|We strongly recommend you are using automated testing, using the AL Test Toolkit. You are not required to include the test package with your extension.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
 |DataClassification is required for fields of all tables/table extensions. Property must be set to other than `ToBeClassified`.|[Classifying Data](devenv-classifying-data.md)|
 |You must use the Profile object to add profiles instead of inserting them into the **Profiles** table.|[Profile Object](devenv-profile-object.md)|
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
@@ -69,10 +69,42 @@ The submitted apps will be extracted and investigated following this list:
    - A simple connection test is run; opening a role center and check simple actions and pages. If the connection test fails, **the submission investigated and potentially rejected.**
 7. If all country validations succeed and no errors are found then **the submission is accepted.**
 
-> [!Important]  
+> [!Important]
 > Microsoft recommends that all partners are performing the same checks as described above before submitting apps for validation to maximize chances of validation success.
+
+## Running technical validation yourself
+
+With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps will pass validation or not:
+
+    $validationResults = Run-AlValidation `
+        -licenseFile "path/url to license file" `
+        -validateCurrent `
+        -installApps @( "path/url to your foreign dependencies, apps which will not be part of the validation (or blank if this is the first)" ) `
+        -previousApps @( "path/url to your previous version of the .app files (or blank if this is the first)" ) `
+        -apps @( "path/url to the new version of the .app files" ) `
+        -countries @( "countries you want to validate against (f.ex. us,ca)" ) `
+        -affixes @( "affixes you own (f.ex. fab,con)" ) `
+        -supportedCountries @( "supported countries (f.eks. us,ca)" )
+    $validationResults | Write-Host -ForegroundColor Red
+
+All array paramaters can also be specified as a comma-separated string.
+
+Please include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
+
+> [!NOTE]
+> The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
+
+> [!Important]
+> The Computer on which you run this command must have Docker and the latest BcContainerHelper PowerShell module installed and be able to run Business Central on Docker.
 > 
-> You can find resources for how to setup a build pipeline, which performs all these steps here: https://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
+> If you are having issues with Business Central on Docker, you might be able to find help here: https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker.
+> 
+> You can use https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
+
+> [!NOTE]
+> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happend automatically and regularly.
+>
+> You can find resources for how to set up a build pipeline, which performs all these steps here: https://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
 > -	https://dev.azure.com/businesscentralapps/HelloWorld.AppSource (for Azure DevOps)
 > -	https://github.com/BusinessCentralApps/HelloWorld.AppSource (for GitHub Actions)
 
@@ -82,11 +114,11 @@ The primary responsibility of the manual validation is to ensure that the apps a
 
 Manual validation is not done on all submissions. They will be done as sample tests.
 
-For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. Rapidstart packages needed for the manual test is installed.
+For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. Rapidstart packages needed for the manual test are installed.
 
-The manual test validation document is executed manually and if the document doesn’t match the app functionality the submission is rejected.
+The manual test validation document is run manually and if the document doesn’t match the app functionality the submission is rejected.
 
-> [!Important]  
+> [!Important]
 > Microsoft recommends that all partners are performing the manual validation as the last check before submitting for validation.
 >
 > This can be done either in online sandbox environments or in sandbox docker containers.

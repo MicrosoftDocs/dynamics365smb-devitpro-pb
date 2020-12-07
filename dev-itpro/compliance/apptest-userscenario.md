@@ -14,7 +14,7 @@ ms.author: freddyk
 
 # User Scenario Documentation
 
-One of the keys to a successful extension validation is a document that guides the tester through the setup and usage of the extension. You must include a document that helps Microsoft test the key scenarios of your extension. We want to ensure that we are validating the functionality in the correct manner. Following are some key points to keep in mind when writing the user scenario document.
+One of the keys to a successful extension validation is a document that guides the tester through the setup and usage of the extension. You must include a document that helps Microsoft test some of the key scenarios of your extension. We want to ensure that we are validating the functionality in the correct manner. Following are some key points to keep in mind when writing the user scenario document.
 
 - Be as detailed as possible. No detail is too small. If a field needs a specific value, include that value in your document.
 - Keep the inexperienced user in mind. You know your app well, but other users Microsoft does not.
@@ -27,6 +27,7 @@ One of the keys to a successful extension validation is a document that guides t
 
 - Include the most important functionality scenarios of your extension. We are not looking to test your entire extension, but we do want to ensure we are validating the most used aspects of your app.  
   - Do not give a summary as to what these scenarios do. List step by step details instead. Again, the tester doing the validation might not have the same product knowledge as you do.
+  - It should be possible for the inexperienced tester to **complete the user scenario test in less than 20 minutes** (after installation and startup).
 
 > [!NOTE]
 > This is not the same as the requirement to include Help for your functionality. For more information about getting started with extending and customizing the [!INCLUDE[prodshort](../includes/prodshort.md)] user assistance, see [User assistance model](../user-assistance.md).  

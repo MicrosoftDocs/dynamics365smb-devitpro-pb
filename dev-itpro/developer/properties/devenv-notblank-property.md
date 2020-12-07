@@ -1,25 +1,30 @@
 ---
 title: "NotBlank Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c33fa0c5-761f-4aba-a0af-00b2145c9be7
-caps.latest.revision: 17
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NotBlank Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a value that specifies whether users must enter a value in the selected field or text box.  
-  
-## Applies to  
-  
-- Table Fields   
-- Page Fields  
+Sets a value that specifies whether users must enter a value in the selected field or text box.
+
+## Applies to
+-   Table Field
+-   Page Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
@@ -41,7 +46,7 @@ If the **NotBlank** property is used on other fields than primary fields, the be
   
 ## See Also
 
-[MinValue Property](devenv-minvalue-property.md)   
-[MaxValue Property](devenv-maxvalue-property.md)   
+[MinValue Property](devenv-minvalue-property.md)  
+[MaxValue Property](devenv-maxvalue-property.md)  
 [Numeric Property](devenv-numeric-property.md)
 [Properties](devenv-properties.md)
