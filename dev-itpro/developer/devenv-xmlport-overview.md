@@ -37,7 +37,7 @@ Unlike report request pages, XMLport request pages cannot be bookmarked by users
 ## XMLport properties, triggers, and code
 XMLport objects include triggers, methods, and properties that can be used to work with the object. For more information, see [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport Triggers](triggers/devenv-xmlport-triggers.md).
 
-When you design XMLports, you must set the value of the [Format Property (XMLports)](properties/devenv-format-xmlports-property.md) and the [Direction Property](properties/devenv-direction-property.md). The [Format Property (XMLports)](properties/devenv-format-xmlports-property.md) indicates the type of file that you want to import or export and the [Direction Property](properties/devenv-direction-property.md) value indicates whether the XMLport will be used for import or export.
+When you design XMLports, you must set the value of the [Format Property (XMLports)](properties/devenv-format-property.md) and the [Direction Property](properties/devenv-direction-property.md). The [Format Property (XMLports)](properties/devenv-format-property.md) indicates the type of file that you want to import or export and the [Direction Property](properties/devenv-direction-property.md) value indicates whether the XMLport will be used for import or export.
 
 For more information about data consistency and validation against possible errors when using XMLports, see the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/).
 

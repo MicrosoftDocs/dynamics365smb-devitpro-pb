@@ -1,7 +1,8 @@
 ---
 title: "Method Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,33 +10,35 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Method Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets either a date method for retrieving the year, month, or day from a date field or a aggregate method for performing calculations on a set of field values in a query dataset.  
-  
-## Applies to  
+Gets or sets the method type as defined in the HTTP standard.
 
-- Query columns  
-  
-## Property Value  
+## Applies to
+-   Query Column
 
-<!--The values that are available for the **Method** property depend on whether the [MethodType Property](devenv-methodtype-property.md) is set to **Date** or **Totals**.--> The following table describes the values for each setting.  
-  
-|Type|Method property value|Description|  
-|-------------------------------------|---------------------------|-----------------|  
-|Date|Day|Gets the day from the date expression for the field in the query column. The day is returned as an integer, in the range of 1 to 31, which represents the day of the month. If the day in the date expression is 0, then 1 is returned.|  
-||Month|Gets the month from the date expression for the field in the query column. The month is returned as an integer, in the range of 1 to 12, where 1 represents January and 12 represents December. If the month in the date expression is 0, then 1 is returned.|  
-||Year|Gets the year from the date expression for the field in the query column. The year is returned as an integer. If the year in the date expression is 0, then 1900 is returned.|  
-|Aggregate|Sum|Adds the values of all fields for the specified column within a group.|  
-||Count|Returns the number of rows that are included in the dataset within a group. **Note:**  The `Count` method is associated with the **DataItem** and not with a specific column, so the **DataSource** property must be blank.|  
-||Average|Calculates the average value of the fields in the column within a group.<br /><br /> When averaging fields that have an integer data type (such as Integer or BigInteger), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 (or 2 1/2).|  
-||Min|Retrieves the lowest value of fields in the column within a group.|  
-||Max|Retrieves the highest value of fields in the column within a group.|  
-  
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Day**|Gets the day from the date expression for the field in the query column. The day is returned as an integer, in the range of 1 to 31, which represents the day of the month. If the day in the date expression is 0, then 1 is returned.|
+|**Month**|Gets the month from the date expression for the field in the query column. The month is returned as an integer, in the range of 1 to 12, where 1 represents January and 12 represents December. If the month in the date expression is 0, then 1 is returned.|
+|**Year**|Gets the year from the date expression for the field in the query column. The year is returned as an integer. If the year in the date expression is 0, then 1900 is returned.|
+|**Sum**|Adds the values of all fields for the specified column within a group.|
+|**Count**|Returns the number of rows that are included in the dataset within a group. **Note:**  The `Count` method is associated with the **DataItem** and not with a specific column, so the **DataSource** property must be blank.|
+|**Average**|Calculates the average value of the fields in the column within a group.<br /><br /> When averaging fields that have an integer data type (such as Integer or BigInteger), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 (or 2 1/2).|
+|**Min**|Retrieves the lowest value of fields in the column within a group.|
+|**Max**|Retrieves the highest value of fields in the column within a group.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Date Methods  
 
-You can only use the date methods on fields of the Date and DateTime data type.  
+You can only use the date methods on fields of the [Date](../methods-auto/date/date-data-type.md) and [DateTime](../methods-auto/datetime/datetime-data-type.md) data type.  
   
 When you set up a totals method on another column in the query, rows in the resulting dataset are grouped by the day, month, or year, depending on the **Method** property setting.  
  

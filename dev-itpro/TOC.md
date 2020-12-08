@@ -606,6 +606,7 @@
 #### [Report Properties](developer/properties/devenv-report-properties.md)  
 #### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
+#### [Enum Properties](developer/properties/devenv-enum-properties.md)
 #### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
 ### Triggers

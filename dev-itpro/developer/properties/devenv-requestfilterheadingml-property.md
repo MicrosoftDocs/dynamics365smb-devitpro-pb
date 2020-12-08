@@ -1,7 +1,8 @@
 ---
 title: "RequestFilterHeadingML Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,19 +10,25 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestFilterHeadingML Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the text used as a heading for a request page tab. If this property is set, the heading set by the [RequestFilterHeading Property](devenv-requestfilterheading-property.md) is not used.
+Sets the text used as a RequestFilterHeading Property for a request page tab.
+
+## Applies to
+-   Xml Port Table Element
+-   Report Data Item
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
-  
-## Applies to  
-  
-- Data items on reports
-- Table elements on XMLports
-  
+
 ## Example
 
 ```AL

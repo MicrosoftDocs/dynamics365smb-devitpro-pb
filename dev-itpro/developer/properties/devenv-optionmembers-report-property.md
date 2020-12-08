@@ -16,6 +16,8 @@ caps.latest.revision: 13
 This property seemed new to Niels, he can only guess about how this property works. He suggested talking to Esben from our team.
 -->
 # OptionMembers Property (Report)
+> **Version**: _Available from runtime version 1.0._
+
 Gets the list of options that are available in the field that is currently selected.
   
 ## Applies to  

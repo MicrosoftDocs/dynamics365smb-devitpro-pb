@@ -12,6 +12,8 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIVersion Property (Query)
+> **Version**: _Available from runtime version 1.0._ 
+
 Sets the version(s) of the API endpoint the query is exposed in.  The syntax for providing versions is illustrated in the example below:
 
 ## Applies to  

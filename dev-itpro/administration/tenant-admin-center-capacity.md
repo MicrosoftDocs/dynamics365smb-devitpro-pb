@@ -1,5 +1,5 @@
 ---
-title: Managing Capacity | Microsoft Docs
+title: Managing Capacity
 description: Use the Business Central administration center to manage your tenant capacity 
 author: jswymer
 ms.service: dynamics365-business-central
@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 10/01/2020
+ms.date: 12/04/2020
 ms.author: jswymer
 ---
 
@@ -50,6 +50,9 @@ Storage capacity usage of [!INCLUDE[prodshort](../developer/includes/prodshort.m
 Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there is an option to purchase extra database capacity as an add-on to their existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] subscriptions through their reselling CSP partner. Every add-on increases overall database capacity quota by 1 GB.  
 
 Every additional production environment purchased by the customer also increases tenant-wide database capacity quota by 4 GB.  
+
+> [!TIP]
+> Use the **Capacity** page to help manage the migration when you migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. That way, you know if your migration will bring you close to or over the current limits on database size, for example.
 
 #### Storage usage by environment
 

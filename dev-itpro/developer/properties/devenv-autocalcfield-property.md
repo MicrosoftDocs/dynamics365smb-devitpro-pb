@@ -1,34 +1,32 @@
 ---
 title: "AutoCalcField Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 25e52e9d-cdaf-4f35-bf27-25a8465d595e
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
-
-<!--
-Ask for the file Niels had prepared for the meeting. 
--->
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AutoCalcField Property
-Sets whether FlowFields should be automatically calculated. 
+> **Version**: _Available from runtime version 1.0._
 
-<!--
-AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprty.md) because CalcField is just a list of fields and these types that are calculated fields of FlowFields types. 
--->
-  
-## Applies to  
-  
--   Report columns
--   Field elements in XMLports
--   Field attributes in XMLports
-  
+Sets whether FlowFields should be automatically calculated.
+
+## Applies to
+-   Xml Port Field Attribute
+-   Xml Port Field Element
+-   Report Column
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Value  
  **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
 
@@ -39,10 +37,6 @@ AutoCalcField = false;
 
 ## Remarks
 FlowFields have an effect if the associated data source is a calculated value of the FlowFields.
-<!--  
-FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
--->
-
 
 ## See Also  
 [FlowFields](../devenv-flowfields.md)   
