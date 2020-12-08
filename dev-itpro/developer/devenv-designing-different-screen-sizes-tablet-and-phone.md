@@ -44,5 +44,4 @@ When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_
  [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
  [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
  [Displaying Data as Tiles](devenv-lists-as-tiles.md)  
- [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md)  
  [Gesture Property](properties/devenv-gesture-property.md)

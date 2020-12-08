@@ -64,7 +64,7 @@ var
 begin
     CustDimension.Add('result', 'failed');
     CustDimension.Add('reason', 'critical error in code');
-    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
+    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
 end;
 ```
 

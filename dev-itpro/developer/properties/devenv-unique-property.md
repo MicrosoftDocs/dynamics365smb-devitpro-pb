@@ -1,22 +1,29 @@
 ---
 title: "Unique Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Unique Property
+> **Version**: _Available from runtime version 3.0._
 
-Sets whether the value of a key must be unique. 
+Sets a value that indicates whether a SQL Server unique constraint that corresponds to the key should be created.
 
-## Applies to  
-  
-- Table keys
+## Applies to
+-   Table Key
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > The `Unique` property cannot be used in table extension objects.

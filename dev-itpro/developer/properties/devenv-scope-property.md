@@ -11,10 +11,13 @@ author: SusanneWindfeldPedersen
 ---
 
 # Scope Property
+> **Version**: _Available from runtime version 1.0._
+
 The Scope property is applicable to the following types:
 
 - [Scope Property (Action)](devenv-scope-action-property.md)
 - [Scope Property (Table)](devenv-scope-table-property.md)
 
-## See Also  
+## See Also
+
 [Properties](devenv-properties.md)

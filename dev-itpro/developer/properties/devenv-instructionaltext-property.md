@@ -1,25 +1,30 @@
 ---
 title: "InstructionalText Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
-caps.latest.revision: 13
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InstructionalText Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the text used for instructions in the UI.  
-  
-## Applies to  
-  
-- Page object  
-- RequestPage
-- PageGroup
+Sets the text used for instructions in the UI.
+
+## Applies to
+-   Page
+-   Request Page
+-   Page Group
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Parameters
 

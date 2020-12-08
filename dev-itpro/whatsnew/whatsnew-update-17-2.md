@@ -20,10 +20,10 @@ Would you like to know what has changed in update 17.2? Below you'll find an ove
 Find an overview of hotfixes in this [article](INSERT URL)
 
 ## Feature changes
-- Application Performance Improvements 
+- [Application Performance Improvements](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/application-performance-improvements) 
 - [Signal from job queue execution added to Application Insights telemetry for partners](../administration/telemetry-job-queue-lifecycle-trace.md)
 - [Signal from permission changes to added to Application Insights telemetry for partners](../administration/telemetry-permission-changes-trace.md) 
-- Signal from the retention policy feature added to Application Insights telemetry for partners 
+- [Signal from the retention policy feature added to Application Insights telemetry for partners](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/signal-retention-policy-feature-added-application-insights-telemetry-partners) 
 - [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
 
 
@@ -37,14 +37,23 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Business Central Office Hours** 
+
 The Office Hours are back! Find an overview of the topics and register here: https://aka.ms/BCOfficeHours. 
 
 **Small update for Business Central mobile app** 
-A small update for the Business Central mobile app (with added languages and some fixes) is being released to the app stores on all three platforms (Windows, iOS and Android). Please remember to update the Business central app on your device (version 3.1.12032 or later). Direct links: Windows (Microsoft Store), iOS (Apple's App Store), Android (Google's Play Store).
+
+A small update for the Business Central mobile app (with added languages and some fixes) is being released to the app stores on all three platforms (Windows, iOS and Android). Please remember to update the Business central app on your device (version 3.1.12032 or later). Direct links: [Windows (Microsoft Store)](https://www.microsoft.com/da-dk/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab), [iOS (Apple's App Store)](https://apps.apple.com/us/app/project-madeira/id1093325047), [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira).
 
 **Watch what's new sessions on demand**  
+
 You can still watch the sessions from the Business Central Launch Event in October. Register and get access to 30+ sessions [here](https://aka.ms/MSDyn365BCLaunchEvent).
 
 **Migrate directly from version 14, 15, and 16 to Business Central online**  
+
+- [Application Performance Improvements](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/application-performance-improvements) 
+- [Signal from job queue execution added to Application Insights telemetry for partners](../administration/telemetry-job-queue-lifecycle-trace.md)
+- [Signal from permission changes to added to Application Insights telemetry for partners](../administration/telemetry-permission-changes-trace.md) 
+- [Signal from the retention policy feature added to Application Insights telemetry for partners](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/signal-retention-policy-feature-added-application-insights-telemetry-partners) 
+- [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
 Business Central includes a cloud migration tool that administrators can use to migrate customer data from on-premises databases to Business Central online. Starting now, the Cloud Migration app also supports migration from the earlier on-premises versions of Business Central, with the latest cumulative update applied: Migrate directly from versions 14.x, 15.x, and 16.x to version 17.x. 
 This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more [here](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).

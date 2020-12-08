@@ -13,6 +13,8 @@ author: SusanneWindfeldPedersen
  
 # APIGroup Property (Page)
 
+> **Version**: _Available from runtime version 1.0._
+
 Sets the group of the API endpoint the page is exposed in.  The syntax for providing versions is illustrated in the example below:
 
 ## Applies to  

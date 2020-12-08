@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIPublisher Property 
+> **Version**: _Available from runtime version 1.0._
+
 The APIPublisher property is applicable to the following types: 
 - [APIPublisher Property (Page)](devenv-APIPublisher-page-property.md)   
 - [APIPublisher Property (Query)](devenv-APIPublisher-query-property.md)   

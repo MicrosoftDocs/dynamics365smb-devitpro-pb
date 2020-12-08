@@ -1,28 +1,34 @@
 ---
 title: "DateFormula Property"
-author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DateFormula Property
-Sets a date formula used to verify that the date the user enters is correct.  
+> **Version**: _Available from runtime version 1.0._
+
+Sets a date formula used to verify that the date the user enters is correct.
+
+## Applies to
+-   Table Field
+-   Page Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
 
 > [!NOTE]  
 >  We recommend that you do not use this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
-
-## Applies to  
-
-- Table Fields  
-
-- Page Fields  
-
-## Remarks  
 
 The following table shows the syntax that is used to create the date formula.  
 
