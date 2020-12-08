@@ -21,10 +21,10 @@ Find an overview of hotfixes in this [article](INSERT URL)
 
 ## Feature changes
 - Application Performance Improvements 
-- Signal from job queue execution added to Application Insights telemetry for partners
-- Signal from permission changes to added to Application Insights telemetry for partners 
+- [Signal from job queue execution added to Application Insights telemetry for partners](../administration/telemetry-job-queue-lifecycle-trace.md)
+- [Signal from permission changes to added to Application Insights telemetry for partners](../administration/telemetry-permission-changes-trace.md) 
 - Signal from the retention policy feature added to Application Insights telemetry for partners 
-- Signal from the sensitive field audit feature added to Application Insights telemetry for partners 
+- [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
 
 
 ## Release Plan
