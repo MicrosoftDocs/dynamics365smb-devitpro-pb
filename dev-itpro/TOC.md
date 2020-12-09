@@ -481,7 +481,7 @@
 #### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
 #### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
-#### [Procedure Overload](developer/methods/devenv-overload-method.md)
+#### [Procedure Overload](developer/methods/devenv-overload-method.md)
 <!-- [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -2013,6 +2013,7 @@
 ##### [PreserveWhitespace([Boolean])](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
 #### [Action Option Type](developer/methods-auto/action/action-option.md)
 #### [ClientType Option Type](developer/methods-auto/clienttype/clienttype-option.md)
+#### [CommitBehavior Option Type](developer/methods-auto/commitbehavior/commitbehavior-option.md)
 #### [DataClassification Option Type](developer/methods-auto/dataclassification/dataclassification-option.md)
 #### [DataScope Option Type](developer/methods-auto/datascope/datascope-option.md)
 #### [DefaultLayout Option Type](developer/methods-auto/defaultlayout/defaultlayout-option.md)
@@ -2028,7 +2029,6 @@
 #### [SecurityFilter Option Type](developer/methods-auto/securityfilter/securityfilter-option.md)
 #### [TableConnectionType Option Type](developer/methods-auto/tableconnectiontype/tableconnectiontype-option.md)
 #### [TelemetryScope Option Type](developer/methods-auto/telemetryscope/telemetryscope-option.md)
-#### [CommitBehavior Option Type](developer/methods-auto/commitbehavior/commitbehavior-option.md)
 #### [TestPermissions Option Type](developer/methods-auto/testpermissions/testpermissions-option.md)
 #### [TextEncoding Option Type](developer/methods-auto/textencoding/textencoding-option.md)
 #### [TransactionModel Option Type](developer/methods-auto/transactionmodel/transactionmodel-option.md)
@@ -2369,5 +2369,6 @@
 
 <!-- end upgrade -->
 <!--on-prem ends-->
+
 
 
