@@ -38,13 +38,13 @@ Parts of the formula are described in the following table.
 
 |Symbol|Description|  
 |------|-----------|  
-|<TableNo>|Specifies the table holding the information to be used in the FlowField.|  
-|<FieldNo>|Specifies the column from which you want to compute values.|  
-|<TableFilters>|A list of filters to be used in the computation of the FlowField.|  
-|<TableFilter>|A table filter can be one of the following: a constant expression, a filter expression, a value from ordinary fields, or a FlowFilter field. A key for the other table must exist and include the fields used in the filters.|  
-|<DstFieldNo>|Specifies the destination field number.|  
-|<SrcFieldNo>|Specifies the source field number.|  
-|<Filter>|A filter expression such as 10&#124;20..30.|  
+|`<TableNo>`|Specifies the table holding the information to be used in the FlowField.|  
+|`<FieldNo>`|Specifies the column from which you want to compute values.|  
+|`<TableFilters>`|A list of filters to be used in the computation of the FlowField.|  
+|`<TableFilter>`|A table filter can be one of the following: a constant expression, a filter expression, a value from ordinary fields, or a FlowFilter field. A key for the other table must exist and include the fields used in the filters.|  
+|`<DstFieldNo>`|Specifies the destination field number.|  
+|`<SrcFieldNo>`|Specifies the source field number.|  
+|`<Filter>`|A filter expression such as 10&#124;20..30.|  
 
 ## See Also  
 
