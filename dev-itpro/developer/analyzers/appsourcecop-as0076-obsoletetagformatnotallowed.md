@@ -22,7 +22,7 @@ Obsolete Tag must have a specific format.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-The property ObsoleteTag [property]() and [attribute parameter]() values are not validated by the AL compiler. However it is possible to setup the AppSourceCop to verify it using a Regex expression.
+The ObsoleteTag [property](../properties/devenv-obsoletetag-property.md) and [attribute parameter](../methods/devenv-obsolete-attribute.md) values are not validated by the AL compiler. However it is possible to setup the AppSourceCop to verify them using a Regex expression.
 
 ## Setting up AppSourceCop to validate the Obsolete Tag
 
