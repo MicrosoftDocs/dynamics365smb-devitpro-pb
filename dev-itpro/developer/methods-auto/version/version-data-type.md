@@ -2,7 +2,7 @@
 title: "Version Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,9 +31,9 @@ The following methods are available on instances of the Version data type.
 
 |Method name|Description|
 |-----------|-----------|
+|[Build()](version-build-method.md)|Gets the build number of the version.|
 |[Major()](version-major-method.md)|Gets the major number of the version.|
 |[Minor()](version-minor-method.md)|Gets the minor number of the version.|
-|[Build()](version-build-method.md)|Gets the build number of the version.|
 |[Revision()](version-revision-method.md)|Gets the revision number from the version.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

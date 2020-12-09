@@ -2,7 +2,7 @@
 title: "KeyRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,10 +24,10 @@ The following methods are available on instances of the KeyRef data type.
 
 |Method name|Description|
 |-----------|-----------|
+|[Active()](keyref-active-method.md)|Indicates whether the key is enabled.|
 |[FieldCount()](keyref-fieldcount-method.md)|Gets the number of fields that have been defined in a key. Returns an error if no key is selected.|
 |[FieldIndex(Integer)](keyref-fieldindex-method.md)|Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable. Returns an error if no key is selected.|
 |[Record()](keyref-record-method.md)|Returns a RecordRef for the current record referred to by the key.|
-|[Active()](keyref-active-method.md)|Indicates whether the key is enabled.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
