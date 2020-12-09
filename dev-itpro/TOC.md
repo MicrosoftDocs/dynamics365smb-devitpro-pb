@@ -482,6 +482,9 @@
 #### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
+<!-- [//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
 #### [BigInteger Data Type](developer/methods-auto/biginteger/biginteger-data-type.md)
 #### [BigText Data Type](developer/methods-auto/bigtext/bigtext-data-type.md)
 ##### [Length()](developer/methods-auto/bigtext/bigtext-length-method.md)
@@ -2032,6 +2035,7 @@
 #### [TransactionType Option Type](developer/methods-auto/transactiontype/transactiontype-option.md)
 #### [Verbosity Option Type](developer/methods-auto/verbosity/verbosity-option.md)
 #### [WebServiceActionResultCode Option Type](developer/methods-auto/webserviceactionresultcode/webserviceactionresultcode-option.md)
+<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT) -->
 ### Properties
 #### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table, Table Fields, and Table Extension Properties](developer/properties/devenv-table-properties.md)
