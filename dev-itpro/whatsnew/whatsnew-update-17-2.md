@@ -36,16 +36,13 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Business Central Office Hours** 
-
+**Business Central Office Hours**  
 The Office Hours are back! Find an overview of the topics and register here: https://aka.ms/BCOfficeHours. 
 
-**Small update for Business Central mobile app** 
-
+**Small update for Business Central mobile app**  
 A small update for the Business Central mobile app (with added languages and some fixes) is being released to the app stores on all three platforms (Windows, iOS, and Android). Please remember to update the Business central app on your device (version 3.1.12032 or later). Direct links: [Windows (Microsoft Store)](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab), [iOS (Apple's App Store)](https://apps.apple.com/app/project-madeira/id1093325047), [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira).
 
 **Watch what's new sessions on demand**  
-
 You can still watch the sessions from the Business Central Launch Event in October. Register and get access to 30+ sessions [here](https://aka.ms/MSDyn365BCLaunchEvent).
 
 **Migrate directly from version 14, 15, and 16 to Business Central online**  
