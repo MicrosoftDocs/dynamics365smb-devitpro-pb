@@ -111,7 +111,7 @@ Users without a license, such as internal administrators or delegated administra
     
 - Avoid running several migrations of the same on-prem database to different online environment at the same time.
 
- If you need to do this type of migration, the migrate data sequentially. First, migrate data into the online environment and disable the migration. Then restore the on-prem database from backup and enable the migration again by providing a connection string to this database. You can use the same Integration Runtime and Authorization key.     
+    If you need to do this type of migration, then migrate data sequentially. First, migrate data into the online environment and disable the migration. Then restore the on-prem database from backup and enable the migration again by providing a connection string to this database. You can use the same Integration Runtime and Authorization key.     
 
 - Don't try to migrate data from several on-premise databases into the same online environment at the same time. 
 
