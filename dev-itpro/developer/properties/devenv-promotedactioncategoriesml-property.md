@@ -2,7 +2,7 @@
 title: "PromotedActionCategoriesML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,6 +39,9 @@ Promoted actions appear in the action bar on a page. You promote an action by se
 
 By default, the category names are used as the captions in the ribbon. You use this property to customize these captions. The new caption names must me expressed as a string list, where the first three places correspond to the captions of the New, Process and Report categories, respectively, the fourth place to Category4's caption, the fifth to Category5's and so on.
 <!-- For information about changing the captions, see [How to: Define Promoted Action Categories Captions for the Ribbon](How-to--Define-Promoted-Action-Categories-Captions-for-the-Ribbon.md).  -->
+
+> [!NOTE]  
+> Any empty spaces in the string of promoted action categories are removed. This means that `PromotedActionCategories = 'New caption,,,Category4 caption';` is interpreted as `PromotedActionCategories = 'New caption,Category4 caption';`. To maintain the sequence, you must fill in any empty spaces by, for example, using `Category4`, `Category5` etc.
   
 ## See Also  
 
