@@ -22,8 +22,8 @@ Any extensions that you install can affect the overall system performance. So if
 It's often desirable to offload work from the user session to happen in the background. Examples are:
 
 - [Schedule long running reports to run in background](/dynamics365/business-central/ui-work-report#ScheduleReport)
-- Schedule jobs (for example posting) to run in background
-- Enable background posting in areas where your business is using reservations and item tracking using serial and lot numbers
+- [Schedule jobs](/dynamics365/business-central/admin-job-queues-schedule-tasks) (for example posting) to run in background
+- Enable [background posting](/dynamics365/business-central/ui-batch-posting) in areas where your business is using reservations and item tracking using serial and lot numbers
 - Adjust item costs as a periodic background job. Don't adjust automatically. 
 
 > [!TIP]  

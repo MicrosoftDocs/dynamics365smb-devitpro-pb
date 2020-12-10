@@ -128,7 +128,7 @@ Using **ModifyAll** and **DeleteAll** can improve performance by limiting the am
 
 - There is trigger code on the table.
 - There are event subscribers to the following events: OnBeforeModify, OnAfterModify, OnGlobalModify, OnBeforeDelete, OnAfterDelete, OnGlobalDelete, and OnDatabaseModify.
-- Security filtering is active ([SecurityFiltering property](../developer/properties/devenv-securityfiltering-property.md) is set to `Validated`).
+- Security filtering is active.
 - The table contains `Media` or `MediaSet` data type fields.
 - There are fields that are added through companion tables.
   

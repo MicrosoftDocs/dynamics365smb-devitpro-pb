@@ -2,7 +2,7 @@
 title: "Record.FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.FilterGroup Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the filter group that is applied to a table.
 
 
@@ -21,12 +23,12 @@ Gets or sets the filter group that is applied to a table.
 ```
 [Group := ]  Record.FilterGroup([Group: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *Group*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,9 +36,9 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 ## Return Value
-*Group*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*Group*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

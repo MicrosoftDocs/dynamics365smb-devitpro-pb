@@ -72,7 +72,8 @@ In most cases, filtering on FlowFields issues a single SQL statement. In earlier
 
 -   A second predicate is specified on a source field and the field that is used for the second predicate has a value. For example, when you specify the [CalcFormula Property](../developer/properties/devenv-CalcFormula-Property.md) for a FlowField, you can specify table filters in the **Calculation Formula** window. If you specify two or more filters on the same source field, then filtering does not issue a single SQL statement.  
 
--   You specify **Validated** for the [SecurityFiltering Property](../developer/properties/devenv-SecurityFiltering-Property.md) on a record. This value for the **SecurityFiltering** property means that each record that is part of the calculation must be verified for inclusion in the security filter.  
+<!-- property doesn't exist any longer
+-   You specify **Validated** for the [SecurityFiltering Property](../developer/properties/devenv-SecurityFiltering-Property.md) on a record. This value for the **SecurityFiltering** property means that each record that is part of the calculation must be verified for inclusion in the security filter.  -->
 
 In most cases, calling the FIND or NEXT functions after you have set the view to include only marked records issues a single SQL statement. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], calling FIND or NEXT functions that have marked records issued an SQL statement for each mark. There are some exceptions if many records are marked. For more information, see [MARKEDONLY method \(Record\)](../developer/methods-auto/record/record-MARKEDONLY-method.md).  
 

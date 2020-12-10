@@ -69,7 +69,7 @@ The first thing that you must do is to create a table that contains fields that 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   
-      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](properties/devenv-calculation-formulas-and-the-calcformula-property.md).  
+      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md).  
   
 3. Add a primary key field for FlowFields.  
 
@@ -109,7 +109,8 @@ table 50100 SalesInvoiceCueTable
 }
 ```
 
-###  <a name="CreatePage"></a> Add Cues to a Page object   
+###  <a name="CreatePage"></a> Add Cues to a Page object
+
 After you have a table for holding the Cue data, you create a page that you associate the table, and then add Cue fields on the page. Typically, you will create Card Part type page that will be part of the Role Center page. Cues are arranged into one or more groups on the page. Each group will have its own caption.  
 
 1. Create a page object that has the [SourceTable property](properties/devenv-sourcetable-property.md) set to the Cue data table.
@@ -166,6 +167,7 @@ page 50105 SalesInvoiceCuePage
 ```
 
 ## <a name="ActionTiles"></a>Designing Action tiles
+
 Action tiles promote an action or operation to the user on the Role Center. Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code. They will arrange on the workspace just like that use the normal layout.
 
 Similar to Cues, Actions tile can be grouped together, under a common caption, by using the `cuegroup` control. The difference is that instead adding field controls under the `cuegroup` control, you create Action tiles by adding actions to the `cuegroup` control. 

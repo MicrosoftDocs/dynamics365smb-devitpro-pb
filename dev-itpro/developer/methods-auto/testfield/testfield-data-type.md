@@ -2,7 +2,7 @@
 title: "TestField Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestField Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Represents a testable field on a page.
 
 
@@ -22,7 +24,8 @@ The following methods are available on instances of the TestField data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Lookup()](testfield-lookup-method.md)|Provides a lookup window for a text box on a test page.|
+|[Lookup()](testfield-lookup--method.md)|Provides a lookup window for a text box on a test page.|
+|[Lookup(RecordRef)](testfield-lookup-recordref-method.md)|Calls the OnAfterLook trigger with the selected record|
 |[AssistEdit()](testfield-assistedit-method.md)|Provides assist-edit functionality to a field on a test page.|
 |[Drilldown()](testfield-drilldown-method.md)|Applies drill-down capability for a field on a test page.|
 |[AssertEquals(Any)](testfield-assertequals-method.md)|Asserts that the value in a field on a test page equals a specified value.|

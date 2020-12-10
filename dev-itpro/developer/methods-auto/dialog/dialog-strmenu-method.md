@@ -1,9 +1,8 @@
 ---
 title: "Dialog.StrMenu Method"
-description: Describes the StrMenu method in Business Central
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dialog.StrMenu Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates a menu window that displays a series of options.
 
 
@@ -22,8 +23,8 @@ Creates a menu window that displays a series of options.
 ```
 OptionNumber :=   Dialog.StrMenu(OptionMembers: String [, DefaultNumber: Integer] [, Instruction: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *OptionMembers*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,9 +40,9 @@ Use this optional parameter to add a description to the option values.
 
 
 ## Return Value
-*OptionNumber*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.  
+*OptionNumber*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

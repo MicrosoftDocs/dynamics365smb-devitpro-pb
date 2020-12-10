@@ -1,24 +1,32 @@
 ---
 title: "EnableExternalAssemblies Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d8416fc7-757c-479b-ae22-3f3c2986aa2b
-caps.latest.revision: 10
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # EnableExternalAssemblies Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets whether external Microsoft .NET assemblies can be used on a report.  
-  
-## Applies to  
+Sets whether external Microsoft .NET assemblies can be used on a report.
 
-Client report definition \(RDLC\) report layouts  
-  
+## Applies to
+-   Report
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [NOTE]
+> It applies to client report definition \(RDLC\) report layouts.  
+
 ## Property Value  
 
 **True** if external assemblies can be used; otherwise, **false**. The default is **false**.  
@@ -31,6 +39,7 @@ EnableExternalAssemblies = true;
 
 ## Remarks  
 
+
 When you use the Visual Studio Report Designer for creating reports for the RoleTailored client, you can reference external assemblies to add functionality to a report. The location of the assembly must be accessible from the RoleTailored client. To use external assemblies on a report, the EnableExternalAssemblies property must be set to **true**.  
   
 For more information about referencing assemblies, see [Adding Custom Code to a Report \(Visual Studio Report Designer\)](https://go.microsoft.com/fwlink/?LinkID=184561&clcid=0x409).  
@@ -42,4 +51,3 @@ For more information about referencing assemblies, see [Adding Custom Code to a 
 ## See Also
 
 [Properties](devenv-properties.md)   
- <!-- [Designing Reports](Designing-Reports.md) -->

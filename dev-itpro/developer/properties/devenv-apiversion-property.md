@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIVersion Property 
+> **Version**: _Available from runtime version 1.0._
+
 The APIVersion property is applicable to the following types: 
 - [APIVersion Property (Page)](devenv-apiversion-page-property.md)   
 - [APIVersion Property (Query)](devenv-apiversion-query-property.md)   

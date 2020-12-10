@@ -2,7 +2,7 @@
 title: "ClientType System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,15 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ClientType Option Type
+> **Version**: _Available from runtime version 1.0._
+
 Represents the type of the client executing the operation.
 
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|Background|A background client.|
-|ChildSession|A child session client.|
+|Background|A background session.|
+|ChildSession|A child session.|
 |Desktop|A desktop client.|
 |Management|A management client.|
 |NAS|A NAS client.|

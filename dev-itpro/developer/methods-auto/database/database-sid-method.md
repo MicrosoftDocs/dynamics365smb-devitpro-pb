@@ -2,7 +2,7 @@
 title: "Database.SID Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.SID Method
+> **Version**: _Available from runtime version 1.0._
+
 Retrieves the security identifier (SID) of a Windows user account.
 
 > [!NOTE]
@@ -23,8 +25,8 @@ Retrieves the security identifier (SID) of a Windows user account.
 ```
 SID :=   Database.SID([UserAccount: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *UserAccount*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -32,9 +34,9 @@ The Windows user account for which you want to get the SID. You must specify a d
 
 
 ## Return Value
-*SID*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The SID of the specified Windows user account.  
+*SID*
+&emsp;Type: [String](../string/string-data-type.md)
+The SID of the specified Windows user account.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
