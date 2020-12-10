@@ -1297,7 +1297,6 @@
 ##### [ProfileSystemScope([Boolean]) Method](developer/methods-auto/sessionsettings/sessionsettings-profilesystemscope-method.md)
 ##### [RequestSessionUpdate(Boolean) Method](developer/methods-auto/sessionsettings/sessionsettings-requestsessionupdate-method.md)
 ##### [TimeZone([String]) Method](developer/methods-auto/sessionsettings/sessionsettings-timezone-method.md)
-#### [String Data Type](developer/methods-auto/string/string-data-type.md)
 #### [System Data Type](developer/methods-auto/system/system-data-type.md)
 ##### [Abs(Decimal) Method](developer/methods-auto/system/system-abs-method.md)
 ##### [ApplicationPath() Method](developer/methods-auto/system/system-applicationpath-method.md)
@@ -2370,6 +2369,7 @@
 
 <!-- end upgrade -->
 <!--on-prem ends-->
+
 
 
 
