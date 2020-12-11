@@ -1,12 +1,12 @@
 ---
 title: "Updates for the Business Central 2020 Release Wave 1 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2020 Release Wave 1 on-premises deployments."
-author: MartinNielander
+author: jswymer
 ms.custom: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: martinni
-ms.date: 10/01/2020
+ms.author: jswymer
+ms.date: 12/07/2020
 
 ---
 
@@ -26,6 +26,7 @@ The following table lists the updates that have been released for 2020 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4583553](https://support.microsoft.com/help/4583553)|Update 16.8 |December 2020|Application Build 16.8.19389</br>Platform Build 16.0.19389|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583513](https://support.microsoft.com/help/4583513)|Update 16.7 |November 2020|Application Build 16.7.18411</br>Platform Build 16.0.18359|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583501](https://support.microsoft.com/help/4583501)|Update 16.6 |October 2020|Application Build 16.6.17046</br>Platform Build 16.0.17024|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4563415](https://support.microsoft.com/help/4576664)|Update 16.5 |September 2020|Application Build 16.5.15953</br>Platform Build 16.5.15941|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
